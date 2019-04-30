@@ -1,32 +1,34 @@
 ---
 title: Solucionar problemas de registro de dispositivo
-description: Sugestões para solução de problemas de registro de dispositivo.
+titleSuffix: Microsoft Intune
+description: Sugestões para solução de problemas de registro de dispositivo no Microsoft Intune.
 keywords: ''
 author: ErikjeMS
 ms.author: erikje
 manager: dougeby
 ms.date: 11/09/2018
-ms.topic: conceptual
+ms.topic: troubleshooting
 ms.prod: ''
 ms.service: microsoft-intune
+ms.localizationpriority: high
 ms.technology: ''
 ms.assetid: 6982ba0e-90ff-4fc4-9594-55797e504b62
 ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: damionw
 ms.suite: ems
 search.appverid: MET150
-ms.custom: intune-classic
+ms.custom: intune-classic, seoapril2019
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: b2d345ba84eb963600a921c0f77f7a93ed6aa1b0
-ms.sourcegitcommit: cb93613bef7f6015a4c4095e875cb12dd76f002e
+ms.openlocfilehash: 06a8bd8d0a46b7d7eed8efb4cb8b4c2d4e21f77d
+ms.sourcegitcommit: 143dade9125e7b5173ca2a3a902bcd6f4b14067f
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/02/2019
-ms.locfileid: "57238669"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "61509096"
 ---
-# <a name="troubleshoot-device-enrollment-in-intune"></a>Solução de problemas de registro de dispositivo no Intune
+# <a name="troubleshoot-device-enrollment-in-microsoft-intune"></a>Solução de problemas de registro de dispositivo no Microsoft Intune
 
-Este artigo fornece sugestões para solução de problemas de registro do dispositivo. Se essas informações não resolverem seu problema, consulte [Como obter suporte para o Microsoft Intune](get-support.md) para encontrar outras formas de obter ajuda.
+Este artigo fornece sugestões para solução de problemas de [registro de dispositivo](device-enrollment.md). Se essas informações não resolverem seu problema, consulte [Como obter suporte para o Microsoft Intune](get-support.md) para encontrar outras formas de obter ajuda.
 
 
 ## <a name="initial-troubleshooting-steps"></a>Etapas para solução de problemas iniciais
@@ -100,7 +102,7 @@ Para evitar atingir os limites de dispositivos, não deixe de remover os registr
 
 1.  Verifique se a autoridade de MDM foi [definida adequadamente](mdm-authority-set.md).
     
-2.  Confirme se as credenciais do usuário foram sincronizadas corretamente com o Azure Active Directory. Você pode confirmar se o UPN do usuário corresponde às informações do Active Directory no portal do Office 365.
+2.  Confirme se as credenciais do usuário foram sincronizadas corretamente com o Azure Active Directory. É possível verificar se o UPN do usuário corresponde às informações do Active Directory no centro de administração do Microsoft 365.
     Se o UPN não corresponder às informações do Active Directory:
 
     1.  Desligue o DirSync no servidor local.
@@ -131,7 +133,7 @@ Para evitar atingir os limites de dispositivos, não deixe de remover os registr
 ### <a name="unable-to-create-policy-or-enroll-devices-if-the-company-name-contains-special-characters"></a>Não é possível criar a política ou registrar os dispositivos se o nome da empresa contiver caracteres especiais
 **Problema:** não é possível criar a política ou registrar os dispositivos.
 
-**Resolução:** no [Centro de administração do Office 365](https://portal.office.com/), remova os caracteres especiais do nome da empresa e salve as informações da empresa.
+**Resolução:** no [centro de administração do Microsoft 365](https://admin.microsoft.com/), remova os caracteres especiais do nome da empresa e salve as informações da empresa.
 
 ### <a name="unable-to-sign-in-or-enroll-devices-when-you-have-multiple-verified-domains"></a>Não é possível entrar ou registrar dispositivos quando você tem vários domínios verificados
 **Problema:** esse problema pode ocorrer ao adicionar um segundo domínio verificado ao seu ADFS. Usuários com o sufixo de nome UPN do segundo domínio não poderão fazer logon nos portais ou registrar dispositivos.
@@ -225,7 +227,7 @@ Se a Resolução nº2 não funcionar, oriente os usuários a seguir estas etapas
 
 **Resolução 1**:
 
-Talvez o usuário consiga recuperar o certificado ausente seguindo as instruções em [Seu dispositivo não tem um certificado necessário](/intune-user-help/your-device-is-missing-a-required-certificate-android#your-device-is-missing-a-certificate-required-by-your-it-administrator). Se o erro persistir, tente a Resolução 2.
+Talvez o usuário consiga recuperar o certificado ausente seguindo as instruções em [Seu dispositivo não tem um certificado necessário](/intune-user-help/your-device-is-missing-a-required-certificate-android). Se o erro persistir, tente a Resolução 2.
 
 **Resolução 2**:
 
@@ -492,7 +494,7 @@ O certificado de conta da conta anterior ainda está presente no computador.
 |0x80043008, 0x80CF3008|Falha ao iniciar o serviço de atualizações do Microsoft Online Management.|Entre em contato com o Suporte da Microsoft, conforme descrito em [How to get support for Microsoft Intune](get-support.md) (Como obter suporte para o Microsoft Intune).|
 |0x80043009, 0x80CF3009|O computador cliente já está inscrito no serviço.|Você deve retirar o computador cliente antes de ser possível registrá-lo novamente no serviço.|
 |0x8004300B, 0x80CF300B|Não foi possível executar o pacote de instalação do software cliente porque a versão do Windows que está em execução no cliente não é compatível.|O Intune não é compatível com a versão do Windows em execução no computador cliente.|
-|0xAB2|O Windows Installer não pode acessar o tempo de execução do VBScript para uma ação personalizada.|Este erro é causado por uma ação personalizada que se baseia em bibliotecas de vínculo dinâmico (DLLs). Ao solucionar problemas de DLL, pode ser necessário usar as ferramentas descritas no [Suporte da Microsoft KB198038: Ferramentas úteis para problemas de implantação e pacote](https://support.microsoft.com/kb/198038).|
+|0xAB2|O Windows Installer não pode acessar o tempo de execução do VBScript para uma ação personalizada.|Este erro é causado por uma ação personalizada que se baseia em bibliotecas de vínculo dinâmico (DLLs). Ao solucionar problemas de DLL, pode ser necessário usar as ferramentas descritas no [Suporte da Microsoft KB198038: Ferramentas úteis para problemas de implantação e de pacote](https://support.microsoft.com/kb/198038).|
 |0x80cf0440|A conexão com o ponto de extremidade do serviço foi encerrada.|A conta de avaliação ou paga está suspensa. Criar uma nova conta de avaliação ou paga e registrar novamente.|
 
 

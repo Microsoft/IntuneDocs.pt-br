@@ -1,32 +1,33 @@
 ---
-title: Instalar aplicativos do Office 365 em dispositivos usando o Microsoft Intune
-titlesuffix: ''
-description: Saiba como você pode usar o Microsoft Intune para facilitar a instalação de aplicativos do Office 365 em dispositivos Windows 10.
+title: Atribuir aplicativos do Office 365 a dispositivos Windows 10 usando o Microsoft Intune
+titleSuffix: ''
+description: Saiba como usar o Microsoft Intune para instalar aplicativos do Office 365 em dispositivos Windows 10.
 keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 12/11/2018
+ms.date: 04/08/2019
 ms.topic: conceptual
 ms.prod: ''
 ms.service: microsoft-intune
+ms.localizationpriority: high
 ms.technology: ''
 ms.assetid: 3292671a-5f5a-429e-90f7-b20019787d22
-ms.reviewer: aiwang
+ms.reviewer: craigma
 ms.suite: ems
 search.appverid: MET150
-ms.custom: intune-azure
+ms.custom: intune-azure, seoapril2019
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 7d3db1449ec583678924fadb0db930146c3cd848
-ms.sourcegitcommit: cb93613bef7f6015a4c4095e875cb12dd76f002e
+ms.openlocfilehash: c640e3e02d7d016785b87d681443b2c49f7a6281
+ms.sourcegitcommit: 143dade9125e7b5173ca2a3a902bcd6f4b14067f
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/02/2019
-ms.locfileid: "57229744"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "61507098"
 ---
 # <a name="assign-office-365-apps-to-windows-10-devices-with-microsoft-intune"></a>Atribua aplicativos do Office 365 a dispositivos Windows 10 com o Microsoft Intune
 
-Esse tipo de aplicativo facilita a atribuição de aplicativos do Office 365 para os dispositivos que você gerencia e que executam o Windows 10. Você também pode instalar aplicativos para o cliente de área de trabalho Microsoft Project Online e para o Microsoft Visio Pro para Office 365 se tiver licenças para eles. Os aplicativos que você deseja são exibidos como uma única entrada na lista de aplicativos no console do Intune.
+Antes que possa atribuir, monitorar, configurar ou proteger aplicativos, você precisa adicioná-los ao Intune. Um dos [tipos de aplicativo](apps-add.md#app-types-in-microsoft-intune) disponíveis são aplicativos do Office 365 para dispositivos Windows 10. Ao selecionar esse tipo de aplicativo no Intune, é possível atribuir e instalar aplicativos do Office 365 em dispositivos gerenciados que executam o Windows 10. Também será possível atribuir e instalar aplicativos para o cliente de desktop Microsoft Project Online e para o Microsoft Visio Online Plan 2, se você tiver licenças para eles. Os aplicativos do Office 365 disponíveis são exibidos como uma única entrada na lista de aplicativos no console do Intune dentro do Azure.
 
 > [!NOTE]
 > Você precisa usar as licenças do Office 365 ProPlus para ativar aplicativos do Office 365 ProPlus implantados por meio do Microsoft Intune. Atualmente, o Office 365 Business Edition não é compatível com o Intune.
@@ -54,18 +55,25 @@ Esse tipo de aplicativo facilita a atribuição de aplicativos do Office 365 par
 5. Selecione **Adicionar**.
 6. No painel **Adicionar aplicativos**, na lista **Tipo de aplicativo**, em **Office 365 Office**, selecione **Windows 10**.
 
-Agora você pode configurar o pacote do aplicativo.
+## <a name="select-settings-format"></a>Selecionar formato de configurações
 
-## <a name="configure-the-app-suite"></a>Configurar o pacote de aplicativos
+É possível escolher um método para definir a configuração do aplicativo selecionando **Formato de configurações**. As opções do formato de configuração incluem:
+- Designer de configuração
+- Inserir dados XML
 
-Selecione os aplicativos do Office que você deseja atribuir a dispositivos.
+Quando você escolher o **Designer de configuração**, a folha **Adicionar aplicativo** será alterada para oferecer duas opções de configurações adicionais:
+- Configurar conjunto de aplicativos
+- Configurações do conjunto de aplicativos
 
-1. No painel **Adicionar Aplicativo**, selecione **Configurar Pacote de Aplicativos**.
-2. No painel **Configurar Pacote de Aplicativos**, selecione os aplicativos do Office padrão que você deseja atribuir a dispositivos.  
-    Além disso, você poderá instalar aplicativos para o cliente de área de trabalho Microsoft Project Online e para o Microsoft Visio Pro para Office 365 se tiver licenças para eles.
-3. Selecione **OK**.
+<img alt="Add Office 365 - Configuration designer" src="./media/apps-add-office365/apps-add-office365-02.png" width="700">
 
-## <a name="configure-app-information"></a>Configurar informações do aplicativo
+Quando você escolher **Inserir dados XML** a folha **Adicionar aplicativo** será exibida com a opção **Inserir dados XML**. Selecione essa opção para exibir a folha **Arquivo de Configuração**. 
+
+![Adicionar designer de configuração do Office 365](./media/apps-add-office365/apps-add-office365-01.png)
+    
+Para saber mais sobre a opção **Inserir dados XML**, confira [Inserir dados XML](apps-add-office365.md#enter-xml-format) abaixo.
+
+## <a name="configure-app-suite-information"></a>Configurar informações do conjunto de aplicativos
 
 Nesta etapa, você fornece informações sobre o pacote de aplicativos. Essas informações ajudam a identificar o pacote de aplicativos no Intune, e ajudam os usuários a encontrar o pacote de aplicativos no portal da empresa.
 
@@ -84,9 +92,18 @@ Nesta etapa, você fornece informações sobre o pacote de aplicativos. Essas in
     - **Logotipo**: O logotipo do Office 365 é exibido com o aplicativo quando os usuários navegam pelo portal da empresa.
 3. Selecione **OK**.
 
-## <a name="configure-app-settings"></a>Definir configurações do aplicativo
+## <a name="configure-app-suite"></a>Configurar conjunto de aplicativos
 
-Nesta etapa, configure as opções de instalação do pacote de aplicativos. As configurações aplicam-se a todos os aplicativos adicionados ao pacote.
+Se você tiver selecionado a opção **Designer de configuração** na caixa suspensa **Formato de configuração**, verá a opção **Configurar conjunto de aplicativos** na folha **Adicionar aplicativo**. Selecione os aplicativos do Office que você deseja atribuir a dispositivos.
+
+1. No painel **Adicionar Aplicativo**, selecione **Configurar Pacote de Aplicativos**.
+2. No painel **Configurar Pacote de Aplicativos**, selecione os aplicativos do Office padrão que você deseja atribuir a dispositivos.  
+    Além disso, será possível instalar aplicativos para o cliente de desktop do Microsoft Project Online e do Microsoft Visio Online Plan 2, se você tiver licenças para eles.
+3. Selecione **OK**.
+
+## <a name="configure-app-suite-settings"></a>Definir configurações do conjunto de aplicativos
+
+Se você tiver selecionado a opção **Designer de configuração** na caixa suspensa **Formato de configuração**, verá a opção **Configurações do conjunto de aplicativos** na folha **Adicionar aplicativo**. Nesta etapa, configure as opções de instalação do pacote de aplicativos. As configurações aplicam-se a todos os aplicativos adicionados ao pacote.
 
 1. No painel **Adicionar Aplicativo**, selecione **Configurações do Pacote de Aplicativos**.
 2. No painel **Configurações do Pacote de Aplicativos**, faça o seguinte:
@@ -110,6 +127,10 @@ Nesta etapa, configure as opções de instalação do pacote de aplicativos. As 
     - **Usar ativação de computador compartilhado**: Selecione essa opção quando vários usuários compartilharem um computador. Para obter mais informações, confira [Visão geral da ativação de computador compartilhado no Office 365](https://docs.microsoft.com/DeployOffice/overview-of-shared-computer-activation-for-office-365-proplus).
     - **Idiomas**: o Office é instalado automaticamente em qualquer um dos idiomas compatíveis instalados com o Windows no dispositivo do usuário final. Selecione essa opção se desejar instalar idiomas adicionais com o pacote de aplicativos. <p></p>
     É possível implantar idiomas adicionais para aplicativos do Office 365 Pro Plus gerenciados por meio do Intune. A lista de idiomas disponíveis inclui o **Tipo** de pacote de idiomas (núcleo, parcial e revisão de texto). No portal do Azure, selecione **Microsoft Intune** > **Aplicativos clientes** > **Aplicativos** > **Adicionar**. Na lista **Tipo de aplicativo** da folha **Adicionar aplicativo**, selecione **Windows 10** em **Pacote do Office 365**. Selecione **Idiomas** na folha **Configurações do Pacote de Aplicativos**. Para obter mais informações, confira [Visão geral da implantação de idiomas no Office 365 ProPlus](https://docs.microsoft.com/deployoffice/overview-of-deploying-languages-in-office-365-proplus).
+
+## <a name="enter-xml-format"></a>Inserir formato XML
+
+Se você tiver selecionado a opção **Inserir dados XML** na caixa suspensa **Formato de configuração**, verá a opção **Inserir formato XML** na folha **Adicionar aplicativo**. Para saber mais, confira [Opções de configuração da Ferramenta de Implantação do Office](https://docs.microsoft.com/DeployOffice/configuration-options-for-the-office-2016-deployment-tool).
 
 ## <a name="finish-up"></a>Concluir
 

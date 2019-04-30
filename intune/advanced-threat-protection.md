@@ -5,22 +5,23 @@ keywords: ''
 author: brenduns
 ms.author: brenduns
 manager: dougeby
-ms.date: 1/29/2019
-ms.topic: article
+ms.date: 02/22/2019
+ms.topic: conceptual
 ms.prod: ''
 ms.service: microsoft-intune
+ms.localizationpriority: high
 ms.technology: ''
 ms.reviewer: joglocke
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: afa2ef4cf1199597f61af99d631243e2d3b51e64
-ms.sourcegitcommit: 727c3ae7659ad79ea162250d234d7730f840c731
+ms.openlocfilehash: 036f2ca8302f9b3c2d700a04918c4c49a4c6211a
+ms.sourcegitcommit: 143dade9125e7b5173ca2a3a902bcd6f4b14067f
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/07/2019
-ms.locfileid: "55845169"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "61490529"
 ---
 # <a name="enforce-compliance-for-windows-defender-atp-with-conditional-access-in-intune"></a>Impor a conformidade do Windows Defender ATP com acesso condicional no Intune
 
@@ -109,12 +110,12 @@ A política de conformidade determina um nível aceitável de risco em um dispos
 2. Selecione **Conformidade do dispositivo** > **Políticas** > **Criar política**.
 3. Insira um **Nome** e uma **Descrição**.
 4. Em **plataforma**, selecione **Windows 10 e posterior**.
-5. Nas configurações do **Windows Defender ATP**, defina **Exigir que o dispositivo esteja na pontuação de risco do computador ou abaixo** para o seu nível preferido:
+5. Nas configurações do **Windows Defender ATP**, defina **Exigir que o dispositivo esteja na pontuação de risco do computador ou abaixo** como o seu nível preferencial. As classificações de nível de ameaça são [determinadas pelo Windows Defender ATP](https://review.docs.microsoft.com/windows/security/threat-protection/windows-defender-atp/alerts-queue-windows-defender-advanced-threat-protection?branch=atp-server2008#sort-filter-and-group-the-alerts-queue).
 
-  - **Limpar**: este é o nível mais seguro. O dispositivo não pode ter ameaças existentes e ainda acessar os recursos da empresa. Se nenhuma ameaça for encontrada, o dispositivo será avaliado como não compatível.
-  - **Baixo**: o dispositivo estará em conformidade se apenas ameaças de nível baixo existirem. Dispositivos com níveis de ameaça média ou alta não são compatíveis.
-  - **Médio**: o dispositivo estará em conformidade se as ameaças encontradas no dispositivo forem de nível baixo ou médio. Se ameaças de nível alto forem detectadas, o dispositivo será determinado como não compatível.
-  - **Alto**: este nível é o menos seguro e permite todos os níveis de ameaça. Sendo assim, os dispositivos com níveis de ameaça alta, média ou baixa são considerados compatíveis.
+   - **Limpar**: este é o nível mais seguro. O dispositivo não pode ter ameaças existentes e ainda acessar os recursos da empresa. Se nenhuma ameaça for encontrada, o dispositivo será avaliado como não compatível. (O Windows Defender ATP usa o valor *seguro*.)
+   - **Baixo**: o dispositivo estará em conformidade se apenas ameaças de nível baixo existirem. Dispositivos com níveis de ameaça média ou alta não são compatíveis.
+   - **Médio**: o dispositivo estará em conformidade se as ameaças encontradas no dispositivo forem de nível baixo ou médio. Se ameaças de nível alto forem detectadas, o dispositivo será determinado como não compatível.
+   - **Alto**: este nível é o menos seguro e permite todos os níveis de ameaça. Sendo assim, os dispositivos com níveis de ameaça alta, média ou baixa são considerados compatíveis.
 
 6. Selecione **OK** e **Criar** para salvar suas alterações (e criar a política).
 
@@ -126,10 +127,13 @@ A política de conformidade determina um nível aceitável de risco em um dispos
 4. Incluir ou excluir seus grupos do Azure AD para atribuir a eles a política.
 5. Para implantar a política aos grupos, selecione **Salvar**. Os dispositivos de usuário direcionados pela política são avaliados quanto à conformidade.
 
-## <a name="create-an-azure-ad-conditional-access-policy"></a>Criar uma política de acesso condicional do Azure AD
-A política de acesso condicional bloqueará o acesso a recursos *se* o dispositivo não for incompatível. Então se um dispositivo excede o nível de ameaça, você pode bloquear o acesso a recursos corporativos, como o SharePoint ou Exchange Online.
+## <a name="create-a-conditional-access-policy"></a>Criar política de acesso condicional
+A política de acesso condicional bloqueará o acesso a recursos *se* o dispositivo não for incompatível. Então se um dispositivo excede o nível de ameaça, você pode bloquear o acesso a recursos corporativos, como o SharePoint ou Exchange Online.  
 
-1. No [Portal do Azure](https://portal.azure.com), abra **Azure Active Directory** > **Acesso condicional** > **Nova política**.
+> [!TIP]  
+> O Acesso Condicional é uma tecnologia do Azure AD (Azure Active Directory). O nó Acesso Condicional acessado no *Intune* é o mesmo nó que o acessado no *Azure AD*.  
+
+1. No [portal do Azure](https://portal.azure.com), abra **Intune** > **Acesso condicional** > **Nova política**.
 2. Insira **Nome** da política e selecione **Usuários e grupos**. Use as opções Incluir ou Excluir para adicionar os grupos para a política e selecione **Concluído**.
 3. Selecione **Aplicativos de nuvem** e escolha quais aplicativos proteger. Por exemplo, escolha **Selecionar aplicativos** e selecione **Office 365 SharePoint Online** e **Exchange Online do Office 365**.
 

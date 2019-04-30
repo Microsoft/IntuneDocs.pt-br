@@ -1,26 +1,28 @@
 ---
 title: Planejar comunicações de migração
-titlesuffix: Microsoft Intune
+titleSuffix: Microsoft Intune
 description: Este artigo fornecerá um plano e uma estratégia de comunicação de migração quando você estiver migrando para o Microsoft Intune.
 keywords: ''
 author: dougeby
 ms.author: dougeby
 manager: dougeby
 ms.date: 01/02/2018
-ms.topic: article
+ms.topic: conceptual
 ms.prod: ''
 ms.service: microsoft-intune
+ms.localizationpriority: high
 ms.technology: ''
 ms.assetid: e6a52506-2d29-41f7-a171-5d684a740dd4
 ms.reviewer: dagerrit
 ms.suite: ems
 search.appverid: MET150
-ms.openlocfilehash: e19ce1aa39d6402ccf1de93af493457b0a10d0b8
-ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.collection: M365-identity-device-management
+ms.openlocfilehash: 08fcda324d2c3c397deb99924d731ed4d4512651
+ms.sourcegitcommit: 143dade9125e7b5173ca2a3a902bcd6f4b14067f
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52183719"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "61490128"
 ---
 # <a name="plan-communications"></a>Planejar a comunicação
 
@@ -30,7 +32,7 @@ O plano de comunicação é um elemento fundamental de uma migração do Intune.
 
 Recomendamos o plano de comunicação de email a seguir. Fornecemos modelos para você adaptar ao seu plano de comunicação:
 
--   **Email \#1:** explique os benefícios, as expectativas e a agenda. Aproveite essa oportunidade para apresentar outros novos serviços cujo acesso será concedido em dispositivos gerenciados pelo Intune.<br/><br/>
+-   **Email \#1:** explique os benefícios, expectativas e agendamento. Aproveite essa oportunidade para apresentar outros novos serviços cujo acesso será concedido em dispositivos gerenciados pelo Intune.<br/><br/>
 
 
     -   [Baixar o \#modelo de email 1](https://gallery.technet.microsoft.com/Intune-migration-guide-end-e3209b35)
@@ -42,7 +44,7 @@ Recomendamos o plano de comunicação de email a seguir. Fornecemos modelos para
     -   [Baixar o \#modelo de email 2](https://gallery.technet.microsoft.com/Intune-migration-guide-end-a9d25eb5)
 <br></br>
 
--   **Email \#3:** dar aos usuários uma linha de tempo antes que o acesso seja afetado. Novamente, lembre os usuários dos benefícios e motivos estratégicos para a migração. O cronograma de emails deve ter uma janela deslizante para corresponder às suas fases. Por exemplo, em junho, envie o email \#1 aos usuários da fase 1, o email \#2 aos usuários da fase 2 e o email \#3 aos usuários da fase 3.<br/><br/>
+-   **Email \#3:** dê aos usuários uma linha de tempo antes que o acesso seja afetado. Novamente, lembre os usuários dos benefícios e motivos estratégicos para a migração. O cronograma de emails deve ter uma janela deslizante para corresponder às suas fases. Por exemplo, em junho, envie o email \#1 aos usuários da fase 1, o email \#2 aos usuários da fase 2 e o email \#3 aos usuários da fase 3.<br/><br/>
 
     -   [Baixar o \#modelo de email 3](https://gallery.technet.microsoft.com/Intune-migration-guide-end-831521b5)
 
@@ -57,6 +59,8 @@ O Intune tem modelos adicionais para promover o registro do dispositivo com os u
 -   O [modelo de registro do Intune do usuário final para administradores de TI](https://gallery.technet.microsoft.com/End-user-Intune-enrollment-55dfd64a) é um documento do Word personalizável que explica como registrar dispositivos Mac, iOS e Android no Intune.
 
 -   É possível personalizar os [Emails e guias detalhados do FastTrack para EMS](https://gallery.technet.microsoft.com/FastTrack-for-EMS-How-To-f170da4c) com o logotipo da empresa para promover a adoção do Intune e do EMS na organização.
+
+-   Compartilhe a [URL do aplicativo do Portal da Empresa](http://go.microsoft.com/fwlink/?LinkID=396941) com os usuários do Windows, do iOS e do Android. Essa URL redireciona para a listagem do aplicativo do Portal da Empresa adequada em dispositivos Android, iOS e Windows.
 
 ## <a name="next-steps"></a>Próximas etapas
 

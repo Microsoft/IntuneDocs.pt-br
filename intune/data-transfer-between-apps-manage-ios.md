@@ -1,26 +1,29 @@
 ---
-title: Gerenciar a transferência de dados entre aplicativos do iOS | Microsoft Intune
+title: Gerenciar a transferência de dados entre aplicativos iOS
+titleSuffix: Microsoft Intune
 description: Entenda como usar políticas de gerenciamento de aplicativo móvel no Microsoft Intune para gerenciar transferências de dados entre aplicativos.
 keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 11/28/2018
-ms.topic: article
+ms.date: 04/08/2019
+ms.topic: conceptual
 ms.prod: ''
 ms.service: microsoft-intune
+ms.localizationpriority: high
 ms.technology: ''
 ms.assetid: d10b2d64-8c72-4e9b-bd06-ab9d9486ba5e
 ms.reviewer: aanavath
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: 8e223301b15a408c5f5a444a1904fca9826929ac
-ms.sourcegitcommit: 0142020a7cd75348c6367facf072ed94238e667f
+ms.collection: M365-identity-device-management
+ms.openlocfilehash: bb109f8c837fe8848ad8cb19c930de765ed381d1
+ms.sourcegitcommit: 143dade9125e7b5173ca2a3a902bcd6f4b14067f
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/29/2019
-ms.locfileid: "55229892"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "61509494"
 ---
 # <a name="how-to-manage-data-transfer-between-ios-apps-in-microsoft-intune"></a>Como gerenciar a transferência de dados entre aplicativos iOS no Microsoft Intune
 
@@ -49,11 +52,15 @@ Essa configuração de UPN do usuário é **necessária** para dispositivos gere
 
 2.  Implante os aplicativos e o perfil de email que você deseja gerenciar por meio do Intune ou da solução MDM de terceiros usando as seguintes etapas gerais. Essa experiência também é abordada no *Exemplo 1*.
 
-3.  Implante o aplicativo com as seguintes configurações de aplicativo:
+3.  Implante o aplicativo com as seguintes definições de configuração de aplicativos no dispositivo gerenciado:
 
       **key** = IntuneMAMUPN, **value** = <username@company.com>
 
       Exemplo: [‘IntuneMAMUPN’, ‘jondoe@microsoft.com’]
+      
+       > [!NOTE]
+       > No Intune, a política de Configuração de Aplicativos precisa ser do tipo de registro “Dispositivos gerenciados”.
+       > Ou o aplicativo precisará ser instalado no Portal da Empresa do Intune se for definido como disponível ou enviado por push, conforme necessário, para o dispositivo. 
 
 4.  Implante a política **Abrir no gerenciamento** usando o Intune ou o provedor de MDM de terceiros para dispositivos registrados.
 

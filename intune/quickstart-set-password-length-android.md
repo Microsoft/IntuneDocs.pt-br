@@ -1,12 +1,12 @@
 ---
-title: Início Rápido – Criar uma política de conformidade de senha para dispositivos Android
+title: Início Rápido – Política de conformidade de senha para dispositivos Android
 titleSuffix: Microsoft Intune
 description: Neste início rápido, você usará o Microsoft Intune para configurar um comprimento de senha obrigatório para dispositivos Android.
 keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 03/26/2019
+ms.date: 04/15/2019
 ms.topic: quickstart
 ms.prod: ''
 ms.service: microsoft-intune
@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: f4a16272f32b8546e7e9bb12a22f16235ab49aed
-ms.sourcegitcommit: 484a898d54f5386fdbce300225aaa3495cecd6b0
+ms.openlocfilehash: e71a9a69cfc474f311bc6acd9e8f24c776a44476
+ms.sourcegitcommit: 143dade9125e7b5173ca2a3a902bcd6f4b14067f
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/01/2019
-ms.locfileid: "58799651"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "61512757"
 ---
 # <a name="quickstart-create-a-password-compliance-policy-for-android-devices"></a>Início Rápido: Criar uma política de conformidade de senha para dispositivos Android
 
@@ -32,7 +32,7 @@ Neste início rápido, você usará o Microsoft Intune para exigir que os usuár
 Uma política de conformidade de dispositivos do Intune especifica as regras e configurações que dispositivos precisam cumprir para serem considerados em conformidade. Você pode usar as políticas de conformidade com acesso condicional para permitir ou bloquear o acesso aos recursos da empresa. Você também pode obter relatórios de dispositivo e realizar ações de não conformidade.
 
 > [!IMPORTANT]
-> Além das configurações de senha, você também deve considerar outras configurações de segurança do sistema para proteger sua força de trabalho. Saiba mais em [Configurações de segurança do sistema](compliance-policy-create-android-for-work.md#system-security-settings).
+> Além das configurações de senha, você também deve considerar outras configurações de segurança do sistema para proteger sua força de trabalho. Saiba mais em [Configurações de segurança do sistema](compliance-policy-create-android-for-work.md).
 
 Se você não tiver uma assinatura do Intune, [inscreva-se para uma conta de avaliação gratuita](free-trial-sign-up.md).
 

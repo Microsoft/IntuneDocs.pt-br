@@ -10,17 +10,18 @@ ms.date: 01/24/2019
 ms.topic: conceptual
 ms.prod: ''
 ms.service: microsoft-intune
+ms.localizationpriority: high
 ms.technology: ''
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: ed3352bf494ddab61b2e8a53422de1adfae5f0c0
-ms.sourcegitcommit: cb93613bef7f6015a4c4095e875cb12dd76f002e
+ms.openlocfilehash: 0aff39eeb8a825c4161ee92d798dc817d5928995
+ms.sourcegitcommit: 143dade9125e7b5173ca2a3a902bcd6f4b14067f
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/02/2019
-ms.locfileid: "57231138"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "61503952"
 ---
 # <a name="microsoft-outlook-configuration-settings"></a>Definições de configuração do Microsoft Outlook 
 
@@ -35,5 +36,5 @@ Ao adicionar uma política de configuração no Intune, você pode especificar d
 Para saber mais sobre a configuração da conta do Outlook e etapas de procedimentos para dispositivos iOS e Android no Microsoft Intune, confira [Como implantar o Outlook para configurações de aplicativos iOS e Android](https://docs.microsoft.com/exchange/clients-and-mobile-in-exchange-online/outlook-for-ios-and-android/outlook-for-ios-and-android-configuration-with-microsoft-intune).
 
 ## <a name="next-steps"></a>Próximas etapas
-[Definir as configurações de email no Intune](email-settings-configure.md)
 
+- Para saber mais, confira [Políticas de configuração de aplicativos do Microsoft Intune](app-configuration-policies-overview.md)

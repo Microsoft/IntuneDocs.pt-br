@@ -6,19 +6,21 @@ author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
 ms.date: 12/19/2018
-ms.topic: article
+ms.topic: conceptual
 ms.prod: ''
 ms.service: microsoft-intune
+ms.localizationpriority: high
 ms.technology: ''
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: fd401875e1a98690d9673243b28b48347e4c6183
-ms.sourcegitcommit: 4e69a8664c289263490daa4c02bc6b81c33196e5
+ms.collection: M365-identity-device-management
+ms.openlocfilehash: 654d5b86a8a2df8eaddc8ea626b55390d2d32920
+ms.sourcegitcommit: 143dade9125e7b5173ca2a3a902bcd6f4b14067f
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/20/2018
-ms.locfileid: "53642805"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "61508940"
 ---
 # <a name="monitor-intune-device-compliance-policies"></a>Monitorar as políticas de conformidade do Dispositivo do Intune
 
@@ -122,7 +124,7 @@ Em **Conformidade do dispositivo** > **Visão Geral**, o relatório também iden
 
 Quando você seleciona o bloco, ele mostra todos os dispositivos que não têm uma política de conformidade. Ele também mostra o usuário do dispositivo, o status de implantação da política e o modelo do dispositivo.
 
-#### <a name="what-you-need-to-know"></a>O que você deve fazer
+#### <a name="what-you-need-to-know"></a>O que você precisa saber
 
 - Na configuração de segurança **Marcar dispositivos sem nenhuma política de conformidade atribuída como**, é importante identificar os dispositivos que não têm uma política de conformidade. Em seguida, poderá atribuir pelo menos uma política de conformidade a eles.
 

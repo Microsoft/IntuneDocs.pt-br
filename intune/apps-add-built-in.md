@@ -1,27 +1,29 @@
 ---
 title: Adicionar aplicativos nativos a dispositivos móveis usando o Microsoft Intune
-titlesuffix: ''
+titleSuffix: ''
 description: Saiba como usar o Intune para facilitar a instalação de aplicativos nativos em dispositivos móveis.
 keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 11/19/2018
-ms.topic: article
+ms.date: 04/08/2019
+ms.topic: conceptual
 ms.prod: ''
 ms.service: microsoft-intune
+ms.localizationpriority: high
 ms.technology: ''
 ms.assetid: 0ec8de66-5a0f-4c8d-afbf-c2becc7d6eec
 ms.reviewer: mghadial
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: e3bb60d3d6bd7321ea3e378c747e87481b659888
-ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.collection: M365-identity-device-management
+ms.openlocfilehash: 5f46cd1295c9ecf593765cf26f4c8685eccbffa0
+ms.sourcegitcommit: 143dade9125e7b5173ca2a3a902bcd6f4b14067f
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52181540"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "61506824"
 ---
 # <a name="add-built-in-apps-to-microsoft-intune"></a>Adicionar aplicativos nativos ao Microsoft Intune
 
@@ -54,17 +56,17 @@ Você pode modificar as informações sobre o aplicativo nativo. Essas informaç
 2. Em **Gerenciar**, selecione a opção **Propriedades**.
 3. Para modificar as informações do aplicativo nativo, selecione a opção **Configurar**.
 4. No painel **Informações do aplicativo**, você pode modificar as seguintes informações:
-    - **Nome**: insira o nome do aplicativo nativo como ele é exibido no portal da empresa. Certifique-se de que todos os nomes usados sejam exclusivos. Se o mesmo nome de aplicativo for usado duas vezes, apenas um dos aplicativos será exibido para usuários no portal da empresa.
-    - **Descrição**: insira uma descrição para o aplicativo. 
-    - **Editor**: insira o nome do editor do aplicativo.
-    - **Categoria**: de forma opcional, selecione uma ou mais das categorias de aplicativo nativo. A configuração dessa opção facilita a localização do aplicativo pelos usuários quando procurarem no portal da empresa.
-    - **Exibir como um aplicativo em destaque no portal da empresa**: exiba o aplicativo em destaque na página principal do portal da empresa quando os usuários procurarem por aplicativos.
-    - **URL de Informações**: opcionalmente, insira a URL de um site que contém informações sobre esse aplicativo. A URL é exibida para os usuários no portal da empresa.
-    - **URL de Privacidade**: opcionalmente, insira a URL de um site que contém informações de privacidade desse aplicativo. A URL é exibida para os usuários no portal da empresa.
-    - **Desenvolvedor**: opcionalmente, insira o nome do desenvolvedor do aplicativo.
-    - **Proprietário**: opcionalmente, insira um nome para o proprietário desse aplicativo, por exemplo, *Departamento de RH*.
-    - **Observações**: digite as observações que você deseja associar a esse aplicativo.
-    - **Carregar Ícone**: carregue um ícone que será exibido com o aplicativo quando os usuários navegarem pelo Portal da Empresa.
+    - **Nome**: insira o nome do aplicativo interno como ele é exibido no portal da empresa. Certifique-se de que todos os nomes usados sejam exclusivos. Se o mesmo nome de aplicativo for usado duas vezes, apenas um dos aplicativos será exibido para usuários no portal da empresa.
+    - **Descrição**: Insira uma descrição para o aplicativo. 
+    - **Editor**: Insira o nome do editor do aplicativo.
+    - **Categoria**: ou selecione uma ou mais categorias do aplicativo interno. A configuração dessa opção facilita a localização do aplicativo pelos usuários quando procurarem no portal da empresa.
+    - **Exibir isso como um aplicativo em destaque no portal da empresa**: Exiba o aplicativo de maneira proeminente em na página principal do portal da empresa quando os usuários procurarem por aplicativos.
+    - **URL de Informações**: Opcionalmente, insira uma URL de um site que contém informações sobre esse aplicativo. A URL é exibida para os usuários no portal da empresa.
+    - **URL de privacidade**: Opcionalmente, insira a URL para um site que contém informações de privacidade desse aplicativo. A URL é exibida para os usuários no portal da empresa.
+    - **Desenvolvedor**: Opcionalmente, Insira o nome do desenvolvedor do aplicativo.
+    - **Proprietário**: ou insira um nome para o proprietário desse aplicativo (por exemplo, *Departamento de RH*).
+    - **Observações**: Insira as observações que você deseja associar a esse aplicativo.
+    - **Ícone Carregar**: carregue um ícone que será exibido com o aplicativo quando os usuários procurarem no portal da empresa.
 4. Selecione **OK**.
 5. No painel **Propriedades**, selecione **Salvar**.
 

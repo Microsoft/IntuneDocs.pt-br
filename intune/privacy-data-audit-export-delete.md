@@ -9,6 +9,7 @@ ms.date: 05/18/2018
 ms.topic: conceptual
 ms.prod: ''
 ms.service: microsoft-intune
+ms.localizationpriority: high
 ms.technology: ''
 ms.assetid: 96990be0-eb1e-43a4-a0e4-09c7dbdc2bf4
 ms.reviewer: angerobe
@@ -16,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 76e0c411afe1fb4e32b26c6ad669cb91b6cd3336
-ms.sourcegitcommit: cb93613bef7f6015a4c4095e875cb12dd76f002e
+ms.openlocfilehash: 5a253894e400e4b63de40d2d8ef56cefef5b2ca0
+ms.sourcegitcommit: 143dade9125e7b5173ca2a3a902bcd6f4b14067f
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/02/2019
-ms.locfileid: "57232787"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "61512791"
 ---
 # <a name="audit-export-or-delete-personal-data-in-intune"></a>Auditar, exportar ou excluir dados pessoais no Intune
 
@@ -79,6 +80,9 @@ Quando você tem um ambiente de MDM híbrido (Intune integrado ao Configuration 
 1. Exclua o usuário do Active Directory (AD) local. Isso impedirá que o usuário seja sincronizado com o Azure AD e também descoberto pela descoberta do Configuration Manager. 
 2. Exclua o usuário do console do Configuration Manager para remover o usuário e os dados associados do Configuration Manager. No console, acesse **Ativo e Conformidade** > **Usuários**, clique com o botão direito do mouse no usuário a ser excluído e clique em **Excluir**.
 3. [Exclua o usuário do AAD](https://docs.microsoft.com/azure/active-directory/add-users-azure-active-directory.md#delete-users-from-azure-ad), o que remove o usuário e os dados associados do Azure Active Directory e do Intune ao mesmo tempo. Quando o usuário é excluído do AAD (exclusão irreversível), o Intune recebe o sinal de exclusão do AAD e, em seguida, inicia automaticamente a limpeza de todos os dados pessoais desse usuário do serviço Intune. As informações do usuário serão excluídas do serviço Intune no prazo de até 30 dias após a ação de remoção.
+
+> [!Important]
+>A integração de novos clientes MDM híbridos foi preterida. Para obter mais informações, confira a postagem no blog [Migrar do Gerenciamento de dispositivo móvel híbrido para o Intune no Azure](https://techcommunity.microsoft.com/t5/Intune-Customer-Success/Move-from-Hybrid-Mobile-Device-Management-to-Intune-on-Azure/ba-p/280150).
 
 ## <a name="next-steps"></a>Próximas etapas
 

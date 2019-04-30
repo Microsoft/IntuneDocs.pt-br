@@ -5,10 +5,11 @@ keywords: ''
 author: ErikjeMS
 ms.author: erikje
 manager: dougeby
-ms.date: 06/15/2018
+ms.date: 04/16/2019
 ms.topic: conceptual
 ms.prod: ''
 ms.service: microsoft-intune
+ms.localizationpriority: high
 ms.technology: ''
 ms.assetid: ''
 ROBOTS: NOINDEX,NOFOLLOW
@@ -17,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 6b5308eb1f9d83bcc9b9cbc29cac9bcf09356e77
-ms.sourcegitcommit: cb93613bef7f6015a4c4095e875cb12dd76f002e
+ms.openlocfilehash: 293fa40b59d0005f60aad45a3fc42d3dd790857d
+ms.sourcegitcommit: 143dade9125e7b5173ca2a3a902bcd6f4b14067f
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/02/2019
-ms.locfileid: "57231937"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "61510139"
 ---
 # <a name="enrolled-device-management-capabilities-of-microsoft-intune"></a>Recursos de gerenciamento de dispositivos registrados do Microsoft Intune
 
@@ -30,7 +31,7 @@ O Microsoft Intune permite que você gerencie uma variedade de dispositivos *reg
 
 Este artigo fornece uma lista completa dos recursos obtidos após o registro dos dispositivos.
 
-Gerenciamento, inventário, implantação de aplicativos, provisionamento e desativação são manipulados por meio do portal do Intune.
+O gerenciamento, o inventário, a implantação de aplicativos, o provisionamento e a desativação são manipulados por meio do Intune no portal do Azure.
 
 Os usuários obtêm acesso ao portal da empresa, o que lhes permite instalar aplicativos, registrar e remover dispositivos e entrar em contato com seu departamento de TI ou suporte técnico.
 
@@ -42,7 +43,7 @@ Os usuários obtêm acesso ao portal da empresa, o que lhes permite instalar apl
 |--------------|-----------|--------------------|
 |Políticas de configuração<br><br>Políticas personalizadas| Permite que você gerencie diversas configurações e recursos em dispositivos móveis da sua organização. Por exemplo, é possível exigir uma senha, limitar o número de tentativas com falha, limitar o tempo antes do travamento da tela, definir a expiração da senha e impedir o uso de senhas usadas anteriormente. Você também pode controlar o uso de recursos de hardware e software, como a câmera do dispositivo ou o navegador da Web.<br><br>Use as políticas personalizadas quando as políticas de configuração não contiverem a configuração de que você precisa. Para dispositivos iOS, você pode importar configurações que exportou da ferramenta Apple Configurator. Para outros dispositivos, você pode usar configurações de OMA-URI (Open Mobile Alliance Uniform Resource Identifier) para definir configurações e recursos no dispositivo.|[Gerenciar configurações e recursos em seus dispositivos com políticas do Microsoft Intune](device-compliance-get-started.md)|
 |Apagamento e bloqueio remotos e redefinição de senha|Apaga dados confidenciais quando um dispositivo é perdido ou roubado. Por exemplo, você pode bloquear remotamente o dispositivo, restaurá-lo para as configurações de fábrica ou apagar apenas dados corporativos.<br><br>Você pode redefinir senhas se os usuários perderem o acesso ao dispositivo, bloquear dispositivos ausentes ou roubados, ou até mesmo apagar os dados de dispositivos ausentes ou roubados.|Ajude a proteger os dispositivos com [bloqueio remoto](device-remote-lock.md) e [redefinição de senha](device-passcode-reset.md)|
-|Modo de quiosque|Permite que você bloqueie determinados recursos de dispositivos móveis, como capturas de tela e interruptores. Também permite restringir os dispositivos para que executem um único aplicativo especificado por você.|[Configurações da política de configuração do iOS no Microsoft Intune](device-restrictions-ios.md)|
+|Modo de quiosque|Permite que você bloqueie determinados recursos de dispositivos móveis, como capturas de tela e interruptores. Também permite restringir os dispositivos para que executem um único aplicativo especificado por você. |[Configurações da política de configuração do iOS no Microsoft Intune](device-restrictions-ios.md)|
 
 ## <a name="app-management"></a>Gerenciamento de aplicativos
 

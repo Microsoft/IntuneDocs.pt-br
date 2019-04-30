@@ -9,17 +9,18 @@ ms.date: 02/13/2019
 ms.topic: conceptual
 ms.prod: ''
 ms.service: microsoft-intune
+ms.localizationpriority: high
 ms.technology: ''
 ms.reviewer: chrisbal
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: 6fd12432d07d1486e0943f88c0cf8b4536e651bc
-ms.sourcegitcommit: cb93613bef7f6015a4c4095e875cb12dd76f002e
+ms.openlocfilehash: cbd3b13215a58a831a15884bfe451f00a35ba379
+ms.sourcegitcommit: 143dade9125e7b5173ca2a3a902bcd6f4b14067f
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/02/2019
-ms.locfileid: "57236493"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "61490188"
 ---
 # <a name="application-protection-policies-and-work-profiles-on-android-enterprise-devices-in-intune"></a>Políticas de proteção de aplicativo e de trabalho em dispositivos Android Enterprise no Intune
 
@@ -50,7 +51,7 @@ Os aplicativos Android individuais são habilitados para APP de algumas maneiras
 
     Para ajudar, o Intune inclui a **Ferramenta de Encapsulamento da Aplicativo** para aplicativos existentes do Android (APKs) e cria um aplicativo que reconhece as políticas de APP.
 
-    Para saber mais sobre essa ferramenta, confira [reparar aplicativos de linha de negócios para políticas de proteção de aplicativo](apps-prepare-mobile-application-management.md).
+    Para saber mais sobre essa ferramenta, confira [Preparar aplicativos de linha de negócios para políticas de proteção de aplicativo](apps-prepare-mobile-application-management.md).
 
 Para ver uma lista de aplicativos habilitados com APP, confira [aplicativos gerenciados com um amplo conjunto de políticas de proteção de aplicativos móveis](https://www.microsoft.com/cloud-platform/microsoft-intune-apps).
 

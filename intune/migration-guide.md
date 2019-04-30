@@ -1,26 +1,28 @@
 ---
 title: Guia de migração de gerenciamento de dispositivo móvel do Intune
-titlesuffix: Microsoft Intune
+titleSuffix: Microsoft Intune
 description: Este guia orienta você passo a passo sobre os diversos detalhes envolvidos na migração de um provedor MDM de terceiros para o Microsoft Intune.
 keywords: ''
 author: dougeby
 ms.author: dougeby
 manager: dougeby
 ms.date: 01/02/2018
-ms.topic: article
+ms.topic: conceptual
 ms.prod: ''
 ms.service: microsoft-intune
+ms.localizationpriority: high
 ms.technology: ''
 ms.assetid: dcfc21f9-1bcd-4371-a46d-f2e18154ec50
 ms.reviewer: dagerrit
 ms.suite: ems
 search.appverid: MET150
-ms.openlocfilehash: bde445601b6fe3612a1a3d8bcab4f6996a997228
-ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.collection: M365-identity-device-management
+ms.openlocfilehash: e293140838cd772dea4cdf810623cfe92fa0fe9e
+ms.sourcegitcommit: 143dade9125e7b5173ca2a3a902bcd6f4b14067f
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52181404"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "61512961"
 ---
 # <a name="intune-migration-guide"></a>Guia de migração do Intune
 
@@ -46,7 +48,7 @@ Este guia divide a migração em duas fases e as duas incluem tarefas, estratég
 
     -   [Considerações especiais de migração](migration-guide-considerations.md)
 
--   [Fase 2: campanha de migração](migration-guide-campaign.md)
+-   [Fase 2: Campanha de migração](migration-guide-campaign.md)
 
     -   [Plano de comunicação](migration-guide-communication-plan.md)
 

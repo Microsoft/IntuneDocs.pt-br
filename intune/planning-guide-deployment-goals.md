@@ -1,27 +1,29 @@
 ---
 title: Determinar as metas, os objetivos e os desafios de implantação
-titlesuffix: Microsoft Intune
+titleSuffix: Microsoft Intune
 description: Este artigo ajuda a determinar as metas, os objetivos e os desafios de implantação para uma implementação somente na nuvem do Microsoft Intune.
 keywords: ''
 author: dougeby
 ms.author: dougeby
 manager: dougeby
 ms.date: 01/02/2018
-ms.topic: article
+ms.topic: conceptual
 ms.prod: ''
 ms.service: microsoft-intune
+ms.localizationpriority: high
 ms.technology: ''
 ms.assetid: 24cf9d97-db39-4b95-a664-4aa2e33edb87
 ms.reviewer: jeffbu, cgerth
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic
-ms.openlocfilehash: 10598f4868a42b9736b6b33a6d9b5c4b4b308967
-ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.collection: M365-identity-device-management
+ms.openlocfilehash: cd1fd6198e71dd585d0216c0850c0140f5e71344
+ms.sourcegitcommit: 143dade9125e7b5173ca2a3a902bcd6f4b14067f
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52189343"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "61512671"
 ---
 # <a name="determine-deployment-goals-objectives-and-challenges"></a>Determinar as metas, os objetivos e os desafios de implantação
 
@@ -33,7 +35,7 @@ Metas de implantação são realizações a longo prazo que você pretende obter
 
 -   **Ser integrado com o Office 365 e dar suporte ao uso de aplicativos móveis do Office**
 
-    -   **Descrição:** forneça a integração total com o Office 365 e o uso de aplicativos móveis do Office com proteção do aplicativo.
+    -   **Descrição:** forneça integração total com o Office 365 e o uso de aplicativos móveis do Office com proteção do aplicativo.
 
     -   **Valor de negócios:** experiência do usuário segura e aprimorada, permitindo que os usuários usem seus aplicativos preferenciais e aqueles com os quais estão familiarizados.
 
@@ -41,19 +43,19 @@ Metas de implantação são realizações a longo prazo que você pretende obter
 
     -   **Descrição:** permitir que os funcionários sejam produtivos onde quer que precisem trabalhar e com qualquer dispositivo que seja mais apropriado para eles. Esse projeto deve buscar permitir a produtividade móvel e o acesso a dados corporativos de maneira segura.
 
-    -   **Valor comercial:** permitir que os funcionários sejam ágeis e trabalhem onde quer que precisem, além de permitir que a empresa seja mais competitiva e forneça um ambiente de trabalho mais gratificante.
+    -   **Valor de negócios:** permitir que os funcionários sejam ágeis e trabalhem de onde precisarem possibilita que a empresa seja mais competitiva e forneça um ambiente de trabalho mais gratificante.
 
 -   **Fornecer proteção de dados em dispositivos móveis**
 
-    -   **Descrição:** o local em que os dados são armazenados em um dispositivo móvel deve ser protegido contra perda ou compartilhamento acidental e mal-intencionado.
+    -   **Descrição:** quando os dados são armazenados em um dispositivo móvel, eles devem ser protegidos contra perda ou compartilhamento acidental ou mal-intencionado.
 
-    -   **Valor de negócios:** a proteção de dados é essencial para garantir que permaneçamos competitivos e tratemos nossos clientes e seus dados com o máximo cuidado.
+    -   **Valor de negócios:** a proteção de dados é fundamental para continuarmos competitivos e tratarmos nossos clientes e seus dados com o maior cuidado.
 
 -   **Reduzir os custos**
 
     -   **Descrição:** quando possível, o projeto reduz os custos operacionais e de implantação.
 
-    -    **Valor de negócios:** o uso eficiente de recursos permite que a empresa invista em outras áreas, tenha uma competitividade mais efetiva e ofereça um melhor serviço aos clientes.
+    -    **Valor de negócios:** o uso eficiente de recursos permite que a empresa invista em outras áreas, seja mais competitiva e forneça um serviço melhor aos clientes.
 
 ## <a name="deployment-objectives"></a>Objetivos de implantação
 
@@ -61,15 +63,15 @@ Objetivos de implantação são as medidas que sua organização pode tomar para
 
 -   **Reduzir o número de soluções de gerenciamento de dispositivo**
 
-    -   **Implementação:** consolidar em uma única solução de gerenciamento de dispositivo móvel: Microsoft Intune para a proteção de dados corporativos de aplicativos e dispositivos.
+    -   **Implementação:** consolidar uma solução única de gerenciamento de dispositivo móvel: o Microsoft Intune para proteção de dados corporativos de aplicativos e de dispositivos.
 
 -   **Fornecer acesso seguro ao Exchange e ao SharePoint Online**
 
-    -   **Implementação:** aplicar o acesso condicional para o Exchange e SharePoint Online.
+    -   **Implementação:** aplicar o acesso condicional para o Exchange e o SharePoint Online.
 
 -   **Impedir que dados corporativos sejam armazenados ou encaminhados para serviços não corporativos no dispositivo móvel**
 
-    -   **Implementação:** aplicar políticas de Proteção de Aplicativo do Intune a aplicativos do Microsoft Office e de linha de negócios.
+    -   **Implementação:** aplicar políticas de proteção de aplicativo do Intune a aplicativos do Microsoft Office e de linha de negócios.
 
 -   **Fornecer a capacidade de apagar dados corporativos do dispositivo**
 
@@ -81,7 +83,7 @@ Desafios de implantação são problemas prioritários de uma organização e qu
 
 -   A preparação de suporte e a experiência do usuário final não estão incluídos em um escopo do projeto inicial. Isso leva à adoção insatisfatória do usuário final e a desafios para sua organização de suporte.
 
-    -   **Mitigação:** incorporar o treinamento de suporte. Valide a experiência do usuário final com as métricas de sucesso em seu plano de implantação.
+    -   **Mitigação:** incorpore o treinamento de suporte. Valide a experiência do usuário final com as métricas de sucesso em seu plano de implantação.
 
 -   A ausência de metas bem definidas e métricas de sucesso leva a resultados intangíveis. Ela também poderá mudar sua organização para o modo reativo quando surgirem problemas.
 
@@ -93,4 +95,4 @@ Desafios de implantação são problemas prioritários de uma organização e qu
 
 ## <a name="next-steps"></a>Próximas etapas
 
-Agora que você identificou as metas e os objetivos de implantação, bem como seus possíveis desafios, vamos passar para a próxima seção: [Identificar os cenários de caso de uso](planning-guide-scenarios.md).
+Agora que você identificou as metas e os objetivos da implantação, bem como seus possíveis desafios, vamos passar para a próxima seção: [Identificar os cenários de caso de uso](planning-guide-scenarios.md).

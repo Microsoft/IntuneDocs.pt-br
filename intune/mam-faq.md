@@ -5,10 +5,11 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 10/22/2018
+ms.date: 03/26/2019
 ms.topic: conceptual
 ms.prod: ''
 ms.service: microsoft-intune
+ms.localizationpriority: high
 ms.technology: ''
 ms.assetid: 149def73-9d08-494b-97b7-4ba1572f0623
 ms.reviewer: erikre
@@ -16,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 69cc0d732c9dc850d55acedf4e6dbae0f43f350a
-ms.sourcegitcommit: cb93613bef7f6015a4c4095e875cb12dd76f002e
+ms.openlocfilehash: 21d773b0ab2227f59f1ee0b2091d39b7c9799721
+ms.sourcegitcommit: 143dade9125e7b5173ca2a3a902bcd6f4b14067f
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/02/2019
-ms.locfileid: "57232040"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "61506807"
 ---
 # <a name="frequently-asked-questions-about-mam-and-app-protection"></a>Perguntas frequentes sobre o MAM e a proteção do aplicativo
 
@@ -62,7 +63,7 @@ Qualquer aplicativo que tenha sido integrado com o [SDK do Aplicativo do Intune]
 
 - O usuário final deve ter uma licença do Microsoft Intune atribuída à sua conta do Azure Active Directory. Confira [Gerenciar licenças do Intune](/intune/licenses-assign) para saber como atribuir licenças do Intune aos usuários finais.
 
-- O usuário final deve pertencer a um grupo de segurança destinado a uma política de proteção do aplicativo. A mesma política de proteção do aplicativo deve ter como destino o aplicativo específico utilizado. Políticas de proteção do aplicativo podem ser criadas e implantadas no console do Intune no [portal do Azure](https://portal.azure.com). No momento, grupos de segurança podem ser criados no [portal do Office](https://portal.office.com).
+- O usuário final deve pertencer a um grupo de segurança destinado a uma política de proteção do aplicativo. A mesma política de proteção do aplicativo deve ter como destino o aplicativo específico utilizado. Políticas de proteção do aplicativo podem ser criadas e implantadas no console do Intune no [portal do Azure](https://portal.azure.com). No momento, grupos de segurança podem ser criados no [centro de administração do Microsoft 365](https://admin.microsoft.com).
 
 - O usuário final deve se conectar ao aplicativo usando sua conta do AAD.
 
@@ -77,7 +78,7 @@ Qualquer aplicativo que tenha sido integrado com o [SDK do Aplicativo do Intune]
 
 **Quais são os requisitos adicionais para usar os [aplicativos Word, Excel e PowerPoint](https://products.office.com/business/office)?**
 
-- O usuário final deve ter uma licença do [Office 365 Business ou Enterprise](https://products.office.com/business/compare-more-office-365-for-business-plans) vinculada à sua conta do Azure Active Directory. A assinatura deve incluir os aplicativos do Office em dispositivos móveis e pode incluir uma conta de armazenamento em nuvem com o [OneDrive for Business](https://onedrive.live.com/about/business/). As licenças do Office 365 podem ser atribuídas no [portal do Office](https://portal.office.com) seguindo estas [instruções](https://support.office.com/article/Assign-or-remove-licenses-for-Office-365-for-business-997596b5-4173-4627-b915-36abac6786dc).
+- O usuário final deve ter uma licença do [Office 365 Business ou Enterprise](https://products.office.com/business/compare-more-office-365-for-business-plans) vinculada à sua conta do Azure Active Directory. A assinatura deve incluir os aplicativos do Office em dispositivos móveis e pode incluir uma conta de armazenamento em nuvem com o [OneDrive for Business](https://onedrive.live.com/about/business/). As licenças do Office 365 podem ser atribuídas na [centro de administração do Microsoft 365](https://admin.microsoft.com) seguindo estas [instruções](https://support.office.com/article/Assign-or-remove-licenses-for-Office-365-for-business-997596b5-4173-4627-b915-36abac6786dc).
 
 - O usuário final deve configurar um local gerenciado usando o salvamento granular como funcionalidade, na configuração "Impedir Salvar como" da política de proteção do aplicativo. Por exemplo, se o local gerenciado for o OneDrive, será necessário configurar o aplicativo [OneDrive](https://onedrive.live.com/about/) no aplicativo Word, Excel ou PowerPoint do usuário final.
 
@@ -170,6 +171,27 @@ As políticas de Proteção de Aplicativo do Intune para acesso serão aplicadas
 
 Ao lidar com diferentes tipos de configurações, um requisito de versão do aplicativo teria precedência, seguido por um requisito de versão do sistema operacional de versão de patch do Android. Em seguida, os avisos para todos os tipos de configurações na mesma ordem são verificados.
 
+**As Políticas de Proteção de Aplicativo do Intune fornecem a funcionalidade para exigir que os dispositivos de usuário final sejam aprovados no Atestado SafetyNet do Google para dispositivos Android. Com que frequência um novo resultado do Atestado SafetyNet é enviado para o dispositivo?** <br><br> Uma nova determinação de serviço do Google Play será relatada ao administrador de TI em um intervalo determinado pelo serviço do Intune. A frequência com que a chamada de serviço é feita é limitada devido à carga; portanto, esse valor é mantido internamente e não é configurável. Qualquer ação configurada pelo administrador de TI para a configuração do Atestado SafetyNet do Google será usada com base no último resultado relatado ao serviço do Intune no momento da inicialização condicional. Se não houver dados, o acesso será permitido sem depender de nenhuma outra falha nas verificações de inicialização condicional e a “viagem de ida e volta” do Serviço do Google Play para determinar os resultados do atestado começará no back-end e avisará o usuário de maneira assíncrona se o dispositivo tiver falhado. Se houver dados obsoletos, o acesso será bloqueado ou permitido dependendo do último resultado relatado e, de maneira semelhante, a “viagem de ida e volta” do Serviço do Google Play para determinar os resultados do atestado começará e avisará o usuário de maneira assíncrona se o dispositivo tiver falhado.
+
+**As Políticas de Proteção de Aplicativo do Intune fornecem a funcionalidade para que os administradores exijam que os dispositivos de usuário final enviem sinais por meio da API Verificar Aplicativos do Google para dispositivos Android. Como um usuário final pode ativar o exame de aplicativos para que ele não tenha o acesso bloqueado devido a isso?**<br><br> As instruções sobre como fazer isso variam um pouco por dispositivo. O processo geral envolve acessar a Google Play Store, clicar em **Meus aplicativos e jogos** e clicar no resultado do último exame de aplicativo que o levará até o menu do Play Protect. Verifique se **Examinar no dispositivo se há ameaças à segurança** está ativado.
+
+**O que a API do Atestado SafetyNet do Google realmente verifica em dispositivos Android? Qual é a diferença entre os valores configuráveis de “Verificar integridade básica” e “Verificar integridade básica e dispositivos certificados”?** <br><br>
+O Intune usa as APIs SafetyNet do Google Play Protect a serem adicionadas às nossas verificações de detecção raiz para dispositivos não registrados. O Google desenvolveu e manteve esse conjunto de APIs para os aplicativos Android adotarem se eles não desejarem que os aplicativos sejam executados em dispositivos desbloqueados por rooting. O aplicativo Android Pay incorporou isso, por exemplo. Embora o Google não compartilhe publicamente todas as verificações de detecção raiz que ocorrem, esperamos que essas APIs detectem usuários que bloquearam seus dispositivos por rooting. Esses usuários podem ter o acesso bloqueado ou suas contas corporativas podem ser apagadas dos aplicativos habilitados por política. “Verificar integridade básica” informa sobre a integridade geral do dispositivo. Dispositivos desbloqueados por rooting, emuladores, dispositivos virtuais e dispositivos com sinais de falsificação apresentam falha na integridade básica. “Verificar integridade básica e dispositivos certificados” informa sobre a compatibilidade do dispositivo com os serviços do Google. Somente dispositivos não modificados que foram certificados pelo Google podem ser aprovados nessa verificação. Dispositivos que falharão incluem o seguinte:
+* dispositivos que apresentam falha na integridade básica
+* dispositivos com um carregador de inicialização desbloqueado
+* dispositivos com uma imagem/ROM do sistema personalizada
+* dispositivos que o fabricante não inscreveu na certificação do Google ou que não foram aprovados por ela 
+* dispositivos com uma imagem do sistema criada diretamente de arquivos de origem do Programa de Software Livre do Android
+* dispositivos com uma imagem do sistema de versão prévia beta/do desenvolvedor
+
+Confira a [documentação do Google sobre o Atestado SafetyNet](https://developer.android.com/training/safetynet/attestation) para obter detalhes técnicos.
+
+**Há duas verificações semelhantes na seção Inicialização condicional ao criar uma Política de Proteção de Aplicativo do Intune para dispositivos Android. Devo exigir a configuração “atestado de dispositivo SafetyNet” ou “dispositivos bloqueados por rooting/jailbreak”?** <br><br>
+As verificações da API SafetyNet do Google Play Protect exigem que o usuário final esteja online, pelo menos durante o período de execução da “viagem de ida e volta” para determinar os resultados do atestado. Se o usuário final estiver offline, o administrador de TI ainda poderá esperar que um resultado seja imposto da configuração “dispositivos bloqueados por rooting/com jailbreak”. Dito isso, se o usuário final tiver ficado offline por muito tempo, o valor “Período de carência offline” entrará em jogo e todo o acesso a dados corporativos ou de estudante será bloqueado depois que esse valor de temporizador for atingido até que o acesso à rede esteja disponível. Ativar as duas configurações permite que uma abordagem em camadas mantenha os dispositivos de usuário final íntegros, o que é importante quando os usuários finais acessam dados corporativos ou de estudante em dispositivos móveis. 
+
+**As configurações da política de proteção de aplicativo que usam as APIs do Google Play Protect exigem que o Google Play Services funcione. E se o Google Play Services não tiver permissão no local em que o usuário final possa estar?**<br><br>
+As duas configurações “atestado de dispositivo SafetyNet” e “Verificação de ameaças em aplicativos” exigem que a versão determinada pelo Google do Google Play Services funcione corretamente. Como essas configurações se enquadram na área de segurança, o usuário final será bloqueado se for direcionado com essas configurações e não atender à versão adequada do Google Play Services ou não tiver acesso ao Google Play Services. 
+
 ## <a name="app-experience-on-ios"></a>Experiência do aplicativo no iOS
 **O que acontece se eu adicionar ou remover uma impressão digital ou detecção facial ao meu dispositivo?**
 As políticas de Proteção de Aplicativo do Intune permitem controlar o acesso do aplicativo somente para o usuário licenciado do Intune. Uma das maneiras de controlar o acesso ao aplicativo é exigir uma Touch ID ou a Face ID da Apple em dispositivos com suporte. O Intune implementa um comportamento no qual, se houver qualquer alteração ao banco de dados biométrico do dispositivo, solicitará ao usuário um PIN quando o próximo valor de tempo limite de inatividade for atendido. As alterações aos dados biométricos incluem a adição ou a remoção de uma impressão digital ou detecção facial. Se o usuário do Intune não tiver um PIN definido, ele será conduzido a configurar um PIN do Intune.
@@ -184,20 +206,13 @@ As políticas de Proteção de Aplicativo do Intune para acesso serão aplicadas
 
 Ao lidar com diferentes tipos de configurações, um requisito de versão do SDK do Aplicativo Intune teria precedência, depois um requisito de versão do aplicativo, seguido pelo requisito de versão do sistema operacional iOS. Em seguida, os avisos para todos os tipos de configurações na mesma ordem são verificados. É recomendável que o requisito de versão do SDK do Aplicativo Intune seja configurado somente após a orientação da equipe de produto do Intune para cenários de bloqueio essenciais.
 
-## <a name="app-protection-policies---policy-refresh"></a>Políticas de proteção de aplicativo – atualização de política
-- Os aplicativos fazem check-in no Serviço de Aplicativo a cada 30 minutos.
-- O limite de 30 minutos baseia-se em um temporizador.
-    - Se o aplicativo estiver ativo durante 30 minutos, ele fará check-in em 30 minutos.
-    - Se o aplicativo estiver suspenso durante 30 minutos, ele fará check-in no próximo foco.
-- Se não for atribuída nenhuma política ao usuário, o check-in ocorrerá a cada oito horas.
-- Se não houver nenhuma licença do Intune atribuída, o check-in ocorrerá a cada 24 horas.
-
 
 ## <a name="see-also"></a>Consulte também
 - [Implementar seu plano do Intune](planning-guide-onboarding.md)
 - [Teste e validação do Intune](planning-guide-test-validation.md)
 - [Configurações de política de gerenciamento de aplicativo móvel do Android no Microsoft Intune](app-protection-policy-settings-android.md)
 - [Configurações de política de gerenciamento de aplicativo móvel iOS](app-protection-policy-settings-ios.md)
-- [Validar políticas de proteção do aplicativo](app-protection-policies-validate.md)
+- [Atualização da política de proteção de aplicativo](app-protection-policy-delivery.md)
+- [Validar políticas de proteção do aplicativo](https://docs.microsoft.com/en-us/intune/app-protection-policy-delivery)
 - [Adicionar políticas de configuração de aplicativo para aplicativos gerenciados sem registro de dispositivo](app-configuration-policies-managed-app.md)
 - [Como obter suporte para o Microsoft Intune](get-support.md)

@@ -1,5 +1,6 @@
 ---
-title: Dados enviados pelo JAMF Pro ao Intune | Microsoft Intune
+title: Dados enviados pelo JAMF Pro ao Intune
+titleSuffix: Microsoft Intune
 description: Lista de dados que o Jamf Pro envia ao Microsoft Intune
 keywords: ''
 author: brenduns
@@ -9,6 +10,7 @@ ms.date: 01/16/2019
 ms.topic: conceptual
 ms.prod: ''
 ms.service: microsoft-intune
+ms.localizationpriority: high
 ms.technology: ''
 ms.assetid: ''
 ms.reviewer: elocholi
@@ -16,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 22d81c768fb7f80498da483421f8b358d59ab8c2
-ms.sourcegitcommit: cb93613bef7f6015a4c4095e875cb12dd76f002e
+ms.openlocfilehash: 452d6fafccc2d53d2f6940197ef4a1aa19febfc2
+ms.sourcegitcommit: 143dade9125e7b5173ca2a3a902bcd6f4b14067f
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/02/2019
-ms.locfileid: "57233219"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "61509527"
 ---
 # <a name="data-jamf-pro-sends-to-intune"></a>Dados enviados pelo Jamf Pro ao Intune
 
@@ -47,7 +49,7 @@ Quando você usa o [Jamf Pro](https://www.jamf.com) para gerenciar seus Macs de 
 * ROM de inicialização
 * Velocidade do barramento
 * Tamanho do cache
-* Nome do Dispositivo
+* Nome do dispositivo
 * Junção de Domínios
 * ID do Jamf
 * Endereço MAC
@@ -60,7 +62,7 @@ Quando você usa o [Jamf Pro](https://www.jamf.com) para gerenciar seus Macs de 
 * SO
 * Plataforma
 * Velocidade do Processador
-* Tipo de Processador
+* Tipo de processador
 * Endereço MAC secundário
 * Número de Série
 * Versão do SMC

@@ -9,17 +9,18 @@ ms.date: 7/31/2018
 ms.topic: conceptual
 ms.prod: ''
 ms.service: microsoft-intune
+ms.localizationpriority: high
 ms.technology: ''
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 680853446b40949309ef406a6cab5b6b0181798a
-ms.sourcegitcommit: cb93613bef7f6015a4c4095e875cb12dd76f002e
+ms.openlocfilehash: 4bdaf5768c1b78fbd07a732ee6690e59638fcff1
+ms.sourcegitcommit: 143dade9125e7b5173ca2a3a902bcd6f4b14067f
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/02/2019
-ms.locfileid: "57233076"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "61513695"
 ---
 # <a name="configure-esim-cellular-profiles-in-intune---public-preview"></a>Configurar perfis de celular eSIM no Intune – versão prévia pública
 
@@ -194,7 +195,7 @@ O perfil do eSIM também é removido quando o dispositivo é [desativado](device
 - Verifique se o arquivo CSV está formatado corretamente. Confirme se o arquivo não inclui códigos duplicados, não inclui várias operadoras móveis ou não inclui planos de dados diferentes. Lembre-se de que cada arquivo precisa ser exclusivo para uma operadora móvel e um plano de dados da rede celular.
 - Crie um grupo de dispositivos estáticos do Azure AD que inclui apenas os dispositivos do eSIM de destino.
 - Se houver um problema com o status da implantação, verifique o seguinte:
-  - **Formato de arquivo não adequado**: Consulte a **Etapa 1: Adicionar códigos de ativação de celular** (neste artigo) para saber como formatar o arquivo corretamente.
+  - **Formato de arquivo não adequado**: Confira a **Etapa 1: Adicionar códigos de ativação de celular** (neste artigo) para saber como formatar o arquivo corretamente.
   - **Falha de ativação de celular, entre em contato com operador móvel**: O código de ativação não pode ser ativado em sua rede. Ou o download do perfil e a ativação de celular falhou.
 
 ## <a name="next-steps"></a>Próximas etapas

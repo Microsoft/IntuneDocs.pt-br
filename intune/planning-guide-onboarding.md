@@ -1,27 +1,29 @@
 ---
 title: Processo de integração do Intune
-titlesuffix: Microsoft Intune
+titleSuffix: Microsoft Intune
 description: Este artigo o ajuda com todos os detalhes que precisam ser considerados ao integrar a solução somente na nuvem do Microsoft Intune ao seu ambiente.
 keywords: ''
 author: dougeby
 ms.author: dougeby
 manager: dougeby
 ms.date: 01/02/2018
-ms.topic: article
+ms.topic: conceptual
 ms.prod: ''
 ms.service: microsoft-intune
+ms.localizationpriority: high
 ms.technology: ''
 ms.assetid: ac7bd764-5365-4920-8fd0-ea57d5ebe039
 ms.reviewer: jeffbu, cgerth
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic
-ms.openlocfilehash: d5c1fb2b6b20c9687418e14f8e35543c04833a25
-ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.collection: M365-identity-device-management
+ms.openlocfilehash: 9cd9f14d48c86119acf862e2d335fe88fb2a9a1c
+ms.sourcegitcommit: 143dade9125e7b5173ca2a3a902bcd6f4b14067f
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52186385"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "61513963"
 ---
 # <a name="implement-your-microsoft-intune-plan"></a>Implementar seu plano do Microsoft Intune
 
@@ -52,13 +54,13 @@ Os principais requisitos independentes do Intune são:
 
 Nós identificamos 13 tarefas discretas para implementar uma implantação do Intune. Dependendo dos requisitos de negócios, da infraestrutura existente e da estratégia de gerenciamento de dispositivo, algumas dessas tarefas talvez já tenham sido concluídas. Outras podem não se aplicar ao seu plano.
 
-### <a name="task-1-get-an-intune-subscription"></a>Tarefa 1: obter uma assinatura do Intune
+### <a name="task-1-get-an-intune-subscription"></a>Tarefa 1: Obter uma assinatura do Intune
 
 Conforme indicado na seção de requisitos do Intune acima, você precisa de uma assinatura do EMS ou do Intune. Caso sua organização não tenha uma, contate a Microsoft ou a equipe de contas da Microsoft sobre seu interesse em comprar o EMS (Enterprise Mobility + Security) ou o Intune.
 
 -   Saiba mais sobre [como comprar o Microsoft Intune](https://www.microsoft.com/cloud-platform/microsoft-intune-pricing).
 
-### <a name="task-2-add-office-365-subscription"></a>Tarefa 2: Adicionar uma assinatura do Office 365
+### <a name="task-2-add-office-365-subscription"></a>Tarefa 2: Adicionar assinatura do Office 365
 
 Essa etapa é opcional. Você precisa de uma assinatura do Office 365 se você planeja usar o Exchange Online e gerenciar aplicativos móveis do Office com as políticas de proteção do aplicativo. Caso sua organização não tenha uma assinatura do Office 365, contate a Microsoft ou a equipe de contas da Microsoft sobre seu interesse em comprar o Office 365.
 
@@ -74,13 +76,13 @@ Talvez seja necessário adicionar usuários ou grupos de segurança no Active Di
 
 
 
-### <a name="task-4-assign-intune-and-office-365-user-licenses"></a>Tarefa 4: Atribuir licenças de usuário do Intune e Office 365
+### <a name="task-4-assign-intune-and-office-365-user-licenses"></a>Tarefa 4: Atribuir licenças de usuário do Intune e do Office 365
 
-Todos os usuários que serão alvo da distribuição do EMS/Intune e Office 365 precisarão ter uma licença atribuída a eles. A atribuição de licença do EMS/Intune e Office 365 pode ser feita no Portal do Centro de Administração do Office 365.
+Todos os usuários que serão alvo da distribuição do EMS/Intune e Office 365 precisarão ter uma licença atribuída a eles. É possível atribuir licenças do EMS/Intune e do Office 365 no centro de administração do Microsoft 365.
 
 -   Saiba mais sobre [como atribuir licenças do Intune](licenses-assign.md).
 
-### <a name="task-5-set-mobile-device-management-authority-to-intune"></a>Tarefa 5: definir a autoridade de gerenciamento de dispositivo móvel para o Intune
+### <a name="task-5-set-mobile-device-management-authority-to-intune"></a>Tarefa 5: Definir a autoridade de gerenciamento de dispositivo móvel para o Intune
 
 Antes de iniciar a instalação, a configuração, o gerenciamento e o registro de dispositivos usando o Intune, é necessário definir a autoridade de gerenciamento de dispositivo para o Intune.
 
@@ -110,7 +112,7 @@ O Intune dá suporte a perfis de Email, de Wi-Fi e de VPN. Adicione esses perfis
 
 -   Saiba mais sobre [como habilitar o acesso a recursos da empresa com o Intune](device-profiles.md).
 
-### <a name="task-10-add-and-deploy-apps"></a>Tarefa 10: Adicionar e implantar aplicativos
+### <a name="task-10-add-and-deploy-apps"></a>Tarefa 10: Adicione e implante aplicativos
 
 O Intune dá suporte à implantação de aplicativos Web, LOB e de repositório público. Você também pode gerenciar aplicativos que integraram o SDK do Intune, associando-os a políticas de proteção do aplicativo. Adicione aplicativos conforme apropriado e implante-os em grupos de destino de acordo com seus requisitos e casos de uso de implantação do Intune.
 
@@ -122,7 +124,7 @@ O Intune dá suporte a políticas de conformidade. Adicione políticas de confor
 
 -   Saiba mais sobre as [políticas de conformidade](device-compliance.md).
 
-### <a name="task-12-enable-conditional-access-policies"></a>Tarefa 12: habilitar políticas de acesso condicional
+### <a name="task-12-enable-conditional-access-policies"></a>Tarefa 12: Habilitar políticas de acesso condicional
 
 O Intune dá suporte ao acesso condicional para Exchange Online, Exchange Local, SharePoint Online, Skype for Business Online e Dynamics CRM Online. Habilite e configure o acesso condicional conforme apropriado, de acordo com seus requisitos e casos de uso de implantação do Intune.
 

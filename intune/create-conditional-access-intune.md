@@ -1,33 +1,34 @@
 ---
 title: Configurar o acesso condicional baseado em dispositivo usando o Intune
-titlesuffix: Microsoft Intune
+titleSuffix: Microsoft Intune
 description: Saiba como criar uma política de acesso condicional baseada em dispositivo com base na conformidade de dispositivo do Microsoft Intune e no gerenciamento de aplicativo móvel.
 keywords: ''
 author: brenduns
 ms.author: brenduns
 manager: dougeby
-ms.date: 12/11/2018
+ms.date: 02/22/2019
 ms.topic: conceptual
 ms.prod: ''
 ms.service: microsoft-intune
+ms.localizationpriority: high
 ms.technology: ''
 ms.assetid: ''
 ms.reviewer: ''
 ms.suite: ems
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 03ca9a65d5a62c75c45541b42c9b2aa5c4871a18
-ms.sourcegitcommit: e0374b3ced83c8876a4f78b326869c10588a55e5
+ms.openlocfilehash: aaf9b82bc810dd3a616eb25f39f4b5830b1c3e6f
+ms.sourcegitcommit: 143dade9125e7b5173ca2a3a902bcd6f4b14067f
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/15/2019
-ms.locfileid: "56307780"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "61508597"
 ---
 # <a name="create-a-device-based-conditional-access-policy"></a>Criar uma política de acesso condicional baseada em dispositivo
 
-Com o Intune, você pode aprimorar o acesso condicional no Azure Active Directory adicionando conformidade de dispositivo móvel aos controles de acesso. Depois de criar uma política de conformidade do Intune que define os requisitos para conformidade dos dispositivos, use o status de conformidade do dispositivo para permitir ou bloquear o acesso aos seus aplicativos e serviços. Você pode fazer isso criando uma política de acesso condicional que usa a configuração **Exigir que o dispositivo seja marcado como em conformidade**. 
+Com o Intune, você pode aprimorar o acesso condicional no Azure Active Directory adicionando conformidade de dispositivo móvel aos controles de acesso. Depois de criar uma política de conformidade do Intune que define os requisitos para conformidade dos dispositivos, use o status de conformidade do dispositivo para permitir ou bloquear o acesso aos seus aplicativos e serviços. Você pode fazer isso criando uma política de acesso condicional que usa a configuração **Exigir que o dispositivo seja marcado como em conformidade**.  
 
-Uma política de acesso condicional especifica o aplicativo ou serviços que você quer proteger, as condições sob as quais os aplicativos ou serviços podem ser acessados e os usuários aos quais a política se aplica. Acesso condicional é um recurso premium do Azure AD que pode ser configurado no Azure Active Directory, mas você também pode configurar essas mesmas políticas de dentro do portal do Intune. 
+Uma política de acesso condicional especifica o aplicativo ou serviços que você quer proteger, as condições sob as quais os aplicativos ou serviços podem ser acessados e os usuários aos quais a política se aplica. Acesso condicional é um recurso premium do Azure AD que pode ser configurado no Azure Active Directory, mas você também pode configurar essas mesmas políticas de dentro do portal do Intune. O nó Acesso Condicional acessado no *Intune* é o mesmo nó que o acessado no *Azure AD*.  
 
 > [!IMPORTANT]
 > Antes de configurar o acesso condicional, você precisará configurar políticas de conformidade de dispositivo do Intune para avaliar dispositivos com base nos requisitos específicos. Confira [Introdução às políticas de conformidade do dispositivo no Intune](device-compliance-get-started.md).

@@ -5,35 +5,33 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 01/09/2019
-ms.topic: article
+ms.date: 02/27/2019
+ms.topic: conceptual
 ms.prod: ''
 ms.service: microsoft-intune
+ms.localizationpriority: high
 ms.technology: ''
 ms.reviewer: ''
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 36076aab02f16937066cb3d47d573f7c74dd6277
-ms.sourcegitcommit: 727c3ae7659ad79ea162250d234d7730f840c731
+ms.openlocfilehash: 704abe5e03410b52d54c7729e1832e527ae4dfb6
+ms.sourcegitcommit: 143dade9125e7b5173ca2a3a902bcd6f4b14067f
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/07/2019
-ms.locfileid: "55833609"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "61504260"
 ---
-# <a name="windows-10-templates-to-configure-group-policy-settings-in-microsoft-intune"></a>Modelos do Windows 10 para definir as configurações da Política de Grupo no Microsoft Intune
+# <a name="use-windows-10-templates-to-configure-group-policy-settings-in-microsoft-intune"></a>Use modelos do Windows 10 para definir as configurações da política de grupo no Microsoft Intune
 
 Ao gerenciar dispositivos em sua organização, você deseja criar um grupo de configurações que são aplicadas a diferentes grupos de dispositivos. Por exemplo, você tem vários grupos de dispositivos. Para o GroupA, você deseja atribuir um conjunto específico de configurações. Para o GroupB, você deseja atribuir um conjunto diferente de configurações. Você também deseja obter uma exibição simples das configurações definidas.
 
-Realize essa tarefa usando **Modelos Administrativos** no Microsoft Intune. Os modelos administrativos incluem centenas de configurações que controlam recursos no Internet Explorer, programas do Microsoft Office, área de trabalho remota, acesso ao OneDrive, uso de uma senha com imagem ou um PIN para conexão, entre outros. Esses modelos são semelhantes às configurações de GPO (Política de Grupo) no AD (Active Directory) e são [configurações com suporte de ADMX](https://docs.microsoft.com/windows/client-management/mdm/understanding-admx-backed-policies) que usam XML. Porém, os modelos do Intune são 100% baseados em nuvem. Eles oferecem uma forma mais simples e direta para definir as configurações e encontrar as configurações desejadas.
+Realize essa tarefa usando **Modelos Administrativos** no Microsoft Intune. Os modelos administrativos incluem centenas de configurações que controlam recursos no Internet Explorer, programas do Microsoft Office, área de trabalho remota, acesso ao OneDrive, uso de uma senha com imagem ou um PIN para conexão, entre outros. Esses modelos são semelhantes às configurações de GPO (política de grupo) no AD (Active Directory) e são [configurações com suporte de ADMX](https://docs.microsoft.com/windows/client-management/mdm/understanding-admx-backed-policies) (abre outro site do Docs) que usam XML. Porém, os modelos do Intune são 100% baseados em nuvem. Eles oferecem uma forma mais simples e direta para definir as configurações e encontrar as configurações desejadas.
 
 Os **Modelos Administrativos** são internos ao Intune e não exigem personalizações, incluindo o uso de OMA-URI. Como parte de sua solução de MDM (gerenciamento de dispositivo móvel), use essas configurações de modelo como um ponto único centralizado para gerenciar seus dispositivos Windows 10.
 
 Este artigo lista as etapas usadas para criar um modelo para dispositivos Windows 10 e mostra como filtrar todas as configurações disponíveis no Microsoft Intune. Quando você cria o modelo, ele cria um perfil de configuração do dispositivo. Em seguida, você pode atribuir ou implantar esse perfil a dispositivos Windows 10 em sua organização.
-
-> [!NOTE]
-> Há suporte para modelos administrativos em dispositivos autônomos. No momento, não há suporte para eles em dispositivos cogerenciados do SCCM (System Center Configuration Manager).
 
 ## <a name="create-a-template"></a>Criar um modelo
 
@@ -75,6 +73,8 @@ Há centenas de configurações disponíveis nesses modelos. Para facilitar a lo
   ![Clicar em Caminho para classificar em ordem alfabética](./media/administrative-templates-windows/search-copy-settings.png)
 
   Em outro exemplo, pesquise `microsoft word`. Você verá todas as configurações que podem ser definidas para o programa Microsoft Word. Pesquise `explorer` para ver todas as configurações do Internet Explorer que podem ser adicionadas ao modelo.
+
+Esse recurso usa os [CSPs da política do Windows](https://docs.microsoft.com/windows/client-management/mdm/policy-configuration-service-provider#admx-backed-policies) (abre outro site do Docs). Os CSPs funcionam em diferentes edições do Windows, como Home, Professional, Enterprise e assim por diante. Para ver se um CSP funciona em uma edição específica, acesse os [CSPs da política do Windows](https://docs.microsoft.com/windows/client-management/mdm/policy-configuration-service-provider#admx-backed-policies) (abre outro site do Docs).
 
 ## <a name="next-steps"></a>Próximas etapas
 

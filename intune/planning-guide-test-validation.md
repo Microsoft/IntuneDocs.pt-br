@@ -1,27 +1,28 @@
 ---
 title: Teste e validação do Intune
-titlesuffix: Microsoft Intune
+titleSuffix: Microsoft Intune
 description: Como testar e validar a solução específica para nuvem do Intune em seu ambiente.
 keywords: ''
 author: dougeby
 ms.author: dougeby
 manager: dougeby
-ms.date: 10/31/2017
+ms.date: 3/22/2019
 ms.topic: conceptual
 ms.prod: ''
 ms.service: microsoft-intune
+ms.localizationpriority: high
 ms.technology: ''
 ms.assetid: 4f82ee0c-4bd6-4623-9b10-9249d316ccf5
 ms.reviewer: jeffbu, cgerth
 ms.suite: ems
 search.appverid: MET150
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 4974dc3e86b26434cb633bd58e524d290573ecd0
-ms.sourcegitcommit: cb93613bef7f6015a4c4095e875cb12dd76f002e
+ms.openlocfilehash: ba257ad6ebd7c8dbb2ca6ef805c896a4584ed41f
+ms.sourcegitcommit: 143dade9125e7b5173ca2a3a902bcd6f4b14067f
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/02/2019
-ms.locfileid: "57237547"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "61512827"
 ---
 # <a name="intune-testing-and-validation"></a>Teste e validação do Intune
 
@@ -43,7 +44,7 @@ Se não houver nenhum componente de design em pelo menos um critério de teste a
 
 -   **Dispositivos:** dispositivos que podem ser apagados ou redefinidos para as configurações padrão de fábrica.
 
--   **Componentes de integração:** todos os componentes de integração (conector de certificado, conector de serviço a serviço do Intune para o Exchange hospedado e Intune Exchange Connector local) devem ser instalados e configurados, se necessário.
+-   **Componentes de integração:** Todos os componentes de integração (conectores de certificado e o conector local do Intune Exchange) devem ser instalados e configurados se necessário.
 
 Alterações de design podem ser necessárias para a adequação a problemas imprevistos. Além disso, todas as alterações de design devem ser totalmente documentadas com o motivo de cada alteração. Aqui temos um exemplo para ilustrar o que uma alteração poderia ser:
 

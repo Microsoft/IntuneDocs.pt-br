@@ -6,7 +6,7 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 01/03/2019
+ms.date: 04/16/2019
 ms.topic: conceptual
 ms.prod: ''
 ms.service: microsoft-intune
@@ -18,29 +18,29 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 844342d0d21110f46ac9a344edbd7409f7d779cb
-ms.sourcegitcommit: 484a898d54f5386fdbce300225aaa3495cecd6b0
+ms.openlocfilehash: cc29e7bb56c5a5e21264e275cfecf0ea4b0e9273
+ms.sourcegitcommit: 143dade9125e7b5173ca2a3a902bcd6f4b14067f
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/01/2019
-ms.locfileid: "59567212"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "61501351"
 ---
 # <a name="app-configuration-policies-for-microsoft-intune"></a>Políticas de configuração de aplicativo do Microsoft Intune
 
-Use políticas de configuração de aplicativo no Microsoft Intune para fornecer definições de configuração para um aplicativo iOS ou Android. Essas definições de configuração permitem que um aplicativo seja personalizado. Você não atribui essas políticas de configuração diretamente a usuários e dispositivos. Em vez disso, você associa uma política de configuração a um aplicativo e, em seguida, atribui o aplicativo. As definições da política de configuração são usadas quando o aplicativo verifica se elas existem, normalmente, na primeira vez em que ele é executado.
+Use políticas de configuração de aplicativo no Microsoft Intune para fornecer definições de configuração para um aplicativo iOS ou Android. Essas definições de configuração permitem que um aplicativo seja personalizado. Você não atribui essas políticas de configuração diretamente a usuários ou dispositivos. Em vez disso, você associa uma política de configuração a um aplicativo e, em seguida, atribui o aplicativo. As definições da política de configuração são usadas quando o aplicativo verifica se elas existem, normalmente, na primeira vez em que ele é executado.
 
 Você pode atribuir uma política de configuração de aplicativo a um grupo de usuários e dispositivos usando uma combinação de atribuições de inclusão e exclusão. Depois de adicionar uma política de configuração de aplicativo, você pode definir as atribuições para política de configuração de aplicativo. Ao definir as atribuições para a política, você pode optar por incluir ou excluir os grupos de usuários para os quais a política se aplica. Ao optar por incluir um ou mais grupos, você pode optar por selecionar grupos específicos para incluir ou selecionar grupos internos. Os grupos internos incluem **Todos os Usuários**, **Todos os Dispositivos** e **Todos os Usuários + Todos os Dispositivos**.
 
-Por exemplo, um aplicativo pode exigir que você especifique um dos seguintes detalhes:
+Por exemplo, uma configuração de aplicativos pode exigir que você especifique um dos seguintes detalhes:
 
 - Um número de porta personalizado
 - Configurações de idioma
 - Configurações de segurança
 - Configurações de identidade visual, como um logotipo da empresa
 
-Quando os usuários inserem essas configurações incorretamente, isso pode aumentar a carga do suporte técnico e reduzir a adoção de novos aplicativos.
+Se os usuários tivessem que inserir essas configurações, eles poderiam fazer isso incorretamente, o que poderia aumentar a carga do suporte técnico e reduzir a adoção de novos aplicativos.
 
-As políticas de configuração de aplicativo podem ajudar a eliminar esses problemas, permitindo que você atribua essas configurações para os usuários em uma política antes que eles executem o aplicativo. As configurações então são fornecidas automaticamente e os usuários não precisam executar nenhuma ação.
+As políticas de configuração de aplicativos podem ajudar a eliminar os problemas de instalação do aplicativo ao permitir que você atribua configurações a uma política atribuída aos usuários antes da execução do aplicativo. As configurações então são fornecidas automaticamente e os usuários não precisam executar nenhuma ação.
 
 As definições de configuração são usadas sempre que o aplicativo verifica a existência delas. Normalmente, um aplicativo verifica as definições de configuração na primeira vez em que é executado pelo usuário.
 

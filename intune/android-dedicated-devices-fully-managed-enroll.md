@@ -1,15 +1,16 @@
 ---
-title: Registrar dispositivos Android dedicados ou totalmente gerenciados no Intune
-titlesuffix: Microsoft Intune
-description: Saiba como registrar dispositivos corporativos Android dedicados ou totalmente gerenciados no Intune.
+title: Registrar dispositivos Android Enterprise dedicados ou dispositivos totalmente gerenciados no Intune
+titleSuffix: Microsoft Intune
+description: Saiba como registrar dispositivos Android Enterprise dedicados ou dispositivos totalmente gerenciados no Intune.
 keywords: ''
 author: ErikjeMS
 ms.author: erikje
 manager: dougeby
 ms.date: 1/15/2018
-ms.topic: article
+ms.topic: conceptual
 ms.prod: ''
 ms.service: microsoft-intune
+ms.localizationpriority: high
 ms.technology: ''
 ms.assetid: ''
 ms.reviewer: chrisbal
@@ -17,16 +18,16 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 2a83676f67866bc81ea81f7bb721dec5825a95c9
-ms.sourcegitcommit: 727c3ae7659ad79ea162250d234d7730f840c731
+ms.openlocfilehash: f56e2987fefcc514911f762c5fd82ca1ebc6779c
+ms.sourcegitcommit: 143dade9125e7b5173ca2a3a902bcd6f4b14067f
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/07/2019
-ms.locfileid: "55843435"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "61503866"
 ---
-# <a name="enroll-your-android-dedicated-devices-or-fully-managed-devices-preview"></a>Registrar dispositivos Android totalmente gerenciados ou dedicados (versão prévia)
+# <a name="enroll-your-android-enterprise-dedicated-devices-or-fully-managed-devices-preview"></a>Registrar dispositivos Android Enterprise dedicados ou dispositivos totalmente gerenciados (versão prévia)
 
-Depois de configurar seus [dispositivos Android dedicados](android-kiosk-enroll.md) ou [dispositivos totalmente gerenciados](android-fully-managed-enroll.md) no Intune, você poderá registrá-los. A maneira de registrar seus dispositivos Android depende do sistema operacional.
+Após configurar seus [dispositivos Android Enterprise dedicados](android-kiosk-enroll.md) ou [dispositivos totalmente gerenciados](android-fully-managed-enroll.md) no Intune, será possível registrá-los. A maneira como você registra seus dispositivos Android Enterprise depende do sistema operacional.
 
 | Método de registro | Versão mínima do sistema operacional Android para dispositivos dedicados e totalmente gerenciados |
 | ----- | ----- |

@@ -6,20 +6,22 @@ author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
 ms.date: 07/26/2018
-ms.topic: article
+ms.topic: conceptual
 ms.prod: ''
 ms.service: microsoft-intune
+ms.localizationpriority: high
 ms.technology: ''
 ms.reviewer: ''
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: de0df4878d2461d2f7c0a022a7e3d305e58aef7f
-ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.collection: M365-identity-device-management
+ms.openlocfilehash: d042a160d016343c6e8374dff8f74560b9806014
+ms.sourcegitcommit: 143dade9125e7b5173ca2a3a902bcd6f4b14067f
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52187771"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "61508461"
 ---
 # <a name="add-partner-certification-authority-in-intune-using-scep"></a>Adicionar autoridade de certificação de parceiro no Intune usando o SCEP
 
@@ -69,7 +71,7 @@ Para permitir que um servidor SCEP de terceiros execute uma validação de desaf
 
 Verifique se você tem as permissões necessárias para registrar um aplicativo Azure AD. A seção [Permissões necessárias](https://docs.microsoft.com/azure/azure-resource-manager/resource-group-create-service-principal-portal#required-permissions) lista as etapas.
 
-**Etapa 1: Criar um aplicativo Azure AD**
+**Etapa 1: Criar um aplicativo do Azure AD**
 
 1. Entre no [Portal do Azure](https://portal.azure.com).
 2. Selecione **Azure Active Directory** > **Registros do aplicativo** > **Novo registro de aplicativo**.
@@ -91,7 +93,7 @@ Depois de criar o aplicativo, forneça à API do Microsoft Intune as permissões
 
 Em seguida, obtenha a ID e os valores de chave do aplicativo Azure AD. Os seguintes valores são necessários:
 
-- ID do Aplicativo
+- ID do aplicativo
 - Chave de autenticação
 - ID do locatário
 

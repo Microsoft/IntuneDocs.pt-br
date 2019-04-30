@@ -1,27 +1,29 @@
 ---
 title: Desenvolver um plano de comunicação para distribuição
-titlesuffix: Microsoft Intune
+titleSuffix: Microsoft Intune
 description: Este artigo ajuda você a desenvolver um plano de comunicação de distribuição para a implantação do Microsoft Intune.
 keywords: ''
 author: dougeby
 ms.author: dougeby
 manager: dougeby
 ms.date: 10/30/2017
-ms.topic: article
+ms.topic: conceptual
 ms.prod: ''
 ms.service: microsoft-intune
+ms.localizationpriority: high
 ms.technology: ''
 ms.assetid: 393ebe75-d001-485a-b81c-6361c8b5e6ee
 ms.reviewer: jeffbu, cgerth
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic
-ms.openlocfilehash: 013e2c6c10d5a545343c864b1b564acbede7c675
-ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.collection: M365-identity-device-management
+ms.openlocfilehash: 6e3584d97bf9f1a223b15c986f398681a20520c1
+ms.sourcegitcommit: 143dade9125e7b5173ca2a3a902bcd6f4b14067f
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52179809"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "61513283"
 ---
 # <a name="develop-a-rollout-communication-plan"></a>Desenvolver um plano de comunicação para distribuição
 
@@ -55,7 +57,7 @@ Este [guia de registro do usuário final](https://gallery.technet.microsoft.com/
 
 Há vários métodos de entrega que podem ser utilizados para comunicar informações sobre a distribuição do Intune aos grupos organizacionais e usuários de destino. A lista a seguir mostra alguns exemplos e a etapa na qual o método pode ser usado:
 
--   Reuniões de toda a organização pessoalmente ou por Skype usadas para a etapa inicial
+-   Reuniões de toda a organização pessoalmente ou pelo Microsoft Teams usadas para a etapa inicial
 
 -   Email usado para as ondas pré-registro, registro e pós-registro
 
