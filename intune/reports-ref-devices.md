@@ -1,12 +1,12 @@
 ---
 title: Dispositivos – Intune Data Warehouse
-titlesuffix: Microsoft Intune
+titleSuffix: Microsoft Intune
 description: Tópico de referência para a categoria de Dispositivos de coleções de entidade na API Intune Data Warehouse.
 keywords: Intune Data Warehouse
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 12/20/2018
+ms.date: 04/09/2019
 ms.topic: reference
 ms.prod: ''
 ms.service: microsoft-intune
@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 29213400b5baf9705c188bb45b3666b65262d577
-ms.sourcegitcommit: 93286c22426dcb59191a99e3cf2af4ff6ff16522
+ms.openlocfilehash: c361c6054cf52c802155587084eaea76e024f78c
+ms.sourcegitcommit: 601327125ac8ae912d8159422de8aac7dbdc25f6
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/22/2019
-ms.locfileid: "58358226"
+ms.lasthandoff: 04/09/2019
+ms.locfileid: "59429175"
 ---
 # <a name="reference-for-devices-entities"></a>Referência para entidades de dispositivos
 
@@ -80,6 +80,7 @@ A entidade **EnrollmentActivity** indica a atividade de um registro de dispositi
 |-------------------------------|---------------------------------------------------------------------------|
 | dateKey                       | Chave da data em que essa atividade de registro foi gravada.               |
 | deviceEnrollmentTypeKey       | Chave do tipo do registro.                                        |
+| deviceTypeKey                 | Chave do tipo de dispositivo.                                                |
 | enrollmentEventStatusKey      | Chave do status indicando o êxito ou a falha do registro.    |
 | enrollmentFailureCategoryKey  | Chave da categoria de falha do registro (se o registro falhou).        |
 | enrollmentFailureReasonKey    | Chave do motivo da falha do registro (se o registro falhou).          |
@@ -224,46 +225,61 @@ A entidade **ManagementAgentTypes** representa os agentes usados para gerenciar 
 
 A entidade **Dispositivos** lista todos os dispositivos registrados no gerenciamento e suas propriedades correspondentes.
 
-| Propriedade  | Descrição |
-|---------|------------|
-| DeviceKey | Identificador exclusivo do dispositivo no data warehouse – chave substituta. |
-| DeviceId | Identificador exclusivo do dispositivo. |
-| DeviceName | Nome do dispositivo em plataformas que permitem a nomeação de um dispositivo. Em outras plataformas, o Intune cria um nome de outras propriedades. Esse atributo pode não estar disponível para todos os dispositivos. |
-| DeviceTypeKey | Chave do atributo de tipo de dispositivo para este dispositivo. |
-| OwnerTypeKey | Chave do atributo de tipo de proprietário para este dispositivo: corporativo, pessoal ou desconhecido. |
-| objectSourceKey | Ignore essa coluna. |
-| ManagementAgentKey | Chave do agente de gerenciamento associado a esse dispositivo. |
-| ManagementStateKey | Chave do estado de gerenciamento associado a esse dispositivo, que indica o estado mais recente de uma ação remota ou se foi ele desbloqueado/modificado. |
-| OSVersion | Versão do SO |
-| OSMajorVersion | Componente de versão principal da versão do SO (major.minor.build.revision). |
-| OSMinorVersion | Componente de versão secundária da versão do SO (major.minor.build.revision). |
-| OSBuildNumber | Componente de versão de build da versão do SO (major.minor.build.revision). |
-| OSRevisionNumber | Componente de versão de revisão da versão do SO (major.minor.build.revision). |
-| SerialNumber | Número de série do dispositivo, se disponível. |
-| RowLastModifiedDateTimeUTC | Última vez em que este registro foi modificado. |
-| DeviceAction | Última ação de dispositivo emitida, ignorar por enquanto. |
-| Fabricante | Fabricante do dispositivo. |
-| Modelo | Modelo do dispositivo. |
-| IsDeleted | Defina como True se o dispositivo não for mais gerenciado pelo Intune. Preserva o último estado conhecido. |
-| AndroidSecurityPatchLevel |A data do patch de segurança mais recente do dispositivo. |
+|          Propriedade          |                                                                                       Descrição                                                                                      |
+|:--------------------------:|:--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------:|
+| DeviceKey                  | O identificador exclusivo do dispositivo no data warehouse – chave substituta.                                                                                                               |
+| DeviceId                   | O identificador exclusivo do dispositivo.                                                                                                                                                     |
+| DeviceName                 | O nome do dispositivo em plataformas que permitem a nomeação de um dispositivo. Em outras plataformas, o Intune cria um nome com base em outras propriedades. Esse atributo pode não estar disponível para todos os dispositivos. |
+| DeviceTypeKey              | A chave do atributo de tipo de dispositivo para este dispositivo.                                                                                                                                    |
+| DeviceRegistrationState    | A chave do atributo de estado do registro do cliente para este dispositivo.                                                                                                                      |
+| OwnerTypeKey               | A chave do atributo de tipo de proprietário para este dispositivo: corporativo, pessoal ou desconhecido.                                                                                                    |
+| EnrolledDateTime           | A data e hora em que este dispositivo foi registrado.                                                                                                                                         |
+| LastSyncDateTime           | O último check-in conhecido do dispositivo no Intune.                                                                                                                                              |
+| ManagementAgentKey         | A chave do agente de gerenciamento associado a esse dispositivo.                                                                                                                             |
+| ManagementStateKey         | A chave do estado de gerenciamento associado a esse dispositivo, que indica o estado mais recente de uma ação remota ou se foi ele desbloqueado/modificado.                                                |
+| AzureADDeviceId            | A ID de dispositivo do Azure para este dispositivo.                                                                                                                                                  |
+| AzureADRegistered          | Se o dispositivo está registrado no Azure Active Directory.                                                                                                                             |
+| DeviceCategoryKey          | A chave da categoria associada a este dispositivo.                                                                                                                                     |
+| DeviceEnrollmentType       | A chave do tipo de registro associada a este dispositivo, que indica o método de registro.                                                                                             |
+| ComplianceStateKey         | A chave do estado de conformidade associado a este dispositivo.                                                                                                                             |
+| OSVersion                  | Versão do sistema operacional do dispositivo.                                                                                                                                                |
+| EasDeviceId                | A ID do Exchange ActiveSync do dispositivo.                                                                                                                                                  |
+| SerialNumber               | SerialNumber                                                                                                                                                                           |
+| UserId                     | O identificador exclusivo do usuário associado ao dispositivo.                                                                                                                           |
+| RowLastModifiedDateTimeUTC | A data e a hora em UTC em que este dispositivo foi modificado pela última vez no data warehouse.                                                                                                       |
+| Fabricante               | Fabricante do dispositivo                                                                                                                                                             |
+| Modelo                      | Modelo do dispositivo                                                                                                                                                                    |
+| OperatingSystem            | Sistema operacional do dispositivo. Windows, iOS etc.                                                                                                                                   |
+| IsDeleted                  | Binário para mostrar se o dispositivo foi excluído ou não.                                                                                                                                 |
+| AndroidSecurityPatchLevel  | Nível de patch de segurança do Android                                                                                                                                                           |
+| MEID                       | MEID                                                                                                                                                                                   |
+| isSupervised               | Estado de dispositivo não supervisionado                                                                                                                                                               |
+| FreeStorageSpaceInBytes    | Armazenamento livre em bytes.                                                                                                                                                                 |
+| TotalStorageSpaceInBytes   | Armazenamento total em bytes.                                                                                                                                                                |
+| EncryptionState            | Estado de criptografia no dispositivo.                                                                                                                                                      |
+| SubscriberCarrier          | A operadora do assinante do dispositivo                                                                                                                                                       |
+| PhoneNumber                | O número de telefone do dispositivo                                                                                                                                                             |
+| IMEI                       | IMEI                                                                                                                                                                                   |
+| CellularTechnology         | Tecnologia celular do dispositivo                                                                                                                                                    |
+| WiFiMacAddress             | MAC Wi-Fi                                                                                                                                                                              |
 
 ## <a name="devicepropertyhistory"></a>DevicePropertyHistory
 
 A entidade **DevicePropertyHistory** tem as mesmas propriedades que a tabela de dispositivos e instantâneos diários de cada registro de dispositivo por dia dos últimos 90 dias. A coluna DateKey indica o dia para cada linha.
 
-| Propriedade  | Descrição |
-|---------|------------|
-| DateKey |Referência à tabela de data que indica o dia. |
-| DeviceKey |Identificador exclusivo do dispositivo no data warehouse – chave substituta. Esta é uma referência à tabela Dispositivo que contém a ID do dispositivo do Intune. |
-| DeviceName |Nome do dispositivo em plataformas que permitem a nomeação de um dispositivo. Em outras plataformas, o Intune cria um nome de outras propriedades. Esse atributo pode não estar disponível para todos os dispositivos. |
-| OwnerTypeKey |Chave do atributo de tipo de proprietário para este dispositivo: corporativo, pessoal ou desconhecido. |
-| objectSourceKey |Ignore essa coluna. |
-| ManagementStateKey |Chave do estado de gerenciamento associado a esse dispositivo, que indica o estado mais recente de uma ação remota ou se foi ele desbloqueado/modificado. |
-| OSVersion |Versão do SO. |
-| OSMajorVersion |Componente de versão principal da versão do SO (major.minor.build.revision). |
-| OSMinorVersion |Componente de versão secundária da versão do SO (major.minor.build.revision). |
-| OSBuildNumber |Componente de versão de build da versão do SO (major.minor.build.revision). |
-| DeviceAction |Última ação de dispositivo emitida, ignorar por enquanto. |
+|          Propriedade          |                                                                                      Descrição                                                                                     |
+|:--------------------------:|:------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------:|
+| DateKey                    | Referência à tabela de data que indica o dia.                                                                                                                                          |
+| DeviceKey                  | Identificador exclusivo do dispositivo no data warehouse – chave substituta. Esta é uma referência à tabela Dispositivo que contém a ID do dispositivo do Intune.                               |
+| DeviceName                 | Nome do dispositivo em plataformas que permitem a nomeação de um dispositivo. Em outras plataformas, o Intune cria um nome de outras propriedades. Esse atributo pode não estar disponível para todos os dispositivos. |
+| DeviceRegistrationStateKey | A chave do atributo de estado do registro do dispositivo.                                                                                                                    |
+| OwnerTypeKey               | A chave do atributo de tipo de proprietário para este dispositivo: corporativo, pessoal ou desconhecido.                                                                                                  |
+| ManagementStateKey         | A chave do estado de gerenciamento associado a esse dispositivo, que indica o estado mais recente de uma ação remota ou se foi ele desbloqueado/modificado.                                                |
+| AzureADRegistered          | Se o dispositivo está registrado no Azure Active Directory.                                                                                                                             |
+| ComplianceStateKey         | Uma chave para ComplianceState.                                                                                                                                                            |
+| OSVersion                  | Versão do SO.                                                                                                                                                                          |
+| Com jailbreak                 | Se o dispositivo foi desbloqueado por jailbreak ou por rooting.                                                                                                                                         |
+| DeviceCategoryKey          | A chave do atributo de categoria deste dispositivo. 
 
 ## <a name="applicationinventory"></a>ApplicationInventory
 

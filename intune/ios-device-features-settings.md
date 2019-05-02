@@ -5,7 +5,7 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 03/13/2019
+ms.date: 04/01/2019
 ms.topic: reference
 ms.prod: ''
 ms.service: microsoft-intune
@@ -16,12 +16,12 @@ ms.suite: ems
 search.appverid: ''
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 34f0869b46323606d69891c3761bfbc154f3b6a3
-ms.sourcegitcommit: 25e6aa3bfce58ce8d9f8c054bc338cc3dff4a78b
-ms.translationtype: MTE75
+ms.openlocfilehash: c2a94be7ebc369005f92809d57c8e55076972df3
+ms.sourcegitcommit: 484a898d54f5386fdbce300225aaa3495cecd6b0
+ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57566617"
+ms.lasthandoff: 04/01/2019
+ms.locfileid: "58799258"
 ---
 # <a name="ios-device-settings-to-use-common-ios-features-in-intune"></a>configurações de dispositivo iOS para usar recursos comuns do iOS no Intune
 
@@ -96,6 +96,9 @@ Use as configurações do **Dock** para adicionar até seis itens ou pastas ao d
 
       3. Escolha **Adicionar**. Você pode adicionar até **20** páginas para o dock do dispositivo.
       4. Selecione **OK** para salvar suas alterações.
+
+> [!NOTE]
+> Quando você adicionar ícones usando as configurações de encaixe, os ícones na tela inicial e páginas estão bloqueados e não podem ser movidos. Isso pode estar relacionado ao design com iOS e as políticas de MDM da Apple.
 
 #### <a name="example"></a>Exemplo
 

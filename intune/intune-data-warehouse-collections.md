@@ -1,12 +1,12 @@
 ---
 title: Coleções do Intune Date Warehouse
-titlesuffix: Microsoft Intune
+titleSuffix: Microsoft Intune
 description: As coleções do Intune Data Warehouse oferecem detalhes relacionados à API do Data Warehouse.
 keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 03/20/2019
+ms.date: 04/09/2019
 ms.topic: reference
 ms.prod: ''
 ms.service: microsoft-intune
@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 5f2a9f2512f4f6fb12a65d0e7c4982fd351f1770
-ms.sourcegitcommit: 93286c22426dcb59191a99e3cf2af4ff6ff16522
+ms.openlocfilehash: 00a0bd4936d1ad8ba8dd52f1839e7d42505db60e
+ms.sourcegitcommit: 601327125ac8ae912d8159422de8aac7dbdc25f6
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/22/2019
-ms.locfileid: "58358310"
+ms.lasthandoff: 04/09/2019
+ms.locfileid: "59429217"
 ---
 #  <a name="intune-data-warehouse-collections"></a>Coleções do Intune Data Warehouse
 
@@ -85,7 +85,7 @@ A tabela a seguir resume o status de atribuição de políticas de conformidade 
 | DateKey       | A chave de data quando o resumo foi criado para a política de conformidade.                                                                                                                   | 20161204 |
 | Unknown       | O número de dispositivos que estão offline ou falharam ao se comunicar com o Intune ou com o Azure AD por outras razões.                                                                           | 5        |
 | NotApplicable | O número de dispositivos em que as políticas de conformidade do dispositivo direcionadas pelo administrador não são aplicáveis.                                                                                     | 201      |
-| Compliant     | O número de dispositivos que aplicaram com êxito uma ou mais políticas de conformidade do dispositivo direcionadas pelo administrador.                                                                        | 4083     |
+| Compatível     | O número de dispositivos que aplicaram com êxito uma ou mais políticas de conformidade do dispositivo direcionadas pelo administrador.                                                                        | 4083     |
 | InGracePeriod | O número de dispositivos que não estão em conformidade, mas estão em um período de carência definido pelo administrador.                                                                                  | 57       |
 | NonCompliant  | O número de dispositivos que falharam ao aplicar uma ou mais políticas de conformidade do dispositivo direcionadas pelo administrador ou em que o usuário não está em conformidade com as políticas direcionadas pelo administrador. | 43       |
 |    Erro do      |    O número de dispositivos que falharam ao se comunicar com o Intune ou com o Azure AD e retornaram uma mensagem de erro.                                                                          |    3     |
@@ -116,9 +116,9 @@ A tabela a seguir resume o status de atribuição de políticas de conformidade 
 
 |  complianceStatus  |                       Descrição                      |
 |:------------------:|:------------------------------------------------------:|
-|    Unknown         |    Desconhecida.                                                                        |
+|    Unknown         |    Desconhecido.                                                                        |
 |    Compatível       |    Compatível.                                                                      |
-|    Não compatível    |       O dispositivo não está em conformidade e é bloqueado de recursos corporativos.             |
+|    Fora de Conformidade    |       O dispositivo não está em conformidade e é bloqueado de recursos corporativos.             |
 |    Conflito        |    Está em conflito com outras regras.                                                      |
 |    Erro do           |       Erro.                                                                       |
 |    ConfigManager   |    Gerenciado pelo Config Manager.                                                      |
@@ -428,6 +428,85 @@ A entidade **IntuneManagementExtensionVersion** lista todas as versões usadas p
 | ExtensionVersionKey | Identificador exclusivo da versão IntuneManagementExtension. | 1       |
 | ExtensionVersion    | O número de versão de quatro dígitos.                                   | 1.0.2.0 |
 
+## <a name="mamapplications"></a>MamApplications
+
+A entidade **MamApplication** lista aplicativos de linha de negócios (LOB) que são gerenciados pelo gerenciamento de aplicativo móvel (MAM) sem registro em sua empresa.
+
+| Propriedade | Descrição | Exemplo |
+|---------|------------|--------|
+| mamApplicationKey |Identificador exclusivo do aplicativo MAM. | 432 |
+| mamApplicationName |Nome do aplicativo MAM. |Exemplo de nome de aplicativo MAM |
+| mamApplicationId |ID do aplicativo de MAM. | 123 |
+| IsDeleted |Indica se o registro desse aplicativo MAM foi atualizado. <br>Verdadeiro – o aplicativo MAM tem um novo registro com campos atualizados nesta tabela. <br>Falso – o registro mais recente para este aplicativo MAM. |Verdadeiro/Falso |
+| StartDateInclusiveUTC |Data e hora em UTC em que esse aplicativo de MAM foi criado no data warehouse. |23/11/2016 12:00:00 AM |
+| DeletedDateUTC |Data e hora em UTC em que IsDeleted foi alterado para True. |23/11/2016 12:00:00 AM |
+| RowLastModifiedDateTimeUTC |Data e hora em UTC em que esse aplicativo de MAM foi modificado pela última vez no data warehouse. |23/11/2016 12:00:00 AM |
+
+
+## <a name="mamapplicationinstances"></a>MamApplicationInstances
+
+A entidade **MamApplicationInstance** lista aplicativos de Gerenciamento de aplicativo móvel (MAM) gerenciados como instâncias singulares por usuário por dispositivo. Todos os usuários e dispositivos listados com a entidade são protegidos e, portanto, têm pelo menos uma política de MAM atribuída a eles.
+
+
+|          Propriedade          |                                                                                                  Descrição                                                                                                  |               Exemplo                |
+|----------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|--------------------------------------|
+|   ApplicationInstanceKey   |                                                               Identificador exclusivo da instância do aplicativo de MAM no data warehouse – chave alternativa.                                                                |                 123                  |
+|           UserId           |                                                                              A ID de usuário que tem esse aplicativo de MAM instalado.                                                                              | b66bc706-ffff-7437-0340-032819502773 |
+|   ApplicationInstanceId    |                                              Identificador exclusivo da instância do aplicativo de MAM – semelhante a ApplicationInstanceKey, mas o identificador é uma chave natural.                                              | b66bc706-ffff-7437-0340-032819502773 |
+| mamApplicationId | Id do aplicativo do aplicativo Mam para o qual a instância desse aplicativo Mam foi criada.   | 23/11/2016 12:00:00 AM   |
+|     ApplicationVersion     |                                                                                     Versão deste aplicativo de MAM.                                                                                      |                  2                   |
+|        CreatedDate         |                                                                 Data em que este registro da instância do aplicativo MAM foi criado. O valor pode ser nulo.                                                                 |        23/11/2016 12:00:00 AM        |
+|          Plataforma          |                                                                          Plataforma do dispositivo no qual este aplicativo de MAM está instalado.                                                                           |                  2                   |
+|      PlatformVersion       |                                                                      Versão da plataforma do dispositivo no qual este aplicativo de MAM está instalado.                                                                       |                 2.2                  |
+|         SdkVersion         |                                                                            A versão do SDK do MAM com o qual esse aplicativo de MAM foi encapsulado.                                                                            |                 3.2                  |
+| mamDeviceId | Id do dispositivo do dispositivo com a qual instância do aplicativo MAM está associada.   | 23/11/2016 12:00:00 AM   |
+| mamDeviceType | Tipo de dispositivo do dispositivo com a qual instância do aplicativo MAM está associada.   | 23/11/2016 12:00:00 AM   |
+| mamDeviceName | Nome do dispositivo do dispositivo com a qual instância do aplicativo MAM está associada.   | 23/11/2016 12:00:00 AM   |
+|         IsDeleted          | Indica se o registro de instância desse aplicativo MAM foi atualizado. <br>Verdadeiro – a instância desse aplicativo MAM tem um novo registro com campos atualizados nesta tabela. <br>Falso – o registro mais recente para a instância deste aplicativo MAM. |              Verdadeiro/Falso              |
+|   StartDateInclusiveUtc    |                                                              Data e hora em UTC em que a instância desse aplicativo de MAM foi criada no data warehouse.                                                               |        23/11/2016 12:00:00 AM        |
+|       DeletedDateUtc       |                                                                             Data e hora em UTC em que IsDeleted foi alterado para True.                                                                              |        23/11/2016 12:00:00 AM        |
+| RowLastModifiedDateTimeUtc |                                                           Data e hora em UTC em que a instância desse aplicativo de MAM foi modificada pela última vez no data warehouse.                                                            |        23/11/2016 12:00:00 AM        |
+
+## <a name="mamcheckins"></a>MamCheckins
+
+A entidade **MamCheckin** representa os dados reunidos quando uma instância de aplicativo de Gerenciamento de aplicativo móvel (MAM) foi marcada com o Intune Service. 
+
+> [!Note]  
+> Quando uma instância do aplicativo faz check-in várias vezes ao dia, o data warehouse a armazena como se fosse um único check-in.
+
+| Propriedade | Descrição | Exemplo |
+|---------|------------|--------|
+| DateKey |Chave de data em que o check-in do aplicativo de MAM foi registrado no data warehouse. | 20160703 |
+| ApplicationInstanceKey |Chave da instância do aplicativo associada ao check-in desse aplicativo de MAM. | 123 |
+| UserKey |Chave do usuário associada ao check-in desse aplicativo de MAM. | 4323 |
+| mamApplicationKey |Chave de aplicativo associado com a verificação de aplicativo de MAM no. | 432 |
+| DeviceHealthKey |Chave do DeviceHealth associada ao check-in desse aplicativo de MAM. | 321 |
+| PlatformKey |Representa a plataforma do dispositivo associado ao check-in desse aplicativo de MAM. |123 |
+| LastCheckInDate |Data e hora em que este aplicativo MAM fez check-in pela última vez. O valor pode ser nulo. |23/11/2016 12:00:00 AM |
+
+## <a name="mamdevicehealths"></a>MamDeviceHealths
+
+A entidade **MamDeviceHealth** representa os dispositivos que têm políticas de Gerenciamento de aplicativo móvel (MAM) implantadas neles, mesmo que estejam desbloqueados.
+
+| Propriedade | Descrição | Exemplo |
+|---------|------------|--------|
+| DeviceHealthKey |Identificador exclusivo do dispositivo e sua integridade associada no data warehouse – chave alternativa. |123 |
+| DeviceHealth |Identificador exclusivo do dispositivo e sua integridade associada – semelhante a DeviceHealthKey, mas o identificador é uma chave natural. |b66bc706-ffff-7777-0340-032819502773 |
+| DeviceHealthName |Representa o status do dispositivo. <br>Não disponível – não há informações sobre este dispositivo. <br>Íntegro – o dispositivo não está desbloqueado. <br>Não íntegro – o dispositivo está desbloqueado. |Não disponível Íntegro Não íntegro |
+| RowLastModifiedDateTimeUtc |Data e hora em UTC em que a Integridade desse dispositivo de MAM específico foi modificada pela última vez no data warehouse. |23/11/2016 12:00:00 AM |
+
+## <a name="mamplatforms"></a>MamPlatforms
+
+A entidade **MamPlatform** lista nomes e tipos de plataforma nos quais um aplicativo de Gerenciamento de aplicativo móvel (MAM) foi instalado.
+
+
+|          Propriedade          |                                    Descrição                                    |                         Exemplo                         |
+|----------------------------|-----------------------------------------------------------------------------------|---------------------------------------------------------|
+|        PlatformKey         |     Identificador exclusivo da plataforma no data warehouse – chave alternativa.      |                           123                           |
+|          Plataforma          | Identificador exclusivo da plataforma – semelhante a PlatformKey, mas é uma chave natural. |                           123                           |
+|        PlatformName        |                                   Nome da plataforma                                   | Não disponível <br>Nenhum <br>Windows <br>IOS <br>Android. |
+| RowLastModifiedDateTimeUtc | Data e hora em UTC em que essa plataforma foi modificada pela última vez no data warehouse.  |                 23/11/2016 12:00:00 AM                  |
+
 ## <a name="managementagenttypes"></a>managementAgentTypes
 A entidade **managementAgentType** representa os agentes usados para gerenciar um dispositivo.
 
@@ -497,7 +576,7 @@ Representa um status de instalação do aplicativo móvel para um tipo de dispos
 | AppKey             | A chave do aplicativo móvel usado para identificar uma instância de AppRevision.                                                          |
 | DeviceTypeKey      | A chave do tipo de dispositivo associado ao aplicativo móvel.                                                              |
 | AppInstallStateKey | A chave do estado de instalação do aplicativo usada para identificar uma instância de MobileAppInstallState.                                         |
-| Código de Erro          | O código de erro retornado pelo instalador do aplicativo, a plataforma móvel ou o serviço referente à instalação do aplicativo. |
+| ErrorCode          | O código de erro retornado pelo instalador do aplicativo, a plataforma móvel ou o serviço referente à instalação do aplicativo. |
 | Contagem              | Contagem total.                                                                                                                  |
 
 ## <a name="ownertypes"></a>ownerTypes

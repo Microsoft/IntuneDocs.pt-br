@@ -1,11 +1,11 @@
 ---
 title: Criar política de conformidade para dispositivo Android no Microsoft Intune – Azure | Microsoft Docs
-description: Criar ou configurar uma política de conformidade do dispositivo do Microsoft Intune para dispositivos Android. Escolha para desbloquear dispositivos, defina o nível de ameaça aceitável, verifique o Google Play, insira a versão mínima e máxima de versão do sistema operacional, escolha seus requisitos de senha e permita sideload dos aplicativos.
+description: Ver uma lista de todas as configurações que você pode usar ao definir a conformidade para dispositivos Android no Microsoft Intune. Definir regras de senha, escolha uma versão de sistema operacional mínimo ou máximo, restringir aplicativos específicos, evitar a reutilização senha e muito mais.
 keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 10/19/2018
+ms.date: 04/08/2019
 ms.topic: reference
 ms.prod: ''
 ms.service: microsoft-intune
@@ -17,51 +17,28 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 0dc4fc0a0f16717bd0c21db3a9e7e57daf7867bc
-ms.sourcegitcommit: fdc6261f4ed695986e06d18353c10660a4735362
-ms.translationtype: MTE75
+ms.openlocfilehash: 7670af46657fed048bfe10b8659eae6d45db7620
+ms.sourcegitcommit: 02803863eba37ecf3d8823a7f1cd7c4f8e3bb42c
+ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/15/2019
-ms.locfileid: "58068870"
+ms.lasthandoff: 04/09/2019
+ms.locfileid: "59423570"
 ---
-# <a name="add-a-device-compliance-policy-for-android-devices-in-intune"></a>Adicionar uma política de conformidade do dispositivo para dispositivos Android no Intune
+# <a name="android-settings-to-mark-devices-as-compliant-or-not-compliant-using-intune"></a>Configurações do Android para marcar dispositivos como em conformidade ou não conformidade usando o Intune
 
-Uma política de conformidade de dispositivos do Intune para Android especifica as regras e configurações que dispositivos do Android precisam cumprir para serem considerados em conformidade. Você pode usar essas políticas com [acesso condicional](conditional-access.md) para permitir ou bloquear o acesso aos recursos da organização. Você também pode obter relatórios de dispositivo e realizar ações de não conformidade. 
+[!INCLUDE [azure_portal](./includes/azure_portal.md)]
 
-Para saber mais sobre as políticas de conformidade e qualquer pré-requisito, veja a [Introdução às políticas de conformidade do dispositivo](device-compliance-get-started.md).
+Este artigo lista e descreve as configurações de conformidade diferentes que você pode definir em dispositivos Android no Intune. Como parte de sua solução MDM (gerenciamento) do dispositivo móvel, use essas configurações para marcar dispositivos com raiz (desbloqueado) como não compatíveis, definir um nível de ameaça permitido, habilitar o Google Play Protect e muito mais.
 
-Este tópico lista as configurações que você pode usar dentro de uma política de conformidade para dispositivos Android.
+Esse recurso aplica-se a:
 
-## <a name="non-compliance-and-conditional-access"></a>Não conformidade e acesso condicional
+- Android
 
-A tabela a seguir descreve como as configurações não compatíveis são gerenciadas quando uma política de conformidade é usada com uma política de acesso condicional.
+Como um administrador do Intune, use essas configurações de conformidade para ajudar a proteger seus recursos organizacionais. Para saber mais sobre as políticas de conformidade e qualquer pré-requisito, veja a [Introdução às políticas de conformidade do dispositivo](device-compliance-get-started.md).
 
---------------------
+## <a name="before-you-begin"></a>Antes de começar
 
-|**Configuração de política**| **Android 4.0 e posterior, Samsung Knox Standard 4.0 e posterior** |
-| --- | ----|
-| **Configuração de senha ou PIN** |  Em Quarentena |
-| **Criptografia de dispositivo** | Em Quarentena |
-| **Dispositivo desbloqueado ou com raiz** | Em Quarentena (não é uma configuração) |
-| **perfil de email** | Não Aplicável |
-| **Versão mínima do SO** | Em Quarentena |
-| **Versão máxima do SO** |   Em Quarentena |
-| **Atestado de integridade do Windows** | Não Aplicável |
-
---------------------------
-
-**Remediado** = o sistema operacional do dispositivo impõe a conformidade. Por exemplo, o usuário é forçado a definir um PIN.
-
-**Em quarentena** = o sistema operacional do dispositivo não impõe a conformidade. Por exemplo, dispositivos Android não forçam o usuário a criptografar o dispositivo. Quando o dispositivo não é compatível, ocorrem as seguintes ações:
-
-  - O dispositivo será bloqueado se uma política de acesso condicional se aplicar ao usuário.
-  - O portal da empresa notificará o usuário sobre qualquer problema de conformidade.
-
-## <a name="create-a-device-compliance-policy"></a>Criar uma política de conformidade do dispositivo
-
-[!INCLUDE [new-device-compliance-policy](./includes/new-device-compliance-policy.md)]
-4. Para **Plataforma**, selecione **Android**. 
-5. Escolha **Definir Configurações**. Insira as configurações de **Integridade do Dispositivo**, **Propriedades do Dispositivo** e **Segurança do Sistema**, conforme descrito neste artigo.
+[Criar uma política de conformidade](create-compliance-policy.md#create-the-policy). Para **Plataforma**, selecione **Android**.
 
 ## <a name="device-health"></a>Device health
 
@@ -71,6 +48,9 @@ A tabela a seguir descreve como as configurações não compatíveis são gerenc
   - **Baixo**: o dispositivo será avaliado como em conformidade se apenas ameaças de nível baixo estiverem presentes. Qualquer coisa acima disso coloca o dispositivo no estado de não compatível.
   - **Médio**: o dispositivo será avaliado como em conformidade se as ameaças existentes nele forem de nível baixo ou médio. Se for detectado que o dispositivo tem ameaças de nível alto, será determinado que ele não está em conformidade.
   - **Alta**: esta opção é a menos segura e permite todos os níveis de ameaça. Talvez seja útil se você estiver usando esta solução apenas para fins de relatório.
+
+### <a name="google-play-protect"></a>Proteger o Google Play
+
 - **Google Play Services está configurado**: **exige** que o aplicativo de Google Play Services esteja instalado e habilitado. Os serviços do Google Play permitem atualizações de segurança e são uma dependência em nível de base para muitos recursos de segurança em dispositivos certificados do Google. Quando você escolhe **Não configurado** (padrão), essa configuração não é avaliada de conformidade ou não conformidade.
 - **Atualizar provedor de segurança**: **exige** que um provedor de segurança atualizado possa proteger um dispositivo contra vulnerabilidades conhecidas. Quando você escolhe **Não configurado** (padrão), essa configuração não é avaliada de conformidade ou não conformidade.
 - **Verificação de ameaça em aplicativos**: **exige** que o recurso **Verificar Aplicativos** do Android esteja habilitado. Quando você escolhe **Não configurado** (padrão), essa configuração não é avaliada de conformidade ou não conformidade.
@@ -82,6 +62,9 @@ A tabela a seguir descreve como as configurações não compatíveis são gerenc
   - **Não configurado** (padrão): a configuração não é avaliada em relação a estar ou não em conformidade.
   - **Verificação básica de integridade**
   - **Verifique a integridade básica e os dispositivos certificados**
+
+> [!NOTE]
+> Para definir as configurações do Google Play Protect usando políticas de proteção de aplicativo, consulte [configurações de política de proteção de aplicativo do Intune](app-protection-policy-settings-android.md#conditional-launch) no Android.
 
 ## <a name="device-property-settings"></a>Configurações de propriedade do dispositivo
 
@@ -133,41 +116,18 @@ A tabela a seguir descreve como as configurações não compatíveis são gerenc
 - **Nível mínimo de patch de segurança** (Android 6.0 ou posterior): selecione o nível de patch de segurança mais antigo que um dispositivo pode ter. Dispositivos que não estão pelo menos nesse nível de patch não estão em conformidade. A data deve ser inserida no formato `YYYY-MM-DD`.
 - **Aplicativos restritos**: insira o **Nome do aplicativo** e a **ID do pacote de aplicativo** para aplicativos que devem ser restritos. Escolha **Adicionar**. Um dispositivo com pelo menos um aplicativo restrito instalado é marcado como não estando em conformidade.
 
-Quando terminar, selecione **OK** > **OK** para salvar suas alterações.
+Selecione **OK** > **Criar** para salvar suas alterações.
 
 ## <a name="locations"></a>Locais
 
-Em sua política, escolha entre locais existentes. Ainda não tem um local? [Usar locais (limite de rede) no Intune](use-network-locations.md) fornece alguma orientação.
+Em sua política, você pode forçar conformidade pelo local do dispositivo. Escolha entre locais existentes. Ainda não tem um local? [Usar locais (limite de rede) no Intune](use-network-locations.md) fornece alguma orientação.
 
-1. Escolha **Locais**.
-2. Na lista, verifique seu local e escolha **Selecionar**.
+1. Escolher **locais** > **selecionar locais**.
+2. Na lista, verifique seu local > **selecionar**.
 3. **Salve** a política.
 
-## <a name="actions-for-noncompliance"></a>Ações de não conformidade
-
-Selecione **Ações para não conformidade**. A ação padrão marca o dispositivo como em não conformidade imediatamente.
-
-Você pode alterar a agenda quando o dispositivo está marcado como não em conformidade, como após um dia. Você também pode configurar uma segunda ação que envia um email para o usuário quando o dispositivo não está em conformidade.
-
-[Adicionar ações a dispositivos que não estão em conformidade](actions-for-noncompliance.md) apresenta mais informações, incluindo como criar um email de notificação para seus usuários.
-
-Por exemplo, você está usando o recurso Locais e adiciona uma localização em uma política de conformidade. A ação padrão para não conformidade se aplica quando você seleciona pelo menos uma localização. Se o dispositivo não estiver conectado a locais selecionados, imediatamente será considerado que ele não está em conformidade. Você pode dar aos usuários um período de cortesia, como um dia.
-
-## <a name="scope-tags"></a>Marcas de escopo
-
-Marcas de escopo são uma ótima maneira de atribuir políticas a grupos específicos, como Vendas, Engenharia, RH e assim por diante. Você pode adicionar marcas de um escopo a políticas de conformidade. Veja [Usar marcas de escopo para filtrar políticas](scope-tags.md). 
-
-## <a name="assign-user-groups"></a>Atribuir grupos de usuários
-
-Depois de criar uma política, ela não fará nada até que você atribua a política. Para atribuir a política: 
-
-1. Escolha uma política que você configurou. As políticas existentes estão em **Conformidade do dispositivo** > **Políticas**.
-2. Escolha a política e as **Atribuições**. Você pode incluir ou excluir grupos de segurança do Azure Active Directory (AD).
-3. Escolha **Grupos selecionados** para ver os grupos de segurança do Azure AD. Selecione os grupos de usuários aos quais deseja que essa política seja aplicada e escolher **Salvar** para implantar a política para os usuários.
-
-Você aplicou a política aos usuários. Os dispositivos usados pelos usuários afetados pela política são avaliados quanto à conformidade.
-
 ## <a name="next-steps"></a>Próximas etapas
-[Automatizar email e adicionar ações para dispositivos não compatíveis](actions-for-noncompliance.md)  
-[Monitorar as políticas de conformidade do dispositivo do Intune](compliance-policy-monitor.md)  
-[Configurações da política de conformidade para Android Enterprise](compliance-policy-create-android-for-work.md)
+
+- [Adicionar ações para dispositivos não compatíveis](actions-for-noncompliance.md) e [usar marcas de escopo para políticas de filtro](scope-tags.md).
+- [Monitorar suas políticas de conformidade](compliance-policy-monitor.md).
+- [Configurações da política de conformidade para Android Enterprise](compliance-policy-create-android-for-work.md)

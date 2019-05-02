@@ -6,7 +6,7 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 03/26/2019
+ms.date: 04/02/2019
 ms.topic: reference
 ms.prod: ''
 ms.service: microsoft-intune
@@ -16,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure; seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 5106a4f147828310fc1b4a41ef4065d10bdaeecf
-ms.sourcegitcommit: 44095bbd1502b02201a01604531f4105401fbb92
+ms.openlocfilehash: 0d0623e9d12132ac470813d65510bc2c76379109
+ms.sourcegitcommit: 79baf89e4a7a7b1cecb8ccf5cb976736ae6a7286
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/27/2019
-ms.locfileid: "58490719"
+ms.lasthandoff: 04/02/2019
+ms.locfileid: "58871464"
 ---
 # <a name="ios-device-settings-to-allow-or-restrict-features-using-intune"></a>Configurações de dispositivo iOS para permitir ou restringir recursos usando o Intune
 
@@ -142,7 +142,7 @@ Essas configurações são adicionadas a um perfil de configuração do disposit
 
 <sup>1</sup>Se você definir as configurações **Máximo de minutos de inatividade até o bloqueio da tela** e **Máximo de minutos após o bloqueio de tela antes que a senha seja exigida**, elas são aplicadas em sequência. Por exemplo, se você definir o valor das duas configurações como **5** minutos, a tela desligará automaticamente após cinco minutos e o dispositivo será bloqueado após outros cinco minutos. No entanto, se o usuário desliga a tela manualmente, a segunda configuração é aplicada imediatamente. No mesmo exemplo, o dispositivo será bloqueado cinco minutos depois que o usuário desligar a tela.
 
-## <a name="locked-screen-experience"></a>Experiência de Tela Bloqueada
+## <a name="locked-screen-experience"></a>Experiência de tela bloqueada
 
 - **Acesso ao centro de controle enquanto o dispositivo está bloqueado**: escolha **Bloquear** para impedir o acesso ao aplicativo Centro de Controle quando o dispositivo estiver bloqueado. **Não configurado** permite que o usuário acesse o aplicativo Centro de Controle quando o dispositivo estiver bloqueado.
 - **Notificações enquanto o dispositivo está bloqueado**: **Bloquear** impede o acesso às notificações quando o dispositivo estiver bloqueado. **Não configurado** permite que o usuário acesse as notificações sem desbloquear o dispositivo.
@@ -195,10 +195,10 @@ Essas configurações são adicionadas a um perfil de configuração do disposit
 
 #### <a name="safari"></a>Safari
 
-- **Safari**: **bloqueie** o uso do navegador Safari no dispositivo. **Não configurado** permite que os usuários utilizem o navegador Safari.
+- **Safari (apenas no modo supervisionado)**: **Bloquear** o uso do navegador Safari no dispositivo. **Não configurado** permite que os usuários utilizem o navegador Safari.
 - **Preenchimento automático**: **Bloquear** desabilita o recurso de preenchimento automático do Safari no dispositivo. **Não configurado** permite que os usuários alterem as configurações de preenchimento automático no navegador da Web.
 - **Cookies**: escolha como lidar com os cookies no dispositivo. Suas opções:
-  - Permitir
+  - Allow
   - Bloquear todos os cookies
   - Permitir cookies dos sites visitados
   - Permitir cookies do site atual
@@ -290,7 +290,7 @@ Para adicionar aplicativos a essas listas, você pode:
 ## <a name="cloud-and-storage"></a>Nuvem e Armazenamento
 
 - **Backup no iCloud**: **Não configurado** permite ao usuário fazer backup do dispositivo no iCloud. **Bloquear** impede que o usuário faça backup do dispositivo no iCloud.
-- **Bloquear sincronização de documento para iCloud**: **Não configurado** permite a sincronização de documentos e chave-valor para o espaço de armazenamento no iCloud. **Bloquear** impede o iCloud de sincronizar documentos e dados.
+- **Sincronização de documento para iCloud (apenas no modo supervisado)**: **Não configurado** permite a sincronização de documentos e chave-valor para o espaço de armazenamento no iCloud. **Bloquear** impede o iCloud de sincronizar documentos e dados.
 - **Sincronização do fluxo de fotos com o iCloud**: **Não configurado** permite que os usuários habilitem **Meu Compartilhamento** em seus dispositivos para sincronizar com o iCloud, e disponibilizem as fotos em todos os dispositivos do usuário. **Bloquear** impede a sincronização de fluxo de fotos com o iCloud.
 - **Backup criptografado**: **Exigir** que quaisquer backups de dispositivo sejam criptografados.
 - **Biblioteca de Fotos do iCloud**: defina como **Bloquear** para desabilitar o uso da Biblioteca de Fotos do iCloud para armazenar fotos e vídeos na nuvem. As fotos que não forem totalmente baixadas da Biblioteca de Fotos do iCloud para o dispositivo serão removidas do dispositivo. **Não configurado** permite o uso da Biblioteca de Fotos do iCloud.

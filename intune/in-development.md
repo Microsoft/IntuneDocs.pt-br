@@ -1,12 +1,12 @@
 ---
 title: No desenvolvimento - Microsoft Intune
-titlesuffix: ''
+titleSuffix: ''
 description: Recursos do Microsoft Intune no desenvolvimento
 keywords: ''
 author: ErikjeMS
 ms.author: erikje
 manager: dougeby
-ms.date: 03/29/2019
+ms.date: 04/15/2019
 ms.topic: conceptual
 ms.prod: ''
 ms.service: microsoft-intune
@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 3e068e2c9834290b705e8e7bc2f895636415f9ba
-ms.sourcegitcommit: 69aaf89140f82f344404e75a69dc59d8a1585b10
+ms.openlocfilehash: aa38a684a32756d4f2c3be3b750f8e79b66e98f6
+ms.sourcegitcommit: 8c795b041cd39e3896595f64f53ace48be0ec84c
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/30/2019
-ms.locfileid: "58675435"
+ms.lasthandoff: 04/16/2019
+ms.locfileid: "59587375"
 ---
 # <a name="in-development-for-microsoft-intune---april-2019"></a>No desenvolvimento do Microsoft Intune – abril de 2019
 
@@ -60,18 +60,6 @@ Em breve, você poderá usar o Intune para gerenciar as regras de firewall perso
 
 ### <a name="require-app-protection-conditional-access----1634317---"></a>Precisam de acesso condicional de proteção de aplicativo  <!--1634317 -->
 Você poderá usar *política de proteção de aplicativo exigem*, que confirma a política é aplicada a um aplicativo do usuário antes de entrar ser concluída para impedir que os usuários acessem dados que você protege com acesso condicional. Enquanto a garantia de política pode causar lentidão na primeira experiência de uso, ele ajuda a proteger contra problemas de rede, configurações incorretas administrativas ou intencionais esforços para impressão com as políticas de proteção de aplicativo. 
-
-### <a name="deployment-of-online-licensed-microsoft-store-for-business-apps----16726660---"></a>Implantação de aplicativos online licenciados da Microsoft Store para Empresas <!-- 16726660 -->
-Você poderá atribuir, no contexto do dispositivo, os aplicativos obrigatórios online licenciados da Microsoft Store para Empresas. A implantação de um aplicativo da Microsoft Store para Empresas dessa maneira permitirá que o aplicativo seja instalado para todos os usuários no dispositivo. Isso é aplicável somente a dispositivos Windows 10 RS4+ desktop. A opção de instalação no contexto de dispositivo está disponível na página Atribuição de aplicativo do Cliente para aplicativos Online Licenciados da MSFB.
-
-### <a name="include-and-exclude-mixture-of-user-groups-and-device-groups-when-assigning-policies-and-profiles----1807547---"></a>Incluir e excluir a mistura de grupos de usuários e grupos de dispositivos durante a atribuição de políticas e perfis <!-- 1807547 -->
-Ao atribuir políticas de conformidade ou perfis de configuração, você pode atribui-los a grupos de segurança com usuários ou dispositivos. No momento, você pode incluir e excluir somente grupos de usuários *ou* incluir e excluir grupos de dispositivos. Você não pode incluir e excluir uma combinação de grupos, como incluir grupos de usuários *e* excluir um grupo de dispositivos.
-
-Você poderá incluir e excluir uma combinação de grupos de usuários e grupos de dispositivos. Você pode incluir um grupo de usuários e excluir um grupo de dispositivos. Por exemplo, você pode atribuir ou implantar um perfil de configuração do dispositivo em um grupo de usuários, mas excluir dispositivos pessoais.
-
-[Atribuir perfis de configuração do dispositivo](device-profile-assign.md) inclui mais informações sobre como atribuir perfis de grupos de usuários e grupos de dispositivos.
-
-Aplica-se a: todas as plataformas
 
 ### <a name="retire-noncompliant-devices----1827291---"></a>Desativar dispositivos não compatíveis <!-- 1827291 -->
 Vamos adicionar uma nova ação de conformidade para desativar um dispositivo não compatível. Desativar um dispositivo não compatível remove todos os dados da empresa dele e também remove o dispositivo seja gerenciado pelo Intune. Essa ação é executada quando o valor configurado nos dias for atingido. O valor mínimo é de 30 dias. 
@@ -142,7 +130,7 @@ Aplica-se a: dispositivos totalmente gerenciados do Android Enterprise
 ### <a name="check-for-a-tpm-chipset-in-a-windows-10-device-compliance-policy----3617671---"></a>Verificar se há um chipset TPM em uma política de conformidade do dispositivo Windows 10 <!-- 3617671 -->
 Muitos Windows 10 e dispositivos posteriores têm chipsets Trusted Platform Module (TPM). Uma nova configuração de conformidade verificará se um TPM está no dispositivo.
 
-[Windows 10 e posteriores configurações de política de conformidade](compliance-policy-create-windows.md#windows-10-and-later-policy-settings) lista as configurações atuais.
+[Windows 10 e posteriores configurações de política de conformidade](compliance-policy-create-windows.md) lista as configurações atuais.
 
 Aplica-se a: 
 - Windows 10 e posterior
@@ -177,15 +165,6 @@ Estamos adicionando uma nova configuração de anel de atualização do Windows 
 
 ### <a name="windows-update-notifications----3316782---"></a>Notificações de atualização do Windows <!-- 3316782 -->
 Estamos adicionando suporte para as configurações do anel de atualização do Windows para que você possa configurar as notificações de atualização do Windows que os usuários veem. Essa configuração não estará disponível de dentro do portal, mas pode ser configurada usando a API do Graph do Intune.
-
-### <a name="changes-to-company-portal-enrollment-for-ios-12-device-users---3448635---"></a>Alterações no registro do Portal da empresa para usuários de dispositivos iOS 12 <!--3448635 --> 
-Portal da empresa para iOS atualizará as telas de registro do aplicativo e as etapas para se alinhar com as alterações de registro do MDM lançadas no Apple iOS 12.2. O fluxo de trabalho atualizado agora solicitará que os usuários:
-
-- Permitir Safari abrir o site do Portal da empresa (por meio do Safari) e baixar o perfil de gerenciamento antes de retornar ao aplicativo Portal da empresa.
-- Abra o aplicativo de configurações para instalar o perfil de gerenciamento em seu dispositivo.
-- Retorne ao aplicativo Portal da empresa para concluir o registro.
-
-Para obter mais informações sobre como preparar para que essas alterações, consulte o [postagem do Microsoft Tech Community](https://aka.ms/CP_changes_iOS12). Enquanto isso, para dar suporte a novos registros de iOS no Portal da empresa, nós atualizamos as etapas em [registrar o dispositivo de iOS no Intune](https://docs.microsoft.com/en-us/intune/ios-enroll). Essas alterações de documento será dinâmicas após o lançamento da Apple iOS versão 12.2. 
 
 ### <a name="easier-access-to-diagnostic-settings----3804627---"></a>Acesso mais fácil a configurações de diagnóstico <!-- 3804627 -->
 Estamos adicionando uma nova opção para o **logs de auditoria** folha em cada carga de trabalho do Log de auditoria no console do Intune que você pode usar para abrir diretamente o *configurações de diagnóstico* página.

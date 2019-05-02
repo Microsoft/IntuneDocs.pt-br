@@ -1,6 +1,6 @@
 ---
-title: Examinar os logs da política de proteção de aplicativo | Microsoft Intune
-titlesuffix: Microsoft Intune
+title: Examinar logs da política de proteção do aplicativo
+titleSuffix: Microsoft Intune
 description: Este tópico descreve como configurar logs de política (aplicativo) de proteção do aplicativo do Intune.
 keywords: ''
 author: Erikre
@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 6c42003f53e5d4ff7afa8afe9c242ef2470b5ee3
-ms.sourcegitcommit: 1069b3b1ed593c94af725300aafd52610c7d8f04
+ms.openlocfilehash: d593ee1389cfa183c5daaefdeae3ea7f6c44a8a8
+ms.sourcegitcommit: 47eb67df69f237121f5197b2ac904a177aab5400
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/22/2019
-ms.locfileid: "58394786"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59671859"
 ---
 # <a name="review-client-app-protection-logs"></a>Examine os logs de proteção do aplicativo de cliente
 
@@ -31,7 +31,7 @@ Saiba mais sobre as configurações que você pode examinar nos logs de proteç�
 
 O processo para habilitar e coletar logs varia de acordo com a plataforma:
 - **Dispositivos Android**: use o *Portal da Empresa*. Consulte [Enviar logs por email para o suporte da sua empresa](/intune-user-help/send-logs-to-your-it-admin-by-email-android).
-- **Dispositivos iOS**: use um Managed Browser ou o *Microsoft Edge* para coletar logs. Para obter detalhes, consulte o blog da equipe de suporte do Intune [New Intune Diagnostic Console for Log Submission in the Intune Managed Browser](https://blogs.technet.microsoft.com/intunesupport/2017/11/10/support-tip-new-intune-diagnostic-console-for-log-submission-in-the-intune-managed-browser) (Novo console de diagnóstico do Intune para envio de logs no Intune Managed Browser). 
+- **Dispositivos iOS**: use um Managed Browser ou o *Microsoft Edge* para coletar logs. Para obter detalhes, consulte o blog da equipe de suporte do Intune [New Intune Diagnostic Console for Log Submission in the Intune Managed Browser](https://techcommunity.microsoft.com/t5/Intune-Customer-Success/Support-Tip-New-Intune-Diagnostic-Console-for-Log-Submission-in/ba-p/280021) (Novo console de diagnóstico do Intune para envio de logs no Intune Managed Browser). 
 - **Dispositivos Windows 10**: use o *MDMDiag* e logs de eventos. Consulte [Diagnose MDM failures in Windows 10](https://docs.microsoft.com/windows/client-management/mdm/diagnose-mdm-failures-in-windows-10) (Diagnosticar falhas de MDM no Windows 10) no conteúdo de gerenciamento do cliente Windows e o blog [Troubleshooting Windows 10 Intune Policy Failures](http://configmgrdogsarchive.com/2018/08/09/troubleshooting-windows-10-intune-policy-failures) (Solucionando problemas de falhas de política do Intune do Windows 10)
 
 

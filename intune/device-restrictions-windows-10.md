@@ -5,7 +5,7 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 03/20/2019
+ms.date: 04/08/2019
 ms.topic: reference
 ms.prod: ''
 ms.service: microsoft-intune
@@ -15,12 +15,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure; seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 7ca34826f3a235fe620b5ac0dcb95d57dabf4c71
-ms.sourcegitcommit: 1069b3b1ed593c94af725300aafd52610c7d8f04
-ms.translationtype: MTE75
+ms.openlocfilehash: 8957c8d8aad2eaa1741b1a625afd4b5a41a8bb51
+ms.sourcegitcommit: 02803863eba37ecf3d8823a7f1cd7c4f8e3bb42c
+ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/22/2019
-ms.locfileid: "58394993"
+ms.lasthandoff: 04/09/2019
+ms.locfileid: "59423689"
 ---
 # <a name="windows-10-and-newer-device-settings-to-allow-or-restrict-features-using-intune"></a>Configurações de dispositivo Windows 10 (e mais recente) para permitir ou restringir recursos usando o Intune
 
@@ -104,7 +104,7 @@ Essas configurações são adicionadas a um perfil de configuração do disposit
   - **Privacidade**: bloqueia o acesso à área de privacidade do aplicativo de configurações.
   - **Atualização e Segurança**: bloqueia o acesso à área de atualizações e segurança do aplicativo de configurações.
 
-## <a name="display"></a>Vídeo
+## <a name="display"></a>Monitor
 
 - **Ligar o ajuste de GDI para aplicativos**
 - **Desligar o ajuste de GDI para aplicativos**
@@ -138,14 +138,17 @@ Essas configurações são adicionadas a um perfil de configuração do disposit
 - **Diálogo de erro do cartão SIM (somente dispositivos móveis)**: bloqueia a exibição de uma mensagem de erro no dispositivo se nenhum cartão SIM for detectado.
 - **Espaço de Trabalho do Ink**: impedir que usuários acessem o espaço de trabalho do Ink. **Não configurado** habilita o espaço de trabalho do Ink e o usuário tem permissão para usá-lo na tela de bloqueio.
 - **Reimplantação automática**: permite que usuários com direitos administrativos excluam todos os dados e configurações de usuário usando **Ctrl+Win+R** na tela de bloqueio do dispositivo. O dispositivo é reconfigurado automaticamente e registrado novamente no gerenciamento.
-- **Exigir que os usuários se conectem à rede durante a instalação de dispositivo (somente para Windows Insider)**: escolha **Exigir** para que o dispositivo se conecte a uma rede após da página Rede e antes de continuar, durante a instalação do Windows 10. Embora esse recurso esteja na versão prévia, um build 1809 ou posterior do Windows Insider é necessário para usar essa configuração.
+- **Exigir que os usuários se conectem à rede durante a instalação de dispositivo (somente para Windows Insider)**: escolha **Exigir** para que o dispositivo se conecte a uma rede após da página Rede e antes de continuar, durante a instalação do Windows 10.
+
+  A configuração entra em vigor na próxima vez que o dispositivo seja apagado ou redefinido. Como qualquer outra configuração do Intune, o dispositivo deve ser registrado e gerenciado pelo Intune para receber as definições de configuração. Mas depois de registrados e receber políticas, em seguida, a redefinição do dispositivo impõe a configuração durante a instalação do Windows Avançar.
+
 - **Acesso Direto à Memória**: **Bloquear** impede o DMA (acesso direto à memória) para todas as portas downstream PCI com hot-plug até um usuário entre no Windows. **Habilitado** (padrão) permite o acesso a DMA, mesmo quando um usuário não esteja conectado.
 
   CSP: [DataProtection/AllowDirectMemoryAccess](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-dataprotection#dataprotection-allowdirectmemoryaccess)
 
 - **Encerrar os processos do Gerenciador de tarefas**: essa configuração determina se o não-administradores podem usar o Gerenciador de tarefas para finalizar tarefas. **Bloquear** impede que os usuários padrão (não administradores) usem o Gerenciador de Tarefas para encerrar um processo ou uma tarefa no dispositivo. A opção **Não configurado** (padrão) permite que os usuários padrão encerrem um processo ou uma tarefa usando o Gerenciador de Tarefas.
 
-## <a name="locked-screen-experience"></a>Experiência de Tela Bloqueada
+## <a name="locked-screen-experience"></a>Experiência na tela bloqueada
 
 - **Notificações da central de ações (somente dispositivos móveis)**: permite que notificações da Central de Ações apareçam na tela de bloqueio do dispositivo (somente Windows 10 Mobile).
 - **URL da imagem de tela bloqueada (somente Desktop)**: insira a URL para uma imagem no formato JPEG que deve ser usada como papel de parede na tela bloqueada do Windows. Essa configuração bloqueia a imagem. A imagem não pode ser alterada posteriormente.
@@ -154,7 +157,7 @@ Essas configurações são adicionadas a um perfil de configuração do disposit
 - **Notificações do sistema na tela bloqueada**: impeça que mensagens de alerta sejam exibidas na tela de bloqueio do dispositivo.
 - **Tempo limite da tela (somente dispositivos móveis)**: especifica o tempo em segundos, depois do bloqueio da tela, em que ela será desligada.
 
-## <a name="messaging"></a>Sistema de mensagens
+## <a name="messaging"></a>Mensagens
 
 - **Sincronização de mensagem (somente dispositivo móvel)**: desabilite mensagens em qualquer lugar e faça backup e restauração de mensagens de texto.
 - **MMS (somente móvel)**: desabilite o recurso de envio/recebimento de MMS no dispositivo.
@@ -305,6 +308,29 @@ Este perfil de restrições de dispositivo está diretamente relacionado ao perf
   - **Impedir a reutilização de senhas anteriores**: especifica o número de senhas usadas anteriormente que são lembradas pelo dispositivo.
   - **Exigir senha quando o dispositivo retorna do estado inativo (somente dispositivos móveis)**: especifica que o usuário deve inserir uma senha para desbloquear o dispositivo (somente Windows 10 Mobile).
   - **Senhas simples**: permite o uso de senhas simples, como 1111 ou 1234. Essa configuração também permite ou bloqueia o uso de senhas de imagem do Windows.
+- **Criptografia automática durante AADJ**: **bloco** impede que a criptografia de dispositivo de disco BitLocker automática quando o dispositivo está preparado para o primeiro uso, quando o dispositivo está ingressado no Azure AD. **Não configurado** (padrão) usa o padrão de sistema operacional, que pode habilitar a criptografia. Mais detalhes sobre [criptografia do dispositivo de disco BitLocker](https://docs.microsoft.com/windows/security/information-protection/bitlocker/bitlocker-device-encryption-overview-windows-10#bitlocker-device-encryption).
+
+  [Segurança/PreventAutomaticDeviceEncryptionForAzureADJoinedDevices CSP](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-security#security-preventautomaticdeviceencryptionforazureadjoineddevices)
+
+- **Política do governo federal FIPS Information Processing Standard ()**: **permitir** usa a política Federal FIPS Information Processing Standard (), que é um governo dos EUA padrão para criptografia, hash e assinatura. **Não configurado** (padrão) usa o padrão de sistema operacional, que não usa FIPS.
+
+  [Criptografia/AllowFipsAlgorithmPolicy CSP](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-cryptography#cryptography-allowfipsalgorithmpolicy)
+
+- **Autenticação de dispositivo Windows Hello**: **permitir** que os usuários usem um Windows Hello dispositivo complementar, como um telefone, banda fitness ou dispositivo de IoT para entrar em um computador com Windows 10. **Não configurado** (padrão) usa o padrão de sistema operacional, que pode impedir que dispositivos do Windows Hello complementar autenticando com o Windows.
+
+  [Autenticação/AllowSecondaryAuthenticationDevice CSP](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-authentication#authentication-allowsecondaryauthenticationdevice)
+
+- **Entrada na Web**: suporte para provedores de federado não ADFS (serviços de Federação do Active Directory), como marcação linguagem SAML (Security Assertion) de logon do Windows permite. SAML usa tokens de seguros que fornecem a experiência de navegadores da web um logon único (SSO). Suas opções:
+
+  - **Não configurado** (padrão): usa o padrão do sistema operacional no dispositivo.
+  - **Habilitado**: O provedor de credenciais da Web está habilitado para entrar.
+  - **Desabilitado**: O provedor de credenciais da Web está desabilitado para entrar.
+
+  [Autenticação/EnableWebSignIn CSP](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-authentication#authentication-enablewebsignin)
+
+- **Preferencial de domínio de locatário do Azure AD**: insira um nome de domínio existente na sua organização do AD do Azure. Quando os usuários nesse domínio entrarem, eles não precisam digitar o nome de domínio. Por exemplo, insira `contoso.com`. Os usuários na `contoso.com` domínio pode entrar usando seu nome de usuário, como "abby", em vez de "abby@contoso.com".
+
+  [Autenticação/PreferredAadTenantDomainName CSP](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-authentication#authentication-preferredaadtenantdomainname)
 
 ## <a name="per-app-privacy-exceptions"></a>Exceções de privacidade por aplicativo
 
@@ -508,7 +534,7 @@ Você pode configurar as informações que todos os aplicativos no dispositivo p
 - **Ações sobre ameaças de malware detectadas**: escolha as ações que o Defender deve realizar para cada nível de ameaça detectada: baixa, moderada, alta e grave. Suas opções:
   - **Apagar**
   - **Quarentena**
-  - **Remover**
+  - **Removerr**
   - **Permitir**
   - **Definido pelo usuário**
   - **Bloquear**

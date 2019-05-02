@@ -1,6 +1,6 @@
 ---
 title: Ponto de extremidade de API do Intune Data Warehouse
-titlesuffix: Microsoft Intune
+titleSuffix: Microsoft Intune
 description: Este tópico de referência descreve a estrutura de URL da API do Microsoft Intune Data Warehouse. Exemplos de filtro são fornecidos.
 keywords: Intune Data Warehouse
 author: Erikre
@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: e0e56c2dd4e26c68a82d5cb9d902e4480e1b98c8
-ms.sourcegitcommit: 25e6aa3bfce58ce8d9f8c054bc338cc3dff4a78b
-ms.translationtype: MTE75
+ms.openlocfilehash: 50be11f9ada92670c201fc2540499effa5a7edef
+ms.sourcegitcommit: 484a898d54f5386fdbce300225aaa3495cecd6b0
+ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57396465"
+ms.lasthandoff: 04/01/2019
+ms.locfileid: "58798486"
 ---
 # <a name="intune-data-warehouse-api-endpoint"></a>Ponto de extremidade de API do Intune Data Warehouse
 
@@ -53,7 +53,7 @@ A URL contém os seguintes elementos:
 |-------------------|------------|--------------------------------------------------------------------------------------------------------------------|
 | local | msua06 | A URL de base pode ser encontrada ao exibir a folha de API do Data Warehouse no portal do Azure. |
 | coleção de entidades | datas | O nome da coleção de entidades do OData. Para obter mais informações sobre coleções e entidades no modelo de dados, consulte [Modelo de dados](reports-ref-data-model.md). |
-| api-version | beta | Versão é a versão da API para acessar. Para obter mais informações, consulte [Versão](#API-version-information). |
+| api-version | beta | Versão é a versão da API para acessar. Para obter mais informações, consulte [Versão](reports-api-url.md#api-version-information). |
 | maxhistorydays | 7 | (Opcional) O número máximo de dias de histórico a ser recuperado. Esse parâmetro pode ser fornecido para qualquer coleção, mas só entrará em vigor para coleções que incluem `dateKey` como parte de sua propriedade de chave. Confira [Filtros de intervalo de DateKey](reports-api-url.md#datekey-range-filters) para obter mais informações. |
 
 ## <a name="api-version-information"></a>Informações de versão da API
