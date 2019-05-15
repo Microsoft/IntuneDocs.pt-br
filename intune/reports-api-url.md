@@ -64,7 +64,7 @@ Você pode testar a funcionalidade mais recente do Data Warehouse usando a vers�
 
 ## <a name="odata-query-options"></a>Opções de consulta de OData
 
-A versão atual dá suporte aos seguintes parâmetros de consulta OData: `$filter`, `$select`, `$skip,` e `$top`. Na `$filter`, somente `DateKey` ou `RowLastModifiedDateTimeUTC` podem ter suporte quando as colunas são aplicáveis e outras propriedades dispararia uma solicitação incorreta.
+A versão atual dá suporte aos seguintes parâmetros de consulta OData: `$filter`, `$select`, `$skip,` e `$top`. Em `$filter`, somente `DateKey` ou `RowLastModifiedDateTimeUTC` podem ter suporte quando as colunas são aplicáveis, outras propriedades disparariam uma solicitação inválida.
 
 ## <a name="datekey-range-filters"></a>Filtros de intervalo de DateKey
 
@@ -84,4 +84,4 @@ Os filtros de intervalo de `DateKey` podem ser usados para limitar a quantidade 
 |    `$filter=DateKey eq 20180214`                                 |    Completo                                      |    Retorna dados com `DateKey` igual a 20180214.                                                    |
 |    `$filter=DateKey ge 20180214 and DateKey lt 20180221`         |    Completo                                      |    Retorna dados com `DateKey` entre 20180214 e 20180220.                                     |
 |    `maxhistorydays=7&$filter=DateKey eq 20180214`                |    Completo                                      |    Retorna dados com `DateKey` igual a 20180214. `maxhistorydays` é ignorado.                            |
-|    `$filter=RowLastModifiedDateTimeUTC ge 2018-02-21T23:18:51.3277273Z`                                |    Completo                                       |    Retornar dados com `RowLastModifiedDateTimeUTC` é maior que ou igual a `2018-02-21T23:18:51.3277273Z`                             |
+|    `$filter=RowLastModifiedDateTimeUTC ge 2018-02-21T23:18:51.3277273Z`                                |    Completo                                       |    Dados de retorno com `RowLastModifiedDateTimeUTC` é maior ou igual a `2018-02-21T23:18:51.3277273Z`                             |

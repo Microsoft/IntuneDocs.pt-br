@@ -1,11 +1,11 @@
 ---
-title: Criar política de conformidade para dispositivo macOS no Microsoft Intune – Azure | Microsoft Docs
-description: Criar ou configurar uma política de conformidade de dispositivo do Microsoft Intune para dispositivos macOS para usar a Proteção de Integridade do Sistema, definir a versão mínima e máxima do sistema operacional, escolher seus requisitos de senha e criptografar o armazenamento de dados.
+title: Configurações de conformidade para dispositivo macOS no Microsoft Intune – Azure | Microsoft Docs
+description: Veja uma lista de todas as configurações que você pode usar ao definir a conformidade para seus dispositivos macOS no Microsoft Intune. Exija proteção de integridade do sistema da Apple, defina restrições de senha, exija um firewall, permita o gatekeeper e muito mais.
 keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 11/14/2018
+ms.date: 04/04/2019
 ms.topic: reference
 ms.prod: ''
 ms.service: microsoft-intune
@@ -16,47 +16,32 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 21eca671d40f1ee2f2f9176a272cab5754140a26
-ms.sourcegitcommit: 25e6aa3bfce58ce8d9f8c054bc338cc3dff4a78b
-ms.translationtype: MTE75
+ms.openlocfilehash: b3224e7400ad56f971488aba53bb073a0d33bb9d
+ms.sourcegitcommit: 02803863eba37ecf3d8823a7f1cd7c4f8e3bb42c
+ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57566600"
+ms.lasthandoff: 04/09/2019
+ms.locfileid: "59423638"
 ---
-# <a name="add-a-device-compliance-policy-for-macos-devices-with-intune"></a>Adicionar uma política de conformidade do dispositivo para dispositivos macOS com o Intune
+# <a name="macos-settings-to-mark-devices-as-compliant-or-not-compliant-using-intune"></a>Configurações do macOS para marcar dispositivos como em conformidade ou não em conformidade usando o Intune
 
-Uma política de conformidade de dispositivos macOS do Intune determina as regras e configurações que os dispositivos macOS precisam cumprir para estarem em conformidade. Quando você usa as políticas de conformidade de dispositivo, é possível permitir ou bloquear o acesso aos recursos da empresa. Você também pode obter relatórios de dispositivo e realizar ações de não conformidade. As políticas de conformidade de dispositivo de cada plataforma podem ser criadas no Portal do Azure no Intune. Para saber mais sobre as políticas de conformidade e qualquer pré-requisito, veja a [Introdução às políticas de conformidade do dispositivo](device-compliance-get-started.md).
+[!INCLUDE [azure_portal](./includes/azure_portal.md)]
 
-A tabela a seguir descreve como as configurações não compatíveis são gerenciadas quando uma política de conformidade é usada com uma política de acesso condicional:
+Este artigo lista e descreve as diferentes configurações de conformidade que você pode definir em dispositivos macOS no Intune. Como parte de sua solução de MDM (gerenciamento de dispositivo móvel), use estas configurações para definir a versão mínima ou a máxima do SO, definir senhas para expirar e muito mais.
 
----------------------------
+Esse recurso aplica-se a:
 
-| Configuração de política | macOS 10.11 e posterior |
-| --- | --- |
-| **Configuração de senha ou PIN** | Corrigida |   
-| **Criptografia de dispositivo** | Corrigida (pela definição do PIN) |
-| **Perfil de email** | Em Quarentena |
-|**Versão mínima do SO** | Em Quarentena |
-| **Versão máxima do SO** | Em Quarentena |
+- macOS
 
----------------------------
+Como um administrador do Intune, use essas configurações de conformidade para ajudar a proteger os recursos da sua organização. Para saber mais sobre as políticas de conformidade e o que elas fazem, veja a [introdução à conformidade do dispositivo](device-compliance-get-started.md).
 
-**Remediado** = o sistema operacional do dispositivo impõe a conformidade. Por exemplo, o usuário é forçado a definir um PIN.
+## <a name="before-you-begin"></a>Antes de começar
 
-**Em quarentena** = o sistema operacional do dispositivo não impõe a conformidade. (Por exemplo, dispositivos Android não forçam o usuário a criptografar o dispositivo.) Quando o dispositivo não é compatível, ocorrem as seguintes ações:
-
-- O dispositivo será bloqueado se uma política de acesso condicional se aplicar ao usuário.
-- O portal da empresa notificará o usuário sobre qualquer problema de conformidade.
-
-## <a name="create-a-device-compliance-policy"></a>Criar uma política de conformidade do dispositivo
-
-[!INCLUDE [new-device-compliance-policy](./includes/new-device-compliance-policy.md)]
-4. Para **Plataforma**, selecione **macOS**. 
-5. Escolha **Definição de Configurações** para inserir as configurações de **Integridade do Dispositivo**, **Propriedades do Dispositivo** e **Segurança do Sistema** descritas neste artigo. Quando terminar, selecione **OK** e **Criar**.
+[Criar uma política de conformidade](create-compliance-policy.md#create-the-policy). Para **Plataforma**, selecione **macOS**.
 
 ## <a name="device-health"></a>Integridade do Dispositivo
 
-- **Exigir uma proteção de integridade do sistema**: **Exigir** que os dispositivos macOS tenham a [Proteção de Integridade do Sistema](https://support.apple.com/HT204899) habilitada.
+- **Exigir uma proteção de integridade do sistema**: **Exigir** que os dispositivos macOS tenham a [Proteção de Integridade do Sistema](https://support.apple.com/HT204899) (abre o site da Apple) habilitada. Quando definido como **Não configurado** (padrão), essa configuração não é avaliada de conformidade ou não conformidade.
 
 ## <a name="device-properties"></a>Propriedades do dispositivo
 
@@ -73,7 +58,7 @@ A tabela a seguir descreve como as configurações não compatíveis são gerenc
 - **Senhas simples**: defina como **Bloquear** para que os usuários não possam criar uma senha simples como **1234** ou **1111**. Definido como **Não configurado** para permitir que os usuários criem senhas como **1234** ou **1111**.
 - **Tamanho mínimo da senha**: insira o número mínimo de dígitos ou de caracteres que a senha deve ter.
 - **Tipo de senha**: escolha se uma senha deve ter apenas caracteres **numéricos** ou se deve haver uma combinação de números e outros caracteres (**alfanuméricos**).
-- **Número de caracteres não alfanuméricos na senha**: Insira o número mínimo de caracteres especiais (&, #, %, ! e assim por diante) que devem ser incluídos na senha.
+- **Número de caracteres não alfanuméricos na senha**: insira o número mínimo de caracteres especiais, como `&`, `#`, `%`, `!` e assim por diante, que devem ser incluídos na senha.
 
     Definir um número mais alto exige que o usuário crie uma senha mais complexa.
 
@@ -89,13 +74,16 @@ A tabela a seguir descreve como as configurações não compatíveis são gerenc
 - **Criptografia de armazenamento de dados em um dispositivo**: escolha **Exigir** para criptografar o armazenamento de dados em seus dispositivos.
 
 ### <a name="device-security"></a>Segurança de dispositivo
+
 O firewall protege os dispositivos contra o acesso não autorizado à rede. Você pode usar o Firewall para controlar as conexões por aplicativo. 
 
-- **Firewall**: **habilite** para ajudar a proteger os dispositivos contra o acesso não autorizado. A habilitação desse recurso permite que você manipule as conexões de entrada com a Internet e use o modo furtivo. A opção **Não configurado** (padrão) deixa o firewall desativado e o tráfego de rede é permitido (não bloqueado).
-- **Conexões de entrada**: **bloqueie** todas as conexões de rede de entrada, exceto as conexões necessárias para serviços básicos da Internet, como DHCP, Bonjour e IPsec. Essa configuração também bloqueia todos os serviços de compartilhamento, incluindo compartilhamento de tela, acesso remoto, compartilhamento de música do iTunes e muito mais. A opção **Não configurado** (padrão) permite conexões de entrada e serviços de compartilhamento. 
-- **Modo Furtivo**: **habilite** o modo furtivo para impedir que o dispositivo responda a solicitações de investigação, que podem ser feitas por usuários mal-intencionados. Quando essa opção está habilitada, o dispositivo continua respondendo a solicitações de entrada de aplicativos autorizados. A opção **Não configurado** (padrão) deixa o modo furtivo desativado.
+- **Firewall**: selecione **Habilitar** para ajudar a proteger os dispositivos contra o acesso não autorizado. A habilitação desse recurso permite que você manipule as conexões de entrada com a Internet e use o modo furtivo. A opção **Não configurado** (padrão) deixa o firewall desativado e o tráfego de rede é permitido (não bloqueado).
+- **Conexões de entrada**: **bloqueie** todas as conexões de rede de entrada, exceto as conexões necessárias para serviços básicos da Internet, como DHCP, Bonjour e IPsec. Essa configuração também bloqueia todos os serviços de compartilhamento, incluindo compartilhamento de tela, acesso remoto, compartilhamento de música do iTunes e muito mais. A opção **Não configurado** (padrão) permite conexões de entrada e serviços de compartilhamento.
+- **Modo Furtivo**: **habilite** o modo furtivo para impedir que dispositivos respondam a solicitações de investigação, que podem ser feitas por usuários mal-intencionados. Quando essa opção está habilitada, o dispositivo continua respondendo a solicitações de entrada de aplicativos autorizados. A opção **Não configurado** (padrão) deixa o modo furtivo desativado.
 
 ### <a name="gatekeeper"></a>Gatekeeper
+
+Para obter mais informações, veja [Gatekeeper no macOS](https://support.apple.com/HT202491) (abre o site da Apple).
 
 **Permitir aplicativos baixados destes locais**: permite que aplicativos com suporte sejam instalados em seus dispositivos de diferentes locais. Suas opções de localização:
 
@@ -104,19 +92,10 @@ O firewall protege os dispositivos contra o acesso não autorizado à rede. Voc�
 - **Mac App Store e desenvolvedores identificados**: instale aplicativos para a Mac App Store e desenvolvedores identificados. O macOS verifica a identidade dos desenvolvedores e faz algumas outras verificações para determinar a integridade do aplicativo. Se um usuário selecionar o Gatekeeper para instalar aplicativos fora dessas opções, será considerado que o dispositivo não está em conformidade.
 - **Em qualquer lugar**: os aplicativos podem ser instalados em qualquer lugar e por qualquer desenvolvedor. Essa opção é a menos segura.
 
-Para obter mais detalhes na documentação da Apple, confira [Gatekeeper no macOS](https://support.apple.com/HT202491).
-
-## <a name="assign-user-groups"></a>Atribuir grupos de usuários
-
-1. Escolha uma política que você configurou. As políticas existentes estão em **Conformidade do dispositivo** > **Políticas**.
-2. Escolha a política e as **Atribuições**. Você pode incluir ou excluir grupos de segurança do Azure Active Directory (AD).
-3. Escolha **Grupos selecionados** para ver os grupos de segurança do Azure AD. Selecione os grupos de usuários aos quais deseja que essa política seja aplicada e escolher **Salvar** para implantar a política para os usuários.
-
-> [!TIP]
-> Por padrão, os dispositivos têm a conformidade verificada a cada oito horas. Mas os usuários podem forçar esse processo por meio do aplicativo de Portal da Empresa do Intune.
-
-Você aplicou a política para os usuários. Os dispositivos usados pelos usuários que são direcionados pela política são avaliados quanto à conformidade.
+Selecione **OK** > **Criar** para salvar suas alterações.
 
 ## <a name="next-steps"></a>Próximas etapas
-[Automatizar email e adicionar ações para dispositivos não compatíveis](actions-for-noncompliance.md)  
-[Monitorar as políticas de conformidade do dispositivo do Intune](compliance-policy-monitor.md)
+
+- [Adicione ações para dispositivos que não estão em conformidade](actions-for-noncompliance.md) e [use marcas de escopo para políticas de filtro](scope-tags.md).
+- [Monitore suas políticas de conformidade](compliance-policy-monitor.md).
+- Veja as [configurações da política de conformidade para dispositivos iOS](compliance-policy-create-ios.md).

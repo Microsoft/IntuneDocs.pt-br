@@ -604,7 +604,7 @@ Uma identidade é simplesmente o nome de usuário de uma conta (por exemplo, use
 
 A qualquer momento, todo thread tem uma identidade efetiva para tarefas de interface do usuário e tarefas de arquivo. Essa é a identidade usada para verificar quais políticas, se houver, devem ser aplicadas. Se a identidade for "nenhuma identidade" ou o usuário não for gerenciado, nenhuma política será aplicada. Os diagramas a seguir mostram como as identidades efetivas são determinadas.
 
-  ![SDK do Intune App para iOS: processo de determinação de identidade](./media/ios-thread-identities.png)
+  ![SDK do Aplicativo do Intune para iOS: processo de determinação de identidade](./media/ios-thread-identities.png)
 
 ### <a name="thread-queues"></a>Filas de thread
 

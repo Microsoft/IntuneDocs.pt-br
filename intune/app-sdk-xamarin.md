@@ -91,18 +91,18 @@ Caso seu aplicativo já esteja configurado para usar a ADAL ou a MSAL e tenha su
 ## <a name="enabling-intune-app-protection-policies-in-your-android-mobile-app"></a>Habilitar as políticas de proteção de aplicativo do Intune em seu aplicativo móvel Android
 
 1. Adicione o [pacote do NuGet Microsoft.Intune.MAM.Xamarin.Android](https://www.nuget.org/packages/Microsoft.Intune.MAM.Xamarin.Android) ao seu projeto Xamarin.Android.
-    1. Para um aplicativo xamarin. Forms, adicione a [pacote do Microsoft.Intune.MAM.Remapper.Tasks NuGet](https://www.nuget.org/packages/Microsoft.Intune.MAM.Remapper.Tasks) ao seu projeto xamarin. Android também. 
-2. Siga as etapas gerais necessárias para [a integração do SDK do Intune App](app-sdk-android.md) em um aplicativo móvel Android, fazendo referência a este documento para obter mais detalhes.
+    1. Para um aplicativo Xamarin.Forms, adicione o [pacote do NuGet Microsoft.Intune.MAM.Remapper.Tasks](https://www.nuget.org/packages/Microsoft.Intune.MAM.Remapper.Tasks) ao seu projeto Xamarin.Android também. 
+2. Siga as etapas gerais necessárias para [integrar o SDK do Aplicativo do Intune](app-sdk-android.md) a um aplicativo móvel Android enquanto consulta este documento para obter mais detalhes.
 
 ### <a name="xamarinandroid-integration"></a>Integração do Xamarin.Android
 
-Uma visão geral completa para a integração do SDK do Intune App pode ser encontrada na [Microsoft Intune App SDK para o guia do desenvolvedor Android](app-sdk-android.md). Como ler o guia e integrar o SDK do Intune App ao seu aplicativo Xamarin as seções a seguir destinam-se para destacar as diferenças entre a implementação para um aplicativo nativo do Android desenvolvido em Java e um aplicativo Xamarin desenvolvido em C#. Estas seções devem ser tratadas como complementares e não podem atuar como um substituto para ler o guia em sua totalidade.
+Uma visão geral completa para a integração do SDK do aplicativo do Intune pode ser encontrada no [guia do desenvolvedor do SDK do Aplicativo Microsoft Intune para Android](app-sdk-android.md). Conforme você lê o guia e integra o SDK do Aplicativo Intune ao seu aplicativo Xamarin, as seções a seguir destinam-se para realçar as diferenças entre a implementação para um aplicativo nativo do Android desenvolvido em Java e um aplicativo Xamarin desenvolvido em C#. Estas seções devem ser tratadas como complementares e não podem atuar como um substituto à leitura do guia em sua totalidade.
 
 #### <a name="renamed-methodsapp-sdk-androidmdrenamed-methods"></a>[Métodos renomeados](app-sdk-android.md#renamed-methods)
 Em muitos casos, um método disponível na classe Android foi marcado como final na classe de MAM de substituição. Nesse caso, a classe de MAM de substituição fornece um método nomeado da mesma forma (com o sufixo `MAM`), que deve ser substituído em vez disso. Por exemplo, ao derivar de `MAMActivity`, em vez de substituir `OnCreate()` e chamar `base.OnCreate()`, `Activity` deve substituir `OnMAMCreate()` e chamar `base.OnMAMCreate()`.
 
-#### <a name="mam-applicationapp-sdk-androidmdmamapplication"></a>[Aplicativo de MAM](app-sdk-android.md#mamapplication)
-Seu aplicativo deve definir um `Android.App.Application` classe que herda de `MAMApplication`. Verifique se a subclasse está corretamente decorada com o atributo `[Application]` e substitui o construtor `(IntPtr, JniHandleOwnership)`.
+#### <a name="mam-applicationapp-sdk-androidmdmamapplication"></a>[Aplicativo MAM](app-sdk-android.md#mamapplication)
+Seu aplicativo deve definir uma classe `Android.App.Application` que herde de `MAMApplication`. Verifique se a subclasse está corretamente decorada com o atributo `[Application]` e substitui o construtor `(IntPtr, JniHandleOwnership)`.
 ```csharp
     [Application]
     class TaskrApp : MAMApplication
@@ -111,7 +111,7 @@ Seu aplicativo deve definir um `Android.App.Application` classe que herda de `MA
         : base(handle, transfer) { }
 ```
 > [!NOTE]
-> Um problema com as associações do Xamarin do MAM pode fazer com que o aplicativo falhe quando implantado no modo de depuração. Como alternativa, o `Debuggable=false` atributo deve ser adicionado para o `Application` classe e o `android:debuggable="true"` sinalizador deve ser removido do manifesto se ele foi definido manualmente.
+> Um problema com as associações do Xamarin MAM pode fazer com que o aplicativo falhe quando implantado no modo de depuração. Como alternativa, o atributo `Debuggable=false` deve ser adicionado à classe `Application` e o sinalizador `android:debuggable="true"` deve ser removido do manifesto se foi definido manualmente.
 
 #### <a name="enable-features-that-require-app-participationapp-sdk-androidmdenable-features-that-require-app-participation"></a>[Habilitar recursos que exigem a participação do aplicativo](app-sdk-android.md#enable-features-that-require-app-participation)
 Exemplo: determinar se o PIN é necessário para o aplicativo
@@ -142,19 +142,19 @@ public override void OnMAMCreate()
     ...
 ```
 
-#### <a name="mam-enrollment-managerapp-sdk-androidmdmamenrollmentmanager"></a>[Gerenciador de registro de MAM](app-sdk-android.md#mamenrollmentmanager)
+#### <a name="mam-enrollment-managerapp-sdk-androidmdmamenrollmentmanager"></a>[Gerenciador de Registros do MAM](app-sdk-android.md#mamenrollmentmanager)
 ```csharp
 IMAMEnrollmentManager mgr = MAMComponents.Get<IMAMEnrollmentManager>();
 ```
 
 ### <a name="xamarinforms-integration"></a>Integração do Xamarin.Forms
 
-Para `Xamarin.Forms` aplicativos que fornecemos a `Microsoft.Intune.MAM.Remapper` pacote para executar a substituição de classe MAM automaticamente injetando `MAM` classes na hierarquia da classe de comumente usados `Xamarin.Forms` classes. 
+Para aplicativos `Xamarin.Forms`, fornecemos o pacote `Microsoft.Intune.MAM.Remapper` para executar a substituição de classe MAM injetando automaticamente classes `MAM` na hierarquia de classes referente a classes `Xamarin.Forms` comumente usadas. 
 
 > [!NOTE]
-> A integração com o xamarin. Forms deve ser feito, além disso, para a integração com o xamarin. Android detalhada acima.
+> A integração com o Xamarin.Forms deve ser feita além da integração com o Xamarin.Android detalhada acima.
 
-Depois que o remapeador é adicionado ao seu projeto, que você precisará executar as substituições equivalentes do MAM. Por exemplo, `FormsAppCompatActivity` e `FormsApplicationActivity` pode continuar a ser usado em suas substituições de aplicativo fornecido para `OnCreate` e `OnResume` são substituídas por equivalentes do MAM `OnMAMCreate` e `OnMAMResume` , respectivamente.
+Depois que o remapeador é adicionado ao seu projeto, que você precisa executar as substituições equivalentes do MAM. Por exemplo, `FormsAppCompatActivity` e `FormsApplicationActivity` podem continuar sendo usados em seu aplicativo, desde que as substituições para `OnCreate` e `OnResume` sejam substituídas pelos equivalentes do MAM `OnMAMCreate` e `OnMAMResume`, respectivamente.
 
 ```csharp
     public class MainActivity : global::Xamarin.Forms.Platform.Android.FormsAppCompatActivity
@@ -166,13 +166,13 @@ Depois que o remapeador é adicionado ao seu projeto, que você precisará execu
             LoadApplication(new App());
         }
 ```
-Se as substituições não forem feitas, em seguida, você pode encontrar os seguintes erros de compilação até que você faça as substituições:
+Se as substituições não forem feitas, você poderá encontrar os seguintes erros de compilação até que faça as substituições:
 * [Erro do compilador CS0239](https://docs.microsoft.com/dotnet/csharp/misc/cs0239). Esse erro é geralmente visto desta forma: ``'MainActivity.OnCreate(Bundle)': cannot override inherited member 'MAMAppCompatActivityBase.OnCreate(Bundle)' because it is sealed``.
 Isso é esperado porque quando o remapeador modifica a herança de classes do Xamarin, algumas funções são tornadas `sealed` e, em vez disso, uma nova variante do MAM é adicionada para substituição.
-* [Erro do compilador CS0507](https://docs.microsoft.com/dotnet/csharp/language-reference/compiler-messages/cs0507): esse erro é geralmente visto neste formulário ``'MyActivity.OnRequestPermissionsResult()' cannot change access modifiers when overriding 'public' inherited member ...``. Quando o Remapeador faz alterações na herança de algumas das classes Xamarin, algumas das funções de membro são alteradas para `public`. Se você substituir qualquer uma dessas funções, você precisará alterá-los os modificadores de acesso para as substituições para ser `public` também.
+* [Erro do Compilador CS0507](https://docs.microsoft.com/dotnet/csharp/language-reference/compiler-messages/cs0507): esse erro geralmente é visto neste formulário ``'MyActivity.OnRequestPermissionsResult()' cannot change access modifiers when overriding 'public' inherited member ...``. Quando o Remapeador faz alterações na herança de algumas das classes Xamarin, algumas das funções de membro são alteradas para `public`. Se você substituir qualquer uma dessas funções, precisará alterar esses modificadores de acesso para essas substituições serem `public` também.
 
 > [!NOTE]
-> O remapeador regrava uma dependência que o Visual Studio usa para AutoPreenchimento IntelliSense. Portanto, você talvez precise recarregar e recompile o projeto quando o remapeador é adicionado para o IntelliSense reconhecer corretamente as alterações.
+> O Remapeador regrava uma dependência que o Visual Studio usa para preenchimento automático do IntelliSense. Portanto, você talvez precise recarregar e recompilar o projeto quando o remapeador for adicionado para o IntelliSense reconhecer corretamente as alterações.
 
 ## <a name="support"></a>Suporte
 Se a sua organização for um cliente do Intune existente, trabalhe com seu representante do Suporte da Microsoft para abrir um tíquete de suporte e criar um problema [na página de problemas do GitHub](https://github.com/msintuneappsdk/intune-app-sdk-xamarin/issues), e nós ajudaremos assim que possível. 

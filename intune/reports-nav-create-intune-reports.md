@@ -43,7 +43,7 @@ O Data Warehouse fornece acesso a mais informações sobre seu ambiente móvel d
   -  Um modelo de dados usando o padrão OData
 
 > [!Note]
-> Se estiver usando o MDM (gerenciamento de dispositivo móvel) cogerenciado com o System Center Configuration Manager e o Microsoft Intune, você precisará recuperar seus dados do Configuration Manager. O Data Warehouse do Intune contém apenas dados do Intune. Você pode usar um painel do Gerenciador de configuração do Power BI para relatórios personalizados. Para obter mais informações, consulte "[Anunciando o modelo de solução do Power BI para o System Center Configuration Manager]( https://powerbi.microsoft.com/blog/sccm-solution-template) e "[Conteúdo do Power BI para Dynamics 365](https://docs.microsoft.com/dynamics365/unified-operations/dev-itpro/analytics/power-bi-home-page)."
+> Se estiver usando o MDM (gerenciamento de dispositivo móvel) cogerenciado com o System Center Configuration Manager e o Microsoft Intune, você precisará recuperar seus dados do Configuration Manager. O Data Warehouse do Intune contém apenas dados do Intune. Você pode usar um dashboard do Configuration Manager Power BI para relatórios personalizados. Para obter mais informações, consulte "[Anunciando o modelo de solução do Power BI para o System Center Configuration Manager]( https://powerbi.microsoft.com/blog/sccm-solution-template) e "[Conteúdo do Power BI para Dynamics 365](https://docs.microsoft.com/dynamics365/unified-operations/dev-itpro/analytics/power-bi-home-page)."
 
 > [!Important]  
 > Agora é possível usar a versão v1.0 do Intune Data Warehouse, definindo o parâmetro de consulta  `api-version=v1.0`. As atualizações em coleções no Data Warehouse são suplementares por natureza e não interrompem cenários existentes.<br><br>

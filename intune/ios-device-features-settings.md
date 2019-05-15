@@ -23,11 +23,11 @@ ms.contentlocale: pt-BR
 ms.lasthandoff: 04/01/2019
 ms.locfileid: "58799258"
 ---
-# <a name="ios-device-settings-to-use-common-ios-features-in-intune"></a>configurações de dispositivo iOS para usar recursos comuns do iOS no Intune
+# <a name="ios-device-settings-to-use-common-ios-features-in-intune"></a>Configurações de dispositivo iOS para usar recursos comuns do iOS no Intune
 
 O Intune inclui algumas configurações internas que permitem aos usuários de iOS utilizarem recursos diferentes da Apple em seus dispositivos. Por exemplo, os administradores podem controlar como os usuários de iOS utilizam impressoras AirPrint, adicionam aplicativos e pastas ao dock e às páginas na tela inicial, mostram notificações de aplicativo, mostram detalhes da marca de ativo na tela de bloqueio, usam a autenticação de logon único e autenticam usuários com certificados.
 
-Use esses recursos para controlar os dispositivos iOS como parte de sua solução MDM (gerenciamento) do dispositivo móvel.
+Use esses recursos para controlar os dispositivos do iOS como parte de sua solução MDM (gerenciamento de dispositivo móvel).
 
 Este artigo lista essas configurações e descreve o que cada uma faz.
 
@@ -78,7 +78,7 @@ Use as configurações do **Dock** para adicionar até seis itens ou pastas ao d
 
     - **Adicionar um aplicativo**: escolha esta opção para adicionar aplicativos ao encaixe na tela. Insira:
 
-      - **Nome do aplicativo**: insira um nome para o aplicativo. Esse nome é usado para sua referência no portal do Azure. Ele *não* aparece no dispositivo iOS.
+      - **Nome do Aplicativo**: insira um nome para o aplicativo. Esse nome é usado para sua referência no portal do Azure. Ele *não* aparece no dispositivo iOS.
       - **ID do Pacote de Aplicativos**: insira a ID do pacote de aplicativos do aplicativo. Confira [IDs do lote para aplicativos iOS internos](#bundle-ids-for-built-in-ios-apps) (neste artigo) para obter alguns exemplos.
 
       Selecione **OK** para salvar suas alterações.
@@ -91,14 +91,14 @@ Use as configurações do **Dock** para adicionar até seis itens ou pastas ao d
       2. Escolha **Adicionar** e insira as seguintes propriedades:
 
           - **Nome da página**: insira um nome para a página. Esse nome é usado para sua referência no portal do Azure. Ele *não* aparece no dispositivo iOS.
-          - **Nome do aplicativo**: insira um nome para o aplicativo. Esse nome é usado para sua referência no portal do Azure. Ele *não* aparece no dispositivo iOS.
+          - **Nome do Aplicativo**: insira um nome para o aplicativo. Esse nome é usado para sua referência no portal do Azure. Ele *não* aparece no dispositivo iOS.
           - **ID do Pacote de Aplicativos**: insira a ID do pacote de aplicativos do aplicativo. Confira [IDs do lote para aplicativos iOS internos](#bundle-ids-for-built-in-ios-apps) (neste artigo) para obter alguns exemplos.
 
       3. Escolha **Adicionar**. Você pode adicionar até **20** páginas para o dock do dispositivo.
       4. Selecione **OK** para salvar suas alterações.
 
 > [!NOTE]
-> Quando você adicionar ícones usando as configurações de encaixe, os ícones na tela inicial e páginas estão bloqueados e não podem ser movidos. Isso pode estar relacionado ao design com iOS e as políticas de MDM da Apple.
+> Quando você adiciona ícones usando as configurações de Encaixe, os ícones na Tela Inicial e páginas estão bloqueados e não podem ser movidos. Isso pode estar ser feito por design com políticas de MDM do iOS e da Apple.
 
 #### <a name="example"></a>Exemplo
 
@@ -126,7 +126,7 @@ Adicione as páginas que você deseja exibir na tela inicial, e os aplicativos q
 
     - **Adicionar um aplicativo**: escolha esta opção para adicionar aplicativos a uma página na tela. Insira:
 
-      - **Nome do aplicativo**: insira um nome para o aplicativo. Esse nome é usado para sua referência no portal do Azure. Ele *não* aparece no dispositivo iOS.
+      - **Nome do Aplicativo**: insira um nome para o aplicativo. Esse nome é usado para sua referência no portal do Azure. Ele *não* aparece no dispositivo iOS.
       - **ID do Pacote de Aplicativos**: insira a ID do pacote de aplicativos do aplicativo. Confira [IDs do lote para aplicativos iOS internos](#bundle-ids-for-built-in-ios-apps) (neste artigo) para obter alguns exemplos.
 
       Selecione **OK** para salvar suas alterações.
@@ -139,7 +139,7 @@ Adicione as páginas que você deseja exibir na tela inicial, e os aplicativos q
       2. Escolha **Adicionar** e insira as seguintes propriedades:
 
           - **Nome da página**: insira um nome para a página. Esse nome é usado para sua referência no portal do Azure. Ele *não* aparece no dispositivo iOS.
-          - **Nome do aplicativo**: insira um nome para o aplicativo. Esse nome é usado para sua referência no portal do Azure. Ele *não* aparece no dispositivo iOS.
+          - **Nome do Aplicativo**: insira um nome para o aplicativo. Esse nome é usado para sua referência no portal do Azure. Ele *não* aparece no dispositivo iOS.
           - **ID do Pacote de Aplicativos**: insira a ID do pacote de aplicativos do aplicativo. Confira [IDs do lote para aplicativos iOS internos](#bundle-ids-for-built-in-ios-apps) (neste artigo) para obter alguns exemplos.
 
       3. Escolha **Adicionar**.
@@ -175,7 +175,7 @@ Escolha como os aplicativos instalados em um dispositivo iOS enviam notificaçõ
          - **Nenhum**: nenhuma notificação é exibida.
          - **Faixa**: uma faixa aparece brevemente com a notificação.
          - **Modal**: a notificação é exibida e o usuário deve descartá-la manualmente antes de continuar a usar o dispositivo.
-       - **Notificação no ícone do aplicativo**: selecione **habilitar** para adicionar uma notificação ao ícone do aplicativo. A notificação indica que o aplicativo enviou uma notificação.
+       - **Notificação no ícone de aplicativo**: selecione **Habilitar** para adicionar uma notificação ao ícone do aplicativo. A notificação indica que o aplicativo enviou uma notificação.
        - **Sons**: selecione **Habilitar** para tocar um som quando uma notificação for entregue.
 
 3. Selecione **OK** para salvar suas alterações. Continue adicionando os aplicativos que você deseja. Quando terminar, selecione **OK**.
@@ -269,7 +269,7 @@ Essas configurações controlam o acesso de URL do navegador em dispositivos iOS
 
     - **Configurar URLs**: use o filtro da Web interno da Apple que procura termos adultos, incluindo profanação ou linguagem pornográfica. Esse recurso avalia cada página da web conforme ela é carregada e identifica e bloqueia conteúdo inadequado. Adicione também as URLs que você não deseja verificar usando o filtro. Ou bloqueie URLs específicas, independentemente dos ajustes de filtro da Apple.
 
-      - **URLs permitidas**: **Add** as URLs que você deseja permitir. Essas URLs ignoram o filtro da Web da Apple.
+      - **URLs permitidas**: **adicione** as URLs que você deseja permitir. Essas URLs ignoram o filtro da Web da Apple.
 
         > [!NOTE]
         > As URLs inseridas são as URLs que você não quer avaliar com o filtro da Web da Apple. Essas URLs não são uma lista de sites permitidos. Para criar uma lista de sites permitidos, defina o **Tipo de Filtro** como **Somente sites específicos**.
@@ -296,11 +296,11 @@ Adicione uma imagem .png, .jpg ou .jpeg personalizada aos seus dispositivos iOS 
 
 Você pode enfrentar um comportamento inesperado quando um perfil sem nenhuma imagem é atribuído a dispositivos com uma imagem existente. Por exemplo, você pode criar um perfil sem uma imagem. Este perfil é atribuído a dispositivos que já têm uma imagem. Nesse cenário, a imagem pode ser alterada para o padrão do dispositivo ou a imagem original pode permanecer no dispositivo. Esse comportamento é controlado e limitado pela plataforma de MDM da Apple.
 
-- **Local de exibição de papel de parede**: escolha um local no dispositivo para mostrar a imagem. Suas opções:
-  - **Não configurado**: uma imagem personalizada não será adicionada ao dispositivo. O dispositivo usa o sistema operacional padrão.
-  - **Tela de bloqueio**: adiciona a imagem para a tela de bloqueio.
+- **Localização de Exibição de Papel de Parede**: escolha uma localização no dispositivo para mostrar a imagem. Suas opções:
+  - **Não configurado**: uma imagem personalizada não é adicionada ao dispositivo. O dispositivo usa o sistema operacional padrão.
+  - **Tela de bloqueio**: adiciona a imagem à tela de bloqueio.
   - **Tela inicial**: adiciona a imagem à tela inicial.
-  - **Tela de bloqueio e tela inicial do**: usa a mesma imagem na tela de bloqueio e tela inicial.
+  - **Tela de bloqueio e tela inicial do**: usa a mesma imagem na tela de bloqueio e na tela inicial.
 - **Imagem de papel de parede**: carregue uma imagem .png, .jpg ou .jpeg que você quer usar. Verifique se o tamanho do arquivo é menor do que 750 KB. Você também pode **remover** uma imagem adicionada.
 
 > [!TIP]

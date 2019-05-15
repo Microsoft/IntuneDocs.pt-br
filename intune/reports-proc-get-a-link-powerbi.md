@@ -1,12 +1,12 @@
 ---
 title: Conectar-se ao Data Warehouse com o Power BI
-titlesuffix: Microsoft Intune
+titleSuffix: Microsoft Intune
 description: Você pode baixar um arquivo para uso com o Microsoft Power BI que permite que você carregue relatórios interativos gerados dinamicamente no locatário do Microsoft Intune.
 keywords: Intune Data Warehouse
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 03/28/2019
+ms.date: 04/02/2019
 ms.topic: reference
 ms.prod: ''
 ms.service: microsoft-intune
@@ -18,18 +18,18 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 5b93bb9911fa93998e443a797d085a568280c278
-ms.sourcegitcommit: e23e78a563928ed2b2cbc588f2aa65678f7bb409
-ms.translationtype: MTE75
+ms.openlocfilehash: 259d700d04547a801b0ebc37242dacf536ad61d3
+ms.sourcegitcommit: 79baf89e4a7a7b1cecb8ccf5cb976736ae6a7286
+ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/29/2019
-ms.locfileid: "58618494"
+ms.lasthandoff: 04/02/2019
+ms.locfileid: "58871371"
 ---
 # <a name="connect-to-the-data-warehouse-with-power-bi"></a>Conectar-se ao Data Warehouse com o Power BI
 
 [!INCLUDE [azure_portal](./includes/azure_portal.md)]
 
-Você pode baixar um arquivo para uso com o Microsoft Power BI que permite que você carregue relatórios interativos, gerados dinamicamente para seu locatário do Intune. O arquivo do Power BI (pbix) do Data Warehouse contém as configurações de conexão para seu locatário e os seguintes exemplos de relatórios e gráficos:  
+Você pode usar o aplicativo de Conformidade do Power BI para carregar relatórios interativos gerados dinamicamente para seu locatário do Intune. Além disso, você pode carregar seus dados de locatário no Power BI usando o link OData. O Intune oferece configurações de conexão para seu locatário para que você possa exibir os seguintes exemplos de relatórios e gráficos relacionados a:  
 
   -  Dispositivos
   -  Registro
@@ -47,29 +47,36 @@ As etapas a seguir mostram como baixar o arquivo do Power BI e como usar o link 
 
 ## <a name="install-power-bi"></a>Instalar o Power BI
 
-Instale a última versão do Power BI Desktop. Você pode baixar o Power BI Desktop em: [PowerBI.microsoft.com](https://powerbi.microsoft.com/desktop)
+Instale a última versão do [Power BI Desktop](https://aka.ms/intune/datawarehouseapi/installpowerbi). Para obter mais informações, veja [Power BI Desktop](https://powerbi.microsoft.com/desktop)
 
-## <a name="load-the-data-and-reports-using-the-power-bi-file-pbix"></a>Carregue os dados e relatórios usando o arquivo do Power BI (pbix)
+## <a name="load-the-data-and-reports-using-the-power-bi-intune-compliance-data-warehouse-app"></a>Carregue os dados e os relatórios usando o Aplicativo Intune Compliance Data Warehouse do Power BI
 
-O arquivo do Power BI (pbix) contém informações de conexão para seu locatário e um conjunto de relatórios predefinidos com base no modelo de dados do Data Warehouse. Abra o arquivo no Power BI Desktop e entre no Azure AD. O relatório carrega os dados de seu locatário do Intune.
+O [aplicativo Intune Compliance Data Warehouse](https://aka.ms/intune/datawarehouseapi/getpowerbiapp) do Power BI contém informações de conexão para seu locatário e um conjunto de relatórios predefinidos com base no modelo de dados do Data Warehouse.
 
-> [!Important]  
-> Cada arquivo do Power BI (pbix) pode ser diferente, dependendo do local do locatário. Se você estiver gerenciando vários locatários do Intune, certifique-se de usar o arquivo baixado do portal do Azure enquanto estiver conectado a esse locatário.  
+1.  Navegue até o [aplicativo Intune Compliance Data Warehouse](https://aka.ms/intune/datawarehouseapi/getpowerbiapp) para iniciar o processo de instalação.
+2.  Quando solicitado a instalar o aplicativo do Power BI de fontes confiáveis, clique em **Instalar**.
+3.  Clique no bloco **Aplicativo Intune Compliance Data Warehouse**.
+4.  Clique no botão **Conectar dados**. 
+    A caixa de diálogo **Conectar-se ao aplicativo Intune Compliance Data Warehouse** é exibida.
+5.  Clique no botão **Entrar**.
+6.  Entre com uma conta de usuário que tenha acesso ao Intune Data Warehouse para o locatário que tem relatórios que você deseja exibir. 
+7.  Clique na guia **Relatórios** e, em seguida, no relatório **Compliance V1.0**.
+8.  Para que seja fácil navegar de volta para esses relatórios mais tarde, clique na estrela ao lado do relatório **Compliance V1.0**. Isso adicionará o relatório aos seus favoritos do Power BI.
 
-1.  Entre no portal do Azure e selecione **Monitoring + Management** > **Intune**. Também é possível pesquisar recursos para o **Intune**.  
-2.  Abra o **configurar o Intune Data Warehouse** folha.
-3.  Selecione **Baixar arquivo do PowerBI**. O arquivo com uma extensão (pbix) é baixado no local especificado.
-4.  Abra o arquivo com o Power BI. Os *Relatórios do Data Warehouse do Intune* são carregados, mas pode levar alguns segundos para obter os dados de locatário.
-5.  Selecione **Atualizar** para carregar os dados de locatário e examinar os relatórios.
-6.  Se o Power BI não tiver autenticado com suas credenciais do Azure Active Directory, o Power BI solicitará que você forneça suas credenciais. Ao selecionar suas credenciais, escolha **Conta organizacional** como seu método de autenticação.
+Como alternativa, você pode instalar o aplicativo do portal do Intune:
+
+1.  Entre no portal do Azure e selecione **Monitoring + Management** > **Intune**. Você também pode pesquisar recursos para o Intune.
+2.  Abra a folha **Configurar o Data Warehouse do Intune**.
+3.  Selecione **Obter o Aplicativo do Power BI** para acessar e compartilhar relatórios pré-criados do Power BI para seu locatário no navegador.
+4.  Siga as etapas 2 a 8 acima.
 
 ## <a name="load-the-data-in-power-bi-using-the-odata-link"></a>Carregue os dados no Power BI usando o link OData
 
 Com um cliente autenticado no Azure AD, o URL do OData se conecta ao ponto de extremidade RESTful na API do Data Warehouse que expõe o modelo de dados para o cliente de relatório. Siga estas instruções para usar o Power BI Desktop para se conectar e criar seus próprios relatórios. Você não está limitado ao Power BI Desktop, mas pode usar sua ferramenta favorita de análise com a URL do OData, desde que o cliente dê suporte à autenticação OAuth 2.0 e ao padrão de v 4.0 OData.
 
 1.  Entre no portal do Azure e selecione **Monitoring + Management** > **Intune**. Também é possível pesquisar recursos para o **Intune**.  
-2.  Abra o **configurar o Intune Data Warehouse** folha.
-3. Recupere a URL do feed personalizado da folha de relatório, por exemplo, `https://fef.{yourinfo}.manage.microsoft.com/ReportingService/DataWarehouseFEService/dates?api-version=beta`
+2.  Abra a folha **Configurar o Data Warehouse do Intune**.
+3. Recupere a URL do feed personalizado da folha de relatório, por exemplo, `https://fef.{yourinfo}.manage.microsoft.com/ReportingService/DataWarehouseFEService/dates?api-version=v1.0`
 4. Abra o **Power BI Desktop**.
 5. Selecione **Início** > **Obter dados**. Selecione **feed de OData**.
 6. Escolha **básica**.
@@ -84,7 +91,7 @@ Com um cliente autenticado no Azure AD, o URL do OData se conecta ao ponto de ex
 
 ## <a name="next-steps"></a>Próximas etapas
 
-Você pode encontrar as respostas para perguntas sobre seu ambiente, como o número de dispositivos registrados por dia na última semana. Você pode obter informações sobre a população de locatário e o cliente Intune que usam os relatórios usando o arquivo Intune Data Warehouse Power BI (pbix) recuperado da folha no Azure. No entanto, o Intune fornece várias maneiras adicionais para estender ou reutilizar os dados. Há muito mais que você pode fazer com o Power BI e a API Intune Data Warehouse, por exemplo:
+Você pode encontrar as respostas para perguntas sobre seu ambiente, como o número de dispositivos registrados por dia na última semana. Você pode obter informações sobre a população de locatário e o cliente Intune usando os relatórios do Intune Data Warehouse Power BI recuperados da folha no Azure. No entanto, o Intune fornece várias maneiras adicionais para estender ou reutilizar os dados. O Power BI e a API do Intune Data Warehouse fornecem uma funcionalidade adicional, por exemplo:
 
 <!-- -  You can use Power BI Desktop to create additional report types with your data. For example, you could create a custom chart representing the ratio of device manufactures in your enterprise. For more information about creating custom reports with Power BI and the Intune Data Warehouse, see `BLOG POST ON POWER BI`. -->
  -  Os dados de locatário são organizados para ajudar a extrair informações de seus dados. Para obter mais informações sobre como os dados são organizados, consulte [Modelo de dados do Data Warehouse](reports-ref-data-model.md).

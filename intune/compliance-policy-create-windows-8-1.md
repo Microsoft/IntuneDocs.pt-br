@@ -1,6 +1,6 @@
 ---
-title: Configurações de educação do Windows 8.1 no Microsoft Intune – Azure | Microsoft Docs
-description: Ver uma lista de todas as configurações que você pode usar ao definir a conformidade de seus dispositivos Windows 8.1 e Windows Phone 8.1 no Microsoft Intune. Verificar a conformidade no sistema de operacional mínimo e máximo, definir restrições de senha e o comprimento, habilite a criptografia no armazenamento de dados e muito mais.
+title: Configurações de conformidade do Windows 8.1 no Microsoft Intune – Azure | Microsoft Docs
+description: Veja uma lista de todas as configurações que você pode usar ao definir a conformidade para seus dispositivos Windows 8.1 e Windows Phone 8.1 no Microsoft Intune. Verifique a conformidade no sistema de operacional mínimo e máximo, defina restrições de senha e comprimento, habilite a criptografia no armazenamento de dados e muito mais.
 keywords: ''
 author: MandiOhlinger
 ms.author: mandia
@@ -22,29 +22,29 @@ ms.contentlocale: pt-BR
 ms.lasthandoff: 04/09/2019
 ms.locfileid: "59424926"
 ---
-# <a name="windows-81-settings-to-mark-devices-as-compliant-or-not-compliant-using-intune"></a>Configurações do Windows 8.1 para marcar dispositivos como em conformidade ou não conformidade usando o Intune
+# <a name="windows-81-settings-to-mark-devices-as-compliant-or-not-compliant-using-intune"></a>Configurações do Windows 8.1 para marcar dispositivos como em conformidade ou não em conformidade usando o Intune
 
 [!INCLUDE [azure_portal](./includes/azure_portal.md)]
 
-Este artigo lista e descreve as configurações de conformidade diferentes que você pode definir em dispositivos Windows 8.1 no Intune. Como parte de sua solução MDM (gerenciamento) do dispositivo móvel, use essas configurações para bloquear senhas simples, defina um mínimo e a versão máxima do SO e muito mais.
+Este artigo lista e descreve as diferentes configurações de conformidade que você pode definir em dispositivos Windows 8.1 no Intune. Como parte de sua solução de MDM (gerenciamento de dispositivo móvel), use estas configurações para bloquear senhas simples, definir a versão mínima e a máxima do SO e muito mais.
 
 Esse recurso aplica-se a:
 
 - Windows Phone 8.1
 - Windows 8.1 e posterior
 
-Como um administrador do Intune, use essas configurações de conformidade para ajudar a proteger seus recursos organizacionais. Para saber mais sobre as políticas de conformidade e qualquer pré-requisito, veja a [Introdução às políticas de conformidade do dispositivo](device-compliance-get-started.md).
+Como um administrador do Intune, use essas configurações de conformidade para ajudar a proteger os recursos da sua organização. Para saber mais sobre as políticas de conformidade e o que elas fazem, veja a [introdução à conformidade do dispositivo](device-compliance-get-started.md).
 
 ## <a name="before-you-begin"></a>Antes de começar
 
-[Criar uma política de conformidade](create-compliance-policy.md#create-the-policy). Para **plataforma**, selecione **Windows Phone 8.1** ou **Windows 8.1 e posterior**.
+[Criar uma política de conformidade](create-compliance-policy.md#create-the-policy). Para **Plataforma**, selecione **Windows Phone 8.1** ou **Windows 8.1 e posterior**.
 
 ## <a name="device-properties"></a>Propriedades do dispositivo
 
-- **Sistema operacional mínimo exigido**: insira a versão mínima permitida. Quando um dispositivo não atende ao requisito mínimo de versão do sistema operacional, ele será relatado como não compatível. É exibido um link com informações sobre como atualizar. O usuário final pode optar por atualizar seu dispositivo e, depois disso, poderá ter acesso aos recursos da empresa.
-- **Versão do sistema operacional máxima permitida**: insira a versão máxima permitida. Quando um dispositivo estiver usando uma versão de sistema operacional inserida na regra, o acesso aos recursos da empresa será bloqueado. O usuário deverá contatar seu administrador de TI. Até que você altere a regra para permitir a versão do SO, este dispositivo não pode ser usado para acessar recursos da empresa.
+- **SO mínimo exigido**: insira a versão mínima permitida. Quando um dispositivo não atende ao requisito mínimo de versão do sistema operacional, ele será relatado como não estando em conformidade. É exibido um link com informações sobre como atualizar. O usuário final pode optar por atualizar seu dispositivo e, depois disso, poderá ter acesso aos recursos da empresa.
+- **Versão máxima do SO permitida**: insira a versão máxima permitida. Quando um dispositivo estiver usando uma versão de sistema operacional inserida na regra, o acesso aos recursos da empresa será bloqueado. O usuário deverá contatar seu administrador de TI. Até que você altere a regra para permitir a versão do SO, este dispositivo não pode ser usado para acessar recursos da empresa.
 
-Computadores com Windows 8.1 retornam a versão **3**. Se a regra de versão do sistema operacional for definida como Windows 8.1 para Windows, então o dispositivo será relatado como não compatível mesmo que o dispositivo tenha o Windows 8.1.
+Computadores com Windows 8.1 retornam a versão **3**. Se a regra de versão do sistema operacional for definida como Windows 8.1 para Windows, então o dispositivo será relatado como não estando em conformidade mesmo que o dispositivo tenha o Windows 8.1.
 
 ## <a name="system-security"></a>Segurança do sistema
 
@@ -83,6 +83,6 @@ Selecione **OK** > **Criar** para salvar suas alterações.
 
 ## <a name="next-steps"></a>Próximas etapas
 
-- [Adicionar ações para dispositivos não compatíveis](actions-for-noncompliance.md) e [usar marcas de escopo para políticas de filtro](scope-tags.md).
-- [Monitorar suas políticas de conformidade](compliance-policy-monitor.md).
-- Consulte a [as configurações de política de conformidade para Windows 10 e posterior](compliance-policy-create-windows.md) dispositivos.
+- [Adicione ações para dispositivos que não estão em conformidade](actions-for-noncompliance.md) e [use marcas de escopo para políticas de filtro](scope-tags.md).
+- [Monitore suas políticas de conformidade](compliance-policy-monitor.md).
+- Consulte as [configurações de política de conformidade para dispositivos Windows 10 e posteriores](compliance-policy-create-windows.md).

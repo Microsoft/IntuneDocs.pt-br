@@ -44,8 +44,8 @@ A entidade **MamApplication** lista aplicativos de linha de negócios (LOB) que 
 | Propriedade | Descrição | Exemplo |
 |---------|------------|--------|
 | mamApplicationKey |Identificador exclusivo do aplicativo MAM. | 432 |
-| mamApplicationName |Nome do aplicativo MAM. |Exemplo de nome de aplicativo MAM |
-| mamApplicationId |ID do aplicativo de MAM. | 123 |
+| mamApplicationName |Nome do aplicativo MAM. |Exemplo de Nome de Aplicativo MAM |
+| mamApplicationId |ID do aplicativo referente ao aplicativo MAM. | 123 |
 | IsDeleted |Indica se o registro desse aplicativo MAM foi atualizado. <br>Verdadeiro – o aplicativo MAM tem um novo registro com campos atualizados nesta tabela. <br>Falso – o registro mais recente para este aplicativo MAM. |Verdadeiro/Falso |
 | StartDateInclusiveUTC |Data e hora em UTC em que esse aplicativo de MAM foi criado no data warehouse. |23/11/2016 12:00:00 AM |
 | DeletedDateUTC |Data e hora em UTC em que IsDeleted foi alterado para True. |23/11/2016 12:00:00 AM |
@@ -62,15 +62,15 @@ A entidade **MamApplicationInstance** lista aplicativos de Gerenciamento de apli
 |   ApplicationInstanceKey   |                                                               Identificador exclusivo da instância do aplicativo de MAM no data warehouse – chave alternativa.                                                                |                 123                  |
 |           UserId           |                                                                              A ID de usuário que tem esse aplicativo de MAM instalado.                                                                              | b66bc706-ffff-7437-0340-032819502773 |
 |   ApplicationInstanceId    |                                              Identificador exclusivo da instância do aplicativo de MAM – semelhante a ApplicationInstanceKey, mas o identificador é uma chave natural.                                              | b66bc706-ffff-7437-0340-032819502773 |
-| mamApplicationId | Id do aplicativo do aplicativo Mam para o qual a instância desse aplicativo Mam foi criada.   | 23/11/2016 12:00:00 AM   |
+| mamApplicationId | ID do aplicativo referente ao Aplicativo Mam para o qual esta Instância de Aplicativo Mam foi criada.   | 23/11/2016 12:00:00 AM   |
 |     ApplicationVersion     |                                                                                     Versão deste aplicativo de MAM.                                                                                      |                  2                   |
 |        CreatedDate         |                                                                 Data em que este registro da instância do aplicativo MAM foi criado. O valor pode ser nulo.                                                                 |        23/11/2016 12:00:00 AM        |
 |          Plataforma          |                                                                          Plataforma do dispositivo no qual este aplicativo de MAM está instalado.                                                                           |                  2                   |
 |      PlatformVersion       |                                                                      Versão da plataforma do dispositivo no qual este aplicativo de MAM está instalado.                                                                       |                 2.2                  |
 |         SdkVersion         |                                                                            A versão do SDK do MAM com o qual esse aplicativo de MAM foi encapsulado.                                                                            |                 3.2                  |
-| mamDeviceId | Id do dispositivo do dispositivo com a qual instância do aplicativo MAM está associada.   | 23/11/2016 12:00:00 AM   |
-| mamDeviceType | Tipo de dispositivo do dispositivo com a qual instância do aplicativo MAM está associada.   | 23/11/2016 12:00:00 AM   |
-| mamDeviceName | Nome do dispositivo do dispositivo com a qual instância do aplicativo MAM está associada.   | 23/11/2016 12:00:00 AM   |
+| mamDeviceId | ID do dispositivo referente ao dispositivo com o qual a Instância do Aplicativo MAM está associada.   | 23/11/2016 12:00:00 AM   |
+| mamDeviceType | Tipo de dispositivo referente ao dispositivo com o qual a Instância do Aplicativo MAM está associada.   | 23/11/2016 12:00:00 AM   |
+| mamDeviceName | Nome de dispositivo referente ao dispositivo com o qual a Instância do Aplicativo MAM está associada.   | 23/11/2016 12:00:00 AM   |
 |         IsDeleted          | Indica se o registro de instância desse aplicativo MAM foi atualizado. <br>Verdadeiro – a instância desse aplicativo MAM tem um novo registro com campos atualizados nesta tabela. <br>Falso – o registro mais recente para a instância deste aplicativo MAM. |              Verdadeiro/Falso              |
 |   StartDateInclusiveUtc    |                                                              Data e hora em UTC em que a instância desse aplicativo de MAM foi criada no data warehouse.                                                               |        23/11/2016 12:00:00 AM        |
 |       DeletedDateUtc       |                                                                             Data e hora em UTC em que IsDeleted foi alterado para True.                                                                              |        23/11/2016 12:00:00 AM        |
@@ -89,7 +89,7 @@ A entidade **MamCheckin** representa os dados reunidos quando uma instância de 
 | DateKey |Chave de data em que o check-in do aplicativo de MAM foi registrado no data warehouse. | 20160703 |
 | ApplicationInstanceKey |Chave da instância do aplicativo associada ao check-in desse aplicativo de MAM. | 123 |
 | UserKey |Chave do usuário associada ao check-in desse aplicativo de MAM. | 4323 |
-| mamApplicationKey |Chave de aplicativo associado com a verificação de aplicativo de MAM no. | 432 |
+| mamApplicationKey |Chave de Aplicativo referente ao Aplicativo associado com o check-in do Aplicativo MAM. | 432 |
 | DeviceHealthKey |Chave do DeviceHealth associada ao check-in desse aplicativo de MAM. | 321 |
 | PlatformKey |Representa a plataforma do dispositivo associado ao check-in desse aplicativo de MAM. |123 |
 | EffectiveAppliedPolicyKey |Representa a política aplicada efetivada associada ao aplicativo MAM que fez check-in. Uma política aplicada efetivada resulta da mesclagem de todas as políticas relevantes para um determinado aplicativo e usuário. | 322 |

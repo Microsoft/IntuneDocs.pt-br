@@ -46,4 +46,4 @@ Como administrador de TI, uma das suas principais prioridades é [manter os comp
 
 ## <a name="see-also"></a>Consulte também
 
-[Perguntas, problemas comuns e resoluções com perfis e políticas de dispositivo](device-profile-troubleshoot.md)
+[Perguntas, problemas e resoluções comuns com perfis e políticas de dispositivo](device-profile-troubleshoot.md)
