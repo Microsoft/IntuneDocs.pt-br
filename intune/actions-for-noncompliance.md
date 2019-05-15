@@ -5,7 +5,7 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 4/19/2019
+ms.date: 05/01/2019
 ms.topic: conceptual
 ms.prod: ''
 ms.service: microsoft-intune
@@ -15,12 +15,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: e642573311d1452a970dce798dabdc705e4a44f7
-ms.sourcegitcommit: 143dade9125e7b5173ca2a3a902bcd6f4b14067f
+ms.openlocfilehash: 751d89ef023bea07d3c8bdb69904605d88c9e0b6
+ms.sourcegitcommit: dde4b8788e96563edeab63f612347fa222d8ced0
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "61504190"
+ms.lasthandoff: 05/06/2019
+ms.locfileid: "65135215"
 ---
 # <a name="automate-email-and-add-actions-for-noncompliant-devices-in-intune"></a>Automatizar email e adicionar ações para dispositivos sem conformidade no Intune
 
@@ -103,9 +103,6 @@ Quando você cria uma política de conformidade de dispositivo, o Intune cria au
          - Insira quaisquer **Destinatários adicionais** selecionando grupos
     
     - **Bloquear remotamente um dispositivo fora de conformidade**: quando o dispositivo não estiver em conformidade, bloqueie o dispositivo. Essa ação força o usuário a inserir um PIN ou uma senha para desbloquear o dispositivo. 
-
-    - **Desativar o dispositivo fora de conformidade**: quando o dispositivo não estiver em conformidade, remova todos os dados da empresa do dispositivo e remova-o do gerenciamento do Intune. Para impedir o apagamento acidental de um dispositivo, essa ação dá suporte a um agendamento mínimo de **30** dias.  
-
     
 5. Configurar um **Agendamento**: insira o número de dias (0 a 365) após a não conformidade disparar a ação nos dispositivos dos usuários. Após esse período de carência, será possível impor uma política de acesso condicional. Se você inserir **0** (zero) número de dias, o acesso condicional entrará em vigor **imediatamente**. Por exemplo, será possível bloquear o acesso a recursos corporativos imediatamente se um dispositivo não for compatível.
 

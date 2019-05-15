@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 8c2cac99ba45ccd91629e6db32d91735d90d706e
-ms.sourcegitcommit: 6d6f43d69462f7f8fadc421c4ba566dc6ec20c36
+ms.openlocfilehash: 24e783bc4586709d0cde6a2ebd19c2b5ca30ab6b
+ms.sourcegitcommit: dde4b8788e96563edeab63f612347fa222d8ced0
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62426146"
+ms.lasthandoff: 05/06/2019
+ms.locfileid: "65135113"
 ---
 # <a name="intune-standalone---win32-app-management"></a>Intune autônomo – gerenciamento de aplicativos Win32
 
@@ -142,8 +142,8 @@ As etapas a seguir fornecem diretrizes para ajudar você a adicionar um aplicati
     Por exemplo, se o nome de arquivo do aplicativo for **MyApp123**, adicione o seguinte:<br>
     `msiexec /p “MyApp123.msp”`<p>
     Se o aplicativo for `ApplicationName.exe`, o comando será o nome do aplicativo seguido dos argumentos de comando (opções) compatíveis com o pacote. <br>Por exemplo:<br>
-    `ApplicationName.exe /quite`<br>
-    No comando acima, o pacote `ApplicaitonName.exe` dá suporte ao argumento de comando `/quite`.<p> Para obter os argumentos específicos compatíveis com o pacote de aplicativos, contate o fornecedor do aplicativo.
+    `ApplicationName.exe /quiet`<br>
+    No comando acima, o pacote `ApplicationName.exe` dá suporte ao argumento de comando `/quiet`.<p> Para obter os argumentos específicos compatíveis com o pacote de aplicativos, contate o fornecedor do aplicativo.
 
 3.  Adicione a linha de comando de desinstalação completa para desinstalar o aplicativo com base no GUID do aplicativo. 
 
@@ -282,9 +282,6 @@ Nesta altura, você concluiu as etapas necessárias para adicionar um aplicativo
 ## <a name="app-dependencies"></a>Dependências de aplicativo
 
 As dependências de aplicativo são aplicativos que precisam ser instalados antes que o aplicativo Win32 possa ser instalado. Você pode exigir que outros aplicativos sejam instalados como dependências. Especificamente, o dispositivo precisa instalar os aplicativos dependentes antes de instalar o aplicativo Win32. Há um máximo de 100 dependências, que incluem as dependências das dependências incluídas, bem como o próprio aplicativo. Você poderá adicionar dependências de aplicativo Win32 somente depois que o aplicativo Win32 for adicionado ao Intune e carregado nele. Depois que o aplicativo Win32 for adicionado, você verá a opção **Dependências** na folha do aplicativo Win32. 
-
-> [!NOTE]
-> A funcionalidade de dependência de aplicativo estará disponível somente depois que o agente de Gerenciamento do Intune for atualizado para a versão 1904 (posterior a 1.18.120.0), o que poderá levar a uma ou duas semanas adicionais depois de atualizarmos o serviço para 1904.
 
 Ao adicionar uma dependência de aplicativo, você poderá fazer uma pesquisa com base no nome do aplicativo e no editor. Além disso, você poderá classificar as dependências adicionadas com base no nome do aplicativo e no editor. As dependências de aplicativo adicionadas anteriormente não podem ser selecionadas na lista de dependências de aplicativo adicionadas. 
 
