@@ -6,7 +6,7 @@ keywords: ''
 author: ErikjeMS
 ms.author: erikje
 manager: dougeby
-ms.date: 04/22/2019
+ms.date: 04/25/2019
 ms.topic: conceptual
 ms.prod: ''
 ms.service: microsoft-intune
@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure; get-started
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 6dff7e28daff503570350950b60ae974cd048c5c
-ms.sourcegitcommit: 6d6f43d69462f7f8fadc421c4ba566dc6ec20c36
+ms.openlocfilehash: 401bc833b2b864983ec301972950ffbd04fe2229
+ms.sourcegitcommit: dde4b8788e96563edeab63f612347fa222d8ced0
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62426223"
+ms.lasthandoff: 05/06/2019
+ms.locfileid: "65135179"
 ---
 # <a name="whats-new-in-microsoft-intune"></a>Novidades do Microsoft Intune
 
@@ -46,6 +46,25 @@ Conheça as novidades de cada semana do Microsoft Intune. Encontre também [pró
 -->  
 
 <!-- ########################## -->
+
+## <a name="week-of-may-6-2019"></a>Semana de 6 de maio de 2019 
+
+### <a name="device-configuration"></a>Configuração do dispositivo
+
+#### <a name="network-access-control-nac-support-for-f5-access-for-ios-devices----4500808---"></a>Suporte do NAC (Controle de Acesso à Rede) do F5 Access para dispositivos iOS <!-- 4500808 -->
+
+O F5 lançou uma atualização para BIG-IP 13 que permite funcionalidade NAC no F5 Access em iOS no Intune. Para usar esse recurso:
+
+- Atualize o BIG-IP para a atualização 13.1.1.5. O BIG-IP 14 não é compatível.
+- Integre o BIG-IP com o Intune para NAC. As etapas em [Visão geral: como configurar o APM para verificações de situação do dispositivo com sistemas de gerenciamento de ponto de extremidade](https://support.f5.com/kb/en-us/products/big-ip_apm/manuals/product/apm-client-configuration-7-1-6/6.html#guid-0bd12e12-8107-40ec-979d-c44779a8cc89).
+- Verifique a configuração **Habilitar NAC (controle de acesso de rede)** no perfil de VPN no Intune.
+
+Para ver a configuração disponível, vá para [Definir configurações de VPN em dispositivos iOS](vpn-settings-ios.md).
+
+Aplica-se a: iOS
+
+#### <a name="updated-pfx-certificate-connector-for-microsoft-intune----doc-vso-1521237----"></a>Conector do Certificado PFX atualizado do Microsoft Intune <!-- doc-vso 1521237  -->  
+Lançamos uma atualização para o [conector de certificado PFX para o Microsoft Intune](certficates-pfx-configure.md#whats-new-for-connectors) que reduz o intervalo de sondagem de 5 minutos para 30 segundos.
 
 ## <a name="week-of-april-22-2019"></a>Semana de 22 de abril de 2019
 
@@ -75,7 +94,7 @@ No exemplo a seguir, você verá o detalhamento dos controles do RGPD. A Microso
 A APP (Política de Proteção de Aplicativo) do Intune em dispositivos Android agora usa uma biblioteca de criptografia OpenSSL em conformidade com o FIPS 140-2. Para obter mais informações, confira a seção [criptografia](app-protection-policy-settings-android.md#encryption) de [Configurações da política de proteção de aplicativo do Android no Microsoft Intune](app-protection-policy-settings-android.md).
 
 #### <a name="enable-win32-app-dependencies----2617348----"></a>Habilitar dependências de aplicativo Win32 <!-- 2617348  -->
-Como administrador, você pode exigir que outros aplicativos sejam instalados como dependências antes da instalação do aplicativo Win32. Especificamente, o dispositivo precisa instalar os aplicativos dependentes antes de instalar o aplicativo Win32. No Intune, selecione **Aplicativos cliente** > **Aplicativos** > **Adicionar** para exibir a folha **Adicionar aplicativo**. Selecione **Aplicativo do Windows (Win32)** como o **Tipo de aplicativo**. Depois de adicionar o aplicativo, selecione **Dependências** para adicionar os aplicativos dependentes que precisam ser instalados para que o aplicativo Win32 possa ser instalado. Para obter mais informações, confira [Intune autônomo – gerenciamento de aplicativos Win32](apps-win32-app-management.md). Essa funcionalidade estará disponível somente depois que o agente de Gerenciamento do Intune for atualizado para a versão 1904 (posterior a 1.18.120.0), o que poderá levar a uma ou duas semanas adicionais depois de atualizarmos o serviço para 1904.
+Como administrador, você pode exigir que outros aplicativos sejam instalados como dependências antes da instalação do aplicativo Win32. Especificamente, o dispositivo precisa instalar os aplicativos dependentes antes de instalar o aplicativo Win32. No Intune, selecione **Aplicativos cliente** > **Aplicativos** > **Adicionar** para exibir a folha **Adicionar aplicativo**. Selecione **Aplicativo do Windows (Win32)** como o **Tipo de aplicativo**. Depois de adicionar o aplicativo, selecione **Dependências** para adicionar os aplicativos dependentes que precisam ser instalados para que o aplicativo Win32 possa ser instalado. Para obter mais informações, confira [Intune autônomo – gerenciamento de aplicativos Win32](apps-win32-app-management.md). 
 
 #### <a name="app-version-installation-information-for-microsoft-store-for-business-apps----3537391-----"></a>Informações de instalação de versão do aplicativo para aplicativos da Microsoft Store para Empresas <!-- 3537391   -->
 Os relatórios de instalação de aplicativo incluem informações de versão do aplicativo para aplicativos da Microsoft Store para Empresas. No Intune, selecione **Aplicativos cliente** > **Aplicativos**. Selecione um **aplicativo da Microsoft Store para Empresas** e, em seguida, selecione **Status de instalação do dispositivo** na seção **Monitorar**.
@@ -91,6 +110,9 @@ A página Visão geral do dispositivo mostrará o usuário primário, também ch
 
 #### <a name="additional-managed-google-play-app-reporting-for-android-enterprise-work-profile-devices----4105925----"></a>Relatórios adicionais de aplicativos do Google Play Gerenciado para dispositivos de perfil de trabalho do Android Enterprise <!-- 4105925  -->
 Para aplicativos do Google Play Gerenciado implantados em dispositivos de perfil de trabalho do Android Enterprise, você pode exibir o número de versão específico do aplicativo instalado em um dispositivo. Isso se aplica somente aos aplicativos obrigatórios. A mesma funcionalidade para aplicativos disponíveis será habilitada em uma versão futura. 
+
+#### <a name="ios-third-party-keyboards----4111843-idready-eeready---"></a>Teclados de terceiros para iOS <!-- 4111843 idready eeready -->
+O suporte da APP (política de proteção de aplicativo) do Intune à configuração **Teclados de Terceiros** do iOS será encerrado devido a uma alteração da plataforma iOS. Você não poderá definir essa configuração no Console de Administração do Intune e ela não será imposta no cliente no SDK do Aplicativo do Intune.
 
 ### <a name="device-configuration"></a>Configuração do dispositivo
 
@@ -124,7 +146,7 @@ Para saber mais sobre esse recurso, acesse [Usar e gerenciar dispositivos Androi
 Aplica-se a: Android Enterprise
 
 #### <a name="windows-update-notifications-----3316758-3316782----"></a>Notificações do Windows Update  <!-- 3316758, 3316782  -->
-Adicionamos duas definições de *Configuração da experiência do usuário* às configurações de grupo do Windows Update que você pode gerenciar no console do Intune. Agora você pode:
+Adicionamos duas *Configurações da experiência do usuário* às configurações de grupo do Windows Update que você pode gerenciar no console do Intune. Agora você pode:
 - Bloquear ou permitir que os usuários [verifiquem se há atualizações do Windows](windows-update-settings.md#block-user-from-scanning-for-windows-updates).
 - Gerenciar o [nível de notificação do Windows Update](windows-update-settings.md#windows-update-notification-level) visto pelos usuários.
 
@@ -207,7 +229,7 @@ Agora você pode adicionar marcas de escopo a tokens VPP da Apple. Somente os us
 ### <a name="device-configuration"></a>Configuração do dispositivo
 
 #### <a name="updated-certificate-connectors-----icm-113304612---"></a>Atualização dos conectores de certificado  <!-- ICM 113304612 -->
-Lançamos atualizações para o [Intune Certificate Connector e o Conector de Certificado PFX](certficates-pfx-configure.md#whats-new-for-connectors). As novas versões corrigem vários problemas conhecidos.  
+Lançamos atualizações para o [Intune Certificate Connector e o Conector de Certificado PFX para o Microsoft Intune](certficates-pfx-configure.md#whats-new-for-connectors). As novas versões corrigem vários problemas conhecidos.  
 
 ### <a name="app-management"></a>Gerenciamento de aplicativos
 
@@ -376,7 +398,7 @@ No Intune, selecione **Aplicativos cliente** > **Aplicativos** > "Nome do aplica
 Uma nova tela chamada **Categorias de aplicativo** foi adicionada para melhorar a experiência de navegação e de seleção do aplicativo no Portal da Empresa para Windows 10. Agora os usuários verão os aplicativos classificados em categorias como **Em destaque**, **Educação** e **Produtividade**. Essa alteração é exibida nas versões do Portal da Empresa 10.3.3451.0 e posteriores. Para exibir a nova tela, confira [Novidades da interface do usuário do aplicativo](https://docs.microsoft.com/intune/whats-new-app-ui). Para obter mais informações sobre os aplicativos no Portal da Empresa, confira [Instalar e compartilhar aplicativos em seu dispositivo](/intune-user-help/install-apps-cpapp-windows).  
 
 #### <a name="power-bi-compliance-app----1455231-doc-work-item---"></a>Aplicativo de Conformidade do Power BI <!-- 1455231 doc-work-item -->
-Acesse o Intune Data Warehouse no Power BI Online usando o aplicativo [Conformidade do Intune (Data Warehouse)](https://app.powerbi.com/groups/me/getapps/services/Intune_dw_compliance). Com esse aplicativo do Power BI, agora você pode acessar e compartilhar relatórios pré-criados sem nenhuma configuração e sem sair do navegador da Web. Para obter mais informações, confira [Log de alterações – aplicativo de Conformidade do Power BI](reports-changelog.md#power-bi-compliance-app).
+Acesse o Intune Data Warehouse no Power BI Online usando o aplicativo [Conformidade do Intune (Data Warehouse)](https://aka.ms/intune/datawarehouseapi/getpowerbiapp). Com esse aplicativo do Power BI, agora você pode acessar e compartilhar relatórios pré-criados sem nenhuma configuração e sem sair do navegador da Web. Para obter mais informações, confira [Log de alterações – aplicativo de Conformidade do Power BI](reports-changelog.md#power-bi-compliance-app).
 
 
 ### <a name="device-configuration"></a>Configuração do dispositivo

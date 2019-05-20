@@ -17,12 +17,12 @@ ms.reviewer: shpate
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: a18c579853b162024aaa93d5dad2bfd854d8c0d2
-ms.sourcegitcommit: 143dade9125e7b5173ca2a3a902bcd6f4b14067f
+ms.openlocfilehash: 52b92483ddafadf460911caaa472825a0bc0a20f
+ms.sourcegitcommit: b4483c8476a209de83102e8993d8074dbb323493
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "61512916"
+ms.lasthandoff: 05/10/2019
+ms.locfileid: "65527213"
 ---
 # <a name="monitor-bitlocker-and-device-encryption"></a>Monitorar a criptografia BitLocker e do dispositivo  
 O Intune oferece um local centralizado para identificar o status de criptografia dos seus dispositivos Windows 10 e ajuda você a acessar informações importantes para o BitLocker nos seus dispositivos, conforme encontrado no Azure AD (Azure Active Directory).  
@@ -60,7 +60,7 @@ Quando você seleciona um dispositivo, o Intune exibe o painel **Status de cript
 
 O painel fornece os seguintes detalhes:  
 - **Nome do dispositivo** – o nome do dispositivo que você está exibindo.  
-- **Preparação para a criptografia** – uma avaliação de preparação dos dispositivos para dar suporte à criptografia BitLocker. Um dispositivo pode ter um Status de criptografia de *Criptografado* mesmo que seja a preparação para a criptografia *Não esteja pronta*, porque ela não tem um TPM. (Confira Preparação da criptografia na seção anterior para saber mais.)
+- **Preparação para a criptografia** – uma avaliação de preparação dos dispositivos para dar suporte à criptografia BitLocker. Um dispositivo pode ter um Status de criptografia de *Criptografado* mesmo que seja a preparação para a criptografia *Não esteja pronta*, porque ela não tem um TPM. (Confira a preparação da criptografia na seção anterior para obter mais detalhes.)
 - **Status da criptografia** – Se a unidade do sistema operacional é criptografada.  
 - **Perfis** – Uma lista dos perfis *Configuração do dispositivo* que se aplicam a este dispositivo e incluem o tipo e as configurações do perfil a seguir:  
   - Tipo de perfil = *Endpoint Protection*  
