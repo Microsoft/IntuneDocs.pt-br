@@ -19,14 +19,14 @@ ms.suite: ems
 ms.custom: intune-enduser
 ms.collection: M365-identity-device-management
 ms.openlocfilehash: 2fe8a765bdb11d0b94dbbb7519360c6e7a01e8ce
-ms.sourcegitcommit: 25e6aa3bfce58ce8d9f8c054bc338cc3dff4a78b
+ms.sourcegitcommit: 143dade9125e7b5173ca2a3a902bcd6f4b14067f
 ms.translationtype: MTE75
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "55837570"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "61501231"
 ---
 # <a name="troubleshoot-your-windows-10-device-enrollment"></a>Solucionar problemas de registro de dispositivo do Windows 10
-Se você tiver registrado seu dispositivo, mas ainda não consegue acessar seu email da escola e arquivos corporativos ou, tente estas etapas de solução de problemas.  
+Se você registrou seu dispositivo, mas ainda não pode acessar seus arquivos ou seu email corporativo ou de estudante, experimente estas etapas de solução de problemas.  
 
 1.  Examine as duas próximas telas e localize a que é semelhante ao que você vê em seu dispositivo. Siga as etapas fornecidas com a tela que você vê em seu dispositivo.
 
@@ -48,13 +48,13 @@ Se você tiver registrado seu dispositivo, mas ainda não consegue acessar seu e
 
      ![validate-successful-enrollment](./media/w10-enroll-rs1-validate-successful-enrollment.png)
 
-   - Se você não vir as informações de conexão mostradas acima, ou você vê-lo, mas não tem algumas das opções, toque em **Connect**. Entre com as suas credenciais corporativas ou de estudante para se conectar.  
+   - Se você não vir as informações de conexão mostradas acima ou se as vir, mas com algumas opções ausentes, toque em **Conectar**. Entre com as suas credenciais corporativas ou de estudante para se conectar.  
 
 ## <a name="troubleshooting-steps-to-follow-if-you-see-your-account"></a>Etapas de solução de problemas a serem seguidas se você vir “Sua conta”
 
 Se tiver seguido as etapas acima, mas não conseguir acessar seu email corporativo ou de estudante, arquivos e outros dados, volte para **Contas** e toque em **Acesso corporativo**.
 
-- Se você ver seu trabalho ou escola conta listada, você está conectado.  
+- Se você vir sua conta corporativa ou de estudante listada, você estará conectado.  
 
 - Se você não ver a sua conta do trabalho ou de estudante, toque em **Conectar** e entre com as suas credenciais corporativas ou de estudante.
 

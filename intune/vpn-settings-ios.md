@@ -5,7 +5,7 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 11/6/2018
+ms.date: 04/25/2019
 ms.topic: reference
 ms.prod: ''
 ms.service: microsoft-intune
@@ -15,12 +15,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: d914ea9bffe9485d2e37f8ede4d168f597f9e200
-ms.sourcegitcommit: 25e6aa3bfce58ce8d9f8c054bc338cc3dff4a78b
+ms.openlocfilehash: c40146f37ff6477663dc63468d1081a73ac2544a
+ms.sourcegitcommit: dde4b8788e96563edeab63f612347fa222d8ced0
 ms.translationtype: MTE75
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57565920"
+ms.lasthandoff: 05/06/2019
+ms.locfileid: "65135148"
 ---
 # <a name="configure-vpn-settings-on-ios-devices-in-microsoft-intune"></a>Definir configurações de VPN em dispositivos iOS no Microsoft Intune
 
@@ -42,7 +42,7 @@ Selecione o tipo de conexão VPN na lista de fornecedores a seguir:
 - **Cisco (IPsec)**
 - **Citrix VPN**
 - **SSO da Citrix**
-- **Zscaler**: exige que você integre o ZPA (Zscaler Private Access) à sua conta do Azure AD. Para obter etapas detalhadas, confira a [Documentação do Zscaler](https://help.zscaler.com/zpa/configuration-example-microsoft-azure-ad#Azure_UserSSO). 
+- **Zscaler**: para usar o acesso condicional ou permitir que os usuários ignorem a tela de entrada do Zscaler, é necessário integrar o ZPA (Acesso Privado do Zscaler) à sua conta do Azure AD. Para obter etapas detalhadas, confira a [Documentação do Zscaler](https://help.zscaler.com/zpa/configuration-example-microsoft-azure-ad#Azure_UserSSO). 
 - **VPN personalizado**
 
 > [!NOTE]
@@ -67,22 +67,31 @@ As configurações mostradas na lista a seguir são determinadas pelo tipo de co
 
 - **Túnel dividido**: **Habilite** ou **Desabilite** para permitir que os dispositivos decidam qual conexão usar dependendo do tráfego. Por exemplo, um usuário em um hotel usa a conexão VPN para acessar arquivos de trabalho, mas utiliza a rede padrão do hotel para navegação regular na Web.
 
-- **Identificador de VPN** (VPN personalizada, Zscaler e Citrix): um identificador do aplicativo de VPN que você está usando, fornecido pelo seu provedor de VPN.
+- **Identificador de VPN** (VPN personalizada, Zscaler e Citrix): um identificador do aplicativo de VPN que você está usando e é fornecido pelo seu provedor de VPN.
   - **Inserir pares chave-valor para os atributos de VPN personalizados**: adicione ou importe as **Chaves** e os **Valores** que personalizam sua conexão VPN. Lembre-se de que esses valores geralmente são fornecidos pelo seu provedor de VPN.
 
-- **Habilitar o controle de acesso à rede (NAC)** (somente Citrix SSO): quando você escolhe **Concordo**, a ID do dispositivo é incluída no perfil da VPN. Essa ID pode ser usada para autenticação da VPN para permitir ou impedir o acesso à rede.
+- **Habilitar o NAC (controle de acesso à rede)** (Citrix SSO, Acesso por F5): quando você escolhe **Concordo**, a ID do dispositivo é incluída no perfil da VPN. Essa ID pode ser usada para autenticação da VPN para permitir ou impedir o acesso à rede.
+
+  **Ao usar o Acesso por F5**:
+
+  - Confirme se você está usando F5 BIG-IP 13.1.1.5. O BIG-IP 14 não é compatível.
+  - Integre o BIG-IP ao Intune para NAC. Confira o guia do F5 [Overview: Configuring APM for device posture checks with endpoint management systems](https://support.f5.com/kb/en-us/products/big-ip_apm/manuals/product/apm-client-configuration-7-1-6/6.html#guid-0bd12e12-8107-40ec-979d-c44779a8cc89) (Visão geral: como configurar o APM para verificações de postura do dispositivo com sistemas de gerenciamento de ponto de extremidade).
+  - Habilite o NAC no perfil da VPN.
 
   **Ao usar o Citrix SSO com Gateway**, lembre-se de:
 
   - Confirmar se você está usando o Citrix Gateway 12.0.59 ou superior.
   - Confirmar se os usuários têm o SSO do Citrix 1.1.6 ou posterior instalado em seus dispositivos.
-  - Integrar o Citrix Gateway com o Intune para NAC, como descrito em [Integração do Microsoft Intune/Enterprise Mobility + Security E3 com NetScaler (Cenário LDAP+OTP)](https://www.citrix.com/content/dam/citrix/en_us/documents/guide/integrating-microsoft-intune-enterprise-mobility-suite-with-netscaler.pdf) no guia de implantação do Citrix.
+  - Integre o Citrix Gateway ao Intune para NAC. Confira o guia de implantação do Citrix [Como integrar o Microsoft Intune/Enterprise Mobility Suite com NetScaler (Cenário LDAP+OTP)](https://www.citrix.com/content/dam/citrix/en_us/documents/guide/integrating-microsoft-intune-enterprise-mobility-suite-with-netscaler.pdf).
   - Habilite o NAC no perfil da VPN.
 
-  Detalhes importantes:  
+  **Detalhes importantes**:  
 
-  - Quando o NAC estiver habilitado, a VPN será desconectada a cada 24 horas.
-  - A ID do dispositivo faz parte do perfil, mas não pode ser vista no Intune. Essa ID não é armazenada em nenhum lugar pela Microsoft e não é compartilhada pela Microsoft. Depois que isso tiver suporte dos parceiros VPN, o cliente VPN, como SSO Citrix, poderá obter a ID e consultar o Intune para confirmar se o dispositivo está registrado e se o perfil de VPN está ou não em conformidade.
+  - Quando o NAC estiver habilitado, a VPN será desconectada a cada 24 horas. A VPN pode ser reconectada imediatamente.
+  - A ID do dispositivo faz parte do perfil, mas não é mostrada no Intune. Essa ID não é armazenada em nenhum lugar pela Microsoft e não é compartilhada pela Microsoft.
+
+  Quando a ID do dispositivo é compatível com parceiros de VPN, o cliente VPN, como Citrix SSO, pode obtê-la. Em seguida, ela poderá consultar o Intune para confirmar se o dispositivo está registrado e se o perfil de VPN está em conformidade ou não.
+
   - Para remover essa configuração, recrie o perfil e não selecione **Eu concordo**. Em seguida, reatribua o perfil.
 
 ## <a name="automatic-vpn-settings"></a>Configurações automáticas de VPN
@@ -92,10 +101,10 @@ As configurações mostradas na lista a seguir são determinadas pelo tipo de co
   - Ao usar um perfil **VPN para cada aplicativo** iOS com o Pulse Secure ou com uma VPN personalizada, opte por usar o túnel de camada de aplicativo (proxy de aplicativo) ou o túnel no nível do pacote (túnel de pacote). Defina o valor de **ProviderType** como **app-proxy** para o túnel de camada de aplicativo ou como **packet-tunnel** para o túnel de camada de pacote. Se você não tiver certeza de qual valor usar, verifique a documentação do seu provedor VPN.
   - **URLs do Safari que dispararão esta VPN**: adicione uma ou mais URLs de site. Quando essas URLs forem acessadas usando o navegador Safari no dispositivo, a conexão VPN será estabelecida automaticamente.
 
-- **VPN sob demanda**: configure regras condicionais que controlem quando a conexão VPN é iniciada. Por exemplo, crie uma condição em que a conexão VPN é usada somente quando um dispositivo não está conectado a uma rede Wi-Fi da empresa. Ou crie uma condição em que, se um dispositivo não puder acessar um domínio de pesquisa DNS inserido, a conexão VPN não será iniciada.
+- **VPN sob demanda**: configure regras condicionais que controlem quando a conexão VPN é iniciada. Por exemplo, crie uma condição em que a conexão VPN é usada somente quando um dispositivo não está conectado a uma rede Wi-Fi da empresa. Ou crie uma condição. Por exemplo, se um dispositivo não puder acessar um domínio de pesquisa DNS, a conexão VPN não será iniciada.
 
   - **Domínios de pesquisa de DNS ou SSIDs**: selecione se essa condição usa **SSIDs** de rede sem fio ou **domínios de pesquisa de DNS**. Escolha **Adicionar** para configurar um ou mais SSIDs ou domínios de pesquisa.
-  - **Investigação de cadeia de caracteres de URL**: opcional. Insira uma URL que a regra use como teste. Se o dispositivo com esse perfil acessar essa URL sem redirecionamento, a conexão VPN será iniciada. E o dispositivo se conectará à URL de destino. O usuário não verá o site da investigação de cadeia de caracteres da URL. Um exemplo de uma investigação de cadeia de caracteres de URL é o endereço de um servidor Web de auditoria que verifica a conformidade do dispositivo antes da conexão com a VPN. Outra possibilidade é que a URL teste a capacidade da VPN de conectar-se a um site, antes de conectar o dispositivo à URL de destino por meio da VPN.
+  - **Investigação de cadeia de caracteres de URL**: opcional. Insira uma URL que a regra use como teste. Se o dispositivo com este perfil acessar esta URL sem redirecionamento, então a conexão VPN será iniciada. E o dispositivo se conectará à URL de destino. O usuário não verá o site da investigação de cadeia de caracteres da URL. Um exemplo de uma investigação de cadeia de caracteres de URL é o endereço de um servidor Web de auditoria que verifica a conformidade do dispositivo antes da conexão com a VPN. Outra possibilidade é que a URL teste a capacidade da VPN de conectar-se a um site, antes de conectar o dispositivo à URL de destino por meio da VPN.
   - **Ação de domínio**: escolha um dos seguintes itens:
     - Conectar se necessário
     - Nunca conectar

@@ -1,11 +1,11 @@
 ---
 title: Configurações de dispositivo do Android Enterprise no Microsoft Intune – Azure | Microsoft Docs
-description: Em dispositivos com Android Enterprise ou Android for Work, restrinja algumas configurações no dispositivo, como copiar e colar, mostrar notificações, permissões de aplicativo, compartilhamento de dados, tamanho de senha, falhas de entrada, usar impressão digital para desbloquear, reutilizar senhas e habilitar o compartilhamento de contatos de trabalho por Bluetooth. Configure dispositivos como um quiosque de um dispositivo dedicado para executar um aplicativo ou em vários aplicativos.
+description: Em dispositivos com Android Enterprise ou Android for Work, restrinja algumas configurações no dispositivo, como copiar e colar, mostrar notificações, permissões de aplicativo, compartilhamento de dados, tamanho de senha, falhas de entrada, usar impressão digital para desbloquear, reutilizar senhas e habilitar o compartilhamento de contatos de trabalho por Bluetooth. Configure dispositivos como um quiosque de dispositivos dedicados para executar um ou vários aplicativos.
 keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 02/20/2019
+ms.date: 04/10/2019
 ms.topic: reference
 ms.prod: ''
 ms.service: microsoft-intune
@@ -15,12 +15,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure, seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 493a5be89e747c2de1eca3a63907b79228fcdfa2
-ms.sourcegitcommit: aab39bf86707ccaef45fd6527fff4f1c89336710
-ms.translationtype: MTE75
+ms.openlocfilehash: 4840ccac35f37e956c363a1f6103da623ef27782
+ms.sourcegitcommit: 143dade9125e7b5173ca2a3a902bcd6f4b14067f
+ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/25/2019
-ms.locfileid: "58429747"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "61505770"
 ---
 # <a name="android-enterprise-device-settings-to-allow-or-restrict-features-using-intune"></a>Configurações do dispositivo do Android Enterprise para permitir ou restringir os recursos usando o Intune
 
@@ -65,32 +65,24 @@ Este artigo lista e descreve as diferentes configurações que você pode contro
 
   **Não configurado** impede que os usuários ativem o recurso de hachura de escape de rede no dispositivo.
 
-- **Permitir instalação de fontes desconhecidas**: escolha **Permitir** para que os usuários possam ativar as **Fontes desconhecidas**. Essa configuração permite que os aplicativos sejam instalados de fontes desconhecidas. **Não configurado** impede que os usuários ativem as **Fontes desconhecidas**.
 - **Atualização do sistema**: escolha uma opção para definir como o dispositivo trata as atualizações over-the-air:
   - **Padrão do dispositivo**: usar a configuração padrão do dispositivo.
   - **Automático**: as atualizações são instaladas automaticamente sem interação do usuário. A configuração dessa política instala imediatamente todas as atualizações pendentes.
   - **Adiado**: as atualizações são adiadas por 30 dias. Após 30 dias o Android solicita ao usuário a instalação da atualização. É possível que os fabricantes de dispositivos ou operadoras impeçam que as atualizações de segurança importantes (isenção) sejam adiadas. Uma atualização isenta mostra uma notificação do sistema para o usuário no dispositivo. 
   - **Janela de manutenção**: instala as atualizações automaticamente durante uma janela de manutenção diária definida no Intune. A instalação ocorre diariamente por 30 dias, e pode falhar devido a espaço insuficiente ou aos níveis de bateria. Após 30 dias, o Android solicita ao usuário a instalação. Essa janela também é usada para instalar atualizações de aplicativos do Play. Use essa opção para dispositivos dedicados, como quiosques, pois é possível atualizar aplicativos de primeiro plano em dispositivos dedicados de aplicativo único.
-- **Atualizações automáticas do aplicativo**: escolha quando as atualizações automáticas são instaladas. Suas opções:
-  - **Não configurado**
-  - **Escolha do usuário**
-  - **Nunca**
-  - **Somente Wi-Fi**
-  - **Sempre**
 
 - **Janelas de notificação**: quando essa opção é definida como **Desabilitar**, as notificações de janela, incluindo notificações do sistema, chamadas de entrada, chamadas de saída, alertas do sistema e erros do sistema, não são mostradas no dispositivo. Quando essa opção é definida como **Não configurado**, o padrão do sistema operacional é usado, que poderá ser mostrar as notificações.
 - **Ignorar dicas de primeiro uso**: escolha **Habilitar** para ocultar ou ignorar as sugestões de aplicativos para percorrer os tutoriais ou ler dicas de introdução quando o aplicativo é iniciado. Quando essa opção é definida como **Não configurado**, o padrão do sistema operacional é usado, que poderá ser mostrar essas sugestões quando o aplicativo for iniciado.
 
-
 ### <a name="system-security-settings"></a>Configurações de segurança do sistema
 
-- **Examinar ameaças em aplicativos**: **Obrigatório** garante que a configuração **Verificar aplicativos** esteja habilitada para perfis pessoais e corporativos.
+- **Verificação de ameaças em aplicativos**: **Exigir** (padrão) permite que o Google Play Protect verifique os aplicativos antes e após a instalação. Se ela detectar uma ameaça, poderá avisar o usuário para remover o aplicativo do dispositivo. **Não configurado** não habilita nem executa o Google Play Protect para verificar os aplicativos.
 
-### <a name="dedicated-device-settings"></a>Configurações de dispositivo dedicado
+### <a name="dedicated-device-settings"></a>Configurações do dispositivo dedicado
 
-Use essas configurações para configurar uma experiência de estilo de quiosque em seus dispositivos dedicados. É possível configurar um dispositivo para executar um ou vários aplicativos. Quando um dispositivo está no modo de quiosque, somente os aplicativos que você adiciona ficam disponíveis. Essas configurações se aplicam a dispositivos Android Enterprise dedicado. Eles não se aplicam a dispositivos Android Enterprise totalmente gerenciado.
+Use essas configurações para definir uma experiência de estilo de quiosque em seus dispositivos dedicados. É possível configurar um dispositivo para executar um ou vários aplicativos. Quando um dispositivo está no modo de quiosque, somente os aplicativos que você adiciona ficam disponíveis. Essas configurações aplicam-se a dispositivos dedicados com Android Enterprise. Elas não se aplicam a dispositivos totalmente gerenciados com Android Enterprise.
 
-**Modo de quiosque**: escolha se o dispositivo executa um aplicativo ou vários aplicativos.
+**Modo de quiosque**: escolha se o dispositivo executa um ou vários aplicativos.
 
 - **Aplicativo individual**: os usuários só podem acessar um único aplicativo no dispositivo. Quando o dispositivo inicia, somente o aplicativo específico é exibido. Os usuários são impedidos de abrir novos aplicativos e alterar o aplicativo em execução.
 
@@ -122,25 +114,58 @@ Use essas configurações para configurar uma experiência de estilo de quiosque
     1. Continue para selecionar o botão voltar até que o botão "Sair do quiosque" apareça. 
     2. Selecione o botão e insira o PIN de **Sair do código do modo de quiosque**.
     3. Ao terminar de fazer as alterações, selecione o aplicativo **Tela Inicial Gerenciada**. Esta etapa bloqueia novamente o dispositivo no modo de quiosque de vários aplicativos. 
-    
+
     **Desabilitar** não oferece a capacidade de pausar o modo de quiosque. Se o administrador continua selecionando o botão voltar e seleciona o botão "Sair do quiosque", uma mensagem pede uma senha.
-    
+
     - **Sair do código do modo de quiosque**: insira um PIN numérico de 4 a 6 dígitos. O administrador usa esse PIN para pausar temporariamente o modo de quiosque.
- 
+
   - **Definir a tela de fundo da URL personalizada**: insira uma URL para personalizar a tela de fundo no dispositivo dedicado.
+    
+    > [!NOTE]
+    > Na maioria dos casos, é recomendável iniciar com imagens com pelo menos os seguintes tamanhos:
+    >
+    > - Celular: 1080x1920 px
+    > - Tablet: 1920x1080 px
+    >    
+    > Para obter a melhor experiência e detalhes nítidos, sugere-se que os ativos de imagem por dispositivo sejam criados de acordo com as especificações de exibição.
+    >
+    > Exibições modernas têm densidades de pixel mais altas e podem exibir imagens de definição 2K/4K equivalentes.
+  - **Configuração de Wi-Fi**: escolha **Habilitar** para permitir que os usuários finais conectem o dispositivo a diferentes redes Wi-Fi. Habilitar esse recurso também ativa a localização do dispositivo. **Não configurado** (padrão) impede que os usuários se conectem a redes Wi-Fi enquanto estão na Tela Inicial Gerenciada (modo de tarefa de bloqueio).
+
+    Mais sobre [modo de tarefa de bloqueio](https://developer.android.com/work/dpc/dedicated-devices/lock-task-mode) (abre o site do Android).
+
+  - **Configuração de Bluetooth**: escolha **Habilitar** para permitir Bluetooth no dispositivo e que os usuários finais emparelhem dispositivos por Bluetooth. Habilitar esse recurso também ativa a localização do dispositivo. **Não configurado** (padrão) impede que os usuários configurem o Bluetooth e emparelhem dispositivos enquanto estão na Tela Inicial Gerenciada (modo de tarefa de bloqueio). 
+
+    Mais sobre [modo de tarefa de bloqueio](https://developer.android.com/work/dpc/dedicated-devices/lock-task-mode) (abre o site do Android).
 
 ### <a name="device-password-settings"></a>Configurações de senha do dispositivo
 
-- **Keyguard**: escolha **Desabilitar** para impedir que os usuários usem o recurso de tela de bloqueio Keyguard no dispositivo. **Não configurado** permite o uso dos recursos de Keyguard.
-- **Desabilitado keyguard recursos**: quando keyguard está habilitado no dispositivo, escolha quais recursos para desabilitar. Por exemplo, quando a **Câmera segura** estiver marcada, o recurso de câmera estará desabilitado no dispositivo. Os recursos não marcados estão habilitados no dispositivo.
+- **Desabilitar tela de bloqueio**: escolha **Desabilitar** para impedir que os usuários usem o recurso de tela de bloqueio Keyguard no dispositivo. **Não configurado** permite o uso dos recursos de Keyguard.
+- **Recursos da tela de bloqueio desabilitados**: quando o Keyguard estiver habilitado no dispositivo, escolha quais recursos desabilitar. Por exemplo, quando a **Câmera segura** estiver marcada, o recurso de câmera estará desabilitado no dispositivo. Os recursos não marcados estão habilitados no dispositivo.
+
+  Esses recursos estão disponíveis para os usuários quando o dispositivo está bloqueado. Os usuários não verão nem acessarão recursos verificados.
+
 - **Tipo de senha necessária**: defina o tipo de senha necessária para o dispositivo. Suas opções:
-  - **Pelo menos, numérico**
-  - **Complexo numérico**: números repetidos ou consecutivos, como "1111" ou "1234", não são permitidos.
-  - **Pelo menos, alfabético**
-  - **Pelo menos, alfanumérico**
-  - **Pelo menos alfanumérico com símbolos**
-- **Comprimento mínimo da senha**: insira o comprimento mínimo da senha que um usuário deve inserir (entre 4 e 16 caracteres).
-- **Número de falhas de entrada antes de apagar o dispositivo**: insira quantas falhas podem ocorrer antes de o dispositivo ser apagado (entre 1 e 11).
+  - **Padrão do dispositivo**
+  - **Senha obrigatória, sem restrições**
+  - **Biometria fraca**: [Biometria forte vs. fraca](https://android-developers.googleblog.com/2018/06/better-biometrics-in-android-p.html) (abre o site do Android)
+  - **Numérica**: a senha só deve conter números, como `123456789`. Insira o **comprimento mínimo da senha** que um usuário deve digitar, entre 4 e 16 caracteres.
+  - **Complexo numérico**: números repetidos ou consecutivos, como "1111" ou "1234", não são permitidos. Insira o **comprimento mínimo da senha** que um usuário deve digitar, entre 4 e 16 caracteres.
+  - **Alfabética**: as letras do alfabeto são obrigatórias. Números e símbolos não são obrigatórios. Insira o **comprimento mínimo da senha** que um usuário deve digitar, entre 4 e 16 caracteres.
+  - **Alfanumérica**: inclui letras maiúsculas, letras minúsculas e caracteres numéricos. Insira o **comprimento mínimo da senha** que um usuário deve digitar, entre 4 e 16 caracteres.
+  - **Alfanumérica com símbolos**: inclui letras maiúsculas, letras minúsculas, caracteres numéricos, sinais de pontuação e símbolos. Insira também:
+
+    - **Comprimento máximo da senha**: insira o comprimento máximo que uma senha deve ter, entre 4 e 16 caracteres.
+    - **Número de caracteres obrigatórios**: insira o número de caracteres que a senha deve ter, entre 0 e 16 caracteres.
+    - **Número de caracteres minúsculos obrigatórios**: insira o número de caracteres minúsculos que a senha deve ter, entre 0 e 16 caracteres.
+    - **Número de caracteres maiúsculos obrigatórios**: insira o número de caracteres maiúsculos que a senha deve ter, entre 0 e 16 caracteres.
+    - **Número de caracteres diferentes de letras obrigatórios**: insira o número de caracteres diferentes de letras (qualquer coisa diferente de letras do alfabeto) que a senha deve ter, entre 0 e 16 caracteres.
+    - **Número de caracteres numéricos obrigatórios**: insira o número de caracteres numéricos (`1`, `2`, `3` e assim por diante) que a senha deve ter, entre 0 e 16 caracteres.
+    - **Número de caracteres de símbolo obrigatórios**: insira o número de caracteres de símbolo (`&`, `#`, `%` e assim por diante) que a senha deve ter, entre 0 e 16 caracteres.
+
+- **Número de dias até que a senha expire**: insira o número de dias, entre 1 e 365, até que a senha do dispositivo precise ser alterada. Por exemplo, para alterar a senha após 60 dias, insira `60`. Quando a senha expirar, o usuário deverá criar uma.
+- **Número de senhas obrigatórias antes que o usuário possa reutilizar uma senha**: insira o número de senhas recentes que não podem ser utilizadas, entre 1 e 24. Use essa configuração para impedir que o usuário crie senhas usadas anteriormente.
+- **Número de falhas de entrada antes de apagar o dispositivo**: insira o número, entre 4 e 11, de entradas com falha para permitir que o dispositivo seja apagado.
 
 ### <a name="power-settings"></a>Configurações da energia
 
@@ -152,6 +177,17 @@ Use essas configurações para configurar uma experiência de estilo de quiosque
 - **Adicionar novos usuários**: escolha **Bloquear** para impedir que os usuários adicionem novos usuários. Cada usuário tem um espaço pessoal no dispositivo para personalização da tela inicial, contas, aplicativos e configurações. **Não configurado** permite que os usuários adicionem outros usuários ao dispositivo.
 - **Remoção de usuário**: escolha **Bloquear** para impedir que os usuários removam usuários. **Não configurado** permite que os usuários removam outros usuários do dispositivo.
 - **Alterações de conta**: escolha **Bloquear** para impedir que os usuários modifiquem as contas. **Não configurado** permite que os usuários atualizem contas de usuário no dispositivo.
+
+### <a name="applications"></a>Aplicativos
+
+- **Permitir instalação de fontes desconhecidas**: escolha **Permitir** para que os usuários possam ativar **Fontes desconhecidas**. Essa configuração permite aplicativos instalados de fontes desconhecidas, incluindo fontes diferentes da Google Play Store. **Não configurado** impede que os usuários ativem as **Fontes desconhecidas**.
+- **Permitir acesso a todos os aplicativos na Google Play Store**: quando definido como **Permitir**, os usuários têm acesso a todos os aplicativos na Google Play Store. Eles não têm acesso aos aplicativos que o administrador bloqueia nos [Aplicativos cliente](apps-add-android-for-work.md). **Não configurado** força os usuários a acessar apenas os aplicativos que o administrador torna disponível na Google Play Store ou os aplicativos necessários nos [Aplicativos cliente](apps-add-android-for-work.md).
+- **Atualizações automáticas do aplicativo**: escolha quando as atualizações automáticas são instaladas. Suas opções:
+  - **Não configurado**
+  - **Escolha do usuário**
+  - **Nunca**
+  - **Somente Wi-Fi**
+  - **Sempre**
 
 ### <a name="connectivity"></a>Conectividade
 
