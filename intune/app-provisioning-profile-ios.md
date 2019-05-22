@@ -1,15 +1,16 @@
 ---
 title: Perfis de provisionamento de aplicativo iOS no Microsoft Intune
-titlesuffix: ''
+titleSuffix: ''
 description: O Intune fornece as ferramentas para atribuir de forma proativa um novo perfil de provisionamento a dispositivos que têm aplicativos que estão se aproximando da expiração.
 keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 11/19/2018
+ms.date: 04/08/2019
 ms.topic: conceptual
 ms.prod: ''
 ms.service: microsoft-intune
+ms.localizationpriority: high
 ms.technology: ''
 ms.assetid: bbc3ba4a-df48-4aeb-988b-69a177764e3a
 ms.reviewer: mghadial
@@ -17,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 4f02e4416f68fef7531f6d6ffa617273904b752c
-ms.sourcegitcommit: cb93613bef7f6015a4c4095e875cb12dd76f002e
+ms.openlocfilehash: 888c136934deca80877d75879e270807af194a1e
+ms.sourcegitcommit: 364a7dbc7eaa414c7a9c39cf53eb4250e1ad3151
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/02/2019
-ms.locfileid: "57233841"
+ms.lasthandoff: 04/09/2019
+ms.locfileid: "59569552"
 ---
 # <a name="use-ios-app-provisioning-profiles-to-prevent-your-apps-from-expiring"></a>Usar os perfis de provisionamento de aplicativo iOS para impedir que os aplicativos expirem
 
@@ -51,7 +52,7 @@ Como administrador, você pode incluir e excluir grupos de segurança para atrib
 3. No painel **Criar perfil**, configure os valores a seguir:
     - **Nome** – forneça um nome para essa política de perfil de provisionamento móvel.
     - **Descrição** – de maneira opcional, forneça uma descrição para a política.
-    - **Carregar arquivo de perfil** – escolha **Importar** e selecione um arquivo de Perfil de Configuração Móvel da Apple (com a extensão `.mobileprovision`) que você baixou do site do Desenvolvedor da Apple.
+    - **Carregar arquivo de perfil**: escolha o ícone **Abrir** e selecione um arquivo de Perfil de Configuração Móvel da Apple (com a extensão `.mobileprovision`) que você baixou do [site do Desenvolvedor da Apple](https://developer.apple.com/).
 4. Ao terminar, escolha **Criar**.
 
 ## <a name="next-steps"></a>Próximas etapas

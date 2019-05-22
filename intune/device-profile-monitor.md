@@ -6,21 +6,23 @@ author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
 ms.date: 06/25/2018
-ms.topic: article
+ms.topic: conceptual
 ms.prod: ''
 ms.service: microsoft-intune
+ms.localizationpriority: high
 ms.technology: ''
 ms.assetid: 9deaed87-fb4b-4689-ba88-067bc61686d7
 ms.reviewer: heenamac
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: dc3a9620532951bd78e545e87b0d43dd6be3efe5
-ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.collection: M365-identity-device-management
+ms.openlocfilehash: 786cd6e7d0acaeb6e78035d8ec580c30d29d09e7
+ms.sourcegitcommit: 25e6aa3bfce58ce8d9f8c054bc338cc3dff4a78b
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52186589"
+ms.lasthandoff: 03/14/2019
+ms.locfileid: "57391720"
 ---
 # <a name="monitor-device-profiles-in-microsoft-intune"></a>Monitorar perfis de dispositivo no Microsoft Intune
 
@@ -65,9 +67,9 @@ Depois de criar o perfil do seu dispositivo, o Intune fornece gráficos. Esses g
 
 5. De volta à lista **Perfis**, selecione um perfil específico. Você também pode alterar as propriedades existentes:
   - **Propriedades**: altere o nome ou atualize quaisquer configurações existentes.
-  - **Atribuições de**: inclua ou exclua dispositivos aos quais a política deve ser aplicada. Escolha **Grupos Selecionados** para escolher grupos específicos.
-  - **Status do dispositivo**: são listados os dispositivos atribuídos ao perfil, e mostra se o perfil é implantado com êxito. Você pode selecionar um dispositivo específico para obter mais detalhes, incluindo os aplicativos instalados.
-  - **Status do usuário**: lista os nomes de usuários com dispositivos afetados por esse perfil e se o perfil foi implantado com êxito. Você pode selecionar um usuário específico para obter ainda mais detalhes.
+  - **Atribuições**: inclua ou exclua dispositivos aos quais a política deve ser aplicada. Escolha **Grupos Selecionados** para escolher grupos específicos.
+  - **Status do dispositivo**: São listados os dispositivos atribuídos ao perfil, e mostra se o perfil é implantado com êxito. Você pode selecionar um dispositivo específico para obter mais detalhes, incluindo os aplicativos instalados.
+  - **Status de usuário**: lista os nomes de usuários com dispositivos afetados por esse perfil e se o perfil foi implantado com êxito. Você pode selecionar um usuário específico para obter ainda mais detalhes.
   - **Status por configuração**: filtra a saída mostrando as configurações individuais dentro do perfil e mostra se a configuração foi aplicada com êxito.
 
 ## <a name="view-conflicts"></a>Exibir conflitos

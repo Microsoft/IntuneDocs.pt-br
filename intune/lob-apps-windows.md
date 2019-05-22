@@ -1,15 +1,16 @@
 ---
 title: Adicionar um aplicativo de linha de negócios do Windows ao Microsoft Intune
-titlesuffix: ''
+titleSuffix: ''
 description: Saiba como adicionar aplicativos de linha de negócios (LOB) do Windows usando o Microsoft Intune.
 keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 02/28/2019
+ms.date: 04/10/2019
 ms.topic: conceptual
 ms.prod: ''
 ms.service: microsoft-intune
+ms.localizationpriority: high
 ms.technology: ''
 ms.assetid: f81c5f82-5cfa-4b97-9f73-d6cf77c06896
 ms.reviewer: mghadial
@@ -17,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 7776c1bddb459347679cb4aea3bc4e14e05e1418
-ms.sourcegitcommit: cb93613bef7f6015a4c4095e875cb12dd76f002e
+ms.openlocfilehash: ca41e12136911cc0aecb6968a949fb738e2e2d77
+ms.sourcegitcommit: d1116c70bd0f2382d590091e0e66095de3925324
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/02/2019
-ms.locfileid: "57238771"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "59570761"
 ---
 # <a name="add-a-windows-line-of-business-app-to-microsoft-intune"></a>Adicionar um aplicativo de linha de negócios do Windows ao Microsoft Intune
 
@@ -61,7 +62,7 @@ Um aplicativo de LOB (linha de negócios) é um aplicativo que pode ser adiciona
     - **Categoria**: Selecione uma ou mais das categorias de aplicativo interno ou uma categoria criada por você. As categorias facilitam para os usuários a localização do aplicativo ao navegar no portal da empresa.
     - **Exibir como um aplicativo em destaque no Portal da Empresa**: Exiba o aplicativo de maneira proeminente em na página principal do portal da empresa quando os usuários procurarem por aplicativos.
     - **URL de Informações**: Opcionalmente, Insira a URL de um site que contém informações sobre esse aplicativo. A URL será exibida no portal da empresa.
-    - **URL de Privacidade**: Opcionalmente, Insira a URL de um site que contém informações de privacidade desse aplicativo. A URL será exibida no portal da empresa.
+    - **URL de privacidade**: Opcionalmente, Insira a URL de um site que contém informações de privacidade desse aplicativo. A URL será exibida no portal da empresa.
     - **Argumentos de linha de comando**: Opcionalmente, Insira os argumentos de linha de comando que você deseja aplicar ao arquivo .msi quando ele for executado. Um exemplo é **/q**.
     - **Desenvolvedor**: Opcionalmente, Insira o nome do desenvolvedor do aplicativo.
     - **Proprietário**: Opcionalmente, Insira o nome do proprietário desse aplicativo. Um exemplo é **Departamento de RH**.
@@ -92,4 +93,4 @@ Essa funcionalidade é útil para evitar entrar em uma condição de corrida. Po
 
 - Saiba mais sobre as maneiras como você pode monitorar as propriedades e a atribuição de seu aplicativo. Veja [Como monitorar informações e atribuições de aplicativo](apps-monitor.md).
 
-- Saiba mais sobre o contexto do seu aplicativo no Intune. Veja [Visão geral dos ciclos de vida do dispositivo e do aplicativo](introduction-device-app-lifecycles.md).
+- Saiba mais sobre o contexto do seu aplicativo no Intune. Confira [Visão geral do ciclo de vida do aplicativo no Microsoft Intune](app-lifecycle.md).

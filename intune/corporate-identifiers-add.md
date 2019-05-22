@@ -1,27 +1,29 @@
 ---
 title: Adicionar identificadores empresariais ao Intune
-titlesuffix: ''
+titleSuffix: ''
 description: Saiba como adicionar identificadores empresariais (método de registro, IMEI e número de série) ao Microsoft Intune.
 keywords: ''
 author: ErikjeMS
 ms.author: erikje
 manager: dougeby
 ms.date: 02/22/2018
-ms.topic: article
+ms.topic: conceptual
 ms.prod: ''
 ms.service: microsoft-intune
+ms.localizationpriority: high
 ms.technology: ''
 ms.assetid: 566ed16d-8030-42ee-bac9-5f8252a83012
 ms.reviewer: dagerrit
 ms.suite: ems
 search.appverid: MET150
 ms.custom: seodec18
-ms.openlocfilehash: ae4691b21b9728a28f9cac0ae0af7fd42a8bdbde
-ms.sourcegitcommit: 6f2f2fa70f4e47fa5ad2f3c536ba7116e1bd1d05
+ms.collection: M365-identity-device-management
+ms.openlocfilehash: 28ad1e492c4bdd7c87371611530cd3f8e2abc2e1
+ms.sourcegitcommit: 484a898d54f5386fdbce300225aaa3495cecd6b0
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/29/2019
-ms.locfileid: "55199431"
+ms.lasthandoff: 04/01/2019
+ms.locfileid: "59567277"
 ---
 # <a name="identify-devices-as-corporate-owned"></a>Identificar dispositivos como corporativos
 
@@ -66,8 +68,9 @@ Quando visualizado em um editor de texto, esse arquivo .csv aparece como:
 ```
 
 > [!IMPORTANT]
-> Alguns dispositivos com Android possuem vários números IMEI. O Intune lê somente um número IMEI por dispositivo registrado. Quando você importa um número IMEI, mas ele não está inventariado pelo Intune, o dispositivo é classificado como pessoal em vez de um dispositivo de propriedade da empresa. Se importar vários números IMEI para um dispositivo, os números não inventariados exibirão **Desconhecido** como status do registro.<br>
->Observe também: não há garantia de que os números de série para Android sejam exclusivos ou estejam presentes. Verifique junto ao fornecedor do dispositivo para saber se o número de série é uma ID de dispositivo confiável.
+> Alguns dispositivos Android ou iOS têm vários números IMEI. O Intune lê somente um número IMEI por dispositivo registrado. Quando você importa um número IMEI, mas ele não está inventariado pelo Intune, o dispositivo é classificado como pessoal em vez de um dispositivo de propriedade da empresa. Se importar vários números IMEI para um dispositivo, os números não inventariados exibirão **Desconhecido** como status do registro.<br>
+>Observe também: Números de série são a forma recomendada de identificação para dispositivos iOS.
+>não há garantia de que os números de série para Android sejam exclusivos ou estejam presentes. Verifique junto ao fornecedor do dispositivo para saber se o número de série é uma ID de dispositivo confiável.
 >Os números de série informados pelo dispositivo no Intune podem não corresponder à ID exibida nos menus Configurações ou Sobre do dispositivo Android. Verifique o tipo de número de série informado pelo fabricante do dispositivo.
 >A tentativa de fazer upload de um arquivo com números de série que contêm pontos (.) causará uma falha no upload. Não há suporte para números de série com pontos.
 

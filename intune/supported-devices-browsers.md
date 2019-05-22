@@ -10,6 +10,7 @@ ms.date: 01/03/2018
 ms.topic: conceptual
 ms.prod: ''
 ms.service: microsoft-intune
+ms.localizationpriority: high
 ms.technology: ''
 ms.assetid: 5d1ac59c-a885-4276-8576-f3cf81c2d268
 ms.reviewer: dougeby
@@ -17,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: bbddbd1bd74044e161b1a18fcf58c5a64bdb8c70
-ms.sourcegitcommit: 727c3ae7659ad79ea162250d234d7730f840c731
+ms.openlocfilehash: dc0cf701450e594fd4b72a8e0565246994bb8a9e
+ms.sourcegitcommit: 25e6aa3bfce58ce8d9f8c054bc338cc3dff4a78b
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/07/2019
-ms.locfileid: "55842483"
+ms.lasthandoff: 03/14/2019
+ms.locfileid: "57460607"
 ---
 # <a name="supported-operating-systems-and-browsers-in-intune"></a>Navegadores e sistemas operacionais compatíveis no Intune
 
@@ -42,7 +43,7 @@ Para saber mais sobre o suporte à configuração do provedor de serviço, visit
 
 ### <a name="supported-samsung-knox-standard-devices"></a>Dispositivos Samsung Knox Standard com suporte
 
-Para evitar erros de ativação do KNOX que impedem o registro do MDM, o aplicativo Portal da Empresa apenas tenta a ativação do Samsung KNOX durante o registro de MDM quando o dispositivo aparece na [lista de dispositivos KNOX com suporte](https://www.samsungknox.com/knox-supported-devices/knox-workspace). Dispositivos que não dão suporte à ativação de Samsung Knox são registrados como dispositivos Android padrão. Um dispositivo Samsung pode ter alguns números de modelo que oferecem suporte a Knox, enquanto outros não. Verifique a compatibilidade com KNOX com o revendedor do dispositivo antes de comprar e implantar dispositivos Samsung.
+Para evitar erros de ativação do KNOX que impedem o registro do MDM, o aplicativo Portal da Empresa apenas tenta a ativação do Samsung KNOX durante o registro de MDM quando o dispositivo aparece na [lista de dispositivos KNOX com suporte](https://www.samsungknox.com/knox-supported-devices/knox-workspace). Dispositivos que não dão suporte à ativação de Samsung Knox são registrados como dispositivos Android padrão. Um dispositivo Samsung pode ter alguns números de modelo que dão suporte a Knox, enquanto outros não. Verifique a compatibilidade com KNOX com o revendedor do dispositivo antes de comprar e implantar dispositivos Samsung.
 
 > [!NOTE]
 > O registro de dispositivos Samsung Knox pode exigir a [habilitação de acesso a servidores da Samsung](https://support.samsungknox.com/hc/articles/115013833108-Our-corporate-devices-are-behind-a-firewall-How-do-I-enable-Knox-Workspace-devices-to-contact-Samsung-servers). 
@@ -99,7 +100,7 @@ You can manage [Exchange ActiveSync devices](device-enrollment.md#mobile-device-
 
 Diferentes tarefas administrativas exigem o uso de um dos seguintes sites administrativos.
 
-- [Portal do Office 365](http://go.microsoft.com/fwlink/p/?LinkId=698854)
+- [Centro de administração do Microsoft 365](http://go.microsoft.com/fwlink/p/?LinkId=698854)
 - [Portal do Azure](https://portal.azure.com/)
 
 Há suporte para os seguintes navegadores nesses portais:

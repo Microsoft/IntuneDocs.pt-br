@@ -1,14 +1,15 @@
 ---
 title: Recursos e configurações de dispositivo no Microsoft Intune – Azure | Microsoft Docs
-description: Visão geral dos diferentes perfis de dispositivo do Microsoft Intune, incluindo recursos, restrições, email, Wi-Fi, VPN, educação, certificados, atualização do Windows 10, BitLocker e Windows Defender, Proteção de Informações do Windows, modelos administrativos e definições personalizadas de configurações de dispositivo no portal do Azure. Use esses perfis para gerenciar e proteger dados e dispositivos em sua empresa.
+description: Visão geral dos diferentes perfis de dispositivo do Microsoft Intune. Obtenha informações sobre recursos, restrições, email, wifi, VPN, educação, certificados, atualização do Windows 10, BitLocker e Windows Defender, Proteção de Informações do Windows, modelos administrativos e definições personalizadas de configurações de dispositivo no portal do Azure. Use esses perfis para gerenciar e proteger dados e dispositivos em sua empresa.
 keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 01/29/2019
+ms.date: 04/08/2019
 ms.topic: conceptual
 ms.prod: ''
 ms.service: microsoft-intune
+ms.localizationpriority: high
 ms.technology: ''
 ms.assetid: ''
 ms.reviewer: ''
@@ -16,90 +17,35 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure; get-started
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 4b9bd8aaca9aaf6e39c7a120518eeca1cef31511
-ms.sourcegitcommit: 727c3ae7659ad79ea162250d234d7730f840c731
+ms.openlocfilehash: 4dc68071886b8f2a0852feb69bf78c2c265f046d
+ms.sourcegitcommit: 364a7dbc7eaa414c7a9c39cf53eb4250e1ad3151
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/07/2019
-ms.locfileid: "55845084"
+ms.lasthandoff: 04/09/2019
+ms.locfileid: "59570345"
 ---
-# <a name="apply-features-settings-on-your-devices-using-device-profiles-in-microsoft-intune"></a>Aplicar configurações de recursos aos seus dispositivos usando perfis de dispositivo no Microsoft Intune
+# <a name="apply-features-and-settings-on-your-devices-using-device-profiles-in-microsoft-intune"></a>Aplicar recursos e configurações aos seus dispositivos usando perfis de dispositivo no Microsoft Intune
 
-O Microsoft Intune inclui configurações e recursos que você pode habilitar ou desabilitar em diferentes dispositivos em sua organização. Essas configurações e recursos são adicionados a "perfis de configuração". Você pode criar perfis para diferentes dispositivos, diferentes plataformas, incluindo iOS, Android e Windows e, em seguida, usar o Intune para aplicar o perfil aos dispositivos em sua organização.
+[!INCLUDE [azure_portal](./includes/azure_portal.md)]
 
-Alguns exemplos de perfil incluem:
+O Microsoft Intune inclui configurações e recursos que você pode habilitar ou desabilitar em diferentes dispositivos em sua organização. Essas configurações e recursos são adicionados a "perfis de configuração". Você pode criar perfis para diferentes dispositivos e plataformas, incluindo iOS, Android e Windows. Em seguida, use o Intune para aplicar ou "atribuir" o perfil aos dispositivos.
+
+Como parte da sua solução MDM (gerenciamento de dispositivo móvel), use esses perfis de configuração para concluir tarefas diferentes. Alguns exemplos de perfil incluem:
 
 - Em dispositivos Windows 10, use um modelo de perfil que bloqueie controles ActiveX no Internet Explorer.
 - Em dispositivos iOS e macOS, permita que os usuários usem impressoras AirPrint em sua organização.
 - Permita ou impeça o acesso ao Bluetooth no dispositivo.
 - Crie um perfil de WiFi ou VPN que permita a diferentes dispositivos o acesso à sua rede corporativa.
 - Gerencie as atualizações de software, incluindo a hora em que são instaladas.
-- Execute um dispositivo Android em um dispositivo de quiosque dedicado que pode executar um ou muitos aplicativos.
+- Execute um dispositivo Android como um dispositivo de quiosque dedicado que pode executar um ou muitos aplicativos.
 
-Este artigo lista as etapas usadas para criar um perfil e fornece uma visão geral dos diferentes tipos de perfis que você pode criar. Use esses perfis para permitir ou impedir alguns recursos nos dispositivos.
+Este artigo apresenta uma visão geral dos diferentes tipos de perfil que você pode criar. Use esses perfis para permitir ou impedir alguns recursos nos dispositivos.
 
-## <a name="create-the-profile"></a>Criar o perfil
+## <a name="administrative-templates-preview"></a>Modelos Administrativos (Versão prévia)
 
-1. No [portal do Azure](https://portal.azure.com), selecione **Todos os Serviços** > filtre por **Intune** > selecione **Intune**.
+Os [modelos administrativos](administrative-templates-windows.md) incluem centenas de configurações que podem ser definidas para o Internet Explorer, o OneDrive, a área de trabalho remota, o Word, o Excel e outros programas do Office.
 
-2. Selecione **Configuração do dispositivo**. Você tem as seguintes opções:
-
-    - **Visão geral**: Lista o status dos perfis e fornece detalhes adicionais sobre os perfis que você atribuiu a usuários e dispositivos.
-    - **Gerenciar**: Crie perfis de dispositivo, carregue [scripts personalizados do PowerShell](intune-management-extension.md) a serem executados no perfil e adicione planos de dados a dispositivos usando o [eSIM](esim-device-configuration.md).
-    - **Monitorar**: Verifique o status de um perfil quanto ao êxito ou falha, além de exibir logs sobre os perfis.
-    - **Configuração**: Adicione uma autoridade de certificação SCEP ou PFX ou habilite o [Telecom Expense Management](telecom-expenses-monitor.md) no perfil.
-
-3. Selecione **Perfis** > **Criar Perfil**. Insira as seguintes propriedades:
-
-   - **Nome**: Insira um nome descritivo para o perfil.
-   - **Descrição**: Insira uma descrição para o perfil. Essa configuração é opcional, mas recomendada.
-   - **Plataforma**: Escolha a plataforma dos dispositivos. Suas opções:  
-
-       - **Android**
-       - **Android Enterprise**
-       - **iOS**
-       - **macOS**
-       - **Windows Phone 8.1**
-       - **Windows 8.1 e posterior**
-       - **Windows 10 e posterior**
-
-   - **Tipo de perfil**: Selecione o tipo de configurações que deseja criar. A lista dependerá da **plataforma** escolhida:
-
-       - [Modelos Administrativos](administrative-templates-windows.md)
-       - [Personalizado](custom-settings-configure.md)
-       - [Otimização de Entrega](delivery-optimization-windows.md)
-       - [Recursos de dispositivo](device-features-configure.md)
-       - [Restrições de dispositivo](device-restrictions-configure.md)
-       - [Atualização de edição e opção de modo](edition-upgrade-configure-windows-10.md)
-       - [Educação](education-settings-configure.md)
-       - [Email](email-settings-configure.md)
-       - [Endpoint protection](endpoint-protection-configure.md)
-       - [Proteção de identidade](identity-protection-configure.md)  
-       - [Quiosque](kiosk-settings.md)
-       - [Certificado PKCS](certficates-pfx-configure.md)
-       - [Certificado SCEP](certificates-scep-configure.md)
-       - [Certificado confiável](certificates-configure.md)
-       - [Políticas de atualização](software-updates-ios.md)
-       - [VPN](vpn-settings-configure.md)
-       - [Wi-Fi](wi-fi-settings-configure.md)
-       - [Windows Defender ATP](advanced-threat-protection.md)
-       - [Proteção de Informações do Windows](windows-information-protection-configure.md)
-
-     Por exemplo, se você selecionar **iOS** para a plataforma, as opções de tipo de perfil serão semelhantes às seguintes:
-
-     ![Criar perfil do iOS no Intune](./media/create-device-profile.png)
-
-4. Selecione **Configurações**. As configurações são organizadas por categoria. Selecione uma categoria para ver uma lista de todas as configurações que podem ser definidas.
-
-5. Quando terminar, selecione **OK** > **Criar** para salvar as alterações.
-
-Para saber mais sobre os diferentes tipos de perfil, leia na íntegra as próximas seções deste artigo.
-
-## <a name="administrative-templates-preview"></a>Modelos Administrativos (Versão Prévia)
-
-Os [modelos administrativos](administrative-templates-windows.md) incluem centenas de configurações que podem ser definidas para o Internet Explorer, o OneDrive, a área de trabalho remota, o Word, o Excel e outros programas do Office, entre outros.
-
-Esses modelos oferecem aos administradores uma exibição fácil e simplificada das configurações semelhante à Política de Grupo, mas são 100% baseados em nuvem. 
+Esses modelos oferecem aos administradores uma exibição simplificada das configurações semelhante à política de grupo, mas 100% baseada em nuvem.
 
 Esse recurso é compatível com:
 
@@ -164,7 +110,7 @@ Esse recurso é compatível com:
 
 - Windows 10 e posterior
 
-Configurações de quiosque também estão disponíveis como restrições de dispositivos para [Android](device-restrictions-android.md#kiosk), [Android Enterprise](device-restrictions-android-for-work.md#kiosk-settings) e [iOS](device-restrictions-ios.md#kiosk-supervised-only).
+Configurações de quiosque também estão disponíveis como restrições de dispositivos para [Android](device-restrictions-android.md#kiosk), [Android Enterprise](device-restrictions-android-for-work.md#dedicated-device-settings) e [iOS](device-restrictions-ios.md#kiosk-supervised-only).
 
 ## <a name="email"></a>Email
 
@@ -173,6 +119,7 @@ O perfil [Configurações de email](email-settings-configure.md) cria, atribui e
 Esse recurso é compatível com: 
 
 - Android
+- Android Enterprise
 - iOS
 - Windows Phone 8.1
 - Windows 10 e posterior
@@ -186,6 +133,7 @@ As VPNs (redes virtuais privadas) oferecem aos usuários acesso remoto seguro à
 Esse recurso é compatível com: 
 
 - Android
+- Android Enterprise
 - iOS
 - macOS
 - Windows Phone 8.1
@@ -199,6 +147,7 @@ As [configurações de Wi-Fi](wi-fi-settings-configure.md) atribuem configuraç�
 Esse recurso é compatível com: 
 
 - Android
+- Android Enterprise
 - iOS
 - macOS
 - Windows 8.1 (somente importação)
@@ -235,12 +184,14 @@ Esse recurso é compatível com:
 
 ## <a name="certificates"></a>Certificados
 
-Os [Certificados](certificates-configure.md) configuram certificados confiáveis, SCEP e PKCS que são atribuídos aos dispositivos e usados para autenticar Wi-Fi, VPN e perfis de email.
+[Certificados](certificates-configure.md) configuram certificados confiáveis, SCEP e PKCS atribuídos aos dispositivos. Esses certificados autenticam o WiFi, o VPN e as perfis de email.
 
 Esse recurso é compatível com: 
 
 - Android
+- Android Enterprise
 - iOS
+- macOS
 - Windows Phone 8.1
 - Windows 8.1
 - Windows 10 e posterior
@@ -255,7 +206,7 @@ Esse recurso é compatível com:
 
 ## <a name="shared-multi-user-device"></a>Dispositivos multiusuário compartilhados
 
-O [Windows 10](shared-user-device-settings-windows.md) e o [Windows Holographic for Business](shared-user-device-settings-windows-holographic.md) inclui configurações para gerenciar dispositivos com vários usuários, também conhecidos como dispositivos compartilhados ou computadores compartilhados. Quando um usuário entra no dispositivo, você escolhe se ele pode alterar as opções de suspensão ou salvar arquivos no dispositivo. Em outro exemplo, você pode criar uma política que exclua credenciais inativas de dispositivos Windows HoloLens para economizar espaço.
+O [Windows 10](shared-user-device-settings-windows.md) e o [Windows Holographic for Business](shared-user-device-settings-windows-holographic.md) inclui configurações para gerenciar dispositivos com vários usuários, também conhecidos como dispositivos compartilhados ou computadores compartilhados. Quando um usuário entra no dispositivo, você escolhe se ele pode alterar as opções de suspensão ou salvar arquivos no dispositivo. Em outro exemplo, para economizar espaço, você pode criar um perfil que exclui credenciais inativas de dispositivos Windows HoloLens.
 
 Essas configurações de dispositivo multiusuário compartilhado permitem que um administrador controle alguns dos recursos do dispositivo e gerencie esses dispositivos compartilhados usando o Intune.
 
@@ -264,21 +215,30 @@ Esse recurso é compatível com:
 - Windows 10 e posterior
 - Windows Holographic for Business
 
-## <a name="custom-profile"></a>Perfil personalizado
+## <a name="zebra-mobility-extensions-mx"></a>Zebra Mobility Extensions (MX)
 
-As [Configurações personalizadas](custom-settings-configure.md) possibilitam que os administradores atribuam configurações de dispositivo que não são nativas do Intune. Por exemplo, em dispositivos Android, você pode inserir valores de OMA-URI. Para dispositivos iOS, você pode importar um arquivo de configuração criado com o Apple Configurator. 
+[Zebra Mobility Extensions (MX)](android-zebra-mx-overview.md) permitem que os administradores usem e gerenciem dispositivos Zebra no Intune. Você cria perfis de StageNow com suas configurações e, em seguida, usa o Intune para atribuir e implantar esses perfis em seus dispositivos Zebra. [Logs e problemas comuns do StageNow](android-zebra-mx-logs-troubleshoot.md) é um excelente recurso para solucionar problemas de perfis e ver alguns possíveis problemas ao usar o StageNow.
 
 Esse recurso é compatível com:
 
 - Android
+
+## <a name="custom-profile"></a>Perfil personalizado
+
+As [Configurações personalizadas](custom-settings-configure.md) permitem que os administradores atribuam configurações de dispositivo que não são nativas do Intune. Em dispositivos Android, você pode inserir valores de OMA-URI. Para dispositivos iOS, você pode importar um arquivo de configuração criado com o Apple Configurator.
+
+Esse recurso é compatível com:
+
+- Android
+- Android Enterprise
 - iOS
 - macOS
 - Windows Phone 8.1
 
 ## <a name="manage-and-troubleshoot"></a>Gerenciar e solucionar problemas
 
-[Gerencie os perfis](device-profile-monitor.md) para verificar o status dos dispositivos e os perfis atribuídos. Também ajude a resolver conflitos verificando as configurações que causam os conflitos e os perfis que contêm essas configurações. [Problemas comuns e resoluções](device-profile-troubleshoot.md) fornece uma perguntas e respostas que ajudam a trabalhar com perfis, incluindo o que acontece quando um perfil é excluído, o que faz com que notificações sejam enviadas aos dispositivos e muito mais.
+[Gerencie os perfis](device-profile-monitor.md) para verificar o status dos dispositivos e os perfis atribuídos. Também ajude a resolver conflitos verificando as configurações que causam os conflitos e os perfis que incluem essas configurações. [Problemas comuns e resoluções](device-profile-troubleshoot.md) ajuda os administradores a trabalhar com perfis. Ele descreve o que acontece ao excluir um perfil, o que causa o envio das notificações para dispositivos e muito mais.
 
 ## <a name="next-steps"></a>Próximas etapas
-Escolha sua plataforma e comece a trabalhar:
 
+Escolha sua plataforma e comece a trabalhar.

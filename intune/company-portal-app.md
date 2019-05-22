@@ -6,10 +6,11 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 11/14/2018
+ms.date: 04/01/2019
 ms.topic: conceptual
 ms.prod: ''
 ms.service: microsoft-intune
+ms.localizationpriority: high
 ms.technology: ''
 ms.assetid: dec6f258-ee1b-4824-bf66-29053051a1ae
 ms.reviewer: mghadial
@@ -17,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: c61eb47f29b201997d04fa6b1405ad2f186e4fcc
-ms.sourcegitcommit: cb93613bef7f6015a4c4095e875cb12dd76f002e
+ms.openlocfilehash: 33f24a3d7b30973855bb303bb97bf703cd4dc5fa
+ms.sourcegitcommit: 484a898d54f5386fdbce300225aaa3495cecd6b0
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/02/2019
-ms.locfileid: "57237179"
+ms.lasthandoff: 04/01/2019
+ms.locfileid: "59567264"
 ---
 # <a name="how-to-configure-the-microsoft-intune-company-portal-app"></a>Como configurar o aplicativo Portal da Empresa do Microsoft Intune
 
@@ -33,7 +34,7 @@ O Portal da Empresa do Microsoft Intune é o local em que os usuários acessam o
 > [!Tip]        
 > Quando você personaliza o Portal da Empresa, as configurações se aplicam ao site do Portal da Empresa e aos aplicativos do Portal da Empresa. Observe que os usuários devem ter uma licença do Intune atribuída para acessar o site do Portal da Empresa.
 
-Personalizar o Portal da Empresa ajuda a fornecer uma experiência familiar e útil para os usuários finais. Para isso, na carga de trabalho **Aplicativos clientes**, escolha **Configurar** > **Identidade Visual do Portal da Empresa** e defina as configurações necessárias.  
+Ao personalizar o Portal da Empresa, você ajudará a fornecer uma experiência familiar e útil para os usuários finais. Para fazer isso, no portal do Intune, selecione **Aplicativos de cliente** > **Identidade visual e personalização** e, em seguida, defina as configurações necessárias. 
 
 > [!Note]       
 > Se você estiver usando o Azure Governamental, os logs do aplicativo serão oferecidos ao usuário final para decidir como eles compartilharão ao iniciar o processo para obter ajuda com um problema. No entanto, se você não estiver usando o Azure Governamental, o Portal da Empresa para Windows 10 enviará logs do aplicativo diretamente para a Microsoft quando o usuário iniciar o processo para obter ajuda com um problema. Enviar os logs do aplicativo para a Microsoft facilitará a solução de problemas. 
@@ -90,7 +91,7 @@ Exiba uma imagem de marca que reflita a marca da empresa. Depois de salvar suas 
 
 |Nome do campo|Mais informações|
 |---|---|
-|**Fazer upload de sua imagem de marca**| Essa opção está disponível para que você possa exibir uma imagem de tela de fundo na página de perfil do usuário no aplicativo Portal da Empresa.<p>*Observação*: A imagem pode ser exibida de forma diferente para diversas plataformas.<p><ul><li>Largura da imagem recomendada: Inferior a 1.125 px, mas não inferior a 640 px</li><li>Tamanho máximo da imagem: 1,3 MB</li><li>Tipo de arquivo: PNG, JPG ou JPEG</li></ul>|
+|**Fazer upload de sua imagem de marca**| Essa opção permite que você exiba uma imagem de marca. No Portal da Empresa para iOS, isso aparece como uma imagem de plano de fundo na página de perfil do usuário.<p><ul><li>Largura da imagem recomendada: Inferior a 1.125 px, mas não inferior a 640 px</li><li>Tamanho máximo da imagem: 1,3 MB</li><li>Tipo de arquivo: PNG, JPG ou JPEG</li></ul>|
 
 A imagem de marca certa pode melhorar a confiança do usuário no Portal da Empresa, apresentando um forte senso de marca da sua empresa. Aqui estão algumas dicas que você talvez queira considerar para adquirir, escolher e otimizar a imagem do Portal da Empresa. 
 

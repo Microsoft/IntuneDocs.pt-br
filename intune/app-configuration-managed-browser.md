@@ -1,40 +1,52 @@
 ---
-title: Gerenciar o acesso via Web com um navegador protegido por política
-titlesuffix: Microsoft Intune
-description: Use um navegador protegido por política para restringir a navegação na Web e a transferência de dados da Web.
+title: Gerenciar o acesso à Web corporativo com um navegador protegido por política
+titleSuffix: Microsoft Intune
+description: Use um navegador protegido por política atribuído pelo Intune para gerenciar a navegação na Web corporativa e a transferência de dados da Web.
 keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 12/11/2018
-ms.topic: article
+ms.date: 04/08/2019
+ms.topic: conceptual
 ms.prod: ''
 ms.service: microsoft-intune
+ms.localizationpriority: high
 ms.technology: ''
 ms.assetid: 1feca24f-9212-4d5d-afa9-7c171c5e8525
 ms.reviewer: ilwu
 ms.suite: ems
 search.appverid: MET150
-ms.custom: intune-azure
+ms.custom: intune-azure, seoapril2019
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 64cd4aa629e980bf69557d6cd2c40f8bee7bd3c6
-ms.sourcegitcommit: c0b954c82cd732b5328f92b618947bf425bf0a91
+ms.openlocfilehash: 8f32cfbb5e05958ec9d8f303809d3ffa28c3a3ec
+ms.sourcegitcommit: 364a7dbc7eaa414c7a9c39cf53eb4250e1ad3151
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/12/2019
-ms.locfileid: "56086209"
+ms.lasthandoff: 04/09/2019
+ms.locfileid: "59569721"
 ---
-# <a name="manage-internet-access-using-a-microsoft-intune-policy-protected-browser"></a>Gerenciar o acesso à Internet usando um navegador protegido por políticas do Microsoft Intune
+# <a name="manage-web-access-using-a-microsoft-intune-policy-protected-browser"></a>Gerenciar o acesso à Web usando um navegador protegido por políticas do Microsoft Intune
 
 [!INCLUDE [azure_portal](./includes/azure_portal.md)]
 
 Usando um navegador protegido com a política do Intune (Microsoft Edge ou Intune Managed Browser), é possível garantir que sites corporativos sempre sejam acessados com proteções em vigor.  Quando configurados com o Intune, os navegadores protegidos podem usar o seguinte:
 
-- Políticas de proteção do aplicativo.
-- Acesso condicional.
-- Logon único.
-- Definições da configuração do aplicativo.
-- Integração do proxy do aplicativo do Azure.
+- Políticas de proteção do aplicativo
+- Acesso condicional
+- Logon único
+- Definições da configuração do aplicativo
+- Integração do proxy do aplicativo do Azure
+
+## <a name="microsoft-edge-support"></a>Suporte ao Microsoft Edge
+
+Use o Microsoft Edge para cenários empresariais em dispositivos iOS e Android. O Microsoft Edge dá suporte aos mesmos cenários de gerenciamento do Intune Managed Browser com a adição de melhorias na experiência do usuário final. Os seguintes recursos corporativos do Microsoft Edge habilitados pelas políticas do Intune estão disponíveis. Esses recursos corporativos incluem:
+
+1. **Identidade Dupla**: os usuários podem adicionar uma conta corporativa e uma conta pessoal para navegação. Há uma separação completa entre as duas identidades, o que é semelhante à arquitetura e a experiência no Office 365 e no Outlook. Administradores do Intune poderão definir as políticas desejadas para uma experiência de navegação protegida dentro da conta de trabalho. 
+2. **Integração de política de proteção de aplicativo do Intune**: agora, os administradores podem direcionar políticas de proteção de aplicativo ao Microsoft Edge, inclusive o controle de ações de recortar, copiar e colar, impedir capturas de tela e garantir que links selecionados pelo usuário abram somente em outros aplicativos gerenciados.
+3. **Integração de Proxy de Aplicativo Azure**: os administradores podem controlar o acesso a aplicativos SaaS e aplicativos Web, ajudando a garantir que somente aplicativos baseados em navegador sejam executados no navegador seguro Microsoft Edge, mesmo se os usuários finais se conectarem da rede corporativa ou da Internet. 
+4. **Favoritos Gerenciados e atalhos da Home Page**: para facilitar o acesso, os administradores podem definir que as URLs apareçam sob os favoritos quando os usuários finais estiverem em seu contexto corporativo. Os administradores podem definir um atalho da home page, que aparecerá como o atalho primário quando o usuário corporativo abrir uma nova página ou uma nova guia no Microsoft Edge.
+
+As políticas de proteção do Microsoft Intune para o Microsoft Edge ajudam a proteger os dados e recursos da sua organização. O Microsoft Edge protegido pelo Intune garante que os recursos da sua empresa sejam protegidos não apenas dentro de aplicativos instalados nativamente, mas também quando forem acessados pelo navegador da Web.
 
 ## <a name="getting-started"></a>Introdução
 
@@ -72,11 +84,15 @@ Embora o Managed Browser e o Microsoft Edge não sejam gerenciados pelo Intune, 
 
 ## <a name="conditional-access-for-protected-browsers"></a>Acesso condicional para navegadores protegidos
 
-Agora o Managed Browser é um aplicativo cliente aprovado para acesso condicional. Isso significa que você pode restringir o acesso do navegador móvel a aplicativos Web conectados ao Azure AD, em que os usuários só podem usar o Managed Browser bloqueando o acesso de outros navegadores desprotegidos como Safari ou Chrome. Essa proteção pode ser aplicada aos recursos do Azure como o Exchange Online e o SharePoint Online, o portal do Office e até mesmo sites locais que você tenha exposto a usuários externos por meio do [Proxy de Aplicativo do Azure AD](https://docs.microsoft.com/azure/active-directory/active-directory-application-proxy-get-started). 
+Agora o Managed Browser é um aplicativo cliente aprovado para acesso condicional. Isso significa que você pode restringir o acesso do navegador móvel a aplicativos Web conectados ao Azure AD, em que os usuários só podem usar o Managed Browser bloqueando o acesso de outros navegadores desprotegidos como Safari ou Chrome. Essa proteção pode ser aplicada aos recursos do Azure como o Exchange Online e o SharePoint Online, o Centro de administração do Microsoft 365 e até mesmo sites locais que você tenha exposto a usuários externos por meio do [Proxy de Aplicativo do Azure AD](https://docs.microsoft.com/azure/active-directory/active-directory-application-proxy-get-started). 
 
-Para restringir os aplicativos Web conectados ao Azure AD para usarem o Intune Managed Browser em plataformas móveis, é possível criar uma política de Acesso Condicional do Azure AD que requer aplicativos cliente aprovados. 
+Para restringir os aplicativos Web conectados ao Azure AD para usarem o Intune Managed Browser em plataformas móveis, é possível criar uma política de Acesso Condicional que requer aplicativos cliente aprovados. 
 
-1. No Portal do Azure, selecione **Azure Active Directory** > **Aplicativos empresariais** > **Acesso condicional** > **Nova política**. 
+> [!TIP]  
+> O Acesso Condicional é uma tecnologia do Azure AD (Azure Active Directory). O nó Acesso Condicional acessado no *Intune* é o mesmo nó que o acessado no *Azure AD*.  
+
+
+1. No portal do Intune, selecione **Acesso condicional** > **Nova Política**. 
 2. Em seguida, selecione **Conceder** na seção **Controles de acesso** da folha. 
 3. Clique em **Exigir aplicativo cliente aprovado**. 
 4. Clique em **Selecionar** na folha **Conceder**. Esta política deve ser atribuída aos aplicativos de nuvem que você deseja tornar acessíveis apenas ao aplicativo Intune Managed Browser.
@@ -264,12 +280,12 @@ Use as informações a seguir para saber mais sobre os formatos permitidos e car
   - `http://www.contoso.com: /*`
 ## <a name="opening-links-within-the-intune-managed-browser-vs-microsoft-edge"></a>Abertura de links no Intune Managed Browser X Microsoft Edge 
 
-Agora o Intune Managed Browser e o Microsoft Edge são considerados navegadores protegidos/gerenciados por política. Atualmente as políticas existentes de proteção de aplicativos causam a abertura de links da web de aplicativos gerenciados no Intune em um navegador específico, dependendo do cenário e da plataforma. 
+Agora, o Intune Managed Browser e o Microsoft Edge são considerados navegadores protegidos/gerenciados por política. Atualmente as políticas existentes de proteção de aplicativos causam a abertura de links da web de aplicativos gerenciados no Intune em um navegador específico, dependendo do cenário e da plataforma. 
 
 No Android: 
-* Managed Browser, se o MB e o Microsoft Edge estiverem em um dispositivo, a menos que a configuração de configuração de aplicativo "com.microsoft.intune.useEdge" estiver definida como "true" para todos os aplicativos gerenciados, com a necessidade de um navegador gerenciado por política.  
-* Microsoft Edge, se só houver ele no dispositivo e se for o destino da política.
-* Managed Browser se só houver ele no dispositivo e se for o destino da política. 
+* o Managed Browser será aberto se um usuário tiver o Managed Browser e o Microsoft Edge baixados no dispositivo. Para assegurar que o Microsoft Edge seja aberto em vez do Managed Browser, defina a configuração de aplicativo "com.microsoft.intune.useEdge" como "true" para todos os aplicativos gerenciados do Intune que exijam um navegador gerenciado por política.  
+* O Microsoft Edge só abrirá se só existir ele no dispositivo e se estiver direcionado com a política.
+* O Managed Browser só abrirá se só existir ele no dispositivo e se estiver direcionado com a política. 
 
 No iOS, para aplicativos integrados com o SDK do Intune para iOS v. 9.0.9 e superiores: 
 * Managed Browser se o MB e o Microsoft Edge estiverem em um dispositivo, a menos que a configuração de configuração de aplicativo "com.microsoft.intune.useEdge" estiver definida como "true" para todos os aplicativos gerenciados, com a necessidade de um navegador gerenciado por política **ou** Microsoft Edge se estiver instalado e tiver recebido a política. 

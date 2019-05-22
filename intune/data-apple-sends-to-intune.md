@@ -7,21 +7,23 @@ author: ErikjeMS
 ms.author: erikje
 manager: dougeby
 ms.date: 04/19/2018
-ms.topic: article
+ms.topic: conceptual
 ms.prod: ''
 ms.service: microsoft-intune
+ms.localizationpriority: high
 ms.technology: ''
 ms.assetid: cf27fdb8-f408-425c-9a7c-146de1534425
 ms.reviewer: ''
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: 12f9b6aa5fb9a7b1f31b43dc7faf3e36cdd49157
-ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.collection: M365-identity-device-management
+ms.openlocfilehash: 4362983bbcdb78f82ce7b16f675c6f61fbefd1e1
+ms.sourcegitcommit: 25e6aa3bfce58ce8d9f8c054bc338cc3dff4a78b
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52186538"
+ms.lasthandoff: 03/14/2019
+ms.locfileid: "57396312"
 ---
 # <a name="data-apple-sends-to-intune"></a>Dados enviados pela Apple ao Intune
 
@@ -99,7 +101,7 @@ A tabela a seguir lista os dados que um dispositivo da Apple envia ao Intune. [O
 | [VPP](https://developer.apple.com/library/content/documentation/Miscellaneous/Reference/MobileDeviceManagementProtocolRef/5-Web_Service_Protocol_VPP/webservice.html#//apple_ref/doc/uid/TP40017387-CH8-SW1) | Token VPP da Apple | retiredCount | O número de licenças desativadas para um aplicativo. |
 | [VPP](https://developer.apple.com/library/content/documentation/Miscellaneous/Reference/MobileDeviceManagementProtocolRef/5-Web_Service_Protocol_VPP/webservice.html#//apple_ref/doc/uid/TP40017387-CH8-SW1) | Token VPP da Apple | totalCount | O número total de licenças adquiridas para um aplicativo. |
 | [VPP](https://developer.apple.com/library/content/documentation/Miscellaneous/Reference/MobileDeviceManagementProtocolRef/5-Web_Service_Protocol_VPP/webservice.html#//apple_ref/doc/uid/TP40017387-CH8-SW1) | Token VPP da Apple | url | A URL de armazenamento do iTunes de um aplicativo.|
-| [VPP](https://developer.apple.com/library/content/documentation/Miscellaneous/Reference/MobileDeviceManagementProtocolRef/5-Web_Service_Protocol_VPP/webservice.html#//apple_ref/doc/uid/TP40017387-CH8-SW1) | Token VPP da Apple | Status do usuário | O status do usuário em programas VPP da Apple. |
+| [VPP](https://developer.apple.com/library/content/documentation/Miscellaneous/Reference/MobileDeviceManagementProtocolRef/5-Web_Service_Protocol_VPP/webservice.html#//apple_ref/doc/uid/TP40017387-CH8-SW1) | Token VPP da Apple | Status de Usuário | O status do usuário em programas VPP da Apple. |
 
 
 Para parar de usar serviços da Apple com o Microsoft Intune e excluir os dados, você deve desabilitar o token da Apple do Microsoft Intune e também excluir a sua conta da Apple. Consulte a conta da Apple para saber como executar o gerenciamento de contas.

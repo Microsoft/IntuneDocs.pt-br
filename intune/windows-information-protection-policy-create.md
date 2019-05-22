@@ -1,12 +1,12 @@
 ---
-title: Criar e implantar a política de proteção do aplicativo da WIP (Proteção de Informações do Windows)
+title: Política de proteção do aplicativo da WIP (Proteção de Informações do Windows)
 titleSuffix: Microsoft Intune
 description: Criar e implantar a política de proteção de aplicativo da WIP (Proteção de Informações do Windows) com o Microsoft Intune
 keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 01/02/2019
+ms.date: 04/15/2019
 ms.topic: conceptual
 ms.prod: ''
 ms.service: microsoft-intune
@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 1b8257b315bc18b10e7c2c86e931af005e44730c
-ms.sourcegitcommit: 364a7dbc7eaa414c7a9c39cf53eb4250e1ad3151
+ms.openlocfilehash: 8aaa94428a5a8606a7ba05f0661e96600f24e2d4
+ms.sourcegitcommit: 8c795b041cd39e3896595f64f53ace48be0ec84c
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/09/2019
-ms.locfileid: "59569760"
+ms.lasthandoff: 04/16/2019
+ms.locfileid: "59587409"
 ---
 # <a name="create-and-deploy-windows-information-protection-wip-app-protection-policy-with-intune"></a>Criar e implantar a política de proteção de aplicativo WIP (Proteção de Informações do Windows) com o Intune
 
@@ -52,7 +52,7 @@ Você precisa compreender alguns conceitos ao adicionar uma política de WIP:
 Você precisa configurar o provedor MAM antes de criar uma política de proteção de aplicativo WIP. Saiba mais sobre [como configurar seu provedor MAM com o Intune](app-protection-policies-configure-windows-10.md).  
 
 > [!IMPORTANT]
-> O WIP não oferece suporte a várias identidades. Pode haver apenas uma identidade gerenciada de cada vez.
+> O WIP não dá suporte a várias identidades. Pode haver apenas uma identidade gerenciada de cada vez.
 
 Além disso, você precisa ter a licença e a atualização a seguir:
 

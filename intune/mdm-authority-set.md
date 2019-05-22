@@ -1,6 +1,6 @@
 ---
 title: Defina a autoridade de gerenciamento de dispositivo móvel
-titlesuffix: Microsoft Intune
+titleSuffix: Microsoft Intune
 description: Defina a autoridade de gerenciamento de dispositivo móvel no Intune.
 keywords: ''
 author: ErikjeMS
@@ -10,6 +10,7 @@ ms.date: 04/30/2018
 ms.topic: conceptual
 ms.prod: ''
 ms.service: microsoft-intune
+ms.localizationpriority: high
 ms.technology: ''
 ms.assetid: 8deff871-5dff-4767-9484-647428998d82
 ms.reviewer: damionw
@@ -17,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 99b913b23638a507ed9b0a5cb32afff66679a164
-ms.sourcegitcommit: cb93613bef7f6015a4c4095e875cb12dd76f002e
+ms.openlocfilehash: 898c4eee19aa50136736f4ee72c55e4e8931317d
+ms.sourcegitcommit: 484a898d54f5386fdbce300225aaa3495cecd6b0
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/02/2019
-ms.locfileid: "57231903"
+ms.lasthandoff: 04/01/2019
+ms.locfileid: "59567472"
 ---
 # <a name="set-the-mobile-device-management-authority"></a>Defina a autoridade de gerenciamento de dispositivo móvel
 
@@ -34,12 +35,12 @@ As configurações possíveis são:
 
 - **Intune Autônomo** – Gerenciamento apenas na nuvem, que você pode definir usando o Portal do Azure. Inclui o conjunto completo de recursos que o Intune oferece. [Definir a autoridade MDM no console do Intune](#set-mdm-authority-to-intune).
 
-- **Intune Híbrido** – Integração da solução de nuvem Intune com o System Center Configuration Manager. Você configura o Intune usando o console do Configuration Manager. [Definir a autoridade do MDM no Configuration Manager](https://docs.microsoft.com/sccm/mdm/deploy-use/configure-intune-subscription). 
+- **Cogerenciamento do Intune**: integração da solução na nuvem do Intune com o System Center Configuration Manager para dispositivos Windows 10. Você configura o Intune usando o console do Configuration Manager. [Configurar o registro automático de dispositivos ao Intune](https://docs.microsoft.com/sccm/comanage/tutorial-co-manage-clients#configure-auto-enrollment-of-devices-to-intune). 
 
     > [!Important]
-    >A integração de novos clientes MDM híbridos será desativada em uma versão futura. Para obter mais informações, confira a postagem no blog [Migrar do Gerenciamento de dispositivo móvel híbrido para o Intune no Azure](https://techcommunity.microsoft.com/t5/Intune-Customer-Success/Move-from-Hybrid-Mobile-Device-Management-to-Intune-on-Azure/ba-p/280150).
+    >A integração de novos clientes MDM híbridos foi preterida. Para obter mais informações, confira a postagem no blog [Migrar do Gerenciamento de dispositivo móvel híbrido para o Intune no Azure](https://techcommunity.microsoft.com/t5/Intune-Customer-Success/Move-from-Hybrid-Mobile-Device-Management-to-Intune-on-Azure/ba-p/280150).
 
-- **Gerenciamento de dispositivo móvel para o Office 365** – Integração do Office 365 com a solução de nuvem do Intune. Configure o Intune do seu Centro de Administração do Office 365. Inclui um subconjunto dos recursos que estão disponíveis com o Intune Autônomo. Defina a autoridade MDM no Centro de administração do Office 365.
+- **Gerenciamento de dispositivo móvel para o Office 365** – Integração do Office 365 com a solução de nuvem do Intune. Configure o Intune no centro de administração do Microsoft 365. Inclui um subconjunto dos recursos que estão disponíveis com o Intune Autônomo. Defina a autoridade de MDM no centro de administração do Microsoft 365.
 
 > [!IMPORTANT]
 > No Configuration Manager versão 1610 ou posterior e no Microsoft Intune versão 1705, você altera a autoridade de MDM sem precisar contatar o Suporte da Microsoft e sem cancelar o registro e registrar novamente os dispositivos gerenciados existentes. Para saber mais, confira [Preparar para alterar a autoridade de MDM para o Configuration Manager](mdm-authority-set.md#prepare-to-change-the-mdm-authority-to-configuration-manager).

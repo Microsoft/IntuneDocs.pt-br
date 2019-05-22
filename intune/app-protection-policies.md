@@ -1,27 +1,29 @@
 ---
 title: Criar e implantar políticas de proteção do aplicativo
 titleSuffix: Microsoft Intune
-description: Saiba como criar e atribuir as políticas de proteção de aplicativo do Microsoft Intune.
+description: Este tópico descreve como criar e atribuir as políticas de proteção de aplicativo (APP) do Microsoft Intune.
 keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 11/28/2018
-ms.topic: article
+ms.date: 04/08/2019
+ms.topic: conceptual
 ms.prod: ''
 ms.service: microsoft-intune
+ms.localizationpriority: high
 ms.technology: ''
 ms.assetid: f31b2964-e932-4cee-95c4-8d5506966c85
 ms.reviewer: joglocke
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: e81a80dae9777cae96d9ddc6dfe9d64b2abf1204
-ms.sourcegitcommit: e9ba1280b95565a5c5674b825881655d0303e688
+ms.collection: M365-identity-device-management
+ms.openlocfilehash: a7d7834719b42a1aaa6240510a951733a96f6add
+ms.sourcegitcommit: 364a7dbc7eaa414c7a9c39cf53eb4250e1ad3151
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/15/2019
-ms.locfileid: "54297359"
+ms.lasthandoff: 04/09/2019
+ms.locfileid: "59569786"
 ---
 # <a name="how-to-create-and-assign-app-protection-policies"></a>Como criar e atribuir as políticas de proteção de aplicativo
 
@@ -52,7 +54,7 @@ Para saber mais sobre como adicionar os aplicativos de linha de negócios (LOB) 
 6. Na folha **Adicionar uma política**, selecione **Definir configurações necessárias** para abrir **Configurações**.
 
    Há três categorias de configurações de política:
-   - **Realocação de dados** – esse grupo inclui os controles DLP (prevenção de perda dados), como restrições de cortar, copiar, colar e salvar-como. Essas configurações determinam como os usuários interagem com os dados nos aplicativos.
+   - **Proteção de dados**: esse grupo inclui os controles de DLP (prevenção de perda dados), como restrições de cortar, copiar, colar e salvar como. Essas configurações determinam como os usuários interagem com os dados nos aplicativos.
    - **Requisitos de acesso** – esse grupo contém as opções de PIN por aplicativo que determinam como o usuário final acessa os aplicativos em um contexto de trabalho.  
    - **Inicialização condicional** – esse grupo contém configurações como configurações de sistema operacional mínimo, jailbreak e detecção de dispositivos com raiz e períodos de cortesia offline.
 

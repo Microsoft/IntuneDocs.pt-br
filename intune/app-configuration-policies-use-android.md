@@ -1,15 +1,16 @@
 ---
 title: Adicionar políticas de configuração de aplicativo para dispositivos Android gerenciados
-titlesuffix: Microsoft Intune
+titleSuffix: Microsoft Intune
 description: Use as políticas de configuração de aplicativo no Microsoft Intune para fornecer configurações quando os usuários executarem um aplicativo de perfil de trabalho Android.
 keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 10/26/2018
-ms.topic: article
+ms.date: 02/21/2019
+ms.topic: conceptual
 ms.prod: ''
 ms.service: microsoft-intune
+ms.localizationpriority: high
 ms.technology: ''
 ms.assetid: d0b6f3fe-2bd4-4518-a6fe-b9fd115ed5e0
 ms.reviewer: chrisbal
@@ -17,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 512fc924f71ba9a9fdd46ba8f5f5c087de83c2dd
-ms.sourcegitcommit: 727c3ae7659ad79ea162250d234d7730f840c731
+ms.openlocfilehash: dccbfe597fa4bd461bb71cb86d38ffdfd52d719a
+ms.sourcegitcommit: 484a898d54f5386fdbce300225aaa3495cecd6b0
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/07/2019
-ms.locfileid: "55840409"
+ms.lasthandoff: 04/01/2019
+ms.locfileid: "59567420"
 ---
 # <a name="add-app-configuration-policies-for-managed-android-devices"></a>Adicionar políticas de configuração de aplicativo para dispositivos Android gerenciados
 
@@ -44,13 +45,13 @@ Use as políticas de configuração de aplicativo no Microsoft Intune para forne
 6. Selecione **Android** para **Plataforma**.
 7. Selecione **Aplicativo Associado** para escolher o aplicativo para o qual deseja definir uma política de configuração de aplicativo. Selecione na lista de aplicativos de perfil de trabalho Android que você aprovou e sincronizou com o Intune.
 8. Selecione **Permissões**. É possível definir configurações usando:
-    - [Designer de configuração](#Use-the-configuration-designer)
-    - [Editor de JSON](#Enter-the-JSON-editor)
+    - [Designer de configuração](#use-the-configuration-designer)
+    - [Editor de JSON](#enter-the-json-editor)
 9. Escolha **OK** e, em seguida, **Adicionar**.
 
 ## <a name="use-the-configuration-designer"></a>Usar o designer de configuração
 
-Você pode usar o designer de configuração para aplicativos Android que dão suporte à configuração. A configuração será aplicada a dispositivos registrados no Intune. O designer permite definir valores de configuração específicos para as configurações que um aplicativo expõe.
+Você poderá usar o designer de configuração para aplicativos Android quando o aplicativo tiver sido criado para dar suporte a configurações. A configuração será aplicada a dispositivos registrados no Intune. O designer permite definir valores de configuração específicos para as configurações que um aplicativo expõe.
 
 Selecione **Adicionar** para selecionar a lista de definições de configuração que você deseja especificar para o aplicativo.  
 Para cada chave e valor na configuração, defina:
@@ -72,7 +73,7 @@ Você poderá escolher as seguintes opções se escolher variável como o tipo d
 | Domain | contoso.com |
 | Nome de usuário | John Doe |
 | ID da Conta | fc0dc142-71d8-4b12-bbea-bae2a8514c81 |
-| ID de Usuário | 3ec2c00f-b125-4519-acf0-302ac3761822 |
+| ID do Usuário | 3ec2c00f-b125-4519-acf0-302ac3761822 |
 | ID do Dispositivo | b9841cd9-9843-405f-be28-b2265c59ef97 |
 
 ### <a name="allow-only-configured-organization-accounts-in-multi-identity-apps"></a>Permitir somente contas da organização configuradas em aplicativos de várias identidades 

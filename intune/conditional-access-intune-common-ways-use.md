@@ -1,26 +1,28 @@
 ---
-title: Cenários de acesso condicional | Microsoft Intune
+title: Cenários de acesso condicional
+titleSuffix: Microsoft Intune
 description: Saiba como o acesso condicional do Intune geralmente é usado para o acesso condicional baseado em aplicativo e baseado em dispositivo.
 keywords: ''
 author: brenduns
 ms.author: brenduns
 manager: dougeby
-ms.date: 09/25/2018
+ms.date: 03/31/2019
 ms.topic: conceptual
 ms.prod: ''
 ms.service: microsoft-intune
+ms.localizationpriority: high
 ms.technology: ''
 ms.assetid: a0b8e55e-c3d8-4599-be25-dc10c1027b62
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure; get-started; seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: bd29f52b4d108173b8f08b68cf8b85ce291a0077
-ms.sourcegitcommit: 727c3ae7659ad79ea162250d234d7730f840c731
+ms.openlocfilehash: 666a62e9aa42212bacba0e0222a828d89d780eef
+ms.sourcegitcommit: 364a7dbc7eaa414c7a9c39cf53eb4250e1ad3151
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/07/2019
-ms.locfileid: "55842755"
+ms.lasthandoff: 04/09/2019
+ms.locfileid: "59569370"
 ---
 # <a name="what-are-common-ways-to-use-conditional-access-with-intune"></a>Quais são maneiras comuns de usar o acesso condicional com o Intune?
 
@@ -31,7 +33,7 @@ Há dois tipos de acesso condicional com o Intune: acesso condicional baseado em
 As informações abaixo ajudam a entender como usar os recursos de conformidade de *dispositivo* móvel do Intune e os recursos de MAM (gerenciamento de *aplicativo* móvel) do Intune. 
 
 > [!NOTE]
-> O acesso condicional é um recurso do Azure Active Directory incluído com uma licença do Azure Active Directory Premium. O Intune aprimora esse recurso, adicionando a conformidade de dispositivo móvel e o gerenciamento de aplicativo móvel à solução.
+> O acesso condicional é um recurso do Azure Active Directory incluído com uma licença do Azure Active Directory Premium. O Intune aprimora esse recurso, adicionando a conformidade de dispositivo móvel e o gerenciamento de aplicativo móvel à solução. O nó Acesso Condicional acessado no *Intune* é o mesmo nó que o acessado no *Azure AD*.  
 
 ## <a name="device-based-conditional-access"></a>Acesso condicional baseado no dispositivo
 
@@ -71,13 +73,13 @@ Quando os dispositivos não atendem às condições definidas, o usuário final 
 
 O Intune Exchange Connector mantém todos os registros do EAS (Exchange Active Sync) que existem no servidor Exchange, de forma que o Intune possa usar esses registros do EAS e mapeá-los para registros de dispositivo do Intune. Esses registros são dispositivos registrados e reconhecidos pelo Intune. Esse processo permite ou bloqueia o acesso a email.
 
-Se o registro do EAS for novo e o Intune não o reconhecer, o Intune emitirá um comando let que bloqueia o acesso a email. Estes são mais detalhes sobre como esse processo funciona:
+Se o registro do EAS é novo e o Intune não o reconhece, o Intune emite um cmdlet (pronuncia-se "comand-let") que bloqueia o acesso ao email. Estes são mais detalhes sobre como esse processo funciona:
 
 ![Fluxograma do Exchange Local com AC](./media/ca-intune-common-ways-1.png)
 
 1.  O usuário tenta acessar o email corporativo, que está hospedado no Exchange Local 2010 SP1 ou posterior.
 
-2.  Se o dispositivo não for gerenciado pelo Intune, ele terá o acesso a email bloqueado. O Intune envia uma notificação de bloqueio para o cliente do EAS.
+2.  Se o dispositivo não é gerenciado pelo Intune, ele tem o acesso ao email bloqueado. O Intune envia uma notificação de bloqueio para o cliente do EAS.
 
 3.  O EAS recebe a notificação de bloqueio, move o dispositivo para a quarentena e envia o email de quarentena com etapas de correção que contêm links para que os usuários possam registrar seus dispositivos.
 
@@ -91,7 +93,7 @@ Se o registro do EAS for novo e o Intune não o reconhecer, o Intune emitirá um
 
 8.  O Registro de Dispositivo do Azure AD salva as informações de estado do dispositivo.
 
-9.  Se o usuário atender às políticas de acesso condicional, o Intune emitirá um comando let por meio do Intune Exchange Connector que permite a sincronização da caixa de correio.
+9.  Se o usuário atender às políticas de acesso condicional, o Intune emitirá um cmdlet por meio do Intune Exchange Connector que permite a sincronização da caixa de correio.
 
 10. O servidor Exchange envia a notificação ao cliente do EAS, de forma que o usuário possa acessar o email.
 
@@ -101,10 +103,10 @@ O Intune avalia e gerencia o estado do dispositivo.
 
 #### <a name="whats-the-exchange-server-role"></a>O que é a função de servidor Exchange?
 
-O servidor Exchange fornece a API e a infraestrutura para mover os dispositivos para sua quarentena.
+O servidor Exchange fornece a API e a infraestrutura para mover os dispositivos para a quarentena.
 
 > [!IMPORTANT]
-> Lembre-se de que o usuário que está usando o dispositivo deve ter um perfil de conformidade atribuído a ele para que o dispositivo seja avaliado quanto à conformidade. Se nenhuma política de conformidade for implantada para o usuário, o dispositivo será tratado como em conformidade e nenhuma restrição de acesso será aplicada.
+> Lembre-se de que o usuário que está usando o dispositivo deve ter um perfil de conformidade atribuído a ele para que o dispositivo possa ser avaliado quanto à conformidade. Se nenhuma política de conformidade for implantada para o usuário, o dispositivo será tratado como em conformidade e nenhuma restrição de acesso será aplicada.
 
 ### <a name="conditional-access-based-on-network-access-control"></a>Acesso condicional baseado em controle de acesso à rede
 
@@ -136,7 +138,7 @@ O acesso condicional para computadores fornece recursos semelhantes aos disponí
 
 -   **Ingressado no domínio do Azure AD e gerenciamento do Intune:** esse cenário é normalmente voltado para cenários CYOD (Escolha seu próprio dispositivo) e cenários de laptops móveis em que esses dispositivos raramente são conectados à rede corporativa. O dispositivo é ingressado no Azure AD e registrado no Intune, o que remove qualquer dependência do AD local e dos controladores de domínio. Isso pode ser usado como um critério de acesso condicional ao acessar recursos corporativos.
 
--   **Ingressado no domínio do AD e o System Center Configuration Manager:** no branch atual, o System Center Configuration Manager fornece funcionalidades de acesso condicional que podem avaliar critérios específicos de conformidade, além de ser um computador ingressado no domínio:
+-   **Ingressado no domínio do AD e o System Center Configuration Manager:** No branch atual, o System Center Configuration Manager oferece recursos de acesso condicional que podem avaliar critérios específicos de conformidade, além de ser um computador ingressado no domínio:
 
     -   O computador está criptografado?
 

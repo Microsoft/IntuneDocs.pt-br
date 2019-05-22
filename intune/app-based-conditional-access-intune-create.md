@@ -1,15 +1,15 @@
 ---
 title: Configurar política de acesso condicional baseada em aplicativo com o Intune
-titlesuffix: Microsoft Intune
+titleSuffix: Microsoft Intune
 description: Saiba como criar uma política de acesso condicional baseada em aplicativo com o Intune.
 keywords: ''
 author: brenduns
 ms.author: brenduns
 manager: dougeby
-ms.date: 10/26/2018
-ms.topic: article
+ms.date: 02/22/2019
 ms.prod: ''
 ms.service: microsoft-intune
+ms.localizationpriority: high
 ms.technology: ''
 ms.assetid: d1693515-de18-4553-91ef-801976cd3ec7
 ms.reviewer: chrisgre
@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: b2026a446ffef3bd845affe45a7732ef3ab8ec24
-ms.sourcegitcommit: 727c3ae7659ad79ea162250d234d7730f840c731
+ms.openlocfilehash: 1514fe9dfcd09e2b77967b0fed8c36fb7a06634f
+ms.sourcegitcommit: 484a898d54f5386fdbce300225aaa3495cecd6b0
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/07/2019
-ms.locfileid: "55842908"
+ms.lasthandoff: 04/01/2019
+ms.locfileid: "59567485"
 ---
 # <a name="set-up-app-based-conditional-access-policies-with-intune"></a>Configurar políticas de acesso condicional baseadas em aplicativo com o Intune
 
@@ -33,12 +33,11 @@ Configure políticas de acesso condicional com base em aplicativo para aplicativ
 > [!IMPORTANT]
 > Este artigo explica as etapas para adicionar uma política de acesso condicional com base no aplicativo. Você pode usar as mesmas etapas ao adicionar aplicativos como o SharePoint Online, o Microsoft Teams e o Microsoft Exchange Online da lista de aplicativos aprovados.
 
-## <a name="create-app-based-conditional-access-policies-in-azure-ad-workload"></a>Criar políticas de acesso condicional baseadas em aplicativo em cargas de trabalho do Azure AD
-
-Os administradores de TI podem criar políticas de acesso condicional com base no aplicativo usando a carga de trabalho do Azure AD. Esse acesso significa que você não precise alternar entre o Azure e as cargas de trabalho do Intune.
+## <a name="create-app-based-conditional-access-policies"></a>Criar políticas de acesso condicional baseado em aplicativo
+O Acesso Condicional é uma tecnologia do Azure AD (Azure Active Directory). O nó Acesso Condicional acessado no *Intune* é o mesmo nó que o acessado no *Azure AD*. Isso significa que você não precisa alternar entre o Intune e o Azure AD para configurar políticas.
 
 > [!IMPORTANT]
-> Você precisa ter uma licença Premium do Azure AD para criar políticas de acesso condicional do Azure AD no portal do Intune no Azure.
+> Você precisa ter uma licença do Azure Active Directory Premium para criar políticas de acesso condicional no portal do Intune.
 
 ### <a name="to-create-an-app-based-conditional-access-policy"></a>Para criar uma política de acesso condicional baseado no aplicativo
 

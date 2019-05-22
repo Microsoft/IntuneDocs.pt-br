@@ -7,21 +7,23 @@ author: Erikre
 ms.author: erikre
 manager: dougeby
 ms.date: 01/24/2019
-ms.topic: article
+ms.topic: conceptual
 ms.prod: ''
 ms.service: microsoft-intune
+ms.localizationpriority: high
 ms.technology: ''
 ms.assetid: 42605e6e-5b84-44ff-b86e-346ea123b53e
 ms.reviewer: mghadial
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: 51d1c477f490cb23c35ef54a0a5099ee4b4b035b
-ms.sourcegitcommit: 06f62ae989da6c60bac4a52ccd41b429f7367d8c
+ms.collection: M365-identity-device-management
+ms.openlocfilehash: 83cc1f43faba1ee98bde680b1ff2b74c78ff65e4
+ms.sourcegitcommit: 25e6aa3bfce58ce8d9f8c054bc338cc3dff4a78b
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "55068247"
+ms.lasthandoff: 03/14/2019
+ms.locfileid: "57389497"
 ---
 # <a name="how-to-wipe-only-corporate-data-from-intune-managed-apps"></a>Como apagar somente dados corporativos de aplicativos gerenciados pelo Intune
 
@@ -30,7 +32,7 @@ ms.locfileid: "55068247"
 Quando um dispositivo é perdido ou roubado ou quando um funcionário sai da empresa, você quer ter certeza de que os dados dos aplicativos da empresa sejam removidos do dispositivo. No entanto, talvez você não queira remover dados pessoais do dispositivo, principalmente quando se trata de um dispositivo que pertence a um funcionário.
 
 >[!NOTE]
-> As plataformas Android e iOS são as duas plataformas compatíveis no momento para apagar dados corporativos dos aplicativos gerenciados do Intune. Os aplicativos gerenciados do Intune são aplicativos que incluem o SDK de Aplicativo do Intune e têm uma conta de usuário licenciada para sua organização. A implantação de Políticas de Proteção de Aplicativo não precisa habilitar o apagamento seletivo do aplicativo.
+> As plataformas Android, iOS e Windows 10 são as únicas plataformas compatíveis no momento para apagar dados corporativos dos aplicativos gerenciados do Intune. Os aplicativos gerenciados do Intune são aplicativos que incluem o SDK de Aplicativo do Intune e têm uma conta de usuário licenciada para sua organização. A implantação de Políticas de Proteção de Aplicativo não precisa habilitar o apagamento seletivo do aplicativo.
 
 Para remover seletivamente os dados de aplicativo da empresa, crie uma solicitação de apagamento usando as etapas neste tópico. Após a solicitação ser concluída, na próxima vez que o aplicativo for executado no dispositivo, os dados da empresa serão removidos do aplicativo. Além de criar uma solicitação de apagamento, você poderá configurar um apagamento seletivo dos dados da organização como uma nova ação quando as condições de configurações de acesso de APP (Políticas de Proteção de Aplicativos) não forem atendidas. Esse recurso ajuda a proteger e remover os dados confidenciais da organização automaticamente dos aplicativos, com base em critérios pré-configurados.
 

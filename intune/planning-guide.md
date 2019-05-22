@@ -1,27 +1,29 @@
 ---
 title: Introdução ao planejamento e design do Intune
-titlesuffix: Microsoft Intune
+titleSuffix: Microsoft Intune
 description: Este artigo é uma introdução a todas as seções de planejamento, design e implementação do Microsoft Intune. Ferramentas para ajudá-lo a determinar as metas, os cenários de casos de uso e requisitos, criar planos de distribuição e comunicação, bem como planos de suporte, teste e validação.
 keywords: ''
 author: dougeby
 ms.author: dougeby
 manager: dougeby
 ms.date: 01/02/2018
-ms.topic: article
+ms.topic: conceptual
 ms.prod: ''
 ms.service: microsoft-intune
+ms.localizationpriority: high
 ms.technology: ''
 ms.assetid: a65efa6e-4a48-47f3-8f6e-34a85ca64ced
 ms.reviewer: jeffbu, cgerth
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic
-ms.openlocfilehash: b2ddf29157255feaa7d336913640a1cf434f921c
-ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.collection: M365-identity-device-management
+ms.openlocfilehash: 5b8a4a76e59604038ae133701b3378c573e862aa
+ms.sourcegitcommit: 484a898d54f5386fdbce300225aaa3495cecd6b0
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52185760"
+ms.lasthandoff: 04/01/2019
+ms.locfileid: "59568629"
 ---
 # <a name="intune-deployment-planning-design-and-implementation-guide"></a>Guia de planejamento de implantação, design e implementação do Intune
 
@@ -41,7 +43,7 @@ Este guia inclui as seções que orientarão você pelo processo de ponta a pont
 
 -   [Seção 4: Desenvolver um plano de distribuição](planning-guide-rollout-plan.md)
 
--   [Seção 5: Desenvolver um plano de comunicação pra a distribuição](planning-guide-communication-plan.md)
+-   [Seção 5: Desenvolver um plano de comunicação para a distribuição](planning-guide-communication-plan.md)
 
 -   [Seção 6: Desenvolver um plano de suporte](planning-guide-support-plan.md)
 
@@ -53,7 +55,7 @@ Este guia inclui as seções que orientarão você pelo processo de ponta a pont
 
 Este guia também fornece outras informações técnicas e modelos de tabela que podem ser usados para ajudá-lo com o processo de planejamento de implantação, design e implementação do Intune.
 
--   [Recursos adicionais: Links e modelos de tabela](planning-guide-resources.md)
+-   [Recursos adicionais: links e modelos de tabela](planning-guide-resources.md)
 
 ## <a name="assumptions"></a>Suposições
 

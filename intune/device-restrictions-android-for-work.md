@@ -15,12 +15,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure, seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 4840ccac35f37e956c363a1f6103da623ef27782
-ms.sourcegitcommit: 143dade9125e7b5173ca2a3a902bcd6f4b14067f
-ms.translationtype: HT
+ms.openlocfilehash: d2eac8c396e63fa2f3a4e8ef2c2b88b883c87433
+ms.sourcegitcommit: b7f3a6d67f7ae2356bbca1934056d28cdfc6e45e
+ms.translationtype: MTE75
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "61505770"
+ms.lasthandoff: 05/17/2019
+ms.locfileid: "65836463"
 ---
 # <a name="android-enterprise-device-settings-to-allow-or-restrict-features-using-intune"></a>Configurações do dispositivo do Android Enterprise para permitir ou restringir os recursos usando o Intune
 
@@ -327,3 +327,7 @@ Essas configurações de senha aplicam-se a perfis pessoais em dispositivos que 
 [Atribuir o perfil](device-profile-assign.md) e [monitorar seu status](device-profile-monitor.md).
 
 Também é possível criar perfis de quiosque de dispositivos dedicados para dispositivos com [Android](device-restrictions-android.md#kiosk) e [Windows 10](kiosk-settings.md).
+
+## <a name="see-also"></a>Consulte também
+
+[Configurando e solucionando problemas de dispositivos Android no Microsoft Intune](https://support.microsoft.com/help/4476974)

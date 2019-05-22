@@ -1,27 +1,29 @@
 ---
 title: Perfil de VPN por aplicativo personalizado para Android
-titlesuffix: Microsoft Intune
+titleSuffix: Microsoft Intune
 description: Saiba como criar um perfil VPN por aplicativo para dispositivos Android gerenciados pelo Microsoft Intune.
 keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
 ms.date: 04/05/2018
-ms.topic: article
+ms.topic: conceptual
 ms.prod: ''
 ms.service: microsoft-intune
+ms.localizationpriority: high
 ms.technology: ''
 ms.assetid: d035ebf5-85f4-4001-a249-75d24325061a
 ms.reviewer: chrisbal
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: 48f1227da6260217105120d31301f60b6e06110c
-ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.collection: M365-identity-device-management
+ms.openlocfilehash: 38763d5c16d5cba36220c03e9d74b30a465d752b
+ms.sourcegitcommit: 484a898d54f5386fdbce300225aaa3495cecd6b0
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52186011"
+ms.lasthandoff: 04/01/2019
+ms.locfileid: "59568460"
 ---
 # <a name="use-a-microsoft-intune-custom-profile-to-create-a-per-app-vpn-profile-for-android-devices"></a>Use um perfil personalizado do Microsoft Intune para criar um perfil de VPN por aplicativo para dispositivos Android
 
@@ -36,7 +38,7 @@ Após atribuir a política aos grupos de usuários ou de dispositivos Android, o
 > Para este perfil, há suporte apenas para o tipo de conexão Pulse Secure e Citrix.
 
 
-## <a name="step-1-create-a-vpn-profile"></a>Etapa 1: Criar um perfil de VPN
+## <a name="step-1-create-a-vpn-profile"></a>Etapa 1: Criar um perfil VPN
 
 
 1. Entre no [portal do Azure](https://portal.azure.com).
@@ -81,6 +83,6 @@ Como alternativa, você pode usar o valor **WHITELIST** para especificar uma lis
 
 
 
-## <a name="step-3-assign-both-policies"></a>Etapa 3: atribuir ambas as políticas
+## <a name="step-3-assign-both-policies"></a>Etapa 3: Atribuir ambas as políticas
 
 Use as instruções em [Como atribuir perfis de dispositivo](device-profile-assign.md) para atribuir os dois perfis para os dispositivos ou usuários necessários.

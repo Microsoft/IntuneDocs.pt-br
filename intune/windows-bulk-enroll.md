@@ -1,6 +1,6 @@
 ---
 title: Registro em massa no Windows 10
-titlesuffix: Microsoft Intune
+titleSuffix: Microsoft Intune
 description: Criar um pacote de registro em massa para o Microsoft Intune
 keywords: ''
 author: ErikjeMS
@@ -10,18 +10,19 @@ ms.date: 5/21/2018
 ms.topic: conceptual
 ms.prod: ''
 ms.service: microsoft-intune
+ms.localizationpriority: high
 ms.technology: ''
 ms.assetid: 1f39c02a-8d8a-4911-b4e1-e8d014dbce95
 ms.reviewer: damionw
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 7df624f0a3db11b058498c650a9f9c3dd95e8d12
-ms.sourcegitcommit: cb93613bef7f6015a4c4095e875cb12dd76f002e
+ms.openlocfilehash: 064d11f1992d63df9dacbedb8d53e849425e9b1f
+ms.sourcegitcommit: 484a898d54f5386fdbce300225aaa3495cecd6b0
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/02/2019
-ms.locfileid: "57236799"
+ms.lasthandoff: 04/01/2019
+ms.locfileid: "59568161"
 ---
 # <a name="bulk-enrollment-for-windows-devices"></a>Registro em massa para dispositivos Windows
 
@@ -29,7 +30,7 @@ ms.locfileid: "57236799"
 
 Como administrador, você pode ingressar muitos dispositivos novos com Windows ao Azure Active Directory e ao Intune. Para registrar em massa os dispositivos em seu locatário do Azure AD, você cria um pacote de provisionamento com o aplicativo WCD (Windows Configuration Designer). A aplicação do pacote de provisionamento em dispositivos corporativos ingressa os dispositivos ao seu locatário do Azure AD e os registra no gerenciamento do Intune. Após a aplicação do pacote, ele estará pronto para logon de seus usuários do Azure AD.
 
-Os usuários do Azure AD são usuários padrão nesses dispositivos e recebem políticas do Intune atribuídas e os aplicativos necessários. Não há suporte no momento para cenários de autoatendimento e de Portal da empresa.
+Os usuários do Azure AD são usuários padrão nesses dispositivos e recebem políticas do Intune atribuídas e os aplicativos necessários. Os dispositivos Windows registrados no Intune pelo registro em massa do Windows podem usar o aplicativo do Portal da Empresa para instalar os aplicativos disponíveis. 
 
 ## <a name="prerequisites-for-windows-devices-bulk-enrollment"></a>Pré-requisitos para registro em massa de dispositivos Windows
 

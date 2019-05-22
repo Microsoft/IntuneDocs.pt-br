@@ -1,15 +1,16 @@
 ---
 title: Registrar dispositivos Android no Intune
-titlesuffix: Microsoft Intune
+titleSuffix: Microsoft Intune
 description: Saiba como registrar dispositivos Android no Intune.
 keywords: ''
 author: ErikjeMS
 ms.author: erikje
 manager: dougeby
 ms.date: 12/31/2018
-ms.topic: article
+ms.topic: conceptual
 ms.prod: ''
 ms.service: microsoft-intune
+ms.localizationpriority: high
 ms.technology: ''
 ms.assetid: f276d98c-b077-452a-8835-41919d674db5
 ms.reviewer: chrisbal
@@ -17,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 866db22b79f2ca9255f9eccdfdba28dc353836ed
-ms.sourcegitcommit: 727c3ae7659ad79ea162250d234d7730f840c731
+ms.openlocfilehash: 363a7d0ef32aee0c21c6e5cecbd55cc3087f4613
+ms.sourcegitcommit: 484a898d54f5386fdbce300225aaa3495cecd6b0
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/07/2019
-ms.locfileid: "55846750"
+ms.lasthandoff: 04/01/2019
+ms.locfileid: "59568668"
 ---
 # <a name="enroll-android-devices"></a>Registrar dispositivos Android
 
@@ -30,10 +31,10 @@ ms.locfileid: "55846750"
 
 Como administrador do Intune, você pode gerenciar os seguintes dispositivos Android:
 - Dispositivos Android, incluindo dispositivos Samsung KNOX Standard.
-- Dispositivos corporativos Android, incluindo:
-    - **Dispositivos de perfil de trabalho Android**: Dispositivos pessoais cujo acesso a dados corporativos foi permitido. Administradores podem gerenciar contas de trabalho, aplicativos e dados. Dados pessoais no dispositivo são mantidos separados de dados de trabalho e os administradores não controlam as configurações ou dados pessoais. 
-    - **Dispositivos Android dedicados**: Dispositivos de propriedade corporativa para único uso, como a sinalização digital, tíquete de impressão ou gerenciamento de estoque. Os administradores bloqueiam o uso de um dispositivo a um conjunto limitado de aplicativos e links da Web. Isso também impede que os usuários adicionem outros aplicativos ou executem outras ações no dispositivo.
-    - **Dispositivos Android totalmente gerenciados**: Dispositivos de propriedade corporativa para único uso, usados exclusivamente para uso profissional e não pessoal. Os administradores podem gerenciar todo o dispositivo e impor controles de política não disponíveis para perfis de trabalho. 
+- Dispositivos Android Enterprise, incluindo:
+    - **Dispositivos Android Enterprise de perfil de trabalho**: Dispositivos pessoais cujo acesso a dados corporativos foi permitido. Administradores podem gerenciar contas de trabalho, aplicativos e dados. Dados pessoais no dispositivo são mantidos separados de dados de trabalho e os administradores não controlam as configurações ou dados pessoais. 
+    - **Dispositivos Android Enterprise dedicados**: Dispositivos de propriedade corporativa para único uso, como a sinalização digital, tíquete de impressão ou gerenciamento de estoque. Os administradores bloqueiam o uso de um dispositivo a um conjunto limitado de aplicativos e links da Web. Isso também impede que os usuários adicionem outros aplicativos ou executem outras ações no dispositivo.
+    - **Dispositivos Android Enterprise totalmente gerenciados**: Dispositivos de propriedade corporativa para único uso, usados exclusivamente para uso profissional e não pessoal. Os administradores podem gerenciar todo o dispositivo e impor controles de política não disponíveis para perfis de trabalho. 
 
 ## <a name="prerequisite"></a>Pré-requisito
 
@@ -54,11 +55,11 @@ Para bloquear o registro de dispositivos Android ou para bloquear o registro som
 
 ## <a name="set-up-android-enterprise-enrollment"></a>Configurar o registro do Android Enterprise
 
-O Android Enterprise é um conjunto de recursos e serviços do dispositivo Android que separam aplicativos e dados pessoais de um perfil de trabalho que contém dados e aplicativos de trabalho. Os dispositivos corporativos Android incluem dispositivos de perfil de trabalho, dispositivos totalmente gerenciados e dispositivos de quiosque. 
+O Android Enterprise oferece um conjunto de opções de registro que fornece aos usuários os recursos mais seguros e atualizados. As opções de registro do Android Enterprise incluem dispositivos de perfil de trabalho, dispositivos totalmente gerenciados e dispositivos dedicados.
 
-- [Configurar registros de perfil de trabalho do Android](android-work-profile-enroll.md)
-- [Configurar registros de dispositivos Android dedicados](android-kiosk-enroll.md)
-- [Configurar registros totalmente gerenciados do Android](android-fully-managed-enroll.md)
+- [Configurar registros de perfil de trabalho Android Enterprise](android-work-profile-enroll.md)
+- [Configurar registros de dispositivo dedicados Android Enterprise](android-kiosk-enroll.md)
+- [Configurar registro de dispositivos totalmente gerenciados Android Enterprise](android-fully-managed-enroll.md)
 
 ## <a name="end-user-experience-when-enrolling-a-samsung-knox-device"></a>Experiência do usuário final ao registrar um dispositivo Samsung Knox
 
@@ -76,6 +77,6 @@ Há várias considerações ao registrar dispositivos Samsung Knox:
 
 ## <a name="next-steps"></a>Próximas etapas
 
-- [Configurar registros de perfil de trabalho do Android](android-work-profile-enroll.md)
-- [Configurar registros de dispositivos Android dedicados](android-kiosk-enroll.md)
-- [Configurar registros totalmente gerenciados do Android](android-fully-managed-enroll.md)
+- [Configurar registros de perfil de trabalho Android Enterprise](android-work-profile-enroll.md)
+- [Configurar registros de dispositivo dedicados Android Enterprise](android-kiosk-enroll.md)
+- [Configurar registro de dispositivos totalmente gerenciados Android Enterprise](android-fully-managed-enroll.md)

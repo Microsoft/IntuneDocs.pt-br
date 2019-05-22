@@ -6,23 +6,24 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 10/11/2018
+ms.date: 04/08/2019
 ms.topic: conceptual
 ms.prod: ''
 ms.service: microsoft-intune
+ms.localizationpriority: high
 ms.technology: ''
 ms.assetid: 1c086943-84a0-4d99-8295-490a2bc5be4b
 ms.reviewer: joglocke
 ms.suite: ems
 search.appverid: MET150
-ms.custom: intune-azure; get-started
+ms.custom: intune-azure, get-started, seoapril2019
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: dbb6a8f159aebe837fabf671a84dd96223298227
-ms.sourcegitcommit: 727c3ae7659ad79ea162250d234d7730f840c731
+ms.openlocfilehash: 45e9f50881ff7da0554a4731712441b5fedb01d8
+ms.sourcegitcommit: 364a7dbc7eaa414c7a9c39cf53eb4250e1ad3151
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/07/2019
-ms.locfileid: "55836346"
+ms.lasthandoff: 04/09/2019
+ms.locfileid: "59569409"
 ---
 # <a name="what-are-app-protection-policies"></a>O que são políticas de proteção de aplicativo?
 
@@ -50,7 +51,7 @@ As políticas de proteção de aplicativo podem ser configuradas para aplicativo
 > [!IMPORTANT]
 > Você pode criar políticas de gerenciamento para aplicativos móveis do Office que se conectam aos serviços do Office 365. Você também pode proteger o acesso às caixas de correio locais do Exchange criando políticas de proteção de aplicativos do Intune para o Outlook para iOS e Android habilitado com Autenticação Moderna híbrida. Antes de usar esse recurso, verifique se você atende aos [requisitos do Outlook para iOS e Android](https://technet.microsoft.com/library/mt846639(v=exchg.160).aspx). As políticas de proteção de aplicativos não são compatíveis com outros aplicativos que se conectam a serviços locais do Exchange ou do SharePoint.
 
-**Os principais benefícios do uso de políticas de proteção de aplicativo são**
+**Os principais benefícios de usar as políticas de proteção do aplicativo são**:
 
 -   Proteger os dados da empresa no nível do aplicativo. Como o gerenciamento de aplicativo móvel não requer gerenciamento de dispositivos, é possível proteger os dados da empresa em dispositivos gerenciados e não gerenciados. O gerenciamento concentra-se na identidade do usuário, o que elimina a necessidade de gerenciar dispositivos.
 
@@ -69,8 +70,8 @@ Há benefícios adicionais ao usar MDM com políticas de proteção de aplicativ
 ### <a name="supported-platforms-for-app-protection-policies"></a>Plataformas com suporte para as políticas de proteção de aplicativo
 O suporte da plataforma de políticas de proteção de aplicativo do Intune está alinhado ao suporte da plataforma de aplicativo móvel do Office para dispositivos com Android e iOS. Para obter detalhes, confira a seção **Aplicativos móveis** dos [Requisitos de sistema do Office](https://products.office.com/office-system-requirements#coreui-contentrichblock-9r05pwg).
 
-Não há suporte para dispositivos Windows. No entanto, você pode usar a Proteção de Informações do Windows, que oferece recursos semelhantes. Para obter detalhes, consulte [Proteger seus dados empresariais usando a WIP (Proteção de Informações do Windows)](https://technet.microsoft.com/itpro/windows/keep-secure/protect-enterprise-data-using-wip).
-
+> [!IMPORTANT]
+> O dispositivo exige o Portal da Empresa do Intune para receber Políticas de proteção do aplicativo no Android. Saiba mais em [Requisitos de acesso dos aplicativos para o Portal da Empresa do Intune](end-user-mam-apps-android.md#access-apps).
 
 ## <a name="how-app-protection-policies-protect-app-data"></a>Como as políticas de proteção de aplicativo protegem dados do aplicativo
 
@@ -151,7 +152,7 @@ Para obter um exemplo de um contexto pessoal, considere um usuário que inicia u
 
 Como exemplo de contexto de trabalho, considere um usuário que inicia o aplicativo OneDrive usando sua conta corporativa. No contexto de trabalho, ele não pode mover arquivos para um local de armazenamento pessoal. Mais tarde, quando ele usa o OneDrive com sua conta pessoal, pode copiar e mover dados do seu OneDrive pessoal sem restrições.
 
-- Saiba mais sobre os aplicativos que oferecem suporte a [MAM e várias identidades](https://www.microsoft.com/cloud-platform/microsoft-intune-apps) com o Intune.
+- Saiba mais sobre os aplicativos que dão suporte a [MAM e várias identidades](https://www.microsoft.com/cloud-platform/microsoft-intune-apps) com o Intune.
 
 ## <a name="next-steps"></a>Próximas etapas
 

@@ -1,15 +1,16 @@
 ---
-title: Configurar o registro do Intune para dispositivos corporativos Android dedicados
-titlesuffix: Microsoft Intune
-description: Saiba como registrar dispositivos corporativos Android dedicados no Intune.
+title: Configurar o registro do Intune para dispositivos dedicados com Android Enterprise
+titleSuffix: Microsoft Intune
+description: Saiba como registrar dispositivos dedicados com Android Enterprise no Intune.
 keywords: ''
 author: ErikjeMS
 ms.author: erikje
 manager: dougeby
 ms.date: 1/15/2019
-ms.topic: article
+ms.topic: conceptual
 ms.prod: ''
 ms.service: microsoft-intune
+ms.localizationpriority: high
 ms.technology: ''
 ms.assetid: ''
 ms.reviewer: chrisbal
@@ -17,36 +18,36 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 4e71ae4add82482bf0bfbde25adac69c51570966
-ms.sourcegitcommit: 727c3ae7659ad79ea162250d234d7730f840c731
+ms.openlocfilehash: 5e980049797ffc3c727d89c197037c019b94326a
+ms.sourcegitcommit: 484a898d54f5386fdbce300225aaa3495cecd6b0
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/07/2019
-ms.locfileid: "55834034"
+ms.lasthandoff: 04/01/2019
+ms.locfileid: "59567342"
 ---
-# <a name="set-up-intune-enrollment-of-android-enterprise-dedicated-devices"></a>Configurar o registro do Intune para dispositivos corporativos Android dedicados
+# <a name="set-up-intune-enrollment-of-android-enterprise-dedicated-devices"></a>Configurar o registro do Intune para dispositivos dedicados com Android Enterprise
 
 [!INCLUDE [azure_portal](./includes/azure_portal.md)]
 
-O Android dá suporte a dispositivos de propriedade corporativa para único uso, no estilo quiosque, com seu conjunto de soluções dedicado. Esses dispositivos são usados para uma finalidade única, como sinalização digital, impressão de tíquete ou gerenciamento de inventário, para mencionar apenas alguns. Os administradores bloqueiam o uso de um dispositivo a um conjunto limitado de aplicativos e links da Web. Isso também impede que os usuários adicionem outros aplicativos ou executem outras ações no dispositivo.
+O Android Enterprise dá suporte a dispositivos de propriedade corporativa para único uso, no estilo quiosque, com seu conjunto de soluções dedicado. Esses dispositivos são usados para uma finalidade única, como sinalização digital, impressão de tíquete ou gerenciamento de inventário, para mencionar apenas alguns. Os administradores bloqueiam o uso de um dispositivo a um conjunto limitado de aplicativos e links da Web. Isso também impede que os usuários adicionem outros aplicativos ou executem outras ações no dispositivo.
 
-O Intune ajuda você a implantar aplicativos e configurações em dispositivos Android dedicados. Para obter detalhes específicos sobre o Android Enterprise, confira [Requisitos do Android Enterprise](https://support.google.com/work/android/answer/6174145?hl=en&ref_topic=6151012).
+O Intune ajuda você a implantar aplicativos e configurações em dispositivos dedicados com Android Enterprise. Para obter detalhes específicos sobre o Android Enterprise, confira [Requisitos do Android Enterprise](https://support.google.com/work/android/answer/6174145?hl=en&ref_topic=6151012).
 
 Os dispositivos que você gerencia dessa maneira são registrados no Intune sem uma conta de usuário e não são associados a nenhum usuário final. Eles não estão destinados a aplicativos de uso pessoal nem a aplicativos que têm um requisito rigoroso em relação a dados de conta específicos do usuário, como o Outlook ou o Gmail.
 
 ## <a name="device-requirements"></a>Requisitos do dispositivo
 
-Os dispositivos precisam atender a esses requisitos para serem gerenciados como um dispositivo corporativo Android dedicado:
+Os dispositivos precisam atender a esses requisitos para serem gerenciados como um dispositivo dedicado com Android Enterprise:
 
 - Sistema operacional Android versão 5.1 e posterior.
 - Os dispositivos precisam executar uma distribuição do Android que tem conectividade com GMS (Google Mobile Services). Os dispositivos precisam ter o GMS disponível e conseguir se conectar a ele.
 
-## <a name="set-up-android-dedicated-device-management"></a>Configurar o gerenciamento de dispositivos Android dedicados
+## <a name="set-up-android-enterprise-dedicated-device-management"></a>Configurar o gerenciamento de dispositivo dedicado com Android Enterprise
 
-Para configurar o gerenciamento de um dispositivo Android dedicado, siga estas etapas:
+Para configurar o gerenciamento de um dispositivo dedicado com Android Enterprise, execute estas etapas:
 
 1. Para preparar-se para gerenciar dispositivos móveis, você precisa [definir a autoridade de MDM (gerenciamento de dispositivo móvel) para o **Microsoft Intune**](mdm-authority-set.md) para obter instruções. Você define esse item apenas uma vez, na primeira vez que configura o Intune para o gerenciamento de dispositivo móvel.
-2. [Conecte sua conta de locatário do Intune à sua conta do Android Enterprise](connect-intune-android-enterprise.md).
+2. [Conecte sua conta de locatário do Intune à sua conta do Google Play Gerenciado](connect-intune-android-enterprise.md).
 3. [Crie um perfil de registro.](#create-an-enrollment-profile)
 4. [Crie um grupo de dispositivos](#create-a-device-group).
 5. [Registre os dispositivos dedicados](#enroll-the-dedicated-devices).
@@ -55,7 +56,7 @@ Para configurar o gerenciamento de um dispositivo Android dedicado, siga estas e
 
 Você precisa criar um perfil de registro para que seja possível registrar os dispositivos dedicados. Quando o perfil é criado, ele fornece um token de registro (uma cadeia de caracteres aleatória) e um código QR. Dependendo do sistema operacional Android e da versão do dispositivo, é possível usar o token ou o código QR para [registrar o dispositivo dedicado](#enroll-the-dedicated-devices).
 
-1. Acesse o [Portal do Intune](https://portal.azure.com) e escolha **Registro do dispositivo** > **Registro do Android** > **Registros de dispositivo de quiosque e de tarefa**.
+1. Acesse o [portal do Intune](https://portal.azure.com) e escolha **Registro de dispositivo** > **Registro do Android** > **Dispositivos dedicados de propriedade corporativa**.
 2. Escolha **Criar** e preencha os campos obrigatórios.
     - **Nome**: digite um nome que você usará ao atribuir o perfil ao grupo de dispositivos dinâmicos.
     - **Data de vencimento do token**: a data em que o token expira. O Google impõe o máximo de 90 dias.
@@ -90,7 +91,7 @@ Você pode substituir ou remover tokens e os códigos QR.
 
 A substituição ou a revogação de um código QR/token não terá nenhum efeito em dispositivos que já estejam registrados.
 
-1. Acesse o [Portal do Intune](https://portal.azure.com) e escolha **Registro do dispositivo** > **Registro do Android** > **Registros de dispositivo de quiosque e de tarefa**.
+1. Acesse o [portal do Intune](https://portal.azure.com) e escolha **Registro de dispositivo** > **Registro do Android** > **Dispositivos dedicados de propriedade corporativa**.
 2. Escolha o perfil com o qual deseja trabalhar.
 3. Escolha **Token**.
 4. Para substituir o token, escolha **Substituir token**.
@@ -100,13 +101,13 @@ A substituição ou a revogação de um código QR/token não terá nenhum efeit
 
 Agora você pode [registrar seus dispositivos dedicados](android-dedicated-devices-fully-managed-enroll.md).
 
-## <a name="managing-apps-on-android-dedicated-devices"></a>Gerenciamento de aplicativos em dispositivos Android dedicados
+## <a name="managing-apps-on-android-enterprise-dedicated-devices"></a>Gerenciamento de aplicativos em dispositivos dedicados com Android Enterprise
 
-Somente os aplicativos que têm o tipo de atribuição [definido como Obrigatório](apps-deploy.md#assign-an-app) podem ser instalados em dispositivos Android dedicados. Os aplicativos são instalados da Google Play Store gerenciada da mesma maneira que os dispositivos de perfil de trabalho Android.
+Somente os aplicativos que têm o Tipo de atribuição [definido como Obrigatório](apps-deploy.md#assign-an-app) podem ser instalados em dispositivos dedicados com Android Enterprise. Os aplicativos são instalados da loja do Google Play Gerenciado da mesma maneira que os dispositivos de perfil de trabalho do Android Enterprise.
 
 Os aplicativos são atualizados automaticamente nos dispositivos gerenciados quando o desenvolvedor do aplicativo publica uma atualização no Google Play.
 
-Para remover um aplicativo de dispositivos Android dedicados, você pode fazer o seguinte:
+Para remover um aplicativo de dispositivos dedicados com Android Enterprise, você pode fazer o seguinte:
 -   Excluir a implantação do aplicativo necessário.
 -   Criar uma implantação de desinstalação para o aplicativo.
 

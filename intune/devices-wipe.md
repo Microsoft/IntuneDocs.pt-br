@@ -5,28 +5,29 @@ keywords: ''
 author: ErikjeMS
 ms.author: erikje
 manager: dougeby
-ms.date: ''
-ms.topic: article
+ms.date: 04/08/2019
+ms.topic: conceptual
 ms.prod: ''
 ms.service: microsoft-intune
+ms.localizationpriority: high
 ms.technology: ''
 ms.assetid: 4fdb787e-084f-4507-9c63-c96b13bfcdf9
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: e24043bb1c41d68de04669ff27cc659624dc56c1
-ms.sourcegitcommit: 727c3ae7659ad79ea162250d234d7730f840c731
+ms.openlocfilehash: 896008594e17c3773831edede263c8c47cde3c48
+ms.sourcegitcommit: 601327125ac8ae912d8159422de8aac7dbdc25f6
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/07/2019
-ms.locfileid: "55846818"
+ms.lasthandoff: 04/09/2019
+ms.locfileid: "59570540"
 ---
 # <a name="remove-devices-by-using-wipe-retire-or-manually-unenrolling-the-device"></a>Remova dispositivos por meio de apagamento, desativação ou cancelando o registro do dispositivo manualmente
 
 [!INCLUDE [azure_portal](./includes/azure_portal.md)]
 
-Usando as ações **Desativar** ou **Apagar**, você pode remover dispositivos do Intune que não são mais necessários, que estão sendo realocados ou que estão ausentes. Os usuários também podem emitir um comando remoto do Portal da Empresa do Intune para dispositivos de propriedade pessoal registrados no Intune.
+Usando as ações **Desativar** ou **Apagar**, você pode remover dispositivos do Intune que não são mais necessários, que estão sendo realocados ou que estão ausentes. Os usuários também podem emitir um comando remoto do Portal da Empresa do Intune para dispositivos que estão registrados no Intune.
 
 > [!NOTE]
 > Antes de remover um usuário do Azure AD (Azure Active Directory), use as ações **Apagar** ou **Desativar** para todos os dispositivos associados a esse usuário. Se você remover usuários que tenham dispositivos gerenciados do Azure AD, o Intune não poderá apagar nem desativar esses dispositivos.
@@ -128,9 +129,9 @@ Você só pode apagar os dispositivos de quiosque. Você não pode desativar dis
 
 ### <a name="windows"></a>Windows
 
-|Tipo de dados|Windows 8.1 (MDM) e Windows RT 8.1|Windows RT|Windows Phone 8.1 e Windows Phone 8|Windows 10|
+|Tipo de dados|Windows 8.1 (MDM) e Windows RT 8.1|Windows RT|Windows Phone 8.1 e Windows Phone 8|Windows 10|
 |-------------|----------------------------------------------------------------|--------------|-----------------------------------------|--------|
-|Aplicativos da empresa e dados associados instalados pelo Intune|As chaves são revogadas para arquivos protegidos pelo EFS. O usuário não pode abrir os arquivos.|Aplicativos da empresa não são removidos.|Os aplicativos instalados originalmente por meio do Portal da empresa são desinstalados. Dados de aplicativo da empresa são removidos.|Aplicativos são desinstalados. Chaves de sideload são removidas.<br>Na versão 1703 do Windows 10 (Atualização para Criadores) e em versões posteriores, os aplicativos do Office 365 ProPlus não são removidos.|
+|Aplicativos da empresa e dados associados instalados pelo Intune|As chaves são revogadas para arquivos protegidos pelo EFS. O usuário não pode abrir os arquivos.|Aplicativos da empresa não são removidos.|Os aplicativos instalados originalmente por meio do Portal da empresa são desinstalados. Dados de aplicativo da empresa são removidos.|Aplicativos são desinstalados. Chaves de sideload são removidas.<br>Na versão 1703 do Windows 10 (Atualização para Criadores) e em versões posteriores, os aplicativos do Office 365 ProPlus não são removidos. Os aplicativos Win32 instalados pela extensão de gerenciamento do Intune não serão desinstalados em dispositivos não registrados. Os administradores podem aproveitar a exclusão de atribuição para não oferecer aplicativos Win32 em dispositivos BYOD.|
 |Configurações|As configurações definidas pela política do Intune não serão mais impostas. Os usuários podem alterar as configurações.|As configurações definidas pela política do Intune não serão mais impostas. Os usuários podem alterar as configurações.|As configurações definidas pela política do Intune não serão mais impostas. Os usuários podem alterar as configurações.|As configurações definidas pela política do Intune não serão mais impostas. Os usuários podem alterar as configurações.|
 |Configurações dos perfis de Wi-Fi e VPN|Removidos.|Removidos.|Não há suporte.|Removidos.|
 |Configurações do perfil de certificado|Certificados são removidos e revogados.|Certificados são removidos e revogados.|Não há suporte.|Certificados são removidos e revogados.|
@@ -166,7 +167,7 @@ Você pode configurar o Intune para excluir automaticamente os dispositivos que 
 
 Talvez seja necessário excluir dispositivos do Azure AD devido a problemas de comunicação ou a dispositivos ausentes. É possível usar a ação **Excluir** para remover registros de dispositivo do Portal do Azure para dispositivos que você sabe que estão inacessíveis e provavelmente não se comunicarão com o Azure novamente. A ação **Excluir** não remove um dispositivo do gerenciamento.
 
-1.  Entre no [Azure Active Directory no Portal do Azure](http://aka.ms/accessaad) usando suas credenciais de administrador. Também é possível entrar no [Portal do Office 365](https://portal.office.com). No menu, selecione **Centros de administração** > **Azure AD**.
+1.  Entre no [Azure Active Directory no Portal do Azure](http://aka.ms/accessaad) usando suas credenciais de administrador. Você também pode entrar no [Centro de administração do Microsoft 365](https://admin.microsoft.com). No menu, selecione **Centros de administração** > **Azure AD**.
 2.  Se não tiver uma, crie uma assinatura do Azure. Isso não deverá exigir um cartão de crédito ou pagamento se você tiver uma conta paga (selecione link de assinatura **Registrar seu Azure Active Directory gratuito** ).
 3.  Selecione **Azure Active Directory** e, em seguida, selecione sua organização.
 4.  Selecione a guia **Usuários** .
