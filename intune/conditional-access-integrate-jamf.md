@@ -6,7 +6,7 @@ keywords: ''
 author: brenduns
 ms.author: brenduns
 manager: dougeby
-ms.date: 01/16/2019
+ms.date: 05/16/2019
 ms.topic: conceptual
 ms.prod: ''
 ms.service: microsoft-intune
@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 57527d0b1825d0e8d3fefb63d1b960ab3fb5c676
-ms.sourcegitcommit: 143dade9125e7b5173ca2a3a902bcd6f4b14067f
+ms.openlocfilehash: cac92aeac895201459e692aae164f51dab10dfb0
+ms.sourcegitcommit: ca0f48982e49e90bc14fac5575077445e027f728
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "61508116"
+ms.lasthandoff: 05/16/2019
+ms.locfileid: "65712631"
 ---
 # <a name="integrate-jamf-pro-with-intune-for-compliance"></a>Integrar o Jamf Pro ao Intune para fins de conformidade
 
@@ -49,37 +49,52 @@ Para conectar o Intune ao Jamf Pro:
 
 ## <a name="create-an-application-in-azure-active-directory"></a>Crie um aplicativo no Azure Active Directory
 
-1. No [portal do Azure](https://portal.azure.com), acesse **Azure Active Directory** > **Registros de aplicativo**.
-2. Selecione **+Novo registro de aplicativo**.
-3. Insira um **nome de exibição**, como **Acesso condicional no Jamf**.
-4. Selecione **Aplicativo Web/API**.
-5. Especifique o **URL de logon** usando sua URL de instância Jamf Pro.
-6. Selecione **Criar**. O aplicativo é criado e o portal apresenta os detalhes do aplicativo.
-7. Salve uma cópia da **ID do Aplicativo** para o novo aplicativo. Você especificará essa ID em um procedimento posterior. Em seguida, selecione **Configurações** e acesse **Acesso à API** > **Chaves**.
-8. No painel *Chaves*, especifique uma **Descrição**, o tempo de espera necessário antes que ela **Expire** e, em seguida, selecione **Salvar** para gerar a Chave do Aplicativo (Valor).
+1. No [portal do Microsoft Azure](https://portal.azure.com), acesse **Azure Active Directory** > **Registros de aplicativo** e escolha **Novo registro**. 
 
-   > [!IMPORTANT]
-   > A Chave de Aplicativo é mostrada apenas uma vez durante esse processo. Salve-a em algum lugar onde é possível recuperá-la facilmente.
+2. Na página **Registrar um aplicativo**, especifique os detalhes a seguir:
+   - Na seção **Nome**, insira um nome significativo para o aplicativo, por exemplo **Acesso condicional Jamf**.
+   - Na seção **Tipos de conta com suporte**, escolha **Contas em qualquer diretório organizacional**. 
+   - Para a **URI de Redirecionamento**, deixe o valor padrão da Web e especifique a URL para sua instância do Jamf Pro.  
 
-8. No painel *Configurações* do aplicativo, navegue para **Acesso à API** > **Permissões Necessárias**. Selecione as permissões existentes e, em seguida, clique em **Excluir** e exclua todas as permissões. A exclusão das permissões existentes é necessária conforme você adiciona uma nova permissão e o aplicativo funciona apenas se tem a permissão exata necessária.  
-9. Para atribuir uma nova permissão, selecione **+Adicionar** > **Selecionar uma API** > **API do Microsoft Intune** e, em seguida, clique em **Selecionar**.
-10. No painel *Habilitar Acesso*, selecione **Enviar atributos do dispositivo para o Microsoft Intune** e, em seguida, clique em **Selecionar** e em **Concluído**.
-11. No painel *Permissões necessárias*, selecione **Conceder Permissões** e, em seguida, **Sim** para aplicar as permissões necessárias para o aplicativo.
+3. Escolha **Registrar** para criar o aplicativo e abrir a página de visão geral para o novo aplicativo.  
+
+4. Na página **Visão geral** do aplicativo, copie o valor de **ID Cliente do aplicativo** e registre-o para uso posterior. Você precisará desse valor em procedimentos futuros.  
+
+5. Escolha **Certificados e segredos** em **Gerenciar**. Selecione o botão **Novo segredo do cliente**. Insira um valor em **Descrição**, escolha uma opção para **Expira** e escolha **Adicionar**.
+
+   > [!IMPORTANT]  
+   > Antes de sair desta página, copie o valor do segredo do cliente e guarde-o para uso posterior. Você precisará desse valor em procedimentos futuros. Esse valor só ficará disponível novamente caso você refaça o registro do aplicativo.  
+
+6. Escolha **Permissões de APIs** em Gerenciar.  Escolha as permissões existentes e depois **Remover Permissão** para excluir essas permissões. É preciso remover todas as permissões existentes, já que você adicionará uma nova permissão e o aplicativo funciona apenas com a permissão exata necessária.  
+
+7. Para atribuir uma nova permissão, escolha **Adicionar uma permissão**. Na página **Solicitar permissões de API**, escolha **Intune** e **Permissões do Aplicativo**. Marque a caixa de seleção **update_device_attributes**.  
+
+   Escolha **Adicionar Permissão** para salvar esta configuração.  
+
+8. Na página **Permissões de APIs**, escolha **Conceder consentimento de administrador para Microsoft** e, em seguida, escolha Sim.  
+
+   O processo de registro do aplicativo no Azure AD foi concluído.
+
 
     > [!NOTE]
-    > Se a Chave de Aplicativo expirar, você deverá criar uma nova Chave de Aplicativo no Microsoft Azure e, depois, atualizar os dados do Acesso Condicional no Jamf Pro. O Azure permite que você tenha a chave antiga e a nova chave ativas para evitar interrupções no serviço.
+    > Se o segredo do cliente expirar, você deverá criar um novo segredo do cliente no Azure e, depois, atualizar os dados do acesso condicional no Jamf Pro. O Azure permite que você tenha o segredo antigo e a nova chave ativos para evitar interrupções no serviço.
 
 ## <a name="enable-intune-to-integrate-with-jamf-pro"></a>Permitir a integração do Intune ao Jamf Pro
 
-1. No [portal do Azure](https://portal.azure.com), abra **Microsoft Intune** > **Conformidade do Dispositivo** > **Gerenciamento de dispositivos de parceiros**.
+1. Entre no [Intune](https://go.microsoft.com/fwlink/?linkid=20909) e vá para **Microsoft Intune** > **Conformidade do Dispositivo** > **Gerenciamento de dispositivos do parceiro**.
+
 2. Habilite o Conector de Conformidade para o Jamf colando a ID do Aplicativo salva no procedimento anterior no campo **ID do Aplicativo do Azure Active Directory para o Jamf**.
+
 3. Selecione **Salvar**.
 
 ## <a name="configure-microsoft-intune-integration-in-jamf-pro"></a>Configurar a Integração do Microsoft Intune no Jamf Pro
 
 1. No Jamf Pro, navegue até **Gerenciamento Global** > **Acesso Condicional**. Clique no botão **Editar** na guia **Integração do Microsoft Intune**.
+
 2. Marque a caixa de seleção **Habilitar a Integração do Microsoft Intune**.
-3. Forneça as informações necessárias sobre o seu locatário do Azure, incluindo **Local**, **Nome de domínio** e a **ID do Aplicativo** e **Chave de Aplicativo** salvas nas etapas anteriores.
+
+3. Forneça as informações necessárias sobre seu locatário do Azure, incluindo **Local**, **Nome de domínio**, a **Identificação do Aplicativo** e o *segredo do cliente* salvo durante a criação do aplicativo no Azure AD.  
+
 4. Selecione **Salvar**. O Jamf Pro testará suas configurações e verificará o êxito.
 
 ## <a name="set-up-compliance-policies-and-register-devices"></a>Configurar políticas de conformidade e registrar dispositivos

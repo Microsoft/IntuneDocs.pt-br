@@ -19,12 +19,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 36aa9ad733e2ae5e0f4a292b073fbebd5f5f5f8f
-ms.sourcegitcommit: 143dade9125e7b5173ca2a3a902bcd6f4b14067f
+ms.openlocfilehash: c2d137945325d8ec11801aec225fd0e89196ed05
+ms.sourcegitcommit: f8bbd9bac2016a77f36461bec260f716e2155b4a
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "61511501"
+ms.lasthandoff: 05/16/2019
+ms.locfileid: "65732984"
 ---
 # <a name="tutorial-use-autopilot-to-enroll-windows-devices-in-intune"></a>Tutorial: Usar o Autopilot para registrar dispositivos Windows no Intune
 O Windows Autopilot simplifica a inscrição de dispositivos. Com o Microsoft Intune e o Autopilot, você pode fornecer novos dispositivos aos usuários finais sem a necessidade de criar, manter e aplicar imagens personalizadas do sistema operacional. 
@@ -90,23 +90,20 @@ Em seguida, crie um grupo de dispositivos e coloque nele os dispositivos Autopil
 Depois de criar um grupo de dispositivos, você deve criar um perfil de implantação para poder configurar os dispositivos do Autopilot.
 
 1. Vá até o [Intune no portal do Azure](https://aka.ms/intuneportal) e escolha **Registro de dispositivo** > **Registro do Windows** > **Perfis de Implantação** > **Criar Perfil**.
-2. Em **Nome**, insira *Perfil do Autopilot*. Em **Descrição**, insira *Perfil de teste para dispositivos do Autopilot*.
+2. Na página **Básico**, em **Nome**, digite *Perfil do Autopilot*. Em **Descrição**, insira *Perfil de teste para dispositivos do Autopilot*.
 3. Defina **Converter todos os dispositivos de destino para Autopilot** como **Sim**. Essa configuração garante que todos os dispositivos na lista sejam registrados no serviço de implantação do Autopilot. Aguarde 48 horas para que o registro seja processado.
-4. Em **Modo de implantação**, escolha **Orientado pelo Usuário**. Dispositivos com este perfil são associados ao usuário que faz o registro do dispositivo. As credenciais do usuário são necessárias para registrar o dispositivo.
-5. Na caixa **Ingressar no Azure AD como**, escolha **Ingressado no Azure AD**.
-6. Escolha **Experiência de configuração inicial do usuário (OOBE)**, defina as opções a seguir e deixe as outras configuradas como padrão, e escolha **Salvar**:
+4. Selecione **Avançar**.
+5. Na página **Experiência de configuração inicial do usuário (OOBE)**, para o **Modo de implantação**, escolha **Orientado pelo usuário**. Dispositivos com este perfil são associados ao usuário que faz o registro do dispositivo. As credenciais do usuário são necessárias para registrar o dispositivo.
+6. Na caixa **Ingressar no Azure AD como**, escolha **Ingressado no Azure AD**.
+7. Configure as seguintes opções e deixe as outras definidas como o padrão:
     - **Contrato de licença de usuário final (EULA)**: **Ocultar**
     - **Configurações de privacidade**: **Mostrar**
     - **Tipo de conta de usuário**: **Padrão**
-
-6. Escolha **Criar** para criar o perfil. O perfil de implantação do Autopilot agora está disponível para ser atribuído aos dispositivos.
-
-## <a name="assign-an-autopilot-deployment-profile-to-a-device-group"></a>Atribuir um perfil de implantação do Autopilot a um grupo de dispositivos
-
-Agora que o perfil de implantação foi criado, você o atribuirá ao grupo de dispositivos.
-1. Vá até o [Intune no portal do Azure](https://aka.ms/intuneportal), escolha **Registro de dispositivo** > **Registro do Windows** > **Perfis de implantação** e escolha um perfil.
-2. Na folha do perfil específico, escolha **Atribuições**. 
-3. Escolha **Selecionar grupos**, depois, na folha **Selecionar grupos** , escolha **Grupo do Autopilot** e, em seguida, escolha **Selecionar**.
+8. Selecione **Avançar**.
+9. Na página **Atribuições**, escolha **Grupos selecionados** em **Atribuir a**.
+10. Escolha **Selecionar grupos para incluir**, depois **Grupo do Autopilot**.
+11. Selecione **Avançar**.
+12. Na página **Revisar + Criar**, escolha **Criar** para criar o perfil.
 
 ## <a name="distribute-devices-to-users"></a>Distribuir dispositivos para usuários
 

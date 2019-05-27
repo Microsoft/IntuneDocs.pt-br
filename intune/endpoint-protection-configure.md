@@ -5,7 +5,7 @@ keywords: ''
 author: brenduns
 ms.author: brenduns
 manager: dougeby
-ms.date: 3/27/2018
+ms.date: 5/17/2019
 ms.topic: conceptual
 ms.prod: ''
 ms.service: microsoft-intune
@@ -15,37 +15,46 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: add75e252c8d49025ac01832e5fb12afea9ede67
-ms.sourcegitcommit: 143dade9125e7b5173ca2a3a902bcd6f4b14067f
+mr.reviewer: karthib
+ms.openlocfilehash: c13c5d71d1ff631d7a3c84cd3f62037569757917
+ms.sourcegitcommit: bc5e4dff18f5f9b79077a888f8a58dcc490708c0
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "61512943"
+ms.lasthandoff: 05/21/2019
+ms.locfileid: "65975773"
 ---
 # <a name="add-endpoint-protection-settings-in-intune"></a>Adicionar configurações de proteção de ponto de extremidade no Intune
 
-A proteção de ponto de extremidade permite controlar diferentes recursos de segurança em seus dispositivos, incluindo firewall, bitLocker, permitir e bloquear aplicativos, Windows Defender, criptografia e muito mais. Você pode definir essas configurações no Microsoft Intune usando perfis de dispositivo.
+Com o Intune, é possível usar perfis de configuração de dispositivo para gerenciar recursos comuns de proteção de ponto de extremidade nos dispositivos, incluindo:
+- Firewall 
+- BitLocker
+- Permitir ou bloquear aplicativos  
+- Criptografia e Windows Defender
 
 Por exemplo, você pode criar um perfil de proteção de ponto de extremidade que permita apenas a usuários do macOS instalar aplicativos da Mac App Store. Ou habilite a Windows SmartScreen durante a execução de aplicativos em dispositivos Windows 10.
 
-Este artigo mostra como criar um perfil. Em seguida, selecione a plataforma de dispositivo para obter mais detalhes sobre as configurações disponíveis.
+Antes de criar um perfil, consulte os seguintes artigos que detalham as configurações de proteção de ponto de extremidade que o Intune pode gerenciar para cada plataforma compatível: 
+   - [Configurações do macOS](endpoint-protection-macos.md)
+   - [Configurações do Windows 10](endpoint-protection-windows-10.md)
 
 ## <a name="create-a-device-profile-containing-endpoint-protection-settings"></a>Criar um perfil de dispositivo contendo configurações de proteção de ponto de extremidade
 
-1. Entre no [Portal do Azure](https://portal.azure.com).
-2. Selecione **Todos os serviços**, filtre por **Intune** e selecione **Microsoft Intune**.
+1. Conecte-se ao [Intune](https://go.microsoft.com/fwlink/?linkid=20909).
 3. Selecione **Configuração do dispositivo** > **Perfis** > **Criar perfil**.
 4. Insira um **Nome** e uma **Descrição** para o perfil de proteção de ponto de extremidade.
 5. Na lista suspensa **Plataforma**, selecione a plataforma do dispositivo ao qual você deseja aplicar as configurações personalizadas. No momento, é possível escolher uma das seguintes plataformas para as configurações de restrição de dispositivo:
    - **macOS**
    - **Windows 10 e posterior**
 6. Na lista suspensa de tipos de **Tipo de perfil**, escolha **Endpoint Protection**. 
-7. Dependendo da plataforma escolhida, as configurações que podem ser definidas são diferentes. Acesse um dos tópicos a seguir para ver as configurações detalhadas de cada plataforma:
+7. Dependendo da plataforma escolhida, as configurações que podem ser definidas são diferentes. Consulte:
    - [Configurações do macOS](endpoint-protection-macos.md)
-   - [Configurações do Windows 10](endpoint-protection-windows-10.md)
-8. Quando terminar, volte para a página **Criar Perfil** e clique em **Criar**.
+   - [Configurações do Windows 10](endpoint-protection-windows-10.md)  
 
-O perfil é criado e exibido na página da lista de perfis. Para atribuir esse perfil a grupos, consulte [atribuir perfis de dispositivo](device-profile-assign.md).
+8. Depois de definir as configurações aplicáveis, selecione **Criar** na página **Criar perfil**.
 
-## <a name="next-steps"></a>Próximas etapas
+   O perfil é criado e exibido na página da lista de perfis. Para atribuir esse perfil a grupos, consulte [atribuir perfis de dispositivo](device-profile-assign.md).
+
+
+## <a name="next-steps"></a>Próximas etapas  
+
 Para atribuir um perfil a grupos, consulte [atribuir perfis de dispositivo](device-profile-assign.md).

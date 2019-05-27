@@ -6,7 +6,7 @@ keywords: ''
 author: brenduns
 ms.author: brenduns
 manager: dougeby
-ms.date: 04/23/2019
+ms.date: 05/17/2019
 ms.topic: conceptual
 ms.prod: ''
 ms.service: microsoft-intune
@@ -17,23 +17,23 @@ ms.reviewer: shpate
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: 52b92483ddafadf460911caaa472825a0bc0a20f
-ms.sourcegitcommit: b4483c8476a209de83102e8993d8074dbb323493
+ms.openlocfilehash: 72121aa48e7b5d46e25aac28ad386832b6b4ea72
+ms.sourcegitcommit: f8bbd9bac2016a77f36461bec260f716e2155b4a
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/10/2019
-ms.locfileid: "65527213"
+ms.lasthandoff: 05/16/2019
+ms.locfileid: "65733094"
 ---
 # <a name="monitor-bitlocker-and-device-encryption"></a>Monitorar a criptografia BitLocker e do dispositivo  
 O Intune oferece um local centralizado para identificar o status de criptografia dos seus dispositivos Windows 10 e ajuda você a acessar informações importantes para o BitLocker nos seus dispositivos, conforme encontrado no Azure AD (Azure Active Directory).  
 
-- O [Relatório de criptografia (em Versão Prévia Pública)](#encryption-report) fornece detalhes sobre a preparação e o status de criptografia de um dispositivo. Os detalhes do relatório podem ajudá-lo a identificar problemas que impedem a criptografia bem-sucedida de dispositivos que você deseja proteger.  
-- [Exiba detalhes do BitLocker (em Versão Prévia Pública)](#bitlocker-recovery-keys) como as chaves de recuperação e a ID da chave do seu dispositivo de dentro do portal do Intune.  
+- O [Relatório de criptografia](#encryption-report) fornece detalhes sobre a preparação e o status de criptografia de um dispositivo. Os detalhes do relatório podem ajudá-lo a identificar problemas que impedem a criptografia bem-sucedida de dispositivos que você deseja proteger.  
+- [Exiba detalhes do BitLocker](#bitlocker-recovery-keys) como as chaves de recuperação e a ID da chave do seu dispositivo de dentro do portal do Intune.  
 
 ## <a name="encryption-report"></a>Relatório de criptografia
-É possível usar o relatório de criptografia (em Versão Prévia Pública) para exibir detalhes sobre o status da criptografia de seus dispositivos Windows 10.  
+É possível usar o relatório de criptografia para exibir detalhes sobre o status da criptografia de seus dispositivos Windows 10.  
 
-Para localizar o relatório, entre no [Intune](https://aka.ms/intuneportal) e acesse a **Configuração do Dispositivo** e, em *Monitorar*, selecione **Relatório de criptografia (versão prévia)**.  
+Para localizar o relatório, entre no [Intune](https://aka.ms/intuneportal) e acesse a **Configuração do Dispositivo** e, em *Monitorar*, selecione **Relatório de criptografia**.  
 
 ### <a name="prerequisites"></a>Pré-requisitos:
 para aparecer no relatório de criptografia, um dispositivo deve executar o Windows versão 1607 ou posterior.  
@@ -90,14 +90,14 @@ O painel fornece os seguintes detalhes:
    - O método de criptografia da unidade fixa não coincide com a política do BitLocker.  
    - Para criptografar unidades, a política do BitLocker exige que o usuário entre como um Administrador ou, se o dispositivo for ingressado no Azure AD, a política AllowStandardUserEncryption deverá ser definida como 1.  
    - O WinRE (Ambiente de Recuperação do Windows) não está configurado.  
-   - Um TPM não está disponível para o BitLocker, porque ele não está presente, ficou não disponível no Registro ou o sistema operacional está em uma unidade removível.  
+   - Não há um TPM disponível para o BitLocker, porque ele não está presente, ficou indisponível no Registro ou o sistema operacional está em uma unidade removível.  
    - O TPM não está pronto para o BitLocker.  
    - A rede não estiver disponível, o que é necessário para o backup da chave de recuperação.  
 
 ## <a name="bitlocker-recovery-keys"></a>Chaves de recuperação do BitLocker
-Como uma Versão Prévia Pública, o Intune fornece acesso à folha do Azure AD para o BitLocker. Assim, é possível exibir as IDs de chave do BitLocker e as chaves de recuperação para seus dispositivos Windows 10 de dentro do portal do Intune.  Para ser acessível, o dispositivo deve ter suas chaves mantidas sob a custódia do Azure AD. 
+O Intune fornece acesso à folha do Azure AD para o BitLocker. Assim, é possível exibir as IDs de chave do BitLocker e as chaves de recuperação para seus dispositivos Windows 10 de dentro do portal do Intune.  Para ser acessível, o dispositivo deve ter suas chaves mantidas sob a custódia do Azure AD. 
 1. Entre no [Intune](https://aka.ms/intuneportal), acesse **Dispositivos** e, em seguida, em *Gerenciar*, selecione **Todos os dispositivos**.
-2. Selecione um dispositivo na lista e, em seguida, em *Monitorar*, selecione **Chaves de recuperação – Versão prévia**.  
+2. Selecione um dispositivo na lista e em *Monitorar*, selecione **Chaves de recuperação**.  
   
 Quando as chaves estiverem disponíveis no Azure AD, as seguintes informações ficarão disponíveis:
 - ID de chave do BitLocker

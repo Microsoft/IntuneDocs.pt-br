@@ -5,7 +5,7 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 12/19/2018
+ms.date: 05/20/2019
 ms.topic: conceptual
 ms.prod: ''
 ms.service: microsoft-intune
@@ -15,12 +15,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 654d5b86a8a2df8eaddc8ea626b55390d2d32920
-ms.sourcegitcommit: 143dade9125e7b5173ca2a3a902bcd6f4b14067f
+ms.openlocfilehash: b5da0e5f14d3b87827d42d48341fa7080d73c567
+ms.sourcegitcommit: ac3fe7504e58c74495a560a68eae2b784a4f7d46
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "61508940"
+ms.lasthandoff: 05/20/2019
+ms.locfileid: "65942057"
 ---
 # <a name="monitor-intune-device-compliance-policies"></a>Monitorar as políticas de conformidade do Dispositivo do Intune
 
@@ -75,7 +75,9 @@ Descrições dos diferentes estados da política de conformidade dos dispositivo
 
   - Dispositivos que não estão atribuídos a uma política de conformidade e não têm um gatilho para verificar a conformidade
   - Dispositivos que ainda não fizeram check-in desde que a política de conformidade foi atualizada pela última vez
-  - Dispositivos não associados a um usuário específico
+  - Dispositivos não associados a um usuário específico, como:
+    - Dispositivos iOS comprados por meio do DEP (Programa de registro de dispositivos) da Apple que não têm afinidade de usuário
+    - Dispositivos dedicados com Android Enterprise ou quiosque do Android
   - Dispositivos registrados com uma conta de gerenciador de registro do dispositivo (DEM)
 
 - **Fora de conformidade:** o dispositivo não conseguiu aplicar uma ou mais configurações da política de conformidade de dispositivos. Ou o usuário não está em conformidade com as políticas.

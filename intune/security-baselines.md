@@ -1,11 +1,11 @@
 ---
 title: Usar linhas de base de segurança no Microsoft Intune – Azure | Microsoft Docs
-description: Adicione ou defina as configurações de segurança de grupo recomendadas para proteger usuário e dados em dispositivos usando o Microsoft Intune para gerenciamento de dispositivos móveis. Habilite o bitlocker, configure a Proteção Avançada contra Ameaças do Windows Defender, controle o Internet Explorer, use a Smart Screen, defina políticas de segurança local, exija uma senha, bloqueie downloads da internet e muito mais.
+description: Adicione ou defina as configurações de segurança de grupo recomendadas para proteger usuário e dados em dispositivos usando o Microsoft Intune para gerenciamento de dispositivos móveis. Habilite o BitLocker, configure a Proteção Avançada contra Ameaças do Microsoft Defender, controle o Internet Explorer, use a Smart Screen, defina políticas de segurança local, exija uma senha, bloqueie downloads da Internet e muito mais.
 keywords: ''
 author: brenduns
 ms.author: brenduns
 manager: dougeby
-ms.date: 03/22/2019
+ms.date: 05/17/2019
 ms.topic: conceptual
 ms.prod: ''
 ms.service: microsoft-intune
@@ -16,12 +16,12 @@ ms.reviewer: joglocke
 ms.suite: ems
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 70638228875f1fb063a2ea22dc424c00f3940a30
-ms.sourcegitcommit: ef4bc7318449129af3dc8c0154e54a264b7bf4e5
+ms.openlocfilehash: 9dd289535ba4276b1bca21044d362172517b07e0
+ms.sourcegitcommit: f8bbd9bac2016a77f36461bec260f716e2155b4a
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/07/2019
-ms.locfileid: "65197634"
+ms.lasthandoff: 05/16/2019
+ms.locfileid: "65732578"
 ---
 # <a name="create-a-windows-10-security-baseline-in-intune"></a>Criar uma linha de base de segurança do Windows 10 no Intune
 
@@ -44,9 +44,19 @@ Linhas de base de segurança criam um "perfil de configuração" no Intune. Esse
 
 Após a atribuição do perfil, você pode monitorar o perfil e monitorar a linha de base. Por exemplo, você pode ver quais dispositivos correspondem à linha de base ou não.
 
-Este artigo mostra como usar linhas de base de segurança para criar um perfil, atribuir e monitorar o perfil.
+Este artigo pode ajudar a usar linhas de base de segurança para criar, atribuir e monitorar um perfil.
 
 [Linhas de base de segurança do Windows](https://docs.microsoft.com/windows/security/threat-protection/windows-security-baselines) é uma excelente fonte para saber mais sobre esse recurso. [Gerenciamento de dispositivo móvel](https://docs.microsoft.com/windows/client-management/mdm/) (MDM) é uma excelente fonte sobre MDM, e o que você pode fazer em dispositivos com Windows.
+
+## <a name="available-security-baselines"></a>Escopos de segurança disponíveis  
+
+As linhas de base de segurança a seguir estão disponíveis para uso com o Intune.
+- **Versão prévia: Linha de base de segurança do MDM para outubro de 2018**  
+  [Exibir as configurações](security-baseline-settings-windows.md)
+
+- **VERSÃO PRÉVIA: linha de base da ATP do Windows Defender**  
+  [Exibir as configurações](security-baseline-settings-defender-atp.md)
+
 
 ## <a name="prerequisites"></a>Pré-requisitos
 Para gerenciar linhas de base no Intune, sua conta deve ter a função interna [Gerenciador de Perfis e de Política](role-based-access-control.md#built-in-roles).
@@ -60,51 +70,36 @@ Ao usar dispositivos cogerenciados, você deve alternar a carga de trabalho **Co
 
 ## <a name="create-the-profile"></a>Criar o perfil
 
-1. No [portal do Azure](https://portal.azure.com/), selecione **Todos os serviços** > filtre por **Intune** > selecione **Intune**.
-2. Selecione **Segurança do dispositivo** > **Linhas de base de segurança (versão prévia)**. Uma lista com as linhas de base disponíveis está disponível. Conforme mais linhas de base são adicionadas, você as verá aqui:
+1. Faça login no [Intune](https://go.microsoft.com/fwlink/?linkid=20909) e selecione **Segurança do Dispositivo** > **Linhas de base de segurança (versão prévia)**. Uma lista com as linhas de base disponíveis está disponível. 
 
-    ![Ver uma lista das linhas de base de segurança disponíveis atualmente no Intune](./media/security-baselines/available-baselines.png)
+    ![Selecione uma linha de base de segurança para configurar](./media/security-baselines/available-baselines.png)
 
-3. Selecione a linha de base que você quer usar > **Criar perfil**.
-4. Em **Básico**, insira as seguintes propriedades:
 
-    - **Nome**: Insira um nome para seu perfil de linhas de base de segurança. Por exemplo, insira `pilot Windows 10 MDM baseline - Oct 2018`.
+2. Selecione a linha de base que você quer usar e selecione **Criar perfil**.  
+
+3. Na guia **Básico**, especifique as seguintes propriedades:
+
+    - **Nome**: Insira um nome para seu perfil de linhas de base de segurança. Por exemplo, digite *Perfil padrão para ATP do Defender*
     - **Descrição**: Insira algum texto que descreva a função dessa linha de base. A descrição serve para você inserir qualquer texto que quiser. É opcional, mas definitivamente recomendado.
 
-5. Expanda **Configurações**. Na lista, você vê todas as configurações nesta linha de base de segurança, e como a configuração está definida automaticamente. As configurações e seus valores são recomendados e podem ser alterados por você.
+4. Selecione a guia **Configuração** para exibir os grupos de **Configurações** disponíveis nessa linha de base. Selecione um grupo para expandi-lo e exibir as configurações individuais que ele contém. As configurações possuem definições padrão para a linha de base de segurança. Redefina as configurações padrões para atender às suas necessidades de negócios.  
 
-    ![Expanda a configuração para ver todas as configurações nessa linha de base de segurança no Intune](./media/security-baselines/sample-list-of-settings.png)
+    ![Expanda um grupo para exibir as configurações dele](./media/security-baselines/sample-list-of-settings.png)
 
-    Expanda algumas das configurações para verificar seus valores. Por exemplo, expanda **Windows Defender**. Observe algumas configurações e como elas estão definidas:
+5. Selecione a guia **Atribuições** para atribuir a linha de base aos grupos. Atribua a linha de base a um grupo existente ou crie um novo grupo usando o processo padrão no console do Intune para concluir a configuração.  
 
-    ![Veja como algumas das configurações do Windows Defender são automaticamente definidas no Intune](./media/security-baselines/expand-windows-defender.png)
+   ![Atribuir um perfil](./media/security-baselines/assignments.png)
+  
+6. Quando estiver pronto para implantar a linha de base, selecione a guia **Revisar + Criar** para examinar os detalhes da linha de base. Depois, selecione **Salvar perfil** para salvar e implantar o perfil. 
 
-6. **Crie** o perfil. 
-7. Selecione **Perfis**. O perfil será criado e exibido na lista. No entanto, ele ainda não está fazendo nada. Em seguida, atribua o perfil.
+   ![Revisar a linha de base](./media/security-baselines/review.png) 
 
-## <a name="assign-the-profile"></a>Atribuir o perfil
+   Assim que você salvar, o perfil será enviado por push para dispositivos ao fazer o check-in no Intune. Portanto, isso pode ocorrer imediatamente.
 
-Após a criação do perfil, ele estará pronto para ser atribuído aos seus usuários, dispositivos e grupos. Após a atribuição, o perfil e suas configurações são aplicados aos usuários, dispositivos e grupos escolhidos.
+   > [!TIP]  
+   > É possível salvar um perfil sem atribuí-lo a grupos primeiro. Você pode editar o perfil posteriormente para adicionar grupos. 
 
-1. No Intune, selecione **Linhas de Base de Segurança** > escolha uma linha de base > **Perfis**.
-2. Selecione seu perfil > **Atribuições**.
-
-    ![Escolha seu perfil de linha de base de segurança no Intune e clique em atribuições para implantar o perfil](./media/security-baselines/assignments.png)
-
-3. Na guia **Incluir**, adicione os grupos, usuários ou dispositivos aos quais você deseja que essa política se aplique.
-
-    > [!TIP]
-    > Observe que você também pode **Excluir** grupos. Se você aplicar uma política a **Todos os Usuários**, considere a exclusão dos grupos de administradores. Caso algo aconteça, você e os administradores não querem ser bloqueados.
-
-4. **Salve** suas alterações.
-
-Assim que você salvar, o perfil será enviado por push para dispositivos ao fazer o check-in no Intune. Portanto, isso pode ocorrer imediatamente.
-
-## <a name="available-security-baselines"></a>Escopos de segurança disponíveis  
-
-As linhas de base de segurança a seguir estão disponíveis para uso com o Intune.
-- **Versão prévia: Linha de Base de Segurança de MDM**
-  - Versão: [Outubro 2018](security-baseline-settings-windows.md)
+7. Depois de criar o perfil, você pode editá-lo acessando **Segurança do Dispositivo** > **Linhas de Base de Segurança**, em seguida, selecione a linha de base que você configurou e selecione **Perfis**.  Selecione o perfil e **Propriedades** para editar as configurações. Depois, selecione **Atribuições** para editar os grupos que recebem essa linha de base. 
 
 ## <a name="q--a"></a>Perguntas e Respostas
 
