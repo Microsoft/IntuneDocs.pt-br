@@ -7,7 +7,6 @@ ms.author: mandia
 manager: dougeby
 ms.date: 04/25/2019
 ms.topic: reference
-ms.prod: ''
 ms.service: microsoft-intune
 ms.localizationpriority: medium
 ms.technology: ''
@@ -15,12 +14,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: c40146f37ff6477663dc63468d1081a73ac2544a
-ms.sourcegitcommit: dde4b8788e96563edeab63f612347fa222d8ced0
+ms.openlocfilehash: eb7ff33384b86267e007e986737eeea6b8d3203e
+ms.sourcegitcommit: 916fed64f3d173498a2905c7ed8d2d6416e34061
 ms.translationtype: MTE75
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/06/2019
-ms.locfileid: "65135148"
+ms.lasthandoff: 05/23/2019
+ms.locfileid: "66040115"
 ---
 # <a name="configure-vpn-settings-on-ios-devices-in-microsoft-intune"></a>Definir configurações de VPN em dispositivos iOS no Microsoft Intune
 
@@ -36,7 +35,7 @@ Selecione o tipo de conexão VPN na lista de fornecedores a seguir:
 - **SonicWall Mobile Connect**
 - **F5 Access Herdado**: aplicável ao aplicativo F5 Access versão 2.1 e a versões anteriores.
 - **F5 Access**: aplicável ao aplicativo F5 Access versão 3.0 e posteriores.
-- **GlobalProtect da Palo Alto Networks (Herdado)**: aplicável ao aplicativo GlobalProtect da Palo Alto Networks versão 4.1 e a versões anteriores.
+- **GlobalProtect da Palo Alto Networks (Herdado)** : aplicável ao aplicativo GlobalProtect da Palo Alto Networks versão 4.1 e a versões anteriores.
 - **GlobalProtect da Palo Alto Networks**: aplicável ao aplicativo GlobalProtect da Palo Alto Networks versão 5.0 e posteriores.
 - **Pulse Secure**
 - **Cisco (IPsec)**

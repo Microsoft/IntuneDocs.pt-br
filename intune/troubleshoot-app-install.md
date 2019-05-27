@@ -17,12 +17,12 @@ ms.reviewer: mghadial
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 574f509383891ff3e8e0f4c1b04a19832a378829
-ms.sourcegitcommit: 484a898d54f5386fdbce300225aaa3495cecd6b0
+ms.openlocfilehash: e14fe3dd50f43c1b72079dfc3df05ddbbcd4c629
+ms.sourcegitcommit: 5fec35341d83b16023a92fc4b2b3e9237fc6c9ab
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/01/2019
-ms.locfileid: "58799492"
+ms.lasthandoff: 05/17/2019
+ms.locfileid: "65853972"
 ---
 # <a name="troubleshoot-app-installation-issues"></a>Solucionar problemas de instalação do aplicativo
 
@@ -48,7 +48,7 @@ O Intune fornece detalhes da solução de problemas do aplicativo, de acordo com
     > O mesmo aplicativo pode ser atribuído a vários grupos, mas com diferentes ações previstas (finalidades) para o aplicativo. Por exemplo, uma tentativa resolvida de um aplicativo mostrará **excluído**, se o aplicativo for excluído por um usuário, durante a respectiva atribuição. Para saber mais, confira [Como são resolvidos os conflitos entre as finalidades do aplicativo](apps-deploy.md#how-conflicts-between-app-intents-are-resolved).<br><br>
     > Se ocorrer uma falha de instalação para um aplicativo necessário, você ou o suporte técnico poderá sincronizar o dispositivo e tentar novamente a instalação do aplicativo.
 
-Os detalhes do erro de instalação do aplicativo indicarão o problema. Use esses detalhes para determinar a ação adequada à resolução do problema. Para saber mais sobre como solucionar problemas de instalação do aplicativo, confira [Códigos de erro da solução de problemas de instalação de aplicativos](https://blogs.technet.microsoft.com/intunesupport/2018/05/15/error-codes-for-troubleshooting-app-installation-issues).
+Os detalhes do erro de instalação do aplicativo indicarão o problema. Use esses detalhes para determinar a ação adequada à resolução do problema. Para saber mais sobre como solucionar problemas de instalação do aplicativo, veja [Erros de instalação do aplicativo](troubleshoot-app-install.md#app-installation-errors).
 
 > [!Note]  
 > Você também pode acessar o painel **solução de problemas** apontando o navegador para: [https://aka.ms/intunetroubleshooting](https://aka.ms/intunetroubleshooting).

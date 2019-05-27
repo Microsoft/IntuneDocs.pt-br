@@ -8,7 +8,6 @@ ms.author: erikre
 manager: dougeby
 ms.date: 04/02/2019
 ms.topic: reference
-ms.prod: ''
 ms.service: microsoft-intune
 ms.localizationpriority: medium
 ms.technology: ''
@@ -18,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 5aa85ee044eae5fba9dcb7c380a29dda727c6492
-ms.sourcegitcommit: 79baf89e4a7a7b1cecb8ccf5cb976736ae6a7286
+ms.openlocfilehash: 894ce1fcf270af0169661359c2ab088bb30fab62
+ms.sourcegitcommit: 916fed64f3d173498a2905c7ed8d2d6416e34061
 ms.translationtype: MTE75
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/02/2019
-ms.locfileid: "58871443"
+ms.lasthandoff: 05/23/2019
+ms.locfileid: "66041167"
 ---
 # <a name="get-data-from-the-intune-data-warehouse-api-with-a-rest-client"></a>Obter dados da API do Data Warehouse do Intune com um cliente REST
 
@@ -156,7 +155,7 @@ O exemplo a seguir contém um cliente REST simples. O código usa a classe **htt
 > Você pode acessar o exemplo de código a seguir [no GitHub](https://github.com/Microsoft/Intune-Data-Warehouse/blob/master/Samples/CSharp/Program.cs). Consulte o repositório do GitHub para obter as alterações e atualizações mais recentes para o exemplo.
 
 1. Abra o **Microsoft Visual Studio**.
-2. Escolha **Arquivo** > **Novo Projeto**. Expanda **Visual C#** e escolha **Aplicativo de Console (.Net Framework)**.
+2. Escolha **Arquivo** > **Novo Projeto**. Expanda **Visual C#** e escolha **Aplicativo de Console (.Net Framework)** .
 3. Nomeie o projeto como ` IntuneDataWarehouseSamples`, navegue até onde deseja salvar o projeto e, em seguida, selecione **OK**.
 4. Clique com o botão direito do mouse no nomes da solução no Gerenciador de Soluções e, em seguida, selecione **Gerenciar Pacotes NuGet para a Solução**. Selecione **Procurar** e, em seguida, digite `Microsoft.IdentityModel.Clients.ActiveDirectory` na caixa de pesquisa.
 5. Escolha o pacote, selecione o projeto **IntuneDataWarehouseSamples** em Gerenciar Pacotes da sua Solução e, em seguida, selecione **Instalar**.

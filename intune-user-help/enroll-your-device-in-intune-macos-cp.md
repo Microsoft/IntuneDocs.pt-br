@@ -18,12 +18,12 @@ ms.reviewer: elocholi
 ms.suite: ems
 ms.custom: intune-enduser
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 2c9ea11cd19fee8f491329020753501996b47f40
-ms.sourcegitcommit: 25e6aa3bfce58ce8d9f8c054bc338cc3dff4a78b
+ms.openlocfilehash: fea76693fe929338b29d110c299277e753134cc6
+ms.sourcegitcommit: d258bcf6716c8a2589d3f8dada819905ee80f233
 ms.translationtype: MTE75
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "55834714"
+ms.lasthandoff: 05/24/2019
+ms.locfileid: "66196778"
 ---
 # <a name="enroll-your-macos-device-in-intune-with-the-company-portal-app"></a>Registrar seu dispositivo macOS no Intune com o aplicativo Portal da Empresa
 
@@ -31,7 +31,9 @@ Registre seu dispositivo macOS no aplicativo Portal da Empresa do Intune para ob
 
 As organizações geralmente exigem que seu dispositivo se torne gerenciado antes que você possa acessar dados proprietários por meio dele. Depois que um dispositivo se torna gerenciado, as organizações podem enviar por push políticas e aplicativos ao dispositivo por meio do provedor de gerenciamento de dispositivo móvel. Para obter acesso contínuo às suas informações corporativas ou de estudante no dispositivo, você precisa configurá-lo de acordo com as configurações da política.  
 
-Este artigo descreve como o aplicativo Portal da Empresa do Intune para macOS ajuda você a registrar, configurar e manter seu dispositivo para atender aos requisitos organizacionais.
+Este artigo descreve como o aplicativo Portal da Empresa do Intune para macOS ajuda você a registrar, configurar e manter seu dispositivo para atender aos requisitos organizacionais.  
+</br>
+> [!VIDEO https://www.youtube.com/embed/Pa2pfhwq_yk?rel=0]
 
 ## <a name="what-to-expect-from-the-company-portal-app"></a>O que esperar do aplicativo Portal da Empresa
 

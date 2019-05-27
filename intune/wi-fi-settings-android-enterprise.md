@@ -7,7 +7,6 @@ ms.author: mandia
 manager: dougeby
 ms.date: 01/16/2019
 ms.topic: reference
-ms.prod: ''
 ms.service: microsoft-intune
 ms.localizationpriority: medium
 ms.technology: ''
@@ -15,12 +14,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: d96bf5a4b0d9a8ce6aa7de0123a8bcc7e6db9692
-ms.sourcegitcommit: 25e6aa3bfce58ce8d9f8c054bc338cc3dff4a78b
+ms.openlocfilehash: 1589189147fd034a034791c2090c2a78134d866e
+ms.sourcegitcommit: 916fed64f3d173498a2905c7ed8d2d6416e34061
 ms.translationtype: MTE75
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57566430"
+ms.lasthandoff: 05/23/2019
+ms.locfileid: "66050595"
 ---
 # <a name="add-wi-fi-settings-for-devices-running-android-enterprise-and-android-kiosk-in-microsoft-intune"></a>Adicionar configurações de Wi-Fi a dispositivos que executam o Android Enterprise e o Android Kiosk no Microsoft Intune
 
@@ -42,7 +41,7 @@ Selecione essa opção se estiver usando um dispositivo Android Enterprise como 
 - **Rede oculta**: escolha **Habilitar** para ocultar esta rede da lista de redes disponíveis no dispositivo. O SSID não é transmitido. Escolha **Desabilitar** para exibir esta rede na lista de redes disponíveis no dispositivo.
 - **Tipo de Wi-Fi**: selecione o protocolo de segurança para autenticar à rede Wi-Fi. Suas opções:
 
-  - **Abrir (sem autenticação)**: use essa opção somente se a rede não for segura.
+  - **Abrir (sem autenticação)** : use essa opção somente se a rede não for segura.
   - **Chave WEP pré-compartilhada**: insira a senha em **Chave pré-compartilhada**. Quando a rede da sua organização é definida ou configurada, uma senha ou chave de rede também é configurada. Insira essa senha ou chave de rede para o valor PSK.
   - **Chave WPA pré-compartilhada**: insira a senha em **Chave pré-compartilhada**. Quando a rede da sua organização é definida ou configurada, uma senha ou chave de rede também é configurada. Insira essa senha ou chave de rede para o valor PSK.
 
@@ -71,7 +70,7 @@ Selecione **OK** para salvar suas alterações.
 
       Selecione **OK** para salvar suas alterações.
 
-    - **Autenticação de Cliente** - **Certificado do cliente para autenticação de cliente (certificado de identidade)**: escolha o perfil de certificado do cliente SCEP ou PKCS que também é implantado no dispositivo. Esse certificado é a identidade apresentada pelo dispositivo ao servidor para autenticar a conexão.
+    - **Autenticação de Cliente** - **Certificado do cliente para autenticação de cliente (certificado de identidade)** : escolha o perfil de certificado do cliente SCEP ou PKCS que também é implantado no dispositivo. Esse certificado é a identidade apresentada pelo dispositivo ao servidor para autenticar a conexão.
 
       Selecione **OK** para salvar suas alterações.
 
@@ -84,15 +83,15 @@ Selecione **OK** para salvar suas alterações.
     - **Autenticação de Cliente** — escolha um **método de Autenticação**. Suas opções:
 
       - **Nome de usuário e senha**: solicita ao usuário um nome de usuário e uma senha para autenticar a conexão. Insira também:
-        - **Método não EAP (identidade interna)**: escolha como você autentica a conexão. Certifique-se de escolher o mesmo protocolo configurado em sua rede Wi-Fi.
+        - **Método não EAP (identidade interna)** : escolha como você autentica a conexão. Certifique-se de escolher o mesmo protocolo configurado em sua rede Wi-Fi.
 
-          Suas opções: **Senha não criptografada (PAP)**, **Protocolo CHAP (CHAP)**, **Microsoft CHAP (MS-CHAP)**, ou **Microsoft CHAP Versão 2 (MS-CHAP v2)**
+          Suas opções: **Senha não criptografada (PAP)** , **Protocolo CHAP (CHAP)** , **Microsoft CHAP (MS-CHAP)** , ou **Microsoft CHAP Versão 2 (MS-CHAP v2)**
 
       - **Certificados**: escolha o perfil de certificado do cliente SCEP ou PKCS que também é implantado no dispositivo. Esse certificado é a identidade apresentada pelo dispositivo ao servidor para autenticar a conexão.
 
         Selecione **OK** para salvar suas alterações.
 
-      - **Privacidade de identidade (identidade externa)**: insira o texto enviado em resposta a uma solicitação de identidade de EAP. Esse texto pode ser qualquer valor, como `anonymous`. Durante a autenticação, essa identidade anônima é enviada inicialmente e seguida pela identificação real enviada em um túnel seguro.
+      - **Privacidade de identidade (identidade externa)** : insira o texto enviado em resposta a uma solicitação de identidade de EAP. Esse texto pode ser qualquer valor, como `anonymous`. Durante a autenticação, essa identidade anônima é enviada inicialmente e seguida pela identificação real enviada em um túnel seguro.
 
   - **PEAP**: insira também:
 
@@ -103,7 +102,7 @@ Selecione **OK** para salvar suas alterações.
     - **Autenticação de Cliente** — escolha um **método de Autenticação**. Suas opções:
 
       - **Nome de usuário e senha**: solicita ao usuário um nome de usuário e uma senha para autenticar a conexão. Insira também:
-        - **Método não EAP para autenticação (identidade interna)**: escolha como você autentica a conexão. Certifique-se de escolher o mesmo protocolo configurado em sua rede Wi-Fi.
+        - **Método não EAP para autenticação (identidade interna)** : escolha como você autentica a conexão. Certifique-se de escolher o mesmo protocolo configurado em sua rede Wi-Fi.
 
           Suas opções: **Nenhum** ou **Microsoft CHAP Versão 2 (MS-CHAP v2)**
 
@@ -111,7 +110,7 @@ Selecione **OK** para salvar suas alterações.
 
         Selecione **OK** para salvar suas alterações.
 
-      - **Privacidade de identidade (identidade externa)**: insira o texto enviado em resposta a uma solicitação de identidade de EAP. Esse texto pode ser qualquer valor, como `anonymous`. Durante a autenticação, essa identidade anônima é enviada inicialmente e seguida pela identificação real enviada em um túnel seguro.
+      - **Privacidade de identidade (identidade externa)** : insira o texto enviado em resposta a uma solicitação de identidade de EAP. Esse texto pode ser qualquer valor, como `anonymous`. Durante a autenticação, essa identidade anônima é enviada inicialmente e seguida pela identificação real enviada em um túnel seguro.
 
 Selecione **OK** > **Criar** para salvar suas alterações. O perfil será criado e exibido na lista de perfis.
 

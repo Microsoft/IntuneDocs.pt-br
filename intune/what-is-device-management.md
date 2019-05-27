@@ -7,7 +7,6 @@ manager: dougeby
 ms.date: 03/29/2019
 ms.topic: conceptual
 audience: ITPro
-ms.prod: microsoft-365-enterprise
 ms.service: ''
 ms.technology: ''
 ms.custom: intune
@@ -16,12 +15,12 @@ ms.reviewer: angerobe
 ms.suite: ems
 search.appverid: MET150
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 15f908a34f0a9315552acfad56cbf560a23fa26d
-ms.sourcegitcommit: e63e3debb5f4d9a757f767913e72e39742137b17
-ms.translationtype: HT
+ms.openlocfilehash: 452cb8e4163b82d699347a33fd8dfda9c792b6fc
+ms.sourcegitcommit: 916fed64f3d173498a2905c7ed8d2d6416e34061
+ms.translationtype: MTE75
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/01/2019
-ms.locfileid: "58788438"
+ms.lasthandoff: 05/23/2019
+ms.locfileid: "66050268"
 ---
 # <a name="what-is-device-management"></a>O que é o gerenciamento de dispositivo? 
 
@@ -66,9 +65,9 @@ Uma tarefa essencial de qualquer solução de gerenciamento de dispositivo é fo
 
 ## <a name="choose-the-device-management-solution-thats-right-for-you"></a>Escolha a solução de gerenciamento de dispositivo ideal para você
 
-Há duas maneiras de abordar o gerenciamento de dispositivo. Primeiro, você pode gerenciar diferentes aspectos de dispositivos usando os recursos integrados do Intune. Essa abordagem é chamada de **MDM (gerenciamento de dispositivo móvel)**. Os usuários "registram" seus dispositivos e usam certificados para se comunicar com o Intune. Como um administrador de TI, você efetua push de aplicativos para dispositivos, restringe os dispositivos a um sistema operacional específico, bloqueia dispositivos pessoais e muito mais. Se um dispositivo for perdido ou roubado, você também poderá remover todos os dados do dispositivo. 
+Há duas maneiras de abordar o gerenciamento de dispositivo. Primeiro, você pode gerenciar diferentes aspectos de dispositivos usando os recursos integrados do Intune. Essa abordagem é chamada de **MDM (gerenciamento de dispositivo móvel)** . Os usuários "registram" seus dispositivos e usam certificados para se comunicar com o Intune. Como um administrador de TI, você efetua push de aplicativos para dispositivos, restringe os dispositivos a um sistema operacional específico, bloqueia dispositivos pessoais e muito mais. Se um dispositivo for perdido ou roubado, você também poderá remover todos os dados do dispositivo. 
 
-Na segunda abordagem, é possível gerenciar os aplicativos nos dispositivos. Essa abordagem é chamada de **MAM (gerenciamento de aplicativos móveis)**. Os usuários podem usar seus dispositivos pessoais para acessar recursos organizacionais. Ao abrir um aplicativo, como o email ou o SharePoint, é solicitado que os usuários realizem autenticação adicional. Se um dispositivo for perdido ou roubado, você poderá remover todos os dados da organização do dispositivo. 
+Na segunda abordagem, é possível gerenciar os aplicativos nos dispositivos. Essa abordagem é chamada de **MAM (gerenciamento de aplicativos móveis)** . Os usuários podem usar seus dispositivos pessoais para acessar recursos organizacionais. Ao abrir um aplicativo, como o email ou o SharePoint, é solicitado que os usuários realizem autenticação adicional. Se um dispositivo for perdido ou roubado, você poderá remover todos os dados da organização do dispositivo. 
 
 Você também pode usar uma combinação de [MDM e MAM](https://docs.microsoft.com/intune/byod-technology-decisions) juntos.
 

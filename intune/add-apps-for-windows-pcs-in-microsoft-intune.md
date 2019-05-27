@@ -8,7 +8,6 @@ ms.author: dougeby
 manager: dougeby
 ms.date: 08/29/2018
 ms.topic: archived
-ms.prod: ''
 ms.service: microsoft-intune
 ms.localizationpriority: medium
 ms.technology: ''
@@ -18,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic-keep
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: e4f6a8c3e460e9806aabadd710ec102aa77d44ab
-ms.sourcegitcommit: 484a898d54f5386fdbce300225aaa3495cecd6b0
+ms.openlocfilehash: 86cbea29233d792006bce68fcd2a36fb1a7ec0a6
+ms.sourcegitcommit: 916fed64f3d173498a2905c7ed8d2d6416e34061
 ms.translationtype: MTE75
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/01/2019
-ms.locfileid: "58798886"
+ms.lasthandoff: 05/23/2019
+ms.locfileid: "66050207"
 ---
 # <a name="add-apps-for-windows-pcs-that-run-the-intune-software-client"></a>Adicionar aplicativos a computadores Windows que executam o cliente de software do Intune
 
@@ -79,7 +78,7 @@ Você usa o Intune Software Publisher para configurar as propriedades do aplicat
 5. Na página **Regras de detecção**, você pode configurar regras para detectar se o aplicativo que você está configurando já está instalado em um PC. Ou você pode usar as regras de detecção padrão para substituir automaticamente todas as versões anteriores do aplicativo. Essa opção é para o Windows Installer (somente arquivos .exe).
 
    As regras que você pode configurar são:
-   - **Arquivo existente**. Especifique o caminho para o arquivo que deseja detectar. Você pode pesquisar em **%ProgramFiles%** (que procura em **Arquivos de Programas**\&lt;path&gt; e **Arquivos de Programas (x86)**\&lt;path&gt;) no PC ou **%SystemDrive%** (que pesquisa da unidade raiz do PC, geralmente, a unidade C).
+   - **Arquivo existente**. Especifique o caminho para o arquivo que deseja detectar. Você pode pesquisar em **%ProgramFiles%** (que procura em **Arquivos de Programas**\&lt;path&gt; e **Arquivos de Programas (x86)** \&lt;path&gt;) no PC ou **%SystemDrive%** (que pesquisa da unidade raiz do PC, geralmente, a unidade C).
    - **Código de produto MSI existente**. Escolha **Procurar** para escolher o arquivo do Windows Installer (msi) que você deseja detectar.
    - <strong>Chave do Registro existente</strong>. Especifique uma chave do Registro que comece com <strong>HKEY_LOCAL_MACHINE\</strong>. Os caminhos do Registro de 32 e 64 bits são pesquisados. Se a chave especificada existe em um dos locais, a regra de detecção é satisfeita.
 

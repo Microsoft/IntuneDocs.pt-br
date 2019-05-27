@@ -7,7 +7,6 @@ ms.author: mandia
 manager: dougeby
 ms.date: 04/10/2019
 ms.topic: reference
-ms.prod: ''
 ms.service: microsoft-intune
 ms.localizationpriority: medium
 ms.technology: ''
@@ -15,12 +14,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure, seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: d2eac8c396e63fa2f3a4e8ef2c2b88b883c87433
-ms.sourcegitcommit: b7f3a6d67f7ae2356bbca1934056d28cdfc6e45e
+ms.openlocfilehash: c44f18d19172498f17f2a3f78ea47bad1d0f3fa7
+ms.sourcegitcommit: 916fed64f3d173498a2905c7ed8d2d6416e34061
 ms.translationtype: MTE75
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/17/2019
-ms.locfileid: "65836463"
+ms.lasthandoff: 05/23/2019
+ms.locfileid: "66048104"
 ---
 # <a name="android-enterprise-device-settings-to-allow-or-restrict-features-using-intune"></a>Configurações do dispositivo do Android Enterprise para permitir ou restringir os recursos usando o Intune
 
@@ -254,7 +253,7 @@ Use essas configurações para definir uma experiência de estilo de quiosque em
 - **Tamanho mínimo da senha**: insira o número mínimo de caracteres que a senha do usuário deve ter, de **4**-**16**.
 - **Máximo de minutos de inatividade até o bloqueio do perfil de trabalho**: selecione a quantidade de tempo até o perfil de trabalho ser bloqueado. O usuário deve inserir suas credenciais para recuperar o acesso.
 - **Número de falhas de entrada antes de apagar o dispositivo**: insira o número de vezes que uma senha incorreta pode ser inserida antes que o perfil de trabalho seja apagado do dispositivo.
-- **Expiração da senha (dias)**: insira o número de dias até que a senha de um usuário final precise ser alterada (de **1**-**255**).
+- **Expiração da senha (dias)** : insira o número de dias até que a senha de um usuário final precise ser alterada (de **1**-**255**).
 - **Tipo de senha necessária**: selecione o tipo de senha que deve ser definido no dispositivo. Escolha:
   - **Padrão do dispositivo**
   - **Biométrico de segurança baixa**
@@ -275,7 +274,7 @@ Essas configurações de senha aplicam-se a perfis pessoais em dispositivos que 
 - **Tamanho mínimo da senha**: insira o número mínimo de caracteres que a senha do usuário deve ter, de **4**-**14**.
 - **Máximo de minutos de inatividade até a tela ser bloqueada**: selecione o tempo decorrido até um dispositivo inativo ser bloqueado automaticamente
 - **Número de falhas de entrada antes de apagar o dispositivo**: insira o número de vezes que uma senha incorreta pode ser inserida antes que todos os dados do dispositivo sejam apagados
-- **Expiração da senha (dias)**: insira o número de dias até que a senha de um usuário final precise ser alterada (de **1**-**255**)
+- **Expiração da senha (dias)** : insira o número de dias até que a senha de um usuário final precise ser alterada (de **1**-**255**)
 - **Tipo de senha necessária**: selecione o tipo de senha que deve ser definido no dispositivo. Escolha:
   - **Padrão do dispositivo**
   - **Biométrico de segurança baixa**

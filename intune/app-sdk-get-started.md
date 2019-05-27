@@ -5,9 +5,8 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 02/24/2019
+ms.date: 04/29/2019
 ms.topic: reference
-ms.prod: ''
 ms.service: microsoft-intune
 ms.localizationpriority: medium
 ms.technology: ''
@@ -17,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: c6389bc9790fce45604887bc2d73b3d5d8c35c45
-ms.sourcegitcommit: 02803863eba37ecf3d8823a7f1cd7c4f8e3bb42c
-ms.translationtype: HT
+ms.openlocfilehash: 35f4007d03ca66ada5721de1ffe20dd87bfe4527
+ms.sourcegitcommit: 916fed64f3d173498a2905c7ed8d2d6416e34061
+ms.translationtype: MTE75
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/09/2019
-ms.locfileid: "59423587"
+ms.lasthandoff: 05/23/2019
+ms.locfileid: "66043787"
 ---
 # <a name="get-started-with-the-microsoft-intune-app-sdk"></a>Introdução ao SDK de Aplicativos do Microsoft Intune
 
@@ -164,7 +163,7 @@ Depois de concluir as etapas necessárias para integrar seu aplicativo iOS ou An
     
     * Se estiver testando seu aplicativo em um dispositivo móvel usando uma conta de usuário final, verifique se você concedeu a essa conta uma licença do Intune pelo site da Central de administração do Microsoft 365. Depois de fazer logon com uma conta do administrador, confira [Atribuir uma licença do Microsoft Intune](https://docs.microsoft.com/en-ca/intune/licenses-assign).
 
-* **Políticas de proteção do aplicativo do Intune**: para testar seu aplicativo em todas as políticas de proteção do aplicativo do Intune, é necessário saber qual é o comportamento esperado para cada configuração da política. Consulte as descrições de [políticas de proteção do aplicativo do iOS](app-protection-policy-settings-ios.md) e [políticas de proteção do aplicativo do Android](app-protection-policy-settings-android.md).
+* **Políticas de proteção do aplicativo do Intune**: para testar seu aplicativo em todas as políticas de proteção do aplicativo do Intune, é necessário saber qual é o comportamento esperado para cada configuração da política. Consulte as descrições de [políticas de proteção do aplicativo do iOS](app-protection-policy-settings-ios.md) e [políticas de proteção do aplicativo do Android](app-protection-policy-settings-android.md). Se seu aplicativo integrou o SDK do Intune, mas ainda não está listado no portal do Azure como um aplicativo de destino, você poderá direcioná-lo com uma política selecionando a opção "+ Mais Aplicativos" e fornecendo a ID do pacote (iOS) ou o nome do pacote (Android) na caixa de texto.
 
 * **Solução de problemas**: se você encontrar algum problema ao testar manualmente a experiência do usuário durante a instalação do seu aplicativo, confira [Solucionar problemas de instalação do aplicativo](troubleshoot-app-install.md). 
 

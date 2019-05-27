@@ -7,7 +7,6 @@ ms.author: mandia
 manager: dougeby
 ms.date: 11/13/2018
 ms.topic: reference
-ms.prod: ''
 ms.service: microsoft-intune
 ms.localizationpriority: medium
 ms.technology: ''
@@ -16,12 +15,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: edb01e1cbe5fdbc79b48ee90e39fe45a2ccefb2a
-ms.sourcegitcommit: 25e6aa3bfce58ce8d9f8c054bc338cc3dff4a78b
+ms.openlocfilehash: eeb70727a187a769e56a9cfd517ecd7b583ba1c1
+ms.sourcegitcommit: 916fed64f3d173498a2905c7ed8d2d6416e34061
 ms.translationtype: MTE75
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57566345"
+ms.lasthandoff: 05/23/2019
+ms.locfileid: "66042460"
 ---
 # <a name="android-and-samsung-knox-standard-device-restriction-settings-lists-in-intune"></a>Listas de configurações de restrições de dispositivo Android e Samsung Knox Standard no Intune
 
@@ -33,17 +32,17 @@ Este artigo mostra todas as configurações de restrições de dispositivo do Mi
 ## <a name="general"></a>Geral
 
 - **Câmera**: escolha **Bloquear** para impedir o acesso à câmera. **Não configurado** permite o acesso à câmera do dispositivo.
-- **Copiar e colar (somente Samsung KNOX)**: escolha **Bloquear** para evitar copiar e colar. **Não configurado** permite usar as funções de copiar e colar no dispositivo.
-- **Compartilhamento de área de transferência entre aplicativos (somente Samsung KNOX)**: escolha **Bloquear** para impedir o uso da área de transferência para copiar e colar entre aplicativos. **Não configurado** permite o uso da área de transferência para copiar e colar entre aplicativos.
-- **Envio de dados de diagnóstico (somente Samsung KNOX)**: escolha **Bloquear** para impedir que o usuário envie dados de diagnóstico do dispositivo. **Não configurado** permite que o usuário envie os dados.
-- **Apagar (somente Samsung KNOX)**: permite que o usuário execute uma ação de [apagamento](devices-wipe.md) no dispositivo.
-- **Geolocalização (somente Samsung KNOX)**: escolha **Bloquear** para impedir que o dispositivo use as informações de localização. **Não configurado** permite que o dispositivo utilize informações de localização.
-- **Desligar (somente Samsung KNOX)**: escolha **Bloquear** para impedir que o usuário desligue o dispositivo. Se essa configuração estiver desabilitada, a opção **Número de falhas de entrada antes de apagar o dispositivo** não poderá ser definida e não funcionará. **Não configurado** permite que o usuário desligue o dispositivo.
-- **Captura de tela (Somente Samsung KNOX)**: escolha **Bloquear** para impedir capturas de tela. **Não configurado** permite que o usuário capture o conteúdo da tela como uma imagem.
-- **Assistente de voz (somente Samsung KNOX)**: escolha **Bloquear** para desabilitar o serviço S Voice. **Não configurado** permite o uso do serviço e do aplicativo S Voice no dispositivo. Essa configuração não se aplica ao Bixby nem ao assistente de voz para acessibilidade, que lê em voz alta o conteúdo da tela.
-- **YouTube (somente Samsung KNOX)**: escolha **Bloquear** para impedir o uso do aplicativo YouTube. **Não configurado** permite o uso do aplicativo YouTube no dispositivo.
-- **Dispositivos compartilhados (apenas Samsung KNOX)**: configure um dispositivo Samsung Knox Standard gerenciado como compartilhado. Quando estiver configurado como **Permitir**, os usuários finais podem entrar ou sair do dispositivo com suas credenciais do Azure AD. O dispositivo permanece gerenciado, independentemente de estar ou não em uso.</br>Quando usado com um perfil de certificado SCEP, esse recurso permite aos usuários finais compartilhar um dispositivo com os mesmos aplicativos para todos os usuários. Porém, cada usuário tem seu próprio certificado de usuário de SCEP. Quando os usuários saem, todos os dados do aplicativo são removidos. Esse recurso está limitado a aplicativos LOB apenas. </br>**Não configurado** impede que vários usuários finais entrem no aplicativo do Portal da Empresa no dispositivo usando suas credenciais do Azure AD.
-- **Bloqueie as alterações de data e hora (Samsung KNOX)**: escolha **Bloquear** para impedir que o usuário altere as configurações de data e hora no dispositivo. **Não configurado** permite que os usuários alterem as configurações de data e hora.
+- **Copiar e colar (somente Samsung KNOX)** : escolha **Bloquear** para evitar copiar e colar. **Não configurado** permite usar as funções de copiar e colar no dispositivo.
+- **Compartilhamento de área de transferência entre aplicativos (somente Samsung KNOX)** : escolha **Bloquear** para impedir o uso da área de transferência para copiar e colar entre aplicativos. **Não configurado** permite o uso da área de transferência para copiar e colar entre aplicativos.
+- **Envio de dados de diagnóstico (somente Samsung KNOX)** : escolha **Bloquear** para impedir que o usuário envie dados de diagnóstico do dispositivo. **Não configurado** permite que o usuário envie os dados.
+- **Apagar (somente Samsung KNOX)** : permite que o usuário execute uma ação de [apagamento](devices-wipe.md) no dispositivo.
+- **Geolocalização (somente Samsung KNOX)** : escolha **Bloquear** para impedir que o dispositivo use as informações de localização. **Não configurado** permite que o dispositivo utilize informações de localização.
+- **Desligar (somente Samsung KNOX)** : escolha **Bloquear** para impedir que o usuário desligue o dispositivo. Se essa configuração estiver desabilitada, a opção **Número de falhas de entrada antes de apagar o dispositivo** não poderá ser definida e não funcionará. **Não configurado** permite que o usuário desligue o dispositivo.
+- **Captura de tela (Somente Samsung KNOX)** : escolha **Bloquear** para impedir capturas de tela. **Não configurado** permite que o usuário capture o conteúdo da tela como uma imagem.
+- **Assistente de voz (somente Samsung KNOX)** : escolha **Bloquear** para desabilitar o serviço S Voice. **Não configurado** permite o uso do serviço e do aplicativo S Voice no dispositivo. Essa configuração não se aplica ao Bixby nem ao assistente de voz para acessibilidade, que lê em voz alta o conteúdo da tela.
+- **YouTube (somente Samsung KNOX)** : escolha **Bloquear** para impedir o uso do aplicativo YouTube. **Não configurado** permite o uso do aplicativo YouTube no dispositivo.
+- **Dispositivos compartilhados (apenas Samsung KNOX)** : configure um dispositivo Samsung Knox Standard gerenciado como compartilhado. Quando estiver configurado como **Permitir**, os usuários finais podem entrar ou sair do dispositivo com suas credenciais do Azure AD. O dispositivo permanece gerenciado, independentemente de estar ou não em uso.</br>Quando usado com um perfil de certificado SCEP, esse recurso permite aos usuários finais compartilhar um dispositivo com os mesmos aplicativos para todos os usuários. Porém, cada usuário tem seu próprio certificado de usuário de SCEP. Quando os usuários saem, todos os dados do aplicativo são removidos. Esse recurso está limitado a aplicativos LOB apenas. </br>**Não configurado** impede que vários usuários finais entrem no aplicativo do Portal da Empresa no dispositivo usando suas credenciais do Azure AD.
+- **Bloqueie as alterações de data e hora (Samsung KNOX)** : escolha **Bloquear** para impedir que o usuário altere as configurações de data e hora no dispositivo. **Não configurado** permite que os usuários alterem as configurações de data e hora.
 
 ## <a name="password"></a>Senha
 
@@ -55,7 +54,7 @@ Este artigo mostra todas as configurações de restrições de dispositivo do Mi
 - **Comprimento mínimo da senha**: insira o comprimento mínimo da senha que um usuário deve inserir (entre 4 e 16 caracteres).
 - **Máximo de minutos de inatividade até o bloqueio da tela**: insira o número máximo de minutos de inatividade permitido, antes que a tela do dispositivo seja bloqueada. O usuário final não pode definir um valor temporal superior ao tempo configurado no perfil do dispositivo. O usuário final pode definir um valor temporal inferior. Por exemplo, se o perfil estiver definido para 15 minutos, o usuário final poderá definir o valor para cinco minutos. Entretanto, ele não poderá definir o valor para 30 minutos. 
 - **Número de falhas de entrada antes de apagar o dispositivo**: insira o número de falhas de entrada repetidas permitidas antes de o dispositivo ser apagado.
-- **Expiração da senha (dias)**: insira o número de dias antes que a senha do dispositivo precise ser alterada.
+- **Expiração da senha (dias)** : insira o número de dias antes que a senha do dispositivo precise ser alterada.
 - **Tipo de senha necessária**: insira o nível de complexidade de senha exigido e se é possível usar dispositivos biométricos. Suas opções:
   - **Padrão do dispositivo**
   - **Biométrico de segurança baixa**
@@ -65,7 +64,7 @@ Este artigo mostra todas as configurações de restrições de dispositivo do Mi
   - **Pelo menos, alfanumérico**
   - **Pelo menos alfanumérico com símbolos**
 - **Evitar a reutilização de senhas anteriores**: impede que o usuário final crie uma senha usada anteriormente.
-- **Desbloquear impressão digital (somente Samsung KNOX)**: escolha **Bloquear** para impedir o uso da impressão digital para desbloquear o dispositivo. **Não configurado** permite que o usuário desbloqueie o dispositivo usando uma impressão digital.
+- **Desbloquear impressão digital (somente Samsung KNOX)** : escolha **Bloquear** para impedir o uso da impressão digital para desbloquear o dispositivo. **Não configurado** permite que o usuário desbloqueie o dispositivo usando uma impressão digital.
 - **Smart Lock e outros agentes de confiança**: escolha **Bloquear** para impedir que o Smart Lock ou outros agentes de confiança ajustem as configurações da tela de bloqueio (Samsung KNOX Standard 5.0+). Esse recurso do telefone, às vezes conhecido como agente de confiança, permite desabilitar ou ignorar a senha da tela de bloqueio do dispositivo quando este está em uma localização confiável. Por exemplo, esse dispositivo pode ser usado quando o dispositivo está conectado a um dispositivo Bluetooth específico ou quando está próximo a uma marca NFC. Você pode usar essa configuração para impedir que os usuários configurem o Smart Lock.
 - **Criptografia**: escolha **Exigir** para que os arquivos no dispositivo sejam criptografados. Nem todos os dispositivos são compatíveis com a criptografia. Para usar esse recurso, também é possível: 
   1. Definir **Senha** como **Exigir**.
@@ -84,7 +83,7 @@ Se você definir a configuração **Tipo de senha necessária** como **Complexo 
 
 ## <a name="google-play-store"></a>Google Play Store
 
-- **Google Play Store (somente Samsung KNOX)**: escolha **Bloquear** para impedir o uso da Google Play Store. **Não configurado** permite ao usuário acessar a Google Play Store no dispositivo.
+- **Google Play Store (somente Samsung KNOX)** : escolha **Bloquear** para impedir o uso da Google Play Store. **Não configurado** permite ao usuário acessar a Google Play Store no dispositivo.
 
 ## <a name="restricted-apps"></a>Aplicativos restritos
 
@@ -103,15 +102,15 @@ Para adicionar o aplicativo a essas listas, você pode:
 
 ## <a name="browser"></a>Navegador
 
-- **Navegador da Web (somente Samsung KNOX)**: escolha **Bloquear** para impedir que o navegador da Web padrão seja usado no dispositivo. **Não configurado** permite que o navegador da Web padrão do dispositivo seja usado.
-- **Preenchimento automático (somente Samsung KNOX)**: escolha **Bloquear** para impedir o preenchimento automático de texto no navegador. **Não configurado** permite o uso da função de preenchimento automático no navegador da Web.
-- **Cookies (somente Samsung KNOX)**: escolha como você deseja lidar com cookies de sites no dispositivo. Suas opções:
+- **Navegador da Web (somente Samsung KNOX)** : escolha **Bloquear** para impedir que o navegador da Web padrão seja usado no dispositivo. **Não configurado** permite que o navegador da Web padrão do dispositivo seja usado.
+- **Preenchimento automático (somente Samsung KNOX)** : escolha **Bloquear** para impedir o preenchimento automático de texto no navegador. **Não configurado** permite o uso da função de preenchimento automático no navegador da Web.
+- **Cookies (somente Samsung KNOX)** : escolha como você deseja lidar com cookies de sites no dispositivo. Suas opções:
   - Allow
   - Bloquear todos os cookies
   - Permitir cookies dos sites visitados
   - Permitir cookies do site atual
-- **JavaScript (somente Samsung KNOX)**: escolha **Bloquear** para impedir que o navegador da Web execute scripts Java. **Não configurado** permite que o navegador da Web do dispositivo execute scripts Java.
-- **Pop-ups (somente Samsung KNOX)**: escolha **Bloquear** para impedir pop-ups no navegador da Web. **Não configurado** permite pop-ups no navegador da Web.
+- **JavaScript (somente Samsung KNOX)** : escolha **Bloquear** para impedir que o navegador da Web execute scripts Java. **Não configurado** permite que o navegador da Web do dispositivo execute scripts Java.
+- **Pop-ups (somente Samsung KNOX)** : escolha **Bloquear** para impedir pop-ups no navegador da Web. **Não configurado** permite pop-ups no navegador da Web.
 
 ## <a name="allow-or-block-apps"></a>Permitir ou bloquear aplicativos
 
@@ -131,21 +130,21 @@ Para cada configuração, adicione uma lista de aplicativos. Suas opções:
 
 ## <a name="cloud-and-storage"></a>Nuvem e Armazenamento
 
-- **Backup do Google (somente Samsung KNOX)**: escolha **Bloquear** para impedir que o dispositivo sincronize com o backup do Google. **Não configurado** permite usar o backup do Google.
-- **Sincronização automática da conta do Google (somente Samsung KNOX)**: escolha **Bloquear** para impedir o recurso de sincronização automática de contas do Google no dispositivo. **Não configurado** permite que as configurações de conta do Google sejam sincronizadas automaticamente.
-- **Armazenamento removível (somente Samsung KNOX)**: escolha **Bloquear** para impedir que o dispositivo use armazenamento removível. **Não configurado** permite que o dispositivo use o armazenamento removível, como um cartão SD.
-- **Criptografia em cartões de memória (somente Samsung KNOX)**: **Exigir** impõe que os cartões de memória sejam criptografados. **Não configurado** permite o uso de cartões de memória não criptografados. Nem todos os dispositivos oferecem suporte à criptografia de cartão de memória. Para confirmar, verifique as informações com o fabricante do dispositivo.
+- **Backup do Google (somente Samsung KNOX)** : escolha **Bloquear** para impedir que o dispositivo sincronize com o backup do Google. **Não configurado** permite usar o backup do Google.
+- **Sincronização automática da conta do Google (somente Samsung KNOX)** : escolha **Bloquear** para impedir o recurso de sincronização automática de contas do Google no dispositivo. **Não configurado** permite que as configurações de conta do Google sejam sincronizadas automaticamente.
+- **Armazenamento removível (somente Samsung KNOX)** : escolha **Bloquear** para impedir que o dispositivo use armazenamento removível. **Não configurado** permite que o dispositivo use o armazenamento removível, como um cartão SD.
+- **Criptografia em cartões de memória (somente Samsung KNOX)** : **Exigir** impõe que os cartões de memória sejam criptografados. **Não configurado** permite o uso de cartões de memória não criptografados. Nem todos os dispositivos oferecem suporte à criptografia de cartão de memória. Para confirmar, verifique as informações com o fabricante do dispositivo.
 
 ## <a name="cellular-and-connectivity"></a>Rede Celular e Conectividade
 
-- **Roaming de dados (somente Samsung KNOX)**: escolha **Bloquear** para impedir o roaming de dados pela rede celular. **Não configurado** permite o roaming de dados quando o dispositivo estiver em uma rede celular.
-- **Mensagens SMS/MMS (somente Samsung KNOX)**: escolha **Bloquear** para impedir o uso de mensagens de texto no dispositivo. **Não configurado** permite o uso de mensagens SMS e MMS no dispositivo.
-- **Discagem de voz (somente Samsung KNOX)**: escolha **Bloquear** para impedir o uso do recurso de discagem por voz no dispositivo. **Não configurado** permite a discagem por voz no dispositivo.
-- **Roaming de voz (somente Samsung KNOX)**: escolha **Bloquear** para impedir o roaming de voz pela rede celular. **Não configurado** permite o roaming de voz quando o dispositivo estiver em uma rede celular.
-- **Bluetooth (somente Samsung KNOX)**: escolha **Bloquear** para impedir o uso de Bluetooth no dispositivo. **Não configurado** permite o uso de Bluetooth no dispositivo.
-- **NFC (somente Samsung KNOX)**: escolha **Bloquear** para impedir o uso da tecnologia NFC (comunicação a curta distância). **Não configurado** permite operações que usam a comunicação a curta distância em dispositivos compatíveis.
-- **Wi-Fi (somente Samsung KNOX)**: escolha **Bloquear** para impedir o uso de Wi-Fi no dispositivo. **Não configurado** permite o uso de recursos de Wi-Fi no dispositivo.
-- **Wi-Fi tethering (somente Samsung KNOX)**: escolha **Bloquear** para impedir o uso do compartilhamento da Internet Wi-Fi no dispositivo. **Não configurado** permite o uso do compartilhamento da Internet Wi-Fi no dispositivo.
+- **Roaming de dados (somente Samsung KNOX)** : escolha **Bloquear** para impedir o roaming de dados pela rede celular. **Não configurado** permite o roaming de dados quando o dispositivo estiver em uma rede celular.
+- **Mensagens SMS/MMS (somente Samsung KNOX)** : escolha **Bloquear** para impedir o uso de mensagens de texto no dispositivo. **Não configurado** permite o uso de mensagens SMS e MMS no dispositivo.
+- **Discagem de voz (somente Samsung KNOX)** : escolha **Bloquear** para impedir o uso do recurso de discagem por voz no dispositivo. **Não configurado** permite a discagem por voz no dispositivo.
+- **Roaming de voz (somente Samsung KNOX)** : escolha **Bloquear** para impedir o roaming de voz pela rede celular. **Não configurado** permite o roaming de voz quando o dispositivo estiver em uma rede celular.
+- **Bluetooth (somente Samsung KNOX)** : escolha **Bloquear** para impedir o uso de Bluetooth no dispositivo. **Não configurado** permite o uso de Bluetooth no dispositivo.
+- **NFC (somente Samsung KNOX)** : escolha **Bloquear** para impedir o uso da tecnologia NFC (comunicação a curta distância). **Não configurado** permite operações que usam a comunicação a curta distância em dispositivos compatíveis.
+- **Wi-Fi (somente Samsung KNOX)** : escolha **Bloquear** para impedir o uso de Wi-Fi no dispositivo. **Não configurado** permite o uso de recursos de Wi-Fi no dispositivo.
+- **Wi-Fi tethering (somente Samsung KNOX)** : escolha **Bloquear** para impedir o uso do compartilhamento da Internet Wi-Fi no dispositivo. **Não configurado** permite o uso do compartilhamento da Internet Wi-Fi no dispositivo.
 
 ## <a name="kiosk"></a>Quiosque
 

@@ -7,7 +7,6 @@ ms.author: mandia
 manager: dougeby
 ms.date: 11/8/2018
 ms.topic: reference
-ms.prod: ''
 ms.service: microsoft-intune
 ms.localizationpriority: medium
 ms.reviewer: tycast
@@ -16,12 +15,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 880a81b49a78e7afd83aca510f85133e91416cf4
-ms.sourcegitcommit: 25e6aa3bfce58ce8d9f8c054bc338cc3dff4a78b
+ms.openlocfilehash: 502babf80b4286adb19a09988d16bd56562d4925
+ms.sourcegitcommit: 916fed64f3d173498a2905c7ed8d2d6416e34061
 ms.translationtype: MTE75
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57566260"
+ms.lasthandoff: 05/23/2019
+ms.locfileid: "66046660"
 ---
 # <a name="add-wi-fi-settings-for-windows-10-and-later-devices-in-intune"></a>Adicionar configurações de Wi-Fi para dispositivos Windows 10 e posterior no Intune
 
@@ -37,7 +36,7 @@ Este artigo descreve essas configurações.
 
 - **Tipo de Wi-Fi**: escolha **Básico**. 
 
-- **Nome de Wi-Fi (SSID)**: abreviação de identificador SSID. Esse valor é o nome real da rede sem fio à qual os dispositivos se conectam. No entanto, os usuários veem apenas o **Nome da conexão** definido ao escolher a conexão.
+- **Nome de Wi-Fi (SSID)** : abreviação de identificador SSID. Esse valor é o nome real da rede sem fio à qual os dispositivos se conectam. No entanto, os usuários veem apenas o **Nome da conexão** definido ao escolher a conexão.
 
 - **Nome da conexão**: insira um nome amigável para essa conexão Wi-Fi. O texto inserido é o nome que os usuários veem ao navegarem pelas conexões disponíveis no dispositivo.
 
@@ -56,7 +55,7 @@ Este artigo descreve essas configurações.
   - **Variável**: use essa opção se o tráfego de rede for cobrado por byte (custo por byte).
 
 - **Tipo de Segurança Sem Fio**: insira o protocolo de segurança usado para autenticar dispositivos na rede. As opções são:
-  - **Abrir (sem autenticação)**: use essa opção somente se a rede não for segura.
+  - **Abrir (sem autenticação)** : use essa opção somente se a rede não for segura.
   - **WPA/WPA2-Personal**: uma opção mais segura e normalmente usada para conectividade de Wi-Fi. Para obter mais segurança, você também pode inserir uma chave de rede ou senha de chave pré-compartilhada. 
 
     - **Chave pré-compartilhada** (PSK): opcional. Mostrada quando você escolhe **WPA2/WPA-Personal** como o tipo de segurança. Quando a rede da sua organização é definida ou configurada, uma senha ou chave de rede também é configurada. Insira essa senha ou chave de rede para o valor PSK. Insira uma cadeia de caracteres com 8 a 64 caracteres. Se a senha ou chave de rede tiver 64 caracteres, insira caracteres hexadecimais.
@@ -75,7 +74,7 @@ Selecione **OK** > **Criar** para salvar suas alterações. O perfil será criad
 
 - **Tipo de Wi-Fi**: escolha **Corporativo**. 
 
-- **Nome de Wi-Fi (SSID)**: abreviação de identificador SSID. Esse valor é o nome real da rede sem fio à qual os dispositivos se conectam. No entanto, os usuários veem apenas o **Nome da conexão** definido ao escolher a conexão.
+- **Nome de Wi-Fi (SSID)** : abreviação de identificador SSID. Esse valor é o nome real da rede sem fio à qual os dispositivos se conectam. No entanto, os usuários veem apenas o **Nome da conexão** definido ao escolher a conexão.
 
 - **Nome da conexão**: insira um nome amigável para essa conexão Wi-Fi. O texto inserido é o nome que os usuários veem ao navegarem pelas conexões disponíveis no dispositivo.
 
@@ -92,7 +91,7 @@ Selecione **OK** > **Criar** para salvar suas alterações. O perfil será criad
   - **Fixa**: use essa opção se a rede estiver configurada com um limite fixo para o tráfego de rede. Depois que esse limite for atingido, o acesso à rede será proibido.
   - **Variável**: use essa opção se o tráfego de rede for orçado por byte.
 
-- **SSO (logon único)**: permite que você configure o SSO (logon único), no qual as credenciais são compartilhadas para entrar no computador e na rede Wi-Fi. As opções são:
+- **SSO (logon único)** : permite que você configure o SSO (logon único), no qual as credenciais são compartilhadas para entrar no computador e na rede Wi-Fi. As opções são:
   - **Desabilitar**: desabilita o comportamento do SSO. O usuário precisa autenticar à rede separadamente.
   - **Habilitar antes que o usuário entre no dispositivo**: use o SSO para autenticar na rede antes do processo de entrada do usuário.
   - **Habilitar depois que o usuário entrar no dispositivo**: use o SSO para autenticar na rede imediatamente após a conclusão do processo de entrada do usuário.
@@ -126,23 +125,23 @@ Selecione **OK** > **Criar** para salvar suas alterações. O perfil será criad
 
         **Certificado raiz para validação do servidor**: use com os tipos de EAP **EAP-TLS**, **EAP-TTLS** ou **PEAP**. Escolha o perfil de certificado raiz confiável usado para autenticar a conexão.  
 
-        **Privacidade de identidade (identidade externa)**: use com o tipo de EAP **PEAP**. Insira o texto enviado em resposta a uma solicitação de identidade de EAP. Esse texto pode ser qualquer valor. Durante a autenticação, essa identidade anônima é enviada inicialmente e seguida pela identificação real enviada em um túnel seguro.  
+        **Privacidade de identidade (identidade externa)** : use com o tipo de EAP **PEAP**. Insira o texto enviado em resposta a uma solicitação de identidade de EAP. Esse texto pode ser qualquer valor. Durante a autenticação, essa identidade anônima é enviada inicialmente e seguida pela identificação real enviada em um túnel seguro.  
 
       - **Autenticação do Cliente**
 
-        **Certificado do cliente para autenticação do cliente (certificado de identidade)**: use com o tipo de EAP **EAP-TLS**. Escolha o perfil de certificado usado para autenticar a conexão.
+        **Certificado do cliente para autenticação do cliente (certificado de identidade)** : use com o tipo de EAP **EAP-TLS**. Escolha o perfil de certificado usado para autenticar a conexão.
 
         **Método de autenticação**: use com o tipo de EAP **EAP-TTLS**. Selecione o método de autenticação para a conexão:  
 
           - **Certificados**: selecione o certificado do cliente que é o certificado de identidade apresentado ao servidor.
-          - **Nome de usuário e senha**: insira um método de autenticação **que não seja de EAP (identidade interna)**. Suas opções:
+          - **Nome de usuário e senha**: insira um método de autenticação **que não seja de EAP (identidade interna)** . Suas opções:
 
             - **Senha não criptografada (PAP)**
             - **Protocolo CHAP**
             - **Microsoft CHAP (MS-CHAP)**
             - **Microsoft CHAP Versão 2 (MS-CHAP v2)**
 
-        **Privacidade de identidade (identidade externa)**: use com o tipo de EAP **EAP-TTLS**. Insira o texto enviado em resposta a uma solicitação de identidade de EAP. Esse texto pode ser qualquer valor. Durante a autenticação, essa identidade anônima é enviada inicialmente e seguida pela identificação real enviada em um túnel seguro.
+        **Privacidade de identidade (identidade externa)** : use com o tipo de EAP **EAP-TTLS**. Insira o texto enviado em resposta a uma solicitação de identidade de EAP. Esse texto pode ser qualquer valor. Durante a autenticação, essa identidade anônima é enviada inicialmente e seguida pela identificação real enviada em um túnel seguro.
 
 - **Configurações de Proxy da Empresa**: opte por usar as configurações de proxy em sua organização. Suas opções:
   - **Nenhum**: nenhuma configuração de proxy é definida.

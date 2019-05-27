@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: ca41e12136911cc0aecb6968a949fb738e2e2d77
-ms.sourcegitcommit: d1116c70bd0f2382d590091e0e66095de3925324
+ms.openlocfilehash: 0eadff455a25a22d53d58d87790a356072f9db66
+ms.sourcegitcommit: b0cf661145ccc6e3518db620af199786a623a0d9
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/11/2019
-ms.locfileid: "59570761"
+ms.lasthandoff: 04/28/2019
+ms.locfileid: "64764730"
 ---
 # <a name="add-a-windows-line-of-business-app-to-microsoft-intune"></a>Adicionar um aplicativo de linha de negócios do Windows ao Microsoft Intune
 
@@ -62,8 +62,8 @@ Um aplicativo de LOB (linha de negócios) é um aplicativo que pode ser adiciona
     - **Categoria**: Selecione uma ou mais das categorias de aplicativo interno ou uma categoria criada por você. As categorias facilitam para os usuários a localização do aplicativo ao navegar no portal da empresa.
     - **Exibir como um aplicativo em destaque no Portal da Empresa**: Exiba o aplicativo de maneira proeminente em na página principal do portal da empresa quando os usuários procurarem por aplicativos.
     - **URL de Informações**: Opcionalmente, Insira a URL de um site que contém informações sobre esse aplicativo. A URL será exibida no portal da empresa.
-    - **URL de privacidade**: Opcionalmente, Insira a URL de um site que contém informações de privacidade desse aplicativo. A URL será exibida no portal da empresa.
-    - **Argumentos de linha de comando**: Opcionalmente, Insira os argumentos de linha de comando que você deseja aplicar ao arquivo .msi quando ele for executado. Um exemplo é **/q**.
+    - **URL de Privacidade**: Opcionalmente, Insira a URL de um site que contém informações de privacidade desse aplicativo. A URL será exibida no portal da empresa.
+    - **Argumentos de linha de comando**: Opcionalmente, Insira os argumentos de linha de comando que você deseja aplicar ao arquivo .msi quando ele for executado.  Um exemplo é **/q**. Não inclua o comando ou os argumentos msiexec, como **/i** ou **/x**, já que eles são usados automaticamente. Para mais informações, consulte as [Opções de linha de comando](https://docs.microsoft.com/windows/desktop/Msi/command-line-options). 
     - **Desenvolvedor**: Opcionalmente, Insira o nome do desenvolvedor do aplicativo.
     - **Proprietário**: Opcionalmente, Insira o nome do proprietário desse aplicativo. Um exemplo é **Departamento de RH**.
     - **Observações**: Insira as observações que você deseja associar a esse aplicativo.

@@ -7,7 +7,6 @@ ms.author: mandia
 manager: dougeby
 ms.date: 01/09/2019
 ms.topic: reference
-ms.prod: ''
 ms.service: microsoft-intune
 ms.localizationpriority: medium
 ms.technology: ''
@@ -17,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure; seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 151ceaa40f2993d3160b9de34eee92e53c35925d
-ms.sourcegitcommit: 25e6aa3bfce58ce8d9f8c054bc338cc3dff4a78b
+ms.openlocfilehash: 84a4db5639a03720b03da665c9df09fbc39d9df5
+ms.sourcegitcommit: 916fed64f3d173498a2905c7ed8d2d6416e34061
 ms.translationtype: MTE75
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57565852"
+ms.lasthandoff: 05/23/2019
+ms.locfileid: "66045026"
 ---
 # <a name="windows-holographic-for-business-settings-to-manage-shared-devices-using-intune"></a>Configurações do Windows Holographic for Business para gerenciar dispositivos compartilhados usando o Intune
 
@@ -44,9 +43,9 @@ Para obter mais informações sobre este recurso no Intune, confira [Controlar o
 > Os dispositivos que executam o Windows Holographic for Business, incluindo o Microsoft HoloLens, só dão suporte às configurações de **Gerenciamento de contas**. Se você definir uma das outras configurações mostradas no Intune, incluindo **Modo de computador compartilhado**, ela não afetará esses dispositivos.
 
 - **Gerenciamento de conta**: definido para **Habilitar** para excluir automaticamente as contas locais criadas por convidados e as contas do AD e do Azure AD. Quando um usuário se desconecta do dispositivo ou quando a manutenção do sistema é executada, essas contas são excluídas. Quando essa opção estiver habilitada, também defina:
-  - **Exclusão da conta**: escolha quando as contas serão excluídas: **no limite de espaço de armazenamento**, **no limite de espaço de armazenamento e o limite inativo**, ou **imediatamente depois de logoff** . Insira também:
-    - **Iniciar a exclusão threshold(%)**: insira uma porcentagem (0 a 100) de espaço em disco. Quando o espaço total de disco/armazenamento fica abaixo do valor inserido, as contas armazenadas em cache são excluídas. Ele exclui continuamente as contas para recuperar o espaço em disco. As contas que estão inativas por mais tempo são excluídas primeiro.
-    - **Parar exclusão threshold(%)**: insira uma porcentagem (0 a 100) de espaço em disco. Quando o espaço total de disco/armazenamento atende ao valor inserido, a exclusão é interrompida.
+  - **Exclusão da Conta**: escolha quando as contas são excluídas: **no limite de espaço de armazenamento**, **no limite de espaço de armazenamento e no limite inativo** ou **imediatamente depois do logoff**. Insira também:
+    - **Iniciar limite de exclusão (%)** : insira um percentual (0 a 100) de espaço em disco. Quando o espaço total de disco/armazenamento fica abaixo do valor inserido, as contas armazenadas em cache são excluídas. Ele exclui continuamente as contas para recuperar o espaço em disco. As contas que estão inativas por mais tempo são excluídas primeiro.
+    - **Parar limite de exclusão (%)** : insira um percentual (0 a 100) de espaço em disco. Quando o espaço total de disco/armazenamento atende ao valor inserido, a exclusão é interrompida.
 
   Defina essa opção como **Desabilitar** para manter as contas locais, do AD e do Azure AD criadas por convidados.
 

@@ -8,7 +8,6 @@ ms.author: dougeby
 manager: dougeby
 ms.date: 01/01/2018
 ms.topic: archived
-ms.prod: ''
 ms.service: microsoft-intune
 ms.localizationpriority: medium
 ms.technology: ''
@@ -18,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic-keep
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 92262a9d1f07b8756ced8788feee586ffa30088a
-ms.sourcegitcommit: 484a898d54f5386fdbce300225aaa3495cecd6b0
+ms.openlocfilehash: 417d244cbe64af967e61112f67dbf7829ce7feda
+ms.sourcegitcommit: 916fed64f3d173498a2905c7ed8d2d6416e34061
 ms.translationtype: MTE75
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/01/2019
-ms.locfileid: "58798794"
+ms.lasthandoff: 05/23/2019
+ms.locfileid: "66046960"
 ---
 # <a name="manage-license-agreements-for-windows-pc-software-in-microsoft-intune"></a>Gerenciar contratos de licença para software de PC com Windows no Microsoft Intune
 
@@ -68,7 +67,7 @@ Os contratos de Licenciamento por Volume do Intune fornecem informações sobre 
 
         -   Somente caracteres ASCII contam com suporte.
 
-        -   Os caracteres a seguir não são permitidos no nome do contrato: **~ ! @ # $ ^ &amp; &#42; ( ) = + [ ] { } \ | ; : ' " &lt; &gt; /**. São permitidos espaços no nome.
+        -   Os caracteres a seguir não são permitidos no nome do contrato: **~ ! @ # $ ^ &amp; &#42; ( ) = + [ ] { } \ | ; : ' " &lt; &gt; /** . São permitidos espaços no nome.
 
         -   O nome de arquivo do contrato deve ter no máximo 128 caracteres.
 
@@ -94,7 +93,7 @@ Os contratos de Licenciamento por Volume do Intune fornecem informações sobre 
 
         -   **Nome do contrato** - especifique um nome exclusivo para o contrato.
 
-            O nome do contrato pode ter, no máximo, 256 caracteres e não pode conter os seguintes caracteres: **~ ! @ # $ ^ &amp; &#42; ( ) = + [ ] { } \ | ; : ' " &lt; &gt; /**. São permitidos espaços no nome.
+            O nome do contrato pode ter, no máximo, 256 caracteres e não pode conter os seguintes caracteres: **~ ! @ # $ ^ &amp; &#42; ( ) = + [ ] { } \ | ; : ' " &lt; &gt; /** . São permitidos espaços no nome.
 
         -   **Número de Autorização/Contrato** - insira o número de autorização/contrato do par de licenças.
 
@@ -147,7 +146,7 @@ Também é possível adicionar outros tipos de contratos de licença ao Intune a
 
 4.  Na área **Adicionar Detalhes do Contrato** , especifique o seguinte:
 
-    -   **Agreement name** (necessário). O nome do contrato pode ter, no máximo, 256 caracteres e não pode conter os seguintes caracteres: **~ ! @ # $ ^ &amp; &#42; ( ) = + [ ] { } \ | ; : ' " &lt; &gt; /**. São permitidos espaços no nome.
+    -   **Agreement name** (necessário). O nome do contrato pode ter, no máximo, 256 caracteres e não pode conter os seguintes caracteres: **~ ! @ # $ ^ &amp; &#42; ( ) = + [ ] { } \ | ; : ' " &lt; &gt; /** . São permitidos espaços no nome.
 
     -   **Fornecedor** (necessário). Quando você começa a digitar um nome de fornecedor, o serviço recupera todos os nomes de fornecedores que contêm as letras digitadas. Por exemplo, se você digitar “soft”, o serviço irá recuperar todos os nomes de fornecedores que contêm “soft” como parte do nome, como “Microsoft” e “Microsoft Research”. Os nomes de fornecedores são recuperados do Catálogo de Ativos de Software. Você deve selecionar o fornecedor antes de inserir o título do produto.
 

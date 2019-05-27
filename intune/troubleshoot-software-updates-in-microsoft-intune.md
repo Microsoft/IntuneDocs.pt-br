@@ -7,7 +7,6 @@ ms.author: mandia
 manager: dougeby
 ms.date: 6/14/2018
 ms.topic: troubleshooting
-ms.prod: ''
 ms.service: microsoft-intune
 ms.localizationpriority: medium
 ms.technology: ''
@@ -18,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 0e7ec762e7e7299e400fefedbf7a8810e1da929f
-ms.sourcegitcommit: 25e6aa3bfce58ce8d9f8c054bc338cc3dff4a78b
+ms.openlocfilehash: 000f48f062e9e7300337ade04c8cf872d96eab2a
+ms.sourcegitcommit: 916fed64f3d173498a2905c7ed8d2d6416e34061
 ms.translationtype: MTE75
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57461338"
+ms.lasthandoff: 05/23/2019
+ms.locfileid: "66040227"
 ---
 # <a name="troubleshoot-software-updates-in-microsoft-intune"></a>Solucionar problemas de atualização de software no Microsoft Intune
 
@@ -173,7 +172,7 @@ A tabela a seguir relaciona os códigos de erro do **Agente de Atualização** d
 |**0x80cf4028**|OM_E_PT_NO_AUTH_COOKIES_CREATED|O agente não pôde criar cookies de autenticação válidos.|
 |**0x80cf4029**|OM_E_PT_INVALID_CONFIG_PROP|Um valor de propriedade de configuração estava errado.|
 |**0x80cf402A**|OM_E_PT_CONFIG_PROP_MISSING|Um valor de propriedade de configuração estava ausente.|
-|**0x80cf402B**|OM_E_PT_HTTP_STATUS_NOT_MAPPED|Não foi possível concluir a solicitação HTTP e o motivo não correspondeu a nenhum dos códigos de erro **OM_E_PT_HTTP_&#42;**.|
+|**0x80cf402B**|OM_E_PT_HTTP_STATUS_NOT_MAPPED|Não foi possível concluir a solicitação HTTP e o motivo não correspondeu a nenhum dos códigos de erro **OM_E_PT_HTTP_&#42;** .|
 |**0x80cf402C**|OM_E_PT_WINHTTP_NAME_NOT_RESOLVED|Mesmo que **ERROR_WINHTTP_NAME_NOT_RESOLVED**. O nome do servidor proxy ou do servidor de destino não pode ser resolvido.|
 |**0x80cf402F**|OM_E_PT_ECP_SUCCEEDED_WITH_ERRORS|O processamento do arquivo .cab externo foi concluído com alguns erros.|
 |**0x80cf4030**|OM_E_PT_ECP_INIT_FAILED|A inicialização do processador .cab externo não foi concluída.|
@@ -182,7 +181,7 @@ A tabela a seguir relaciona os códigos de erro do **Agente de Atualização** d
 |**0x80cf4033**|OM_E_PT_ECP_FAILURE_TO_EXTRACT_DIGEST|Não foi possível extrair o resumo de arquivos de um arquivo. cab externo.|
 |**0x80cf4034**|OM_E_PT_ECP_FAILURE_TO_DECOMPRESS_CAB_FILE|Um arquivo .cab externo não pôde ser descompactado.|
 |**0x80cf4035**|OM_E_PT_ECP_FILE_LOCATION_ERROR|O processador .cab externo não pôde obter os locais dos arquivos.|
-|**0x80cf4FFF**|OM_E_PT_UNEXPECTED|Ocorreu um erro de comunicação que não é coberto por outro código de erro do **OM_E_PT_&#42;**.|
+|**0x80cf4FFF**|OM_E_PT_UNEXPECTED|Ocorreu um erro de comunicação que não é coberto por outro código de erro do **OM_E_PT_&#42;** .|
 |**0x80cf6001**|OM_E_DM_URLNOTAVAILABLE|Uma operação do gerenciador de download não pôde ser concluída porque o arquivo solicitado não tem uma URL.|
 |**0x80cf6002**|OM_E_DM_INCORRECTFILEHASH|Uma operação do gerenciador de download não pôde ser concluída porque o resumo de arquivos não foi reconhecido.|
 |**0x80cf6003**|OM_E_DM_UNKNOWNALGORITHM|Uma operação do gerenciador de download não pôde ser concluída porque os metadados de arquivo solicitaram um algoritmo de hash não reconhecido.|
@@ -192,7 +191,7 @@ A tabela a seguir relaciona os códigos de erro do **Agente de Atualização** d
 |**0x80cf6009**|OM_E_DM_BITSTRANSFERERROR|Uma operação do gerenciador de download falhou porque houve um erro de transferência não especificado do BITS (Serviço de Transferência Inteligente em Segundo Plano).|
 |**0x80cf600a**|OM_E_DM_DOWNLOADLOCATIONCHANGED|Um download deve ser reiniciado porque o local de origem do download foi alterado.|
 |**0x80cf600B**|OM_E_DM_CONTENTCHANGED|Um download deve ser reiniciado porque o conteúdo de atualização foi alterado em uma nova revisão.|
-|**0x80cf6FFF**|OM_E_DM_UNEXPECTED|Ocorreu um erro do gerenciador de download que não é coberto por outro código de erro do **OM_E_DM_&#42;**.|
+|**0x80cf6FFF**|OM_E_DM_UNEXPECTED|Ocorreu um erro do gerenciador de download que não é coberto por outro código de erro do **OM_E_DM_&#42;** .|
 |**0x80cf7003**|OM_E_INVALID_EVENT_PAYLOAD|Uma carga de evento especificada não é válida.|
 |**0x80cf7004**|OM_E_INVALID_EVENT_PAYLOADSIZE|O tamanho da carga do evento enviada não é válido.|
 |**0x80cf7005**|OM_E_SERVICE_NOT_REGISTERED|O serviço não está registrado.|
@@ -224,13 +223,13 @@ A tabela a seguir relaciona os códigos de erro do **Agente de Atualização** d
 |**0x80cf801B**|OM_E_DS_SCHEMAMISMATCH|O esquema do repositório de dados atual e o esquema de uma tabela em um documento XML de backup não coincidem.|
 |**0x80cf801C**|OM_E_DS_RESETREQUIRED|O repositório de dados requer uma redefinição da sessão. Libere a sessão e tente novamente com uma nova sessão.|
 |**0x80cf801D**|OM_E_DS_IMPERSONATED|Uma operação do repositório de dados não pôde ser concluída porque foi solicitada com uma identidade representada.|
-|**0x80cf8FFF**|OM_E_DS_UNEXPECTED|Ocorreu um erro no armazenamento de dados que não é coberto por outro código do **OM_E_DS_&#42;**.|
+|**0x80cf8FFF**|OM_E_DS_UNEXPECTED|Ocorreu um erro no armazenamento de dados que não é coberto por outro código do **OM_E_DS_&#42;** .|
 |**0x80cfA000**|OM_E_AU_NOSERVICE|Atualizações Automáticas não puderam atender a solicitações de entrada.|
 |**0x80cfA004**|OM_E_AU_PAUSED|Atualizações Automáticas não puderam processar solicitações de entrada porque foram pausadas.|
 |**0x80cfA005**|OM_E_AU_NO_REGISTERED_SERVICE|Nenhum serviço não gerenciado está registrado em Atualizações Automáticas.|
 |**0x80cfA006**|OM_E_AU_DETECT_SVCID_MISMATCH|O serviço padrão registrado em Atualizações Automáticas foi alterado durante a pesquisa.|
 |**0x80cfA007**|OM_E_AU_ALREADY_PROMPTING_FOR_REBOOT|Atualizações Automáticas já estão solicitando uma reinicialização ao usuário.|
-|**0x80cfAFFF**|OM_E_AU_UNEXPECTED|Ocorreu um erro de Atualizações Automáticas que não é coberto por outro código do **OM_E_AU &#42;**.|
+|**0x80cfAFFF**|OM_E_AU_UNEXPECTED|Ocorreu um erro de Atualizações Automáticas que não é coberto por outro código do **OM_E_AU &#42;** .|
 |**0x80cfE001**|OM_E_EE_UNKNOWN_EXPRESSION|Uma operação do avaliador de expressão não pôde ser concluída porque uma expressão não foi reconhecida.|
 |**0x80cfE002**|OM_E_EE_INVALID_EXPRESSION|Uma operação do avaliador de expressão não pôde ser concluída porque uma expressão não era válida.|
 |**0x80cfE003**|OM_E_EE_MISSING_METADATA|Uma operação do avaliador de expressão não pôde ser concluída porque uma expressão contém um número incorreto de nós de metadados.|
@@ -238,7 +237,7 @@ A tabela a seguir relaciona os códigos de erro do **Agente de Atualização** d
 |**0x80cfE005**|OM_E_EE_NOT_INITIALIZED|O avaliador de expressão não pôde ser inicializado.|
 |**0x80cfE006**|OM_E_EE_INVALID_ATTRIBUTEDATA|Uma operação do avaliador de expressão não pôde ser concluída porque um atributo não é válido.|
 |**0x80cfE007**|OM_E_EE_CLUSTER_ERROR|Uma operação do avaliador de expressão não pôde ser concluída porque o estado do cluster do computador não pode ser determinado.|
-|**0x80cfEFFF**|OM_E_EE_UNEXPECTED|Ocorreu um erro do avaliador de expressão que não é coberto por outro código de erro do **OM_E_EE_&#42;**.|
+|**0x80cfEFFF**|OM_E_EE_UNEXPECTED|Ocorreu um erro do avaliador de expressão que não é coberto por outro código de erro do **OM_E_EE_&#42;** .|
 |**0x80cfF001**|OM_E_REPORTER_EVENTCACHECORRUPT|O arquivo de cache de eventos estava defeituoso.|
 |**0x80cfF002**|OM_E_REPORTER_EVENTNAMESPACEPARSEFAILED|O XML no descritor do namespace de eventos não pôde ser analisado.|
 |**0x80cfF003**|OM_E_INVALID_EVENT|O XML no descritor do namespace de eventos não é válido.|

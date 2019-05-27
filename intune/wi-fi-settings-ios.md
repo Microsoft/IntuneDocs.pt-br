@@ -8,7 +8,6 @@ ms.author: mandia
 manager: dougeby
 ms.date: 10/18/2018
 ms.topic: reference
-ms.prod: ''
 ms.service: microsoft-intune
 ms.localizationpriority: medium
 ms.technology: ''
@@ -16,12 +15,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 91e69fed37f9a6171ef72d3c01e2de9a31bbcaed
-ms.sourcegitcommit: 25e6aa3bfce58ce8d9f8c054bc338cc3dff4a78b
+ms.openlocfilehash: 9f51f2eafed0d54fb58eff643785451e2f49c853
+ms.sourcegitcommit: 916fed64f3d173498a2905c7ed8d2d6416e34061
 ms.translationtype: MTE75
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57566294"
+ms.lasthandoff: 05/23/2019
+ms.locfileid: "66046683"
 ---
 # <a name="add-wi-fi-settings-for-ios-devices-in-microsoft-intune"></a>Adicionar configurações de Wi-Fi para dispositivos iOS no Microsoft Intune
 
@@ -44,7 +43,7 @@ Este artigo descreve essas configurações.
 - **Rede oculta**: escolha **Habilitar** se o SSID da rede não é transmitido. Escolher **Desabilitar** se o SSID da rede é transmitido e visível.
 - **Tipo de segurança**: selecione o protocolo de segurança para autenticar à rede Wi-Fi. Suas opções:
 
-  - **Abrir (sem autenticação)**: use essa opção somente se a rede não for segura.
+  - **Abrir (sem autenticação)** : use essa opção somente se a rede não for segura.
   - **WPA/WPA2 - Pessoal**: insira a senha em **Chave pré-compartilhada**. Quando a rede da sua organização é definida ou configurada, uma senha ou chave de rede também é configurada. Insira essa senha ou chave de rede para o valor PSK.
   - **WEP**
 
@@ -62,9 +61,9 @@ Este artigo descreve essas configurações.
 
 - **Tipo de EAP**: escolha o tipo de Protocolo EAP (Extensible Authentication Protocol) usado para autenticar conexões sem fio seguras. Suas opções:
 
-  - **EAP-FAST**: insira as **Configurações de PAC (Protected Access Credential)**. Essa opção usa credenciais de acesso protegido para criar um túnel autenticado entre o cliente e o servidor de autenticação. Suas opções:
+  - **EAP-FAST**: insira as **Configurações de PAC (Protected Access Credential)** . Essa opção usa credenciais de acesso protegido para criar um túnel autenticado entre o cliente e o servidor de autenticação. Suas opções:
     - **Não usar (PAC)**
-    - **Usar (PAC)**: se houver um arquivo PAC, use-o.
+    - **Usar (PAC)** : se houver um arquivo PAC, use-o.
     - **Usar e provisionar PAC**: crie e adicione o arquivo PAC aos seus dispositivos.
     - **Usar e provisionar PAC anonimamente**: crie e adicione o arquivo PAC aos seus dispositivos sem se autenticar no servidor.
 
@@ -77,7 +76,7 @@ Este artigo descreve essas configurações.
 
       Selecione **OK** para salvar suas alterações.
 
-    - **Autenticação de Cliente** - **Certificado do cliente para autenticação de cliente (certificado de identidade)**: escolha o perfil de certificado do cliente SCEP ou PKCS que também é implantado no dispositivo. Esse certificado é a identidade apresentada pelo dispositivo ao servidor para autenticar a conexão.
+    - **Autenticação de Cliente** - **Certificado do cliente para autenticação de cliente (certificado de identidade)** : escolha o perfil de certificado do cliente SCEP ou PKCS que também é implantado no dispositivo. Esse certificado é a identidade apresentada pelo dispositivo ao servidor para autenticar a conexão.
 
       Selecione **OK** para salvar suas alterações.
 
@@ -91,15 +90,15 @@ Este artigo descreve essas configurações.
     - **Autenticação de Cliente** — escolha um **método de Autenticação**. Suas opções:
 
       - **Nome de usuário e senha**: solicita ao usuário um nome de usuário e uma senha para autenticar a conexão. Insira também:
-        - **Método não EAP (identidade interna)**: escolha como você autentica a conexão. Certifique-se de escolher o mesmo protocolo configurado em sua rede Wi-Fi.
+        - **Método não EAP (identidade interna)** : escolha como você autentica a conexão. Certifique-se de escolher o mesmo protocolo configurado em sua rede Wi-Fi.
 
-          Suas opções: **Senha não criptografada (PAP)**, **Protocolo CHAP (CHAP)**, **Microsoft CHAP (MS-CHAP)**, ou **Microsoft CHAP Versão 2 (MS-CHAP v2)**
+          Suas opções: **Senha não criptografada (PAP)** , **Protocolo CHAP (CHAP)** , **Microsoft CHAP (MS-CHAP)** , ou **Microsoft CHAP Versão 2 (MS-CHAP v2)**
 
       - **Certificados**: escolha o perfil de certificado do cliente SCEP ou PKCS que também é implantado no dispositivo. Esse certificado é a identidade apresentada pelo dispositivo ao servidor para autenticar a conexão.
 
         Selecione **OK** para salvar suas alterações.
 
-      - **Privacidade de identidade (identidade externa)**: insira o texto enviado em resposta a uma solicitação de identidade de EAP. Esse texto pode ser qualquer valor, como `anonymous`. Durante a autenticação, essa identidade anônima é enviada inicialmente e seguida pela identificação real enviada em um túnel seguro.
+      - **Privacidade de identidade (identidade externa)** : insira o texto enviado em resposta a uma solicitação de identidade de EAP. Esse texto pode ser qualquer valor, como `anonymous`. Durante a autenticação, essa identidade anônima é enviada inicialmente e seguida pela identificação real enviada em um túnel seguro.
 
   - **LEAP**
 
@@ -118,7 +117,7 @@ Este artigo descreve essas configurações.
 
         Selecione **OK** para salvar suas alterações.
 
-      - **Privacidade de identidade (identidade externa)**: insira o texto enviado em resposta a uma solicitação de identidade de EAP. Esse texto pode ser qualquer valor, como `anonymous`. Durante a autenticação, essa identidade anônima é enviada inicialmente e seguida pela identificação real enviada em um túnel seguro.
+      - **Privacidade de identidade (identidade externa)** : insira o texto enviado em resposta a uma solicitação de identidade de EAP. Esse texto pode ser qualquer valor, como `anonymous`. Durante a autenticação, essa identidade anônima é enviada inicialmente e seguida pela identificação real enviada em um túnel seguro.
 
 - **Configurações de proxy**: suas opções:
   - **Nenhum**: nenhuma configuração de proxy é definida.

@@ -7,7 +7,6 @@ ms.author: mandia
 manager: dougeby
 ms.date: 01/22/2019
 ms.topic: reference
-ms.prod: ''
 ms.service: microsoft-intune
 ms.localizationpriority: medium
 ms.technology: ''
@@ -15,12 +14,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure; seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: f38803d3be05182639ac8eca2578e9ce121f7c2f
-ms.sourcegitcommit: 25e6aa3bfce58ce8d9f8c054bc338cc3dff4a78b
+ms.openlocfilehash: aef2db158e0572c1eec056a1d6e33b4b97aea77a
+ms.sourcegitcommit: 916fed64f3d173498a2905c7ed8d2d6416e34061
 ms.translationtype: MTE75
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57566005"
+ms.lasthandoff: 05/23/2019
+ms.locfileid: "66047028"
 ---
 # <a name="windows-holographic-for-business-device-settings-to-run-as-a-kiosk-in-intune"></a>Configurações do dispositivo Windows Holographic for Business para ser executado como um quiosque no Intune
 
@@ -60,7 +59,7 @@ Os aplicativos nesse modo estão disponíveis no menu Iniciar. Esses aplicativos
 
   - **Logon automático**: não tem suporte no Windows Holographic for Business.
   - **Contas de usuário local**: **adicione** a conta de usuário local (para o dispositivo). A conta inserida é usada para entrar no quiosque.
-  - **Usuário ou grupo do Azure AD (Windows 10, versão 1803 e posteriores)**: exige que as credenciais do usuário façam login no dispositivo. Selecione **Adicionar** para escolher usuários ou grupos do Azure AD na lista. Você pode selecionar vários usuários e grupos. Marque **Selecionar** para salvar suas alterações.
+  - **Usuário ou grupo do Azure AD (Windows 10, versão 1803 e posteriores)** : exige que as credenciais do usuário façam login no dispositivo. Selecione **Adicionar** para escolher usuários ou grupos do Azure AD na lista. Você pode selecionar vários usuários e grupos. Marque **Selecionar** para salvar suas alterações.
   - **Visitante do HoloLens**: a conta do visitante é uma conta convidado que não exige as credenciais do usuário nem autenticação, conforme descrito em [Conceitos do modo de computador compartilhado](https://docs.microsoft.com/windows/configuration/set-up-shared-or-guest-pc#shared-pc-mode-concepts).
 
 - **Aplicativos**: adicione os aplicativos a serem executados no dispositivo de quiosque. Lembre-se, você pode adicionar vários aplicativos.
@@ -70,7 +69,7 @@ Os aplicativos nesse modo estão disponíveis no menu Iniciar. Esses aplicativos
   - **Adicionar por AUMID**: use essa opção para adicionar aplicativos básicos do Windows. Insira as seguintes propriedades: 
 
     - **Nome do aplicativo**: necessário. Insira um nome para o aplicativo.
-    - **Modelo de usuário do aplicativo AUMID (ID)**: necessário. Insira a ID do modelo do usuário do aplicativo (AUMID) do aplicativo do Windows. Para obter a ID, confira [Encontrar a ID do modelo de usuário de um aplicativo instalado](https://docs.microsoft.com/windows-hardware/customize/enterprise/find-the-application-user-model-id-of-an-installed-app).
+    - **Modelo de usuário do aplicativo AUMID (ID)** : necessário. Insira a ID do modelo do usuário do aplicativo (AUMID) do aplicativo do Windows. Para obter a ID, confira [Encontrar a ID do modelo de usuário de um aplicativo instalado](https://docs.microsoft.com/windows-hardware/customize/enterprise/find-the-application-user-model-id-of-an-installed-app).
     - **Tamanho do bloco**: necessário. Escolha um tamanho de bloco de aplicativo: Pequeno, Médio, Largo ou Grande.
 
 - **Configurações do navegador do quiosque**: não tem suporte no Windows Holographic for Business.
