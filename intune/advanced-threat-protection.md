@@ -7,7 +7,6 @@ ms.author: brenduns
 manager: dougeby
 ms.date: 02/22/2019
 ms.topic: conceptual
-ms.prod: ''
 ms.service: microsoft-intune
 ms.localizationpriority: high
 ms.technology: ''
@@ -16,12 +15,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 036f2ca8302f9b3c2d700a04918c4c49a4c6211a
-ms.sourcegitcommit: 143dade9125e7b5173ca2a3a902bcd6f4b14067f
+ms.openlocfilehash: a53ae7f43f135f7316b665672dc410812ef14d08
+ms.sourcegitcommit: 916fed64f3d173498a2905c7ed8d2d6416e34061
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "61490529"
+ms.lasthandoff: 05/23/2019
+ms.locfileid: "66050130"
 ---
 # <a name="enforce-compliance-for-windows-defender-atp-with-conditional-access-in-intune"></a>Impor a conformidade do Windows Defender ATP com acesso condicional no Intune
 
@@ -88,7 +87,7 @@ Quando você carregar um dispositivo usando o pacote de configuração, não pre
 2. Selecione **Configuração do Dispositivo** > **Perfis** > **Criar perfil**.
 3. Insira um **Nome** e uma **Descrição**.
 4. Em **Plataforma**, selecione **Windows 10 e posterior**
-5. Para **Tipo de perfil**, selecione  **Windows Defender ATP (Windows 10 Desktop)**.
+5. Para **Tipo de perfil**, selecione  **Windows Defender ATP (Windows 10 Desktop)** .
 6. Configure as definições:
 
   - **Tipo de pacote de configuração de cliente do Windows Defender ATP**: selecione **Carregar** para adicionar o pacote de configuração no perfil. Selecione **Remover** para remover o pacote de configuração do perfil.

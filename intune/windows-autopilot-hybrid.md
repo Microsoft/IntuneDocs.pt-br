@@ -8,7 +8,6 @@ ms.author: erikje
 manager: dougeby
 ms.date: 12/06/2018
 ms.topic: conceptual
-ms.prod: ''
 ms.service: microsoft-intune
 ms.localizationpriority: high
 ms.technology: ''
@@ -18,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 7ac370ffe297cb62af6ed55cfd5c4c41cf8452d3
-ms.sourcegitcommit: dfcf80a91792715404dc021c8684866c8b0a27e1
+ms.openlocfilehash: 030467009e0fed8716a1aa622474188352c0e0b0
+ms.sourcegitcommit: 916fed64f3d173498a2905c7ed8d2d6416e34061
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/17/2019
-ms.locfileid: "65816301"
+ms.lasthandoff: 05/23/2019
+ms.locfileid: "66050347"
 ---
 # <a name="deploy-hybrid-azure-ad-joined-devices-by-using-intune-and-windows-autopilot"></a>Implante dispositivos ingressados no Azure AD híbrido usando o Intune e o Windows Autopilot
 Você pode usar o Intune e o Windows Autopilot para configurar dispositivos ingressados no Azure Active Directory (Azure AD) híbrido. Para isso, siga as etapas neste artigo.
@@ -45,7 +44,7 @@ Os dispositivos a serem registrados também devem:
 
    ![O portal do Azure](./media/auto-enroll-azure-main.png)
 
-1. Selecione **Mobilidade (MDM e MAM)**.
+1. Selecione **Mobilidade (MDM e MAM)** .
 
    ![O painel do Azure Active Directory](./media/auto-enroll-mdm.png)
 
@@ -107,7 +106,7 @@ A unidade organizacional que recebeu o direito de criar computadores deve corres
 O conector do Intune para o Active Directory deve ser instalado em um computador que está executando o Windows Server 2016 ou posterior. O computador também deve ter acesso à internet e ao seu Active Directory. Para aumentar a disponibilidade e a escala ou para dar suporte a vários domínios do Active Directory, você pode instalar vários conectores em seu ambiente. É recomendável instalar o conector em um servidor que não está executando nenhum outro conector do Intune.
 
 1. Certifique-se de ter um pacote de idiomas instalado e configurado como descrito em [Requisitos de idioma do Conector do Intune (versão prévia)](https://docs.microsoft.com/windows/deployment/windows-autopilot/intune-connector).
-2. No [Intune](https://aka.ms/intuneportal), selecione **Registro de dispositivo** > **Registro do Windows** > **Conector do Intune para Active Directory (Versão Prévia)** > **Adicionar conector**. 
+2. No [Intune](https://aka.ms/intuneportal), selecione **Registro de dispositivo** > **Registro do Windows** > **Conector do Intune para Active Directory (Versão Prévia)**  > **Adicionar conector**. 
 3. Siga as instruções para baixar o Conector.
 4. Abra o arquivo de configuração do Conector baixado, *ODJConnectorBootstrapper.exe*, para instalar o Conector.
 5. No final da instalação, selecione **Configurar**.
@@ -140,7 +139,7 @@ Se você tiver um proxy da Web em seu ambiente de rede, verifique se o conector 
 
 1. Se você selecionou **Dispositivos Dinâmicos** como tipo de associação, no painel **Grupo** selecione **Membros do dispositivo dinâmico** e, em seguida, na caixa **Regra avançada**, faça um dos seguintes:
     - Para criar um grupo que inclua todos os dispositivos do Autopilot, insira `(device.devicePhysicalIDs -any _ -contains "[ZTDId]")`.
-    - Para criar um grupo que inclua todos os dispositivos do Autopilot com uma ID do pedido específica, insira `(device.devicePhysicalIds -any _ -eq "[OrderID]:179887111881")`.
+    - O campo de Marcação de Grupo do Intune é mapeado para o atributo OrderID em dispositivos do Azure AD. Se você pretende criar um grupo que inclua todos os dispositivos do Autopilot com uma Marcação de Grupo específica (OrderID), digite:  `(device.devicePhysicalIds -any _ -eq "[OrderID]:179887111881")`
     - Para criar um grupo que inclua todos os dispositivos do Autopilot com uma ID do pedido de compra específica, insira `(device.devicePhysicalIds -any _ -eq "[PurchaseOrderId]:76222342342")`.
     
 1. Selecione **Salvar**.
@@ -177,7 +176,7 @@ Depois que os dispositivos do Autopilot são *registrados*, eles são exibidos e
 - O painel **Todos os dispositivos do Azure AD** do Azure Active Directory no portal do Azure. Selecione **Dispositivos** > **Todos os dispositivos**.
 - O painel **Todos os Dispositivos** do Intune no portal do Azure. Selecione **Dispositivos** > **Todos os dispositivos**.
 
-Depois que os dispositivos do Autopilot são registrados, seus nomes de dispositivo mudam para o nome do host do dispositivo. Por padrão, o nome do host começa com *DESKTOP -*.
+Depois que os dispositivos do Autopilot são registrados, seus nomes de dispositivo mudam para o nome do host do dispositivo. Por padrão, o nome do host começa com *DESKTOP -* .
 
 
 ## <a name="create-and-assign-an-autopilot-deployment-profile"></a>Criar e atribuir um perfil de implantação do Autopilot
@@ -186,8 +185,8 @@ Os perfis de implantação do Autopilot são usados para configurar os dispositi
 1. No [Intune](https://aka.ms/intuneportal), selecione **Registro de dispositivo** > **Registro do Windows** > **Perfis de Implantação** > **Criar Perfil**.
 1. Digite um **Nome** e, opcionalmente, uma **descrição**.
 1. Para **Modo de implantação**, selecione **Orientado pelo Usuário**.
-1. Na caixa **Ingressar no Azure AD como**, escolha **Ingressado no Azure AD híbrido (Versão Prévia)**.
-1. Selecione **OOBE (configuração inicial pelo usuário)**, configure as opções conforme necessário e, em seguida, selecione **Salvar**.
+1. Na caixa **Ingressar no Azure AD como**, escolha **Ingressado no Azure AD híbrido (Versão Prévia)** .
+1. Selecione **OOBE (configuração inicial pelo usuário)** , configure as opções conforme necessário e, em seguida, selecione **Salvar**.
 1. Selecione **Criar** para criar o perfil. 
 1. No painel de perfil, selecione **Atribuições**.
 1. Selecione **Selecionar grupos**.
@@ -210,7 +209,7 @@ Levará cerca de 15 minutos para que o status do perfil de dispositivo mude de *
    - **Nome**: insira um nome descritivo para o novo perfil.
    - **Descrição**: Insira uma descrição para o perfil.
    - **Plataforma**: Selecione **Windows 10 e posterior**.
-   - **Tipo de perfil**: Selecione **Ingresso no Domínio (Versão Prévia)**.
+   - **Tipo de perfil**: Selecione **Ingresso no Domínio (Versão Prévia)** .
 1. Selecione **Configurações** e forneça um **Prefixo de nome do computador**, **Nome de domínio** e **Unidade organizacional** (opcional) no [formato DN](https://docs.microsoft.com/windows/desktop/ad/object-names-and-identities#distinguished-name). 
 1. Selecione **OK** > **Criar**.  
     O perfil é criado e exibido na lista.

@@ -5,9 +5,8 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 05/14/2019
+ms.date: 05/28/2019
 ms.topic: conceptual
-ms.prod: ''
 ms.service: microsoft-intune
 ms.localizationpriority: high
 ms.technology: ''
@@ -17,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 6b7ea047daca5dad327b431986840a59074614d1
-ms.sourcegitcommit: f8bbd9bac2016a77f36461bec260f716e2155b4a
+ms.openlocfilehash: 2c590f81b846fe3671d5ccddede28a4a4bd799ba
+ms.sourcegitcommit: 876719180e0d73b69fc053cf67bb8cc40b364056
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/16/2019
-ms.locfileid: "65732627"
+ms.lasthandoff: 05/28/2019
+ms.locfileid: "66264151"
 ---
 # <a name="use-powershell-scripts-on-windows-10-devices-in-intune"></a>Use scripts do PowerShell em dispositivos Windows 10 no Intune
 
@@ -42,11 +41,27 @@ A extensão de gerenciamento do Intune complementa os recursos de MDM internos d
 
 ## <a name="prerequisites"></a>Pré-requisitos
 
-A extensão de gerenciamento do Intune tem os seguintes pré-requisitos:
+A extensão de gerenciamento do Intune tem os pré-requisitos a seguir. Quando eles forem atendidos, a extensão de gerenciamento do Intune será instalada automaticamente quando um script do PowerShell ou aplicativo do Win32 for atribuído ao usuário ou dispositivo.
 
-- Os dispositivos devem ser ingressados ou registrados no Azure AD e configurados no Azure AD e no Intune para [registro automático](quickstart-setup-auto-enrollment.md). A extensão de gerenciamento do Intune dá suporte a dispositivos Windows ingressados no Azure AD, no domínio híbrido do Azure AD e registrados como cogerenciados.
-- Os dispositivos devem executar o Windows 10, versão 1607 ou posteriores.
-- O agente de extensão de gerenciamento do Intune é instalado quando um script do PowerShell ou um aplicativo Win32 é implantado em um grupo de segurança de usuários ou dispositivos.
+- Dispositivos executando o Windows 10 versão 1607 ou posterior. Se o dispositivo é registrado usando o [registro automático em massa](windows-bulk-enroll.md), os dispositivos precisam executar o Windows 10 versão 1703 ou posterior. A extensão de gerenciamento do Intune não é compatível com o Windows 10 no modo S, já que o modo S não permite a execução de aplicativos que não fazem parte da loja. 
+  
+- Dispositivos que ingressaram no Azure AD (Active Directory), incluindo:
+  
+  - Com ingresso híbrido realizado no Azure AD: Dispositivos ingressados no Azure AD (Active Directory) e também ingressados no AD (Active Directory) local. Para obter orientação, confira [Planejar sua implementação de ingresso híbrido no Azure Active Directory](https://docs.microsoft.com/azure/active-directory/devices/hybrid-azuread-join-plan).
+
+- Dispositivos registrados no Intune, incluindo:
+
+  - Dispositivos registrados em uma política de grupo (GPO). Veja [Registrar um dispositivo Windows 10 automaticamente usando a Política de Grupo](https://docs.microsoft.com/windows/client-management/mdm/enroll-a-windows-10-device-automatically-using-group-policy) para obter orientação.
+  
+  - Dispositivos manualmente registrados no Intune, que é quando:
+  
+    - O usuário se conecta ao dispositivo usando uma conta de usuário local e, em seguida, ingressa o dispositivo manualmente no Azure AD (e o registro automático para o Intune está habilitado no Azure AD).
+    
+    Ou
+    
+    - O usuário se conecta ao dispositivo usando sua conta do Azure AD e, em seguida, registra-se no Intune.
+
+  - Dispositivos cogerenciados que usam o Configuration Manager e o Intune. Para obter orientação, confira [O que é cogerenciamento](https://docs.microsoft.com/sccm/comanage/overview).
 
 ## <a name="create-a-script-policy"></a>Criar uma política de script 
 
@@ -85,8 +100,7 @@ A extensão de gerenciamento do Intune tem os seguintes pré-requisitos:
 
 > [!NOTE]
 > - Os usuários finais não precisam entrar no dispositivo para executar scripts do PowerShell.
-> - Os scripts do PowerShell no Intune podem ser direcionados para grupos de segurança de dispositivo do Azure AD.
-> - Os scripts do PowerShell no Intune podem ser direcionados para grupos de segurança de dispositivo do Azure AD.
+> - Os scripts do PowerShell no Intune podem ser direcionados para grupos de segurança de dispositivo ou grupos de segurança de usuário do Azure AD.
 
 O cliente da extensão de gerenciamento do Intune verifica uma vez por hora e após cada reinicialização com o Intune para novos scripts ou alterações. Depois de atribuir a política aos grupos do Azure AD, o script do PowerShell é executado e os resultados da execução são relatados. Após a execução do script, ele não será executado novamente, a menos que haja uma alteração no script ou na política.
 
@@ -111,41 +125,57 @@ Em **scripts do PowerShell**, clique com o botão direito do mouse no script e s
 
 ## <a name="common-issues-and-resolutions"></a>Problemas comuns e resoluções
 
-Os scripts do PowerShell não são executados em cada entrada. Eles são executados somente após a reinicialização, ou se o serviço **Extensão de Gerenciamento do Microsoft Intune** for reiniciado. O cliente da extensão de gerenciamento do Intune verifica uma vez por hora se há alterações no script ou na política do Intune.
-
 #### <a name="issue-intune-management-extension-doesnt-download"></a>Problema: A extensão de gerenciamento do Intune não baixa
 
 **Possíveis resoluções**:
 
-- Verifique se os dispositivos são registrados automaticamente no Azure AD. Para confirmar, no dispositivo: 
+- O dispositivo não está ingressado no Azure AD. Verifique se os dispositivos atendem aos [pré-requisitos](#prerequisites) (neste artigo). 
+- Não há scripts do PowerShell nem aplicativos Win32 atribuídos aos grupos aos quais o usuário ou dispositivo pertence.
+- O dispositivo não pode fazer check-in com o serviço do Intune devido à ausência de acesso à Internet, acesso ao WNS (Serviços de Notificação por Push do Windows) e assim por diante.
+- O dispositivo está no modo S. A extensão de gerenciamento do Intune não é compatível com dispositivos que executam no modo S. 
+
+Passos para ver se o dispositivo é registrado automaticamente:
 
   1. Acesse **Configurações** > **Contas** > **Acessar conta corporativa ou de estudante**.
   2. Selecione a conta unida > **Informações**.
   3. Em **Relatório de Diagnóstico Avançado**, selecione **Criar Relatório**.
-  4. Abra o `MDMDiagReport` em um navegador da Web e vá até a seção **Fontes de configuração registradas**.
-  5. Procure a propriedade **MDMDeviceWithAAD**. Se essa propriedade não existir, seu dispositivo não terá sido automaticamente registrado.
+  4. Abra o `MDMDiagReport` em um navegador da Web.
+  5. Procure a propriedade **MDMDeviceWithAAD**. Se a propriedade existe, o dispositivo é registrado automaticamente. Se essa propriedade não existe, o dispositivo não foi registrado automaticamente.
 
-    [Habilitar o registro automático do Windows 10](windows-enroll.md#enable-windows-10-automatic-enrollment) contém as etapas para isso.
+[Habilitar o registro automático do Windows 10](windows-enroll.md#enable-windows-10-automatic-enrollment) inclui as etapas para configurar o registro automático no Intune.
 
 #### <a name="issue-powershell-scripts-do-not-run"></a>Problema: os scripts do PowerShell não são executados
 
 **Possíveis resoluções**:
 
+- Os scripts do PowerShell não são executados em cada entrada. Eles são executados:
+
+  - Quando o script é atribuído a um dispositivo
+  - Se você alterar o script, carregue-o e atribua-o a um usuário ou dispositivo
+  
+    > [!TIP]
+    > A **Extensão de gerenciamento do Microsoft Intune** é um serviço que é executado no dispositivo, assim como qualquer outro serviço listado no aplicativo de Serviços (services.msc). Após a reinicialização de um dispositivo, esse serviço também pode reiniciar e verificar se há qualquer script do PowerShell atribuído com o serviço Intune. Se o serviço **Extensão de Gerenciamento do Microsoft Intune** for definido como Manual, o serviço poderá não ser reiniciado depois que o dispositivo for reinicializado.
+
+- O cliente de extensão de gerenciamento do Intune verifica uma vez por hora se há alterações no script ou na política no Intune.
 - Confirme se a extensão de gerenciamento do Intune foi baixada em `%ProgramFiles(x86)%\Microsoft Intune Management Extension`.
-- Os scripts não são executados em Surface Hubs.
-- Verifique os logs em `\ProgramData\Microsoft\IntuneManagementExtension\Logs` para ver se há erros.
+- Scripts não são executados nos Surface Hubs nem no Windows 10 no modo S.
+- Examine os logs em busca de erros. Veja [solucionar problemas de scripts](#troubleshoot-scripts) (neste artigo).
 - Para possíveis problemas de permissão, certifique-se que as propriedades do script do PowerShell estejam definidas como `Run this script using the logged on credentials`. Verifique também se o usuário conectado tem as permissões apropriadas para executar o script.
-- Para isolar problemas de script, execute um script de exemplo. Por exemplo, crie o diretório `C:\Scripts` e dê controle total a todos. Execute o seguinte script:
 
-  ```powershell
-  write-output "Script worked" | out-file c:\Scripts\output.txt
-  ```
+- Para isolar problemas de script, faça o seguinte:
 
-  Se tiver êxito, output.txt deve ser criado e deve incluir o texto "Script worked" (O script funcionou).
+  - Examine a configuração de execução do PowerShell em seus dispositivos. Consulte a [Política de execução do PowerShell](https://docs.microsoft.com/powershell/module/microsoft.powershell.security/set-executionpolicy?view=powershell-6) para obter orientação.
+  - Execute um script de exemplo usando a extensão de gerenciamento do Intune. Por exemplo, crie o diretório `C:\Scripts` e dê controle total a todos. Execute o seguinte script:
 
-- Para testar a execução do script sem o Intune, execute os scripts sob o Contexto do Sistema usando a [ferramenta psexec](https://docs.microsoft.com/sysinternals/downloads/psexec) localmente:
+    ```powershell
+    write-output "Script worked" | out-file c:\Scripts\output.txt
+    ```
 
-  `psexec -i -s`
+    Se tiver êxito, output.txt deve ser criado e deve incluir o texto "Script worked" (O script funcionou).
+
+  - Para testar a execução do script sem o Intune, execute os scripts na conta do Sistema usando a [ferramenta psexec](https://docs.microsoft.com/sysinternals/downloads/psexec) localmente:
+
+    `psexec -i -s`
 
 ## <a name="next-steps"></a>Próximas etapas
 
