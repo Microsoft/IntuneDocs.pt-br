@@ -1,11 +1,11 @@
 ---
-title: Registrar o dispositivo Windows 10 no Portal de empresa do Intune | Microsoft Docs
-description: Etapas para registrar dispositivos Windows 10 no Portal de empresa do Intune
+title: Registrar o dispositivo Windows 10 no Portal da Empresa do Intune | Microsoft Docs
+description: Etapas para registrar dispositivos Windows 10 no Portal da Empresa do Intune
 keywords: ''
 author: lenewsad
 ms.author: lanewsad
 manager: dougeby
-ms.date: 03/11/2019
+ms.date: 05/21/2019
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -18,27 +18,27 @@ ms.reviewer: jieyang
 ms.suite: ems
 ms.custom: intune-enduser
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 4eb5dbb150559de7ad30a598fb78a4fa78033c42
-ms.sourcegitcommit: fdc6261f4ed695986e06d18353c10660a4735362
+ms.openlocfilehash: cbb6c3b771ae768fe45bea1eecb21f7083003010
+ms.sourcegitcommit: d258bcf6716c8a2589d3f8dada819905ee80f233
 ms.translationtype: MTE75
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/15/2019
-ms.locfileid: "58068837"
+ms.lasthandoff: 05/24/2019
+ms.locfileid: "66196843"
 ---
-# <a name="enroll-windows-10-devices-with-intune-company-portal"></a>Registrar dispositivos Windows 10 com o Portal da empresa do Intune
+# <a name="enroll-windows-10-devices-with-intune-company-portal"></a>Registrar dispositivos Windows 10 com o Portal da Empresa do Intune
 
-Use o Portal da empresa Intune para registrar seu dispositivo Windows 10 sob o gerenciamento da sua organização. Este artigo descreve como registrar dispositivos com Windows 10 versão 1607 e posterior e Windows 10 versão 1511 e anteriores. Antes de começar, verifique se você [verificar a versão em seu dispositivo](windows-enrollment-company-portal.md#find-windows-10-version-number) para que você pode seguir as etapas corretas.  
+Use o Portal da Empresa do Intune para registrar seu dispositivo Windows 10 sob o gerenciamento da sua organização. Este artigo descreve como registrar dispositivos com Windows 10 versão 1607 e posteriores e Windows 10 versão 1511 e anteriores. Antes de começar, certifique-se de [verificar a versão em seu dispositivo](windows-enrollment-company-portal.md#find-windows-10-version-number) para que você possa seguir as etapas corretas.  
 
-Há suporte para o Windows 10 em vários tipos de dispositivos, incluindo a área de trabalho, telefone e tablet. As etapas de registro são os mesmos em qualquer dispositivo que você está usando. No entanto, sua tela pode parecer um pouco diferentes das imagens mostradas neste artigo.  
+Há suporte para o Windows 10 em vários tipos de dispositivos, incluindo desktop, telefone e tablet. As etapas de registro são as mesmas em qualquer dispositivo sendo usado. No entanto, sua tela pode parecer um pouco diferente das imagens mostradas neste artigo.  
+</br>
+> [!VIDEO https://www.youtube.com/embed/TKQxEckBHiE?rel=0]
 
-> [!VIDEO https://channel9.msdn.com/Series/IntuneEnrollment/Windows-Enrollment/player]  
+## <a name="enroll-windows-10-version-1607-and-later-device"></a>Registrar o dispositivo Windows 10 versão 1607 e posteriores 
+Estas etapas descrevem como registrar um dispositivo que executa o Windows 10 versão 1607 e posteriores.  
 
-## <a name="enroll-windows-10-version-1607-and-later-device"></a>Registrar o dispositivo posterior e Windows 10 versão 1607 
-Estas etapas descrevem como registrar um dispositivo que executa o Windows 10, versão 1607 e posterior.  
+1. Vá até **Iniciar**. Se você estiver usando um dispositivo Windows 10 Mobile, prossiga para a lista **Todos os Aplicativos**.
 
-1. Vá até **Iniciar**. Se você estiver usando um dispositivo Windows 10 Mobile, vá para o **todos os aplicativos** lista.
-
-2. Abra o aplicativo **Configurações**. Se o aplicativo não está prontamente disponível na lista de aplicativos, vá para a barra de pesquisa e o tipo "configurações".
+2. Abra o aplicativo **Configurações**. Se o aplicativo não estiver prontamente disponível na lista de aplicativos, acesse a barra de pesquisa e digite "configurações".
 
 3. Selecione **Contas** > **Acessar trabalho ou escola** > **Conectar**.  
 
@@ -57,25 +57,25 @@ Estas etapas descrevem como registrar um dispositivo que executa o Windows 10, v
 
     Você verá uma mensagem que indica que sua empresa ou escola está registrando o dispositivo.
 
-6. Se sua organização exige que você configure um PIN do Windows Hello, você será solicitado a inserir um código de verificação. Insira o código e prossiga com as etapas na tela para criar um PIN.  
+6. Se a sua organização exigir a configuração de um PIN do Windows Hello, será solicitado que você insira um código de verificação. Insira o código e prossiga com as etapas na tela para criar um PIN.  
 
-7. Na tela **Tudo pronto!**, selecione **Concluir**. Agora, seu dispositivo está registrado.  
+7. Na tela **Tudo pronto!** , selecione **Concluir**. Agora, seu dispositivo está registrado.  
 
-8. Para verificar sua conexão, vá para **as configurações** > **contas** > **acessar trabalho ou escola**.  Sua conta deve agora estar listada.  
+8. Para verificar sua conexão, volte para **Configurações** > **Contas** > **Acessar o trabalho ou a escola**.  Sua conta deve estar listada agora.  
 
 
     ![Valide se a conexão foi configurada corretamente](./media/w10-enroll-rs1-validate-successful-enrollment.png)  
 
-Ainda não consegue acessar seu email corporativo ou de estudante, bem como arquivos ou outros dados? Saiba como [solucionar problemas de conta](troubleshoot-your-windows-10-device-windows.md#troubleshooting-steps-to-follow-if-you-see-access-work-or-school).  
+Ainda não consegue acessar seu email corporativo ou de estudante, bem como arquivos ou outros dados? Saiba como [solucionar problemas da conta](troubleshoot-your-windows-10-device-windows.md#troubleshooting-steps-to-follow-if-you-see-access-work-or-school).  
 
-## <a name="enroll-windows-10-version-1511-and-earlier-device"></a>Registrar o Windows 10 versão 1511 e dispositivo anterior  
+## <a name="enroll-windows-10-version-1511-and-earlier-device"></a>Registrar o dispositivo Windows 10 versão 1511 e anteriores  
 Estas etapas descrevem como registrar um dispositivo que executa o Windows 10, versão 1511 e anteriores.  
 
-1. Vá até **Iniciar**. Se você estiver usando um dispositivo Windows 10 Mobile, vá para o **todos os aplicativos** lista.
+1. Vá até **Iniciar**. Se você estiver usando um dispositivo Windows 10 Mobile, prossiga para a lista **Todos os Aplicativos**.
 
-2. Abra o aplicativo **Configurações**. Se o aplicativo não está prontamente disponível na lista de aplicativos, vá para a barra de pesquisa e o tipo "configurações".
+2. Abra o aplicativo **Configurações**. Se o aplicativo não estiver prontamente disponível na lista de aplicativos, acesse a barra de pesquisa e digite "configurações".
 
-3. Selecione **contas** > **sua conta**.  
+3. Selecione **Contas** > **Sua conta**.  
 
 
     ![Selecionar sua conta](./media/W10-enroll-2-accounts-your-account.png)  
@@ -90,11 +90,14 @@ Estas etapas descrevem como registrar um dispositivo que executa o Windows 10, v
 
     ![Entrar](./media/W10-enroll-4-sign-in.png)  
 
-Ainda não consegue acessar seu email corporativo ou de estudante, bem como arquivos ou outros dados? Saiba como [solucionar problemas de conta](troubleshoot-your-windows-10-device-windows.md#troubleshooting-steps-to-follow-if-you-see-your-account).   
+Ainda não consegue acessar seu email corporativo ou de estudante, bem como arquivos ou outros dados? Saiba como [solucionar problemas relacionados à conta](troubleshoot-your-windows-10-device-windows.md#troubleshooting-steps-to-follow-if-you-see-your-account) durante o registro.  
+
+## <a name="it-administrator-support"></a>Suporte do administrador de TI   
+
+Se você for um administrador de TI e encontrar problemas durante o registro de dispositivos, confira [Solucionando problemas de registro de dispositivo do Windows no Microsoft Intune](https://support.microsoft.com/help/4469913). Este artigo lista erros comuns, suas causas e etapas para resolvê-los. 
 
 ## <a name="next-steps"></a>Próximas etapas  
-
-Para obter ajuda, entre em contato com o suporte de sua empresa. Você pode encontrar sua organização informações de TI sobre o [site do Portal da empresa](https://go.microsoft.com/fwlink/?linkid=2010980). Entre no site com sua conta corporativa ou de estudante.  
+Se você precisar de ajuda com o Portal da Empresa ou com o registro, entre em contato com a equipe de suporte de TI da sua empresa. Você encontrará as informações de contato dela no [site do Portal da Empresa](https://go.microsoft.com/fwlink/?linkid=2010980). Entre no site com sua conta corporativa ou de estudante.  
 
  
 

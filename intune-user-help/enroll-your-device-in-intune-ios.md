@@ -5,7 +5,7 @@ keywords: ''
 author: lenewsad
 ms.author: lanewsad
 manager: dougeby
-ms.date: 04/05/2019
+ms.date: 05/24/2019
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -18,12 +18,12 @@ ms.reviewer: tisilv
 ms.suite: ems
 ms.custom: intune-enduser
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: d0c7ac239a67a51ba7165771206883f3c46f5f55
-ms.sourcegitcommit: 364a7dbc7eaa414c7a9c39cf53eb4250e1ad3151
-ms.translationtype: HT
+ms.openlocfilehash: bef0eb545f5f0ca0f85365a08e6bc5d726d6979e
+ms.sourcegitcommit: d258bcf6716c8a2589d3f8dada819905ee80f233
+ms.translationtype: MTE75
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/09/2019
-ms.locfileid: "59292417"
+ms.lasthandoff: 05/24/2019
+ms.locfileid: "66196868"
 ---
 # <a name="set-up-ios-device-access-to-your-company-resources"></a>Configurar o acesso do dispositivo iOS aos recursos de sua empresa  
 
@@ -31,7 +31,9 @@ Registre seu dispositivo iOS no aplicativo Portal da Empresa do Intune para obte
 
 Depois que o dispositivo é registrado, ele se torna *gerenciado*. Sua organização pode atribuir políticas e aplicativos ao dispositivo por meio de um provedor de MDM (gerenciamento de dispositivo móvel), como o Intune.  
 
-Para manter o acesso a informações corporativas ou de estudante em seu dispositivo, você precisará configurá-lo para corresponder às configurações preferenciais da sua organização. Este artigo descreve como usar o Portal da Empresa para registrar seu dispositivo e manter os requisitos de configuração de sua organização. 
+Para manter o acesso a informações corporativas ou de estudante em seu dispositivo, você precisará configurá-lo para corresponder às configurações preferenciais da sua organização. Este artigo descreve como usar o Portal da Empresa para registrar seu dispositivo e manter os requisitos de configuração de sua organização.  
+</br>
+> [!VIDEO https://www.youtube.com/embed/mJyv6YcHi7c?rel=0]
 
 > [!NOTE]
 > Se você tentou acessar o email da empresa no aplicativo de email e recebeu um prompt para gerenciar seu dispositivo, você está no lugar certo. Siga as instruções abaixo para obter acesso ao seu email e a outros recursos da empresa em seu dispositivo iOS.  
@@ -39,7 +41,7 @@ Para manter o acesso a informações corporativas ou de estudante em seu disposi
 ## <a name="what-to-expect-from-the-company-portal-app"></a>O que esperar do aplicativo Portal da Empresa  
 
 ### <a name="security"></a>Segurança   
-Durante a instalação inicial, o aplicativo requer que você se autentique na organização. Em seguida, ele informa sobre as configurações do dispositivo que você deve atualizar. Por exemplo, as organizações geralmente definem os requisitos de mínimo e máximo de caracteres de senha que você deverá atender.     
+Durante a instalação inicial, o aplicativo requer que você se autentique na organização. Em seguida, ele informa sobre as configurações do dispositivo que você deve atualizar. Por exemplo, as organizações geralmente definem os requisitos de mínimo e máximo de caracteres de senha que você deverá atender.
 
 ### <a name="protection"></a>Proteção  
 Depois que o dispositivo for registrado, o aplicativo Portal da Empresa continuará a verificar se o dispositivo está protegido. Se você instalar um aplicativo de uma fonte não confiável, por exemplo, o aplicativo o alertará e, às vezes, revogará o acesso aos dados da empresa. Esse tipo de política é comum em organizações e geralmente exige que você desinstale o aplicativo não confiável antes de recuperar o acesso.  
@@ -69,7 +71,7 @@ Pausar por mais de alguns minutos durante o registro pode fazer o aplicativo fec
 
 4. Leia a lista de informações do dispositivo que sua organização pode e não pode ver. Toque em **Continuar**.  
 
-5. Leia as instruções na tela **O que vem a seguir?**. Quando você estiver pronto para baixar e instalar o perfil de gerenciamento, toque em **Continuar**.  
+5. Leia as instruções na tela **O que vem a seguir?** . Quando você estiver pronto para baixar e instalar o perfil de gerenciamento, toque em **Continuar**.  
 
  > [!IMPORTANT]
 > Estas próximas etapas e telas variam conforme sua versão do iOS. Siga as etapas para a sua versão do iOS. 
@@ -118,6 +120,9 @@ Pausar por mais de alguns minutos durante o registro pode fazer o aplicativo fec
 
 > [!Note]
 > Se a sua organização monitora os limites de voz e dados ou fornece a você um dispositivo de propriedade da empresa, talvez você precise concluir mais algumas etapas. Se você for solicitado a instalar o aplicativo **Datalert**, veja [registrar seu dispositivo no gerenciamento de despesas de telecomunicações](enroll-your-device-with-telecom-expense-management-ios.md). Se a sua organização faz parte do Programa de Registro de Dispositivos da Apple, descubra [como registrar seu dispositivo de propriedade da empresa](enroll-your-device-dep-ios.md).  
+
+## <a name="it-administrator-support"></a>Suporte do administrador de TI  
+Se você for um administrador de TI e encontrar problemas durante o registro de dispositivos, consulte [Solucionando problemas de registro de dispositivo iOS no Microsoft Intune](https://support.microsoft.com/en-us/help/4039809). Este artigo lista erros comuns, suas causas e etapas para resolvê-los.  
 
 ## <a name="next-steps"></a>Próximas etapas  
 Encontre aplicativos que o ajudarão no trabalho ou na escola. Saiba [como aplicativos são disponibilizados](use-managed-apps-on-your-device-ios.md) para você por meio do Portal da Empresa.  

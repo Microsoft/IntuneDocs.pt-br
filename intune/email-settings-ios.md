@@ -7,7 +7,6 @@ ms.author: mandia
 manager: dougeby
 ms.date: 12/11/2018
 ms.topic: reference
-ms.prod: ''
 ms.service: microsoft-intune
 ms.localizationpriority: medium
 ms.technology: ''
@@ -15,12 +14,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure; seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 1cf1daf42d1dfcd8dd25304040e868581a056943
-ms.sourcegitcommit: 25e6aa3bfce58ce8d9f8c054bc338cc3dff4a78b
+ms.openlocfilehash: 0faf9220b4859c41ef8c4393fe15f385eaac8cc3
+ms.sourcegitcommit: 916fed64f3d173498a2905c7ed8d2d6416e34061
 ms.translationtype: MTE75
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57566396"
+ms.lasthandoff: 05/23/2019
+ms.locfileid: "66042111"
 ---
 # <a name="email-profile-settings-for-ios-devices-in-intune"></a>Configurações de perfil de email para dispositivos iOS no Intune
 
@@ -76,20 +75,20 @@ Este artigo lista e descreve todas as configurações de email disponíveis para
   Ao usar o S/MIME com uma mensagem de email, você confirma a autenticidade do remetente, bem como a integridade e a confidencialidade da mensagem.
 
   - **Assinatura de S/MIME habilitada**: escolha **Habilitar** para permitir que os usuários assinem digitalmente um email de saída para a conta que você inseriu. A assinatura ajuda os usuários que recebem mensagens a ter certeza de que a mensagem é proveniente do remetente específico, não de alguém que finge ser o remetente. A opção **Desabilitar** não permite que os usuários assinem digitalmente a mensagem.
-    - **Permitir que o usuário altere a configuração**: escolha **habilitar** para permitir que os usuários possam alterar o comportamento de autenticação S/MIME. A opção **Desabilitar** impede que os usuários alterem a configuração de assinatura S/MIME definida. Disponível no iOS 12 e mais recente.
+    - **Permitir que o usuário altere a configuração**: escolha **Habilitar** para permitir que os usuários alterem o comportamento de autenticação S/MIME. A opção **Desabilitar** impede que os usuários alterem a configuração de assinatura S/MIME definida. Disponível no iOS 12 e mais recente.
 
   - **Certificado de assinatura de S/MIME**: selecione um perfil de certificado PKCS ou SCEP existente que é usado para assinar mensagens de email.
-    - **Permitir que o usuário altere a configuração**: escolha **habilitar** para permitir que os usuários alterem o certificado de autenticação. A opção **Desabilitar** impede que os usuários alterem o certificado de autenticação e força os usuários a usar o certificado configurado. Disponível no iOS 12 e mais recente.
+    - **Permitir que o usuário altere a configuração**: escolha **Habilitar** para permitir que os usuários alterem o certificado de autenticação. A opção **Desabilitar** impede que os usuários alterem o certificado de autenticação e força os usuários a usar o certificado configurado. Disponível no iOS 12 e mais recente.
 
-  - **Criptografar por padrão**: **habilitar** criptografa todas as mensagens como o comportamento padrão. A opção **Desabilitar** não criptografa todas as mensagens como o comportamento padrão.
-    - **Permitir que o usuário altere a configuração**: escolha **habilitar** para permitir que os usuários possam alterar o comportamento padrão de criptografia. A opção **Desabilitar** impede que os usuários alterem o comportamento padrão de criptografia e força os usuários a usar a configuração definida. Disponível no iOS 12 e mais recente.
+  - **Criptografar por padrão**: **habilita** todas as mensagens como o comportamento padrão. A opção **Desabilitar** não criptografa todas as mensagens como o comportamento padrão.
+    - **Permitir ao usuário alterar a configuração**: escolha **Habilitar** para permitir que os usuários alterem o comportamento padrão de criptografia. A opção **Desabilitar** impede que os usuários alterem o comportamento padrão de criptografia e força os usuários a usar a configuração definida. Disponível no iOS 12 e mais recente.
 
   - **Forçar criptografia por mensagem**: a criptografia por mensagem permite que os usuários escolham quais emails serão criptografados antes de serem enviados. Escolha **Habilitar** para mostrar a opção de criptografia por mensagem durante a criação de um email. Os usuários podem optar por aceitar ou recusar a criptografia por mensagem. A opção **Desabilitar** impede a exibição da opção de criptografia por mensagem.
 
     Se a configuração **Criptografar por padrão** estiver habilitada, a habilitação da criptografia por mensagem permitirá que os usuários recusem a criptografia por mensagem. Se a configuração **Criptografar por padrão** estiver desabilitada, a habilitação da criptografia por mensagem permitirá que os usuários aceitem a criptografia por mensagem.
 
   - **Certificado de criptografia S/MIME**: selecione um perfil de certificado PKCS ou SCEP existente que é usado para criptografar mensagens de email.
-    - **Permitir que o usuário altere a configuração**: escolha **habilitar** para permitir que os usuários alterem o certificado de criptografia. A opção **Desabilitar** impede que os usuários alterem o certificado de criptografia e força os usuários a usar o certificado configurado. Disponível no iOS 12 e mais recente.
+    - **Permitir ao usuário alterar a configuração**: escolha **Habilitar** para permitir que os usuários alterem o certificado de criptografia. A opção **Desabilitar** impede que os usuários alterem o certificado de criptografia e força os usuários a usar o certificado configurado. Disponível no iOS 12 e mais recente.
 - **Quantidade de emails a serem sincronizados**: escolha o número de dias de email que você deseja sincronizar. Ou selecione **Ilimitado** para sincronizar todos os emails disponíveis.
 - **Permitir que as mensagens sejam movidas para outras contas de email**: **Habilitar** permite que os usuários movam mensagens de email entre contas diferentes que os usuários configuraram em seus dispositivos.
 - **Permitir que o email seja enviado de aplicativos de terceiros**: **Habilitar** permite aos usuários selecionar este perfil como a conta padrão para enviar email. Ele permite que aplicativos de terceiros abram o email no aplicativo de email nativo, como anexar arquivos ao email.

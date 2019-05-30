@@ -7,7 +7,6 @@ ms.author: mandia
 manager: dougeby
 ms.date: 01/29/2019
 ms.topic: troubleshooting
-ms.prod: ''
 ms.service: microsoft-intune
 ms.localizationpriority: medium
 ms.technology: ''
@@ -18,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 6d1f790aeedff1e13ecc220ed7a6d8f311e12585
-ms.sourcegitcommit: 25e6aa3bfce58ce8d9f8c054bc338cc3dff4a78b
-ms.translationtype: MTE75
+ms.openlocfilehash: a0f8e9e7fec0bea759d408f3ca3d94aa46748bf8
+ms.sourcegitcommit: 916fed64f3d173498a2905c7ed8d2d6416e34061
+ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57460505"
+ms.lasthandoff: 05/23/2019
+ms.locfileid: "66044610"
 ---
 # <a name="troubleshoot-policies-and-profiles-and-in-intune"></a>Solucionar problemas de políticas e de perfis e no Intune
 
@@ -56,11 +55,11 @@ Este artigo lista algumas técnicas de solução de problemas comuns e descreve 
 
       - Políticas de proteção de aplicativo (gerenciamento de aplicativos móveis) não exigem que os dispositivos sejam registrados. Para obter mais informações, veja [criar e atribuir políticas de proteção de aplicativo](app-protection-policies.md).
 
-    - **Tipo de junção do Azure AD**: deve ser definido como **Workplace** ou **AzureAD**.
+    - **Tipo de Junção do Azure AD**: deve ser definido como **Workplace** ou **AzureAD**.
  
       - Se essa coluna é **Não Registrado**, pode haver um problema com o registro. Normalmente, cancelar o registro do dispositivo e registrá-lo novamente resolve esse estado.
 
-    - **Compatível com o Intune**: deve ser **Sim**. Se **Não** é mostrado, pode haver um problema com as políticas de conformidade, ou o dispositivo não está se conectando ao serviço do Intune. Por exemplo, o dispositivo pode estar desativado ou pode não ter uma conexão de rede. Eventualmente, o dispositivo se torna não compatível possivelmente após 30 dias.
+    - **Em conformidade com o Intune**: deve ser **Sim**. Se **Não** é mostrado, pode haver um problema com as políticas de conformidade, ou o dispositivo não está se conectando ao serviço do Intune. Por exemplo, o dispositivo pode estar desativado ou pode não ter uma conexão de rede. Eventualmente, o dispositivo se torna não compatível possivelmente após 30 dias.
 
       Para mais informações, consulte [introdução às políticas de conformidade do dispositivo](device-compliance-get-started.md).
 
@@ -87,7 +86,7 @@ Este artigo lista algumas técnicas de solução de problemas comuns e descreve 
 
       **Estados de Política**:
 
-      - **Não aplicável**: essa política não tem suporte nesta plataforma. Por exemplo, políticas de iOS não funcionam no Android. As políticas do Samsung KNOX não funcionam em dispositivos do Windows.
+      - **Não se Aplica**: não há suporte para essa política nesta plataforma. Por exemplo, políticas de iOS não funcionam no Android. As políticas do Samsung KNOX não funcionam em dispositivos do Windows.
       - **Conflito**: há uma configuração existente no dispositivo que o Intune não pode substituir. Ou você implantou duas políticas com a mesma configuração usando valores diferentes.
       - **Pendente**: o dispositivo ainda não fez a verificação no Intune para obter a política. Ou o dispositivo recebeu a política, mas não relatou o status para o Intune.
       - **Erros**: pesquisar erros e possíveis resoluções em [Solucionar problemas de acesso de recursos da empresa](troubleshoot-company-resource-access-problems.md).
@@ -110,7 +109,7 @@ Este artigo lista algumas técnicas de solução de problemas comuns e descreve 
 
     - **Pendente**: o perfil é enviado para o dispositivo, mas não relatou o status para o Intune. Por exemplo, a criptografia no Android exige que o usuário habilite a criptografia e, portanto, pode ser mostrada como pendente.
 
-**Links úteis**: [monitorar perfis de configuração do dispositivo](device-profile-monitor.md)
+**Link útil**: [Monitorar perfis de configuração de dispositivo](device-profile-monitor.md)
 
 > [!NOTE]
 > Quando duas políticas com diferentes níveis de restrição aplicam-se ao mesmo dispositivo ou usuário, a política mais restritiva é aplicada.

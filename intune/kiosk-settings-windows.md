@@ -7,7 +7,6 @@ ms.author: mandia
 manager: dougeby
 ms.date: 03/11/2019
 ms.topic: reference
-ms.prod: ''
 ms.service: microsoft-intune
 ms.localizationpriority: medium
 ms.technology: ''
@@ -15,12 +14,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure; seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 55a0cb45cd3e3a8e367b0bff7bd8e856b02af953
-ms.sourcegitcommit: aab39bf86707ccaef45fd6527fff4f1c89336710
+ms.openlocfilehash: a80e4cf4e68235ef9e88943a8b62121e0cfb6623
+ms.sourcegitcommit: 916fed64f3d173498a2905c7ed8d2d6416e34061
 ms.translationtype: MTE75
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/25/2019
-ms.locfileid: "58429684"
+ms.lasthandoff: 05/23/2019
+ms.locfileid: "66046967"
 ---
 # <a name="windows-10-and-later-device-settings-to-run-as-a-kiosk-in-intune"></a>Configurações de dispositivos com Windows 10 (e posterior) para execução como um quiosque no Intune
 
@@ -36,40 +35,40 @@ Para saber mais sobre o recurso de quiosque do Windows no Intune, confira [defin
 
 - [Crie o perfil](kiosk-settings.md#create-the-profile).
 
-- Este perfil de quiosque está diretamente relacionado ao perfil de restrições de dispositivo você cria usando o [configurações de quiosque do Microsoft Edge](device-restrictions-windows-10.md#microsoft-edge-browser). Para resumir:
+- Este perfil de quiosque está diretamente relacionado ao perfil de restrições do dispositivo você cria usando as [Configurações de quiosque do Microsoft Edge](device-restrictions-windows-10.md#microsoft-edge-browser). Para resumir:
 
   1. Crie este perfil de quiosque para executar o dispositivo no modo de quiosque.
-  2. Criar o [perfil de restrições de dispositivo](device-restrictions-windows-10.md#microsoft-edge-browser)e configurar recursos específicos e as configurações de permissão no Microsoft Edge.
+  2. Crie o [perfil de restrições de dispositivo](device-restrictions-windows-10.md#microsoft-edge-browser) e configure recursos e configurações específicos permitidos no Microsoft Edge.
 
 > [!IMPORTANT] 
-> Certifique-se de atribuir a esse perfil de quiosque para os mesmos dispositivos como seu [perfil do Microsoft Edge](device-restrictions-windows-10.md#microsoft-edge-browser).
+> Atribua esse perfil de quiosque aos mesmos dispositivos que seu [perfil do Microsoft Edge](device-restrictions-windows-10.md#microsoft-edge-browser).
 
 ## <a name="single-full-screen-app-kiosks"></a>Quiosques aplicativo de tela inteira único
 
 Executa apenas um aplicativo no dispositivo.
 
-- **Selecione um modo de quiosque**: escolha **único aplicativo, de quiosque de tela inteira**.
+- **Selecione um modo de quiosque**: escolha **aplicativo único, quiosque de tela inteira**.
 
 - **Tipo de logon do usuário**: os aplicativos que você adiciona são executados com a conta de usuário inserida. Suas opções:
 
-  - **Logon automático (Windows 10 versão 1803 e posteriores)**: para uso em quiosques em ambientes públicos que não exigem que o usuário se conecte, similar a uma conta convidado. Essa configuração usa o [AssignedAccess CSP](https://docs.microsoft.com/windows/client-management/mdm/assignedaccess-csp).
-  - **Conta de usuário local**: insira a conta de usuário local (para o dispositivo). A conta inserida conecta o quiosque.
+  - **Logon automático (Windows 10 versão 1803 e posteriores)** : para uso em quiosques em ambientes públicos que não exigem que o usuário se conecte, similar a uma conta convidado. Essa configuração usa o [AssignedAccess CSP](https://docs.microsoft.com/windows/client-management/mdm/assignedaccess-csp).
+  - **Conta de usuário local**: insira a conta de usuário local (para o dispositivo). A conta em que você entra no quiosque.
 
 - **Tipo de aplicativo**: selecione o tipo de aplicativo. Suas opções:
 
-  - **Adicionar o navegador Microsoft Edge**: selecione **navegador Microsoft Edge**e escolha o **tipo de modo de quiosque de borda**:
+  - **Adicionar navegador do Microsoft Edge**: selecione **Navegador do Microsoft Edge** e escolha o **tipo de modo de quiosque do Edge**:
 
-    - **Sinalização de digitais/interativo**: abre uma tela inteira de URL e mostra somente o conteúdo no site. [Configurar sinais digitais](https://docs.microsoft.com/windows/configuration/setup-digital-signage) fornece mais informações sobre esse recurso.
-    - **Navegação pública (InPrivate)**: executa uma versão limitada com várias guia do Microsoft Edge. Os usuários podem procurar publicamente ou encerrar sua sessão de navegação.
+    - **Sinalização digital/interativa**: abre uma tela inteira de URL e mostra somente o conteúdo naquele site. [Configurar sinais digitais](https://docs.microsoft.com/windows/configuration/setup-digital-signage) fornece mais informações sobre esse recurso.
+    - **Navegação pública (InPrivate)** : executa uma versão limitada com várias guias do Microsoft Edge. Os usuários podem procurar publicamente ou encerrar sua sessão de navegação.
 
-    Para obter mais informações sobre essas opções, consulte [modo de quiosque de implantar o Microsoft Edge](https://docs.microsoft.com/microsoft-edge/deploy/microsoft-edge-kiosk-mode-deploy#supported-configuration-types).
+    Para obter mais informações sobre essas opções, veja [Implantar o modo de quiosque do Microsoft Edge](https://docs.microsoft.com/microsoft-edge/deploy/microsoft-edge-kiosk-mode-deploy#supported-configuration-types).
 
     > [!NOTE]
-    > Essa configuração permite que o navegador Microsoft Edge no dispositivo. Para definir configurações específicas da Microsoft Edge, criar um perfil de configuração do dispositivo (**configuração do dispositivo** > **perfis** > **criar perfil**  >  **Windows 10** para a plataforma > **restrições de dispositivo** >  **navegador Microsoft Edge**). [Navegador Microsoft Edge](device-restrictions-windows-10.md#microsoft-edge-browser) lista e descreve as configurações disponíveis.
+    > Essa configuração habilita o navegador Microsoft Edge no dispositivo. Para definir configurações específicas do Microsoft Edge, crie um perfil de configuração do dispositivo (**Configuração do Dispositivo** > **Perfis** > **Criar perfil** > **Windows 10** para plataforma > **Restrições de Dispositivo** >  **Navegador Microsoft Edge**). O [Navegador Microsoft Edge](device-restrictions-windows-10.md#microsoft-edge-browser) lista e descreve as configurações disponíveis.
 
     Selecione **OK** para salvar suas alterações.
 
-  - **Adicionar o navegador de quiosque**: selecione **configurações do navegador de quiosque**. Essas configurações controlam um aplicativo de navegador da Web no quiosque. Lembre-se de obter o [Aplicativo de navegador de quiosque](https://businessstore.microsoft.com/store/details/kiosk-browser/9NGB5S5XG2KP) da Loja, adicioná-lo ao Intune como um [Aplicativo Cliente](apps-add.md) e, em seguida, atribuir o aplicativo aos dispositivos de quiosque.
+  - **Adicionar navegador de quiosque**: selecione **Configurações do navegador de quiosque**. Essas configurações controlam um aplicativo de navegador da Web no quiosque. Lembre-se de obter o [Aplicativo de navegador de quiosque](https://businessstore.microsoft.com/store/details/kiosk-browser/9NGB5S5XG2KP) da Loja, adicioná-lo ao Intune como um [Aplicativo Cliente](apps-add.md) e, em seguida, atribuir o aplicativo aos dispositivos de quiosque.
 
     Insira as seguintes configurações:
 
@@ -96,7 +95,7 @@ Executa apenas um aplicativo no dispositivo.
 
     Selecione **OK** para salvar suas alterações.
 
-  - **Adicionar Store app**: selecione **adicionar um aplicativo da store**e escolha um aplicativo na lista.
+  - **Adicionar aplicativo da Store**: selecione **Adicionar um aplicativo da Store** e escolha um aplicativo na lista.
 
     Não tem aplicativos listados? Adicione alguns usando as etapas em [Aplicativos cliente](apps-add.md).
 
@@ -104,34 +103,34 @@ Executa apenas um aplicativo no dispositivo.
 
 ## <a name="multi-app-kiosks"></a>Quiosques de vários aplicativos
 
-Os aplicativos nesse modo estão disponíveis no menu Iniciar. Esses aplicativos são os únicos aplicativos que o usuário pode abrir. Se um aplicativo tem uma dependência em outro aplicativo, ambos devem ser incluídas na lista de aplicativos permitidos. Por exemplo, o Internet Explorer de 64 bits tem uma dependência no Internet Explorer de 32 bits, portanto, você deve permitir "C:\Program Files\internet explorer\iexplore.exe" e "C:\Program Files (x86) \Internet". 
+Os aplicativos nesse modo estão disponíveis no menu Iniciar. Esses aplicativos são os únicos aplicativos que o usuário pode abrir. Se um aplicativo tiver uma dependência de outro aplicativo, ambos deverão ser incluídos na lista de aplicativos permitidos. Por exemplo, o Internet Explorer de 64 bits tem uma dependência do Internet Explorer de 32 bits, portanto, você deve permitir tanto "C:\Program Files\internet explorer\iexplore.exe" quanto "C:\Program Files (x86)\Internet Explorer\iexplore.exe". 
 
-- **Selecione um modo de quiosque**: escolha **quiosque de vários aplicativos**.
+- **Selecionar um modo de quiosque**: escolha **Quiosque de vários aplicativos**.
 
 - **Definir o Windows 10 como destino em dispositivos no modo S**:
   - **Sim**: permite aplicativos da loja e aplicativos AUMID (exceto aplicativos Win32) no perfil de quiosque.
-  - **Não**: permite aplicativos da loja, aplicativos Win32 e aplicativos AUMID no perfil de quiosque. Este perfil do kiosk não está implantado em dispositivos de modo S.
+  - **Não**: permite aplicativos da loja, aplicativos Win32 e aplicativos AUMID no perfil de quiosque. Esse perfil de quiosque não é implantado em dispositivos de modo S.
 
 - **Tipo de logon do usuário**: os aplicativos que você adiciona são executados com a conta de usuário inserida. Suas opções:
 
-  - **Logon automático (Windows 10 versão 1803 e posteriores)**: para uso em quiosques em ambientes públicos que não exigem que o usuário se conecte, similar a uma conta convidado. Essa configuração usa o [AssignedAccess CSP](https://docs.microsoft.com/windows/client-management/mdm/assignedaccess-csp).
-  - **Conta de usuário local**: **adicione** a conta de usuário local (para o dispositivo). A conta inserida conecta o quiosque.
-  - **Usuário ou grupo do Azure AD (versão do Windows 10 1803 e posteriores)**: selecione **Adicionar** para escolher usuários ou grupos do Azure AD na lista. Você pode selecionar vários usuários e grupos. Marque **Selecionar** para salvar suas alterações.
+  - **Logon automático (Windows 10 versão 1803 e posteriores)** : para uso em quiosques em ambientes públicos que não exigem que o usuário se conecte, similar a uma conta convidado. Essa configuração usa o [AssignedAccess CSP](https://docs.microsoft.com/windows/client-management/mdm/assignedaccess-csp).
+  - **Conta de usuário local**: **adicione** a conta de usuário local (para o dispositivo). A conta em que você entra no quiosque.
+  - **Usuário ou grupo do Azure AD (versão do Windows 10 1803 e posteriores)** : selecione **Adicionar** para escolher usuários ou grupos do Azure AD na lista. Você pode selecionar vários usuários e grupos. Marque **Selecionar** para salvar suas alterações.
   - **Visitante do HoloLens**: a conta do visitante é uma conta convidado que não exige as credenciais do usuário nem autenticação, conforme descrito em [Conceitos do modo de computador compartilhado](https://docs.microsoft.com/windows/configuration/set-up-shared-or-guest-pc#shared-pc-mode-concepts).
 
 - **Navegador e Aplicativos**: adicione os aplicativos a serem executados no dispositivo de quiosque. Lembre-se, você pode adicionar vários aplicativos.
 
   - **Navegadores**
 
-    - **Adicionar o Microsoft Edge**: Microsoft Edge é adicionada à grade de aplicativo e todos os aplicativos podem ser executados desse quiosque. Escolha o **tipo de modo de quiosque do Microsoft Edge**:
+    - **Adicionar Microsoft Edge**: o Microsoft Edge é adicionado à grade de aplicativos e todos os aplicativos podem ser executados nesse quiosque. Escolha o **tipo de modo de quiosque do Microsoft Edge**:
 
-      - **Modo normal (versão completa do Microsoft Edge)**: executa uma versão completa do Microsoft Edge com todos os recursos de navegação. Estado e os dados de usuário são salvas entre sessões.
-      - **Navegação pública (InPrivate)**: executa uma versão com várias guia do Microsoft Edge InPrivate com uma experiência personalizada para quiosques que executam no modo de tela inteira.
+      - **Modo normal (versão completa do Microsoft Edge)** : executa uma versão completa do Microsoft Edge com todos os recursos de navegação. O estado e os dados do usuário são salvos entre sessões.
+      - **Navegação pública (InPrivate)** : executa uma versão com várias guias do Microsoft Edge InPrivate com uma experiência personalizada para quiosques executados no modo de tela inteira.
 
-      Para obter mais informações sobre essas opções, consulte [modo de quiosque de implantar o Microsoft Edge](https://docs.microsoft.com/microsoft-edge/deploy/microsoft-edge-kiosk-mode-deploy#supported-configuration-types).
+      Para obter mais informações sobre essas opções, veja [Implantar o modo de quiosque do Microsoft Edge](https://docs.microsoft.com/microsoft-edge/deploy/microsoft-edge-kiosk-mode-deploy#supported-configuration-types).
 
       > [!NOTE]
-      > Essa configuração permite que o navegador Microsoft Edge no dispositivo. Para definir configurações específicas da Microsoft Edge, criar um perfil de configuração do dispositivo (**configuração do dispositivo** > **perfis** > **criar perfil**  >  **Windows 10** para a plataforma > **restrições de dispositivo** >  **navegador Microsoft Edge**). [Navegador Microsoft Edge](device-restrictions-windows-10.md#microsoft-edge-browser) lista e descreve as configurações disponíveis.
+      > Essa configuração habilita o navegador Microsoft Edge no dispositivo. Para definir configurações específicas do Microsoft Edge, crie um perfil de configuração do dispositivo (**Configuração do Dispositivo** > **Perfis** > **Criar perfil** > **Windows 10** para plataforma > **Restrições de Dispositivo** >  **Navegador Microsoft Edge**). O [Navegador Microsoft Edge](device-restrictions-windows-10.md#microsoft-edge-browser) lista e descreve as configurações disponíveis.
 
       Selecione **OK** para salvar suas alterações.
 
@@ -165,18 +164,18 @@ Os aplicativos nesse modo estão disponíveis no menu Iniciar. Esses aplicativos
 
       - **Nome do aplicativo**: necessário. Insira um nome para o aplicativo.
       - **Caminho local**: necessário. Insira o caminho para o executável, como `C:\Program Files (x86)\Microsoft VS Code\Code.exe` ou `C:\Program Files (x86)\Google\Chrome\Application\chrome.exe`.
-      - **AUMID (ID do modelo de usuário do aplicativo)**: insira a AUMID (ID do modelo de usuário do aplicativo) do aplicativo Win32. Essa configuração determina o layout inicial do bloco na área de trabalho. Para obter essa ID, consulte [Get-StartApps](https://docs.microsoft.com/powershell/module/startlayout/get-startapps?view=win10-ps).
+      - **AUMID (ID do modelo de usuário do aplicativo)** : insira a AUMID (ID do modelo de usuário do aplicativo) do aplicativo Win32. Essa configuração determina o layout inicial do bloco na área de trabalho. Para obter essa ID, consulte [Get-StartApps](https://docs.microsoft.com/powershell/module/startlayout/get-startapps?view=win10-ps).
 
       Selecione **OK** para salvar suas alterações.
 
     - **Adicionar por AUMID**: use esta opção para adicionar aplicativos básicos do Windows, como o Bloco de Notas ou a Calculadora. Insira as seguintes propriedades:
 
       - **Nome do aplicativo**: necessário. Insira um nome para o aplicativo.
-      - **Modelo de usuário do aplicativo AUMID (ID)**: necessário. Insira a ID do modelo do usuário do aplicativo (AUMID) do aplicativo do Windows. Para obter a ID, confira [Encontrar a ID do modelo de usuário de um aplicativo instalado](https://docs.microsoft.com/windows-hardware/customize/enterprise/find-the-application-user-model-id-of-an-installed-app).
+      - **Modelo de usuário do aplicativo AUMID (ID)** : necessário. Insira a ID do modelo do usuário do aplicativo (AUMID) do aplicativo do Windows. Para obter a ID, confira [Encontrar a ID do modelo de usuário de um aplicativo instalado](https://docs.microsoft.com/windows-hardware/customize/enterprise/find-the-application-user-model-id-of-an-installed-app).
 
       Selecione **OK** para salvar suas alterações.
 
-    - **AutoLaunch**: opcional. Escolha um aplicativo para AutoLaunch quando o usuário faz logon. Apenas um único aplicativo pode ser AutoLaunched.
+    - **AutoLaunch**: opcional. Escolha um aplicativo para AutoLaunch quando o usuário entra. É possível definir AutoLaunch apenas para um único aplicativo.
     - **Tamanho do bloco**: necessário. Escolha um tamanho de bloco de aplicativo: Pequeno, Médio, Largo ou Grande.
 
   > [!TIP]
@@ -186,7 +185,7 @@ Os aplicativos nesse modo estão disponíveis no menu Iniciar. Esses aplicativos
 
 - **Barra de tarefas do Windows**: escolha **Exibir** ou **Ocultar** a barra de tarefas. Por padrão, a barra de tarefas não é exibida. Ícones, como o ícone de Wi-Fi, são mostrados, mas as configurações não podem ser alteradas pelos usuários finais.
 
-- **Permitir o acesso à pasta de Downloads**: escolha **Sim** para permitir que os usuários acessem a pasta Downloads no Windows Explorer. Por padrão, o acesso à pasta de Downloads está desabilitado. Esse recurso é comumente usado para os usuários finais para acessar itens baixados em um navegador.
+- **Permitir Acesso à Pasta de Downloads**: escolha **Sim** para permitir que os usuários acessem a pasta Downloads no Windows Explorer. Por padrão, o acesso à pasta de Downloads está desabilitado. Esse recurso é comumente usado para os usuários finais para acessar itens baixados de um navegador.
 
 Selecione **OK** para salvar suas alterações.
 

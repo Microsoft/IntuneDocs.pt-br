@@ -7,7 +7,6 @@ ms.author: mandia
 manager: dougeby
 ms.date: 10/24/2018
 ms.topic: reference
-ms.prod: ''
 ms.service: microsoft-intune
 ms.localizationpriority: medium
 ms.technology: ''
@@ -15,12 +14,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 44be460ee910818d52179da55151d1bceeb8b306
-ms.sourcegitcommit: 25e6aa3bfce58ce8d9f8c054bc338cc3dff4a78b
-ms.translationtype: MTE75
+ms.openlocfilehash: 5f1935ff839b9e2aa97d002bd98d1f5dac87c390
+ms.sourcegitcommit: 916fed64f3d173498a2905c7ed8d2d6416e34061
+ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57565903"
+ms.lasthandoff: 05/23/2019
+ms.locfileid: "66043047"
 ---
 # <a name="use-custom-settings-for-windows-10-devices-in-intune"></a>Usar configurações personalizadas para dispositivos Windows 10 no Intune
 
@@ -83,7 +82,7 @@ Há uma lista completa de todos os CSPs (provedores de serviço de configuraçã
 
 Nem todas as configurações são compatíveis com todas as versões do Windows 10. A [Referência de provedor de serviços de configuração](https://msdn.microsoft.com/windows/hardware/commercialize/customize/mdm/configuration-service-provider-reference) informa quais versões são compatíveis com cada CSP.
 
-Além disso, o Intune não dá suporte a todas as configurações listadas em [Referência do provedor de serviço de configuração](https://msdn.microsoft.com/windows/hardware/commercialize/customize/mdm/configuration-service-provider-reference). Para saber se o Intune é compatível com a configuração desejada, abra o artigo dessa configuração. Cada página de configuração mostra a operação com suporte correspondente. Para trabalhar com o Intune, a configuração deve oferecer suporte às operações **Adicionar**, **Substituir** ou **Obter**. Se o valor retornado pela **Obtenha** operação não corresponde ao valor fornecido pelo **Add** ou **substituir** operações e, em seguida, Intune relatará um erro de conformidade.
+Além disso, o Intune não dá suporte a todas as configurações listadas em [Referência do provedor de serviço de configuração](https://msdn.microsoft.com/windows/hardware/commercialize/customize/mdm/configuration-service-provider-reference). Para saber se o Intune é compatível com a configuração desejada, abra o artigo dessa configuração. Cada página de configuração mostra a operação com suporte correspondente. Para trabalhar com o Intune, a configuração deve oferecer suporte às operações **Adicionar**, **Substituir** ou **Obter**. Se o valor retornado pela operação **Get** não corresponder ao valor fornecido pelas operações **Add** ou **Replace**, o Intune relatará um erro de conformidade.
 
 ## <a name="next-steps"></a>Próximas etapas
 

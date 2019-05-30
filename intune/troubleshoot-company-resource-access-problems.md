@@ -1,13 +1,12 @@
 ---
 title: Códigos de erro e de status no Microsoft Intune – Azure | Microsoft Docs
-description: Ver uma lista dos erros, o código de status, descrições e as resoluções com o MDM dispositivos gerenciados, obtendo acesso aos recursos da empresa, erros em dispositivos iOS e erros de resposta do OMA no Microsoft Intune.
+description: Veja uma lista dos erros, código de status, descrições e resoluções ao usar dispositivos gerenciados MDM, obter acesso a recursos da empresa, erros em dispositivos iOS e erros de resposta do OMA no Microsoft Intune.
 keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
 ms.date: 03/20/2019
 ms.topic: troubleshooting
-ms.prod: ''
 ms.service: microsoft-intune
 ms.localizationpriority: medium
 ms.technology: ''
@@ -17,18 +16,18 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: ''
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 2e4d2b940a0079794c5b17e8d1c1900f630d14cd
-ms.sourcegitcommit: 464cf677e3746eaba46836dedfb94572a75032f9
+ms.openlocfilehash: 36d21c0b80a2737be39bbee2399f6005c43edc43
+ms.sourcegitcommit: 916fed64f3d173498a2905c7ed8d2d6416e34061
 ms.translationtype: MTE75
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/21/2019
-ms.locfileid: "58330471"
+ms.lasthandoff: 05/23/2019
+ms.locfileid: "66040423"
 ---
-# <a name="common-error-codes-and-descriptions-in-microsoft-intune"></a>Códigos de erro comuns e as descrições no Microsoft Intune
+# <a name="common-error-codes-and-descriptions-in-microsoft-intune"></a>Códigos de erro comuns e descrições no Microsoft Intune
 
-Este artigo lista os erros comuns, códigos de status, descrições e soluções possíveis ao acessar recursos da organização. Use essas informações para ajudar a solucionar problemas de acesso ao usar o Microsoft Intune.
+Este artigo lista os erros comuns, códigos de status, descrições e soluções possíveis ao acessar recursos da organização. Use estas informações para ajudar a solucionar problemas de acesso ao usar o Microsoft Intune.
 
-Se você precisar dar suporte a Ajuda, consulte [obter suporte para o Microsoft Intune](get-support.md).
+Se você precisar de ajuda do suporte, veja [obter suporte para o Microsoft Intune](get-support.md).
 
 ## <a name="status-codes-for-mdm-managed-windows-devices"></a>Códigos de status de dispositivos Windows gerenciados pelo MDM
 
@@ -387,4 +386,4 @@ Se você precisar dar suporte a Ajuda, consulte [obter suporte para o Microsoft 
 
 ## <a name="next-steps"></a>Próximas etapas
 
-Entre em contato com o Microsoft Support para [obter suporte para o Microsoft Intune](get-support.md).
+Entre em contato com o Suporte da Microsoft para [obter suporte para o Microsoft Intune](get-support.md).

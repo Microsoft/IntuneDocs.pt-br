@@ -7,7 +7,6 @@ ms.author: mandia
 manager: dougeby
 ms.date: 01/15/2019
 ms.topic: reference
-ms.prod: ''
 ms.service: microsoft-intune
 ms.localizationpriority: medium
 ms.technology: ''
@@ -15,12 +14,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 94f907ee8805c5f0559e8751a7cd69bacf1612ee
-ms.sourcegitcommit: 25e6aa3bfce58ce8d9f8c054bc338cc3dff4a78b
+ms.openlocfilehash: 647e1cd6925df27d42186599ad6786e866742b44
+ms.sourcegitcommit: 916fed64f3d173498a2905c7ed8d2d6416e34061
 ms.translationtype: MTE75
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57565496"
+ms.lasthandoff: 05/23/2019
+ms.locfileid: "66042273"
 ---
 # <a name="android-device-settings-to-configure-email-authentication-and-synchronization-in-intune"></a>Configurações de dispositivo do Android para configurar o email, a autenticação e a sincronização no Intune
 
@@ -52,9 +51,9 @@ Para saber mais sobre perfis de email no Intune, confira [definir as configuraç
       Ao escolher usar atributos **Personalizados**, insira:
       - **Nome de domínio personalizado a ser usado**: insira um valor que o Intune usará para o nome de domínio, como `contoso.com` ou `contoso`
 
-- **Atributo de endereço de email do AAD**: esse nome é o atributo de email Intune obtém do Azure AD. O Intune gera dinamicamente o endereço de email que é usado por esse perfil. Suas opções:
+- **Atributo de endereço de email do AAD**: esse nome é o atributo de email que o Intune recebe do Azure AD. O Intune gera dinamicamente o endereço de email que é usado por esse perfil. Suas opções:
   - **Nome UPN**: use o nome completo da entidade de segurança, como `user1@contoso.com` ou `user1`, como o endereço de email.
-  - **Endereço SMTP primário**: usa o endereço SMTP primário, tais como `user1@contoso.com`, para entrar no Exchange.
+  - **Endereço SMTP primário**: use o endereço SMTP primário, como `user1@contoso.com`, para entrar no Exchange.
 
 - **Método de autenticação**: selecione **Nome de Usuário e Senha** ou **Certificados** como o método de autenticação usado pelo perfil de email.
   - Se você selecionar **Certificado**, selecione um perfil de certificado SCEP ou PKCS de cliente que você já criou para autenticar a conexão com o Exchange.
