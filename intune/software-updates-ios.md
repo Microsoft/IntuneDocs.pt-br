@@ -12,12 +12,12 @@ ms.localizationpriority: high
 ms.technology: ''
 search.appverid: MET150
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: cf07f942feeab0a73c01625f90c04ec3b989c1c2
-ms.sourcegitcommit: 916fed64f3d173498a2905c7ed8d2d6416e34061
+ms.openlocfilehash: 5a5c9dea847ace51c7d6f06cfa43c44beead18f8
+ms.sourcegitcommit: 78ae22b1a7cb221648fc7346db751269d9c898b1
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/23/2019
-ms.locfileid: "66044847"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66373426"
 ---
 # <a name="add-ios-software-update-policies-in-intune"></a>Adicionar políticas de atualização de software do iOS no Intune
 
@@ -31,7 +31,7 @@ O dispositivo faz check-in no Intune aproximadamente a cada 8 horas. Se uma atua
 
 ## <a name="configure-the-policy"></a>Configurar a política
 
-1. No [portal do Azure](https://portal.azure.com), selecione **Todos os serviços** > filtre por **Intune** > selecione **Intune**.
+1. Conecte-se ao [Intune](https://go.microsoft.com/fwlink/?linkid=2090973).
 2. Selecione **Atualizações de software** > **Atualizar as políticas do iOS** > **Criar**.
 3. Insira as seguintes configurações:
 
@@ -51,7 +51,7 @@ O dispositivo faz check-in no Intune aproximadamente a cada 8 horas. Se uma atua
       - **Hora de início**: escolha a hora de início do período restrito. Por exemplo, insira 5h para que as atualizações não sejam instaladas a partir de 5h.
       - **Hora de término**: escolha a hora de término do período restrito. Por exemplo, insira 1h para que as atualizações possam ser instaladas a partir de 1h.
 
-    - **Atrasar a visibilidade de atualizações de software para usuários finais sem alterações em atualizações agendadas (dias)**: 
+    - **Atrasar a visibilidade de atualizações de software para usuários finais sem alterações em atualizações agendadas (dias)** : 
 
       **essa configuração foi movida para [Restrições do dispositivo](device-restrictions-ios.md#general). Ela será removida deste local no portal**. Por um período breve, as políticas existentes poderão ser alteradas aqui. Após cerca de um mês, essa configuração será removida das políticas existentes.
 

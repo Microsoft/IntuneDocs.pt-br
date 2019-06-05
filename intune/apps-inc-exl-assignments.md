@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: eb55951390c3fe19651087e16c3185018cfd9dab
-ms.sourcegitcommit: 916fed64f3d173498a2905c7ed8d2d6416e34061
+ms.openlocfilehash: c8353cf2f0c24c3a894fa219df9fc9a8272e17af
+ms.sourcegitcommit: f90cba0b2c2672ea733052269bcc372a80772945
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/23/2019
-ms.locfileid: "66049299"
+ms.lasthandoff: 05/31/2019
+ms.locfileid: "66454076"
 ---
 # <a name="include-and-exclude-app-assignments-in-microsoft-intune"></a>Incluir e excluir atribuições de aplicativo no Microsoft Intune
 
@@ -44,9 +44,8 @@ O Intune não considera a associação de usuário a dispositivo ao excluir grup
 
 ## <a name="include-and-exclude-groups-when-assigning-apps"></a>Incluir e excluir grupos ao atribuir aplicativos 
 Para atribuir um aplicativo a grupos usando a atribuição de incluir e excluir:
-1. Entre no [Portal do Azure](https://portal.azure.com).
-2. Selecione **Todos os serviços** > **Intune**. O Intune está localizado na seção **Monitoramento + Gerenciamento**.
-3. No menu **Intune**, selecione **Aplicativos clientes**.
+1. Conecte-se ao [Intune](https://go.microsoft.com/fwlink/?linkid=2090973).
+3. No painel **Intune**, selecione **Aplicativos clientes**.
 4. No painel **Aplicativos clientes**, selecione **Aplicativos**. A lista de aplicativos adicionados é mostrada.
 5. Selecione o aplicativo que você deseja atribuir. Um painel exibe informações sobre o aplicativo. 
 6. Na seção **Gerenciar** do menu, selecione **Atribuições**. 
@@ -76,7 +75,7 @@ Para atribuir um aplicativo a grupos usando a atribuição de incluir e excluir:
 
 Ao fazer atribuições de grupo, grupos que já foram atribuídos não estarão disponíveis para modificação. Se você quiser selecionar um grupo que não esteja disponível no momento, remova o aplicativo da lista atribuída do aplicativo. 
 
-Para editar atribuições na lista **Atribuições** do aplicativo, selecione a linha que contém a atribuição específica que você deseja alterar. Você também pode remover uma atribuição selecionando as reticências (**…**) no final de uma linha e selecionando **Remover**. Para alterar a exibição da lista **Atribuições**, agrupe por **Tipo de atribuição** ou por **Incluído/Excluído**.
+Para editar atribuições na lista **Atribuições** do aplicativo, selecione a linha que contém a atribuição específica que você deseja alterar. Você também pode remover uma atribuição selecionando as reticências ( **…** ) no final de uma linha e selecionando **Remover**. Para alterar a exibição da lista **Atribuições**, agrupe por **Tipo de atribuição** ou por **Incluído/Excluído**.
 
 ![Atribuições de aplicativo do Intune – Concluir](./media/apps-inc-exl-05.png)
 

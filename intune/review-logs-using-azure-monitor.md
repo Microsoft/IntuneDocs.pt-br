@@ -15,12 +15,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 803d556150d60d0a3d60ec03c029d65f0f935f67
-ms.sourcegitcommit: 916fed64f3d173498a2905c7ed8d2d6416e34061
+ms.openlocfilehash: 8d13cb9fed28bb759007f1be1cb6df6139c19d3b
+ms.sourcegitcommit: 063177c6c365fef3642edd7c455790958469aad9
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/23/2019
-ms.locfileid: "66045285"
+ms.lasthandoff: 05/30/2019
+ms.locfileid: "66412705"
 ---
 # <a name="send-log-data-to-storage-event-hubs-or-log-analytics-in-intune-preview"></a>Enviar dados de log para o armazenamento, hubs de eventos ou análises de log no Intune (versão prévia)
 
@@ -53,7 +53,7 @@ Dependendo de onde você deseja rotear os dados de log de auditoria, serão nece
 
 ## <a name="send-logs-to-azure-monitor"></a>Enviar logs ao Azure Monitor
 
-1. No [portal do Azure](https://portal.azure.com/), selecione **Todos os serviços** > filtre por **Intune** > selecione **Intune**.
+1. Conecte-se ao [Intune](https://go.microsoft.com/fwlink/?linkid=2090973).
 2. Em **Monitoramento**, escolha **Configurações de diagnóstico**. Ative-a quando abri-la pela primeira vez:
 
     ![Ativar as configurações de diagnóstico no Intune para enviar logs ao Azure Monitor](media/diagnostics-settings-turn-on.png)
@@ -101,7 +101,7 @@ Também é possível exportar os logs de auditoria em outras partes do Intune, i
 
 Por exemplo, para exportar os logs de auditoria ao usar a conformidade do dispositivo:
 
-1. No [portal do Azure](https://portal.azure.com/), selecione **Todos os serviços** > filtre por **Intune** > selecione **Intune**.
+1. Conecte-se ao [Intune](https://go.microsoft.com/fwlink/?linkid=2090973).
 2. Selecione **Conformidade do dispositivo** > **Monitor** > **Logs de auditoria**:
 
     ![escolha logs de auditoria para rotear dados do Intune para o armazenamento, os hubs de eventos ou a análise do Azure Monitor](media/audit-logs-under-monitor-in-compliance.png)
