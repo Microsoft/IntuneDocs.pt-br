@@ -7,36 +7,14 @@ ms.topic: include
 ms.date: 03/28/2019
 ms.author: erikje
 ms.custom: include file
-ms.openlocfilehash: ffcef5b4d78856709f8563ee1f667ec7e5d993b3
-ms.sourcegitcommit: d2e04a38e024b0f5afb0ca202823227de9da3ad1
+ms.openlocfilehash: 1073a38da8a5b2467b1ff8c97b32b93f92e34e4c
+ms.sourcegitcommit: f90cba0b2c2672ea733052269bcc372a80772945
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/09/2019
-ms.locfileid: "65732596"
+ms.lasthandoff: 05/31/2019
+ms.locfileid: "66454137"
 ---
 Esses avisos fornecem informações importantes que podem ajudar você a se preparar para os recursos e as alterações futuras do Intune. 
-
-### <a name="change-in-enrollment-workflow-with-intune-company-portal-on-corporate-ios-devices-authenticating-with-setup-assistant----1927359---"></a>Alteração no fluxo de trabalho de registro no Portal da Empresa do Intune de dispositivos iOS corporativos com autenticação no Assistente de Configuração <!-- 1927359 -->
-Há uma alteração futura no fluxo de trabalho para o registro de dispositivos iOS por meio dos métodos de registro de dispositivo corporativo da Apple, tais como Apple Configurator, Apple Business Manager, Apple School Manager ou o DEP (Programa de registro de dispositivos da Apple), ao usar o Assistente de Configuração para autenticação. Essa alteração se aplica somente a dispositivos registrados com afinidade de usuário.
-
-#### <a name="how-does-this-affect-me"></a>Como isso me afeta?
-Quando essa alteração for distribuída, os perfis de registro no Intune no portal do Azure serão atualizados para que você possa especificar como os dispositivos são autenticados e se o usuário recebe o aplicativo Portal da Empresa. Haverá um fluxo de trabalho aperfeiçoado para registrar dispositivos iOS por meio dos métodos listados acima. 
-
-- Ao registrar novos dispositivos e fazer a autenticação no Assistente de Configuração, você poderá escolher se deseja ou não implantar o aplicativo Portal da Empresa automaticamente. Os usuários finais não verão a tela "Identifique seu dispositivo" e a tela "Confirmar seu dispositivo" no fluxo de registro.  
-- Em dispositivos já registrados por meio do Assistente de Configuração com um dos métodos de registro de dispositivo corporativo da Apple, você deve tomar providências caso deseje habilitar o Acesso Condicional. Você precisará [configurar uma política de configuração de aplicativo](https://aka.ms/enrollment_setup_assistant) com um xml específico para enviar por push o Portal da Empresa para esses dispositivos.  Se você optar por enviar por push o Portal da Empresa dessa maneira, os usuários finais não verão a tela "Identifique seu dispositivo" e a tela "Confirmar seu dispositivo" no fluxo de registro. 
-- Depois que essa alteração for distribuída, se você não tiver implantado o Portal da Empresa com o perfil de configuração do aplicativo mencionado acima, e se os usuários finais baixarem o aplicativo Portal da Empresa na App Store, eles poderão entrar, mas receberão uma mensagem de erro. Eles não conseguirão usar o aplicativo para Acesso Condicional. 
-
-#### <a name="what-do-i-need-to-do-to-prepare-for-this-change"></a>O que preciso fazer para me preparar para essa alteração?
-Se você pretende usar o fluxo de trabalho modificado, convém atualizar suas diretrizes do usuário final para indicar que:
-
-- Os usuários finais não verão mais as duas telas mencionadas acima no fluxo de registro. 
-- Será necessário entrar no Portal da Empresa quando ele for implantado automaticamente, e não baixá-lo da loja de aplicativos. 
-
-Agora você pode optar por criar uma política de configuração de aplicativo, se necessário, em preparação para essa alteração. Quando esse novo fluxo de trabalho for distribuído, você verá os perfis de registro atualizados no console. Você também será informado dessa distribuição por meio do Centro de Mensagens. Em seguida, você precisará executar a ação para que os usuários finais possam se registrar pelo DEP por meio da autenticação com o Assistente de Configuração e você possa usar o Portal da Empresa para Acesso Condicional.
-
-#### <a name="additional-information"></a>Informações adicionais 
-[https://aka.ms/enrollment_setup_assistant](https://aka.ms/enrollment_setup_assistant)
-
 
 ### <a name="update-your-android-company-portal-app-to-the-latest-version---4536963--"></a>Atualize o aplicativo Portal da Empresa para Android para a versão mais recente <!--4536963-->
 Periodicamente o Intune lança atualizações para o aplicativo Portal da Empresa para Android. Em novembro de 2018, lançamos uma atualização do Portal da Empresa, que incluiu um comutador de back-end para preparar para a alteração do Google da plataforma de notificação existente do FCM (Firebase Cloud Messaging) da Google. Quando o Google desativar a plataforma de notificação existente e migrar para o FCM, os usuários finais precisarão atualizar o aplicativo Portal da Empresa pelo menos até novembro de 2018 para continuar a se comunicar com a Google Play Store.
@@ -49,3 +27,16 @@ Peça aos usuários finais de dispositivos Android que não atualizaram para atu
 
 #### <a name="additional-information"></a>Informações adicionais
 https://firebase.google.com/docs/cloud-messaging/
+
+
+### <a name="new-fullscreen-experience-coming-to-intune---4593669--"></a>Nova experiência de tela inteira em breve no Intune <!--4593669-->
+Estamos lançando experiências atualizadas do Intune para criar e editar a IU no portal do Azure. Essa nova experiência simplificará os fluxos de trabalho existentes, usando um formato de estilo de assistente condensado dentro de uma folha. Essa atualização eliminará a "expansão da folha" ou fluxos de criação e edição que exijam fazer drill down em jornadas de folha profundas. Atualizaremos também os fluxos de trabalho de criação para incluir Atribuições (exceto atribuição de aplicativo).
+
+#### <a name="how-does-this-affect-me"></a>Como isso me afeta?
+A experiência de tela inteira será implantada no Intune, em portal.azure.com e devicemanagement.microsoft.com, durante os próximos meses. Essa atualização na interface do usuário não afetará a funcionalidade dos perfis e das políticas existentes, mas a aparência do fluxo de trabalho mudará ligeiramente. Por exemplo, ao criar novas políticas, você poderá definir algumas atribuições como parte desse fluxo, em vez de fazer isso após a criação da política. Confira a postagem no blog em "Informações adicionais" para ver capturas de tela com a nova aparência no console.
+
+#### <a name="what-can-i-do-to-prepare-for-this-change"></a>O que posso fazer para me preparar para essa alteração?
+Você não precisa fazer nada, mas é possível atualizar as diretrizes para profissionais de TI, caso necessário. Atualizaremos nossa documentação no portal do Azure, à medida que lançarmos essa experiência em várias folhas do Intune.
+
+#### <a name="additional-information"></a>Informações adicionais 
+https://aka.ms/intune_fullscreen
