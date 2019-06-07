@@ -5,7 +5,7 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 04/18/2019
+ms.date: 05/29/2019
 ms.topic: reference
 ms.service: microsoft-intune
 ms.localizationpriority: medium
@@ -14,12 +14,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure; seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 18f8e072037d0ca9065201e0d0db2a9a2f6074ce
-ms.sourcegitcommit: 0f771585d3556c0af14500428d5c4c13c89b9b05
-ms.translationtype: HT
+ms.openlocfilehash: 2950ddf4b130222e23fd9ea23f7c9e5793f8638a
+ms.sourcegitcommit: 229816afef86a9767eaca816d644c77ec4babed5
+ms.translationtype: MTE75
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/23/2019
-ms.locfileid: "66174201"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66354215"
 ---
 # <a name="windows-10-and-newer-device-settings-to-allow-or-restrict-features-using-intune"></a>Configurações de dispositivo Windows 10 (e mais recente) para permitir ou restringir recursos usando o Intune
 
@@ -58,6 +58,24 @@ Essas configurações usam o [CSP da política ApplicationManagement](https://do
 - **Instalar aplicativos na unidade do sistema**: **Bloquear** impede que os aplicativos sejam instalados na unidade do sistema do dispositivo. **Não configurado** (padrão) permite que os aplicativos sejam instalados no volume de disco do sistema.
 - **DVR de jogos** (somente desktop): **Bloquear** desabilita a gravação e a difusão de Jogos do Windows. **Não configurado** (padrão) permite a gravação e a difusão de jogos.
 - **Somente aplicativos da Loja**: **Exigir** força os usuários finais a instalarem somente aplicativos da Windows Store. **Não configurado** permite aos usuários finais instalar aplicativos de locais que não sejam a Windows Store.
+- **Forçar a reinicialização de aplicativos em caso de falha de atualização**: quando um aplicativo está em uso, não pode ser atualizado. Use essa configuração para forçar um aplicativo a reiniciar. **Não configurado** (padrão) não força a reinicialização dos aplicativos. **Exigir** permite que os administradores forcem a reinicialização em uma data e hora específicas ou em um agendamento recorrente. Quando definido como **Exigir**, também insira:
+
+  - **Data/hora de início**: escolha uma data específica e hora para reiniciar os aplicativos.
+  - **Recorrência**: escolha se é para reiniciar diariamente, semanalmente ou mensalmente.
+
+  [ApplicationManagement/ScheduleForceRestartForUpdateFailures CSP](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-applicationmanagement#applicationmanagement-scheduleforcerestartforupdatefailures)
+
+- **Controle de usuário sobre instalações**: quando definido como **Não configurado** (padrão), o Windows Installer impede que usuários alterem as opções de instalação normalmente reservadas para os administradores do sistema, como inserir o diretório para instalar os arquivos. **Bloquear** permite aos usuários alterar essas opções de instalação e alguns dos recursos de segurança do Windows Installer são ignorados.
+
+  [ApplicationManagement/MSIAllowUserControlOverInstall CSP](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-applicationmanagement#applicationmanagement-msiallowusercontroloverinstall)
+
+- **Instalar aplicativos com privilégios elevados**: quando definido como **Não configurado** (padrão), o sistema aplica as permissões do usuário atual ao instalar programas que um administrador do sistema não implanta ou oferece. **Bloquear** direciona o Windows Installer para usar permissões elevadas ao instalar algum programa em um sistema. Esses privilégios são estendidos para todos os programas.
+
+  [ApplicationManagement/MSIAlwaysInstallWithElevatedPrivileges CSP](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-applicationmanagement#applicationmanagement-msialwaysinstallwithelevatedprivileges)
+
+- **Aplicativos de inicialização**: insira uma lista de aplicativos a abrir depois que um usuário fizer logon no dispositivo. Certifique-se de usar uma lista delimitada por ponto-e-vírgula dos PFN (Nomes da família de pacotes) de aplicativos do Windows. Para esta política funcionar, o manifesto nos aplicativos do Windows deve usar uma tarefa de inicialização.
+
+  [ApplicationManagement/LaunchAppAfterLogOn CSP](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-applicationmanagement#applicationmanagement-launchappafterlogon)
 
 Selecione **OK** para salvar suas alterações.
 
@@ -408,6 +426,10 @@ Essas configurações usam o [CSP da política de DeviceLock](https://docs.micro
     - **Numérica**: a senha só pode conter números.
     - **Alfanumérica**: a senha precisa ser uma mistura de letras e números.
   - **Tamanho mínimo da senha**: insira o número mínimo de caracteres necessários, de 4 a 16. Por exemplo, digite `6` exigir um comprimento de senha de pelo menos seis caracteres.
+  
+    > [!IMPORTANT]
+    > Quando o requisito de senha é alterado em uma área de trabalho do Windows, os usuários são afetados na próxima vez que fizerem logon, como quando o dispositivo passa de ocioso para ativo. Os usuários com senhas que atendam ao requisito ainda serão solicitados a alterar suas senhas.
+    
   - **Número de falhas de conexão antes de apagar o dispositivo**: insira o número de falhas de autenticação repetidas permitidas antes de o dispositivo ser apagado, de 1 a 11. `0` (zero) pode desabilitar a funcionalidade de apagamento do dispositivo.
 
     Essa configuração tem um impacto diferente, dependendo da edição. Para obter detalhes específicos, consulte o [CSP de DeviceLock/MaxDevicePasswordFailedAttempts](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-devicelock#devicelock-maxdevicepasswordfailedattempts).
@@ -755,7 +777,7 @@ Essas configurações usam o [CSP da política do Defender](https://docs.microso
 
   Para obter mais informações sobre aplicativos potencialmente indesejados, consulte [Detectar e bloquear aplicativos potencialmente indesejados](https://docs.microsoft.com/windows/threat-protection/windows-defender-antivirus/detect-block-potentially-unwanted-apps-windows-defender-antivirus).
 
-- **Ações sobre ameaças de malware detectadas**: escolha as ações que o Defender deve realizar para cada nível de ameaça detectada: baixa, moderada, alta e grave. Suas opções:
+- **Ações sobre ameaças de malware detectadas**: escolha as ações que o Defender deve realizar para cada nível de ameaça detectada: baixa, moderada, alta e grave. Se não for possível, o Windows Defender escolhe a melhor opção para garantir que a ameaça seja corrigida. Suas opções:
   - **Apagar**
   - **Quarentena**
   - **Removerr**

@@ -1,11 +1,11 @@
 ---
 title: Solucionar problemas de perfis de email no Microsoft Intune – Azure | Microsoft Docs
-description: Problemas com o perfil de email e como resolvê-los.
+description: Consulte os problemas comuns e soluções para perfis de email no Microsoft Intune, incluindo perfis de email duplicados e erros em dispositivos Android Samsung KNOX Standard.
 keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 6/14/2018
+ms.date: 05/29/2019
 ms.topic: troubleshooting
 ms.service: microsoft-intune
 ms.localizationpriority: medium
@@ -17,20 +17,39 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: ef84241f72f34e0f00516702d0928e0395478929
-ms.sourcegitcommit: 916fed64f3d173498a2905c7ed8d2d6416e34061
+ms.openlocfilehash: e0fe37deb63457fef869df0f7263970a4e53cb29
+ms.sourcegitcommit: a97b6139770719afbd713501f8e50f39636bc202
 ms.translationtype: MTE75
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/23/2019
-ms.locfileid: "66044654"
+ms.lasthandoff: 05/30/2019
+ms.locfileid: "66402717"
 ---
-# <a name="troubleshoot-email-profiles-in-microsoft-intune"></a>Solucionar problemas de perfis de email no Microsoft Intune
+# <a name="common-issues-and-resolutions-with-email-profiles-in-microsoft-intune"></a>Problemas comuns e soluções para perfis de dispositivo no Microsoft Intune
 
 Analise alguns problemas comuns relacionados ao perfil de email e como resolvê-los.
 
-Caso essas informações não ajudem, [obtenha também o suporte para o Microsoft Intune](get-support.md).
+## <a name="device-already-has-an-email-profile-installed"></a>O dispositivo já tem um perfil de email instalado
+
+Se os usuários criarem um perfil de email antes do registro no Intune, o perfil de email do Intune pode não funcionar como esperado:
+
+- **iOS**: o Intune detecta um perfil de email existente e duplicado com base no nome do host e endereço de email. O perfil de email criado pelo usuário bloqueia a implantação do perfil criado pelo Intune. Esse é um problema comum, pois usuários do iOS normalmente criam um perfil de email e, depois, se registram. O aplicativo Portal da Empresa informa que o usuário não está em conformidade e pode solicitar que o usuário remova o perfil de email.
+
+  O usuário deve remover seu perfil de email para que seja possível implantar o perfil do Intune. Para evitar esse problema, instrua os usuários a registrar e permitir que o Intune implante o perfil. Depois os usuários podem criar seu perfil de email.
+
+- **Windows**: o Intune detecta um perfil de email existente e duplicado com base no nome do host e endereço de email. O Intune substitui o perfil de email existente criado pelo usuário.
+
+- **Samsung KNOX Standard**: o Intune identifica uma conta de email duplicada com base no endereço de email e depois a substitui pelo perfil do Intune. Se o usuário configurar essa conta, ela será substituída novamente pelo perfil do Intune. Isso pode causar alguma confusão ao usuário cuja configuração de conta for substituída.
+
+O Samsung KNOX não usa o nome do host para identificar o perfil. É recomendável que você não crie vários perfis de email para implantar no mesmo endereço de email em diferentes hosts, pois eles substituirão uns aos outros.
+
+## <a name="error-0x87d1fde8-for-knox-standard-device"></a>Erro 0x87D1FDE8 para dispositivo KNOX Standard
+
+**Problema**: depois de criar e implantar um perfil de email do Exchange Active Sync para Samsung KNOX Standard em diferentes dispositivos Android, os erros **0x87D1FDE8** ou **falha na correção** surgem na guia de propriedades do dispositivo > política.
+
+Examine a configuração do seu perfil de EAS para Samsung KNOX e a política de origem. Não há suporte para a opção de sincronização das Samsung Notes e essa opção não deve estar selecionada em seu perfil. Certifique-se de que os dispositivos tenham tempo suficiente para processar a política, até 24 horas.
 
 ## <a name="unable-to-send-images-from--email-account"></a>Não é possível enviar imagens da conta de email
+
 Aplica-se ao Intune no portal clássico do Azure.
 
 Os usuários que têm contas de email configuradas automaticamente não podem enviar imagens de seus dispositivos. Esse cenário pode ocorrer se a opção **Permitir que o email seja enviado de aplicativos de terceiros** não estiver habilitada.
@@ -53,22 +72,6 @@ Os usuários que têm contas de email configuradas automaticamente não podem en
 
 4. Na guia **Configurações de Sincronização**, selecione **Permitir que o email seja enviado de aplicativos de terceiros**.
 
-## <a name="device-already-has-an-email-profile-installed"></a>O dispositivo já tem um perfil de email instalado
-
-Se o usuário instalou um perfil de email antes de provisionar um perfil do Intune, o resultado da implantação do perfil de email do Intune dependerá da plataforma do dispositivo:
-
-- **iOS**: o Intune detecta um perfil de email existente e duplicado com base no nome do host e endereço de email. O perfil de email duplicado criado pelo usuário bloqueia a implantação de um perfil criado pelo administrador do Intune. Esse é um problema comum, pois usuários do iOS normalmente criam um perfil de email e, depois, se registram. O portal da empresa atualiza o usuário de que ele não está em conformidade devido ao seu perfil de email configurado manualmente e solicita que o usuário remova esse perfil. O usuário deve remover seu perfil de email para que o perfil do Intune possa ser implantado. Para evitar esse problema, instrua os usuários a registrar e permitir que o Intune implante o perfil. Em seguida, instale o perfil de email criado pelo usuário.
-
-- **Windows**: o Intune detecta um perfil de email existente e duplicado com base no nome do host e endereço de email. O Intune substitui o perfil de email existente criado pelo usuário.
-
-- **Samsung KNOX Standard**: o Intune identifica uma conta de email duplicada com base no endereço de email e depois a substitui pelo perfil do Intune. Se o usuário configurar essa conta, ela será substituída novamente pelo perfil do Intune. Isso pode causar alguma confusão ao usuário cuja configuração de conta for substituída.
-
-O Samsung KNOX não usa o nome do host para identificar o perfil. É recomendável que você não crie vários perfis de email para implantar no mesmo endereço de email em hosts diferentes, pois eles substituirão uns aos outros.
-
-## <a name="error--0x87d1fde8-for-knox-standard-device"></a>Erro 0x87D1FDE8 para dispositivo KNOX Standard
-**Problema**: depois de criar e implantar um perfil de email do Exchange Active Sync para Samsung KNOX Standard para vários dispositivos Android, o erro **0x87D1FDE8** ou **falha na correção** é reportado na guia da política > das propriedades do dispositivo.
-
-Examine a configuração do seu perfil de EAS para Samsung KNOX e a política de origem. Não há suporte para a opção de sincronização das Samsung Notes e essa opção não deve estar selecionada em seu perfil. Certifique-se de que os dispositivos tenham tempo suficiente para processar a política, até 24 horas.
-
 ## <a name="next-steps"></a>Próximas etapas
-Caso essas informações não ajudem, [obtenha também o suporte para o Microsoft Intune](get-support.md).
+
+Obtenha [ajuda do suporte da Microsoft](get-support.md) ou use os [fóruns da comunidade](https://social.technet.microsoft.com/Forums/en-US/home?category=microsoftintune).

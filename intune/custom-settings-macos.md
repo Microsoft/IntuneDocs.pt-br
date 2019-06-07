@@ -15,12 +15,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 6e30b90ff6f2189444f21b22fb5fd224ba3dc397
-ms.sourcegitcommit: 916fed64f3d173498a2905c7ed8d2d6416e34061
+ms.openlocfilehash: fa043e667bf12db9e30bfc56522c92d530a88c75
+ms.sourcegitcommit: 78ae22b1a7cb221648fc7346db751269d9c898b1
 ms.translationtype: MTE75
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/23/2019
-ms.locfileid: "66048643"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66373628"
 ---
 # <a name="use-custom-settings-for-macos-devices-in-microsoft-intune"></a>Usar configurações personalizadas para dispositivos macOS no Microsoft Intune
 
@@ -51,7 +51,7 @@ Este artigo mostra como criar um perfil personalizado para dispositivos macOS. T
 
 ## <a name="create-the-profile"></a>Criar o perfil
 
-1. No [Portal do Azure](https://portal.azure.com), selecione **Todos os serviços**, filtre por **Intune** e selecione **Microsoft Intune**.
+1. Conecte-se ao [Intune](https://go.microsoft.com/fwlink/?linkid=2090973).
 2. Selecione **Configuração do dispositivo** > **Perfis** > **Criar perfil**.
 3. Insira as seguintes configurações:
 

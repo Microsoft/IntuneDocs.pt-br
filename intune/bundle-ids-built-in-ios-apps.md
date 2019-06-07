@@ -6,7 +6,7 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 05/20/2019
+ms.date: 05/30/2019
 ms.topic: reference
 ms.service: microsoft-intune
 ms.localizationpriority: ''
@@ -15,16 +15,16 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 26f43523589da0d59afb3b667eb4ead8357f7a60
-ms.sourcegitcommit: 916fed64f3d173498a2905c7ed8d2d6416e34061
-ms.translationtype: HT
+ms.openlocfilehash: 7ff5b411f14fef4ad294b0dd8b265680fd67df08
+ms.sourcegitcommit: a97b6139770719afbd713501f8e50f39636bc202
+ms.translationtype: MTE75
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/23/2019
-ms.locfileid: "66049036"
+ms.lasthandoff: 05/30/2019
+ms.locfileid: "66402757"
 ---
 # <a name="bundle-ids-for-built-in-ios-apps-you-can-use-in-intune"></a>IDs de pacote para aplicativos iOS internos que podem ser usadas no Intune
 
-Quando você configura recursos em dispositivos iOS, também pode adicionar aplicativos internos em dispositivos iOS. Este artigo lista as IDs de pacote de alguns aplicativos iOS internos comuns. Para localizar a ID do pacote de outros aplicativos, entre em contato com seu fornecedor de software.
+Quando você configura recursos em dispositivos iOS, também pode adicionar aplicativos internos em dispositivos iOS. Este artigo lista as IDs de pacote de alguns aplicativos iOS internos comuns. Para localizar a ID do pacote de outros aplicativos, entre em contato com seu fornecedor de software. Confira a lista da Apple de [IDs de pacote do iOS](https://support.apple.com/guide/mdm/ios-bundle-ids-mdm90f60c1ce/web) (abre o site da Apple).
 
 ## <a name="bundle-ids"></a>IDs de pacote
 
@@ -59,6 +59,7 @@ Quando você configura recursos em dispositivos iOS, também pode adicionar apli
 | com.apple.mobilenotes       | Anotações        | Apple     |
 | com.apple.Numbers           | Números      | Apple     |
 | com.apple.Pages             | Páginas        | Apple     |
+| com.apple.mobilephone       | Telefone        | Apple     |
 | com.apple.Photo-Booth       | Photo Booth  | Apple     |
 | com.apple.mobileslideshow   | Fotos       | Apple     |
 | com.apple.podcasts          | Podcasts     | Apple     |

@@ -5,7 +5,7 @@ description: Configurações de linha de base de segurança com suporte do Intun
 author: brenduns
 ms.author: brenduns
 manager: dougeby
-ms.date: 05/17/2019
+ms.date: 05/29/2019
 ms.topic: reference
 ms.service: microsoft-intune
 ms.localizationpriority: medium
@@ -16,16 +16,21 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: f96393e0d6071b1b56700e954714324b01ffcf25
-ms.sourcegitcommit: 916fed64f3d173498a2905c7ed8d2d6416e34061
-ms.translationtype: MTE75
+ms.openlocfilehash: c6feae4d7caeeefbf9638e5018ba7b653a260f5c
+ms.sourcegitcommit: 78ae22b1a7cb221648fc7346db751269d9c898b1
+ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/23/2019
-ms.locfileid: "66040737"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66373507"
 ---
 # <a name="microsoft-defender-advanced-threat-protection-baseline-settings-for-intune"></a>Configurações para Intune da Linha de base da Proteção Avançada contra Ameaças do Microsoft Defender
 
 Exiba as configurações de linha de base da Proteção Avançada contra Ameaças do Microsoft Defender (anteriormente conhecido como Proteção Avançada contra Ameaças do Windows Defender) têm suporte pelo Microsoft Intune. Os valores padrão neste artigo representam a configuração de linha de base padrão para o Intune. Esses padrões representam a configuração recomendada para o Intune e podem não corresponder aos padrões do Windows.
+
+  A linha de base da Proteção Avançada contra Ameaças do Microsoft Defender está disponível quando o seu ambiente atende aos pré-requisitos para usar a [Proteção Avançada contra Ameaças do Microsoft Defender](advanced-threat-protection.md#prerequisites)).
+
+
+
 
 > [!NOTE]  
 > As configurações de linha de base do WDATP estão em **versão prévia**. Enquanto estiver em versão prévia, a lista de configurações disponíveis e a ordem em que este conteúdo apresenta essas configurações podem não corresponder ao que estiver disponível no portal. 

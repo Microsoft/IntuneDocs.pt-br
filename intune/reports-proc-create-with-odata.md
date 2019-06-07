@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 45df3e3b217e25c9e61fd51d7f458f33c7c0481d
-ms.sourcegitcommit: 916fed64f3d173498a2905c7ed8d2d6416e34061
+ms.openlocfilehash: 0d2e52ed64bfee2da8eafbc228abe61f109b3c27
+ms.sourcegitcommit: 063177c6c365fef3642edd7c455790958469aad9
 ms.translationtype: MTE75
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/23/2019
-ms.locfileid: "66045531"
+ms.lasthandoff: 05/30/2019
+ms.locfileid: "66412452"
 ---
 # <a name="create-a-report-from-the-odata-feed-with-power-bi"></a>Criar um relatório do feed OData com o Power BI
 
@@ -53,14 +53,13 @@ Instale a última versão do Power BI Desktop. Você pode baixar o Power BI Desk
 > [!Note]  
 > Você precisa de permissão para **Relatórios** no Intune. Para obter mais informações, consulte [Autorização](reports-api-url.md).
 
-1. Entre no [portal do Azure](https://portal.azure.com).
-2. Escolha **Todos os serviços** > **Intune**. O Intune está localizado na seção **Monitoramento + Gerenciamento**.
-3. Abra o painel **Data Warehouse do Intune**.
+1. Conecte-se ao [Intune](https://go.microsoft.com/fwlink/?linkid=2090973).
+3. Abra o painel do **Data Warehouse do Intune** selecionando o link do Data Warehouse em **Outras tarefas**, no lado direito da folha **Microsoft Intune – Visão geral**.
 4. Copie a URL personalizada do feed. Por exemplo: `https://fef.tenant.manage.microsoft.com/ReportingService/DataWarehouseFEService?api-version=beta`
-5. Abra o Power BI Desktop.
-6. Escolha **Obter dados** > **Feed Odata**.
-7. Cole a URL personalizada do feed na caixa de URL na janela **Feed OData**.
-8. Selecione **Básico**.
+1. Abra o Power BI Desktop.
+2. Escolha **Obter dados** > **Feed Odata**.
+3. Cole a URL personalizada do feed na caixa de URL na janela **Feed OData**.
+4. Selecione **Básico**.
 
     ![Feed OData do Intune Data Warehouse de seu locatário](media/reports-create-01-odatafeed.png)
 
