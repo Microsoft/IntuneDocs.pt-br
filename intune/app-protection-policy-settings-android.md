@@ -6,7 +6,7 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 05/28/2019
+ms.date: 05/30/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.localizationpriority: high
@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: a9f421a54319878c4f985ecc08252d4e03a00919
-ms.sourcegitcommit: 95572ed540e90471963833c0bbf71478477b1813
+ms.openlocfilehash: 79edbf77f4f6b188d9fa4bf75ce8cacbad9dcf9c
+ms.sourcegitcommit: a97b6139770719afbd713501f8e50f39636bc202
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/28/2019
-ms.locfileid: "66270005"
+ms.lasthandoff: 05/30/2019
+ms.locfileid: "66402782"
 ---
 # <a name="android-app-protection-policy-settings-in-microsoft-intune"></a>Configurações da política de proteção de aplicativo Android no Microsoft Intune
 Este artigo descreve as configurações de política de proteção de aplicativo para dispositivos Android. As configurações de política descritas podem ser [configuradas](app-protection-policies.md) para uma política de proteção de aplicativo na folha **Configurações** no Portal do Azure.
@@ -36,7 +36,7 @@ Há três categorias de configurações de política: configurações de proteç
 | Setting | Como usar | Valor padrão |
 |------|------|------|
 | **Fazer backup de dados da organização para serviços de backup do Android** | Selecione **Bloquear** para impedir que esse aplicativo faça backup dos dados corporativos ou de estudante para o [Serviço de Backup do Android](https://developer.android.com/google/backup/index.html).<br><br> Selecione **Permitir** para permitir que esse aplicativo faça backup de dados corporativos ou de estudante.| **Permitir** |
-| **Enviar dados da organização para outros aplicativos** | Especifique quais aplicativos podem receber dados desse aplicativo: <ul><li> **Aplicativos gerenciados por política**: Permite a transferência apenas para outros aplicativos gerenciados por política.</li> <li>**Todos os aplicativos**: Permite a transferência para qualquer aplicativo. </li> <li>**Nenhum**: Não permite a transferência de dados para nenhum aplicativo, incluindo outros aplicativos gerenciados por política.</li></ul> <p>Há algumas isenções de aplicativos e serviços para os quais o Intune pode permitir transferência de dados por padrão. Além disso, você poderá criar suas próprias isenções se precisar permitir a transferência de dados para um aplicativo que não seja compatível com a APP do Intune. Para obter mais informações, consulte [Isenções de transferência de dados](app-protection-policy-settings-android.md#data-transfer-exemptions).<p>Essa política também pode se aplicar aos Links de Aplicativos do Android.  Links gerais da Web são gerenciados pela configuração de política **Abrir links de aplicativo no Intune Managed Browser**.<p>**Observação:** *Atualmente o Intune não dá suporte para o recurso de Aplicativos Instantâneos do Android. O Intune bloqueará qualquer conexão de dados de ou para o aplicativo. Para obter mais informações, consulte [Aplicativos instantâneos Android](https://developer.android.com/topic/instant-apps/index.html) na documentação do Desenvolvedor Android.*</p>| **Todos os aplicativos** | 
+| **Enviar dados da organização para outros aplicativos** | Especifique quais aplicativos podem receber dados desse aplicativo: <ul><li> **Aplicativos gerenciados por política**: Permite a transferência apenas para outros aplicativos gerenciados por política.</li> <li>**Todos os aplicativos**: Permite a transferência para qualquer aplicativo. </li> <li>**Nenhum**: Não permite a transferência de dados para nenhum aplicativo, incluindo outros aplicativos gerenciados por política.</li></ul> <p>Há algumas isenções de aplicativos e serviços para os quais o Intune pode permitir transferência de dados por padrão. Além disso, você poderá criar suas próprias isenções se precisar permitir a transferência de dados para um aplicativo que não seja compatível com a APP do Intune. Para obter mais informações, consulte [Isenções de transferência de dados](app-protection-policy-settings-android.md#data-transfer-exemptions).<p>Essa política também pode se aplicar aos Links de Aplicativos do Android.  Links gerais da Web são gerenciados pela configuração de política **Abrir links de aplicativo no Intune Managed Browser**.<p><div class="NOTE"><p>Observação</p><p>Atualmente o Intune não dá suporte para o recurso de Aplicativos Instantâneos do Android. O Intune bloqueará qualquer conexão de dados de ou para o aplicativo. Para obter mais informações, confira [Aplicativos instantâneos Android](https://developer.android.com/topic/instant-apps/index.html) na documentação do Desenvolvedor Android.</p><p>Se **Enviar dados da organização para outros aplicativos** estiver definido como **Todos os aplicativos**, os dados de texto ainda poderão ser transferidos por meio do compartilhamento do sistema operacional na área de transferência.</p></div> | **Todos os aplicativos** | 
 |<ul><ui> **Selecionar aplicativos para isentar** | Essa opção está disponível quando você seleciona *Aplicativos gerenciados por política* para a opção anterior. | |
 | **Receber dados de outros aplicativos** | Especifique quais aplicativos podem transferir dados para esse aplicativo: <ul><li>**Aplicativos gerenciados por política**: Permite a transferência apenas para outros aplicativos gerenciados por política.</li><li>**Todos os aplicativos**: Não permite a transferência de dados de nenhum aplicativo.</li><li>**Nenhum**: Não permite a transferência de dados de nenhum aplicativo, incluindo outros aplicativos gerenciados por política. </li></ul> <p>Há algumas isenções de aplicativos e serviços dos quais o Intune pode permitir transferência de dados. Consulte [Isenções de transferência de dados](app-protection-policy-settings-android.md#data-transfer-exemptions) para obter uma lista completa dos aplicativos e serviços. | **Todos os aplicativos** |
 | **Salvar cópias de dados da organização** | Selecione **Bloquear** para desabilitar o uso da opção Salvar como neste aplicativo. Selecione **Permitir** se desejar permitir o uso de Salvar como. **Observação:** *Essa configuração é compatível com o Microsoft Excel, OneNote, PowerPoint e Word. Ela também pode ser compatível com aplicativos LOB e de terceiros.*| **Permitir** |  

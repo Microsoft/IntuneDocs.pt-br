@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure, seoapril2019
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 87a7657577372a37c7554941886b80277bfee11e
-ms.sourcegitcommit: 916fed64f3d173498a2905c7ed8d2d6416e34061
+ms.openlocfilehash: 1aa79bbaa6765a0d4b6009468bdfa184222c5f00
+ms.sourcegitcommit: f90cba0b2c2672ea733052269bcc372a80772945
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/23/2019
-ms.locfileid: "66049417"
+ms.lasthandoff: 05/31/2019
+ms.locfileid: "66454090"
 ---
 # <a name="assign-office-365-apps-to-windows-10-devices-with-microsoft-intune"></a>Atribua aplicativos do Office 365 a dispositivos Windows 10 com o Microsoft Intune
 
@@ -47,8 +47,7 @@ Antes que possa atribuir, monitorar, configurar ou proteger aplicativos, você p
 
 ## <a name="get-started"></a>Introdução
 
-1. Entre no [Portal do Azure](https://portal.azure.com).
-2. Selecione **Todos os Serviços** > **Intune**. O Intune está localizado na seção **Monitoramento + Gerenciamento**.
+1. Conecte-se ao [Intune](https://go.microsoft.com/fwlink/?linkid=2090973).
 3. No painel **Intune**, selecione **Aplicativos clientes**.
 4. No painel da carga de trabalho **Aplicativos clientes**, em **Gerenciar**, selecione **Aplicativos**.
 5. Selecione **Adicionar**.
@@ -126,6 +125,14 @@ Se você tiver selecionado a opção **Designer de configuração** na caixa sus
     - **Usar ativação de computador compartilhado**: Selecione essa opção quando vários usuários compartilharem um computador. Para obter mais informações, confira [Visão geral da ativação de computador compartilhado no Office 365](https://docs.microsoft.com/DeployOffice/overview-of-shared-computer-activation-for-office-365-proplus).
     - **Idiomas**: o Office é instalado automaticamente em qualquer um dos idiomas compatíveis instalados com o Windows no dispositivo do usuário final. Selecione essa opção se desejar instalar idiomas adicionais com o pacote de aplicativos. <p></p>
     É possível implantar idiomas adicionais para aplicativos do Office 365 Pro Plus gerenciados por meio do Intune. A lista de idiomas disponíveis inclui o **Tipo** de pacote de idiomas (núcleo, parcial e revisão de texto). No portal do Azure, selecione **Microsoft Intune** > **Aplicativos clientes** > **Aplicativos** > **Adicionar**. Na lista **Tipo de aplicativo** da folha **Adicionar aplicativo**, selecione **Windows 10** em **Pacote do Office 365**. Selecione **Idiomas** na folha **Configurações do Pacote de Aplicativos**. Para obter mais informações, confira [Visão geral da implantação de idiomas no Office 365 ProPlus](https://docs.microsoft.com/deployoffice/overview-of-deploying-languages-in-office-365-proplus).
+
+## <a name="select-scope-tags-optional"></a>Selecione as marcas de escopo (opcional)
+Você pode usar as marcas de escopo para determinar quem pode ver as informações do aplicativo cliente no Intune. Para obter todos os detalhes sobre marcas de escopo, confira [Usar controle de acesso baseado em função e marcas de escopo para TI distribuída](scope-tags.md).
+
+1. Selecione **Escopo (Marcas)**  > **Adicionar**.
+2. Use a caixa **Selecionar** para procurar marcas de escopo.
+3. Marque a caixa de seleção ao lado das marcas de escopo que você deseja atribuir a esse aplicativo.
+4. Escolher **Selecionar** > **OK**.
 
 ## <a name="enter-xml-format"></a>Inserir formato XML
 
