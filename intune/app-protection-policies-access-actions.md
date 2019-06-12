@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 490c7312f510651cafc6ade516e5f7dca8131b3a
-ms.sourcegitcommit: 916fed64f3d173498a2905c7ed8d2d6416e34061
+ms.openlocfilehash: cd323fce7f7bdbf17697c82935a9d2d5f47bb7ee
+ms.sourcegitcommit: 6e07c35145f70b008cf170bae57143248a275b67
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/23/2019
-ms.locfileid: "66043962"
+ms.lasthandoff: 06/07/2019
+ms.locfileid: "66804691"
 ---
 # <a name="selectively-wipe-data-using-app-protection-policy-access-actions-in-intune"></a>Apagar dados seletivamente usando ações de acesso da política de proteção de aplicativo no Intune
 
@@ -32,9 +32,7 @@ Você pode escolher explicitamente apagar os dados corporativos da empresa do di
 
 ## <a name="create-an-app-protection-policy-using-access-actions"></a>Criar uma política de proteção de aplicativo usando ações de acesso
 
-1. Entre no [Portal do Azure](https://portal.azure.com).
-2. Selecione **Todos os serviços** > **Intune**.  
-    O Intune está localizado na seção **Monitoramento + Gerenciamento**.
+1. Conecte-se ao [Intune](https://go.microsoft.com/fwlink/?linkid=2090973).
 3. No painel **Intune**, selecione **Aplicativos clientes** > **Políticas de proteção de aplicativo**.
 4. Clique em **Adicionar uma política** (você também pode editar uma política existente). 
 5. Clique em **Definir as configurações necessárias** para ver a lista de configurações disponíveis a serem configuradas para a política. 
