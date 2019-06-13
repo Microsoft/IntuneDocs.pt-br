@@ -16,19 +16,19 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 92aa438e436c4612ede29564f61c3fc529f789c0
-ms.sourcegitcommit: 916fed64f3d173498a2905c7ed8d2d6416e34061
+ms.openlocfilehash: 82fa4fc7f9e60dff3c08adf3281351cbfa8eb743
+ms.sourcegitcommit: cb76efd3db60a422a65478ebce83d3aea7b5eeed
 ms.translationtype: MTE75
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/23/2019
-ms.locfileid: "66045047"
+ms.lasthandoff: 06/06/2019
+ms.locfileid: "66749927"
 ---
 # <a name="windows-security-baseline-settings-for-intune"></a>Configurações de linha de base de segurança do Windows para o Intune  
 
-Exiba as [configurações de linha de base de segurança do Windows](security-baselines.md) compatíveis com Microsoft Intune.  
+Exiba as [configurações de linha de base de segurança do Windows](security-baselines.md) compatíveis com Microsoft Intune. Os padrões de linha de base do Windows representam a configuração recomendada para Windows e podem não corresponder aos padrões de linha de base de outras linhas de base de segurança.  
 
 > [!NOTE]  
-> As configurações de linha de base de segurança do Windows estão em versão prévia. Enquanto estiver em versão prévia, a lista de configurações disponíveis e a ordem em que este conteúdo apresenta essas configurações vão variar com o que estiver disponível no portal.  
+> As configurações de linha de base de segurança do Windows estão em **Versão Prévia**. Enquanto estiver em versão prévia, a lista de configurações disponíveis e a ordem em que este conteúdo apresenta essas configurações vão variar com o que estiver disponível no portal.  
 >  
 > Quando as configurações de linha de base saírem da versão prévia, esse conteúdo será atualizado com a lista fora da versão prévia das configurações de linha de base de segurança compatíveis com o Intune.  
 
@@ -1201,7 +1201,7 @@ Para obter mais informações, veja [CSP de política – RemoteManagement](http
   
   **Padrão**: desabilitado
   
-- **Tráfego não criptografado de cliente**   
+- **Tráfego não criptografado de cliente**  
   Essa configuração de política permite gerenciar se o cliente de Gerenciamento Remoto do Windows (WinRM) envia e recebe mensagens não criptografadas pela rede. Se você habilitar essa configuração de política, o cliente WinRM enviará e receberá mensagens não criptografadas pela rede. Se você desabilitar ou não configurar essa política, o cliente WinRM enviará ou receberá somente mensagens criptografadas pela rede.
   
   **Padrão**: desabilitado

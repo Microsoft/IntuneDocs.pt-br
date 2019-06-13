@@ -5,7 +5,7 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 04/29/2019
+ms.date: 06/04/2019
 ms.topic: reference
 ms.service: microsoft-intune
 ms.localizationpriority: medium
@@ -16,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 35f4007d03ca66ada5721de1ffe20dd87bfe4527
-ms.sourcegitcommit: 916fed64f3d173498a2905c7ed8d2d6416e34061
-ms.translationtype: MTE75
+ms.openlocfilehash: b5672963c6737d51e720a8b1597dd90318f33a05
+ms.sourcegitcommit: 095fd4c324850aae8ebe32be43fa074361816a4b
+ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/23/2019
-ms.locfileid: "66043787"
+ms.lasthandoff: 06/04/2019
+ms.locfileid: "66506869"
 ---
 # <a name="get-started-with-the-microsoft-intune-app-sdk"></a>Introdução ao SDK de Aplicativos do Microsoft Intune
 
@@ -81,11 +81,11 @@ Convém criar uma conta do GitHub que você possa usar para bifurcar e efetuar p
 
 Você precisará de um dos seguintes guias do desenvolvedor para ajudá-lo a integrar o SDK do Aplicativo do Intune em seu aplicativo:
 
-* **[Guia do Desenvolvedor do SDK do Aplicativo do Intune para iOS](app-sdk-ios.md)**: esse documento fornece um passo a passo para a habilitação do aplicativo iOS nativo com o SDK do Aplicativo do Intune.
+* **[Guia do Desenvolvedor do SDK do Aplicativo do Intune para iOS](app-sdk-ios.md)** : esse documento fornece um passo a passo para a habilitação do aplicativo iOS nativo com o SDK do Aplicativo do Intune.
 
-* **[Guia do Desenvolvedor do SDK do Aplicativo do Intune para Android](app-sdk-android.md)**: esse documento fornece um passo a passo para a habilitação do aplicativo Android nativo com o SDK do Aplicativo do Intune.
+* **[Guia do Desenvolvedor do SDK do Aplicativo do Intune para Android](app-sdk-android.md)** : esse documento fornece um passo a passo para a habilitação do aplicativo Android nativo com o SDK do Aplicativo do Intune.
 
-* **[Guia de Associações do Xamarin de SDK do Aplicativo do Intune](app-sdk-xamarin.md)**: esse documento ajudará você a criar aplicativos iOS e Android usando o Xamarin para as políticas de Proteção de Aplicativo do Intune.
+* **[Guia de Associações do Xamarin de SDK do Aplicativo do Intune](app-sdk-xamarin.md)** : esse documento ajudará você a criar aplicativos iOS e Android usando o Xamarin para as políticas de Proteção de Aplicativo do Intune.
 
 
 
@@ -174,15 +174,12 @@ Se o aplicativo estiver usando suas próprias configurações personalizadas do 
 Depois que você registrar seu aplicativo no locatário do Azure e ele estiver aparecendo em **Todos os Aplicativos**, você deverá fornecer ao aplicativo o acesso ao serviço de proteção de aplicativo do Intune (anteriormente conhecido como serviço MAM). No portal do Azure:
 
 1.  Acesse a folha **Azure Active Directory**.
-2.  Selecione o **Registro de aplicativo** configurado para o aplicativo.
-3.  Em **Configurações**, no cabeçalho **Acesso à API**, selecione **Permissão obrigatória**. 
-4.  Clique em **+ Adicionar**.
-5.  Clique em **Selecionar uma API**. 
-6.  Na caixa de pesquisa, insira **Gerenciamento de Aplicativo Móvel da Microsoft**.
-7.  Selecione **Gerenciamento de Aplicativo Móvel da Microsoft** na lista de APIs e clique em Selecionar.
-8.  Selecione **Ler e Gravar os Dados de Gerenciamento de Aplicativos do Usuário**.
-9.  Clique em **Concluído**.
-10. Clique em **Conceder permissões** e clique em **Sim**. 
+2.  Em **Registros de aplicativo**, vá para a listagem configurada para o aplicativo.
+3.  Clique em **+ Adicionar uma permissão**.
+4.  Clique em **APIs que minha organização usa**. 
+5.  Na caixa de pesquisa, insira **Gerenciamento de Aplicativo Móvel da Microsoft**.
+6.  Em **Permissões Delegadas**, marque a caixa de seleção **DeviceManagementManagedApps.ReadWrite: Ler e Gravar Dados de Gerenciamento de Aplicativo do Usuário***.
+7. Clique em **Adicionar permissões**.
 
 ### <a name="badge-your-app-optional"></a>Marcar com uma notificação no aplicativo (opcional)
 

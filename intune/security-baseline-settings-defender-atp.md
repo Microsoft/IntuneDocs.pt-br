@@ -16,16 +16,16 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: c6feae4d7caeeefbf9638e5018ba7b653a260f5c
-ms.sourcegitcommit: 78ae22b1a7cb221648fc7346db751269d9c898b1
-ms.translationtype: HT
+ms.openlocfilehash: a58095612d6e76d4a1cb633e69260267dcfd9999
+ms.sourcegitcommit: cb76efd3db60a422a65478ebce83d3aea7b5eeed
+ms.translationtype: MTE75
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66373507"
+ms.lasthandoff: 06/06/2019
+ms.locfileid: "66749905"
 ---
 # <a name="microsoft-defender-advanced-threat-protection-baseline-settings-for-intune"></a>Configurações para Intune da Linha de base da Proteção Avançada contra Ameaças do Microsoft Defender
 
-Exiba as configurações de linha de base da Proteção Avançada contra Ameaças do Microsoft Defender (anteriormente conhecido como Proteção Avançada contra Ameaças do Windows Defender) têm suporte pelo Microsoft Intune. Os valores padrão neste artigo representam a configuração de linha de base padrão para o Intune. Esses padrões representam a configuração recomendada para o Intune e podem não corresponder aos padrões do Windows.
+Exiba as configurações de linha de base da Proteção Avançada contra Ameaças do Microsoft Defender (anteriormente conhecido como Proteção Avançada contra Ameaças do Windows Defender) têm suporte pelo Microsoft Intune. Os padrões de linha de base da ATP (Proteção Avançada contra Ameaças) representam a configuração recomendada para ATP e podem não corresponder aos padrões de linha de base para outras linhas de base de segurança.  
 
   A linha de base da Proteção Avançada contra Ameaças do Microsoft Defender está disponível quando o seu ambiente atende aos pré-requisitos para usar a [Proteção Avançada contra Ameaças do Microsoft Defender](advanced-threat-protection.md#prerequisites)).
 
@@ -33,7 +33,7 @@ Exiba as configurações de linha de base da Proteção Avançada contra Ameaça
 
 
 > [!NOTE]  
-> As configurações de linha de base do WDATP estão em **versão prévia**. Enquanto estiver em versão prévia, a lista de configurações disponíveis e a ordem em que este conteúdo apresenta essas configurações podem não corresponder ao que estiver disponível no portal. 
+> As configurações de linha de base de ATP estão em **Versão prévia**. Enquanto estiver em versão prévia, a lista de configurações disponíveis e a ordem em que este conteúdo apresenta essas configurações podem não corresponder ao que estiver disponível no portal.  
 >
 > Quando as configurações de linha de base saírem da versão prévia, esse conteúdo será atualizado para refletir uma lista atualizada da versão prévia das configurações de linha de base de segurança compatíveis com o Intune.
 

@@ -5,7 +5,7 @@ keywords: ''
 author: lenewsad
 ms.author: lanewsad
 manager: dougeby
-ms.date: 03/13/2017
+ms.date: 05/28/2019
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -18,19 +18,19 @@ ms.reviewer: arnab
 ms.suite: ems
 ms.custom: intune-enduser
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 812c012bbb69c32d518c9dfa772ed4b37e1260a6
-ms.sourcegitcommit: 25e6aa3bfce58ce8d9f8c054bc338cc3dff4a78b
+ms.openlocfilehash: f012b1cec67de762bbc245f249125f29d37c6930
+ms.sourcegitcommit: 095fd4c324850aae8ebe32be43fa074361816a4b
 ms.translationtype: MTE75
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "55837978"
+ms.lasthandoff: 06/04/2019
+ms.locfileid: "66506859"
 ---
 # <a name="check-compliance-on-your-android-device"></a>Verificar a conformidade em seu dispositivo Android
 
-Se o seu dispositivo não tiver feito check-in no Intune há algum tempo, talvez você não consiga acessar os recursos de sua empresa ou escola. Para obter acesso novamente, tente o seguinte:
+Se o seu dispositivo não tiver feito check-in no Intune há algum tempo, talvez você não consiga acessar os recursos de sua empresa ou escola. Experimente estas etapas para recuperar o acesso.  
 
-1. Abra o aplicativo do Portal da Empresa do Android no seu dispositivo.
+1. Abra o aplicativo Portal da Empresa para Android no dispositivo.  
 
-2. Toque em **Verificar Conformidade**.
+2. Toque em **Verificar configurações de dispositivo**.  
 
-Se não for possível redefinir o dispositivo perdido ou roubado, peça ao suporte de sua empresa para redefini-lo para você. Para obter as informações de contato, consulte o [site do Portal da Empresa](https://go.microsoft.com/fwlink/?linkid=2010980).
+Se não for possível redefinir o dispositivo perdido ou roubado, peça ao suporte de sua empresa para redefini-lo para você. Para obter as informações de contato, consulte o [site do Portal da Empresa](https://go.microsoft.com/fwlink/?linkid=2010980).  

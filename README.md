@@ -1,10 +1,10 @@
 ---
-ms.openlocfilehash: fc2e17c605af2c9cec021724852bcf1b48012ba8
-ms.sourcegitcommit: 25e6aa3bfce58ce8d9f8c054bc338cc3dff4a78b
+ms.openlocfilehash: 76e6e3186ae0e8bf1d05698d28539994d33486e8
+ms.sourcegitcommit: 6e07c35145f70b008cf170bae57143248a275b67
 ms.translationtype: MTE75
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "58068820"
+ms.lasthandoff: 06/07/2019
+ms.locfileid: "66804430"
 ---
 ## <a name="microsoft-open-source-code-of-conduct"></a>Código de Conduta de Software Livre da Microsoft
 
@@ -20,24 +20,24 @@ Você encontrou um dos repositórios GitHub que hospeda a fonte de conteúdo pub
 
 * **Crie uma conta GitHub**: a inscrição é gratuita em [GitHub.com](https://www.github.com).
 
-* **Use seu navegador**: há duas opções: 
+* **Usar seu navegador**: há duas opções: 
 
-    **Opção 1: Editar diretamente do docs.microsoft.com**  
-    1. Vá para o tópico, como [ https://docs.microsoft.com/intune/troubleshoot-policies-in-microsoft-intune ](https://docs.microsoft.com/ntune/troubleshoot-policies-in-microsoft-intune). 
-    2. Selecione **editar** (parte superior direita). Isso mostra o arquivo markdown no repositório do GitHub.
-    3. Selecione o ícone de lápis. Quando você passa o mouse sobre o ícone de lápis, você verá a **editar esse arquivo** dica de ferramenta. 
-    4. Faça as alterações e, em seguida **confirmação** suas alterações. 
+    **Opção 1: edite diretamente de docs.microsoft.com**  
+    1. Vá para o tópico, como [https://docs.microsoft.com/intune/troubleshoot-policies-in-microsoft-intune](https://docs.microsoft.com/intune/troubleshoot-policies-in-microsoft-intune). 
+    2. Selecione **Editar** (parte superior direita). Isso mostra o arquivo markdown no repositório do GitHub.
+    3. Selecione o ícone de lápis. Quando você focaliza o ícone de lápis, vê a dica de ferramenta **Editar este arquivo**. 
+    4. Faça as alterações e, em seguida, **confirme**-as. 
     5. Crie a solicitação de pull.
     
-    **Opção 2: Localize o artigo neste repositório e atualizar**  
-    1.  A maioria dos tópicos estão em `https://github.com/MicrosoftDocs/IntuneDocs/tree/master/intune`. Nessa pasta, procurar o nome do tópico, como `troubleshoot-policies-in-microsoft-intune`. 
-    2. Selecione o link e clique no ícone de lápis. Quando você passa o mouse sobre o ícone de lápis, você verá a **editar esse arquivo** dica de ferramenta. 
-    3. Faça as alterações e, em seguida **confirmação** suas alterações. 
+    **Opção 2: localize o artigo neste repositório e atualize**  
+    1.  A maioria dos tópicos está em `https://github.com/MicrosoftDocs/IntuneDocs/tree/master/intune`. Nesta pasta, pesquise o nome do tópico, como `troubleshoot-policies-in-microsoft-intune`. 
+    2. Selecione o link e clique no ícone de lápis. Quando você focaliza o ícone de lápis, vê a dica de ferramenta **Editar este arquivo**. 
+    3. Faça as alterações e, em seguida, **confirme**-as. 
     4. Crie a solicitação de pull. 
 
   Ao fazer uma atualização, você precisará assinar um contrato de licença. Essa é uma tarefa única. Portanto, futuras atualizações em seu nome de usuário do GitHub não precisarão de assinatura novamente. 
   
-  O valor no `author` metadados (na parte superior de cada tópico) lista o autor do GitHub. No `troubleshoot-policies-in-microsoft-intune` exemplo, você verá `MandiOhlinger`. Na sua solicitação de pull, você também pode mencionar (@*authorValue*) o autor se desejar.
+  O valor nos metadados `author` (na parte superior de cada tópico) lista o autor do GitHub. No exemplo de `troubleshoot-policies-in-microsoft-intune`, você verá `MandiOhlinger`. Em sua solicitação de pull, você também poderá mencionar (@*authorValue*) o autor, se desejar.
   
 * **Funcionários da MSFT**: depois de criar uma conta do GitHub, vincule-a ao seu endereço de email da Microsoft. Quando a conta estiver vinculada, você não precisará assinar um contrato de licença para fazer uma atualização. Etapas:
 
