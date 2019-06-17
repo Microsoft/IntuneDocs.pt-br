@@ -5,7 +5,7 @@ keywords: ''
 author: brenduns
 ms.author: brenduns
 manager: dougeby
-ms.date: 03/05/2019
+ms.date: 06/06/2019
 ms.topic: article
 ms.service: microsoft-intune
 ms.localizationpriority: high
@@ -15,12 +15,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: ee0f7ce806b1ed2a17b59add467b1b0af2a40578
-ms.sourcegitcommit: 023b1293b47314b77eb80997bbd8aa679db90880
+ms.openlocfilehash: e170fe0c1b461bad140b89ac01a2ad817e2082e5
+ms.sourcegitcommit: 7ceae61e036ccf8b33704751b0b39fee81944072
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/31/2019
-ms.locfileid: "66448119"
+ms.lasthandoff: 06/06/2019
+ms.locfileid: "66744337"
 ---
 # <a name="configure-and-use-scep-certificates-with-intune"></a>Configurar e usar certificados SCEP com o Intune
 
@@ -115,7 +115,8 @@ Nesta etapa:
    - Em **Segurança**, adicione a conta de serviço NDES e dê a ela permissões para **Registrar** no modelo. Os administradores do Intune que criam perfis SCEP exigem direitos de **leitura** para poderem navegar no modelo durante a criação de perfis SCEP.
 
      > [!NOTE]
-     > Para revogar certificados, a conta de serviço do NDES precisa de direitos de *Emitir e Gerenciar Certificados* para cada modelo de certificado usado por um perfil de certificado.
+     > Para revogar certificados, a conta de serviço do NDES precisa de direitos de *Emitir e Gerenciar Certificados* na autoridade de certificação. Para delegar essa permissão, abra o console de gerenciamento da Autoridade de Certificação e clique com o botão direito do mouse no nome da Autoridade de Certificação. Em seguida, na guia Segurança, adicione ou selecione a conta e marque a caixa de seleção **Emitir e Gerenciar Certificados**.
+
 
 3. Examine o **Período de validade** na guia **Geral** do modelo. Por padrão, o Intune usa o valor configurado no modelo. No entanto, você pode configurar a AC para permitir que o solicitante insira um valor diferente, que pode ser definido dentro do console do Administrador do Intune. Se quiser usar sempre o valor no modelo, ignore o restante desta etapa.
 
@@ -299,15 +300,15 @@ Nesta etapa:
 
 1. Conecte-se ao [Intune](https://go.microsoft.com/fwlink/?linkid=2090973).
 2. Selecione **Configuração do dispositivo** > **Conectores de Certificação** > **Adicionar**.
-3. Baixe e salve o conector para o arquivo SCEP. Salve-o em uma localização acessível por meio do servidor no qual você instalará o conector.
+3. Baixe e salve o conector para o arquivo SCEP. Salve-o em uma localização acessível por meio do servidor de NDES no qual você instalará o conector.
 
    ![ConnectorDownload](./media/certificates-scep-configure/download-certificates-connector.png)
 
 
-4. Após a conclusão do download, acesse o servidor que hospeda seu NDES (Serviço de Registro de Dispositivo de Rede). Em seguida:
+4. Após a conclusão do download, acesse o servidor de NDES que hospeda seu NDES (Serviço de Registro de Dispositivo de Rede). Em seguida:
 
     1. Verifique se o .NET 4.5 Framework está instalado, pois ele é necessário para o conector do Certificado NDES. O .NET 4.5 Framework é automaticamente incluído no Windows Server 2012 R2 e versões mais recentes.
-    2. Execute o instalador (**NDESConnectorSetup.exe**). O instalador também instala o módulo de política para NDES e o Serviço Web de CRP. O Serviço Web de CRP, CertificateRegistrationSvc, é executado como um aplicativo no IIS.
+    2. Use uma conta com direitos administrativos para o servidor para executar o instalador (**NDESConnectorSetup.exe**). O instalador também instala o módulo de política para NDES e o Serviço Web de CRP. O Serviço Web de CRP, CertificateRegistrationSvc, é executado como um aplicativo no IIS.
 
     > [!NOTE]
     > Quando você instala o NDES para o Intune autônomo, o serviço de CRP é instalado automaticamente com o Conector de Certificado. Quando você usa o Intune com o Configuration Manager, instala o Ponto de Registro de Certificado como uma função de sistema de site separada.
@@ -335,7 +336,7 @@ Nesta etapa:
 
     Se a sua organização usar um servidor proxy e o proxy for necessário para o servidor NDES acessar a Internet, selecione **Usar servidor proxy**. Em seguida, insira as credenciais de conta, a porta e nome do servidor proxy para se conectar.
 
-    Selecione a guia **Avançado** e insira credenciais para uma conta que tenha a permissão **Emitir e Gerenciar Certificados** na sua Autoridade de Certificação emissora. **Aplique** suas alterações.
+    Selecione a guia **Avançado** e insira credenciais para uma conta que tenha a permissão **Emitir e Gerenciar Certificados** na sua Autoridade de Certificação emissora. **Aplique** suas alterações. Se você tiver delegado essa permissão à sua conta de serviço do NDES ao [configurar sua Autoridade de Certificação](#configure-the-certification-authority), especifique essa conta aqui. 
 
     Agora você pode fechar a interface do usuário do Conector de Certificado.
 

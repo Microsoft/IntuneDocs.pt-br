@@ -6,7 +6,7 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 05/14/2019
+ms.date: 06/06/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.localizationpriority: high
@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 0b3a566fd5c040e1c0007c10b1b57a64788a2323
-ms.sourcegitcommit: 916fed64f3d173498a2905c7ed8d2d6416e34061
+ms.openlocfilehash: d8c4813d94a269ed6b8f944585814b54f36fef8c
+ms.sourcegitcommit: 6e07c35145f70b008cf170bae57143248a275b67
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/23/2019
-ms.locfileid: "66043815"
+ms.lasthandoff: 06/07/2019
+ms.locfileid: "66804692"
 ---
 # <a name="intune-standalone---win32-app-management"></a>Intune autônomo – gerenciamento de aplicativos Win32
 
@@ -97,8 +97,7 @@ As etapas a seguir fornecem diretrizes para ajudar você a adicionar um aplicati
 
 ### <a name="step-1-specify-the-software-setup-file"></a>Etapa 1: Especificar o arquivo de instalação do software
 
-1.  Entre no [Portal do Azure](https://portal.azure.com/).
-2.  Selecione **Todos os serviços** > **Intune**. O Intune está na seção **Monitoramento + Gerenciamento**.
+1. Conecte-se ao [Intune](https://go.microsoft.com/fwlink/?linkid=2090973).
 3.  No painel do **Intune**, selecione **Aplicativos cliente** > **Aplicativos** > **Adicionar**.
 4.  No painel do aplicativo **Adicionar**, selecione **Aplicativo do Windows (Win32)** na lista suspensa fornecida.
 
@@ -163,10 +162,10 @@ As etapas a seguir fornecem diretrizes para ajudar você a adicionar um aplicati
 2.  No painel **Adicionar uma regra de Requisitos**, configure as informações a seguir. Alguns dos valores neste painel podem ser sido preenchidos automaticamente.
     - **Arquitetura do sistema operacional**: Escolha as arquiteturas necessárias para instalar o aplicativo.
     - **Sistema operacional mínimo**: Selecione o sistema operacional mínimo necessário para instalar o aplicativo.
-    - **Espaço em disco necessário (MB)**: Opcionalmente, adicione o espaço em disco livre necessário na unidade do sistema para instalar o aplicativo.
-    - **Memória física necessária (MB)**: Opcionalmente, adicione a memória física (RAM) necessária para instalar o aplicativo.
+    - **Espaço em disco necessário (MB)** : Opcionalmente, adicione o espaço em disco livre necessário na unidade do sistema para instalar o aplicativo.
+    - **Memória física necessária (MB)** : Opcionalmente, adicione a memória física (RAM) necessária para instalar o aplicativo.
     - **Número mínimo necessário de processadores lógicos**: Opcionalmente, adicione o número mínimo de processadores lógicos necessários para instalar o aplicativo.
-    - **Velocidade mínima necessária de CPU (MHz)**: Opcionalmente, adicione o número mínimo necessário de processadores lógicos para instalar o aplicativo.
+    - **Velocidade mínima necessária de CPU (MHz)** : Opcionalmente, adicione o número mínimo necessário de processadores lógicos para instalar o aplicativo.
 
 3. Clique em **Adicionar** para exibir a folha **Adicionar uma regra de Requisito** e configurar regras de requisitos adicionais. Selecione o **Tipo de requisito** para escolher o tipo de regra que você usará para determinar como um requisito é validado. As regras de requisitos podem ser baseadas em informações do sistema de arquivos, valores do Registro ou scripts do PowerShell. 
     - **Arquivo**: Quando você escolhe **Arquivo** como o **Tipo de requisito**, a regra de requisito precisa detectar um arquivo ou uma pasta, uma data, uma versão ou um tamanho. 
@@ -342,12 +341,50 @@ Os logons do agente no computador cliente estão comumente no `C:\ProgramData\Mi
 > *C:\Arquivos de Programa\Microsoft Intune Management Extension\Content*<br>
 > *C:\windows\IMECache*
 
-Para obter mais informações sobre como solucionar problemas de aplicativos Win32, confira [Solução de problemas de instalação de aplicativos Win32](troubleshoot-app-install.md#win32-app-installation-troubleshooting).
+### <a name="detecting-the-win32-app-file-version-using-powershell"></a>Detectando a versão do arquivo de aplicativo Win32 usando o PowerShell
 
-### <a name="troubleshooting-areas-to-consider"></a>Áreas de solução de problemas a serem consideradas
+Se você tiver dificuldade para detectar a versão do arquivo de aplicativo Win32, considere usar ou modificar o seguinte comando do PowerShell:
+
+``` PowerShell
+
+$FileVersion = [System.Diagnostics.FileVersionInfo]::GetVersionInfo("<path to binary file>").FileVersion
+#The below line trims the spaces before and after the version name
+$FileVersion = $FileVersion.Trim();
+if ("<file version of successfully detected file>" -eq $FileVersion)
+{
+#Write the version to STDOUT by default
+$FileVersion
+exit 0
+}
+else
+{
+#Exit with non-zero failure code
+exit 1
+}
+
+```
+No comando do PowerShell acima, substitua a cadeia de caracteres `<path to binary file>` com o caminho para o arquivo de aplicativo Win32. Um caminho de exemplo seria semelhante ao seguinte:<br>
+`C:\Program Files (x86)\Microsoft SQL Server Management Studio 18\Common7\IDE\ssms.exe`
+
+Além disso, substitua a cadeia de caracteres `<file version of successfully detected file>` com a versão do arquivo que você precisa detectar. Uma cadeia de caracteres de versão de arquivo de exemplo seria semelhante à seguinte:<br>
+`2019.0150.18118.00 ((SSMS_Rel).190420-0019)`
+
+Se você precisar obter as informações de versão do seu aplicativo Win32, poderá usar o seguinte comando do PowerShell:
+
+``` PowerShell
+
+[System.Diagnostics.FileVersionInfo]::GetVersionInfo("<path to binary file>").FileVersion
+
+```
+
+No comando do PowerShell acima, substitua `<path to binary file>` por seu caminho do arquivo.
+
+### <a name="additional-troubleshooting-areas-to-consider"></a>Áreas de solução de problemas adicionais a serem consideradas
 - Verifique o direcionamento para garantir que o agente seja instalado no dispositivo – o aplicativo Win32 direcionado a um grupo ou o Script do PowerShell direcionado a um grupo criará a política de instalação do agente para o grupo de segurança.
 - Verificar a versão do sistema operacional – Windows 10 1607 e posterior.  
 - Verifique o SKU do Windows 10 – O Windows 10 S ou versões do Windows em execução com o modo S habilitado não são compatíveis com a instalação do MSI.
+
+Para obter mais informações sobre como solucionar problemas de aplicativos Win32, confira [Solução de problemas de instalação de aplicativos Win32](troubleshoot-app-install.md#win32-app-installation-troubleshooting).
 
 ## <a name="next-steps"></a>Próximas etapas
 

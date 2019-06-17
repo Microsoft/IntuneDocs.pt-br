@@ -16,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: ''
 ms.collection: ''
-ms.openlocfilehash: c3f5f3b39efd33e8dbd3dd84f9a5f2abaf347216
-ms.sourcegitcommit: 916fed64f3d173498a2905c7ed8d2d6416e34061
+ms.openlocfilehash: 55e758c8a7eddc1a5500464754448d26680ec772
+ms.sourcegitcommit: cc5d757018d05fc03ac9ea3d30f563df9bfd61ed
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/23/2019
-ms.locfileid: "66046697"
+ms.lasthandoff: 06/10/2019
+ms.locfileid: "66819586"
 ---
 # <a name="intune-enrollment-methods-for-windows-devices"></a>Métodos de registro do Intune para dispositivos Windows
 
@@ -49,8 +49,8 @@ Os administradores podem configurar os seguintes métodos de registro que não e
 
 - [Ingresso no Azure AD Híbrido](https://docs.microsoft.com/windows/client-management/mdm/enroll-a-windows-10-device-automatically-using-group-policy) permite que os administradores configurem a política de grupo do Azure Active Directory para registrar automaticamente dispositivos com ingresso híbrido no Azure AD. 
 - O [Cogerenciamento do Configuration Manager](https://docs.microsoft.com/sccm/comanage/overview) permite que os administradores registrem seus dispositivos gerenciados do Configuration Manager existente no Intune para obter os benefícios duplos do Intune e do Configuration Manager. 
-- O [DEM](device-enrollment-manager-enroll.md) (gerenciador de registros de dispositivos) é uma conta de serviço especial. As contas do DEM têm permissões que permitem que os usuários autorizados registrem e gerenciem vários dispositivos corporativos. Esses tipos de dispositivos são bons, por exemplo, para aplicativos de ponto de venda ou utilitários, mas não para usuários que precisam acessar os recursos ou o email da empresa. Além disso, esse método não permite o uso de recursos como o Acesso Condicional. 
-- O [registro em massa](windows-bulk-enroll.md) permite que um usuário autorizado ingresse grandes quantidades de novos dispositivos corporativos no Azure Active Directory e no Intune. Crie um pacote de provisionamento com o aplicativo WCD (Windows Configuration Designer). Em seguida, usando a mídia USB durante a configuração inicial pelo usuário do Windows ou de um computador Windows existente, instale o pacote de provisionamento para registrar automaticamente os dispositivos no Intune. 
+- O [DEM](device-enrollment-manager-enroll.md) (gerenciador de registros de dispositivos) é uma conta de serviço especial. As contas do DEM têm permissões que permitem que os usuários autorizados registrem e gerenciem vários dispositivos corporativos. Esses tipos de dispositivos são bons, por exemplo, para aplicativos de ponto de venda ou utilitários, mas não para usuários que precisam acessar os recursos ou o email da empresa. Esse método não permite o uso de recursos como o Acesso Condicional. 
+- O [registro em massa](windows-bulk-enroll.md) permite que um usuário autorizado ingresse grandes quantidades de novos dispositivos corporativos no Azure Active Directory e no Intune. Crie um pacote de provisionamento com o aplicativo WCD (Windows Configuration Designer). Em seguida, usando a mídia USB durante a configuração inicial pelo usuário do Windows ou de um computador Windows existente, instale o pacote de provisionamento para registrar automaticamente os dispositivos no Intune. Esse método não permite o uso do Acesso Condicional. 
 
 ## <a name="next-steps"></a>Próximas etapas
 

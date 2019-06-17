@@ -16,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure; get-started
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 7419a316018ed5c883f89a51090a852680cd9e38
-ms.sourcegitcommit: 916fed64f3d173498a2905c7ed8d2d6416e34061
+ms.openlocfilehash: 4c4b9f1d1dd0072555d8438940969b7abd0a9fff
+ms.sourcegitcommit: 6e07c35145f70b008cf170bae57143248a275b67
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/23/2019
-ms.locfileid: "66040674"
+ms.lasthandoff: 06/07/2019
+ms.locfileid: "66804471"
 ---
 # <a name="role-based-access-control-rbac-with-microsoft-intune"></a>RBAC (controle de acesso baseado em função) com o Microsoft Intune
 
@@ -30,6 +30,8 @@ O RBAC (controle de acesso baseado em função) ajuda a gerenciar quem tem acess
 Para criar, editar ou atribuir funções, sua conta deve ter uma das seguintes permissões no Azure AD:
 - **Administrador Global**
 - **Administrador de Serviços do Intune** (também conhecido como **Administrador do Intune**)
+
+Para dicas e sugestões sobre o RBAC do Intune, você pode conferir esta série de cinco vídeos que mostram os exemplos e explicações passo a passo: [1](https://www.youtube.com/watch?v=5deXLMLcnKY), [2](https://www.youtube.com/watch?v=38dnMBLuxbQ), [3](https://www.youtube.com/watch?v=6vqg9cAkMbY), [4](https://www.youtube.com/watch?v=5yOLajFFMHE), [5](https://www.youtube.com/watch?v=P5DDvsSF4Wk).
 
 ## <a name="roles"></a>Funções
 Uma função define o conjunto de permissões concedido aos usuários atribuídos a essa função.
@@ -84,8 +86,8 @@ Para ver uma atribuição de função, escolha **Intune** > **Funções** > **To
 
 -   **Propriedades**: o nome, a descrição, a função, os membros, os escopos e as marcas da atribuição.
 -   **Membros**: todos os usuários em grupos listados têm permissão para gerenciar os usuários/dispositivos listados no Escopo (Grupos).
--   **Escopo (Grupos)**: todos os usuários/dispositivos nesses grupos podem ser gerenciados pelos usuários em Membros.
--   **[Escopo (Marcas)](scope-tags.md)**: os usuários em Membros podem ver os recursos que têm as mesmas marcas de escopo.
+-   **Escopo (Grupos)** : todos os usuários/dispositivos nesses grupos podem ser gerenciados pelos usuários em Membros.
+-   **[Escopo (Marcas)](scope-tags.md)** : os usuários em Membros podem ver os recursos que têm as mesmas marcas de escopo.
 
 ### <a name="multiple-role-assignments"></a>Várias atribuições de função
 Se um usuário tiver várias atribuições de função, as permissões nelas se estenderão a diferentes objetos, da seguinte maneira:

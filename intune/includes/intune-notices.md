@@ -7,12 +7,12 @@ ms.topic: include
 ms.date: 03/28/2019
 ms.author: erikje
 ms.custom: include file
-ms.openlocfilehash: 1073a38da8a5b2467b1ff8c97b32b93f92e34e4c
-ms.sourcegitcommit: f90cba0b2c2672ea733052269bcc372a80772945
+ms.openlocfilehash: fab8f2be48a30f6ad058b3eeb6874a44ff04e6ac
+ms.sourcegitcommit: 7ceae61e036ccf8b33704751b0b39fee81944072
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/31/2019
-ms.locfileid: "66454137"
+ms.lasthandoff: 06/06/2019
+ms.locfileid: "66744310"
 ---
 Esses avisos fornecem informações importantes que podem ajudar você a se preparar para os recursos e as alterações futuras do Intune. 
 
@@ -40,3 +40,35 @@ Você não precisa fazer nada, mas é possível atualizar as diretrizes para pro
 
 #### <a name="additional-information"></a>Informações adicionais 
 https://aka.ms/intune_fullscreen
+
+### <a name="plan-for-change-intune-moving-to-support-ios-11-and-higher-in-september----4665342--"></a>Planejar mudanças: Intune passa a ser compatível com o iOS 11 e posteriores em setembro <!-- 4665342-->
+Em setembro, esperamos que o iOS 13 seja lançado pela Apple. O registro do Intune, o Portal da Empresa e o Managed Browser mudarão para ser compatíveis com o iOS 11 e posteriores logo após o lançamento do iOS 13.
+
+#### <a name="how-does-this-affect-me"></a>Como isso me afeta?
+Desde que os aplicativos móveis do O365 sejam compatíveis com o iOS 11.0 e posteriores, isso pode não afetar você. Provavelmente você já atualizou seu sistema operacional ou dispositivos. No entanto, se você tiver algum dos dispositivos listados abaixo ou decidir registrar algum deles, saiba que eles não são compatíveis com um sistema operacional posterior ao iOS 10. Esses dispositivos precisarão ser atualizados para um dispositivo compatíveis com o iOS 11 ou posterior:
+
+- iPhone 5
+- iPhone 5c
+- iPad (4ª geração)
+
+A partir de julho, dispositivos registrados no MDM com iOS 10 e o Portal da Empresa receberão uma solicitação para atualizar seu sistema operacional ou dispositivo. Se você usar APP (Políticas de Proteção de Aplicativo), também poderá definir a configuração de acesso "Exigir o sistema de operacional iOS mínimo (somente aviso)".
+
+#### <a name="what-do-i-need-to-do-to-prepare-for-this-change"></a>O que preciso fazer para me preparar para essa alteração?
+Verifique o relatório do Intune para ver quais dispositivos ou usuários podem ser afetados. Vá para **Dispositivos** > **Todos os dispositivos** e filtre por sistema operacional. É possível adicionar colunas extras para ajudar a identificar quem na sua organização tem dispositivos que executam o iOS 10. Solicite que os usuários finais atualizem seus dispositivos para uma versão de sistema operacional compatível antes de setembro.
+
+### <a name="plan-for-change-support-for-version-811-and-higher-of-intune-app-sdk-for-ios----3586942--"></a>Planejar mudanças: Compatibilidade com a versão 8.1.1 e superiores do SDK de Aplicativo do Intune para iOS <!-- 3586942-->
+Começando em setembro de 2019, o Intune mudará para ser compatível com aplicativos iOS com o SDK de Aplicativo do Intune 8.1.1 e posterior. Os aplicativos criados com versões do SDK anteriores a 8.1.1 não serão mais compatíveis. Essa alteração entrará em vigor com o lançamento da Apple do iOS 13, que deve ocorrer por volta de setembro e também foi anunciado no MC181399.
+
+#### <a name="how-does-this-affect-me"></a>Como isso me afeta?
+Com a Integração de Encapsulamento de Aplicativo ou o SDK de Aplicativo do Intune, você pode proteger dados corporativos de aplicativos e usuários não aprovados por meio da criptografia de dados. O SDK de Aplicativo do Intune para iOS usa as chaves de criptografia de 256 bits por padrão quando a criptografia é habilitada pela APP (Políticas de Proteção de Aplicativo do Intune). Após essa alteração, quaisquer aplicativos iOS em versões do SDK anteriores à 8.1.1, que usam chaves de criptografia de 128 bits, não poderão compartilhar dados com aplicativos integrados ao SDK 8.1.1 ou usando as chaves de 256 bits. Todos os aplicativos do iOS precisarão ter um SDK versão 8.1.1 ou posterior para permitir o compartilhamento de dados protegidos.
+
+#### <a name="what-can-i-do-to-prepare-for-this-change"></a>O que posso fazer para me preparar para essa alteração?
+Verifique seus aplicativos Microsoft, de terceiros e LOB (linha de negócios). Você deve garantir que todos os seus aplicativos protegidos com a APP do Intune estejam usando o SDK versão 8.1.1 ou posterior.
+
+- Para aplicativos LOB: Pode ser necessário publicar novamente seus aplicativos integrados com o SDK versão 8.1.1 ou posterior. Recomendamos a versão mais recente do SDK. Para obter informações sobre como preparar seus aplicativos LOB para políticas de proteção de aplicativo, confira [Preparar aplicativos de linha de negócios para as políticas de proteção de aplicativos](../apps-prepare-mobile-application-management.md).
+- Para aplicativos Microsoft/de terceiros: Certifique-se de que você esteja implantando a versão mais recente desses aplicativos para seus usuários.
+
+Você também deve atualizar sua documentação ou as diretrizes do desenvolvedor, se aplicável, para incluir essa alteração na compatibilidade do SDK.
+
+#### <a name="additional-information"></a>Informações adicionais
+https://docs.microsoft.com/intune/apps-prepare-mobile-application-management

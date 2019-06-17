@@ -15,12 +15,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: abbd226f2b812e1062d56a1d66b3e10bc9d68036
-ms.sourcegitcommit: 78ae22b1a7cb221648fc7346db751269d9c898b1
+ms.openlocfilehash: 78c34345804f600aa62ff5e25ef27a23591e0f5c
+ms.sourcegitcommit: cc5d757018d05fc03ac9ea3d30f563df9bfd61ed
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66374077"
+ms.lasthandoff: 06/10/2019
+ms.locfileid: "66819880"
 ---
 # <a name="enforce-compliance-for-windows-defender-atp-with-conditional-access-in-intune"></a>Impor a conformidade do Windows Defender ATP com acesso condicional no Intune
 
@@ -52,8 +52,7 @@ Para usar ATP com o Intune, verifique se você tem a seguinte configuração e e
 
 ## <a name="enable-windows-defender-atp-in-intune"></a>Habilitar o Windows Defender ATP no Intune
 
-1. Entre no [Portal do Azure](https://portal.azure.com).
-2. Selecione **Todos os serviços**, filtre por **Intune** e selecione **Microsoft Intune**.
+1. Conecte-se ao [Intune](https://go.microsoft.com/fwlink/?linkid=2090973).
 3. Selecione **Conformidade do dispositivo** > **Windows Defender ATP** > **Abrir a Central de Segurança do Windows Defender**.
 
     ![Selecione para abrir a Central de Segurança do Windows Defender](./media/atp-device-compliance-open-windows-defender.png)
@@ -132,7 +131,7 @@ A política de acesso condicional bloqueará o acesso a recursos *se* o disposit
 > [!TIP]  
 > O Acesso Condicional é uma tecnologia do Azure AD (Azure Active Directory). O nó Acesso Condicional acessado no *Intune* é o mesmo nó que o acessado no *Azure AD*.  
 
-1. No [portal do Azure](https://portal.azure.com), abra **Intune** > **Acesso condicional** > **Nova política**.
+1. Entre no [Intune](https://go.microsoft.com/fwlink/?linkid=2090973) e selecione **Acesso condicional** > **Nova política**.
 2. Insira **Nome** da política e selecione **Usuários e grupos**. Use as opções Incluir ou Excluir para adicionar os grupos para a política e selecione **Concluído**.
 3. Selecione **Aplicativos de nuvem** e escolha quais aplicativos proteger. Por exemplo, escolha **Selecionar aplicativos** e selecione **Office 365 SharePoint Online** e **Exchange Online do Office 365**.
 

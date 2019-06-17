@@ -15,12 +15,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 0ed95507d8a7486bc1c1cca2c2a067658239eed8
-ms.sourcegitcommit: 916fed64f3d173498a2905c7ed8d2d6416e34061
+ms.openlocfilehash: 5124796166f27823b7a13b0f3dd239446f778850
+ms.sourcegitcommit: 337b554f9becc40cdea2f5f47a4a129ac491f64c
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/23/2019
-ms.locfileid: "66043532"
+ms.lasthandoff: 06/05/2019
+ms.locfileid: "66713872"
 ---
 # <a name="add-partner-certification-authority-in-intune-using-scep"></a>Adicionar autoridade de certificação de parceiro no Intune usando o SCEP
 
@@ -87,7 +87,7 @@ Verifique se você tem as permissões necessárias para registrar um aplicativo 
    > [!IMPORTANT]  
    > Antes de sair desta página, copie o valor do segredo do cliente e registre-o para ser usado posteriormente durante a implementação da CA de terceiros. Esse valor não é mostrado novamente. Lembre-se de examinar as diretrizes da CA terceirizada sobre como ela deseja configurar a ID do aplicativo, a chave de autenticação e a ID de locatário.  
 
-6. Registre sua **ID de Locatário**. A ID de locatário é o texto do domínio após o sinal @ na conta. Por exemplo, caso sua conta seja *admin@name.onmicrosoft.com*, a ID do locatário será **name.onmicrosoft.com**.  
+6. Registre sua **ID de Locatário**. A ID de locatário é o texto do domínio após o sinal @ na conta. Por exemplo, caso sua conta seja *admin@name.onmicrosoft.com* , a ID do locatário será **name.onmicrosoft.com**.  
 
 7. No painel de navegação do aplicativo, acesse **Permissões de APIs** em **Gerenciar** e escolha **Adicionar uma permissão**.  
 
@@ -123,6 +123,7 @@ As seguintes autoridades de certificação de terceiros dão suporte ao Intune:
 - [GlobalSign](https://downloads.globalsign.com/acton/attachment/2674/f-6903f60b-9111-432d-b283-77823cc65500/1/-/-/-/-/globalsign-aeg-microsoft-intune-integration-guide.pdf)
 - [IDnomic](https://www.idnomic.com/)
 - [Sectigo](https://sectigo.com/products)
+- [DigiCert](https://knowledge.digicert.com/tutorials/microsoft-intune.html)
 
 Caso você tenha uma AC de terceiros interessada em integrar seu produto ao Intune, examine as diretrizes da API:
 
