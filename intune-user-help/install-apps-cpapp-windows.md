@@ -5,7 +5,7 @@ keywords: ''
 author: lenewsad
 ms.author: lanewsad
 manager: dougeby
-ms.date: 02/22/2019
+ms.date: 05/28/2019
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -18,12 +18,12 @@ ms.reviewer: ''
 ms.suite: ems
 ms.custom: intune-enduser
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 25f1bb6d2d78f5c4188d81bc8d9be2cc0c7de43e
-ms.sourcegitcommit: 25e6aa3bfce58ce8d9f8c054bc338cc3dff4a78b
+ms.openlocfilehash: 19e1ec5cda5a69320820899b1cb1c5d665fd9f16
+ms.sourcegitcommit: 2f32f6d2129bc10cc4a02115732e995edceb37d6
 ms.translationtype: MTE75
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "56742526"
+ms.lasthandoff: 06/11/2019
+ms.locfileid: "66828942"
 ---
 # <a name="install-and-share-apps-on-your-device"></a>Instalar e compartilhar aplicativos no seu dispositivo
 Instale aplicativos em seu dispositivo pelo aplicativo Portal da Empresa para Windows.
@@ -70,6 +70,10 @@ Depois de compartilhar, o destinatário receberá um link e uma mensagem para ve
 Sua organização seleciona aplicativos que são apropriados e úteis para você no trabalho ou na escola. Esses aplicativos são os únicos que você encontrará no Portal da Empresa.  
 
 Os aplicativos também são disponibilizados para você com base no tipo de dispositivo. Por exemplo, se estiver usando o aplicativo Portal da Empresa para Windows, você terá acesso aos aplicativos do Windows, mas não aos aplicativos do iOS.  
+
+## <a name="required-apps"></a>Required apps  
+
+Sua organização pode implantar alguns aplicativos diretamente em seu dispositivo e marcá-los como **necessário**. Esses aplicativos serão automaticamente instalados para você sem intervenção.
 
 ## <a name="request-an-app-for-work-or-school"></a>Solicitar um aplicativo para uso corporativo ou de estudante  
 Caso precise de um aplicativo que não está listado no Portal da Empresa, solicite-o. Encontre os detalhes de contato da **Assistência técnica** no aplicativo Portal da Empresa, na página Ajuda e suporte. Você encontrará as mesmas informações de contato no [site do Portal da Empresa](https://go.microsoft.com/fwlink/?linkid=2010980).    
