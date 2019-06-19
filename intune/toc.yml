@@ -50,6 +50,8 @@
       href: tutorial-use-autopilot-enroll-devices.md
     - name: Usar o DEP para registrar os dispositivos iOS
       href: tutorial-use-device-enrollment-program-enroll-ios.md
+    - name: Configurar Slack para usar o Intune
+      href: tutorial-configure-slack-enterprise-grid.md
 - name: Conceitos
   items:
     - name: O que é o gerenciamento de dispositivo?
@@ -662,10 +664,6 @@
               href: troubleshoot-policies-in-microsoft-intune.md
             - name: Problemas e resoluções em perfil de email
               href: troubleshoot-email-profiles-in-microsoft-intune.md
-            - name: Solucionar problemas de atualizações de software
-              href: troubleshoot-software-updates-in-microsoft-intune.md
-            - name: Erros comuns do Endpoint Protection
-              href: troubleshoot-endpoint-protection-in-microsoft-intune.md
             - name: Solucionar problemas de acesso condicional
               href: troubleshoot-conditional-access.md
             - name: Solucionar problemas no Exchange Connector
@@ -968,6 +966,10 @@
               href: manage-license-agreements-for-windows-pc-software-in-microsoft-intune.md
             - name: Resolver conflitos de política
               href: resolve-gpo-and-microsoft-intune-policy-conflicts.md
+            - name: Solucionar problemas de atualizações de software
+              href: troubleshoot-software-updates-in-microsoft-intune.md
+            - name: Erros comuns do Endpoint Protection
+              href: troubleshoot-endpoint-protection-in-microsoft-intune.md
     - name: Guias de implantação de cenário
       items:
         - name: Proteger o Exchange Online
