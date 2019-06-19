@@ -16,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 87bd539199ec4f8b43f0679b251bd550cd837651
-ms.sourcegitcommit: 916fed64f3d173498a2905c7ed8d2d6416e34061
+ms.openlocfilehash: 659fdb9b67b941a27cef5a3680537f3eeb3bbbeb
+ms.sourcegitcommit: 119962948045079022aa48f968dde3e961d7cd0c
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/23/2019
-ms.locfileid: "66041322"
+ms.lasthandoff: 06/12/2019
+ms.locfileid: "67031690"
 ---
 # <a name="audit-export-or-delete-personal-data-in-intune"></a>Auditar, exportar ou excluir dados pessoais no Intune
 
@@ -58,13 +58,13 @@ Há três maneiras de remover os dados pessoais do gerenciamento do Intune:
 
 ### <a name="delete-a-user-from-intune"></a>Excluir um usuário do Intune
 
-Para excluir os dados pessoais de um usuário final do Intune, um administrador precisa [excluir o usuário do AAD (Azure Active Directory)](https://docs.microsoft.com/azure/active-directory/add-users-azure-active-directory.md#delete-users-from-azure-ad). Quando o usuário é excluído do AAD (exclusão irreversível), o Intune recebe o sinal de exclusão do AAD e, em seguida, inicia automaticamente a limpeza de todos os dados pessoais desse usuário do serviço Intune. As informações do usuário serão excluídas do serviço Intune no prazo de até 30 dias após a ação de remoção.
+Para excluir os dados pessoais de um usuário final do Intune, um administrador precisa [excluir o usuário do AAD (Azure Active Directory)](https://docs.microsoft.com/azure/active-directory/fundamentals/add-users-azure-active-directory#delete-a-user). Quando o usuário é excluído do AAD (exclusão irreversível), o Intune recebe o sinal de exclusão do AAD e, em seguida, inicia automaticamente a limpeza de todos os dados pessoais desse usuário do serviço Intune. As informações do usuário serão excluídas do serviço Intune no prazo de até 30 dias após a ação de remoção.
 
 ### <a name="reset-device-to-factory-settings"></a>Restaurar o dispositivo para as configurações de fábrica
 A restauração para as configurações de fábrica restaura todas as configurações de dados pessoais e corporativos para as configurações originais de fábrica. Ela é útil para fornecer um dispositivo para o próximo funcionário. Os arquivos de usuário, os aplicativos instalados pelo usuário e as configurações não padrão são removidas, e esses dados são excluídos do serviço Intune no prazo de até 30 dias após a ação de remoção.
 
 ### <a name="user-self-removal-from-intune-management"></a>Autorremoção de usuário do gerenciamento do Intune
-Os usuários podem remover seus dispositivos pessoais [Android, Apple ou Windows](https://docs.microsoft.com/intune-user-help/unenroll-your-device-from-intune-android.md) do gerenciamento do Intune sem a assistência do administrador.   
+Os usuários podem remover seus dispositivos pessoais [Android, Apple ou Windows](https://docs.microsoft.com/intune-user-help/unenroll-your-device-from-intune-android) do gerenciamento do Intune sem a assistência do administrador.   
 
 ### <a name="retire"></a>Desativar
 A ação **Desativar** remove os dados provisionados pelo Intune, como aplicativos da empresa, dados sobre aplicativos gerenciados pelo Intune, configurações de política e perfis de email que foram provisionados por meio do Intune. Essa ação deixa os dados pessoais do usuário no dispositivo.
@@ -78,7 +78,7 @@ Quando você tem um ambiente de MDM híbrido (Intune integrado ao Configuration 
 
 1. Exclua o usuário do Active Directory (AD) local. Isso impedirá que o usuário seja sincronizado com o Azure AD e também descoberto pela descoberta do Configuration Manager. 
 2. Exclua o usuário do console do Configuration Manager para remover o usuário e os dados associados do Configuration Manager. No console, acesse **Ativo e Conformidade** > **Usuários**, clique com o botão direito do mouse no usuário a ser excluído e clique em **Excluir**.
-3. [Exclua o usuário do AAD](https://docs.microsoft.com/azure/active-directory/add-users-azure-active-directory.md#delete-users-from-azure-ad), o que remove o usuário e os dados associados do Azure Active Directory e do Intune ao mesmo tempo. Quando o usuário é excluído do AAD (exclusão irreversível), o Intune recebe o sinal de exclusão do AAD e, em seguida, inicia automaticamente a limpeza de todos os dados pessoais desse usuário do serviço Intune. As informações do usuário serão excluídas do serviço Intune no prazo de até 30 dias após a ação de remoção.
+3. [Exclua o usuário do AAD](https://docs.microsoft.com/azure/active-directory/fundamentals/add-users-azure-active-directory#delete-a-user), o que remove o usuário e os dados associados do Azure Active Directory e do Intune ao mesmo tempo. Quando o usuário é excluído do AAD (exclusão irreversível), o Intune recebe o sinal de exclusão do AAD e, em seguida, inicia automaticamente a limpeza de todos os dados pessoais desse usuário do serviço Intune. As informações do usuário serão excluídas do serviço Intune no prazo de até 30 dias após a ação de remoção.
 
 > [!Important]
 >A integração de novos clientes MDM híbridos foi preterida. Para obter mais informações, confira a postagem no blog [Migrar do Gerenciamento de dispositivo móvel híbrido para o Intune no Azure](https://techcommunity.microsoft.com/t5/Intune-Customer-Success/Move-from-Hybrid-Mobile-Device-Management-to-Intune-on-Azure/ba-p/280150).
