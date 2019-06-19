@@ -15,12 +15,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: eeb70727a187a769e56a9cfd517ecd7b583ba1c1
-ms.sourcegitcommit: 916fed64f3d173498a2905c7ed8d2d6416e34061
+ms.openlocfilehash: f13b78e05b9f0b94d98677004c7059f1acaa80f9
+ms.sourcegitcommit: 4b83697de8add3b90675c576202ef2ecb49d80b2
 ms.translationtype: MTE75
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/23/2019
-ms.locfileid: "66042460"
+ms.lasthandoff: 06/13/2019
+ms.locfileid: "67045714"
 ---
 # <a name="android-and-samsung-knox-standard-device-restriction-settings-lists-in-intune"></a>Listas de configurações de restrições de dispositivo Android e Samsung Knox Standard no Intune
 
@@ -49,7 +49,7 @@ Este artigo mostra todas as configurações de restrições de dispositivo do Mi
 - **Senha**: **Exigir** que o usuário final insira uma senha para acessar o dispositivo. **Não configurado** permite que os usuários acessem o dispositivo sem inserir uma senha.
 
     > [!NOTE]
-    > Os dispositivos Samsung Knox automaticamente exigem um PIN de quatro dígitos durante o registro do MDM. Dispositivos Android nativos podem automaticamente exigir que um PIN fique em conformidade com acesso condicional.
+    > Os dispositivos Samsung Knox automaticamente exigem um PIN de quatro dígitos durante o registro do MDM. Dispositivos Android nativos podem automaticamente exigir que um PIN fique em conformidade com Acesso Condicional.
 
 - **Comprimento mínimo da senha**: insira o comprimento mínimo da senha que um usuário deve inserir (entre 4 e 16 caracteres).
 - **Máximo de minutos de inatividade até o bloqueio da tela**: insira o número máximo de minutos de inatividade permitido, antes que a tela do dispositivo seja bloqueada. O usuário final não pode definir um valor temporal superior ao tempo configurado no perfil do dispositivo. O usuário final pode definir um valor temporal inferior. Por exemplo, se o perfil estiver definido para 15 minutos, o usuário final poderá definir o valor para cinco minutos. Entretanto, ele não poderá definir o valor para 30 minutos. 

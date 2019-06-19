@@ -16,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: ''
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 51ad3b2db3a45c06c0019b6f57ac4147112807fa
-ms.sourcegitcommit: 916fed64f3d173498a2905c7ed8d2d6416e34061
+ms.openlocfilehash: 5d229972c238756598694d2e3463f22290924ccc
+ms.sourcegitcommit: 4b83697de8add3b90675c576202ef2ecb49d80b2
 ms.translationtype: MTE75
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/23/2019
-ms.locfileid: "66049828"
+ms.lasthandoff: 06/13/2019
+ms.locfileid: "67045479"
 ---
 # <a name="microsoft-intune-app-sdk-for-ios-developer-guide"></a>Guia do desenvolvedor do SDK de Aplicativos do Microsoft Intune para iOS
 
@@ -166,7 +166,7 @@ Normalmente, a ADAL requer que os aplicativos se registrem no AAD (Azure Active 
 
 Se o aplicativo já usar ADAL para autenticar usuários, o aplicativo deverá usar seus valores de registro existentes e substituir os valores padrão do SDK de Aplicativos do Intune. Isso garante que a autenticação não seja solicitada duas vezes aos usuários (uma vez pelo SDK de Aplicativos do Intune e uma vez pelo aplicativo).
 
-É recomendável que seu aplicativo contenha links para a [versão mais recente da ADAL](https://github.com/AzureAD/azure-activedirectory-library-for-objc/releases) na sua ramificação mestre. Atualmente, o SDK de Aplicativos do Intune usa a ramificação do agente da ADAL para dar suporte a aplicativos que precisam de acesso condicional. (Esses aplicativos, portanto, dependem do aplicativo Microsoft Authenticator.) No entanto, o SDK ainda é compatível com a ramificação mestre da ADAL. Use a ramificação apropriada para seu aplicativo.
+É recomendável que seu aplicativo contenha links para a [versão mais recente da ADAL](https://github.com/AzureAD/azure-activedirectory-library-for-objc/releases) na sua ramificação mestre. Atualmente, o SDK de Aplicativos do Intune usa a ramificação do agente da ADAL para dar suporte a aplicativos que precisam de Acesso Condicional. (Esses aplicativos, portanto, dependem do aplicativo Microsoft Authenticator.) No entanto, o SDK ainda é compatível com a ramificação mestre da ADAL. Use a ramificação apropriada para seu aplicativo.
 
 ### <a name="link-to-adal-binaries"></a>Vincular a binários da ADAL
 

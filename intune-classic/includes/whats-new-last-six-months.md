@@ -1,10 +1,10 @@
 ---
-ms.openlocfilehash: 9a18bceb6b42f06464baf31a4cdd4dea21d19675
-ms.sourcegitcommit: 25e6aa3bfce58ce8d9f8c054bc338cc3dff4a78b
+ms.openlocfilehash: 984b78b271d130618ec0994f76e966f1dc338706
+ms.sourcegitcommit: 4b83697de8add3b90675c576202ef2ecb49d80b2
 ms.translationtype: MTE75
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57461287"
+ms.lasthandoff: 06/13/2019
+ms.locfileid: "67044700"
 ---
 ## <a name="april-2017"></a>Abril de 2017
 
@@ -26,7 +26,7 @@ Uma atualização para o aplicativo de Portal da empresa Android mostra um indic
 
 #### <a name="block-apps-from-accessing-sharepoint-online----679339---"></a>Bloquear o acesso dos aplicativos ao SharePoint Online <!-- 679339 -->
 
-Agora você pode criar uma política de acesso condicional baseada no aplicativo para bloquear aplicativos, que não têm políticas de proteção de aplicativo aplicadas a elas acessando [SharePoint Online](/intune-classic/deploy-use/mam-ca-for-sharepoint-online). No cenário de acesso condicional baseado em aplicativos, você pode especificar os aplicativos os quais deseja conceder acesso ao SharePoint Online usando o Portal do Azure.
+Agora você pode criar uma política de Acesso Condicional baseado em aplicativo para impedir que aplicativos sem políticas de proteção aplicadas a eles acessem o [SharePoint Online](/intune-classic/deploy-use/mam-ca-for-sharepoint-online). No cenário de Acesso Condicional baseado em aplicativo, você pode especificar os aplicativos que terão acesso ao SharePoint Online usando o portal do Azure.
 
 #### <a name="single-sign-in-support-from-the-company-portal-for-ios-to-outlook-for-ios---834012--"></a>Suporte de logon único do Portal da Empresa para iOS com o Outlook para iOS <!--834012-->
 Os usuários não precisam mais entrar no aplicativo do Outlook se estiverem conectados no aplicativo de Portal da empresa para iOS no mesmo dispositivo com a mesma conta. Quando os usuários iniciarem o aplicativo do Outlook, eles poderão selecionar sua conta e se conectar automaticamente. Também estamos trabalhando para adicionar essa funcionalidade para outros aplicativos da Microsoft.
@@ -112,14 +112,14 @@ Disponibilizamos uma versão do aplicativo Portal da Empresa para iOS por meio d
 
 #### <a name="support-for-skycure"></a>Suporte para Skycure
 
-Agora, é possível controlar o acesso de dispositivos móveis a recursos corporativos usando o acesso condicional com base na avaliação de risco realizada pelo Skycure, uma solução de defesa contra ameaças móveis integrada ao Microsoft Intune. O risco é avaliado com base na telemetria coletada dos dispositivos com o Skycure em execução, incluindo:
+Agora, é possível controlar o acesso de dispositivos móveis a recursos corporativos usando o Acesso Condicional com base na avaliação de risco realizada pelo Skycure, uma solução de defesa contra ameaças móveis integrada ao Microsoft Intune. O risco é avaliado com base na telemetria coletada dos dispositivos com o Skycure em execução, incluindo:
 
 - Defesa física
 - Defesa de rede
 - Defesa do aplicativo
 - Defesa de vulnerabilidades
 
-É possível configurar políticas de acesso condicional de EMS com base na avaliação de risco do Skycure habilitada por meio das políticas de conformidade de dispositivo do Intune. Use essas políticas para permitir ou bloquear o acesso de dispositivos não compatíveis aos recursos corporativos com base em ameaças detectadas. Para saber mais, confira [Conector de Defesa contra Ameaças Móveis do Skycure](/intune-classic/deploy-use/skycure-mobile-threat-defense-connector).
+É possível configurar políticas de Acesso Condicional de EMS com base na avaliação de risco do Skycure habilitada por meio das políticas de conformidade de dispositivo do Intune. Use essas políticas para permitir ou bloquear o acesso de dispositivos não compatíveis aos recursos corporativos com base em ameaças detectadas. Para saber mais, confira [Conector de Defesa contra Ameaças Móveis do Skycure](/intune-classic/deploy-use/skycure-mobile-threat-defense-connector).
 
 #### <a name="new-user-experience-for-the-company-portal-app-for-android---621622--"></a>Nova experiência do usuário para o aplicativo Portal da Empresa para Android <!--621622-->
 

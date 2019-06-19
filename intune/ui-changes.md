@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 207a3f950d6fca2d6fcbe024f24fbf05487f2151
-ms.sourcegitcommit: 916fed64f3d173498a2905c7ed8d2d6416e34061
+ms.openlocfilehash: 052190185159dfdee4adee94d4c43c72ce6f41d4
+ms.sourcegitcommit: 4b83697de8add3b90675c576202ef2ecb49d80b2
 ms.translationtype: MTE75
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/23/2019
-ms.locfileid: "66040401"
+ms.lasthandoff: 06/13/2019
+ms.locfileid: "67046331"
 ---
 # <a name="where-did-my-intune-feature-go-in-azure"></a>Para onde foi o meu recurso Intune no Azure?
 Aproveitamos a oportunidade para organizar algumas tarefas mais logicamente à medida que mudamos o Intune para o portal do Azure. Mas cada aperfeiçoamento vem com o custo de aprender a nova organização. Este guia de referência destina-se àqueles que estão totalmente familiarizados com o Intune no portal clássico e querem saber como fazer algo no Intune por meio do portal do Azure. Se este artigo não abordar um recurso que você está tentando localizar, deixe um comentário no final do artigo para que possamos atualizá-lo.
@@ -69,15 +69,15 @@ A capacidade de permitir ou bloquear dispositivos de propriedade pessoal agora �
 
 Novos recursos de restrição são adicionados ao Portal do Azure apenas.
 
-## <a name="where-did-my-conditional-access-policies-go"></a>Para que local foram minhas políticas de acesso condicional?
-Depois que o locatário é migrado para o portal do Azure, as políticas de acesso condicional do locatário continuam sendo impostas. No entanto, não é possível exibir nem modificá-las por meio do Intune no portal do Azure.
+## <a name="where-did-my-conditional-access-policies-go"></a>Para que local foram minhas políticas de Acesso Condicional?
+Depois que o locatário é migrado para o portal do Azure, as políticas de Acesso Condicional do locatário continuam sendo impostas. No entanto, não é possível exibir nem modificá-las por meio do Intune no portal do Azure.
 
-Se você desejar exibir e fazer alterações nas políticas de acesso condicional por meio do portal do Azure, precisará remover as políticas antigas do portal clássico. Em seguida, recrie-as no portal do Azure. Para obter mais informações sobre como migrar as políticas de acesso condicional, confira [Migrar as políticas clássicas no portal do Azure](https://docs.microsoft.com/azure/active-directory/active-directory-conditional-access-migration). 
+Se você desejar exibir e fazer alterações nas políticas de Acesso Condicional por meio do portal do Azure, precisará remover as políticas antigas do portal clássico. Em seguida, recrie-as no portal do Azure. Para obter mais informações sobre como migrar as políticas de Acesso Condicional, confira [Migrar as políticas clássicas no portal do Azure](https://docs.microsoft.com/azure/active-directory/active-directory-conditional-access-migration). 
 
 ## <a name="where-did-my-compliance-policies-go"></a>Para que local foram minhas políticas de conformidade?
 Depois que o locatário é migrado para o portal do Azure, as políticas de conformidade do locatário continuam sendo impostas. No entanto, não é possível exibir nem modificá-las por meio do Intune no portal do Azure.
 
-Se você desejar exibir e fazer alterações nas políticas de conformidade por meio do portal do Azure, precisará remover as políticas antigas do portal clássico. Em seguida, recrie-as no portal do Azure. Para obter mais informações sobre as políticas de conformidade do dispositivo, confira [Introdução às políticas de conformidade do dispositivo no Intune](https://docs.microsoft.com/intune/known-issues#compliance). 
+Se você desejar exibir e fazer alterações nas políticas de conformidade por meio do portal do Azure, precisará remover as políticas antigas do portal clássico. Em seguida, recrie-as no portal do Azure. Para obter mais informações sobre as políticas de conformidade do dispositivo, confira [Introdução às políticas de conformidade do dispositivo no Intune](https://docs.microsoft.com/intune/device-compliance-get-started). 
 
 ## <a name="where-did-apple-dep-go"></a>Para onde foi o Apple DEP?
 No Portal Clássico, você podia configurar o Intune para integrar o Programa de registro de dispositivos da Apple e solicitar manualmente a sincronização com o serviço da Apple:

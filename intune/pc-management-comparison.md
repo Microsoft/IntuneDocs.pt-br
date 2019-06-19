@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic-keep
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 47c5892541359263383621307d269936f01fa2c6
-ms.sourcegitcommit: 916fed64f3d173498a2905c7ed8d2d6416e34061
+ms.openlocfilehash: e3665a785391d2bff707bf5b8fe0a7e4f6e8a43d
+ms.sourcegitcommit: 4b83697de8add3b90675c576202ef2ecb49d80b2
 ms.translationtype: MTE75
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/23/2019
-ms.locfileid: "66041543"
+ms.lasthandoff: 06/13/2019
+ms.locfileid: "67044515"
 ---
 # <a name="compare-managing-windows-pcs-as-computers-or-mobile-devices"></a>Comparar o gerenciamento de computadores Windows como computadores ou dispositivos móveis
 
@@ -34,7 +34,7 @@ As organizações podem usar o Microsoft Intune para gerenciar computadores Wind
 |--------------|-------------------------------|-------------------------------|
 |**Sistemas operacionais** |Windows 10, Windows 8+, Windows 7, Windows Vista | Windows 10+ |
 |**Suporte do Portal do Intune** |[Console do Silverlight](https://manage.microsoft.com)|[Portal do Azure](https://portal.azure.com) |
-|**Acesso condicional**|Não disponível|Disponível <br>[O que é o acesso condicional?](conditional-access.md)|
+|**Acesso condicional**|Não disponível|Disponível <br>[O que é o Acesso Condicional?](conditional-access.md)|
 |**Registro em massa**|Não disponível|Disponível <br>[Registro em massa para dispositivos Windows](windows-bulk-enroll.md)|
 |**Perfis de dispositivo**|Não disponível|Disponível <br>[O que são perfis de dispositivo do Microsoft Intune?](device-profiles.md)|
 |**Registro sem agente**|Não disponível |Disponível<br>[Registrar dispositivos Windows](windows-enroll.md)|
@@ -43,7 +43,7 @@ As organizações podem usar o Microsoft Intune para gerenciar computadores Wind
 |**Inventário**|Disponível <br>[Exibir o inventário de software e hardware de computadores Windows](view-hardware-and-software-inventory-for-windows-pcs-in-microsoft-intune.md)|Disponível <br>[Como monitorar as informações do aplicativo](apps-monitor.md)<br>[O que é o gerenciamento de dispositivo](device-management.md)|
 |**Política de Firewall do Windows**|Disponível <br>[Ajude a proteger Computadores Windows usando políticas de Firewall do Windows](help-protect-windows-pcs-using-windows-firewall-policies-in-microsoft-intune.md) |Disponível <br>[Windows Defender Firewall](endpoint-protection-windows-10.md#windows-defender-firewall)|
 |**Proteção antimalware**|Endpoint Protection<br>[Ajudar a proteger computadores Windows com o Endpoint Protection](help-secure-windows-pcs-with-endpoint-protection-for-microsoft-intune.md)|Windows Defender<br>[Habilitar o Windows Defender](advanced-threat-protection.md)|
-|**Assistência remota** |TeamViewer<br>[Solicitar e fornecer assistência remota para computadores Windows](request-and-provide-remote-assistance-for-windows-pcs-in-microsoft-intune.md)|TeamViewer<br> [Usar o TeamViewer para administrar remotamente os dispositivos do Intune](device-profile-android-teamviewer.md) |
+|**Assistência remota** |TeamViewer<br>[Solicitar e fornecer assistência remota para computadores Windows](request-and-provide-remote-assistance-for-windows-pcs-in-microsoft-intune.md)|TeamViewer<br> [Usar o TeamViewer para administrar remotamente os dispositivos do Intune](teamviewer-support.md) |
 |**Implantação de aplicativo** | Não disponível para a Microsoft Store para Empresas,<br>somente .exe, .appx e .msi de vários arquivos<br>[Adicionar aplicativos a computadores Windows que executam o cliente de software do Intune](add-apps-for-windows-pcs-in-microsoft-intune.md)|Disponível para aplicativos da Microsoft Store e aplicativos de linha de negócios<br>[Como adicionar aplicativos da Windows Store](store-apps-windows.md)<br>[Como adicionar aplicativos LOB (aplicativos de linha de negócios) do Windows](lob-apps-windows.md)|
 |**Proteção de aplicativo**|Não disponível|Disponível <br>[O que são políticas de proteção do aplicativo?](app-protection-policy.md)|
 |**Atestado de integridade**|Não disponível|Disponível|

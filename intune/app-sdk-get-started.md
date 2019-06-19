@@ -16,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: b5672963c6737d51e720a8b1597dd90318f33a05
-ms.sourcegitcommit: 095fd4c324850aae8ebe32be43fa074361816a4b
-ms.translationtype: HT
+ms.openlocfilehash: e3b0aff29db5402de7e91282e74cd6d69a103545
+ms.sourcegitcommit: 4b83697de8add3b90675c576202ef2ecb49d80b2
+ms.translationtype: MTE75
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/04/2019
-ms.locfileid: "66506869"
+ms.lasthandoff: 06/13/2019
+ms.locfileid: "67045816"
 ---
 # <a name="get-started-with-the-microsoft-intune-app-sdk"></a>Introdução ao SDK de Aplicativos do Microsoft Intune
 
@@ -89,9 +89,9 @@ Você precisará de um dos seguintes guias do desenvolvedor para ajudá-lo a int
 
 
 
-## <a name="enable-your-ios-or-android-app-for-app-based-conditional-access"></a>Habilitar o aplicativo iOS ou Android para acesso condicional com base em aplicativo
+## <a name="enable-your-ios-or-android-app-for-app-based-conditional-access"></a>Habilitar o aplicativo iOS ou Android para Acesso Condicional baseado em aplicativo
  
- Além de habilitar o aplicativo com a política de proteção do aplicativo, para que ele funcione corretamente com o acesso condicional baseado no aplicativo AAD (Azure ActiveDirectory), é necessário o seguinte:
+ Além de habilitar o aplicativo com a política de proteção do aplicativo, para que ele funcione corretamente com o Acesso Condicional baseado em aplicativo AAD (Azure ActiveDirectory), é necessário o seguinte:
  
  * Criar o aplicativo com a [Biblioteca de Autenticação do Azure Active Directory](https://docs.microsoft.com/azure/active-directory/develop/active-directory-authentication-libraries) e habilitá-lo para autenticação com o Agente do AAD.
  

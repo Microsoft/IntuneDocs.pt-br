@@ -16,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 6f2a88e6e807ea78e4a26abe71eb1b5997ea7256
-ms.sourcegitcommit: 916fed64f3d173498a2905c7ed8d2d6416e34061
+ms.openlocfilehash: c554f2ab9fabf83695489ab5e6acd65e8d28f34c
+ms.sourcegitcommit: 4b83697de8add3b90675c576202ef2ecb49d80b2
 ms.translationtype: MTE75
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/23/2019
-ms.locfileid: "66044412"
+ms.lasthandoff: 06/13/2019
+ms.locfileid: "67046240"
 ---
 # <a name="whats-new-in-the-intune-classic-portal---previous-months"></a>Novidades do Portal Clássico do Intune – meses anteriores
 
@@ -49,7 +49,7 @@ Uma atualização para o aplicativo de Portal da empresa Android mostra um indic
 
 #### <a name="block-apps-from-accessing-sharepoint-online----679339---"></a>Bloquear o acesso dos aplicativos ao SharePoint Online <!-- 679339 -->
 
-Agora você pode criar uma política de acesso condicional baseada no aplicativo para bloquear aplicativos, que não têm políticas de proteção de aplicativo aplicadas a elas acessando [SharePoint Online](app-based-conditional-access-intune-create.md). No cenário de acesso condicional baseado em aplicativos, você pode especificar os aplicativos os quais deseja conceder acesso ao SharePoint Online usando o Portal do Azure.
+Agora você pode criar uma política de Acesso Condicional baseado em aplicativo para impedir que aplicativos sem políticas de proteção aplicadas a eles acessem o [SharePoint Online](app-based-conditional-access-intune-create.md). No cenário de Acesso Condicional baseado em aplicativo, você pode especificar os aplicativos que terão acesso ao SharePoint Online usando o portal do Azure.
 
 #### <a name="single-sign-on-support-from-the-company-portal-for-ios-to-outlook-for-ios---834012--"></a>Suporte de logon único do Portal da Empresa para iOS com o Outlook para iOS <!--834012-->
 Os usuários não precisam mais entrar no aplicativo do Outlook se estiverem conectados no aplicativo de Portal da empresa para iOS no mesmo dispositivo com a mesma conta. Quando os usuários iniciarem o aplicativo do Outlook, eles poderão selecionar sua conta e se conectar automaticamente. Também estamos trabalhando para adicionar essa funcionalidade para outros aplicativos da Microsoft.
@@ -135,14 +135,14 @@ Disponibilizamos uma versão do aplicativo Portal da Empresa para iOS por meio d
 
 #### <a name="support-for-skycure"></a>Suporte para Skycure
 
-Agora, é possível controlar o acesso de dispositivos móveis a recursos corporativos usando o acesso condicional com base na avaliação de risco realizada pelo Skycure, uma solução de defesa contra ameaças móveis integrada ao Microsoft Intune. O risco é avaliado com base na telemetria coletada dos dispositivos com o Skycure em execução, incluindo:
+Agora, é possível controlar o acesso de dispositivos móveis a recursos corporativos usando o Acesso Condicional com base na avaliação de risco realizada pelo Skycure, uma solução de defesa contra ameaças móveis integrada ao Microsoft Intune. O risco é avaliado com base na telemetria coletada dos dispositivos com o Skycure em execução, incluindo:
 
 - Defesa física
 - Defesa de rede
 - Defesa do aplicativo
 - Defesa de vulnerabilidades
 
-É possível configurar políticas de acesso condicional de EMS com base na avaliação de risco do Symantec Endpoint Protection Mobile (Skycure) habilitada por meio das políticas de conformidade de dispositivo do Intune. Use essas políticas para permitir ou bloquear o acesso de dispositivos não compatíveis aos recursos corporativos com base em ameaças detectadas. Para saber mais, confira [Conector do Symantec Endpoint Protection Mobile](skycure-mobile-threat-defense-connector.md).
+É possível configurar políticas de Acesso Condicional de EMS com base na avaliação de risco do Symantec Endpoint Protection Mobile (Skycure) habilitada por meio das políticas de conformidade de dispositivo do Intune. Use essas políticas para permitir ou bloquear o acesso de dispositivos não compatíveis aos recursos corporativos com base em ameaças detectadas. Para saber mais, confira [Conector do Symantec Endpoint Protection Mobile](skycure-mobile-threat-defense-connector.md).
 
 #### <a name="new-user-experience-for-the-company-portal-app-for-android---621622--"></a>Nova experiência do usuário para o aplicativo Portal da Empresa para Android <!--621622-->
 

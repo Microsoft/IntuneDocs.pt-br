@@ -5,7 +5,7 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 05/29/2019
+ms.date: 06/12/2019
 ms.topic: reference
 ms.service: microsoft-intune
 ms.localizationpriority: medium
@@ -14,12 +14,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure; seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 2950ddf4b130222e23fd9ea23f7c9e5793f8638a
-ms.sourcegitcommit: 229816afef86a9767eaca816d644c77ec4babed5
-ms.translationtype: MTE75
+ms.openlocfilehash: 357d1619fdf051d07ea47c84a79b2aebd1523460
+ms.sourcegitcommit: a2bad7465422b98eb3c10f03dc5a24fd99cee78d
+ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66354215"
+ms.lasthandoff: 06/13/2019
+ms.locfileid: "67041134"
 ---
 # <a name="windows-10-and-newer-device-settings-to-allow-or-restrict-features-using-intune"></a>Configurações de dispositivo Windows 10 (e mais recente) para permitir ou restringir recursos usando o Intune
 
@@ -430,9 +430,9 @@ Essas configurações usam o [CSP da política de DeviceLock](https://docs.micro
     > [!IMPORTANT]
     > Quando o requisito de senha é alterado em uma área de trabalho do Windows, os usuários são afetados na próxima vez que fizerem logon, como quando o dispositivo passa de ocioso para ativo. Os usuários com senhas que atendam ao requisito ainda serão solicitados a alterar suas senhas.
     
-  - **Número de falhas de conexão antes de apagar o dispositivo**: insira o número de falhas de autenticação repetidas permitidas antes de o dispositivo ser apagado, de 1 a 11. `0` (zero) pode desabilitar a funcionalidade de apagamento do dispositivo.
+  - **Número de falhas de conexão antes de apagar o dispositivo**: insira o número de falhas de autenticação repetidas permitidas antes que o dispositivo possa ser apagado, até 11. O número válido inserido dependerá da edição. [CSP DeviceLock/MaxDevicePasswordFailedAttempts](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-devicelock#devicelock-maxdevicepasswordfailedattempts) lista os valores com suporte. `0` (zero) pode desabilitar a funcionalidade de apagamento do dispositivo.
 
-    Essa configuração tem um impacto diferente, dependendo da edição. Para obter detalhes específicos, consulte o [CSP de DeviceLock/MaxDevicePasswordFailedAttempts](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-devicelock#devicelock-maxdevicepasswordfailedattempts).
+    Essa configuração também tem um impacto diferente, dependendo da edição. Para obter detalhes específicos dessa configuração, confira o [CSP de DeviceLock/MaxDevicePasswordFailedAttempts](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-devicelock#devicelock-maxdevicepasswordfailedattempts).
 
   - **Máximo de minutos de inatividade até o bloqueio de tela**: insira o período que um dispositivo deve permanecer ocioso antes de a tela ser bloqueada.
   - **Expiração de senha (dias)** : insira o período de tempo em dias após o qual a senha do dispositivo deve ser alterada, de 1 a 365. Por exemplo, para alterar a senha após 90 dias, insira `90`.

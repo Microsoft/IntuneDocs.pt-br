@@ -1,7 +1,7 @@
 ---
 title: Solucionar problemas de acesso condicional
 titleSuffix: Microsoft Intune
-description: O que fazer quando os usuários não obtêm acesso aos recursos por meio de acesso condicional do Intune.
+description: O que fazer quando os usuários não obtêm acesso aos recursos por meio de Acesso Condicional do Intune.
 keywords: ''
 author: brenduns
 ms.author: brenduns
@@ -17,20 +17,20 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 9a5aeae0d4256232d01c7e6171b10159a130b513
-ms.sourcegitcommit: 916fed64f3d173498a2905c7ed8d2d6416e34061
+ms.openlocfilehash: f286ec4928ad4bb026c95d10562d9b339b2ca5f3
+ms.sourcegitcommit: 4b83697de8add3b90675c576202ef2ecb49d80b2
 ms.translationtype: MTE75
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/23/2019
-ms.locfileid: "66044683"
+ms.lasthandoff: 06/13/2019
+ms.locfileid: "67043906"
 ---
 # <a name="troubleshoot-conditional-access"></a>Solucionar problemas de acesso condicional
 
-É possível proteger o acesso a serviços do Office 365 como o Exchange Online, SharePoint Online, Skype for Business Online, Exchange no Local e a outros serviços usando o Intune e o acesso condicional. Essa funcionalidade permite que você garanta que o acesso aos recursos da empresa está restrito aos dispositivos que estão registrados no Intune e em conformidade com as regras de acesso condicional definidas no console de administração do Intune ou no Azure Active Directory. Este artigo descreve o que fazer quando os usuários não obtêm acesso aos recursos protegidos com acesso condicional, ou quando os usuários podem acessar os recursos protegidos que deveriam estar bloqueados.
+É possível proteger o acesso a serviços do Office 365 como o Exchange Online, SharePoint Online, Skype for Business Online, Exchange no Local e a outros serviços usando o Intune e o Acesso Condicional. Essa funcionalidade permite que você garanta que o acesso aos recursos da empresa está restrito aos dispositivos que estão registrados no Intune e em conformidade com as regras de Acesso Condicional definidas no console de administração do Intune ou no Azure Active Directory. Este artigo descreve o que fazer quando os usuários não obtêm acesso aos recursos protegidos com Acesso Condicional, ou quando os usuários podem acessar os recursos protegidos que deveriam estar bloqueados.
 
-## <a name="requirements-for-conditional-access"></a>Requisitos para acesso condicional
+## <a name="requirements-for-conditional-access"></a>Requisitos para Acesso Condicional
 
-Os seguintes requisitos precisam ser cumpridos para que o acesso condicional funcione:
+Os seguintes requisitos precisam ser cumpridos para que o Acesso Condicional funcione:
 
 - O dispositivo precisa ser registrado e gerenciado pelo Intune.
 - Tanto o usuário quanto o dispositivo precisam estar em conformidade com as políticas de conformidade atribuídas no Intune.
@@ -54,7 +54,7 @@ Exiba essas condições para cada dispositivo no portal do Azure e no relatório
 - Certos dispositivos Android podem parecer criptografados, mas o aplicativo do Portal da Empresa os reconhece como não criptografados, tornando-os incompatíveis. Nesse cenário, o usuário verá uma notificação no aplicativo do Portal da Empresa solicitando a definição de uma senha de inicialização para o dispositivo. Depois de tocar na notificação e confirmar o PIN ou a senha atual, escolha a opção **Exigir PIN para iniciar o dispositivo** na tela **Proteger inicialização** e, em seguida, toque no botão **Verificar conformidade** para o dispositivo no aplicativo do Portal da Empresa. Agora o dispositivo deve ser detectado como criptografado. 
   > [!NOTE]
   > Alguns fabricantes criptografam seus dispositivos usando um PIN padrão em vez daquele definido pelo usuário. A criptografia de exibições do Intune usando um PIN padrão é insegura e marcará tais dispositivos como incompatíveis até que o usuário crie uma nova senha, um PIN não padrão.
-- Um dispositivo Android registrado e em conformidade ainda pode ser bloqueado e receber um aviso de quarentena ao tentar acessar recursos corporativos pela primeira vez. Se isso ocorrer, verifique se o aplicativo do Portal da Empresa não está em execução e clique no link **Comece a usar agora mesmo** no email de quarentena para disparar a avaliação. Só será necessário fazer isso quando o acesso condicional é habilitado pela primeira vez.
+- Um dispositivo Android registrado e em conformidade ainda pode ser bloqueado e receber um aviso de quarentena ao tentar acessar recursos corporativos pela primeira vez. Se isso ocorrer, verifique se o aplicativo do Portal da Empresa não está em execução e clique no link **Comece a usar agora mesmo** no email de quarentena para disparar a avaliação. Só será necessário fazer isso quando o Acesso Condicional é habilitado pela primeira vez.
 
 ## <a name="devices-are-blocked-and-no-quarantine-email-is-received"></a>Os dispositivos estão bloqueados e nenhum email de quarentena foi recebido
 
@@ -64,10 +64,10 @@ Exiba essas condições para cada dispositivo no portal do Azure e no relatório
 
 ## <a name="devices-are-noncompliant-but-users-are-not-blocked"></a>Os dispositivos são incompatíveis, mas os usuários não estão bloqueados
 
-- Para computadores Windows, o acesso condicional bloqueia somente o aplicativo de email nativo, o Office 2013 com autenticação moderna ou o Office 2016. O bloqueio de versões anteriores do Outlook ou de todos os aplicativos de email em computadores Windows exige o Registro de Dispositivo do Azure Active Directory e as configurações do AD FS (Serviços de Federação do Active Directory) de acordo com o artigo [Configurar o SharePoint Online e o Exchange Online para acesso condicional do Azure Active Directory](https://docs.microsoft.com/azure/active-directory/active-directory-conditional-access-no-modern-authentication). 
+- Para computadores Windows, o Acesso Condicional bloqueia somente o aplicativo de email nativo, o Office 2013 com autenticação moderna ou o Office 2016. O bloqueio de versões anteriores do Outlook ou de todos os aplicativos de email em computadores Windows exige o Registro de Dispositivo do Azure Active Directory e as configurações do AD FS (Serviços de Federação do Active Directory) de acordo com o artigo [Configurar o SharePoint Online e o Exchange Online para Acesso Condicional do Azure Active Directory](https://docs.microsoft.com/azure/active-directory/active-directory-conditional-access-no-modern-authentication). 
 - Se o dispositivo for seletivamente desativado ou apagado do Intune, ele poderá continuar a ter acesso por várias horas após a desativação. Isso ocorre porque o Exchange armazena em cache os direitos de acesso por 6 horas. Considere outros meios de proteção de dados em dispositivos desativados neste cenário.
-- Dispositivos do Surface Hub são compatíveis com o acesso condicional. É preciso implantar a política de conformidade para os grupos de dispositivos (não grupo de usuários) para avaliação correta.
-- Verifique as atribuições das suas políticas de conformidade e as políticas de acesso condicional. Se um usuário não estiver no grupo que recebe as políticas ou se estiver em um grupo que está sendo excluído, ele não será bloqueado. Somente a conformidade dos dispositivos de usuários em um grupo atribuído é verificada.
+- Dispositivos do Surface Hub são compatíveis com o Acesso Condicional. É preciso implantar a política de conformidade para os grupos de dispositivos (não grupo de usuários) para avaliação correta.
+- Verifique as atribuições das suas políticas de conformidade e as políticas de Acesso Condicional. Se um usuário não estiver no grupo que recebe as políticas ou se estiver em um grupo que está sendo excluído, ele não será bloqueado. Somente a conformidade dos dispositivos de usuários em um grupo atribuído é verificada.
 
 ## <a name="noncompliant-device-is-not-blocked"></a>Dispositivo incompatível não bloqueado
 

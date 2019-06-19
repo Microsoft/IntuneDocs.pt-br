@@ -16,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 5808a4b81fcc66d37e78c50cb5bcd2ae7bbe44e2
-ms.sourcegitcommit: 916fed64f3d173498a2905c7ed8d2d6416e34061
+ms.openlocfilehash: c929965b79d9ee35fcc1094b4ad18cff6d73d80d
+ms.sourcegitcommit: 4b83697de8add3b90675c576202ef2ecb49d80b2
 ms.translationtype: MTE75
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/23/2019
-ms.locfileid: "66049613"
+ms.lasthandoff: 06/13/2019
+ms.locfileid: "67045536"
 ---
 # <a name="microsoft-intune-app-sdk-for-android-developer-guide"></a>Guia do SDK de Aplicativo do Microsoft Intune para desenvolvedores do Android
 
@@ -732,7 +732,7 @@ CA (Acesso Condicional) é um [recurso](https://docs.microsoft.com/azure/active-
 4. Teste se tudo está configurado corretamente habilitando o [CA baseado em dispositivo](https://docs.microsoft.com/intune/conditional-access-intune-common-ways-use) pelo [portal do Azure](https://portal.azure.com/#blade/Microsoft_Intune_DeviceSettings/ExchangeConnectorMenu/aad/connectorType/2) e confirmando
     - Que a conexão ao seu aplicativo solicita a instalação e o registro do Portal da Empresa do Intune
     - Que, após o registro, a conexão ao seu aplicativo é concluída com êxito.
-5. Depois que seu aplicativo tiver sido enviado para a integração do SDK do Aplicativo do Intune, entre em contato com msintuneappsdk@microsoft.com para ser adicionado à lista de aplicativos aprovados para [acesso condicional baseado no aplicativo](https://docs.microsoft.com/intune/conditional-access-intune-common-ways-use#app-based-conditional-access)
+5. Depois que o aplicativo for enviado para a integração do SDK do Aplicativo do Intune, contate msintuneappsdk@microsoft.com para ser adicionado à lista de aplicativos aprovados para [Acesso Condicional baseado em aplicativo](https://docs.microsoft.com/intune/conditional-access-intune-common-ways-use#app-based-conditional-access)
 6. Depois que seu aplicativo tiver sido adicionado à lista de aprovados, valide [Configurando o CA baseado em aplicativo](https://docs.microsoft.com/intune/app-based-conditional-access-intune-create) e garantindo que a conexão ao seu aplicativo seja concluída com êxito.
 
 ## <a name="app-protection-policy-without-device-enrollment"></a>Política de proteção de aplicativo sem registro de dispositivo
