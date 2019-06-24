@@ -5,7 +5,7 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 04/10/2019
+ms.date: 06/05/2019
 ms.topic: reference
 ms.service: microsoft-intune
 ms.localizationpriority: medium
@@ -14,12 +14,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure, seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: c44f18d19172498f17f2a3f78ea47bad1d0f3fa7
-ms.sourcegitcommit: 916fed64f3d173498a2905c7ed8d2d6416e34061
+ms.openlocfilehash: fc91fc685c28beff38dc395dd83b60e99343af57
+ms.sourcegitcommit: 2545ffb75b8d9290718d3a67acdcbea2f279090f
 ms.translationtype: MTE75
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/23/2019
-ms.locfileid: "66048104"
+ms.lasthandoff: 06/19/2019
+ms.locfileid: "67263689"
 ---
 # <a name="android-enterprise-device-settings-to-allow-or-restrict-features-using-intune"></a>Configurações do dispositivo do Android Enterprise para permitir ou restringir os recursos usando o Intune
 
@@ -56,7 +56,7 @@ Este artigo lista e descreve as diferentes configurações que você pode contro
 - **Transmitir dados usando NFC**: escolha **Bloquear** para impedir o uso da tecnologia NFC (Near Field Communication, comunicação a curta distância) para transmitir dados de aplicativos. **Não configurado** permite o uso de NFC para compartilhar dados entre dispositivos.
 - **Recursos de depuração**: escolha **Permitir** para permitir o uso dos recursos de depuração no dispositivo. **Não configurado** impede o uso dos recursos de depuração no dispositivo.
 - **Ajuste de microfone**: escolha **Bloquear** para impedir que os usuários cancelem o mudo do microfone e ajustem o volume. **Não configurado** permite o uso e ajuste do volume do microfone no dispositivo.
-- **Emails para proteção de redefinição de fábrica**: escolha **Endereços de email de conta do Google**. Insira os endereços de email dos administradores do dispositivo que podem desbloquear o dispositivo após ele ser apagado. Separe os endereços de email com um ponto e vírgula, como `admin1@gmail.com;admin2@gmail.com`. Se um email não for inserido, qualquer pessoa poderá desbloquear o dispositivo após ele ser restaurado para as configurações de fábrica.
+- **Emails para proteção de redefinição de fábrica**: escolha **Endereços de email de conta do Google**. Insira os endereços de email dos administradores do dispositivo que podem desbloquear o dispositivo após ele ser apagado. Separe os endereços de email com um ponto e vírgula, como `admin1@gmail.com;admin2@gmail.com`. Se um email não for inserido, qualquer pessoa poderá desbloquear o dispositivo após ele ser restaurado para as configurações de fábrica. Esses emails se aplicam somente quando executou uma redefinição de fábrica de não usuário, como executar uma redefinição de fábrica usando o menu de recuperação.
 - **Hachura de escape de rede**: escolha **Habilitar** para permitir que os usuários ativem o recurso de hachura de escape de rede. Se não houver uma conexão de rede quando o dispositivo for iniciado, a hachura de escape solicitará a conexão temporária a uma rede e atualizará a política do dispositivo. Depois de aplicar a política, a rede temporária será esquecida e o dispositivo continuará com a inicialização. Esse recurso conecta os dispositivos a uma rede se:
   - Não houver uma rede adequada na última política.
   - O dispositivo iniciar em um aplicativo no modo de tarefa de bloqueio.
@@ -100,6 +100,8 @@ Use essas configurações para definir uma experiência de estilo de quiosque em
   >   - [Atribuído ao grupo de dispositivos](apps-deploy.md) criado para seus dispositivos dedicados
   > 
   > O aplicativo **Tela Inicial Gerenciada** não precisa estar no perfil de configuração, mas precisa ser adicionado como um aplicativo cliente. Quando o aplicativo **Tela Inicial Gerenciada** é adicionado como um aplicativo cliente, quaisquer outros aplicativos que você adicionar ao perfil de configuração serão mostrados como ícones no aplicativo **Tela Inicial Gerenciada**. 
+  >
+  > Ao usar o modo de quiosque de vários aplicativos com gerenciado tela inicial, os aplicativos de discagem/telefone podem não funcionar corretamente. 
 
   - Escolha **Adicionar** e selecione seus aplicativos na lista.
 

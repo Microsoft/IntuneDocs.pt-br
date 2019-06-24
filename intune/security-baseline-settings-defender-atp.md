@@ -16,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: a58095612d6e76d4a1cb633e69260267dcfd9999
-ms.sourcegitcommit: cb76efd3db60a422a65478ebce83d3aea7b5eeed
+ms.openlocfilehash: 837442f93bbac2c5eb19b3c433c91f91aa38a17e
+ms.sourcegitcommit: 43ba5a05b2e1dc1997126d3574884f65cde449c7
 ms.translationtype: MTE75
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/06/2019
-ms.locfileid: "66749905"
+ms.lasthandoff: 06/18/2019
+ms.locfileid: "67197540"
 ---
 # <a name="microsoft-defender-advanced-threat-protection-baseline-settings-for-intune"></a>Configurações para Intune da Linha de base da Proteção Avançada contra Ameaças do Microsoft Defender
 
@@ -83,7 +83,7 @@ Para obter mais informações, veja [CSP de política – SmartScreen](https://d
 
   **Padrão**: Sim
 
-## <a name="attach-surface-reduction"></a>Redução da superfície de ataque  
+## <a name="attack-surface-reduction"></a>Redução da superfície de ataque  
 
 - **Tipo de processo filho de iniciar aplicativos do Office**  
   [Regra de redução da superfície de ataque](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-exploit-guard/attack-surface-reduction-exploit-guard#attack-surface-reduction-rules) – quando definido como *Bloquear*, os aplicativos do Office não terão permissão para criar processos filho. Os aplicativos do Office incluem Word, Excel, PowerPoint, OneNote e Access. A criação de um processo filho é um comportamento típico de malware, especialmente para ataques baseados em macro que tentam usar aplicativos do Office para iniciar ou baixar executáveis mal-intencionados.  
