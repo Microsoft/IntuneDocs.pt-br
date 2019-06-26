@@ -15,12 +15,12 @@ search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
 mr.reviewer: karthib
-ms.openlocfilehash: 184781a315dcaeaac9540294746a9c2cd85da917
-ms.sourcegitcommit: 916fed64f3d173498a2905c7ed8d2d6416e34061
+ms.openlocfilehash: 2bebdf712ccf325c6742e6bb326a8fb2768023b7
+ms.sourcegitcommit: 14f4e97de5699394684939e6f681062b5d4c1671
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/23/2019
-ms.locfileid: "66041899"
+ms.lasthandoff: 06/19/2019
+ms.locfileid: "67251178"
 ---
 # <a name="add-endpoint-protection-settings-in-intune"></a>Adicionar configurações de proteção de ponto de extremidade no Intune
 
@@ -38,7 +38,7 @@ Antes de criar um perfil, consulte os seguintes artigos que detalham as configur
 
 ## <a name="create-a-device-profile-containing-endpoint-protection-settings"></a>Criar um perfil de dispositivo contendo configurações de proteção de ponto de extremidade
 
-1. Conecte-se ao [Intune](https://go.microsoft.com/fwlink/?linkid=20909).
+1. Conecte-se ao [Intune](https://go.microsoft.com/fwlink/?linkid=2090973).
 3. Selecione **Configuração do dispositivo** > **Perfis** > **Criar perfil**.
 4. Insira um **Nome** e uma **Descrição** para o perfil de proteção de ponto de extremidade.
 5. Na lista suspensa **Plataforma**, selecione a plataforma do dispositivo ao qual você deseja aplicar as configurações personalizadas. No momento, é possível escolher uma das seguintes plataformas para as configurações de restrição de dispositivo:
