@@ -14,12 +14,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 57a14e1e3c4caea570667096fec71cecf2d88ddf
-ms.sourcegitcommit: 916fed64f3d173498a2905c7ed8d2d6416e34061
+ms.openlocfilehash: ba1d7669e80fd91398f41c57ca2d27ce78a06041
+ms.sourcegitcommit: 256952cac44bc6289156489b6622fdc1a3c9c889
 ms.translationtype: MTE75
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/23/2019
-ms.locfileid: "66045187"
+ms.lasthandoff: 06/26/2019
+ms.locfileid: "67403780"
 ---
 # <a name="use-role-based-access-control-rbac-and-scope-tags-for-distributed-it"></a>Usar RBAC (controle de acesso baseado em função) e marcas de escopo para TI distribuída
 
@@ -42,8 +42,10 @@ Por exemplo, digamos que um administrador de escritório regional de Seattle sej
 
     ![Captura de tela de criar uma marca de escopo.](./media/scope-tags/create-scope-tag.png)
 
-2. Forneça um **Nome** e uma **Descrição**.
-3. Escolha **Criar**.
+3. Se você quiser que todos os dispositivos em grupos específicos, escolha **atribua a marca de escopo para todos os dispositivos nos grupos selecionados**.
+    1. No **selecionar grupos para incluir** , escolha os grupos que contêm os dispositivos que você deseja atribuir essa marca de escopo para.
+    2. Escolha **Selecionar**.
+4. Escolha **Criar**.
 
 ## <a name="to-assign-a-scope-tag-to-a-role"></a>Para atribuir uma marca de escopo a uma função
 

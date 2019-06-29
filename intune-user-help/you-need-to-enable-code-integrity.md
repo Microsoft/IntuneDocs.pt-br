@@ -18,12 +18,12 @@ ms.reviewer: scottduf
 ms.suite: ems
 ms.custom: intune-enduser
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 0a10fc54fa3aa535e6dcfd2c06124fdc5b87c6a4
-ms.sourcegitcommit: a2bad7465422b98eb3c10f03dc5a24fd99cee78d
+ms.openlocfilehash: 167d091f212536ed94e3f4ce0c103649e4a2e537
+ms.sourcegitcommit: 9c06d8071b9affeda32e367bfe85d89bc524ed0b
 ms.translationtype: MTE75
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/13/2019
-ms.locfileid: "67041281"
+ms.lasthandoff: 06/27/2019
+ms.locfileid: "67413823"
 ---
 # <a name="enable-code-integrity"></a>Habilitar a integridade de código
 
@@ -34,7 +34,7 @@ Se seu computador não está em conformidade porque a integridade do código est
 Se você identificar como um usuário avançado de dispositivos e experimentar as etapas por conta própria, consulte [reabilitar a inicialização segura](https://docs.microsoft.com/windows-hardware/manufacture/desktop/disabling-secure-boot#re-enable-secure-boot).
 
 ## <a name="additional-resources-for-it-administrators"></a>Recursos adicionais para os administradores de TI  
-Se você for um administrador do Intune e deseja saber mais sobre as configurações de conformidade de integridade de dispositivo do Intune, consulte [adicionar uma política de conformidade do dispositivo para dispositivos Windows 10 no Intune](https://docs.microsoft.com/intune/compliance-policy-create-windows). Para obter uma visão detalhada das ações de conformidade que você pode executar no Intune, consulte a [HealthAttestation CSP](https://docs.microsoft.com/windows/client-management/mdm/healthattestation-csp#a-href-idtake-policy-actionastep-8-take-appropriate-policy-action-based-on-evaluation-results).  
+Se você for um administrador do Intune e deseja saber mais sobre as configurações de conformidade de integridade de dispositivo do Intune, consulte [adicionar uma política de conformidade do dispositivo para dispositivos Windows 10 no Intune](https://docs.microsoft.com/intune/compliance-policy-create-windows). Para obter uma visão detalhada das ações de conformidade que você pode executar no Intune, consulte a [HealthAttestation CSP](https://docs.microsoft.com/windows/client-management/mdm/healthattestation-csp#step-8-take-appropriate-policy-action-based-on-evaluation-results).  
 
 ## <a name="next-steps"></a>Próximas etapas  
 Ainda precisa de ajuda? Contate o suporte da sua empresa. Para obter as informações de contato, consulte o [site do Portal da Empresa](https://go.microsoft.com/fwlink/?linkid=2010980).

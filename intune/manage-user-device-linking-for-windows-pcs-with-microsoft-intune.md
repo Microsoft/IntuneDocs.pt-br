@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic-keep
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: cad83daa88351749d60d0b1c72935ea47f9a14ce
-ms.sourcegitcommit: 916fed64f3d173498a2905c7ed8d2d6416e34061
+ms.openlocfilehash: f4dad2d22b742b62ca35bd7fb98c7f7e8241cbb4
+ms.sourcegitcommit: 256952cac44bc6289156489b6622fdc1a3c9c889
 ms.translationtype: MTE75
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/23/2019
-ms.locfileid: "66046933"
+ms.lasthandoff: 06/26/2019
+ms.locfileid: "67402898"
 ---
 # <a name="manage-user-device-linking-for-windows-pcs"></a>Gerenciar a vinculação de usuário e dispositivo para computadores Windows
 
@@ -31,6 +31,8 @@ ms.locfileid: "66046933"
 As informações descritas neste tópico se aplicam somente a áreas de trabalho do Windows que estão sendo gerenciadas como computadores por meio do cliente de software do Intune. 
 
 Antes de poder implantar o software em um usuário, é necessário vincular o usuário a um computador. É possível vincular um usuário a vários computadores, mas cada computador pode ser vinculado a apenas um usuário. Os usuários são vinculados automaticamente aos computadores registrados por eles no Intune por meio do portal da empresa.
+
+Para obter mais informações sobre o usuário principal de um dispositivo, consulte [usuário principal de localizar](find-primary-user.md).
 
 Para vincular um usuário a um computador:
 

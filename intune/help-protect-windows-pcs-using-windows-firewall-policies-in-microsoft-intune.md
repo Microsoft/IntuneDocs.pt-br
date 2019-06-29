@@ -17,16 +17,19 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic-keep
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: b289f9edc1522333f70308a6979b2ea2e71b17c6
-ms.sourcegitcommit: 916fed64f3d173498a2905c7ed8d2d6416e34061
+ms.openlocfilehash: f3b552c42a7a84ad8099a406bfff2db575785915
+ms.sourcegitcommit: 256952cac44bc6289156489b6622fdc1a3c9c889
 ms.translationtype: MTE75
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/23/2019
-ms.locfileid: "66047532"
+ms.lasthandoff: 06/26/2019
+ms.locfileid: "67403024"
 ---
 # <a name="help-protect-windows-pcs-using-windows-firewall-policies-in-microsoft-intune"></a>Ajude a proteger computadores Windows usando políticas de Firewall do Windows no Microsoft Intune
 
 [!INCLUDE [classic-portal](includes/classic-portal.md)]
+
+> [!NOTE]
+> As informações descritas neste tópico se aplicam somente a áreas de trabalho do Windows que estão sendo gerenciadas como computadores por meio do cliente de software do Intune. Se você quiser gerenciar configurações de firewall para PCs Windows registrados como dispositivos móveis, consulte [adicionar configurações de proteção de ponto de extremidade no Intune](endpoint-protection-configure.md).
 
 O Microsoft Intune pode ajudá-lo a proteger seus computadores Windows gerenciados com o cliente do Intune de várias maneiras. Uma maneira em que ele faz isso é fornecer políticas que permitem que você defina as configurações de Firewall do Windows em computadores.
 

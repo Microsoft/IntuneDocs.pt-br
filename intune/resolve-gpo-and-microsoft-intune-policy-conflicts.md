@@ -17,16 +17,19 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic-keep
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: d6c7de15c3839548e8edf5056579eab1c0c0751a
-ms.sourcegitcommit: 916fed64f3d173498a2905c7ed8d2d6416e34061
+ms.openlocfilehash: 59432baf0e8120cc7280b3486c4c25388a4248b4
+ms.sourcegitcommit: 256952cac44bc6289156489b6622fdc1a3c9c889
 ms.translationtype: MTE75
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/23/2019
-ms.locfileid: "66045249"
+ms.lasthandoff: 06/26/2019
+ms.locfileid: "67403769"
 ---
 # <a name="resolve-group-policy-objects-gpo-and-microsoft-intune-policy-conflicts"></a>Resolver conflitos de política do Microsoft Intune e GPO (Objetos de Política de Grupo)
 
 [!INCLUDE [classic-portal](includes/classic-portal.md)]
+
+> [!NOTE]
+> As informações descritas neste tópico se aplicam somente a áreas de trabalho do Windows que estão sendo gerenciadas como computadores por meio do cliente de software do Intune.
 
 O Intune usa políticas que ajudam a gerenciar as configurações em computadores Windows. Por exemplo, é possível usar uma política para controlar as configurações do Firewall do Windows nos computadores. Várias configurações do Intune são semelhantes às configurações que podem ser feitas com a Política de Grupo do Windows. No entanto, é possível que, às vezes, os dois métodos entrem em conflito.
 

@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic-keep
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 86cbea29233d792006bce68fcd2a36fb1a7ec0a6
-ms.sourcegitcommit: 916fed64f3d173498a2905c7ed8d2d6416e34061
+ms.openlocfilehash: 3e24bd79fbceba1834d02af8512e5dd52676d471
+ms.sourcegitcommit: 256952cac44bc6289156489b6622fdc1a3c9c889
 ms.translationtype: MTE75
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/23/2019
-ms.locfileid: "66050207"
+ms.lasthandoff: 06/26/2019
+ms.locfileid: "67403315"
 ---
 # <a name="add-apps-for-windows-pcs-that-run-the-intune-software-client"></a>Adicionar aplicativos a computadores Windows que executam o cliente de software do Intune
 
@@ -67,7 +67,6 @@ Você usa o Intune Software Publisher para configurar as propriedades do aplicat
    - **URL para informações do software** (opcional). Insira uma URL de um site que contém informações sobre esse aplicativo. A URL será exibida para os usuários no portal da empresa.
    - **URL de privacidade** (opcional). Insira a URL para um site que contém informações de privacidade desse aplicativo. A URL será exibida para os usuários no portal da empresa.
    - **Categoria** (opcional). Selecione uma das categorias de aplicativo interno. Isso facilitará a localização do aplicativo quando os usuários navegarem pelo portal da empresa.
-
    - **Ícone** (opcional). Carregue um ícone que será associado ao aplicativo. Esse é o ícone que será exibido com o aplicativo quando os usuários navegarem pelo portal da empresa.
 
 4. Na página **Requisitos**, selecione os requisitos que devem ser atendidos antes que o aplicativo possa ser instalado. Escolha:
@@ -104,4 +103,4 @@ O aplicativo é exibido no nó **Aplicativos** do workspace **Aplicativos**.
 
 Depois de criar um aplicativo, a próxima etapa é implantá-lo. Para saber mais, confira [Atribuir aplicativos a grupos com o Microsoft Intune](apps-deploy.md).
 
-Se você quiser ler mais informações sobre dicas e truques para implantar o software em PCs Windows, consulte o postagem no blog [Dica de suporte: práticas recomendadas para distribuição de Software do Intune para PCs](https://blogs.technet.microsoft.com/intunesupport/2016/06/13/support-tip-best-practices-for-intune-software-distribution-to-pcs/).
+Se você quiser ler mais informações sobre dicas e truques para implantar o software em PCs Windows, consulte o postagem no blog [Dica de suporte: práticas recomendadas para distribuição de Software do Intune para PCs](https://support.microsoft.com/en-US/help/2583929).

@@ -14,12 +14,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure; seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 9af61c89b90a7f31654cd43a3cfc457b27e9700f
-ms.sourcegitcommit: 86aa5fefcba1e71841696b1a5e3ca5bffb1a9528
+ms.openlocfilehash: 30e869cbb0311e1855dd4dc09978505ad539970e
+ms.sourcegitcommit: 256952cac44bc6289156489b6622fdc1a3c9c889
 ms.translationtype: MTE75
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/18/2019
-ms.locfileid: "67234982"
+ms.lasthandoff: 06/26/2019
+ms.locfileid: "67403084"
 ---
 # <a name="windows-10-and-newer-device-settings-to-allow-or-restrict-features-using-intune"></a>Configurações de dispositivo Windows 10 (e mais recente) para permitir ou restringir recursos usando o Intune
 
@@ -57,7 +57,16 @@ Essas configurações usam o [CSP da política ApplicationManagement](https://do
 - **Instalar dados de aplicativo no volume do sistema**: **Bloquear** impede que os aplicativos armazenem dados no volume do sistema do dispositivo. **Não configurado** (padrão) permite que os aplicativos armazenem dados no volume de disco do sistema.
 - **Instalar aplicativos na unidade do sistema**: **Bloquear** impede que os aplicativos sejam instalados na unidade do sistema do dispositivo. **Não configurado** (padrão) permite que os aplicativos sejam instalados no volume de disco do sistema.
 - **DVR de jogos** (somente desktop): **Bloquear** desabilita a gravação e a difusão de Jogos do Windows. **Não configurado** (padrão) permite a gravação e a difusão de jogos.
-- **Somente aplicativos da Loja**: **Exigir** força os usuários finais a instalarem somente aplicativos da Windows Store. **Não configurado** permite aos usuários finais instalar aplicativos de locais que não sejam a Windows Store.
+- **Apenas aplicativos da loja**: essa configuração determina a experiência do usuário quando os usuários instalarem aplicativos de locais que não sejam a Microsoft Store. Suas opções:
+
+  - **Não configurado** (padrão): permite aos usuários finais instalar aplicativos de locais que não sejam a Microsoft Store, incluindo aplicativos definidos em outras configurações de política.  
+  - **Em qualquer lugar**: desativa as recomendações do aplicativo, e permite que os usuários instalem aplicativos de qualquer local.  
+  - **Store apenas**: força os usuários finais instalarem somente aplicativos da Microsoft Store.
+  - **Recomendações**: ao instalar um aplicativo da web que está disponível em que a Microsoft Store, os usuários veem uma mensagem recomendando a eles baixarão-lo do repositório.  
+  - **Prefira Store**: avisa os usuários quando eles instalam aplicativos de locais que não sejam a Microsoft Store.
+
+  [SmartScreen/EnableAppInstallControl CSP](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-smartscreen#smartscreen-enableappinstallcontrol)
+
 - **Forçar a reinicialização de aplicativos em caso de falha de atualização**: quando um aplicativo está em uso, não pode ser atualizado. Use essa configuração para forçar um aplicativo a reiniciar. **Não configurado** (padrão) não força a reinicialização dos aplicativos. **Exigir** permite que os administradores forcem a reinicialização em uma data e hora específicas ou em um agendamento recorrente. Quando definido como **Exigir**, também insira:
 
   - **Data/hora de início**: escolha uma data específica e hora para reiniciar os aplicativos.
