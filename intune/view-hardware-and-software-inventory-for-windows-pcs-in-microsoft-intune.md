@@ -6,7 +6,7 @@ keywords: ''
 author: dougeby
 ms.author: dougeby
 manager: dougeby
-ms.date: 01/01/2018
+ms.date: 06/26/2019
 ms.topic: archived
 ms.service: microsoft-intune
 ms.localizationpriority: medium
@@ -17,16 +17,19 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic-keep
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 5e24e72951d473c2e7e49d5ae62b39df18635c16
-ms.sourcegitcommit: 916fed64f3d173498a2905c7ed8d2d6416e34061
+ms.openlocfilehash: 2c1717be830d88ed0a7d1b660b7910c8192c93c5
+ms.sourcegitcommit: 256952cac44bc6289156489b6622fdc1a3c9c889
 ms.translationtype: MTE75
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/23/2019
-ms.locfileid: "66040283"
+ms.lasthandoff: 06/26/2019
+ms.locfileid: "67403542"
 ---
 # <a name="view-hardware-and-software-inventory-for-windows-pcs"></a>Exibir o inventário de software e hardware para computadores Windows
 
 [!INCLUDE [classic-portal](includes/classic-portal.md)]
+
+> [!NOTE]
+> As informações descritas neste tópico se aplicam somente a áreas de trabalho do Windows que estão sendo gerenciadas como computadores por meio do cliente de software do Intune. Se você quiser exibir o inventário para computadores Windows registrados como dispositivos móveis, consulte [exibir detalhes do dispositivo no Intune](device-inventory.md).
 
 O Intune coleta informações detalhadas sobre o hardware e software de áreas de trabalho gerenciadas como computadores, usando o cliente de software do Intune. Use as informações nos procedimentos a seguir para aprender a criar:
 
@@ -34,13 +37,13 @@ O Intune coleta informações detalhadas sobre o hardware e software de áreas d
 
 -   Um relatório que lista o software instalado em cada computador.
 
--   Como atualizar um inventário de computadores para garantir que os dados no relatório são atuais.
+-   Como atualizar um inventário de computadores para garantir que os dados no relatório sejam atuais.
 
 ## <a name="to-display-information-about-pcs-you-manage"></a>Para exibir informações sobre os computadores gerenciados
 
 1.  No [Console de administração do Microsoft Intune](https://manage.microsoft.com/), escolha **Relatórios** &gt; **Relatórios de Inventário de Computador**.
 
-2.  Na página **Criar novo relatório** , aceite os valores padrão ou personalize-os para filtrar os resultados que serão passados como retorno pelo relatório. Por exemplo, você pode escolher que apenas os computadores que executam o Windows 8.1 serão exibidos no relatório.
+2.  Na página **Criar novo relatório** , aceite os valores padrão ou personalize-os para filtrar os resultados que serão passados como retorno pelo relatório. Por exemplo, você pode escolher que apenas computadores que executem o Windows 8.1 sejam exibidos no relatório.
 
 3.  Escolha **Exibir Relatório** para abrir o **Relatório de Inventário do Computador** em uma nova janela.
 

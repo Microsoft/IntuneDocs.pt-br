@@ -5,7 +5,7 @@ keywords: ''
 author: brenduns
 ms.author: brenduns
 manager: dougeby
-ms.date: 03/14/2019
+ms.date: 06/20/2019
 ms.topic: reference
 ms.service: microsoft-intune
 ms.localizationpriority: medium
@@ -15,12 +15,12 @@ search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
 ms.reviewer: shpate
-ms.openlocfilehash: 158840a73784516d13defa04785ca5990a9874cf
-ms.sourcegitcommit: 916fed64f3d173498a2905c7ed8d2d6416e34061
+ms.openlocfilehash: 1cbf45fc337cbe7d7a45081a3b9e05002ca126d8
+ms.sourcegitcommit: 256952cac44bc6289156489b6622fdc1a3c9c889
 ms.translationtype: MTE75
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/23/2019
-ms.locfileid: "66041819"
+ms.lasthandoff: 06/26/2019
+ms.locfileid: "67402935"
 ---
 # <a name="windows-10-device-settings-to-enable-windows-hello-for-business-in-intune"></a>Configurações do dispositivo Windows 10 para habilitar o Windows Hello para Empresas no Intune
 
@@ -36,55 +36,106 @@ Para saber mais sobre os perfis do Windows Hello para Empresas no Intune, confir
 [Crie um perfil de configuração](identity-protection-configure.md#create-the-device-profile).
 
 ## <a name="windows-hello-for-business"></a>Windows Hello para Empresas
+- **Configure o Windows Hello para Empresas**:
+  - **Não configurado**: selecione esta configuração se você não quiser usar o Intune para controlar as configurações do Windows Hello para Empresas. As configurações existentes do Windows Hello para Empresas em dispositivos com Windows 10 não são alteradas. Nenhuma outra configuração no painel está disponível.
 
-- **Configurar Windows Hello para Empresas**: para usar esse recurso e configurar suas configurações, escolha **habilitar**.
-- **Tamanho mínimo do PIN**: insira o tamanho mínimo do PIN que você deseja permitir nos dispositivos. O comprimento padrão do PIN é de seis caracteres. O comprimento mínimo do PIN é de quatro (4) caracteres.
-- **Tamanho máximo do PIN**: insira o tamanho máximo do PIN que você deseja permitir nos dispositivos. O comprimento padrão do PIN é de seis (6) caracteres. O comprimento máximo do PIN é de 127 caracteres.  
-- **Letras minúsculas no PIN**: você pode impor um PIN mais forte exigindo que os usuários finais incluam letras minúsculas. Suas opções:
+  - **Desabilitado**: se você não quiser usar o Windows Hello para Empresas, selecione esta configuração. Todas as outras configurações na tela ficam indisponíveis.
+  - **Habilitado**: selecione esta configuração se você quiser configurar o Windows Hello para Empresas.  
+  
+  **Padrão**: não configurado
 
-  - **Não permitido** (padrão): impeça que os usuários usem letras minúsculas no PIN. Esse comportamento também ocorre quando a configuração não está definida.
-  - **Permitido**: permita que os usuários usem letras minúsculas no PIN, mas isso não é obrigatório.
-  - **Necessário**: os usuários devem incluir pelo menos um caractere minúsculo no PIN. Por exemplo, é uma prática comum exigir pelo menos uma letra maiúscula e um caractere especial.
+  Quando definido como *Enabled*, as configurações a seguir estão disponíveis:
 
-- **Letras maiúsculas no PIN**: você pode impor um PIN mais forte exigindo que os usuários finais incluam letras maiúsculas. Suas opções:
+    - **Tamanho mínimo do PIN**  
+     Especifique um tamanho mínimo do PIN para dispositivos, para ajudar a entrada segura. Padrões de dispositivo do Windows são seis caracteres, mas essa configuração pode impor um mínimo de quatro a 127 caracteres. 
+  
+      **Padrão**: *não configurado*
 
-  - **Não permitido** (padrão): impeça que os usuários usem letras maiúsculas no PIN. Esse comportamento também ocorre quando a configuração não está definida.
-  - **Permitido**: permita que os usuários usem letras maiúsculas no PIN, mas isso não é obrigatório.
-  - **Necessário**: os usuários devem incluir pelo menos um caractere maiúsculo no PIN. Por exemplo, é uma prática comum exigir pelo menos uma letra maiúscula e um caractere especial.
+    - **Tamanho máximo do PIN**  
+    Especifique um tamanho máximo do PIN para dispositivos, para ajudar a entrada segura. Padrões de dispositivo do Windows são seis caracteres, mas essa configuração pode impor um mínimo de quatro a 127 caracteres.  
 
-- **Caracteres especiais no PIN**: você pode impor um PIN mais forte exigindo que os usuários finais incluam caracteres especiais. Suas opções:
+      **Padrão**: *não configurado*  
 
-  - **Não permitido** (padrão): impeça que os usuários usem caracteres especiais no PIN. Esse comportamento também ocorre quando a configuração não está definida.
-    Os caracteres especiais incluem: `! " # $ % &amp; ' ( ) &#42; + , - . / : ; &lt; = &gt; ? @ [ \ ] ^ _ &#96; { &#124; } ~`
-  - **Permitido**: permita que os usuários usem letras maiúsculas no PIN, mas isso não é obrigatório.
-  - **Necessário**: os usuários devem incluir pelo menos um caractere maiúsculo no PIN. Por exemplo, é uma prática comum exigir pelo menos uma letra maiúscula e um caractere especial.
+    - **Letras minúsculas no PIN**  
+      Você pode impor um PIN mais forte exigindo que os usuários finais incluam letras minúsculas. Suas opções:
 
-- **Expiração do PIN (dias)** : é uma boa prática especificar um período de expiração de um PIN após o qual os usuários finais precisam alterá-lo. O padrão é 41 dias.
+      - **Não permitido** : impeça que os usuários usem letras minúsculas no PIN. Esse comportamento também ocorre quando a configuração não está definida.
+      - **Permitido**: permita que os usuários usem letras minúsculas no PIN, mas isso não é obrigatório.
+      - **Obrigatório**: os usuários precisam incluir pelo menos um caractere minúsculo no PIN. Por exemplo, é uma prática comum exigir pelo menos uma letra maiúscula e um caractere especial.
 
-- **Lembrar histórico de PINs**: restringe a reutilização de PINs usados anteriormente. Por padrão, os últimos 5 PINs não podem ser reutilizados.  
-- **Habilitar recuperação PIN**: permite que o usuário altere o PIN usando o serviço de recuperação de PIN do Windows Hello para Empresas.
+    - **Letras maiúsculas no PIN**  
+    Você pode impor um PIN mais forte exigindo que os usuários finais incluam letras maiúsculas. Suas opções:
 
-       - **Enable**: The cloud service encrypts a PIN recovery secret to store on the device. The user can change their PIN if needed.  
-       - **Not configured** (default): A PIN recovery secret is not created or stored. If the user's PIN is forgotten, the only way to get a new PIN is by deleting the existing PIN and creating a new one. The user will need to re-register with any services the old PIN provided access to.  
+      - **Não permitido**: impeça que os usuários usem letras maiúsculas no PIN. Esse comportamento também ocorre quando a configuração não está definida.
+      - **Permitido**: permita que os usuários usem letras maiúsculas no PIN, mas isso não é obrigatório.
+      - **Obrigatório**: os usuários precisam incluir pelo menos um caractere maiúsculo no PIN. Por exemplo, é uma prática comum exigir pelo menos uma letra maiúscula e um caractere especial.
 
-- **Usar um TPM Trusted Platform Module**: um chip TPM fornece uma camada adicional de segurança de dados. Selecione uma das seguintes opções:  
-  - **Habilitar**: somente dispositivos com um TPM acessível podem provisionar o Windows Hello para Empresas.
-  - **Não configurado**: todos os dispositivos podem provisionar o Windows Hello para Empresas, mesmo quando não há um TPM utilizável. Primeiro os dispositivos tentarão usar um TPM, mas, se não houver nenhum disponível, eles poderão usar a criptografia de software.  
+    - **Caracteres especiais no PIN**  
+    Você pode impor um PIN mais forte exigindo que os usuários finais incluam caracteres especiais. Os caracteres especiais incluem: `! " # $ % &amp; ' ( ) &#42; + , - . / : ; &lt; = &gt; ? @ [ \ ] ^ _ &#96; { &#124; } ~`  
+ 
+      Suas opções:
+      - **Não permitido**: impeça que os usuários usem caracteres especiais no PIN. Esse comportamento também ocorre quando a configuração não está definida.
+      - **Permitido**: permita que os usuários usem letras maiúsculas no PIN, mas isso não é obrigatório.
+      - **Obrigatório**: os usuários precisam incluir pelo menos um caractere maiúsculo no PIN. Por exemplo, é uma prática comum exigir pelo menos uma letra maiúscula e um caractere especial.
 
-- **Permitir autenticação biométrica**: permite a autenticação biométrica, como reconhecimento facial ou impressão digital, como uma alternativa a um PIN do Windows Hello para Empresas. Os usuários ainda devem configurar um PIN de trabalho no caso de falha de autenticação biométrica. Escolha:
+      **Padrão**: não permitido
 
-  - **Habilitar**: o Windows Hello para Empresas permite autenticação biométrica.
-  - **Não configurado** (padrão): o Windows Hello para Empresas impede a autenticação biométrica (para todos os tipos de conta).
+  - **Validade do PIN (dias)**  
+      É uma boa prática especificar um período de expiração de um PIN após o qual os usuários devem alterá-lo. Padrões de dispositivo do Windows são 41 dias.
 
-- **Usar antifalsificação avançada, quando disponível**: escolha se os recursos antifalsificação do Windows Hello serão usados em dispositivos compatíveis. Por exemplo, detecte uma fotografia de um rosto, em vez do rosto real.
+    **Padrão**: Não configurado
 
-  - **Habilitar**: o Windows requer que todos os usuários usem a antifalsificação para recursos de rosto quando há suporte.  
-  - **Não configurado** (padrão): o Windows respeita as configurações antifalsificação do dispositivo.
+  - **Lembrar histórico de PINs**  
+    Restringe a reutilização de PINs usados anteriormente. Padrão de dispositivos do Windows para se evitar a reutilização dos últimos cinco pinos.  
 
-- **Certificado para recursos locais**: 
+    **Padrão**: Não configurado  
 
-  - **Habilitar**: permite que o Windows Hello para Empresas use certificados para autenticar-se em recursos locais.
-  - **Não configurado** (padrão): impede que Windows Hello para Empresas use certificados para autenticar-se em recursos locais. Em vez disso, os dispositivos usam o comportamento padrão do *autenticação de chave de confiança local*. Para obter mais informações, veja [Certificado de usuário para autenticação local](https://docs.microsoft.com/windows/security/identity-protection/hello-for-business/hello-cert-trust-policy-settings#use-certificate-for-on-premises-authentication) na documentação do Windows Hello.  
+  - **Habilitar a recuperação do PIN**   
+    Permite que o usuário use o Windows Hello para o serviço de recuperação de PIN de negócios. 
+    
+    - **Habilitado** - segredo de recuperação o PIN é armazenada no dispositivo e o usuário pode alterar o PIN, se necessário.  
+    - **Desabilitado** -o segredo de recuperação não é criado ou armazenado.
+
+    **Padrão**: não configurado
+
+  - **Usar um TPM (Trusted Platform Module)**    
+    Um chip TPM fornece uma camada adicional de segurança de dados.  
+
+    - **Habilitado**: somente dispositivos com um TPM acessível podem provisionar o Windows Hello para Empresas.
+    - **Não configurado**: primeira tentativa dos dispositivos de usar um TPM. Se não estiver disponível, eles podem usar criptografia de software.
+    
+    **Padrão**: não configurado
+
+  - **Permitir autenticação biométrica**  
+     Permite a autenticação biométrica, como reconhecimento facial ou impressão digital, como uma alternativa a um PIN do Windows Hello para Empresas. Os usuários ainda devem configurar um PIN de trabalho no caso de falha de autenticação biométrica. Escolha:
+
+    - **Habilitar**: o Windows Hello para Empresas permite autenticação biométrica.
+    - **Não configurado**: o Windows Hello para Empresas impede a autenticação biométrica (para todos os tipos de conta).
+
+    **Padrão**: não configurado
+
+  - **Usar antifalsificação avançada, quando disponível**  
+    Define se as funcionalidades antifalsificação do Windows Hello são usadas em dispositivos que dão suporte a ele (por exemplo, detectando uma fotografia de um rosto, em vez do rosto real).  
+    - **Habilitar**: o Windows requer que todos os usuários usem a antifalsificação para recursos de rosto quando há suporte.
+    - **Não configurado**: o Windows respeita as configurações antifalsificação do dispositivo.
+
+    **Padrão**: não configurado
+
+  - **Certificado para recursos locais**  
+
+    - **Habilitar**: permite que o Windows Hello para Empresas use certificados para autenticar-se em recursos locais.
+    - **Não configurado**: impede que o Windows Hello para Empresas use certificados para autenticar-se em recursos locais. Em vez disso, os dispositivos usam o comportamento padrão do *autenticação de chave de confiança local*. Para obter mais informações, veja [Certificado de usuário para autenticação local](https://docs.microsoft.com/windows/security/identity-protection/hello-for-business/hello-cert-trust-policy-settings#use-certificate-for-on-premises-authentication) na documentação do Windows Hello.  
+
+  **Padrão**: não configurado
+
+- **Usar chaves de segurança para entrar**  
+  Essa configuração está disponível para dispositivos que executam o Windows 10 versão 1903 ou posterior. Usá-lo para gerenciar o suporte para o uso de chaves de segurança Windows Hello para entrar.  
+
+  - **Habilitado** -os usuários podem usar uma chave de segurança Windows Hello como direcionado a uma credencial de logon para PCs com esta política. 
+  - **Desabilitado** - chaves de segurança são desabilitadas e os usuários não é possível usá-los para entrar para PCs.   
+
+  **Padrão**: não configurado
+
 ## <a name="next-steps"></a>Próximas etapas
 
 [Atribuir o perfil](device-profile-assign.md) e [monitorar seu status](device-profile-monitor.md).

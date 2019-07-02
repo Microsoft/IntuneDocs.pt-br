@@ -6,7 +6,7 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 10/24/2018
+ms.date: 06/25/2019
 ms.topic: reference
 ms.service: microsoft-intune
 ms.localizationpriority: medium
@@ -15,18 +15,18 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: a5918dc0574033020689b267418fb6283cd686db
-ms.sourcegitcommit: 78ae22b1a7cb221648fc7346db751269d9c898b1
+ms.openlocfilehash: 97d656db3e828ef3377b927395a283fe995bb8a4
+ms.sourcegitcommit: a63b9eaa59867ab2b0a6aa415c19d9fff4fda874
 ms.translationtype: MTE75
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66373889"
+ms.lasthandoff: 06/25/2019
+ms.locfileid: "67389291"
 ---
 # <a name="use-custom-settings-for-windows-phone-81-devices-in-intune"></a>Usar configurações personalizadas para dispositivos Windows Phone 8.1 no Intune
 
 Usando o Microsoft Intune, você pode adicionar ou criar configurações personalizadas para dispositivos Windows Phone 8.1 usando "perfis personalizados". Perfis personalizados são um recurso no Intune. Eles são projetados para adicionar configurações e recursos de dispositivos que não são internos ao Intune.
 
-Os perfis personalizados do Windows Phone 8.1 usam as configurações do OMA-URI (Open Mobile Alliance Uniform Resource Identifier) para definir os diversos recursos. Essas configurações geralmente são usadas pelos fabricantes de dispositivos móveis para controlar os recursos do dispositivo.
+Os perfis personalizados do Windows Phone 8.1 usam as configurações do OMA-URI (Open Mobile Alliance Uniform Resource Identifier) para definir os diversos recursos. Essas configurações geralmente são usadas pelos fabricantes de dispositivos móveis para controlar os recursos do dispositivo. [Documentação do Windows Phone 8.1 MDM protocol](https://docs.microsoft.com/previous-versions/windows/it-pro/windows-phone/dn499787(v=technet.10)) lista as configurações.
 
 Este artigo mostra como criar um perfil personalizado para dispositivos Windows Phone 8.1. 
 
@@ -62,6 +62,16 @@ Este artigo mostra como criar um perfil personalizado para dispositivos Windows 
 
 5. Selecione **OK** para salvar suas alterações. Continue a adicionar mais configurações conforme necessário.
 6. Quando terminar, escolha **OK** > **Criar** para criar o perfil do Intune. Ao concluir, seu perfil é mostrado na lista **Configuração do dispositivo – Perfis**.
+
+## <a name="example"></a>Exemplo
+
+No exemplo a seguir, dispositivos com Windows 8.1 phone são impedidos de alterar redes de celulares ao viajar fora da área de cobertura da operadora.
+
+- **Nome**: permitir Roaming de dados de celular
+- **Descrição**: permitir ou não permitir roaming de dados de celular
+- **OMA-URI** (diferencia maiusculas de minúsculas): ./Vendor/MSFT/PolicyManager/My/Connectivity/AllowCellularDataRoaming
+- **Tipo de dados**: inteiro
+- **Valor**: 0
 
 ## <a name="next-steps"></a>Próximas etapas
 
