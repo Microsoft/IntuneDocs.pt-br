@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 3d3e36dbeb1fb7c90dfc5cc4c18fb30140c761db
-ms.sourcegitcommit: 916fed64f3d173498a2905c7ed8d2d6416e34061
+ms.openlocfilehash: 9a5f28f01d0c8be6692deaf27391e52619fcdcab
+ms.sourcegitcommit: 84c79ceea27f7411528defc5ee8ba35ae2bf473c
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/23/2019
-ms.locfileid: "66046491"
+ms.lasthandoff: 07/02/2019
+ms.locfileid: "67512258"
 ---
 # <a name="configure-device-compliance-and-app-management-policies-when-migrating-to-microsoft-intune"></a>Configurar políticas de conformidade do dispositivo e de gerenciamento de aplicativo durante uma migração para o Microsoft Intune
 
@@ -59,7 +59,7 @@ Os perfis de acesso aos recursos fornecem certificados e configurações de aces
 
 Você precisa criar um perfil de configuração de dispositivo para impor as configurações no nível do dispositivo, por exemplo: desabilitar a câmera, loja de aplicativos, configurar o modo de aplicativo único, tela inicial e assim por diante. Saiba mais sobre [perfis de dispositivo](device-profiles.md).
 
-####  <a name="directly-import-ios-configuration-profiles-optional"></a>Importar diretamente perfis de configuração do iOS (opcional)
+#### <a name="directly-import-ios-configuration-profiles-optional"></a>Importar diretamente perfis de configuração do iOS (opcional)
 
 -   **Perfis do Apple Configurator iOS (iOS 7.1 e posterior):** se a solução de MDM existente usar perfis do Apple Configurator (arquivos .mobileconfig), o Intune poderá importá-las diretamente como políticas de configuração personalizadas.
 

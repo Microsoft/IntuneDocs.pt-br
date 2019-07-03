@@ -16,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure; get-started
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 546694409e6f87d85c5ef934b5d084b0955e0bf7
-ms.sourcegitcommit: 916fed64f3d173498a2905c7ed8d2d6416e34061
+ms.openlocfilehash: c15bd301b60481f4d8b15617512851e2cc29034a
+ms.sourcegitcommit: 7315fe72b7e55c5dcffc6d87f185f3c2cded9028
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/23/2019
-ms.locfileid: "66041861"
+ms.lasthandoff: 07/02/2019
+ms.locfileid: "67529747"
 ---
 # <a name="incomplete-user-enrollments-report"></a>Relatório de registros de usuário incompletos
 
@@ -35,9 +35,9 @@ Usando essas informações, é possível atualizar seus documentos de integraç�
 
 Um registro incompleto é quando um usuário faz o seguinte:
 
--   Explicitamente escolhe uma ação para interromper o registro
--   Fecha o Portal da Empresa durante o registro
--   Gasta mais de 30 minutos entre seções do registro
+- Explicitamente escolhe uma ação para interromper o registro
+- Fecha o Portal da Empresa durante o registro
+- Gasta mais de 30 minutos entre seções do registro
 
 Se um usuário optar por interromper o registro e reiniciar várias vezes, ele será exibido como várias tentativas e vários registros incompletos. Se um usuário aguardar 30 minutos entre diferentes telas de registro, isso será considerado vários registros incompletos.
 
@@ -53,18 +53,18 @@ Você pode filtrar o intervalo de datas, o sistema operacional e a seção do re
 
 Na parte superior do relatório, é possível ver o número e o percentual de registros incompletos em relação a todos os registros.
 
--   Registros iniciados: o número de tentativas de registros.
--   Registros incompletos: o número de tentativas de registros que não resultaram em um dispositivo totalmente registrado e em conformidade.
--   Taxa incompleta: o percentual de tentativas de registro que foram abandonadas (registros abandonados/registros iniciados).
+- Registros iniciados: o número de tentativas de registros.
+- Registros incompletos: o número de tentativas de registros que não resultaram em um dispositivo totalmente registrado e em conformidade.
+- Taxa incompleta: o percentual de tentativas de registro que foram abandonadas (registros abandonados/registros iniciados).
 
 ### <a name="line-graph"></a>Gráfico de linhas
 
 O gráfico de linhas mostra os registros incompletos diários para cada uma das quatro seções de registro básicas:
 
--   Lista de verificação de configuração
--   Telas de plataforma
--   Termos de uso
--   Conformidade/Ativação
+- Lista de verificação de configuração
+- Telas de plataforma
+- Termos de uso
+- Conformidade/Ativação
 
 ### <a name="user-abandonment-actions"></a>Ações de abandono de usuário
 

@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: bad416e738f1a0481c67480d9a83157a4781c71b
-ms.sourcegitcommit: 916fed64f3d173498a2905c7ed8d2d6416e34061
+ms.openlocfilehash: 6ec42d122bf3da3fbacef513d6af2dbe124b196c
+ms.sourcegitcommit: 7315fe72b7e55c5dcffc6d87f185f3c2cded9028
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/23/2019
-ms.locfileid: "66050331"
+ms.lasthandoff: 07/02/2019
+ms.locfileid: "67530783"
 ---
 # <a name="quickstart-create-and-assign-an-app-protection-policy"></a>Início Rápido: Criar e atribuir uma política de proteção de aplicativo
 
@@ -66,12 +66,12 @@ Depois de criar uma política de proteção de aplicativo no Intune, você poder
 
 Use as seguintes etapas para atribuir a política de proteção do aplicativo:
 
-1.  No [Intune](https://aka.ms/intuneportal), selecione **Intune** > **Aplicativos cliente** > **Políticas de proteção de aplicativo**. 
-2.  Selecione a política de proteção de aplicativo criada anteriormente. Neste início rápido, a política é a **proteção de conteúdo do Windows 10**.
-3.  Selecione **Atribuições**.
-4.  Clique em **Selecionar grupos para incluir** na guia **Incluir**.
-5.  Selecione **Testadores Contoso** como grupo para incluir.
-6.  Clique em **Selecionar** > **Salvar**. 
+1. No [Intune](https://aka.ms/intuneportal), selecione **Intune** > **Aplicativos cliente** > **Políticas de proteção de aplicativo**. 
+2. Selecione a política de proteção de aplicativo criada anteriormente. Neste início rápido, a política é a **proteção de conteúdo do Windows 10**.
+3. Selecione **Atribuições**.
+4. Clique em **Selecionar grupos para incluir** na guia **Incluir**.
+5. Selecione **Testadores Contoso** como grupo para incluir.
+6. Clique em **Selecionar** > **Salvar**. 
 
 Você agora atribuiu a política de proteção de aplicativo.
 

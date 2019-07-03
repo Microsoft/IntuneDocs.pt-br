@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 9be961908920420dbb4111c2c3ba108b7e11c09f
-ms.sourcegitcommit: 916fed64f3d173498a2905c7ed8d2d6416e34061
+ms.openlocfilehash: f97b3365036271a7f41e7c3274e8a3bd966407f3
+ms.sourcegitcommit: 84c79ceea27f7411528defc5ee8ba35ae2bf473c
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/23/2019
-ms.locfileid: "66042781"
+ms.lasthandoff: 07/02/2019
+ms.locfileid: "67512144"
 ---
 # <a name="how-to-manage-data-transfer-between-ios-apps-in-microsoft-intune"></a>Como gerenciar a transferência de dados entre aplicativos iOS no Microsoft Intune
 
@@ -34,7 +34,7 @@ Para ajudar a proteger os dados da empresa, restrinja as transferências de arqu
 
 O recurso **Abrir em gerenciamento** para dispositivos iOS pode limitar as transferências de arquivo entre os aplicativos que são implantados por meio do canal **MDM**. Defina as restrições de *Abrir no gerenciamento* nas configurações e implante-as usando sua solução de MDM.  Quando um usuário instala o aplicativo implantado, restrições definidas por você são aplicadas.
 
-##  <a name="use-app-protection-with-ios-apps"></a>Usar a proteção do aplicativo com aplicativos iOS
+## <a name="use-app-protection-with-ios-apps"></a>Usar a proteção do aplicativo com aplicativos iOS
 Use as políticas de proteção de aplicativo com o recurso **Abrir no gerenciamento** do iOS para proteger os dados da empresa das seguintes maneiras:
 
 -   **Dispositivos de funcionários não gerenciados por nenhuma solução de MDM:** Defina as configurações da política de proteção de aplicativo como **Permitir que o aplicativo transfira dados somente para aplicativos Gerenciados por Política**. O comportamento de *Abrir em* em um aplicativo Gerenciado por Política apresentará apenas outros aplicativos Gerenciados por Política como opção de compartilhamento. Se um usuário tentar enviar um arquivo protegido por política como um anexo no OneDrive no aplicativo de email nativo, esse arquivo ficará ilegível.

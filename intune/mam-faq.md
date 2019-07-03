@@ -16,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 9884f1c5d794b527aeaf8fb522d9118d59468b3b
-ms.sourcegitcommit: 095fd4c324850aae8ebe32be43fa074361816a4b
+ms.openlocfilehash: 54511e29bd44b862a5ad06bdfda2067ed7248677
+ms.sourcegitcommit: 116ef72b9da4d114782d4b8dd9f57556c9b01511
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/04/2019
-ms.locfileid: "66506892"
+ms.lasthandoff: 07/01/2019
+ms.locfileid: "67494277"
 ---
 # <a name="frequently-asked-questions-about-mam-and-app-protection"></a>Perguntas frequentes sobre o MAM e a proteção do aplicativo
 
@@ -86,7 +86,7 @@ O SDK da APP do Intune usa algumas funcionalidades avançadas de ADAL para as ve
 - O usuário final deve ter uma caixa de correio do [Office 365 Exchange Online](https://products.office.com/exchange/exchange-online) e uma licença vinculada à sua conta do Azure Active Directory.
 
   >[!NOTE]
-  > O aplicativo móvel do Outlook atualmente é compatível apenas para a Proteção de Aplicativo do Intune para o Microsoft Exchange Online e [Exchange Server com autenticação moderna híbrida](https://technet.microsoft.com/en-us/library/mt846639(v=exchg.160).aspx), e não dá suporte ao Exchange no Office 365 Dedicado.
+  > O aplicativo móvel do Outlook atualmente é compatível apenas para a Proteção de Aplicativo do Intune para o Microsoft Exchange Online e [Exchange Server com autenticação moderna híbrida](https://technet.microsoft.com/library/mt846639(v=exchg.160).aspx), e não dá suporte ao Exchange no Office 365 Dedicado.
 
 **Quais são os requisitos adicionais para usar os [aplicativos Word, Excel e PowerPoint](https://products.office.com/business/office)?**
 
