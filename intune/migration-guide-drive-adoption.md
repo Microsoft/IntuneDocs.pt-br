@@ -16,12 +16,12 @@ ms.reviewer: dagerrit
 ms.suite: ems
 search.appverid: MET150
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: a37d6dac24049a10b5abaed41a44c0c391b095e6
-ms.sourcegitcommit: 916fed64f3d173498a2905c7ed8d2d6416e34061
+ms.openlocfilehash: 2bedaf279d65ee1ed7f8dda4e8d866fb848bade7
+ms.sourcegitcommit: 4b83697de8add3b90675c576202ef2ecb49d80b2
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/23/2019
-ms.locfileid: "66050468"
+ms.lasthandoff: 06/13/2019
+ms.locfileid: "67044597"
 ---
 # <a name="drive-end-user-adoption-with-conditional-access-in-microsoft-intune"></a>Gerar adoção do usuário final com acesso condicional no Microsoft Intune
 
@@ -52,7 +52,7 @@ Está é uma abordagem típica para aprimorar uma campanha de migração com ace
 
 Essa é uma abordagem entre várias. Você pode escolher um processo mais simples que adia todo o acesso condicional até que cada fase tenha sido instruída para o registro, ou um processo mais rígido que garante o acesso condicional desde o começo e exige conformidade total para todos os acessos.
 
--   Saiba mais sobre o [acesso condicional](conditional-access.md).
+-   Saiba mais sobre o [Acesso Condicional](conditional-access.md).
 
 ## <a name="task-list-for-conditional-access"></a>Lista de tarefas para acesso condicional
 
@@ -64,13 +64,13 @@ Essa é uma abordagem entre várias. Você pode escolher um processo mais simple
 
 Selecione uma das seguintes opções:
 
--   [Configurar o acesso condicional no Azure Active Directory](https://docs.microsoft.com/azure/active-directory/active-directory-conditional-access-azure-portal)
+-   [Configurar o Acesso Condicional no Azure Active Directory](https://docs.microsoft.com/azure/active-directory/active-directory-conditional-access-azure-portal)
 
 -   [Instalar o Exchange Connector local com o Intune](exchange-connector-install.md)
 
--   [Configurar políticas de acesso condicional baseado no aplicativo para o Exchange Online](app-based-conditional-access-intune-create.md)
+-   [Configurar políticas de Acesso Condicional baseado em aplicativo para o Exchange Online](app-based-conditional-access-intune-create.md)
 
--   [Configurar políticas de acesso condicional baseado no aplicativo para o SharePoint Online](app-based-conditional-access-intune-create.md)
+-   [Configurar políticas de Acesso Condicional baseado no aplicativo para o SharePoint Online](app-based-conditional-access-intune-create.md)
 
 -   [Bloquear aplicativos que não usam autenticação moderna (ADAL)](app-modern-authentication-block.md)
 

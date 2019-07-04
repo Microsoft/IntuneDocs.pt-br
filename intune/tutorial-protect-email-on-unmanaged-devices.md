@@ -1,7 +1,7 @@
 ---
 title: 'Tutorial: Proteger o email do Exchange Online em dispositivos não gerenciados'
 titleSuffix: Microsoft Intune
-description: Saiba como proteger o Office 365 Exchange Online com as políticas de proteção de aplicativo do Intune e acesso condicional do Azure AD.
+description: Saiba como proteger o Office 365 Exchange Online com as políticas de proteção de aplicativo do Intune e Acesso Condicional do Azure AD.
 keywords: ''
 author: brenduns
 ms.author: brenduns
@@ -16,20 +16,20 @@ ms.reviewer: ''
 ms.suite: ems
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: fc1f877f9b457c6abafef7f1e66e8b04bba2c8e0
-ms.sourcegitcommit: 2f32f6d2129bc10cc4a02115732e995edceb37d6
+ms.openlocfilehash: 624cc72ad9539659e1ce2c8b70f6a6698d5e7ba2
+ms.sourcegitcommit: 4b83697de8add3b90675c576202ef2ecb49d80b2
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/11/2019
-ms.locfileid: "66829031"
+ms.lasthandoff: 06/13/2019
+ms.locfileid: "67046275"
 ---
 # <a name="tutorial-protect-exchange-online-email-on-unmanaged-devices"></a>Tutorial: Proteger o email do Exchange Online em dispositivos não gerenciados
 
-Saiba como usar as políticas de proteção de aplicativo com o acesso condicional para proteção do Exchange Online, mesmo quando os dispositivos não estiverem registrados em uma solução de gerenciamento de dispositivo, como o Intune. Neste tutorial, você aprenderá a: 
+Saiba como usar as políticas de proteção de aplicativo com o Acesso Condicional para proteção do Exchange Online, mesmo quando os dispositivos não estiverem registrados em uma solução de gerenciamento de dispositivo, como o Intune. Neste tutorial, você aprenderá a: 
 
 > [!div class="checklist"]
 > * Criar uma política de proteção de aplicativo do Intune para o aplicativo Outlook. Você limitará o que o usuário pode fazer com os dados de aplicativo, impedindo a opção "Salvar como" e restringindo ações de recortar, copiar e colar. 
-> * Crie políticas de acesso condicional do Azure AD (Azure Active Directory) que permitem somente ao aplicativo Outlook acessar o email da empresa no Exchange Online. Você também exigirá a autenticação multifator (MFA) para clientes de autenticação moderna, como o Outlook para iOS e o Android.
+> * Crie políticas de Acesso Condicional do Azure AD (Azure Active Directory) que permitem somente ao aplicativo Outlook acessar o email da empresa no Exchange Online. Você também exigirá a autenticação multifator (MFA) para clientes de autenticação moderna, como o Outlook para iOS e o Android.
 
 ## <a name="prerequisites"></a>Pré-requisitos
   - Você precisará de um locatário de teste com as seguintes assinaturas para este tutorial:
@@ -76,18 +76,18 @@ Para este tutorial, configuraremos uma política de proteção de aplicativo do 
 
 7.  No painel Configurações, selecione **OK**e, no painel Criar política, selecione **Criar**.
 
-A política de proteção de aplicativo para Outlook foi criada. Em seguida, você configurará o acesso condicional para exigir que os dispositivos usem o aplicativo Outlook.
+A política de proteção de aplicativo para Outlook foi criada. Em seguida, você configurará o Acesso Condicional para exigir que os dispositivos usem o aplicativo Outlook.
 
-## <a name="create-conditional-access-policies"></a>Criar políticas de acesso condicional
-Agora, vamos criar duas políticas de acesso condicional para cobrir todas as plataformas de dispositivo.  
+## <a name="create-conditional-access-policies"></a>Criar políticas de Acesso Condicional
+Agora, vamos criar duas políticas de Acesso Condicional para cobrir todas as plataformas de dispositivo.  
 
 - A primeira política exigirá que os clientes de Autenticação Moderna usem o aplicativo Outlook aprovado e a MFA (Autenticação Multifator). Os clientes de Autenticação Moderna incluem o Outlook para iOS e o Outlook para Android.  
 
-- A segunda política exigirá que os clientes do Exchange ActiveSync usem o aplicativo Outlook aprovado. Atualmente, Exchange Active Sync não dá suporte a condições além da plataforma de dispositivo. Configure as políticas de acesso condicional ​​no portal do Azure AD ou no portal do Intune. Como já estamos no portal do Intune, vamos criar a política aqui.  
+- A segunda política exigirá que os clientes do Exchange ActiveSync usem o aplicativo Outlook aprovado. Atualmente, Exchange Active Sync não dá suporte a condições além da plataforma de dispositivo. Configure as políticas de Acesso Condicional ​​no portal do Azure AD ou no portal do Intune. Como já estamos no portal do Intune, vamos criar a política aqui.  
 
 ### <a name="create-an-mfa-policy-for-modern-authentication-clients"></a>Criar uma política de MFA para os clientes de autenticação moderna  
 
-1. No Intune, selecione **Acesso condicional** > **Políticas** > **Nova Política**.  
+1. No Intune, selecione **Acesso Condicional** > **Políticas** > **Nova Política**.  
 
 2. Para **Nome**, insira **Testar política para clientes de autenticação moderna**.  
 
@@ -129,10 +129,10 @@ Agora, vamos criar duas políticas de acesso condicional para cobrir todas as pl
      
     ![Selecionar o aplicativo do Office 365 Exchange Online](media/tutorial-protect-email-on-unmanaged-devices/enable-policy.png)  
 
-A política de acesso condicional para clientes de autenticação moderna foi criada. Agora, você pode criar uma política para clientes do Exchange Active Sync.
+A política de Acesso Condicional para clientes de autenticação moderna foi criada. Agora, você pode criar uma política para clientes do Exchange Active Sync.
 
 ### <a name="create-a-policy-for-exchange-active-sync-clients"></a>Criar uma política para clientes do Exchange Active Sync  
-1. No Intune, selecione **Acesso condicional** > **Políticas** > **Nova Política**.  
+1. No Intune, selecione **Acesso Condicional** > **Políticas** > **Nova Política**.  
 2. Para **Nome**, insira **Política de teste para clientes de EAS**.  
 3. Em **Atribuições**, selecione **Usuários e Grupos**.  
 4. Na guia *Incluir*, selecione **Todos os usuários** e, em seguida, **Concluído**.  
@@ -166,7 +166,7 @@ A política de acesso condicional para clientes de autenticação moderna foi cr
 
 9. Selecione **Criar**.  
 
-Suas políticas de proteção de aplicativo e o acesso condicional estão em vigor e prontos para teste.  
+Suas políticas de proteção de aplicativo e o Acesso Condicional estão em vigor e prontos para teste.  
 
 ## <a name="try-it-out"></a>Experimente  
 Com as políticas que você criou, será necessário inscrever os dispositivos no Intune e usar o aplicativo móvel do Outlook para acessar o email do Office 365. Para testar esse cenário em um dispositivo iOS, tente entrar no Exchange Online usando credenciais para um usuário em seu locatário de teste.  
@@ -189,4 +189,4 @@ Quando as políticas de teste não forem mais necessárias, é possível removê
 5. Na lista **Nome da política**, selecione o menu de contexto ( **...** ) para cada uma de suas políticas de teste e, em seguida, selecione **Excluir**. Selecione **Sim** para confirmar.  
 
  ## <a name="next-steps"></a>Próximas etapas  
-Neste tutorial, você criou políticas de proteção de aplicativo para limitar as ações do usuário no aplicativo Outlook, e criou as políticas de acesso condicional para exigir o aplicativo Outlook e exigir MFA para clientes de autenticação moderna. Para aprender a usar o Intune com acesso condicional para proteger outros aplicativos e serviços, confira [Configurar acesso condicional](conditional-access.md).
+Neste tutorial, você criou políticas de proteção de aplicativo para limitar as ações do usuário no aplicativo Outlook, e criou as políticas de Acesso Condicional para exigir o aplicativo Outlook e exigir MFA para clientes de autenticação moderna. Para aprender a usar o Intune com Acesso Condicional para proteger outros aplicativos e serviços, confira [Configurar Acesso Condicional](conditional-access.md).

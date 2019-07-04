@@ -14,12 +14,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure, seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: a10fa6983b8e8c34a1844c647d952ca8cbf0730c
-ms.sourcegitcommit: 916fed64f3d173498a2905c7ed8d2d6416e34061
+ms.openlocfilehash: 1c1400b3786965ab962de01207f24b53aa3a47b1
+ms.sourcegitcommit: 4b83697de8add3b90675c576202ef2ecb49d80b2
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/23/2019
-ms.locfileid: "66050164"
+ms.lasthandoff: 06/13/2019
+ms.locfileid: "67045997"
 ---
 # <a name="manage-and-use-different-device-management-features-on-windows-holographic-and-hololens-devices-with-intune"></a>Gerenciar e usar diferentes recursos de gerenciamento de dispositivo em dispositivos do Windows Holographic e HoloLens com o Intune
 
@@ -33,11 +33,11 @@ Para usar dispositivos Windows Holographic com o Intune, crie um perfil de atual
 
 O Azure AD (Active Directory) é um ótimo recurso para ajudar a gerenciar e controlar dispositivos que executam o Windows Holographic for Business. Com o Intune e o Azure AD, é possível: 
 
-- **[Ingressar dispositivos no Azure Active Directory](https://docs.microsoft.com/azure/active-directory/devices/azureadjoin-plan)**: no Azure Active Directory (AD), é possível adicionar os dispositivos Windows 10 do seu trabalho, incluindo dispositivos executando o Windows Holographic for Business. Esse recurso permite que o Azure AD controle o dispositivo. Ele ajuda a confirmar se os usuários estão acessando os recursos da empresa em dispositivos que atendem aos padrões de segurança e conformidade.
+- **[Ingressar dispositivos no Azure Active Directory](https://docs.microsoft.com/azure/active-directory/devices/azureadjoin-plan)** : no Azure Active Directory (AD), é possível adicionar os dispositivos Windows 10 do seu trabalho, incluindo dispositivos executando o Windows Holographic for Business. Esse recurso permite que o Azure AD controle o dispositivo. Ele ajuda a confirmar se os usuários estão acessando os recursos da empresa em dispositivos que atendem aos padrões de segurança e conformidade.
 
   O [Gerenciamento de dispositivos no Azure AD](https://docs.microsoft.com/azure/active-directory/devices/overview) fornece mais detalhes.
 
-- **[Registro em massa para dispositivos Windows](windows-bulk-enroll.md)**: você pode ingressar muitos dispositivos novos com Windows no Azure Active Directory e no Intune. Esse recurso é chamado de registro em massa e usa pacotes de provisionamento. Esses pacotes ingressam os dispositivos que executam o Windows Holographic for Business no seu locatário do Azure AD e os registra no Intune.
+- **[Registro em massa para dispositivos Windows](windows-bulk-enroll.md)** : você pode ingressar muitos dispositivos novos com Windows no Azure Active Directory e no Intune. Esse recurso é chamado de registro em massa e usa pacotes de provisionamento. Esses pacotes ingressam os dispositivos que executam o Windows Holographic for Business no seu locatário do Azure AD e os registra no Intune.
 
 ## <a name="company-portal"></a>Portal da Empresa
 **[Configurar o aplicativo do Portal da Empresa](company-portal-app.md)**
@@ -54,9 +54,9 @@ Usando o aplicativo Portal da Empresa, você também pode executar as seguintes 
 ## <a name="compliance-policy"></a>Política de conformidade
 **[Criar uma política de conformidade do dispositivo](compliance-policy-create-windows.md)**
 
-Políticas de conformidade são regras e configurações que os dispositivos devem cumprir para serem compatíveis. Use essas políticas com acesso condicional para bloquear o acesso aos recursos da empresa em dispositivos que não estejam em conformidade. No Intune, crie políticas de conformidade para permitir ou bloquear o acesso de dispositivos que executam o Windows Holographic for Business. Por exemplo, você pode criar uma política que exige que o BitLocker seja habilitado.
+Políticas de conformidade são regras e configurações que os dispositivos devem cumprir para serem compatíveis. Use essas políticas com Acesso Condicional para bloquear o acesso aos recursos da empresa em dispositivos que não estejam em conformidade. No Intune, crie políticas de conformidade para permitir ou bloquear o acesso de dispositivos que executam o Windows Holographic for Business. Por exemplo, você pode criar uma política que exige que o BitLocker seja habilitado.
 
-Consulte também **[Introdução às políticas de conformidade](device-compliance-get-started.md)**.
+Consulte também **[Introdução às políticas de conformidade](device-compliance-get-started.md)** .
 
 ## <a name="deploy-and-manage-apps"></a>Implantar e gerenciar aplicativos
 **[Adicionar aplicativos ao Intune](apps-add.md)**
@@ -85,11 +85,11 @@ O Intune tem algumas ações internas que permitem que os administradores de TI 
 
 Ao usar os dispositivos que executam o Windows Holographic for Business, as seguintes ações podem ser usadas: 
 
-- **[Apagar](devices-wipe.md#wipe)**: a ação **Apagar** remove o dispositivo do Intune e o restaura para as configurações padrão de fábrica. Use essa ação antes de dar o dispositivo a um novo usuário ou quando ele for extraviado ou roubado.
+- **[Apagar](devices-wipe.md#wipe)** : a ação **Apagar** remove o dispositivo do Intune e o restaura para as configurações padrão de fábrica. Use essa ação antes de dar o dispositivo a um novo usuário ou quando ele for extraviado ou roubado.
 
-- **[Desativar](devices-wipe.md#retire)**: a ação **Desativar** remove o dispositivo do Intune. Ela também remove do aplicativo gerenciado os dados, as configurações e os perfis de email atribuídos pelo Intune. Os dados pessoais do usuário permanecem no dispositivo.
+- **[Desativar](devices-wipe.md#retire)** : a ação **Desativar** remove o dispositivo do Intune. Ela também remove do aplicativo gerenciado os dados, as configurações e os perfis de email atribuídos pelo Intune. Os dados pessoais do usuário permanecem no dispositivo.
 
-- **[Sincronizar dispositivos para obter as políticas e ações mais recentes](device-sync.md)**: a ação **Sincronizar** força o dispositivo selecionado a fazer check-in no Intune imediatamente. Quando um dispositivo faz check-in, ele recebe imediatamente ações pendentes ou políticas atribuídas a ele. Esse recurso ajuda-o a validar e a solucionar problemas das políticas que você atribuiu, sem precisar esperar o próximo check-in agendado.
+- **[Sincronizar dispositivos para obter as políticas e ações mais recentes](device-sync.md)** : a ação **Sincronizar** força o dispositivo selecionado a fazer check-in no Intune imediatamente. Quando um dispositivo faz check-in, ele recebe imediatamente ações pendentes ou políticas atribuídas a ele. Esse recurso ajuda-o a validar e a solucionar problemas das políticas que você atribuiu, sem precisar esperar o próximo check-in agendado.
 
 **[O que é o gerenciamento de dispositivos do Microsoft Intune?](device-management.md)** é um bom recurso para aprender a gerenciar dispositivos usando o Portal do Azure. 
 

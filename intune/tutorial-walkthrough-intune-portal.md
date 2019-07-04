@@ -17,12 +17,12 @@ ms.reviewer: ''
 ms.suite: ems
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: c84cd0ec61ea08956bbebd040167991c6285d073
-ms.sourcegitcommit: 916fed64f3d173498a2905c7ed8d2d6416e34061
+ms.openlocfilehash: e3c305cc579fedb9090faaf6c7270fcc546e36eb
+ms.sourcegitcommit: 4b83697de8add3b90675c576202ef2ecb49d80b2
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/23/2019
-ms.locfileid: "66044979"
+ms.lasthandoff: 06/13/2019
+ms.locfileid: "67044337"
 ---
 # <a name="tutorial-walkthrough-of-microsoft-intune-in-the-azure-portal"></a>Tutorial: Instruções passo a passo do Microsoft Intune no portal do Azure
 
@@ -100,11 +100,11 @@ Siga as etapas abaixo para entender melhor o Intune no portal do Azure. Depois d
     
     Como administrador de TI, você pode usar o Microsoft Intune para gerenciar os aplicativos cliente que os colaboradores da sua empresa usam. Essa funcionalidade está além do gerenciamento de dispositivos e proteção de dados. Uma das prioridades do administrador é garantir que os usuários finais tenham acesso aos aplicativos necessários para realizar seu trabalho. Além disso, pode ser útil atribuir e gerenciar aplicativos em dispositivos que não estão registrados com o Intune. O Intune oferece uma variedade de recursos para ajudar a obter os aplicativos que você precisa, nos dispositivos que você deseja. Para obter mais informações sobre como adicionar e atribuir aplicativos, confira [Adicionar aplicativos ao Microsoft Intune](apps-add.md) e [Atribuir aplicativos a grupos com o Microsoft Intune](apps-deploy.md).
 
-7. Em [Intune](https://aka.ms/intuneportal), selecione **Acesso condicional** para exibir detalhes sobre as políticas de acesso.
+7. Em [Intune](https://aka.ms/intuneportal), selecione **Acesso Condicional** para exibir detalhes sobre as políticas de acesso.
 
-    ![Captura de tela do painel de acesso condicional](media/tutorial-walkthrough-intune-portal/tutorial-walkthrough-intune-portal-07.png)
+    ![Captura de tela do painel de Acesso Condicional](media/tutorial-walkthrough-intune-portal/tutorial-walkthrough-intune-portal-07.png)
 
-    Acesso condicional significa às formas de controlar os dispositivos e aplicativos que têm permissão para se conectar ao email e aos recursos da empresa. Para saber mais sobre acesso condicional baseado em dispositivo e em aplicativo e ver cenários comuns para uso do acesso condicional com o Intune, confira [O que é acesso condicional?](conditional-access.md)
+    Acesso Condicional significa às formas de controlar os dispositivos e aplicativos que têm permissão para se conectar ao email e aos recursos da empresa. Para saber mais sobre Acesso Condicional baseado em dispositivo e em aplicativo e ver cenários comuns para uso do acesso condicional com o Intune, confira [O que é acesso condicional?](conditional-access.md)
 
 8. Do [Intune](https://aka.ms/intuneportal), selecione **Usuários** para exibir detalhes sobre os usuários que você incluiu no Intune. Esses usuários são a força de trabalho de sua empresa. 
  

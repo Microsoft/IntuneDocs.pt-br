@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: c0a83526a2e9333c0e6a131e59cee29a4a76fffa
-ms.sourcegitcommit: a2bad7465422b98eb3c10f03dc5a24fd99cee78d
+ms.openlocfilehash: 28c3da6d2e3390d20aecc3673cac38e8424ef57a
+ms.sourcegitcommit: a63b9eaa59867ab2b0a6aa415c19d9fff4fda874
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/13/2019
-ms.locfileid: "67041188"
+ms.lasthandoff: 06/25/2019
+ms.locfileid: "67389302"
 ---
 # <a name="enroll-windows-devices-in-intune-by-using-the-windows-autopilot"></a>Registrar dispositivos Windows no Intune usando o Windows Autopilot  
 O Windows Autopilot simplifica a inscrição de dispositivos no Intune. Compilar e manter imagens de sistema operacional personalizadas é um processo que consome muito tempo. Além disso, geralmente se gasta muito tempo para aplicar essas imagens personalizadas de sistema operacional aos novos dispositivos para prepará-los para o uso antes de fornecê-los aos usuários finais. Com o Microsoft Intune e o Autopilot, é possível dar novos dispositivos seus usuários finais sem precisar criar, manter e aplicar imagens personalizadas do sistema operacional para os dispositivos. Quando usa o Intune para gerenciar dispositivos do Autopilot, você pode gerenciar políticas, perfis, aplicativos e muito mais, depois de registrá-los. Para obter uma visão geral dos benefícios, cenários e pré-requisitos, confira [Visão geral do Windows Autopilot](https://docs.microsoft.com/windows/deployment/windows-autopilot/windows-10-autopilot).
@@ -99,8 +99,8 @@ Os perfis de implantação do Autopilot são usados para configurar os dispositi
     
     - **Ocultar opções de alteração de conta (exige o Windows 10, versão 1809 ou posterior)** : Escolha **Ocultar** para impedir que as opções de alteração de conta sejam exibidas nas páginas de entrada e de erro de domínio da empresa. Essa opção exige que a [identidade visual da empresa seja configurada no Azure Active Directory](https://docs.microsoft.com/azure/active-directory/fundamentals/customize-branding).
     - **Tipo de conta de usuário**: Escolha o tipo de conta do usuário (usuário **Administrador** ou **Padrão**).
-    - **Permitir OOBE com Assistência Individual**: Escolha **Sim** para permitir suporte a OOBE com Assistência Individual.
-    - **Aplicar modelo de nome do dispositivo**: Escolha **Sim** para criar um modelo a ser usado ao nomear um dispositivo durante o registro. Os nomes precisam ter 15 caracteres ou menos e podem ter letras, números e hifens. Os nomes não podem conter apenas números. Use a [macro %%SERIAL%](https://docs.microsoft.com/windows/client-management/mdm/accounts-csp) para adicionar um número de série específico do hardware. Ou use a [macro %RAND:x%](https://docs.microsoft.com/windows/client-management/mdm/accounts-csp) para adicionar uma cadeia de números aleatória, em que x é igual ao número de dígitos a serem adicionados. 
+    - **Permitir White Glove OOBE** (exige o Windows 10, versão 1903 ou posterior; [requisitos físicos adicionais](https://docs.microsoft.com/windows/deployment/windows-autopilot/white-glove#prerequisites)): Escolha **Sim** para permitir suporte a OOBE com Assistência Individual.
+    - **Aplicar modelo de nome do dispositivo** (exige o Windows 10, versão 1809 ou posterior): Escolha **Sim** para criar um modelo a ser usado ao nomear um dispositivo durante o registro. Os nomes precisam ter 15 caracteres ou menos e podem ter letras, números e hifens. Os nomes não podem conter apenas números. Use a [macro %%SERIAL%](https://docs.microsoft.com/windows/client-management/mdm/accounts-csp) para adicionar um número de série específico do hardware. Ou use a [macro %RAND:x%](https://docs.microsoft.com/windows/client-management/mdm/accounts-csp) para adicionar uma cadeia de números aleatória, em que x é igual ao número de dígitos a serem adicionados. 
     - **Idioma (região)** \*: Escolha o idioma que pretende usar no dispositivo. Esta opção está disponível apenas quando você escolhe **Implantação automática** como **Modo de implantação**.
     - **Configurar automaticamente o teclado**\*: Se um **Idioma (Região)** estiver selecionado, escolha **Sim** para ignorar a página de seleção de teclado. Esta opção está disponível apenas quando você escolhe **Implantação automática** como **Modo de implantação**.
 8. Selecione **Avançar**.

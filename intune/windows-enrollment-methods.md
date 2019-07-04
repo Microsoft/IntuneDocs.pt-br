@@ -16,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: ''
 ms.collection: ''
-ms.openlocfilehash: 55e758c8a7eddc1a5500464754448d26680ec772
-ms.sourcegitcommit: cc5d757018d05fc03ac9ea3d30f563df9bfd61ed
+ms.openlocfilehash: eda0d77fc5cdb11fa4bc5b21f48ceb7616ecfb15
+ms.sourcegitcommit: a63b9eaa59867ab2b0a6aa415c19d9fff4fda874
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/10/2019
-ms.locfileid: "66819586"
+ms.lasthandoff: 06/25/2019
+ms.locfileid: "67389256"
 ---
 # <a name="intune-enrollment-methods-for-windows-devices"></a>Métodos de registro do Intune para dispositivos Windows
 
@@ -51,6 +51,7 @@ Os administradores podem configurar os seguintes métodos de registro que não e
 - O [Cogerenciamento do Configuration Manager](https://docs.microsoft.com/sccm/comanage/overview) permite que os administradores registrem seus dispositivos gerenciados do Configuration Manager existente no Intune para obter os benefícios duplos do Intune e do Configuration Manager. 
 - O [DEM](device-enrollment-manager-enroll.md) (gerenciador de registros de dispositivos) é uma conta de serviço especial. As contas do DEM têm permissões que permitem que os usuários autorizados registrem e gerenciem vários dispositivos corporativos. Esses tipos de dispositivos são bons, por exemplo, para aplicativos de ponto de venda ou utilitários, mas não para usuários que precisam acessar os recursos ou o email da empresa. Esse método não permite o uso de recursos como o Acesso Condicional. 
 - O [registro em massa](windows-bulk-enroll.md) permite que um usuário autorizado ingresse grandes quantidades de novos dispositivos corporativos no Azure Active Directory e no Intune. Crie um pacote de provisionamento com o aplicativo WCD (Windows Configuration Designer). Em seguida, usando a mídia USB durante a configuração inicial pelo usuário do Windows ou de um computador Windows existente, instale o pacote de provisionamento para registrar automaticamente os dispositivos no Intune. Esse método não permite o uso do Acesso Condicional. 
+- O [registro de dispositivos do Windows IoT Core](https://docs.microsoft.com/en-us/windows/iot-core/manage-your-device/intunedeviceenrollment) é realizado usando o painel do Windows IoT Core para preparar o dispositivo e, em seguida, usando o Designer de configuração do Windows para criar um pacote de provisionamento. Em seguida, usando mídia de cartão SD durante a inicialização, ele instala o pacote de provisionamento para registrar automaticamente os dispositivos no Intune.
 
 ## <a name="next-steps"></a>Próximas etapas
 

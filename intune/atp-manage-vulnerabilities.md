@@ -15,12 +15,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 987e3171c4e5c5ba3f15097837e2c018ddc7a4b6
-ms.sourcegitcommit: 916fed64f3d173498a2905c7ed8d2d6416e34061
+ms.openlocfilehash: aa6dfef745157ae96736f8405fd5cafc33d4335f
+ms.sourcegitcommit: 4b83697de8add3b90675c576202ef2ecb49d80b2
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/23/2019
-ms.locfileid: "66049206"
+ms.lasthandoff: 06/13/2019
+ms.locfileid: "67045295"
 ---
 # <a name="use-intune-to-remediate-vulnerabilities-identified-by-microsoft-defender-atp"></a>Usar o Intune para corrigir as vulnerabilidades identificadas pela ATP do Microsoft Defender  
 
@@ -67,7 +67,7 @@ Um exemplo de fluxo de trabalho:
 **Configurações do Intune para a ATP**:  
 - Configure uma conexão de serviço a serviço com a ATP do Microsoft Defender.  
 - Implante uma política de conformidade do dispositivo com um tipo de perfil da **ATP do Microsoft Defender (Windows 10 Desktop)** para dispositivos que terão os riscos avaliados pela ATP.
-  Saiba mais sobre como configurar o Intune para trabalhar com a ATP em [Impor a conformidade para a ATP do Microsoft Defender com acesso condicional no Intune](https://docs.microsoft.com/intune/advanced-threat-protection#enable-windows-defender-atp-in-intune).  
+  Saiba mais sobre como configurar o Intune para trabalhar com a ATP em [Impor a conformidade para a ATP do Microsoft Defender com Acesso Condicional no Intune](https://docs.microsoft.com/intune/advanced-threat-protection#enable-windows-defender-atp-in-intune).  
 
 ## <a name="work-with-security-tasks"></a>Trabalhar com tarefas de segurança  
 

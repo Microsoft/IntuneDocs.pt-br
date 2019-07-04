@@ -14,18 +14,18 @@ ms.technology: ''
 ms.assetid: cde4d389-1770-4226-85a3-a2f3b3fb92a3
 search.appverid: MET150
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: df1a3fcfe0f6fd0fc2a5fbfe73935c8f47c106ff
-ms.sourcegitcommit: 916fed64f3d173498a2905c7ed8d2d6416e34061
+ms.openlocfilehash: b945218fd1c2692bdc5ca92db5f309488a1a10bd
+ms.sourcegitcommit: 4b83697de8add3b90675c576202ef2ecb49d80b2
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/23/2019
-ms.locfileid: "66041606"
+ms.lasthandoff: 06/13/2019
+ms.locfileid: "67044299"
 ---
 # <a name="pradeo-mobile-threat-defense-connector-with-intune"></a>Conector de Defesa Contra Ameaças Móveis do Pradeo com o Intune
 
-Você pode controlar o acesso de dispositivos móveis aos recursos corporativos usando o acesso condicional com base na avaliação de risco realizada pelo Pradeo, uma solução de MTD (Defesa contra Ameaças Móveis) integrada ao Microsoft Intune. O risco é avaliado com base na telemetria coletada dos dispositivos que executam o aplicativo Pradeo.
+Você pode controlar o acesso de dispositivos móveis aos recursos corporativos usando o Acesso Condicional com base na avaliação de risco realizada pelo Pradeo, uma solução de MTD (Defesa contra Ameaças Móveis) integrada ao Microsoft Intune. O risco é avaliado com base na telemetria coletada dos dispositivos que executam o aplicativo Pradeo.
 
-Você pode configurar políticas de acesso condicional com base na avaliação de risco do Pradeo, habilitada por meio de políticas de conformidade do dispositivo do Intune, que podem ser usadas para permitir ou bloquear o acesso de dispositivos fora de conformidade a recursos corporativos, com base nas ameaças detectadas.
+Você pode configurar políticas de Acesso Condicional com base na avaliação de risco do Pradeo, habilitada por meio de políticas de conformidade do dispositivo do Intune, que podem ser usadas para permitir ou bloquear o acesso de dispositivos fora de conformidade a recursos corporativos, com base nas ameaças detectadas.
 
 ## <a name="how-do-intune-and-pradeo-help-protect-your-company-resources"></a>Como o Intune e o Pradeo ajudam a proteger os recursos de sua empresa?
 

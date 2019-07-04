@@ -14,12 +14,12 @@ ms.assetid: ''
 ms.suite: ems
 search.appverid: MET150
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: ba3f6fc48a68122f0a192adc8e2140bb7a603b31
-ms.sourcegitcommit: 916fed64f3d173498a2905c7ed8d2d6416e34061
+ms.openlocfilehash: 3400169aab9598624216fcbc9ef7694e1d5441cc
+ms.sourcegitcommit: 4b83697de8add3b90675c576202ef2ecb49d80b2
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/23/2019
-ms.locfileid: "66043473"
+ms.lasthandoff: 06/13/2019
+ms.locfileid: "67045787"
 ---
 # <a name="technology-decisions-for-enabling-byod-with-microsoft-enterprise-mobility--security-ems"></a>Decisões de tecnologia para habilitar BYOD com Microsoft Enterprise Mobility + Security (EMS)
 
@@ -32,7 +32,7 @@ Neste tópico, podemos examinar o caso de uso simples de habilitar o acesso BYOD
 * Suas contas de email são hospedadas no Exchange Online
 
 ## <a name="common-reasons-to-manage-the-device-mdm"></a>Motivos comuns para gerenciar o dispositivo (MDM)
-Você pode facilmente orientar os usuários a registrar seus dispositivos no gerenciamento de dispositivo implantando uma política de [acesso condicional](https://docs.microsoft.com/azure/active-directory/active-directory-conditional-access-azure-portal) no Exchange Online. Aqui estão as razões pelas quais talvez você queira gerenciar dispositivos pessoais:
+Você pode facilmente orientar os usuários a registrar seus dispositivos no gerenciamento de dispositivo implantando uma política de [Acesso Condicional](https://docs.microsoft.com/azure/active-directory/active-directory-conditional-access-azure-portal) no Exchange Online. Aqui estão as razões pelas quais talvez você queira gerenciar dispositivos pessoais:
 
 **Wi-Fi/VPN** – se os usuários precisarem ter um perfil de conectividade corporativa para serem produtivos, isso poderá ser facilmente configurado.
 
@@ -41,7 +41,7 @@ Você pode facilmente orientar os usuários a registrar seus dispositivos no ger
 **Conformidade** – algumas organizações precisam estar em conformidade políticas regulatórias ou outras que chamem controles MDM específicos. Por exemplo, você precisa do MDM para criptografar todo o dispositivo ou para produzir um relatório de todos os aplicativos no dispositivo.
 
 ## <a name="common-reasons-to-only-manage-the-apps-mam"></a>Motivos comuns para gerenciar apenas os aplicativos (MAM)
-MAM sem MDM é muito popular para organizações que dão suporte a BYOD. Você pode orientar os usuários a acessar o email do Outlook Mobile (que dá suporte para proteções MAM) ao implantar uma política de acesso condicional no Exchange Online. Aqui estão as razões pelas quais você talvez queira apenas gerenciar aplicativos em dispositivos pessoais:
+MAM sem MDM é muito popular para organizações que dão suporte a BYOD. Você pode orientar os usuários a acessar o email do Outlook Mobile (que dá suporte para proteções MAM) ao implantar uma política de Acesso Condicional no Exchange Online. Aqui estão as razões pelas quais você talvez queira apenas gerenciar aplicativos em dispositivos pessoais:
 
 **Experiência do usuário** – o registro de MDM inclui muitos avisos (impostos pela plataforma) que geralmente resultam em o usuário decidir que afinal preferiria não acessar seus emails no seu dispositivo pessoal. MAM é muito menos alarmante aos usuários, uma vez que eles simplesmente recebem um pop-up uma vez para serem informados de que as proteções MAM estão em vigor.
 
@@ -52,7 +52,7 @@ MAM sem MDM é muito popular para organizações que dão suporte a BYOD. Você 
 Saiba mais sobre [ciclos de vida de gerenciamento de aplicativo e gerenciamento dispositivo](introduction-device-app-lifecycles.md).
 
 ## <a name="mdm-vs-mam-capability-comparison"></a>Comparação de funcionalidades do MDM vs. MAM
-Como já mencionado, o acesso condicional pode conduzir um usuário na inscrição do seu dispositivo ou no uso de aplicativo gerenciado, como Outlook Mobile. Muitas outras condições podem ser aplicadas a ambos os casos, incluindo:
+Como já mencionado, o Acesso Condicional pode conduzir um usuário na inscrição do seu dispositivo ou no uso de aplicativo gerenciado, como Outlook Mobile. Muitas outras condições podem ser aplicadas a ambos os casos, incluindo:
 
 * Qual o usuário está tentando o acesso
 * Se o local é confiável ou não confiável

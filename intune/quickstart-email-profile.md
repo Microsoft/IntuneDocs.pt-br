@@ -17,16 +17,16 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: bbf04d771a9c1fd43cfe695dd2d27b9cfe1a0528
-ms.sourcegitcommit: 916fed64f3d173498a2905c7ed8d2d6416e34061
+ms.openlocfilehash: bbd8d81dfab46a1e752084aab75fbcf0d8104187
+ms.sourcegitcommit: 4b83697de8add3b90675c576202ef2ecb49d80b2
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/23/2019
-ms.locfileid: "66050299"
+ms.lasthandoff: 06/13/2019
+ms.locfileid: "67044287"
 ---
 # <a name="quickstart-create-an-email-device-profile-for-ios"></a>Início Rápido: Criar um perfil de dispositivo de email para o iOS
 
-Neste início rápido, você verá como criar um perfil de dispositivo de email para dispositivos iOS. Esse perfil especifica as configurações que são necessárias para que o aplicativo de email interno no dispositivo iOS se conecte ao email da empresa. Os perfis de dispositivo de email ajudam a padronizar as configurações entre os dispositivos e permitem que os usuários finais tenham acesso ao email da empresa em seus dispositivos pessoais sem que precisem fazer qualquer configuração. Para proteger ainda mais seu email, você poderá usar um perfil de email para determinar se os dispositivos estão em conformidade e, em seguida, definir o acesso condicional para permitir que somente dispositivos em conformidade acessem o email. Para ver mais detalhes sobre perfis de email, consulte [Como definir as configurações de email no Microsoft Intune](email-settings-configure.md)
+Neste início rápido, você verá como criar um perfil de dispositivo de email para dispositivos iOS. Esse perfil especifica as configurações que são necessárias para que o aplicativo de email interno no dispositivo iOS se conecte ao email da empresa. Os perfis de dispositivo de email ajudam a padronizar as configurações entre os dispositivos e permitem que os usuários finais tenham acesso ao email da empresa em seus dispositivos pessoais sem que precisem fazer qualquer configuração. Para proteger ainda mais seu email, você poderá usar um perfil de email para determinar se os dispositivos estão em conformidade e, em seguida, definir o Acesso Condicional para permitir que somente dispositivos em conformidade acessem o email. Para ver mais detalhes sobre perfis de email, consulte [Como definir as configurações de email no Microsoft Intune](email-settings-configure.md)
 
 Se você não tiver uma assinatura do Intune, [inscreva-se para uma conta de avaliação gratuita](free-trial-sign-up.md).
 
@@ -67,11 +67,11 @@ Entre no [Intune](https://aka.ms/intuneportal) como um Administrador Global ou u
 Se você não pretende usar o perfil criado para tutoriais adicionais ou de teste, pode excluí-lo agora.
 1. No Intune, selecione **Configuração do dispositivo** e selecione **Perfis**.
 2. Selecione o perfil de teste que você criou, **iOS exige o email de trabalho**.
-3. Selecione as reticências (**...**) ao lado do perfil e escolha **Excluir**.
+3. Selecione as reticências ( **...** ) ao lado do perfil e escolha **Excluir**.
 
 ## <a name="next-steps"></a>Próximas etapas
 
-Neste início rápido, você criou um perfil de email para dispositivos iOS. Agora você poderá usar esse perfil para determinar se um dispositivo iOS está em conformidade criando uma política de conformidade que marca como não compatível todos os dispositivos iOS que não corresponderem ao perfil. Para aumentar ainda mais a proteção, é possível criar uma política de acesso condicional que impede dispositivos iOS não compatíveis de acessar o email. Para obter mais informações sobre as políticas de conformidade do dispositivo, confira [Introdução às políticas de conformidade do dispositivo no Intune](device-compliance-get-started.md).
+Neste início rápido, você criou um perfil de email para dispositivos iOS. Agora você poderá usar esse perfil para determinar se um dispositivo iOS está em conformidade criando uma política de conformidade que marca como não compatível todos os dispositivos iOS que não corresponderem ao perfil. Para aumentar ainda mais a proteção, é possível criar uma política de Acesso Condicional que impede dispositivos iOS não compatíveis de acessar o email. Para obter mais informações sobre as políticas de conformidade do dispositivo, confira [Introdução às políticas de conformidade do dispositivo no Intune](device-compliance-get-started.md).
 
 > [!div class="nextstepaction"]
 > [Tutorial: Proteger o email do Exchange Online em dispositivos gerenciados](tutorial-protect-email-on-enrolled-devices.md)

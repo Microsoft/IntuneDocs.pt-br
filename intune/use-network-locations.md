@@ -16,18 +16,18 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: ddc58aed6e7a1efaecd8b7e7cf51a39e43d14e58
-ms.sourcegitcommit: 916fed64f3d173498a2905c7ed8d2d6416e34061
+ms.openlocfilehash: 5491e0d2dfb1aa1989fc202203d9a895823b0b73
+ms.sourcegitcommit: 4b83697de8add3b90675c576202ef2ecb49d80b2
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/23/2019
-ms.locfileid: "66044339"
+ms.lasthandoff: 06/13/2019
+ms.locfileid: "67043887"
 ---
 # <a name="use-locations-network-fence-in-intune"></a>Usar Locais (limite de rede) no Intune
 
 Você talvez queira bloquear o acesso a uma rede corporativa se um dispositivo sair de um local. O recurso **Locais** no Intune oferece essa funcionalidade. 
 
-Você pode criar uma política de conformidade baseada no local de rede, também conhecida como isolamento de rede. A política garante que dispositivos devam ser conectados a uma rede de trabalho para estarem em conformidade. Essa política pode ser usada com políticas de acesso condicional para que os dispositivos tenham acesso a recursos de trabalho *somente* quando o dispositivo estiver conectado à rede de trabalho. Quando o dispositivo não está conectado à rede de trabalho, o dispositivo deixa de estar em conformidade e perde o acesso aos recursos de trabalho.
+Você pode criar uma política de conformidade baseada no local de rede, também conhecida como isolamento de rede. A política garante que dispositivos devam ser conectados a uma rede de trabalho para estarem em conformidade. Essa política pode ser usada com políticas de Acesso Condicional para que os dispositivos tenham acesso a recursos de trabalho *somente* quando o dispositivo estiver conectado à rede de trabalho. Quando o dispositivo não está conectado à rede de trabalho, o dispositivo deixa de estar em conformidade e perde o acesso aos recursos de trabalho.
 
 Considere os seguintes cenários:
 

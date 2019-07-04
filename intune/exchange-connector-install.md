@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: e236548002f2779377e7ac57443077d48869e1f9
-ms.sourcegitcommit: 916fed64f3d173498a2905c7ed8d2d6416e34061
+ms.openlocfilehash: 57684a1f5ef94b12c8f0e52a36d8432583391b8a
+ms.sourcegitcommit: 4b83697de8add3b90675c576202ef2ecb49d80b2
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/23/2019
-ms.locfileid: "66047708"
+ms.lasthandoff: 06/13/2019
+ms.locfileid: "67045686"
 ---
 # <a name="set-up-the-intune-on-premises-exchange-connector-in-microsoft-intune"></a>Configurar o conector do Exchange local do Intune no Microsoft Intune
 As informações deste artigo ajudarão você a instalar e monitorar o conector local do Exchange Active Sync para o Intune.  Use o conector do Exchange local do Intune com suas [políticas de acesso condicional para permitir ou bloquear o acesso às suas caixas de correio locais do Exchange](conditional-access-exchange-create.md). 
@@ -119,7 +119,7 @@ Execute as seguintes etapas para instalar o conector do Exchange local do Intune
 
 4. Nos campos **Usuário (Domínio\usuário)** e **Senha**, insira as credenciais necessárias para se conectar ao Exchange Server. A conta especificada deve ter uma licença para usar o Intune. 
 
-5. Forneça as credenciais necessárias para enviar notificações para a caixa de entrada do Exchange Server do usuário. Este usuário pode ser dedicado a apenas notificações. O usuário de notificações precisa de uma caixa de correio do Exchange para enviar notificações por email. Você pode configurar essas notificações com políticas de acesso condicional no Intune.  
+5. Forneça as credenciais necessárias para enviar notificações para a caixa de entrada do Exchange Server do usuário. Este usuário pode ser dedicado a apenas notificações. O usuário de notificações precisa de uma caixa de correio do Exchange para enviar notificações por email. Você pode configurar essas notificações com políticas de Acesso Condicional no Intune.  
 
        Ensure that the Autodiscover service and Exchange Web Services are configured on the Exchange Client Access Server. For more information, see [Client Access server](https://technet.microsoft.com/library/dd298114.aspx).
 
@@ -184,9 +184,9 @@ Na versão 1710 do Intune em diante, você poderá usar o [pacote de gerenciamen
 ## <a name="manually-force-a-quick-sync-or-full-sync"></a>Forçar manualmente uma sincronização rápida ou completa
 Um Exchange Connector local sincroniza de modo automático os registros de dispositivo do EAS e do Intune regularmente. Se o status de conformidade de um dispositivo for alterado, o processo de sincronização automática atualizará os registros regularmente para que o acesso ao dispositivo possa ser bloqueado ou permitido.
 
-   - **Sincronização rápida** ocorre regularmente, várias vezes ao dia. Uma sincronização rápida recupera informações de dispositivo para usuários almejados por acesso condicional do Exchange local e licenciados pelo Intune que foram alterados desde a última sincronização.
+   - **Sincronização rápida** ocorre regularmente, várias vezes ao dia. Uma sincronização rápida recupera informações de dispositivo para usuários direcionados ao acesso condicional do Exchange local e licenciados pelo Intune que foram alterados desde a última sincronização.
 
-   - **Sincronização completa** ocorre uma vez por dia por padrão. Uma sincronização completa recupera informações do dispositivo para todos os usuários almejados por acesso condicional do Exchange local e licenciados pelo Intune. Uma sincronização completa também recupera informações do servidor Exchange e garante que a configuração especificada pelo Intune no portal do Azure seja atualizada no servidor Exchange. 
+   - **Sincronização completa** ocorre uma vez por dia por padrão. Uma sincronização completa recupera informações do dispositivo para todos os usuários direcionados ao acesso condicional do Exchange local e licenciados pelo Intune. Uma sincronização completa também recupera informações do servidor Exchange e garante que a configuração especificada pelo Intune no portal do Azure seja atualizada no servidor Exchange. 
 
 
 Você pode forçar um conector a executar uma sincronização usando as opções de **Sincronização Rápida** ou **Sincronização Completa** no painel do Intune com as seguintes etapas:

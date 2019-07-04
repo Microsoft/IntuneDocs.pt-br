@@ -5,7 +5,7 @@ keywords: ''
 author: brenduns
 ms.author: brenduns
 manager: dougeby
-ms.date: 06/05/2019
+ms.date: 06/19/2019
 ms.topic: article
 ms.service: microsoft-intune
 ms.localizationpriority: high
@@ -16,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure; seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: c1119a5681033574ec0a114442b122990da872bf
-ms.sourcegitcommit: cb76efd3db60a422a65478ebce83d3aea7b5eeed
+ms.openlocfilehash: 985ca70dba2a5a486947bd2de08e7f8934e90d75
+ms.sourcegitcommit: 2545ffb75b8d9290718d3a67acdcbea2f279090f
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/06/2019
-ms.locfileid: "66749807"
+ms.lasthandoff: 06/19/2019
+ms.locfileid: "67263710"
 ---
 # <a name="configure-and-use-pkcs-certificates-with-intune"></a>Configurar e usar certificados PKCS com o Intune
 
@@ -278,8 +278,6 @@ O *Conector de Certificados PFX do Microsoft Intune* [dá suporte a atualizaçõ
 
 O perfil foi criado, mas não está fazendo nada ainda. Em seguida, [atribua o perfil](device-profile-assign.md) e [monitore seu status](device-profile-monitor.md).
 
-[Use certificados SCEP](certificates-scep-configure.md) ou [emita certificados PKCS em um serviço Web do Symantec PKI Manager](certificates-symantec-configure.md).
+[Use certificados SCEP](certificates-scep-configure.md) ou [emita certificados PKCS em um serviço Web do Digicert PKI Manager](certificates-digicert-configure.md).
 
-[NavigateIntune]: ./media/certificates-pfx-configure-profile-new.png "Navegar até o Intune no Portal do Azure e criar um novo perfil para um certificado confiável"
-[ProfileSettings]: ./media/certificates-pfx-configure-profile-fill.png "Criar um perfil e carregar um certificado confiável"
-[ConnectorDownload]: ./media/certificates-download-connector.png "Baixar o conector de certificado do Portal do Azure"  
+

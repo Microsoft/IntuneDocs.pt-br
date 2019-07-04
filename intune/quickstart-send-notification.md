@@ -17,25 +17,25 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 7d1153254f5e803bc0e1f933b8bdc022f241abcc
-ms.sourcegitcommit: 916fed64f3d173498a2905c7ed8d2d6416e34061
+ms.openlocfilehash: bb175d2133cf2a7bc5b064c13afb7e252147c729
+ms.sourcegitcommit: 4b83697de8add3b90675c576202ef2ecb49d80b2
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/23/2019
-ms.locfileid: "66045842"
+ms.lasthandoff: 06/13/2019
+ms.locfileid: "67044243"
 ---
 # <a name="quickstart-send-notifications-to-noncompliant-devices"></a>Início Rápido: Enviar notificações para dispositivos não compatíveis
 
 Neste início rápido, você usará o Microsoft Intune para enviar uma notificação por email para os membros de sua força de trabalho que têm dispositivos não compatíveis.
 
-Por padrão, quando o Intune detecta um dispositivo que não está em conformidade, ele marca imediatamente o dispositivo como não compatível. Em seguida, o [acesso condicional](https://docs.microsoft.com/azure/active-directory/active-directory-conditional-access-azure-portal) do AAD (Azure Active Directory) bloqueia o dispositivo. Quando um dispositivo não está em conformidade, o Intune permite que você adicione ações de não conformidade, que oferecem mais flexibilidade para decidir o que fazer. Por exemplo, você pode conceder aos usuários um período de cortesia para estar em conformidade antes de bloquear dispositivos não compatíveis.
+Por padrão, quando o Intune detecta um dispositivo que não está em conformidade, ele marca imediatamente o dispositivo como não compatível. Em seguida, o [Acesso Condicional](https://docs.microsoft.com/azure/active-directory/active-directory-conditional-access-azure-portal) do AAD (Azure Active Directory) bloqueia o dispositivo. Quando um dispositivo não está em conformidade, o Intune permite que você adicione ações de não conformidade, que oferecem mais flexibilidade para decidir o que fazer. Por exemplo, você pode conceder aos usuários um período de cortesia para estar em conformidade antes de bloquear dispositivos não compatíveis.
 
 Uma das ações que você pode realizar quando dispositivos não atendem à conformidade é enviar um email aos usuários finais. Você também pode personalizar uma notificação por email antes de enviá-la para os usuários finais. Especificamente, é possível personalizar os destinatários, o assunto e o corpo da mensagem, incluindo o logotipo da empresa e as informações de contato. O Intune também incluirá detalhes sobre o dispositivo não compatível na notificação por email.
 
 Se você não tiver uma assinatura do Intune, [inscreva-se para uma conta de avaliação gratuita](free-trial-sign-up.md).
 
 ## <a name="prerequisites"></a>Pré-requisitos
-- O acesso condicional do AAD precisa ser configurado ao usar políticas de conformidade do dispositivo para impedir que dispositivos usem recursos corporativos. Se você tiver concluído o início rápido [Criar uma política de conformidade do dispositivo](quickstart-set-password-length-android.md), você estará usando o Azure Active Directory. Para obter mais informações sobre o AAD, confira [Acesso condicional no Azure Active Directory](https://docs.microsoft.com/azure/active-directory/active-directory-conditional-access-azure-portal) e [Maneiras comuns de usar o acesso condicional com o Intune](conditional-access-intune-common-ways-use.md).
+- O Acesso Condicional do AAD precisa ser configurado ao usar políticas de conformidade do dispositivo para impedir que dispositivos usem recursos corporativos. Se você tiver concluído o início rápido [Criar uma política de conformidade do dispositivo](quickstart-set-password-length-android.md), você estará usando o Azure Active Directory. Para saber mais sobre o AAD, confira [Acesso Condicional no Azure Active Directory](https://docs.microsoft.com/azure/active-directory/active-directory-conditional-access-azure-portal) e [Maneiras comuns de usar o Acesso Condicional com o Intune](conditional-access-intune-common-ways-use.md).
 
 ## <a name="sign-in-to-intune"></a>Entrar no Intune
 

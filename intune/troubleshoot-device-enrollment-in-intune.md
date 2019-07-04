@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic, seoapril2019
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 6175fca13f1883338b7f5858538728132183b8db
-ms.sourcegitcommit: 916fed64f3d173498a2905c7ed8d2d6416e34061
+ms.openlocfilehash: 063a288c99f3f773b63bd6fe0040e200a754c888
+ms.sourcegitcommit: 4b83697de8add3b90675c576202ef2ecb49d80b2
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/23/2019
-ms.locfileid: "66040593"
+ms.lasthandoff: 06/13/2019
+ms.locfileid: "67046290"
 ---
 # <a name="troubleshoot-device-enrollment-in-microsoft-intune"></a>Solução de problemas de registro de dispositivo no Microsoft Intune
 
@@ -143,7 +143,7 @@ Para evitar atingir os limites de dispositivos, não deixe de remover os registr
 - tiverem vários domínios de nível superior para sufixos UPN de usuários na sua organização (por exemplo, @contoso.com ou @fabrikam.com).
 
 
-Um [rollup para o AD FS 2.0](http://support.microsoft.com/kb/2607496) funciona junto com o comutador <strong>SupportMultipleDomain</strong> para habilitar o servidor AD FS para ser compatível com esse cenário sem precisar exigir servidores AD FS 2.0 adicionais. Para obter mais informações, consulte [este blog](https://blogs.technet.microsoft.uucom/abizerh/2013/02/05/supportmultipledomain-switch-when-managing-sso-to-office-365/).
+Um [rollup para o AD FS 2.0](http://support.microsoft.com/kb/2607496) funciona junto com o comutador <strong>SupportMultipleDomain</strong> para habilitar o servidor AD FS para ser compatível com esse cenário sem precisar exigir servidores AD FS 2.0 adicionais. Para obter mais informações, consulte [este blog](https://blogs.technet.microsoft.com/abizerh/2013/02/05/supportmultipledomain-switch-when-managing-sso-to-office-365/).
 
 
 ## <a name="android-issues"></a>Problemas de Android
@@ -163,7 +163,7 @@ A tabela a seguir lista os erros que os usuários finais podem encontrar durante
 
 - Eles não poderão receber políticas, aplicativos e comandos remotos do serviço do Intune.
 - Eles mostram um Estado de Gerenciamento **não íntegro** no console do administrador.
-- Os usuários que são protegidos por políticas de acesso condicional podem perder o acesso aos recursos corporativos.
+- Os usuários que são protegidos por políticas de Acesso Condicional podem perder o acesso aos recursos corporativos.
 
 O software Samsung Smart Manager, que é fornecido em certos dispositivos Samsung, pode desativar o Portal da Empresa do Intune e seus componentes. Quando o Portal da Empresa está em um estado desativado, ele não pode ser executado em segundo plano e, portanto, não pode contatar o serviço do Intune.
 
@@ -280,11 +280,11 @@ A tabela a seguir lista os erros que os usuários finais podem encontrar durante
 
 - Eles não poderão receber políticas, aplicativos e comandos remotos do serviço do Intune.
 - Eles mostram um Estado de Gerenciamento **não íntegro** no console do administrador.
-- Os usuários que são protegidos por políticas de acesso condicional podem perder o acesso aos recursos corporativos.
+- Os usuários que são protegidos por políticas de Acesso Condicional podem perder o acesso aos recursos corporativos.
 
 **Resolução:** compartilhe as seguintes resoluções com seus usuários finais para ajudá-los a recuperar o acesso aos recursos corporativos.
 
-Quando os usuários iniciarem o aplicativo do Portal da Empresa do iOS, ele poderá informar se o dispositivo perdeu contato com o Intune. Se detectar que não há nenhum contato, ele tentará realizar a sincronização automaticamente com o Intune para se reconectar (e os usuários verão a mensagem **Tentando sincronizar…**) .
+Quando os usuários iniciarem o aplicativo do Portal da Empresa do iOS, ele poderá informar se o dispositivo perdeu contato com o Intune. Se detectar que não há nenhum contato, ele tentará realizar a sincronização automaticamente com o Intune para se reconectar (e os usuários verão a mensagem **Tentando sincronizar…** ) .
 
   ![Notificação Tentando sincronizar](./media/troubleshoot-device-enrollment-in-intune/ios_cp_app_trying_to_sync_notification.png)
 

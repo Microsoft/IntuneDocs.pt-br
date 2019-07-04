@@ -1,6 +1,6 @@
 ---
 title: Integração de controle de acesso de rede com o Microsoft Intune – Azure | Microsoft Docs
-description: Soluções de NAC (controle de acesso) à rede verificam o registro e a conformidade para dispositivos com o Intune. NAC inclui determinados comportamentos e funciona com acesso condicional. Veja as etapas para integração e obtenha uma lista de soluções de parceiros.
+description: Soluções de NAC (controle de acesso) à rede verificam o registro e a conformidade para dispositivos com o Intune. NAC inclui determinados comportamentos e funciona com Acesso Condicional. Veja as etapas para integração e obtenha uma lista de soluções de parceiros.
 keywords: ''
 author: brenduns
 ms.author: brenduns
@@ -16,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: e9663691053d8ecd204ad899805153d0bfb25e6f
-ms.sourcegitcommit: 916fed64f3d173498a2905c7ed8d2d6416e34061
+ms.openlocfilehash: 400de55e26076a8d612ac31388d5c5daec68d4a0
+ms.sourcegitcommit: 4b83697de8add3b90675c576202ef2ecb49d80b2
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/23/2019
-ms.locfileid: "66041564"
+ms.lasthandoff: 06/13/2019
+ms.locfileid: "67044544"
 ---
 # <a name="network-access-control-nac-integration-with-intune"></a>Integração de NAC (controle de acesso de rede) com o Intune
 
@@ -41,9 +41,9 @@ Dispositivos que estão realizando sincronizações ativamente com o Intune não
 
 Para dispositivos com acesso bloqueado aos recursos, o serviço responsável pelo bloqueio deve redirecionar todos os usuários para o [portal de gerenciamento](https://portal.manage.microsoft.com) a fim de determinar por que o dispositivo está bloqueado.  Se os usuários visitarem essa página, seus dispositivos serão reavaliados sincronicamente para fins de conformidade.
 
-## <a name="nac-and-conditional-access"></a>NAC e acesso condicional
+## <a name="nac-and-conditional-access"></a>NAC e Acesso Condicional
 
-O NAC trabalha junto com o acesso condicional para fornecer decisões de controle de acesso. Para obter mais detalhes, consulte [Maneiras comuns de usar o acesso condicional com o Intune](conditional-access-intune-common-ways-use.md).
+O NAC trabalha junto com o Acesso Condicional para fornecer decisões de controle de acesso. Para obter mais detalhes, confira [Maneiras comuns de usar o Acesso Condicional com o Intune](conditional-access-intune-common-ways-use.md).
 
 ## <a name="how-the-nac-integration-works"></a>Como funciona a integração de NAC
 

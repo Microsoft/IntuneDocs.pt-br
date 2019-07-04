@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 812a2e91b28908dcd3893ec77e9923362c8a9173
-ms.sourcegitcommit: 916fed64f3d173498a2905c7ed8d2d6416e34061
+ms.openlocfilehash: c279e21abf47d6ec067f3c75b36ecc7b58681e7e
+ms.sourcegitcommit: 4b83697de8add3b90675c576202ef2ecb49d80b2
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/23/2019
-ms.locfileid: "66046136"
+ms.lasthandoff: 06/13/2019
+ms.locfileid: "67044410"
 ---
 # <a name="create-a-design"></a>Criar um design
 
@@ -403,7 +403,7 @@ Veja abaixo um exemplo de como criar uma política de conformidade:
 [Baixe um modelo da tabela acima](https://gallery.technet.microsoft.com/Intune-deployment-planning-fae156c2?redir=0) para identificar suas necessidades de política de conformidade.
 #### <a name="conditional-access-policies"></a>Políticas de acesso condicional
 
-O acesso condicional é usado para permitir que apenas os dispositivos em conformidade acessem o email e outros recursos da empresa. O Intune funciona com o EMS (Enterprise Mobility + Security) para controlar o acesso aos recursos da empresa. Decida se você exigirá o acesso condicional e o que deverá ser protegido. Saiba mais sobre o [acesso condicional](conditional-access.md).
+O acesso condicional é usado para permitir que apenas os dispositivos em conformidade acessem o email e outros recursos da empresa. O Intune funciona com o EMS (Enterprise Mobility + Security) para controlar o acesso aos recursos da empresa. Decida se você exigirá o acesso condicional e o que deverá ser protegido. Saiba mais sobre o [Acesso Condicional](conditional-access.md).
 
 Para o acesso online, decida quais plataformas e grupos de usuários você direcionará por políticas de acesso condicional. Além disso, determine se é necessário instalar ou configurar o conector do Intune para o Exchange local: 
 
@@ -416,7 +416,7 @@ Este é um exemplo de como documentar as políticas de acesso condicional:
 | Exchange Online | iOS, Android | Bloquear dispositivos não compatíveis em plataformas compatíveis com o Intune | Corporativo, BYOD |
 | SharePoint Online | iOS, Android |  | Corporativo, BYOD |
 
-[Baixe um modelo da tabela acima](https://gallery.technet.microsoft.com/Intune-deployment-planning-fae156c2?redir=0) para identificar suas necessidades de política de acesso.
+[Baixe um modelo da tabela acima](https://gallery.technet.microsoft.com/Intune-deployment-planning-fae156c2?redir=0) para identificar suas necessidades de política de acesso condicional.
 
 ## <a name="next-steps"></a>Próximas etapas
 

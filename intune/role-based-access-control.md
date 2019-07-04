@@ -16,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure; get-started
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 4c4b9f1d1dd0072555d8438940969b7abd0a9fff
-ms.sourcegitcommit: 6e07c35145f70b008cf170bae57143248a275b67
+ms.openlocfilehash: ee0e6ad7e46abe8da4c1b03e836eb9ba2f5991d0
+ms.sourcegitcommit: 4b83697de8add3b90675c576202ef2ecb49d80b2
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/07/2019
-ms.locfileid: "66804471"
+ms.lasthandoff: 06/13/2019
+ms.locfileid: "67044172"
 ---
 # <a name="role-based-access-control-rbac-with-microsoft-intune"></a>RBAC (controle de acesso baseado em função) com o Microsoft Intune
 
@@ -68,7 +68,7 @@ Você pode atribuir funções internas a grupos sem configuração adicional. N�
 | Administrador de dados de conformidade | Nenhum | Somente leitura |
 
 > [!TIP]
-> O Intune também mostra três extensões do Azure AD: **Usuários**, **Grupos** e **Acesso condicional**, que são controlados com o uso do RBAC do Azure AD. Além disso, o **Administrador de Contas de Usuário** apenas realiza as atividades do usuário/grupo do AAD e não tem permissões totais para realizar todas as atividades no Intune. Para saber mais, confira [RBAC com o Azure AD](https://docs.microsoft.com/azure/active-directory/active-directory-assign-admin-roles).
+> O Intune também mostra três extensões do Azure AD: **Usuários**, **grupos** e **acesso condicional** controlados com o uso do RBAC do Azure AD. Além disso, o **Administrador de Contas de Usuário** apenas realiza as atividades do usuário/grupo do AAD e não tem permissões totais para realizar todas as atividades no Intune. Para saber mais, confira [RBAC com o Azure AD](https://docs.microsoft.com/azure/active-directory/active-directory-assign-admin-roles).
 ### <a name="roles-created-in-the-intune-classic-portal"></a>Funções criadas no Portal Clássico do Intune
 Somente os usuários **Administradores de Serviços** do Intune com permissões "Totais" são migrados do Portal Clássico do Intune para o Portal do Azure. Você deve reatribuir o acesso "Somente Leitura" ou "Assistência técnica" aos usuários **Administradores de Serviços** do Intune nas funções do Intune no portal do Azure e removê-los do portal clássico.
 > [!IMPORTANT]

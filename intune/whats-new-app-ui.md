@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 9955330d9f20c13b9239f900b77828d582d12bff
-ms.sourcegitcommit: 916fed64f3d173498a2905c7ed8d2d6416e34061
+ms.openlocfilehash: 0ee16e40eea4d217cd78c3a026731656bfa4ca53
+ms.sourcegitcommit: 4b83697de8add3b90675c576202ef2ecb49d80b2
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/23/2019
-ms.locfileid: "66046434"
+ms.lasthandoff: 06/13/2019
+ms.locfileid: "67045625"
 ---
 # <a name="ui-updates-for-intune-end-user-apps"></a>Atualizações da interface do usuário para aplicativos de usuário final do Intune
 Saiba mais sobre as atualizações mais recentes dos aplicativos do Microsoft Intune. Adicionamos regularmente ao aplicativo e ao site do Portal da Empresa do Intune e os melhoramos. Se você for administrador de serviços do Intune ou responsável por suporte, este artigo fornecerá as informações necessárias para:

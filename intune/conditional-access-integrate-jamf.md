@@ -1,7 +1,7 @@
 ---
 title: Integrar o Jamf Pro ao Microsoft Intune para fins de conformidade
 titleSuffix: Microsoft Intune
-description: Use políticas de conformidade do Microsoft Intune com acesso condicional do Azure Active Directory para ajudar a proteger dispositivos gerenciados pelo Jamf.
+description: Use políticas de conformidade do Microsoft Intune com Acesso Condicional do Azure Active Directory para ajudar a proteger dispositivos gerenciados pelo Jamf.
 keywords: ''
 author: brenduns
 ms.author: brenduns
@@ -17,22 +17,22 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 940ef3e6df95629dad03d6c1d4e60343e4273473
-ms.sourcegitcommit: 916fed64f3d173498a2905c7ed8d2d6416e34061
+ms.openlocfilehash: d25012790322491a9038f0bcf9349434d5a45b8d
+ms.sourcegitcommit: 14f4e97de5699394684939e6f681062b5d4c1671
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/23/2019
-ms.locfileid: "66048833"
+ms.lasthandoff: 06/19/2019
+ms.locfileid: "67251089"
 ---
 # <a name="integrate-jamf-pro-with-intune-for-compliance"></a>Integrar o Jamf Pro ao Intune para fins de conformidade
 
 Aplica-se a: Intune no portal do Azure
 
-Caso sua organização use o [Jamf Pro](https://www.jamf.com) para gerenciar dispositivos Mac dos usuários finais, use as políticas de conformidade do Microsoft Intune com o acesso condicional do Azure Active Directory para garantir que os dispositivos em sua organização estejam em conformidade.
+Caso sua organização use o [Jamf Pro](https://www.jamf.com) para gerenciar dispositivos Mac dos usuários finais, use as políticas de conformidade do Microsoft Intune com o Acesso Condicional do Azure Active Directory para garantir que os dispositivos em sua organização estejam em conformidade.
 
 ## <a name="prerequisites"></a>Pré-requisitos
 
-Você precisa do seguinte para configurar o acesso condicional com o Jamf Pro:
+Você precisa do seguinte para configurar o Acesso Condicional com o Jamf Pro:
 
 - Jamf Pro 10.1.0 ou mais recente
 - [Aplicativo Portal da Empresa para macOS](https://aka.ms/macoscompanyportal)
@@ -44,7 +44,7 @@ Para conectar o Intune ao Jamf Pro:
 
 1. Crie um aplicativo no Azure
 2. Permitir a integração do Intune ao Jamf Pro
-3. Configurar o acesso condicional no Jamf Pro
+3. Configurar o Acesso Condicional no Jamf Pro
 
 ## <a name="create-an-application-in-azure-active-directory"></a>Crie um aplicativo no Azure Active Directory
 
@@ -76,11 +76,11 @@ Para conectar o Intune ao Jamf Pro:
 
 
     > [!NOTE]
-    > Se o segredo do cliente expirar, você deverá criar um novo segredo do cliente no Azure e, depois, atualizar os dados do acesso condicional no Jamf Pro. O Azure permite que você tenha o segredo antigo e a nova chave ativos para evitar interrupções no serviço.
+    > Se o segredo do cliente expirar, você deverá criar um novo segredo do cliente no Azure e, depois, atualizar os dados do Acesso Condicional no Jamf Pro. O Azure permite que você tenha o segredo antigo e a nova chave ativos para evitar interrupções no serviço.
 
 ## <a name="enable-intune-to-integrate-with-jamf-pro"></a>Permitir a integração do Intune ao Jamf Pro
 
-1. Entre no [Intune](https://go.microsoft.com/fwlink/?linkid=20909) e vá para **Microsoft Intune** > **Conformidade do Dispositivo** > **Gerenciamento de dispositivos do parceiro**.
+1. Entre no [Intune](https://go.microsoft.com/fwlink/?linkid=2090973) e vá para **Microsoft Intune** > **Conformidade do Dispositivo** > **Gerenciamento de dispositivos do parceiro**.
 
 2. Habilite o Conector de Conformidade para o Jamf colando a ID do Aplicativo salva no procedimento anterior no campo **ID do Aplicativo do Azure Active Directory para o Jamf**.
 

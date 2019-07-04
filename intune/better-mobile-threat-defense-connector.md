@@ -14,18 +14,18 @@ ms.technology: ''
 ms.assetid: ''
 search.appverid: MET150
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 72835ce45860eb6b10ac7967693cc50b9ceaa96f
-ms.sourcegitcommit: 916fed64f3d173498a2905c7ed8d2d6416e34061
+ms.openlocfilehash: 3fccf3425222814f9493fe525033f67c734012c5
+ms.sourcegitcommit: 4b83697de8add3b90675c576202ef2ecb49d80b2
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/23/2019
-ms.locfileid: "66043567"
+ms.lasthandoff: 06/13/2019
+ms.locfileid: "67045858"
 ---
 # <a name="better-mobile-threat-defense-connector-with-intune"></a>Conector de Defesa contra Ameaças do Better Mobile com o Intune
 
-Você pode controlar o acesso de dispositivos móveis aos recursos corporativos usando o acesso condicional com base na avaliação de risco realizada pelo Better Mobile, uma solução de MTD (Defesa contra Ameaças Móveis) integrada ao Microsoft Intune. O risco é avaliado com base na telemetria coletada dos dispositivos que executam o aplicativo Better Mobile.
+Você pode controlar o acesso de dispositivos móveis aos recursos corporativos usando o Acesso Condicional com base na avaliação de risco realizada pelo Better Mobile, uma solução de MTD (Defesa contra Ameaças Móveis) integrada ao Microsoft Intune. O risco é avaliado com base na telemetria coletada dos dispositivos que executam o aplicativo Better Mobile.
 
-Você pode configurar políticas de acesso condicional com base na avaliação de risco do Better Mobile, habilitada por meio de políticas de conformidade do dispositivo do Intune, que podem ser usadas para permitir ou bloquear o acesso de dispositivos incompatíveis a recursos corporativos, com base nas ameaças detectadas.
+Você pode configurar políticas de Acesso Condicional com base na avaliação de risco do Better Mobile, habilitada por meio de políticas de conformidade do dispositivo do Intune, que podem ser usadas para permitir ou bloquear o acesso de dispositivos incompatíveis a recursos corporativos, com base nas ameaças detectadas.
 
 ## <a name="how-do-intune-and-better-mobile-help-protect-your-company-resources"></a>Como o Intune e o Better Mobile ajudam a proteger os recursos da empresa?
 

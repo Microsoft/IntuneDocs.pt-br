@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 3e21eb6169acf8ae69ace94fd54007eaa4f7f90f
-ms.sourcegitcommit: 916fed64f3d173498a2905c7ed8d2d6416e34061
+ms.openlocfilehash: 5ed13994576f67c7b740a2ea895db9d1a0f42289
+ms.sourcegitcommit: 4b83697de8add3b90675c576202ef2ecb49d80b2
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/23/2019
-ms.locfileid: "66046750"
+ms.lasthandoff: 06/13/2019
+ms.locfileid: "67044343"
 ---
 # <a name="implement-your-microsoft-intune-plan"></a>Implementar seu plano do Microsoft Intune
 
@@ -42,7 +42,7 @@ Os principais requisitos independentes do Intune são:
 
 -   Azure AD Connect (para sincronização de diretório)
 
--   On-Premises Connector do Intune para Exchange (para a acesso condicional para o Exchange Local, se necessário)
+-   Conector local do Intune para Exchange (para acesso condicional para o Exchange local, se necessário)
 
 -   Intune Certificate Connector (para a implantação de certificado SCEP, se necessário)
 
@@ -125,9 +125,9 @@ O Intune dá suporte a políticas de conformidade. Adicione políticas de confor
 
 ### <a name="task-12-enable-conditional-access-policies"></a>Tarefa 12: Habilitar políticas de acesso condicional
 
-O Intune dá suporte ao acesso condicional para Exchange Online, Exchange Local, SharePoint Online, Skype for Business Online e Dynamics CRM Online. Habilite e configure o acesso condicional conforme apropriado, de acordo com seus requisitos e casos de uso de implantação do Intune.
+O Intune dá suporte ao acesso condicional para os aplicativos Exchange Online, Exchange Local, SharePoint Online, Skype for Business Online e Dynamics CRM Online. Habilite e configure o acesso condicional conforme apropriado, de acordo com seus requisitos e casos de uso de implantação do Intune.
 
--   Saiba mais sobre o [acesso condicional](conditional-access.md).
+-   Saiba mais sobre o [Acesso Condicional](conditional-access.md).
 
 ### <a name="task-13-enroll-devices"></a>Tarefa 13: Registrar dispositivos
 

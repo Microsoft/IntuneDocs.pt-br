@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: c1a255391a2cf27a764da6122031fd0c9cbb64cf
-ms.sourcegitcommit: cb76efd3db60a422a65478ebce83d3aea7b5eeed
+ms.openlocfilehash: 1ad8a3298a801b07e021b84bd5eea9c91f01f1a2
+ms.sourcegitcommit: 4b83697de8add3b90675c576202ef2ecb49d80b2
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/06/2019
-ms.locfileid: "66751353"
+ms.lasthandoff: 06/13/2019
+ms.locfileid: "67044886"
 ---
 # <a name="manage-web-access-using-microsoft-edge-with-microsoft-intune"></a>Gerenciar o acesso da Web usando o Microsoft Edge com o Microsoft Intune
 
@@ -57,22 +57,22 @@ Se o Microsoft Edge não for alvo da política do Intune, os usuários não pode
 
 ## <a name="conditional-access-for-microsoft-edge"></a>Acesso Condicional para o Microsoft Edge
 
-Você pode aproveitar o Acesso Condicional do Azure AD para redirecionar os usuários para acessar o conteúdo corporativo somente pelo Microsoft Edge. Isso restringiria o acesso do navegador móvel aos aplicativos Web conectados ao Azure AD para o Microsoft Edge protegido pela política e isso bloquearia o acesso de quaisquer outros navegadores desprotegidos como o Safari ou o Chrome. O acesso condicional pode ser aplicado aos recursos do Azure como o Exchange Online e o SharePoint Online, o Centro de administração do Microsoft 365 e até mesmo sites locais que você tenha exposto a usuários externos por meio do [Proxy de Aplicativo do Azure AD](https://docs.microsoft.com/azure/active-directory/active-directory-application-proxy-get-started).
+Você pode aproveitar o Acesso Condicional do Azure AD para redirecionar os usuários para acessar o conteúdo corporativo somente pelo Microsoft Edge. Isso restringiria o acesso do navegador móvel aos aplicativos Web conectados ao Azure AD para o Microsoft Edge protegido pela política e isso bloquearia o acesso de quaisquer outros navegadores desprotegidos como o Safari ou o Chrome. O Acesso Condicional pode ser aplicado aos recursos do Azure como o Exchange Online e o SharePoint Online, o Centro de administração do Microsoft 365 e até mesmo sites locais que você tenha exposto a usuários externos por meio do [Proxy de Aplicativo do Azure AD](https://docs.microsoft.com/azure/active-directory/active-directory-application-proxy-get-started).
 
 Para restringir os aplicativos Web conectados ao Azure AD para usar o Microsoft Edge no iOS e Android, siga as etapas a seguir:
 1. Conecte-se ao [Intune](https://go.microsoft.com/fwlink/?linkid=2090973).
-2. No nó do Intune, selecione **Acesso condicional** > **Nova Política**.
+2. No nó do Intune, selecione **Acesso Condicional** > **Nova Política**.
 3. Em seguida, selecione **Conceder** na seção **Controles de acesso** da folha.
 4. Clique em **Exigir aplicativo cliente aprovado**.
 5. Clique em **Selecionar** na folha **Conceder**. Esta política deve ser atribuída aos aplicativos de nuvem que você deseja tornar acessíveis apenas ao aplicativo Intune Managed Browser.
 
-    ![Política de acesso condicional – conceder](./media/manage-microsoft-edge/manage-microsoft-edge-01.png)
+    ![Política de Acesso Condicional – conceder](./media/manage-microsoft-edge/manage-microsoft-edge-01.png)
 
 6. Na seção Atribuições, selecione Condições > Aplicativos cliente. A folha Aplicativos cliente é exibida.
 7. Clique em Sim em Configurar para aplicar a política a aplicativos cliente específicos.
 8. Verifique se o Navegador está selecionado como um aplicativo cliente.
 
-    ![Política de acesso condicional – selecionar aplicativos clientes](./media/manage-microsoft-edge/manage-microsoft-edge-02.png)
+    ![Política de Acesso Condicional – selecionar aplicativos clientes](./media/manage-microsoft-edge/manage-microsoft-edge-02.png)
 
     > [!NOTE]
     > Se desejar restringir quais aplicativos nativos (aplicativos que não são navegadores) poderão acessar esses aplicativos de nuvem, também será possível selecionar **Aplicativos móveis e clientes de desktop**.
@@ -134,7 +134,7 @@ O Microsoft Edge e o [Proxy de Aplicativo do Azure AD](https://docs.microsoft.co
 
 Estes são alguns exemplos dos cenários que o Proxy de Aplicativo do AD permite: 
 
-- Um usuário está usando o aplicativo móvel do Outlook, que é protegido pelo Intune. Em seguida, ele clica em um link para um site de intranet em um email e o Microsoft Edge reconhece que este site de intranet foi exposto ao usuário por meio do Proxy de Aplicativo. O usuário será roteado automaticamente por meio do Proxy de Aplicativo para autenticação com qualquer autenticação multifator aplicável e acesso condicional antes de alcançar o site de intranet. Os usuários agora podem acessar sites internos, mesmo em seus dispositivos móveis, e o link no Outlook funciona conforme o esperado.
+- Um usuário está usando o aplicativo móvel do Outlook, que é protegido pelo Intune. Em seguida, ele clica em um link para um site de intranet em um email e o Microsoft Edge reconhece que este site de intranet foi exposto ao usuário por meio do Proxy de Aplicativo. O usuário será roteado automaticamente por meio do Proxy de Aplicativo para autenticação com qualquer autenticação multifator aplicável e Acesso Condicional antes de alcançar o site de intranet. Os usuários agora podem acessar sites internos, mesmo em seus dispositivos móveis, e o link no Outlook funciona conforme o esperado.
 - Um usuário abre o Microsoft Edge no seu dispositivo iOS ou Android. Se o Microsoft Edge está protegido com o Intune e o Proxy de Aplicativo está habilitado, o usuário pode navegar para um site da intranet usando a URL interna que está acostumado a usar. O Microsoft Edge reconhece que este site de intranet foi exposto ao usuário por meio do Proxy de Aplicativo e o usuário é automaticamente roteado por meio do Proxy de Aplicativo, para autenticar antes de atingir o site de intranet. 
 
 ### <a name="before-you-start"></a>Antes de começar

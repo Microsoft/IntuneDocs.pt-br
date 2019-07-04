@@ -14,12 +14,12 @@ ms.technology: ''
 ms.assetid: 361ef17b-1ee0-4879-b7b1-d678b0787f5a
 search.appverid: MET150
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 8e717895e039e46ba7877476f67f29c1ce83b767
-ms.sourcegitcommit: 916fed64f3d173498a2905c7ed8d2d6416e34061
+ms.openlocfilehash: b490d5ff083d344a1b39d27a2298503bdfa1f130
+ms.sourcegitcommit: 4b83697de8add3b90675c576202ef2ecb49d80b2
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/23/2019
-ms.locfileid: "66041668"
+ms.lasthandoff: 06/13/2019
+ms.locfileid: "67044912"
 ---
 # <a name="manage-operating-system-versions-with-intune"></a>Gerenciar versões do sistema operacional com o Intune
 Em plataformas móveis e de área de trabalho modernas, atualizações, patches e novas versões principais são liberadas em um ritmo acelerado. Você tem controles para gerenciar totalmente as atualizações e patches no Windows, mas outras plataformas como iOS e Android exigem que os usuários finais participem do processo.  O Microsoft Intune tem os recursos para ajudá-lo a estruturar o gerenciamento de versão do sistema operacional em diferentes plataformas.
@@ -46,14 +46,14 @@ Para obter detalhes, consulte [Definir restrições de registro no Intune](https
 As políticas de conformidade de dispositivo do MDM do Intune fornecem as seguintes ferramentas: 
 - Especificar regras de conformidade
 - Exibir o status de conformidade por meio de relatórios
-- Executar ações quando há não conformidade por meio de quarentena de dispositivo e acesso condicional
+- Executar ações quando há não conformidade por meio de quarentena de dispositivo e Acesso Condicional
 
 Como as restrições de registro, as políticas de conformidade do dispositivo incluem as versões mínima e máxima do sistema operacional. As políticas também têm um prazo para conformidade que oferece aos usuários um período de cortesia para obter a conformidade. As políticas de conformidade do dispositivo mantém seus dispositivos de usuário final registrados em conformidade com a política organizacional.
 
 ![Conformidade do dispositivo – ações para dispositivos fora de conformidade](./media/os-version-actions-noncompliance.png) 
 
 ### <a name="in-practice"></a>Na prática
-As organizações estão usando políticas de conformidade de dispositivo para os mesmos cenários que as restrições de registro. Essas políticas mantêm os usuários nas versões do sistema operacional atuais e validadas em sua organização. Quando os dispositivos de usuários finais ficam fora de conformidade, o acesso aos recursos organizacionais pode ser bloqueado por meio de acesso condicional até que os usuários finais fiquem dentro do intervalo de sistema operacional com suporte para a sua organização. Os usuários finais são notificados que estão fora de conformidade e recebem as etapas para recuperar o acesso.   
+As organizações estão usando políticas de conformidade de dispositivo para os mesmos cenários que as restrições de registro. Essas políticas mantêm os usuários nas versões do sistema operacional atuais e validadas em sua organização. Quando os dispositivos de usuários finais ficam fora de conformidade, o acesso aos recursos organizacionais pode ser bloqueado por meio de Acesso Condicional até que os usuários finais fiquem dentro do intervalo de sistema operacional com suporte para a sua organização. Os usuários finais são notificados que estão fora de conformidade e recebem as etapas para recuperar o acesso.   
 
 Para obter detalhes, consulte [Introdução às políticas de conformidade do dispositivo no Intune](https://docs.microsoft.com/intune/device-compliance-get-started).
  
@@ -81,7 +81,7 @@ Você pode usar os recursos do Intune descritos neste artigo para ajudar a passa
   - Você pode executar um relatório de conformidade para identificar os usuários que estão fora de conformidade. 
 - **Etapa 3a**: Usar políticas de proteção de aplicativo do Intune para bloquear os usuários quando um aplicativo for aberto ou retomado se o dispositivo não estiver executando o sistema operacional v2.
 - **Etapa 3b**: Usar políticas de conformidade de dispositivo para exigir o sistema operacional v2 como a versão mínima para que um dispositivo esteja em conformidade.
-  - Essas políticas exigem que os dispositivos sejam atualizados para que possam continuar a acessar os dados organizacionais. Os serviços protegidos são bloqueados quando usados com acesso condicional do dispositivo. Os aplicativos habilitados com uma política de proteção do aplicativo são bloqueados quando são abertos ou quando acessam dados organizacionais.
+  - Essas políticas exigem que os dispositivos sejam atualizados para que possam continuar a acessar os dados organizacionais. Os serviços protegidos são bloqueados quando usados com Acesso Condicional do dispositivo. Os aplicativos habilitados com uma política de proteção do aplicativo são bloqueados quando são abertos ou quando acessam dados organizacionais.
 
 ## <a name="next-steps"></a>Próximas etapas
 Use os seguintes recursos para gerenciar versões de sistema operacional em sua organização: 

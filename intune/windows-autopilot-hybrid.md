@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: cb9d1f52ccb147dc9a412f3cb7b601e3b18f214a
-ms.sourcegitcommit: a63b9eaa59867ab2b0a6aa415c19d9fff4fda874
+ms.openlocfilehash: 0bf75aca7035eb2873f84f76d3c9ee0e00df7fb3
+ms.sourcegitcommit: 116ef72b9da4d114782d4b8dd9f57556c9b01511
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/25/2019
-ms.locfileid: "67389331"
+ms.lasthandoff: 07/01/2019
+ms.locfileid: "67494542"
 ---
 # <a name="deploy-hybrid-azure-ad-joined-devices-by-using-intune-and-windows-autopilot"></a>Implante dispositivos ingressados no Azure AD híbrido usando o Intune e o Windows Autopilot
 Você pode usar o Intune e o Windows Autopilot para configurar dispositivos ingressados no Azure Active Directory (Azure AD) híbrido. Para isso, siga as etapas neste artigo.
@@ -163,7 +163,7 @@ Se os dispositivos ainda não estiverem registrados, você poderá registrá-los
 
 ### <a name="register-devices-from-an-oem"></a>Registrar dispositivos de um OEM
 
-Se você estiver comprando novos dispositivos, alguns OEMs poderão registrar dispositivos para você. Para obter mais informações, confira a [página do Windows Autopilot](http://aka.ms/WindowsAutopilot).
+Se você estiver comprando novos dispositivos, alguns OEMs poderão registrar dispositivos para você. Para obter mais informações, confira a [página do Windows Autopilot](https://aka.ms/WindowsAutopilot).
 
 Quando seus dispositivos Autopilot são *registrados*, antes de serem registrados no Intune, você pode vê-los em três locais (com nomes definidos para os números seriais):
 - O painel **Dispositivos Autopilot** do Intune no portal do Azure. Selecione **Registro de dispositivo** > **Registro do Windows** > **Dispositivos**.

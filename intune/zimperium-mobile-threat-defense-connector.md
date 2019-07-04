@@ -17,18 +17,18 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: b05e9e5b3933e9fbd8ca3f1f03ffd93d2522893e
-ms.sourcegitcommit: 916fed64f3d173498a2905c7ed8d2d6416e34061
+ms.openlocfilehash: c0dc8d7cca42898db92412e2cec41252a9a9a4d4
+ms.sourcegitcommit: 4b83697de8add3b90675c576202ef2ecb49d80b2
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/23/2019
-ms.locfileid: "66046829"
+ms.lasthandoff: 06/13/2019
+ms.locfileid: "67046108"
 ---
 # <a name="zimperium-mobile-threat-defense-connector-with-intune"></a>Conector do Zimperium Mobile Threat Defense ao Intune
 
-Você pode controlar o acesso de dispositivos móveis aos recursos corporativos usando o acesso condicional com base na avaliação de risco realizada pelo Zimperium, uma solução de MTD (Defesa contra Ameaças Móveis) integrada ao Microsoft Intune. O risco é avaliado com base na telemetria coletada dos dispositivos que executam o aplicativo Zimperium.
+Você pode controlar o Acesso de dispositivos móveis aos recursos corporativos usando o Acesso Condicional com base na avaliação de risco realizada pelo Zimperium, uma solução de MTD (Defesa contra Ameaças Móveis) integrada ao Microsoft Intune. O risco é avaliado com base na telemetria coletada dos dispositivos que executam o aplicativo Zimperium.
 
-Configure políticas de acesso condicional com base na avaliação de risco do Zimperium habilitada por meio das políticas de conformidade de dispositivo do Intune. A política de avaliação de risco pode permitir ou bloquear o acesso de dispositivos fora de conformidade aos recursos corporativos com base nas ameaças detectadas.
+Configure políticas de Acesso Condicional com base na avaliação de risco do Zimperium habilitada por meio das políticas de conformidade de dispositivo do Intune. A política de avaliação de risco pode permitir ou bloquear o acesso de dispositivos fora de conformidade aos recursos corporativos com base nas ameaças detectadas.
 
 ## <a name="how-do-intune-and-zimperium-help-protect-your-company-resources"></a>Como o Intune e o Zimperium ajudam a proteger os recursos da empresa?
 
