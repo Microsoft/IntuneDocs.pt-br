@@ -16,12 +16,12 @@ ms.reviewer: ''
 ms.suite: ems
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 624cc72ad9539659e1ce2c8b70f6a6698d5e7ba2
-ms.sourcegitcommit: 4b83697de8add3b90675c576202ef2ecb49d80b2
+ms.openlocfilehash: 7868d5f9ef97f4b054457deff6f24cd91d6c31d8
+ms.sourcegitcommit: 7315fe72b7e55c5dcffc6d87f185f3c2cded9028
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/13/2019
-ms.locfileid: "67046275"
+ms.lasthandoff: 07/02/2019
+ms.locfileid: "67528692"
 ---
 # <a name="tutorial-protect-exchange-online-email-on-unmanaged-devices"></a>Tutorial: Proteger o email do Exchange Online em dispositivos não gerenciados
 
@@ -74,7 +74,7 @@ Para este tutorial, configuraremos uma política de proteção de aplicativo do 
 
     Selecione **OK** para retornar ao painel Configurações.  
 
-7.  No painel Configurações, selecione **OK**e, no painel Criar política, selecione **Criar**.
+7. No painel Configurações, selecione **OK**e, no painel Criar política, selecione **Criar**.
 
 A política de proteção de aplicativo para Outlook foi criada. Em seguida, você configurará o Acesso Condicional para exigir que os dispositivos usem o aplicativo Outlook.
 
@@ -188,5 +188,5 @@ Quando as políticas de teste não forem mais necessárias, é possível removê
 4. Selecione **Acesso condicional** > **Políticas**.  
 5. Na lista **Nome da política**, selecione o menu de contexto ( **...** ) para cada uma de suas políticas de teste e, em seguida, selecione **Excluir**. Selecione **Sim** para confirmar.  
 
- ## <a name="next-steps"></a>Próximas etapas  
+## <a name="next-steps"></a>Próximas etapas  
 Neste tutorial, você criou políticas de proteção de aplicativo para limitar as ações do usuário no aplicativo Outlook, e criou as políticas de Acesso Condicional para exigir o aplicativo Outlook e exigir MFA para clientes de autenticação moderna. Para aprender a usar o Intune com Acesso Condicional para proteger outros aplicativos e serviços, confira [Configurar Acesso Condicional](conditional-access.md).

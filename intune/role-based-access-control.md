@@ -16,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure; get-started
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: ee0e6ad7e46abe8da4c1b03e836eb9ba2f5991d0
-ms.sourcegitcommit: 4b83697de8add3b90675c576202ef2ecb49d80b2
+ms.openlocfilehash: eaefcc904d9969c7f356e3eceb924e8d153f912d
+ms.sourcegitcommit: 7315fe72b7e55c5dcffc6d87f185f3c2cded9028
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/13/2019
-ms.locfileid: "67044172"
+ms.lasthandoff: 07/02/2019
+ms.locfileid: "67528248"
 ---
 # <a name="role-based-access-control-rbac-with-microsoft-intune"></a>RBAC (controle de acesso baseado em função) com o Microsoft Intune
 
@@ -38,9 +38,9 @@ Uma função define o conjunto de permissões concedido aos usuários atribuído
 É possível usar as funções internas e personalizadas. As funções internas abordam alguns cenários comuns do Intune. É possível [criar suas próprias funções personalizadas](create-custom-role.md) com o conjunto exato de permissões necessárias. Várias funções do Azure Active Directory têm permissões para o Intune.
 Para ver uma função, escolha **Intune** > **Funções** > **Todas as funções** > escolha uma função. Você verá as seguintes páginas:
 
--   **Propriedades**: o nome, a descrição, o tipo, as atribuições e as marcas de escopo para a função. 
--   **Permissões**: lista um grande conjunto de alternâncias que definem quais permissões a função tem.
--   **Atribuições**: uma lista das [atribuições de função]( assign-role.md) que define quais usuários têm acesso a quais usuários/dispositivos. Uma função pode ter várias atribuições e um usuário pode estar em várias atribuições.
+- **Propriedades**: o nome, a descrição, o tipo, as atribuições e as marcas de escopo para a função. 
+- **Permissões**: lista um grande conjunto de alternâncias que definem quais permissões a função tem.
+- **Atribuições**: uma lista das [atribuições de função]( assign-role.md) que define quais usuários têm acesso a quais usuários/dispositivos. Uma função pode ter várias atribuições e um usuário pode estar em várias atribuições.
 
 ### <a name="built-in-roles"></a>Funções internas
 Você pode atribuir funções internas a grupos sem configuração adicional. Não é possível excluir nem editar o nome, a descrição, o tipo ou as permissões de uma função interna. Para obter uma lista completa das permissões de cada função interna, confira a [Tabela do RBAC do Intune](https://gallery.technet.microsoft.com/Intune-RBAC-table-2e3c9a1a).
@@ -84,10 +84,10 @@ Uma atribuição de função define:
 É possível atribuir funções internas e personalizadas a seus usuários. Para receber uma função do Intune, o usuário deve ter uma licença do Intune.
 Para ver uma atribuição de função, escolha **Intune** > **Funções** > **Todas as funções** > escolha uma atribuição. Você verá as seguintes páginas:
 
--   **Propriedades**: o nome, a descrição, a função, os membros, os escopos e as marcas da atribuição.
--   **Membros**: todos os usuários em grupos listados têm permissão para gerenciar os usuários/dispositivos listados no Escopo (Grupos).
--   **Escopo (Grupos)** : todos os usuários/dispositivos nesses grupos podem ser gerenciados pelos usuários em Membros.
--   **[Escopo (Marcas)](scope-tags.md)** : os usuários em Membros podem ver os recursos que têm as mesmas marcas de escopo.
+- **Propriedades**: o nome, a descrição, a função, os membros, os escopos e as marcas da atribuição.
+- **Membros**: todos os usuários em grupos listados têm permissão para gerenciar os usuários/dispositivos listados no Escopo (Grupos).
+- **Escopo (Grupos)** : todos os usuários/dispositivos nesses grupos podem ser gerenciados pelos usuários em Membros.
+- **[Escopo (Marcas)](scope-tags.md)** : os usuários em Membros podem ver os recursos que têm as mesmas marcas de escopo.
 
 ### <a name="multiple-role-assignments"></a>Várias atribuições de função
 Se um usuário tiver várias atribuições de função, as permissões nelas se estenderão a diferentes objetos, da seguinte maneira:

@@ -14,12 +14,12 @@ ms.assetid: ''
 ms.suite: ems
 search.appverid: MET150
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 3400169aab9598624216fcbc9ef7694e1d5441cc
-ms.sourcegitcommit: 4b83697de8add3b90675c576202ef2ecb49d80b2
+ms.openlocfilehash: c2e8c475cd52e199519db7a3d7ea83e6dbfef1a3
+ms.sourcegitcommit: 7315fe72b7e55c5dcffc6d87f185f3c2cded9028
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/13/2019
-ms.locfileid: "67045787"
+ms.lasthandoff: 07/02/2019
+ms.locfileid: "67530659"
 ---
 # <a name="technology-decisions-for-enabling-byod-with-microsoft-enterprise-mobility--security-ems"></a>Decisões de tecnologia para habilitar BYOD com Microsoft Enterprise Mobility + Security (EMS)
 
@@ -56,7 +56,7 @@ Como já mencionado, o Acesso Condicional pode conduzir um usuário na inscriç�
 
 * Qual o usuário está tentando o acesso
 * Se o local é confiável ou não confiável
-*   Nível de risco de conexão
+* Nível de risco de conexão
 * Plataforma do dispositivo
 
 Ainda assim, muitas organizações costumam ter riscos específicos com os quais estão preocupadas.  A tabela a seguir lista as preocupações comuns e a resposta do MAM vs. do MDM para elas.

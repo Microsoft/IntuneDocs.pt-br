@@ -16,12 +16,12 @@ ms.reviewer: ''
 ms.suite: ems
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 06dcc730406af3ae2d715cbe7f0795253e2629f0
-ms.sourcegitcommit: 4b83697de8add3b90675c576202ef2ecb49d80b2
+ms.openlocfilehash: ed6259c996772817ceaa8ec827c8ac506adfd399
+ms.sourcegitcommit: 7315fe72b7e55c5dcffc6d87f185f3c2cded9028
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/13/2019
-ms.locfileid: "67045107"
+ms.lasthandoff: 07/02/2019
+ms.locfileid: "67530475"
 ---
 # <a name="create-a-device-based-conditional-access-policy"></a>Criar uma política de Acesso Condicional baseada em dispositivo
 
@@ -34,12 +34,12 @@ Uma política de Acesso Condicional especifica o aplicativo ou serviços que voc
 
 ## <a name="create-conditional-access-policy"></a>Criar política de Acesso Condicional
 
-1.  No portal do Intune, selecione **Acesso Condicional** > **Políticas** > **Nova Política**.
+1. No portal do Intune, selecione **Acesso Condicional** > **Políticas** > **Nova Política**.
    
     ![Criar uma nova política de Acesso Condicional](media/create-conditional-access-intune/create-ca.png)
  
-2.  Em **Atribuições**, selecione **Usuários e Grupos**. 
-3.  Na guia **Incluir**, identifique os usuários ou grupos aos quais você deseja aplicar essa política de Acesso Condicional. Depois de escolher quem incluir, use a guia **Excluir** se houver usuários, funções ou grupos que você deseja excluir desta política.  
+2. Em **Atribuições**, selecione **Usuários e Grupos**. 
+3. Na guia **Incluir**, identifique os usuários ou grupos aos quais você deseja aplicar essa política de Acesso Condicional. Depois de escolher quem incluir, use a guia **Excluir** se houver usuários, funções ou grupos que você deseja excluir desta política.  
     - **Todos os usuários**: Selecione esta opção para aplicar a política a todos os usuários e grupos, incluindo usuários internos e convidados.
   
     - **Selecione usuários e grupos**: Selecione esta opção e especifique uma ou mais das seguintes opções:
@@ -52,9 +52,9 @@ Uma política de Acesso Condicional especifica o aplicativo ou serviços que voc
      
        > [!TIP]  
        > Teste a política em um grupo menor de usuários para verificar se que ela funciona conforme o esperado.
-4.  Selecione **Concluído**.
-5.  Em **Atribuições**, selecione **Aplicativos de nuvem**. 
-6.  Na guia **Incluir**, identifique os aplicativos e serviços que você deseja proteger com essa política de Acesso Condicional. Em seguida, use a guia **Excluir** se houver aplicativos ou serviços a serem excluídos dessa política.
+4. Selecione **Concluído**.
+5. Em **Atribuições**, selecione **Aplicativos de nuvem**. 
+6. Na guia **Incluir**, identifique os aplicativos e serviços que você deseja proteger com essa política de Acesso Condicional. Em seguida, use a guia **Excluir** se houver aplicativos ou serviços a serem excluídos dessa política.
     - **Todos os aplicativos em nuvem**: Selecione esta opção para aplicar a política a todos os aplicativos.
       > [!IMPORTANT]  
       > O aplicativo de Gerenciamento do Microsoft Azure para acessar o portal do Azure está incluído nessa lista. Use a guia **Excluir** aqui ou nas opções de **Usuários e grupos** para garantir que você (ou os usuários ou grupos designados) poderá entrar no portal do Azure. 
@@ -63,8 +63,8 @@ Uma política de Acesso Condicional especifica o aplicativo ou serviços que voc
     
       ![Criar uma nova política de Acesso Condicional](media/create-conditional-access-intune/create-ca-select-apps.png)
 
-7.  Selecione **Concluído**.
-8.  Em **Atribuições**, selecione **Condições**.
+7. Selecione **Concluído**.
+8. Em **Atribuições**, selecione **Condições**.
     - **Risco de entrada**: Escolha Sim para usar a detecção de risco de entrada do Azure AD Identity Protection com essa política e, em seguida, escolha os níveis de risco de entrada aos quais a política deve ser aplicada.
     - **Plataformas de dispositivo**: Na guia **Incluir**, identifique as plataformas de dispositivo aos quais essa política de Acesso Condicional se aplica. Use a guia **Excluir** para excluir plataformas dessa política.
     - **Locais**: Na guia **Incluir**, especifique se a política se aplica a qualquer local, os locais de rede confiáveis que estão sob o controle do seu departamento de TI ou locais de rede específicos. Use a guia **Excluir** para excluir locais de rede dessa política. 
@@ -76,7 +76,7 @@ Uma política de Acesso Condicional especifica o aplicativo ou serviços que voc
       > [!TIP]  
       > Se você quiser proteger os clientes de **Autenticação moderna** e **clientes do Exchange ActiveSync**, crie duas políticas de Acesso Condicional separadas, um para cada tipo de cliente. Embora o Exchange ActiveSync ofereça suporte à autenticação moderna, a única condição compatível com o Exchange ActiveSync é a plataforma. Outras condições, incluindo a autenticação multifator, não têm suporte. Para proteger com eficiência o acesso ao Exchange Online pelo Exchange ActiveSync, crie uma política de Acesso Condicional que especifica o aplicativo de nuvem do Office 365 Exchange Online e o aplicativo cliente do Exchange ActiveSync com a opção Aplicar política somente em plataformas selecionada.
 
-9.  Selecione **Concluído**.
+9. Selecione **Concluído**.
 10. Em **Controles de acesso**, selecione **Conceder**. Configure o que acontece com base nas condições configuradas.  Selecione entre as opções a seguir:
     - **Bloquear o acesso**: Os usuários especificados nesta política não terão acesso aos aplicativos sob as condições que você especificou.
     - **Conceder acesso**: Os usuários especificados nesta política receberão acesso, mas você pode exigir qualquer uma das ações adicionais a seguir:
