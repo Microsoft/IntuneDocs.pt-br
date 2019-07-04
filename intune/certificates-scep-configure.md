@@ -5,7 +5,7 @@ keywords: ''
 author: brenduns
 ms.author: brenduns
 manager: dougeby
-ms.date: 06/06/2019
+ms.date: 06/24/2019
 ms.topic: article
 ms.service: microsoft-intune
 ms.localizationpriority: high
@@ -15,12 +15,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: e170fe0c1b461bad140b89ac01a2ad817e2082e5
-ms.sourcegitcommit: 7ceae61e036ccf8b33704751b0b39fee81944072
+ms.openlocfilehash: 2e8e7e6c244e14e880dddb7ae76ab0c08ef5088a
+ms.sourcegitcommit: edf0f4e791138dcf589dec8b633edc6eda55ef8c
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/06/2019
-ms.locfileid: "66744337"
+ms.lasthandoff: 06/24/2019
+ms.locfileid: "67344082"
 ---
 # <a name="configure-and-use-scep-certificates-with-intune"></a>Configurar e usar certificados SCEP com o Intune
 
@@ -68,7 +68,7 @@ Recomendamos publicar o servidor NDES por meio de um proxy reverso, como o [Prox
 |**Modelo de certificado**|Configure este modelo na AC emissora.|
 |**Certificado de autenticação de cliente**|Solicitado pela AC emissora ou pública, você instala este certificado no servidor de NDES.|
 |**Certificado de autenticação de servidor**|Solicitado da AC emissora pública, você instala e associa o certificado SSL no IIS no servidor de NDES. Se o certificado tiver o conjunto de usos de chave de autenticação de cliente e servidor (**Usos de Chave Avançados**), você poderá usar o mesmo certificado.|
-|**Certificado de AC raiz confiável**|Exporte esse certificado como um arquivo **.cer** da AC raiz ou de qualquer dispositivo que confie em sua AC raiz. Em seguida, atribua-o a usuários, dispositivos ou a ambos, usando o perfil do Certificado de Autoridade de Certificação confiável.<br /><b>OBSERVAÇÃO:<b /> quando um perfil de certificado SCEP for atribuído, certifique-se de atribuir o perfil do Certificado raiz confiável referenciado no perfil de certificado SCEP ao mesmo grupo de dispositivos ou usuários.<br /><br />Você usa um único certificado de AC raiz confiável por plataforma de sistema operacional e o associa a cada perfil de certificado de raiz confiável que criar.<br /><br />Você pode usar certificados de AC raiz confiável adicionais quando necessário. Por exemplo, você pode fazer isso para fornecer uma relação de confiança a uma AC que conecta os certificados de autenticação do servidor aos pontos de acesso Wi-Fi.|
+|**Certificado de AC raiz confiável**|Exporte esse certificado como um arquivo **.cer** da AC raiz ou de qualquer dispositivo que confie em sua AC raiz. Em seguida, atribua-o a usuários, dispositivos ou a ambos, usando o perfil do Certificado de Autoridade de Certificação confiável.<br /> **OBSERVAÇÃO:<br /> quando um perfil de certificado SCEP for atribuído, certifique-se de atribuir o *perfil do Certificado raiz confiável* referenciado no perfil de certificado SCEP ao mesmo grupo de dispositivos ou usuários.  Para criar esse perfil, confira [Criar um perfil de certificado confiável](certficates-pfx-configure.md#create-a-trusted-certificate-profile), que está documentado no artigo de perfis de certificado PKCS.** <br/><br />Você usa um único certificado de AC raiz confiável por plataforma de sistema operacional e o associa a cada perfil de certificado de raiz confiável que criar. <br /><br />Você pode usar certificados de AC raiz confiável adicionais quando necessário. Por exemplo, você pode fazer isso para fornecer uma relação de confiança a uma AC que conecta os certificados de autenticação do servidor aos pontos de acesso Wi-Fi.|
 
 ### <a name="accounts"></a>Contas
 
@@ -487,7 +487,7 @@ Para validar se o serviço está em execução, abra um navegador e insira a URL
      - **Assinatura digital**: Permite a troca de chaves apenas quando uma assinatura digital ajuda a proteger a chave
    - **Tamanho da chave (bits)** : Selecione o número de bits contidos na chave
    - **Algoritmo de hash** (Android, Windows Phone 8.1, Windows 8.1, Windows 10): Selecione um dos tipos de algoritmo de hash disponíveis para uso com esse certificado. Selecione o nível mais alto de segurança que dá suporte aos dispositivos de conexão.
-   - **Certificado Raiz**: Escolha um perfil de Certificado de Autoridade de Certificação raiz configurado anteriormente e atribuído ao usuário e/ou dispositivo. Esse certificado de Autoridade de Certificação deve ser o certificado raiz da Autoridade de Certificação que emite o certificado que você está configurando neste perfil de certificado. Certifique-se de atribuir esse perfil de certificado raiz confiável ao mesmo grupo atribuído no perfil de certificado SCEP.
+   - **Certificado Raiz**: Escolha um [perfil de certificado raiz confiável](certficates-pfx-configure.md#create-a-trusted-certificate-profile) criado anteriormente e atribuído ao usuário e/ou dispositivo. Esse certificado de Autoridade de Certificação deve ser o certificado raiz da Autoridade de Certificação que emite o certificado que você está configurando neste perfil de certificado. Certifique-se de atribuir esse perfil de certificado raiz confiável ao mesmo grupo atribuído no perfil de certificado SCEP.
    - **Uso estendido de chave**: **Adicionar** valores para a finalidade desejada do certificado. Na maioria dos casos, o certificado exige a **Autenticação de cliente** para que o usuário ou dispositivo possa autenticar-se em um servidor. No entanto, você pode adicionar outros usos da chave conforme necessário.
    - **Configurações de Registro**
      - **Limite de renovação (%)** : Insira o percentual do tempo de vida restante do certificado antes da renovação das solicitações de dispositivo do certificado.
@@ -508,6 +508,7 @@ Antes de atribuir perfis de certificado a grupos, considere o seguinte:
 
     > [!NOTE]
     > Para iOS, espere ver várias cópias do certificado no perfil de gerenciamento se você implantar vários perfis de recursos que usem o mesmo perfil de certificado.
+- Se você usar o cogerenciamento para o Intune e o Configuration Manager, no Configuration Manager d[efina o controle deslizante de carga de trabalho](https://docs.microsoft.com/sccm/comanage/how-to-switch-workloads) para *Política de Acesso de Recurso* para **Intune** ou **Pilot Intune**. Essa configuração permite que os clientes do Windows 10 iniciem o processo de solicitar o certificado.  
 
 Para obter mais informações sobre como atribuir perfis, confira [Atribuir perfis de dispositivo](device-profile-assign.md).
 
@@ -552,7 +553,7 @@ Da versão 6.1806.x.x em diante, o Serviço do Conector do Intune registra em lo
 | -------------   | -------------   | -------------      |
 | 0x00000000 | Êxito  | Êxito |
 | 0x00000400 | PKCS_Issue_CA_Unavailable  | A autoridade de certificação não é válida ou está inacessível. Verifique se que a autoridade de certificação está disponível e se o servidor pode se comunicar com ela. |
-| 0x00000401 | Symantec_ClientAuthCertNotFound  | O Certificado de Autenticação de Cliente da Symantec não foi encontrado no repositório de certificados local. Veja o artigo [Instalar o certificado autorização de registro da Symantec](https://docs.microsoft.com/intune/certificates-symantec-configure#install-the-symantec-registration-authorization-certificate) para obter mais informações.  |
+| 0x00000401 | Symantec_ClientAuthCertNotFound  | O Certificado de Autenticação de Cliente da Symantec não foi encontrado no repositório de certificados local. Confira o artigo [Configurar o Conector do Certificado do Intune para a plataforma DigiCert PKI](https://docs.microsoft.com/intune/certificates-digicert-configure#troubleshooting) para obter mais informações.  |
 | 0x00000402 | RevokeCert_AccessDenied  | A conta especificada não tem permissões para revogar um certificado da autoridade de certificação. Veja o campo Nome da Autoridade de Certificação nos detalhes da mensagem do evento para determinar a autoridade de certificação emissora.  |
 | 0x00000403 | CertThumbprint_NotFound  | Não foi possível localizar um certificado correspondente à sua entrada. Registre o conector de certificado e tente novamente. |
 | 0x00000404 | Certificate_NotFound  | Não foi possível localizar um certificado correspondente à entrada fornecida. Registre o conector de certificado outra vez e tente novamente. |

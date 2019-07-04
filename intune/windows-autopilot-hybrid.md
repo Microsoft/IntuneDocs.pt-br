@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 030467009e0fed8716a1aa622474188352c0e0b0
-ms.sourcegitcommit: 916fed64f3d173498a2905c7ed8d2d6416e34061
+ms.openlocfilehash: cb9d1f52ccb147dc9a412f3cb7b601e3b18f214a
+ms.sourcegitcommit: a63b9eaa59867ab2b0a6aa415c19d9fff4fda874
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/23/2019
-ms.locfileid: "66050347"
+ms.lasthandoff: 06/25/2019
+ms.locfileid: "67389331"
 ---
 # <a name="deploy-hybrid-azure-ad-joined-devices-by-using-intune-and-windows-autopilot"></a>Implante dispositivos ingressados no Azure AD híbrido usando o Intune e o Windows Autopilot
 Você pode usar o Intune e o Windows Autopilot para configurar dispositivos ingressados no Azure Active Directory (Azure AD) híbrido. Para isso, siga as etapas neste artigo.
@@ -32,7 +32,7 @@ Você pode usar o Intune e o Windows Autopilot para configurar dispositivos ingr
 Configurar com êxito seus [dispositivos ingressados no Azure AD híbrido](https://docs.microsoft.com/azure/active-directory/devices/hybrid-azuread-join-plan). Certifique-se de [verificar o registro do seu dispositivo]( https://docs.microsoft.com/azure/active-directory/devices/hybrid-azuread-join-managed-domains#verify-the-registration) usando o cmdlet Get-MsolDevice.
 
 Os dispositivos a serem registrados também devem:
-- Executar o Windows 10 com a [atualização de outubro de 2018](https://blogs.windows.com/windowsexperience/2018/10/02/how-to-get-the-windows-10-october-2018-update/).
+- Estar executando o Windows 10 v1809 ou posterior.
 - Ter acesso à Internet.
 - Ter acesso ao Active Directory (não há suporte para a conexão de VPN no momento).
 - Percorra a OOBE (experiência de configuração inicial pelo usuário).
