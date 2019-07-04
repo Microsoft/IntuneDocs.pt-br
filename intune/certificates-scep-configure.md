@@ -5,7 +5,7 @@ keywords: ''
 author: brenduns
 ms.author: brenduns
 manager: dougeby
-ms.date: 06/24/2019
+ms.date: 06/28/2019
 ms.topic: article
 ms.service: microsoft-intune
 ms.localizationpriority: high
@@ -15,12 +15,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 2e8e7e6c244e14e880dddb7ae76ab0c08ef5088a
-ms.sourcegitcommit: edf0f4e791138dcf589dec8b633edc6eda55ef8c
+ms.openlocfilehash: 7a952a5aa3de20159247f022d91d3e4302262290
+ms.sourcegitcommit: 116ef72b9da4d114782d4b8dd9f57556c9b01511
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/24/2019
-ms.locfileid: "67344082"
+ms.lasthandoff: 07/01/2019
+ms.locfileid: "67494300"
 ---
 # <a name="configure-and-use-scep-certificates-with-intune"></a>Configurar e usar certificados SCEP com o Intune
 
@@ -30,10 +30,10 @@ Este artigo mostra como configurar sua infraestrutura e depois criar e atribuir 
 
 - **Domínio do Active Directory**: Todos os servidores listados nesta seção (exceto pelo Servidor Proxy de Aplicativo Web) devem ser associados ao seu domínio do Active Directory.
 
-- **AC (Autoridade de certificação)** : Deve ser uma AC (Autoridade de Certificação) Corporativa da Microsoft que é executada em uma edição Enterprise do Windows Server 2008 R2 ou posterior. Não há suporte para ACs autônomas. Para obter detalhes, confira [Instalar a Autoridade de Certificação](http://technet.microsoft.com/library/jj125375.aspx).
+- **AC (Autoridade de certificação)** : Deve ser uma AC (Autoridade de Certificação) Corporativa da Microsoft que é executada em uma edição Enterprise do Windows Server 2008 R2 ou posterior. Não há suporte para ACs autônomas. Para obter detalhes, confira [Instalar a Autoridade de Certificação](https://technet.microsoft.com/library/jj125375.aspx).
     Se a sua AC executar o Windows Server 2008 R2, você deve [instalar o hotfix de KB2483564](http://support.microsoft.com/kb/2483564/).
 
-- **Servidor NDES**: Em um Windows Server 2012 R2 ou posterior, configure a função de servidor NDES (Serviço de Registro de Dispositivo de Rede). O Intune não é compatível com o uso do NDES em um servidor que também executa a AC corporativa. Confira [Diretrizes do Serviço de Registro de Dispositivo de Rede](http://technet.microsoft.com/library/hh831498.aspx) para obter instruções sobre como configurar o Windows Server 2012 R2 para hospedar o NDES.
+- **Servidor NDES**: Em um Windows Server 2012 R2 ou posterior, configure a função de servidor NDES (Serviço de Registro de Dispositivo de Rede). O Intune não é compatível com o uso do NDES em um servidor que também executa a AC corporativa. Confira [Diretrizes do Serviço de Registro de Dispositivo de Rede](https://technet.microsoft.com/library/hh831498.aspx) para obter instruções sobre como configurar o Windows Server 2012 R2 para hospedar o NDES.
 O servidor do NDES deve ser associado a um domínio na mesma floresta que a AC corporativa. Há mais informações sobre como implantar o servidor NDES em uma floresta separada, rede isolada ou domínio interno em [Usando um Módulo de Política com o Serviço de Registro de Dispositivo de Rede](https://technet.microsoft.com/library/dn473016.aspx). Não é possível usar um servidor NDES que já esteja em uso com outro MDM.
 
 - **Microsoft Intune Certificate Connector**: No portal do Intune, acesse **Configuração do dispositivo** > **Conectores do Certificado** > **Adicionar** e siga as *Etapas para instalar o conector para SCEP*. Use o link de download no portal para começar o download do instalador do conector do certificado **NDESConnectorSetup.exe**.  Você executará esse instalador no servidor com a função de NDES.  
@@ -507,7 +507,8 @@ Antes de atribuir perfis de certificado a grupos, considere o seguinte:
 - Embora você atribuir cada perfil separadamente, também precisará atribuir a AC Raiz Confiável e o perfil SCEP ou PKCS. Caso contrário, a política de certificação SCEP ou PKCS falhará.
 
     > [!NOTE]
-    > Para iOS, espere ver várias cópias do certificado no perfil de gerenciamento se você implantar vários perfis de recursos que usem o mesmo perfil de certificado.
+    > Em dispositivos iOS, quando um perfil de certificado SCEP é associado a um perfil adicional, como um perfil Wi-Fi ou VPN, o dispositivo recebe um certificado para cada um dos perfis adicionais. Isso resulta em um dispositivo iOS ter vários certificados entregues pela solicitação de certificado SCEP.  
+
 - Se você usar o cogerenciamento para o Intune e o Configuration Manager, no Configuration Manager d[efina o controle deslizante de carga de trabalho](https://docs.microsoft.com/sccm/comanage/how-to-switch-workloads) para *Política de Acesso de Recurso* para **Intune** ou **Pilot Intune**. Essa configuração permite que os clientes do Windows 10 iniciem o processo de solicitar o certificado.  
 
 Para obter mais informações sobre como atribuir perfis, confira [Atribuir perfis de dispositivo](device-profile-assign.md).
