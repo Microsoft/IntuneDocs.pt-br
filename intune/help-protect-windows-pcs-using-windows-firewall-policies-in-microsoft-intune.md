@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic-keep
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: f3b552c42a7a84ad8099a406bfff2db575785915
-ms.sourcegitcommit: 256952cac44bc6289156489b6622fdc1a3c9c889
+ms.openlocfilehash: eade2a1bc19e4b0c477faf2ad8e262196da8cc30
+ms.sourcegitcommit: ede86a3cb094c12e3e218b956abb9935bec76902
 ms.translationtype: MTE75
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/26/2019
-ms.locfileid: "67403024"
+ms.lasthandoff: 07/05/2019
+ms.locfileid: "67572527"
 ---
 # <a name="help-protect-windows-pcs-using-windows-firewall-policies-in-microsoft-intune"></a>Ajude a proteger computadores Windows usando políticas de Firewall do Windows no Microsoft Intune
 
@@ -43,19 +43,19 @@ A política de Firewall do Windows permite criar e implantar as configurações 
 > [!NOTE]
 > Se a política do Microsoft Intune e a Política de grupo estiverem configuradas para gerenciar a mesma configuração no computador, a configuração da Política de grupo substituirá a política do Microsoft Intune. Para obter informações sobre como evitar conflitos entre a política do Intune e a Política de Grupo, consulte [Resolve GPO and Microsoft Intune policy conflicts](resolve-gpo-and-microsoft-intune-policy-conflicts.md) (Resolver conflitos de política de GPO e do Microsoft Intune).
 >
-> Se desejar implantar configurações de Firewall do Windows em computadores que executam o Windows Vista, você deverá primeiro instalar o [Hotfix KB971800](http://support2.microsoft.com/kb/971800) nesses computadores.
+> Se você quiser implantar configurações de Firewall do Windows em computadores que executam o Windows Vista, você deve primeiro instalar o [Hotfix KB971800](http://support2.microsoft.com/kb/971800) nesses computadores.
 
 > [!IMPORTANT]
 > Para gerenciar o Firewall do Windows usando o Intune, verifique se os dois serviços a seguir estão habilitados nos computadores que você gerencia:
 >
-> -   Firewall do Windows
-> -   Agente de diretiva do IPsec
+> - Firewall do Windows
+> - Agente de diretiva do IPsec
 
 ## <a name="configure-a-windows-firewall-policy"></a>Configurar uma política de Firewall do Windows
 
-1.  No [console de administração do Microsoft Intune](https://manage.microsoft.com/), escolha **Política** &gt; **Adicionar Política**.
+1. No [console de administração do Microsoft Intune](https://manage.microsoft.com/), escolha **Política** &gt; **Adicionar Política**.
 
-2.  Defina e implante uma política de **Configurações de firewall do Windows** . É possível usar as configurações recomendadas ou personalizá-las. Se você precisar de mais informações sobre como criar e implantar políticas, consulte [Common Windows PC management tasks with the Microsoft Intune computer client](common-windows-pc-management-tasks-with-the-microsoft-intune-computer-client.md) (Tarefas comuns de gerenciamento de computador Windows com o cliente do computador Microsoft Intune).
+2. Defina e implante uma política de **Configurações de firewall do Windows** . É possível usar as configurações recomendadas ou personalizá-las. Se você precisar de mais informações sobre como criar e implantar políticas, consulte [Common Windows PC management tasks with the Microsoft Intune computer client](common-windows-pc-management-tasks-with-the-microsoft-intune-computer-client.md) (Tarefas comuns de gerenciamento de computador Windows com o cliente do computador Microsoft Intune).
 
     A seção a seguir lista os valores que você pode configurar na política e também os valores padrão que serão usados se a política não for personalizada.
 
@@ -84,7 +84,7 @@ Essas configurações de política configuram Firewall do Windows para bloquear 
 O valor padrão para cada uma dessas configurações é **Sim**, que é o valor mais seguro.
 
 > [!IMPORTANT]
-> Se o seu ambiente incluir computadores gerenciados que executam o Windows Vista sem service packs instalados, você deverá instalar a atualização associada ao [artigo 971800](http://go.microsoft.com/fwlink/?LinkId=188405) da Base de Dados de Conhecimento Microsoft ou desabilitar as configurações da política **Bloquear todas as conexões de entrada** nas políticas implantadas nesses computadores.
+> Se seu ambiente incluir computadores gerenciados que executam o Windows Vista sem service packs instalados, você deverá instalar a atualização associada ao [artigo 971800](http://go.microsoft.com/fwlink/?LinkId=188405) da Base de Dados de Conhecimento Microsoft ou desabilitar as configurações da política **Bloquear todas as conexões de entrada** nas políticas implantadas nesses computadores.
 
 ### <a name="notify-the-user-when-windows-firewall-blocks-a-new-program"></a>Notificar o usuário quando o Firewall do Windows bloquear um novo programa
 

@@ -18,12 +18,12 @@ ms.reviewer: chrisgre
 ms.suite: ems
 ms.custom: intune-enduser
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: a02a7b69245b9b6e7b8f62fdb9be8acb83d42981
-ms.sourcegitcommit: 25e6aa3bfce58ce8d9f8c054bc338cc3dff4a78b
+ms.openlocfilehash: 8326693717ac96a0e9d32617e7d7080d50206ac6
+ms.sourcegitcommit: bccfbf1e3bdc31382189fc4489d337d1a554e6a1
 ms.translationtype: MTE75
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "55834748"
+ms.lasthandoff: 07/03/2019
+ms.locfileid: "67545426"
 ---
 # <a name="an-existing-company-email-account-was-found"></a>Uma conta de email da empresa existente foi encontrada
 
@@ -34,7 +34,7 @@ Talvez você tivesse acesso de dispositivo móvel à sua conta de email corporat
 
 Essas etapas garantirão que o dispositivo atenda aos requisitos de segurança da sua empresa, e que seus emails permaneçam seguros.
 
-1.  Em seu dispositivo, acesse **Configurações** e encontre suas contas conectadas. Em um dispositivo iOS 11+, por exemplo, selecione **Senhas & Contas**.
+1. Em seu dispositivo, acesse **Configurações** e encontre suas contas conectadas. Em um dispositivo iOS 11+, por exemplo, selecione **Senhas & Contas**.
  
 2. Selecione e remova sua conta de email corporativa.
 

@@ -18,12 +18,12 @@ ms.reviewer: jieyang
 ms.suite: ems
 ms.custom: intune-enduser
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: fd05c600553ec23085b03eb560e0e736c9d7a764
-ms.sourcegitcommit: 25e17a1d002ee1faa49bb89648eb59373528539f
+ms.openlocfilehash: f2cd69725ad10c08f7c137f4444cce831160dd88
+ms.sourcegitcommit: bccfbf1e3bdc31382189fc4489d337d1a554e6a1
 ms.translationtype: MTE75
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "58163421"
+ms.lasthandoff: 07/03/2019
+ms.locfileid: "67546794"
 ---
 # <a name="how-to-reset-your-device-passcode-from-the-company-portal-website"></a>Como redefinir a senha do dispositivo pelo site do Portal da Empresa
 
@@ -36,13 +36,13 @@ Se você estiver usando um dispositivo corporativo registrado, talvez a opção 
 
 ## <a name="reset-your-passcode"></a>Redefinir senha
 
-1.  Abra o [site Portal da Empresa](https://portal.manage.microsoft.com) e selecione o botão __Menu__ > __Dispositivos__.  
+1. Abra o [site Portal da Empresa](https://portal.manage.microsoft.com) e selecione o botão __Menu__ > __Dispositivos__.  
 
 2. Selecione o dispositivo que precisa de uma redefinição de senha.  
 
     ![Uma captura de tela da página Dispositivos, com dois blocos que mostram dispositivos não identificados, nomeados de maneira genérica. Uma faixa cinza é mostrada diretamente abaixo dos dispositivos e solicita que o usuário identifique o dispositivo que ele está usando ou adicione um novo.](./media/rename-reset-device-step2-1808.png) 
 
-3. Selecione **Redefinir Senha**. Se a opção de senha não estiver visível na parte superior da página, selecione **Mais (…)** > **Redefinir Senha**.   
+3. Selecione **Redefinir Senha**. Se a opção de senha não estiver visível na parte superior da página, selecione **Mais (…)**  > **Redefinir Senha**.   
 
    ![A página de detalhes do dispositivo de um dispositivo selecionado no site Portal da Empresa, com uma lista de links na parte superior mostrando Renomear, Remover, Redefinir Dispositivo, Redefinir Senha e Bloqueio Remoto. ](./media/rename-reset-device-1808.png)   
 
@@ -79,7 +79,7 @@ Esta seção descreve a redefinição de senha e o comportamento da senha tempor
 **iOS**: remove a senha existente e não cria uma senha temporária. Se você usa o scanner de impressão digital Touch ID para abrir o dispositivo ou fazer compras, é necessário configurá-lo novamente.  
 
 **Windows 10 Mobile**: remove a senha existente e cria uma senha temporária composta de letras e números. Se o reconhecimento do rosto do Windows Hello estiver configurado, ele ainda funcionará com o dispositivo.
-    
+
 **Windows Phone 8.1**: remove a senha existente e cria uma senha temporária composta de números.  
 
 Ainda precisa de ajuda? Contate o suporte da sua empresa. Para obter as informações de contato, consulte o [site do Portal da Empresa](https://go.microsoft.com/fwlink/?linkid=2010980).  

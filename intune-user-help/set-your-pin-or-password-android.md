@@ -18,12 +18,12 @@ ms.reviewer: arnab
 ms.suite: ems
 ms.custom: intune-enduser
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 95862c006baef40bfb219e5cff50d5622c8c00b4
-ms.sourcegitcommit: fdc6261f4ed695986e06d18353c10660a4735362
+ms.openlocfilehash: 767788d702db45686d686e21018cbf0c5b038412
+ms.sourcegitcommit: bccfbf1e3bdc31382189fc4489d337d1a554e6a1
 ms.translationtype: MTE75
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/15/2019
-ms.locfileid: "58068826"
+ms.lasthandoff: 07/03/2019
+ms.locfileid: "67546665"
 ---
 # <a name="set-your-pin-or-password"></a>Definir o PIN ou senha
 
@@ -31,9 +31,9 @@ O suporte de sua empresa pode exigir que você defina um PIN ou senha no disposi
 
 Use as seguintes etapas para definir um PIN ou senha.
 
-1.  Toque em **Configurações** > **Segurança** > **Bloqueio de Tela** > **Senha**.
+1. Toque em **Configurações** > **Segurança** > **Bloqueio de Tela** > **Senha**.
 
-2.  Escolha e confirme sua nova senha.
+2. Escolha e confirme sua nova senha.
 
 Para determinados dispositivos, talvez seja necessário definir um PIN de inicialização além de sua senha de tela. Você pode tentar corrigir esse problema encontrando um local no aplicativo de configurações para habilitar essa opção. Por exemplo, no Samsung Galaxy S7, você habilita a Inicialização Segura acessando **Configurações** > **Tela de Bloqueio e Segurança** > **Inicialização Segura**. Saiba mais [aqui](/intune-user-help/your-device-appears-encrypted-but-cp-says-otherwise-android). 
 

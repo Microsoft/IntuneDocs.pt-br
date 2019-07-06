@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic-keep
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 97e9042b6c7c1890cd1829f803c05fbab7ae9b44
-ms.sourcegitcommit: 916fed64f3d173498a2905c7ed8d2d6416e34061
+ms.openlocfilehash: b612a245e0a12384f8f9e7ec4a2c970afc2fd628
+ms.sourcegitcommit: bccfbf1e3bdc31382189fc4489d337d1a554e6a1
 ms.translationtype: MTE75
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/23/2019
-ms.locfileid: "66040203"
+ms.lasthandoff: 07/03/2019
+ms.locfileid: "67548815"
 ---
 # <a name="use-policies-to-simplify-windows-pc-management"></a>Usar políticas para simplificar o gerenciamento de computador Windows
 
@@ -35,13 +35,13 @@ Para gerenciar áreas de trabalho do Windows como computadores executando o clie
 ### <a name="manage-the-microsoft-intune-center"></a>Gerenciar o Microsoft Intune Center
 Os usuários veem o cliente de software do Intune como o **Microsoft Intune Center**. O Microsoft Intune Center permite que os usuários:
 
--   Obtenham aplicativos a partir do portal da empresa.
+- Obtenham aplicativos a partir do portal da empresa.
 
--   Procurem atualizações.
+- Procurem atualizações.
 
--   Gerencie o Endpoint Protection do Microsoft Intune.
+- Gerencie o Endpoint Protection do Microsoft Intune.
 
--  Solicitem assistência remota.
+- Solicitem assistência remota.
 
 O Microsoft Intune Center é instalado em todos os computadores gerenciados. Você pode definir as seguintes configurações em uma política do Intune e elas são exibidas para os usuários no Microsoft Intune Center:
 

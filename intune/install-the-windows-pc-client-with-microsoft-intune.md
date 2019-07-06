@@ -15,12 +15,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 5ebca73344b88778a4d734e0690615d0aa3a20b5
-ms.sourcegitcommit: 916fed64f3d173498a2905c7ed8d2d6416e34061
+ms.openlocfilehash: 4dd9fc00475c8a8eea28bef2150f25639ac38e15
+ms.sourcegitcommit: ede86a3cb094c12e3e218b956abb9935bec76902
 ms.translationtype: MTE75
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/23/2019
-ms.locfileid: "66041775"
+ms.lasthandoff: 07/05/2019
+ms.locfileid: "67572610"
 ---
 # <a name="install-the-intune-software-client-on-windows-pcs"></a>Instalar o cliente de software Intune em computadores Windows
 
@@ -68,34 +68,34 @@ Nos computadores em que o software cliente será instalado, vá para a pasta na 
 
 ## <a name="deploy-the-client-software-by-using-group-policy"></a>Implante o software cliente usando a Política de Grupo
 
-1.  Na pasta que contém os arquivos **Microsoft_Intune_Setup.exe** e **MicrosoftIntune.accountcert**, execute o seguinte comando para extrair os programas de instalação baseados no Windows Installer para computadores de 32 e 64 bits:
+1. Na pasta que contém os arquivos **Microsoft_Intune_Setup.exe** e **MicrosoftIntune.accountcert**, execute o seguinte comando para extrair os programas de instalação baseados no Windows Installer para computadores de 32 e 64 bits:
 
     ```
     Microsoft_Intune_Setup.exe/Extract <destination folder>
     ```
 
-2.  Copie os arquivos **Microsoft_Intune_x86.msi**, **Microsoft_Intune_x64.msi** e **MicrosoftIntune.accountcert** para uma localização da rede que possa ser acessada por todos os computadores nos quais o software cliente será instalado.
+2. Copie os arquivos **Microsoft_Intune_x86.msi**, **Microsoft_Intune_x64.msi** e **MicrosoftIntune.accountcert** para uma localização da rede que possa ser acessada por todos os computadores nos quais o software cliente será instalado.
 
     > [!IMPORTANT]
     > Não separe ou renomeie os arquivos ou ocorrerá uma falha na instalação do software cliente.
 
-3.  Use a Política de grupo para implantar o software nos computadores da sua rede.
+3. Use a Política de grupo para implantar o software nos computadores da sua rede.
 
     Para obter mais informações sobre como usar a Política de Grupo para implantar software automaticamente, consulte [Política de Grupo para Iniciantes](https://technet.microsoft.com/library/hh147307.aspx).
 
 ## <a name="deploy-the-client-software-as-part-of-an-image"></a>Implante o software cliente como parte de uma imagem
 É possível implantar o software cliente do Intune em computadores como parte de uma imagem do sistema operacional, usando o seguinte procedimento como guia:
 
-1.  Copie os arquivos de instalação do cliente **Microsoft_Intune_Setup.exe** e **MicrosoftIntune.accountcert** na pasta **%Systemdrive%\Temp\Microsoft_Intune_Setup** no computador de referência.
+1. Copie os arquivos de instalação do cliente **Microsoft_Intune_Setup.exe** e **MicrosoftIntune.accountcert** na pasta **%Systemdrive%\Temp\Microsoft_Intune_Setup** no computador de referência.
 
-2.  Crie a entrada de registro **WindowsIntuneEnrollPending** , adicionando o seguinte comando ao script **SetupComplete.cmd** :
+2. Crie a entrada de registro **WindowsIntuneEnrollPending** , adicionando o seguinte comando ao script **SetupComplete.cmd** :
 
     ```
     %windir%\system32\reg.exe add HKEY_LOCAL_MACHINE\Software\Microsoft\Onlinemanagement\Deployment /v
     WindowsIntuneEnrollPending /t REG_DWORD /d 1
     ```
 
-3.  Adicione o seguinte comando a **setupcomplete.cmd** para executar o pacote de registro com o argumento de linha de comando /PrepareEnroll:
+3. Adicione o seguinte comando a **setupcomplete.cmd** para executar o pacote de registro com o argumento de linha de comando /PrepareEnroll:
 
     ```
     %systemdrive%\temp\Microsoft_Intune_Setup\Microsoft_Intune_Setup.exe /PrepareEnroll
@@ -103,9 +103,9 @@ Nos computadores em que o software cliente será instalado, vá para a pasta na 
     > [!TIP]
     > O script **SetupComplete.cmd** permite que a Instalação do Windows efetue modificações no sistema antes que um usuário faça logon. O argumento de linha de comando **/PrepareEnroll** prepara um computador definido como destino de forma que ele seja automaticamente registrado no Intune após a conclusão da Instalação do Windows.
 
-4.  Coloque o **SetupComplete.cmd** na pasta **%Windir%\Setup\Scripts** do computador de referência.
+4. Coloque o **SetupComplete.cmd** na pasta **%Windir%\Setup\Scripts** do computador de referência.
 
-5.  Capture uma imagem do computador de referência e implante-a nos computadores de destino.
+5. Capture uma imagem do computador de referência e implante-a nos computadores de destino.
 
     Quando o computador definido como destino for reiniciado após a conclusão da instalação do Windows, a chave do Registro **WindowsIntuneEnrollPending** será criada. O pacote de registro verifica se o computador está registrado. Se o computador estiver inscrito, nenhuma outra ação adicional será executada. Se o computador não estiver registrado, o pacote de registro criará uma Tarefa de registro automática do Microsoft Intune.
 
@@ -121,11 +121,11 @@ Se os usuários ainda não tiverem recebido uma licença do Intune ou se a autor
 
 Se os usuários tiverem recebido uma licença do Intune e a autoridade de MDM da organização tiver sido definida para o Intune:
 
-- Os usuários de computador do Windows 7 ou Windows 8 podem ver APENAS a opção de registro no Intune baixando e instalando o software cliente do computador exclusivo de sua organização.
+- Os usuários do Windows 7 ou Windows 8 podem ver APENAS a opção de registro no Intune, baixando e instalando o software cliente do PC exclusivo de sua organização.
 
 - Os usuários de do Windows 8.1 ou Windows 10 têm duas opções de registro:
 
-  -  **Registrar o PC como um dispositivo móvel**: os usuários clicam no botão **Saiba mais sobre como se registrar** e recebem instruções sobre como registrar seu PC como um dispositivo móvel. Esse botão é exibido em destaque, porque o registro do MDM é considerado padrão e a opção de registro preferida. No entanto, a opção de MDM não é aplicável a esse tópico, que aborda somente a instalação do software cliente.
+  - **Registrar o PC como um dispositivo móvel**: os usuários clicam no botão **Saiba mais sobre como se registrar** e recebem instruções sobre como registrar seu PC como um dispositivo móvel. Esse botão é exibido em destaque, porque o registro do MDM é considerado padrão e a opção de registro preferida. No entanto, a opção de MDM não é aplicável a esse tópico, que aborda somente a instalação do software cliente.
   - **Registrar o PC usando o software cliente do Intune**: você precisará pedir que os usuários selecionem o link **Clique aqui para baixá-lo**, que leva à instalação do software cliente.
 
 A tabela a seguir resume as opções.
@@ -171,19 +171,19 @@ Use um dos procedimentos a seguir para ajudá-lo a monitorar e a validar a impla
 
 ### <a name="to-verify-the-installation-of-the-client-software-from-the-microsoft-intune-administrator-console"></a>Para verificar a instalação do software cliente usando o console de administrador do Microsoft Intune
 
-1.  No [Console de administração do Microsoft Intune](https://manage.microsoft.com/), clique em **Grupos** &gt; **Todos os Dispositivos** &gt; **Todos os Computadores**.
+1. No [Console de administração do Microsoft Intune](https://manage.microsoft.com/), clique em **Grupos** &gt; **Todos os Dispositivos** &gt; **Todos os Computadores**.
 
-2.  Na lista, encontre os computadores que se comunicam com o Intune ou procure um computador gerenciado específico, digitando o nome do computador (ou qualquer parte do nome) na caixa **Pesquisar dispositivos**.
+2. Na lista, encontre os computadores que se comunicam com o Intune ou procure um computador gerenciado específico, digitando o nome do computador (ou qualquer parte do nome) na caixa **Pesquisar dispositivos**.
 
-3.  Examine o status do computador no painel inferior do console. Resolva todos os erros.
+3. Examine o status do computador no painel inferior do console. Resolva todos os erros.
 
 ### <a name="to-create-a-computer-inventory-report-to-display-all-enrolled-computers"></a>Para criar um relatório de inventário do computador para exibir todos os computadores registrados
 
-1.  No [Console de administração do Microsoft Intune](https://manage.microsoft.com/), clique em **Relatórios** &gt; **Relatórios de Inventário do Computador**.
+1. No [Console de administração do Microsoft Intune](https://manage.microsoft.com/), clique em **Relatórios** &gt; **Relatórios de Inventário do Computador**.
 
-2.  Na página **Criar Novo Relatório**, deixe todos os campos com os valores padrão (a menos que deseje aplicar filtros) e clique em **Exibir Relatório**.
+2. Na página **Criar Novo Relatório**, deixe todos os campos com os valores padrão (a menos que deseje aplicar filtros) e clique em **Exibir Relatório**.
 
-3.  A página **Relatório de inventário do computador** é aberta em uma nova janela e exibe todos os computadores registrados com sucesso no Intune.
+3. A página **Relatório de inventário do computador** é aberta em uma nova janela e exibe todos os computadores registrados com sucesso no Intune.
 
     > [!TIP]
     > Clique em qualquer cabeçalho de coluna no relatório para classificar a lista pelo conteúdo dessa coluna.
@@ -258,7 +258,7 @@ Verifique o "%ProgramFiles%\Microsoft\OnlineManagement" e certifique-se de que s
 
 O processo de cancelamento de registro não remove a pasta OnlineManagement. Aguarde 30 minutos após a desinstalação e, em seguida, execute este comando. Se você o executar muito cedo, a desinstalação poderá ser deixada em um estado desconhecido. Para remover a pasta, inicie um prompt elevado e execute:
 
-    "rd /s /q %ProgramFiles%\Microsoft\OnlineManagement".
+    "rd /s /q %ProgramFiles%\Microsoft\OnlineManagement".
 
 ### <a name="next-steps"></a>Próximas etapas
 [Tarefas comuns de gerenciamento de computadores Windows com o cliente de software do Intune](common-windows-pc-management-tasks-with-the-microsoft-intune-computer-client.md)

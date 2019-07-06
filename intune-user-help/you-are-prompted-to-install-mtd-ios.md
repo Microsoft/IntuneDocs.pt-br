@@ -16,12 +16,12 @@ searchScope:
 ROBOTS: ''
 ms.custom: intune-enduser
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 582b4615941dae8c2fc696ce5dfc87e2bbe4b98b
-ms.sourcegitcommit: 25e6aa3bfce58ce8d9f8c054bc338cc3dff4a78b
+ms.openlocfilehash: 0c72fb6e7ace6c603410ff0ffc9a96e4a0ff528d
+ms.sourcegitcommit: 7315fe72b7e55c5dcffc6d87f185f3c2cded9028
 ms.translationtype: MTE75
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "55846240"
+ms.lasthandoff: 07/02/2019
+ms.locfileid: "67527622"
 ---
 # <a name="install-mobile-threat-defense-on-your-ios-device"></a>Instalar a Defesa contra ameaças móveis em seu dispositivo iOS
 
@@ -38,12 +38,12 @@ Antes de poder acessar seu trabalho, o suporte de sua empresa exige que você in
 
 A Defesa contra Ameaças Móveis é uma maneira que as empresas têm de garantir que os dispositivos estejam protegidos contra aplicativos que possam tentar roubar informações corporativas. Adicionar essa proteção requer que informações adicionais sobre os aplicativos nos dispositivos sejam relatadas para o serviço de Defesa contra Ameaças Móveis que a empresa está usando. A empresa não pode ver os dados nos aplicativos pessoais. Todos os aplicativos no dispositivo são adicionados a [o que sua empresa pode ver](what-info-can-your-company-see-when-you-enroll-your-device-in-intune.md) quando um serviço de Defesa contra Ameaças Móveis é usado. Estas são as partes do aplicativo que sua empresa pode ver:
 
-*   Nome do aplicativo
+* Nome do aplicativo
 * ID do aplicativo: o nome exclusivo que identifica o aplicativo na loja de aplicativos
-*   Versão do aplicativo e número curto da versão: os números de versão específicos de um aplicativo
+* Versão do aplicativo e número curto da versão: os números de versão específicos de um aplicativo
 * Lote de aplicativo e tamanho dinâmico: a quantidade de espaço que um aplicativo usa em seu dispositivo
 * Validade do aplicativo: se um aplicativo está aprovado para uso
-*   Estado de gerenciamento do aplicativo: se um aplicativo é gerenciado pela empresa ou se é um aplicativo pessoal
+* Estado de gerenciamento do aplicativo: se um aplicativo é gerenciado pela empresa ou se é um aplicativo pessoal
 
 ## <a name="if-the-installation-doesnt-work"></a>Se a instalação não funcionar
 

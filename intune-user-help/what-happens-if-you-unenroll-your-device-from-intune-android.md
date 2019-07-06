@@ -18,26 +18,26 @@ ms.reviewer: arnab
 ms.suite: ems
 ms.custom: intune-enduser
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 32dfb275e96ecf1d8c60f115881d7ceb0593a3b2
-ms.sourcegitcommit: 25e6aa3bfce58ce8d9f8c054bc338cc3dff4a78b
+ms.openlocfilehash: 73e9c42f69517d145c797b13ae9fa5aa779ebc5d
+ms.sourcegitcommit: bccfbf1e3bdc31382189fc4489d337d1a554e6a1
 ms.translationtype: MTE75
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "55837417"
+ms.lasthandoff: 07/03/2019
+ms.locfileid: "67546503"
 ---
 # <a name="what-happens-if-you-unenroll-your-android-device-from-intune"></a>O que acontece quando você cancela o registro do dispositivo Android no Intune?
 
 Ao cancelar o registro do dispositivo Android do Intune:
 
--   O suporte de sua empresa não gerencia o dispositivo.
+- O suporte de sua empresa não gerencia o dispositivo.
 
--   você perde acesso a recursos e dados da empresa.
+- você perde acesso a recursos e dados da empresa.
 
--   Seu dispositivo não aparece mais no Portal da Empresa.
+- Seu dispositivo não aparece mais no Portal da Empresa.
 
--   Você não poderá mais instalar aplicativos do portal da empresa.
+- Você não poderá mais instalar aplicativos do portal da empresa.
 
--   Qualquer configuração que tiver sido alterada em seu dispositivo quando você o adicionou (por exemplo, desabilitar a câmera ou exigir uma senha com determinado tamanho) não se aplicará mais.
+- Qualquer configuração que tiver sido alterada em seu dispositivo quando você o adicionou (por exemplo, desabilitar a câmera ou exigir uma senha com determinado tamanho) não se aplicará mais.
 
 Se o dispositivo estiver configurado apenas para receber email da empresa e cancelar o registro do seu dispositivo, o dispositivo não aparecerá mais no Portal da Empresa.
 

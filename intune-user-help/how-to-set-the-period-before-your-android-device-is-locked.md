@@ -18,12 +18,12 @@ ms.reviewer: arnab
 ms.suite: ems
 ms.custom: intune-enduser
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 913e157e8b2f16376eccf8fc93af137792015eb9
-ms.sourcegitcommit: 25e6aa3bfce58ce8d9f8c054bc338cc3dff4a78b
+ms.openlocfilehash: ef8dbcda214e2c7cd260fe237e4b9cfd0b7ff326
+ms.sourcegitcommit: bccfbf1e3bdc31382189fc4489d337d1a554e6a1
 ms.translationtype: MTE75
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "55847991"
+ms.lasthandoff: 07/03/2019
+ms.locfileid: "67546280"
 ---
 # <a name="how-to-set-the-amount-of-time-before-your-android-device-locks-its-screen"></a>Como definir o período de tempo antes do seu dispositivo Android bloquear a tela
 
@@ -31,18 +31,18 @@ Para reconectar-se ao trabalho, você precisará definir o tempo limite da senha
 
 ## <a name="native-non-samsung-knox-device"></a>Dispositivo (não Samsung Knox) nativo
 
-1.  Em **Configurações** no seu dispositivo, clique em **Segurança** &gt; **Automatically Lock (Bloqueio Automático)** (isso é exibido como **Lock phone after (Bloquear telefone após)** em alguns dispositivos).
+1. Em **Configurações** no seu dispositivo, clique em **Segurança** &gt; **Automatically Lock (Bloqueio Automático)** (isso é exibido como **Lock phone after (Bloquear telefone após)** em alguns dispositivos).
 
     Se o **Bloqueio automático** (**Bloquear telefone após** em alguns dispositivos) não for exibido, certifique-se de ter definido uma senha válida em **Configurações** &gt; **Bloqueio de tela** &gt; **Senha**.
 
-2.  Selecione o valor de tempo limite da senha.
+2. Selecione o valor de tempo limite da senha.
 
 ## <a name="samsung-knox-device"></a>Dispositivo Samsung Knox
 
-1.  Em **Configurações** no seu dispositivo, toque em **Lock screen and security (Tela de bloqueio e segurança)** &gt; **Lock automatically (Bloquear automaticamente)**.
+1. Em **Configurações** no seu dispositivo, toque em **Lock screen and security (Tela de bloqueio e segurança)** &gt; **Lock automatically (Bloquear automaticamente)** .
 
     Se o **Lock automatically Lock (Bloqueio automático)** (**Lock phone after (Bloquear telefone após)** em alguns dispositivos) não for exibido, certifique-se de ter definido uma senha válida em **Configurações** &gt; **Screen Lock (Bloqueio de tela)** &gt; **Senha**.
 
-2.  Selecione um valor de tempo limite da senha.
+2. Selecione um valor de tempo limite da senha.
 
 Ainda precisa de ajuda? Contate o suporte da sua empresa. Para obter as informações de contato, consulte o [site do Portal da Empresa](https://go.microsoft.com/fwlink/?linkid=2010980).

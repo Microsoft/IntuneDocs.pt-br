@@ -18,12 +18,12 @@ ms.reviewer: maxles
 ms.suite: ems
 ms.custom: intune-enduser
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 35d77c9aa739096f36f4dbf4b75a4186e55a3381
-ms.sourcegitcommit: 25e6aa3bfce58ce8d9f8c054bc338cc3dff4a78b
+ms.openlocfilehash: 5ae4e454a0ca41858cb670790fd5acd4d6bf998a
+ms.sourcegitcommit: bccfbf1e3bdc31382189fc4489d337d1a554e6a1
 ms.translationtype: MTE75
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "55835056"
+ms.lasthandoff: 07/03/2019
+ms.locfileid: "67546608"
 ---
 # <a name="use-managed-apps-on-your-ios-device"></a>Usar aplicativos gerenciados no seu dispositivo iOS
 
@@ -38,9 +38,9 @@ Ao acessar dados da empresa em um aplicativo gerenciado, você verá uma mensage
 ## <a name="how-do-i-get-managed-apps"></a>Como obtenho os aplicativos gerenciados?  
 Você pode obter aplicativos gerenciados de duas maneiras diferentes:
 
--   Quando o dispositivo é registrado no Microsoft Intune, você instala o aplicativo do seu aplicativo Portal da Empresa ou um site do Portal da Empresa, ou o suporte de sua empresa pode instalá-lo em seu dispositivo. Para saber mais sobre o registro, consulte [Registrar o dispositivo iOS no Intune](enroll-your-device-in-intune-ios.md) ou [Registrar o dispositivo macOS no Intune](enroll-your-device-in-intune-macos.md).
+- Quando o dispositivo é registrado no Microsoft Intune, você instala o aplicativo do seu aplicativo Portal da Empresa ou um site do Portal da Empresa, ou o suporte de sua empresa pode instalá-lo em seu dispositivo. Para saber mais sobre o registro, consulte [Registrar o dispositivo iOS no Intune](enroll-your-device-in-intune-ios.md) ou [Registrar o dispositivo macOS no Intune](enroll-your-device-in-intune-macos.md).
 
--   Instale um aplicativo da Windows Store e entre com sua conta de usuário corporativo que é gerenciada pelo Intune.
+- Instale um aplicativo da Windows Store e entre com sua conta de usuário corporativo que é gerenciada pelo Intune.
 
 Às vezes, o suporte de sua empresa pode comprar várias licenças para um aplicativo que você instala. Caso veja uma mensagem para aceitar o contrato do Apple Volume Purchase Program, isso é normal e você pode aceitá-lo. Caso não o aceite, você não poderá instalar o aplicativo.
 
@@ -56,22 +56,22 @@ Você pode obter aplicativos gerenciados de duas maneiras diferentes:
 ## <a name="what-can-my-company-support-manage-in-an-app"></a>O que o suporte da minha empresa pode gerenciar em um aplicativo?  
 Aqui estão alguns exemplos de opções que o suporte de sua empresa pode gerenciar em um aplicativo e que podem afetar suas interações com os dados da empresa no dispositivo:
 
--   Acesso a sites específicos
+- Acesso a sites específicos
 
--   Transferências de dados entre aplicativos
+- Transferências de dados entre aplicativos
 
--   Salvando arquivos
+- Salvando arquivos
 
--   Operações de copiar e colar
+- Operações de copiar e colar
 
--   Requisitos de acesso do PIN
+- Requisitos de acesso do PIN
 
--   Suas credenciais, usando as credenciais da empresa
+- Suas credenciais, usando as credenciais da empresa
 
--   Capacidade de fazer backup para a nuvem
+- Capacidade de fazer backup para a nuvem
 
--   Capacidade de fazer capturas de tela
+- Capacidade de fazer capturas de tela
 
--   Requisitos de criptografia de dados
+- Requisitos de criptografia de dados
 
 Para obter mais informações sobre os aplicativos gerenciados em seu dispositivo, entre em contato com suporte de sua empresa. Para obter as informações de contato, consulte o [site do Portal da Empresa](https://go.microsoft.com/fwlink/?linkid=2010980).

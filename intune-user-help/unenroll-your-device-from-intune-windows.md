@@ -18,12 +18,12 @@ ms.reviewer: jieyang
 ms.suite: ems
 ms.custom: intune-enduser
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 46f2193a3a13183d41b10f03b6efe7100f0d9f9d
-ms.sourcegitcommit: 25e6aa3bfce58ce8d9f8c054bc338cc3dff4a78b
+ms.openlocfilehash: 50833b33583dcc1b49eb9009995b8ccd6c79e1f0
+ms.sourcegitcommit: bccfbf1e3bdc31382189fc4489d337d1a554e6a1
 ms.translationtype: MTE75
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "55840358"
+ms.lasthandoff: 07/03/2019
+ms.locfileid: "67546641"
 ---
 # <a name="remove-your-windows-device-from-management"></a>Remover seu dispositivo Windows do gerenciamento
 
@@ -76,24 +76,24 @@ Conclua as etapas a seguir para remover um dispositivo Windows 10 do gerenciamen
 ## <a name="remove-your-windows-81-computer"></a>Remover seu computador com Windows 8.1
 Execute as etapas a seguir para remover um computador com Windows 8.1 do Intune.
 
-1.  Acesse **Configurações do Computador** > **Rede** > **Local de Trabalho**.
-2.  Em **Ingresso no Local de Trabalho**, selecione **Sair**.
-3.  Em **Ativar o gerenciamento de dispositivo**, selecione **Desligar**.
-4.  Na janela pop-up que é aberta, selecione **Desligar**.
+1. Acesse **Configurações do Computador** > **Rede** > **Local de Trabalho**.
+2. Em **Ingresso no Local de Trabalho**, selecione **Sair**.
+3. Em **Ativar o gerenciamento de dispositivo**, selecione **Desligar**.
+4. Na janela pop-up que é aberta, selecione **Desligar**.
 
 ## <a name="remove-your-windows-81-phone"></a>Remover seu telefone Windows 8.1
 Conclua as seguintes etapas para remover um telefone Windows 8.1 do Intune.
 
-1.  Acesse **Configurações** > **Local de trabalho**.
-2.  Toque na conta de local de trabalho que deseja cancelar o registro.
-3.  Toque em **Excluir** na parte inferior da página.
-4.  Na caixa de diálogo **Excluir conta**, toque em **Excluir**.  
+1. Acesse **Configurações** > **Local de trabalho**.
+2. Toque na conta de local de trabalho que deseja cancelar o registro.
+3. Toque em **Excluir** na parte inferior da página.
+4. Na caixa de diálogo **Excluir conta**, toque em **Excluir**.  
 ## <a name="removing-your-personal-information-after-removing-the-company-portal"></a>Remoção de suas informações pessoais depois de remover o Portal da Empresa  
 
 Há dois tipos de dados que o Portal da Empresa armazena no seu dispositivo Windows:
 
--   **Logs de diagnóstico**: dados de atividade de aplicativos padrão que a Microsoft coleta. Isso é apagado automaticamente quando você desinstala o aplicativo Portal da Empresa. Dados de atividade do aplicativo são, por exemplo, dados sobre quanto tempo o aplicativo ficou aberto ou se o aplicativo falhou.
--   **Cache de aplicativo**: arquivos de suporte que são necessários para o aplicativo funcionar, como ícones e configurações.
+- **Logs de diagnóstico**: dados de atividade de aplicativos padrão que a Microsoft coleta. Isso é apagado automaticamente quando você desinstala o aplicativo Portal da Empresa. Dados de atividade do aplicativo são, por exemplo, dados sobre quanto tempo o aplicativo ficou aberto ou se o aplicativo falhou.
+- **Cache de aplicativo**: arquivos de suporte que são necessários para o aplicativo funcionar, como ícones e configurações.
 
 Para excluir os logs armazenados e o cache, execute uma das seguintes etapas:
 

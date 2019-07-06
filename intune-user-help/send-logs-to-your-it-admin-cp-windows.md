@@ -18,12 +18,12 @@ ms.reviewer: scottduf
 ms.suite: ems
 ms.custom: intune-enduser
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: c9ecf976ea973fdb1a9b8025fec0bf49d7f87d0c
-ms.sourcegitcommit: 25e6aa3bfce58ce8d9f8c054bc338cc3dff4a78b
+ms.openlocfilehash: 5df4fce5c07f416d5fa53ef653d62d9166fb1a11
+ms.sourcegitcommit: 7315fe72b7e55c5dcffc6d87f185f3c2cded9028
 ms.translationtype: MTE75
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "55836465"
+ms.lasthandoff: 07/02/2019
+ms.locfileid: "67528762"
 ---
 # <a name="email-your-company-support-about-problem-from-company-portal-for-windows"></a>Enviar um email ao suporte da empresa sobre o problema por meio do Portal da Empresa para Windows
 
@@ -32,7 +32,7 @@ Solucione problemas de aplicativo no aplicativo Portal da Empresa para Windows 1
 Quando você solicitar ajuda, um email pré-populado será aberto, no qual você poderá descrever o problema em detalhes. Ele também inclui uma ID de log de diagnóstico. Caso a equipe de suporte não consiga resolver o problema de acordo com sua descrição, ela contatará a Microsoft para obter ajuda. A Microsoft precisará da ID de diagnóstico para referenciar os logs do aplicativo.   
 
 
-> [!Note]       
+> [!Note]
 > Depois de clicar em **Obter ajuda**, o Portal da Empresa enviará automaticamente os logs à equipe de suporte da Microsoft. Esta etapa é proativa, o que facilita a solução de problemas escalonados ao Suporte da Microsoft. Conforme mencionado acima, a equipe de suporte da Microsoft pode extrair os logs usando a ID de diagnóstico em seu email.  
 
 ## <a name="what-is-a-diagnostic-log"></a>O que é um log de diagnóstico?

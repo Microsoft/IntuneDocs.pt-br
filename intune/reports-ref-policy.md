@@ -16,21 +16,21 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 23476383abfddabffc411afa286c97b30ef04439
-ms.sourcegitcommit: 916fed64f3d173498a2905c7ed8d2d6416e34061
+ms.openlocfilehash: dc7b7cdc4388051761eafac322171e4c30075923
+ms.sourcegitcommit: bccfbf1e3bdc31382189fc4489d337d1a554e6a1
 ms.translationtype: MTE75
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/23/2019
-ms.locfileid: "66040973"
+ms.lasthandoff: 07/03/2019
+ms.locfileid: "67549175"
 ---
 # <a name="reference-for-policy-entities"></a>Referência para entidades de política
 
 A categoria **Política** contém entidades para dispositivos móveis que rastreiam informações como:
 
-  -  Inventário de perfis de configuração do dispositivo, perfis de configuração do aplicativo e as políticas de conformidade  
-  -  Número de dispositivos com o estado de êxito, pendente, com falha, ou de erro por dia  
-  -  Número de usuários com o estado de êxito, pendente, com falha, ou de erro por dia  
-  -  Número acumulativo de dispositivos com o estado de êxito, pendente, com falha, ou de erro  
+  - Inventário de perfis de configuração do dispositivo, perfis de configuração do aplicativo e as políticas de conformidade  
+  - Número de dispositivos com o estado de êxito, pendente, com falha, ou de erro por dia  
+  - Número de usuários com o estado de êxito, pendente, com falha, ou de erro por dia  
+  - Número acumulativo de dispositivos com o estado de êxito, pendente, com falha, ou de erro  
 
 ## <a name="policy"></a>Política
 

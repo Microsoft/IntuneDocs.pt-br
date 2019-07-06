@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic-keep
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 2c1717be830d88ed0a7d1b660b7910c8192c93c5
-ms.sourcegitcommit: 256952cac44bc6289156489b6622fdc1a3c9c889
+ms.openlocfilehash: 0ba447153996383b3f057c4776b643a7a4ccd48b
+ms.sourcegitcommit: bccfbf1e3bdc31382189fc4489d337d1a554e6a1
 ms.translationtype: MTE75
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/26/2019
-ms.locfileid: "67403542"
+ms.lasthandoff: 07/03/2019
+ms.locfileid: "67547980"
 ---
 # <a name="view-hardware-and-software-inventory-for-windows-pcs"></a>Exibir o inventário de software e hardware para computadores Windows
 
@@ -33,41 +33,41 @@ ms.locfileid: "67403542"
 
 O Intune coleta informações detalhadas sobre o hardware e software de áreas de trabalho gerenciadas como computadores, usando o cliente de software do Intune. Use as informações nos procedimentos a seguir para aprender a criar:
 
--   Um relatório que lista as informações sobre as funcionalidades de hardware dos computadores gerenciados.
+- Um relatório que lista as informações sobre as funcionalidades de hardware dos computadores gerenciados.
 
--   Um relatório que lista o software instalado em cada computador.
+- Um relatório que lista o software instalado em cada computador.
 
--   Como atualizar um inventário de computadores para garantir que os dados no relatório sejam atuais.
+- Como atualizar um inventário de computadores para garantir que os dados no relatório sejam atuais.
 
 ## <a name="to-display-information-about-pcs-you-manage"></a>Para exibir informações sobre os computadores gerenciados
 
-1.  No [Console de administração do Microsoft Intune](https://manage.microsoft.com/), escolha **Relatórios** &gt; **Relatórios de Inventário de Computador**.
+1. No [Console de administração do Microsoft Intune](https://manage.microsoft.com/), escolha **Relatórios** &gt; **Relatórios de Inventário de Computador**.
 
-2.  Na página **Criar novo relatório** , aceite os valores padrão ou personalize-os para filtrar os resultados que serão passados como retorno pelo relatório. Por exemplo, você pode escolher que apenas computadores que executem o Windows 8.1 sejam exibidos no relatório.
+2. Na página **Criar novo relatório** , aceite os valores padrão ou personalize-os para filtrar os resultados que serão passados como retorno pelo relatório. Por exemplo, você pode escolher que apenas computadores que executem o Windows 8.1 sejam exibidos no relatório.
 
-3.  Escolha **Exibir Relatório** para abrir o **Relatório de Inventário do Computador** em uma nova janela.
+3. Escolha **Exibir Relatório** para abrir o **Relatório de Inventário do Computador** em uma nova janela.
 
     Você pode classificar o relatório com base em qualquer uma das colunas, como **Nome**, **Tipo de Chassi** ou **Fabricante** selecionando cada título de coluna.
 
 ## <a name="to-display-software-installed-on-pcs-you-manage"></a>Para exibir o software instalado nos computadores gerenciados
 
-1.  No [Console de administração do Microsoft Intune](https://manage.microsoft.com/), escolha **Relatórios** &gt; **Relatórios de Software Detectados**.
+1. No [Console de administração do Microsoft Intune](https://manage.microsoft.com/), escolha **Relatórios** &gt; **Relatórios de Software Detectados**.
 
-2.  Na página **Criar novo relatório** , aceite os valores padrão ou personalize-os para filtrar os resultados que serão passados como retorno pelo relatório. Por exemplo, você pode selecionar que apenas o software fornecido pela Microsoft seja exibido no relatório.
+2. Na página **Criar novo relatório** , aceite os valores padrão ou personalize-os para filtrar os resultados que serão passados como retorno pelo relatório. Por exemplo, você pode selecionar que apenas o software fornecido pela Microsoft seja exibido no relatório.
 
-3.  Escolha **Exibir Relatório** para abrir o **Relatório de Software Detectado** em uma nova janela.
+3. Escolha **Exibir Relatório** para abrir o **Relatório de Software Detectado** em uma nova janela.
 
     O relatório pode ser classificado com base em qualquer uma das colunas, como **Nome**, **Editor** ou **Categoria** selecionando cada título de coluna. É possível expandir as atualizações na lista para mostrar mais detalhes (como os computadores nos quais elas estão instaladas) escolhendo a seta de direção ao lado do item de lista.
 
 ## <a name="to-refresh-computer-inventory-to-ensure-it-is-current"></a>Para atualizar o inventário do computador e garantir que esteja atualizado
 
-1.  No [console de administração do Microsoft Intune](https://manage.microsoft.com/), escolha **Grupos** &gt; **Todos os Dispositivos** (ou outro grupo que contêm o computador para o qual você deseja atualizar o inventário).
+1. No [console de administração do Microsoft Intune](https://manage.microsoft.com/), escolha **Grupos** &gt; **Todos os Dispositivos** (ou outro grupo que contêm o computador para o qual você deseja atualizar o inventário).
 
-2.  Selecione um computador ou pressione e mantenha a tecla **Ctrl** pressionada para selecionar vários computadores.
+2. Selecione um computador ou pressione e mantenha a tecla **Ctrl** pressionada para selecionar vários computadores.
 
-3.  Na barra de tarefas, clique em **Tarefas Remotas** &gt; **Atualizar Inventário**.
+3. Na barra de tarefas, clique em **Tarefas Remotas** &gt; **Atualizar Inventário**.
 
-4.  Para exibir o status da tarefa, selecione **Tarefas Remotas** no canto inferior direito da página.
+4. Para exibir o status da tarefa, selecione **Tarefas Remotas** no canto inferior direito da página.
 
     A caixa de diálogo **Status da tarefa** é exibida e mostra as tarefas remotas atuais, seus status, nome do dispositivo, todos os erros reportados e fornece um link para as informações sobre a solução problemas.
 

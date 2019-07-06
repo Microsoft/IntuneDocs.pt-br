@@ -16,12 +16,12 @@ searchScope:
 ROBOTS: ''
 ms.custom: intune-enduser
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 6daeaaac7fb554e2c29f6ac150eaff8308d670b0
-ms.sourcegitcommit: 25e6aa3bfce58ce8d9f8c054bc338cc3dff4a78b
+ms.openlocfilehash: 13a12da72577edfee1d6ba23c2cd5e56d1fe397e
+ms.sourcegitcommit: 7315fe72b7e55c5dcffc6d87f185f3c2cded9028
 ms.translationtype: MTE75
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "55850549"
+ms.lasthandoff: 07/02/2019
+ms.locfileid: "67527583"
 ---
 # <a name="install-symantec-endpoint-protection-mobile-on-your-ios-device"></a>Instalar o Symantec Endpoint Protection Mobile em seu dispositivo iOS
 
@@ -29,7 +29,7 @@ Antes de poder acessar seu trabalho, sua empresa precisa que você instale o apl
 
 ## <a name="what-you-need-to-do"></a>O que você deve fazer
 
-1.  Se vir o aviso a seguir, toque em **Instalar** para permitir que o SEP Mobile seja instalado no dispositivo.
+1. Se vir o aviso a seguir, toque em **Instalar** para permitir que o SEP Mobile seja instalado no dispositivo.
 
 2. Quando vir a mensagem a seguir, toque em **Configurações**, tive os **Serviços de Localização** e toque em **Continuar**.
 

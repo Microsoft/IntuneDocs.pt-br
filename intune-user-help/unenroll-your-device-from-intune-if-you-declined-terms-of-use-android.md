@@ -18,12 +18,12 @@ ms.reviewer: chrisbal
 ms.suite: ems
 ms.custom: intune-enduser
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: dbf35b77c843b4dc084916b2c283b6c66d5f066d
-ms.sourcegitcommit: 25e6aa3bfce58ce8d9f8c054bc338cc3dff4a78b
+ms.openlocfilehash: fb4ac87bef7c822111e95c18f149fa8d0598c36e
+ms.sourcegitcommit: bccfbf1e3bdc31382189fc4489d337d1a554e6a1
 ms.translationtype: MTE75
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "55849226"
+ms.lasthandoff: 07/03/2019
+ms.locfileid: "67546630"
 ---
 # <a name="remove-your-device-from-management-if-you-declined-terms-of-use"></a>Remova seu dispositivo do gerenciamento se você tiver recusado os "Termos de uso"
 
@@ -37,11 +37,11 @@ Antes de desinstalar o aplicativo Portal da Empresa, você precisa acessar a con
 
 Para remover seu dispositivo do Intune e desinstalar o aplicativo do Portal da Empresa:
 
-1.  Vá para **Configurações** &gt; **Segurança &amp; Bloqueio de Tela** &gt; **Administradores do dispositivo**.
+1. Vá para **Configurações** &gt; **Segurança &amp; Bloqueio de Tela** &gt; **Administradores do dispositivo**.
 
     A conclusão desta etapa cancela imediatamente o registro de seu dispositivo.
 
-2.  Desmarque a caixa de seleção ao lado ou desligue o **Portal da Empresa**.
+2. Desmarque a caixa de seleção ao lado ou desligue o **Portal da Empresa**.
 
     Agora você pode desinstalar o aplicativo Portal da Empresa.
 

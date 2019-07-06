@@ -18,12 +18,12 @@ ms.reviewer: elocholi
 ms.suite: ems
 ms.custom: intune-enduser
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 7b90edf1f2e380790e2c725ee00c03d525c9fa1e
-ms.sourcegitcommit: 25e6aa3bfce58ce8d9f8c054bc338cc3dff4a78b
+ms.openlocfilehash: e5e00e1f7d4f84f9bdc1d1a52b83095135479327
+ms.sourcegitcommit: bccfbf1e3bdc31382189fc4489d337d1a554e6a1
 ms.translationtype: MTE75
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "55833966"
+ms.lasthandoff: 07/03/2019
+ms.locfileid: "67546160"
 ---
 # <a name="submit-errors-to-the-right-people-for-your-managed-macos-device"></a>Enviar erros para as pessoas certas para seu dispositivo gerenciado macOS
 
@@ -33,11 +33,11 @@ ms.locfileid: "55833966"
 
 Para enviar detalhes sobre um erro no aplicativo Portal da Empresa:
 
--   Na mensagem de erro recebida, clique em **Relatório**.
+- Na mensagem de erro recebida, clique em **Relatório**.
 
--   Clique no menu **Ajuda** > **Salvar Relatório de Diagnóstico**. Escolha um local para salvar o arquivo. Em seguida, envie por email ou carregue esse arquivo para o profissional de suporte da sua empresa.
+- Clique no menu **Ajuda** > **Salvar Relatório de Diagnóstico**. Escolha um local para salvar o arquivo. Em seguida, envie por email ou carregue esse arquivo para o profissional de suporte da sua empresa.
 
--   Se seu aplicativo de email estiver configurado, você poderá enviar o relatório de diagnóstico acessando **Ajuda** > **Enviar Relatório de Diagnóstico**. Depois que os logs forem carregados, clique em **Enviar detalhes por email**.
+- Se seu aplicativo de email estiver configurado, você poderá enviar o relatório de diagnóstico acessando **Ajuda** > **Enviar Relatório de Diagnóstico**. Depois que os logs forem carregados, clique em **Enviar detalhes por email**.
 
 ## <a name="send-errors-to-the-company-portal-developers-for-macos-devices"></a>Enviar erros para os desenvolvedores do Portal da Empresa para dispositivos macOS
 
@@ -45,8 +45,8 @@ Para enviar detalhes sobre um erro no aplicativo Portal da Empresa:
 
 Para enviar os logs para a Microsoft:
 
-1.  Abra o aplicativo do Portal da Empresa.
-2.  Clique no menu **Ajuda** > **Enviar Relatório de Diagnóstico**.  Depois que os logs forem carregados, você receberá uma ID do incidente. Copie e salve a ID.
-3.  Envie um email à Microsoft usando <a href="mailto:IntuneCPiOSfeedback@microsoft.com?subject=My Company Portal App Closed Unexpectedly&body=Paste your incident ID and describe the incident here.">este modelo</a>.
+1. Abra o aplicativo do Portal da Empresa.
+2. Clique no menu **Ajuda** > **Enviar Relatório de Diagnóstico**.  Depois que os logs forem carregados, você receberá uma ID do incidente. Copie e salve a ID.
+3. Envie um email à Microsoft usando <a href="mailto:IntuneCPiOSfeedback@microsoft.com?subject=My Company Portal App Closed Unexpectedly&body=Paste your incident ID and describe the incident here.">este modelo</a>.
 
 Ainda precisa de ajuda? Contate o suporte da sua empresa. Para obter as informações de contato, consulte o [site do Portal da Empresa](https://go.microsoft.com/fwlink/?linkid=2010980).

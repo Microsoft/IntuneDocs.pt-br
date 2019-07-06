@@ -17,14 +17,14 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 8581d047e76ac1734b2d6c7816facf601e397957
-ms.sourcegitcommit: 916fed64f3d173498a2905c7ed8d2d6416e34061
+ms.openlocfilehash: 816ac1d97e7be485717905fe9d5d62b812408446
+ms.sourcegitcommit: 84c79ceea27f7411528defc5ee8ba35ae2bf473c
 ms.translationtype: MTE75
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/23/2019
-ms.locfileid: "66041730"
+ms.lasthandoff: 07/02/2019
+ms.locfileid: "67512209"
 ---
-#  <a name="intune-data-warehouse-collections"></a>Coleções do Intune Data Warehouse
+# <a name="intune-data-warehouse-collections"></a>Coleções do Intune Data Warehouse
 
 As coleções do Intune Data Warehouse a seguir oferecem propriedades, descrições e exemplos para coleções v 1.0 das entidades da API do Data Warehouse. 
 

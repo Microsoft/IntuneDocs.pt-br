@@ -16,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic-keep
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 96ace484d0c4e832470ae9a6e4ffc69290c7d657
-ms.sourcegitcommit: 4b83697de8add3b90675c576202ef2ecb49d80b2
+ms.openlocfilehash: 733cb20c43b34393003f2e9f4f4466922f3f581e
+ms.sourcegitcommit: ede86a3cb094c12e3e218b956abb9935bec76902
 ms.translationtype: MTE75
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/13/2019
-ms.locfileid: "67044955"
+ms.lasthandoff: 07/05/2019
+ms.locfileid: "67572558"
 ---
 # <a name="manage-windows-pcs-as-computers-via-intune-software-client"></a>Gerenciar computadores Windows como computadores por meio do cliente de software do Intune
 
@@ -70,16 +70,16 @@ Como administrador do Intune, você pode disponibilizar o cliente de software do
 ## <a name="computer-management-capabilities-with-the-intune-client-software"></a>Recursos de gerenciamento do computador com o software cliente do Intune
 Na maioria dos cenários, você registrará os dispositivos no Microsoft Intune, que fornece um maior conjunto de recursos. No entanto, você também pode gerenciar computadores usando o cliente de software Intune, que fornece os seguintes recursos:
 
--   **[Gerenciamento de atualizações de software](keep-windows-pcs-up-to-date-with-software-updates-in-microsoft-intune.md)** – você pode manter os computadores atualizados e decidir quando as atualizações são aplicadas.
+- **[Gerenciamento de atualizações de software](keep-windows-pcs-up-to-date-with-software-updates-in-microsoft-intune.md)** – você pode manter os computadores atualizados e decidir quando as atualizações são aplicadas.
 
--   **[Política de Firewall do Windows](help-protect-windows-pcs-using-windows-firewall-policies-in-microsoft-intune.md)** – ajuda a garantir que nenhum computador usado pela sua empresa tenha um Firewall do Windows inativo ou configurado incorretamente.
+- **[Política de Firewall do Windows](help-protect-windows-pcs-using-windows-firewall-policies-in-microsoft-intune.md)** – ajuda a garantir que nenhum computador usado pela sua empresa tenha um Firewall do Windows inativo ou configurado incorretamente.
 
--   **[Proteção antimalware](help-secure-windows-pcs-with-endpoint-protection-for-microsoft-intune.md)** – o Intune conta com o Endpoint Protection, que ajuda a proteger seus computadores contra malware.
+- **[Proteção antimalware](help-secure-windows-pcs-with-endpoint-protection-for-microsoft-intune.md)** – o Intune conta com o Endpoint Protection, que ajuda a proteger seus computadores contra malware.
 
--   **[Assistência remota](common-windows-pc-management-tasks-with-the-microsoft-intune-computer-client.md)** – o Intune permite que os usuários entrem em contato com a equipe de suporte de TI, que poderá fornecer assistência usando um recurso de área de trabalho remota que está incluído no Intune (requer o software TeamViewer).
+- **[Assistência remota](common-windows-pc-management-tasks-with-the-microsoft-intune-computer-client.md)** – o Intune permite que os usuários entrem em contato com a equipe de suporte de TI, que poderá fornecer assistência usando um recurso de área de trabalho remota que está incluído no Intune (requer o software TeamViewer).
 
--   **[Gerenciamento de licenças de software](manage-license-agreements-for-windows-pc-software-in-microsoft-intune.md)** – controle quantas licenças de software estão disponíveis e quantas licenças disponíveis estão sendo usadas.
--   **[Implantação de aplicativo](add-apps-for-windows-pcs-in-microsoft-intune.md)** – implante software nos computadores que você gerencia. Alguns recursos de gerenciamento de aplicativos não estão disponíveis quando você gerencia computadores com o cliente de software.
+- **[Gerenciamento de licenças de software](manage-license-agreements-for-windows-pc-software-in-microsoft-intune.md)** – controle quantas licenças de software estão disponíveis e quantas licenças disponíveis estão sendo usadas.
+- **[Implantação de aplicativo](add-apps-for-windows-pcs-in-microsoft-intune.md)** – implante software nos computadores que você gerencia. Alguns recursos de gerenciamento de aplicativos não estão disponíveis quando você gerencia computadores com o cliente de software.
 
 <!-- - **Compliance settings reporting** -->
 
@@ -113,8 +113,8 @@ Para obter mais informações sobre as tarefas acima, consulte [tarefas comuns d
 
 Algumas opções de gerenciamento, que podem ser usadas para gerenciar computadores como dispositivos móveis, não podem ser usadas para computadores gerenciados com o software cliente do Intune:
 
--   Apagamento completo (o apagamento seletivo está disponível)
--   Acesso condicional
+- Apagamento completo (o apagamento seletivo está disponível)
+- Acesso condicional
 
 Além disso, observe que no console de administração do Intune, determinadas seções, como **Atualizações**, **Proteção** e **Licenças** serão exibidas somente se os dispositivos tiverem sido registrados com o cliente de software do Intune.
 

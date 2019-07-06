@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic-keep
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 71ff00c0a41fecada6e61f8a9bfa6c5a00dab921
-ms.sourcegitcommit: 916fed64f3d173498a2905c7ed8d2d6416e34061
+ms.openlocfilehash: 2b6326d30650aa62777ac9ce9c70394904b678f3
+ms.sourcegitcommit: bccfbf1e3bdc31382189fc4489d337d1a554e6a1
 ms.translationtype: MTE75
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/23/2019
-ms.locfileid: "66040850"
+ms.lasthandoff: 07/03/2019
+ms.locfileid: "67549158"
 ---
 # <a name="retire-a-windows-pc"></a>Desativar um computador Windows
 
@@ -30,9 +30,9 @@ ms.locfileid: "66040850"
 
 Use as etapas a seguir para desativar áreas de trabalho gerenciadas como computadores executando o cliente de software do Intune nelas. Ao desativar um computador, ele é removido do gerenciamento do Intune. Você não pode apagar um computador do Intune para defini-lo novamente para as configurações originais de fábrica.
 
-1.  No [console de administração do Microsoft Intune](https://manage.microsoft.com/), escolha **Grupos** &gt; **Todos os Dispositivos** (ou outro grupo que contém o computador que você deseja desativar).
+1. No [console de administração do Microsoft Intune](https://manage.microsoft.com/), escolha **Grupos** &gt; **Todos os Dispositivos** (ou outro grupo que contém o computador que você deseja desativar).
 
-2.  Selecione os dispositivos que deseja desativar e escolha **Desativar/Apagar**.
+2. Selecione os dispositivos que deseja desativar e escolha **Desativar/Apagar**.
 
 Para registrar um computador novamente no Intune, reinstale o cliente de software no computador usando as diretrizes em [Instalar o cliente de computador Windows com o Microsoft Intune](install-the-windows-pc-client-with-microsoft-intune.md).
 
@@ -40,19 +40,19 @@ Se um computador não conseguir se conectar ao Intune, será exibida uma mensage
 
 Ao desativar um computador:
 
--   Ele é removido do inventário e gerenciamento do Intune e a licença associada ao computador é disponibilizada para reutilização. O recurso Desativar/Apagar remove o cliente de software do Intune, mas não remove aplicativos nem dados do computador. Essa desativação não executa um apagamento completo no computador.
+- Ele é removido do inventário e gerenciamento do Intune e a licença associada ao computador é disponibilizada para reutilização. O recurso Desativar/Apagar remove o cliente de software do Intune, mas não remove aplicativos nem dados do computador. Essa desativação não executa um apagamento completo no computador.
 
--   Seu status não é mais exibido no console do Intune.
+- Seu status não é mais exibido no console do Intune.
 
--   O Intune remove o cliente de software do computador. Se o computador não estiver conectado ao serviço Intune, o cliente de software será removido na próxima conexão.
+- O Intune remove o cliente de software do computador. Se o computador não estiver conectado ao serviço Intune, o cliente de software será removido na próxima conexão.
 
--   O Microsoft Intune Endpoint Protection é removido do computador. Se o computador tiver outro aplicativo de ponto de extremidade instalado e ele estiver desabilitado, o aplicativo poderá ser habilitado novamente depois que o Microsoft Intune Endpoint Protection for removido, a fim de garantir que o computador está protegido.
+- O Microsoft Intune Endpoint Protection é removido do computador. Se o computador tiver outro aplicativo de ponto de extremidade instalado e ele estiver desabilitado, o aplicativo poderá ser habilitado novamente depois que o Microsoft Intune Endpoint Protection for removido, a fim de garantir que o computador está protegido.
 
--   Todas as políticas são removidas do computador e os valores definidos pela política serão alterados.
+- Todas as políticas são removidas do computador e os valores definidos pela política serão alterados.
 
--   O computador não receberá mais atualizações de software nem atualizações de definições de malware do serviço Intune.
+- O computador não receberá mais atualizações de software nem atualizações de definições de malware do serviço Intune.
 
--   Dependendo de como estiverem configurados, os computadores desativados poderão continuar recebendo atualizações usando o Windows Server Update Services, Windows Update ou Microsoft Update.
+- Dependendo de como estiverem configurados, os computadores desativados poderão continuar recebendo atualizações usando o Windows Server Update Services, Windows Update ou Microsoft Update.
 
     > [!IMPORTANT]
     > Se o software cliente tiver sido instalado com o uso de um GPO (Objeto de Política de Grupo), antes de remover o software cliente você deve remover o GPO para evitar que o software seja reinstalado.

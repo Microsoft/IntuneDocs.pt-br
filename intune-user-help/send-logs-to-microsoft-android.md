@@ -18,12 +18,12 @@ ms.reviewer: arnab
 ms.suite: ems
 ms.custom: intune-enduser
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 52f6caf8e48cd9781648acf1de0152ec107d5246
-ms.sourcegitcommit: 25e6aa3bfce58ce8d9f8c054bc338cc3dff4a78b
+ms.openlocfilehash: 20bdfcce6574d31c37442a7bad58582aa7ea2fb6
+ms.sourcegitcommit: bccfbf1e3bdc31382189fc4489d337d1a554e6a1
 ms.translationtype: MTE75
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "55850890"
+ms.lasthandoff: 07/03/2019
+ms.locfileid: "67546142"
 ---
 # <a name="send-logs-to-the-company-portal-developers-for-android-devices"></a>Enviar logs para os desenvolvedores do Portal da Empresa para dispositivos com Android
 
@@ -34,16 +34,16 @@ ms.locfileid: "55850890"
 
 Para enviar os logs para a Microsoft:
 
-1.  Abra o aplicativo do Portal da Empresa.
+1. Abra o aplicativo do Portal da Empresa.
 
-2.  Toque em **Menu** > **Ajuda** > **Suporte por Email**.
+2. Toque em **Menu** > **Ajuda** > **Suporte por Email**.
 
     > [!NOTE]
     > **Menu** pode ser um botão de software ou de hardware, dependendo do dispositivo Android.
 
-3.  Toque em **Carregar Apenas Logs**.
+3. Toque em **Carregar Apenas Logs**.
 
-4.  Após a conclusão do upload, você receberá uma ID de incidente. Salve a ID para seus registros.
+4. Após a conclusão do upload, você receberá uma ID de incidente. Salve a ID para seus registros.
 
 Para contatar diretamente a equipe do Portal da Empresa para Android, envie um email para <a href="mailto:wintunedroidfbk@microsoft.com?subject=Send logs to Microsoft&body=Describe the issue you are having.">wintunedroidfbk@microsoft.com</a>. 
 

@@ -1,10 +1,10 @@
 ---
-ms.openlocfilehash: 76e6e3186ae0e8bf1d05698d28539994d33486e8
-ms.sourcegitcommit: 6e07c35145f70b008cf170bae57143248a275b67
+ms.openlocfilehash: 1c716f48a46e4fd2dc24d203426c364dd4cd88c0
+ms.sourcegitcommit: bccfbf1e3bdc31382189fc4489d337d1a554e6a1
 ms.translationtype: MTE75
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/07/2019
-ms.locfileid: "66804430"
+ms.lasthandoff: 07/03/2019
+ms.locfileid: "67545229"
 ---
 ## <a name="microsoft-open-source-code-of-conduct"></a>Código de Conduta de Software Livre da Microsoft
 
@@ -30,7 +30,7 @@ Você encontrou um dos repositórios GitHub que hospeda a fonte de conteúdo pub
     5. Crie a solicitação de pull.
     
     **Opção 2: localize o artigo neste repositório e atualize**  
-    1.  A maioria dos tópicos está em `https://github.com/MicrosoftDocs/IntuneDocs/tree/master/intune`. Nesta pasta, pesquise o nome do tópico, como `troubleshoot-policies-in-microsoft-intune`. 
+    1. A maioria dos tópicos está em `https://github.com/MicrosoftDocs/IntuneDocs/tree/master/intune`. Nesta pasta, pesquise o nome do tópico, como `troubleshoot-policies-in-microsoft-intune`. 
     2. Selecione o link e clique no ícone de lápis. Quando você focaliza o ícone de lápis, vê a dica de ferramenta **Editar este arquivo**. 
     3. Faça as alterações e, em seguida, **confirme**-as. 
     4. Crie a solicitação de pull. 

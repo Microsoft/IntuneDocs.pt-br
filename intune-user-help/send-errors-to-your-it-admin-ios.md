@@ -18,12 +18,12 @@ ms.reviewer: esmich
 ms.suite: ems
 ms.custom: intune-enduser
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: aa48aae8f35ad55e3e836016262056268fd9cd89
-ms.sourcegitcommit: 25e6aa3bfce58ce8d9f8c054bc338cc3dff4a78b
+ms.openlocfilehash: 7a6b2e04e40aa12e791e34f3899686d5f5661df2
+ms.sourcegitcommit: bccfbf1e3bdc31382189fc4489d337d1a554e6a1
 ms.translationtype: MTE75
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "55836278"
+ms.lasthandoff: 07/03/2019
+ms.locfileid: "67546704"
 ---
 # <a name="send-errors-to-your-company-support-for-issues-with-your-ios-device"></a>Enviar erros para o suporte de sua empresa sobre problemas com seu dispositivo iOS
 Às vezes, pode ocorrer um erro durante o uso do aplicativo do Portal da Empresa em seu dispositivo iOS. Quando isso ocorrer, você pode enviar por email detalhes sobre o erro para o profissional de suporte da sua empresa. Esses detalhes darão o contexto necessário para solucionar o problema para você.
@@ -32,10 +32,10 @@ Quando você carrega os logs no aplicativo do Portal da Empresa, eles, primeiram
 
 Se receber erros enquanto estiver usando o dispositivo iOS ao usar o aplicativo de Portal da Empresa, você poderá enviar informações para ajudar o suporte de sua empresa a solucionar o problema. Você pode enviar informações de erro de diferentes maneiras:
 
--   Nas mensagens de alerta de erro, toque em **Relatório**.
+- Nas mensagens de alerta de erro, toque em **Relatório**.
 
--   Na guia **Mais** do aplicativo do Portal da Empresa, toque em **Obter Ajuda**.
+- Na guia **Mais** do aplicativo do Portal da Empresa, toque em **Obter Ajuda**.
 
--   No aplicativo do Portal da Empresa, agite o dispositivo e toque em **Enviar Relatório de Diagnóstico** quando o alerta de diagnóstico for exibido. Se o alerta não for exibido quando você agitar o dispositivo, abra **Configurações** > **Portal da Empresa** e verifique se a opção **Gesto de Agitar** está ativada.
+- No aplicativo do Portal da Empresa, agite o dispositivo e toque em **Enviar Relatório de Diagnóstico** quando o alerta de diagnóstico for exibido. Se o alerta não for exibido quando você agitar o dispositivo, abra **Configurações** > **Portal da Empresa** e verifique se a opção **Gesto de Agitar** está ativada.
 
 Ainda precisa de ajuda? Contate o suporte da sua empresa. Para obter as informações de contato, consulte o [site do Portal da Empresa](https://go.microsoft.com/fwlink/?linkid=2010980).

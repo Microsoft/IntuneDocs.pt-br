@@ -16,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: d3b9f69e745baffd21b55274e173bb75e8581525
-ms.sourcegitcommit: 690e680e854b7d707421c5e06f134e493f4f4194
-ms.translationtype: HT
+ms.openlocfilehash: 8fa5589f62900027b90659b8f570e7caa10b1cd8
+ms.sourcegitcommit: bccfbf1e3bdc31382189fc4489d337d1a554e6a1
+ms.translationtype: MTE75
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/27/2019
-ms.locfileid: "67418940"
+ms.lasthandoff: 07/03/2019
+ms.locfileid: "67549055"
 ---
 # <a name="mdm-security-baseline-settings-for-intune"></a>Configurações de linha de base de segurança MDM para o Intune  
 
@@ -32,7 +32,7 @@ A versão de linha de base mais recente é **MDM a linha de base de segurança p
 Para saber mais sobre o que mudou na versão mais recente desta linha de base da versão anterior, consulte [o que mudou no novo modelo](#whats-changed-in-the-new-template).  
 
 > [!NOTE]  
-> Em junho de 2019, a linha de base de segurança MDM de visualização foi substituída pela versão dos *base de segurança do MDM para atualização de primavera de 2019 (1 de 19H)* modelo, que é generaly disponíveis (não na versão prévia). Perfis que foram criados antes da disponibilidade do *base de segurança do MDM para atualização de primavera de 2019 (1 de 19 H)* linha de base não são atualizados para refletir às configurações e valores que são a linha de base de segurança do MDM para atualização de primavera de 2019 ( 19 H 1) versão.  Embora seja possível criar novos perfis baseados no modelo de visualização, você pode editar e continuar a usar os perfis que você criou anteriormente que são baseados no modelo de visualização.   
+> Em junho de 2019, a linha de base de segurança MDM de visualização foi substituída pela versão dos *base de segurança do MDM para atualização de primavera de 2019 (1 de 19H)* modelo, que é generaly disponíveis (não na versão prévia). Perfis que foram criados antes da disponibilidade do *base de segurança do MDM para atualização de primavera de 2019 (1 de 19 H)* linha de base não são atualizados para refletir as configurações e valores que são a linha de base de segurança do MDM para atualização de primavera de 2019 (19h 1 ) versão.  Embora seja possível criar novos perfis baseados no modelo de visualização, você pode editar e continuar a usar os perfis que você criou anteriormente que são baseados no modelo de visualização.   
   
 Para saber mais sobre como usar linhas de base de segurança com o Intune, consulte [usar linhas de base de segurança](security-baselines.md).  
 
@@ -57,7 +57,7 @@ Para obter mais informações, veja [CSP de política – AppRuntime](https://do
 
 - **Contas da Microsoft opcionais para aplicativos da Windows Store**  
   Essa configuração de política permite controlar se as contas da Microsoft são opcionais para aplicativos da Windows Store que exigem uma conta para entrada. Essa política afeta somente aplicativos da Windows Store que dão suporte a ele. Se você habilitar essa configuração de política, aplicativos da Windows Store que normalmente exigem uma conta Microsoft para entrar permitirá aos usuários entrar com uma conta da empresa em vez disso. Se você desabilitar ou não configurar essa política, os usuários deverão entrar com uma conta Microsoft.  
-    [Saiba mais](https://go.microsoft.com/fwlink/?linkid=2067104)  
+  [Saiba mais](https://go.microsoft.com/fwlink/?linkid=2067104)  
   
   **Padrão**: habilitado  
 
@@ -68,7 +68,7 @@ Para obter mais informações, veja [CSP de política – ApplicationManagement]
   Essa configuração de política permite que os usuários alterem as opções de instalação que normalmente estão disponíveis somente para administradores de sistema. Se você habilitar essa configuração de política, alguns dos recursos de segurança do Windows Installer são ignorados. Ele permite instalações para concluir que, caso contrário, seriam interrompidas devido a uma violação de segurança. Se você desabilitar ou não definir essa configuração de política, os recursos de segurança do Windows Installer impedir que os usuários alterem as opções de instalação normalmente é reservadas para os administradores do sistema, como especificar o diretório no qual os arquivos são instalados. Se o Windows Installer detecta que um pacote de instalação permitiu que o usuário altere uma opção protegida, ele interrompe a instalação e exibe uma mensagem. Esses recursos de segurança funcionam apenas quando o programa de instalação está em execução em um contexto de segurança privilegiado no qual ele tem acesso a diretórios negados ao usuário. Essa configuração de política foi projetada para ambientes menos restritivos. Ele pode ser usado para evitar erros em um programa de instalação que impede a instalação do software.  
   [Saiba mais](https://go.microsoft.com/fwlink/?linkid=2067060)  
 
-    **Padrão**: Sim
+  **Padrão**: Sim
 
 - **Instalações de aplicativo do bloco do MSI com privilégios elevados**  
   Esta configuração de política direciona o Windows Installer para usar permissões elevadas ao instalar algum programa no sistema.  
@@ -828,7 +828,7 @@ Para obter mais informações, veja [CSP de política – InternetExplorer](http
   
 - **Permissões de Java da zona confiável do Internet Explorer**   
   Essa configuração de política permite que você gerencie permissões para miniaplicativos Java. Se habilitar essa configuração de política, você poderá escolher uma das opções a seguir da lista suspensa. Personalizado, para controlar as configurações de permissões individualmente. Segurança Baixa permite que os miniaplicativos executem todas as operações. A Segurança Média permite que aplicativos sejam executados na área restrita (uma área na memória fora da qual o programa não pode fazer chamadas), além de funcionalidades como o espaço transitório (uma área de armazenamento segura e protegida no computador cliente) e E/S de arquivo controlada pelo usuário. Segurança Alta permite que aplicativos sejam executados nas respectivas áreas restritas. Desabilite o Java para impedir a execução de todos os miniaplicativos. Se você desabilitar essa configuração de política, não será possível executar miniaplicativos Java. Se você não configurar essa política, a permissão será definida como Segurança Baixa.  
-    [Saiba mais](https://go.microsoft.com/fwlink/?linkid=2067200)  
+  [Saiba mais](https://go.microsoft.com/fwlink/?linkid=2067200)  
   
   **Padrão**: Alta segurança  
   
@@ -1829,7 +1829,7 @@ As seguintes configurações são removidas:
 - *Revisado* de alguma forma de como as configurações apareceram na versão anterior. 
 
 *[Novo]*  [ **Acima do bloqueio**](#above-lock):
--  **Voz ativar aplicativos de tela bloqueada**    
+- **Voz ativar aplicativos de tela bloqueada**    
 
 *[Novo]* [**Gerenciamento de aplicativos**](#application-management): 
 - **Bloco de controle de usuário ao longo de instalações**  
@@ -2602,7 +2602,7 @@ For more information, see [Policy CSP - InternetExplorer](https://docs.microsoft
   **Default**: Disable  
   
 - **Internet Explorer internet zone logon options**  
-  This policy setting allows you to manage settings for sign in options. If you enable this policy setting, you can choose from the following sign in options. Anonymous log on to disable HTTP authentication and use the guest account only for the Common Internet File System (CIFS) protocol. Prompt for user name and password to query users for user IDs and passwords. After a user is queried, these values can be used silently for the remainder of the session. Automatic log on only in Intranet zone to query users for user IDs and passwords in other zones. After a user is queried, these values can be used silently for the rest of the session. Automatic sign in with current user name and password to attempt log on using Windows NT Challenge Response (also known as NTLM authentication). If the server supports Windows NT Challenge Response, the sign in uses the user's network user name and password for log on. If If the server doesn't support Windows NT Challenge Response, the user is queried to provide the user name and password. If you disable this policy setting, sign in is set to Automatic log on only in Intranet zone. If you don't configure this policy setting, sign in is set to Automatic sign in only in Intranet zone.
+  This policy setting allows you to manage settings for sign in options. If you enable this policy setting, you can choose from the following sign in options. Anonymous log on to disable HTTP authentication and use the guest account only for the Common Internet File System (CIFS) protocol. Prompt for user name and password to query users for user IDs and passwords. After a user is queried, these values can be used silently for the remainder of the session. Automatic log on only in Intranet zone to query users for user IDs and passwords in other zones. After a user is queried, these values can be used silently for the rest of the session. Automatic sign in with current user name and password to attempt log on using Windows NT Challenge Response (also known as NTLM authentication). If the server supports Windows NT Challenge Response, the sign in uses the user's network user name and password for log on. If the server doesn't support Windows NT Challenge Response, the user is queried to provide the user name and password. If you disable this policy setting, sign in is set to Automatic log on only in Intranet zone. If you don't configure this policy setting, sign in is set to Automatic sign in only in Intranet zone.
   
   **Default**: Prompt  
   

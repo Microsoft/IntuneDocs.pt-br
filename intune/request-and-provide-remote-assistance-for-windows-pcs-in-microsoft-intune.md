@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic-keep
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: a1a725ff5ba5a677a41fe2a89b999f1ae41b3b6f
-ms.sourcegitcommit: 916fed64f3d173498a2905c7ed8d2d6416e34061
+ms.openlocfilehash: a58339f8a956e4250064bc81e2f291a72c27c27f
+ms.sourcegitcommit: bccfbf1e3bdc31382189fc4489d337d1a554e6a1
 ms.translationtype: MTE75
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/23/2019
-ms.locfileid: "66040902"
+ms.lasthandoff: 07/03/2019
+ms.locfileid: "67549144"
 ---
 # <a name="request-and-provide-remote-assistance-for-windows-pcs"></a>Solicitar e fornecer assistência remota para computadores Windows
 
@@ -79,13 +79,13 @@ Do menu **Ações** da janela **TeamViewer**, escolha **Encerrar a Sessão**.
 ## <a name="remotely-restart-a-windows-pc"></a>Reiniciar remotamente um computador Windows
 Ao ajudar os usuários com problemas, talvez seja necessário reiniciar remotamente os computadores de tempos em tempos. Use as etapas a seguir para reiniciar remotamente um computador Windows.
 
-1.  No [console de administração do Microsoft Intune](https://manage.microsoft.com/), escolha **Grupos** &gt; **Todos os Dispositivos** (ou outro grupo que contém o computador que você deseja reiniciar).
+1. No [console de administração do Microsoft Intune](https://manage.microsoft.com/), escolha **Grupos** &gt; **Todos os Dispositivos** (ou outro grupo que contém o computador que você deseja reiniciar).
 
-2.  Selecione um ou mais computadores e escolha **Tarefas Remotas** &gt; **Reiniciar o Computador**.
+2. Selecione um ou mais computadores e escolha **Tarefas Remotas** &gt; **Reiniciar o Computador**.
 
-3.  Para exibir o status da tarefa, selecione **Tarefas Remotas** no canto inferior direito da página.
+3. Para exibir o status da tarefa, selecione **Tarefas Remotas** no canto inferior direito da página.
 
-4.  Na caixa de diálogo **Status da tarefa** , examine as tarefas remotas atuais, seus status, nome do dispositivo e todos os erros reportados.
+4. Na caixa de diálogo **Status da tarefa** , examine as tarefas remotas atuais, seus status, nome do dispositivo e todos os erros reportados.
 
 ### <a name="see-also"></a>Consulte também
 

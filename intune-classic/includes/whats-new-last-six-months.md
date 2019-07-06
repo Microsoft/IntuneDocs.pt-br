@@ -1,10 +1,10 @@
 ---
-ms.openlocfilehash: 984b78b271d130618ec0994f76e966f1dc338706
-ms.sourcegitcommit: 4b83697de8add3b90675c576202ef2ecb49d80b2
+ms.openlocfilehash: 448ec3aaa9bc9ad09e54d7dd78d4f08a4adae010
+ms.sourcegitcommit: ede86a3cb094c12e3e218b956abb9935bec76902
 ms.translationtype: MTE75
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/13/2019
-ms.locfileid: "67044700"
+ms.lasthandoff: 07/05/2019
+ms.locfileid: "67571974"
 ---
 ## <a name="april-2017"></a>Abril de 2017
 
@@ -37,15 +37,15 @@ Mensagens de erro novas e mais específicas agora serão exibidas no aplicativo 
 #### <a name="improved-app-install-status-for-the-windows-10-company-portal-app---676495--"></a>Status de instalação do aplicativo aprimorado para o aplicativo de Portal da Empresa do Windows 10 <!--676495-->
 
 As novas melhorias para instalações de aplicativos iniciadas no aplicativo Portal da Empresa para Windows 10 incluem:
--   Relatório de progresso da instalação mais rápido para pacotes MSI
--   Relatório de progresso da instalação mais rápido para aplicativos modernos em dispositivos com a Atualização de Aniversário do Windows 10 e versões posteriores
--   Nova barra de progresso para a instalação de aplicativos modernos em dispositivos com a Atualização de Aniversário do Windows 10 e versões posteriores
+- Relatório de progresso da instalação mais rápido para pacotes MSI
+- Relatório de progresso da instalação mais rápido para aplicativos modernos em dispositivos com a Atualização de Aniversário do Windows 10 e versões posteriores
+- Nova barra de progresso para a instalação de aplicativos modernos em dispositivos com a Atualização de Aniversário do Windows 10 e versões posteriores
 
 Você pode ver a nova barra de progresso na [página Novidades sobre a interface do usuário do aplicativo Intune](/intune/whats-new-app-ui).
 
 #### <a name="bulk-enroll-windows-10-devices----747607---"></a>Registro em massa de dispositivos com Windows 10 <!-- 747607 -->
 
-Ingresse uma quantidade grande de dispositivos que executam a atualização do Windows 10 para Criadores no Azure Active Directory e no Intune com o WCD (Windows Configuration Designer). Para habilitar o [registro em massa do MDM](/intune-classic/deploy-use/bulk-enroll-windows) para seu locatário do Azure AD, crie um pacote de provisionamento que ingressa dispositivos ao seu locatário do Azure AD usando o Windows Configuration Designer e aplique o pacote aos dispositivos corporativos que você gostaria de registrar e gerenciar em massa. Quando o pacote for aplicado aos dispositivos, eles ingressarão no Azure AD, se registrarão no Intune e estarão prontos para a entrada dos usuários do Azure AD.  Os usuários do Azure AD são usuários padrão nesses dispositivos e recebem políticas atribuídas e os aplicativos necessários. Não há suporte no momento para cenários de autoatendimento e de Portal da empresa.
+Ingresse uma quantidade grande de dispositivos que executam a atualização do Windows 10 para Criadores no Azure Active Directory e no Intune com o WCD (Windows Configuration Designer). Para habilitar o [registro em massa do MDM](/intune-classic/deploy-use/bulk-enroll-windows) para seu locatário do Azure AD, crie um pacote de provisionamento que ingressa dispositivos ao seu locatário do Azure AD usando o Windows Configuration Designer e aplique o pacote aos dispositivos corporativos que você gostaria de registrar e gerenciar em massa. Quando o pacote for aplicado aos dispositivos, eles ingressarão no Azure AD, se registrarão no Intune e estarão prontos para a entrada dos usuários do Azure AD.  Os usuários do Azure AD são usuários padrão nesses dispositivos e recebem políticas atribuídas e os aplicativos necessários. Não há suporte no momento para cenários de autoatendimento e de Portal da empresa.
 
 ### <a name="whats-new-in-the-public-preview-of-the-intune-admin-experience-on-azure---736542--"></a>Novidades na versão prévia pública da experiência de administração do Intune no Azure <!--736542-->
 
@@ -81,7 +81,7 @@ Após a migração, você precisará recarregar o appx novamente como um appx de
 
 #### <a name="administration-roles-being-replaced-in-azure-portal"></a>Funções de administração que estão sendo substituídas no Portal do Azure
 
-As funções de administração de MAM (gerenciamento de aplicativo móvel) existentes (Colaborador, Proprietário e Somente Leitura) usadas no portal clássico do Intune (Silverlight) estão sendo substituídas por um conjunto completo de novos RBAC (controles de administração baseados em função) no portal do Azure do Intune. Após a migração para o Portal do Azure, será necessário atribuir novamente essas novas funções de administração aos seus administradores. Para saber mais sobre RBAC e as novas funções, consulte [Controle de acesso baseado em função do Microsoft Intune](/intune/role-based-access-control).
+As funções de administração de MAM (gerenciamento de aplicativo móvel) existentes (Colaborador, Proprietário e Somente leitura) usadas no Portal Clássico (Silverlight) estão sendo substituídas por um conjunto completo de novos RBAC (Controles de administração baseados em função) no Portal do Intune no Azure. Após a migração para o Portal do Azure, será necessário atribuir novamente essas novas funções de administração aos seus administradores. Para saber mais sobre RBAC e as novas funções, consulte [Controle de acesso baseado em função do Microsoft Intune](/intune/role-based-access-control).
 
 ### <a name="whats-coming"></a>O que está por vir
 
@@ -334,7 +334,7 @@ A partir de meados de dezembro de 2016, os usuários não poderão usar os aplic
 
 __Novo Portal da Empresa do Microsoft Intune disponível para dispositivos Windows 10__ A Microsoft lançou um novo [aplicativo do Portal da Empresa do Microsoft Intune para dispositivos Windows 10](https://www.microsoft.com/store/apps/9wzdncrfj3pz). Esse aplicativo, que aproveita o novo formato do Windows 10 Universal, fornecerá ao usuário uma experiência de usuário atualizada dentro do aplicativo e experiências idênticas em todos os dispositivos Windows 10, sejam eles PCs ou dispositivos móveis, habilitando ainda todas as mesmas funcionalidades que eles estão usando atualmente.
 
-O novo aplicativo também permitirá que os usuários aproveitem os recursos de plataforma adicionais como SSO (logon único) e autenticação baseada em certificado em dispositivos Windows 10. O aplicativo ficará disponível como uma atualização para as instalações existentes do Portal da Empresa para Windows 8.1 e do Portal da Empresa para Windows Phone 8.1 da Microsoft Store. Para obter mais detalhes, acesse [aka.ms/intunecp_universalapp](http://aka.ms/intunecp_universalapp).
+O novo aplicativo também permitirá que os usuários aproveitem os recursos de plataforma adicionais como SSO (logon único) e autenticação baseada em certificado em dispositivos Windows 10. O aplicativo ficará disponível como uma atualização para as instalações existentes do Portal da Empresa para Windows 8.1 e do Portal da Empresa para Windows Phone 8.1 da Microsoft Store. Para obter mais detalhes, acesse [aka.ms/intunecp_universalapp](https://aka.ms/intunecp_universalapp).
 
 > [!IMPORTANT]
 > __Uma atualização no Intune e Android for Work__ Embora possa implantar aplicativos do Android for Work com uma ação __Necessária__, você só pode implantar aplicativos como __Disponível__ se os grupos do Intune tiverem sido migrados para a nova experiência de grupos do Azure AD.

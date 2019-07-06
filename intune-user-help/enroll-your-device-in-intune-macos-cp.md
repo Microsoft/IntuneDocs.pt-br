@@ -18,12 +18,12 @@ ms.reviewer: elocholi
 ms.suite: ems
 ms.custom: intune-enduser
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: fea76693fe929338b29d110c299277e753134cc6
-ms.sourcegitcommit: d258bcf6716c8a2589d3f8dada819905ee80f233
+ms.openlocfilehash: ee17e963964b6d2e4aa9d3e05c7a562f3c61bbf5
+ms.sourcegitcommit: bccfbf1e3bdc31382189fc4489d337d1a554e6a1
 ms.translationtype: MTE75
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/24/2019
-ms.locfileid: "66196778"
+ms.lasthandoff: 07/03/2019
+ms.locfileid: "67545722"
 ---
 # <a name="enroll-your-macos-device-in-intune-with-the-company-portal-app"></a>Registrar seu dispositivo macOS no Intune com o aplicativo Portal da Empresa
 
@@ -63,7 +63,7 @@ Use as etapas a seguir para registrar dispositivos macOS que executam o OS X El 
     * Se você não tiver nenhum dispositivo, a faixa informará: **Você não tem nenhum dispositivo gerenciado. Adicione este ao tocar aqui.** Clique na faixa para adicionar seu dispositivo.  
 
      ![Uma captura de tela da página Dispositivos, com um quadrado vermelho em torno da opção de faixa para realçar onde clicar.](./media/CP-enroll-MACOS-1808.png)  
-5.  Conclua a etapa abaixo que corresponde à mensagem exibida atualmente no Portal da Empresa.  
+5. Conclua a etapa abaixo que corresponde à mensagem exibida atualmente no Portal da Empresa.  
     * Se você estiver adicionando um dispositivo pela primeira vez, será solicitado que você baixe o aplicativo Portal da Empresa em seu dispositivo. Clique em **Baixar** para continuar.  
 
          ![Captura de tela de exemplo da tela do prompt para baixar o aplicativo Portal da Empresa do macOS. O usuário tem a opção de clicar no botão azul de Download na parte inferior esquerda do prompt ou o botão cinza Cancelar na parte inferior direita.](./media/CP-enroll-download-macOS-1808.png)  

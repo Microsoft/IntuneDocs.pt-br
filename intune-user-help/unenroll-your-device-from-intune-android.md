@@ -5,7 +5,7 @@ keywords: ''
 author: lenewsad
 ms.author: lanewsad
 manager: dougeby
-ms.date: 01/04/2019
+ms.date: 04/19/2019
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -18,12 +18,12 @@ ms.reviewer: arnab
 ms.suite: ems
 ms.custom: intune-enduser
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: fafd9c92a51c8ef258d151a3c19c271fdc45f4c2
-ms.sourcegitcommit: 25e6aa3bfce58ce8d9f8c054bc338cc3dff4a78b
+ms.openlocfilehash: b68ea31a6c5d902e66c0eda8127e0f68383910f8
+ms.sourcegitcommit: 7315fe72b7e55c5dcffc6d87f185f3c2cded9028
 ms.translationtype: MTE75
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "55835853"
+ms.lasthandoff: 07/02/2019
+ms.locfileid: "67529121"
 ---
 # <a name="unenroll-your-android-device-from-management"></a>Cancelar o registro do dispositivo Android do gerenciamento  
 
@@ -33,6 +33,9 @@ Remova um dispositivo Android registrado para que ele não seja gerenciado pela 
 * O dispositivo não aparecerá mais no Portal da Empresa.
 * Você não poderá instalar aplicativos do Portal da Empresa.
 * Qualquer configuração que tiver sido alterada em seu dispositivo quando você o adicionou (por exemplo, desabilitar a câmera ou exigir uma senha com determinado tamanho) não se aplicará mais.  
+
+> [!NOTE]
+> Você não pode cancelar o registro ou remover seu dispositivo corporativos do aplicativo Microsoft Intune. O dispositivo foi registrado durante a instalação inicial do dispositivo e deve ser registrado para acessar recursos da sua organização.  
 
 1. No Portal da Empresa, vá para o canto superior direito e toque nos três pontos verticais. Abre o menu de ação é aberto.
 
@@ -48,8 +51,8 @@ Remova um dispositivo Android registrado para que ele não seja gerenciado pela 
 
 Para remover todos os dados que o aplicativo Portal da Empresa para Android armazena no seu dispositivo:
 
--   Limpar dados de aplicativo tocando **Aplicativos** > **[*nome do aplicativo*]** > **Limpar dados**.
--   Exclua a seguinte pasta: \storage\internal storage\Android\data\com.microsoft.windowsintune.companyportal.
+- Limpar dados de aplicativo tocando **Aplicativos** > **[*nome do aplicativo*]**  > **Limpar dados**.
+- Exclua a seguinte pasta: \storage\internal storage\Android\data\com.microsoft.windowsintune.companyportal.
 
 ## <a name="uninstall-the-company-portal-app"></a>Desinstalar o aplicativo Portal da Empresa  
 O Portal da Empresa é um aplicativo de gerenciamento de dispositivo. Ele não poderá ser desinstalado enquanto você não cancelar o registro de seu dispositivo do gerenciamento. Depois que for concluído, toque e segure o ícone do aplicativo Portal da Empresa até ver **Desinstalar**. Toque em **Desinstalar** para remover o aplicativo do dispositivo.  

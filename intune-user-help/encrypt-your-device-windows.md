@@ -18,12 +18,12 @@ ms.reviewer: priyar
 ms.suite: ems
 ms.custom: intune-enduser
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: b39cc879c9e1232335c38e8d95c0861a12662c6a
-ms.sourcegitcommit: 25e6aa3bfce58ce8d9f8c054bc338cc3dff4a78b
+ms.openlocfilehash: 4784bcb706dd8eef395763729e04503682197f78
+ms.sourcegitcommit: bccfbf1e3bdc31382189fc4489d337d1a554e6a1
 ms.translationtype: MTE75
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57564458"
+ms.lasthandoff: 07/03/2019
+ms.locfileid: "67545276"
 ---
 # <a name="how-to-protect-your-windows-device-using-encryption"></a>Como proteger o seu dispositivo Windows usando criptografia
 
@@ -37,8 +37,8 @@ Se você tiver um Windows Phone registrado, seu dispositivo será criptografado 
 
 Se você tiver um dispositivo de área de trabalho, as instruções abaixo descrevem como criptografá-lo.
 
-1.  Pesquise e inicie o aplicativo **Gerenciar o BitLocker**.
+1. Pesquise e inicie o aplicativo **Gerenciar o BitLocker**.
 
-2.  Escolha **Ativar o BitLocker** e siga as instruções para criptografar cada uma das unidades.
+2. Escolha **Ativar o BitLocker** e siga as instruções para criptografar cada uma das unidades.
 
 Ainda precisa de ajuda? Contate o suporte da sua empresa. Para obter informações de contato, consulte o [site do Portal da Empresa](https://go.microsoft.com/fwlink/?linkid=2010980).
