@@ -16,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: b6a20ccec2ef0cbaba87637b3c44c2cc2be094ab
-ms.sourcegitcommit: b3a1c5b0b24f0e52cf318defe10f3d27a2770009
+ms.openlocfilehash: 21f62ad44d992d1f4adbb1945bdba02e526d9138
+ms.sourcegitcommit: 2db7dc2baea0c159f70338e6a0529acc89580773
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/21/2019
-ms.locfileid: "67325538"
+ms.lasthandoff: 07/02/2019
+ms.locfileid: "67500647"
 ---
 # <a name="find-the-primary-user-of-an-intune-device"></a>Localizar o usuário principal de um dispositivo do Intune
 
@@ -60,8 +60,8 @@ O Intune automaticamente adiciona o usuário principal a dispositivos durante ou
 | Windows | Ingresso no Azure AD (experiência de configuração inicial pelo usuário) | Registrando usuário | Durante o registro | 
 | Windows | Ingresso no Azure AD (experiência de configuração inicial pelo usuário do Autopilot) | Registrando usuário | Durante o registro | 
 | Windows | Registrar-se apenas no MDM | Registrando usuário | Durante o registro | 
-| Windows | AADJ híbrido + GPO de registro automático | Primeiro usuário a entrar | Quando o primeiro usuário entrar | 
-| Windows | Cogerenciamento | Primeiro usuário a entrar | Quando o primeiro usuário entrar | 
+| Windows | AADJ híbrido + GPO de registro automático | Primeiro usuário a entrar no Windows | Quando o primeiro usuário entra no Windows| 
+| Windows | Cogerenciamento | Primeiro usuário a entrar no Windows | Quando o primeiro usuário entra no Windows | 
 | Windows | Ingresso no Azure AD (token de registro em massa) | Nenhum | Não Aplicável | 
 | Windows | Ingresso do Azure AD (modo de autoimplantação do Autopilot) | Nenhum | Não Aplicável | 
 | Plataforma cruzada | Registro controlado pelo usuário com o aplicativo Portal da Empresa | Registrando usuário | Durante o registro |
