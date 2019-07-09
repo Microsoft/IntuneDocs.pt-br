@@ -5,7 +5,7 @@ keywords: ''
 author: brenduns
 ms.author: brenduns
 manager: dougeby
-ms.date: 04/19/2019
+ms.date: 06/20/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.localizationpriority: high
@@ -15,12 +15,12 @@ ms.reviewer: joglocke
 ms.suite: ems
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: a87b54dde9afe9803d71f7cbef62f7c55375f51b
-ms.sourcegitcommit: 916fed64f3d173498a2905c7ed8d2d6416e34061
+ms.openlocfilehash: e3bf59f75d41d50cfd9280251e20964a35a149a8
+ms.sourcegitcommit: 256952cac44bc6289156489b6622fdc1a3c9c889
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/23/2019
-ms.locfileid: "66040653"
+ms.lasthandoff: 06/26/2019
+ms.locfileid: "67403585"
 ---
 # <a name="monitor-security-baseline-and-profiles-in-microsoft-intune"></a>Monitorar perfis e linha de base de segurança no Microsoft Intune  
 
@@ -34,7 +34,7 @@ Este artigo orienta você nas duas opções de monitoramento.
 
 Ao monitorar uma linha de base, você obtém insights sobre o estado de segurança de seus dispositivos com base nas recomendações da Microsoft. É possível exibir esses insights no painel Visão geral da linha de base de segurança no console do Intune.  Demora até 24 horas para os dados serem exibidos após a primeira atribuição de uma linha de base. Alterações posteriores levam até seis horas para serem exibidas.  
 
-Para exibir dados de monitoramento para dispositivos e para a linha de base, entre no [portal do Intune](https://go.microsoft.com/fwlink/?linkid=2090973). Em seguida, selecione **Segurança de dispositivo** > **Linhas de Base de Segurança (versão prévia)**, selecione uma linha de base e exiba o painel **Visão geral**.
+Para exibir dados de monitoramento para dispositivos e para a linha de base, entre no [portal do Intune](https://go.microsoft.com/fwlink/?linkid=2090973). Em seguida, selecione **Segurança de dispositivo** > **Linhas de Base de Segurança**, selecione uma linha de base e exiba o painel **Visão geral**.
 
 O painel **Visão geral** fornece dois métodos para monitorar o status:
 - **Exibição do dispositivo** – um resumo de quantos dispositivos estão em cada categoria de status para a linha de base.  

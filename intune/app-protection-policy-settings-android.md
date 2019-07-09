@@ -6,7 +6,7 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 05/30/2019
+ms.date: 06/05/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.localizationpriority: high
@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 79edbf77f4f6b188d9fa4bf75ce8cacbad9dcf9c
-ms.sourcegitcommit: a97b6139770719afbd713501f8e50f39636bc202
+ms.openlocfilehash: 524c4aebe6cdde0b0bc45f76a4675bbed8172d67
+ms.sourcegitcommit: 84c79ceea27f7411528defc5ee8ba35ae2bf473c
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/30/2019
-ms.locfileid: "66402782"
+ms.lasthandoff: 07/02/2019
+ms.locfileid: "67511702"
 ---
 # <a name="android-app-protection-policy-settings-in-microsoft-intune"></a>Configurações da política de proteção de aplicativo Android no Microsoft Intune
 Este artigo descreve as configurações de política de proteção de aplicativo para dispositivos Android. As configurações de política descritas podem ser [configuradas](app-protection-policies.md) para uma política de proteção de aplicativo na folha **Configurações** no Portal do Azure.
@@ -31,18 +31,18 @@ Há três categorias de configurações de política: configurações de proteç
 > [!IMPORTANT]
 > O dispositivo exige o Portal da Empresa do Intune para receber políticas de proteção do aplicativo para dispositivos Android. Saiba mais em [Requisitos de acesso dos aplicativos para o Portal da Empresa do Intune](end-user-mam-apps-android.md).
 
-##  <a name="data-protection"></a>Proteção de dados 
+## <a name="data-protection"></a>Proteção de dados 
 ### <a name="data-transfer"></a>Transferência de dados
 | Setting | Como usar | Valor padrão |
 |------|------|------|
 | **Fazer backup de dados da organização para serviços de backup do Android** | Selecione **Bloquear** para impedir que esse aplicativo faça backup dos dados corporativos ou de estudante para o [Serviço de Backup do Android](https://developer.android.com/google/backup/index.html).<br><br> Selecione **Permitir** para permitir que esse aplicativo faça backup de dados corporativos ou de estudante.| **Permitir** |
 | **Enviar dados da organização para outros aplicativos** | Especifique quais aplicativos podem receber dados desse aplicativo: <ul><li> **Aplicativos gerenciados por política**: Permite a transferência apenas para outros aplicativos gerenciados por política.</li> <li>**Todos os aplicativos**: Permite a transferência para qualquer aplicativo. </li> <li>**Nenhum**: Não permite a transferência de dados para nenhum aplicativo, incluindo outros aplicativos gerenciados por política.</li></ul> <p>Há algumas isenções de aplicativos e serviços para os quais o Intune pode permitir transferência de dados por padrão. Além disso, você poderá criar suas próprias isenções se precisar permitir a transferência de dados para um aplicativo que não seja compatível com a APP do Intune. Para obter mais informações, consulte [Isenções de transferência de dados](app-protection-policy-settings-android.md#data-transfer-exemptions).<p>Essa política também pode se aplicar aos Links de Aplicativos do Android.  Links gerais da Web são gerenciados pela configuração de política **Abrir links de aplicativo no Intune Managed Browser**.<p><div class="NOTE"><p>Observação</p><p>Atualmente o Intune não dá suporte para o recurso de Aplicativos Instantâneos do Android. O Intune bloqueará qualquer conexão de dados de ou para o aplicativo. Para obter mais informações, confira [Aplicativos instantâneos Android](https://developer.android.com/topic/instant-apps/index.html) na documentação do Desenvolvedor Android.</p><p>Se **Enviar dados da organização para outros aplicativos** estiver definido como **Todos os aplicativos**, os dados de texto ainda poderão ser transferidos por meio do compartilhamento do sistema operacional na área de transferência.</p></div> | **Todos os aplicativos** | 
-|<ul><ui> **Selecionar aplicativos para isentar** | Essa opção está disponível quando você seleciona *Aplicativos gerenciados por política* para a opção anterior. | |
+|<ul><ui>**Selecionar aplicativos para isentar** | Essa opção está disponível quando você seleciona *Aplicativos gerenciados por política* para a opção anterior. | |
 | **Receber dados de outros aplicativos** | Especifique quais aplicativos podem transferir dados para esse aplicativo: <ul><li>**Aplicativos gerenciados por política**: Permite a transferência apenas para outros aplicativos gerenciados por política.</li><li>**Todos os aplicativos**: Não permite a transferência de dados de nenhum aplicativo.</li><li>**Nenhum**: Não permite a transferência de dados de nenhum aplicativo, incluindo outros aplicativos gerenciados por política. </li></ul> <p>Há algumas isenções de aplicativos e serviços dos quais o Intune pode permitir transferência de dados. Consulte [Isenções de transferência de dados](app-protection-policy-settings-android.md#data-transfer-exemptions) para obter uma lista completa dos aplicativos e serviços. | **Todos os aplicativos** |
 | **Salvar cópias de dados da organização** | Selecione **Bloquear** para desabilitar o uso da opção Salvar como neste aplicativo. Selecione **Permitir** se desejar permitir o uso de Salvar como. **Observação:** *Essa configuração é compatível com o Microsoft Excel, OneNote, PowerPoint e Word. Ela também pode ser compatível com aplicativos LOB e de terceiros.*| **Permitir** |  
-|<ul><ui> **Permitir que o usuário salve uma cópia para serviços selecionados** |Os usuários podem salvar nos serviços selecionados (OneDrive for Business, SharePoint e Armazenamento Local). Todos os outros serviços serão bloqueados.  | **0 selecionado** |
+|<ul><ui>**Permitir que o usuário salve uma cópia para serviços selecionados** |Os usuários podem salvar nos serviços selecionados (OneDrive for Business, SharePoint e Armazenamento Local). Todos os outros serviços serão bloqueados.  | **0 selecionado** |
 | **Restringir recortar, copiar e colar com outros aplicativos** | Especifique quando as ações recortar, copiar e colar podem ser usadas com esse aplicativo. Escolha: <ul><li>**Bloqueado**:  Não permite as ações de recortar, copiar e colar entre esse e outros aplicativos.</li><li>**Aplicativos gerenciados por política**: Permita ações de recortar, copiar e colar entre esse aplicativo e outros aplicativos gerenciados por política.</li><li>**Gerenciados por política com colar em**: Permita o recorte ou a cópia entre esse aplicativo e outros aplicativos gerenciados por política. Permita que dados de qualquer aplicativo sejam colados nesse aplicativo.</li><li>**Qualquer aplicativo**: Sem restrições para recortar, copiar e colar para e desse aplicativo. | **Qualquer aplicativo** |
-| **Limite de caracteres de recorte e cópia para qualquer aplicativo** | Especifique o número de caracteres que pode ser cortado ou copiado de dados e contas da organização.  Isso permitirá o compartilhamento do número de caracteres especificado para qualquer aplicativo, independentemente da configuração “Restringir recortar, copiar e colar com outros aplicativos”.<p>Valor padrão = 0<p>**Observação**: requer o Portal da Empresa do Intune versão 5.0.4364.0 ou posterior.  | **0** |
+| <ul><ui>**Limite de caracteres de recorte e cópia para qualquer aplicativo** | Especifique o número de caracteres que pode ser cortado ou copiado de dados e contas da organização.  Isso permitirá o compartilhamento do número de caracteres especificado para qualquer aplicativo, independentemente da configuração “Restringir recortar, copiar e colar com outros aplicativos”.<p>Valor padrão = 0<p>**Observação**: requer o Portal da Empresa do Intune versão 5.0.4364.0 ou posterior.  | **0** |
 | **Captura de tela e Assistente do Google** | Selecione **Desabilitar** para bloquear a captura de tela e as funcionalidades do **Assistente do Google** do dispositivo ao usar esse aplicativo. Se você escolher **Desabilitar**, a imagem de visualização do Gerenciador de Aplicativos também ficará desfocada ao usar esse aplicativo com uma conta corporativa ou de estudante.| **Habilitar** |
 
   
@@ -50,7 +50,7 @@ Há três categorias de configurações de política: configurações de proteç
 | Setting | Como usar | Valor padrão |
 |------|------|------|
 | **Criptografar dados da organização** | Escolha **Exigir** para habilitar a criptografia de dados corporativos ou de estudante nesse aplicativo. O Intune usa o esquema de criptografia do AES de 256 bits do OpenSSL, juntamente com o sistema de Repositório de Chaves do Android, para criptografar os dados do aplicativo com segurança. Os dados são criptografados de forma síncrona durante tarefas de E/S de arquivo. O conteúdo no armazenamento do dispositivo sempre é criptografado. O SDK continua a fornecer suporte a chaves de 128 bits para compatibilidade com o conteúdo e aplicativos que usam versões mais antigas do SDK. <br><br> O método de criptografia está em conformidade com FIPS 140-2.     |  **Exigir**|  
-
+| <ul><ui>**Criptografar dados da organização em dispositivos inscritos** | Selecione **Exigir** para aplicar criptografia de dados da organização com a criptografia da camada de aplicativos do Intune em todos os dispositivos. Selecione **Não necessário** para não aplicar criptografia de dados da organização com a criptografia da camada de aplicativos do Intune em dispositivos inscritos.| **Exigir** |
 
 
 ### <a name="functionality"></a>Funcionalidade
@@ -58,13 +58,16 @@ Há três categorias de configurações de política: configurações de proteç
 |------|------|------|
 | **Sincronizar aplicativo com o aplicativo de contatos nativo** | Selecione **Desabilitar** para impedir que o aplicativo salve dados no aplicativo de Contatos nativo do dispositivo. Se você escolher **Habilitar**, o aplicativo poderá salvar dados no aplicativo de Contatos nativo do dispositivo. <br><br>Ao realizar um apagamento seletivo para remover dados corporativos ou de estudante do aplicativo, os contatos sincronizados diretamente do aplicativo para o aplicativo de Contatos nativo são removidos. Todos os contatos sincronizados do catálogo de endereços nativos com outra fonte externa não podem ser apagados. Atualmente, isso se aplica somente ao aplicativo Microsoft Outlook. | **Habilitar** |
 | **Imprimindo dados da organização** | Selecione **Desabilitar** para impedir que o aplicativo imprima dados corporativos ou de estudante. | **Habilitar** |
-|**Compartilhar o conteúdo da Web com navegadores gerenciados por política** | Especifique como o conteúdo da Web (links http/https) é aberto por meio de aplicativos gerenciados por política. Escolha:<ul><li>**Exigir**: Permita que o conteúdo Web abra somente em navegadores gerenciados por política.</li><li>**Não configurado**: Permita links da Web em qualquer aplicativo </li></ul><br><br> Se estiver usando o Intune para gerenciar seus dispositivos, confira [Gerenciar o acesso à Internet usando políticas do navegador gerenciado com o Microsoft Intune](app-configuration-managed-browser.md).<br><br>**Navegadores gerenciados por política**<br>Se você implantar diversos navegadores gerenciados por política, apenas um será iniciado.  A ordem de inicialização será Intune Managed Browser e, em seguida, Microsoft Edge.  No Android, os usuários finais poderão escolher outros aplicativos gerenciados por política com suporte para links http/https se o Intune Managed Browser ou o Microsoft Edge não estiverem instalados.<p>Se um navegador gerenciado por política for necessário, mas não instalado, os usuários finais precisarão instalar o Intune Managed Browser.<p>Se um navegador gerenciado por política for necessário, os Links de Aplicativos do Android serão gerenciados pela política de configuração **Permitir que o aplicativo transfira dados para outros aplicativos**.<p>**Registro do dispositivo do Intune**<br>Se estiver usando o Intune para gerenciar seus dispositivos, confira Gerenciar o acesso à Internet usando políticas do navegador gerenciado com o Microsoft Intune. <p>**Microsoft Edge gerenciado por política**<br>O navegador Microsoft Edge para dispositivos móveis (iOS e Android) agora é compatível com políticas de proteção de aplicativo do Intune. Os usuários que entrarem com suas contas corporativas do Azure AD no aplicativo de navegador Microsoft Edge estarão protegidos pelo Intune. O navegador Microsoft Edge integra o SDK do MAM e é compatível com a todas as suas políticas de proteção de dados, com exceção de prevenir:<br><ul><li>**Salvar como**: O navegador Microsoft Edge não permite que um usuário adicione conexões diretas no aplicativo para provedores de armazenamento em nuvem (como OneDrive).</li><li>**Sincronização de contatos**: O navegador Microsoft Edge não salva em listas de contatos nativas.</li></ul><br>**Observação:** *O SDK do aplicativo não pode determinar se um aplicativo de destino é um navegador. Em dispositivos Android, outros aplicativos de navegador gerenciados que dão suporte à intenção de http/https são permitidos.* | **Não configurado** |
+|**Compartilhar o conteúdo da Web com navegadores gerenciados por política** | Especifique como o conteúdo da Web (links http/https) é aberto por meio de aplicativos gerenciados por política. Escolha:<ul><li>**Exigir**: Permita que o conteúdo Web abra somente em navegadores gerenciados por política.</li><li>**Navegador não gerenciado**: Permitir que o conteúdo da Web seja aberto somente no navegador não gerenciado definido pela configuração **ID do navegador não gerenciado**. O conteúdo da Web não será gerenciado no navegador de destino.<br>**Observação**: requer o Portal da Empresa do Intune versão 5.0.4415.0 ou posterior.</li><li>**Não configurado**: Permita links da Web em qualquer aplicativo </li></ul><br><br> Se estiver usando o Intune para gerenciar seus dispositivos, confira [Gerenciar o acesso à Internet usando políticas do navegador gerenciado com o Microsoft Intune](app-configuration-managed-browser.md).<br><br>**Navegadores gerenciados por política**<br>Se você implantar diversos navegadores gerenciados por política, apenas um será iniciado.  A ordem de inicialização será Intune Managed Browser e, em seguida, Microsoft Edge.  No Android, os usuários finais poderão escolher outros aplicativos gerenciados por política com suporte para links http/https se o Intune Managed Browser ou o Microsoft Edge não estiverem instalados.<p>Se um navegador gerenciado por política for necessário, mas não instalado, os usuários finais precisarão instalar o Intune Managed Browser.<p>Se um navegador gerenciado por política for necessário, os Links de Aplicativos do Android serão gerenciados pela política de configuração **Permitir que o aplicativo transfira dados para outros aplicativos**.<p>**Registro do dispositivo do Intune**<br>Se estiver usando o Intune para gerenciar seus dispositivos, confira Gerenciar o acesso à Internet usando políticas do navegador gerenciado com o Microsoft Intune. <p>**Microsoft Edge gerenciado por política**<br>O navegador Microsoft Edge para dispositivos móveis (iOS e Android) agora é compatível com políticas de proteção de aplicativo do Intune. Os usuários que entrarem com suas contas corporativas do Azure AD no aplicativo de navegador Microsoft Edge estarão protegidos pelo Intune. O navegador Microsoft Edge integra o SDK do MAM e é compatível com a todas as suas políticas de proteção de dados, com exceção de prevenir:<br><ul><li>**Salvar como**: O navegador Microsoft Edge não permite que um usuário adicione conexões diretas no aplicativo para provedores de armazenamento em nuvem (como OneDrive).</li><li>**Sincronização de contatos**: O navegador Microsoft Edge não salva em listas de contatos nativas.</li></ul><br>**Observação:** *O SDK do aplicativo não pode determinar se um aplicativo de destino é um navegador. Em dispositivos Android, outros aplicativos de navegador gerenciados que dão suporte à intenção de http/https são permitidos.* | **Não configurado** |
+|<ul><ui>**ID de navegador não gerenciado** | Insira a ID do aplicativo para um único navegador. O conteúdo da Web (links http/https) de aplicativos gerenciados por políticas será aberto no navegador especificado.  O conteúdo da Web não será gerenciado no navegador de destino. | **Em Branco** |
+|<ul><ui>**Nome do navegador não gerenciado** | Insira o nome do aplicativo para o navegador associado ao **ID do navegador não gerenciado**. Esse nome será exibido aos usuários se o navegador especificado não estiver instalado.  | **Em Branco** |
 
-  ## <a name="data-transfer-exemptions"></a>Isenções de transferência de dados
+
+## <a name="data-transfer-exemptions"></a>Isenções de transferência de dados
 
   Há algumas isenções de aplicativos e serviços de plataforma em que a política de proteção de aplicativo do Intune pode permitir a transferência de dados de/para eles. Por exemplo, todos os aplicativos gerenciados pelo Intune no Android devem ser capazes de transferir dados de e para a conversão de texto em fala do Google, para que o texto da tela de seu dispositivo móvel possa ser lido em voz alta. Esta lista está sujeita a alterações e reflete os serviços e os aplicativos considerados úteis para produtividade segura.
 
-  ### <a name="full-exemptions"></a>Isenções completas
+### <a name="full-exemptions"></a>Isenções completas
 
   Esses aplicativos e serviços têm permissão total para transferência de dados de/para aplicativos gerenciados pelo Intune.
 
@@ -81,7 +84,7 @@ Há três categorias de configurações de política: configurações de proteç
   | com.azure.authenticator | Aplicativo Microsoft Authenticator, que é necessário para autenticação bem-sucedida em muitos cenários. |
   | com.microsoft.windowsintune.companyportal | Intune Portal da empresa|
 
-  ### <a name="conditional-exemptions"></a>Isenções condicionais
+### <a name="conditional-exemptions"></a>Isenções condicionais
   Esses aplicativos e serviços só têm permissão para transferência de dados de/para aplicativos gerenciados pelo Intune em determinadas condições.
 
   |Nome do aplicativo/serviço | Descrição | Condição de isenção|
@@ -93,7 +96,7 @@ Há três categorias de configurações de política: configurações de proteç
 
 Para obter mais informações, consulte [Exceções à política transferência de dados para aplicativos](app-protection-policies-exception.md).
 
-##  <a name="access-requirements"></a>Requisitos de acesso
+## <a name="access-requirements"></a>Requisitos de acesso
 
 | Setting | Como usar |  
 |------|------| 

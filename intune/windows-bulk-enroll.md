@@ -8,7 +8,6 @@ ms.author: erikje
 manager: dougeby
 ms.date: 5/21/2018
 ms.topic: conceptual
-ms.prod: ''
 ms.service: microsoft-intune
 ms.localizationpriority: high
 ms.technology: ''
@@ -17,16 +16,14 @@ ms.reviewer: damionw
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 064d11f1992d63df9dacbedb8d53e849425e9b1f
-ms.sourcegitcommit: 484a898d54f5386fdbce300225aaa3495cecd6b0
+ms.openlocfilehash: 996380a4938ca73bbf5f71c82e99814f772001a4
+ms.sourcegitcommit: 256952cac44bc6289156489b6622fdc1a3c9c889
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/01/2019
-ms.locfileid: "59568161"
+ms.lasthandoff: 06/26/2019
+ms.locfileid: "67403365"
 ---
 # <a name="bulk-enrollment-for-windows-devices"></a>Registro em massa para dispositivos Windows
-
-[!INCLUDE [azure_portal](./includes/azure_portal.md)]
 
 Como administrador, você pode ingressar muitos dispositivos novos com Windows ao Azure Active Directory e ao Intune. Para registrar em massa os dispositivos em seu locatário do Azure AD, você cria um pacote de provisionamento com o aplicativo WCD (Windows Configuration Designer). A aplicação do pacote de provisionamento em dispositivos corporativos ingressa os dispositivos ao seu locatário do Azure AD e os registra no gerenciamento do Intune. Após a aplicação do pacote, ele estará pronto para logon de seus usuários do Azure AD.
 
@@ -51,7 +48,8 @@ Os usuários do Azure AD são usuários padrão nesses dispositivos e recebem po
    - **Descrição** - uma descrição opcional do projeto ![Captura de tela da especificação do nome, da pasta do projeto e da descrição no aplicativo Windows Configuration Designer](media/bulk-enroll-name.png)
 
 4. Insira um nome exclusivo para seus dispositivos. Os nomes podem incluir um número de série (%SERIAL%) ou um conjunto aleatório de caracteres. Como opção, também é possível inserir uma chave do produto, se você estiver atualizando a edição do Windows, configurá-lo para uso compartilhado e remover o software pré-instalado.
-   ![Captura de tela da especificação do nome e da chave do produto no aplicativo Windows Configuration Designer](media/bulk-enroll-device.png)
+   
+   ![Captura de tela da especificação do nome e da chave do produto (Product Key) no aplicativo Windows Configuration Designer](media/bulk-enroll-device.png)
 
 5. Como opção, você pode configurar a rede Wi-Fi à qual os dispositivos se conectem na primeira inicialização.  Se os dispositivos de rede não estiverem configurados, uma conexão de rede com fio será exigida quando o dispositivo for iniciado pela primeira vez.
    ![Captura de tela da habilitação de Wi-Fi, incluindo as opções de SSID da Rede e o Tipo da rede, no aplicativo Windows Configuration Designer](media/bulk-enroll-network.png)
@@ -91,9 +89,6 @@ O provisionamento deve ser usado em novos dispositivos com Windows. As falhas de
 
 - Um pacote de provisionamento que tenta ingressar em um domínio do Active Directory ou locatário do Azure Active Directory que não cria uma conta local poderia tornar o dispositivo inacessível se o processo de ingresso no domínio falhar devido à falta de conectividade de rede.
 - Scripts executados pelo pacote de provisionamento são executados no contexto do sistema. Os scripts são capazes de fazer alterações aleatórias no sistema de arquivos e nas configurações do dispositivo. Um script mal-intencionado ou incorreto pode colocar o dispositivo em um estado que só pode ser recuperado refazendo a imagem ou apagando o dispositivo.
-
-### <a name="problems-with-bulk-enrollment-and-company-portal"></a>Problemas com o Portal da Empresa e registro em massa
-Se um usuário tenta registrar um dispositivo previamente registrado em massa usando o Portal da Empresa, eles receberão um aviso de que seu dispositivo precisa de outras ações, seja instalação ou registro. O dispositivo é registrado, mas o registro não é reconhecido pelo aplicativo de Portal da Empresa ou site.
 
 ### <a name="bulk-enrollment-with-wi-fi"></a>Registro em massa com Wi-Fi 
 
