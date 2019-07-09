@@ -15,12 +15,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: f13b78e05b9f0b94d98677004c7059f1acaa80f9
-ms.sourcegitcommit: 4b83697de8add3b90675c576202ef2ecb49d80b2
+ms.openlocfilehash: 9ac25a0f3305cdfac9f3eeaa75b9e2106b3571b0
+ms.sourcegitcommit: ede86a3cb094c12e3e218b956abb9935bec76902
 ms.translationtype: MTE75
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/13/2019
-ms.locfileid: "67045714"
+ms.lasthandoff: 07/05/2019
+ms.locfileid: "67572509"
 ---
 # <a name="android-and-samsung-knox-standard-device-restriction-settings-lists-in-intune"></a>Listas de configurações de restrições de dispositivo Android e Samsung Knox Standard no Intune
 
@@ -41,7 +41,7 @@ Este artigo mostra todas as configurações de restrições de dispositivo do Mi
 - **Captura de tela (Somente Samsung KNOX)** : escolha **Bloquear** para impedir capturas de tela. **Não configurado** permite que o usuário capture o conteúdo da tela como uma imagem.
 - **Assistente de voz (somente Samsung KNOX)** : escolha **Bloquear** para desabilitar o serviço S Voice. **Não configurado** permite o uso do serviço e do aplicativo S Voice no dispositivo. Essa configuração não se aplica ao Bixby nem ao assistente de voz para acessibilidade, que lê em voz alta o conteúdo da tela.
 - **YouTube (somente Samsung KNOX)** : escolha **Bloquear** para impedir o uso do aplicativo YouTube. **Não configurado** permite o uso do aplicativo YouTube no dispositivo.
-- **Dispositivos compartilhados (apenas Samsung KNOX)** : configure um dispositivo Samsung Knox Standard gerenciado como compartilhado. Quando estiver configurado como **Permitir**, os usuários finais podem entrar ou sair do dispositivo com suas credenciais do Azure AD. O dispositivo permanece gerenciado, independentemente de estar ou não em uso.</br>Quando usado com um perfil de certificado SCEP, esse recurso permite aos usuários finais compartilhar um dispositivo com os mesmos aplicativos para todos os usuários. Porém, cada usuário tem seu próprio certificado de usuário de SCEP. Quando os usuários saem, todos os dados do aplicativo são removidos. Esse recurso está limitado a aplicativos LOB apenas. </br>**Não configurado** impede que vários usuários finais entrem no aplicativo do Portal da Empresa no dispositivo usando suas credenciais do Azure AD.
+- **Dispositivos compartilhados (apenas Samsung Knox)** : configure um dispositivo Samsung Knox Standard gerenciado como compartilhado. Quando estiver configurado como **Permitir**, os usuários finais podem entrar ou sair do dispositivo com suas credenciais do Azure AD. O dispositivo permanece gerenciado, independentemente de estar ou não em uso.</br>Quando usado com um perfil de certificado SCEP, esse recurso permite aos usuários finais compartilhar um dispositivo com os mesmos aplicativos para todos os usuários. Porém, cada usuário tem seu próprio certificado de usuário de SCEP. Quando os usuários saem, todos os dados do aplicativo são removidos. Esse recurso está limitado a aplicativos LOB apenas. </br>**Não configurado** impede que vários usuários finais entrem no aplicativo do Portal da Empresa no dispositivo usando suas credenciais do Azure AD.
 - **Bloqueie as alterações de data e hora (Samsung KNOX)** : escolha **Bloquear** para impedir que o usuário altere as configurações de data e hora no dispositivo. **Não configurado** permite que os usuários alterem as configurações de data e hora.
 
 ## <a name="password"></a>Senha

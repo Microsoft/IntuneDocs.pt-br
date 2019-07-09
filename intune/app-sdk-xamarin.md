@@ -16,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 506bdc73717ed9af11ab8db0e5f459145ab27f83
-ms.sourcegitcommit: 6bba9f2ef4d1ec699f5713a4da4f960e7317f1cd
-ms.translationtype: MTE75
+ms.openlocfilehash: 7081bc04cc0a6de0a0a6e8214ac0a6edea459378
+ms.sourcegitcommit: cb4e71cd48311ea693001979ee59f621237a6e6f
+ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/26/2019
-ms.locfileid: "67407101"
+ms.lasthandoff: 07/03/2019
+ms.locfileid: "67558394"
 ---
 # <a name="microsoft-intune-app-sdk-xamarin-bindings"></a>Associações Xamarin do SDK de Aplicativo do Microsoft Intune
 
@@ -61,9 +61,9 @@ Caso seu aplicativo já esteja configurado para usar a ADAL ou a MSAL e tenha su
 
 ## <a name="enabling-intune-app-protection-polices-in-your-ios-mobile-app"></a>Habilite as políticas de proteção de aplicativo do Intune políticas em seu aplicativo móvel iOS
 1. Adicione o [pacote do NuGet Microsoft.Intune.MAM.Xamarin.iOS](https://www.nuget.org/packages/Microsoft.Intune.MAM.Xamarin.iOS) ao seu projeto Xamarin.iOS.
-2.  Execute as etapas gerais necessárias para integrar o SDK do Aplicativo do Intune em um aplicativo móvel do iOS. Comece com a etapa 3 das instruções de integração do [Guia do desenvolvedor do SDK do Aplicativo do Intune para iOS](app-sdk-ios.md#build-the-sdk-into-your-mobile-app). É possível ignorar a etapa final na seção de execução do IntuneMAMConfigurator, porque essa ferramenta está incluída no pacote Microsoft.Intune.MAM.Xamarin.iOS e será executada automaticamente em tempo de build.
+2. Execute as etapas gerais necessárias para integrar o SDK do Aplicativo do Intune em um aplicativo móvel do iOS. Comece com a etapa 3 das instruções de integração do [Guia do desenvolvedor do SDK do Aplicativo do Intune para iOS](app-sdk-ios.md#build-the-sdk-into-your-mobile-app). É possível ignorar a etapa final na seção de execução do IntuneMAMConfigurator, porque essa ferramenta está incluída no pacote Microsoft.Intune.MAM.Xamarin.iOS e será executada automaticamente em tempo de build.
     **Importante**: a permissão do compartilhamento do conjunto de chaves para um aplicativo é um pouco diferente no Visual Studio e no Xcode. Abra a plist de Direitos do aplicativo e verifique se a opção "Habilitar Conjunto de Chaves" está habilitada, e se os grupos de compartilhamento de conjunto de chaves apropriados foram adicionados nessa seção. Em seguida, verifique se a plist de Direitos está especificada no campo "Direitos Personalizados" das opções de "Assinatura de Pacote do iOS" do projeto para todas as combinações apropriadas de Configuração/Plataforma.
-3.  Após a adição das associações e da configuração correta do aplicativo, seu aplicativo pode começar a usar as APIs do SDK do Intune. Para fazer isso, inclua o namespace a seguir:
+3. Após a adição das associações e da configuração correta do aplicativo, seu aplicativo pode começar a usar as APIs do SDK do Intune. Para fazer isso, inclua o namespace a seguir:
 
       ```csharp
       using Microsoft.Intune.MAM;
@@ -88,7 +88,6 @@ Caso seu aplicativo já esteja configurado para usar a ADAL ou a MSAL e tenha su
 > Não há nenhum remapeador para o iOS. A integração em um aplicativo Xamarin.Forms deve ser feita da mesma maneira que para um projeto normal do Xamarin.iOS. 
 
 ## <a name="enabling-intune-app-protection-policies-in-your-android-mobile-app"></a>Habilitar as políticas de proteção de aplicativo do Intune em seu aplicativo móvel Android
-
 1. Adicione o [pacote do NuGet Microsoft.Intune.MAM.Xamarin.Android](https://www.nuget.org/packages/Microsoft.Intune.MAM.Xamarin.Android) ao seu projeto Xamarin.Android.
     1. Para um aplicativo Xamarin.Forms, adicione o [pacote do NuGet Microsoft.Intune.MAM.Remapper.Tasks](https://www.nuget.org/packages/Microsoft.Intune.MAM.Remapper.Tasks) ao seu projeto Xamarin.Android também. 
 2. Siga as etapas gerais necessárias para [integrar o SDK do Aplicativo do Intune](app-sdk-android.md) a um aplicativo móvel Android enquanto consulta este documento para obter mais detalhes.
@@ -136,7 +135,7 @@ public override void OnMAMCreate()
     IMAMNotificationReceiverRegistry registry = MAMComponents.Get<IMAMNotificationReceiverRegistry>();
     foreach (MAMNotificationType notification in MAMNotificationType.Values())
     {
-    registry.RegisterReceiver(new ToastNotificationReceiver(this), notification);
+        registry.RegisterReceiver(new ToastNotificationReceiver(this), notification);
     }
     ...
 ```
@@ -172,6 +171,14 @@ Isso é esperado porque quando o remapeador modifica a herança de classes do Xa
 
 > [!NOTE]
 > O Remapeador regrava uma dependência que o Visual Studio usa para preenchimento automático do IntelliSense. Portanto, você talvez precise recarregar e recompilar o projeto quando o remapeador for adicionado para o IntelliSense reconhecer corretamente as alterações.
+
+### <a name="company-portal-app"></a>Aplicativo do Portal da Empresa
+As associações do Xamarin do SDK do Intune dependem da presença do [Portal da empresa](https://play.google.com/store/apps/details?id=com.microsoft.windowsintune.companyportal) aplicativo Android no dispositivo para habilitar as políticas de proteção do aplicativo. O Portal da Empresa recupera as políticas de proteção de aplicativo do serviço Intune. Quando o aplicativo é inicializado, ele carrega a política e o código para impor essa política do Portal da Empresa. O usuário não precisa estar conectado.
+
+> [!NOTE]
+> Quando o aplicativo do Portal da Empresa não está no dispositivo **Android**, um aplicativo gerenciado pelo Intune comporta-se como um aplicativo normal que não é compatível com as políticas de proteção de aplicativo do Intune.
+
+Para a proteção do aplicativo sem registro de dispositivo, o usuário _**não**_ precisa registrar o dispositivo usando o aplicativo do Portal da Empresa.
 
 ## <a name="support"></a>Suporte
 Se a sua organização for um cliente do Intune existente, trabalhe com seu representante do Suporte da Microsoft para abrir um tíquete de suporte e criar um problema [na página de problemas do GitHub](https://github.com/msintuneappsdk/intune-app-sdk-xamarin/issues), e nós ajudaremos assim que possível. 

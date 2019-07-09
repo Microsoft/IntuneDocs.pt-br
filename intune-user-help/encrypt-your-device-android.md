@@ -1,11 +1,11 @@
 ---
-title: Criptografe o dispositivo para o Portal de empresa do Intune | Microsoft Docs
-description: Etapas para ativar a criptografia de dispositivo em um dispositivo Android
+title: Criptografe o dispositivo do Intune | Microsoft Docs
+description: Etapas para ativar a criptografia de dispositivo Android quando exigidos pelo Intune
 keywords: ''
 author: lenewsad
 ms.author: lanewsad
 manager: dougeby
-ms.date: 03/22/2019
+ms.date: 04/19/2019
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -18,12 +18,12 @@ ms.reviewer: arnab
 ms.suite: ems
 ms.custom: intune-enduser
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: c9f1e7bbbad243e37f34cb298466adf886be9273
-ms.sourcegitcommit: 44095bbd1502b02201a01604531f4105401fbb92
+ms.openlocfilehash: cfc17c60412a1cfe90693216caa69ada3d2d2c9a
+ms.sourcegitcommit: bccfbf1e3bdc31382189fc4489d337d1a554e6a1
 ms.translationtype: MTE75
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/27/2019
-ms.locfileid: "58490580"
+ms.lasthandoff: 07/03/2019
+ms.locfileid: "67545252"
 ---
 # <a name="encrypting-your-android-device"></a>Criptografar o dispositivo Android
 
@@ -33,12 +33,12 @@ Antes de poder acessar os recursos de trabalho ou de estudante, sua organizaçã
 
 ## <a name="turn-on-encryption"></a>Ativar a criptografia
 
-Se você receber uma mensagem no Portal da empresa que você precisa criptografar seu dispositivo, conclua as etapas a seguir. 
+Se o Portal da empresa ou o aplicativo do Microsoft Intune solicitará que você criptografe seu dispositivo, conclua as etapas a seguir. 
 
 > [!Note]
 > Alguns dispositivos Android do Huawei, Vivo e OPPO não podem ser criptografados. Saiba mais [aqui](your-device-appears-encrypted-but-cp-says-otherwise-android.md).  
 
-1.  Defina um bloqueio de tela do dispositivo.  
+1. Defina um bloqueio de tela do dispositivo.  
     a. Acesse **Configurações** > **Tela de bloqueio e segurança** > **Tipo de bloqueio de tela**.  
     b. Selecione a **PIN**, **senha**, ou **padrão**.  
     c. Siga as instruções na tela para configurar seu bloqueio de tela.  
@@ -46,7 +46,9 @@ Se você receber uma mensagem no Portal da empresa que você precisa criptografa
 2. Volte para **tela de bloqueio e segurança** e selecione **Secure startup**.
 3. Escolher **exigir PIN quando o dispositivo liga** > **Okey**.
 4. Insira seu PIN para confirmar e criptografar seu dispositivo.
-5. Abra o aplicativo do Portal da Empresa, selecione seu dispositivo e toque em **Verificar as configurações do dispositivo**.  
+5. Abra o aplicativo Portal da empresa ou o Microsoft Intune.
+    * Usuários do Portal da Empresa: selecione seu dispositivo e toque em **Verificar as configurações do dispositivo**. 
+    * Os usuários do Microsoft Intune: você terá de esperar até que as atualizações de página, mas quando isso acontecer, seu status de criptografia deve alterar a conformidade.  
 
 Dispositivos que executam o Android 4.4 e versões anteriores não podem ter o **inicialização segura** opção. Nesse caso, conclua as seguintes etapas para criptografar seu dispositivo.
 
@@ -55,14 +57,16 @@ Dispositivos que executam o Android 4.4 e versões anteriores não podem ter o *
     * **Armazenamento** > **tela de bloqueio e segurança** > **outras configurações de segurança** 
 
 2. Siga as instruções na tela. Durante a criptografia, seu dispositivo pode reiniciar várias vezes.
-3. Abra o aplicativo do Portal da Empresa, selecione seu dispositivo e toque em **Verificar as configurações do dispositivo**.  
+3. Abra o aplicativo Portal da empresa ou o Microsoft Intune.
+    * Usuários do Portal da Empresa: selecione seu dispositivo e toque em **Verificar as configurações do dispositivo**.  
+    * Os usuários do Microsoft Intune: você terá de esperar até que as atualizações de página, mas quando isso acontecer, seu status de criptografia deve alterar a conformidade.
 
 ## <a name="troubleshoot"></a>Solucionar problemas  
 **Problema**: você já tiver criptografado o seu dispositivo e
 
 - O botão de criptografia está desabilitado.
 - Uma mensagem dizendo que você ainda precisa criptografá-lo é exibida.
-- Você recebe erros ao tentar usar o aplicativo do Portal da Empresa.
+- Você obtiver erros ao tentar usar o aplicativo de Portal da empresa ou o Microsoft Intune.
 
 **Ações recomendadas**
 

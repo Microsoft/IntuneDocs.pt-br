@@ -17,25 +17,25 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 45f93416a8fd6190549a958f1b1a7e5f3bdf6df1
-ms.sourcegitcommit: 916fed64f3d173498a2905c7ed8d2d6416e34061
+ms.openlocfilehash: 2b1fe488ed7d295a40b42c1fb17a76693004be4d
+ms.sourcegitcommit: bccfbf1e3bdc31382189fc4489d337d1a554e6a1
 ms.translationtype: MTE75
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/23/2019
-ms.locfileid: "66045311"
+ms.lasthandoff: 07/03/2019
+ms.locfileid: "67547928"
 ---
 # <a name="reference-for-devices-entities"></a>Referência para entidades de dispositivos
 
 A categoria **Dispositivos** contém entidades para dispositivos móveis que rastreiam informações como:
 
-  -  Tipo de dispositivo
-  -  Status de registro e registro do dispositivo
-  -  Propriedade do dispositivo
-  -  Estado de gerenciamento de dispositivo
-  -  Status de associação de dispositivo para Azure AD
-  -  Status do registro
-  -  Informações históricas sobre o dispositivo
-  -  Inventário de aplicativos no dispositivo
+  - Tipo de dispositivo
+  - Status de registro e registro do dispositivo
+  - Propriedade do dispositivo
+  - Estado de gerenciamento de dispositivo
+  - Status de associação de dispositivo para Azure AD
+  - Status do registro
+  - Informações históricas sobre o dispositivo
+  - Inventário de aplicativos no dispositivo
 
 ## <a name="devicetypes"></a>DeviceTypes
 
@@ -269,7 +269,7 @@ A entidade **DevicePropertyHistory** tem as mesmas propriedades que a tabela de 
 |          Propriedade          |                                                                                      Descrição                                                                                     |
 |:--------------------------:|:------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------:|
 | DateKey                    | Referência à tabela de data que indica o dia.                                                                                                                                          |
-| DeviceKey                  | Identificador exclusivo do dispositivo no data warehouse – chave substituta. Esta é uma referência à tabela Dispositivo que contém a ID do dispositivo do Intune.                               |
+| DeviceKey                  | O identificador exclusivo do dispositivo no data warehouse – chave alternativa. Esta é uma referência à tabela Dispositivo que contém a ID do dispositivo do Intune.                               |
 | DeviceName                 | Nome do dispositivo em plataformas que permitem a nomeação de um dispositivo. Em outras plataformas, o Intune cria um nome de outras propriedades. Esse atributo pode não estar disponível para todos os dispositivos. |
 | DeviceRegistrationStateKey | A chave do atributo de estado do registro do dispositivo.                                                                                                                    |
 | OwnerTypeKey               | A chave do atributo de tipo de proprietário para este dispositivo: corporativo, pessoal ou desconhecido.                                                                                                  |

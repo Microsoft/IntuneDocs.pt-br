@@ -5,7 +5,7 @@ keywords: ''
 author: lenewsad
 ms.author: lanewsad
 manager: dougeby
-ms.date: 01/09/2019
+ms.date: 04/19/2019
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -18,12 +18,12 @@ ms.reviewer: chrisbal
 ms.suite: ems
 ms.custom: intune-enduser
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 3ba4ca5ccc9083f2132a8b8893c3bc2070ed3c50
-ms.sourcegitcommit: 25e6aa3bfce58ce8d9f8c054bc338cc3dff4a78b
+ms.openlocfilehash: efcb622681e4f3b3fba7b686551cca7db6bb4c3a
+ms.sourcegitcommit: bccfbf1e3bdc31382189fc4489d337d1a554e6a1
 ms.translationtype: MTE75
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "55841327"
+ms.lasthandoff: 07/03/2019
+ms.locfileid: "67546028"
 ---
 # <a name="use-managed-apps-on-your-android-device"></a>Usar aplicativos gerenciados no seu dispositivo Android
 Aplicativos gerenciados são configurados para atender aos requisitos de segurança da sua organização e proteger os dados corporativos e de estudante. Esses aplicativos são disponibilizados para você em seu dispositivo para instalar ou usar automaticamente. 
@@ -45,25 +45,25 @@ Quando você acessar dados de estudante ou corporativos em um aplicativo gerenci
 ## <a name="commonly-managed-apps"></a>Aplicativos comumente gerenciados  
 Exemplos de aplicativos gerenciados normalmente exigidos ou disponíveis em escolas e locais de trabalho são:
 
--   Microsoft Edge
+- Microsoft Edge
 
--   Microsoft Outlook
+- Microsoft Outlook
 
--   Microsoft Word, Excel e PowerPoint
+- Microsoft Word, Excel e PowerPoint
 
 ## <a name="how-do-i-get-managed-apps"></a>Como obtenho os aplicativos gerenciados?
-Primeiro, você precisará instalar o Portal da Empresa e, se necessário, ter seu dispositivo gerenciado. Depois disso, há três maneiras de obter aplicativos gerenciados.
-* Sua organização instala automaticamente os aplicativos para seu dispositivo no momento do registro. Para saber mais sobre registrar-se, confira [Registrar seu dispositivo no Intune](enroll-your-device-in-Intune-android.md).
-* Sua organização disponibiliza aplicativos gerenciados para você no Portal da Empresa. Vá para o aplicativo ou site Portal da Empresa para pesquisar, exibir e instalar esses aplicativos. 
-* Você instala um aplicativo da Google Play Store, então entra no aplicativo com sua conta corporativa ou de estudante.  
+Há três maneiras de obter aplicativos gerenciados.  
+* Sua organização instala automaticamente os aplicativos para seu dispositivo no momento do registro.  
+* Você instala um aplicativo da Google Play Store, então entra no aplicativo com sua conta corporativa ou de estudante.    
+* Sua organização disponibiliza aplicativos gerenciados para você no Portal da Empresa. Vá até o aplicativo ou site do Portal da Empresa para pesquisar, exibir e instalar os aplicativos disponíveis. Para obter mais informações sobre esses aplicativos, consulte a próxima seção, [aplicativos disponíveis](#available-apps).  
 
- ## <a name="available-apps"></a>Aplicativos disponíveis   
- Sua organização seleciona aplicativos que são apropriados e úteis para você no trabalho ou na escola. Esses aplicativos são os únicos que você encontrará no Portal da Empresa.   
+### <a name="available-apps"></a>Aplicativos disponíveis   
+ Sua organização pode selecionar os aplicativos que são apropriadas e úteis para você no trabalho ou escola e torná-los disponíveis para você no Portal da empresa.  
 
  Os aplicativos também são disponibilizados para você com base no tipo de dispositivo. Por exemplo, se estiver usando o aplicativo Portal da Empresa para Android, você terá acesso aos aplicativos do Android, mas não aos aplicativos do iOS.   
 
- ## <a name="request-an-app-for-work-or-school"></a>Solicitar um aplicativo para uso corporativo ou de estudante   
- Caso precise de um aplicativo que não está listado no Portal da Empresa, solicite-o. Encontre os detalhes de contato da **Assistência técnica** na guia **Contatar TI** do aplicativo Portal da Empresa. Você encontrará as mesmas informações de contato no [site do Portal da Empresa](https://go.microsoft.com/fwlink/?linkid=2010980).   
+## <a name="request-an-app-for-work-or-school"></a>Solicitar um aplicativo para uso corporativo ou de estudante   
+ Caso precise de um aplicativo que não está listado no Portal da Empresa, solicite-o. Localizar detalhes de contato para seus **suporte técnico** em qualquer aplicativo **contatar TI** guia. Você encontrará as mesmas informações de contato no [site do Portal da Empresa](https://go.microsoft.com/fwlink/?linkid=2010980).   
 
 ## <a name="what-can-my-company-support-manage-in-an-app"></a>O que o suporte da minha empresa pode gerenciar em um aplicativo?  
 A lista a seguir descreve as configurações de que o suporte da sua empresa pode gerenciar dentro de um aplicativo. Essas configurações afetam como você exibe, acessa e usa de outras formas dados de estudante ou corporativos no seu dispositivo:

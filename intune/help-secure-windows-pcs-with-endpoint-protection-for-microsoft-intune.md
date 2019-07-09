@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic-keep
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: c19c02c8d4c9ece66d03b3510071bb90e7f35ad3
-ms.sourcegitcommit: 916fed64f3d173498a2905c7ed8d2d6416e34061
+ms.openlocfilehash: e9b32b7b7bc3bfa7735a7e4437e8238630e56884
+ms.sourcegitcommit: bccfbf1e3bdc31382189fc4489d337d1a554e6a1
 ms.translationtype: MTE75
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/23/2019
-ms.locfileid: "66047509"
+ms.lasthandoff: 07/03/2019
+ms.locfileid: "67548772"
 ---
 # <a name="help-secure-windows-pcs-with-endpoint-protection-for-microsoft-intune"></a>Ajudar a proteger computadores Windows com o Endpoint Protection para Microsoft Intune
 
@@ -46,15 +46,15 @@ Como administrador de TI, uma das suas principais prioridades é manter os compu
 
 Para alternar de seu aplicativo Endpoint Protection atual ao Endpoint Protection do Microsoft Intune, faça o seguinte:
 
-1.  Deixe seu aplicativo Endpoint Protection atual em execução enquanto você implanta o software cliente do Intune nos computadores.
+1. Deixe seu aplicativo Endpoint Protection atual em execução enquanto você implanta o software cliente do Intune nos computadores.
 
-2.  Confirme se o Endpoint Protection do Microsoft Intune está instalado e se está ajudando a proteger os computadores cliente.
+2. Confirme se o Endpoint Protection do Microsoft Intune está instalado e se está ajudando a proteger os computadores cliente.
 
-3.  Remova o software de proteção de ponto de extremidade de terceiros por meio de um dos procedimentos a seguir:
+3. Remova o software de proteção de ponto de extremidade de terceiros por meio de um dos procedimentos a seguir:
 
-    -   Uso da distribuição de software do Intune para implantar uma ferramenta de remoção de software que é fornecida pelo fabricante do aplicativo Endpoint Protection de terceiros. Para obter mais informações, consulte [Deploy apps with Microsoft Intune](apps-deploy.md) (Implantar aplicativos com o Microsoft Intune).
+    - Uso da distribuição de software do Intune para implantar uma ferramenta de remoção de software que é fornecida pelo fabricante do aplicativo Endpoint Protection de terceiros. Para obter mais informações, consulte [Deploy apps with Microsoft Intune](apps-deploy.md) (Implantar aplicativos com o Microsoft Intune).
 
-    -   Removendo manualmente o aplicativo de proteção de ponto de extremidade de terceiros.
+    - Removendo manualmente o aplicativo de proteção de ponto de extremidade de terceiros.
 
 > [!NOTE]
 > O Intune não desinstalará aplicativos Endpoint Protection de terceiros.
@@ -62,9 +62,9 @@ Para alternar de seu aplicativo Endpoint Protection atual ao Endpoint Protection
 ## <a name="configure-microsoft-intune-endpoint-protection"></a>Configurar o Microsoft Intune Endpoint Protection
 Use as etapas a seguir para ajudá-lo a configurar o Endpoint Protection para o Microsoft Intune.
 
-1.  No [console de administração do Microsoft Intune](https://manage.microsoft.com/), escolha **Política** > **Adicionar Política**.
+1. No [console de administração do Microsoft Intune](https://manage.microsoft.com/), escolha **Política** > **Adicionar Política**.
 
-2.  Expanda **Gerenciamento do computador** e selecione **Configurações de Agente do Microsoft Intune**. Selecione **Criar e Implantar uma Política Personalizada** para especificar a política para as configurações do Endpoint Protection. Escolha o botão **Criar Política**.
+2. Expanda **Gerenciamento do computador** e selecione **Configurações de Agente do Microsoft Intune**. Selecione **Criar e Implantar uma Política Personalizada** para especificar a política para as configurações do Endpoint Protection. Escolha o botão **Criar Política**.
 
 É possível usar as configurações recomendadas ou personalizá-las. Se você precisar de mais informações sobre como criar e implantar políticas, consulte o tópico [Tarefas comuns de gerenciamento de computadores Windows com o cliente de software do Microsoft Intune](common-windows-pc-management-tasks-with-the-microsoft-intune-computer-client.md).
 

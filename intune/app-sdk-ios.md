@@ -16,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: ''
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 4877920821b2471f752f9fdb8941e87576d937ba
-ms.sourcegitcommit: 9c06d8071b9affeda32e367bfe85d89bc524ed0b
+ms.openlocfilehash: 9ec0ab28f2b32cf3c60d6d674cfac5a5b21d094d
+ms.sourcegitcommit: cb4e71cd48311ea693001979ee59f621237a6e6f
 ms.translationtype: MTE75
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/27/2019
-ms.locfileid: "67413856"
+ms.lasthandoff: 07/03/2019
+ms.locfileid: "67558413"
 ---
 # <a name="microsoft-intune-app-sdk-for-ios-developer-guide"></a>Guia do desenvolvedor do SDK de Aplicativos do Microsoft Intune para iOS
 
@@ -70,6 +70,7 @@ Os Arquivos de Cabeçalho a seguir incluem APIs, tipos de dados e protocolos que
     * IntuneMAMDataProtectionInfo.h
     * IntuneMAMDataProtectionManager.h
     * IntuneMAMDefs.h
+    * IntuneMAMDiagnosticConsole.h
     * IntuneMAMEnrollmentDelegate.h
     * IntuneMAMEnrollmentManager.h
     * IntuneMAMEnrollmentStatus.h
@@ -735,6 +736,10 @@ Sim, o administrador de TI pode enviar um comando de apagamento seletivo para o 
 ### <a name="is-there-a-sample-app-that-demonstrates-how-to-integrate-the-sdk"></a>Há um aplicativo de exemplo que demonstra como integrar o SDK?
 
 Sim. Recentemente, reformulamos nosso aplicativo de exemplo de software livre [Wagr para iOS](https://github.com/Microsoft/Wagr-Sample-Intune-iOS-App). O Wagr agora está habilitado para a política de proteção do aplicativo usando o SDK do Aplicativo do Intune.
+
+### <a name="how-can-i-troubleshoot-my-app"></a>Como posso solucionar meu aplicativo?
+
+O SDK do Intune para iOS 9.0.3+ suporta a capacidade de adicionar um console de diagnóstico dentro do aplicativo móvel para testar as políticas e log de erros. `IntuneMAMDiagnosticConsole.h` Define o `IntuneMAMDiagnosticConsole` interface de classe, que os desenvolvedores podem usar para exibir o console de diagnóstico do Intune. Isso permite que os usuários finais ou os desenvolvedores durante o teste para coletar e compartilhar logs do Intune para ajudar a diagnosticar qualquer problema que eles podem ter. Essa API é opcional para integradores.
 
 ## <a name="submit-your-app-to-the-app-store"></a>Enviar seu aplicativo à App Store
 
