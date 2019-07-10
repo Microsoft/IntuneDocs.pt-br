@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 6ce8d87a653e87a2b9ba91552f6857fdab6bee12
-ms.sourcegitcommit: 916fed64f3d173498a2905c7ed8d2d6416e34061
+ms.openlocfilehash: 28e48d64ba220f75f412ef117a08b07dfd477d06
+ms.sourcegitcommit: bccfbf1e3bdc31382189fc4489d337d1a554e6a1
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/23/2019
-ms.locfileid: "66045986"
+ms.lasthandoff: 07/03/2019
+ms.locfileid: "67549282"
 ---
 # <a name="identify-mobile-device-management-use-case-scenarios"></a>Identificar cenários de casos de uso do gerenciamento de dispositivo móvel
 
@@ -33,9 +33,9 @@ Vejamos alguns exemplos para ajudar sua organização a identificar os cenários
 ## <a name="device-ownership"></a>Propriedade do dispositivo
 Comece consultando as metas e os objetivos de implantação do Intune de sua organização, a fim de ajudar a identificar os principais cenários de casos de uso de sua implantação. Dentro do escopo do plano de implantação do Intune, responda às seguintes perguntas:
 
--   Você planeja dar suporte a dispositivos de propriedade corporativa?
+- Você planeja dar suporte a dispositivos de propriedade corporativa?
 
--   Você planeja dar suporte a dispositivos BYOD (pessoais)?
+- Você planeja dar suporte a dispositivos BYOD (pessoais)?
 
 Elas não são do tipo opções e/ou. Você pode achar necessário dar suporte a ambas as formas de propriedade do dispositivo para atender às suas metas organizacionais. Os subcasos de uso ajudarão a esclarecer os locais em que devem ser aplicadas diferentes políticas de gerenciamento de dispositivos.
 
@@ -43,11 +43,11 @@ Elas não são do tipo opções e/ou. Você pode achar necessário dar suporte a
 
 Determine se cada cenário de caso de uso também inclui subcasos de uso. Por exemplo, sua organização pode ter identificado requisitos para dar suporte a um cenário de caso de uso corporativo que inclui subcasos de uso adicionais com base no tipo de usuário ou na função do dispositivo, como:
 
--   Operador de informações
+- Operador de informações
 
--   Executivo
+- Executivo
 
--   Quiosque
+- Quiosque
 
 Estes são alguns exemplos de cenários de casos de uso e subcasos de uso:
 

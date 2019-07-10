@@ -16,12 +16,12 @@ ms.reviewer: jeffbu, cgerth
 ms.suite: ems
 search.appverid: MET150
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: a8e8e0f440377f40937145d78d3959318c21e6e5
-ms.sourcegitcommit: 4b83697de8add3b90675c576202ef2ecb49d80b2
+ms.openlocfilehash: e3ed61f556cadf3ba04f7c33fbede2102c94b18f
+ms.sourcegitcommit: bccfbf1e3bdc31382189fc4489d337d1a554e6a1
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/13/2019
-ms.locfileid: "67046310"
+ms.lasthandoff: 07/03/2019
+ms.locfileid: "67549318"
 ---
 # <a name="additional-resources-for-planning-your-intune-deployment"></a>Recursos adicionais para planejar a implantação do Intune
 
@@ -50,12 +50,12 @@ Esta é uma lista de modelos de tabela para cada seção.
 
 Confira estes recursos para obter mais informações que podem ser úteis durante o processo de planejamento da implantação, design e implementação do Intune.
 
--   [Documentação do Microsoft Intune](/intune/) – o conjunto completo da documentação do Intune.
+- [Documentação do Microsoft Intune](/intune/) – o conjunto completo da documentação do Intune.
 
--   [Blog do Intune](https://blogs.technet.microsoft.com/enterprisemobility/) – postagens para ajudá-lo a entender como o Intune se adapta ao panorama mais amplo do Enterprise Mobility.
+- [Blog do Intune](https://blogs.technet.microsoft.com/enterprisemobility/) – postagens para ajudá-lo a entender como o Intune se adapta ao panorama mais amplo do Enterprise Mobility.
 
--   [Central de Confiabilidade da Microsoft](http://www.microsoft.com/TrustCenter) – saiba mais sobre a abordagem da Microsoft em relação à segurança, privacidade, conformidade e transparência em todos os produtos e serviços de nuvem da Microsoft.
+- [Central de Confiabilidade da Microsoft](http://www.microsoft.com/TrustCenter) – saiba mais sobre a abordagem da Microsoft em relação à segurança, privacidade, conformidade e transparência em todos os produtos e serviços de nuvem da Microsoft.
 
--   [UserVoice do Intune](http://microsoftintune.uservoice.com/) – deseja solicitar um recurso ou votar em recursos com outros clientes? Forneça comentários sobre o Intune por meio do UserVoice. Estamos aqui para ouvi-lo.
+- [UserVoice do Intune](http://microsoftintune.uservoice.com/) – deseja solicitar um recurso ou votar em recursos com outros clientes? Forneça comentários sobre o Intune por meio do UserVoice. Estamos aqui para ouvi-lo.
 
--   [Guia de registro](https://gallery.technet.microsoft.com/Intune-End-User-Enrollment-3a0c9b0c?WT.mc_id=Blog_Intune_General_PCIT) – um conjunto de documentos que você pode usar no estado em que se encontram ou modificar como parte de seu plano de comunicação com os usuários finais para ajudá-los a entender o que significa ter seus dispositivos pessoais registrados no Intune.
+- [Guia de registro](https://gallery.technet.microsoft.com/Intune-End-User-Enrollment-3a0c9b0c?WT.mc_id=Blog_Intune_General_PCIT) – um conjunto de documentos que você pode usar no estado em que se encontram ou modificar como parte de seu plano de comunicação com os usuários finais para ajudá-los a entender o que significa ter seus dispositivos pessoais registrados no Intune.

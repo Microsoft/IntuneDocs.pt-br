@@ -17,12 +17,12 @@ ms.reviewer: ''
 ms.suite: ems
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: da6c9b544d86c9c4b09c061c0f1500ed8612a047
-ms.sourcegitcommit: 7315fe72b7e55c5dcffc6d87f185f3c2cded9028
+ms.openlocfilehash: e7ff4e1fd9f055268a461d1a81b8a2e31fe3d32b
+ms.sourcegitcommit: bccfbf1e3bdc31382189fc4489d337d1a554e6a1
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/02/2019
-ms.locfileid: "67530713"
+ms.lasthandoff: 07/03/2019
+ms.locfileid: "67548986"
 ---
 # <a name="tutorial-configure-slack-to-use-intune-for-emm-and-app-configuration"></a>Tutorial: Configurar o Slack para usar o Intune para EMM e configuração de aplicativos
 
@@ -62,8 +62,8 @@ Adicione o Slack para EMM como um aplicativo gerenciado para iOS no Intune e atr
 6. Na barra de pesquisa, digite "Slack para EMM" e selecione o aplicativo que você acabou de adicionar.
 7. Em Gerenciar, selecione **Atribuições**.
 8. Selecione **Adicionar grupo**. Dependendo do que você escolheu que seria afetado quando você ativasse o EMM para Slack, em **Tipo de atribuição**, selecione:
-    -  **Disponível para dispositivos registrados** se você tiver escolhido "Todos os membros (inclusive convidados)" OU
-    -  **Disponível com ou sem registro** se você tiver escolhido "Todos os membros (exceto os convidados)" ou "Opcional".
+    - **Disponível para dispositivos registrados** se você tiver escolhido "Todos os membros (inclusive convidados)" OU
+    - **Disponível com ou sem registro** se você tiver escolhido "Todos os membros (exceto os convidados)" ou "Opcional".
 9. Selecione **Grupos Incluídos** e em Tornar este aplicativo disponível para todos os usuários, selecione **Sim**.
 10. Clique em **OK** e em **OK** novamente.
 11. Clique em **Salvar**.
@@ -77,7 +77,7 @@ Adicione uma política de configuração do aplicativo para Slack para EMM para 
 5. Selecione **Aplicativo associado**.
 6. Na barra de pesquisa, digite "Slack para EMM" e selecione o aplicativo.
 7. Clique em **OK** e, em seguida, selecione **Parâmetros de configuração**. 
-    -   Para saber mais sobre chaves de configuração e seus valores, confira a documentação na guia "Técnico" da [página da Web AppConfig do Slack](https://www.appconfig.org/company/slack/).
+    - Para saber mais sobre chaves de configuração e seus valores, confira a documentação na guia "Técnico" da [página da Web AppConfig do Slack](https://www.appconfig.org/company/slack/).
 8. Selecione **OK** e **Adicionar**.
 9. Na barra de pesquisa, digite "Teste de política de configuração do aplicativo Slack" e selecione a política que você acabou de adicionar.
 10. Em Gerenciar, selecione **Atribuições**.
@@ -92,13 +92,13 @@ Definir uma política de conformidade do Intune para dispositivos a fim de defin
 4. Em Plataforma, selecione **iOS**.
 5. Selecione **Integridade do Dispositivo**. Próximo a Dispositivos com jailbreak, selecione **Bloquear** e, em seguida, selecione **OK**.
 6. Selecione **Segurança do Sistema** e insira as configurações de Senha. Para este tutorial, selecione as seguintes configurações recomendadas:
-    -   Em Exigir uma senha para desbloquear os dispositivos móveis, selecione **Exigir**.
-    -   Em Senhas simples, selecione **Bloquear**.
-    -   Em Tamanho mínimo da senha, insira 4.
-    -   Em Tipo de senha obrigatório, escolha **Alfanumérica**.
-    -   Em Máximo de minutos após o bloqueio de tela antes que a senha seja necessária, escolha **Imediatamente**.
-    -   Em Expiração de senha (dias), insira 41.
-    -   Em Número de senhas anteriores para evitar a reutilização, insira 5.
+    - Em Exigir uma senha para desbloquear os dispositivos móveis, selecione **Exigir**.
+    - Em Senhas simples, selecione **Bloquear**.
+    - Em Tamanho mínimo da senha, insira 4.
+    - Em Tipo de senha obrigatório, escolha **Alfanumérica**.
+    - Em Máximo de minutos após o bloqueio de tela antes que a senha seja necessária, escolha **Imediatamente**.
+    - Em Expiração de senha (dias), insira 41.
+    - Em Número de senhas anteriores para evitar a reutilização, insira 5.
 7. Clique em **OK** e em **OK** novamente.
 8. Clique em **Criar**.
 
@@ -114,8 +114,8 @@ Adicione o aplicativo Slack como um aplicativo gerenciado do Google Play no Intu
 5. Na barra de pesquisa, digite "Slack" e selecione o aplicativo que você acabou de adicionar.
 6. Em Gerenciar, selecione **Atribuições**.
 7. Selecione **Adicionar grupo**. Dependendo do que você escolheu que seria afetado quando você ativasse o EMM para Slack, em **Tipo de atribuição**, selecione:
-    -   **Disponível para dispositivos registrados** se você tiver escolhido "Todos os membros (inclusive convidados)" OU
-    -   **Disponível com ou sem registro** se você tiver escolhido "Todos os membros (exceto os convidados)" ou "Opcional".
+    - **Disponível para dispositivos registrados** se você tiver escolhido "Todos os membros (inclusive convidados)" OU
+    - **Disponível com ou sem registro** se você tiver escolhido "Todos os membros (exceto os convidados)" ou "Opcional".
 8. Selecione Grupos Incluídos e em Tornar este aplicativo disponível para todos os usuários, selecione **Sim**.
 9. Clique em **OK** e em **OK** novamente.
 10. Clique em **Salvar**.
@@ -129,7 +129,7 @@ Adicione uma política de configuração do aplicativo para Slack. As políticas
 5. Selecione **Aplicativo associado**.
 6. Na barra de pesquisa, digite "Slack" e selecione o aplicativo.
 7. Selecione **OK** e, em seguida, selecione **Parâmetros de configuração**.
-    -   Para saber mais sobre chaves de configuração e seus valores, confira a documentação na guia "Técnico" da [página da Web AppConfig do Slack](https://www.appconfig.org/company/slack/).
+    - Para saber mais sobre chaves de configuração e seus valores, confira a documentação na guia "Técnico" da [página da Web AppConfig do Slack](https://www.appconfig.org/company/slack/).
 8. Clique em **OK** e em **Adicionar**.
 9. Na barra de pesquisa, digite "Teste de política de configuração do aplicativo Slack" e selecione a política que você acabou de adicionar.
 10. Em Gerenciar, selecione **Atribuições**.
@@ -145,12 +145,12 @@ Definir uma política de conformidade do Intune para dispositivos a fim de defin
 5. Em Tipo de perfil, selecione **Perfil de trabalho**.
 6. Selecione **Integridade do Dispositivo**. Ao lado de Dispositivos desbloqueados, selecione **Bloquear** e, em seguida, selecione **OK**.
 7. Selecione **Segurança do Sistema** e insira as configurações de **Senha**. Para este tutorial, selecione as seguintes configurações recomendadas:
-    -   Em Exigir uma senha para desbloquear os dispositivos móveis, selecione **Exigir**.
-    -   Em Tipo de senha obrigatório, selecione **Ao menos alfanumérico**.
-    -   Em Tamanho mínimo da senha, insira 4.
-    -   Em Máximo de minutos após o bloqueio de tela antes que a senha seja necessária, escolha **15 minutos**.
-    -   Em Expiração de senha (dias), insira 41.
-    -   Em Número de senhas anteriores para evitar a reutilização, insira 5.
+    - Em Exigir uma senha para desbloquear os dispositivos móveis, selecione **Exigir**.
+    - Em Tipo de senha obrigatório, selecione **Ao menos alfanumérico**.
+    - Em Tamanho mínimo da senha, insira 4.
+    - Em Máximo de minutos após o bloqueio de tela antes que a senha seja necessária, escolha **15 minutos**.
+    - Em Expiração de senha (dias), insira 41.
+    - Em Número de senhas anteriores para evitar a reutilização, insira 5.
 8. Clique em **OK** e em **OK** novamente.
 9. Clique em **Criar**.
 
