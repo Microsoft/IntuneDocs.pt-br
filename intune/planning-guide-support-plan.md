@@ -17,24 +17,24 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 64349d2e4c681bf0fac8cf231085cc63e42ffc62
-ms.sourcegitcommit: 916fed64f3d173498a2905c7ed8d2d6416e34061
+ms.openlocfilehash: c654b8e05cabf132324e8dafe70e5991a67bd516
+ms.sourcegitcommit: bccfbf1e3bdc31382189fc4489d337d1a554e6a1
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/23/2019
-ms.locfileid: "66041473"
+ms.lasthandoff: 07/03/2019
+ms.locfileid: "67548323"
 ---
 # <a name="develop-a-support-plan"></a>Desenvolver um plano de suporte
 
 Ter um plano de suporte do Intune pode ajudar a identificar e resolver problemas relacionados ao Intune com mais eficácia. Isso, por sua vez, melhora a experiência geral dos usuários do Intune. Estas são algumas perguntas a serem consideradas ao desenvolver o plano de suporte do Intune:
 
--   Quais equipes serão responsáveis por fornecer suporte do Intune?
+- Quais equipes serão responsáveis por fornecer suporte do Intune?
 
--   Qual processo será usado para fornecer suporte do Intune?
+- Qual processo será usado para fornecer suporte do Intune?
 
--   Como você planeja fornecer treinamento de suporte do Intune?
+- Como você planeja fornecer treinamento de suporte do Intune?
 
--   Quais são as oportunidades para envolver a equipe de suporte no início do processo de implantação do Intune?
+- Quais são as oportunidades para envolver a equipe de suporte no início do processo de implantação do Intune?
 
 Vamos examinar cada área mais detalhadamente.
 
@@ -50,23 +50,23 @@ Saiba mais sobre o [suporte do Intune](/intune/get-support).
 
 Para as fases iniciais de distribuição de produção, todas as três camadas podem participar de uma teleconferência ou chamada por Skype. Aqui temos um exemplo de como uma organização poderá implementar seus fluxos de trabalho de suporte de TI ou assistência técnica:
 
-1.  O usuário final contata a camada 1 de suporte de TI ou assistência técnica com um problema de registro.
+1. O usuário final contata a camada 1 de suporte de TI ou assistência técnica com um problema de registro.
 
-2.  A camada 1 de suporte de TI ou assistência técnica não consegue determinar a causa raiz e escala o problema para a camada 2.
+2. A camada 1 de suporte de TI ou assistência técnica não consegue determinar a causa raiz e escala o problema para a camada 2.
 
-3.  A camada 2 de suporte de TI ou assistência técnica investiga o problema, mas não consegue resolvê-lo e o escala para a camada 3, fornecendo mais informações para ajudar com a investigação.
+3. A camada 2 de suporte de TI ou assistência técnica investiga o problema, mas não consegue resolvê-lo e o escala para a camada 3, fornecendo mais informações para ajudar com a investigação.
 
-4.  A camada 3 de suporte técnico ou de TI investiga com mais detalhes, determina a causa raiz e comunica a resolução para as camadas 1 e 2.
+4. A camada 3 de suporte técnico ou de TI investiga com mais detalhes, determina a causa raiz e comunica a resolução para as camadas 1 e 2.
 
-5.  Em seguida, a camada 1 de suporte de TI/assistência técnica contata o cliente e resolve o problema.
+5. Em seguida, a camada 1 de suporte de TI/assistência técnica contata o cliente e resolve o problema.
 
 Esse tipo de abordagem, especialmente nos estágios iniciais da distribuição do Intune, traz várias vantagens, incluindo:
 
--   Auxiliar no aprendizado e incremento da tecnologia.
+- Auxiliar no aprendizado e incremento da tecnologia.
 
--   Identificar rapidamente os problemas e a resolução.
+- Identificar rapidamente os problemas e a resolução.
 
--   Melhorar a experiência geral do usuário.
+- Melhorar a experiência geral do usuário.
 
 ## <a name="how-you-plan-to-provide-intune-support-training"></a>Como você planeja fornecer treinamento de suporte do Intune?
 
@@ -74,15 +74,15 @@ Esse tipo de abordagem, especialmente nos estágios iniciais da distribuição d
 
 Um exemplo de uma agenda de treinamento de suporte do Intune é fornecida abaixo.
 
--   Análise do plano de suporte do Intune
+- Análise do plano de suporte do Intune
 
--   Visão geral do Intune
+- Visão geral do Intune
 
--   Solução de problemas comuns
+- Solução de problemas comuns
 
--   Ferramentas e recursos
+- Ferramentas e recursos
 
--   Perguntas e Respostas
+- Perguntas e Respostas
 
 A [Documentação do Intune](https://docs.microsoft.com/intune/) fornece uma visão geral do Intune, descrições detalhadas dos recurso e algumas informações de solução de problemas. O [Fórum do Intune](https://social.technet.microsoft.com/Forums/home) é um recurso baseado na comunidade para dúvidas e tópicos não abordados na documentação do Intune.
 

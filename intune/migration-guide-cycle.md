@@ -16,12 +16,12 @@ ms.reviewer: dagerrit
 ms.suite: ems
 search.appverid: MET150
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 87e5ac06e93027b577d42b27e7d15b9b18e11020
-ms.sourcegitcommit: 4b83697de8add3b90675c576202ef2ecb49d80b2
+ms.openlocfilehash: 30e104d82580a5a0b6b01edb0eaade0673b33d83
+ms.sourcegitcommit: bccfbf1e3bdc31382189fc4489d337d1a554e6a1
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/13/2019
-ms.locfileid: "67046357"
+ms.lasthandoff: 07/03/2019
+ms.locfileid: "67548392"
 ---
 # <a name="typical-migration-cycle"></a>Ciclo de migração típico
 
@@ -55,9 +55,9 @@ O Intune fornece várias maneiras de monitorar a migração:
 
 Controle quantos usuários registraram dispositivos após cada fase para que você possa:
 
--   Avaliar a eficiência de seu plano de comunicação.
+- Avaliar a eficiência de seu plano de comunicação.
 
--   Estimar o impacto da aplicação do acesso condicional.
+- Estimar o impacto da aplicação do acesso condicional.
 
 
 ## <a name="post-migration"></a>Pós-migração

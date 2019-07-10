@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure; seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: ef0c4f5fd3f8c92d1d78ed37946663a127df440f
-ms.sourcegitcommit: 7315fe72b7e55c5dcffc6d87f185f3c2cded9028
+ms.openlocfilehash: f9438c3c566dc62acfa7567428ebe3a6a6be4777
+ms.sourcegitcommit: ede86a3cb094c12e3e218b956abb9935bec76902
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/02/2019
-ms.locfileid: "67530682"
+ms.lasthandoff: 07/05/2019
+ms.locfileid: "67572573"
 ---
 # <a name="check-point-sandblast-mobile-threat-defense-connector-with-intune"></a>Conector da Defesa contra Ameaças Móveis do Check Point SandBlast com o Intune
 
@@ -45,11 +45,11 @@ Confira alguns cenários comuns:
 
 Quando aplicativos mal-intencionados, como malwares, são detectados nos dispositivos, é possível bloquear os dispositivos até que a ameaça seja resolvida:
 
--   Conectar-se ao email corporativo
+- Conectar-se ao email corporativo
 
--   Sincronizar arquivos corporativos com o aplicativo OneDrive for Work
+- Sincronizar arquivos corporativos com o aplicativo OneDrive for Work
 
--   Acessar aplicativos da empresa
+- Acessar aplicativos da empresa
 
 **Bloquear quando aplicativos mal-intencionados forem detectados:**
 
@@ -61,7 +61,7 @@ Quando aplicativos mal-intencionados, como malwares, são detectados nos disposi
 
 ### <a name="control-access-based-on-threat-to-network"></a>Controlar o acesso com base em ameaças à rede
 
-Detecte ameaças como  **Man-in-the-middle**  na rede e proteja o acesso a redes Wi-Fi com base no risco do dispositivo.
+Detecta ameaças como **Man-in-the-middle** na rede e protege o acesso a redes Wi-Fi com base no risco do dispositivo.
 
 **Bloquear o acesso à rede por meio de Wi-Fi:**
 
@@ -73,7 +73,7 @@ Detecte ameaças como  **Man-in-the-middle**  na rede e proteja o acesso a red
 
 ### <a name="control-access-to-sharepoint-online-based-on-threat-to-network"></a>Controlar o acesso ao SharePoint Online com base em ameaças à rede
 
-Detecte ameaças como  **Man-in-the-middle**  na rede e impeça a sincronização de arquivos corporativos com base no risco do dispositivo.
+Detectar ameaças como **Man-in-the-middle** na rede e impede a sincronização de arquivos corporativos com base no risco ao dispositivo.
 
 **Bloquear o SharePoint Online quando ameaças à rede forem detectadas:**
 
@@ -85,18 +85,18 @@ Detecte ameaças como  **Man-in-the-middle**  na rede e impeça a sincronizaç
 
 ## <a name="supported-platforms"></a>Plataformas com Suporte
 
--   **Android 4.1 e posterior**
+- **Android 4.1 e posterior**
 
--   **iOS 8 e posterior**
+- **iOS 8 e posterior**
 
 ## <a name="pre-requisites"></a>Pré-requisitos
 
--   Azure Active Directory Premium
+- Azure Active Directory Premium
 
--   Assinatura do Microsoft Intune
+- Assinatura do Microsoft Intune
 
--   Assinatura do Check Point SandBlast Mobile para Defesa contra Ameaças Móveis
-    -   Consulte o [site do CheckPoint SandBlast](https://www.checkpoint.com/) para obter mais informações.
+- Assinatura do Check Point SandBlast Mobile para Defesa contra Ameaças Móveis
+    - Consulte o [site do CheckPoint SandBlast](https://www.checkpoint.com/) para obter mais informações.
 
 ## <a name="next-steps"></a>Próximas etapas
 

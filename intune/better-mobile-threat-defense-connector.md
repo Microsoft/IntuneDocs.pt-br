@@ -14,12 +14,12 @@ ms.technology: ''
 ms.assetid: ''
 search.appverid: MET150
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: b8134b9db0e478efa69391edeb570b39c91a41c9
-ms.sourcegitcommit: 84c79ceea27f7411528defc5ee8ba35ae2bf473c
+ms.openlocfilehash: 473de0ae24cb3ee2a9f7fbd84ef78e6c25ef6ce6
+ms.sourcegitcommit: bccfbf1e3bdc31382189fc4489d337d1a554e6a1
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/02/2019
-ms.locfileid: "67511781"
+ms.lasthandoff: 07/03/2019
+ms.locfileid: "67547303"
 ---
 # <a name="better-mobile-threat-defense-connector-with-intune"></a>Conector de Defesa contra Ameaças do Better Mobile com o Intune
 
@@ -41,11 +41,11 @@ Confira alguns cenários comuns.
 
 Quando aplicativos mal-intencionados, como malware, são detectados nos dispositivos, é possível impedir as seguintes ações dos dispositivos até que a ameaça seja resolvida:
 
--   Conectar-se ao email corporativo
+- Conectar-se ao email corporativo
 
--   Sincronizar arquivos corporativos com o aplicativo OneDrive for Work
+- Sincronizar arquivos corporativos com o aplicativo OneDrive for Work
 
--   Acessar aplicativos da empresa
+- Acessar aplicativos da empresa
 
 **Bloquear quando aplicativos mal-intencionados forem detectados:**
 
@@ -81,19 +81,19 @@ Detecta ameaças à rede, como ataques **Man-in-the-middle** e impede a sincroni
 
 ## <a name="supported-platforms"></a>Plataformas com Suporte
 
--   **Android 4.1 e posterior**
+- **Android 4.1 e posterior**
 
--   **iOS 8.0 e posterior**
+- **iOS 8.0 e posterior**
 
 ## <a name="prerequisites"></a>Pré-requisitos
 
--   Azure Active Directory Premium
+- Azure Active Directory Premium
 
--   Assinatura do Microsoft Intune
+- Assinatura do Microsoft Intune
 
--   Assinatura da Defesa contra Ameaças do Better Mobile
+- Assinatura da Defesa contra Ameaças do Better Mobile
 
-    -   Para mais informações, consulte o [site do Better Mobile](https://www.better.mobi/).
+    - Para mais informações, consulte o [site do Better Mobile](https://www.better.mobi/).
 
 ## <a name="next-steps"></a>Próximas etapas
 

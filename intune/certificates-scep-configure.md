@@ -15,12 +15,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 7a952a5aa3de20159247f022d91d3e4302262290
-ms.sourcegitcommit: 116ef72b9da4d114782d4b8dd9f57556c9b01511
+ms.openlocfilehash: 22ce9ace7848ea1535b04ab6f0c0249c970e8c34
+ms.sourcegitcommit: bccfbf1e3bdc31382189fc4489d337d1a554e6a1
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/01/2019
-ms.locfileid: "67494300"
+ms.lasthandoff: 07/03/2019
+ms.locfileid: "67547364"
 ---
 # <a name="configure-and-use-scep-certificates-with-intune"></a>Configurar e usar certificados SCEP com o Intune
 
@@ -429,7 +429,7 @@ Para validar se o serviço está em execução, abra um navegador e insira a URL
         >  - No texto estático da entidade, chaves **{ }** não incluídas em uma variável resolvem um erro. 
         >  - Ao usar uma variável de certificado do dispositivo, coloque a variável entre chaves **{}** .
         >  - `{{FullyQualifiedDomainName}}` funciona somente para dispositivos Windows e unidos ao domínio. 
-        >  -  Ao usar propriedades do dispositivo, como IMEI, número de série e nome de domínio totalmente qualificado no assunto ou SAN para um certificado de dispositivo, esteja ciente de que essas propriedades podem ser falsificadas por uma pessoa com acesso ao dispositivo.
+        >  - Ao usar propriedades do dispositivo, como IMEI, número de série e nome de domínio totalmente qualificado no assunto ou SAN para um certificado de dispositivo, esteja ciente de que essas propriedades podem ser falsificadas por uma pessoa com acesso ao dispositivo.
         >  - O perfil não será instalado no dispositivo se não houver suporte para as variáveis de dispositivo especificadas. Por exemplo, se {{IMEI}} for usado no nome da entidade do perfil SCEP atribuído a um dispositivo que não tem um número IMEI, ocorrerá falha na instalação do perfil. 
 
 
@@ -472,7 +472,7 @@ Para validar se o serviço está em execução, abra um navegador e insira a URL
         >  - No texto estático do SAN, chaves **{ }** , barras verticais **|** e ponto e vírgulas **;** não funcionam. 
         >  - Ao usar uma variável de certificado do dispositivo, coloque a variável entre chaves **{}** .
         >  - `{{FullyQualifiedDomainName}}` funciona somente para dispositivos Windows e unidos ao domínio. 
-        >  -  Ao usar propriedades do dispositivo, como IMEI, número de série e nome de domínio totalmente qualificado no assunto ou SAN para um certificado de dispositivo, esteja ciente de que essas propriedades podem ser falsificadas por uma pessoa com acesso ao dispositivo.
+        >  - Ao usar propriedades do dispositivo, como IMEI, número de série e nome de domínio totalmente qualificado no assunto ou SAN para um certificado de dispositivo, esteja ciente de que essas propriedades podem ser falsificadas por uma pessoa com acesso ao dispositivo.
         >  - O perfil não será instalado no dispositivo se não houver suporte para as variáveis de dispositivo especificadas. Por exemplo, se {{IMEI}} for usado no nome alternativo da entidade do perfil SCEP atribuído a um dispositivo que não tem um número IMEI, ocorrerá falha na instalação do perfil.  
 
    - **Período de validade do certificado**: Se você executou o comando `certutil - setreg Policy\EditFlags +EDITF_ATTRIBUTEENDDATE` na AC emissora, que permite um período de validade personalizado, pode inserir a quantidade de tempo restante antes que o certificado expire.<br>Você pode inserir um valor inferior ao período de validade no modelo de certificado, mas não superior. Por exemplo, se o período de validade do certificado em um modelo de certificado for de dois anos, você poderá inserir um valor de um ano, mas não de cinco anos. O valor também tem que ser inferior ao período de validade restante do certificado da AC emissora. 

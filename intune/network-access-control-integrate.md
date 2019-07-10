@@ -16,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 400de55e26076a8d612ac31388d5c5daec68d4a0
-ms.sourcegitcommit: 4b83697de8add3b90675c576202ef2ecb49d80b2
+ms.openlocfilehash: 926d31e226bd25890afe5214b9e8c9247f7316a2
+ms.sourcegitcommit: ede86a3cb094c12e3e218b956abb9935bec76902
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/13/2019
-ms.locfileid: "67044544"
+ms.lasthandoff: 07/05/2019
+ms.locfileid: "67572177"
 ---
 # <a name="network-access-control-nac-integration-with-intune"></a>Integração de NAC (controle de acesso de rede) com o Intune
 
@@ -39,7 +39,7 @@ Se o dispositivo for registrado e estiver em conformidade com o Intune, a soluç
 
 Dispositivos que estão realizando sincronizações ativamente com o Intune não podem mudar de **Em conformidade** / **Não em conformidade** para **Não Sincronizado** (ou **Desconhecido**). O estado **Desconhecido** é reservado para dispositivos recém-registrados que ainda não foram avaliados quanto à conformidade.
 
-Para dispositivos com acesso bloqueado aos recursos, o serviço responsável pelo bloqueio deve redirecionar todos os usuários para o [portal de gerenciamento](https://portal.manage.microsoft.com) a fim de determinar por que o dispositivo está bloqueado.  Se os usuários visitarem essa página, seus dispositivos serão reavaliados sincronicamente para fins de conformidade.
+Para dispositivos com acesso bloqueado aos recursos, o serviço responsável pelo bloqueio deve redirecionar todos os usuários para o [portal de gerenciamento](https://portal.manage.microsoft.com) a fim de determinar por que o dispositivo está bloqueado.  Se os usuários visitarem essa página, seus dispositivos serão reavaliados sincronicamente para fins de conformidade.
 
 ## <a name="nac-and-conditional-access"></a>NAC e Acesso Condicional
 

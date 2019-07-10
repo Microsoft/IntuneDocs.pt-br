@@ -17,24 +17,24 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 57ec922d76ca08639139a7d130fb14c5e8bfa413
-ms.sourcegitcommit: 916fed64f3d173498a2905c7ed8d2d6416e34061
+ms.openlocfilehash: 7e69236f7babc974bca0db32245de2323627e494
+ms.sourcegitcommit: bccfbf1e3bdc31382189fc4489d337d1a554e6a1
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/23/2019
-ms.locfileid: "66046221"
+ms.lasthandoff: 07/03/2019
+ms.locfileid: "67548343"
 ---
 # <a name="develop-a-rollout-communication-plan"></a>Desenvolver um plano de comunicação para distribuição
 
 Um bom gerenciamento de alterações depende de comunicações claras e úteis sobre as alterações futuras. Para facilitar a implantação do Intune, seu plano de comunicação de distribuição deve incluir quatro áreas:
 
--   Quais informações devem ser comunicadas
+- Quais informações devem ser comunicadas
 
--   O método de entrega usado para a comunicação
+- O método de entrega usado para a comunicação
 
--   Quem recebe a comunicação
+- Quem recebe a comunicação
 
--   Linha do tempo da comunicação
+- Linha do tempo da comunicação
 
 Vamos examinar cada área mais detalhadamente.
 
@@ -56,13 +56,13 @@ Este [guia de registro do usuário final](https://gallery.technet.microsoft.com/
 
 Há vários métodos de entrega que podem ser utilizados para comunicar informações sobre a distribuição do Intune aos grupos organizacionais e usuários de destino. A lista a seguir mostra alguns exemplos e a etapa na qual o método pode ser usado:
 
--   Reuniões de toda a organização pessoalmente ou pelo Microsoft Teams usadas para a etapa inicial
+- Reuniões de toda a organização pessoalmente ou pelo Microsoft Teams usadas para a etapa inicial
 
--   Email usado para as ondas pré-registro, registro e pós-registro
+- Email usado para as ondas pré-registro, registro e pós-registro
 
--   Sites da organização usados para todas as ondas
+- Sites da organização usados para todas as ondas
 
--   Yammer, cartazes e folhetos usados para as ondas de início e de pré-registro
+- Yammer, cartazes e folhetos usados para as ondas de início e de pré-registro
 
 ## <a name="communications-timeline"></a>Linha do tempo da comunicação
 

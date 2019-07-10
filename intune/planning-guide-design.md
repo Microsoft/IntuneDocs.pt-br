@@ -17,79 +17,79 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: c279e21abf47d6ec067f3c75b36ecc7b58681e7e
-ms.sourcegitcommit: 4b83697de8add3b90675c576202ef2ecb49d80b2
+ms.openlocfilehash: 02dcaa26e51f3b8c4632aed0fbc87131cc617532
+ms.sourcegitcommit: ede86a3cb094c12e3e218b956abb9935bec76902
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/13/2019
-ms.locfileid: "67044410"
+ms.lasthandoff: 07/05/2019
+ms.locfileid: "67572274"
 ---
 # <a name="create-a-design"></a>Criar um design
 
 O design do Intune se baseia nas informações coletadas e nas decisões tomadas ao concluir as outras [seções deste guia](planning-guide.md). Ele ajuda você a reunir:
 
--   O ambiente atual
+- O ambiente atual
 
--   Opções de implantação do Intune
+- Opções de implantação do Intune
 
--   Requisitos de identidade para dependências externas
+- Requisitos de identidade para dependências externas
 
--   Considerações sobre plataformas de dispositivo
+- Considerações sobre plataformas de dispositivo
 
--   Requisitos para entrega  
+- Requisitos para entrega  
 
 Embora haja requisitos mínimos de infraestrutura local, um plano de design ainda é útil para garantir que você tem a solução de gerenciamento de dispositivo móvel correta, que atende a suas metas, seus objetivos e requisitos.
 
-Vamos examinar cada uma dessas áreas mais detalhadamente. 
+Vamos examinar cada uma dessas áreas mais detalhadamente. 
 
 ## <a name="record-your-current-environment"></a>Registrar o ambiente atual
 Além disso, é comum haver alterações de design durante as fases de teste e implementação. Use o plano de design para documentar essas alterações e o raciocínio por trás delas conforme elas ocorrem.
 
 O ambiente atual pode influenciar as decisões de design e deve ser documentado e referenciado ao tomar outras decisões de design do Intune. Veja abaixo alguns exemplos de como registrar o ambiente atual:
 
--   **Identidade na nuvem**
+- **Identidade na nuvem**
 
-    -   Você usa o DirSync ou o Azure AD (Azure Active Directory) Connect?
+    - Você usa o DirSync ou o Azure AD (Azure Active Directory) Connect?
 
-    -   Seu ambiente é federado?
+    - Seu ambiente é federado?
 
-    -   A MFA (autenticação multifator) está habilitada?
+    - A MFA (autenticação multifator) está habilitada?
 
--   **Ambiente de email**
+- **Ambiente de email**
 
-    -   Você usa o Exchange? Ele está local ou na nuvem?
+    - Você usa o Exchange? Ele está local ou na nuvem?
 
-    -   Você está no meio de um projeto de migração do Exchange para a nuvem?
+    - Você está no meio de um projeto de migração do Exchange para a nuvem?
 
--   **Solução de MDM (gerenciamento de dispositivo móvel) atual**
+- **Solução de MDM (gerenciamento de dispositivo móvel) atual**
 
-    -   Você está usando outras soluções de MDM?
+    - Você está usando outras soluções de MDM?
 
-    -   Quais soluções de MDM estão sendo usadas para os cenários de caso de uso corporativo e BYOD?
+    - Quais soluções de MDM estão sendo usadas para os cenários de caso de uso corporativo e BYOD?
 
-    -   Quais funcionalidades estão sendo usadas (por exemplo, configurações do dispositivo do aplicativo, configurações de Wi-Fi etc.)?
+    - Quais funcionalidades estão sendo usadas (por exemplo, configurações do dispositivo do aplicativo, configurações de Wi-Fi etc.)?
 
-    -   Há suporte para quais plataformas de dispositivo?
+    - Há suporte para quais plataformas de dispositivo?
 
-    -   Quais grupos e quantos usuários estão usando a solução de MDM?
+    - Quais grupos e quantos usuários estão usando a solução de MDM?
 
--   **Solução de certificado**
+- **Solução de certificado**
 
-    -   Você implementou uma solução de certificado?
+    - Você implementou uma solução de certificado?
 
-    -   Quais tipo de certificados são usados?
+    - Quais tipo de certificados são usados?
 
--   **Gerenciamento de sistemas**
+- **Gerenciamento de sistemas**
 
-    -   Como o ambiente de computador e servidor está sendo gerenciado?
+    - Como o ambiente de computador e servidor está sendo gerenciado?
 
-    -   O System Center Configuration Manager está sendo usado? Você está usando uma plataforma de gerenciamento do sistema de terceiros?
+    - O System Center Configuration Manager está sendo usado? Você está usando uma plataforma de gerenciamento do sistema de terceiros?
 
--   **Solução de VPN**
+- **Solução de VPN**
 
-    -   Qual é sua solução de VPN?
+    - Qual é sua solução de VPN?
 
-    -   Ela é usada para cenários de caso de uso corporativo e BYOD?
+    - Ela é usada para cenários de caso de uso corporativo e BYOD?
 
 Lembre-se de observar os projetos ou outros planos em vigor que podem afetar o ambiente ao registrar o ambiente atual de MDM. Veja abaixo um exemplo de uma maneira de registrar o ambiente atual ao criar o design do Intune:
 
@@ -118,11 +118,11 @@ O Intune oferece duas opções de implantação: independente e híbrida. Autôn
 
 Caso sua organização tenha uma presença global, lembre-se de planejar o local em que o locatário reside ao assinar o serviço. O país é definido durante a inscrição para uma assinatura do Intune pela primeira vez e é mapeado para as regiões do mundo listadas abaixo:
 
--   América do Norte
+- América do Norte
 
--   Europa, Oriente Médio e África
+- Europa, Oriente Médio e África
 
--   Ásia e Pacífico
+- Ásia e Pacífico
 
 >[!IMPORTANT]
 > Não é possível alterar o local do país e do locatário posteriormente.
@@ -131,11 +131,11 @@ Caso sua organização tenha uma presença global, lembre-se de planejar o local
 
 Dependências externas são serviços e produtos separados do Intune, mas que são um requisito do Intune ou que podem ser integradas com o Intune. É importante identificar os requisitos de dependências externas e como configurá-las. Alguns exemplos de dependências externas comuns são:
 
--   Identidade
+- Identidade
 
--   Grupos de usuários e de dispositivos
+- Grupos de usuários e de dispositivos
 
--   PKI (infraestrutura de chave pública)
+- PKI (infraestrutura de chave pública)
 
 A seguir, exploraremos mais detalhadamente essas dependências externas comuns.
 
@@ -157,9 +157,9 @@ Grupos de usuários e de dispositivos determinam o destino de uma implantação,
 
 Recomenda-se que todos os grupos sejam criados no Active Directory local e, em seguida, sincronizados com o Azure AD. Saiba mais sobre como planejar e criar os grupos de usuários e de dispositivos:
 
--   [Planejar grupos de usuários e de dispositivos](users-add.md).
+- [Planejar grupos de usuários e de dispositivos](users-add.md).
 
--   [Criar grupos de usuários e de dispositivos](groups-add.md).
+- [Criar grupos de usuários e de dispositivos](groups-add.md).
 
 ### <a name="public-key-infrastructure-pki"></a>PKI (infraestrutura de chave pública)
 A infraestrutura de chave pública fornece certificados para dispositivos ou usuários a fim de autenticar um serviço de forma segura. O Intune dá suporte a uma infraestrutura de PKI da Microsoft. Certificados de usuários e de dispositivos podem ser emitidos para um dispositivo móvel, a fim de atender aos requisitos da autenticação baseada em certificado. Antes de usar certificados, é preciso determinar se eles são necessários, se a infraestrutura de rede pode dar suporte à autenticação baseada em certificado e se os certificados são usados atualmente no ambiente existente.
@@ -170,11 +170,11 @@ Além disso, se certificados SCEP forem emitidos, será necessário determinar q
 
 Saiba mais sobre:
 
--   [Como configurar perfis de certificado do Intune](certificates-configure.md)
+- [Como configurar perfis de certificado do Intune](certificates-configure.md)
 
--   [Como configurar a infraestrutura de certificado para SCEP](certificates-scep-configure.md)
+- [Como configurar a infraestrutura de certificado para SCEP](certificates-scep-configure.md)
 
--   [Como configurar a infraestrutura de certificado para PFX](certficates-pfx-configure.md)
+- [Como configurar a infraestrutura de certificado para PFX](certficates-pfx-configure.md)
 
 
 
@@ -183,13 +183,13 @@ Saiba mais sobre:
 
 Analise os seguintes aspectos dos dispositivos para entender como gerenciá-los corretamente.
 
--   Plataformas de dispositivos com suporte
+- Plataformas de dispositivos com suporte
 
--   Dispositivos
+- Dispositivos
 
--   Propriedade do dispositivo
+- Propriedade do dispositivo
 
--   Registro em massa
+- Registro em massa
 
 Vamos examinar essas áreas mais detalhadamente.
 
@@ -226,17 +226,17 @@ Consulte a [Seção 3: Determinar os requisitos de cenários de caso de uso](pla
 
 Nestas seções, examinaremos os seguintes recursos e funcionalidades que estão alinhados aos requisitos de cenários de caso de uso:
 
--   Políticas de Termos e condições
+- Políticas de Termos e condições
 
--   Políticas de configuração
+- Políticas de configuração
 
--   Perfis de Recursos
+- Perfis de Recursos
 
--   Aplicativos
+- Aplicativos
 
--   Política de conformidade
+- Política de conformidade
 
--   Acesso condicional
+- Acesso condicional
 
 Vamos examinar cada uma dessas áreas mais detalhadamente.
 
@@ -274,13 +274,13 @@ As políticas de configuração são usadas para gerenciar as configurações e 
 
 Os perfis são usados para ajudar o usuário final a se conectar aos dados da empresa. O Intune dá suporte a vários tipos de perfis. Consulte os casos de uso e os requisitos para determinar quando os perfis serão configurados. Todos os perfis de dispositivo são categorizados por tipo de plataforma e devem ser incluídos na documentação do design.
 
--   Perfis de certificado
+- Perfis de certificado
 
--   Perfil de Wi-Fi
+- Perfil de Wi-Fi
 
--   Perfil da VPN
+- Perfil da VPN
 
--   Perfil de email
+- Perfil de email
 
 Vamos examinar cada tipo de perfil mais detalhadamente.
 
@@ -288,11 +288,11 @@ Vamos examinar cada tipo de perfil mais detalhadamente.
 
 Os perfis de certificado permitem que o Intune emita um certificado para um usuário ou dispositivo. O Intune dá suporte ao seguinte:
 
--   Protocolo SCEP
+- Protocolo SCEP
 
--   Certificado Raiz Confiável
+- Certificado Raiz Confiável
 
--   Certificado PFX.
+- Certificado PFX.
 
 É recomendável documentar qual grupo de usuários precisa de um certificado, quantos perfis de certificado serão necessários e em quais grupos de usuários eles serão implantados.
 
@@ -353,27 +353,27 @@ Veja abaixo um exemplo de como documentar o design de perfis de email:
 
 É possível usar o Intune para fornecer aplicativos aos usuários ou dispositivos de diversas maneiras. Os tipos de aplicativos incluem aplicativos do instalador do software, aplicativos de uma loja pública de aplicativos, links externos ou aplicativos iOS gerenciados. Além das implantações de aplicativo individuais, os aplicativos adquiridos por volume podem ser gerenciados e implantados por meio de programas de compra por volume para iOS e Windows. Saiba mais sobre:
 
--   [Os tipos de aplicativos podem ser fornecidos](app-management.md)
+- [Os tipos de aplicativos podem ser fornecidos](app-management.md)
 
--   [iOS VPP (Volume Purchase Program) for Business](vpp-apps-ios.md)
+- [iOS VPP (Volume Purchase Program) for Business](vpp-apps-ios.md)
 
--   [Aplicativos da Microsoft Store para Empresas](windows-store-for-business.md)
+- [Aplicativos da Microsoft Store para Empresas](windows-store-for-business.md)
 
 #### <a name="app-type-requirements"></a>Requisitos de tipo de aplicativo
 
 Como os aplicativos podem ser implantados em usuários e dispositivos, é recomendável decidir quais aplicativos serão gerenciados pelo Intune. Durante a coleta da lista, tente responder às seguintes perguntas:
 
--   Os aplicativos exigem integração com serviços de nuvem?
+- Os aplicativos exigem integração com serviços de nuvem?
 
--   Todos os aplicativos estarão disponíveis para os usuários BYOD?
+- Todos os aplicativos estarão disponíveis para os usuários BYOD?
 
--   Quais são as opções de implantação disponíveis para esses aplicativos?
+- Quais são as opções de implantação disponíveis para esses aplicativos?
 
--   A empresa precisa fornecer acesso a dados de aplicativos SaaS (software como serviço) para seus parceiros?
+- A empresa precisa fornecer acesso a dados de aplicativos SaaS (software como serviço) para seus parceiros?
 
--   Os aplicativos exigem acesso à Internet por meio dos dispositivos do usuário?
+- Os aplicativos exigem acesso à Internet por meio dos dispositivos do usuário?
 
--   Os aplicativos estão disponíveis publicamente em uma loja de aplicativos ou são aplicativos LOB (de linha de negócios) personalizados?
+- Os aplicativos estão disponíveis publicamente em uma loja de aplicativos ou são aplicativos LOB (de linha de negócios) personalizados?
 
 
 #### <a name="app-protection-policies"></a>Políticas de proteção do aplicativo
@@ -407,7 +407,7 @@ O acesso condicional é usado para permitir que apenas os dispositivos em confor
 
 Para o acesso online, decida quais plataformas e grupos de usuários você direcionará por políticas de acesso condicional. Além disso, determine se é necessário instalar ou configurar o conector do Intune para o Exchange local: 
 
--   [Exchange local](exchange-connector-install.md)
+- [Exchange local](exchange-connector-install.md)
 
 Este é um exemplo de como documentar as políticas de acesso condicional:
 

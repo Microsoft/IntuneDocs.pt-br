@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 09e2f88168acd1bc77051df924f756a326a02b21
-ms.sourcegitcommit: 916fed64f3d173498a2905c7ed8d2d6416e34061
+ms.openlocfilehash: 7a369b3bde7967db04a76ae1794d7b8fb86c21e4
+ms.sourcegitcommit: bccfbf1e3bdc31382189fc4489d337d1a554e6a1
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/23/2019
-ms.locfileid: "66041499"
+ms.lasthandoff: 07/03/2019
+ms.locfileid: "67548409"
 ---
 # <a name="develop-a-rollout-plan"></a>Desenvolver um plano de distribuição
 
@@ -53,11 +53,11 @@ Inclua o plano de [comunicação](planning-guide-communication-plan.md), o plano
 ### <a name="production-rollout"></a>Distribuição de produção
 Após um piloto bem-sucedido, você está pronto para iniciar uma distribuição de produção completa, direcionando o restante dos grupos de sua organização. Alguns exemplos de grupos de distribuição diferentes e fases são:
 
--   **Departamentos** <br/>Cada departamento pode ser uma fase de distribuição. Você pode direcionar todo o departamento de uma só vez. Nesse tipo de distribuição, os usuários de cada departamento tendem a usar o dispositivo móvel da mesma maneira e acessar os mesmos aplicativos. Os usuários provavelmente terão os mesmos tipos de políticas.
+- **Departamentos** <br/>Cada departamento pode ser uma fase de distribuição. Você pode direcionar todo o departamento de uma só vez. Nesse tipo de distribuição, os usuários de cada departamento tendem a usar o dispositivo móvel da mesma maneira e acessar os mesmos aplicativos. Os usuários provavelmente terão os mesmos tipos de políticas.
 
--   **Geografia** <br/>Nessa abordagem, você implanta em todos os usuários em uma geografia específica, seja o mesmo continente, país, região ou o edifício da mesma empresa. Esse tipo de implantação em fases permite focalizar a localização específica de usuários. Isso poderá permitir que você forneça mais de uma abordagem [diferenciada](#user-assisted-enrollment) devido ao número de localizações de implantação do Intune ser simultaneamente reduzido. Como há a probabilidade de diferentes departamentos ou casos de uso estarem no mesmo local, outros casos de uso podem ser implantados simultaneamente.
+- **Geografia** <br/>Nessa abordagem, você implanta em todos os usuários em uma geografia específica, seja o mesmo continente, país, região ou o edifício da mesma empresa. Esse tipo de implantação em fases permite focalizar a localização específica de usuários. Isso poderá permitir que você forneça mais de uma abordagem [diferenciada](#user-assisted-enrollment) devido ao número de localizações de implantação do Intune ser simultaneamente reduzido. Como há a probabilidade de diferentes departamentos ou casos de uso estarem no mesmo local, outros casos de uso podem ser implantados simultaneamente.
 
--   **Plataforma** <br/>Esse tipo de implantação consiste na implantação de plataformas semelhantes ao mesmo tempo. Um exemplo pode ser todos os dispositivos iOS no primeiro mês, seguido pelo Android e, depois, pelo Windows. Esse tipo de implantação em fases ajuda a simplificar o suporte da assistência técnica, porque a assistência técnica precisaria apenas dar suporte a uma única plataforma por vez.
+- **Plataforma** <br/>Esse tipo de implantação consiste na implantação de plataformas semelhantes ao mesmo tempo. Um exemplo pode ser todos os dispositivos iOS no primeiro mês, seguido pelo Android e, depois, pelo Windows. Esse tipo de implantação em fases ajuda a simplificar o suporte da assistência técnica, porque a assistência técnica precisaria apenas dar suporte a uma única plataforma por vez.
 
 Este é um exemplo de um plano de distribuição do Intune que inclui grupos de destino e linhas do tempo:
 
