@@ -16,12 +16,12 @@ ms.suite: ems
 search.appverid: ''
 ms.custom: ''
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 5c47a7413d98467fffc26dee098a64cfeac770e4
-ms.sourcegitcommit: 916fed64f3d173498a2905c7ed8d2d6416e34061
+ms.openlocfilehash: f91ec3124d8fab067ec32194a68508762c6cef33
+ms.sourcegitcommit: 1dc9d4e1d906fab3fc46b291c67545cfa2231660
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/23/2019
-ms.locfileid: "66043555"
+ms.lasthandoff: 07/10/2019
+ms.locfileid: "67735264"
 ---
 # <a name="work-with-existing-on-premises-proxy-servers"></a>Trabalhar com servidores proxy locais existentes
 
@@ -64,6 +64,7 @@ Para desabilitar o uso do proxy de saída para o conector, edite o arquivo :\Arq
     </appSettings>
 </configuration>
 ```
+
 Para verificar se o serviço do Atualizador do Conector também ignora o proxy, faça uma alteração semelhante em C:\Arquivos de Programas\Microsoft Intune\ODJConnector\ODJConnectorSvc\ODJConnectorSvc.exe.config.
 
 ```xml
