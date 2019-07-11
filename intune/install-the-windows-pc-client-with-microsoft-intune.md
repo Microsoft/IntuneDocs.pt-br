@@ -15,12 +15,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 4dd9fc00475c8a8eea28bef2150f25639ac38e15
-ms.sourcegitcommit: ede86a3cb094c12e3e218b956abb9935bec76902
+ms.openlocfilehash: 62d30d0c404fb8393f5aa2c999cd1fc09b266350
+ms.sourcegitcommit: 1dc9d4e1d906fab3fc46b291c67545cfa2231660
 ms.translationtype: MTE75
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/05/2019
-ms.locfileid: "67572610"
+ms.lasthandoff: 07/10/2019
+ms.locfileid: "67735891"
 ---
 # <a name="install-the-intune-software-client-on-windows-pcs"></a>Instalar o cliente de software Intune em computadores Windows
 
@@ -90,16 +90,17 @@ Nos computadores em que o software cliente será instalado, vá para a pasta na 
 
 2. Crie a entrada de registro **WindowsIntuneEnrollPending** , adicionando o seguinte comando ao script **SetupComplete.cmd** :
 
-    ```
+    ```cmd
     %windir%\system32\reg.exe add HKEY_LOCAL_MACHINE\Software\Microsoft\Onlinemanagement\Deployment /v
     WindowsIntuneEnrollPending /t REG_DWORD /d 1
     ```
 
 3. Adicione o seguinte comando a **setupcomplete.cmd** para executar o pacote de registro com o argumento de linha de comando /PrepareEnroll:
 
-    ```
+    ```cmd
     %systemdrive%\temp\Microsoft_Intune_Setup\Microsoft_Intune_Setup.exe /PrepareEnroll
     ```
+
     > [!TIP]
     > O script **SetupComplete.cmd** permite que a Instalação do Windows efetue modificações no sistema antes que um usuário faça logon. O argumento de linha de comando **/PrepareEnroll** prepara um computador definido como destino de forma que ele seja automaticamente registrado no Intune após a conclusão da Instalação do Windows.
 

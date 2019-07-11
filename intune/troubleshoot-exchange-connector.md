@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: fd6d24b5a897c5a6bcd075da111fa579d8d74154
-ms.sourcegitcommit: 916fed64f3d173498a2905c7ed8d2d6416e34061
+ms.openlocfilehash: 5bdb727b542cd66e0b8fcf4a0822eaf0107600ad
+ms.sourcegitcommit: 1dc9d4e1d906fab3fc46b291c67545cfa2231660
 ms.translationtype: MTE75
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/23/2019
-ms.locfileid: "66044563"
+ms.lasthandoff: 07/10/2019
+ms.locfileid: "67735741"
 ---
 # <a name="troubleshoot-the-intune-on-premises-exchange-connector"></a>Solução de problemas do Intune Exchange Connector local
 
@@ -32,17 +32,17 @@ Este artigo descreve como solucionar problemas relacionados ao Intune Exchange C
 
 Verifique a [instalação do Intune Exchange Connector local](exchange-connector-install.md) para ter certeza de que o conector está configurado corretamente. Veja abaixo alguns problemas comuns. Depois de fazer as correções, veja se o problema foi resolvido.
 
- - Na caixa de diálogo do Microsoft Intune Exchange Connector, verifique se você especificou uma conta de usuário que tenha as permissões apropriadas para executar os [cmdlets necessários do Windows PowerShell Exchange](exchange-connector-install.md#exchange-cmdlet-requirements).
+- Na caixa de diálogo do Microsoft Intune Exchange Connector, verifique se você especificou uma conta de usuário que tenha as permissões apropriadas para executar os [cmdlets necessários do Windows PowerShell Exchange](exchange-connector-install.md#exchange-cmdlet-requirements).
 - Habilite as notificações e especifique uma conta de notificação.
- - Ao configurar o Exchange Connector, especifique um CAS (servidor de Acesso para Cliente) que seja o mais próximo possível do servidor que hospeda o Exchange Connector. A latência de comunicação entre o CAS e o Exchange Connector pode atrasar a descoberta de dispositivo, especialmente, ao usar o Exchange Online Dedicado.
- - Um usuário com um dispositivo recém-registrado pode ter um atraso na obtenção de acesso até que o Exchange Connector seja sincronizado com o CAS do Exchange. Uma sincronização completa ocorre uma vez por dia e uma sincronização delta (rápida) ocorre várias vezes ao dia.  Você pode [forçar uma sincronização rápida ou completa manualmente](exchange-connector-install.md#manually-force-a-quick-sync-or-full-sync) para minimizar os atrasos.
+- Ao configurar o Exchange Connector, especifique um CAS (servidor de Acesso para Cliente) que seja o mais próximo possível do servidor que hospeda o Exchange Connector. A latência de comunicação entre o CAS e o Exchange Connector pode atrasar a descoberta de dispositivo, especialmente, ao usar o Exchange Online Dedicado.
+- Um usuário com um dispositivo recém-registrado pode ter um atraso na obtenção de acesso até que o Exchange Connector seja sincronizado com o CAS do Exchange. Uma sincronização completa ocorre uma vez por dia e uma sincronização delta (rápida) ocorre várias vezes ao dia.  Você pode [forçar uma sincronização rápida ou completa manualmente](exchange-connector-install.md#manually-force-a-quick-sync-or-full-sync) para minimizar os atrasos.
  
 ## <a name="exchange-activesync-device-not-discovered-from-exchange"></a>O dispositivo do Exchange ActiveSync não é descoberto no Exchange
 [Monitore a atividade do Exchange Connector](exchange-connector-install.md#on-premises-exchange-connector-high-availability-support) para ver se ele está sendo sincronizado com o Exchange Server. Se uma sincronização completa ou rápida foi concluída com êxito desde que o dispositivo foi associado, verifique outros possíveis problemas, listados abaixo. Se nenhuma sincronização ocorreu, colete os logs de sincronização e anexe-os a uma solicitação de suporte.
 
- - Verifique se os usuários têm uma licença do Intune; caso contrário, o Exchange Connector não descobrirá seus dispositivos.
- - Se o endereço SMTP primário de um usuário for diferente de seu UPN no Azure AD (Azure Active Directory), o Exchange Connector não descobrirá nenhum dispositivo desse usuário. Corrija o endereço SMTP primário para resolver o problema.
- - Se você tem servidores de caixas de correio do Exchange 2010 e do Exchange 2013 no ambiente, recomendamos apontar o Exchange Connector para um CAS do Exchange 2013. Caso contrário, se o Exchange Connector estiver configurado para se comunicar com um CAS do Exchange 2010, o Exchange Connector não descobrirá os dispositivos dos usuários do Exchange 2013. 
+- Verifique se os usuários têm uma licença do Intune; caso contrário, o Exchange Connector não descobrirá seus dispositivos.
+- Se o endereço SMTP primário de um usuário for diferente de seu UPN no Azure AD (Azure Active Directory), o Exchange Connector não descobrirá nenhum dispositivo desse usuário. Corrija o endereço SMTP primário para resolver o problema.
+- Se você tem servidores de caixas de correio do Exchange 2010 e do Exchange 2013 no ambiente, recomendamos apontar o Exchange Connector para um CAS do Exchange 2013. Caso contrário, se o Exchange Connector estiver configurado para se comunicar com um CAS do Exchange 2010, o Exchange Connector não descobrirá os dispositivos dos usuários do Exchange 2013. 
 - Para ambientes do Exchange Online Dedicado, é necessário apontar o Exchange Connector para um CAS do Exchange 2013 (não 2010) no ambiente dedicado durante a configuração inicial, pois o conector se comunicará apenas com esse CAS ao executar cmdlets do PowerShell.
 
 

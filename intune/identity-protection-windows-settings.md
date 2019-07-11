@@ -15,12 +15,12 @@ search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
 ms.reviewer: shpate
-ms.openlocfilehash: 1cbf45fc337cbe7d7a45081a3b9e05002ca126d8
-ms.sourcegitcommit: 256952cac44bc6289156489b6622fdc1a3c9c889
+ms.openlocfilehash: 5a8111d2542269441c7305aad0aad0b7c2162037
+ms.sourcegitcommit: 1dc9d4e1d906fab3fc46b291c67545cfa2231660
 ms.translationtype: MTE75
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/26/2019
-ms.locfileid: "67402935"
+ms.lasthandoff: 07/10/2019
+ms.locfileid: "67735621"
 ---
 # <a name="windows-10-device-settings-to-enable-windows-hello-for-business-in-intune"></a>Configurações do dispositivo Windows 10 para habilitar o Windows Hello para Empresas no Intune
 
@@ -44,56 +44,56 @@ Para saber mais sobre os perfis do Windows Hello para Empresas no Intune, confir
   
   **Padrão**: não configurado
 
-  Quando definido como *Enabled*, as configurações a seguir estão disponíveis:
+  Quando definido como *habilitado*, as seguintes configurações estão disponíveis:
 
-    - **Tamanho mínimo do PIN**  
-     Especifique um tamanho mínimo do PIN para dispositivos, para ajudar a entrada segura. Padrões de dispositivo do Windows são seis caracteres, mas essa configuração pode impor um mínimo de quatro a 127 caracteres. 
-  
-      **Padrão**: *não configurado*
+  - **Tamanho mínimo do PIN**  
+    Especifique um comprimento mínimo de PIN para dispositivos, para ajudar a proteger a entrada. Os padrões de dispositivo do Windows têm seis caracteres, mas essa configuração pode impor um mínimo de quatro a 127 caracteres. 
 
-    - **Tamanho máximo do PIN**  
-    Especifique um tamanho máximo do PIN para dispositivos, para ajudar a entrada segura. Padrões de dispositivo do Windows são seis caracteres, mas essa configuração pode impor um mínimo de quatro a 127 caracteres.  
+    **Padrão**: *não configurado*
 
-      **Padrão**: *não configurado*  
+  - **Tamanho máximo do PIN**  
+  Especifique um comprimento máximo de PIN para dispositivos, para ajudar a proteger a entrada. Os padrões de dispositivo do Windows têm seis caracteres, mas essa configuração pode impor um mínimo de quatro a 127 caracteres.  
 
-    - **Letras minúsculas no PIN**  
-      Você pode impor um PIN mais forte exigindo que os usuários finais incluam letras minúsculas. Suas opções:
+    **Padrão**: *não configurado*  
 
-      - **Não permitido** : impeça que os usuários usem letras minúsculas no PIN. Esse comportamento também ocorre quando a configuração não está definida.
-      - **Permitido**: permita que os usuários usem letras minúsculas no PIN, mas isso não é obrigatório.
-      - **Obrigatório**: os usuários precisam incluir pelo menos um caractere minúsculo no PIN. Por exemplo, é uma prática comum exigir pelo menos uma letra maiúscula e um caractere especial.
+  - **Letras minúsculas no PIN**  
+    Você pode impor um PIN mais forte exigindo que os usuários finais incluam letras minúsculas. Suas opções:
 
-    - **Letras maiúsculas no PIN**  
+    - **Não permitido** : impeça que os usuários usem letras minúsculas no PIN. Esse comportamento também ocorre quando a configuração não está definida.
+    - **Permitido**: permita que os usuários usem letras minúsculas no PIN, mas isso não é obrigatório.
+    - **Obrigatório**: os usuários precisam incluir pelo menos um caractere minúsculo no PIN. Por exemplo, é uma prática comum exigir pelo menos uma letra maiúscula e um caractere especial.
+
+  - **Letras maiúsculas no PIN**  
     Você pode impor um PIN mais forte exigindo que os usuários finais incluam letras maiúsculas. Suas opções:
 
-      - **Não permitido**: impeça que os usuários usem letras maiúsculas no PIN. Esse comportamento também ocorre quando a configuração não está definida.
-      - **Permitido**: permita que os usuários usem letras maiúsculas no PIN, mas isso não é obrigatório.
-      - **Obrigatório**: os usuários precisam incluir pelo menos um caractere maiúsculo no PIN. Por exemplo, é uma prática comum exigir pelo menos uma letra maiúscula e um caractere especial.
+    - **Não permitido**: impeça que os usuários usem letras maiúsculas no PIN. Esse comportamento também ocorre quando a configuração não está definida.
+    - **Permitido**: permita que os usuários usem letras maiúsculas no PIN, mas isso não é obrigatório.
+    - **Obrigatório**: os usuários precisam incluir pelo menos um caractere maiúsculo no PIN. Por exemplo, é uma prática comum exigir pelo menos uma letra maiúscula e um caractere especial.
 
-    - **Caracteres especiais no PIN**  
+  - **Caracteres especiais no PIN**  
     Você pode impor um PIN mais forte exigindo que os usuários finais incluam caracteres especiais. Os caracteres especiais incluem: `! " # $ % &amp; ' ( ) &#42; + , - . / : ; &lt; = &gt; ? @ [ \ ] ^ _ &#96; { &#124; } ~`  
- 
-      Suas opções:
-      - **Não permitido**: impeça que os usuários usem caracteres especiais no PIN. Esse comportamento também ocorre quando a configuração não está definida.
-      - **Permitido**: permita que os usuários usem letras maiúsculas no PIN, mas isso não é obrigatório.
-      - **Obrigatório**: os usuários precisam incluir pelo menos um caractere maiúsculo no PIN. Por exemplo, é uma prática comum exigir pelo menos uma letra maiúscula e um caractere especial.
 
-      **Padrão**: não permitido
+    Suas opções:
+    - **Não permitido**: impeça que os usuários usem caracteres especiais no PIN. Esse comportamento também ocorre quando a configuração não está definida.
+    - **Permitido**: permita que os usuários usem letras maiúsculas no PIN, mas isso não é obrigatório.
+    - **Obrigatório**: os usuários precisam incluir pelo menos um caractere maiúsculo no PIN. Por exemplo, é uma prática comum exigir pelo menos uma letra maiúscula e um caractere especial.
+
+    **Padrão**: não permitido
 
   - **Validade do PIN (dias)**  
-      É uma boa prática especificar um período de expiração de um PIN após o qual os usuários devem alterá-lo. Padrões de dispositivo do Windows são 41 dias.
+    É uma boa prática especificar um período de expiração de um PIN após o qual os usuários devem alterá-lo. Os padrões de dispositivo do Windows são de 41 dias.
 
     **Padrão**: Não configurado
 
   - **Lembrar histórico de PINs**  
-    Restringe a reutilização de PINs usados anteriormente. Padrão de dispositivos do Windows para se evitar a reutilização dos últimos cinco pinos.  
+    Restringe a reutilização de PINs usados anteriormente. Os dispositivos Windows são padrão para impedir a reutilização dos últimos cinco PINs.  
 
     **Padrão**: Não configurado  
 
   - **Habilitar a recuperação do PIN**   
-    Permite que o usuário use o Windows Hello para o serviço de recuperação de PIN de negócios. 
+    Permite que o usuário use o serviço de recuperação de PIN do Windows Hello para empresas. 
     
-    - **Habilitado** - segredo de recuperação o PIN é armazenada no dispositivo e o usuário pode alterar o PIN, se necessário.  
+    - **Habilitado** -o segredo de recuperação do PIN é armazenado no dispositivo e o usuário pode alterar seu PIN, se necessário.  
     - **Desabilitado** -o segredo de recuperação não é criado ou armazenado.
 
     **Padrão**: não configurado
@@ -129,10 +129,10 @@ Para saber mais sobre os perfis do Windows Hello para Empresas no Intune, confir
   **Padrão**: não configurado
 
 - **Usar chaves de segurança para entrar**  
-  Essa configuração está disponível para dispositivos que executam o Windows 10 versão 1903 ou posterior. Usá-lo para gerenciar o suporte para o uso de chaves de segurança Windows Hello para entrar.  
+  Essa configuração está disponível para dispositivos que executam o Windows 10 versão 1903 ou posterior. Use-o para gerenciar o suporte ao uso de chaves de segurança do Windows Hello para entrada.  
 
-  - **Habilitado** -os usuários podem usar uma chave de segurança Windows Hello como direcionado a uma credencial de logon para PCs com esta política. 
-  - **Desabilitado** - chaves de segurança são desabilitadas e os usuários não é possível usá-los para entrar para PCs.   
+  - **Habilitado** -os usuários podem usar uma chave de segurança do Windows Hello como uma credencial de logon para PCs com essa política. 
+  - **Desabilitado** -as chaves de segurança estão desabilitadas e os usuários não podem usá-las para entrar em PCs.   
 
   **Padrão**: não configurado
 

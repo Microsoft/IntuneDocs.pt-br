@@ -18,12 +18,12 @@ ms.reviewer: esmich
 ms.suite: ems
 ms.custom: intune-enduser
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 7e68e404a91927192f1006626d1b865acd5eb589
-ms.sourcegitcommit: d258bcf6716c8a2589d3f8dada819905ee80f233
+ms.openlocfilehash: b23323766e91e31c48aec6a51dfae971c3a333e8
+ms.sourcegitcommit: 1dc9d4e1d906fab3fc46b291c67545cfa2231660
 ms.translationtype: MTE75
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/24/2019
-ms.locfileid: "66197045"
+ms.lasthandoff: 07/10/2019
+ms.locfileid: "67735751"
 ---
 # <a name="enroll-your-corporate-device-with-the-microsoft-intune-app"></a>Registrar dispositivos corporativos com aplicativos do Microsoft Intune
 
@@ -46,9 +46,9 @@ Conclua estas etapas para configurar e registrar seu dispositivo.
 2. Na tela **Boas-vindas**, selecione seu idioma.   Se você tiver sido instruído a registrar com um código QR ou NFC, siga a etapa abaixo que corresponde ao método.  
      * NFC: toque em seu dispositivo compatível com NFC em relação a um dispositivo do programador para se conectar à rede da sua organização. Siga os prompts na tela. Quando você chegar à tela de Termos de Serviço do Chrome, vá para a etapa 5.  
 
-      * Código QR: conclua as etapas em [Registro de código QR](#qr-code-enrollment).  
+     * Código QR: conclua as etapas em [Registro de código QR](#qr-code-enrollment).  
 
-      Se você tiver sido instruído a usar outro método, vá para a etapa 3.    
+     Se você tiver sido instruído a usar outro método, vá para a etapa 3.    
 
 1. Conecte-se ao Wi-Fi e toque em **AVANÇAR**. Siga a etapa que corresponde ao seu método de registro. 
 

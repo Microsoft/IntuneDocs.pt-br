@@ -1,7 +1,7 @@
 ---
-title: Arquivo morto - MDM do Intune linhas de base de configurações de segurança para Windows 10
+title: Arquivo-de configurações de linhas de base de segurança do MDM do Intune para Windows 10
 titleSuffix: Microsoft Intune
-description: Arquivamento de versões anteriores do lançamento das configurações de linha de base de segurança MDM para gerenciar o Windows 10 com o Microsoft Intune
+description: Arquivo de versões de lançamento anteriores das configurações de linha de base de segurança do MDM para gerenciar o Windows 10 com o Microsoft Intune
 author: brenduns
 ms.author: brenduns
 manager: dougeby
@@ -16,29 +16,29 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: b8e83aa6b13f192da87a78690b0040e545d8943e
-ms.sourcegitcommit: 690e680e854b7d707421c5e06f134e493f4f4194
+ms.openlocfilehash: bb6cd7b1d717cd289b65e1e05566bd07471ad84f
+ms.sourcegitcommit: 1dc9d4e1d906fab3fc46b291c67545cfa2231660
 ms.translationtype: MTE75
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/27/2019
-ms.locfileid: "67418953"
+ms.lasthandoff: 07/10/2019
+ms.locfileid: "67735778"
 ---
 <!-- This article contains the exact baseline details for baseline versions that were previously published in security-baseline-settings-mdm.md.  -->
 
-# <a name="archive-of-mdm-security-baseline-settings"></a>Arquivo de configurações de linha de base de segurança do MDM  
+# <a name="archive-of-mdm-security-baseline-settings"></a>Arquivo morto das configurações de linha de base de segurança do MDM  
 
-Exibir detalhes de versões arquivadas da linha de base de segurança do MDM do Intune.  
+Exibir detalhes das versões arquivadas da linha de base de segurança do MDM para o Intune.  
 
-Quando uma nova linha de base de segurança do MDM for lançado, a lista anterior de configurações mover do artigo de configurações de linha de base de segurança para este arquivo morto. Essas versões ainda têm suporte para uso, e este arquivo morto é fornecido para ajudar a entender as configurações padrão para versões mais antigas da linha de base.
+Quando uma nova linha de base de segurança do MDM é liberada, a lista anterior de configurações é movida do artigo configurações de linha de base de segurança para este arquivo morto. Essas versões ainda têm suporte para uso, e esse arquivo é fornecido para auxiliar na compreensão das configurações padrão para versões de linha de base mais antigas.
 
-Quando não há suporte para uma versão de linha de base para uso, ela será removida em seguida, neste artigo.
+Quando uma versão de linha de base não tiver mais suporte para uso, ela será então removida deste artigo.
 
-- Exibir as configurações que estão disponíveis em [a linha de base de segurança MDM atual](security-baseline-settings-mdm.md) 
-- Saiba mais sobre [linhas de base de segurança](security-baselines.md)e como atualizar a versão de linha de base em seus perfis de linha de base de segurança.
+- Exibir as configurações que estão disponíveis na [linha de base de segurança do MDM atual](security-baseline-settings-mdm.md) 
+- Saiba mais [sobre](security-baselines.md)linhas de base de segurança e como atualizar a versão de linha de base em seus perfis de linha de base de segurança.
 
 ## <a name="preview-mdm-security-baseline-for-october-2018"></a>Versão prévia: linha de base de segurança do MDM para outubro de 2018  
 
-*Esta linha de base é substituída pelo [base de segurança do MDM para Spring 2019 (1 de 19 H)](security-baseline-settings-mdm.md)*
+*Essa linha de base é substituída pela [linha de base de segurança do MDM para Spring 2019 (19H1)](security-baseline-settings-mdm.md)*
 
 ### <a name="above-lock"></a>AboveLock  
 
@@ -261,38 +261,38 @@ Para obter mais informações, veja [CSP de política – DeviceLock](https://do
   
   **Padrão**: Sim  
   
-    Quando *Exigir senha* estiver definido como *Sim*, as configurações a seguir estarão disponíveis.
+  Quando *Exigir senha* estiver definido como *Sim*, as configurações a seguir estarão disponíveis.
 
-    - **Contagem do conjunto de caracteres mínimo da senha**  
-      O número de tipos de elementos complexos (letras maiúsculas e minúsculas, números e pontuação) necessário para um PIN ou uma senha forte. O PIN impõe o seguinte comportamento para dispositivos móveis e da área de trabalho: 1: apenas dígitos, 2: dígitos e letras minúsculas são necessários, 3: dígitos, letras minúsculas e letras maiúsculas são necessários. Não é compatível com contas da Microsoft de área de trabalho e contas de domínio. 4: dígitos, letras minúsculas, letras maiúsculas e caracteres especiais são necessários. Não é compatível com a área de trabalho. O valor padrão é 1. 
-      
-      **Padrão**: 3  
+  - **Contagem do conjunto de caracteres mínimo da senha**  
+    O número de tipos de elementos complexos (letras maiúsculas e minúsculas, números e pontuação) necessário para um PIN ou uma senha forte. O PIN impõe o seguinte comportamento para dispositivos móveis e da área de trabalho: 1: apenas dígitos, 2: dígitos e letras minúsculas são necessários, 3: dígitos, letras minúsculas e letras maiúsculas são necessários. Não é compatível com contas da Microsoft de área de trabalho e contas de domínio. 4: dígitos, letras minúsculas, letras maiúsculas e caracteres especiais são necessários. Não é compatível com a área de trabalho. O valor padrão é 1. 
+    
+    **Padrão**: 3  
   
-    - **Número de falhas de início de sessão antes de limpar o dispositivo**  
-      O número de falhas de autenticação permitidas antes que o dispositivo seja apagado. Um valor 0 desabilita a funcionalidade de apagamento do dispositivo.
-        
-      **Padrão**: 10  
+  - **Número de falhas de início de sessão antes de limpar o dispositivo**  
+    O número de falhas de autenticação permitidas antes que o dispositivo seja apagado. Um valor 0 desabilita a funcionalidade de apagamento do dispositivo.
+    
+    **Padrão**: 10  
   
-    - **Expiração da senha (dias)**  
-      A configuração de política de duração máxima da senha determina o período (em dias) pelo qual uma senha pode ser usada antes de o sistema exigir que o usuário a altere. Você pode definir as senhas expirar após um número de dias entre 1 e 999 ou pode especificar que as senhas nunca expirem definindo o número de dias como 0. Se a duração máxima da senha for entre 1 e 999 dias, a duração mínima da senha deverá ser menor do que esse valor. Se a duração máxima da senha for definida como 0, a duração mínima da senha poderá ser qualquer valor entre 0 e 998 dias.
-      
-      **Padrão**: 60  
+  - **Expiração da senha (dias)**  
+    A configuração de política de duração máxima da senha determina o período (em dias) pelo qual uma senha pode ser usada antes de o sistema exigir que o usuário a altere. Você pode definir as senhas expirar após um número de dias entre 1 e 999 ou pode especificar que as senhas nunca expirem definindo o número de dias como 0. Se a duração máxima da senha for entre 1 e 999 dias, a duração mínima da senha deverá ser menor do que esse valor. Se a duração máxima da senha for definida como 0, a duração mínima da senha poderá ser qualquer valor entre 0 e 998 dias.
+    
+    **Padrão**: 60  
   
-    - **Tipo de senha necessária**  
-      Determina o tipo de PIN ou senha necessária.
-      
-      **Padrão**: alfanumérico  
+  - **Tipo de senha necessária**  
+    Determina o tipo de PIN ou senha necessária.
+    
+    **Padrão**: alfanumérico  
   
-    - **Comprimento mínimo da senha**  
-      A configuração de política de Comprimento mínimo da senha determina o menor número de caracteres que podem formar uma senha para uma conta de usuário. Você pode definir um valor entre 1 e 14 caracteres ou pode estabelecer que nenhuma senha é necessária definindo o número de caracteres como 0.
-      
-      **Padrão**: 8  
-  
-    - **Bloquear senhas simples**  
-      Especifica se os PINs ou senhas como "1111" ou "1234" são permitidas. Para a área de trabalho, ela também controla o uso de senhas com imagem.
-      
-      **Padrão**: Sim  
-        *Uma configuração de Sim impede o uso de senhas simples.* 
+  - **Comprimento mínimo da senha**  
+    A configuração de política de Comprimento mínimo da senha determina o menor número de caracteres que podem formar uma senha para uma conta de usuário. Você pode definir um valor entre 1 e 14 caracteres ou pode estabelecer que nenhuma senha é necessária definindo o número de caracteres como 0.
+    
+    **Padrão**: 8  
+
+  - **Bloquear senhas simples**  
+    Especifica se os PINs ou senhas como "1111" ou "1234" são permitidas. Para a área de trabalho, ela também controla o uso de senhas com imagem.
+    
+    **Padrão**: Sim  
+      *Uma configuração de Sim impede o uso de senhas simples.* 
 
   - **Evitar a reutilização de senhas anteriores**  
     Especifica quantas senhas podem ser armazenadas no histórico e não podem ser usadas. O valor inclui a senha atual do usuário. Por exemplo, com uma configuração de *1*, o usuário não pode reutilizar a senha atual ao escolher uma nova senha. Uma configuração de *5* significa que um usuário não pode definir sua nova senha como a senha atual ou qualquer uma das quatro senhas anteriores.
@@ -344,10 +344,10 @@ Para obter mais informações, veja [CSP de política – Experiência](https://
     Especifica se deve permitir sugestões de aplicativos e conteúdo de editores de software de terceiros nos recursos de Destaque do Windows como o destaque da tela de bloqueio, aplicativos sugeridos no menu Iniciar e dicas do Windows. Os usuários ainda poderão ver sugestões de recursos, aplicativos e serviços da Microsoft.
       
     **Padrão**: Sim  
-   - **Bloquear recursos específicos do consumidor**  
-      Permite que os administradores de TI habilitem as experiências que normalmente são apenas para consumidores, como Sugestões de início, Notificações de associação, instalação de aplicativo pós-OOBE e redirecionamento de blocos.
-      
-     **Padrão**: Sim  
+  - **Bloquear recursos específicos do consumidor**  
+    Permite que os administradores de TI habilitem as experiências que normalmente são apenas para consumidores, como Sugestões de início, Notificações de associação, instalação de aplicativo pós-OOBE e redirecionamento de blocos.
+    
+    **Padrão**: Sim  
 
 
 ### <a name="exploit-guard"></a>Exploit Guard  
