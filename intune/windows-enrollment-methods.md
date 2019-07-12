@@ -16,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: ''
 ms.collection: ''
-ms.openlocfilehash: b8b1c47e4a2eb46bb8f7190ede351ed77a1bfef4
-ms.sourcegitcommit: 116ef72b9da4d114782d4b8dd9f57556c9b01511
+ms.openlocfilehash: cbe533e6a219adf1984c656506ceb7a3b95556ec
+ms.sourcegitcommit: bccfbf1e3bdc31382189fc4489d337d1a554e6a1
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/01/2019
-ms.locfileid: "67494506"
+ms.lasthandoff: 07/03/2019
+ms.locfileid: "67548663"
 ---
 # <a name="intune-enrollment-methods-for-windows-devices"></a>Métodos de registro do Intune para dispositivos Windows
 
@@ -40,7 +40,7 @@ Os usuários podem registrar automaticamente seu dispositivo Windows usando qual
     - registra o dispositivo no Intune como um dispositivo pessoal (BYOD).
 Se um administrador tiver configurado o Registro automático (disponível com as assinaturas premium do Azure AD), o usuário só precisará inserir suas credenciais uma vez. Caso contrário, será necessário registrar separadamente somente por meio do registro de MDM e inserir novamente suas credenciais.  
 - **Somente registro de MDM** permite que os usuários registrem um grupo de trabalho existente, o Active Directory ou um PC ingressado no Azure Active Directory no Intune. Os usuários registram de Configurações no computador Windows existente. Esse método não é recomendado porque ele não registra o dispositivo no Azure Active Directory. Ele também impede o uso de recursos como o Acesso condicional.
-- [Ingresso no Azure AD (Azure Active Directory)](https://docs.microsoft.com/azure/active-directory/user-help/user-help-join-device-on-network) – ingressa o dispositivo com o Azure Active Directory e permite que usuários entrem no Windows com suas credenciais do Azure AD. Se o Registro automático estiver habilitado, o dispositivo será registrado automaticamente no Intune. O benefício do registro automático é um processo de etapa única para o usuário. Caso contrário, será necessário registrar separadamente somente por meio do registro de MDM e inserir novamente suas credenciais. Os usuários registram dessa maneira durante a OOBE inicial do Windows ou em Configurações. O dispositivo é marcado como corporativo no Intune.
+- [Ingresso no Azure AD (Azure Active Directory)](https://docs.microsoft.com/azure/active-directory/user-help/user-help-join-device-on-network) – ingressa o dispositivo com o Azure Active Directory e permite que usuários entrem no Windows com as credenciais do Azure AD. Se o Registro automático estiver habilitado, o dispositivo será registrado automaticamente no Intune. O benefício do registro automático é um processo de etapa única para o usuário. Caso contrário, será necessário registrar separadamente somente por meio do registro de MDM e inserir novamente suas credenciais. Os usuários registram dessa maneira durante a OOBE inicial do Windows ou em Configurações. O dispositivo é marcado como corporativo no Intune.
 - [AutoPilot](enrollment-autopilot.md) – automatiza o ingresso no Azure AD e registra novos dispositivos corporativos no Intune. Esse método simplifica a configuração inicial pelo usuário e acaba com a necessidade de aplicar imagens do sistema operacional personalizadas nos dispositivos. Quando os administradores usam o Intune para gerenciar dispositivos Autopilot, eles poderão gerenciar políticas, perfis, aplicativos e mais após serem registrados.  Há quatro tipos de implantação do Autopilot: [Modo de Autoimplantação](https://docs.microsoft.com/windows/deployment/windows-autopilot/self-deploying) (para quiosques, sinalização digital um dispositivo compartilhado), [Modo Controlado pelo Usuário](https://docs.microsoft.com/windows/deployment/windows-autopilot/user-driven) (para usuários tradicionais), [Assistência Individual] (https://docs.microsoft.com/windows/deployment/windows-autopilot/white-glove) permite que parceiros ou a equipe de TI pré-provisionem um computador Windows 10 para que ele esteja totalmente configurado e pronto para a empresa) e [Autopilot para dispositivos existentes] (https://docs.microsoft.com/windows/deployment/windows-autopilot/existing-devices) permite que você implante facilmente a versão mais recente do Windows 10 para seus dispositivos existentes).
 
 ## <a name="administrator-based-enrollment-in-intune"></a>Registro com base em administrador no Intune

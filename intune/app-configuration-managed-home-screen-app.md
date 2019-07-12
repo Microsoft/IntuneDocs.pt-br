@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: a9a61b89f07bfacf1dc41be1412f79509e1e147d
-ms.sourcegitcommit: 916fed64f3d173498a2905c7ed8d2d6416e34061
+ms.openlocfilehash: c3955710dfbe57023533f737f0ae69df80f863e6
+ms.sourcegitcommit: 1dc9d4e1d906fab3fc46b291c67545cfa2231660
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/23/2019
-ms.locfileid: "66049948"
+ms.lasthandoff: 07/10/2019
+ms.locfileid: "67735706"
 ---
 # <a name="configure-the-microsoft-managed-home-screen-app-for-android-enterprise"></a>Aplicativo de Tela Inicial Gerenciada da Microsoft para o Android Enterprise
 
@@ -74,21 +74,24 @@ A tabela a seguir lista as chaves de configuração, tipos de valor, valores pad
 | Enable home screen feed | bool | FALSE | Habilita o feed da tela inicial, que pode ser visto passando o dedo para esquerda da tela inicial. Este feed exibe um tipo diferente de conteúdo, por exemplo, notícias, calendário, aplicativos usados frequentemente, cartão de Assistente de voz Cortana etc. Se você habilitar essa opção, o usuário final será capaz de navegar para o feed passando o dedo para a esquerda na tela inicial. |
 | Enable overview mode | bool | FALSE | Permite que os usuários finais adicionem ou removam páginas diferentes na tela inicial que podem ser acessadas passando o dedo para a direita na tela padrão. Se você habilitar essa opção, o usuário final será capaz de adicionar páginas à direita da página padrão da tela inicial, também podendo alterar a página padrão e acessar as configurações na Tela Inicial Gerenciada. |
 | Enable device telemetry | bool | FALSE | Habilita toda a telemetria que está sendo capturada para a tela inicial gerenciada. Se você habilitar essa opção, a Microsoft poderá capturar a telemetria de uso do dispositivo, tal como o número de vezes que um determinado aplicativo é iniciado neste dispositivo. |
-| Set whitelisted applications | bundleArray | FALSE | Permite definir o conjunto de aplicativos visíveis na tela inicial entre os aplicativos instalados no dispositivo. Você pode definir os aplicativos, inserindo o nome do pacote do aplicativo dos aplicativos que você deseja tornar visíveis, por exemplo, com.android.settings tornaria as configurações acessíveis na tela inicial. Os aplicativos da lista de permissões nesta seção já devem estar instalados no dispositivo para que fiquem visíveis na tela inicial. |
+| Definir aplicativos para a lista de permissões | bundleArray | FALSE | Permite definir o conjunto de aplicativos visíveis na tela inicial entre os aplicativos instalados no dispositivo. Você pode definir os aplicativos inserindo o nome do pacote dos aplicativos que você deseja tornar visíveis, por exemplo, com.microsoft.emmx torna as configurações acessíveis na tela inicial. Os aplicativos da lista de permissões nesta seção já devem estar instalados no dispositivo para que fiquem visíveis na tela inicial. |
 | Set pinned web links | bundleArray | FALSE | Permite que você fixe sites como ícones de início rápido na tela inicial. Com essa configuração, você pode definir a URL e adicioná-la à tela inicial para o usuário final iniciar no navegador com um único toque. |
 | Enable search bar | bool | FALSE | Habilita a barra de pesquisa na tela inicial. Se você habilitar essa opção, os usuários do dispositivo verão a barra de pesquisa na tela inicial, que poderão usar para pesquisar tudo o que desejam na Web. |
 | Disable settings app | bool | FALSE | Desabilita a página de configurações da Tela Inicial Gerenciada. Se você desabilitar essa opção, o usuário final do dispositivo não poderá acessar as configurações da Tela Inicial Gerenciada. |
 | Enable screen saver | bool | FALSE | Para habilitar o modo de proteção de tela ou não. Se definido como true, você poderá configurar **screen_saver_image**, **screen_saver_show_time**, **inactive_time_to_show_screen_saver** e **media_detect_ screen_saver**. |
-| Screen saver image | cadeia de caracteres |   | Defina a URL da imagem da proteção de tela. Se nenhuma URL for definida, os dispositivos mostrarão a tela padrão quando a proteção de tela for ativada.  |
-| Screen saver show time | integer | 0 | Dá a opção para definir o tempo em segundos pelo qual a proteção de tela será exibida pelo dispositivo durante o modo de proteção de tela. Se definido como 0, o protetor de tela será exibido no modo de protetor de tela por tempo indeterminado até que o dispositivo se torne ativo.  |
-| Inactive time to enable screen saver | integer | 30 | O número de segundos que o dispositivo fica inativo antes de disparar o protetor de tela. Se definido como 0, o dispositivo nunca entrará no modo de protetor de tela. |
-| Media detect before showing screen saver | bool | TRUE | Escolha se a tela do dispositivo deverá mostrar o protetor de tela quando houver áudio/vídeo em execução no dispositivo. Se definido como true, o dispositivo não iniciará o protetor de tela ao reproduzir áudio/vídeo, independentemente do valor em **inactive_time_to_show_scree_saver**. Se definido como false, a tela exibirá a proteção de tela de acordo com o valor definido em **inactive_time_to_show_screen_saver**.   |
+| Screen saver image | cadeia de caracteres |   | Defina a URL da imagem da proteção de tela. Se nenhuma URL for definida, os dispositivos mostrarão a imagem da proteção de tela padrão quando a proteção de tela for ativada. A imagem padrão mostra o ícone do aplicativo Tela Inicial Gerenciada.  |
+| Screen saver show time | integer | 0 | Dá a opção de definir o tempo em segundos pelo qual a proteção de tela será exibida pelo dispositivo durante o modo de proteção de tela. Se definido como 0, a proteção de tela será exibida no modo de proteção de tela por tempo indeterminado até que o dispositivo se torne ativo.  |
+| Inactive time to enable screen saver | integer | 30 | O número de segundos que o dispositivo fica inativo antes de disparar a proteção de tela. Se definido como 0, o dispositivo nunca entrará no modo de proteção de tela. |
+| Media detect before showing screen saver | bool | TRUE | Escolha se a tela do dispositivo deverá mostrar a proteção de tela quando houver áudio/vídeo em execução no dispositivo. Se definido como true, o dispositivo não iniciará o protetor de tela ao reproduzir áudio/vídeo, independentemente do valor em **inactive_time_to_show_scree_saver**. Se definido como false, a tela exibirá a proteção de tela de acordo com o valor definido em **inactive_time_to_show_screen_saver**.   |
 | Enable virtual home button | bool | FALSE | Defina essa configuração para `True` a fim de permitir que o usuário final tenha acesso a um botão início da Tela Inicial Gerenciada que retornará o usuário a essa tela, saindo da tarefa atual em que ele esteja.  |
 | Type of virtual home button | cadeia de caracteres | swipe_up | Use **swipe_up** para acessar o botão início com um gesto de passar o dedo para cima. Use **float** para acessar um botão início permanente e persistente que pode ser movido pela tela pelo usuário final. |
 | Battery and Signal Strength indicator bar | bool | verdadeiro  | Definir essa configuração para `True` mostra a barra do indicador de bateria e de força do sinal. |
 | Exit lock task mode password | cadeia de caracteres |   | Insira um código de 4 a 6 dígitos a usar para sair temporariamente do modo de bloqueio de tarefas para solução de problemas. |
 | Mostrar configuração de Wi-Fi | bool | FALSE | Definir essa configuração para `True` permite ao usuário final ativar ou desativar o Wi-Fi ou se conectar a diferentes redes Wi-Fi.  |
 | Show Bluetooth setting | bool | FALSE | Definir essa configuração para `True` permite ao usuário final ativar ou desativar o Bluetooth ou se conectar a diferentes dispositivos com capacidade para Bluetooth.   |
+| Aplicativos na pasta são ordenados por nome | bool | TRUE | Definir essa configuração como `False` permite que os itens em uma pasta sejam exibidos na ordem especificada. Caso contrário, eles serão exibidos em ordem alfabética na pasta.   |
+| Ordem de aplicativos habilitada | bool | FALSE | Definir essa configuração como `True` permite habilitar a capacidade de definir a ordem dos aplicativos, weblinks e pastas na Tela Inicial Gerenciada. Quando habilitada, define a ordem com **app_order**. O usuário final pode ativar ou desativar o Bluetooth e pode se conectar a diferentes dispositivos com capacidade para Bluetooth.   |
+| Ordem dos aplicativos | bundleArray | FALSE | Permite especificar a ordem dos aplicativos, weblinks e pastas na Tela Inicial Gerenciada. Para usar essa configuração, a opção **Bloquear Tela Inicial** deve estar habilitada, **Definir tamanho da grade** deve estar definida e a **Ordem dos aplicativos habilitada** deve estar definida como `True`.   |
 
 ## <a name="enter-json-data"></a>Inserir dados JSON
 
@@ -111,10 +114,6 @@ Este é um exemplo de script JSON com todas as chaves de configuração disponí
     "kind": "androidenterprise#managedConfiguration",
     "productId": "com.microsoft.launcher.enterprise",
     "managedProperty": [
-        {
-            "key": "grid_size",
-            "valueString": "Auto"
-        },
         {
             "key": "keep_page_header",
             "valueBool": true
@@ -238,6 +237,87 @@ Este é um exemplo de script JSON com todas as chaves de configuração disponí
             "valueBool": false
         },
         {
+            "key": "grid_size",
+            "valueString": "4;5"
+        },
+        {
+            "key": "app_order_enabled",
+            "valueBool": true
+        },
+        {
+            "key": "apps_in_folder_ordered_by_name",
+            "valueBool": true
+        },
+        {
+            "key": "app_orders",
+            "valueBundleArray": [
+                {
+                    "managedProperty": [
+                        {
+                            "key": "package",
+                            "valueString": "com.Microsoft.emmx"
+                        },
+                        {
+                            "key": "type",
+                            "valueString": "application"
+                        },
+                        {
+                            "key": "container",
+                            "valueInteger": 1
+                        },
+                        {
+                            "key": "position",
+                            "valueInteger": 1
+                        }
+                    ]
+                },
+                {
+                    "managedProperty": [
+                        {
+                            "key": "folder_name",
+                            "valueString": "Work"
+                        },
+                        {
+                            "key": "type",
+                            "valueString": "managed_folder"
+                        },
+                        {
+                            "key": "container",
+                            "valueInteger": 1
+                        },
+                        {
+                            "key": "position",
+                            "valueInteger": 2
+                        }
+                    ]
+                },
+                {
+                    "managedProperty": [
+                        {
+                            "key": "package",
+                            "valueString": "com.microsoft.launcher.enterprise"
+                        },
+                        {
+                            "key": "type",
+                            "valueString": "application"
+                        },
+                        {
+                            "key": "class",
+                            "valueString": "com.microsoft.launcher.launcher"
+                        },
+                        {
+                            "key": "container",
+                            "valueInteger": 1
+                        },
+                        {
+                            "key": "position",
+                            "valueInteger": 3
+                        }
+                    ]
+                }
+            ]
+        },
+        {
             "key": "managed_folders",
             "valueBundleArray": [
                 {
@@ -302,8 +382,8 @@ Este é um exemplo de script JSON com todas as chaves de configuração disponí
         }
     ]
 }
-
 ```
+
 ## <a name="next-steps"></a>Próximas etapas
 
 - Para obter mais informações sobre dispositivos Android Enterprise dedicados, consulte [Configurar o registro do Intune para dispositivos Android Enterprise dedicados](android-kiosk-enroll.md).

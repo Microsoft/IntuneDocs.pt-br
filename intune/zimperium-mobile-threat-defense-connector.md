@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: c0dc8d7cca42898db92412e2cec41252a9a9a4d4
-ms.sourcegitcommit: 4b83697de8add3b90675c576202ef2ecb49d80b2
+ms.openlocfilehash: 39c3b606033ca8575e079bef9a627b087a3d3318
+ms.sourcegitcommit: ede86a3cb094c12e3e218b956abb9935bec76902
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/13/2019
-ms.locfileid: "67046108"
+ms.lasthandoff: 07/05/2019
+ms.locfileid: "67572477"
 ---
 # <a name="zimperium-mobile-threat-defense-connector-with-intune"></a>Conector do Zimperium Mobile Threat Defense ao Intune
 
@@ -44,11 +44,11 @@ Veja abaixo alguns cenários de integração do Zimperium ao Intune:
 
 Quando aplicativos mal-intencionados, como malwares, são detectados nos dispositivos, é possível bloquear os dispositivos até que a ameaça seja resolvida:
 
--   Conectar-se ao email corporativo
+- Conectar-se ao email corporativo
 
--   Sincronizar arquivos corporativos com o aplicativo OneDrive for Work
+- Sincronizar arquivos corporativos com o aplicativo OneDrive for Work
 
--   Acessar aplicativos da empresa
+- Acessar aplicativos da empresa
 
 **Bloquear quando aplicativos mal-intencionados forem detectados:**
 
@@ -60,7 +60,7 @@ Quando aplicativos mal-intencionados, como malwares, são detectados nos disposi
 
 ### <a name="control-access-based-on-threat-to-network"></a>Controlar o acesso com base em ameaças à rede
 
-Detecte ameaças como  **Man-in-the-middle**  na rede e proteja o acesso a redes Wi-Fi com base no risco do dispositivo.
+Detecta ameaças como **Man-in-the-middle** na rede e protege o acesso a redes Wi-Fi com base no risco do dispositivo.
 
 **Bloquear o acesso à rede por meio de Wi-Fi:**
 
@@ -72,7 +72,7 @@ Detecte ameaças como  **Man-in-the-middle**  na rede e proteja o acesso a red
 
 ### <a name="control-access-to-sharepoint-online-based-on-threat-to-network"></a>Controlar o acesso ao SharePoint Online com base em ameaças à rede
 
-Detecte ameaças como  **Man-in-the-middle**  na rede e impeça a sincronização de arquivos corporativos com base no risco do dispositivo.
+Detectar ameaças como **Man-in-the-middle** na rede e impede a sincronização de arquivos corporativos com base no risco ao dispositivo.
 
 **Bloquear o SharePoint Online quando ameaças à rede forem detectadas:**
 
@@ -84,19 +84,19 @@ Detecte ameaças como  **Man-in-the-middle**  na rede e impeça a sincronizaç
 
 ## <a name="supported-platforms"></a>Plataformas com Suporte
 
--   **Android 4.1 e posterior**
+- **Android 4.1 e posterior**
 
--   **iOS 8 e posterior**
+- **iOS 8 e posterior**
 
 ## <a name="prerequisites"></a>Pré-requisitos
 
--   Azure Active Directory Premium
+- Azure Active Directory Premium
 
--   Assinatura do Microsoft Intune
+- Assinatura do Microsoft Intune
 
--   Assinatura do Zimperium Mobile Threat Defense
+- Assinatura do Zimperium Mobile Threat Defense
 
-    -   Para obter mais informações, acesse o [site do Zimperium](https://www.zimperium.com/zips-mobile-ips).
+    - Para obter mais informações, confira o [site do Zimperium](https://www.zimperium.com/zips-mobile-ips).
 
 ## <a name="next-steps"></a>Próximas etapas
 

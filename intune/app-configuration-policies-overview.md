@@ -6,7 +6,7 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 04/16/2019
+ms.date: 07/08/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.localizationpriority: high
@@ -17,16 +17,16 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: ec65325592fbddc29e75b1d84c94e67558faab62
-ms.sourcegitcommit: 116ef72b9da4d114782d4b8dd9f57556c9b01511
+ms.openlocfilehash: 10dad24ee41f63dcc304d95e9b733f7de3f1b71a
+ms.sourcegitcommit: 1b7ee2164ac9490df4efa83c5479344622c181b5
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/01/2019
-ms.locfileid: "67494064"
+ms.lasthandoff: 07/08/2019
+ms.locfileid: "67649033"
 ---
 # <a name="app-configuration-policies-for-microsoft-intune"></a>Políticas de configuração de aplicativo do Microsoft Intune
 
-Use políticas de configuração de aplicativo no Microsoft Intune para fornecer definições de configuração para um aplicativo iOS ou Android. Essas definições de configuração permitem que um aplicativo seja personalizado. Você não atribui essas políticas de configuração diretamente a usuários ou dispositivos. Em vez disso, você associa uma política de configuração a um aplicativo e, em seguida, atribui o aplicativo. As definições da política de configuração são usadas quando o aplicativo verifica se elas existem, normalmente, na primeira vez em que ele é executado.
+Use políticas de configuração de aplicativo no Microsoft Intune para fornecer definições de configuração para um aplicativo iOS ou Android. Essas configurações permitem que um aplicativo seja personalizado usando uma abordagem padrão do setor para gerenciamento e configuração de aplicativos. As definições da política de configuração são usadas quando o aplicativo verifica se elas existem, normalmente, na primeira vez em que ele é executado.
 
 Você pode atribuir uma política de configuração de aplicativo a um grupo de usuários e dispositivos usando uma combinação de atribuições de inclusão e exclusão. Depois de adicionar uma política de configuração de aplicativo, você pode definir as atribuições para política de configuração de aplicativo. Ao definir as atribuições para a política, você pode optar por incluir ou excluir os grupos de usuários para os quais a política se aplica. Ao optar por incluir um ou mais grupos, você pode optar por selecionar grupos específicos para incluir ou selecionar grupos internos. Os grupos internos incluem **Todos os Usuários**, **Todos os Dispositivos** e **Todos os Usuários + Todos os Dispositivos**.
 
@@ -52,9 +52,11 @@ Você tem duas opções de como usar as configurações do aplicativo com o Intu
 
 ## <a name="apps-that-support-app-configuration"></a>Aplicativos que dão suporte à configuração de aplicativo
 
-Você pode usar políticas de configuração de aplicativo para aplicativos que dão suporte a elas. Para dar suporte à configuração de aplicativo no Intune, os aplicativos devem ter sido escritos para dar suporte ao uso de configurações de aplicativo. Consulte o fornecedor do aplicativo para obter mais detalhes.
+### <a name="managed-devices"></a>Dispositivos gerenciados
+Você pode usar políticas de configuração de aplicativo para aplicativos que dão suporte a elas. Para dar suporte à configuração de aplicativos no Intune, os aplicativos precisam ter suporte ao uso de configurações de aplicativo como definido na [Comunidade Appconfig](https://www.appconfig.org/members). Consulte o fornecedor do aplicativo para obter mais detalhes.
 
-É possível preparar seus aplicativos de linha de negócios incorporando o SDK de Aplicativo do Intune no aplicativo ou encapsulando o aplicativo ele ser desenvolvido. O SDK do Aplicativo do Intune, disponível para o iOS e o Android, habilita o aplicativo para as políticas de configuração de aplicativo do Intune. Ele se esforça para minimizar a quantidade de alterações de código necessárias do desenvolvedor do aplicativo. Para obter mais informações, consulte a [Visão geral do SDK de Aplicativo do Intune](app-sdk.md).
+### <a name="managed-apps"></a>Aplicativos gerenciados
+É possível preparar seus aplicativos de linha de negócios incorporando o SDK de Aplicativo do Intune no aplicativo ou encapsulando o aplicativo ele ser desenvolvido. O SDK de Aplicativo do Intune, disponível para iOS e Android, habilita o aplicativo para as políticas de configuração de proteção de aplicativo do Intune. Ele se esforça para minimizar a quantidade de alterações de código necessárias do desenvolvedor do aplicativo. Para obter mais informações, consulte a [Visão geral do SDK de Aplicativo do Intune](app-sdk.md).
 
 ## <a name="graph-api-support-for-app-configuration"></a>Suporte de API do Graph para configuração de aplicativo
 

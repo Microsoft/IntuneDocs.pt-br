@@ -1,7 +1,7 @@
 ---
-title: Apagar dados usando ações de acesso da política de proteção de aplicativo
+title: Apagar dados usando ações de inicialização condicional da política de proteção de aplicativos
 titleSuffix: Microsoft Intune
-description: Saiba como apagar dados seletivamente usando ações de acesso da política de proteção de aplicativo no Microsoft Intune.
+description: Saiba como apagar dados seletivamente usando ações de inicialização condicional da política de proteção de aplicativos no Microsoft Intune.
 keywords: ''
 author: Erikre
 ms.author: erikre
@@ -17,26 +17,26 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: cd323fce7f7bdbf17697c82935a9d2d5f47bb7ee
-ms.sourcegitcommit: 6e07c35145f70b008cf170bae57143248a275b67
+ms.openlocfilehash: 65115f6520122cd4b3429411db67052481984617
+ms.sourcegitcommit: cb4e71cd48311ea693001979ee59f621237a6e6f
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/07/2019
-ms.locfileid: "66804691"
+ms.lasthandoff: 07/03/2019
+ms.locfileid: "67558449"
 ---
-# <a name="selectively-wipe-data-using-app-protection-policy-access-actions-in-intune"></a>Apagar dados seletivamente usando ações de acesso da política de proteção de aplicativo no Intune
+# <a name="selectively-wipe-data-using-app-protection-policy-conditional-launch-actions-in-intune"></a>Apagar dados seletivamente usando ações de inicialização condicional da política de proteção de aplicativos no Intune
 
 Usando as políticas de proteção de aplicativo do Intune, você pode definir configurações para impedir que usuários finais acessem uma conta ou um aplicativo corporativo. Essas configurações são direcionadas aos requisitos de realocação de dados e acesso definidos pela sua organização para assuntos como dispositivos com jailbreak e versões mínimas de sistema operacional.
  
 Você pode escolher explicitamente apagar os dados corporativos da empresa do dispositivo do usuário final como uma ação a ser executada em caso de não conformidade usando essas configurações. Para algumas configurações, você poderá configurar várias ações, como bloquear o acesso e apagar os dados com base em diferentes valores especificados.
 
-## <a name="create-an-app-protection-policy-using-access-actions"></a>Criar uma política de proteção de aplicativo usando ações de acesso
+## <a name="create-an-app-protection-policy-using-conditional-launch-actions"></a>Criar política de proteção de aplicativos usando ações de inicialização condicional
 
 1. Conecte-se ao [Intune](https://go.microsoft.com/fwlink/?linkid=2090973).
 3. No painel **Intune**, selecione **Aplicativos clientes** > **Políticas de proteção de aplicativo**.
 4. Clique em **Adicionar uma política** (você também pode editar uma política existente). 
 5. Clique em **Definir as configurações necessárias** para ver a lista de configurações disponíveis a serem configuradas para a política. 
-6. Rolando para baixo no painel Configurações, você verá uma seção intitulada **Ações de Acesso** com uma tabela editável.
+6. Rolando para baixo no painel Configurações, você verá uma seção intitulada **Inicialização condicional** com uma tabela editável.
 
     ![Captura de tela das ações de acesso de proteção de aplicativo do Intune](./media/apps-selective-wipe-access-actions01.png)
 
@@ -52,13 +52,13 @@ A tabela de configurações da política de proteção do aplicativo tem colunas
 
 ### <a name="ios-policy-settings"></a>Configurações de política do iOS
 Para iOS, você poderá configurar ações para as seguintes configurações usando a lista suspensa **Configuração**:
--  Máximo de tentativas de PIN
--  Período de cortesia offline
--  Dispositivos com jailbreak ou com root
--  Versão mínima do sistema operacional
--  Versão mínima do aplicativo
--  Versão mínima do SDK
--  Modelos de dispositivo
+- Máximo de tentativas de PIN
+- Período de cortesia offline
+- Dispositivos com jailbreak ou com root
+- Versão mínima do sistema operacional
+- Versão mínima do aplicativo
+- Versão mínima do SDK
+- Modelos de dispositivo
 
 Para usar a configuração **Modelos de dispositivo**, insira uma lista separada por ponto e vírgula de identificadores de modelo iOS. Você pode encontrar um identificador de modelo iOS na coluna Tipo de Dispositivo na [documentação de suporte do HockeyApp](https://support.hockeyapp.net/kb/client-integration-ios-mac-os-x-tvos/ios-device-types).<br>
 Exemplo de entrada: *iPhone5,2;iPhone5,3*
@@ -74,15 +74,15 @@ Quando ocorrem conflitos entre duas políticas de proteção de aplicativo para 
 ### <a name="android-policy-settings"></a>Configurações da política do Android
 
 Para o Android, você poderá configurar ações para as seguintes configurações usando a lista suspensa **Configuração**:
--  Máximo de tentativas de PIN
--  Período de cortesia offline
--  Dispositivos com jailbreak ou com root
--  Versão mínima do sistema operacional
--  Versão mínima do aplicativo
--  Versão mínima de patch
--  Fabricantes de dispositivo
--  Atestado de dispositivo SafetyNet
--  Verificação de ameaças em aplicativos
+- Máximo de tentativas de PIN
+- Período de cortesia offline
+- Dispositivos com jailbreak ou com root
+- Versão mínima do sistema operacional
+- Versão mínima do aplicativo
+- Versão mínima de patch
+- Fabricantes de dispositivo
+- Atestado de dispositivo SafetyNet
+- Verificação de ameaças em aplicativos
 
 Para usar a configuração **Fabricantes de dispositivo**, insira uma lista separada por ponto e vírgula de fabricantes Android. Você pode encontrar o fabricante Android de um dispositivo nas configurações do dispositivo.<br>
 Entrada de exemplo: *Fabricante A;Fabricante B* 
@@ -105,9 +105,9 @@ Por padrão, a tabela terá linhas populadas como as configurações definidas p
 Para definir uma configuração, selecione uma configuração na lista suspensa na coluna **Configuração**. Depois que uma configuração for selecionada, a caixa de texto editável será habilitada na coluna **Valor** na mesma linha, se for necessário definir um valor. Além disso, a lista suspensa ficará habilitada na coluna **Ação** com o conjunto de ações de inicialização condicionais aplicáveis à configuração. 
 
 A lista a seguir fornece a lista de ações comuns:
--  **Bloquear acesso** – impedir que o usuário final acesse o aplicativo corporativo.
--  **Apagar dados** – apagar os dados corporativos do dispositivo do usuário final.
--  **Avisar** – fornecer uma caixa de diálogo ao usuário final como uma mensagem de aviso.
+- **Bloquear acesso** – impedir que o usuário final acesse o aplicativo corporativo.
+- **Apagar dados** – apagar os dados corporativos do dispositivo do usuário final.
+- **Avisar** – fornecer uma caixa de diálogo ao usuário final como uma mensagem de aviso.
 
 Em alguns casos, como a configuração **Versão mínima do sistema operacional**, você pode definir a configuração para executar todas as ações aplicáveis, com base em números de versão diferentes. 
 
