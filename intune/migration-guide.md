@@ -16,12 +16,12 @@ ms.reviewer: dagerrit
 ms.suite: ems
 search.appverid: MET150
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: b34143e17245de61026a536cc0b8c5e8a7f80107
-ms.sourcegitcommit: bccfbf1e3bdc31382189fc4489d337d1a554e6a1
+ms.openlocfilehash: 97a0d9074b8617dec2fb28ed59168e08ada57fba
+ms.sourcegitcommit: 7c251948811b8b817e9fe590b77f23aed95b2d4e
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/03/2019
-ms.locfileid: "67549393"
+ms.lasthandoff: 07/15/2019
+ms.locfileid: "67882777"
 ---
 # <a name="intune-migration-guide"></a>Guia de migração do Intune
 
@@ -37,25 +37,25 @@ Este guia divide a migração em duas fases e as duas incluem tarefas, estratég
 
 - [Fase 1: Preparar o Intune para o gerenciamento de dispositivo móvel](migration-guide-prepare.md)
 
-    - [Avaliar seus requisitos de migração de MDM](migration-guide-prepare.md#assess-mdm-requirements)
+  - [Avaliar seus requisitos de migração de MDM](migration-guide-prepare.md#assess-mdm-requirements)
 
-    - [Configuração básica](migration-guide-setup.md)
+  - [Configuração básica](migration-guide-setup.md)
 
-    - [Configurar políticas de gerenciamento de dispositivos e aplicativos](migration-guide-configure-policies.md)
+  - [Configurar políticas de gerenciamento de dispositivos e aplicativos](migration-guide-configure-policies.md)
 
-    - [Configurar políticas de proteção do aplicativo](migration-guide-app-protection-policies.md)
+  - [Configurar políticas de proteção do aplicativo](migration-guide-app-protection-policies.md)
 
-    - [Considerações especiais de migração](migration-guide-considerations.md)
+  - [Considerações especiais de migração](migration-guide-considerations.md)
 
 - [Fase 2: Campanha de migração](migration-guide-campaign.md)
 
-    - [Plano de comunicação](migration-guide-communication-plan.md)
+  - [Plano de comunicação](migration-guide-communication-plan.md)
 
-    - [Gerar adoção de usuário final com acesso condicional](migration-guide-drive-adoption.md)
+  - [Gerar adoção de usuário final com acesso condicional](migration-guide-drive-adoption.md)
 
-    - [Ciclo de migração típico](migration-guide-cycle.md)
-        - [Monitoramento da migração](migration-guide-cycle.md#monitoring-migration)
-        - [Pós-migração](migration-guide-cycle.md#post-migration)
+  - [Ciclo de migração típico](migration-guide-cycle.md)
+    - [Monitoramento da migração](migration-guide-cycle.md#monitoring-migration)
+    - [Pós-migração](migration-guide-cycle.md#post-migration)
 
 ## <a name="assumptions"></a>Suposições
 

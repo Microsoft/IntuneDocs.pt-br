@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 45bcafad3dc6c2a407e1b7b88e07f4021e8b5a36
-ms.sourcegitcommit: 7315fe72b7e55c5dcffc6d87f185f3c2cded9028
+ms.openlocfilehash: a2084ad1ec0deefd24c0d61f69d99ee11149af96
+ms.sourcegitcommit: 7c251948811b8b817e9fe590b77f23aed95b2d4e
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/02/2019
-ms.locfileid: "67528297"
+ms.lasthandoff: 07/15/2019
+ms.locfileid: "67882743"
 ---
 # <a name="enable-the-mobile-threat-defense-connector-in-intune"></a>Habilitar o conector do Defesa contra Ameaças Móveis no Intune
 
@@ -50,10 +50,10 @@ Durante a instalação do MTD (Defesa contra Ameaças Móveis), você configurou
 Você pode decidir quais opções de alternância de MTD você precisa habilitar de acordo com os requisitos da sua organização. Veja mais detalhes abaixo:
 
 - **Conectar dispositivos Android 4.1 e posterior ao [nome do parceiro de MTD] para o Work MTD**: Ao habilitar essa opção, você poderá fazer com que os dispositivos Android 4.1 e posterior relatem os riscos de segurança novamente ao Intune.
-    - **Marcar como fora de conformidade se nenhum dado for recebido**: Se o Intune não receber dados sobre um dispositivo nessa plataforma do parceiro de MTD, considere o dispositivo fora de conformidade.
+  - **Marcar como fora de conformidade se nenhum dado for recebido**: Se o Intune não receber dados sobre um dispositivo nessa plataforma do parceiro de MTD, considere o dispositivo fora de conformidade.
 <br></br>
 - **Conectar dispositivos iOS 8.0 e posterior ao [nome do parceiro de MTD] para o Work MTD**: Ao habilitar essa opção, você poderá fazer com que dispositivos iOS 8.0 e posterior relatem os riscos de segurança novamente ao Intune.
-    - **Marcar como fora de conformidade se nenhum dado for recebido**: Se o Intune não receber dados sobre um dispositivo nessa plataforma do parceiro de MTD, considere o dispositivo fora de conformidade.
+  - **Marcar como fora de conformidade se nenhum dado for recebido**: Se o Intune não receber dados sobre um dispositivo nessa plataforma do parceiro de MTD, considere o dispositivo fora de conformidade.
 <br></br>
 - **Habilitar a Sincronização de Aplicativos para Dispositivos iOS**: Permite que esse parceiro de Defesa Contra Ameaças Móveis solicite metadados de aplicativos do iOS do Intune para uso para fins de análise de ameaças.
 

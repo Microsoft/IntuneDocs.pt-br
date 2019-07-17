@@ -14,12 +14,12 @@ ms.technology: ''
 ms.suite: ems
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 2d3b6aeb7efc60d32891f4b1c69b387a61a2bc25
-ms.sourcegitcommit: 916fed64f3d173498a2905c7ed8d2d6416e34061
+ms.openlocfilehash: 946d46baf17a5ffdd4b567adca32b651cacb72bb
+ms.sourcegitcommit: 7c251948811b8b817e9fe590b77f23aed95b2d4e
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/23/2019
-ms.locfileid: "66040507"
+ms.lasthandoff: 07/15/2019
+ms.locfileid: "67882235"
 ---
 # <a name="intune-tenant-status-page"></a>Página Status do Locatário do Intune
 A página Status do Locatário é um hub centralizado em que é possível exibir os detalhes atuais e importantes sobre o seu locatário. Os detalhes incluem a disponibilidade e o uso da licença, o status do conector e comunicações importantes sobre o serviço do Intune.  
@@ -48,14 +48,14 @@ Quando há mais de um único conector de qualquer tipo, o status é um resumo de
 
 **Status do conector:**
 - **Não íntegro:**
-    - O certificado ou a credencial expirou
-    - A última sincronização foi há três ou mais dias
+  - O certificado ou a credencial expirou
+  - A última sincronização foi há três ou mais dias
 - **Aviso:**
-    - O certificado ou a credencial expirará dentro de sete dias
-    - A última sincronização foi há mais de um dia
+  - O certificado ou a credencial expirará dentro de sete dias
+  - A última sincronização foi há mais de um dia
 - **Íntegro:**
-    - O certificado ou a credencial não expirará nos próximos sete dias
-    - A última sincronização foi há menos de um dia  
+  - O certificado ou a credencial não expirará nos próximos sete dias
+  - A última sincronização foi há menos de um dia  
 
 Quando você seleciona um conector na lista, o portal apresenta a página relevante para criar ou configurar esse conector.  Por exemplo, quando você seleciona o conector **Data de Expiração do VPP**, a página **Tokens do Volume Purchase Program do iOS** é aberta, na qual você pode exibir mais detalhes sobre esse conector. Em seguida, você pode criar uma configuração ou editar e corrigir problemas com uma existente.  
 

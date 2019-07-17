@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 8bcc9aa527ed27ef35db901117ceb8f4c8d10c97
-ms.sourcegitcommit: bccfbf1e3bdc31382189fc4489d337d1a554e6a1
+ms.openlocfilehash: 9a24c4b45b962f77846b4f7f7add3872daf38635
+ms.sourcegitcommit: 7c251948811b8b817e9fe590b77f23aed95b2d4e
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/03/2019
-ms.locfileid: "67546891"
+ms.lasthandoff: 07/15/2019
+ms.locfileid: "67883783"
 ---
 # <a name="reassign-conditional-access-policies-from-intune-classic-portal-to-the-azure-portal"></a>Reatribuir políticas de Acesso Condicional no portal clássico do Intune para o portal do Azure
 
@@ -38,14 +38,14 @@ Se você estiver pronto para mudar para o portal do Azure, siga as etapas neste 
 
 - Desabilite as políticas condicionais no Portal Clássico do Intune depois de verificar se as novas políticas estão funcionando conforme o esperado no novo Portal do Azure.
 <br /><br />
-    - **Antes de desabilitar** as políticas de Acesso Condicional no portal clássico do Intune, planeje como você moverá os usuários para a nova política. Há duas abordagens:
+  - **Antes de desabilitar** as políticas de Acesso Condicional no portal clássico do Intune, planeje como você moverá os usuários para a nova política. Há duas abordagens:
 <br /><br />
-        - **Usar o mesmo grupo de inclusão para aplicar as políticas criadas no Portal do Azure e criar um novo grupo de isenção para ser usado com as políticas aplicadas pelo portal clássico do Intune**.
-            - Mova gradualmente alguns usuários para o grupo de isolamento especificado no portal clássico. Isso impede que as políticas direcionadas pelo portal clássico do Intune sejam aplicadas. As políticas criadas e direcionadas para o mesmo grupo de usuários no Portal do Azure são aplicadas além daquelas aplicadas no portal clássico do Intune. 
+    - **Usar o mesmo grupo de inclusão para aplicar as políticas criadas no Portal do Azure e criar um novo grupo de isenção para ser usado com as políticas aplicadas pelo portal clássico do Intune**.
+      - Mova gradualmente alguns usuários para o grupo de isolamento especificado no portal clássico. Isso impede que as políticas direcionadas pelo portal clássico do Intune sejam aplicadas. As políticas criadas e direcionadas para o mesmo grupo de usuários no Portal do Azure são aplicadas além daquelas aplicadas no portal clássico do Intune. 
 <br /><br />
-        - **Criar um novo grupo para direcionar as políticas de Acesso Condicional no portal do Azure**. Se você escolher essa abordagem, precisará fazer o seguinte:
-            - Remova gradualmente os usuários dos grupos de segurança que têm políticas de Acesso Condicional direcionadas a eles no portal clássico do Intune.
-            - Depois de confirmar que a nova política está funcionando para esses usuários, você poderá desabilitar a política no portal clássico do Intune. 
+    - **Criar um novo grupo para direcionar as políticas de Acesso Condicional no portal do Azure**. Se você escolher essa abordagem, precisará fazer o seguinte:
+      - Remova gradualmente os usuários dos grupos de segurança que têm políticas de Acesso Condicional direcionadas a eles no portal clássico do Intune.
+      - Depois de confirmar que a nova política está funcionando para esses usuários, você poderá desabilitar a política no portal clássico do Intune. 
 <br /><br />
 - Se as configurações de política de Acesso Condicional forem configuradas para usar o EAS (Exchange ActiveSync) no portal clássico do Intune, confira as [instruções neste tópico](#reassign-intune-device-based-conditional-access-policies-for-eas-clients) para **reatribuir as configurações de política de Acesso Condicional EAS no portal do Azure**.
 
@@ -64,10 +64,10 @@ Se você estiver pronto para mudar para o portal do Azure, siga as etapas neste 
 A folha **Proteção de Aplicativo do Intune** no Portal do Azure permite que os administradores definam as regras condicionais baseadas em aplicativo para que somente os aplicativos que dão suporte às políticas de proteção de aplicativo do Intune tenham permissão de acesso aos recursos corporativos. Você pode optar por sobrepor essas políticas de Acesso Condicional baseado em aplicativo usando políticas de Acesso Condicional baseado em dispositivo. Você pode combinar as políticas condicionais baseadas em aplicativo e em dispositivo (AND lógico) ou fornecer uma opção (OR lógico). Se seus requisitos de política de Acesso Condicional devem:
 
 - Exigir um dispositivo em conformidade **AND** usar o aplicativo aprovado.
-    - Você deve definir sua política de Acesso Condicional usando a [folha de Acesso Condicional do Azure Active Directory](https://portal.azure.com/#blade/Microsoft_AAD_IAM/ConditionalAccessBlade/Policies) e a [folha de Proteção de Aplicativo do Intune](https://portal.azure.com/#blade/Microsoft_Intune/SummaryBlade/0).
+  - Você deve definir sua política de Acesso Condicional usando a [folha de Acesso Condicional do Azure Active Directory](https://portal.azure.com/#blade/Microsoft_AAD_IAM/ConditionalAccessBlade/Policies) e a [folha de Proteção de Aplicativo do Intune](https://portal.azure.com/#blade/Microsoft_Intune/SummaryBlade/0).
 <br /><br />
 - Exigir um dispositivo em conformidade **OR** usar o aplicativo aprovado.
-    - Você deve definir sua política de Acesso Condicional usando as folhas de [Portal clássico do Intune](https://manage.microsoft.com) e [Proteção de Aplicativo do Intune](https://portal.azure.com/#blade/Microsoft_Intune/SummaryBlade/0).
+  - Você deve definir sua política de Acesso Condicional usando as folhas de [Portal clássico do Intune](https://manage.microsoft.com) e [Proteção de Aplicativo do Intune](https://portal.azure.com/#blade/Microsoft_Intune/SummaryBlade/0).
 
 > [!TIP] 
 > Este tópico fornece capturas de tela que comparam a experiência do usuário no portal clássico do Intune com o Portal do Azure.

@@ -16,12 +16,12 @@ ms.reviewer: dagerrit
 ms.suite: ems
 search.appverid: MET150
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 0656c199d2f6179429415161ec02ef8a9037bf6b
-ms.sourcegitcommit: bccfbf1e3bdc31382189fc4489d337d1a554e6a1
+ms.openlocfilehash: 29ae889e99a843a8569782bad2b1303c7bb4304c
+ms.sourcegitcommit: 7c251948811b8b817e9fe590b77f23aed95b2d4e
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/03/2019
-ms.locfileid: "67548372"
+ms.lasthandoff: 07/15/2019
+ms.locfileid: "67882840"
 ---
 # <a name="phase-1-prepare-microsoft-intune-for-mobile-device-management-mdm"></a>Fase 1: Preparar o Microsoft Intune para o MDM (gerenciamento de dispositivo móvel)
 
@@ -51,8 +51,8 @@ Antes de entrar nos detalhes da configuração do Intune, vamos analisar os requ
 
 - De quais termos de uso você precisa?
 
-    - Envolva o departamento jurídico o quanto antes nesta questão.
-    - Qual localização é necessária?
+  - Envolva o departamento jurídico o quanto antes nesta questão.
+  - Qual localização é necessária?
 
 - Os usuários estão familiarizados com tecnologia e TI em geral?
 
@@ -63,8 +63,8 @@ Antes de entrar nos detalhes da configuração do Intune, vamos analisar os requ
 - Quais são seus comprimentos de código PIN/senha do dispositivo atuais?
 
 - Você precisa desativar recursos do dispositivo, ou restringir determinados comportamentos do dispositivo? Você pode controlar várias configurações específicas à plataforma com perfis de configuração do dispositivo, por exemplo:
-    - Desabilitar a câmera
-    - Bloqueio para o modo de aplicativo único<br/>
+  - Desabilitar a câmera
+  - Bloqueio para o modo de aplicativo único<br/>
 
 - Para quais tipos de autenticação você precisa dar suportar? Se você precisar da autenticação baseada em certificado, quais são os tipos de certificados que devem ser provisionados?
   - O Intune pode provisionar certificados com os perfis de acesso aos recursos dos dispositivos registrados.

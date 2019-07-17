@@ -15,12 +15,12 @@ ms.reviewer: dagerrit
 ms.suite: ems
 search.appverid: MET150
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 76f5188a866e744c034fd592f9b1dfcbc9061ffa
-ms.sourcegitcommit: bccfbf1e3bdc31382189fc4489d337d1a554e6a1
+ms.openlocfilehash: 78cf3c2ff5babbfb45dfa6a41add09ef91549e8d
+ms.sourcegitcommit: 7c251948811b8b817e9fe590b77f23aed95b2d4e
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/03/2019
-ms.locfileid: "67549381"
+ms.lasthandoff: 07/15/2019
+ms.locfileid: "67885027"
 ---
 # <a name="basic-setup"></a>Configuração básica
 
@@ -61,9 +61,9 @@ Antes de migrar para o Intune, primeiro você precisa de uma assinatura do Intun
 
 - Visite [esta página](https://admin.microsoft.com/Signup/Signup.aspx?OfferId=40BE278A-DFD1-470a-9EF7-9F2596EA7FF9&dl=INTUNE_A&ali=1#0), que fornece instruções sobre como:
 
-    - Criar uma nova assinatura do Intune vinculada a um novo locatário do AAD.
+  - Criar uma nova assinatura do Intune vinculada a um novo locatário do AAD.
 
-    - Vincular a assinatura do Intune entrando em um locatário do AAD existente.
+  - Vincular a assinatura do Intune entrando em um locatário do AAD existente.
 
 ### <a name="task-2-assign-intune-user-licenses"></a>Tarefa 2: Atribuir licenças de usuário do Intune
 

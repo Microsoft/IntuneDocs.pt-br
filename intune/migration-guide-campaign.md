@@ -16,12 +16,12 @@ ms.reviewer: dagerrit
 ms.suite: ems
 search.appverid: MET150
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 546d62fdea3d1b5b7ae34f1c69423bcd0adb2025
-ms.sourcegitcommit: bccfbf1e3bdc31382189fc4489d337d1a554e6a1
+ms.openlocfilehash: 35c0c6e6b65350d3b27c9dc1d9ab55d375dac070
+ms.sourcegitcommit: 7c251948811b8b817e9fe590b77f23aed95b2d4e
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/03/2019
-ms.locfileid: "67549417"
+ms.lasthandoff: 07/15/2019
+ms.locfileid: "67882858"
 ---
 # <a name="phase-2-migration-campaign"></a>Fase 2: Campanha de migração
 
@@ -43,19 +43,19 @@ Estas são as chaves para migrar com êxito de um provedor de MDM de terceiros p
 
 - Monitore o carregamento do suporte técnico e o sucesso do registro de cada ciclo. Reserve um tempo na agenda para garantir que os critérios de sucesso possam ser avaliados para cada grupo antes de migrar o próximo. Sua implantação piloto deve validar o seguinte:
 
-    - Se as taxas de êxito e falha de registro estão dentro das expectativas.
+  - Se as taxas de êxito e falha de registro estão dentro das expectativas.
 
-    - Produtividade do usuário:
+  - Produtividade do usuário:
 
-        - Se os recursos corporativos, como VPN, Wi-Fi, email e certificados, estão funcionando.
+    - Se os recursos corporativos, como VPN, Wi-Fi, email e certificados, estão funcionando.
 
-        - Os aplicativos provisionados podem ser acessados.
+    - Os aplicativos provisionados podem ser acessados.
 
-    - Segurança de dados:
+  - Segurança de dados:
 
-        - O relatório de conformidade está ocorrendo.
+    - O relatório de conformidade está ocorrendo.
 
-        - As proteções de aplicativo móvel são impostas.
+    - As proteções de aplicativo móvel são impostas.
 
 Quando você estiver satisfeito com a primeira fase da migração, repita o [ciclo de migração](migration-guide-cycle.md) para a próxima fase.
 

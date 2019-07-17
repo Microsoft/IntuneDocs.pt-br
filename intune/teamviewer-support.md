@@ -15,12 +15,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 96c05543884e0d9a00b570fb9ed4be1cdef65ca0
-ms.sourcegitcommit: 1ba785f6e51517b63588a292ab5c45b9d9144b72
+ms.openlocfilehash: 397ca3c03c96adc9bd6b0ca691f835e3e579fba0
+ms.sourcegitcommit: 7c251948811b8b817e9fe590b77f23aed95b2d4e
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/12/2019
-ms.locfileid: "66841122"
+ms.lasthandoff: 07/15/2019
+ms.locfileid: "67882242"
 ---
 # <a name="use-teamviewer-to-remotely-administer-intune-devices"></a>Usar o TeamViewer para administrar remotamente os dispositivos do Intune
 
@@ -32,8 +32,8 @@ Os dispositivos gerenciados pelo Intune podem ser administrados remotamente usan
 
 - O administrador do Intune no Portal do Azure precisa ter as seguintes [funções do Intune](role-based-access-control.md):  
 
-    - **Atualizar assistência remota**: permite que os administradores modifiquem as configurações do conector do TeamViewer
-    - **Solicitar assistência remota**: permite que os administradores iniciem uma nova sessão de assistência remota para qualquer usuário. Os usuários com essa função não são limitados por qualquer função do Intune dentro de um escopo. Além disso, usuários ou grupos de dispositivos atribuídos com uma função do Intune dentro de um escopo também podem solicitar assistência remota. 
+  - **Atualizar assistência remota**: permite que os administradores modifiquem as configurações do conector do TeamViewer
+  - **Solicitar assistência remota**: permite que os administradores iniciem uma nova sessão de assistência remota para qualquer usuário. Os usuários com essa função não são limitados por qualquer função do Intune dentro de um escopo. Além disso, usuários ou grupos de dispositivos atribuídos com uma função do Intune dentro de um escopo também podem solicitar assistência remota. 
 
 - Uma conta do [TeamViewer](https://www.teamviewer.com) com as credenciais de conexão. Apenas algumas licenças do TeamViewer podem dar suporte à integração com o Intune. Para ver as necessidades específicas do TeamViewer, confira [TeamViewer Integration Partner: Microsoft Intune](https://www.teamviewer.com/integrations/microsoft-intune/) (Parceiro de Integração do TeamViewer: Microsoft Intune).
 

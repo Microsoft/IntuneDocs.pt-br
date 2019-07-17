@@ -14,12 +14,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 68a0372180cf516f5a0111cd8fdb7cbd9535f075
-ms.sourcegitcommit: a97b6139770719afbd713501f8e50f39636bc202
+ms.openlocfilehash: e241dc534427b97086013a12391f06bd2f342779
+ms.sourcegitcommit: 7c251948811b8b817e9fe590b77f23aed95b2d4e
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/30/2019
-ms.locfileid: "66402729"
+ms.lasthandoff: 07/15/2019
+ms.locfileid: "67883264"
 ---
 # <a name="configure-esim-cellular-profiles-in-intune---public-preview"></a>Configurar perfis de celular eSIM no Intune – versão prévia pública
 
@@ -160,12 +160,12 @@ Monitore e exiba uma lista detalhada de dispositivos que podem ser exibidos no S
 1. Selecione **Configuração do dispositivo** > **Perfis de celular eSIM** > Selecionar uma assinatura existente.
 2. Selecione **Status do Dispositivo**. O Intune mostra detalhes adicionais sobre o dispositivo:
 
-  - **Nome do Dispositivo**: Nome do dispositivo de destino
-  - **Usuário**: Usuário do dispositivo registrado
-  - **ICCID**: Código exclusivo fornecido pela operadora móvel no código de ativação instalado no dispositivo
-  - **Status de Ativação**: Status de entrega e instalação do Intune do código de ativação no dispositivo
-  - **Status do celular**: Estado fornecido pela operadora móvel. Faça um acompanhamento com a operadora móvel para solucionar problemas.
-  - **Último check-in**: Data da última comunicação do dispositivo com o Intune
+    - **Nome do Dispositivo**: Nome do dispositivo de destino
+    - **Usuário**: Usuário do dispositivo registrado
+    - **ICCID**: Código exclusivo fornecido pela operadora móvel no código de ativação instalado no dispositivo
+    - **Status de Ativação**: Status de entrega e instalação do Intune do código de ativação no dispositivo
+    - **Status do celular**: Estado fornecido pela operadora móvel. Faça um acompanhamento com a operadora móvel para solucionar problemas.
+    - **Último check-in**: Data da última comunicação do dispositivo com o Intune
 
 #### <a name="monitor-esim-profile-details-on-the-actual-device"></a>Monitorar os detalhes do perfil do eSIM no dispositivo real
 

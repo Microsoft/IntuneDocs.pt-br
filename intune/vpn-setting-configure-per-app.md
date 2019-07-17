@@ -16,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: ce08545931d3580ce5ae524b1023d2b734b88f7b
-ms.sourcegitcommit: 78ae22b1a7cb221648fc7346db751269d9c898b1
+ms.openlocfilehash: 1dc78f8126e0fa9c65fdbe70cfd909da70391e3e
+ms.sourcegitcommit: 7c251948811b8b817e9fe590b77f23aed95b2d4e
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66373665"
+ms.lasthandoff: 07/15/2019
+ms.locfileid: "67884529"
 ---
 # <a name="set-up-per-app-virtual-private-network-vpn-for-ios-devices-in-intune"></a>Configurar VPN (rede virtual privada) por aplicativo para dispositivos iOS no Intune
 
@@ -150,16 +150,16 @@ Com a VPN por aplicativo configurada e associada ao seu aplicativo, verifique se
 
 ### <a name="before-you-attempt-to-connect"></a>Antes de tentar se conectar
 
- - Verifique se você implantou todas as políticas mencionadas acima no mesmo grupo. Caso contrário, a experiência de VPN por aplicativo não funcionará.
- - Se você estiver usando o aplicativo de VPN da Pulse Secure ou um aplicativo cliente personalizado, haverá a opção de usar o túnel de camada de pacote ou de camada de aplicativo. Defina o valor de **ProviderType** como **app-proxy** para o túnel de camada de aplicativo ou como **packet-tunnel** para o túnel de camada de pacote. Verifique a documentação do seu provedor de VPN para verificar se você está usando o valor correto.
+- Verifique se você implantou todas as políticas mencionadas acima no mesmo grupo. Caso contrário, a experiência de VPN por aplicativo não funcionará.
+- Se você estiver usando o aplicativo de VPN da Pulse Secure ou um aplicativo cliente personalizado, haverá a opção de usar o túnel de camada de pacote ou de camada de aplicativo. Defina o valor de **ProviderType** como **app-proxy** para o túnel de camada de aplicativo ou como **packet-tunnel** para o túnel de camada de pacote. Verifique a documentação do seu provedor de VPN para verificar se você está usando o valor correto.
 
 ### <a name="connect-using-the-per-app-vpn"></a>Conectar-se usando a VPN por aplicativo
 
 Confira a experiência de toque zero ao se conectar sem a necessidade de selecionar a VPN ou digitar suas credenciais. A experiência de toque zero significa que:
 
- - O dispositivo não pede para você confiar no servidor da VPN. Ou seja, o usuário não vê a caixa de diálogo **Confiança Dinâmica**.
- - O usuário não precisa digitar credenciais.
- - O dispositivo do usuário é conectado à VPN quando o usuário abre um dos aplicativos associados.
+- O dispositivo não pede para você confiar no servidor da VPN. Ou seja, o usuário não vê a caixa de diálogo **Confiança Dinâmica**.
+- O usuário não precisa digitar credenciais.
+- O dispositivo do usuário é conectado à VPN quando o usuário abre um dos aplicativos associados.
 
 <!-- ## Troubleshooting the per-app VPN
 

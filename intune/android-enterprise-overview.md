@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 1649c6256e4df61b538e2adee87512617b677bb4
-ms.sourcegitcommit: bccfbf1e3bdc31382189fc4489d337d1a554e6a1
+ms.openlocfilehash: e6a003e4ab912452f278c838c600f75ddec0c1f5
+ms.sourcegitcommit: 7c251948811b8b817e9fe590b77f23aed95b2d4e
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/03/2019
-ms.locfileid: "67547503"
+ms.lasthandoff: 07/15/2019
+ms.locfileid: "67885136"
 ---
 # <a name="manage-android-work-profile-devices-with-intune"></a>Gerenciar dispositivos de perfil de trabalho Android com o Intune
 
@@ -71,9 +71,9 @@ O suporte a VPN é semelhante aos perfis VPN do Android. Os mesmos provedores VP
 - **VPN com escopo de perfil de trabalho** – as conexões VPN são limitadas apenas aos aplicativos implantados no perfil de trabalho. Somente aplicativos gerenciados pelo Android Enterprise podem usar a conexão VPN. Aplicativos pessoais no dispositivo não podem usar uma conexão VPN gerenciada. Para saber mais, confira [Configurações de VPN do Android Enterprise](vpn-settings-android.md#android-enterprise-vpn-settings).
 
 - **VPN específica do aplicativo** – a VPN específica do aplicativo pode ser configurada no Intune quando o provedor VPN dá suporte para:
-    - configuração para VPN específica do aplicativo
-    - a funcionalidade de configurar a VPN por aplicativo por meio do perfil de configuração de aplicativos do Android Enterprise.
-    Para obter mais informações, confira [Usar um perfil personalizado do Microsoft Intune para criar um perfil VPN por aplicativo para dispositivos Android](android-pulse-secure-per-app-vpn.md).
+  - configuração para VPN específica do aplicativo
+  - a funcionalidade de configurar a VPN por aplicativo por meio do perfil de configuração de aplicativos do Android Enterprise.
+  Para obter mais informações, confira [Usar um perfil personalizado do Microsoft Intune para criar um perfil VPN por aplicativo para dispositivos Android](android-pulse-secure-per-app-vpn.md).
 
 ## <a name="certificate-profiles"></a>Perfis de certificado
 

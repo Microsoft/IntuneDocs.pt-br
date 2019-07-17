@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 8168cdaec4d6616b12fa4da225c84fa2d239994d
-ms.sourcegitcommit: 1b7ee2164ac9490df4efa83c5479344622c181b5
+ms.openlocfilehash: 804c6485252883672de13bf13729b28a4d7d2f94
+ms.sourcegitcommit: 7c251948811b8b817e9fe590b77f23aed95b2d4e
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/08/2019
-ms.locfileid: "67648648"
+ms.lasthandoff: 07/15/2019
+ms.locfileid: "67883850"
 ---
 # <a name="windows-10-app-deployment-using-microsoft-intune"></a>Implantação de aplicativo do Windows 10 usando o Microsoft Intune 
 
@@ -47,22 +47,22 @@ Aplicativos da Microsoft Store para Empresas que são aplicativos modernos adqui
 Dependendo do tipo de aplicativo, o aplicativo pode ser instalado em um dispositivo Windows 10 de uma destas duas maneiras:
 
 - **Contexto de usuário**: quando um aplicativo for implantado no contexto de usuário, o aplicativo gerenciado será instalado para esse usuário no dispositivo quando o usuário entrar no dispositivo. Observe que a instalação do aplicativo não funcionará enquanto o usuário não entrar no dispositivo. 
-    - Os aplicativos de linha de negócios modernos e os aplicativos da Microsoft Store para Empresas (online e offline) podem ser implantados no contexto de usuário e darão suporte à intenção Obrigatória e Disponível.
-    - Aplicativos do Win32 criados como **Modo de Usuário** ou **Modo Dual** podem ser implantados no contexto do usuário e dar suporte às intenções **Obrigatória** e **Disponível**. 
+  - Os aplicativos de linha de negócios modernos e os aplicativos da Microsoft Store para Empresas (online e offline) podem ser implantados no contexto de usuário e darão suporte à intenção Obrigatória e Disponível.
+  - Aplicativos do Win32 criados como **Modo de Usuário** ou **Modo Dual** podem ser implantados no contexto do usuário e dar suporte às intenções **Obrigatória** e **Disponível**. 
 - **Contexto de dispositivo**: quando um aplicativo for implantado no contexto de dispositivo, o aplicativo gerenciado será instalado diretamente no dispositivo pelo Intune.
-    - Somente os aplicativos de linha de negócios modernos e os aplicativos licenciados offline da Microsoft Store para Empresas podem ser implantados no contexto de dispositivo e darão suporte apenas à intenção Obrigatório.
-    - Aplicativos do Win32 criados como **Modo do Computador** ou **Modo Dual** podem ser implantados no contexto do usuário e dar suporte apenas à intenção **Obrigatória**.
+  - Somente os aplicativos de linha de negócios modernos e os aplicativos licenciados offline da Microsoft Store para Empresas podem ser implantados no contexto de dispositivo e darão suporte apenas à intenção Obrigatório.
+  - Aplicativos do Win32 criados como **Modo do Computador** ou **Modo Dual** podem ser implantados no contexto do usuário e dar suporte apenas à intenção **Obrigatória**.
 
 > [!NOTE]
 > Para aplicativos do Win32 criados como **Modo Dual**, você (o administrador) precisará escolher se o aplicativo funcionará como **Modo de Usuário** ou **Modo do Computador** para todas as atribuições associadas a essa instância. O contexto de implantação não pode ser alterado por atribuição.  
 
 Quando um aplicativo é implantado no contexto de dispositivo, a instalação terá êxito apenas quando for direcionada a um dispositivo que dê suporte ao contexto de dispositivo. Além disso, a implantação no contexto de dispositivo dá suporte às seguintes condições:
 - Se um aplicativo for implantado no contexto de dispositivo e direcionado a um usuário, a instalação falhará com o seguinte status e o erro será exibido no console de administração:
-    - Status: Falha.
-    - Erro: um usuário não pode ser direcionado com uma instalação de contexto de Dispositivo.
+  - Status: Falha.
+  - Erro: um usuário não pode ser direcionado com uma instalação de contexto de Dispositivo.
 - Se um aplicativo for implantado no contexto de dispositivo, mas direcionado a um dispositivo que não dê suporte ao contexto de dispositivo, a instalação falhará com o seguinte status e erro no console de administração:
-    - Status: Falha.
-    - Erro: essa plataforma não dá suporte a instalações de contexto de dispositivo. 
+  - Status: Falha.
+  - Erro: essa plataforma não dá suporte a instalações de contexto de dispositivo. 
 
 > [!Note]
 > Depois que uma atribuição de aplicativo é salva com uma implantação específica, o contexto não pode ser alterado quanto à essa atribuição, exceto em aplicativos modernos. No caso de aplicativos modernos, o contexto pode ser alterado do contexto de usuário para o contexto de dispositivo. 

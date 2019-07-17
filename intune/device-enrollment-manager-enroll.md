@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 2ea1ca5f2661d51088efae79d97da40ce8737b7e
-ms.sourcegitcommit: bccfbf1e3bdc31382189fc4489d337d1a554e6a1
+ms.openlocfilehash: f2548e0ff3d4406f64d2091001c38056fe585896
+ms.sourcegitcommit: 7c251948811b8b817e9fe590b77f23aed95b2d4e
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/03/2019
-ms.locfileid: "67546723"
+ms.lasthandoff: 07/15/2019
+ms.locfileid: "67883543"
 ---
 # <a name="enroll-devices-in-intune-by-using-a-device-enrollment-manager-account"></a>Registrar dispositivos no Intune por meio do uso de uma conta do gerenciador de registro de dispositivos
 
@@ -32,13 +32,13 @@ Você pode registrar até 1.000 dispositivos móveis com uma única conta do Azu
 
 Contas de usuário e dispositivos do DEM registrados com uma conta de usuário do DEM têm as seguintes limitações:
 
-  - um usuário de conta do DEM deve receber uma licença do Intune.
-  - O apagamento não pode ser feito do Portal da Empresa. O apagamento de um dispositivo registrado por uma conta de usuário do DEM pode ser feito do Intune no portal do Azure.
-  - Somente o dispositivo local é exibido no aplicativo Portal da Empresa ou no site.
-  - Contas de usuário do DEM não podem usar aplicativos VPP (Apple Volume Purchase Program) com licenças de usuário do Apple VPP devido aos requisitos de ID da Apple para gerenciamento de aplicativo.
-  - Os dispositivos poderão instalar aplicativos se tiverem licenças de dispositivo do Apple VPP.
-  - Os dispositivos estão bloqueados para Acesso Condicional, com exceção do Windows 10 1803+
-  - Cada dispositivo registrado em contas do DEM precisa ser corretamente licenciado para ser gerenciado pelo Intune. A licença poderia ser uma licença de usuário ou de dispositivo do Intune.
+- um usuário de conta do DEM deve receber uma licença do Intune.
+- O apagamento não pode ser feito do Portal da Empresa. O apagamento de um dispositivo registrado por uma conta de usuário do DEM pode ser feito do Intune no portal do Azure.
+- Somente o dispositivo local é exibido no aplicativo Portal da Empresa ou no site.
+- Contas de usuário do DEM não podem usar aplicativos VPP (Apple Volume Purchase Program) com licenças de usuário do Apple VPP devido aos requisitos de ID da Apple para gerenciamento de aplicativo.
+- Os dispositivos poderão instalar aplicativos se tiverem licenças de dispositivo do Apple VPP.
+- Os dispositivos estão bloqueados para Acesso Condicional, com exceção do Windows 10 1803+
+- Cada dispositivo registrado em contas do DEM precisa ser corretamente licenciado para ser gerenciado pelo Intune. A licença poderia ser uma licença de usuário ou de dispositivo do Intune.
 
 
 

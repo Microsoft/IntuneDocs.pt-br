@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 0452229d6c1ea2d9e87a302675167d200bd348eb
-ms.sourcegitcommit: 6bba9f2ef4d1ec699f5713a4da4f960e7317f1cd
+ms.openlocfilehash: 73c8167c91129d79a98674a92e7ccc5487a6b283
+ms.sourcegitcommit: 7c251948811b8b817e9fe590b77f23aed95b2d4e
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/26/2019
-ms.locfileid: "67407164"
+ms.lasthandoff: 07/15/2019
+ms.locfileid: "67885077"
 ---
 # <a name="what-is-mobile-threat-defense-integration-with-intune"></a>O que é a integração da Defesa contra Ameaças Móveis com o Intune?
 O Intune pode integrar dados de um fornecedor de Defesa contra Ameaças Móveis como uma fonte de informações para políticas de conformidade e regras de acesso condicional. É possível usar essas informações para ajudar a proteger recursos corporativos como Exchange e SharePoint bloqueando o acesso de dispositivos móveis comprometidos.  
@@ -47,14 +47,14 @@ Esse serviço é uma aceitação; nenhuma informação de inventário de aplicat
 **Inventário de aplicativos**  
 Se você habilitar a Sincronização do Aplicativo para dispositivos iOS, os inventários de dispositivos iOS pessoais e corporativos serão enviados para o provedor de serviços MTD. Os dados de inventário de aplicativos incluem:
 
- - ID do aplicativo
- - Versão de Aplicativo
- - Versão Curta do Aplicativo
- - Nome do Aplicativo
- - Tamanho do Pacote do Aplicativo
- - Tamanho Dinâmico do Aplicativo
- - Indica se o aplicativo é validado ou não
- - Indica se o aplicativo é gerenciado ou não
+- ID do aplicativo
+- Versão de Aplicativo
+- Versão Curta do Aplicativo
+- Nome do Aplicativo
+- Tamanho do Pacote do Aplicativo
+- Tamanho Dinâmico do Aplicativo
+- Indica se o aplicativo é validado ou não
+- Indica se o aplicativo é gerenciado ou não
 
 ## <a name="sample-scenarios"></a>Cenários de exemplo
 

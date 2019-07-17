@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: cd185a42d36de6aaf1e6d0ff0b8e34619b02c093
-ms.sourcegitcommit: ede86a3cb094c12e3e218b956abb9935bec76902
+ms.openlocfilehash: 513001993d890afba848138e01ff823796ea773d
+ms.sourcegitcommit: 7c251948811b8b817e9fe590b77f23aed95b2d4e
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/05/2019
-ms.locfileid: "67572431"
+ms.lasthandoff: 07/15/2019
+ms.locfileid: "67884432"
 ---
 # <a name="set-up-symantec-endpoint-protection-mobile-integration-with-intune"></a>Configurar a integração do Symantec Endpoint Protection Mobile com o Intune
 
@@ -44,7 +44,7 @@ O SEP Mobile é compatível com dois modos de integração com o Intune:
 
 - **Integração somente leitura (instalação Básica):** Somente inventaria dispositivos do Azure Active Directory e popula-os no console de Gerenciamento Móvel do Symantec Endpoint Protection.
 <br>
-    - Se as caixas **Relatar a integridade e o risco de dispositivos ao Intune** e **Relatar também incidentes de segurança ao Intune** não estiverem marcadas no Symantec Endpoint Protection Mobile Management, a integração será somente leitura e, portanto, nunca alterará o estado de um dispositivo (em conformidade ou não em conformidade) no Intune.
+  - Se as caixas **Relatar a integridade e o risco de dispositivos ao Intune** e **Relatar também incidentes de segurança ao Intune** não estiverem marcadas no Symantec Endpoint Protection Mobile Management, a integração será somente leitura e, portanto, nunca alterará o estado de um dispositivo (em conformidade ou não em conformidade) no Intune.
 <br></br>
 - **Integração completa:** Permite que o SEP Mobile relate dispositivos em risco e detalhes de incidentes de segurança ao Intune, o que cria uma comunicação bidirecional entre os dois serviços de nuvem.
 

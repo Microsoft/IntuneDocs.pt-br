@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 9cb08757732aa5cad08ed0a4b535fb20c0aa1df0
-ms.sourcegitcommit: 7315fe72b7e55c5dcffc6d87f185f3c2cded9028
+ms.openlocfilehash: 703509c316a22995d26223f6c386de0a2ec66c31
+ms.sourcegitcommit: 7c251948811b8b817e9fe590b77f23aed95b2d4e
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/02/2019
-ms.locfileid: "67528264"
+ms.lasthandoff: 07/15/2019
+ms.locfileid: "67882714"
 ---
 # <a name="determine-use-case-scenario-requirements"></a>Determinar os requisitos de cenários de caso de uso
 
@@ -50,21 +50,21 @@ Estes são alguns exemplos de requisitos de casos de uso de uma organização, m
 Estes são mais alguns exemplos que podem ser usados na coluna “Requisitos”:
 
 - **Email seguro**
-    - Acesso condicional para o Exchange Online/Local
-    - Políticas de proteção do aplicativo do Outlook
+  - Acesso condicional para o Exchange Online/Local
+  - Políticas de proteção do aplicativo do Outlook
 
 - **Configurações do dispositivo**
-    - Configuração de PIN com quatro, seis caracteres
-    - Restringir o backup na nuvem
+  - Configuração de PIN com quatro, seis caracteres
+  - Restringir o backup na nuvem
 
 - **Perfis**
-    - Wi-Fi
-    - VPN
-    - Email (Windows 10 Mobile)
+  - Wi-Fi
+  - VPN
+  - Email (Windows 10 Mobile)
 
 - **Apps**
-    - Office 365 com políticas de proteção do aplicativo
-    - LOB (linha de negócios) com políticas de proteção do aplicativo
+  - Office 365 com políticas de proteção do aplicativo
+  - LOB (linha de negócios) com políticas de proteção do aplicativo
 
 ## <a name="next-steps"></a>Próximas etapas
 

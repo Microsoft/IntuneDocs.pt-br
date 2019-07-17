@@ -16,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 6082f4de6a881f211f2c7569fcd052ba1f37ad7b
-ms.sourcegitcommit: 916fed64f3d173498a2905c7ed8d2d6416e34061
+ms.openlocfilehash: d96167eb37ac7c3c90bad82783e9ce06814f8c88
+ms.sourcegitcommit: 7c251948811b8b817e9fe590b77f23aed95b2d4e
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/23/2019
-ms.locfileid: "66045919"
+ms.lasthandoff: 07/15/2019
+ms.locfileid: "67884775"
 ---
 # <a name="data-collection-in-intune"></a>Coleta de dados no Intune
 
@@ -41,48 +41,48 @@ A maioria dos dados pessoais coletados pelo Intune são dados identificados. Ess
 Os dados identificados coletados pelo Intune podem incluir, entre outros: 
 
 - Informações do usuário
-    - Exibição do nome do proprietário/usuário (o nome registrado pelo Azure do usuário, conforme identificado pela theAzureUserID)
-    - Nome UPN ou endereço de email
-    - Identificações do usuário de terceiros (como a AppleID)
+  - Exibição do nome do proprietário/usuário (o nome registrado pelo Azure do usuário, conforme identificado pela theAzureUserID)
+  - Nome UPN ou endereço de email
+  - Identificações do usuário de terceiros (como a AppleID)
 - Informações de inventário de hardware
-    - Nome do dispositivo
-    - Fabricante
-    - Sistema operacional
-    - Número de série
-    - Número IMEI
-    - Endereço IP
-    - MacAddress de Wi-Fi
-    - ICCID
-    - Número do telefone
+  - Nome do dispositivo
+  - Fabricante
+  - Sistema operacional
+  - Número de série
+  - Número IMEI
+  - Endereço IP
+  - MacAddress de Wi-Fi
+  - ICCID
+  - Número do telefone
 - Informações do log de auditoria, incluindo dados sobre as seguintes atividades
-    - Gerenciar
-    - Criar
-    - Atualizar (editar)
-    - Excluir
-    - Atribuir
-    - Tarefas remotas
+  - Gerenciar
+  - Criar
+  - Atualizar (editar)
+  - Excluir
+  - Atribuir
+  - Tarefas remotas
 - Informações de suporte
-    - Informações de contato (nome, número de telefone, endereço de email)
-    - Conversas por email com membros da equipe de suporte, de produto e/ou de experiência do cliente da Microsoft
+  - Informações de contato (nome, número de telefone, endereço de email)
+  - Conversas por email com membros da equipe de suporte, de produto e/ou de experiência do cliente da Microsoft
 - Informações de controle de acesso (o Intune usa esses dados para gerenciar o acesso a funções administrativas por meio de recursos, como o [Controle de Acesso Baseado em Função](role-based-access-control.md)).
-    - Autenticadores estáticos (senha do cliente)
-    - Chaves de privacidade para certificados 
+  - Autenticadores estáticos (senha do cliente)
+  - Chaves de privacidade para certificados 
 - Dados da conta e do administrador
-    - Nome e sobrenome do usuário administrador
-    - Nome de usuário administrador
-    - UPN (email)
-    - Número do telefone
-    - Endereço de email do proprietário da conta
-    - ID do Active Directory de cada administrador de TI do cliente
-    - Dados de pagamento para cobrança do cliente
-    - Chave de assinatura
+  - Nome e sobrenome do usuário administrador
+  - Nome de usuário administrador
+  - UPN (email)
+  - Número do telefone
+  - Endereço de email do proprietário da conta
+  - ID do Active Directory de cada administrador de TI do cliente
+  - Dados de pagamento para cobrança do cliente
+  - Chave de assinatura
 - Inventário de aplicativos, como
-    - nome do aplicativo
-    - Versão
-    - ID do aplicativo
-    - tamanho
-    - local de instalação
-    - Os dados de inventário de aplicativo são coletados apenas quando são marcados pelo Administrador como um dispositivo corporativo ou se o recurso de aplicativo em conformidade está ativado.  
+  - nome do aplicativo
+  - Versão
+  - ID do aplicativo
+  - tamanho
+  - local de instalação
+  - Os dados de inventário de aplicativo são coletados apenas quando são marcados pelo Administrador como um dispositivo corporativo ou se o recurso de aplicativo em conformidade está ativado.  
 - IDs de locatário de terceiros do cliente, como a ID da Apple. 
 
 ## <a name="pseudonymized-data"></a>Dados pseudoanonimizados
@@ -92,30 +92,30 @@ Os dados pseudoanonimizados estão associados a um identificador exclusivo, norm
 Os dados pseudoanonimizados coletados pelo Intune podem incluir, entre outros: 
 
 - Dados de diagnóstico, de desempenho e de uso vinculados a um usuário e/ou um dispositivo
-    - O número de vezes que um recurso é usado
-    - Os comandos fornecidos para o recurso
-    - Tempo de resposta de um serviço
-    - Taxas de sucesso de instalações e outros processos
-    - Erros do aplicativo do Portal da Empresa do Intune
-    - Identificadores de usuário e de dispositivo
-    - Identificadores para fins de referência, correlação e gerenciamento 
+  - O número de vezes que um recurso é usado
+  - Os comandos fornecidos para o recurso
+  - Tempo de resposta de um serviço
+  - Taxas de sucesso de instalações e outros processos
+  - Erros do aplicativo do Portal da Empresa do Intune
+  - Identificadores de usuário e de dispositivo
+  - Identificadores para fins de referência, correlação e gerenciamento 
 - Dados do dispositivo não vinculados a um dispositivo ou um usuário (se esses dados estão vinculados a um dispositivo ou um usuário, o Intune trata-os como dados identificados)
-    - ID do dispositivo Intune
-    - ID do dispositivo do Azure Active Directory
-    - ID de gerenciamento de dispositivo do Intune
-    - ID do locatário
-    - ID da Conta
-    - ID do dispositivo EAS
-    - IDs específicas à plataforma
-    - AppleID para dispositivos iOS
-    - Endereço Mac para dispositivos Mac
-    - ID do Windows para dispositivos Windows
+  - ID do dispositivo Intune
+  - ID do dispositivo do Azure Active Directory
+  - ID de gerenciamento de dispositivo do Intune
+  - ID do locatário
+  - ID da Conta
+  - ID do dispositivo EAS
+  - IDs específicas à plataforma
+  - AppleID para dispositivos iOS
+  - Endereço Mac para dispositivos Mac
+  - ID do Windows para dispositivos Windows
 - Informações de aplicativo gerenciado
-    - ID de aplicativo gerenciado
-    - Marcação de dispositivo de aplicativo gerenciado
-    - ID de gerenciamento de dispositivo do Intune
-    - ID do dispositivo do Azure Active Directory
-    - Chaves de criptografia
+  - ID de aplicativo gerenciado
+  - Marcação de dispositivo de aplicativo gerenciado
+  - ID de gerenciamento de dispositivo do Intune
+  - ID do dispositivo do Azure Active Directory
+  - Chaves de criptografia
 
 ## <a name="aggregated-data"></a>Dados agregados
 
@@ -125,14 +125,14 @@ Os dados agregados coletados pelo Intune podem incluir, entre outros:
 
 - Dados de uso do administrador em todos os locatários do Intune (por exemplo, controles do administrador selecionados ao interagir com o Console de administrador)
 - Dados da conta de locatário (esses dados estão disponíveis na folha do Intune)
-    - Número de dispositivos ou usuários registrados
-    - Número de plataformas de dispositivo identificadas  
-    - Número de dispositivos instalados
-    - installedDeviceCount: o número de dispositivos nos quais o aplicativo está instalado.
-    - notApplicableDeviceCount: o número de dispositivos aos quais o aplicativo não é aplicável.
-    - notInstalledDeviceCount: o número de dispositivos aos quais o aplicativo é aplicável, mas não está instalado.
-    - pendingInstallDeviceCount: o número de dispositivos aos quais o aplicativo é aplicável e a instalação está pendente.
-    
+  - Número de dispositivos ou usuários registrados
+  - Número de plataformas de dispositivo identificadas  
+  - Número de dispositivos instalados
+  - installedDeviceCount: o número de dispositivos nos quais o aplicativo está instalado.
+  - notApplicableDeviceCount: o número de dispositivos aos quais o aplicativo não é aplicável.
+  - notInstalledDeviceCount: o número de dispositivos aos quais o aplicativo é aplicável, mas não está instalado.
+  - pendingInstallDeviceCount: o número de dispositivos aos quais o aplicativo é aplicável e a instalação está pendente.
+
 ## <a name="next-steps"></a>Próximas etapas
 
 Saiba mais sobre como o Intune [armazena e processa](privacy-data-store-process.md) e [compartilha](privacy-data-secure-share.md) os dados pessoais. 

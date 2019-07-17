@@ -15,12 +15,12 @@ search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
 mr.reviewer: karthib
-ms.openlocfilehash: 2bebdf712ccf325c6742e6bb326a8fb2768023b7
-ms.sourcegitcommit: 14f4e97de5699394684939e6f681062b5d4c1671
+ms.openlocfilehash: 1a5cd898545bae51395352d5cf1e7b1ee9bd22dd
+ms.sourcegitcommit: 7c251948811b8b817e9fe590b77f23aed95b2d4e
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/19/2019
-ms.locfileid: "67251178"
+ms.lasthandoff: 07/15/2019
+ms.locfileid: "67883245"
 ---
 # <a name="add-endpoint-protection-settings-in-intune"></a>Adicionar configurações de proteção de ponto de extremidade no Intune
 
@@ -33,8 +33,8 @@ Com o Intune, é possível usar perfis de configuração de dispositivo para ger
 Por exemplo, você pode criar um perfil de proteção de ponto de extremidade que permita apenas a usuários do macOS instalar aplicativos da Mac App Store. Ou habilite a Windows SmartScreen durante a execução de aplicativos em dispositivos Windows 10.
 
 Antes de criar um perfil, consulte os seguintes artigos que detalham as configurações de proteção de ponto de extremidade que o Intune pode gerenciar para cada plataforma compatível: 
-   - [Configurações do macOS](endpoint-protection-macos.md)
-   - [Configurações do Windows 10](endpoint-protection-windows-10.md)
+- [Configurações do macOS](endpoint-protection-macos.md)
+- [Configurações do Windows 10](endpoint-protection-windows-10.md)
 
 ## <a name="create-a-device-profile-containing-endpoint-protection-settings"></a>Criar um perfil de dispositivo contendo configurações de proteção de ponto de extremidade
 

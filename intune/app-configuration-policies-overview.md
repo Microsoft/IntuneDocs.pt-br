@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 10dad24ee41f63dcc304d95e9b733f7de3f1b71a
-ms.sourcegitcommit: 1b7ee2164ac9490df4efa83c5479344622c181b5
+ms.openlocfilehash: 1e5ddf39a201f1a70f997e03f0b65706853adefa
+ms.sourcegitcommit: 7c251948811b8b817e9fe590b77f23aed95b2d4e
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/08/2019
-ms.locfileid: "67649033"
+ms.lasthandoff: 07/15/2019
+ms.locfileid: "67885112"
 ---
 # <a name="app-configuration-policies-for-microsoft-intune"></a>Políticas de configuração de aplicativo do Microsoft Intune
 
@@ -44,8 +44,8 @@ As políticas de configuração de aplicativos podem ajudar a eliminar os proble
 As definições de configuração são usadas sempre que o aplicativo verifica a existência delas. Normalmente, um aplicativo verifica as definições de configuração na primeira vez em que é executado pelo usuário.
 
 Você tem duas opções de como usar as configurações do aplicativo com o Intune:
- - **Dispositivos gerenciados** – o dispositivo é gerenciado pelo Intune como o provedor de MDM (gerenciamento de dispositivo móvel).
- - **Aplicativos gerenciados** – um aplicativo é gerenciado sem registro de dispositivos.
+- **Dispositivos gerenciados** – o dispositivo é gerenciado pelo Intune como o provedor de MDM (gerenciamento de dispositivo móvel).
+- **Aplicativos gerenciados** – um aplicativo é gerenciado sem registro de dispositivos.
 
 > [!NOTE]
 > Como administrador do Microsoft Intune, é possível controlar quais contas de usuário são adicionadas aos aplicativos do Microsoft Office em dispositivos gerenciados. É possível limitar o acesso apenas a contas permitidas de usuários corporativos e bloquear contas pessoais em dispositivos registrados. Os aplicativos de suporte processam a configuração do aplicativo, removem e bloqueiam contas não aprovadas.
@@ -66,9 +66,9 @@ Além disso, você pode usar a API do Graph para realizar as tarefas de configur
 
 ### <a name="managed-devices"></a>Dispositivos gerenciados
 
- - Saiba como usar a configuração de aplicativo com seus dispositivos iOS.  Confira [Adicionar políticas de configuração de aplicativos para dispositivos iOS gerenciados](app-configuration-policies-use-ios.md).
- - Saiba como usar a configuração de aplicativo com seus dispositivos Android.  Consulte [Adicionar políticas de configuração de aplicativo para dispositivos Android gerenciados](app-configuration-policies-use-android.md).
+- Saiba como usar a configuração de aplicativo com seus dispositivos iOS.  Confira [Adicionar políticas de configuração de aplicativos para dispositivos iOS gerenciados](app-configuration-policies-use-ios.md).
+- Saiba como usar a configuração de aplicativo com seus dispositivos Android.  Consulte [Adicionar políticas de configuração de aplicativo para dispositivos Android gerenciados](app-configuration-policies-use-android.md).
 
 ### <a name="managed-apps"></a>Aplicativos gerenciados
 
- - Saiba como usar a configuração de aplicativo com aplicativos gerenciados. Consulte [Adicionar políticas de configuração de aplicativo para aplicativos gerenciados sem registro de dispositivo](app-configuration-policies-managed-app.md).
+- Saiba como usar a configuração de aplicativo com aplicativos gerenciados. Consulte [Adicionar políticas de configuração de aplicativo para aplicativos gerenciados sem registro de dispositivo](app-configuration-policies-managed-app.md).

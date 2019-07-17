@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: da828b162e008541cb5cb2b5d15092d0fce417c5
-ms.sourcegitcommit: ede86a3cb094c12e3e218b956abb9935bec76902
+ms.openlocfilehash: 7663009c7d45171ab6469f7f6e96b4c8f979b744
+ms.sourcegitcommit: 7c251948811b8b817e9fe590b77f23aed95b2d4e
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/05/2019
-ms.locfileid: "67572544"
+ms.lasthandoff: 07/15/2019
+ms.locfileid: "67883278"
 ---
 # <a name="set-up-the-intune-on-premises-exchange-connector-in-microsoft-intune"></a>Configurar o conector do Exchange local do Intune no Microsoft Intune
 As informações deste artigo ajudarão você a instalar e monitorar o conector local do Exchange Active Sync para o Intune.  Use o conector do Exchange local do Intune com suas [políticas de acesso condicional para permitir ou bloquear o acesso às suas caixas de correio locais do Exchange](conditional-access-exchange-create.md). 
@@ -58,18 +58,18 @@ A tabela a seguir lista os requisitos para o computador no qual o conector do Ex
 Crie uma conta de usuário do Active Directory que será usada pelo conector do Exchange local. A conta deve ter permissão para executar os seguintes cmdlets do Windows PowerShell Exchange necessários:
 
 
- - Get-ActiveSyncOrganizationSettings, Set-ActiveSyncOrganizationSettings
- - Get-CasMailbox, Set-CasMailbox
- - Get-ActiveSyncMailboxPolicy, Set-ActiveSyncMailboxPolicy, New-ActiveSyncMailboxPolicy, Remove-ActiveSyncMailboxPolicy
- - Get-ActiveSyncDeviceAccessRule, Set-ActiveSyncDeviceAccessRule, New-ActiveSyncDeviceAccessRule, Remove-ActiveSyncDeviceAccessRule
- - Get-ActiveSyncDeviceStatistics
- - Get-ActiveSyncDevice
- - Get-ExchangeServer
- - Get-ActiveSyncDeviceClass
- - Get-Recipient
- - Clear-ActiveSyncDevice, Remove-ActiveSyncDevice
- - Set-ADServerSettings
- - Get-Command
+- Get-ActiveSyncOrganizationSettings, Set-ActiveSyncOrganizationSettings
+- Get-CasMailbox, Set-CasMailbox
+- Get-ActiveSyncMailboxPolicy, Set-ActiveSyncMailboxPolicy, New-ActiveSyncMailboxPolicy, Remove-ActiveSyncMailboxPolicy
+- Get-ActiveSyncDeviceAccessRule, Set-ActiveSyncDeviceAccessRule, New-ActiveSyncDeviceAccessRule, Remove-ActiveSyncDeviceAccessRule
+- Get-ActiveSyncDeviceStatistics
+- Get-ActiveSyncDevice
+- Get-ExchangeServer
+- Get-ActiveSyncDeviceClass
+- Get-Recipient
+- Clear-ActiveSyncDevice, Remove-ActiveSyncDevice
+- Set-ADServerSettings
+- Get-Command
 
 ## <a name="download-the-on-premises-exchange-connector-software-installation-package"></a>Baixe o pacote de instalação de software do conector do Exchange local
 
@@ -184,9 +184,9 @@ Na versão 1710 do Intune em diante, você poderá usar o [pacote de gerenciamen
 ## <a name="manually-force-a-quick-sync-or-full-sync"></a>Forçar manualmente uma sincronização rápida ou completa
 Um Exchange Connector local sincroniza de modo automático os registros de dispositivo do EAS e do Intune regularmente. Se o status de conformidade de um dispositivo for alterado, o processo de sincronização automática atualizará os registros regularmente para que o acesso ao dispositivo possa ser bloqueado ou permitido.
 
-   - **Sincronização rápida** ocorre regularmente, várias vezes ao dia. Uma sincronização rápida recupera informações de dispositivo para usuários direcionados ao acesso condicional do Exchange local e licenciados pelo Intune que foram alterados desde a última sincronização.
+- **Sincronização rápida** ocorre regularmente, várias vezes ao dia. Uma sincronização rápida recupera informações de dispositivo para usuários direcionados ao acesso condicional do Exchange local e licenciados pelo Intune que foram alterados desde a última sincronização.
 
-   - **Sincronização completa** ocorre uma vez por dia por padrão. Uma sincronização completa recupera informações do dispositivo para todos os usuários direcionados ao acesso condicional do Exchange local e licenciados pelo Intune. Uma sincronização completa também recupera informações do servidor Exchange e garante que a configuração especificada pelo Intune no portal do Azure seja atualizada no servidor Exchange. 
+- **Sincronização completa** ocorre uma vez por dia por padrão. Uma sincronização completa recupera informações do dispositivo para todos os usuários direcionados ao acesso condicional do Exchange local e licenciados pelo Intune. Uma sincronização completa também recupera informações do servidor Exchange e garante que a configuração especificada pelo Intune no portal do Azure seja atualizada no servidor Exchange. 
 
 
 Você pode forçar um conector a executar uma sincronização usando as opções de **Sincronização Rápida** ou **Sincronização Completa** no painel do Intune com as seguintes etapas:

@@ -16,12 +16,12 @@ ms.reviewer: shpate
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: bccfc952202ed9db5bdc5f68bbbba57c61b37b13
-ms.sourcegitcommit: b3a1c5b0b24f0e52cf318defe10f3d27a2770009
+ms.openlocfilehash: b4c7e4b2d35eb2662ca74660e2133dcd2c89f0a1
+ms.sourcegitcommit: 7c251948811b8b817e9fe590b77f23aed95b2d4e
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/21/2019
-ms.locfileid: "67316943"
+ms.lasthandoff: 07/15/2019
+ms.locfileid: "67883361"
 ---
 # <a name="monitor-bitlocker-and-device-encryption"></a>Monitorar a criptografia BitLocker e do dispositivo  
 O Intune oferece um local centralizado para identificar o status de criptografia dos seus dispositivos Windows 10 e ajuda você a acessar informações importantes para o BitLocker nos seus dispositivos, conforme encontrado no Azure AD (Azure Active Directory).  
@@ -76,22 +76,22 @@ O painel fornece os seguintes detalhes:
 
   Veja a seguir exemplos dos detalhes do status que o Intune pode relatar:  
 
-   - A política do BitLocker requer o consentimento do usuário para iniciar o Assistente de Criptografia de Unidade de Disco BitLocker para iniciar a criptografia do volume do sistema operacional, mas o usuário não consentiu.  
-   - O método de criptografia do volume do sistema operacional não coincide com a política do BitLocker.  
-   - A política do BitLocker exige um protetor de TPM para proteger o volume do sistema operacional, mas um TPM não é usado.  
-   - A política do BitLocker exige um protetor somente de TPM para o volume do sistema operacional, mas a proteção do TPM não é usada.  
-   - A política do BitLocker exige uma proteção TPM+PIN para o volume do sistema operacional, mas um protetor TPM+PIN não é usado.  
-   - A política do BitLocker exige uma proteção de chave de inicialização+TPM para o volume do sistema operacional, mas um protetor de chave de inicialização+TPM não é usado.  
-   - A política do BitLocker exige uma proteção de chave de inicializaçãoTPM+PIN para o volume do sistema operacional, mas um protetor de chave de inicializaçãoTPM+PIN não é usado.  
-   - O volume do sistema operacional está desprotegido.  
-   - Falha no backup da chave de recuperação.  
-   - Uma unidade fixa está desprotegida.  
-   - O método de criptografia da unidade fixa não coincide com a política do BitLocker.  
-   - Para criptografar unidades, a política do BitLocker exige que o usuário entre como um Administrador ou, se o dispositivo for ingressado no Azure AD, a política AllowStandardUserEncryption deverá ser definida como 1.  
-   - O WinRE (Ambiente de Recuperação do Windows) não está configurado.  
-   - Não há um TPM disponível para o BitLocker, porque ele não está presente, ficou indisponível no Registro ou o sistema operacional está em uma unidade removível.  
-   - O TPM não está pronto para o BitLocker.  
-   - A rede não estiver disponível, o que é necessário para o backup da chave de recuperação.  
+  - A política do BitLocker requer o consentimento do usuário para iniciar o Assistente de Criptografia de Unidade de Disco BitLocker para iniciar a criptografia do volume do sistema operacional, mas o usuário não consentiu.  
+  - O método de criptografia do volume do sistema operacional não coincide com a política do BitLocker.  
+  - A política do BitLocker exige um protetor de TPM para proteger o volume do sistema operacional, mas um TPM não é usado.  
+  - A política do BitLocker exige um protetor somente de TPM para o volume do sistema operacional, mas a proteção do TPM não é usada.  
+  - A política do BitLocker exige uma proteção TPM+PIN para o volume do sistema operacional, mas um protetor TPM+PIN não é usado.  
+  - A política do BitLocker exige uma proteção de chave de inicialização+TPM para o volume do sistema operacional, mas um protetor de chave de inicialização+TPM não é usado.  
+  - A política do BitLocker exige uma proteção de chave de inicializaçãoTPM+PIN para o volume do sistema operacional, mas um protetor de chave de inicializaçãoTPM+PIN não é usado.  
+  - O volume do sistema operacional está desprotegido.  
+  - Falha no backup da chave de recuperação.  
+  - Uma unidade fixa está desprotegida.  
+  - O método de criptografia da unidade fixa não coincide com a política do BitLocker.  
+  - Para criptografar unidades, a política do BitLocker exige que o usuário entre como um Administrador ou, se o dispositivo for ingressado no Azure AD, a política AllowStandardUserEncryption deverá ser definida como 1.  
+  - O WinRE (Ambiente de Recuperação do Windows) não está configurado.  
+  - Não há um TPM disponível para o BitLocker, porque ele não está presente, ficou indisponível no Registro ou o sistema operacional está em uma unidade removível.  
+  - O TPM não está pronto para o BitLocker.  
+  - A rede não estiver disponível, o que é necessário para o backup da chave de recuperação.  
 
 ## <a name="bitlocker-recovery-keys"></a>Chaves de recuperação do BitLocker
 O Intune fornece acesso à folha do Azure AD para o BitLocker. Assim, é possível exibir as IDs de chave do BitLocker e as chaves de recuperação para seus dispositivos Windows 10 de dentro do portal do Intune.  Para ser acessível, o dispositivo deve ter suas chaves mantidas sob a custódia do Azure AD. 

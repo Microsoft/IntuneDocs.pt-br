@@ -16,12 +16,12 @@ ms.reviewer: ''
 ms.suite: ems
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 7868d5f9ef97f4b054457deff6f24cd91d6c31d8
-ms.sourcegitcommit: 7315fe72b7e55c5dcffc6d87f185f3c2cded9028
+ms.openlocfilehash: a7907889a1419ad6ff37b3975fa65adb02389ab6
+ms.sourcegitcommit: 7c251948811b8b817e9fe590b77f23aed95b2d4e
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/02/2019
-ms.locfileid: "67528692"
+ms.lasthandoff: 07/15/2019
+ms.locfileid: "67884507"
 ---
 # <a name="tutorial-protect-exchange-online-email-on-unmanaged-devices"></a>Tutorial: Proteger o email do Exchange Online em dispositivos não gerenciados
 
@@ -32,10 +32,10 @@ Saiba como usar as políticas de proteção de aplicativo com o Acesso Condicion
 > * Crie políticas de Acesso Condicional do Azure AD (Azure Active Directory) que permitem somente ao aplicativo Outlook acessar o email da empresa no Exchange Online. Você também exigirá a autenticação multifator (MFA) para clientes de autenticação moderna, como o Outlook para iOS e o Android.
 
 ## <a name="prerequisites"></a>Pré-requisitos
-  - Você precisará de um locatário de teste com as seguintes assinaturas para este tutorial:
-    - Azure Active Directory Premium ([avaliação gratuita](https://azure.microsoft.com/free/?WT.mc_id=A261C142F))
-    - Assinatura do Intune ([avaliação gratuita](free-trial-sign-up.md))
-    - Assinatura do Office 365 Business que inclui o Exchange ([avaliação gratuita](https://go.microsoft.com/fwlink/p/?LinkID=510938))
+- Você precisará de um locatário de teste com as seguintes assinaturas para este tutorial:
+  - Azure Active Directory Premium ([avaliação gratuita](https://azure.microsoft.com/free/?WT.mc_id=A261C142F))
+  - Assinatura do Intune ([avaliação gratuita](free-trial-sign-up.md))
+  - Assinatura do Office 365 Business que inclui o Exchange ([avaliação gratuita](https://go.microsoft.com/fwlink/p/?LinkID=510938))
 
 ## <a name="sign-in-to-intune"></a>Entrar no Intune
 
