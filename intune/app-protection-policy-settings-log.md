@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: acad6b0fa343bdbcc722929886a8e68a4fa4d8bc
-ms.sourcegitcommit: 63b55e81122e5c15893302b109ae137c30855b55
+ms.openlocfilehash: 7f9ee4d978bcb44f3b13ddcf9aafa4a3210f0f7e
+ms.sourcegitcommit: 7c251948811b8b817e9fe590b77f23aed95b2d4e
 ms.translationtype: MTE75
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/10/2019
-ms.locfileid: "67713285"
+ms.lasthandoff: 07/15/2019
+ms.locfileid: "67885058"
 ---
 # <a name="review-client-app-protection-logs"></a>Examine os logs de proteção do aplicativo de cliente
 
@@ -72,5 +72,5 @@ A tabela a seguir lista o nome e uma explicação das configurações registrada
 
 ## <a name="next-steps"></a>Próximas etapas
 
- - Para saber mais sobre as políticas de proteção do aplicativo, veja [Quais são as políticas de proteção do aplicativo?](app-protection-policy.md)
- - O Intune oferece várias ferramentas para ajudar você a solucionar problemas em seu ambiente. Para saber mais, confira [Usar o portal de solução de problemas para ajudar os usuários](help-desk-operators.md).
+- Para saber mais sobre as políticas de proteção do aplicativo, veja [Quais são as políticas de proteção do aplicativo?](app-protection-policy.md)
+- O Intune oferece várias ferramentas para ajudar você a solucionar problemas em seu ambiente. Para saber mais, confira [Usar o portal de solução de problemas para ajudar os usuários](help-desk-operators.md).

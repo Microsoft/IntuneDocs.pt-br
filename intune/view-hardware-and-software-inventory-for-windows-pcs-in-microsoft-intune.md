@@ -17,19 +17,19 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic-keep
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 0ba447153996383b3f057c4776b643a7a4ccd48b
-ms.sourcegitcommit: bccfbf1e3bdc31382189fc4489d337d1a554e6a1
+ms.openlocfilehash: 2b9d17426bf3dde3fd1684c12113adf0c5095d5f
+ms.sourcegitcommit: bd09decb754a832574d7f7375bad0186a22a15ab
 ms.translationtype: MTE75
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/03/2019
-ms.locfileid: "67547980"
+ms.lasthandoff: 07/19/2019
+ms.locfileid: "68353291"
 ---
 # <a name="view-hardware-and-software-inventory-for-windows-pcs"></a>Exibir o inventário de software e hardware para computadores Windows
 
 [!INCLUDE [classic-portal](includes/classic-portal.md)]
 
 > [!NOTE]
-> As informações descritas neste tópico se aplicam somente a áreas de trabalho do Windows que estão sendo gerenciadas como computadores por meio do cliente de software do Intune. Se você quiser exibir o inventário para computadores Windows registrados como dispositivos móveis, consulte [exibir detalhes do dispositivo no Intune](device-inventory.md).
+> As informações descritas neste tópico se aplicam somente a áreas de trabalho do Windows que estão sendo gerenciadas como computadores por meio do cliente de software do Intune. Se você quiser exibir o inventário de computadores Windows registrados como dispositivos móveis, consulte [Exibir detalhes do dispositivo no Intune](device-inventory.md).
 
 O Intune coleta informações detalhadas sobre o hardware e software de áreas de trabalho gerenciadas como computadores, usando o cliente de software do Intune. Use as informações nos procedimentos a seguir para aprender a criar:
 
@@ -71,6 +71,6 @@ O Intune coleta informações detalhadas sobre o hardware e software de áreas d
 
     A caixa de diálogo **Status da tarefa** é exibida e mostra as tarefas remotas atuais, seus status, nome do dispositivo, todos os erros reportados e fornece um link para as informações sobre a solução problemas.
 
-### <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Consulte também
 
 [Tarefas comuns de gerenciamento de computadores Windows com o cliente de software do Intune](common-windows-pc-management-tasks-with-the-microsoft-intune-computer-client.md)

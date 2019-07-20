@@ -17,19 +17,19 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic-keep
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 70818e038be915a1b756eb391129e6cdb74fb069
-ms.sourcegitcommit: bccfbf1e3bdc31382189fc4489d337d1a554e6a1
+ms.openlocfilehash: a94c327c8595e83ec9808ed41e788c5756d5510a
+ms.sourcegitcommit: bd09decb754a832574d7f7375bad0186a22a15ab
 ms.translationtype: MTE75
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/03/2019
-ms.locfileid: "67548648"
+ms.lasthandoff: 07/19/2019
+ms.locfileid: "68353882"
 ---
 # <a name="keep-windows-pcs-up-to-date-with-software-updates-in-microsoft-intune"></a>Manter computadores Windows atualizados com as atualizações de software no Microsoft Intune
 
 [!INCLUDE [classic-portal](includes/classic-portal.md)]
 
 > [!NOTE]
-> As informações descritas neste tópico se aplicam somente a áreas de trabalho do Windows que estão sendo gerenciadas como computadores por meio do cliente de software do Intune. Se você deseja gerenciar atualizações para computadores Windows registrados como dispositivos móveis, consulte [gerenciar atualizações de software no Intune](windows-update-for-business-configure.md).
+> As informações descritas neste tópico se aplicam somente a áreas de trabalho do Windows que estão sendo gerenciadas como computadores por meio do cliente de software do Intune. Se você quiser gerenciar atualizações para computadores Windows registrados como dispositivos móveis, consulte [gerenciar atualizações de software no Intune](windows-update-for-business-configure.md).
 
 O Microsoft Intune pode ajudá-lo a proteger seus computadores gerenciados de várias maneiras, incluindo o gerenciamento de atualizações de software que mantêm seus computadores atualizados, assegurando que os patches e as atualizações de software mais recentes sejam instalados rapidamente.
 
@@ -260,5 +260,5 @@ Ao selecionar uma atualização na lista, outros comandos estão disponíveis, p
 6. Você pode verificar o painel de detalhes na parte inferior da página **Todas as Atualizações** para ver as mensagens de lembretes sobre a atualização.
 
 
-### <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Consulte também
 [Políticas para proteger computadores Windows](policies-to-protect-windows-pcs-in-microsoft-intune.md)

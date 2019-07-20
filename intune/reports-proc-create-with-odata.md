@@ -17,18 +17,18 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: d8d8e1d1bb20f222b202e8c854fc4d1a8ba694fa
-ms.sourcegitcommit: 1b7ee2164ac9490df4efa83c5479344622c181b5
+ms.openlocfilehash: 519ac8529737a870eb4f8ce9a3e06af5b1dcac79
+ms.sourcegitcommit: bd09decb754a832574d7f7375bad0186a22a15ab
 ms.translationtype: MTE75
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/08/2019
-ms.locfileid: "67648906"
+ms.lasthandoff: 07/19/2019
+ms.locfileid: "68353654"
 ---
 # <a name="create-a-report-from-the-odata-feed-with-power-bi"></a>Criar um relatório do feed OData com o Power BI
 
 Este artigo descreve como criar uma visualização de mapa de árvore usando o Power BI Desktop com um filtro interativo. Por exemplo, seu CFO pode querer saber como a distribuição geral dos dispositivos é comparada apenas com os dispositivos de propriedade da empresa ou de propriedade pessoal. O mapa de árvore fornece informações sobre o número total de tipos de dispositivo. Você pode examinar o número de dispositivos iOS, Android e Windows que são de propriedade da empresa ou de propriedade pessoal.
 
-### <a name="overview-of-creating-the-chart"></a>Visão geral da criação do gráfico
+## <a name="overview-of-creating-the-chart"></a>Visão geral da criação do gráfico
 
 Para criar este gráfico, é necessário:
 1. Instalar o Power BI Desktop se ele ainda não estiver instalado.
@@ -120,5 +120,5 @@ Agora você tem um filtro interativo que pode ser usado para alternar entre disp
 
 ## <a name="next-steps"></a>Próximas etapas
 
- - Saiba mais sobre [criar e gerenciar relações](https://powerbi.microsoft.com/documentation/powerbi-desktop-create-and-manage-relationships/) no Power BI Desktop na documentação do Power BI.
- - Consulte o [Modelo de Data Warehouse do Intune](https://docs.microsoft.com/intune/reports-ref-data-model).
+- Saiba mais sobre [criar e gerenciar relações](https://powerbi.microsoft.com/documentation/powerbi-desktop-create-and-manage-relationships/) no Power BI Desktop na documentação do Power BI.
+- Consulte o [Modelo de Data Warehouse do Intune](https://docs.microsoft.com/intune/reports-ref-data-model).

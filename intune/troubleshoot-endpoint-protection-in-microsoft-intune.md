@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: a4f749ab85d283ed9743d227476f8229dc1cf7c3
-ms.sourcegitcommit: a97b6139770719afbd713501f8e50f39636bc202
+ms.openlocfilehash: 5159ee595a6699eb457b194162d21038d4667063
+ms.sourcegitcommit: bd09decb754a832574d7f7375bad0186a22a15ab
 ms.translationtype: MTE75
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/30/2019
-ms.locfileid: "66402639"
+ms.lasthandoff: 07/19/2019
+ms.locfileid: "68353348"
 ---
 # <a name="endpoint-protection-issues-and-possible-solutions-in-microsoft-intune"></a>Problemas e possíveis soluções do Endpoint Protection no Microsoft Intune
 
@@ -34,7 +34,7 @@ Revise os logs de eventos e códigos de erro para [solucionar problemas com o Wi
 
 ## <a name="common-intune-errors-and-possible-resolutions"></a>Erros comuns do Intune e as possíveis resoluções
 
-#### <a name="endpoint-protection-engine-unavailable"></a>Mecanismo do Endpoint Protection Indisponível
+### <a name="endpoint-protection-engine-unavailable"></a>Mecanismo do Endpoint Protection Indisponível
 
 **Possível causa**: o mecanismo Endpoint Protection do Intune foi corrompido ou excluído.
 
@@ -45,7 +45,7 @@ Revise os logs de eventos e códigos de erro para [solucionar problemas com o Wi
 - No Painel de Controle > Programas, selecione **Agente do Endpoint Protection do Microsoft Intune**. Desinstale o aplicativo.
 - Durante a próxima sincronização de atualizações, o Microsoft Online Management Update Manager irá detectar o programa ausente e reinstalá-lo no horário agendado.
 
-#### <a name="features-are-disabled"></a>Os recursos estão desabilitados
+### <a name="features-are-disabled"></a>Os recursos estão desabilitados
 
 Você pode receber uma mensagem de que alguns recursos estão desabilitados. Essas mensagens podem ocorrer se o Endpoint Protection do Intune ou o Windows Defender for desabilitado por um administrador usando um perfil de configuração. Ou for desabilitado por um usuário final no dispositivo. Possíveis mensagens:
 
@@ -63,19 +63,19 @@ Você pode receber uma mensagem de que alguns recursos estão desabilitados. Ess
 - [Windows Defender Antivírus](device-restrictions-windows-10.md#windows-defender-antivirus)
 - [Usuários finais: ativar a proteção em tempo real para acessar os recursos da empresa](/intune-user-help/turn-on-defender-windows)
 
-#### <a name="malware-definitions-out-of-date"></a>Definições de malware desatualizadas
+### <a name="malware-definitions-out-of-date"></a>Definições de malware desatualizadas
 
 Esse status mostra quando as definições de malware no dispositivo estão desatualizadas há 14 dias ou mais. Por exemplo, a mensagem pode mostrar se o dispositivo está desconectado da Internet ou se as definições de malware estão desatualizadas.
 
 **Soluções possíveis**: se as definições de malware estiverem desatualizadas, atualize-as usando o [Windows Defender Antivírus](device-restrictions-windows-10.md#windows-defender-antivirus).
 
-#### <a name="full-scan-overdue-or-quick-scan-overdue"></a>Verificação completa ou rápida vencida
+### <a name="full-scan-overdue-or-quick-scan-overdue"></a>Verificação completa ou rápida vencida
 
 Uma verificação completa ou rápida não foi realizada há 14 dias. Esse cenário poderá acontecer se o dispositivo for reiniciado durante uma verificação completa.
 
 **Soluções possíveis**: se uma verificação estiver vencida, você pode executar uma verificação única ou agendar verificações recorrentes. Confira [Windows Defender Antivírus](device-restrictions-windows-10.md#windows-defender-antivirus).
 
-#### <a name="another-endpoint-protection-application-running"></a>Outro aplicativo de proteção de ponto de extremidade em execução
+### <a name="another-endpoint-protection-application-running"></a>Outro aplicativo de proteção de ponto de extremidade em execução
 
 Outro aplicativo de proteção de ponto de extremidade está sendo executado, e o dispositivo está em estado íntegro.
 

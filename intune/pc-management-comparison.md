@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic-keep
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: e3665a785391d2bff707bf5b8fe0a7e4f6e8a43d
-ms.sourcegitcommit: 4b83697de8add3b90675c576202ef2ecb49d80b2
+ms.openlocfilehash: fec72636a5d76ce4eb1fa0c28978eeb70d1e61b5
+ms.sourcegitcommit: bd09decb754a832574d7f7375bad0186a22a15ab
 ms.translationtype: MTE75
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/13/2019
-ms.locfileid: "67044515"
+ms.lasthandoff: 07/19/2019
+ms.locfileid: "68353560"
 ---
 # <a name="compare-managing-windows-pcs-as-computers-or-mobile-devices"></a>Comparar o gerenciamento de computadores Windows como computadores ou dispositivos móveis
 
@@ -49,7 +49,7 @@ As organizações podem usar o Microsoft Intune para gerenciar computadores Wind
 |**Atestado de integridade**|Não disponível|Disponível|
 
 
-### <a name="advantages-of-mdm-windows-pc-management"></a>Vantagens do gerenciamento MDM de computadores Windows
+## <a name="advantages-of-mdm-windows-pc-management"></a>Vantagens do gerenciamento MDM de computadores Windows
 O gerenciamento de computadores Windows com o moderno gerenciamento de dispositivo móvel apresenta as seguintes vantagens:
 - **Escalabilidade** – o gerenciamento MDM é dimensionado com gerenciamento de nuvem do Intune. O cliente de software do Intune é limitado a 7.000 computadores.
 - **Simplicidade** – usa funcionalidades de gerenciamento modernas incluídas no sistema operacional sem depender do download de um cliente de software

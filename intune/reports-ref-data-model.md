@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: f90568b3939d37bb4e7fbeff72d5e357bc57bd6e
-ms.sourcegitcommit: bccfbf1e3bdc31382189fc4489d337d1a554e6a1
+ms.openlocfilehash: 21f4f55c028c6ff06730e50d9f9862e85d0a9ef1
+ms.sourcegitcommit: 7c251948811b8b817e9fe590b77f23aed95b2d4e
 ms.translationtype: MTE75
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/03/2019
-ms.locfileid: "67547883"
+ms.lasthandoff: 07/15/2019
+ms.locfileid: "67884756"
 ---
 # <a name="microsoft-intune-data-warehouse-data-model"></a>Modelo de dados do Microsoft Intune Data Warehouse
 
@@ -32,22 +32,22 @@ O Intune Data Warehouse coleta amostras de dados diariamente para fornecer uma e
 
 O warehouse expõe dados nas seguintes áreas de alto nível:
 
-  - Uso e aplicativos habilitados pela proteção do aplicativo
-  - Inventário, propriedades e dispositivos registrados
-  - Inventário de aplicativos e software
-  - Políticas de conformidade e configuração do dispositivo
+- Uso e aplicativos habilitados pela proteção do aplicativo
+- Inventário, propriedades e dispositivos registrados
+- Inventário de aplicativos e software
+- Políticas de conformidade e configuração do dispositivo
 
 Essas áreas contêm entidades que são significativas para seu ambiente do Intune. Encontre detalhes sobre os conjuntos de entidade nos tópicos a seguir:
 
-  - [Aplicativo](reports-ref-application.md)
-  - [Data](reports-ref-date.md)
-  - [Dispositivos](reports-ref-devices.md)
-  - [Extensão de Gerenciamento do Intune](reports-ref-intunemanagementextension.md)
-  - [Política](reports-ref-policy.md)
-  - [Gerenciamento de aplicativo móvel (MAM)](reports-ref-mobile-app-management.md)
-  - [Usuário](reports-ref-user.md)
-  - [Usuário Atual](reports-ref-current-user.md)
-  - [Associações de Dispositivo de Usuário](reports-ref-user-device.md)
+- [Aplicativo](reports-ref-application.md)
+- [Data](reports-ref-date.md)
+- [Dispositivos](reports-ref-devices.md)
+- [Extensão de Gerenciamento do Intune](reports-ref-intunemanagementextension.md)
+- [Política](reports-ref-policy.md)
+- [Gerenciamento de aplicativo móvel (MAM)](reports-ref-mobile-app-management.md)
+- [Usuário](reports-ref-user.md)
+- [Usuário Atual](reports-ref-current-user.md)
+- [Associações de Dispositivo de Usuário](reports-ref-user-device.md)
 
 ## <a name="relationships-star-schema-model"></a>Relações: modelo de esquema em estrela
 
@@ -63,6 +63,6 @@ O warehouse segue o downstream, partindo dos seus dados no Intune. O Intune tira
 
 ## <a name="next-steps"></a>Próximas etapas
 
- - Saiba mais sobre como o data warehouse controla o tempo de vida de um usuário no Intune em [Representação de tempo de vida do usuário no Intune Data Warehouse](reports-ref-user-timeline.md).
- - Saiba mais sobre como trabalhar com os data warehouses em [Criar data warehouse de primeiros dados](https://www.codeproject.com/Articles/652108/Create-First-Data-WareHouse).
- - Saiba mais sobre como trabalhar com o Power BI e um data warehouse em [Criar um novo relatório do Power BI importando um conjunto de dados](https://powerbi.microsoft.com/documentation/powerbi-service-create-a-new-report/). 
+- Saiba mais sobre como o data warehouse controla o tempo de vida de um usuário no Intune em [Representação de tempo de vida do usuário no Intune Data Warehouse](reports-ref-user-timeline.md).
+- Saiba mais sobre como trabalhar com os data warehouses em [Criar data warehouse de primeiros dados](https://www.codeproject.com/Articles/652108/Create-First-Data-WareHouse).
+- Saiba mais sobre como trabalhar com o Power BI e um data warehouse em [Criar um novo relatório do Power BI importando um conjunto de dados](https://powerbi.microsoft.com/documentation/powerbi-service-create-a-new-report/). 

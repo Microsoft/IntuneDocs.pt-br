@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic-keep
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: f4dad2d22b742b62ca35bd7fb98c7f7e8241cbb4
-ms.sourcegitcommit: 256952cac44bc6289156489b6622fdc1a3c9c889
+ms.openlocfilehash: 0eca9dfddbf9ea2c68cf58b1da64d9b046df7e77
+ms.sourcegitcommit: bd09decb754a832574d7f7375bad0186a22a15ab
 ms.translationtype: MTE75
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/26/2019
-ms.locfileid: "67402898"
+ms.lasthandoff: 07/19/2019
+ms.locfileid: "68353622"
 ---
 # <a name="manage-user-device-linking-for-windows-pcs"></a>Gerenciar a vinculação de usuário e dispositivo para computadores Windows
 
@@ -32,7 +32,7 @@ As informações descritas neste tópico se aplicam somente a áreas de trabalho
 
 Antes de poder implantar o software em um usuário, é necessário vincular o usuário a um computador. É possível vincular um usuário a vários computadores, mas cada computador pode ser vinculado a apenas um usuário. Os usuários são vinculados automaticamente aos computadores registrados por eles no Intune por meio do portal da empresa.
 
-Para obter mais informações sobre o usuário principal de um dispositivo, consulte [usuário principal de localizar](find-primary-user.md).
+Para obter mais informações sobre o usuário primário de um dispositivo, consulte [localizar usuário primário](find-primary-user.md).
 
 Para vincular um usuário a um computador:
 
@@ -53,6 +53,6 @@ Para vincular um usuário a um computador:
 > [!TIP]
 > Se você desejar restringir a capacidade dos usuários finais de se vincularem a computadores, habilite a opção **Restringir a capacidade dos usuários de se vincularem a computadores** na política **Configurações do Agente do Microsoft Intune**.
 
-### <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Consulte também
 
 [Tarefas comuns de gerenciamento de computadores Windows com o cliente de software do Intune](common-windows-pc-management-tasks-with-the-microsoft-intune-computer-client.md)

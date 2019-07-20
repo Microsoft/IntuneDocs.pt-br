@@ -16,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: dc2b324c8c6e1687b8ce5563aa85c155e21fc197
-ms.sourcegitcommit: 916fed64f3d173498a2905c7ed8d2d6416e34061
+ms.openlocfilehash: a7baa95d6719dfa3161ae6644bbc9351d3f3d9f0
+ms.sourcegitcommit: 7c251948811b8b817e9fe590b77f23aed95b2d4e
 ms.translationtype: MTE75
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/23/2019
-ms.locfileid: "66040727"
+ms.lasthandoff: 07/15/2019
+ms.locfileid: "67882375"
 ---
 # <a name="use-apis-to-add-third-party-cas-for-scep-to-intune"></a>Usar APIs para adicionar ACs de terceiros para SCEP ao Intune
 
@@ -176,8 +176,8 @@ Gera:
 
 **Observações de segurança**  
 
-  - Se esse método gerar uma exceção, o servidor do SCEP **não deverá** emitir um certificado para o cliente.
-  - As falhas da validação de solicitação de certificado SCEP podem indicar um problema na infraestrutura do Intune. Ou podem indicar que um invasor está tentando obter um certificado.
+- Se esse método gerar uma exceção, o servidor do SCEP **não deverá** emitir um certificado para o cliente.
+- As falhas da validação de solicitação de certificado SCEP podem indicar um problema na infraestrutura do Intune. Ou podem indicar que um invasor está tentando obter um certificado.
 
 ##### <a name="sendsuccessnotification-method"></a>Método SendSuccessNotification
 
@@ -217,8 +217,8 @@ Gera:
 
 **Observações de segurança**
 
-  - Se esse método gerar uma exceção, o servidor do SCEP **não deverá** emitir um certificado para o cliente.
-  - As falhas da validação de solicitação de certificado SCEP podem indicar um problema na infraestrutura do Intune. Ou podem indicar que um invasor está tentando obter um certificado.
+- Se esse método gerar uma exceção, o servidor do SCEP **não deverá** emitir um certificado para o cliente.
+- As falhas da validação de solicitação de certificado SCEP podem indicar um problema na infraestrutura do Intune. Ou podem indicar que um invasor está tentando obter um certificado.
 
 ##### <a name="sendfailurenotification-method"></a>Método SendFailureNotification
 
@@ -254,8 +254,8 @@ Gera:
 
 **Observações de segurança**
 
-  - Se esse método gerar uma exceção, o servidor do SCEP **não deverá** emitir um certificado para o cliente.
-  - As falhas da validação de solicitação de certificado SCEP podem indicar um problema na infraestrutura do Intune. Ou podem indicar que um invasor está tentando obter um certificado.
+- Se esse método gerar uma exceção, o servidor do SCEP **não deverá** emitir um certificado para o cliente.
+- As falhas da validação de solicitação de certificado SCEP podem indicar um problema na infraestrutura do Intune. Ou podem indicar que um invasor está tentando obter um certificado.
 
 ##### <a name="setsslsocketfactory-method"></a>Método SetSslSocketFactory
 

@@ -18,12 +18,12 @@ ms.reviewer: esmich
 ms.suite: ems
 ms.custom: intune-enduser
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 210a11cbd6e2c3be85ed0b0f97c2bb4ab59d11e6
-ms.sourcegitcommit: bccfbf1e3bdc31382189fc4489d337d1a554e6a1
+ms.openlocfilehash: 2eb47240516737f03c10d1280887fea275c5ed99
+ms.sourcegitcommit: 7c251948811b8b817e9fe590b77f23aed95b2d4e
 ms.translationtype: MTE75
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/03/2019
-ms.locfileid: "67546589"
+ms.lasthandoff: 07/15/2019
+ms.locfileid: "67883950"
 ---
 # <a name="remove-your-ios-device-from-intune"></a>Remover seu dispositivo iOS do Intune
 
@@ -44,25 +44,25 @@ Para remover seu dispositivo do Intune, use estas etapas ou assista a este víde
     |![Captura de tela da tela de Dispositivos do aplicativo Portal da Empresa, mostrando opções depois de o usuário clicar no botão Remover Dispositivo. Mostra o botão "Remover" destacado em vermelho, o botão "Saiba Mais" destacado em azul e o botão "Cancelar".](/intune-user-help/media/cp_ios_unenroll_after_1804_002.png)|
 
 
-  Quando você cancela o registro de dispositivo do Intune, o seguinte acontece:
+    Quando você cancela o registro de dispositivo do Intune, o seguinte acontece:
 
-  - Seu dispositivo não aparecerá mais no portal da empresa.
+    - Seu dispositivo não aparecerá mais no portal da empresa.
 
-  - Você não poderá mais instalar aplicativos do portal da empresa.
+    - Você não poderá mais instalar aplicativos do portal da empresa.
 
-  - Quaisquer configurações alteradas no seu dispositivo quando ele foi adicionado, por exemplo a desabilitação da câmera ou a solicitação de uma senha de determinado tamanho, não se aplicarão mais.
+    - Quaisquer configurações alteradas no seu dispositivo quando ele foi adicionado, por exemplo a desabilitação da câmera ou a solicitação de uma senha de determinado tamanho, não se aplicarão mais.
 
-  - Talvez você não tenha mais acesso a alguns recursos da empresa, como compartilhamentos de arquivos ou sites internos, no seu dispositivo.
+    - Talvez você não tenha mais acesso a alguns recursos da empresa, como compartilhamentos de arquivos ou sites internos, no seu dispositivo.
 
-  - Você não poderá mais usar os aplicativos e os dados da empresa no seu dispositivo.
+    - Você não poderá mais usar os aplicativos e os dados da empresa no seu dispositivo.
 
-  - Talvez você não consiga mais se conectar à rede da empresa usando o Wi-Fi ou uma rede virtual privada (VPN).
+    - Talvez você não consiga mais se conectar à rede da empresa usando o Wi-Fi ou uma rede virtual privada (VPN).
 
-  - Perfis de email da empresa são removidos do dispositivo.
+    - Perfis de email da empresa são removidos do dispositivo.
 
-  - Dispositivos que são configurados somente para email não aparecerão mais no site ou no aplicativo do portal da empresa.
-  
-  - Aplicativos são desinstalados. Dados de aplicativo da empresa são removidos.
+    - Dispositivos que são configurados somente para email não aparecerão mais no site ou no aplicativo do portal da empresa.
+
+    - Aplicativos são desinstalados. Dados de aplicativo da empresa são removidos.
 
 ## <a name="removing-data-collected-by-the-company-portal-app"></a>Removendo os dados coletados pelo aplicativo Portal da Empresa
 

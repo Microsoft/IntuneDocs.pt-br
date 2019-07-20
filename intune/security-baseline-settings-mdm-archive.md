@@ -16,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: bb6cd7b1d717cd289b65e1e05566bd07471ad84f
-ms.sourcegitcommit: 1dc9d4e1d906fab3fc46b291c67545cfa2231660
+ms.openlocfilehash: 220327c48712881e57efa1a91b9d00a64ba3e0be
+ms.sourcegitcommit: 7c251948811b8b817e9fe590b77f23aed95b2d4e
 ms.translationtype: MTE75
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/10/2019
-ms.locfileid: "67735778"
+ms.lasthandoff: 07/15/2019
+ms.locfileid: "67884694"
 ---
 <!-- This article contains the exact baseline details for baseline versions that were previously published in security-baseline-settings-mdm.md.  -->
 
@@ -34,7 +34,7 @@ Quando uma nova linha de base de segurança do MDM é liberada, a lista anterior
 Quando uma versão de linha de base não tiver mais suporte para uso, ela será então removida deste artigo.
 
 - Exibir as configurações que estão disponíveis na [linha de base de segurança do MDM atual](security-baseline-settings-mdm.md) 
-- Saiba mais [sobre](security-baselines.md)linhas de base de segurança e como atualizar a versão de linha de base em seus perfis de linha de base de segurança.
+- Saiba mais sobre [linhas de base de segurança](security-baselines.md)e como atualizar a versão de linha de base em seus perfis de linha de base de segurança.
 
 ## <a name="preview-mdm-security-baseline-for-october-2018"></a>Versão prévia: linha de base de segurança do MDM para outubro de 2018  
 
@@ -97,23 +97,23 @@ Para obter mais informações, veja [CSP de política – Bitlocker](https://doc
 
   Para a política da unidade removível do BitLocker, defina as seguintes configurações:
 
-    - **Exigir criptografia para acesso de gravação**  
-      **Padrão**: Sim  
-  
-    - **Método de criptografia**  
-      **Padrão**: CBC AES de 256 bits  
+  - **Exigir criptografia para acesso de gravação**  
+    **Padrão**: Sim  
+
+  - **Método de criptografia**  
+    **Padrão**: CBC AES de 256 bits  
 
 - **Política de unidade fixa do BitLocker**  
   Essa configuração de política é usada para controlar o método de criptografia e o nível de codificação. Os valores dessa política determinam o nível da criptografia que o BitLocker usa para criptografia. As empresas talvez queiram controlar o nível de criptografia para aumentar a segurança (AES-256 é mais forte do que AES-128). Se você habilitar essa configuração, poderá configurar um algoritmo de criptografia e a intensidade da chave de criptografia para unidades de dados fixas, unidades do sistema operacional e unidades de dados removíveis individualmente. Para unidades de sistemas operacionais e fixas, recomendamos usar o algoritmo XTS-AES. Para unidades removíveis, você deve usar AES-CBC de 128 bits ou AES-CBC de 256 bits caso a unidade seja usada em outros dispositivos que não estejam executando o Windows 10, versão 1511 ou posterior. Alterar o método de criptografia não terá efeito se a unidade já estiver criptografada ou se a criptografia estiver em andamento. Nesses casos, essa configuração de política será ignorada.  
  
-   Para a política da unidade fixa do BitLocker, defina as seguintes configurações: 
-   - **Método de criptografia**
-     **Padrão**: XTS de AES de 256 bits  
+  Para a política da unidade fixa do BitLocker, defina as seguintes configurações: 
+  - **Método de criptografia**  
+    **Padrão**: XTS AES de 256 bits  
 
 - **Política de unidade do sistema do BitLocker**  
   Essa configuração de política é usada para controlar o método de criptografia e o nível de codificação. Os valores dessa política determinam o nível da criptografia que o BitLocker usa para criptografia. As empresas talvez queiram controlar o nível de criptografia para aumentar a segurança (AES-256 é mais forte do que AES-128). Se você habilitar essa configuração, poderá configurar um algoritmo de criptografia e a intensidade da chave de criptografia para unidades de dados fixas, unidades do sistema operacional e unidades de dados removíveis individualmente. Para unidades de sistemas operacionais e fixas, recomendamos usar o algoritmo XTS-AES. Para unidades removíveis, você deve usar AES-CBC de 128 bits ou AES-CBC de 256 bits caso a unidade seja usada em outros dispositivos que não estejam executando o Windows 10, versão 1511 ou posterior. Alterar o método de criptografia não terá efeito se a unidade já estiver criptografada ou se a criptografia estiver em andamento. Nesses casos, essa configuração de política será ignorada.  
 
-   Para a política da unidade de sistema do BitLocker, defina as seguintes configurações:
+  Para a política da unidade de sistema do BitLocker, defina as seguintes configurações:
   - **Método de criptografia**  
     **Padrão**: XTS AES de 256 bits  
 
@@ -219,33 +219,33 @@ Para obter mais informações, veja [CSP de política – DeviceInstallation](ht
   
   **Padrão**: bloquear a instalação de dispositivo de hardware  
 
-    Quando *Bloquear a instalação de dispositivo de hardware* estiver selecionada, as configurações a seguir estarão disponíveis.
-  
-    - **Remover dispositivos de hardware correspondentes**   
-    Essa configuração está disponível apenas quando *Instalação de dispositivo de hardware por identificadores de dispositivo* é definida como *Bloquear instalação de dispositivo de hardware*.
-      
-      **Padrão**: Sim
-  
-    - **Identificadores de dispositivo de hardware que estão bloqueados**  
-       Essa configuração está disponível apenas quando *Instalação de dispositivo de hardware por identificadores de dispositivo* é definida como *Bloquear instalação de dispositivo de hardware*.
-      
-      **Padrão**: Sim  
+  Quando *Bloquear a instalação de dispositivo de hardware* estiver selecionada, as configurações a seguir estarão disponíveis.
+
+  - **Remover dispositivos de hardware correspondentes**   
+  Essa configuração está disponível apenas quando *Instalação de dispositivo de hardware por identificadores de dispositivo* é definida como *Bloquear instalação de dispositivo de hardware*.
+    
+    **Padrão**: Sim
+
+  - **Identificadores de dispositivo de hardware que estão bloqueados**  
+      Essa configuração está disponível apenas quando *Instalação de dispositivo de hardware por identificadores de dispositivo* é definida como *Bloquear instalação de dispositivo de hardware*.
+    
+    **Padrão**: Sim  
   
 - **Instalação de dispositivo de hardware por classes de instalação**  
   Essa configuração de política permite que você especifique uma lista de GUIDs (identificadores globalmente exclusivos) de classe de configuração de dispositivo para drivers de dispositivo que o Windows seja impedido de instalar. Essa configuração de política tem precedência sobre qualquer outra configuração de política que permita ao Windows instalar um dispositivo. Se você habilitar essa configuração de política, o Windows será impedido de instalar ou atualizar drivers de dispositivo cujos GUIDs de classe de instalação do dispositivo apareçam na lista de você cria. Se você habilitar essa configuração de política em um servidor de área de trabalho remota, a configuração de política afetará o redirecionamento de dispositivos especificados de um cliente da área de trabalho remota para o servidor de área de trabalho remota. Se você desabilitar ou não configurar essa política, o Windows poderá instalar e atualizar dispositivos conforme permitido ou impedido por outras configurações de política.
   
   **Padrão**: bloquear a instalação de dispositivo de hardware  
 
-    Quando *Bloquear a instalação de dispositivo de hardware* estiver selecionada, as configurações a seguir estarão disponíveis.
-    - **Remover dispositivos de hardware correspondentes**    
-    Essa configuração está disponível apenas quando *Instalação de dispositivo de hardware por classes de instalação* é definida como *Bloquear instalação de dispositivo de hardware*.  
+  Quando *Bloquear a instalação de dispositivo de hardware* estiver selecionada, as configurações a seguir estarão disponíveis.
+  - **Remover dispositivos de hardware correspondentes**    
+  Essa configuração está disponível apenas quando *Instalação de dispositivo de hardware por classes de instalação* é definida como *Bloquear instalação de dispositivo de hardware*.  
 
-      **Padrão**: *nenhuma configuração padrão*  
-  
-    - **Identificadores de dispositivo de hardware que estão bloqueados**  
-      Essa configuração está disponível apenas quando *Instalação de dispositivo de hardware por classes de instalação* é definida como *Bloquear instalação de dispositivo de hardware*.
-      
-      **Padrão**: *nenhuma configuração padrão*  
+    **Padrão**: *nenhuma configuração padrão*  
+
+  - **Identificadores de dispositivo de hardware que estão bloqueados**  
+    Essa configuração está disponível apenas quando *Instalação de dispositivo de hardware por classes de instalação* é definida como *Bloquear instalação de dispositivo de hardware*.
+    
+    **Padrão**: *nenhuma configuração padrão*  
 
 ### <a name="device-lock"></a>Bloqueio de dispositivo  
 
@@ -992,12 +992,12 @@ Para obter mais informações, veja [CSP de política – LocalPoliciesSecurityO
   
 - **Comportamento da solicitação de elevação de administrador**  
   Essa configuração de política controla o comportamento da solicitação de elevação para administradores. As opções são: 
-    - *Elevar sem avisar*: permite que contas com privilégios realizem uma operação que requer elevação sem exigir consentimento ou credenciais. Observação: só use essa opção nos ambientes mais restritos. 
-    - *Solicitar credenciais na área de trabalho protegida*: quando uma operação exige elevação de privilégio, na área de trabalho protegida, o usuário deve inserir um nome de usuário e uma senha com privilégios. Se o usuário inserir credenciais válidas, a operação continuará com o maior privilégio disponível desse usuário. 
-    - *Solicitar consentimento na área de trabalho protegida*: quando uma operação requer a elevação de privilégio, na área de trabalho protegida, o usuário deve selecionar Permitir ou Negar. Se o usuário selecionar Permitir, a operação continuará com o privilégio mais alto disponível desse usuário. 
-    - *Solicitar credenciais*: quando uma operação exige elevação de privilégio, o usuário é solicitado a inserir um nome de usuário administrativo e uma senha. Se o usuário inserir credenciais válidas, a operação continuará com o privilégio aplicável. 
-    - *Solicitar consentimento*: quando uma operação exige a elevação de privilégio, o usuário deve selecionar Permitir ou Negar. Se o usuário selecionar Permitir, a operação continuará com o privilégio mais alto disponível desse usuário.  
-    - *Solicitar consentimento para binários que não são do Windows*: quando uma operação para um aplicativo que não é da Microsoft exige a elevação de privilégio, na área de trabalho protegida, o usuário deve selecionar Permitir ou Negar. Se o usuário selecionar Permitir, a operação continuará com o privilégio mais alto disponível desse usuário.   
+  - *Elevar sem avisar*: permite que contas com privilégios realizem uma operação que requer elevação sem exigir consentimento ou credenciais. Observação: só use essa opção nos ambientes mais restritos. 
+  - *Solicitar credenciais na área de trabalho protegida*: quando uma operação exige elevação de privilégio, na área de trabalho protegida, o usuário deve inserir um nome de usuário e uma senha com privilégios. Se o usuário inserir credenciais válidas, a operação continuará com o maior privilégio disponível desse usuário. 
+  - *Solicitar consentimento na área de trabalho protegida*: quando uma operação requer a elevação de privilégio, na área de trabalho protegida, o usuário deve selecionar Permitir ou Negar. Se o usuário selecionar Permitir, a operação continuará com o privilégio mais alto disponível desse usuário. 
+  - *Solicitar credenciais*: quando uma operação exige elevação de privilégio, o usuário é solicitado a inserir um nome de usuário administrativo e uma senha. Se o usuário inserir credenciais válidas, a operação continuará com o privilégio aplicável. 
+  - *Solicitar consentimento*: quando uma operação exige a elevação de privilégio, o usuário deve selecionar Permitir ou Negar. Se o usuário selecionar Permitir, a operação continuará com o privilégio mais alto disponível desse usuário.  
+  - *Solicitar consentimento para binários que não são do Windows*: quando uma operação para um aplicativo que não é da Microsoft exige a elevação de privilégio, na área de trabalho protegida, o usuário deve selecionar Permitir ou Negar. Se o usuário selecionar Permitir, a operação continuará com o privilégio mais alto disponível desse usuário.   
   
   **Padrão**: solicitar consentimento na área de trabalho protegida
   
@@ -1010,12 +1010,12 @@ Para obter mais informações, veja [CSP de política – LocalPoliciesSecurityO
   **Padrão**: exigir criptografia de 128 do NTLM V2
   
 - **Comportamento de remoção do cartão inteligente**  
-    Essa configuração de segurança determina o que acontece quando o cartão inteligente de um usuário conectado é removido do leitor de cartão inteligente. As opções são:
-     - *Nenhuma ação*. 
-     - *Bloquear estação de trabalho* -a estação de trabalho é bloqueada quando o cartão inteligente for removido, permitindo que os usuários deixem a área, levem o cartão inteligente com eles e ainda mantenham a sessão protegida.
-     - *Forçar Logoff* – é feito o logoff do usuário automaticamente quando o cartão inteligente é removido.
-     - *Desconectar uma sessão de Área de Trabalho Remota* – a remoção do cartão inteligente desconecta a sessão sem fazer logoff do usuário. Isso permite ao usuário inserir o cartão inteligente e retomar a sessão mais tarde ou em outro computador equipado com o leitor de cartão inteligente, sem precisar fazer logon novamente. Se a sessão for local, essa política funcionará de modo idêntico a Bloquear a Estação de Trabalho.  <br><br>
-    
+  Essa configuração de segurança determina o que acontece quando o cartão inteligente de um usuário conectado é removido do leitor de cartão inteligente. As opções são:
+  - *Nenhuma ação*. 
+  - *Bloquear estação de trabalho* -a estação de trabalho é bloqueada quando o cartão inteligente for removido, permitindo que os usuários deixem a área, levem o cartão inteligente com eles e ainda mantenham a sessão protegida.
+  - *Forçar Logoff* – é feito o logoff do usuário automaticamente quando o cartão inteligente é removido.
+  - *Desconectar uma sessão de Área de Trabalho Remota* – a remoção do cartão inteligente desconecta a sessão sem fazer logoff do usuário. Isso permite ao usuário inserir o cartão inteligente e retomar a sessão mais tarde ou em outro computador equipado com o leitor de cartão inteligente, sem precisar fazer logon novamente. Se a sessão for local, essa política funcionará de modo idêntico a Bloquear a Estação de Trabalho.  <br><br>
+
   **Padrão**: Bloquear estação de trabalho
   
 - **Bloquear enumeração anônima de compartilhamentos e contas do SAM**  

@@ -14,12 +14,12 @@ ms.reviewer: aiwang
 ms.suite: ems
 search.appverid: MET150
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: c5a0ee88a24804294346888facef523f89fee816
-ms.sourcegitcommit: 916fed64f3d173498a2905c7ed8d2d6416e34061
+ms.openlocfilehash: 9e9baf3593883cf2fa2402a0b4daec638a336366
+ms.sourcegitcommit: 7c251948811b8b817e9fe590b77f23aed95b2d4e
 ms.translationtype: MTE75
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/23/2019
-ms.locfileid: "66046643"
+ms.lasthandoff: 07/15/2019
+ms.locfileid: "67884207"
 ---
 # <a name="windows-update-settings-for-intune"></a>Configurações de atualização do Windows para Intune  
 
@@ -179,8 +179,8 @@ Essa configuração tem resultados diferentes dependendo da versão de dispositi
 Permitir ou bloquear que um usuário de dispositivo pause a instalação de uma atualização. 
 
 ### <a name="block-user-from-scanning-for-windows-updates"></a>Impedir o usuário de verificar se há atualizações do Windows  
- - **Padrão**: permitir
- - **Documentação de referência do Windows**: [Update/SetDisableUXWUAccess](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-update#update-setdisableuxwuaccess) 
+- **Padrão**: permitir
+- **Documentação de referência do Windows**: [Update/SetDisableUXWUAccess](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-update#update-setdisableuxwuaccess) 
 
 Especifica o acesso de um usuário para verificar o Windows Update deve ser permitido ou bloqueado. Por exemplo, se você configurar um *bloqueio*, os usuários não poderão acessar a verificação do Windows Update nem baixar e instalar os recursos.  
 

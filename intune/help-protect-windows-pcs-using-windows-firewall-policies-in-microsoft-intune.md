@@ -17,19 +17,19 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic-keep
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: eade2a1bc19e4b0c477faf2ad8e262196da8cc30
-ms.sourcegitcommit: ede86a3cb094c12e3e218b956abb9935bec76902
+ms.openlocfilehash: b79f488fcaa221523b5833aa1cebcf872d5f9b3d
+ms.sourcegitcommit: bd09decb754a832574d7f7375bad0186a22a15ab
 ms.translationtype: MTE75
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/05/2019
-ms.locfileid: "67572527"
+ms.lasthandoff: 07/19/2019
+ms.locfileid: "68354011"
 ---
 # <a name="help-protect-windows-pcs-using-windows-firewall-policies-in-microsoft-intune"></a>Ajude a proteger computadores Windows usando políticas de Firewall do Windows no Microsoft Intune
 
 [!INCLUDE [classic-portal](includes/classic-portal.md)]
 
 > [!NOTE]
-> As informações descritas neste tópico se aplicam somente a áreas de trabalho do Windows que estão sendo gerenciadas como computadores por meio do cliente de software do Intune. Se você quiser gerenciar configurações de firewall para PCs Windows registrados como dispositivos móveis, consulte [adicionar configurações de proteção de ponto de extremidade no Intune](endpoint-protection-configure.md).
+> As informações descritas neste tópico se aplicam somente a áreas de trabalho do Windows que estão sendo gerenciadas como computadores por meio do cliente de software do Intune. Se você quiser gerenciar as configurações de firewall para computadores Windows registrados como dispositivos móveis, consulte [Adicionar configurações de proteção de ponto de extremidade no Intune](endpoint-protection-configure.md).
 
 O Microsoft Intune pode ajudá-lo a proteger seus computadores Windows gerenciados com o cliente do Intune de várias maneiras. Uma maneira em que ele faz isso é fornecer políticas que permitem que você defina as configurações de Firewall do Windows em computadores.
 
@@ -140,5 +140,5 @@ Você pode configurar as exceções que permitem tipos específicos de tráfego 
 |**Computador Virtual Windows**<br>(Windows 7 ou posterior)|Permite que máquinas virtuais se comuniquem com outros computadores.|
 |**Dispositivos Portáteis sem Fio**|Permite a transferência de mídia de um dispositivo de câmera ou mídia habilitado para rede para computadores gerenciados com o MTP (Protocolo de Transferência de Mídia). Essa configuração usa protocolos de rede SSDP e UPnP.|
 
-### <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Consulte também
 [Políticas para proteger computadores Windows](policies-to-protect-windows-pcs-in-microsoft-intune.md)

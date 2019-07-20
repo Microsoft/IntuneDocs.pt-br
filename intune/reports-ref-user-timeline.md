@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 3fa483a49ad7fa44172a83f024540a75d1d881dc
-ms.sourcegitcommit: 916fed64f3d173498a2905c7ed8d2d6416e34061
+ms.openlocfilehash: b61f4ded04d01f04727768557e6730c34fd4760c
+ms.sourcegitcommit: 7c251948811b8b817e9fe590b77f23aed95b2d4e
 ms.translationtype: MTE75
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/23/2019
-ms.locfileid: "66040916"
+ms.lasthandoff: 07/15/2019
+ms.locfileid: "67882451"
 ---
 # <a name="user-lifetime-representation-in-the-microsoft-intune-data-warehouse"></a>Representação do tempo de vida do usuário no Microsoft Intune Data Warehouse
 
@@ -79,5 +79,5 @@ Qualquer pessoa que queira ver apenas as entidades de dimensão que existem atua
 
 ## <a name="next-steps"></a>Próximas etapas
 
- - Para saber mais sobre a entidade **Usuário atual**, consulte [Reference for current user entity](reports-ref-current-user.md) (Referência para a entidade de usuário atual).
- - Para saber mais sobre a entidade **Usuário**, consulte [Reference for user entity](reports-ref-user.md) (Referência para a entidade de usuário).
+- Para saber mais sobre a entidade **Usuário atual**, consulte [Reference for current user entity](reports-ref-current-user.md) (Referência para a entidade de usuário atual).
+- Para saber mais sobre a entidade **Usuário**, consulte [Reference for user entity](reports-ref-user.md) (Referência para a entidade de usuário).

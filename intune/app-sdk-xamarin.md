@@ -16,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: b062dd12f7a9b77f30d4d831a829f3d0316cacf6
-ms.sourcegitcommit: 1dc9d4e1d906fab3fc46b291c67545cfa2231660
-ms.translationtype: HT
+ms.openlocfilehash: 7525971f9ab48b92c3274f56cb1046a6fde948a5
+ms.sourcegitcommit: 2614d1b08b8a78cd792aebd2ca9848f391df8550
+ms.translationtype: MTE75
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/10/2019
-ms.locfileid: "67735463"
+ms.lasthandoff: 07/11/2019
+ms.locfileid: "67794361"
 ---
 # <a name="microsoft-intune-app-sdk-xamarin-bindings"></a>Associações Xamarin do SDK de Aplicativo do Microsoft Intune
 
@@ -104,9 +104,10 @@ Caso seu aplicativo já esteja configurado para usar a ADAL ou a MSAL e tenha su
 Uma visão geral completa para a integração do SDK do aplicativo do Intune pode ser encontrada no [guia do desenvolvedor do SDK do Aplicativo Microsoft Intune para Android](app-sdk-android.md). Conforme você lê o guia e integra o SDK do Aplicativo Intune ao seu aplicativo Xamarin, as seções a seguir destinam-se para realçar as diferenças entre a implementação para um aplicativo nativo do Android desenvolvido em Java e um aplicativo Xamarin desenvolvido em C#. Estas seções devem ser tratadas como complementares e não podem atuar como um substituto à leitura do guia em sua totalidade.
 
 #### <a name="remapper"></a>Remapeador
-A partir da versão 1.4428.1, o `Microsoft.Intune.MAM.Remapper` pacote pode ser adicionado a um aplicativo Xamarin. Android como [ferramentas](app-sdk-android.md#build-tooling) de compilação para executar as substituições de serviços de classe, método e sistemas MAM. Se o remapeador for incluído, as seções de substituição equivalentes de MAM dos métodos renomeados e de aplicativo MAM serão executadas automaticamente quando o aplicativo for compilado.
+A partir da versão 1.4428.1, o `Microsoft.Intune.MAM.Remapper` pacote pode ser adicionado a um aplicativo Xamarin. Android como [ferramentas de compilação](app-sdk-android.md#build-tooling) para executar as substituições de serviços de classe, método e sistemas MAM. Se o remapeador for incluído, as seções de substituição equivalentes de MAM dos métodos renomeados e de aplicativo MAM serão executadas automaticamente quando o aplicativo for compilado.
 
 Para excluir uma classe de Mam-unificação pelo remapeador, a seguinte propriedade pode ser adicionada `.csproj` ao arquivo de projetos.
+
 ```xml
   <PropertyGroup>
     <ExcludeClasses>Semicolon separated list of relative class paths to exclude from MAM-ification</ExcludeClasses>
@@ -208,7 +209,7 @@ As associações do Xamarin SDK do Intune dependem da presença do aplicativo [p
 Para a proteção do aplicativo sem registro de dispositivo, o usuário _**não**_ precisa registrar o dispositivo usando o aplicativo do Portal da Empresa.
 
 ### <a name="sample-applications"></a>Aplicativos de Exemplo
-Aplicativos de exemplo destacando a funcionalidade de Mam nos aplicativos xamarin. Android e xamarin Forms estão disponíveis no [GitHub](https://github.com/msintuneappsdk/Taskr-Sample-Intune-Xamarin-Android-Apps).
+Aplicativos de exemplo destacando a funcionalidade de MAM nos aplicativos Xamarin. Android e Xamarin Forms estão disponíveis no [GitHub](https://github.com/msintuneappsdk/Taskr-Sample-Intune-Xamarin-Android-Apps).
 
 ## <a name="support"></a>Suporte
 Se a sua organização for um cliente do Intune existente, trabalhe com seu representante do Suporte da Microsoft para abrir um tíquete de suporte e criar um problema [na página de problemas do GitHub](https://github.com/msintuneappsdk/intune-app-sdk-xamarin/issues), e nós ajudaremos assim que possível. 

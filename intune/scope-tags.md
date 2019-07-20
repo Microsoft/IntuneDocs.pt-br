@@ -14,12 +14,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: ba1d7669e80fd91398f41c57ca2d27ce78a06041
-ms.sourcegitcommit: 256952cac44bc6289156489b6622fdc1a3c9c889
+ms.openlocfilehash: 627899eafb2175b2d3034045bd765a10f4a203d6
+ms.sourcegitcommit: 7c251948811b8b817e9fe590b77f23aed95b2d4e
 ms.translationtype: MTE75
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/26/2019
-ms.locfileid: "67403780"
+ms.lasthandoff: 07/15/2019
+ms.locfileid: "67882500"
 ---
 # <a name="use-role-based-access-control-rbac-and-scope-tags-for-distributed-it"></a>Usar RBAC (controle de acesso baseado em função) e marcas de escopo para TI distribuída
 
@@ -42,8 +42,8 @@ Por exemplo, digamos que um administrador de escritório regional de Seattle sej
 
     ![Captura de tela de criar uma marca de escopo.](./media/scope-tags/create-scope-tag.png)
 
-3. Se você quiser que todos os dispositivos em grupos específicos, escolha **atribua a marca de escopo para todos os dispositivos nos grupos selecionados**.
-    1. No **selecionar grupos para incluir** , escolha os grupos que contêm os dispositivos que você deseja atribuir essa marca de escopo para.
+3. Se você quiser todos os dispositivos em grupos específicos, escolha **atribuir marca de escopo a todos os dispositivos nos grupos selecionados**.
+    1. Na página **Selecionar grupos a serem incluídos** , escolha os grupos que contêm os dispositivos aos quais você deseja atribuir essa marca de escopo.
     2. Escolha **Selecionar**.
 4. Escolha **Criar**.
 
@@ -108,17 +108,17 @@ Para dispositivos com o **Tipo de registro de dispositivo** definido como **Apli
 Ao trabalhar com marcas de escopo, lembre-se destes detalhes:
 
 - No momento, você pode atribuir as marcas de escopo para:
-    - Atribuições de função
-    - Políticas de conformidade do dispositivo
-    - Perfis de configuração do dispositivo
-    - Anéis de atualizações do Windows 10
-    - Dispositivos gerenciados
-    - Aplicativos
-    - Políticas de configuração de aplicativos – dispositivos gerenciados
-    - Scripts do PowerShell
-    - Tokens de DEP
-    - Perfil de provisionamento de aplicativo iOS
-    - Tokens do VPP (Volume Purchase Program)
+  - Atribuições de função
+  - Políticas de conformidade do dispositivo
+  - Perfis de configuração do dispositivo
+  - Anéis de atualizações do Windows 10
+  - Dispositivos gerenciados
+  - Aplicativos
+  - Políticas de configuração de aplicativos – dispositivos gerenciados
+  - Scripts do PowerShell
+  - Tokens de DEP
+  - Perfil de provisionamento de aplicativo iOS
+  - Tokens do VPP (Volume Purchase Program)
 - Quando um administrador cria um objeto no Intune, todas as marcas de escopo atribuídas a esse administrador são atribuídas automaticamente ao novo objeto.
 - RBAC do Intune não se aplica a funções do Azure Active Directory. Dessa forma, as funções de Administrador de Serviço e Administrador Global do Intune têm acesso de administrador total ao Intune, não importa quais marcas de escopo eles têm.
 - Os administradores em uma atribuição de função com marcas de escopo também podem ver os objetos do Intune sem marcas de escopo.

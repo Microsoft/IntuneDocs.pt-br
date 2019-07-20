@@ -16,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: ''
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 961470b9f5671dc39864dac45fdcb49862de4da9
-ms.sourcegitcommit: 1dc9d4e1d906fab3fc46b291c67545cfa2231660
+ms.openlocfilehash: 673dd0cb751fcdd2a7036dc2bf52dd731a4b04ff
+ms.sourcegitcommit: 8d12ab22e23552f9addaef4c28b732fb211945a2
 ms.translationtype: MTE75
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/10/2019
-ms.locfileid: "67735565"
+ms.lasthandoff: 07/18/2019
+ms.locfileid: "68306763"
 ---
 # <a name="microsoft-intune-app-sdk-for-ios-developer-guide"></a>Guia do desenvolvedor do SDK de Aplicativos do Microsoft Intune para iOS
 
@@ -94,14 +94,14 @@ O objetivo do SDK do Intune APP para iOS é adicionar recursos de gerenciamento 
 
 Para habilitar o SDK de Aplicativos do Intune, siga estas etapas:
 
-1. **Opção 1-estrutura (recomendado)** : se você estiver usando o Xcode 10.2 + e seu aplicativo/extensão contiver código Swift `IntuneMAMSwift.framework` , `IntuneMAMSwiftStub.framework` vincule e ao seu destino `IntuneMAMSwift.framework` : `IntuneMAMSwiftStub.framework` arraste e **para o inserido Lista** de binários do destino do projeto.
+1. **Opção 1-estrutura (recomendado)** : se você estiver usando o Xcode 10.2 + e seu aplicativo/extensão contiver código Swift `IntuneMAMSwift.framework` , `IntuneMAMSwiftStub.framework` vincule e ao seu destino `IntuneMAMSwift.framework` : `IntuneMAMSwiftStub.framework` arraste e para a lista de **binários inseridos** do destino do projeto.
 
-    Caso contrário, `IntuneMAM.framework` vincule ao destino: arraste `IntuneMAM.framework` para a **lista de** binários inseridos do destino do projeto.
+    Caso contrário, `IntuneMAM.framework` vincule ao destino: arraste `IntuneMAM.framework` para a lista de **binários inseridos** do destino do projeto.
 
    > [!NOTE]
    > Se você usar a estrutura, precisará remover manualmente as arquiteturas de simulador da estrutura universal antes de enviar seu aplicativo à App Store. Confira [Enviar seu aplicativo à App Store](#submit-your-app-to-the-app-store) para obter mais detalhes.
 
-   **Opção 2-biblioteca**estática: essa opção só está disponível para aplicativos/extensões que não contêm nenhum código Swift ou foram criadas com o Xcode < 10,2. Link para a biblioteca `libIntuneMAM.a`. Arraste a biblioteca `libIntuneMAM.a` na lista **Estruturas e Bibliotecas Vinculadas** do destino do projeto.
+   **Opção 2-biblioteca estática**: essa opção só está disponível para aplicativos/extensões que não contêm nenhum código Swift ou foram criadas com o Xcode < 10,2. Link para a biblioteca `libIntuneMAM.a`. Arraste a biblioteca `libIntuneMAM.a` na lista **Estruturas e Bibliotecas Vinculadas** do destino do projeto.
 
     ![SDK de Aplicativos do Intune para iOS: estruturas e bibliotecas vinculadas](./media/intune-app-sdk-ios-linked-frameworks-and-libraries.png)
 
@@ -116,7 +116,7 @@ Para habilitar o SDK de Aplicativos do Intune, siga estas etapas:
 
      ![SDK de Aplicativos do Intune para iOS: copiar recursos do pacote](./media/intune-app-sdk-ios-copy-bundle-resources.png)
      
-2. Se você precisar chamar qualquer uma das APIs do Intune do Swift, seu aplicativo/extensão deverá importar os cabeçalhos do SDK do Intune necessários por meio de um cabeçalho de ponte Objective-C. Se seu aplicativo/extensão ainda não incluir um cabeçalho de ponte Objective-c, você poderá especificar um por `SWIFT_OBJC_BRIDGING_HEADER` meio da definição de configuração de compilação ou **do campo de cabeçalho** de ponte Objective-c da interface do usuário. Seu cabeçalho de ponte deve ser semelhante a este:
+2. Se você precisar chamar qualquer uma das APIs do Intune do Swift, seu aplicativo/extensão deverá importar os cabeçalhos do SDK do Intune necessários por meio de um cabeçalho de ponte Objective-C. Se seu aplicativo/extensão ainda não incluir um cabeçalho de ponte Objective-c, você poderá especificar um por `SWIFT_OBJC_BRIDGING_HEADER` meio da definição de configuração de compilação ou do campo de **cabeçalho de ponte Objective-c** da interface do usuário. Seu cabeçalho de ponte deve ser semelhante a este:
 
    ```objc
       #import <IntuneMAMSwift/IntuneMAM.h>
@@ -160,17 +160,17 @@ Para habilitar o SDK de Aplicativos do Intune, siga estas etapas:
     
     b. Adicione o grupo de conjunto de chaves compartilhado `com.microsoft.intune.mam` aos grupos de acesso existentes. O SDK de Aplicativos do Intune usa esse grupo de acesso para armazenar dados.
     
-    c. Adicione `com.microsoft.adalcache` aos grupos de acesso existentes.
+    c. Adicione `com.microsoft.adalcache` a seus grupos de acesso existentes.
     
-        ![Intune App SDK iOS: keychain sharing](./media/intune-app-sdk-ios-keychain-sharing.png)
+      ![SDK de Aplicativo do Intune para iOS: compartilhamento de conjunto de chaves](./media/intune-app-sdk-ios-keychain-sharing.png)
     
     d. Se você estiver editando o arquivo de direitos diretamente, em vez de usar a interface do usuário do Xcode exibida acima para criar os grupos de acesso do conjunto de chaves, preceda os grupos de acesso do conjunto de chaves com `$(AppIdentifierPrefix)` (o Xcode gerenciará isso automaticamente). Por exemplo:
     
-        - `$(AppIdentifierPrefix)com.microsoft.intune.mam`
-        - `$(AppIdentifierPrefix)com.microsoft.adalcache`
+      - `$(AppIdentifierPrefix)com.microsoft.intune.mam`
+      - `$(AppIdentifierPrefix)com.microsoft.adalcache`
     
-        > [!NOTE]
-        > An entitlements file is an XML file that is unique to your mobile application. It is used to specify special permissions and capabilities in your iOS app. If your app did not previously have an entitlements file, enabling keychain sharing (step 3) should have caused Xcode to generate one for your app. Ensure the app's bundle ID is the first entry in the list.
+      > [!NOTE]
+      > Um arquivo de direitos é um arquivo XML exclusivo ao aplicativo móvel. Ele é usado para especificar funcionalidades e permissões especiais em seu aplicativo iOS. Se o seu aplicativo não tinha um arquivo de direitos anteriormente, habilitar o compartilhamento do conjunto de chaves (etapa 3) deve fazer o Xcode gerar um para seu aplicativo. Verifique se a ID do lote do aplicativo é a primeira entrada na lista.
 
 6. Inclua todos os protocolos que o aplicativo passar para `UIApplication canOpenURL` na matriz `LSApplicationQueriesSchemes` do arquivo Info.plist do aplicativo. Salve as alterações antes de prosseguir para a próxima etapa.
 
@@ -742,7 +742,7 @@ Sim. Recentemente, reformulamos nosso aplicativo de exemplo de software livre [W
 
 ### <a name="how-can-i-troubleshoot-my-app"></a>Como posso solucionar problemas do meu aplicativo?
 
-O SDK do Intune para iOS 9.0.3 + dá suporte à capacidade de adicionar um console de diagnóstico no aplicativo móvel para testar políticas e registrar erros. `IntuneMAMDiagnosticConsole.h` define a `IntuneMAMDiagnosticConsole` interface de classe, que os desenvolvedores podem usar para exibir o console de diagnóstico do Intune. Isso permite que os usuários finais ou desenvolvedores durante o teste coletem e compartilhem logs do Intune para ajudar a diagnosticar qualquer problema que possa ter. Essa API é opcional para integradores.
+O SDK do Intune para iOS 9.0.3 + dá suporte à capacidade de adicionar um console de diagnóstico no aplicativo móvel para testar políticas e registrar erros. `IntuneMAMDiagnosticConsole.h`define a `IntuneMAMDiagnosticConsole` interface de classe, que os desenvolvedores podem usar para exibir o console de diagnóstico do Intune. Isso permite que os usuários finais ou desenvolvedores durante o teste coletem e compartilhem logs do Intune para ajudar a diagnosticar qualquer problema que possa ter. Essa API é opcional para integradores.
 
 ## <a name="submit-your-app-to-the-app-store"></a>Enviar seu aplicativo à App Store
 

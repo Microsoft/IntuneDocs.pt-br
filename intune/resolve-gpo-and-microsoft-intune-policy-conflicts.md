@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic-keep
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 8ebae39c529571c5f926debcf64b46d6399d770f
-ms.sourcegitcommit: bccfbf1e3bdc31382189fc4489d337d1a554e6a1
+ms.openlocfilehash: 5a119154c4676d3c8039463b181263d516bb2b51
+ms.sourcegitcommit: bd09decb754a832574d7f7375bad0186a22a15ab
 ms.translationtype: MTE75
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/03/2019
-ms.locfileid: "67547948"
+ms.lasthandoff: 07/19/2019
+ms.locfileid: "68353511"
 ---
 # <a name="resolve-group-policy-objects-gpo-and-microsoft-intune-policy-conflicts"></a>Resolver conflitos de política do Microsoft Intune e GPO (Objetos de Política de Grupo)
 
@@ -123,5 +123,5 @@ Você pode aplicar GPOs apenas aos grupos de segurança especificados na área *
 
 O novo grupo de segurança deve ser mantido como registro nas alterações de serviço do Intune.
 
-### <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Consulte também
 [Gerenciar computadores Windows com o Microsoft Intune](manage-windows-pcs-with-microsoft-intune.md)

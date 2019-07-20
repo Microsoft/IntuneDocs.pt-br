@@ -18,12 +18,12 @@ ms.reviewer: arnab
 ms.suite: ems
 ms.custom: intune-enduser
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: f012b1cec67de762bbc245f249125f29d37c6930
-ms.sourcegitcommit: 095fd4c324850aae8ebe32be43fa074361816a4b
+ms.openlocfilehash: c3287238900725acebefc23eb00246cd04c7a5bb
+ms.sourcegitcommit: fd2499df5123758ecb093b4cdd486e35f713b040
 ms.translationtype: MTE75
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/04/2019
-ms.locfileid: "66506859"
+ms.lasthandoff: 07/16/2019
+ms.locfileid: "68230082"
 ---
 # <a name="check-compliance-on-your-android-device"></a>Verificar a conformidade em seu dispositivo Android
 
@@ -31,6 +31,6 @@ Se o seu dispositivo não tiver feito check-in no Intune há algum tempo, talvez
 
 1. Abra o aplicativo Portal da Empresa para Android no dispositivo.  
 
-2. Toque em **Verificar configurações de dispositivo**.  
+2. Toque em **Verificar configurações de dispositivo**.   
 
 Se não for possível redefinir o dispositivo perdido ou roubado, peça ao suporte de sua empresa para redefini-lo para você. Para obter as informações de contato, consulte o [site do Portal da Empresa](https://go.microsoft.com/fwlink/?linkid=2010980).  

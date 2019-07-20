@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic-keep
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: b612a245e0a12384f8f9e7ec4a2c970afc2fd628
-ms.sourcegitcommit: bccfbf1e3bdc31382189fc4489d337d1a554e6a1
+ms.openlocfilehash: eb9f7eef1f7f0e4a712bdf3e8a3706374ac002a8
+ms.sourcegitcommit: bd09decb754a832574d7f7375bad0186a22a15ab
 ms.translationtype: MTE75
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/03/2019
-ms.locfileid: "67548815"
+ms.lasthandoff: 07/19/2019
+ms.locfileid: "68353321"
 ---
 # <a name="use-policies-to-simplify-windows-pc-management"></a>Usar políticas para simplificar o gerenciamento de computador Windows
 
@@ -32,7 +32,7 @@ Para gerenciar áreas de trabalho do Windows como computadores executando o clie
 
 ![Modelo de políticas para computadores Windows](media/pc_policy_template.png)
 
-### <a name="manage-the-microsoft-intune-center"></a>Gerenciar o Microsoft Intune Center
+## <a name="manage-the-microsoft-intune-center"></a>Gerenciar o Microsoft Intune Center
 Os usuários veem o cliente de software do Intune como o **Microsoft Intune Center**. O Microsoft Intune Center permite que os usuários:
 
 - Obtenham aplicativos a partir do portal da empresa.
@@ -63,6 +63,6 @@ Consulte os seguintes recursos para obter informações sobre as políticas e co
 - [Ajudar a proteger computadores Windows usando políticas de Firewall do Windows no Microsoft Intune](help-protect-windows-pcs-using-windows-firewall-policies-in-microsoft-intune.md) – essas políticas simplificam a administração de configurações do Firewall do Windows nos computadores gerenciados.
 
 
-### <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Consulte também
 
 [Tarefas comuns de gerenciamento de computadores Windows com o cliente de software do Intune](common-windows-pc-management-tasks-with-the-microsoft-intune-computer-client.md)
