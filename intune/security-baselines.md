@@ -5,7 +5,7 @@ keywords: ''
 author: brenduns
 ms.author: brenduns
 manager: dougeby
-ms.date: 06/20/2019
+ms.date: 07/12/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.localizationpriority: high
@@ -15,12 +15,12 @@ ms.reviewer: joglocke
 ms.suite: ems
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 3e4e1040913daef5418f0b4fa1e56f6ef827dd67
-ms.sourcegitcommit: 63b55e81122e5c15893302b109ae137c30855b55
+ms.openlocfilehash: 16586ece687b5d50ea89b28bfd524f50e65ceb46
+ms.sourcegitcommit: 5ce8726278004bbf072149a9c924091bb0654b7c
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/10/2019
-ms.locfileid: "67713270"
+ms.lasthandoff: 07/12/2019
+ms.locfileid: "67851473"
 ---
 # <a name="use-security-baselines-to-configure-windows-10-devices-in-intune"></a>Usar linhas de base de segurança para configurar dispositivos com Windows 10 no Intune
 
@@ -70,9 +70,9 @@ As instâncias de linhas de base de segurança a seguir estão disponíveis para
   - [Linha de base de segurança do MDM para a primavera de 2019 (19H1)](security-baseline-settings-mdm.md)
   - [Versão prévia: Linha de base de segurança do MDM para outubro de 2018](security-baseline-settings-mdm-archive.md)
 
-- **Linha de base da ATP do Windows Defender**  
+- **Linha de base da ATP do Microsoft Defender**  
   *Para usar essa linha de base, seu ambiente precisa atender aos pré-requisitos para o uso da [Proteção Avançada contra Ameaças do Microsoft Defender](advanced-threat-protection.md#prerequisites)* .
-  - [Versão prévia: linha de base da ATP do Windows Defender](security-baseline-settings-defender-atp.md)  
+  - [Versão prévia: Linha de base da ATP do Microsoft Defender](security-baseline-settings-defender-atp.md)  
 
 Você pode continuar a usar e editar perfis criados anteriormente com base em um modelo de visualização, mesmo quando esse modelo de visualização não estiver mais disponível para criar novos perfis. 
 
@@ -200,6 +200,6 @@ Estritamente falando, não. A equipe de segurança da Microsoft consulta organiz
 ## <a name="next-steps"></a>Próximas etapas
 - Confira as configurações nas versões mais recentes das linhas de base disponíveis:  
   - [Linha de Base de Segurança do MDM](security-baseline-settings-mdm.md)  
-  - [Linha de Base do Windows Defender ATP](security-baseline-settings-defender-atp.md)  
+  - [Linha de base da ATP do Microsoft Defender](security-baseline-settings-defender-atp.md)  
 
 - Verifique o status e monitore a [linha de base e o perfil](security-baselines-monitor.md).

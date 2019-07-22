@@ -1,5 +1,5 @@
 ---
-title: Gerenciar o acesso via Web usando o Microsoft Edge com o Microsoft Intune
+title: Gerenciar o Microsoft Edge para iOS e Android com o Intune
 titleSuffix: ''
 description: Use as políticas de Proteção de Aplicativo do Intune com o Microsoft Edge para garantir que sites corporativos sempre sejam acessados com proteções em vigor.
 keywords: ''
@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 147547577615c6e74a9c5b3dd8b200ba387bad79
-ms.sourcegitcommit: 1b7ee2164ac9490df4efa83c5479344622c181b5
+ms.openlocfilehash: bc18ba2210719cbebe77cd5b37024be4bb7b0d3e
+ms.sourcegitcommit: a01f0f3070932e3be44a4f545d4de11d715381ea
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/08/2019
-ms.locfileid: "67648458"
+ms.lasthandoff: 07/17/2019
+ms.locfileid: "68287212"
 ---
 # <a name="manage-web-access-by-using-microsoft-edge-with-microsoft-intune"></a>Gerenciar o acesso via Web usando o Microsoft Edge com o Microsoft Intune
 
@@ -157,7 +157,7 @@ Estes são alguns exemplos dos cenários que o proxy de aplicativo do Azure AD p
 ### <a name="before-you-start"></a>Antes de começar
 
 - Configure os aplicativos internos por meio do proxy de aplicativo do Azure AD.
-    - Para configurar o Proxy de Aplicativo e publicar aplicativos, consulte a [documentação de instalação](https://docs.microsoft.com/azure/active-directory/manage-apps/application-proxy).
+  - Para configurar o Proxy de Aplicativo e publicar aplicativos, consulte a [documentação de instalação](https://docs.microsoft.com/azure/active-directory/manage-apps/application-proxy).
 - O aplicativo do Microsoft Edge deve ter a [política de Proteção de Aplicativo do Intune](app-protection-policy.md) atribuída.
 
 > [!NOTE]
@@ -228,34 +228,34 @@ Você pode usar vários formatos de URL para criar suas listas de sites permitid
 - Você pode usar o símbolo de caractere curinga (\*) de acordo com as regras na lista de padrões permitidos abaixo.
 - Um caractere curinga só pode corresponder a todo um componente do nome do host (separado por pontos) ou partes inteiras do caminho (separadas por barras). Por exemplo, **não** há suporte para `http://*contoso.com`.
 - Você pode especificar os números de porta no endereço. Se você não especificar um número da porta, os valores usados serão:
-    - Porta 80 para https
-    - Porta 443 para https
+  - Porta 80 para https
+  - Porta 443 para https
 - O uso de caracteres curinga no número da porta **não** é compatível. Por exemplo, `http://www.contoso.com:*` e `http://www.contoso.com:*/` não são compatíveis. 
 
     |    URL    |    Detalhes    |    Corresponde a    |    Não corresponde a    |
     |-------------------------------------------|--------------------------------------------------------|-------------------------------------------------------------------------------------------------|-------------------------------------------------------------------------|
     |    `http://www.contoso.com`    |    Corresponde a uma única página    |    `www.contoso.com`    |    `host.contoso.com`<br>`www.contoso.com/images`<br>`contoso.com/`    |
     |    `http://contoso.com`    |    Corresponde a uma única página    |    `contoso.com/`    |    `host.contoso.com`<br>`www.contoso.com/images`<br>`www.contoso.com`    |
-    |    `http://www.contoso.com/&#42;`   |    Corresponde a todas as URLs iniciadas por `www.contoso.com`    |    `www.contoso.com`<br>`www.contoso.com/images`<br>`www.contoso.com/videos/tvshows`    |    `host.contoso.com`<br>`host.contoso.com/images`    |
-    |    `http://*.contoso.com/*`    |    Corresponde a todos os subdomínios em `contoso.com`    |    `developer.contoso.com/resources`<br>`news.contoso.com/images`<br>`news.contoso.com/videos`    |    `contoso.host.com`    |
-    |    `http://www.contoso.com/images`    |    Corresponde a uma única pasta    |    `www.contoso.com/images`    |    `www.contoso.com/images/dogs`    |
+    |    `http://www.contoso.com/*;`   |    Corresponde a todas as URLs iniciadas por `www.contoso.com`    |    `www.contoso.com`<br>`www.contoso.com/images`<br>`www.contoso.com/videos/tvshows`    |    `host.contoso.com`<br>`host.contoso.com/images`    |
+    |    `http://*.contoso.com/*`    |    Corresponde a todos os subdomínios em `contoso.com`    |    `developer.contoso.com/resources`<br>`news.contoso.com/images`<br>`news.contoso.com/videos`    |    `contoso.host.com`    |    `http://*contoso.com/*`    |    Corresponde a todos os subdomínios terminados em `contoso.com/`    |    `http://news-contoso.com`<br>`http://news-contoso.com.com/daily`    |    `http://news-contoso.host.com`    |
+    `http://www.contoso.com/images`    |    Corresponde a uma única pasta    |    `www.contoso.com/images`    |    `www.contoso.com/images/dogs`    |
     |    `http://www.contoso.com:80`    |    Corresponde a uma única página, usando um número da porta    |    `http://www.contoso.com:80`    |         |
     |    `https://www.contoso.com`    |    Corresponde a uma única página segura    |    `https://www.contoso.com`    |    `http://www.contoso.com`    |
     |    `http://www.contoso.com/images/*`    |    Corresponde a uma única pasta e todas as subpastas    |    `www.contoso.com/images/dogs`<br>`www.contoso.com/images/cats`    |    `www.contoso.com/videos`    |
   
 - Veja a seguir exemplos de algumas das entradas que você não pode especificar:
-    - `*.com`
-    - `*.contoso/*`
-    - `www.contoso.com/*images`
-    - `www.contoso.com/*images*pigs`
-    - `www.contoso.com/page*`
-    - Endereços IP
-    - `https://*`
-    - `http://*`
-    - `https://*contoso.com`
-    - `http://www.contoso.com:*`
-    - `http://www.contoso.com: /*`
-  
+  - `*.com`
+  - `*.contoso/*`
+  - `www.contoso.com/*images`
+  - `www.contoso.com/*images*pigs`
+  - `www.contoso.com/page*`
+  - Endereços IP
+  - `https://*`
+  - `http://*`
+  - `https://*contoso.com`
+  - `http://www.contoso.com:*`
+  - `http://www.contoso.com: /*`
+
 ## <a name="define-behavior-when-users-try-to-access-a-blocked-site"></a>Definir o comportamento quando os usuários tentarem acessar um site bloqueado
 
 Com o modelo de identidade dupla incorporado ao Microsoft Edge, você pode habilitar uma experiência mais flexível para seus usuários finais do que era possível com o Intune Managed Browser. Quando os usuários acessam um site bloqueado no Microsoft Edge, você pode solicitar que eles abram o link no contexto pessoal, em vez de fazerem isso no contexto de trabalho. Isso permite que eles fiquem protegidos, enquanto mantém os recursos corporativos seguros. Por exemplo, se um usuário receber um link para um artigo de notícias por meio do Outlook, ele poderá abrir o link em seu contexto pessoal ou em uma guia InPrivate. O contexto de trabalho não permite sites de notícias. Por padrão, essas transições são permitidas.

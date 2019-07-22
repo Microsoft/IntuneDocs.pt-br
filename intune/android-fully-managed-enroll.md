@@ -17,17 +17,17 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: f1b1197671b54cb5374bd79b6acbeb8137c0135c
-ms.sourcegitcommit: cc5d757018d05fc03ac9ea3d30f563df9bfd61ed
+ms.openlocfilehash: 54d9fa1016ff39fcf1e7da9c21391ce70f7acaac
+ms.sourcegitcommit: e451295ca3ee3efc31bf9ee360e599b28ef643ea
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/10/2019
-ms.locfileid: "66819883"
+ms.lasthandoff: 07/12/2019
+ms.locfileid: "67863094"
 ---
 # <a name="set-up-intune-enrollment-of-android-enterprise-fully-managed-devices-preview"></a>Configurar registro do Intune dos dispositivos Android Enterprise totalmente gerenciados (versão prévia)
 
 Os dispositivos Android Enterprise totalmente gerenciados são de propriedade corporativa, associados a um único usuário e usados exclusivamente para trabalho, e não para uso pessoal. Os administradores podem gerenciar todo o dispositivo e impor controles de política não disponíveis para perfis de trabalho, como:
-- permitir a instalação de aplicativos somente do Google Play Gerenciado
+- permitir a instalação de aplicativos somente do Google Play Gerenciado;
 - bloquear a desinstalação de aplicativos gerenciados;
 - impedir que os usuários redefinam as configurações de fábrica dos dispositivos, e assim por diante.
 
@@ -58,8 +58,8 @@ Para configurar o gerenciamento de dispositivo Android Enterprise totalmente ger
 1. Entre no [Intune](https://go.microsoft.com/fwlink/?linkid=2090973) e escolha **Registro de dispositivo** > **Registro do Android** > **Dispositivos de usuário de propriedade corporativa totalmente gerenciados (versão prévia)** .
 2. Em **Permitir que os usuários registrem os dispositivos de usuário de propriedade corporativa**, escolha **Sim**.
 
-[!NOTE]
-Se você tiver uma política de Acesso Condicional do Azure AD definida que usa o controle *exigir que um dispositivo seja marcado como em conformidade* e se aplica a **Todos os aplicativos de nuvem**, **Android** e **Navegadores**, você deverá excluir o aplicativo de nuvem do **Microsoft Intune** dessa política. Isso ocorre porque os processos de configuração do Android usam uma guia do Chrome para autenticar os usuários durante o registro. Para obter mais informações, confira [Documentação do Acesso Condicional do Azure AD](https://docs.microsoft.com/azure/active-directory/conditional-access/).
+> [!NOTE]
+> Se você tiver uma política de Acesso Condicional do Azure AD definida que usa o controle *exigir que um dispositivo seja marcado como em conformidade* e se aplica a **Todos os aplicativos de nuvem**, **Android** e **Navegadores**, você deverá excluir o aplicativo de nuvem do **Microsoft Intune** dessa política. Isso ocorre porque os processos de configuração do Android usam uma guia do Chrome para autenticar os usuários durante o registro. Para obter mais informações, confira [Documentação do Acesso Condicional do Azure AD](https://docs.microsoft.com/azure/active-directory/conditional-access/).
 
 Quando essa configuração é definida como **Sim**, ela fornece um token de registro (uma cadeia de caracteres aleatória) e um código QR para seu locatário do Intune. Esse token de registro único é válido para todos os usuários e não expirará. Dependendo do sistema operacional Android e da versão do dispositivo, é possível usar o token ou o código QR para registrar o dispositivo de quiosque.
 

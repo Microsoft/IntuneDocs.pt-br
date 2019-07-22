@@ -16,25 +16,25 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 8fa5589f62900027b90659b8f570e7caa10b1cd8
-ms.sourcegitcommit: bccfbf1e3bdc31382189fc4489d337d1a554e6a1
-ms.translationtype: MTE75
+ms.openlocfilehash: 30cdb6903caa7e1071a6781db13c761e64f8bd7a
+ms.sourcegitcommit: 1dc9d4e1d906fab3fc46b291c67545cfa2231660
+ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/03/2019
-ms.locfileid: "67549055"
+ms.lasthandoff: 07/10/2019
+ms.locfileid: "67735773"
 ---
 # <a name="mdm-security-baseline-settings-for-intune"></a>Configurações de linha de base de segurança MDM para o Intune  
 
-Exiba as configurações de linha de base de segurança MDM que têm suporte pelo Microsoft Intune para dispositivos que executam o Windows 10 ou posterior. Os valores padrão para as configurações nessa linha de base representam a configuração recomendada para dispositivos aplicáveis e podem não corresponder a padrões de linha de base de outras linhas de base de segurança.  
+Exiba as configurações de linha de base de segurança do MDM com suporte pelo Microsoft Intune para dispositivos que executam o Windows 10 ou posterior. Os valores padrão para as configurações nessa linha de base representam a configuração recomendada para os dispositivos aplicáveis e podem não coincidir com os padrões de linha de base de outras linhas de base de segurança.  
 
-A versão de linha de base mais recente é **MDM a linha de base de segurança para a atualização de primavera de 2019 (1 de 19 H)**  
+A versão de linha de base mais recente é a **linha de base de segurança do MDM para a atualização 2019 do Spring (19H1)**  
 
 Para saber mais sobre o que mudou na versão mais recente desta linha de base da versão anterior, consulte [o que mudou no novo modelo](#whats-changed-in-the-new-template).  
 
 > [!NOTE]  
-> Em junho de 2019, a linha de base de segurança MDM de visualização foi substituída pela versão dos *base de segurança do MDM para atualização de primavera de 2019 (1 de 19H)* modelo, que é generaly disponíveis (não na versão prévia). Perfis que foram criados antes da disponibilidade do *base de segurança do MDM para atualização de primavera de 2019 (1 de 19 H)* linha de base não são atualizados para refletir as configurações e valores que são a linha de base de segurança do MDM para atualização de primavera de 2019 (19h 1 ) versão.  Embora seja possível criar novos perfis baseados no modelo de visualização, você pode editar e continuar a usar os perfis que você criou anteriormente que são baseados no modelo de visualização.   
+> Em junho de 2019, a linha de base de segurança do MDM de visualização foi substituída pelo lançamento da *linha de base de segurança do MDM para o modelo 19H1 (atualização do Spring 2019)* , que é geral disponível (não em versão prévia). Os perfis criados antes da disponibilidade da linha de base de *segurança do MDM para a linha de base 19H1 (atualização 2019)* não serão atualizados para refletir as configurações e os valores que estão na linha de base de segurança do MDM para a versão do 19H1 (Spring 2019 Update).  Embora não seja possível criar novos perfis com base no modelo de visualização, você pode editar e continuar a usar perfis criados anteriormente com base no modelo de visualização.   
   
-Para saber mais sobre como usar linhas de base de segurança com o Intune, consulte [usar linhas de base de segurança](security-baselines.md).  
+Para saber mais sobre como usar linhas de base de segurança com o Intune, confira [usar linhas de base de segurança](security-baselines.md).  
 
 
    
@@ -47,7 +47,7 @@ Para obter mais informações, veja [CSP de política – AboveLock](https://doc
 
   **Padrão**: Sim  
 
-- **Voz ativar aplicativos de tela bloqueada**  
+- **Ativar voz de aplicativos da tela bloqueada**  
 
   **Padrão**: desabilitado
 
@@ -64,16 +64,16 @@ Para obter mais informações, veja [CSP de política – AppRuntime](https://do
 ## <a name="application-management"></a>Gerenciamento de aplicativos   
 Para obter mais informações, veja [CSP de política – ApplicationManagement](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-applicationmanagement) na documentação do Windows.  
 
-- **Bloco de controle de usuário ao longo de instalações**  
-  Essa configuração de política permite que os usuários alterem as opções de instalação que normalmente estão disponíveis somente para administradores de sistema. Se você habilitar essa configuração de política, alguns dos recursos de segurança do Windows Installer são ignorados. Ele permite instalações para concluir que, caso contrário, seriam interrompidas devido a uma violação de segurança. Se você desabilitar ou não definir essa configuração de política, os recursos de segurança do Windows Installer impedir que os usuários alterem as opções de instalação normalmente é reservadas para os administradores do sistema, como especificar o diretório no qual os arquivos são instalados. Se o Windows Installer detecta que um pacote de instalação permitiu que o usuário altere uma opção protegida, ele interrompe a instalação e exibe uma mensagem. Esses recursos de segurança funcionam apenas quando o programa de instalação está em execução em um contexto de segurança privilegiado no qual ele tem acesso a diretórios negados ao usuário. Essa configuração de política foi projetada para ambientes menos restritivos. Ele pode ser usado para evitar erros em um programa de instalação que impede a instalação do software.  
+- **Bloquear o controle do usuário sobre instalações**  
+  Essa configuração de política permite que os usuários alterem as opções de instalação que normalmente estão disponíveis somente para administradores do sistema. Se você habilitar essa configuração de política, alguns dos recursos de segurança do Windows Installer serão ignorados. Ele permite que as instalações concluam que, caso contrário, seriam interrompidas devido a uma violação de segurança. Se você desabilitar ou não definir essa configuração de política, os recursos de segurança do Windows Installer evitarão que os usuários alterem as opções de instalação normalmente reservadas para administradores do sistema, como especificar o diretório no qual os arquivos são instalados. Se Windows Installer detectar que um pacote de instalação permitiu que o usuário alterasse uma opção protegida, ele interromperá a instalação e exibirá uma mensagem. Esses recursos de segurança operam somente quando o programa de instalação está sendo executado em um contexto de segurança privilegiado no qual ele tem acesso aos diretórios negados ao usuário. Essa configuração de política é projetada para ambientes menos restritivos. Ele pode ser usado para burlar erros em um programa de instalação que impede a instalação do software.  
   [Saiba mais](https://go.microsoft.com/fwlink/?linkid=2067060)  
 
   **Padrão**: Sim
 
-- **Instalações de aplicativo do bloco do MSI com privilégios elevados**  
+- **Bloquear instalações de aplicativos MSI com privilégios elevados**  
   Esta configuração de política direciona o Windows Installer para usar permissões elevadas ao instalar algum programa no sistema.  
-  - *Se você habilitar essa configuração de política*, privilégios são estendidos para todos os programas. Geralmente, esses privilégios são reservados para programas que foram atribuídos ao usuário (oferecido na área de trabalho), atribuído ao f de computador (instalados automaticamente) ou disponibilizados em Adicionar ou remover programas no painel de controle. Essa configuração de perfil permite que os usuários instalem programas que exigem acesso a diretórios que o usuário pode não ter permissão para exibir ou alterar, incluindo diretórios em computadores altamente restritos.
-  - *Se você desabilitar ou não definir essa configuração de política*, o sistema aplica permissões do usuário atual quando instalar programas que um administrador de sistema não distribui ou oferece. Observação: essa configuração de política é exibida nas pastas Configuração do Computador e Configuração do Usuário. Para fazer essa configuração de política em vigor, você deve habilitá-lo em ambas as pastas. Cuidado: Os usuários mais experientes podem se beneficiar das permissões essa configuração concede para alterar seus privilégios e obter acesso permanente a arquivos e pastas restritos de política. Observe que a versão de configuração do usuário dessa configuração de política não é garantida para ser seguro.  
+  - *Se você habilitar essa configuração de política*, os privilégios serão estendidos para todos os programas. Esses privilégios geralmente são reservados para programas que foram atribuídos ao usuário (oferecidos na área de trabalho), atribuídos ao computador (instalado automaticamente) f ou disponibilizados em Adicionar ou remover programas no painel de controle. Essa configuração de perfil permite que os usuários instalem programas que exigem acesso a diretórios que o usuário pode não ter permissão para exibir ou alterar, incluindo diretórios em computadores altamente restritos.
+  - *Se você desabilitar ou não definir essa configuração de política*, o sistema aplicará as permissões do usuário atual ao instalar programas que um administrador de sistema não distribui ou oferece. Observação: essa configuração de política é exibida nas pastas Configuração do Computador e Configuração do Usuário. Para tornar essa configuração de política eficaz, você deve habilitá-la em ambas as pastas. Cuidado: os usuários experientes podem aproveitar as permissões que essa configuração de política concede para alterar seus privilégios e obter acesso permanente a arquivos e pastas restritos. Observe que a versão de configuração do usuário dessa configuração de política não tem garantia de segurança.  
   
   [Saiba mais](https://go.microsoft.com/fwlink/?linkid=2067134)    
 
@@ -270,44 +270,44 @@ Para obter mais informações, veja [CSP de política – DeviceLock](https://do
   
   **Padrão**: Sim  
   
-    Quando *Exigir senha* estiver definido como *Sim*, as configurações a seguir estarão disponíveis.
+  Quando *Exigir senha* estiver definido como *Sim*, as configurações a seguir estarão disponíveis.
 
-    - **Contagem do conjunto de caracteres mínimo da senha**  
-      O número de tipos de elementos complexos (letras maiúsculas e minúsculas, números e pontuação) necessário para um PIN ou uma senha forte. O PIN impõe o seguinte comportamento para dispositivos móveis e da área de trabalho: 1: apenas dígitos, 2: dígitos e letras minúsculas são necessários, 3: dígitos, letras minúsculas e letras maiúsculas são necessários. Não é compatível com contas da Microsoft de área de trabalho e contas de domínio. 4: dígitos, letras minúsculas, letras maiúsculas e caracteres especiais são necessários. Não é compatível com a área de trabalho. O valor padrão é 1.  
-      [Saiba mais](https://go.microsoft.com/fwlink/?linkid=2067055)  
+  - **Contagem do conjunto de caracteres mínimo da senha**  
+    O número de tipos de elementos complexos (letras maiúsculas e minúsculas, números e pontuação) necessário para um PIN ou uma senha forte. O PIN impõe o seguinte comportamento para dispositivos móveis e da área de trabalho: 1: apenas dígitos, 2: dígitos e letras minúsculas são necessários, 3: dígitos, letras minúsculas e letras maiúsculas são necessários. Não é compatível com contas da Microsoft de área de trabalho e contas de domínio. 4: dígitos, letras minúsculas, letras maiúsculas e caracteres especiais são necessários. Não é compatível com a área de trabalho. O valor padrão é 1.  
+    [Saiba mais](https://go.microsoft.com/fwlink/?linkid=2067055)  
+    
+    **Padrão**: 3  
+
+  - **Número de falhas de início de sessão antes de limpar o dispositivo**  
+    O número de falhas de autenticação permitidas antes que o dispositivo seja apagado. Um valor 0 desabilita a funcionalidade de apagamento do dispositivo.  
+    [Saiba mais](https://go.microsoft.com/fwlink/?linkid=2067030)  
       
-      **Padrão**: 3  
-  
-    - **Número de falhas de início de sessão antes de limpar o dispositivo**  
-      O número de falhas de autenticação permitidas antes que o dispositivo seja apagado. Um valor 0 desabilita a funcionalidade de apagamento do dispositivo.  
-      [Saiba mais](https://go.microsoft.com/fwlink/?linkid=2067030)  
-        
-      **Padrão**: 10  
-  
-    - **Expiração da senha (dias)**  
-      A configuração de política de duração máxima da senha determina o período (em dias) pelo qual uma senha pode ser usada antes de o sistema exigir que o usuário a altere. Você pode definir as senhas expirar após um número de dias entre 1 e 999 ou pode especificar que as senhas nunca expirem definindo o número de dias como 0. Se a duração máxima da senha for entre 1 e 999 dias, a duração mínima da senha deverá ser menor do que esse valor. Se a duração máxima da senha for definida como 0, a duração mínima da senha poderá ser qualquer valor entre 0 e 998 dias.  
-      [Saiba mais](https://go.microsoft.com/fwlink/?linkid=2067028)  
-      
-      **Padrão**: 60  
-  
-    - **Tipo de senha necessária**  
-      Determina o tipo de PIN ou senha necessária.  
-      [Saiba mais](https://go.microsoft.com/fwlink/?linkid=2067027)  
-      
-      **Padrão**: alfanumérico  
-  
-    - **Comprimento mínimo da senha**  
-      A configuração de política de Comprimento mínimo da senha determina o menor número de caracteres que podem formar uma senha para uma conta de usuário. Você pode definir um valor entre 1 e 14 caracteres ou pode estabelecer que nenhuma senha é necessária definindo o número de caracteres como 0.  
-      [Saiba mais](https://go.microsoft.com/fwlink/?linkid=2067024)  
-      
-      **Padrão**: 8  
-  
-    - **Bloquear senhas simples**  
-      Especifica se os PINs ou senhas como "1111" ou "1234" são permitidas. Para a área de trabalho, ela também controla o uso de senhas com imagem.  
-      [Saiba mais](https://go.microsoft.com/fwlink/?linkid=2067127) 
-      
-      **Padrão**: Sim  
-        *Uma configuração de Sim impede o uso de senhas simples.* 
+    **Padrão**: 10  
+
+  - **Expiração da senha (dias)**  
+    A configuração de política de duração máxima da senha determina o período (em dias) pelo qual uma senha pode ser usada antes de o sistema exigir que o usuário a altere. Você pode definir as senhas expirar após um número de dias entre 1 e 999 ou pode especificar que as senhas nunca expirem definindo o número de dias como 0. Se a duração máxima da senha for entre 1 e 999 dias, a duração mínima da senha deverá ser menor do que esse valor. Se a duração máxima da senha for definida como 0, a duração mínima da senha poderá ser qualquer valor entre 0 e 998 dias.  
+    [Saiba mais](https://go.microsoft.com/fwlink/?linkid=2067028)  
+    
+    **Padrão**: 60  
+
+  - **Tipo de senha necessária**  
+    Determina o tipo de PIN ou senha necessária.  
+    [Saiba mais](https://go.microsoft.com/fwlink/?linkid=2067027)  
+    
+    **Padrão**: alfanumérico  
+
+  - **Comprimento mínimo da senha**  
+    A configuração de política de Comprimento mínimo da senha determina o menor número de caracteres que podem formar uma senha para uma conta de usuário. Você pode definir um valor entre 1 e 14 caracteres ou pode estabelecer que nenhuma senha é necessária definindo o número de caracteres como 0.  
+    [Saiba mais](https://go.microsoft.com/fwlink/?linkid=2067024)  
+    
+    **Padrão**: 8  
+
+  - **Bloquear senhas simples**  
+    Especifica se os PINs ou senhas como "1111" ou "1234" são permitidas. Para a área de trabalho, ela também controla o uso de senhas com imagem.  
+    [Saiba mais](https://go.microsoft.com/fwlink/?linkid=2067127) 
+    
+    **Padrão**: Sim  
+      *Uma configuração de Sim impede o uso de senhas simples.* 
 
   - **Evitar a reutilização de senhas anteriores**  
     Especifica quantas senhas podem ser armazenadas no histórico e não podem ser usadas. O valor inclui a senha atual do usuário. Por exemplo, com uma configuração de *1*, o usuário não pode reutilizar a senha atual ao escolher uma nova senha. Uma configuração de *5* significa que um usuário não pode definir sua nova senha como a senha atual ou qualquer uma das quatro senhas anteriores.  
@@ -328,10 +328,10 @@ Para obter mais informações, veja [CSP de política – DeviceLock](https://do
   
   **Padrão**: 1  
 
-## <a name="dma-guard"></a>Protetor de DMA  
+## <a name="dma-guard"></a>Proteção de DMA  
 Para obter mais informações, veja [CSP de política – DmaGuard](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-dmaguard) na documentação do Windows.
 - **Enumeração de dispositivos externos incompatíveis com a proteção de DMA do Kernel**  
-  Essa política destina-se a fornecer segurança adicional em relação a dispositivos com capacidade de DMA externos. Ele permite mais controle sobre a enumeração de dispositivos externos com capacidade de DMA que são incompatíveis com áreas de segurança e isolamento de memória de dispositivo/Remapeamento DMA. Essa política tem efeito somente quando a Proteção DMA de Kernel tem suporte e está habilitada pelo firmware do sistema. Proteção de DMA kernel é um recurso de plataforma que não pode ser controlado por meio da política ou pelo usuário final. Ele precisa ter suporte do sistema no momento da produção. Para verificar se o sistema oferece suporte à proteção de DMA do Kernel, verifique se o campo de Kernel DMA proteção na página de resumo de MSINFO32.exe.  
+  Essa política destina-se a fornecer segurança adicional contra dispositivos compatíveis com DMA externo. Ele permite mais controle sobre a enumeração de dispositivos externos com capacidade de DMA que são incompatíveis com áreas de segurança e isolamento de memória de dispositivo/Remapeamento DMA. Essa política tem efeito somente quando a Proteção DMA de Kernel tem suporte e está habilitada pelo firmware do sistema. A proteção de kernel DMA é um recurso de plataforma que não pode ser controlado pela política ou pelo usuário final. Ele precisa ter suporte do sistema no momento da produção. Para verificar se o sistema dá suporte à proteção de kernel DMA, verifique o campo proteção DMA do kernel na página Resumo do MSINFO32. exe.  
   [Saiba mais](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-dmaguard#dmaguard-deviceenumerationpolicy)
 
   **Padrão**: bloquear tudo   
@@ -531,11 +531,11 @@ Para obter mais informações, veja [CSP de política – InternetExplorer](http
   
   **Default**: Sem sites  
 
-- **Suporte de criptografia do Internet Explorer**  
-  Essa configuração de política permite que você desative o suporte para segurança de camada de transporte (TLS) 1.0, TLS 1.1, TLS 1.2, Secure Sockets Layer (SSL) 2.0 ou 3.0 de SSL no navegador. TLS e SSL são protocolos que ajudam a proteger a comunicação entre o navegador e o servidor de destino. Quando o navegador tenta configurar uma comunicação protegida com o servidor de destino, o navegador e o servidor negociam o protocolo e a versão a ser usada. O navegador e o servidor tentam fazer a correspondência da outra lista de protocolos com suporte e versões, e eles selecionam a correspondência de maior preferência. Se você habilitar essa configuração de política, o navegador negocia ou não negocia um túnel de criptografia usando os métodos de criptografia que você selecionar na lista suspensa. Se você desabilitar ou não definir essa configuração de política, o usuário pode selecionar quais criptografia dá suporte ao método o navegador.  
+- **Suporte à criptografia do Internet Explorer**  
+  Essa configuração de política permite que você desative o suporte para TLS (Transport Layer Security) 1,0, TLS 1,1, TLS 1,2, protocolo SSL (SSL) 2,0 ou SSL 3,0 no navegador. TLS e SSL são protocolos que ajudam a proteger a comunicação entre o navegador e o servidor de destino. Quando o navegador tenta configurar uma comunicação protegida com o servidor de destino, o navegador e o servidor negociam qual protocolo e versão usar. O navegador e o servidor tentam corresponder à lista de protocolos e versões com suporte, e selecionam a correspondência mais preferencial. Se você habilitar essa configuração de política, o navegador negociará ou não negociará um túnel de criptografia usando os métodos de criptografia que você selecionar na lista suspensa. Se você desabilitar ou não definir essa configuração de política, o usuário poderá selecionar o método de criptografia ao qual o navegador dá suporte.  
   [Saiba mais](https://go.microsoft.com/fwlink/?linkid=2067057)
 
-  **Padrão**: 2 itens: TLS 1.1 e TLS v1.2  
+  **Padrão**: 2 itens: TLS v 1.1 e TLS v 1.2  
   *Selecione a seta para baixo para exibir as opções que você pode selecionar para essa configuração.*
   
 - **SmartScreen da zona de Internet bloqueada do Internet Explorer**  
@@ -940,7 +940,7 @@ Para obter mais informações, veja [CSP de política – InternetExplorer](http
   
   **Padrão**: habilitado  
   
-- **Miniscripts de zona de internet do Internet Explorer**  
+- **Área de Internet do Internet Explorer scriptlets**  
   Essa configuração de política permite que você gerencie se o usuário pode executar miniscripts. Se você habilitar essa configuração de política, o usuário poderá executar miniscripts. Se você desabilitar essa configuração de política, o usuário não poderá executar miniscripts. Se você não configurar essa política, o usuário poderá habilitar ou desabilitar os miniscripts.  
   [Saiba mais](https://go.microsoft.com/fwlink/?linkid=2067176)  
   
@@ -1387,27 +1387,27 @@ Para obter mais informações, veja [CSP de política – Ligar/desligar](https:
 
 ## <a name="remote-assistance"></a>Assistência Remota
 - **Assistência remota solicitada**  
-  Essa configuração de política permite que você ative ou desative a assistência remota Solicited (solicitar) neste computador. 
-  - *Se você habilitar essa configuração de política*, usuários neste computador podem usar a transferência de arquivo ou email para alguém pedir ajuda. Além disso, os usuários podem usar programas de mensagens instantâneas para permitir conexões com este computador, e você pode definir configurações adicionais de assistência remota. 
-  - *Se você desabilitar essa configuração de política*, usuários deste computador não podem usar a transferência de arquivo ou email para alguém pedir ajuda. Além disso, os usuários não é possível usar programas de mensagens instantâneas para permitir conexões com este computador. 
-  - *Se você não definir essa configuração de política*, os usuários podem ativar ou desativar a assistência remota Solicited (solicitar) em si nas propriedades do sistema no painel de controle. Os usuários também podem configurar as configurações de assistência remota. 
+  Essa configuração de política permite ativar ou desativar a assistência remota solicitada (solicitar) neste computador. 
+  - *Se você habilitar essa configuração de política*, os usuários neste computador poderão usar o email ou a transferência de arquivos para pedir ajuda a alguém. Além disso, os usuários podem usar programas de mensagens instantâneas para permitir conexões com este computador, e você pode definir configurações de assistência remota adicionais. 
+  - *Se você desabilitar essa configuração de política*, os usuários neste computador não poderão usar email ou transferência de arquivo para pedir ajuda a alguém. Além disso, os usuários não podem usar programas de mensagens instantâneas para permitir conexões com este computador. 
+  - *Se você não definir essa configuração de política*, os usuários poderão ativar ou desativar a assistência remota solicitada (solicitar) em Propriedades do sistema no painel de controle. Os usuários também podem configurar as configurações de assistência remota. 
 
-  Se você habilitar essa configuração de política, há duas maneiras para permitir que os auxiliares fornecer assistência remota: "Permitir que os auxiliares vejam apenas o computador" ou "Permitir que os auxiliares controlar remotamente o computador". O "tempo máximo de permissão" configuração de política define um limite na quantidade de tempo que um convite de assistência remota criado usando email ou transferência de arquivos pode permanecer aberto. O "Selecionar o método para enviar convites por email" configuração especifica qual padrão de email para usar para enviar convites de assistência remota. Dependendo do seu programa de email, você pode usar o protocolo padrão (o destinatário do convite se conecta por meio de um link da Internet) ou a SMAPI (MAPI simples) padrão (o convite é anexado à sua mensagem de email). Essa configuração de política não está disponível no Windows Vista, pois o SMAPI é o único método com suporte. Se você habilitar essa configuração de política, você também deve habilitar exceções de firewall apropriadas permitir comunicações de assistência remota.  
+  Se você habilitar essa configuração de política, terá duas maneiras de permitir que os auxiliares forneçam assistência remota: "permitir que os auxiliares apenas vejam o computador" ou "permitir que os auxiliares controlem o computador remotamente". A configuração de política "tempo máximo de tíquete" define um limite na quantidade de tempo que um convite de assistência remota criado usando email ou transferência de arquivos pode permanecer aberto. A configuração "selecionar o método para enviar convites por email" especifica qual padrão de email usar para enviar convites de assistência remota. Dependendo do seu programa de email, você pode usar o padrão mailto (o destinatário do convite se conecta por meio de um link da Internet) ou o padrão SMAPI (Simple MAPI) (o convite é anexado à mensagem de email). Essa configuração de política não está disponível no Windows Vista, pois a SMAPI é o único método com suporte. Se você habilitar essa configuração de política, também deverá habilitar as exceções de firewall apropriadas para permitir comunicações de assistência remota.  
   [Saiba mais](https://go.microsoft.com/fwlink/?linkid=2067198)
 
   **Padrão**: desabilitar a assistência remota
 
-  Quando definido como *habilitar a assistência remota*, defina as seguintes configurações adicionais:  
-  - **Assistência remota solicitada permissão**  
+  Quando definido para *habilitar a assistência remota*, defina as seguintes configurações adicionais:  
+  - **Permissão de assistência remota solicitada**  
     **Padrão**: exibição  
 
-  - **Valor de tempo máximo da permissão**  
+  - **Valor de tempo máximo de tíquete**  
     **Padrão**: *não configurado*  
 
-  - **Período de tempo máximo da permissão**  
+  - **Período de tempo máximo de tíquete**  
     **Padrão**: minutos    
 
-  - **Método de email de convite**  
+  - **Método de convite por email**  
     **Padrão**: MAPI simples
 
   
@@ -1711,7 +1711,7 @@ Para obter mais informações, veja [CSP de política – Defender](https://docs
 ## <a name="windows-defender-firewall"></a>Windows Defender Firewall  
 Para obter mais informações, consulte [2.2.2 FW_PROFILE_TYPOE]( https://docs.microsoft.com/openspecs/windows_protocols/ms-fasp/7704e238-174d-4a5e-b809-5f3787dd8acc) na documentação de protocolos do Windows.  
 
-- **Domínio do firewall de perfil**  
+- **Domínio do perfil de firewall**  
   Especifica os perfis aos quais a regra pertence: Domínio, Privado, Público. Esse valor representa o perfil para redes que estão conectadas aos domínios.  
   [Saiba mais](https://go.microsoft.com/fwlink/?linkid=2066796)  
 
@@ -1727,7 +1727,7 @@ Para obter mais informações, consulte [2.2.2 FW_PROFILE_TYPOE]( https://docs.m
   - **Firewall habilitado**  
     **Padrão**: Permitido
 
-- **Perfil público do firewall**  
+- **Perfil de firewall público**  
   Especifica os perfis aos quais a regra pertence: Domínio, Privado, Público. Esse valor representa o perfil para redes públicas. Essas redes são classificadas como públicas pelos administradores no host do servidor. A classificação ocorre na primeira vez em que o host se conecta à rede. Normalmente, essas redes estão em aeroportos, cafeterias e outros locais públicos, onde os pontos na rede ou o administrador de rede não são confiáveis.  
   [Saiba mais](https://go.microsoft.com/fwlink/?linkid=2067143)  
 
@@ -1753,7 +1753,7 @@ Para obter mais informações, consulte [2.2.2 FW_PROFILE_TYPOE]( https://docs.m
   Especifica os perfis aos quais a regra pertence: Domínio, Privado, Público. Esse valor representa o perfil para redes privadas.  
   [Saiba mais](https://go.microsoft.com/fwlink/?linkid=2067041)  
 
-   - **Conexões de entrada bloqueadas**  
+  - **Conexões de entrada bloqueadas**  
     **Padrão**: Sim
 
   - **Conexões de saída necessárias**  
@@ -1767,7 +1767,7 @@ Para obter mais informações, consulte [2.2.2 FW_PROFILE_TYPOE]( https://docs.m
 
 ## <a name="windows-hello-for-business"></a>Windows Hello para Empresas  
 - **Requer antifalsificação avançada, quando disponível**  
-  Em caso afirmativo, os dispositivos usarão antifalsificação avançada, quando disponível. Se não, a antifalsificação será bloqueada. Não configurado aceitará as configurações feitas no cliente.  
+  Em caso afirmativo, os dispositivos usarão antifalsificação avançada, quando disponível. Se não, a antifalsificação será bloqueada. Não configurado respeitará as configurações feitas no cliente.  
   [Saiba mais](https://go.microsoft.com/fwlink/?linkid=2067192)
 
   **Padrão**: Sim
@@ -1788,12 +1788,12 @@ Para obter mais informações, consulte [2.2.2 FW_PROFILE_TYPOE]( https://docs.m
   **Padrão**: Permitido
 
 - **Tamanho mínimo do PIN**  
-  Tamanho mínimo do PIN deve ser entre 4 e 127.
+  O comprimento mínimo do PIN deve estar entre 4 e 127.
 
   **Padrão**: 6
 
 - **Exigir letras maiúsculas no PIN**  
-  Se necessário, o PIN do usuário deve incluir pelo menos uma letra maiuscula.
+  Se necessário, o PIN do usuário deve incluir pelo menos uma letra maiúscula.
 
   **Padrão**: Permitido
 
@@ -1820,34 +1820,34 @@ Para obter mais informações, veja [CSP de política – WindowsPowerShell](htt
   **Padrão**: habilitado
 
 ## <a name="whats-changed-in-the-new-template"></a>O que mudou no novo modelo
-O *base de segurança do MDM para atualização de primavera de 2019 (1 de 19H)* modelo tem as seguintes alterações da *visualização* modelo.
+A *linha de base de segurança do MDM para o modelo de atualização do Spring 2019 (19H1)* tem as seguintes alterações do modelo de *Visualização* .
 
 ### <a name="changes-to-the-baseline-settings"></a>Alterações nas configurações de linha de base
 As seguintes configurações são removidas:
 - *Novo* nesta versão mais recente da linha de base.
-- *Removido* dessa versão de linha de base mais recente, mas estavam presentes na versão anterior.
-- *Revisado* de alguma forma de como as configurações apareceram na versão anterior. 
+- *Removido* desta versão de linha de base mais recente, mas estava presente na versão anterior.
+- ** Revisado de alguma forma de como as configurações apareciam na versão anterior. 
 
-*[Novo]*  [ **Acima do bloqueio**](#above-lock):
-- **Voz ativar aplicativos de tela bloqueada**    
+*[Novo]* [**Acima do bloqueio**](#above-lock):
+- **Ativar voz de aplicativos da tela bloqueada**    
 
 *[Novo]* [**Gerenciamento de aplicativos**](#application-management): 
-- **Bloco de controle de usuário ao longo de instalações**  
-- **Instalações de aplicativo do bloco do MSI com privilégios elevados**  
+- **Bloquear o controle do usuário sobre instalações**  
+- **Bloquear instalações de aplicativos MSI com privilégios elevados**  
 
-*[Removido]*  [ **Bitlocker**](#bitlocker):  
-- Política de unidade removível do BitLocker de bits > **método de criptografia**
-- **Política de unidade fixa com BitLocker** *(todas as configurações)*
-- **Política de unidade do sistema de Cofre de bits** *(todas as configurações)*
+*[Removido]* [**BitLocker**](#bitlocker):  
+- Política de unidade removível do armário de bits > **método de criptografia**
+- **Política de unidade fixa do armário de bits** *(todas as configurações)*
+- **Política de unidade do sistema do armário de bits** *(todas as configurações)*
 
 *[Novo]* [**Conectividade**](#connectivity):
-- **Configurar o acesso seguro para caminhos UNC**
+- **Configurar o acesso seguro a caminhos UNC**
 
 *[Novo]* [**Device Guard**](#device-guard):
 - **Segurança baseada em virtualização**
 
 
-*[Novo]*  [ **DMA Guard**](#dma-guard):
+*[Novo]* [**Proteção de DMA**](#dma-guard):
 - **Enumeração de dispositivos externos incompatíveis com a proteção de DMA do Kernel**  
 
 *[Novo]* [**Internet Explorer**](#internet-explorer):
@@ -1855,17 +1855,17 @@ As seguintes configurações são removidas:
 - **Arrastar e soltar ou copiar e colar arquivos na zona do Internet Explorer**  
 - **Componentes dependentes de .NET Framework da zona restrita do Internet Explorer**  
 - **Não executar antimalware nos controles ActiveX em zona de computador local do Internet Explorer**
-- **Suporte de criptografia do Internet Explorer**  
+- **Suporte à criptografia do Internet Explorer**  
 
-*[Revisado]*  [ **Internet Explorer**](#internet-explorer):
-- **Prompt automática do Internet Explorer internet zona para downloads de arquivos** > o valor padrão é agora **desabilitado**. No modo de visualização, isso foi definido como habilitado.
+*[Revisado]* [**Internet Explorer**](#internet-explorer):
+- **Prompt automático da zona Internet do Internet Explorer para downloads de arquivo** > o valor **** padrão agora está desabilitado. Em visualização, isso foi definido como habilitado.
 
 *[Novo]* [**Assistência remota**](#remote-assistance):  
 - **Assistência remota solicitada** 
-  - **Assistência remota solicitada permissão**
-  - **Valor de tempo máximo da permissão**  
-  - **Período de tempo máximo da permissão**  
-  - **Método de email de convite**
+  - **Permissão de assistência remota solicitada**
+  - **Valor de tempo máximo de tíquete**  
+  - **Período de tempo máximo de tíquete**  
+  - **Método de convite por email**
 
 
 *[Novo]* [**Windows Defender**](#windows-defender):
@@ -1873,12 +1873,12 @@ As seguintes configurações são removidas:
 - **Inicialização de aplicativos de comunicação do Office em um processo filho** 
 
 *[Novo]* [**Windows Defender Firewall**](#windows-defender-firewall)
-- **Domínio do firewall de perfil**  
+- **Domínio do perfil de firewall**  
   - **Conexões de entrada bloqueadas**  
   - **Conexões de saída necessárias**  
   - **Notificações de entrada bloqueadas**  
   - **Firewall habilitado**  
-- **Perfil público do firewall**  
+- **Perfil de firewall público**  
   - **Conexões de entrada bloqueadas**  
   - **Conexões de saída necessárias**  
   - **Notificações de entrada bloqueadas**  

@@ -7,12 +7,12 @@ ms.topic: include
 ms.date: 03/28/2019
 ms.author: erikje
 ms.custom: include file
-ms.openlocfilehash: fab8f2be48a30f6ad058b3eeb6874a44ff04e6ac
-ms.sourcegitcommit: 7ceae61e036ccf8b33704751b0b39fee81944072
+ms.openlocfilehash: d907c5256469e86410c9916d117d3e322d43cfc3
+ms.sourcegitcommit: 2614d1b08b8a78cd792aebd2ca9848f391df8550
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/06/2019
-ms.locfileid: "66744310"
+ms.lasthandoff: 07/11/2019
+ms.locfileid: "67812521"
 ---
 Esses avisos fornecem informações importantes que podem ajudar você a se preparar para os recursos e as alterações futuras do Intune. 
 
@@ -72,3 +72,19 @@ Você também deve atualizar sua documentação ou as diretrizes do desenvolvedo
 
 #### <a name="additional-information"></a>Informações adicionais
 https://docs.microsoft.com/intune/apps-prepare-mobile-application-management
+
+### <a name="plan-for-change-new-windows-updates-settings-in-intune----4464404---"></a>Planejar mudanças: Novas configurações de atualizações do Windows no Intune <!-- 4464404 -->
+A partir da versão de agosto, ou 1908, do Intune, estamos adicionando novas “configurações de prazo” que podem ser definidas como alternativa à opção “Permitir que o usuário reinicie (reinício estabelecido)”. Planejamos desabilitar as configurações de reinício estabelecido na interface do usuário na atualização de setembro, ou 1909, e removê-las completamente do console no final de outubro. 
+
+#### <a name="how-does-this-affect-me"></a>Como isso me afeta?
+Se você gerencia dispositivos do Windows 10 em seu ambiente: 
+- Com a atualização de agosto, ou 1908, do Intune, você verá novas configurações de prazo no console, além das configurações de reinício usadas anteriormente.
+- Quando tanto as configurações antigas quanto as novas estão configuradas, os valores das configurações de prazo substituirão os de reinício estabelecido.
+- As configurações de prazo substituirão a opção “Permitir que o usuário reinicie (reinício estabelecido) na atualização 1910 do console.
+
+#### <a name="what-can-i-do-to-prepare-for-this-change"></a>O que posso fazer para me preparar para essa alteração?
+Comece a usar as configurações de prazo na versão 1908, configurando-as com os valores desejados. Depois de definir isso, você poderá optar pela configuração de reinício estabelecido como “Não configurado” para se preparar para sua remoção do console em outubro.
+
+Atualize sua documentação e todos os scripts de automação, se necessário. 
+
+Manteremos você atualizado e postaremos um lembrete na Central de mensagens antes da remoção das configurações de reinício estabelecido.
