@@ -382,6 +382,8 @@
               href: privacy-data-view-correct.md
             - name: 'Auditar, exportar, excluir'
               href: privacy-data-audit-export-delete.md
+        - name: Criptografar dispositivos
+          href: encrypt-devices.md
         - name: Acesso condicional
           href: conditional-access.md
           items:
