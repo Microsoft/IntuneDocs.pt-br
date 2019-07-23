@@ -17,49 +17,49 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 934742108effda0a88f4bcc42e06daa12c55288c
-ms.sourcegitcommit: 1b7ee2164ac9490df4efa83c5479344622c181b5
+ms.openlocfilehash: 70802626c79f11748e81c39afdd8bc8c5d0622b3
+ms.sourcegitcommit: c3ac858bbadb63d248ed54069e48160d703bbaf2
 ms.translationtype: MTE75
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/08/2019
-ms.locfileid: "67648834"
+ms.lasthandoff: 07/18/2019
+ms.locfileid: "68313784"
 ---
-# <a name="reference-for-intune-management-extension"></a>Referência para a extensão de gerenciamento do Intune
+# <a name="reference-for-intune-management-extensions"></a>Referência para as extensões de gerenciamento do Intune
 
-A categoria **IntuneManagementExtension** contém entidades para dispositivos móveis que acompanham informações como:
+A categoria **IntuneManagementExtensions** contém entidades para dispositivos móveis que acompanham informações como:
 
-  - Versões de um IntuneManagementExtension
-  - Status de instalação de um IntuneManagementExtension
+- Versões de um IntuneManagementExtension
+- Status de instalação de um IntuneManagementExtension
 
-## <a name="intunemanagementextensionversion"></a>IntuneManagementExtensionVersion
+## <a name="intunemanagementextensionversions"></a>intuneManagementExtensionVersions
 
-A entidade **IntuneManagementExtensionVersion** lista todas as versões usadas pelo IntuneManagementExtension.
-
-| Propriedade  | Descrição | Exemplo |
-|---------|------------|--------|
-| ExtensionVersionKey |Identificador exclusivo da versão IntuneManagementExtension. | 1 |
-| ExtensionVersion |O número de versão de quatro dígitos. |1.0.2.0 |
-
-## <a name="intunemanagementextensionhealthstate"></a>IntuneManagementExtensionHealthState
-
-O **IntuneManagementExtensionHealthState** lista todos os estados de integridade possíveis da IntuneManagementExtension.
+A entidade **intuneManagementExtensionVersion** lista todas as versões usadas pelo intuneManagementExtensions.
 
 | Propriedade  | Descrição | Exemplo |
 |---------|------------|--------|
-| ExtensionStateKey |Identificador exclusivo do estado de integridade. | 2 |
-| ExtensionState |Estado de integridade de um IntuneManagementExtension. | Íntegros |
+| extensionVersionKey |Identificador exclusivo da versão intuneManagementExtensions. | 1 |
+| extensionVersion |O número de versão de quatro dígitos. |1.0.2.0 |
 
-## <a name="intunemanagementextension"></a>IntuneManagementExtension
+## <a name="intunemanagementextensionhealthstates"></a>intuneManagementExtensionHealthStates
 
-O **IntuneManagementExtension** lista a integridade do IntuneManagementExtension em cada dispositivo Windows 10 por dia.
+O **intuneManagementExtensionHealthState** lista todos os estados de integridade possíveis da intuneManagementExtensions.
+
+| Propriedade  | Descrição | Exemplo |
+|---------|------------|--------|
+| extensionStateKey |Identificador exclusivo do estado de integridade. | 2 |
+| extensionState |Estado de integridade de um IntuneManagementExtension. | Íntegros |
+
+## <a name="intunemanagementextensions"></a>intuneManagementExtensions
+
+A **intuneManagementExtension** lista a integridade da IntuneManagementExtensions em cada dispositivo Windows 10 por dia.
 Os dados são retidos pelos últimos 60 dias. 
 
 
 |      Propriedade       |                         Descrição                         | Exemplo |
 |---------------------|-------------------------------------------------------------|---------|
-|       DateKey       |               Identificador exclusivo da data.                |   123   |
-|      TenantKey      |              Identificador exclusivo do locatário.               |   456   |
-|      DeviceKey      |              Identificador exclusivo do dispositivo.               |   789   |
-| ExtensionVersionKey | Identificador exclusivo da versão IntuneManagementExtension. |    1    |
-|  ExtensionStateKey  |             Identificador exclusivo do estado de integridade.              |    2    |
+|       dateKey       |               Identificador exclusivo da data.                |   123   |
+|      tenantKey      |              Identificador exclusivo do locatário.               |   456   |
+|      deviceKey      |              Identificador exclusivo do dispositivo.               |   789   |
+| extensionVersionKey | Identificador exclusivo da versão intuneManagementExtension. |    1    |
+|  extensionStateKey  |             Identificador exclusivo do estado de integridade.              |    2    |
 

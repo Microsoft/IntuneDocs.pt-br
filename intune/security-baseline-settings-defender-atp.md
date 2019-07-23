@@ -16,20 +16,20 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 5bdd2171853a8db944c910ef4d912f7681d17077
-ms.sourcegitcommit: bccfbf1e3bdc31382189fc4489d337d1a554e6a1
+ms.openlocfilehash: 40d2b1f58c2892eea6d3f454a3f993b30b9a5c4a
+ms.sourcegitcommit: bd09decb754a832574d7f7375bad0186a22a15ab
 ms.translationtype: MTE75
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/03/2019
-ms.locfileid: "67549135"
+ms.lasthandoff: 07/19/2019
+ms.locfileid: "68354439"
 ---
 # <a name="microsoft-defender-advanced-threat-protection-baseline-settings-for-intune"></a>Configurações para Intune da Linha de base da Proteção Avançada contra Ameaças do Microsoft Defender
 
 Exiba as configurações de linha de base da Proteção Avançada contra Ameaças do Microsoft Defender (anteriormente conhecido como Proteção Avançada contra Ameaças do Windows Defender) têm suporte pelo Microsoft Intune. Os padrões de linha de base da ATP (Proteção Avançada contra Ameaças) representam a configuração recomendada para ATP e podem não corresponder aos padrões de linha de base para outras linhas de base de segurança.  
 
-  A linha de base da Proteção Avançada contra Ameaças do Microsoft Defender está disponível quando o seu ambiente atende aos pré-requisitos para usar a [Proteção Avançada contra Ameaças do Microsoft Defender](advanced-threat-protection.md#prerequisites)).
+A linha de base da Proteção Avançada contra Ameaças do Microsoft Defender está disponível quando o seu ambiente atende aos pré-requisitos para usar a [Proteção Avançada contra Ameaças do Microsoft Defender](advanced-threat-protection.md#prerequisites). 
 
-
+Essa linha de base é otimizada para dispositivos físicos e não é recomendada no momento para uso em VMs (máquinas virtuais) ou pontos de extremidade de VDI. Determinadas configurações de linha de base podem afetar sessões interativas remotas em ambientes virtualizados. Para obter mais informações, consulte [aumentar a conformidade com a linha de base de segurança do Microsoft defender ATP](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/configure-machines-security-baseline) na documentação do Windows.
 
 
 > [!NOTE]  
@@ -164,22 +164,22 @@ Para saber mais, veja [Configurações de Política de Grupo do Bitlocker](https
 
   Para a política da unidade removível do BitLocker, defina as seguintes configurações:
 
-    - **Exigir criptografia para acesso de gravação**  
-      **Padrão**: Sim
+  - **Exigir criptografia para acesso de gravação**  
+    **Padrão**: Sim
 
-    - **Método de criptografia**  
-      **Padrão**: CBC AES de 128 bits
+  - **Método de criptografia**  
+    **Padrão**: CBC AES de 128 bits
 
 - **Política de unidade fixa do BitLocker**  
   Os valores para essa política determinam o nível da criptografia que o BitLocker usa para criptografia de unidades fixas. As empresas podem controlar o nível de criptografia para aumentar a segurança (AES-256 é mais forte do que AES-128). Se você habilitar essa configuração, poderá configurar um algoritmo de criptografia e a intensidade da chave de criptografia para unidades de dados fixas, unidades do sistema operacional e unidades de dados removíveis individualmente. Para unidades de sistemas operacionais e fixas, recomendamos usar o algoritmo XTS-AES. Para unidades removíveis, você deve usar AES-CBC de 128 bits ou AES-CBC de 256 bits caso a unidade seja usada em outros dispositivos que não estejam executando o Windows 10, versão 1511 ou posterior. Alterar o método de criptografia não terá efeito se a unidade já estiver criptografada ou se a criptografia estiver em andamento. Nesses casos, essa configuração de política será ignorada.
 
   Para a política da unidade fixa do BitLocker, defina as seguintes configurações:
 
-    - **Exigir criptografia para acesso de gravação**  
-      **Padrão**: Sim
+  - **Exigir criptografia para acesso de gravação**  
+    **Padrão**: Sim
 
-    - **Método de criptografia**  
-      **Padrão**: XTS AES de 128 bits
+  - **Método de criptografia**  
+    **Padrão**: XTS AES de 128 bits
 
 - **Política de unidade do sistema do BitLocker**  
   Os valores para essa política determinam o nível da criptografia que o BitLocker usa para criptografia da unidade do sistema. As empresas talvez queiram controlar o nível de criptografia para aumentar a segurança (AES-256 é mais forte do que AES-128). Se você habilitar essa configuração, poderá configurar um algoritmo de criptografia e a intensidade da chave de criptografia para unidades de dados fixas, unidades do sistema operacional e unidades de dados removíveis individualmente. Para unidades de sistemas operacionais e fixas, recomendamos usar o algoritmo XTS-AES. Para unidades removíveis, você deve usar AES-CBC de 128 bits ou AES-CBC de 256 bits caso a unidade seja usada em outros dispositivos que não estejam executando o Windows 10, versão 1511 ou posterior. Alterar o método de criptografia não terá efeito se a unidade já estiver criptografada ou se a criptografia estiver em andamento. Nesses casos, essa configuração de política será ignorada.  

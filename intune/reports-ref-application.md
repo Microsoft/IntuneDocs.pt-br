@@ -17,54 +17,54 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 46e90d422afb8ebbd356031d4815708b5b0768f0
-ms.sourcegitcommit: 63b55e81122e5c15893302b109ae137c30855b55
+ms.openlocfilehash: a5436de6b972e5cbe8b2b17d42f0974cb38df47e
+ms.sourcegitcommit: c3ac858bbadb63d248ed54069e48160d703bbaf2
 ms.translationtype: MTE75
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/10/2019
-ms.locfileid: "67713134"
+ms.lasthandoff: 07/18/2019
+ms.locfileid: "68313805"
 ---
 # <a name="reference-for-application-entities"></a>Referência para entidades de aplicativo
 
 A categoria **Aplicativo** contém entidades para dispositivos móveis que rastreiam informações como:
 
-  - Versões de um aplicativo
-  - Origem de instalação de um aplicativo
-  - Tipo de desenvolvedores que criaram um aplicativo
-  - Tipos de software gerenciado para um aplicativo, por exemplo **secundários** ou **área de trabalho**
-  - Estado do programa de compra de volume (VPP) de um aplicativo
+- Versões de um aplicativo
+- Origem de instalação de um aplicativo
+- Tipo de desenvolvedores que criaram um aplicativo
+- Tipos de software gerenciado para um aplicativo, por exemplo **secundários** ou **área de trabalho**
+- Estado do programa de compra de volume (VPP) de um aplicativo
 
-## <a name="apprevision"></a>AppRevision
+## <a name="apprevisions"></a>appRevisions
 
-A entidade **AppRevision** lista todas as versões de aplicativos.
+A entidade **appRevision** lista todas as versões de aplicativos.
 
 | Propriedade  | Descrição | Exemplo |
 |---------|------------|--------|
-| AppKey |Identificador exclusivo do aplicativo. |123 |
-| ApplicationId |Identificador exclusivo do aplicativo – semelhante ao AppKey, mas essa chave é um natural. |b66bc706-ffff-7437-0340-032819502773 |
-| Revisão |A versão mencionada pelo administrador durante o carregamento do binário. |2 |
-| Título |Título do aplicativo. |Excel |
-| Editor |Editor do aplicativo. |Microsoft |
-| UploadState |Estado de upload do aplicativo. |1 |
-| AppTypeKey |Referência ao AppType descrito na próxima seção. | |
-| VppProgramTypeKey |Referência ao VppProgramType descrito abaixo. | |
-| CreationTime |A hora em que esta revisão foi criada. |23/11/2016 12:00:00 AM |
-| ModifiedTime |Última vez em que qualquer coisa relacionada a esta revisão foi alterada. |23/11/2016 12:00:00 AM |
-| Tamanho |Tamanho do binário. | |
-| StartDateInclusiveUTC |Data e hora em UTC em que essa revisão de aplicativo foi criada no data warehouse. |23/11/2016 12:00:00 AM |
-| EndDateExclusiveUTC |Data e hora em UTC em que essa revisão de aplicativo se tornou obsoleta. |23/11/2016 12:00:00 AM |
-| IsCurrent |Indica se a versão desse aplicativo está atualizada ou não no data warehouse. |Verdadeiro/Falso |
-| RowLastModifiedDateTimeUTC |Data e hora em UTC em que a versão desse aplicativo foi modificada pela última vez no data warehouse. |23/11/2016 12:00:00 AM |
+| appKey |Identificador exclusivo do aplicativo. |123 |
+| applicationId |Identificador exclusivo do aplicativo – semelhante ao AppKey, mas essa chave é um natural. |b66bc706-ffff-7437-0340-032819502773 |
+| revisão |A versão mencionada pelo administrador durante o carregamento do binário. |2 |
+| title |Título do aplicativo. |Excel |
+| editor |Editor do aplicativo. |Microsoft |
+| uploadState |Estado de upload do aplicativo. |1 |
+| appTypeKey |Referência ao AppType descrito na próxima seção. | |
+| vppProgramTypeKey |Referência ao VppProgramType descrito abaixo. | |
+| creationTime |A hora em que esta revisão foi criada. |23/11/2016 12:00:00 AM |
+| modifiedTime |Última vez em que qualquer coisa relacionada a esta revisão foi alterada. |23/11/2016 12:00:00 AM |
+| tamanho |Tamanho do binário. | |
+| startDateInclusiveUTC |Data e hora em UTC em que essa revisão de aplicativo foi criada no data warehouse. |23/11/2016 12:00:00 AM |
+| endDateExclusiveUTC |Data e hora em UTC em que essa revisão de aplicativo se tornou obsoleta. |23/11/2016 12:00:00 AM |
+| isCurrent |Indica se a versão desse aplicativo está atualizada ou não no data warehouse. |Verdadeiro/Falso |
+| rowLastModifiedDateTimeUTC |Data e hora em UTC em que a versão desse aplicativo foi modificada pela última vez no data warehouse. |23/11/2016 12:00:00 AM |
 
-## <a name="apptypes"></a>AppTypes
+## <a name="apptypes"></a>appTypes
 
-A entidade **AppTypes** lista a origem da instalação de um aplicativo.
+A entidade **appType** lista a origem da instalação de um aplicativo.
 
 | Propriedade  | Descrição |
 |---------|------------|
-| AppTypeID |ID do tipo |
-| AppTypeKey |Chave substituta para a chave |
-| AppTypeName |Tipo de aplicativo |
+| appTypeID |ID do tipo |
+| appTypeKey |Chave substituta para a chave |
+| appTypeName |Tipo de aplicativo |
 
 ### <a name="example"></a>Exemplo
 
@@ -85,15 +85,15 @@ A entidade **AppTypes** lista a origem da instalação de um aplicativo.
 | 12 |Aplicativo LOB para Windows Phone | Um aplicativo de linha de negócios do Windows Phone. |
 
 
-## <a name="vppprogramtypes"></a>VppProgramTypes
+## <a name="vppprogramtypes"></a>vppProgramTypes
 
-A entidade **VppProgramTypes** lista os possíveis tipos de programa VPP para um aplicativo.
+A entidade **vppProgramType** lista os possíveis tipos de programa VPP para um aplicativo.
 
 | Propriedade  | Descrição |
 |---------|------------|
-| VppProgramTypeID | ID do tipo. |
-| VppProgramTypeKey | Chave alternativa para a chave. |
-| VppProgramTypeName | Tipo de programa do VPP. |
+| vppProgramTypeID | ID do tipo. |
+| vppProgramTypeKey | Chave alternativa para a chave. |
+| vppProgramTypeName | Tipo de programa do VPP. |
 
 ### <a name="example"></a>Exemplo
 
@@ -105,27 +105,27 @@ A entidade **VppProgramTypes** lista os possíveis tipos de programa VPP para um
 
 
 
-## <a name="applicationinventory"></a>ApplicationInventory
+## <a name="applicationinventories"></a>applicationInventories
 
-A entidade **ApplicationInventory** lista os aplicativos encontrados no dispositivo no momento da coleta de inventário.
+A entidade **applicationInventory** lista os aplicativos encontrados no dispositivo no momento da coleta de inventário.
 
 | Propriedade  | Descrição |
 |---------|------------|
-| DeviceKey | Esta é uma referência à tabela de dispositivo que contém a ID do dispositivo do Intune. |
-| DateKey | Referência à tabela de data que indica o dia do inventário. |
-| ApplicationName | Nome do aplicativo. |
-| ApplicationVersion | Versão do aplicativo. |
-| BundleSize | O tamanho do aplicativo em bytes. |
+| deviceKey | Esta é uma referência à tabela de dispositivo que contém a ID do dispositivo do Intune. |
+| dateKey | Referência à tabela de data que indica o dia do inventário. |
+| applicationName | Nome do aplicativo. |
+| applicationVersion | Versão do aplicativo. |
+| bundleSize | O tamanho do aplicativo em bytes. |
 
-## <a name="mobileappinstallstate"></a>MobileAppInstallState
+## <a name="mobileappinstallstates"></a>mobileAppInstallStates
 
-A entidade **MobileAppInstallState** representa o estado de instalação de um aplicativo móvel após sua atribuição a um grupo que contém dispositivos, usuários ou ambos.
+A entidade **mobileAppInstallState** representa o estado de instalação de um aplicativo móvel após sua atribuição a um grupo que contém dispositivos, usuários ou ambos.
 
 | Propriedade | Descrição |
 |---|---|
-| AppInstallStateKey | A ID exclusiva do estado de instalação do aplicativo para sua conta. |
-| AppInstallState | Valor de enumeração do estado de instalação do aplicativo. |
-| AppInstallStateName | Nome do estado de instalação do aplicativo. |
+| appInstallStateKey | A ID exclusiva do estado de instalação do aplicativo para sua conta. |
+| appInstallState | Valor de enumeração do estado de instalação do aplicativo. |
+| appInstallStateName | Nome do estado de instalação do aplicativo. |
 
 
 
