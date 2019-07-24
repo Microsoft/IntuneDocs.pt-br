@@ -171,6 +171,7 @@
       items:
         - name: O que é o registro de dispositivo?
           href: device-enrollment.md
+          displayName: COD; BYOD; DEM; DEP; USB-SA; USB-Direct; co-management; GPO
         - name: Recursos de gerenciamento de dispositivos
           href: device-management-capabilities.md
         - name: Opções de registro
@@ -184,6 +185,7 @@
               href: apple-mdm-push-certificate-get.md
             - name: Identificadores corporativos
               href: corporate-identifiers-add.md
+              displayName: COD
             - name: Autenticação Multifator
               href: multi-factor-authentication.md
             - name: Gerenciador de registro de dispositivos
@@ -273,6 +275,8 @@
           href: device-remove-user.md
         - name: Localizar usuário primário
           href: find-primary-user.md
+        - name: Notificações de envio
+          href: custom-notifications.md
         - name: Apagar o dispositivo macOS
           href: device-erase.md
         - name: Dispositivos móveis com controle remoto
@@ -559,20 +563,27 @@
               href: apps-add-built-in.md
             - name: Scripts do PowerShell
               href: intune-management-extension.md
-        - name: Implantar aplicativos
-          href: apps-deploy.md
+        - name: Atribuir aplicativos
           items:
+            - name: Atribuir aplicativos a grupos
+              href: apps-deploy.md
+              displayName: app assignment; assignment
             - name: Incluir e excluir aplicativos
               href: apps-inc-exl-assignments.md
+              displayName: app assignment
             - name: Implantar aplicativos do Windows 10
               href: apps-windows-10-app-deploy.md
             - name: Implantar aplicativos em ambientes do governo
               href: apps-deploy-gcc-dod.md
         - name: Monitorar aplicativos
           href: apps-monitor.md
+        - name: Aplicativos Descobertos
+          href: app-discovered-apps.md
         - name: Configurar aplicativos
-          href: app-configuration-policies-overview.md
           items:
+            - name: Políticas de configuração de aplicativo
+              href: app-configuration-policies-overview.md
+              displayName: App configuration policy; configuration policy
             - name: iOS dispositivos gerenciados
               href: app-configuration-policies-use-ios.md
             - name: Android dispositivos gerenciados
