@@ -14,12 +14,12 @@ ms.reviewer: chrisbal
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: 3ce7ad6b0254b1c3a8e2843cfcbe70a6b718ce88
-ms.sourcegitcommit: 916fed64f3d173498a2905c7ed8d2d6416e34061
+ms.openlocfilehash: d5814a4aac064394dbd0c7f5902dc3f62459ad1d
+ms.sourcegitcommit: bd09decb754a832574d7f7375bad0186a22a15ab
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/23/2019
-ms.locfileid: "66049912"
+ms.lasthandoff: 07/19/2019
+ms.locfileid: "68353816"
 ---
 # <a name="application-protection-policies-and-work-profiles-on-android-enterprise-devices-in-intune"></a>Políticas de proteção de aplicativo e de trabalho em dispositivos Android Enterprise no Intune
 
@@ -58,7 +58,7 @@ Para ver uma lista de aplicativos habilitados com APP, confira [aplicativos gere
 
 Esta seção descreve as características importantes dos cenários de implantação de perfil de trabalho APP-WE e Android Enterprise.
 
-#### <a name="app-we"></a>APP-WE
+### <a name="app-we"></a>APP-WE
 
 Uma implantação APP-WE (políticas de proteção de aplicativo sem registro) define as políticas em aplicativos, não em dispositivos. Nesse cenário, os dispositivos normalmente não são registrados ou gerenciados por uma autoridade MDM, como o Intune. Para proteger aplicativos e o acesso aos dados organizacionais, os administradores usam aplicativos gerenciáveis por APP e aplicam políticas de proteção de dados nesses aplicativos.
 
@@ -71,7 +71,7 @@ Esse recurso aplica-se a:
 
 Os cenários APP-WE servem para usuários finais que desejam um volume de memória organizacional pequeno em seus dispositivos e não querem se registrar no MDM. Como administrador, você ainda precisa proteger seus dados. Esses dispositivos não são gerenciados. Por isso, as tarefas e os recursos de MDM, como WiFi, VPN de dispositivo e gerenciamento de certificados, não fazem parte deste cenário de implantação.
 
-#### <a name="android-enterprise-work-profiles"></a>Perfis de trabalho Android Enterprise
+### <a name="android-enterprise-work-profiles"></a>Perfis de trabalho Android Enterprise
 
 Os perfis de trabalho são o principal cenário de implantação do Android Enterprise e o único cenário destinado a casos de uso BYOD. O perfil de trabalho é uma partição separada criada no nível do sistema operacional Android e que pode ser gerenciada pelo Intune.
 
@@ -95,7 +95,7 @@ Os perfis de trabalho e APP complementam as próprias configurações, fornecend
 
 ### <a name="suppress-app-policy-for-work-profiles"></a>Suprimir a política de APP para perfis de trabalho
 
-Talvez seja necessário dar suporte a usuários individuais com vários dispositivos: dispositivos não gerenciados em um cenário de APP-WE e dispositivos gerenciados com perfis de trabalho. 
+Talvez seja necessário dar suporte a usuários individuais com vários dispositivos: dispositivos não gerenciados em um cenário de APP-WE e dispositivos gerenciados com perfis de trabalho.
 
 Por exemplo, você exige que os usuários finais insiram um PIN ao abrir um aplicativo de trabalho. Dependendo do dispositivo, os recursos do PIN são manipulados pelo APP ou pelo perfil de trabalho. Para dispositivos APP-WE, o comportamento de PIN para inicialização é imposto pelo APP. Para dispositivos de perfil de trabalho, você pode usar um dispositivo ou PIN de perfil de trabalho imposto pelo sistema operacional. Para realizar esse cenário, defina as configurações de APP para que não seja aplicado *quando* um aplicativo for implantado em um perfil de trabalho. Se você não configurar dessa forma, o usuário final receberá a solicitação de um PIN do dispositivo, e novamente na camada APP.
 
@@ -111,13 +111,13 @@ Para saber mais, confira [implantar as definições de configuração do aplicat
 
 Há vários cenários de mobilidade empresarial nos quais usar o APP do Intune é a melhor recomendação.
 
-#### <a name="older-devices-running-android-44-51-are-being-used"></a>Os dispositivos mais antigos que executam o Android 4.4-5.1 estão sendo usados
+### <a name="older-devices-running-android-44-51-are-being-used"></a>Os dispositivos mais antigos que executam o Android 4.4-5.1 estão sendo usados
 
 Oficialmente, qualquer dispositivo Android 5.0 ou superior com os serviços do Google Mobile dá suporte a perfis de trabalho e é elegível para ser gerenciado dessa forma. No entanto, alguns dispositivos com Android 5.0 e 5.1 de alguns OEMs não dão suporte a perfis de trabalho.
 
 Se estiver usando versões que não deem suporte a perfis de trabalho, e para garantir a DLP para dados da organização em dispositivos, use os recursos de APP do Intune.
 
-#### <a name="no-mdm-no-enrollment-google-services-are-unavailable"></a>Sem MDM, nenhum registro, os serviços do Google não estão disponíveis
+### <a name="no-mdm-no-enrollment-google-services-are-unavailable"></a>Sem MDM, nenhum registro, os serviços do Google não estão disponíveis
 
 Alguns clientes não querem qualquer forma de gerenciamento de dispositivos, incluindo o gerenciamento de perfil de trabalho, por motivos diferentes:
 

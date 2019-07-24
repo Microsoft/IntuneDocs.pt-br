@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 7a4f81f29fea9008c7dd47902812141db8448bc3
-ms.sourcegitcommit: 1dc9d4e1d906fab3fc46b291c67545cfa2231660
+ms.openlocfilehash: 9c13ebdd6cf908a62c99d4c81443c94ce6a07d8e
+ms.sourcegitcommit: bd09decb754a832574d7f7375bad0186a22a15ab
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/10/2019
-ms.locfileid: "67735713"
+ms.lasthandoff: 07/19/2019
+ms.locfileid: "68353831"
 ---
 # <a name="enroll-your-android-enterprise-dedicated-devices-or-fully-managed-devices-preview"></a>Registrar dispositivos Android Enterprise dedicados ou dispositivos totalmente gerenciados (versão prévia)
 
@@ -37,11 +37,11 @@ Após configurar seus [dispositivos Android Enterprise dedicados](android-kiosk-
 
 \* em fabricantes participantes.
 
-### <a name="enroll-by-using-near-field-communication-nfc"></a>Registrar usando NFC (comunicação a curta distância)
+## <a name="enroll-by-using-near-field-communication-nfc"></a>Registrar usando NFC (comunicação a curta distância)
 
 Para dispositivos compatíveis com NFC, você pode provisionar os dispositivos criando uma marca de NFC especialmente formatada. Você pode usar seu próprio aplicativo ou qualquer ferramenta de criação de marca de NFC. Para obter mais informações, veja [Registro de dispositivo Android Enterprise com base em C com o Microsoft Intune](https://blogs.technet.microsoft.com/cbernier/2018/10/15/nfc-based-android-enterprise-device-enrollment-with-microsoft-intune/) e [Documentação da API de gerenciamento do Android da Google](https://developers.google.com/android/management/provision-device#nfc_method).
 
-### <a name="enroll-by-using-a-token"></a>Registrar usando um token
+## <a name="enroll-by-using-a-token"></a>Registrar usando um token
 
 Para dispositivos Android 6 e posteriores, você pode usar o token para registrar o dispositivo. O Android 6.1 e versões posteriores também podem aproveitar a verificação de código QR ao usar o método de registro **afw#setup**.
 
@@ -51,11 +51,11 @@ Para dispositivos Android 6 e posteriores, você pode usar o token para registra
 4. Aceite os termos e condições do Google e, em seguida, escolha **AVANÇAR**.
 5. Na tela de entrada do Google, digite **afw#setup** em vez de uma conta do Gmail e, em seguida, selecione **AVANÇAR**.
 6. Escolha **INSTALAR** para o aplicativo **Política do Dispositivo Android**.
-7. Continue a instalação dessa política.  Alguns dispositivos podem exigir a aceitação de termos adicionais. 
+7. Continue a instalação dessa política.  Alguns dispositivos podem exigir a aceitação de termos adicionais.
 8. Na tela **Registrar este dispositivo**, permita que o dispositivo verifique o código QR ou escolha inserir o token manualmente.
-9. Siga as instruções na tela para concluir o registro. 
+9. Siga as instruções na tela para concluir o registro.
 
-### <a name="enroll-by-using-a-qr-code"></a>Registrar usando um código QR
+## <a name="enroll-by-using-a-qr-code"></a>Registrar usando um código QR
 
 Nos dispositivos Android 7 e posteriores, você pode examinar o código QR do perfil de registro para registrar o dispositivo.
 
@@ -66,26 +66,26 @@ Nos dispositivos Android 7 e posteriores, você pode examinar o código QR do pe
 2. Para dispositivos Android 7 e 8, será solicitado que você instale um leitor de QR. Os dispositivos Android 9 e versões posteriores já têm um leitor de QR instalado.
 3. Use o leitor de QR para examinar o código QR do perfil de registro e, em seguida, siga as instruções na tela para registrar.
 
-### <a name="enroll-by-using-google-zero-touch"></a>Registrar usando o Google Zero Touch
+## <a name="enroll-by-using-google-zero-touch"></a>Registrar usando o Google Zero Touch
 
-Para usar o sistema Zero Touch do Google, o dispositivo precisa ser compatível com ele e ser afiliado a um fornecedor que faça parte do serviço.  Para obter mais informações, confira o [site do programa Zero Touch do Google](https://www.android.com/enterprise/management/zero-touch/). 
+Para usar o sistema Zero Touch do Google, o dispositivo precisa ser compatível com ele e ser afiliado a um fornecedor que faça parte do serviço.  Para obter mais informações, confira o [site do programa Zero Touch do Google](https://www.android.com/enterprise/management/zero-touch/).
 
 1. Crie uma nova configuração no console do Zero Touch.
 2. Escolha **Microsoft Intune** na lista suspensa DPC de EMM.
 3. No console do Zero Touch do Google, copie/cole o JSON a seguir no campo DPC extra. Substitua a cadeia de caracteres *YourEnrollmentToken* pelo token de registro criado como parte do perfil de registro. Coloque o token de registro entre aspas duplas.
 
     ```json
-    { 
-        "android.app.extra.PROVISIONING_DEVICE_ADMIN_COMPONENT_NAME": "com.google.android.apps.work.clouddpc/.receivers.CloudDeviceAdminReceiver", 
-    
-        "android.app.extra.PROVISIONING_DEVICE_ADMIN_SIGNATURE_CHECKSUM": "I5YvS0O5hXY46mb01BlRjq4oJJGs2kuUcHvVkAPEXlg", 
-    
-        "android.app.extra.PROVISIONING_DEVICE_ADMIN_PACKAGE_DOWNLOAD_LOCATION": "https://play.google.com/managed/downloadManagingApp?identifier=setup", 
-    
-        "android.app.extra.PROVISIONING_ADMIN_EXTRAS_BUNDLE": { 
-            "com.google.android.apps.work.clouddpc.EXTRA_ENROLLMENT_TOKEN": "YourEnrollmentToken" 
-        } 
-    } 
+    {
+        "android.app.extra.PROVISIONING_DEVICE_ADMIN_COMPONENT_NAME": "com.google.android.apps.work.clouddpc/.receivers.CloudDeviceAdminReceiver",
+
+        "android.app.extra.PROVISIONING_DEVICE_ADMIN_SIGNATURE_CHECKSUM": "I5YvS0O5hXY46mb01BlRjq4oJJGs2kuUcHvVkAPEXlg",
+
+        "android.app.extra.PROVISIONING_DEVICE_ADMIN_PACKAGE_DOWNLOAD_LOCATION": "https://play.google.com/managed/downloadManagingApp?identifier=setup",
+
+        "android.app.extra.PROVISIONING_ADMIN_EXTRAS_BUNDLE": {
+            "com.google.android.apps.work.clouddpc.EXTRA_ENROLLMENT_TOKEN": "YourEnrollmentToken"
+        }
+    }
     ```
 
 4. Escolha **Aplicar**.

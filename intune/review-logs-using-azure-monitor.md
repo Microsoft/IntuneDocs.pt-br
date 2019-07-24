@@ -15,12 +15,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 8d13cb9fed28bb759007f1be1cb6df6139c19d3b
-ms.sourcegitcommit: 063177c6c365fef3642edd7c455790958469aad9
+ms.openlocfilehash: d95b37d18fa609f1c4e98d4fad5cfa600333b90a
+ms.sourcegitcommit: bd09decb754a832574d7f7375bad0186a22a15ab
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/30/2019
-ms.locfileid: "66412705"
+ms.lasthandoff: 07/19/2019
+ms.locfileid: "68354527"
 ---
 # <a name="send-log-data-to-storage-event-hubs-or-log-analytics-in-intune-preview"></a>Enviar dados de log para o armazenamento, hubs de eventos ou análises de log no Intune (versão prévia)
 
@@ -149,7 +149,7 @@ A tabela a seguir contém os custos previstos por mês para um hub de eventos b�
 | | |
 |---|---|
 |Eventos por segundo| 18|
-|Eventos por intervalo de cinco minutos| 5.400|
+|Eventos por intervalo de cinco minutos| 5\.400|
 |Volume por intervalo| 10,8 MB|
 |Mensagens por intervalo| 43|
 |Mensagens por mês| 371.520|
@@ -163,7 +163,7 @@ A tabela a seguir contém os custos previstos por mês para um hub de eventos b�
 |Eventos por intervalo de cinco minutos| 52|
 |Volume por intervalo|104 KB |
 |Mensagens por intervalo|1 |
-|Mensagens por mês|8.640 |
+|Mensagens por mês|8\.640 |
 |Custo previsto por mês (USD)|US$ 10,80 |
 
 ### <a name="log-analytics-cost-considerations"></a>Considerações de custo do Log Analytics
@@ -174,43 +174,43 @@ Para revisar os custos relacionados ao gerenciamento do espaço de trabalho do L
 
 Obtenha respostas para perguntas frequentes e leia sobre problemas conhecidos com logs do Intune no Azure Monitor.
 
-#### <a name="which-logs-are-included"></a>Quais logs são incluídos?
+### <a name="which-logs-are-included"></a>Quais logs são incluídos?
 
 Os logs de auditoria e operacionais (versão prévia) estão disponíveis para roteamento com esse recurso.
 
-#### <a name="after-an-action-when-do-the-corresponding-logs-show-up-in-the-event-hub"></a>Depois de uma ação, quando os logs correspondentes são exibidos no hub de eventos?
+### <a name="after-an-action-when-do-the-corresponding-logs-show-up-in-the-event-hub"></a>Depois de uma ação, quando os logs correspondentes são exibidos no hub de eventos?
 
 Os logs geralmente aparecem no hub de eventos dentro de alguns minutos após a execução da ação. [O que é o Hubs de Eventos do Azure?](https://docs.microsoft.com/azure/event-hubs/) fornece mais informações.
 
-#### <a name="after-an-action-when-do-the-corresponding-logs-show-up-in-the-storage-account"></a>Depois de uma ação, quando os logs correspondentes são exibidos na conta de armazenamento?
+### <a name="after-an-action-when-do-the-corresponding-logs-show-up-in-the-storage-account"></a>Depois de uma ação, quando os logs correspondentes são exibidos na conta de armazenamento?
 
 Nas contas de armazenamento do Azure, a latência fica entre 5 a 15 minutos após a execução da ação.
 
-#### <a name="what-happens-if-an-administrator-changes-the-retention-period-of-a-diagnostic-setting"></a>O que acontece se um administrador alterar o período de retenção de uma configuração de diagnóstico?
+### <a name="what-happens-if-an-administrator-changes-the-retention-period-of-a-diagnostic-setting"></a>O que acontece se um administrador alterar o período de retenção de uma configuração de diagnóstico?
 
 A nova política de retenção será aplicada aos logs coletados após a alteração. Os logs coletados antes da alteração da política não serão afetados.
 
-#### <a name="how-much-does-it-cost-to-store-my-data"></a>Quanto custa armazenar meus dados?
+### <a name="how-much-does-it-cost-to-store-my-data"></a>Quanto custa armazenar meus dados?
 
 Os custos de armazenamento dependem do tamanho dos logs e do período de retenção que você escolher. Para obter uma lista dos custos previstos para locatários, que dependem do volume de log gerado, confira o [Tamanho do armazenamento para logs de atividade](#storage-size-for-activity-logs) (neste artigo).
 
-#### <a name="how-much-does-it-cost-to-stream-my-data-to-an-event-hub"></a>Quanto custa a transmissão dos meus dados para um hub de eventos?
+### <a name="how-much-does-it-cost-to-stream-my-data-to-an-event-hub"></a>Quanto custa a transmissão dos meus dados para um hub de eventos?
 
 Os custos de streaming dependem do número de mensagens recebidas por minuto. Para obter detalhes sobre como os custos são calculados e os custos previstos com base no número de mensagens, confira [Mensagens do hub de eventos para os logs de atividade](#event-hub-messages-for-activity-logs) (neste artigo).
 
-#### <a name="how-do-i-integrate-intune-audit-logs-with-my-siem-system"></a>Como faço para integrar os logs de auditoria do Intune com meu sistema SIEM?
+### <a name="how-do-i-integrate-intune-audit-logs-with-my-siem-system"></a>Como faço para integrar os logs de auditoria do Intune com meu sistema SIEM?
 
 Use o Azure Monitor com os Hubs de Eventos para transmitir logs para seu sistema SIEM. Primeiro, [transmita os logs para um hub de eventos](https://docs.microsoft.com/azure/active-directory/reports-monitoring/tutorial-azure-monitor-stream-logs-to-event-hub). Em seguida, [configure sua ferramenta SIEM](https://docs.microsoft.com/azure/active-directory/reports-monitoring/tutorial-azure-monitor-stream-logs-to-event-hub#access-data-from-your-event-hub) com o hub de eventos configurado. 
 
-#### <a name="what-siem-tools-are-currently-supported"></a>Atualmente, quais ferramentas SIEM têm suporte?
+### <a name="what-siem-tools-are-currently-supported"></a>Atualmente, quais ferramentas SIEM têm suporte?
 
 Atualmente, o Azure Monitor tem suporte no [Splunk](https://docs.microsoft.com/azure/active-directory/reports-monitoring/tutorial-integrate-activity-logs-with-splunk), QRadar e [Sumo Logic](https://help.sumologic.com/Send-Data/Applications-and-Other-Data-Sources/Azure_Active_Directory) (abre um novo site). Para saber mais sobre o funcionamento dos conectores, confira [Transmitir dados de monitoramento do Azure para um hub de eventos para consumo por uma ferramenta externa](https://docs.microsoft.com/azure/azure-monitor/platform/stream-monitoring-data-event-hubs).
 
-#### <a name="can-i-access-the-data-from-an-event-hub-without-using-an-external-siem-tool"></a>Posso acessar os dados de um hub de eventos sem usar uma ferramenta SIEM externa?
+### <a name="can-i-access-the-data-from-an-event-hub-without-using-an-external-siem-tool"></a>Posso acessar os dados de um hub de eventos sem usar uma ferramenta SIEM externa?
 
 Sim. Para acessar os logs a partir de um aplicativo personalizado, você pode usar a [API dos Hubs de Eventos](https://docs.microsoft.com/azure/event-hubs/event-hubs-dotnet-standard-getstarted-receive-eph).
 
-#### <a name="what-data-is-stored"></a>Quais dados são armazenados?
+### <a name="what-data-is-stored"></a>Quais dados são armazenados?
 
 O Intune não armazena todos os dados enviados pelo pipeline. O Intune roteia os dados para o pipeline do Azure Monitor, na autoridade do locatário. Para saber mais, confira [Visão geral do Azure Monitor](https://docs.microsoft.com/azure/azure-monitor/overview).
 

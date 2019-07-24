@@ -14,12 +14,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: e241dc534427b97086013a12391f06bd2f342779
-ms.sourcegitcommit: 7c251948811b8b817e9fe590b77f23aed95b2d4e
+ms.openlocfilehash: e4a171255c545e2f2c55adf4695476107d06aefe
+ms.sourcegitcommit: bd09decb754a832574d7f7375bad0186a22a15ab
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/15/2019
-ms.locfileid: "67883264"
+ms.lasthandoff: 07/19/2019
+ms.locfileid: "68354392"
 ---
 # <a name="configure-esim-cellular-profiles-in-intune---public-preview"></a>Configurar perfis de celular eSIM no Intune – versão prévia pública
 
@@ -79,7 +79,7 @@ Os códigos de ativação de celular são fornecidos pela operadora móvel em um
 4. Selecione o arquivo CSV que tem os códigos de ativação.
 5. Selecione **OK** para salvar suas alterações.
 
-#### <a name="csv-file-requirements"></a>Requisitos do arquivo CSV
+### <a name="csv-file-requirements"></a>Requisitos do arquivo CSV
 
 Ao trabalhar com o arquivo CSV com os códigos de ativação, verifique se você ou a operadora móvel segue os requisitos:
 
@@ -89,7 +89,7 @@ Ao trabalhar com o arquivo CSV com os códigos de ativação, verifique se você
 - Cada arquivo deve ser específico para uma única operadora móvel e todos os códigos de ativação específicos para o mesmo plano de cobrança. O Intune distribui aleatoriamente códigos de ativação para dispositivos de destino. Não há nenhuma garantia de qual dispositivo obtém um código de ativação específico.
 - Um máximo de 1.000 códigos de ativação pode ser importado em um arquivo CSV.
 
-#### <a name="csv-file-example"></a>Exemplo de arquivo CSV
+### <a name="csv-file-example"></a>Exemplo de arquivo CSV
 
 1. A primeira linha e a primeira célula do CSV são a URL do serviço de ativação do eSIM da operadora móvel, que é chamado de SM-DP+ (servidor de Preparação de Dados do Gerenciador de Assinaturas). A URL deve ser um FQDN (nome de domínio totalmente qualificado) sem vírgulas.
 2. A segunda linha e todas as linhas posteriores são códigos de ativação de uso avulso exclusivos que incluem dois valores:
@@ -129,7 +129,7 @@ Os códigos de ativação do eSIM são usados uma única vez. Depois que o Intun
 
 ## <a name="step-4-monitor-deployment"></a>Etapa 4: Monitorar a implantação
 
-#### <a name="review-the-deployment-status"></a>Examinar o status da implantação
+### <a name="review-the-deployment-status"></a>Examinar o status da implantação
 
 Depois de atribuir o perfil, você pode monitorar o status da implantação de um pool de assinaturas.
 
@@ -138,7 +138,7 @@ Depois de atribuir o perfil, você pode monitorar o status da implantação de u
 3. Selecione **Configuração do dispositivo** > **Perfis de celular eSIM**. Todos os pools de assinaturas de celular eSIM existentes são listados.
 4. Selecione uma assinatura e examine o **Status de Implantação**.
 
-#### <a name="check-the-profile-status"></a>Verificar o status do perfil
+### <a name="check-the-profile-status"></a>Verificar o status do perfil
 Depois de criar o perfil do seu dispositivo, o Intune fornece gráficos. Esses gráficos exibem o status de um perfil como sendo atribuído com êxito a dispositivos, ou se o perfil mostra um conflito.
 
 1. Selecione **Configuração do dispositivo** > **Perfis de celular eSIM** > Selecionar uma assinatura existente.
@@ -167,7 +167,7 @@ Monitore e exiba uma lista detalhada de dispositivos que podem ser exibidos no S
     - **Status do celular**: Estado fornecido pela operadora móvel. Faça um acompanhamento com a operadora móvel para solucionar problemas.
     - **Último check-in**: Data da última comunicação do dispositivo com o Intune
 
-#### <a name="monitor-esim-profile-details-on-the-actual-device"></a>Monitorar os detalhes do perfil do eSIM no dispositivo real
+### <a name="monitor-esim-profile-details-on-the-actual-device"></a>Monitorar os detalhes do perfil do eSIM no dispositivo real
 
 1. No dispositivo, abra **Configurações** > acesse **Rede e Internet**.
 2. Selecione **Celular** > **Gerenciar perfis do eSIM**
