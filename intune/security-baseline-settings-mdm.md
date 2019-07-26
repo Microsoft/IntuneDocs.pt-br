@@ -16,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 30cdb6903caa7e1071a6781db13c761e64f8bd7a
-ms.sourcegitcommit: 1dc9d4e1d906fab3fc46b291c67545cfa2231660
+ms.openlocfilehash: 7f70d54404dc20d6d6aabd5974dff9c5102b759f
+ms.sourcegitcommit: 7c251948811b8b817e9fe590b77f23aed95b2d4e
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/10/2019
-ms.locfileid: "67735773"
+ms.lasthandoff: 07/15/2019
+ms.locfileid: "67882290"
 ---
 # <a name="mdm-security-baseline-settings-for-intune"></a>Configurações de linha de base de segurança MDM para o Intune  
 
@@ -116,8 +116,8 @@ Para obter mais informações, veja [CSP de política – Bitlocker](https://doc
 
   Para a política da unidade removível do BitLocker, defina a seguinte configuração:
 
-    - **Exigir criptografia para acesso de gravação**  
-      **Padrão**: Sim  
+  - **Exigir criptografia para acesso de gravação**  
+    **Padrão**: Sim  
   
 
 ## <a name="browser"></a>Navegador  
@@ -226,17 +226,17 @@ Para obter mais informações, veja [CSP de política – DeviceInstallation](ht
   
   **Padrão**: bloquear a instalação de dispositivo de hardware  
 
-    Quando *Bloquear a instalação de dispositivo de hardware* estiver selecionada, as configurações a seguir estarão disponíveis.
-  
-    - **Remover dispositivos de hardware correspondentes**   
+  Quando *Bloquear a instalação de dispositivo de hardware* estiver selecionada, as configurações a seguir estarão disponíveis.
+
+  - **Remover dispositivos de hardware correspondentes**   
     Essa configuração está disponível apenas quando *Instalação de dispositivo de hardware por identificadores de dispositivo* é definida como *Bloquear instalação de dispositivo de hardware*.
-      
-      **Padrão**: Sim
-  
-    - **Identificadores de dispositivo de hardware que estão bloqueados**  
-       Essa configuração está disponível apenas quando *Instalação de dispositivo de hardware por identificadores de dispositivo* é definida como *Bloquear instalação de dispositivo de hardware*.
-      
-      **Padrão**: Sim  
+    
+    **Padrão**: Sim
+
+  - **Identificadores de dispositivo de hardware que estão bloqueados**  
+    Essa configuração está disponível apenas quando *Instalação de dispositivo de hardware por identificadores de dispositivo* é definida como *Bloquear instalação de dispositivo de hardware*.
+    
+    **Padrão**: Sim  
   
 - **Instalação de dispositivo de hardware por classes de instalação**  
   Essa configuração de política permite que você especifique uma lista de GUIDs (identificadores globalmente exclusivos) de classe de configuração de dispositivo para drivers de dispositivo que o Windows seja impedido de instalar. Essa configuração de política tem precedência sobre qualquer outra configuração de política que permita ao Windows instalar um dispositivo. Se você habilitar essa configuração de política, o Windows será impedido de instalar ou atualizar drivers de dispositivo cujos GUIDs de classe de instalação do dispositivo apareçam na lista de você cria. Se você habilitar essa configuração de política em um servidor de área de trabalho remota, a configuração de política afetará o redirecionamento de dispositivos especificados de um cliente da área de trabalho remota para o servidor de área de trabalho remota. Se você desabilitar ou não configurar essa política, o Windows poderá instalar e atualizar dispositivos conforme permitido ou impedido por outras configurações de política.  
@@ -244,16 +244,16 @@ Para obter mais informações, veja [CSP de política – DeviceInstallation](ht
   
   **Padrão**: bloquear a instalação de dispositivo de hardware  
 
-    Quando *Bloquear a instalação de dispositivo de hardware* estiver selecionada, as configurações a seguir estarão disponíveis.
-    - **Remover dispositivos de hardware correspondentes**    
+  Quando *Bloquear a instalação de dispositivo de hardware* estiver selecionada, as configurações a seguir estarão disponíveis.
+  - **Remover dispositivos de hardware correspondentes**    
     Essa configuração está disponível apenas quando *Instalação de dispositivo de hardware por classes de instalação* é definida como *Bloquear instalação de dispositivo de hardware*.  
 
-      **Padrão**: *nenhuma configuração padrão*  
-  
-    - **Identificadores de dispositivo de hardware que estão bloqueados**  
-      Essa configuração está disponível apenas quando *Instalação de dispositivo de hardware por classes de instalação* é definida como *Bloquear instalação de dispositivo de hardware*.
-      
-      **Padrão**: *nenhuma configuração padrão*  
+    **Padrão**: *nenhuma configuração padrão*  
+
+  - **Identificadores de dispositivo de hardware que estão bloqueados**  
+    Essa configuração está disponível apenas quando *Instalação de dispositivo de hardware por classes de instalação* é definida como *Bloquear instalação de dispositivo de hardware*.
+    
+    **Padrão**: *nenhuma configuração padrão*  
 
 ## <a name="device-lock"></a>Bloqueio de dispositivo  
 Para obter mais informações, veja [CSP de política – DeviceLock](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-devicelock) na documentação do Windows.  
@@ -1186,12 +1186,12 @@ Para obter mais informações, veja [CSP de política – LocalPoliciesSecurityO
   
 - **Comportamento da solicitação de elevação de administrador**  
   Essa configuração de política controla o comportamento da solicitação de elevação para administradores. As opções são: 
-    - *Elevar sem aviso*: permite que contas com privilégios realizem uma operação que requer elevação sem exigir consentimento ou credenciais. Observação: só use essa opção nos ambientes mais restritos. 
-    - *Solicitar credenciais na área de trabalho protegida*: quando uma operação exige elevação de privilégio, na área de trabalho protegida, o usuário precisa inserir um nome de usuário e uma senha com privilégios. Se o usuário inserir credenciais válidas, a operação continuará com o maior privilégio disponível desse usuário. 
-    - *Solicitar consentimento na área de trabalho protegida*: quando uma operação requer a elevação de privilégio, na área de trabalho protegida, o usuário precisa selecionar Permitir ou Negar. Se o usuário selecionar Permitir, a operação continuará com o privilégio mais alto disponível desse usuário. 
-    - *Solicitar credenciais*: quando uma operação exige elevação de privilégio, o usuário precisa inserir um nome de usuário administrativo e uma senha. Se o usuário inserir credenciais válidas, a operação continuará com o privilégio aplicável. 
-    - *Solicitar consentimento*: quando uma operação exige a elevação de privilégio, o usuário precisa selecionar Permitir ou Negar. Se o usuário selecionar Permitir, a operação continuará com o privilégio mais alto disponível desse usuário.  
-    - *Solicitar consentimento para binários que não são do Windows*: quando uma operação para um aplicativo que não é da Microsoft exige a elevação de privilégio, na área de trabalho protegida, o usuário precisa selecionar Permitir ou Negar. Se o usuário selecionar Permitir, a operação continuará com o privilégio mais alto disponível desse usuário. 
+  - *Elevar sem aviso*: permite que contas com privilégios realizem uma operação que requer elevação sem exigir consentimento ou credenciais. Observação: só use essa opção nos ambientes mais restritos. 
+  - *Solicitar credenciais na área de trabalho protegida*: quando uma operação exige elevação de privilégio, na área de trabalho protegida, o usuário precisa inserir um nome de usuário e uma senha com privilégios. Se o usuário inserir credenciais válidas, a operação continuará com o maior privilégio disponível desse usuário. 
+  - *Solicitar consentimento na área de trabalho protegida*: quando uma operação requer a elevação de privilégio, na área de trabalho protegida, o usuário precisa selecionar Permitir ou Negar. Se o usuário selecionar Permitir, a operação continuará com o privilégio mais alto disponível desse usuário. 
+  - *Solicitar credenciais*: quando uma operação exige elevação de privilégio, o usuário precisa inserir um nome de usuário administrativo e uma senha. Se o usuário inserir credenciais válidas, a operação continuará com o privilégio aplicável. 
+  - *Solicitar consentimento*: quando uma operação exige a elevação de privilégio, o usuário precisa selecionar Permitir ou Negar. Se o usuário selecionar Permitir, a operação continuará com o privilégio mais alto disponível desse usuário.  
+  - *Solicitar consentimento para binários que não são do Windows*: quando uma operação para um aplicativo que não é da Microsoft exige a elevação de privilégio, na área de trabalho protegida, o usuário precisa selecionar Permitir ou Negar. Se o usuário selecionar Permitir, a operação continuará com o privilégio mais alto disponível desse usuário. 
   
   [Saiba mais](https://go.microsoft.com/fwlink/?linkid=2067215)   
   
@@ -1208,11 +1208,11 @@ Para obter mais informações, veja [CSP de política – LocalPoliciesSecurityO
   **Padrão**: exigir criptografia de 128 do NTLM V2
   
 - **Comportamento de remoção do cartão inteligente**  
-    Essa configuração de segurança determina o que acontece quando o cartão inteligente de um usuário conectado é removido do leitor de cartão inteligente. As opções são:
-     - *Nenhuma ação*. 
-     - *Bloquear estação de trabalho* -a estação de trabalho é bloqueada quando o cartão inteligente for removido, permitindo que os usuários deixem a área, levem o cartão inteligente com eles e ainda mantenham a sessão protegida.
-     - *Forçar Logoff* – é feito o logoff do usuário automaticamente quando o cartão inteligente é removido.
-     - *Desconectar uma sessão de Área de Trabalho Remota* – a remoção do cartão inteligente desconecta a sessão sem fazer logoff do usuário. Isso permite ao usuário inserir o cartão inteligente e retomar a sessão mais tarde ou em outro computador equipado com o leitor de cartão inteligente, sem precisar fazer logon novamente. Se a sessão for local, essa política funcionará de modo idêntico a Bloquear a Estação de Trabalho.
+  Essa configuração de segurança determina o que acontece quando o cartão inteligente de um usuário conectado é removido do leitor de cartão inteligente. As opções são:
+  - *Nenhuma ação*. 
+  - *Bloquear estação de trabalho* -a estação de trabalho é bloqueada quando o cartão inteligente for removido, permitindo que os usuários deixem a área, levem o cartão inteligente com eles e ainda mantenham a sessão protegida.
+  - *Forçar Logoff* – é feito o logoff do usuário automaticamente quando o cartão inteligente é removido.
+  - *Desconectar uma sessão de Área de Trabalho Remota* – a remoção do cartão inteligente desconecta a sessão sem fazer logoff do usuário. Isso permite ao usuário inserir o cartão inteligente e retomar a sessão mais tarde ou em outro computador equipado com o leitor de cartão inteligente, sem precisar fazer logon novamente. Se a sessão for local, essa política funcionará de modo idêntico a Bloquear a Estação de Trabalho.
   
   [Saiba mais](https://go.microsoft.com/fwlink/?linkid=2067331) 
     
@@ -1826,7 +1826,7 @@ A *linha de base de segurança do MDM para o modelo de atualização do Spring 2
 As seguintes configurações são removidas:
 - *Novo* nesta versão mais recente da linha de base.
 - *Removido* desta versão de linha de base mais recente, mas estava presente na versão anterior.
-- ** Revisado de alguma forma de como as configurações apareciam na versão anterior. 
+- *Revisado* de alguma forma de como as configurações apareciam na versão anterior. 
 
 *[Novo]* [**Acima do bloqueio**](#above-lock):
 - **Ativar voz de aplicativos da tela bloqueada**    
@@ -1858,7 +1858,7 @@ As seguintes configurações são removidas:
 - **Suporte à criptografia do Internet Explorer**  
 
 *[Revisado]* [**Internet Explorer**](#internet-explorer):
-- **Prompt automático da zona Internet do Internet Explorer para downloads de arquivo** > o valor **** padrão agora está desabilitado. Em visualização, isso foi definido como habilitado.
+- **Prompt automático da zona Internet do Internet Explorer para** downloads de arquivo > o valor **padrão**agora está desabilitado. Em visualização, isso foi definido como habilitado.
 
 *[Novo]* [**Assistência remota**](#remote-assistance):  
 - **Assistência remota solicitada** 
