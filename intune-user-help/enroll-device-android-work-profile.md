@@ -18,16 +18,20 @@ ms.reviewer: arnab
 ms.suite: ems
 ms.custom: intune-enduser
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: e43fccabd142527d9e17317d56fa029844fa270d
-ms.sourcegitcommit: cd03ea890f563b48339a8c8bb50386b8852ba894
+ms.openlocfilehash: bff8f2d74b06d1cd4ee7dffe594917b4d0946d5c
+ms.sourcegitcommit: 2bce5e43956b6a5244a518caa618f97f93b4f727
 ms.translationtype: MTE75
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/19/2019
-ms.locfileid: "68329459"
+ms.lasthandoff: 07/24/2019
+ms.locfileid: "68467306"
 ---
 # <a name="enroll-device-with-android-work-profile"></a>Registrar o dispositivo com o perfil de trabalho do Android
 
-Registre seu dispositivo Android pessoal para obter acesso ao email da empresa, aplicativos e outros dados de trabalho. Durante o registro, você configurará um perfil de trabalho do Android. Esse perfil separa os dados pessoais em seu dispositivo dos dados de trabalho. O suporte da sua empresa gerencia apenas o perfil de trabalho, que consiste em dados e arquivos de trabalho. O suporte da sua empresa não pode gerenciar os dados pessoais em seu dispositivo. Saiba mais sobre [o que acontece quando você cria um perfil de trabalho](what-happens-when-you-create-a-work-profile-android.md).  
+Registre seu dispositivo Android pessoal para obter acesso ao email da empresa, aplicativos e outros dados de trabalho. Durante o registro, você configurará um perfil de trabalho do Android. Esse perfil separa os dados pessoais em seu dispositivo dos dados de trabalho. O suporte da sua empresa gerencia apenas o perfil de trabalho, que consiste em dados e arquivos de trabalho. O suporte da sua empresa não pode gerenciar os dados pessoais em seu dispositivo.
+</br>
+> [!VIDEO https://www.youtube.com/embed/9Dl8HsGk4tI]
+
+Saiba mais sobre [o que acontece quando você cria um perfil de trabalho](what-happens-when-you-create-a-work-profile-android.md).
 
 ## <a name="create-work-profile-and-enroll-device"></a>Criar perfil de trabalho e registrar o dispositivo
 
@@ -69,7 +73,7 @@ Registre seu dispositivo Android pessoal para obter acesso ao email da empresa, 
 
     ![Captura de tela de atualização de configurações do dispositivo.](./media/android-wp-08-1908.png) 
 
-9. Quando você vir a tela **Tudo pronto!** , toque em **CONCLUÍDO**.  
+9. Quando você vir a tela **Tudo pronto!** , tela, toque em **concluído**.  
 
     ![A Configuração de Acesso da Empresa mostra o perfil de trabalho e o registro concluídos](./media/android-wp-09-1908.png)  
 
