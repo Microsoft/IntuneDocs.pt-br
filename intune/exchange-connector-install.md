@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 7663009c7d45171ab6469f7f6e96b4c8f979b744
-ms.sourcegitcommit: 7c251948811b8b817e9fe590b77f23aed95b2d4e
+ms.openlocfilehash: f55ecd98e047dbf77e6e8eb58284577078e21a61
+ms.sourcegitcommit: 614c4c36cfe544569db998e17e29feeaefbb7a2e
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/15/2019
-ms.locfileid: "67883278"
+ms.lasthandoff: 07/24/2019
+ms.locfileid: "68427327"
 ---
 # <a name="set-up-the-intune-on-premises-exchange-connector-in-microsoft-intune"></a>Configurar o conector do Exchange local do Intune no Microsoft Intune
 As informações deste artigo ajudarão você a instalar e monitorar o conector local do Exchange Active Sync para o Intune.  Use o conector do Exchange local do Intune com suas [políticas de acesso condicional para permitir ou bloquear o acesso às suas caixas de correio locais do Exchange](conditional-access-exchange-create.md). 
@@ -152,8 +152,22 @@ Alta disponibilidade para o conector do Exchange local significa que, caso o CAS
 Para realizar o failover, após o conector criar uma conexão bem-sucedida com o Exchange usando o CAS especificado, o conector descobrirá CASs adicionais para essa organização do Exchange. Conhecer outros CASs permitirá que o conector faça failover para outro CAS se algum estiver disponível até que o CAS principal fique disponível. Por padrão, a descoberta de outros CASs é habilitada. É possível desligar o failover usando o procedimento a seguir:  
 1. No servidor em que o conector do Exchange está instalado, acesse %*ProgramData*%\Microsoft\Windows Intune Exchange Connector. 
 2. Usando um editor de texto, abra **OnPremisesExchangeConnectorServiceConfiguration.xml**.
-3. Altere &lt;IsCasFailoverEnabled&gt;**true**&lt;/IsCasFailoverEnabled&gt; para &lt;IsCasFailoverEnabled&gt;**false**&lt;/IsCasFailoverEnabled&gt; para desabilitar o recurso.    
+3. Altere &lt;IsCasFailoverEnabled&gt;**true**&lt;/IsCasFailoverEnabled&gt; para &lt;IsCasFailoverEnabled&gt;**false**&lt;/IsCasFailoverEnabled&gt; para desabilitar o recurso.  
  
+## <a name="optional-performance-tuning-for-the-exchange-connector"></a>Ajuste de desempenho opcional para o conector do Exchange  
+
+Ao dar suporte a 5.000 ou mais dispositivos com o Exchange ActiveSync, você pode definir uma configuração opcional para melhorar o desempenho do conector. O aumento do desempenho é atingido habilitando o Exchange a usar várias instâncias de um runspace de comando do PowerShell. 
+
+Antes de fazer essa alteração, verifique se a conta usada para executar o conector do Exchange não é usada para outros fins de gerenciamento do Exchange. Isso porque o Exchange tem um limite de 18 runspaces por conta, e a maioria deles será usada pelo conector. 
+
+Essa alteração de desempenho não é adequada para conectores que são executados em um hardware mais antigo ou mais lento.  
+
+1. No servidor em que o conector está instalado, abra o diretório de instalação dos conectores.  A localização padrão é *C:\ProgramData\Microsoft\Windows Intune Exchange Connector*. 
+2. Edite o arquivo *OnPremisesExchangeConnectorServiceConfiguration.xml*.
+3. Localize **EnableParallelCommandSupport** e defina o valor como **true**:  
+     
+   \<EnableParallelCommandSupport>true\</EnableParallelCommandSupport>
+4. Salve o arquivo e reinicie o serviço Microsoft Intune Exchange Connector.
 
 ## <a name="reinstall-the-on-premises-exchange-connector"></a>Reinstalar o conector do Exchange local
 Talvez seja necessário reinstalar um conector do Exchange. Como há suporte para que um único conector se conecte a cada organização do Exchange, se você instalar um segundo conector para uma organização, o novo conector instalado substituirá o conector original.

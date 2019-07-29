@@ -5,7 +5,7 @@ keywords: ''
 author: brenduns
 ms.author: brenduns
 manager: dougeby
-ms.date: 07/12/2019
+ms.date: 07/22/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.localizationpriority: high
@@ -15,12 +15,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 069658bdd231be96d7f9fbe23de1b4e38fdc5a9e
-ms.sourcegitcommit: 7c251948811b8b817e9fe590b77f23aed95b2d4e
+ms.openlocfilehash: af27a9b07434346a5425d0539759cb90ebf1ee6f
+ms.sourcegitcommit: 614c4c36cfe544569db998e17e29feeaefbb7a2e
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/15/2019
-ms.locfileid: "67885157"
+ms.lasthandoff: 07/24/2019
+ms.locfileid: "68427082"
 ---
 # <a name="enforce-compliance-for-microsoft-defender-atp-with-conditional-access-in-intune"></a>Impor a conformidade da ATP do Microsoft Defender com Acesso Condicional no Intune  
 
@@ -52,6 +52,17 @@ Para usar a ATP do Microsoft com o Intune, verifique se você tem a seguinte con
 
 ## <a name="enable-microsoft-defender-atp-in-intune"></a>Habilitar a ATP do Microsoft Defender no Intune
 
+Quando você integra um novo aplicativo à Defesa contra Ameaças Móveis do Intune e habilita a conexão, o Intune cria uma política de acesso condicional clássica no Azure Active Directory. Cada aplicativo MTD integrado, como o [Defender ATP](advanced-threat-protection.md) ou um de nossos [parceiros MTD](mobile-threat-defense.md#mobile-threat-defense-partners) adicionais, cria uma política de acesso condicional clássica.  Essas políticas podem ser ignoradas, mas não devem ser editadas, excluídas ou desabilitadas.
+
+As políticas de acesso condicional clássicas para aplicativos MTD: 
+
+- São usadas pelo Intune MTD para exigir que os dispositivos sejam registrados no Azure AD, de modo que tenham uma identificação do dispositivo. A ID é necessária para que os dispositivos possam relatar com êxito seu status ao Intune.  
+- São diferentes das políticas de acesso condicional que você pode criar para ajudar a gerenciar o MTD.
+- Por padrão, não interagem com outras políticas de acesso condicional usadas para avaliação.  
+
+Para exibir as políticas de acesso condicional clássicas, no [Azure](https://portal.azure.com/#home), acesse **Azure Active Directory** > **Acesso Condicional** > **Políticas clássicas**.
+
+### <a name="to-enable-defender-atp"></a>Para habilitar o Defender ATP
 1. Conecte-se ao [Intune](https://go.microsoft.com/fwlink/?linkid=2090973).
 2. Selecione **Conformidade do dispositivo** > **ATP do Microsoft Defender** e, em seguida, escolha *Configurações do Conector* e **Abrir a Central de Segurança do Microsoft Defender**.
 

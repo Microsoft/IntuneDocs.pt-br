@@ -6,7 +6,7 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 05/16/2019
+ms.date: 07/16/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.localizationpriority: high
@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: c3955710dfbe57023533f737f0ae69df80f863e6
-ms.sourcegitcommit: 1dc9d4e1d906fab3fc46b291c67545cfa2231660
+ms.openlocfilehash: 2b1f8308463e76b09a041bb952ad09515435c54c
+ms.sourcegitcommit: c3a4fefbac8ff7badc42b1711b7ed2da81d1ad67
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/10/2019
-ms.locfileid: "67735706"
+ms.lasthandoff: 07/22/2019
+ms.locfileid: "68374851"
 ---
 # <a name="configure-the-microsoft-managed-home-screen-app-for-android-enterprise"></a>Aplicativo de Tela Inicial Gerenciada da Microsoft para o Android Enterprise
 
@@ -89,7 +89,7 @@ A tabela a seguir lista as chaves de configuração, tipos de valor, valores pad
 | Exit lock task mode password | cadeia de caracteres |   | Insira um código de 4 a 6 dígitos a usar para sair temporariamente do modo de bloqueio de tarefas para solução de problemas. |
 | Mostrar configuração de Wi-Fi | bool | FALSE | Definir essa configuração para `True` permite ao usuário final ativar ou desativar o Wi-Fi ou se conectar a diferentes redes Wi-Fi.  |
 | Show Bluetooth setting | bool | FALSE | Definir essa configuração para `True` permite ao usuário final ativar ou desativar o Bluetooth ou se conectar a diferentes dispositivos com capacidade para Bluetooth.   |
-| Aplicativos na pasta são ordenados por nome | bool | TRUE | Definir essa configuração como `False` permite que os itens em uma pasta sejam exibidos na ordem especificada. Caso contrário, eles serão exibidos em ordem alfabética na pasta.   |
+| Aplicativos na pasta são ordenados por nome | bool | TRUE | Definir essa configuração como `False` permite que os itens em uma pasta sejam exibidos na ordem especificada. Caso contrário, eles serão exibidos na pasta em ordem alfabética.   |
 | Ordem de aplicativos habilitada | bool | FALSE | Definir essa configuração como `True` permite habilitar a capacidade de definir a ordem dos aplicativos, weblinks e pastas na Tela Inicial Gerenciada. Quando habilitada, define a ordem com **app_order**. O usuário final pode ativar ou desativar o Bluetooth e pode se conectar a diferentes dispositivos com capacidade para Bluetooth.   |
 | Ordem dos aplicativos | bundleArray | FALSE | Permite especificar a ordem dos aplicativos, weblinks e pastas na Tela Inicial Gerenciada. Para usar essa configuração, a opção **Bloquear Tela Inicial** deve estar habilitada, **Definir tamanho da grade** deve estar definida e a **Ordem dos aplicativos habilitada** deve estar definida como `True`.   |
 
@@ -383,6 +383,9 @@ Este é um exemplo de script JSON com todas as chaves de configuração disponí
     ]
 }
 ```
+
+## <a name="googles-android-device-policy-app"></a>Aplicativo Política do Dispositivo Android do Google
+O aplicativo Tela Inicial Gerenciada agora fornece acesso ao aplicativo Política do Dispositivo Android do Google. O aplicativo Tela Inicial Gerenciada é um inicializador personalizado usado para dispositivos registrados no Intune como dispositivos dedicados do AE (Android Enterprise) que usam o modo de quiosque de vários aplicativos. Você pode acessar o aplicativo Política do Dispositivo Android ou orientar os usuários ao aplicativo Política do Dispositivo Android, para fins de suporte e de depuração. Essa capacidade de inicialização está disponível no momento em que o dispositivo é registrado e bloqueado na Tela Inicial Gerenciada. Nenhuma instalação adicional é necessária para usar essa funcionalidade.
 
 ## <a name="next-steps"></a>Próximas etapas
 

@@ -15,12 +15,12 @@ ms.reviewer: joglocke
 ms.suite: ems
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 16586ece687b5d50ea89b28bfd524f50e65ceb46
-ms.sourcegitcommit: 5ce8726278004bbf072149a9c924091bb0654b7c
+ms.openlocfilehash: bbab505d668f0e348b3b4d34fb2c39ac683f340b
+ms.sourcegitcommit: bd09decb754a832574d7f7375bad0186a22a15ab
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/12/2019
-ms.locfileid: "67851473"
+ms.lasthandoff: 07/19/2019
+ms.locfileid: "68353600"
 ---
 # <a name="use-security-baselines-to-configure-windows-10-devices-in-intune"></a>Usar linhas de base de segurança para configurar dispositivos com Windows 10 no Intune
 
@@ -73,6 +73,9 @@ As instâncias de linhas de base de segurança a seguir estão disponíveis para
 - **Linha de base da ATP do Microsoft Defender**  
   *Para usar essa linha de base, seu ambiente precisa atender aos pré-requisitos para o uso da [Proteção Avançada contra Ameaças do Microsoft Defender](advanced-threat-protection.md#prerequisites)* .
   - [Versão prévia: Linha de base da ATP do Microsoft Defender](security-baseline-settings-defender-atp.md)  
+
+  > [!NOTE]
+  > A linha de base de segurança do Microsoft Defender ATP foi otimizada para dispositivos físicos e, atualmente, não é recomendada para uso em VMs (máquinas virtuais) ou pontos de extremidade VDI. Algumas configurações de linha de base podem afetar as sessões interativas remotas em ambientes virtualizados.  Para obter mais informações, confira [Aumentar a conformidade com a linha de base de segurança do Microsoft Defender ATP](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/configure-machines-security-baseline) na documentação do Windows.
 
 Você pode continuar a usar e editar perfis criados anteriormente com base em um modelo de visualização, mesmo quando esse modelo de visualização não estiver mais disponível para criar novos perfis. 
 
@@ -177,19 +180,19 @@ Outros processos que podem alterar posteriormente as configurações no disposit
 
 ## <a name="q--a"></a>Perguntas e Respostas
 
-#### <a name="why-these-settings"></a>Por que essas configurações?
+### <a name="why-these-settings"></a>Por que essas configurações?
 
 A equipe de segurança da Microsoft tem anos de experiência trabalhando diretamente com os desenvolvedores do Windows e com a comunidade de segurança para criar essas recomendações. As configurações nessa linha de base são consideradas as opções de configuração de segurança mais relevantes. Em cada novo build do Windows, a equipe ajusta suas recomendações com base em recursos lançados recentemente.
 
-#### <a name="is-there-a-difference-in-the-recommendations-for-windows-security-baselines-for-group-policy-vs-intune"></a>Há alguma diferença nas recomendações para linhas de base de segurança de Windows para política de grupo versus Intune?
+### <a name="is-there-a-difference-in-the-recommendations-for-windows-security-baselines-for-group-policy-vs-intune"></a>Há alguma diferença nas recomendações para linhas de base de segurança de Windows para política de grupo versus Intune?
 
 A mesma equipe de segurança da Microsoft escolheu e organizou as configurações para cada linha de base. O Intune inclui todas as configurações relevantes na linha de base de segurança do Intune. Há algumas configurações na linha de base de política de grupo que são específicas a um controlador de domínio local. Essas configurações são excluídas das recomendações do Intune. Todas as outras configurações são iguais.
 
-#### <a name="are-the-intune-security-baselines-cis-or-nsit-compliant"></a>As linhas de base de segurança do Intune são compatíveis com CIS ou NSIT?
+### <a name="are-the-intune-security-baselines-cis-or-nsit-compliant"></a>As linhas de base de segurança do Intune são compatíveis com CIS ou NSIT?
 
 Estritamente falando, não. A equipe de segurança da Microsoft consulta organizações, como a CIS, para compilar suas recomendações. Porém, não existe um mapeamento individual entre "compatível com CIS" e as linhas de base da Microsoft.
 
-#### <a name="what-certifications-does-microsofts-security-baselines-have"></a>Quais certificações as linhas de base de segurança da Microsoft têm? 
+### <a name="what-certifications-does-microsofts-security-baselines-have"></a>Quais certificações as linhas de base de segurança da Microsoft têm? 
 
 - A Microsoft continua a publicar linhas de base de segurança para políticas de grupo (GPOs) e o [Kit de Ferramentas de Conformidade de Segurança](https://docs.microsoft.com/windows/security/threat-protection/security-compliance-toolkit-10), como faz há muitos anos. Essas linhas de base são usadas por muitas organizações. As recomendações nessas linhas de base são provenientes do envolvimento da equipe de segurança da Microsoft com clientes corporativos e órgãos externos, incluindo o Departamento de Defesa (DoD), Instituto Nacional de Padrões e Tecnologia (NIST) e muito mais. Compartilhamos nossas recomendações e linhas de base com essas organizações. Essas organizações também têm suas próprias recomendações que refletem com maior exatidão as recomendações da Microsoft. À medida que o MDM (gerenciamento de dispositivo móvel) continua a evoluir para a nuvem, a Microsoft criou recomendações de MDM equivalentes dessas linhas de base de política de grupo. Essas linhas de base adicionais são incorporadas ao Microsoft Intune e incluem relatórios de conformidade sobre usuários, grupos e dispositivos que seguem (ou não) a linha de base.
 
@@ -202,4 +205,5 @@ Estritamente falando, não. A equipe de segurança da Microsoft consulta organiz
   - [Linha de Base de Segurança do MDM](security-baseline-settings-mdm.md)  
   - [Linha de base da ATP do Microsoft Defender](security-baseline-settings-defender-atp.md)  
 
-- Verifique o status e monitore a [linha de base e o perfil](security-baselines-monitor.md).
+- Verifique o status e monitore a [linha de base e o perfil](security-baselines-monitor.md)
+
