@@ -5,7 +5,7 @@ description: Configurações de linha de base de segurança com suporte do Intun
 author: brenduns
 ms.author: brenduns
 manager: dougeby
-ms.date: 05/29/2019
+ms.date: 07/25/2019
 ms.topic: reference
 ms.service: microsoft-intune
 ms.localizationpriority: medium
@@ -16,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 40d2b1f58c2892eea6d3f454a3f993b30b9a5c4a
-ms.sourcegitcommit: bd09decb754a832574d7f7375bad0186a22a15ab
+ms.openlocfilehash: eee3d4187dd513cd3945e86aff478fe96b341660
+ms.sourcegitcommit: 1d4aec7b79c70d35ec3fc29df6ff9c6a1403412e
 ms.translationtype: MTE75
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/19/2019
-ms.locfileid: "68354439"
+ms.lasthandoff: 07/25/2019
+ms.locfileid: "68491925"
 ---
 # <a name="microsoft-defender-advanced-threat-protection-baseline-settings-for-intune"></a>Configurações para Intune da Linha de base da Proteção Avançada contra Ameaças do Microsoft Defender
 
@@ -29,7 +29,7 @@ Exiba as configurações de linha de base da Proteção Avançada contra Ameaça
 
 A linha de base da Proteção Avançada contra Ameaças do Microsoft Defender está disponível quando o seu ambiente atende aos pré-requisitos para usar a [Proteção Avançada contra Ameaças do Microsoft Defender](advanced-threat-protection.md#prerequisites). 
 
-Essa linha de base é otimizada para dispositivos físicos e não é recomendada no momento para uso em VMs (máquinas virtuais) ou pontos de extremidade de VDI. Determinadas configurações de linha de base podem afetar sessões interativas remotas em ambientes virtualizados. Para obter mais informações, consulte [aumentar a conformidade com a linha de base de segurança do Microsoft defender ATP](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/configure-machines-security-baseline) na documentação do Windows.
+Essa linha de base é otimizada para dispositivos físicos e não é recomendada no momento para uso em VMs (máquinas virtuais) ou pontos de extremidade de VDI. Algumas configurações de linha de base podem afetar as sessões interativas remotas em ambientes virtualizados. Para obter mais informações, confira [Aumentar a conformidade com a linha de base de segurança do Microsoft Defender ATP](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/configure-machines-security-baseline) na documentação do Windows.
 
 
 > [!NOTE]  
@@ -292,7 +292,7 @@ Para saber mais, consulte [CSP WindowsAdvancedThreatProtection](https://docs.mic
 
   **Padrão**: Modo de auditoria
 
-## <a name="web-network-protection"></a>Proteção de rede da Web  
+## <a name="web--network-protection"></a>Proteção de rede e da Web  
 
 - **Tipo de proteção de rede**  
   [Defender/EnableNetworkProtection](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-defender#defender-enablenetworkprotection) - essa política permite que você ative ou desative a proteção de rede no Windows Defender Exploit Guard. A proteção de rede é um recurso do Windows Defender Exploit Guard que protege os funcionários usando qualquer aplicativo do acesso a golpes de phishing, sites que hospedam explorações e conteúdo mal-intencionado na Internet. Isso inclui impedir que navegadores de terceiros se conectem a sites perigosos.  
@@ -600,6 +600,13 @@ Para saber mais, veja [PassportForWork CSP](https://docs.microsoft.com/windows/c
 
 - **Configurar o Windows Hello para empresas** - *TenantId/Policies/UsePassportForWork*    
   O Windows Hello para Empresas é um método alternativo para entrar no Windows que substitui senhas, cartões inteligentes e cartões inteligentes virtuais.  
+
+  - Quando definido como *Sim*, você habilita essa política e o dispositivo provisiona o Windows Hello para empresas.  
+  - Quando definido como *não configurado*, a linha de base não afeta a configuração de política do dispositivo. Isso significa que, se o Windows Hello para empresas estiver desabilitado em um dispositivo, ele permanecerá desabilitado. Se estiver habilitado, ele permanecerá habilitado. 
+
+  Não é possível desabilitar o Windows Hello para empresas por meio desta linha de base. Você pode desabilitar o Windows Hello para empresas ao configurar o [registro do Windows](windows-hello.md)ou como parte de um perfil de configuração do dispositivo para a proteção de [identidade](identity-protection-configure.md).  
+
+O Windows Hello para Empresas é um método alternativo para entrar no Windows que substitui senhas, cartões inteligentes e cartões inteligentes virtuais.  
 
   Se você habilitar ou não definir essa configuração de política, o dispositivo provisionará o Windows Hello para Empresas. Se você desabilitar essa configuração de política, o dispositivo não provisionará o Windows Hello para Empresas para qualquer usuário.
 

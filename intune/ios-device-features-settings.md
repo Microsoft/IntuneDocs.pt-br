@@ -1,6 +1,6 @@
 ---
 title: Configurações de recurso de dispositivo iOS no Microsoft Intune – Azure | Microsoft Docs
-description: Veja todas as configurações de dispositivos iOS para AirPrint, layout da tela inicial, notificações do aplicativo, dispositivo compartilhado, logon único e filtro de conteúdo da Web no Microsoft Intune. Use essas configurações em um perfil de configuração de dispositivo para configurar dispositivos iOS e usar esses recursos diferentes da Apple em sua organização.
+description: Veja todas as configurações de dispositivos iOS para AirPrint, layout da tela inicial, notificações do aplicativo, dispositivo compartilhado, logon único e filtro de conteúdo da Web no Microsoft Intune. Use essas configurações em um perfil de configuração de dispositivo para configurar dispositivos iOS e usar esses recursos da Apple em sua organização.
 keywords: ''
 author: MandiOhlinger
 ms.author: mandia
@@ -15,12 +15,12 @@ ms.suite: ems
 search.appverid: ''
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 43b87a90f90130a014817819b87ed5946b1ba15b
-ms.sourcegitcommit: 9c06d8071b9affeda32e367bfe85d89bc524ed0b
+ms.openlocfilehash: bac591a625fd915056234a75b26bc2f90f50cae7
+ms.sourcegitcommit: 8023ba7d42e61bd37305c69f52a649cf83bf72e2
 ms.translationtype: MTE75
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/27/2019
-ms.locfileid: "67413802"
+ms.lasthandoff: 07/23/2019
+ms.locfileid: "68387098"
 ---
 # <a name="ios-device-settings-to-use-common-ios-features-in-intune"></a>Configurações de dispositivo iOS para usar recursos comuns do iOS no Intune
 
@@ -41,7 +41,7 @@ Este artigo lista essas configurações e descreve o que cada uma faz.
 - **Porta**: insira a porta de escuta do destino do AirPrint. Se você deixar essa propriedade em branco, o AirPrint usará a porta padrão. Disponível no iOS 11.0 e posterior.
 - **TLS**: escolha **Habilitar** para proteger as conexões do AirPrint com o protocolo TLS. Disponível no iOS 11.0 e posterior.
 
-**Adicionar** adiciona o servidor do AirPrint à lista. Você pode adicionar vários servidores do AirPrint. Você também pode **Importar** um arquivo .csv (separado por vírgula) com essas informações. Depois de criar a lista, você também pode **Exportar** sua lista de servidores do AirPrint.
+**Adicionar** adiciona o servidor do AirPrint à lista. Muitos servidores de impressão de impressões podem ser adicionados. Você também pode **Importar** um arquivo .csv (separado por vírgula) com essas informações. **Exportar** cria uma lista dos servidores de impressão que você adicionou.
 
 Selecione **OK** para salvar sua lista.
 
@@ -195,7 +195,7 @@ Este recurso dá suporte a dispositivos supervisionados executando o iOS 9.3 e p
   Os tokens de dispositivo também podem ser usados para adicionar informações específicas do dispositivo a esses campos. Por exemplo, para mostrar o número de série, insira `Serial Number: {{serialnumber}}`. Na tela de bloqueio, o texto mostra algo semelhante a `Serial Number 123456789ABC`. Ao inserir variáveis, lembre-se de usar chaves `{{ }}`. [Tokens de configuração de aplicativo](app-configuration-policies-use-ios.md#tokens-used-in-the-property-list) inclui uma lista das variáveis que podem ser usadas. Use também `deviceName` ou qualquer outro valor específico do dispositivo.
 
   > [!NOTE]
-  > As variáveis não são validadas na interface do usuário e diferenciam maiusculas de minúsculas. Como resultado, você pode ver perfis salvos com uma entrada incorreta. Por exemplo, se você digitar `{{DeviceID}}` em vez de `{{deviceid}}`, a cadeia de caracteres literal será mostrada no lugar do ID exclusivo do dispositivo. Certifique-se de inserir as informações corretas.
+  > As variáveis não são validadas na interface do usuário e diferenciam maiúsculas de minúsculas. Como resultado, você pode ver perfis salvos com uma entrada incorreta. Por exemplo, se você digitar `{{DeviceID}}` em vez de `{{deviceid}}`, a cadeia de caracteres literal será mostrada no lugar do ID exclusivo do dispositivo. Certifique-se de inserir as informações corretas.
 
 Selecione **OK** para salvar suas alterações.
 
@@ -253,7 +253,7 @@ Selecione **OK** para salvar suas alterações.
 
 ## <a name="web-content-filter-settings"></a>Configurações do filtro de conteúdo da Web
 
-Essas configurações controlam o acesso de URL do navegador em dispositivos iOS.
+Essas configurações controlam o acesso de URL do navegador em dispositivos iOS supervisionados.
 
 - **Tipo de filtro**: escolha permitir sites específicos. Suas opções:
 

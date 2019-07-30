@@ -4,7 +4,7 @@ description: O Microsoft 365 Enterprise inclui o Microsoft Intune. Veja como o I
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 06/12/2019
+ms.date: 07/22/2019
 ms.topic: conceptual
 audience: ITPro
 ms.service: microsoft-intune
@@ -15,12 +15,12 @@ ms.reviewer: angerobe
 ms.suite: ems
 search.appverid: MET150
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: f476c3129f3f3da4cde98fd0cd9960c223ffd6ae
-ms.sourcegitcommit: 7c251948811b8b817e9fe590b77f23aed95b2d4e
+ms.openlocfilehash: 5be25e9ab88f4dd44399d6ddc37cfc25955475ba
+ms.sourcegitcommit: 614c4c36cfe544569db998e17e29feeaefbb7a2e
 ms.translationtype: MTE75
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/15/2019
-ms.locfileid: "67884261"
+ms.lasthandoff: 07/24/2019
+ms.locfileid: "68427305"
 ---
 # <a name="what-is-device-management"></a>O que é o gerenciamento de dispositivo? 
 
@@ -59,7 +59,7 @@ Uma tarefa essencial de qualquer solução de gerenciamento de dispositivo é fo
 - O **Windows Defender** inclui muitos recursos de segurança para ajudar a proteger dispositivos Windows 10. Por exemplo, usando o Intune e o Windows Defender juntos, você pode: 
 
   - Habilite o [Windows Defender SmartScreen](https://docs.microsoft.com/intune/endpoint-protection-windows-10) para procurar atividades suspeitas nos arquivos e aplicativos nos dispositivos móveis. 
-  - Use [ATP (Proteção Avançada contra Ameaças) do Windows Defender](https://docs.microsoft.com/intune/advanced-threat-protection) para ajudar a evitar violações de segurança em dispositivos móveis. E ajude a limitar o impacto de uma violação de segurança ao bloquear o acesso de um usuário a recursos corporativos.
+  - Use [ATP (Proteção Avançada contra Ameaças) do Microsoft Defender](https://docs.microsoft.com/intune/advanced-threat-protection) para ajudar a evitar violações de segurança em dispositivos móveis. E ajude a limitar o impacto de uma violação de segurança ao bloquear o acesso de um usuário a recursos corporativos.
 
 - O **Acesso condicional** é um recurso do Azure Active Directory e se integra perfeitamente com o Intune. Usando o [Acesso condicional](https://docs.microsoft.com/intune/conditional-access), garanta que somente dispositivos em conformidade tenham permissão para acessar o email, o SharePoint e outros aplicativos. 
 
@@ -73,11 +73,11 @@ Você também pode usar uma combinação de [MDM e MAM](https://docs.microsoft.c
 
 Ao configurar o Intune, você também pode optar por trabalhar exclusivamente no portal do Azure para gerenciar dispositivos ou usar o Intune e o Microsoft 365 juntos para gerenciar dispositivos. [Migrar o gerenciamento de dispositivo móvel para o Intune no portal do Azure](https://www.microsoft.com/itshowcase/Article/Content/1042/Migrating-mobile-device-management-to-Intune-in-the-Azure-portal) é um estudo de caso de TI da Microsoft. Neste estudo de caso, veja como a TI da Microsoft escolheu uma abordagem de gerenciamento de dispositivo moderna e leia as lições aprendidas.
 
-## <a name="simplify-it-tasks-using-the-device-management-dashboard"></a>O departamento de TI simplifica as tarefas de usar o painel do Gerenciamento de Dispositivo
+## <a name="simplify-it-tasks-using-the-device-management-admin-center"></a>Simplificar as tarefas de TI usando o centro de administração do Gerenciamento de Dispositivo
 
-O [painel de Gerenciamento de Dispositivo](https://devicemanagement.portal.azure.com/) é um ponto único centralizado para gerenciar e concluir as tarefas em seus dispositivos móveis. Este painel inclui os serviços usados para gerenciamento de dispositivos, incluindo o Intune e o Azure Active Directory, e também para gerenciar aplicativos de cliente. 
+O [centro de administração do Gerenciamento de Dispositivo](https://devicemanagement.portal.azure.com/) é um ponto único centralizado para gerenciar e concluir as tarefas em seus dispositivos móveis. Este espaço de trabalho inclui os serviços usados para gerenciamento de dispositivos, incluindo o Intune e o Azure Active Directory, e também para gerenciar aplicativos de cliente. 
 
-No painel de Gerenciamento de Dispositivo, é possível:
+No centro de administração do gerenciamento de dispositivos, você pode:
 
 - [Registrar dispositivos](https://docs.microsoft.com/intune/device-enrollment)
 - [Configurar a conformidade do dispositivo](https://docs.microsoft.com/intune/device-compliance-get-started)
