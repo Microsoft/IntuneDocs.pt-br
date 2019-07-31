@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: d27cd977909bb7aa237441102110a7abc27ad301
-ms.sourcegitcommit: 7c251948811b8b817e9fe590b77f23aed95b2d4e
+ms.openlocfilehash: fef4b6969680101e2e4f045bc83a8974536eaf2a
+ms.sourcegitcommit: c715c93bb242f4fe44bbdf2fd585909854ed72b6
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/15/2019
-ms.locfileid: "67885003"
+ms.lasthandoff: 07/30/2019
+ms.locfileid: "68660963"
 ---
 # <a name="add-and-assign-mobile-threat-defense-mtd-apps-with-intune"></a>Adicionar e atribuir aplicativos MTD (Defesa contra Ameaças Móveis) com o Intune  
 
@@ -164,26 +164,23 @@ Escolha a seção que corresponde ao seu provedor MTD:
 - Confira instruções sobre [como usar as políticas de configuração de aplicativo do Microsoft Intune para iOS](app-configuration-policies-use-ios.md) a fim de adicionar a política de configuração de aplicativo do iOS para o SandBlast Mobile da Check Point.
   - Na **etapa 8**, use a opção **Inserir dados XML**, copie o conteúdo abaixo e cole-o no corpo da política de configuração.
 
-```
-<dict><key>MDM</key><string>INTUNE</string></dict>
-```
+        <dict><key>MDM</key><string>INTUNE</string></dict>
+
 
 ### <a name="zimperium-app-configuration-policy"></a>Política de configuração de aplicativo do Zimperium  
 - Consulte as instruções sobre como [usar as políticas de configuração de aplicativo do Microsoft Intune para iOS](app-configuration-policies-use-ios.md) para adicionar a política de configuração do aplicativo iOS do Zimperium.
   - Na **etapa 8**, use a opção **Inserir dados XML**, copie o conteúdo abaixo e cole-o no corpo da política de configuração.
-
-```
-<dict>
-<key>provider</key><string>Intune</string>
-<key>userprincipalname</key><string>{{userprincipalname}}</string>
-<key>deviceid</key>
-<string>{{deviceid}}</string>
-<key>serialnumber</key>
-<string>{{serialnumber}}</string>
-<key>udidlast4digits</key>
-<string>{{udidlast4digits}}</string>
-</dict>
-```
+ 
+        <dict>
+        <key>provider</key><string>Intune</string>
+        <key>userprincipalname</key><string>{{userprincipalname}}</string>
+        <key>deviceid</key>
+        <string>{{deviceid}}</string>
+        <key>serialnumber</key>
+        <string>{{serialnumber}}</string>
+        <key>udidlast4digits</key>
+        <string>{{udidlast4digits}}</string>
+        </dict>
 
 ### <a name="pradeo-app-configuration-policy"></a>Política de configuração de aplicativos do Pradeo  
 O Pradeo não dá suporte à política de configuração de aplicativo no iOS.  Em vez disso, para obter um aplicativo configurado, trabalhe com o Pradeo para implementar arquivos personalizados de IPA ou APK que são pré-configurados com as configurações desejadas.
@@ -192,16 +189,15 @@ O Pradeo não dá suporte à política de configuração de aplicativo no iOS.  
 - Consulte as instruções para [usar políticas de configuração de aplicativo do Microsoft Intune para iOS](app-configuration-policies-use-ios.md) para adicionar a política de configuração de aplicativo iOS do Better Mobile.
   - Na **etapa 8**, use a opção **Inserir dados XML**, copie o conteúdo abaixo e cole-o no corpo da política de configuração. Substitua a URL `https://client.bmobi.net` pela URL do console apropriado.
 
-```
-<dict>
-<key>better_server_url</key>
-<string>https://client.bmobi.net</string>
-<key>better_udid</key>
-<string>{{aaddeviceid}}</string>
-<key>better_user</key>
-<string>{{userprincipalname}}</string>
-</dict>
-```
+        <dict>
+        <key>better_server_url</key>
+        <string>https://client.bmobi.net</string>
+        <key>better_udid</key>
+        <string>{{aaddeviceid}}</string>
+        <key>better_user</key>
+        <string>{{userprincipalname}}</string>
+        </dict>
+
 
 ### <a name="sophos-mobile-app-configuration-policy"></a>Política de configuração de aplicativos do Sophos Mobile  
 Crie a política de configuração de aplicativo do iOS, conforme descrito no artigo [Usando a política de configuração de aplicativo do iOS](app-configuration-policies-use-ios.md).
@@ -210,22 +206,20 @@ Crie a política de configuração de aplicativo do iOS, conforme descrito no ar
 Confira as instruções para [usar políticas de configuração de aplicativos do Microsoft Intune para iOS](app-configuration-policies-use-ios.md) para adicionar a política de configuração de aplicativos iOS Wandera.
 - Na **etapa 8**, use a opção **Inserir dados XML**. Entre no portal do RADAR Wandera e navegue até **Configurações** > **Integração de EMM** > **Push de Aplicativo**. Selecione **Intune** e, em seguida, copie o conteúdo abaixo e cole-o no corpo da política de configuração.  
 
-  ```
-  <dict><key>secretKey</key>
-  <string>SeeRADAR</string>
-  <key>apiKey</key>
-  <string> SeeRADAR </string>
-  <key>customerId</key>
-  <string> SeeRADAR </string>
-  <key>email</key>
-  <string>{{mail}}</string>
-  <key>firstName</key>
-  <string>{{username}}</string>
-  <key>lastName</key>
-  <string></string>
-  <key>activationType</key>
-  <string>PROVISION_THEN_AWP</string></dict>  
-  ```
+      <dict><key>secretKey</key>
+       <string>SeeRADAR</string>
+       <key>apiKey</key>
+       <string> SeeRADAR </string>
+       <key>customerId</key>
+       <string> SeeRADAR </string>
+       <key>email</key>
+       <string>{{mail}}</string>
+       <key>firstName</key>
+       <string>{{username}}</string>
+       <key>lastName</key>
+       <string></string>
+       <key>activationType</key>
+       <string>PROVISION_THEN_AWP</string></dict>  
 
 ## <a name="assign-apps-to-groups"></a>Atribuir aplicativos a grupos  
 - Esta etapa se aplica a todos os parceiros MTD. Confira instruções sobre [como atribuir aplicativos a grupos com o Microsoft Intune](apps-deploy.md).

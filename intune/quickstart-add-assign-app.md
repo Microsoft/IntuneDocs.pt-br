@@ -6,7 +6,7 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 03/25/2019
+ms.date: 07/24/2019
 ms.topic: quickstart
 ms.service: microsoft-intune
 ms.localizationpriority: high
@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 1fa23deb26dbf54f8e3e98ec0b9604859a34a90d
-ms.sourcegitcommit: 7315fe72b7e55c5dcffc6d87f185f3c2cded9028
+ms.openlocfilehash: cd310cea29a3dac7a178d88c0f29d1a4e36ad37d
+ms.sourcegitcommit: d2ac912b834c4840de9cc92ba1815b6ecfbfb52b
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/02/2019
-ms.locfileid: "67528318"
+ms.lasthandoff: 07/25/2019
+ms.locfileid: "68482803"
 ---
 # <a name="quickstart-add-and-assign-a-client-app"></a>Início Rápido: Adicionar e atribuir um aplicativo cliente
 
@@ -43,7 +43,6 @@ Entre no [Intune](https://aka.ms/intuneportal) como um [Administrador Global ou 
 Um aplicativo pode ser incluído para que o Intune possa gerenciar os aspectos do aplicativo. 
 
 Use as seguintes etapas para adicionar um aplicativo ao Intune:
-
 1. No [Intune](https://aka.ms/intuneportal), selecione **Aplicativos cliente** > **Aplicativos** > **Adicionar**. 
 2. Selecione **Windows 10** na seção **Pacote do Office 365** da caixa suspensa **Tipo de aplicativo**.
 3. Selecione **Configurar Pacote de Aplicativos** para selecionar os aplicativos do Office a serem atribuídos ao usuário do Intune.
@@ -56,9 +55,9 @@ Use as seguintes etapas para adicionar um aplicativo ao Intune:
 
     ![Captura de tela da adição de informações do aplicativo](media/quickstart-add-assign-app/quickstart-add-assign-app-01.png)
 
-8. Selecione **Configurações do Pacote de Aplicativos**.
-9. Na caixa suspensa **Canal de Atualização**, selecione **Mensal**.
-10. Clique em **OK** > **Adicionar**.
+10. Selecione **Configurações do Pacote de Aplicativos**.
+11. Na caixa suspensa **Canal de Atualização**, selecione **Mensal**.
+12. Clique em **OK** > **Adicionar**.
 
 ## <a name="assign-the-app-to-a-group"></a>Atribuir um aplicativo a um grupo
 
