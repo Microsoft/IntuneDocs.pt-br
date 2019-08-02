@@ -1,5 +1,6 @@
 ---
-title: Usar os relatórios de Conformidade de Atualizações para Atualizações do Windows no Microsoft Intune | Microsoft Docs
+title: Usar os relatórios de Conformidade de Atualizações para Atualizações do Windows no Microsoft Intune
+titleSuffix: Microsoft Intune
 description: Use a Conformidade de Atualizações do OMS para exibir dados de relatório para Atualizações do Windows implantadas com o Intune.
 keywords: ''
 author: brenduns
@@ -14,12 +15,12 @@ ms.reviewer: aiwang
 ms.suite: ems
 search.appverid: MET150
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: a2b236d01cb5ffcf5a26e71ac0a9b65bb586dcb1
-ms.sourcegitcommit: 916fed64f3d173498a2905c7ed8d2d6416e34061
+ms.openlocfilehash: 09f3cafc16d8a08885731aa244a089367c6c0933
+ms.sourcegitcommit: c715c93bb242f4fe44bbdf2fd585909854ed72b6
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/23/2019
-ms.locfileid: "66039661"
+ms.lasthandoff: 07/30/2019
+ms.locfileid: "68660402"
 ---
 # <a name="intune-compliance-reports-for-updates"></a>Relatórios de conformidade do Intune para atualizações
 Ao usar o Intune para implantar uma atualização do Windows em dispositivos Windows 10, exiba os detalhes sobre a conformidade de atualizações usando o Intune ou uma solução gratuita chamada *Conformidade de Atualizações*, que faz parte do OMS (Microsoft Operations Management Suite).

@@ -16,14 +16,14 @@ ms.reviewer: shpate
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: a04a8b9f1973479fd0695ad0e782488fdef43d10
-ms.sourcegitcommit: c3a4fefbac8ff7badc42b1711b7ed2da81d1ad67
+ms.openlocfilehash: 64bdc59e08a2b17c82e1798d454f0a0403e61b13
+ms.sourcegitcommit: 99b74d7849fbfc8f5cf99cba33e858eeb9f537aa
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/22/2019
-ms.locfileid: "68375155"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "68671052"
 ---
-# <a name="monitor-device-encryption"></a>Monitorar a criptografia do dispositivo  
+# <a name="monitor-device-encryption-with-intune"></a>Monitorar a criptografia do dispositivo com o Intune   
 
 O relatório de criptografia do Microsoft Intune é uma localização centralizada para exibir detalhes sobre o status de criptografia dos dispositivos gerenciados. Veja detalhes sobre o status de criptografia de um dispositivo e encontre opções para gerenciar as chaves de recuperação do dispositivo. As opções de chave de recuperação disponíveis dependem do tipo de dispositivo que está sendo exibido.  
 
@@ -59,7 +59,7 @@ O painel Relatório de criptografia exibe uma lista dos dispositivos gerenciados
     
     Para saber mais, confira o [CSP (provedor de serviço de configuração) do BitLocker](https://docs.microsoft.com/windows/client-management/mdm/bitlocker-csp) na documentação do Windows.  
 
-  - **Não está pronto**: o dispositivo não tem funcionalidades de criptografia completas, mas ainda dá suporte à criptografia. Por exemplo, um dispositivo Windows pode ser criptografado manualmente por um usuário ou por meio da Política de Grupo que pode ser definida para permitir a criptografia sem um TMP.
+  - **Não está pronto**: o dispositivo não tem funcionalidades de criptografia completas, mas ainda dá suporte à criptografia. Por exemplo, um dispositivo Windows pode ser criptografado manualmente por um usuário ou por meio da Política de Grupo que pode ser definida para permitir a criptografia sem um TPM.
   - **Não aplicável**: Não há informações suficientes para classificar esse dispositivo.  
 
 - **Status da criptografia** – indica se a unidade do sistema operacional é criptografada.  
@@ -93,8 +93,6 @@ Quando você seleciona um dispositivo no Relatório de criptografia, o Intune ex
 - **Resumo do estado de perfil** – Um resumo dos perfis que se aplicam a esse dispositivo. O resumo representa a condição menos favorável nos perfis aplicáveis. Por exemplo, se apenas um dos vários perfis aplicáveis resultar em um erro, o *Resumo do estado de perfil* exibirá um *Erro*.  
 
 - **Detalhes de status** – Detalhes avançados sobre o estado de criptografia do dispositivo.  
-  > [!NOTE]
-  > O suporte para o FileVault é limitado até a conclusão da distribuição da versão de julho em alguns dias. Até que a distribuição seja concluída, os detalhes de status do dispositivo e os detalhes de criptografia do dispositivo para o macOS podem não ser exibidos com precisão no relatório de criptografia.
 
   > [!IMPORTANT]  
   > Para dispositivos Windows 10, o Intune só mostra os *Detalhes de status* para dispositivos que executam a *Atualização de 10 de abril de 2019 do Windows* ou posterior.  

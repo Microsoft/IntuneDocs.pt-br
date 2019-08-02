@@ -15,12 +15,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: b073047455cd21dc3ffe5efcb52f51584db5ff30
-ms.sourcegitcommit: bd09decb754a832574d7f7375bad0186a22a15ab
+ms.openlocfilehash: b6db255cc4c4bb8466d36e25deaf36e5c3480106
+ms.sourcegitcommit: 2bce5e43956b6a5244a518caa618f97f93b4f727
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/19/2019
-ms.locfileid: "68353768"
+ms.lasthandoff: 07/24/2019
+ms.locfileid: "68467494"
 ---
 # <a name="configure-and-use-scep-certificates-with-intune"></a>Configurar e usar certificados SCEP com o Intune
 
@@ -373,7 +373,14 @@ Para validar se o serviço está em execução, abra um navegador e insira a URL
      - Windows 10 e posterior
 
 
-   - **Formato de nome de entidade**: Selecione como o Intune cria automaticamente o nome da entidade na solicitação de certificado. As opções serão alteradas se você escolher um tipo de certificado de **usuário** ou um tipo de certificado de **dispositivo**. 
+   - **Formato de nome de entidade**: Selecione como o Intune cria automaticamente o nome da entidade na solicitação de certificado. As opções serão alteradas se você escolher um tipo de certificado de **usuário** ou um tipo de certificado de **dispositivo**.  
+
+     > [!NOTE]  
+     > Há um [problema conhecido](#avoid-certificate-signing-requests-with-escaped-special-characters) no uso do SCEP para obter certificados quando o nome da entidade na CSR (Solicitação de Assinatura de Certificado) resultante inclui um dos seguintes caracteres como um caractere de escape (seguido por uma barra invertida \\):
+     > - \+
+     > - ;
+     > - ,
+     > - =
 
         **Tipo de certificado de usuário**  
 
@@ -495,6 +502,42 @@ Para validar se o serviço está em execução, abra um navegador e insira a URL
      - Selecione **OK** e **Criar** seu perfil.
 
 O perfil é criado e aparece no painel da lista de perfis.
+
+### <a name="avoid-certificate-signing-requests-with-escaped-special-characters"></a>Evitar solicitações de assinatura de certificado com caracteres especiais de escape
+Há um problema conhecido em solicitações de certificado SCEP que incluem um CN (nome da entidade) com um ou mais dos caracteres especiais a seguir como um caractere de escape. Os nomes de entidades que incluem um dos caracteres especiais como um caractere de escape resultam em um CSR com um nome de entidade incorreto que, por sua vez, leva a uma falha na validação do desafio do SCEP do Intune e faz com que nenhum certificado seja emitido.  
+
+Os caracteres especiais são:
+- \+
+- ,
+- ;
+- =
+
+Quando o nome da entidade incluir um dos caracteres especiais, use uma das seguintes opções para contornar essa limitação:  
+- Encapsule com aspas o valor de CN que contém o caractere especial.  
+- Remova o caractere especial do valor de CN.  
+
+**Por exemplo**, você tem um nome de entidade que aparece como *Usuário de teste (TestCompany, LLC)* .  Um CSR que inclui um CN que tem a vírgula entre *TestCompany* e *LLC* apresenta um problema.  O problema pode ser evitado com o uso de aspas em todo o CN ou com a remoção da vírgula entre *TestCompany* e *LLC*:
+- **Adicione aspas**: *CN =* "Usuário de teste (TestCompany, LLC)”,OU=UserAccounts,DC=corp,DC=contoso,DC=com*
+- **Remova a vírgula**: *CN=Usuário de teste (TestCompany LLC),OU=UserAccounts,DC=corp,DC=contoso,DC=com*
+
+ No entanto, as tentativas de retirar a vírgula usando um caractere de barra invertida falharão com um erro nos logs do CRP:  
+- **Vírgula com escape**: *CN=Usuário de teste (TestCompany\\, LLC),OU=UserAccounts,DC=corp,DC=contoso,DC=com*
+
+O erro é semelhante ao seguinte: 
+
+```
+Subject Name in CSR CN="Test User (TESTCOMPANY\, LLC),OU=UserAccounts,DC=corp,DC=contoso,DC=com" and challenge CN=Test User (TESTCOMPANY\, LLC),OU=UserAccounts,DC=corp,DC=contoso,DC=com do not match  
+
+  Exception: System.ArgumentException: Subject Name in CSR and challenge do not match
+
+   at Microsoft.ConfigurationManager.CertRegPoint.ChallengeValidation.ValidationPhase3(PKCSDecodedObject pkcsObj, CertEnrollChallenge challenge, String templateName, Int32 skipSANCheck)
+
+Exception:    at Microsoft.ConfigurationManager.CertRegPoint.ChallengeValidation.ValidationPhase3(PKCSDecodedObject pkcsObj, CertEnrollChallenge challenge, String templateName, Int32 skipSANCheck)
+
+   at Microsoft.ConfigurationManager.CertRegPoint.Controllers.CertificateController.VerifyRequest(VerifyChallengeParams value
+```
+
+
 
 ## <a name="assign-the-certificate-profile"></a>Atribuir o perfil de certificado
 

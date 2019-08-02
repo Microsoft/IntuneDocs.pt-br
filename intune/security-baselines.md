@@ -1,6 +1,6 @@
 ---
 title: Usar linhas de base de segurança no Microsoft Intune – Azure | Microsoft Docs
-description: Adicione ou defina as configurações de segurança do Windows recomendadas para proteger usuário e dados em dispositivos com o Microsoft Intune para gerenciamento de dispositivo móvel. Habilite o BitLocker, configure a Proteção Avançada contra Ameaças do Microsoft Defender, controle o Internet Explorer, use a Smart Screen, defina políticas de segurança local, exija uma senha, bloqueie downloads da Internet e muito mais.
+description: Use as configurações de segurança recomendadas do Windows para proteger usuários e dados em dispositivos com o Microsoft Intune para gerenciamento de dispositivo móvel. Habilite a criptografia, configure a Proteção Avançada contra Ameaças do Microsoft Defender, controle o Internet Explorer, defina políticas de segurança local, exija uma senha, bloqueie downloads da Internet e muito mais.
 keywords: ''
 author: brenduns
 ms.author: brenduns
@@ -15,12 +15,12 @@ ms.reviewer: joglocke
 ms.suite: ems
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: bbab505d668f0e348b3b4d34fb2c39ac683f340b
-ms.sourcegitcommit: bd09decb754a832574d7f7375bad0186a22a15ab
+ms.openlocfilehash: 252a42b9c8ef6612301bc913e187295be47d27bb
+ms.sourcegitcommit: 99b74d7849fbfc8f5cf99cba33e858eeb9f537aa
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/19/2019
-ms.locfileid: "68353600"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "68671010"
 ---
 # <a name="use-security-baselines-to-configure-windows-10-devices-in-intune"></a>Usar linhas de base de segurança para configurar dispositivos com Windows 10 no Intune
 
@@ -70,9 +70,9 @@ As instâncias de linhas de base de segurança a seguir estão disponíveis para
   - [Linha de base de segurança do MDM para a primavera de 2019 (19H1)](security-baseline-settings-mdm.md)
   - [Versão prévia: Linha de base de segurança do MDM para outubro de 2018](security-baseline-settings-mdm-archive.md)
 
-- **Linha de base da ATP do Microsoft Defender**  
+- **Linha de base do Microsoft Defender ATP**  
   *Para usar essa linha de base, seu ambiente precisa atender aos pré-requisitos para o uso da [Proteção Avançada contra Ameaças do Microsoft Defender](advanced-threat-protection.md#prerequisites)* .
-  - [Versão prévia: Linha de base da ATP do Microsoft Defender](security-baseline-settings-defender-atp.md)  
+  - [Versão prévia: Linha de base do Microsoft Defender ATP](security-baseline-settings-defender-atp.md)  
 
   > [!NOTE]
   > A linha de base de segurança do Microsoft Defender ATP foi otimizada para dispositivos físicos e, atualmente, não é recomendada para uso em VMs (máquinas virtuais) ou pontos de extremidade VDI. Algumas configurações de linha de base podem afetar as sessões interativas remotas em ambientes virtualizados.  Para obter mais informações, confira [Aumentar a conformidade com a linha de base de segurança do Microsoft Defender ATP](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/configure-machines-security-baseline) na documentação do Windows.
@@ -203,7 +203,7 @@ Estritamente falando, não. A equipe de segurança da Microsoft consulta organiz
 ## <a name="next-steps"></a>Próximas etapas
 - Confira as configurações nas versões mais recentes das linhas de base disponíveis:  
   - [Linha de Base de Segurança do MDM](security-baseline-settings-mdm.md)  
-  - [Linha de base da ATP do Microsoft Defender](security-baseline-settings-defender-atp.md)  
+  - [Linha de base do Microsoft Defender ATP](security-baseline-settings-defender-atp.md)  
 
 - Verifique o status e monitore a [linha de base e o perfil](security-baselines-monitor.md)
 

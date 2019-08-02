@@ -6,7 +6,7 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 07/16/2019
+ms.date: 07/24/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.localizationpriority: high
@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 2b1f8308463e76b09a041bb952ad09515435c54c
-ms.sourcegitcommit: c3a4fefbac8ff7badc42b1711b7ed2da81d1ad67
+ms.openlocfilehash: 758230d3d2f1dd1cb42532cce9fe1ff530000a16
+ms.sourcegitcommit: d2ac912b834c4840de9cc92ba1815b6ecfbfb52b
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/22/2019
-ms.locfileid: "68374851"
+ms.lasthandoff: 07/25/2019
+ms.locfileid: "68482853"
 ---
 # <a name="configure-the-microsoft-managed-home-screen-app-for-android-enterprise"></a>Aplicativo de Tela Inicial Gerenciada da Microsoft para o Android Enterprise
 
@@ -386,6 +386,9 @@ Este é um exemplo de script JSON com todas as chaves de configuração disponí
 
 ## <a name="googles-android-device-policy-app"></a>Aplicativo Política do Dispositivo Android do Google
 O aplicativo Tela Inicial Gerenciada agora fornece acesso ao aplicativo Política do Dispositivo Android do Google. O aplicativo Tela Inicial Gerenciada é um inicializador personalizado usado para dispositivos registrados no Intune como dispositivos dedicados do AE (Android Enterprise) que usam o modo de quiosque de vários aplicativos. Você pode acessar o aplicativo Política do Dispositivo Android ou orientar os usuários ao aplicativo Política do Dispositivo Android, para fins de suporte e de depuração. Essa capacidade de inicialização está disponível no momento em que o dispositivo é registrado e bloqueado na Tela Inicial Gerenciada. Nenhuma instalação adicional é necessária para usar essa funcionalidade.
+
+## <a name="managed-home-screen-debug-screen"></a>Tela de depuração da Tela Inicial Gerenciada
+Você pode acessar a tela de depuração da Tela Inicial Gerenciada clicando no botão **voltar** até que a tela de depuração seja exibida (clique no botão **voltar** 15 vezes ou mais). Nessa tela de depuração, você poderá iniciar o aplicativo Android Device Policy, exibir e carregar logs ou pausar temporariamente o modo de quiosque para atualizar o dispositivo. Para obter mais informações sobre como pausar o modo de quiosque, confira o item **Sair do modo de quiosque** nas [configurações do dispositivo dedicado](device-restrictions-android-for-work.md#dedicated-device-settings) do Android Enterprise.
 
 ## <a name="next-steps"></a>Próximas etapas
 

@@ -5,7 +5,7 @@ services: microsoft-intune
 author: ErikRe
 ms.author: erikre
 manager: dougeby
-ms.date: 04/15/2019
+ms.date: 07/30/2019
 ms.topic: quickstart
 ms.service: microsoft-intune
 ms.localizationpriority: high
@@ -16,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: d3c14d55201f88f5090f404ca9a79dd902c8da5e
-ms.sourcegitcommit: 916fed64f3d173498a2905c7ed8d2d6416e34061
+ms.openlocfilehash: efd4e8d013f0205541f6fcc37bb0bb8b5ea75bac
+ms.sourcegitcommit: 99b74d7849fbfc8f5cf99cba33e858eeb9f537aa
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/23/2019
-ms.locfileid: "66041336"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "68670843"
 ---
 # <a name="quickstart-enroll-your-windows-10-device"></a>Início Rápido: Registrar seu dispositivo Windows 10
 
@@ -80,7 +80,7 @@ Antes de registrar seu Windows 10 Desktop, você deve confirmar a versão do Win
 
     Você verá uma mensagem que indica que sua empresa ou escola está registrando o dispositivo.
 
-4. Quando você vir a página **Tudo pronto!**, selecione **Concluir**. Você terminou.
+4. Quando você vir a página **Tudo pronto!** , selecione **Concluir**. Você terminou.
 
 5. Agora você verá a conta adicionada como parte das configurações de **Acessar trabalho ou escola** em sua área de trabalho do Windows.
 
@@ -91,7 +91,7 @@ Antes de registrar seu Windows 10 Desktop, você deve confirmar a versão do Win
 ## <a name="confirm-your-device-enrollment-in-intune"></a>Confirmar o registro de dispositivo no Intune
 
 1. Entre no [Intune](https://aka.ms/intuneportal) como um Administrador Global ou um Administrador de Serviços do Intune.
-2. Selecione **Dispositivos** para exibir os dispositivos registrados no Intune.
+2. Escolha **Dispositivos** > **Todos os dispositivos** para exibir os dispositivos registrados no Intune.
 3. Verifique se você tem um dispositivo adicional registrado no Intune.
 
    ![Captura de tela dos dispositivos registrados no Intune](media/quickstart-enroll-windows-device/quickstart-enroll-windows-device-07.png)

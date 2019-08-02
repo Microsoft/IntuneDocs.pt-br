@@ -6,7 +6,7 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 07/22/2019
+ms.date: 07/26/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.localizationpriority: high
@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: ''
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 1827375dc1905b5c881f743777a73340f0215e0c
-ms.sourcegitcommit: 8023ba7d42e61bd37305c69f52a649cf83bf72e2
+ms.openlocfilehash: 53555a01899cfec15c319e790620b2bfeaa302bc
+ms.sourcegitcommit: 948ff8f56639e6dc7091134a0efd8d44efca63f2
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/23/2019
-ms.locfileid: "68388507"
+ms.lasthandoff: 07/27/2019
+ms.locfileid: "68590914"
 ---
 # <a name="intune-discovered-apps"></a>Aplicativos descobertos pelo Intune
 
@@ -30,13 +30,22 @@ Os **aplicativos descobertos** pelo Intune são uma lista de aplicativos detecta
 
 ## <a name="monitor-discovered-apps-with-intune"></a>Monitorar os aplicativos descobertos com o Intune
 
-O Intune fornece uma lista de aplicativos detectados nos dispositivos registrados no Intune em seu locatário.
+O Intune fornece uma lista agregada de aplicativos detectados nos dispositivos registrados no Intune em seu locatário.
 
 1. Conecte-se ao [Intune](https://go.microsoft.com/fwlink/?linkid=2090973).
 2. No painel **Intune**, selecione **Aplicativos cliente** > **Aplicativos descobertos**.
 
 >[!NOTE]
 >Você pode exportar a lista de aplicativos descobertos para um arquivo .csv selecionando **Exportar** na folha **Aplicativos descobertos**.
+>
+>Atualmente, não há contagens de agregação para aplicativos Win32 descobertos. Esse tipo de dados só pode ser exibido por dispositivo.
+
+O Intune também fornece a lista de aplicativos descobertos para o dispositivo individual em seu locatário. 
+
+1. Conecte-se ao [Intune](https://go.microsoft.com/fwlink/?linkid=2090973).
+2. No painel Intune, escolha **Dispositivos** > **Todos os Dispositivos**.
+3. Selecione um dispositivo.
+4. Para exibir os aplicativos detectados para este dispositivo, escolha **Aplicativos Descobertos** na seção **Monitorar**. 
 
 ## <a name="details-of-discovered-apps"></a>Detalhes de aplicativos descobertos
 
