@@ -5,7 +5,7 @@ keywords: ''
 author: lenewsad
 ms.author: lanewsad
 manager: dougeby
-ms.date: 10/01/2018
+ms.date: 07/26/2019
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -18,22 +18,22 @@ ms.reviewer: esmich
 ms.suite: ems
 ms.custom: intune-enduser
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 494269b82840331041ac2607ea853dbfb1d979de
-ms.sourcegitcommit: bccfbf1e3bdc31382189fc4489d337d1a554e6a1
+ms.openlocfilehash: 3c764d0bf5cccecef692b8efe1e45af383584cd2
+ms.sourcegitcommit: 3baa9965095bb874d9b8c7a3cbb4aa925ed52cae
 ms.translationtype: MTE75
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/03/2019
-ms.locfileid: "67546326"
+ms.lasthandoff: 07/30/2019
+ms.locfileid: "68625073"
 ---
 # <a name="install-and-sign-in-to-the-company-portal-app"></a>Instalar e entrar no aplicativo Portal da Empresa
 
 Instale o aplicativo Portal da Empresa em seu dispositivo iOS para receber acesso aos seus aplicativos corporativos e de estudante, email e rede. Use o aplicativo para registrar seu dispositivo no Microsoft Intune e proteger o seu acesso aos recursos corporativos ou de estudante. Para obter mais informações, consulte [What happens if you install the Company Portal app and enroll your device in Intune? (O que acontece quando você instala o aplicativo de Portal da empresa e registra seu dispositivo no Intune?)](what-happens-if-you-install-the-company-portal-app-and-enroll-your-device-in-intune-ios.md).
 
-1. Abra a **App Store** e pesquise por **portal da empresa do Intune**.
+1. Abra a **Loja de Aplicativos** e pesquise por **Portal da Empresa do Intune**.
 
 2. Baixe o aplicativo **Portal da Empresa do Intune**.
 
-    ![Captura de tela de como o aplicativo Portal da Empresa do Intune aparece na App Store.](./media/CP_iosRedesign_after_1803_04.PNG)
+    ![Captura de tela de como o aplicativo Portal da Empresa do Intune aparece na App Store.](./media/cp-ios-redesign-after-1904.PNG)  
 
 3. Abra o aplicativo Portal da Empresa, digite seu endereço de email e senha corporativa ou de estudante e, em seguida, toque em **Entrar**.
 

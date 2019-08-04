@@ -5,7 +5,7 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 04/10/2019
+ms.date: 07/29/2019
 ms.topic: reference
 ms.service: microsoft-intune
 ms.localizationpriority: medium
@@ -16,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: ''
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 673dd0cb751fcdd2a7036dc2bf52dd731a4b04ff
-ms.sourcegitcommit: 8d12ab22e23552f9addaef4c28b732fb211945a2
+ms.openlocfilehash: e8f5f67661dbf33f2b0d6b44e32302a874c3f4de
+ms.sourcegitcommit: 3baa9965095bb874d9b8c7a3cbb4aa925ed52cae
 ms.translationtype: MTE75
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/18/2019
-ms.locfileid: "68306763"
+ms.lasthandoff: 07/30/2019
+ms.locfileid: "68625094"
 ---
 # <a name="microsoft-intune-app-sdk-for-ios-developer-guide"></a>Guia do desenvolvedor do SDK de Aplicativos do Microsoft Intune para iOS
 
@@ -65,22 +65,22 @@ Os seguintes arquivos são relevantes para todos os aplicativos/extensões:
 
 Os Arquivos de Cabeçalho a seguir incluem APIs, tipos de dados e protocolos que o SDK do aplicativo do Intune disponibiliza para desenvolvedores:
 
-    * IntuneMAMAppConfig.h
-    * IntuneMAMAppConfigManager.h
-    * IntuneMAMDataProtectionInfo.h
-    * IntuneMAMDataProtectionManager.h
-    * IntuneMAMDefs.h
-    * IntuneMAMDiagnosticConsole.h
-    * IntuneMAMEnrollmentDelegate.h
-    * IntuneMAMEnrollmentManager.h
-    * IntuneMAMEnrollmentStatus.h
-    * IntuneMAMFileProtectionInfo.h
-    * IntuneMAMFileProtectionManager.h
-    * IntuneMAMLogger.h
-    * IntuneMAMPolicy.h
-    * IntuneMAMPolicyDelegate.h
-    * IntuneMAMPolicyManager.h
-    * IntuneMAMVersionInfo.h
+-  IntuneMAMAppConfig.h
+-  IntuneMAMAppConfigManager.h
+-  IntuneMAMDataProtectionInfo.h
+-  IntuneMAMDataProtectionManager.h
+-  IntuneMAMDefs.h
+-  IntuneMAMDiagnosticConsole.h
+-  IntuneMAMEnrollmentDelegate.h
+-  IntuneMAMEnrollmentManager.h
+-  IntuneMAMEnrollmentStatus.h
+-  IntuneMAMFileProtectionInfo.h
+-  IntuneMAMFileProtectionManager.h
+-  IntuneMAMLogger.h
+-  IntuneMAMPolicy.h
+-  IntuneMAMPolicyDelegate.h
+-  IntuneMAMPolicyManager.h
+-  IntuneMAMVersionInfo.h
 
 Os desenvolvedores podem disponibilizar o conteúdo de todos os cabeçalhos acima apenas importando IntuneMAM.h
 
@@ -130,17 +130,17 @@ Para habilitar o SDK de Aplicativos do Intune, siga estas etapas:
     > * Atualmente, não há suporte para a disponibilização das APIs do SDK do Intune no Swift por meio de uma instrução de importação de módulo (ex: Import IntuneMAMSwift). Usar um cabeçalho de ponte Objective-C é a abordagem recomendada.
     
 3. Adicione as seguintes estruturas de iOS ao projeto:  
-    * MessageUI.framework  
-    * Security.framework  
-    * MobileCoreServices.framework  
-    * SystemConfiguration.framework  
-    * libsqlite3.tbd  
-    * libc++.tbd  
-    * ImageIO.framework  
-    * LocalAuthentication.framework  
-    * AudioToolbox.framework  
-    * QuartzCore.framework  
-    * WebKit.framework
+-  MessageUI.framework  
+-  Security.framework  
+-  MobileCoreServices.framework  
+-  SystemConfiguration.framework  
+-  libsqlite3.tbd  
+-  libc++.tbd  
+-  ImageIO.framework  
+-  LocalAuthentication.framework  
+-  AudioToolbox.framework  
+-  QuartzCore.framework  
+-  WebKit.framework
 
 4. Habilite o compartilhamento de conjunto de chaves (se já não estiver habilitado) escolhendo em **Funcionalidades** em cada destino do projeto e habilitando a opção **Compartilhamento de Conjunto de Chaves**. O compartilhamento de conjunto de chaves é necessário para que você prossiga para a próxima etapa.
 
