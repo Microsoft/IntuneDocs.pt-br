@@ -1,7 +1,7 @@
 ---
 title: Configurações de linhas de base de segurança do Intune para o Windows 10
 titleSuffix: Microsoft Intune
-description: Configurações de linhas de base de segurança do Intune para gerenciar o Windows 10
+description: Examine os padrões e as configurações disponíveis que são encontradas na linha de base de segurança do MDM do Windows para dispositivos Windows 10 gerenciados com o Intune.
 author: brenduns
 ms.author: brenduns
 manager: dougeby
@@ -16,23 +16,23 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 2ff902530b6f7001e23300b01f6576f0a7fc2637
-ms.sourcegitcommit: 1d4aec7b79c70d35ec3fc29df6ff9c6a1403412e
+ms.openlocfilehash: 5565ce7a355136a749d79b52e4830af91684440a
+ms.sourcegitcommit: 864fdf995c2b41f104a98a7e2665088c2864774f
 ms.translationtype: MTE75
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/25/2019
-ms.locfileid: "68491901"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "68680031"
 ---
 # <a name="mdm-security-baseline-settings-for-intune"></a>Configurações de linha de base de segurança MDM para o Intune  
 
 Exiba as configurações de linha de base de segurança do MDM com suporte pelo Microsoft Intune para dispositivos que executam o Windows 10 ou posterior. Os valores padrão para as configurações nessa linha de base representam a configuração recomendada para os dispositivos aplicáveis e podem não coincidir com os padrões de linha de base de outras linhas de base de segurança.  
 
-A versão de linha de base mais recente é a **linha de base de segurança do MDM para a atualização 2019 do Spring (19H1)**  
+A versão de linha de base mais recente é a **linha de base de segurança MDM para maio de 2019**  
 
 Para saber mais sobre o que mudou na versão mais recente desta linha de base da versão anterior, consulte [o que mudou no novo modelo](#whats-changed-in-the-new-template).  
 
 > [!NOTE]  
-> Em junho de 2019, a linha de base de segurança do MDM de visualização foi substituída pelo lançamento da *linha de base de segurança do MDM para o modelo 19H1 (atualização do Spring 2019)* , que é geral disponível (não em versão prévia). Os perfis criados antes da disponibilidade da linha de base de *segurança do MDM para a linha de base 19H1 (atualização 2019)* não serão atualizados para refletir as configurações e os valores que estão na linha de base de segurança do MDM para a versão do 19H1 (Spring 2019 Update).  Embora não seja possível criar novos perfis com base no modelo de visualização, você pode editar e continuar a usar perfis criados anteriormente com base no modelo de visualização.   
+> Em junho de 2019, a linha de base de segurança do MDM de visualização foi substituída pelo lançamento da *linha de base de segurança do MDM para o modelo de maio de 2019* , que está geralmente disponível (não em versão prévia). Os perfis criados antes da disponibilidade da linha de base de segurança do MDM para a linha de base de *maio de 2019* não serão atualizados para refletir as configurações e os valores que estão na linha de base de segurança do MDM para a versão 2019 de maio.  Embora não seja possível criar novos perfis com base no modelo de visualização, você pode editar e continuar a usar perfis criados anteriormente com base no modelo de visualização.   
   
 Para saber mais sobre como usar linhas de base de segurança com o Intune, confira [usar linhas de base de segurança](security-baselines.md).  
 
@@ -1825,7 +1825,7 @@ Para obter mais informações, veja [CSP de política – WindowsPowerShell](htt
   **Padrão**: habilitado
 
 ## <a name="whats-changed-in-the-new-template"></a>O que mudou no novo modelo
-A *linha de base de segurança do MDM para o modelo de atualização do Spring 2019 (19H1)* tem as seguintes alterações do modelo de *Visualização* .
+A *linha de base de segurança do MDM para o modelo 2019 de maio* tem as seguintes alterações do modelo de *Visualização* .
 
 ### <a name="changes-to-the-baseline-settings"></a>Alterações nas configurações de linha de base
 As seguintes configurações são removidas:
