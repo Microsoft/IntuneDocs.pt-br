@@ -15,7 +15,7 @@
           href: whats-new-app-ui.md
         - name: Recursos em desenvolvimento
           href: in-development.md
-- name: Guias de início rápido
+- name: Início rápido
   items:
     - name: Experimente o Intune gratuitamente
       href: free-trial-sign-up.md
@@ -152,7 +152,7 @@
           href: account-sign-up.md
         - name: Configurar domínios
           href: custom-domain-name-configure.md
-        - name: Adicionar usuários
+        - name: Adicione usuários
           href: users-add.md
         - name: Adicionar grupos
           href: groups-add.md
@@ -164,7 +164,7 @@
           href: mdm-authority-set.md
         - name: Gerenciar funções
           items:
-            - name: Controle de acesso baseado em função
+            - name: Controle de acesso baseado em funções
               href: role-based-access-control.md
             - name: Atribuir uma função a um usuário
               href: assign-role.md
@@ -182,7 +182,7 @@
         - name: Opções de registro
           href: enrollment-options.md
           items:
-            - name: Termos e condições
+            - name: Terms and conditions
               href: terms-and-conditions-create.md
             - name: Restrições
               href: enrollment-restrictions-set.md
@@ -703,18 +703,20 @@
           href: tenant-status.md
         - name: Solucionar problemas
           items:
+            - name: Ajudar os usuários a solucionar problemas
+              href: help-desk-operators.md
             - name: Solucionar problemas de registro
               items:
                 - name: Solucionar problemas de registro de dispositivo iOS
                   href: troubleshoot-ios-enrollment-errors.md
                 - name: Solucionar problemas de registro de dispositivos Windows
                   href: troubleshoot-windows-enrollment-errors.md
-            - name: Ajudar os usuários a solucionar problemas
-              href: help-desk-operators.md
             - name: Solucionar problemas de acesso ao recurso da empresa
               href: troubleshoot-company-resource-access-problems.md
             - name: Solucionar problemas de instalação do aplicativo
               href: troubleshoot-app-install.md
+            - name: Solucionar problemas de ações do dispositivo
+              href: troubleshoot-device-actions.md
             - name: Solucionar problemas do gerenciamento de aplicativos móveis
               href: troubleshoot-mam.md
             - name: Logs de auditoria de atividades do Intune
@@ -838,7 +840,7 @@
                   href: vpn-settings-windows-10.md
                 - name: Wi-Fi
                   href: wi-fi-settings-windows.md
-                - name: Educação
+                - name: Formação educacional
                   href: education-settings-windows.md
                 - name: Dispositivos multiusuário compartilhados
                   href: shared-user-device-settings-windows.md
