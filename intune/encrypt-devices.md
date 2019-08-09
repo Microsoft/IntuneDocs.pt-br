@@ -6,7 +6,7 @@ keywords: ''
 author: brenduns
 ms.author: brenduns
 manager: dougeby
-ms.date: 07/25/2019
+ms.date: 08/02/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.localizationpriority: high
@@ -16,12 +16,12 @@ ms.reviewer: annovich
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: 3f37b9b0bc16572cc86cbf79be616c7f395aa784
-ms.sourcegitcommit: 2bce5e43956b6a5244a518caa618f97f93b4f727
+ms.openlocfilehash: 09b5e59f4af534d4919574631568a7581bb3fba9
+ms.sourcegitcommit: 73fbecf7cee4fdfc37d3c30ea2007d2a9a6d2d12
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/24/2019
-ms.locfileid: "68467457"
+ms.lasthandoff: 08/03/2019
+ms.locfileid: "68756536"
 ---
 # <a name="use-device-encryption-with-intune"></a>Usar a Criptografia do Dispositivo com o Intune  
 
@@ -67,6 +67,13 @@ Para obter detalhes sobre a configuração do FileVault que pode ser gerenciada 
    Por exemplo: Para recuperar uma chave de recuperação perdida ou recentemente girada, entre no site do Portal da Empresa do Intune em qualquer dispositivo. No portal, acesse *Dispositivos* e selecione o dispositivo que tem o FileVault habilitado e, em seguida, selecione *Obter chave de recuperação*. A chave de recuperação atual será exibida.  
 
 6. Defina as configurações restantes do [FileVault](endpoint-protection-macos.md#filevault) de acordo com suas necessidades de negócios e, em seguida, escolha **OK**.  
+
+   > [!IMPORTANT]  
+   > Há um problema conhecido quando a configuração **Desabilitar prompt na saída** está definida como *Habilitar*. Quando definida como *Habilitar*, a configuração **Número de vezes permitido para bypass** deve ter um valor e não deve estar definida como *Não configurado*. Se estiver definida como *Não configurado*, o perfil falhará no dispositivo. Nesse cenário, o dispositivo informa que é um **Resumo de estado de perfil** como **Erro** sem mais detalhes.
+   > 
+   > Quando **Desabilitar prompt na saída** estiver definida como *Não configurado*, o **Número de vezes permitido para bypass** pode ser *Não configurado* ou ter um valor.  
+   > 
+   > Esse problema será resolvido em uma atualização futura. 
 
 7. Conclua a definição de configurações adicionais e, em seguida, salve o perfil.  
 

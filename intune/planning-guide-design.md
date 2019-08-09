@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 3870918378a2b3dd115d6449c3c83d37fe8e96c5
-ms.sourcegitcommit: 7c251948811b8b817e9fe590b77f23aed95b2d4e
+ms.openlocfilehash: 269ba2e951ccee2b0fdf2c4cd5a93a9d78aa6923
+ms.sourcegitcommit: e6edfbfd63dd7c2500ce1123205aa2af9a7e8e2e
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/15/2019
-ms.locfileid: "67884873"
+ms.lasthandoff: 08/05/2019
+ms.locfileid: "68783252"
 ---
 # <a name="create-a-design"></a>Criar um design
 
@@ -116,7 +116,7 @@ O Intune oferece duas opções de implantação: independente e híbrida. Autôn
 
 ## <a name="intune-tenant-location"></a>Local do locatário do Intune
 
-Caso sua organização tenha uma presença global, lembre-se de planejar o local em que o locatário reside ao assinar o serviço. O país é definido durante a inscrição para uma assinatura do Intune pela primeira vez e é mapeado para as regiões do mundo listadas abaixo:
+Caso sua organização tenha uma presença global, lembre-se de planejar o local em que o locatário reside ao assinar o serviço. O país/região é definido durante a inscrição para uma assinatura do Intune pela primeira vez e é mapeado para os países/regiões do mundo listadas abaixo:
 
 - América do Norte
 
@@ -125,7 +125,7 @@ Caso sua organização tenha uma presença global, lembre-se de planejar o local
 - Ásia e Pacífico
 
 >[!IMPORTANT]
-> Não é possível alterar o local do país e do locatário posteriormente.
+> Não é possível alterar o local do país/região e do locatário posteriormente.
 
 ## <a name="external-dependencies"></a>Dependências externas
 

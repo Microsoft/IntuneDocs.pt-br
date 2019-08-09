@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 7a369b3bde7967db04a76ae1794d7b8fb86c21e4
-ms.sourcegitcommit: bccfbf1e3bdc31382189fc4489d337d1a554e6a1
+ms.openlocfilehash: 4a1ac47fd512323ce809d4ee13c5e98f563ce51c
+ms.sourcegitcommit: e6edfbfd63dd7c2500ce1123205aa2af9a7e8e2e
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/03/2019
-ms.locfileid: "67548409"
+ms.lasthandoff: 08/05/2019
+ms.locfileid: "68783116"
 ---
 # <a name="develop-a-rollout-plan"></a>Desenvolver um plano de distribuição
 
@@ -55,7 +55,7 @@ Após um piloto bem-sucedido, você está pronto para iniciar uma distribuição
 
 - **Departamentos** <br/>Cada departamento pode ser uma fase de distribuição. Você pode direcionar todo o departamento de uma só vez. Nesse tipo de distribuição, os usuários de cada departamento tendem a usar o dispositivo móvel da mesma maneira e acessar os mesmos aplicativos. Os usuários provavelmente terão os mesmos tipos de políticas.
 
-- **Geografia** <br/>Nessa abordagem, você implanta em todos os usuários em uma geografia específica, seja o mesmo continente, país, região ou o edifício da mesma empresa. Esse tipo de implantação em fases permite focalizar a localização específica de usuários. Isso poderá permitir que você forneça mais de uma abordagem [diferenciada](#user-assisted-enrollment) devido ao número de localizações de implantação do Intune ser simultaneamente reduzido. Como há a probabilidade de diferentes departamentos ou casos de uso estarem no mesmo local, outros casos de uso podem ser implantados simultaneamente.
+- **Geografia** <br/>Nessa abordagem, você implanta em todos os usuários em uma geografia específica, seja o mesmo continente, país/região ou o edifício da mesma empresa. Esse tipo de implantação em fases permite focalizar a localização específica de usuários. Isso poderá permitir que você forneça mais de uma abordagem [diferenciada](#user-assisted-enrollment) devido ao número de localizações de implantação do Intune ser simultaneamente reduzido. Como há a probabilidade de diferentes departamentos ou casos de uso estarem no mesmo local, outros casos de uso podem ser implantados simultaneamente.
 
 - **Plataforma** <br/>Esse tipo de implantação consiste na implantação de plataformas semelhantes ao mesmo tempo. Um exemplo pode ser todos os dispositivos iOS no primeiro mês, seguido pelo Android e, depois, pelo Windows. Esse tipo de implantação em fases ajuda a simplificar o suporte da assistência técnica, porque a assistência técnica precisaria apenas dar suporte a uma única plataforma por vez.
 
@@ -93,16 +93,16 @@ Este é um exemplo atualizado do plano de distribuição do Intune acima para in
 
 | **Fase de distribuição** | **Julho** | **Agosto** | **Setembro** | **Outubro** |
 |:---:|:---:|:---:|:---:|:---:|
-| Piloto Limitado |  |  |  |  |                                                         
+| Piloto Limitado |  |  |  |  |
 | Autoatendimento | TI |  |  |  |
-| Piloto Expandido |  |  |  |  |                                                         
+| Piloto Expandido |  |  |  |  |
 | Autoatendimento | TI |  |  |  |
 | Diferenciado | Executivos de TI |  |  |  |
 | Fase 1 da distribuição de produção |  | Vendas, Marketing |  |  |
 | Autoatendimento |  | Vendas e marketing |  |  |
 | Fase 2 da distribuição de produção |  |  | Varejo |  |
-| Autoatendimento |  |  |  |  |
-| Fase 3 da distribuição de produção |  |  | Varejo |  |
+| Autoatendimento |  |  | Varejo |  |
+| Fase 3 da distribuição de produção |  |  |  | Executivos, RH, finanças |
 | Autoatendimento |  |  |  | RH, Finanças |
 | Diferenciado |  |  |  | Executivos |
 

@@ -5,9 +5,8 @@ keywords: ''
 author: ErikjeMS
 ms.author: erikje
 manager: dougeby
-ms.date: 12/06/2018
+ms.date: 08/05/2019
 ms.topic: conceptual
-ms.prod: ''
 ms.service: microsoft-intune
 ms.localizationpriority: high
 ms.technology: ''
@@ -17,35 +16,40 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 6ec97819e49bdb1564b8dd75b23302608492e183
-ms.sourcegitcommit: 25e6aa3bfce58ce8d9f8c054bc338cc3dff4a78b
+ms.openlocfilehash: 38b381fca17dec66303958ee04c018967ae0d999
+ms.sourcegitcommit: a6775522df49d17a4125ccb31be395f2343bdae8
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57397331"
+ms.lasthandoff: 08/06/2019
+ms.locfileid: "68833539"
 ---
-# <a name="licenses-that-include-intune"></a>Licenças que incluem o Intune
+# <a name="microsoft-intune-licensing"></a>Licenciamento do Microsoft Intune
+O Microsoft Intune está disponível para diferentes necessidades de clientes e tamanhos de organizações, desde uma experiência de gerenciamento simples de usar para escolas e pequenas empresas, até uma funcionalidade mais avançada exigida por clientes corporativos. A maioria das licenças que incluem o Microsoft Intune também concede os direitos de uso do System Center Configuration Manager, enquanto a assinatura permanecer ativa. 
 
-[!INCLUDE [both-portals](./includes/note-for-both-portals.md)]
+## <a name="microsoft-intune"></a>Microsoft Intune
+O Intune está incluído nas seguintes licenças:
 
-A tabela a seguir mostra qual versão do Intune está disponível em cada licença:
+- Microsoft 365 E5
+- Microsoft 365 E3
+- Enterprise Mobility + Security E5
+- Enterprise Mobility + Security E3
+- Microsoft 365 Business
+- Microsoft 365 F1
 
-| Licença | Versão do Intune incluída | Comparação de preços e recursos |
-|-----------------------------------------------------------------------|-------------------------------------------------------------|---|
-| Intune | Intune | [Saiba mais](https://www.microsoft.com/en-us/cloud-platform/microsoft-intune-pricing) |
-| Enterprise Mobility + Security E3 | Intune | [Saiba mais](https://www.microsoft.com/en-us/cloud-platform/microsoft-intune-pricing) |
-| Enterprise Mobility + Security E5 | Intune | [Saiba mais](https://www.microsoft.com/en-us/cloud-platform/microsoft-intune-pricing) |
-| Microsoft 365 Education A1 | Intune educacional | [Saiba mais](https://www.microsoft.com/en-us/education/buy-license/microsoft365/default.aspx#) |
-| Microsoft 365 Education A3 | Intune educacional | [Saiba mais](https://www.microsoft.com/en-us/education/buy-license/microsoft365/default.aspx#) |
-| Microsoft 365 Education A5 | Intune educacional | [Saiba mais](https://www.microsoft.com/en-us/education/buy-license/microsoft365/default.aspx#) |
-| Microsoft 365 E3 | Intune | [Saiba mais](https://www.microsoft.com/en-US/microsoft-365/enterprise) |
-| Microsoft 365 E5 | Intune | [Saiba mais](https://www.microsoft.com/en-US/microsoft-365/enterprise) |
-| Microsoft 365 F1 | Intune | [Saiba mais](https://www.microsoft.com/en-us/microsoft-365/enterprise/firstline) |
-| Microsoft 365 Business | Intune | [Saiba mais](https://www.microsoft.com/en-us/microsoft-365/business) |
 
-O Intune não está incluído em licenças que não estão nesta lista.
 
-Uma licença será necessária se um usuário se beneficiar direta ou indiretamente de qualquer recurso coberto por ela.
+## <a name="microsoft-intune-for-education"></a>Microsoft Intune para Educação
+O Intune para Educação está incluído nas seguintes licenças:
 
-Para atribuir uma licença a um usuário, consulte o [artigo Atribuir licenças do Intune a suas contas de usuário](licenses-assign.md).
+- Microsoft 365 Education A5
+- Microsoft 365 Education A3
 
+## <a name="additional-information"></a>Informações adicionais
+- Uma assinatura de dispositivo e usuário do Microsoft Intune está disponível como autônomo, além dos pacotes listados acima.
+- Uma assinatura somente de dispositivo do Microsoft Intune está disponível para cenários do tipo quiosque em que nenhum recurso de afinidade de usuário é usado.
+- A licença apropriada do Microsoft Intune será necessária se um usuário ou dispositivo se beneficiar direta ou indiretamente do serviço do Microsoft Intune, incluindo o acesso ao serviço do Microsoft Intune por meio da [API da Microsoft](https://docs.microsoft.com/legal/microsoft-apis/terms-of-use).
+- O Intune não está incluído em licenças que não estão nas tabelas anteriores.
+
+Visite a página de [Licenciamento da Microsoft](https://www.microsoft.com/licensing/default) para obter as informações mais recentes sobre as edições de produto, atualizações de licenciamento de produtos, planos de licenciamento por volume e outras informações relacionadas aos seus casos de uso específicos.  
+
+Para saber mais sobre como as licenças de usuário e dispositivo afetam o acesso aos serviços, bem como atribuir uma licença a um usuário, confira o [artigo Atribuir licenças do Intune a suas contas de usuários](licenses-assign.md).

@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: f576edb5dd0bd4baa960adb3519fa379397fb94c
-ms.sourcegitcommit: cd03ea890f563b48339a8c8bb50386b8852ba894
+ms.openlocfilehash: 128856cf4e81f1ac9fbc93cef1160662e2b5cef0
+ms.sourcegitcommit: 293dfbea2b4756bb9b7df1705a2b5f752dfaa807
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/19/2019
-ms.locfileid: "68329034"
+ms.lasthandoff: 08/01/2019
+ms.locfileid: "68700957"
 ---
 # <a name="android-app-protection-policy-settings-in-microsoft-intune"></a>Configurações da política de proteção de aplicativo Android no Microsoft Intune
 Este artigo descreve as configurações de política de proteção de aplicativo para dispositivos Android. As configurações de política descritas podem ser [configuradas](app-protection-policies.md) para uma política de proteção de aplicativo na folha **Configurações** no Portal do Azure.
@@ -93,6 +93,7 @@ Há três categorias de configurações de política: configurações de proteç
   | com.skype.raider | Skype | O aplicativo Skype é permitido apenas para determinadas ações que resultam em uma chamada telefônica. |
   | com.android.providers.media | Provedor de conteúdo de mídia do Android | O provedor de conteúdo de mídia é permitido somente para a ação de seleção de toque. |
   | com.google.android.gms; com.google.android.gsf | Pacotes do Google Play Services | Esses pacotes são permitidos para ações do Google Cloud Messaging, como notificações por push. |
+  | com.google.android.apps.maps | Google Maps | Os endereços são permitidos para navegação |
 
 Para obter mais informações, consulte [Exceções à política transferência de dados para aplicativos](app-protection-policies-exception.md).
 

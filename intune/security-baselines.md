@@ -15,12 +15,12 @@ ms.reviewer: joglocke
 ms.suite: ems
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 252a42b9c8ef6612301bc913e187295be47d27bb
-ms.sourcegitcommit: 99b74d7849fbfc8f5cf99cba33e858eeb9f537aa
+ms.openlocfilehash: c378fd3b208396f9d2f83b7bd56f50dbf7a7e3f7
+ms.sourcegitcommit: 864fdf995c2b41f104a98a7e2665088c2864774f
 ms.translationtype: HT
 ms.contentlocale: pt-BR
 ms.lasthandoff: 07/31/2019
-ms.locfileid: "68671010"
+ms.locfileid: "68679962"
 ---
 # <a name="use-security-baselines-to-configure-windows-10-devices-in-intune"></a>Usar linhas de base de segurança para configurar dispositivos com Windows 10 no Intune
 
@@ -67,12 +67,12 @@ Os perfis da linha de base de segurança oferecem suporte a uma [alteração da 
 As instâncias de linhas de base de segurança a seguir estão disponíveis para uso com o Intune. Use os links para visualizar as configurações da instância mais recente de cada linha de base. 
 
 - **Linha de Base de Segurança do MDM**
-  - [Linha de base de segurança do MDM para a primavera de 2019 (19H1)](security-baseline-settings-mdm.md)
+  - [Linha de Base de Segurança do MDM para maio de 2019](security-baseline-settings-mdm.md)
   - [Versão prévia: Linha de base de segurança do MDM para outubro de 2018](security-baseline-settings-mdm-archive.md)
 
-- **Linha de base do Microsoft Defender ATP**  
+- **Linha de base da ATP do Microsoft Defender**  
   *Para usar essa linha de base, seu ambiente precisa atender aos pré-requisitos para o uso da [Proteção Avançada contra Ameaças do Microsoft Defender](advanced-threat-protection.md#prerequisites)* .
-  - [Versão prévia: Linha de base do Microsoft Defender ATP](security-baseline-settings-defender-atp.md)  
+  - [Versão prévia: Linha de base da ATP do Microsoft Defender](security-baseline-settings-defender-atp.md)  
 
   > [!NOTE]
   > A linha de base de segurança do Microsoft Defender ATP foi otimizada para dispositivos físicos e, atualmente, não é recomendada para uso em VMs (máquinas virtuais) ou pontos de extremidade VDI. Algumas configurações de linha de base podem afetar as sessões interativas remotas em ambientes virtualizados.  Para obter mais informações, confira [Aumentar a conformidade com a linha de base de segurança do Microsoft Defender ATP](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/configure-machines-security-baseline) na documentação do Windows.
@@ -203,7 +203,7 @@ Estritamente falando, não. A equipe de segurança da Microsoft consulta organiz
 ## <a name="next-steps"></a>Próximas etapas
 - Confira as configurações nas versões mais recentes das linhas de base disponíveis:  
   - [Linha de Base de Segurança do MDM](security-baseline-settings-mdm.md)  
-  - [Linha de base do Microsoft Defender ATP](security-baseline-settings-defender-atp.md)  
+  - [Linha de base da ATP do Microsoft Defender](security-baseline-settings-defender-atp.md)  
 
 - Verifique o status e monitore a [linha de base e o perfil](security-baselines-monitor.md)
 
