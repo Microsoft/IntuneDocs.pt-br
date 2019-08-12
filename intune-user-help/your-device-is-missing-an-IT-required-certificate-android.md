@@ -18,16 +18,16 @@ ms.reviewer: arnab
 ms.suite: ems
 ms.custom: intune-enduser
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: d44af8f40243596bda58d610b369db6f54be6d1e
-ms.sourcegitcommit: 3baa9965095bb874d9b8c7a3cbb4aa925ed52cae
+ms.openlocfilehash: 16c6708fb730c459f41fec573a939bfb4fb5ddda
+ms.sourcegitcommit: 549352bdea93cc2809e3e0010bfcc10bd44dc728
 ms.translationtype: MTE75
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/30/2019
-ms.locfileid: "68625126"
+ms.lasthandoff: 08/09/2019
+ms.locfileid: "68862132"
 ---
 # <a name="install-missing-certificate-required-by-your-organization"></a>Instalar o certificado ausente exigido pela sua organização  
 
-Se o dispositivo não estiver registrado no Intune e não tiver um certificado específico exigido pelo suporte de sua empresa, você não conseguirá entrar no aplicativo Portal da Empresa. Quando você tentar entrar, verá a seguinte mensagem:
+Se o dispositivo não estiver registrado no Intune e não tiver um certificado necessário, você não conseguirá entrar no aplicativo Portal da Empresa. Quando você tentar entrar, verá a seguinte mensagem:
 
 ![screenshot-error-message-about-missing-certificate](./media/andr-cert_install-1-cert_missing.png)
 
@@ -43,8 +43,8 @@ Conclua estas etapas para habilitar o acesso ao navegador. Depois de habilitar o
 
 1. No aplicativo Portal da Empresa, vá para o canto direito e selecione o menu.  
 2. Selecione **Configurações**.  
-3. Ao lado de **habilitar o acesso ao navegador** , selecione **habilitar**.  
-4. Na tela administrador do dispositivo, selecione **Ativar**. 
+3. Ao lado **de habilitar o** acesso **ao**navegador, selecione Habilitar.  
+4. Na tela administrador do dispositivo, selecione **ativar**. 
 
 ## <a name="identify-and-download-the-missing-certificate-through-web-search"></a>Identificar e baixar o certificado ausente por meio da pesquisa na Web
 Conclua estas etapas para identificar e instalar manualmente o certificado em seu dispositivo.  
@@ -82,3 +82,7 @@ Conclua estas etapas para identificar e instalar manualmente o certificado em se
 7. Abra o aplicativo Portal da Empresa. Agora, você poderá entrar no aplicativo Portal da Empresa. Se precisar de ajuda, entre em contato com o suporte de sua empresa.
 
 Se você vir a mesma mensagem de “certificado faltando” mostrada acima e já tiver seguido o procedimento, provavelmente ainda há outro certificado que o suporte de sua empresa precisará ajudá-lo a instalar. Contate o suporte de sua empresa para obter ajuda usando as informações de contato disponíveis no [site do Portal da Empresa](https://go.microsoft.com/fwlink/?linkid=2010980).
+
+## <a name="next-steps"></a>Próximas etapas  
+
+Ainda precisa de ajuda? Contate o suporte da sua empresa. Para obter as informações de contato, consulte o [site do Portal da Empresa](https://go.microsoft.com/fwlink/?linkid=2010980).  
