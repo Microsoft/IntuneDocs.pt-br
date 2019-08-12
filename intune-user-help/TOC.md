@@ -39,8 +39,8 @@
 ### Perguntas do sistema operacional
 #### [Atualizar seu dispositivo](you-need-to-update-your-android-device.md)
 #### [Versão sem suporte](your-android-version-isnt-yet-supported.md)
-#### [O dispositivo tem raiz e você não pode se conectar](your-device-is-rooted-and-you-cant-connect-android.md)
-#### [Certificado obrigatório ausente](your-device-is-missing-a-required-certificate-landing-android.md)
+#### [Dispositivo com root, não é possível conectar](your-device-is-rooted-and-you-cant-connect-android.md)
+#### [Certificado obrigatório ausente](your-device-is-missing-an-IT-required-certificate-android.md)
 #### [Desativar fontes desconhecidas](you-need-to-turn-off-unknown-sources-android.md)
 #### [Desativar a depuração USB](you-need-to-turn-off-usb-debugging-android.md)
 #### [Ativar a verificação de ameaças de segurança](you-need-to-turn-on-scanning-for-security-threats-android.md)
