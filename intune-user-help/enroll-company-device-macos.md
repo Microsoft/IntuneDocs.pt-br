@@ -18,12 +18,12 @@ ms.reviewer: japoehlm
 ms.suite: ems
 ms.custom: intune-enduser
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 3941c41b24d458d14acb1361bc463af657a0ca67
-ms.sourcegitcommit: 84c79ceea27f7411528defc5ee8ba35ae2bf473c
+ms.openlocfilehash: 273342f7181bcc577a44126404d145ca9b5bff3e
+ms.sourcegitcommit: e6edfbfd63dd7c2500ce1123205aa2af9a7e8e2e
 ms.translationtype: MTE75
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/02/2019
-ms.locfileid: "67511917"
+ms.lasthandoff: 08/05/2019
+ms.locfileid: "68783029"
 ---
 # <a name="enroll-your-organization-provided-macos-device-in-management"></a>Registrar no gerenciamento o dispositivo macOS fornecido pela organização
 
@@ -40,10 +40,10 @@ Para começar a configuração de gerenciamento, ligue seu dispositivo e entre c
 Conclua as etapas a seguir para registrar seu dispositivo macOS no gerenciamento. Se você estiver usando seu próprio dispositivo e não um fornecido pela empresa, siga as etapas para [dispositivos pessoais e do tipo “traga seu próprio dispositivo”](enroll-your-device-in-intune-macos-cp.md).  
 
 1. Ligue seu dispositivo macOS. 
-2. Escolha seu país e clique em **Continuar**.  
+2. Escolha seu país/região e clique em **Continuar**.  
 
    ![Captura da tela de Boas-vindas do assistente de instalação de dispositivo macOS, mostrando uma lista de idiomas dentre os quais escolher.](./media/macos-dep-welcome-1808.png)   
-3. Escolha um layout de teclado. A lista mostra uma ou mais opções com base no seu país selecionado. Para ver todas as opções de layout, independentemente do seu país selecionado, clique em **Mostrar Tudo**. Quando terminar, clique em **Continuar**.  
+3. Escolha um layout de teclado. A lista mostra uma ou mais opções com base no país/região selecionado. Para ver todas as opções de layout, independentemente do país/região selecionado, clique em **Mostrar Tudo**. Quando terminar, clique em **Continuar**.  
 
    ![Captura de tela da tela de Layout do Teclado do Assistente de Instalação de dispositivo macOS, mostrando uma lista de idiomas do teclado dentre os quais selecionar, uma opção de Mostrar Tudo desmarcada e um botão Voltar e Continuar.](./media/macos-dep-keyboard-1808.png)  
 4. Selecione sua rede Wi-Fi. Você deve ter uma conexão de Internet para continuar a instalação. Se sua rede não for exibida ou se você precisar se conectar usando uma rede com fio, clique em **Outras Opções de Rede**. Quando terminar, clique em **Continuar**.  

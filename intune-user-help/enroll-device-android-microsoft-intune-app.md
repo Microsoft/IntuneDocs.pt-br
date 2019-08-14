@@ -5,7 +5,7 @@ keywords: ''
 author: lenewsad
 ms.author: lanewsad
 manager: dougeby
-ms.date: 04/19/2019
+ms.date: 08/07/2019
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -18,12 +18,12 @@ ms.reviewer: esmich
 ms.suite: ems
 ms.custom: intune-enduser
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: b23323766e91e31c48aec6a51dfae971c3a333e8
-ms.sourcegitcommit: 1dc9d4e1d906fab3fc46b291c67545cfa2231660
+ms.openlocfilehash: ef7ec650c65206eeab69d8f666dc4fb39052bbdb
+ms.sourcegitcommit: 549352bdea93cc2809e3e0010bfcc10bd44dc728
 ms.translationtype: MTE75
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/10/2019
-ms.locfileid: "67735751"
+ms.lasthandoff: 08/09/2019
+ms.locfileid: "68862338"
 ---
 # <a name="enroll-your-corporate-device-with-the-microsoft-intune-app"></a>Registrar dispositivos corporativos com aplicativos do Microsoft Intune
 
@@ -50,9 +50,9 @@ Conclua estas etapas para configurar e registrar seu dispositivo.
 
      Se você tiver sido instruído a usar outro método, vá para a etapa 3.    
 
-1. Conecte-se ao Wi-Fi e toque em **AVANÇAR**. Siga a etapa que corresponde ao seu método de registro. 
+3. Conecte-se ao Wi-Fi e toque em **AVANÇAR**. Siga a etapa que corresponde ao seu método de registro. 
 
-    * Token: quando você acessar a tela de conexão do Google, conclua as etapas em [Registro de Token](#token-enrollment).    
+    * Token: quando você acessar a tela de conexão do Google, conclua as etapas em [Registro de Token](#token-enrollment).  
     * Registro sem toque do Google: depois de se conectar ao Wi-Fi, seu dispositivo será reconhecido pela sua organização. Vá para a etapa 4 e siga os prompts na tela até que a configuração seja concluída.    
  
        ![Imagem de exemplo da tela dos termos do Google que você verá se estiver usando o registro sem toque do Google, realçando o botão Aceitar e Continuar.](./media/google-zero-touch-intune-app-01.png)   
@@ -78,21 +78,19 @@ Conclua estas etapas para configurar e registrar seu dispositivo.
 
    ![Imagem de exemplo da tela Configurar seu telefone de trabalho, realçando o botão Instalar.](./media/fully-managed-intune-app-11.png)   
 
-10. Quando você receber a mensagem de que o dispositivo está pronto, toque **CONCLUIR**. 
+10. Toque **em** iniciar para abrir o aplicativo Microsoft Intune e registrar seu dispositivo. 
 
-11. Acesse seus aplicativos e abra o aplicativo do Microsoft Intune. Selecione **ENTRAR**. 
+    ![Imagem de exemplo da tela Configurar seu telefone de trabalho, realçando o botão Iniciar.](./media/fully-managed-intune-app-17.png)   
 
-12. Na tela **Configurar acesso**, você verá uma lista de tarefas pendentes. Toque em **CONTINUAR**.  
+11. Toque  **em entrar** e, **em seguida**, toque em avançar para iniciar o registro. Quando você receber a mensagem de que o registro está concluído, toque em **CONCLUÍDO**.  
 
-       ![Imagem de exemplo do aplicativo do Microsoft Intune, tela Configurar acesso, mostrando as tarefas pendentes.](./media/fully-managed-intune-app-14.png)   
+    ![Imagem de exemplo da configuração de acesso, registrar a tela do dispositivo, realçando o botão concluído.](./media/fully-managed-intune-app-19.png)   
 
-13. Quando o registro do dispositivo for concluído, toque **CONTINUAR**. O Microsoft Intune pode solicitar que você atualize as configurações de dispositivos adicionais.   
+10. Quando você vir a mensagem de que o dispositivo está pronto, toque em **CONCLUÍDO**.  
 
-       ![Imagem de exemplo do aplicativo do Microsoft Intune, tela Atualizar configurações do dispositivo.](./media/fully-managed-intune-app-15-2.png)   
+    ![Imagem de exemplo da tela Configurar seu telefone de trabalho, realçando o botão Concluído.](./media/fully-managed-intune-app-18.png)   
 
-14. A instalação estará concluída quando todos os itens na lista mostrarem um círculo verde. Agora você pode acessar recursos da empresa.  
-
-       ![Imagem de exemplo do aplicativo do Microsoft Intune, tela Configurar acesso, mostrando as tarefas concluídas.](./media/fully-managed-intune-app-16.png)   
+Se você tiver problemas para acessar os recursos da sua organização, talvez seja necessário atualizar configurações adicionais em seu dispositivo. Entre no aplicativo Microsoft Intune para verificar se há atualizações necessárias.   
 
 
 ## <a name="qr-code-enrollment"></a>Registro de código QR  
@@ -118,11 +116,7 @@ Nesta seção, você digitará o token fornecido da empresa. Quando você termin
 
 3. Na tela **Registrar este dispositivo**, selecione **Avançar**.  
 
-   ![Imagem de exemplo da tela Registrar este dispositivo. Mostra a ilustração de um código QR, realça o botão Avançar.](./media/token-intune-app-02.png)  
-
-4. Selecione **Inserir código**.
-
-   ![Captura de tela de exemplo de um leitor de código QR ativo. Realça o botão Inserir código.](./media/token-intune-app-03.png)  
+4. Selecione **Inserir código**.  
 
 5. Na tela **Ler ou inserir código**, digite o código que sua organização forneceu.  Clique em **Avançar**.  
 
