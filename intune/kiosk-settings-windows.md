@@ -5,7 +5,7 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 03/11/2019
+ms.date: 08/15/2019
 ms.topic: reference
 ms.service: microsoft-intune
 ms.localizationpriority: medium
@@ -14,12 +14,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure; seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: a80e4cf4e68235ef9e88943a8b62121e0cfb6623
-ms.sourcegitcommit: 916fed64f3d173498a2905c7ed8d2d6416e34061
+ms.openlocfilehash: 6fb1111a7f660e8c59f45fb1893364dcadd34dca
+ms.sourcegitcommit: 6a8de7bb4870ea19aa08db1f188ea7b5e8a387dd
 ms.translationtype: MTE75
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/23/2019
-ms.locfileid: "66046967"
+ms.lasthandoff: 08/15/2019
+ms.locfileid: "69487747"
 ---
 # <a name="windows-10-and-later-device-settings-to-run-as-a-kiosk-in-intune"></a>Configurações de dispositivos com Windows 10 (e posterior) para execução como um quiosque no Intune
 
@@ -66,9 +66,7 @@ Executa apenas um aplicativo no dispositivo.
     > [!NOTE]
     > Essa configuração habilita o navegador Microsoft Edge no dispositivo. Para definir configurações específicas do Microsoft Edge, crie um perfil de configuração do dispositivo (**Configuração do Dispositivo** > **Perfis** > **Criar perfil** > **Windows 10** para plataforma > **Restrições de Dispositivo** >  **Navegador Microsoft Edge**). O [Navegador Microsoft Edge](device-restrictions-windows-10.md#microsoft-edge-browser) lista e descreve as configurações disponíveis.
 
-    Selecione **OK** para salvar suas alterações.
-
-  - **Adicionar navegador de quiosque**: selecione **Configurações do navegador de quiosque**. Essas configurações controlam um aplicativo de navegador da Web no quiosque. Lembre-se de obter o [Aplicativo de navegador de quiosque](https://businessstore.microsoft.com/store/details/kiosk-browser/9NGB5S5XG2KP) da Loja, adicioná-lo ao Intune como um [Aplicativo Cliente](apps-add.md) e, em seguida, atribuir o aplicativo aos dispositivos de quiosque.
+  - **Adicionar navegador de quiosque**: selecione **Configurações do navegador de quiosque**. Essas configurações controlam um aplicativo de navegador da Web no quiosque. Verifique se você obteve o [aplicativo de navegador de quiosque](https://businessstore.microsoft.com/store/details/kiosk-browser/9NGB5S5XG2KP) da loja, adicione-o ao Intune como um [aplicativo cliente](apps-add.md). Em seguida, atribua o aplicativo aos dispositivos de quiosque.
 
     Insira as seguintes configurações:
 
@@ -91,15 +89,14 @@ Executa apenas um aplicativo no dispositivo.
       `http://bing.com`  
       `https://bing.com`  
       `http://contoso.com/*`  
-      `https://contoso.com/*`  
+      `https://contoso.com/*`
 
-    Selecione **OK** para salvar suas alterações.
+    > [!NOTE]
+    > Os quiosques do Windows 10 com o logon automático habilitado usando o navegador de quiosque da Microsoft devem usar uma licença offline da Microsoft Store para empresas. Esse requisito é porque o logon automático usa uma conta de usuário local sem credenciais de Azure Active Directory (AD). Portanto, as licenças online não podem ser avaliadas. Para obter mais informações, confira [Distribuir aplicativos offline](https://docs.microsoft.com/microsoft-store/distribute-offline-apps).
 
   - **Adicionar aplicativo da Store**: selecione **Adicionar um aplicativo da Store** e escolha um aplicativo na lista.
 
     Não tem aplicativos listados? Adicione alguns usando as etapas em [Aplicativos cliente](apps-add.md).
-
-  Selecione **OK** para salvar suas alterações.
 
 ## <a name="multi-app-kiosks"></a>Quiosques de vários aplicativos
 
@@ -132,8 +129,6 @@ Os aplicativos nesse modo estão disponíveis no menu Iniciar. Esses aplicativos
       > [!NOTE]
       > Essa configuração habilita o navegador Microsoft Edge no dispositivo. Para definir configurações específicas do Microsoft Edge, crie um perfil de configuração do dispositivo (**Configuração do Dispositivo** > **Perfis** > **Criar perfil** > **Windows 10** para plataforma > **Restrições de Dispositivo** >  **Navegador Microsoft Edge**). O [Navegador Microsoft Edge](device-restrictions-windows-10.md#microsoft-edge-browser) lista e descreve as configurações disponíveis.
 
-      Selecione **OK** para salvar suas alterações.
-
     - **Adicionar navegador do quiosque**: essas configurações controlam um aplicativo de navegador da Web no quiosque. Certifique-se de implantar um aplicativo de navegador da Web para os dispositivos de quiosque usando [Aplicativos cliente](apps-add.md).
 
       Insira as seguintes configurações:
@@ -152,13 +147,12 @@ Os aplicativos nesse modo estão disponíveis no menu Iniciar. Esses aplicativos
 
         Para permitir sites específicos, faça o upload de um arquivo .csv que inclua uma lista dos sites permitidos. Se você não adicionar um arquivo .csv, todos os sites serão permitidos.
 
-      Selecione **OK** para salvar suas alterações.
+      > [!NOTE]
+      > Os quiosques do Windows 10 com o logon automático habilitado usando o navegador de quiosque da Microsoft devem usar uma licença offline da Microsoft Store para empresas. Esse requisito é porque o logon automático usa uma conta de usuário local sem credenciais de Azure Active Directory (AD). Portanto, as licenças online não podem ser avaliadas. Para obter mais informações, confira [Distribuir aplicativos offline](https://docs.microsoft.com/microsoft-store/distribute-offline-apps).
 
   - **Aplicativos**
 
     - **Adicionar aplicativo da Loja**: adicione um aplicativo da Microsoft Store para Empresas. Se você não tiver qualquer aplicativo listado, poderá adquirir aplicativos e [adicioná-los ao Intune](store-apps-windows.md). Por exemplo, você pode adicionar o navegador de quiosque, o Excel, o OneNote e muito mais.
-
-      Selecione **OK** para salvar suas alterações.
 
     - **Adicionar aplicativo Win32**: um aplicativo Win32 é um aplicativo de área de trabalho tradicional, como o Visual Studio Code ou o Google Chrome. Insira as seguintes propriedades:
 
@@ -166,14 +160,10 @@ Os aplicativos nesse modo estão disponíveis no menu Iniciar. Esses aplicativos
       - **Caminho local**: necessário. Insira o caminho para o executável, como `C:\Program Files (x86)\Microsoft VS Code\Code.exe` ou `C:\Program Files (x86)\Google\Chrome\Application\chrome.exe`.
       - **AUMID (ID do modelo de usuário do aplicativo)** : insira a AUMID (ID do modelo de usuário do aplicativo) do aplicativo Win32. Essa configuração determina o layout inicial do bloco na área de trabalho. Para obter essa ID, consulte [Get-StartApps](https://docs.microsoft.com/powershell/module/startlayout/get-startapps?view=win10-ps).
 
-      Selecione **OK** para salvar suas alterações.
-
     - **Adicionar por AUMID**: use esta opção para adicionar aplicativos básicos do Windows, como o Bloco de Notas ou a Calculadora. Insira as seguintes propriedades:
 
       - **Nome do aplicativo**: necessário. Insira um nome para o aplicativo.
       - **Modelo de usuário do aplicativo AUMID (ID)** : necessário. Insira a ID do modelo do usuário do aplicativo (AUMID) do aplicativo do Windows. Para obter a ID, confira [Encontrar a ID do modelo de usuário de um aplicativo instalado](https://docs.microsoft.com/windows-hardware/customize/enterprise/find-the-application-user-model-id-of-an-installed-app).
-
-      Selecione **OK** para salvar suas alterações.
 
     - **AutoLaunch**: opcional. Escolha um aplicativo para AutoLaunch quando o usuário entra. É possível definir AutoLaunch apenas para um único aplicativo.
     - **Tamanho do bloco**: necessário. Escolha um tamanho de bloco de aplicativo: Pequeno, Médio, Largo ou Grande.
@@ -186,8 +176,6 @@ Os aplicativos nesse modo estão disponíveis no menu Iniciar. Esses aplicativos
 - **Barra de tarefas do Windows**: escolha **Exibir** ou **Ocultar** a barra de tarefas. Por padrão, a barra de tarefas não é exibida. Ícones, como o ícone de Wi-Fi, são mostrados, mas as configurações não podem ser alteradas pelos usuários finais.
 
 - **Permitir Acesso à Pasta de Downloads**: escolha **Sim** para permitir que os usuários acessem a pasta Downloads no Windows Explorer. Por padrão, o acesso à pasta de Downloads está desabilitado. Esse recurso é comumente usado para os usuários finais para acessar itens baixados de um navegador.
-
-Selecione **OK** para salvar suas alterações.
 
 ## <a name="next-steps"></a>Próximas etapas
 

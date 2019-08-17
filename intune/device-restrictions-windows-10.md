@@ -5,7 +5,7 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 06/18/2019
+ms.date: 08/13/2019
 ms.topic: reference
 ms.service: microsoft-intune
 ms.localizationpriority: medium
@@ -14,12 +14,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure; seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: fe155c5b2a18b1931894b05694b53bbc2c497e0b
-ms.sourcegitcommit: 116ef72b9da4d114782d4b8dd9f57556c9b01511
+ms.openlocfilehash: 7c75930f3eee35146afbc5714135ececbe7c9643
+ms.sourcegitcommit: b78793ccbef2a644a759ca3110ea73e7ed6ceb8f
 ms.translationtype: MTE75
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/01/2019
-ms.locfileid: "67494476"
+ms.lasthandoff: 08/16/2019
+ms.locfileid: "69550164"
 ---
 # <a name="windows-10-and-newer-device-settings-to-allow-or-restrict-features-using-intune"></a>Configurações de dispositivo Windows 10 (e mais recente) para permitir ou restringir recursos usando o Intune
 
@@ -57,15 +57,15 @@ Essas configurações usam o [CSP da política ApplicationManagement](https://do
 - **Instalar dados de aplicativo no volume do sistema**: **Bloquear** impede que os aplicativos armazenem dados no volume do sistema do dispositivo. **Não configurado** (padrão) permite que os aplicativos armazenem dados no volume de disco do sistema.
 - **Instalar aplicativos na unidade do sistema**: **Bloquear** impede que os aplicativos sejam instalados na unidade do sistema do dispositivo. **Não configurado** (padrão) permite que os aplicativos sejam instalados no volume de disco do sistema.
 - **DVR de jogos** (somente desktop): **Bloquear** desabilita a gravação e a difusão de Jogos do Windows. **Não configurado** (padrão) permite a gravação e a difusão de jogos.
-- **Apenas aplicativos da loja**: essa configuração determina a experiência do usuário quando os usuários instalarem aplicativos de locais que não sejam a Microsoft Store. Suas opções:
+- **Aplicativos somente da loja**: essa configuração determina a experiência do usuário quando os usuários instalam aplicativos de locais diferentes do Microsoft Store. Suas opções:
 
-  - **Não configurado** (padrão): permite aos usuários finais instalar aplicativos de locais que não sejam a Microsoft Store, incluindo aplicativos definidos em outras configurações de política.  
-  - **Em qualquer lugar**: desativa as recomendações do aplicativo, e permite que os usuários instalem aplicativos de qualquer local.  
-  - **Store apenas**: força os usuários finais instalarem somente aplicativos da Microsoft Store.
-  - **Recomendações**: ao instalar um aplicativo da web que está disponível em que a Microsoft Store, os usuários veem uma mensagem recomendando a eles baixarão-lo do repositório.  
-  - **Prefira Store**: avisa os usuários quando eles instalam aplicativos de locais que não sejam a Microsoft Store.
+  - **Não configurado** (padrão): permite que os usuários finais instalem aplicativos de locais diferentes do Microsoft Store, incluindo aplicativos definidos em outras configurações de política.  
+  - **Em qualquer lugar**: desativa as recomendações do aplicativo e permite que os usuários instalem aplicativos de qualquer local.  
+  - **Somente armazenar**: força os usuários finais a instalar somente aplicativos do Microsoft Store.
+  - **Recomendações**: ao instalar um aplicativo da Web que está disponível no Microsoft Store, os usuários veem uma mensagem recomendando que eles o baixem da loja.  
+  - **Preferir armazenamento**: avisa os usuários quando eles instalam aplicativos de locais diferentes do Microsoft Store.
 
-  [SmartScreen/EnableAppInstallControl CSP](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-smartscreen#smartscreen-enableappinstallcontrol)
+  [CSP do SmartScreen/EnableAppInstallControl](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-smartscreen#smartscreen-enableappinstallcontrol)
 
 - **Forçar a reinicialização de aplicativos em caso de falha de atualização**: quando um aplicativo está em uso, não pode ser atualizado. Use essa configuração para forçar um aplicativo a reiniciar. **Não configurado** (padrão) não força a reinicialização dos aplicativos. **Exigir** permite que os administradores forcem a reinicialização em uma data e hora específicas ou em um agendamento recorrente. Quando definido como **Exigir**, também insira:
 
@@ -429,7 +429,7 @@ Selecione **OK** para salvar suas alterações.
 
 Essas configurações usam o [CSP da política de DeviceLock](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-devicelock), que também lista as edições compatíveis do Windows.
 
-- **Senha**: **Exigir** que o usuário final insira uma senha para acessar o dispositivo. **Não configurado** (padrão) permite o acesso ao dispositivo sem uma senha. Aplica-se a somente para contas locais. As senhas de conta do domínio permaneçam configuradas pelo Active Directory (AD) e o Azure AD.
+- **Senha**: **Exigir** que o usuário final insira uma senha para acessar o dispositivo. **Não configurado** (padrão) permite o acesso ao dispositivo sem uma senha. Aplica-se somente a contas locais. As senhas de conta de domínio permanecem configuradas pelo Active Directory (AD) e pelo Azure AD.
 
   - **Tipo de senha necessária**: escolha o tipo de senha. Suas opções:
     - **Não configurado**: a senha pode incluir letras e números.
@@ -440,7 +440,7 @@ Essas configurações usam o [CSP da política de DeviceLock](https://docs.micro
     > [!IMPORTANT]
     > Quando o requisito de senha é alterado em uma área de trabalho do Windows, os usuários são afetados na próxima vez que fizerem logon, como quando o dispositivo passa de ocioso para ativo. Os usuários com senhas que atendam ao requisito ainda serão solicitados a alterar suas senhas.
     
-  - **Número de falhas de conexão antes de apagar o dispositivo**: insira o número de falhas de autenticação repetidas permitidas antes que o dispositivo possa ser apagado, até 11. O número válido inserido dependerá da edição. [CSP DeviceLock/MaxDevicePasswordFailedAttempts](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-devicelock#devicelock-maxdevicepasswordfailedattempts) lista os valores com suporte. `0` (zero) pode desabilitar a funcionalidade de apagamento do dispositivo.
+  - **Número de falhas de conexão antes de apagar o dispositivo**: insira o número de falhas de autenticação repetidas permitidas antes que o dispositivo possa ser apagado, até 11. O número válido que você inserir dependerá da edição. O [CSP DeviceLock/MaxDevicePasswordFailedAttempts](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-devicelock#devicelock-maxdevicepasswordfailedattempts) lista os valores com suporte. `0` (zero) pode desabilitar a funcionalidade de apagamento do dispositivo.
 
     Essa configuração também tem um impacto diferente, dependendo da edição. Para obter detalhes específicos dessa configuração, confira o [CSP de DeviceLock/MaxDevicePasswordFailedAttempts](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-devicelock#devicelock-maxdevicepasswordfailedattempts).
 
@@ -753,9 +753,6 @@ Essas configurações usam o [CSP da política do Defender](https://docs.microso
 
   [Defender/ScheduleQuickScanTime CSP](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-defender#defender-schedulequickscantime)
 
-  > [!WARNING]
-  > Essa configuração do Intune no portal do Azure pode mostrar um status de falha. Este é um bug com o recurso de relatório. Depois de reproduzir o comportamento e a solução de problemas, o grupo de produtos do Intune confirmou que o status é na verdade um Êxito. O bug de relatório será corrigido em uma versão futura. Não há um ETA atual, pois os prazos mudam constantemente. Todas as atualizações para esse recurso são anunciadas em [Em desenvolvimento para o Microsoft Intune](in-development.md).
-
 - **Tipo de verificação do sistema a executar**: agende uma verificação do sistema, incluindo o nível de verificação e o dia e a hora para executar o exame. Suas opções:
   - **Não configurado**: não agenda uma verificação do sistema no dispositivo. Os usuários finais podem executar manualmente verificações conforme necessário ou desejado em seus dispositivos.
   - **Desabilitar**: desabilita qualquer verificação do sistema no dispositivo. Escolha esta opção se você estiver usando uma solução de antivírus de parceiro que verifique os dispositivos.
@@ -776,9 +773,6 @@ Essas configurações usam o [CSP da política do Defender](https://docs.microso
   [Defender/ScanParameter CSP](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-defender#defender-scanparameter)  
   [Defender/ScheduleScanDay CSP](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-defender#defender-schedulescanday)  
   [Defender/ScheduleScanTime CSP](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-defender#defender-schedulescantime)
-
-  > [!WARNING]
-  > Essa configuração do Intune no portal do Azure pode mostrar um status de falha. Este é um bug com o recurso de relatório. Depois de reproduzir o comportamento e a solução de problemas, o grupo de produtos do Intune confirmou que o status é na verdade um Êxito. O bug de relatório será corrigido em uma versão futura. Não há um ETA atual, pois os prazos mudam constantemente. Todas as atualizações para esse recurso são anunciadas em [Em desenvolvimento para o Microsoft Intune](in-development.md).
 
 - **Detectar aplicativos potencialmente indesejados**: escolha o nível de proteção quando o Windows detecta aplicativos potencialmente indesejados. Suas opções:
   - **Não configurado** (padrão): a proteção de aplicativos potencialmente indesejados do Windows Defender é desabilitada.

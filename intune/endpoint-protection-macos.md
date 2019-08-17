@@ -14,12 +14,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: d4aa0c47f0aa099ff469eb31b212f387836ad69b
-ms.sourcegitcommit: 73fbecf7cee4fdfc37d3c30ea2007d2a9a6d2d12
+ms.openlocfilehash: 919fef62cf1d979d6a4f67c3653d90af1442fa55
+ms.sourcegitcommit: ec22a186a9cfa489a8490698e387624e480892d8
 ms.translationtype: MTE75
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/03/2019
-ms.locfileid: "68756502"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "68960407"
 ---
 # <a name="macos-endpoint-protection-settings-in-intune"></a>Configurações de proteção de ponto de extremidade do macOS no Intune  
 
@@ -82,6 +82,9 @@ Use o firewall para controlar conexões por aplicativo, em vez de por porta. Usa
 ## <a name="filevault"></a>FileVault  
 Para obter mais informações sobre as configurações do Apple FileVault, consulte [FDEFileVault](https://developer.apple.com/documentation/devicemanagement/fdefilevault) no conteúdo do desenvolvedor da Apple. 
 
+> [!IMPORTANT]  
+> A partir do macOS 10,15, a configuração do FileVault requer o registro de MDM aprovado pelo usuário. 
+
 - **FileVault**  
   Você pode *habilitar* a criptografia de disco completa usando o XTS-AES 128 com o FileVault em dispositivos que executam o MacOS 10,13 e posterior.  
   - **Não configurado**  
@@ -104,9 +107,9 @@ Para obter mais informações sobre as configurações do Apple FileVault, consu
     **Padrão**: não configurado  
 
      > [!IMPORTANT]  
-     > Há um problema conhecido quando a configuração **desabilitar prompt em sair** está definida como *habilitar*. Quando definido como *habilitar*, a configuração para o **número de vezes permitido para bypass** deve ser definida como um valor e não deve ser definida como *não*configurada. Se definido como *não configurado*, o perfil falha no dispositivo. Nesse cenário, o dispositivo relata que é um **Resumo de estado de perfil** como **erro** sem mais detalhes.
+     > Há um problema conhecido quando a configuração **Desabilitar prompt na saída** está definida como *Habilitar*. Quando definida como *Habilitar*, a configuração **Número de vezes permitido para bypass** deve ter um valor e não deve estar definida como *Não configurado*. Se estiver definida como *Não configurado*, o perfil falhará no dispositivo. Nesse cenário, o dispositivo informa que é um **Resumo de estado de perfil** como **Erro** sem mais detalhes.
      > 
-     > Quando **desabilitar prompt na saída** estiver definido como *não configurado*, o **número de vezes permitido para bypass** pode *não ser configurado* ou ter um valor.  
+     > Quando **Desabilitar prompt na saída** estiver definida como *Não configurado*, o **Número de vezes permitido para bypass** pode ser *Não configurado* ou ter um valor.  
      > 
      > Esse problema será resolvido em uma atualização futura. 
 
