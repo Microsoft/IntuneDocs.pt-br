@@ -15,7 +15,7 @@
           href: whats-new-app-ui.md
         - name: Recursos em desenvolvimento
           href: in-development.md
-- name: Início rápido
+- name: Guias de início rápido
   items:
     - name: Experimente o Intune gratuitamente
       href: free-trial-sign-up.md
@@ -152,7 +152,7 @@
           href: account-sign-up.md
         - name: Configurar domínios
           href: custom-domain-name-configure.md
-        - name: Adicione usuários
+        - name: Adicionar usuários
           href: users-add.md
         - name: Adicionar grupos
           href: groups-add.md
@@ -164,7 +164,7 @@
           href: mdm-authority-set.md
         - name: Gerenciar funções
           items:
-            - name: Controle de acesso baseado em funções
+            - name: Controle de acesso baseado em função
               href: role-based-access-control.md
             - name: Atribuir uma função a um usuário
               href: assign-role.md
@@ -182,7 +182,7 @@
         - name: Opções de registro
           href: enrollment-options.md
           items:
-            - name: Terms and conditions
+            - name: Termos e condições
               href: terms-and-conditions-create.md
             - name: Restrições
               href: enrollment-restrictions-set.md
@@ -750,7 +750,7 @@
                 - name: Email
                   href: email-settings-android.md
                 - name: VPN
-                  href: 'vpn-settings-android.md#android-vpn-settings'
+                  href: vpn-settings-android.md
                 - name: Wi-Fi
                   href: wi-fi-settings-android.md
                 - name: Personalizado
@@ -769,7 +769,7 @@
                 - name: Email
                   href: email-settings-android-enterprise.md
                 - name: VPN
-                  href: 'vpn-settings-android.md#android-enterprise-vpn-settings'
+                  href: vpn-settings-android-enterprise.md
                 - name: Wi-Fi
                   href: wi-fi-settings-android-enterprise.md
                 - name: Personalizado
@@ -840,7 +840,7 @@
                   href: vpn-settings-windows-10.md
                 - name: Wi-Fi
                   href: wi-fi-settings-windows.md
-                - name: Formação educacional
+                - name: Educação
                   href: education-settings-windows.md
                 - name: Dispositivos multiusuário compartilhados
                   href: shared-user-device-settings-windows.md
