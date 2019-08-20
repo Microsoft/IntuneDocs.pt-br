@@ -1,11 +1,11 @@
 ---
 title: Seu dispositivo Android parece estar criptografado | Microsoft Docs
-description: ''
+description: Resolver o status de criptografia no aplicativo Portal da Empresa e Microsoft Intune
 keywords: ''
 author: lenewsad
 ms.author: lanewsad
 manager: dougeby
-ms.date: 11/14/2017
+ms.date: 08/14/2019
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -18,60 +18,46 @@ ms.reviewer: arnab
 ms.suite: ems
 ms.custom: intune-enduser
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 55935b2f69f9573d8df5ea5ca32fb4587c652b26
-ms.sourcegitcommit: 25e6aa3bfce58ce8d9f8c054bc338cc3dff4a78b
+ms.openlocfilehash: d63ecdb23b107d844c37d7a805247092116618e1
+ms.sourcegitcommit: b30a2ba2b67aa2fc3421f0b2f6c5f361a0de612a
 ms.translationtype: MTE75
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57389473"
+ms.lasthandoff: 08/14/2019
+ms.locfileid: "69022744"
 ---
-# <a name="your-android-device-seems-to-be-encrypted-but-company-portal-says-otherwise"></a>Seu dispositivo Android parece estar criptografado, mas o Portal da Empresa informa o contrário
+# <a name="device-encrypted-but-apps-say-otherwise"></a>Dispositivo criptografado, mas aplicativos dizem de outra forma
 
-Ao criptografar um dispositivo, você está codificando as informações nele usando uma chave secreta conhecida apenas por você. Isso impede que pessoas não autorizadas o acessem. Muitas organizações requerem que seus usuários criptografem seus dispositivos Android antes que possam acessar os arquivos da empresa, o email ou os dados.
+Se Portal da Empresa ou o aplicativo Microsoft Intune dizer que seu dispositivo não está criptografado, mas você tem certeza de que está, tente as etapas neste artigo.  
 
-## <a name="common-issues"></a>Problemas comuns
+## <a name="add-a-startup-pin"></a>Adicionar um PIN de inicialização
 
-As versões mais recentes do Android, particularmente a partir da v7.0, exigem uma senha de inicialização para garantir que o dispositivo está totalmente criptografado. Outros fabricantes de dispositivos têm descrições e locais diferentes para a senha de inicialização. Na maioria das vezes, essa configuração é conhecida como "Inicialização Segura". 
+Alguns dispositivos Android exigirão que você crie um PIN de inicialização para assegurar que o dispositivo esteja seguro. O local dessa configuração estará no aplicativo de **configurações** do seu dispositivo. O nome e o local da configuração podem variar. Por exemplo, no Samsung Galaxy S7, a configuração é conhecida como **inicialização segura**. Para habilitá-lo e criar uma senha, vá para **configurações** > **tela de bloqueio e segurança** > **inicialização segura**.  
 
-## <a name="solutions"></a>Soluções
+## <a name="encrypt-the-entire-device"></a>Criptografar todo o dispositivo
 
-### <a name="add-a-startup-pin"></a>Adicionar um PIN de inicialização
+Esta seção se aplica somente ao aplicativo Portal da Empresa. Alguns dispositivos terão a opção de criptografar todo o dispositivo ou somente o espaço usado. Escolha a opção para criptografar o dispositivo inteiro. Se você tiver selecionado criptografar apenas o espaço usado:
 
-Alguns dispositivos Android exigirão que você crie um PIN de inicialização para assegurar que o dispositivo esteja seguro. Há várias versões do Android de vários fabricantes diferentes. Você pode tentar corrigir esse problema encontrando um local no aplicativo de configurações para habilitar essa opção. Por exemplo, no Samsung Galaxy S7, você habilita a Inicialização Segura acessando **Configurações** > **Tela de Bloqueio e Segurança** > **Inicialização Segura**.  
+1. [Remova esse dispositivo do Portal da Empresa](unenroll-your-device-from-intune-android.md).
+2. Descriptografe o espaço usado.  
+3. Criptografe todo o dispositivo.  
+4. Registrar o dispositivo novamente.  
 
-### <a name="encrypt-the-entire-device"></a>Criptografar todo o dispositivo
+## <a name="downgrade-your-version-of-android"></a>Fazer o downgrade de sua versão do Android
 
-Alguns dispositivos terão a opção de criptografar todo o dispositivo ou somente o espaço usado. Escolha a opção para criptografar todo o dispositivo em vez de "somente o espaço usado". Se você já tiver criptografado somente o espaço usado:
-
-1. [Remova o dispositivo do Portal da Empresa](unenroll-your-device-from-intune-android.md)
-2. Descriptografar o espaço usado
-3. Criptografar todo o dispositivo
-4. Registrar o dispositivo novamente
-
-### <a name="downgrade-your-version-of-android"></a>Fazer o downgrade de sua versão do Android
-
-Se o dispositivo oferecer a opção para fazer downgrade para o Android 6.0 e posterior, faça isso. Haverá um risco de perda de dados se você tentar fazer downgrade de seu dispositivo. Caso contrário, recomendamos contatar o suporte de sua empresa para resolver esse problema. É possível obter informações de contato do suporte de sua empresa no [site do Portal da Empresa](https://go.microsoft.com/fwlink/?linkid=2010980).
+Esta seção se aplica somente ao aplicativo Portal da Empresa. Se o dispositivo oferecer a opção para fazer downgrade para o Android 6.0 e posterior, faça isso. Haverá um risco de perda de dados se você tentar fazer downgrade de seu dispositivo. Caso contrário, recomendamos contatar o suporte de sua empresa para resolver esse problema. Obtenha as informações de contato do suporte de sua empresa no [site do Portal da Empresa](https://go.microsoft.com/fwlink/?linkid=2010980).  
 
 ## <a name="specific-manufacturer-issues"></a>Problemas de fabricante específicos
 
-Alguns dispositivos Android na versão 7.0 e posterior criptografam dados de maneiras não consistentes com determinados padrões da plataforma Android. Esses dispositivos podem parecer criptografados mesmo quando eles são totalmente novos. O Intune reconhece que os métodos de criptografia desses dispositivos colocam as informações do dispositivo em risco. Esse risco deriva primariamente de usuários malintencionados que têm acesso físico ao dispositivo.
+Alguns dispositivos Android na versão 7.0 e posterior criptografam dados de maneiras não consistentes com determinados padrões da plataforma Android. Esses métodos de criptografia colocam as informações do dispositivo em risco. Como resultado, esses dispositivos não têm suporte. 
+
+Para obter uma lista não completa de dispositivos Android com suporte, consulte o artigo [sistemas operacionais e navegadores com suporte no Intune](https://docs.microsoft.com/intune/supported-devices-browsers#supported-samsung-knox-standard-devices). Se o dispositivo não estiver listado, consulte o fabricante do dispositivo ou contate a pessoa de suporte. 
 
 > [!Note]
-> A Microsoft trabalha com os fabricantes para solucionar problemas encontrados durante o teste ou relatados pelos usuários. Atualizaremos este artigo sempre que novas informações estiverem disponíveis. 
+> A Microsoft trabalha com os fabricantes para solucionar quaisquer problemas que encontrarmos em testes ou relatados pelos usuários. Atualizaremos este artigo sempre que novas informações estiverem disponíveis. 
 
-## <a name="known-devices"></a>Dispositivos conhecidos
+## <a name="update-devices"></a>Atualizar dispositivos   
 
-### <a name="known-devices-that-can-be-updated-to-fix-this-issue"></a>Dispositivos conhecidos que podem ser atualizados para corrigir esse problema
+Se você não atualizou seu dispositivo para a versão mais recente do Android, vá para o aplicativo de **configurações** do dispositivo e selecione **Atualizar**.  
 
-Se você não tiver atualizado seu dispositivo para a versão mais recente do Android, acesse seu dispositivo **as configurações** aplicativo e selecione **atualização**. Esses dispositivos podem aparecer como não compatível com até que você atualize:  
-
-- Huawei Honor 8
-- Huawei P9
-
-### <a name="known-devices-that-currently-cannot-be-updated-to-fix-this-issue"></a>Dispositivos conhecidos que não podem ser atualizados no momento para corrigir esse problema
-Os dispositivos a seguir serão exibidas sempre criptografados e não podem ser usados para acessar recursos da empresa. Para acessar recursos da empresa, você deve usar um dispositivo diferente.  
-
-- Huawei Mate 8
-- Dispositivos OPPO
-- Dispositivos Vivo
-- Smartphones Xiaomi Mi
+## <a name="next-steps"></a>Próximas etapas   
+Ainda precisa de ajuda? Entre em contato com o suporte de sua empresa (consulte o [site do Portal da Empresa](https://go.microsoft.com/fwlink/?linkid=2010980) para obter as informações de contato) ou escreva para a <a href="mailto:wintunedroidfbk@microsoft.com?subject=I'm having trouble with enrolling my Android device&body=Describe the issue you're experiencing here.">equipe de Android da Microsoft</a>.  

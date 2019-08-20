@@ -6,7 +6,7 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 10/18/2018
+ms.date: 08/06/2019
 ms.topic: reference
 ms.service: microsoft-intune
 ms.localizationpriority: medium
@@ -15,12 +15,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 745bd930e43c9d034f66f6d529b489308a1bfe23
-ms.sourcegitcommit: 916fed64f3d173498a2905c7ed8d2d6416e34061
+ms.openlocfilehash: 1d341aeace950f62ae699aa7760a65c0fd2f74fa
+ms.sourcegitcommit: b78793ccbef2a644a759ca3110ea73e7ed6ceb8f
 ms.translationtype: MTE75
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/23/2019
-ms.locfileid: "66050292"
+ms.lasthandoff: 08/16/2019
+ms.locfileid: "69550052"
 ---
 # <a name="add-wi-fi-settings-for-devices-running-android-in-microsoft-intune"></a>Adicionar configurações de Wi-Fi para dispositivos que executam o Android no Microsoft Intune
 
@@ -34,70 +34,62 @@ Este artigo descreve essas configurações.
 
 [Criar um perfil de dispositivo](device-profile-create.md).
 
-## <a name="basic-profile"></a>Perfil básico
+## <a name="basic"></a>Básico
 
 - **Tipo de Wi-Fi**: escolha **Básico**.
-- **SSID**: abreviação de **service set identifier** (identificador de conjunto de serviço). Essa configuração é o nome real da rede sem fio à qual os dispositivos se conectam.
+- **SSID**: Insira o **identificador do conjunto de serviços**, que é o nome real da rede sem fio à qual os dispositivos se conectam. No entanto, os usuários veem apenas o **nome de rede** configurado ao escolherem a conexão.
 - **Conectar-se automaticamente**: escolha **Habilitar** para se conectar automaticamente a essa rede quando o dispositivo estiver ao alcance. Escolha **Desabilitar** para impedir que dispositivos se conectem automaticamente.
 - **Rede oculta**: escolha **Habilitar** para ocultar esta rede da lista de redes disponíveis no dispositivo. O SSID não é transmitido. Escolha **Desabilitar** para exibir esta rede na lista de redes disponíveis no dispositivo.
 
-## <a name="enterprise-profile"></a>Perfil corporativo
+## <a name="enterprise"></a>Enterprise
 
 - **Tipo de Wi-Fi**: escolha **Corporativo**.
-- **SSID**: abreviação de **service set identifier** (identificador de conjunto de serviço). Essa configuração é o nome real da rede sem fio à qual os dispositivos se conectam.
+- **SSID**: Insira o **identificador do conjunto de serviços**, que é o nome real da rede sem fio à qual os dispositivos se conectam. No entanto, os usuários veem apenas o **nome de rede** configurado ao escolherem a conexão.
 - **Conectar-se automaticamente**: escolha **Habilitar** para se conectar automaticamente a essa rede quando o dispositivo estiver ao alcance. Escolha **Desabilitar** para impedir que dispositivos se conectem automaticamente.
 - **Rede oculta**: escolha **Habilitar** para ocultar esta rede da lista de redes disponíveis no dispositivo. O SSID não é transmitido. Escolha **Desabilitar** para exibir esta rede na lista de redes disponíveis no dispositivo.
 - **Tipo de EAP**: escolha o tipo de Protocolo EAP (Extensible Authentication Protocol) usado para autenticar conexões sem fio seguras. Suas opções: 
 
   - **EAP-TLS**: também inserir:
 
-    - **Confiança do Servidor** - **Certificado raiz para validação do servidor**: escolha um perfil de certificado raiz confiável existente. Esse certificado é apresentado ao servidor quando o cliente se conecta à rede e é usado para autenticar a conexão.
-
-      Selecione **OK** para salvar suas alterações.
+    - **Confiança do Servidor** - **Certificado raiz para validação do servidor**: escolha um perfil de certificado raiz confiável existente. Esse certificado é apresentado ao servidor quando o cliente se conecta à rede. Ele autentica a conexão.
 
     - **Autenticação de Cliente** - **Certificado do cliente para autenticação de cliente (certificado de identidade)** : escolha o perfil de certificado do cliente SCEP ou PKCS que também é implantado no dispositivo. Esse certificado é a identidade apresentada pelo dispositivo ao servidor para autenticar a conexão.
 
-      Selecione **OK** para salvar suas alterações.
+    - **Privacidade de identidade (identidade externa)** : insira o texto enviado em resposta a uma solicitação de identidade de EAP. Esse texto pode ser qualquer valor, como `anonymous`. Durante a autenticação, essa identidade anônima é enviada inicialmente e seguida pela identificação real enviada em um túnel seguro.
 
   - **EAP-TTLS**: também inserir:
 
-    - **Confiança do Servidor** - **Certificado raiz para validação do servidor**: escolha um perfil de certificado raiz confiável existente. Esse certificado é apresentado ao servidor quando o cliente se conecta à rede e é usado para autenticar a conexão.
+    - **Confiança do Servidor** - **Certificado raiz para validação do servidor**: escolha um perfil de certificado raiz confiável existente. Esse certificado é apresentado ao servidor quando o cliente se conecta à rede. Ele autentica a conexão.
 
-      Selecione **OK** para salvar suas alterações.
-
-    - **Autenticação de Cliente** — escolha um **método de Autenticação**. Suas opções:
+    - **Autenticação de Cliente**: escolha um **Método de autenticação**. Suas opções:
 
       - **Nome de usuário e senha**: solicita ao usuário um nome de usuário e uma senha para autenticar a conexão. Insira também:
-        - **Método não EAP (identidade interna)** : escolha como você autentica a conexão. Certifique-se de escolher o mesmo protocolo configurado em sua rede Wi-Fi.
+        - **Método não EAP (identidade interna)** : escolha como você autentica a conexão. Certifique-se de escolher o mesmo protocolo configurado em sua rede Wi-Fi. Suas opções:
 
-          Suas opções: **Senha não criptografada (PAP)** , **Protocolo CHAP (CHAP)** , **Microsoft CHAP (MS-CHAP)** , ou **Microsoft CHAP Versão 2 (MS-CHAP v2)**
+          - **Senha não criptografada (PAP)**
+          - **Challenge Heshake Authentication Protocol (CHAP)**
+          - **Microsoft CHAP (MS-CHAP)**
+          - **Microsoft CHAP Versão 2 (MS-CHAP v2)**
 
       - **Certificados**: escolha o perfil de certificado do cliente SCEP ou PKCS que também é implantado no dispositivo. Esse certificado é a identidade apresentada pelo dispositivo ao servidor para autenticar a conexão.
-
-        Selecione **OK** para salvar suas alterações.
 
       - **Privacidade de identidade (identidade externa)** : insira o texto enviado em resposta a uma solicitação de identidade de EAP. Esse texto pode ser qualquer valor, como `anonymous`. Durante a autenticação, essa identidade anônima é enviada inicialmente e seguida pela identificação real enviada em um túnel seguro.
 
   - **PEAP**: insira também:
 
-    - **Confiança do Servidor** - **Certificado raiz para validação do servidor**: escolha um perfil de certificado raiz confiável existente. Esse certificado é apresentado ao servidor quando o cliente se conecta à rede e é usado para autenticar a conexão.
+    - **Confiança do Servidor** - **Certificado raiz para validação do servidor**: escolha um perfil de certificado raiz confiável existente. Esse certificado é apresentado ao servidor quando o cliente se conecta à rede. Ele autentica a conexão.
 
-      Selecione **OK** para salvar suas alterações.
-
-    - **Autenticação de Cliente** — escolha um **método de Autenticação**. Suas opções:
+    - **Autenticação de Cliente**: escolha um **Método de autenticação**. Suas opções:
 
       - **Nome de usuário e senha**: solicita ao usuário um nome de usuário e uma senha para autenticar a conexão. Insira também:
-        - **Método não EAP para autenticação (identidade interna)** : escolha como você autentica a conexão. Certifique-se de escolher o mesmo protocolo configurado em sua rede Wi-Fi.
+        - **Método não EAP para autenticação (identidade interna)** : escolha como você autentica a conexão. Certifique-se de escolher o mesmo protocolo configurado em sua rede Wi-Fi. Suas opções:
 
-          Suas opções: **Nenhum** ou **Microsoft CHAP Versão 2 (MS-CHAP v2)**
+          - **Nenhum**
+          - **Microsoft CHAP Versão 2 (MS-CHAP v2)**
 
       - **Certificados**: escolha o perfil de certificado do cliente SCEP ou PKCS que também é implantado no dispositivo. Esse certificado é a identidade apresentada pelo dispositivo ao servidor para autenticar a conexão.
 
-        Selecione **OK** para salvar suas alterações.
-
       - **Privacidade de identidade (identidade externa)** : insira o texto enviado em resposta a uma solicitação de identidade de EAP. Esse texto pode ser qualquer valor, como `anonymous`. Durante a autenticação, essa identidade anônima é enviada inicialmente e seguida pela identificação real enviada em um túnel seguro.
-
-Selecione **OK** > **Criar** para salvar suas alterações. O perfil será criado e exibido na lista de perfis.
 
 ## <a name="next-steps"></a>Próximas etapas
 
@@ -107,4 +99,4 @@ O perfil foi criado, mas não está fazendo nada. Em seguida, [atribua esse perf
 
 - [Visão geral das configurações de Wi-Fi](wi-fi-settings-configure.md), incluindo outras plataformas.
 
-- Você está usando dispositivos Android Enterprise ou Android Kiosk? Se sim, então confira [Configurações de Wi-Fi para dispositivos que executam o Android Enterprise e o Android Kiosk](wi-fi-settings-android-enterprise.md).
+- Você está usando dispositivos Android Enterprise ou Android Kiosk? Se estiver, então confira as [Configurações de Wi-Fi dos dispositivos que executam o Android Empresa e dispositivos dedicados](wi-fi-settings-android-enterprise.md).
