@@ -665,6 +665,8 @@
                   href: app-protection-policies-validate.md
                 - name: Entrega da política de proteção do aplicativo
                   href: app-protection-policy-delivery.md
+                - name: Proteger a extensão do aplicativo
+                  href: app-protection-policy-extensions.md
                 - name: Monitorar o status de usuário de proteção do aplicativo
                   href: app-protection-policies-monitor.md
                 - name: Preparar-se para as políticas de proteção do aplicativo WIP
