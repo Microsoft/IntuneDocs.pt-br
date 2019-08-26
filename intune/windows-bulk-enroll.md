@@ -16,12 +16,12 @@ ms.reviewer: damionw
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 996380a4938ca73bbf5f71c82e99814f772001a4
-ms.sourcegitcommit: 256952cac44bc6289156489b6622fdc1a3c9c889
+ms.openlocfilehash: 1775bdf0030968cdd16d87d91794480a43a22d12
+ms.sourcegitcommit: b1ddc7f4a3d520b7d6755c7a423a46d1e2548592
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/26/2019
-ms.locfileid: "67403365"
+ms.lasthandoff: 08/20/2019
+ms.locfileid: "69651029"
 ---
 # <a name="bulk-enrollment-for-windows-devices"></a>Registro em massa para dispositivos Windows
 
@@ -73,7 +73,7 @@ Os usuários do Azure AD são usuários padrão nesses dispositivos e recebem po
 
 2. Escolha como você pretende aplicar o pacote de provisionamento ao dispositivo.  Um pacote de provisionamento pode ser aplicado a um dispositivo usando uma das seguintes maneiras:
    - Coloque o pacote de provisionamento em uma unidade USB, insira a unidade USB no dispositivo que você deseja registrar em massa, e aplique-o durante a instalação inicial
-   - Coloque o pacote de provisionamento em uma pasta de rede e aplique-o no dispositivo que você deseja registrar em massa após a instalação inicial
+   - Coloque o pacote de provisionamento em uma pasta de rede e aplique-o após a instalação inicial
 
    Para obter instruções passo a passo sobre como aplicar um pacote de provisionamento, confira [Aplicar um pacote de provisionamento](https://technet.microsoft.com/itpro/windows/configure/provisioning-apply-package).
 

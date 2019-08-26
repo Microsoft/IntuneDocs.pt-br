@@ -6,7 +6,7 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 04/08/2019
+ms.date: 08/15/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.localizationpriority: high
@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure, seoapril2019
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 00712b891790fbf437e9fed024f7610f37fee129
-ms.sourcegitcommit: 1b7ee2164ac9490df4efa83c5479344622c181b5
+ms.openlocfilehash: eff9f965649587a929e45d0f9d59305194ffe68b
+ms.sourcegitcommit: b1ddc7f4a3d520b7d6755c7a423a46d1e2548592
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/08/2019
-ms.locfileid: "67648704"
+ms.lasthandoff: 08/20/2019
+ms.locfileid: "69651159"
 ---
 # <a name="assign-office-365-apps-to-windows-10-devices-with-microsoft-intune"></a>Atribua aplicativos do Office 365 a dispositivos Windows 10 com o Microsoft Intune
 
@@ -39,7 +39,7 @@ Antes que possa atribuir, monitorar, configurar ou proteger aplicativos, você p
 - Os dispositivos nos quais você implanta esses aplicativos deverão estar em execução no Windows 10 Creators Update ou posterior.
 - O Intune é compatível com a adição de aplicativos Office do pacote do Office 365 apenas.
 - Se algum aplicativo do Office estiver aberto quando o Intune instalar o pacote de aplicativos, a instalação poderá falhar e os usuários poderão perder dados de arquivos não salvos.
-- Esse método de instalação não é compatível com dispositivos Windows 10 S, Windows Home, Windows Team, Windows Holographic ou Windows Holographic for Business.
+- Esse método de instalação não é compatível com dispositivos Windows Home, Windows Team, Windows Holographic ou Windows Holographic for Business.
 - O Intune não dá suporte à instalação de aplicativos de área de trabalho do Office 365 da Microsoft Store (conhecidos como aplicativos Office Centennial) em um dispositivo no qual você já implantou aplicativos do Office 365 com o Intune. Se essa configuração for instalada, poderá ocorrer perda ou corrupção de dados.
 - Várias atribuições de aplicativo requeridas ou disponíveis não são aditivas. Uma atribuição de aplicativo posterior substituirá as atribuições de aplicativo pré-instaladas. Por exemplo, se o primeiro conjunto de aplicativos Office contiver o Word e o último não, o Word será desinstalado. Isso não se aplica a nenhum aplicativo do Visio ou Project.
 - Atualmente, não há suporte para várias implantações do Office 365. Apenas uma implantação será fornecida ao dispositivo

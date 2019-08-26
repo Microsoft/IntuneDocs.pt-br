@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 19b8693a5d2c2df042bd9339cb74bbcde0da626d
-ms.sourcegitcommit: 7c251948811b8b817e9fe590b77f23aed95b2d4e
+ms.openlocfilehash: 890d398de938680447b71a46d4e329a6bdf52616
+ms.sourcegitcommit: ec22a186a9cfa489a8490698e387624e480892d8
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/15/2019
-ms.locfileid: "67884047"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "68960579"
 ---
 # <a name="intune-standalone---win32-app-management"></a>Intune autônomo – gerenciamento de aplicativos Win32
 
@@ -283,6 +283,8 @@ Nesta altura, você concluiu as etapas necessárias para adicionar um aplicativo
 ## <a name="app-dependencies"></a>Dependências de aplicativo
 
 As dependências de aplicativo são aplicativos que precisam ser instalados antes que o aplicativo Win32 possa ser instalado. Você pode exigir que outros aplicativos sejam instalados como dependências. Especificamente, o dispositivo precisa instalar os aplicativos dependentes antes de instalar o aplicativo Win32. Há um máximo de 100 dependências, que incluem as dependências das dependências incluídas, bem como o próprio aplicativo. Você poderá adicionar dependências de aplicativo Win32 somente depois que o aplicativo Win32 for adicionado ao Intune e carregado nele. Depois que o aplicativo Win32 for adicionado, você verá a opção **Dependências** na folha do aplicativo Win32. 
+
+Todas as dependências de um aplicativo Win32 também precisam ser um aplicativo Win32. Ele não tem suporte para a dependência de outros tipos de aplicativos, como aplicativos LOB do MSI ou aplicativos da Store.
 
 Ao adicionar uma dependência de aplicativo, você poderá fazer uma pesquisa com base no nome do aplicativo e no editor. Além disso, você poderá classificar as dependências adicionadas com base no nome do aplicativo e no editor. As dependências de aplicativo adicionadas anteriormente não podem ser selecionadas na lista de dependências de aplicativo adicionadas. 
 

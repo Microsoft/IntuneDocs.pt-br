@@ -5,7 +5,7 @@ keywords: ''
 author: brenduns
 ms.author: brenduns
 manager: dougeby
-ms.date: 04/08/2019
+ms.date: 08/07/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.localizationpriority: high
@@ -16,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 80be1d39d9a562dbc13b9384c6256eb02c9ef50e
-ms.sourcegitcommit: 7315fe72b7e55c5dcffc6d87f185f3c2cded9028
+ms.openlocfilehash: f13b5b92ca442f4b5ae05d3567f8385288d92909
+ms.sourcegitcommit: 6b5907046f920279bbda3ee6c93e98594624c05c
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/02/2019
-ms.locfileid: "67530546"
+ms.lasthandoff: 08/19/2019
+ms.locfileid: "69582922"
 ---
 # <a name="configure-a-certificate-profile-for-your-devices-in-microsoft-intune"></a>Configurar um perfil de certificado para seus dispositivos no Microsoft Intune
 
@@ -88,30 +88,35 @@ Exporte o certificado de Autoridades de Certificação (AC) Confiáveis como um 
 Este certificado é importando quando você configura um perfil de certificado confiável.
 
 ## <a name="step-3-create-trusted-certificate-profiles"></a>Etapa 3: Criar perfis de certificado confiável
+
 Crie um perfil de certificado confiável antes de criar um perfil de certificado SCEP ou PKCS. É necessário um perfil de certificado confiável e um perfil SCEP ou PKCS para cada plataforma de dispositivo. As etapas para criar certificados confiáveis são semelhantes para cada plataforma de dispositivo.
 
-1. Conecte-se ao [Intune](https://go.microsoft.com/fwlink/?linkid=2090973).
-3. Selecione **Configuração do dispositivo** > **Gerenciar** > **Perfis** > **Criar perfil**.
-4. Insira um **Nome** e uma **Descrição** para o perfil de certificado confiável.
-5. Na lista suspensa **Plataforma**, selecione a plataforma de dispositivo para esse certificado confiável. Suas opções:
+1. Em [Intune](https://go.microsoft.com/fwlink/?linkid=2090973), selecione **Configuração do dispositivo** > **Gerenciar** > **Perfis** > **Criar perfil**.
+2. Insira as seguintes propriedades:
 
-    - **Android**
-    - **Android Enterprise**
-    - **iOS**
-    - **macOS**
-    - **Windows Phone 8.1**
-    - **Windows 8.1 e posterior**
-    - **Windows 10 e posterior**
+    - **Nome**: Insira um nome descritivo para o perfil. Nomeie seus perfis para que você possa identificá-los facilmente mais tarde. Por exemplo, um bom nome do perfil é **Perfil de Certificado Confiável para dispositivos de proprietários de dispositivo Android Enterprise** ou **Perfil de certificado confiável para dispositivos iOS**.
+    - **Descrição**: Insira uma descrição para o perfil. Essa configuração é opcional, mas recomendada.
+    - **Plataforma**: Escolha a plataforma dos dispositivos. Suas opções:
 
-6. Na lista suspensa **Tipo de perfil**, escolha **Certificado confiável**.
-7. Navegue até o certificado salvo na [Etapa 2: Exportar seu certificado de AC raiz confiável](#step-2-export-your-trusted-root-ca-certificate) e selecione **OK**.
-8. Somente para dispositivos Windows 8.1 e Windows 10, selecione o **Repositório de Destino** para o certificado confiável de:
+      - **Android**
+      - **Android Enterprise** > **Somente Proprietário do Dispositivo**
+      - **Android Enterprise** > **Somente Perfil de Trabalho**
+      - **iOS**
+      - **macOS**
+      - **Windows Phone 8.1**
+      - **Windows 8.1 e posterior**
+      - **Windows 10 e posterior**
 
-    - **Repositório de certificados do computador – Raiz**
-    - **Repositório de certificados do computador – Intermediário**
-    - **Repositório de certificados do usuário – Intermediário**
+    - **Tipo de perfil**: Escolha **Certificado confiável**.
 
-9. Quando terminar, selecione **OK**, volte para o painel **Criar perfil** e escolha **Criar**.
+3. Navegue até o certificado salvo na [Etapa 2: Exportar seu certificado de AC raiz confiável](#step-2-export-your-trusted-root-ca-certificate) e selecione **OK**.
+4. Somente para dispositivos Windows 8.1 e Windows 10, selecione o **Repositório de Destino** para o certificado confiável de:
+
+    - **Repositório de certificados do computador – Raiz** (SCEP)
+    - **Repositório de certificados do computador – Intermediário** (SCEP)
+    - **Repositório de certificados do usuário – Intermediário** (PKCS, SCEP)
+
+5. Quando terminar, selecione **OK**, volte para o painel **Criar perfil** e escolha **Criar**.
 
 O perfil será criado e aparecerá na lista. Para atribuir esse perfil a grupos, consulte [atribuir perfis de dispositivo](device-profile-assign.md).
 
@@ -128,6 +133,7 @@ Confira um dos artigos a seguir para ajudar a configurar e atribuir cada tipo de
 Depois de criar um perfil de certificado confiável, crie perfis de certificado SCEP ou PKCS para cada plataforma que você deseja usar. Quando você cria um perfil de certificado SCEP, insira um perfil de certificado confiável para essa mesma plataforma. Essa etapa vincula os dois perfis de certificado, mas você ainda deve atribuir cada perfil separadamente.
 
 ## <a name="next-steps"></a>Próximas etapas
+
 [Atribuir perfis de dispositivo](device-profile-assign.md)  
 [Usar S/MIME para assinar e criptografar emails](certificates-s-mime-encryption-sign.md)  
 [Usar autoridade de certificação de terceiros](certificate-authority-add-scep-overview.md)

@@ -1,5 +1,5 @@
 ---
-title: Usar o Microsoft Defender ATP no Microsoft Intune – Azure | Microsoft Docs
+title: Usar a ATP do Microsoft Defender no Microsoft Intune – Azure | Microsoft Docs
 description: Use a Proteção Avançada contra Ameaças do Microsoft Defender (Microsoft Defender ATP) com o Intune, incluindo instalação, configuração e integração de seus dispositivos Intune com a ATP. Em seguida, use uma avaliação de risco da ATP nos dispositivos com as políticas de conformidade do dispositivo Intune e de acesso condicional para proteger os recursos de rede.
 keywords: ''
 author: brenduns
@@ -15,14 +15,14 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 8508915f0b4711b2aa65465dd7ac79f575a8d008
-ms.sourcegitcommit: 99b74d7849fbfc8f5cf99cba33e858eeb9f537aa
+ms.openlocfilehash: b148abfaeffaf02178e34c3e9abfe86f70fb529c
+ms.sourcegitcommit: ec22a186a9cfa489a8490698e387624e480892d8
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "68670975"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "68960661"
 ---
-# <a name="enforce-compliance-for-microsoft-defender-atp-with-conditional-access-in-intune"></a>Impor a conformidade do Microsoft Defender ATP com Acesso Condicional no Intune  
+# <a name="enforce-compliance-for-microsoft-defender-atp-with-conditional-access-in-intune"></a>Impor a conformidade da ATP do Microsoft Defender com Acesso Condicional no Intune  
 
 Você pode integrar a Proteção Avançada contra Ameaças do Microsoft Defender (Microsoft Defender ATP) ao Microsoft Intune como uma solução da Defesa contra Ameaças Móveis para evitar violações de segurança e limitar o impacto das violações dentro de uma organização. O Microsoft Defender ATP funciona com dispositivos que executam Windows 10 ou posterior.
 
@@ -44,7 +44,7 @@ Considere um evento em que alguém envia um anexo do Word com código mal-intenc
 - O invasor então remotamente acessa outros dispositivos do usuário. Essa violação de segurança pode afetar toda a organização.  
 
 O Microsoft Defender ATP pode ajudar a resolver eventos de segurança como o deste cenário.  
-- Em nosso exemplo, 0 Microsoft Defender ATP detecta que o dispositivo executou código anormal, apresentou uma elevação de privilégios de processo, injetou código mal-intencionado e emitiu um shell remoto suspeito.  
+- Em nosso exemplo, a ATP do Microsoft Defender detecta que o dispositivo executou código anormal, apresentou uma elevação de privilégios de processo, injetou código mal-intencionado e emitiu um shell remoto suspeito.  
 - Com base nessas ações do dispositivo, o Microsoft Defender ATP [classifica o dispositivo como de alto risco](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/alerts-queue#severity) e inclui um relatório detalhado de atividades suspeitas no portal da Central de Segurança do Microsoft Defender.  
 
 Como você tem uma política de conformidade de dispositivos do Intune para classificar dispositivos com um nível de risco *Médio* ou *Alto* como fora de conformidade, o dispositivo comprometido é classificado dessa forma. Essa classificação permite que a política de acesso condicional entre em vigor e bloqueie o acesso desse dispositivo aos recursos corporativos.  
@@ -55,16 +55,16 @@ Para usar o Microsoft Defender ATP com o Intune, verifique se você tem a seguin
 
 - Locatário licenciado para Enterprise Mobility + Security E3 e Windows E5 (ou Microsoft 365 Enterprise E5)
 - Ambiente do Microsoft Intune, com dispositivos Windows 10 [gerenciados para Intune](windows-enroll.md) que também façam parte do Azure AD
-- [Microsoft Defender ATP](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/microsoft-defender-advanced-threat-protection) e acesso à Central de Segurança do Microsoft Defender (portal ATP)
+- [ATP do Microsoft Defender](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/microsoft-defender-advanced-threat-protection) e acesso à Central de Segurança do Microsoft Defender (portal ATP)
 
-## <a name="enable-microsoft-defender-atp-in-intune"></a>Habilitar o Microsoft Defender ATP no Intune
+## <a name="enable-microsoft-defender-atp-in-intune"></a>Habilitar a ATP do Microsoft Defender no Intune
 
 Esta primeira etapa destina-se à criação de uma conexão de serviço a serviço entre o Intune e o Microsoft Defender ATP. Isso requer acesso administrativo à Central de Segurança do Microsoft Defender e ao Intune.  
 
 ### <a name="to-enable-defender-atp"></a>Para habilitar o Defender ATP  
 
 1. Conecte-se ao [Intune](https://go.microsoft.com/fwlink/?linkid=2090973).
-2. Selecione **Conformidade do dispositivo** > **Microsoft Defender ATP** e, em seguida, escolha *Configurações do Conector* e **Abrir a Central de Segurança do Microsoft Defender**.
+2. Selecione **Conformidade do dispositivo** > **ATP do Microsoft Defender** e, em seguida, escolha *Configurações do Conector* e **Abrir a Central de Segurança do Microsoft Defender**.
 
     ![Selecione para abrir a Central de Segurança do Microsoft Defender](./media/advanced-threat-protection/atp-device-compliance-open-microsoft-defender.png)
 
@@ -76,17 +76,18 @@ Esta primeira etapa destina-se à criação de uma conexão de serviço a servi�
 
     3. Selecione **Salvar preferências**.
 
-4. Volte para o Intune, **Conformidade do dispositivo** > **Microsoft Defender ATP**. Defina **Conectar dispositivos Windows versão 10.0.15063 e superiores ao Microsoft Defender ATP** como **Ligado**.
+4. Volte para o Intune, **Conformidade do dispositivo** > **ATP do Microsoft Defender**. Defina **Conectar dispositivos Windows versão 10.0.15063 e superiores ao Microsoft Defender ATP** como **Ligado**.
 5. Selecione **Salvar**.
 
 Você normalmente realiza essa tarefa uma vez. Após habilitar o Microsoft Defender ATP para o locatário do Intune, você não precisará ativá-lo novamente.
 
 > [!TIP]  
-> Quando você integra um novo aplicativo à Defesa contra Ameaças Móveis do Intune e habilita a conexão, o Intune cria uma política de acesso condicional clássica no Azure Active Directory. Cada aplicativo MTD integrado, como o [Defender ATP](advanced-threat-protection.md) ou um de nossos [parceiros MTD](mobile-threat-defense.md#mobile-threat-defense-partners) adicionais, cria uma política de acesso condicional clássica.  Essas políticas podem ser ignoradas, mas não devem ser editadas, excluídas ou desabilitadas.
+> Quando você integra um novo aplicativo à Defesa contra Ameaças Móveis do Intune e habilita a conexão a essa plataforma, o Intune cria uma política de acesso condicional clássica no Azure Active Directory. Cada aplicativo MTD integrado, como o [Defender ATP](advanced-threat-protection.md) ou um de nossos [parceiros de MTD](mobile-threat-defense.md#mobile-threat-defense-partners) adicionais, cria uma nova política de acesso condicional clássica. Essas políticas podem ser ignoradas, mas não devem ser editadas, excluídas ou desabilitadas.
 > 
 > As políticas de acesso condicional clássicas para aplicativos MTD: 
 > 
-> - São usadas pelo Intune MTD para exigir que os dispositivos sejam registrados no Azure AD, de modo que tenham uma identificação do dispositivo. A ID é necessária para que os dispositivos possam relatar com êxito seu status ao Intune.  
+> - São usadas pelo Intune MTD para exigir que os dispositivos sejam registrados no Azure AD, de modo que tenham uma ID de dispositivo, antes de se comunicarem com os parceiros de MTD. A ID é necessária para que os dispositivos possam relatar com êxito seu status ao Intune.  
+> - Não afeta outros recursos ou aplicativos de nuvem.  
 > - São diferentes das políticas de acesso condicional que você pode criar para ajudar a gerenciar o MTD.
 > - Por padrão, não interagem com outras políticas de acesso condicional usadas para avaliação.  
 > 
@@ -106,18 +107,18 @@ Após integrar um dispositivo usando o pacote de configuração, você não prec
 2. Selecione **Configuração do Dispositivo** > **Perfis** > **Criar perfil**.
 3. Insira um **Nome** e uma **Descrição**.
 4. Em **Plataforma**, selecione **Windows 10 e posterior**
-5. Para **Tipo de perfil**, selecione **Microsoft Defender ATP (Windows 10 Desktop)** .
+5. Para **Tipo de perfil**, selecione **ATP do Microsoft Defender (Windows 10 Desktop)** .
 6. Configure as definições:
 
-   - **Tipo de pacote de configuração de cliente do Microsoft Defender ATP**: selecione **Carregar** para adicionar o pacote de configuração no perfil. Selecione **Remover** para remover o pacote de configuração do perfil.
+   - **Tipo de pacote de configuração de cliente da ATP do Microsoft Defender**: selecione **Carregar** para adicionar o pacote de configuração no perfil. Selecione **Remover** para remover o pacote de configuração do perfil.
   
      > [!NOTE]  
-     > Se você estabeleceu corretamente uma conexão com o Microsoft Defender ATP, o Intune vai **Integrar** automaticamente o perfil de configuração e a configuração **Tipo de pacote de configuração de cliente do Microsoft Defender ATP** não estará disponível.
+     > Se você estabeleceu corretamente uma conexão com a ATP do Microsoft Defender, o Intune vai **Integrar** automaticamente o perfil de configuração e a configuração **Tipo de pacote de configuração de cliente da ATP do Microsoft Defender** não estará disponível.
   
-    - **Compartilhamento de exemplo para todos os arquivos**: **Habilitar** permite que os exemplos sejam coletados e compartilhados com o Microsoft Defender ATP. Por exemplo, se você vir um arquivo suspeito, poderá enviá-lo para o Microsoft Defender ATP para uma análise profunda. **Não configurado** não compartilha nenhum exemplo com o Microsoft Defender ATP.
-    - **Acelerar a frequência do relatório de telemetria**: Para dispositivos que estão em risco alto, **Habilitar** essa configuração para relatar a telemetria ao serviço do Microsoft Defender ATP com maior frequência.
+    - **Compartilhamento de exemplo para todos os arquivos**: **Habilitar** permite que os exemplos sejam coletados e compartilhados com a ATP do Microsoft Defender. Por exemplo, se você vir um arquivo suspeito, poderá enviá-lo para a ATP do Microsoft Defender para uma análise profunda. **Não configurado** não compartilha nenhum exemplo com o a ATP do Microsoft Defender.
+    - **Acelerar a frequência do relatório de telemetria**: Para dispositivos que estão em risco alto, **Habilitar** essa configuração para relatar a telemetria ao serviço da ATP do Microsoft Defender com maior frequência.
 
-    [Integrar computadores do Windows 10 usando o System Center Configuration Manager](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/configure-endpoints-sccm) tem mais detalhes sobre essas configurações do Microsoft Defender ATP.
+    [Integrar computadores do Windows 10 usando o System Center Configuration Manager](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/configure-endpoints-sccm) tem mais detalhes sobre essas configurações da ATP do Microsoft Defender.
 
 7. Selecione **OK** e **Criar** para salvar suas alterações, o que cria o perfil.
 8. [Atribua o perfil de configuração de dispositivo](device-profile-assign.md) aos dispositivos que você deseja avaliar com o Microsoft Defender ATP.  
@@ -132,11 +133,11 @@ A política de conformidade determina o nível de risco considerado aceitável e
 2. Selecione **Conformidade do dispositivo** > **Políticas** > **Criar política**.
 3. Insira um **Nome** e uma **Descrição**.
 4. Em **plataforma**, selecione **Windows 10 e posterior**.
-5. Nas configurações do **Microsoft Defender ATP**, defina **Exigir que o dispositivo esteja na pontuação de risco do computador ou abaixo** como o seu nível preferencial. 
+5. Nas configurações da **ATP do Microsoft Defender**, defina **Exigir que o dispositivo esteja na pontuação de risco do computador ou abaixo** como o seu nível preferencial. 
    
-   As classificações de nível de ameaça são [determinadas pelo Microsoft Defender ATP](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/alerts-queue).
+   As classificações de nível de ameaça são [determinadas pela ATP do Microsoft Defender](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/alerts-queue).
 
-   - **Limpar**: este é o nível mais seguro. O dispositivo não pode ter ameaças existentes e ainda acessar os recursos da empresa. Se nenhuma ameaça for encontrada, o dispositivo será avaliado como não compatível. O Microsoft Defender ATP usa o valor *Seguro*.
+   - **Limpar**: este é o nível mais seguro. O dispositivo não pode ter ameaças existentes e ainda acessar os recursos da empresa. Se nenhuma ameaça for encontrada, o dispositivo será avaliado como não compatível. A ATP do Microsoft Defender usa o valor *Seguro*.
    - **Baixo**: o dispositivo estará em conformidade se apenas ameaças de nível baixo existirem. Dispositivos com níveis de ameaça média ou alta não são compatíveis.
    - **Médio**: o dispositivo estará em conformidade se as ameaças encontradas no dispositivo forem de nível baixo ou médio. Se ameaças de nível alto forem detectadas, o dispositivo será determinado como não compatível.
    - **Alto**: este nível é o menos seguro e permite todos os níveis de ameaças. Sendo assim, os dispositivos com níveis de ameaça alta, média ou baixa são considerados compatíveis.
@@ -173,16 +174,16 @@ A política de Acesso Condicional bloqueia o acesso a recursos para dispositivos
 
 ## <a name="monitor-device-compliance"></a>Monitorar a conformidade do dispositivo  
 
-Em seguida, monitore o estado de dispositivos com a política de conformidade do Microsoft Defender ATP.
+Em seguida, monitore o estado de dispositivos com a política de conformidade da ATP do Microsoft Defender.
 
 1. Conecte-se ao [Intune](https://go.microsoft.com/fwlink/?linkid=2090973).
 2. Selecione **Conformidade do dispositivo** > **Conformidade com a política**.
-3. Localize sua política do Microsoft Defender ATP na lista e veja quais dispositivos são compatíveis ou não.
+3. Localize sua política da ATP do Microsoft Defender na lista e veja quais dispositivos são compatíveis ou não.
 
 ## <a name="next-steps"></a>Próximas etapas  
 
 [Acesso Condicional do Microsoft Defender ATP](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/conditional-access)   
-[Painel de risco do Microsoft Defender ATP](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/security-operations-dashboard)  
+[Painel de risco da ATP do Microsoft Defender](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/security-operations-dashboard)  
 [Use tarefas de segurança com o Gerenciamento de Vulnerabilidades da ATP para corrigir problemas em dispositivos](atp-manage-vulnerabilities.md).  
 [Introdução às políticas de conformidade do dispositivo](device-compliance-get-started.md)  
  

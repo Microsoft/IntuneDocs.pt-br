@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 7e69236f7babc974bca0db32245de2323627e494
-ms.sourcegitcommit: bccfbf1e3bdc31382189fc4489d337d1a554e6a1
+ms.openlocfilehash: cba8b59931bd60db0d9169af5016f01118c64cf0
+ms.sourcegitcommit: b30a2ba2b67aa2fc3421f0b2f6c5f361a0de612a
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/03/2019
-ms.locfileid: "67548343"
+ms.lasthandoff: 08/14/2019
+ms.locfileid: "69022839"
 ---
 # <a name="develop-a-rollout-communication-plan"></a>Desenvolver um plano de comunicação para distribuição
 
@@ -50,7 +50,7 @@ Determinar quais informações devem ser comunicadas dependerá da fase do proce
 
 **Etapa pós-registro**<br/> Comunicações voltadas para grupos e usuários da organização que estão registrados no Intune. Elas devem fornecer recursos adicionais que podem ser úteis para o usuário, bem como coletar comentários sobre sua experiência durante e após o registro.
 
-Este [guia de registro do usuário final](https://gallery.technet.microsoft.com/Intune-End-User-Enrollment-3a0c9b0c?WT.mc_id=Blog_Intune_General_PCIT) pode ser útil. Você pode usá-lo ou modificá-lo para sua organização.
+Talvez o [Kit de Adoção do Intune](https://aka.ms/IntuneAdoptionKit) seja uma opção útil. Você pode usá-lo no estado em que se encontra ou modificá-lo para sua organização.
 
 ## <a name="communication-delivery-methods"></a>Métodos de entrega de comunicação
 

@@ -6,7 +6,7 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 06/05/2019
+ms.date: 08/19/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.localizationpriority: high
@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 7636e1914e23e7009a25f45f330fe85af2a03536
-ms.sourcegitcommit: 293dfbea2b4756bb9b7df1705a2b5f752dfaa807
+ms.openlocfilehash: 8ec1af80d52a8331c2bef136cd0947b81beaa3ea
+ms.sourcegitcommit: b1ddc7f4a3d520b7d6755c7a423a46d1e2548592
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/01/2019
-ms.locfileid: "68701006"
+ms.lasthandoff: 08/20/2019
+ms.locfileid: "69651166"
 ---
 # <a name="manage-web-access-by-using-microsoft-edge-with-microsoft-intune"></a>Gerenciar o acesso via Web usando o Microsoft Edge com o Microsoft Intune
 
@@ -181,7 +181,22 @@ Use o par chave-valor a seguir para configurar um atalho de home page:
 |    Chave    |    Valor    |
 |-------------------------------------------------------------------|-------------|
 |    com.microsoft.intune.mam.managedbrowser.homepage   |    Especifique uma URL válida. URLs incorretas são bloqueadas como medida de segurança.<br>**Exemplo:**  <`https://www.bing.com`>
-    |
+
+## <a name="configure-your-organizations-logo-and-brand-color-for-new-tab-pages-in-microsoft-edge"></a>Configure o logotipo e a cor da marca de sua organização para páginas nova guia no Microsoft Edge
+
+Essas configurações permitem personalizar a página Nova guia do Microsoft Edge para exibir o logotipo e a cor da marca de sua organização como página de plano de fundo.
+
+Para carregar o logotipo e a cor da organização, primeiro realize estas etapas:
+- No portal do Azure, navegue até Intune -> Aplicativos cliente -> Identidade visual e personalização -> Identidade Visual da Empresa
+- Para definir o logotipo da marca, em "Exibição", escolha "Logotipo da empresa". É recomendável usar logotipos de plano fundo transparentes. 
+- Para definir a cor da tela de fundo da marca, em "Exibição" selecione "Cor do Tema". O Microsoft Edge aplica um tom mais claro da cor na página Nova guia, o que garante a alta legibilidade da página. 
+
+Em seguida, use os seguintes pares chave-valor para adicionar a identidade visual de sua organização ao Microsoft Edge:
+
+|    Chave    |    Valor    |
+|--------------------------------------------------------------------|------------|
+|    com.microsoft.intune.mam.managedbrowser.NewTabPage.BrandLogo    |    verdadeiro    |
+|    com.microsoft.intune.mam.managedbrowser.NewTabPage.BrandColor    |    verdadeiro    |
 
 ## <a name="configure-managed-bookmarks-for-microsoft-edge"></a>Configurar indicadores gerenciados para o Microsoft Edge
 
@@ -232,7 +247,8 @@ Você pode usar vários formatos de URL para criar suas listas de sites permitid
     |    `http://www.contoso.com`    |    Corresponde a uma única página    |    `www.contoso.com`    |    `host.contoso.com`<br>`www.contoso.com/images`<br>`contoso.com/`    |
     |    `http://contoso.com`    |    Corresponde a uma única página    |    `contoso.com/`    |    `host.contoso.com`<br>`www.contoso.com/images`<br>`www.contoso.com`    |
     |    `http://www.contoso.com/*;`   |    Corresponde a todas as URLs iniciadas por `www.contoso.com`    |    `www.contoso.com`<br>`www.contoso.com/images`<br>`www.contoso.com/videos/tvshows`    |    `host.contoso.com`<br>`host.contoso.com/images`    |
-    |    `http://*.contoso.com/*`    |    Corresponde a todos os subdomínios em `contoso.com`    |    `developer.contoso.com/resources`<br>`news.contoso.com/images`<br>`news.contoso.com/videos`    |    `contoso.host.com`    |    `http://*contoso.com/*`    |    Corresponde a todos os subdomínios terminados em `contoso.com/`    |    `http://news-contoso.com`<br>`http://news-contoso.com.com/daily`    |    `http://news-contoso.host.com`    |
+    |    `http://*.contoso.com/*`    |    Corresponde a todos os subdomínios em `contoso.com`    |    `developer.contoso.com/resources`<br>`news.contoso.com/images`<br>`news.contoso.com/videos`    |    `contoso.host.com`
+    |    `http://*contoso.com/*`    |    Corresponde a todos os subdomínios terminados em `contoso.com/`    |    `http://news-contoso.com`<br>`http://news-contoso.com.com/daily`    |    `http://news-contoso.host.com`    |
     `http://www.contoso.com/images`    |    Corresponde a uma única pasta    |    `www.contoso.com/images`    |    `www.contoso.com/images/dogs`    |
     |    `http://www.contoso.com:80`    |    Corresponde a uma única página, usando um número da porta    |    `http://www.contoso.com:80`    |         |
     |    `https://www.contoso.com`    |    Corresponde a uma única página segura    |    `https://www.contoso.com`    |    `http://www.contoso.com`    |

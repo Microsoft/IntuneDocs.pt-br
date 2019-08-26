@@ -5,7 +5,7 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 05/20/2019
+ms.date: 08/20/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.localizationpriority: high
@@ -14,12 +14,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 7ce117f21c1ad78c2c977466398ce6d30989cc6a
-ms.sourcegitcommit: a2bad7465422b98eb3c10f03dc5a24fd99cee78d
+ms.openlocfilehash: 9f8560262d8c501af4127876eaafed293fbc4041
+ms.sourcegitcommit: b1ddc7f4a3d520b7d6755c7a423a46d1e2548592
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/13/2019
-ms.locfileid: "67041302"
+ms.lasthandoff: 08/20/2019
+ms.locfileid: "69651204"
 ---
 # <a name="monitor-intune-device-compliance-policies"></a>Monitorar as políticas de conformidade do Dispositivo do Intune
 
@@ -152,7 +152,9 @@ O relatório **Conformidade dos dispositivos** > **Conformidade com a configura�
 Ao selecionar uma configuração específica, você pode ver o **status de conformidade**, o **alias de email do usuário**, o **modelo de dispositivo** e o **local** de cada dispositivo de destino dessa configuração.
 
 > [!NOTE]
-> Os dispositivos Windows 10 associados ao Azure AD podem exibir a Conta do Sistema como um usuário não compatível. Esse é o comportamento esperado e não afeta a conformidade geral do dispositivo. 
+> É possível atribuir uma política a um dispositivo e a um usuário no mesmo dispositivo. Em alguns cenários, um dispositivo pode ser sincronizado antes da entrada do usuário, como quando o dispositivo é reinicializado. A conformidade pode avaliar esse usuário e mostrar o dispositivo como não compatível. Esse comportamento também pode mostrar a Conta do Sistema como um usuário não compatível.
+>
+> Esse é um problema conhecido de dispositivos Windows 10 com vários usuários. Todas as alterações ou atualizações desse comportamento são anunciadas em [Em desenvolvimento](in-development.md) e/ou em [Novidades](whats-new.md).
 
 ## <a name="view-status-of-device-policies"></a>Exibir o status de políticas de dispositivo
 

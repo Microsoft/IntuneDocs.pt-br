@@ -16,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure; get-started
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: eaefcc904d9969c7f356e3eceb924e8d153f912d
-ms.sourcegitcommit: 7315fe72b7e55c5dcffc6d87f185f3c2cded9028
+ms.openlocfilehash: 83b1de6c246baaef54a31c0b3f4c5094d066c64d
+ms.sourcegitcommit: b78793ccbef2a644a759ca3110ea73e7ed6ceb8f
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/02/2019
-ms.locfileid: "67528248"
+ms.lasthandoff: 08/16/2019
+ms.locfileid: "69549972"
 ---
 # <a name="role-based-access-control-rbac-with-microsoft-intune"></a>RBAC (controle de acesso baseado em função) com o Microsoft Intune
 
@@ -85,16 +85,16 @@ Uma atribuição de função define:
 Para ver uma atribuição de função, escolha **Intune** > **Funções** > **Todas as funções** > escolha uma atribuição. Você verá as seguintes páginas:
 
 - **Propriedades**: o nome, a descrição, a função, os membros, os escopos e as marcas da atribuição.
-- **Membros**: todos os usuários em grupos listados têm permissão para gerenciar os usuários/dispositivos listados no Escopo (Grupos).
-- **Escopo (Grupos)** : todos os usuários/dispositivos nesses grupos podem ser gerenciados pelos usuários em Membros.
+- **Membros**: todos os usuários dos grupos listados no Azure têm permissão para gerenciar os usuários/dispositivos listados no Escopo (Grupos).
+- **Escopo (Grupos)** : todos os usuários/dispositivos desses grupos de segurança do Azure podem ser gerenciados pelos usuários em Membros.
 - **[Escopo (Marcas)](scope-tags.md)** : os usuários em Membros podem ver os recursos que têm as mesmas marcas de escopo.
 
 ### <a name="multiple-role-assignments"></a>Várias atribuições de função
-Se um usuário tiver várias atribuições de função, as permissões nelas se estenderão a diferentes objetos, da seguinte maneira:
+Se um usuário tiver várias atribuições de função, permissões e marcas de escopo, essas atribuições de função se estenderão a diferentes objetos, da seguinte maneira:
 
-- permissões para atribuir aplicam-se somente aos objetos (como políticas ou aplicativos) no Escopo (grupos) de atribuição dessa função. permissões para atribuir não se aplicam a objetos em outras atribuições de função, a menos que outra atribuição especificamente os conceda.
-- outras permissões (como de criação e leitura), que se aplicam a todos os objetos do mesmo tipo (como todas as políticas ou todos os aplicativos) em qualquer uma das atribuições do usuário.
-- permissões para objetos de tipos diferentes (como políticas ou aplicativos) não se aplicam umas às outras. uma permissão de leitura para uma política, por exemplo, não fornece uma permissão de leitura a aplicativos nas atribuições do usuário.
+- Permissões de atribuição e marcas de escopo se aplicam somente aos objetos (como políticas ou aplicativos) no Escopo (Grupos) da atribuição dessa função. Permissões de atribuição e marcas de escopo não se aplicam a objetos em outras atribuições de função, a menos que outra atribuição as conceda especificamente.
+- Outras permissões (como de criação, leitura, atualização e exclusão) e marcas de escopo se aplicam a todos os objetos do mesmo tipo (como todas as políticas ou todos os aplicativos), em qualquer uma das atribuições do usuário.
+- Permissões e marcas de escopo para objetos de tipos diferentes (como políticas ou aplicativos) não se aplicam umas às outras. uma permissão de leitura para uma política, por exemplo, não fornece uma permissão de leitura a aplicativos nas atribuições do usuário.
 
 ## <a name="next-steps"></a>Próximas etapas
 - [Atribuir uma função a um usuário](assign-role.md)

@@ -6,7 +6,7 @@ keywords: ''
 author: brenduns
 ms.author: brenduns
 manager: dougeby
-ms.date: 07/19/2019
+ms.date: 08/15/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.localizationpriority: high
@@ -16,12 +16,12 @@ ms.reviewer: shpate
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: 64bdc59e08a2b17c82e1798d454f0a0403e61b13
-ms.sourcegitcommit: 99b74d7849fbfc8f5cf99cba33e858eeb9f537aa
+ms.openlocfilehash: 76a0df5933127641d299a2a2f5e01d848e4d5d18
+ms.sourcegitcommit: b78793ccbef2a644a759ca3110ea73e7ed6ceb8f
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "68671052"
+ms.lasthandoff: 08/16/2019
+ms.locfileid: "69550125"
 ---
 # <a name="monitor-device-encryption-with-intune"></a>Monitorar a criptografia do dispositivo com o Intune   
 
@@ -102,15 +102,15 @@ Quando você seleciona um dispositivo no Relatório de criptografia, o Intune ex
   Veja a seguir exemplos dos detalhes do status que o Intune pode relatar:  
   
   **macOS**:
-  - O perfil não pode ser instalado no momento, pois estamos aguardando um pré-requisito.  
+  - A chave de recuperação ainda não foi recuperada e armazenada. Provavelmente, o dispositivo não foi desbloqueado ou não fez check-in.  
  
-    *Considere: Esse resultado não representa necessariamente uma condição de erro, mas um estado temporário que pode ocorrer devido ao tempo no dispositivo durante o qual a caução para as chaves de recuperação precisa ser configurada antes que a solicitação de criptografia seja enviada ao dispositivo. Isso também pode indicar que o dispositivo permanece bloqueado ou não fez check-in no Intune recentemente. Por fim, como a criptografia FileVault não será iniciada enquanto um dispositivo não for conectado (carregando), é possível que um usuário receba uma chave de recuperação para um dispositivo que ainda não está criptografado*.  
+    *Considere: Esse resultado não representa necessariamente uma condição de erro, mas um estado temporário que pode ocorrer devido ao tempo no dispositivo durante o qual a caução para as chaves de recuperação precisa ser configurada antes que a solicitação de criptografia seja enviada ao dispositivo. Esse status também pode indicar que o dispositivo permanece bloqueado ou não fez check-in no Intune recentemente. Por fim, como a criptografia FileVault não será iniciada enquanto um dispositivo não for conectado (carregando), é possível que um usuário receba uma chave de recuperação para um dispositivo que ainda não está criptografado*.  
 
-  - O perfil do FileVault está instalado, mas o FileVault não está habilitado no dispositivo.  
+  - O usuário está adiando a criptografia ou está em processo de criptografia.  
  
     *Considere: O usuário ainda não fez logoff depois de receber a solicitação de criptografia, o que é necessário antes que o FileVault possa criptografar o dispositivo, ou o usuário descriptografou o dispositivo manualmente. O Intune não pode impedir que um usuário descriptografe seu dispositivo.*  
 
-  - O FileVault já está habilitado pelo usuário e, portanto, o Intune não pode gerenciar sua recuperação.  
+  - O dispositivo já está criptografado. O usuário do dispositivo precisa descriptografá-lo para continuar.  
  
     *Considere: O Intune não pode configurar o FileVault em um dispositivo que já está criptografado. Em vez disso, o usuário precisa descriptografar seu dispositivo manualmente antes que ele possa ser gerenciado por uma política de configuração de dispositivos e pelo Intune*. 
  
@@ -118,9 +118,9 @@ Quando você seleciona um dispositivo no Relatório de criptografia, o Intune ex
  
     *Considere: No macOS versão 10.15 (Catalina) em diante, as configurações de Registro aprovadas pelo usuário podem exigir que os usuários aprovem manualmente a criptografia FileVault. Para obter mais informações, confira [Registro aprovado pelo usuário](macos-enroll.md) na documentação do Intune*.  
 
-  - O dispositivo iOS retornou um NotNow (ele está bloqueado).  
+  - Desconhecido.  
 
-    *Considere: O dispositivo está bloqueado no momento, e o Intune não pode iniciar o processo de caução nem de criptografia. Depois que o dispositivo for desbloqueado, o progresso poderá continuar*.  
+    *Considere: Uma possível causa de um status desconhecido é que o dispositivo está bloqueado e o Intune não pode iniciar o processo de caução ou de criptografia. Depois que o dispositivo for desbloqueado, o progresso poderá continuar*.  
 
   **Windows 10**:  
   - A política do BitLocker requer o consentimento do usuário para iniciar o Assistente de Criptografia de Unidade de Disco BitLocker para iniciar a criptografia do volume do sistema operacional, mas o usuário não consentiu.  
@@ -161,7 +161,7 @@ Ao exibir o painel Relatório de criptografia, você pode selecionar **Exportar*
   
 ![Exportar detalhes](./media/encryption-monitor/export.png) 
  
-Esse relatório pode ser usado para identificar problemas de grupos de dispositivos. Por exemplo, você pode usar o relatório para identificar uma lista de todos os dispositivos macOS que relatam a mensagem *O FileVault já foi habilitado pelo usuário*, o que indica os dispositivos que precisam ser descriptografados manualmente antes que o Intune possa começar a gerenciar suas configurações do FileVault.  
+Esse relatório pode ser usado para identificar problemas de grupos de dispositivos. Por exemplo, você pode usar o relatório para identificar uma lista de todos os dispositivos macOS que relatam a mensagem *O FileVault já foi habilitado pelo usuário*, o que indica os dispositivos que precisam ser descriptografados manualmente para que o Intune possa gerenciar suas configurações do FileVault.  
  
 ## <a name="filevault-recovery-keys"></a>Chaves de recuperação do FileVault   
 Quando o Intune criptografa um dispositivo macOS com o FileVault pela primeira vez, uma chave de recuperação pessoal é criada. Após a criptografia, o dispositivo exibe a chave pessoal uma única vez para o usuário final.  
