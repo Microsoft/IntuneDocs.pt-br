@@ -541,7 +541,7 @@
       items:
         - name: O que é o gerenciamento de aplicativos do Intune?
           href: app-management.md
-        - name: Adicionar aplicativos
+        - name: Visão geral da adição de aplicativos
           href: apps-add.md
           displayName: apk; ipa; msi; appx; appxbundle; msix; msixbundle; app
           items:
@@ -645,7 +645,7 @@
               href: apps-selective-wipe.md
             - name: Usar políticas de proteção de aplicativo
               items:
-                - name: Compreender políticas de proteção do aplicativo
+                - name: Visão geral das políticas de proteção de aplicativos
                   href: app-protection-policy.md
                   displayName: app; protection; policy
                 - name: Criar políticas de proteção do aplicativo

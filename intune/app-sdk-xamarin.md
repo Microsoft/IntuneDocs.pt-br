@@ -5,7 +5,7 @@ keywords: sdk, Xamarin, intune
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 04/08/2019
+ms.date: 08/21/2019
 ms.topic: reference
 ms.service: microsoft-intune
 ms.localizationpriority: medium
@@ -16,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: a8d1ad3648348783306fb0bc1e61defc4197a9d9
-ms.sourcegitcommit: 864fdf995c2b41f104a98a7e2665088c2864774f
+ms.openlocfilehash: dcfc43c3fe023d54c99a88356f9bfc2a8bdebc47
+ms.sourcegitcommit: 4f3fcc6dcbfe2c4e0651d54a130907a25a4ff66e
 ms.translationtype: MTE75
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "68680055"
+ms.lasthandoff: 08/22/2019
+ms.locfileid: "69894349"
 ---
 # <a name="microsoft-intune-app-sdk-xamarin-bindings"></a>Associações Xamarin do SDK de Aplicativo do Microsoft Intune
 
@@ -55,9 +55,11 @@ Os aplicativos Xamarin criados com as Associações do Xamarin do SDK de Aplicat
 
 Examine os [termos de licença](https://github.com/msintuneappsdk/intune-app-sdk-xamarin/blob/master/Microsoft%20License%20Terms%20Intune%20App%20SDK%20Xamarin%20Component.pdf). Imprimir e guardar uma cópia dos termos de licença para seus registros. Ao baixar e usar as Associações do Xamarin do SDK de Aplicativo do Intune, você concorda com esses termos de licença. Se você não os aceitar, não use o software.
 
-O SDK depende da [Biblioteca de Autenticação do Active Directory (ADAL)](https://azure.microsoft.com/documentation/articles/active-directory-authentication-libraries/) para a [autenticação](https://azure.microsoft.com/documentation/articles/active-directory-authentication-scenarios/) e cenários de inicialização condicional, o que exige que os aplicativos sejam configurados com o [Azure Active Directory](https://azure.microsoft.com/documentation/articles/active-directory-whatis/). 
+O SDK do Intune depende da [Biblioteca de Autenticação do Active Directory (ADAL)](https://azure.microsoft.com/documentation/articles/active-directory-authentication-libraries/) para a [autenticação](https://azure.microsoft.com/documentation/articles/active-directory-authentication-scenarios/) e cenários de inicialização condicional, o que exige que os aplicativos sejam configurados com o [Azure Active Directory](https://azure.microsoft.com/documentation/articles/active-directory-whatis/). 
 
 Caso seu aplicativo já esteja configurado para usar a ADAL ou a MSAL e tenha sua própria ID do cliente personalizada usada para se autenticar com o Azure Active Directory, verifique se as etapas para conceder permissões do aplicativo Xamarin ao serviço de MAM (gerenciamento de aplicativo móvel) do Intune são seguidas. Use as instruções descritas na seção "[Fornecer ao aplicativo o acesso ao serviço de Proteção de Aplicativo do Intune](app-sdk-get-started.md#give-your-app-access-to-the-intune-app-protection-service-optional)" do [guia de introdução ao SDK do Intune](app-sdk-get-started.md).
+
+
 
 ## <a name="enabling-intune-app-protection-polices-in-your-ios-mobile-app"></a>Habilite as políticas de proteção de aplicativo do Intune políticas em seu aplicativo móvel iOS
 1. Adicione o [pacote do NuGet Microsoft.Intune.MAM.Xamarin.iOS](https://www.nuget.org/packages/Microsoft.Intune.MAM.Xamarin.iOS) ao seu projeto Xamarin.iOS.
@@ -83,13 +85,15 @@ Caso seu aplicativo já esteja configurado para usar a ADAL ou a MSAL e tenha su
       IntuneMAMEnrollmentManager.Instance.RegisterAndEnrollAccount(string identity);
       ```
 
-      Os aplicativos podem determinar o resultado de uma tentativa de registro implementando o método EnrollmentRequestWithStatus em uma subclasse de IntuneMAMEnrollmentDelegate e configurando a propriedade Delegado do IntuneMAMEnrollmentManager para uma instância da classe. Consulte nosso [aplicativo de amostra do Xamarin.iOS](https://github.com/msintuneappsdk/sample-intune-xamarin-ios) para ver um exemplo.
+      Os aplicativos podem determinar o resultado de uma tentativa de registro implementando o método EnrollmentRequestWithStatus em uma subclasse de IntuneMAMEnrollmentDelegate e configurando a propriedade Delegado do IntuneMAMEnrollmentManager para uma instância da classe. 
 
       Após um registro bem-sucedido, os aplicativos podem determinar o UPN da conta registrado (se desconhecido anteriormente) consultando a propriedade a seguir: 
 
       ```csharp
        string enrolledAccount = IntuneMAMEnrollmentManager.Instance.EnrolledAccount;
       ```      
+### <a name="sample-applications"></a>Aplicativos de Exemplo
+Aplicativos de exemplo destacando a funcionalidade de MAM em aplicativos Xamarin. iOS estão disponíveis no [GitHub](https://github.com/msintuneappsdk/sample-intune-xamarin-ios).
 
 > [!NOTE] 
 > Não há nenhum remapeador para o iOS. A integração em um aplicativo Xamarin.Forms deve ser feita da mesma maneira que para um projeto normal do Xamarin.iOS. 
@@ -205,6 +209,7 @@ Isso é esperado porque quando o remapeador modifica a herança de classes do Xa
 
 #### <a name="troubleshooting"></a>Solução de problemas
 * Se você estiver encontrando uma tela branca em branco em seu aplicativo na inicialização, talvez seja necessário forçar as chamadas de navegação a serem executadas no thread principal.
+* As associações do Xamarin SDK do Intune não oferecem suporte a aplicativos que usam uma estrutura de plataforma cruzada, como MvvmCross, devido a conflitos entre MvvmCross e classes MAM do Intune. Embora alguns clientes possam ter tido sucesso com a integração depois de mover seus aplicativos para o Xamarin. Forms, não fornecemos orientações ou plugins explícitos para desenvolvedores de aplicativos usando o MvvmCross.
 
 ### <a name="company-portal-app"></a>Aplicativo do Portal da Empresa
 As associações do Xamarin SDK do Intune dependem da presença do aplicativo [portal da empresa](https://play.google.com/store/apps/details?id=com.microsoft.windowsintune.companyportal) Android no dispositivo para habilitar as políticas de proteção do aplicativo. O Portal da Empresa recupera as políticas de proteção de aplicativo do serviço Intune. Quando o aplicativo é inicializado, ele carrega a política e o código para impor essa política do Portal da Empresa. O usuário não precisa estar conectado.
@@ -215,7 +220,7 @@ As associações do Xamarin SDK do Intune dependem da presença do aplicativo [p
 Para a proteção do aplicativo sem registro de dispositivo, o usuário _**não**_ precisa registrar o dispositivo usando o aplicativo do Portal da Empresa.
 
 ### <a name="sample-applications"></a>Aplicativos de Exemplo
-Aplicativos de exemplo destacando a funcionalidade de MAM nos aplicativos Xamarin. Android e Xamarin Forms estão disponíveis no [GitHub](https://github.com/msintuneappsdk/Taskr-Sample-Intune-Xamarin-Android-Apps).
+Aplicativos de exemplo destacando a funcionalidade de MAM nos aplicativos Xamarin. Android e Xamarin. Forms estão disponíveis no [GitHub](https://github.com/msintuneappsdk/Taskr-Sample-Intune-Xamarin-Android-Apps).
 
 ## <a name="support"></a>Suporte
-Se a sua organização for um cliente do Intune existente, trabalhe com seu representante do Suporte da Microsoft para abrir um tíquete de suporte e criar um problema [na página de problemas do GitHub](https://github.com/msintuneappsdk/intune-app-sdk-xamarin/issues), e nós ajudaremos assim que possível. 
+Se a sua organização for um cliente do Intune existente, trabalhe com seu representante do Suporte da Microsoft para abrir um tíquete de suporte e criar um problema [na página de problemas do GitHub](https://github.com/msintuneappsdk/intune-app-sdk-xamarin/issues). Ajudaremos assim que for possível. 

@@ -14,12 +14,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure; seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 6fb1111a7f660e8c59f45fb1893364dcadd34dca
-ms.sourcegitcommit: 6a8de7bb4870ea19aa08db1f188ea7b5e8a387dd
+ms.openlocfilehash: e8300e9a4faf29ada79fad2a11e2470b965b53d1
+ms.sourcegitcommit: b64869b4be357c0741ec01b1a2f0bae13efce937
 ms.translationtype: MTE75
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/15/2019
-ms.locfileid: "69487747"
+ms.lasthandoff: 08/23/2019
+ms.locfileid: "69998886"
 ---
 # <a name="windows-10-and-later-device-settings-to-run-as-a-kiosk-in-intune"></a>Configurações de dispositivos com Windows 10 (e posterior) para execução como um quiosque no Intune
 
@@ -97,6 +97,17 @@ Executa apenas um aplicativo no dispositivo.
   - **Adicionar aplicativo da Store**: selecione **Adicionar um aplicativo da Store** e escolha um aplicativo na lista.
 
     Não tem aplicativos listados? Adicione alguns usando as etapas em [Aplicativos cliente](apps-add.md).
+    
+ - **Especificar janela de manutenção para reinicializações de aplicativo**: o padrão é "não configurado", selecione "exigir" para verificar se há aplicativos que exigem uma reinicialização para concluir a instalação.
+ 
+     Se estiver usando o navegador de quiosque ou outro Microsoft Store para o aplicativo de negócios, decida com que frequência verificar se há atualizações de aplicativo que exigem reinicialização para concluir a instalação do aplicativo. Se não estiver configurado, Microsoft Store para aplicativos de negócios será reiniciado em um tempo não agendado 3 dias após a instalação de uma atualização de aplicativo.
+     
+     - **Hora de início da janela de manutenção**: selecione a data e hora do dia para iniciar a verificação de clientes para qualquer atualização de aplicativo que exija reinicialização. A hora de início padrão é meia-noite ou zero minutos.
+     
+     - **Recorrência da janela de manutenção**: o padrão é diário.
+         Defina com que frequência as janelas de manutenção para atualizações de aplicativo ocorrerão. A recomendação é diária para evitar reinicializações de aplicativo não agendadas.
+
+  [ApplicationManagement/ScheduleForceRestartForUpdateFailures CSP](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-applicationmanagement#applicationmanagement-scheduleforcerestartforupdatefailures)
 
 ## <a name="multi-app-kiosks"></a>Quiosques de vários aplicativos
 
