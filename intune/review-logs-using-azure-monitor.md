@@ -74,7 +74,7 @@ Dependendo de onde você deseja rotear os dados de log de auditoria, serão nece
     - **Enviar para o Log Analytics**: Envia os dados ao Azure Log Analytics. Se você quiser usar as visualizações, monitoramento e alertas nos logs, escolha esta opção.
 
         1. Escolha esta opção > **Configurar**. 
-        2. Crie um novo espaço de trabalho e insira os detalhes do espaço de trabalho. Ou escolha um espaço de trabalho existente na lista > **OK**.
+        2. Crie um novo workspace e insira os detalhes do workspace. Ou escolha um espaço de trabalho existente na lista > **OK**.
 
             O [espaço de trabalho do Azure Log Analytics](https://docs.microsoft.com/azure/azure-monitor/learn/quick-create-workspace) fornece mais detalhes sobre essas configurações.
 

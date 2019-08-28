@@ -30,7 +30,7 @@ Slack é um aplicativo de colaboração que você pode usar com o Microsoft Intu
 
 Neste tutorial, você vai:
 > [!div class="checklist"]
-> - Configurar o Intune como o provedor de Gerenciamento de Mobilidade Empresarial (EMM) no seu Slack Enterprise Grid. Você poderá limitar o acesso aos espaços de trabalho do plano da sua grade para dispositivos gerenciados pelo Intune.
+> - Configurar o Intune como o provedor de Gerenciamento de Mobilidade Empresarial (EMM) no seu Slack Enterprise Grid. Você poderá limitar o acesso aos workspaces do plano da sua grade para dispositivos gerenciados pelo Intune.
 > - Criar políticas de configuração de aplicativos para gerenciar o aplicativo Slack no iOS e o aplicativo Slack para dispositivos de perfil de trabalho do Android.
 > - Criar uma política de conformidade de dispositivos do Intune a fim de definir as condições que os dispositivos Android e iOS devem atender para serem considerados compatíveis.
 
@@ -156,7 +156,7 @@ Definir uma política de conformidade do Intune para dispositivos a fim de defin
 
 ## <a name="launch-slack"></a>Iniciar o Slack
 
-Com as políticas que você acabou de criar, qualquer dispositivo de perfil de trabalho iOS ou Android que tentar entrar em um dos seus espaços de trabalho precisará ser registrado no Intune. Para testar este cenário, tente iniciar o Slack para EMM em um dispositivo do iOS registrado no Intune ou inicie o Slack em um dispositivo de perfil de trabalho do Android registrado no Intune. 
+Com as políticas que você acabou de criar, qualquer dispositivo de perfil de trabalho iOS ou Android que tentar entrar em um dos seus workspaces precisará ser registrado no Intune. Para testar este cenário, tente iniciar o Slack para EMM em um dispositivo do iOS registrado no Intune ou inicie o Slack em um dispositivo de perfil de trabalho do Android registrado no Intune. 
 
 ## <a name="next-steps"></a>Próximas etapas
 
