@@ -5,7 +5,7 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 05/01/2019
+ms.date: 08/22/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.localizationpriority: high
@@ -14,12 +14,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: bf808a9a7f5a801997f37bd2ecf4c13e3823c332
-ms.sourcegitcommit: 4b83697de8add3b90675c576202ef2ecb49d80b2
+ms.openlocfilehash: 1c13bffa797d8480ee0ba1db2b72c787ed94274f
+ms.sourcegitcommit: dbb2410de7e4849626f84ef07cf6a2891bcdd542
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/13/2019
-ms.locfileid: "67044808"
+ms.lasthandoff: 08/22/2019
+ms.locfileid: "69974254"
 ---
 # <a name="automate-email-and-add-actions-for-noncompliant-devices-in-intune"></a>Automatizar email e adicionar ações para dispositivos sem conformidade no Intune
 
@@ -103,7 +103,13 @@ Quando você cria uma política de conformidade de dispositivo, o Intune cria au
     
     - **Bloquear remotamente um dispositivo fora de conformidade**: quando o dispositivo não estiver em conformidade, bloqueie o dispositivo. Essa ação força o usuário a inserir um PIN ou uma senha para desbloquear o dispositivo. 
     
-5. Configurar um **Agendamento**: insira o número de dias (0 a 365) após a não conformidade disparar a ação nos dispositivos dos usuários. Após esse período de carência, será possível impor uma política de Acesso Condicional. Se você inserir **0** (zero) número de dias, o Acesso Condicional entrará em vigor **imediatamente**. Por exemplo, será possível bloquear o acesso a recursos corporativos imediatamente se um dispositivo não for compatível.
+5. Configurar um **Agendamento**: insira o número de dias (0 a 365) após a não conformidade disparar a ação nos dispositivos dos usuários. Após esse período de carência, será possível impor uma política de [acesso condicional](conditional-access-intune-common-ways-use.md). Se você inserir **0** (zero) número de dias, o acesso condicional entrará em vigor **imediatamente**. Por exemplo, se um dispositivo não for compatível, use o acesso condicional para bloquear imediatamente o acesso ao email, ao SharePoint e a outros recursos da organização.
+
+    Ao criar uma política de conformidade, a ação **Marcar o dispositivo como não compatível** é automaticamente criada e definida como **0** dia (imediatamente). Com essa ação, quando o dispositivo faz check-in, é imediatamente avaliado como não compatível. Se o acesso condicional também estiver em uso, esse acesso será ativado imediatamente. Se você quiser conceder um período de carência, altere o **Agendamento** na ação **Marcar o dispositivo como não compatível**.
+    
+    Em sua política de conformidade, por exemplo, você também quer notificar o usuário. Você pode adicionar a ação **Enviar email para o usuário final**. Nessa ação de **Enviar email**, defina o **Agendamento** como 2 dias. Se o dispositivo ou usuário final ainda for avaliado como não compatível no dia 2, seu email será enviado no dia 2. Se você quiser enviar novamente um email de não conformidade ao usuário no dia 5, adicione outra ação e defina o **Agendamento** como 5 dias.
+
+    Para obter mais informações sobre conformidade e as ações internas, confira a [visão geral de conformidade](device-compliance-get-started.md).
 
 6. Após terminar, selecione **Adicionar** > **OK** para salvar suas alterações.
 

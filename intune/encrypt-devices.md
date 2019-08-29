@@ -16,12 +16,12 @@ ms.reviewer: annovich
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: b7c76439b734837b5a4dd7e5fdbba5d21d0681d7
-ms.sourcegitcommit: ec22a186a9cfa489a8490698e387624e480892d8
+ms.openlocfilehash: 5e97e23322150c7a030a3657b6476090d719a448
+ms.sourcegitcommit: a6385b8370c20a44d0869f7920d6b2866edaa5e2
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/13/2019
-ms.locfileid: "68960436"
+ms.lasthandoff: 08/26/2019
+ms.locfileid: "70027395"
 ---
 # <a name="use-device-encryption-with-intune"></a>Usar a Criptografia do Dispositivo com o Intune  
 
@@ -80,6 +80,8 @@ Para obter detalhes sobre a configuração do FileVault que pode ser gerenciada 
 ### <a name="manage-filevault"></a>Gerenciar o FileVault  
 
 Depois que o Intune criptografar um dispositivo macOS com o FileVault, você poderá exibir e gerenciar as chaves de recuperação do FileVault ao exibir o [relatório de criptografia](encryption-monitor.md) do Intune.  
+
+Depois que o Intune criptografa um dispositivo macOS com o FileVault, você pode exibir a chave de recuperação pessoal desse dispositivo no Portal da Empresa da Web em qualquer dispositivo. Assim que estiver no Portal da Empresa da Web, escolha o dispositivo macOS criptografado e, em seguida, selecione "Obter chave de recuperação" como uma ação de dispositivo remoto. 
 
 ## <a name="bitlocker-encryption-for-windows-10"></a>Criptografia BitLocker para o Windows 10  
 
