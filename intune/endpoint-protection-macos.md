@@ -14,12 +14,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 919fef62cf1d979d6a4f67c3653d90af1442fa55
-ms.sourcegitcommit: ec22a186a9cfa489a8490698e387624e480892d8
+ms.openlocfilehash: 97674627ac1894aa7fcf3f6a6550677b89e1a150
+ms.sourcegitcommit: 3f0cc80c5dbb4d04519c5aa98eae8426dad8cb30
 ms.translationtype: MTE75
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/13/2019
-ms.locfileid: "68960407"
+ms.lasthandoff: 08/29/2019
+ms.locfileid: "70158018"
 ---
 # <a name="macos-endpoint-protection-settings-in-intune"></a>Configurações de proteção de ponto de extremidade do macOS no Intune  
 
@@ -100,14 +100,14 @@ Para obter mais informações sobre as configurações do Apple FileVault, consu
     - **Rotação de chave de recuperação pessoal** – especifique com que frequência a chave de recuperação pessoal de um dispositivo será girada. Você pode selecionar o padrão **não configurado**ou um valor de **1** a **12** meses.  
 
   - **Desabilitar aviso ao sair**  
-    Impedir o prompt para o usuário que solicita que eles habilitem o FileVault quando eles se desconectarem.  Quando definido como habilitar, o prompt na saída é desabilitado e, em vez disso, o usuário recebe uma solicitação quando entra.  
+    Impedir o prompt para o usuário que solicita que eles habilitem o FileVault quando eles se desconectarem.  Quando definido como desabilitado, o prompt na saída é desabilitado e, em vez disso, o usuário recebe uma solicitação quando entra.  
     - **Não configurado**  
-    - **Habilitar** -desabilitar o prompt ao sair.
+    - **Desabilitar** – desabilitar o prompt na saída.
 
     **Padrão**: não configurado  
 
      > [!IMPORTANT]  
-     > Há um problema conhecido quando a configuração **Desabilitar prompt na saída** está definida como *Habilitar*. Quando definida como *Habilitar*, a configuração **Número de vezes permitido para bypass** deve ter um valor e não deve estar definida como *Não configurado*. Se estiver definida como *Não configurado*, o perfil falhará no dispositivo. Nesse cenário, o dispositivo informa que é um **Resumo de estado de perfil** como **Erro** sem mais detalhes.
+     > Há um problema conhecido quando a configuração **Desabilitar prompt na saída** está definida como *Desabilitar*. Quando definida como *Desabilitar*, a configuração **Número de vezes permitido para bypass** deve ter um valor e não deve estar definida como *Não configurado*. Se estiver definida como *Não configurado*, o perfil falhará no dispositivo. Nesse cenário, o dispositivo informa que é um **Resumo de estado de perfil** como **Erro** sem mais detalhes.
      > 
      > Quando **Desabilitar prompt na saída** estiver definida como *Não configurado*, o **Número de vezes permitido para bypass** pode ser *Não configurado* ou ter um valor.  
      > 
@@ -122,4 +122,5 @@ Para obter mais informações sobre as configurações do Apple FileVault, consu
  
     **Padrão**: não configurado  
 
+Para obter mais informações sobre o FileVault com o Intune, consulte [chaves de recuperação do FileVault](encryption-monitor.md#filevault-recovery-keys).
 

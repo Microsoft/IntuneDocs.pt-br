@@ -16,12 +16,12 @@ ms.reviewer: mghadial
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 6313741af237478bc5eea0cc5b5524250b5d46ac
-ms.sourcegitcommit: db68056e2db17dfdeaa216c684302567742e6416
+ms.openlocfilehash: e8af18192a3a15fee15dd2204ada572e6a67be1c
+ms.sourcegitcommit: 6c74ff568267d85fd1d44fda75e3e24ead87cb2b
 ms.translationtype: MTE75
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/13/2019
-ms.locfileid: "68993709"
+ms.lasthandoff: 08/28/2019
+ms.locfileid: "70063011"
 ---
 # <a name="troubleshoot-windows-device-enrollment-problems-in-microsoft-intune"></a>Solucionar problemas de registro de dispositivo Windows no Microsoft Intune
 
@@ -223,7 +223,7 @@ Para corrigir esse problema no MDM híbrido com o Intune e o Configuration Manag
 #### <a name="resolution"></a>Resolução
 1. Entre no [Portal do Azure](https://portal.azure.com/) como administrador.    
 2. Vá para **Azure Active Directory dispositivos > > configurações do dispositivo**.    
-3. Definir **usuários pode unir dispositivos ao Azure ad** a **todos** ou **selecionados**.
+3. Defina **Os usuários podem ingressar no Azure AD com seus dispositivos** como **Todos** ou **Selecionados**.
 
    Se você escolher **selecionado**, clique em **selecionado**e, em seguida, clique em **adicionar membros** para adicionar todos os usuários que podem ingressar seus dispositivos no Azure AD. Verifique se todas as contas do Azure AD para o pacote de provisionamento foram adicionadas.
  
@@ -331,11 +331,11 @@ Erro 0x80070774: algo deu errado. Confirme se você está usando as informaçõe
 
 Normalmente, esse problema ocorre antes de o dispositivo ser reiniciado em um cenário híbrido do Azure AD Pilot, quando o dispositivo atinge o tempo limite durante a tela de entrada inicial. Isso significa que o controlador de domínio não pode ser encontrado ou alcançado com êxito devido a problemas de conectividade. Ou que o dispositivo entrou em um estado que não pode ingressar no domínio.
 
-**Causa:** A causa mais comum é que a junção híbrida do Azure AD está sendo usada e o recurso atribuir usuário está configurado no perfil do AutoPilot. O uso do recurso atribuir usuário executa uma junção do Azure AD no dispositivo durante a tela de entrada inicial que coloca o dispositivo em um estado em que ele não pode ingressar no seu domínio local. Portanto, o recurso atribuir usuário deve ser usado somente em cenários de ingresso automático no Azure AD padrão.  O recurso deve ser usado em cenários de junção híbridas do Azure AD.
+**Causa:** A causa mais comum é que a junção híbrida do Azure AD está sendo usada e o recurso atribuir usuário está configurado no perfil do AutoPilot. O uso do recurso atribuir usuário executa uma junção do Azure AD no dispositivo durante a tela de entrada inicial que coloca o dispositivo em um estado em que ele não pode ingressar no seu domínio local. Portanto, o recurso atribuir usuário deve ser usado somente em cenários de ingresso automático no Azure AD padrão.  O recurso não deve ser usado em cenários de junção híbridas do Azure AD.
 
 #### <a name="resolution"></a>Resolução
 
-1. Vá para  >  **registro  >  de dispositivo do Intune dispositivos de registro do Windows. > 
+1. Vá para **registro** >  **de dispositivo do**  > **Intune dispositivos de registro** >  **do Windows**.
 2. Selecione o dispositivo que está enfrentando o problema > clique nas reticências (...) no lado mais à direita.
 3. Selecione **Cancelar atribuição de usuário** e aguarde a conclusão do processo.
 4. Verifique se o perfil de AutoPilot do Azure AD híbrido foi atribuído antes de tentar novamente o OOBE.
