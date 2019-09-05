@@ -15,12 +15,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 0c5ddb32502aa15f6eaf8f5866772ecd32e970d4
-ms.sourcegitcommit: 1b7ee2164ac9490df4efa83c5479344622c181b5
+ms.openlocfilehash: faff917dfafaaedb988cbbfb8174547f0b0ccf3b
+ms.sourcegitcommit: cf40f641af4746a1e34edd980dc6ec96fd040126
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/08/2019
-ms.locfileid: "67648450"
+ms.lasthandoff: 08/28/2019
+ms.locfileid: "70122260"
 ---
 # <a name="add-partner-certification-authority-in-intune-using-scep"></a>Adicionar autoridade de certificação de parceiro no Intune usando o SCEP
 
@@ -42,7 +42,7 @@ Este artigo fornece uma visão geral desse recurso de uma perspectiva do Adminis
 
 ## <a name="overview"></a>Visão geral
 
-As seguintes etapas fornecem uma visão geral da emissão de certificados SCEP no Intune:
+As seguintes etapas fornecem uma visão geral do uso do SCEP para certificados no Intune:
 
 1. No Intune, um administrador cria um perfil de certificado SCEP e, em seguida, direciona o perfil a usuários ou dispositivos.
 2. O dispositivo faz check-in no Intune.
@@ -106,9 +106,9 @@ Verifique se você tem as permissões necessárias para registrar um aplicativo 
 ### <a name="configure-and-deploy-a-scep-certificate-profile"></a>Configurar e implantar um perfil de certificado SCEP
 Como administrador, crie um perfil de certificado SCEP a ser direcionado a usuários ou dispositivos. Em seguida, atribua o perfil.
 
-- [Criar um perfil de certificado SCEP](certificates-scep-configure.md#create-a-scep-certificate-profile)
+- [Criar um perfil de certificado SCEP](certificates-profile-scep.md#create-a-scep-certificate-profile)
 
-- [Atribuir o perfil de certificado](certificates-scep-configure.md#assign-the-certificate-profile)
+- [Atribuir o perfil de certificado](certificates-profile-scep.md#assign-the-certificate-profile)
 
 ## <a name="removing-certificates"></a>Removendo certificados
 

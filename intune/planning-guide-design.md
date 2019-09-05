@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 269ba2e951ccee2b0fdf2c4cd5a93a9d78aa6923
-ms.sourcegitcommit: e6edfbfd63dd7c2500ce1123205aa2af9a7e8e2e
+ms.openlocfilehash: a3055d375c98f9a74d0e738b7e894ba038b31776
+ms.sourcegitcommit: cf40f641af4746a1e34edd980dc6ec96fd040126
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/05/2019
-ms.locfileid: "68783252"
+ms.lasthandoff: 08/28/2019
+ms.locfileid: "70121855"
 ---
 # <a name="create-a-design"></a>Criar um design
 
@@ -166,7 +166,7 @@ A infraestrutura de chave pública fornece certificados para dispositivos ou usu
 
 Caso esteja planejando usar certificados com perfis de VPN, Wi-Fi ou email com o Intune, verifique se você tem uma [infraestrutura de PKI em vigor](certificates-configure.md) com suporte, pronta para criar e implantar perfis de certificado.
 
-Além disso, se certificados SCEP forem emitidos, será necessário determinar qual servidor hospedará o recurso NDES (Serviço de Registro de Dispositivo de Rede) e como ocorrerá a comunicação.
+Além disso, se perfis de certificado SCEP forem usados, você precisará determinar qual servidor hospedará o recurso do NDES (Serviço de Registro de Dispositivo de Rede) e como ocorrerá a comunicação.
 
 Saiba mais sobre:
 
@@ -297,7 +297,7 @@ Os perfis de certificado permitem que o Intune emita um certificado para um usu�
 É recomendável documentar qual grupo de usuários precisa de um certificado, quantos perfis de certificado serão necessários e em quais grupos de usuários eles serão implantados.
 
 >[!NOTE]
-> Lembre-se de que o certificado raiz confiável é necessário para o certificado SCEP; portanto, garanta que todos os usuários de destino para o certificado SCEP também recebem um certificado raiz confiável. Se forem necessários certificados SCEP, projete e documente quais modelos de certificado SCEP serão necessários.
+> Lembre-se de que o certificado raiz confiável é necessário para o perfil de Certificado SCEP; portanto, garanta que todos os usuários de destino para o perfil de Certificado SCEP também recebam um certificado raiz confiável. Se forem necessários certificados SCEP, projete e documente quais modelos de certificado SCEP serão necessários.
 
 Este é um exemplo de como é possível documentar os certificados durante o design:
 

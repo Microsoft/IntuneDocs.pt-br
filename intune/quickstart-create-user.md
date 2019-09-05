@@ -13,22 +13,22 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: b49595493b5db3e5735e0a4717c27e91f058b8d8
-ms.sourcegitcommit: 143dade9125e7b5173ca2a3a902bcd6f4b14067f
+ms.openlocfilehash: 398b8c748fddfa032194cfa60547d76322e28c9a
+ms.sourcegitcommit: 2a7d621587471822b1428440b24f08c8722612dd
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "61511320"
+ms.lasthandoff: 09/03/2019
+ms.locfileid: "70234817"
 ---
 # <a name="quickstart-create-a-user-in-intune-and-assign-them-a-license"></a>Início Rápido: Criar um usuário no Intune e atribuir uma licença
 
-Neste início rápido, você criará um usuário e o atribuirá ao Intune. Ao usar o Intune, cada pessoa que você deseja que tenha acesso aos dados da empresa precisa ter sua própria conta de usuário. Os administradores do Intune podem configurar os usuários mais tarde para gerenciar o controle de acesso.
+Neste início rápido, você criará um usuário e, em seguida, o atribuirá a uma licença do Intune. Ao usar o Intune, cada pessoa que você deseja que tenha acesso aos dados da empresa precisa ter sua própria conta de usuário. Os administradores do Intune podem configurar os usuários mais tarde para gerenciar o controle de acesso.
 
 Se você não tiver uma assinatura do Intune, [inscreva-se para uma conta de avaliação gratuita](free-trial-sign-up.md).
 
 ## <a name="sign-in-to-intune"></a>Entrar no Intune
 
-Entre no [Intune](https://aka.ms/intuneportal) como um [Administrador Global ou um Administrador de Serviços do Intune](users-add.md#types-of-administrators). Se você tiver criado uma assinatura de avaliação do Intune, a conta com a qual você criou a assinatura será a de administrador Global.
+Entre no [Intune](https://aka.ms/intuneportal) como um [Administrador Global ou um Administrador de Serviços do Intune](users-add.md#types-of-administrators). Se você criar uma assinatura de avaliação do Intune, a conta com a qual criou a assinatura será a de Administrador global.
 
 ## <a name="create-a-user"></a>Criar um usuário
 
@@ -47,7 +47,7 @@ Os usuários precisam ter uma conta de usuário para se registrarem no gerenciam
 
 ## <a name="assign-a-license-to-the-user"></a>Atribuir uma licença ao usuário
 
-Depois de criar um usuário, será necessário usar o [Centro de administração do Microsoft 365](http://go.microsoft.com/fwlink/p/?LinkId=698854) para atribuir uma licença do Intune a ele. Se você não atribuir uma licença ao usuário, ele não poderá registrar os dispositivos dele no Intune. 
+Depois de criar um usuário, será necessário usar o [Centro de administração do Microsoft 365](http://go.microsoft.com/fwlink/p/?LinkId=698854) para atribuir uma licença do Intune a ele. Se você não atribuir uma licença ao usuário, ele não poderá registrar o dispositivo dele no Intune. 
 
 Para atribuir uma licença do Intune a um usuário:
 
@@ -55,7 +55,7 @@ Para atribuir uma licença do Intune a um usuário:
 2. Escolha **Usuários** > **Usuários Ativos** > e escolha o usuário que você acabou de criar.
 3. Ao lado de **Licenças de produto**, selecione **Editar**.
 4. Em **Local**, escolha um local para o usuário.
-5. Clique em **Ligar** ao lado de licença do Intune (ou outra licença sua que inclua o Intune). O [nome do produto](https://docs.microsoft.com/azure/active-directory/users-groups-roles/licensing-service-plan-reference)** exibido é usado como o plano do serviço de gerenciamento do Azure 
+5. Clique em **Ativado** ao lado da licença do Intune (ou de outra licença sua que inclua o Intune). O [nome do produto](https://docs.microsoft.com/azure/active-directory/users-groups-roles/licensing-service-plan-reference)** exibido é usado como o plano do serviço de gerenciamento do Azure 
 
    > [!NOTE]
    > Essa configuração usa uma das suas licenças para este usuário. Se você estiver usando um ambiente de avaliação, depois precisará reatribuir essa licença a um usuário real em um ambiente dinâmico.
@@ -65,7 +65,7 @@ O novo usuário ativo do Intune agora mostrará que está usando uma licença do
 
 ## <a name="clean-up-resources"></a>Limpar os recursos
 
-Se você não precisar mais desse usuário, poderá excluí-lo navegando até o [Centro de administração do Microsoft 365](http://go.microsoft.com/fwlink/p/?LinkId=698854) e escolhendo **Usuários** > **Usuários ativos** > *escolha o usuário na lista* > **Excluir usuário** > **Excluir usuário** > **Confirmar alterações** > **Fechar**.
+Caso não precise mais desse usuário, exclua-o navegando até o [Centro de administração do Microsoft 365](http://go.microsoft.com/fwlink/p/?LinkId=698854) e escolha **Usuários** > **Usuários ativos** > *escolha o usuário na lista* > **Excluir usuário** > **Excluir usuário** > **Confirmar alterações** > **Fechar**.
 
 ## <a name="next-steps"></a>Próximas etapas
 

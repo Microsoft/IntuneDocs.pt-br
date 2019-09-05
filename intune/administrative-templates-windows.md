@@ -1,11 +1,11 @@
 ---
 title: Usar modelos para dispositivos Windows 10 no Microsoft Intune – Azure | Microsoft Docs
-description: Use Modelos Administrativos no Microsoft Intune para criar grupos de configurações para dispositivos Windows 10. Use essas configurações em um perfil de configuração do dispositivo para controlar programas do Office, proteger recursos no Internet Explorer, controlar o acesso ao OneDrive, usar recursos da área de trabalho remota, habilitar a Reprodução Automática, definir configurações de gerenciamento de energia, usar a impressão HTTP, usar diferentes opções de entrada do usuário e controlar o tamanho do log de eventos.
+description: Use Modelos Administrativos no Microsoft Intune para criar grupos de configurações para dispositivos Windows 10. Use essas configurações em um perfil de configuração do dispositivo para controlar programas do Office, o Microsoft Edge, proteger recursos no Internet Explorer, controlar o acesso ao OneDrive, usar recursos da área de trabalho remota, habilitar a Reprodução Automática, definir configurações de gerenciamento de energia, usar a impressão HTTP, usar diferentes opções de entrada do usuário e controlar o tamanho do log de eventos.
 keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 07/03/2019
+ms.date: 8/28/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.localizationpriority: high
@@ -15,20 +15,20 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 0bfad3feed6daef1930c235bec9c25e809da46c5
-ms.sourcegitcommit: ce9cae824a79223eab3c291fd5d5e377efac84cb
+ms.openlocfilehash: 608f9045d676a756c4ee7440072040075e497605
+ms.sourcegitcommit: 7269abaefb2857bc8b343896bb2138bdb01bf8dc
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/12/2019
-ms.locfileid: "67842764"
+ms.lasthandoff: 09/03/2019
+ms.locfileid: "70214342"
 ---
 # <a name="use-windows-10-templates-to-configure-group-policy-settings-in-microsoft-intune"></a>Use modelos do Windows 10 para definir as configurações da política de grupo no Microsoft Intune
 
-Ao gerenciar dispositivos em sua organização, você deseja criar um grupo de configurações que são aplicadas a diferentes grupos de dispositivos. Por exemplo, você tem vários grupos de dispositivos. Para o GroupA, você deseja atribuir um conjunto específico de configurações. Para o GroupB, você deseja atribuir um conjunto diferente de configurações. Você também deseja obter uma exibição simples das configurações definidas.
+Ao gerenciar dispositivos em sua organização, você deseja criar grupos de configurações que se aplicam a diferentes grupos de dispositivos. Por exemplo, você tem vários grupos de dispositivos. Para o GroupA, você deseja atribuir um conjunto específico de configurações. Para o GroupB, você deseja atribuir um conjunto diferente de configurações. Você também deseja obter uma exibição simples das configurações definidas.
 
-Realize essa tarefa usando **Modelos Administrativos** no Microsoft Intune. Os modelos administrativos incluem centenas de configurações que controlam recursos no Internet Explorer, programas do Microsoft Office, área de trabalho remota, acesso ao OneDrive, uso de uma senha PIN, entre outros. Essas configurações permitem que os administradores gerenciem políticas de grupo usando a nuvem.
+Realize essa tarefa usando **Modelos Administrativos** no Microsoft Intune. Os modelos administrativos incluem centenas de configurações que controlam recursos no Microsoft Edge, no Internet Explorer, em programas do Microsoft Office, na área de trabalho remota, no OneDrive, em senhas e PINs, entre outros. Essas configurações permitem que os administradores gerenciem políticas de grupo usando a nuvem.
 
-As configurações do Windows são semelhantes às configurações de política de grupo (GPO) no Active Directory (AD). Essas definições são criadas no Windows e são [configurações com suporte a ADMX](https://docs.microsoft.com/windows/client-management/mdm/understanding-admx-backed-policies) (abre outro site da Microsoft) que usam XML. As definições do Office são ingeridas pelo ADMX e usam as configurações do ADMX nos [arquivos de modelo administrativo do Office](https://www.microsoft.com/download/details.aspx?id=49030). No entanto, os modelos do Intune são 100% baseados em nuvem. Eles oferecem uma forma simples e direta para definir e encontrar as configurações desejadas.
+As configurações do Windows são semelhantes às configurações de política de grupo (GPO) no Active Directory (AD). Essas configurações são internas do Windows e são [configurações com suporte de ADMX](https://docs.microsoft.com/windows/client-management/mdm/understanding-admx-backed-policies) que usam XML. As definições do Office são ingeridas pelo ADMX e usam as configurações do ADMX nos [arquivos de modelo administrativo do Office](https://www.microsoft.com/download/details.aspx?id=49030). No entanto, os modelos do Intune são 100% baseados em nuvem. Eles oferecem uma forma simples e direta para definir e encontrar as configurações desejadas.
 
 Os **Modelos Administrativos** são internos ao Intune e não exigem personalizações, incluindo o uso de OMA-URI. Como parte de sua solução de MDM (gerenciamento de dispositivo móvel), use essas configurações de modelo como um ponto único centralizado para gerenciar seus dispositivos Windows 10.
 
@@ -38,7 +38,7 @@ Este artigo lista as etapas usadas para criar um modelo para dispositivos Window
 
 - Algumas dessas configurações estão disponíveis no Windows 10 versão 1703 (RS2). Para uma melhor experiência, recomendamos usar o Windows 10 Enterprise versão 1903 (19H1) e mais recente.
 
-- As configurações do Windows usam [CSPs de política do Windows](https://docs.microsoft.com/windows/client-management/mdm/policy-configuration-service-provider#admx-backed-policies) (abre outro site da Microsoft). Os CSPs funcionam em diferentes edições do Windows, como Home, Professional, Enterprise e assim por diante. Para saber se um CSP funciona em uma edição específica, acesse os [CSPs da política do Windows](https://docs.microsoft.com/windows/client-management/mdm/policy-configuration-service-provider#admx-backed-policies) (abre outro site da Microsoft).
+- As configurações do Windows usam [CSPs da política do Windows](https://docs.microsoft.com/windows/client-management/mdm/policy-configuration-service-provider#admx-backed-policies). Os CSPs funcionam em diferentes edições do Windows, como Home, Professional, Enterprise e assim por diante. Para ver se um CSP funciona em uma edição específica, acesse os [CSPs da política do Windows](https://docs.microsoft.com/windows/client-management/mdm/policy-configuration-service-provider#admx-backed-policies).
 
 ## <a name="create-a-template"></a>Criar um modelo
 
@@ -58,9 +58,16 @@ Este artigo lista as etapas usadas para criar um modelo para dispositivos Window
     > [!TIP]
     > As configurações do Windows no Intune se correlacionam ao caminho da política de grupo local que você vê no Editor de Política de Grupo Local (`gpedit`).
 
-5. Por padrão, a lista suspensa mostra **Todos os produtos.** Na lista, você também pode filtrar o conteúdo para mostrar apenas as configurações do **Windows** ou **Office**:
+5. Por padrão, a lista suspensa mostra **Todos os produtos.** Na lista, você também pode filtrar as configurações para mostrar apenas as configurações do **Windows**, do **Office** ou do **Microsoft Edge**:
 
     ![filtre a lista para mostrar todas as configurações do Windows ou todas do Office em modelos administrativos no Intune](./media/administrative-templates-windows/administrative-templates-choose-windows-office-all-products.png)
+
+    > [!NOTE]
+    > As configurações do Microsoft Edge aplicam-se ao:
+    >
+    > - Windows 10 RS4 e mais recente com a [KB 4512509](https://support.microsoft.com/kb/4512509) instalada.
+    > - Windows 10 RS5 e mais recente com a [KB 4512534](https://support.microsoft.com/kb/4512534) instalada.
+    > - Windows 10 19H1 e mais recente com a [KB 4512941](https://support.microsoft.com/kb/4512941) instalada.
 
 6. Selecione qualquer configuração. Por exemplo, aplique o filtro no **Office** e selecione **Ativar Navegação Restrita**. Uma descrição detalhada da configuração é mostrada. Selecione **Habilitar**, **Desabilitar**, ou escolha a opção padrão **Não configurado**. A descrição detalhada também explica o que acontece quando você escolhe **Habilitado**, **Desabilitado** ou **Não configurado**.
 7. Selecione **OK** para salvar suas alterações.
@@ -69,9 +76,10 @@ Continue percorrendo a lista de configurações e defina as configurações dese
 
 - Use a configuração **Configurações de Notificação de Macro VBA** para manipular macros VBA em diferentes programas do Microsoft Office, incluindo Word e Excel.
 - Use a configuração **Permitir downloads de arquivo** para permitir ou impedir downloads no Internet Explorer.
-- Use a configuração **Exigir uma senha ao ativar o computador (conectar)** para solicitar aos usuários uma senha quando os dispositivos saírem do modo de suspensão.
+- Use a configuração **Exigir uma senha ao ativar o computador (conectado)** para solicitar aos usuários uma senha quando os dispositivos saírem do modo de suspensão.
 - Use a configuração **Baixar controles ActiveX não assinados** para impedir que os usuários baixem controles ActiveX não assinados no Internet Explorer.
 - Use a configuração **Desligar Restauração do Sistema** para permitir ou impedir que os usuários executem uma restauração do sistema no dispositivo.
+- Use a configuração **Permitir importação de favoritos** para permitir ou impedir que os usuários importem favoritos de outro navegador para o Microsoft Edge.
 - E muito mais!
 
 ## <a name="find-some-settings"></a>Encontrar algumas configurações

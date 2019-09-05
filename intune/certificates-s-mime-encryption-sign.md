@@ -14,12 +14,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure; seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 5dba3866df9ce5c779deb18cf13852b3d8af1b8d
-ms.sourcegitcommit: 916fed64f3d173498a2905c7ed8d2d6416e34061
+ms.openlocfilehash: 755073af455c1ee63fa52f435a397734d2897b47
+ms.sourcegitcommit: cf40f641af4746a1e34edd980dc6ec96fd040126
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/23/2019
-ms.locfileid: "66048889"
+ms.lasthandoff: 08/28/2019
+ms.locfileid: "70122237"
 ---
 # <a name="smime-overview-to-sign-and-encrypt-email-in-intune"></a>Visão geral do S/MIME para assinar e criptografar emails no Intune
 
@@ -80,7 +80,7 @@ Depois de criar perfis de certificado de autenticação e criptografia S/MIME, v
 
 ## <a name="next-steps"></a>Próximas etapas
 
-- [Usar certificados SCEP](certificates-scep-configure.md)
+- [Usar o SCEP para certificados](certificates-scep-configure.md)
 - [Usar certificados PKCS](certficates-pfx-configure.md)
 - [Usar uma AC de parceiros](certificate-authority-add-scep-overview.md)
 - [Emitir certificados PKCS em um serviço Web do Symantec PKI Manager](certificates-symantec-configure.md)

@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: ''
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 53555a01899cfec15c319e790620b2bfeaa302bc
-ms.sourcegitcommit: 948ff8f56639e6dc7091134a0efd8d44efca63f2
+ms.openlocfilehash: 1d545e5848330e8c4f34eca21a992ad05ca8c85d
+ms.sourcegitcommit: ffbd1542d33810ab97a0be8faf26f8061328c228
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/27/2019
-ms.locfileid: "68590914"
+ms.lasthandoff: 08/31/2019
+ms.locfileid: "70206411"
 ---
 # <a name="intune-discovered-apps"></a>Aplicativos descobertos pelo Intune
 
@@ -62,6 +62,9 @@ A lista a seguir fornece o tipo de plataforma do aplicativo, os aplicativos moni
 | macOS | Todos os aplicativos instalados no dispositivo | Todos os aplicativos instalados no dispositivo | A cada 7 dias após o registro do dispositivo |
 | Android | Somente aplicativos gerenciados | Todos os aplicativos instalados no dispositivo | A cada 7 dias após o registro do dispositivo |
 | Android Enterprise | Somente aplicativos gerenciados | Somente os aplicativos instalados no Perfil de Trabalho | A cada 7 dias após o registro do dispositivo |
+
+> [!NOTE]
+>Atualmente, os dispositivos Windows 10 ingressados no Azure AD híbrido com a Extensão de Gerenciamento do Intune não coletam o inventário de aplicativos de acordo com o agendamento acima. Este é um problema conhecido. Todas as alterações ou atualizações desse comportamento são anunciadas em [Em desenvolvimento](in-development.md) e/ou em [Novidades](whats-new.md).
 
 O número de aplicativos descobertos pode não corresponder à contagem do status de instalação de aplicativos. Possibilidades de inconsistências incluem:
 - Uma alteração de direcionamento de um aplicativo gerenciado instalado pode fazer com que a contagem de instalações na folha de status diminua, mas continue a ser informada nos aplicativos detectados.
