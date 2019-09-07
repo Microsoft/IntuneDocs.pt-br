@@ -5,7 +5,7 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 05/29/2019
+ms.date: 08/26/2019
 ms.topic: troubleshooting
 ms.service: microsoft-intune
 ms.localizationpriority: medium
@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 5159ee595a6699eb457b194162d21038d4667063
-ms.sourcegitcommit: bd09decb754a832574d7f7375bad0186a22a15ab
+ms.openlocfilehash: c76466acb375fe49afefc542606350733970f416
+ms.sourcegitcommit: 18be0ccc6e51073af32c44abeba421d69a5ae21a
 ms.translationtype: MTE75
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/19/2019
-ms.locfileid: "68353348"
+ms.lasthandoff: 09/04/2019
+ms.locfileid: "70302345"
 ---
 # <a name="endpoint-protection-issues-and-possible-solutions-in-microsoft-intune"></a>Problemas e possíveis soluções do Endpoint Protection no Microsoft Intune
 
@@ -60,20 +60,20 @@ Você pode receber uma mensagem de que alguns recursos estão desabilitados. Ess
 **Soluções possíveis**: habilitar esses recursos. Para obter diretrizes, confira:
 
 - [Adicionar configurações do Endpoint Protection](endpoint-protection-configure.md)
-- [Windows Defender Antivírus](device-restrictions-windows-10.md#windows-defender-antivirus)
+- [Windows Defender Antivírus](device-restrictions-windows-10.md#microsoft-defender-antivirus)
 - [Usuários finais: ativar a proteção em tempo real para acessar os recursos da empresa](/intune-user-help/turn-on-defender-windows)
 
 ### <a name="malware-definitions-out-of-date"></a>Definições de malware desatualizadas
 
 Esse status mostra quando as definições de malware no dispositivo estão desatualizadas há 14 dias ou mais. Por exemplo, a mensagem pode mostrar se o dispositivo está desconectado da Internet ou se as definições de malware estão desatualizadas.
 
-**Soluções possíveis**: se as definições de malware estiverem desatualizadas, atualize-as usando o [Windows Defender Antivírus](device-restrictions-windows-10.md#windows-defender-antivirus).
+**Soluções possíveis**: se as definições de malware estiverem desatualizadas, atualize-as usando o [Windows Defender Antivírus](device-restrictions-windows-10.md#microsoft-defender-antivirus).
 
 ### <a name="full-scan-overdue-or-quick-scan-overdue"></a>Verificação completa ou rápida vencida
 
 Uma verificação completa ou rápida não foi realizada há 14 dias. Esse cenário poderá acontecer se o dispositivo for reiniciado durante uma verificação completa.
 
-**Soluções possíveis**: se uma verificação estiver vencida, você pode executar uma verificação única ou agendar verificações recorrentes. Confira [Windows Defender Antivírus](device-restrictions-windows-10.md#windows-defender-antivirus).
+**Soluções possíveis**: se uma verificação estiver vencida, você pode executar uma verificação única ou agendar verificações recorrentes. Confira [Windows Defender Antivírus](device-restrictions-windows-10.md#microsoft-defender-antivirus).
 
 ### <a name="another-endpoint-protection-application-running"></a>Outro aplicativo de proteção de ponto de extremidade em execução
 
