@@ -158,6 +158,7 @@
 
 ## [Usando o site do Portal da Empresa do Intune](using-the-intune-company-portal-website.md)
 ### [Gerenciar aplicativos](manage-apps-cpweb.md)  
+### [Obter chave de recuperação](get-recovery-key-cpweb.md)
 ### [Bloquear um dispositivo remotamente](remote-lock-your-device-cpwebsite.md)  
 ### [Renomear dispositivo](rename-your-device-cpwebsite.md)  
 ### [Remover dispositivo](remove-your-device-cpwebsite.md)  
