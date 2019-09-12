@@ -5,7 +5,7 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 8/28/2019
+ms.date: 09/04/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.localizationpriority: high
@@ -15,20 +15,20 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 608f9045d676a756c4ee7440072040075e497605
-ms.sourcegitcommit: 7269abaefb2857bc8b343896bb2138bdb01bf8dc
+ms.openlocfilehash: c474ac2eccf90e829abe753c82d40bdfae9146ec
+ms.sourcegitcommit: 5bb46d3c0bf8c5595132c4200849b1c4bcfe7cdb
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/03/2019
-ms.locfileid: "70214342"
+ms.lasthandoff: 09/05/2019
+ms.locfileid: "70376917"
 ---
 # <a name="use-windows-10-templates-to-configure-group-policy-settings-in-microsoft-intune"></a>Use modelos do Windows 10 para definir as configurações da política de grupo no Microsoft Intune
 
 Ao gerenciar dispositivos em sua organização, você deseja criar grupos de configurações que se aplicam a diferentes grupos de dispositivos. Por exemplo, você tem vários grupos de dispositivos. Para o GroupA, você deseja atribuir um conjunto específico de configurações. Para o GroupB, você deseja atribuir um conjunto diferente de configurações. Você também deseja obter uma exibição simples das configurações definidas.
 
-Realize essa tarefa usando **Modelos Administrativos** no Microsoft Intune. Os modelos administrativos incluem centenas de configurações que controlam recursos no Microsoft Edge, no Internet Explorer, em programas do Microsoft Office, na área de trabalho remota, no OneDrive, em senhas e PINs, entre outros. Essas configurações permitem que os administradores gerenciem políticas de grupo usando a nuvem.
+Realize essa tarefa usando **Modelos Administrativos** no Microsoft Intune. Os modelos administrativos incluem centenas de configurações que controlam recursos no Microsoft Edge versão 77 e posteriores, no Internet Explorer, em programas do Microsoft Office, na área de trabalho remota, no OneDrive, em senhas e PINs, entre outros. Essas configurações permitem que os administradores gerenciem políticas de grupo usando a nuvem.
 
-As configurações do Windows são semelhantes às configurações de política de grupo (GPO) no Active Directory (AD). Essas configurações são internas do Windows e são [configurações com suporte de ADMX](https://docs.microsoft.com/windows/client-management/mdm/understanding-admx-backed-policies) que usam XML. As definições do Office são ingeridas pelo ADMX e usam as configurações do ADMX nos [arquivos de modelo administrativo do Office](https://www.microsoft.com/download/details.aspx?id=49030). No entanto, os modelos do Intune são 100% baseados em nuvem. Eles oferecem uma forma simples e direta para definir e encontrar as configurações desejadas.
+As configurações do Windows são semelhantes às configurações de política de grupo (GPO) no Active Directory (AD). Essas configurações são internas do Windows e são [configurações com suporte de ADMX](https://docs.microsoft.com/windows/client-management/mdm/understanding-admx-backed-policies) que usam XML. As definições do Office e do Microsoft Edge são ingeridas pelo ADMX e usam as configurações do ADMX nos [arquivos de modelo administrativo do Office](https://www.microsoft.com/download/details.aspx?id=49030) e nos [arquivos de modelo administrativo do Microsoft Edge](https://www.microsoftedgeinsider.com/enterprise). No entanto, os modelos do Intune são 100% baseados em nuvem. Eles oferecem uma forma simples e direta para definir e encontrar as configurações desejadas.
 
 Os **Modelos Administrativos** são internos ao Intune e não exigem personalizações, incluindo o uso de OMA-URI. Como parte de sua solução de MDM (gerenciamento de dispositivo móvel), use essas configurações de modelo como um ponto único centralizado para gerenciar seus dispositivos Windows 10.
 
@@ -58,16 +58,17 @@ Este artigo lista as etapas usadas para criar um modelo para dispositivos Window
     > [!TIP]
     > As configurações do Windows no Intune se correlacionam ao caminho da política de grupo local que você vê no Editor de Política de Grupo Local (`gpedit`).
 
-5. Por padrão, a lista suspensa mostra **Todos os produtos.** Na lista, você também pode filtrar as configurações para mostrar apenas as configurações do **Windows**, do **Office** ou do **Microsoft Edge**:
+5. Por padrão, a lista suspensa mostra **Todos os produtos.** Na lista, você também pode filtrar as configurações para mostrar apenas as configurações do **Windows**, do **Office** ou do **Edge versão 77 ou posteriores**:
 
     ![filtre a lista para mostrar todas as configurações do Windows ou todas do Office em modelos administrativos no Intune](./media/administrative-templates-windows/administrative-templates-choose-windows-office-all-products.png)
 
     > [!NOTE]
     > As configurações do Microsoft Edge aplicam-se ao:
     >
-    > - Windows 10 RS4 e mais recente com a [KB 4512509](https://support.microsoft.com/kb/4512509) instalada.
-    > - Windows 10 RS5 e mais recente com a [KB 4512534](https://support.microsoft.com/kb/4512534) instalada.
-    > - Windows 10 19H1 e mais recente com a [KB 4512941](https://support.microsoft.com/kb/4512941) instalada.
+    > - Microsoft Edge versão 77 e posteriores. Para configurar o Microsoft Edge versão 45 e anteriores, confira as [Configurações de restrição de dispositivo do Navegador Microsoft Edge](device-restrictions-windows-10.md#microsoft-edge-browser).
+    > - Windows 10 RS4 e mais recente com a [KB 4512509](https://support.microsoft.com/kb/4512509) instalada
+    > - Windows 10 RS5 e mais recente com a [KB 4512534](https://support.microsoft.com/kb/4512534) instalada
+    > - Windows 10 19H1 e mais recente com a [KB 4512941](https://support.microsoft.com/kb/4512941) instalada
 
 6. Selecione qualquer configuração. Por exemplo, aplique o filtro no **Office** e selecione **Ativar Navegação Restrita**. Uma descrição detalhada da configuração é mostrada. Selecione **Habilitar**, **Desabilitar**, ou escolha a opção padrão **Não configurado**. A descrição detalhada também explica o que acontece quando você escolhe **Habilitado**, **Desabilitado** ou **Não configurado**.
 7. Selecione **OK** para salvar suas alterações.

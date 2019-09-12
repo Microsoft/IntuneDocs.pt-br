@@ -12,12 +12,12 @@ ms.localizationpriority: high
 ms.technology: ''
 search.appverid: MET150
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 5a5c9dea847ace51c7d6f06cfa43c44beead18f8
-ms.sourcegitcommit: 78ae22b1a7cb221648fc7346db751269d9c898b1
+ms.openlocfilehash: 6df42d908169ab591150e88e03f2f419710c9e54
+ms.sourcegitcommit: e477e399cba673a2a9e1fa342e8303ed993801eb
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66373426"
+ms.lasthandoff: 09/06/2019
+ms.locfileid: "70739198"
 ---
 # <a name="add-ios-software-update-policies-in-intune"></a>Adicionar políticas de atualização de software do iOS no Intune
 
@@ -53,14 +53,8 @@ O dispositivo faz check-in no Intune aproximadamente a cada 8 horas. Se uma atua
 
     - **Atrasar a visibilidade de atualizações de software para usuários finais sem alterações em atualizações agendadas (dias)** : 
 
-      **essa configuração foi movida para [Restrições do dispositivo](device-restrictions-ios.md#general). Ela será removida deste local no portal**. Por um período breve, as políticas existentes poderão ser alteradas aqui. Após cerca de um mês, essa configuração será removida das políticas existentes.
-
-      Para limitar o impacto, recomendamos:
-        - remover a política existente deste local no portal.
-        - criar uma [política de restrição de dispositivo](device-restrictions-ios.md#general).
-        - direcionar os mesmos usuários como a política original.
-
-      Se houver um conflito, essa configuração não fará nada, *a menos que* os dois valores forem idênticos. Para evitar um conflito, altere ou remova a política existente deste local no portal.
+      **Se você quiser atrasar a visibilidade de atualizações de software por um período específico em seus dispositivos iOS supervisionados, defina essas configurações em [Restrições do Dispositivo](device-restrictions-ios.md#general).
+     
       > [! Importante]  
       > Uma política que tem uma *Hora de início* e uma *Hora de término* definidas como meia-noite é avaliada como 0 hora e não 24 horas. Isso resulta em nenhuma restrição.  
 

@@ -17,17 +17,20 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 0316138451c6105f22c196d17c1f2ec3b1f2e375
-ms.sourcegitcommit: 6c74ff568267d85fd1d44fda75e3e24ead87cb2b
+ms.openlocfilehash: e0f1f7d937f08e32b30ee9facdcca03d263bc27e
+ms.sourcegitcommit: a25cd79a33feb536d9b2fc11aa7d3e3972f1ca5a
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/28/2019
-ms.locfileid: "70062940"
+ms.lasthandoff: 09/09/2019
+ms.locfileid: "70842187"
 ---
 # <a name="enroll-windows-devices-in-intune-by-using-the-windows-autopilot"></a>Registrar dispositivos Windows no Intune usando o Windows Autopilot  
 O Windows Autopilot simplifica a inscrição de dispositivos no Intune. Compilar e manter imagens de sistema operacional personalizadas é um processo que consome muito tempo. Além disso, geralmente se gasta muito tempo para aplicar essas imagens personalizadas de sistema operacional aos novos dispositivos para prepará-los para o uso antes de fornecê-los aos usuários finais. Com o Microsoft Intune e o Autopilot, é possível dar novos dispositivos seus usuários finais sem precisar criar, manter e aplicar imagens personalizadas do sistema operacional para os dispositivos. Quando usa o Intune para gerenciar dispositivos do Autopilot, você pode gerenciar políticas, perfis, aplicativos e muito mais, depois de registrá-los. Para obter uma visão geral dos benefícios, cenários e pré-requisitos, confira [Visão geral do Windows Autopilot](https://docs.microsoft.com/windows/deployment/windows-autopilot/windows-10-autopilot).
 
-Há quatro tipos de implantação do Autopilot: O [Modo de Autoimplantação](https://docs.microsoft.com/windows/deployment/windows-autopilot/self-deploying) para quiosques, sinalização digital ou dispositivo compartilhado; a [Assistência Individual](https://docs.microsoft.com/windows/deployment/windows-autopilot/white-glove) permite que parceiros ou a equipe de TI pré-provisionem um computador Windows 10 para que ele esteja totalmente configurado e pronto para a empresa; o [Autopilot para dispositivos existentes](https://docs.microsoft.com/windows/deployment/windows-autopilot/existing-devices) permite que você implante com facilidade a última versão do Windows 10 em seus dispositivos existentes e o [Modo Controlado pelo Usuário](https://docs.microsoft.com/windows/deployment/windows-autopilot/user-driven) para usuários tradicionais. 
+Há quatro tipos de implantação do Autopilot:
+- [Modo de Autoimplantação](https://docs.microsoft.com/windows/deployment/windows-autopilot/self-deploying) para quiosques, sinalização digital ou um dispositivo compartilhado
+- A [Assistência Individual](https://docs.microsoft.com/windows/deployment/windows-autopilot/white-glove) permite que parceiros ou a equipe de TI pré-provisionem um computador Windows 10 para que ele esteja totalmente configurado e pronto para a empresa; o [Autopilot para dispositivos existentes](https://docs.microsoft.com/windows/deployment/windows-autopilot/existing-devices) permite que você implante com facilidade a versão mais recente do Windows 10 em seus dispositivos existentes
+- [Modo controlado pelo usuário](https://docs.microsoft.com/windows/deployment/windows-autopilot/user-driven) para usuários tradicionais. 
 
 
 ## <a name="prerequisites"></a>Pré-requisitos
@@ -74,9 +77,9 @@ Para obter mais informações, confira Entender o cmdlet do PowerShell.
     3. Em **Tipo de associação**, escolha **Atribuído** ou **Dispositivo Dinâmico**.
 3. Se escolheu **Atribuído** como **Tipo de associação** na etapa anterior, na folha **Grupo**, escolha **Membros** e adicione dispositivos do Autopilot ao grupo.
     Os dispositivos do Autopilot ainda não registrados são dispositivos cujos nomes são iguais aos respectivos números de série.
-4. Se escolheu **Dispositivo Dinâmico** como **Tipo de associação** anteriormente, na folha **Grupo**, escolha **Membros de dispositivo dinâmico** e digite qualquer um dos códigos a seguir na caixa **Regra avançada**.
+4. Se escolheu **Dispositivo Dinâmico** como **Tipo de associação** anteriormente, na folha **Grupo**, escolha **Membros de dispositivo dinâmico** e digite qualquer um dos códigos a seguir na caixa **Regra avançada**. Somente os dispositivos do AutoPilot são coletados por essas regras, pois elas visam atributos que apenas os dispositivos do AutoPilot têm.
     - Se você pretende criar um grupo que inclua todos os dispositivos do Autopilot, digite: `(device.devicePhysicalIDs -any _ -contains "[ZTDId]")`
-    - O campo de marcação de grupo do Intune é mapeado para o atributo OrderID em dispositivos do Azure AD. Se você pretende criar um grupo que inclua todos os dispositivos do Autopilot com uma marca de grupo específica (OrderID), digite: `(device.devicePhysicalIds -any _ -eq "[OrderID]:179887111881")`
+    - O campo de marcação de grupo do Intune é mapeado para o atributo OrderID em dispositivos do Azure AD. Se você pretende criar um grupo que inclua todos os dispositivos do Autopilot com uma marca de grupo específica (a OrderID do dispositivo do Azure AD), digite: `(device.devicePhysicalIds -any _ -eq "[OrderID]:179887111881")`
     - Se pretende criar um grupo que inclui todos os dispositivos do Autopilot com a ID da Ordem de Compra específica, digite: `(device.devicePhysicalIds -any _ -eq "[PurchaseOrderId]:76222342342")`
     
     Depois de adicionar o código de **Regra avançada**, escolha **Salvar**.
@@ -93,7 +96,7 @@ Os perfis de implantação do Autopilot são usados para configurar os dispositi
 4. Selecione **Avançar**.
 5. Na página **Experiência de configuração inicial do usuário (OOBE)** para o **Modo de implantação**, escolha uma destas duas opções:
     - **Controlada pelo usuário**: Dispositivos com este perfil são associados ao usuário que faz o registro do dispositivo. As credenciais do usuário são necessárias para registrar o dispositivo.
-    - **Autoimplantação (versão prévia)** : (exige o Windows 10, versão 1809 ou posterior) Os dispositivos com esse perfil não são associados ao usuário que registrou o dispositivo. As credenciais do usuário não são necessárias para registrar o dispositivo.
+    - **Autoimplantação (versão prévia)** : (exige o Windows 10, versão 1809 ou posterior) Os dispositivos com esse perfil não são associados ao usuário que registrou o dispositivo. As credenciais do usuário não são necessárias para registrar o dispositivo. Quando um dispositivo não tem nenhum usuário associado, as políticas de conformidade baseadas no usuário não são aplicadas a ele. Ao usar o modo de autoimplantação, somente as políticas de conformidade direcionadas ao dispositivo serão aplicadas.
 
     ![Captura de tela da página OOBE](media/enrollment-autopilot/create-profile-outofbox.png)
 

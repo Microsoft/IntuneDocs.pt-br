@@ -6,7 +6,7 @@ keywords: ''
 author: brenduns
 ms.author: brenduns
 manager: dougeby
-ms.date: 07/18/2019
+ms.date: 09/10/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.localizationpriority: high
@@ -17,28 +17,28 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 5a75397222117b8e56cb34947363f8624b89b27b
-ms.sourcegitcommit: 58a22f1b4a3fffffb1f7da228f470b3b0774fc42
+ms.openlocfilehash: bffbc96e945d522453c299717a6eb413354a4af4
+ms.sourcegitcommit: 98f2597eec28c6096985d5a1acae72430c2afb1a
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/26/2019
-ms.locfileid: "70021745"
+ms.lasthandoff: 09/10/2019
+ms.locfileid: "70878043"
 ---
 # <a name="send-custom-notifications-in-intune"></a>Enviar notificações personalizadas no Intune  
 
-Use o Microsoft Intune para enviar notificações personalizadas aos usuários de dispositivos iOS e Android gerenciados. Essas mensagens são exibidas como notificações por push padrão do aplicativo Portal da Empresa no dispositivo de um usuário, assim como as notificações de outros aplicativos no dispositivo são exibidas. Não há suporte para notificações personalizadas do Intune em dispositivos Windows.   
+Use o Microsoft Intune para enviar notificações personalizadas aos usuários de dispositivos iOS e Android gerenciados. Essas mensagens são exibidas como notificações por push padrão dos aplicativos Portal da Empresa e Microsoft Intune no dispositivo de um usuário, assim como são exibidas as notificações de outros aplicativos no dispositivo. Não há suporte para notificações personalizadas do Intune em dispositivos Windows.   
 
 As mensagens de notificação personalizadas incluem um título curto e um corpo da mensagem de 500 caracteres ou menos. Essas mensagens podem ser personalizadas para qualquer finalidade de comunicação geral.
 
 ## <a name="common-scenarios-for-sending-custom-notifications"></a>Cenários comuns para enviar notificações personalizadas  
 
-- Use notificações personalizadas para alertar usuários específicos sobre um novo aplicativo que está disponível no Portal da Empresa.  
+- Use notificações personalizadas para alertar usuários específicos de que um novo aplicativo está disponível no Portal da Empresa.  
 - Notifique todos os funcionários de uma alteração no agendamento, como a criação de fechamentos devido ao clima severo.  
 
 ## <a name="considerations-for-using-custom-notifications"></a>Considerações sobre o uso de notificações personalizadas  
 
 **Configuração do dispositivo**:  
-- Os dispositivos precisam ter o aplicativo Portal da Empresa instalado antes que os usuários possam receber notificações personalizadas. Eles também precisam ter as permissões configuradas para permitir que o aplicativo Portal da Empresa envie notificações por push. O Portal da Empresa solicitará que os usuários permitam notificações sempre que for instalado ou atualizado.  
+- Os dispositivos ter os aplicativos Portal da Empresa ou Microsoft Intune instalados antes que os usuários possam receber notificações personalizadas. Também precisam ter permissões configuradas para permitir que os aplicativos Portal da Empresa ou Microsoft Intune enviem notificações por push. Se necessário, os aplicativos Portal da Empresa e Microsoft Intune podem solicitar que os usuários permitam notificações.  
 - No Android, o Google Play Services é uma dependência necessária.  
 - O dispositivo deve ser inscrito como MDM.
 
@@ -51,8 +51,8 @@ As mensagens de notificação personalizadas incluem um título curto e um corpo
 - Os grupos podem incluir usuários ou dispositivos, mas as mensagens são enviadas somente aos usuários e para cada dispositivo iOS ou Android registrado pelo usuário.  
 
 **Entrega**:  
-- O Intune envia mensagens para o aplicativo Portal da Empresa dos usuários, que, em seguida, cria a notificação por push. Os usuários não precisam estar conectados ao aplicativo para que a notificação seja enviada por push no dispositivo.  
-- O Intune e o aplicativo Portal da Empresa não podem garantir a entrega de uma notificação personalizada. As notificações personalizadas poderão ser exibidas após várias horas de atraso, se forem exibidas; portanto, não deverão ser usadas para mensagens urgentes.  
+- O Intune envia mensagens aos usuários pelos aplicativos Portal da Empresa ou Microsoft Intune, que criam a notificação por push. Os usuários não precisam estar conectados ao aplicativo para que a notificação seja enviada por push no dispositivo.  
+- O Intune e os aplicativos Portal da Empresa e Microsoft Intune não podem garantir a entrega de uma notificação personalizada. As notificações personalizadas poderão ser exibidas após várias horas de atraso, se forem exibidas; portanto, não deverão ser usadas para mensagens urgentes.  
 - As mensagens de notificação personalizadas do Intune são exibidas em dispositivos como notificações por push padrão. Se o aplicativo Portal da Empresa estiver aberto em um dispositivo iOS quando ele receber a notificação, a notificação será exibida no aplicativo em vez de ser uma notificação por push.  
 - As notificações personalizadas podem estar visíveis nas telas de bloqueio em dispositivos iOS e Android, dependendo das configurações do dispositivo.  
 - Em dispositivos Android, outros aplicativos podem ter acesso aos dados nas notificações personalizadas. Não os use para comunicações confidenciais.  
@@ -80,7 +80,7 @@ O Intune não acompanha as notificações personalizadas que você envia, e os d
 
 ## <a name="receive-a-custom-notification"></a>Receber uma notificação personalizada  
 
-Em um dispositivo, os usuários veem mensagens de notificação personalizadas que são enviadas pelo Intune como uma notificação por push padrão do aplicativo Portal da Empresa. Essas notificações são semelhantes às notificações por push que os usuários recebem de outros aplicativos no dispositivo.  
+Em um dispositivo, os usuários veem mensagens de notificação personalizadas enviadas pelo Intune como uma notificação por push padrão dos aplicativos Portal da Empresa ou Microsoft Intune. Essas notificações são semelhantes às notificações por push que os usuários recebem de outros aplicativos no dispositivo.  
 
 Em dispositivos iOS, se o aplicativo Portal da Empresa estiver aberto quando a notificação for recebida, a notificação será exibida no aplicativo em vez de ser uma notificação por push.  
 
