@@ -15,12 +15,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 7ff5b411f14fef4ad294b0dd8b265680fd67df08
-ms.sourcegitcommit: a97b6139770719afbd713501f8e50f39636bc202
+ms.openlocfilehash: 04cafd2cf69bbd42a35ade3ae180e8af8789c938
+ms.sourcegitcommit: e8d788d033be4320cd72c98c892b383e1bb77e18
 ms.translationtype: MTE75
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/30/2019
-ms.locfileid: "66402757"
+ms.lasthandoff: 09/11/2019
+ms.locfileid: "70912826"
 ---
 # <a name="bundle-ids-for-built-in-ios-apps-you-can-use-in-intune"></a>IDs de pacote para aplicativos iOS internos que podem ser usadas no Intune
 
@@ -30,11 +30,12 @@ Quando você configura recursos em dispositivos iOS, também pode adicionar apli
 
 | ID do Pacote                   | Nome do Aplicativo     | Editor |
 |-----------------------------|--------------|-----------|
-| com.apple.AppStore          | Loja de aplicativos    | Apple     |
+| com. Apple. Store             | Loja de aplicativos    | Apple     |
 | com.apple.calculator        | Calculadora   | Apple     |
 | com.apple.mobilecal         | Calendário     | Apple     |
 | com.apple.camera            | Câmera       | Apple     |
 | com.apple.mobiletimer       | Relógio        | Apple     |
+| com. Apple. clips             | Clipes        | Apple     |
 | com.apple.compass           | Bússola      | Apple     |
 | com.apple.MobileAddressBook | Contacts     | Apple     |
 | com.apple.facetime          | FaceTime     | Apple     |
@@ -74,7 +75,7 @@ Quando você configura recursos em dispositivos iOS, também pode adicionar apli
 | com.apple.VoiceMemos        | VoiceMemos   | Apple     |
 | com.apple.Passbook          | Carteira       | Apple     |
 | com.apple.Bridge            | Assistir        | Apple     |
-| com.apple.weather           | Clima      | Apple     |
+| com.apple.weather           | Clima      | Apple     |      
 
 ## <a name="next-steps"></a>Próximas etapas
 
