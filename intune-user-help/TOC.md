@@ -1,6 +1,6 @@
 # Ajuda do usuário do Intune
 
-## [Usando dispositivos gerenciados para realizar o trabalho](use-managed-devices-to-get-work-done.md)
+## [Qual é o registro de dispositivos?](use-managed-devices-to-get-work-done.md)
 
 ## [Quais informações minha empresa pode ver com o Intune?](what-info-can-your-company-see-when-you-enroll-your-device-in-intune.md)
 
