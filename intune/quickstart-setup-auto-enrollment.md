@@ -8,17 +8,17 @@ ms.localizationpriority: high
 ms.topic: quickstart
 ms.date: 03/26/2019
 ms.author: erikje
-ms.reviewer: angerobe
+ms.reviewer: spshumwa
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 3b81525034f69b43abeb60f562e4d6ee6a46b866
-ms.sourcegitcommit: 143dade9125e7b5173ca2a3a902bcd6f4b14067f
+ms.openlocfilehash: e44bbf9396cd2aff3f2b2b134c72eb871f719a91
+ms.sourcegitcommit: d2989b9992d10d133573d9bc31479659fb7e242c
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "61511741"
+ms.lasthandoff: 09/18/2019
+ms.locfileid: "71080125"
 ---
 # <a name="quickstart-set-up-automatic-enrollment-for-windows-10-devices"></a>Início Rápido: Configurar o registro automático para dispositivos Windows 10
 
@@ -39,7 +39,7 @@ Entre no [Intune](https://aka.ms/intuneportal) como um Administrador Global ou u
 
 Neste exemplo, você usará o registro de MDM para que dispositivos corporativos e traga seu próprio dispositivo podem ser registrados automaticamente. Você se inscreverá para uma assinatura do Azure Active Directory Premium.
 
-1. No Azure, escolha o **Azure Active Directory** > **Mobility (MDM e MAM)**.
+1. No Azure, escolha o **Azure Active Directory** > **Mobility (MDM e MAM)** .
 2. Selecione **Receber uma avaliação gratuita Premium para usar este recurso**. Esta opção permitirá o registro automático usando a avaliação Premium gratuita do Azure Active Directory. 
 
     ![Selecione a avaliação Premium gratuita do Azure Active Directory](media/quickstart-setup-auto-enrollment/quickstart-setup-auto-enrollment-01.png)
@@ -63,7 +63,7 @@ Neste exemplo, você usará o registro de MDM para que dispositivos corporativos
 6. Selecione **Alguns** do **Escopo de usuários do MAM** para gerenciar dados em dispositivos da sua força de trabalho.
 7. Escolha **Selecionar grupos** > **Testadores Contoso** > **Selecionar** como o grupo atribuído. 
 8. Use os valores padrão para os valores de configuração restantes.
-9. Selecione **Salvar**.
+9. Escolha **Salvar**.
 
 ## <a name="clean-up-resources"></a>Limpar os recursos
 

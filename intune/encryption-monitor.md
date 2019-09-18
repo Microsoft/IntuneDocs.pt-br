@@ -16,12 +16,12 @@ ms.reviewer: shpate
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: c64ea07cb87bc980d01864468d788229bfc58a5f
-ms.sourcegitcommit: a6385b8370c20a44d0869f7920d6b2866edaa5e2
+ms.openlocfilehash: 469bdc54385f943fd0c42ccfd921293970b03b64
+ms.sourcegitcommit: 05139901411d14a85c2340c0ebae02d2c178a851
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/26/2019
-ms.locfileid: "70027379"
+ms.lasthandoff: 09/11/2019
+ms.locfileid: "70905053"
 ---
 # <a name="monitor-device-encryption-with-intune"></a>Monitorar a criptografia do dispositivo com o Intune   
 
@@ -122,7 +122,7 @@ Quando você seleciona um dispositivo no Relatório de criptografia, o Intune ex
  
     *Considere: No macOS versão 10.15 (Catalina) em diante, as configurações de Registro aprovadas pelo usuário podem exigir que os usuários aprovem manualmente a criptografia FileVault. Para obter mais informações, confira [Registro aprovado pelo usuário](macos-enroll.md) na documentação do Intune*.  
 
-  - Desconhecido.  
+  - Desconhecida.  
 
     *Considere: Uma possível causa de um status desconhecido é que o dispositivo está bloqueado e o Intune não pode iniciar o processo de caução ou de criptografia. Depois que o dispositivo for desbloqueado, o progresso poderá continuar*.  
 
@@ -201,8 +201,7 @@ O Intune dá suporte a várias opções para girar e recuperar chaves de recuper
   1. Entre no site do *Portal da Empresa do Intune* em qualquer dispositivo.  
   2. No portal, acesse **Dispositivos** e selecione o dispositivo macOS que está criptografado com o FileVault.  
   3. Selecione **Obter chave de recuperação**. A chave de recuperação atual será exibida.  
-  
-     Em um iPhone, você precisa selecionar os *três* pontos antes que a opção *Obter chave de recuperação* seja exibida.  
+ 
 
 ## <a name="bitlocker-recovery-keys"></a>Chaves de recuperação do BitLocker  
 

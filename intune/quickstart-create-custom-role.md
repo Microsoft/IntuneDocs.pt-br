@@ -8,17 +8,17 @@ ms.localizationpriority: high
 ms.topic: quickstart
 ms.date: 03/26/2019
 ms.author: erikje
-ms.reviewer: angerobe
+ms.reviewer: pjain
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 6cf4e365f4e68920ea5d24dc3ce2e1bd5eb9f817
-ms.sourcegitcommit: 143dade9125e7b5173ca2a3a902bcd6f4b14067f
+ms.openlocfilehash: f63bbc80c055cfcb3bd52f79e7b810094107ec2a
+ms.sourcegitcommit: d2989b9992d10d133573d9bc31479659fb7e242c
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "61511552"
+ms.lasthandoff: 09/18/2019
+ms.locfileid: "71080052"
 ---
 # <a name="quickstart-create-and-assign-a-custom-role"></a>Início Rápido: Criar e atribuir uma função personalizada
 
@@ -56,10 +56,10 @@ Para que seu operador de segurança possa usar as novas permissões, é preciso 
 1. No Intune, escolha **Funções** > **Todas as funções** > **Operações de segurança**.
 2. Em **Funções do Intune**, escolha **Atribuições** > **Atribuir**.
 3. Na caixa **Nome da atribuição**, digite *Operações seg*.
-4. Escolha **Membro (Grupos)** > **Adicionar**.
+4. Escolha **Membro (Grupos)**  > **Adicionar**.
 5. Escolha o grupo **Testadores Contoso**.
 6. Escolher **Selecionar** > **OK**.
-7. Escolher **Escopo (Grupos)** > **Selecionar grupos a serem incluídos** > **Testadores Contoso**.
+7. Escolher **Escopo (Grupos)**  > **Selecionar grupos a serem incluídos** > **Testadores Contoso**.
 8. Escolha **Selecionar** > **OK** > **OK**.
 
 Agora, todos no grupo são membros da função *Operações de segurança* e pode examinar as seguintes informações sobre um dispositivo: identificadores de dispositivo corporativo, políticas de conformidade do dispositivo, configurações do dispositivo e informações da organização.
