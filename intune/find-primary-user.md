@@ -16,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 21f62ad44d992d1f4adbb1945bdba02e526d9138
-ms.sourcegitcommit: 2db7dc2baea0c159f70338e6a0529acc89580773
+ms.openlocfilehash: e7c0947438b42f4a2fa5ccae8e9cab07a60167ae
+ms.sourcegitcommit: 74911a263944f2dbd9b754415ccda6c68dae0759
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/02/2019
-ms.locfileid: "67500647"
+ms.lasthandoff: 09/17/2019
+ms.locfileid: "71071692"
 ---
 # <a name="find-the-primary-user-of-an-intune-device"></a>Localizar o usuário principal de um dispositivo do Intune
 
@@ -62,13 +62,13 @@ O Intune automaticamente adiciona o usuário principal a dispositivos durante ou
 | Windows | Registrar-se apenas no MDM | Registrando usuário | Durante o registro | 
 | Windows | AADJ híbrido + GPO de registro automático | Primeiro usuário a entrar no Windows | Quando o primeiro usuário entra no Windows| 
 | Windows | Cogerenciamento | Primeiro usuário a entrar no Windows | Quando o primeiro usuário entra no Windows | 
-| Windows | Ingresso no Azure AD (token de registro em massa) | Nenhum | Não Aplicável | 
-| Windows | Ingresso do Azure AD (modo de autoimplantação do Autopilot) | Nenhum | Não Aplicável | 
+| Windows | Ingresso no Azure AD (token de registro em massa) | Não | Não Aplicável | 
+| Windows | Ingresso do Azure AD (modo de autoimplantação do Autopilot) | Não | Não Aplicável | 
 | Plataforma cruzada | Registro controlado pelo usuário com o aplicativo Portal da Empresa | Registrando usuário | Durante o registro |
 | Plataforma cruzada | DEM (Gerenciador de registro de dispositivos) | Registrando usuário do DEM | Durante o registro |
 | iOS, macOS | Registro de Dispositivo Automatizado da Apple (DEP com afinidade do usuário | Registrando usuário | Durante o registro |
-| iOS, macOS | Registro de Dispositivo Automatizado da Apple (DEP sem afinidade do usuário) | Nenhum | Não Aplicável |
-| Android | Dispositivos dedicados de propriedade corporativa do Android | Nenhum | Não Aplicável |
+| iOS, macOS | Registro de Dispositivo Automatizado da Apple (DEP sem afinidade do usuário) | Não | Não Aplicável |
+| Android | Dispositivos dedicados de propriedade corporativa do Android | Não | Não Aplicável |
 
 ## <a name="primary-user-and-azure-ad-device-owner"></a>Usuário principal e proprietário do dispositivo do Azure AD
 Em alguns casos, o usuário principal do Intune pode ser diferente da propriedade **Proprietário** do dispositivo do Azure AD (visível em **Dispositivos** > **Dispositivos do Azure AD**). O proprietário do dispositivo do Azure AD é adicionado durante o registro do dispositivo no Azure Active Directory.

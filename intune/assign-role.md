@@ -11,17 +11,17 @@ ms.service: microsoft-intune
 ms.localizationpriority: high
 ms.technology: ''
 ms.assetid: ''
-ms.reviewer: ''
+ms.reviewer: pjain
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure; get-started
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: a22fef1c04ae52a8a4cc65eaadc1ef6fcd524c19
-ms.sourcegitcommit: 916fed64f3d173498a2905c7ed8d2d6416e34061
+ms.openlocfilehash: 0539e4d12173ba2c7ba8d3af3364daf69ddbbf34
+ms.sourcegitcommit: 74911a263944f2dbd9b754415ccda6c68dae0759
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/23/2019
-ms.locfileid: "66043588"
+ms.lasthandoff: 09/17/2019
+ms.locfileid: "71071542"
 ---
 # <a name="assign-a-role-to-an-intune-user"></a>Atribuir uma função a um usuário do Intune
 
@@ -47,11 +47,11 @@ Para obter uma lista completa das permissões de cada função interna, confira 
 
 7. Na folha **Atribuições de Função**, insira um **Nome de Atribuição** e uma **Descrição de atribuição** opcional para a atribuição.
 
-8. Para **Membros (Grupos)**, escolha um grupo que contém o usuário para o qual você deseja conceder permissões.
+8. Para **Membros (Grupos)** , escolha um grupo que contém o usuário para o qual você deseja conceder permissões.
 
-9. Para **Escopo (Grupos)**, escolha um grupo que contém os usuários/dispositivos que o membro acima terá permissão para gerenciar.
+9. Para **Escopo (Grupos)** , escolha um grupo que contém os usuários/dispositivos que o membro acima terá permissão para gerenciar.
 
-10. Para **Escopo (Marcas)**, escolha as marcas nas quais essa atribuição de função será aplicada.
+10. Para **Escopo (Marcas)** , escolha as marcas nas quais essa atribuição de função será aplicada.
 
 11. Quando terminar, escolha **OK**. A nova atribuição é exibida na lista de atribuições.
 

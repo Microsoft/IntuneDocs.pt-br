@@ -17,12 +17,12 @@ ms.reviewer: ''
 ms.suite: ems
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 97bc1658dcd432bdd5e31c7100022959e96c3039
-ms.sourcegitcommit: a25cd79a33feb536d9b2fc11aa7d3e3972f1ca5a
+ms.openlocfilehash: 83b10bdfacbcf76b9f75b90d99e094b6854d525e
+ms.sourcegitcommit: 27e63a96d15bc4062af68c2764905631bd928e7b
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/09/2019
-ms.locfileid: "70842071"
+ms.lasthandoff: 09/17/2019
+ms.locfileid: "71061654"
 ---
 # <a name="tutorial-configure-slack-to-use-intune-for-emm-and-app-configuration"></a>Tutorial: Configurar o Slack para usar o Intune para EMM e configuração de aplicativos
 
@@ -77,7 +77,6 @@ Adicione uma política de configuração do aplicativo para Slack para EMM para 
 5. Selecione **Aplicativo associado**.
 6. Na barra de pesquisa, digite "Slack para EMM" e selecione o aplicativo.
 7. Clique em **OK** e, em seguida, selecione **Parâmetros de configuração**. 
-    - Para saber mais sobre chaves de configuração e seus valores, confira a documentação na guia "Técnico" da [página da Web AppConfig do Slack](https://www.appconfig.org/company/slack/).
 8. Selecione **OK** e **Adicionar**.
 9. Na barra de pesquisa, digite "Teste de política de configuração do aplicativo Slack" e selecione a política que você acabou de adicionar.
 10. Em Gerenciar, selecione **Atribuições**.
