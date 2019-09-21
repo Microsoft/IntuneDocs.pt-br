@@ -5,7 +5,7 @@ keywords: ''
 author: lenewsad
 ms.author: lanewsad
 manager: dougeby
-ms.date: 11/14/2017
+ms.date: 09/18/2019
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -16,20 +16,21 @@ searchScope:
 ROBOTS: ''
 ms.custom: intune-enduser
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 346e6219c10cc8b90d3bf83170adffa677c6c484
-ms.sourcegitcommit: 25e6aa3bfce58ce8d9f8c054bc338cc3dff4a78b
+ms.openlocfilehash: dddcb16a0067ed6e278ff3f9032695e075a0fb6a
+ms.sourcegitcommit: c19584b36448bbd4c8638d7cab552fe9b3eb3408
 ms.translationtype: MTE75
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "55848999"
+ms.lasthandoff: 09/20/2019
+ms.locfileid: "71163291"
 ---
 # <a name="set-or-change-your-passcode"></a>Definir ou alterar sua senha
 
-Se o dispositivo iOS não estiver em conformidade com a política de senha do suporte de sua empresa, aparecerá uma mensagem que descreve o problema rapidamente e explica o que você precisa fazer para que sua senha atenda aos requisitos.
+Crie uma nova senha ou altere uma existente para atender aos requisitos da sua organização. A senha impedirá que pessoas não autorizadas desbloqueiem e usem seu dispositivo. 
 
-O suporte de sua empresa pode definir mais de um requisito de senha. Por exemplo, a senha pode ter de conter um determinado número de caracteres e ser uma combinação de números, letras e caracteres. Como mais de um requisito pode ser definido, essas instruções podem explicar somente como definir ou alterar sua senha. Elas não explicam cada combinação possível de requisitos. Essas senhas são usadas, por exemplo, para acessar seu dispositivo a partir da tela de bloqueio.
+Sua organização pode definir mais de um requisito de senha. Para obter uma lista de requisitos de senha comuns, consulte [requisitos de senha do dispositivo para dispositivos registrados](password-does-not-meet-it-administrator-requirements.md).  
 
-Se você tiver problemas para configurar uma senha que atenda aos requisitos de senha, entre em contato com o suporte de sua empresa para obter ajuda.
+Se você tiver problemas para criar ou alterar sua senha, entre em contato com o seu profissional de suporte de ti.  
+
 
 ## <a name="set-your-passcode"></a>Definir sua senha
 

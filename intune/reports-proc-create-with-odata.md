@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: e18279fd9cca88de5f04c57a8bcccce1c211c6de
-ms.sourcegitcommit: 4f3fcc6dcbfe2c4e0651d54a130907a25a4ff66e
+ms.openlocfilehash: 4494d5f75336f7152668cfa1bb6fa1cd1a94305c
+ms.sourcegitcommit: 1494ff4b33c13a87f20e0f3315da79a3567db96e
 ms.translationtype: MTE75
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/22/2019
-ms.locfileid: "69894310"
+ms.lasthandoff: 09/20/2019
+ms.locfileid: "71167870"
 ---
 # <a name="create-an-intune-report-from-the-odata-feed-with-power-bi"></a>Criar um relatório do Intune do feed OData com o Power BI
 
@@ -122,4 +122,4 @@ Agora você tem um filtro interativo que pode ser usado para alternar entre disp
 ## <a name="next-steps"></a>Próximas etapas
 
 - Saiba mais sobre [criar e gerenciar relações](https://powerbi.microsoft.com/documentation/powerbi-desktop-create-and-manage-relationships/) no Power BI Desktop na documentação do Power BI.
-- Consulte o [Modelo de Data Warehouse do Intune](https://docs.microsoft.com/intune/reports-ref-data-model).
+- Consulte o [Modelo de Data Warehouse do Intune](reports-ref-data-model.md).

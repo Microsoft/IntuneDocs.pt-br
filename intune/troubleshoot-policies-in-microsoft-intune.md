@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 9314617640d0bfd7f3a7b0cd0ba572e99ede53f9
-ms.sourcegitcommit: cd451ac487c7ace18ac9722a28b9facfba41f6d3
+ms.openlocfilehash: 68ffdcccdd3588ac5127e6c54426acfdcad17d34
+ms.sourcegitcommit: 74911a263944f2dbd9b754415ccda6c68dae0759
 ms.translationtype: MTE75
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/20/2019
-ms.locfileid: "67298393"
+ms.lasthandoff: 09/17/2019
+ms.locfileid: "71071715"
 ---
 # <a name="troubleshoot-policies-and-profiles-and-in-intune"></a>Solucionar problemas de políticas e de perfis e no Intune
 
@@ -30,8 +30,8 @@ O Microsoft Intune inclui alguns recursos internos de solução de problemas. Us
 
 Este artigo lista algumas técnicas de solução de problemas comuns e descreve alguns problemas que podem ocorrer.
 
-## <a name="check-tenant-status"></a>Verificar o status do locatário
-Verifique as [Status do locatário](tenant-status.md) e confirme se a assinatura está ativa. Você também pode exibir detalhes de incidentes ativos e conselhos que podem afetar sua implantação de políticas ou perfis.
+## <a name="check-tenant-status"></a>Verificar status do locatário
+Verifique o [status do locatário](tenant-status.md) e confirme se a assinatura está ativa. Você também pode exibir detalhes de incidentes e avisos ativos que podem afetar sua política ou implantação de perfil.
 
 ## <a name="use-built-in-troubleshooting"></a>Usar a solução de problemas interna
 
@@ -118,10 +118,10 @@ Verifique as [Status do locatário](tenant-status.md) e confirme se a assinatura
 
 ## <a name="policy-troubleshooting-resources"></a>Recursos de solução de problemas de políticas
 
-- [Solução de problemas de iOS ou Android políticas não aplicada a dispositivos](https://techcommunity.microsoft.com/t5/Intune-Customer-Success/Support-tip-Troubleshooting-iOS-or-Android-policies-not-applying/ba-p/280154) (abre outro site da Microsoft)
-- [Solucionando problemas de falhas de política do Windows Intune de 10](http://configmgrdogsarchive.com/2018/08/09/troubleshooting-windows-10-intune-policy-failures/) (abre um blog)
+- [Solução de problemas de políticas do Ios ou Android que não se aplicam a dispositivos](https://techcommunity.microsoft.com/t5/Intune-Customer-Success/Support-tip-Troubleshooting-iOS-or-Android-policies-not-applying/ba-p/280154) (abre outro site da Microsoft)
+- [Solucionando problemas de falhas de política do Windows 10 Intune](https://blogs.technet.microsoft.com/configmgrdogs/2018/08/09/troubleshooting-windows-10-intune-policy-failures/) (abre um blog)
 - [Solucionar problemas de configurações personalizadas do CSP para Windows 10](https://support.microsoft.com/en-us/help/4055338/troubleshoot-csp-setting-windows-10-computer-intune) (abre outro site da Microsoft)
-- [Versus diretiva de grupo do Windows 10 MDM do Intune política](https://blogs.technet.microsoft.com/cbernier/2018/04/02/windows-10-group-policy-vs-intune-mdm-policy-who-wins/) (abre outro site da Microsoft)
+- [Política de MDM do Windows 10 política de grupo vs Intune](https://blogs.technet.microsoft.com/cbernier/2018/04/02/windows-10-group-policy-vs-intune-mdm-policy-who-wins/) (abre outro site da Microsoft)
 
 ## <a name="alert-saving-of-access-rules-to-exchange-has-failed"></a>Alerta: falha ao salvar regras de acesso ao Exchange
 
@@ -135,7 +135,7 @@ Se você criar políticas no workspace de Políticas do Exchange Local (Console 
 
 Os dispositivos Windows Phone não permitem que as políticas de segurança definidas com uso de MDM ou EAS sejam reduzidas em termos de segurança após terem sido configuradas. Por exemplo, você define uma **Senha com um número mínimo de caracteres** igual a 8 e, em seguida, tenta reduzi-la a 4. A política mais restritiva já foi aplicada ao dispositivo.
 
-Dispositivos Windows 10 não podem remover as políticas de segurança quando você cancelar a atribuição de política (interromper a implantação). Talvez você precise deixar a política atribuída e, em seguida, alterar as configurações de segurança para os valores padrão.
+Dispositivos Windows 10 não podem remover políticas de segurança quando você não atribui a política (parar a implantação). Talvez seja necessário deixar a política atribuída e, em seguida, alterar as configurações de segurança de volta para os valores padrão.
 
 Dependendo da plataforma do dispositivo, se você quer alterar a política para um valor menos seguro, pode ser necessário redefinir as políticas de segurança.
 

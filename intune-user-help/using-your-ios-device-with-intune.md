@@ -18,25 +18,26 @@ ms.reviewer: esmich
 ms.suite: ems
 ms.custom: intune-enduser
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: f9c25166ed9b004cc4e43e777008e33e88983912
-ms.sourcegitcommit: 25e6aa3bfce58ce8d9f8c054bc338cc3dff4a78b
+ms.openlocfilehash: 2ced8f1ec37f652b7e283328141bc591b5961587
+ms.sourcegitcommit: 8934b1abec96e18cee15a77107d37551766f7666
 ms.translationtype: MTE75
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "55843486"
+ms.lasthandoff: 09/18/2019
+ms.locfileid: "71099830"
 ---
 # <a name="using-your-ios-device-with-intune-company-portal"></a>Usar o dispositivo iOS com o Portal da Empresa do Intune
 Este artigo lista as tarefas e informações específicas para o Portal da Empresa para iOS. Use-o para ajudar a solucionar problemas e gerenciar seu dispositivo iOS. Clique em qualquer link para ver mais detalhes, etapas e capturas de tela.
 
 ## <a name="supported-versions"></a>Versões com suporte
 
-Atualmente, o Portal da Empresa para iOS é compatível com iOS 10.0 e posterior.
+Atualmente, o Portal da Empresa para iOS é compatível com iOS 10.0 e posterior.  
+
 
 ## <a name="enrolling-into-intune-and-installing-the-company-portal"></a>Registrando no Intune e instalando o Portal da Empresa
 
 - [Instalar e entrar no aplicativo de Portal da Empresa do Intune](install-and-sign-in-to-the-intune-company-portal-app-ios.md)
 - [Registrar seu dispositivo iOS no Intune](enroll-your-device-in-intune-ios.md)
-- [O que acontece quando você instala o aplicativo do Portal da Empresa e registra o dispositivo no Intune?](what-happens-if-you-install-the-Company-Portal-app-and-enroll-your-device-in-intune-ios.md)
+- [O que acontece quando você instala o aplicativo do Portal da Empresa e registra o dispositivo no Intune?](what-happens-if-you-install-the-Company-Portal-app-and-enroll-your-device-in-intune-ios.md)  
 
 ## <a name="things-you-can-do-when-your-device-is-enrolled-in-intune"></a>Coisas que você pode fazer quando seu dispositivo está registrado no Intune
 
