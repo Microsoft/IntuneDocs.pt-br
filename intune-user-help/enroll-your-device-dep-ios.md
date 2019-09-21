@@ -18,12 +18,12 @@ ms.reviewer: japoehlm
 ms.suite: ems
 ms.custom: intune-enduser
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: c592b558ace0a2a39059de9f64531f1e078c539d
-ms.sourcegitcommit: 25e6aa3bfce58ce8d9f8c054bc338cc3dff4a78b
+ms.openlocfilehash: 40fe8f1f54779d3ab0a49951ad13c0cb2d0f0ff5
+ms.sourcegitcommit: 1494ff4b33c13a87f20e0f3315da79a3567db96e
 ms.translationtype: MTE75
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "55847753"
+ms.lasthandoff: 09/20/2019
+ms.locfileid: "71166784"
 ---
 # <a name="enroll-your-organization-provided-ios-device-in-management"></a>Registrar no gerenciamento o dispositivo iOS fornecido pela organização
 
@@ -34,15 +34,16 @@ Os dispositivos iOS que são fornecidos pela escola ou empresa costumam ser pré
 Para começar a configuração, ligue o dispositivo e entre com suas credenciais corporativas ou de estudante. O restante deste artigo descreve as etapas e telas que você verá ao percorrer o Assistente de Instalação. 
 
 ## <a name="what-is-apple-dep"></a>O que é o DEP da Apple?
-É possível que sua organização tenha comprado os dispositivos por meio do chamado *DEP (Programa de registro de dispositivos) da Apple*. O DEP da Apple permite que as organizações comprem grandes quantidades de dispositivos iOS ou macOS. As organizações podem então configurar e gerenciar esses dispositivos com seu provedor de gerenciamento de dispositivo móvel preferido, como o Intune. Se você é um administrador e deseja obter mais informações sobre o DEP da Apple, veja [Registrar dispositivos iOS automaticamente no Programa de registro de dispositivos da Apple](https://docs.microsoft.com/intune/device-enrollment-program-enroll-ios).  
 
-## <a name="set-up-your-ios-device"></a>Configurar seu dispositivo iOS  
+É possível que sua organização tenha comprado os dispositivos por meio do chamado *DEP (Programa de registro de dispositivos) da Apple*. O DEP da Apple permite que as organizações comprem grandes quantidades de dispositivos iOS ou macOS. As organizações podem então configurar e gerenciar esses dispositivos com seu provedor de gerenciamento de dispositivo móvel preferido, como o Intune. Se você é um administrador e deseja obter mais informações sobre o DEP da Apple, veja [Registrar dispositivos iOS automaticamente no Programa de registro de dispositivos da Apple](https://docs.microsoft.com/intune/device-enrollment-program-enroll-ios.md).  
+
+## <a name="set-up-your-ios-device"></a>Configurar seu dispositivo iOS
+
 Se você estiver usando seu próprio dispositivo iOS e não um fornecido pela empresa, siga as etapas para [dispositivos pessoais e do tipo “traga seu próprio dispositivo”](enroll-your-device-in-intune-ios.md).  
 
-1. Ligue seu dispositivo iOS. 
+1. Ligue seu dispositivo iOS.
 2. Depois de selecionar o **Idioma**, conecte o dispositivo ao Wi-Fi.
-3. Na tela **Configurar dispositivo iOS**, escolha se você deseja: 
- 
+3. Na tela **Configurar dispositivo iOS**, escolha se você deseja:
    - **Configurar como novo dispositivo**
    - **Restaurar do backup do iCloud**
    - **Restaurar do backup do iTunes**
@@ -53,7 +54,7 @@ Se você estiver usando seu próprio dispositivo iOS e não um fornecido pela em
  
    **A configuração é fornecida pela: Equipe do iOS da [Sua empresa] [endereço]**
 
-5. Faça logon com sua ID da Apple. Fazer logon permite instalar o aplicativo do Portal da Empresa e instalar o perfil de gerenciamento que permitirá à sua empresa conceder a você acesso aos recursos, como email e aplicativos. 
+5. Faça logon com sua ID da Apple. Fazer logon permite instalar o aplicativo do Portal da Empresa e instalar o perfil de gerenciamento que permitirá à sua empresa conceder a você acesso aos recursos, como email e aplicativos.
 6. Concorde com os **termos e condições** e decida se deseja enviar informações de diagnóstico para a Apple.
 7. Depois de concluir o registro, o dispositivo pode solicitar que você realize mais ações. Algumas dessas etapas podem inserir sua senha para acesso de email ou configurar uma senha.
 

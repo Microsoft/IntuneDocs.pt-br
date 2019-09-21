@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 052190185159dfdee4adee94d4c43c72ce6f41d4
-ms.sourcegitcommit: 4b83697de8add3b90675c576202ef2ecb49d80b2
+ms.openlocfilehash: ac74cc547d13e92b87a8e148845ff1bc7be8efe4
+ms.sourcegitcommit: 1494ff4b33c13a87f20e0f3315da79a3567db96e
 ms.translationtype: MTE75
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/13/2019
-ms.locfileid: "67046331"
+ms.lasthandoff: 09/20/2019
+ms.locfileid: "71166991"
 ---
 # <a name="where-did-my-intune-feature-go-in-azure"></a>Para onde foi o meu recurso Intune no Azure?
 Aproveitamos a oportunidade para organizar algumas tarefas mais logicamente à medida que mudamos o Intune para o portal do Azure. Mas cada aperfeiçoamento vem com o custo de aprender a nova organização. Este guia de referência destina-se àqueles que estão totalmente familiarizados com o Intune no portal clássico e querem saber como fazer algo no Intune por meio do portal do Azure. Se este artigo não abordar um recurso que você está tentando localizar, deixe um comentário no final do artigo para que possamos atualizá-lo.
@@ -77,7 +77,7 @@ Se você desejar exibir e fazer alterações nas políticas de Acesso Condiciona
 ## <a name="where-did-my-compliance-policies-go"></a>Para que local foram minhas políticas de conformidade?
 Depois que o locatário é migrado para o portal do Azure, as políticas de conformidade do locatário continuam sendo impostas. No entanto, não é possível exibir nem modificá-las por meio do Intune no portal do Azure.
 
-Se você desejar exibir e fazer alterações nas políticas de conformidade por meio do portal do Azure, precisará remover as políticas antigas do portal clássico. Em seguida, recrie-as no portal do Azure. Para obter mais informações sobre as políticas de conformidade do dispositivo, confira [Introdução às políticas de conformidade do dispositivo no Intune](https://docs.microsoft.com/intune/device-compliance-get-started). 
+Se você desejar exibir e fazer alterações nas políticas de conformidade por meio do portal do Azure, precisará remover as políticas antigas do portal clássico. Em seguida, recrie-as no portal do Azure. Para obter mais informações sobre as políticas de conformidade do dispositivo, confira [Introdução às políticas de conformidade do dispositivo no Intune](device-compliance-get-started.md). 
 
 ## <a name="where-did-apple-dep-go"></a>Para onde foi o Apple DEP?
 No Portal Clássico, você podia configurar o Intune para integrar o Programa de registro de dispositivos da Apple e solicitar manualmente a sincronização com o serviço da Apple:

@@ -16,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: ''
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: aa6b07c77b0d92ceb7bdc960d8c2fd754c277499
-ms.sourcegitcommit: 63b55e81122e5c15893302b109ae137c30855b55
+ms.openlocfilehash: 91b7fc7414c3a6d6517cd4b704cb5e99ddcf96d0
+ms.sourcegitcommit: 1494ff4b33c13a87f20e0f3315da79a3567db96e
 ms.translationtype: MTE75
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/10/2019
-ms.locfileid: "67713247"
+ms.lasthandoff: 09/20/2019
+ms.locfileid: "71167175"
 ---
 # <a name="microsoft-intune-app-sdk-for-android-developers-testing-guide"></a>Guia de teste para desenvolvedores do SDK de Aplicativo do Microsoft Intune para Android
 
@@ -30,20 +30,20 @@ O guia de teste do SDK do Aplicativo do Microsoft Intune para Android é desenvo
 ## <a name="prerequisite-test-accounts"></a>Contas de teste de pré-requisito
 Novas contas podem ser criadas com e sem dados gerados previamente. Para criar uma nova conta:
 1. Navegue até o site [Demos da Microsoft](https://demos.microsoft.com/environments/create/tenant). 
-2. [Configure o Intune](https://docs.microsoft.com/intune/setup-steps) para habilitar o MDM (gerenciamento de dispositivo móvel).
-3. [Criar usuários](https://docs.microsoft.com/intune/users-add).
-4. [Criar grupos](https://docs.microsoft.com/intune/groups-add).
-5. [Atribua licenças](https://docs.microsoft.com/intune/licenses-assign) conforme apropriado para seu teste.
+2. [Configure o Intune](setup-steps.md) para habilitar o MDM (gerenciamento de dispositivo móvel).
+3. [Criar usuários](users-add.md).
+4. [Criar grupos](groups-add.md).
+5. [Atribua licenças](licenses-assign.md) conforme apropriado para seu teste.
 
 
 ## <a name="azure-portal-policy-configuration"></a>Configuração de política do portal do Azure
-[Crie e atribua políticas de proteção de aplicativo](https://docs.microsoft.com/intune/app-protection-policies) na [folha do Intune do portal do Azure](https://portal.azure.com/?feature.customportal=false#blade/Microsoft_Intune_Apps/MainMenu/14/selectedMenuItem/Overview). Sua [política de configuração de aplicativos](https://docs.microsoft.com/intune/app-configuration-policies-overview) também pode ser criada e atribuída na folha do Intune.
+[Crie e atribua políticas de proteção de aplicativo](app-protection-policies.md) na [folha do Intune do portal do Azure](https://portal.azure.com/?feature.customportal=false#blade/Microsoft_Intune_Apps/MainMenu/14/selectedMenuItem/Overview). Sua [política de configuração de aplicativos](app-configuration-policies-overview.md) também pode ser criada e atribuída na folha do Intune.
 
 > [!NOTE]
 > Se seu aplicativo não estiver listado no portal do Azure, você poderá defini-lo como destino com uma política selecionando a opção **mais aplicativos** e dando um nome ao pacote na caixa de texto.
 
 > [!IMPORTANT]
-> Para uma política de configuração de aplicativos ser aplicada, o usuário que está se registrando deve ser definido como destino por uma [política de proteção de aplicativo do Intune](https://docs.microsoft.com/intune/app-protection-policy).
+> Para uma política de configuração de aplicativos ser aplicada, o usuário que está se registrando deve ser definido como destino por uma [política de proteção de aplicativo do Intune](app-protection-policy.md).
 
 ## <a name="test-cases"></a>Casos de teste
 
@@ -103,7 +103,7 @@ Você pode controlar o backup do aplicativo da seguinte maneira:
 ### <a name="unenrollment"></a>Cancelamento de registro
 Você pode apagar remotamente aplicativos gerenciados que contêm email e documentos corporativos, e os dados pessoais são descriptografados quando não são mais administrados da seguinte maneira:
 
-1. No portal do Azure, [emita um apagamento](https://docs.microsoft.com/intune/apps-selective-wipe).
+1. No portal do Azure, [emita um apagamento](apps-selective-wipe.md).
 2. Caso seu aplicativo não esteja registrado para nenhum manipulador de apagamento, confirme as seguintes condições:
     - Ocorre um apagamento completo do aplicativo.
 3. Se seu aplicativo tiver se registrado para `WIPE_USER_DATA` ou `WIPE_USER_AUXILARY_DATA`, confirme as seguintes condições:
@@ -123,7 +123,7 @@ No mínimo, os seguintes cenários para várias identidades devem ser revalidado
 ### <a name="app-configuration-optional"></a>Configuração de aplicativos (opcional)
 Você pode configurar o comportamento de aplicativos gerenciados da seguinte maneira:
 
-1. Se seu aplicativo consumir as definições de configuração de aplicativos, você deverá testar para ver se seu aplicativo lida corretamente com todos os valores que você, como administrador, pode definir. As [políticas de configuração de aplicativos](https://docs.microsoft.com/intune/app-configuration-policies-overview) podem ser criadas e atribuídas usando o Intune.
+1. Se seu aplicativo consumir as definições de configuração de aplicativos, você deverá testar para ver se seu aplicativo lida corretamente com todos os valores que você, como administrador, pode definir. As [políticas de configuração de aplicativos](app-configuration-policies-overview.md) podem ser criadas e atribuídas usando o Intune.
 
 ## <a name="next-steps"></a>Próximas etapas
 

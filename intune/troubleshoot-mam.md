@@ -16,12 +16,12 @@ ms.reviewer: mghadial
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 1cf8f7753a92ad45a68f976359560ef6da2d1cec
-ms.sourcegitcommit: 1b7ee2164ac9490df4efa83c5479344622c181b5
+ms.openlocfilehash: a5e1ea8a0f8ea054b2eb75e1c98e60f184b0a45c
+ms.sourcegitcommit: 1494ff4b33c13a87f20e0f3315da79a3567db96e
 ms.translationtype: MTE75
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/08/2019
-ms.locfileid: "67648714"
+ms.lasthandoff: 09/20/2019
+ms.locfileid: "71166749"
 ---
 # <a name="troubleshoot-mobile-application-management"></a>Solucionar problemas do gerenciamento de aplicativos móveis
 
@@ -90,7 +90,7 @@ Mensagem de erro ou caixa de diálogo | Causa | Remediação |
 **Dispositivo Não Compatível**: este aplicativo não pode ser utilizado porque você está usando um dispositivo com jailbreak. Entre em contato com seu administrador de TI para obter ajuda. | Intune detectou que o usuário está em um dispositivo com jailbreak. | Redefina o dispositivo para as configurações padrão de fábrica. Siga [estas instruções](https://support.apple.com/HT201274) do site de suporte da Apple.
 **Conexão à Internet Necessária**: é necessário estar conectado à Internet para verificar se você pode usar este aplicativo. | Este dispositivo não está conectado à Internet. | Conecte o dispositivo a uma rede WiFi ou de Dados.
 **Falha Desconhecida**: tente reiniciar o aplicativo. Se o problema persistir, entre em contato com o administrador de TI para obter ajuda. | Ocorreu uma falha desconhecida. | Aguarde um momento e tente novamente. Se o erro persistir, crie um [tíquete de suporte](get-support.md#create-an-online-support-ticket) com o Intune.
-**Acessando os Dados da Organização**: a conta corporativa ou de estudante especificada não tem acesso a este aplicativo. Você terá que entrar com uma conta diferente. Entre em contato com seu administrador de TI para obter ajuda. | O Intune detecta que o usuário tentou entrar com uma segunda conta corporativa ou de estudante, diferente da conta registrada no MAM para o dispositivo. Somente uma conta corporativa ou de estudante pode ser gerenciada pelo MAM de cada vez por dispositivo. | Solicite ao usuário que entre com a conta cujo nome de usuário é previamente preenchido pela tela de credenciais. Talvez seja necessário [definir a configuração de UPN do usuário para o Intune](https://docs.microsoft.com/intune/data-transfer-between-apps-manage-ios#configure-user-upn-setting-for-microsoft-intune-or-third-party-emm). <br> <br> Ou solicite que o usuário entre com a nova conta corporativa ou de estudante e remova a conta existente registrada no MAM.
+**Acessando os Dados da Organização**: a conta corporativa ou de estudante especificada não tem acesso a este aplicativo. Você terá que entrar com uma conta diferente. Entre em contato com seu administrador de TI para obter ajuda. | O Intune detecta que o usuário tentou entrar com uma segunda conta corporativa ou de estudante, diferente da conta registrada no MAM para o dispositivo. Somente uma conta corporativa ou de estudante pode ser gerenciada pelo MAM de cada vez por dispositivo. | Solicite ao usuário que entre com a conta cujo nome de usuário é previamente preenchido pela tela de credenciais. Talvez seja necessário [definir a configuração de UPN do usuário para o Intune](data-transfer-between-apps-manage-ios.md#configure-user-upn-setting-for-microsoft-intune-or-third-party-emm). <br> <br> Ou solicite que o usuário entre com a nova conta corporativa ou de estudante e remova a conta existente registrada no MAM.
 **Problema de Conexão**: ocorreu um problema de conexão inesperado. Verifique a conexão e tente novamente.  |  Falha inesperada. | Aguarde um momento e tente novamente. Se o erro persistir, crie um [tíquete de suporte](get-support.md#create-an-online-support-ticket) com o Intune.
 **Alerta**: este aplicativo não pode mais ser usado. Para obter mais informações, entre em contato com o administrador de TI. | Falha ao validar o certificado do aplicativo. | Verifique se a versão do aplicativo está atualizada. <br><br> Reinstale o aplicativo.
 **Erro**: este aplicativo encontrou um problema e precisa ser fechado. Se o erro persistir, entre em contato com o administrador de TI. | Falha ao ler o PIN do aplicativo MAM do conjunto de chaves do iOS da Apple. | Reinicie o dispositivo. Verifique se a versão do aplicativo está atualizada. <br><br> Reinstale o aplicativo.
