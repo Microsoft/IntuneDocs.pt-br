@@ -6,7 +6,7 @@ keywords: ''
 author: lenewsad
 ms.author: lanewsad
 manager: dougeby
-ms.date: 06/28/2019
+ms.date: 09/09/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.localizationpriority: high
@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: ecfd482df452c52d81621cdc49c6ca78c4d4c1f6
-ms.sourcegitcommit: bd09decb754a832574d7f7375bad0186a22a15ab
+ms.openlocfilehash: 1710fd315803c4b47ad3be343893f93f7d155135
+ms.sourcegitcommit: 27e63a96d15bc4062af68c2764905631bd928e7b
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/19/2019
-ms.locfileid: "68354542"
+ms.lasthandoff: 09/17/2019
+ms.locfileid: "71061711"
 ---
 # <a name="ui-updates-for-intune-end-user-apps"></a>Atualizações da interface do usuário para aplicativos de usuário final do Intune
 Saiba mais sobre as atualizações mais recentes dos aplicativos do Microsoft Intune. Adicionamos regularmente ao aplicativo e ao site do Portal da Empresa do Intune e os melhoramos. Se você for administrador de serviços do Intune ou responsável por suporte, este artigo fornecerá as informações necessárias para:
@@ -33,6 +33,23 @@ Saiba mais sobre as atualizações mais recentes dos aplicativos do Microsoft In
 Se você é funcionário ou aluno, confira as capturas de tela e os links para a documentação de ajuda do Portal da Empresa. Para saber mais sobre como usar o aplicativo do Portal da Empresa, confira a [documentação de ajuda do usuário do Portal da Empresa](https://docs.microsoft.com/intune-user-help/).  
 
 <!---End-user messaging for accounts 1573558, 1712; changes to be made for other platforms for 1801 Users of the Company Portal website, will be blocked from taking actions that require write access to your tenant. They will see appropriate error messaging explaining that their account is under maintenance. Similar changes are coming to the Company Portal apps for Android, iOS, macOS, and Windows soon. ![Error message that occurs during account move](./media/account-move-rom-iwp-user-1712.png)--->
+
+
+## <a name="week-of-september-9-2019"></a>Semana de 9 de setembro de 2019
+
+### <a name="updates-to-microsoft-intune-app----4997846---"></a>Atualizações do aplicativo Microsoft Intune <!-- 4997846 -->
+O aplicativo Microsoft Intune para Android foi atualizado com as seguintes melhorias:
+- Layout atualizado e aprimorado para incluir a navegação inferior para as ações mais importantes.
+- Página adicional incluída que mostra o perfil do usuário.
+- Adicionada ao aplicativo a exibição de notificações acionáveis, como a necessidade de atualizar as configurações de dispositivo.
+- Adicionada a exibição de notificações push personalizadas, alinhando o aplicativo ao suporte recentemente adicionado nos aplicativos do Portal da Empresa para iOS e Android. Para saber mais, confira [Enviar notificações personalizadas no Microsoft Intune](custom-notifications.md).
+
+    Exemplo de perfil do usuário:<br>
+    <img src="./media/intune-app-android-device-profile.png" alt="Screenshot of Microsoft Intune app for Android - User Profile" width="300">   
+
+    Exemplo de notificações e navegação na parte inferior:<br>
+    <img src="./media/intune-app-android-device-notify.png" alt="Screenshot of Microsoft Intune app for Android - Notification" width="300">   
+
 
 ## <a name="week-of-june-24-2019"></a>Semana de 24 de junho de 2019  
 
@@ -125,7 +142,7 @@ Você verá as seguintes atualizações:
 - Melhor desempenho para grandes catálogos de aplicativos
 - Maior acessibilidade para todos os usuários  
 
-|Atualizado|Voltar|
+|Atualizado|Anterior|
 |---|---|
 |![A página de dispositivos atualizada mostra o dispositivo alinhado corretamente acima das informações do dispositivo, não mais aparecendo em cima da lista completa.](./media/iwp-device-after-1803.png)|![A versão anterior da página de dispositivos.](./media/iwp-device-before-1803.png)|
 |![A página de instalação do aplicativo atualizada mostra o aplicativo exatamente em cima de uma descrição e de várias informações de instalação, incluindo data de publicação, versão e tipo de aplicativo.](./media/iwp-app-install-after-1803.png)|![A versão anterior da página de instalação do aplicativo.](./media/iwp-app-install-before-1803.png)|  

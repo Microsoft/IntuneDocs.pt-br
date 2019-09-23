@@ -17,18 +17,18 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: cda0453009855d96e7c13e170ba908479a0773ea
-ms.sourcegitcommit: 513e805bbea8bf652c2901dfc5460e34946077df
+ms.openlocfilehash: c0cbc2c7334675e91450b9c2d7129a098498d978
+ms.sourcegitcommit: 27e63a96d15bc4062af68c2764905631bd928e7b
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/29/2019
-ms.locfileid: "70160538"
+ms.lasthandoff: 09/17/2019
+ms.locfileid: "71061588"
 ---
 # <a name="app-configuration-policies-for-microsoft-intune"></a>Políticas de configuração de aplicativo do Microsoft Intune
 
 As políticas de configuração de aplicativos podem ajudar a eliminar os problemas de instalação do aplicativo ao permitir que você atribua configurações a uma política atribuída aos usuários antes da execução do aplicativo. As configurações são então fornecidas automaticamente quando o aplicativo é configurado no dispositivo dos usuários finais e os usuários finais não precisam realizar nenhuma ação. As definições de configuração são exclusivas para cada aplicativo. 
 
-Crie e use políticas de configuração de aplicativos para fornecer definições de configuração para aplicativos iOS ou Android. Essas definições de configuração permitem que um aplicativo seja personalizado usando uma [abordagem padrão do setor](https://www.appconfig.org/) de gerenciamento e configuração de aplicativos. As definições da política de configuração são usadas quando o aplicativo verifica se elas existem, normalmente, na primeira vez em que o aplicativo é executado. 
+Crie e use políticas de configuração de aplicativos para fornecer definições de configuração para aplicativos iOS ou Android. Essas definições de configuração permitem que um aplicativo seja personalizado usando o gerenciamento e a configuração de aplicativos. As definições da política de configuração são usadas quando o aplicativo verifica se elas existem, normalmente, na primeira vez em que o aplicativo é executado. 
 
 Por exemplo, uma configuração de aplicativos pode exigir que você especifique um dos seguintes detalhes:
 
@@ -60,7 +60,7 @@ Você tem duas opções para usar as políticas de configuração de aplicativos
 ## <a name="apps-that-support-app-configuration"></a>Aplicativos que dão suporte à configuração de aplicativo
 
 ### <a name="managed-devices"></a>Dispositivos gerenciados
-Use políticas de configuração de aplicativos para aplicativos que dão suporte a elas. Para dar suporte à configuração de aplicativos no Intune, os aplicativos precisam ser escritos tendo em vista o suporte ao uso de configurações de aplicativo, conforme definido na [Comunidade do AppConfig](https://www.appconfig.org/members). Consulte o fornecedor do aplicativo para obter mais detalhes.
+Use políticas de configuração de aplicativos para aplicativos que dão suporte a elas. Para dar suporte à configuração de aplicativos no Intune, os aplicativos precisam ser escritos tendo em vista o suporte ao uso de configurações de aplicativo, conforme definido pelo sistema operacional. Consulte o fornecedor do aplicativo para obter mais detalhes sobre quais chaves de configuração de aplicativo são compatíveis.
 
 ### <a name="managed-apps"></a>Aplicativos gerenciados
 Prepare seus aplicativos de linha de negócios incorporando o [SDK de Aplicativo do Intune](app-sdk.md) no aplicativo ou encapsulando o aplicativo depois que ele for desenvolvido usando a [Ferramenta de Encapsulamento de Aplicativo do Intune](apps-prepare-mobile-application-management.md). O SDK de Aplicativo do Intune se esforça para minimizar a quantidade de alterações de código necessárias pelo desenvolvedor do aplicativo. Para obter mais informações, consulte a [Visão geral do SDK de Aplicativo do Intune](app-sdk.md). Para obter uma comparação entre o SDK de Aplicativo do Intune e a Ferramenta de Encapsulamento de Aplicativo do Intune, confira [Preparar aplicativos de linha de negócios para políticas de proteção do aplicativo](apps-prepare-mobile-application-management.md#feature-comparison).

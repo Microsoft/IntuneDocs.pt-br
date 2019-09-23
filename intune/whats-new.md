@@ -6,7 +6,7 @@ keywords: ''
 author: ErikjeMS
 ms.author: erikje
 manager: dougeby
-ms.date: 09/09/2019
+ms.date: 09/16/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.localizationpriority: high
@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure; get-started
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 48474ca9fcfafcd050b7ef9c5a64adb56388b9a4
-ms.sourcegitcommit: a25cd79a33feb536d9b2fc11aa7d3e3972f1ca5a
+ms.openlocfilehash: 7b7b4453d441d2f2367b19a6bf0505dabd8e6e48
+ms.sourcegitcommit: 27e63a96d15bc4062af68c2764905631bd928e7b
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/09/2019
-ms.locfileid: "70842151"
+ms.lasthandoff: 09/17/2019
+ms.locfileid: "71061674"
 ---
 # <a name="whats-new-in-microsoft-intune"></a>Novidades do Microsoft Intune
 
@@ -54,6 +54,21 @@ Conheça as novidades de cada semana do Microsoft Intune. Você também pode enc
 
 <!-- ########################## -->
 
+## <a name="week-of-september-16-2019"></a>Semana de 16 de setembro de 2019
+
+### <a name="app-management"></a>Gerenciamento de aplicativos
+
+#### <a name="macos-support-for-web-apps----3174427---"></a>Suporte do macOS para aplicativos Web <!-- 3174427 -->
+Os aplicativos Web, que permitem adicionar um atalho a uma URL na Web, podem ser instalados no Dock usando o Portal da Empresa do macOS. Os usuários finais podem acessar a ação **Instalar** na página de detalhes de um aplicativo Web no Portal da Empresa do macOS. Para obter mais informações sobre o tipo de aplicativo **Link da Web**, confira [Adicionar aplicativos ao Microsoft Intune](apps-add.md) e [Adicionar aplicativos Web ao Microsoft Intune](web-app.md).
+
+#### <a name="macos-support-for-vpp-apps----3173501----"></a>Suporte do macOS para aplicativos VPP <!-- 3173501  -->
+Os aplicativos do macOS, comprados usando o Apple Business Manager, são exibidos no console quando os tokens de VPP da Apple são sincronizados no Intune. Você pode atribuir, revogar e reatribuir licenças baseadas no usuário e no dispositivo para grupos usando o console do Intune. O Microsoft Intune ajuda a gerenciar aplicativos VPP adquiridos para uso em sua empresa ao proporcionar:
+- Informações sobre licença de relatórios da app store.
+- Acompanhamento de quantas licenças você usou.
+- Ajuda para não instalar mais cópias do aplicativo além das que você já tem.
+
+Saiba mais sobre o Intune e o VPP em [Gerenciar aplicativos e livros comprados por volume com o Microsoft Intune](vpp-apps.md).
+
 ## <a name="week-of-september-9-2019"></a>Semana de 9 de setembro de 2019
 
 ### <a name="app-management"></a>Gerenciamento de aplicativos
@@ -64,6 +79,10 @@ O aplicativo Microsoft Intune para Android foi atualizado com as seguintes melho
 - Página adicional incluída que mostra o perfil do usuário.
 - Adicionada ao aplicativo a exibição de notificações acionáveis, como a necessidade de atualizar as configurações de dispositivo.
 - Adicionada a exibição de notificações push personalizadas, alinhando o aplicativo ao suporte recentemente adicionado nos aplicativos do Portal da Empresa para iOS e Android. Para saber mais, confira [Enviar notificações personalizadas no Microsoft Intune](custom-notifications.md).
+
+#### <a name="for-ios-devices-customize-the-enrollment-process-privacy-screen-of-the-company-portal----4394993---"></a>Para dispositivos iOS, personalize a tela de privacidade do processo de registro do Portal da Empresa <!-- 4394993 -->
+Com o Markdown, você pode personalizar a tela de privacidade do Portal da Empresa que os usuários finais exibem durante o registro do iOS. Especificamente, você poderá personalizar a lista daquilo que sua organização não pode ver ou fazer no dispositivo. Para saber mais, confira [Como configurar o aplicativo do Portal da Empresa do Intune](company-portal-app.md#privacy-statement-customization).
+
 
 ## <a name="week-of-september-2-2019"></a>Semana de 2 de setembro de 2019
 
@@ -228,7 +247,7 @@ Você pode definir perfis do Programa de registro de dispositivos para ignorar a
 Para obter mais informações sobre como personalizar o Assistente de Configuração, confira os tópicos [Criar um perfil de registro da Apple para iOS](device-enrollment-program-enroll-ios.md#create-an-apple-enrollment-profile) e [Criar um perfil de registro da Apple para macOS](device-enrollment-program-enroll-macos.md#create-an-apple-enrollment-profile).
 
 #### <a name="add-a-user-column-to-the-autopilot-device-csv-upload-process----3823054---"></a>Adicionar uma coluna de usuário ao processo de upload de arquivos CSV em dispositivos do Autopilot <!-- 3823054 -->
-Agora, é possível adicionar uma coluna de usuário ao upload de arquivos CSV em dispositivos do Autopilot. Dessa forma, você pode atribuir usuários em massa ao importar o CSV. O novo formato das linhas no arquivo CSV é o seguinte: número de série, ID do produto do Windows, hash de hardware, marca de grupo opcional, usuário atribuído opcional. Para obter mais informações, confira [Registrar dispositivos Windows no Intune usando o Windows Autopilot](enrollment-autopilot.md).
+Agora, é possível adicionar uma coluna de usuário ao upload de arquivos CSV em dispositivos do Autopilot. Dessa forma, você pode atribuir usuários em massa ao importar o CSV. Para obter mais informações, confira [Registrar dispositivos Windows no Intune usando o Windows Autopilot](enrollment-autopilot.md).
 
 
 ### <a name="device-management"></a>Gerenciamento de dispositivos
@@ -1054,7 +1073,7 @@ Aplica-se a:
 - macOS
 
 #### <a name="intune-conditional-access-ui-update------2432313-----"></a>Atualização da interface do usuário de Acesso Condicional do Intune   <!-- 2432313   -->
-Fizemos melhorias na interface do usuário para Acesso Condicional no console do Intune. Como por exemplo:
+Fizemos melhorias na interface do usuário para Acesso Condicional no console do Intune. Entre elas estão:
 - Substituição da folha *Acesso Condicional* do Intune pela folha do Azure Active Directory. Isso garante que você terá acesso à variedade completa de definições e configurações de [Acesso Condicional](conditional-access.md) (que continua sendo uma tecnologia do Azure AD) no console do Intune. 
 - Renomeamos a folha *Acesso local* para *Acesso ao Exchange* e relocamos a configuração *Conector de serviço do Exchange* para essa folha renomeada.  Essa alteração consolida o local em que você [configura e monitora os detalhes relacionados ao Exchange Online e localmente](exchange-connector-install.md).  
 

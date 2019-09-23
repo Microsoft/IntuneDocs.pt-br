@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 8cf55084951c3a423b79e4588f8814b5e73ce8e8
-ms.sourcegitcommit: 6c74ff568267d85fd1d44fda75e3e24ead87cb2b
+ms.openlocfilehash: a038f55f6dbdd894742a8712c878e77557a77210
+ms.sourcegitcommit: 27e63a96d15bc4062af68c2764905631bd928e7b
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/28/2019
-ms.locfileid: "70063024"
+ms.lasthandoff: 09/17/2019
+ms.locfileid: "71061538"
 ---
 # <a name="selectively-wipe-data-using-app-protection-policy-conditional-launch-actions-in-intune"></a>Apagar dados seletivamente usando ações de inicialização condicional da política de proteção de aplicativos no Intune
 
@@ -44,7 +44,7 @@ Você pode escolher explicitamente apagar os dados corporativos da empresa do di
 8. Selecione a **Ação** a ser executada se os usuários não atenderem aos seus requisitos. Em alguns casos, várias ações podem ser definidas para uma única configuração. Para obter mais informações, confira [Como criar e atribuir políticas de proteção de aplicativo](app-protection-policies.md).
 
 >[!NOTE]
-> Para usar a configuração **Modelos de dispositivo ou fabricantes de dispositivo**, insira uma lista separada por ponto e vírgula de identificadores de modelo. Evite usar espaços em listas de vários valores. Esses valores não diferenciam maiúsculas de minúsculas. 
+> Para usar a configuração **Modelos de dispositivo ou fabricantes de dispositivo**, insira uma lista separada por ponto e vírgula com os identificadores de modelos de dispositivos (iOS) ou fabricantes de dispositivos (Android). Evite usar espaços em listas de vários valores. Esses valores não diferenciam maiúsculas de minúsculas. 
 
 ## <a name="policy-settings"></a>Configurações de política 
 

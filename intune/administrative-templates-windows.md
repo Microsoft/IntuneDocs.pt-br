@@ -5,7 +5,7 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 09/04/2019
+ms.date: 09/17/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.localizationpriority: high
@@ -15,12 +15,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: c474ac2eccf90e829abe753c82d40bdfae9146ec
-ms.sourcegitcommit: 5bb46d3c0bf8c5595132c4200849b1c4bcfe7cdb
+ms.openlocfilehash: 8b41405e2256d6d2608b05a9c7e8a40cbb3ab349
+ms.sourcegitcommit: 74911a263944f2dbd9b754415ccda6c68dae0759
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/05/2019
-ms.locfileid: "70376917"
+ms.lasthandoff: 09/17/2019
+ms.locfileid: "71071061"
 ---
 # <a name="use-windows-10-templates-to-configure-group-policy-settings-in-microsoft-intune"></a>Use modelos do Windows 10 para definir as configurações da política de grupo no Microsoft Intune
 
@@ -36,7 +36,7 @@ Este artigo lista as etapas usadas para criar um modelo para dispositivos Window
 
 ## <a name="before-you-begin"></a>Antes de começar
 
-- Algumas dessas configurações estão disponíveis no Windows 10 versão 1703 (RS2). Para uma melhor experiência, recomendamos usar o Windows 10 Enterprise versão 1903 (19H1) e mais recente.
+- Algumas dessas configurações estão disponíveis no Windows 10 versão 1703 (RS2). Algumas configurações não são incluídas em todas as edições do Windows. Para uma melhor experiência, recomendamos usar o Windows 10 Enterprise versão 1903 (19H1) e mais recente.
 
 - As configurações do Windows usam [CSPs da política do Windows](https://docs.microsoft.com/windows/client-management/mdm/policy-configuration-service-provider#admx-backed-policies). Os CSPs funcionam em diferentes edições do Windows, como Home, Professional, Enterprise e assim por diante. Para ver se um CSP funciona em uma edição específica, acesse os [CSPs da política do Windows](https://docs.microsoft.com/windows/client-management/mdm/policy-configuration-service-provider#admx-backed-policies).
 

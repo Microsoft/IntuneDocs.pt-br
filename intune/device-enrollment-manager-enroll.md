@@ -12,17 +12,17 @@ ms.service: microsoft-intune
 ms.localizationpriority: high
 ms.technology: ''
 ms.assetid: 7196b33e-d303-4415-ad0b-2ecdb14230fd
-ms.reviewer: damionw
+ms.reviewer: tisilver
 ms.suite: ems
 search.appverid: MET150
 ms.custom: seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: bd870a788ff5cac7e0aff47c5b8175c0bdfacff2
-ms.sourcegitcommit: 614c4c36cfe544569db998e17e29feeaefbb7a2e
+ms.openlocfilehash: cbfe0e30794ddfe5b2f089d50456f9cbdd031e6d
+ms.sourcegitcommit: 74911a263944f2dbd9b754415ccda6c68dae0759
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/24/2019
-ms.locfileid: "68427287"
+ms.lasthandoff: 09/17/2019
+ms.locfileid: "71071378"
 ---
 # <a name="enroll-devices-in-intune-by-using-a-device-enrollment-manager-account"></a>Registrar dispositivos no Intune por meio do uso de uma conta do gerenciador de registro de dispositivos
 
@@ -39,7 +39,7 @@ Contas de usuário e dispositivos do DEM registrados com uma conta de usuário d
 - Os dispositivos poderão instalar aplicativos se tiverem licenças de dispositivo do Apple VPP.
 - Os dispositivos estão bloqueados para Acesso Condicional, com exceção do Windows 10 1803+
 - Cada dispositivo registrado em contas do DEM precisa ser corretamente licenciado para ser gerenciado pelo Intune. A licença poderia ser uma licença de usuário ou de dispositivo do Intune.
-
+- Se você fizer o [registro de dispositivos de perfil de trabalho do Android Enterprise](android-work-profile-enroll.md) usando uma conta de DEM, haverá um limite de 10 dispositivos que podem ser registrados por conta.
 
 
 ## <a name="add-a-device-enrollment-manager"></a>Adicionar um gerenciador de registro de dispositivo

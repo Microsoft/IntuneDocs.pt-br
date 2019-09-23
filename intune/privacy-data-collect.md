@@ -16,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: d96167eb37ac7c3c90bad82783e9ce06814f8c88
-ms.sourcegitcommit: 7c251948811b8b817e9fe590b77f23aed95b2d4e
+ms.openlocfilehash: 08066c0742ad4ad02f907e55cc84eb65068c9b99
+ms.sourcegitcommit: c9725ddae6c0f82a491de27c87f240254d32716b
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/15/2019
-ms.locfileid: "67884775"
+ms.lasthandoff: 09/13/2019
+ms.locfileid: "70986416"
 ---
 # <a name="data-collection-in-intune"></a>Coleta de dados no Intune
 
@@ -33,6 +33,9 @@ Quando os usuários registram seus dispositivos corporativos ou pessoais usando 
 - Informações de diagnóstico, desempenho e uso.
 
 Dessas fontes, o Intune coleta informações que se enquadram nas três seguintes categorias: [identificadas](#identified-data), [pseudoanonimizadas](#pseudonymized-data) e [agregadas](#aggregated-data).
+
+> [!NOTE]
+> Não vendemos os dados coletados por nossos serviços para terceiros por nenhum motivo.
 
 ## <a name="identified-data"></a>Dados identificados
 
@@ -55,7 +58,7 @@ Os dados identificados coletados pelo Intune podem incluir, entre outros:
   - ICCID
   - Número do telefone
 - Informações do log de auditoria, incluindo dados sobre as seguintes atividades
-  - Gerenciar
+  - assinaturas
   - Criar
   - Atualizar (editar)
   - Excluir
@@ -78,7 +81,7 @@ Os dados identificados coletados pelo Intune podem incluir, entre outros:
   - Chave de assinatura
 - Inventário de aplicativos, como
   - nome do aplicativo
-  - Versão
+  - Versão do
   - ID do aplicativo
   - tamanho
   - local de instalação
