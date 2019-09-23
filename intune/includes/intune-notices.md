@@ -7,18 +7,18 @@ ms.topic: include
 ms.date: 03/28/2019
 ms.author: erikje
 ms.custom: include file
-ms.openlocfilehash: 0721c62d44234a44881cdc562376c9bb62412187
-ms.sourcegitcommit: 73fbecf7cee4fdfc37d3c30ea2007d2a9a6d2d12
+ms.openlocfilehash: 041f37e56e85b0ac26a4dd7a9dbbdb49bc0ebd9e
+ms.sourcegitcommit: 1494ff4b33c13a87f20e0f3315da79a3567db96e
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/05/2019
-ms.locfileid: "68775835"
+ms.lasthandoff: 09/20/2019
+ms.locfileid: "71166347"
 ---
 Esses avisos fornecem informações importantes que podem ajudar você a se preparar para os recursos e as alterações futuras do Intune. 
 
 
 ### <a name="decreasing-support-for-android-device-administrator"></a>Redução do suporte para o administrador de dispositivos Android 
-O administrador de dispositivos Android (às vezes chamado de gerenciamento Android "herdado" e lançado com o Android 2.2) é uma maneira de gerenciar dispositivos Android. No entanto, a funcionalidade de gerenciamento aprimorada já está disponível com o [Android Enterprise]( https://docs.microsoft.com/intune/connect-intune-android-enterprise) (lançado com o Android 5.0). Em um esforço para migrar para um gerenciamento de dispositivo moderno, mais avançado e mais seguro, o Google tem reduzido o suporte do administrador de dispositivos em novos lançamentos do Android.
+O administrador de dispositivos Android (às vezes chamado de gerenciamento Android "herdado" e lançado com o Android 2.2) é uma maneira de gerenciar dispositivos Android. No entanto, a funcionalidade de gerenciamento aprimorada já está disponível com o [Android Enterprise](../connect-intune-android-enterprise.md) (lançado com o Android 5.0). Em um esforço para migrar para um gerenciamento de dispositivo moderno, mais avançado e mais seguro, o Google tem reduzido o suporte do administrador de dispositivos em novos lançamentos do Android.
 
 #### <a name="how-does-this-affect-me"></a>Como isso me afeta?
 Com essas alterações realizadas pelo Google, os usuários do Intune serão afetados das seguintes maneiras: 
@@ -66,7 +66,7 @@ Você não precisa fazer nada, mas é possível atualizar as diretrizes para pro
 #### <a name="additional-information"></a>Informações adicionais 
 https://aka.ms/intune_fullscreen
 
-### <a name="plan-for-change-intune-moving-to-support-ios-11-and-higher-in-september----4665342--"></a>Planejar mudanças: Intune passa a ser compatível com o iOS 11 e posteriores em setembro <!-- 4665342-->
+### <a name="plan-for-change-intune-moving-to-support-ios-11-and-higher-in-september----4665324--"></a>Planejar mudanças: Intune passa a ser compatível com o iOS 11 e posteriores em setembro <!-- 4665324-->
 Em setembro, esperamos que o iOS 13 seja lançado pela Apple. O registro do Intune, o Portal da Empresa e o Managed Browser mudarão para ser compatíveis com o iOS 11 e posteriores logo após o lançamento do iOS 13.
 
 #### <a name="how-does-this-affect-me"></a>Como isso me afeta?
@@ -76,7 +76,7 @@ Desde que os aplicativos móveis do O365 sejam compatíveis com o iOS 11.0 e pos
 - iPhone 5c
 - iPad (4ª geração)
 
-A partir de julho, dispositivos registrados no MDM com iOS 10 e o Portal da Empresa receberão uma solicitação para atualizar seu sistema operacional ou dispositivo. Se você usar APP (Políticas de Proteção de Aplicativo), também poderá definir a configuração de acesso "Exigir o sistema de operacional iOS mínimo (somente aviso)".
+Se você usar APP (Políticas de Proteção de Aplicativo), também poderá definir a configuração de acesso "Exigir o sistema de operacional iOS mínimo (somente aviso)".
 
 #### <a name="what-do-i-need-to-do-to-prepare-for-this-change"></a>O que preciso fazer para me preparar para essa alteração?
 Verifique o relatório do Intune para ver quais dispositivos ou usuários podem ser afetados. Vá para **Dispositivos** > **Todos os dispositivos** e filtre por sistema operacional. É possível adicionar colunas extras para ajudar a identificar quem na sua organização tem dispositivos que executam o iOS 10. Solicite que os usuários finais atualizem seus dispositivos para uma versão de sistema operacional compatível antes de setembro.
@@ -96,7 +96,7 @@ Verifique seus aplicativos Microsoft, de terceiros e LOB (linha de negócios). G
 Você também deve atualizar sua documentação ou as diretrizes do desenvolvedor, se aplicável, para incluir essa alteração na compatibilidade do SDK.
 
 #### <a name="additional-information"></a>Informações adicionais
-https://docs.microsoft.com/intune/apps-prepare-mobile-application-management
+[Preparar aplicativos de linha de negócios para as políticas de proteção de aplicativos](../apps-prepare-mobile-application-management.md)
 
 ### <a name="plan-for-change-new-windows-updates-settings-in-intune----4464404---"></a>Planejar mudanças: Novas configurações de atualizações do Windows no Intune <!-- 4464404 -->
 A partir da versão de agosto, ou 1908, do Intune, adicionaremos novas “configurações de prazo” que podem ser definidas como alternativa à opção “Permitir que o usuário reinicie (reinício estabelecido)”. Planejamos desabilitar as configurações de reinício estabelecido na interface do usuário na atualização de setembro, ou 1909, e removê-las completamente do console no final de outubro. 
