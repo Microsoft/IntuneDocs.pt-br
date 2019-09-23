@@ -12,17 +12,17 @@ ms.localizationpriority: medium
 ms.technology: ''
 ms.assetid: ''
 ROBOTS: ''
-ms.reviewer: ''
+ms.reviewer: coferro
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 159e236a079adcd55ba73e8fea6f786c09d08bbd
-ms.sourcegitcommit: 73fbecf7cee4fdfc37d3c30ea2007d2a9a6d2d12
+ms.openlocfilehash: 8324f53d787bd307ac3befd0ccee52cb8153b611
+ms.sourcegitcommit: d2989b9992d10d133573d9bc31479659fb7e242c
 ms.translationtype: MTE75
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/03/2019
-ms.locfileid: "68772354"
+ms.lasthandoff: 09/18/2019
+ms.locfileid: "71080025"
 ---
 # <a name="troubleshoot-device-actions-in-intune"></a>Solucionar problemas de ações de dispositivo no Intune
 
@@ -53,7 +53,7 @@ Não. E você não precisa inserir os traços.
 ## <a name="remove-devices-action"></a>Ação remover dispositivos
 
 ### <a name="how-do-i-tell-who-started-a-retirewipe"></a>Como fazer dizer quem iniciou uma desativação/apagamento?
-Vá para **dispositivos** > doIntune**ações dedispositivo** > **marque** **> a coluna iniciadopor** .
+Vá para **dispositivos** do  > **Intune** > **ações de dispositivo** > marque a coluna Iniciado por.
 Se você não vir uma entrada, a pessoa mais provável de iniciar a ação é o usuário do dispositivo. Eles provavelmente usaram o Portal da Empresa aplicativo ou o portal.manage.microsoft.com.
 
 ### <a name="why-wasnt-my-application-uninstalled-after-using-retire"></a>Por que meu aplicativo não foi desinstalado depois de usar a desativação?
@@ -68,13 +68,13 @@ Esse comportamento é esperado. O Google não permite a redefinição de fábric
 Como desativar um dispositivo não revoga tokens de acesso. Você pode usar políticas de acesso condicional para atenuar essa condição.
 
 ### <a name="how-can-i-monitor-a-retirewipe-action-after-it-was-issued"></a>Como posso monitorar uma ação de desativar/apagar após sua emissão?
-Vá para **dispositivos** > doIntune**açõesde** > **dispositivo**.
+Vá para **dispositivosdo** > **Intune** > **ações de dispositivo**.
 
 ### <a name="why-do-wipes-sometimes-show-as-pending-indefinitely"></a>Por que as limpezas às vezes são mostradas como pendentes de forma indefinida?
 Os dispositivos nem sempre relatam seu status de volta para o serviço do Intune antes que a redefinição seja iniciada. Assim, a ação é mostrada como pendente. Se você confirmou que a ação foi bem-sucedida, exclua o dispositivo do serviço.
 
 ### <a name="what-happens-if-i-start-a-retirewipe-on-an-offline-device-or-a-device-that-hasnt-communicated-with-the-service-in-a-while"></a>O que acontece se eu iniciar uma desativação/apagamento em um dispositivo offline ou um dispositivo que não se comunicava com o serviço há algum tempo?
-O dispositivo permanecerá no estado de desativação **/apagamento pendente** até que o certificado MDM expire. O certificado MDM dura por um ano do registro e renova automaticamente todos os anos. Se o dispositivo fizer check-in antes que o certificado MDM expire, ele será desativado/apagado. Se o dispositivo não fizer check-in antes de o certificado MDM expirar, ele não poderá fazer check-in no serviço. 180 dias após o certificado MDM expirar, o dispositivo será removido automaticamente da portal do Azure.
+O dispositivo permanecerá no estado de **desativação/apagamento pendente** até que o certificado MDM expire. O certificado MDM dura por um ano do registro e renova automaticamente todos os anos. Se o dispositivo fizer check-in antes que o certificado MDM expire, ele será desativado/apagado. Se o dispositivo não fizer check-in antes de o certificado MDM expirar, ele não poderá fazer check-in no serviço. 180 dias após o certificado MDM expirar, o dispositivo será removido automaticamente da portal do Azure.
 
 
 ## <a name="reset-passcode-action"></a>Redefinir ação de senha
