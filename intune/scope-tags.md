@@ -14,12 +14,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 90865b8a8881ab85089fb379a8398e276574b771
-ms.sourcegitcommit: b78793ccbef2a644a759ca3110ea73e7ed6ceb8f
+ms.openlocfilehash: 2fb82b02057e1e028755da16a05755b0b8ddb93a
+ms.sourcegitcommit: c19584b36448bbd4c8638d7cab552fe9b3eb3408
 ms.translationtype: MTE75
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/16/2019
-ms.locfileid: "69550030"
+ms.lasthandoff: 09/20/2019
+ms.locfileid: "71163795"
 ---
 # <a name="use-role-based-access-control-rbac-and-scope-tags-for-distributed-it"></a>Usar RBAC (controle de acesso baseado em função) e marcas de escopo para TI distribuída
 
@@ -38,7 +38,7 @@ Por exemplo, digamos que um administrador de escritório regional de Seattle ten
 ## <a name="default-scope-tag"></a>Marca de escopo padrão
 A marca de escopo padrão é automaticamente adicionada a todos os objetos não marcados que dão suporte a marcas de escopo.
 
-O recurso de marca de escopo padrão é semelhante ao recurso de escopos de segurança no System Center Configuration Manager. 
+Esse recurso de marca de escopo padrão é semelhante ao recurso escopos de segurança do System Center Configuration Manager. 
 
 ## <a name="to-create-a-scope-tag"></a>Para criar uma marca de escopo
 
@@ -101,7 +101,6 @@ Ao trabalhar com marcas de escopo, lembre-se destes detalhes:
     - Categorias de dispositivos
     - Restrições de registro
     - Identificadores de dispositivo Corp
-    - Termos e condições
     - Dispositivos de piloto automático
     - Locais de conformidade do dispositivo
     - Dispositivos JAMF

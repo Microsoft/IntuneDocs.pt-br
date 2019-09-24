@@ -5,7 +5,7 @@ keywords: ''
 author: lenewsad
 ms.author: lanewsad
 manager: dougeby
-ms.date: 11/06/2017
+ms.date: 09/12/2019
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -18,12 +18,12 @@ ms.reviewer: esmich
 ms.suite: ems
 ms.custom: intune-enduser
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 9333cda33142b9a0a4e0995b4bafe5365f7cb69f
-ms.sourcegitcommit: bccfbf1e3bdc31382189fc4489d337d1a554e6a1
+ms.openlocfilehash: c15f2434f67ec08baf04883da6f9525b5f803823
+ms.sourcegitcommit: 8934b1abec96e18cee15a77107d37551766f7666
 ms.translationtype: MTE75
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/03/2019
-ms.locfileid: "67545864"
+ms.lasthandoff: 09/18/2019
+ms.locfileid: "71099808"
 ---
 # <a name="what-happens-if-you-install-the-company-portal-app-and-enroll-your-ios-device-in-intune"></a>O que acontecerá se você instalar o aplicativo do Portal da Empresa e registrar seu dispositivo iOS no Intune?
 
@@ -37,7 +37,10 @@ Quando você instala o aplicativo do Portal da Empresa e registra o dispositivo 
 
 - configurar automaticamente sua conta de email da empresa.
 
-Quando registra seu dispositivo no Intune, você concede permissão ao suporte de sua empresa para gerenciar seu dispositivo a fim de ajudar a proteger as informações da empresa contidas nele.
+> [!NOTE]
+> Não vendemos os dados coletados por nossos serviços para terceiros por nenhum motivo.  
+
+Quando registra seu dispositivo no Intune, você concede permissão ao suporte de sua empresa para gerenciar seu dispositivo a fim de ajudar a proteger as informações da empresa contidas nele.  
 
 Quando o dispositivo é registrado, o suporte de sua empresa pode:
 
@@ -64,5 +67,7 @@ Quando o dispositivo é registrado, o suporte de sua empresa pode:
 - Habilitar ou desabilitar o roaming de voz no seu dispositivo. Se o roaming de voz for permitido, taxas de roaming poderão ser cobradas.
 
 - Habilitar ou desabilitar a sincronização automática de arquivos durante o modo de roaming no seu dispositivo. Se a sincronização automática de arquivos for permitida, taxas de roaming poderão ser cobradas.
+
+
 
 Se tiver dúvidas, entre em contato com o suporte de sua empresa. Para obter as informações de contato, consulte o [site do Portal da Empresa](https://go.microsoft.com/fwlink/?linkid=2010980).

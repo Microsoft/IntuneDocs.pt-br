@@ -5,7 +5,7 @@ keywords: ''
 author: lenewsad
 ms.author: lanewsad
 manager: dougeby
-ms.date: 08/28/2018
+ms.date: 09/18/2019
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -18,21 +18,20 @@ ms.reviewer: jieyang
 ms.suite: ems
 ms.custom: intune-enduser
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: f2cd69725ad10c08f7c137f4444cce831160dd88
-ms.sourcegitcommit: bccfbf1e3bdc31382189fc4489d337d1a554e6a1
+ms.openlocfilehash: 690fb81350c0c264677c6c75b8942e9cdcd4e8f0
+ms.sourcegitcommit: c19584b36448bbd4c8638d7cab552fe9b3eb3408
 ms.translationtype: MTE75
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/03/2019
-ms.locfileid: "67546794"
+ms.lasthandoff: 09/20/2019
+ms.locfileid: "71163354"
 ---
 # <a name="how-to-reset-your-device-passcode-from-the-company-portal-website"></a>Como redefinir a senha do dispositivo pelo site do Portal da Empresa
 
-Se você perder o PIN ou a senha do dispositivo, use o [site Portal da Empresa](https://portal.manage.microsoft.com) para redefini-lo.  
+Se você perder o PIN ou a senha do dispositivo, use o [site Portal da Empresa](https://portal.manage.microsoft.com) para redefini-lo. 
 
-Se você estiver usando um dispositivo corporativo registrado, talvez a opção para redefinir a senha do dispositivo não seja exibida. Contate o suporte da empresa para redefinir a senha para você.
+A opção Redefinir senha pode não aparecer para um dispositivo registrado pela empresa. Nesse caso, entre em contato com o suporte de sua empresa para que ele seja redefinido para você.  
 
-   > [!NOTE]
-   > Não é possível redefinir a senha para dispositivos executando Android 7.0 e posterior. Se você esquecer sua senha, será necessário redefinir o dispositivo para as configurações de fábrica. 
+A redefinição de senha não está disponível para dispositivos que executam o Android 7,0 e posterior. Se você esquecer sua senha em um desses dispositivos, deverá redefini-la para as configurações de fábrica.  
 
 ## <a name="reset-your-passcode"></a>Redefinir senha
 
@@ -46,9 +45,9 @@ Se você estiver usando um dispositivo corporativo registrado, talvez a opção 
 
    ![A página de detalhes do dispositivo de um dispositivo selecionado no site Portal da Empresa, com uma lista de links na parte superior mostrando Renomear, Remover, Redefinir Dispositivo, Redefinir Senha e Bloqueio Remoto. ](./media/rename-reset-device-1808.png)   
 
-    ![Exibição ampliada do ícone Mais, realçado com uma seta vermelha.](./media/rename-reset-device-step3-more-1808.png)  
+    ![Captura de tela do ícone Mais, realçado com uma seta vermelha.](./media/rename-reset-device-step3-more-1808.png)  
 
-4. Quando solicitado, clique em **Sair**. Quando solicitado, entre novamente. Você precisa entrar no site Portal da Empresa em até cinco minutos para que ele redefina a senha do dispositivo.  
+4. Quando solicitado, clique em **Sair**. Quando solicitado, entre novamente. Entre no site Portal da Empresa em até cinco minutos ou ele não redefinirá a senha do dispositivo.  
 
    > [!NOTE]
    > Você precisa entrar novamente para confirmar sua identidade. Isso é para evitar tentativas mal-intencionadas de redefinir a senha do dispositivo.
@@ -76,7 +75,7 @@ Esta seção descreve a redefinição de senha e o comportamento da senha tempor
 
 **Android**: remove a senha existente e cria uma senha temporária composta de letras e números.
 
-**iOS**: remove a senha existente e não cria uma senha temporária. Se você usa o scanner de impressão digital Touch ID para abrir o dispositivo ou fazer compras, é necessário configurá-lo novamente.  
+**iOS**: remove a senha existente e não cria uma senha temporária. Se você usar o Touch ID para abrir o dispositivo ou fazer compras, deverá configurá-lo novamente.  
 
 **Windows 10 Mobile**: remove a senha existente e cria uma senha temporária composta de letras e números. Se o reconhecimento do rosto do Windows Hello estiver configurado, ele ainda funcionará com o dispositivo.
 
