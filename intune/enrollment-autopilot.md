@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 1bb6efa8bff9ff428a7ea6cc1bd245070cfc0e1f
-ms.sourcegitcommit: 74911a263944f2dbd9b754415ccda6c68dae0759
+ms.openlocfilehash: 301945f96b62dce9ee1cf6caedf40fe6b03499e3
+ms.sourcegitcommit: 1494ff4b33c13a87f20e0f3315da79a3567db96e
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/17/2019
-ms.locfileid: "71070938"
+ms.lasthandoff: 09/20/2019
+ms.locfileid: "71166427"
 ---
 # <a name="enroll-windows-devices-in-intune-by-using-the-windows-autopilot"></a>Registrar dispositivos Windows no Intune usando o Windows Autopilot  
 O Windows Autopilot simplifica a inscrição de dispositivos no Intune. Compilar e manter imagens de sistema operacional personalizadas é um processo que consome muito tempo. Além disso, geralmente se gasta muito tempo para aplicar essas imagens personalizadas de sistema operacional aos novos dispositivos para prepará-los para o uso antes de fornecê-los aos usuários finais. Com o Microsoft Intune e o Autopilot, é possível dar novos dispositivos seus usuários finais sem precisar criar, manter e aplicar imagens personalizadas do sistema operacional para os dispositivos. Quando usa o Intune para gerenciar dispositivos do Autopilot, você pode gerenciar políticas, perfis, aplicativos e muito mais, depois de registrá-los. Para obter uma visão geral dos benefícios, cenários e pré-requisitos, confira [Visão geral do Windows Autopilot](https://docs.microsoft.com/windows/deployment/windows-autopilot/windows-10-autopilot).
@@ -204,4 +204,4 @@ Você pode agrupar dispositivos Windows por uma ID de correlação ao registrar 
 > - Nunca nomeie perfis do Autopilot ou do Apple DEP começando com "OfflineAutopilotprofile-".
 
 ## <a name="next-steps"></a>Próximas etapas
-Após configurar o Windows Autopilot para dispositivos Windows 10 registrados, saiba como gerenciar esses dispositivos. Para saber mais, confira [O que é gerenciamento de dispositivos do Microsoft Intune?](https://docs.microsoft.com/intune/device-management)
+Após configurar o Windows Autopilot para dispositivos Windows 10 registrados, saiba como gerenciar esses dispositivos. Para saber mais, confira [O que é gerenciamento de dispositivos do Microsoft Intune?](device-management.md)

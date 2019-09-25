@@ -14,12 +14,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 9f8560262d8c501af4127876eaafed293fbc4041
-ms.sourcegitcommit: b1ddc7f4a3d520b7d6755c7a423a46d1e2548592
+ms.openlocfilehash: 22bee478160347256e7e2fa1422b74ccbead57b9
+ms.sourcegitcommit: 1494ff4b33c13a87f20e0f3315da79a3567db96e
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/20/2019
-ms.locfileid: "69651204"
+ms.lasthandoff: 09/20/2019
+ms.locfileid: "71167055"
 ---
 # <a name="monitor-intune-device-compliance-policies"></a>Monitorar as políticas de conformidade do Dispositivo do Intune
 
@@ -60,7 +60,7 @@ Ao se aprofundar nesse relatório, você também pode visualizar as políticas e
 O gráfico mostra os estados de conformidade de todos os dispositivos registrados no Intune. Os estados de conformidade do dispositivo são mantidos em dois bancos de dados diferentes: Intune e Azure Active Directory. 
 
 > [!IMPORTANT]
-> O Intune segue o agendamento de check-in do dispositivo para todas as avaliações de conformidade no dispositivo. [Saiba mais sobre o agendamento de check-in do dispositivo](https://docs.microsoft.com/intune/device-profile-troubleshoot#how-long-does-it-take-for-devices-to-get-a-policy-profile-or-app-after-they-are-assigned).
+> O Intune segue o agendamento de check-in do dispositivo para todas as avaliações de conformidade no dispositivo. [Saiba mais sobre o agendamento de check-in do dispositivo](device-profile-troubleshoot.md#how-long-does-it-take-for-devices-to-get-a-policy-profile-or-app-after-they-are-assigned).
 
 Descrições dos diferentes estados da política de conformidade dos dispositivos:
 

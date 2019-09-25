@@ -7,7 +7,6 @@ ms.author: lanewsad
 manager: dougeby
 ms.date: 02/15/2018
 ms.topic: conceptual
-ms.prod: ''
 ms.service: microsoft-intune
 ms.localizationpriority: high
 ms.technology: ''
@@ -17,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: f6122016f660e01b19862145d1a358fa154bf18f
-ms.sourcegitcommit: 25e6aa3bfce58ce8d9f8c054bc338cc3dff4a78b
+ms.openlocfilehash: f7e4a1081c76e1d41b84a7fadc84e93a221007c4
+ms.sourcegitcommit: 7315fe72b7e55c5dcffc6d87f185f3c2cded9028
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57396940"
+ms.lasthandoff: 07/02/2019
+ms.locfileid: "71238446"
 ---
 # <a name="what-to-expect-when-your-android-app-is-managed-by-app-protection-policies"></a>O que esperar quando seu aplicativo Android é gerenciado por políticas de proteção de aplicativo
 
@@ -30,7 +29,7 @@ ms.locfileid: "57396940"
 
 Este artigo descreve a experiência do usuário para aplicativos com políticas de proteção de aplicativo. As políticas de proteção do aplicativo são aplicadas somente quando aplicativos são usados em um contexto de trabalho: por exemplo, para acessar aplicativos com uma conta corporativa ou acessar arquivos armazenados no local do OneDrive for Business.
 
-##  <a name="access-apps"></a>Acessar aplicativos
+## <a name="access-apps"></a>Acessar aplicativos
 
 O aplicativo Portal da Empresa é necessário para todos os aplicativos que estão associados a políticas de proteção de aplicativo em dispositivos Android.
 
@@ -39,30 +38,30 @@ O aplicativo Portal da Empresa é necessário para todos os aplicativos que est�
 O aplicativo do Portal da Empresa é uma forma do Intune compartilhar dados em um local seguro. Portanto, o aplicativo do Portal da Empresa é um requisito para todos os aplicativos associados a políticas de proteção do aplicativo, mesmo se o dispositivo não estiver registrado no Intune.
 
 
-##  <a name="use-apps-with-multi-identity-support"></a>Usar aplicativos com suporte a várias identidades
+## <a name="use-apps-with-multi-identity-support"></a>Usar aplicativos com suporte a várias identidades
 
 As políticas de proteção do aplicativo são aplicadas apenas em contextos corporativos. Desse modo, o aplicativo pode se comportar de forma diferente, de acordo com o contexto – de trabalho ou pessoal.
 
 Por exemplo, o usuário receberá uma solicitação para fornecer o PIN ao acessar dados de trabalho. No **aplicativo Outlook**, o usuário será solicitado a fornecer um PIN ao iniciar o aplicativo. No **aplicativo OneDrive**, o PIN será solicitado ao inserir a conta corporativa. No Microsoft **Word**, **PowerPoint** e **Excel**, o PIN será solicitado ao acessar os documentos armazenados no local do OneDrive for Business da empresa.
 
-##  <a name="manage-user-accounts-on-the-device"></a>Gerenciar contas de usuário no dispositivo
+## <a name="manage-user-accounts-on-the-device"></a>Gerenciar contas de usuário no dispositivo
 
 Aplicativos de várias identidades permitem aos usuários adicionar várias contas.  O aplicativo do Intune permite apenas uma conta de gerenciamento.  Aplicativo do Intune não limita o número de contas não gerenciados.
 
 Quando há uma conta gerenciada em um aplicativo:
-*   Se um usuário tenta adicionar uma segunda conta gerenciada, ele recebe uma solicitação para selecionar qual conta gerenciada usar.  A outra conta é removida.
-*   Se o administrador de TI adicionar uma política à segunda conta existente, o usuário receberá uma solicitação para selecionar qual conta gerenciada usar.  A outra conta é removida.
+* Se um usuário tenta adicionar uma segunda conta gerenciada, ele recebe uma solicitação para selecionar qual conta gerenciada usar.  A outra conta é removida.
+* Se o administrador de TI adicionar uma política à segunda conta existente, o usuário receberá uma solicitação para selecionar qual conta gerenciada usar.  A outra conta é removida.
 
 Leia o cenário de exemplo a seguir para entender melhor como várias contas de usuário são tratadas.
 
 O usuário A trabalha para duas empresas – **Empresa X** e **Empresa Y**. O usuário A tem uma conta corporativa para cada empresa e ambas usam o Intune para implantar políticas de proteção de aplicativo. A **Empresa X** implanta políticas de proteção de aplicativo **antes da** **Empresa Y**. A conta associada à **Empresa X** obterá a política de proteção do aplicativo, mas não a conta associada à Empresa Y. Se você quiser que a conta de usuário associada à Empresa Y seja gerenciada pelas políticas de proteção do aplicativo, será necessário remover a conta de usuário associada à Empresa X e adicionar a conta associada à Empresa X.
 ### <a name="add-a-second-account"></a>Adicionar uma segunda conta
-####  <a name="android"></a>Android
+#### <a name="android"></a>Android
 Se estiver usando um dispositivo Android, você poderá ver uma mensagem de bloqueio com instruções para remover a conta existente e adicionar uma nova.  Para remover a conta existente, vá para **Configurações &gt;Geral &gt; Gerenciador de Aplicativos &gt;Portal da Empresa**. Então, escolha **Limpar Dados**.
 
 ![Captura de tela da mensagem de erro e as instruções para remover a conta](./media/Android_SwitchUser.png)
 
-##  <a name="view-media-files-with-the-azure-information-protection-app"></a>Exibir arquivos de mídia com o aplicativo de Proteção de Informações do Azure
+## <a name="view-media-files-with-the-azure-information-protection-app"></a>Exibir arquivos de mídia com o aplicativo de Proteção de Informações do Azure
 Para exibir os arquivos AV, PDF e de imagem da empresa em dispositivos Android, use o [aplicativo Proteção de Informações do Azure](https://play.google.com/store/apps/details?id=com.microsoft.ipviewer) (conhecido anteriormente como aplicativo de compartilhamento do Rights Management).
 
 Baixe esse aplicativo na loja do Google Play.  

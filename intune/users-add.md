@@ -8,7 +8,6 @@ ms.author: erikje
 manager: dougeby
 ms.date: 02/28/2018
 ms.topic: conceptual
-ms.prod: ''
 ms.service: microsoft-intune
 ms.localizationpriority: high
 ms.technology: ''
@@ -18,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic; get-started
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: a4e25ab5a546f20309853346d0d4ded42fee6e8b
-ms.sourcegitcommit: 484a898d54f5386fdbce300225aaa3495cecd6b0
+ms.openlocfilehash: fed90635a450ed59827482d2f2c03d17a05d9673
+ms.sourcegitcommit: ede86a3cb094c12e3e218b956abb9935bec76902
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/01/2019
-ms.locfileid: "59568304"
+ms.lasthandoff: 07/05/2019
+ms.locfileid: "71239633"
 ---
 # <a name="add-users-and-grant-administrative-permission-to-intune"></a>Adicionar usuários e conceder permissão administrativa para o Intune
 
@@ -56,7 +55,7 @@ Como administrador, é possível adicionar usuários diretamente ou sincronizar 
 6. Escolha **Adicionar** para criar um novo usuário.
 
 ### <a name="add-intune-users-in-the-azure-portal"></a>Adicionar usuários do Intune no Portal do Azure
-1. Entre no [Portal do Azure](https://portal.azure.com) e acesse **Mais serviços** > **Monitoramento + Gerenciamento** > **Intune**. Você também pode *pesquisar recursos* para o **Intune**.
+1. Conecte-se ao [Intune](https://go.microsoft.com/fwlink/?linkid=2090973).
 2. Selecione **Usuários** > **Todos os usuários**.
 3. No Centro de Administração, selecione **Novo usuário**.
    ![Captura da tela da adição de Novo Usuário](media/intune-add-user.png)
@@ -65,7 +64,7 @@ Como administrador, é possível adicionar usuários diretamente ou sincronizar 
    - **Nome de usuário** – O novo nome no Portal do Azure Active Directory ![Captura de tela da adição de nome e nome de usuário](media/intune-add-user-info.png) Escolha **OK** para continuar.
 5. Opcionalmente, você pode especificar as seguintes propriedades de usuário:
    - **Perfil** – informações de trabalho incluindo **Cargo** e **Departamento**
-   -  **Grupos** – Selecione os grupos que serão adicionados ao usuário
+   - **Grupos** – Selecione os grupos que serão adicionados ao usuário
    - **Função do diretório** – conceda ao usuário permissões administrativas, incluindo uma função de administrador de serviços do Intune.
 
    Selecione **Criar** para adicionar o novo usuário ao Intune.
@@ -113,10 +112,10 @@ A conta usada para criar sua assinatura do Microsoft Intune é de um administrad
 Para acessar o centro de administração do Microsoft 365, sua conta deve ter um status de **Entrada permitida** definido. No Portal do Azure, em **Perfil**, defina **Bloquear entrada** para **Não** para permitir o acesso. Esse status é diferente de ter uma licença para a assinatura. Por padrão, todas as contas de usuário são **Permitidas**. Usuários sem permissões de administrador podem usar o centro de administração do Microsoft 365 para redefinir as senhas do Intune.
 
 ## <a name="sync-active-directory-and-add-users-to-intune"></a>Sincronizar o Active Directory e adicionar usuários ao Intune
-É possível configurar a sincronização de diretórios para importar contas de usuários do Active Directory local para o Microsoft Azure AD (Azure Active Directory), o que inclui os usuários do Intune. Conectar o Active Directory local a todos os seus serviços baseados no Active Directory do Azure simplifica muito o gerenciamento de identidades de usuário. Você também pode configurar recursos de logon único para tornar a experiência de autenticação fácil e familiar para seus usuários. Ao vincular o mesmo [locatário do Azure AD](https://azure.microsoft.com/documentation/articles/active-directory-aadconnect/) a vários serviços, as contas de usuário sincronizadas anteriormente estarão disponíveis para todos os serviços baseados em nuvem.
+É possível configurar a sincronização de diretórios para importar contas de usuários do Active Directory local para o Microsoft Azure Active Directory (Azure AD), o que inclui os usuários do Intune. Conectar o Active Directory local a todos os seus serviços baseados no Active Directory do Azure simplifica muito o gerenciamento de identidades de usuário. Você também pode configurar recursos de logon único para tornar a experiência de autenticação fácil e familiar para seus usuários. Ao vincular o mesmo [locatário do Azure AD](https://azure.microsoft.com/documentation/articles/active-directory-aadconnect/) a vários serviços, as contas de usuário sincronizadas anteriormente estarão disponíveis para todos os serviços baseados em nuvem.
 
 ### <a name="how-to-sync-on-premises-users-with-azure-ad"></a>Como sincronizar usuários locais com o Azure AD
 A única ferramenta de que você precisa para sincronizar suas contas de usuário com o Azure AD é o [Assistente do Azure AD Connect](https://www.microsoft.com/download/details.aspx?id=47594). O assistente do Azure AD Connect fornece uma experiência simplificada orientada para conexão da sua infraestrutura de identidades local à nuvem. Escolha sua topologia e suas necessidades (diretório único ou múltiplo, sincronização de hash de senha, autenticação de passagem ou federação). O assistente implanta e configura todos os componentes necessários para deixar sua conexão funcionando. Incluindo: serviços de sincronização, os Serviços de Federação do Active Directory (AD FS) e o módulo do PowerShell do Azure AD.
 
 > [!TIP]
-> O Azure AD Connect abrange a funcionalidade que foi lançada anteriormente como Dirsync e Azure AD Sync. Saiba mais sobre a [integração de diretório](http://technet.microsoft.com/library/jj573653.aspx). Para saber sobre a sincronização de contas de usuário do seu diretório local para o Azure AD, consulte [Similarities between Active Directory and Azure AD (Similaridades entre Active Directory e Azure AD)](http://technet.microsoft.com/library/dn518177.aspx).
+> O Azure AD Connect abrange a funcionalidade que foi lançada anteriormente como Dirsync e Azure AD Sync. Saiba mais sobre a [integração de diretório](https://technet.microsoft.com/library/jj573653.aspx). Para saber sobre a sincronização de contas de usuário do seu diretório local para o Azure AD, consulte [Similarities between Active Directory and Azure AD (Similaridades entre Active Directory e Azure AD)](https://technet.microsoft.com/library/dn518177.aspx).

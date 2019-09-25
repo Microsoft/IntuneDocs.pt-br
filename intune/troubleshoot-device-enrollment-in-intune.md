@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic, seoapril2019
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 9b995841152ee7290e41eed7988ff2b52b6bc66c
-ms.sourcegitcommit: c3a4fefbac8ff7badc42b1711b7ed2da81d1ad67
+ms.openlocfilehash: 23b3e8df9b3d5bafb567b6795b08d4be32aa8c88
+ms.sourcegitcommit: 1494ff4b33c13a87f20e0f3315da79a3567db96e
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/22/2019
-ms.locfileid: "68375242"
+ms.lasthandoff: 09/20/2019
+ms.locfileid: "71167810"
 ---
 # <a name="troubleshoot-device-enrollment-in-microsoft-intune"></a>Solução de problemas de registro de dispositivo no Microsoft Intune
 
@@ -447,7 +447,7 @@ Uma lista de erros de registro do iOS é fornecida em nossa documentação em [S
 
 |Mensagem de erro|Problema|Resolução|
 |---|---|---|
-|**O administrador de TI precisa atribuir uma licença para o acesso**<br>Seu administrador de TI não concedeu a você o acesso para usar este aplicativo. Obtenha ajuda do seu administrador de TI ou tente novamente mais tarde.|Não é possível registrar o dispositivo porque a conta do usuário não tem a licença necessária.|Antes de registrarem os dispositivos, a licença necessária deverá ser atribuída aos usuários. Esta mensagem indica que eles têm o tipo de licença errado para a autoridade de gerenciamento de dispositivo móvel. Por exemplo, eles verão esse erro se ambos os pontos a seguir forem verdadeiros: <ol><li>O Intune foi definido como a autoridade de gerenciamento de dispositivo móvel</li><li>Eles estão usando uma licença do System Center 2012 R2 Configuration Manager.</li></ol>Veja informações sobre [como atribuir licenças do Intune às contas de usuário](https://docs.microsoft.com/intune/licenses-assign).|
+|**O administrador de TI precisa atribuir uma licença para o acesso**<br>Seu administrador de TI não concedeu a você o acesso para usar este aplicativo. Obtenha ajuda do seu administrador de TI ou tente novamente mais tarde.|Não é possível registrar o dispositivo porque a conta do usuário não tem a licença necessária.|Antes de registrarem os dispositivos, a licença necessária deverá ser atribuída aos usuários. Esta mensagem indica que eles têm o tipo de licença errado para a autoridade de gerenciamento de dispositivo móvel. Por exemplo, eles verão esse erro se ambos os pontos a seguir forem verdadeiros: <ol><li>O Intune foi definido como a autoridade de gerenciamento de dispositivo móvel</li><li>Eles estão usando uma licença do System Center 2012 R2 Configuration Manager.</li></ol>Veja informações sobre [como atribuir licenças do Intune às contas de usuário](licenses-assign.md).|
 
 
 

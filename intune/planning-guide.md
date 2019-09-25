@@ -8,7 +8,6 @@ ms.author: dougeby
 manager: dougeby
 ms.date: 01/02/2018
 ms.topic: conceptual
-ms.prod: ''
 ms.service: microsoft-intune
 ms.localizationpriority: high
 ms.technology: ''
@@ -18,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 5b8a4a76e59604038ae133701b3378c573e862aa
-ms.sourcegitcommit: 484a898d54f5386fdbce300225aaa3495cecd6b0
+ms.openlocfilehash: 03eb6e8f58d644d0f5ad1058984d0dc2ce4a5a9b
+ms.sourcegitcommit: bccfbf1e3bdc31382189fc4489d337d1a554e6a1
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/01/2019
-ms.locfileid: "59568629"
+ms.lasthandoff: 07/03/2019
+ms.locfileid: "71239554"
 ---
 # <a name="intune-deployment-planning-design-and-implementation-guide"></a>Guia de planejamento de implantação, design e implementação do Intune
 
@@ -35,33 +34,33 @@ Uma implantação bem-sucedida do Microsoft Intune começa com um bom plano e de
 
 Este guia inclui as seções que orientarão você pelo processo de ponta a ponta de implantação do Intune. Comece na Seção 1 para esclarecer as metas, os objetivos e os desafios. Depois, vá para as Seções 2 a 7 na ordem que melhor atenda às suas necessidades. Você não precisa percorrer essas seções na sequência; é possível conclui-las em paralelo.
 
--   [Seção 1: Determinar as metas, os objetivos e os desafios de implantação](planning-guide-deployment-goals.md)
+- [Seção 1: Determinar as metas, os objetivos e os desafios de implantação](planning-guide-deployment-goals.md)
 
--   [Seção 2: Identificar os cenários de caso de uso](planning-guide-scenarios.md)
+- [Seção 2: Identificar os cenários de caso de uso](planning-guide-scenarios.md)
 
--   [Seção 3: Determinar os requisitos de caso de uso](planning-guide-requirements.md)
+- [Seção 3: Determinar os requisitos de caso de uso](planning-guide-requirements.md)
 
--   [Seção 4: Desenvolver um plano de distribuição](planning-guide-rollout-plan.md)
+- [Seção 4: Desenvolver um plano de distribuição](planning-guide-rollout-plan.md)
 
--   [Seção 5: Desenvolver um plano de comunicação para a distribuição](planning-guide-communication-plan.md)
+- [Seção 5: Desenvolver um plano de comunicação para a distribuição](planning-guide-communication-plan.md)
 
--   [Seção 6: Desenvolver um plano de suporte](planning-guide-support-plan.md)
+- [Seção 6: Desenvolver um plano de suporte](planning-guide-support-plan.md)
 
--   [Seção 7: Criar um design do Intune](planning-guide-design.md)
+- [Seção 7: Criar um design do Intune](planning-guide-design.md)
 
--   [Seção 8: Implementação do Intune](planning-guide-onboarding.md)
+- [Seção 8: Implementação do Intune](planning-guide-onboarding.md)
 
--   [Seção 9: Teste e validação](planning-guide-test-validation.md)
+- [Seção 9: Teste e validação](planning-guide-test-validation.md)
 
 Este guia também fornece outras informações técnicas e modelos de tabela que podem ser usados para ajudá-lo com o processo de planejamento de implantação, design e implementação do Intune.
 
--   [Recursos adicionais: links e modelos de tabela](planning-guide-resources.md)
+- [Recursos adicionais: links e modelos de tabela](planning-guide-resources.md)
 
 ## <a name="assumptions"></a>Suposições
 
--   Você já avaliou o Intune em um ambiente de POC (prova de conceito) e decidiu usá-lo como a solução de gerenciamento de dispositivo móvel em sua organização.
+- Você já avaliou o Intune em um ambiente de POC (prova de conceito) e decidiu usá-lo como a solução de gerenciamento de dispositivo móvel em sua organização.
 
--   Você já está familiarizado com o Intune e seus recursos.
+- Você já está familiarizado com o Intune e seus recursos.
 
 ## <a name="next-steps"></a>Próximas etapas
 

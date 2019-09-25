@@ -16,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 8a282662032fe77cbf39da279c587bff31ad9e24
-ms.sourcegitcommit: cf40f641af4746a1e34edd980dc6ec96fd040126
+ms.openlocfilehash: 682d51269798dff181a3bd8384268da862118a70
+ms.sourcegitcommit: 1494ff4b33c13a87f20e0f3315da79a3567db96e
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/28/2019
-ms.locfileid: "70123218"
+ms.lasthandoff: 09/20/2019
+ms.locfileid: "71167764"
 ---
 # <a name="intune-certificate-connector-events-and-diagnostic-codes"></a>Eventos e códigos de diagnóstico do Intune Certificate Connector
 
@@ -60,7 +60,7 @@ Da versão 6.1806.x.x em diante, o Serviço do Conector do Intune registra em lo
 | -------------   | -------------   | -------------      |
 | 0x00000000 | Êxito  | Êxito |
 | 0x00000400 | PKCS_Issue_CA_Unavailable  | A autoridade de certificação não é válida ou está inacessível. Verifique se que a autoridade de certificação está disponível e se o servidor pode se comunicar com ela. |
-| 0x00000401 | Symantec_ClientAuthCertNotFound  | O Certificado de Autenticação de Cliente da Symantec não foi encontrado no repositório de certificados local. Veja o artigo [Instalar o certificado autorização de registro da Symantec](https://docs.microsoft.com/intune/certificates-symantec-configure#install-the-symantec-registration-authorization-certificate) para obter mais informações.  |
+| 0x00000401 | Symantec_ClientAuthCertNotFound  | O Certificado de Autenticação de Cliente da Symantec não foi encontrado no repositório de certificados local. Veja o artigo [Instalar o certificado autorização de registro da Symantec](certificates-digicert-configure.md#install-the-digicert-ra-certificate) para obter mais informações.  |
 | 0x00000402 | RevokeCert_AccessDenied  | A conta especificada não tem permissões para revogar um certificado da autoridade de certificação. Veja o campo Nome da Autoridade de Certificação nos detalhes da mensagem do evento para determinar a autoridade de certificação emissora.  |
 | 0x00000403 | CertThumbprint_NotFound  | Não foi possível localizar um certificado correspondente à sua entrada. Registre o conector de certificado e tente novamente. |
 | 0x00000404 | Certificate_NotFound  | Não foi possível localizar um certificado correspondente à entrada fornecida. Registre o conector de certificado outra vez e tente novamente. |

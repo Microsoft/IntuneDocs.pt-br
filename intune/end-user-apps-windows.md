@@ -7,7 +7,6 @@ ms.author: lanewsad
 manager: dougeby
 ms.date: 12/05/2016
 ms.topic: conceptual
-ms.prod: ''
 ms.service: microsoft-intune
 ms.localizationpriority: high
 ms.technology: ''
@@ -17,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 4d9d4216026487541cbdd798f247dde3bf08e1ea
-ms.sourcegitcommit: 25e6aa3bfce58ce8d9f8c054bc338cc3dff4a78b
+ms.openlocfilehash: 421815c6f17e4e9eddf23b3123c95cec51157d61
+ms.sourcegitcommit: bd09decb754a832574d7f7375bad0186a22a15ab
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57388349"
+ms.lasthandoff: 07/19/2019
+ms.locfileid: "71239801"
 ---
 # <a name="how-your-windows-users-get-their-apps"></a>Como os usuários Windows podem obter aplicativos
 
@@ -38,6 +37,6 @@ Os **aplicativos gerenciados** podem ser gerenciados por meio de políticas e fo
 
 Os **aplicativos não gerenciados** podem ser gerenciados por meio de políticas e não foram encapsulados pelo Intune ou não incorporam o SDK de Aplicativo do Intune. As políticas de proteção de aplicativo não podem ser aplicadas a esses aplicativos.
 
-### <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Consulte também
 [Como os usuários Android podem obtém aplicativos](end-user-apps-android.md)
 [Como os usuários iOS obtêm os aplicativos deles](end-user-apps-android.md)

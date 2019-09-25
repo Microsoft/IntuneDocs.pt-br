@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 1710fd315803c4b47ad3be343893f93f7d155135
-ms.sourcegitcommit: 27e63a96d15bc4062af68c2764905631bd928e7b
+ms.openlocfilehash: c8378986b1cf405a92e34b4c5bd805b169feaf32
+ms.sourcegitcommit: 1494ff4b33c13a87f20e0f3315da79a3567db96e
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/17/2019
-ms.locfileid: "71061711"
+ms.lasthandoff: 09/20/2019
+ms.locfileid: "71167885"
 ---
 # <a name="ui-updates-for-intune-end-user-apps"></a>Atualizações da interface do usuário para aplicativos de usuário final do Intune
 Saiba mais sobre as atualizações mais recentes dos aplicativos do Microsoft Intune. Adicionamos regularmente ao aplicativo e ao site do Portal da Empresa do Intune e os melhoramos. Se você for administrador de serviços do Intune ou responsável por suporte, este artigo fornecerá as informações necessárias para:
@@ -120,7 +120,7 @@ Uma nova tela chamada **Categorias de aplicativo** foi adicionada para melhorar 
 ## <a name="week-of-november-12-2018"></a>Semana de 12 de novembro de 2018
 
 ### <a name="windows-company-portal-keyboard-shortcuts----2771518---"></a>Atalhos de teclado do Portal da Empresa do Windows <!-- 2771518 -->
-Agora os usuários finais poderão disparar ações de aplicativo e do dispositivo no Portal da Empresa do Windows [usando atalhos de teclado (aceleradores)](https://docs.microsoft.com/intune/company-portal-app#windows-company-portal-keyboard-shortcuts).
+Agora os usuários finais poderão disparar ações de aplicativo e do dispositivo no Portal da Empresa do Windows [usando atalhos de teclado (aceleradores)](company-portal-app.md#windows-company-portal-keyboard-shortcuts).
 
 ## <a name="week-of-october-22-2018"></a>Semana de 22 de outubro de 2018
 
@@ -142,7 +142,7 @@ Você verá as seguintes atualizações:
 - Melhor desempenho para grandes catálogos de aplicativos
 - Maior acessibilidade para todos os usuários  
 
-|Atualizado|Anterior|
+|Atualizado|Voltar|
 |---|---|
 |![A página de dispositivos atualizada mostra o dispositivo alinhado corretamente acima das informações do dispositivo, não mais aparecendo em cima da lista completa.](./media/iwp-device-after-1803.png)|![A versão anterior da página de dispositivos.](./media/iwp-device-before-1803.png)|
 |![A página de instalação do aplicativo atualizada mostra o aplicativo exatamente em cima de uma descrição e de várias informações de instalação, incluindo data de publicação, versão e tipo de aplicativo.](./media/iwp-app-install-after-1803.png)|![A versão anterior da página de instalação do aplicativo.](./media/iwp-app-install-before-1803.png)|  
@@ -572,4 +572,4 @@ Esses são os planos de aprimoramento da experiência do usuário por meio da at
 ## <a name="see-also"></a>Consulte também
 * [Blog do Microsoft Intune](http://go.microsoft.com/fwlink/?LinkID=273882)
 * [Mapa da Plataforma de Nuvem](https://www.microsoft.com/cloud-platform/roadmap)
-* [Novidades do Intune](https://docs.microsoft.com/intune/whats-new)
+* [Novidades do Intune](whats-new.md)

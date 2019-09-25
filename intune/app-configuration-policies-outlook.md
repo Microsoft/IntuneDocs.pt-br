@@ -15,12 +15,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 14eded43200aed7e9ebf4454bcde61133351e4e2
-ms.sourcegitcommit: 76d59edfd5900ce33c64470ae604eb3db016c8ca
+ms.openlocfilehash: d6fe60cf53f88186448cd9586d5c75fca4d517ad
+ms.sourcegitcommit: 1494ff4b33c13a87f20e0f3315da79a3567db96e
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/22/2019
-ms.locfileid: "69979212"
+ms.lasthandoff: 09/20/2019
+ms.locfileid: "71167381"
 ---
 # <a name="microsoft-outlook-configuration-settings"></a>Definições de configuração do Microsoft Outlook 
 
@@ -30,7 +30,7 @@ Para dispositivos registrados:
 - Para criar uma política de configuração de aplicativo para dispositivos iOS gerenciados, confira [Adicionar políticas de configuração de aplicativos para dispositivos iOS gerenciados](app-configuration-policies-use-ios.md). 
 - Para criar uma política de configuração de aplicativo para dispositivos Android gerenciados, confira [Adicionar políticas de configuração de aplicativos para dispositivos Android gerenciados](app-configuration-policies-use-android.md). 
 
-Para os dispositivos não registrados, confira [Adicionar políticas de configuração de aplicativos para aplicativos gerenciados sem registro de dispositivo](https://docs.microsoft.com/intune/app-configuration-policies-managed-app) para criar uma política de configuração de aplicativos para o Outlook para iOS e Android.
+Para os dispositivos não registrados, confira [Adicionar políticas de configuração de aplicativos para aplicativos gerenciados sem registro de dispositivo](app-configuration-policies-managed-app.md) para criar uma política de configuração de aplicativos para o Outlook para iOS e Android.
 
 ## <a name="configuration-settings"></a>Definições de configuração
 

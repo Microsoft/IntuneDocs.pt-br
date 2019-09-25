@@ -16,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure; get-started
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: e636e2df8271210d8938727eb99491e1ffdd5bdc
-ms.sourcegitcommit: d2989b9992d10d133573d9bc31479659fb7e242c
+ms.openlocfilehash: a5372d079b08a3a324d8ef1d98d26c07073ccd45
+ms.sourcegitcommit: 49f25efb9bc0f16f587f27878cf45de5e4e6a27f
 ms.translationtype: HT
 ms.contentlocale: pt-BR
 ms.lasthandoff: 09/18/2019
-ms.locfileid: "71080041"
+ms.locfileid: "71094666"
 ---
 # <a name="role-based-access-control-rbac-with-microsoft-intune"></a>RBAC (controle de acesso baseado em função) com o Microsoft Intune
 
@@ -43,7 +43,7 @@ Para ver uma função, escolha **Intune** > **Funções** > **Todas as funções
 - **Atribuições**: uma lista das [atribuições de função]( assign-role.md) que define quais usuários têm acesso a quais usuários/dispositivos. Uma função pode ter várias atribuições e um usuário pode estar em várias atribuições.
 
 ### <a name="built-in-roles"></a>Funções internas
-Você pode atribuir funções internas a grupos sem configuração adicional. Não é possível excluir nem editar o nome, a descrição, o tipo ou as permissões de uma função interna. Para obter uma lista completa das permissões de cada função interna, confira a [Tabela do RBAC do Intune](https://gallery.technet.microsoft.com/Intune-RBAC-table-2e3c9a1a).
+Você pode atribuir funções internas a grupos sem configuração adicional. Não é possível excluir nem editar o nome, a descrição, o tipo ou as permissões de uma função interna.
 
 - **Operador de suporte técnico**: realiza tarefas remotas em usuários e dispositivos e pode atribuir aplicativos ou políticas a usuários ou dispositivos.
 - **Política e Gerenciador de Perfis**: gerencia a política de conformidade, os perfis de configuração, o registro da Apple, os identificadores de dispositivo corporativo e as linhas de base de segurança.
@@ -60,12 +60,12 @@ Você pode atribuir funções internas a grupos sem configuração adicional. N�
 | --- | :---: | :---: |
 | Administrador Global | Leitura/gravação | Leitura/gravação |
 | Administrador de Serviços do Intune | Leitura/gravação | Leitura/gravação |
-| Administrador de Acesso Condicional | Não | Não |
+| Administrador de Acesso Condicional | Nenhum | Nenhum |
 | Administrador de Segurança | Somente leitura | Somente leitura |
 | Operador de segurança | Somente leitura | Somente leitura |
 | Leitor de segurança | Somente leitura | Somente leitura |
-| Administrador de conformidade | Não | Somente leitura |
-| Administrador de dados de conformidade | Não | Somente leitura |
+| Administrador de conformidade | Nenhum | Somente leitura |
+| Administrador de dados de conformidade | Nenhum | Somente leitura |
 
 > [!TIP]
 > O Intune também mostra três extensões do Azure AD: **Usuários**, **grupos** e **acesso condicional** controlados com o uso do RBAC do Azure AD. Além disso, o **Administrador de Contas de Usuário** apenas realiza as atividades do usuário/grupo do AAD e não tem permissões totais para realizar todas as atividades no Intune. Para saber mais, confira [RBAC com o Azure AD](https://docs.microsoft.com/azure/active-directory/active-directory-assign-admin-roles).
