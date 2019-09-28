@@ -6,9 +6,8 @@ keywords: Intune Data Warehouse
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 12/14/2018
+ms.date: 08/27/2019
 ms.topic: reference
-ms.prod: ''
 ms.service: microsoft-intune
 ms.localizationpriority: medium
 ms.technology: ''
@@ -18,29 +17,29 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 0728fefc40bc82db7926faf282a69d0471c3a1ea
-ms.sourcegitcommit: 484a898d54f5386fdbce300225aaa3495cecd6b0
-ms.translationtype: HT
+ms.openlocfilehash: 88681696716080b38d0f7d9e79264d002f335029
+ms.sourcegitcommit: 6c74ff568267d85fd1d44fda75e3e24ead87cb2b
+ms.translationtype: MTE75
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/01/2019
-ms.locfileid: "58798112"
+ms.lasthandoff: 08/28/2019
+ms.locfileid: "71303288"
 ---
 # <a name="use-the-microsoft-intune-data-warehouse"></a>Usar o Microsoft Intune Data Warehouse
 
 [!INCLUDE [azure_portal](./includes/azure_portal.md)]
 
 Use o Intune Data Warehouse para criar relatórios que fornecem informações sobre seu ambiente móvel da empresa. Por exemplo, alguns dos relatórios incluem:
--   Tendência de registro de usuários no Intune para que você possa otimizar sua compra de licenças
--   Análise de versões de aplicativo e sistema operacional para que você possa examinar o status dos dispositivos móveis
--   Tendências de conformidade de registro e do dispositivo para que você possa implantar perfeitamente atualizações de política
+- Tendência de registro de usuários no Intune para que você possa otimizar sua compra de licenças
+- Análise de versões de aplicativo e sistema operacional para que você possa examinar o status dos dispositivos móveis
+- Tendências de conformidade de registro e do dispositivo para que você possa implantar perfeitamente atualizações de política
 
 ## <a name="data-warehouse-benefits"></a>Benefícios do Data Warehouse
 
 O Data Warehouse fornece acesso a mais informações sobre seu ambiente móvel do que o portal do Azure. Com o Intune Data Warehouse, você pode acessar:
 
-  -  Dados históricos do Intune
-  -  Dados atualizados em um ritmo diário
-  -  Um modelo de dados usando o padrão OData
+- Dados históricos do Intune
+- Dados atualizados em um ritmo diário
+- Um modelo de dados usando o padrão OData
 
 > [!Note]
 > Se estiver usando o MDM (gerenciamento de dispositivo móvel) cogerenciado com o System Center Configuration Manager e o Microsoft Intune, você precisará recuperar seus dados do Configuration Manager. O Data Warehouse do Intune contém apenas dados do Intune. Você pode usar um dashboard do Configuration Manager Power BI para relatórios personalizados. Para obter mais informações, consulte "[Anunciando o modelo de solução do Power BI para o System Center Configuration Manager]( https://powerbi.microsoft.com/blog/sccm-solution-template) e "[Conteúdo do Power BI para Dynamics 365](https://docs.microsoft.com/dynamics365/unified-operations/dev-itpro/analytics/power-bi-home-page)."

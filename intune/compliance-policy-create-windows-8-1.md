@@ -7,7 +7,6 @@ ms.author: mandia
 manager: dougeby
 ms.date: 04/04/2019
 ms.topic: reference
-ms.prod: ''
 ms.service: microsoft-intune
 ms.localizationpriority: medium
 ms.technology: ''
@@ -15,12 +14,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 4ed863378616f8001beab89177c642404287e7d3
-ms.sourcegitcommit: 02803863eba37ecf3d8823a7f1cd7c4f8e3bb42c
-ms.translationtype: HT
+ms.openlocfilehash: 57a860edd99bfbbd41ff7df8fd98d0343f4f5ba6
+ms.sourcegitcommit: 916fed64f3d173498a2905c7ed8d2d6416e34061
+ms.translationtype: MTE75
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/09/2019
-ms.locfileid: "59424926"
+ms.lasthandoff: 05/23/2019
+ms.locfileid: "71304108"
 ---
 # <a name="windows-81-settings-to-mark-devices-as-compliant-or-not-compliant-using-intune"></a>Configurações do Windows 8.1 para marcar dispositivos como em conformidade ou não em conformidade usando o Intune
 
@@ -72,7 +71,7 @@ Computadores com Windows 8.1 retornam a versão **3**. Se a regra de versão do 
     - Ou se o número mínimo de conjuntos de caracteres for maior que dois
 
 - **Máximo de minutos de inatividade antes que a senha seja exigida**: insira o tempo ocioso antes que o usuário precise digitar novamente a senha.
-- **Expiração da senha (dias)**: selecione o número de dias antes que a senha expire e seja preciso criar uma nova.
+- **Expiração da senha (dias)** : selecione o número de dias antes que a senha expire e seja preciso criar uma nova.
 - **Número de senhas anteriores para evitar a reutilização**: insira o número de senhas usadas anteriormente que não podem ser utilizadas.
 
 ### <a name="encryption"></a>Criptografia

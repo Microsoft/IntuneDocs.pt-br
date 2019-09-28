@@ -8,7 +8,6 @@ ms.author: mandia
 manager: dougeby
 ms.date: 3/6/2018
 ms.topic: reference
-ms.prod: ''
 ms.service: microsoft-intune
 ms.localizationpriority: medium
 ms.technology: ''
@@ -16,12 +15,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: f82950259746010c347e5dafa832a7335026721c
-ms.sourcegitcommit: 484a898d54f5386fdbce300225aaa3495cecd6b0
+ms.openlocfilehash: 20621246f76810ba7efaac3cadbdde1a0229c923
+ms.sourcegitcommit: 7c251948811b8b817e9fe590b77f23aed95b2d4e
 ms.translationtype: MTE75
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/01/2019
-ms.locfileid: "58799304"
+ms.lasthandoff: 07/15/2019
+ms.locfileid: "71302337"
 ---
 # <a name="microsoft-intune-windows-10-team-device-restriction-settings"></a>Configurações de restrição de dispositivo do Windows 10 Team no Microsoft Intune
 
@@ -34,9 +33,9 @@ Este artigo mostra as configurações de restrições de dispositivo do Microsof
 
 - **Ativar tela quando alguém estiver no recinto** – Permite que o dispositivo seja ativado automaticamente quando o sensor detectar a alguém na sala.
 - **Informações de reunião exibidas na tela de Boas-Vindas** – habilite essa opção para escolher as informações que serão exibidas no bloco Reuniões da tela de Boas-Vindas. Você pode:
-    - **Mostrar somente organizador e hora**
-    - **Mostrar organizador, hora e assunto (o assunto é oculto para reuniões privadas)**
-- **URL da imagem de fundo da tela de Boas-Vindas** – Habilite essa configuração para exibir uma tela de fundo personalizada na tela de **Boas-Vindas** dos dispositivos com Windows 10 Team da URL especificada.<br>A imagem deve estar no formato PNG e a URL deve começar com **https://**.
+  - **Mostrar somente organizador e hora**
+  - **Mostrar organizador, hora e assunto (o assunto é oculto para reuniões privadas)**
+- **URL da imagem de fundo da tela de Boas-Vindas** – Habilite essa configuração para exibir uma tela de fundo personalizada na tela de **Boas-Vindas** dos dispositivos com Windows 10 Team da URL especificada.<br>A imagem deve estar no formato PNG e a URL deve começar com **https://** .
 
 ## <a name="azure-operational-insights"></a>Insights operacionais do Azure
 

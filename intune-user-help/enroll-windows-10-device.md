@@ -18,12 +18,12 @@ ms.reviewer: jieyang
 ms.suite: ems
 ms.custom: intune-enduser
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 77b7f3adf4fa8675e3734f7eab8fbaa9391d952a
-ms.sourcegitcommit: 7315fe72b7e55c5dcffc6d87f185f3c2cded9028
+ms.openlocfilehash: 2e4def9f0e4e91f7db9e0a81e2ad55852df524f7
+ms.sourcegitcommit: 0d1a02fb3d2a801a95c2244e9ef13ecf22be2eb1
 ms.translationtype: MTE75
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/02/2019
-ms.locfileid: "67527948"
+ms.lasthandoff: 09/26/2019
+ms.locfileid: "71302456"
 ---
 # <a name="enroll-windows-10-devices-with-intune-company-portal"></a>Registrar dispositivos Windows 10 com o Portal da Empresa do Intune
 
@@ -45,7 +45,7 @@ Estas etapas descrevem como registrar um dispositivo que executa o Windows 10 ve
 
     ![Selecione Acessar conta corporativa ou de estudante](./media/w10-enroll-rs1-connect-to-work-or-school.png)  
 
-4. Insira seu endereço de email corporativo ou de estudante e selecione **Avançar**.  
+4. Para acessar a página de entrada do Intune da sua organização, insira seu endereço de email corporativo ou de estudante. Em seguida, selecione **Avançar**.  
 
 
    ![Insira sua conta corporativa ou de estudante](./media/w10-enroll-rs1-set-up-work-or-school-account.png)  

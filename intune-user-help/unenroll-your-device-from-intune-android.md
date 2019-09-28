@@ -18,12 +18,12 @@ ms.reviewer: arnab
 ms.suite: ems
 ms.custom: intune-enduser
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 0a472e4d8c3ef7b922f02b4d2407362ba738486c
-ms.sourcegitcommit: 1494ff4b33c13a87f20e0f3315da79a3567db96e
+ms.openlocfilehash: 91aefbc8c3960100ce5e9164ce48a2b9d33c3f3e
+ms.sourcegitcommit: 6a946a055a2014e00a4ca9d71986727a4ebbc777
 ms.translationtype: MTE75
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/20/2019
-ms.locfileid: "71167535"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71238955"
 ---
 # <a name="unenroll-your-android-device-from-management"></a>Cancelar o registro do dispositivo Android do gerenciamento  
 
@@ -64,7 +64,7 @@ Como alternativa, toque em **Configurações** > **Aplicativos** > **Portal da E
 
 Como último recurso, você poderá desinstalar o aplicativo do dispositivo como administrador do dispositivo.  
 
-Caso você tenha um dispositivo de propriedade da empresa, sua organização poderá exigir que o Portal da Empresa esteja em seu dispositivo em todos os momentos. Se você desinstalá-lo, poderá perder o acesso aos recursos protegidos da empresa, como email, aplicativos, Wi-Fi ou VPN, até que o aplicativo seja reinstalado. Para obter mais informações sobre como instalar, atualizar ou remover aplicativos obrigatórios, confira [Adicionar aplicativos ao Microsoft Intune](https://docs.microsoft.com/intune/apps-add.md#apps-that-are-added-automatically-by-intune).  
+Caso você tenha um dispositivo de propriedade da empresa, sua organização poderá exigir que o Portal da Empresa esteja em seu dispositivo em todos os momentos. Se você desinstalá-lo, poderá perder o acesso aos recursos protegidos da empresa, como email, aplicativos, Wi-Fi ou VPN, até que o aplicativo seja reinstalado. Para obter mais informações sobre como instalar, atualizar ou remover aplicativos obrigatórios, confira [Adicionar aplicativos ao Microsoft Intune](https://docs.microsoft.com/intune/apps-add#apps-that-are-added-automatically-by-intune).  
 
 Veja como desabilitar o Portal da Empresa como administrador do dispositivo. Os nomes reais de cada configuração podem variar no dispositivo Android.  
 

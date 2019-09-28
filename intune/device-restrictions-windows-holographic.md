@@ -7,7 +7,6 @@ ms.author: mandia
 manager: dougeby
 ms.date: 01/22/2019
 ms.topic: reference
-ms.prod: ''
 ms.service: microsoft-intune
 ms.localizationpriority: medium
 ms.technology: ''
@@ -15,12 +14,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: fed8c33bbf4ff302d08576dc5e34ce1257425090
-ms.sourcegitcommit: 25e6aa3bfce58ce8d9f8c054bc338cc3dff4a78b
+ms.openlocfilehash: bea8d6d8e3503b9ec6fba7b2eda4842b68786e54
+ms.sourcegitcommit: bd09decb754a832574d7f7375bad0186a22a15ab
 ms.translationtype: MTE75
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57565240"
+ms.lasthandoff: 07/19/2019
+ms.locfileid: "71302317"
 ---
 # <a name="windows-holographic-for-business-device-settings-to-allow-or-restrict-features-using-intune"></a>Configurações do dispositivo do Windows Holographic for Business para permitir ou restringir os recursos usando o Intune
 
@@ -91,9 +90,9 @@ Um dispositivo de quiosque normalmente executa um aplicativo específico. Os usu
   - **Quiosque de aplicativo único**: o perfil habilita o dispositivo a executar somente um aplicativo. Quando o usuário faz logon, um aplicativo específico inicia. Esse modo também impede que o usuário abrir novos aplicativos ou alterar o aplicativo em execução.
   - **Quiosque de vários aplicativos**: o perfil permite que o dispositivo execute vários aplicativos. Somente os aplicativos que você adicionar estão disponíveis ao usuário. O benefício de um quiosque de vários aplicativos ou de um dispositivo com finalidade fixa é proporcionar uma experiência fácil para as pessoas entenderem apenas acessando os aplicativos de que precisam. E removendo os aplicativos que não precisam de sua exibição. 
   
-    Ao adicionar aplicativos para uma experiência de quiosque de vários aplicativos, você também adiciona um arquivo de layout do menu Iniciar. [Iniciar o arquivo de layout do menu](https://docs.microsoft.com/hololens/hololens-kiosk#start-layout-file-for-intune) inclui um exemplo de XML que pode ser usado no Intune. 
+    Ao adicionar aplicativos para uma experiência de quiosque de vários aplicativos, você também adiciona um arquivo de layout do menu Iniciar. [Iniciar o arquivo de layout do menu](/hololens/hololens-kiosk#start-layout-file-for-mdm-intune-and-others) inclui um exemplo de XML que pode ser usado no Intune. 
 
-#### <a name="single-app-kiosks"></a>Quiosques de aplicativo único
+### <a name="single-app-kiosks"></a>Quiosques de aplicativo único
 
 Insira as seguintes configurações:
 
@@ -101,7 +100,7 @@ Insira as seguintes configurações:
 
     Para quiosques em ambientes de público com logon automático habilitado, um tipo de usuário com o privilégio mínimo (como a conta de usuário padrão local) deve ser usado. Para configurar uma conta do Azure AD (Active Directory) para o modo de quiosque, use o formato `AzureAD\user@contoso.com`.
 
-- **ID do modelo do usuário do aplicativo (AUMID)**: insira a AUMID do aplicativo de quiosque. Para saber mais, consulte [Find the Application User Model ID of an installed app](https://docs.microsoft.com/windows-hardware/customize/enterprise/find-the-application-user-model-id-of-an-installed-app) (Encontrar a ID do modelo de usuário do aplicativo de um aplicativo instalado).
+- **ID do modelo do usuário do aplicativo (AUMID)** : insira a AUMID do aplicativo de quiosque. Para saber mais, consulte [Find the Application User Model ID of an installed app](https://docs.microsoft.com/windows-hardware/customize/enterprise/find-the-application-user-model-id-of-an-installed-app) (Encontrar a ID do modelo de usuário do aplicativo de um aplicativo instalado).
 
 ## <a name="reporting-and-telemetry"></a>Relatório e telemetria
 

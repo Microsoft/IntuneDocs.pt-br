@@ -8,7 +8,6 @@ ms.author: lanewsad
 manager: dougeby
 ms.date: 05/9/2018
 ms.topic: archived
-ms.prod: ''
 ms.service: microsoft-intune
 ms.localizationpriority: medium
 ms.technology: ''
@@ -18,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 75628ab45d4c0d7f43f07d530a76988ca5f772b8
-ms.sourcegitcommit: 25e6aa3bfce58ce8d9f8c054bc338cc3dff4a78b
+ms.openlocfilehash: 578dcf8a714197d9414e8ffeeec9a6c6e8a30311
+ms.sourcegitcommit: bccfbf1e3bdc31382189fc4489d337d1a554e6a1
 ms.translationtype: MTE75
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57461151"
+ms.lasthandoff: 07/03/2019
+ms.locfileid: "71302171"
 ---
 # <a name="how-to-configure-intune-settings-for-the-ios-classroom-app"></a>Como definir as configurações do Intune para o aplicativo Sala de Aula para iOS
 
@@ -78,15 +77,14 @@ Importe as informações no SDS usando um dos seguintes métodos:
 
 ### <a name="configure-general-settings"></a>Definir as configurações gerais
 
-1. Entre no [portal do Azure](https://portal.azure.com).
-2. Escolha **Todos os serviços** > **Intune**. O Intune está localizado na seção **Monitoramento + Gerenciamento**.
+1. Conecte-se ao [Intune](https://go.microsoft.com/fwlink/?linkid=2090973).
 3. No painel **Intune**, escolha **Configuração do dispositivo**.
 2. No painel **Configuração do dispositivo**, na seção **Gerenciar**, escolha **Perfis**.
-5.  No painel de perfis, escolha **Criar perfil**.
-6.  No painel **Criar perfil**, insira um **Nome** e uma **Descrição** para o perfil de educação do iOS.
-7.  Na lista suspensa **Plataforma**, escolha **iOS**.
-8.  Na lista suspensa **Tipos de perfil**, escolha **Educação**.
-9.  Escolha **Configurações** > **Definir**.
+5. No painel de perfis, escolha **Criar perfil**.
+6. No painel **Criar perfil**, insira um **Nome** e uma **Descrição** para o perfil de educação do iOS.
+7. Na lista suspensa **Plataforma**, escolha **iOS**.
+8. Na lista suspensa **Tipos de perfil**, escolha **Educação**.
+9. Escolha **Configurações** > **Definir**.
 
 
 Na próxima seção, você criará certificados para estabelecer uma relação de confiança entre os iPads de professores e alunos. Os certificados são usados para autenticar conexões perfeita e silenciosamente entre os dispositivos sem precisar inserir nomes de usuário e senhas.
@@ -124,8 +122,8 @@ Ao terminar de configurar os certificados, clique em **OK**.
 
 ### <a name="configure-student-certificates"></a>Configurar certificados de aluno
 
-1.  No painel **Educação**, escolha **Certificados de aluno**.
-2.  No painel **Certificados de aluno**, na lista de tipos **Certificados de dispositivo do aluno**, escolha **1:1**.
+1. No painel **Educação**, escolha **Certificados de aluno**.
+2. No painel **Certificados de aluno**, na lista de tipos **Certificados de dispositivo do aluno**, escolha **1:1**.
 
 #### <a name="configure-student-root-certificate"></a>Configurar certificados raiz de aluno
 
@@ -149,9 +147,9 @@ Ao terminar de configurar os certificados, clique em **OK**.
 
 ## <a name="finish-up"></a>Concluir
 
-1.  No painel **Educação**, escolha OK.
-2.  No painel **Criar perfil**, escolha **Criar**.
-    
+1. No painel **Educação**, escolha OK.
+2. No painel **Criar perfil**, escolha **Criar**.
+
 O perfil é criado e aparece no painel da lista de perfis.
 
 Atribua o perfil aos dispositivos dos alunos, nos grupos de sala de aula criados durante a sincronização dos dados de estudante com o Microsoft Azure AD (confira [Como atribuir perfis do dispositivo](device-profile-assign.md)).

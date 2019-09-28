@@ -18,12 +18,12 @@ ms.reviewer: japoehlm
 ms.suite: ems
 ms.custom: intune-enduser
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 9066fefccde39ccac281f3bda9008168ea28b77f
-ms.sourcegitcommit: 1494ff4b33c13a87f20e0f3315da79a3567db96e
+ms.openlocfilehash: 0de0e676e72d46bde922fd97b651cc1a9268e45e
+ms.sourcegitcommit: 6a946a055a2014e00a4ca9d71986727a4ebbc777
 ms.translationtype: MTE75
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/20/2019
-ms.locfileid: "71166623"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71239769"
 ---
 # <a name="enroll-your-organization-provided-macos-device-in-management"></a>Registrar no gerenciamento o dispositivo macOS fornecido pela organização
 
@@ -35,7 +35,7 @@ Para começar a configuração de gerenciamento, ligue seu dispositivo e entre c
 
 ## <a name="what-is-apple-dep"></a>O que é o DEP da Apple?
 
-É possível que sua organização tenha comprado os dispositivos por meio do chamado *DEP (Programa de registro de dispositivos) da Apple*. O DEP da Apple permite que as organizações comprem grandes quantidades de dispositivos iOS ou macOS. As organizações podem então configurar e gerenciar esses dispositivos com seu provedor de gerenciamento de dispositivo móvel preferido, como o Intune. Se você é um administrador e deseja obter mais informações sobre o DEP da Apple, veja [Registrar dispositivos macOS automaticamente no Programa de registro de dispositivos da Apple](https://docs.microsoft.com/intune/device-enrollment-program-enroll-macos.md).  
+É possível que sua organização tenha comprado os dispositivos por meio do chamado *DEP (Programa de registro de dispositivos) da Apple*. O DEP da Apple permite que as organizações comprem grandes quantidades de dispositivos iOS ou macOS. As organizações podem então configurar e gerenciar esses dispositivos com seu provedor de gerenciamento de dispositivo móvel preferido, como o Intune. Se você é um administrador e deseja obter mais informações sobre o DEP da Apple, veja [Registrar dispositivos macOS automaticamente no Programa de registro de dispositivos da Apple](https://docs.microsoft.com/intune/device-enrollment-program-enroll-macos).  
 
 ## <a name="get-your-device-managed"></a>Fazer com que o dispositivo seja gerenciado
 

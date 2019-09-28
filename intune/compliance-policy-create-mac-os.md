@@ -7,7 +7,6 @@ ms.author: mandia
 manager: dougeby
 ms.date: 04/04/2019
 ms.topic: reference
-ms.prod: ''
 ms.service: microsoft-intune
 ms.localizationpriority: medium
 ms.technology: ''
@@ -16,12 +15,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: b3224e7400ad56f971488aba53bb073a0d33bb9d
-ms.sourcegitcommit: 02803863eba37ecf3d8823a7f1cd7c4f8e3bb42c
-ms.translationtype: HT
+ms.openlocfilehash: f0e3164c84c9a4088068fcf920903c6bb76cd30a
+ms.sourcegitcommit: 7315fe72b7e55c5dcffc6d87f185f3c2cded9028
+ms.translationtype: MTE75
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/09/2019
-ms.locfileid: "59423638"
+ms.lasthandoff: 07/02/2019
+ms.locfileid: "71305063"
 ---
 # <a name="macos-settings-to-mark-devices-as-compliant-or-not-compliant-using-intune"></a>Configurações do macOS para marcar dispositivos como em conformidade ou não em conformidade usando o Intune
 
@@ -63,7 +62,7 @@ Como um administrador do Intune, use essas configurações de conformidade para 
     Definir um número mais alto exige que o usuário crie uma senha mais complexa.
 
 - **Máximo de minutos de inatividade antes que a senha seja exigida**: insira o tempo ocioso antes que o usuário precise digitar novamente a senha.
-- **Expiração da senha (dias)**: selecione o número de dias antes que a senha expire e seja preciso criar uma nova.
+- **Expiração da senha (dias)** : selecione o número de dias antes que a senha expire e seja preciso criar uma nova.
 - **Número de senhas anteriores para evitar a reutilização**: insira o número de senhas usadas anteriormente que não podem ser utilizadas.
 
     > [!IMPORTANT]

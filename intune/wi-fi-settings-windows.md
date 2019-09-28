@@ -15,12 +15,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 3bbd90b5a317629bd5b4d87b619d89023053518d
-ms.sourcegitcommit: 7c251948811b8b817e9fe590b77f23aed95b2d4e
+ms.openlocfilehash: 528819452accf4a7f17e54b3c05693dee5cab74f
+ms.sourcegitcommit: 6a946a055a2014e00a4ca9d71986727a4ebbc777
 ms.translationtype: MTE75
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/15/2019
-ms.locfileid: "67884250"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71239449"
 ---
 # <a name="add-wi-fi-settings-for-windows-10-and-later-devices-in-intune"></a>Adicionar configurações de Wi-Fi para dispositivos Windows 10 e posterior no Intune
 
@@ -62,6 +62,9 @@ Este artigo descreve essas configurações.
     
       > [!NOTE]
       > Quando você salva o perfil de Wi-Fi, o valor PSK inserido não é mostrado por motivos de segurança. A marca-d'água da chave pré-compartilhada ainda mostra **Não configurado**, embora a PSK esteja salva no perfil. Para alterar a PSK, insira uma nova chave e salve o perfil. Se você salvar uma PSK, edite a política e deixe a PSK em branco e a PSK existente ainda será usada.
+      
+      > [!IMPORTANT]
+      > O PSK é o mesmo para todos os dispositivos para os quais você tem como alvo o profule. Se a chave for comprometida, ela poderá ser usada por qualquer dispositivo para se conectar à rede Wi-Fi. Mantenha seu PSKs seguro para evitar acesso não autorizado.
 
 - **Configurações de Proxy da Empresa**: opte por usar as configurações de proxy em sua organização. Suas opções:
   - **Nenhum**: nenhuma configuração de proxy é definida.

@@ -5,23 +5,26 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 01/10/2019
+ms.date: 08/07/2019
 ms.topic: reference
 ms.service: microsoft-intune
 ms.localizationpriority: medium
 ms.technology: ''
 ms.suite: ems
 search.appverid: MET150
+ms.reviewer: maholdaa
 ms.custom: seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 7e37d6a2b7371cf20cd36a6f3f75a4dd252c332f
-ms.sourcegitcommit: 916fed64f3d173498a2905c7ed8d2d6416e34061
+ms.openlocfilehash: 8e13c2dce5e8da2ce71b97de496d5234096c3b22
+ms.sourcegitcommit: b78793ccbef2a644a759ca3110ea73e7ed6ceb8f
 ms.translationtype: MTE75
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/23/2019
-ms.locfileid: "66048043"
+ms.lasthandoff: 08/16/2019
+ms.locfileid: "71301945"
 ---
 # <a name="android-enterprise-device-settings-to-configure-email-authentication-and-synchronization-in-intune"></a>Configurações de dispositivo do Android Enterprise para configurar o email, a autenticação e a sincronização no Intune
+
+[!INCLUDE [azure_portal](./includes/azure_portal.md)]
 
 Este artigo lista e descreve as diferentes configurações de email que você pode controlar em dispositivos Android Enterprise. Como parte da solução MDM (gerenciamento de dispositivo móvel), use essas configurações para definir um servidor de email, usar o SSL para criptografar emails e muito mais.
 
@@ -31,7 +34,7 @@ Para saber mais sobre perfis de email no Intune, confira [definir as configuraç
 
 ## <a name="before-you-begin"></a>Antes de começar
 
-[Crie um perfil de configuração do dispositivo](email-settings-configure.md#create-a-device-profile) e escolha o perfil de trabalho.
+Crie um [perfil de configuração de dispositivo](email-settings-configure.md#create-a-device-profile) (escolha o perfil de trabalho) ou crie uma [política de configuração de aplicativo](app-configuration-policies-use-android.md).
 
 ## <a name="android-enterprise"></a>Android Enterprise
 
