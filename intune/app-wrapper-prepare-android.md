@@ -5,9 +5,8 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 03/11/2019
+ms.date: 07/09/2019
 ms.topic: reference
-ms.prod: ''
 ms.service: microsoft-intune
 ms.localizationpriority: medium
 ms.technology: ''
@@ -17,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 64de72822ad8d2f8d9893e3428208ff1363d33e2
-ms.sourcegitcommit: 25e6aa3bfce58ce8d9f8c054bc338cc3dff4a78b
+ms.openlocfilehash: 732e391ad3c85c1f3f5da36b3424544cf1cdf4aa
+ms.sourcegitcommit: 1494ff4b33c13a87f20e0f3315da79a3567db96e
 ms.translationtype: MTE75
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57566039"
+ms.lasthandoff: 09/20/2019
+ms.locfileid: "71238783"
 ---
 # <a name="prepare-android-apps-for-app-protection-policies-with-the-intune-app-wrapping-tool"></a>Preparar aplicativos Android para políticas de proteção do aplicativo com a Ferramenta de Encapsulamento de Aplicativos do Intune
 
@@ -36,35 +35,35 @@ Antes de executar a ferramenta, consulte [Considerações de segurança para exe
 
 ## <a name="fulfill-the-prerequisites-for-using-the-app-wrapping-tool"></a>Cumprir os pré-requisitos para usar a Ferramenta de Disposição do Aplicativo
 
--   Você precisa executar a Ferramenta de Disposição do Aplicativo em um computador Windows executando o Windows 7 ou posterior.
+- Você precisa executar a Ferramenta de Disposição do Aplicativo em um computador Windows executando o Windows 7 ou posterior.
 
--   Seu aplicativo de entrada deve ser um pacote de aplicativo Android válido com a extensão de arquivo .apk e:
+- Seu aplicativo de entrada deve ser um pacote de aplicativo Android válido com a extensão de arquivo .apk e:
 
-    -   Ele não pode ser criptografado.
-    -   Ele não pode ter passado por encapsulamento pela Ferramenta de Disposição do Aplicativo do Intune.
-    -   Ele deve ser escrito para Android 4.0 ou posterior.
+  - Ele não pode ser criptografado.
+  - Ele não pode ter passado por encapsulamento pela Ferramenta de Disposição do Aplicativo do Intune.
+  - Ele deve ser escrito para Android 4.0 ou posterior.
 
--   O aplicativo deve ser desenvolvido por ou para a sua empresa. Você não pode usar essa ferramenta para processar aplicativos baixados da Google Play Store.
+- O aplicativo deve ser desenvolvido por ou para a sua empresa. Você não pode usar essa ferramenta para processar aplicativos baixados da Google Play Store.
 
--   Para executar a Ferramenta de Disposição do Aplicativo, você deve instalar a versão mais recente do [Java Runtime Environment](https://java.com/download/) e certificar-se de que a variável de caminho do Java tenha sido definida como C:\ProgramData\Oracle\Java\javapath em suas variáveis de ambiente do Windows. Para obter mais ajuda, consulte a [documentação do Java](https://java.com/download/help/).
+- Para executar a Ferramenta de Disposição do Aplicativo, você deve instalar a versão mais recente do [Java Runtime Environment](https://java.com/download/) e certificar-se de que a variável de caminho do Java tenha sido definida como C:\ProgramData\Oracle\Java\javapath em suas variáveis de ambiente do Windows. Para obter mais ajuda, consulte a [documentação do Java](https://java.com/download/help/).
 
     > [!NOTE]
     > Em alguns casos, a versão de 32 bits do Java pode resultar em problemas de memória. É recomendável instalar a versão de 64 bits.
 
-- O Android exige que todos os pacotes de aplicativo (.apks) sejam assinados. Para a **reutilização** de certificados existentes e orientações do certificado de autenticação geral, consulte [Reutilizando certificados de autenticação e encapsulando aplicativos](https://docs.microsoft.com/intune/app-wrapper-prepare-android#reusing-signing-certificates-and-wrapping-apps). O executável Java keytool.exe é usado para gerar **novas** credenciais necessárias para assinar o aplicativo de saída encapsulado. Todas as senhas definidas devem ser seguras, mas lembre-se delas porque elas serão necessárias para executar a Ferramenta de Disposição do Aplicativo.
+- O Android exige que todos os pacotes de aplicativo (.apks) sejam assinados. Para a **reutilização** de certificados existentes e orientações do certificado de autenticação geral, consulte [Reutilizando certificados de autenticação e encapsulando aplicativos](app-wrapper-prepare-android.md#reusing-signing-certificates-and-wrapping-apps). O executável Java keytool.exe é usado para gerar **novas** credenciais necessárias para assinar o aplicativo de saída encapsulado. Todas as senhas definidas devem ser seguras, mas lembre-se delas porque elas serão necessárias para executar a Ferramenta de Disposição do Aplicativo.
 
     > [!NOTE]
     > A Ferramenta de Disposição do Aplicativo do Intune não oferece suporte aos esquemas de assinatura v2 e o futuro v3 para autenticação do aplicativo. Depois de ter disposto o arquivo .apk usando a Ferramenta de Disposição do Aplicativo do Intune, a recomendação é usar [a ferramenta Apksigner fornecida pelo Google]( https://developer.android.com/studio/command-line/apksigner). Isso garantirá que, assim que seu aplicativo chegar aos dispositivos dos usuários finais, ele possa ser iniciado corretamente pelos padrões do Android. 
 
-- (Opcional) Às vezes, um aplicativo pode atingir o limite de tamanho do DEX (Dalvik Executable) devido às classes do SDK de MAM do Intune adicionados durante o encapsulamento. Os arquivos DEX fazem parte da compilação de um aplicativo Android. A ferramenta de encapsulamento de aplicativo do Intune manipula automaticamente o estouro de arquivos DEX durante o encapsulamento de aplicativos com um mínimo de API de nível 21 ou superior (como de [v. 1.0.2501.1](https://github.com/msintuneappsdk/intune-app-wrapping-tool-android/releases)). Para aplicativos com um nível de API 21 < min, a prática recomendada seria aumentar o número mínimo de nível de API usando o wrapper `-UseMinAPILevelForNativeMultiDex` sinalizador. Para os clientes que não é possível aumentar o nível mínimo de API do aplicativo, as seguintes soluções alternativas estouro DEX estão disponíveis. Em determinadas organizações, isso pode exigir trabalhar com quem compila o aplicativo (isto é, a equipe de build do aplicativo):
-* Use o ProGuard para eliminar as referências a classes não utilizadas do arquivo primário de DEX do aplicativo.
-* Para clientes que usam v3.1.0 ou mais recente do que o plug-in Gradle Android, desabilite o [D8 dexer](https://android-developers.googleblog.com/2018/04/android-studio-switching-to-d8-dexer.html).  
+- (Opcional) Às vezes, um aplicativo pode atingir o limite de tamanho do DEX (Dalvik Executable) devido às classes do SDK de MAM do Intune adicionados durante o encapsulamento. Os arquivos DEX fazem parte da compilação de um aplicativo Android. A ferramenta de disposição do aplicativo do Intune manipula automaticamente o estouro de arquivo DEX durante o encapsulamento para aplicativos com um nível de API mínimo de 21 ou superior (a partir de [v. 1.0.2501.1](https://github.com/msintuneappsdk/intune-app-wrapping-tool-android/releases)). Para aplicativos com um nível de API Mín de < 21, a prática recomendada seria aumentar o nível mínimo de API usando o sinalizador de `-UseMinAPILevelForNativeMultiDex` do wrapper. Para os clientes não conseguirem aumentar o nível de API mínimo do aplicativo, as seguintes soluções alternativas de estouro de DEX estão disponíveis. Em determinadas organizações, isso pode exigir trabalhar com quem compila o aplicativo (isto é, a equipe de build do aplicativo):
+* Use o ProGuard para eliminar referências de classes não utilizadas do arquivo DEX primário do aplicativo.
+* Para clientes que usam o v 3.1.0 ou superior do plug-in Android gradle, desabilite o [dexer D8](https://android-developers.googleblog.com/2018/04/android-studio-switching-to-d8-dexer.html).  
 
 ## <a name="install-the-app-wrapping-tool"></a>Instalar a ferramenta de encapsulamento de aplicativos
 
-1.  Do [repositório do GitHub](https://github.com/msintuneappsdk/intune-app-wrapping-tool-android), baixe e abra o arquivo de instalação InstallAWT.exe para a Ferramenta de Disposição do Aplicativo do Intune para Android em um computador Windows. Abra o arquivo de instalação.
+1. Do [repositório do GitHub](https://github.com/msintuneappsdk/intune-app-wrapping-tool-android), baixe e abra o arquivo de instalação InstallAWT.exe para a Ferramenta de Disposição do Aplicativo do Intune para Android em um computador Windows. Abra o arquivo de instalação.
 
-2.  Aceite o contrato de licença e conclua a instalação.
+2. Aceite o contrato de licença e conclua a instalação.
 
 Anote a pasta na qual você instalou a ferramenta. O local padrão é: C:\Arquivos de Programas (x86)\Microsoft Intune Mobile Application Management\Android\App Wrapping Tool.
 
@@ -79,6 +78,7 @@ Anote a pasta na qual você instalou a ferramenta. O local padrão é: C:\Arquiv
    ```
 
 3. Execute a ferramenta usando o comando **invoke-AppWrappingTool**, que tem a sintaxe de uso abaixo:
+
    ```PowerShell
    Invoke-AppWrappingTool [-InputPath] <String> [-OutputPath] <String> -KeyStorePath <String> -KeyStorePassword <SecureString>
    -KeyAlias <String> -KeyPassword <SecureString> [-SigAlg <String>] [<CommonParameters>]
@@ -95,7 +95,7 @@ Anote a pasta na qual você instalou a ferramenta. O local padrão é: C:\Arquiv
 |**-KeyAlias**&lt;String&gt;|Nome da chave a ser usada para assinatura.| |
 |**-KeyPassword**&lt;SecureString&gt;|Senha usada para descriptografar a chave privada que será usada para a assinatura.| |
 |**-SigAlg**&lt;SecureString&gt;| (Opcional) Nome do algoritmo de assinatura a ser usado para assinatura. O algoritmo deve ser compatível com a chave privada.|Exemplos: SHA256withRSA, SHA1withRSA|
-|**-UseMinAPILevelForNativeMultiDex**| (Opcional) Use esse sinalizador para aumentar o nível mínimo de API do aplicativo Android de origem para 21. Esse sinalizador solicitará confirmação conforme ele limitará quem pode instalar este aplicativo. Os usuários podem ignorar a caixa de diálogo de confirmação, acrescentando o parâmetro "-Confirmar: $false" ao seu comando de PowerShell. O sinalizador só deve ser usado por clientes em aplicativos com a API de min < 21 que não obedecem a ser encapsulado com êxito devido a erros de estouro DEX. | |
+|**-UseMinAPILevelForNativeMultiDex**| Adicional Use esse sinalizador para aumentar o nível de API mínimo do aplicativo Android de origem para 21. Esse sinalizador solicitará a confirmação, pois limitará quem pode instalar este aplicativo. Os usuários podem ignorar a caixa de diálogo de confirmação acrescentando o parâmetro "-Confirm: $false" ao comando do PowerShell. O sinalizador só deve ser usado por clientes em aplicativos com a API mínima < 21 que falha ao encapsular com êxito devido a erros de estouro de DEX. | |
 | **&lt;CommonParameters&gt;** | (Opcional) O comando dá suporte a parâmetros comuns do PowerShell, como verbose, debug etc. |
 
 
@@ -110,10 +110,13 @@ Anote a pasta na qual você instalou a ferramenta. O local padrão é: C:\Arquiv
 **Exemplo:**
 
 Importe o módulo do PowerShell.
+
 ```PowerShell
 Import-Module "C:\Program Files (x86)\Microsoft Intune Mobile Application Management\Android\App Wrapping Tool\IntuneAppWrappingTool.psm1"
 ```
+
 Execute a Ferramenta de Disposição do Aplicativo no aplicativo nativo HelloWorld.apk.
+
 ```PowerShell
 invoke-AppWrappingTool -InputPath .\app\HelloWorld.apk -OutputPath .\app_wrapped\HelloWorld_wrapped.apk -KeyStorePath "C:\Program Files (x86)\Java\jre1.8.0_91\bin\mykeystorefile" -keyAlias mykeyalias -SigAlg SHA1withRSA -Verbose
 ```
@@ -128,12 +131,12 @@ Os cenários principais em que você precisa reencapsular os aplicativos são da
 * A ferramenta de encapsulamento de aplicativo Intune para Android lançou uma nova versão que permite que correções de bugs chave ou recursos novos e específicos de política de proteção de aplicativo Intune. Isso ocorre a cada 6 a 8 semanas por meio do repositório GitHub para a [Ferramenta de Encapsulamento de Aplicativo do Microsoft Intune App](https://github.com/msintuneappsdk/intune-app-wrapping-tool-android).
 
 Algumas práticas recomendadas para reencapsulamento incluem: 
-* Manter certificados de autenticação usados durante o processo de build, consulte [Reutilizar certificados de assinatura e encapsulamento de aplicativos](https://docs.microsoft.com/intune/app-wrapper-prepare-android#reusing-signing-certificates-and-wrapping-apps)
+* Manter certificados de autenticação usados durante o processo de build, consulte [Reutilizar certificados de assinatura e encapsulamento de aplicativos](app-wrapper-prepare-android.md#reusing-signing-certificates-and-wrapping-apps)
 
 ## <a name="reusing-signing-certificates-and-wrapping-apps"></a>Reutilizando certificados de autenticação e encapsulando aplicativos
 O Android exige que todos os aplicativos sejam autenticados por um certificado válido para serem instalados em dispositivos Android.
 
-Os aplicativos encapsulados podem ser autenticados como parte do processo de encapsulamento ou *após* o encapsulamento usando ferramentas de autenticação existentes (toda informação de assinatura no aplicativo antes do encapsulamento é descartada). Se possível, as informações de autenticação já usadas durante o processo de build devem ser usadas durante o encapsulamento. Em determinadas organizações, isso pode exigir trabalhar com quem tenha informações do repositório de chaves (isto é, a equipe do build do aplicativo). 
+Os aplicativos encapsulados podem ser autenticados como parte do processo de encapsulamento ou *após* o encapsulamento usando ferramentas de autenticação existentes (toda informação de assinatura no aplicativo antes do encapsulamento é descartada). Se possível, as informações de autenticação já usadas durante o processo de build devem ser usadas durante o encapsulamento. Em determinadas organizações, isso pode exigir trabalhar com quem tenha informações do repositório de chaves (isto é, a equipe do build do aplicativo). 
 
 Se o certificado de autenticação anterior não puder ser usado ou se o aplicativo ainda não tiver sido implantado, você poderá criar um novo certificado de autenticação seguindo as instruções do [Guia do desenvolvedor do Android](https://developer.android.com/studio/publish/app-signing.html#signing-manually).
 
@@ -142,17 +145,17 @@ Se o aplicativo tiver sido implantado anteriormente com um certificado de autent
 ## <a name="security-considerations-for-running-the-app-wrapping-tool"></a>Considerações de segurança para executar a Ferramenta de Disposição do Aplicativo
 Para evitar potenciais falsificações, divulgações de informações e aumento de ataques de privilégio:
 
--   Certifique-se de que o aplicativo de LOB (linha de negócios) de entrada, o aplicativo de saída e o Java KeyStore estejam no mesmo computador Windows em que a Ferramenta de Disposição do Aplicativo está sendo executada.
+- Certifique-se de que o aplicativo de LOB (linha de negócios) de entrada, o aplicativo de saída e o Java KeyStore estejam no mesmo computador Windows em que a Ferramenta de Disposição do Aplicativo está sendo executada.
 
--   Importe o aplicativo de saída para o Intune no mesmo computador em que a ferramenta está sendo executada. Confira [keytool](https://docs.oracle.com/javase/8/docs/technotes/tools/unix/keytool.html) para saber mais sobre o Java Keytool.
+- Importe o aplicativo de saída para o Intune no mesmo computador em que a ferramenta está sendo executada. Confira [keytool](https://docs.oracle.com/javase/8/docs/technotes/tools/unix/keytool.html) para saber mais sobre o Java Keytool.
 
--   Se o aplicativo de saída e a ferramenta estiverem em um caminho UNC e você não estiver executando a ferramenta e os arquivos de entrada no mesmo computador, configure o ambiente para ser protegido usando [IPsec (Internet Protocol Security)](https://wikipedia.org/wiki/IPsec) ou [Assinatura do Protocolo SMB (Server Message Block)](https://support.microsoft.com/kb/887429).
+- Se o aplicativo de saída e a ferramenta estiverem em um caminho UNC e você não estiver executando a ferramenta e os arquivos de entrada no mesmo computador, configure o ambiente para ser protegido usando [IPsec (Internet Protocol Security)](https://wikipedia.org/wiki/IPsec) ou [Assinatura do Protocolo SMB (Server Message Block)](https://support.microsoft.com/kb/887429).
 
--   Certifique-se de que o aplicativo é proveniente de uma fonte confiável.
+- Certifique-se de que o aplicativo é proveniente de uma fonte confiável.
 
--   Proteja o diretório de saída que contém o aplicativo encapsulado. Considere usar um diretório de nível de usuário para a saída.
+- Proteja o diretório de saída que contém o aplicativo encapsulado. Considere usar um diretório de nível de usuário para a saída.
 
-### <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Consulte também
 - [Decidir como preparar aplicativos para o gerenciamento de aplicativo móvel com o Microsoft Intune](apps-prepare-mobile-application-management.md)
 
 - [Guia para desenvolvedores do SDK de Aplicativo do Microsoft Intune para Android](app-sdk-android.md)
