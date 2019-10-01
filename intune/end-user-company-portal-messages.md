@@ -8,7 +8,6 @@ ms.author: lanewsad
 manager: dougeby
 ms.date: 03/09/2017
 ms.topic: conceptual
-ms.prod: ''
 ms.service: microsoft-intune
 ms.localizationpriority: high
 ms.technology: ''
@@ -17,24 +16,27 @@ ms.reviewer: aanavath
 ms.suite: ems
 search.appverid: MET150
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 700bded8930385c5576a198dc0364c64066121e5
-ms.sourcegitcommit: 71314481e644025c005019b478b4cbeaf2390ea9
+ms.openlocfilehash: 1ed123bcf8c5c1a5df1a356cf8d2522caad20ea2
+ms.sourcegitcommit: c9725ddae6c0f82a491de27c87f240254d32716b
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/05/2019
-ms.locfileid: "59569123"
+ms.lasthandoff: 09/13/2019
+ms.locfileid: "71239354"
 ---
 # <a name="help-end-users-understand-company-portal-app-messages"></a>Ajudar usuários finais a compreender as mensagens do aplicativo do Portal da Empresa
 
 [!INCLUDE [both-portals](./includes/note-for-both-portals.md)]
 
 > [!NOTE]
-> As informações a seguir aplicam-se somente aos dispositivos com Android 6.0 e posteriores.
+> As informações a seguir aplicam-se somente aos dispositivos com Android 6.0 e posteriores e iOS 10 e posteriores.
 
 Entenda as diferentes mensagens de aplicativo que os usuários finais podem ver no Portal da Empresa. Essas mensagens de aplicativo normalmente são exibidas em diferentes momentos no processo de registro. Saiba o local em que as mensagens são exibidas, o que significam e o que acontece se os usuários negarem acesso. Além disso, saiba como melhor explicar as mensagens aos usuários.
 
 - __Permitir que o Portal da Empresa faça e gerencie chamadas telefônicas?__
 - __Permitir que o Portal da empresa acesse fotos, mídia e arquivos em seu dispositivo?__
+
+> [!NOTE]
+> Não vendemos os dados coletados por nossos serviços para terceiros por nenhum motivo.
 
 ## <a name="allow-company-portal-to-make-and-manage-phone-calls"></a>Permitir que o Portal da Empresa faça e gerencie chamadas telefônicas?
 
@@ -57,7 +59,7 @@ Se os usuários permitirem, mas posteriormente negarem o acesso, a mensagem ser�
 Se os usuários decidirem posteriormente permitir o acesso, eles poderão acessar **Configurações** > **Aplicativos** > **Portal da Empresa** > **Permissões** > **Telefone** e ativar a permissão.
 
 ### <a name="how-to-explain-this-to-your-users"></a>Como explicar isso aos seus usuários
-Peça para os usuários [registrarem seu dispositivo Android no Intune](/intune-user-help/enroll-your-device-in-intune-android) para obter mais informações.
+Peça para os usuários [registrarem seu dispositivo Android no Intune](/intune-user-help/enroll-device-android-company-portal) para obter mais informações.
 
 ## <a name="allow-company-portal-to-access-your-contacts"></a>Permitir que o Portal da Empresa acesse seus contatos?
 
@@ -78,7 +80,7 @@ Se os usuários permitem, mas posteriormente negam o acesso, a mensagem é exibi
 Se os usuários decidirem posteriormente permitir o acesso, eles poderão acessar **Configurações** > **Aplicativos** > **Portal da Empresa** > **Permissões** > **Telefone** e ativar a permissão.
 
 ### <a name="how-to-explain-this-to-your-users"></a>Como explicar isso aos seus usuários
-Peça para os usuários [registrarem seu dispositivo Android no Intune](/intune-user-help/enroll-your-device-in-intune-android) para obter mais informações.
+Peça para os usuários [registrarem seu dispositivo Android no Intune](/intune-user-help/enroll-device-android-company-portal) para obter mais informações.  
 
 ## <a name="allow-company-portal-to-access-photos-media-and-files-on-your-device"></a>Permitir que o Portal da empresa acesse fotos, mídia e arquivos em seu dispositivo?
 
@@ -132,7 +134,7 @@ Após instalar esses aplicativos usando o Portal da Empresa e iniciar o aplicati
 
 3. Escolha **Perfil de Gerenciamento** > **Aplicativo empresarial**.
 4. Escolha o nome do desenvolvedor.
-5. Pressione **Confiar _nome do desenvolvedor_**.
+5. Pressione **Confiar _nome do desenvolvedor_** .
 6. Confirme o aplicativo marcando **Confiar** na mensagem pop-up de instalação do aplicativo.
 
    ![Interface do usuário do dispositivo iOS – Mensagem de confiança do aplicativo](./media/end-user-company-portal-messages/end-user-company-portal-messages-03.png)
@@ -140,5 +142,5 @@ Após instalar esses aplicativos usando o Portal da Empresa e iniciar o aplicati
     Você deve conseguir iniciar e usar o aplicativo da empresa.
 
 
-### <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Consulte também
 [O que dizer a seus usuários finais sobre como usar o Intune](end-user-educate.md)

@@ -6,9 +6,8 @@ keywords: ''
 author: ErikjeMS
 ms.author: erikje
 manager: dougeby
-ms.date: 01/03/2018
+ms.date: 07/29/2019
 ms.topic: conceptual
-ms.prod: ''
 ms.service: microsoft-intune
 ms.localizationpriority: high
 ms.technology: ''
@@ -18,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: dc0cf701450e594fd4b72a8e0565246994bb8a9e
-ms.sourcegitcommit: 25e6aa3bfce58ce8d9f8c054bc338cc3dff4a78b
+ms.openlocfilehash: 5946f8ffb8179bb5109de45df8f89012ec706023
+ms.sourcegitcommit: 3baa9965095bb874d9b8c7a3cbb4aa925ed52cae
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57460607"
+ms.lasthandoff: 07/30/2019
+ms.locfileid: "71239590"
 ---
 # <a name="supported-operating-systems-and-browsers-in-intune"></a>Navegadores e sistemas operacionais compatíveis no Intune
 
@@ -43,7 +42,7 @@ Para saber mais sobre o suporte à configuração do provedor de serviço, visit
 
 ### <a name="supported-samsung-knox-standard-devices"></a>Dispositivos Samsung Knox Standard com suporte
 
-Para evitar erros de ativação do KNOX que impedem o registro do MDM, o aplicativo Portal da Empresa apenas tenta a ativação do Samsung KNOX durante o registro de MDM quando o dispositivo aparece na [lista de dispositivos KNOX com suporte](https://www.samsungknox.com/knox-supported-devices/knox-workspace). Dispositivos que não dão suporte à ativação de Samsung Knox são registrados como dispositivos Android padrão. Um dispositivo Samsung pode ter alguns números de modelo que dão suporte a Knox, enquanto outros não. Verifique a compatibilidade com KNOX com o revendedor do dispositivo antes de comprar e implantar dispositivos Samsung.
+Para evitar erros de ativação do KNOX que impedem o registro do MDM, o aplicativo Portal da Empresa apenas tenta a ativação do Samsung KNOX durante o registro de MDM quando o dispositivo aparece na [lista de dispositivos KNOX com suporte](https://www.samsungknox.com/knox-supported-devices/knox-workspace). Dispositivos que não dão suporte à ativação de Samsung Knox são registrados como dispositivos Android padrão. Um dispositivo Samsung pode ter alguns números de modelo que oferecem suporte a Knox, enquanto outros não. Verifique a compatibilidade com KNOX com o revendedor do dispositivo antes de comprar e implantar dispositivos Samsung.
 
 > [!NOTE]
 > O registro de dispositivos Samsung Knox pode exigir a [habilitação de acesso a servidores da Samsung](https://support.samsungknox.com/hc/articles/115013833108-Our-corporate-devices-are-behind-a-firewall-How-do-I-enable-Knox-Workspace-devices-to-contact-Samsung-servers). 
@@ -115,12 +114,12 @@ Há suporte para os seguintes navegadores nesses portais:
 
 ### <a name="intune-classic-portal"></a>Portal clássico do Intune
 
-Os recursos somente clássicos do Intune, como o cliente de software de computador do Intune e a integração com parceiros de Defesa contra Ameaças Móveis, estão disponíveis somente no portal clássico do Intune (https://manage.microsoft.com). O portal clássico do Intune requer suporte do navegador Silverlight.
+O portal clássico do Intune é usado somente para gerenciar dispositivos registrados com o cliente de software de computador do Intune (https://manage.microsoft.com). O portal clássico do Intune requer suporte do navegador Silverlight.
 
 Os seguintes navegadores Silverlight dão suporte ao Portal Clássico do Intune:
 - Internet Explorer 10 ou posterior
 - Google Chrome (versões anteriores à versão 42)
-- Mozilla Firefox com o Silverlight habilitado [Saiba mais](https://go.microsoft.com/fwlink/?linkid=836872)
+- Mozilla Firefox com o Silverlight habilitado (versões anteriores à versão 56)
 
 > [!Note]
 > Não há suporte para o Microsoft Edge nem para navegadores móveis no Portal Clássico do Intune, pois eles não dão suporte ao [Microsoft Silverlight](https://msdn.microsoft.com/library/cc838158(v=vs.95).aspx).

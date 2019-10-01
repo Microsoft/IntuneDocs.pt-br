@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: c654b8e05cabf132324e8dafe70e5991a67bd516
-ms.sourcegitcommit: bccfbf1e3bdc31382189fc4489d337d1a554e6a1
+ms.openlocfilehash: c71edf84fb1ade261eefc1b3de4543e941bf0657
+ms.sourcegitcommit: 1494ff4b33c13a87f20e0f3315da79a3567db96e
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/03/2019
-ms.locfileid: "67548323"
+ms.lasthandoff: 09/20/2019
+ms.locfileid: "71166814"
 ---
 # <a name="develop-a-support-plan"></a>Desenvolver um plano de suporte
 
@@ -84,7 +84,7 @@ Um exemplo de uma agenda de treinamento de suporte do Intune é fornecida abaixo
 
 - Perguntas e Respostas
 
-A [Documentação do Intune](https://docs.microsoft.com/intune/) fornece uma visão geral do Intune, descrições detalhadas dos recurso e algumas informações de solução de problemas. O [Fórum do Intune](https://social.technet.microsoft.com/Forums/home) é um recurso baseado na comunidade para dúvidas e tópicos não abordados na documentação do Intune.
+A [Documentação do Intune](index.yml) fornece uma visão geral do Intune, descrições detalhadas dos recursos e algumas informações de solução de problemas. O [Fórum do Intune](https://social.technet.microsoft.com/Forums/home) é um recurso baseado na comunidade para dúvidas e tópicos não abordados na documentação do Intune.
 
 ## <a name="what-opportunities-are-there-to-involve-the-support-team-earlier"></a>Quais são as oportunidades para envolver a equipe de suporte nos estágios iniciais?
 

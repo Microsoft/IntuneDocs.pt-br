@@ -8,7 +8,6 @@ ms.author: lanewsad
 manager: dougeby
 ms.date: 06/01/2018
 ms.topic: conceptual
-ms.prod: ''
 ms.service: microsoft-intune
 ms.localizationpriority: high
 ms.technology: ''
@@ -18,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: get-started
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 4f8405aceaa1fd9c00b966d03a1f7b80e5946d96
-ms.sourcegitcommit: 364a7dbc7eaa414c7a9c39cf53eb4250e1ad3151
+ms.openlocfilehash: 52f8af06fffb3643714ed318e474b73be21963ed
+ms.sourcegitcommit: 6a946a055a2014e00a4ca9d71986727a4ebbc777
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/09/2019
-ms.locfileid: "59569773"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71239788"
 ---
 # <a name="how-to-educate-your-end-users-about-microsoft-intune"></a>Como instruir os usuários finais sobre o Microsoft Intune
 
@@ -58,9 +57,9 @@ Leia a seguinte lista de dicas para facilitar a implantação do Intune da sua o
 
 * __Seja acessível.__ Diga aos usuários em que local eles podem procurar a ajuda para problemas com o dispositivo. Quando você [personalizar o Portal da Empresa](company-portal-customize.md), inclua as informações de contato do administrador de TI.
 
-* __Seja pessoal.__ Forneça instruções específicas para a implantação da sua organização. Essa ação demonstra aos usuários que você se importa com a experiência deles. Use este [modelo personalizável de registro de usuário do Intune](https://gallery.technet.microsoft.com/office/Intune-End-User-Enrollment-3a0c9b0c) para criar suas próprias instruções de registro para os usuários.
+* __Seja pessoal.__ Forneça instruções específicas para a implantação da sua organização. Essa ação demonstra aos usuários que você se importa com a experiência deles. Use este [Kit de Adoção do Intune](https://aka.ms/IntuneAdoptionKit) personalizável para criar suas próprias instruções de registro para os usuários.
 
-* __Encontre formas diferentes de se comunicar.__ Os usuários têm [diferentes estilos de aprendizagem](https://www.umassd.edu/dss/resources/facultystaff/howtoteachandaccommodate/howtoaccommodatedifferentlearningstyles/) e maneiras preferenciais de consumir informações. Para quem aprende de modo visual, o Intune fornece [versões em vídeo de como registrar vários tipos de dispositivo](https://channel9.msdn.com/Series/IntuneEnrollment) no Channel 9. Você pode inserir os vídeos diretamente no seu próprio [site do SharePoint](https://support.office.com/article/Embed-a-video-from-Office-365-Video-59e19984-c34e-4be8-889b-f6fa93910581). Você também pode baixar cópias locais da faixa de áudio ou vídeo.
+* __Encontre formas diferentes de se comunicar.__ Os usuários têm [diferentes estilos de aprendizagem](https://www.umassd.edu/dss/resources/faculty--staff/how-to-teach-and-accommodate/how-to-accommodate-different-learning-styles/) e maneiras preferenciais de consumir informações. Para quem aprende de modo visual, o Intune fornece [versões em vídeo de como registrar vários tipos de dispositivo](https://channel9.msdn.com/Series/IntuneEnrollment) no Channel 9. Você pode inserir os vídeos diretamente no seu próprio [site do SharePoint](https://support.office.com/article/Embed-a-video-from-Office-365-Video-59e19984-c34e-4be8-889b-f6fa93910581). Você também pode baixar cópias locais da faixa de áudio ou vídeo.
 
 * __Fique atento.__ A experiência do usuário do Intune também afeta a sua produtividade. Entender a experiência dos usuários facilita a solução de problemas de usuários e dispositivos. Por exemplo, você pode aprender e entender como seus usuários adquirem aplicativos. Conhecer essas informações com antecedência tornará mais fácil e rápido diagnosticar e corrigir problemas.
 

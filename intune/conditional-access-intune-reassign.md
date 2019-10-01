@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 9a24c4b45b962f77846b4f7f7add3872daf38635
-ms.sourcegitcommit: 7c251948811b8b817e9fe590b77f23aed95b2d4e
+ms.openlocfilehash: 36e7b8468e4ee9d1f6be71a82d18f066bd7568d4
+ms.sourcegitcommit: 9110124a481160039d476cf0374a4fa0464a8509
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/15/2019
-ms.locfileid: "67883783"
+ms.lasthandoff: 09/25/2019
+ms.locfileid: "71256209"
 ---
 # <a name="reassign-conditional-access-policies-from-intune-classic-portal-to-the-azure-portal"></a>Reatribuir políticas de Acesso Condicional no portal clássico do Intune para o portal do Azure
 
@@ -194,15 +194,9 @@ Depois que tiver reatribuído suas políticas de Acesso Condicional no portal do
 
 ### <a name="to-disable-the-conditional-access-policies"></a>Desabilitar as políticas de Acesso Condicional
 
-1. Acesse o [Portal clássico do Intune](https://manage.microsoft.com) e entre com suas credenciais.
+Como o MDM foi removido do portal clássico do Intune, o seguinte link foi fornecido para exibir/desabilitar essas políticas clássicas:
 
-2. Escolha **Política** no menu à esquerda.
-
-3. Escolha **Acesso Condicional** e selecione o serviço de nuvem da Microsoft (por exemplo, Exchange Online ou SharePoint Online) para o qual você criou uma política de Acesso Condicional.
-
-4. Desmarque a opção **Habilitar política de Acesso Condicional** e clique em **Salvar**.
-
-    ![Imagem da opção Desabilitar políticas de Acesso Condicional no portal clássico do Intune](./media/reassign-ca-18.png)
+https://portal.azure.com/?microsoft_aad_iam_classicPolicyDontHide=true#blade/Microsoft_AAD_IAM/ConditionalAccessBlade/ClassicPolicies
 
 ## <a name="see-also"></a>Consulte também
 

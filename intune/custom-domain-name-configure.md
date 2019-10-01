@@ -6,9 +6,8 @@ keywords: ''
 author: dougeby
 ms.author: dougeby
 manager: dougeby
-ms.date: 02/22/2018
+ms.date: 06/26/2019
 ms.topic: conceptual
-ms.prod: ''
 ms.service: microsoft-intune
 ms.localizationpriority: high
 ms.technology: ''
@@ -18,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic; get-started
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 4d0c3d11eb3a031f34704dcd9ecf16f3312ac818
-ms.sourcegitcommit: 484a898d54f5386fdbce300225aaa3495cecd6b0
+ms.openlocfilehash: 33d5c994e4a51542c39c61a1f2311fda5a0a7caf
+ms.sourcegitcommit: 1494ff4b33c13a87f20e0f3315da79a3567db96e
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/01/2019
-ms.locfileid: "59567238"
+ms.lasthandoff: 09/20/2019
+ms.locfileid: "71239510"
 ---
 # <a name="configure-a-custom-domain-name"></a>Configurar um nome de domínio personalizado
 
@@ -33,9 +32,9 @@ Este tópico informa os administradores como eles podem criar um DNS CNAME para 
 
 Quando sua empresa se inscreve em um serviço baseado em nuvem da Microsoft como o Intune, você recebe um nome de domínio inicial hospedado no Azure Active Directory (AD), que é semelhante a **seudomínio.onmicrosoft.com**. Nesse exemplo, **seudomínio** é o nome de domínio que você escolheu ao se inscrever. **onmicrosoft.com** é o sufixo atribuído às contas que você adiciona à sua assinatura. Você pode configurar o domínio personalizado da organização para acessar o Intune, em vez de usar o nome de domínio fornecido com a sua assinatura.
 
-Antes de criar contas de usuário ou sincronizar seu Active Directory local, recomendamos fortemente que você decida se usará somente o domínio .onmicrosoft.com ou se adicionará um ou mais nomes de domínios personalizados. Configure um domínio personalizado antes de adicionar usuários para simplificar o gerenciamento de usuários. Isso permite que os usuários entrem com as credenciais que usam para acessar outros recursos do domínio.
+Antes de criar contas de usuário ou sincronizar seu Active Directory local, recomendamos fortemente que você decida se usará somente o domínio .onmicrosoft.com ou se adicionará um ou mais nomes de domínios personalizados. Configure um domínio personalizado antes de adicionar usuários para simplificar o gerenciamento de usuários. A configuração de um domínio do cliente permite que os usuários entrem com as credenciais usadas para acessar outros recursos do domínio.
 
-Ao assinar um serviço baseado em nuvem da Microsoft, sua instância desse serviço torna-se um [locatário do Microsoft Azure AD](http://technet.microsoft.com/library/jj573650.aspx#BKMK_WhatIsAnAzureADTenant), que fornece serviços de identidade e diretório para o seu serviço baseado em nuvem. Como as tarefas para configurar o Intune para usar o nome de domínio personalizado das organizações são as mesmas para os outros locatários do Azure AD, você pode usar as informações e procedimentos encontrados em [Adicionar seu domínio](https://azure.microsoft.com/documentation/articles/active-directory-add-domain/).
+Ao assinar um serviço baseado em nuvem da Microsoft, sua instância desse serviço torna-se um [locatário do Microsoft Azure AD](https://technet.microsoft.com/library/jj573650.aspx#BKMK_WhatIsAnAzureADTenant), que fornece serviços de identidade e diretório para o seu serviço baseado em nuvem. Como as tarefas para configurar o Intune para usar o nome de domínio personalizado das organizações são as mesmas para os outros locatários do Azure AD, use as informações e procedimentos encontrados em [Adicionar seu domínio](https://azure.microsoft.com/documentation/articles/active-directory-add-domain/).
 
 > [!TIP]
 > Para saber mais sobre os domínios personalizados, consulte [Visão geral conceitual dos nomes de domínio personalizados no Azure Active Directory](https://azure.microsoft.com/documentation/articles/active-directory-add-domain-concepts/).
@@ -53,7 +52,10 @@ Você não pode renomear nem remover o nome de domínio inicial onmicrosoft.com.
 4. A caixa de diálogo **Verificar domínio** é aberta, fornecendo os valores para criar o registro TXT no seu provedor de hospedagem de DNS.
     - **Usuários da GoDaddy**: o Centro de administração do Microsoft 365 redireciona você à página de logon da GoDaddy. Após inserir suas credenciais e aceitar o contrato de permissão de alteração de domínio, o registro TXT é criado automaticamente. Como alternativa, [crie o registro TXT](https://support.office.com/article/Create-DNS-records-at-GoDaddy-for-Office-365-f40a9185-b6d5-4a80-bb31-aa3bb0cab48a).
     - **Usuários do Register.com**: siga as [instruções passo a passo](https://support.office.com/article/Create-DNS-records-at-Register-com-for-Office-365-55bd8c38-3316-48ae-a368-4959b2c1684e#BKMK_verify) para criar o registro TXT.
+5. [Talvez seja necessário criar registros DNS adicionais para registros no Intune](windows-enroll.md#simplify-windows-enrollment-without-azure-ad-premium).
 
 As etapas para adicionar e verificar um domínio personalizado também podem ser [executadas no Azure Active Directory](https://azure.microsoft.com/documentation/articles/active-directory-add-domain/).
 
 É possível saber mais [Sobre o domínio inicial onmicrosoft.com no Office 365](https://support.office.com/article/About-your-initial-onmicrosoft-com-domain-in-Office-365-B9FC3018-8844-43F3-8DB1-1B3A8E9CFD5A)
+
+Você pode aprender mais sobre como [simplificar o registro no Windows sem o Azure AD Premium](windows-enroll.md#simplify-windows-enrollment-without-azure-ad-premium), criando um DNS CNAME que redireciona o registro para os servidores do Intune.

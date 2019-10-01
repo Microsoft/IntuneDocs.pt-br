@@ -7,7 +7,6 @@ ms.author: dougeby
 manager: dougeby
 ms.date: 11/29/2018
 ms.topic: conceptual
-ms.prod: ''
 ms.service: microsoft-intune
 ms.localizationpriority: high
 ms.technology: ''
@@ -17,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic; get-started
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 32be10340e1e77d2f994c5f038e6328ea42a6303
-ms.sourcegitcommit: 25e6aa3bfce58ce8d9f8c054bc338cc3dff4a78b
+ms.openlocfilehash: d158cb01dbd13f032916f4dc2bf443ed0f6bfaae
+ms.sourcegitcommit: 4b83697de8add3b90675c576202ef2ecb49d80b2
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57394764"
+ms.lasthandoff: 06/13/2019
+ms.locfileid: "71238580"
 ---
 # <a name="common-ways-to-use-microsoft-intune"></a>Maneiras comuns de usar o Microsoft Intune
 
@@ -44,7 +43,7 @@ Abaixo, temos breves apresentações dos seis cenários mais comuns que se basei
 A maioria das estratégias de mobilidade corporativa começam com um plano para habilitar o acesso seguro ao email para funcionários com dispositivos móveis que se conectam à Internet. Muitas organizações ainda têm dados e servidores de aplicativos locais, como o Microsoft Exchange, que são hospedados em sua rede corporativa.
 
 
-O Intune e o Microsoft EMS (Enterprise Mobility + Security) fornecem uma [solução de acesso condicional](conditional-access.md) integrada de modo exclusivo para Exchange Server, que garante que nenhum aplicativo móvel possa acessar emails até que o dispositivo esteja registrado no Intune. Você pode implementar esse tipo de acesso a email sem implantar outro computador de gateway na borda da sua rede corporativa.
+O Intune e o Microsoft EMS (Enterprise Mobility + Security) fornecem uma [solução de Acesso Condicional](conditional-access.md) integrada de modo exclusivo para Exchange Server, que garante que nenhum aplicativo móvel possa acessar emails até que o dispositivo esteja registrado no Intune. Você pode implementar esse tipo de acesso a email sem implantar outro computador de gateway na borda da sua rede corporativa.
 
 O Intune também dá suporte à habilitação do acesso a aplicativos móveis que precisam de acesso seguro aos dados locais, como servidores de aplicativos de linha de negócios. Normalmente, esse tipo de acesso é feito usando [certificados gerenciados pelo Intune](certificates-configure.md) para controle de acesso, em conjunto com um Gateway de VPN padrão ou proxy no perímetro, como o Proxy de Aplicativo do Microsoft Azure Active Directory. 
 
@@ -56,7 +55,7 @@ Nesses casos, a única maneira de acessar os dados corporativos é registrar o d
 ## <a name="protecting-your-office-365-email-and-data-so-it-can-be-safely-accessed-by-mobile-devices"></a>Proteger seus dados e emails do Office 365 para que eles possam ser acessados com segurança por dispositivos móveis
 Proteger dados corporativos no Office 365 (email, documentos, mensagens instantâneas, contatos) não poderia ser mais fácil para você ou perfeita para seus usuários.
 
-O Intune e o Microsoft Enterprise Mobility + Security fornecem uma solução de acesso condicional integrada exclusivamente que garante que nenhum usuário, aplicativo ou dispositivo pode acessar dados do Office 365, a menos que eles atendam aos requisitos de conformidade da empresa ([autenticação multifator](multi-factor-authentication.md) executada, registrado no Intune, usando o aplicativo gerenciado, versão do sistema operacional com suporte, PIN do dispositivo, perfil de risco do usuário baixo etc.).
+O Intune e o Microsoft Enterprise Mobility + Security fornecem uma solução de Acesso Condicional integrada exclusivamente que garante que nenhum usuário, aplicativo ou dispositivo possa acessar dados do Office 365, a menos que eles atendam aos requisitos de conformidade da empresa ([autenticação multifator](multi-factor-authentication.md) executada, registrado no Intune, usando o aplicativo gerenciado, versão do sistema operacional com suporte, PIN do dispositivo, perfil de risco do usuário baixo etc.).
 
 
 Os aplicativos móveis do Office nas respectivas lojas de aplicativos estão prontos para uso, com políticas de confinamento de dados que você pode configurar por meio do Intune. Isso permite que você impeça que os dados sejam compartilhados com aplicativos (por exemplo, aplicativos de email nativos) e locais de armazenamento (por exemplo, o Dropbox) que não são gerenciados pelo departamento de TI. Toda essa funcionalidade é incorporada ao Office 365 e EMS. Você não precisa implantar uma infraestrutura adicional para obter esse valor.

@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 1dc495e6356a35215943415e03a46496a72bddf1
-ms.sourcegitcommit: 74911a263944f2dbd9b754415ccda6c68dae0759
+ms.openlocfilehash: c8c9375449e55d2e6cac511cb0e279355ec95294
+ms.sourcegitcommit: c19584b36448bbd4c8638d7cab552fe9b3eb3408
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/17/2019
-ms.locfileid: "71071041"
+ms.lasthandoff: 09/20/2019
+ms.locfileid: "71163271"
 ---
 # <a name="android-device-administrator-enrollment"></a>Registro de administrador de dispositivos Android
 
@@ -49,8 +49,9 @@ Para obter mais informações sobre os recursos do Android Enterprise do Google,
 
 Por padrão, o Intune permite o registro de dispositivos Android com recursos de administrador de dispositivos.
 
-1. Para se preparar para gerenciar dispositivos móveis, é necessário definir a autoridade MDM (gerenciamento de dispositivo móvel) como **Microsoft Intune**. Consulte [Definir a autoridade MDM](mdm-authority-set.md) para obter instruções. Você definirá esse item apenas uma vez, na primeira vez que configurar o Intune para gerenciamento de dispositivo móvel
-2. [Informe aos usuários como registrar seus dispositivos](/intune-user-help/enroll-your-device-in-intune-android).  
+1. Para se preparar para gerenciar dispositivos móveis, é necessário definir a autoridade MDM (gerenciamento de dispositivo móvel) como **Microsoft Intune**. Consulte [Definir a autoridade MDM](mdm-authority-set.md) para obter instruções. Você define esse item apenas uma vez, na primeira vez que configurar o Intune para gerenciamento de dispositivo móvel.
+2. Acesse **Intune** > **Registro de dispositivo** > **Registro do Android** > **Dispositivos pessoais e corporativos com privilégios de administração de dispositivos** > **Usar o administrador do dispositivo para gerenciar dispositivos**.
+3. [Informe aos usuários como registrar seus dispositivos](/intune-user-help/enroll-your-device-in-intune-android).  
 
 Depois que os usuários registrarem os dispositivos, você poderá começar a gerenciar esses dispositivos no Intune, por exemplo, [atribuindo políticas de conformidade](compliance-policy-create-android.md), [gerenciando aplicativos](app-management.md) e muito mais.
 

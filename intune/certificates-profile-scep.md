@@ -5,7 +5,7 @@ keywords: ''
 author: brenduns
 ms.author: brenduns
 manager: dougeby
-ms.date: 09/03/2019
+ms.date: 09/19/2019
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -16,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 0e553229530f826ead91be981ff446b7cb3ebbf2
-ms.sourcegitcommit: 7269abaefb2857bc8b343896bb2138bdb01bf8dc
+ms.openlocfilehash: a9091b4623e456f5b00134542282b2032ce70e6a
+ms.sourcegitcommit: c19584b36448bbd4c8638d7cab552fe9b3eb3408
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/03/2019
-ms.locfileid: "70214290"
+ms.lasthandoff: 09/20/2019
+ms.locfileid: "71163748"
 ---
 # <a name="create-and-assign-scep-certificate-profiles-in-intune"></a>Criar e atribuir perfis de Certificado SCEP no Intune
 
@@ -38,9 +38,19 @@ Depois de [configurar a infraestrutura](certificates-scep-configure.md) para dar
 3. Insira um **Nome** e uma **Descrição** para o perfil de certificado SCEP.
 4. Na lista suspensa **Plataforma**, selecione uma [plataforma de dispositivo compatível](certificates-configure.md#supported-platforms-and-certificate-profiles) para esse Certificado SCEP. 
 5. Na lista suspensa **Tipo de perfil**, selecione **Certificado SCEP**.  
+   
+   Para a plataforma **Android Enterprise**, o *Tipo de perfil* é dividido em duas categorias: *Somente Proprietário do Dispositivo* e *Somente Perfil de Trabalho*. Certifique-se de selecionar o perfil de certificado SCEP correto para os dispositivos que você gerencia.  
 
-   > [!NOTE]  
-   > Para a plataforma **Android Enterprise**, o *Tipo de perfil* é dividido em duas categorias: *Somente Proprietário do Dispositivo* e *Somente Perfil de Trabalho*.  Só há suporte para perfis de Certificado SCEP na categoria *Somente Perfil de Trabalho*.
+   Os perfis de certificado CEP para o perfil *Somente Proprietário do Dispositivo* têm as seguintes limitações:  
+
+   1. Não há suporte para as seguintes variáveis:  
+
+      - CN={{OnPrem_Distinguished_Name}}  
+      - CN={{onPremisesSamAccountName}}  
+
+   2. Em Monitoramento, o relatório de certificado não está disponível para perfis de certificado SCEP do Proprietário do Dispositivo.
+   
+   3. A revogação de certificados provisionados pelos perfis de certificado SCEP para o Proprietário do Dispositivo não tem suporte no Intune, mas pode ser gerenciada por meio de um processo externo ou diretamente com a autoridade de certificação.
 
 6. Selecione **Configurações** e, em seguida, conclua as seguintes configurações:
 

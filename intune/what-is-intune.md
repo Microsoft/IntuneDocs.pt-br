@@ -5,9 +5,8 @@ keywords: o que é o Intune
 author: dougeby
 ms.author: dougeby
 manager: dougeby
-ms.date: 02/26/2019
+ms.date: 06/20/2019
 ms.topic: overview
-ms.prod: ''
 ms.service: microsoft-intune
 ms.localizationpriority: high
 ms.technology: ''
@@ -17,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: get-started
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 511e672193ec609f817c10572c99ac73831c54ae
-ms.sourcegitcommit: 25e6aa3bfce58ce8d9f8c054bc338cc3dff4a78b
+ms.openlocfilehash: 2cde4e37889b981decfd18138feeb4edac46c4c8
+ms.sourcegitcommit: 7315fe72b7e55c5dcffc6d87f185f3c2cded9028
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57460573"
+ms.lasthandoff: 07/02/2019
+ms.locfileid: "71238240"
 ---
 # <a name="what-is-microsoft-intune"></a>O que é o Microsoft Intune?
 
@@ -85,7 +84,7 @@ Quando falamos sobre configuração de aplicativo e sobre o Intune, estamos nos 
 Quando usa o Intune com outros serviços no EMS, você pode fornecer à sua organização segurança de aplicativo móvel muito além da que é fornecida pelo sistema operacional móvel e pelo próprio aplicativo por meio da configuração do aplicativo. Um aplicativo gerenciado com o EMS tem acesso a um conjunto mais amplo de recursos de proteção de dados e de aplicativos móveis que inclui:
 
 * [Logon único](https://docs.microsoft.com/azure/active-directory/active-directory-appssoaccess-whatis)  
-*   [Autenticação multifator](https://docs.microsoft.com/azure/active-directory/authentication/multi-factor-authentication)
+* [Autenticação multifator](https://docs.microsoft.com/azure/active-directory/authentication/multi-factor-authentication)
 * [Acesso condicional do aplicativo – permitir acesso se o aplicativo móvel contiver dados corporativos](app-based-conditional-access-intune.md)
 * [Isolar dados corporativos de dados pessoais dentro do mesmo aplicativo](app-protection-policy.md)
 * [Política de proteção de aplicativo (PIN, criptografia, salvar como, área de transferência etc.)](app-protection-policies.md)

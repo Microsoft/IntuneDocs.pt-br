@@ -7,7 +7,6 @@ ms.author: lanewsad
 manager: dougeby
 ms.date: 02/15/2018
 ms.topic: conceptual
-ms.prod: ''
 ms.service: microsoft-intune
 ms.localizationpriority: high
 ms.technology: ''
@@ -17,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 5f013ec1d40b9593e7eb8d317b5b63545c58f181
-ms.sourcegitcommit: 25e6aa3bfce58ce8d9f8c054bc338cc3dff4a78b
+ms.openlocfilehash: 4039c9e3ae53d8db8ee282f802cd86149b40021e
+ms.sourcegitcommit: 18be0ccc6e51073af32c44abeba421d69a5ae21a
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57399077"
+ms.lasthandoff: 09/04/2019
+ms.locfileid: "71239754"
 ---
 # <a name="what-to-expect-when-your-ios-app-is-managed-by-app-protection-policies"></a>O que esperar quando seu aplicativo iOS é gerenciado por políticas de proteção de aplicativo
 
@@ -30,7 +29,7 @@ ms.locfileid: "57399077"
 
  Este tópico descreve a experiência do usuário ao usar aplicativos com políticas de proteção de aplicativo aplicadas. As políticas do aplicativo são aplicadas somente quando aplicativos são usados no contexto de trabalho: por exemplo, para acessar aplicativos com uma conta corporativa ou acessar arquivos armazenados no OneDrive para Empresas.
 
-##  <a name="access-apps"></a>Acessar aplicativos
+## <a name="access-apps"></a>Acessar aplicativos
 
 Se o dispositivo **não estiver registrado no Intune**, o usuário será solicitado a reiniciar o aplicativo ao usá-lo pela primeira vez. Uma reinicialização é necessária para que essas políticas de proteção de aplicativo possam ser aplicadas ao aplicativo.
 
@@ -41,7 +40,7 @@ Se o dispositivo **não estiver registrado no Intune**, o usuário será solicit
 
 Em dispositivos **registrados para gerenciamento no Intune**, o usuário verá uma mensagem informando que seu aplicativo agora é gerenciado.
 
-##  <a name="use-apps-with-multi-identity-support"></a>Usar aplicativos com suporte a várias identidades
+## <a name="use-apps-with-multi-identity-support"></a>Usar aplicativos com suporte a várias identidades
 
 Aplicativos que dão suporte a várias identidades permitem usar contas diferentes (pessoal e corporativa) para acessar os mesmos aplicativos quando políticas de proteção de aplicativo são aplicadas somente quando os aplicativos são usados no contexto de trabalho.  
 
@@ -51,13 +50,13 @@ Por exemplo, o usuário receberá uma solicitação para fornecer o PIN ao acess
 
 As políticas de proteção do aplicativo são aplicadas apenas em contextos corporativos. Desse modo, o aplicativo pode se comportar de forma diferente, de acordo com o contexto – de trabalho ou pessoal.
 
-##  <a name="manage-user-accounts-on-the-device"></a>Gerenciar contas de usuário no dispositivo
+## <a name="manage-user-accounts-on-the-device"></a>Gerenciar contas de usuário no dispositivo
 
 Aplicativos de várias identidades permitem aos usuários adicionar várias contas.  O aplicativo do Intune permite apenas uma conta de gerenciamento.  Aplicativo do Intune não limita o número de contas não gerenciados.
 
 Quando há uma conta gerenciada em um aplicativo:
-*   Se um usuário tenta adicionar uma segunda conta gerenciada, ele recebe uma solicitação para selecionar qual conta gerenciada usar.  A outra conta é removida.
-*   Se o administrador de TI adicionar uma política à segunda conta existente, o usuário receberá uma solicitação para selecionar qual conta gerenciada usar.  A outra conta é removida.
+* Se um usuário tenta adicionar uma segunda conta gerenciada, ele recebe uma solicitação para selecionar qual conta gerenciada usar.  A outra conta é removida.
+* Se o administrador de TI adicionar uma política à segunda conta existente, o usuário receberá uma solicitação para selecionar qual conta gerenciada usar.  A outra conta é removida.
 
 Leia o cenário de exemplo a seguir para entender melhor como várias contas de usuário são tratadas.
 

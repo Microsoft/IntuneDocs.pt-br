@@ -5,9 +5,8 @@ keywords: ''
 author: lenewsad
 ms.author: lanewsad
 manager: dougeby
-ms.date: 10/28/2016
+ms.date: 05/07/2019
 ms.topic: conceptual
-ms.prod: ''
 ms.service: microsoft-intune
 ms.localizationpriority: high
 ms.technology: ''
@@ -17,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 368eeec3c47b53d00e9130f41d36f05976a66b8f
-ms.sourcegitcommit: 25e6aa3bfce58ce8d9f8c054bc338cc3dff4a78b
+ms.openlocfilehash: 8f069405d75b196c26c9c844e0d0a4bd57299199
+ms.sourcegitcommit: bd09decb754a832574d7f7375bad0186a22a15ab
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57394237"
+ms.lasthandoff: 07/19/2019
+ms.locfileid: "71239298"
 ---
 # <a name="how-your-ios-users-get-their-apps"></a>Como os usuários iOS podem obter aplicativos
 
@@ -36,7 +35,7 @@ Use estas informações para entender como e onde os usuários finais obtêm os 
 
 **Aplicativos gerenciados** – aplicativos que podem ser gerenciados por meio de políticas e que foram "encapsulados" pelo Intune ou foram criados com o SDK (Software Development Kit) de Aplicativo do Intune. Esses aplicativos podem ser gerenciados pelo Intune e políticas de proteção de aplicativo podem ser aplicadas a eles.
 
-**Aplicativos não gerenciados** – aplicativos que podem ser gerenciados por meio de políticas e que não foram encapsulados pelo Intune ou que não incorporam o SDK de Aplicativo do Intune. Políticas de aplicativo que não podem ser aplicadas a esses aplicativos.
+**Aplicativos não gerenciados** – aplicativos que os usuários podem baixar da Loja de aplicativos do iOS que não estão integrados com o SDK de aplicativos do Intune. O Intune não tem qualquer controle sobre a distribuição, gerenciamento ou apagamento seletivo desses aplicativos.  
 
 As restrições da Apple proíbem que aplicativos gerenciados e de linha de negócios da loja de aplicativos sejam listados no aplicativo do Portal da Empresa. Para solucionar esse problema, os blocos no aplicativo do Portal da Empresa para iOS encaminham os usuários a diferentes modos de exibição em um único local (o site do Portal da Empresa) para todos os seus aplicativos.
 
@@ -53,7 +52,7 @@ Os usuários registrados obtêm seus aplicativos tocando nos blocos a seguir na 
 
 Para obter informações sobre como adicionar aplicativos, confira [Como adicionar um aplicativo ao Microsoft Intune](apps-add.md).
 
-### <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Consulte também
 [Como os usuários do Android podem obter aplicativos](end-user-apps-android.md)
 
 [Como os usuários do Windows podem obter aplicativos](end-user-apps-windows.md)

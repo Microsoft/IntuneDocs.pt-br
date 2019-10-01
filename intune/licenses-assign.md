@@ -7,22 +7,21 @@ ms.author: erikje
 manager: dougeby
 ms.date: 10/31/2017
 ms.topic: conceptual
-ms.prod: ''
 ms.service: microsoft-intune
 ms.localizationpriority: high
 ms.technology: ''
 ms.assetid: bb4314ea-88b5-44d3-92ce-4c6aff0587a4
-ms.reviewer: amyro
+ms.reviewer: chmaguir
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic; get-started
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 14d5e01577100e0a66cfcf6ce935289a1dc26fab
-ms.sourcegitcommit: 25e6aa3bfce58ce8d9f8c054bc338cc3dff4a78b
+ms.openlocfilehash: dd8b35fbbff89ca7f4c259e1903f4c9f9a6e3b38
+ms.sourcegitcommit: d2989b9992d10d133573d9bc31479659fb7e242c
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57459893"
+ms.lasthandoff: 09/18/2019
+ms.locfileid: "71238379"
 ---
 # <a name="assign-licenses-to-users-so-they-can-enroll-devices-in-intune"></a>Atribuir licenças aos usuários para que possam registrar dispositivos no Intune
 
@@ -45,7 +44,7 @@ Use o [centro de administração do Microsoft 365](http://go.microsoft.com/fwlin
 4. Agora, a conta de usuário tem as permissões necessárias para usar o serviço e registrar os dispositivos no gerenciamento.
 
 > [!NOTE]
-> Os usuários serão exibidos no console de Administração somente após o registro de um dispositivo. Além disso, você pode selecionar um grupo de usuários para editar simultaneamente, selecionando adicionar ou substituir uma licença para todos os usuários selecionados.
+> Os usuários aparecerão no portal clássico do Intune somente depois que tiverem registrado um dispositivo usando o cliente de computador do Intune. Além disso, você pode selecionar um grupo de usuários para editar simultaneamente, selecionando adicionar ou substituir uma licença para todos os usuários selecionados.
 
 ## <a name="assign-an-intune-license-by-using-azure-active-directory"></a>Atribuir uma licença do Intune usando o Azure Active Directory
 
@@ -63,7 +62,7 @@ Quando você atribui uma licença do Intune para Educação, certifique-se de qu
 Veja esta [visão geral do School Data Sync](https://support.office.com/article/Overview-of-School-Data-Sync-and-Classroom-f3d1147b-4ade-4905-8518-508e729f2e91) para saber mais sobre o SDS.
 
 ## <a name="how-user-and-device-licenses-affect-access-to-services"></a>Como as licenças de usuário e dispositivo afetam o acesso a serviços
-* Cada **usuário** ao qual você atribui uma licença de software de usuário pode acessar e usar os serviços online e o software relacionado (incluindo o software do System Center) para gerenciar aplicativos e até 15 dispositivos.
+* Cada **usuário** ao qual você atribui uma licença de software de usuário pode acessar e usar os serviços online e o software relacionado (incluindo o software do System Center) para gerenciar aplicativos e até 15 dispositivos MDM. O agente de computador do Intune permite 5 máquinas virtuais e uma máquina virtual por licença de usuário.
 * Você pode comprar licenças para qualquer dispositivo separadamente das licenças de usuário. As licenças de dispositivos não precisam ser atribuídas aos dispositivos. Cada dispositivo que acessa e usa os serviços online e o software relacionado (incluindo o software System Center) deve ter uma licença de dispositivo.
 * Se um dispositivo for usado por mais de um usuário, cada um deles precisará de uma licença de software de dispositivo ou todos os usuários precisarão de uma licença de software de usuário.
 
