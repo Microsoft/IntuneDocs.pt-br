@@ -1,0 +1,67 @@
+- name: Ações remotas
+  href: index.yml
+- name: Visão geral
+  expanded: true
+  items:
+    - name: Visão geral do gerenciamento de dispositivo
+      href: device-management.md
+- name: Guias de instruções
+  items:
+    - name: Bloqueios e senhas
+      items:
+        - name: Bloquear dispositivo
+          href: device-remote-lock.md
+        - name: Redefinir senha
+          href: device-passcode-reset.md
+        - name: Redefinir o PIN do Windows 10
+          href: device-windows-pin-reset.md
+    - name: Remover e reiniciar
+      items:
+        - name: Remover dispositivos
+          href: devices-wipe.md
+        - name: Gerenciar o Novo Início do Windows
+          href: device-fresh-start.md
+        - name: Reiniciar dispositivo
+          href: device-restart.md
+    - name: Ações do dispositivo da Apple
+      items:
+        - name: Localizar um dispositivo iOS perdido
+          href: device-locate.md
+        - name: Habilitar o modo perdido do iOS
+          href: device-lost-mode.md
+        - name: Ativar o modo supervisionado do iOS
+          href: device-supervised-mode.md
+        - name: Apagar o dispositivo macOS
+          href: device-erase.md
+        - name: Ignorar bloqueio de ativação
+          href: device-activation-lock-bypass.md
+    - name: Ações do usuário
+      items:
+        - name: Desconectar o usuário atual
+          href: device-logout-user.md
+        - name: Remover usuário
+          href: device-remove-user.md
+        - name: Localizar usuário primário
+          href: find-primary-user.md
+    - name: Outras ações
+      items:
+        - name: Renomear dispositivo
+          href: device-rename.md
+        - name: Notificações de envio
+          href: custom-notifications.md
+        - name: Dispositivos móveis com controle remoto
+          href: teamviewer-support.md
+        - name: Sincronizar dispositivo
+          href: device-sync.md
+        - name: Examinar o inventário do dispositivo
+          href: device-inventory.md
+    - name: Solução de problemas
+      items:
+        - name: Solucionar problemas de ações do dispositivo
+          href: troubleshoot-device-actions.md
+- name: Recursos
+  items:
+    - name: Guias de implantação de cenário
+      items:
+        - name: Reduzir os custos de suporte técnico
+          href: password-reset.md

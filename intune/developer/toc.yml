@@ -1,0 +1,79 @@
+- name: Orientação ao desenvolvedor
+  href: index.yml
+- name: Guias de instruções
+  expanded: true
+  items:
+    - name: Proteger aplicativos com o SDK do Aplicativo do Intune
+      href: app-sdk.md
+      items:
+        - name: Introdução ao SDK do Aplicativo do Intune
+          href: app-sdk-get-started.md
+        - name: Preparar os aplicativos LOB para a proteção de aplicativo
+          href: apps-prepare-mobile-application-management.md
+        - name: Ferramenta de Disposição do Aplicativo para iOS
+          href: app-wrapper-prepare-ios.md
+        - name: SDK do Aplicativo do Intune para iOS
+          href: app-sdk-ios.md
+        - name: Ferramenta de Disposição do Aplicativo para Android
+          href: app-wrapper-prepare-android.md
+          displayName: dex
+        - name: SDK do Aplicativo do Intune para Android
+          href: app-sdk-android.md
+          items:
+            - name: Guia de teste do SDK de Aplicativo do Intune para Android
+              href: app-sdk-android-testing-guide.md
+        - name: Associações do Xamarin do SDK de Aplicativo do Intune
+          href: app-sdk-xamarin.md
+    - name: Usar o Intune Data Warehouse
+      href: reports-nav-create-intune-reports.md
+      items:
+        - name: Log de alterações para o data warehouse
+          href: reports-changelog.md
+        - name: Conectar-se ao Data Warehouse com o Power BI
+          href: reports-proc-get-a-link-powerbi.md
+        - name: Criar um relatório do feed OData com o Power BI
+          href: reports-proc-create-with-odata.md
+    - name: Gerar relatórios usando a API do Intune Data Warehouse
+      href: reports-nav-intune-data-warehouse.md
+      items:
+        - name: Obter dados da API do Data Warehouse com um cliente REST
+          href: reports-proc-data-rest.md
+        - name: Ponto de extremidade de API do Data Warehouse
+          href: reports-api-url.md
+        - name: Autenticação somente no aplicativo do Data Warehouse
+          href: data-warehouse-app-only-auth.md
+        - name: Modelo de dados do Data Warehouse
+          href: reports-ref-data-model.md
+          items:
+            - name: Coleções de data warehouse
+              href: intune-data-warehouse-collections.md
+            - name: Coleções de data warehouse (beta)
+              items:
+                - name: Representação do tempo de vida do usuário no Intune Data Warehouse
+                  href: reports-ref-user-timeline.md
+                - name: Referência para entidades de aplicativo
+                  href: reports-ref-application.md
+                - name: Referência para a entidade de data
+                  href: reports-ref-date.md
+                - name: Referência para entidades de dispositivos
+                  href: reports-ref-devices.md
+                - name: Referência da entidade de extensão de gerenciamento do Intune
+                  href: reports-ref-intunemanagementextension.md
+                - name: Referência para entidades de MAM (gerenciamento de aplicativo móvel)
+                  href: reports-ref-mobile-app-management.md
+                - name: Referência para entidades de política
+                  href: reports-ref-policy.md
+                - name: Referência da entidade de associação de dispositivos de usuários
+                  href: reports-ref-user-device.md
+                - name: Referência para entidade de usuário
+                  href: reports-ref-user.md
+        - name: Mover os dados da conta do Intune Data Warehouse
+          href: data-warehouse-account-move.md
+    - name: Acessar as APIs do Intune no Microsoft Graph
+      items:
+        - name: Usar o Azure AD para acessar APIs do Intune no Microsoft Graph
+          href: intune-graph-apis.md
+        - name: Referência da API do Intune
+          href: 'https://developer.microsoft.com/graph/docs/api-reference/beta/resources/intune_graph_overview'
+        - name: APIs do Graph usadas para configurar dispositivos
+          href: graph-apis-used-by-intune-device-configuration-windows.md

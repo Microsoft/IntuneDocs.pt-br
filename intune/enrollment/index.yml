@@ -1,0 +1,111 @@
+### YamlMime:Landing
+title: Registrar dispositivos no Microsoft Intune
+summary: Há vários métodos de registrar os dispositivos da sua força de trabalho. Cada método depende da propriedade do dispositivo (pessoal ou corporativo), tipo de dispositivo (iOS, Windows, Android) e requisitos de gerenciamento (redefinições, afinidade, bloqueio).
+metadata:
+  title: Registro no Microsoft Intune
+  description: Página de aterrissagem para registro no Microsoft Intune
+  services: service
+  ms.service: microsoft-intune
+  ms.subservice: enrollment
+  ms.topic: landing-page
+  author: dougeby
+  ms.author: dougeby
+  manager: dougeby
+  ms.date: 08/07/2019
+  ms.openlocfilehash: a32d8c309e1008f28816fffdd7b101537af7947a
+  ms.sourcegitcommit: 88b6e6d70f5fa15708e640f6e20b97a442ef07c5
+  ms.translationtype: HT
+  ms.contentlocale: pt-BR
+  ms.lasthandoff: 10/02/2019
+  ms.locfileid: "71728798"
+landingContent:
+- title: Saiba mais sobre o registro
+  linkLists:
+  - linkListType: overview
+    links:
+    - text: O que é o registro de dispositivo?
+      url: device-enrollment.md
+    - text: Recursos de gerenciamento de dispositivos registrados
+      url: device-management-capabilities.md
+    - text: Opções de registro
+      url: enrollment-options.md
+- title: Registro do Windows
+  linkLists:
+  - linkListType: overview
+    links:
+    - text: Sobre o registro do Windows
+      url: windows-enrollment-methods.md
+    - text: Funcionalidades do método de registro
+      url: enrollment-method-capab.md
+  - linkListType: quickstart
+    links:
+    - text: Configurar o registro automático para dispositivos Windows 10
+      url: quickstart-setup-auto-enrollment.md
+    - text: Registrar seu dispositivo Windows 10
+      url: quickstart-enroll-windows-device.md
+  - linkListType: tutorial
+    links:
+    - text: Usar o Autopilot para registrar os dispositivos Windows
+      url: tutorial-use-autopilot-enroll-devices.md
+  - linkListType: how-to-guide
+    links:
+    - text: Configurar o registro do Windows
+      url: windows-enroll.md
+    - text: Configurar o registro em massa para dispositivos Windows
+      url: windows-bulk-enroll.md
+- title: Registro do Android
+  linkLists:
+  - linkListType: overview
+    links:
+    - text: Sobre o registro do Android
+      url: android-enroll.md
+  - linkListType: how-to-guide
+    links:
+    - text: Conectar sua conta do Intune à sua conta do gerenciada do Google Play
+      url: connect-intune-android-enterprise.md
+    - text: Configurar o registro de dispositivos de perfil de trabalho Android Enterprise
+      url: android-work-profile-enroll.md
+    - text: Configurar o registro de dispositivos de perfil de trabalho Android Enterprise
+      url: android-work-profile-enroll.md
+    - text: Configurar o registro de dispositivos dedicados Android Enterprise
+      url: android-kiosk-enroll.md
+    - text: Configurar registro do Intune de dispositivos Android Enterprise totalmente gerenciados (versão prévia)
+      url: android-fully-managed-enroll.md
+- title: Registro do iOS
+  linkLists:
+  - linkListType: overview
+    links:
+    - text: Sobre o registro do iOS
+      url: ios-enroll.md
+  - linkListType: tutorial
+    links:
+    - text: Usar os recursos de Registro de dispositivo corporativo da Apple para registrar dispositivos iOS
+      url: tutorial-use-device-enrollment-program-enroll-ios.md
+  - linkListType: how-to-guide
+    links:
+    - text: Configurar o registro do iOS
+      url: ios-enroll.md
+    - text: Registrar automaticamente dispositivos iOS com o Programa de registro de dispositivos da Apple
+      url: device-enrollment-program-enroll-ios.md
+    - text: Configurar o registro de dispositivo iOS com o Apple School Manager
+      url: apple-school-manager-set-up-ios.md
+    - text: Configurar o registro de dispositivo iOS com o Apple Configurator
+      url: apple-configurator-enroll-ios.md
+- title: Registro do macOS
+  linkLists:
+  - linkListType: overview
+    links:
+    - text: Sobre registro do macOS
+      url: macos-enroll.md
+  - linkListType: tutorial
+    links:
+    - text: Usar os recursos de Registro de dispositivo corporativo da Apple para registrar dispositivos iOS
+      url: tutorial-use-device-enrollment-program-enroll-ios.md
+  - linkListType: how-to-guide
+    links:
+    - text: Configurar registro do macOS
+      url: macos-enroll.md
+    - text: Registre automaticamente dispositivos macOS no Programa de registro de dispositivos ou no Apple School Manager
+      url: device-enrollment-program-enroll-macos.md
+    - text: Configurar o registro de dispositivo iOS com o Apple Configurator
+      url: apple-configurator-enroll-ios.md
