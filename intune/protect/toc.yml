@@ -1,0 +1,269 @@
+- name: Proteger dados e dispositivos com o Intune
+  href: index.yml
+- name: Visão geral
+  expanded: true
+  items:
+    - name: Visão geral da proteção do dispositivo
+      href: device-protect.md
+      displayName: compliant; noncompliant; mfa
+- name: Guias de início rápido
+  items:
+    - name: Criar uma política de conformidade do dispositivo
+      href: quickstart-set-password-length-android.md
+    - name: Enviar notificações para dispositivos não compatíveis
+      href: quickstart-send-notification.md
+- name: Tutoriais
+  items:
+    - name: Proteger o email em dispositivos gerenciados
+      href: tutorial-protect-email-on-enrolled-devices.md
+    - name: Proteger o email em dispositivos não gerenciados
+      href: tutorial-protect-email-on-unmanaged-devices.md
+- name: Conceitos
+  items:
+    - name: Dados pessoais e privacidade
+      href: privacy-personal-data.md
+      items:
+        - name: Coleta de dados
+          href: privacy-data-collect.md
+        - name: Processamento e armazenamento de dados
+          href: privacy-data-store-process.md
+        - name: Compartilhamento e segurança de dados
+          href: privacy-data-secure-share.md
+          items:
+            - name: Dados enviados pela Apple ao Intune
+              href: data-apple-sends-to-intune.md
+            - name: Dados enviados pela Google ao Intune
+              href: data-google-sends-to-intune.md
+            - name: Dados enviados pelo Intune à Apple
+              href: data-intune-sends-to-apple.md
+            - name: Dados enviados pelo Intune à Google
+              href: data-intune-sends-to-google.md
+            - name: Informações compartilhadas do Jamf Pro com o Intune
+              href: data-jamf-sends-to-intune.md
+        - name: Exibir e corrigir dados pessoais
+          href: privacy-data-view-correct.md
+        - name: 'Auditar, exportar, excluir'
+          href: privacy-data-audit-export-delete.md
+        - name: Windows Information Protection
+          href: windows-information-protection-configure.md
+- name: Guias de instruções
+  items:
+    - name: Definir regras em dispositivos para permitir o acesso a recursos
+      items:
+        - name: Visão geral de conformidade
+          href: device-compliance-get-started.md
+        - name: Criar uma política
+          href: create-compliance-policy.md
+        - name: Conformidade baseada na localização
+          href: use-network-locations.md
+        - name: Ações de não conformidade
+          href: actions-for-noncompliance.md
+        - name: Monitorar a conformidade do dispositivo
+          href: compliance-policy-monitor.md
+    - name: Criptografar dispositivos
+      items:
+        - name: Criptografar dispositivos
+          href: encrypt-devices.md
+        - name: Monitorar a criptografia do dispositivo
+          href: encryption-monitor.md
+    - name: Acesso condicional
+      items:
+        - name: Visão geral do acesso condicional
+          href: conditional-access.md
+          displayName: ca
+        - name: Maneiras comuns de usar o acesso condicional
+          href: conditional-access-intune-common-ways-use.md
+        - name: Instalar o conector local do Exchange
+          href: exchange-connector-install.md
+        - name: Criar e atribuir a política de acesso condicional
+          href: conditional-access-exchange-create.md
+        - name: Política de acesso condicional baseada em dispositivo
+          href: create-conditional-access-intune.md
+        - name: Reatribuir políticas de acesso condicional no Portal Clássico do Intune
+          href: conditional-access-intune-reassign.md
+        - name: Acesso condicional baseado no aplicativo
+          href: app-based-conditional-access-intune.md
+        - name: Configurar o acesso condicional baseado no aplicativo
+          href: app-based-conditional-access-intune-create.md
+        - name: ADAL e Intune
+          href: app-modern-authentication-block.md
+        - name: Integrar o Jamf Pro ao Intune para fins de conformidade
+          href: conditional-access-integrate-jamf.md
+        - name: Impor a conformidade em Macs gerenciados com Jamf Pro
+          href: conditional-access-assign-jamf.md
+    - name: Proteção contra ameaças
+      items:
+        - name: Defesa contra Ameaças Móveis
+          href: mobile-threat-defense.md
+          items:
+            - name: Configurar o Intune para MTD
+              items:
+                - name: Adicionar aplicativos MTD
+                  href: mtd-apps-ios-app-configuration-policy-add-assign.md
+                - name: Criar uma política de conformidade de dispositivo MTD
+                  href: mtd-device-compliance-policy-create.md
+                - name: Habilitar MTD no Intune
+                  href: mtd-connector-enable.md
+            - name: Aplicativos MTD
+              items:
+                - name: Configurar o Better Mobile
+                  href: better-mobile-threat-defense-connector.md
+                  items:
+                    - name: Integração entre o Better Mobile e o Intune
+                      href: better-mobile-mtd-connector-integration.md
+                      displayName: sso
+                - name: Configurar o Check Point
+                  href: checkpoint-sandblast-mobile-mobile-threat-defense-connector.md
+                  items:
+                    - name: Integração entre o Check Point e o Intune
+                      href: checkpoint-sandblast-mobile-mtd-connector-integration.md
+                - name: Configurar o Lookout
+                  href: lookout-mobile-threat-defense-connector.md
+                  items:
+                    - name: Integração entre o Lookout e o Intune
+                      href: lookout-mtd-connector-integration.md
+                - name: Configurar o Pradeo
+                  href: pradeo-mobile-threat-defense-connector.md
+                  items:
+                    - name: Integração entre o Pradeo e o Intune
+                      href: pradeo-mtd-connector-integration.md
+                - name: Configurar o Sophos Mobile
+                  href: sophos-mtd-connector.md
+                  items:
+                    - name: Integração do Sophos Mobile e Intune
+                      href: sophos-mtd-connector-integration.md
+                - name: Configurar o Symantec
+                  href: skycure-mobile-threat-defense-connector.md
+                  items:
+                    - name: Integração de Symantec e Intune
+                      href: skycure-mtd-connector-integration.md
+                - name: Configurar Wandera
+                  href: wandera-mtd-connector.md
+                  items:
+                    - name: Integração entre o Wandera e o Intune
+                      href: wandera-mtd-connector-integration.md
+                - name: Configurar o Zimperium
+                  href: zimperium-mobile-threat-defense-connector.md
+                  items:
+                    - name: Integração entre o Zimperium e o Intune
+                      href: zimperium-mtd-connector-integration.md
+        - name: Microsoft Defender
+          items:
+            - name: ATP do Microsoft Defender
+              href: advanced-threat-protection.md
+            - name: Tarefas de segurança
+              href: atp-manage-vulnerabilities.md
+    - name: Linhas de base de segurança
+      items:
+        - name: Linhas de base de segurança
+          href: security-baselines.md
+        - name: Monitorar as linhas de base
+          href: security-baselines-monitor.md
+    - name: Endpoint Protection
+      href: endpoint-protection-configure.md
+    - name: Controle de acesso à rede
+      href: network-access-control-integrate.md
+    - name: Windows Hello
+      items:
+        - name: Windows Hello
+          href: windows-hello.md
+        - name: Proteção de identidade
+          href: identity-protection-configure.md
+    - name: Certificados
+      items:
+        - name: Usar certificado para autenticação
+          href: certificates-configure.md
+        - name: SCEP
+          items:
+            - name: Infraestrutura do SCEP
+              href: certificates-scep-configure.md
+              displayName: ksp
+            - name: Perfis de certificado SCEP
+              href: certificates-profile-scep.md
+            - name: Usar a autoridade de certificação de terceiros com o protocolo SCEP
+              href: certificate-authority-add-scep-overview.md
+        - name: PKCS
+          items:
+            - name: PKCS
+              href: certficates-pfx-configure.md
+              displayName: ksp
+            - name: PKCS importado
+              href: certificates-imported-pfx-configure.md
+            - name: Usar S/MIME para criptografar o email
+              href: certificates-s-mime-encryption-sign.md
+              displayName: csr
+        - name: Usar a PKI DigiCert
+          href: certificates-digicert-configure.md
+          displayName: ca; pkcs; pki; ra; registration authority
+        - name: Remover certificados SCEP ou PKCS
+          href: remove-certificates.md
+    - name: Atualizações de software
+      items:
+        - name: Atualizações do Windows
+          items:
+            - name: Configurações do Windows Update para Empresas
+              href: windows-update-for-business-configure.md
+            - name: Relatórios de conformidade do Windows Update
+              href: windows-update-compliance-reports.md
+        - name: Políticas de atualização do iOS
+          href: software-updates-ios.md
+    - name: Solucionar problemas
+      items:
+        - name: Solucionar problemas de políticas e perfis
+          href: troubleshoot-policies-in-microsoft-intune.md
+        - name: Solucionar problemas de acesso condicional
+          href: troubleshoot-conditional-access.md
+        - name: Solucionar problemas do Certificate Connector
+          href: troubleshoot-certificate-connector-events.md
+        - name: Solucionar problemas no Exchange Connector
+          items:
+            - name: Solucionar problemas no Exchange Connector
+              href: troubleshoot-exchange-connector.md
+            - name: Problemas comuns
+              href: troubleshoot-exchange-connector-common-problems.md
+            - name: Erros comuns
+              href: troubleshoot-exchange-connector-common-errors.md
+        - name: Solucionar problemas de políticas do BitLocker
+          href: troubleshoot-bitlocker-policies.md
+        - name: Solucionar problemas de integração do Jamf Pro
+          href: troubleshoot-jamf.md
+- name: Referência
+  items:
+    - name: API para adicionar autoridade de certificação de terceiros
+      href: scep-libraries-apis.md
+    - name: Configurações de política de conformidade
+      items:
+        - name: Linhas de base de segurança
+          items:
+            - name: Configurações de linha de base do Windows 10 MDM
+              href: security-baseline-settings-mdm-all.md
+            - name: Configurações de linha de base do Microsoft Defender ATP
+              href: security-baseline-settings-defender-atp.md
+        - name: Configurações de atualização do Windows
+          href: windows-update-settings.md
+        - name: Configurações da política de conformidade – Android
+          href: compliance-policy-create-android.md
+        - name: Configurações da política de conformidade – Android Enterprise
+          href: compliance-policy-create-android-for-work.md
+        - name: Configurações da política de conformidade – iOS
+          href: compliance-policy-create-ios.md
+        - name: Configurações da política de conformidade – macOS
+          href: compliance-policy-create-mac-os.md
+        - name: Configurações da política de conformidade – Windows 10
+          href: compliance-policy-create-windows.md
+        - name: Configurações da política de conformidade – Windows 8.1
+          href: compliance-policy-create-windows-8-1.md
+        - name: Configurações da política de conformidade – Windows Phone 8.1
+          href: compliance-policy-create-windows-8-1.md
+    - name: Códigos de erros e descrições
+      items:
+        - name: Erros de atualização de software
+          href: software-update-agent-error-codes.md
+- name: Guias de implantação de cenário
+  items:
+    - name: Proteger o Exchange Online
+      href: exchange-online-protect.md
+    - name: Impedir o acesso não autorizado
+      href: data-outside-protect.md
+    - name: Impedir vazamento de dados em dispositivos não gerenciados
+      href: data-leak-prevention.md
