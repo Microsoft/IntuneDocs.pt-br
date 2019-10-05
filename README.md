@@ -1,10 +1,10 @@
 ---
-ms.openlocfilehash: 8d76ff182ea4402b6a4cd3242b15288d8bea16b9
-ms.sourcegitcommit: 1494ff4b33c13a87f20e0f3315da79a3567db96e
+ms.openlocfilehash: f87848b43e040681085f3e89b063d5006f904464
+ms.sourcegitcommit: 88b6e6d70f5fa15708e640f6e20b97a442ef07c5
 ms.translationtype: MTE75
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/20/2019
-ms.locfileid: "71166474"
+ms.lasthandoff: 10/02/2019
+ms.locfileid: "71720921"
 ---
 ## <a name="microsoft-open-source-code-of-conduct"></a>Código de Conduta de Software Livre da Microsoft
 
@@ -23,7 +23,7 @@ Você encontrou um dos repositórios GitHub que hospeda a fonte de conteúdo pub
 * **Usar seu navegador**: há duas opções: 
 
     **Opção 1: edite diretamente de docs.microsoft.com**  
-    1. Vá para o tópico, como [https://docs.microsoft.com/intune/troubleshoot-policies-in-microsoft-intune](troubleshoot-policies-in-microsoft-intune.md). 
+    1. Vá para o tópico, como [https://docs.microsoft.com/intune/troubleshoot-policies-in-microsoft-intune](intune/protect/troubleshoot-policies-in-microsoft-intune.md). 
     2. Selecione **Editar** (parte superior direita). Isso mostra o arquivo markdown no repositório do GitHub.
     3. Selecione o ícone de lápis. Quando você focaliza o ícone de lápis, vê a dica de ferramenta **Editar este arquivo**. 
     4. Faça as alterações e, em seguida, **confirme**-as. 
