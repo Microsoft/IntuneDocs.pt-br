@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure; get-started
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 1a6f0786c5b11e30bf86b237bc1f5c05a55010d5
-ms.sourcegitcommit: 88b6e6d70f5fa15708e640f6e20b97a442ef07c5
+ms.openlocfilehash: 571974e1736fb78ae633c02fcfd6e6233056379b
+ms.sourcegitcommit: 78f9750712c254d8b123ef15b74f30ca999aa128
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/02/2019
-ms.locfileid: "71727734"
+ms.lasthandoff: 10/03/2019
+ms.locfileid: "71920144"
 ---
 # <a name="whats-new-in-microsoft-intune"></a>Novidades do Microsoft Intune
 
@@ -57,7 +57,7 @@ Conheça as novidades de cada semana do Microsoft Intune. Você também pode enc
 
 ## <a name="week-of-september-23-2019"></a>Semana de 23 de setembro de 2019
 
-#### <a name="ios-user-enrollment-in-preview----4817900---"></a>Registro de Usuário do iOS em versão prévia <!-- 4817900 -->
+#### <a name="ios-user-enrollment-in-preview----4817900---"></a>Registro de usuário do iOS em versão prévia <!-- 4817900 -->
 O iOS versão 13.1 da Apple inclui o Registro de Usuário, uma nova forma de gerenciamento leve para dispositivos iOS. Ele pode ser usado no lugar do Registro de Dispositivo ou do Registro de Dispositivo Automatizado (antigamente chamado Programa de registro de dispositivos) para dispositivos de propriedade pessoal. A versão prévia do Intune dá suporte a esse conjunto de recursos, permitindo que você:
 
 - Direcionar o Registro de Usuário para grupos de usuários.
@@ -175,7 +175,7 @@ Para ver os recursos atuais que você pode configurar, acesse [Configurações d
 Aplica-se a:
 - macOS 10.15 e mais recente
 
-#### <a name="use-itunes-and-apps-in-the-itunes-app-store-url-when-showing-or-hiding-apps-on-ios-supervised-devices----4928474-----"></a>Use "iTunes" e "apps" na URL da loja de aplicativos do iTunes ao mostrar ou ocultar aplicativos em dispositivos supervisionados do iOS <!-- 4928474   --> 
+#### <a name="use-itunes-and-apps-in-the-itunes-app-store-url-when-showing-or-hiding-apps-on-ios-supervised-devices----4928474-----"></a>Use "iTunes" e "aplicativos" na URL da loja de aplicativos do iTunes ao mostrar ou ocultar aplicativos em dispositivos supervisionados do iOS <!-- 4928474   --> 
 No Intune, você pode criar políticas para mostrar ou ocultar aplicativos em seus dispositivos iOS supervisionados (**Configuração do dispositivo** > **Perfis** > **Criar perfil** > **iOS** para plataforma > **Restrições de dispositivo** para tipo de perfil > **Mostra ou ocultar aplicativos**). 
 
 Você pode inserir o URL da loja de aplicativos do iTunes, como `https://itunes.apple.com/us/app/work-folders/id950878067?mt=8`. Nesta atualização, `apps` e `itunes` podem ser usados no URL, como:
@@ -235,7 +235,7 @@ Adicionamos o seguinte suporte para dispositivos Android totalmente gerenciados:
 - Os aplicativos do sistema são compatíveis com dispositivos Android Enterprise. No Intune, adicione um aplicativo do sistema Android Enterprise selecionando **Aplicativos clientes** > **Aplicativos** > **Adicionar**. Na lista **Tipo de aplicativo**, selecione **Aplicativo do sistema Android Enterprise**. Para saber mais, confira [Adicionar aplicativos do sistema Android Enterprise ao Microsoft Intune](../apps/apps-ae-system.md). <!-- 4062195 -->
 - Em **Conformidade do Dispositivo** > **Android Enterprise** > **Proprietário do Dispositivo**, você pode criar uma política de conformidade que defina o nível de atestado do Google SafetyNet.   <!-- 4631425 -->
 - Nos dispositivos totalmente gerenciados do Android Enterprise, os provedores de defesa contra ameaças móveis são compatíveis. Em **Conformidade do dispositivo** > **Android Enterprise** > **Proprietário do Dispositivo**, você pode escolher um nível aceitável de ameaça. <!-- 4631440 --> [Configurações do Android Enterprise para marcar dispositivos como em conformidade ou não em conformidade usando o Intune](../protect/compliance-policy-create-android-for-work.md#device-owner) mostra as configurações atuais.
-- Nos dispositivos totalmente gerenciados do Android Enterprise, o aplicativo Microsoft Launcher agora pode ser configurado por meio de políticas de proteção de aplicativos para permitir uma experiência padronizada ao usuário final no dispositivo totalmente gerenciado. O aplicativo Microsoft Launcher pode ser usado para personalizar seu dispositivo Android. Usando o aplicativo com uma conta da Microsoft ou uma conta corporativa/de estudante, você pode acessar sua agenda, documentos e atividades recentes em seu feed personalizado. <!-- 5334044 -->
+- Nos dispositivos totalmente gerenciados do Android Enterprise, o aplicativo Microsoft Launcher agora pode ser definido por meio de políticas de configuração de aplicativos para permitir uma experiência padronizada ao usuário final no dispositivo totalmente gerenciado. O aplicativo Microsoft Launcher pode ser usado para personalizar seu dispositivo Android. Usando o aplicativo com uma conta da Microsoft ou uma conta corporativa/de estudante, você pode acessar sua agenda, documentos e atividades recentes em seu feed personalizado. <!-- 5334044 -->
 
 Com essa atualização, temos o prazer de anunciar que o suporte do Intune ao Android Enterprise Totalmente Gerenciado está agora disponível.
 
@@ -1280,7 +1280,7 @@ Aplica-se a:
 - macOS
 
 #### <a name="intune-conditional-access-ui-update------2432313-----"></a>Atualização da interface do usuário de Acesso Condicional do Intune   <!-- 2432313   -->
-Fizemos melhorias na interface do usuário para Acesso Condicional no console do Intune. Entre elas estão:
+Fizemos melhorias na interface do usuário para Acesso Condicional no console do Intune. Como por exemplo:
 - Substituição da folha *Acesso Condicional* do Intune pela folha do Azure Active Directory. Isso garante que você terá acesso à variedade completa de definições e configurações de [Acesso Condicional](../protect/conditional-access.md) (que continua sendo uma tecnologia do Azure AD) no console do Intune. 
 - Renomeamos a folha *Acesso local* para *Acesso ao Exchange* e relocamos a configuração *Conector de serviço do Exchange* para essa folha renomeada.  Essa alteração consolida o local em que você [configura e monitora os detalhes relacionados ao Exchange Online e localmente](../protect/exchange-connector-install.md).  
 

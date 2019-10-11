@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 0cf62d3f16951170a826528e94fcb50691be9fc7
-ms.sourcegitcommit: 88b6e6d70f5fa15708e640f6e20b97a442ef07c5
+ms.openlocfilehash: dfd651550cd0959efc7b1dddc2a018d5346baa8c
+ms.sourcegitcommit: 29b1113dc04534c4c87c33c773c5a0e24266e042
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/02/2019
-ms.locfileid: "71726642"
+ms.lasthandoff: 10/07/2019
+ms.locfileid: "71999374"
 ---
 # <a name="deploy-hybrid-azure-ad-joined-devices-by-using-intune-and-windows-autopilot"></a>Implante dispositivos ingressados no Azure AD híbrido usando o Intune e o Windows Autopilot
 Você pode usar o Intune e o Windows Autopilot para configurar dispositivos ingressados no Azure Active Directory (Azure AD) híbrido. Para isso, siga as etapas neste artigo.
@@ -184,7 +184,7 @@ Os perfis de implantação do Autopilot são usados para configurar os dispositi
 
 1. No [Intune](https://aka.ms/intuneportal), selecione **Registro de dispositivo** > **Registro do Windows** > **Perfis de Implantação** > **Criar Perfil**.
 2. Na página **Básico**, digite um **Nome** e uma **Descrição** opcional.
-3. Se quiser que todos os dispositivos nos grupos atribuídos sejam convertidos automaticamente no Autopilot, defina **Converter todos os dispositivos direcionados em Autopilot** como **Sim**. Todos os dispositivos de propriedade corporativa que não são Autopilot em grupos atribuídos serão registrados no serviço de implantação do Autopilot. Dispositivos de propriedade pessoal não serão convertidos para o Autopilot. Aguarde 48 horas para que o registro seja processado. Quando o registro do dispositivo é cancelado e redefinido, o Autopilot o registra. Após um dispositivo ser registrado dessa maneira, desabilitar essa opção ou remover a atribuição de perfis não removerá o dispositivo do serviço de implantação do Autopilot. Em vez disso, é necessário [remover o dispositivo diretamente](enrollment-autopilot.md#delete-autopilot-devices).
+3. Se quiser que todos os dispositivos nos grupos atribuídos sejam convertidos automaticamente no Autopilot, defina **Converter todos os dispositivos direcionados em Autopilot** como **Sim**. Todos os dispositivos de propriedade corporativa que não sejam Autopilot em grupos atribuídos serão registrados com o serviço de implantação do Autopilot. Os dispositivos de propriedade pessoal não serão convertidos para o Autopilot. Aguarde 48 horas para que o registro seja processado. Quando o registro do dispositivo é cancelado e redefinido, o Autopilot o registra. Após um dispositivo ser registrado dessa maneira, desabilitar essa opção ou remover a atribuição de perfis não removerá o dispositivo do serviço de implantação do Autopilot. Em vez disso, é necessário [remover o dispositivo diretamente](enrollment-autopilot.md#delete-autopilot-devices).
 4. Selecione **Avançar**.
 5. Na página **OOBE (Experiência de configuração inicial pelo usuário)** , para o **Modo de implantação**, selecione **Orientado pelo usuário**.
 6. Na caixa **Ingressar no Azure AD como**, escolha **Ingressado no Azure AD híbrido**.
@@ -214,6 +214,8 @@ Levará cerca de 15 minutos para que o status do perfil de dispositivo mude de *
    - **Plataforma**: Selecione **Windows 10 e posterior**.
    - **Tipo de perfil**: Selecione **Ingresso no Domínio (Versão Prévia)** .
 1. Selecione **Configurações** e forneça um **Prefixo de nome do computador**, **Nome de domínio** e **Unidade organizacional** (opcional) no [formato DN](https://docs.microsoft.com/windows/desktop/ad/object-names-and-identities#distinguished-name). 
+   > [!NOTE]
+   > Não use aspas em volta do valor na **Unidade organizacional**.
 1. Selecione **OK** > **Criar**.  
     O perfil é criado e exibido na lista.
 1. Para atribuir o perfil, siga as etapas descritas em [Atribuir um perfil de dispositivo](../configuration/device-profile-assign.md#assign-a-device-profile) e atribua o perfil para o mesmo grupo usado na etapa [Criar um grupo de dispositivos](windows-autopilot-hybrid.md#create-a-device-group)

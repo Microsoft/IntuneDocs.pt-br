@@ -1,7 +1,7 @@
 ---
 title: Como monitorar as políticas de proteção de aplicativo
 titleSuffix: Microsoft Intune
-description: Esse tópico descreve como monitorar o status de conformidade das políticas de gerenciamento de aplicativo móvel no Intune.
+description: Este tópico descreve como monitorar políticas de proteção de aplicativo no Intune.
 keywords: ''
 author: Erikre
 ms.author: erikre
@@ -12,24 +12,24 @@ ms.service: microsoft-intune
 ms.localizationpriority: high
 ms.technology: ''
 ms.assetid: 9b0afb7d-cd4e-4fc6-83e2-3fc0da461d02
-ms.reviewer: joglocke
+ms.reviewer: aanavath
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: fad554ace3b7c8c279161f149bc06854dfaca93d
-ms.sourcegitcommit: 88b6e6d70f5fa15708e640f6e20b97a442ef07c5
+ms.openlocfilehash: 0b4ab3369f241c9f33d4e0bddfd0dcf98c8ab915
+ms.sourcegitcommit: fc356fd69beaeb3d69982b47e2bdffb6f7127f8c
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/02/2019
-ms.locfileid: "71725511"
+ms.lasthandoff: 10/03/2019
+ms.locfileid: "71830589"
 ---
 # <a name="how-to-monitor-app-protection-policies"></a>Como monitorar as políticas de proteção de aplicativo
 [!INCLUDE [azure_portal](../includes/azure_portal.md)]
 
 É possível monitorar o status de conformidade das políticas de MAM (gerenciamento de aplicativo móvel) que você aplicou aos usuários no painel de proteção do aplicativo do Intune no [Portal do Azure](https://portal.azure.com). Além disso, você pode encontrar informações sobre os usuários afetados pelas políticas de MAM, o status de conformidade da política de MAM e problemas que podem estar ocorrendo para os usuários.
 
-Há três locais diferentes para monitorar o status de conformidade das políticas de MAM:
+Existem três locais diferentes em que as políticas de proteção de aplicativo podem ser monitoradas:
 - Exibição de Resumo
 - Exibição detalhada
 - Exibição de Relatórios
@@ -49,7 +49,7 @@ O período de retenção dos dados de proteção do aplicativo é de 90 dias. To
 
 - **Usuários atribuídos**: O número total de usuários atribuídos em sua empresa que estão usando um aplicativo associado a uma política em um contexto de trabalho e que estão protegidos e licenciados, bem como os usuários atribuídos que não estão protegidos nem licenciados.
 - **Usuários sinalizados**: O número de usuários que estão tendo problemas. Dispositivos em que foi feito jailbreak (iOS) e root (Android) são relatados em **Usuários sinalizados**. Usuários que têm dispositivos sinalizados pela verificação de atestado de dispositivos do Google SafetyNet (se ativado pelo administrador de TI) serão informados aqui. 
-- **Usuários com aplicativos potencialmente nocivos**: O número de usuários que podem ter um aplicativo nocivo no dispositivo Android detectado pelo Google Play Protect. 
+- **Usuários com aplicativos potencialmente nocivos**: O número de usuários que podem ter um aplicativo nocivo em seu dispositivo Android detectado pelo Google Play Protect. 
 - **Status do usuário para iOS** e **Status do usuário para Android**: O número de usuários que usaram um aplicativo que tem uma política atribuída a eles em um contexto de trabalho para a plataforma relacionada. Essas informações mostram o número de usuários gerenciados pela política, bem como o número de usuários que estão usando um aplicativo que não é direcionado por nenhuma política em um contexto de trabalho. Você pode considerar adicionar esses usuários à política.
 - **Principais aplicativos iOS protegidos**: tendo como base os aplicativos iOS mais usados, essas informações mostram o número de aplicativos iOS protegidos e desprotegidos.
 - **Principais aplicativos Android protegidos**: tendo como base os aplicativos Android mais usados, essas informações mostram o número de aplicativos Android protegidos e desprotegidos.
@@ -72,10 +72,20 @@ Você pode pesquisar por um único usuário e verificar o status de conformidade
 - **Status**:
   - **Com check-in**: A política foi implantada para o usuário e o aplicativo foi usado no contexto de trabalho pelo menos uma vez.
   - **Sem check-in**: A política foi implantada para o usuário, mas o aplicativo não foi usado no contexto de trabalho desde então.
-- **Última Sincronização**: quando o dispositivo foi sincronizado pela última vez.
+- **Última Sincronização**: momento em que o aplicativo foi sincronizado pela última vez com o Intune. 
 
 >[!NOTE]
-> Se os usuários pesquisados não tiverem a política de MAM implantada, você verá uma mensagem informando que o usuário não é direcionado por nenhuma política de MAM.
+> A coluna "Última Sincronização" representa o mesmo valor no relatório de status do usuário no console e no relatório de Política de proteção de aplicativos [.csv exportável](https://docs.microsoft.com/intune/app-protection-policies-monitor#export-app-protection-activities-to-csv). A diferença corresponde a um pequeno atraso na sincronização entre o valor nos dois relatórios. 
+>
+> O horário mencionado em "Última Sincronização" se refere à última vez que o Intune viu a "instância do aplicativo". Uma instância do aplicativo é uma combinação exclusiva de aplicativo + usuário + dispositivo. No momento em que um usuário final inicializa um aplicativo, este pode ou não se comunicar com o serviço de Proteção de Aplicativo do Intune, dependendo da última vez em que o usuário se conectou. Esta documentação ajuda a esclarecer [os intervalos de repetição de check-in da Política de proteção de aplicativos ](https://docs.microsoft.com/en-us/intune/app-protection-policy-delivery). Portanto, se um usuário final não tiver usado esse aplicativo específico no último intervalo de check-in (normalmente, a cada 30 minutos para uso ativo) e inicializar o aplicativo:
+>
+> - O relatório .csv exportável da Política de proteção de aplicativos apresentará o horário mais recente entre 1 (usual; mínimo) e 30 minutos (o SLA máximo realmente fornecido pela agregação SQL usada pelo Intune Reporting).
+> - O relatório de status do usuário apresentará o horário mais recente instantaneamente.
+>
+> Por exemplo, suponhamos que um usuário final de destino e licenciado inicialize um aplicativo protegido às 12:00:
+> - Se esta for a primeira vez que ele faz o login, isso significará que o usuário final foi desconectado antes (uso não ativo), ou seja, ele não possui um registro de instância de aplicativo no Intune. Depois de fazer login, ele obterá um novo registro de instância de aplicativo e o check-in será feito imediatamente, sem problemas de conectividade, com os mesmos atrasos listados acima para futuros check-ins. Portanto, o horário da última sincronização será indicado como 12:00 no relatório de status do usuário e como 12:01 (ou 12:30, no pior cenário) no relatório da Política de proteção de aplicativos. 
+> - Se o usuário estiver apenas inicializando o aplicativo, o horário da "Última Sincronização" dependerá da data do último check-in.
+
 
 Para ver o relatório para um usuário, siga estas etapas:
 
@@ -89,11 +99,14 @@ Para ver o relatório para um usuário, siga estas etapas:
 
 3. Selecione um usuário da lista. Você pode ver os detalhes do status de conformidade desse usuário.
 
+>[!NOTE]
+> Se os usuários pesquisados não tiverem a política de MAM implantada, você verá uma mensagem informando que o usuário não é direcionado por nenhuma política de MAM.
+
 ### <a name="flagged-users"></a>Usuários sinalizados
-A exibição detalhada mostra a mensagem de erro, o aplicativo que foi acessado quando o erro ocorreu, a plataforma do sistema operacional dispositivo afetada e o carimbo de data/hora. Os usuários que têm dispositivos sinalizados pela verificação de inicialização condicional da "Certificação de dispositivo do SafetyNet" são informados aqui sobre o motivo relatado pelo Google.
+A exibição detalhada mostra a mensagem de erro, o aplicativo que foi acessado quando o erro ocorreu, a plataforma do sistema operacional dispositivo afetada e o carimbo de data/hora. Os usuários com dispositivos sinalizados pela verificação de inicialização condicional do 'atestado do dispositivo do SafetyNet' são informados aqui do motivo relatado pelo Google.
 
 ### <a name="users-with-potentially-harmful-apps"></a>Usuários com aplicativos potencialmente nocivos
-A exibição detalhada mostra o usuário, a ID do pacote do aplicativo, se o aplicativo está habilitado para MAM, a categoria de ameaça, o email, nome do dispositivo e um carimbo de data/hora. Os usuários que têm dispositivos sinalizados pela verificação de inicialização condicional "Exigir verificação de ameaças em aplicativos" são informados aqui sobre a categoria de ameaça conforme relatado pelo Google. Se houver aplicativos descritos neste relatório, que estejam sendo implantados pelo Microsoft Intune, contate o desenvolvedor do aplicativo e/ou remova a atribuição do aplicativo para os usuários finais. 
+A exibição detalhada mostra o usuário, a ID do pacote do aplicativo, se o aplicativo está habilitado para MAM, a categoria de ameaça, o email, nome do dispositivo e um carimbo de data/hora. Usuários com dispositivos sinalizados com “Exigir verificação de ameaças em aplicativos” pela verificação de inicialização condicional são relatados aqui com a categoria de ameaça, conforme relatado pelo Google. Se houver aplicativos descritos neste relatório, que estejam sendo implantados pelo Microsoft Intune, contate o desenvolvedor do aplicativo e/ou remova a atribuição do aplicativo para os usuários finais. 
 
 ## <a name="reporting-view"></a>Exibição de Relatórios
 

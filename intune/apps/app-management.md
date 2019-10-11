@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure; get-started
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: a0d495265580bc9801a1fadb636a62274a4f728a
-ms.sourcegitcommit: 88b6e6d70f5fa15708e640f6e20b97a442ef07c5
+ms.openlocfilehash: 8b630709646b2f4489cbfea6284689c9436798ca
+ms.sourcegitcommit: 78f9750712c254d8b123ef15b74f30ca999aa128
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/02/2019
-ms.locfileid: "71725745"
+ms.lasthandoff: 10/03/2019
+ms.locfileid: "71916359"
 ---
 # <a name="what-is-microsoft-intune-app-management"></a>O que é o gerenciamento de aplicativo do Microsoft Intune?
 
@@ -67,7 +67,7 @@ O Intune oferece uma variedade de recursos para ajudar a obter os aplicativos qu
 | Aplicativos de uma loja | Sim | Sim | Não | Sim | Sim |
 | Atualizar aplicativos | Sim | Sim | Não | Sim | Sim |
 
-<sup>1</sup> Considere usar a [Proteção de Informações do Windows](../windows-information-protection-configure.md) para proteger aplicativos em dispositivos que executam o Windows 10.<br>
+<sup>1</sup> Considere usar a [Proteção de Informações do Windows](../protect/windows-information-protection-configure.md) para proteger aplicativos em dispositivos que executam o Windows 10.<br>
 <sup>2</sup> Aplica-se apenas a dispositivos gerenciados pelo Intune.<br>
 <sup>3</sup> O Intune é compatível com aplicativos disponíveis na loja do Google Play Gerenciado em dispositivos Android Enterprise.<br>
 <sup>4</sup> O Intune não fornece a instalação de um atalho para um aplicativo como um link da Web em dispositivos Android Enterprise padrão. No entanto, o suporte ao link da Web é fornecido para [dispositivos Android Enterprise dedicados a vários aplicativos](../configuration/device-restrictions-android-for-work.md#dedicated-device-settings). 
@@ -84,7 +84,7 @@ Encontre a maioria das informações relacionadas a aplicativos na carga de trab
 
 As quatro seções a seguir descrevem as opções disponíveis no painel **Aplicativos clientes**.
 
-### <a name="manage"></a>assinaturas
+### <a name="manage"></a>Gerenciar
 - **Aplicativos**: Selecione esta opção para adicionar, exibir, atribuir e monitorar os aplicativos usados por sua força de trabalho. Para obter mais informações, consulte:
   - [Adicionar aplicativos](apps-add.md).
   - [Atribuir aplicativos](apps-deploy.md).
@@ -102,7 +102,7 @@ As quatro seções a seguir descrevem as opções disponíveis no painel **Aplic
 
 Para saber mais sobre essa seção, veja [Gerenciar aplicativos](app-management.md).
 
-### <a name="monitor"></a>Monitorar
+### <a name="monitor"></a>Monitor
 - **Licenças de aplicativo**: Exiba, atribua e monitore aplicativos adquiridos por volume de lojas de aplicativos. Para obter mais informações, consulte:
   - [Aplicativos do VPP (volume-purchased program) do iOS](vpp-apps-ios.md).
   - [Aplicativos adquiridos por volume na Microsoft Store para Empresas](windows-store-for-business.md).
