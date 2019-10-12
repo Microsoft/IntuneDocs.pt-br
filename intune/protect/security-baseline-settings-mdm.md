@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: d7bba4617aa756c5f7168a2febf1a3f1ffdd2029
-ms.sourcegitcommit: 88b6e6d70f5fa15708e640f6e20b97a442ef07c5
+ms.openlocfilehash: 1938f6862fa7b74dccc4ea23ac139fcd955d77d7
+ms.sourcegitcommit: a50a1ca123ecc2c5ac129f112f73838748f56476
 ms.translationtype: MTE75
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/02/2019
-ms.locfileid: "71735994"
+ms.lasthandoff: 10/10/2019
+ms.locfileid: "72237257"
 ---
 # <a name="mdm-security-baseline-settings-for-intune"></a>Configurações de linha de base de segurança MDM para o Intune  
 
@@ -1622,7 +1622,7 @@ Para obter mais informações, veja [CSP de política – Defender](https://docs
 
 - **Tipo de execução de conteúdo de email**  
   Essa regra impede que os seguintes tipos de arquivo sejam executados ou iniciados a partir de um email visto no Microsoft Outlook ou webmail (por exemplo, Gmail.com ou Outlook.com): arquivos executáveis (como .exe, .dll ou .scr), arquivos de Script (como um .ps do PowerShell, .vbs do VisualBasic ou o arquivo .js do JavaScript) e arquivos mortos de Script.  
-  [Saiba mais](https://go.microsoft.com/fwlink/?linkid=2067063)  
+  [Saiba mais](/windows/security/threat-protection/microsoft-defender-atp/attack-surface-reduction#block-executable-content-from-email-client-and-webmail) 
   
   **Padrão**: Bloquear
 
@@ -1632,7 +1632,7 @@ Para obter mais informações, veja [CSP de política – Defender](https://docs
 
 - **Tipo de proteção de rede**  
   Esta política permite que você ative ou desative a proteção de rede (bloquear/auditar) no Windows Defender Exploit Guard. A proteção de rede é um recurso do Windows Defender Exploit Guard que protege os funcionários usando qualquer aplicativo do acesso a golpes de phishing, sites que hospedam explorações e conteúdo mal-intencionado na Internet. Isso inclui impedir que navegadores de terceiros se conectem a sites perigosos. O tipo de valor é um inteiro. Se você habilitar essa configuração, a proteção de rede estará ativada e os funcionários não poderão desativá-la. Seu comportamento pode ser controlado pelas seguintes opções: bloquear e auditar. Se você habilitar essa política com a opção "Bloquear", os aplicativos e usuários serão impedidos de se conectar a domínios perigosos. Você poderá ver essa atividade na Central de Segurança do Windows Defender. Se você habilitar essa política com a opção "Auditar", os aplicativos/usuários não serão impedidos de se conectar a domínios perigosos. No entanto, você ainda verá essa atividade na Central de Segurança do Windows Defender. Se você desabilitar essa política, os aplicativos/usuários não serão impedidos de se conectar a domínios perigosos. Você não verá nenhuma atividade de rede na Central de Segurança do Windows Defender. Se você não configurar essa política, o bloqueio de rede estará desabilitado por padrão.  
-  [Saiba mais](https://go.microsoft.com/fwlink/?linkid=2067102)  
+  [Saiba mais](/windows/security/threat-protection/microsoft-defender-atp/enable-network-protection)  
   
   **Padrão**: Habilitar
   

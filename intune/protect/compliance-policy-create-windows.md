@@ -5,7 +5,7 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 09/12/2019
+ms.date: 10/10/2019
 ms.topic: reference
 ms.service: microsoft-intune
 ms.localizationpriority: medium
@@ -14,12 +14,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 484035603e4fb447b004aad6c6f85726034f3c23
-ms.sourcegitcommit: 88b6e6d70f5fa15708e640f6e20b97a442ef07c5
+ms.openlocfilehash: 493db6299aa8242d0ca6ab669b313e85d0dc14c6
+ms.sourcegitcommit: b1e97211db7cb949eb39be6776b3a11d434fdab0
 ms.translationtype: MTE75
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/02/2019
-ms.locfileid: "71732822"
+ms.lasthandoff: 10/10/2019
+ms.locfileid: "72251575"
 ---
 # <a name="windows-10-and-later-settings-to-mark-devices-as-compliant-or-not-compliant-using-intune"></a>Configurações do Windows 10 e posteriores para marcar dispositivos como em conformidade ou não em conformidade usando o Intune
 
@@ -138,6 +138,9 @@ Aplica-se apenas a dispositivos que executam o Windows 10 e posteriores. Os disp
 - **Firewall**: Defina como **exigir** para ativar o Microsoft defender firewall e impedir que os usuários o desativem. **Não configurado** (padrão) não controla o Microsoft defender firewall nem altera as configurações existentes.
 
   [CSP do firewall](https://docs.microsoft.com/windows/client-management/mdm/firewall-csp)
+
+  > [!NOTE]
+  > Se o dispositivo for sincronizado imediatamente após uma reinicialização ou sincronizar imediatamente a ativação do estado de suspensão, essa configuração poderá ser relatada como um **erro**. Esse cenário pode não afetar o status geral de conformidade do dispositivo. Para reavaliar o status de conformidade, [sincronize manualmente o dispositivo](https://docs.microsoft.com/intune-user-help/sync-your-device-manually-windows).
 
 - **Trusted Platform Module (TPM)** : quando definido como **exigir**, o Intune verifica a compatibilidade da versão. O dispositivo será compatível se a versão do chip do TPM for maior que 0 (zero). O dispositivo não será compatível se não houver uma versão do TPM no dispositivo. Quando **não estiver configurado**, o Intune não verificará o dispositivo em busca de uma versão de chip do TPM.
 
