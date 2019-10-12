@@ -100,7 +100,7 @@ Para criar a configuração de aplicativo do Microsoft Edge:
 2. Selecione **Aplicativos de cliente** > **Políticas de configuração de aplicativo** > **Adicionar**.
 3. Na folha **Adicionar política configuração**, insira um **Nome** e uma **Descrição** opcional para as definições de configuração do aplicativo.
 4. Para o tipo **Registro de Dispositivo**, escolha **Aplicativos gerenciados**.
-5. Escolha **Selecione o aplicativo necessário**. Em seguida, na folha **Aplicativos direcionados**, escolha o **Managed Browser** ou **Edge** para iOS, Android ou ambos.
+5. Escolha **Selecione o aplicativo necessário**. Em seguida, na folha **Aplicativos direcionados**, escolha o **Managed Browser** ou **Microsoft Edge** para iOS, Android ou ambos.
 6. Selecione **OK** para retornar à folha **Adicionar política de configuração**.
 7. Selecione **Definições de configuração**. Na folha **Configuração**, defina os pares de chave e valor para fornecer as configurações para o Microsoft Edge. Use as próximas seções deste artigo para saber mais sobre os diferentes pares de chave e valor que podem ser definidos.
 

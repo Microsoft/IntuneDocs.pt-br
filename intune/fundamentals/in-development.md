@@ -6,7 +6,7 @@ keywords: ''
 author: ErikjeMS
 ms.author: erikje
 manager: dougeby
-ms.date: 09/27/2019
+ms.date: 10/07/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.technology: ''
@@ -16,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 009b9cf22bcdd73eb563c772cc9995047f05a9c1
-ms.sourcegitcommit: 88b6e6d70f5fa15708e640f6e20b97a442ef07c5
-ms.translationtype: HT
+ms.openlocfilehash: 0e7c4e5ed45455dda941fb0c61c989c12c57135d
+ms.sourcegitcommit: 29b1113dc04534c4c87c33c773c5a0e24266e042
+ms.translationtype: MTE75
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/02/2019
-ms.locfileid: "71735760"
+ms.lasthandoff: 10/07/2019
+ms.locfileid: "71999317"
 ---
 # <a name="in-development-for-microsoft-intune---october-2019"></a>Em desenvolvimento para o Microsoft Intune – Outubro de 2019
 
@@ -131,7 +131,7 @@ Aplica-se a:
 - Android Enterprise
 
 ### <a name="create-a-global-http-proxy-on-android-enterprise-device-owner-devices----4816339----"></a>Criar um proxy HTTP global em dispositivos Android Enterprise do proprietário do dispositivo <!-- 4816339  -->
-Em dispositivos Android Enterprise, você pode criar um perfil VPN com diferentes clientes VPN (**configuração do dispositivo** > **1 perfis** > **Criar perfil** > **Android Enterprise** para plataforma > proprietário do **dispositivo > Restrições de dispositivo** para o tipo de perfil > **conectividade**). Você poderá configurar um proxy HTTP global para atender aos padrões de navegação na Web de sua organização. Todos os aplicativos que vão para sites HTTP usam esse proxy.
+Em dispositivos Android Enterprise, você pode configurar um proxy HTTP global para atender aos padrões de navegação na Web de sua organização (**configuração de dispositivo** > **perfis** > **Criar perfil** > **Android Enterprise** para plataforma > **proprietário do dispositivo > restrições de dispositivo** para o tipo de perfil > **conectividade**). Uma vez configurado, todo o tráfego HTTP usará esse proxy.
 
 Aplica-se a:
 - Proprietário do Dispositivo Android Enterprise
@@ -139,10 +139,10 @@ Aplica-se a:
 ### <a name="new-device-firmware-configuration-interface-profile-for-windows-10-and-later-devices----2266073----"></a>Novo perfil de interface de configuração de firmware de dispositivo para dispositivos Windows 10 e posteriores <!-- 2266073  -->
 No Windows 10 e posterior, você pode criar um perfil de configuração de dispositivo para controlar as configurações e os recursos (**configuração do dispositivo** > **perfis** > **Criar perfil** > **Windows 10 e posterior** para plataforma). Haverá um novo tipo de perfil de interface de configuração de firmware de dispositivo que permite ao Intune gerenciar configurações de UEFI (BIOS).
 
-Para ver uma visão geral de todas as configurações que você pode definir, consulte [aplicar recursos e configurações em seus dispositivos usando perfis de dispositivo no Microsoft Intune](../configuration/device-profiles.md).
+Para ver uma visão geral de todas as configurações atuais que você pode configurar, consulte [aplicar recursos e configurações em seus dispositivos usando perfis de dispositivo no Microsoft Intune](../configuration/device-profiles.md).
 
 Aplica-se a:
-- Windows 10 RS5 (1809) e mais recente em alguns OEMs
+- Windows 10 RS5 (1809) e mais recente em dispositivos selecionados
 
 ### <a name="pkcs-certificates-for-macos-----1333650------------------"></a>Certificados PKCS para macOS  <!-- 1333650                -->
 Adicionaremos suporte completo para certificados PKCS em dispositivos que executam o macOS. Os usuários poderão implantar certificados de usuário e de dispositivo com os campos de entidade de personalização e nome alternativo da entidade. Também teremos uma nova configuração permitir acesso de todos os aplicativos, que habilitando o acesso à chave privada a todos os aplicativos associados. Para obter mais detalhes sobre essa configuração, visite a seguinte documentação da Apple: https://developer.apple.com/business/documentation/Configuration-Profile-Reference.pdf.
@@ -160,10 +160,10 @@ A versão inicial das credenciais derivadas dará suporte a Entrust Datacard, in
 ## <a name="device-enrollment"></a>Registro de dispositivo
 
 ### <a name="specify-which-android-device-operating-system-versions-enroll-with-work-profile-or-device-administrator-enrollment----4350697---"></a>Especificar quais versões do sistema operacional do dispositivo Android registrar com o perfil de trabalho ou o registro de administrador do dispositivo <!-- 4350697 -->
-Usando as restrições de tipo de dispositivo do Intune, você poderá usar a versão do sistema operacional do dispositivo para especificar quais dispositivos de usuário usarão o registro de perfil de trabalho do Android Enterprise ou o registro de administrador do dispositivo Android. Para fazer isso, acesse **Intune** > **registro de dispositivo** > **3 restrições de registro** > **criar restrição** > **restrição de tipo de dispositivo** >  configurações de**plataforma**.
+Usando as restrições de tipo de dispositivo do Intune, você poderá usar a versão do sistema operacional do dispositivo para especificar quais dispositivos de usuário usarão o registro de perfil de trabalho do Android Enterprise ou o registro de administrador do dispositivo Android. Para fazer isso, acesse **Intune** > **registro de dispositivo** >  **restrições de registro** > **criar restrição** > **restrição de tipo de dispositivo** >  configurações de**plataforma**.
 
 ### <a name="edit-device-name-value-for-autopilot-devices----4816775---"></a>Editar o valor do nome do dispositivo para dispositivos de piloto automático <!-- 4816775 -->
-Você poderá editar o valor do nome do dispositivo para dispositivos de piloto automático ingressados no Azure AD. Para fazer isso, vá para **Intune** > **registro de dispositivo** > **3 registro do Windows** > **dispositivos** **Windows autopilot** >  > escolha o dispositivo > alterar o valor do nome do dispositivo no painel direito > **salvar** .
+Você poderá editar o valor do nome do dispositivo para dispositivos de piloto automático ingressados no Azure AD. Para fazer isso, vá para **Intune** > **registro de dispositivo** >  **registro do Windows** > **dispositivos** **Windows autopilot** >  > escolha o dispositivo > alterar o valor do nome do dispositivo no painel direito > **salvar** .
 
 ### <a name="for-ios-devices-customize-the-enrollment-process-privacy-screen-of-the-company-portal----4394993----"></a>Para dispositivos iOS, personalize a tela de privacidade do processo de registro do Portal da Empresa <!-- 4394993  -->
 Com o markdown, você poderá personalizar a tela de privacidade do Portal da Empresa que os usuários finais exibem durante o registro do iOS. Especificamente, você poderá personalizar a lista daquilo que sua organização não pode ver ou fazer no dispositivo.
@@ -173,7 +173,7 @@ Com o markdown, você poderá personalizar a tela de privacidade do Portal da Em
 
 
 ### <a name="edit-group-tag-value-for-autopilot-devices---4816775---"></a>Editar o valor da marca do grupo para dispositivos de piloto automático<!-- 4816775 -->
-Você poderá editar o valor da marca de grupo para dispositivos de piloto automático. Para fazer isso, vá para **Intune** > **registro de dispositivo** > **3 registro do Windows** > **dispositivos** **Windows autopilot** >  > escolha o dispositivo > alterar o valor da marca de grupo no painel direito > **salvar** .
+Você poderá editar o valor da marca de grupo para dispositivos de piloto automático. Para fazer isso, vá para **Intune** > **registro de dispositivo** >  **registro do Windows** > **dispositivos** **Windows autopilot** >  > escolha o dispositivo > alterar o valor da marca de grupo no painel direito > **salvar** .
 
 ### <a name="ui-update-for-creating-and-editing-windows-10-update-rings-----4099089------------"></a>Atualização da interface do usuário para criar e editar anéis de atualização do Windows 10  <!-- 4099089          -->   
 Vamos distribuir uma experiência de criação e edição de interface do usuário para anéis de atualização do Windows 10 para o Intune.  As alterações na interface do usuário incluirão:  

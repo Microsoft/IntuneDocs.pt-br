@@ -58,7 +58,7 @@ Este artigo lista as etapas usadas para criar um modelo para dispositivos Window
     > [!TIP]
     > As configurações do Windows no Intune se correlacionam ao caminho da política de grupo local que você vê no Editor de Política de Grupo Local (`gpedit`).
 
-5. Por padrão, a lista suspensa mostra **Todos os produtos.** Na lista, você também pode filtrar as configurações para mostrar apenas as configurações do **Windows**, do **Office** ou do **Edge versão 77 ou posteriores**:
+5. Por padrão, a lista suspensa mostra **Todos os produtos.** Na lista, você também pode filtrar as configurações para mostrar apenas as configurações do **Windows**, do **Office** ou do **Microsoft Edge versão 77 ou posteriores**:
 
     ![filtre a lista para mostrar todas as configurações do Windows ou todas do Office em modelos administrativos no Intune](./media/administrative-templates-windows/administrative-templates-choose-windows-office-all-products.png)
 
