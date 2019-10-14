@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 2e9b5eb15cf446b317818a93baa075cdbd33afd2
-ms.sourcegitcommit: 88b6e6d70f5fa15708e640f6e20b97a442ef07c5
+ms.openlocfilehash: 19389a21aa28f5fa957f62c988753f46bf1bc731
+ms.sourcegitcommit: 46322ca7a92971e18dc0b230f436b9ca892b90c5
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/02/2019
-ms.locfileid: "71723301"
+ms.lasthandoff: 10/07/2019
+ms.locfileid: "72008353"
 ---
 # <a name="automatically-enroll-ios-devices-with-apples-device-enrollment-program"></a>Registrar automaticamente dispositivos iOS com o Programa de registro de dispositivos da Apple
 
@@ -31,6 +31,9 @@ Configure o Intune para inscrever dispositivos iOS comprados por meio do [DEP (P
 Para habilitar o registro de DEP, você pode usar ambos os portais do Intune e do Apple DEP. É necessária uma lista de números de série ou um número de ordem de compra para que você possa atribuir os dispositivos ao Intune para gerenciamento. Você cria perfis de registro de DEP que contém configurações aplicadas aos dispositivos durante o registro.
 
 A propósito, o registro de DEP não funciona com o [gerenciador de registros de dispositivo](device-enrollment-manager-enroll.md).
+
+> [!NOTE]
+> O DEP define as configurações de dispositivo que não podem ser removidas pelo usuário final. Portanto, antes de [migrar para DEP](../fundamentals/migration-guide-considerations.md), o dispositivo deve ser apagado para retornar a um estado pronto para uso (novo).
 
 ## <a name="dep-and-the-company-portal"></a>DEP e o Portal da Empresa
 

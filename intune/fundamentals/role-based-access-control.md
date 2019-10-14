@@ -16,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure; get-started
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: eab50a21ea01cd4075bd78add980d2839606a1a2
-ms.sourcegitcommit: 88b6e6d70f5fa15708e640f6e20b97a442ef07c5
+ms.openlocfilehash: 6e9df15efc7a16a0ce1ee6b0412f9160831efdec
+ms.sourcegitcommit: 884654da8e72a63bfaea6b5def6c7891b065f251
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/02/2019
-ms.locfileid: "71721871"
+ms.lasthandoff: 10/09/2019
+ms.locfileid: "72163518"
 ---
 # <a name="role-based-access-control-rbac-with-microsoft-intune"></a>RBAC (controle de acesso baseado em função) com o Microsoft Intune
 
@@ -60,12 +60,13 @@ Você pode atribuir funções internas a grupos sem configuração adicional. N�
 | --- | :---: | :---: |
 | Administrador Global | Leitura/gravação | Leitura/gravação |
 | Administrador de Serviços do Intune | Leitura/gravação | Leitura/gravação |
-| Administrador de Acesso Condicional | Não | Não |
+| Administrador de Acesso Condicional | Nenhum | Nenhum |
 | Administrador de Segurança | Somente leitura | Somente leitura |
 | Operador de segurança | Somente leitura | Somente leitura |
 | Leitor de segurança | Somente leitura | Somente leitura |
-| Administrador de conformidade | Não | Somente leitura |
-| Administrador de dados de conformidade | Não | Somente leitura |
+| Administrador de conformidade | Nenhum | Somente leitura |
+| Administrador de dados de conformidade | Nenhum | Somente leitura |
+| Leitor global | Somente Leitura | Somente Leitura |
 
 > [!TIP]
 > O Intune também mostra três extensões do Azure AD: **Usuários**, **grupos** e **acesso condicional** controlados com o uso do RBAC do Azure AD. Além disso, o **Administrador de Contas de Usuário** apenas realiza as atividades do usuário/grupo do AAD e não tem permissões totais para realizar todas as atividades no Intune. Para saber mais, confira [RBAC com o Azure AD](https://docs.microsoft.com/azure/active-directory/active-directory-assign-admin-roles).

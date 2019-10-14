@@ -5,7 +5,7 @@ keywords: ''
 author: ralms
 ms.author: brenduns
 manager: dougeby
-ms.date: 09/16/2019
+ms.date: 10/02/2019
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure; seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: b801da3bd4245361e8c55a40c67daf2c8890fd1e
-ms.sourcegitcommit: 88b6e6d70f5fa15708e640f6e20b97a442ef07c5
+ms.openlocfilehash: fead8b9d69f5356876c0b3a2a4ce02e9b754128e
+ms.sourcegitcommit: 29b1113dc04534c4c87c33c773c5a0e24266e042
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/02/2019
-ms.locfileid: "71721598"
+ms.lasthandoff: 10/07/2019
+ms.locfileid: "71999333"
 ---
 # <a name="configure-and-use-imported-pkcs-certificates-with-intune"></a>Configurar e usar certificados PKCS importados com o Intune
 
@@ -168,7 +168,7 @@ Selecione o Provedor de Armazenamento de Chaves que corresponde ao provedor usad
 
 7. Importe o objeto **UserPFXCertificate** para o Intune executando `Import-IntuneUserPfxCertificate -AuthenticationResult $authResult -CertificateList $userPFXObject`
 
-8. Para validar o certificado importado, execute `Get-IntuneUserPfxCertificate -AuthenticationResult $authResult -UsertList "<UserUPN>"`
+8. Para validar o certificado importado, execute `Get-IntuneUserPfxCertificate -AuthenticationResult $authResult -UserList "<UserUPN>"`
 
 Para mais informações sobre outros comandos disponíveis, confira o arquivo Leiame no [Projeto PFXImport do PowerShell no GitHub](https://github.com/microsoft/Intune-Resource-Access/tree/develop/src/PFXImportPowershell).
 
@@ -186,7 +186,7 @@ Depois de importar os certificados para o Intune, crie um perfil de **certificad
 
 3. Acesse **Configurações** e digite as seguintes propriedades:
 
-   - **Finalidade pretendida**: especifique a finalidade pretendida dos certificados importados para esse perfil. Os administradores podem importar certificados com finalidades pretendidas diferentes (como autenticação, autenticação S/MIME ou criptografia S/MIME). A finalidade pretendida selecionada no perfil de certificado corresponde ao perfil de certificado com os certificados corretos importados. A finalidade pretendida é uma marcação para agrupar certificados importados, mas não garante que os certificados importados com essa marcação atenderão à finalidade pretendida.  
+   - **Finalidade pretendida**: especifique a finalidade pretendida dos certificados importados para esse perfil. Os administradores podem importar certificados com finalidades pretendidas diferentes (como autenticação S/MIME ou criptografia S/MIME). A finalidade pretendida selecionada no perfil de certificado corresponde ao perfil de certificado com os certificados corretos importados. A finalidade pretendida é uma marcação para agrupar certificados importados, mas não garante que os certificados importados com essa marcação atenderão à finalidade pretendida.  
    - **Período de validade do certificado**: a menos que o período de validade seja alterado no modelo de certificado, a opção padrão é de um ano.  
    - **KSP (provedor de armazenamento de chaves)** : Para o Windows, selecione o local em que as chaves serão armazenadas no dispositivo.  
 
