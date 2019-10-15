@@ -16,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: eee3d4187dd513cd3945e86aff478fe96b341660
-ms.sourcegitcommit: 88b6e6d70f5fa15708e640f6e20b97a442ef07c5
+ms.openlocfilehash: 52420375ae5ed88ab713a1da3e927e43e433db83
+ms.sourcegitcommit: 884654da8e72a63bfaea6b5def6c7891b065f251
 ms.translationtype: MTE75
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/02/2019
-ms.locfileid: "71732952"
+ms.lasthandoff: 10/09/2019
+ms.locfileid: "72163495"
 ---
 # <a name="microsoft-defender-advanced-threat-protection-baseline-settings-for-intune"></a>Configurações para Intune da Linha de base da Proteção Avançada contra Ameaças do Microsoft Defender
 
@@ -86,7 +86,7 @@ Para obter mais informações, veja [CSP de política – SmartScreen](https://d
 ## <a name="attack-surface-reduction"></a>Redução da superfície de ataque  
 
 - **Tipo de processo filho de iniciar aplicativos do Office**  
-  [Regra de redução da superfície de ataque](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-exploit-guard/attack-surface-reduction-exploit-guard#attack-surface-reduction-rules) – quando definido como *Bloquear*, os aplicativos do Office não terão permissão para criar processos filho. Os aplicativos do Office incluem Word, Excel, PowerPoint, OneNote e Access. A criação de um processo filho é um comportamento típico de malware, especialmente para ataques baseados em macro que tentam usar aplicativos do Office para iniciar ou baixar executáveis mal-intencionados.  
+  [Regra de redução da superfície de ataque](/windows/security/threat-protection/microsoft-defender-atp/attack-surface-reduction#attack-surface-reduction-rules) – quando definido como *Bloquear*, os aplicativos do Office não terão permissão para criar processos filho. Os aplicativos do Office incluem Word, Excel, PowerPoint, OneNote e Access. A criação de um processo filho é um comportamento típico de malware, especialmente para ataques baseados em macro que tentam usar aplicativos do Office para iniciar ou baixar executáveis mal-intencionados.  
 
   **Padrão**: Bloquear
 
@@ -101,7 +101,7 @@ Para obter mais informações, veja [CSP de política – SmartScreen](https://d
   **Padrão**: Habilitar
 
 - **Tipo de execução de conteúdo de email**  
-  [Regra de redução da superfície de ataque](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-exploit-guard/attack-surface-reduction-exploit-guard#attack-surface-reduction-rules) – quando definido como *Bloquear*, esta regra bloqueia a execução ou a inicialização dos seguintes tipos de arquivo de um email visto no Microsoft Outlook ou webmail (por exemplo, Gmail.com ou Outlook.com):  
+  [Regra de redução da superfície de ataque](/windows/security/threat-protection/microsoft-defender-atp/attack-surface-reduction#attack-surface-reduction-rules) – quando definido como *Bloquear*, esta regra bloqueia a execução ou a inicialização dos seguintes tipos de arquivo de um email visto no Microsoft Outlook ou webmail (por exemplo, Gmail.com ou Outlook.com):  
 
   - Arquivos executáveis (como .exe, .dll, ou .scr)  
   - Arquivos de script (como .ps do PowerShell, .vbs do Visual Basic ou arquivo .js do JavaScript)  
@@ -110,17 +110,17 @@ Para obter mais informações, veja [CSP de política – SmartScreen](https://d
   **Padrão**: Bloquear
 
 - **Inicialização do Adobe Reader em um processo filho**  
-  [Regra de redução da superfície de ataque](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-exploit-guard/attack-surface-reduction-exploit-guard#attack-surface-reduction-rules) – *habilite* essa regra para impedir que o Adobe Reader crie um processo filho. Por meio de engenharia social ou explorações, o malware pode baixar e iniciar cargas adicionais e sair do Adobe Reader.  
+  [Regra de redução da superfície de ataque](/windows/security/threat-protection/microsoft-defender-atp/attack-surface-reduction#attack-surface-reduction-rules) – *habilite* essa regra para impedir que o Adobe Reader crie um processo filho. Por meio de engenharia social ou explorações, o malware pode baixar e iniciar cargas adicionais e sair do Adobe Reader.  
 
   **Padrão**: Habilitar
 
 - **Tipo de código de macro ocultado de script**  
-  [Regra de redução da superfície de ataque](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-exploit-guard/attack-surface-reduction-exploit-guard#attack-surface-reduction-rules) – Malware e outras ameaças podem tentar ocultar seu código mal-intencionado em arquivos de script. Essa regra impede a execução de scripts que parecem estar ocultos.  
+  [Regra de redução da superfície de ataque](/windows/security/threat-protection/microsoft-defender-atp/attack-surface-reduction#attack-surface-reduction-rules) – Malware e outras ameaças podem tentar ocultar seu código mal-intencionado em arquivos de script. Essa regra impede a execução de scripts que parecem estar ocultos.  
     
   **Padrão**: Bloquear
 
 - **Tipo de processo de USB não confiável**  
-  [Regra de redução da superfície de ataque](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-exploit-guard/attack-surface-reduction-exploit-guard#attack-surface-reduction-rules) – quando definido como *Bloquear*, os arquivos executáveis não assinados ou não confiáveis de unidades removíveis USB e cartões SD não podem ser executados.
+  [Regra de redução da superfície de ataque](/windows/security/threat-protection/microsoft-defender-atp/attack-surface-reduction#attack-surface-reduction-rules) – quando definido como *Bloquear*, os arquivos executáveis não assinados ou não confiáveis de unidades removíveis USB e cartões SD não podem ser executados.
 
   Os arquivos executáveis incluem:
   - Arquivos executáveis (como .exe, .dll, ou .scr)
@@ -129,22 +129,22 @@ Para obter mais informações, veja [CSP de política – SmartScreen](https://d
   **Padrão**: Bloquear
 
 - **Tipo de injeção de outros processos de aplicativos do Office**  
-  [Regra de redução da superfície de ataque](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-exploit-guard/attack-surface-reduction-exploit-guard#attack-surface-reduction-rules) -quando definido como *Bloquear*, os aplicativos do Office, incluindo Word, Excel, PowerPoint e OneNote não podem injetar código em outros processos. A injeção de código normalmente é usado por malware para executar código mal-intencionado em uma tentativa de ocultar a atividade de mecanismos de verificação de antivírus.  
+  [Regra de redução da superfície de ataque](/windows/security/threat-protection/microsoft-defender-atp/attack-surface-reduction#attack-surface-reduction-rules) -quando definido como *Bloquear*, os aplicativos do Office, incluindo Word, Excel, PowerPoint e OneNote não podem injetar código em outros processos. A injeção de código normalmente é usado por malware para executar código mal-intencionado em uma tentativa de ocultar a atividade de mecanismos de verificação de antivírus.  
 
   **Padrão**: Bloquear
 
 - **Tipo de código de macro do Office que permite importações do Win32**  
-  [Regra de redução da superfície de ataque](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-exploit-guard/attack-surface-reduction-exploit-guard#attack-surface-reduction-rules) - quando definido como *Bloquear*, essa regra tenta bloquear os arquivos do Office que contêm código de macro que pode importar as DLLs do Win32. Os arquivos do Office incluem o Word, o Excel, o PowerPoint e o OneNote. O malware pode usar o código de macro em arquivos do Office para importar e carregar DLLs do Win32, que são usados para fazer chamadas à API para permitir a infecção em todo o sistema.  
+  [Regra de redução da superfície de ataque](/windows/security/threat-protection/microsoft-defender-atp/attack-surface-reduction#attack-surface-reduction-rules) - quando definido como *Bloquear*, essa regra tenta bloquear os arquivos do Office que contêm código de macro que pode importar as DLLs do Win32. Os arquivos do Office incluem o Word, o Excel, o PowerPoint e o OneNote. O malware pode usar o código de macro em arquivos do Office para importar e carregar DLLs do Win32, que são usados para fazer chamadas à API para permitir a infecção em todo o sistema.  
 
   **Padrão**: Bloquear
 
 - **Inicialização de aplicativos de comunicação do Office em um processo filho**  
-  [Regra de redução da superfície de ataque](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-exploit-guard/attack-surface-reduction-exploit-guard#attack-surface-reduction-rules) – quando definido como *Habilitar*, essa regra impede que o Outlook crie processos filho. Ao bloquear a criação de um processo filho, essa regra protege contra ataques de engenharia social e impede que o código de exploração abuse de uma vulnerabilidade no Outlook.  
+  [Regra de redução da superfície de ataque](/windows/security/threat-protection/microsoft-defender-atp/attack-surface-reduction#attack-surface-reduction-rules) – quando definido como *Habilitar*, essa regra impede que o Outlook crie processos filho. Ao bloquear a criação de um processo filho, essa regra protege contra ataques de engenharia social e impede que o código de exploração abuse de uma vulnerabilidade no Outlook.  
 
   **Padrão**: Habilitar
 
 - **Tipo de lançamento ou criação de conteúdo executável de aplicativos do Office**  
-  [Regra de redução da superfície de ataque](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-exploit-guard/attack-surface-reduction-exploit-guard#attack-surface-reduction-rules) – quando definido como *Bloquear*, os aplicativos do Office não podem criar conteúdo executável. Os aplicativos do Office incluem Word, Excel, PowerPoint, OneNote e Access.  
+  [Regra de redução da superfície de ataque](/windows/security/threat-protection/microsoft-defender-atp/attack-surface-reduction#attack-surface-reduction-rules) – quando definido como *Bloquear*, os aplicativos do Office não podem criar conteúdo executável. Os aplicativos do Office incluem Word, Excel, PowerPoint, OneNote e Access.  
 
   Essa regra tem como alvo os comportamentos típicos usados por complementos e scripts (extensões) suspeitos e mal-intencionados que criam ou inicializam arquivos executáveis. Essa é uma técnica de malware típica. As extensões são impedidas de serem usadas pelos aplicativos do Office. Normalmente essas extensões usam o Windows Script Host (arquivos .wsh) para executar scripts que automatizam determinadas tarefas ou fornecem recursos de complemento criados pelo usuário.
 
@@ -273,7 +273,7 @@ Para saber mais, consulte [CSP WindowsAdvancedThreatProtection](https://docs.mic
 ## <a name="exploit-protection"></a>Proteção contra explorações  
 
 - **XML de Exploit Protection**  
-  Para saber mais, confira [Importar, exportar e implantar configurações de proteção de exploração ](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-exploit-guard/import-export-exploit-protection-emet-xml) na documentação do Windows.  
+  Para saber mais, confira [Importar, exportar e implantar configurações de proteção de exploração](/windows/security/threat-protection/microsoft-defender-atp/import-export-exploit-protection-emet-xml) na documentação do Windows.  
 
   Permite que o administrador de TI efetue o push de uma configuração que representa as opções de migração de aplicativo e sistema desejadas para todos os dispositivos na organização. A configuração é representada por um XML. 
 

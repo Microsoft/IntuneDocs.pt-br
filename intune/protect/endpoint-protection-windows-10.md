@@ -5,7 +5,7 @@ keywords: ''
 author: brenduns
 ms.author: brenduns
 manager: dougeby
-ms.date: 09/19/2019
+ms.date: 10/08/2019
 ms.topic: reference
 ms.service: microsoft-intune
 ms.localizationpriority: medium
@@ -16,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure; seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 0b9b9119294fe0757671568eb6b627974796b2de
-ms.sourcegitcommit: 88b6e6d70f5fa15708e640f6e20b97a442ef07c5
-ms.translationtype: HT
+ms.openlocfilehash: 22e3779cd0772753ccd8843cd1f1ff38617298d6
+ms.sourcegitcommit: 884654da8e72a63bfaea6b5def6c7891b065f251
+ms.translationtype: MTE75
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/02/2019
-ms.locfileid: "71732718"
+ms.lasthandoff: 10/09/2019
+ms.locfileid: "72163574"
 ---
 # <a name="windows-10-and-later-settings-to-protect-devices-using-intune"></a>Configurações do Windows 10 (e posterior) para proteger dispositivos usando o Intune  
 
@@ -776,26 +776,27 @@ Essas configurações se aplicam especificamente a unidades de dados removíveis
  
 ## <a name="windows-defender-exploit-guard"></a>Windows Defender Exploit Guard  
 
-Use o [Windows Defender Exploit Guard](https://docs.microsoft.com/windows/threat-protection/windows-defender-exploit-guard/windows-defender-exploit-guard) para gerenciar e reduzir a superfície de ataque de aplicativos usados pelos seus funcionários.  
+Use a [proteção contra Exploit](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/exploit-protection) para gerenciar e reduzir a superfície de ataque de aplicativos usados por seus funcionários.  
 
 ### <a name="attack-surface-reduction"></a>Redução da superfície de ataque  
 
-Para obter informações sobre as regras de *redução da superfície de ataque* , consulte reduzir as superfícies de [ataque com o Windows Defender Exploit Guard](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-exploit-guard/attack-surface-reduction-exploit-guard) na documentação do Windows Defender Exploit Guard.  
+As regras de redução da superfície de ataque ajudam a evitar comportamentos que o malware geralmente usa para infectar computadores com código mal-intencionado.  
 
 #### <a name="attack-surface-reduction-rules"></a>Regras de Redução da superfície de ataque  
 
 - **Sinalizar roubo de credencial do subsistema da autoridade de segurança local do Windows**  
   **Padrão**: não configurado  
-  Exploit Guard: [regras de redução da superfície de ataque](https://go.microsoft.com/fwlink/?linkid=874499)
+  Regra: [bloquear o roubo de credenciais do subsistema da autoridade de segurança local do Windows (lsass.exe)](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/attack-surface-reduction#block-credential-stealing-from-the-windows-local-security-authority-subsystem-lsassexe)
 
   Ajude a impedir que aplicativos e ações, que normalmente são usados por malwares em busca de exploração, infectem computadores.  
+
   - **Não configurado**  
   - **Habilitar** – sinaliza o roubo de credenciais do subsistema da autoridade de segurança local do Windows (lsass.exe).  
   - **Somente auditoria**  
 
 - **Criação de processo do Adobe Reader (beta)**  
   **Padrão**: não configurado  
-  Exploit Guard: [regras de redução da superfície de ataque](https://go.microsoft.com/fwlink/?linkid=853979)  
+  Regra: [bloquear o Adobe Reader de criar processos filho](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/attack-surface-reduction#block-adobe-reader-from-creating-child-processes)  
 
   - **Não configurado**  
   - **Habilitar** -bloquear processos filho que são criados a partir do Adobe Reader.  
@@ -807,7 +808,7 @@ Impeça que os aplicativos do Office executem as seguintes ações:
 
 - **Injeção de aplicativos do Office em outros processos (sem exceções)**  
   **Padrão**: não configurado  
-  [Documentação do Exploit Guard](https://go.microsoft.com/fwlink/?linkid=872974)  
+  Regra: [bloquear aplicativos do Office para evitar que injetem um código em outros processos](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/attack-surface-reduction#block-office-applications-from-injecting-code-into-other-processes)  
 
   - **Não configurado**  
   - **Bloqueie a injeção** de aplicativos do Office em outros processos.  
@@ -815,7 +816,7 @@ Impeça que os aplicativos do Office executem as seguintes ações:
 
 - **Criação de conteúdo executável por aplicativos/macros do Office**  
   **Padrão**: não configurado  
-  [Documentação do Exploit Guard](https://go.microsoft.com/fwlink/?linkid=872975)  
+  Regra: [bloquear aplicativos do Office para impedir que criem um conteúdo executável](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/attack-surface-reduction#block-office-applications-from-creating-executable-content)  
 
   - **Não configurado**  
   - **Bloqueie o** bloqueio de aplicativos e macros do Office de criar conteúdo executável.  
@@ -823,7 +824,7 @@ Impeça que os aplicativos do Office executem as seguintes ações:
 
 - **Inicialização de processos filhos por aplicativos do Office**  
   **Padrão**: não configurado  
-  [Documentação do Exploit Guard](https://go.microsoft.com/fwlink/?linkid=872976)  
+  Regra: [impedir que todos os aplicativos do Office criem processos filho](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/attack-surface-reduction#block-all-office-applications-from-creating-child-processes)  
 
   - **Não configurado**  
   - **Bloquear o** bloqueio de aplicativos do Office para iniciar processos filho.  
@@ -831,7 +832,7 @@ Impeça que os aplicativos do Office executem as seguintes ações:
   
 - **Importações do Win32 de código de macro do Office**  
   **Padrão**: não configurado  
-  [Documentação do Exploit Guard](https://go.microsoft.com/fwlink/?linkid=872977)  
+  Regra: [bloquear chamada à API do Win32 desde macros do Office](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/attack-surface-reduction#block-win32-api-calls-from-office-macros)  
 
   - **Não configurado**  
   - **Bloco** -bloquear importações do Win32 do código de macro no Office.  
@@ -839,7 +840,7 @@ Impeça que os aplicativos do Office executem as seguintes ações:
   
 - **Criação de processos de produtos de comunicação do Office**  
   **Padrão**: não configurado  
-  [Documentação do Exploit Guard](https://go.microsoft.com/fwlink/?linkid=874499)  
+  Regra: [bloquear o aplicativo de comunicação do Office de criar processos filho](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/attack-surface-reduction#block-office-communication-application-from-creating-child-processes)  
 
   - **Não configurado**  
   - **Habilitar** -Bloquear criação de processo filho de aplicativos de comunicações do Office.  
@@ -851,7 +852,7 @@ Bloqueie o seguinte para ajudar a prevenir ameaças de script:
 
 - **Código de js/vbs/ps/macro ofuscado**  
   **Padrão**: não configurado  
-  [Documentação do Exploit Guard](https://go.microsoft.com/fwlink/?linkid=872978)    
+  Regra: [bloquear a execução de scripts potencialmente ofuscados](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/attack-surface-reduction#block-execution-of-potentially-obfuscated-scripts)    
 
   - **Não configurado**  
   - **Bloquear-bloquear** qualquer código js/vbs/PS/macro ofuscado.  
@@ -859,7 +860,7 @@ Bloqueie o seguinte para ajudar a prevenir ameaças de script:
 
 - **Execução de conteúdo baixado da Internet pelo js/vbs (sem exceções)**  
   **Padrão**: não configurado  
-  [Documentação do Exploit Guard](https://go.microsoft.com/fwlink/?linkid=872979)  
+  Regra: [bloquear o JavaScript ou o VBScript para impedir que iniciem um conteúdo executável baixado](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/attack-surface-reduction#block-javascript-or-vbscript-from-launching-downloaded-executable-content)  
 
   - **Não configurado**  
   - **Bloquear** -bloquear js/vbs da carga de execução baixada da Internet.  
@@ -867,7 +868,7 @@ Bloqueie o seguinte para ajudar a prevenir ameaças de script:
 
 - **Criação de processo usando comandos WMI e PSExec**  
   **Padrão**: não configurado  
-  [Documentação do Exploit Guard](https://go.microsoft.com/fwlink/?linkid=874500)  
+  Regra: [bloquear criações de processo provenientes de comandos PSExec e WMI](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/attack-surface-reduction#block-process-creations-originating-from-psexec-and-wmi-commands)  
 
   - **Não configurado**  
   - **Bloquear** – impede as criações de processos provenientes de comandos PSExec e WMI.  
@@ -876,7 +877,7 @@ Bloqueie o seguinte para ajudar a prevenir ameaças de script:
 
 - **Processos não assinados e não confiáveis executados de um USB**  
   **Padrão**: não configurado  
-  [Documentação do Exploit Guard](https://go.microsoft.com/fwlink/?linkid=874502)    
+  Regra: [bloquear processos não assinados e não confiáveis executados de USB](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/attack-surface-reduction#block-untrusted-and-unsigned-processes-that-run-from-usb)    
 
   - **Não configurado**  
   - **Bloquear** – impede processos não assinados e não confiáveis executados de um USB.  
@@ -884,7 +885,7 @@ Bloqueie o seguinte para ajudar a prevenir ameaças de script:
   
 - **Executáveis que não atendem um critério de prevalência, idade ou lista confiável**  
   **Padrão**: não configurado  
-  [Documentação do Exploit Guard](https://go.microsoft.com/fwlink/?linkid=874503)    
+  Regra: [bloquear a execução de arquivos executáveis, a menos que eles atendam a um critério de prevalência, de idade ou de lista confiável](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/attack-surface-reduction#block-executable-files-from-running-unless-they-meet-a-prevalence-age-or-trusted-list-criterion)    
 
   - **Não configurado**  
   - **Bloquear** – impede a execução de arquivos executáveis, a menos que eles atendam a um critério de prevalência, de idade ou de lista confiável.  
@@ -896,7 +897,7 @@ Bloqueie o seguinte para ajudar a prevenir ameaças por email:
 
 - **Execução de conteúdo executável (exe, dll, ps, js, vbs, etc.) proveniente do email (cliente de webmail/email) (sem exceções)**  
   **Padrão**: não configurado  
-  [Documentação do Exploit Guard](https://go.microsoft.com/fwlink/?linkid=872980)  
+  Regra: [bloquear o conteúdo executável do cliente de email e de webmail](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/attack-surface-reduction#block-executable-content-from-email-client-and-webmail)  
 
   - **Não configurado**  
   - **Bloquear** – impede a execução de conteúdo executável (exe, dll, ps, js, vbs etc.) proveniente do email (cliente de webmail/email).  
@@ -906,7 +907,7 @@ Bloqueie o seguinte para ajudar a prevenir ameaças por email:
 
 - **Proteção avançada contra ransomware**  
   Padrão: não configurado  
-  [Documentação do Exploit Guard](https://go.microsoft.com/fwlink/?linkid=874504)  
+  Regra: [usar a proteção avançada contra ransomware](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/attack-surface-reduction#use-advanced-protection-against-ransomware)  
 
   - **Não configurado**  
   - **Habilitar** – usa proteção agressiva contra ransomware.  
@@ -932,7 +933,7 @@ Bloqueie o seguinte para ajudar a prevenir ameaças por email:
 
 ### <a name="controlled-folder-access"></a>Acesso controlado à pasta  
 
-Ajude a [proteger dados valiosos](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-exploit-guard/controlled-folders-exploit-guard) contra ameaças e aplicativos mal-intencionados, como ransomware.  
+Ajude a [proteger dados valiosos](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/controlled-folders) contra ameaças e aplicativos mal-intencionados, como ransomware.  
 
 - **Proteção de pasta**  
   **Padrão**: não configurado  
@@ -979,7 +980,7 @@ Bloquear conexões de saída de qualquer aplicativo para endereços IP ou domín
 - **Carregar XML**  
   **Padrão**: *não configurado*  
 
-  Para usar a proteção contra Exploit para [proteger dispositivos contra explorações](/windows/security/threat-protection/microsoft-defender-atp/microsoft-defender-advanced-threat-protection), crie um arquivo XML que inclui as configurações de mitigação do sistema e do aplicativo que você deseja. Há dois métodos para criar o arquivo XML:  
+  Para usar a proteção contra Exploit para [proteger dispositivos contra explorações](https://docs.microsoft.com/en-us/windows/security/threat-protection/microsoft-defender-atp/microsoft-defender-advanced-threat-protection), crie um arquivo XML que inclui as configurações de mitigação do sistema e do aplicativo que você deseja. Há dois métodos para criar o arquivo XML:  
 
   - *PowerShell*: use um ou mais dos cmdlets *Get-ProcessMitigation*, *Set-ProcessMitigation* e *ConvertTo-ProcessMitigationPolicy* do PowerShell. Os cmdlets definem configurações de mitigação e exportam uma representação XML deles.  
 

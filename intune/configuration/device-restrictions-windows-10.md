@@ -5,7 +5,7 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 08/29/2019
+ms.date: 10/09/2019
 ms.topic: reference
 ms.service: microsoft-intune
 ms.localizationpriority: medium
@@ -14,12 +14,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure; seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 5c9bad56a8214cd736208526865b5f9c8b23db00
-ms.sourcegitcommit: 88b6e6d70f5fa15708e640f6e20b97a442ef07c5
+ms.openlocfilehash: 149da4c5aafc436156b7b29566bb5d792506de7c
+ms.sourcegitcommit: b1e97211db7cb949eb39be6776b3a11d434fdab0
 ms.translationtype: MTE75
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/02/2019
-ms.locfileid: "71734785"
+ms.lasthandoff: 10/10/2019
+ms.locfileid: "72251550"
 ---
 # <a name="windows-10-and-newer-device-settings-to-allow-or-restrict-features-using-intune"></a>Configurações de dispositivo Windows 10 (e mais recente) para permitir ou restringir recursos usando o Intune
 
@@ -665,29 +665,55 @@ Essas configurações usam o [CSP da política de experiência](https://docs.mic
 
 Essas configurações usam o [CSP da política do Defender](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-defender), que também lista as edições compatíveis do Windows.
 
-- **Monitoramento em tempo real**: **Habilitar** desativa a verificação em tempo real de malware, spyware e outros tipos de software indesejados. **Não configurado** (padrão) permite o uso desse recurso.
+- **Monitoramento em tempo real**: **Habilitar** ativa a verificação em tempo real de malware, spyware e outros tipos de software indesejados. Os usuários finais não podem desativá-lo. 
+
+  Quando definido como **não configurado** (padrão), o Intune não toca nessa configuração. Se você habilitar a configuração e, em seguida, alterá-la novamente para **não configurado**, o Intune deixará a configuração no estado configurado anteriormente. Por padrão, o sistema operacional ativa esse recurso e permite que os usuários o alterem.
+
+  O Intune não desativa esse recurso. Para desabilitá-lo, use um URI personalizado.
 
   [CSP do defender/AllowRealtimeMonitoring](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-defender#defender-allowrealtimemonitoring)
 
-- **Monitoramento de comportamento**: **Habilitar** desativa a verificação do Defender por certos padrões de atividade suspeita nos dispositivos. **Não configurado** (padrão) permite o monitoramento de comportamento do Windows Defender.
+- **Monitoramento de comportamento**: **Habilitar** ativa o monitoramento de comportamento e a verificação de certos padrões de atividade suspeita nos dispositivos. Os usuários não podem desativar o monitoramento de comportamento. 
+
+  Quando definido como **não configurado** (padrão), o Intune não toca nessa configuração. Se você habilitar a configuração e, em seguida, alterá-la novamente para **não configurado**, o Intune deixará a configuração no estado configurado anteriormente. Por padrão, o sistema operacional ativa o monitoramento de comportamento e permite que os usuários o alterem.
+
+  O Intune não desativa esse recurso. Para desabilitá-lo, use um URI personalizado.
 
   [CSP do defender/AllowBehaviorMonitoring](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-defender#defender-allowbehaviormonitoring)
 
 - **NIS (Sistema de Inspeção de Rede)** : o NIS ajuda a proteger dispositivos contra explorações baseadas em rede. Ele utiliza assinaturas de vulnerabilidades conhecidas do Microsoft Endpoint Protection Center para ajudar a detectar e bloquear o tráfego mal-intencionado.
 
-  **Não configurado** (padrão) desabilita esse recurso. Os usuários não estão impedidos de se conectar a vulnerabilidades conhecidas. Quando definido como **habilitar**, a proteção de rede e o bloqueio de rede são ativados e os usuários não podem desativá-lo. Os usuários estão impedidos de se conectar a vulnerabilidades conhecidas.
+  **Habilitar** ativa a proteção de rede e o bloqueio de rede. Os usuários finais não podem desativá-lo. Quando habilitado, os usuários são impedidos de se conectar a vulnerabilidades conhecidas.
+
+  Quando definido como **não configurado** (padrão), o Intune não toca nessa configuração. Se você habilitar a configuração e, em seguida, alterá-la novamente para **não configurado**, o Intune deixará a configuração no estado configurado anteriormente. Por padrão, o sistema operacional ativa o NIS e permite que os usuários o alterem.
+
+  O Intune não desativa esse recurso. Para desabilitá-lo, use um URI personalizado.
 
   [CSP do defender/EnableNetworkProtection](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-defender#defender-enablenetworkprotection)
 
-- **Verificar todos os downloads**: **não configurado** (padrão) tem o defender examina todos os arquivos baixados da Internet. Quando definido como **habilitar**, esse recurso é desabilitado. Portanto, o defender não examina todos os arquivos de Internet baixados.
+- **Verificar todos os downloads**: **habilitar** ativa essa configuração e o defender examina todos os arquivos baixados da Internet. Os usuários não podem desativar essa configuração. 
+
+  Quando definido como **não configurado** (padrão), o Intune não toca nessa configuração. Se você habilitar a configuração e, em seguida, alterá-la novamente para **não configurado**, o Intune deixará a configuração no estado configurado anteriormente. Por padrão, o sistema operacional ativa essa configuração e permite que os usuários a alterem.
+
+  O Intune não desativa esse recurso. Para desabilitá-lo, use um URI personalizado.
 
   [CSP do defender/AllowIOAVProtection](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-defender#defender-allowioavprotection)
 
-- **Examinar scripts carregados nos navegadores da Web da Microsoft**: **Não configurado** (padrão) permite que o Defender verifique os scripts que são usados no Internet Explorer. **Habilitar** impede essa verificação.
+- **Examinar scripts carregados nos navegadores da Web da Microsoft**: **Habilitar** permite que o Defender verifique os scripts que são usados no Internet Explorer. Os usuários não podem desativar essa configuração. 
+
+  Quando definido como **não configurado** (padrão), o Intune não toca nessa configuração. Se você habilitar a configuração e, em seguida, alterá-la novamente para **não configurado**, o Intune deixará a configuração no estado configurado anteriormente. Por padrão, o sistema operacional ativa essa configuração e permite que os usuários a alterem.
+
+  O Intune não desativa esse recurso. Para desabilitá-lo, use um URI personalizado.
 
   [CSP do defender/AllowScriptScanning](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-defender#defender-allowscriptscanning)
 
-- **Acesso do usuário final ao Defender**: **Bloquear** oculta a interface do usuário do Windows Defender dos usuários finais. Todas as notificações do Windows Defender também são suprimidas. **Não configurado** (padrão) permite o acesso do usuário à interface do usuário do Windows Defender. Quando alterada, esta configuração entra em vigor na próxima vez em que o computador do usuário final for reiniciado.
+- **Acesso do usuário final ao Defender**: **Bloquear** oculta a interface do usuário do Microsoft Defender dos usuários finais. Todas as notificações do Microsoft Defender também são suprimidas.
+
+  Quando definido como **não configurado** (padrão), o Intune não toca nessa configuração. Se você bloquear a configuração e, em seguida, alterá-la novamente para **não configurado**, o Intune deixará a configuração no estado configurado anteriormente. Por padrão, o sistema operacional permite que o usuário acesse a IU do Microsoft defender e permite que os usuários o alterem.
+
+  O Intune não desativa esse recurso. Para desabilitá-lo, use um URI personalizado.
+
+  Quando alterada, esta configuração entra em vigor na próxima vez em que o computador do usuário final for reiniciado.
 
   [CSP do defender/AllowUserUIAccess](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-defender#defender-allowuseruiaccess)
 
@@ -714,31 +740,55 @@ Essas configurações usam o [CSP da política do Defender](https://docs.microso
   [CSP do defender/DaysToRetainCleanedMalware](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-defender#defender-daystoretaincleanedmalware)
 
 - **Limite de uso de CPU durante uma verificação**: estipule um limite de quanto a CPU pode ser usada durante as verificações, de `0` a `100`.
-- **Verificar arquivos mortos**: **habilitar** desativa o defender da verificação de arquivos mortos, como arquivos zip ou cab. **Não configurado** (padrão) permite essa verificação.
+- **Verificar arquivos mortos**: **habilitar** ativa o defender para que ele examine arquivos mortos, como arquivos zip ou cab. Os usuários não podem desativar essa configuração.
+
+  Quando definido como **não configurado** (padrão), o Intune não toca nessa configuração. Se você habilitar a configuração e, em seguida, alterá-la novamente para **não configurado**, o Intune deixará a configuração no estado configurado anteriormente. Por padrão, o sistema operacional ativa essa verificação e permite que os usuários a alterem.
+
+  O Intune não desativa esse recurso. Para desabilitá-lo, use um URI personalizado.
 
   [CSP do defender/AllowArchiveScanning](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-defender#defender-allowarchivescanning)
 
-- **Examinar mensagens de email de entrada**: **Habilitar** permite que o Defender examine mensagens de email assim que elas chegam ao dispositivo. **Não configurado** (padrão) impede a verificação de email.
+- **Examinar mensagens de email de entrada**: **Habilitar** permite que o Defender examine mensagens de email assim que elas chegam ao dispositivo. Quando habilitado, o mecanismo analisa os arquivos de caixa de correio e de email para analisar o corpo e os anexos dos emails. Você pode verificar os formatos. pst (Outlook),. dbx,. MBX, MIME (Outlook Express) e BinHex (Mac).
+
+  Quando definido como **não configurado** (padrão), o Intune não toca nessa configuração. Se você habilitar a configuração e, em seguida, alterá-la novamente para **não configurado**, o Intune deixará a configuração no estado configurado anteriormente. Por padrão, o sistema operacional desativa essa verificação e permite que os usuários a alterem.
+
+  O Intune não desativa esse recurso. Para desabilitá-lo, use um URI personalizado.
 
   [CSP do defender/AllowEmailScanning](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-defender#defender-allowemailscanning)
 
-- **Verificar unidades removíveis durante uma verificação completa**: **Habilitar** impede as verificações completas de unidades removíveis. **Não configurado** (padrão) permite que o Defender Examine unidades removíveis, tais como pen drives USB.
+- **Verificar unidades removíveis durante uma verificação completa**: **habilitar** ativa as verificações da unidade removível do defender durante uma verificação completa. Os usuários não podem desativar essa configuração.
+
+  Quando definido como **não configurado** (padrão), o Intune não toca nessa configuração. Se você habilitar a configuração e, em seguida, alterá-la novamente para **não configurado**, o Intune deixará a configuração no estado configurado anteriormente. Por padrão, o sistema operacional permite que o defender Verifique unidades removíveis, como pentes USB, e permite que os usuários alterem essa configuração.
 
   Durante uma verificação rápida, as unidades removíveis ainda podem ser verificadas.
 
+  O Intune não desativa esse recurso. Para desabilitá-lo, use um URI personalizado.
+
   [CSP do defender/AllowFullScanRemovableDriveScanning](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-defender#defender-allowfullscanremovabledrivescanning)
 
-- **Examinar unidades de rede mapeadas durante uma verificação completa**: **Habilitar** permite que o Defender examine arquivos em unidades de rede mapeadas. **Não configurado** (padrão) impede a verificação completa. Se os arquivos na unidade forem somente leitura, o Defender não consegue remover nenhum malware encontrado ali.
+- **Examinar unidades de rede mapeadas durante uma verificação completa**: **Habilitar** faz com que o Defender examine arquivos em unidades de rede mapeadas. Se os arquivos na unidade forem somente leitura, o Defender não consegue remover nenhum malware encontrado ali. Os usuários não podem desativar essa configuração.
+
+  Quando definido como **não configurado** (padrão), o Intune não toca nessa configuração. Se você habilitar a configuração e, em seguida, alterá-la novamente para **não configurado**, o Intune deixará a configuração no estado configurado anteriormente. Por padrão, o sistema operacional ativa esse recurso e permite que os usuários o alterem.
 
   Durante uma verificação rápida, as unidades de rede mapeadas ainda podem ser verificadas.
 
+  O Intune não desativa esse recurso. Para desabilitá-lo, use um URI personalizado.
+
   [CSP do defender/AllowFullScanOnMappedNetworkDrives](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-defender#defender-allowfullscanonmappednetworkdrives)
 
-- **Examinar arquivos abertos de pastas de rede**: **Não configurado** (padrão) permite que o Defender verifique arquivos em unidades de rede compartilhadas, por exemplo, arquivos acessados de um caminho UNC. **Habilitar** impede essa verificação. Se os arquivos na unidade forem somente leitura, o Defender não consegue remover nenhum malware encontrado ali.
+- **Verificar arquivos abertos de pastas de rede**: **habilitar** tem o defender verifica arquivos abertos de pastas de rede ou unidades de rede compartilhadas, como arquivos acessados de um caminho UNC. Os usuários não podem desativar essa configuração. Se os arquivos na unidade forem somente leitura, o Defender não consegue remover nenhum malware encontrado ali.
+
+  Quando definido como **não configurado** (padrão), o Intune não toca nessa configuração. Se você habilitar a configuração e, em seguida, alterá-la novamente para **não configurado**, o Intune deixará a configuração no estado configurado anteriormente. Por padrão, o sistema operacional verifica os arquivos abertos das pastas de rede e permite que os usuários o alterem.
+
+  O Intune não desativa esse recurso. Para desabilitá-lo, use um URI personalizado.
 
   [CSP do defender/AllowScanningNetworkFiles](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-defender#defender-allowscanningnetworkfiles)
 
-- **Proteção da nuvem**: **Não configurado** (padrão) permite que o Microsoft Active Protection Service receba informações sobre a atividade de malware de dispositivos gerenciados. **Habilitar** bloqueia esse recurso.
+- **Proteção da nuvem**: **Habilitar** ativa o Microsoft Active Protection Service para receber informações sobre a atividade de malware de dispositivos gerenciados. Os usuários não podem alterar essa configuração. 
+
+  Quando definido como **não configurado** (padrão), o Intune não toca nessa configuração. Se você habilitar a configuração e, em seguida, alterá-la novamente para **não configurado**, o Intune deixará a configuração no estado configurado anteriormente. Por padrão, o sistema operacional permite que o Microsoft Active Protection Service receba informações e permite que os usuários alterem essa configuração.
+
+  O Intune não desativa esse recurso. Para desabilitá-lo, use um URI personalizado.
 
   [CSP do defender/AllowCloudProtection](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-defender#defender-allowcloudprotection)
 
