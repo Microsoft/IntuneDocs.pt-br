@@ -6,8 +6,9 @@
     - name: Visão geral do Microsoft Intune
       href: what-is-intune.md
       displayName: ems; emm; azure ad; active directory; ad
-    - name: O que o Intune pode fazer para minha empresa?
-      href: get-started-evaluation.md
+    - name: Visão geral do gerenciamento de dispositivo
+      href: what-is-device-management.md
+      displayName: teamviewer
     - name: Novidades
       href: whats-new.md
       items:
@@ -15,7 +16,7 @@
           href: whats-new-app-ui.md
         - name: Recursos em desenvolvimento
           href: in-development.md
-- name: Inícios rápidos
+- name: Guias de início rápido
   items:
     - name: Experimente o Intune gratuitamente
       href: free-trial-sign-up.md
@@ -32,9 +33,6 @@
       href: tutorial-walkthrough-intune-portal.md
 - name: Conceitos
   items:
-    - name: O que é o gerenciamento de dispositivo?
-      href: what-is-device-management.md
-      displayName: teamviewer
     - name: O que é o Intune para Educação?
       href: introduction-intune-education.md
     - name: Arquitetura de alto nível
@@ -145,7 +143,7 @@
           href: account-sign-up.md
         - name: Configurar domínios
           href: custom-domain-name-configure.md
-        - name: Adicione usuários
+        - name: Adicionar usuários
           href: users-add.md
         - name: Adicionar grupos
           href: groups-add.md
@@ -201,7 +199,7 @@
           href: troubleshoot-company-resource-access-problems.md
 - name: Recursos
   items:
-    - name: Archive
+    - name: Arquivo morto
       items:
         - name: Arquivo de novidades
           items:
