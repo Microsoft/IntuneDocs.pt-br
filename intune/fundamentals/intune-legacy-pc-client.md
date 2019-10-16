@@ -1,0 +1,68 @@
+---
+title: Cliente para PC herdado do Intune e Intune no Azure
+description: Considerações ao usar o Intune no Azure para gerenciar os dispositivos do Windows de sua organização.
+keywords: ''
+author: ErikjeMS
+ms.author: erikje
+manager: dougeby
+ms.date: 06/15/2018
+ms.topic: archived
+ms.service: microsoft-intune
+ms.localizationpriority: medium
+ms.technology: ''
+ms.assetid: ''
+ms.reviewer: owenyen
+ms.suite: ems
+search.appverid: MET150
+ms.custom: intune-classic
+ms.collection: M365-identity-device-management
+ms.openlocfilehash: fe6b5967a5980304ba2f6c9af75491463dae1b4b
+ms.sourcegitcommit: 88b6e6d70f5fa15708e640f6e20b97a442ef07c5
+ms.translationtype: MTE75
+ms.contentlocale: pt-BR
+ms.lasthandoff: 10/02/2019
+ms.locfileid: "71736098"
+---
+# <a name="intune-on-azure-console-and-legacy-intune-pc-client"></a>Intune no console do Azure e cliente para PC herdado do Intune
+
+O Intune usa uma arquitetura de serviço de aplicativo SaaS baseada no Azure. O Azure fornece aprimoramentos consideráveis em desempenho, capacidade e escala. Isso oferece experiências de administração avançada do Intune e fluxos de trabalho otimizados no portal do Azure. 
+
+Ao usar o Intune no Azure para gerenciar os dispositivos do Windows de sua organização, considere os seguintes pontos:
+
+## <a name="manage-windows-10-devices-by-using-mdm"></a>Gerenciar dispositivos Windows 10 usando MDM
+
+Recomendamos que você use [MDM (gerenciamento de dispositivo móvel) para gerenciar seus dispositivos com Windows 10](../configuration/device-restrictions-windows-10.md) em vez de usar o cliente herdado para PC do Intune. A capacidade de gerenciar o Windows 10 por MDM está disponível no Intune no Portal do Azure. O MDM do Windows 10 fornece muitos recursos novos de gerenciamento e segurança que não estão disponíveis por meio do cliente herdado para PC do Intune.
+
+## <a name="legacy-pc-client-features-are-only-available-in-the-silverlight-console"></a>Recursos herdados do Cliente para PC só estão disponíveis no console do Silverlight
+
+Os fluxos de trabalho de gerenciamento do Cliente para PC do Intune usam o [Console de administração do Intune baseado no Silverlight](https://manage.microsoft.com/), o que tem as seguintes consequências:
+
+- Para todas as tarefas de gerenciamento sem agrupamento que usam o Cliente para PC do Intune, você deve usar o console do Silverlight.
+- Ao gerenciar grupos, você deve usar o [Intune no Portal do Azure](https://portal.azure.com/). Esse requisito existe porque o Intune usa Grupos do Azure AD em vez de Grupos herdados do Intune. 
+
+Devido à mudança para os Grupos do Azure AD, a filtragem "baseada em grupo" nas exibições de painel de console do Silverlight mudou um pouco. Para filtrar na interface do usuário atualizada do Silverlight, execute estas etapas:
+
+1. Selecione um modo de exibição.
+2. Na caixa **Filtros**, insira o nome do grupo que você deseja filtrar e pressione Enter. Isso filtrará o modo de exibição de lista para os dispositivos nesse grupo específico.
+
+   ![Entrada suspensa de filtros com nenhum selecionado](./media/intune-legacy-pc-client/image01.png)
+
+
+## <a name="continue-to-manage-windows-7-by-using-intune-pc-client"></a>Continuar a gerenciar o Windows 7 usando o cliente para PC do Intune
+
+Para Windows 7, que não pode ser gerenciado por meio do MDM, continuaremos a dar suporte a recursos existentes de cliente para PC do Intune somente no console do Silverlight. Considere a migração para o gerenciamento por MDM ao atualizar para o Windows 10.
+
+## <a name="mdm-capabilities"></a>Recursos de MDM
+
+Para obter uma comparação detalhada do cliente para PC e dos recursos de MDM, veja [Comparar o gerenciamento de PCs com Windows como computadores ou dispositivos móveis](pc-management-comparison.md). As atualizações do MDM continuarão a trazer novos recursos de gerenciamento para dispositivos Windows 10 inscritos em MDM, incluindo opções de avaliação para aplicativos Win 32. Confira [Novidades](whats-new.md) para conhecer as adições à versão mais recente do serviço.
+
+## <a name="switch-from-pc-client-to-mdm"></a>Alternar do cliente para PC para MDM
+
+Para alternar do gerenciamento de dispositivos Windows 10 com o Cliente para PC do Intune para o gerenciamento com MDM, execute estas etapas:
+
+1. No console do Silverlight, execute um **Apagamento seletivo** para cancelar o registro do dispositivo no Cliente para PC.
+  pop-up ![Warning com o botão de opção ' Apagar seletivamente o dispositivo ' selecionado @ no__t-1
+2. Registrar novamente o dispositivo usando [MDM (e/ou Ingresso no Azure AD)](../enrollment/windows-enroll.md).
+
+## <a name="next-steps"></a>Próximas etapas
+[Registrar dispositivos Windows](../enrollment/windows-enroll.md)
