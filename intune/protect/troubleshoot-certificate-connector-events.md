@@ -1,5 +1,6 @@
 ---
 title: Solução de problemas do Microsoft Intune Certificate Connector e de IDs de eventos | Microsoft Docs
+titleSuffix: Microsoft Intune
 description: Solucione problemas do Microsoft Intune Certificate Connector examinando IDs e descrições de eventos e examine os códigos de diagnóstico do serviço Intune Connector.
 keywords: ''
 author: brenduns
@@ -16,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 682d51269798dff181a3bd8384268da862118a70
-ms.sourcegitcommit: 88b6e6d70f5fa15708e640f6e20b97a442ef07c5
+ms.openlocfilehash: 2d798f22ee4e0f11f46626eec01ad3b739d61467
+ms.sourcegitcommit: dd6755383ba89824d1cc128698a65fde6bb2de55
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/02/2019
-ms.locfileid: "71721754"
+ms.lasthandoff: 10/14/2019
+ms.locfileid: "72306716"
 ---
 # <a name="intune-certificate-connector-events-and-diagnostic-codes"></a>Eventos e códigos de diagnóstico do Intune Certificate Connector
 
@@ -58,7 +59,7 @@ Da versão 6.1806.x.x em diante, o Serviço do Conector do Intune registra em lo
 
 | Código de Diagnóstico | Nome do Diagnóstico | Mensagem de Diagnóstico |
 | -------------   | -------------   | -------------      |
-| 0x00000000 | Sucesso  | Sucesso |
+| 0x00000000 | Êxito  | Êxito |
 | 0x00000400 | PKCS_Issue_CA_Unavailable  | A autoridade de certificação não é válida ou está inacessível. Verifique se que a autoridade de certificação está disponível e se o servidor pode se comunicar com ela. |
 | 0x00000401 | Symantec_ClientAuthCertNotFound  | O Certificado de Autenticação de Cliente da Symantec não foi encontrado no repositório de certificados local. Veja o artigo [Instalar o certificado autorização de registro da Symantec](certificates-digicert-configure.md#install-the-digicert-ra-certificate) para obter mais informações.  |
 | 0x00000402 | RevokeCert_AccessDenied  | A conta especificada não tem permissões para revogar um certificado da autoridade de certificação. Veja o campo Nome da Autoridade de Certificação nos detalhes da mensagem do evento para determinar a autoridade de certificação emissora.  |

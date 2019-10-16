@@ -15,12 +15,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 909dba16e04b11989caa79112c5a89fbb7c52114
-ms.sourcegitcommit: 88b6e6d70f5fa15708e640f6e20b97a442ef07c5
+ms.openlocfilehash: 39858a74cd9503ff40de51ab3680ccf509d25c49
+ms.sourcegitcommit: a2654f3642b43b29ab0e1cbb2dfa2b56aae18d0e
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/02/2019
-ms.locfileid: "71722911"
+ms.lasthandoff: 10/14/2019
+ms.locfileid: "72310952"
 ---
 # <a name="configure-infrastructure-to-support-scep-with-intune"></a>Configurar a infraestrutura para dar suporte ao SCEP com o Intune  
   
@@ -37,7 +37,7 @@ Antes de prosseguir, [crie e implante um perfil de *certificado confiável*](cer
 
 ### <a name="servers-and-server-roles"></a>Servidores e funções de servidor  
 A infraestrutura local a seguir precisa ser executada em servidores que ingressaram no domínio no Active Directory, com exceção do servidor proxy de aplicativo Web.  
-- **Autoridade de Certificação** – use uma AC (autoridade de certificação) corporativa dos Serviços de Certificados do Microsoft Active Directory que seja executada em uma Edição Enterprise do Windows Server 2008 R2 com o service pack 1 ou posterior. A versão usada do Windows Server precisa ter o suporte da Microsoft. Não há suporte para ACs autônomas. Para obter mais informações, confira [Instalar a autoridade de certificação](http://technet.microsoft.com/library/jj125375.aspx). Se a AC executar o Windows Server 2008 R2 SP1, você precisará [instalar o hotfix da KB2483564](http://support.microsoft.com/kb/2483564/).  
+- **Autoridade de Certificação** – use uma AC (autoridade de certificação) corporativa dos Serviços de Certificados do Microsoft Active Directory que seja executada em uma Edição Enterprise do Windows Server 2008 R2 com o service pack 1 ou posterior. A versão usada do Windows Server precisa ter o suporte da Microsoft. Não há suporte para ACs autônomas. Para obter mais informações, confira [Instalar a autoridade de certificação](https://technet.microsoft.com/library/jj125375.aspx). Se a AC executar o Windows Server 2008 R2 SP1, você precisará [instalar o hotfix da KB2483564](https://support.microsoft.com/kb/2483564/).  
 
 - **Função de servidor NDES** – é necessário configurar uma função de servidor NDES (Serviço de Registro de Dispositivo de Rede) no Windows Server 2012 R2 ou posterior. Em uma seção posterior deste artigo, orientaremos você na [instalação do NDES](#set-up-ndes).  
 
@@ -45,7 +45,7 @@ A infraestrutura local a seguir precisa ser executada em servidores que ingressa
   - Não é possível usar o NDES instalado no servidor que hospeda a AC corporativa.  
   - Você instalará o Microsoft Intune Certificate Connector no mesmo servidor que hospeda o NDES.  
 
-  Para saber mais sobre o NDES, confira [Diretrizes do Serviço de Registro de Dispositivo de Rede](http://technet.microsoft.com/library/hh831498.aspx) na documentação do Windows Server e [Como usar um módulo de política com o Serviço de Registro de Dispositivo de Rede](https://technet.microsoft.com/library/dn473016.aspx).  
+  Para saber mais sobre o NDES, confira [Diretrizes do Serviço de Registro de Dispositivo de Rede](https://technet.microsoft.com/library/hh831498.aspx) na documentação do Windows Server e [Como usar um módulo de política com o Serviço de Registro de Dispositivo de Rede](https://technet.microsoft.com/library/dn473016.aspx).  
 
 - **Microsoft Intune Certificate Connector** – é necessário ter o Microsoft Intune Certificate Connector para usar perfis de Certificado SCEP com o Intune. Este artigo orientará você na [instalação desse conector](#install-the-intune-certificate-connector).  
 
@@ -61,7 +61,7 @@ A seguinte infraestrutura local é opcional:
 
 - **Servidor Proxy de Aplicativo Web** (opcional) – use um servidor que execute o Windows Server 2012 R2 ou posterior como um servidor WAP (Proxy de aplicativo Web) para publicar a URL do NDES na Internet.  Isso permite que os dispositivos para a intranet e a Internet obtenham certificados.
 
-  O servidor que hospeda o WAP [deve instalar uma atualização](http://blogs.technet.com/b/ems/archive/2014/12/11/hotfix-large-uri-request-in-web-application-proxy-on-windows-server-2012-r2.aspx) que habilita o suporte para as URLs longas que são usadas pelo Serviço de Registro de Dispositivo de Rede. Essa atualização está incluída no [pacote cumulativo de atualizações de dezembro de 2014](http://support.microsoft.com/kb/3013769)ou individualmente no [KB3011135](http://support.microsoft.com/kb/3011135).  
+  O servidor que hospeda o WAP [deve instalar uma atualização](https://blogs.technet.com/b/ems/archive/2014/12/11/hotfix-large-uri-request-in-web-application-proxy-on-windows-server-2012-r2.aspx) que habilita o suporte para as URLs longas que são usadas pelo Serviço de Registro de Dispositivo de Rede. Essa atualização está incluída no [pacote cumulativo de atualizações de dezembro de 2014](https://support.microsoft.com/kb/3013769)ou individualmente no [KB3011135](https://support.microsoft.com/kb/3011135).  
 
   O servidor WAP precisa ter um certificado SSL que corresponda ao nome que está sendo publicado para clientes externos e confiar no certificado SSL usado no computador que hospeda o serviço do NDES. Esses certificados permitem que o servidor WAP encerre a conexão SSL de clientes e crie outra conexão SSL com o serviço do NDES.  
 
