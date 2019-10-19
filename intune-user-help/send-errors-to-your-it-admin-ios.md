@@ -9,6 +9,7 @@ ms.date: 05/23/2017
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
+ms.subservice: end-user
 ms.technology: ''
 ms.assetid: fbc9c2b9-b454-4b33-86cc-650742bbf1e1
 searchScope:
@@ -18,12 +19,12 @@ ms.reviewer: esmich
 ms.suite: ems
 ms.custom: intune-enduser
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 7a6b2e04e40aa12e791e34f3899686d5f5661df2
-ms.sourcegitcommit: bccfbf1e3bdc31382189fc4489d337d1a554e6a1
+ms.openlocfilehash: 81f90c8022fb471ffa8783d636c88ce67a296595
+ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
 ms.translationtype: MTE75
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/03/2019
-ms.locfileid: "67546704"
+ms.lasthandoff: 10/16/2019
+ms.locfileid: "72502065"
 ---
 # <a name="send-errors-to-your-company-support-for-issues-with-your-ios-device"></a>Enviar erros para o suporte de sua empresa sobre problemas com seu dispositivo iOS
 Às vezes, pode ocorrer um erro durante o uso do aplicativo do Portal da Empresa em seu dispositivo iOS. Quando isso ocorrer, você pode enviar por email detalhes sobre o erro para o profissional de suporte da sua empresa. Esses detalhes darão o contexto necessário para solucionar o problema para você.

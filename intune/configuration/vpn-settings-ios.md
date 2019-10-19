@@ -5,21 +5,22 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 09/05/2019
+ms.date: 10/18/2019
 ms.topic: reference
 ms.service: microsoft-intune
+ms.subservice: configuration
 ms.localizationpriority: medium
 ms.technology: ''
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 274b5a8d45f9fb525010e4d225172a6a1ce22275
-ms.sourcegitcommit: 88b6e6d70f5fa15708e640f6e20b97a442ef07c5
+ms.openlocfilehash: f6d7b831899a740e722560c509c4b09c31d2a42b
+ms.sourcegitcommit: 8c25aeefb7cbc6444a8596af22fccd1c5426877a
 ms.translationtype: MTE75
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/02/2019
-ms.locfileid: "71734148"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72593782"
 ---
 # <a name="add-vpn-settings-on-ios-devices-in-microsoft-intune"></a>Adicionar configurações de VPN em dispositivos iOS no Microsoft Intune
 
@@ -72,6 +73,8 @@ As configurações mostradas na lista a seguir são determinadas pelo tipo de co
     > [!NOTE]
     > Se o nome de usuário e senha forem usados como o método de autenticação para a VPN IPsec Cisco, eles deverão fornecer o SharedSecret por meio de um perfil personalizado do Apple Configurator.
 
+  - **Credencial derivada**: se nenhum emissor de credencial derivado tiver sido configurado, o Intune solicitará que você faça isso.
+
 - **URLs excluídas** (somente Zscaler): quando conectadas à VPN do Zscaler, as URLs listadas podem ser acessadas de fora da nuvem do Zscaler. 
 
 - **Túnel dividido**: **Habilite** ou **Desabilite** para permitir que os dispositivos decidam qual conexão usar dependendo do tráfego. Por exemplo, um usuário em um hotel usa a conexão VPN para acessar arquivos de trabalho, mas utiliza a rede padrão do hotel para navegação regular na Web.
@@ -105,7 +108,7 @@ As configurações mostradas na lista a seguir são determinadas pelo tipo de co
 
 ## <a name="ikev2-settings"></a>Configurações IKEv2
 
-Essas configurações se aplicam quando você escolhe o **tipo de conexão** > **IKEv2**.
+Essas configurações se aplicam quando você escolhe o **tipo de conexão**  > **IKEv2**.
 
 - **Identificador remoto**: Insira o endereço IP da rede, o FQDN, o userfqdn ou o ASN1DN do servidor IKEv2. Por exemplo, insira `10.0.0.3` ou `vpn.contoso.com`. Normalmente, você insere o mesmo valor que o [**nome da conexão**](#base-vpn-settings) (neste artigo). Mas, isso depende de suas configurações de servidor IKEv2.
 
@@ -154,8 +157,8 @@ Essas configurações se aplicam quando você escolhe o **tipo de conexão** > *
     - SHA2-256 (padrão)
     - SHA2-384
     - SHA2-512
-  - **Grupo Diffie-Hellman**: selecione o grupo desejado. O padrão é o grupo `2`.
-  - **Tempo de vida** (minutos): escolha por quanto tempo a associação de segurança permanecerá ativa até que as chaves sejam giradas. Insira um valor inteiro entre `10` e `1440` (1440 minutos é de 24 horas). O padrão é `1440`.
+  - **Grupo Diffie-Hellman**: selecione o grupo desejado. O padrão é `2` de grupo.
+  - **Tempo de vida** (minutos): escolha por quanto tempo a associação de segurança permanecerá ativa até que as chaves sejam giradas. Insira um valor inteiro entre `10` e `1440` (1440 minutos é 24 horas). O padrão é `1440`.
 
 - **Configurar um conjunto separado de parâmetros para associações de segurança filho**: o Ios permite que você configure parâmetros separados para a conexão Ike e quaisquer conexões filho. 
 
@@ -173,8 +176,8 @@ Essas configurações se aplicam quando você escolhe o **tipo de conexão** > *
     - SHA2-256 (padrão)
     - SHA2-384
     - SHA2-512
-  - **Grupo Diffie-Hellman**: selecione o grupo desejado. O padrão é o grupo `2`.
-  - **Tempo de vida** (minutos): escolha por quanto tempo a associação de segurança permanecerá ativa até que as chaves sejam giradas. Insira um valor inteiro entre `10` e `1440` (1440 minutos é de 24 horas). O padrão é `1440`.
+  - **Grupo Diffie-Hellman**: selecione o grupo desejado. O padrão é `2` de grupo.
+  - **Tempo de vida** (minutos): escolha por quanto tempo a associação de segurança permanecerá ativa até que as chaves sejam giradas. Insira um valor inteiro entre `10` e `1440` (1440 minutos é 24 horas). O padrão é `1440`.
 
 ## <a name="automatic-vpn-settings"></a>Configurações automáticas de VPN
 

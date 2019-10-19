@@ -9,6 +9,7 @@ ms.date: 07/29/2019
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
+ms.subservice: end-user
 ms.technology: ''
 ms.assetid: f0ba4cbb-ef0a-4335-86bf-f1d006867fa2
 searchScope:
@@ -18,12 +19,12 @@ ms.reviewer: arnab
 ms.suite: ems
 ms.custom: intune-enduser
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 16c6708fb730c459f41fec573a939bfb4fb5ddda
-ms.sourcegitcommit: 549352bdea93cc2809e3e0010bfcc10bd44dc728
+ms.openlocfilehash: 25ec84946aec9562aedce12b4199269f8de06f76
+ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
 ms.translationtype: MTE75
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/09/2019
-ms.locfileid: "68862132"
+ms.lasthandoff: 10/16/2019
+ms.locfileid: "72500020"
 ---
 # <a name="install-missing-certificate-required-by-your-organization"></a>Instalar o certificado ausente exigido pela sua organização  
 
@@ -43,8 +44,8 @@ Conclua estas etapas para habilitar o acesso ao navegador. Depois de habilitar o
 
 1. No aplicativo Portal da Empresa, vá para o canto direito e selecione o menu.  
 2. Selecione **Configurações**.  
-3. Ao lado **de habilitar o** acesso **ao**navegador, selecione Habilitar.  
-4. Na tela administrador do dispositivo, selecione **ativar**. 
+3. Ao lado de **habilitar o acesso ao navegador** , selecione **habilitar**.  
+4. Na tela administrador do dispositivo, selecione **Ativar**. 
 
 ## <a name="identify-and-download-the-missing-certificate-through-web-search"></a>Identificar e baixar o certificado ausente por meio da pesquisa na Web
 Conclua estas etapas para identificar e instalar manualmente o certificado em seu dispositivo.  

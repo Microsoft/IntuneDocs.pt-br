@@ -9,6 +9,7 @@ manager: dougeby
 ms.date: 01/01/2018
 ms.topic: archived
 ms.service: microsoft-intune
+ms.subservice: fundamentals
 ms.localizationpriority: medium
 ms.technology: ''
 ms.assetid: 9549c072-ac3d-4d14-a931-a2eda8846217
@@ -17,16 +18,16 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic-keep
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 4de635066b2f054b9061f6944bc4010a56d54526
-ms.sourcegitcommit: 88b6e6d70f5fa15708e640f6e20b97a442ef07c5
+ms.openlocfilehash: 2c736c905045fd3afd40a12243986fbe69452ecd
+ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
 ms.translationtype: MTE75
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/02/2019
-ms.locfileid: "71735812"
+ms.lasthandoff: 10/16/2019
+ms.locfileid: "72502820"
 ---
 # <a name="help-protect-windows-pcs-using-windows-firewall-policies-in-microsoft-intune"></a>Ajude a proteger computadores Windows usando políticas de Firewall do Windows no Microsoft Intune
 
-[!INCLUDE [classic-portal](../../intune-classic/includes/classic-portal.md)]
+[!INCLUDE [classic-portal](../includes/classic-portal.md)]
 
 > [!NOTE]
 > As informações descritas neste tópico se aplicam somente a áreas de trabalho do Windows que estão sendo gerenciadas como computadores por meio do cliente de software do Intune. Se você quiser gerenciar as configurações de firewall para computadores Windows registrados como dispositivos móveis, consulte [Adicionar configurações de proteção de ponto de extremidade no Intune](../protect/endpoint-protection-configure.md).
@@ -43,7 +44,7 @@ A política de Firewall do Windows permite criar e implantar as configurações 
 > [!NOTE]
 > Se a política do Microsoft Intune e a Política de grupo estiverem configuradas para gerenciar a mesma configuração no computador, a configuração da Política de grupo substituirá a política do Microsoft Intune. Para obter informações sobre como evitar conflitos entre a política do Intune e a Política de Grupo, consulte [Resolve GPO and Microsoft Intune policy conflicts](resolve-gpo-and-microsoft-intune-policy-conflicts.md) (Resolver conflitos de política de GPO e do Microsoft Intune).
 >
-> Se você quiser implantar configurações de Firewall do Windows em computadores que executam o Windows Vista, você deve primeiro instalar o [Hotfix KB971800](http://support2.microsoft.com/kb/971800) nesses computadores.
+> Se você quiser implantar configurações de Firewall do Windows em computadores que executam o Windows Vista, você deve primeiro instalar o [Hotfix KB971800](https://support2.microsoft.com/kb/971800) nesses computadores.
 
 > [!IMPORTANT]
 > Para gerenciar o Firewall do Windows usando o Intune, verifique se os dois serviços a seguir estão habilitados nos computadores que você gerencia:
@@ -84,7 +85,7 @@ Essas configurações de política configuram Firewall do Windows para bloquear 
 O valor padrão para cada uma dessas configurações é **Sim**, que é o valor mais seguro.
 
 > [!IMPORTANT]
-> Se seu ambiente incluir computadores gerenciados que executam o Windows Vista sem service packs instalados, você deverá instalar a atualização associada ao [artigo 971800](http://go.microsoft.com/fwlink/?LinkId=188405) da Base de Dados de Conhecimento Microsoft ou desabilitar as configurações da política **Bloquear todas as conexões de entrada** nas políticas implantadas nesses computadores.
+> Se seu ambiente incluir computadores gerenciados que executam o Windows Vista sem service packs instalados, você deverá instalar a atualização associada ao [artigo 971800](https://go.microsoft.com/fwlink/?LinkId=188405) da Base de Dados de Conhecimento Microsoft ou desabilitar as configurações da política **Bloquear todas as conexões de entrada** nas políticas implantadas nesses computadores.
 
 ### <a name="notify-the-user-when-windows-firewall-blocks-a-new-program"></a>Notificar o usuário quando o Firewall do Windows bloquear um novo programa
 

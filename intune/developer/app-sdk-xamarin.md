@@ -8,6 +8,7 @@ manager: dougeby
 ms.date: 08/21/2019
 ms.topic: reference
 ms.service: microsoft-intune
+ms.subservice: developer
 ms.localizationpriority: medium
 ms.technology: ''
 ms.assetid: 275d574b-3560-4992-877c-c6aa480717f4
@@ -16,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: de367f28f3f1c7731e5ab67d904aec799925cc03
-ms.sourcegitcommit: 88b6e6d70f5fa15708e640f6e20b97a442ef07c5
+ms.openlocfilehash: 19202d4387635b7cd1f7e4604d755fb8a213d327
+ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
 ms.translationtype: MTE75
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/02/2019
-ms.locfileid: "71733719"
+ms.lasthandoff: 10/16/2019
+ms.locfileid: "72503443"
 ---
 # <a name="microsoft-intune-app-sdk-xamarin-bindings"></a>Associações Xamarin do SDK de Aplicativo do Microsoft Intune
 
@@ -108,9 +109,9 @@ Aplicativos de exemplo destacando a funcionalidade de MAM em aplicativos Xamarin
 Uma visão geral completa para a integração do SDK do aplicativo do Intune pode ser encontrada no [guia do desenvolvedor do SDK do Aplicativo Microsoft Intune para Android](app-sdk-android.md). Conforme você lê o guia e integra o SDK do Aplicativo Intune ao seu aplicativo Xamarin, as seções a seguir destinam-se para realçar as diferenças entre a implementação para um aplicativo nativo do Android desenvolvido em Java e um aplicativo Xamarin desenvolvido em C#. Estas seções devem ser tratadas como complementares e não podem atuar como um substituto à leitura do guia em sua totalidade.
 
 #### <a name="remapper"></a>Remapeador
-A partir da versão 1.4428.1, o pacote `Microsoft.Intune.MAM.Remapper` pode ser adicionado a um aplicativo Xamarin. Android como [ferramentas de compilação](app-sdk-android.md#build-tooling) para executar a classe MAM, o método e as substituições dos serviços de sistemas. Se o remapeador for incluído, as seções de substituição equivalentes de MAM dos métodos renomeados e de aplicativo MAM serão executadas automaticamente quando o aplicativo for compilado.
+A partir da versão 1.4428.1, o pacote `Microsoft.Intune.MAM.Remapper` pode ser adicionado a um aplicativo Xamarin. Android como [ferramentas de compilação](app-sdk-android.md#build-tooling) para executar as substituições de classe, método e serviços de sistemas MAM. Se o remapeador for incluído, as seções de substituição equivalentes de MAM dos métodos renomeados e de aplicativo MAM serão executadas automaticamente quando o aplicativo for compilado.
 
-Para excluir uma classe de MAM-unificação pelo remapeador, a seguinte propriedade pode ser adicionada em seu arquivo de projetos `.csproj`.
+Para excluir uma classe de MAM-unificação pelo remapeador, a seguinte propriedade pode ser adicionada em seu arquivo de `.csproj` de projetos.
 
 ```xml
   <PropertyGroup>
@@ -125,7 +126,7 @@ Para excluir uma classe de MAM-unificação pelo remapeador, a seguinte propried
 Em muitos casos, um método disponível na classe Android foi marcado como final na classe de MAM de substituição. Nesse caso, a classe de MAM de substituição fornece um método nomeado da mesma forma (com o sufixo `MAM`), que deve ser substituído em vez disso. Por exemplo, ao derivar de `MAMActivity`, em vez de substituir `OnCreate()` e chamar `base.OnCreate()`, `Activity` deve substituir `OnMAMCreate()` e chamar `base.OnMAMCreate()`.
 
 #### <a name="mam-applicationapp-sdk-androidmdmamapplication"></a>[Aplicativo MAM](app-sdk-android.md#mamapplication)
-Seu aplicativo deve definir uma classe `Android.App.Application`. Se você estiver integrando o MAM manualmente, ele deverá herdar de `MAMApplication`. Verifique se a subclasse está corretamente decorada com o atributo `[Application]` e substitui o construtor `(IntPtr, JniHandleOwnership)`.
+Seu aplicativo deve definir uma classe de `Android.App.Application`. Se você estiver integrando o MAM manualmente, ele deverá herdar de `MAMApplication`. Verifique se a subclasse está corretamente decorada com o atributo `[Application]` e substitui o construtor `(IntPtr, JniHandleOwnership)`.
 
 ```csharp
     [Application]

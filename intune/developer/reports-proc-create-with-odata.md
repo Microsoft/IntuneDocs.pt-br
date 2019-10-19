@@ -9,6 +9,7 @@ manager: dougeby
 ms.date: 08/15/2019
 ms.topic: reference
 ms.service: microsoft-intune
+ms.subservice: developer
 ms.localizationpriority: medium
 ms.technology: ''
 ms.assetid: A2C8A336-29D3-47DF-BB4A-62748339391D
@@ -17,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: b1a508a6c9bf834268a797f028a32c7651cf394c
-ms.sourcegitcommit: 88b6e6d70f5fa15708e640f6e20b97a442ef07c5
+ms.openlocfilehash: d00ae284ff4ea911cecb571cfe765eafe32fac02
+ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
 ms.translationtype: MTE75
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/02/2019
-ms.locfileid: "71733472"
+ms.lasthandoff: 10/16/2019
+ms.locfileid: "72490483"
 ---
 # <a name="create-an-intune-report-from-the-odata-feed-with-power-bi"></a>Criar um relatório do Intune do feed OData com o Power BI
 
@@ -57,7 +58,7 @@ Instale a última versão do Power BI Desktop. Você pode baixar o Power BI Desk
 2. Abra o painel do **Data Warehouse do Intune** selecionando o link do Data Warehouse em **Outras tarefas**, no lado direito da folha **Microsoft Intune – Visão geral**.
 3. Copie a URL personalizada do feed. Por exemplo: `https://fef.tenant.manage.microsoft.com/ReportingService/DataWarehouseFEService?api-version=beta`
 4. Abra o Power BI Desktop.
-5. Na BarraDeMenu, selecione **arquivo** > **obter dados** > **feed OData**.
+5. Na menu de menus, selecione **arquivo**  > **obter dados**  > **feed OData**.
 6. Cole a URL de feed personalizada, que você copiou da etapa anterior, na caixa URL na janela **feed OData** .
 7. Selecione **Básico**.
 
@@ -93,9 +94,9 @@ Um gráfico de mapa de árvore mostra dados hierárquicos, como caixas dentro de
 
 1. No painel **visualizações** , localize e selecione **mapa**de página. O gráfico de **mapa** de plano será adicionado à tela de relatório.
 2. No painel **campos** , localize a tabela `devices`.
-3. Expanda a tabela `devices` e selecione o campo de dados `manufacturer`.
-4. Arraste o campo de dados `manufacturer` para a tela relatório e solte-o no gráfico **mapa** de plano.
-5. Arraste o campo de dados `deviceKey` da tabela `devices` para o painel **visualizações** e solte-o na seção **valores** na caixa rotulada **adicionar campos de dados aqui**.  
+3. Expanda a tabela `devices` e selecione o campo dados de `manufacturer`.
+4. Arraste o campo `manufacturer` dados para a tela relatório e solte-o no gráfico **mapa** de plano.
+5. Arraste o campo `deviceKey` dados da tabela `devices` para o painel **visualizações** e solte-o na seção **valores** na caixa rotulada **adicionar campos de dados aqui**.  
 
 Agora você tem uma representação visual que mostra a distribuição dos fabricantes de dispositivos na sua organização.
 
@@ -107,10 +108,10 @@ Você pode adicionar um filtro no mapa de árvore para poder responder perguntas
 
 1. Para adicionar um filtro, selecione a tela de relatório e, em seguida, o **ícone Segmentação** (![Mapa de árvore com modelo de dados e relações suportadas](./media/reports-proc-create-with-odata/reports-create-slicer.png)) em **Visualizações**. A visualização de **segmentação** vazia será exibida na tela.
 2. No painel **campos** , localize a tabela `ownerTypes`.
-3. Expanda a tabela `ownerTypes` e selecione o campo de dados `ownerTypeName`.
-4. Arraste o campo de dados `onwerTypeName` da tabela `ownerTypes` para o painel **filtros** e solte-o na seção **filtros nesta página** na caixa denominada **adicionar campos de dados aqui**.  
+3. Expanda a tabela `ownerTypes` e selecione o campo dados de `ownerTypeName`.
+4. Arraste o campo de dados `onwerTypeName` da tabela `ownerTypes` para o painel **filtros** e solte-o na seção **filtros nesta página** na caixa rotulada **adicionar campos de dados aqui**.  
 
-   Na tabela `OwnerTypes`, há um campo de dados chamado @no__t-qual contém um dado sobre se um dispositivo é de propriedade da empresa ou pessoal. Como você deseja mostrar nomes amigáveis nesse filtro, procure a tabela `ownerTypes` e arraste o **ownerTypeName** para a segmentação de dados. Este exemplo mostra como o modelo de dados dá suporte a relações entre as tabelas.
+   Na tabela `OwnerTypes`, há um campo de dados chamado `OwnerTypeKey`that contém um dado sobre se um dispositivo é de propriedade da empresa ou pessoal. Como você deseja mostrar nomes amigáveis nesse filtro, procure a tabela `ownerTypes` e arraste o **ownerTypeName** para a segmentação de dados. Este exemplo mostra como o modelo de dados dá suporte a relações entre as tabelas.
 
 ![Mapa de árvore com o filtro – dá suporte a relações entre tabelas](./media/reports-proc-create-with-odata/reports-create-08_ownertype.png)
 

@@ -9,6 +9,7 @@ ms.date: 04/19/2019
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
+ms.subservice: end-user
 ms.technology: ''
 ms.assetid: 68e5a234-4353-4cb9-b869-4f2af5e59f31
 searchScope:
@@ -18,16 +19,16 @@ ms.reviewer: arnab
 ms.suite: ems
 ms.custom: intune-enduser
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: fe6cd46f6a85204d5859993a69ac5bf5b253e048
-ms.sourcegitcommit: bccfbf1e3bdc31382189fc4489d337d1a554e6a1
+ms.openlocfilehash: 0e4ed29d6a2da79b7bfd3502ebf8ce53259f1ae6
+ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
 ms.translationtype: MTE75
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/03/2019
-ms.locfileid: "67546337"
+ms.lasthandoff: 10/16/2019
+ms.locfileid: "72506079"
 ---
 # <a name="install-the-company-portal-app-for-android"></a>Instalar o aplicativo Portal da Empresa para Android
 
-O Portal da Empresa é um aplicativo que fornece acesso aos aplicativos e ao email de sua empresa ou escola, bem como conexões com a Internet. Esse aplicativo ajuda você a manter ambas as informações de sua organização seguras mantendo seu dispositivo seguro – por exemplo, mantendo os aplicativos da empresa atualizados ou garantindo o bloqueio automático do dispositivo após determinado período. Para saber mais sobre os recursos do Portal da empresa e sua parte no gerenciamento de dispositivo, consulte [por que registrar seu dispositivo Android](why-enroll-android-device.md).  
+O Portal da Empresa é um aplicativo que fornece acesso aos aplicativos e ao email de sua empresa ou escola, bem como conexões com a Internet. Esse aplicativo ajuda você a manter ambas as informações de sua organização seguras mantendo seu dispositivo seguro – por exemplo, mantendo os aplicativos da empresa atualizados ou garantindo o bloqueio automático do dispositivo após determinado período. Para saber mais sobre os recursos de Portal da Empresa e sua parte no gerenciamento de dispositivos, confira [por que registrar seu dispositivo Android](why-enroll-android-device.md).  
 
 1. Toque em **Início** > **Play Store**.
 

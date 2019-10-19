@@ -9,6 +9,7 @@ ms.date: 06/11/2019
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
+ms.subservice: end-user
 ms.technology: ''
 ms.assetid: c002bcb2-ae37-478d-acf3-2bf51faae490
 searchScope:
@@ -16,12 +17,12 @@ searchScope:
 ROBOTS: ''
 ms.custom: intune-enduser
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 28121178e2a5a3aa7e6d16b0a5936f1cad627c09
-ms.sourcegitcommit: 1ba785f6e51517b63588a292ab5c45b9d9144b72
+ms.openlocfilehash: d2bdc4433e48fd77c12bfd5db706f8d226bf95a6
+ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
 ms.translationtype: MTE75
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/12/2019
-ms.locfileid: "66840964"
+ms.lasthandoff: 10/16/2019
+ms.locfileid: "72506048"
 ---
 # <a name="how-to-update-the-company-portal-app"></a>Como atualizar o aplicativo Portal da Empresa
 
@@ -44,11 +45,11 @@ Quando uma nova versão estiver disponível, uma opção **Atualizar** será exi
 
 ## <a name="update-the-company-portal-app-on-your-macos-device"></a>Atualizar o aplicativo Portal da Empresa em seu dispositivo macOS
 
-Configure o Portal da empresa para instalar automaticamente as atualizações assim que estiverem disponíveis. 
+Configure Portal da Empresa para instalar atualizações automaticamente à medida que elas se tornarem disponíveis. 
 
-1. Abra o Portal da empresa e vá para **ajudar**. 
+1. Abra Portal da Empresa e vá para **ajuda**. 
 2. Selecione **Verificar atualizações**. 
-3. Na tela de Microsoft AutoUpdate, selecione **baixar e instalar automaticamente**. 
+3. Na tela Microsoft AutoUpdate, selecione **baixar e instalar automaticamente**. 
 
 Para exibir as atualizações disponíveis, selecione **verificar se há atualizações**.  
 

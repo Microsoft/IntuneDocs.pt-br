@@ -8,6 +8,7 @@ manager: dougeby
 ms.date: 08/02/2019
 ms.topic: troubleshooting
 ms.service: microsoft-intune
+ms.subservice: remote-actions
 ms.localizationpriority: medium
 ms.technology: ''
 ms.assetid: ''
@@ -17,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: e1b3139db8b217dceb495f67e809eae8319eae0c
-ms.sourcegitcommit: 88b6e6d70f5fa15708e640f6e20b97a442ef07c5
+ms.openlocfilehash: 96f6dc3d1a8f8589395cf49b3bb934adadf437a4
+ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
 ms.translationtype: MTE75
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/02/2019
-ms.locfileid: "71735695"
+ms.lasthandoff: 10/16/2019
+ms.locfileid: "72508500"
 ---
 # <a name="troubleshoot-device-actions-in-intune"></a>Solucionar problemas de ações de dispositivo no Intune
 
@@ -68,7 +69,7 @@ Esse comportamento é esperado. O Google não permite a redefinição de fábric
 Como desativar um dispositivo não revoga tokens de acesso. Você pode usar políticas de acesso condicional para atenuar essa condição.
 
 ### <a name="how-can-i-monitor-a-retirewipe-action-after-it-was-issued"></a>Como posso monitorar uma ação de desativar/apagar após sua emissão?
-Acesse o **Intune** > **dispositivos** > **ações de dispositivo**.
+Vá para o **Intune**  > **dispositivos**  > **ações do dispositivo**.
 
 ### <a name="why-do-wipes-sometimes-show-as-pending-indefinitely"></a>Por que as limpezas às vezes são mostradas como pendentes de forma indefinida?
 Os dispositivos nem sempre relatam seu status de volta para o serviço do Intune antes que a redefinição seja iniciada. Assim, a ação é mostrada como pendente. Se você confirmou que a ação foi bem-sucedida, exclua o dispositivo do serviço.

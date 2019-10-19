@@ -8,6 +8,7 @@ manager: dougeby
 ms.date: 08/12/2019
 ms.topic: reference
 ms.service: microsoft-intune
+ms.subservice: developer
 ms.localizationpriority: medium
 ms.technology: ''
 ms.assetid: 99ab0369-5115-4dc8-83ea-db7239b0de97
@@ -16,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: c535dbd91605a41fdc1c526ecd8ff9d9fc9e2448
-ms.sourcegitcommit: 88b6e6d70f5fa15708e640f6e20b97a442ef07c5
+ms.openlocfilehash: b42642ec593112b0b247cd85b9230f68d6a803b8
+ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
 ms.translationtype: MTE75
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/02/2019
-ms.locfileid: "71733667"
+ms.lasthandoff: 10/16/2019
+ms.locfileid: "72490979"
 ---
 # <a name="prepare-ios-apps-for-app-protection-policies-with-the-intune-app-wrapping-tool"></a>Preparar aplicativos iOS para políticas de proteção de aplicativo com a Ferramenta de Encapsulamento de Aplicativos do Intune
 
@@ -203,8 +204,8 @@ Você pode usar os seguintes parâmetros de linha de comando com a Ferramenta de
 |**-p**|`<Path of your provisioning profile for iOS apps>`|
 |**-c**|`<SHA1 hash of the signing certificate>`|
 |**-h**| Exibe informações de uso detalhadas das propriedades de linha de comando disponíveis para a Ferramenta de Disposição do Aplicativo. |
-|**-aa**|(Opcional) `<Authority URI of the input app if the app uses the Azure Active Directory Authentication Library>`, ou seja `login.windows.net/common` |
-|**-ac**|(Opcional) `<Client ID of the input app if the app uses the Azure Active Directory Authentication Library>` é o GUID no campo ID do cliente é da listagem do aplicativo na folha registro do aplicativo. |
+|**-aa**|(Opcional) `<Authority URI of the input app if the app uses the Azure Active Directory Authentication Library>` ou seja `login.windows.net/common` |
+|**-ac**|(Opcional) `<Client ID of the input app if the app uses the Azure Active Directory Authentication Library>` é o GUID no campo ID do cliente é da listagem do seu aplicativo na folha de registro do aplicativo. |
 |**-ar**|(Opcional) `<Redirect/Reply URI of the input app if the app uses the Azure Active Directory Authentication Library>` é o URI de redirecionamento configurado no registro do aplicativo. Normalmente, seria o protocolo de URL do aplicativo que o aplicativo Microsoft Authenticator retornaria após a autenticação orientada. |
 |**-v**| (Opcional) Produz mensagens detalhadas no console. Recomendamos o uso desse sinalizador para depurar quaisquer erros. |
 |**-e**| (Opcional) Use esse sinalizador para que a Ferramenta de Disposição do Aplicativo remova direitos ausentes conforme processa o aplicativo. Consulte [Definindo direitos de aplicativo](#setting-app-entitlements) para obter mais detalhes.|

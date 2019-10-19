@@ -9,6 +9,7 @@ manager: dougeby
 ms.date: 7/8/2019
 ms.topic: archived
 ms.service: microsoft-intune
+ms.subservice: fundamentals
 ms.localizationpriority: medium
 ms.technology: ''
 ms.assetid: 9ba01d60-4a03-4e3e-9aba-8be905c0054c
@@ -18,12 +19,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 1af106227442e91121f6c8c653c261bd677f3a9f
-ms.sourcegitcommit: f04e21ec459998922ba9c7091ab5f8efafd8a01c
+ms.openlocfilehash: 327e0d56400a2aac545d1bae92279e242aa2006a
+ms.sourcegitcommit: 0be25b59c8e386f972a855712fc6ec3deccede86
 ms.translationtype: MTE75
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/02/2019
-ms.locfileid: "71814188"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72585234"
 ---
 # <a name="whats-new-in-the-microsoft-intune---previous-months"></a>Novidades do Microsoft Intune – meses anteriores
 
@@ -68,7 +69,7 @@ Vamos adicionar uma configuração que permite personalizar a aparência da tela
 Para ver as configurações de quiosque, consulte [Restrições de dispositivo do Android Enterprise](../configuration/device-restrictions-android-for-work.md).
 
 #### <a name="app-protection-policy-assignment-save-and-apply----3104570---"></a>Salvar e aplicar atribuição de política de proteção de aplicativo <!-- 3104570 -->
-Agora, você tem mais controle sobre suas [atribuições de política de proteção de aplicativo](../apps/app-protection-policies.md#deploy-a-policy-to-users). Ao selecionar *Atribuições* para definir ou editar as atribuições de uma política, você deve **Salvar** sua configuração antes de aplicar a alteração. Use **Descartar** para limpar todas as alterações feitas sem salvá-las nas listas de inclusão ou exclusão.  Ao exigir Salvar ou Descartar, apenas os usuários desejados receberão uma política de proteção do aplicativo.
+Agora, você tem mais controle sobre suas [atribuições de política de proteção de aplicativo](../apps/app-protection-policies.md#assign-a-windows-10-policy-to-users). Ao selecionar *Atribuições* para definir ou editar as atribuições de uma política, você deve **Salvar** sua configuração antes de aplicar a alteração. Use **Descartar** para limpar todas as alterações feitas sem salvá-las nas listas de inclusão ou exclusão.  Ao exigir Salvar ou Descartar, apenas os usuários desejados receberão uma política de proteção do aplicativo.
 
 #### <a name="new-microsoft-edge-browser-settings-for-windows-10-and-later----3174639---"></a>Novas configurações do navegador Microsoft Edge para Windows 10 e posterior <!-- 3174639 -->
 Essa atualização inclui novas configurações para ajudar a controlar e gerenciar o navegador Microsoft Edge em seus dispositivos. Para obter uma lista dessas configurações, consulte [Restrição de dispositivo para Windows 10 (e mais recentes)](../configuration/device-restrictions-windows-10.md#microsoft-edge-browser).

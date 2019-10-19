@@ -9,6 +9,7 @@ ms.date: 04/19/2019
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
+ms.subservice: end-user
 ms.technology: ''
 ms.assetid: ed10a62c-b026-4ad3-ac41-641933522df2
 searchScope:
@@ -18,12 +19,12 @@ ms.reviewer: chrisbal
 ms.suite: ems
 ms.custom: intune-enduser
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: efcb622681e4f3b3fba7b686551cca7db6bb4c3a
-ms.sourcegitcommit: bccfbf1e3bdc31382189fc4489d337d1a554e6a1
+ms.openlocfilehash: 24d4193b3e43b7c406a1fb6c9c8d987caa6cbeea
+ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
 ms.translationtype: MTE75
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/03/2019
-ms.locfileid: "67546028"
+ms.lasthandoff: 10/16/2019
+ms.locfileid: "72501889"
 ---
 # <a name="use-managed-apps-on-your-android-device"></a>Usar aplicativos gerenciados no seu dispositivo Android
 Aplicativos gerenciados são configurados para atender aos requisitos de segurança da sua organização e proteger os dados corporativos e de estudante. Esses aplicativos são disponibilizados para você em seu dispositivo para instalar ou usar automaticamente. 
@@ -58,12 +59,12 @@ Há três maneiras de obter aplicativos gerenciados.
 * Sua organização disponibiliza aplicativos gerenciados para você no Portal da Empresa. Vá até o aplicativo ou site do Portal da Empresa para pesquisar, exibir e instalar os aplicativos disponíveis. Para obter mais informações sobre esses aplicativos, consulte a próxima seção, [aplicativos disponíveis](#available-apps).  
 
 ### <a name="available-apps"></a>Aplicativos disponíveis   
- Sua organização pode selecionar os aplicativos que são apropriadas e úteis para você no trabalho ou escola e torná-los disponíveis para você no Portal da empresa.  
+ Sua organização pode selecionar aplicativos que são apropriados e úteis para você no trabalho ou na escola e disponibilizá-los para você em Portal da Empresa.  
 
  Os aplicativos também são disponibilizados para você com base no tipo de dispositivo. Por exemplo, se estiver usando o aplicativo Portal da Empresa para Android, você terá acesso aos aplicativos do Android, mas não aos aplicativos do iOS.   
 
 ## <a name="request-an-app-for-work-or-school"></a>Solicitar um aplicativo para uso corporativo ou de estudante   
- Caso precise de um aplicativo que não está listado no Portal da Empresa, solicite-o. Localizar detalhes de contato para seus **suporte técnico** em qualquer aplicativo **contatar TI** guia. Você encontrará as mesmas informações de contato no [site do Portal da Empresa](https://go.microsoft.com/fwlink/?linkid=2010980).   
+ Caso precise de um aplicativo que não está listado no Portal da Empresa, solicite-o. Encontre detalhes de contato para a **assistência técnica** na guia **contate a ti** do aplicativo. Você encontrará as mesmas informações de contato no [site do Portal da Empresa](https://go.microsoft.com/fwlink/?linkid=2010980).   
 
 ## <a name="what-can-my-company-support-manage-in-an-app"></a>O que o suporte da minha empresa pode gerenciar em um aplicativo?  
 A lista a seguir descreve as configurações de que o suporte da sua empresa pode gerenciar dentro de um aplicativo. Essas configurações afetam como você exibe, acessa e usa de outras formas dados de estudante ou corporativos no seu dispositivo:

@@ -8,6 +8,7 @@ manager: dougeby
 ms.date: 10/02/2019
 ms.topic: troubleshooting
 ms.service: microsoft-intune
+ms.subservice: protect
 ms.localizationpriority: medium
 ms.technology: ''
 ms.assetid: ''
@@ -16,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: aa4dbfb7c13d767df41655b391767fc7aa13d914
-ms.sourcegitcommit: f04e21ec459998922ba9c7091ab5f8efafd8a01c
+ms.openlocfilehash: b30a7e843850d6918abc2e76f84397a1f197516f
+ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
 ms.translationtype: MTE75
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/02/2019
-ms.locfileid: "71817580"
+ms.lasthandoff: 10/16/2019
+ms.locfileid: "72508868"
 ---
 # <a name="resolve-common-errors-for-the-intune-exchange-connector"></a>Resolver erros comuns para o Intune Exchange Connector
 
@@ -76,7 +77,7 @@ Ao tentar configurar o Microsoft Intune Exchange Connector, você receberá a se
    Verify that you are connected to the Internet, check the Microsoft Intune Service Status, and try to connect again.  
    Error code: 0x00000006  
 ```  
-Esse erro pode ocorrer se um servidor proxy for usado para se conectar à Internet e estiver bloqueando o tráfego para o serviço do Intune. Para determinar se um proxy está em uso, acesse **painel de controle** > **Opções da Internet**, selecione a guia **conexão** e, em seguida, clique em configurações de **LAN**.
+Esse erro pode ocorrer se um servidor proxy for usado para se conectar à Internet e estiver bloqueando o tráfego para o serviço do Intune. Para determinar se um proxy está em uso, vá para **painel de controle**  > **Opções da Internet**, selecione a guia **conexão** e clique em **configurações de LAN**.
 
 **Resolução**:  
 
@@ -131,7 +132,7 @@ Para atribuir o direito de usuário **fazer logon como um serviço** à conta de
 
 1. Faça logon no computador como administrador ou como membro do grupo Administradores.
 2. Execute **secpol. msc** para abrir a política de segurança local.
-3. Vá para **configurações de segurança** > **políticas locais**e, em seguida, selecione **atribuição de direitos de usuário**.
+3. Vá para **configurações de segurança**  > **políticas locais**e, em seguida, selecione **atribuição de direitos de usuário**.
 4. No painel à direita, clique duas vezes em **Fazer logon como um serviço**.
 5. Selecione **Adicionar usuário ou grupo**, adicione **WIEC_USER** à política e, em seguida, selecione **OK** duas vezes.
 

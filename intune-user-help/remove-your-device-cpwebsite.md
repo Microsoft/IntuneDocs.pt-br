@@ -9,6 +9,7 @@ ms.date: 10/07/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
+ms.subservice: end-user
 ms.technology: ''
 ms.assetid: e240419a-a836-4be3-8fd9-39a4ec890226
 searchScope:
@@ -18,12 +19,12 @@ ms.reviewer: jieyang
 ms.suite: ems
 ms.custom: intune-enduser
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: d8127d10cee17dd445e1830a8e15a278adfa55ad
-ms.sourcegitcommit: 25e6aa3bfce58ce8d9f8c054bc338cc3dff4a78b
+ms.openlocfilehash: cdc15f6880abca53ed2110daf6169cddb48464c2
+ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
 ms.translationtype: MTE75
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "55848009"
+ms.lasthandoff: 10/16/2019
+ms.locfileid: "72508471"
 ---
 # <a name="remove-your-device-from-the-company-portal"></a>Remova o dispositivo do Portal da Empresa
 
@@ -37,7 +38,7 @@ Para remover seu dispositivo:
 
     ![Uma captura de tela da página Dispositivos, com dois blocos que mostram dispositivos não identificados, nomeados de maneira genérica. Uma faixa cinza é mostrada diretamente abaixo dos dispositivos e solicita que o usuário identifique o dispositivo que ele está usando ou adicione um novo.](./media/rename-reset-device-step2-1808.png) 
 
-3. Selecione **Remover**. Se a opção Remover não estiver visível na parte superior da página, selecione **Mais (…)** > **Remover**.  
+3. Selecione **Remover**. Se a opção Remover não estiver visível na parte superior da página, selecione **Mais (…)**  > **Remover**.  
 
    ![A página de detalhes do dispositivo de um dispositivo selecionado no site Portal da Empresa, com uma lista de links na parte superior mostrando Renomear, Remover, Redefinir Dispositivo, Redefinir Senha e Bloqueio Remoto. ](./media/rename-reset-device-1808.png)  
   
