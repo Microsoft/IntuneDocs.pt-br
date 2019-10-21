@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 59d93bed7bae2b757a4bd1e7b1dffc814629f6a1
-ms.sourcegitcommit: 88b6e6d70f5fa15708e640f6e20b97a442ef07c5
+ms.openlocfilehash: d31126a259274a2c75f933428632e274d8710aa6
+ms.sourcegitcommit: b8127c7a62d9ac4d0f768980fa1424567bb58733
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/02/2019
-ms.locfileid: "71725732"
+ms.lasthandoff: 10/15/2019
+ms.locfileid: "72350020"
 ---
 # <a name="add-app-configuration-policies-for-managed-android-enterprise-devices"></a>Adicionar políticas de configuração de aplicativo para dispositivos Android Enterprise gerenciados
 
@@ -41,7 +41,7 @@ As políticas de configuração de aplicativo no Microsoft Intune fornecem confi
     - **Tipo de registro do dispositivo**: Selecione **Dispositivos gerenciados**.
     - **Plataforma**: Selecione **Android**.
 
-3. Escolha **Aplicativo associado**. Escolha o aplicativo para o qual deseja definir uma política de configuração de aplicativo. Escolha na lista de aplicativos do Google Play Gerenciado que foram aprovados e sincronizados com o Intune.
+3. Escolha **Aplicativo Associado**. Escolha o aplicativo para o qual deseja definir uma política de configuração de aplicativo. Escolha na lista de aplicativos do Google Play Gerenciado que foram aprovados e sincronizados com o Intune.
 4. Selecione **Permissões**. É possível definir configurações usando:
 
     - [Designer de configuração](#use-the-configuration-designer)
@@ -71,10 +71,10 @@ Você poderá escolher as seguintes opções se escolher variável como o tipo d
 | Email | john@contoso.com |
 | Nome UPN | john@contoso.com |
 | Nome UPN parcial | John |
-| Domínio | contoso.com |
+| Domain | contoso.com |
 | Nome de usuário | John Doe |
 | ID da Conta | fc0dc142-71d8-4b12-bbea-bae2a8514c81 |
-| ID de Usuário | 3ec2c00f-b125-4519-acf0-302ac3761822 |
+| ID do Usuário | 3ec2c00f-b125-4519-acf0-302ac3761822 |
 | ID do Dispositivo | b9841cd9-9843-405f-be28-b2265c59ef97 |
 
 ### <a name="allow-only-configured-organization-accounts-in-multi-identity-apps"></a>Permitir somente contas da organização configuradas em aplicativos de várias identidades 
@@ -86,9 +86,8 @@ Para dispositivos Android, use os seguintes pares de chave/valor:
 | **Valores** | <ul><li>Um ou mais UPNs delimitados por <code>;</code>.</li><li>Somente contas permitidas são as contas de usuário gerenciado definidas por essa chave.</li><li> Para dispositivos registrados no Intune, o token <code>{{userprincipalname}}</code> pode ser usado para representar a conta de usuário registrado.</li></ul> |
 
    > [!NOTE]
-   > Você deve usar o Outlook para Android 2.2.222 ou posterior ao permitir apenas contas da organização configuradas com várias identidades.<p></p>
+   > Você deve usar o Outlook para Android 2.2.222 e posterior, Word, Excel, PowerPoint para Android 16.0.9327.1000 e posterior ou OneDrive para Android 5.28 e posterior ao permitir apenas contas da organização configuradas com várias identidades.<p></p>
    > Como Administrador do Microsoft Intune, é possível controlar quais contas de usuário são adicionadas aos aplicativos do Microsoft Office em dispositivos gerenciados. É possível limitar o acesso apenas a contas permitidas de usuários corporativos e bloquear contas pessoais em dispositivos registrados. Os aplicativos de suporte processam a configuração do aplicativo, removem e bloqueiam contas não aprovadas.<p></p>
-   > Para o Microsoft Word, Microsoft Excel e Microsoft PowerPoint, você deve usar a versão do aplicativo 16.0.9327.1000 e posteriores. 
 
 ## <a name="enter-the-json-editor"></a>Inserir o editor de JSON
 
@@ -116,7 +115,7 @@ Por exemplo, um aplicativo usa o microfone do dispositivo. O usuário é solicit
     - **Tipo de registro do dispositivo**: Selecione **Dispositivos gerenciados**.
     - **Plataforma**: Selecione **Android**.
 
-3. Escolha **Aplicativo associado**. Escolha o aplicativo para o qual deseja definir uma política de configuração. Escolha na lista de aplicativos de perfil de trabalho Android que você aprovou e sincronizou com o Intune.
+3. Escolha **Aplicativo Associado**. Escolha o aplicativo para o qual deseja definir uma política de configuração. Escolha na lista de aplicativos de perfil de trabalho Android que você aprovou e sincronizou com o Intune.
 4. Escolha **Permissões** > **Adicionar**. Na lista, escolha as permissões de aplicativo disponíveis e, depois, **OK**.
 5. Selecione uma opção para cada permissão a ser concedida com esta política:
     - **Aviso**. Avise o usuário para aceitar ou recusar.

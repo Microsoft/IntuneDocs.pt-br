@@ -16,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure; get-started
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: e3fb9af260b8fddc78b644b8ede056c90bac24d0
-ms.sourcegitcommit: 29b1113dc04534c4c87c33c773c5a0e24266e042
+ms.openlocfilehash: 304e869460a5396a486b6de0cd5c2f549c192b70
+ms.sourcegitcommit: 60ed93682a21860e9d99ba1592ede120477f2b4d
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/07/2019
-ms.locfileid: "71999359"
+ms.lasthandoff: 10/16/2019
+ms.locfileid: "72379860"
 ---
 # <a name="what-is-device-enrollment"></a>O que é o registro de dispositivo?
 [!INCLUDE [azure_portal](../includes/azure_portal.md)]
@@ -80,7 +80,7 @@ Por padrão, dispositivos para todas as plataformas têm permissão para se regi
 
 
 ## <a name="bring-your-own-device"></a>Traga seu próprio dispositivo
-A abordagem BYOD (Traga seus próprios dispositivos) inclui telefones, tablets e computadores pessoais. Os usuários instalam e executam o aplicativo do Portal da Empresa para registrar BYODs. Esse programa permite que os usuários acessem os recursos da empresa como email.
+A abordagem BYOD (Traga seu próprio dispositivo) inclui telefones, tablets e computadores de propriedade pessoal. Os usuários instalam e executam o aplicativo do Portal da Empresa para registrar BYODs. Esse programa permite que os usuários acessem os recursos da empresa como email.
 
 ## <a name="corporate-owned-device"></a>Dispositivo corporativo
 [Os COD (dispositivos corporativos)](corporate-identifiers-add.md) incluem telefones, tablets e computadores que pertencem à organização e são distribuídos para a força de trabalho. O registro de COD é compatível com cenários de gerenciamento como registro automático, dispositivos compartilhados ou requisitos de registro pré-autorizados. Uma maneira comum de registrar CODs é um administrador ou gerente usar o gerenciador de registros de dispositivo (DEM). Os dispositivos iOS podem ser registrados diretamente por meio das ferramentas do Programa de Registro de Dispositivos (DEP) fornecidas pela Apple. Os dispositivos com um número IMEI também podem ser identificados e marcados como propriedade da empresa.

@@ -16,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 344ffdfefd8b354c9d2ab31f2d08c2a25456f970
-ms.sourcegitcommit: 88b6e6d70f5fa15708e640f6e20b97a442ef07c5
+ms.openlocfilehash: db1f0944a6725d1f361ea20c972d8ffa8f5d9035
+ms.sourcegitcommit: a50a1ca123ecc2c5ac129f112f73838748f56476
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/02/2019
-ms.locfileid: "71724107"
+ms.lasthandoff: 10/10/2019
+ms.locfileid: "72237206"
 ---
 # <a name="assign-user-and-device-profiles-in-microsoft-intune"></a>Atribuir perfis de usuário e dispositivo no Microsoft Intune
 
@@ -30,6 +30,9 @@ ms.locfileid: "71724107"
 Você cria um perfil e ele inclui todas as configurações inseridas. A próxima etapa é implantar ou "atribuir" o perfil aos grupos de usuário ou de dispositivos do Azure Active Directory (Azure AD). Quando atribuído, os usuários e os dispositivos recebem seu perfil e as configurações inseridas são aplicadas.
 
 Este artigo mostra como atribuir um perfil e inclui algumas informações sobre como usar marcas de escopo em seus perfis.
+
+> [!NOTE]  
+> Quando uma política é removida ou não está mais atribuída a um dispositivo, a configuração pode manter o valor existente. A configuração não é revertida para um valor padrão. Para alterar a configuração para um valor diferente, crie uma nova política e a atribua.
 
 ## <a name="assign-a-device-profile"></a>Atribuir um perfil de dispositivo
 

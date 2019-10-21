@@ -14,16 +14,14 @@ ms.reviewer: coryfe
 ms.suite: ems
 search.appverid: MET150
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 5a9ecc1cabb00122d2812580b663fcd0c1dfabc3
-ms.sourcegitcommit: 88b6e6d70f5fa15708e640f6e20b97a442ef07c5
+ms.openlocfilehash: aa8cc396c05150006799c1e9b86ecb63351cdb36
+ms.sourcegitcommit: 45d7c76e760c5117bf134fb57f7e248e5b6c4ad5
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/02/2019
-ms.locfileid: "71728085"
+ms.lasthandoff: 10/15/2019
+ms.locfileid: "72314709"
 ---
 # <a name="manage-software-updates-in-intune"></a>Gerenciar atualizações de software no Intune
-
-[!INCLUDE [azure_portal](../includes/azure_portal.md)]
 
 Use o Intune para definir anéis de atualização que especifiquem como e quando o Windows como serviço deve atualizar seus dispositivos Windows 10. Os anéis de atualização são políticas que você atribui a grupos de dispositivos. Usando anéis de atualização, você pode criar uma estratégia de atualização que espelha suas necessidades de negócios. Para obter mais informações, consulte [Gerenciar as atualizações usando o Windows Update para Empresas](https://technet.microsoft.com/itpro/windows/manage/waas-manage-updates-wufb).
 
@@ -56,7 +54,7 @@ Os pré-requisitos a seguir devem ser atendidos para usar as atualizações do W
 
 - Em dispositivos Windows, **Comentários e Diagnóstico** > **Dados de diagnóstico e uso** devem ser definidos como **Básico**, **Aprimorado** ou **Completo**.  
 
-  É possível definir manualmente a configuração *Dados de diagnóstico e uso* para dispositivos com Windows 10 ou usar um perfil de restrição de dispositivo do Intune para o Windows 10 e posterior. Se você usar um perfil de restrição de dispositivo, defina a [configuração de restrição de dispositivo](../configuration/device-restrictions-windows-10.md#reporting-and-telemetry) **Compartilhar dados de uso** como **Básico**, no mínimo. Essa configuração está na categoria **Relatórios e Telemetria** ao configurar uma política de restrição de dispositivo para Windows 10 ou posterior.
+  É possível definir manualmente a configuração *Dados de diagnóstico e uso* para dispositivos com Windows 10 ou usar um perfil de restrição de dispositivo do Intune para o Windows 10 e posterior. Se você usar um perfil de restrição de dispositivo, defina a [configuração de restrição de dispositivo](../configuration/device-restrictions-windows-10.md#reporting-and-telemetry) de **Compartilhar dados de uso** como **Básico**, no mínimo. Essa configuração é encontrada na categoria **Relatório e Telemetria** quando você configura uma política de restrição de dispositivo para o Windows 10 ou posterior.
 
   Para obter mais informações sobre os perfis do dispositivo, consulte [definir as configurações de restrição de dispositivo](../configuration/device-restrictions-configure.md).  
 
@@ -92,7 +90,7 @@ Além de visualizar o status da atribuição, você pode escolher as seguintes a
 ### <a name="delete"></a>Excluir  
 Escolha **Excluir** para parar de impor as configurações do anel de atualização do Windows 10 escolhido. A exclusão de um anel remove sua configuração do Intune para que o Intune já não aplique e imponha essas configurações.  
 
-A exclusão de um anel do Intune não modifica as configurações nos dispositivos que receberam a atribuição do anel de atualização.  Em vez disso, o dispositivo mantém suas configurações atuais. Isso ocorre porque os dispositivos não mantêm um registro histórico de quais configurações foram estabelecidas anteriormente e, também, porque o dispositivo pode receber configurações de anéis de atualização adicionais que permanecem ativos.  
+A exclusão de um anel do Intune não modifica as configurações nos dispositivos que receberam a atribuição do anel de atualização.  Em vez disso, o dispositivo mantém suas configurações atuais. Os dispositivos não mantêm um registro histórico de quais configurações foram mantidas anteriormente. Os dispositivos também podem receber configurações de anéis de atualização adicionais que permanecem ativos.  
 
 #### <a name="to-delete-a-ring"></a>Para excluir um anel  
 1. Ao exibir a página de visão geral de um Anel de Atualização, escolha **Excluir**.  
@@ -130,6 +128,12 @@ Enquanto um anel de atualização estiver pausado, escolha **Estender** para red
 ### <a name="uninstall"></a>Desinstalar  
 Um administrador do Intune pode usar a opção **Desinstalar** para desinstalar (reverter) a atualização de *recurso* ou de *qualidade* mais recente para um anel de atualização ativo ou pausado. Após a desinstalação de um tipo, você pode, em seguida, desinstalar o outro tipo. O Intune não dá suporte nem gerencia a capacidade dos usuários de desinstalar atualizações.  
 
+> [!IMPORTANT] 
+> Quando você usa a opção *Desinstalar*, o Intune transmite a solicitação de desinstalação para os dispositivos imediatamente. 
+> - Os dispositivos Windows iniciam a remoção das atualizações assim que recebem a alteração na política do Intune. A remoção da atualização não está limitada a agendamentos de manutenção, mesmo quando eles são configurados como parte do anel de atualização. 
+> - Se a remoção da atualização exigir a reinicialização do dispositivo, o dispositivo será reinicializado sem oferecer aos usuários do dispositivo a opção de adiar.
+
+
 Para que a opção Desinstalar funcione:  
 - Um dispositivo deve executar a atualização do Windows de 10 de abril de 2018 (versão 1803) ou posterior.  
 
@@ -142,7 +146,7 @@ Considere o seguinte ao usar a opção Desinstalar:
 
 - Em dispositivos Windows 10, após a reversão bem-sucedida da atualização de qualidade, os usuários finais continuam vendo a atualização listada em **Configurações do Windows** > **Atualizações** > **Histórico de atualização**.  
 
-- Para atualizações de Recursos especificamente, o tempo permitido para a desinstalação da atualização do recurso é limitado de 2 a 60 dias, conforme definido na configuração dos anéis de atualização **Definir período de desinstalação de atualização do recurso (2 a 60 dias)** . Não é possível reverter uma atualização de recurso instalada em um dispositivo após a atualização do recurso ter sido instalada por mais tempo do que o período de desinstalação definido.  
+- Para atualizações de Recursos especificamente, o tempo permitido para a desinstalação da atualização do recurso é limitado de 2 a 60 dias, conforme definido na configuração dos anéis de atualização **Definir período de desinstalação de atualização do recurso (2 a 60 dias)** . Não é possível reverter uma atualização de recurso em um dispositivo após a atualização do recurso ter sido instalada por mais tempo do que o período de desinstalação definido.  
 
   Por exemplo, considere um grupo de atualização com um período de desinstalação de atualização de recurso de 20 dias. Após 25 dias, você decide reverter para a atualização mais recente do recurso e usar a opção Desinstalar.  Os dispositivos que instalaram a atualização de recurso há mais de 20 dias não podem desinstalá-la, pois removeram os bits necessários como parte da manutenção. No entanto, os dispositivos que receberam a atualização de recurso há até 19 dias podem desinstalá-la se fizerem check-in para receber o comando de desinstalação antes de exceder o período de desinstalação de 20 dias.  
 
@@ -154,7 +158,7 @@ Saiba mais sobre as políticas do Windows Update em [Atualizar o CSP](https://do
 3. Após acionar a desinstalação de um tipo de atualização, você pode escolher Desinstalar novamente para remover o tipo de atualização remanescente.  
 
 ## <a name="migrate-update-settings-to-the-azure-portal"></a>Migrar as configurações de atualização para o portal do Azure  
-O Portal Clássico do Azure também tem um número limitado de outras configurações de atualização do Windows 10 no perfil de configuração do dispositivo. Se você tem uma dessas definições configuradas ao migrar para o Portal do Microsoft Azure, é recomendável enfaticamente executar as seguintes ações:  
+O Portal Clássico do Azure também tem um número limitado de outras configurações de atualização do Windows 10 no perfil de configuração do dispositivo. Se você tiver uma dessas definições configuradas ao migrar para o portal do Azure, recomendamos realizar as seguintes ações:  
 
 1. crie anéis de atualização do Windows 10 no portal do Azure com as configurações necessárias. A configuração **Permitir recursos de pré-lançamento** não tem suporte no portal do Azure, pois não é mais aplicável aos builds mais recentes do Windows 10. Você poderá definir três outras configurações, bem como outras configurações de atualização do Windows 10, quando criar anéis de atualização.  
 

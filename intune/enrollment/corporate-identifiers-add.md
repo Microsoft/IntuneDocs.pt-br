@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: ac86e9155f08683ab073ae0b46ea3f2780060c90
-ms.sourcegitcommit: 88b6e6d70f5fa15708e640f6e20b97a442ef07c5
+ms.openlocfilehash: afc9d953e1d324adb3f00eb5209732a858bbbcda
+ms.sourcegitcommit: 45d7c76e760c5117bf134fb57f7e248e5b6c4ad5
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/02/2019
-ms.locfileid: "71723340"
+ms.lasthandoff: 10/15/2019
+ms.locfileid: "72314683"
 ---
 # <a name="identify-devices-as-corporate-owned"></a>Identificar dispositivos como corporativos
 
@@ -35,7 +35,7 @@ No momento do registro, o Intune atribui automaticamente status corporativos em 
 - O dispositivo foi registrado com uma conta do [gerenciador de registros de dispositivo](device-enrollment-manager-enroll.md) (todas as plataformas)
 - O dispositivo foi registrado com o [Programa de Registro de Dispositivos](device-enrollment-program-enroll-ios.md) da Apple, o [Apple School Manager](apple-school-manager-set-up-ios.md) ou o [Apple Configurator](apple-configurator-enroll-ios.md) (somente iOS)
 - [O dispositivo foi identificado como corporativo antes do registro](#identify-corporate-owned-devices-with-imei-or-serial-number) com um números IMEI (identificação internacional de equipamento móvel) (todas as plataformas com números IMEI) ou com um número de série (iOS e Android)
-- Adicionado ao Azure Active Directory como um dispositivo Windows 10 Enterprise
+- Conectados ao Azure Active Directory com credenciais corporativas ou de estudante. [Dispositivos registrados no Azure Active Directory](https://docs.microsoft.com/azure/active-directory/devices/overview) serão marcados como pessoais.
 - Configurados como Corporativo na [lista das propriedades do dispositivo](#change-device-ownership)
 
 Após o registro, você pode [alterar a configuração de propriedade](#change-device-ownership) entre **Pessoal** e **Corporativo**.
@@ -49,9 +49,9 @@ Esse recurso é compatível com as seguintes plataformas:
 | Plataforma | Números IMEI | Números de série |
 |---|---|---|
 | Windows | Com suporte (Windows Phone) | Sem suporte |
-| iOS/macOS | Sem suporte | Suportado |
+| iOS/macOS | Sem suporte | Com suporte |
 | Sistema operacional Android v10 gerenciado pelo administrador do dispositivo | Sem suporte | Sem suporte |
-| Outro Android | Sem suporte | Suportado |
+| Outro Android | Sem suporte | Com suporte |
 
 <!-- When you upload serial numbers for corporate-owned iOS devices, they must be paired with a corporate enrollment profile. Devices must then be enrolled using either Apple’s device enrollment program (DEP) or Apple Configurator to have them appear as corporate-owned. -->
 

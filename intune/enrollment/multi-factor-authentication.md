@@ -16,12 +16,12 @@ ROBOTS: ''
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: ea6af0fd71acb7aad22930c6173540e3aece4f98
-ms.sourcegitcommit: 88b6e6d70f5fa15708e640f6e20b97a442ef07c5
+ms.openlocfilehash: 4b761672ceace57ae7c0939959d25b8d6e45be32
+ms.sourcegitcommit: 60ed93682a21860e9d99ba1592ede120477f2b4d
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/02/2019
-ms.locfileid: "71726369"
+ms.lasthandoff: 10/16/2019
+ms.locfileid: "72379827"
 ---
 # <a name="require-multi-factor-authentication-for-intune-device-enrollments"></a>Exigir autenticação multifator para registros de dispositivo do Intune
 
@@ -56,7 +56,7 @@ Para exigir MFA quando um dispositivo é registrado, siga estas etapas:
 6. Na seção **Atribuições**, escolha **Usuários e grupos**. 
 7. Em **Usuários e grupos**, escolha **Selecionar usuários ou grupos** e marque **Usuários e grupos**. Em seguida, selecione os usuários e/ou grupos que receberão essa política e **Concluir**.
 8. Na seção **Atribuições**, escolha **Aplicativos em nuvem**.
-9. Na guia **Incluir** de **Aplicativos em nuvem**, escolha **Selecionar aplicativos**, escolha **Selecionar** > **Registro no Microsoft Intune** e, em seguida, **Concluído**.
+9. Na guia **Incluir** de **Aplicativos em nuvem**, escolha **Selecionar aplicativos**, escolha **Selecionar** > **Registro no Microsoft Intune** e, em seguida, **Concluído**. Ao escolher o **Registro no Microsoft Intune**, a MFA de acesso condicional é aplicada apenas ao registro do dispositivo (prompt único da MFA).
 10. Na seção **Atribuições**, para **Condições**, você não precisa configurar as definições de MFA.
 11. Na seção **Controles de acesso**, escolha **Conceder**.
 12. Em **Conceder**, escolha **Conceder acesso** e, em seguida, selecione **Exigir autenticação multifator**. Não selecione **Exigir que o dispositivo seja marcado como compatível** porque os dispositivos não podem ser avaliados quanto à conformidade enquanto não são registrados. Em seguida, escolha **Selecionar**.

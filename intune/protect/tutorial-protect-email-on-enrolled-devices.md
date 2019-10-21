@@ -1,5 +1,5 @@
 ---
-title: 'Tutorial: proteger o email do Exchange Online em dispositivos gerenciados pelo Intune'
+title: 'Tutorial: proteger o email do Exchange Online em dispositivos gerenciados'
 titleSuffix: Microsoft Intune
 description: Saiba como proteger o Exchange Online com políticas de conformidade do Intune para iOS e Acesso Condicional do Azure AD para exigir dispositivos gerenciados e o aplicativo do Outlook.
 keywords: ''
@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: a2d6f14b4b3e1e981cce789664203b74523b2474
-ms.sourcegitcommit: 88b6e6d70f5fa15708e640f6e20b97a442ef07c5
+ms.openlocfilehash: c20c0c1543cd8fcbf7345a02295486aaaa6ddcea
+ms.sourcegitcommit: dd6755383ba89824d1cc128698a65fde6bb2de55
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/02/2019
-ms.locfileid: "71727929"
+ms.lasthandoff: 10/14/2019
+ms.locfileid: "72306873"
 ---
 # <a name="tutorial-protect-exchange-online-email-on-managed-devices"></a>Tutorial: Proteger o email do Exchange Online em dispositivos gerenciados
 Saiba como usar políticas de conformidade de dispositivo com Acesso Condicional para garantir que os dispositivos iOS acessem emails do Exchange Online somente se forem gerenciados pelo Intune e usarem um aplicativo de email aprovado. 
@@ -95,7 +95,7 @@ Agora, criaremos uma política de Acesso Condicional que exige que todas as plat
     2. Na guia **Incluir**, selecione **Todos os dispositivos** e, em seguida, **Concluído**. 
     3. Selecione **Concluído** novamente.
    
-    ![Selecionar o aplicativo do Office 365 Exchange Online](./media/tutorial-protect-email-on-enrolled-devices/ios-ca-policy-cloud-device-platforms.png)
+    ![Incluir qualquer dispositivo](./media/tutorial-protect-email-on-enrolled-devices/ios-ca-policy-cloud-device-platforms.png)
 
 6. Em **Atribuições**, selecione **Condições** > **Aplicativos cliente**.
      
@@ -103,7 +103,7 @@ Agora, criaremos uma política de Acesso Condicional que exige que todas as plat
     2. Para este tutorial, selecione **Aplicativos móveis e clientes de área de trabalho** e **Clientes de autenticação modernos** (que se referem a aplicativos como o Outlook para iOS e o Outlook para Android). Desmarque todas as outras caixas de seleção.
     3. Selecione **Concluído** e, em seguida, **Concluído** novamente.
     
-    ![Selecionar o aplicativo do Office 365 Exchange Online](./media/tutorial-protect-email-on-enrolled-devices/ios-ca-policy-client-apps.png)
+    ![Selecionar aplicativos e clientes](./media/tutorial-protect-email-on-enrolled-devices/ios-ca-policy-client-apps.png)
 
 7. Em **Controles de acesso**, selecione **Conceder**. 
      
@@ -113,11 +113,11 @@ Agora, criaremos uma política de Acesso Condicional que exige que todas as plat
     4. Em **Para vários controles**, selecione **Exigir todos os controles selecionados**. Essa configuração garante que os dois requisitos selecionados sejam aplicados quando um dispositivo tentar acessar o email.
     5. Escolha **Selecionar**.
      
-    ![Selecionar o aplicativo do Office 365 Exchange Online](./media/tutorial-protect-email-on-enrolled-devices/ios-ca-policy-grant-access.png)
+    ![Selecionar controles](./media/tutorial-protect-email-on-enrolled-devices/ios-ca-policy-grant-access.png)
 
 8. Em **Habilitar política**, selecione **Ativado**.
      
-    ![Selecionar o aplicativo do Office 365 Exchange Online](./media/tutorial-protect-email-on-enrolled-devices/ios-ca-policy-enable-policy.png)
+    ![Habilitar política](./media/tutorial-protect-email-on-enrolled-devices/ios-ca-policy-enable-policy.png)
 
 9. Selecione **Criar**.
 

@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 1bac049aebfb0fec6c9d86e1e08e81237867175d
-ms.sourcegitcommit: 88b6e6d70f5fa15708e640f6e20b97a442ef07c5
+ms.openlocfilehash: bf862e59e135a875f5f18af731c581f3e5ea89d5
+ms.sourcegitcommit: dd6755383ba89824d1cc128698a65fde6bb2de55
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/02/2019
-ms.locfileid: "71723106"
+ms.lasthandoff: 10/14/2019
+ms.locfileid: "72306609"
 ---
 # <a name="enrolled-device-management-capabilities-of-microsoft-intune"></a>Recursos de gerenciamento de dispositivos registrados do Microsoft Intune
 
@@ -38,11 +38,12 @@ Os usuários obtêm acesso ao portal da empresa, o que lhes permite instalar apl
 
 ## <a name="device-security-and-configuration"></a>Configuração e segurança de dispositivo
 
-|Capacidade|Detalhes|Mais informações|
+|Funcionalidade|Detalhes|Mais informações|
 |--------------|-----------|--------------------|
 |Políticas de configuração<br><br>Políticas personalizadas| Permite que você gerencie diversas configurações e recursos em dispositivos móveis da sua organização. Por exemplo, é possível exigir uma senha, limitar o número de tentativas com falha, limitar o tempo antes do travamento da tela, definir a expiração da senha e impedir o uso de senhas usadas anteriormente. Você também pode controlar o uso de recursos de hardware e software, como a câmera do dispositivo ou o navegador da Web.<br><br>Use as políticas personalizadas quando as políticas de configuração não contiverem a configuração de que você precisa. Para dispositivos iOS, você pode importar configurações que exportou da ferramenta Apple Configurator. Para outros dispositivos, você pode usar configurações de OMA-URI (Open Mobile Alliance Uniform Resource Identifier) para definir configurações e recursos no dispositivo.|[Gerenciar configurações e recursos em seus dispositivos com políticas do Microsoft Intune](../protect/device-compliance-get-started.md)|
 |Apagamento e bloqueio remotos e redefinição de senha|Apaga dados confidenciais quando um dispositivo é perdido ou roubado. Por exemplo, você pode bloquear remotamente o dispositivo, restaurá-lo para as configurações de fábrica ou apagar apenas dados corporativos.<br><br>Você pode redefinir senhas se os usuários perderem o acesso ao dispositivo, bloquear dispositivos ausentes ou roubados, ou até mesmo apagar os dados de dispositivos ausentes ou roubados.|Ajude a proteger os dispositivos com [bloqueio remoto](../remote-actions/device-remote-lock.md) e [redefinição de senha](../remote-actions/device-passcode-reset.md)|
 |Modo de quiosque|Permite que você bloqueie determinados recursos de dispositivos móveis, como capturas de tela e interruptores. Também permite restringir os dispositivos para que executem um único aplicativo especificado por você. |[Configurações da política de configuração do iOS no Microsoft Intune](../configuration/device-restrictions-ios.md)|
+|Redefinição do Autopilot|Envia uma tarefa ao dispositivo para iniciar o processo de redefinição remotamente, evitando que a equipe de TI ou outros administradores precisem acessar cada computador para iniciar o processo. Quando a redefinição do AutoPilot for usada em um dispositivo, o usuário primário do dispositivo será removido. O próximo usuário que entrar após a redefinição será definido como o usuário primário.|[Redefinição Remota do Windows Autopilot](https://docs.microsoft.com/windows/deployment/windows-autopilot/windows-autopilot-reset#reset-devices-with-remote-windows-autopilot-reset)|
 
 ## <a name="app-management"></a>Gerenciamento de aplicativos
 
@@ -59,7 +60,7 @@ Os usuários obtêm acesso ao portal da empresa, o que lhes permite instalar apl
 
 ## <a name="company-resource-access"></a>Acesso de recursos da empresa
 
-|Capacidade|Detalhes|Mais informações|
+|Funcionalidade|Detalhes|Mais informações|
 |--------------|-----------|--------------------|
 |Perfis de certificado|Cria e implanta perfis de certificados confiáveis e certificados SCEP (protocolo SCEP), que podem ser usados para proteger e autenticar perfis de Wi-Fi, VPN e email.|[Proteger o acesso a recursos com perfis de certificado no Microsoft Intune](../protect/certificates-configure.md)|
 |Perfis de Wi-Fi|Implanta configurações de rede sem fio para seus usuários. Ao implantar essas configurações, você minimiza o esforço necessário para se conectar à rede corporativa.|[Conexões Wi-Fi no Microsoft Intune](../configuration/wi-fi-settings-configure.md)|

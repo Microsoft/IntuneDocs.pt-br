@@ -5,7 +5,7 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 05/29/2019
+ms.date: 10/15/2019
 ms.topic: troubleshooting
 ms.service: microsoft-intune
 ms.localizationpriority: high
@@ -16,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 618f88d6dbacb886f250b74f6a462b8449b59b18
-ms.sourcegitcommit: 88b6e6d70f5fa15708e640f6e20b97a442ef07c5
+ms.openlocfilehash: 9944aa59f47b7263d46ac96f6aaca3f8ae5c9486
+ms.sourcegitcommit: b8127c7a62d9ac4d0f768980fa1424567bb58733
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/02/2019
-ms.locfileid: "71724081"
+ms.lasthandoff: 10/15/2019
+ms.locfileid: "72350001"
 ---
 # <a name="common-questions-issues-and-resolutions-with-device-policies-and-profiles-in-microsoft-intune"></a>Perguntas, problemas e soluções comuns para perfis e políticas de dispositivo no Microsoft Intune
 
@@ -67,11 +67,11 @@ Se o dispositivo foi registrado recentemente, a frequência das execuções do c
 | iOS | A cada 15 minutos por uma hora e, depois, a cada oito horas |  
 | macOS | A cada 15 minutos por uma hora e, depois, a cada oito horas | 
 | Android | A cada três minutos por 15 minutos e, depois, a cada 15 minutos por duas horas e, depois, a cada oito horas | 
-| Computadores Windows 10 registrados como dispositivos | A cada três minutos por 30 minutos e, depois, a cada oito horas | 
+| Computadores Windows 10 registrados como dispositivos | A cada três minutos por 15 minutos e, depois, a cada 15 minutos por duas horas e, depois, a cada oito horas | 
 | Windows Phone | A cada cinco minutos por 15 minutos e, depois, a cada 15 minutos por duas horas e, depois, a cada oito horas | 
 | Windows 8.1 | A cada cinco minutos por 15 minutos e, depois, a cada 15 minutos por duas horas e, depois, a cada oito horas | 
 
-A qualquer momento, os usuários podem abrir o aplicativo Portal da Empresa e sincronizar o dispositivo para verificar imediatamente se há atualizações de política ou perfil.
+A qualquer momento, os usuários podem abrir o aplicativo Portal da Empresa, **Configurações** > **Sincronização** para verificar imediatamente se há atualizações de política ou perfil.
 
 Para dispositivos sem afinidade de usuário, a frequência de sincronização imediatamente após o registro pode variar de algumas horas a um dia ou mais. O Intune envia solicitações em vários intervalos para que um dispositivo faça check-in no Intune. No entanto, fazer check-in ainda depende do dispositivo. Após o registro inicial, o tempo que um dispositivo leva para concluir o check-in é imprevisível. Também depende do tipo de registro do dispositivo e das políticas e perfis atribuídos a um dispositivo. Depois que o dispositivo é registrado e todos os perfis e políticas iniciais são aplicados, o dispositivo verifica novas políticas e perfis a cada 6 a 8 horas, dependendo do horário de registro do dispositivo no Intune.
 
@@ -119,8 +119,8 @@ Ao excluir um perfil ou remover um dispositivo de um grupo que tenha o perfil, o
   - **Dispositivos Windows e Android**: As configurações não são removidas do dispositivo
   - **Dispositivos Windows Phone 8.1**: As seguintes configurações são removidas:  
   
-    - Exigir uma senha para desbloquear dispositivos móveis
-    - Permitir senhas simples
+    - Exigir uma senha para desbloquear os dispositivos móveis
+    - Permitir senha simples
     - Comprimento mínimo da senha
     - Tipo de senha necessária
     - Expiração da senha (dias)
@@ -147,8 +147,8 @@ Ao excluir um perfil ou remover um dispositivo de um grupo que tenha o perfil, o
 
   - **iOS**: Todas as configurações são removidas, exceto:
   
-    - Permitir roaming de voz
-    - Permitir roaming de dados
+    - Permitir roaming de Voz
+    - Permitir roaming de Dados
     - Permitir sincronização automática durante roaming
 
 ## <a name="i-changed-a-device-restriction-profile-but-the-changes-havent-taken-effect"></a>Alterei um perfil de restrição de dispositivo, mas as alterações não entraram em vigor

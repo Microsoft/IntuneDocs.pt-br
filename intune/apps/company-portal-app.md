@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: b32d34c1878bc0355c510ca342091010af43bca7
-ms.sourcegitcommit: 88b6e6d70f5fa15708e640f6e20b97a442ef07c5
+ms.openlocfilehash: 419fd15f747c8b41377f3aca94c4b96d7c4910c1
+ms.sourcegitcommit: b8127c7a62d9ac4d0f768980fa1424567bb58733
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/02/2019
-ms.locfileid: "71724913"
+ms.lasthandoff: 10/15/2019
+ms.locfileid: "72350004"
 ---
 # <a name="how-to-configure-the-microsoft-intune-company-portal-app"></a>Como configurar o aplicativo Portal da Empresa do Microsoft Intune
 
@@ -137,12 +137,12 @@ Os atalhos de teclado a seguir estão disponíveis no aplicativo do Portal da Em
 | Área | Descrição | Atalho de teclado |
 |:------------------:|:--------------:|:-----------------:|
 | Menu de navegação | Navegação | Alt+M |
-|  | Inicial | Alt+H |
+|  | Início | Alt+H |
 |  | Todos os aplicativos | Alt+A |
 |  | Aplicativos instalados | Alt+I |
 |  | Enviar comentários | Alt+F |
 |  | Meu perfil | Alt+U |
-|  | Settings | Alt+T |
+|  | Configurações | Alt+T |
 | Página inicial – Bloco do dispositivo | Renomear | F2 |
 |  | Remover | Ctrl+D ou Excluir |
 |  | Verificar acesso | Ctrl+M ou F9 |
@@ -160,12 +160,12 @@ Os usuários finais também poderão ver os atalhos disponíveis no aplicativo d
 
 Os usuários podem executar ações em seus dispositivos locais ou remotos por meio do aplicativo Portal da Empresa ou site. As ações que um usuário pode executar variam de acordo com a plataforma e a configuração do dispositivo. Em todos os casos, as ações de dispositivo remoto só podem ser executadas pelo Usuário primário do dispositivo.
 - **Desativar**: remove o dispositivo do Gerenciamento do Intune. No aplicativo e site do Portal da Empresa, isso é mostrado como **Remover**.
-- **Apagar**: essa ação inicia uma redefinição do dispositivo. No site do Portal da Empresa, isso é mostrado como **Redefinir** ou **Redefinir aos padrões de fábrica** no aplicativo iOS do Portal da Empresa.
-- **Renomear**: essa ação altera o nome do dispositivo que o usuário pode ver no Portal da Empresa. Ela não altera o nome do dispositivo local, apenas a listagem no Portal da Empresa.
-- **Sincronizar**: essa ação inicia um check-in do dispositivo com o serviço do Intune. Essa ação é exibida como **Verificar Status** no Portal da Empresa.
-- **Bloqueio Remoto**: bloqueia o dispositivo e exige um PIN para desbloqueá-lo.
-- **Redefinir Senha**: essa ação é usada para redefinir a senha do dispositivo. Em dispositivos iOS, a senha será removida e o usuário final será solicitado a inserir um novo código nas configurações. Em dispositivos Android compatíveis, uma nova senha é gerada pelo Intune e exibida temporariamente no Portal da Empresa.
-- **Recuperação de Chave**: essa ação é usada para recuperar uma chave de criptografia para dispositivos criptografados.
+- **Apagar**: esta ação inicia uma redefinição do dispositivo. No site do Portal da Empresa, isso é mostrado como **Redefinir** ou **Redefinir aos padrões de fábrica** no aplicativo iOS do Portal da Empresa.
+- **Renomear**: esta ação altera o nome do dispositivo que o usuário pode ver no Portal da Empresa. Ela não altera o nome do dispositivo local, apenas a listagem no Portal da Empresa.
+- **Sincronizar**: esta ação inicia um check-in do dispositivo com o serviço do Intune. Essa ação é exibida como **Verificar Status** no Portal da Empresa.
+- **Bloqueio remoto**: bloqueia o dispositivo e exige um PIN para desbloqueá-lo.
+- **Redefinir senha**: esta ação é usada para redefinir a senha do dispositivo. Em dispositivos iOS, a senha será removida e o usuário final será solicitado a inserir um novo código nas configurações. Em dispositivos Android compatíveis, uma nova senha é gerada pelo Intune e exibida temporariamente no Portal da Empresa.
+- **Recuperação de chave**: esta ação é usada para encontrar uma chave de recuperação pessoal para dispositivos macOS criptografados no site do Portal da Empresa. 
 
 ### <a name="self-service-actions"></a>Ações de autoatendimento
 
@@ -179,12 +179,12 @@ Algumas plataformas e configurações não permitem ações de dispositivos de a
 |    Android<sup>(3)</sup>    |    Disponível<sup>(7)</sup>    |    Disponível<sup>(7)</sup>    |    Disponível    |    Disponível    |    Disponível    |    Disponível<sup>(6)</sup>    |    NA    |
 
 
-<sup>(1)</sup> A ação Desativar está sempre bloqueada em dispositivos Windows ingressados no Azure Active Directory.<br>
-<sup>(2)</sup> A Recuperação de Chave para MacOS está disponível somente pelo Portal da Web.<br>
+<sup>(1)</sup> A ação Desativar está sempre bloqueada em dispositivos Windows adicionados ao Azure AD.<br>
+<sup>(2)</sup> A recuperação de chave pessoal para o macOS está disponível apenas no site do Portal da Empresa.<br> 
 <sup>(3)</sup> Todas as ações remotas serão desabilitadas com o uso de um registro do Gerenciador de Registro do Dispositivo.<br>
 <sup>(4)</sup> Renomear muda apenas o nome do dispositivo no site ou Aplicativo do Portal da Empresa, não no dispositivo.<br>
 <sup>(5)</sup> O Apagamento Remoto não está disponível em dispositivos MacOS.<br>
-<sup>(6)</sup> A Redefinição de senha não é permitida em algumas configurações de Android e Android Enterprise. Para saber mais, confira [Redefinir ou remover uma senha de dispositivo no Intune](../remote-actions/device-passcode-reset.md).<br>
+<sup>(6)</sup> A Redefinição de senha não é permitida em algumas configurações do Android e Android Enterprise. Para saber mais, confira [Redefinir ou remover uma senha de dispositivo no Intune](../remote-actions/device-passcode-reset.md).<br>
 <sup>(7)</sup> Desativar e Apagar não estão disponíveis em cenários de Proprietário de Dispositivo de Empresa Android (COPE, COBO, COSU).<br> 
 
 ## <a name="next-steps"></a>Próximas etapas

@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 0b4ab3369f241c9f33d4e0bddfd0dcf98c8ab915
-ms.sourcegitcommit: fc356fd69beaeb3d69982b47e2bdffb6f7127f8c
+ms.openlocfilehash: 805a1b1145c6b177c83de17de5a2df3efb7380da
+ms.sourcegitcommit: 60ed93682a21860e9d99ba1592ede120477f2b4d
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/03/2019
-ms.locfileid: "71830589"
+ms.lasthandoff: 10/16/2019
+ms.locfileid: "72379773"
 ---
 # <a name="how-to-monitor-app-protection-policies"></a>Como monitorar as políticas de proteção de aplicativo
 [!INCLUDE [azure_portal](../includes/azure_portal.md)]
@@ -35,20 +35,20 @@ Existem três locais diferentes em que as políticas de proteção de aplicativo
 - Exibição de Relatórios
 
 > [!NOTE]
-> Saiba mais sobre como criar políticas de proteção de aplicativos em [Como criar e atribuir políticas de proteção de aplicativo](app-protection-policies.md).
+> Para obter mais informações, confira [Como criar e atribuir políticas de proteção de aplicativo](app-protection-policies.md).
 
-O período de retenção dos dados de proteção do aplicativo é de 90 dias. Todas as instâncias de aplicativos que fizeram check-in no serviço MAM nos últimos 90 dias serão incluídas no relatório de Status de Proteção do Aplicativo. Uma instância de aplicativo é um usuário + aplicativo + dispositivo exclusivo. 
+O período de retenção dos dados de proteção do aplicativo é de 90 dias. Todas as instâncias de aplicativos que fizeram check-in no serviço MAM nos últimos 90 dias são incluídas no relatório de status de proteção do aplicativo. Uma *instância de aplicativo* é um usuário + aplicativo + dispositivo exclusivo. 
 
 ## <a name="summary-view"></a>Exibição de Resumo
 
 1. Conecte-se ao [Intune](https://go.microsoft.com/fwlink/?linkid=2090973).
 3. No painel **Intune**, escolha **Aplicativos clientes**.
-4. Na carga de trabalho **Aplicativos cliente**, escolha **Status de proteção do aplicativo** na seção **Monitorar** para ver a exibição resumida:
+4. Para ver a exibição resumida, na carga de trabalho de **Aplicativos clientes**, em **Monitorar**, escolha **Status de proteção do aplicativo**.
 
-![Bloco de Resumo do painel de gerenciamento de aplicativos móveis do Intune](./media/app-protection-policies-monitor/app-protection-user-status-summary.png)
+   ![Captura de tela do bloco de resumo no painel de gerenciamento de aplicativos móveis do Intune](./media/app-protection-policies-monitor/app-protection-user-status-summary.png)
 
 - **Usuários atribuídos**: O número total de usuários atribuídos em sua empresa que estão usando um aplicativo associado a uma política em um contexto de trabalho e que estão protegidos e licenciados, bem como os usuários atribuídos que não estão protegidos nem licenciados.
-- **Usuários sinalizados**: O número de usuários que estão tendo problemas. Dispositivos em que foi feito jailbreak (iOS) e root (Android) são relatados em **Usuários sinalizados**. Usuários que têm dispositivos sinalizados pela verificação de atestado de dispositivos do Google SafetyNet (se ativado pelo administrador de TI) serão informados aqui. 
+- **Usuários sinalizados**: Número de usuários que estão enfrentando problemas com seus dispositivos. Dispositivos em que foi feito jailbreak (iOS) e root (Android) são relatados em **Usuários sinalizados**. Usuários que têm dispositivos sinalizados pela verificação de atestado de dispositivos do Google SafetyNet (se ativado pelo administrador de TI) também serão indicados aqui. 
 - **Usuários com aplicativos potencialmente nocivos**: O número de usuários que podem ter um aplicativo nocivo em seu dispositivo Android detectado pelo Google Play Protect. 
 - **Status do usuário para iOS** e **Status do usuário para Android**: O número de usuários que usaram um aplicativo que tem uma política atribuída a eles em um contexto de trabalho para a plataforma relacionada. Essas informações mostram o número de usuários gerenciados pela política, bem como o número de usuários que estão usando um aplicativo que não é direcionado por nenhuma política em um contexto de trabalho. Você pode considerar adicionar esses usuários à política.
 - **Principais aplicativos iOS protegidos**: tendo como base os aplicativos iOS mais usados, essas informações mostram o número de aplicativos iOS protegidos e desprotegidos.
@@ -75,16 +75,16 @@ Você pode pesquisar por um único usuário e verificar o status de conformidade
 - **Última Sincronização**: momento em que o aplicativo foi sincronizado pela última vez com o Intune. 
 
 >[!NOTE]
-> A coluna "Última Sincronização" representa o mesmo valor no relatório de status do usuário no console e no relatório de Política de proteção de aplicativos [.csv exportável](https://docs.microsoft.com/intune/app-protection-policies-monitor#export-app-protection-activities-to-csv). A diferença corresponde a um pequeno atraso na sincronização entre o valor nos dois relatórios. 
+> A coluna **Última Sincronização** representa o mesmo valor no relatório de status do usuário no console e no relatório de Política de proteção de aplicativos [.csv exportável](https://docs.microsoft.com/intune/app-protection-policies-monitor#export-app-protection-activities-to-csv). A diferença corresponde a um pequeno atraso na sincronização entre o valor nos dois relatórios. 
 >
-> O horário mencionado em "Última Sincronização" se refere à última vez que o Intune viu a "instância do aplicativo". Uma instância do aplicativo é uma combinação exclusiva de aplicativo + usuário + dispositivo. No momento em que um usuário final inicializa um aplicativo, este pode ou não se comunicar com o serviço de Proteção de Aplicativo do Intune, dependendo da última vez em que o usuário se conectou. Esta documentação ajuda a esclarecer [os intervalos de repetição de check-in da Política de proteção de aplicativos ](https://docs.microsoft.com/en-us/intune/app-protection-policy-delivery). Portanto, se um usuário final não tiver usado esse aplicativo específico no último intervalo de check-in (normalmente, a cada 30 minutos para uso ativo) e inicializar o aplicativo:
+> O horário mencionado em Última Sincronização se refere à última vez que o Intune viu a instância do aplicativo. No momento em que um usuário final inicializa um aplicativo, este pode ou não se comunicar com o serviço de Proteção de Aplicativo do Intune, dependendo da última vez em que o usuário se conectou. Confira [os intervalos de repetição de check-in da Política de proteção de aplicativos ](https://docs.microsoft.com/en-us/intune/app-protection-policy-delivery). Se um usuário final não tiver usado esse aplicativo específico no último intervalo de check-in (normalmente, a cada 30 minutos para uso ativo) e inicializar o aplicativo:
 >
-> - O relatório .csv exportável da Política de proteção de aplicativos apresentará o horário mais recente entre 1 (usual; mínimo) e 30 minutos (o SLA máximo realmente fornecido pela agregação SQL usada pelo Intune Reporting).
+> - O relatório .csv exportável da Política de Proteção de Aplicativos apresentará o horário mais recente entre de 1 (mínimo) e 30 minutos (máximo).
 > - O relatório de status do usuário apresentará o horário mais recente instantaneamente.
 >
 > Por exemplo, suponhamos que um usuário final de destino e licenciado inicialize um aplicativo protegido às 12:00:
-> - Se esta for a primeira vez que ele faz o login, isso significará que o usuário final foi desconectado antes (uso não ativo), ou seja, ele não possui um registro de instância de aplicativo no Intune. Depois de fazer login, ele obterá um novo registro de instância de aplicativo e o check-in será feito imediatamente, sem problemas de conectividade, com os mesmos atrasos listados acima para futuros check-ins. Portanto, o horário da última sincronização será indicado como 12:00 no relatório de status do usuário e como 12:01 (ou 12:30, no pior cenário) no relatório da Política de proteção de aplicativos. 
-> - Se o usuário estiver apenas inicializando o aplicativo, o horário da "Última Sincronização" dependerá da data do último check-in.
+> - Se este for o primeiro login, isso significa que o usuário foi desconectado antes e não possui um registro de instância de aplicativo no Intune. Após o login, o usuário obtém um novo registro de instância do aplicativo e pode fazer o check-in imediatamente (com os mesmos atrasos listados anteriormente para check-ins futuros). Portanto, o horário da última sincronização será indicado como 12:00 no relatório de status do usuário e como 12:01 (ou 12:30, no pior cenário) no relatório da Política de proteção de aplicativos. 
+> - Se o usuário estiver iniciando o aplicativo, o horário da última sincronização relatada dependerá do último check-in feito pelo usuário.
 
 
 Para ver o relatório para um usuário, siga estas etapas:
@@ -93,7 +93,7 @@ Para ver o relatório para um usuário, siga estas etapas:
 
     ![Captura de tela do bloco Resumo do gerenciamento de aplicativo móvel do Intune](./media/app-protection-policies-monitor/MAM-reporting-6.png)
 
-2. No painel **Relatório de aplicativo** que é aberto, escolha **Selecionar usuário** para pesquisar um usuário do Azure Active Directory.
+2. No painel **Relatório de aplicativo**, escolha **Selecionar usuário** para pesquisar um usuário do Azure Active Directory.
 
     ![Captura de tela da opção Selecionar usuário no painel Relatório de aplicativo](./media/app-protection-policies-monitor/MAM-reporting-2.png)
 
@@ -103,33 +103,42 @@ Para ver o relatório para um usuário, siga estas etapas:
 > Se os usuários pesquisados não tiverem a política de MAM implantada, você verá uma mensagem informando que o usuário não é direcionado por nenhuma política de MAM.
 
 ### <a name="flagged-users"></a>Usuários sinalizados
-A exibição detalhada mostra a mensagem de erro, o aplicativo que foi acessado quando o erro ocorreu, a plataforma do sistema operacional dispositivo afetada e o carimbo de data/hora. Os usuários com dispositivos sinalizados pela verificação de inicialização condicional do 'atestado do dispositivo do SafetyNet' são informados aqui do motivo relatado pelo Google.
+A exibição detalhada mostra a mensagem de erro, o aplicativo que foi acessado quando o erro ocorreu, a plataforma do sistema operacional dispositivo afetada e o carimbo de data/hora. O erro geralmente corresponde a dispositivos com jailbreak (iOS) ou raiz (Android). Além disso, usuários com dispositivos sinalizados pela verificação de inicialização condicional do “atestado de dispositivo do SafetyNet” também serão indicados aqui com seus respectivos motivos, conforme relatado pelo Google. Para que um usuário seja removido do relatório, o status do dispositivo em si precisa ser alterado, o que acontece após a próxima verificação de detecção de raiz (ou verificação de jailbreak/verificação SafetyNet) que precisa relatar um resultado positivo. Se o dispositivo for realmente corrigido, a atualização no relatório Usuários sinalizados ocorrerá quando a folha for recarregada.
 
 ### <a name="users-with-potentially-harmful-apps"></a>Usuários com aplicativos potencialmente nocivos
-A exibição detalhada mostra o usuário, a ID do pacote do aplicativo, se o aplicativo está habilitado para MAM, a categoria de ameaça, o email, nome do dispositivo e um carimbo de data/hora. Usuários com dispositivos sinalizados com “Exigir verificação de ameaças em aplicativos” pela verificação de inicialização condicional são relatados aqui com a categoria de ameaça, conforme relatado pelo Google. Se houver aplicativos descritos neste relatório, que estejam sendo implantados pelo Microsoft Intune, contate o desenvolvedor do aplicativo e/ou remova a atribuição do aplicativo para os usuários finais. 
+A exibição detalhada mostra:
+
+- O usuário.
+- A ID do pacote do aplicativo.
+- Se o aplicativo está habilitado para MAM.
+- A categoria de ameaça.
+- O email.
+- O nome do dispositivo.
+- O carimbo de data/hora.
+
+Usuários com dispositivos sinalizados com **Exigir verificação de ameaças em aplicativos** pela verificação de inicialização condicional são indicados aqui com a categoria de ameaça, conforme relatado pelo Google. Se houver aplicativos descritos neste relatório que estejam sendo implantados pelo Microsoft Intune, contate o desenvolvedor do aplicativo e/ou remova a atribuição do aplicativo para os usuários finais. 
 
 ## <a name="reporting-view"></a>Exibição de Relatórios
 
 Você pode encontrar os mesmos relatórios no canto superior da folha **Status de proteção do aplicativo**.
 
 > [!NOTE]
-> O Intune fornece campos adicionais de relatórios do dispositivo, incluindo a ID de Registro do Aplicativo, o fabricante do Android, o modelo e a versão do patch de segurança, bem como o modelo do iOS. No Intune, esses campos estão disponíveis pela seleção de **Aplicativos cliente** > **Status de proteção do aplicativo** e escolha de **Relatório de Proteção do Aplicativo: iOS, Android**. Além disso, esses parâmetros ajudam a configurar a lista **Permissão** para o fabricante do dispositivo (Android), a lista **Permissão** para o modelo do dispositivo (Android e iOS) e a configuração de versão mínima do patch de segurança do Android. 
+> O Intune fornece campos adicionais de relatório do dispositivo, incluindo ID de Registro do Aplicativo, fabricante do Android, modelo e versão do patch de segurança, bem como modelo do iOS. No Intune, esses campos podem ser acessados selecionando **Aplicativos clientes** > **Status de proteção do aplicativo** > **Relatório de Proteção do Aplicativo: iOS, Android**. Além disso, esses parâmetros ajudam a configurar a lista de **Permissão** do fabricante do dispositivo (Android), a lista de **Permissão** do modelo do dispositivo (Android e iOS) e a configuração de versão mínima do patch de segurança do Android. 
 
 Relatórios adicionais estão disponíveis para ajudá-lo com o status de conformidade da política de MAM. Para exibir esses relatórios, selecione **Aplicativos cliente** > **Status de proteção do aplicativo** > **Relatórios**. 
 
 A folha **Relatórios** fornece vários relatórios com base no usuário e no aplicativo, incluindo os seguintes:
 
-
 - **Relatório de usuário**: Esse relatório apresenta as mesmas informações que podem ser encontradas no relatório **Status do usuário** na seção [Exibição detalhada](app-protection-policies-monitor.md#detailed-view) acima.
 
 - **Relatório de aplicativo**: Além de selecionar a plataforma e o aplicativo, esse relatório fornece dois status de proteção do aplicativo diferentes que você pode selecionar antes de gerar o relatório. Os status podem ser **Protegidos** ou **Desprotegidos**.
 
-  - O status do usuário para a atividade de MAM gerenciado (**Protegido**): Esse relatório descreve a atividade de cada aplicativo MAM gerenciado, por usuário. Ele mostra todos os aplicativos alvo das políticas de MAM para cada usuário e divide o status de cada aplicativo como com check-in feito nas políticas de MAM ou que eram alvo de uma política de MAM, mas nunca foi feito o check-in do aplicativo.
-  - O status do usuário para a atividade de MAM não gerenciado (**Desprotegido**): Esse relatório descreve a atividade de aplicativos habilitados para MAM atualmente não gerenciados, por usuário. Isso pode acontecer de acordo com os seguintes motivos:
-    - Esses aplicativos estão sendo usados por um usuário ou um aplicativo que no momento não é alvo de uma política de MAM.
+  - O status do usuário para a atividade de MAM gerenciado (**Protegido**): Esse relatório descreve a atividade de cada aplicativo MAM gerenciado, por usuário. Ele mostra todos os aplicativos direcionados pelas políticas de MAM para cada usuário e o status de cada aplicativo conforme verificado nas políticas de MAM. O relatório também inclui o status de cada aplicativo que foi direcionado com uma política de MAM, mas nunca foi verificado.
+  - O status do usuário para a atividade de MAM não gerenciado (**Desprotegido**): Esse relatório descreve a atividade de aplicativos habilitados para MAM atualmente não gerenciados, por usuário. Isso pode acontecer porque:
+    - Esses aplicativos estão sendo usados por um usuário ou um aplicativo que não é direcionado atualmente pela política de MAM.
     - Todos os aplicativos têm o check-in feito, mas não estão recebendo nenhuma política de MAM.
 
-    ![Captura de tela da folha Relatório de aplicativo de um usuário com detalhes de três aplicativos](./media/app-protection-policies-monitor/MAM-reporting-4.png)
+    ![Captura de tela da folha Relatório de aplicativo de um usuário, com detalhes de três aplicativos](./media/app-protection-policies-monitor/MAM-reporting-4.png)
 
 - **Relatório de configuração do usuário**: Com base em um usuário escolhido, esse relatório fornece detalhes sobre as configurações de aplicativos que o usuário recebeu.
 - **Relatório de configuração do aplicativo**: com base na plataforma e no aplicativo escolhidos, esse relatório fornece detalhes sobre os usuários que receberam configurações para o aplicativo escolhido.
@@ -138,14 +147,14 @@ A folha **Relatórios** fornece vários relatórios com base no usuário e no ap
 
 ## <a name="table-grouping"></a>Agrupamento de tabela
 
-Depois que os dados do **Relatório do usuário de proteção de aplicativo** são exibidos, é possível agregar os dados fazendo o seguinte:
+Depois que os dados do **Relatório do usuário de proteção de aplicativo** são exibidos, é possível agregá-los fazendo o seguinte:
 
-- **Resultado da validação:** Os dados aparecem agrupados pelo status de proteção de aplicativo, que pode ser falha, aviso ou êxito.
-- **Nome do aplicativo:** Os dados aparecem agrupados por aplicativos (o nome real do aplicativo) com falha, aviso ou êxito.
+- **Resultado da validação**: os dados são agrupados pelo status de proteção de aplicativo, que pode ser "falha", "aviso" ou "êxito".
+- **Nome do aplicativo**: os dados são agrupados pelo nome real do aplicativo. Novamente, o status pode ser "falha", "aviso" ou "êxito".
 
-## <a name="export-app-protection-activities-to-csv"></a>Exportar as atividades de proteção do aplicativo para CSV
+## <a name="export-app-protection-activities"></a>Exportar as atividades de proteção do aplicativo
 
-Você pode exportar todas as atividades de política de proteção do aplicativo para um único arquivo *.csv*. Isso pode ser útil para analisar todos os status de proteção de aplicativo relatados dos usuários.
+Você pode exportar todas as atividades de política de proteção de aplicativo para um único arquivo .csv. Isso pode ser útil para analisar todos os status de proteção de aplicativo relatados dos usuários.
 
 Siga estas etapas para gerar o relatório de proteção do aplicativo:
 
@@ -153,7 +162,7 @@ Siga estas etapas para gerar o relatório de proteção do aplicativo:
 
     ![Captura de tela do link de download da Proteção de aplicativo](./media/app-protection-policies-monitor/app-protection-report-csv-2.png)
 
-2. Escolha **Sim** para salvar o relatório e, em seguida, escolha **Salvar como** e escolha a pasta na qual você deseja salvar o relatório.
+2. Selecione **Sim** para salvar seu relatório e, em seguida, escolha **Salvar como**. Selecione a pasta na qual você deseja salvar o relatório.
 
     ![Captura de tela da caixa de confirmação Salvar relatório](./media/app-protection-policies-monitor/app-protection-report-csv-1.png)
 

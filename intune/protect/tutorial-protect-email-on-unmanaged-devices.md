@@ -16,12 +16,12 @@ ms.reviewer: ''
 ms.suite: ems
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 7bb684e787a75900ca2157a04150a8fc6c4ba715
-ms.sourcegitcommit: 88b6e6d70f5fa15708e640f6e20b97a442ef07c5
+ms.openlocfilehash: 7e0a01034bc35ddf8fd8eb1ede5fcf4c942dc735
+ms.sourcegitcommit: dd6755383ba89824d1cc128698a65fde6bb2de55
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/02/2019
-ms.locfileid: "71721260"
+ms.lasthandoff: 10/14/2019
+ms.locfileid: "72306795"
 ---
 # <a name="tutorial-protect-exchange-online-email-on-unmanaged-devices"></a>Tutorial: Proteger o email do Exchange Online em dispositivos não gerenciados
 
@@ -113,7 +113,7 @@ Agora, vamos criar duas políticas de Acesso Condicional para cobrir todas as pl
    3. Desmarque as outras caixas de seleção.  
    4. Selecione **Concluído** > **Concluído** para retornar ao painel Nova política.  
 
-   ![Selecionar o aplicativo do Office 365 Exchange Online](./media/tutorial-protect-email-on-unmanaged-devices/modern-auth-policy-client-apps.png)
+   ![Selecionar Aplicativos móveis e clientes](./media/tutorial-protect-email-on-unmanaged-devices/modern-auth-policy-client-apps.png)
 
 7. Em **Controles de acesso**, selecione **Conceder**. 
      
@@ -123,11 +123,11 @@ Agora, vamos criar duas políticas de Acesso Condicional para cobrir todas as pl
    4. Em **Para vários controles**, selecione **Exigir todos os controles selecionados**. Essa configuração garante que os dois requisitos selecionados sejam aplicados quando um dispositivo tentar acessar o email.
    5. Escolha **Selecionar**.
      
-   ![Selecionar o aplicativo do Office 365 Exchange Online](./media/tutorial-protect-email-on-unmanaged-devices/modern-auth-policy-mfa.png)
+   ![Selecionar controles](./media/tutorial-protect-email-on-unmanaged-devices/modern-auth-policy-mfa.png)
 
 7. Em **Habilitar política**, selecione **Ativa** e selecione **Criar**.  
      
-    ![Selecionar o aplicativo do Office 365 Exchange Online](./media/tutorial-protect-email-on-unmanaged-devices/enable-policy.png)  
+    ![Criar política](./media/tutorial-protect-email-on-unmanaged-devices/enable-policy.png)  
 
 A política de Acesso Condicional para clientes de autenticação moderna foi criada. Agora, você pode criar uma política para clientes do Exchange Active Sync.
 
@@ -153,14 +153,14 @@ A política de Acesso Condicional para clientes de autenticação moderna foi cr
    4. Desmarque todas as outras caixas de seleção.  
    5. Selecione **Concluído** e, em seguida, **Concluído** novamente.  
     
-   ![Selecionar o aplicativo do Office 365 Exchange Online](./media/tutorial-protect-email-on-unmanaged-devices/eas-client-apps.png)  
+   ![Aplicar a plataformas com suporte](./media/tutorial-protect-email-on-unmanaged-devices/eas-client-apps.png)  
 
 7. Em **Controles de acesso**, selecione **Conceder**.  
    1. No painel **Conceder**, selecione **Conceder acesso**.  
    2. Selecione **Exigir aplicativo cliente aprovado**. Desmarque todas as outras caixas de seleção.  
    3. Escolha **Selecionar**.  
      
-   ![Selecionar o aplicativo do Office 365 Exchange Online](./media/tutorial-protect-email-on-unmanaged-devices/eas-grant-access.png)  
+   ![Exigir o aplicativo cliente aprovado](./media/tutorial-protect-email-on-unmanaged-devices/eas-grant-access.png)  
 
 8. Em **Habilitar política**, selecione **Ativado**.  
 

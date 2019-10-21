@@ -15,12 +15,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: aafce5cefc26f4f86540a6858249e0bdd0af2328
-ms.sourcegitcommit: 88b6e6d70f5fa15708e640f6e20b97a442ef07c5
+ms.openlocfilehash: b1e72e16eba8bb29adc7360db9e923a15d144b6e
+ms.sourcegitcommit: b8127c7a62d9ac4d0f768980fa1424567bb58733
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/02/2019
-ms.locfileid: "71723158"
+ms.lasthandoff: 10/15/2019
+ms.locfileid: "72350036"
 ---
 # <a name="enforce-compliance-for-microsoft-defender-atp-with-conditional-access-in-intune"></a>Impor a conformidade da ATP do Microsoft Defender com Acesso Condicional no Intune  
 
@@ -135,7 +135,8 @@ A política de conformidade determina o nível de risco considerado aceitável e
 2. Selecione **Conformidade do dispositivo** > **Políticas** > **Criar política**.
 3. Insira um **Nome** e uma **Descrição**.
 4. Em **plataforma**, selecione **Windows 10 e posterior**.
-5. Nas configurações da **ATP do Microsoft Defender**, defina **Exigir que o dispositivo esteja na pontuação de risco do computador ou abaixo** como o seu nível preferencial. 
+5. Em **Configurações**, selecione **Microsoft Defender ATP**.
+6. Defina **Exigir que o dispositivo esteja na pontuação de risco do computador ou abaixo** como o seu nível preferencial. 
    
    As classificações de nível de ameaça são [determinadas pela ATP do Microsoft Defender](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/alerts-queue).
 
@@ -145,7 +146,7 @@ A política de conformidade determina o nível de risco considerado aceitável e
    - **Alto**: este nível é o menos seguro e permite todos os níveis de ameaças. Sendo assim, os dispositivos com níveis de ameaça alta, média ou baixa são considerados compatíveis.
 
 6. Selecione **OK** e **Criar** para salvar suas alterações (e criar a política).  
-7. [Atribua a política de conformidade do dispositivo](create-compliance-policy.md#assign-user-groups) aos grupos aplicáveis.
+7. [Atribua a política de conformidade do dispositivo](create-compliance-policy.md#assign-the-policy) aos grupos aplicáveis.
 
 
 

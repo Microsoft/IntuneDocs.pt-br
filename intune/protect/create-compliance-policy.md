@@ -1,26 +1,26 @@
 ---
-title: Políticas de conformidade do dispositivo no Microsoft Intune – Azure | Microsoft Docs
-description: Introdução ao uso de políticas de conformidade do dispositivo, visão geral dos níveis de status e gravidade, uso do status InGracePeriod, trabalhar com Acesso Condicional, manuseio de dispositivos sem uma política atribuída e diferenças de conformidade no Portal do Azure e no portal clássico no Microsoft Intune
+title: Criar políticas de conformidade do dispositivo no Microsoft Intune – Azure | Microsoft Docs
+description: Criar políticas de conformidade do dispositivo, visão geral do status e dos níveis de gravidade, usar o status de InGracePeriod, trabalhar com Acesso Condicional, lidar com dispositivos sem uma política atribuída e as diferenças de conformidade no Portal do Azure e no portal clássico no Microsoft Intune
 keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 05/22/2019
+ms.date: 10/09/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.localizationpriority: high
 ms.technology: ''
-ms.reviewer: joglocke
+ms.reviewer: samyada
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: c8b3a99744f830da3c88473e79bce78c97875d73
-ms.sourcegitcommit: 88b6e6d70f5fa15708e640f6e20b97a442ef07c5
+ms.openlocfilehash: 0ec8003264c28ea40d53731c8fb8c3eddef7fded
+ms.sourcegitcommit: dd6755383ba89824d1cc128698a65fde6bb2de55
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/02/2019
-ms.locfileid: "71722625"
+ms.lasthandoff: 10/14/2019
+ms.locfileid: "72306586"
 ---
 # <a name="create-a-compliance-policy-in-microsoft-intune"></a>Criar uma política de conformidade no Microsoft Intune
 
@@ -95,15 +95,15 @@ Para usar as políticas de conformidade do dispositivo, não deixe de:
 
 4. Quando terminar, selecione **OK** > **Criar** para salvar as alterações. A política é criada e exibida na lista. Em seguida, atribua a política a grupos.
 
-## <a name="assign-user-groups"></a>Atribuir grupos de usuários
+## <a name="assign-the-policy"></a>Atribuir a política
 
 Depois que uma política é criada, a próxima etapa é atribuir a política aos grupos:
 
 1. Escolha uma política que você criou. As políticas existentes estão em **Conformidade do dispositivo** > **Políticas**.
 2. Escolha a política > **Atribuições**. Você pode incluir ou excluir grupos de segurança do Azure Active Directory (AD).
-3. Escolha **Grupos selecionados** para ver os grupos de segurança do Azure AD. Escolha os grupos de usuários aos quais deseja aplicar essa política > escolha **Salvar** para implantar a política para os usuários.
+3. Escolha **Grupos selecionados** para ver os grupos de segurança do Azure AD. Escolha os grupos aos quais deseja aplicar essa política > Escolha **Salvar** para implantar a política.
 
-Você aplicou a política aos usuários. Os dispositivos usados pelos usuários afetados pela política são avaliados quanto à conformidade.
+Os usuários ou dispositivos direcionados pela sua política são avaliados em relação à conformidade durante o check-in com o Intune.
 
 ### <a name="evaluate-how-many-users-are-targeted"></a>Avaliar quantos usuários são afetados
 
@@ -156,11 +156,11 @@ Para obter mais informações sobre como monitorar políticas de conformidade de
 
 Se um dispositivo tiver várias políticas de conformidade e diferentes status de conformidade para duas ou mais das políticas de conformidade atribuídas, um único status de conformidade resultante será atribuído. Essa atribuição é baseada em um nível de gravidade conceitual atribuído a cada status de conformidade. Cada status de conformidade tem o seguinte nível de gravidade:
 
-|Status  |Gravidade  |
+|Status  |Severidade  |
 |---------|---------|
 |Unknown     |1|
 |NotApplicable     |2|
-|Em Conformidade|3|
+|Compatível|3|
 |InGracePeriod|4|
 |NonCompliant|5|
 |Erro do|6|
