@@ -6,21 +6,22 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 09/05/2019
+ms.date: 10/18/2019
 ms.topic: reference
 ms.service: microsoft-intune
+ms.subservice: configuration
 ms.localizationpriority: medium
 ms.technology: ''
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 5adde9049f1e5f88df4a55b473f59f1d4a08e396
-ms.sourcegitcommit: 88b6e6d70f5fa15708e640f6e20b97a442ef07c5
+ms.openlocfilehash: d88705cbce0d5045ba7f45baf80de7b6e5d383d3
+ms.sourcegitcommit: 8c25aeefb7cbc6444a8596af22fccd1c5426877a
 ms.translationtype: MTE75
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/02/2019
-ms.locfileid: "71733862"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72593775"
 ---
 # <a name="add-wi-fi-settings-for-ios-devices-in-microsoft-intune"></a>Adicionar configurações de Wi-Fi para dispositivos iOS no Microsoft Intune
 
@@ -79,7 +80,13 @@ Este artigo descreve essas configurações.
     - **Confiança do Servidor** - **Nomes de servidores de certificados**: **adicione** um ou mais nomes comuns usados nos certificados emitidos pela autoridade de certificação confiável ao seus servidores de acesso de rede sem fio. Por exemplo, adicione `mywirelessserver.contoso.com` ou `mywirelessserver`. Quando você inserir essas informações, poderá ignorar a janela de confiança dinâmica mostrada em dispositivos de usuário quando eles se conectam à rede Wi-Fi.
     - **Certificado raiz para validação do servidor**: escolha um perfil de certificado raiz confiável existente. Esse certificado permite que o cliente confie no certificado do servidor de acesso à rede sem fio.
 
-    - **Autenticação de Cliente** - **Certificado do cliente para autenticação de cliente (certificado de identidade)** : escolha o perfil de certificado do cliente SCEP ou PKCS que também é implantado no dispositivo. Esse certificado é a identidade apresentada pelo dispositivo ao servidor para autenticar a conexão.
+    - **Autenticação de Cliente**: escolha um **Método de autenticação**. Suas opções:
+      
+      - **Credencial derivada**: se nenhum emissor de credencial derivado tiver sido configurado, o Intune solicitará que você faça isso.
+      
+      - **Certificados**: escolha o perfil de certificado do cliente SCEP ou PKCS que também é implantado no dispositivo. Esse certificado é a identidade apresentada pelo dispositivo ao servidor para autenticar a conexão.
+
+    - **Privacidade de identidade (identidade externa)** : insira o texto enviado em resposta a uma solicitação de identidade de EAP. Esse texto pode ser qualquer valor, como `anonymous`. Durante a autenticação, essa identidade anônima é enviada inicialmente e seguida pela identificação real enviada em um túnel seguro.
 
   - **EAP-TTLS**: também inserir:
 
@@ -88,6 +95,8 @@ Este artigo descreve essas configurações.
 
     - **Autenticação de Cliente** — escolha um **método de Autenticação**. Suas opções:
 
+      - **Credencial derivada**: se nenhum emissor de credencial derivado tiver sido configurado, o Intune solicitará que você faça isso.  
+      
       - **Nome de usuário e senha**: solicita ao usuário um nome de usuário e uma senha para autenticar a conexão. Insira também:
         - **Método não EAP (identidade interna)** : escolha como você autentica a conexão. Certifique-se de escolher o mesmo protocolo configurado em sua rede Wi-Fi.
 
@@ -106,6 +115,8 @@ Este artigo descreve essas configurações.
 
     - **Autenticação de Cliente** — escolha um **método de Autenticação**. Suas opções:
 
+      - **Credencial derivada**: se nenhum emissor de credencial derivado tiver sido configurado, o Intune solicitará que você faça isso.  
+      
       - **Nome de usuário e senha**: solicita ao usuário um nome de usuário e uma senha para autenticar a conexão. 
 
       - **Certificados**: escolha o perfil de certificado do cliente SCEP ou PKCS que também é implantado no dispositivo. Esse certificado é a identidade apresentada pelo dispositivo ao servidor para autenticar a conexão.

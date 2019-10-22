@@ -5,9 +5,10 @@ keywords: SDK
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 08/26/2019
+ms.date: 10/14/2019
 ms.topic: reference
 ms.service: microsoft-intune
+ms.subservice: developer
 ms.localizationpriority: medium
 ms.technology: ''
 ms.assetid: 0100e1b5-5edd-4541-95f1-aec301fb96af
@@ -16,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: b1d1d0c52db57ca6b41c399aeefc948735eea0af
-ms.sourcegitcommit: fc356fd69beaeb3d69982b47e2bdffb6f7127f8c
+ms.openlocfilehash: c8c5be1d7a02c2c8329afe05dcdce22f48c49d05
+ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
 ms.translationtype: MTE75
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/03/2019
-ms.locfileid: "71830519"
+ms.lasthandoff: 10/16/2019
+ms.locfileid: "72503483"
 ---
 # <a name="microsoft-intune-app-sdk-for-android-developer-guide"></a>Guia do SDK de Aplicativo do Microsoft Intune para desenvolvedores do Android
 
@@ -189,7 +190,7 @@ intunemam {
 ```
 
 #### <a name="verification"></a>Verificação
-O plug-in de compilação pode executar verificação adicional para procurar possíveis erros em classes de processamento. Para solicitar isso, especifique `verify = true` no bloco de configuração `intunemam`. Observe que isso pode adicionar vários segundos ao tempo gasto pela tarefa do plug-in.
+O plug-in de compilação pode executar verificação adicional para procurar possíveis erros em classes de processamento. Para solicitar isso, especifique `verify = true` no `intunemam` o bloco de configuração. Observe que isso pode adicionar vários segundos ao tempo gasto pela tarefa do plug-in.
 
 ```groovy
 intunemam {
@@ -197,8 +198,8 @@ intunemam {
 }
 ```
 
-#### <a name="incremental-builds"></a>Compilações incrementais
-Para habilitar o suporte para criação incremental, especifique `incremental = true` no bloco de configuração `intunemam`.  Esse é um recurso experimental destinado a aumentar o desempenho da compilação processando apenas os arquivos de entrada que foram alterados.  A configuração padrão é `false`.
+#### <a name="incremental-builds"></a>Builds incrementais
+Para habilitar o suporte para criação incremental, especifique `incremental = true` no `intunemam` o bloco de configuração.  Esse é um recurso experimental destinado a aumentar o desempenho da compilação processando apenas os arquivos de entrada que foram alterados.  A configuração padrão é `false`.
 
 ```groovy
 intunemam {
@@ -380,7 +381,7 @@ Com o Android P, o Google anunciou um novo conjunto (renomeado) de bibliotecas d
 Ao contrário do que acontece com as bibliotecas de suporte do android, não fornecemos variantes do MAM das bibliotecas AndroidX. Em vez disso, a AndroidX deve ser tratada como qualquer outra biblioteca externa e deve ser configurada para ser regravada pela ferramenta/plug-in de build. Para os builds Gradle, isso pode ser feito incluindo o `androidx.*` no campo `includeExternalLibraries` da configuração do plug-in. As Invocações da ferramenta de linha de comando devem listar explicitamente todos os arquivos jar.
 
 ### <a name="pre-androidx-architecture-components"></a>Componentes de arquitetura AndroidX
-Muitos componentes de arquitetura do Android, incluindo o Room, o ViewModel e o Gerenciador de trabalho, foram reempacotados para AndroidX. Se seu aplicativo usar as variantes AndroidX dessas bibliotecas, verifique se as regravações se aplicam incluindo `android.arch.*` no campo `includeExternalLibraries` da configuração do plug-in. Como alternativa, atualize as bibliotecas para seus equivalentes AndroidX.
+Muitos componentes de arquitetura do Android, incluindo o Room, o ViewModel e o Gerenciador de trabalho, foram reempacotados para AndroidX. Se seu aplicativo usar as variantes AndroidX dessas bibliotecas, verifique se as regravações se aplicam, incluindo `android.arch.*` no campo `includeExternalLibraries` da configuração do plug-in. Como alternativa, atualize as bibliotecas para seus equivalentes AndroidX.
 
 ## <a name="sdk-permissions"></a>Permissões do SDK
 
@@ -547,15 +548,6 @@ Se o aplicativo tem sua própria experiência de usuário de PIN, convém desabi
 MAMPolicyManager.getPolicy(currentActivity).getIsPinRequired();
 ```
 
-### <a name="example-determine-if-pin-is-required-for-the-app"></a>Exemplo: determinar se o PIN é necessário para o aplicativo
-
-Se o aplicativo tem sua própria experiência de usuário de PIN, convém desabilitá-lo se o administrador de TI tiver configurado o SDK para solicitar um PIN do aplicativo. Para determinar se o administrador de TI implantou a política PIN de aplicativo para esse aplicativo, para o usuário final atual, chame o método a seguir:
-
-```java
-
-MAMPolicyManager.getPolicy(currentActivity).getIsPinRequired();
-```
-
 ### <a name="example-determine-the-primary-intune-user"></a>Exemplo: determinar o usuário principal do Intune
 
 Além das APIs expostas na AppPolicy, o nome principal do usuário (**UPN**) também é exposto pela API `getPrimaryUser()` definida dentro da interface do `MAMUserInfo`. Para obter o UPN, chame o seguinte:
@@ -681,7 +673,7 @@ public interface MAMNotificationReceiver {
 
 As seguintes notificações são enviadas para o aplicativo e algumas delas podem exigir a participação do aplicativo:
 
-* **WIPE_USER_DATA**: essa notificação é enviada em uma classe `MAMUserNotification`. Quando essa notificação é recebida, o aplicativo *deve* excluir todos os dados associados à identidade gerenciada (do `MAMUserNotification.getUserIdentity()`). A notificação pode ocorrer por vários motivos, incluindo quando o aplicativo chama `unregisterAccountForMAM`, quando um administrador de ti inicia um apagamento ou quando as políticas de acesso condicional exigidas pelo administrador não são satisfeitas. Se seu aplicativo não se registrar para essa notificação, o comportamento de apagamento padrão será executado. O comportamento padrão excluirá todos os arquivos de um aplicativo de identidade única ou todos os arquivos marcados com a identidade gerenciada para um aplicativo de várias identidades. Essa notificação nunca será enviada no thread da interface do usuário.
+* **WIPE_USER_DATA**: essa notificação é enviada em uma classe `MAMUserNotification`. Quando essa notificação é recebida, o aplicativo *deve* excluir todos os dados associados à identidade gerenciada (de `MAMUserNotification.getUserIdentity()`). A notificação pode ocorrer por vários motivos, incluindo quando seu aplicativo chama `unregisterAccountForMAM`, quando um administrador de ti inicia um apagamento ou quando as políticas de acesso condicional exigidas pelo administrador não são satisfeitas. Se seu aplicativo não se registrar para essa notificação, o comportamento de apagamento padrão será executado. O comportamento padrão excluirá todos os arquivos de um aplicativo de identidade única ou todos os arquivos marcados com a identidade gerenciada para um aplicativo de várias identidades. Essa notificação nunca será enviada no thread da interface do usuário.
 
 * **WIPE_USER_AUXILIARY_DATA**: os aplicativos podem se registrar para essa notificação se quiserem que o SDK de Aplicativo do Intune execute o comportamento de apagamento seletivo padrão, mas ainda desejarem remover alguns dados auxiliares quando o apagamento ocorrer. Essa notificação não está disponível para aplicativos de identidade únicos, ela será enviada somente para aplicativos de várias identidades. Essa notificação nunca será enviada no thread da interface do usuário.
 
@@ -978,7 +970,7 @@ Quando uma conta é registrada pela primeira vez, ela começa no estado `PENDING
 | `NOT_LICENSED` | O usuário não está licenciado para o Intune ou a tentativa de contatar o serviço MAM do Intune falhou.  O aplicativo deve continuar em um estado não gerenciado (normal) e o usuário não deve estar bloqueado.  Os registros serão repetidos periodicamente caso o usuário se torne licenciado no futuro. |
 | `ENROLLMENT_SUCCEEDED` | A tentativa de registro teve êxito ou o usuário já está registrado.  No caso de um registro bem-sucedido, uma notificação de atualização de política será enviada antes dessa notificação.  O acesso a dados corporativos deve ser permitido. |
 | `ENROLLMENT_FAILED` | Falha na tentativa de registro.  Detalhes adicionais podem ser encontrados nos logs do dispositivo.  O aplicativo não deve permitir o acesso a dados corporativos nesse estado, porque anteriormente foi determinado que o usuário estava licenciado para o Intune.|
-| `WRONG_USER` | Somente um usuário por dispositivo pode registrar um aplicativo com o serviço do MAM. Esse resultado indica que o usuário para o qual esse resultado foi entregue (o segundo usuário) é direcionado com a política de MAM, mas um usuário diferente já está registrado. Como a política de MAM não pode ser imposta para o segundo usuário, seu aplicativo não deve permitir o acesso a esses dados do usuário (possivelmente removendo o usuário do seu aplicativo) a menos que/até que o registro desse usuário tenha sucesso em um momento posterior. Simultâneo com o fornecimento desse `WRONG_USER` resultado, o MAM solicitará a opção de remover a conta existente. Se o usuário humano responder no afirmativo, será possível registrar o segundo usuário um pouco mais tarde. Desde que o segundo usuário permaneça registrado, o MAM tentará registrar o registro periodicamente. |
+| `WRONG_USER` | Somente um usuário por dispositivo pode registrar um aplicativo com o serviço do MAM. Esse resultado indica que o usuário para o qual esse resultado foi entregue (o segundo usuário) é direcionado com a política de MAM, mas um usuário diferente já está registrado. Como a política de MAM não pode ser imposta para o segundo usuário, seu aplicativo não deve permitir o acesso a esses dados do usuário (possivelmente removendo o usuário do seu aplicativo) a menos que/até que o registro desse usuário tenha sucesso em um momento posterior. Simultâneo com a entrega desse `WRONG_USER` resultado, o MAM solicitará a opção de remover a conta existente. Se o usuário humano responder no afirmativo, será possível registrar o segundo usuário um pouco mais tarde. Desde que o segundo usuário permaneça registrado, o MAM tentará registrar o registro periodicamente. |
 | `UNENROLLMENT_SUCCEEDED` | O cancelamento do registro foi realizado com sucesso.|
 | `UNENROLLMENT_FAILED` | Houve falha na solicitação de cancelamento do registro.  Detalhes adicionais podem ser encontrados nos logs do dispositivo. Em geral, isso não ocorrerá enquanto o aplicativo passar um UPN válido (nem nulo ou vazio). Não há nenhuma correção direta e confiável que o aplicativo possa tomar. Se esse valor for recebido ao cancelar o registro de um UPN válido, informe-o como um bug para a equipe de MAM do Intune.|
 | `PENDING` | A tentativa de registro inicial para o usuário está em andamento.  O aplicativo pode bloquear o acesso a dados corporativos até que o resultado do registro seja conhecido, mas não é obrigado a fazê-lo. |
@@ -1119,7 +1111,7 @@ notificationRegistry.registerReceiver(receiver, MAMNotificationType.COMPLIANCE_S
 ### <a name="implementation-notes"></a>Notas da implementação
 > [!NOTE]
 > **Alteração importante!**  <br>
-> O método `MAMServiceAuthenticationCallback.acquireToken()` do aplicativo deve passar *false* para o novo sinalizador de `forceRefresh` para `acquireTokenSilentSync()`.
+> O método de `MAMServiceAuthenticationCallback.acquireToken()` do aplicativo deve passar *false* para o novo sinalizador de `forceRefresh` para `acquireTokenSilentSync()`.
 > Anteriormente, recomendamos a passagem de *true* para resolver um problema com a atualização de tokens do agente, mas foi encontrado um problema com a Adal que poderia impedir a aquisição de tokens em alguns cenários se esse sinalizador for *verdadeiro*.
 ```java
 AuthenticationResult result = acquireTokenSilentSync(resourceId, clientId, userId, /* forceRefresh */ false);
@@ -1321,7 +1313,7 @@ Todos os métodos usados para definir a identidade relatam os valores de resulta
 
 O aplicativo deve garantir que uma alternância de identidade seja bem-sucedida antes de exibir ou de usar dados corporativos. No momento, mudanças de identidades de processo e de thread sempre serão bem-sucedidas para um aplicativo habilitado para várias identidades, no entanto, reservamo-nos o direito de adicionar condições de falha. Poderá haver falha na alternância de identidade da interface do usuário devido a argumentos inválidos: se ela entrar em conflito com a identidade do thread ou se o usuário cancelar por causa de requisitos de inicialização condicional (por exemplo, pressionar o botão Voltar na tela PIN). O comportamento padrão para uma opção de identidade de interface do usuário com falha em uma atividade é concluir a atividade (consulte `onSwitchMAMIdentityComplete` abaixo).
 
-No caso da definição de uma identidade de `Context` por meio de `setUIPolicyIdentity`, o resultado é relatado de forma assíncrona. Se o `Context` for uma `Activity`, o SDK não saberá se a alteração de identidade foi bem-sucedida até que a inicialização condicional seja realizada, o que pode exigir que o usuário insira um PIN ou suas credenciais corporativas. O aplicativo pode implementar um `MAMSetUIIdentityCallback` para receber esse resultado ou pode passar NULL para o objeto de retorno de chamada. Observe que, se uma chamada for feita para `setUIPolicyIdentity`, embora o resultado de uma chamada anterior para `setUIPolicyIdentity` *no mesmo contexto* ainda não tenha sido entregue, o novo retorno de chamada substituirá o antigo e o retorno de chamada original nunca receberá um resultado.
+No caso da definição de uma identidade de `Context` por meio de `setUIPolicyIdentity`, o resultado é relatado de forma assíncrona. Se o `Context` for uma `Activity`, o SDK não saberá se a alteração de identidade foi bem-sucedida até que a inicialização condicional seja realizada, o que pode exigir que o usuário insira um PIN ou suas credenciais corporativas. O aplicativo pode implementar uma `MAMSetUIIdentityCallback` para receber esse resultado ou pode passar NULL para o objeto de retorno de chamada. Observe que se uma chamada for feita para `setUIPolicyIdentity` enquanto o resultado de uma chamada anterior para `setUIPolicyIdentity` *no mesmo contexto* ainda não tiver sido entregue, o novo retorno de chamada substituirá o antigo e o retorno de chamada original nunca receberá um resultado.
 
 ```java
     public interface MAMSetUIIdentityCallback {
@@ -1675,7 +1667,7 @@ Pares de chave-valor específico do aplicativo podem ser configurados no console
 Esses pares chave-valor não são interpretados pelo Intune de nenhuma forma, mas passados para o aplicativo. Os aplicativos que desejam receber essa configuração podem usar as classes `MAMAppConfigManager` e `MAMAppConfig` para isso. Se várias políticas estiverem direcionadas ao mesmo aplicativo, poderá haver vários valores conflitantes disponíveis para a mesma chave.
 
 > [!NOTE] 
-> Configuração de configurações para entrega por meio de MAM-não podemos ser delievered em `offline` (quando o Portal da Empresa não está instalado).  Somente AppRestrictions do Android Enterprise será entregue por meio de um `MAMUserNotification` em uma identidade vazia nesse caso.
+> Configuração para entrega por meio de MAM-não é possível delievered em `offline` (quando o Portal da Empresa não está instalado).  Somente AppRestrictions do Android Enterprise será entregue por meio de um `MAMUserNotification` em uma identidade vazia nesse caso.
 
 ### <a name="get-the-app-config-for-a-user"></a>Obter a configuração do aplicativo para um usuário
 A configuração do aplicativo pode ser recuperada da seguinte maneira:
@@ -1756,7 +1748,7 @@ enum StringQueryType {
 
 Seu aplicativo também pode solicitar os dados brutos como uma lista de conjuntos de pares chave-valor.
 
-```
+```java
 List<Map<String, String>> getFullData()
 ```
 
