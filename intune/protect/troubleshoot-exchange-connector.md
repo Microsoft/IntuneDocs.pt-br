@@ -9,6 +9,7 @@ manager: dougeby
 ms.date: 10/02/2019
 ms.topic: troubleshooting
 ms.service: microsoft-intune
+ms.subservice: protect
 ms.localizationpriority: medium
 ms.technology: ''
 ms.assetid: a7e3c742-295b-40bb-9afa-17f243062500
@@ -17,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 230ee8c1206a4d091661b51dd239a4cb0b1a1963
-ms.sourcegitcommit: f04e21ec459998922ba9c7091ab5f8efafd8a01c
+ms.openlocfilehash: 962e66a9fdf6d8abcf6855f645775026ee4db850
+ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
 ms.translationtype: MTE75
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/02/2019
-ms.locfileid: "71814048"
+ms.lasthandoff: 10/16/2019
+ms.locfileid: "72508846"
 ---
 # <a name="troubleshoot-the-intune-exchange-connector"></a>Solução de problemas com o Intune Exchange Connector
 
@@ -32,7 +33,7 @@ Este artigo descreve como solucionar problemas relacionados ao Intune Exchange C
 
 Antes de começar a solucionar problemas de um problema do Exchange Connector no Intune, colete algumas informações básicas para que você esteja trabalhando em uma base sólida. Essa abordagem pode ajudá-lo a entender melhor a natureza do problema e resolvê-lo mais rapidamente.
 
-- Verifique se o processo atende aos requisitos de instalação. Consulte [Configurar o Exchange Connector local do Intune](exchange-connector-install.md).
+- Verifique se o processo atende aos requisitos de instalação. Veja [Configurar o conector do Intune ao Exchange local](exchange-connector-install.md).
 - Verifique se sua conta tem as permissões de administrador do Exchange e do Intune.
 - Observe o texto completo e exato da mensagem de erro, os detalhes e o local em que a mensagem é exibida.
 - Determine quando o problema começou: 

@@ -5,21 +5,22 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 09/18/2019
+ms.date: 10/17/2019
 ms.topic: reference
 ms.service: microsoft-intune
+ms.subservice: configuration
 ms.localizationpriority: medium
 ms.technology: ''
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure, seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: a58eefffac670a12fc1d1a065534b4c1a4505426
-ms.sourcegitcommit: 88b6e6d70f5fa15708e640f6e20b97a442ef07c5
+ms.openlocfilehash: d1d83a77d8823a05accaf1c88b57f6e380636469
+ms.sourcegitcommit: 0be25b59c8e386f972a855712fc6ec3deccede86
 ms.translationtype: MTE75
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/02/2019
-ms.locfileid: "71734941"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72585374"
 ---
 # <a name="android-enterprise-device-settings-to-allow-or-restrict-features-using-intune"></a>Configurações do dispositivo do Android Enterprise para permitir ou restringir os recursos usando o Intune
 
@@ -67,7 +68,7 @@ Este artigo lista e descreve as diferentes configurações que você pode contro
 - **Atualização do sistema**: escolha uma opção para definir como o dispositivo trata as atualizações over-the-air:
   - **Padrão do dispositivo**: usar a configuração padrão do dispositivo.
   - **Automático**: as atualizações são instaladas automaticamente sem interação do usuário. A configuração dessa política instala imediatamente todas as atualizações pendentes.
-  - **Adiado**: as atualizações são adiadas por 30 dias. Após 30 dias o Android solicita ao usuário a instalação da atualização. É possível que os fabricantes de dispositivos ou operadoras impeçam que as atualizações de segurança importantes (isenção) sejam adiadas. Uma atualização isenta mostra uma notificação do sistema para o usuário no dispositivo. 
+  - **Adiado**: as atualizações são adiadas por 30 dias. Após 30 dias o Android solicita ao usuário a instalação da atualização. É possível que os fabricantes de dispositivos ou operadoras impeçam que as atualizações de segurança importantes (isenção) sejam adiadas. Uma atualização isenta mostra uma notificação do sistema para o usuário no dispositivo.
   - **Janela de manutenção**: instala as atualizações automaticamente durante uma janela de manutenção diária definida no Intune. A instalação ocorre diariamente por 30 dias, e pode falhar devido a espaço insuficiente ou aos níveis de bateria. Após 30 dias, o Android solicita ao usuário a instalação. Essa janela também é usada para instalar atualizações de aplicativos do Play. Use essa opção para dispositivos dedicados, como quiosques, pois é possível atualizar aplicativos de primeiro plano em dispositivos dedicados de aplicativo único.
 
 - **Janelas de notificação**: quando essa opção é definida como **Desabilitar**, as notificações de janela, incluindo notificações do sistema, chamadas de entrada, chamadas de saída, alertas do sistema e erros do sistema, não são mostradas no dispositivo. Quando essa opção é definida como **Não configurado**, o padrão do sistema operacional é usado, que poderá ser mostrar as notificações.
@@ -98,8 +99,8 @@ Use essas configurações para definir uma experiência de estilo de quiosque em
   > Para dispositivos dedicados com vários aplicativos, o [aplicativo Tela Inicial Gerenciada](https://play.google.com/work/apps/details?id=com.microsoft.launcher.enterprise) na Google Play **deve ser**:
   >   - [Adicionado como um aplicativo cliente](../apps/apps-add-android-for-work.md) no Intune
   >   - [Atribuído ao grupo de dispositivos](../apps/apps-deploy.md) criado para seus dispositivos dedicados
-  > 
-  > O aplicativo **Tela Inicial Gerenciada** não precisa estar no perfil de configuração, mas precisa ser adicionado como um aplicativo cliente. Quando o aplicativo **Tela Inicial Gerenciada** é adicionado como um aplicativo cliente, quaisquer outros aplicativos que você adicionar ao perfil de configuração serão mostrados como ícones no aplicativo **Tela Inicial Gerenciada**. 
+  >
+  > O aplicativo **Tela Inicial Gerenciada** não precisa estar no perfil de configuração, mas precisa ser adicionado como um aplicativo cliente. Quando o aplicativo **Tela Inicial Gerenciada** é adicionado como um aplicativo cliente, quaisquer outros aplicativos que você adicionar ao perfil de configuração serão mostrados como ícones no aplicativo **Tela Inicial Gerenciada**.
   >
   > Ao usar o modo de quiosque de vários aplicativos, os aplicativos de discagem/telefone podem não funcionar corretamente. 
 
@@ -157,8 +158,8 @@ Use essas configurações para definir uma experiência de estilo de quiosque em
 
       Se você não inserir uma URL, a imagem padrão do dispositivo será usada, se houver uma imagem padrão.
 
-    - **Número de segundos que o dispositivo mostra a proteção de tela antes**de desligar a tela: escolha por quanto tempo o dispositivo mostra a proteção. Insira um valor entre 0-9999999 segundos. O padrão é `0` segundos. Quando deixado em branco ou definido como zero (`0`), a proteção de tela estará ativa até que um usuário interaja com o dispositivo.
-    - **Número de segundos em que o dispositivo fica inativo antes de mostrar a proteção de tela**: escolha por quanto tempo o dispositivo estará ocioso antes de mostrar a proteção. Insira um valor entre 1-9999999 segundos. O padrão é `30` segundos. Você deve inserir um número maior que zero (`0`).
+    - **Número de segundos que o dispositivo mostra a proteção de tela antes**de desligar a tela: escolha por quanto tempo o dispositivo mostra a proteção. Digite um valor entre 0 e 9999999 segundos. O padrão é `0` segundos. Quando deixado em branco ou definido como zero (`0`), a proteção de tela estará ativa até que um usuário interaja com o dispositivo.
+    - **Número de segundos em que o dispositivo fica inativo antes de mostrar a proteção de tela**: escolha por quanto tempo o dispositivo estará ocioso antes de mostrar a proteção. Digite um valor entre 1 e 9999999 segundos. O padrão é `30` segundos. Você deve inserir um número maior que zero (`0`).
     - **Detectar mídia antes de iniciar a proteção de tela**: **habilitar** (padrão) não mostrará a proteção de tela se áudio ou vídeo estiver sendo reproduzido no dispositivo. **Não configurado** mostra a proteção de tela, mesmo se o áudio ou vídeo estiver sendo reproduzido.
 
 ### <a name="device-password-settings"></a>Configurações de senha do dispositivo
@@ -241,7 +242,22 @@ Use essas configurações para definir uma experiência de estilo de quiosque em
 
   Escolha **Não configurado** para permitir que o tráfego flua pelo túnel VPN ou por meio da rede móvel.
 
-## <a name="work-profile-only"></a>Somente perfil de trabalho 
+- **Proxy global recomendado**: escolha **habilitar** para adicionar um proxy global aos dispositivos. Quando habilitado, o tráfego HTTP e HTTPS, incluindo alguns aplicativos no dispositivo, use o proxy que você inserir. Esse proxy é apenas uma recomendação. É possível que alguns aplicativos não usem o proxy. **Não configurado** (padrão) não adiciona um proxy global recomendado.
+
+  Para obter mais informações sobre esse recurso, consulte [setRecommendedGlobalProxy](https://developer.android.com/reference/android/app/admin/DevicePolicyManager.html#setRecommendedGlobalProxy(android.content.ComponentName,%20android.net.ProxyInfo)) (abre um site do Android).
+
+  Quando habilitado, insira também o **tipo** de proxy. Suas opções:
+
+  - **Direto**: escolha esta opção para inserir manualmente os detalhes do servidor proxy, incluindo:
+    - **Host**: Insira o nome de host ou endereço IP do seu servidor proxy. Por exemplo, insira `proxy.contoso.com` ou `127.0.0.1`.
+    - **Número da porta**: insira o número da porta TCP usado pelo servidor proxy. Por exemplo, insira `8080`.
+    - **Hosts excluídos**: Insira uma lista de nomes de host ou endereços IP que não usarão o proxy. Essa lista pode incluir um asterisco (`*`) curinga e vários hosts separados por ponto e vírgula (`;`) sem espaços. Por exemplo, insira `127.0.0.1;web.contoso.com;*.microsoft.com`.
+
+  - **Configuração automática de proxy**: Insira a **URL de PAC** para um script de configuração automática de proxy. Por exemplo, insira `https://proxy.contoso.com/proxy.pac`.
+
+    Para obter mais informações sobre arquivos PAC, consulte o [Arquivo PAC (configuração automática de proxy)](https://developer.mozilla.org/docs/Web/HTTP/Proxy_servers_and_tunneling/Proxy_Auto-Configuration_(PAC)_file) (abre um site que não é da Microsoft).
+
+## <a name="work-profile-only"></a>Somente perfil de trabalho
 
 ### <a name="work-profile-settings"></a>Configurações de perfil de trabalho
 
@@ -249,9 +265,10 @@ Use essas configurações para definir uma experiência de estilo de quiosque em
 
 - **Copiar e colar entre perfis pessoal e corporativo**: escolha **Bloquear** para impedir ações de copiar e colar entre aplicativos pessoais e corporativos. **Não configurado** permite que os usuários compartilhem dados usando ações de copiar e colar com aplicativos no perfil pessoal 
 - **Compartilhamento de dados entre perfis pessoal e corporativo**: escolha se os aplicativos no perfil corporativo podem compartilhar com aplicativos no perfil pessoal. Por exemplo, é possível controlar as ações de compartilhamento em aplicativos, como a opção **Compartilhar…** no aplicativo de navegador Chrome. Essa configuração não é aplicável ao comportamento copiar/colar para a área de transferência. Suas opções de compartilhamento:
-  - **Restrições de compartilhamento padrão**: o comportamento de compartilhamento padrão do dispositivo, que varia dependendo da versão do Android. Por padrão, há permissão para o compartilhamento do perfil pessoal com o perfil de trabalho. Também por padrão, o compartilhamento do perfil de trabalho com o perfil pessoal é bloqueado. Essa configuração impede o compartilhamento de dados do perfil de trabalho com o perfil pessoal. Em dispositivos que executam as versões 6.0 e posteriores, o Google não bloqueia o compartilhamento do perfil pessoal par ao perfil corporativo.
+  - **Padrão do dispositivo**: o comportamento do compartilhamento padrão do dispositivo, que varia dependendo da versão do Android. Por padrão, há permissão para o compartilhamento do perfil pessoal com o perfil de trabalho. Também por padrão, o compartilhamento do perfil de trabalho com o perfil pessoal é bloqueado. Essa configuração impede o compartilhamento de dados do perfil de trabalho com o perfil pessoal. Em dispositivos que executam as versões 6.0 e posteriores, o Google não bloqueia o compartilhamento do perfil pessoal par ao perfil corporativo.
   - **Os aplicativos no perfil de trabalho podem lidar com solicitações de compartilhamento do perfil pessoal**: habilita o recurso interno do Android que permite o compartilhamento do perfil pessoal para o perfil de trabalho. Quando habilitada, uma solicitação de compartilhamento de um aplicativo no perfil pessoal pode ser compartilhada com aplicativos no perfil de trabalho. Essa configuração é o comportamento padrão para dispositivos Android executando versões anteriores à 6.0.
-  - **Permitir compartilhamento entre limites**: habilita o compartilhamento no limite do perfil de trabalho em ambas as orientações. Quando você seleciona essa configuração, os aplicativos no perfil de trabalho podem compartilhar dados com aplicativos sem selo no perfil pessoal. Essa configuração permite que os aplicativos gerenciados no perfil de trabalho sejam compartilhados com aplicativos no lado não gerenciado do dispositivo. Portanto, use essa configuração com cuidado.
+  - **Impedir qualquer compartilhamento entre limites**: impede o compartilhamento entre perfis pessoais e de trabalho.
+  - **Sem restrições no compartilhamento**: habilita o compartilhamento entre o limite do perfil de trabalho em ambas as direções. Quando você seleciona essa configuração, os aplicativos no perfil de trabalho podem compartilhar dados com aplicativos sem selo no perfil pessoal. Essa configuração permite que os aplicativos gerenciados no perfil de trabalho sejam compartilhados com aplicativos no lado não gerenciado do dispositivo. Portanto, use essa configuração com cuidado.
 
 - **Notificações do perfil de trabalho enquanto o dispositivo estiver bloqueado**: controla se os aplicativos no perfil corporativo podem exibir dados em notificações quando o dispositivo está bloqueado. **Bloquear** não mostra os dados. **Não configurado** mostra os dados.
 - **Permissões de aplicativo padrão**: define a política de permissão padrão para todos os aplicativos no perfil de trabalho. A partir do Android 6, o usuário deve conceder determinadas permissões necessárias por aplicativos quando o aplicativo é iniciado. Essa configuração de política permite que você decida se os usuários deverão conceder permissões para todos os aplicativos no perfil de trabalho. Por exemplo, você atribui um aplicativo ao perfil de trabalho que exige o acesso à localização. Normalmente, esse aplicativo solicita que o usuário aprove ou negue o acesso à localização para o aplicativo. Use essa política para conceder permissões automaticamente sem um prompt, para negar automaticamente permissões sem um prompt ou permitir que o usuário final decida. Escolha:
@@ -284,7 +301,7 @@ Use essas configurações para definir uma experiência de estilo de quiosque em
 - **Tamanho mínimo da senha**: insira o número mínimo de caracteres que a senha do usuário deve ter, de **4**-**16**.
 - **Máximo de minutos de inatividade até o bloqueio do perfil de trabalho**: selecione a quantidade de tempo até o perfil de trabalho ser bloqueado. O usuário deve inserir suas credenciais para recuperar o acesso.
 - **Número de falhas de entrada antes de apagar o dispositivo**: insira o número de vezes que uma senha incorreta pode ser inserida antes que o perfil de trabalho seja apagado do dispositivo.
-- **Expiração da senha (dias)** : insira o número de dias até que a senha de um usuário final precise ser alterada (de **1**-**255**).
+- **Expiração da senha (dias)**: insira o número de dias até que a senha de um usuário final precise ser alterada (de **1**-**255**).
 - **Tipo de senha necessária**: selecione o tipo de senha que deve ser definido no dispositivo. Escolha:
   - **Padrão do dispositivo**
   - **Biométrico de segurança baixa**
@@ -305,7 +322,7 @@ Essas configurações de senha aplicam-se a perfis pessoais em dispositivos que 
 - **Tamanho mínimo da senha**: insira o número mínimo de caracteres que a senha do usuário deve ter, de **4**-**14**.
 - **Máximo de minutos de inatividade até a tela ser bloqueada**: selecione o tempo decorrido até um dispositivo inativo ser bloqueado automaticamente
 - **Número de falhas de entrada antes de apagar o dispositivo**: insira o número de vezes que uma senha incorreta pode ser inserida antes que todos os dados do dispositivo sejam apagados
-- **Expiração da senha (dias)** : insira o número de dias até que a senha de um usuário final precise ser alterada (de **1**-**255**)
+- **Expiração da senha (dias)**: insira o número de dias até que a senha de um usuário final precise ser alterada (de **1**-**255**)
 - **Tipo de senha necessária**: selecione o tipo de senha que deve ser definido no dispositivo. Escolha:
   - **Padrão do dispositivo**
   - **Biométrico de segurança baixa**
@@ -325,6 +342,13 @@ Essas configurações de senha aplicam-se a perfis pessoais em dispositivos que 
 
    > [!Note]
    > Essa configuração só funciona para dispositivos Android O e superior.
+
+- **Impedir instalações de aplicativos de fontes desconhecidas no perfil pessoal**: por design, os dispositivos Android Enterprise Work Profile não podem instalar aplicativos de fontes diferentes da Play Store. Por natureza, os dispositivos de perfil de trabalho devem ser de perfil duplo:
+
+  - Um perfil de trabalho gerenciado usando o MDM.
+  - Um perfil pessoal isolado do gerenciamento de MDM.
+
+  Essa configuração permite que os administradores tenham mais controle das instalações de aplicativos de fontes desconhecidas. **Não configurado** (padrão) permite instalações de aplicativos de fontes desconhecidas no perfil pessoal. **Bloquear** impede instalações de aplicativos de fontes diferentes da Play Store no perfil pessoal.
 
 ### <a name="connectivity"></a>Conectividade
 

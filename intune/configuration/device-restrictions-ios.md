@@ -6,21 +6,22 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 09/26/2019
+ms.date: 10/08/2019
 ms.topic: reference
 ms.service: microsoft-intune
+ms.subservice: configuration
 ms.localizationpriority: medium
 ms.technology: ''
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure; seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: bcd86cedc7684f31483d7cd3c8294a76a9c306b2
-ms.sourcegitcommit: 88b6e6d70f5fa15708e640f6e20b97a442ef07c5
+ms.openlocfilehash: a26af380ef00c85c681beccdcdf188c343da1b94
+ms.sourcegitcommit: 0be25b59c8e386f972a855712fc6ec3deccede86
 ms.translationtype: MTE75
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/02/2019
-ms.locfileid: "71734902"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72584881"
 ---
 # <a name="ios-and-ipados-device-settings-to-allow-or-restrict-features-using-intune"></a>Configurações de dispositivo iOS e iPadOS para permitir ou restringir recursos usando o Intune
 
@@ -140,13 +141,13 @@ Essas configurações são adicionadas a um perfil de configuração do disposit
 ### <a name="settings-apply-to-device-enrollment-automated-device-enrollment-supervised"></a>As configurações se aplicam a: registro de dispositivo, registro de dispositivo automatizado (supervisionado)
 
 > [!IMPORTANT]
-> Em dispositivos registrados pelo usuário, se você definir qualquer configuração de senha, as configurações de **senhas simples** serão automaticamente definidas como **Bloquear**e um PIN de 6 dígitos será imposto.
+> Em dispositivos registrados de usuários, se você definir qualquer configuração de senha, as configurações de **Senhas simples** serão definidas automaticamente como **Bloquear**, e será aplicado um PIN de seis dígitos.
 >
-> Por exemplo, você define a configuração de **expiração de senha** e envia por push essa política para dispositivos registrados pelo usuário. Nos dispositivos, acontece o seguinte:
+> Por exemplo, você define a configuração de **Expiração de senha** e envia por push essa política para os dispositivos registrados pelo usuário. Nos dispositivos, acontece o seguinte:
 >
-> - A configuração de **expiração de senha** é ignorada.
+> - A configuração de **Expiração de senha** é ignorada.
 > - Senhas simples, como `1111` ou `1234`, não são permitidas.
-> - Um PIN de 6 dígitos é imposto.
+> - É aplicado um PIN de seis dígitos.
 
 - **Senhas simples**: escolha **Bloquear** para exigir senhas mais complexas. **Não configurado** permite senhas simples, como `0000` e `1234`.
 
@@ -159,7 +160,7 @@ Essas configurações são adicionadas a um perfil de configuração do disposit
 - **Comprimento mínimo da senha**: insira o comprimento mínimo que um usuário deve inserir, entre 4 e 14 caracteres. Em dispositivos registrados pelo usuário, insira um comprimento entre 4 e 6 caracteres.
   
   > [!NOTE]
-  > Para dispositivos registrados pelo usuário, os usuários podem definir um PIN maior que 6 dígitos. No entanto, no máximo seis dígitos são impostos no dispositivo. Por exemplo, um administrador define o comprimento mínimo como `8`. Em dispositivos registrados pelo usuário, os usuários só precisam definir um PIN de 6 dígitos. O Intune não força um PIN maior que 6 dígitos em dispositivos registrados pelo usuário.
+  > Para dispositivos registrados pelo usuário, os usuários podem definir um PIN maior que 6 dígitos. No entanto, no máximo seis dígitos são impostos no dispositivo. Por exemplo, um administrador define o comprimento mínimo para `8`. Em dispositivos registrados pelo usuário, os usuários só precisam definir um PIN de 6 dígitos. O Intune não força um PIN maior que 6 dígitos em dispositivos registrados pelo usuário.
 
 - **Número de falhas de entrada antes de apagar o dispositivo**: insira quantas falhas podem ocorrer antes de o dispositivo ser apagado (entre 4 e 11).
   
@@ -167,7 +168,7 @@ Essas configurações são adicionadas a um perfil de configuração do disposit
   
 - **Máximo de minutos após o bloqueio de tela antes que a senha seja exigida**<sup>1</sup>: insira por quanto tempo o dispositivo deve permanecer ocioso antes que o usuário tenha que digitar novamente a senha. Se o tempo inserido for maior do que o valor definido no dispositivo, o dispositivo ignorará o tempo inserido por você. Compatível com dispositivos iOS 8.0 e mais recentes.
 - **Máximo de minutos de inatividade até o bloqueio da tela**<sup>1</sup>: inserir o número máximo de minutos de inatividade permitido antes que a tela do dispositivo seja bloqueada. Se o tempo inserido for maior do que o valor definido no dispositivo, o dispositivo ignorará o tempo inserido por você. Quando definido como **imediatamente**, a tela é bloqueada com base no tempo mínimo do dispositivo. No iPhone, é de 30 segundos. No iPad, são dois minutos.
-- **Expiração da senha (dias)** : insira o número de dias antes que a senha do dispositivo precise ser alterada.
+- **Expiração da senha (dias)**: insira o número de dias antes que a senha do dispositivo precise ser alterada.
 - **Evitar a reutilização de senhas anteriores**: insira o número de novas senhas que devem ser usadas para que uma senha antiga possa ser reutilizada.
 - **ID de toque e desbloqueio de ID facial**: escolha **Bloquear** para impedir o uso de uma impressão digital ou uma face para desbloquear o dispositivo. **Não configurado** permite que o usuário desbloqueie o dispositivo usando estes métodos.
 
@@ -238,7 +239,7 @@ Essas configurações são adicionadas a um perfil de configuração do disposit
 
 - **Exigir senha da iTunes Store para todas as compras**: **exige** que o usuário insira a senha da ID da Apple para cada compra no aplicativo ou iTunes. **Não configurado** (padrão) permite compras sem solicitar uma senha a cada vez.
 - **Compras no aplicativo**: escolha **Bloquear** para evitar compras no aplicativo a partir da loja. **Não configurado** (padrão) permite compras na loja em um aplicativo em execução.
-- **Baixar o conteúdo da iBook Store sinalizado como "Erotismo"** : escolha **Bloquear** para impedir que os usuários baixem mídias da iBook Store marcadas como erotismo. **Não configurado** (padrão) permite que o usuário baixe livros da categoria "Erotismo".
+- **Baixar o conteúdo da iBook Store sinalizado como "Erotismo"**: escolha **Bloquear** para impedir que os usuários baixem mídias da iBook Store marcadas como erotismo. **Não configurado** (padrão) permite que o usuário baixe livros da categoria "Erotismo".
 - **Permitir que aplicativos gerenciados gravem contatos em contas de contatos não gerenciados**: quando definido como **permitir**, aplicativos gerenciados, como o aplicativo móvel do Outlook, podem salvar ou sincronizar informações de contato, incluindo contatos comerciais e corporativos, para os contatos internos do IOS aplicação. Quando definido como **não configurado** (padrão), os aplicativos gerenciados não podem salvar ou sincronizar informações de contato com o aplicativo interno de contatos do Ios no dispositivo.
   
   Para usar essa configuração, defina a configuração **Exibindo documentos corporativos em aplicativos não gerenciados** como **Bloquear**.
@@ -266,6 +267,11 @@ Essas configurações são adicionadas a um perfil de configuração do disposit
 - **Jogos para vários jogadores**: escolha **Bloquear** para evitar jogos com vários participantes. **Não configurado** (padrão) permite que o usuário execute jogos para vários participantes no dispositivo.
 
   A partir do iOS 13,0, essa configuração requer dispositivos supervisionados.
+
+- **Acesso à unidade de rede no aplicativo de arquivos**: usando o protocolo SMB, os dispositivos podem acessar arquivos ou outros recursos em um servidor de rede. **Desabilitar** impede o acesso a arquivos em uma unidade SMB de rede. **Não configurado** (padrão) permite o acesso.
+
+  Esse recurso aplica-se a:  
+  - iOS e iPadOS 13,0 e mais recentes
 
 ## <a name="built-in-apps"></a>Aplicativos internos
 
@@ -377,7 +383,7 @@ Aplica-se a dispositivos que executam o iOS 9,3 ou mais recente.
 
 ### <a name="settings-apply-to-automated-device-enrollment-supervised"></a>As configurações se aplicam a: registro de dispositivo automatizado (supervisionado)
 
-- **Tipo de lista de aplicativos**: Crie uma lista de aplicativos para mostrar ou ocultar. Suas opções:
+- **Tipo de lista de aplicativos**: Crie uma lista de aplicativos para mostrar ou ocultar. Você pode mostrar ou ocultar aplicativos internos e aplicativos de linha de negócios. O site da Apple tem uma lista de [aplicativos da Apple internos](https://support.apple.com/HT208094). Suas opções:
 
   - **Aplicativos ocultos**: insira uma lista de aplicativos ocultos. Os usuários não podem exibir ou abrir esses aplicativos.
   - **Aplicativos visíveis**: insira uma lista de aplicativos que os usuários podem exibir e iniciar. Nenhum outro aplicativo pode ser exibido ou iniciado.
@@ -412,7 +418,7 @@ Para adicionar aplicativos, você pode:
 - **Discagem de voz**: escolha **Bloquear** para impedir o uso do recurso de discagem por voz no dispositivo. **Não configurado** (padrão) permite a discagem por voz no dispositivo.
 - **Roaming de voz**: escolha **Bloquear** para impedir o roaming de voz pela rede celular. **Não configurado** (padrão) permite o roaming de voz quando o dispositivo está em uma rede celular.
 - **Ponto de Acesso Pessoal**: **Bloquear** desativa o ponto de acesso pessoal no dispositivo dos usuários a cada sincronização do dispositivo. Essa configuração pode não ser compatíveis com algumas operadoras. **Não configurado** (padrão) mantém a configuração de ponto de acesso pessoal como o padrão definido pelo usuário.
-- **Regras de uso da rede celular (somente aplicativos gerenciados)** : define os tipos de dados que os aplicativos gerenciados podem usar em redes celulares. Suas opções:
+- **Regras de uso da rede celular (somente aplicativos gerenciados)**: define os tipos de dados que os aplicativos gerenciados podem usar em redes celulares. Suas opções:
   - **Bloquear uso de dados da rede celular**: bloqueie o uso de dados da rede celular para **Todos os aplicativos gerenciados** ou **Escolha aplicativos específicos**.
   - **Bloquear uso de dados da rede celular enquanto estiver em roaming**: bloqueie o uso de dados da rede celular quando estiver em roaming para **Todos os aplicativos gerenciados** ou **Escolha aplicativos específicos**.
 
@@ -432,7 +438,12 @@ Para adicionar aplicativos, você pode:
   - iOS 12.2 e mais recente
 
 - **Entrar nas redes Wi-Fi utilizando somente perfis de configuração**: **Exigir** força o dispositivo a usar apenas as configurações de redes Wi-Fi por meio de perfis de configuração do Intune. **Não configurado** (padrão) permite que o dispositivo use outras redes Wi-Fi.
-- **Modificação do estado de Wi-Fi**: **não configurado** (padrão) permite que os usuários ativem ou desativem o Wi-Fi no dispositivo. **Bloquear** impede a ativação ou desativação de Wi-Fi.
+- **Wi-Fi sempre ativado**: quando definido como **exigir**, o Wi-Fi permanece no aplicativo de configurações. Ele não pode ser desativado em configurações ou no centro de controle, mesmo quando o dispositivo está no modo avião. **Não configurado** (padrão) permite que o usuário controle a ativação ou desativação do Wi-Fi.
+
+  Definir essa configuração não impede que os usuários selecionem uma rede Wi-Fi.
+
+  Esse recurso aplica-se a:  
+  - iOS e iPadOS 13,0 e mais recentes
 
 ## <a name="connected-devices"></a>Dispositivos conectados
 
@@ -459,6 +470,11 @@ Para adicionar aplicativos, você pode:
   Esse recurso aplica-se a:  
   - iOS 11.0 e mais recente
 
+- **Acesso a arquivos na unidade USB**: os dispositivos podem se conectar e abrir arquivos em uma unidade USB. **Desabilitar** impede o acesso do dispositivo à unidade USB no aplicativo arquivos quando um USB está conectado ao dispositivo. Desabilitar esse recurso também impede que os usuários finais transfiram arquivos para uma unidade USB conectada a um iPad. **Não configurado** (padrão) permite o acesso a uma unidade USB no aplicativo arquivos.
+
+  Esse recurso aplica-se a:  
+  - iOS e iPadOS 13,0 e mais recentes
+
 ## <a name="keyboard-and-dictionary"></a>Teclado e dicionário
 
 ### <a name="settings-apply-to-automated-device-enrollment-supervised"></a>As configurações se aplicam a: registro de dispositivo automatizado (supervisionado)
@@ -481,7 +497,7 @@ Para adicionar aplicativos, você pode:
 - **Backup criptografado**: **Exigir** que quaisquer backups de dispositivo sejam criptografados.
 - **Sincronização com a nuvem de aplicativos gerenciados**: **Não configurado** (padrão) permite que os aplicativos gerenciados com o Intune sincronizem dados com a conta do iCloud do usuário. **Bloquear** impede essa sincronização de dados com o iCloud.
 - **Bloquear o Backup do Catálogo da Empresa**: escolha **Bloquear** para impedir os usuários de fazerem backup de livros corporativos. **Não configurado** (padrão) permite que os usuários façam backup desses livros.
-- **Bloquear a sincronização de metadados do catálogo da empresa (notas e destaques)** : **Bloquear** impede a sincronização de notas e grifos em livros corporativos. **Não configurado** (padrão) permite a sincronização.
+- **Bloquear a sincronização de metadados do catálogo da empresa (notas e destaques)**: **Bloquear** impede a sincronização de notas e grifos em livros corporativos. **Não configurado** (padrão) permite a sincronização.
 
 ### <a name="settings-apply-to-device-enrollment-automated-device-enrollment-supervised"></a>As configurações se aplicam a: registro de dispositivo, registro de dispositivo automatizado (supervisionado)
 

@@ -8,17 +8,18 @@ manager: dougeby
 ms.date: 03/18/2019
 ms.topic: troubleshooting
 ms.service: microsoft-intune
+ms.subservice: fundamentals
 ms.localizationpriority: medium
 ms.technology: ''
 ms.assetid: 6ee841cc-5694-4ba1-8f66-1d58edec30a4
 search.appverid: MET150
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: d999603abc539fda4d152d15dd1ab965c465f39e
-ms.sourcegitcommit: 88b6e6d70f5fa15708e640f6e20b97a442ef07c5
+ms.openlocfilehash: fd00a0ae4cb6c3b150fe40cfc6cd7b71cfa973f3
+ms.sourcegitcommit: 0be25b59c8e386f972a855712fc6ec3deccede86
 ms.translationtype: MTE75
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/02/2019
-ms.locfileid: "71736293"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72585254"
 ---
 # <a name="use-audit-logs-to-track-and-monitor-events-in-microsoft-intune"></a>Usar logs de auditoria para acompanhar e monitorar eventos no Microsoft Intune
 
@@ -49,11 +50,12 @@ Logs de auditoria e logs operacionais também podem ser roteados para o Azure Mo
 
 ![Exporte dados de log para o monitor do Azure selecionando Exportar configurações de exportação de dados no Intune](./media/monitor-audit-logs/audit-logs-export-data-settings.png)
 
-Para saber mais informações sobre esse recurso, confira [Enviar dados de log para o armazenamento, hubs de eventos ou análise de logs](review-logs-using-azure-monitor.md).
+> [!NOTE]
+> Para obter mais informações sobre esse recurso e revisar os pré-requisitos para usá-lo, consulte [enviar dados de log para armazenamento, hubs de eventos ou log Analytics](review-logs-using-azure-monitor.md).
 
 ## <a name="review-audit-events"></a>Examinar eventos de auditoria
 
-![Escolha os logs de auditoria no Intune para ver as ações e as datas em que os eventos aconteceram](./media/monitor-audit-logs/monitor-audit-logs.png "Logs de auditoria")
+![Escolher os logs de auditoria no Intune para ver as ações e as datas em que os eventos aconteceram](./media/monitor-audit-logs/monitor-audit-logs.png "Logs de auditoria")
 
 Um log de auditoria tem um modo de exibição de lista padrão que mostra os itens a seguir:
 
@@ -67,11 +69,11 @@ Um log de auditoria tem um modo de exibição de lista padrão que mostra os ite
 
 Para ver informações mais específicas sobre um evento, selecione um item na lista:
 
-![Obter informações mais específicas sobre quem fez o que em logs de auditoria no Intune](./media/monitor-audit-logs/monitor-audit-log-detail.png "Detalhes de log de auditoria")
+![Obter informações mais específicas sobre quem fez o que em logs de auditoria no Intune](./media/monitor-audit-logs/monitor-audit-log-detail.png "|::ref2::|")
 
 > [!NOTE]
 > **Iniciado por (ator)** inclui informações sobre quem executou a tarefa e em que local ela foi executada. Por exemplo, se você executar a atividade no Intune no Portal do Azure, então **Aplicativo** sempre listará a **extensão do Portal do Microsoft Intune**, e **ID do Aplicativo** sempre usará o mesmo GUID.
-> 
+>
 > A seção **Destino(s)** lista vários destinos e as propriedades que foram alteradas.  
 
 ## <a name="filter-audit-events"></a>Filtrar eventos de auditoria

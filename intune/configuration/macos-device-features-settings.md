@@ -8,6 +8,7 @@ manager: dougeby
 ms.date: 10/02/2019
 ms.topic: reference
 ms.service: microsoft-intune
+ms.subservice: configuration
 ms.localizationpriority: medium
 ms.technology: ''
 ms.reviewer: ''
@@ -15,12 +16,12 @@ ms.suite: ems
 search.appverid: ''
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 2ae9637e827330fb33c407122450deb014b3725a
-ms.sourcegitcommit: f04e21ec459998922ba9c7091ab5f8efafd8a01c
+ms.openlocfilehash: 17d0baeeb6b193be6acf8d6087c26a66b18642c5
+ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
 ms.translationtype: MTE75
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/02/2019
-ms.locfileid: "71816862"
+ms.lasthandoff: 10/16/2019
+ms.locfileid: "72506662"
 ---
 # <a name="macos-device-feature-settings-in-intune"></a>Configurações de recursos do dispositivo macOS no Intune
 
@@ -200,7 +201,7 @@ Esse recurso aplica-se a:
 
 - **ID do aplicativo**: Insira o identificador do aplicativo a ser associado a um site. O identificador do aplicativo inclui a ID da equipe e uma ID do pacote: `TeamID.BundleID`.
 
-  A ID da equipe é uma cadeia de caracteres alfanuméricos de 10 caracteres (letras e números) gerada pela Apple para seus desenvolvedores de aplicativos, como `ABCDE12345`. [Localize sua ID de equipe](https://help.apple.com/developer-account/#/dev55c3c710c)  (abre o site da Apple) tem mais informações.
+  A ID da equipe é uma cadeia de caracteres alfanuméricos de 10 caracteres (letras e números) gerada pela Apple para seus desenvolvedores de aplicativos, como `ABCDE12345`. [Localize sua ID de equipe](https://help.apple.com/developer-account/#/dev55c3c710c)   (abre o site da Apple) tem mais informações.
 
   A ID do pacote identifica exclusivamente o aplicativo e normalmente é formatada na notação de nome de domínio reverso. Por exemplo, a ID do pacote do localizador é `com.apple.finder`. Para localizar a ID do pacote, use o AppleScript no terminal:
 
@@ -219,7 +220,7 @@ Esse recurso aplica-se a:
 - **Adicionar**: Selecione para adicionar seus aplicativos e domínios associados.
 
 > [!TIP]
-> Para solucionar problemas, em seu dispositivo macOS, abra **preferências do sistema** > **perfis**. Confirme se o perfil que você criou está na lista perfis de dispositivo. Se estiver listado, verifique se a **configuração de domínios associados** está no perfil e inclui a ID e os domínios de aplicativo corretos.
+> Para solucionar problemas, em seu dispositivo macOS, abra **preferências do sistema**  > **perfis**. Confirme se o perfil que você criou está na lista perfis de dispositivo. Se estiver listado, verifique se a **configuração de domínios associados** está no perfil e inclui a ID e os domínios de aplicativo corretos.
 
 ## <a name="next-steps"></a>Próximas etapas
 

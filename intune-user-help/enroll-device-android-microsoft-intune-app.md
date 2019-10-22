@@ -9,6 +9,7 @@ ms.date: 08/07/2019
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
+ms.subservice: end-user
 ms.technology: ''
 ms.assetid: 0ed3a002-7533-4001-ae24-e10b64b66620
 searchScope:
@@ -18,12 +19,12 @@ ms.reviewer: esmich
 ms.suite: ems
 ms.custom: intune-enduser
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: ef7ec650c65206eeab69d8f666dc4fb39052bbdb
-ms.sourcegitcommit: 549352bdea93cc2809e3e0010bfcc10bd44dc728
+ms.openlocfilehash: 81c842eb27b1b9131c164ced5aeed86a78a37353
+ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
 ms.translationtype: MTE75
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/09/2019
-ms.locfileid: "68862338"
+ms.lasthandoff: 10/16/2019
+ms.locfileid: "72506300"
 ---
 # <a name="enroll-your-corporate-device-with-the-microsoft-intune-app"></a>Registrar dispositivos corporativos com aplicativos do Microsoft Intune
 
@@ -78,11 +79,11 @@ Conclua estas etapas para configurar e registrar seu dispositivo.
 
    ![Imagem de exemplo da tela Configurar seu telefone de trabalho, realçando o botão Instalar.](./media/fully-managed-intune-app-11.png)   
 
-10. Toque **em** iniciar para abrir o aplicativo Microsoft Intune e registrar seu dispositivo. 
+10. Toque em **Iniciar** para abrir o aplicativo Microsoft Intune e registrar seu dispositivo. 
 
     ![Imagem de exemplo da tela Configurar seu telefone de trabalho, realçando o botão Iniciar.](./media/fully-managed-intune-app-17.png)   
 
-11. Toque  **em entrar** e, **em seguida**, toque em avançar para iniciar o registro. Quando você receber a mensagem de que o registro está concluído, toque em **CONCLUÍDO**.  
+11. Toque  **em entrar** e, **em seguida**, toque em avançar para iniciar o registro. Quando você receber a mensagem de que o registro foi concluído, toque em **CONCLUÍDO**.  
 
     ![Imagem de exemplo da configuração de acesso, registrar a tela do dispositivo, realçando o botão concluído.](./media/fully-managed-intune-app-19.png)   
 

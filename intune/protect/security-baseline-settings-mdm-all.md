@@ -8,6 +8,7 @@ manager: dougeby
 ms.date: 09/06/2019
 ms.topic: reference
 ms.service: microsoft-intune
+ms.subservice: protect
 ms.localizationpriority: medium
 ms.technology: ''
 ms.assetid: ''
@@ -16,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 2f462b04166a2204d47f288d225e1490f8d3ea2a
-ms.sourcegitcommit: 88b6e6d70f5fa15708e640f6e20b97a442ef07c5
+ms.openlocfilehash: e0be7627403cc95316a99e841127a137e0279ff1
+ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
 ms.translationtype: MTE75
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/02/2019
-ms.locfileid: "71736020"
+ms.lasthandoff: 10/16/2019
+ms.locfileid: "72508978"
 ---
 # <a name="windows-mdm-security-baseline-settings-for-intune"></a>Configurações de linha de base de segurança do Windows MDM para o Intune
 Exiba as configurações de linha de base de segurança do MDM com suporte pelo Microsoft Intune para dispositivos que executam o Windows 10 ou posterior. Os valores padrão para as configurações nessa linha de base representam a configuração recomendada para os dispositivos aplicáveis e podem não corresponder os padrões de linha de base de outras linhas de base de segurança ou de outras versões dessa linha de base.
@@ -171,19 +172,19 @@ Para obter mais informações, veja [CSP de política – Bitlocker](https://doc
 Para obter mais informações, veja [CSP de política – Navegador](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-browser) na documentação do Windows.  
 
 - **Exigir SmartScreen para Microsoft Edge**  
-  O Microsoft Edge usa o Windows Defender SmartScreen (ligado) para proteger os usuários contra possíveis golpes de phishing e software mal-intencionado por padrão. Além disso, por padrão, os usuários não podem desabilitar (desligar) o Windows Defender SmartScreen. A habilitação dessa política desliga o Windows Defender SmartScreen e impede os usuários de ligá-lo. Não configure essa política para permitir que os usuários optem por ligar ou desligar o Windows Defender SmartScreen.  
+  O Microsoft Edge usa o Microsoft Defender SmartScreen (ativado) por padrão para proteger os usuários contra possíveis golpes de phishing e software mal-intencionado. Além disso, por padrão, os usuários não podem desabilitar (desativar) o Microsoft Defender SmartScreen. A habilitação dessa política desativa o Microsoft Defender SmartScreen e impede os usuários de ativá-lo. Não configure essa política para permitir que os usuários optem por ativar ou desativar o Microsoft Defender SmartScreen.  
   [Saiba mais](https://go.microsoft.com/fwlink/?linkid=2067029)   
   
   **Padrão**: Sim  
   
 - **Bloquear acesso a sites mal-intencionados**  
-  Por padrão, o Microsoft Edge permite que os usuários contornem (ignorem) os avisos do Windows Defender SmartScreen sobre sites potencialmente mal-intencionados, permitindo que eles prossigam para o site. Com essa política, você pode configurar o Microsoft Edge para impedir que os usuários ignorem os avisos, impedindo-os de prosseguir para o site.  
+  Por padrão, o Microsoft Edge permite que os usuários ignorem os avisos do Microsoft Defender SmartScreen sobre sites potencialmente mal-intencionados, permitindo que eles prossigam para o site. Com essa política, você pode configurar o Microsoft Edge para impedir que os usuários ignorem os avisos, impedindo-os de prosseguir para o site.  
   [Saiba mais](https://go.microsoft.com/fwlink/?linkid=2067040)   
   
   **Padrão**: Sim  
   
 - **Bloquear download de arquivo não verificado**  
-  Por padrão, o Microsoft Edge permite que os usuários contornem (ignorem) os avisos do Windows Defender SmartScreen sobre arquivos potencialmente mal-intencionados, permitindo que eles continuem a baixar os arquivos não verificados. Habilitar essa política impede que os usuários ignorem os avisos, impedindo-os de baixar de arquivos não verificados.  
+  Por padrão, o Microsoft Edge permite que os usuários ignorem os avisos do Microsoft Defender SmartScreen sobre arquivos potencialmente mal-intencionados, permitindo que eles continuem a baixar os arquivos não verificados. Habilitar essa política impede que os usuários ignorem os avisos, impedindo-os de baixar de arquivos não verificados.  
   [Saiba mais](https://go.microsoft.com/fwlink/?linkid=2067023)  
   
   **Padrão**: Sim  
@@ -272,7 +273,7 @@ Para obter mais informações, veja [CSP de política – DeviceGuard](https://d
 ::: zone-end
 ::: zone pivot="mdm-may-2019"
 
-- **segurança baseada em virtualização** 
+- **segurança baseada em virtualização**  
   **padrão**: habilitar vbs com inicialização segura
 ::: zone-end
 ::: zone pivot="mdm-preview,mdm-may-2019"
@@ -1395,7 +1396,7 @@ Para obter mais informações, veja [CSP de política – LocalPoliciesSecurityO
   **Padrão**: Sim
 
 - **Virtualizar falhas de gravação de arquivos e do Registro para locais por usuário**  
-  Essa configuração de política controla se falhas de gravação de aplicativo são redirecionadas para locais do sistema de arquivos e Registro definidos. Essa configuração de política mitiga aplicativos que são executados como administrador e gravam dados de aplicativo em tempo de execução em *%ProgramFiles%* , *%Windir%* , *%Windir%\system32* ou *HKLM\Software*.  
+  Essa configuração de política controla se falhas de gravação de aplicativo são redirecionadas para locais do sistema de arquivos e Registro definidos. Essa configuração de política mitiga aplicativos que são executados como administrador e gravam dados de aplicativo em tempo de execução em *%ProgramFiles%*, *%Windir%*, *%Windir%\system32* ou *HKLM\Software*.  
   [Saiba mais](https://go.microsoft.com/fwlink/?linkid=2067321)  
   
   **Padrão**: Sim
@@ -1525,7 +1526,7 @@ Para obter mais informações, veja [CSP de política – RemoteDesktopServices]
   **Padrão**: habilitado
   
 - **Bloquear o redirecionamento de unidade**  
-  Essa configuração de política especifica se o mapeamento de unidades de cliente deve ser impedido em uma sessão de Serviços de Área de Trabalho Remota (redirecionamento de unidade). Por padrão, um servidor Host da Sessão da Área de Trabalho Remota mapeia unidades do cliente de modo automático após a conexão. Unidades mapeadas aparecem na árvore de pasta da sessão no Computador ou no Gerenciador de Arquivos no formato *\<letra_da_unidade>* em *\<nome_do_computador>* . Você pode usar essa configuração de política para substituir esse comportamento. Se você habilitar essa configuração de política, o redirecionamento de unidade do cliente não será permitido em sessões de Serviços de Área de Trabalho Remota e o redirecionamento de cópia de arquivos da Área de Transferência não será permitido em computadores que executam o Windows Server 2003, o Windows 8 e o Windows XP. Se você desabilitar essa configuração de política, o redirecionamento de unidade do cliente sempre será permitido. Além disso, o redirecionamento de cópia de arquivo da Área de Transferência sempre será permitido se o redirecionamento de área de transferência for permitido. Se você não configurar essa política, o redirecionamento de unidade do cliente e o redirecionamento de cópia de arquivo da Área de Transferência não serão especificados no nível de Política de Grupo.  
+  Essa configuração de política especifica se o mapeamento de unidades de cliente deve ser impedido em uma sessão de Serviços de Área de Trabalho Remota (redirecionamento de unidade). Por padrão, um servidor Host da Sessão da Área de Trabalho Remota mapeia unidades do cliente de modo automático após a conexão. Unidades mapeadas aparecem na árvore de pasta da sessão no Computador ou no Gerenciador de Arquivos no formato *\<letra_da_unidade>* em *\<nome_do_computador>*. Você pode usar essa configuração de política para substituir esse comportamento. Se você habilitar essa configuração de política, o redirecionamento de unidade do cliente não será permitido em sessões de Serviços de Área de Trabalho Remota e o redirecionamento de cópia de arquivos da Área de Transferência não será permitido em computadores que executam o Windows Server 2003, o Windows 8 e o Windows XP. Se você desabilitar essa configuração de política, o redirecionamento de unidade do cliente sempre será permitido. Além disso, o redirecionamento de cópia de arquivo da Área de Transferência sempre será permitido se o redirecionamento de área de transferência for permitido. Se você não configurar essa política, o redirecionamento de unidade do cliente e o redirecionamento de cópia de arquivo da Área de Transferência não serão especificados no nível de Política de Grupo.  
   [Saiba mais](https://go.microsoft.com/fwlink/?linkid=2067197)  
   
   **Padrão**: habilitado
@@ -1574,7 +1575,7 @@ Para obter mais informações, veja [CSP de política – RemoteManagement](http
   
   **Padrão**: desabilitado
   
-- **Tráfego não criptografado de cliente**  
+- **Tráfego não criptografado de cliente **  
   Essa configuração de política permite gerenciar se o cliente de Gerenciamento Remoto do Windows (WinRM) envia e recebe mensagens não criptografadas pela rede. Se você habilitar essa configuração de política, o cliente WinRM enviará e receberá mensagens não criptografadas pela rede. Se você desabilitar ou não configurar essa política, o cliente WinRM enviará ou receberá somente mensagens criptografadas pela rede.  
   [Saiba mais](https://go.microsoft.com/fwlink/?linkid=2067304)  
   
@@ -1670,7 +1671,7 @@ Para obter mais informações, veja [CSP de política – WindowsConnectionManag
 
   **Padrão**: habilitado
   
-## <a name="windows-defender"></a>Windows Defender  
+## <a name="microsoft-defender"></a>Microsoft Defender  
 Para obter mais informações, veja [CSP de política – Defender](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-defender) na documentação do Windows.  
 
 - **Examinar mensagens de email recebidas**  
@@ -1686,7 +1687,7 @@ Para obter mais informações, veja [CSP de política – Defender](https://docs
   **Padrão**: Bloquear
   
 - **Tipo de consentimento de envio de amostra do Defender**  
-  Verifica o nível de consentimento do usuário no Windows Defender para enviar dados. Se o consentimento necessário já tiver sido concedido, o Windows Defender os enviará. Caso contrário (e se o usuário tiver especificou nunca perguntar), a interface do usuário será iniciada para pedir consentimento do usuário (quando o Defender/AllowCloudProtection for permitido) antes de enviar dados.  
+  Verifica o nível de consentimento do usuário no Microsoft Defender para enviar dados. Se o consentimento necessário já tiver sido concedido, o Microsoft Defender os enviará. Caso contrário (e se o usuário tiver especificou nunca perguntar), a interface do usuário será iniciada para pedir consentimento do usuário (quando o Defender/AllowCloudProtection for permitido) antes de enviar dados.  
   [Saiba mais](https://go.microsoft.com/fwlink/?linkid=2067131)  
   
   **Padrão**: enviar amostras seguras automaticamente 
@@ -1702,7 +1703,7 @@ Para obter mais informações, veja [CSP de política – Defender](https://docs
   **Padrão**: Bloquear
   
 - **Impedir que o tipo de roubo de credencial**  
-  O Windows Defender Credential Guard usa segurança baseada em virtualização para isolar segredos para que apenas o software de sistema privilegiado possa acessá-los. O acesso não autorizado a esses segredos pode levar a ataques de roubo de credenciais, como Pass-the-Hash ou Pass-The-Ticket. O Windows Defender Credential Guard evita esses ataques protegendo os hashes de senha NTLM, Kerberos Ticket Granting Tickets e credenciais armazenadas por aplicativos como credenciais de domínio.  
+  O Microsoft Defender Credential Guard usa segurança baseada em virtualização para isolar segredos para que apenas o software de sistema privilegiado possa acessá-los. O acesso não autorizado a esses segredos pode levar a ataques de roubo de credenciais, como Pass-the-Hash ou Pass-The-Ticket. O Microsoft Defender Credential Guard evita esses ataques protegendo os hashes de senha NTLM, Kerberos Ticket Granting Tickets e credenciais armazenadas por aplicativos como credenciais de domínio.  
   [Saiba mais](https://go.microsoft.com/fwlink/?linkid=2067065)  
   
   **Padrão**: Habilitar
@@ -1721,9 +1722,9 @@ Para obter mais informações, veja [CSP de política – Defender](https://docs
 ::: zone-end
 ::: zone pivot="mdm-preview,mdm-may-2019"
 
-- **Tipo de proteção de rede**  
-  Esta política permite que você ative ou desative a proteção de rede (bloquear/auditar) no Windows Defender Exploit Guard. A proteção de rede é um recurso do Windows Defender Exploit Guard que protege os funcionários usando qualquer aplicativo do acesso a golpes de phishing, sites que hospedam explorações e conteúdo mal-intencionado na Internet. Isso inclui impedir que navegadores de terceiros se conectem a sites perigosos. O tipo de valor é um inteiro. Se você habilitar essa configuração, a proteção de rede estará ativada e os funcionários não poderão desativá-la. Seu comportamento pode ser controlado pelas seguintes opções: bloquear e auditar. Se você habilitar essa política com a opção "Bloquear", os aplicativos e usuários serão impedidos de se conectar a domínios perigosos. Você poderá ver essa atividade na Central de Segurança do Windows Defender. Se você habilitar essa política com a opção "Auditar", os aplicativos/usuários não serão impedidos de se conectar a domínios perigosos. No entanto, você ainda verá essa atividade na Central de Segurança do Windows Defender. Se você desabilitar essa política, os aplicativos/usuários não serão impedidos de se conectar a domínios perigosos. Você não verá nenhuma atividade de rede na Central de Segurança do Windows Defender. Se você não configurar essa política, o bloqueio de rede estará desabilitado por padrão.  
-  [Saiba mais](https://go.microsoft.com/fwlink/?linkid=2067102)  
+- **Proteção de rede**  
+  Esta política permite que você ative ou desative a proteção de rede (bloquear/auditar) no Microsoft Defender Exploit Guard. A proteção de rede é um recurso do Microsoft Defender Exploit Guard que protege os funcionários usando qualquer aplicativo do acesso a golpes de phishing, sites que hospedam explorações e conteúdo mal-intencionado na Internet. Isso inclui impedir que navegadores de terceiros se conectem a sites perigosos. O tipo de valor é um inteiro. Se você habilitar essa configuração, a proteção de rede estará ativada e os funcionários não poderão desativá-la. Seu comportamento pode ser controlado pelas seguintes opções: bloquear e auditar. Se você habilitar essa política com a opção "Bloquear", os aplicativos e usuários serão impedidos de se conectar a domínios perigosos. Você poderá ver essa atividade na Central de Segurança do Microsoft Defender. Se você habilitar essa política com a opção "Auditar", os aplicativos/usuários não serão impedidos de se conectar a domínios perigosos. No entanto, você ainda verá essa atividade na Central de Segurança do Microsoft Defender. Se você desabilitar essa política, os aplicativos/usuários não serão impedidos de se conectar a domínios perigosos. Você não verá nenhuma atividade de rede na Central de Segurança do Microsoft Defender. Se você não configurar essa política, o bloqueio de rede estará desabilitado por padrão.  
+  [Saiba mais](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/enable-network-protection)  
   
   **Padrão**: Habilitar
   
@@ -1733,13 +1734,13 @@ Para obter mais informações, veja [CSP de política – Defender](https://docs
   **Padrão**: Todos os dias
   
 - **Proteção entregue na nuvem**  
-  Para melhor proteger seu computador, o Windows Defender enviará informações à Microsoft sobre quaisquer problemas encontrados. A Microsoft analisará essas informações, saberá mais sobre os problemas que afetam você e outros clientes e oferecerá soluções aprimoradas.  
+  Para melhor proteger seu computador, o Microsoft Defender enviará informações à Microsoft sobre quaisquer problemas encontrados. A Microsoft analisará essas informações, saberá mais sobre os problemas que afetam você e outros clientes e oferecerá soluções aprimoradas.  
   [Saiba mais](https://go.microsoft.com/fwlink/?linkid=2067039)
   
   **Padrão**: Sim  
 
 - **Ação de aplicativo potencialmente indesejado do Defender**  
-  O recurso de proteção de PUA (Aplicativo Potencialmente Indesejado) no Windows Defender Antivírus pode identificar e impedir que PUAs baixem e realizem a instalação em pontos de extremidade na sua rede. Esses aplicativos não são considerados vírus, malware ou outros tipos de ameaças, mas podem executar ações nos pontos de extremidade que podem prejudicar seu desempenho ou uso. PUA também pode se referir aos aplicativos que são considerados de má reputação. O comportamento típico de PUA inclui: vários tipos de software agrupando injeção de Ad em drivers de navegadores da Web e otimizadores de registro que detectam problemas, solicitação de pagamento para corrigir os erros, mas permanecem no ponto de extremidade e não fazem alterações ou otimizações (também conhecido como programas de "antivírus de invasores"). Esses aplicativos podem aumentar o risco de a sua rede ser infectada com malware, fazer infecções por malware serem mais difíceis de identificar e podem desperdiçar recursos de TI ao limpar os aplicativos.  
+  O recurso de proteção de PUA (Aplicativo Potencialmente Indesejado) no Microsoft Defender Antivírus pode identificar e impedir que PUAs baixem e realizem a instalação em pontos de extremidade na sua rede. Esses aplicativos não são considerados vírus, malware ou outros tipos de ameaças, mas podem executar ações nos pontos de extremidade que podem prejudicar seu desempenho ou uso. PUA também pode se referir aos aplicativos que são considerados de má reputação. O comportamento típico de PUA inclui: vários tipos de software agrupando injeção de Ad em drivers de navegadores da Web e otimizadores de registro que detectam problemas, solicitação de pagamento para corrigir os erros, mas permanecem no ponto de extremidade e não fazem alterações ou otimizações (também conhecido como programas de "antivírus de invasores"). Esses aplicativos podem aumentar o risco de a sua rede ser infectada com malware, fazer infecções por malware serem mais difíceis de identificar e podem desperdiçar recursos de TI ao limpar os aplicativos.  
   [Saiba mais](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-defender#defender-puaprotection)    
   
   **Padrão**: Bloquear  
@@ -1751,7 +1752,7 @@ Para obter mais informações, veja [CSP de política – Defender](https://docs
   **Padrão**: Bloquear
   
 - **Examinar unidades removíveis durante um exame completo**  
-  Permite que o Windows Defender examine a existência de software mal-intencionado e indesejado em unidades removíveis (por exemplo, pen drives) durante uma verificação completa. O Windows Defender Antivírus examina todos os arquivos nos dispositivos USB antes da execução.  
+  Permite que o Microsoft Defender examine a existência de software mal-intencionado e indesejado em unidades removíveis (por exemplo, pen drives) durante uma verificação completa. O Microsoft Defender Antivírus examina todos os arquivos nos dispositivos USB antes da execução.  
   [Saiba mais](https://go.microsoft.com/fwlink/?linkid=2067036)  
   
   **Padrão**: Sim  
@@ -1762,7 +1763,7 @@ Para obter mais informações, veja [CSP de política – Defender](https://docs
   **Padrão**: Sim
   
 - **Monitoramento de comportamento**  
-  Permite ou não a funcionalidade de monitoramento de comportamento do Windows Defender. Inseridos no Windows 10, esses sensores coletam e processam sinais comportamentais do sistema operacional e enviam esses dados do sensor à sua instância de nuvem privada e isolada do Microsoft Defender ATP.  
+  Permite ou não a funcionalidade de monitoramento de comportamento do Microsoft defender. Inseridos no Windows 10, esses sensores coletam e processam sinais comportamentais do sistema operacional e enviam esses dados do sensor à sua instância de nuvem privada e isolada do Microsoft Defender ATP.  
   [Saiba mais](https://go.microsoft.com/fwlink/?linkid=2067111)  
   
   **Padrão**: Sim
@@ -1816,7 +1817,7 @@ Para obter mais informações, veja [CSP de política – Defender](https://docs
 
 ::: zone-end
 ::: zone pivot="mdm-may-2019"
-## <a name="windows-defender-firewall"></a>Windows Defender Firewall  
+## <a name="microsoft-defender-firewall"></a>Microsoft defender firewall  
 Para obter mais informações, consulte [2.2.2 FW_PROFILE_TYPE]( https://docs.microsoft.com/openspecs/windows_protocols/ms-fasp/7704e238-174d-4a5e-b809-5f3787dd8acc) na documentação de protocolos do Windows.  
 
 - **Domínio do perfil de firewall**  
@@ -1985,11 +1986,11 @@ As seguintes configurações são removidas:
   - **Método de convite por email**
 
 
-*[Novo]* [**Windows Defender**](#windows-defender):
+*[Novo]* [**Microsoft Defender**](#microsoft-defender):
 - **Inicialização do Adobe Reader em um processo filho**  
 - **Inicialização de aplicativos de comunicação do Office em um processo filho** 
 
-*[Novo]* [**Windows Defender Firewall**](#windows-defender-firewall)
+*[Novo]* [ **Microsoft defender firewall**](#microsoft-defender-firewall)
 - **Domínio do perfil de firewall**  
   - **Conexões de entrada bloqueadas**  
   - **Conexões de saída necessárias**  

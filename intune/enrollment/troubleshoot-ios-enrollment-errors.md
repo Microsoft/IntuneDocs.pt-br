@@ -9,6 +9,7 @@ manager: dougeby
 ms.date: 07/25/2019
 ms.topic: troubleshooting
 ms.service: microsoft-intune
+ms.subservice: enrollment
 ms.localizationpriority: medium
 ms.technology: ''
 ms.assetid: ''
@@ -16,12 +17,12 @@ ms.reviewer: mghadial
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 1a02e403fdba34b576aa90b82062b7a602cbb517
-ms.sourcegitcommit: 88b6e6d70f5fa15708e640f6e20b97a442ef07c5
+ms.openlocfilehash: e7c7ec23d0408aa4d4cf81baff2d7cdf749fb65e
+ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
 ms.translationtype: MTE75
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/02/2019
-ms.locfileid: "71735682"
+ms.lasthandoff: 10/16/2019
+ms.locfileid: "72509237"
 ---
 # <a name="troubleshoot-ios-device-enrollment-problems-in-microsoft-intune"></a>Solucionar problemas de registro de dispositivo iOS no Microsoft Intune
 
@@ -62,7 +63,7 @@ Colete as seguintes informações sobre o problema:
 1. Entre no Portal do Azure.
 2. Selecione **Mais serviços**, pesquise por Intune e, em seguida, selecione **Intune**.
 3. Selecione **Registro de dispositivos** > **Restrições de registro**.
-4. Em **restrições de tipo de dispositivo**, selecione a restrição que você deseja definir **> Propriedades** > **selecione plataformas** > selecione **permitir** para **Ios**e clique em **OK**.
+4. Em **restrições de tipo de dispositivo**, selecione a restrição que você deseja definir > **Propriedades**  > **Selecionar plataformas** > selecione **permitir** para **Ios**e clique em **OK**.
 5. Selecione **Configurar plataformas**, selecione **permitir** dispositivos IOS de propriedade pessoal e clique em **OK**.
 6. Registrar o dispositivo novamente.
 
@@ -89,10 +90,10 @@ Colete as seguintes informações sobre o problema:
 **Causa:** O usuário tenta registrar mais dispositivos do que o limite de registro do dispositivo.
 
 #### <a name="resolution"></a>Resolução
-1. Abra o [portal de administração do Intune](https://portal.azure.com/?Microsoft_Intune=1&Microsoft_Intune_DeviceSettings=true&Microsoft_Intune_Enrollment=true&Microsoft_Intune_Apps=true&Microsoft_Intune_Devices=true#blade/Microsoft_Intune_DeviceSettings/ExtensionLandingBlade/overview) > **dispositivos** > **todos os dispositivos**e verifique o número de dispositivos que o usuário registrou.
+1. Abra o [portal de administração do Intune](https://portal.azure.com/?Microsoft_Intune=1&Microsoft_Intune_DeviceSettings=true&Microsoft_Intune_Enrollment=true&Microsoft_Intune_Apps=true&Microsoft_Intune_Devices=true#blade/Microsoft_Intune_DeviceSettings/ExtensionLandingBlade/overview)  > **dispositivos**  > **todos os dispositivos**e verifique o número de dispositivos que o usuário registrou.
     > [!NOTE]
     > Você também deve ter o logon do usuário afetado no [portal do usuário do Intune](https://portal.manage.microsoft.com/) e verificar os dispositivos que foram registrados. Pode haver dispositivos que aparecem no portal do [usuário do Intune](https://portal.manage.microsoft.com/) , mas não no [portal de administração do Intune](https://portal.azure.com/?Microsoft_Intune=1&Microsoft_Intune_DeviceSettings=true&Microsoft_Intune_Enrollment=true&Microsoft_Intune_Apps=true&Microsoft_Intune_Devices=true#blade/Microsoft_Intune_DeviceSettings/ExtensionLandingBlade/overview), tais dispositivos também contam para o limite de registro do dispositivo.
-2. Vá para **administrador** > **Gerenciamento de dispositivo móvel** > **regras de registro** > verificar o limite de registro do dispositivo. Por padrão, o limite é definido como 15. 
+2. Vá para **administrador**  > **Gerenciamento de dispositivo móvel**  > **regras de registro** > verificar o limite de registro do dispositivo. Por padrão, o limite é definido como 15. 
 3. Se o número de dispositivos registrados tiver atingido o limite, remova os dispositivos desnecessários ou aumente o limite de registro do dispositivo. Como cada dispositivo registrado consome uma licença do Intune, recomendamos que você sempre remova dispositivos desnecessários primeiro.
 4. Registrar o dispositivo novamente.
 
@@ -110,8 +111,8 @@ Colete as seguintes informações sobre o problema:
 **Causa:** O usuário que está tentando registrar o dispositivo não tem uma licença do Intune válida.
 
 #### <a name="resolution"></a>Resolução
-1. Vá para o [centro de administração do Microsoft 365](https://portal.office.com/adminportal/home#/homepage)e escolha **usuários** > **usuários ativos**.
-2. Selecione a conta de usuário afetada > **licenças de produto** > **Editar**.
+1. Vá para o [centro de administração do Microsoft 365](https://portal.office.com/adminportal/home#/homepage)e, em seguida, escolha **usuários**  > **usuários ativos**.
+2. Selecione a conta de usuário afetada > **licenças de produto**  > **Editar**.
 3. Verifique se uma licença válida do Intune está atribuída a este usuário.
 4. Registrar o dispositivo novamente.
 
@@ -119,8 +120,8 @@ Colete as seguintes informações sobre o problema:
 
 **Causa:** O usuário que está tentando registrar o dispositivo não tem uma licença do Intune válida.
 
-1. Vá para o [centro de administração do Microsoft 365](https://portal.office.com/adminportal/home#/homepage)e escolha **usuários** > **usuários ativos**.
-2. Selecione a conta de usuário afetada e escolha **licenças de produto** > **Editar**.
+1. Vá para o [centro de administração do Microsoft 365](https://portal.office.com/adminportal/home#/homepage)e, em seguida, escolha **usuários**  > **usuários ativos**.
+2. Selecione a conta de usuário afetada e escolha **licenças de produto**  > **Editar**.
 3. Verifique se uma licença válida do Intune está atribuída a este usuário.
 4. Registrar o dispositivo novamente.
 
@@ -130,7 +131,7 @@ Colete as seguintes informações sobre o problema:
 
 #### <a name="resolution"></a>Resolução
 
-1. Abra **as configurações** no dispositivo IOS >**gerenciamento de dispositivo** >  **geral**.
+1. Abra **as configurações** no dispositivo IOS > **geral**  > **Gerenciamento de dispositivos**.
 2. Toque no perfil de gerenciamento existente e toque em **remover gerenciamento**.
 3. Registrar o dispositivo novamente.
 
@@ -183,7 +184,7 @@ Quando você ativa um dispositivo gerenciado por DEP que recebe um perfil de reg
 #### <a name="resolution"></a>Resolução
 
 1. Edite o perfil de registro. Você pode fazer qualquer alteração no perfil. A finalidade é atualizar a hora de modificação do perfil.
-2. Sincronizar dispositivos gerenciados por DEP: Abra o portal do Intune > **Admin** > **Gerenciamento de dispositivo móvel** > **Ios** > **programa de registro de dispositivos**a sincronização  > **agora**. Uma solicitação de sincronização é enviada à Apple.
+2. Sincronizar dispositivos gerenciados por DEP: Abra o portal do Intune > **administração**  > **Gerenciamento de dispositivo móvel**  > **Ios**  > **programa de registro de dispositivos**  > **sincronizar agora**. Uma solicitação de sincronização é enviada à Apple.
 
 ### <a name="dep-enrollment-stuck-at-user-login"></a>Registro de DEP travado no logon do usuário
 Quando você ativa um dispositivo gerenciado por DEP que recebe um perfil de registro, a instalação inicial se une depois que você insere as credenciais.

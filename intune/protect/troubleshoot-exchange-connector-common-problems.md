@@ -8,6 +8,7 @@ manager: dougeby
 ms.date: 10/02/2019
 ms.topic: troubleshooting
 ms.service: microsoft-intune
+ms.subservice: protect
 ms.localizationpriority: medium
 ms.technology: ''
 ms.assetid: ''
@@ -16,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 14da6274546cbd4c1867975c08c60ece313714b1
-ms.sourcegitcommit: 78f9750712c254d8b123ef15b74f30ca999aa128
+ms.openlocfilehash: e9542212e1b75d97c96c024eed20e20e610e2b5d
+ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
 ms.translationtype: MTE75
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/03/2019
-ms.locfileid: "71918005"
+ms.lasthandoff: 10/16/2019
+ms.locfileid: "72503656"
 ---
 # <a name="resolve-common-problems-with-the-intune-exchange-connector"></a>Resolver problemas comuns com o Intune Exchange Connector
  
@@ -55,7 +56,7 @@ Um usuário pode não receber a mensagem de email de notificação porque:
 Examine as seções a seguir para solucionar problemas de notificação por email.
 
 ### <a name="check-the-notification-account-that-retrieves-autodiscover-settings"></a>Verificar a conta de notificação que recupera as configurações de descoberta automática
-1. Verifique se o serviço descoberta automática e o EWS estão configurados nos serviços de acesso para cliente do Exchange. Para obter mais informações, consulte [serviços de acesso para cliente](https://docs.microsoft.com/Exchange/architecture/client-access/client-access) e [serviço descoberta automática no Exchange Server](https://docs.microsoft.com/Exchange/architecture/client-access/autodiscover?view=exchserver-2019).
+1. Certifique-se de que o serviço Descoberta Automática e os Serviços Web do Exchange estejam configurados nos serviços de Acesso para Cliente do Exchange. Para obter mais informações, consulte [serviços de acesso para cliente](https://docs.microsoft.com/Exchange/architecture/client-access/client-access) e [serviço descoberta automática no Exchange Server](https://docs.microsoft.com/Exchange/architecture/client-access/autodiscover?view=exchserver-2019).
 
 
 2. Verifique se sua conta de notificação atende aos seguintes requisitos:
@@ -69,10 +70,10 @@ Examine as seções a seguir para solucionar problemas de notificação por emai
    1. Em um prompt de comando, digite *nslookup*.  
 
    2. Insira *autodiscover.SMTPdomain.com*. A saída deve ser semelhante à imagem a seguir:  
-      resultados de ![Nslookup](./media/troubleshoot-exchange-connector-common-problems/nslookup-results.png
+      resultados de ![Nslookup ](./media/troubleshoot-exchange-connector-common-problems/nslookup-results.png
 )
 
-   Você também pode testar o serviço descoberta automática da Internet em https://testconnectivity.microsoft.com. Ou testá-lo de um domínio local usando a ferramenta Microsoft Connectivity Analyzer. Para obter mais informações, consulte a [ferramenta Analisador de conectividade da Microsoft](https://docs.microsoft.com/en-us/previous-versions/office/exchange-remote-connectivity/jj851141(v=exchg.80)). Se necessário, [Baixe a ferramenta Analisador de conectividade da Microsoft](http://go.microsoft.com/fwlink/?LinkID=313782).
+   Você também pode testar o serviço descoberta automática da Internet em https://testconnectivity.microsoft.com. Ou testá-lo de um domínio local usando a ferramenta Microsoft Connectivity Analyzer. Para obter mais informações, consulte a [ferramenta Analisador de conectividade da Microsoft](https://docs.microsoft.com/en-us/previous-versions/office/exchange-remote-connectivity/jj851141(v=exchg.80)). Se necessário, [Baixe a ferramenta Analisador de conectividade da Microsoft](https://go.microsoft.com/fwlink/?LinkID=313782).
 
 
 ### <a name="check-autodiscovery"></a>Verificar descoberta automática  

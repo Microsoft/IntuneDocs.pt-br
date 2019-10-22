@@ -9,6 +9,7 @@ ms.date: 03/06/2019
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
+ms.subservice: end-user
 ms.technology: ''
 ms.assetid: ''
 searchScope:
@@ -18,16 +19,16 @@ ms.reviewer: jieyang
 ms.suite: ems
 ms.custom: intune-enduser; intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: e5aff186d3850e8f9a6081168a5adc9956504019
-ms.sourcegitcommit: c19584b36448bbd4c8638d7cab552fe9b3eb3408
+ms.openlocfilehash: 64612aa8a1d427284778a9aa43b966b05cb0a15f
+ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
 ms.translationtype: MTE75
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/20/2019
-ms.locfileid: "71163350"
+ms.lasthandoff: 10/16/2019
+ms.locfileid: "72502103"
 ---
 # <a name="reset-device-from-the-company-portal-app"></a>Redefinir o dispositivo do aplicativo Portal da Empresa  
 
-Redefina um dispositivo usado, perdido ou roubado para suas configurações de fábrica do aplicativo Portal da Empresa.  
+Restaure um dispositivo usado, perdido ou roubado para as configurações de fábrica no aplicativo do Portal da Empresa.  
 
 Depois de redefinir um dispositivo, ele não aparecerá mais no Portal da Empresa. Seus aplicativos e arquivos existentes serão apagados e serão restaurados para as configurações prontas para uso.  
 
