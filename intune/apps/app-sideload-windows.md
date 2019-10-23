@@ -9,18 +9,19 @@ manager: dougeby
 ms.date: 09/24/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
+ms.subservice: apps
 ms.localizationpriority: high
 ms.technology: ''
 ms.assetid: e44f1756-52e1-4ed5-bf7d-0e80363a8674
 search.appverid: MET150
 ms.custom: intune-classic
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: c1d039d5be449d1c1b8cc13e69b84e1bd7f7dd2b
-ms.sourcegitcommit: 88b6e6d70f5fa15708e640f6e20b97a442ef07c5
+ms.openlocfilehash: 4a89392dabe695cf49e989351cef822852676916
+ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/02/2019
-ms.locfileid: "71725277"
+ms.lasthandoff: 10/16/2019
+ms.locfileid: "72507387"
 ---
 # <a name="sign-line-of-business-apps-so-they-can-be-deployed-to-windows-devices-with-intune"></a>Assine aplicativos da linha de negócios para que possam ser implantados em dispositivos Windows com o Intune
 
@@ -63,7 +64,7 @@ O Intune implanta apenas o arquivo .cer mais recente que foi carregado. Se você
 
 ## <a name="how-to-renew-the-symantec-enterprise-code-signing-certificate"></a>Como renovar o certificado corporativo de autenticação de código Symantec
 
-O certificado usado para implantar aplicativos móveis do Windows Phone 8.1 foi descontinuado em 28 de fevereiro de 2019 e não está mais disponível para renovação da Symantec. Se você estiver implantando no Windows 10 Mobile, poderá continuar usando os certificados de assinatura de código do Symantec Desktop Enterprise seguindo as instruções de [sideload do Windows 10](app-sideload-windows.md#windows-10-sideloading).
+O certificado usado para implantar aplicativos móveis do Windows Phone 8.1 foi descontinuado em 28 de fevereiro de 2019 e não está mais disponível para renovação da Symantec. Se você estiver implantando no Windows 10 Mobile, poderá continuar usando os certificados de assinatura de código do Symantec Desktop Enterprise seguindo as instruções em [Sideload do Windows 10](app-sideload-windows.md#windows-10-sideloading).
 
 ## <a name="how-to-install-the-updated-certificate-for-line-of-business-lob-apps"></a>Como instalar o certificado atualizado para aplicativos de linhas de negócios (LOB)
 

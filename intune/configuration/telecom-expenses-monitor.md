@@ -9,6 +9,7 @@ manager: dougeby
 ms.date: 05/09/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
+ms.subservice: configuration
 ms.localizationpriority: high
 ms.technology: ''
 ms.assetid: b7bf5802-4b65-4aeb-ac99-8e639dd89c2a
@@ -17,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: a3e459e4e22c7985e2e68e624c413ce967e1a8ba
-ms.sourcegitcommit: 88b6e6d70f5fa15708e640f6e20b97a442ef07c5
+ms.openlocfilehash: ce9a6916cc77714a87aeac33555c0be1e59463f5
+ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/02/2019
-ms.locfileid: "71723847"
+ms.lasthandoff: 10/16/2019
+ms.locfileid: "72506633"
 ---
 # <a name="set-up-a-telecom-expense-management-service-in-intune"></a>Configurar um serviço de gerenciamento de despesas de telecomunicações no Intune
 
@@ -45,9 +46,9 @@ Para usar o serviço Datalert com o Intune, há algumas definições de configur
 
 ## <a name="supported-platforms"></a>Plataformas com Suporte
 
-- Android 4.4 e dispositivos mais recentes que são compatíveis com Knox (Samsung)
+- Android 4.4 e dispositivos mais recentes compatíveis com Knox (Samsung)
 
-  O documento [Versões do Android que dão suporte a Knox](https://seap.samsung.com/faq/what-versions-android-support-knox-standard-and-knox-premium-sdks-0) (abre o site da Samsung) lista as versões com suporte a Knox.
+  [Versões do Android que dão suporte a Knox](https://seap.samsung.com/faq/what-versions-android-support-knox-standard-and-knox-premium-sdks-0) (abre o site da Samsung) lista as versões com suporte a Knox.
 
 - iOS 8.0 e posterior
 
@@ -76,21 +77,21 @@ O Intune se integra aos seguintes provedores de gerenciamento de despesas de tel
 
 5. Como **Domínio do Azure AD**, insira sua ID de locatário do Azure. Escolha **Conexão**.
 
-    Quando você seleciona **Conexão**, o serviço Datalert faz check-in no Intune. E confirma se não há conexões Datalert existentes. Depois de alguns segundos, uma página de entrada do Microsoft será exibida, seguida da autenticação do Datalert Azure.
+    Quando você escolhe **Conexão**, o serviço Datalert faz check-in no Intune. E confirma se não há conexões Datalert existentes. Depois de alguns segundos, uma página de entrada do Microsoft será exibida, seguida da autenticação do Datalert Azure.
 
 6. Na página de autenticação da Microsoft, selecione **Aceitar**.
 
-    Você será redirecionado para uma página de **agradecimento** do Datalert que se fechará depois de alguns segundos. O Datalert valida a conexão e exibe uma marca de seleção verde ao lado de itens validados. Se a validação falhar, você verá uma mensagem em vermelho. Entre em contato com o suporte do Datalert para obter ajuda.
+    Você será redirecionado para uma página de **agradecimento** do Datalert, que se fechará depois de alguns segundos. O Datalert valida a conexão e exibe uma marca de seleção verde ao lado de itens validados. Se a validação falhar, você verá uma mensagem em vermelho. Entre em contato com o suporte do Datalert para obter ajuda.
 
-    A seguinte imagem mostra as marcas de seleção verdes quando a conexão é realizada com sucesso:
+    A imagem a seguir mostra as marcas de seleção verdes quando a conexão é realizada com êxito:
 
       ![Página do Datalert mostrando a conexão bem-sucedida](./media/telecom-expenses-monitor/tem-datalert-connection.png)
 
 7. Em **Consentimento ADAL/Aplicativo Datalert**, defina a opção como **Ligada**. Na página de autenticação da Microsoft, selecione **Aceitar**.
 
-    Você será redirecionado para uma página de **agradecimento** do Datalert que se fechará depois de alguns segundos. O Datalert valida a conexão e exibe uma marca de seleção verde ao lado de itens validados. Se a validação falhar, você verá uma mensagem em vermelho. Entre em contato com o suporte do Datalert para obter ajuda.
+    Você será redirecionado para uma página de **agradecimento** do Datalert, que se fechará depois de alguns segundos. O Datalert valida a conexão e exibe uma marca de seleção verde ao lado de itens validados. Se a validação falhar, você verá uma mensagem em vermelho. Entre em contato com o suporte do Datalert para obter ajuda.
 
-    A seguinte imagem mostra as marcas de seleção verdes quando a conexão é realizada com sucesso:
+    A imagem a seguir mostra as marcas de seleção verdes quando a conexão é realizada com êxito:
 
       ![Página do Datalert mostrando a conexão bem-sucedida](./media/telecom-expenses-monitor/tem-datalert-adal-consent.png)
 
@@ -98,9 +99,9 @@ O Intune se integra aos seguintes provedores de gerenciamento de despesas de tel
 
     Na página de autenticação da Microsoft, selecione **Aceitar**.
 
-    Você será redirecionado para uma página de **agradecimento** do Datalert que se fechará depois de alguns segundos. O Datalert valida a conexão e exibe uma marca de seleção verde ao lado de itens validados. Se a validação falhar, você verá uma mensagem em vermelho. Entre em contato com o suporte do Datalert para obter ajuda.
+    Você será redirecionado para uma página de **agradecimento** do Datalert, que se fechará depois de alguns segundos. O Datalert valida a conexão e exibe uma marca de seleção verde ao lado de itens validados. Se a validação falhar, você verá uma mensagem em vermelho. Entre em contato com o suporte do Datalert para obter ajuda.
 
-    A seguinte imagem mostra as marcas de seleção verdes quando a conexão é realizada com sucesso:
+    A imagem a seguir mostra as marcas de seleção verdes quando a conexão é realizada com êxito:
 
    ![Página do Datalert mostrando a conexão bem-sucedida](./media/telecom-expenses-monitor/tem-datalert-mdm-profiles.png)
 
@@ -165,9 +166,9 @@ As etapas a seguir adicionam o aplicativo Datalert. O iOS é usado como exemplo.
 
 ### <a name="step-4-add-organization-phone-lines-to-the-datalert-console"></a>Etapa 4: adicionar linhas telefônicas corporativas ao console do Datalert
 
-Agora você configurou os serviços Intune e Datalert para se comunicarem entre si. A seguir, adicione linhas telefônicas corporativas pagas ao console do Datalert. E insira limites e ações para violações de uso de celular ou roaming. É possível adicionar manualmente linhas telefônicas corporativas pagas ao console do Datalert ou adicioná-las automaticamente depois que o dispositivo é registrado no Intune.
+Agora os serviços Intune e Datalert estão configurados para se comunicarem entre si. A seguir, adicione linhas telefônicas corporativas pagas ao console do Datalert. E insira limites e ações para violações de uso de celular ou roaming. É possível adicionar manualmente linhas telefônicas corporativas pagas ao console do Datalert ou adicioná-las automaticamente depois que o dispositivo é registrado no Intune.
 
-Para definir esses itens, vá para a [Configuração do Datalert para o Microsoft Intune](http://www.datalert.fr/microsoft-intune/intune-setup) (abre o site do Datalert). Na guia **Configurações**, siga as etapas no assistente para instalação.
+Para definir esses itens, vá para a [Configuração do Datalert para Microsoft Intune](http://www.datalert.fr/microsoft-intune/intune-setup) (abre o site do Datalert). Na guia **Configurações**, siga as etapas no assistente de instalação.
 
   ![Captura de tela do painel Adicionar uma política](./media/telecom-expenses-monitor/tem-add-phone-lines-to-datalert-console.png)
 
@@ -189,10 +190,10 @@ Para a experiência de usuários finais, os seguintes artigos podem ajudar:
 > [!IMPORTANT]
 > Se você desabilitar o serviço Datalert no Intune:
 >
-> - Todas as ações que são aplicadas aos dispositivos devido a violações dos limites de uso anteriores serão desfeitas.
+> - Todas as ações aplicadas aos dispositivos devido a violações passadas dos limites de uso serão desfeitas.
 > - Os usuários não são impedidos de acessar os dados e roaming.
-> - O Intune ainda receberá os sinais provenientes do serviço, mas o Intune os ignorará.
+> - O Intune ainda receberá os sinais proveniente do serviço, mas o Intune os ignora.
 
 ## <a name="next-steps"></a>Próximas etapas
 
-Os relatórios de dados de uso ficam disponíveis no console de gerenciamento do Saaswedo Datalert.
+Os relatórios de dados de uso estão disponíveis no console de gerenciamento do Datalert da Saaswedo.

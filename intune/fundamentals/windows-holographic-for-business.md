@@ -8,18 +8,20 @@ manager: dougeby
 ms.date: 12/18/2018
 ms.topic: conceptual
 ms.service: microsoft-intune
+ms.subservice: fundamentals
 ms.localizationpriority: high
 ms.technology: ''
+ms.assetid: 585a2f17-106b-4f02-adf7-05f08a92dbc1
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure, seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 9e50784529bb3128b08aa36859ca003f7c6f7691
-ms.sourcegitcommit: 88b6e6d70f5fa15708e640f6e20b97a442ef07c5
+ms.openlocfilehash: cdb3623a61c16f69773703b8acdbb8f7c02b4ac4
+ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/02/2019
-ms.locfileid: "71727786"
+ms.lasthandoff: 10/16/2019
+ms.locfileid: "72504750"
 ---
 # <a name="manage-and-use-different-device-management-features-on-windows-holographic-and-hololens-devices-with-intune"></a>Gerenciar e usar diferentes recursos de gerenciamento de dispositivo em dispositivos do Windows Holographic e HoloLens com o Intune
 
@@ -39,7 +41,7 @@ O Azure AD (Active Directory) é um ótimo recurso para ajudar a gerenciar e con
 
 - **[Registro em massa para dispositivos Windows](../enrollment/windows-bulk-enroll.md)** : você pode ingressar muitos dispositivos novos com Windows no Azure Active Directory e no Intune. Esse recurso é chamado de registro em massa e usa pacotes de provisionamento. Esses pacotes ingressam os dispositivos que executam o Windows Holographic for Business no seu locatário do Azure AD e os registra no Intune.
 
-## <a name="company-portal"></a>Portal para Empresas
+## <a name="company-portal"></a>Portal da Empresa
 **[Configurar o aplicativo do Portal da Empresa](../apps/company-portal-app.md)**
 
 O Intune fornece o aplicativo Portal da Empresa para que os usuários acessem dados da empresa, registrem dispositivos, instalem aplicativos, contatem o departamento de TI e muito mais. Você pode personalizar o aplicativo Portal da Empresa para seus dispositivos que executam o Windows Holographic for Business.

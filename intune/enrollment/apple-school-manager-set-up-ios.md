@@ -9,6 +9,7 @@ manager: dougeby
 ms.date: 12/06/2018
 ms.topic: conceptual
 ms.service: microsoft-intune
+ms.subservice: enrollment
 ms.localizationpriority: high
 ms.technology: ''
 ms.assetid: 4c35a23e-0c61-11e8-ba89-0ed5f89f718b
@@ -17,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 20ec38e5db8f65b90083b3aececd8b059b8ea45e
-ms.sourcegitcommit: 88b6e6d70f5fa15708e640f6e20b97a442ef07c5
+ms.openlocfilehash: 645cb2c920d3da56bb0267073c1951d0b72d73de
+ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/02/2019
-ms.locfileid: "71723366"
+ms.lasthandoff: 10/16/2019
+ms.locfileid: "72505653"
 ---
 # <a name="set-up-ios-device-enrollment-with-apple-school-manager"></a>Configurar o registro de dispositivo iOS com o Apple School Manager
 
@@ -35,7 +36,7 @@ Para habilitar o registro do Apple School Manager, é necessário usar os portai
 O registro do Apple School Manager não pode ser usado com o [Programa de registro de dispositivos da Apple](device-enrollment-program-enroll-ios.md) ou o [gerenciador de registros de dispositivo](device-enrollment-manager-enroll.md).
 
 **Pré-requisitos**
-- [Apple MDM (Mobile Device Management) Push certificate](apple-mdm-push-certificate-get.md)
+- [Certificado de push do Mobile Device Management (MDM) da Apple](apple-mdm-push-certificate-get.md)
 - [Autoridade MDM](../fundamentals/mdm-authority-set.md)
 - [Apple MDM Push Certificate](apple-mdm-push-certificate-get.md)
 - Se estiver usando o ADFS, a afinidade de dispositivo de usuário exigirá o [ponto de extremidade Nome do Usuário/Misto do WS-Trust 1.3](https://technet.microsoft.com/library/adfs2-help-endpoints). [Saiba mais](https://technet.microsoft.com/itpro/powershell/windows/adfs/get-adfsendpoint).
@@ -104,7 +105,7 @@ Agora que você instalou o token, pode criar um perfil de registro para disposit
     >
     > Essas opções não têm suporte na autenticação com o Assistente de Configuração da Apple.
 
-6. Escolha **Configurações de Gerenciamento de Dispositivo** e indique se deseja que os dispositivos que utilizam esse perfil sejam supervisionados.
+6. Escolha **Configurações de gerenciamento de dispositivo** e indique se deseja que os dispositivos que utilizam esse perfil sejam supervisionados.
     Os dispositivos **supervisionados** permitem mais opções de gerenciamento e desabilitam o Bloqueio de Ativação por padrão. A Microsoft recomenda usar o DEP como o mecanismo para habilitar o modo supervisionado, especialmente para as empresas que implantam grandes números de dispositivos iOS.
 
     Os usuários são notificados de que seus dispositivos são supervisionados de duas maneiras:
@@ -117,20 +118,20 @@ Agora que você instalou o token, pode criar um perfil de registro para disposit
 
 7. Escolha se deseja registro bloqueado para dispositivos que usam esse perfil. O **registro bloqueado** desabilita as configurações de iOS que permitem que o perfil de gerenciamento seja removido do menu **Configurações**. Depois que o dispositivo é registrado, não é possível alterar essa configuração sem apagar o dispositivo. Esses dispositivos devem ter o Modo de Gerenciamento **Supervisionado** configurado como *Sim*. 
 
-8. Você pode permitir que vários usuários façam logon em iPads registrados por meio de uma ID da Apple gerenciada. Para fazer isso, escolha **Sim** em **iPad Compartilhado** (a opção exige que os modos **Registrar sem Afinidade de Usuário** e **Supervisionado** estejam definidos como **Sim**.) As IDs da Apple gerenciadas são criadas no portal do Apple School Manager. Saiba mais sobre [iPad compartilhado](../fundamentals/education-settings-configure-ios-shared.md) e [os requisitos de iPad compartilhado da Apple](https://help.apple.com/classroom/ipad/2.0/#/cad7e2e0cf56).
+8. É possível permitir que vários usuários façam logon em iPads registrados por meio de uma ID Apple gerenciada. Para fazer isso, escolha **Sim** em **iPad compartilhado** (a opção exige que os modos **Registrar sem afinidade do usuário** e **Supervisionado** estejam definidos como **Sim**). As IDs da Apple gerenciadas são criadas no portal do Apple School Manager. Saiba mais sobre [iPad compartilhado](../fundamentals/education-settings-configure-ios-shared.md) e [os requisitos de iPad compartilhado da Apple](https://help.apple.com/classroom/ipad/2.0/#/cad7e2e0cf56).
 
 9. Escolha se deseja que os dispositivos que usam esse perfil possam **Sincronizar com computadores**. Se você escolher **Permitir Apple Configurator por certificado**, deverá escolher um certificado em **Certificados do Apple Configurator**.
 
 10. Se você escolher **Permitir Apple Configurator por certificado**, deverá escolher um certificado em Certificados do Apple Configurator para importar.
 
-11. Você pode especificar um formato de nomenclatura para dispositivos que será aplicado automaticamente quando eles forem registrados. Para fazer isso, selecione **Sim** em **Aplicar modelo de nome do dispositivo**. Em seguida, na caixa **Modelo de Nome do Dispositivo**, digite o modelo a ser usado para os nomes que usam esse perfil. Especifique um modelo de formato que inclua o tipo de dispositivo e o número de série.
+11. Você pode especificar um formato de nomenclatura para dispositivos, que será aplicado automaticamente quando estes forem registrados. Para fazer isso, selecione **Sim** em **Aplicar modelo de nome do dispositivo**. Em seguida, na caixa **Modelo de Nome do Dispositivo**, digite o modelo a ser usado para os nomes que usam esse perfil. Especifique um modelo de formato que inclua o tipo de dispositivo e o número de série.
 
 12. Selecione **OK**.
 
 13. Escolha as **Configurações do Assistente de Configuração** para definir as seguintes configurações de perfil: ![Personalização do Assistente de Configuração.](./media/apple-school-manager-set-up-ios/setupassistantcustom.png)
 
 
-    |                 Configuração                  |                                                                                               Descrição                                                                                               |
+    |                 Setting                  |                                                                                               Descrição                                                                                               |
     |------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
     |     <strong>Nome do Departamento</strong>     |                                                             Aparece quando os usuários tocam em <strong>Sobre a Configuração</strong> durante a ativação.                                                              |
     |    <strong>Telefone do Departamento</strong>     |                                                          Aparece quando o usuário clica no botão <strong>Precisa de Ajuda</strong> durante a ativação.                                                          |
@@ -167,7 +168,7 @@ Depois que o Intune tiver recebido permissão para gerenciar seus dispositivos A
 No [Intune](https://aka.ms/intuneportal), escolha **Registro de dispositivo** > **Registro da Apple** > **Tokens de programa de registro** > escolha um token na lista > **Dispositivos** > **Sincronizar**. ![Captura de tela do nó Dispositivos do Programa de Registro e do Link de Sincronização.](./media/apple-school-manager-set-up-ios/image06.png)
 
 Para seguir os termos da Apple em relação ao tráfego aceitável do programa de registro, o Intune impõe as seguintes restrições:
-- Uma sincronização completa pode ser executada, no máximo, uma vez a cada sete dias. Durante uma sincronização completa, o Microsoft Intune atualiza todos os números de série da Apple atribuídos à nossa plataforma. Se você tentar uma sincronização completa dentro de sete dias após a sincronização completa anterior, o Intune atualizará somente os números de série ainda não listados no Intune.
+- Uma sincronização completa pode ser executada, no máximo, uma vez a cada sete dias. Durante uma sincronização completa, o Microsoft Intune atualiza todos os números de série da Apple atribuídos à nossa plataforma. Se tentar uma sincronização completa dentro de sete dias após a sincronização completa anterior, o Intune atualizará somente os números de série ainda não listados no Intune.
 - Qualquer solicitação de sincronização tem 15 minutos para ser concluída. Durante esse tempo ou até a solicitação ser bem-sucedida, o botão de **Sincronizar** fica desabilitado.
 - O Intune sincroniza dispositivos novos e removidos com a Apple a cada 24 horas.
 
@@ -175,7 +176,7 @@ Para seguir os termos da Apple em relação ao tráfego aceitável do programa d
 >Atribua também números de série do Apple School Manager a perfis na folha **Dispositivos do Programa de Registro**.
 
 ## <a name="assign-a-profile-to-devices"></a>Atribuir um perfil a dispositivos
-Os dispositivos Apple School Manager gerenciados pelo Intune deverão receber um perfil de registro antes de serem registrados.
+Dispositivos Apple School Manager gerenciados pelo Intune devem receber um perfil de registro antes de serem registrados.
 
 1. No [Intune](https://aka.ms/intuneportal), escolha **Registro de dispositivo** > **Registro da Apple** > **Tokens de programa de registro** > escolha um token na lista.
 2. Escolha **Dispositivos**> escolha dispositivos na lista > **Atribuir perfil**.
@@ -183,4 +184,4 @@ Os dispositivos Apple School Manager gerenciados pelo Intune deverão receber um
 
 ## <a name="distribute-devices-to-users"></a>Distribuir dispositivos para usuários
 
-Você habilitou o gerenciamento e a sincronização entre o Apple e o Intune e atribuiu um perfil para permitir o registro dos dispositivos Apple School. Agora você pode distribuir dispositivos para os usuários. Quando um dispositivo Apple School Manager do iOS é ativado, ele é registrado no gerenciamento pelo Intune. Os perfis não poderão ser aplicados aos dispositivos ativados atualmente em uso enquanto o dispositivo não for apagado.
+Você habilitou o gerenciamento e a sincronização entre o Apple e o Intune e atribuiu um perfil para permitir o registro dos dispositivos Apple School. Agora você pode distribuir dispositivos para os usuários. Ao ativar um dispositivo Apple School Manager do iOS, ele é registrado no gerenciamento pelo Intune. Os perfis não podem ser aplicados aos dispositivos ativados atualmente em uso enquanto o dispositivo não for apagado.

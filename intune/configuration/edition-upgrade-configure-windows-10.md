@@ -1,6 +1,6 @@
 ---
 title: Atualizar ou usar o modo S em dispositivos com Windows 10 – Microsoft Intune – Azure | Microsoft Docs
-description: Use o Microsoft Intune a fim de atualizar dispositivos com Windows 10 para uma edição diferente ou alterne para o modo S. Os administradores podem usar um perfil de configuração de dispositivo a fim de atualizar o Windows 10 Professional para o Windows 10 Enterprise e alternar ou sair do modo S. Consulte os caminhos de atualização de software para o Windows 10 Pro, N Edition, Education, Cloud, Enterprise, Core, Holographic e Mobile.
+description: Use o Microsoft Intune a fim de atualizar dispositivos com Windows 10 para uma edição diferente ou alterne para o modo S. Os administradores podem usar um perfil de configuração de dispositivo para atualizar o Windows 10 Professional para o Windows 10 Enterprise e sair do modo S. Consulte os caminhos de atualização de software para o Windows 10 Pro, N Edition, Education, Cloud, Enterprise, Core, Holographic e Mobile.
 keywords: ''
 author: MandiOhlinger
 ms.author: mandia
@@ -8,6 +8,7 @@ manager: dougeby
 ms.date: 04/22/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
+ms.subservice: configuration
 ms.localizationpriority: high
 ms.technology: ''
 ms.assetid: ae8b6528-7979-47d8-abe0-58cea1905270
@@ -16,18 +17,18 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: ad2977597ca9e5b6eef82fb3539917ea15ca2e31
-ms.sourcegitcommit: 88b6e6d70f5fa15708e640f6e20b97a442ef07c5
+ms.openlocfilehash: f5519429bae69fe277c72b12a2801a1875295824
+ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/02/2019
-ms.locfileid: "71723990"
+ms.lasthandoff: 10/16/2019
+ms.locfileid: "72493780"
 ---
-# <a name="upgrade-windows-10-editions-or-switch-out-of-s-mode-on-devices-using-microsoft-intune"></a>Atualizar as edições do Windows 10 ou alternar para sair do modo S em dispositivos usando o Microsoft Intune
+# <a name="upgrade-windows-10-editions-or-switch-out-of-s-mode-on-devices-using-microsoft-intune"></a>Atualizar as edições do Windows 10 ou sair do modo S em dispositivos usando o Microsoft Intune
 
 [!INCLUDE [azure_portal](../includes/azure_portal.md)]
 
-Como parte de sua solução de MDM (gerenciamento de dispositivo móvel), convém atualizar seus dispositivos com Windows 10. Por exemplo, convém atualizar seus dispositivos com Windows 10 Professional para Windows 10 Enterprise. Ou você quer alternar o dispositivo para sair do modo S.
+Como parte de sua solução de MDM (gerenciamento de dispositivo móvel), convém atualizar seus dispositivos com Windows 10. Por exemplo, convém atualizar seus dispositivos com Windows 10 Professional para Windows 10 Enterprise. Ou você pode tirar o dispositivo do modo S.
 
 O [modo S do Windows 10](https://support.microsoft.com/help/4456067/windows-10-switch-out-of-s-mode) (abre outro site da Microsoft) foi projetado para garantir a segurança e o desempenho. É possível usar o Intune para sair do modo S. Sair do modo S é uma maneira. Depois de sair do modo S, você não pode voltar para o modo S do Windows 10.
 
@@ -39,7 +40,7 @@ Esse recurso aplica-se a:
 - Windows 10 1809 ou posterior para o modo S
 - Windows Holographic for Business
 
-Esses recursos estão disponíveis no Intune e podem ser configurados pelo administrador. O Intune usa "perfis de configuração" para criar e personalizar essas configurações de acordo com as necessidades da sua organização. Depois de adicionar esses recursos em um perfil, você pode enviar por push ou implantar o perfil para dispositivos com Windows 10 em sua organização. Quando você implanta o perfil, o Intune atualiza os dispositivos ou alterna para sair do modo S automaticamente.
+Esses recursos estão disponíveis no Intune e podem ser configurados pelo administrador. O Intune usa "perfis de configuração" para criar e personalizar essas configurações de acordo com as necessidades da sua organização. Depois de adicionar esses recursos em um perfil, você pode enviar por push ou implantar o perfil para dispositivos com Windows 10 em sua organização. Quando você implanta o perfil, e o Intune atualiza automaticamente os dispositivos ou os retira do modo S.
 
 Este artigo lista os caminhos de atualização com suporte e mostra como criar o perfil de configuração do dispositivo. Você também pode ver todas as configurações de atualização e do modo S disponíveis para [Windows 10](edition-upgrade-windows-settings.md).
 
@@ -60,11 +61,11 @@ A tabela a seguir lista os caminhos de atualização com suporte para o perfil d
 
 | Atualizar a partir do | Fazer upgrade para |
 |---|---|
-| Windows 10 Pro | Windows 10 Education <br/>Windows 10 Enterprise <br/>Windows 10 Pro Education |
+| Windows 10 Pro | Windows 10 Education <br/>Windows 10 Enterprise <br/>Windows 10 Pro Education |
 | Edição Windows 10 Pro N | Windows 10 Education N edition <br/>Edição Windows 10 Enterprise N <br/>Edição Windows 10 Pro Education N | 
 | Windows 10 Pro Education | Windows 10 Education | 
 | Edição Windows 10 Pro Education N | Windows 10 Education N edition |
-| Windows 10 Cloud | Windows 10 Education <br/>Windows 10 Enterprise <br/>Windows 10 Pro <br/>Windows 10 Pro Education | 
+| Windows 10 Cloud | Windows 10 Education <br/>Windows 10 Enterprise <br/>Windows 10 Pro <br/>Windows 10 Pro Education | 
 | Edição Windows 10 Cloud N | Windows 10 Education N edition <br/>Edição Windows 10 Enterprise N <br/>Edição Windows 10 Pro N <br/>Edição Windows 10 Pro Education N | 
 | Windows 10 Enterprise | Windows 10 Education | 
 | Edição Windows 10 Enterprise N | Windows 10 Education N edition | 

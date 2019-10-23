@@ -9,6 +9,7 @@ manager: dougeby
 ms.date: 08/15/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
+ms.subservice: apps
 ms.localizationpriority: high
 ms.technology: ''
 ms.assetid: 3292671a-5f5a-429e-90f7-b20019787d22
@@ -17,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure, seoapril2019
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 38cc8ebc7be09d6ca0322a916d71f1fc86d3e49b
-ms.sourcegitcommit: 88b6e6d70f5fa15708e640f6e20b97a442ef07c5
+ms.openlocfilehash: 35545d6c01e3acf7e54c3b932a4450c93f3dd4a9
+ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/02/2019
-ms.locfileid: "71725199"
+ms.lasthandoff: 10/16/2019
+ms.locfileid: "72507317"
 ---
 # <a name="assign-office-365-apps-to-windows-10-devices-with-microsoft-intune"></a>Atribua aplicativos do Office 365 a dispositivos Windows 10 com o Microsoft Intune
 
@@ -158,7 +159,7 @@ A tabela a seguir lista os códigos de erro comuns que você pode encontrar e os
 
 | Status | Fase | Descrição |
 |--------------------------------------------------|--------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| 1460 (ERROR_TIMEOUT) | Download | Falha ao baixar a Ferramenta de Implantação do Office |
+| 1460 (ERROR_TIMEOUT) | Baixar | Falha ao baixar a Ferramenta de Implantação do Office |
 | 13 (ERROR_INVALID_DATA) | - | Não é possível verificar a assinatura da Ferramenta de Implantação do Office baixada |
 | Código de erro de CertVerifyCertificateChainPolicy | - | Falha na verificação de certificação da Ferramenta de Implantação do Office baixada |
 | 997 | WIP | Instalando |

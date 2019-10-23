@@ -9,6 +9,7 @@ manager: dougeby
 ms.date: 08/19/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
+ms.subservice: apps
 ms.localizationpriority: high
 ms.technology: ''
 ms.assetid: ''
@@ -17,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: f38f22d7aaf03f278fad86061aa8198c8e37f31f
-ms.sourcegitcommit: 88b6e6d70f5fa15708e640f6e20b97a442ef07c5
+ms.openlocfilehash: 1a94f3d175fe5c036c5e90635a66467263b23122
+ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/02/2019
-ms.locfileid: "71725485"
+ms.lasthandoff: 10/16/2019
+ms.locfileid: "72499123"
 ---
 # <a name="protecting-application-extensions"></a>Como proteger as extensões de aplicativo
 
@@ -68,10 +69,10 @@ Se um usuário concordar em compartilhar dados entre contas, como acontece suple
 |Permissões de leitura para [Pessoas](https://developer.microsoft.com/graph/docs/concepts/permissions_reference#people-permissions)     |Permite que o aplicativo leia uma lista classificada de pessoas relevantes para o usuário conectado. A lista pode incluir contatos locais, contatos de redes sociais ou do diretório da sua organização e pessoas de comunicações recentes (como email e Skype).         |
 |Permissões de leitura para [Calendários](https://developer.microsoft.com/graph/docs/concepts/permissions_reference#calendars-permissions)     |Permite que o aplicativo leia eventos em calendários do usuário. Inclui as reuniões em calendários do usuário conectado, seus horários, locais e participantes.         |
 |Permissões de leitura para [Perfil do Usuário](https://developer.microsoft.com/graph/docs/concepts/permissions_reference#user-permissions)     |Permite que os usuários entrem no aplicativo e que o aplicativo leia o perfil dos usuários conectados. Também permite que o aplicativo leia informações básicas da empresa para usuários conectados.         |
-|Gerenciamento de     |Esse escopo não está disponível e ainda não está em uso. Inclui assinaturas fornecidas pela organização do usuário para aplicativos e serviços da Microsoft, como o Office 365.         |
+|Subscriptions     |Esse escopo não está disponível e ainda não está em uso. Inclui assinaturas fornecidas pela organização do usuário para aplicativos e serviços da Microsoft, como o Office 365.         |
 |Insights     |Esse escopo não está disponível e ainda não está em uso. Inclui os interesses associados à conta do usuário conectado com base no uso de serviços da Microsoft.         |
 
-### <a name="learn-more"></a>Mais informações
+### <a name="learn-more"></a>Saiba mais
 
 - Saiba mais sobre [Informações e recursos do LinkedIn em seus aplicativos Microsoft](https://go.microsoft.com/fwlink/?linkid=850740).
 - Saiba mais sobre a versão de conexões de conta do LinkedIn na [página Roteiro do Office 365](https://products.office.com/en-US/business/office-365-roadmap?filters=%26freeformsearch=linkedin#abc). 

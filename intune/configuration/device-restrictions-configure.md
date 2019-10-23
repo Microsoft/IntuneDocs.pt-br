@@ -8,18 +8,19 @@ manager: dougeby
 ms.date: 09/04/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
+ms.subservice: configuration
 ms.localizationpriority: high
 ms.technology: ''
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 61a8815bdbb0121d727c80dda0421922e0531cf7
-ms.sourcegitcommit: 88b6e6d70f5fa15708e640f6e20b97a442ef07c5
+ms.openlocfilehash: b7b4597106d1fffb65f112feae750aa7c8feefc0
+ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/02/2019
-ms.locfileid: "71724042"
+ms.lasthandoff: 10/16/2019
+ms.locfileid: "72493992"
 ---
 # <a name="configure-device-restriction-settings-in-microsoft-intune"></a>Definir configurações de restrição de dispositivo no Microsoft Intune
 
@@ -55,7 +56,7 @@ Este artigo mostra como criar um perfil de restrições de dispositivos. Além d
         - **Windows 8.1 e posterior**
         - **Windows 10 e posterior**
 
-    - **Tipo de perfil**: Selecione **Restrições de dispositivo**.
+    - **Tipo de perfil**: Escolha **Restrições de dispositivo**.
 
         Para criar um perfil de restrições de dispositivo para dispositivos com Windows 10 Team, como um Surface Hub, escolha **Restrições do dispositivo (Windows 10 Team)** .
 

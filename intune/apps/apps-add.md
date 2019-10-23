@@ -9,6 +9,7 @@ manager: dougeby
 ms.date: 08/23/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
+ms.subservice: apps
 ms.localizationpriority: high
 ms.technology: ''
 ms.assetid: a1ded457-0ecf-4f9c-a2d2-857d57f8d30a
@@ -17,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 40bb96000513bb1de09ec8f8865735d70bddcd43
-ms.sourcegitcommit: 88b6e6d70f5fa15708e640f6e20b97a442ef07c5
+ms.openlocfilehash: c8e61be086323a16a6220573874ed80ce4e9bd32
+ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/02/2019
-ms.locfileid: "71725212"
+ms.lasthandoff: 10/16/2019
+ms.locfileid: "72498975"
 ---
 # <a name="add-apps-to-microsoft-intune"></a>Adicionar aplicativos ao Microsoft Intune 
 
@@ -36,7 +37,7 @@ Os usuários de aplicativos e dispositivos na empresa (a força de trabalho da e
 
 O Intune é compatível com uma ampla variedade de tipos de aplicativos. As opções disponíveis são diferentes para cada tipo de aplicativo. O Intune permite que você adicione e atribua os seguintes tipos de aplicativo:
 
-| Tipos de aplicativo | Instalação | Atualizações |
+| Tipos de aplicativo | Instalação | Updates |
 |---|---|---|
 | Aplicativos da loja (aplicativos da loja) | O Intune instala o aplicativo no dispositivo.  | As atualizações de aplicativo são automáticas. |
 | Aplicativos escritos internamente (linha de negócios) | O Intune instala o aplicativo no dispositivo (você fornece o arquivo de instalação). | É necessário atualizar o aplicativo. |
@@ -50,7 +51,7 @@ A tabela a seguir lista os tipos de aplicativo específicos e como você pode ad
 | **Tipo específico a aplicativos** | **Tipo geral** | **Procedimentos específicos a aplicativos** |
 | --- | --- | --- |
 | Aplicativos da Android Store  | Aplicativo da Store  | Selecione **Android** como o **tipo de aplicativo** e digite a URL do Google Play do aplicativo. |
-| Aplicativos Android Enterprise  | Aplicativo da Store  | Selecione **Android** como o **tipo de aplicativo** e digite a URL do Google Play Store gerenciada do aplicativo. <sup>1</sup> |
+| Aplicativos Android Enterprise  | Aplicativo da Store  | Selecione **Android** como o **tipo de aplicativo** e digite a URL da Google Play Store Gerenciada do aplicativo. <sup>1</sup> |
 | Aplicativos da iOS Store  | Aplicativo da Store  | Selecione **iOS** como o **tipo de aplicativo**, procure o aplicativo e selecione o aplicativo no Intune. |
 | Aplicativos da Windows Phone 8.1 Store  | Aplicativo da Store  | Selecione **Windows Phone 8.1** como o **tipo de aplicativo** e insira a URL da Microsoft Store do aplicativo. |
 | Aplicativos da Microsoft Store  | Aplicativo da Store  | Selecione **Windows** como o **tipo de aplicativo** e insira a URL da Microsoft Store do aplicativo. |
@@ -66,7 +67,7 @@ A tabela a seguir lista os tipos de aplicativo específicos e como você pode ad
 | Aplicativos Web  | Aplicativo Web  | Selecione **Link da Web** como o **tipo de aplicativo** e insira uma URL válida apontando para o aplicativo Web.  |
 | Aplicativos do sistema Android Enterprise  | Aplicativo da Store  | Selecione **Aplicativo do sistema Android Enterprise** como o **tipo de aplicativo** e insira o nome, o editor e o arquivo do pacote do aplicativo.  |
 | Aplicativo do Windows (Win32)  | Aplicativos LOB  | Selecione **aplicativo do Windows (Win32)** como o **tipo de aplicativo**, selecione o **Arquivo do pacote do aplicativo** e, em seguida, um arquivo de instalação com a extensão **.intunewin**.  |
-| Aplicativos de LOB para macOS | Aplicativos LOB  | Selecione **Linha de negócios**  como o **tipo de aplicativo**, selecione o **Arquivo do pacote do aplicativo** e selecione um arquivo de instalação com a extensão **.intunemac**.  |
+| Aplicativos de LOB para macOS | Aplicativos LOB  | Selecione **Linha de negócios**  como o **tipo de aplicativo**, selecione o **Arquivo de pacote do aplicativo** e selecione um arquivo de instalação com a extensão **.intunemac**.  |
 
 
 <sup>1</sup> Para saber mais sobre perfis corporativos do Android e do Android Enterprise, confira o tópico [Noções básicas sobre aplicativos licenciados](apps-add.md#understanding-licensed-apps) abaixo.
@@ -107,7 +108,7 @@ Use o [Guia de planejamento de implantação, design e implementação do Intune
 
 Você pode escolher entre os seguintes tipos de aplicativo:
 - **Aplicativos da loja**: Aplicativos que foram carregados na Microsoft Store, na Store do iOS ou na Store do Android são aplicativos da Store. O provedor de um aplicativo da Store mantém e fornece atualizações do aplicativo. Selecione o aplicativo na lista da Store e adicione-o usando o Intune como um aplicativo disponível para seus usuários.
-- **Aplicativos escritos internamente (linha de negócios)** : Aplicativos criados internamente são aplicativos LOB (linha de negócios). A funcionalidade desse tipo de aplicativo foi criada para uma das plataformas compatíveis com o Microsoft Intune, como Windows, iOS, macOS ou Android. Sua organização cria e lhe fornece atualizações como um arquivo separado. Você fornece atualizações do aplicativo aos usuários adicionando e implantando as atualizações usando o Intune.
+- **Aplicativos escritos internamente (linha de negócios)** : Aplicativos criados internamente são aplicativos LOB (linha de negócios). A funcionalidade desse tipo de aplicativo foi criada para uma das plataformas compatíveis com o Intune, como Windows, iOS, macOS ou Android. Sua organização cria e lhe fornece atualizações como um arquivo separado. Você fornece atualizações do aplicativo aos usuários adicionando e implantando as atualizações usando o Intune.
 - **Aplicativos na Web**: aplicativos Web são aplicativos de cliente-servidor. O servidor fornece o aplicativo Web, que inclui a interface do usuário, o conteúdo e a funcionalidade. Além disso, plataformas modernas de hospedagem na Web geralmente oferecem segurança, balanceamento de carga e outros benefícios. Este tipo de aplicativo é mantido separadamente na Web. Você usa o Intune para apontar para esse tipo de aplicativo. Além disso, você especifica quais grupos de usuários podem acessar o aplicativo. Observe que Android não dá suporte a aplicativos Web.
 
 Ao determinar os aplicativos necessários para a sua organização, considere como os aplicativos são integrados a serviços de nuvem, quais dados os aplicativos acessam, se os aplicativos estão disponíveis para os usuários de BYOD e se os aplicativos precisam de acesso à Internet.
@@ -206,5 +207,5 @@ Para saber como adicionar aplicativos de cada plataforma ao Intune, veja:
 - [Aplicativos do Office 365 para Windows 10](apps-add-office365.md)
 - [Aplicativos do Office 365 para macOS](apps-add-office365-macos.md)
 - [Aplicativos internos](apps-add-built-in.md)
-- [Aplicativos do sistema Android Enterprise](apps-ae-system.md)
+- [Aplicativo do sistema Android Enterprise](apps-ae-system.md)
 - [Aplicativos Win32](app-management.md)

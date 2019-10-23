@@ -3,7 +3,9 @@ title: Início Rápido – Configurar o registro automático no Intune
 description: Início Rápido – Configurar o registro automático para dispositivos Windows 10 no Intune.
 services: microsoft-intune
 author: ErikjeMS
+manager: dougeby
 ms.service: microsoft-intune
+ms.subservice: enrollment
 ms.localizationpriority: high
 ms.topic: quickstart
 ms.date: 03/26/2019
@@ -13,12 +15,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: dbd00f507b4e1587e360c364719cf380759e8081
-ms.sourcegitcommit: 88b6e6d70f5fa15708e640f6e20b97a442ef07c5
+ms.openlocfilehash: 6e64c7d977fef66af0fedf556eea34bef9b9079d
+ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/02/2019
-ms.locfileid: "71726564"
+ms.lasthandoff: 10/16/2019
+ms.locfileid: "72503138"
 ---
 # <a name="quickstart-set-up-automatic-enrollment-for-windows-10-devices"></a>Início Rápido: Configurar o registro automático para dispositivos Windows 10
 
@@ -63,7 +65,7 @@ Neste exemplo, você usará o registro de MDM para que dispositivos corporativos
 6. Selecione **Alguns** do **Escopo de usuários do MAM** para gerenciar dados em dispositivos da sua força de trabalho.
 7. Escolha **Selecionar grupos** > **Testadores Contoso** > **Selecionar** como o grupo atribuído. 
 8. Use os valores padrão para os valores de configuração restantes.
-9. Escolha **Salvar**.
+9. Selecione **Salvar**.
 
 ## <a name="clean-up-resources"></a>Limpar os recursos
 

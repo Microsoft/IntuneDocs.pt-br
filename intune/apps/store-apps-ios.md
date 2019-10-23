@@ -9,6 +9,7 @@ manager: dougeby
 ms.date: 08/27/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
+ms.subservice: apps
 ms.localizationpriority: high
 ms.technology: ''
 ms.assetid: c59514d7-1256-4576-9380-e7a0b85a0378
@@ -17,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 68976c9a71ab1c1886fd5f975df563acb44dc731
-ms.sourcegitcommit: 88b6e6d70f5fa15708e640f6e20b97a442ef07c5
+ms.openlocfilehash: c53166b6e6dc6ab3f780ccdfd4f11eb4c6a9d730
+ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/02/2019
-ms.locfileid: "71724484"
+ms.lasthandoff: 10/16/2019
+ms.locfileid: "72497554"
 ---
 # <a name="add-ios-store-apps-to-microsoft-intune"></a>Adicionar aplicativos da loja do iOS ao Microsoft Intune
 
@@ -46,7 +47,7 @@ Você poderá atribuir aplicativos usando esse método apenas se eles forem grat
 5. No painel **Aplicativos**, selecione **Adicionar**.
 6. Na lista **Tipo de aplicativo**, em **Loja de aplicativos**, selecione **iOS**.
 7. Selecione **Pesquisar na App Store**.
-8. No painel **Pesquisar na App Store**, selecione a localidade do país/região da App Store.
+8. No painel **Pesquisar na App Store**, escolha a localidade do país/região da App Store.
 9. Na caixa **Pesquisar**, digite o nome (ou parte do nome) do aplicativo.  
     O Intune pesquisará na loja e retornará uma lista com resultados relevantes.
 10. Na lista de resultados, selecione o aplicativo desejado e, em seguida, selecione **Selecionar**.

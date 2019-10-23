@@ -1,5 +1,5 @@
 ---
-title: Criar perfil de WiFi com chave pré-compartilhada – Microsoft Intune – Azure | Microsoft Docs
+title: Criar perfil de Wi-Fi com chave pré-compartilhada – Microsoft Intune – Azure | Microsoft Docs
 description: Use um perfil personalizado para criar um perfil de Wi-Fi com uma chave pré-compartilhada e obtenha um exemplo de código XML para perfis de Wi-Fi baseados em EAP, Android e Windows no Microsoft Intune
 keywords: ''
 author: MandiOhlinger
@@ -8,6 +8,7 @@ manager: dougeby
 ms.date: 06/25/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
+ms.subservice: configuration
 ms.localizationpriority: high
 ms.technology: ''
 ms.assetid: c6fd72a6-7dc8-48fc-9df1-db5627a51597
@@ -16,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 175be4d51b034745ce6fab050f68be277f1d4858
-ms.sourcegitcommit: 88b6e6d70f5fa15708e640f6e20b97a442ef07c5
+ms.openlocfilehash: 623c6652964ae5a4f16a9c689dda3aee99c50d31
+ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/02/2019
-ms.locfileid: "71723756"
+ms.lasthandoff: 10/16/2019
+ms.locfileid: "72506503"
 ---
 # <a name="use-a-custom-device-profile-to-create-a-wifi-profile-with-a-pre-shared-key---intune"></a>Use um perfil de dispositivo personalizado para criar um perfil de WiFi com uma chave pré-compartilhada – Intune
 [!INCLUDE [azure_portal](../includes/azure_portal.md)]
@@ -77,7 +78,7 @@ O exemplo a seguir inclui o código XML para um perfil de Wi-Fi do Windows ou do
 
 - `<protected>false</protected>` precisa ser definido como **false**. Quando for **true**, poderá fazer com que o dispositivo espere uma senha criptografada e tente descriptografá-la, podendo resultar em uma falha na conexão.
 
-- `<hex>53534944</hex>` deve ser definido como o valor hexadecimal de `<name><SSID of wifi profile></name>`. Os dispositivos Windows 10 podem retornar um erro `x87D1FDE8 Remediation failed` falso, mas o dispositivo ainda conterá o perfil.
+- `<hex>53534944</hex>` deve ser definido como o valor hexadecimal de `<name><SSID of wifi profile></name>`. Os dispositivos Windows 10 podem retornar um erro `x87D1FDE8 Remediation failed` falso, mas o dispositivo ainda contém o perfil.
 
 - XML tem caracteres especiais, como o `&` (e comercial). O uso de caracteres especiais pode impedir o funcionamento esperado do XML. 
 
@@ -219,7 +220,7 @@ Você também pode criar o arquivo XML de uma conexão Wi-Fi existente. Em um co
 3. Execute `netsh wlan show profiles`. Os nomes de todos os perfis são listados.
 4. Execute `netsh wlan export profile name="YourProfileName" folder=c:\Wifi`. Este comando cria um arquivo chamado `Wi-Fi-YourProfileName.xml` em c:\Wifi.
 
-    - Se você está exportando um perfil de Wi-Fi que contém uma chave pré-compartilhada, adicione `key=clear` ao comando:
+    - Se você está exportando um perfil de Wi-Fi que inclui uma chave pré-compartilhada, adicione `key=clear` ao comando:
   
       `netsh wlan export profile name="YourProfileName" key=clear folder=c:\Wifi`
 
@@ -234,6 +235,6 @@ Já com o arquivo XML, copie e cole a sintaxe XML em configurações OMA-URI > *
 
 - Antes de implantar um perfil de Wi-Fi com a PSK, confirme se o dispositivo pode se conectar ao ponto de extremidade diretamente.
 
-- Ao trocar as chaves (senhas ou frases secretas), espere um tempo de inatividade e planeje as implantações. Considere enviar por push novos perfis de Wi-Fi durante horário não comercial. Além disso, avise os usuários que a conectividade pode ser afetada.
+- Ao trocar chaves (senhas ou frases secretas), espere o tempo de inatividade e planeje as implantações. Considere enviar por push novos perfis de Wi-Fi durante horário não comercial. Além disso, avise os usuários que a conectividade pode ser afetada.
 
-- Para uma transição suave, verifique se o dispositivo do usuário final tem uma conexão alternativa com a Internet. Por exemplo, o usuário final deve ser capaz de voltar para o Wi-Fi de convidado (ou alguma outra rede Wi-Fi) ou ter conectividade celular para se comunicar com o Intune. A conexão adicional permite que o usuário receba atualizações de política enquanto o perfil de WiFi corporativo está sendo atualizado no dispositivo.
+- Para uma transição suave, verifique se o dispositivo do usuário final tem uma conexão alternativa com a Internet. Por exemplo, o usuário final deve poder voltar para o Wi-Fi de convidado (ou alguma outra rede Wi-Fi) ou ter conectividade celular para se comunicar com o Intune. A conexão adicional permite que o usuário receba atualizações de política enquanto o perfil de WiFi corporativo está sendo atualizado no dispositivo.

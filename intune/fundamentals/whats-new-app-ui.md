@@ -9,6 +9,7 @@ manager: dougeby
 ms.date: 09/09/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
+ms.subservice: fundamentals
 ms.localizationpriority: high
 ms.technology: ''
 ms.assetid: b782e382-8deb-48a7-a437-d7c5a17163f1
@@ -17,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: a1257d3bc6ab4c391faa0778e32e041d475ed7fc
-ms.sourcegitcommit: 88b6e6d70f5fa15708e640f6e20b97a442ef07c5
+ms.openlocfilehash: 7517a2b60c4b5a893b90b09be72ddb363f23552a
+ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/02/2019
-ms.locfileid: "71726135"
+ms.lasthandoff: 10/16/2019
+ms.locfileid: "72509988"
 ---
 # <a name="ui-updates-for-intune-end-user-apps"></a>Atualizações da interface do usuário para aplicativos de usuário final do Intune
 
@@ -143,7 +144,7 @@ Você verá as seguintes atualizações:
 - Melhor desempenho para grandes catálogos de aplicativos
 - Maior acessibilidade para todos os usuários  
 
-|Atualizado|Anterior|
+|Atualizado|Voltar|
 |---|---|
 |![A página de dispositivos atualizada mostra o dispositivo alinhado corretamente acima das informações do dispositivo, não mais aparecendo em cima da lista completa.](./media/whats-new-app-ui/iwp-device-after-1803.png)|![A versão anterior da página de dispositivos.](./media/whats-new-app-ui/iwp-device-before-1803.png)|
 |![A página de instalação do aplicativo atualizada mostra o aplicativo exatamente em cima de uma descrição e de várias informações de instalação, incluindo data de publicação, versão e tipo de aplicativo.](./media/whats-new-app-ui/iwp-app-install-after-1803.png)|![A versão anterior da página de instalação do aplicativo.](./media/whats-new-app-ui/iwp-app-install-before-1803.png)|  

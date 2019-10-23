@@ -8,6 +8,7 @@ manager: dougeby
 ms.date: 04/08/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
+ms.subservice: remote-actions
 ms.localizationpriority: high
 ms.technology: ''
 ms.assetid: 4fdb787e-084f-4507-9c63-c96b13bfcdf9
@@ -15,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: f81dcf6a3553b4ff08ec6c2dbffda24bc7946b73
-ms.sourcegitcommit: 88b6e6d70f5fa15708e640f6e20b97a442ef07c5
+ms.openlocfilehash: dbcc50d275a3d3e6a613640e96b363ce7608da81
+ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/02/2019
-ms.locfileid: "71728397"
+ms.lasthandoff: 10/16/2019
+ms.locfileid: "72508574"
 ---
 # <a name="remove-devices-by-using-wipe-retire-or-manually-unenrolling-the-device"></a>Remova dispositivos por meio de apagamento, desativação ou cancelando o registro do dispositivo manualmente
 
@@ -83,10 +84,10 @@ As tabelas a seguir descrevem quais dados são removidos e o efeito da ação **
 
 ### <a name="ios"></a>iOS
 
-|Tipo de dado|iOS|
+|Tipo de dados|iOS|
 |-------------|-------|
 |Aplicativos da empresa e dados associados instalados pelo Intune|**Aplicativos instalados usando o Portal da Empresa:** Para aplicativos que são fixados ao perfil de gerenciamento, todos os dados de aplicativo e os aplicativos propriamente ditos são removidos. Esses aplicativos incluem os aplicativos instalados originalmente da App Store e posteriormente gerenciados como aplicativos da empresa. <br /><br /> **Aplicativos da Microsoft que usam o gerenciamento de aplicativos móveis e foram instalados da App Store:** Para aplicativos que não são gerenciados pelo Portal da Empresa, os dados de aplicativo da empresa que são protegidos pela criptografia de MAM (gerenciamento de aplicativo móvel) dentro do armazenamento local do aplicativo são removidos. Dados protegidos pela criptografia de MAM fora do aplicativo permanecem criptografados e não utilizáveis, mas não são removidos. Os dados pessoais de aplicativos e os aplicativos não são removidos.|
-|Settings|As configurações definidas pela política do Intune não serão mais impostas. Os usuários podem alterar as configurações.|
+|Configurações|As configurações definidas pela política do Intune não serão mais impostas. Os usuários podem alterar as configurações.|
 |Configurações dos perfis de Wi-Fi e VPN|Removidos.|
 |Configurações do perfil de certificado|Certificados são removidos e revogados.|
 |Agente de gerenciamento|O perfil de gerenciamento é removido.|
@@ -95,14 +96,14 @@ As tabelas a seguir descrevem quais dados são removidos e o efeito da ação **
 
 ### <a name="android"></a>Android
 
-|Tipo de dado|Android|Android Samsung Knox Standard|
+|Tipo de dados|Android|Android Samsung Knox Standard|
 |-------------|-----------|------------------------|
 |Links da Web|Removidos.|Removidos.|
-|Aplicativos Google Play não gerenciados|Os aplicativos e dados permanecem instalados. <br /> <br />Os dados de aplicativo da empresa que são protegidos pela criptografia de MAM (gerenciamento de aplicativo móvel) dentro do armazenamento local do aplicativo são removidos. Dados protegidos pela criptografia de MAM fora do aplicativo permanecem criptografados e não utilizáveis, mas não são removidos. |Os aplicativos e dados permanecem instalados. <br /> <br />Os dados de aplicativo da empresa que são protegidos pela criptografia de MAM (gerenciamento de aplicativo móvel) dentro do armazenamento local do aplicativo são removidos. Dados protegidos pela criptografia de MAM fora do aplicativo permanecem criptografados e não utilizáveis, mas não são removidos.|
-|Aplicativos de linha de negócios não gerenciados|Os aplicativos e dados permanecem instalados.|Os aplicativos são desinstalados e os dados locais do aplicativo são removidos. Nenhum dado fora do aplicativo (por exemplo, em um cartão SD) é removido.|
+|Aplicativos Google Play não gerenciados|Aplicativos e dados permanecem instalados. <br /> <br />Os dados de aplicativo da empresa que são protegidos pela criptografia de MAM (gerenciamento de aplicativo móvel) dentro do armazenamento local do aplicativo são removidos. Dados protegidos pela criptografia de MAM fora do aplicativo permanecem criptografados e não utilizáveis, mas não são removidos. |Aplicativos e dados permanecem instalados. <br /> <br />Os dados de aplicativo da empresa que são protegidos pela criptografia de MAM (gerenciamento de aplicativo móvel) dentro do armazenamento local do aplicativo são removidos. Dados protegidos pela criptografia de MAM fora do aplicativo permanecem criptografados e não utilizáveis, mas não são removidos.|
+|Aplicativos de linha de negócios não gerenciados|Aplicativos e dados permanecem instalados.|Os aplicativos são desinstalados e os dados locais do aplicativo são removidos. Nenhum dado fora do aplicativo (por exemplo, em um cartão SD) é removido.|
 |Aplicativos Google Play gerenciados|Dados de aplicativo são removidos. O aplicativo não é removido. Os dados protegidos pela criptografia do MAM (Gerenciamento de aplicativo móvel) de fora do aplicativo (por exemplo, um cartão SD) permanecem criptografados e inutilizáveis, mas não são removidos.|Dados de aplicativo são removidos. O aplicativo não é removido. Dados protegidos pela criptografia de MAM fora do aplicativo (por exemplo, um cartão SD) permanecem criptografados, mas não são removidos.|
 |Aplicativos de linha de negócios gerenciados|Dados de aplicativo são removidos. O aplicativo não é removido. Dados protegidos pela criptografia de MAM fora do aplicativo (por exemplo, um cartão SD) permanecem criptografados e inutilizáveis, mas não são removidos.|Dados de aplicativo são removidos. O aplicativo não é removido. Dados protegidos pela criptografia de MAM fora do aplicativo (por exemplo, um cartão SD) permanecem criptografados e inutilizáveis, mas não são removidos.|
-|Settings|As configurações definidas pela política do Intune não serão mais impostas. Os usuários podem alterar as configurações.|As configurações definidas pela política do Intune não serão mais impostas. Os usuários podem alterar as configurações.|
+|Configurações|As configurações definidas pela política do Intune não serão mais impostas. Os usuários podem alterar as configurações.|As configurações definidas pela política do Intune não serão mais impostas. Os usuários podem alterar as configurações.|
 |Configurações dos perfis de Wi-Fi e VPN|Removidos.|Removidos.|
 |Configurações do perfil de certificado|Os certificados são revogados, mas não removidos.|Certificados são removidos e revogados.|
 |Agente de gerenciamento|O privilégio de administrador do dispositivo é revogado.|O privilégio de administrador do dispositivo é revogado.|
@@ -120,9 +121,9 @@ Você só pode apagar os dispositivos de quiosque. Você não pode desativar dis
 
 ### <a name="macos"></a>macOS
 
-|Tipo de dado|macOS|
+|Tipo de dados|macOS|
 |-------------|-------|
-|Settings|As configurações definidas pela política do Intune não serão mais impostas. Os usuários podem alterar as configurações.|
+|Configurações|As configurações definidas pela política do Intune não serão mais impostas. Os usuários podem alterar as configurações.|
 |Configurações dos perfis de Wi-Fi e VPN|Removidos.|
 |Configurações do perfil de certificado|Os certificados que foram implantados por meio do MDM são removidos e revogados.|
 |Agente de gerenciamento|O perfil de gerenciamento é removido.|
@@ -131,13 +132,13 @@ Você só pode apagar os dispositivos de quiosque. Você não pode desativar dis
 
 ### <a name="windows"></a>Windows
 
-|Tipo de dado|Windows 8.1 (MDM) e Windows RT 8.1|Windows RT|Windows Phone 8.1 e Windows Phone 8|Windows 10|
+|Tipo de dados|Windows 8.1 (MDM) e Windows RT 8.1|Windows RT|Windows Phone 8.1 e Windows Phone 8|Windows 10|
 |-------------|----------------------------------------------------------------|--------------|-----------------------------------------|--------|
-|Aplicativos da empresa e dados associados instalados pelo Intune|As chaves são revogadas para arquivos protegidos pelo EFS. O usuário não pode abrir os arquivos.|Aplicativos da empresa não são removidos.|Os aplicativos instalados originalmente por meio do Portal da empresa são desinstalados. Os dados de aplicativo da empresa são removidos.|Os aplicativos são desinstalados. Chaves de sideload são removidas.<br>Na versão 1703 do Windows 10 (Atualização para Criadores) e em versões posteriores, os aplicativos do Office 365 ProPlus não são removidos. Os aplicativos Win32 instalados pela extensão de gerenciamento do Intune não serão desinstalados em dispositivos não registrados. Os administradores podem aproveitar a exclusão de atribuição para não oferecer aplicativos Win32 em dispositivos BYOD.|
-|Settings|As configurações definidas pela política do Intune não serão mais impostas. Os usuários podem alterar as configurações.|As configurações definidas pela política do Intune não serão mais impostas. Os usuários podem alterar as configurações.|As configurações definidas pela política do Intune não serão mais impostas. Os usuários podem alterar as configurações.|As configurações definidas pela política do Intune não serão mais impostas. Os usuários podem alterar as configurações.|
-|Configurações dos perfis de Wi-Fi e VPN|Removidos.|Removidos.|Sem suporte.|Removidos.|
-|Configurações do perfil de certificado|Certificados são removidos e revogados.|Certificados são removidos e revogados.|Sem suporte.|Certificados são removidos e revogados.|
-|Email|Remove o email habilitado para EFS. Isso inclui emails e anexos no aplicativo Mail para Windows.|Sem suporte.|Os perfis de email provisionados por meio do Intune são removidos. O email armazenado em cache no dispositivo é excluído.|Remove o email habilitado para EFS. Isso inclui emails e anexos no aplicativo Mail para Windows. Remove contas de email que foram provisionadas pelo Intune.|
+|Aplicativos da empresa e dados associados instalados pelo Intune|As chaves são revogadas para arquivos protegidos pelo EFS. O usuário não pode abrir os arquivos.|Aplicativos da empresa não são removidos.|Os aplicativos instalados originalmente por meio do Portal da empresa são desinstalados. Dados de aplicativo da empresa são removidos.|Aplicativos são desinstalados. Chaves de sideload são removidas.<br>Na versão 1703 do Windows 10 (Atualização para Criadores) e em versões posteriores, os aplicativos do Office 365 ProPlus não são removidos. Os aplicativos Win32 instalados pela extensão de gerenciamento do Intune não serão desinstalados em dispositivos não registrados. Os administradores podem aproveitar a exclusão de atribuição para não oferecer aplicativos Win32 em dispositivos BYOD.|
+|Configurações|As configurações definidas pela política do Intune não serão mais impostas. Os usuários podem alterar as configurações.|As configurações definidas pela política do Intune não serão mais impostas. Os usuários podem alterar as configurações.|As configurações definidas pela política do Intune não serão mais impostas. Os usuários podem alterar as configurações.|As configurações definidas pela política do Intune não serão mais impostas. Os usuários podem alterar as configurações.|
+|Configurações dos perfis de Wi-Fi e VPN|Removidos.|Removidos.|Não há suporte.|Removidos.|
+|Configurações do perfil de certificado|Certificados são removidos e revogados.|Certificados são removidos e revogados.|Não há suporte.|Certificados são removidos e revogados.|
+|Email|Remove o email habilitado para EFS. Isso inclui emails e anexos no aplicativo Mail para Windows.|Não há suporte.|Os perfis de email provisionados por meio do Intune são removidos. O email armazenado em cache no dispositivo é excluído.|Remove o email habilitado para EFS. Isso inclui emails e anexos no aplicativo Mail para Windows. Remove contas de email que foram provisionadas pelo Intune.|
 |Cancelamento de ingresso no Azure AD|Não.|Não.|O registro do Azure AD é removido.|O registro do Azure AD é removido.|
 
 > [!NOTE]
@@ -164,7 +165,7 @@ Você pode configurar o Intune para excluir automaticamente os dispositivos que 
 1. Entre no [Intune no portal do Azure](https://aka.ms/intuneportal).
 2. Escolha **Dispositivos** > **Regras de limpeza de dispositivo** > **Sim**.
 3. Na caixa **Excluir dispositivos que ainda não fizeram check-in para este número de dias**, digite um número entre 30 e 270.
-4. Escolha **Salvar**.
+4. Selecione **Salvar**.
 
 
 

@@ -9,6 +9,7 @@ manager: dougeby
 ms.date: 03/06/2018
 ms.topic: conceptual
 ms.service: microsoft-intune
+ms.subservice: protect
 ms.localizationpriority: high
 ms.technology: ''
 ms.assetid: a1973f38-ea55-43eb-a151-505fb34a8afb
@@ -16,18 +17,18 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure; get-started
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: cef8bcf74509d83b076b30a1ee7f2406e622b129
-ms.sourcegitcommit: 88b6e6d70f5fa15708e640f6e20b97a442ef07c5
+ms.openlocfilehash: fb9dd31c87d27ec7885d25269988cfd968e81e08
+ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/02/2019
-ms.locfileid: "71722638"
+ms.lasthandoff: 10/16/2019
+ms.locfileid: "72504554"
 ---
 # <a name="learn-about-conditional-access-and-intune"></a>Saiba mais sobre o Acesso Condicional e o Intune
 
 [!INCLUDE [azure_portal](../includes/azure_portal.md)]
 
-Acesso Condicional significa às formas de controlar os dispositivos e aplicativos que têm permissão para se conectar ao email e aos recursos da empresa. Neste tópico, saiba mais sobre Acesso Condicional baseado em dispositivo e em aplicativo, e veja cenários comuns para usar o Acesso Condicional com o Intune.
+Acesso Condicional significa às formas de controlar os dispositivos e aplicativos que têm permissão para se conectar ao email e aos recursos da empresa. Neste tópico, saiba mais sobre Acesso Condicional baseado em dispositivo e em aplicativo e veja cenários comuns para usar o Acesso Condicional com o Intune.
 
 O Acesso Condicional do EMS (Enterprise Mobility + Security) não é um produto autônomo, mas uma solução que integra todos os serviços e produtos que fazem parte do EMS. Ele fornece controle de acesso granular para proteger os dados da empresa, ao mesmo tempo que oferece aos usuários uma experiência que lhes permite fazer o melhor trabalho em qualquer dispositivo e em qualquer localização.
 
@@ -48,7 +49,7 @@ Formas de usar o Acesso Condicional com o Intune:
 
 - **Acesso Condicional baseado no dispositivo**
 
-  - Acesso Condicional para o Exchange local
+  - Acesso Condicional para o Exchange no Local
 
   - Acesso Condicional baseado em controle de acesso à rede
 

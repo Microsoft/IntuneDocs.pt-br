@@ -9,6 +9,7 @@ manager: dougeby
 ms.date: 08/21/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
+ms.subservice: apps
 ms.localizationpriority: high
 ms.technology: ''
 ms.assetid: dc349e22-9e1c-42ba-9e70-fb2ef980ef7a
@@ -17,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 6f0f00b635a04f4ffe5bc09489b9909e9243ee98
-ms.sourcegitcommit: 88b6e6d70f5fa15708e640f6e20b97a442ef07c5
+ms.openlocfilehash: 99e89db1bbef3d08cd6709b2600c4a684ac618f7
+ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/02/2019
-ms.locfileid: "71725147"
+ms.lasthandoff: 10/16/2019
+ms.locfileid: "72498617"
 ---
 # <a name="assign-apps-to-groups-with-microsoft-intune"></a>Atribuir aplicativos a grupos com o Microsoft Intune
 
@@ -88,7 +89,7 @@ Agora o aplicativo foi atribuído aos grupos selecionados. Para obter mais infor
 ## <a name="how-conflicts-between-app-intents-are-resolved"></a>Como são resolvidos os conflitos entre as intenções de aplicativo
 
 Em várias tentativas de atribuição de aplicativo, um único grupo é impedido de ser definido como destino. No entanto, se um usuário ou dispositivo for membro de vários grupos atribuídos com diferentes intenções, isso resultará em um conflito. Recomendamos não criar conflitos de atribuição para aplicativos.
-As informações na tabela a seguir podem ajudá-lo a entender a intenção resultante quando ocorre um conflito:
+As informações na tabela a seguir podem ajudar você a entender a intenção resultante quando ocorre um conflito:
 
 | Intenção do grupo 1 | Intenção do grupo 2 | Intenção resultante |
 |-----------------------------------|-----------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
@@ -144,7 +145,7 @@ Etapas para atribuição de um aplicativo do Google Play Gerenciado em dispositi
 Quando um apagamento seletivo do APP é emitido no console do Intune, a conta de trabalho é automaticamente removida do aplicativo do Play Store, e o usuário final não verá mais os aplicativos de trabalho no catálogo de aplicativos da Play Store. Quando a conta de trabalho for removida de um dispositivo, os aplicativos instalados da Play Store permanecerão instalados no dispositivo e não serão desinstalados. 
 
 ## <a name="app-uninstall-setting-for-ios-managed-apps"></a>Configuração de desinstalação para aplicativos iOS gerenciados
-Para dispositivos iOS, você pode escolher o que acontece com os aplicativos gerenciados ao cancelar o registro do dispositivo no Microsoft Intune ou ao remover o perfil de gerenciamento usando a configuração **Desinstalar ao remover o dispositivo**. Essa configuração se aplica a aplicativos somente depois que o dispositivo é registrado e os aplicativos forem instalados como gerenciados. Não é possível definir a configuração para links ou aplicativos Web. 
+Para dispositivos iOS, você pode escolher o que acontece com os aplicativos gerenciados ao cancelar o registro do dispositivo no Microsoft Intune ou ao remover o perfil de gerenciamento usando a configuração **Desinstalar ao remover o dispositivo**. Essa configuração se aplicará aos aplicativos somente depois que o dispositivo for registrado e os aplicativos forem instalados como gerenciados. Não é possível definir a configuração para links ou aplicativos Web. 
 
 Os valores padrão dessa configuração são preenchidos previamente para novas atribuições da seguinte maneira:
 
@@ -156,7 +157,7 @@ Os valores padrão dessa configuração são preenchidos previamente para novas 
 | Aplicativo interno | Não |
 
 >[!NOTE]
->**Tipos de atribuições "disponíveis":** Se você estiver atualizando essa configuração para grupos cujo status seja "disponível para dispositivos registrados" ou "disponível com ou sem registro", os usuários que já tenham o aplicativo gerenciado obterão a configuração atualizada apenas quando sincronizarem o dispositivo com o Microsoft Intune e reinstalarem o aplicativo. 
+>**Tipos de atribuições "disponíveis":** se você estiver atualizando essa configuração para grupos que estejam como "disponível para dispositivos registrados" ou "disponível com ou sem registro", os usuários que já tiverem o aplicativo gerenciado não obterão a configuração atualizada até que sincronizem o dispositivo com o Intune e reinstalem o aplicativo. 
 >
 >**Atribuições preexistentes:** as atribuições que já existiam antes da adição dessa configuração são imutáveis, e todos os aplicativos gerenciados serão removidos caso esse dispositivo seja removido do gerenciamento.
 

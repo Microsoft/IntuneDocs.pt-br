@@ -9,6 +9,7 @@ manager: dougeby
 ms.date: 02/28/2018
 ms.topic: conceptual
 ms.service: microsoft-intune
+ms.subservice: fundamentals
 ms.localizationpriority: high
 ms.technology: ''
 ms.assetid: 6e9ec662-465b-4ed4-94c1-cff0fe18f126
@@ -17,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic; get-started
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 5f0383bf889a955a72df278ae3f2b3b23925f233
-ms.sourcegitcommit: 88b6e6d70f5fa15708e640f6e20b97a442ef07c5
+ms.openlocfilehash: 90066bf55f50819ba77babee1e1d4230bdead613
+ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/02/2019
-ms.locfileid: "71726226"
+ms.lasthandoff: 10/16/2019
+ms.locfileid: "72504870"
 ---
 # <a name="add-users-and-grant-administrative-permission-to-intune"></a>Adicionar usuários e conceder permissão administrativa para o Intune
 
@@ -87,14 +88,14 @@ Depois de acrescentar usuários à sua assinatura do Intune, é recomendável co
 
 5. Escolha a permissão de administrador a ser concedida na lista de funções disponíveis.
 ![Captura de tela da atribuição de funções](./media/users-add/office-assign-roles.png)
-6. Escolha **Salvar**.
+6. Selecione **Salvar**.
 
 ### <a name="give-admin-permissions-in-the-azure-portal"></a>Conceder permissões de administrador no Portal do Azure
 1. Entre no [Portal do Azure](https://portal.azure.com) com uma conta de administrador global.
 2. No Portal do Azure, escolha **Usuário** e, em seguida, escolha o usuário ao qual deseja de conceder as permissões de administrador.
 3. Selecione **Função do diretório** e, em seguida, selecione a permissão.
   ![Captura de tela da Função do diretório](./media/users-add/add-intune-directory-role.png)
-4. Escolha **Salvar**.
+4. Selecione **Salvar**.
 
 ### <a name="types-of-administrators"></a>Tipos de administradores
 

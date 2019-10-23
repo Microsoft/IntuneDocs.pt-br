@@ -9,6 +9,7 @@ manager: dougeby
 ms.date: 06/28/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
+ms.subservice: enrollment
 ms.localizationpriority: high
 ms.technology: ''
 ms.assetid: 8518d8fa-a0de-449d-89b6-8a33fad7b3eb
@@ -17,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 8bc472a8b15746a46b5e0cda3a8fe11db7aa4974
-ms.sourcegitcommit: 88b6e6d70f5fa15708e640f6e20b97a442ef07c5
+ms.openlocfilehash: d2a6b427552e545421e329b900833c889e67bf35
+ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/02/2019
-ms.locfileid: "71722300"
+ms.lasthandoff: 10/16/2019
+ms.locfileid: "72503030"
 ---
 # <a name="set-up-an-enrollment-status-page"></a>Configurar uma Página de status de registro
  
@@ -47,7 +48,7 @@ Também é possível definir a ordem de prioridade de cada perfil, de modo a lev
  As seguintes configurações podem ser definidas para personalizar o comportamento da Página de status de registro:
 
 <table>
-<th align="left">Configuração<th align="left">Sim<th align="left">Não
+<th align="left">Setting<th align="left">Sim<th align="left">Não
 <tr><td>Mostrar o andamento da instalação do perfil e do aplicativo<td>A Página de status de registro é exibida.<td>A Página de status de registro não é exibida.
 <tr><td>Bloquear o uso do dispositivo até que todos os perfis e aplicativos estejam instalados<td>As configurações nessa tabela são disponibilizadas para personalizar o comportamento da Página de status de registro para que o usuário seja capaz de resolver possíveis problemas de instalação.
 <td>A Página de status de registro é exibida sem opções adicionais para tratar de falhas de instalação.
@@ -55,7 +56,7 @@ Também é possível definir a ordem de prioridade de cada perfil, de modo a lev
 <tr><td>Permitir que os usuários usem o dispositivo se ocorrer um erro de instalação<td>Um botão <b>Continuar mesmo assim</b> é exibido em caso de falha na instalação.<td>O botão <b>Continuar mesmo assim</b> não é exibido em caso de falha na instalação.
 <tr><td>Mostrar erro de tempo limite quando a instalação demorar mais do que os minutos especificados<td colspan="2">Especifique o número de minutos a aguardar para a conclusão da instalação. Um valor padrão de 60 minutos está inserido.
 <tr><td>Mostrar mensagem personalizada quando ocorrer um erro<td>Uma caixa de texto é fornecida, na qual é possível especificar uma mensagem personalizada que será exibida se ocorrer um erro de instalação.<td>A mensagem padrão é exibida: <br><b>A instalação excedeu o tempo limite definido por sua organização. Tente novamente ou entre em contato com a equipe de suporte de TI para obter ajuda.<b>
-<tr><td>Permitir que os usuários coletem logs sobre erros de instalação<td>Um botão <b>Colectar logs</b> é exibido em caso de falha na instalação. <br>Se o usuário clicar nesse botão, será solicitado a escolher um local para salvar o arquivo de log <b>MDMDiagReport.cab</b><td>O botão <b>Coletar logs</b> não é exibido em caso de falha na instalação.
+<tr><td>Permitir que os usuários coletem logs sobre erros de instalação<td>Se houver um erro de instalação, um botão <b>Coletar logs</b> será exibido. <br>Se o usuário clicar nesse botão, deverá escolher um local para salvar o arquivo de log <b>MDMDiagReport.cab</b><td>O botão <b>Coletar logs</b> não é exibido em caso de falha na instalação.
 <tr><td>Bloquear o uso do dispositivo até que os aplicativos necessários sejam instalados, caso estejam atribuídos ao usuário/dispositivo<td colspan="2">Escolha <b>Todos</b> ou <b>Selecionados</b>. <br><br>Se <b>Selecionados</b> for escolhido, um botão <b>Selecionar aplicativos</b> é exibido, possibilitando escolher quais aplicativos devem ser instalados antes de habilitar o dispositivo.
 </table>
 
@@ -114,7 +115,7 @@ A Página de status de registro rastreia os seguintes itens de configuração do
 - Diretivas de segurança
   - Um CSP (provedor de serviço de configuração) para todos os registros.
   - CSPs reais configurados pelo Intune não são rastreados aqui.
-- Aplicativo
+- Aplicativos
   - Aplicativos MSI de LoB (linha de negócios) por computador.
   - Aplicativos de repositório de LoB com contexto de instalação = Dispositivo.
   - Aplicativos de repositório de LoB e repositório offline com contexto de instalação = Dispositivo.
@@ -128,7 +129,7 @@ Para a configuração da conta, a Página de status de registro rastreia os segu
 - Diretivas de segurança
   - Um CSP para todos os registros.
   - CSPs reais configurados pelo Intune não são rastreados aqui.
-- Aplicativo
+- Aplicativos
   - Aplicativos MSI de LoB por usuário atribuídos a Todos os Dispositivos, Todos os Usuários ou a um grupo de usuário do qual o usuário que está registrando o dispositivo é membro.
   - Aplicativos MSI de LoB por computador atribuídos a Todos os Usuários ou a um grupo de usuários do qual o dispositivo de registro de usuário é membro.
   - Aplicativos de linha de negócios, online e offline que estão atribuídos a qualquer um dos seguintes objetos:
@@ -192,7 +193,7 @@ Veja os problemas conhecidos abaixo.
 - Uma reinicialização durante a configuração do dispositivo forçará o usuário a inserir suas credenciais antes de fazer a transição para a fase de configuração da conta. As credenciais do usuário não são preservadas durante a reinicialização. Faça com que o usuário insira suas credenciais para que a Página de status de registro prossiga. 
 - Os certificados SCEP com as políticas do Windows Hello para Empresas ocasionarão o tempo limite, pois o usuário não pode concluir a configuração do PIN do Hello para permitir a concorrência da instalação do certificado SCEP.  não há uma solução alternativa. A previsão de correção é no segundo trimestre de 2019. 
 - A Página de status de registro sempre atingirá o tempo limite durante uma adição de registro de conta corporativa e de estudante em versões do Windows 10 inferiores à 1903. A Página de status de registro aguarda a conclusão do registro do Azure Active Directory. O problema foi corrigido no Windows 10 versão 1903 e mais recente.  
-- A implantação do Autopilot do Azure Active Directory híbrido com ESP demora mais do que a duração do tempo limite definida no perfil ESP. Em implantações do Autopilot do Azure Active Directory híbrido, o ESP levará 40 minutos a mais do que o valor definido no perfil ESP. Esse atraso dá tempo para que o conector local do AD crie o novo registro de dispositivo para o Azure Active Directory. 
+- A implantação do Autopilot do Azure Active Directory híbrido com ESP demora mais do que a duração do tempo limite definida no perfil ESP. Em implantações do Autopilot do Azure AD híbrido, o ESP levará 40 minutos a mais do que o valor definido no perfil ESP. Esse atraso dá tempo para que o conector local do AD crie o novo registro de dispositivo para o Azure Active Directory. 
 - A página de logon do Windows não é preenchida previamente com o nome de usuário no Modo Controlado pelo Usuário do Autopilot. Se ocorre uma reinicialização durante a fase de configuração do dispositivo ESP:
     - As credenciais do usuário não são preservadas
     - O usuário deve inserir as credenciais novamente antes de prosseguir da fase de configuração do dispositivo para a fase de configuração da conta
@@ -200,7 +201,7 @@ Veja os problemas conhecidos abaixo.
 - A configuração do Controle de Aplicativos do Windows Defender faz com que ocorra a reinicialização de um prompt durante o Autopilot. A configuração do Aplicativo do Windows Defender (AppLocker CSP) requer uma reinicialização. Quando essa política é configurada, ela pode fazer com que um dispositivo seja reinicializado durante o Autopilot. Atualmente, não há como suprimir ou adiar a reinicialização.
 - Quando a política DeviceLock (https://docs.microsoft.com/windows/client-management/mdm/policy-csp-devicelock) ) é habilitada como parte de um perfil ESP, o logon automático de desktop para usuário ou OOBE pode falhar inesperadamente por dois motivos.
   - Se o dispositivo não for reinicializado antes de sair da fase de configuração do dispositivo ESP, o usuário poderá ser solicitado a inserir suas credenciais do Azure Active Directory. Esse prompt ocorre no lugar de um logon automático bem-sucedido em que o usuário vê a animação de primeiro logon do Windows.
-  - O logon automático falhará se o dispositivo for reiniciado depois que o usuário inserir suas credenciais do Azure Active Directory, mas antes de sair da fase de configuração do dispositivo ESP. Essa falha ocorre porque a fase de configuração do dispositivo ESP nunca foi concluída. A solução alternativa é redefinir o dispositivo.
+  - O logon automático falhará se o dispositivo for reinicializado depois que o usuário inserir suas credenciais do Azure AD, mas antes de sair da fase de configuração do dispositivo ESP. Essa falha ocorre porque a fase de configuração do dispositivo ESP nunca foi concluída. A solução alternativa é redefinir o dispositivo.
 
 ## <a name="next-steps"></a>Próximas etapas
 Depois de configurar páginas de registro do Windows, saiba como gerenciar dispositivos do Windows. Para saber mais, confira [O que é gerenciamento de dispositivos do Microsoft Intune?](../remote-actions/device-management.md)

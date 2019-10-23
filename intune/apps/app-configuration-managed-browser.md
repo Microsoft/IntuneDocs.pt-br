@@ -9,6 +9,7 @@ manager: dougeby
 ms.date: 08/27/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
+ms.subservice: apps
 ms.localizationpriority: high
 ms.technology: ''
 ms.assetid: 1feca24f-9212-4d5d-afa9-7c171c5e8525
@@ -17,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure, seoapril2019
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 63e3a02f9df52052f27714403e8f189d089c6690
-ms.sourcegitcommit: 88b6e6d70f5fa15708e640f6e20b97a442ef07c5
+ms.openlocfilehash: 57ae1b5a51533bf14d4299fcf0248564562289f7
+ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/02/2019
-ms.locfileid: "71725888"
+ms.lasthandoff: 10/16/2019
+ms.locfileid: "72507576"
 ---
 # <a name="manage-web-access-using-a-microsoft-intune-policy-protected-browser"></a>Gerenciar o acesso à Web usando um navegador protegido por políticas do Microsoft Intune
 
@@ -169,7 +170,7 @@ Se essa configuração for definida como "False":
 - Caso os usuários **já** tenham baixado o Managed Browser **ou** o Microsoft Edge, o aplicativo do navegador será inicializado. 
 - No entanto, se ainda não baixaram nenhum dos navegadores, eles serão solicitados a baixar o Managed Browser.
 
-Use o procedimento descrito acima para criar uma configuração de aplicativo do Microsoft Edge. Forneça o seguinte par de chave e valor quando selecionar as **Definições de configuração**, na folha **Configuração** (etapa 9):
+Use o procedimento descrito acima para criar uma configuração de aplicativo do Microsoft Edge. Forneça o seguinte par de chave e valor quando escolher as **Definições de configuração**, na folha **Configuração** (etapa 9):
 
 | Chave                              |  Valor   |
 |----------------------------------|----------|
@@ -191,7 +192,7 @@ O Microsoft Edge, o Intune Managed Browser e o [Proxy de Aplicativo do Azure AD]
 
 - Configure os aplicativos internos por meio do Proxy de Aplicativo do Azure AD.
   - Para configurar o Proxy de Aplicativo e publicar aplicativos, consulte a [documentação de instalação](https://docs.microsoft.com/azure/active-directory/manage-apps/application-proxy). 
-  - [Os usuários devem estar atribuídos](https://docs.microsoft.com/azure/active-directory/manage-apps/application-proxy-add-on-premises-application#add-a-user-for-testing) ao aplicativo empresarial para o qual o redirecionamento deverá ocorrer. Isso deverá ser feito mesmo se o aplicativo estiver definido no Modo de Passagem para pré-autenticação e se o requisito de atribuição do usuário tiver sido desativado nas configurações do Proxy de Aplicativo.
+  - [Os usuários devem ser atribuídos](https://docs.microsoft.com/azure/active-directory/manage-apps/application-proxy-add-on-premises-application#add-a-user-for-testing) ao Aplicativo empresarial para o qual o redirecionamento deverá ocorrer. Isso deverá ser feito mesmo se o aplicativo estiver definido no Modo de Passagem para pré-autenticação e se o requisito de atribuição do usuário tiver sido desativado nas configurações do Proxy de Aplicativo.
 - Você deve estar usando pelo menos a versão mínima 1.2.0 do aplicativo Managed Browser.
 - Os usuários do aplicativo Managed Browser ou Microsoft Edge têm uma [política de proteção do aplicativo do Intune](app-protection-policy.md) atribuída ao aplicativo.
 
@@ -205,7 +206,7 @@ O Outlook deve ser configurado com uma política de proteção do aplicativo que
 #### <a name="step-2-assign-an-app-configuration-policy-assigned-for-the-protected-browser"></a>Etapa 2: Aplicar uma política de configuração de aplicativo atribuída ao navegador protegido
 Este procedimento configura o aplicativo Managed Browser ou Microsoft Edge para usar o redirecionamento de proxy de aplicativo. 
 
-Abra a guia do **Microsoft Edge**, nas definições de configuração da política, e selecione **Habilitar** para o valor de redirecionamento do Proxy de Aplicativo. Habilitando essa configuração, os usuários podem acessar links corporativos e aplicativos Web locais publicados por meio do Proxy de Aplicativo do Azure Active Directory.
+Abra a guia do **Microsoft Edge** nas definições de configuração da política e escolha **Habilitar** para o valor de redirecionamento do Proxy de Aplicativo. Habilitando esta configuração, os usuários podem acessar links corporativos e aplicativos Web locais publicados por meio do proxy de aplicativo do Azure.
 
 Para saber mais sobre como o Managed Browser, o Microsoft Edge e o Proxy de Aplicativo do Azure AD podem ser usados em conjunto para obter um acesso contínuo (e protegido) a aplicativos Web locais, confira a postagem no blog Enterprise Mobility + Security [Melhores juntos: O Intune e o Azure Active Directory se unem para melhorar o acesso do usuário](https://cloudblogs.microsoft.com/enterprisemobility/2017/07/06/better-together-intune-and-azure-active-directory-team-up-to-improve-user-access).
 
@@ -302,7 +303,7 @@ Use as informações a seguir para saber mais sobre os formatos permitidos e car
 
 A base da experiência corporativa móvel do Microsoft Edge é o modelo de identidade dupla. Isso significa que o Microsoft Edge tem suporte para identidades corporativas e pessoais. Assim como ocorre nos aplicativos do Office 365 e do Outlook, esse modelo de identidade dupla permite aos usuários finais usar o Microsoft Edge para todas as necessidades de navegação e alternar facilmente entre as duas experiências, com base nas políticas de conteúdo definidas pelo administrador. A navegação no contexto pessoal não é afetada, e as informações corporativas são mantidas estritamente no contexto de trabalho dentro do Microsoft Edge. 
 
-Uma das vantagens desse modelo é que, quando os usuários tentam abrir um link (como um artigo de jornal, etc.) para um site não permitido pela organização, eles podem fazer isso no contexto pessoal que é mantido totalmente separado do contexto de trabalho. Essas transições reversíveis são habilitadas por padrão. 
+Uma das vantagens desse modelo é que, quando os usuários tentam abrir um link (como um artigo de jornal etc.) para um site não permitido pela organização, eles podem fazê-lo no contexto pessoal que é mantido totalmente separado do contexto de trabalho. Essas transições reversíveis são habilitadas por padrão. 
 
 Usando o procedimento para criar uma configuração do aplicativo Microsoft Edge ou Managed Browser, forneça o seguinte par de chave e valor:
 

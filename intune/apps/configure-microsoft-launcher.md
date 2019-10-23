@@ -9,6 +9,7 @@ manager: dougeby
 ms.date: 09/18/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
+ms.subservice: apps
 ms.localizationpriority: high
 ms.technology: ''
 ms.assetid: ''
@@ -17,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 469f969b6429cc39b5a8b8d3c041b96fc773c9ec
-ms.sourcegitcommit: 88b6e6d70f5fa15708e640f6e20b97a442ef07c5
+ms.openlocfilehash: 0e404f6591eb042fa4d035f3377e211a219fabe4
+ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/02/2019
-ms.locfileid: "71724952"
+ms.lasthandoff: 10/16/2019
+ms.locfileid: "72497968"
 ---
 # <a name="configure-microsoft-launcher"></a>Configurar o Microsoft Launcher
 
@@ -54,10 +55,10 @@ O designer de configuração permite que você selecione configurações preench
 
 A tabela a seguir lista as chaves de configuração, tipos de valor, valores padrão e descrições disponíveis no Microsoft Launcher. A descrição fornece o comportamento esperado do dispositivo com base nos valores selecionados. Chaves de configuração que estão desabilitadas no designer de configuração não estão listadas na tabela.
 
-|    Chave de configuração    |    Tipo de valor    |    Valor padrão    |    Descrição     |
+|    Chave de Configuração    |    Tipo de valor    |    Valor padrão    |    Descrição     |
 |---------------------------------------------------|------------------|---------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 |    Tipo de registro    |    Cadeia de caracteres     |    Padrão    |    Permite que você defina o tipo de registro ao qual essa política deve se aplicar. Atualmente, o valor **Padrão** refere-se a **CorporateOwnedBuisnessOnly**. Atualmente, não há outros tipos de registro com suporte.        Nome de chave JSON: management_mode_key        |
-|    Alteração do usuário da Ordem do aplicativo da tela inicial   Permitida    |    Booliano    |    verdadeiro    |    Permite especificar se a configuração **Ordem do aplicativo na tela inicial** pode ser alterada pelo usuário final.<ul><li>Se definida como **Verdadeira**, a ordem do aplicativo definida na política será aplicada apenas para a implantação inicial. Posteriormente, a política não será aplicada para respeitar as alterações que o usuário possa ter feito.</li><li>Se definida como **Falsa**, a ordem do aplicativo será imposta a cada sincronização.</li></ul><br>**Observação**: A ordem do Aplicativo na Tela Inicial pode ser configurada apenas por meio do editor JSON.<br><br>Nome da chave JSON:<br>`com.microsoft.launcher.HomeScreen.AppOrder.UserChangeAllowed`    |
+|    Alteração do usuário da Ordem do aplicativo da tela inicial   Permitida    |    Booliano    |    verdadeiro    |    Permite especificar se a configuração **Ordem do aplicativo na tela inicial** pode ser alterada pelo usuário final.<ul><li>Se definida como **Verdadeira**, a ordem do aplicativo definida na política será aplicada apenas para a implantação inicial. Posteriormente, a política não será aplicada para respeitar as alterações que o usuário possa ter feito.</li><li>Se definida como **Falsa**, a ordem do aplicativo será imposta a cada sincronização.</li></ul><br>**Observação:** A ordem do Aplicativo na Tela Inicial pode ser configurada apenas por meio do editor JSON.<br><br>Nome da chave JSON:<br>`com.microsoft.launcher.HomeScreen.AppOrder.UserChangeAllowed`    |
 |    Definir tamanho da grade    |    Cadeia de caracteres    |    Automático    |    Permite que você defina o tamanho da grade para que aplicativos sejam posicionados na tela inicial. Você pode definir o número de linhas e colunas de aplicativo para definir o tamanho da grade no seguinte formato: `columns;rows`. Se você definir o tamanho da grade, o número máximo de aplicativos que serão mostrados em uma linha na tela inicial será o número de linhas definidas e o número máximo de aplicativos que serão mostrados em uma coluna na tela inicial o número de colunas que você definiu.<br><br>        Nome da chave JSON:<br>`com.microsoft.launcher.HomeScreen.GridSize`    |
 |    Definir papel de parede do dispositivo    |    Cadeia de caracteres    |    Null    |    Permite que você defina um papel de parede de sua preferência, inserindo a URL da imagem que você deseja definir como um papel de parede.<br><br>Nome da chave JSON:<br>`com.microsoft.launcher.Wallpaper.URL`    |
 |    Alteração do usuário Definir papel de parede do dispositivo   Permitida    |    Bool    |    verdadeiro    |    Permite especificar se a configuração Definir papel de parede do dispositivo pode ser alterada pelo usuário final.<ul><li>Se definida como **Verdadeira**, o papel de parede na política será aplicado apenas para a implantação inicial. Posteriormente, a política não será aplicada para respeitar as alterações que o usuário possa ter feito.</li><li>Se definida como **Falsa**, o papel de parede será aplicado a cada sincronização.</li></ul><br>Nome da chave JSON:<br>`com.microsoft.launcher.Wallpaper.URL.UserChangeAllowed`        |
@@ -72,7 +73,7 @@ Digite os dados JSON para definir todas as configurações disponíveis para o M
 
 Além da lista de definições configuráveis listadas na tabela do Designer de configuração (acima), a tabela a seguir fornece as chaves de configuração que você só pode configurar por meio de dados JSON.
 
-|    Chave de configuração    |    Tipo de valor    |    Valor padrão    |    Descrição     |
+|    Chave de Configuração    |    Tipo de valor    |    Valor padrão    |    Descrição     |
 |----------------------------------------------------------------------------------------------------|-------------------|-------------------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 |    Definir aplicativos para a lista de permissões<br>Chave JSON:`com.microsoft.launcher.HomeScreen.Applications`    |    BundleArray    | Consulte: [Definir aplicativos para a lista de permissões](configure-microsoft-launcher.md#set-allow-listed-applications)</sup>    |    Permite definir o conjunto de aplicativos visíveis na tela inicial entre os aplicativos instalados no dispositivo. Você pode definir os aplicativos inserindo o nome do pacote dos aplicativos que você deseja tornar visíveis, por exemplo, `com.android.settings` torna as configurações acessíveis na tela inicial. Os aplicativos da lista de permissões nesta seção já devem estar instalados no dispositivo para que fiquem visíveis na tela inicial.<p>Propriedades:<ul><li>**Pacote:** O nome do pacote de aplicativos</li><li>**Classe:** A atividade do aplicativo, específica de uma determinada página de aplicativo. A página do aplicativo padrão é usada se esse valor estiver vazio.</li></ul>      |
 |    Ordem do aplicativo na tela inicial<br>Chave JSON: `com.microsoft.launcher.HomeScreen.AppOrder`    |    BundleArray    |    Consulte: [Ordem do aplicativo na tela inicial](configure-microsoft-launcher.md#home-screen-app-order)      |    Permite especificar a ordem do aplicativo na tela inicial.<p>Propriedades:<br><ul><li>**Tipo:** O único tipo com suporte é `application`.</li><li>**Posição:** O slot do ícone do aplicativo na tela inicial. Tem início na posição 1 no canto superior esquerdo e vai da esquerda para a direita, de cima para baixo.</li><li>**Pacote:** O nome do pacote de aplicativos.</li><li>**Classe:** A atividade do aplicativo, específica de uma determinada página de aplicativo. A página do aplicativo padrão será usada se esse valor estiver vazio.</li></ul>    |

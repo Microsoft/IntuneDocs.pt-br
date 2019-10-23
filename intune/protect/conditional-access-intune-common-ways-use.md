@@ -9,6 +9,7 @@ manager: dougeby
 ms.date: 07/23/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
+ms.subservice: protect
 ms.localizationpriority: high
 ms.technology: ''
 ms.assetid: a0b8e55e-c3d8-4599-be25-dc10c1027b62
@@ -16,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure; get-started; seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: fa4157d82ae63336503a9348851ad75f3b8243f9
-ms.sourcegitcommit: 88b6e6d70f5fa15708e640f6e20b97a442ef07c5
+ms.openlocfilehash: 00743e020fc9d42970dca5efa130908a53c6c5bf
+ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/02/2019
-ms.locfileid: "71722690"
+ms.lasthandoff: 10/16/2019
+ms.locfileid: "72504599"
 ---
 # <a name="what-are-common-ways-to-use-conditional-access-with-intune"></a>Quais são as maneiras comuns de usar o Acesso Condicional com o Intune?
 
@@ -41,7 +42,7 @@ O Intune e o Azure Active Directory trabalham juntos para garantir que somente d
 
 O Intune fornece funcionalidades de política de conformidade do dispositivo que avaliam o status de conformidade dos dispositivos. O status da conformidade é relatado ao Azure Active Directory que usa isso para impor a política de Acesso Condicional criada no Azure Active Directory quando o usuário tenta acessar os recursos da empresa.
 
-As políticas de Acesso Condicional baseado no dispositivo para o Exchange Online e outros produtos do Office 365 são configuradas por meio do [Portal do Microsoft Azure](https://docs.microsoft.com/intune-azure/introduction/what-is-microsoft-intune).  
+As políticas de Acesso condicional baseado no dispositivo para o Exchange Online e outros produtos do Office 365 são configuradas por meio do [portal do Azure](https://docs.microsoft.com/intune-azure/introduction/what-is-microsoft-intune).  
 
 - Saiba mais sobre como [Exigir dispositivos gerenciados com Acesso Condicional no Azure Active Directory](https://docs.microsoft.com/azure/active-directory/conditional-access/require-managed-devices).
 
@@ -84,7 +85,7 @@ O acesso condicional para computadores fornece recursos semelhantes aos disponí
 
 - **Ingressado no domínio do AD local:** Essa tem sido a opção mais comum para organizações que estão razoavelmente confiantes com o fato de que já estão gerenciando seus computadores por meio de políticas de grupo do AD ou com o System Center Configuration Manager.
 
-- **Ingressado no domínio do Azure AD e gerenciamento do Intune:** Esse cenário destina-se a organizações que desejam estar na nuvem primeiro (ou seja, usam principalmente serviços de nuvem, com o objetivo de reduzir o uso de uma infraestrutura local) ou somente na nuvem (sem infraestrutura local). O ingresso no Azure Active Directory funciona bem em um ambiente híbrido, permitindo o acesso a aplicativos e recursos locais e na nuvem. O dispositivo se une ao Azure Active Directory e é registrado no Intune, que pode ser usado como critério de acesso condicional ao acessar recursos corporativos.
+- **Ingressado no domínio do Azure AD e gerenciamento do Intune:** Esse cenário destina-se a organizações que desejam estar na nuvem primeiro (ou seja, usam principalmente serviços de nuvem, com o objetivo de reduzir o uso de uma infraestrutura local) ou somente na nuvem (sem infraestrutura local). O ingresso no Azure AD funciona bem em um ambiente híbrido, permitindo o acesso a aplicativos e recursos locais e na nuvem. O dispositivo se une ao Azure AD e é registrado no Intune, que pode ser usado como critério de acesso condicional ao acessar recursos corporativos.
 
 - **Ingressado no domínio do AD e o System Center Configuration Manager:** No branch atual, o System Center Configuration Manager oferece recursos de acesso condicional que podem avaliar critérios específicos de conformidade, além de ser um computador ingressado no domínio:
 

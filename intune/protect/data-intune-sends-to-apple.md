@@ -9,6 +9,7 @@ manager: dougeby
 ms.date: 02/26/2018
 ms.topic: conceptual
 ms.service: microsoft-intune
+ms.subservice: protect
 ms.localizationpriority: high
 ms.technology: ''
 ms.assetid: b204a956-18ec-11e8-accf-0ed5f89f718b
@@ -17,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: bbd0f0cafdf6de6b067e1350ce4c61e0980660d2
-ms.sourcegitcommit: 88b6e6d70f5fa15708e640f6e20b97a442ef07c5
+ms.openlocfilehash: a2f1be7a2457cca7da62883370c9e273168c6a29
+ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/02/2019
-ms.locfileid: "71722508"
+ms.lasthandoff: 10/16/2019
+ms.locfileid: "72502435"
 ---
 # <a name="data-intune-sends-to-apple"></a>Dados enviados pelo Intune à Apple
 
@@ -67,7 +68,7 @@ A tabela a seguir lista os dados que o Microsoft Intune envia de um dispositivo 
 | ASM/DEP | dispositivos | Matriz de cadeias de caracteres que contém os números de série do dispositivo. (Pode estar vazia). |
 | VPP | GUID de UserId do Intune | GUID gerado pelo Intune. |
 | VPP | UPN de AppleId gerenciada | ID da Apple que foi especificado pelo administrador ao configurar a conexão de token de VPP com a Apple. |
-| VPP | Número de série | Número de série do dispositivo gerenciado. |
+| VPP | Número de Série | Número de série do dispositivo gerenciado. |
 
 Para parar de usar serviços da Apple com o Microsoft Intune e excluir os dados, você deve desabilitar o token da Apple do Microsoft Intune e também excluir a sua conta da Apple. Consulte a conta da Apple para saber como executar o gerenciamento de contas.
 

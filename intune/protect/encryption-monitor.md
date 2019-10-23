@@ -9,6 +9,7 @@ manager: dougeby
 ms.date: 08/26/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
+ms.subservice: protect
 ms.localizationpriority: high
 ms.technology: ''
 ms.assetid: ''
@@ -16,12 +17,12 @@ ms.reviewer: shpate
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: c123de600d91f2ba44f9ae728d7f21c8adebed25
-ms.sourcegitcommit: 88b6e6d70f5fa15708e640f6e20b97a442ef07c5
+ms.openlocfilehash: 4d53179ed43697769ec7142ace6b62c08a67f31a
+ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/02/2019
-ms.locfileid: "71727825"
+ms.lasthandoff: 10/16/2019
+ms.locfileid: "72502355"
 ---
 # <a name="monitor-device-encryption-with-intune"></a>Monitorar a criptografia do dispositivo com o Intune   
 
@@ -122,7 +123,7 @@ Quando você seleciona um dispositivo no Relatório de criptografia, o Intune ex
  
     *Considere: No macOS versão 10.15 (Catalina) em diante, as configurações de Registro aprovadas pelo usuário podem exigir que os usuários aprovem manualmente a criptografia FileVault. Para obter mais informações, confira [Registro aprovado pelo usuário](../enrollment/macos-enroll.md) na documentação do Intune*.  
 
-  - Desconhecida.  
+  - Desconhecido.  
 
     *Considere: Uma possível causa de um status desconhecido é que o dispositivo está bloqueado e o Intune não pode iniciar o processo de caução ou de criptografia. Depois que o dispositivo for desbloqueado, o progresso poderá continuar*.  
 
