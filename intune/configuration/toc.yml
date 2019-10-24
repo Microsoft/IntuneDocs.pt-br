@@ -5,7 +5,7 @@
   items:
     - name: Visão geral da configuração do dispositivo
       href: device-profiles.md
-- name: Inícios rápidos
+- name: Guias de início rápido
   items:
     - name: Criar um perfil de dispositivo de email
       href: quickstart-email-profile.md
@@ -20,7 +20,10 @@
     - name: Restringir recursos e configurações do dispositivo
       href: device-restrictions-configure.md
       displayName: Device restrictions
-    - name: Atualizações
+    - name: Configurações do BIOS no Windows
+      href: device-firmware-configuration-interface-windows.md
+      displayName: 'DFCI, firmware'
+    - name: Updates
       href: delivery-optimization-windows.md
       displayName: delivery optimization; updates
     - name: Atualizar edições e modo S
@@ -130,7 +133,7 @@
               href: vpn-settings-macos.md
             - name: Wi-Fi
               href: wi-fi-settings-macos.md
-            - name: Extensões
+            - name: Extensões do
               href: kernel-extensions-settings-macos.md
             - name: Personalizado
               href: custom-settings-macos.md

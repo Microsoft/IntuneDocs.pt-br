@@ -96,13 +96,21 @@
         - name: Defesa contra Ameaças Móveis
           href: mobile-threat-defense.md
           items:
-            - name: Configurar o Intune para MTD
+            - name: MTD em dispositivos não registrados
               items:
-                - name: Adicionar aplicativos MTD
+                - name: Adicionar aplicativos MTD a dispositivos não registrados
+                  href: mtd-add-apps-unenrolled-devices.md
+                - name: Criar uma política de proteção de aplicativo MTD
+                  href: mtd-app-protection-policy.md
+                - name: Habilitar MTD para dispositivos não registrados
+                  href: mtd-enable-unenrolled-devices.md
+            - name: MTD em dispositivos registrados
+              items:
+                - name: Adicionar aplicativos MTD a dispositivos registrados
                   href: mtd-apps-ios-app-configuration-policy-add-assign.md
                 - name: Criar uma política de conformidade de dispositivo MTD
                   href: mtd-device-compliance-policy-create.md
-                - name: Habilitar MTD no Intune
+                - name: Habilitar MTD para dispositivos registrados
                   href: mtd-connector-enable.md
             - name: Aplicativos MTD
               items:
