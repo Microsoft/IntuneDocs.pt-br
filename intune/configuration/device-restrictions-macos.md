@@ -6,7 +6,7 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 09/10/2019
+ms.date: 10/22/2019
 ms.topic: reference
 ms.service: microsoft-intune
 ms.subservice: configuration
@@ -16,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: fb5fe19852ffff30566cb6758e156def3b7d64a5
-ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
+ms.openlocfilehash: 8b2efdc04414d29fc1d8d200525cb3a4a880ec01
+ms.sourcegitcommit: e9cf372711ff186ed468b01a9204631a139bd8e5
 ms.translationtype: MTE75
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/16/2019
-ms.locfileid: "72494019"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72776875"
 ---
 # <a name="macos-device-settings-to-allow-or-restrict-features-using-intune"></a>Configurações de dispositivo macOS para permitir ou restringir recursos usando o Intune
 
@@ -40,7 +40,7 @@ Essas configurações são adicionadas a um perfil de configuração do disposit
 
 ## <a name="general"></a>Geral
 
-### <a name="settings-apply-to-device-enrollment"></a>As configurações se aplicam a: registro de dispositivo
+### <a name="settings-apply-to-device-enrollment-and-automated-device-enrollment"></a>As configurações se aplicam a: registro de dispositivo e registro de dispositivo automatizado
 
 - **Pesquisa de definição**: **Bloquear** impede que o usuário realce uma palavra e, em seguida, pesquise sua definição no dispositivo. **Não configurado** (padrão): permite o acesso ao recurso de pesquisa de definição.
 - **Ditado**: **Bloquear** impede o usuário de usar a entrada de voz para inserir texto. **Não configurado** (padrão) permite que o usuário use a entrada por ditado.
@@ -82,7 +82,7 @@ Essas configurações são adicionadas a um perfil de configuração do disposit
 
 ## <a name="password"></a>Senha
 
-### <a name="settings-apply-to-device-enrollment"></a>As configurações se aplicam a: registro de dispositivo
+### <a name="settings-apply-to-device-enrollment-and-automated-device-enrollment"></a>As configurações se aplicam a: registro de dispositivo e registro de dispositivo automatizado
 
 - **Senha**: **Exigir** que o usuário final insira uma senha para acessar o dispositivo. **Não configurado** (padrão) não requer uma senha. Ele também não força nenhuma restrição, como o bloqueio de senhas simples ou a definição de um comprimento mínimo.
   - **Tipo de senha necessária**: especifique se a senha usada pode ser apenas Numérica ou se deve ser Alfanumérica (conter letras e números).
@@ -114,7 +114,7 @@ Essas configurações são adicionadas a um perfil de configuração do disposit
 
 ## <a name="built-in-apps"></a>Aplicativos internos
 
-### <a name="settings-apply-to-device-enrollment"></a>As configurações se aplicam a: registro de dispositivo
+### <a name="settings-apply-to-device-enrollment-and-automated-device-enrollment"></a>As configurações se aplicam a: registro de dispositivo e registro de dispositivo automatizado
 
 - **Bloquear Preenchimento Automático do Safari**: **Bloquear** desabilita o recurso de preenchimento automático do Safari no dispositivo. **Não configurado** (padrão) permite que os usuários alterem as configurações de preenchimento automático no navegador da Web.
 - **Bloquear Câmera**: escolha **Bloquear** para impedir o acesso à câmera no dispositivo. **Não configurado** (padrão) permite o acesso à câmera do dispositivo.
@@ -127,7 +127,7 @@ Essas configurações são adicionadas a um perfil de configuração do disposit
 
 ## <a name="restricted-apps"></a>Aplicativos restritos
 
-### <a name="settings-apply-to-device-enrollment"></a>As configurações se aplicam a: registro de dispositivo
+### <a name="settings-apply-to-device-enrollment-and-automated-device-enrollment"></a>As configurações se aplicam a: registro de dispositivo e registro de dispositivo automatizado
 
 - **Tipo de lista de aplicativos restritos**: Crie uma lista de aplicativos que os usuários não têm permissão para instalar ou usar. Suas opções:
 
@@ -145,14 +145,14 @@ Para adicionar aplicativos a essas listas, você pode:
 
 ## <a name="connected-devices"></a>Dispositivos conectados
 
-### <a name="settings-apply-to-device-enrollment"></a>As configurações se aplicam a: registro de dispositivo
+### <a name="settings-apply-to-device-enrollment-and-automated-device-enrollment"></a>As configurações se aplicam a: registro de dispositivo e registro de dispositivo automatizado
 
 - **Bloquear AirDrop**: a opção **Bloquear** impede o uso do AirDrop no dispositivo. **Não configurado** (padrão) permite o uso do recurso AirDrop para trocar conteúdo com dispositivos próximos.
 - **Bloquear Desbloqueio Automático do Apple Watch**: **Bloquear** impede que os usuários desbloqueiem seu dispositivo macOS com o Apple Watch. **Não configurado** (padrão) permite aos usuários desbloquear o dispositivo macOS com o seu Apple Watch.
 
 ## <a name="cloud-and-storage"></a>Nuvem e armazenamento
 
-### <a name="settings-apply-to-device-enrollment"></a>As configurações se aplicam a: registro de dispositivo
+### <a name="settings-apply-to-device-enrollment-and-automated-device-enrollment"></a>As configurações se aplicam a: registro de dispositivo e registro de dispositivo automatizado
 
 - **Bloquear a sincronização do Conjunto de Chaves no iCloud**: escolha **Bloquear** para desabilitar a sincronização de credenciais armazenadas no Keychain com o iCloud. **Não configurado** (padrão) permite que os usuários sincronizem essas credenciais.
 - **Bloquear Sincronização de Documento do iCloud**: **Bloquear** impede que o iCloud sincronize documentos e dados. A opção **Não configurado** (padrão) permite a sincronização de documento e chave-valor com o espaço de armazenamento do iCloud.
@@ -170,7 +170,7 @@ Para adicionar aplicativos a essas listas, você pode:
 
 ## <a name="domains"></a>Domínios
 
-### <a name="settings-apply-to-device-enrollment"></a>As configurações se aplicam a: registro de dispositivo
+### <a name="settings-apply-to-device-enrollment-and-automated-device-enrollment"></a>As configurações se aplicam a: registro de dispositivo e registro de dispositivo automatizado
 
 - No campo **URL de Domínio de Email**: **adicione** uma ou mais URLs à lista. Quando os usuários recebem um email de um domínio diferente daquele configurado por você, o email é marcado como não confiável no aplicativo Email do macOS.
 

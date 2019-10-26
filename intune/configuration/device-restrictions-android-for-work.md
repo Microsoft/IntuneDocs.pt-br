@@ -5,7 +5,7 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 10/17/2019
+ms.date: 10/24/2019
 ms.topic: reference
 ms.service: microsoft-intune
 ms.subservice: configuration
@@ -15,12 +15,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure, seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: d1d83a77d8823a05accaf1c88b57f6e380636469
-ms.sourcegitcommit: 0be25b59c8e386f972a855712fc6ec3deccede86
+ms.openlocfilehash: ec6009096ac6ed39c8a217f8832661a575d83b78
+ms.sourcegitcommit: 4f979ba7030e72d820113fe23ac8521ddb2433bd
 ms.translationtype: MTE75
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/18/2019
-ms.locfileid: "72585374"
+ms.lasthandoff: 10/25/2019
+ms.locfileid: "72915711"
 ---
 # <a name="android-enterprise-device-settings-to-allow-or-restrict-features-using-intune"></a>Configurações do dispositivo do Android Enterprise para permitir ou restringir os recursos usando o Intune
 
@@ -193,7 +193,8 @@ Use essas configurações para definir uma experiência de estilo de quiosque em
 
 ### <a name="power-settings"></a>Configurações da energia
 
-- **Tempo para bloquear a tela**: defina a quantidade de tempo ocioso necessário para que o dispositivo seja bloqueado.
+- **Tempo para bloquear a tela**: Insira o tempo máximo que um usuário pode definir até que o dispositivo seja bloqueado. Por exemplo, se você definir essa configuração como **10 minutos**, os usuários poderão definir o tempo de 15 segundos até 10 minutos. Quando definido como **não configurado** (padrão), o Intune não altera nem controla essa configuração.
+
 - **Tela ligada enquanto o dispositivo está conectado**: escolha quais fontes de alimentação fazem com que a tela do dispositivo permaneça ligada enquanto o dispositivo está conectado.
 
 ### <a name="users-and-accounts-settings"></a>Configurações de usuários e de contas
@@ -301,7 +302,7 @@ Use essas configurações para definir uma experiência de estilo de quiosque em
 - **Tamanho mínimo da senha**: insira o número mínimo de caracteres que a senha do usuário deve ter, de **4**-**16**.
 - **Máximo de minutos de inatividade até o bloqueio do perfil de trabalho**: selecione a quantidade de tempo até o perfil de trabalho ser bloqueado. O usuário deve inserir suas credenciais para recuperar o acesso.
 - **Número de falhas de entrada antes de apagar o dispositivo**: insira o número de vezes que uma senha incorreta pode ser inserida antes que o perfil de trabalho seja apagado do dispositivo.
-- **Expiração da senha (dias)**: insira o número de dias até que a senha de um usuário final precise ser alterada (de **1**-**255**).
+- **Expiração da senha (dias)** : insira o número de dias até que a senha de um usuário final precise ser alterada (de **1**-**255**).
 - **Tipo de senha necessária**: selecione o tipo de senha que deve ser definido no dispositivo. Escolha:
   - **Padrão do dispositivo**
   - **Biométrico de segurança baixa**
@@ -322,7 +323,7 @@ Essas configurações de senha aplicam-se a perfis pessoais em dispositivos que 
 - **Tamanho mínimo da senha**: insira o número mínimo de caracteres que a senha do usuário deve ter, de **4**-**14**.
 - **Máximo de minutos de inatividade até a tela ser bloqueada**: selecione o tempo decorrido até um dispositivo inativo ser bloqueado automaticamente
 - **Número de falhas de entrada antes de apagar o dispositivo**: insira o número de vezes que uma senha incorreta pode ser inserida antes que todos os dados do dispositivo sejam apagados
-- **Expiração da senha (dias)**: insira o número de dias até que a senha de um usuário final precise ser alterada (de **1**-**255**)
+- **Expiração da senha (dias)** : insira o número de dias até que a senha de um usuário final precise ser alterada (de **1**-**255**)
 - **Tipo de senha necessária**: selecione o tipo de senha que deve ser definido no dispositivo. Escolha:
   - **Padrão do dispositivo**
   - **Biométrico de segurança baixa**

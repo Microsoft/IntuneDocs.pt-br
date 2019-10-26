@@ -6,7 +6,7 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 10/08/2019
+ms.date: 10/22/2019
 ms.topic: reference
 ms.service: microsoft-intune
 ms.subservice: configuration
@@ -16,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure; seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: a26af380ef00c85c681beccdcdf188c343da1b94
-ms.sourcegitcommit: 0be25b59c8e386f972a855712fc6ec3deccede86
+ms.openlocfilehash: 95cf688f3727f97aedd4126e00fa4dc4939ef6bc
+ms.sourcegitcommit: 06a1fe83fd95c9773c011690e8520733e1c031e3
 ms.translationtype: MTE75
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/18/2019
-ms.locfileid: "72584881"
+ms.lasthandoff: 10/23/2019
+ms.locfileid: "72785515"
 ---
 # <a name="ios-and-ipados-device-settings-to-allow-or-restrict-features-using-intune"></a>Configurações de dispositivo iOS e iPadOS para permitir ou restringir recursos usando o Intune
 
@@ -168,7 +168,7 @@ Essas configurações são adicionadas a um perfil de configuração do disposit
   
 - **Máximo de minutos após o bloqueio de tela antes que a senha seja exigida**<sup>1</sup>: insira por quanto tempo o dispositivo deve permanecer ocioso antes que o usuário tenha que digitar novamente a senha. Se o tempo inserido for maior do que o valor definido no dispositivo, o dispositivo ignorará o tempo inserido por você. Compatível com dispositivos iOS 8.0 e mais recentes.
 - **Máximo de minutos de inatividade até o bloqueio da tela**<sup>1</sup>: inserir o número máximo de minutos de inatividade permitido antes que a tela do dispositivo seja bloqueada. Se o tempo inserido for maior do que o valor definido no dispositivo, o dispositivo ignorará o tempo inserido por você. Quando definido como **imediatamente**, a tela é bloqueada com base no tempo mínimo do dispositivo. No iPhone, é de 30 segundos. No iPad, são dois minutos.
-- **Expiração da senha (dias)**: insira o número de dias antes que a senha do dispositivo precise ser alterada.
+- **Expiração da senha (dias)** : insira o número de dias antes que a senha do dispositivo precise ser alterada.
 - **Evitar a reutilização de senhas anteriores**: insira o número de novas senhas que devem ser usadas para que uma senha antiga possa ser reutilizada.
 - **ID de toque e desbloqueio de ID facial**: escolha **Bloquear** para impedir o uso de uma impressão digital ou uma face para desbloquear o dispositivo. **Não configurado** permite que o usuário desbloqueie o dispositivo usando estes métodos.
 
@@ -239,7 +239,7 @@ Essas configurações são adicionadas a um perfil de configuração do disposit
 
 - **Exigir senha da iTunes Store para todas as compras**: **exige** que o usuário insira a senha da ID da Apple para cada compra no aplicativo ou iTunes. **Não configurado** (padrão) permite compras sem solicitar uma senha a cada vez.
 - **Compras no aplicativo**: escolha **Bloquear** para evitar compras no aplicativo a partir da loja. **Não configurado** (padrão) permite compras na loja em um aplicativo em execução.
-- **Baixar o conteúdo da iBook Store sinalizado como "Erotismo"**: escolha **Bloquear** para impedir que os usuários baixem mídias da iBook Store marcadas como erotismo. **Não configurado** (padrão) permite que o usuário baixe livros da categoria "Erotismo".
+- **Baixar o conteúdo da iBook Store sinalizado como "Erotismo"** : escolha **Bloquear** para impedir que os usuários baixem mídias da iBook Store marcadas como erotismo. **Não configurado** (padrão) permite que o usuário baixe livros da categoria "Erotismo".
 - **Permitir que aplicativos gerenciados gravem contatos em contas de contatos não gerenciados**: quando definido como **permitir**, aplicativos gerenciados, como o aplicativo móvel do Outlook, podem salvar ou sincronizar informações de contato, incluindo contatos comerciais e corporativos, para os contatos internos do IOS aplicação. Quando definido como **não configurado** (padrão), os aplicativos gerenciados não podem salvar ou sincronizar informações de contato com o aplicativo interno de contatos do Ios no dispositivo.
   
   Para usar essa configuração, defina a configuração **Exibindo documentos corporativos em aplicativos não gerenciados** como **Bloquear**.
@@ -300,6 +300,11 @@ Essas configurações são adicionadas a um perfil de configuração do disposit
 
   Esse recurso aplica-se a:  
   - iOS 12.2 e mais recente
+
+  > [!NOTE]
+  > A configuração **log do lado do servidor para comandos Siri** é preterida pela Apple. Em uma versão futura, essa configuração é removida do console do Intune.
+  >
+  > Atualmente, essa configuração não tem nenhum efeito nos dispositivos, mesmo que a configuração seja mostrada nos perfis gerenciamento dispositivos. Para excluir essa configuração de qualquer política, abra a política, faça uma alteração secundária e, em seguida, salve a política. A política é atualizada e a configuração é excluída dos dispositivos.
 
 ### <a name="settings-apply-to-automated-device-enrollment-supervised"></a>As configurações se aplicam a: registro de dispositivo automatizado (supervisionado)
 
@@ -418,7 +423,7 @@ Para adicionar aplicativos, você pode:
 - **Discagem de voz**: escolha **Bloquear** para impedir o uso do recurso de discagem por voz no dispositivo. **Não configurado** (padrão) permite a discagem por voz no dispositivo.
 - **Roaming de voz**: escolha **Bloquear** para impedir o roaming de voz pela rede celular. **Não configurado** (padrão) permite o roaming de voz quando o dispositivo está em uma rede celular.
 - **Ponto de Acesso Pessoal**: **Bloquear** desativa o ponto de acesso pessoal no dispositivo dos usuários a cada sincronização do dispositivo. Essa configuração pode não ser compatíveis com algumas operadoras. **Não configurado** (padrão) mantém a configuração de ponto de acesso pessoal como o padrão definido pelo usuário.
-- **Regras de uso da rede celular (somente aplicativos gerenciados)**: define os tipos de dados que os aplicativos gerenciados podem usar em redes celulares. Suas opções:
+- **Regras de uso da rede celular (somente aplicativos gerenciados)** : define os tipos de dados que os aplicativos gerenciados podem usar em redes celulares. Suas opções:
   - **Bloquear uso de dados da rede celular**: bloqueie o uso de dados da rede celular para **Todos os aplicativos gerenciados** ou **Escolha aplicativos específicos**.
   - **Bloquear uso de dados da rede celular enquanto estiver em roaming**: bloqueie o uso de dados da rede celular quando estiver em roaming para **Todos os aplicativos gerenciados** ou **Escolha aplicativos específicos**.
 
@@ -497,7 +502,7 @@ Para adicionar aplicativos, você pode:
 - **Backup criptografado**: **Exigir** que quaisquer backups de dispositivo sejam criptografados.
 - **Sincronização com a nuvem de aplicativos gerenciados**: **Não configurado** (padrão) permite que os aplicativos gerenciados com o Intune sincronizem dados com a conta do iCloud do usuário. **Bloquear** impede essa sincronização de dados com o iCloud.
 - **Bloquear o Backup do Catálogo da Empresa**: escolha **Bloquear** para impedir os usuários de fazerem backup de livros corporativos. **Não configurado** (padrão) permite que os usuários façam backup desses livros.
-- **Bloquear a sincronização de metadados do catálogo da empresa (notas e destaques)**: **Bloquear** impede a sincronização de notas e grifos em livros corporativos. **Não configurado** (padrão) permite a sincronização.
+- **Bloquear a sincronização de metadados do catálogo da empresa (notas e destaques)** : **Bloquear** impede a sincronização de notas e grifos em livros corporativos. **Não configurado** (padrão) permite a sincronização.
 
 ### <a name="settings-apply-to-device-enrollment-automated-device-enrollment-supervised"></a>As configurações se aplicam a: registro de dispositivo, registro de dispositivo automatizado (supervisionado)
 
