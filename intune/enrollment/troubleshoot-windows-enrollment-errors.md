@@ -17,12 +17,12 @@ ms.reviewer: mghadial
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 1089c382a39afb5aad0456e669cb3a2434af73c1
-ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
+ms.openlocfilehash: 5776ebf3241968cca6da537bb58b7ab2a06f00ba
+ms.sourcegitcommit: f12bd2ce10b6241715bae2d2857f33c474287166
 ms.translationtype: MTE75
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/16/2019
-ms.locfileid: "72503099"
+ms.lasthandoff: 10/24/2019
+ms.locfileid: "72892532"
 ---
 # <a name="troubleshoot-windows-device-enrollment-problems-in-microsoft-intune"></a>Solucionar problemas de registro de dispositivo Windows no Microsoft Intune
 
@@ -163,7 +163,7 @@ Erro 80180026: “Algo deu errado. Confirme se você está usando as informaçõ
 - O cliente de computador do Intune (agente de PC do Intune) ou o agente cliente do Configuration Manager está instalado no computador com Windows 10.
 
 #### <a name="resolution"></a>Resolução
-Use um dos seguintes métodos para resolver esse problema:
+Use um dos métodos a seguir para resolver o problema:
 
 ##### <a name="disable-mdm-automatic-enrollment-in-azure"></a>Desabilite o registro automático do MDM no Azure.
 1. Entre no [Portal do Azure](https://portal.azure.com/).    
@@ -390,3 +390,4 @@ Esse problema é geralmente causado pela delegação incorreta de permissões pa
 - [Consulte o blog da equipe de suporte do Microsoft Intune](https://techcommunity.microsoft.com/t5/Intune-Customer-Success/bg-p/IntuneCustomerSuccess)
 - [Confira o blog do Microsoft Enterprise Mobility e segurança](https://techcommunity.microsoft.com/t5/Azure-Active-Directory-Identity/Announcing-the-public-preview-of-Azure-AD-group-based-license/ba-p/245210)
 - [Obter suporte para o Microsoft Intune](../fundamentals/get-support.md)
+- [Localizar erros de registro de cogerenciamento](https://docs.microsoft.com/sccm/comanage/how-to-monitor#enrollment-errors)

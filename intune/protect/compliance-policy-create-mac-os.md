@@ -2,30 +2,28 @@
 title: Configurações de conformidade para dispositivo macOS no Microsoft Intune – Azure | Microsoft Docs
 description: Veja uma lista de todas as configurações que você pode usar ao definir a conformidade para seus dispositivos macOS no Microsoft Intune. Exija proteção de integridade do sistema da Apple, defina restrições de senha, exija um firewall, permita o gatekeeper e muito mais.
 keywords: ''
-author: MandiOhlinger
-ms.author: mandia
+author: brenduns
+ms.author: brenduns
 manager: dougeby
-ms.date: 04/04/2019
+ms.date: 10/22/2019
 ms.topic: reference
 ms.service: microsoft-intune
 ms.subservice: protect
 ms.localizationpriority: medium
 ms.technology: ''
-ms.reviewer: muhosabe
+ms.reviewer: samyada
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: cada774003f73f487f87ed8051115dfcaaae6a20
-ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
+ms.openlocfilehash: 518f0b825b71a9773ed66dd480b329e998f919c4
+ms.sourcegitcommit: 25acfc88b366d2da71c37d354a0238e4f1168325
 ms.translationtype: MTE75
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/16/2019
-ms.locfileid: "72502480"
+ms.lasthandoff: 10/23/2019
+ms.locfileid: "72813508"
 ---
 # <a name="macos-settings-to-mark-devices-as-compliant-or-not-compliant-using-intune"></a>Configurações do macOS para marcar dispositivos como em conformidade ou não em conformidade usando o Intune
-
-[!INCLUDE [azure_portal](../includes/azure_portal.md)]
 
 Este artigo lista e descreve as diferentes configurações de conformidade que você pode definir em dispositivos macOS no Intune. Como parte de sua solução de MDM (gerenciamento de dispositivo móvel), use estas configurações para definir a versão mínima ou a máxima do SO, definir senhas para expirar e muito mais.
 
@@ -41,45 +39,78 @@ Como um administrador do Intune, use essas configurações de conformidade para 
 
 ## <a name="device-health"></a>Integridade do Dispositivo
 
-- **Exigir uma proteção de integridade do sistema**: **Exigir** que os dispositivos macOS tenham a [Proteção de Integridade do Sistema](https://support.apple.com/HT204899) (abre o site da Apple) habilitada. Quando definido como **Não configurado** (padrão), essa configuração não é avaliada de conformidade ou não conformidade.
+- **Exigir uma proteção de integridade do sistema**:  
+  - **Não configurado** (*padrão*) — Esta configuração não é avaliada em relação a estar ou não em conformidade.
+  - **Exigir** -exigir que dispositivos MacOS tenham [proteção de integridade do sistema](https://support.apple.com/HT204899) (abre o site da Apple) habilitado.  
 
-## <a name="device-properties"></a>Propriedades do dispositivo
+## <a name="device-properties"></a>Propriedades do Dispositivo
 
-- **Sistema operacional mínimo**: quando um dispositivo não atender ao requisito mínimo da versão do sistema operacional, ele será relatado como não compatível. É exibido um link com informações sobre como atualizar. O usuário final pode optar por atualizar seu dispositivo e, depois disso, poderá ter acesso aos recursos da empresa.
-- **Versão do sistema operacional máxima**: quando um dispositivo estiver usando uma versão de sistema operacional posterior àquela especificada na regra, o acesso aos recursos da empresa será bloqueado. O usuário deverá contatar seu administrador de TI. Até que haja uma alteração de regra para permitir a versão do sistema operacional, este dispositivo não poderá acessar os recursos da empresa.
-- **Versão de build mínima do SO**: quando a Apple publica atualizações de segurança, geralmente é atualizado o número de compilação, não a versão do sistema operacional. Use esse recurso para inserir um número de compilação mínima permitido no dispositivo.
-- **Versão de build máxima do SO**: quando a Apple publica atualizações de segurança, geralmente é atualizado o número de compilação, não a versão do sistema operacional. Use esse recurso para inserir um número de compilação máxima permitido no dispositivo.
+- **SO mínimo exigido**:  
+  Quando um dispositivo não atende ao requisito mínimo de versão do sistema operacional, ele será relatado como não estando em conformidade. É exibido um link com informações sobre como atualizar. O usuário do dispositivo pode optar por atualizar o dispositivo. Depois disso, eles podem acessar recursos da organização.
+
+- **Versão máxima do SO permitida**:  
+  Quando um dispositivo usa uma versão de SO posterior à versão inserida na regra, o acesso aos recursos da organização é bloqueado. É solicitado que o usuário do dispositivo entre em contato com o administrador de TI. O dispositivo não pode acessar os recursos da organização até uma regra mudar para permitir a versão do SO.
+
+- **Versão mínima de build do SO**:  
+  Quando a Apple publica atualizações de segurança, geralmente é atualizado o número de compilação, não a versão do sistema operacional. Use esse recurso para inserir um número de compilação mínima permitido no dispositivo.
+
+- **Versão máxima de build do SO**:  
+  Quando a Apple publica atualizações de segurança, geralmente é atualizado o número de compilação, não a versão do sistema operacional. Use esse recurso para inserir um número de compilação máxima permitido no dispositivo.
 
 ## <a name="system-security-settings"></a>Configurações de segurança do sistema
 
 ### <a name="password"></a>Senha
 
-- **Exigir uma senha para desbloquear dispositivos móveis**: **exija** que os usuários insiram uma senha antes de acessar o dispositivo.
-- **Senhas simples**: defina como **Bloquear** para que os usuários não possam criar uma senha simples como **1234** ou **1111**. Definido como **Não configurado** para permitir que os usuários criem senhas como **1234** ou **1111**.
-- **Tamanho mínimo da senha**: insira o número mínimo de dígitos ou de caracteres que a senha deve ter.
+- **Exigir uma senha para desbloquear os dispositivos móveis**:  
+  - **Não configurado** (*padrão*)
+  - **Exigir** – Os usuários devem inserir uma senha antes que possam acessar um dispositivo.
+
+- **Senhas simples**:  
+  - **Não configurado** (*padrão*)-os usuários podem criar senhas simples, como **1234** ou **1111**.
+  - **Bloquear** — Os usuários não podem criar senhas simples, como **1234** ou **1111**.
+
+- **Comprimento mínimo da senha**:  
+  Insira o número mínimo de dígitos ou caracteres que a senha deve ter.
+
 - **Tipo de senha**: escolha se uma senha deve ter apenas caracteres **numéricos** ou se deve haver uma combinação de números e outros caracteres (**alfanuméricos**).
-- **Número de caracteres não alfanuméricos na senha**: insira o número mínimo de caracteres especiais, como `&`, `#`, `%`, `!` e assim por diante, que devem ser incluídos na senha.
 
-    Definir um número mais alto exige que o usuário crie uma senha mais complexa.
+- **Número de caracteres não alfanuméricos na senha**:  
+  Insira o número mínimo de caracteres especiais, como `&`, `#`, `%`, `!` e assim por diante, que devem ser incluídos na senha.
 
-- **Máximo de minutos de inatividade antes que a senha seja exigida**: insira o tempo ocioso antes que o usuário precise digitar novamente a senha.
-- **Expiração da senha (dias)** : selecione o número de dias antes que a senha expire e seja preciso criar uma nova.
-- **Número de senhas anteriores para evitar a reutilização**: insira o número de senhas usadas anteriormente que não podem ser utilizadas.
+  Definir um número mais alto exige que o usuário crie uma senha mais complexa.
 
-    > [!IMPORTANT]
-    > Quando o requisito de senha é alterado em um dispositivo macOS, ele não tem efeito até a próxima vez que o usuário alterar sua senha. Por exemplo, se você definir a restrição de comprimento de senha para oito dígitos e o dispositivo macOS atualmente tiver uma senha de seis dígitos, o dispositivo permanecerá em conformidade até a próxima vez que o usuário atualizar a senha no dispositivo.
+- **Máximo de minutos de inatividade antes de a senha ser necessária**:  
+  Insira o tempo ocioso antes que o usuário precise inserir novamente sua senha.
+
+- **Expiração da senha (dias)** :  
+  Selecione o número de dias antes que a senha expire e seja preciso criar uma nova.
+
+- **Número de senhas anteriores para evitar a reutilização**:  
+  Insira o número de senhas usadas anteriormente e que não podem ser usadas.
+> [!IMPORTANT]
+> Quando o requisito de senha é alterado em um dispositivo macOS, ele não tem efeito até a próxima vez que o usuário alterar sua senha. Por exemplo, se você definir a restrição de comprimento de senha para oito dígitos e o dispositivo macOS atualmente tiver uma senha de seis dígitos, o dispositivo permanecerá em conformidade até a próxima vez que o usuário atualizar a senha no dispositivo.
 
 ### <a name="encryption"></a>Criptografia
 
-- **Criptografia de armazenamento de dados em um dispositivo**: escolha **Exigir** para criptografar o armazenamento de dados em seus dispositivos.
+- **Criptografia de armazenamento de dados em um dispositivo**:  
+  - **Não configurado** (*padrão*)
+  - **Exigir** – Use *Exigir* para criptografar o armazenamento de dados em seus dispositivos.
 
 ### <a name="device-security"></a>Segurança de dispositivo
 
 O firewall protege os dispositivos contra o acesso não autorizado à rede. Você pode usar o Firewall para controlar as conexões por aplicativo. 
 
-- **Firewall**: selecione **Habilitar** para ajudar a proteger os dispositivos contra o acesso não autorizado. A habilitação desse recurso permite que você manipule as conexões de entrada com a Internet e use o modo furtivo. A opção **Não configurado** (padrão) deixa o firewall desativado e o tráfego de rede é permitido (não bloqueado).
-- **Conexões de entrada**: **bloqueie** todas as conexões de rede de entrada, exceto as conexões necessárias para serviços básicos da Internet, como DHCP, Bonjour e IPsec. Essa configuração também bloqueia todos os serviços de compartilhamento, incluindo compartilhamento de tela, acesso remoto, compartilhamento de música do iTunes e muito mais. A opção **Não configurado** (padrão) permite conexões de entrada e serviços de compartilhamento.
-- **Modo Furtivo**: **habilite** o modo furtivo para impedir que dispositivos respondam a solicitações de investigação, que podem ser feitas por usuários mal-intencionados. Quando essa opção está habilitada, o dispositivo continua respondendo a solicitações de entrada de aplicativos autorizados. A opção **Não configurado** (padrão) deixa o modo furtivo desativado.
+- **Firewall**:  
+  - **Não configurado** (*padrão*) – Esta configuração desativa o firewall e permite (não bloqueia) o tráfego de rede.
+  - **Habilitar** — Use *Habilitar* para ajudar a proteger os dispositivos contra o acesso não autorizado. A habilitação desse recurso permite que você manipule as conexões de entrada com a Internet e use o modo furtivo. 
+
+- **Conexões de entrada**:  
+  - **Não configurado** (*padrão*) – Permite conexões de entrada e serviços de compartilhamento.
+  - **Bloquear** – Bloqueie todas as conexões de rede de entrada, exceto as conexões necessárias para serviços básicos da Internet, como DHCP, Bonjour e IPsec. Essa configuração também bloqueia todos os serviços de compartilhamento, incluindo compartilhamento de tela, acesso remoto, compartilhamento de música do iTunes e muito mais.  
+
+- **Modo furtivo**:  
+  - **Não configurado** (*padrão*)-essa configuração deixa o modo furtivo desativado.
+  - **Habilitar** – Habilite o modo furtivo para impedir que dispositivos respondam a solicitações de investigação, que podem ser feitas por usuários mal-intencionados. Quando essa opção está habilitada, o dispositivo continua respondendo a solicitações de entrada de aplicativos autorizados.  
 
 ### <a name="gatekeeper"></a>Gatekeeper
 
@@ -87,12 +118,11 @@ Para obter mais informações, veja [Gatekeeper no macOS](https://support.apple.
 
 **Permitir aplicativos baixados destes locais**: permite que aplicativos com suporte sejam instalados em seus dispositivos de diferentes locais. Suas opções de localização:
 
-- **Não configurado**: padrão. A opção gatekeeper não tem impacto sobre conformidade ou não conformidade. 
-- **Mac App Store**: instale somente os aplicativos para a Mac App Store. Não é possível instalar aplicativos de terceiros nem de desenvolvedores identificados. Se um usuário selecionar o Gatekeeper para instalar aplicativos fora da Mac App Store, será considerado que o dispositivo não está em conformidade.
-- **Mac App Store e desenvolvedores identificados**: instale aplicativos para a Mac App Store e desenvolvedores identificados. O macOS verifica a identidade dos desenvolvedores e faz algumas outras verificações para determinar a integridade do aplicativo. Se um usuário selecionar o Gatekeeper para instalar aplicativos fora dessas opções, será considerado que o dispositivo não está em conformidade.
-- **Em qualquer lugar**: os aplicativos podem ser instalados em qualquer lugar e por qualquer desenvolvedor. Essa opção é a menos segura.
-
-Selecione **OK** > **Criar** para salvar suas alterações.
+- **Não configurado** (*padrão*)-a opção de gatekeeper não tem impacto sobre a conformidade ou a não conformidade.  
+- **Mac App Store** – Instale somente aplicativos da Mac App Store. Não é possível instalar aplicativos de terceiros nem de desenvolvedores identificados. Se um usuário selecionar o Gatekeeper para instalar aplicativos fora da Mac App Store, será considerado que o dispositivo não está em conformidade.
+- **Mac App Store e desenvolvedores identificados** – Instale aplicativos da Mac App Store e desenvolvedores identificados. O macOS verifica a identidade dos desenvolvedores e faz algumas outras verificações para determinar a integridade do aplicativo. Se um usuário selecionar o Gatekeeper para instalar aplicativos fora dessas opções, será considerado que o dispositivo não está em conformidade.
+- **Em qualquer lugar** – Os aplicativos podem ser instalados em qualquer lugar e por qualquer desenvolvedor. Essa opção é a menos segura.
+ 
 
 ## <a name="next-steps"></a>Próximas etapas
 
