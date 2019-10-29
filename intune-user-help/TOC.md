@@ -6,7 +6,9 @@
 
 ## [Requisitos da senha do dispositivo](password-does-not-meet-it-administrator-requirements.md)
 
-## [Entre no Portal da Empresa](sign-in-to-the-company-portal.md)
+## [Entre no Portal da Empresa](sign-in-to-the-company-portal.md)  
+
+## [Instalar aplicativo de Defesa contra Ameaças Móveis](set-up-mobile-threat-defense.md)  
 
 ## Como usar seu dispositivo Android
 ### [Por que inscrever seu dispositivo Android](why-enroll-android-device.md)
