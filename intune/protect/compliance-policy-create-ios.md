@@ -2,100 +2,130 @@
 title: Configurações de conformidade para dispositivo iOS no Microsoft Intune – Azure | Microsoft Docs
 description: Veja uma lista de todas as configurações que você pode usar ao definir a conformidade para seus dispositivos iOS no Microsoft Intune. Exigir um email, verificar dispositivos com jailbreak ou desbloqueados por rooting, definir o sistema de operacional mínimo e máximo permitido, definir quaisquer restrições de senha, incluindo extensão de senha e inatividade de dispositivo, restringir aplicativos e muito mais.
 keywords: ''
-author: MandiOhlinger
-ms.author: mandia
+author: brenduns
+ms.author: brenduns
 manager: dougeby
-ms.date: 04/04/2019
+ms.date: 10/22/2019
 ms.topic: reference
 ms.service: microsoft-intune
 ms.subservice: protect
 ms.localizationpriority: medium
 ms.technology: ''
 ms.assetid: 3cfb8222-d05b-49e3-ae6f-36ce1a16c61d
-ms.reviewer: joglocke
+ms.reviewer: samyada
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 5f473e376278b454ca2d173c7c147137226a9fc9
-ms.sourcegitcommit: 5807f4db4a45a093ce2fd6cb0c480bec384ec1ff
+ms.openlocfilehash: 3b83b764af415349b287df2a09f9b4c355734c28
+ms.sourcegitcommit: 3ace4cba6e2f6fefa9120be3807387a49b200c9b
 ms.translationtype: MTE75
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72601504"
+ms.lasthandoff: 10/23/2019
+ms.locfileid: "72810244"
 ---
 # <a name="ios-settings-to-mark-devices-as-compliant-or-not-compliant-using-intune"></a>Configurações do iOS para marcar dispositivos como em conformidade ou não em conformidade usando o Intune
-
-[!INCLUDE [azure_portal](../includes/azure_portal.md)]
 
 Este artigo lista e descreve as diferentes configurações de conformidade que você pode definir em dispositivos iOS no Intune. Como parte de sua solução de MDM (gerenciamento de dispositivo móvel), use estas configurações para exigir um email, marcar dispositivos com raiz (desbloqueados) como não estando em conformidade, definir um nível de ameaça permitido, definir a expiração de senhas e muito mais.
 
 Esse recurso aplica-se a:
 
 - iOS
+- iPadOS
 
 Como um administrador do Intune, use essas configurações de conformidade para ajudar a proteger os recursos da sua organização. Para saber mais sobre as políticas de conformidade e o que elas fazem, veja a [introdução à conformidade do dispositivo](device-compliance-get-started.md).
 
 ## <a name="before-you-begin"></a>Antes de começar
 
-[Criar uma política de conformidade](create-compliance-policy.md#create-the-policy). Selecione **Plataforma** para **iOS**.
+[Criar uma política de conformidade](create-compliance-policy.md#create-the-policy). Em **Plataforma**, selecione **iOS/iPadOS**.
 
 ## <a name="email"></a>Email
 
-- **Exigir que os dispositivos móveis tenham um perfil de email gerenciado**: quando definido como **Obrigatório**, dispositivos que não têm um perfil de email gerenciado pelo Intune são considerados como não estando em conformidade. Um dispositivo pode não ter um perfil de email gerenciado quando não é direcionado corretamente ou se o usuário tiver configurado manualmente a conta de email no dispositivo. Quando você escolhe **Não configurado** (padrão), essa configuração não é avaliada de conformidade ou não conformidade.
+- **Exigir que os dispositivos móveis tenham um perfil de email gerenciado**:  
+  - **Não configurado** (*padrão*) — Esta configuração não é avaliada em relação a estar ou não em conformidade.
+  - **Exigir** – Os dispositivos que não tenham um email de perfil gerenciado pelo Intune são considerados não compatíveis. Um dispositivo pode não ter um perfil de email gerenciado quando não é direcionado corretamente ou se o usuário tiver configurado manualmente a conta de email no dispositivo.
 
-  O dispositivo é considerado como não estando em conformidade nas seguintes situações:
-
+  O dispositivo é considerado como não estando em conformidade nas seguintes situações:  
   - O perfil de email é atribuído a um grupo de usuários diferente que o grupo de usuários almejado pela política de conformidade.
-  - O usuário configurou uma conta de email no dispositivo que corresponde ao perfil de email do Intune implantado no dispositivo. O Intune não pode substituir o perfil de usuário configurado e o Intune não pode gerenciá-lo. Para estar em conformidade, o usuário final deve remover as configurações de email existentes. Depois, o Intune pode instalar o perfil de email gerenciado.
-
-- **Selecione o perfil de email que deve ser gerenciado pelo Intune**: se a configuração **A conta de email deve ser gerenciada pelo Intune** for selecionada, escolha **Selecionar** para inserir o perfil de email do Intune. O perfil de email deve existir no dispositivo.
+  - O usuário configurou uma conta de email no dispositivo que corresponde ao perfil de email do Intune implantado no dispositivo. O Intune não pode substituir o perfil de usuário configurado e o Intune não pode gerenciá-lo. Para estar em conformidade, o usuário final deve remover as configurações de email existentes. Depois, o Intune pode instalar o perfil de email gerenciado.  
 
 Para obter detalhes sobre perfis de email, veja [configurar o acesso ao email da organização usando perfis de email com o Intune](../configuration/email-settings-configure.md).
 
-## <a name="device-health"></a>Device health
+## <a name="device-health"></a>Integridade do Dispositivo
 
-- **Dispositivos com jailbreak**: escolha **Bloquear** para marcar dispositivos desbloqueados por rooting (com jailbreak) como não estando em conformidade. Quando você escolhe **Não configurado** (padrão), essa configuração não é avaliada de conformidade ou não conformidade.
-- **Exigir que o dispositivo esteja no ou sob o nível de ameaça de dispositivo** (iOS 8.0 e mais recente): use esta configuração para realizar uma avaliação de risco como condição para a conformidade. Quando você escolhe **Não configurado** (padrão), essa configuração não é avaliada de conformidade ou não conformidade. Para usar essa configuração, escolha o nível de ameaça permitido:
-  - **Protegido**: essa opção é a mais segura e significa que o dispositivo não pode ter ameaças. Se for detectado que o dispositivo tem qualquer nível de ameaça, será avaliado que ele não está em conformidade.
-  - **Baixo**: o dispositivo será avaliado como em conformidade se apenas ameaças de nível baixo estiverem presentes. Qualquer coisa acima disso coloca o dispositivo no estado de não compatível.
-  - **Médio**: o dispositivo será avaliado como em conformidade se as ameaças presentes nele forem de nível baixo ou médio. Se for detectado que o dispositivo tem ameaças de nível alto, será determinado que ele não está em conformidade.
-  - **Alta**: esta opção é a menos segura, porque permite todos os níveis de ameaça. Talvez seja útil se você estiver usando esta solução apenas para fins de relatório.
+- **Dispositivos com jailbreak**:  
+  - **Não configurado** (*padrão*) — Esta configuração não é avaliada em relação a estar ou não em conformidade.
+  - **Bloquear** – Marque dispositivos desbloqueados por rooting (com jailbreak) como fora de conformidade.  
 
-## <a name="device-properties"></a>Propriedades do dispositivo
+- **Requer que o dispositivo esteja em nível igual ou inferior ao Nível de Ameaças do Dispositivo** *(iOS 8.0 e mais recente)* :  
+  Use essa configuração para fazer a avaliação de risco como uma condição de conformidade. Escolha o nível de ameaça permitido:  
+  - **Não configurado** (*padrão*) — Esta configuração não é avaliada em relação a estar ou não em conformidade.
+  - **Protegido** – Esta opção é a mais segura e significa que o dispositivo não pode ter ameaças. Se for detectado que o dispositivo tem qualquer nível de ameaça, será avaliado que ele não está em conformidade.
+  - **Baixo** – O dispositivo será avaliado como em conformidade se apenas ameaças de nível baixo estiverem presentes. Qualquer coisa acima disso coloca o dispositivo no estado de não compatível.
+  - **Médio** – O dispositivo será avaliado como em conformidade se as ameaças presentes nele forem de nível baixo ou médio. Se for detectado que o dispositivo tem ameaças de nível alto, será determinado que ele não está em conformidade.
+  - **Alto** – Esta opção é a menos segura, porque permite todos os níveis de ameaça. Talvez seja útil se você estiver usando esta solução apenas para fins de relatório.
 
-- **Sistema operacional mínimo exigido** (iOS 8.0 e mais recente): quando um dispositivo não atender ao requisito mínimo da versão do sistema operacional, ele será relatado como não estando em conformidade. É exibido um link com informações sobre como atualizar. O usuário final pode optar por atualizar o dispositivo. Depois disso, eles podem acessar recursos da organização.
-- **Versão do sistema operacional máxima permitida** (iOS 8.0 e mais recente): quando um dispositivo usa uma versão de SO posterior àquela na regra, o acesso aos recursos da organização é bloqueado. O usuário final é solicitado a contatar seu administrador de TI. O dispositivo não pode acessar os recursos da organização até uma regra mudar para permitir a versão do SO.
-- **Versão de build mínima do SO** (iOS 8.0 e mais recente): quando a Apple publica atualizações de segurança, geralmente é atualizado o número de build, não a versão do sistema operacional. Use esse recurso para inserir um número de compilação mínima permitido no dispositivo.
-- **Versão de build máxima do SO** (iOS 8.0 e mais recente): quando a Apple publica atualizações de segurança, geralmente é atualizado o número de build, não a versão do sistema operacional. Use esse recurso para inserir um número de compilação máxima permitido no dispositivo.
+## <a name="device-properties"></a>Propriedades do Dispositivo
 
-## <a name="system-security"></a>Segurança do sistema
+### <a name="operating-system-version"></a>Versão do Sistema Operacional  
+
+- **Sistema operacional mínimo necessário** *(Ios 8,0 e mais recente)* :  
+  Quando um dispositivo não atende ao requisito mínimo de versão do sistema operacional, ele será relatado como não estando em conformidade. É exibido um link com informações sobre como atualizar. O usuário final pode optar por atualizar o dispositivo. Depois disso, eles podem acessar recursos da organização.
+
+- **Versão máxima do sistema operacional permitida** *(Ios 8,0 e mais recente)* :  
+  Quando um dispositivo usa uma versão de SO posterior à versão inserida na regra, o acesso aos recursos da organização é bloqueado. O usuário final é solicitado a contatar seu administrador de TI. O dispositivo não pode acessar os recursos da organização até uma regra mudar para permitir a versão do SO.
+
+- **Versão mínima de Build do so** *(Ios 8,0 e mais recente)* :  
+  Quando a Apple publica atualizações de segurança, geralmente é atualizado o número de compilação, não a versão do sistema operacional. Use esse recurso para inserir um número de compilação mínima permitido no dispositivo.
+
+- **Versão máxima de Build do so** *(Ios 8,0 e mais recente)* :  
+  Quando a Apple publica atualizações de segurança, geralmente é atualizado o número de compilação, não a versão do sistema operacional. Use esse recurso para inserir um número de compilação máxima permitido no dispositivo.
+
+## <a name="system-security"></a>Segurança do Sistema
 
 ### <a name="password"></a>Senha
 
 > [!NOTE]
 > Depois que uma política de conformidade ou de configuração for aplicada a um dispositivo iOS, os usuários deverão definir uma senha a cada 15 minutos. Os usuários serão notificados continuamente até que uma senha seja definida. Quando uma senha é definida para o dispositivo iOS, o processo de criptografia é iniciado automaticamente. O dispositivo permanece criptografado até que a senha seja desabilitada.
 
-- **Exigir uma senha para desbloquear dispositivos móveis**: **exija** que os usuários insiram uma senha antes de acessar o dispositivo. Dispositivos iOS que usam uma senha são criptografados.
-- **Senhas simples**: defina como **Bloquear** para que os usuários não possam criar uma senha simples como **1234** ou **1111**. Definido como **Não configurado** para permitir que os usuários criem senhas como **1234** ou **1111**.
-- **Tamanho mínimo da senha**: insira o número mínimo de dígitos ou de caracteres que a senha deve ter.
-- **Tipo de senha necessária**: escolha se uma senha deve ter apenas caracteres **numéricos** ou se deve haver uma combinação de números e outros caracteres (**alfanuméricos**).
-- **Número de caracteres não alfanuméricos na senha**: insira o número mínimo de caracteres especiais, como `&`, `#`, `%`, `!` e assim por diante, que devem ser incluídos na senha.
+- **Exigir uma senha para desbloquear os dispositivos móveis**:  
+  - **Não configurado** (*padrão*) — Esta configuração não é avaliada em relação a estar ou não em conformidade.  
+  - **Exigir** – Os usuários devem inserir uma senha antes que possam acessar no dispositivo. Dispositivos iOS que usam uma senha são criptografados.
 
-    Definir um número mais alto exige que o usuário crie uma senha mais complexa.
+- **Senhas simples**:  
+  - **Não configurado** (*padrão*)-os usuários podem criar senhas simples, como **1234** ou **1111**.
+  - **Bloquear** — Os usuários não podem criar senhas simples, como **1234** ou **1111**. 
 
-- **Máximo de minutos de inatividade antes que a senha seja exigida**: insira o tempo ocioso antes que o usuário precise digitar novamente a senha.
-- **Expiração da senha (dias)** : selecione o número de dias antes que a senha expire e seja preciso criar uma nova.
-- **Número de senhas anteriores para evitar a reutilização**: insira o número de senhas usadas anteriormente que não podem ser utilizadas.
+- **Comprimento mínimo da senha**:  
+  Insira o número mínimo de dígitos ou caracteres que a senha deve ter.  
+
+- **Tipo de senha necessária**:  
+  Escolha se uma senha deve ter apenas caracteres **numéricos** ou se deve haver uma combinação de números e outros caracteres (**alfanuméricos**).
+
+- **Número de caracteres não alfanuméricos na senha**:  
+  Insira o número mínimo de caracteres especiais, como `&`, `#`, `%`, `!` e assim por diante, que devem ser incluídos na senha. 
+
+  Definir um número mais alto exige que o usuário crie uma senha mais complexa.
+
+- **Máximo de minutos após o bloqueio de tela antes que a senha seja exigida** *(iOS 8.0 e mais recente)* :  
+  Especifique o quanto logo após a tela ser bloqueada antes que um usuário precise digitar uma senha para acessar o dispositivo. As opções incluem o padrão de *não configurado*, *imediatamente*e de *1 minuto* a *4 horas*.
+
+- **Máximo de minutos de inatividade até a tela ser bloqueada**:  
+  Insira o tempo ocioso antes que o dispositivo bloqueie sua tela. As opções incluem o padrão de *não configurado*, *imediatamente*e de *1 minuto* a *15 minutos*.
+
+- **Expiração da senha (dias)** :  
+  Selecione o número de dias antes que a senha expire e seja preciso criar uma nova. 
+
+- **Número de senhas anteriores para evitar a reutilização** *(iOS 8.0 e mais recente)* :   
+  Insira o número de senhas usadas anteriormente e que não podem ser usadas.
 
 ### <a name="device-security"></a>Segurança de dispositivo
 
-- **Aplicativos restritos**: é possível restringir aplicativos adicionando suas IDs de lote à política. Se um dispositivo tiver o aplicativo instalado, o dispositivo será marcado como não estando em conformidade.
+- **Aplicativos restritos**:  
+  Você pode restringir os aplicativos adicionando suas IDs do lote à política. Se um dispositivo tiver o aplicativo instalado, o dispositivo será marcado como não estando em conformidade.
 
-  - **Nome do aplicativo**: insira um nome amigável para ajudá-lo a identificar a ID do lote.
-  - **ID do lote de aplicativo**: insira o identificador do lote exclusivo atribuído pelo provedor do aplicativo. Para localizar a ID do pacote, veja [Como localizar a ID do pacote para um aplicativo iOS](https://support.microsoft.com/help/4294074/how-to-find-the-bundle-id-for-an-ios-app) (abre outro site da Microsoft).  
-
-Selecione **OK** > **Criar** para salvar suas alterações.
+  - **Nome do aplicativo** – Insira um nome amigável para ajudar a identificar a ID do lote.
+  - **ID do lote de aplicativo** – Insira o identificador do lote exclusivo atribuído pelo provedor do aplicativo. Para localizar a ID do pacote, veja [Como localizar a ID do pacote para um aplicativo iOS](https://support.microsoft.com/help/4294074/how-to-find-the-bundle-id-for-an-ios-app) (abre outro site da Microsoft).  
 
 ## <a name="next-steps"></a>Próximas etapas
 
