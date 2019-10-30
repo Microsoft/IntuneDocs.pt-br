@@ -6,9 +6,10 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 09/17/2019
+ms.date: 10/10/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
+ms.subservice: apps
 ms.localizationpriority: high
 ms.technology: ''
 ms.assetid: dec6f258-ee1b-4824-bf66-29053051a1ae
@@ -17,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 419fd15f747c8b41377f3aca94c4b96d7c4910c1
-ms.sourcegitcommit: b8127c7a62d9ac4d0f768980fa1424567bb58733
+ms.openlocfilehash: dd48eea5ee09562590844e11ac372480c892a7af
+ms.sourcegitcommit: 0be25b59c8e386f972a855712fc6ec3deccede86
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/15/2019
-ms.locfileid: "72350004"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72585004"
 ---
 # <a name="how-to-configure-the-microsoft-intune-company-portal-app"></a>Como configurar o aplicativo Portal da Empresa do Microsoft Intune
 
@@ -128,6 +129,14 @@ Em **Personalização do Portal da Empresa** > **Gerenciamento de dispositivos e
 - Aceitar o **Padrão** para usar a lista conforme ela é mostrada ou
 - Escolher **Personalizar** para personalizar a lista de itens que sua organização não pode ver nem fazer em dispositivos iOS gerenciados. Você pode usar [markdown](https://daringfireball.net/projects/markdown/) para adicionar marcadores, negrito, itálico e links.
 
+## <a name="company-portal-derived-credentials-for-ios-devices"></a>Credenciais derivadas do Portal da Empresa para dispositivos iOS
+O Intune dá suporte às Credenciais Derivadas de PIV (Verificação de Identidade Pessoal) e CAC (Cartão de Acesso Comum) em parceria com os provedores de credenciais DISA Purebred, Entrust Datacard e Intercede. Os usuários finais passarão por etapas adicionais após o registro de seu dispositivo iOS para verificar sua identidade no aplicativo do Portal da Empresa. As Credenciais Derivadas serão habilitadas para os usuários primeiro por meio da configuração de um provedor de credenciais para seu locatário e, em seguida, do direcionamento de um perfil que usa Credenciais Derivadas para usuários ou dispositivos.
+
+> [!NOTE]
+> O usuário verá instruções sobre as credenciais derivadas com base no link que você especificou por meio do Intune.
+
+Para obter mais informações sobre credenciais derivadas para dispositivos iOS, confira [Usar credenciais derivadas no Microsoft Intune](~/protect/derived-credentials.md).
+
 ## <a name="windows-company-portal-keyboard-shortcuts"></a>Atalhos de teclado do Portal da Empresa do Windows
 
 Os usuários finais podem disparar ações de navegação, aplicativos e dispositivos no Portal da Empresa do Windows, usando atalhos de teclado (aceleradores).
@@ -171,21 +180,25 @@ Os usuários podem executar ações em seus dispositivos locais ou remotos por m
 
 Algumas plataformas e configurações não permitem ações de dispositivos de autoatendimento. Esta tabela abaixo fornece mais detalhes sobre as ações de autoatendimento:
 
-|     Plataforma    |    Desativar    |    Apagamento     |    Renomear<sup>(4)</sup>    |    Sincronização    |    Bloqueio remoto    |    Redefinir Senha    |    Recuperação de chave    |
-|------------------------|--------------------|--------------------|-----------------|-----------------|--------------------------|--------------------------|--------------------|
-|    Windows 10<sup>(3)</sup>    |    Disponível<sup>(1)</sup>    |    Disponível    |    Disponível    |    Disponível    |    Apenas Windows Phone    |    Apenas Windows Phone    |    NA    |
-|    iOS<sup>(3)</sup>    |    Disponível    |    Disponível    |    Disponível    |    Disponível    |    Disponível    |    Disponível    |    NA    |
-|    MacOS<sup>(3)</sup><sup>(5)</sup>    |    Disponível    |    NA    |    Disponível    |    Disponível    |    Disponível    |    NA    |    Disponível<sup>(2)</sup>    |
-|    Android<sup>(3)</sup>    |    Disponível<sup>(7)</sup>    |    Disponível<sup>(7)</sup>    |    Disponível    |    Disponível    |    Disponível    |    Disponível<sup>(6)</sup>    |    NA    |
+|  | Windows 10<sup>(3)</sup> | iOS/iPadOS<sup>(3)</sup> | MacOS<sup>(3)</sup><sup>(5)</sup> | Android<sup>(3)</sup> |
+|----------------------|--------------------------|-------------------|-----------------------------------|-------------------------|
+| Desativar | Disponível<sup>(1)</sup> | Disponível <sup>(8)</sup> | Disponível | Disponível<sup>(7)</sup> |
+| Apagamento | Disponível | Disponível | NA | Disponível<sup>(7)</sup> |
+| Renomear<sup>(4)</sup> | Disponível | Disponível <sup>(8)</sup> | Disponível | Disponível |
+| Sincronização | Disponível | Disponível | Disponível | Disponível |
+| Bloqueio remoto | Apenas Windows Phone | Disponível | Disponível | Disponível |
+| Redefinir Senha | Apenas Windows Phone | Disponível | NA | Disponível<sup>(6)</sup> |
+| Recuperação de chave | NA | NA | Disponível<sup>(2)</sup> | NA |
+| Modo Escuro | NA | Disponível | NA | NA |
 
-
-<sup>(1)</sup> A ação Desativar está sempre bloqueada em dispositivos Windows adicionados ao Azure AD.<br>
-<sup>(2)</sup> A recuperação de chave pessoal para o macOS está disponível apenas no site do Portal da Empresa.<br> 
+<sup>(1)</sup> A ação **Desativar** está sempre bloqueada em dispositivos Windows ingressados no Azure AD.<br>
+<sup>(2)</sup> A **Recuperação de Chave** para MacOS está disponível somente pelo Portal da Web.<br>
 <sup>(3)</sup> Todas as ações remotas serão desabilitadas com o uso de um registro do Gerenciador de Registro do Dispositivo.<br>
-<sup>(4)</sup> Renomear muda apenas o nome do dispositivo no site ou Aplicativo do Portal da Empresa, não no dispositivo.<br>
-<sup>(5)</sup> O Apagamento Remoto não está disponível em dispositivos MacOS.<br>
-<sup>(6)</sup> A Redefinição de senha não é permitida em algumas configurações do Android e Android Enterprise. Para saber mais, confira [Redefinir ou remover uma senha de dispositivo no Intune](../remote-actions/device-passcode-reset.md).<br>
-<sup>(7)</sup> Desativar e Apagar não estão disponíveis em cenários de Proprietário de Dispositivo de Empresa Android (COPE, COBO, COSU).<br> 
+<sup>(4)</sup> A ação **Renomear** muda apenas o nome do dispositivo no site ou Aplicativo do Portal da Empresa, não no dispositivo.<br>
+<sup>(5)</sup> O **Apagamento Remoto** não está disponível em dispositivos MacOS.<br>
+<sup>(6)</sup> Não há suporte para a **Redefinição de Senha** em algumas configurações do Android e Android Enterprise. Para saber mais, confira [Redefinir ou remover uma senha de dispositivo no Intune](../remote-actions/device-passcode-reset.md).<br>
+<sup>(7)</sup> As ações **Desativar** e **Apagar** não estão disponíveis em cenários de Proprietário de Dispositivo Android Enterprise (COPE, COBO, COSU).<br> 
+<sup>(8)</sup> As ações **Desativar** (dispositivo remoto) e **Renomear** estão disponíveis para todos os tipos de registro. Não há suporte para outras ações no Registro de Usuário.<br> 
 
 ## <a name="next-steps"></a>Próximas etapas
 

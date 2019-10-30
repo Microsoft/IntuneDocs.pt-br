@@ -9,6 +9,7 @@ manager: dougeby
 ms.date: 08/22/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
+ms.subservice: apps
 ms.localizationpriority: high
 ms.technology: ''
 ms.assetid: 51d45ce2-d81b-4584-8bc4-568c8c62653d
@@ -17,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: dac7069e30c173d80f15977ba2f06fcabcb7179b
-ms.sourcegitcommit: 88b6e6d70f5fa15708e640f6e20b97a442ef07c5
+ms.openlocfilehash: 9625243698bffc93ed969a8c2e4b06b4f3093f4d
+ms.sourcegitcommit: 06a1fe83fd95c9773c011690e8520733e1c031e3
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/02/2019
-ms.locfileid: "71724432"
+ms.lasthandoff: 10/23/2019
+ms.locfileid: "72785528"
 ---
 # <a name="how-to-manage-ios-and-macos-apps-purchased-through-apple-volume-purchase-program-with-microsoft-intune"></a>Como gerenciar aplicativos iOS e macOS adquiridos por meio do Apple Volume Purchase Program com o Microsoft Intune
 
@@ -93,7 +94,7 @@ Antes de começar, você precisará obter um token do VPP da Apple e carregá-lo
         > Alterar o país/região atualizará os metadados de aplicativos e a URL da loja na próxima sincronização com o serviço da Apple para aplicativos criados com esse token. O aplicativo não será atualizado se não existir na loja do novo país/região.
 
     - **Tipo de conta do VPP** – Escolha **Comercial** ou **Educação**.
-    - **Atualizações automáticas do aplicativo** – escolha ente **Ligado** ou **Desligado** para habilitar as atualizações automáticas. Quando habilitada, o Intune detecta as atualizações do aplicativo do VPP dentro da App Store e as envia por push automaticamente ao dispositivo durante seu check-in. Atualizações automáticas do aplicativo para aplicativos do Apple VPP serão atualizadas automaticamente somente os aplicativos implantados com a intenção de instalação **Obrigatória**. Para aplicativos implantados com a intenção de instalação **Disponível**, a atualização automática gera uma notificação para o administrador informando que uma nova versão do aplicativo está disponível. Além disso, o usuário verá o aplicativo como não instalado no Portal da Empresa, mesmo que uma versão anterior do aplicativo esteja instalada. Nesse caso, o usuário pode reinstalar o aplicativo clicando em **Instalar** na tela de detalhes do aplicativo no aplicativo Portal da Empresa para instalar a versão mais recente.
+    - **Atualizações automáticas do aplicativo** – escolha ente **Ligado** ou **Desligado** para habilitar as atualizações automáticas. Quando habilitada, o Intune detecta as atualizações do aplicativo do VPP dentro da App Store e as envia por push automaticamente ao dispositivo durante seu check-in. Atualizações automáticas do aplicativo para aplicativos do Apple VPP serão atualizadas automaticamente somente os aplicativos implantados com a intenção de instalação **Obrigatória**. Para aplicativos implantados com a intenção de instalação **Disponível**, a atualização automática gera uma mensagem de status para o administrador informando que uma nova versão do aplicativo está disponível. Essa mensagem de status pode ser exibida selecionando o aplicativo, selecionando Status de instalação do dispositivo e verificando os Detalhes do Status. Além disso, o usuário verá o aplicativo como não instalado no Portal da Empresa, mesmo que uma versão anterior do aplicativo esteja instalada. Nesse caso, o usuário pode reinstalar o aplicativo clicando em **Instalar** na tela de detalhes do aplicativo no aplicativo Portal da Empresa para instalar a versão mais recente.
 
         > [!NOTE]
         > As atualizações automáticas do aplicativo funcionam para aplicativos licenciados para o dispositivo e para o usuário no iOS versão 11.0 e posteriores ou no macOS versão 10.12 e posteriores.
@@ -123,11 +124,11 @@ O usuário final receberá avisos durante a instalação do aplicativo do VPP em
 
 | # | Cenário                                | Convidar para o programa Apple VPP                              | Aviso de instalação de aplicativo | Solicitar ID da Apple |
 |---|--------------------------------------------------|-------------------------------------------------------------------------------------------------|---------------------------------------------|-----------------------------------|
-| 1 | BYOD – usuário licenciado                             | Y                                                                                               | Y                                           | Y                                 |
-| 2 | Corp – usuário licenciado (dispositivo não supervisionado)     | Y                                                                                               | Y                                           | Y                                 |
-| 3 | Corp – usuário licenciado (dispositivo supervisionado)         | Y                                                                                               | N                                           | Y                                 |
-| 4 | BYOD – dispositivo licenciado                           | N                                                                                               | Y                                           | N                                 |
-| 5 | CORP – dispositivo licenciado (dispositivo não supervisionado)                           | N                                                                                               | Y                                           | N                                 |
+| 1 | BYOD – usuário licenciado                             | S                                                                                               | S                                           | S                                 |
+| 2 | Corp – usuário licenciado (dispositivo não supervisionado)     | S                                                                                               | S                                           | S                                 |
+| 3 | Corp – usuário licenciado (dispositivo supervisionado)         | S                                                                                               | N                                           | S                                 |
+| 4 | BYOD – dispositivo licenciado                           | N                                                                                               | S                                           | N                                 |
+| 5 | CORP – dispositivo licenciado (dispositivo não supervisionado)                           | N                                                                                               | S                                           | N                                 |
 | 6 | CORP – dispositivo licenciado (dispositivo supervisionado)                           | N                                                                                               | N                                           | N                                 |
 | 7 | Modo de quiosque (dispositivo supervisionado) – dispositivo licenciado | N                                                                                               | N                                           | N                                 |
 | 8 | Modo de quiosque (dispositivo supervisionado) – usuário licenciado   | --- | ---                                          | ---                                |
@@ -176,7 +177,7 @@ O acesso aos tokens do VPP da Apple e aos aplicativos VPP pode ser controlado de
 
 ## <a name="additional-information"></a>Informações adicionais
 
-Quando um usuário com um dispositivo qualificado tentar instalar um aplicativo VPP pela primeira vez, será solicitado que ele participe do programa Apple Volume Purchase. É necessário ingressar para continuar a instalação do aplicativo. O convite para ingressar no Apple Volume Purchase Program exige que o usuário possa usar o aplicativo da App Store no dispositivo iOS ou macOS. Se você definiu uma política para desabilitar o aplicativo da App Store, o licenciamento baseado em usuário para aplicativos VPP não funciona. A solução é permitir o aplicativo da App Store removendo a política ou usar o licenciamento baseado em dispositivo.
+Quando um usuário com um dispositivo qualificado tentar instalar um aplicativo VPP pela primeira vez, será solicitado que ele participe do programa Apple Volume Purchase. É necessário ingressar para continuar a instalação do aplicativo. O convite para ingressar no programa Apple Volume Purchase exige que o usuário possa usar o aplicativo da App Store no dispositivo iOS ou macOS. Se você definiu uma política para desabilitar o aplicativo da App Store, o licenciamento baseado em usuário para aplicativos VPP não funciona. A solução é permitir o aplicativo da App Store removendo a política ou usar o licenciamento baseado em dispositivo.
 
 A Apple oferece assistência direta para criar e renovar tokens do VPP. Para obter mais informações, veja [Distribuir conteúdo para usuários com o Programa de compra por volume (VPP)](https://go.microsoft.com/fwlink/?linkid=2014661) na documentação da Apple. 
 

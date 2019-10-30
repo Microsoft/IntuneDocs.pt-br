@@ -6,9 +6,10 @@ keywords: ''
 author: brenduns
 ms.author: brenduns
 manager: dougeby
-ms.date: 12/21/2017
+ms.date: 10/21/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
+ms.subservice: protect
 ms.localizationpriority: high
 ms.technology: ''
 ms.assetid: 359448d9-2384-42ac-a21c-a25148c20a7b
@@ -17,16 +18,19 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: a7271937c7675e82d2d3b3f32074ec07431536a2
-ms.sourcegitcommit: 88b6e6d70f5fa15708e640f6e20b97a442ef07c5
+ms.openlocfilehash: f6c28b222307ee20e3198033ef6aa4af3d756e7e
+ms.sourcegitcommit: 1a5b185acd27954b10b6d59409d82eb80fd71284
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/02/2019
-ms.locfileid: "71726694"
+ms.lasthandoff: 10/21/2019
+ms.locfileid: "72681328"
 ---
 # <a name="set-up-symantec-endpoint-protection-mobile-integration-with-intune"></a>Configurar a integração do Symantec Endpoint Protection Mobile com o Intune
 
 Conclua as seguintes etapas para integrar a solução SEP Mobile (Symantec Endpoint Protection Mobile) ao Intune. Você precisa adicionar os aplicativos SEP Mobile ao Azure AD com a funcionalidade de Logon único.
+
+> [!NOTE]
+> O fornecedor da Defesa Contra Ameaças Móveis não é compatível com dispositivos não registrados.
 
 ## <a name="before-you-begin"></a>Antes de começar
 
@@ -38,7 +42,7 @@ Conclua as seguintes etapas para integrar a solução SEP Mobile (Symantec Endpo
 
 Você pode garantir que a sua rede esteja configurada corretamente para integração com a configuração do SEP Mobile consultando o artigo da Symantec [Definindo sua configuração de rede](https://portal.skycure.com/articles/Documentation/Setting-up-your-network-configuration-26-8-2016).
 
-### <a name="full-integration-vs-read-only"></a>Integração total versus Somente leitura
+### <a name="full-integration-vs-read-only"></a>Integração total versus Somente leitura.
 
 O SEP Mobile é compatível com dois modos de integração com o Intune:
 

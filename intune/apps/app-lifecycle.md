@@ -8,6 +8,7 @@ manager: dougeby
 ms.date: 08/22/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
+ms.subservice: apps
 ms.localizationpriority: high
 ms.technology: ''
 ms.assetid: 60347012-bc3f-4b9a-a4f4-6d3c5021a6e6
@@ -16,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: apps; get-started
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 3c351c1bef09d559ee6fb07b2c5135b25ca69d9d
-ms.sourcegitcommit: 88b6e6d70f5fa15708e640f6e20b97a442ef07c5
+ms.openlocfilehash: 53425b56985cbafb4033b11df54597959c0b0d59
+ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/02/2019
-ms.locfileid: "71725706"
+ms.lasthandoff: 10/16/2019
+ms.locfileid: "72499712"
 ---
 # <a name="overview-of-the-app-lifecycle-in-microsoft-intune"></a>Visão geral do ciclo de vida do aplicativo no Microsoft Intune
 
@@ -29,9 +30,9 @@ ms.locfileid: "71725706"
 
 O ciclo de vida de aplicativo do Microsoft Intune começa quando um aplicativo é adicionado e passa por outras fases até ele ser removido. Ao compreender essas fases, você terá os detalhes necessários para iniciar o gerenciamento de aplicativos no Intune.
 
-![O ciclo de vida do aplicativo - Adicionar, implantar, configurar, proteger e desativar. ](./media/app-lifecycle/app-lifecycle.png "O ciclo de vida de aplicativo do Intune")
+![O ciclo de vida do aplicativo – Adicionar implantar, configurar, proteger e desativar.](./media/app-lifecycle/app-lifecycle.png "o ciclo de vida do aplicativo do Intune")
 
-## <a name="add"></a>Add
+## <a name="add"></a>Adicionar
 
 A primeira etapa na implantação do aplicativo é adicionar ao Intune os aplicativos que você deseja gerenciar e atribuir. Embora você possa trabalhar com vários tipos de aplicativos diferentes, os procedimentos básicos são os mesmos. Com o Intune, é possível adicionar tipos de aplicativos diferentes, incluindo aplicativos escritos internamente (linha de negócios), aplicativos da Store, aplicativos nativos e aplicativos na Web. Para obter mais informações sobre os tipos de aplicativos, consulte [Como adicionar um aplicativo ao Microsoft Intune](apps-add.md). 
 

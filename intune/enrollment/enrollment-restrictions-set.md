@@ -9,6 +9,7 @@ manager: dougeby
 ms.date: 08/17/2018
 ms.topic: conceptual
 ms.service: microsoft-intune
+ms.subservice: enrollment
 ms.localizationpriority: high
 ms.technology: ''
 ms.assetid: 9691982c-1a03-4ac1-b7c5-73087be8c5f2
@@ -17,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 3f041c76b4d9b3814a020d51ad4cbb8e33df6c27
-ms.sourcegitcommit: 60ed93682a21860e9d99ba1592ede120477f2b4d
+ms.openlocfilehash: 5d70496a87f923b61cacb3da250e5f22ce5c7817
+ms.sourcegitcommit: aeb76032de216e5feb94559aeaf36c0357f1247d
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/16/2019
-ms.locfileid: "72379806"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72587946"
 ---
 # <a name="set-enrollment-restrictions"></a>Definir restrições de registro
 
@@ -30,7 +31,9 @@ ms.locfileid: "72379806"
 
 Como Administrador do Intune, é possível criar e gerenciar as restrições de registro que definem quais dispositivos podem ser registrados no gerenciamento com o Intune, incluindo:
 - Quantidade de dispositivos.
-- Sistemas operacionais e versões. É possível criar várias restrições e aplicá-las aos diferentes grupos de usuários. É possível definir a [ordem de prioridade](#change-enrollment-restriction-priority) para as diferentes restrições.
+- Versões e sistemas operacionais.
+
+É possível criar várias restrições e aplicá-las aos diferentes grupos de usuários. É possível definir a [ordem de prioridade](#change-enrollment-restriction-priority) para as diferentes restrições.
 
 >[!NOTE]
 >Restrições de registro não são um recurso de segurança. Dispositivos comprometidos podem falsificar a identidade. Tais restrições são uma barreira de melhor esforço para usuários que não são mal-intencionados.
@@ -69,8 +72,17 @@ As restrições padrão são fornecidas automaticamente para as restrições de 
     - O administrador do dispositivo Android e o perfil de trabalho do Android Enterprise dão suporte a major.minor.rev.build.
     - O iOS é compatível com o major.minor.rev. As versões do sistema operacional não se aplicam a dispositivos Apple registrados por meio do Programa de Registro de Dispositivos, do Apple School Manager ou do aplicativo do Apple Configurator.
     - O Windows é compatível com major.minor.build.rev somente para Windows 10.
-    > [!Note]
-    > O Windows 10 não fornece o número de rev durante o registro. Portanto, para a instância, se você inserir 10.0.17134.100 e o dispositivo for 10.0.17134.174, ele será bloqueado durante o registro.
+    
+    > [!IMPORTANT]
+    > As plataformas de administrador de dispositivo Android Enterprise (perfil de trabalho) e Android têm o seguinte comportamento:
+    > - Se as duas plataformas tiverem permissão para o mesmo grupo, os usuários serão registrados em um perfil de trabalho se o dispositivo der suporte a isso; caso contrário, eles serão registrados como DA. 
+    > - Se as duas plataformas tiverem permissão para o grupo e forem refinadas para versões específicas e sem sobreposição, os usuários receberão o fluxo de registro definido para sua versão do sistema operacional. 
+    > - Se as duas plataformas tiverem permissão, mas forem bloqueadas para as mesmas versões, os usuários nos dispositivos com as versões bloqueadas serão retirados do fluxo de registro do administrador do dispositivo Android, serão bloqueados do registro e deverão sair. 
+    >
+    > Vale a pena observar que nem o perfil de trabalho nem o registro do administrador do dispositivo funcionarão, a menos que os pré-requisitos apropriados tenham sido concluídos no Registro do Android. 
+    
+   > [!Note]
+   > O Windows 10 não fornece o número de rev durante o registro. Portanto, para a instância, se você inserir 10.0.17134.100 e o dispositivo for 10.0.17134.174, ele será bloqueado durante o registro.
 
 8. Em **Propriedade pessoal**, escolha **Permitir** para as plataformas que você deseja permitir como dispositivos de propriedade pessoal.
 9. Escolha **Avançar** para ir até a página **Atribuições**.

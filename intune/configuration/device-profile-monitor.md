@@ -5,34 +5,35 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 06/25/2018
+ms.date: 10/21/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
+ms.subservice: configuration
 ms.localizationpriority: high
 ms.technology: ''
 ms.assetid: 9deaed87-fb4b-4689-ba88-067bc61686d7
-ms.reviewer: heenamac
+ms.reviewer: karthib
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: fd87b33d36d17f32945eb591307eb55241173ca9
-ms.sourcegitcommit: 88b6e6d70f5fa15708e640f6e20b97a442ef07c5
+ms.openlocfilehash: a1c68421bf7c5dea0d93d45e0cbb748204d0f66b
+ms.sourcegitcommit: c2e62f1ebdf75599c8e544287123c602f0f15f2b
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/02/2019
-ms.locfileid: "71724068"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72749390"
 ---
 # <a name="monitor-device-profiles-in-microsoft-intune"></a>Monitorar perfis de dispositivo no Microsoft Intune
 
 [!INCLUDE [azure_portal](../includes/azure_portal.md)]
 
-O Intune inclui alguns recursos no portal do Azure para ajudar a monitorar e gerenciar seus perfis de configuração do dispositivo. Por exemplo, você pode verificar o status de um perfil, ver quais dispositivos estão atribuídos e atualizar as propriedades de um perfil.
+O Intune inclui alguns recursos para ajudar a monitorar e gerenciar seus perfis de configuração do dispositivo. Por exemplo, você pode verificar o status de um perfil, ver quais dispositivos estão atribuídos e atualizar as propriedades de um perfil.
 
 ## <a name="view-existing-profiles"></a>Exibir os perfis existentes
 
 1. Conecte-se ao [Intune](https://go.microsoft.com/fwlink/?linkid=2090973).
-3. Selecione **Configuração do dispositivo** > **Perfis**.
+2. Selecione **Configuração do dispositivo** > **Perfis**.
 
 Todos os perfis existentes são listados, incluem detalhes, como a plataforma, e mostram se o perfil está atribuído a todos os dispositivos.
 
@@ -43,13 +44,13 @@ Depois de criar o perfil do seu dispositivo, o Intune fornece gráficos. Esses g
 1. Selecione um perfil existente. Por exemplo, selecione um perfil do macOS.
 2. Selecione a guia **Visão geral**.
 
-    O gráfico superior mostra o número de dispositivos atribuídos ao perfil de dispositivo específico. Por exemplo, se o perfil do dispositivo de configuração se aplicar a dispositivos macOS, o gráfico listará a contagem de dispositivos macOS.
+    O gráfico superior mostra o número de dispositivos atribuídos ao perfil de dispositivo. Por exemplo, se o perfil do dispositivo de configuração se aplicar a dispositivos macOS, o gráfico listará a contagem de dispositivos macOS.
 
     Ele também mostra o número de dispositivos para outras plataformas que recebem o mesmo perfil de dispositivo. Por exemplo, ele mostra a contagem de dispositivos não macOS.
 
     ![Exibir o número de dispositivos atribuídos ao perfil de dispositivo](./media/device-profile-monitor/device-configuration-profile-graphical-chart.png)
 
-    O gráfico inferior mostra o número de usuários atribuídos ao perfil de dispositivo específico. Por exemplo, se o perfil do dispositivo de configuração se aplicar a usuários do macOS, o gráfico listará a contagem dos usuários macOS.
+    O gráfico inferior mostra o número de usuários atribuídos ao perfil de dispositivo. Por exemplo, se o perfil do dispositivo de configuração se aplicar a usuários do macOS, o gráfico listará a contagem dos usuários macOS.
 
 3. Selecione o círculo no gráfico superior. **Status do dispositivo** é aberto.
 
@@ -72,7 +73,7 @@ Depois de criar o perfil do seu dispositivo, o Intune fornece gráficos. Esses g
 
 ## <a name="view-conflicts"></a>Exibir conflitos
 
-Em **Dispositivos** > **Todos os dispositivos**, você pode ver todas as configurações que estão causando conflitos. Quando houver um conflito, também serão mostrados todos os perfis de configuração que contêm essa configuração. Os administradores podem usar esse recurso para ajudar a solucionar problemas e a corrigir as discrepâncias em relação aos perfis.
+Em **Dispositivos** > **Todos os dispositivos**, você pode ver todas as configurações que estão causando conflitos. Quando houver um conflito, você também verá todos os perfis de configuração que contêm essa configuração. Os administradores podem usar esse recurso para ajudar a solucionar problemas e a corrigir as discrepâncias em relação aos perfis.
 
 1. No Intune, selecione **Dispositivos** > **Todos os Dispositivos** > selecione um dispositivo existente na lista. O usuário final pode obter o nome do dispositivo no aplicativo Portal da Empresa.
 2. Selecione **Configuração do dispositivo**. São listadas todas as políticas de configuração que se aplicam ao dispositivo.
@@ -80,6 +81,34 @@ Em **Dispositivos** > **Todos os dispositivos**, você pode ver todas as configu
 
 Agora que você sabe qual é a configuração em conflito e quais são as políticas que incluem essa configuração, será mais fácil resolver o conflito. 
 
+## <a name="device-firmware-configuration-interface-profile-reporting"></a>Relatórios de perfil da Interface de Configuração do Firmware do Dispositivo
+
+> [!WARNING]
+> O monitoramento de perfis da DFCI está sendo criado no momento. Enquanto a DFCI está em versão prévia pública, os dados de monitoramento podem estar ausentes ou incompletos.
+
+Os perfis da DFCI são relatados por configuração, assim como outros perfis de configuração de dispositivo. Dependendo do suporte do fabricante para a DFCI, algumas configurações poderão não se aplicar.
+
+Com as configurações de perfil da DFCI, você pode ver os seguintes estados:
+
+- **Em conformidade**: esse estado mostra quando um valor de configuração no perfil corresponde à configuração no dispositivo. Esse estado pode ocorrer nos seguintes cenários:
+
+  - O perfil da DFCI configurou com êxito a configuração no perfil.
+  - O dispositivo não tem o recurso de hardware controlado pela configuração e a configuração do perfil está **Desabilitada**.
+  - A UEFI não permite que a DFCI desabilite o recurso e a configuração do perfil está **Habilitada**.
+  - O dispositivo não tem o hardware para desabilitar o recurso e a configuração do perfil está **Habilitada**.
+
+- **Não Aplicável**: esse estado mostra quando um valor de configuração no perfil está **Habilitada**, e a configuração correspondente no dispositivo não foi encontrada. Esse estado poderá acontecer se o hardware do dispositivo não tiver o recurso.
+
+- **Fora de conformidade**: esse estado mostra quando um valor de configuração no perfil não corresponde à configuração no dispositivo. Esse estado pode ocorrer nos seguintes cenários:
+
+  - A UEFI não permite que a DFCI desabilite uma configuração e a configuração do perfil está **Desabilitada**.
+  - O dispositivo não tem o hardware para desabilitar o recurso e a configuração do perfil está **Desabilitada**.
+  - O dispositivo não tem a versão mais recente do firmware da DFCI.
+  - A DFCI foi desabilitada antes de ser registrada no Intune usando um controle "recusar" local no menu da UEFI.
+  - O dispositivo foi registrado no Intune fora do registro do Autopilot.
+  - O dispositivo não foi registrado no Autopilot por um CSP da Microsoft ou foi registrado diretamente pelo OEM.
+
 ## <a name="next-steps"></a>Próximas etapas
-[Atribuir perfis de usuário e dispositivo](../device-profile-assign.md)  
-[Problemas comuns e resoluções com perfis de dispositivo](device-profile-troubleshoot.md)
+
+[Perguntas, problemas e resoluções comuns com perfis de dispositivo](device-profile-troubleshoot.md)  
+[Solucionar problemas de políticas e de perfis e no Intune](troubleshoot-policies-in-microsoft-intune.md)

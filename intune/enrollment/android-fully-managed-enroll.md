@@ -9,6 +9,7 @@ manager: dougeby
 ms.date: 1/15/2018
 ms.topic: conceptual
 ms.service: microsoft-intune
+ms.subservice: enrollment
 ms.localizationpriority: high
 ms.technology: ''
 ms.assetid: ''
@@ -17,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 2abf391ddbdb1f7087cd06ed1865b3da8b155178
-ms.sourcegitcommit: 88b6e6d70f5fa15708e640f6e20b97a442ef07c5
+ms.openlocfilehash: 755aefb955c2d30652434f2bd2e91981145fc56f
+ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/02/2019
-ms.locfileid: "71723574"
+ms.lasthandoff: 10/16/2019
+ms.locfileid: "72505601"
 ---
 # <a name="set-up-intune-enrollment-of-android-enterprise-fully-managed-devices"></a>Configurar registro do Intune dos dispositivos Android Enterprise totalmente gerenciados 
 
@@ -61,7 +62,7 @@ Para configurar o gerenciamento de dispositivo Android Enterprise totalmente ger
 > [!NOTE]
 > Se você tiver uma política de Acesso Condicional do Azure AD definida que usa o controle *exigir que um dispositivo seja marcado como em conformidade* e se aplica a **Todos os aplicativos de nuvem**, **Android** e **Navegadores**, você deverá excluir o aplicativo de nuvem do **Microsoft Intune** dessa política. Isso ocorre porque os processos de configuração do Android usam uma guia do Chrome para autenticar os usuários durante o registro. Para obter mais informações, confira [Documentação do Acesso Condicional do Azure AD](https://docs.microsoft.com/azure/active-directory/conditional-access/).
 
-Quando essa configuração é definida como **Sim**, ela fornece um token de registro (uma cadeia de caracteres aleatória) e um código QR para seu locatário do Intune. Esse token de registro único é válido para todos os usuários e não expirará. Dependendo do sistema operacional Android e da versão do dispositivo, é possível usar o token ou o código QR para registrar o dispositivo de quiosque.
+Quando essa configuração é definida como **Sim**, ela fornece um token de registro (uma cadeia de caracteres aleatória) e um código QR para seu locatário do Intune. Esse token de registro único é válido para todos os usuários e não expirará. Dependendo do sistema operacional Android e da versão do dispositivo, você pode usar o token ou o código QR para registrar o dispositivo.
 
 ## <a name="enroll-the-fully-managed-devices"></a>Registrar os dispositivos totalmente gerenciados
 Agora você pode [registrar seus dispositivos totalmente gerenciados](android-dedicated-devices-fully-managed-enroll.md).

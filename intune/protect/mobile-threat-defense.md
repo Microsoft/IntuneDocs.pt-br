@@ -6,9 +6,10 @@ keywords: ''
 author: brenduns
 ms.author: brenduns
 manager: dougeby
-ms.date: 06/21/2019
+ms.date: 10/17/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
+ms.subservice: protect
 ms.localizationpriority: high
 ms.technology: ''
 ms.assetid: ac77b590-a7ec-45a0-9516-ebf5243b6210
@@ -17,18 +18,20 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 97efe5c2445263bba11ee083e89d36fde1986dc1
-ms.sourcegitcommit: 88b6e6d70f5fa15708e640f6e20b97a442ef07c5
+ms.openlocfilehash: 4abc35b625b9aa072e38c02d2fc4160faa916fb3
+ms.sourcegitcommit: 06a1fe83fd95c9773c011690e8520733e1c031e3
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/02/2019
-ms.locfileid: "71727864"
+ms.lasthandoff: 10/23/2019
+ms.locfileid: "72785752"
 ---
 # <a name="what-is-mobile-threat-defense-integration-with-intune"></a>O que é a integração da Defesa contra Ameaças Móveis com o Intune?
-O Intune pode integrar dados de um fornecedor de Defesa contra Ameaças Móveis como uma fonte de informações para políticas de conformidade e regras de acesso condicional. É possível usar essas informações para ajudar a proteger recursos corporativos como Exchange e SharePoint bloqueando o acesso de dispositivos móveis comprometidos.  
+O Intune pode integrar dados de um fornecedor de Defesa contra Ameaças Móveis como uma fonte de informações para políticas de conformidade do dispositivo e regras de acesso condicional do dispositivo. É possível usar essas informações para ajudar a proteger recursos corporativos como Exchange e SharePoint bloqueando o acesso de dispositivos móveis comprometidos.
+
+O Intune pode usar esses mesmos dados como uma fonte para dispositivos não registrados usando as políticas de proteção de aplicativo do Intune. Dessa forma, os administradores podem usar essas informações para ajudar a proteger dados corporativos em um [aplicativo protegido pelo Microsoft Intune](~/apps/apps-supported-intune-apps.md) e emitir um apagamento em bloco ou seletivo.
 
 ## <a name="what-problem-does-this-solve"></a>Que problema isso resolve?
-A integração de informações de um fornecedor de Defesa Contra Ameaças Móveis pode ajudar a proteger seus recursos corporativos contra ameaças que afetam as plataformas móveis.  
+A integração de informações de um fornecedor de Defesa contra Ameaças Móveis pode ajudar você a proteger seus recursos corporativos contra ameaças que afetam as plataformas móveis.  
 
 Normalmente, as empresas são proativas para proteger computadores contra vulnerabilidades e ataques, enquanto os dispositivos móveis geralmente ficam sem monitoramento e proteção. Quando as plataformas móveis tiverem proteção interna, como isolamento do aplicativo e lojas de aplicativos de consumidor verificadas, elas permanecerão vulneráveis a ataques sofisticados. À medida que mais funcionários usam dispositivos para trabalhar e para acessar informações confidenciais, as informações do fornecedor de Defesa contra Ameaças Móveis poderão ajudar a proteger dispositivos e recursos contra ataques cada vez mais sofisticados.  
 
@@ -42,7 +45,7 @@ Por exemplo: Um aplicativo de Defesa contra Ameaças Móveis conectado informa a
 
 Se estiver habilitado, o Intune coletará informações de inventário de aplicativo de dispositivos pessoais e corporativos e as disponibilizará para que os provedores MTD (Defesa contra Ameaças Móveis) efetuem fetch, como o Lookout for Work. É possível coletar um inventário de aplicativo dos usuários de dispositivos iOS.
 
-Esse serviço é uma aceitação; nenhuma informação de inventário de aplicativo é compartilhada por padrão. Um administrador do Intune precisa habilitar a Sincronização de Aplicativos para dispositivos iOS nas configurações do serviço antes de as informações de inventário de aplicativo serem compartilhadas.
+Esse serviço é uma aceitação; nenhuma informação de inventário de aplicativo é compartilhada por padrão. Um administrador do Intune precisa habilitar a **Sincronização de Aplicativos para dispositivos iOS** nas configurações do conector de Defesa contra Ameaças Móveis antes de as informações de inventário do aplicativo serem compartilhadas.
 
 **Inventário de aplicativos**  
 Se você habilitar a Sincronização do Aplicativo para dispositivos iOS, os inventários de dispositivos iOS pessoais e corporativos serão enviados para o provedor de serviços MTD. Os dados de inventário de aplicativos incluem:
@@ -56,7 +59,7 @@ Se você habilitar a Sincronização do Aplicativo para dispositivos iOS, os inv
 - Indica se o aplicativo é validado ou não
 - Indica se o aplicativo é gerenciado ou não
 
-## <a name="sample-scenarios"></a>Cenários de exemplo
+## <a name="sample-scenarios-for-enrolled-devices-using-device-compliance-policies"></a>Cenários de exemplo para dispositivos registrados usando políticas de conformidade do dispositivo
 
 Quando um dispositivo é considerado infectado pela solução de Defesa Contra Ameaças Móveis:
 
@@ -66,14 +69,22 @@ O acesso é concedido quando o dispositivo é corrigido:
 
 ![Imagem mostrando um acesso concedido da Defesa contra Ameaças Móveis](./media/mobile-threat-defense/MTD-image-2.png)
 
+## <a name="sample-scenarios-for-unenrolled-devices-using-intune-app-protection-policies"></a>Cenários de exemplo para dispositivos não registrados usando políticas de proteção de aplicativo do Intune
+
+Quando um dispositivo é considerado infectado pela solução de Defesa Contra Ameaças Móveis:<br>
+![Imagem mostrando um dispositivo infectado da Defesa contra Ameaças Móveis](./media/mobile-threat-defense/MTD-image-3.png)
+
+O acesso é concedido quando o dispositivo é corrigido:<br>
+![Imagem mostrando um acesso concedido da Defesa contra Ameaças Móveis](./media/mobile-threat-defense/MTD-image-4.png)
+
 > [!NOTE] 
-> O uso de vários fornecedores de Defesa contra ameaças de móveis com o Intune não tem suporte. Ter diversas ferramentas de MTD habilitadas fará com que todos os aplicativos MTD sejam instalados e verifiquem os dispositivos em busca de ameaças.
+> O uso de vários fornecedores de Defesa contra ameaças de móveis com o Intune não tem suporte. Ter diversos conectores de MTD habilitados fará com que todos os aplicativos com MTD sejam instalados e examinem os dispositivos em busca de ameaças.
 
 ## <a name="mobile-threat-defense-partners"></a>Parceiros de Defesa Contra Ameaças Móveis
 
 Saiba como proteger o acesso a recursos da empresa com base em riscos de dispositivo, rede e aplicativo com:
 
-- [Lookout](lookout-mobile-threat-defense-connector.md)
+- [Lookout for Work](lookout-mobile-threat-defense-connector.md)
 - [Symantec Endpoint Protection Mobile](skycure-mobile-threat-defense-connector.md)
 - [Check Point SandBlast Mobile](checkpoint-sandblast-mobile-mobile-threat-defense-connector.md)
 - [Zimperium](zimperium-mobile-threat-defense-connector.md)

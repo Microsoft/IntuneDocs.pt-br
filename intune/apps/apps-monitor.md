@@ -6,9 +6,10 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 07/22/2019
+ms.date: 10/10/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
+ms.subservice: apps
 ms.localizationpriority: high
 ms.technology: ''
 ms.assetid: 64e5133d-1e23-4ee6-b556-f5d32c0e95da
@@ -17,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 03c38472a3100ec2d717e802e07e189a53ac0866
-ms.sourcegitcommit: 88b6e6d70f5fa15708e640f6e20b97a442ef07c5
+ms.openlocfilehash: ee22ee435830137a423423aa692376aabbb6cecb
+ms.sourcegitcommit: 0be25b59c8e386f972a855712fc6ec3deccede86
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/02/2019
-ms.locfileid: "71725004"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72585410"
 ---
 # <a name="monitor-app-information-and-assignments-with-microsoft-intune"></a>Monitorar atribuições e informações de aplicativo com o Microsoft Intune
 
@@ -37,6 +38,8 @@ O Intune fornece várias maneiras de monitorar as propriedades dos aplicativos q
 
 > [!NOTE]
 > Os aplicativos da Android Store implantados como **Disponíveis** não relatam o próprio status de instalação.
+>
+> Para aplicativos do Google Play Gerenciado implantados em dispositivos de perfil de trabalho do Android Enterprise, você pode exibir o status e o número de versão do aplicativo instalado em um dispositivo usando o Intune. 
 
 ## <a name="app-overview-pane"></a>Painel de visão geral do aplicativo
 
@@ -64,7 +67,7 @@ Os gráficos mostram o número de aplicativos para o seguinte status:
 | **Não aplicável**           | O número de aplicativos para os quais o status não é aplicável.            |
 
 > [!NOTE]
-> Lembre-se de que os aplicativos de linha de negócios no Android (.APK), implantados como **Disponível com ou sem registro**, relatam apenas o status de instalação do aplicativo para dispositivos registrados. O status de instalação do aplicativo não está disponível para dispositivos que não estão registrados no Intune.
+> Lembre-se de que os aplicativos Android (.APK) de linha de negócios implantados como **Disponível com ou sem registro** relatam apenas o status de instalação do aplicativo para dispositivos registrados. O status de instalação do aplicativo não está disponível para dispositivos que não estão registrados no Intune.
 
 ### <a name="device-install-status"></a>Status de instalação do dispositivo
 
@@ -75,7 +78,7 @@ Uma lista de status do dispositivo é exibida quando você seleciona **Status de
 | **Nome do dispositivo**      | Nome do dispositivo em plataformas que permitem nomear um dispositivo. Em outras plataformas, o Intune cria um nome de outras propriedades. Esse atributo não está disponível para nenhum outro dispositivo.                                                                       |
 | **Nome de usuário**        | O nome do usuário.                                                                                                                                                                                                                                      |
 | **Plataforma**         | O sistema operacional do dispositivo (Windows, iOS, Android etc.).                                                                                                                                                                                           |
-| **Versão**          | O número de versão do aplicativo. O número completo da versão do aplicativo é exibido para aplicativos de linha de negócios e da Microsoft Store para Empresas. O número de versão completo identifica uma versão específica do aplicativo. O número é exibido como _Versão_(_Build_). Por exemplo, 2.2(2.2.17560800). No caso de aplicativos padrão da Microsoft Store, não exibimos nenhuma versão. |
+| **Versão**          | O número de versão do aplicativo. Para aplicativos de linha de negócios e da Microsoft Store para Empresas, é exibido o número completo da versão do aplicativo. O número de versão completo identifica uma versão específica do aplicativo. O número é exibido como _Versão_(_Build_). Por exemplo, 2.2(2.2.17560800). Para aplicativos padrão da Loja, nenhuma versão é exibida. |
 | **Status**           | O status do aplicativo.                                                                                                                                                                                                                                     |
 | **Detalhes do status**   | Os detalhes do status.                                                                                                                                                                                                                                     |
 | **Último check-in**    | A data da última sincronização do dispositivo com o Intune.                                                                                                                                                                                                                  |

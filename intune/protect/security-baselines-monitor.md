@@ -8,6 +8,7 @@ manager: dougeby
 ms.date: 06/20/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
+ms.subservice: protect
 ms.localizationpriority: high
 ms.technology: ''
 ms.assetid: ''
@@ -15,12 +16,12 @@ ms.reviewer: joglocke
 ms.suite: ems
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: b16b4ee95647b3bb182af075bbe7f7aad71351f0
-ms.sourcegitcommit: 88b6e6d70f5fa15708e640f6e20b97a442ef07c5
+ms.openlocfilehash: 9c4d47a11f07a2099d79f5ce4ce90795a087718b
+ms.sourcegitcommit: 1a5b185acd27954b10b6d59409d82eb80fd71284
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/02/2019
-ms.locfileid: "71726798"
+ms.lasthandoff: 10/21/2019
+ms.locfileid: "72681470"
 ---
 # <a name="monitor-security-baseline-and-profiles-in-microsoft-intune"></a>Monitorar perfis e linha de base de segurança no Microsoft Intune  
 
@@ -59,7 +60,7 @@ Por exemplo, se um dispositivo tiver uma configuração classificada como *confi
 É possível clicar no gráfico para detalhar e exibir uma lista de dispositivos com vários status. Em seguida, é possível selecionar dispositivos individuais nessa lista para exibir detalhes sobre dispositivos individuais. Por exemplo:
 - Selecione **Configuração do dispositivo** > selecione o perfil com um estado de erro:
 
-  ![Verificar o status dos dispositivos](./media/security-baselines-monitor/device-configuration-profile-list.png)
+  ![Exibir o status de um perfil](./media/security-baselines-monitor/device-configuration-profile-list.png)
 
 - Selecione o perfil de Erro. Uma lista com todas as configurações no perfil e seus estados é exibida. Agora, você pode rolar a tela para encontrar a configuração que está causando o erro:
 

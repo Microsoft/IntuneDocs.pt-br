@@ -2,12 +2,13 @@
 title: Criar políticas de conformidade do dispositivo no Microsoft Intune – Azure | Microsoft Docs
 description: Criar políticas de conformidade do dispositivo, visão geral do status e dos níveis de gravidade, usar o status de InGracePeriod, trabalhar com Acesso Condicional, lidar com dispositivos sem uma política atribuída e as diferenças de conformidade no Portal do Azure e no portal clássico no Microsoft Intune
 keywords: ''
-author: MandiOhlinger
-ms.author: mandia
+author: brenduns
+ms.author: brenduns
 manager: dougeby
-ms.date: 10/09/2019
+ms.date: 10/21/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
+ms.subservice: protect
 ms.localizationpriority: high
 ms.technology: ''
 ms.reviewer: samyada
@@ -15,16 +16,14 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 0ec8003264c28ea40d53731c8fb8c3eddef7fded
-ms.sourcegitcommit: dd6755383ba89824d1cc128698a65fde6bb2de55
+ms.openlocfilehash: 76998c32f09b20e624359cc8a38231e14a70399b
+ms.sourcegitcommit: 06a1fe83fd95c9773c011690e8520733e1c031e3
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/14/2019
-ms.locfileid: "72306586"
+ms.lasthandoff: 10/23/2019
+ms.locfileid: "72786071"
 ---
 # <a name="create-a-compliance-policy-in-microsoft-intune"></a>Criar uma política de conformidade no Microsoft Intune
-
-[!INCLUDE [azure_portal](../includes/azure_portal.md)]
 
 As políticas de conformidade do dispositivo são um recurso importante ao usar o Intune para proteger recursos da sua organização. No Intune, você pode criar regras e configurações que dispositivos precisam cumprir para serem considerados em conformidade, como uma verão mínima do sistema operacional. Se o dispositivo não está em conformidade, é possível bloquear o acesso aos dados e recursos usando o [Acesso Condicional](conditional-access.md).
 
@@ -48,10 +47,10 @@ Para usar as políticas de conformidade do dispositivo, não deixe de:
 
 - Usar uma plataforma compatível:
 
-  - Android
+  - Administrador do dispositivo Android
   - Android Enterprise
   - iOS
-  - macOS (versão prévia)
+  - macOS
   - Windows 10
   - Windows 8.1
   - Windows Phone 8.1
@@ -72,26 +71,40 @@ Para usar as políticas de conformidade do dispositivo, não deixe de:
 
 3. Selecione **Políticas** > **Criar Política**. Insira as seguintes propriedades:
 
-    - **Nome**: Insira um nome descritivo para a política. Nomeie suas políticas para que você possa identificá-las facilmente mais tarde. Por exemplo, um bom nome de política seria **Marcar dispositivos do iOS com jailbreak como fora de conformidade**.
-    - **Descrição**: Insira uma descrição para a política. Essa configuração é opcional, mas recomendada.
-    - **Plataforma**: Escolha a plataforma dos dispositivos. Suas opções:  
+   - **Nome**: Insira um nome descritivo para a política. Nomeie suas políticas para que você possa identificá-las facilmente mais tarde. Por exemplo, um bom nome de política seria **Marcar dispositivos do iOS com jailbreak como fora de conformidade**.  
 
-       - **Android**
-       - **Android Enterprise**
-       - **iOS**
-       - **macOS**
-       - **Windows Phone 8.1**
-       - **Windows 8.1 e posterior**
-       - **Windows 10 e posterior**
+   - **Descrição**: Insira uma descrição para a política. Essa configuração é opcional, mas recomendada.  
 
-    - **Configurações**: Os artigos a seguir listam e descrevem as configurações de cada plataforma:
+   - **Plataforma**: Escolha a plataforma dos dispositivos. Suas opções:
+     - **Administrador do dispositivo Android**
+     - **Android Enterprise**
+     - **iOS/iPadOS**
+     - **macOS**
+     - **Windows Phone 8.1**
+     - **Windows 8.1 e posterior**
+     - **Windows 10 e posterior**
 
-        - [Android](compliance-policy-create-android.md)
-        - [Android Enterprise](compliance-policy-create-android-for-work.md)
-        - [iOS](compliance-policy-create-ios.md)
-        - [macOS](compliance-policy-create-mac-os.md)
-        - [Windows Phone 8.1, Windows 8.1 e posteriores](compliance-policy-create-windows-8-1.md)
-        - [Windows 10 e posterior](compliance-policy-create-windows.md)
+     Para o *Android Enterprise*, você precisa selecionar um **Tipo de perfil**:
+     - **Proprietário do dispositivo**
+     - **Perfil de trabalho**
+
+   - **Configurações**: Os artigos a seguir listam e descrevem as configurações de cada plataforma:
+     - [Administrador do dispositivo Android](compliance-policy-create-android.md)
+     - [Android Enterprise](compliance-policy-create-android-for-work.md)
+     - [iOS/iPadOS](compliance-policy-create-ios.md)
+     - [macOS](compliance-policy-create-mac-os.md)
+     - [Windows Phone 8.1, Windows 8.1 e posteriores](compliance-policy-create-windows-8-1.md)
+     - [Windows 10 e posterior](compliance-policy-create-windows.md)  
+
+   - **Locais** *(Administrador do dispositivo Android)* : Em sua política, você pode forçar conformidade pela localização do dispositivo. Escolha entre os locais existentes. Ainda não tem um local? [Usar locais (limite de rede)](use-network-locations.md) no Intune fornece alguma orientação.  
+
+   - **Ações para não compatibilidade**: Para dispositivos que não atendem às suas políticas de conformidade, é possível adicionar uma sequência de ações a serem aplicadas automaticamente. Você pode alterar a agenda quando o dispositivo está marcado como não em conformidade, como após um dia. Você também pode configurar uma segunda ação que envia um email para o usuário quando o dispositivo não está em conformidade.
+    
+     [Adicionar ações a dispositivos que não estão em conformidade](actions-for-noncompliance.md) apresenta mais informações, incluindo como criar um email de notificação para seus usuários.
+
+     Por exemplo, você está usando o recurso Locais e adiciona uma localização em uma política de conformidade. A ação padrão para não conformidade se aplica quando você seleciona pelo menos uma localização. Se o dispositivo não estiver conectado a locais selecionados, imediatamente será considerado que ele não está em conformidade. Você pode dar aos usuários um período de cortesia, como um dia.
+
+   - **Escopo (Marcas)** : As marcas de escopo são uma ótima maneira de atribuir e filtrar políticas para grupos específicos, como Vendas, RH, todos os funcionários de determinado local geográfico e assim por diante. Após adicionar as configurações, você também pode adicionar uma marca de escopo às políticas de conformidade. [Usar marcas de escopo para filtrar políticas](../fundamentals/scope-tags.md) é um recurso útil.
 
 4. Quando terminar, selecione **OK** > **Criar** para salvar as alterações. A política é criada e exibida na lista. Em seguida, atribua a política a grupos.
 
@@ -114,17 +127,18 @@ Ao atribuir a política, também é possível **Avaliar** quantos usuários são
 
 Se o botão **Avaliar** estiver desabilitado, verifique se a política foi atribuída a um ou mais grupos.
 
-## <a name="actions-for-noncompliance"></a>Ações de não conformidade
+<!-- ## Actions for noncompliance
 
-Para dispositivos que não atendem às suas políticas de conformidade, é possível adicionar uma sequência de ações a serem aplicadas automaticamente. Você pode alterar a agenda quando o dispositivo está marcado como não em conformidade, como após um dia. Você também pode configurar uma segunda ação que envia um email para o usuário quando o dispositivo não está em conformidade.
+For devices that don't meet your compliance policies, you can add a sequence of actions to apply automatically. You can change the schedule when the device is marked non-compliant, such as after one day. You can also configure a second action that sends an email to the user when the device isn't compliant.
 
-[Adicionar ações a dispositivos que não estão em conformidade](actions-for-noncompliance.md) apresenta mais informações, incluindo como criar um email de notificação para seus usuários.
+[Add actions for noncompliant devices](actions-for-noncompliance.md) provides more information, including creating a notification email to your users.
 
-Por exemplo, você está usando o recurso Locais e adiciona uma localização em uma política de conformidade. A ação padrão para não conformidade se aplica quando você seleciona pelo menos uma localização. Se o dispositivo não estiver conectado a locais selecionados, imediatamente será considerado que ele não está em conformidade. Você pode dar aos usuários um período de cortesia, como um dia.
+For example, you're using the Locations feature, and add a location in a compliance policy. The default action for noncompliance applies when you select at least one location. If the device isn't connected to the selected locations, it's immediately considered not compliant. You can give your users a grace period, such as one day.
 
-## <a name="scope-tags"></a>Marcas de escopo
+## Scope tags
 
-As marcas de escopo são uma ótima maneira de atribuir e filtrar políticas para grupos específicos, como Vendas, RH, todos os funcionários de determinado local geográfico e assim por diante. Após adicionar as configurações, você também pode adicionar uma marca de escopo às políticas de conformidade. [Usar marcas de escopo para filtrar políticas](../fundamentals/scope-tags.md) é um recurso útil.
+Scope tags are a great way to assign and filter policies to specific groups, such as Sales, HR, All US-NC employees, and so on. After you add the settings, you can also add a scope tag to your compliance policies. [Use scope tags to filter policies](../fundamentals/scope-tags.md) is a good resource.
+-->
 
 ## <a name="refresh-cycle-times"></a>Tempos de ciclo de atualização
 

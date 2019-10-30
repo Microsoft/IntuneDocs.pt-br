@@ -1,6 +1,6 @@
 ---
 title: Renomear um dispositivo com o Microsoft Intune – Azure | Microsoft Docs
-description: Renomeie um dispositivo por meio do Microsoft Intune.
+description: Renomeie um dispositivo usando o Microsoft Intune.
 keywords: ''
 author: ErikjeMS
 ms.author: erikje
@@ -8,6 +8,7 @@ manager: dougeby
 ms.date: 07/05/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
+ms.subservice: remote-actions
 ms.localizationpriority: high
 ms.technology: ''
 ms.assetid: ''
@@ -15,21 +16,18 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 35fae5ea1b3294772db4f4db51179892e08ed5d1
-ms.sourcegitcommit: 88b6e6d70f5fa15708e640f6e20b97a442ef07c5
+ms.openlocfilehash: c1c02248b3208073a3bb09cafe69cf0473eacb2b
+ms.sourcegitcommit: 0be25b59c8e386f972a855712fc6ec3deccede86
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/02/2019
-ms.locfileid: "71728501"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72584530"
 ---
 # <a name="rename-a-device-in-intune"></a>Renomear um dispositivo no Intune
 
+A ação **Renomear dispositivo** possibilita renomear um dispositivo registrado no Intune. O nome do dispositivo é alterado no Intune e no dispositivo.
 
-[!INCLUDE [azure_portal](../includes/azure_portal.md)]
-
-A ação **Renomear dispositivo** permite renomear um dispositivo registrado no Intune. O nome do dispositivo é alterado no Intune e no dispositivo.
-
-Você pode renomear os seguintes tipos de dispositivos:
+É possível renomear os seguintes tipos de dispositivos:
 - Windows de propriedade corporativa 
 - iOS supervisionado
 - MacOS 10 de propriedade corporativa
@@ -44,6 +42,15 @@ No momento, esse recurso não dá suporte à renomeação de dispositivos Window
 5. Se você quiser reiniciar o dispositivo após renomeá-lo, escolha **Sim** ao lado de **Reinicializar após a renomeação**.
 6. Escolha **Renomear**.
 
+## <a name="windows-device-rename-rules"></a>Regras de renomeação de dispositivo Windows
+Ao renomear um dispositivo Windows, o novo nome deve seguir estas regras:
+- 15 caracteres ou menos (deve ser menor ou igual a 63 bytes, não incluindo NULL à direita)
+- Não nulo ou uma cadeia de caracteres vazia
+- ASCII permitidos: Letras (a-z, A-Z), números (0-9) e hifens
+- Unicode permitidos: caracteres >= 0x80, deve ser UTF8 válido, deve ser mapeável para IDN (ou seja, RtlIdnToNameprepUnicode é bem-sucedido; confira RFC 3492)
+- Os nomes não devem conter apenas números
+- Sem espaços no nome
+- Caracteres não permitidos: { | } ~ [ \ ] ^ ' : ; < = > ? & @ ! " # $ % ` ( ) + / , . _ *)
 
 
 ## <a name="next-steps"></a>Próximas etapas

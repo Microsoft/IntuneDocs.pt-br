@@ -9,6 +9,7 @@ manager: dougeby
 ms.date: 08/19/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
+ms.subservice: apps
 ms.localizationpriority: high
 ms.technology: ''
 ms.assetid: 3fb2f050-ec94-42ab-be05-c3d4101148bb
@@ -17,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 8ec1af80d52a8331c2bef136cd0947b81beaa3ea
-ms.sourcegitcommit: 88b6e6d70f5fa15708e640f6e20b97a442ef07c5
+ms.openlocfilehash: 3ee68392feaa59ef5207edce75250e539407273b
+ms.sourcegitcommit: 8c25aeefb7cbc6444a8596af22fccd1c5426877a
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/02/2019
-ms.locfileid: "71724770"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72593684"
 ---
 # <a name="manage-web-access-by-using-microsoft-edge-with-microsoft-intune"></a>Gerenciar o acesso via Web usando o Microsoft Edge com o Microsoft Intune
 
@@ -204,7 +205,7 @@ Para facilidade de acesso, você pode configurar os indicadores que gostaria que
 
 Aqui estão alguns detalhes:
 
-- Esses indicadores serão exibidos para os usuários apenas quando eles estiverem usando o modo corporativo do Microsoft Edge. 
+- Esses indicadores serão exibidos para os usuários apenas quando eles estiverem usando o [modo corporativo](https://docs.microsoft.com/intune/apps/app-configuration-managed-browser#how-to-configure-bookmarks-for-a-protected-browser) do Microsoft Edge. 
 - Esses indicadores não podem ser excluídos ou modificados pelos usuários.
 - Eles são exibidos na parte superior da lista. Todos os indicadores que os usuários criar serão exibidos abaixo desses indicadores.
 - Se você tiver habilitado o redirecionamento do proxy de aplicativo, poderá adicionar aplicativos Web do proxy de aplicativo usando sua URL interna ou externa.

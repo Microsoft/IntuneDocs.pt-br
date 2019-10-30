@@ -5,23 +5,24 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 09/04/2019
+ms.date: 10/21/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
+ms.subservice: configuration
 ms.localizationpriority: high
 ms.technology: ''
 ms.assetid: ''
-ms.reviewer: ''
+ms.reviewer: karthib
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure; get-started
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 3afdb365d0ed88a58028287cc7010bb334e9001e
-ms.sourcegitcommit: fca2670142c083d7562c0a36547a6a451863e315
+ms.openlocfilehash: 7c49445800f5d34fbb6ce0a845d4f29c3e587483
+ms.sourcegitcommit: c2e62f1ebdf75599c8e544287123c602f0f15f2b
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/08/2019
-ms.locfileid: "72036454"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72749351"
 ---
 # <a name="apply-features-and-settings-on-your-devices-using-device-profiles-in-microsoft-intune"></a>Aplicar recursos e configurações aos seus dispositivos usando perfis de dispositivo no Microsoft Intune
 
@@ -48,7 +49,7 @@ Esses modelos oferecem aos administradores uma exibição simplificada das confi
 
 Esse recurso é compatível com:
 
-- Windows 10 e posterior
+- Windows 10 1809 e posterior em firmware com suporte.
 
 ## <a name="certificates"></a>Certificados
 
@@ -66,7 +67,7 @@ Esse recurso é compatível com:
 
 ## <a name="custom-profile"></a>Perfil personalizado
 
-As [Configurações personalizadas](../custom-settings-configure.md) permitem que os administradores atribuam configurações de dispositivo que não são nativas do Intune. Em dispositivos Android, você pode inserir valores de OMA-URI. Para dispositivos iOS, você pode importar um arquivo de configuração criado com o Apple Configurator.
+As [Configurações personalizadas](custom-settings-configure.md) permitem que os administradores atribuam configurações de dispositivo que não são nativas do Intune. Em dispositivos Android, você pode inserir valores de OMA-URI. Para dispositivos iOS, você pode importar um arquivo de configuração criado com o Apple Configurator.
 
 Esse recurso é compatível com:
 
@@ -78,7 +79,7 @@ Esse recurso é compatível com:
 
 ## <a name="delivery-optimization"></a>Otimização de entrega
 
-[Otimização de entrega](../delivery-optimization-windows.md) melhora a experiência de entrega de atualizações de software. Essas configurações estão substituindo as configurações **Atualizações de Software** > **Anel de Atualização do Windows 10**.
+[Otimização de entrega](delivery-optimization-windows.md) melhora a experiência de entrega de atualizações de software. Essas configurações estão substituindo as configurações **Atualizações de Software** > **Anel de Atualização do Windows 10**.
 
 Use essas configurações para controlar como as atualizações de software são baixadas nos dispositivos em sua organização. Por exemplo, é possível deixar os usuários obterem suas próprias atualizações, ou obterem as atualizações usando os serviços de nuvem de otimização de entrega em um perfil de dispositivo.
 
@@ -88,12 +89,20 @@ Esse recurso é compatível com:
 
 ## <a name="device-features"></a>Recursos de dispositivo
 
-Os [recursos de dispositivo](../device-features-configure.md) controlam recursos em dispositivos iOS e macOS, como o AirPrint, notificações e mensagens da tela de bloqueio.
+Os [recursos de dispositivo](device-features-configure.md) controlam recursos em dispositivos iOS e macOS, como o AirPrint, notificações e mensagens da tela de bloqueio.
 
 Esse recurso é compatível com:
 
 - iOS/iPadOS
 - macOS
+
+## <a name="device-firmware-configuration-interface"></a>Interface de configuração do firmware do dispositivo
+
+[A DFCI (Interface de configuração do firmware do dispositivo)](device-firmware-configuration-interface-windows.md) permite que os administradores habilitem ou desabilitem as configurações da UEFI (BIOS) usando o Intune. Use essas configurações para aprimorar a segurança no nível do firmware, que normalmente é mais resiliente a ataques mal-intencionados.
+
+Esse recurso é compatível com:
+
+- Windows 10 e posterior
 
 ## <a name="device-restrictions"></a>Restrições de dispositivo
 
@@ -210,9 +219,9 @@ Esse recurso é compatível com:
 
 ## <a name="update-policies"></a>Políticas de atualização
 
-As [Políticas de atualização do iOS](../software-updates-ios.md) mostram como criar e atribuir políticas do iOS para instalar atualizações de software em seus dispositivos iOS. Você também pode examinar o status da instalação.
+As [Políticas de atualização do iOS](../protect/software-updates-ios.md) mostram como criar e atribuir políticas do iOS para instalar atualizações de software em seus dispositivos iOS. Você também pode examinar o status da instalação.
 
-Para ver as políticas de atualização em dispositivos Windows, confira [Otimização de Entrega](../delivery-optimization-windows.md). 
+Para ver as políticas de atualização em dispositivos Windows, confira [Otimização de Entrega](delivery-optimization-windows.md). 
 
 Esse recurso é compatível com:
 
@@ -265,7 +274,7 @@ Esse recurso é compatível com:
 
 ## <a name="manage-and-troubleshoot"></a>Gerenciar e solucionar problemas
 
-[Gerencie os perfis](../device-profile-monitor.md) para verificar o status dos dispositivos e os perfis atribuídos. Também ajude a resolver conflitos verificando as configurações que causam os conflitos e os perfis que incluem essas configurações. [Problemas comuns e resoluções](device-profile-troubleshoot.md) ajuda os administradores a trabalhar com perfis. Ele descreve o que acontece ao excluir um perfil, o que causa o envio das notificações para dispositivos e muito mais.
+[Gerencie os perfis](device-profile-monitor.md) para verificar o status dos dispositivos e os perfis atribuídos. Também ajude a resolver conflitos verificando as configurações que causam os conflitos e os perfis que incluem essas configurações. [Problemas comuns e resoluções](device-profile-troubleshoot.md) ajuda os administradores a trabalhar com perfis. Ele descreve o que acontece ao excluir um perfil, o que causa o envio das notificações para dispositivos e muito mais.
 
 ## <a name="next-steps"></a>Próximas etapas
 

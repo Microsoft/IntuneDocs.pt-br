@@ -5,10 +5,10 @@ keywords: ''
 author: brenduns
 ms.author: brenduns
 manager: dougeby
-ms.date: 09/19/2019
-ms.topic: article
-ms.prod: ''
+ms.date: 10/18/2019
+ms.topic: conceptual
 ms.service: microsoft-intune
+ms.subservice: protect
 ms.localizationpriority: high
 ms.technology: ''
 ms.reviewer: lacranda
@@ -16,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 8e6b9f7d6aeda219af0f0cf3d0f5c34a3f03d258
-ms.sourcegitcommit: 88b6e6d70f5fa15708e640f6e20b97a442ef07c5
+ms.openlocfilehash: 4e28db0d24101ae65ff8c5e49febd0ff5dddc6e2
+ms.sourcegitcommit: 0be25b59c8e386f972a855712fc6ec3deccede86
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/02/2019
-ms.locfileid: "71722885"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72585428"
 ---
 # <a name="create-and-assign-scep-certificate-profiles-in-intune"></a>Criar e atribuir perfis de Certificado SCEP no Intune
 
@@ -50,7 +50,7 @@ Depois de [configurar a infraestrutura](certificates-scep-configure.md) para dar
 
    2. Em Monitoramento, o relatório de certificado não está disponível para perfis de certificado SCEP do Proprietário do Dispositivo.
    
-   3. A revogação de certificados provisionados pelos perfis de certificado SCEP para o Proprietário do Dispositivo não tem suporte no Intune, mas pode ser gerenciada por meio de um processo externo ou diretamente com a autoridade de certificação.
+   3. Você não pode usar o Intune para revogar certificados que foram provisionados por perfis de certificado SCEP para Proprietários de Dispositivo. Você pode gerenciar a revogação por meio de um processo externo ou diretamente com a autoridade de certificação. 
 
 6. Selecione **Configurações** e, em seguida, conclua as seguintes configurações:
 
@@ -113,15 +113,13 @@ Depois de [configurar a infraestrutura](certificates-scep-configure.md) para dar
         - **{{DeviceName}}**
         - **{{FullyQualifiedDomainName}}** *(Aplicável somente aos dispositivos Windows e ingressados no domínio)*
         - **{{MEID}}**
-        
+
         Especifique essas variáveis, seguidas pelo texto da variável, na caixa de texto. Por exemplo, o nome comum para um dispositivo chamado *Device1* pode ser adicionado como **CN={{DeviceName}}Device1**.
 
         > [!IMPORTANT]  
         > - Ao especificar uma variável, coloque o nome da variável entre chaves { }, como mostrado no exemplo, para evitar um erro.  
         > - As propriedades do dispositivo usadas na *entidade* ou no *SAN* de um certificado de dispositivo, como **IMEI**, **SerialNumber** e **FullyQualifiedDomainName**, são propriedades que podem ser falsificadas por uma pessoa com acesso ao dispositivo.
         > - Um dispositivo precisa dar suporte a todas as variáveis especificadas em um perfil de certificado para que esse perfil seja instalado nesse dispositivo.  Por exemplo, se **{{IMEI}}** for usado no nome da entidade de um perfil SCEP e for atribuído a um dispositivo que não tenha um número IMEI, o perfil não será instalado.  
- 
-
 
    - **Nome alternativo da entidade**:  
      Selecione como o Intune cria automaticamente o SAN (nome alternativo da entidade) na solicitação de certificado. As opções para o SAN dependem do Tipo de certificado selecionado, **Usuário** ou **Dispositivo**.  
@@ -189,7 +187,7 @@ Depois de [configurar a infraestrutura](certificates-scep-configure.md) para dar
    - **Algoritmo de hash**:  
      *(Aplica-se ao Android, Android Enterprise, Windows Phone 8.1, Windows 8.1 e posterior e Windows 10 e posterior)*  
 
-     Selecione um dos tipos de algoritmo de hash disponíveis para uso com esse certificado. Selecione o mais alto nível de segurança aos quais os dispositivos de conexão oferecem suporte.
+     Selecione um dos tipos de algoritmo de hash disponíveis para uso com esse certificado. Selecione o nível mais alto de segurança que dá suporte aos dispositivos de conexão.
 
    - **Certificado Raiz**:  
      Selecione o *perfil de certificado confiável* configurado anteriormente e atribuído aos usuários e dispositivos aplicáveis nesse perfil de Certificado SCEP. O perfil de certificado confiável é usado para provisionar usuários e dispositivos com o Certificado de Autoridade de Certificação raiz confiável. Para obter informações sobre o perfil de certificado confiável, confira [Exportar o Certificado de Autoridade de Certificação raiz confiável](certificates-configure.md#export-the-trusted-root-ca-certificate) e [Criar perfis de certificado confiável](certificates-configure.md#create-trusted-certificate-profiles) em *Usar certificados para autenticação no Intune*. Se você tiver uma autoridade de certificação raiz e uma autoridade de certificação emissora, selecione o perfil de certificado raiz confiável associado à autoridade de certificação emissora.
@@ -198,15 +196,15 @@ Depois de [configurar a infraestrutura](certificates-scep-configure.md) para dar
      Adicione valores para a finalidade desejada do certificado. Na maioria dos casos, o certificado exige a *autenticação de cliente*, de modo que o usuário ou o dispositivo possa se autenticar em um servidor. Adicione mais usos de chave, conforme necessário.
 
    - **Limite de renovação (%)** :  
-     Insira o percentual do tempo de vida restante do certificado antes da renovação das solicitações de dispositivo do certificado. Por exemplo, se você inserir 20, haverá uma tentativa de renovação do certificado quando o certificado estiver 80% expirado e ela continuará até que a renovação seja bem-sucedida. A renovação gera um novo certificado, o que resulta em um novo par de chaves pública/privada.
+     Insira o percentual do tempo de vida restante do certificado antes da renovação das solicitações de dispositivo do certificado. Por exemplo, se você inserir 20, haverá uma tentativa de renovação do certificado quando o certificado estiver 80% expirado. As tentativas de renovação continuarão até que a renovação seja bem-sucedida. A renovação gera um novo certificado, o que resulta em um novo par de chaves pública/privada.
 
    - **URLs de servidor SCEP**:  
-     Insira uma ou mais URLs para os servidores NDES que emitem certificados por meio do protocolo SCEP. Por exemplo, insira algo como *https://ndes.contoso.com/certsrv/mscep/mscep.dll* . Adicione outras URLs do SCEP para balanceamento de carga, conforme necessário, pois as URLs são enviadas por push aleatoriamente para o dispositivo com o perfil. Se um dos servidores do SCEP não estiver disponível, a solicitação do SCEP falhará e será possível que, nos próximos check-ins do dispositivo, a solicitação de certificado seja feita no mesmo servidor que está inativo.
+     Insira uma ou mais URLs para os servidores NDES que emitem certificados por meio do protocolo SCEP. Por exemplo, insira algo como *https://ndes.contoso.com/certsrv/mscep/mscep.dll* . Adicione outras URLs do SCEP para balanceamento de carga, conforme necessário, pois as URLs são enviadas por push aleatoriamente para o dispositivo com o perfil. Se um dos servidores do SCEP não estiver disponível, a solicitação do SCEP falhará e será possível que, em futuros check-ins do dispositivo, a solicitação de certificado seja feita no mesmo servidor que está inativo.
 
 7. Selecione **OK** e, em seguida, **Criar**. O perfil é criado e exibido na lista *Configuração de dispositivo – Perfis*.
 
 ### <a name="avoid-certificate-signing-requests-with-escaped-special-characters"></a>Evitar solicitações de assinatura de certificado com caracteres especiais de escape
-Há um problema conhecido em solicitações de certificado SCEP que incluem um CN (nome da entidade) com um ou mais dos caracteres especiais a seguir como um caractere de escape. Os nomes de entidades que incluem um dos caracteres especiais como um caractere de escape resultam em um CSR com um nome de entidade incorreto que, por sua vez, leva a uma falha na validação do desafio do SCEP do Intune e faz com que nenhum certificado seja emitido.  
+Há um problema conhecido em solicitações de certificado SCEP e PKCS que incluem um Nome de Entidade (CN) com um ou mais dos caracteres especiais a seguir como um caractere de escape. Os nomes de entidades que incluem um dos caracteres especiais como um caractere de escape resultam em um CSR com um nome de entidade incorreto. Um nome de entidade incorreto resulta em falha na validação do desafio SCEP do Intune e na não emissão do certificado.
 
 Os caracteres especiais são:
 - \+
