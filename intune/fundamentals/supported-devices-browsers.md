@@ -6,7 +6,7 @@ keywords: ''
 author: ErikjeMS
 ms.author: erikje
 manager: dougeby
-ms.date: 07/29/2019
+ms.date: 10/25/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.subservice: fundamentals
@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: b9fec08511303c15a7197014fd80834d95948191
-ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
+ms.openlocfilehash: 2bd9fe52bcaa6295d452ade59d6c3c32e1e81a67
+ms.sourcegitcommit: 4bf23327af734a9811d555fbd566c31239e2acd6
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/16/2019
-ms.locfileid: "72504875"
+ms.lasthandoff: 10/29/2019
+ms.locfileid: "72999673"
 ---
 # <a name="supported-operating-systems-and-browsers-in-intune"></a>Navegadores e sistemas operacionais compatíveis no Intune
 
@@ -89,6 +89,15 @@ Os modelos de dispositivo Samsung na lista a seguir não dão suporte ao KNOX. E
 ### <a name="windows-pc-software-client"></a>Cliente de software de computadores Windows
 
 Um [cliente de software do Intune](../manage-windows-pcs-with-microsoft-intune.md) pode ser implantado e instalado em computadores Windows como um método alternativo de registro. Essa funcionalidade só está disponível no Portal Clássico do Intune. É possível usar o cliente de software do Intune para gerenciar computadores Windows 7 e posterior, com exceção do Windows 10 Home Edition.
+
+> [!Note]
+> A Microsoft anunciou que o suporte ao Windows 7 termina no dia 14 de janeiro de 2020. Nessa data, o Intune também desativa o suporte para dispositivos que executam o Windows 7.
+
+> Para obter mais informações, confira [Plano de alteração do Intune: proximidade do fim do suporte para o Windows 7](https://docs.microsoft.com/en-us/intune/fundamentals/whats-new#intune-plan-for-change-nearing-end-of-support-for-windows-7)
+
+> O Microsoft Intune desativará o suporte para o console do Intune baseado no Silverlight em 15 de outubro de 2020. Essa desativação inclui o fim do suporte para o cliente de software do PC configurado pelo console do Silverlight (também conhecido como agente de PC)
+
+> Saiba mais em [Fim do suporte do Microsoft Intune para o console de administração baseado no Silverlight](https://techcommunity.microsoft.com/t5/Intune-Customer-Success/Take-Action-Microsoft-Intune-ending-support-for-the-Silverlight/ba-p/916249)
 
 <!--  ### Exchange ActiveSync management
 

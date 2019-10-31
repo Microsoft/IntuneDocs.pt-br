@@ -7,14 +7,28 @@ ms.topic: include
 ms.date: 03/28/2019
 ms.author: erikje
 ms.custom: include file
-ms.openlocfilehash: 9965c6e85173ea9958182be43b6c93d9578d534f
-ms.sourcegitcommit: c2e62f1ebdf75599c8e544287123c602f0f15f2b
+ms.openlocfilehash: a2675b1b601261e673923ab5e3ac41d0f3d83264
+ms.sourcegitcommit: 71b0cd7b81178e2f9e9f80830fa9a7985781628b
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72749361"
+ms.lasthandoff: 10/29/2019
+ms.locfileid: "73057311"
 ---
 Esses avisos fornecem informações importantes que podem ajudar você a se preparar para os recursos e as alterações futuras do Intune.
+
+### <a name="plan-for-change-the-server-side-logging-for-siri-commands-setting-will-be-removed-from-the-intune-console----5468501--"></a>Planejar mudanças: A configuração "Registro em log no lado do servidor para comandos da Siri" será removida do console do Intune <!-- 5468501-->
+
+Planejamos remover a configuração "Registro em log no lado do servidor para comandos da Siri" no console do Intune com a atualização de novembro do serviço do Intune. Essa alteração está alinhada com a Apple, que já removeu a configuração no lado deles.
+
+#### <a name="how-does-this-affect-me"></a>Como isso me afeta?
+Quando a atualização de novembro ou 1911 for implantada em meados de novembro, você verá no console do Intune que essa configuração foi removida do menu Restrições de dispositivo (aplicativos internos) para perfis de configuração do iOS. Ela pode aparecer em suas políticas e no perfil de gerenciamento do dispositivo de destino, mas a configuração não tem nenhum efeito no seu dispositivo. Não prevemos muito impacto na funcionalidade porque ela não funciona nos dispositivos atualmente, mesmo que você a veja no perfil de gerenciamento.
+
+Você pode escolher um dos caminhos:
+- Se quiser excluir essa configuração das suas políticas, acesse o perfil que tem essa configuração, faça uma pequena edição e salve a política. A política será recalculada no back-end, e a configuração será excluída da sua política.
+- Se você optar por não realizar essa ação, os usuários finais verão essa configuração no perfil de gerenciamento do dispositivo, mas a configuração não terá efeito.
+
+#### <a name="what-can-i-do-to-prepare-for-this-change"></a>O que posso fazer para me preparar para essa alteração?
+Você pode agir de acordo com a seção acima ou deixar sua política como está. Atualizaremos nossa página "O que há de novo" e a documentação quando essa alteração for distribuída.
 
 ### <a name="end-of-support-for-legacy-pc-management"></a>Fim do suporte ao gerenciamento de computador herdado
 
@@ -71,8 +85,8 @@ Você não precisa fazer nada, mas é possível atualizar as diretrizes para pro
 #### <a name="additional-information"></a>Informações adicionais 
 https://aka.ms/intune_fullscreen
 
-### <a name="plan-for-change-intune-app-sdk-and-app-protection-policies-for-android-moving-to-support-android-50-and-higher-in-october---4911065---"></a>Planejar mudanças: O SDK de Aplicativo do Intune as políticas de proteção de aplicativo para Android estão sendo migrados para oferecer suporte ao Android 5.0 e posterior em outubro <!--4911065 -->
-O Intune será migrado para oferecer suporte ao Android 5.x (Lollipop) e posterior em outubro. Atualize todos os aplicativos encapsulados com o SDK de Aplicativo do Intune mais recente e atualize seus dispositivos.
+### <a name="plan-for-change-intune-app-sdk-and-app-protection-policies-for-android-moving-to-support-android-50-and-higher-in-an-upcoming-release---4911065---"></a>Planejar mudanças: O SDK de Aplicativo do Intune e as políticas de proteção de aplicativo para Android estão sendo migrados para oferecer suporte ao Android 5.0 e posteriores em uma versão futura <!--4911065 -->
+O Intune será migrado para oferecer suporte ao Android 5.x (Lollipop) e posteriores em uma versão futura. Atualize todos os aplicativos encapsulados com o SDK de Aplicativo do Intune mais recente e atualize seus dispositivos.
 
 #### <a name="how-does-this-affect-me"></a>Como isso me afeta?
 Caso você não esteja usando nem planeje usar o SDK ou Aplicativo para Android, essa alteração não afetará você. Se você estiver usando o SDK de Aplicativo do Intune, atualize para a versão mais recente e atualize também seus dispositivos para o Android 5.x e posterior. Se você não fizer a atualização, os aplicativos não receberão atualizações e a qualidade da experiência diminuirá ao longo do tempo.
