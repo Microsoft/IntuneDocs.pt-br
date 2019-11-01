@@ -1396,7 +1396,7 @@ Para obter mais informações, veja [CSP de política – LocalPoliciesSecurityO
   **Padrão**: Sim
 
 - **Virtualizar falhas de gravação de arquivos e do Registro para locais por usuário**  
-  Essa configuração de política controla se falhas de gravação de aplicativo são redirecionadas para locais do sistema de arquivos e Registro definidos. Essa configuração de política mitiga aplicativos que são executados como administrador e gravam dados de aplicativo em tempo de execução em *%ProgramFiles%*, *%Windir%*, *%Windir%\system32* ou *HKLM\Software*.  
+  Essa configuração de política controla se falhas de gravação de aplicativo são redirecionadas para locais do sistema de arquivos e Registro definidos. Essa configuração de política mitiga aplicativos que são executados como administrador e gravam dados de aplicativo em tempo de execução em *%ProgramFiles%* , *%Windir%* , *%Windir%\system32* ou *HKLM\Software*.  
   [Saiba mais](https://go.microsoft.com/fwlink/?linkid=2067321)  
   
   **Padrão**: Sim
@@ -1526,7 +1526,7 @@ Para obter mais informações, veja [CSP de política – RemoteDesktopServices]
   **Padrão**: habilitado
   
 - **Bloquear o redirecionamento de unidade**  
-  Essa configuração de política especifica se o mapeamento de unidades de cliente deve ser impedido em uma sessão de Serviços de Área de Trabalho Remota (redirecionamento de unidade). Por padrão, um servidor Host da Sessão da Área de Trabalho Remota mapeia unidades do cliente de modo automático após a conexão. Unidades mapeadas aparecem na árvore de pasta da sessão no Computador ou no Gerenciador de Arquivos no formato *\<letra_da_unidade>* em *\<nome_do_computador>*. Você pode usar essa configuração de política para substituir esse comportamento. Se você habilitar essa configuração de política, o redirecionamento de unidade do cliente não será permitido em sessões de Serviços de Área de Trabalho Remota e o redirecionamento de cópia de arquivos da Área de Transferência não será permitido em computadores que executam o Windows Server 2003, o Windows 8 e o Windows XP. Se você desabilitar essa configuração de política, o redirecionamento de unidade do cliente sempre será permitido. Além disso, o redirecionamento de cópia de arquivo da Área de Transferência sempre será permitido se o redirecionamento de área de transferência for permitido. Se você não configurar essa política, o redirecionamento de unidade do cliente e o redirecionamento de cópia de arquivo da Área de Transferência não serão especificados no nível de Política de Grupo.  
+  Essa configuração de política especifica se o mapeamento de unidades de cliente deve ser impedido em uma sessão de Serviços de Área de Trabalho Remota (redirecionamento de unidade). Por padrão, um servidor Host da Sessão da Área de Trabalho Remota mapeia unidades do cliente de modo automático após a conexão. Unidades mapeadas aparecem na árvore de pasta da sessão no Computador ou no Gerenciador de Arquivos no formato *\<letra_da_unidade>* em *\<nome_do_computador>* . Você pode usar essa configuração de política para substituir esse comportamento. Se você habilitar essa configuração de política, o redirecionamento de unidade do cliente não será permitido em sessões de Serviços de Área de Trabalho Remota e o redirecionamento de cópia de arquivos da Área de Transferência não será permitido em computadores que executam o Windows Server 2003, o Windows 8 e o Windows XP. Se você desabilitar essa configuração de política, o redirecionamento de unidade do cliente sempre será permitido. Além disso, o redirecionamento de cópia de arquivo da Área de Transferência sempre será permitido se o redirecionamento de área de transferência for permitido. Se você não configurar essa política, o redirecionamento de unidade do cliente e o redirecionamento de cópia de arquivo da Área de Transferência não serão especificados no nível de Política de Grupo.  
   [Saiba mais](https://go.microsoft.com/fwlink/?linkid=2067197)  
   
   **Padrão**: habilitado
@@ -1575,7 +1575,7 @@ Para obter mais informações, veja [CSP de política – RemoteManagement](http
   
   **Padrão**: desabilitado
   
-- **Tráfego não criptografado de cliente **  
+- **Tráfego não criptografado de cliente**  
   Essa configuração de política permite gerenciar se o cliente de Gerenciamento Remoto do Windows (WinRM) envia e recebe mensagens não criptografadas pela rede. Se você habilitar essa configuração de política, o cliente WinRM enviará e receberá mensagens não criptografadas pela rede. Se você desabilitar ou não configurar essa política, o cliente WinRM enviará ou receberá somente mensagens criptografadas pela rede.  
   [Saiba mais](https://go.microsoft.com/fwlink/?linkid=2067304)  
   
