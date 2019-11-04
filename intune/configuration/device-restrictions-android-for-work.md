@@ -5,7 +5,7 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 10/24/2019
+ms.date: 10/30/2019
 ms.topic: reference
 ms.service: microsoft-intune
 ms.subservice: configuration
@@ -15,12 +15,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure, seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: ec6009096ac6ed39c8a217f8832661a575d83b78
-ms.sourcegitcommit: 4f979ba7030e72d820113fe23ac8521ddb2433bd
+ms.openlocfilehash: 14fa330b0c158d98c96e0d151f8a4ec7d0c95b97
+ms.sourcegitcommit: c38a856725993a4473ada75e669a57f75ab376f8
 ms.translationtype: MTE75
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/25/2019
-ms.locfileid: "72915711"
+ms.lasthandoff: 10/30/2019
+ms.locfileid: "73143032"
 ---
 # <a name="android-enterprise-device-settings-to-allow-or-restrict-features-using-intune"></a>Configurações do dispositivo do Android Enterprise para permitir ou restringir os recursos usando o Intune
 
@@ -36,13 +36,13 @@ Este artigo lista e descreve as diferentes configurações que você pode contro
 
 - **Captura de tela**: escolha **Bloquear** para impedir capturas de tela ou outras capturas no dispositivo. Ela também impede que o conteúdo seja exibido em dispositivos de vídeo que não tenham uma saída de vídeo segura. **Não configurado** permite que o usuário capture o conteúdo da tela como uma imagem.
 - **Câmera**: escolha **Bloquear** para impedir o acesso à câmera no dispositivo. **Não necessário** permite o acesso à câmera do dispositivo.
-- **Política de permissão padrão**: essa configuração define a política de permissão padrão para as solicitações de permissões do tempo de execução. Os valores possíveis incluem:
+- **Política de permissão padrão**: essa configuração define a política de permissão padrão para as solicitações de permissões do runtime. Os valores possíveis incluem:
   - **Padrão do dispositivo**: usar a configuração padrão do dispositivo.
   - **Solicitar**: é solicitado que o usuário aprove a permissão.
   - **Concessão automática**: as permissões são concedidas automaticamente.
   - **Negação automática**: as permissões serão negadas automaticamente.
 - **Alterações de data e hora**: escolha **Bloquear** para impedir que os usuários definam manualmente a data e a hora. **Não configurado** permite que os usuários definam a data e a hora do dispositivo.
-- **Alterações de volume**: escolha **Bloquear** para impedir que usuários alterem o volume do dispositivo. **Não configurado** permite o uso de configurações de volume no dispositivo.
+- **Alterações de volume**: o **bloco** impede que os usuários alterem o volume do dispositivo e também faz mudo do volume mestre. **Não configurado** permite o uso de configurações de volume no dispositivo.
 - **Redefinição de fábrica**: escolha **Bloquear** para impedir o uso da opção de redefinição de fábrica nas configurações do dispositivo. **Não configurado** permite o uso dessa configuração no dispositivo.
 - **Inicialização segura**: escolha **Bloquear** para impedir que os usuários reiniciem o dispositivo no modo de segurança. **Não configurado** permite que os usuários reiniciem o dispositivo no modo de segurança.
 - **Barra de status**: escolha **Bloquear** para impedir o acesso à barra de status, incluindo notificações e configurações rápidas. **Não configurado** permite aos usuários acesso à barra de status.

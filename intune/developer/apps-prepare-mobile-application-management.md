@@ -17,20 +17,19 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: c1750f789cfac98af998ebbd86b10a4e93a1772a
-ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
+ms.openlocfilehash: ba1ec201cdb7e44570b53ce831b4e5ae26504973
+ms.sourcegitcommit: 60f0ff6d2efbae0f2ce14b9a9f3f9267309e209b
 ms.translationtype: MTE75
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/16/2019
-ms.locfileid: "72490823"
+ms.lasthandoff: 11/01/2019
+ms.locfileid: "73413822"
 ---
 # <a name="prepare-line-of-business-apps-for-app-protection-policies"></a>Preparar aplicativos de linha de negócios para as políticas de proteção de aplicativos
-
-[!INCLUDE[both-portals](../../intune-classic/includes/note-for-both-portals.md)]
 
 Você pode habilitar seus aplicativos para usar políticas de proteção usando a Ferramenta de Encapsulamento de Aplicativos do Intune ou o SDK de Aplicativos do Intune. Use essas informações para saber mais sobre esses dois métodos e quando usá-los.
 
 ## <a name="intune-app-wrapping-tool"></a>Ferramenta de Encapsulamento de Aplicativo do Intune
+
 A Ferramenta de Encapsulamento de Aplicativo é usada principalmente para aplicativos **internos** de linha de negócios (LOB). A ferramenta é um aplicativo de linha de comando que cria um wrapper envolvendo o aplicativo, que permite que o aplicativo seja gerenciado por uma política de proteção de aplicativo do Intune. Ao proteger um aplicativo fornecido por um fornecedor de software independente (ISV), é importante esclarecer se o ISV ainda oferecerá suporte ao aplicativo encapsulado.
 
 O código-fonte para usar a ferramenta não é necessário, mas você precisa de credenciais de assinatura. Para obter mais informações sobre as credenciais de assinatura, consulte o [blog do Intune](https://blogs.technet.microsoft.com/enterprisemobility/2015/02/25/how-to-obtain-the-prerequisites-for-the-intune-app-wrapping-tool-for-ios/). Para acessar a documentação da Ferramenta de Disposição do Aplicativo, confira [Ferramenta de Disposição do Aplicativo do Android](app-wrapper-prepare-android.md) e [Ferramenta de Disposição do Aplicativo do iOS](app-wrapper-prepare-ios.md).
@@ -40,6 +39,7 @@ A Ferramenta de Disposição de Aplicativo **não** dá suporte a aplicativos da
 Para obter mais informações sobre a Ferramenta de Encapsulamento de Aplicativos para políticas de proteção de aplicativos em dispositivos que não estão registrados no Intune, consulte [Proteger aplicativos e dados de linha de negócios em dispositivos não registrados no Microsoft Intune](../apps/apps-add.md).
 
 ### <a name="reasons-to-use-the-app-wrapping-tool"></a>Motivos para usar a Ferramenta de Encapsulamento de Aplicativos
+
 * Seu aplicativo não tem recursos internos para proteção de dados
 * Seu aplicativo é simples
 * Seu aplicativo é implantado internamente
@@ -55,11 +55,13 @@ Para obter mais informações sobre a Ferramenta de Encapsulamento de Aplicativo
 |**Android**|Não – usar as [Associações do Xamarin do SDK de Aplicativo do Intune](app-sdk-xamarin.md).|Sim|
 
 ## <a name="intune-app-sdk"></a>SDK do Aplicativo do Intune
+
 O SDK do Aplicativo é projetado principalmente para clientes que têm aplicativos na App Store da Apple e/ou na Google Play Store e desejam gerenciar os aplicativos com o Intune. No entanto, qualquer aplicativo pode tirar proveito da integração do SDK, até mesmo aplicativos de linha de negócios.
 
 Para saber mais sobre o SDK, consulte a [Visão Geral](app-sdk.md). Para começar a usar o SDK, consulte [Getting Started With the Microsoft Intune App SDK](app-sdk-get-started.md) (Introdução ao SDK de Aplicativo do Microsoft Intune).
 
 ### <a name="reasons-to-use-the-sdk"></a>Motivos para usar o SDK
+
 * Seu aplicativo não tem recursos internos para proteção de dados
 * Seu aplicativo é complexo e contém muitas experiências
 * Seu aplicativo está implantado em uma loja de aplicativos pública, como Google Play ou App Store da Apple
@@ -74,10 +76,12 @@ Para saber mais sobre o SDK, consulte a [Visão Geral](app-sdk.md). Para começa
 |**iOS**|Sim – use [Associações do Xamarin do SDK de Aplicativo do Intune](app-sdk-xamarin.md).|Não|
 |**Android**| Sim – use [Associações do Xamarin do SDK de Aplicativo do Intune](app-sdk-xamarin.md).|Não|
 
-### <a name="not-using-an-app-development-platform-listed-above"></a>Não está usando uma plataforma de desenvolvimento de aplicativo listada acima? 
+### <a name="not-using-an-app-development-platform-listed-above"></a>Não está usando uma plataforma de desenvolvimento de aplicativo listada acima?
+
 A equipe de desenvolvimento do SDK do Intune testa ativamente e mantém o suporte para aplicativos criados com as plataformas nativas do Android, iOS (Obj-C, Swift), Xamarin, Xamarin.Forms e Cordova. Embora alguns clientes tiveram sucesso na integração do SDK do Intune com outras plataformas, como React Native e NativeScript, não fornecemos orientação explícita ou plug-ins para desenvolvedores de aplicativos que usem algo diferente de nossas plataformas que têm suporte. 
 
 ## <a name="feature-comparison"></a>Comparação de recursos
+
 Esta tabela lista as configurações que você pode usar para o SDK do Aplicativo e a Ferramenta de Encapsulamento de Aplicativo.
 
 > [!NOTE]
