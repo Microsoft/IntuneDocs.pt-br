@@ -6,7 +6,7 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 10/09/2019
+ms.date: 10/24/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.localizationpriority: high
@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: ''
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 492feb3f2ef5f5bbbc1537d4c60ac12d5fd6bdcd
-ms.sourcegitcommit: 0be25b59c8e386f972a855712fc6ec3deccede86
+ms.openlocfilehash: 22a957e6df2c7f9126cbe9f22c4f3a96213551d3
+ms.sourcegitcommit: f12bd2ce10b6241715bae2d2857f33c474287166
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/18/2019
-ms.locfileid: "72585599"
+ms.lasthandoff: 10/24/2019
+ms.locfileid: "72892569"
 ---
 # <a name="add-microsoft-edge-for-windows-10-to-microsoft-intune"></a>Adicionar Microsoft Edge para Windows 10 ao Microsoft Intune
 
@@ -79,7 +79,7 @@ Nesta etapa, configure as opções de instalação do aplicativo.
 
 ## <a name="select-scope-tags-optional"></a>Selecione as marcas de escopo (opcional)
 Você pode usar as marcas de escopo para determinar quem pode ver as informações do aplicativo cliente no Intune. Para obter todos os detalhes sobre marcas de escopo, confira Usar controle de acesso baseado em função e marcas de escopo para TI distribuída.
-1.  Selecione **Escopo (Marcas)** > **Adicionar**.
+1.  Selecione **Escopo (Marcas)**  > **Adicionar**.
 2.  Use a caixa **Selecionar** para procurar marcas de escopo.
 3.  Marque a caixa de seleção ao lado das marcas de escopo que você deseja atribuir a esse aplicativo.
 4.  Clique em **Selecionar** > **OK**.
@@ -94,7 +94,7 @@ O aplicativo que você criou é exibido na lista de aplicativos, na qual você p
 
 ## <a name="troubleshooting"></a>Solução de problemas
 **Microsoft Edge versão 77 e posteriores para Windows 10:**<br>
-O Intune usa a extensão de gerenciamento do Intune para baixar e implantar o instalador do Microsoft Edge em dispositivos Windows 10 atribuídos e comunica as configurações de implantação ao instalador do Microsoft Edge, que baixa e instala o navegador Microsoft Edge diretamente da CDN. Confira os [pré-requisitos da extensão de gerenciamento do Intune](~/apps/intune-management-extension.md#prerequisites) e as melhores práticas descritas ao acessar o Serviço de Atualização do Azure e a CDN para garantir que sua configuração de rede permita que dispositivos Windows 10 acessem esses locais.
+O Intune usa a extensão de gerenciamento do Intune para baixar e implantar o instalador do Microsoft Edge em dispositivos Windows 10 atribuídos e comunica as configurações de implantação ao instalador do Microsoft Edge, que baixa e instala o navegador Microsoft Edge diretamente da CDN. Confira os [pré-requisitos da extensão de gerenciamento do Intune](~/apps/intune-management-extension.md#prerequisites) e as melhores práticas descritas ao acessar o Serviço de Atualização do Azure e a CDN para garantir que sua configuração de rede permita que dispositivos Windows 10 acessem esses locais. Além disso, para permitir o acesso aos arquivos de instalação de uma CDN para instalar o navegador, você precisa permitir o acesso aos pontos de extremidade do Windows Update. Para obter mais informações, confira [Gerenciar pontos de extremidade de conexão do Windows 10, versão 1809 – Windows Update](https://docs.microsoft.com/windows/privacy/manage-windows-1809-endpoints#windows-update) e [Pontos de extremidade de rede para Microsoft Intune](~/fundamentals/intune-endpoints.md).
 
 ## <a name="next-steps"></a>Próximas etapas
 - [Atribuir aplicativos a grupos](~/apps/apps-deploy.md)

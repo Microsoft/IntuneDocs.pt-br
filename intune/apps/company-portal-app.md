@@ -6,7 +6,7 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 10/10/2019
+ms.date: 10/21/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.subservice: apps
@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: dd48eea5ee09562590844e11ac372480c892a7af
-ms.sourcegitcommit: 0be25b59c8e386f972a855712fc6ec3deccede86
+ms.openlocfilehash: 4fcec6c264a97d710e3061c289d6898297ef61be
+ms.sourcegitcommit: 4bf23327af734a9811d555fbd566c31239e2acd6
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/18/2019
-ms.locfileid: "72585004"
+ms.lasthandoff: 10/29/2019
+ms.locfileid: "72999535"
 ---
 # <a name="how-to-configure-the-microsoft-intune-company-portal-app"></a>Como configurar o aplicativo Portal da Empresa do Microsoft Intune
 
@@ -137,6 +137,10 @@ O Intune dá suporte às Credenciais Derivadas de PIV (Verificação de Identida
 
 Para obter mais informações sobre credenciais derivadas para dispositivos iOS, confira [Usar credenciais derivadas no Microsoft Intune](~/protect/derived-credentials.md).
 
+## <a name="dark-mode-for-ios-company-portal"></a>Modo escuro para Portal da Empresa no iOS
+
+O Modo escuro está disponível para o Portal da Empresa no iOS. Os usuários podem baixar aplicativos da empresa, gerenciar seus dispositivos e obter suporte de TI no esquema de cores de sua escolha, com base nas configurações do dispositivo. O Portal da Empresa para iOS corresponderá automaticamente às configurações do dispositivo do usuário final para o modo escuro ou claro. 
+
 ## <a name="windows-company-portal-keyboard-shortcuts"></a>Atalhos de teclado do Portal da Empresa do Windows
 
 Os usuários finais podem disparar ações de navegação, aplicativos e dispositivos no Portal da Empresa do Windows, usando atalhos de teclado (aceleradores).
@@ -180,25 +184,24 @@ Os usuários podem executar ações em seus dispositivos locais ou remotos por m
 
 Algumas plataformas e configurações não permitem ações de dispositivos de autoatendimento. Esta tabela abaixo fornece mais detalhes sobre as ações de autoatendimento:
 
-|  | Windows 10<sup>(3)</sup> | iOS/iPadOS<sup>(3)</sup> | MacOS<sup>(3)</sup><sup>(5)</sup> | Android<sup>(3)</sup> |
+|  | Windows 10<sup>(3)</sup> | iOS/iPadOS<sup>(3)</sup> | MacOS<sup>(3)</sup> | Android<sup>(3)</sup> |
 |----------------------|--------------------------|-------------------|-----------------------------------|-------------------------|
-| Desativar | Disponível<sup>(1)</sup> | Disponível <sup>(8)</sup> | Disponível | Disponível<sup>(7)</sup> |
-| Apagamento | Disponível | Disponível | NA | Disponível<sup>(7)</sup> |
-| Renomear<sup>(4)</sup> | Disponível | Disponível <sup>(8)</sup> | Disponível | Disponível |
+| Desativar | Disponível<sup>(1)</sup> | Disponível | Disponível | Disponível<sup>(7)</sup> |
+| Apagamento | Disponível | Disponível<sup>(5)</sup> | NA | Disponível<sup>(7)</sup> |
+| Renomear<sup>(4)</sup> | Disponível | Disponível | Disponível | Disponível |
 | Sincronização | Disponível | Disponível | Disponível | Disponível |
 | Bloqueio remoto | Apenas Windows Phone | Disponível | Disponível | Disponível |
-| Redefinir Senha | Apenas Windows Phone | Disponível | NA | Disponível<sup>(6)</sup> |
+| Redefinir Senha | Apenas Windows Phone | Disponível <sup>(8)</sup> | NA | Disponível<sup>(6)</sup> |
 | Recuperação de chave | NA | NA | Disponível<sup>(2)</sup> | NA |
-| Modo Escuro | NA | Disponível | NA | NA |
 
 <sup>(1)</sup> A ação **Desativar** está sempre bloqueada em dispositivos Windows ingressados no Azure AD.<br>
 <sup>(2)</sup> A **Recuperação de Chave** para MacOS está disponível somente pelo Portal da Web.<br>
 <sup>(3)</sup> Todas as ações remotas serão desabilitadas com o uso de um registro do Gerenciador de Registro do Dispositivo.<br>
-<sup>(4)</sup> A ação **Renomear** muda apenas o nome do dispositivo no site ou Aplicativo do Portal da Empresa, não no dispositivo.<br>
-<sup>(5)</sup> O **Apagamento Remoto** não está disponível em dispositivos MacOS.<br>
+<sup>(4)</sup> A ação **Renomear** muda apenas o nome do dispositivo no aplicativo do Portal da Empresa ou no Portal da Web, não no dispositivo.<br>
+<sup>(5)</sup> A ação **Apagar** não está disponível nos dispositivos iOS registrados do usuário.<br>
 <sup>(6)</sup> Não há suporte para a **Redefinição de Senha** em algumas configurações do Android e Android Enterprise. Para saber mais, confira [Redefinir ou remover uma senha de dispositivo no Intune](../remote-actions/device-passcode-reset.md).<br>
 <sup>(7)</sup> As ações **Desativar** e **Apagar** não estão disponíveis em cenários de Proprietário de Dispositivo Android Enterprise (COPE, COBO, COSU).<br> 
-<sup>(8)</sup> As ações **Desativar** (dispositivo remoto) e **Renomear** estão disponíveis para todos os tipos de registro. Não há suporte para outras ações no Registro de Usuário.<br> 
+<sup>(8)</sup> A ação **Redefinir Senha** não tem suporte nos dispositivos iOS registrados do usuário.
 
 ## <a name="next-steps"></a>Próximas etapas
 
