@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: d2a6b427552e545421e329b900833c889e67bf35
-ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
+ms.openlocfilehash: d69bd040929da08d7d23db764c5b01f6aca6a9ea
+ms.sourcegitcommit: c38a856725993a4473ada75e669a57f75ab376f8
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/16/2019
-ms.locfileid: "72503030"
+ms.lasthandoff: 10/30/2019
+ms.locfileid: "73143179"
 ---
 # <a name="set-up-an-enrollment-status-page"></a>Configurar uma Página de status de registro
  
@@ -191,7 +191,6 @@ Veja os problemas conhecidos abaixo.
 - Desabilitar o perfil ESP não removerá a política ESP de dispositivos e os usuários ainda terão o ESP ao fazer logon no dispositivo pela primeira vez. A política não é removida quando o perfil ESP é desabilitado. É preciso implantar o OMA-URI para desabilitar o ESP. Confira os pontos acima para obter instruções sobre como desabilitar o ESP usando o OMA-URI. 
 - Uma reinicialização pendente sempre causará um tempo limite. O tempo limite ocorre porque o dispositivo precisa ser reinicializado. A reinicialização é necessária para permitir que o item rastreado na Página de status de registro seja concluído. Uma reinicialização fará com que a Página de status de registro seja encerrada e o dispositivo não entrará durante a configuração da conta após a reinicialização.  Considere não exigir uma reinicialização com a instalação do aplicativo. 
 - Uma reinicialização durante a configuração do dispositivo forçará o usuário a inserir suas credenciais antes de fazer a transição para a fase de configuração da conta. As credenciais do usuário não são preservadas durante a reinicialização. Faça com que o usuário insira suas credenciais para que a Página de status de registro prossiga. 
-- Os certificados SCEP com as políticas do Windows Hello para Empresas ocasionarão o tempo limite, pois o usuário não pode concluir a configuração do PIN do Hello para permitir a concorrência da instalação do certificado SCEP.  não há uma solução alternativa. A previsão de correção é no segundo trimestre de 2019. 
 - A Página de status de registro sempre atingirá o tempo limite durante uma adição de registro de conta corporativa e de estudante em versões do Windows 10 inferiores à 1903. A Página de status de registro aguarda a conclusão do registro do Azure Active Directory. O problema foi corrigido no Windows 10 versão 1903 e mais recente.  
 - A implantação do Autopilot do Azure Active Directory híbrido com ESP demora mais do que a duração do tempo limite definida no perfil ESP. Em implantações do Autopilot do Azure AD híbrido, o ESP levará 40 minutos a mais do que o valor definido no perfil ESP. Esse atraso dá tempo para que o conector local do AD crie o novo registro de dispositivo para o Azure Active Directory. 
 - A página de logon do Windows não é preenchida previamente com o nome de usuário no Modo Controlado pelo Usuário do Autopilot. Se ocorre uma reinicialização durante a fase de configuração do dispositivo ESP:

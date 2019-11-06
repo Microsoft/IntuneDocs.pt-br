@@ -17,16 +17,14 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: apps; get-started
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 53425b56985cbafb4033b11df54597959c0b0d59
-ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
+ms.openlocfilehash: ef958468feb7e36f894537989675977e1d96bf8c
+ms.sourcegitcommit: 60f0ff6d2efbae0f2ce14b9a9f3f9267309e209b
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/16/2019
-ms.locfileid: "72499712"
+ms.lasthandoff: 11/01/2019
+ms.locfileid: "73414731"
 ---
 # <a name="overview-of-the-app-lifecycle-in-microsoft-intune"></a>Visão geral do ciclo de vida do aplicativo no Microsoft Intune
-
-[!INCLUDE [both-portals](../../intune-classic/includes/note-for-both-portals.md)]
 
 O ciclo de vida de aplicativo do Microsoft Intune começa quando um aplicativo é adicionado e passa por outras fases até ele ser removido. Ao compreender essas fases, você terá os detalhes necessários para iniciar o gerenciamento de aplicativos no Intune.
 
@@ -34,7 +32,7 @@ O ciclo de vida de aplicativo do Microsoft Intune começa quando um aplicativo �
 
 ## <a name="add"></a>Adicionar
 
-A primeira etapa na implantação do aplicativo é adicionar ao Intune os aplicativos que você deseja gerenciar e atribuir. Embora você possa trabalhar com vários tipos de aplicativos diferentes, os procedimentos básicos são os mesmos. Com o Intune, é possível adicionar tipos de aplicativos diferentes, incluindo aplicativos escritos internamente (linha de negócios), aplicativos da Store, aplicativos nativos e aplicativos na Web. Para obter mais informações sobre os tipos de aplicativos, consulte [Como adicionar um aplicativo ao Microsoft Intune](apps-add.md). 
+A primeira etapa na implantação do aplicativo é adicionar ao Intune os aplicativos que você deseja gerenciar e atribuir. Embora você possa trabalhar com vários tipos de aplicativos diferentes, os procedimentos básicos são os mesmos. Com o Intune, é possível adicionar tipos de aplicativos diferentes, incluindo aplicativos escritos internamente (linha de negócios), aplicativos da Store, aplicativos nativos e aplicativos na Web. Para obter mais informações sobre os tipos de aplicativos, consulte [Como adicionar um aplicativo ao Microsoft Intune](apps-add.md).
 
 ## <a name="deploy"></a>Implantar
 
@@ -43,12 +41,14 @@ Depois de adicionar o aplicativo ao Intune, será possível [atribuí-lo aos usu
 ## <a name="configure"></a>Configurar
 
 Como parte do ciclo de vida do aplicativo, são lançadas novas versões de aplicativos regularmente. O Intune fornece ferramentas para [atualizar aplicativos](apps-add.md) implantados para uma versão mais recente com facilidade. Além disso, é possível configurar funcionalidade extra em alguns aplicativos, por exemplo:
+
 - As [políticas de configuração de aplicativo iOS](app-configuration-policies-use-ios.md) fornecem configurações para aplicativos iOS compatíveis que são usadas quando o aplicativo é executado. Por exemplo, um aplicativo pode exigir configurações de identidade visual específicas ou o nome de um servidor com o qual ele precisa se conectar.
 - As [políticas de navegador gerenciado](app-configuration-managed-browser.md) ajudam a definir as configurações para o navegador gerenciado do Intune, que substitui o navegador padrão do dispositivo e permite restringir os sites que os usuários podem visitar.
 
 ## <a name="protect"></a>Proteger
 
 O Intune oferece várias maneiras para ajudar a proteger os dados em seus aplicativos. Os principais métodos são:
+
 - [Acesso condicional](../protect/conditional-access.md), que controla o acesso ao email e outros serviços com base nas condições que você especificar. As condições incluem tipos de dispositivo ou conformidade com uma [política de conformidade do dispositivo](../protect/device-compliance-get-started.md) implantada.
 - As [políticas de proteção de aplicativo](app-protection-policy.md) funcionam com aplicativos individuais para ajudar a proteger os dados da empresa usados por eles. Por exemplo, você pode restringir a cópia de dados entre os aplicativos gerenciados e não gerenciados, ou impedir que aplicativos sejam executados em dispositivos com jailbreak ou raiz.
 

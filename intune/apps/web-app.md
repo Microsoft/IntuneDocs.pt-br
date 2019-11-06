@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 6678b7c3519328623d9c0035c725af3877a36ba8
-ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
+ms.openlocfilehash: 6600c75ce3e6120143b17fb863670b2eb423a09f
+ms.sourcegitcommit: ae6f2e7812e7fd36f2393b8f4b6cd8de63777b2c
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/16/2019
-ms.locfileid: "72507064"
+ms.lasthandoff: 11/05/2019
+ms.locfileid: "73592049"
 ---
 # <a name="add-web-apps-to-microsoft-intune"></a>Adicionar aplicativos Web ao Microsoft Intune
 
@@ -36,7 +36,7 @@ Antes de gerenciar e atribuir um aplicativo para seus usuários, adicione-o ao I
 O Intune cria um atalho para o aplicativo Web no dispositivo do usuário. Em dispositivos iOS, um atalho para o aplicativo Web é adicionado à tela inicial. Em dispositivos Android, um atalho para o aplicativo Web é adicionado ao widget do portal da empresa do Intune, e o widget precisa ser fixado manualmente pelo usuário. Em dispositivos Windows, um atalho para o aplicativo Web é adicionado ao Menu Iniciar.
 
 > [!Note]
-> Não há suporte para aplicativos Web em dispositivos de perfil de trabalho Android. O dispositivo do usuário deve ter um navegador instalado para inicialização de aplicativos Web.
+> O dispositivo do usuário deve ter um navegador instalado para inicialização de aplicativos Web.
 
 ## <a name="add-a-web-app-to-intune"></a>Adicionar um aplicativo Web ao Intune
 Para adicionar um aplicativo ao Intune como atalho para um aplicativo na Web, faça o seguinte:

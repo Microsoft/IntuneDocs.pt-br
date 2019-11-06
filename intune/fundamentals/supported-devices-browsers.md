@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 2bd9fe52bcaa6295d452ade59d6c3c32e1e81a67
-ms.sourcegitcommit: 4bf23327af734a9811d555fbd566c31239e2acd6
+ms.openlocfilehash: 2b58cbd0aa07babd36c7a7e5aa3dcc5b8d32d58a
+ms.sourcegitcommit: 60f0ff6d2efbae0f2ce14b9a9f3f9267309e209b
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/29/2019
-ms.locfileid: "72999673"
+ms.lasthandoff: 11/01/2019
+ms.locfileid: "73415052"
 ---
 # <a name="supported-operating-systems-and-browsers-in-intune"></a>Navegadores e sistemas operacionais compatíveis no Intune
 
@@ -37,14 +37,14 @@ Para saber mais sobre o suporte à configuração do provedor de serviço, visit
 
 É possível gerenciar dispositivos que executam os seguintes sistemas operacionais:
 
-[!INCLUDE [mdm-supported-devices](../../intune-classic/includes/mdm-supported-devices.md)]
+[!INCLUDE [mdm-supported-devices](../includes/mdm-supported-devices.md)]
 
 ### <a name="supported-samsung-knox-standard-devices"></a>Dispositivos Samsung Knox Standard com suporte
 
 Para evitar erros de ativação do KNOX que impedem o registro do MDM, o aplicativo Portal da Empresa apenas tenta a ativação do Samsung KNOX durante o registro de MDM quando o dispositivo aparece na [lista de dispositivos KNOX com suporte](https://www.samsungknox.com/knox-supported-devices/knox-workspace). Dispositivos que não dão suporte à ativação de Samsung Knox são registrados como dispositivos Android padrão. Um dispositivo Samsung pode ter alguns números de modelo que oferecem suporte a Knox, enquanto outros não. Verifique a compatibilidade com KNOX com o revendedor do dispositivo antes de comprar e implantar dispositivos Samsung.
 
 > [!NOTE]
-> O registro de dispositivos Samsung Knox pode exigir a [habilitação de acesso a servidores da Samsung](https://support.samsungknox.com/hc/articles/115013833108-Our-corporate-devices-are-behind-a-firewall-How-do-I-enable-Knox-Workspace-devices-to-contact-Samsung-servers). 
+> O registro de dispositivos Samsung Knox pode exigir a [habilitação de acesso a servidores da Samsung](https://support.samsungknox.com/hc/articles/115013833108-Our-corporate-devices-are-behind-a-firewall-How-do-I-enable-Knox-Workspace-devices-to-contact-Samsung-servers).
 
 Os modelos de dispositivo Samsung na lista a seguir não dão suporte ao KNOX. Eles são registrados como dispositivos Android nativos pelo aplicativo Portal da Empresa para Android:
 
@@ -85,18 +85,17 @@ Os modelos de dispositivo Samsung na lista a seguir não dão suporte ao KNOX. E
 | Galaxy V Plus | SM-G318HZ |
 | Galaxy Young 2 Duos | SM-G130BU |
 
-
 ### <a name="windows-pc-software-client"></a>Cliente de software de computadores Windows
 
-Um [cliente de software do Intune](../manage-windows-pcs-with-microsoft-intune.md) pode ser implantado e instalado em computadores Windows como um método alternativo de registro. Essa funcionalidade só está disponível no Portal Clássico do Intune. É possível usar o cliente de software do Intune para gerenciar computadores Windows 7 e posterior, com exceção do Windows 10 Home Edition.
+Um [cliente de software do Intune](manage-windows-pcs-with-microsoft-intune.md) pode ser implantado e instalado em computadores Windows como um método alternativo de registro. Essa funcionalidade só está disponível no Portal Clássico do Intune. É possível usar o cliente de software do Intune para gerenciar computadores Windows 7 e posterior, com exceção do Windows 10 Home Edition.
 
 > [!Note]
 > A Microsoft anunciou que o suporte ao Windows 7 termina no dia 14 de janeiro de 2020. Nessa data, o Intune também desativa o suporte para dispositivos que executam o Windows 7.
-
-> Para obter mais informações, confira [Plano de alteração do Intune: proximidade do fim do suporte para o Windows 7](https://docs.microsoft.com/en-us/intune/fundamentals/whats-new#intune-plan-for-change-nearing-end-of-support-for-windows-7)
-
+>
+> Para obter mais informações, confira [Plano de alteração do Intune: proximidade do fim do suporte para o Windows 7](https://docs.microsoft.com/intune/fundamentals/whats-new#intune-plan-for-change-nearing-end-of-support-for-windows-7)
+>
 > O Microsoft Intune desativará o suporte para o console do Intune baseado no Silverlight em 15 de outubro de 2020. Essa desativação inclui o fim do suporte para o cliente de software do PC configurado pelo console do Silverlight (também conhecido como agente de PC)
-
+>
 > Saiba mais em [Fim do suporte do Microsoft Intune para o console de administração baseado no Silverlight](https://techcommunity.microsoft.com/t5/Intune-Customer-Success/Take-Action-Microsoft-Intune-ending-support-for-the-Silverlight/ba-p/916249)
 
 <!--  ### Exchange ActiveSync management
@@ -107,24 +106,23 @@ You can manage [Exchange ActiveSync devices](../enrollment/device-enrollment.md#
 
 Diferentes tarefas administrativas exigem o uso de um dos seguintes sites administrativos.
 
-- [Centro de administração do Microsoft 365](http://go.microsoft.com/fwlink/p/?LinkId=698854)
+- [Centro de administração do Microsoft 365](https://go.microsoft.com/fwlink/p/?LinkId=698854)
 - [Portal do Azure](https://portal.azure.com/)
 
 Há suporte para os seguintes navegadores nesses portais:
+
 - Microsoft Edge (última versão)
 - Microsoft Internet Explorer 11
 - Safari (última versão, somente Mac)
 - Chrome (última versão)
 - Firefox (última versão)
 
-
-
-
 ### <a name="intune-classic-portal"></a>Portal clássico do Intune
 
 O portal clássico do Intune é usado somente para gerenciar dispositivos registrados com o cliente de software de computador do Intune (https://manage.microsoft.com). O portal clássico do Intune requer suporte do navegador Silverlight.
 
 Os seguintes navegadores Silverlight dão suporte ao Portal Clássico do Intune:
+
 - Internet Explorer 10 ou posterior
 - Google Chrome (versões anteriores à versão 42)
 - Mozilla Firefox com o Silverlight habilitado (versões anteriores à versão 56)

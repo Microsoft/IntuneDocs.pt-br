@@ -17,16 +17,14 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 807b33867d827415165eb65d81b91683830735f5
-ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
+ms.openlocfilehash: a1a3dcd7068a004f94b97b5ec6c43c609662a76d
+ms.sourcegitcommit: 60f0ff6d2efbae0f2ce14b9a9f3f9267309e209b
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/16/2019
-ms.locfileid: "72502859"
+ms.lasthandoff: 11/01/2019
+ms.locfileid: "73414569"
 ---
 # <a name="what-to-expect-when-your-ios-app-is-managed-by-app-protection-policies"></a>O que esperar quando seu aplicativo iOS é gerenciado por políticas de proteção de aplicativo
-
-[!INCLUDE [both-portals](../../intune-classic/includes/note-for-both-portals.md)]
 
  Este tópico descreve a experiência do usuário ao usar aplicativos com políticas de proteção de aplicativo aplicadas. As políticas do aplicativo são aplicadas somente quando aplicativos são usados no contexto de trabalho: por exemplo, para acessar aplicativos com uma conta corporativa ou acessar arquivos armazenados no OneDrive para Empresas.
 
@@ -35,7 +33,6 @@ ms.locfileid: "72502859"
 Se o dispositivo **não estiver registrado no Intune**, o usuário será solicitado a reiniciar o aplicativo ao usá-lo pela primeira vez. Uma reinicialização é necessária para que essas políticas de proteção de aplicativo possam ser aplicadas ao aplicativo.
 
 <!--- The following screenshot from the Skype app illustrates this restart request: --->
-
 
 <!---  ![Screenshot of the iOS device showing PIN prompt](./media/end-user-mam-apps-ios/iOS_AppPINPrompt.png) --->
 
@@ -56,8 +53,9 @@ As políticas de proteção do aplicativo são aplicadas apenas em contextos cor
 Aplicativos de várias identidades permitem aos usuários adicionar várias contas.  O aplicativo do Intune permite apenas uma conta de gerenciamento.  Aplicativo do Intune não limita o número de contas não gerenciados.
 
 Quando há uma conta gerenciada em um aplicativo:
-* Se um usuário tenta adicionar uma segunda conta gerenciada, ele recebe uma solicitação para selecionar qual conta gerenciada usar.  A outra conta é removida.
-* Se o administrador de TI adicionar uma política à segunda conta existente, o usuário receberá uma solicitação para selecionar qual conta gerenciada usar.  A outra conta é removida.
+
+- Se um usuário tenta adicionar uma segunda conta gerenciada, ele recebe uma solicitação para selecionar qual conta gerenciada usar.  A outra conta é removida.
+- Se o administrador de TI adicionar uma política à segunda conta existente, o usuário receberá uma solicitação para selecionar qual conta gerenciada usar.  A outra conta é removida.
 
 Leia o cenário de exemplo a seguir para entender melhor como várias contas de usuário são tratadas.
 
@@ -68,4 +66,5 @@ O usuário A trabalha para duas empresas – **Empresa X** e **Empresa Y**. O us
 Se estiver usando um dispositivo iOS, ao tentar adicionar uma segunda conta corporativa ao mesmo dispositivo, você poderá ver uma mensagem de bloqueio. As contas serão exibidas e você poderá escolher a conta que deseja remover.
 
 ## <a name="next-steps"></a>Próximas etapas
+
 [O que esperar quando seu aplicativo Android é gerenciado por políticas de proteção de aplicativo](end-user-mam-apps-android.md)

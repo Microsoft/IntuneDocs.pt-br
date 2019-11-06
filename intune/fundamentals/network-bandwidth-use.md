@@ -18,20 +18,19 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic; get-started
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 4a3ecf2872832af6199620863a05b4275731db5c
-ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
+ms.openlocfilehash: 0507d607bfac6c084f1ce0b1f59d7474810ec8b7
+ms.sourcegitcommit: 60f0ff6d2efbae0f2ce14b9a9f3f9267309e209b
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/16/2019
-ms.locfileid: "72505239"
+ms.lasthandoff: 11/01/2019
+ms.locfileid: "73415104"
 ---
 # <a name="intune-network-configuration-requirements-and-bandwidth"></a>Largura de banda e requisitos de configuração de rede do Intune
-
-[!INCLUDE [both-portals](../../intune-classic/includes/note-for-both-portals.md)]
 
 Você pode usar essas informações para entender os requisitos de largura de banda para suas implantações do Intune.
 
 ## <a name="average-network-traffic"></a>Tráfego médio da rede
+
 A tabela relaciona o tamanho aproximado e a frequência em que o conteúdo comum viaja pela rede para cada cliente.
 
 > [!NOTE]
@@ -53,9 +52,11 @@ A tabela relaciona o tamanho aproximado e a frequência em que o conteúdo comum
 |Distribuição de software|Varia<br /><br />O tamanho depende do software implantado.|**Varia**<br /><br />Depende de quando você implanta o software.|
 
 ## <a name="ways-to-reduce-network-bandwidth-use"></a>Maneiras de reduzir o uso de largura de banda de rede
+
 Você pode usar os métodos a seguir para reduzir o uso de largura de banda da rede para os clientes do Intune.
 
 ### <a name="use-a-proxy-server-to-cache-content-requests"></a>Usar um servidor proxy para armazenar solicitações de conteúdo em cache
+
 Um servidor proxy pode armazenar em cache o conteúdo para reduzir downloads duplicados e para reduzir a largura de banda de rede do conteúdo da Internet.
 
 Um servidor proxy de cache que recebe solicitações de conteúdo de clientes pode recuperar esse conteúdo e armazenar em cache respostas da Web e downloads. O servidor usa dados armazenados em cache para responder às solicitações subsequentes de clientes.
@@ -74,6 +75,7 @@ A seguir, são mostradas as configurações típicas para usar em um servidor pr
 Para obter informações sobre o uso de um servidor proxy para armazenar conteúdo em cache, consulte a documentação da sua solução de servidor proxy.
 
 ### <a name="use-background-intelligent-transfer-service-bits-on-computers"></a>Usar o Serviço de Transferência Inteligente em Segundo Plano (BITS) nos computadores
+
 Durante as horas de configuração, você pode usar o BITS em um computador Windows para reduzir a largura de banda da rede. Você pode configurar a política do BITS na página **Largura de banda da rede** da política do agente do Intune.
 
 > [!NOTE]
@@ -82,14 +84,15 @@ Durante as horas de configuração, você pode usar o BITS em um computador Wind
 Para saber mais sobre o BITS e computadores Windows, consulte [Serviço de Transferência Inteligente em Segundo Plano](https://technet.microsoft.com/library/bb968799.aspx) na biblioteca do TechNet.
 
 ### <a name="delivery-optimization"></a>Otimização de Entrega
+
 A Otimização de Entrega permite que você use o Intune para reduzir o consumo de largura de banda quando seus dispositivos Windows 10 baixam aplicativos e atualizações. Usando um cache distribuído auto-organizado, os downloads podem ser obtidos de servidores tradicionais e de fontes alternativas (como pares de rede).
 
 Para ver a lista completa de versões e tipos de conteúdo do Windows 10 com suporte pela Otimização de Entrega, confira o artigo sobre a [Otimização de Entrega para atualizações do Windows 10](https://docs.microsoft.com/windows/deployment/update/waas-delivery-optimization#requirements).
 
 Você pode [configurar a Otimização de Entrega](../configuration/delivery-optimization-settings.md) como parte dos perfis de configuração do dispositivo.
 
-
 ### <a name="use-branchcache-on-computers"></a>Usar BranchCache nos computadores
+
 Os clientes do Intune podem usar o BranchCache para reduzir o tráfego de rede de longa distância (WAN). Os seguintes sistemas operacionais dão suporte ao BranchCache:
 
 - Windows 7
