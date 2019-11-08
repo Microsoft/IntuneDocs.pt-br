@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 13e5e7d49ec7e808f7cb5ba419dc881717539564
-ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
-ms.translationtype: MTE75
+ms.openlocfilehash: 3e5804b415d26b07944c500b0158cf84a2d4412c
+ms.sourcegitcommit: d1b36501186e867355843ddd67c795ade800b76a
+ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/16/2019
-ms.locfileid: "72496046"
+ms.lasthandoff: 10/31/2019
+ms.locfileid: "73182853"
 ---
 # <a name="use-and-manage-zebra-devices-with-zebra-mobility-extensions-in-microsoft-intune"></a>Usar e gerenciar dispositivos Zebra com o Zebra Mobility Extensions no Microsoft Intune
 
@@ -30,7 +30,7 @@ ms.locfileid: "72496046"
 
 O Intune conta com um conjunto avançado de recursos, incluindo o gerenciamento de aplicativos e a configuração do dispositivo. Esses recursos internos e configurações gerenciam dispositivos Android fabricados pela Zebra Technologies, também conhecidos como “dispositivos Zebra”.
 
-Em dispositivos Android, use os perfis **MX (Mobility Extensions)** para personalizar ou adicionar mais configurações específicas da Zebra.
+Em dispositivos Android, use os perfis **MX (Mobility Extensions)** da Zebra para personalizar ou adicionar mais configurações específicas da Zebra.
 
 Este artigo mostra como usar o Zebra MX (Mobility Extensions) em dispositivos Zebra no Microsoft Intune.
 
@@ -52,6 +52,7 @@ Usando o Intune, é possível registrar dispositivos Zebra para implantar seus a
 - Verifique se você tem a versão mais recente do aplicativo da área de trabalho StageNow da Zebra Technologies.
 - Marque [matriz de recursos MX completa da Zebra](http://techdocs.zebra.com/mx/compatibility) (abre o site da Zebra) para confirmar se os perfis criados são compatíveis com a versão MX, a versão do SO e o modelo do dispositivo.
 - Certos dispositivos, como dispositivos TC20/25, não são compatíveis com todos os recursos de MX disponíveis no StageNow. Marque a [matriz de recursos da Zebra](http://techdocs.zebra.com/mx/tc2x/) (abre o site da Zebra) para receber informações de suporte atualizadas.
+
 
 ## <a name="step-1-install-the-latest-company-portal-app"></a>Etapa 1: instalar o aplicativo do Portal da Empresa mais recente
 
