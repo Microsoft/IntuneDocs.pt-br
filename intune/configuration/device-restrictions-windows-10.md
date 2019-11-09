@@ -15,12 +15,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure; seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 164c34f4a46ca11e2788b72dee70bdd40c25e7f3
-ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
+ms.openlocfilehash: 288ff693e7e46b7953cffad3d0a54b8621141373
+ms.sourcegitcommit: 1a7f04c80548e035be82308d2618492f6542d3c0
 ms.translationtype: MTE75
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/16/2019
-ms.locfileid: "72493903"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "73755268"
 ---
 # <a name="windows-10-and-newer-device-settings-to-allow-or-restrict-features-using-intune"></a>Configurações de dispositivo Windows 10 (e mais recente) para permitir ou restringir recursos usando o Intune
 
@@ -223,12 +223,12 @@ Essas configurações usam o [CSP da política de experiência](https://docs.mic
 
 - **Notificações da central de ações (somente dispositivos móveis)** : **Bloquear** permite que notificações da Central de Ações apareçam na tela de bloqueio do dispositivo. **Não configurado** (padrão) permite aos usuários escolher quais aplicativos mostram notificações na tela de bloqueio.
 
-  [CSP de AboveLock/AllowActionCenterNotifications](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-abovelock#abovelock-allowactioncenternotifications)
+  [CSP de AboveLock/AllowActionCenterNotifications](https://msdn.microsoft.com/ie/dn904962(v=vs.94)#AboveLock_AllowActionCenterNotifications)
 
 - **URL da imagem de tela bloqueada (somente desktop)** : insira a URL para uma imagem no formato JPG, JPEG ou PNG que deve ser usada como papel de parede na tela bloqueada do Windows. Por exemplo, insira `https://contoso.com/image.png`. Essa configuração bloqueia a imagem e não pode ser alterada posteriormente.
 - **Tempo limite de tela configurável pelo usuário (somente dispositivos móveis)** : **Permitir** permite que usuários configurem o tempo limite de tela. **Não configurado** (padrão) não dá aos usuários essa opção.
 
-  [CSP de DeviceLock/AllowScreenTimeoutWhileLockedUserConfig](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-devicelock#devicelock-allowscreentimeoutwhilelockeduserconfig)
+  [CSP de DeviceLock/AllowScreenTimeoutWhileLockedUserConfig](https://msdn.microsoft.com/ie/dn904962(v=vs.94)#DeviceLock_AllowScreenTimeoutWhileLockedUserConfig)
 
 - **Cortana na tela bloqueada** (somente desktop): **Bloquear** impede que usuários interajam com a Cortana quando o dispositivo está na tela de bloqueio. **Não configurado** (padrão) permite a interação com a Cortana.
 
@@ -240,7 +240,7 @@ Essas configurações usam o [CSP da política de experiência](https://docs.mic
 
 - **Tempo limite da tela (somente dispositivos móveis)** : defina a duração (em segundos) da tela de bloqueio até a tela ser desligada. Os valores compatíveis estão ente 11 e 1800. Por exemplo, digite `300` para definir esse tempo limite como 5 minutos.
 
-  [CSP de DeviceLock/ScreenTimeoutWhileLocked](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-devicelock#devicelock-screentimeoutwhilelocked)
+  [CSP de DeviceLock/ScreenTimeoutWhileLocked](https://msdn.microsoft.com/ie/dn904962(v=vs.94)#DeviceLock_ScreenTimeoutWhileLocked)
 
 ## <a name="messaging"></a>Mensagens
 
