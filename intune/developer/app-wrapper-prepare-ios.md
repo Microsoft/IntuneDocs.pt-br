@@ -5,7 +5,7 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 08/12/2019
+ms.date: 11/06/2019
 ms.topic: reference
 ms.service: microsoft-intune
 ms.subservice: developer
@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 783ae8bf3216c514bac183ed1945c454cbaa1708
-ms.sourcegitcommit: 60f0ff6d2efbae0f2ce14b9a9f3f9267309e209b
+ms.openlocfilehash: c0fac5e9d34890272253eaefd82ed13dc1014ba0
+ms.sourcegitcommit: 28622c5455adfbce25a404de4d0437fa2b5370be
 ms.translationtype: MTE75
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/01/2019
-ms.locfileid: "73413867"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "73713478"
 ---
 # <a name="prepare-ios-apps-for-app-protection-policies-with-the-intune-app-wrapping-tool"></a>Preparar aplicativos iOS para políticas de proteção de aplicativo com a Ferramenta de Encapsulamento de Aplicativos do Intune
 
@@ -44,7 +44,7 @@ Antes de executar a Ferramenta de Disposição do Aplicativo, é necessário ate
 
   * O arquivo do aplicativo de entrada deve ter a extensão **.ipa** ou **.app**.
 
-  * O aplicativo de entrada precisa ser compilado para o iOS 10 ou posterior.
+  * O aplicativo de entrada precisa ser compilado para o iOS 11 ou posterior.
 
   * O aplicativo de entrada não pode ser criptografado.
 
@@ -206,7 +206,7 @@ Você pode usar os seguintes parâmetros de linha de comando com a Ferramenta de
 |**-xe**| (Opcional) Imprime informações sobre as extensões do iOS no aplicativo e quais direitos são necessários para usá-las. Consulte [Definindo direitos de aplicativo](#setting-app-entitlements) para obter mais detalhes. |
 |**-x**| (Opcional) `<An array of paths to extension provisioning profiles>`. Use esta opção se seu aplicativo precisar de perfis de provisionamento de extensão.|
 |**-b**|(Opcional) Use -b sem um argumento se você quiser que o aplicativo de saída encapsulado tenha a mesma versão do pacote que o aplicativo de entrada (não recomendado). <br/><br/> Use `-b <custom bundle version>` se você quiser que o aplicativo encapsulado tenha um CFBundleVersion personalizado. Se você optar por especificar um CFBundleVersion personalizado, recomendamos incrementar o CFBundleVersion do aplicativo nativo pelo componente menos significativo, como 1.0.0 -> 1.0.1. |
-|**-citrix**|Adicional Inclua o SDK do Citrix XenMobile app (variante somente de rede). Você deve ter o [Citrix MDX Toolkit](https://docs.citrix.com/en-us/mdx-toolkit/about-mdx-toolkit.html) instalado para usar essa opção. |
+|**-citrix**|Adicional Inclua o SDK do Citrix XenMobile app (variante somente de rede). Você deve ter o [o Citrix MDX Toolkit](https://docs.citrix.com/en-us/mdx-toolkit/about-mdx-toolkit.html) instalado para usar essa opção. |
 |**-f**|(Opcional) `<Path to a plist file specifying arguments.>` Use este sinalizador na frente do arquivo [plist](https://developer.apple.com/library/mac/documentation/Cocoa/Conceptual/PropertyLists/Introduction/Introduction.html) se você optar por usar o modelo plist para especificar o restante das propriedades IntuneMAMPackager, como -i, -o e -p. Consulte Usar um plist para argumentos de entrada. |
 
 ### <a name="use-a-plist-to-input-arguments"></a>Use um plist para argumentos de entrada
@@ -289,26 +289,27 @@ Se a ferramenta de disposição do aplicativo não for concluída com êxito, um
 |O aplicativo de entrada especificado já foi encapsulado e está na versão mais recente de modelo de política.|A Ferramenta de Disposição do Aplicativo não encapsula novamente um aplicativo encapsulado existente com a versão mais recente do modelo de política.|
 |AVISO: você não especificou um hash de certificado SHA1. Certifique-se de que seu aplicativo encapsulado esteja assinado antes da implantação.|Especifique um hash SHA1 válido seguindo o sinalizador de linha de comando –c. |
 
-### <a name="log-files-for-the-app-wrapping-tool"></a>Arquivos de log para a Ferramenta de Disposição do Aplicativo
+### <a name="collecting-logs-for-your-wrapped-applications-from-the-device"></a>Coletando logs para seus aplicativos encapsulados do dispositivo
+Use as etapas a seguir para obter logs para seus aplicativos encapsulados durante a solução de problemas.
 
-Aplicativos que foram encapsulados usando a Ferramenta de Disposição do Aplicativo geram logs que são gravados no console do dispositivo de cliente do iOS. Essas informações são úteis quando você tem problemas com o aplicativo e precisa determinar se o problema está relacionado à Ferramenta de Disposição do Aplicativo. Para recuperar as informações, execute as seguintes etapas:
+1. Vá até o aplicativo de Ajustes do iOS em seu dispositivo e selecione seu aplicativo LOB.
+2. Alterne o **Console de Diagnósticos** para **Ligado**.
+3. Inicie o aplicativo LOB.
+4. Clique no link "Introdução".
+5. Agora você pode compartilhar logs por email ou copiá-los em um local do OneDrive.
+
+> [!NOTE]
+> A funcionalidade de registro em log está habilitada para aplicativos encapsulados com a Ferramenta de Encapsulamento de Aplicativo do Intune versão 7.1.13 ou superior.
+
+### <a name="collecting-crash-logs-from-the-system"></a>Coletando logs de falhas do sistema
+
+Seu aplicativo pode estar registrando informações úteis no console do dispositivo cliente iOS. Essas informações são úteis quando você tem problemas com o aplicativo e precisa determinar se o problema está relacionado à Ferramenta de Disposição do Aplicativo ou o próprio aplicativo. Para recuperar as informações, execute as seguintes etapas:
 
 1. Reproduza o problema executando o aplicativo.
 
 2. Colete a saída do console seguindo as instruções da Apple para [Depurar aplicativos iOS implantados](https://developer.apple.com/library/ios/qa/qa1747/_index.html).
 
-3. Filtre os logs salvos para ver a saída de Restrições de aplicativo inserindo o seguinte script no console:
-
-    ```bash
-    grep “IntuneAppRestrictions” <text file containing console output> > <required filtered log file name>
-    ```
-
-    Você pode enviar os logs filtrados para a Microsoft.
-
-    > [!NOTE]
-    > No arquivo de log, o item "build version" representa a versão da compilação do Xcode.
-
-    Aplicativos de encapsulamento também apresentam aos usuários a opção de enviar logs diretamente do dispositivo por email após o aplicativo falhar. Os usuários podem enviar os logs para você examinar e encaminhar à Microsoft, se necessário.
+Aplicativos de encapsulamento também apresentam aos usuários a opção de enviar logs diretamente do dispositivo por email após o aplicativo falhar. Os usuários podem enviar os logs para você examinar e encaminhar à Microsoft, se necessário.
 
 ### <a name="certificate-provisioning-profile-and-authentication-requirements"></a>Requisitos de autenticação, perfil de provisionamento e certificado
 
@@ -442,19 +443,6 @@ Basta executar o comando geral de agrupamento de aplicativos com o sinalizador `
 ```bash
 ./IntuneMAMPackager/Contents/MacOS/IntuneMAMPackager -i ~/Desktop/MyApp.ipa -o ~/Desktop/MyApp_Wrapped.ipa -p ~/Desktop/My_Provisioning_Profile_.mobileprovision -c 12A3BC45D67EF8901A2B3CDEF4ABC5D6E7890FAB  -v true -citrix
 ```
-
-## <a name="getting-logs-for-your-wrapped-applications"></a>Obter logs para seus aplicativos encapsulados
-
-Use as etapas a seguir para obter logs para seus aplicativos encapsulados durante a solução de problemas.
-
-1. Vá até o aplicativo de Ajustes do iOS em seu dispositivo e selecione seu aplicativo LOB.
-2. Alterne o **Console de Diagnósticos** para **Ligado**.
-3. Inicie o aplicativo LOB.
-4. Clique no link "Introdução".
-5. Agora você pode compartilhar logs por email ou copiá-los em um local do OneDrive.
-
-> [!NOTE]
-> A funcionalidade de registro em log está habilitada para aplicativos encapsulados com a Ferramenta de Encapsulamento de Aplicativo do Intune versão 7.1.13 ou superior.
 
 ## <a name="see-also"></a>Consulte também
 

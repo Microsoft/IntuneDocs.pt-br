@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: a6886060cce77004b107dac02ecea57f2090ac8f
-ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
+ms.openlocfilehash: 428da4581e9946b62bd6ee7c5f7d17d69f93ad9b
+ms.sourcegitcommit: ae6f2e7812e7fd36f2393b8f4b6cd8de63777b2c
 ms.translationtype: MTE75
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/16/2019
-ms.locfileid: "72503476"
+ms.lasthandoff: 11/05/2019
+ms.locfileid: "73592016"
 ---
 # <a name="get-started-with-the-microsoft-intune-app-sdk"></a>Introdução ao SDK de Aplicativos do Microsoft Intune
 
@@ -63,7 +63,7 @@ Usaremos os endereços de email listados em suas respostas ao questionário para
 Se o link profundo do aplicativo for alterado no futuro, você precisará registrar novamente o aplicativo.
 
 > [!NOTE]
-> Além disso, informe se você atualizou o aplicativo com uma nova versão do SDK do Aplicativo do Intune.
+> Você deve informar se atualizou o aplicativo com uma nova versão do SDK do Aplicativo do Intune.
 
 ## <a name="download-the-sdk-files"></a>Baixar os arquivos do SDK
 
@@ -181,6 +181,9 @@ Depois que você registrar seu aplicativo no locatário do Azure e ele estiver a
 5. Na caixa de pesquisa, insira **Gerenciamento de Aplicativo Móvel da Microsoft**.
 6. Em **Permissões Delegadas**, marque a caixa de seleção **DeviceManagementManagedApps.ReadWrite: Ler e Gravar Dados de Gerenciamento de Aplicativo do Usuário***.
 7. Clique em **Adicionar permissões**.
+
+> [!NOTE]
+> Se seu aplicativo restringe você de entrar devido a um erro ao acessar este recurso: https://intunemam.microsoftonline.com, você deve enviar uma observação para msintuneappsdk@microsoft.com com a ID do cliente do aplicativo. Este é um processo de aprovação manual atualmente.
 
 ### <a name="badge-your-app-optional"></a>Marcar com uma notificação no aplicativo (opcional)
 
