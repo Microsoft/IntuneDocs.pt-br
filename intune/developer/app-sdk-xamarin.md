@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 19202d4387635b7cd1f7e4604d755fb8a213d327
-ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
+ms.openlocfilehash: ec234a3d93127a26af4203a4776545602334858b
+ms.sourcegitcommit: 556b7ea2049014c9027f0e44affd3f301fab55fc
 ms.translationtype: MTE75
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/16/2019
-ms.locfileid: "72503443"
+ms.lasthandoff: 11/06/2019
+ms.locfileid: "73709565"
 ---
 # <a name="microsoft-intune-app-sdk-xamarin-bindings"></a>Associações Xamarin do SDK de Aplicativo do Microsoft Intune
 
@@ -80,7 +80,7 @@ Caso seu aplicativo já esteja configurado para usar a ADAL ou a MSAL e tenha su
 
       Os aplicativos poderão passar nulo se o UPN do usuário for desconhecido no momento da chamada. Nesse caso, os usuários deverão inserir seu endereço de email e a senha.
       
-      Se o aplicativo já usar a ADAL ou a MSAL para autenticar os usuários, você poderá configurar uma experiência de SSO (logon único) entre seu aplicativo e o SDK do Intune. Primeiro, você precisará configurar a ADAL/MSAL para armazenar os tokens no mesmo grupo de acesso de conjunto de chaves usado pelas Associações do Xamarin do Intune para iOS (com.microsoft.adalcache). Para a ADAL, você pode fazer isso [configurando a propriedade iOSKeychainSecurityGroup de AuthenticationContext](https://github.com/AzureAD/azure-activedirectory-library-for-dotnet/wiki/iOS-Keychain-Access). Para a MSAL, você precisará [configurar a propriedade iOSKeychainSecurityGroup do PublicClientApplication](https://github.com/AzureAD/microsoft-authentication-library-for-dotnet/wiki/Xamarin-iOS-specifics#enable-keychain-access). Em seguida, você precisará substituir as configurações de AAD padrão usadas pelo SDK do Intune com aqueles do seu aplicativo. Faça isso por meio do dicionário IntuneMAMSettings no Info.plist do aplicativo, conforme mencionado no [Guia do desenvolvedor do SDK do Aplicativo do Intune para iOS](app-sdk-ios.md#configure-settings-for-the-intune-app-sdk), ou você pode usar as propriedades de substituição do AAD da instância IntuneMAMPolicyManager. A abordagem de Info.plist é recomendada para aplicativos cujas configurações de ADAL são estáticas, enquanto as propriedades de substituição são recomendadas para aplicativos que determinam esses valores em tempo de execução. Depois que todas as configurações do SSO forem configuradas, seu aplicativo deverá fornecer o UPN do usuário para o método RegisterAndEnrollAccount do IntuneMAMEnrollmentManager após a autenticação bem-sucedida:
+      Se o aplicativo já usar a ADAL ou a MSAL para autenticar os usuários, você poderá configurar uma experiência de SSO (logon único) entre seu aplicativo e o SDK do Intune. Primeiro, você precisará substituir as configurações de AAD padrão usadas pelo SDK do Intune pelas do seu aplicativo. É possível fazê-lo por meio do dicionário IntuneMAMSettings no Info.plist do aplicativo, conforme mencionado no [Guia do desenvolvedor do SDK do Aplicativo do Intune para iOS](app-sdk-ios.md#configure-settings-for-the-intune-app-sdk), ou no código por meio das propriedades de substituição do AAD da classe IntuneMAMSettings. A abordagem de Info.plist é recomendada para aplicativos cujas configurações de ADAL são estáticas, enquanto as propriedades de substituição são recomendadas para aplicativos que determinam esses valores em runtime. Depois que todas as configurações do SSO forem configuradas, seu aplicativo deverá fornecer o UPN do usuário para o método RegisterAndEnrollAccount do IntuneMAMEnrollmentManager após a autenticação bem-sucedida:
 
       ```csharp
       IntuneMAMEnrollmentManager.Instance.RegisterAndEnrollAccount(string identity);
@@ -109,7 +109,7 @@ Aplicativos de exemplo destacando a funcionalidade de MAM em aplicativos Xamarin
 Uma visão geral completa para a integração do SDK do aplicativo do Intune pode ser encontrada no [guia do desenvolvedor do SDK do Aplicativo Microsoft Intune para Android](app-sdk-android.md). Conforme você lê o guia e integra o SDK do Aplicativo Intune ao seu aplicativo Xamarin, as seções a seguir destinam-se para realçar as diferenças entre a implementação para um aplicativo nativo do Android desenvolvido em Java e um aplicativo Xamarin desenvolvido em C#. Estas seções devem ser tratadas como complementares e não podem atuar como um substituto à leitura do guia em sua totalidade.
 
 #### <a name="remapper"></a>Remapeador
-A partir da versão 1.4428.1, o pacote `Microsoft.Intune.MAM.Remapper` pode ser adicionado a um aplicativo Xamarin. Android como [ferramentas de compilação](app-sdk-android.md#build-tooling) para executar as substituições de classe, método e serviços de sistemas MAM. Se o remapeador for incluído, as seções de substituição equivalentes de MAM dos métodos renomeados e de aplicativo MAM serão executadas automaticamente quando o aplicativo for compilado.
+A partir da versão 1.4428.1, o pacote `Microsoft.Intune.MAM.Remapper` pode ser adicionado a um aplicativo Xamarin. Android como [ferramentas de Build](app-sdk-android.md#build-tooling) para executar a classe MAM, o método e as substituições dos serviços de sistemas. Se o remapeador for incluído, as seções de substituição equivalentes de MAM dos métodos renomeados e de aplicativo MAM serão executadas automaticamente quando o aplicativo for compilado.
 
 Para excluir uma classe de MAM-unificação pelo remapeador, a seguinte propriedade pode ser adicionada em seu arquivo de `.csproj` de projetos.
 
@@ -213,7 +213,7 @@ Isso é esperado porque quando o remapeador modifica a herança de classes do Xa
 * As associações do Xamarin SDK do Intune não oferecem suporte a aplicativos que usam uma estrutura de plataforma cruzada, como MvvmCross, devido a conflitos entre MvvmCross e classes MAM do Intune. Embora alguns clientes possam ter tido sucesso com a integração depois de mover seus aplicativos para o Xamarin. Forms, não fornecemos orientações ou plugins explícitos para desenvolvedores de aplicativos usando o MvvmCross.
 
 ### <a name="company-portal-app"></a>Aplicativo do Portal da Empresa
-As associações do Xamarin SDK do Intune dependem da presença do aplicativo [portal da empresa](https://play.google.com/store/apps/details?id=com.microsoft.windowsintune.companyportal) Android no dispositivo para habilitar as políticas de proteção do aplicativo. O Portal da Empresa recupera as políticas de proteção de aplicativo do serviço Intune. Quando o aplicativo é inicializado, ele carrega a política e o código para impor essa política do Portal da Empresa. O usuário não precisa estar conectado.
+O SDK de Aplicativo do Intune para Android depende da presença do aplicativo do [Portal da Empresa](https://play.google.com/store/apps/details?id=com.microsoft.windowsintune.companyportal) no dispositivo para habilitar as políticas de proteção do aplicativo. O Portal da Empresa recupera as políticas de proteção de aplicativo do serviço Intune. Quando o aplicativo é inicializado, ele carrega a política e o código para impor essa política do Portal da Empresa. O usuário não precisa estar conectado.
 
 > [!NOTE]
 > Quando o aplicativo do Portal da Empresa não está no dispositivo **Android**, um aplicativo gerenciado pelo Intune comporta-se como um aplicativo normal que não é compatível com as políticas de proteção de aplicativo do Intune.
