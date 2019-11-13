@@ -1,6 +1,6 @@
 ---
 title: Inscrever-se ou entrar no Microsoft Intune
-description: Como se inscrever para uma assinatura do Microsoft Intune ou como entrar para iniciar sua assinatura.
+description: Como se inscrever para uma assinatura do Microsoft Intune ou entrar para iniciar sua assinatura.
 keywords: ''
 author: ErikjeMS
 ms.author: erikje
@@ -17,16 +17,14 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 2c3cf75c1b5d6984a7f922af8b969458b4e4336e
-ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
+ms.openlocfilehash: 78d38b72c9853a9eadaf71fcdff7567fc66d35ca
+ms.sourcegitcommit: 60f0ff6d2efbae0f2ce14b9a9f3f9267309e209b
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/16/2019
-ms.locfileid: "72509162"
+ms.lasthandoff: 11/01/2019
+ms.locfileid: "73414662"
 ---
 # <a name="sign-up-or-sign-in-to-microsoft-intune"></a>Inscrever-se ou entrar no Microsoft Intune
-
-[!INCLUDE [both-portals](../../intune-classic/includes/note-for-both-portals.md)]
 
 Este tópico informa os administradores do sistema como você pode se inscrever para uma conta do Intune.
 
@@ -46,14 +44,17 @@ Se você já tem uma conta corporativa ou de estudante, **entre** com essa conta
 2. Na página de Inscrição, entre ou inscreva-se para gerenciar uma nova assinatura do Intune.
 
 ## <a name="post-sign-up-considerations"></a>Considerações após a inscrição
+
 Após se inscrever para uma nova assinatura, uma mensagem de email com as informações da conta é recebida por você no endereço de email fornecido durante o processo de inscrição. Isso confirma que sua assinatura está ativa.
 
 Após concluir o processo de inscrição, você será direcionado para o centro de administração do Microsoft 365, usado para adicionar usuários e atribuir licenças a eles. Se só tiver contas baseadas em nuvem usando seu nome de domínio onmicrosoft.com padrão, você poderá em tal momento prosseguir e adicionar usuários e atribuir licenças. No entanto, se você pretender usar o [nome de domínio personalizado](custom-domain-name-configure.md) da sua organização ou quiser [sincronizar informações de conta de usuário](users-add.md#sync-active-directory-and-add-users-to-intune) do Active Directory local, você poderá fechar essa janela do navegador.
 
 ## <a name="sign-in-to-microsoft-intune"></a>Entrar no Microsoft Intune
+
 Depois de se inscrever no Intune, você pode usar qualquer dispositivo com um [navegador compatível](supported-devices-browsers.md#intune-supported-web-browsers) para entrar no [Intune](https://go.microsoft.com/fwlink/?linkid=2090973) para administrar o serviço.
 
 Por padrão, sua conta deve ter uma das seguintes permissões no Azure AD:
+
 - Administrador Global
 - Administrador de Serviços do Intune (também conhecido como Administrador do Intune)
 
@@ -76,4 +77,5 @@ Microsoft 365 Business: https://portal.microsoft.com/adminportal
 Gerenciamento de Dispositivos Móveis do Office 365: https://portal.office.com/adminportal/home#/MifoDevices
 
 ## <a name="see-also"></a>Consulte também
+
 [Não é possível entrar no Office 365, Azure ou Intune](https://support.microsoft.com/help/2412085)

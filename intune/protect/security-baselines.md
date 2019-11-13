@@ -16,12 +16,12 @@ ms.reviewer: joglocke
 ms.suite: ems
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: d447f2bf45d1bf3e6355a9d5dcc42b4bc2f3a9f3
-ms.sourcegitcommit: 4bf23327af734a9811d555fbd566c31239e2acd6
+ms.openlocfilehash: 53014376a7e220e975878031ffd759da40db7f6b
+ms.sourcegitcommit: 60f0ff6d2efbae0f2ce14b9a9f3f9267309e209b
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/29/2019
-ms.locfileid: "72999755"
+ms.lasthandoff: 11/01/2019
+ms.locfileid: "73413833"
 ---
 # <a name="use-security-baselines-to-configure-windows-10-devices-in-intune"></a>Usar linhas de base de segurança para configurar dispositivos com Windows 10 no Intune
 
@@ -75,11 +75,14 @@ As instâncias de linhas de base de segurança a seguir estão disponíveis para
   - [Versão prévia: Linha de base de segurança do MDM para outubro de 2018](security-baseline-settings-mdm-all.md?pivots=mdm-preview)
 
 - **Linha de base da ATP do Microsoft Defender**
-   *(Para usar essa linha de base, seu ambiente precisa atender aos pré-requisitos para o uso da [Proteção Avançada contra Ameaças do Microsoft Defender](advanced-threat-protection.md#prerequisites))* .
+   *(Para usar essa linha de base, seu ambiente precisa atender aos pré-requisitos para o uso da [Proteção Avançada contra Ameaças do Microsoft Defender](advanced-threat-protection.md#prerequisites))*.
   - [Linha de base da ATP do Microsoft Defender](security-baseline-settings-defender-atp.md)
 
   > [!NOTE]
   > A linha de base de segurança do Microsoft Defender ATP foi otimizada para dispositivos físicos e, atualmente, não é recomendada para uso em VMs (máquinas virtuais) ou pontos de extremidade VDI. Algumas configurações de linha de base podem afetar as sessões interativas remotas em ambientes virtualizados.  Para obter mais informações, confira [Aumentar a conformidade com a linha de base de segurança do Microsoft Defender ATP](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/configure-machines-security-baseline) na documentação do Windows.
+
+- **Linha de base do Microsoft Edge** 
+  - [Versão prévia: linha de base do Microsoft Edge](security-baseline-settings-edge.md)
 
 Você pode continuar a usar e editar perfis criados anteriormente com base em um modelo de visualização, mesmo quando esse modelo de visualização não estiver mais disponível para criar novos perfis.
 

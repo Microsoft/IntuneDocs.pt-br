@@ -18,16 +18,19 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 96c802e76aab673aa6a9108dc0a14f553c26b96b
-ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
+ms.openlocfilehash: fcc5dea1a3f9e6a1f2bec877688962d7be70cc7c
+ms.sourcegitcommit: d2d18eef64bcf16eec1a48fcb67f1362537c0245
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/16/2019
-ms.locfileid: "72505409"
+ms.lasthandoff: 11/02/2019
+ms.locfileid: "73445304"
 ---
 # <a name="intune-actions-and-options-supported-with-apple-user-enrollment"></a>Ações e opções do Intune compatíveis com o Registro de usuário da Apple
 
 O Registro de usuário é compatível com um subconjunto de opções de gerenciamento de dispositivo. Se um perfil de configuração pré-existente for aplicado a um dispositivo de Registro de usuário, somente as configurações compatíveis com o Registro de usuário serão aplicadas a esse dispositivo.
+
+> [!NOTE]
+> O suporte do Registro de usuário da Apple no Intune está em versão prévia atualmente.
 
 ## <a name="password-settings"></a>Configurações de senha
 
@@ -97,6 +100,19 @@ As opções a seguir não são compatíveis em dispositivos registrados com o Re
 - Controle de MDM de aplicativos fora do volume APFS gerenciado.
 - As políticas de proteção de aplicativo ainda serão aplicadas a esses aplicativos. No entanto, você não poderá assumir o gerenciamento ou implantar uma versão gerenciada desses aplicativos, a menos que o usuário os exclua do dispositivo.
 - Ações, configurações, definições e comandos que exigem supervisão. 
+
+## <a name="options-not-supported-in-preview"></a>Opções sem suporte na versão prévia
+- Restrições de registro de tipo de dispositivo para permitir/bloquear dispositivos de propriedade pessoal 
+
+## <a name="known-issues-in-preview"></a>Problemas conhecidos na versão prévia
+- Revogação da licença de VPP: não aparece uma notificação informando que a licença foi revogada. O comportamento atual é que a revogação foi bem-sucedida, mas o usuário final não é notificado. 
+- Relatório de aplicativos de VPP: no relatório localizado em Aplicativos Cliente > Aplicativos > [Nome do aplicativo] > Status de Instalação do Dispositivo, os aplicativos de VPP implantados nos dispositivos Registrados pelo usuário estão informando "falha", mesmo quando o aplicativo é implantado com êxito no dispositivo. 
+- Relatório de aplicativos: para os tipos de aplicativo sem suporte no Registro de usuário, os relatórios podem fornecer mensagens de erro irrelevantes. 
+- Experiência do aplicativo Portal da Empresa: os usuários veem todos os aplicativos direcionados a eles, não importa se esses tipos de aplicativos têm suporte para dispositivos Registrados pelo usuário. 
+- Experiência do aplicativo Portal da Empresa: os usuários veem o mesmo texto indicando o que as organizações podem ou não ver para o Registro de usuário e dispositivo.
+- Se um usuário selecionar "Minha organização possui este dispositivo" durante o registro, o dispositivo ainda será identificado como Pessoal no Intune, a menos que seja modificado de outra forma no console de administração ou por meio do grafo. 
+- Direcionamento de registro: o iPadOS não está listado no seletor de plataforma. O iPadOS tem suporte na versão prévia, mas não é indicado explicitamente no console de administração. 
+
 
 ## <a name="next-steps"></a>Próximas etapas
 

@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: ''
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 63079757ee3610d825601921da1d33aa94f851b6
-ms.sourcegitcommit: 06a1fe83fd95c9773c011690e8520733e1c031e3
+ms.openlocfilehash: b2744a27a733824bab9d920f4de0b49e951c1c34
+ms.sourcegitcommit: a4c7339ec9ff5b1b846cb3cca887cf91b5cd4baa
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/23/2019
-ms.locfileid: "72794401"
+ms.lasthandoff: 11/05/2019
+ms.locfileid: "73627631"
 ---
 # <a name="enable-the-mobile-threat-defense-connector-in-intune-for-unenrolled-devices"></a>Habilitar o conector de Defesa contra Ameaças Móveis no Intune para dispositivos não registrados
 
@@ -50,9 +50,9 @@ Durante a instalação do MTD (Defesa contra Ameaças Móveis), você configurou
 
 Você pode decidir quais opções de alternância de MTD você precisa habilitar de acordo com os requisitos da sua organização. Veja mais detalhes abaixo:
 
-**Configurações de Política de Proteção de Aplicativo**
-- **Conecte dispositivos Android versão 4.1 e superior a *\<nome do parceiro de MTD>* para avaliar a política de proteção do aplicativo**: Quando você habilita essa opção, as políticas de proteção do aplicativo que usam a regra de Nível de Ameaça do Dispositivo avaliarão os dispositivos, incluindo os dados desse conector.
-- **Conecte dispositivos iOS versão 8.0 e superior a *\<nome do parceiro de MTD>* para avaliar a política de proteção do aplicativo**: Quando você habilita essa opção, as políticas de proteção do aplicativo que usam a regra de Nível de Ameaça do Dispositivo avaliarão os dispositivos, incluindo os dados desse conector.
+**Configurações de política de proteção de aplicativo**
+- **Conecte dispositivos Android versão 4.4 e posteriores ao *\<nome do parceiro de MTD>* para avaliar a política de proteção do aplicativo**: Ao habilitar essa opção, as políticas de proteção do aplicativo que usam a regra de Nível de Ameaça do Dispositivo avaliarão os dispositivos, incluindo os dados desse conector.
+- **Conecte dispositivos iOS versão 11 e posteriores ao *\<nome do parceiro de MTD>* para avaliar a política de proteção do aplicativo**: Ao habilitar essa opção, as políticas de proteção do aplicativo que usam a regra de Nível de Ameaça do Dispositivo avaliarão os dispositivos, incluindo os dados desse conector.
 
 **Configurações compartilhadas comuns**
 - **Número de dias até que o parceiro seja considerado sem resposta**: Número de dias de inatividade antes que o Intune considere o parceiro sem resposta devido à perda da conexão. O Intune ignora o estado de conformidade de parceiros de MTD sem resposta.

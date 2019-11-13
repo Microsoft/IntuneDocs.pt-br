@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: db583b1fc89edf72f329a605cc86363593eaaa9d
-ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
+ms.openlocfilehash: cdc849405b7404203faa6e86d3fed1ea8e35ec43
+ms.sourcegitcommit: 60f0ff6d2efbae0f2ce14b9a9f3f9267309e209b
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/16/2019
-ms.locfileid: "72497906"
+ms.lasthandoff: 11/01/2019
+ms.locfileid: "73414628"
 ---
 # <a name="how-to-manage-data-transfer-between-ios-apps-in-microsoft-intune"></a>Como gerenciar a transferência de dados entre aplicativos iOS no Microsoft Intune
 
@@ -81,7 +81,7 @@ Essa configuração de UPN do usuário é **necessária** para dispositivos gere
    |ManageEngine Mobile Device Manager | IntuneMAMUPN | Cadeia de caracteres | %upn% |
 
 > [!NOTE]  
-> Para aplicativos do Outlook no iOS, se você implantar uma Política de Configuração de Aplicativos com a opção "Usando o designer de configuração", a chave de configuração IntuneMAMUPN será definida automaticamente em segundo plano para a política. Obtenha mais detalhes na seção de perguntas frequentes em [Experiência de política de configuração de aplicativos no novo Outlook para iOS e Android – configuração geral de aplicativos](https://techcommunity.microsoft.com/t5/Intune-Customer-Success/New-Outlook-for-iOS-and-Android-App-Configuration-Policy/ba-p/370481). 
+> Para o Outlook para iOS, se você implantar uma Política de Configuração de Aplicativos de dispositivos gerenciados com a opção "Usando o designer de configuração" e habilitar **Permitir somente contas corporativas ou de estudante**, a chave de configuração IntuneMAMUPN será configurada automaticamente em segundo plano para a política. Encontre mais detalhes na seção de perguntas frequentes em [Experiência de política de configuração de aplicativos no novo Outlook para iOS e Android – configuração geral de aplicativos](https://techcommunity.microsoft.com/t5/Intune-Customer-Success/New-Outlook-for-iOS-and-Android-App-Configuration-Policy/ba-p/370481). 
 
 
 ### <a name="example-2-end-user-experience"></a>Exemplo 2: Experiência do usuário final
