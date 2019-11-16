@@ -5,7 +5,7 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 08/15/2019
+ms.date: 11/13/2019
 ms.topic: reference
 ms.service: microsoft-intune
 ms.subservice: configuration
@@ -15,12 +15,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure; seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 17dce8f7c5aa55a2044e663f724a5784cee8b375
-ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
+ms.openlocfilehash: 42ccb1d1654ba45b63672eebf00acd10fdc56a67
+ms.sourcegitcommit: 78cebd3571fed72a3a99e9d33770ef3d932ae8ca
 ms.translationtype: MTE75
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/16/2019
-ms.locfileid: "72506689"
+ms.lasthandoff: 11/13/2019
+ms.locfileid: "74059337"
 ---
 # <a name="windows-10-and-later-device-settings-to-run-as-a-kiosk-in-intune"></a>Configurações de dispositivos com Windows 10 (e posterior) para execução como um quiosque no Intune
 
@@ -40,6 +40,8 @@ Para saber mais sobre o recurso de quiosque do Windows no Intune, confira [defin
 
   1. Crie este perfil de quiosque para executar o dispositivo no modo de quiosque.
   2. Crie o [perfil de restrições de dispositivo](device-restrictions-windows-10.md#microsoft-edge-browser) e configure recursos e configurações específicos permitidos no Microsoft Edge.
+
+- Certifique-se de que todos os arquivos, scripts e atalhos estejam no sistema local. Para obter mais informações, incluindo outros requisitos do Windows, consulte [Personalizar e exportar o layout inicial](https://docs.microsoft.com/windows/configuration/customize-and-export-start-layout).
 
 > [!IMPORTANT]
 > Atribua esse perfil de quiosque aos mesmos dispositivos que seu [perfil do Microsoft Edge](device-restrictions-windows-10.md#microsoft-edge-browser).
@@ -194,3 +196,5 @@ Os aplicativos nesse modo estão disponíveis no menu Iniciar. Esses aplicativos
 [Atribuir o perfil](device-profile-assign.md) e [monitorar seu status](device-profile-monitor.md).
 
 Também é possível criar perfis de quiosque para dispositivos [Android](device-restrictions-android.md#kiosk), [Android Enterprise](device-restrictions-android-for-work.md#dedicated-device-settings) e [Windows Holographic for Business](kiosk-settings-holographic.md).
+
+Consulte também [configurar um quiosque de aplicativo único](https://docs.microsoft.com/windows/configuration/kiosk-single-app) ou [configurar um quiosque de vários aplicativos](https://docs.microsoft.com/windows/configuration/lock-down-windows-10-to-specific-apps) nas diretrizes do Windows.

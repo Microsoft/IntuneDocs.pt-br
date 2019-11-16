@@ -16,12 +16,12 @@ ms.suite: ems
 search.appverid: ''
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 3d0cff4ad624d35843f3388535b60549d1893eeb
-ms.sourcegitcommit: c38a856725993a4473ada75e669a57f75ab376f8
+ms.openlocfilehash: 54995b54d7810c02c5a8b24e5ddff3fa1f08cb05
+ms.sourcegitcommit: 737ad6c675deedfc6009f792023ff95981b06582
 ms.translationtype: MTE75
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/30/2019
-ms.locfileid: "73143166"
+ms.lasthandoff: 11/15/2019
+ms.locfileid: "74117857"
 ---
 # <a name="macos-device-feature-settings-in-intune"></a>Configurações de recursos do dispositivo macOS no Intune
 
@@ -185,6 +185,7 @@ Esse recurso aplica-se a:
 - **Mensagem de requisitos de senha** (somente Kerberos): Insira uma versão de texto dos requisitos de senha da sua organização que são mostrados aos usuários. A mensagem será mostrada se você não exigir os requisitos de complexidade de senha do Active Directory ou não inserir um comprimento mínimo da senha.  
 - **IDs de pacote de aplicativo** (somente Kerberos): **adicione** os identificadores de pacote de aplicativo que devem usar o logon único em seus dispositivos. Esses aplicativos recebem acesso ao tíquete de concessão de tíquete Kerberos, ao tíquete de autenticação e autenticam usuários para serviços que eles estão autorizados a acessar.
 - **Mapeamento de realm de domínio** (somente Kerberos): **adicione** os sufixos DNS de domínio que devem ser mapeados para seu Realm. Use essa configuração quando os nomes DNS dos hosts não corresponderem ao nome do realm. É mais provável que você não precise criar esse mapeamento de domínio para Realm personalizado.
+- **Certificado PKINIT** (somente Kerberos): **selecione** o certificado de autenticação de chave pública (PKINIT) que pode ser usado para renovar a credencial Kerberos sem interação com o usuário. O certificado deve ser um certificado PKCS ou SCEP que você adicionou anteriormente ao Intune.
 
 ## <a name="associated-domains"></a>Domínios associados
 

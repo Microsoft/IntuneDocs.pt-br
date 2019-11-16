@@ -2,8 +2,8 @@
 title: Descrições e erros de atualização de software no Microsoft Intune – Azure | Microsoft Docs
 description: Confira o código de erro do agente de atualização de software no Microsoft Intune, incluindo o nome simbólico, o código e a descrição do erro.
 keywords: ''
-author: MandiOhlinger
-ms.author: mandia
+author: Brenduns
+ms.author: brenduns
 manager: dougeby
 ms.date: 05/29/2019
 ms.topic: troubleshooting
@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: c7e170680d2c7e2771c47b73bf744f8422b2e978
-ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
+ms.openlocfilehash: c73ed7973fa15d796aee1e33efc37191777c222a
+ms.sourcegitcommit: 78cebd3571fed72a3a99e9d33770ef3d932ae8ca
 ms.translationtype: MTE75
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/16/2019
-ms.locfileid: "72508899"
+ms.lasthandoff: 11/13/2019
+ms.locfileid: "74058051"
 ---
 # <a name="software-update-agent-error-codes-and-descriptions-in-microsoft-intune"></a>As descrições e os códigos de erro do agente de atualização de software no Microsoft Intune
 
@@ -100,7 +100,7 @@ A tabela a seguir relaciona os códigos de erro do **Agente de Atualização** d
 |**0x80cf0438**|OM_E_PT_ENDPOINT_UNREACHABLE|Não há conectividade de rede ou rota para o ponto de extremidade.|
 |**0x80cf0439**|OM_E_PT_INVALID_FORMAT|Os dados recebidos não atendem às expectativas do contrato de dados.|
 |**0x80cf043A**|OM_E_PT_INVALID_URL|A URL não é válida.|
-|**0x80cf043B**|OM_E_PT_NWS_NOT_LOADED|O tempo de execução do NWS não pode ser carregado.|
+|**0x80cf043B**|OM_E_PT_NWS_NOT_LOADED|O runtime do NWS não pode ser carregado.|
 |**0x80cf043C**|OM_E_PT_PROXY_AUTH_SCHEME_NOT_SUPPORTED|Não há suporte para o esquema de autenticação do proxy.|
 |**0x80cf043D**|OM_E_SERVICEPROP_NOTAVAIL|A propriedade de serviço solicitada não está disponível.|
 |**0x80cf043E**|OM_E_PT_ENDPOINT_REFRESH_REQUIRED|O plug-in do provedor de ponto de extremidade requer uma atualização online.|
