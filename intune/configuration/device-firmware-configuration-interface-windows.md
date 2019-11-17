@@ -5,7 +5,7 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 10/24/2019
+ms.date: 10/31/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.localizationpriority: high
@@ -15,19 +15,16 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 2bfc49f772331113314e45bc49360b8435b88037
-ms.sourcegitcommit: 0d6f323152ec62f7d383891cce12ea0a4289cd8f
+ms.openlocfilehash: 899d667ca271ae5c3edced18fab8da987c49b2ca
+ms.sourcegitcommit: 85c894cb4df34a5ff558e3b45e28a8b91054d9e6
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/24/2019
-ms.locfileid: "72889567"
+ms.lasthandoff: 11/01/2019
+ms.locfileid: "73432537"
 ---
 # <a name="use-device-firmware-configuration-interface-profiles-on-windows-devices-in-microsoft-intune-public-preview"></a>Usar perfis da Interface de Configuração de Firmware de Dispositivo em dispositivos Windows no Microsoft Intune (visualização pública)
 
 [!INCLUDE [azure_portal](../includes/azure_portal.md)]
-
-> [!Note]
-> Cada [atualização mensal](https://techcommunity.microsoft.com/t5/Intune-Customer-Success/Microsoft-Intune-Service-Updates/ba-p/358728) pode levar vários dias para ser distribuída. Alguns recursos podem ser implantados ao longo de várias semanas e podem não estar disponíveis para todos os clientes imediatamente.
 
 Quando usa o Intune para gerenciar dispositivos com Autopilot, você pode gerenciar as configurações da UEFI (BIOS) após elas serem registradas, usando a DFCI (Interface de Configuração de Firmware de Dispositivo). Para obter uma visão geral dos benefícios, cenários e pré-requisitos, confira [Visão geral da DFCI](https://microsoft.github.io/mu/dyn/mu_plus/DfciPkg/Docs/Dfci_Feature/).
 
@@ -45,7 +42,7 @@ Esse recurso aplica-se a:
 
 ## <a name="before-you-begin"></a>Antes de começar
 
-- O fabricante do dispositivo precisa ter a DFCI adicionada a seu firmware da UEFI no processo de fabricação ou como uma atualização de firmware instalada. Trabalhe com seus fornecedores de dispositivo para determinar os fabricantes que dão suporte à DFCI ou a versão de firmware necessária para usar a DFCI.
+- O fabricante do dispositivo precisa ter a DFCI adicionada a seu firmware da UEFI no processo de fabricação ou como uma atualização de firmware instalada. Trabalhe com seus fornecedores de dispositivo para determinar [os fabricantes que dão suporte à DFCI](https://microsoft.github.io/mu/dyn/mu_plus/DfciPkg/Docs/Scenarios/DfciScenarios/#oems-that-support-dfci) ou a versão de firmware necessária para usar a DFCI.
 
 - O dispositivo precisa ser registrado para o Windows Autopilot por um [parceiro CSP (Provedor de Soluções na Nuvem) da Microsoft](https://partner.microsoft.com/cloud-solution-provider) ou registrado diretamente pelo OEM. 
 
@@ -91,7 +88,7 @@ Esse perfil inclui as configurações da DFCI que você define.
 
 4. Configure as definições:
 
-    - **Permitir que o usuário local altere as configurações da UEFI (BIOS)** : Suas opções:
+    - **Permitir que o usuário local altere as configurações da UEFI (BIOS)**: Suas opções:
       - **Somente as configurações não definidas**: o usuário local pode alterar qualquer configuração, *exceto* pelas configurações definidas explicitamente como **Habilitar** ou **Desabilitar** pelo Intune.
       - **Nenhum**: o usuário local não pode alterar nenhuma configuração da UEFI (BIOS), incluindo configurações não mostradas no perfil DFCI.
 
@@ -107,7 +104,7 @@ Esse perfil inclui as configurações da DFCI que você define.
         - **Não configurado**: o Intune não altera esse recurso e deixa as configurações no estado em que se encontram.
         - **Habilitado**: todos os alto-falantes e microfones internos gerenciados diretamente pela UEFI (BIOS) são habilitados. Dispositivos periféricos, como dispositivos USB, não são afetados.
         - **Desabilitado**: todos os alto-falantes e microfones internos gerenciados diretamente pela UEFI (BIOS) são desabilitados. Dispositivos periféricos, como dispositivos USB, não são afetados.
-    - **Rádios (Bluetooth, Wi-Fi, NFC etc.)** : Suas opções:
+    - **Rádios (Bluetooth, Wi-Fi, NFC etc.)**: Suas opções:
         - **Não configurado**: o Intune não altera esse recurso e deixa as configurações no estado em que se encontram.
         - **Habilitado**: todos os rádios internos gerenciados diretamente pela UEFI (BIOS) são habilitados. Dispositivos periféricos, como dispositivos USB, não são afetados.
         - **Desabilitado**: todos os rádios internos gerenciados diretamente pela UEFI (BIOS) são desabilitados. Dispositivos periféricos, como dispositivos USB, não são afetados.
@@ -115,7 +112,7 @@ Esse perfil inclui as configurações da DFCI que você define.
         > [!WARNING]
         > Se você desabilitar a configuração **Rádios**, o dispositivo exigirá uma conexão de rede com fio. Caso contrário, o dispositivo pode não ser gerenciável.
 
-    - **Inicialize de uma mídia externa (USB, SD)** : Suas opções:
+    - **Inicialize de uma mídia externa (USB, SD)**: Suas opções:
         - **Não configurado**: o Intune não altera esse recurso e deixa as configurações no estado em que se encontram.
         - **Habilitado**: a UEFI (BIOS) permite a inicialização de um armazenamento de disco não rígido.
         - **Desabilitado**: a UEFI (BIOS) não permite a inicialização de um armazenamento de disco não rígido.
