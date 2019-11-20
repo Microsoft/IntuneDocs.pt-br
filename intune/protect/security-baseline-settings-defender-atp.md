@@ -5,7 +5,7 @@ description: Configurações de linha de base de segurança com suporte do Intun
 author: brenduns
 ms.author: brenduns
 manager: dougeby
-ms.date: 10/25/2019
+ms.date: 11/13/2019
 ms.topic: reference
 ms.service: microsoft-intune
 ms.subservice: protect
@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: aa3cb3481de6e1fdc3790b7330ac521772e252be
-ms.sourcegitcommit: 5932da3ed8f52c7b0f0d71c1801f81c85952cf0c
+ms.openlocfilehash: b7363682960cff6688e9727d2b6869b6bf357084
+ms.sourcegitcommit: 78cebd3571fed72a3a99e9d33770ef3d932ae8ca
 ms.translationtype: MTE75
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/25/2019
-ms.locfileid: "72923397"
+ms.lasthandoff: 11/13/2019
+ms.locfileid: "74060061"
 ---
 # <a name="microsoft-defender-advanced-threat-protection-baseline-settings-for-intune"></a>Configurações para Intune da Linha de base da Proteção Avançada contra Ameaças do Microsoft Defender
 
@@ -50,7 +50,7 @@ Ao usar o Microsoft Edge, o Microsoft Defender Application Guard protege seu amb
   - **Comportamento da área de transferência** - *Settings/ClipboardSettings*  
     Escolha quais ações de copiar e colar são permitidas entre o computador local e o navegador virtual do Application Guard.  As opções incluem:
     - Não configurado  
-    - Bloquear copiar e colar entre PC e navegador-bloquear ambos. Bloquear ambos - não é possível transferir dados entre o computador e o navegador virtual.  
+    - Bloquear copiar e colar entre PC e navegador-bloquear ambos. Não é possível transferir dados entre o computador e o navegador virtual.  
     - Permitir copiar e colar do navegador para o PC somente-os dados não podem transferir do PC para o navegador virtual.
     - Permitir copiar e colar do PC para o navegador somente-os dados não podem transferir do navegador virtual para o PC host.
     - Permitir copiar e colar entre PC e navegador-nenhum bloco para conteúdo existe.  
@@ -91,11 +91,11 @@ Para obter mais informações, veja [CSP de política – SmartScreen](https://d
   **Padrão**: Bloquear 
 
 - **Impedir que o tipo de roubo de credencial**  
-  Defina como *Habilitar* para [Proteger as credenciais de domínio derivadas com o Credential Guard](https://docs.microsoft.com/windows/security/identity-protection/credential-guard/credential-guard). O Windows Defender Credential Guard usa segurança baseada em virtualização para isolar segredos para que apenas o software de sistema privilegiado possa acessá-los. O acesso não autorizado a esses segredos pode levar a ataques de roubo de credenciais, como Pass-the-Hash ou Pass-The-Ticket. O Windows Defender Credential Guard evita esses ataques protegendo os hashes de senha NTLM, Kerberos Ticket Granting Tickets e credenciais armazenadas por aplicativos como credenciais de domínio.  
+  Defina como *Habilitar* para [Proteger as credenciais de domínio derivadas com o Credential Guard](https://docs.microsoft.com/windows/security/identity-protection/credential-guard/credential-guard). O Microsoft Defender Credential Guard usa segurança baseada em virtualização para isolar segredos para que apenas o software de sistema privilegiado possa acessá-los. O acesso não autorizado a esses segredos pode levar a ataques de roubo de credenciais, como Pass-the-Hash ou Pass-The-Ticket. O Microsoft Defender Credential Guard evita esses ataques protegendo os hashes de senha NTLM, Kerberos Ticket Granting Tickets e credenciais armazenadas por aplicativos como credenciais de domínio.  
 
   **Padrão**: Habilitar
 
-- **Tipo de execução de conteúdo de email**  
+- **Execução de conteúdo de email**  
   [Regra de redução da superfície de ataque](/windows/security/threat-protection/microsoft-defender-atp/attack-surface-reduction#attack-surface-reduction-rules) – quando definido como *Bloquear*, esta regra bloqueia a execução ou a inicialização dos seguintes tipos de arquivo de um email visto no Microsoft Outlook ou webmail (por exemplo, Gmail.com ou Outlook.com):  
 
   - Arquivos executáveis (como .exe, .dll, ou .scr)  
@@ -109,12 +109,12 @@ Para obter mais informações, veja [CSP de política – SmartScreen](https://d
 
   **Padrão**: Habilitar
 
-- **Tipo de código de macro ocultado de script**  
+- **Código de macro ocultado de script**  
   [Regra de redução da superfície de ataque](/windows/security/threat-protection/microsoft-defender-atp/attack-surface-reduction#attack-surface-reduction-rules) – Malware e outras ameaças podem tentar ocultar seu código mal-intencionado em arquivos de script. Essa regra impede a execução de scripts que parecem estar ocultos.  
     
   **Padrão**: Bloquear
 
-- **Tipo de processo de USB não confiável**  
+- **Processo de USB não confiável**  
   [Regra de redução da superfície de ataque](/windows/security/threat-protection/microsoft-defender-atp/attack-surface-reduction#attack-surface-reduction-rules) – quando definido como *Bloquear*, os arquivos executáveis não assinados ou não confiáveis de unidades removíveis USB e cartões SD não podem ser executados.
 
   Os arquivos executáveis incluem:
@@ -123,12 +123,12 @@ Para obter mais informações, veja [CSP de política – SmartScreen](https://d
 
   **Padrão**: Bloquear
 
-- **Tipo de injeção de outros processos de aplicativos do Office**  
+- **Injeção de outros processos de aplicativos do Office**  
   [Regra de redução da superfície de ataque](/windows/security/threat-protection/microsoft-defender-atp/attack-surface-reduction#attack-surface-reduction-rules) -quando definido como *Bloquear*, os aplicativos do Office, incluindo Word, Excel, PowerPoint e OneNote não podem injetar código em outros processos. A injeção de código normalmente é usado por malware para executar código mal-intencionado em uma tentativa de ocultar a atividade de mecanismos de verificação de antivírus.  
 
   **Padrão**: Bloquear
 
-- **Tipo de código de macro do Office que permite importações do Win32**  
+- **Código de macro do Office que permite importações do Win32**  
   [Regra de redução da superfície de ataque](/windows/security/threat-protection/microsoft-defender-atp/attack-surface-reduction#attack-surface-reduction-rules) - quando definido como *Bloquear*, essa regra tenta bloquear os arquivos do Office que contêm código de macro que pode importar as DLLs do Win32. Os arquivos do Office incluem o Word, o Excel, o PowerPoint e o OneNote. O malware pode usar o código de macro em arquivos do Office para importar e carregar DLLs do Win32, que são usados para fazer chamadas à API para permitir a infecção em todo o sistema.  
 
   **Padrão**: Bloquear
@@ -138,7 +138,7 @@ Para obter mais informações, veja [CSP de política – SmartScreen](https://d
 
   **Padrão**: Habilitar
 
-- **Tipo de lançamento ou criação de conteúdo executável de aplicativos do Office**  
+- **Lançamento ou criação de conteúdo executável de aplicativos do Office**  
   [Regra de redução da superfície de ataque](/windows/security/threat-protection/microsoft-defender-atp/attack-surface-reduction#attack-surface-reduction-rules) – quando definido como *Bloquear*, os aplicativos do Office não podem criar conteúdo executável. Os aplicativos do Office incluem Word, Excel, PowerPoint, OneNote e Access.  
 
   Essa regra tem como alvo os comportamentos típicos usados por complementos e scripts (extensões) suspeitos e mal-intencionados que criam ou inicializam arquivos executáveis. Essa é uma técnica de malware típica. As extensões são impedidas de serem usadas pelos aplicativos do Office. Normalmente essas extensões usam o Windows Script Host (arquivos .wsh) para executar scripts que automatizam determinadas tarefas ou fornecem recursos de complemento criados pelo usuário.
@@ -227,7 +227,7 @@ Para saber mais, veja [Configurações de Política de Grupo do Bitlocker](https
   - **Identificadores de dispositivo de hardware que estão bloqueados**  
     Essa configuração está disponível apenas quando *Instalação de dispositivo de hardware por identificadores de dispositivo* é definida como *Bloquear instalação de dispositivo de hardware*. Para definir essa configuração, expanda a opção, selecione **+ Adicionar** e, em seguida, especifique o identificador de dispositivo de hardware que você deseja bloquear.  
 
-    **Padrão**: PCI\CC_0C0A
+    **Padrão**: PCI \ CC_0C0A
 
 - **Bloquear acesso direto à memória**  
   [DataProtection/AllowDirectMemoryAccess](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-dataprotection#dataprotection-allowdirectmemoryaccess) - use essa configuração de política para bloquear o DMA (acesso direto à memória) para todas as portas downstream PCI em um dispositivo com hot-plug até um usuário fazer logon no Windows. Depois que um usuário fizer logon, o Windows vai enumerar os dispositivos PCI conectados às portas host plug PCI. Sempre que o usuário bloqueia o computador, o DMA é bloqueado em portas PCI com hot-plug sem dispositivos filhos até que o usuário faça logon novamente. Os dispositivos que já foram enumerados quando o computador foi desbloqueado continuarão a funcionar até que sejam desconectados. 
@@ -281,7 +281,7 @@ Para saber mais, consulte [CSP WindowsAdvancedThreatProtection](https://docs.mic
   Você também pode converter e importar um arquivo XML de configuração EMET existente em um XML de Exploit Protection.
 
 - **Substituição de proteção de exploração de bloqueio**  
-  [WindowsDefenderSecurityCenter/DisallowExploitProtectionOverride](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-windowsdefendersecuritycenter#windowsdefendersecuritycenter-disallowexploitprotectionoverride) – definido como *Sim* para impedir que os usuários alterem a área de configurações da proteção de exploração na Central de Segurança do Windows Defender. Se você desabilitar ou não definir essa configuração, os usuários locais poderão fazer alterações na área de configurações de proteção de exploração.  
+  [WindowsDefenderSecurityCenter/DisallowExploitProtectionOverride](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-windowsdefendersecuritycenter#windowsdefendersecuritycenter-disallowexploitprotectionoverride) – definido como *Sim* para impedir que os usuários alterem a área de configurações da proteção de exploração na Central de Segurança do Microsoft Defender. Se você desabilitar ou não definir essa configuração, os usuários locais poderão fazer alterações na área de configurações de proteção de exploração.  
   **Padrão**: Sim  
 
 ## <a name="microsoft-defender-antivirus"></a>Microsoft defender antivírus  
@@ -289,17 +289,17 @@ Para saber mais, consulte [CSP WindowsAdvancedThreatProtection](https://docs.mic
 Para obter mais informações, veja [CSP de política – Defender](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-defender) na documentação do Windows.
 
 - **Examinar scripts carregados em navegadores da Web da Microsoft**  
-  [Defender/AllowScriptScanning](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-defender#defender-allowscriptscanning) – definido como *Sim* para permitir a funcionalidade de verificação de Script do Windows Defender.  
+  [Defender/AllowScriptScanning](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-defender#defender-allowscriptscanning) – definido como *Sim* para permitir a funcionalidade de verificação de Script do Microsoft Defender.  
 
   **Padrão**: Sim
 
 - **Examinar mensagens de email recebidas**  
-  [Defender/AllowEmailScanning](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-defender#defender-allowemailscanning) – definido como *Sim* para permitir que o Windows Defender verifique email.  
+  [Defender/AllowEmailScanning](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-defender#defender-allowemailscanning) – definido como *Sim* para permitir que o Microsoft Defender verifique email.  
 
   **Padrão**: Sim
 
-- **Tipo de consentimento de envio de amostra do Defender**  
-  [Defender/SubmitSamplesConsent](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-defender#defender-submitsamplesconsent) - verifica o nível de consentimento do usuário no Windows Defender para enviar dados. Se o consentimento necessário já tiver sido concedido, o Windows Defender os enviará. Caso contrário (e se o usuário tiver especificou nunca perguntar), a interface do usuário será iniciada para pedir consentimento do usuário (quando o *Cloud-delivered protection* estiver definido como *Sim*) antes de enviar dados.  
+- **Consentimento de envio de amostra do Defender**  
+  [Defender/SubmitSamplesConsent](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-defender#defender-submitsamplesconsent) - verifica o nível de consentimento do usuário no Microsoft Defender para enviar dados. Se o consentimento necessário já tiver sido concedido, o Microsoft Defender os enviará. Caso contrário (e se o usuário tiver especificou nunca perguntar), a interface do usuário será iniciada para pedir consentimento do usuário (quando o *Cloud-delivered protection* estiver definido como *Sim*) antes de enviar dados.  
 
   **Padrão**: enviar amostras seguras automaticamente
 
@@ -319,7 +319,7 @@ Para obter mais informações, veja [CSP de política – Defender](https://docs
     **Padrão**: Sim
 
 - **O Defender bloqueia na proteção de acesso**  
-  [Defender/AllowOnAccessProtection](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-defender#defender-allowonaccessprotection) – quando definido como *Sim*, a proteção ao acessar do Windows Defender é habilitada.  
+  [Defender/AllowOnAccessProtection](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-defender#defender-allowonaccessprotection) – quando definido como *Sim*, a proteção ao acessar do Microsoft Defender é habilitada.  
 
   **Padrão**: Sim
 
@@ -346,30 +346,30 @@ Para obter mais informações, veja [CSP de política – Defender](https://docs
   **Padrão**: 2h00
 
 - **Proteção entregue na nuvem**  
-  [Defender/AllowCloudProtection](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-defender#defender-allowcloudprotection) – quando definido como *Sim*, o Windows Defender envia informações à Microsoft sobre os problemas encontrados. A Microsoft analisará essas informações, saberá mais sobre os problemas que afetam você e outros clientes e oferecerá soluções aprimoradas.
+  [Defender/AllowCloudProtection](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-defender#defender-allowcloudprotection) – quando definido como *Sim*, o Microsoft Defender envia informações à Microsoft sobre os problemas encontrados. A Microsoft analisará essas informações, saberá mais sobre os problemas que afetam você e outros clientes e oferecerá soluções aprimoradas.
 
   Quando essa política é definida como *Sim*, você pode usar *Tipo de consentimento de envio de amostra do Defender* para dar aos usuários controle sobre o envio de informações do seu dispositivo.  
 
   **Padrão**: Sim
 
 - **Ação de aplicativo potencialmente indesejado do Defender**  
-  [Defender/PUAProtection](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-defender#defender-puaprotection) – o antivírus do Windows Defender pode identificar e bloquear *aplicativos potencialmente indesejados* (PUAs) de serem baixados e instalados em pontos de extremidade na sua rede. 
+  [Defender/PUAProtection](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-defender#defender-puaprotection) – o Microsoft Defender Antivírus pode identificar e bloquear *PUAs (aplicativos potencialmente indesejados)* de serem baixados e instalados em pontos de extremidade na sua rede. 
  
-  - Quando definido como *Bloquear*, o Windows Defender bloqueia os PUAs e lista-os no histórico juntamente com outras ameaças.
-  - Quando definido como *Auditoria*, o Windows Defender detecta os PUAs, mas não os bloqueia. As informações sobre os aplicativos sobre os quais o Windows Defender teria que agir podem ser encontradas pesquisando os eventos que foram criados pelo Windows Defender no Visualizador de Eventos.  
+  - Quando definido como *Bloquear*, o Microsoft Defender bloqueia os PUAs e lista-os no histórico juntamente com outras ameaças.
+  - Quando definido como *Auditoria*, o Microsoft Defender detecta os PUAs, mas não os bloqueia. As informações sobre os aplicativos sobre os quais o Microsoft Defender teria que agir podem ser encontradas pesquisando os eventos que foram criados pelo Microsoft Defender no Visualizador de Eventos.  
   - Quando definido como *Padrão do dispositivo*, a proteção de PUA está desativada.  
  
   **Padrão**: Bloquear
 
 - **Tempo limite estendido de nuvem do Defender**  
-  [Defender/CloudExtendedTimeout](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-defender#defender-cloudextendedtimeout) - especifique o máximo de tempo adicional para o Windows Defender Antivírus bloquear um arquivo enquanto aguarda um resultado da nuvem. O valor base do tempo de espera do Windows Defender é 10 segundos. Qualquer tempo adicional especificado aqui (até 50 segundos) é adicionado a esses 10 segundos. Na maioria dos casos, a verificação leva menos tempo do que o máximo. Estender o tempo permite que a nuvem investigue completamente os arquivos suspeitos.  
+  [Defender/CloudExtendedTimeout](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-defender#defender-cloudextendedtimeout) - especifique o máximo de tempo adicional para o Microsoft Defender Antivírus bloquear um arquivo enquanto aguarda um resultado da nuvem. O valor base do tempo de espera do Microsoft Defender é 10 segundos. Qualquer tempo adicional especificado aqui (até 50 segundos) é adicionado a esses 10 segundos. Na maioria dos casos, a verificação leva menos tempo do que o máximo. Estender o tempo permite que a nuvem investigue completamente os arquivos suspeitos.  
 
   Por padrão, o valor de tempo expandido é 0 (desabilitado). O Intune recomenda que você habilite essa configuração e especifique pelo menos 20 segundos adicionais.  
  
   **Padrão**: 0
 
 - **Verificar arquivos mortos**  
-  [Defender/AllowArchiveScanning](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-defender#defender-allowarchivescanning) – definido como *Sim* para que o Windows Defender verifique arquivos mortos.  
+  [Defender/AllowArchiveScanning](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-defender#defender-allowarchivescanning) – definido como *Sim* para que o Microsoft Defender verifique arquivos mortos.  
 
   **Padrão**: Sim
 
@@ -381,17 +381,17 @@ Para obter mais informações, veja [CSP de política – Defender](https://docs
   **Padrão**: definido pelo usuário
 
 - **Monitoramento de comportamento**  
-  [Defender/AllowBehaviorMonitoring](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-defender#defender-allowbehaviormonitoring) – definido como *Sim* para ativar a funcionalidade de monitoramento do comportamento do Windows Defender. Inseridos no Windows 10, os sensores de Monitoramento de Comportamento do Windows Defender coletam e processam sinais comportamentais do sistema operacional e enviam esses dados do sensor à sua instância de nuvem privada e isolada do Microsoft Defender ATP.  
+  [Defender/AllowBehaviorMonitoring](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-defender#defender-allowbehaviormonitoring) – definido como *Sim* para ativar a funcionalidade de monitoramento do comportamento do Microsoft Defender. Inseridos no Windows 10, os sensores de Monitoramento de Comportamento do Microsoft Defender coletam e processam sinais comportamentais do sistema operacional e enviam esses dados do sensor à sua instância de nuvem privada e isolada do Microsoft Defender ATP.  
 
   **Padrão**: Sim
 
 - **Examinar arquivos abertos em pastas de rede**  
-  [Defender/AllowScanningNetworkFiles](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-defender#defender-allowscanningnetworkfiles) – definido como *Sim* para que o Windows Defender verifique arquivos na rede. O usuário não poderá remover nenhum malware detectado de arquivos somente leitura.  
+  [Defender/AllowScanningNetworkFiles](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-defender#defender-allowscanningnetworkfiles) – definido como *Sim* para que o Microsoft Defender verifique arquivos na rede. O usuário não poderá remover nenhum malware detectado de arquivos somente leitura.  
 
   **Padrão**: Sim
 
 - **Nível de bloco de nuvem do Defender**  
-  [Defender/CloudBlockLevel](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-defender#defender-cloudblocklevel) – use essa política para determinar o nível de agressividade do antivírus do Windows Defender em bloquear e verificar os arquivos suspeitos. As opções incluem:
+  [Defender/CloudBlockLevel](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-defender#defender-cloudblocklevel) – use essa política para determinar o nível de agressividade do Microsoft Defender Antivírus em bloquear e verificar os arquivos suspeitos. As opções incluem:
 
   - Alta – bloqueia agressivamente os arquivos desconhecidos, otimizando o desempenho do cliente (maior chance de falsos positivos)
   - Mais alta – bloqueia agressivamente os arquivos desconhecidos e aplica medidas de proteção adicionais (pode afetar o desempenho do cliente)
@@ -400,24 +400,24 @@ Para obter mais informações, veja [CSP de política – Defender](https://docs
   **Padrão**: Não configurado
 
 - **Monitoramento em tempo real**  
-  [Defender/AllowRealtimeMonitoring](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-defender#defender-allowrealtimemonitoring) – definido como *Sim* para permitir o monitoramento do Windows Defender em tempo real.  
+  [Defender/AllowRealtimeMonitoring](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-defender#defender-allowrealtimemonitoring) – definido como *Sim* para permitir o monitoramento do Microsoft Defender em tempo real.  
 
   **Padrão**: Sim
 
 - **Limite de uso da CPU durante um exame**  
-  [Defender/AvgCPULoadFactor](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-defender#defender-avgcpuloadfactor) – especifique a média máxima de % de uso da CPU que o Windows Defender pode usar durante uma verificação.  
+  [Defender/AvgCPULoadFactor](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-defender#defender-avgcpuloadfactor) – especifique a média máxima de % de uso da CPU que o Microsoft Defender pode usar durante uma verificação.  
 
   **Padrão**: 50
 
 - **Examinar unidades de rede mapeadas durante um exame completo**  
-  [Defender/AllowFullScanOnMappedNetworkDrives](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-defender#defender-allowfullscanonmappednetworkdrives) – definido como *Sim* para que o Windows Defender verifique arquivos na rede. O usuário não poderá remover nenhum malware detectado de arquivos somente leitura,
+  [Defender/AllowFullScanOnMappedNetworkDrives](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-defender#defender-allowfullscanonmappednetworkdrives) – definido como *Sim* para que o Microsoft Defender verifique arquivos na rede. O usuário não poderá remover nenhum malware detectado de arquivos somente leitura,
 
   Configurações relacionadas nesta lista: *Defender/AllowScanningNetworkFiles*
 
   **Padrão**: Sim
 
 - **Bloquear acesso do usuário final ao Defender**  
-  [Defender/AllowUserUIAccess](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-defender#defender-allowuseruiaccess) – definido como *Sim* para bloquear o acesso de usuários finais na interface do usuário do Windows Defender em seu dispositivo.  
+  [Defender/AllowUserUIAccess](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-defender#defender-allowuseruiaccess) – definido como *Sim* para bloquear o acesso de usuários finais na interface do usuário do Microsoft Defender em seu dispositivo.  
 
   **Padrão**: Sim
 
@@ -426,7 +426,7 @@ Para obter mais informações, veja [CSP de política – Defender](https://docs
 
   **Padrão**: 2h00
 
-## <a name="windows-defender-firewall"></a>Windows Defender Firewall
+## <a name="microsoft-defender-firewall"></a>Microsoft defender firewall
 Para saber mais, veja [CSP de Firewall](https://docs.microsoft.com/windows/client-management/mdm/firewall-csp) na documentação do Windows.
 
 - **Tempo ocioso da associação de segurança antes da exclusão** - *MdmStore/Global/SaIdleTime*   
@@ -560,29 +560,29 @@ Para saber mais, veja [CSP de Firewall](https://docs.microsoft.com/windows/clien
 ## <a name="web--network-protection"></a>Proteção de rede e da Web  
 
 - **Tipo de proteção de rede**  
-  [Defender/EnableNetworkProtection](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-defender#defender-enablenetworkprotection) - essa política permite que você ative ou desative a proteção de rede no Windows Defender Exploit Guard. A proteção de rede é um recurso do Windows Defender Exploit Guard que protege os funcionários usando qualquer aplicativo do acesso a golpes de phishing, sites que hospedam explorações e conteúdo mal-intencionado na Internet. Isso inclui impedir que navegadores de terceiros se conectem a sites perigosos.  
+  [Defender/EnableNetworkProtection](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-defender#defender-enablenetworkprotection) - essa política permite que você ative ou desative a proteção de rede no Microsoft Defender Exploit Guard. A proteção de rede é um recurso do Microsoft Defender Exploit Guard que protege os funcionários usando qualquer aplicativo do acesso a golpes de phishing, sites que hospedam explorações e conteúdo mal-intencionado na Internet. Isso inclui impedir que navegadores de terceiros se conectem a sites perigosos.  
 
-  Quando estiver definido como *Habilitar* ou *Modo de auditoria*, os usuários não poderão desativar a proteção de rede e você poderá usar a Central de Segurança do Windows Defender para exibir informações sobre as tentativas de conexão.  
+  Quando estiver definido como *Habilitar* ou *Modo de auditoria*, os usuários não poderão desativar a proteção de rede e você poderá usar a Central de Segurança do Microsoft Defender para exibir informações sobre as tentativas de conexão.  
  
   - *Habilitar* impedirá os usuários e os aplicativos de se conectarem a domínios perigosos.  
   - *Modo de auditoria* não impedirá os usuários e os aplicativos de se conectarem a domínios perigosos.  
 
-  Quando definido como *Definido pelo usuário*, os usuários e os aplicativos não são impedidos de se conectarem a domínios perigosos e as informações sobre conexões não estão disponíveis na Central de Segurança do Windows Defender.  
+  Quando definido como *Definido pelo usuário*, os usuários e os aplicativos não são impedidos de se conectarem a domínios perigosos e as informações sobre conexões não estão disponíveis na Central de Segurança do Microsoft Defender.  
 
   **Padrão**: Modo de auditoria
 
 - **Exigir SmartScreen para Microsoft Edge**  
-  [Browser/AllowSmartScreen](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-browser#browser-allowsmartscreen) - o Microsoft Edge usa o Windows Defender SmartScreen (ligado) para proteger os usuários contra possíveis golpes de phishing e software mal-intencionado por padrão. Por padrão, essa política está habilitada (definida como *Sim*) e, quando habilitada, impede que os usuários desativem o Windows Defender SmartScreen.  Quando a política efetiva para um dispositivo é igual a não configurado, os usuários podem desativar o Windows Defender SmartScreen, que deixa o dispositivo desprotegido.  
+  [Browser/AllowSmartScreen](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-browser#browser-allowsmartscreen) - o Microsoft Edge usa o Microsoft Defender SmartScreen (ativado) para proteger os usuários contra possíveis golpes de phishing e software mal-intencionado por padrão. Por padrão, essa política está habilitada (definida como *Sim*) e, quando habilitada, impede que os usuários desativem o Microsoft Defender SmartScreen.  Quando a política efetiva para um dispositivo é igual a não configurado, os usuários podem desativar o Microsoft Defender SmartScreen, que deixa o dispositivo desprotegido.  
 
   **Padrão**: Sim
   
 - **Bloquear acesso a sites mal-intencionados**  
-  [Browser/PreventSmartScreenPromptOverride](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-browser#browser-preventsmartscreenpromptoverride) - por padrão, o Microsoft Edge permite que os usuários contornem (ignorem) os avisos do Windows Defender SmartScreen sobre sites potencialmente mal-intencionados, permitindo que os usuários prossigam para o site. Com essa política habilitada (definida como *Sim*), o Microsoft Edge impede que os usuários ignorem os avisos e os impede de prosseguir para o site.  
+  [Browser/PreventSmartScreenPromptOverride](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-browser#browser-preventsmartscreenpromptoverride) - por padrão, o Microsoft Edge permite que os usuários contornem (ignorem) os avisos do Microsoft Defender SmartScreen sobre sites potencialmente mal-intencionados, permitindo que os usuários prossigam para o site. Com essa política habilitada (definida como *Sim*), o Microsoft Edge impede que os usuários ignorem os avisos e os impede de prosseguir para o site.  
 
   **Padrão**: Sim
 
 - **Bloquear download de arquivo não verificado**  
-  [Browser/PreventSmartScreenPromptOverrideForFiles](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-browser#browser-preventsmartscreenpromptoverrideforfiles) - por padrão, o Microsoft Edge permite que os usuários contornem (ignorem) os avisos do Windows Defender SmartScreen sobre sites potencialmente mal-intencionados, permitindo que os usuários continuem baixando arquivos não verificado. Com essa política habilitada (definida como *Sim*), os usuários são impedidos de ignorar os avisos e não podem baixar os arquivos não verificados.  
+  [Browser/PreventSmartScreenPromptOverrideForFiles](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-browser#browser-preventsmartscreenpromptoverrideforfiles) - por padrão, o Microsoft Edge permite que os usuários contornem (ignorem) os avisos do Microsoft Defender SmartScreen sobre sites potencialmente mal-intencionados, permitindo que os usuários continuem baixando arquivos não verificado. Com essa política habilitada (definida como *Sim*), os usuários são impedidos de ignorar os avisos e não podem baixar os arquivos não verificados.  
 
   **Padrão**: Sim
 

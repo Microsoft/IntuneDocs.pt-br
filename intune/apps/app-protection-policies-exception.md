@@ -1,7 +1,7 @@
 ---
 title: Exceções da política de transferência de dados para aplicativos
 titleSuffix: Microsoft Intune
-description: Crie exceções para a política de transferência de dados de MAM (gerenciamento de aplicativo móvel) do Intune.
+description: Crie exceções para a política de transferência de dados da APP (Política de Proteção de Aplicativo) do Intune.
 keywords: ''
 author: Erikre
 ms.author: erikre
@@ -18,16 +18,16 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 6453f5b5886c5691383bc81fb76598146e884e0e
-ms.sourcegitcommit: 25acfc88b366d2da71c37d354a0238e4f1168325
+ms.openlocfilehash: 18b1b8feda00f5c669b39bc365c637dcd3968078
+ms.sourcegitcommit: a7c35efb31c4efd816bd4aba29240013965aee92
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/23/2019
-ms.locfileid: "72813336"
+ms.lasthandoff: 11/13/2019
+ms.locfileid: "73984065"
 ---
-# <a name="how-to-create-exceptions-to-the-intune-mobile-application-management-mam-data-transfer-policy"></a>Como criar exceções para a política de transferência de dados de MAM (gerenciamento de aplicativo móvel) do Intune
+# <a name="how-to-create-exceptions-to-the-intune-app-protection-policy-app-data-transfer-policy"></a>Como criar exceções para a política de transferência de dados da APP (Política de Proteção de Aplicativo) do Intune
 
-Como um administrador, você pode criar exceções para a política de transferência de dados de MAM (gerenciamento de aplicativo móvel) do Intune. Uma exceção permite que você escolha especificamente quais aplicativos não gerenciados podem transferir dados entre aplicativos gerenciados. O departamento de TI precisa confiar nos aplicativos não gerenciados incluídos na lista de exceções. 
+Como administrador, você pode criar exceções para a política de transferência de dados da APP (Política de Proteção de Aplicativo) do Intune. Uma exceção permite que você escolha especificamente quais aplicativos não gerenciados podem transferir dados entre aplicativos gerenciados. O departamento de TI precisa confiar nos aplicativos não gerenciados incluídos na lista de exceções. 
 
 >[!WARNING] 
 > Você é responsável por fazer alterações na política de exceção de transferência de dados. As adições a essa política permitem que aplicativos não gerenciados (aplicativos que não são gerenciados pelo Intune) acessem dados protegidos por aplicativos gerenciados. Esse acesso aos dados protegidos pode resultar em vazamentos de segurança de dados. Adicione exceções de transferência de dados somente a aplicativos que sua organização deve usar, mas que não sejam compatíveis com as APPs (políticas de proteção do aplicativo) do Intune. Além disso, adicione exceções somente para aplicativos que não representam riscos de vazamento de dados.
@@ -65,6 +65,8 @@ Ao adicionar o pacote **Webex** como uma exceção à política de transferênci
     <code>com.android.mms</code>
     
     <code>com.samsung.android.messaging</code>
+
+- Exemplo do **Instalador de certificado** do Android: Para isentar aplicativo nativo do **Instalador de certificado** para que o Outlook para Android possa instalar um certificado S/MIME (entregue como um anexo de email) no Repositório de chaves do Android, você deve adicionar a exceção de transferência de dados na seguinte cadeia de caracteres: <code>com.android.certinstaller</code>. Para obter mais informações, confira [Proteção e rotulagem de confidencialidade no Outlook para iOS e Android](https://docs.microsoft.com/exchange/clients-and-mobile-in-exchange-online/outlook-for-ios-and-android/sensitive-labeling-and-protection-outlook-for-ios-android).
 
 ## <a name="next-steps"></a>Próximas etapas
 

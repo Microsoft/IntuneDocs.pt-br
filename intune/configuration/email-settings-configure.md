@@ -6,7 +6,7 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 09/04/2019
+ms.date: 11/07/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.subservice: configuration
@@ -16,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: e8961614a85992b927e31d590c7abadca75a85a6
-ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
+ms.openlocfilehash: 75644ac4d8ccfb8a63e077f2b6625ac96364f5d7
+ms.sourcegitcommit: 1a7f04c80548e035be82308d2618492f6542d3c0
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/16/2019
-ms.locfileid: "72492871"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "73755200"
 ---
 # <a name="add-email-settings-to-devices-using-intune"></a>Adicionar configurações de email a dispositivos usando o Intune
 
@@ -39,8 +39,8 @@ Este artigo mostra como criar um perfil de email no Microsoft Intune. Também in
 
 ## <a name="create-a-device-profile"></a>Criar um perfil de dispositivo
 
-1. Conecte-se ao [Intune](https://go.microsoft.com/fwlink/?linkid=2090973).
-2. Selecione **Configuração do dispositivo** > **Perfis** > **Criar perfil**.
+1. Entre no [Centro de Administração do Gerenciador de Ponto de Extremidade da Microsoft](https://go.microsoft.com/fwlink/?linkid=2109431).
+2. Selecione **Dispositivos** > **Perfis de configuração** > **Criar perfil**.
 3. Insira as seguintes propriedades:
 
     - **Nome**: Insira um nome descritivo para a política. Nomeie suas políticas para que você possa identificá-las facilmente mais tarde. Por exemplo, um bom nome de política seria **Configurações de email para todos os dispositivos Windows**.
@@ -71,7 +71,7 @@ Depois de você inserir suas configurações e criar o perfil, seu perfil será 
 
 Perfis de email são atribuídos a grupos de dispositivos, não a grupos de usuários. Há diferentes maneiras de remover um perfil de email de um dispositivo, mesmo quando há perfil de apenas um email no dispositivo:
 
-- **Opção 1**: Abra o perfil de email (**Configuração do dispositivo** > **Perfis**) e escolha **Atribuições**. A guia **Incluir** mostra os grupos que recebem o perfil. Clique com o botão direito do mouse no grupo > **Remover**. Não se esqueça de **Salvar** suas alterações.
+- **Opção 1**: Abra o perfil de email (**Dispositivos** > **Perfis de configuração** > selecione seu perfil) e escolha **Atribuições**. A guia **Incluir** mostra os grupos que recebem o perfil. Clique com o botão direito do mouse no grupo > **Remover**. Não se esqueça de **Salvar** suas alterações.
 
 - **Opção 2**: [Apague ou desative o dispositivo](../remote-actions/devices-wipe.md). Você pode usar essas ações para remover total ou seletivamente dados e configurações.
 
@@ -103,4 +103,4 @@ Se você fizer alterações em um perfil de email atribuído anteriormente, os u
 
 ## <a name="next-steps"></a>Próximas etapas
 
-Depois que o perfil é criado, ele ainda não faz nada. Em seguida, [atribua o perfil a alguns dispositivos](../device-profile-assign.md).
+Depois que o perfil é criado, ele ainda não faz nada. Em seguida, [atribua o perfil](../device-profile-assign.md).

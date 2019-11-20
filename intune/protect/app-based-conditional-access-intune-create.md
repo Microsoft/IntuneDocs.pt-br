@@ -6,52 +6,65 @@ keywords: ''
 author: brenduns
 ms.author: brenduns
 manager: dougeby
-ms.date: 02/22/2019
+ms.date: 11/06/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.subservice: protect
 ms.localizationpriority: high
 ms.technology: ''
 ms.assetid: d1693515-de18-4553-91ef-801976cd3ec7
-ms.reviewer: chrisgre
+ms.reviewer: elocholi
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 94e9fcc77f8260c4a63150b5d0aef033677c524a
-ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
+ms.openlocfilehash: 465f8b0001e5e2a049a3ffe12469bdb5057854ec
+ms.sourcegitcommit: 28622c5455adfbce25a404de4d0437fa2b5370be
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/16/2019
-ms.locfileid: "72509682"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "73712844"
 ---
 # <a name="set-up-app-based-conditional-access-policies-with-intune"></a>Configurar políticas de Acesso Condicional baseadas em aplicativo com o Microsoft Intune
 
-[!INCLUDE [azure_portal](../includes/azure_portal.md)]
-
 Configure políticas de Acesso Condicional baseadas em aplicativo para aplicativos que fazem parte da lista de aplicativos aprovados. A lista de aplicativos aprovados consiste em aplicativos que foram testados pela Microsoft.
+
+Para usar políticas de Acesso Condicional baseadas em aplicativo, é necessário configurar [Políticas da proteção de aplicativo do Intune](../apps/app-protection-policies.md) para os aplicativos.
 
 > [!IMPORTANT]
 > Este artigo explica as etapas para adicionar uma política de Acesso Condicional baseada em aplicativo. Você pode usar as mesmas etapas ao adicionar aplicativos como o SharePoint Online, o Microsoft Teams e o Microsoft Exchange Online da lista de aplicativos aprovados.
 
 ## <a name="create-app-based-conditional-access-policies"></a>Criar políticas de Acesso Condicional baseadas em aplicativo
-O Acesso Condicional é uma tecnologia do Azure AD (Azure Active Directory). O nó Acesso Condicional acessado no *Intune* é o mesmo nó que o acessado no *Azure AD*. Isso significa que você não precisa alternar entre o Intune e o Azure AD para configurar políticas.
 
-> [!IMPORTANT]
-> É necessário ter uma licença do Azure AD Premium para criar políticas de Acesso Condicional no Portal do Intune.
+O Acesso Condicional é uma tecnologia do Azure AD (Azure Active Directory). O nó de Acesso condicional acessado no *Intune* é o mesmo nó acessado no *Azure AD*. Por ser o mesmo nó, você não precisa alternar entre o Intune e o Azure AD para configurar políticas.
+
+Antes de poder criar políticas de Acesso Condicional do Centro de Administração do Gerenciador de Ponto de Extremidade da Microsoft, você deve ter uma licença Azure AD Premium.
 
 ### <a name="to-create-an-app-based-conditional-access-policy"></a>Para criar uma política de Acesso Condicional baseada em aplicativo
 
-> [!IMPORTANT]
-> É necessário ter [políticas da Proteção de Aplicativo do Intune](../apps/app-protection-policies.md) aplicadas aos aplicativos para usar políticas de Acesso Condicional baseadas em aplicativo.
+1. Entrar no [Centro de Administração do Gerenciador de Ponto de Extremidade da Microsoft](https://go.microsoft.com/fwlink/?linkid=2109431)
 
-1. No **Painel do Intune**, selecione **Acesso condicional**.
+2. Selecione **Segurança de ponto de extremidade** > **Acesso condicional** > **Nova política**.
 
-2. No painel **Políticas**, escolha **Nova política** para criar a nova política de Acesso Condicional baseada em aplicativo.
+3. Insira **Nome** da política e em *Atribuições*, selecione **Usuários e grupos**. Use as opções Incluir ou Excluir para adicionar os grupos para a política e selecione **Concluído**.
 
-4. Depois de inserir um nome para a política e definir as configurações disponíveis na seção **Atribuições**, escolha **Conceder** na seção **Controles de acesso**.
+4. Selecione **Aplicativos de nuvem ou ações** e escolha quais aplicativos proteger. Por exemplo, escolha **Selecionar aplicativos** e selecione **Office 365 SharePoint Online** e **Exchange Online do Office 365**.
 
-5. Escolha **Exigir o aplicativo do cliente aprovado**, escolha **Selecionar** e, em seguida, escolha **Criar** para salvar a nova política.
+   Selecione **Concluído** para salvar suas alterações.
+
+5. Selecione **Condições** > **Aplicativos do cliente** para aplicar a política para aplicativos e navegadores. Por exemplo, selecione **Sim** e, em seguida, habilitar **Navegador** e **Aplicativos móveis e clientes de área de trabalho**.
+
+   Selecione **Concluído** para salvar suas alterações.
+
+6. Em *Controle de acesso*, selecione **Conceder** para aplicar Acesso Condicional baseado na conformidade do dispositivo. Por exemplo, selecione **Conceder acesso** > **Exigir que o dispositivo seja marcado como compatível**.
+
+   Marque **Selecionar** para salvar suas alterações.
+
+7. Para **Habilitar a política**, selecione **Ativado** e **Criar** para salvar as alterações.
+
+
+
+
 
 ## <a name="next-steps"></a>Próximas etapas
 [Bloquear aplicativos que não têm autenticação moderna](app-modern-authentication-block.md)

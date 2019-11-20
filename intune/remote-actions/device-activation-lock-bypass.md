@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 7a813d3bb574ae940b0003ac451b6e76638a0dd0
-ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
+ms.openlocfilehash: 02d0fb91df07d8bba233a6f814ffcf36d408e95d
+ms.sourcegitcommit: 28622c5455adfbce25a404de4d0437fa2b5370be
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/16/2019
-ms.locfileid: "72508656"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "73712373"
 ---
 # <a name="bypass-activation-lock-on-supervised-ios-devices-with-intune"></a>Ignorar o Bloqueio de ativação em dispositivos iOS supervisionados com o Intune
 
@@ -74,7 +74,7 @@ Antes de usar o bypass de Bloqueio de Ativação nos dispositivos, é necessári
 
 A ação de dispositivo remoto **Ignorar Bloqueio de Ativação** do Intune remove o Bloqueio de Ativação de um dispositivo iOS sem a necessidade da ID da Apple e da senha do usuário. Depois que você ignorar o Bloqueio de Ativação, o dispositivo ativará o Bloqueio de Ativação novamente quando o aplicativo Localizar meu iPhone for iniciado. Ignore o Bloqueio de Ativação apenas se tiver acesso físico ao dispositivo.
 
-1. Conecte-se ao [Intune](https://go.microsoft.com/fwlink/?linkid=2090973).
+1. Entre no [Centro de Administração do Gerenciador de Ponto de Extremidade da Microsoft](https://go.microsoft.com/fwlink/?linkid=2109431).
 3. Na folha **Intune**, selecione **Dispositivos**.
 4. Na folha **Dispositivos**, selecione **Todos os dispositivos**.
 5. Na lista de dispositivos gerenciados, selecione a ação de dispositivo remoto **Ignorar Bloqueio de Ativação**.

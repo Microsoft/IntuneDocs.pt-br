@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 882c542d6a1d981b9924bb33eee40f03b41689f7
-ms.sourcegitcommit: 4bf23327af734a9811d555fbd566c31239e2acd6
+ms.openlocfilehash: b5983742043dca9d07242315d4aaa97de2ead8d6
+ms.sourcegitcommit: a7c35efb31c4efd816bd4aba29240013965aee92
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/29/2019
-ms.locfileid: "72999486"
+ms.lasthandoff: 11/13/2019
+ms.locfileid: "73984016"
 ---
 # <a name="selectively-wipe-data-using-app-protection-policy-conditional-launch-actions-in-intune"></a>Apagar dados seletivamente usando ações de inicialização condicional da política de proteção de aplicativos no Intune
 
@@ -44,9 +44,6 @@ Você pode escolher explicitamente apagar os dados corporativos da empresa do di
 7. Selecione uma **Configuração** e insira o **Valor** que os usuários precisam cumprir para entrar no aplicativo da empresa. 
 8. Selecione a **Ação** a ser executada se os usuários não atenderem aos seus requisitos. Em alguns casos, várias ações podem ser definidas para uma única configuração. Para obter mais informações, confira [Como criar e atribuir políticas de proteção de aplicativo](app-protection-policies.md).
 
->[!NOTE]
-> Para usar a configuração **Modelos de dispositivo ou fabricantes de dispositivo**, insira uma lista separada por ponto e vírgula com os identificadores de modelos de dispositivos (iOS) ou fabricantes de dispositivos (Android). Evite usar espaços em listas de vários valores. Esses valores não diferenciam maiúsculas de minúsculas. 
-
 ## <a name="policy-settings"></a>Configurações de política 
 
 A tabela de configurações da política de proteção do aplicativo tem colunas para **Configuração**, **Valor** e **Ação**.
@@ -62,7 +59,7 @@ Para iOS, você poderá configurar ações para as seguintes configurações usa
 - Modelos de dispositivo
 - Nível máximo permitido de ameaça ao dispositivo
 
-Para usar a configuração **Modelos de dispositivo**, insira uma lista separada por ponto e vírgula de identificadores de modelo iOS. Você pode encontrar um identificador de modelo iOS na coluna Tipo de Dispositivo na [documentação de suporte do HockeyApp](https://support.hockeyapp.net/kb/client-integration-ios-mac-os-x-tvos/ios-device-types).<br>
+Para usar a configuração **Modelos de dispositivo**, insira uma lista separada por ponto e vírgula de identificadores de modelo iOS. Esses valores não diferenciam maiúsculas de minúsculas. Além dos relatórios do Intune para a entrada de 'Modelo(s) de dispositivos', você pode encontrar um identificador de modelo do iOS na coluna Tipo de dispositivo da [documentação de suporte do HockeyApp](https://support.hockeyapp.net/kb/client-integration-ios-mac-os-x-tvos/ios-device-types) ou neste [repositório de terceiros no GitHub](https://gist.github.com/adamawolf/3048717).<br>
 Exemplo de entrada: *iPhone5,2;iPhone5,3*
 
 Em dispositivos de usuário final, o cliente do Intune executaria uma ação com base em uma correspondência simples de cadeias de caracteres de modelo de dispositivo especificadas no Intune para Políticas de Proteção de Aplicativo. A correspondência depende totalmente do que é relatado pelo dispositivo. Você (o administrador de TI) é incentivado a garantir que o comportamento pretendido ocorra testando essa configuração com base em uma variedade de fabricantes e modelos de dispositivos e direcionando-o a um grupo de usuários pequeno. O valor padrão é **Não configurado**.<br>
@@ -90,7 +87,7 @@ Para o Android, você poderá configurar ações para as seguintes configuraçõ
 
 Com a **Versão mínima do Portal da Empresa**, você pode determinar uma versão mínima definida específica do Portal da Empresa que é imposta em um dispositivo de usuário final. Essa configuração de inicialização condicional permite que você defina valores para **Bloquear acesso**, **Apagar dados** e **Avisar** como possíveis ações quando cada valor não for atendido. Os formatos possíveis para esse valor seguem o padrão *[Major].[Minor]* , *[Major].[Minor].[Build]* ou *[Major].[Minor].[Build].[Revision]* . Considerando que alguns usuários finais podem preferir não receber uma atualização forçada de aplicativos no local, a opção "Avisar" pode ser ideal ao definir essa configuração. O Google Play Store faz um bom trabalho ao enviar apenas os bytes delta para atualizações do aplicativo, mas isso ainda pode ser uma grande quantidade de dados que o usuário talvez não queira utilizar caso esteja com dados no momento da atualização. Forçar uma atualização e, portanto, baixar um aplicativo atualizado pode resultar em encargos de dados inesperados no momento da atualização. A configuração **Versão mínima do Portal da Empresa**, se configurada, afetará todos os usuários finais que receberem a versão 5.0.4560.0 do Portal da Empresa e todas as versões futuras do Portal da Empresa. Essa configuração não terá nenhum efeito nos usuários que usam uma versão do Portal da Empresa mais antiga do que a versão na qual esse recurso é lançado. Os usuários finais que usam as atualizações automáticas do aplicativo nos dispositivos provavelmente não verão nenhuma caixa de diálogo desse recurso, considerando que eles provavelmente estarão na versão mais recente do Portal da Empresa. Essa configuração é apenas para Android, com proteção de aplicativo para dispositivos registrados e não registrados.
 
-Para usar a configuração **Fabricantes de dispositivo**, insira uma lista separada por ponto e vírgula de fabricantes Android. Você pode encontrar o fabricante Android de um dispositivo nas configurações do dispositivo.<br>
+Para usar a configuração **Fabricantes de dispositivo**, insira uma lista separada por ponto e vírgula de fabricantes Android. Esses valores não diferenciam maiúsculas de minúsculas. Você pode encontrar o fabricante de um dispositivo Android nos relatórios do Intune e também nas configurações do dispositivo. <br>
 Entrada de exemplo: *Fabricante A;Fabricante B* 
 
 >[!NOTE]

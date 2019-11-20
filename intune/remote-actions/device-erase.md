@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: e0379ffc6a3c3ffd83a9d121e622e9ee8f7c0af5
-ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
+ms.openlocfilehash: 428b4040eb0d91b7fe32fcf71842ce5bd1910013
+ms.sourcegitcommit: 28622c5455adfbce25a404de4d0437fa2b5370be
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/16/2019
-ms.locfileid: "72509508"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "73713226"
 ---
 # <a name="erase-all-data-from-a-macos-device"></a>Apagar todos os dados de um dispositivo macOS
 
@@ -31,7 +31,7 @@ ms.locfileid: "72509508"
 
 Você pode apagar todos os dados de um dispositivo macOS, incluindo o sistema operacional. O dispositivo também será removido do gerenciamento do Intune. Nenhum aviso será dado ao usuário final.
 
-1. No [Intune no Portal do Azure](https://aka.ms/intuneportal), escolha **Dispositivos** > **Todos os dispositivos** > escolha o dispositivo que deseja apagar.
+1. No [Centro de Administração do Gerenciador de Ponto de Extremidade da Microsoft](https://go.microsoft.com/fwlink/?linkid=2109431), selecione **Dispositivos** > **Todos os dispositivos** > escolha o dispositivo a apagar.
 ![Captura de tela](./media/device-erase/choosedevice.png)
 2. Clique em **Mais** > **Apagar** > forneça um número de 6 dígitos para o **PIN de recuperação**. Este é o PIN que você deve fornecer ao usuário para que ele possa reinstalar o sistema operacional no dispositivo. Certifique-se de anotar esse PIN porque ele não ficará visível após a conclusão da ação de apagar.
 ![Captura de tela](./media/device-erase/providepin.png)

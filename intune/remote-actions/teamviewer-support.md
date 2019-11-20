@@ -16,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: ac9d22ff4b203a4e7a85121df6c021eec1bcd1e3
-ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
+ms.openlocfilehash: d03859d5775193e6bbc482c06b28942a1a5bce2f
+ms.sourcegitcommit: 28622c5455adfbce25a404de4d0437fa2b5370be
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/16/2019
-ms.locfileid: "72508530"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "73712146"
 ---
 # <a name="use-teamviewer-to-remotely-administer-intune-devices"></a>Usar o TeamViewer para administrar remotamente os dispositivos do Intune
 
@@ -47,8 +47,8 @@ Ao usar o TeamViewer, você permite que o Conector do TeamViewer para o Intune c
 
 Para fornecer assistência remota aos dispositivos, configure o conector do TeamViewer do Intune, de acordo com as seguintes etapas:
 
-1. No [Portal do Azure](https://portal.azure.com), selecione **Todos os serviços** e pesquise o **Microsoft Intune**.
-2. Em **Microsoft Intune**, selecione **Dispositivos** e, em seguida, selecione **Conector do TeamViewer**.
+1. Entre no [Centro de Administração do Gerenciador de Ponto de Extremidade da Microsoft](https://go.microsoft.com/fwlink/?linkid=2109431).
+2. Selecione **Dispositivos** > **Conector do TeamViewer**.
 3. Selecione **Conectar** e, em seguida, aceite o contrato de licença.
 4. Selecione **Efetuar logon no TeamViewer para autorizar**.
 5. Uma página da Web é aberta no site do TeamViewer. Insira suas credenciais da licença do TeamViewer e, em seguida, **Entre**.
@@ -57,8 +57,8 @@ Para fornecer assistência remota aos dispositivos, configure o conector do Team
 
 Depois que o conector está configurado, você está pronto para administrar remotamente um dispositivo. Use as etapas a seguir: 
 
-1. No [Portal do Azure](https://portal.azure.com), selecione **Todos os serviços** e pesquise o **Microsoft Intune**.
-2. Em **Microsoft Intune**, selecione **Dispositivos** e, em seguida, selecione **Todos os dispositivos**.
+1. No [Centro de Administração do Gerenciador de Ponto de Extremidade da Microsoft](https://go.microsoft.com/fwlink/?linkid=2109431).
+2. Selecione **Dispositivos** e, em seguida, **Todos os dispositivos**.
 3. Na lista, selecione o dispositivo que você deseja administrar remotamente. Nas propriedades do dispositivo, selecione **Nova Sessão de Assistência Remota**.
 4. Depois que o Intune se conectar ao serviço do TeamViewer, você verá algumas informações sobre o dispositivo. **Conecte-se** para iniciar a sessão remota.
 

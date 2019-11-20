@@ -6,7 +6,7 @@ keywords: ''
 author: ErikjeMS
 ms.author: erikje
 manager: dougeby
-ms.date: 10/31/2019
+ms.date: 11/08/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.subservice: fundamentals
@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure; get-started
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: ac6da1b15d482d20340163b0bb79e88d74e8e375
-ms.sourcegitcommit: 2c8a41ee95a3fde150667a377770e51b621ead65
+ms.openlocfilehash: 37ed7bfd204289c963b8134252d9d76f2379ecba
+ms.sourcegitcommit: 768d581cb8bcc5fdcb8ade95d402b11223ab226c
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/06/2019
-ms.locfileid: "73635352"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "73882488"
 ---
 # <a name="whats-new-in-microsoft-intune"></a>Novidades do Microsoft Intune
 
@@ -53,12 +53,20 @@ Conheça as novidades de cada semana do Microsoft Intune. Você também pode enc
 ### Role-based access control
 -->  
 
+## <a name="week-of-november-4-2019"></a>Semana de 4 de novembro de 2019
+
+### <a name="device-security"></a>Segurança de dispositivo
+
+#### <a name="security-baselines-are-supported-on-microsoft-azure-government---4062552---"></a>As linhas de base de segurança recebem suporte no Microsoft Azure Governamental<!-- 4062552 -->
+
+Agora as instâncias do Intune hospedadas no *Microsoft Azure Governamental* podem usar as [linhas de base de segurança](../protect/security-baselines.md) para ajudar na segurança e na proteção de seus usuários e dispositivos.
+
 ## <a name="week-of-october-28-2019"></a>Semana de 28 de outubro de 2019
 
 ### <a name="app-management"></a>Gerenciamento de aplicativos
 
 #### <a name="improved-checklist-design-in-company-portal-app-for-android---5550857---"></a>Design aprimorado para listas de verificação no aplicativo Portal da Empresa para Android<!-- 5550857 -->  
-A lista de verificação de configuração no aplicativo Portal da Empresa para Android foi atualizada com um design leve e novos ícones. As alterações se alinham com as recentes atualizações do aplicativo Portal da Empresa para iOS. Estamos no processo de distribuir essas atualizações de aplicativo para todos os clientes e esperar que sejam concluídas até o final da próxima semana. Para ver uma comparação lado a lado das alterações, confira [Novidades na interface do usuário do aplicativo](whats-new-app-ui.md). Para ver as etapas de registro atualizadas, confira [Registrar com o perfil de trabalho do Android](/intune-user-help/enroll-device-android-work-profile) e [Registrar seu dispositivo Android](/intune-user-help/enroll-device-android-company-portal).  
+A lista de verificação de configuração no aplicativo Portal da Empresa para Android foi atualizada com um design leve e novos ícones. As alterações se alinham com as recentes atualizações do aplicativo Portal da Empresa para iOS. Para ver uma comparação lado a lado das alterações, confira [Novidades na interface do usuário do aplicativo](whats-new-app-ui.md). Para ver as etapas de registro atualizadas, confira [Registrar com o perfil de trabalho do Android](/intune-user-help/enroll-device-android-work-profile) e [Registrar seu dispositivo Android](/intune-user-help/enroll-device-android-company-portal).  
 
 #### <a name="win32-apps-on-windows-10-s-mode-devices---3747604---"></a>Aplicativos Win32 em dispositivos no modo Windows 10 S<!-- 3747604 --> 
 É possível instalar e executar aplicativos Win32 em dispositivos gerenciados com o modo Windows 10 S. Para isso, é possível criar uma ou mais políticas complementares para o modo S usando as ferramentas do PowerShell do WDAC (Controle de Aplicativos do Windows Defender). Assine as políticas complementares no Portal de Autenticação do Device Guard e, em seguida, carregue e distribua as políticas por meio do Intune. No Intune, você encontrará esse recurso ao selecionar **Aplicativos cliente** > **Políticas complementares do Windows 10 S**. Confira mais informações em [Habilitar aplicativos Win32 no modo S](~/apps/apps-win32-s-mode.md).
@@ -73,7 +81,7 @@ Você pode exigir que um dispositivo seja reiniciado depois que um aplicativo Wi
 O Modo escuro está disponível para o Portal da Empresa no iOS. Os usuários podem baixar aplicativos da empresa, gerenciar seus dispositivos e obter suporte de TI no esquema de cores de sua escolha, com base nas configurações do dispositivo. O Portal da Empresa para iOS corresponderá automaticamente às configurações do dispositivo do usuário final para o modo escuro ou claro. Para obter mais informações, confira [Introdução ao modo escuro no Portal da Empresa do Microsoft Intune para iOS](https://techcommunity.microsoft.com/t5/Enterprise-Mobility-Security/Introducing-dark-mode-on-Microsoft-Intune-Company-Portal-for-iOS/ba-p/918453). Para obter mais informações sobre o Portal da Empresa do iOS, confira [Como configurar o aplicativo Portal da Empresa do Microsoft Intune](~/apps/company-portal-app.md).
 
 #### <a name="android-company-portal-enforced-minimum-app-version---2378776---"></a>O Portal da Empresa para Android impõem a versão mínima do aplicativo<!-- 2378776 -->
-Com a configuração **Versão mínima do Portal da Empresa** de uma política de proteção de aplicativo, você pode especificar uma versão mínima definida específica do Portal da Empresa que é imposta em um dispositivo de usuário final. Essa configuração de inicialização condicional permite que você use **Bloquear acesso**, **Apagar dados** ou **Avisar** como possíveis ações quando o valor não for atendido. Os formatos possíveis para esse valor seguem o padrão *[Major].[Minor]*, *[Major].[Minor].[Build]* ou *[Major].[Minor].[Build].[Revision]*.
+Com a configuração **Versão mínima do Portal da Empresa** de uma política de proteção de aplicativo, você pode especificar uma versão mínima definida específica do Portal da Empresa que é imposta em um dispositivo de usuário final. Essa configuração de inicialização condicional permite que você use **Bloquear acesso**, **Apagar dados** ou **Avisar** como possíveis ações quando o valor não for atendido. Os formatos possíveis para esse valor seguem o padrão *[Major].[Minor]* , *[Major].[Minor].[Build]* ou *[Major].[Minor].[Build].[Revision]* .
 
 A configuração **Versão mínima do Portal da Empresa**, se configurada, afetará todos os usuários finais que receberem a versão 5.0.4560.0 do Portal da Empresa e todas as versões futuras do Portal da Empresa. Essa configuração não terá nenhum efeito nos usuários que usam uma versão do Portal da Empresa mais antiga do que a versão na qual esse recurso é lançado. Os usuários finais que usam as atualizações automáticas do aplicativo nos dispositivos provavelmente não verão nenhuma caixa de diálogo desse recurso, considerando que eles provavelmente estarão na versão mais recente do Portal da Empresa. Essa configuração é apenas para Android, com proteção de aplicativo para dispositivos registrados e não registrados. Para mais informações, confira [Configurações de política de proteção do aplicativo Android – Inicialização condicional](~/apps/app-protection-policy-settings-android.md#conditional-launch).
 
@@ -145,7 +153,7 @@ Aplica-se a:
 #### <a name="toggle-to-only-show-enrollment-status-page-on-devices-provisioned-by-out-of-box-experience-oobe--3959566--"></a>Alterne para mostrar apenas a Página de Status do Registro em dispositivos provisionados pela OOBE (experiência de configuração inicial pelo usuário)<!--3959566-->
 Agora você pode optar por mostrar apenas a Página de Status do Registro em dispositivos provisionados pelo OOBE do AutoPilot.
 
-Para ver a nova alternância, escolha **Intune** > **Registro de dispositivo** > **Registro do Windows** > **Página de Status de Registro** > **Criar perfil** > **Configurações** > **Exibir somente a página para dispositivos provisionados pela OOBE (experiência de configuração inicial pelo usuário)**.
+Para ver a nova alternância, escolha **Intune** > **Registro de dispositivo** > **Registro do Windows** > **Página de Status de Registro** > **Criar perfil** > **Configurações** > **Exibir somente a página para dispositivos provisionados pela OOBE (experiência de configuração inicial pelo usuário)** .
 
 
 <!-- ########################## -->
@@ -631,10 +639,10 @@ Você pode criar perfis para restringir configurações em dispositivos com iOS 
 
 - Em **iOS** > **Restrições do dispositivo**, há algumas alterações:
 
-  - **Aplicativos internos** > **Buscar iPhone (somente supervisionado)**: nova configuração que bloqueia esse recurso, no recurso do aplicativo Buscar. 
-  - **Aplicativos internos** > **Buscar Amigos (somente supervisionado)**: nova configuração que bloqueia esse recurso, no recurso do aplicativo Buscar. 
-  - **Sem fio** > **Modificação do estado do Wi-Fi (somente supervisionado)**: nova configuração que impede os usuários de ativar ou desativar o Wi-Fi nos dispositivos.
-  - **Teclado e Dicionário** > **QuickPath (somente supervisionado)**: nova configuração que bloqueia o recurso QuickPath.
+  - **Aplicativos internos** > **Buscar iPhone (somente supervisionado)** : nova configuração que bloqueia esse recurso, no recurso do aplicativo Buscar. 
+  - **Aplicativos internos** > **Buscar Amigos (somente supervisionado)** : nova configuração que bloqueia esse recurso, no recurso do aplicativo Buscar. 
+  - **Sem fio** > **Modificação do estado do Wi-Fi (somente supervisionado)** : nova configuração que impede os usuários de ativar ou desativar o Wi-Fi nos dispositivos.
+  - **Teclado e Dicionário** > **QuickPath (somente supervisionado)** : nova configuração que bloqueia o recurso QuickPath.
   - **Nuvem e armazenamento**: a **Continuação da atividade** é renomeada para **Handoff**.
 
   Para ver as configurações atuais, vá para [Configurações do dispositivo iOS para permitir ou restringir recursos usando o Intune](../configuration/device-restrictions-ios.md).
@@ -924,7 +932,7 @@ Aplica-se a: iOS
 Quando você cria um perfil de restrições de dispositivo para dispositivos iOS, pode usar uma impressão digital para uma senha. Nessa atualização, as configurações de senha de impressão digital também permitem reconhecimento facial (**Configuração do dispositivo** > **Perfis** > **Criar perfil** > **iOS** para a plataforma > **Restrições de dispositivo** tipo de perfil > **Senha**). Como resultado, as configurações a seguir mudaram:
 
 - **Desbloqueio por impressão digital** agora é **Desbloqueio por Touch ID e Face ID**.
-- **Modificação de impressão digital (somente supervisionada)** agora é **Modificação de Touch ID e Face ID (somente supervisionada)**.
+- **Modificação de impressão digital (somente supervisionada)** agora é **Modificação de Touch ID e Face ID (somente supervisionada)** .
 
 O Face ID está disponível no iOS 11.0 e posteriores. Para ver as configurações, vá para [Configurações do dispositivo iOS para permitir ou restringir recursos usando o Intune](../configuration/device-restrictions-ios.md#password).
 
@@ -1057,7 +1065,7 @@ A execução de scripts do PowerShell pode ser configurada com privilégios de a
 #### <a name="android-enterprise-app-management---4459905---"></a>Gerenciamento de aplicativos do Android Enterprise<!-- 4459905 -->
 Para facilitar a configuração e o uso do gerenciamento de Android Enterprise pelos administradores de TI, o Intune adicionará automaticamente quatro aplicativos comuns relacionados ao Android Enterprise ao console do administrador do Intune. Os quatro aplicativos do Android Enterprise são os seguintes apps:
 
-- **[Microsoft Intune](https://play.google.com/store/apps/details?id=com.microsoft.intune) ** – usado para cenários totalmente gerenciados pelo Android Enterprise.
+- **[Microsoft Intune](https://play.google.com/store/apps/details?id=com.microsoft.intune)**  – usado para cenários totalmente gerenciados pelo Android Enterprise.
 - **[Microsoft Authenticator](https://play.google.com/store/apps/details?id=com.azure.authenticator)** – ajuda a entrar em suas contas se usar a verificação de dois fatores.
 - **[Portal da Empresa do Intune](https://play.google.com/store/apps/details?id=com.microsoft.windowsintune.companyportal)** – usado para cenários de perfil de trabalho das Políticas de Proteção do Aplicativo (APP) e do Android Enterprise.
 - [Tela inicial gerenciada](https://play.google.com/store/apps/details?id=com.microsoft.launcher.enterprise) – usado para cenários dedicados/quiosques do Android Enterprise.

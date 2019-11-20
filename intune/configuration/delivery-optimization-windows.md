@@ -5,7 +5,7 @@ keywords: ''
 author: brenduns
 ms.author: brenduns
 manager: dougeby
-ms.date: 03/12/2019
+ms.date: 11/04/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.subservice: configuration
@@ -15,12 +15,12 @@ ms.suite: ems
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
 ms.reviewer: kerimh
-ms.openlocfilehash: 7d94a2c7e47b3cfcc9f4592faf0a4c2a09a24ac4
-ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
+ms.openlocfilehash: 908319c588fe2a1bf55a376d3f02a03db780a3ad
+ms.sourcegitcommit: 1a7f04c80548e035be82308d2618492f6542d3c0
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/16/2019
-ms.locfileid: "72495248"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "73755405"
 ---
 # <a name="delivery-optimization-settings-in-microsoft-intune"></a>Configurações de otimização de entrega no Microsoft Intune
 
@@ -32,27 +32,25 @@ Para obter uma lista das configurações de otimização de entrega com suporte 
 
 Para conhecer a Otimização de entrega no Windows 10, confira [Atualizações de otimização de entrega](https://docs.microsoft.com/windows/deployment/update/waas-delivery-optimization) na documentação do Windows.  
 
-
 > [!NOTE]
-> **Atualizações de software > Anéis de Atualização do Windows 10** é substituído pelas configurações de **Otimização de entrega**. Seus anéis de atualização existentes podem ser alterados para usar as configurações de **Otimização de entrega**. [Mover os anéis de atualização existentes para otimização da entrega](#move-existing-update-rings-to-delivery-optimization) (neste artigo) 
+> **Atualizações de software > Anéis de Atualização do Windows 10** é substituído pelas configurações de **Otimização de entrega**. Seus anéis de atualização existentes podem ser alterados para usar as configurações de **Otimização de entrega**. [Mover os anéis de atualização existentes para otimização da entrega](#move-existing-update-rings-to-delivery-optimization) (neste artigo)
+
 ## <a name="create-the-profile"></a>Criar o perfil
 
-1. Conecte-se ao [Intune](https://go.microsoft.com/fwlink/?linkid=2090973).
+1. Entre no [Centro de Administração do Gerenciador de Ponto de Extremidade da Microsoft](https://go.microsoft.com/fwlink/?linkid=2109431).
 
-2. Selecione **Configuração do dispositivo** > **Perfis** > **Criar Perfil**.
+2. Selecione **Dispositivos** > **Perfis de configuração** > **Criar perfil**.
 
 3. Insira as seguintes propriedades:
 
     - **Nome**: insira um nome descritivo para o novo perfil.
     - **Descrição**: Insira uma descrição para o perfil. Essa configuração é opcional, mas recomendada.
-    - **Plataforma**: Escolha a plataforma:  
-
-        - **Windows 10 e posterior**
-
+    - **Plataforma**: Selecione **Windows 10 e posterior**.
     - **Tipo de perfil**: Escolha **Otimização da entrega**.
-    - **Configurações**: configure como você deseja que as atualizações e aplicativos sejam baixados. Para saber mais sobre as configurações disponíveis, confira [Configurações de otimização de entrega para o Intune](../delivery-optimization-settings.md).
 
-4. Quando terminar, selecione **OK** > **Criar** para salvar as alterações.
+4. Escolha **Configurações** > **Configurar** e defina como você deseja que as atualizações e aplicativos sejam baixados. Para saber mais sobre as configurações disponíveis, confira [Configurações de otimização de entrega para o Intune](../delivery-optimization-settings.md).
+
+5. Quando terminar, selecione **OK** > **Criar** para salvar as alterações.
 
 O perfil é criado e aparece na lista. Em seguida, [atribua o perfil](device-profile-assign.md) e, em seguida, [monitore seu status](device-profile-monitor.md).
 
@@ -62,7 +60,7 @@ As configurações de **Otimização de entrega** substituem as **Atualizações
 
 1. Crie um perfil de configuração de otimização de entrega:
 
-    1. No Intune, selecione **Configuração do dispositivo** > **Perfis** > **Criar perfil**.
+    1. No centro de administração do Gerenciador de Ponto de Extremidade da Microsoft, selecione **Dispositivos** > **Perfis de configuração** > **Criar perfil**.
     2. Insira as seguintes propriedades:
 
         - **Nome**: insira um nome descritivo para o novo perfil.
@@ -78,10 +76,11 @@ As configurações de **Otimização de entrega** substituem as **Atualizações
             - **Modo de download simples sem emparelhamento**
             - **Modo bypass**
     3. Defina outras configurações adicionais que você deseja gerenciar.
-1. Atribua esse perfil novo aos mesmos dispositivos e usuários que o anel de atualização de software existente. [Atribuir o perfil](device-profile-assign.md) lista as etapas.
+
+2. Atribua esse perfil novo aos mesmos dispositivos e usuários que o anel de atualização de software existente. [Atribuir o perfil](device-profile-assign.md) lista as etapas.
 
 3. Desconfigure o anel de software existente:
-    1. No Intune, acesse **Atualizações de software** > Anéis de atualização do Windows 10.
+    1. No centro de administração do Gerenciador de Ponto de Extremidade da Microsoft, acesse **Atualizações de software** > Anéis de atualização do Windows 10.
     2. Na lista, selecione o anel de atualização.
     3. Nas configurações, defina o **Modo de download de otimização da entrega** como **Não configurado**.
     4. **OK** > **Salve** suas alterações.

@@ -16,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: a72477351425e9230200995658cc6f73a8565fb7
-ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
+ms.openlocfilehash: 918468bf8948ce54082f3fccc0325db07e116966
+ms.sourcegitcommit: 28622c5455adfbce25a404de4d0437fa2b5370be
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/16/2019
-ms.locfileid: "72509484"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "73713195"
 ---
 # <a name="see-device-details-in-intune"></a>Consultar detalhes do dispositivo no Intune
 
@@ -33,7 +33,7 @@ Este artigo mostra como exibir todos os dispositivos e suas propriedades no port
 
 ## <a name="view-the-device-details"></a>Exibir os detalhes do dispositivo
 
-1. Conecte-se ao [Intune](https://go.microsoft.com/fwlink/?linkid=2090973).
+1. Entre no [Centro de Administração do Gerenciador de Ponto de Extremidade da Microsoft](https://go.microsoft.com/fwlink/?linkid=2109431).
 3. Selecione **Dispositivos** > **Todos os dispositivos** > selecione um de seus dispositivos listados para abrir os detalhes:
 
    - **Visão geral** mostra o nome do dispositivo e descreve algumas das principais propriedades do dispositivo, por exemplo, se ele é do tipo BYOD (traga seu próprio dispositivo), o horário do check-in e muito mais. Você pode fazer o seguinte no dispositivo:

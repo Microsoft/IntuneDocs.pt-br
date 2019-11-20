@@ -4,7 +4,7 @@ description: O Microsoft 365 Enterprise inclui o Microsoft Intune. Veja como o I
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 10/14/2019
+ms.date: 11/13/2019
 ms.topic: conceptual
 audience: ITPro
 ms.service: microsoft-intune
@@ -16,12 +16,12 @@ ms.reviewer: dougeby
 ms.suite: ems
 search.appverid: MET150
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: cfa7e34d19465eb43b5eb9cd68b7513545938fa8
-ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
+ms.openlocfilehash: 7ab41026cd9b2ceeaaa478fc27c984d0d89db4c5
+ms.sourcegitcommit: 78cebd3571fed72a3a99e9d33770ef3d932ae8ca
 ms.translationtype: MTE75
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/16/2019
-ms.locfileid: "72504784"
+ms.lasthandoff: 11/13/2019
+ms.locfileid: "74058523"
 ---
 # <a name="device-management-overview"></a>Visão geral do gerenciamento de dispositivo
 
@@ -84,7 +84,7 @@ Ao configurar o Intune, você também pode optar por trabalhar exclusivamente no
 
 ## <a name="simplify-it-tasks-using-the-device-management-admin-center"></a>Simplificar as tarefas de TI usando o centro de administração do Gerenciamento de Dispositivo
 
-O [centro de administração do Gerenciamento de Dispositivo](https://devicemanagement.microsoft.com/) é um ponto único centralizado para gerenciar e concluir as tarefas em seus dispositivos móveis. Este espaço de trabalho inclui os serviços usados para gerenciamento de dispositivos, incluindo o Intune e o Azure Active Directory, e também para gerenciar aplicativos de cliente.
+O [Centro de Administração do Gerenciador de Ponto de Extremidade da Microsoft](https://go.microsoft.com/fwlink/?linkid=2109431) é um ponto único centralizado para gerenciar e concluir as tarefas em seus dispositivos móveis. Este espaço de trabalho inclui os serviços usados para gerenciamento de dispositivos, incluindo o Intune e o Azure Active Directory, e também para gerenciar aplicativos de cliente.
 
 No centro de administração do gerenciamento de dispositivos, você pode:
 

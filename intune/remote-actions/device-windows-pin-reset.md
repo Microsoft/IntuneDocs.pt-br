@@ -16,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 445737a1b0a72e380844af6225cdb735cd3ec02c
-ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
+ms.openlocfilehash: 1b2390462376c88129435de30eb98020563f3878
+ms.sourcegitcommit: 28622c5455adfbce25a404de4d0437fa2b5370be
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/16/2019
-ms.locfileid: "72509361"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "73713092"
 ---
 # <a name="reset-the-passcode-on-windows-devices-using-intune"></a>Redefinir senha em dispositivos Windows usando o Intune
 
@@ -64,11 +64,10 @@ Defina o valor dessa CSP como **True**.
 
 ## <a name="reset-the-passcode"></a>Redefinir a senha
 
-1. Entre no [Portal do Azure](https://portal.azure.com). 
-2. Selecione **Todos os serviços**, filtre por **Intune** e selecione **Microsoft Intune**.
-3. Selecione **Dispositivos** e, em seguida, **Todos os dispositivos**.
-4. Selecione o dispositivo para o qual você deseja redefinir a senha. Nas propriedades do dispositivo, selecione **Nova senha**.
-5. Selecione **Sim** para confirmar. A senha é gerada e exibida no portal pelos próximos sete dias.
+1. Entre no [Centro de Administração do Gerenciador de Ponto de Extremidade da Microsoft](https://go.microsoft.com/fwlink/?linkid=2109431). 
+2. Selecione **Dispositivos** e, em seguida, **Todos os dispositivos**.
+3. Selecione o dispositivo para o qual você deseja redefinir a senha. Nas propriedades do dispositivo, selecione **Nova senha**.
+4. Selecione **Sim** para confirmar. A senha é gerada e exibida no portal pelos próximos sete dias.
 
 ## <a name="next-step"></a>Próxima etapa
 

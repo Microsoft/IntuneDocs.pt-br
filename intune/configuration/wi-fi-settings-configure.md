@@ -5,22 +5,23 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 09/04/2019
+ms.date: 11/04/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.subservice: configuration
 ms.localizationpriority: high
 ms.technology: ''
+ms.reviewer: tycast
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: a794d724fe162ad7d464760661fecb45bd874431
-ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
+ms.openlocfilehash: 61957140fa8d942be0f3dca2543da2aed6183535
+ms.sourcegitcommit: 78cebd3571fed72a3a99e9d33770ef3d932ae8ca
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/16/2019
-ms.locfileid: "72506438"
+ms.lasthandoff: 11/13/2019
+ms.locfileid: "74059249"
 ---
 # <a name="add-and-use-wi-fi-settings-on-your-devices-in-microsoft-intune"></a>Adicionar e usar configurações de Wi-Fi em seus dispositivos no Microsoft Intune
 
@@ -49,8 +50,9 @@ Perfis de Wi-Fi dão suporte às seguintes plataformas de dispositivo:
 
 ## <a name="create-a-device-profile"></a>Criar um perfil de dispositivo
 
-1. No [Intune](https://go.microsoft.com/fwlink/?linkid=2090973), selecione **Configuração do dispositivo** > **Perfis** > **Criar perfil**.
-2. Insira as seguintes propriedades:
+1. Entre no [Centro de Administração do Gerenciador de Ponto de Extremidade da Microsoft](https://go.microsoft.com/fwlink/?linkid=2109431).
+2. Selecione **Dispositivos** > **Perfis de configuração** > **Criar perfil**.
+3. Insira as seguintes propriedades:
 
     - **Nome**: Insira um nome descritivo para o perfil. Nomeie seus perfis para que você possa identificá-los facilmente mais tarde. Por exemplo, um bom nome de perfil seria **Perfil Wi-Fi para toda a empresa**.
     - **Descrição**: Insira uma descrição para o perfil. Essa configuração é opcional, mas recomendada.
@@ -70,7 +72,7 @@ Perfis de Wi-Fi dão suporte às seguintes plataformas de dispositivo:
       > - Para dispositivos **Android Enterprise** executados como um dispositivo dedicado (quiosque), você pode escolher **Somente proprietário do dispositivo** > **Wi-Fi**.
       > - Para **Windows 8.1 e posteriores**, você pode escolher **Importação de Wi-Fi**. Essa opção possibilita importar as configurações de Wi-Fi como um arquivo XML previamente exportado de um dispositivo diferente.
 
-3. Algumas das configurações de Wi-Fi são diferentes para cada plataforma. Para ver as configurações de uma plataforma específica, escolha uma plataforma:
+4. Algumas das configurações de Wi-Fi são diferentes para cada plataforma. Para ver as configurações de uma plataforma específica, escolha uma plataforma:
 
     - [Android](wi-fi-settings-android.md)
     - [Android Enterprise](wi-fi-settings-android-enterprise.md), inclusive dispositivos dedicados
@@ -79,7 +81,7 @@ Perfis de Wi-Fi dão suporte às seguintes plataformas de dispositivo:
     - [Windows 10 e posterior](wi-fi-settings-windows.md)
     - [Windows 8.1 e posteriores](wi-fi-settings-import-windows-8-1.md), incluindo o Windows Holographic for Business
 
-4. Quando concluir, selecione **Criar perfil** > **Criar**.
+5. Quando concluir, selecione **Criar perfil** > **Criar**.
 
 O perfil é criado e exibido na lista de perfis (**Configuração do dispositivo** > **Perfis**).
 

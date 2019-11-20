@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 002989bd61167d6f0d20e2c5cb3fa80a4051a99c
-ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
+ms.openlocfilehash: a8393bbc012861199bd99d97a62ab3e659c15d15
+ms.sourcegitcommit: 28622c5455adfbce25a404de4d0437fa2b5370be
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/16/2019
-ms.locfileid: "72508665"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "73713236"
 ---
 # <a name="send-custom-notifications-in-intune"></a>Enviar notificações personalizadas no Intune  
 
@@ -69,7 +69,7 @@ As mensagens de notificação personalizadas incluem um título curto e um corpo
 
 ## <a name="send-a-custom-notification-to-groups"></a>Enviar uma notificação personalizada para grupos  
 
-1. Entre no [Intune](https://go.microsoft.com/fwlink/?linkid=2090973) com uma conta que tenha permissões para criar e enviar notificações e acesse **Dispositivos** > **Enviar notificações personalizadas**.  
+1. Entre no [Centro de administração do Gerenciador de Ponto de Extremidade da Microsoft](https://go.microsoft.com/fwlink/?linkid=2109431) com uma conta que tenha permissões para criar e enviar notificações e acesse **Dispositivos** > **Enviar notificações personalizadas**.  
 
 2. Na guia Informações Básicas, especifique as informações a seguir e, em seguida, selecione **Avançar** para continuar.  
    - **Título** – especifique um título para essa notificação. Os títulos são limitados a 50 caracteres.  
@@ -89,7 +89,7 @@ O Intune não acompanha as notificações personalizadas que você envia, e os d
 
 ## <a name="send-a-custom-notification-to-a-single-device"></a>Enviar uma notificação personalizada para um único dispositivo  
 
-1. Entre no [Intune](https://go.microsoft.com/fwlink/?linkid=2090973) com uma conta que tenha permissões para criar e enviar notificações e acesse **Dispositivos** > **Todos os Dispositivos**.  
+1. Entre no [Centro de administração do Gerenciador de Ponto de Extremidade da Microsoft](https://go.microsoft.com/fwlink/?linkid=2109431) com uma conta que tenha permissões para criar e enviar notificações e acesse **Dispositivos** > **Todos os dispositivos**.  
 
 2. Selecione o dispositivo para o qual você deseja enviar uma notificação.  
 

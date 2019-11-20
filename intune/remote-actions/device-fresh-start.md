@@ -16,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: ff1dc2565ef52f81619abe8f14e78c58da0fce7d
-ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
+ms.openlocfilehash: 294f06b078b06cfba9376ba6db0eb42cb884e141
+ms.sourcegitcommit: 28622c5455adfbce25a404de4d0437fa2b5370be
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/16/2019
-ms.locfileid: "72508621"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "73712319"
 ---
 # <a name="use-fresh-start-to-reset-windows-10-devices-with-intune"></a>Usar o Novo Início para redefinir dispositivos Windows 10 com o Intune
 
@@ -30,7 +30,7 @@ ms.locfileid: "72508621"
 
 A ação do dispositivo **Novo Início** remove todos os aplicativos instalados em um PC executando o Windows 10, versão 1703 ou posterior. O Novo Início ajuda a remover os aplicativos (OEM) pré-instalados que normalmente são instalados em um computador novo. 
 
-1. Entre no [portal do Azure](https://portal.azure.com) e acesse > **Microsoft Intune** > **Dispositivos** > **Todos os Dispositivos**.
+1. Entre no [Centro de Administração do Gerenciador de Ponto de Extremidade da Microsoft](https://go.microsoft.com/fwlink/?linkid=2109431) e selecione **Dispositivos** > **Todos os dispositivos**.
 2. Na lista de dispositivos que você gerencia, escolha um dispositivo de desktop Windows 10.
 3. Clique em **Novo Início**. 
 4. Selecione **manter os dados de usuário neste dispositivo** para:

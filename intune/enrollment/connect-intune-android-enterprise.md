@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 0fad076b33bed5375dd8e53dd401a2c9c4c39237
-ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
+ms.openlocfilehash: a89b94f098292bf44122d6d2d144c7f35967cd32
+ms.sourcegitcommit: 556b7ea2049014c9027f0e44affd3f301fab55fc
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/16/2019
-ms.locfileid: "72505564"
+ms.lasthandoff: 11/06/2019
+ms.locfileid: "73709458"
 ---
 # <a name="connect-your-intune-account-to-your-managed-google-play-account"></a>Conectar sua conta do Intune à sua conta do Google Play Gerenciado
 
@@ -42,7 +42,7 @@ Para facilitar a configuração e o uso do gerenciamento do Android Enterprise, 
 > Devido à interação entre os domínios da Google e da Microsoft, esta etapa pode exigir que você ajuste as configurações do navegador.  Verifique se "portal.azure.com" e "play.google.com" estão na mesma zona de segurança em seu navegador.
 
 1. Se você ainda não o fez, prepare-se para o gerenciamento de dispositivo móvel ao [configurar a autoridade de gerenciamento do dispositivo móvel](../fundamentals/mdm-authority-set.md) como **Microsoft Intune**.
-2. Entre no [Intune no Portal do Azure](https://aka.ms/intuneportal), escolha **Registro de dispositivo** > **Registro do Android** > **Google Play Gerenciado**.  Se você estiver usando uma função de administrador do Intune personalizada, o acesso a isso exigirá permissões de Leitura e Atualização da Organização.
+2. Entre no [Centro de Administração do Gerenciador de Ponto de Extremidade da Microsoft](https://go.microsoft.com/fwlink/?linkid=2109431) e escolha **Registro de dispositivos** > **Registro do Android** > **Google Play Gerenciado**.  Se você estiver usando uma função de administrador do Intune personalizada, o acesso a isso exigirá permissões de Leitura e Atualização da Organização.
    
    ![Tela de registro do Android Enterprise](./media/connect-intune-android-enterprise/android-work-bind.png)
 
@@ -63,7 +63,7 @@ Para facilitar a configuração e o uso do gerenciamento do Android Enterprise, 
 
 É possível desabilitar o registro e o gerenciamento do Android Enterprise. Para fazer isso, primeiro você deve desativar os dispositivos Android Enterprise registrados, incluindo dispositivos de perfil de trabalho, dispositivos dedicados e dispositivos totalmente gerenciados. Em seguida, escolha **Desconectar** no console de administração do Intune para remover do registro todos os dispositivos registrados de perfil de trabalho Android Enterprise, dispositivos dedicados e dispositivos totalmente gerenciados do registro. Isso também remove a relação entre a conta do Google Play Gerenciado e o Intune.
 
-1. Entre no [Intune](https://go.microsoft.com/fwlink/?linkid=2090973) como administrador do Intune.
+1. Como administrador do Intune, entre no [Centro de Administração do Gerenciador de Ponto de Extremidade da Microsoft](https://go.microsoft.com/fwlink/?linkid=2109431).
 2. Escolha **Registro de dispositivo** > **Registro do Android** > **Google Play gerenciado** > **Desconectar**.
 3. Escolha **Sim** para desconectar e cancelar o registro de todos os dispositivos Android Enterprise do Intune.
 

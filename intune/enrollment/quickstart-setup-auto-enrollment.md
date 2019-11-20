@@ -15,12 +15,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 6e64c7d977fef66af0fedf556eea34bef9b9079d
-ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
+ms.openlocfilehash: 78620818bfd13f0292e159c6a3670b5e3af53dab
+ms.sourcegitcommit: 556b7ea2049014c9027f0e44affd3f301fab55fc
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/16/2019
-ms.locfileid: "72503138"
+ms.lasthandoff: 11/06/2019
+ms.locfileid: "73709495"
 ---
 # <a name="quickstart-set-up-automatic-enrollment-for-windows-10-devices"></a>Início Rápido: Configurar o registro automático para dispositivos Windows 10
 
@@ -35,7 +35,7 @@ Se você não tiver uma assinatura do Intune, [inscreva-se para uma conta de ava
 
 ## <a name="sign-in-to-intune"></a>Entrar no Intune
 
-Entre no [Intune](https://aka.ms/intuneportal) como um Administrador Global ou um Administrador de Serviços do Intune. Se você tiver criado uma assinatura de avaliação do Intune, a conta com a qual você criou a assinatura será a de administrador Global.
+Entre no [Centro de Administração do Gerenciador de Ponto de Extremidade da Microsoft](https://go.microsoft.com/fwlink/?linkid=2109431) como Administrador global ou Administrador de Serviços do Intune. Se você tiver criado uma assinatura de avaliação do Intune, a conta com a qual você criou a assinatura será a de administrador Global.
 
 ## <a name="set-up-windows-10-automatic-enrollment"></a>Configurar o registro automático do Windows 10
 

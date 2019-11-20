@@ -5,7 +5,7 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 10/31/2019
+ms.date: 11/06/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.localizationpriority: high
@@ -15,12 +15,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 899d667ca271ae5c3edced18fab8da987c49b2ca
-ms.sourcegitcommit: 85c894cb4df34a5ff558e3b45e28a8b91054d9e6
+ms.openlocfilehash: 38f02d694f1935e4732805f3ae7c66fd9718057a
+ms.sourcegitcommit: 78cebd3571fed72a3a99e9d33770ef3d932ae8ca
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/01/2019
-ms.locfileid: "73432537"
+ms.lasthandoff: 11/13/2019
+ms.locfileid: "74059603"
 ---
 # <a name="use-device-firmware-configuration-interface-profiles-on-windows-devices-in-microsoft-intune-public-preview"></a>Usar perfis da Interface de Configuração de Firmware de Dispositivo em dispositivos Windows no Microsoft Intune (visualização pública)
 
@@ -77,8 +77,8 @@ Esse perfil garante que os dispositivos sejam verificados e habilitados para a D
 
 Esse perfil inclui as configurações da DFCI que você define.
 
-1. Conecte-se ao [Intune](https://go.microsoft.com/fwlink/?linkid=2090973).
-2. Selecione **Configuração do dispositivo** > **Perfis** > **Criar perfil**.
+1. Entre no [Centro de Administração do Gerenciador de Ponto de Extremidade da Microsoft](https://go.microsoft.com/fwlink/?linkid=2109431).
+2. Selecione **Dispositivos** > **Perfis de configuração** > **Criar perfil**.
 3. Insira as seguintes propriedades:
 
     - **Nome**: Insira um nome descritivo para o perfil. Nomeie suas políticas para que você possa identificá-las facilmente mais tarde. Por exemplo, um bom nome de perfil é **Windows: Definir as configurações da DFCI em dispositivos Windows**.
@@ -88,7 +88,7 @@ Esse perfil inclui as configurações da DFCI que você define.
 
 4. Configure as definições:
 
-    - **Permitir que o usuário local altere as configurações da UEFI (BIOS)**: Suas opções:
+    - **Permitir que o usuário local altere as configurações da UEFI (BIOS)** : Suas opções:
       - **Somente as configurações não definidas**: o usuário local pode alterar qualquer configuração, *exceto* pelas configurações definidas explicitamente como **Habilitar** ou **Desabilitar** pelo Intune.
       - **Nenhum**: o usuário local não pode alterar nenhuma configuração da UEFI (BIOS), incluindo configurações não mostradas no perfil DFCI.
 
@@ -104,7 +104,7 @@ Esse perfil inclui as configurações da DFCI que você define.
         - **Não configurado**: o Intune não altera esse recurso e deixa as configurações no estado em que se encontram.
         - **Habilitado**: todos os alto-falantes e microfones internos gerenciados diretamente pela UEFI (BIOS) são habilitados. Dispositivos periféricos, como dispositivos USB, não são afetados.
         - **Desabilitado**: todos os alto-falantes e microfones internos gerenciados diretamente pela UEFI (BIOS) são desabilitados. Dispositivos periféricos, como dispositivos USB, não são afetados.
-    - **Rádios (Bluetooth, Wi-Fi, NFC etc.)**: Suas opções:
+    - **Rádios (Bluetooth, Wi-Fi, NFC etc.)** : Suas opções:
         - **Não configurado**: o Intune não altera esse recurso e deixa as configurações no estado em que se encontram.
         - **Habilitado**: todos os rádios internos gerenciados diretamente pela UEFI (BIOS) são habilitados. Dispositivos periféricos, como dispositivos USB, não são afetados.
         - **Desabilitado**: todos os rádios internos gerenciados diretamente pela UEFI (BIOS) são desabilitados. Dispositivos periféricos, como dispositivos USB, não são afetados.
@@ -112,7 +112,7 @@ Esse perfil inclui as configurações da DFCI que você define.
         > [!WARNING]
         > Se você desabilitar a configuração **Rádios**, o dispositivo exigirá uma conexão de rede com fio. Caso contrário, o dispositivo pode não ser gerenciável.
 
-    - **Inicialize de uma mídia externa (USB, SD)**: Suas opções:
+    - **Inicialize de uma mídia externa (USB, SD)** : Suas opções:
         - **Não configurado**: o Intune não altera esse recurso e deixa as configurações no estado em que se encontram.
         - **Habilitado**: a UEFI (BIOS) permite a inicialização de um armazenamento de disco não rígido.
         - **Desabilitado**: a UEFI (BIOS) não permite a inicialização de um armazenamento de disco não rígido.
@@ -127,9 +127,11 @@ Esse perfil inclui as configurações da DFCI que você define.
 
 Após serem criados, os perfis estão [prontos para serem atribuídos](../configuration/device-profile-assign.md). Atribua os perfis a seus grupos de segurança do Azure AD que incluem seus dispositivos DFCI.
 
-Na próxima vez em que o dispositivo for sincronizado ou reinicializado, as configurações de perfil da DFCI serão aplicadas. Após a política se aplicar, reinicialize o dispositivo.
+Quando o dispositivo executa o Windows Autopilot, durante a Página de Status do Registro, a DFCI pode forçar uma reinicialização. Essa primeira reinicialização registra a UEFI no Intune. 
 
-Quando o dispositivo executa a instalação do dispositivo Windows, a DFCI pode forçar uma reinicialização durante a Página de Status do Registro. Após a conclusão da instalação, você pode confirmar se as configurações da DFCI estão ativas reinicializando o dispositivo. Em seguida, use as instruções do fabricante do dispositivo para abrir o menu da UEFI.
+Se quiser confirmar se o dispositivo está registrado, você pode reinicializar o dispositivo novamente, mas isso não é necessário. Use as instruções do fabricante do dispositivo para abrir o menu da UEFI e confirmar que agora a UEFI é gerenciada.
+
+Na próxima vez que o dispositivo sincronizar com o Intune, o Windows receberá as configurações de DFCI. Reinicialize o dispositivo. Essa terceira reinicialização é necessária para que a UEFI receba as configurações de DFCI do Windows.
 
 ## <a name="update-existing-dfci-settings"></a>Atualizar configurações de DFCI existentes
 
@@ -156,7 +158,7 @@ Depois de apagar o dispositivo, mova-o para o grupo atribuído aos novos perfis 
 
 Quando estiver pronto para desativar o dispositivo e liberá-lo do gerenciamento, atualize no perfil da DFCI as configurações da UEFI (BIOS) que você deseja no estado de saída. Normalmente, você deseja que todas as configurações estejam habilitadas. Por exemplo:
 
-1. Abra seu perfil da DFCI (**Configuração do dispositivo** > **Perfis**).
+1. Abra seu perfil da DFCI (**Dispositivos** > **Perfis de configuração**).
 2. Altere **Permitir que o usuário local altere configurações da UEFI (BIOS)** para **Somente as configurações não definidas**.
 3. Defina todas as outras configurações como **Não configuradas**.
 4. Salve suas configurações.

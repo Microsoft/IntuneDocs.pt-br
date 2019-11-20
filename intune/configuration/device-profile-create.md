@@ -5,7 +5,7 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 09/04/2019
+ms.date: 11/04/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.subservice: configuration
@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 97227d5ca75b3584cb4e603a16601b2a22deb919
-ms.sourcegitcommit: 1a5b185acd27954b10b6d59409d82eb80fd71284
+ms.openlocfilehash: 51ec328a60ef2737c776bf6cf5d4b8dc1b32460c
+ms.sourcegitcommit: 1a7f04c80548e035be82308d2618492f6542d3c0
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/21/2019
-ms.locfileid: "72681453"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "73755321"
 ---
 # <a name="create-a-device-profile-in-microsoft-intune"></a>Criar um perfil de dispositivo no Microsoft Intune
 
@@ -39,16 +39,16 @@ Este artigo:
 
 ## <a name="create-the-profile"></a>Criar o perfil
 
-1. Conecte-se ao [Intune](https://go.microsoft.com/fwlink/?linkid=2090973).
+1. Entre no [Centro de Administração do Gerenciador de Ponto de Extremidade da Microsoft](https://go.microsoft.com/fwlink/?linkid=2109431).
 
-2. Selecione **Configuração do dispositivo**. Você tem as seguintes opções:
+2. Selecione **Dispositivos** > **Perfis de configuração**. Você tem as seguintes opções:
 
     - **Visão geral**: Lista o status dos perfis e fornece detalhes adicionais sobre os perfis que você atribuiu a usuários e dispositivos.
     - **Gerenciar**: Crie perfis de dispositivo, carregue [scripts personalizados do PowerShell](../apps/intune-management-extension.md) a serem executados no perfil e adicione planos de dados a dispositivos usando o [eSIM](esim-device-configuration.md).
     - **Monitorar**: Verifique o status de um perfil quanto ao êxito ou falha, além de exibir logs sobre os perfis.
     - **Configuração**: Adicione uma autoridade de certificação SCEP ou PFX ou habilite o [Telecom Expense Management](telecom-expenses-monitor.md) no perfil.
 
-3. Selecione **Perfis** > **Criar Perfil**. Insira as seguintes propriedades:
+3. Selecione **Criar perfil**. Insira as seguintes propriedades:
 
    - **Nome**: Insira um nome descritivo para o perfil. Nomeie seus perfis para que você possa identificá-los facilmente mais tarde. Por exemplo, um nome de perfil bom é **perfil de email do WP para toda a empresa**.
    - **Descrição**: Insira uma descrição para o perfil. Essa configuração é opcional, mas recomendada.

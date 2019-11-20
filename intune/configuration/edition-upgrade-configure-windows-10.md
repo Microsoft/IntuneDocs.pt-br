@@ -5,7 +5,7 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 04/22/2019
+ms.date: 11/04/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.subservice: configuration
@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: f5519429bae69fe277c72b12a2801a1875295824
-ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
+ms.openlocfilehash: 4cce3fafa1a8a074ea70692f855be1e032f0462f
+ms.sourcegitcommit: 1a7f04c80548e035be82308d2618492f6542d3c0
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/16/2019
-ms.locfileid: "72493780"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "73755251"
 ---
 # <a name="upgrade-windows-10-editions-or-switch-out-of-s-mode-on-devices-using-microsoft-intune"></a>Atualizar as edições do Windows 10 ou sair do modo S em dispositivos usando o Microsoft Intune
 
@@ -96,16 +96,13 @@ A tabela a seguir lista os caminhos de atualização com suporte para o perfil d
 
 ## <a name="create-the-profile"></a>Criar o perfil
 
-1. Conecte-se ao [Intune](https://go.microsoft.com/fwlink/?linkid=2090973).
-2. Selecione **Configuração do dispositivo** > **Perfis** > **Criar Perfil**.
+1. Entre no [Centro de Administração do Gerenciador de Ponto de Extremidade da Microsoft](https://go.microsoft.com/fwlink/?linkid=2109431).
+2. Selecione **Dispositivos** > **Perfis de configuração** > **Criar perfil**.
 3. Insira as seguintes propriedades:
 
     - **Nome**: insira um nome descritivo para o novo perfil. Por exemplo, insira algo como `Windows 10 edition upgrade profile` ou `Windows 10 switch off S mode`.
     - **Descrição**: Insira uma descrição para o perfil. Essa configuração é opcional, mas recomendada.
-    - **Plataforma**: Escolha a plataforma:  
-
-        - **Windows 10 e posterior**
-
+    - **Plataforma**: Selecione **Windows 10 e posterior**.
     - **Tipo de perfil**: Selecione **Atualização de edição**.
     - **Configurações**: Insira as configurações que você deseja definir. Para obter uma lista de todas as configurações e o que elas fazem, confira:
 

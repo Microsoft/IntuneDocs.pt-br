@@ -6,7 +6,7 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 08/22/2019
+ms.date: 11/06/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.subservice: apps
@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 9625243698bffc93ed969a8c2e4b06b4f3093f4d
-ms.sourcegitcommit: 06a1fe83fd95c9773c011690e8520733e1c031e3
+ms.openlocfilehash: ff9a37a1dd815b6ec9d7522604796310e7f0b5ce
+ms.sourcegitcommit: a7c35efb31c4efd816bd4aba29240013965aee92
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/23/2019
-ms.locfileid: "72785528"
+ms.lasthandoff: 11/13/2019
+ms.locfileid: "73984099"
 ---
 # <a name="how-to-manage-ios-and-macos-apps-purchased-through-apple-volume-purchase-program-with-microsoft-intune"></a>Como gerenciar aplicativos iOS e macOS adquiridos por meio do Apple Volume Purchase Program com o Microsoft Intune
 
@@ -72,7 +72,6 @@ Antes de começar, você precisará obter um token do VPP da Apple e carregá-lo
 * Cada token é válido por um ano.
 * Por padrão, o Intune é sincronizado com o serviço VPP da Apple duas vezes por dia. É possível iniciar uma sincronização manual a qualquer momento.
 * Antes de começar a usar o Apple VPP com o Intune, remova todas as contas de usuários do VPP existentes criadas com outros fornecedores de MDM (gerenciamento de dispositivo móvel). O Intune não sincroniza essas contas de usuário no Intune como uma medida de segurança. O Intune sincroniza somente os dados do serviço Apple VPP criados pelo Intune.
-* O Intune dá suporte à adição de até 256 tokens VPP.
 * O programa de Perfil de registro do dispositivo (DEP) Apple automatiza o registro de MDM (gerenciamento do dispositivo móvel). Ao usar o DEP, você pode configurar dispositivos da empresa sem tocá-los. Você pode se registrar no programa de DEP usando a mesma conta de agente do programa que usou no VPP da Apple. A ID do Programa de implantação da Apple é exclusiva para programas listados no site dos [Programas de implantação da Apple](https://deploy.apple.com) e não pode ser usada para fazer logon em serviços Apple, como na loja iTunes.
 * Quando você atribui aplicativos VPP usando o modelo de licenciamento de usuário para usuários ou dispositivos (com afinidade de usuário), cada usuário do Intune precisa ser associado com uma ID da Apple exclusiva ou um endereço de email ao aceitar os termos e condições da Apple em seu dispositivo.
 * Use a ID da Apple exclusiva ou o endereço de email do usuário ao configurar um dispositivo para um novo usuário do Intune. A ID da Apple ou o endereço de email e o usuário do Intune formam um par exclusivo e podem ser usados em até cinco dispositivos.
@@ -89,6 +88,8 @@ Antes de começar, você precisará obter um token do VPP da Apple e carregá-lo
 5. No painel **Criar token do VPP**, especifique as seguintes informações:
     - **Arquivo de token do VPP** – Se ainda não tiver feito isso, inscreva-se no Volume Purchase Program for Business ou no Volume Purchase Program for Education. Depois de se inscrever, baixe o token do Apple VPP em sua conta e selecione-o aqui.
     - **ID da Apple** – Insira a ID da Apple da conta associada ao programa de compra por volume.
+    - **Assumir o controle do token de outro MDM** – Definir essa opção como **Sim** permite que o token seja reatribuído ao Intune de outro MDM.
+    - **Nome do token** – um campo administrativo para definir o nome do token.    
     - **País/região**: escolha a loja do país/região do VPP.  O Intune sincroniza aplicativos do VPP para todas as localidades da loja VPP especificada de um país/região.
         > [!WARNING]  
         > Alterar o país/região atualizará os metadados de aplicativos e a URL da loja na próxima sincronização com o serviço da Apple para aplicativos criados com esse token. O aplicativo não será atualizado se não existir na loja do novo país/região.
@@ -98,6 +99,9 @@ Antes de começar, você precisará obter um token do VPP da Apple e carregá-lo
 
         > [!NOTE]
         > As atualizações automáticas do aplicativo funcionam para aplicativos licenciados para o dispositivo e para o usuário no iOS versão 11.0 e posteriores ou no macOS versão 10.12 e posteriores.
+
+    - **Eu concedo à Microsoft a permissão para enviar informações sobre o usuário e o dispositivo para a Apple.** – Você deve selecionar **Eu concordo** para continuar. Para examinar quais dados a Microsoft envia para a Apple, confira [Dados que o Intune envia para a Apple](~/protect/data-intune-sends-to-apple.md).
+
 6. Quando terminar, selecione **Criar**.
 
 O token será exibido na lista do painel de tokens.

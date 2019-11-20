@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 15c78d7e7f602b60b6e9f2cee365c9a02eb904df
-ms.sourcegitcommit: 1a7f04c80548e035be82308d2618492f6542d3c0
+ms.openlocfilehash: 38e8998d1720434b0fe866fc5cd41a0b733fc49b
+ms.sourcegitcommit: 78cebd3571fed72a3a99e9d33770ef3d932ae8ca
 ms.translationtype: MTE75
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/07/2019
-ms.locfileid: "73755010"
+ms.lasthandoff: 11/13/2019
+ms.locfileid: "74059851"
 ---
 # <a name="common-issues-and-resolutions-with-email-profiles-in-microsoft-intune"></a>Problemas comuns e soluções para perfis de dispositivo no Microsoft Intune
 
@@ -61,8 +61,8 @@ Examine a configuração do seu perfil de EAS para Samsung KNOX e a política de
 
 Os usuários que têm contas de email configuradas automaticamente não podem enviar imagens de seus dispositivos. Esse cenário pode ocorrer se a opção **Permitir que o email seja enviado de aplicativos de terceiros** não estiver habilitada.
 
-1. Entre no centro de [Administração do Microsoft Endpoint Manager](https://go.microsoft.com/fwlink/?linkid=2109431).
-2. Selecione **dispositivos** > **perfis de configuração**.
+1. Entre no [Centro de Administração do Gerenciador de Ponto de Extremidade da Microsoft](https://go.microsoft.com/fwlink/?linkid=2109431).
+2. Selecione **Dispositivos** > **Perfis de configuração**.
 3. Selecione seu perfil de email > **Propriedades** de  > **configurações**.
 4. Defina a configuração **permitir que o email seja enviado de aplicativos de** terceiros para **habilitar**o.
 

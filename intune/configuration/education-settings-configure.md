@@ -5,7 +5,7 @@ keywords: ''
 author: lenewsad
 ms.author: lanewsad
 manager: dougeby
-ms.date: 01/10/2019
+ms.date: 11/04/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.subservice: configuration
@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: f78c628498624b62daf6c3ac597547851697c500
-ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
+ms.openlocfilehash: 3942dbde1314ad5a749be33baa422a782af7e0a3
+ms.sourcegitcommit: 1a7f04c80548e035be82308d2618492f6542d3c0
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/16/2019
-ms.locfileid: "72493347"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "73755209"
 ---
 # <a name="use-the-take-a-test-app-on-windows-10-devices-in-microsoft-intune"></a>Usar o aplicativo Take a Test em dispositivos com Windows 10 no Microsoft Intune
 
@@ -38,8 +38,8 @@ Este artigo lista as etapas para criar um perfil de configuração de dispositiv
 
 ## <a name="create-a-device-profile"></a>Criar um perfil de dispositivo
 
-1. Conecte-se ao [Intune](https://go.microsoft.com/fwlink/?linkid=2090973).
-2. Selecione **Configuração do dispositivo** > **Perfis** > **Criar perfil**.
+1. Entre no [Centro de Administração do Gerenciador de Ponto de Extremidade da Microsoft](https://go.microsoft.com/fwlink/?linkid=2109431).
+2. Selecione **Dispositivos** > **Perfis de configuração** > **Criar perfil**.
 3. Insira as seguintes propriedades:
 
     - **Nome**: insira um nome descritivo para o novo perfil.

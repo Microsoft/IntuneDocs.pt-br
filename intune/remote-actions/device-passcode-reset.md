@@ -16,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: d7ca53786d372f53d63388fef1179ca271fdb9d9
-ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
+ms.openlocfilehash: be6a254360d8e8e9ef1396515d261b6ff9077b87
+ms.sourcegitcommit: 28622c5455adfbce25a404de4d0437fa2b5370be
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/16/2019
-ms.locfileid: "72508594"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "73713119"
 ---
 # <a name="reset-or-remove-a-device-passcode-in-intune"></a>Redefinir ou remover uma senha de dispositivo no Intune
 
@@ -57,10 +57,9 @@ Para criar uma nova senha de perfil de trabalho, use a ação de Redefinir senha
 ## <a name="reset-a-passcode"></a>Redefinir uma senha
 
 
-1. Entre no [portal do Azure](https://portal.azure.com) com uma das seguintes funções: Administrador Global do Azure Active Directory, Administrador de Serviço do Intune do Azure Active Directory, Operador de Helpdesk ou Administrador de Função.
-2. Selecione **Todos os serviços**, filtre pelo **Intune** e, em seguida, selecione **Microsoft Intune**.
-3. Selecione **Dispositivos** e, em seguida, **Todos os dispositivos**.
-4. Na lista de dispositivos que você gerencia, selecione um dispositivo e escolha **...Mais**. Em seguida, escolha a ação remota de dispositivo **Remover senha**.
+1. Entre no [Centro de Administração do Gerenciador de Ponto de Extremidade da Microsoft](https://go.microsoft.com/fwlink/?linkid=2109431) com qualquer uma das seguintes funções: Administrador Global do Azure Active Directory, Administrador de Serviço do Intune do Azure Active Directory, Operador de Helpdesk ou Administrador de Função.
+2. Selecione **Dispositivos** e, em seguida, **Todos os dispositivos**.
+3. Na lista de dispositivos que você gerencia, selecione um dispositivo e escolha **...Mais**. Em seguida, escolha a ação remota de dispositivo **Remover senha**.
 
 ## <a name="reset-android-work-profile-passcodes"></a>Redefinir senhas de perfil de trabalho do Android
 

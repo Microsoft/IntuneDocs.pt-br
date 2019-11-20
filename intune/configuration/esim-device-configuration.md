@@ -5,22 +5,23 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 7/31/2018
+ms.date: 11/04/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.subservice: configuration
 ms.localizationpriority: high
 ms.technology: ''
+ms.reviewer: ericor
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 84103c6264431773ab5928f1da22c37a80cc9036
-ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
+ms.openlocfilehash: 15af657ec63c664d91c370fa0f18ff8c4f140b47
+ms.sourcegitcommit: 1a7f04c80548e035be82308d2618492f6542d3c0
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/16/2019
-ms.locfileid: "72492715"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "73755235"
 ---
 # <a name="configure-esim-cellular-profiles-in-intune---public-preview"></a>Configurar perfis de celular eSIM no Intune – versão prévia pública
 
@@ -69,11 +70,10 @@ Os dispositivos a seguir foram anunciados como compatíveis com eSIM ou estão n
 
 Os códigos de ativação de celular são fornecidos pela operadora móvel em um arquivo separado por vírgula (CSV). Quando você tiver esse arquivo, adicione-o ao Intune usando as seguintes etapas:
 
-1. Entre no [Portal do Azure](https://portal.azure.com/).
-2. Selecione **Todos os serviços**, filtre por **Intune** e selecione **Microsoft Intune**.
-3. Selecione **Configuração do dispositivo** > **Perfis de celular eSIM** > **Adicionar**.
-4. Selecione o arquivo CSV que tem os códigos de ativação.
-5. Selecione **OK** para salvar suas alterações.
+1. Entre no [Centro de Administração do Gerenciador de Ponto de Extremidade da Microsoft](https://go.microsoft.com/fwlink/?linkid=2109431).
+2. Selecione **Dispositivos** > **Perfis de celular eSIM** > **Adicionar**.
+3. Selecione o arquivo CSV que tem os códigos de ativação.
+4. Selecione **OK** para salvar suas alterações.
 
 ### <a name="csv-file-requirements"></a>Requisitos do arquivo CSV
 
@@ -111,8 +111,8 @@ Crie um grupo de dispositivos que inclui os dispositivos compatíveis com eSIM. 
 
 Atribua o perfil ao grupo do Azure AD que inclui os dispositivos eSIM.
 
-1. No [portal do Azure](https://portal.azure.com/), selecione **Todos os Serviços**, filtre por **Intune** e selecione **Microsoft Intune**.
-2. Selecione **Configuração do dispositivo** > **Celular eSIM** > **Perfis**.
+1. Entre no [Centro de Administração do Gerenciador de Ponto de Extremidade da Microsoft](https://go.microsoft.com/fwlink/?linkid=2109431).
+2. Selecione **Dispositivos** > **Perfis de celular eSIM**.
 3. Na lista de perfis, selecione o pool de assinaturas de celular eSIM que deseja atribuir e, em seguida, selecione **Atribuições**.
 4. Escolha **Incluir** ou **Excluir** grupos e, em seguida, selecione os grupos.
 
@@ -129,15 +129,15 @@ Os códigos de ativação do eSIM são usados uma única vez. Depois que o Intun
 
 Depois de atribuir o perfil, você pode monitorar o status da implantação de um pool de assinaturas.
 
-1. Entre no [Portal do Azure](https://portal.azure.com/).
-2. Selecione **Todos os serviços**, filtre por **Intune** e selecione **Microsoft Intune**.
-3. Selecione **Configuração do dispositivo** > **Perfis de celular eSIM**. Todos os pools de assinaturas de celular eSIM existentes são listados.
-4. Selecione uma assinatura e examine o **Status de Implantação**.
+1. Entre no [Centro de Administração do Gerenciador de Ponto de Extremidade da Microsoft](https://go.microsoft.com/fwlink/?linkid=2109431).
+2. Selecione **Dispositivos** > **Perfis de celular eSIM**. Todos os pools de assinaturas de celular eSIM existentes são listados.
+3. Selecione uma assinatura e examine o **Status de Implantação**.
 
 ### <a name="check-the-profile-status"></a>Verificar o status do perfil
+
 Depois de criar o perfil do seu dispositivo, o Intune fornece gráficos. Esses gráficos exibem o status de um perfil como sendo atribuído com êxito a dispositivos, ou se o perfil mostra um conflito.
 
-1. Selecione **Configuração do dispositivo** > **Perfis de celular eSIM** > Selecionar uma assinatura existente.
+1. Selecione **Dispositivos** > **Perfis de celular eSIM** > Selecionar uma assinatura existente.
 2. Na guia **Visão Geral**, o gráfico superior mostra o número de dispositivos atribuídos à implantação de pool de assinaturas de celular eSIM específica.
 
     Ele também mostra o número de dispositivos para outras plataformas que recebem o mesmo perfil de dispositivo.
@@ -153,7 +153,7 @@ Depois de criar o perfil do seu dispositivo, o Intune fornece gráficos. Esses g
 
 Monitore e exiba uma lista detalhada de dispositivos que podem ser exibidos no Status do Dispositivo.**
 
-1. Selecione **Configuração do dispositivo** > **Perfis de celular eSIM** > Selecionar uma assinatura existente.
+1. Selecione **Dispositivos** > **Perfis de celular eSIM** > Selecionar uma assinatura existente.
 2. Selecione **Status do Dispositivo**. O Intune mostra detalhes adicionais sobre o dispositivo:
 
     - **Nome do Dispositivo**: Nome do dispositivo de destino

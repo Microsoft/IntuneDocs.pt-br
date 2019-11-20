@@ -5,7 +5,7 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 09/17/2019
+ms.date: 11/04/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.subservice: configuration
@@ -16,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: a7f5a85896a2e6e7be845b2314c4f837dcaeb7b0
-ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
+ms.openlocfilehash: 50fc2d274531dce3d2466ba40a4738035b9b6811
+ms.sourcegitcommit: 1a7f04c80548e035be82308d2618492f6542d3c0
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/16/2019
-ms.locfileid: "72507027"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "73756777"
 ---
 # <a name="use-windows-10-templates-to-configure-group-policy-settings-in-microsoft-intune"></a>Use modelos do Windows 10 para definir as configurações da política de grupo no Microsoft Intune
 
@@ -43,8 +43,8 @@ Este artigo lista as etapas usadas para criar um modelo para dispositivos Window
 
 ## <a name="create-a-template"></a>Criar um modelo
 
-1. Conecte-se ao [Intune](https://go.microsoft.com/fwlink/?linkid=2090973).
-2. Selecione **Configuração do dispositivo** > **Perfis** > **Criar perfil**.
+1. Entre no [Centro de Administração do Gerenciador de Ponto de Extremidade da Microsoft](https://go.microsoft.com/fwlink/?linkid=2109431).
+2. Selecione **Dispositivos** > **Perfis de configuração** > **Criar perfil**.
 3. Insira as seguintes propriedades:
 
     - **Nome**: Insira um nome para o perfil.
@@ -59,7 +59,7 @@ Este artigo lista as etapas usadas para criar um modelo para dispositivos Window
     > [!TIP]
     > As configurações do Windows no Intune se correlacionam ao caminho da política de grupo local que você vê no Editor de Política de Grupo Local (`gpedit`).
 
-5. Por padrão, a lista suspensa mostra **Todos os produtos.** Na lista, você também pode filtrar as configurações para mostrar apenas as configurações do **Windows**, do **Office** ou do **Microsoft Edge versão 77 ou posteriores**:
+5. Na lista suspensa, selecione **Todos os Produtos**. Na lista, você também pode filtrar as configurações para mostrar apenas as configurações do **Windows**, do **Office** ou do **Microsoft Edge versão 77 ou posteriores**:
 
     ![filtre a lista para mostrar todas as configurações do Windows ou todas do Office em modelos administrativos no Intune](./media/administrative-templates-windows/administrative-templates-choose-windows-office-all-products.png)
 

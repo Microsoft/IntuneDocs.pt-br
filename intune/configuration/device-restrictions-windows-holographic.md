@@ -1,11 +1,11 @@
 ---
 title: Configurações de dispositivo do Windows Holographic Business – Microsoft Intune – Azure | Microsoft Docs
-description: Leia sobre e defina configurações de restrição de dispositivo no Microsoft Intune para o Windows Holographic for Business, incluindo cancelamento do registro, geolocalização, senhas, instalação de aplicativos da App Store, cookies e pop-ups no Microsoft Edge, Windows Defender, pesquisa, armazenamento e nuvem, conectividade por Bluetooth, hora do sistema e dados de uso no Azure.
+description: Leia sobre e defina configurações de restrição de dispositivo no Microsoft Intune para o Windows Holographic for Business, incluindo cancelamento do registro, geolocalização, senhas, instalação de aplicativos da App Store, cookies e pop-ups no Microsoft Edge, Microsoft Defender, pesquisa, armazenamento e nuvem, conectividade por Bluetooth, hora do sistema e dados de uso no Azure.
 keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 01/22/2019
+ms.date: 11/13/2019
 ms.topic: reference
 ms.service: microsoft-intune
 ms.subservice: configuration
@@ -15,12 +15,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: e28a697b841d8b264a19d97059d272b7119bc7f4
-ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
+ms.openlocfilehash: 1f90a5a13859ff19765e22444a84b9c11405af73
+ms.sourcegitcommit: 78cebd3571fed72a3a99e9d33770ef3d932ae8ca
 ms.translationtype: MTE75
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/16/2019
-ms.locfileid: "72493912"
+ms.lasthandoff: 11/13/2019
+ms.locfileid: "74059498"
 ---
 # <a name="windows-holographic-for-business-device-settings-to-allow-or-restrict-features-using-intune"></a>Configurações do dispositivo do Windows Holographic for Business para permitir ou restringir os recursos usando o Intune
 
@@ -57,7 +57,7 @@ Este artigo lista e descreve as diferentes configurações que você pode contro
 - **Gerenciador de Senhas**: habilite ou desabilite o recurso do Gerenciador de Senhas do Microsoft Edge.
 - **Enviar cabeçalhos Do Not Track**: configura o navegador Microsoft Edge para enviar cabeçalhos Do Not Track para sites visitados pelos usuários.
 
-## <a name="windows-defender-smart-screen"></a>Windows Defender Smart Screen
+## <a name="microsoft-defender-smart-screen"></a>Tela inteligente do Microsoft defender
 
 - **SmartScreen para Microsoft Edge**: habilite o SmartScreen do Microsoft Edge para acessar downloads de site e de arquivos.
 

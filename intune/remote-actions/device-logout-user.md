@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 8336f5b29cd21bb6875285177071542080eb95f3
-ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
+ms.openlocfilehash: fdb23916319b06fb4d85b913209d1ac9e007d551
+ms.sourcegitcommit: 28622c5455adfbce25a404de4d0437fa2b5370be
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/16/2019
-ms.locfileid: "72509463"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "73713176"
 ---
 # <a name="logout-the-current-user-on-intune-managed-ios-devices"></a>Fazer logoff do usuário atual em dispositivos iOS gerenciados pelo Intune
 
@@ -41,9 +41,7 @@ A ação **Fazer logoff do usuário atual** faz logoff do usuário atual em um d
 
 ## <a name="how-to-log-out-the-current-user"></a>Como fazer logoff do usuário atual
 
-1. Entre no portal do Azure.
-2. Escolha **Mais Serviços** > **Monitoramento + Gerenciamento** > **Intune**.
-3. Na folha **Intune**, escolha **Dispositivos**.
+1. Entre no [Centro de Administração do Gerenciador de Ponto de Extremidade da Microsoft](https://go.microsoft.com/fwlink/?linkid=2109431) e selecione **Dispositivos**.
 4. Na folha **Dispositivos e grupos**, escolha **Todos os dispositivos**.
 5. Na lista de dispositivos gerenciados, escolha um dispositivo iOS e, em seguida, selecione a ação remota do dispositivo **Fazer logoff do usuário atual**.
 

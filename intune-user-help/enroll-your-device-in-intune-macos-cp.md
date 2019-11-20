@@ -1,11 +1,11 @@
 ---
-title: Registrar seu dispositivo macOS no Intune com o Portal da Empresa | Microsoft Docs
-description: Descreve como registrar um dispositivo macOS no Intune com o aplicativo Portal da Empresa
+title: Registrar seu Mac com o Portal da Empresa do Intune | Microsoft Docs
+description: Saiba como registrar seu Mac no Intune com o aplicativo Portal da Empresa.
 keywords: Mac OS X, macOS, OS X
 author: lenewsad
 ms.author: lanewsad
 manager: dougeby
-ms.date: 10/03/2018
+ms.date: 11/14/2019
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -15,93 +15,94 @@ ms.assetid: 3bb659cc-9b57-4d19-8631-2c26749fa71c
 searchScope:
 - User help
 ROBOTS: ''
-ms.reviewer: elocholi
+ms.reviewer: kakyker
 ms.suite: ems
 ms.custom: intune-enduser
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: ee725d118353e18924858569ac861992d19f839a
-ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
+ms.openlocfilehash: ba285fc9de58b3fb739a16722e0e05e36e840e87
+ms.sourcegitcommit: 76ae5aea5deee7a590e24c3b2bb52f88125943e5
 ms.translationtype: MTE75
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/16/2019
-ms.locfileid: "72506190"
+ms.lasthandoff: 11/15/2019
+ms.locfileid: "74098163"
 ---
-# <a name="enroll-your-macos-device-in-intune-with-the-company-portal-app"></a>Registrar seu dispositivo macOS no Intune com o aplicativo Portal da Empresa
+# <a name="enroll-your-macos-device-using-the-company-portal-app"></a>Registrar seu dispositivo macOS usando o aplicativo Portal da Empresa  
 
-Registre seu dispositivo macOS no aplicativo Portal da Empresa do Intune para obter acesso seguro ao email, aos arquivos e aos aplicativos da organização.
+Registre seu dispositivo macOS no aplicativo Portal da Empresa do Intune para obter acesso seguro aos arquivos, aos aplicativos e ao email corporativo ou de estudante.
 
-As organizações geralmente exigem que seu dispositivo se torne gerenciado antes que você possa acessar dados proprietários por meio dele. Depois que um dispositivo se torna gerenciado, as organizações podem enviar por push políticas e aplicativos ao dispositivo por meio do provedor de gerenciamento de dispositivo móvel. Para obter acesso contínuo às suas informações corporativas ou de estudante no dispositivo, você precisa configurá-lo de acordo com as configurações da política.  
+Normalmente, as organizações exigem que você registre seu dispositivo antes de poder acessar dados proprietários. Depois que o dispositivo é registrado, ele se torna *gerenciado*. Sua organização pode atribuir políticas e aplicativos ao dispositivo por meio de um provedor de MDM (gerenciamento de dispositivo móvel), como o Intune. Para obter acesso contínuo às informações corporativas ou de estudante no seu dispositivo, você precisa configurá-lo de acordo com as configurações da política de sua organização.  
 
-Este artigo descreve como o aplicativo Portal da Empresa do Intune para macOS ajuda você a registrar, configurar e manter seu dispositivo para atender aos requisitos organizacionais.  
-</br>
-> [!VIDEO https://www.youtube.com/embed/Pa2pfhwq_yk?rel=0]
+Este artigo descreve como usar o aplicativo Portal da Empresa do Intune para macOS para registrar, configurar e manter seu dispositivo a fim de atender aos requisitos organizacionais.  
+
 
 ## <a name="what-to-expect-from-the-company-portal-app"></a>O que esperar do aplicativo Portal da Empresa
 
-Durante a instalação inicial, o aplicativo requer que você se autentique na organização. Em seguida, ele informa sobre as configurações do dispositivo que você deve fazer. Por exemplo, as organizações geralmente definem os requisitos de mínimo e máximo de caracteres de senha que você deverá atender.    
+Durante a configuração inicial, o aplicativo Portal da Empresa exige que você entre e se autentique com sua organização. Portal da Empresa, em seguida, o informará sobre as configurações de dispositivo que você precisa configurar para atender aos requisitos da sua organização. Por exemplo, as organizações geralmente definem os requisitos de mínimo e máximo de caracteres de senha que você deverá atender.    
 
-Depois que o dispositivo for registrado, o aplicativo Portal da Empresa continuará a verificar se o dispositivo está protegido. Se você instalar um aplicativo de uma fonte não confiável, por exemplo, o aplicativo o alertará e, às vezes, revogará o acesso aos dados da empresa. As políticas de proteção de aplicativo como essa são comuns nas organizações e, geralmente, exigem que você desinstale os aplicativos não confiáveis para que possa recuperar o acesso.
+Depois de registrar seu dispositivo, Portal da Empresa sempre verificará se o dispositivo está protegido de acordo com os requisitos da sua organização. Por exemplo, se você instalar um aplicativo de uma fonte não confiável, Portal da Empresa irá alertá-lo e poderá restringir o acesso aos recursos da sua organização. As políticas de proteção de aplicativo como essa são comuns. Para restabelecer o acesso, você provavelmente precisará desinstalar o aplicativo não confiável. 
 
-Se, após o registro, sua organização impuser um novo requisito de segurança, como a autenticação multifator, o aplicativo Portal da Empresa emitirá uma notificação. Você terá a oportunidade de ajustar as configurações para que possa continuar a trabalhar usando seu dispositivo.  
+Se, após o registro, sua organização impuser um novo requisito de segurança, como a autenticação multifator, o Portal da Empresa emitirá uma notificação. Você terá a oportunidade de ajustar as configurações para que possa continuar a trabalhar usando seu dispositivo.  
 
 Para saber mais sobre o registro, confira [O que acontece quando eu instalo o aplicativo Portal da Empresa e registro meu dispositivo?](what-happens-if-you-install-the-Company-Portal-app-and-enroll-your-device-in-intune-macos.md).  
 
-## <a name="get-your-device-managed"></a>Fazer com que o dispositivo seja gerenciado  
-Use as etapas a seguir para registrar dispositivos macOS que executam o macOS 10,12 e posterior.   
+## <a name="get-your-macos-device-managed"></a>Faça com que seu dispositivo macOS seja gerenciado  
+Use as etapas a seguir para registrar seu dispositivo macOS com sua organização. Seu dispositivo deve estar executando o macOS 10,12 ou posterior.   
+
+> [!NOTE]
+> Durante esse processo, você pode ser solicitado a permitir que Portal da Empresa use informações confidenciais armazenadas em seu conjunto de chaves. Esses prompts fazem parte da segurança da Apple. Quando receber o prompt, digite sua senha de conjunto de chaves de logon e selecione **sempre permitir**. Se você pressionar **Enter** ou **retornar** no teclado, o prompt selecionará **permitir**, o que pode resultar em prompts adicionais.  
+
+### <a name="install-company-portal-app"></a>Instalar o aplicativo do Portal da Empresa  
+1. Vá para [registrar meu Mac](https://go.microsoft.com/fwlink/?linkid=853070).  
+2. O arquivo Portal da Empresa Installer. pkg será baixado. Abra o instalador e continue as etapas. 
+3. Concorde com o contrato de licença do software. 
+4. Insira a senha do dispositivo ou a impressão digital registrada para instalar o software.  
+5. Abra Portal da Empresa. 
+
+> [!IMPORTANT]
+> O Microsoft AutoUpdate pode abrir para atualizar seu software da Microsoft. Depois que todas as atualizações forem instaladas, abra o aplicativo Portal da Empresa. Para obter a melhor experiência de configuração, instale as versões mais recentes do Microsoft AutoUpdate e Portal da Empresa.  
 
 
-1. Para acessar o site Portal da Empresa, abra uma nova janela no __Safari__ e acesse https://portal.manage.microsoft.com.  
-
-2. Entre no site Portal da Empresa com sua conta corporativa ou de estudante.
-
-   [!INCLUDE [wit_nextref](includes/end-user-password-guidance.md)]
+### <a name="enroll-your-mac"></a>Registrar seu Mac  
 
 
-3. No canto superior esquerdo da página, clique em **Menus** > **Dispositivos**.  
+1. Entre no Portal da Empresa com sua conta corporativa ou de estudante.  
+2. Quando o aplicativo for aberto, selecione **Iniciar**.  
+3. Examine [o que sua organização pode ou não ver](what-info-can-your-company-see-when-you-enroll-your-device-in-intune.md) em seu dispositivo registrado. Em seguida, selecione **Continuar**.  
+4. Na tela **instalar perfil de gerenciamento** , selecione **baixar perfil**.   
 
-4. A página __Dispositivos__ mostrará uma lista dos dispositivos gerenciados ou uma faixa. O conteúdo exibido depende da presença de um dispositivo gerenciado. 
-    * Para adicionar um dispositivo que não está listado, selecione a faixa com informa **Toque aqui para informar qual dispositivo você está usando ou adicionar um novo dispositivo.**
-    * Se você não tiver nenhum dispositivo, a faixa informará: **Você não tem nenhum dispositivo gerenciado. Adicione este ao tocar aqui.** Clique na faixa para adicionar seu dispositivo.  
+    ![Exemplo de captura de tela de Portal da Empresa, instalar perfil de gerenciamento, realçando o botão "baixar perfil".](./media/install-mgmt-profile-mac-1911.PNG)   
+5. As preferências do sistema do seu dispositivo serão abertas. Selecione **instalar** e, em seguida, selecione **instalar** novamente. Se for solicitado, insira a senha do dispositivo.  
 
-     ![Uma captura de tela da página Dispositivos, com um quadrado vermelho em torno da opção de faixa para realçar onde clicar.](./media/CP-enroll-MACOS-1808.png)  
-5. Conclua a etapa abaixo que corresponde à mensagem exibida atualmente no Portal da Empresa.  
-    * Se você estiver adicionando um dispositivo pela primeira vez, será solicitado que você baixe o aplicativo Portal da Empresa em seu dispositivo. Clique em **Baixar** para continuar.  
+    ![Captura de tela de exemplo de preferências do sistema macOS, prompt de instalação, realçando o botão "instalar".](./media/system-preference-install-1911.PNG)  
+6. Depois que o perfil for instalado, ele será exibido na lista de perfis em **perfil de gerenciamento.**  
 
-         ![Captura de tela de exemplo da tela do prompt para baixar o aplicativo Portal da Empresa do macOS. O usuário tem a opção de clicar no botão azul de Download na parte inferior esquerda do prompt ou o botão cinza Cancelar na parte inferior direita.](./media/CP-enroll-download-macOS-1808.png)  
+   ![Captura de tela de exemplo de preferências de sistema do macOS, telas de perfis, realçando o perfil de gerenciamento instalado.](./media/system-preference-verify-1911.PNG)   
+7. Retornar para Portal da Empresa.   
+8. Sua organização pode exigir que você atualize as configurações do dispositivo. Quando você terminar de atualizar as configurações, selecione **verificar configurações**.  
 
-    * Se já houver um dispositivo macOS gerenciado, você receberá um prompt com uma lista de seus dispositivos macOS gerenciados no momento. Selecione **Meu dispositivo não está listado aqui** > **Baixar** para baixar o aplicativo Portal da Empresa no dispositivo que você está adicionando.  
+    ![Exemplo de captura de tela de Portal da Empresa, atualizar configurações do dispositivo, realçando o botão "verificar configurações".](./media/update-settings-mac-1911.PNG)  
+9. Quando a instalação estiver concluída, selecione **concluído**.  
 
-         ![Captura de tela de exemplo da tela do prompt para baixar o aplicativo Portal da Empresa do macOS. O usuário tem a opção de selecionar *Meu dispositivo não está listado aqui* ou um dispositivo específico no meio da página. Um botão azul de Download é exibido na parte inferior esquerda do prompt e um botão cinza Cancelar é exibido na parte inferior direita](./media/cp-mac-os-device-isnt-here-1808.png)  
 
-6. O dispositivo verificará se o arquivo de instalação **CompanyPortal.pkg** pode ser aberto com segurança. Depois que essa verificação for concluída, abra o instalador e conclua a instalação.  
+ ## <a name="troubleshooting-and-feedback"></a>Solução de problemas e comentários   
 
-7. Quando o instalador terminar, acesse a **Barra inicial** e abra **Portal da Empresa**.  
+Se você encontrar problemas durante o registro, acesse **ajuda** > **Enviar relatório de diagnóstico** para relatar o problema aos desenvolvedores de aplicativos da Microsoft. Essas informações são usadas para ajudar a melhorar o aplicativo. Eles também usarão essas informações para ajudar a resolver o problema se o seu pessoal de suporte de ti chegar a ele para obter ajuda.  
 
-8. Seu dispositivo macOS solicitará que você confirme se você deseja abrir o aplicativo Portal da Empresa. Clique em **Abrir**.  
+Depois de relatar o problema à Microsoft, você pode enviar os detalhes de sua experiência para sua pessoa de suporte de ti. Selecione **detalhes do email**. Digite o que você experimentou no corpo do email. Para localizar o endereço de email da pessoa de suporte, acesse o aplicativo Portal da Empresa > **contato**. Ou verifique o [site Portal da empresa](https://go.microsoft.com/fwlink/?linkid=2010980).  
+ 
 
-   > [!TIP]
-   > O Intune precisa de acesso ao seu computador para certificar-se de que o dispositivo é seguro o suficiente para acessar recursos da sua organização. Se o computador se recusar a abrir o aplicativo Portal da Empresa [desabilite o Gatekeeper](https://support.apple.com/HT202491). Em seguida, abra o aplicativo.
+Além disso, o Microsoft Intune Portal da Empresa equipe adoraria ouvir seus comentários. Acesse **ajuda** > **enviar comentários** para compartilhar seus pensamentos e ideias.  
 
-9. A primeira tela exibida no aplicativo Portal da Empresa solicita que você **Entre**. Use a mesma conta corporativa ou de estudante que você usou para entrar no site Portal da Empresa.
+## <a name="unverified-profiles"></a>Perfis não verificados  
+Quando você exibe os perfis do MDM (gerenciamento de dispositivo móvel) instalados em **Preferências do Sistema** > **Perfis**, alguns perfis podem exibir um status não verificado. Se o perfil de gerenciamento exibe um status verificado, não é necessário se preocupar.  
 
-10. O Portal da Empresa confirma as informações da conta e exibe os status **Registro de Dispositivo** e **Conformidade do Dispositivo**. Triângulos amarelos realçam as ações que você precisa executar para proteger seu dispositivo macOS corporativo ou de estudante. Clique em **Iniciar** para começar o registro. 
-
-11. Se solicitado, digite suas informações de entrada do seu computador.  
-
-Pode levar alguns minutos para registrar seu dispositivo no gerenciamento. Durante esse tempo, você pode usar seu dispositivo para outras coisas. Uma mensagem será exibida quando a Instalação do Acesso à Empresa for concluída para informá-lo que ela já terminou.  
-
-## <a name="unverified-profiles"></a>Perfis não verificados
-Quando você exibe os perfis do MDM (gerenciamento de dispositivo móvel) instalados para seu dispositivo macOS, alguns perfis podem exibir um status **Não verificado**. Desde que o **Perfil de gerenciamento** exiba um status **Verificado**, não é necessário se preocupar.  
-
-O perfil de gerenciamento é o que define a conexão de canal do MDM. Contanto que o perfil de gerenciamento seja verificado, quaisquer outros perfis entregues ao computador, por meio desse canal, herdam as características secundárias do perfil de gerenciamento.
-
-Além disso, como esses outros perfis não exigem verificações individuais, eles são gerados mais rapidamente e entregues aos dispositivos. 
+O perfil de gerenciamento é o que define a conexão de canal do MDM. Contanto que o perfil de gerenciamento seja verificado, quaisquer outros perfis fornecidos ao computador por meio desse canal herdam as características secundárias do perfil de gerenciamento.  
 
 ## <a name="updating-the-company-portal-app"></a>Atualizando o aplicativo do Portal da Empresa
 
-Atualizar o aplicativo do Portal da Empresa é feito da mesma maneira que qualquer outro aplicativo do Office, por meio do Microsoft AutoUpdate for Mac. Descubra mais sobre [como atualizar aplicativos da Microsoft para macOS aqui](https://support.office.com/article/Check-for-Office-for-Mac-updates-automatically-bfd1e497-c24d-4754-92ab-910a4074d7c1).  
+A atualização do aplicativo do Portal da Empresa é feita da mesma maneira que qualquer outro aplicativo do Office, por meio do Microsoft AutoUpdate para macOS. Descubra mais sobre [como atualizar aplicativos da Microsoft para macOS](https://support.office.com/article/Check-for-Office-for-Mac-updates-automatically-bfd1e497-c24d-4754-92ab-910a4074d7c1).  
 
 ## <a name="next-steps"></a>Próximas etapas  
-Precisa de ajuda adicional? Faça check-in com o suporte da sua empresa. Você pode encontrar as informações de contato deles no [site do Portal da Empresa](https://go.microsoft.com/fwlink/?linkid=2010980).  
+Ainda precisa de ajuda? Contate o suporte da sua empresa. Para obter as informações de contato, consulte o [site do Portal da Empresa](https://go.microsoft.com/fwlink/?linkid=2010980).  
 
 

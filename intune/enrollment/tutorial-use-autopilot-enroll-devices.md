@@ -19,12 +19,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 39ea8b3859d3d2525433c4cafdf566e7a2c8d2ab
-ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
+ms.openlocfilehash: f8e319c68abd8965b84323bc3b7a5451dee42bc2
+ms.sourcegitcommit: 556b7ea2049014c9027f0e44affd3f301fab55fc
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/16/2019
-ms.locfileid: "72509207"
+ms.lasthandoff: 11/06/2019
+ms.locfileid: "73709194"
 ---
 # <a name="tutorial-use-autopilot-to-enroll-windows-devices-in-intune"></a>Tutorial: Usar o Autopilot para registrar dispositivos Windows no Intune
 
@@ -60,7 +60,7 @@ A primeira etapa na configuração do Windows Autopilot é adicionar os disposit
 
 2. Salve o arquivo CSV.
 
-3. Vá até o [Intune no portal do Azure](https://aka.ms/intuneportal), escolha **Registro de dispositivo** > **Registro do Windows** > **Dispositivos** > **Importar**.
+3. No [Centro de Administração do Gerenciador de Ponto de Extremidade da Microsoft](https://go.microsoft.com/fwlink/?linkid=2109431), selecione **Registro de dispositivos** > **Registro do Windows** > **Dispositivos** > **Importar**.
 
     ![Captura de tela de dispositivos Windows Autopilot](./media/tutorial-use-autopilot-enroll-devices/autopilot-import-device.png)
 
@@ -78,7 +78,7 @@ A primeira etapa na configuração do Windows Autopilot é adicionar os disposit
 
 Em seguida, crie um grupo de dispositivos e coloque nele os dispositivos Autopilot que você acabou de carregar.
 
-1. No [Intune no portal do Azure](https://aka.ms/intuneportal), escolha **Grupos** > **Novo grupo**.
+1. No [Centro de Administração do Gerenciador de Ponto de Extremidade da Microsoft](https://go.microsoft.com/fwlink/?linkid=2109431), selecione **Grupos** > **Novo grupo**.
 2. Na folha **Grupo**:
     1. Em **Tipo de grupo**, escolha **Segurança**.
     2. Em **Nome do grupo**, insira *Grupo Autopilot*. Em **Descrição do grupo**, insira *Grupo de teste para dispositivos do Autopilot*.
@@ -90,7 +90,7 @@ Em seguida, crie um grupo de dispositivos e coloque nele os dispositivos Autopil
 
 Depois de criar um grupo de dispositivos, você deve criar um perfil de implantação para poder configurar os dispositivos do Autopilot.
 
-1. Vá até o [Intune no portal do Azure](https://aka.ms/intuneportal) e escolha **Registro de dispositivo** > **Registro do Windows** > **Perfis de Implantação** > **Criar Perfil**.
+1. No [Centro de Administração do Gerenciador de Ponto de Extremidade da Microsoft](https://go.microsoft.com/fwlink/?linkid=2109431), selecione **Registro de dispositivos** > **Registro de Windows** > **Perfis de implantação** > **Criar perfil**.
 2. Na página **Básico**, em **Nome**, digite *Perfil do Autopilot*. Em **Descrição**, insira *Perfil de teste para dispositivos do Autopilot*.
 3. Defina **Converter todos os dispositivos de destino para Autopilot** como **Sim**. Essa configuração garante que todos os dispositivos na lista sejam registrados no serviço de implantação do Autopilot. Aguarde 48 horas para que o registro seja processado.
 4. Selecione **Avançar**.
@@ -116,7 +116,7 @@ Se você não quiser mais usar os dispositivos do Autopilot, poderá excluí-los
 
 1. Se os dispositivos estiverem registrados no Intune, primeiro [exclua-os do portal do Azure Active Directory](../remote-actions/devices-wipe.md#delete-devices-from-the-azure-active-directory-portal).
 
-2. No [Intune no portal do Azure](https://aka.ms/intuneportal), escolha **Registro de dispositivo** > **Registro do Windows** > **Dispositivos**.
+2. No [Centro de Administração do Gerenciador de Ponto de Extremidade da Microsoft](https://go.microsoft.com/fwlink/?linkid=2109431), selecione **Registro de dispositivos** > **Registro do Windows** > **Dispositivos**.
 
 3. Em **Dispositivos Windows Autopilot**, escolha os dispositivos que deseja excluir e, em seguida, escolha **Excluir**.
 

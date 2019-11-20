@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 99f27992009332a2a5fae0768225d8c69d3ac5ad
-ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
+ms.openlocfilehash: 1e995dbc89321bf844151accd654a2d17d35afd9
+ms.sourcegitcommit: 28622c5455adfbce25a404de4d0437fa2b5370be
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/16/2019
-ms.locfileid: "72509401"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "73713432"
 ---
 # <a name="turn-on-ios-supervised-mode"></a>Ativar o modo supervisionado do iOS
 
@@ -37,7 +37,7 @@ Para obter uma lista de controles da Apple que exigem a supervisão, consulte a 
 
 ## <a name="turn-on-supervised-mode-during-enrollment"></a>Ativar o modo supervisionado durante o registro
 
-No Intune, você pode ativar o modo supervisionado para dispositivos ao [criar um perfil de registro da Apple no DEP](../enrollment/device-enrollment-program-enroll-ios.md#create-an-apple-enrollment-profile). Em **Configurações de Gerenciamento de Dispositivo**, marque a caixa **Supervisionado**.
+No [Centro de Administração do Gerenciador de Ponto de Extremidade da Microsoft](https://go.microsoft.com/fwlink/?linkid=2109431), você pode ativar o modo supervisionado para dispositivos ao [criar um perfil de registro da Apple no DEP](../enrollment/device-enrollment-program-enroll-ios.md#create-an-apple-enrollment-profile). Em **Configurações de Gerenciamento de Dispositivo**, marque a caixa **Supervisionado**.
 
 ## <a name="turn-on-supervised-mode-after-enrollment"></a>Ativar o modo supervisionado após o registro
 

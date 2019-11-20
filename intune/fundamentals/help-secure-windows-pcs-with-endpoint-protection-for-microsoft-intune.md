@@ -6,7 +6,7 @@ keywords: ''
 author: dougeby
 ms.author: dougeby
 manager: dougeby
-ms.date: 01/01/2018
+ms.date: 11/12/2019
 ms.topic: archived
 ms.service: microsoft-intune
 ms.subservice: fundamentals
@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic-keep
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 535ae4dd986940da17d247136b37185cfaa58b57
-ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
+ms.openlocfilehash: f00a680d8d7799e0307021926677d1e0ed1e9a12
+ms.sourcegitcommit: 78cebd3571fed72a3a99e9d33770ef3d932ae8ca
 ms.translationtype: MTE75
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/16/2019
-ms.locfileid: "72510215"
+ms.lasthandoff: 11/13/2019
+ms.locfileid: "74059695"
 ---
 # <a name="help-secure-windows-pcs-with-endpoint-protection-for-microsoft-intune"></a>Ajudar a proteger computadores Windows com o Endpoint Protection para Microsoft Intune
 
@@ -189,7 +189,7 @@ O Intune pode exibir os caminhos de até 10 das instâncias de malware detectada
 4. Clique com o botão direito no cabeçalho da coluna. É exibida uma lista das de colunas disponíveis. Marque a caixa de seleção **Caminhos de detecção recentes** na lista. A coluna **Caminhos de detecção recentes** aparece e exibe até 10 instâncias de malware mais recentes monitoradas no dispositivo.
 
 ## <a name="run-a-malware-scan-or-update-malware-definitions-on-a-computer"></a>Executar uma verificação de malware ou atualizar definições de malware em um computador
-O Intune pode executar uma verificação completa ou rápida de malware usando o Endpoint Protection ou o Windows Defender em um computador gerenciado remotamente com o cliente do Intune instalado.
+O Intune pode executar uma verificação completa ou rápida de malware usando o Endpoint Protection ou o Microsoft Defender em um computador gerenciado remotamente com o cliente do Intune instalado.
 
 1. No [console de administração do Microsoft Intune](https://manage.microsoft.com/) vá até **Grupos** > **Visão geral** > **Todos os Dispositivos** > **Todos os Computadores** e selecione o computador que deseja como destino.
 

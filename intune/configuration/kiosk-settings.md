@@ -5,7 +5,7 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 01/22/2019
+ms.date: 11/04/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.subservice: configuration
@@ -15,12 +15,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure; seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 271b49a4c927bccb5cd967ea99b0d7bd5c2bd515
-ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
+ms.openlocfilehash: b2dede228aadac2981c38d2842f5da1369933f86
+ms.sourcegitcommit: 78cebd3571fed72a3a99e9d33770ef3d932ae8ca
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/16/2019
-ms.locfileid: "72492362"
+ms.lasthandoff: 11/13/2019
+ms.locfileid: "74059885"
 ---
 # <a name="windows-10-and-windows-holographic-for-business-device-settings-to-run-as-a-dedicated-kiosk-using-intune"></a>Configurações de dispositivos com Windows 10 (e posterior) e Windows Holographic for Business para execução como um quiosque dedicado usando o Intune
 
@@ -39,8 +39,8 @@ Este artigo mostra como criar um perfil de configuração de dispositivos. Para 
 
 ## <a name="create-the-profile"></a>Criar o perfil
 
-1. Conecte-se ao [Intune](https://go.microsoft.com/fwlink/?linkid=2090973).
-2. Selecione **Configuração do dispositivo** > **Perfis** > **Criar Perfil**.
+1. Entre no [Centro de Administração do Gerenciador de Ponto de Extremidade da Microsoft](https://go.microsoft.com/fwlink/?linkid=2109431).
+2. Selecione **Dispositivos** > **Perfis de configuração** > **Criar perfil**.
 3. Insira as seguintes propriedades:
 
    - **Nome**: insira um nome descritivo para o novo perfil.
@@ -60,7 +60,7 @@ Este artigo mostra como criar um perfil de configuração de dispositivos. Para 
       - [Configurações de quiosque do Windows 10](kiosk-settings-windows.md)
       - [Configurações de quiosque do Windows Holographic for Business](kiosk-settings-holographic.md)
 
-5. Quando terminar, selecione **OK** > **Criar** para salvar suas alterações. 
+5. Quando terminar, selecione **OK** > **Criar** para salvar suas alterações.
 
 O perfil é criado e exibido na lista de perfis. Em seguida, [atribua](device-profile-assign.md) o perfil.
 

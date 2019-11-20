@@ -16,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: dbcc50d275a3d3e6a613640e96b363ce7608da81
-ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
+ms.openlocfilehash: ded91d72321257adc30d0321b5d01e74fa1d51a6
+ms.sourcegitcommit: 28622c5455adfbce25a404de4d0437fa2b5370be
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/16/2019
-ms.locfileid: "72508574"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "73712196"
 ---
 # <a name="remove-devices-by-using-wipe-retire-or-manually-unenrolling-the-device"></a>Remova dispositivos por meio de apagamento, desativação ou cancelando o registro do dispositivo manualmente
 
@@ -53,7 +53,7 @@ Um apagamento é útil para redefinir um dispositivo antes de fornecê-lo a um n
 
 ### <a name="wiping-a-device"></a>Apagando um dispositivo
 
-1. Conecte-se ao [Intune](https://go.microsoft.com/fwlink/?linkid=2090973).
+1. Entre no [Centro de Administração do Gerenciador de Ponto de Extremidade da Microsoft](https://go.microsoft.com/fwlink/?linkid=2109431).
 3. Selecione **Dispositivos** > **Todos os dispositivos**.
 4. Selecione o nome do dispositivo que você deseja apagar.
 5. No painel que mostra o nome do dispositivo, selecione **Apagar**.
@@ -146,7 +146,7 @@ Você só pode apagar os dispositivos de quiosque. Você não pode desativar dis
 
 ### <a name="retire"></a>Desativar
 
-1. Entre no [Intune no portal do Azure](https://aka.ms/intuneportal).
+1. Entre no [Centro de Administração do Gerenciador de Ponto de Extremidade da Microsoft](https://go.microsoft.com/fwlink/?linkid=2109431).
 2. No painel **Dispositivos**, selecione **Todos os dispositivos**.
 3. Selecione o nome do dispositivo que você deseja desativar.
 4. No painel que mostra o nome do dispositivo, selecione **Desativar**. Para confirmar, selecione **Sim**.
@@ -157,12 +157,12 @@ Se o dispositivo estiver ligado e conectado, a ação **Desativar** será propag
 
 Se você quiser remover dispositivos do portal do Intune, poderá excluí-los do painel específico do dispositivo. Na próxima vez que o dispositivo fizer check-in, quaisquer dados da empresa contidos nele serão removidos.
 
-1. Entre no [Intune no portal do Azure](https://aka.ms/intuneportal).
+1. Entre no [Centro de Administração do Gerenciador de Ponto de Extremidade da Microsoft](https://go.microsoft.com/fwlink/?linkid=2109431).
 2. Escolha **Dispositivos** > **Todos os dispositivos** > escolher dispositivos que você deseja excluir > **Excluir**.
 
 ### <a name="automatically-delete-devices-with-cleanup-rules"></a>Excluir dispositivos automaticamente com regras de limpeza
 Você pode configurar o Intune para excluir automaticamente os dispositivos que parecem estar inativos, obsoletos ou sem resposta. Essas regras de limpeza monitoram continuamente seu inventário de dispositivos para que os registros de dispositivos permaneçam atualizados. Os dispositivos excluídos dessa maneira são removidos do gerenciamento do Intune.
-1. Entre no [Intune no portal do Azure](https://aka.ms/intuneportal).
+1. Entre no [Centro de Administração do Gerenciador de Ponto de Extremidade da Microsoft](https://go.microsoft.com/fwlink/?linkid=2109431).
 2. Escolha **Dispositivos** > **Regras de limpeza de dispositivo** > **Sim**.
 3. Na caixa **Excluir dispositivos que ainda não fizeram check-in para este número de dias**, digite um número entre 30 e 270.
 4. Selecione **Salvar**.
@@ -185,7 +185,7 @@ Talvez seja necessário excluir dispositivos do Azure AD devido a problemas de c
 
 Se você quiser remover completamente um dispositivo DEP da Apple do gerenciamento pelo Intune, siga estas etapas:
 
-1. Entre no [Intune no portal do Azure](https://aka.ms/intuneportal).
+1. Entre no [Centro de Administração do Gerenciador de Ponto de Extremidade da Microsoft](https://go.microsoft.com/fwlink/?linkid=2109431).
 2. Escolha **Dispositivos** > **Todos os dispositivos** > escolha o dispositivo > **Desativar**.
 ![Captura de tela da desativação](./media/devices-wipe/retire.png)
 3. Visite [deploy.apple.com](http://deploy.apple.com) e pesquise pelo dispositivo usando o respectivo número de série.

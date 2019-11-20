@@ -13,12 +13,12 @@ ms.localizationpriority: high
 ms.technology: ''
 search.appverid: MET150
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: ada1f6e5292684803fbea40430cdd43d61796746
-ms.sourcegitcommit: 1a5b185acd27954b10b6d59409d82eb80fd71284
+ms.openlocfilehash: 0f9750603d19d9b19697c7d2660351c4586432f6
+ms.sourcegitcommit: a7c35efb31c4efd816bd4aba29240013965aee92
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/21/2019
-ms.locfileid: "72681350"
+ms.lasthandoff: 11/13/2019
+ms.locfileid: "73984191"
 ---
 # <a name="add-ios-software-update-policies-in-intune"></a>Adicionar políticas de atualização de software do iOS no Intune
 
@@ -28,7 +28,7 @@ Esse recurso aplica-se a:
 
 - iOS 10.3 e posterior (supervisionado)
 
-O dispositivo faz check-in no Intune aproximadamente a cada 8 horas. Se uma atualização está disponível, o dispositivo a baixa e a instala, exceto durante horários restritos. Não há nenhuma interação do usuário necessária para atualizar o dispositivo. A política não impede que um usuário atualize o sistema operacional manualmente.
+O dispositivo faz check-in no Intune aproximadamente a cada 8 horas. Se uma atualização está disponível, o dispositivo a baixa e a instala, exceto durante horários restritos. Embora o processo de atualização, normalmente, não envolva nenhuma interação do usuário, se o dispositivo tiver uma senha, o usuário será solicitado a inseri-la para iniciar uma atualização de software. Isso se aplica ao iOS 10.3 e às versões posteriores. A política não impede que um usuário atualize o sistema operacional manualmente.
 
 ## <a name="configure-the-policy"></a>Configurar a política
 

@@ -19,12 +19,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic, seoapril2019
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: f770db6927ed87786f7806e011cdc6cb9bae6b3f
-ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
+ms.openlocfilehash: 190322392909a14681a4b68a79d9a3537360206b
+ms.sourcegitcommit: 28622c5455adfbce25a404de4d0437fa2b5370be
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/16/2019
-ms.locfileid: "72509261"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "73713499"
 ---
 # <a name="troubleshoot-device-enrollment-in-microsoft-intune"></a>Solução de problemas de registro de dispositivo no Microsoft Intune
 
@@ -64,9 +64,9 @@ Esses problemas podem ocorrer em todas as plataformas de dispositivo.
 
 Verifique se o usuário não está atribuído a mais dispositivos que o máximo permitido seguindo estas etapas:
 
-1. No Intune, escolha **Registro do dispositivo** > **Restrições de registro** > **Restrições de limite de dispositivo**. Observe o valor da coluna **Limite de dispositivo**.
+1. No [Centro de Administração do Gerenciador de Ponto de Extremidade da Microsoft](https://go.microsoft.com/fwlink/?linkid=2109431), selecione **Registro de dispositivos** > **Restrições de registro** > **Restrições de limite de dispositivo**. Observe o valor da coluna **Limite de dispositivo**.
 
-2. No Intune, escolha **Usuários** > **Todos os usuários** > selecione o usuário > **Dispositivos**. Observe o número total de dispositivos.
+2. No [Centro de Administração do Gerenciador de Ponto de Extremidade da Microsoft](https://go.microsoft.com/fwlink/?linkid=2109431), escolha **Usuários** > **Todos os usuários** > selecione o usuário > **Dispositivos**. Observe o número total de dispositivos.
 
 3. Se o número de dispositivos registrados do usuário já é igual à restrição de limite de dispositivo desse usuário, não é possível registrar mais nenhum até que:
     - [Os dispositivos existentes sejam removidos](../remote-actions/devices-wipe.md), ou

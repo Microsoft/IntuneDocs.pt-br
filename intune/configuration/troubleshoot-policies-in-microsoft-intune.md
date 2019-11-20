@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 687505a3ca2bbdffd26e8870705971aafb4783d2
-ms.sourcegitcommit: 1a7f04c80548e035be82308d2618492f6542d3c0
+ms.openlocfilehash: a8768022872d32116add0ed4ea4caf1f8fcb800f
+ms.sourcegitcommit: 78cebd3571fed72a3a99e9d33770ef3d932ae8ca
 ms.translationtype: MTE75
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/07/2019
-ms.locfileid: "73754964"
+ms.lasthandoff: 11/13/2019
+ms.locfileid: "74059280"
 ---
 # <a name="troubleshoot-policies-and-profiles-and-in-intune"></a>Solucionar problemas de políticas e de perfis e no Intune
 
@@ -103,7 +103,7 @@ Verifique o [status do locatário](../fundamentals/tenant-status.md) e confirme 
 
 ## <a name="youre-unsure-if-a-profile-is-correctly-applied"></a>Você não tem certeza se um perfil foi aplicado corretamente
 
-1. Entre no centro de [Administração do Microsoft Endpoint Manager](https://go.microsoft.com/fwlink/?linkid=2109431).
+1. Entre no [Centro de Administração do Gerenciador de Ponto de Extremidade da Microsoft](https://go.microsoft.com/fwlink/?linkid=2109431).
 2. Selecione **Dispositivos** > **Todos os dispositivos** > selecione o dispositivo > **Configuração do dispositivo**. 
 
     Todos os dispositivos listam seus perfis. Cada perfil tem um **Status**. O status se aplica quando todos os perfis atribuídos, incluindo requisitos de hardware e restrições do sistema operacional, são considerados em conjunto. Os status possíveis incluem:
