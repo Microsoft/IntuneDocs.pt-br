@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 7779e265680ded1b5d5d5b670bcf694376ee8016
-ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
+ms.openlocfilehash: 4a1177a37ddbfa7f760339c4ad0cd7773d670540
+ms.sourcegitcommit: 01fb3d844958a0e66c7b87623160982868e675b0
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/16/2019
-ms.locfileid: "72494407"
+ms.lasthandoff: 11/20/2019
+ms.locfileid: "74199185"
 ---
 # <a name="common-questions-issues-and-resolutions-with-device-policies-and-profiles-in-microsoft-intune"></a>Perguntas, problemas e soluções comuns para perfis e políticas de dispositivo no Microsoft Intune
 
@@ -73,10 +73,6 @@ Se o dispositivo foi registrado recentemente, a frequência das execuções do c
 | Windows 8.1 | A cada cinco minutos por 15 minutos e, depois, a cada 15 minutos por duas horas e, depois, a cada oito horas | 
 
 A qualquer momento, os usuários podem abrir o aplicativo Portal da Empresa, **Configurações** > **Sincronização** para verificar imediatamente se há atualizações de política ou perfil.
-
-Para dispositivos sem afinidade de usuário, a frequência de sincronização imediatamente após o registro pode variar de algumas horas a um dia ou mais. O Intune envia solicitações em vários intervalos para que um dispositivo faça check-in no Intune. No entanto, fazer check-in ainda depende do dispositivo. Após o registro inicial, o tempo que um dispositivo leva para concluir o check-in é imprevisível. Também depende do tipo de registro do dispositivo e das políticas e perfis atribuídos a um dispositivo. Depois que o dispositivo é registrado e todos os perfis e políticas iniciais são aplicados, o dispositivo verifica novas políticas e perfis a cada 6 a 8 horas, dependendo do horário de registro do dispositivo no Intune.
-
-Como prática recomendada, verifique se os dispositivos estão online por pelo menos oito horas consecutivas para obter os melhores resultados.
 
 ## <a name="what-actions-cause-intune-to-immediately-send-a-notification-to-a-device"></a>Que ações fazem com que o Intune envie imediatamente uma notificação para um dispositivo?
 

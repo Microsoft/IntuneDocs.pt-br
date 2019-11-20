@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 4fcec6c264a97d710e3061c289d6898297ef61be
-ms.sourcegitcommit: 4bf23327af734a9811d555fbd566c31239e2acd6
+ms.openlocfilehash: b750c09207b1950aa27a5f2cae1267503537b6e7
+ms.sourcegitcommit: 01fb3d844958a0e66c7b87623160982868e675b0
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/29/2019
-ms.locfileid: "72999535"
+ms.lasthandoff: 11/20/2019
+ms.locfileid: "74199206"
 ---
 # <a name="how-to-configure-the-microsoft-intune-company-portal-app"></a>Como configurar o aplicativo Portal da Empresa do Microsoft Intune
 
@@ -32,7 +32,7 @@ ms.locfileid: "72999535"
 O Portal da Empresa do Microsoft Intune é o local em que os usuários acessam os dados da empresa e podem fazer tarefas comuns, como o registro de dispositivos, a instalação de aplicativos e a localização de informações de assistência do departamento de TI. Além disso, o aplicativo Portal da Empresa permite que o usuário acesse os recursos da empresa com segurança. O aplicativo Portal da Empresa proporciona diversas páginas, como Página Inicial, Aplicativos, Detalhes do aplicativo, Dispositivos e Detalhes do dispositivo. Para localizar rapidamente os aplicativos no Portal da Empresa, você pode filtrá-los na página Aplicativos.
 
 > [!IMPORTANT]
-> Para oferecer compatibilidade com o FCM (Firebase Cloud Messaging) do Google, é preciso atualizar seu aplicativo Android do Portal da Empresa para a versão mais recente. Para saber mais, confira Novidades: [Atualize o aplicativo Android do Portal da Empresa para a versão mais recente](../fundamentals/whats-new.md#update-your-android-company-portal-app-to-the-latest-version-).
+> Para oferecer compatibilidade com o FCM (Firebase Cloud Messaging) do Google, é preciso atualizar seu aplicativo Android do Portal da Empresa para a versão mais recente.  
 
 > [!Tip]
 > Quando você personaliza o Portal da Empresa, as configurações se aplicam ao site do Portal da Empresa e aos aplicativos do Portal da Empresa. Observe que os usuários devem ter uma licença do Intune atribuída para acessar o site do Portal da Empresa.
