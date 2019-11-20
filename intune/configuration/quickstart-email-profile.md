@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 1929e58d3b22e4cb5bc5f6ad2121f2b6f903d023
-ms.sourcegitcommit: 1a7f04c80548e035be82308d2618492f6542d3c0
+ms.openlocfilehash: 2b2f1372a6d7ced09a9ebdfc11cbad69501827bc
+ms.sourcegitcommit: 78cebd3571fed72a3a99e9d33770ef3d932ae8ca
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/07/2019
-ms.locfileid: "73755088"
+ms.lasthandoff: 11/13/2019
+ms.locfileid: "74059323"
 ---
 # <a name="quickstart-create-an-email-device-profile-for-ios"></a>Início Rápido: Criar um perfil de dispositivo de email para o iOS
 
@@ -33,7 +33,7 @@ Se você não tiver uma assinatura do Intune, [inscreva-se para uma conta de ava
 
 ## <a name="sign-in-to-intune"></a>Entrar no Intune
 
-Entre no [Centro de administração do Gerenciador de Ponto de Extremidade da Microsoft](https://go.microsoft.com/fwlink/?linkid=2109431) como Administrador global ou Administrador de serviços do Intune. Se você tiver criado uma assinatura de avaliação do Intune, a conta com a qual você criou a assinatura será a de administrador Global.
+Entre no [Centro de Administração do Gerenciador de Ponto de Extremidade da Microsoft](https://go.microsoft.com/fwlink/?linkid=2109431) como Administrador global ou Administrador de Serviços do Intune. Se você tiver criado uma assinatura de avaliação do Intune, a conta com a qual você criou a assinatura será a de administrador Global.
 
 ## <a name="create-an-ios-email-profile"></a>Criar um perfil de email iOS
 
