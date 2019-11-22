@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: d223fb0cac7ad7435366db70bbb5bf4117216aa0
-ms.sourcegitcommit: a7c35efb31c4efd816bd4aba29240013965aee92
+ms.openlocfilehash: b346f41f5198a4aabcb05dcdd4b35a8c56977f53
+ms.sourcegitcommit: 78cebd3571fed72a3a99e9d33770ef3d932ae8ca
 ms.translationtype: HT
 ms.contentlocale: pt-BR
 ms.lasthandoff: 11/13/2019
-ms.locfileid: "73983977"
+ms.locfileid: "74059771"
 ---
 # <a name="android-app-protection-policy-settings-in-microsoft-intune"></a>Configurações da política de proteção de aplicativo Android no Microsoft Intune
 Este artigo descreve as configurações de política de proteção de aplicativo para dispositivos Android. As configurações de política descritas podem ser [configuradas](app-protection-policies.md) para uma política de proteção de aplicativo na folha **Configurações** no Portal do Azure.
@@ -45,7 +45,7 @@ Há três categorias de configurações de política: configurações de proteç
 | **Restringir recortar, copiar e colar com outros aplicativos** | Especifique quando as ações recortar, copiar e colar podem ser usadas com esse aplicativo. Escolha: <ul><li>**Bloqueado**:  Não permite as ações de recortar, copiar e colar entre esse e outros aplicativos.</li><li>**Aplicativos gerenciados por política**: Permita ações de recortar, copiar e colar entre esse aplicativo e outros aplicativos gerenciados por política.</li><li>**Gerenciados por política com colar em**: Permita o recorte ou a cópia entre esse aplicativo e outros aplicativos gerenciados por política. Permita que dados de qualquer aplicativo sejam colados nesse aplicativo.</li><li>**Qualquer aplicativo**: Sem restrições para recortar, copiar e colar para e desse aplicativo. | **Qualquer aplicativo** |
 | <ul><ui>**Limite de caracteres de recorte e cópia para qualquer aplicativo** | Especifique o número de caracteres que pode ser cortado ou copiado de dados e contas da organização.  Isso permitirá o compartilhamento do número de caracteres especificado para qualquer aplicativo, independentemente da configuração “Restringir recortar, copiar e colar com outros aplicativos”.<p>Valor padrão = 0<p>**Observação**: requer o Portal da Empresa do Intune versão 5.0.4364.0 ou posterior.  | **0** |
 | **Captura de tela e Assistente do Google** | Selecione **Desabilitar** para bloquear a captura de tela e as funcionalidades do **Assistente do Google** do dispositivo ao usar esse aplicativo. Se você escolher **Desabilitar**, a imagem de visualização do Gerenciador de Aplicativos também ficará desfocada ao usar esse aplicativo com uma conta corporativa ou de estudante.| **Habilitar** |
-
+| **Notificações de dados da organização** | Especifique a quantidade de dados da organização compartilhada por meio de notificações do sistema operacional para as contas da organização. Essa configuração de política afetará o dispositivo local e todos os dispositivos conectados, como dispositivos vestíveis e alto-falantes inteligentes. Os aplicativos podem fornecer controles adicionais para personalizar o comportamento de notificação ou podem optar por não respeitar todos os valores. Selecione: <ul><li>**Bloquear**:  Não compartilhe notificações.</li><ul><li>Se não forem compatíveis com o aplicativo, as notificações serão permitidas.</li></ul><li>**Bloquear dados da organização**: Não compartilhe dados da organização em notificações. Por exemplo, "Você tem um novo email"; "Você tem uma reunião"</li><UL><li>Se não forem compatíveis com o aplicativo, as notificações serão bloqueadas.</li></ul><li>**Permitir**: Compartilha dados da organização nas notificações</li><li>**Qualquer aplicativo**: Sem restrições para recortar, copiar e colar para e desse aplicativo.</ul> <p>**Observação**: *Essa configuração requer suporte do aplicativo. Neste momento, o Outlook para Android versão 4.75.0 ou posterior oferece suporte a essa configuração, que tem previsão de lançamento para a semana de 16 de dezembro de 2019.* | **Permitir**   |
   
 ### <a name="encryption"></a>Criptografia
 | Setting | Como usar | Valor padrão |

@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 20743d19ba101a9c400cb9f72dca59223254e6de
-ms.sourcegitcommit: 1a7f04c80548e035be82308d2618492f6542d3c0
+ms.openlocfilehash: 340659adfa3bbd40f98ccec9d8d44e952f7ec9b9
+ms.sourcegitcommit: 78cebd3571fed72a3a99e9d33770ef3d932ae8ca
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/07/2019
-ms.locfileid: "73755064"
+ms.lasthandoff: 11/13/2019
+ms.locfileid: "74059936"
 ---
 # <a name="set-up-a-telecom-expense-management-service-in-intune"></a>Configurar um serviço de gerenciamento de despesas de telecomunicações no Intune
 
@@ -54,7 +54,7 @@ Para usar o serviço Datalert com o Intune, há algumas definições de configur
 
 ## <a name="prerequisites"></a>Pré-requisitos
 
-- Uma assinatura para Microsoft Intune e acesso ao [Centro de administração do Gerenciador de Ponto de Extremidade da Microsoft](https://go.microsoft.com/fwlink/?linkid=2109431)
+- Uma assinatura para Microsoft Intune e acesso ao [Centro de Administração do Gerenciador de Ponto de Extremidade da Microsoft](https://go.microsoft.com/fwlink/?linkid=2109431)
 - Uma assinatura do [Datalert](http://www.datalert.biz/) (abre o site do Datalert)
 
 ## <a name="telecom-expense-management-providers"></a>Provedores de gerenciamento de despesas de telecomunicações
@@ -183,7 +183,7 @@ Para a experiência de usuários finais, os seguintes artigos podem ajudar:
 
 ## <a name="turn-off-the-datalert-service"></a>Desligar o serviço Datalert
 
-1. Na [Centro de administração do Gerenciador de Ponto de Extremidade da Microsoft](https://go.microsoft.com/fwlink/?linkid=2109431), selecione **Administração de locatário** > **Conectores e tokens** > **Gerenciamento de despesas de telecomunicações**.
+1. No [Centro de Administração do Gerenciador de Ponto de Extremidade da Microsoft](https://go.microsoft.com/fwlink/?linkid=2109431), selecione **Administração de locatário** > **Conectores e tokens** > **Gerenciamento de despesas de telecomunicações**.
 2. Defina **Habilitar o Gerenciamento de Despesas de Telecomunicações e bloquear dados de celular ou roaming em dispositivos que excederem cotas de uso configuradas** como **Desabilitar**.
 3. **Salve** suas alterações.
 

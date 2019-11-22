@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: ee924a8c32c3c0591f968db0655044500c8c759d
-ms.sourcegitcommit: 1a7f04c80548e035be82308d2618492f6542d3c0
+ms.openlocfilehash: 36039334f7e93b66735e10d0ac2c5d80602e2b83
+ms.sourcegitcommit: 78cebd3571fed72a3a99e9d33770ef3d932ae8ca
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/07/2019
-ms.locfileid: "73754979"
+ms.lasthandoff: 11/13/2019
+ms.locfileid: "74059864"
 ---
 # <a name="set-up-per-app-virtual-private-network-vpn-for-ios-devices-in-intune"></a>Configurar VPN (rede virtual privada) por aplicativo para dispositivos iOS no Intune
 
@@ -95,7 +95,7 @@ Não deixe de configurar o certificado para autenticação do cliente. Você pod
 
 O perfil de VPN contém o certificado SCEP ou PKCS que contém as credenciais do cliente, as informações de conexão com a VPN e o sinalizador da VPN por aplicativo para habilitar o uso do recurso de VPN por aplicativo pelo aplicativo iOS.
 
-1. No [Centro de administração do Gerenciador de Ponto de Extremidade da Microsoft](https://go.microsoft.com/fwlink/?linkid=2109431), selecione **Dispositivos** > **Perfis de configuração** > **Criar perfil**.
+1. No [Centro de Administração do Gerenciador de Ponto de Extremidade da Microsoft](https://go.microsoft.com/fwlink/?linkid=2109431), selecione **Dispositivos** > **Perfis de configuração** > **Criar perfil**.
 2. Insira as seguintes propriedades:
     - **Nome**: Insira um nome descritivo para o perfil personalizado. Nomeie seus perfis para que você possa identificá-los facilmente mais tarde. Por exemplo, um bom nome de perfil é **Perfil VPN por aplicativo iOS para toda a empresa**.
     - **Descrição**: Insira uma descrição para o perfil. Essa configuração é opcional, mas recomendada.

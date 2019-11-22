@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 5eb5a8f462846afd97ae4ea84b7431ae147d918c
-ms.sourcegitcommit: 556b7ea2049014c9027f0e44affd3f301fab55fc
+ms.openlocfilehash: 30a1c9b1fddaa59d633c8dc969063b26b25097de
+ms.sourcegitcommit: 76ae5aea5deee7a590e24c3b2bb52f88125943e5
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/06/2019
-ms.locfileid: "73709176"
+ms.lasthandoff: 11/15/2019
+ms.locfileid: "74098190"
 ---
 # <a name="set-up-enrollment-for-windows-devices"></a>Configurar o registro para dispositivos Windows
 
@@ -117,6 +117,15 @@ Para obter instruções de registro de usuário final, consulte [Registrar seu d
 > Se o registro de MDM automático não estiver habilitado, mas você tiver dispositivos com Windows 10 que ingressaram no Azure AD, dois registros estarão visíveis no console do Intune após o registro. É possível interromper isso certificando-se de que esses usuários com dispositivos ingressados no Azure AD acessem **Contas** > **Acessar trabalho ou escola** e **Conectar** usando a mesma conta. 
 
 Para obter mais informações sobre as tarefas do usuário final, consulte [Recursos sobre a experiência do usuário final com o Microsoft Intune](../fundamentals/end-user-educate.md).
+
+## <a name="registration-and-enrollment-cnames"></a>Registro e CNAMEs de registro
+O Azure Active Directory tem um CNAME diferente que ele usa para registro de dispositivo para dispositivos iOS, Android e Windows. O acesso condicional do Intune requer que os dispositivos sejam registrados, também chamado de "ingressado no espaço de trabalho". Se você planeja usar acesso condicional, também deverá configurar o CNAME EnterpriseRegistration de cada nome de empresa que possui.
+
+| Tipo | Nome do host | Aponta para | TTL |
+| --- | --- | --- | --- |
+| NOME | EnterpriseRegistration. company_domain.com | EnterpriseRegistration.windows.net | 1 hora|
+
+Para saber mais sobre registro de dispositivo, confira [Gerenciar identidades de dispositivo usando o portal do Azure](https://docs.microsoft.com/azure/active-directory/devices/device-management-azure-portal)
 
 ## <a name="next-steps"></a>Próximas etapas
 

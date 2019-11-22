@@ -6,7 +6,7 @@ keywords: ''
 author: ErikjeMS
 ms.author: erikje
 manager: dougeby
-ms.date: 11/08/2019
+ms.date: 11/18/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.subservice: fundamentals
@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure; get-started
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 37ed7bfd204289c963b8134252d9d76f2379ecba
-ms.sourcegitcommit: 768d581cb8bcc5fdcb8ade95d402b11223ab226c
+ms.openlocfilehash: 71045489ac703860073a3023e6d6170778117d33
+ms.sourcegitcommit: 01fb3d844958a0e66c7b87623160982868e675b0
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/09/2019
-ms.locfileid: "73882488"
+ms.lasthandoff: 11/20/2019
+ms.locfileid: "74199284"
 ---
 # <a name="whats-new-in-microsoft-intune"></a>Novidades do Microsoft Intune
 
@@ -52,6 +52,46 @@ Conheça as novidades de cada semana do Microsoft Intune. Você também pode enc
 ### Monitor and troubleshoot
 ### Role-based access control
 -->  
+
+## <a name="week-of-november-18-2019"></a>Semana de 18 de novembro de 2019
+
+### <a name="device-configuration"></a>Configuração do dispositivo
+
+#### <a name="windows-10-feature-updates-public-preview---2384877---"></a>Atualizações de recursos do Windows 10 (visualização pública)<!-- 2384877 -->
+
+Agora você pode implantar [atualizações de recurso do Windows 10](../protect/windows-update-for-business-configure.md#windows-10-feature-updates) em dispositivos Windows 10. As atualizações de recursos do Windows 10 são uma nova política de atualização de software que define a versão do Windows 10 que você deseja que os dispositivos instalem e utilizem. Você pode usar esse novo tipo de política junto com os anéis de atualização existentes do Windows 10.
+
+Os dispositivos que recebem a política de atualizações de recursos do Windows 10 instalarão a versão especificada do Windows e permanecerão com essa versão até que a política seja editada ou removida. Os dispositivos que executam uma versão mais recente do Windows permanecem com sua versão atual. Os dispositivos que são mantidos em uma versão específica do Windows ainda podem instalar as atualizações de qualidade e de segurança para essa versão dos anéis de atualização do Windows 10.
+
+Esse novo tipo de política começa a ser distribuído para os locatários esta semana. Se essa política ainda não estiver disponível para o seu locatário, ela estará em breve.
+
+### <a name="monitor-and-troubleshoot"></a>Monitorar e solucionar problemas
+
+#### <a name="updated-support-experience---5012398---"></a>Experiência de suporte atualizada<!-- 5012398 -->
+
+A partir de hoje, será distribuída para os locatários uma experiência atualizada e simplificada no console para [obter ajuda e suporte para o Intune](get-support.md). Se essa nova experiência ainda não estiver disponível para você, ela estará em breve.
+
+Melhoramos a pesquisa no console, os comentários sobre problemas comuns e o fluxo de trabalho que você usa para entrar em contato com o suporte. Ao abrir um problema de suporte, você verá estimativas em tempo real de quando pode esperar um retorno de chamada ou resposta por email, e os clientes de suporte Premier e Unificado podem especificar com facilidade a gravidade do problema, para ajudar a obter suporte de forma mais rápida.
+
+## <a name="week-of-november-11-2019"></a>Semana de 11 de novembro de 2019  
+
+### <a name="app-management"></a>Gerenciamento de aplicativos  
+
+#### <a name="improved-macos-enrollment-experience-in-company-portal----5074349-wnready---"></a>Experiência aprimorada de registro do macOS no Portal da Empresa <!-- 5074349 WNready -->  
+O Portal da Empresa para a experiência de registro do macOS tem um processo de registro mais simples que se alinha melhor com o Portal da Empresa para a experiência de registro do iOS. Os usuários do dispositivo agora veem:  
+
+* Uma interface do usuário mais elegante.  
+* Uma lista de verificação de registro aprimorada.  
+* Instruções mais claras sobre como registrar seus dispositivos.  
+* Opções aprimoradas para solução de problemas.  
+
+#### <a name="web-apps-launched-from-the-windows-company-portal-app---5030972---"></a>Aplicativos Web iniciados no aplicativo do Portal da Empresa para Windows<!-- 5030972 -->
+Os usuários finais agora podem iniciar aplicativos Web diretamente do aplicativo do Portal da Empresa para Windows. Os usuários finais podem selecionar o aplicativo Web e, em seguida, escolher a opção **Abrir no navegador**. A URL da Web publicada é aberta diretamente em um navegador da Web. Essa funcionalidade será distribuída na próxima semana. Para mais informações sobre aplicativos Web, confira [Adicionar aplicativos Web ao Microsoft Intune](~/apps/web-app.md).  
+
+
+#### <a name="new-assignment-type-column-in-company-portal-for-windows-10----5459950-wnready---"></a>Nova coluna de tipo de atribuição no Portal da Empresa para Windows 10 <!-- 5459950 WNready -->
+A coluna Portal da Empresa > **Aplicativos Instalados** > **Tipo de atribuição** foi renomeada para **Exigido pela sua organização**.  Nessa coluna, os usuários verão um valor **Sim** ou **Não** para indicar que um aplicativo é necessário ou se tornou opcional por sua organização. Essas alterações foram feitas porque os usuários do dispositivo estavam confusos sobre o conceito de aplicativos disponíveis. Seus usuários podem encontrar mais informações sobre como instalar aplicativos no Portal da Empresa, confira [Instalar e compartilhar aplicativos em seu dispositivo](/intune-user-help/install-apps-cpapp-windows). Para saber mais sobre como configurar o aplicativo do Portal da Empresa para os seus usuários, confira [Como configurar o aplicativo do Portal da Empresa do Microsoft Intune](~/apps/company-portal-app.md).  
+
 
 ## <a name="week-of-november-4-2019"></a>Semana de 4 de novembro de 2019
 
@@ -139,7 +179,7 @@ Para obter mais informações sobre esses aprimoramentos, confira a [postagem no
 
 ### <a name="device-configuration"></a>Configuração do dispositivo
 
-#### <a name="new-device-firmware-configuration-interface-profile-for-windows-10-and-later-devices---2266073----"></a>Novo perfil da interface de configuração de firmware do dispositivo para dispositivos Windows 10 e posteriores<!-- 2266073  -->
+#### <a name="new-device-firmware-configuration-interface-profile-for-windows-10-and-later-devices-public-preview---2266073----"></a>Novo perfil da interface de configuração de firmware do dispositivo para dispositivos Windows 10 e posteriores (visualização pública)<!-- 2266073  -->
 
 No Windows 10 e posterior, você pode criar um perfil de configuração do dispositivo para controlar configurações e recursos (**Configuração do dispositivo** > **Perfis** > **Criar perfil** > **Windows 10 e posterior** para a plataforma). Nesta atualização, há um novo tipo de perfil da interface de configuração de firmware do dispositivo que permite ao Intune gerenciar configurações da UEFI (BIOS).
 
@@ -516,7 +556,7 @@ Use as configurações do Intune Endpoint Protection para configurar a [Rotaçã
 Essa configuração inicia uma atualização de senha de recuperação orientada a cliente após uma recuperação de unidade do SO (usando bootmgr ou WinRE) e desbloqueio de senha de recuperação em uma unidade de dados fixa. Essa configuração atualiza a senha de recuperação específica usada e outras senhas não utilizadas no volume permanecem inalteradas. Para saber mais, confira a documentação do BitLocker CSP para [ConfigureRecoveryPasswordRotation](https://docs.microsoft.com/windows/client-management/mdm/bitlocker-csp).
 
 #### <a name="tamper-protection-for-windows-defender-antivirus---4705448----------"></a>Proteção contra Adulterações para o Windows Defender Antivírus<!-- 4705448        -->
-Use o Intune para gerenciar a *Proteção contra Adulterações* para o Windows Defender Antivírus. Você encontrará a configuração para [Proteção contra Adulterações](../protect/endpoint-protection-windows-10.md#windows-defender-security-center) no grupo Microsoft Defender Security Center ao usar perfis de configuração de dispositivo para a proteção de ponto de extremidade do Windows 10. Você pode definir a Proteção contra Adulterações para *Habilitada* para ativar as restrições de proteção contra adulterações, definir *Desabilitada* para desativá-las ou definir *Não Configurada* para deixar a configuração atual de dispositivos em vigor.  
+Use o Intune para gerenciar a *Proteção contra Adulterações* para o Windows Defender Antivírus. Você encontrará a configuração para [Proteção contra Adulterações](../protect/endpoint-protection-windows-10.md#microsoft-defender-security-center) no grupo Microsoft Defender Security Center ao usar perfis de configuração de dispositivo para a proteção de ponto de extremidade do Windows 10. Você pode definir a Proteção contra Adulterações para *Habilitada* para ativar as restrições de proteção contra adulterações, definir *Desabilitada* para desativá-las ou definir *Não Configurada* para deixar a configuração atual de dispositivos em vigor.  
 
 Para saber mais sobre a proteção contra adulterações, confira [Impedir alterações nas configurações de segurança com proteção contra adulterações](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-antivirus/prevent-changes-to-security-settings-with-tamper-protection) na documentação do Windows.
 

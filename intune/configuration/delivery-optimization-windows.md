@@ -15,12 +15,12 @@ ms.suite: ems
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
 ms.reviewer: kerimh
-ms.openlocfilehash: 908319c588fe2a1bf55a376d3f02a03db780a3ad
-ms.sourcegitcommit: 1a7f04c80548e035be82308d2618492f6542d3c0
+ms.openlocfilehash: 44078f61e4f1939b1f0b15b3dde5ac54938ffbc3
+ms.sourcegitcommit: 78cebd3571fed72a3a99e9d33770ef3d932ae8ca
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/07/2019
-ms.locfileid: "73755405"
+ms.lasthandoff: 11/13/2019
+ms.locfileid: "74059971"
 ---
 # <a name="delivery-optimization-settings-in-microsoft-intune"></a>Configurações de otimização de entrega no Microsoft Intune
 
@@ -60,7 +60,7 @@ As configurações de **Otimização de entrega** substituem as **Atualizações
 
 1. Crie um perfil de configuração de otimização de entrega:
 
-    1. No centro de administração do Gerenciador de Ponto de Extremidade da Microsoft, selecione **Dispositivos** > **Perfis de configuração** > **Criar perfil**.
+    1. No Centro de Administração do Gerenciador de Ponto de Extremidade da Microsoft, selecione **Dispositivos** > **Perfis de configuração** > **Criar perfil**.
     2. Insira as seguintes propriedades:
 
         - **Nome**: insira um nome descritivo para o novo perfil.
@@ -80,7 +80,7 @@ As configurações de **Otimização de entrega** substituem as **Atualizações
 2. Atribua esse perfil novo aos mesmos dispositivos e usuários que o anel de atualização de software existente. [Atribuir o perfil](device-profile-assign.md) lista as etapas.
 
 3. Desconfigure o anel de software existente:
-    1. No centro de administração do Gerenciador de Ponto de Extremidade da Microsoft, acesse **Atualizações de software** > Anéis de atualização do Windows 10.
+    1. No Centro de Administração do Gerenciador de Ponto de Extremidade da Microsoft, acesse **Atualizações de software** > Anéis de Atualização do Windows 10.
     2. Na lista, selecione o anel de atualização.
     3. Nas configurações, defina o **Modo de download de otimização da entrega** como **Não configurado**.
     4. **OK** > **Salve** suas alterações.
