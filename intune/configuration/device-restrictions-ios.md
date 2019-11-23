@@ -16,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure; seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 391c5ac194d5dc7ddf492fe23907279cc4380d3d
-ms.sourcegitcommit: a7c35efb31c4efd816bd4aba29240013965aee92
+ms.openlocfilehash: 751ddfae96ebcd190d4d9ce2ca93bfccba972df5
+ms.sourcegitcommit: 2fddb293d37453736ffa54692d03eca642f3ab58
 ms.translationtype: MTE75
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/13/2019
-ms.locfileid: "73984117"
+ms.lasthandoff: 11/22/2019
+ms.locfileid: "74390852"
 ---
 # <a name="ios-and-ipados-device-settings-to-allow-or-restrict-features-using-intune"></a>Configurações de dispositivo iOS e iPadOS para permitir ou restringir recursos usando o Intune
 
@@ -130,9 +130,6 @@ Essas configurações são adicionadas a um perfil de configuração do disposit
     - iOS 11.3 e mais recente
 
 ## <a name="password"></a>Senha
-
-> [!NOTE]
-> Em uma versão futura, essas configurações de senha na interface do usuário do Intune estão sendo atualizadas para corresponder ao tipo de registro.
 
 ### <a name="settings-apply-to-all-enrollment-types"></a>As configurações se aplicam a: todos os tipos de registro
 
@@ -266,7 +263,7 @@ Essas configurações são adicionadas a um perfil de configuração do disposit
 - **Exigir senha da iTunes Store para todas as compras**: **exige** que o usuário insira a senha da ID da Apple para cada compra no aplicativo ou iTunes. **Não configurado** (padrão) permite compras sem solicitar uma senha a cada vez.
 - **Compras no aplicativo**: escolha **Bloquear** para evitar compras no aplicativo a partir da loja. **Não configurado** (padrão) permite compras na loja em um aplicativo em execução.
 - **Baixar o conteúdo da iBook Store sinalizado como "Erotismo"** : escolha **Bloquear** para impedir que os usuários baixem mídias da iBook Store marcadas como erotismo. **Não configurado** (padrão) permite que o usuário baixe livros da categoria "Erotismo".
-- **Permitir que aplicativos gerenciados gravem contatos em contas de contatos não gerenciados**: quando definido como **permitir**, aplicativos gerenciados, como o aplicativo móvel do Outlook, podem salvar ou sincronizar informações de contato, incluindo contatos comerciais e corporativos, para os contatos internos do IOS aplicação. Quando definido como **não configurado** (padrão), os aplicativos gerenciados não podem salvar ou sincronizar informações de contato com o aplicativo interno de contatos do Ios no dispositivo.
+- **Permitir que aplicativos gerenciados gravem contatos em contas de contatos não gerenciados**: quando definido como **permitir**, aplicativos gerenciados, como o aplicativo móvel do Outlook, podem salvar ou sincronizar informações de contato, incluindo contatos comerciais e corporativos, para o aplicativo interno de contatos do Ios. Quando definido como **não configurado** (padrão), os aplicativos gerenciados não podem salvar ou sincronizar informações de contato com o aplicativo interno de contatos do Ios no dispositivo.
   
   Para usar essa configuração, defina a configuração **Exibindo documentos corporativos em aplicativos não gerenciados** como **Bloquear**.
 
@@ -321,16 +318,6 @@ Essas configurações são adicionadas a um perfil de configuração do disposit
 - **JavaScript do Safari**: **Bloquear** impede a execução de scripts em Java no navegador do dispositivo. **Não configurado** (padrão) permite scripts java.
 
 - **Pop-ups do Safari**: **Bloquear** desabilita o bloqueador de pop-ups no navegador da Web. **Não configurado** (padrão) permite o bloqueador de pop-ups.
-
-- **Registro em log do lado do servidor para comandos Siri**: quando definido como **desabilitado**, o registro em log de Siri do servidor é desativado. Ele também pode impedir o registro de solicitações de usuário em servidores Siri. **Não configurado** (padrão) registra os comandos Siri no lado do servidor. Essa configuração não depende da configuração Siri que está sendo bloqueada ou não configurada.
-
-  Esse recurso aplica-se a:  
-  - iOS 12.2 e mais recente
-
-  > [!NOTE]
-  > A configuração **log do lado do servidor para comandos Siri** é preterida pela Apple. Em uma versão futura, essa configuração é removida do console do Intune.
-  >
-  > Atualmente, essa configuração não tem nenhum efeito nos dispositivos, mesmo que a configuração seja mostrada nos perfis gerenciamento dispositivos. Para excluir essa configuração de qualquer política, abra a política, faça uma alteração secundária e, em seguida, salve a política. A política é atualizada e a configuração é excluída dos dispositivos.
 
 ### <a name="settings-apply-to-automated-device-enrollment-supervised"></a>As configurações se aplicam a: registro de dispositivo automatizado (supervisionado)
 
