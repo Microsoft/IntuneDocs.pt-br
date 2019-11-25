@@ -6,7 +6,7 @@ keywords: ''
 author: brenduns
 ms.author: brenduns
 manager: dougeby
-ms.date: 09/20/2019
+ms.date: 11/18/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.subservice: protect
@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 39d687c8c9b75182ba0e7d4020c6b840c753a231
-ms.sourcegitcommit: a4c7339ec9ff5b1b846cb3cca887cf91b5cd4baa
+ms.openlocfilehash: 6615933f604f2ff4156885bc6559af7e46d4ccb2
+ms.sourcegitcommit: 13fa1a4a478cb0e03c7f751958bc17d9dc70010d
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/05/2019
-ms.locfileid: "73627657"
+ms.lasthandoff: 11/19/2019
+ms.locfileid: "74188510"
 ---
 # <a name="integrate-jamf-pro-with-intune-for-compliance"></a>Integrar o Jamf Pro ao Intune para fins de conformidade
 
@@ -70,7 +70,7 @@ Para conectar o Intune ao Jamf Pro:
 2. Habilite a integração do Intune ao Jamf Pro.
 3. Configure o Acesso Condicional no Jamf Pro.
 
-## <a name="create-an-application-in-azure-active-directory"></a>Crie um aplicativo no Azure Active Directory
+### <a name="create-an-application-in-azure-active-directory"></a>Crie um aplicativo no Azure Active Directory
 
 1. No [portal do Microsoft Azure](https://portal.azure.com), acesse **Azure Active Directory** > **Registros de aplicativo** e escolha **Novo registro**. 
 
@@ -102,15 +102,17 @@ Para conectar o Intune ao Jamf Pro:
     > [!NOTE]
     > Se o segredo do cliente expirar, você deverá criar um novo segredo do cliente no Azure e, depois, atualizar os dados do Acesso Condicional no Jamf Pro. O Azure permite que você tenha o segredo antigo e a nova chave ativos para evitar interrupções no serviço.
 
-## <a name="enable-intune-to-integrate-with-jamf-pro"></a>Permitir a integração do Intune ao Jamf Pro
+### <a name="enable-intune-to-integrate-with-jamf-pro"></a>Permitir a integração do Intune ao Jamf Pro
 
-1. Entre no [Intune](https://go.microsoft.com/fwlink/?linkid=2090973) e vá para **Microsoft Intune** > **Conformidade do Dispositivo** > **Gerenciamento de dispositivos do parceiro**.
+1. Entre no [Centro de Administração do Gerenciador de Ponto de Extremidade da Microsoft](https://go.microsoft.com/fwlink/?linkid=2109431).
 
-2. Habilite o Conector de Conformidade para o Jamf colando a ID do Aplicativo salva no procedimento anterior no campo **ID do Aplicativo do Azure Active Directory para o Jamf**.
+2. Selecione **Administração de locatário** > **Conectores e tokens** > **Gerenciamento de dispositivo de parceiro**.
 
-3. Selecione **Salvar**.
+3. Habilite o *Conector de Conformidade para o Jamf* colando a ID do Aplicativo salva no procedimento anterior no campo **Especificar o ID do Aplicativo do Azure Active Directory para o Jamf**.
 
-## <a name="configure-microsoft-intune-integration-in-jamf-pro"></a>Configurar a Integração do Microsoft Intune no Jamf Pro
+4. Selecione **Salvar**.
+
+### <a name="configure-microsoft-intune-integration-in-jamf-pro"></a>Configurar a Integração do Microsoft Intune no Jamf Pro
 
 1. No Jamf Pro, navegue até **Gerenciamento Global** > **Acesso Condicional**. Clique no botão **Editar** na guia **Integração do Intune com o macOS**.
 
@@ -125,17 +127,22 @@ Para conectar o Intune ao Jamf Pro:
 Depois de configurar a integração entre o Intune e o Jamf, você precisará [aplicar políticas de conformidade aos dispositivos gerenciados pelo Jamf](conditional-access-assign-jamf.md).
 
 
-## <a name="disconnect-jamf-pro-and-intune"></a>Desconectar Jamf Pro e Intune 
+## <a name="disconnect-jamf-pro-and-intune"></a>Desconectar Jamf Pro e Intune
 
-Se você não usar mais o Jamf Pro para gerenciar Macs em sua organização e quiser gerenciar os usuários com o Intune, deverá remover a conexão entre o Jamf Pro e o Intune. Remova a conexão usando o console do Jamf Pro. 
+Se você não usar mais o Jamf Pro para gerenciar Macs em sua organização e quiser gerenciar os usuários com o Intune, deverá remover a conexão entre o Jamf Pro e o Intune. Remova a conexão usando o console do Jamf Pro.
 
 1. No Jamf Pro, vá até **Gerenciamento Global** > **Acesso Condicional**. Na guia **Integração do Intune com o macOS**, selecione **Editar**.
+
 2. Desmarque a caixa de seleção **Habilitar a Integração do Intune com o macOS**.
+
 3. Selecione **Salvar**. O Jamf Pro envia a sua configuração para o Intune, e a integração será encerrada.
-4. Conecte-se ao [Intune](https://go.microsoft.com/fwlink/?linkid=2090973). Vá até **Microsoft Intune** > **Conformidade do Dispositivo** > **Gerenciamento de dispositivo de parceiros** para verificar se agora o status é **Encerrado**. 
+
+4. Entre no [Centro de Administração do Gerenciador de Ponto de Extremidade da Microsoft](https://go.microsoft.com/fwlink/?linkid=2109431).
+
+5. Selecione **Administração de locatário** > **Conectores e tokens** > **Gerenciamento de dispositivo de parceiro** para verificar se o status agora é **Encerrado**.
 
    > [!NOTE]
-   > Os dispositivos Mac de sua organização serão removidos na data (três meses) exibida no console. 
+   > Os dispositivos Mac de sua organização serão removidos na data (três meses) exibida no console.
 
 ## <a name="next-steps"></a>Próximas etapas
 

@@ -6,7 +6,7 @@ keywords: ''
 author: brenduns
 ms.author: brenduns
 manager: dougeby
-ms.date: 10/02/2019
+ms.date: 11/18/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.subservice: protect
@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: d3552eca925865eb3278b50490a6b70ee5807e2b
-ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
+ms.openlocfilehash: b09b30fd32caace9ed3259350c01548d5e5fae15
+ms.sourcegitcommit: 93265c2491058afde7168134075bed77031b9311
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/16/2019
-ms.locfileid: "72502459"
+ms.lasthandoff: 11/18/2019
+ms.locfileid: "74161600"
 ---
 # <a name="enforce-compliance-on-macs-managed-with-jamf-pro"></a>Impor a conformidade em Macs gerenciados com Jamf Pro
 
@@ -37,12 +37,11 @@ Os procedimentos neste artigo exigem acesso aos consoles do Intune e do Jamf Pro
 
 ## <a name="set-up-device-compliance-policies-in-intune"></a>Configurar as políticas de conformidade do dispositivo no Intune
 
-1. Entre no [Intune](https://go.microsoft.com/fwlink/?linkid=2090973) e acesse **Conformidade do dispositivo** > **Políticas**. 
-2. Se você estiver usando uma política criada anteriormente, selecione essa política no console e siga para a próxima etapa deste procedimento.  
-   
-   Selecione **Criar Política** e especifique os detalhes de uma política com uma *Plataforma* do **macOS**. Defina as *Configurações* e *Ações para não conformidade* para atender aos seus requisitos organizacionais e, em seguida, selecione **Criar** para salvar a política.
+1. Entre no [Centro de Administração do Gerenciador de Ponto de Extremidade da Microsoft](https://go.microsoft.com/fwlink/?linkid=2109431).
 
-3. No painel *Visão geral* das políticas, selecione **Atribuições**. Use as opções disponíveis para configurar quais usuários e grupos de segurança do Azure AD (Azure Active Directory) recebem essa política. A integração do Jamf com o Intune não é compatível com a política de conformidade direcionada a grupos de dispositivos. 
+2. Selecione **Dispositivos** > **Políticas de conformidade**. Se você estiver usando uma política criada anteriormente, selecione essa política no console e siga para a próxima etapa deste procedimento. Para criar uma nova política, selecione **Criar Política** e especifique os detalhes de uma política com uma *Plataforma* do **macOS**. Defina as *Configurações* e *Ações para não conformidade* para atender aos seus requisitos organizacionais e, em seguida, selecione **Criar** para salvar a política.
+
+3. No painel *Visão geral* das políticas, selecione **Atribuições**. Use as opções disponíveis para configurar quais usuários e grupos de segurança do Azure AD (Azure Active Directory) recebem essa política. A integração do Jamf com o Intune não é compatível com a política de conformidade direcionada a grupos de dispositivos.
 
 4. Ao selecionar **Salvar**, a política é implantada para os usuários.  
 
@@ -103,7 +102,7 @@ O registro do dispositivo requer que um usuário do dispositivo selecione manual
 
 Use o console do Jamf Pro para confirmar se a comunicação entre o Jamf Pro e o Microsoft Intune foi bem-sucedida. 
 
-- No Jamf Pro, acesse **Configurações** > **Gerenciamento Global** > **Integração do Microsoft Intune** e, em seguida, selecione **Testar**. 
+- No Jamf Pro, acesse **Configurações** > **Gerenciamento Global** > **Integração do Microsoft Intune** e, em seguida, selecione **Testar**.
 
     O console exibe uma mensagem com o êxito ou a falha da conexão.  
 
@@ -112,7 +111,7 @@ Se o teste de conexão do console do Jamf Pro falhar, examine a configuração d
 
 ## <a name="removing-a-jamf-managed-device-from-intune"></a>Removendo um dispositivo gerenciado Jamf do Intune
 
-É possível remover um dispositivo gerenciado pelo Jamf do console do Intune selecionando **Excluir** na exibição **Todos os dispositivos**. A exclusão de dispositivos em massa pode ser habilitada selecionando vários aplicativos e clicando em **Excluir**.
+Para remover um dispositivo gerenciado por Jamf, abra o Centro de Administração do Gerenciador de Ponto de Extremidade da Microsoft e selecione **Dispositivos** > **Todos os dispositivos**, selecione o dispositivo e, em seguida, selecione **Excluir**.  A exclusão de dispositivos em massa pode ser habilitada selecionando vários aplicativos e clicando em **Excluir**.
 
 Obtenha informações sobre como [remover um dispositivo gerenciado pelo Jamf nos documentos do Jamf Pro](https://www.jamf.com/jamf-nation/articles/80/unmanaging-computers-while-preserving-their-inventory-information). Você também pode registrar um tíquete de suporte com o [Suporte do Jamf](https://www.jamf.com/support/) para obter suporte adicional. 
 

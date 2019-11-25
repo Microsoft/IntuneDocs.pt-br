@@ -6,7 +6,7 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 10/16/2019
+ms.date: 11/18/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.localizationpriority: high
@@ -16,16 +16,16 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: b3372fc83e467b08b479490b3707f2be03409156
-ms.sourcegitcommit: c2e62f1ebdf75599c8e544287123c602f0f15f2b
+ms.openlocfilehash: f78f3696827ebd50084f0e4b012c5f94427eeb35
+ms.sourcegitcommit: 15e099a9a1e18296580bb345610aee7cc4acd126
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72749327"
+ms.lasthandoff: 11/18/2019
+ms.locfileid: "74164570"
 ---
 # <a name="guided-scenario---cloud-managed-modern-desktop"></a>Cenário guiado – Área de Trabalho Moderna gerenciada em nuvem
 
-A área de trabalho moderna é a plataforma de produtividade de ponta do Operador de Informações. O Office 365 ProPlus e o Windows 10 são os principais componentes da área de trabalho moderna, juntamente com as linhas de base de segurança mais recentes para Windows 10 e para a Proteção Avançada contra Ameaças do Windows Defender. 
+A área de trabalho moderna é a plataforma de produtividade de ponta do Operador de Informações. O Office 365 ProPlus e o Windows 10 são os principais componentes da área de trabalho moderna, juntamente com as linhas de base de segurança mais recentes para Windows 10 e para a Proteção Avançada contra Ameaças do Microsoft Defender. 
 
 O gerenciamento da área de trabalho moderna da nuvem traz o benefício adicional de ações remotas de toda a Internet. O gerenciamento de nuvem utiliza as políticas internas do Gerenciamento de Dispositivo Móvel do Windows e remove as dependências na política de grupo local do Active Directory. 
 
@@ -33,7 +33,7 @@ Se desejar avaliar uma área de trabalho moderna gerenciada pela nuvem em sua pr
 
 ## <a name="prerequisites"></a>Pré-requisitos
 - [Definir a autoridade MDM como Intune](~/fundamentals/mdm-authority-set.md#set-mdm-authority-to-intune) – A configuração de autoridade MDM (gerenciamento de dispositivo móvel) determina como você gerencia seus dispositivos. Como administrador de TI, você deverá definir uma autoridade MDM antes que os usuários possam registrar dispositivos para gerenciamento.
-- M356 E3 mínimo (ou M365 E5 para ter a melhor segurança)
+- M365 E3 mínimo (ou M365 E5 para ter a melhor segurança)
 - Dispositivo Windows 10 1903 (registrado com o Windows Autopilot para obter a melhor experiência do usuário final)
 - Permissões de administrador do Intune necessárias para concluir este cenário guiado:
   - Configuração do dispositivo Leitura, Criação, Exclusão, Atribuição e Atualização
@@ -118,5 +118,5 @@ Depois que o usuário ingressar o dispositivo no Azure Active Directory, as segu
 
 ## <a name="next-steps"></a>Próximas etapas
 
-- Se você estiver usando a Detecção Avançada contra Ameaças do Windows Defender, crie uma [Política de conformidade do Intune](~/protect/advanced-threat-protection.md#create-and-assign-the-compliance-policy) para exigir que uma análise de ameaças do Defender atenda à conformidade.
+- Se você estiver usando a Detecção Avançada contra Ameaças do Microsoft Defender, crie uma [Política de conformidade do Intune](~/protect/advanced-threat-protection.md#create-and-assign-the-compliance-policy) para exigir que uma análise de ameaças do Defender atenda à conformidade.
 - Crie uma [Política de Acesso Condicional baseada em Dispositivo](~/protect/advanced-threat-protection.md#create-a-conditional-access-policy) para bloquear o acesso se o dispositivo não atender à conformidade do Intune.

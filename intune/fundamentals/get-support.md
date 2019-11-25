@@ -6,160 +6,129 @@ keywords: ''
 author: brenduns
 ms.author: brenduns
 manager: dougeby
-ms.date: 10/30/2019
+ms.date: 11/18/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.subservice: fundamentals
 ms.localizationpriority: high
 ms.technology: ''
 ms.assetid: 7fc95d17-098e-4da5-8a09-a96476569dd9
-ms.reviewer: cacamp
+ms.reviewer: srik
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 1049bfeaf3840e1e6a711fd4df10b0a29a88b6b8
-ms.sourcegitcommit: 85c894cb4df34a5ff558e3b45e28a8b91054d9e6
+ms.openlocfilehash: 14ff8ad2d41a6f2235c18f155e3a5b865e3a32e4
+ms.sourcegitcommit: 01fb3d844958a0e66c7b87623160982868e675b0
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/01/2019
-ms.locfileid: "73432556"
+ms.lasthandoff: 11/20/2019
+ms.locfileid: "74199304"
 ---
-# <a name="how-to-get-support-for-microsoft-intune"></a>Como obter suporte para o Microsoft Intune  
-  
+# <a name="how-to-get-support-for-microsoft-intune"></a>Como obter suporte para o Microsoft Intune
+
 A Microsoft fornece suporte técnico global, de pré-vendas, cobrança e assinatura para o Microsoft Intune. O suporte está disponível online e por telefone para versões de avaliação e assinaturas pagas. O suporte técnico online está disponível apenas em inglês e japonês. O suporte via telefone e o suporte de cobrança online estão disponíveis em outros idiomas.
 
-Como administrador do Intune, você pode usar a opção **Ajuda e Suporte** para abrir um tíquete de suporte online para o Intune no portal do Azure. Para criar e gerenciar um incidente de suporte, sua conta deve ter uma função do Azure AD (Azure Active Directory) que inclua a *ação* **microsoft.office365.supportTickets**. Para saber mais sobre funções e as permissões do Azure AD necessárias para criar um tíquete de suporte, confira [Funções de administrador no Azure Active Directory](https://docs.microsoft.com/azure/active-directory/active-directory-assign-admin-roles-azure-portal).  
+Como administrador do Intune, você pode usar a opção **Ajuda e Suporte** para abrir um tíquete de suporte online para o Intune no portal do Azure. Para criar e gerenciar um incidente de suporte, sua conta deve ter uma função do Azure AD (Azure Active Directory) que inclua a *ação* **microsoft.office365.supportTickets**. Para saber mais sobre funções e as permissões do Azure AD necessárias para criar um tíquete de suporte, confira [Funções de administrador no Azure Active Directory](https://docs.microsoft.com/azure/active-directory/active-directory-assign-admin-roles-azure-portal).
 
->[!IMPORTANT]  
+>[!IMPORTANT]
 > Para obter suporte técnico de produtos de terceiros que funcionam com o Intune (como, Saaswedo, Cisco ou Lookout) entre em contato primeiro com o fornecedor do produto. Antes de abrir uma solicitação de suporte do Intune, verifique se você configurou o outro produto corretamente.
 >
 > Para obter informações sobre como solucionar problemas relacionados ao Microsoft Intune, consulte a [seção Solucionar problemas](help-desk-operators.md) da documentação do Intune.
 
-## <a name="known-issues-for-creating-support-incidents"></a>Problemas conhecidos para a criação de incidentes de suporte
 
-Se sua conta tiver as permissões necessárias, mas não conseguir acessar a Ajuda e Suporte, ou criar ou gerenciar um incidente de suporte, veja os problemas conhecidos a seguir e suas resoluções:
+## <a name="help-and-support-experience"></a>Experiência de Ajuda e suporte
 
-- Token de usuário obsoleto em sua conta. Para resolver esse problema, saia de todas as sessões de console ativas, entre novamente e, em seguida, tentar criar ou gerenciar um incidente de suporte.
-- Várias sessões ativas. Se você estiver conectado com mais de um usuário ou sessão, desconecte todos os consoles com exceção de um. Em seguida, com uma única sessão ativa, tente criar ou gerenciar um incidente de suporte.
+A experiência de Ajuda e suporte para o Intune está disponível no [Portal de Gerenciamento de dispositivos do Microsoft 365](https://devicemanagement.microsoft.com) e em todas as folhas (ou páginas) do Intune no portal do Azure.
 
-Estas são as ações adicionais que podem ser necessárias para resolver problemas de acesso:
+A experiência de *Ajuda e suporte* é semelhante à experiência observada no [Centro de administração do Microsoft 365](https://admin.microsoft.com/) e substitui a anterior *Ajuda + suporte*, que permanece em vigor para outros serviços no Azure.
 
-- Limpe todos os cookies de sua sessão de navegador ativa e tente criar ou gerenciar novamente um incidente de suporte.
-- Use um sessão de navegação InPrivate para entrar no Intune e tente criar ou gerenciar um incidente de suporte.
+> [!TIP]
+> A partir de 18 de novembro de 2019, uma experiência atualizada e simplificada no console para obter ajuda e suporte será lançada para os locatários. Se essa nova experiência ainda não estiver disponível para você, estará em breve.
 
-Se as soluções anteriores não ajudarem, acesse o [Centro de administração do Microsoft 365](https://admin.microsoft.com) e crie um tíquete de suporte a partir daí. Estamos trabalhando em uma correção que estará disponível no segundo semestre.
+### <a name="options-to-access-help-and-support"></a>Opções para acessar a Ajuda e suporte
 
-## <a name="help-and-support-experience"></a>Experiência de Ajuda e suporte  
+- **No portal do Azure:**
 
-A experiência de Ajuda e suporte para o Intune está disponível no [Portal de Gerenciamento de dispositivos do Microsoft 365](https://devicemanagement.microsoft.com) e em todas as folhas (ou páginas) do Intune no portal do Azure. 
+  - Selecione **Ajuda e suporte** em qualquer folha ou página do Intune.
 
-![Folhas do Intune](./media/get-support/intune-blades.png)
+  > [!NOTE]  
+  > Se a instância do Intune estiver hospedada na nuvem privada para o governo, também conhecidas como uma nuvem soberana, como o Azure Governamental, confira o [Suporte do Intune para a nuvem privada governamental](#intune-support-for-private-cloud-for-government), posteriormente neste artigo. A experiência de *Ajuda e suporte* do Intune não estará disponível na nuvem privada governamental até o próximo ano.
 
-
-A experiência de *Ajuda e suporte* é semelhante à experiência observada no [Centro de administração do Microsoft 365](https://admin.microsoft.com/) e substitui a anterior *Ajuda + suporte*, que permanece em vigor para outros serviços no Azure. 
-
-Para acessar a Ajuda e suporte, use as seguintes opções:  
-- **Painel de Gerenciamento de Dispositivos:**
+- **No Painel de Gerenciamento de Dispositivo:**
   - Depois de selecionar uma área de recursos para o Intune, selecione a opção para **Ajuda e suporte**.
   - Em qualquer nó no portal de gerenciamento de dispositivos, selecione o ícone **?** ícone no canto superior direito do portal e use o menu suspenso para selecionar o serviço para o qual você deseja ajuda. O ícone **?** no portal Gerenciamento de dispositivos dá suporte a vários serviços e você deve selecionar o serviço específico para o qual deseja assistência.  
 
     ![Selecione o serviço](./media/get-support/select-a-service.png)
 
-    Depois de selecionar um serviço, você verá a página *Ajuda e suporte* desse serviço, onde poderá [especificar detalhes](#specify-details-about-an-issue) sobre o problema específico para o qual deseja obter ajuda.  
+    Depois de selecionar um serviço, você verá a página *Ajuda e suporte* desse serviço, onde poderá especificar detalhes para [encontrar soluções](#find-solutions) para o problema específico.
 
-    Se os resultados da sua pesquisa não corresponderem às expectativas do serviço, verifique se o serviço correto foi selecionado. A seleção de serviço aparece logo após *Ajuda e suporte*.  Se o serviço certo não foi selecionado, clique em *Selecionar um serviço* para retornar à lista suspensa de seleção de serviço.   
+    Quando os resultados da sua pesquisa não corresponderem às expectativas do serviço, verifique se o serviço correto foi selecionado. A seleção de serviço aparece logo após *Ajuda e suporte*.  Se o serviço certo não foi selecionado, clique em *Selecionar um serviço* para retornar à lista suspensa de seleção de serviço.
 
-    ![Confirme o serviço](./media/get-support/confirm-your-service-selection.png) 
+    ![Confirme o serviço](./media/get-support/confirm-your-service-selection.png)
 
+###  <a name="the-support-experience"></a>A experiência de suporte
 
-- **No portal do Azure:**
-  - Selecione **Ajuda e suporte** em qualquer folha ou página do Intune
+  Quando você abre a Ajuda e Suporte, o portal exibe a janela **Precisa de ajuda?** :
 
-  No portal do Azure, se você selecionar o ícone **?** no canto superior direito ou **Ajuda + suporte** no painel de navegação à esquerda, você abre a *Ajuda + suporte* para o Azure. Na *Ajuda + suporte* do Azure, não é possível abrir diretamente um incidente de suporte do Intune, mas você pode acessar a página *Ajuda e suporte* do Intune executando as seguintes ações: 
-  1. Selecione Nova solicitação de suporte.
-  2. Para Tipo de problema, especifique Técnico.
-  3. Para Serviço, especifique Microsoft Intune.
-  4. Selecione o link Página de Ajuda e Suporte do Intune.
+  ![Exibir a janela de ajuda necessária](./media/get-support/need-help.png)
 
-> [!NOTE]  
-> Se a instância do Intune estiver hospedada na nuvem privada para o governo, também conhecidas como uma nuvem soberana, como o Azure Governamental, confira o [Suporte do Intune para a nuvem privada governamental](#intune-support-for-private-cloud-for-government), posteriormente neste artigo. A experiência de *Ajuda e suporte* do Intune não estará disponível na nuvem privada governamental até o próximo ano. 
+  No canto superior esquerdo, há três ícones que você pode selecionar para abrir painéis diferentes da janela *Precisa de ajuda?* . O painel que você está visualizando está identificado pelo sublinhado.
 
+  Os clientes com um contrato de suporte **Premier** ou **Unificado** têm [opções adicionais](#premier-and-unified-support-customers) para suporte e veem uma faixa em *Precisa de ajuda?* semelhante à imagem a seguir: ![Faixa Premier](./media/get-support/premier-banner.png)
 
-Quando você abre a *Ajuda e suporte*, o portal exibe uma exibição que depende se você tem ou não incidentes de suporte ativos, e quando você tem o Suporte Premier, alguns elementos e opções adicionais:
-- **Nenhum incidente de suporte ativo**: Você verá a página **Precisa de ajuda?** , como pode ser visto na imagem a seguir no painel Gerenciamento de Dispositivos.  
-- **Incidentes de suporte ativos**: Você verá a página [Tíquetes de suporte](#view-support-cases), que exibe a lista dos seus incidentes ativos.  
-- **Contrato de suporte Premier**: Sua experiência é a mesma das duas primeiras opções, embora você veja os seguintes elementos adicionais na página Precisa de ajuda?: 
-  - Após o título de página **Precisa de ajuda?** , você verá o banner do Suporte Premier:  
-    ![Banner do Suporte Premier](./media/get-support/premier-banner.png)
-  - Na seção **Obter Suporte** da página, você pode definir o nível inicial de **Gravidade** ao criar uma solicitação de serviço por telefone.
+  *Precisa de ajuda?* abre no painel *Localizar Soluções*. No entanto, se você tiver um caso de suporte ativo, a janela será aberta no painel *Solicitações de serviço*, no qual poderá visualizar os detalhes sobre os casos de suporte ativos e fechados.
 
+#### <a name="find-solutions"></a>Localizar soluções
 
-![Painel de Gerenciamento de Dispositivo e a página Precisa de Ajuda?](./media/get-support/help-support-dashboard.png)
+![Selecione o painel Localizar soluções](./media/get-support/find-solutions.png)
 
-Nessa exibição, você pode executar as seguintes ações:
+No painel *Localizar soluções*, insira alguns detalhes sobre um problema na caixa de texto fornecida. Com base no texto inserido sobre um problema, o painel é preenchido com informações que são possíveis correspondências. Você também receberá links para artigos recomendados que podem ajudá-lo a resolver o problema.
 
-1. [Especificar detalhes](#specify-details-about-an-issue) sobre o problema específico com o qual você deseja obter ajuda  
-2. [Exibir a ajuda contextual](#view-context-sensitive-help) e soluções relacionadas com base nos detalhes especificados por você  
-3. [Obter suporte](#get-support) usando email ou telefone  
-4. [Exibir casos de suporte](#view-support-cases) abertos anteriormente usando esse novo fluxo de trabalho  
+Ao encontrar uma correspondência forte para os detalhes que você descreveu, as dicas de solução de problemas podem aparecer direto na janela *Precisa de ajuda?* .
 
-### <a name="specify-details-about-an-issue"></a>Especificar os detalhes sobre um problema 
+Por exemplo, você pode inserir **Erros de sincronização de senha**. Os resultados incluem a orientação de solução de problemas diretamente no painel e links para artigos recomendados de nossa biblioteca de documentação.
 
-Quando você abre a Ajuda e suporte em uma localização com suporte da nova experiência, a página **Precisa de ajuda?** é aberta. Nessa página, você pode especificar os detalhes sobre um problema. Conforme você insere detalhes, o console oferece consultas comuns com base em palavras-chave que você usa. Selecione uma opção oferecida ou complete sua própria descrição do problema. Se você inserir sua própria descrição, selecione **Obter ajuda** para enviá-la. Depois de enviar uma consulta, o console retorna informações contextuais que podem ajudar a solucionar o problema.
+![Exibir as informações de solução de problemas](./media/get-support/troubleshooting-insights.png)
 
-A seguir, estão exemplos de consultas que você pode enviar:
-  
-- *Não é possível restaurar o dispositivo iOS*  
-- *Não é possível criar política de Acesso Condicional*  
+#### <a name="contact-support"></a>Contate o suporte
 
-![Especificar o problema na página Precisa de Ajuda?](./media/get-support/describe-the-issue.png)
+![Selecionar o painel Contate o suporte](./media/get-support/contact-support.png)
 
-### <a name="view-context-sensitive-help"></a>Exibir ajuda contextual 
+No painel *Contate o suporte*, você pode enviar uma solicitação de assistência. Esse painel estará disponível depois que você fornecer algumas palavras-chave básicas no painel *Localizar soluções*.
 
-Depois de selecionar uma opção oferecida ou enviar sua própria consulta, os resultados contextuais aparecerão em **Exibir soluções**. Esses resultados incluem orientação de autoatendimento específicas do Intune e resultados adicionais retornados de uma pesquisa na Web com base em critérios de consulta.  
-![Exibir resultados](./media/get-support/view-results.png)
+Ao solicitar assistência, forneça uma descrição do problema com o máximo de detalhes necessário.  Depois de confirmar seu telefone e enviar informações de contato por email, selecione o método de contato preferencial. A janela exibe um tempo de resposta para cada método de contato, o que fornece uma expectativa de quando você será contatado. Antes de enviar sua solicitação, anexe arquivos como logs ou capturas de tela que podem ajudar a fornecer mais detalhes sobre o problema.
 
-### <a name="get-support"></a>Obter suporte 
+![Formulário de contato com o suporte](./media/get-support/contact-support-form.png)
 
-Se a orientação baseada na Web ou em autoatendimento não ajudar a resolver o problema, use o console para abrir um problema de suporte por email ou telefone.  
-Na página **Precisa de Ajuda?** , selecione a opção que você deseja usar.  
+Depois de preencher as informações necessárias, selecione **Entrar em contato comigo** para enviar a solicitação.
 
-  > [!NOTE] 
-  > As solicitações de suporte por email não estão disponíveis para todos os locatários.  
+#### <a name="service-requests"></a>Solicitações de serviço
 
-- Para uma solicitação por email, forneça seu endereço de email e, opcionalmente, adicione anexos aos seu envio. Selecione **Enviar** para abrir a solicitação. 
+![Selecione o painel Solicitações de serviço](./media/get-support/service-requests.png)
 
-  ![Solicitação por email](./media/get-support/email-support.png)
-  
-- Para uma solicitação por telefone, informe o número de telefone. Opcionalmente, você pode incluir seu endereço de email e adicionar anexos ao seu envio. Selecione Ligar para mim para enviar a solicitação.  
+O painel *Solicitações de serviço* exibe seu histórico de casos. Os casos ativos estão na parte superior da lista, com os problemas fechados também disponíveis para revisão.
 
+![Exibir sua lista de solicitações de serviço](./media/get-support/service-requests-pane.png)
 
+Se você tiver um número de caso de suporte ativo, poderá inseri-lo aqui para acessar esse problema ou selecionar qualquer incidente na lista de incidentes ativos e fechados para visualizar mais informações sobre ele.
 
-   ![Solicitação por telefone](./media/get-support/phone-support.png)
+Ao terminar de visualizar os detalhes de um incidente, selecione a seta para a esquerda exibida na parte superior da janela de solicitações de serviço, logo acima dos três ícones do painel *Precisa de ajuda?* . A seta para trás retorna a exibição para a lista de incidentes de suporte que você abriu.
 
-**Suporte Premier**:  
-Se você possui um contrato de suporte Premier, tem as mesmas opções para criar um incidente de suporte por telefone. Você também pode especificar a **Gravidade** para o retorno de chamada do suporte e optar por criar o tíquete de suporte em relação ao seu contrato de Missão Crítica.  
+#### <a name="premier-and-unified-support-customers"></a>Clientes de suporte Premier e Unificado
 
-![Opções de suporte Premier](./media/get-support/premier-phone-support-options.png)
+Como cliente com um contrato de suporte **Premier** ou **Unificado**, você pode especificar uma gravidade para o problema e agendar um retorno de chamada de suporte para um horário e dia específicos. Essas opções estão disponíveis ao abrir ou enviar um novo problema e ao editar um caso de suporte ativo.
 
+**Gravidade** – as opções para especificar a gravidade de um problema dependem do seu contrato de suporte:
 
-### <a name="view-support-cases"></a>Exibir casos de suporte  
+- *Premier*: gravidade A, B ou C
+- *Unificado*: crítico ou não crítico
 
-Selecione o botão de histórico para exibir os incidentes de suporte que você criou.  
+Selecionar um problema de gravidade **A** ou **Crítico** limita você a um caso de suporte por telefone, que fornece a opção mais rápida para obter suporte.
 
-![Exibir casos de suporte](./media/get-support/view-support-tickets.png)
+**Agendamento de retorno de chamada** – você pode solicitar um retorno de chamada em um horário e dia específicos.
 
-- Somente os casos de suporte que você abrir usando o novo fluxo de trabalho ficarão visíveis de dentro desse fluxo de trabalho. Para exibi-los, use uma exibição de Ajuda e suporte no console do Gerenciamento de Dispositivos ou em uma folha do Intune no portal do Azure. Esses casos têm números de oito dígitos. Você também pode exibir esses casos no centro de administração do Microsoft 365.  
-
-- Os casos que você abriu quando não estava usando a experiência de Ajuda e suporte do Intune permanecem inalterados. Para exibi-los, é necessário usar uma exibição de Ajuda e suporte que não faça parte da experiência do Intune ou o painel de Gerenciamento de Dispositivos. Esses casos têm números que começam com **117** ou **118** e têm 15 dígitos. Para exibi-los:
-
-    1. Entre no Azure (<https://portal.azure.com>) com suas credenciais de administrador do Intune e selecione o *?* no canto superior direito do portal e selecione *Ajuda + suporte* para ir para a página [Ajuda + suporte do Azure](https://ms.portal.azure.com/#blade/Microsoft_Azure_Support/HelpAndSupportBlade/overview).
-
-    2. Na página **Ajuda + suporte**, é possível ver a lista de **Solicitações de suporte recentes** e selecioná-las para ver detalhes adicionais.
- 
-
-## <a name="azure-help--support-experience"></a>Experiência de Ajuda + suporte do Azure 
+## <a name="azure-help--support-experience"></a>Experiência de Ajuda + suporte do Azure
 
 Você não pode mais acessar a experiência de *Ajuda + suporte* do Azure para obter assistência com o Intune, a menos que sua assinatura esteja em uma nuvem privada para o governo.
 Se a instância do Intune não for executada em uma nuvem privada governamental, a navegação pela *Ajuda + suporte* do Azure redirecionará você para a experiência de *Ajuda e suporte* do Intune para criar e gerenciar incidentes de suporte:
@@ -181,20 +150,18 @@ Nessa página:
   ![Nova solicitação de suporte](./media/get-support/new-request.png)
 
 
-## <a name="intune-support-for-private-cloud-for-government"></a>Suporte do Intune para nuvem privada governamental  
+## <a name="intune-support-for-private-cloud-for-government"></a>Suporte do Intune para nuvem privada governamental
 
 Quando sua assinatura do Intune está hospedada na nuvem privada para o governo, também conhecida como uma nuvem soberana como o Azure Governamental, você ainda não tem acesso à experiência de suporte e Ajuda do Intune mais recente.  Em vez disso, use as informações a seguir e obtenha suporte para o Intune.
 
+### <a name="create-an-online-support-ticket"></a>Criar um tíquete de suporte online
 
-### <a name="create-an-online-support-ticket"></a>Criar um tíquete de suporte online 
-
->[!IMPORTANT]    
-> À medida que *Ajuda e suporte* faz a transição para um novo sistema que ainda não está disponível para a nuvem privada governamental, quando você cria um incidente de suporte, o portal identifica um caso de suporte que usa um número de identificação de 15 dígitos. Quando o caso de 15 dígitos é criado, um espelho desse caso é criado para uso pelo Suporte da Microsoft. Esse caso de espelho é criado em um novo sistema de suporte, usa uma ID de caso de 8 dígitos e é usado pelos serviços de suporte para acompanhar todo o trabalho e as comunicações de seu incidente de suporte. Logo após a criação do seu caso de 15 dígitos, você receberá um email que identifica o número de 8 dígitos do caso de suporte espelhado que é usado pelos serviços de suporte.  
-> 
-> Dê suporte ao trabalho pessoal e comunique-se a partir do caso de suporte de 8 dígitos e use apenas o caso de suporte de 8 dígitos para registrar as comunicações e acompanhar o progresso do incidente. Portanto, você receberá atualizações por email desse caso de suporte de 8 dígitos que serve como seu histórico de trabalho de caso. Nenhum detalhe é registrado no incidente de suporte de 15 dígitos. Quando o suporte é concluído e o caso de suporte de 8 dígitos é encerrado, esse status é refletido no caso de suporte de 15 dígitos que você pode visualizar no portal do Azure.  Nenhuma outra atualização ou alteração de status deve ser esperada para o caso de suporte de 15 dígitos.  
-> 
-> Quando as transições entre ferramentas de suporte forem concluídas no final deste ano, a experiência de suporte do Intune hospedada na nuvem do governo será semelhante à experiência padrão da *Ajuda e suporte* atualmente disponível para assinaturas do Intune hospedadas na nuvem pública.  
-
+>[!IMPORTANT]
+> À medida que *Ajuda e suporte* faz a transição para um novo sistema que ainda não está disponível para a nuvem privada governamental, quando você cria um incidente de suporte, o portal identifica um caso de suporte que usa um número de identificação de 15 dígitos. Quando o caso de 15 dígitos é criado, um espelho desse caso é criado para uso pelo Suporte da Microsoft. Esse caso de espelho é criado em um novo sistema de suporte, usa uma ID de caso de 8 dígitos e é usado pelos serviços de suporte para acompanhar todo o trabalho e as comunicações de seu incidente de suporte. Logo após a criação do seu caso de 15 dígitos, você receberá um email que identifica o número de 8 dígitos do caso de suporte espelhado que é usado pelos serviços de suporte.
+>
+> Dê suporte ao trabalho pessoal e comunique-se a partir do caso de suporte de 8 dígitos e use apenas o caso de suporte de 8 dígitos para registrar as comunicações e acompanhar o progresso do incidente. Portanto, você receberá atualizações por email desse caso de suporte de 8 dígitos que serve como seu histórico de trabalho de caso. Nenhum detalhe é registrado no incidente de suporte de 15 dígitos. Quando o suporte é concluído e o caso de suporte de 8 dígitos é encerrado, esse status é refletido no caso de suporte de 15 dígitos que você pode visualizar no portal do Azure.  Nenhuma outra atualização ou alteração de status deve ser esperada para o caso de suporte de 15 dígitos.
+>
+> Quando as transições entre ferramentas de suporte forem concluídas no final deste ano, a experiência de suporte do Intune hospedada na nuvem do governo será semelhante à experiência padrão da *Ajuda e suporte* atualmente disponível para assinaturas do Intune hospedadas na nuvem pública.
 
 1. Entre no Portal do Azure (<https://portal.azure.us>) com suas credenciais de administrador do Intune e selecione o **?** no canto superior direito do portal e selecione **Ajuda + suporte** para ir para a página [Ajuda + suporte do Azure](https://portal.azure.com/#blade/Microsoft_Azure_Support/HelpAndSupportBlade/overview).
 
@@ -230,14 +197,14 @@ Quando sua assinatura do Intune está hospedada na nuvem privada para o governo,
 
 ### <a name="view-support-requests"></a>Exibir todas as solicitações de suporte  
 
-Você pode exibir suas solicitações de suporte no portal do Azure. No entanto, informações limitadas estão disponíveis.  Para exibir seus incidentes: 
+Você pode exibir suas solicitações de suporte no portal do Azure. No entanto, informações limitadas estão disponíveis.  Para exibir seus incidentes:
 
 1. Entre no Azure (<https://portal.azure.com>) com suas credenciais de administrador do Intune e selecione o **?** no canto superior direito do portal e selecione **Ajuda + suporte** para ir para a página [Ajuda + suporte do Azure](https://portal.azure.com/#blade/Microsoft_Azure_Support/HelpAndSupportBlade/overview).
 
 2. Na página **Ajuda + suporte**, é possível ver a lista de **Solicitações de suporte recentes**.
 
    > [!IMPORTANT]  
-   > Os clientes do Government Compute Cloud podem visualizar apenas o número do caso de suporte de 15 dígitos e o status do incidente. Todas as comunicações de casos e acompanhamento de trabalho ou alertas são enviados por email e referenciam o número do caso de suporte de 8 dígitos criado como um espelho do caso de suporte aberto no console do Intune.   
+   > Os clientes da nuvem privada governamental podem exibir apenas o número do caso de suporte de 15 dígitos e o status do incidente. Todas as comunicações de casos e acompanhamento de trabalho ou alertas são enviados por email e referenciam o número do caso de suporte de 8 dígitos criado como um espelho do caso de suporte aberto no console do Intune.
 
 ## <a name="additional-resources"></a>Recursos adicionais  
 

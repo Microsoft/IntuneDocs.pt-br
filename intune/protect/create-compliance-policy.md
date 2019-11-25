@@ -5,7 +5,7 @@ keywords: ''
 author: brenduns
 ms.author: brenduns
 manager: dougeby
-ms.date: 10/21/2019
+ms.date: 11/18/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.subservice: protect
@@ -16,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 76998c32f09b20e624359cc8a38231e14a70399b
-ms.sourcegitcommit: 06a1fe83fd95c9773c011690e8520733e1c031e3
+ms.openlocfilehash: c8452f9b56032864380ec703bfd444dc85ef129b
+ms.sourcegitcommit: 13fa1a4a478cb0e03c7f751958bc17d9dc70010d
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/23/2019
-ms.locfileid: "72786071"
+ms.lasthandoff: 11/19/2019
+ms.locfileid: "74188255"
 ---
 # <a name="create-a-compliance-policy-in-microsoft-intune"></a>Criar uma política de conformidade no Microsoft Intune
 
@@ -61,19 +61,15 @@ Para usar as políticas de conformidade do dispositivo, não deixe de:
 
 ## <a name="create-the-policy"></a>Criar a política
 
-1. Conecte-se ao [Intune](https://go.microsoft.com/fwlink/?linkid=2090973).
-2. Selecione **Conformidade do dispositivo**. Você tem as seguintes opções:
+1. Entre no [Centro de Administração do Gerenciador de Ponto de Extremidade da Microsoft](https://go.microsoft.com/fwlink/?linkid=2109431).
 
-    - **Visão geral**: Mostra um resumo e a quantidade de dispositivos que estão em conformidade, não avaliados e assim por diante. Também lista as políticas e configurações individuais em suas políticas. [Monitorar as políticas de conformidade do dispositivo do Intune](compliance-policy-monitor.md) oferece informações úteis.
-    - **Gerenciar**: Crie políticas de dispositivo, envie [notificações](quickstart-send-notification.md) para dispositivos que não estão em conformidade e habilite o [isolamento de rede](use-network-locations.md).
-    - **Monitorar**: Verifique o status de conformidade de seus dispositivos e o nível de configuração e política. [Monitorar as políticas de conformidade do dispositivo do Intune](compliance-policy-monitor.md) é um recurso útil. Além disso, visualize os logs e verifique o status do agente de ameaça de seus dispositivos.
-    - **Configuração**: Use as [políticas de conformidade internas](device-compliance-get-started.md#ways-to-deploy-device-compliance-policies), habilite a [ATP (Proteção Avançada contra Ameaças) do Microsoft Defender](advanced-threat-protection.md), adicione um [conector de defesa contra ameaças móveis](mobile-threat-defense.md) e use o [Jamf](conditional-access-integrate-jamf.md).
+2. Selecione **Dispositivos** > **Políticas de conformidade** > **Criar Política**.
 
-3. Selecione **Políticas** > **Criar Política**. Insira as seguintes propriedades:
+3. Especifique as seguintes propriedades:
 
-   - **Nome**: Insira um nome descritivo para a política. Nomeie suas políticas para que você possa identificá-las facilmente mais tarde. Por exemplo, um bom nome de política seria **Marcar dispositivos do iOS com jailbreak como fora de conformidade**.  
+   - **Nome**: Insira um nome descritivo para a política. Nomeie suas políticas para que você possa identificá-las facilmente mais tarde. Por exemplo, um bom nome de política seria **Marcar dispositivos do iOS com jailbreak como fora de conformidade**.
 
-   - **Descrição**: Insira uma descrição para a política. Essa configuração é opcional, mas recomendada.  
+   - **Descrição**: Insira uma descrição para a política. Essa configuração é opcional, mas recomendada.
 
    - **Plataforma**: Escolha a plataforma dos dispositivos. Suas opções:
      - **Administrador do dispositivo Android**
@@ -99,7 +95,7 @@ Para usar as políticas de conformidade do dispositivo, não deixe de:
    - **Locais** *(Administrador do dispositivo Android)* : Em sua política, você pode forçar conformidade pela localização do dispositivo. Escolha entre os locais existentes. Ainda não tem um local? [Usar locais (limite de rede)](use-network-locations.md) no Intune fornece alguma orientação.  
 
    - **Ações para não compatibilidade**: Para dispositivos que não atendem às suas políticas de conformidade, é possível adicionar uma sequência de ações a serem aplicadas automaticamente. Você pode alterar a agenda quando o dispositivo está marcado como não em conformidade, como após um dia. Você também pode configurar uma segunda ação que envia um email para o usuário quando o dispositivo não está em conformidade.
-    
+
      [Adicionar ações a dispositivos que não estão em conformidade](actions-for-noncompliance.md) apresenta mais informações, incluindo como criar um email de notificação para seus usuários.
 
      Por exemplo, você está usando o recurso Locais e adiciona uma localização em uma política de conformidade. A ação padrão para não conformidade se aplica quando você seleciona pelo menos uma localização. Se o dispositivo não estiver conectado a locais selecionados, imediatamente será considerado que ele não está em conformidade. Você pode dar aos usuários um período de cortesia, como um dia.
@@ -112,8 +108,10 @@ Para usar as políticas de conformidade do dispositivo, não deixe de:
 
 Depois que uma política é criada, a próxima etapa é atribuir a política aos grupos:
 
-1. Escolha uma política que você criou. As políticas existentes estão em **Conformidade do dispositivo** > **Políticas**.
-2. Escolha a política > **Atribuições**. Você pode incluir ou excluir grupos de segurança do Azure Active Directory (AD).
+1. Escolha uma política que você criou. As políticas existentes estão em **Dispositivos** > **Políticas de conformidade** > **Políticas**.
+
+2. Selecione a *política* > **Atribuições**. Você pode incluir ou excluir grupos de segurança do Azure Active Directory (AD).
+
 3. Escolha **Grupos selecionados** para ver os grupos de segurança do Azure AD. Escolha os grupos aos quais deseja aplicar essa política > Escolha **Salvar** para implantar a política.
 
 Os usuários ou dispositivos direcionados pela sua política são avaliados em relação à conformidade durante o check-in com o Intune.
@@ -122,8 +120,9 @@ Os usuários ou dispositivos direcionados pela sua política são avaliados em r
 
 Ao atribuir a política, também é possível **Avaliar** quantos usuários são afetados. Esse recurso calcula os usuários, não os dispositivos.
 
-1. No Intune, escolha **Conformidade do Dispositivo** > **Políticas**.
-2. Escolha a política > **Atribuições** > **Avaliar**. Uma mensagem é exibida mostrando quantos usuários essa política afeta.
+1. No Intune, selecione **Dispositivos** > **Políticas de conformidade** > **Políticas**.
+
+2. Selecione uma *política* > **Atribuições** > **Avaliar**. Uma mensagem é exibida mostrando quantos usuários essa política afeta.
 
 Se o botão **Avaliar** estiver desabilitado, verifique se a política foi atribuída a um ou mais grupos.
 

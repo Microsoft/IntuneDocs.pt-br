@@ -6,7 +6,7 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 10/03/2019
+ms.date: 11/19/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.subservice: apps
@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: a5bcdf9c3218df91bea85858ea21e88718e81633
-ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
+ms.openlocfilehash: 0fafe7c17c698a5eb4e5ad6825bee0ae3fe874c2
+ms.sourcegitcommit: 01fb3d844958a0e66c7b87623160982868e675b0
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/16/2019
-ms.locfileid: "72498323"
+ms.lasthandoff: 11/20/2019
+ms.locfileid: "74199243"
 ---
 # <a name="how-to-wipe-only-corporate-data-from-intune-managed-apps"></a>Como apagar somente dados corporativos de aplicativos gerenciados pelo Intune
 
@@ -44,23 +44,12 @@ Políticas de WIP (Proteção de Informações do Windows) podem ser implantadas
 
 ## <a name="create-a-wipe-request"></a>Criar uma solicitação de apagamento
 
-1. Entre no [Portal do Azure](https://portal.azure.com).
-
-2. Escolha **Todos os serviços**, digite **Intune** na caixa de texto de filtro e selecione **Intune**. O painel do Intune é aberto. Escolha o painel **Aplicativos clientes**.
-
-    ![Captura de tela do painel do Microsoft Intune](./media/apps-selective-wipe/apps-selective-wipe01.png)
-
-3. No **painel Aplicativos cliente**, escolha **Apagamento seletivo de aplicativo**.
-
-4. Escolha **Nova solicitação de apagamento**. O painel **Nova solicitação para apagar** é aberto.
-
-    ![Captura de tela do painel Nova solicitação para apagar](./media/apps-selective-wipe/AzurePortal_MAM_NewWipeRequest.png)
-
-5. Escolha um usuário e, em seguida, escolha **Selecionar** para selecionar o usuário cujos dados de aplicativo você deseja apagar.
-
-6. Em seguida, escolha **Dispositivo** no painel **Nova solicitação de apagamento**. Isso abre o painel **Selecionar Dispositivo** que lista todos os dispositivos associados ao usuário selecionado e também fornece duas colunas, o nome do dispositivo, que é um nome amigável definido pelo usuário, e o tipo de dispositivo, ou seja, a plataforma do dispositivo. Selecione o dispositivo que deseja apagar.
-
-7. Você retornará ao painel **Nova solicitação de apagamento**. Escolha **OK** para fazer uma solicitação de apagamento.
+1. Conecte-se ao [Intune](https://go.microsoft.com/fwlink/?linkid=2090973).
+2. No painel Intune, selecione **Aplicativos cliente** > **Apagamento seletivo de aplicativo** > **Criar solicitação de apagamento**.<br>
+   O painel **Criar solicitação de apagamento** é exibido.
+3. Clique em **Selecione o usuário**, escolha o usuário cujos dados de aplicativo você deseja apagar e clique em **Selecionar** na parte inferior do painel **Usuário**.
+4. Clique em **Selecione o dispositivo**, escolha o dispositivo e clique em **Selecionar** na parte inferior do painel **Selecionar dispositivo**.
+5. Clique em **Criar** para fazer uma solicitação de apagamento.
 
 O serviço cria e controla uma solicitação de apagamento separada para cada aplicativo protegido no dispositivo e o usuário associado à solicitação de apagamento.
 

@@ -2,10 +2,10 @@
 title: Associar dispositivos Android por local de rede no Microsoft Intune – Azure | Microsoft Docs
 description: Criar ou configurar locais de rede no Microsoft Intune para dispositivos Android. Você pode marcar dispositivos como não compatíveis com base no local de rede do dispositivo. Se o dispositivo ficar fora do local de rede, você poderá bloquear o acesso aos recursos da empresa.
 keywords: ''
-author: MandiOhlinger
-ms.author: mandia
+author: Brenduns
+ms.author: brenduns
 manager: dougeby
-ms.date: 05/21/2018
+ms.date: 11/13/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.subservice: protect
@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 648ccd889714c2ee4f7ee1fa04301490ad9fd001
-ms.sourcegitcommit: c2e62f1ebdf75599c8e544287123c602f0f15f2b
+ms.openlocfilehash: 847ab759b697d402acb07d9c8d83d3a3ef9aaef2
+ms.sourcegitcommit: 78cebd3571fed72a3a99e9d33770ef3d932ae8ca
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72749441"
+ms.lasthandoff: 11/13/2019
+ms.locfileid: "74058144"
 ---
 # <a name="use-locations-network-fence-in-intune"></a>Usar Locais (limite de rede) no Intune
 
@@ -50,7 +50,7 @@ Para criar uma política de conformidade baseada em local:
 
 ## <a name="create-a-location"></a>Criar um local
 
-1. No Intune, selecione **Conformidade do dispositivo** > **Locais** > **Criar**.
+1. No [Centro de Administração do Gerenciador de Ponto de Extremidade da Microsoft](https://go.microsoft.com/fwlink/?linkid=2109431), selecione **Dispositivos** > **Políticas de conformidade** > **Locais** > **Criar**.
 
 2. Insira as seguintes propriedades:  
 
@@ -69,8 +69,7 @@ Para criar uma política de conformidade baseada em local:
 
 ## <a name="create-the-location-compliance-policy"></a>Crie a política de conformidade do local
 
-Ao [criar a política de conformidade](create-compliance-policy.md), selecione **Android** como a **Plataforma**. Em **Locais**, você pode escolher um ou mais dos locais de rede que você adicionou. Esses locais fazem parte do isolamento de rede que você está criando para seus dispositivos. 
-
+Ao [criar a política de conformidade](create-compliance-policy.md), selecione **Android** como a **Plataforma**. Em **Locais**, você pode escolher um ou mais dos locais de rede que você adicionou. Esses locais fazem parte do isolamento de rede que você está criando para seus dispositivos.
 
 ## <a name="configure-the-actions-for-noncompliance"></a>Configurar as ações para não conformidade
 
@@ -83,5 +82,6 @@ Depois que a política de conformidade for criada, a ação padrão de não conf
 Quando o dispositivo está conectado aos seus locais, o dispositivo é mostrado como em conformidade no aplicativo do Portal da Empresa. Quando o dispositivo não está conectado a um de seus locais, ele é mostrado como não em conformidade.
 
 ## <a name="next-steps"></a>Próximas etapas
+
 [Monitorar políticas de conformidade do dispositivo](compliance-policy-monitor.md)  
 [Introdução às políticas de conformidade](device-compliance-get-started.md)

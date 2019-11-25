@@ -6,7 +6,7 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 10/02/2019
+ms.date: 11/13/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.subservice: apps
@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 6600c75ce3e6120143b17fb863670b2eb423a09f
-ms.sourcegitcommit: ae6f2e7812e7fd36f2393b8f4b6cd8de63777b2c
+ms.openlocfilehash: 997cf043f8ea61133d6e61f4584ad9349aedbf73
+ms.sourcegitcommit: 78cebd3571fed72a3a99e9d33770ef3d932ae8ca
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/05/2019
-ms.locfileid: "73592049"
+ms.lasthandoff: 11/13/2019
+ms.locfileid: "74060036"
 ---
 # <a name="add-web-apps-to-microsoft-intune"></a>Adicionar aplicativos Web ao Microsoft Intune
 
@@ -36,7 +36,7 @@ Antes de gerenciar e atribuir um aplicativo para seus usuários, adicione-o ao I
 O Intune cria um atalho para o aplicativo Web no dispositivo do usuário. Em dispositivos iOS, um atalho para o aplicativo Web é adicionado à tela inicial. Em dispositivos Android, um atalho para o aplicativo Web é adicionado ao widget do portal da empresa do Intune, e o widget precisa ser fixado manualmente pelo usuário. Em dispositivos Windows, um atalho para o aplicativo Web é adicionado ao Menu Iniciar.
 
 > [!Note]
-> O dispositivo do usuário deve ter um navegador instalado para inicialização de aplicativos Web.
+> O dispositivo do usuário deve ter um navegador instalado para inicialização de aplicativos Web. 
 
 ## <a name="add-a-web-app-to-intune"></a>Adicionar um aplicativo Web ao Intune
 Para adicionar um aplicativo ao Intune como atalho para um aplicativo na Web, faça o seguinte:
@@ -67,6 +67,8 @@ Para adicionar um aplicativo ao Intune como atalho para um aplicativo na Web, fa
 > Os usuários devem adicionar o widget do Intune à tela inicial para exibir os aplicativos Web que foram atribuídos aos dispositivos Android.
 >
 > Atualmente, a implantação de aplicativos Web do Intune para dispositivos iOS está associada ao perfil de gerenciamento e não pode ser removida manualmente. Você pode alterar o tipo de implantação para **Desinstalar** no portal do Intune para que o aplicativo Web possa ser removido automaticamente. No entanto, se você remover a implantação antes de alterar a intenção de atribuição de aplicativo para **Desinstalar**, o aplicativo Web ficará permanentemente em vigor no dispositivo até que o registro do dispositivo seja cancelado no Intune.
+
+Os usuários finais podem iniciar aplicativos Web diretamente do aplicativo do Portal da Empresa para Windows selecionando o aplicativo Web e escolhendo a opção **Abrir no navegador**. A URL da Web publicada é aberta diretamente no navegador da Web. 
 
 ## <a name="next-steps"></a>Próximas etapas
 
