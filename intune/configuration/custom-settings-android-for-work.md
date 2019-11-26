@@ -5,7 +5,7 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 07/01/2019
+ms.date: 11/21/2019
 ms.topic: reference
 ms.service: microsoft-intune
 ms.subservice: configuration
@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: d85793dcf0ee6fa0186147606c9fd695a268e529
-ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
+ms.openlocfilehash: bd2ab7ad8eb155719695bede1f539d5c264d455b
+ms.sourcegitcommit: eb2e420b304c7da9d3be5ef49a676cba66766d2b
 ms.translationtype: MTE75
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/16/2019
-ms.locfileid: "72506965"
+ms.lasthandoff: 11/22/2019
+ms.locfileid: "74319823"
 ---
 # <a name="use-custom-settings-for-android-enterprise-devices-in-microsoft-intune"></a>Usar configurações personalizadas para dispositivos Android Enterprise no Microsoft Intune
 
@@ -30,11 +30,11 @@ Usando o Microsoft Intune, você pode adicionar ou criar configurações persona
 
 Os perfis personalizados do Android Enterprise usam as configurações OMA-URI (Open Mobile Alliance Uniform Resource Identifier) para controlar recursos em dispositivos Android Enterprise. Essas configurações geralmente são usadas pelos fabricantes de dispositivos móveis para controlar esses recursos.
 
-O Intune dá suporte a um número limitado de perfis personalizados do Android Enterprise, incluindo:
+O Intune dá suporte ao seguinte número limitado de perfis personalizados do Android Enterprise:
 
 - ./Vendor/MSFT/WiFi/Profile/SSID/Settings: [criar um perfil de Wi-Fi com uma chave pré-compartilhada](wi-fi-profile-shared-key.md) tem alguns exemplos.
 - ./Vendor/MSFT/VPN/Profile/Name/PackageList: [criar um perfil de VPN por aplicativo](android-pulse-secure-per-app-vpn.md) tem alguns exemplos.
-- ./Vendor/MSFT/WorkProfile/DisallowCrossProfileCopyPaste: consulte o [exemplo](#example) (neste artigo).
+- ./Vendor/MSFT/WorkProfile/DisallowCrossProfileCopyPaste: consulte o [exemplo](#example) neste artigo. Essa configuração também está disponível na interface do usuário. Para saber mais, confira [Configurações de dispositivo Android Enterprise para permitir ou restringir recursos](device-restrictions-android-for-work.md).
 
 Se você precisar de configurações adicionais, consulte [OEMConfig para Android Enterprise](android-oem-configuration-overview.md).
 

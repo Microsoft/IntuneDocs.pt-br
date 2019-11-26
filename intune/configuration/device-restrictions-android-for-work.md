@@ -1,11 +1,11 @@
 ---
 title: Configurações de dispositivo do Android Enterprise no Microsoft Intune – Azure | Microsoft Docs
-description: Em dispositivos com Android Enterprise ou Android for Work, restrinja algumas configurações no dispositivo, como copiar e colar, mostrar notificações, permissões de aplicativo, compartilhamento de dados, tamanho de senha, falhas de entrada, usar impressão digital para desbloquear, reutilizar senhas e habilitar o compartilhamento de contatos de trabalho por Bluetooth. Configure dispositivos como um quiosque de dispositivos dedicados para executar um ou vários aplicativos.
+description: Nos dispositivos Android Enterprise ou Android for Work, restrinja as configurações no dispositivo, incluindo copiar e colar, mostrar notificações, permissões de aplicativo, compartilhamento de dados, comprimento de senha, falhas de entrada, usar impressão digital para desbloquear, reutilizar senhas e permitir compartilhamento por bluetooth de contatos de trabalho. Configure dispositivos como um quiosque de dispositivos dedicados para executar um ou vários aplicativos.
 keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 10/30/2019
+ms.date: 11/19/2019
 ms.topic: reference
 ms.service: microsoft-intune
 ms.subservice: configuration
@@ -15,12 +15,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure, seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 14fa330b0c158d98c96e0d151f8a4ec7d0c95b97
-ms.sourcegitcommit: c38a856725993a4473ada75e669a57f75ab376f8
+ms.openlocfilehash: b38ab611ecf6a33c8cc48fa120751af8548a7f95
+ms.sourcegitcommit: 2fddb293d37453736ffa54692d03eca642f3ab58
 ms.translationtype: MTE75
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/30/2019
-ms.locfileid: "73143032"
+ms.lasthandoff: 11/22/2019
+ms.locfileid: "74390917"
 ---
 # <a name="android-enterprise-device-settings-to-allow-or-restrict-features-using-intune"></a>Configurações do dispositivo do Android Enterprise para permitir ou restringir os recursos usando o Intune
 
@@ -72,7 +72,7 @@ Este artigo lista e descreve as diferentes configurações que você pode contro
   - **Janela de manutenção**: instala as atualizações automaticamente durante uma janela de manutenção diária definida no Intune. A instalação ocorre diariamente por 30 dias, e pode falhar devido a espaço insuficiente ou aos níveis de bateria. Após 30 dias, o Android solicita ao usuário a instalação. Essa janela também é usada para instalar atualizações de aplicativos do Play. Use essa opção para dispositivos dedicados, como quiosques, pois é possível atualizar aplicativos de primeiro plano em dispositivos dedicados de aplicativo único.
 
 - **Janelas de notificação**: quando essa opção é definida como **Desabilitar**, as notificações de janela, incluindo notificações do sistema, chamadas de entrada, chamadas de saída, alertas do sistema e erros do sistema, não são mostradas no dispositivo. Quando essa opção é definida como **Não configurado**, o padrão do sistema operacional é usado, que poderá ser mostrar as notificações.
-- **Ignorar dicas de primeiro uso**: escolha **Habilitar** para ocultar ou ignorar as sugestões de aplicativos para percorrer os tutoriais ou ler dicas de introdução quando o aplicativo é iniciado. Quando essa opção é definida como **Não configurado**, o padrão do sistema operacional é usado, que poderá ser mostrar essas sugestões quando o aplicativo for iniciado.
+- **Ignorar dicas de primeiro uso**: **habilitar** oculta ou ignora sugestões de aplicativos que percorrem tutoriais ou dicas quando o aplicativo é iniciado. Quando essa opção é definida como **Não configurado**, o padrão do sistema operacional é usado, o que poderá mostrar essas sugestões quando o aplicativo for iniciado.
 
 ### <a name="system-security-settings"></a>Configurações de segurança do sistema
 
@@ -150,13 +150,16 @@ Use essas configurações para definir uma experiência de estilo de quiosque em
 
     Quando habilitado, configure também:
 
-    - **Definir imagem de proteção de tela personalizada**: Insira a URL para uma imagem personalizada. Por exemplo, insira:
+    - **Definir imagem de proteção de tela personalizada**: Insira a URL para um png personalizado, jpg, JPEG, GIF, BMP, WebP ou ICOimage. Por exemplo, digite:
 
       - `http://www.contoso.com/image.jpg`
       - `www.contoso.com/image.bmp`
-      - `https://www.contoso.com/image.html`
+      - `https://www.contoso.com/image.webp`
 
       Se você não inserir uma URL, a imagem padrão do dispositivo será usada, se houver uma imagem padrão.
+      
+      > [!TIP]
+      > Qualquer URL de recurso de arquivo que possa ser transformada em um bitmap é suportada.
 
     - **Número de segundos que o dispositivo mostra a proteção de tela antes**de desligar a tela: escolha por quanto tempo o dispositivo mostra a proteção. Digite um valor entre 0 e 9999999 segundos. O padrão é `0` segundos. Quando deixado em branco ou definido como zero (`0`), a proteção de tela estará ativa até que um usuário interaja com o dispositivo.
     - **Número de segundos em que o dispositivo fica inativo antes de mostrar a proteção de tela**: escolha por quanto tempo o dispositivo estará ocioso antes de mostrar a proteção. Digite um valor entre 1 e 9999999 segundos. O padrão é `30` segundos. Você deve inserir um número maior que zero (`0`).
@@ -199,12 +202,14 @@ Use essas configurações para definir uma experiência de estilo de quiosque em
 
 ### <a name="users-and-accounts-settings"></a>Configurações de usuários e de contas
 
-- **Adicionar novos usuários**: escolha **Bloquear** para impedir que os usuários adicionem novos usuários. Cada usuário tem um espaço pessoal no dispositivo para personalização da tela inicial, contas, aplicativos e configurações. **Não configurado** permite que os usuários adicionem outros usuários ao dispositivo.
-- **Remoção de usuário**: escolha **Bloquear** para impedir que os usuários removam usuários. **Não configurado** permite que os usuários removam outros usuários do dispositivo.
-- **Alterações de conta**: escolha **Bloquear** para impedir que os usuários modifiquem as contas. **Não configurado** permite que os usuários atualizem contas de usuário no dispositivo.
+- **Adicionar novos usuários**: escolha **Bloquear** para impedir que os usuários adicionem novos usuários. Cada usuário tem um espaço pessoal no dispositivo para personalização da tela inicial, contas, aplicativos e configurações. **Não configurado** (padrão) permite que os usuários adicionem outros usuários ao dispositivo.
+- **Remoção de usuário**: escolha **Bloquear** para impedir que os usuários removam usuários. **Não configurado** (padrão) permite que os usuários removam outros usuários do dispositivo.
+- **Alterações de conta** (somente dispositivos dedicados): escolha **Bloquear** para impedir que os usuários modifiquem contas. **Não configurado** (padrão) permite que os usuários atualizem contas de usuário no dispositivo.
 
   > [!NOTE]
   > Essa configuração não é respeitada em dispositivos de proprietário do dispositivo (totalmente gerenciado). Se você definir essa configuração, a configuração será ignorada e não terá nenhum impacto.
+
+- **Contas pessoais do Google**: **Bloquear** impede que os usuários adicionem sua conta pessoal do Google ao dispositivo. **Não configurado** (padrão) permite que os usuários adicionem sua conta pessoal do Google.
 
 ### <a name="applications"></a>Aplicativos
 
@@ -254,7 +259,7 @@ Use essas configurações para definir uma experiência de estilo de quiosque em
     - **Número da porta**: insira o número da porta TCP usado pelo servidor proxy. Por exemplo, insira `8080`.
     - **Hosts excluídos**: Insira uma lista de nomes de host ou endereços IP que não usarão o proxy. Essa lista pode incluir um asterisco (`*`) curinga e vários hosts separados por ponto e vírgula (`;`) sem espaços. Por exemplo, insira `127.0.0.1;web.contoso.com;*.microsoft.com`.
 
-  - **Configuração automática de proxy**: Insira a **URL de PAC** para um script de configuração automática de proxy. Por exemplo, insira `https://proxy.contoso.com/proxy.pac`.
+  - **Configuração automática de proxy**: Insira a **URL de PAC** para um script de configuração de proxy automático. Por exemplo, insira `https://proxy.contoso.com/proxy.pac`.
 
     Para obter mais informações sobre arquivos PAC, consulte o [Arquivo PAC (configuração automática de proxy)](https://developer.mozilla.org/docs/Web/HTTP/Proxy_servers_and_tunneling/Proxy_Auto-Configuration_(PAC)_file) (abre um site que não é da Microsoft).
 
@@ -314,7 +319,7 @@ Use essas configurações para definir uma experiência de estilo de quiosque em
   - **Pelo menos alfanumérico com símbolos**
 - **Evitar a reutilização de senhas anteriores**: insira o número de novas senhas que devem ser usadas para que uma senha antiga possa ser reutilizada (de **1**-**24**).
 - **Desbloqueio de impressão digital**: escolha **Bloquear** para impedir que usuários finais usem o scanner de impressão digital do dispositivo para desbloqueá-lo. **Não configurado** permite que os usuários desbloqueiem dispositivos com impressão digital no perfil corporativo.
-- **Smart Lock e outros agentes de confiança**: escolha **Bloquear** para impedir que o Smart Lock ou outros agentes de confiança ajustem as configurações de tela de bloqueio em dispositivos compatíveis. Esse recurso, às vezes conhecido como agente de confiança, permite desabilitar ou ignorar a senha da tela de bloqueio do dispositivo quando este está em um local confiável. Por exemplo, ignore a senha do perfil de trabalho quando o dispositivo estiver conectado a um dispositivo Bluetooth específico ou quando ele estiver próximo a uma marca NFC. Use essa configuração para impedir que os usuários configurem o Smart Lock.
+- **Smart Lock e outros agentes de confiança**: escolha **Bloquear** para impedir que o Smart Lock ou outros agentes de confiança ajustem as configurações de tela de bloqueio em dispositivos compatíveis. Esse recurso, também conhecido como agente de confiança, permite que você desabilite ou ignore a tela de bloqueio do dispositivo, se o dispositivo estiver em uma localização confiável. Por exemplo, ignore a senha do perfil de trabalho quando o dispositivo estiver conectado a um dispositivo Bluetooth específico ou quando ele estiver próximo a uma marca NFC. Use essa configuração para impedir que os usuários configurem o Smart Lock.
 
 ### <a name="device-password"></a>Senha do dispositivo
 
@@ -335,14 +340,14 @@ Essas configurações de senha aplicam-se a perfis pessoais em dispositivos que 
   - **Pelo menos alfanumérico com símbolos**
 - **Evitar a reutilização de senhas anteriores**: insira o número de novas senhas que devem ser usadas para que uma senha antiga possa ser reutilizada (de **1**-**24**).
 - **Desbloqueio de impressão digital**: escolha **Bloquear** para impedir que um usuário final use o scanner de impressão digital do dispositivo para desbloqueá-lo. **Não configurado** permite que o usuário desbloqueie o dispositivo usando uma impressão digital.
-- **Smart Lock e outros agentes de confiança**: escolha **Bloquear** para impedir que o Smart Lock ou outros agentes de confiança ajustem as configurações de tela de bloqueio em dispositivos compatíveis. Esse recurso, às vezes conhecido como agente de confiança, permite desabilitar ou ignorar a senha da tela de bloqueio do dispositivo quando este está em um local confiável. Por exemplo, ignore a senha do perfil de trabalho quando o dispositivo estiver conectado a um dispositivo Bluetooth específico ou quando ele estiver próximo a uma marca NFC. Use essa configuração para impedir que os usuários configurem o Smart Lock.
+- **Smart Lock e outros agentes de confiança**: escolha **Bloquear** para impedir que o Smart Lock ou outros agentes de confiança ajustem as configurações de tela de bloqueio em dispositivos compatíveis. Esse recurso, também conhecido como agente de confiança, permite que você desabilite ou ignore a tela de bloqueio do dispositivo, se o dispositivo estiver em uma localização confiável. Por exemplo, ignore a senha do perfil de trabalho quando o dispositivo estiver conectado a um dispositivo Bluetooth específico ou quando ele estiver próximo a uma marca NFC. Use essa configuração para impedir que os usuários configurem o Smart Lock.
 
 ### <a name="system-security"></a>Segurança do sistema
 
 - **Examinar ameaças em aplicativos**: **Obrigatório** garante que a configuração **Verificar aplicativos** esteja habilitada para perfis pessoais e corporativos.
 
    > [!Note]
-   > Essa configuração só funciona para dispositivos Android O e superior.
+   > Essa configuração só funciona para dispositivos Android 8 (Oreo) e superior.
 
 - **Impedir instalações de aplicativos de fontes desconhecidas no perfil pessoal**: por design, os dispositivos Android Enterprise Work Profile não podem instalar aplicativos de fontes diferentes da Play Store. Por natureza, os dispositivos de perfil de trabalho devem ser de perfil duplo:
 

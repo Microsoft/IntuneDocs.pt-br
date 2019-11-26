@@ -16,16 +16,16 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 266786de3122f8886bb3ed310764459568e1df6a
-ms.sourcegitcommit: 0be25b59c8e386f972a855712fc6ec3deccede86
+ms.openlocfilehash: 04d35f49f9e07cb72a1fea92210b05e0a95ec256
+ms.sourcegitcommit: 2fddb293d37453736ffa54692d03eca642f3ab58
 ms.translationtype: MTE75
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/18/2019
-ms.locfileid: "72585373"
+ms.lasthandoff: 11/22/2019
+ms.locfileid: "74390802"
 ---
-# <a name="add-wi-fi-settings-for-devices-running-android-enterprise-and-android-kiosk-in-microsoft-intune"></a>Adicionar configurações de Wi-Fi a dispositivos que executam o Android Enterprise e o Android Kiosk no Microsoft Intune
+# <a name="add-wi-fi-settings-for-android-enterprise-dedicated-and-fully-managed-devices-in-microsoft-intune"></a>Adicionar configurações de Wi-Fi para dispositivos Android Enterprise dedicados e totalmente gerenciados no Microsoft Intune
 
-Você pode criar um perfil com configurações de Wi-Fi específicas e, em seguida, implantar esse perfil nos dispositivos dedicados do Android Empresa e Android. O Microsoft Intune oferece muitos recursos, incluindo autenticação na rede, uso de uma chave pré-compartilhada e muito mais.
+Você pode criar um perfil com configurações de Wi-Fi específicas e, em seguida, implantar esse perfil nos dispositivos dedicados e totalmente gerenciados do Android Enterprise. O Microsoft Intune oferece muitos recursos, incluindo autenticação na rede, uso de uma chave pré-compartilhada e muito mais.
 
 Este artigo descreve essas configurações. [Usar o Wi-Fi em dispositivos](wi-fi-settings-configure.md) inclui mais informações sobre o recurso de Wi-Fi no Microsoft Intune.
 
@@ -35,7 +35,7 @@ Este artigo descreve essas configurações. [Usar o Wi-Fi em dispositivos](wi-fi
 
 ## <a name="device-owner-only"></a>Somente proprietário do dispositivo
 
-Selecione essa opção se estiver usando um dispositivo dedicado Android Empresa como um quiosque.
+Selecione esta opção se você estiver implantando em um dispositivo Android Enterprise dedicado ou totalmente gerenciado.  Os dispositivos Android Enterprise dedicados e totalmente gerenciados atualmente dão suporte à implantação de certificado SCEP, mas não ao PKCS.
 
 ### <a name="basic"></a>Básico
 
@@ -60,7 +60,7 @@ Selecione essa opção se estiver usando um dispositivo dedicado Android Empresa
 
     - **Confiança do Servidor** - **Certificado raiz para validação do servidor**: escolha um perfil de certificado raiz confiável existente. Quando o cliente se conecta à rede, esse certificado é apresentado ao servidor e é usado para autenticar a conexão.
 
-    - **Autenticação de Cliente** - **Certificado do cliente para autenticação de cliente (certificado de identidade)** : escolha o perfil de certificado do cliente SCEP ou PKCS que também é implantado no dispositivo. Esse certificado é a identidade apresentada pelo dispositivo ao servidor para autenticar a conexão.
+    - **Autenticação do Cliente** - **certificado do cliente para autenticação de cliente (Certificado de identidade)** : escolha o perfil de certificado do cliente SCEP que também é implantado no dispositivo. Esse certificado é a identidade apresentada pelo dispositivo ao servidor para autenticar a conexão.
 
     - **Privacidade de identidade (identidade externa)** : insira o texto enviado em resposta a uma solicitação de identidade de EAP. Esse texto pode ser qualquer valor, como `anonymous`. Durante a autenticação, essa identidade anônima é enviada inicialmente e seguida pela identificação real enviada em um túnel seguro.
 
