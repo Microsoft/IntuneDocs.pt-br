@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 99e89db1bbef3d08cd6709b2600c4a684ac618f7
-ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
+ms.openlocfilehash: c1e8e37a784ea39fbf1154321933673ed02eee33
+ms.sourcegitcommit: 16a9109b4028589c17695d41271ca4fee8b1d697
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/16/2019
-ms.locfileid: "72498617"
+ms.lasthandoff: 11/26/2019
+ms.locfileid: "74540759"
 ---
 # <a name="assign-apps-to-groups-with-microsoft-intune"></a>Atribuir aplicativos a grupos com o Microsoft Intune
 
@@ -94,35 +94,23 @@ As informações na tabela a seguir podem ajudar você a entender a intenção r
 | Intenção do grupo 1 | Intenção do grupo 2 | Intenção resultante |
 |-----------------------------------|-----------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 |Necessário para o usuário|Disponível para o usuário|Necessária e Disponível|
-|Necessário para o usuário|Não Disponível para o Usuário|Necessária|
 |Necessário para o usuário|Desinstalação do usuário|Necessária|
-|Disponível para o usuário|Não Disponível para o Usuário|Não disponível|
 |Disponível para o usuário|Desinstalação do usuário|Desinstalar|
-|Não Disponível para o Usuário|Desinstalação do usuário|Desinstalar
 |Necessário para o usuário|Necessário para o dispositivo|Ambos existem, mas o Intune trata como Obrigatório
 |Necessário para o usuário|Desinstalação do dispositivo|Ambos existem, mas o Intune resolve como Obrigatório
 |Disponível para o usuário|Necessário para o dispositivo|Ambos existem, mas o Intune resolve como Obrigatório (Obrigatório e Disponível)
 |Disponível para o usuário|Desinstalação do dispositivo|Ambos existem, mas o Intune resolve como Disponível.<br><br>O aplicativo aparece no Portal da Empresa.<br><br>Se o aplicativo já estiver instalado (como aplicativo obrigatório com intenção anterior), ele será desinstalado.<br><br>Se o usuário selecionar **Instalar do Portal da Empresa**, o aplicativo será instalado e a intenção de desinstalação não será cumprida.|
-|Não Disponível para o Usuário|Necessário para o dispositivo|Necessária|
-|Não Disponível para o Usuário|Desinstalação do dispositivo|Desinstalar|
 |Desinstalação do usuário|Necessário para o dispositivo|Ambos existem, mas o Intune resolve como Obrigatório|
 |Desinstalação do usuário|Desinstalação do dispositivo|Ambos existem, mas o Intune resolve como Desinstalar|
 |Necessário para o dispositivo|Desinstalação do dispositivo|Necessária|
 |Necessário e disponível para o usuário|Disponível para o usuário|Necessária e Disponível|
 |Necessário e disponível para o usuário|Desinstalação do usuário|Necessária e Disponível|
-|Necessário e disponível para o usuário|Não Disponível para o Usuário|Necessária e Disponível|
 |Necessário e disponível para o usuário|Necessário para o dispositivo|Ambos existem, Obrigatório e Disponível
-|Necessário e disponível para o usuário|Não disponível para o dispositivo|Necessária e Disponível|
 |Necessário e disponível para o usuário|Desinstalação do dispositivo|Ambos existem, mas o Intune resolve como Obrigatório (Obrigatório e Disponível)
-|Não Disponível para o Usuário|Não disponível para o dispositivo|Não disponível|
-|Disponível para o usuário|Não disponível para o dispositivo|Disponível|
-|Necessário para o usuário|Não disponível para o dispositivo|Necessária|
 |Disponível para o usuário sem registro|Necessário e disponível para o usuário|Necessária e Disponível
 |Disponível para o usuário sem registro|Necessário para o usuário|Necessária
-|Disponível para o usuário sem registro|Não Disponível para o Usuário|Não disponível
 |Disponível para o usuário sem registro|Disponível para o usuário|Disponível|
 |Disponível para o usuário sem registro|Necessário para o dispositivo|Necessário e Disponível sem registro|
-|Disponível para o usuário sem registro|Não disponível para o dispositivo|Disponível sem registro|
 |Disponível para o usuário sem registro|Desinstalação do dispositivo|Desinstalação e Disponível sem registro.<br><br>Se o usuário não tiver instalado o aplicativo do Portal da Empresa, a desinstalação será cumprida.<br><br>Se o usuário instalar o aplicativo do Portal da Empresa, a instalação terá prioridade sobre a desinstalação.|
 
 > [!NOTE]

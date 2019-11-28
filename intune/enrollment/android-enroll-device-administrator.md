@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: a72d3a16c5180b51fcc019d726a498e0d15ad1d3
-ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
+ms.openlocfilehash: 08193aa329a1bee4e66638de5c0d7518d15db2a4
+ms.sourcegitcommit: 23e9c48348a6eba494d072a2665b7481e5b5c84e
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/16/2019
-ms.locfileid: "72503397"
+ms.lasthandoff: 11/26/2019
+ms.locfileid: "74547921"
 ---
 # <a name="android-device-administrator-enrollment"></a>Registro de administrador de dispositivos Android
 
@@ -47,8 +47,6 @@ Para obter mais informações sobre os recursos do Android Enterprise do Google,
 
 
 ## <a name="set-up-device-administrator-enrollment"></a>Configurar o registro do administrador de dispositivos
-
-Por padrão, o Intune permite o registro de dispositivos Android com recursos de administrador de dispositivos.
 
 1. Para se preparar para gerenciar dispositivos móveis, é necessário definir a autoridade MDM (gerenciamento de dispositivo móvel) como **Microsoft Intune**. Consulte [Definir a autoridade MDM](../fundamentals/mdm-authority-set.md) para obter instruções. Você define esse item apenas uma vez, na primeira vez que configurar o Intune para gerenciamento de dispositivo móvel.
 2. Acesse **Intune** > **Registro de dispositivo** > **Registro do Android** > **Dispositivos pessoais e corporativos com privilégios de administração de dispositivos** > **Usar o administrador do dispositivo para gerenciar dispositivos**.

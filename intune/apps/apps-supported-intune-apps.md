@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 4e0cef06f2f939c996fe59d5b6acb10560125718
-ms.sourcegitcommit: e7798c9faa7b7471d0994de2dcd94c259ee8874c
+ms.openlocfilehash: 752b4ae8440df0ebefbabbf7e5ccb48fed684827
+ms.sourcegitcommit: 16a9109b4028589c17695d41271ca4fee8b1d697
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/12/2019
-ms.locfileid: "73931019"
+ms.lasthandoff: 11/26/2019
+ms.locfileid: "74540826"
 ---
 # <a name="microsoft-intune-protected-apps"></a>Aplicativos protegidos do Microsoft Intune  
 
@@ -72,7 +72,6 @@ As tabelas a seguir fornecem detalhes sobre os parceiros de suporte e aplicativo
 | **Microsoft Visio Viewer**<p><img alt="Microsoft app - Microsoft Visio Viewer icon" src="./media/apps-supported-intune-apps/icon-m-microsoft-visio-viewer.png" width="100"> | Você pode visualizar e interagir com os diagramas do Visio no iPhone gratuitamente em qualquer lugar. Entre com sua conta da Microsoft ou abra um anexo do Visio a partir do email e aproveite a incrível exibição dos diagramas do Visio em qualquer iPhone que execute o iOS 9.0 ou posterior. Você também pode compartilhar os diagramas com qualquer pessoa que possa visualizar diagramas do Visio no iPhone ou em um navegador da Web, mesmo que eles não tenham o Visio instalado em sua área de trabalho do Windows.| [Link da loja do iOS](https://itunes.apple.com/us/app/microsoft-visio-viewer-flowcharts-and-diagrams/id1139787983?mt=8) |  
 | **Microsoft Word**<p><img alt="Microsoft app - Microsoft Word icon" src="./media/apps-supported-intune-apps/icon-m-microsoft-word.png" width="100"> | Aprimore cada vez mais a aparência das documentos do Word em seu tablet e telefone. Garanta que, ao editar ou criar documentos, elas terão exatamente a aparência desejada em computadores, Macs, tablets e telefones. Tenha tudo instalado e funcionando em pouco tempo com a aparência familiar do Office e com uma experiência de toque intuitiva.<p><p>Esse aplicativo pode ser usado como um aplicativo de várias identidades para Android e iOS. | [Link da loja Android](https://play.google.com/store/apps/details?id=com.microsoft.office.word),<br>[Link da loja do iOS](https://itunes.apple.com/us/app/microsoft-word/id586447913?mt=8) |  
 | **Pastas de trabalho da Microsoft**<p><img alt="Microsoft app - Microsoft Work Folders icon" src="./media/apps-supported-intune-apps/icon-m-microsoft-work-folders.png" width="100"> | Permita que funcionários individuais acessem com segurança seus arquivos dentro e fora do ambiente corporativo usando Pastas de Trabalho, um recurso do Windows Server. | [Link da loja do iOS](https://itunes.apple.com/us/app/work-folders/id950878067?mt=8) | 
-| **Microsoft Whiteboard**<p><img alt="Microsoft app - Microsoft Whiteboard icon" src="./media/apps-supported-intune-apps/icon-m-microsoft-whiteboard.png" width="100"> | O aplicativo Microsoft Whiteboard fornece uma tela inteligente com forma livre na qual as equipes podem idealizar, criar e colaborar visualmente na nuvem.  Ele aprimora o trabalho em equipe, permitindo que todos os membros das equipes editem e comentem diretamente na tela em tempo real, onde quer que estejam. E todo o seu trabalho permanece seguro na nuvem, pronto para ser retomado em qualquer dispositivo. | [Link da loja do iOS](https://apps.apple.com/us/app/microsoft-whiteboard/id1352499399) |  
 | **Yammer**<p><img alt="Microsoft app - Yammer icon" src="./media/apps-supported-intune-apps/icon-m-microsoft-yammer.png" width="100"> | Divida os silos organizacionais e facilite a colaboração da equipe com o Yammer. Conecte-se às pessoas certas em sua organização, compartilhe e pesquise informações entre equipes e organize projetos e ideias para produzir mais. | [Link da loja Android](https://play.google.com/store/apps/details?id=com.yammer.v1),<br>[Link da loja do iOS](https://itunes.apple.com/us/app/yammer/id289559439?mt=8) |  
 
 ## <a name="partner-apps"></a>Aplicativos de parceiros 
