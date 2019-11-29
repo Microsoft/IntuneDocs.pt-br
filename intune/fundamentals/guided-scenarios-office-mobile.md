@@ -1,7 +1,7 @@
 ---
-title: Cenário guiado – Aplicativos móveis do Microsoft Office seguros
+title: Cenário guiado – Aplicativos móveis seguros do Microsoft Office
 titleSuffix: Microsoft Intune
-description: Saiba mais sobre o cenário guiado para implantar aplicativos móveis do Microsoft Office do portal de Gerenciamento de Dispositivos do Microsoft 365.
+description: Saiba mais sobre o cenário guiado para implantar aplicativos móveis do portal de Gerenciamento de Dispositivos do Microsoft 365.
 keywords: ''
 author: Erikre
 ms.author: erikre
@@ -23,11 +23,11 @@ ms.contentlocale: pt-BR
 ms.lasthandoff: 10/18/2019
 ms.locfileid: "72585703"
 ---
-# <a name="guided-scenario---secure-microsoft-office-mobile-apps"></a>Cenário guiado – Aplicativos móveis do Microsoft Office seguros 
+# <a name="guided-scenario---secure-microsoft-office-mobile-apps"></a>Cenário guiado – Aplicativos móveis seguros do Microsoft Office 
 
-Seguindo esse cenário guiado no portal de Gerenciamento de Dispositivos, você pode habilitar a proteção básica de aplicativo do Intune em dispositivos iOS e Android.
+Seguindo este cenário guiado no portal de Gerenciamento de Dispositivos, você pode habilitar a proteção básica de aplicativo do Intune em dispositivos iOS e Android.
 
-A proteção de aplicativo que você habilitar imporá as seguintes ações: 
+A proteção de aplicativo que você habilita impõe as seguintes ações: 
 - Criptografar arquivos de trabalho.
 - Exigir um PIN para acessar os arquivos de trabalho.
 - Exigir que o PIN seja redefinido após cinco tentativas com falha.
@@ -62,31 +62,31 @@ Neste exemplo, o administrador aplicou políticas de proteção de aplicativo ao
 Você precisará seguir as permissões de administrador do Intune:
 
    - Permissões de leitura, criação, exclusão e atribuição de aplicativos gerenciados
-   - Permissões de leitura, criação e atribuição de política
+   - Permissões de leitura, criação e atribuição de conjuntos de políticas
    - Permissão de leitura da organização
 
 ## <a name="step-1---introduction"></a>Etapa 1 – Introdução
 
-Seguindo o cenário guiado da **Proteção de Aplicativo do Intune**, você impedirá o compartilhamento ou o vazamento de dados fora da sua organização. 
+Seguindo o cenário guiado de **Proteção de Aplicativo do Intune**, você consegue impedir que dados da sua organização sejam vazados ou compartilhados externamente. 
 
-Os usuários do iOS e Android atribuídos deverão inserir um PIN sempre que abrirem um aplicativo do Office. Depois de 5 tentativas de PIN com falha, os usuários devem redefinir seu PIN. Se você já precisar de um PIN de dispositivo, os usuários não serão afetados.
+Os usuários atribuídos de iOS e Android precisarão inserir um PIN ao abrir aplicativos do Office. Depois de 5 tentativas de PIN com falha, os usuários precisam redefinir o PIN. Se você já exigir um PIN de dispositivo, os usuários não serão afetados.
 
 ### <a name="what-you-will-need-to-continue"></a>Do que você precisará para continuar
 
-Nós perguntaremos sobre os aplicativos e usuários necessários e o que é preciso para acessá-los. Verifique se você tem as seguintes informações à disposição:
+Perguntaremos quais aplicativos são necessários para seus usuários e o que é preciso para acessá-los. Verifique se você tem as seguintes informações à disposição:
 - Lista de aplicativos do Office aprovados para uso corporativo.
 - Requisitos de PIN para iniciar aplicativos aprovados em dispositivos não gerenciados.
 
 ## <a name="step-2---basics"></a>Etapa 2 – Conceitos básicos
 
-Nesta etapa, você deverá inserir um **Prefixo** e uma **Descrição** para sua nova política de proteção de aplicativo. À medida que você adiciona o **Prefixo**, os detalhes relacionados aos recursos que o cenário guiado cria serão atualizados. Esses detalhes facilitarão a localização de suas políticas posteriormente se você precisar alterar as atribuições e a configuração. 
+Nesta etapa, você deverá inserir um **Prefixo** e uma **Descrição** para sua nova política de proteção de aplicativo. Assim que você adicionar o **Prefixo**, serão atualizados os detalhes relacionados aos recursos criados no cenário guiado. Esses detalhes facilitarão a localização de suas políticas posteriormente se você precisar alterar as atribuições e a configuração. 
 
 > [!TIP]
-> Considere anotar os recursos que serão criados para poder consultá-los posteriormente.
+> Anote os recursos que serão criados para poder consultá-los mais tarde.
 
 ## <a name="step-3---apps"></a>Etapa 3 – Aplicativos
 
-Para ajudar você a começar, este cenário guiado seleciona previamente os aplicativos móveis a seguir para proteger em dispositivos iOS e Android:
+Para ajudar você a começar, este cenário guiado seleciona previamente os seguintes aplicativos móveis para proteção em dispositivos iOS e Android:
 - Microsoft Excel 
 - Microsoft Word 
 - Microsoft Teams 
@@ -103,22 +103,22 @@ Quando você tiver selecionado os aplicativos, clique em **Avançar**.
 
 ## <a name="step-4---configuration"></a>Etapa 4 – Configuração
 
-Nesta etapa, você deve configurar os requisitos para acessar e compartilhar os arquivos corporativos e emails nesses aplicativos. Por padrão, os usuários podem salvar dados nas contas do OneDrive e SharePoint de sua organização.
+Nesta etapa, você precisa configurar os requisitos para acesso e compartilhamento de e-mails e arquivos corporativos nesses aplicativos. Por padrão, os usuários podem salvar dados nas contas do OneDrive e SharePoint da organização deles.
 
 | Setting | Descrição | Valor padrão |
 |---------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|---------------|
-| Tipo de PIN | Os PINs numéricos são compostos por todos os números. As senhas são compostas por caracteres alfanuméricos e caracteres especiais.  No iOS/iPadOS, para configurar o tipo de “Senha”, é necessário que o aplicativo tenha o SDK do Intune versão 7.1.12 ou superior. O tipo numérico não tem nenhuma restrição de versão do SDK do Intune. | Numérico |
+| Tipo de PIN | Os PINs numéricos são compostos por todos os números. As senhas são compostas por caracteres alfanuméricos e caracteres especiais.  No iOS/iPadOS, para você configurar o tipo "Senha", o aplicativo precisa ter o SDK do Intune na versão 7.1.12 ou em uma versão superior. O tipo numérico não tem nenhuma restrição de versão do SDK do Intune. | Numérico |
 | Selecionar tamanho mínimo do PIN | Especifique o número mínimo de dígitos em uma sequência de PIN. | 6 |
-| Verificar novamente os requisitos de acesso após (minutos de inatividade) | Se o aplicativo gerenciado por política estiver inativo por mais tempo do que o número de minutos de inatividade especificado, o aplicativo solicitará que os requisitos de acesso (ou seja, PIN, configuração de inicialização condicional) sejam verificados novamente depois que o aplicativo for iniciado. | 30 |
+| Verificar novamente os requisitos de acesso após (minutos de inatividade) | Se o aplicativo gerenciado por política estiver inativo por um período maior que o tempo de inatividade especificado (em minutos), será solicitada uma nova verificação dos requisitos de acesso (ou seja, PIN, configuração de inicialização condicional) depois que o aplicativo for iniciado. | 30 |
 | Imprimir dados da organização | Se bloqueado, o aplicativo não poderá imprimir dados protegidos. | Bloquear |
 | Abrir links de aplicativos gerenciados por política em navegadores não gerenciados | Se bloqueados, os links de aplicativos gerenciados por política deverão ser abertos em um navegador gerenciado. | Bloquear |
 | Copiar dados para aplicativos não gerenciados | Se bloqueados, os dados gerenciados permanecerão nos aplicativos gerenciados. | Allow |
 
 ## <a name="step-5---assignments"></a>Etapa 5 – Atribuições
 
-Nesta etapa, você poderá escolher os grupos de usuários que deseja incluir para garantir que eles tenham acesso aos seus dados corporativos. A proteção de aplicativo é atribuída a usuários, e não a dispositivos; assim, seus dados corporativos serão protegidos, independentemente do dispositivo usado e do seu status de registro.
+Nesta etapa, você poderá escolher os grupos de usuários que deseja incluir para garantir que eles tenham acesso aos seus dados corporativos. Como a proteção de aplicativo é atribuída a usuários, não a dispositivos, seus dados corporativos estarão protegidos independentemente do dispositivo usado e do status de registro dele.
 
-Os usuários sem políticas de proteção de aplicativo e configurações de acesso condicional atribuídas poderão salvar dados de seu perfil corporativo em aplicativos pessoais e armazenamento local não gerenciado em dispositivos móveis. Eles também podem se conectar a serviços de dados corporativos, como o Microsoft Exchange, com aplicativos pessoais.
+Os usuários sem políticas de proteção de aplicativo e configurações de acesso condicional poderão salvar dados do respectivo perfil corporativo em aplicativos pessoais e no armazenamento local não gerenciado dos dispositivos móveis deles. Eles também podem se conectar a serviços de dados corporativos, como o Microsoft Exchange, com aplicativos pessoais.
 
 ## <a name="step-6---review--create"></a>Etapa 6 – Examinar + criar
 

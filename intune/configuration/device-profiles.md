@@ -49,7 +49,7 @@ Esses modelos oferecem aos administradores uma exibição simplificada das confi
 
 Esse recurso é compatível com:
 
-- Windows 10 1809 e posterior em firmware com suporte.
+- Windows 10 a partir da versão 1809 em firmware com suporte.
 
 ## <a name="certificates"></a>Certificados
 

@@ -42,7 +42,7 @@ Como um administrador do Intune, use essas configurações de conformidade para 
 ## <a name="email"></a>Email
 
 - **Exigir que os dispositivos móveis tenham um perfil de email gerenciado**:  
-  - **Não configurado** (*padrão*) — Esta configuração não é avaliada em relação a estar ou não em conformidade.
+  - **Não configurado** (*padrão*) — Essa configuração não é avaliada em relação à conformidade.
   - **Exigir** – Os dispositivos que não tenham um email de perfil gerenciado pelo Intune são considerados não compatíveis. Um dispositivo pode não ter um perfil de email gerenciado quando não é direcionado corretamente ou se o usuário tiver configurado manualmente a conta de email no dispositivo.
 
   O dispositivo é considerado como não estando em conformidade nas seguintes situações:  
@@ -54,14 +54,14 @@ Para obter detalhes sobre perfis de email, veja [configurar o acesso ao email da
 ## <a name="device-health"></a>Integridade do Dispositivo
 
 - **Dispositivos com jailbreak**:  
-  - **Não configurado** (*padrão*) — Esta configuração não é avaliada em relação a estar ou não em conformidade.
+  - **Não configurado** (*padrão*) — Essa configuração não é avaliada em relação à conformidade.
   - **Bloquear** – Marque dispositivos desbloqueados por rooting (com jailbreak) como fora de conformidade.  
 
 - **Requer que o dispositivo esteja em nível igual ou inferior ao Nível de Ameaças do Dispositivo** *(iOS 8.0 e mais recente)* :  
   Use essa configuração para fazer a avaliação de risco como uma condição de conformidade. Escolha o nível de ameaça permitido:  
-  - **Não configurado** (*padrão*) — Esta configuração não é avaliada em relação a estar ou não em conformidade.
+  - **Não configurado** (*padrão*) — Essa configuração não é avaliada em relação à conformidade.
   - **Protegido** – Esta opção é a mais segura e significa que o dispositivo não pode ter ameaças. Se for detectado que o dispositivo tem qualquer nível de ameaça, será avaliado que ele não está em conformidade.
-  - **Baixo** – O dispositivo será avaliado como em conformidade se apenas ameaças de nível baixo estiverem presentes. Qualquer coisa acima disso coloca o dispositivo no estado de não compatível.
+  - **Baixa** – O dispositivo será avaliado como em conformidade se apenas ameaças de nível baixo estiverem presentes. Qualquer coisa acima disso coloca o dispositivo no estado de não compatível.
   - **Médio** – O dispositivo será avaliado como em conformidade se as ameaças presentes nele forem de nível baixo ou médio. Se for detectado que o dispositivo tem ameaças de nível alto, será determinado que ele não está em conformidade.
   - **Alto** – Esta opção é a menos segura, porque permite todos os níveis de ameaça. Talvez seja útil se você estiver usando esta solução apenas para fins de relatório.
 
@@ -89,8 +89,8 @@ Para obter detalhes sobre perfis de email, veja [configurar o acesso ao email da
 > Depois que uma política de conformidade ou de configuração for aplicada a um dispositivo iOS, os usuários deverão definir uma senha a cada 15 minutos. Os usuários serão notificados continuamente até que uma senha seja definida. Quando uma senha é definida para o dispositivo iOS, o processo de criptografia é iniciado automaticamente. O dispositivo permanece criptografado até que a senha seja desabilitada.
 
 - **Exigir uma senha para desbloquear os dispositivos móveis**:  
-  - **Não configurado** (*padrão*) — Esta configuração não é avaliada em relação a estar ou não em conformidade.  
-  - **Exigir** – Os usuários devem inserir uma senha antes que possam acessar no dispositivo. Dispositivos iOS que usam uma senha são criptografados.
+  - **Não configurado** (*padrão*) — Essa configuração não é avaliada em relação à conformidade.  
+  - **Exigir** – Os usuários precisam inserir uma senha para acessar o dispositivo. Dispositivos iOS que usam uma senha são criptografados.
 
 - **Senhas simples**:  
   - **Não configurado** (*padrão*)-os usuários podem criar senhas simples, como **1234** ou **1111**.

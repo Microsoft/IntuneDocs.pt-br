@@ -44,7 +44,7 @@ Os seguintes recursos corporativos do Microsoft Edge habilitados pelas política
 - Permissões de Administrador do Intune necessárias:
     - Permissões de leitura, criação, exclusão e atribuição de aplicativos gerenciados
     - Permissões de leitura, criação e atribuição de aplicativos móveis
-    - Permissões de leitura, criação e atribuição de política
+    - Permissões de leitura, criação e atribuição de conjuntos de políticas
     - Permissão de leitura e atualização da organização
 
 ## <a name="step-1---introduction"></a>Etapa 1 – Introdução

@@ -126,7 +126,7 @@ Para obter mais informações, veja [CSP de política – Bitlocker](https://doc
 Para obter mais informações, veja [CSP de política – Navegador](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-browser) na documentação do Windows.  
 
 - **Exigir SmartScreen para Microsoft Edge**  
-  O Microsoft Edge usa o Microsoft Defender SmartScreen (ativado) por padrão para proteger os usuários contra possíveis golpes de phishing e software mal-intencionado. Além disso, por padrão, os usuários não podem desabilitar (desativar) o Microsoft Defender SmartScreen. A habilitação dessa política desativa o Microsoft Defender SmartScreen e impede os usuários de ativá-lo. Não configure essa política para permitir que os usuários optem por ativar ou desativar o Microsoft Defender SmartScreen.  
+  Por padrão, o Microsoft Edge usa o Microsoft Defender SmartScreen (ativado) para proteger os usuários contra possíveis tentativas de phishing e programas de software mal-intencionados. Além disso, por padrão, os usuários não podem desabilitar (desativar) o Microsoft Defender SmartScreen. A habilitação dessa política desativa o Microsoft Defender SmartScreen e impede os usuários de ativá-lo. Não configure essa política para permitir que os usuários optem por ativar ou desativar o Microsoft Defender SmartScreen.  
   [Saiba mais](https://go.microsoft.com/fwlink/?linkid=2067029)   
   
   **Padrão**: Sim  
@@ -1616,7 +1616,7 @@ Para obter mais informações, veja [CSP de política – Defender](https://docs
   **Padrão**: Bloquear
   
 - **Impedir que o tipo de roubo de credencial**  
-  O Microsoft Defender Credential Guard usa segurança baseada em virtualização para isolar segredos para que apenas o software de sistema privilegiado possa acessá-los. O acesso não autorizado a esses segredos pode levar a ataques de roubo de credenciais, como Pass-the-Hash ou Pass-The-Ticket. O Microsoft Defender Credential Guard evita esses ataques protegendo os hashes de senha NTLM, Kerberos Ticket Granting Tickets e credenciais armazenadas por aplicativos como credenciais de domínio.  
+  O Microsoft Defender Credential Guard usa segurança baseada em virtualização para isolar segredos para que apenas o software de sistema privilegiado possa acessá-los. O acesso não autorizado a esses segredos pode levar a ataques de roubo de credenciais, como Pass-the-Hash ou Pass-The-Ticket. O Microsoft Defender Credential Guard evita esses ataques protegendo os hashes de senha NTLM, os Tíquetes de Concessão de Tíquete do Kerberos e as credenciais armazenadas por aplicativos como credenciais de domínio.  
   [Saiba mais](https://go.microsoft.com/fwlink/?linkid=2067065)  
   
   **Padrão**: Habilitar
@@ -1632,7 +1632,7 @@ Para obter mais informações, veja [CSP de política – Defender](https://docs
   **Padrão**: Habilitar
 
 - **Tipo de proteção de rede**  
-  Esta política permite que você ative ou desative a proteção de rede (bloquear/auditar) no Microsoft Defender Exploit Guard. A proteção de rede é um recurso do Microsoft Defender Exploit Guard que protege os funcionários usando qualquer aplicativo do acesso a golpes de phishing, sites que hospedam explorações e conteúdo mal-intencionado na Internet. Isso inclui impedir que navegadores de terceiros se conectem a sites perigosos. O tipo de valor é um inteiro. Se você habilitar essa configuração, a proteção de rede estará ativada e os funcionários não poderão desativá-la. Seu comportamento pode ser controlado pelas seguintes opções: bloquear e auditar. Se você habilitar essa política com a opção "Bloquear", os aplicativos e usuários serão impedidos de se conectar a domínios perigosos. Você poderá ver essa atividade na Central de Segurança do Microsoft Defender. Se você habilitar essa política com a opção "Auditar", os aplicativos/usuários não serão impedidos de se conectar a domínios perigosos. No entanto, você ainda verá essa atividade na Central de Segurança do Microsoft Defender. Se você desabilitar essa política, os aplicativos/usuários não serão impedidos de se conectar a domínios perigosos. Você não verá nenhuma atividade de rede na Central de Segurança do Microsoft Defender. Se você não configurar essa política, o bloqueio de rede estará desabilitado por padrão.  
+  Esta política permite que você ative ou desative a proteção de rede (bloqueio ou auditoria) no Microsoft Defender Exploit Guard. A proteção de rede é um recurso do Microsoft Defender Exploit Guard que protege os funcionários contra tentativas de phishing, sites de exploração e conteúdo mal-intencionado da Internet em aplicativos. Isso inclui impedir que navegadores de terceiros se conectem a sites perigosos. O tipo de valor é um inteiro. Se você habilitar essa configuração, a proteção de rede estará ativada e os funcionários não poderão desativá-la. Seu comportamento pode ser controlado pelas seguintes opções: bloquear e auditar. Se você habilitar essa política com a opção "Bloquear", os aplicativos e usuários serão impedidos de se conectar a domínios perigosos. Você poderá ver essa atividade na Central de Segurança do Microsoft Defender. Se você habilitar essa política com a opção "Auditar", os aplicativos/usuários não serão impedidos de se conectar a domínios perigosos. No entanto, você ainda verá essa atividade na Central de Segurança do Microsoft Defender. Se você desabilitar essa política, os aplicativos/usuários não serão impedidos de se conectar a domínios perigosos. Você não verá nenhuma atividade de rede na Central de Segurança do Microsoft Defender. Se você não configurar essa política, o bloqueio de rede estará desabilitado por padrão.  
   [Saiba mais](/windows/security/threat-protection/microsoft-defender-atp/enable-network-protection)  
   
   **Padrão**: Habilitar
@@ -1661,7 +1661,7 @@ Para obter mais informações, veja [CSP de política – Defender](https://docs
   **Padrão**: Bloquear
   
 - **Examinar unidades removíveis durante um exame completo**  
-  Permite que o Microsoft Defender examine a existência de software mal-intencionado e indesejado em unidades removíveis (por exemplo, pen drives) durante uma verificação completa. O Microsoft Defender Antivírus examina todos os arquivos nos dispositivos USB antes da execução.  
+  Permite que o Microsoft Defender examine se há algum software mal-intencionado e/ou indesejado nas unidades removíveis (por exemplo, pen drives) durante uma verificação completa. O Microsoft Defender Antivírus examina todos os arquivos nos dispositivos USB antes da execução.  
   [Saiba mais](https://go.microsoft.com/fwlink/?linkid=2067036)  
   
   **Padrão**: Sim  

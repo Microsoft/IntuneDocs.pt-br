@@ -14,7 +14,11 @@
     - name: Criar um perfil
       href: device-profile-create.md
     - name: Modelos administrativos no Windows
-      href: administrative-templates-windows.md
+      items:
+        - name: Modelos administrativos no Windows
+          href: administrative-templates-windows.md
+        - name: Atualizar o Office usando modelos administrativos
+          href: administrative-templates-update-office.md
     - name: Recursos do dispositivo no iOS e no macOS
       href: device-features-configure.md
     - name: Restringir recursos e configurações do dispositivo
@@ -47,6 +51,8 @@
       items:
         - name: Wi-Fi com uma chave pré-compartilhada
           href: wi-fi-profile-shared-key.md
+        - name: Solucionar problemas de Wi-Fi
+          href: troubleshoot-wi-fi-profiles.md
     - name: Extensões no macOS
       href: kernel-extensions-overview-macos.md
     - name: Aplicativo educacional Fazer um Teste

@@ -62,8 +62,8 @@ Computadores com Windows 8.1 retornam a versão **3**. Se a regra de versão do 
 ### <a name="password"></a>Senha
 
 - **Exigir uma senha para desbloquear os dispositivos móveis**:  
-  - **Não configurado** (*padrão*) — Esta configuração não é avaliada em relação a estar ou não em conformidade.
-  - **Exigir** – Os usuários devem inserir uma senha antes que possam acessar no dispositivo.
+  - **Não configurado** (*padrão*) — Essa configuração não é avaliada em relação à conformidade.
+  - **Exigir** – Os usuários precisam inserir uma senha para acessar o dispositivo.
 
 - **Senhas simples**:  
   - **Não configurado** (*padrão*)-os usuários podem criar senhas simples, como **1234** ou **1111**.

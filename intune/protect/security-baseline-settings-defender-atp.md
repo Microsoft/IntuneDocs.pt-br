@@ -91,7 +91,7 @@ Para obter mais informações, veja [CSP de política – SmartScreen](https://d
   **Padrão**: Bloquear 
 
 - **Impedir que o tipo de roubo de credencial**  
-  Defina como *Habilitar* para [Proteger as credenciais de domínio derivadas com o Credential Guard](https://docs.microsoft.com/windows/security/identity-protection/credential-guard/credential-guard). O Microsoft Defender Credential Guard usa segurança baseada em virtualização para isolar segredos para que apenas o software de sistema privilegiado possa acessá-los. O acesso não autorizado a esses segredos pode levar a ataques de roubo de credenciais, como Pass-the-Hash ou Pass-The-Ticket. O Microsoft Defender Credential Guard evita esses ataques protegendo os hashes de senha NTLM, Kerberos Ticket Granting Tickets e credenciais armazenadas por aplicativos como credenciais de domínio.  
+  Defina como *Habilitar* para [Proteger as credenciais de domínio derivadas com o Credential Guard](https://docs.microsoft.com/windows/security/identity-protection/credential-guard/credential-guard). O Microsoft Defender Credential Guard usa segurança baseada em virtualização para isolar segredos para que apenas o software de sistema privilegiado possa acessá-los. O acesso não autorizado a esses segredos pode levar a ataques de roubo de credenciais, como Pass-the-Hash ou Pass-The-Ticket. O Microsoft Defender Credential Guard evita esses ataques protegendo os hashes de senha NTLM, os Tíquetes de Concessão de Tíquete do Kerberos e as credenciais armazenadas por aplicativos como credenciais de domínio.  
 
   **Padrão**: Habilitar
 
@@ -560,7 +560,7 @@ Para saber mais, veja [CSP de Firewall](https://docs.microsoft.com/windows/clien
 ## <a name="web--network-protection"></a>Proteção de rede e da Web  
 
 - **Tipo de proteção de rede**  
-  [Defender/EnableNetworkProtection](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-defender#defender-enablenetworkprotection) - essa política permite que você ative ou desative a proteção de rede no Microsoft Defender Exploit Guard. A proteção de rede é um recurso do Microsoft Defender Exploit Guard que protege os funcionários usando qualquer aplicativo do acesso a golpes de phishing, sites que hospedam explorações e conteúdo mal-intencionado na Internet. Isso inclui impedir que navegadores de terceiros se conectem a sites perigosos.  
+  [Defender/EnableNetworkProtection](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-defender#defender-enablenetworkprotection) - essa política permite que você ative ou desative a proteção de rede no Microsoft Defender Exploit Guard. A proteção de rede é um recurso do Microsoft Defender Exploit Guard que protege os funcionários contra tentativas de phishing, sites de exploração e conteúdo mal-intencionado da Internet em aplicativos. Isso inclui impedir que navegadores de terceiros se conectem a sites perigosos.  
 
   Quando estiver definido como *Habilitar* ou *Modo de auditoria*, os usuários não poderão desativar a proteção de rede e você poderá usar a Central de Segurança do Microsoft Defender para exibir informações sobre as tentativas de conexão.  
  

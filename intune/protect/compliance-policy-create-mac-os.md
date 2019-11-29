@@ -40,7 +40,7 @@ Como um administrador do Intune, use essas configurações de conformidade para 
 ## <a name="device-health"></a>Integridade do Dispositivo
 
 - **Exigir uma proteção de integridade do sistema**:  
-  - **Não configurado** (*padrão*) — Esta configuração não é avaliada em relação a estar ou não em conformidade.
+  - **Não configurado** (*padrão*) — Essa configuração não é avaliada em relação à conformidade.
   - **Exigir** -exigir que dispositivos MacOS tenham [proteção de integridade do sistema](https://support.apple.com/HT204899) (abre o site da Apple) habilitado.  
 
 ## <a name="device-properties"></a>Propriedades do Dispositivo
