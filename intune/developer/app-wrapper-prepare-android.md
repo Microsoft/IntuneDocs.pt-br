@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 107624ac5d0c5eab423c0d5051ceca45e41de0b9
-ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
+ms.openlocfilehash: 8fa63540afa18450f731180da3c2cee729010a65
+ms.sourcegitcommit: ce518a5dfe62c546a77f32ef372f36efbaad473f
 ms.translationtype: MTE75
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/16/2019
-ms.locfileid: "72490759"
+ms.lasthandoff: 11/25/2019
+ms.locfileid: "74465710"
 ---
 # <a name="prepare-android-apps-for-app-protection-policies-with-the-intune-app-wrapping-tool"></a>Preparar aplicativos Android para políticas de proteção do aplicativo com a Ferramenta de Encapsulamento de Aplicativos do Intune
 
@@ -54,9 +54,11 @@ Antes de executar a ferramenta, consulte [Considerações de segurança para exe
     > [!NOTE]
     > A Ferramenta de Disposição do Aplicativo do Intune não oferece suporte aos esquemas de assinatura v2 e o futuro v3 para autenticação do aplicativo. Depois de ter disposto o arquivo .apk usando a Ferramenta de Disposição do Aplicativo do Intune, a recomendação é usar [a ferramenta Apksigner fornecida pelo Google]( https://developer.android.com/studio/command-line/apksigner). Isso garantirá que, assim que seu aplicativo chegar aos dispositivos dos usuários finais, ele possa ser iniciado corretamente pelos padrões do Android. 
 
-- (Opcional) Às vezes, um aplicativo pode atingir o limite de tamanho do DEX (Dalvik Executable) devido às classes do SDK de MAM do Intune adicionados durante o encapsulamento. Os arquivos DEX fazem parte da compilação de um aplicativo Android. A ferramenta de encapsulamento de aplicativos do Intune manipula automaticamente o estouro de arquivo DEX durante o encapsulamento de aplicativos com um nível de API mínimo de 21 ou superior (a partir de [v. 1.0.2501.1](https://github.com/msintuneappsdk/intune-app-wrapping-tool-android/releases)). Para aplicativos com um nível de API Mín de < 21, a prática recomendada seria aumentar o nível mínimo de API usando o sinalizador de `-UseMinAPILevelForNativeMultiDex` do wrapper. Para os clientes não conseguirem aumentar o nível de API mínimo do aplicativo, as seguintes soluções alternativas de estouro de DEX estão disponíveis. Em determinadas organizações, isso pode exigir trabalhar com quem compila o aplicativo (isto é, a equipe de build do aplicativo):
-* Use o ProGuard para eliminar referências de classes não utilizadas do arquivo DEX primário do aplicativo.
-* Para clientes que usam o v 3.1.0 ou superior do plug-in Android gradle, desabilite o [dexer D8](https://android-developers.googleblog.com/2018/04/android-studio-switching-to-d8-dexer.html).  
+- (Opcional) Às vezes, um aplicativo pode atingir o limite de tamanho do DEX (Dalvik Executable) devido às classes do SDK de MAM do Intune adicionados durante o encapsulamento. Os arquivos DEX fazem parte da compilação de um aplicativo Android. A ferramenta de encapsulamento de aplicativos do Intune manipula automaticamente o estouro de arquivo DEX durante o encapsulamento para aplicativos com um nível de API mínimo de 21 ou superior (a partir de [v. 
+          ](https://github.com/msintuneappsdk/intune-app-wrapping-tool-android/releases)1.0.2501.1 Para aplicativos com um nível de API Mín de < 21, a prática recomendada seria aumentar o nível mínimo de API usando o sinalizador de `-UseMinAPILevelForNativeMultiDex` do wrapper. Para os clientes não conseguirem aumentar o nível de API mínimo do aplicativo, as seguintes soluções alternativas de estouro de DEX estão disponíveis. Em determinadas organizações, isso pode exigir trabalhar com quem compila o aplicativo (isto é, a equipe de build do aplicativo):
+
+  - Use o ProGuard para eliminar referências de classes não utilizadas do arquivo DEX primário do aplicativo.
+  - Para clientes que usam o v 3.1.0 ou superior do plug-in Android gradle, desabilite o [dexer D8](https://android-developers.googleblog.com/2018/04/android-studio-switching-to-d8-dexer.html).  
 
 ## <a name="install-the-app-wrapping-tool"></a>Instalar a ferramenta de encapsulamento de aplicativos
 

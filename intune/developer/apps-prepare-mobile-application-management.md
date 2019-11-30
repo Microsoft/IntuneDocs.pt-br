@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: dbddb0fcecfd5a0b021346a3a20b3c7e4f696a49
-ms.sourcegitcommit: 2c8a41ee95a3fde150667a377770e51b621ead65
+ms.openlocfilehash: 901eaafb24cda185540ffc4b1a56484042af74c1
+ms.sourcegitcommit: 23e9c48348a6eba494d072a2665b7481e5b5c84e
 ms.translationtype: MTE75
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/06/2019
-ms.locfileid: "73635327"
+ms.lasthandoff: 11/26/2019
+ms.locfileid: "74547695"
 ---
 # <a name="prepare-line-of-business-apps-for-app-protection-policies"></a>Preparar aplicativos de linha de negócios para as políticas de proteção de aplicativos
 
@@ -83,9 +83,6 @@ A equipe de desenvolvimento do SDK do Intune testa ativamente e mantém o suport
 ## <a name="feature-comparison"></a>Comparação de recursos
 
 Esta tabela lista as configurações que você pode usar para o SDK do Aplicativo e a Ferramenta de Encapsulamento de Aplicativo.
-
-> [!NOTE]
-> A Ferramenta de Disposição de Aplicativo só pode ser usada quando você estiver usando o Intune autônomo ou o Intune com o Configuration Manager.
 
 |Recurso|SDK do Aplicativo|Ferramenta de Encapsulamento de Aplicativo|
 |-----------|---------------------|-----------|
