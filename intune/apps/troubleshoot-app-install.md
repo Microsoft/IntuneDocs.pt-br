@@ -6,7 +6,7 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 09/04/2019
+ms.date: 11/26/2019
 ms.topic: troubleshooting
 ms.service: microsoft-intune
 ms.subservice: apps
@@ -17,12 +17,12 @@ ms.reviewer: mghadial
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: e1067c8ef23add50c921217b9e4b115346be2951
-ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
+ms.openlocfilehash: 4783d24e3fc25583a61f88c2e7375d4eed673186
+ms.sourcegitcommit: 73b362173929f59e9df57e54e76d19834f155433
 ms.translationtype: MTE75
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/16/2019
-ms.locfileid: "72497052"
+ms.lasthandoff: 11/27/2019
+ms.locfileid: "74563480"
 ---
 # <a name="troubleshoot-app-installation-issues"></a>Solucionar problemas de instalação do aplicativo
 
@@ -32,8 +32,8 @@ Em dispositivos gerenciados pelo MDM do Microsoft Intune, as instalações de ap
 
 O Intune fornece detalhes da solução de problemas do aplicativo, de acordo com os aplicativos instalados no dispositivo de um usuário específico.
 
-1. Conecte-se ao [Intune](https://go.microsoft.com/fwlink/?linkid=2090973).
-3. No painel **Intune**, escolha **Solucionar problemas**.
+1. Entre no [Centro de Administração do Gerenciador de Ponto de Extremidade da Microsoft](https://go.microsoft.com/fwlink/?linkid=2109431).
+3. Selecione **solução de problemas + suporte**.
 4. Clique em **Selecionar usuário** para selecionar um usuário cujos problemas serão solucionados. O painel **Selecionar usuário** será exibido.
 5. Selecione um usuário digitando o nome ou o endereço de email. Clique em **Selecionar**, na parte inferior do painel. As informações da solução de problemas do usuário são exibidas no painel **Solucionar problemas**. 
 6. Selecione na lista **Dispositivos** o dispositivo para o qual você deseja solucionar problemas.
@@ -57,12 +57,12 @@ As ações a seguir devem ser consideradas quando você tiver problemas ao insta
 - Se o aplicativo não for exibido no Portal da Empresa, verifique se o aplicativo está implantado com a intenção **disponível** e se o usuário está acessando o portal da empresa com o tipo de dispositivo com suporte no aplicativo.
 - Para dispositivos Windows BYOD, o usuário precisa adicionar uma conta de trabalho ao dispositivo.
 - Verifique se o usuário está acima do limite de dispositivos do AAD:
-  1. Navegue até [Azure Active Directory configurações do dispositivo](https://portal.azure.com/#blade/Microsoft_AAD_IAM/DevicesMenuBlade/DeviceSettings/menuId).
+  1. Navegue até [Azure Active Directory configurações do dispositivo](https://portal.azure.com/#pane/Microsoft_AAD_IAM/DevicesMenupane/DeviceSettings/menuId).
   2. Anote o valor definido para máximo de **dispositivos por usuário**.
-  3. Navegue até [Azure Active Directory usuários](https://portal.azure.com/#blade/Microsoft_AAD_IAM/UsersManagementMenuBlade/AllUsers).
+  3. Navegue até [Azure Active Directory usuários](https://portal.azure.com/#pane/Microsoft_AAD_IAM/UsersManagementMenupane/AllUsers).
   4. Selecione o usuário afetado e clique em **dispositivos**.
   5. Se o usuário estiver acima do limite definido, exclua os registros obsoletos que não são mais necessários.
-- Para dispositivos do iOS DEP, verifique se o usuário está listado como **registrado pelo usuário** na folha de visão geral do dispositivo do Intune. Se aparecer NA, implante uma política de configuração para o Portal da Empresa do Intune. Para obter mais informações, confira [Configurar o aplicativo do Portal da Empresa](app-configuration-policies-use-ios.md#configure-the-company-portal-app-to-support-ios-dep-devices).
+- Para dispositivos do iOS DEP, verifique se o usuário está listado como **registrado pelo usuário** no painel Visão geral do dispositivo do Intune. Se aparecer NA, implante uma política de configuração para o Portal da Empresa do Intune. Para obter mais informações, confira [Configurar o aplicativo do Portal da Empresa](app-configuration-policies-use-ios.md#configure-the-company-portal-app-to-support-ios-dep-devices).
 
 ## <a name="win32-app-installation-troubleshooting"></a>Solução de problemas de instalação de aplicativo Win32
 
@@ -75,7 +75,7 @@ Selecione o aplicativo Win32 implantado usando a extensão de gerenciamento do I
 
 Para coletar seus logs de instalação de aplicativos do Win32, primeiro siga as etapas apresentadas na seção [Detalhes de solução de problemas do aplicativo](troubleshoot-app-install.md#app-troubleshooting-details). Então continue com as etapas a seguir:
 
-1. Clique na opção **Coletar logs** na folha **Detalhes da instalação**.
+1. Clique na opção **Coletar logs** no painel **Detalhes da instalação**.
 
     <image alt="Win32 app installation details - Collect log option" src="./media/troubleshoot-app-install/troubleshoot-app-install-04.png" width="500" />
 
