@@ -16,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 918468bf8948ce54082f3fccc0325db07e116966
-ms.sourcegitcommit: 28622c5455adfbce25a404de4d0437fa2b5370be
+ms.openlocfilehash: 5a3081ece10bb25c6381f4a8f891152433bc9661
+ms.sourcegitcommit: 73b362173929f59e9df57e54e76d19834f155433
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/07/2019
-ms.locfileid: "73713195"
+ms.lasthandoff: 11/27/2019
+ms.locfileid: "74564391"
 ---
 # <a name="see-device-details-in-intune"></a>Consultar detalhes do dispositivo no Intune
 
@@ -84,7 +84,7 @@ Dependendo da operadora usada pelos dispositivos, nem todos os detalhes podem se
 |ICCID|Identificador de Cartão de Circuito Integrado, o número de identificação exclusivo de um cartão SIM.|Windows, iOS, Android|
 |Data registrada|A data e hora em que o dispositivo foi registrado no Intune.|Windows, iOS, Android|
 |Último contato|A data e hora em que o dispositivo se conectou pela última vez no Intune.|Windows, iOS, Android|
-|Código de bypass do bloqueio de ativação|O código que pode ser usado para ignorar o bloqueio de ativação.|Windows, iOS, Android|
+|Código de bypass do bloqueio de ativação|O código que pode ser usado para ignorar o bloqueio de ativação.|iOS|
 |Azure AD registrado|Se **Sim**, o dispositivo está registrado no diretório do Azure.|Windows, iOS, Android|
 |Registrado no Intune|Se **Sim**, o dispositivo está registrado no Microsoft Intune|Windows, iOS, Android|
 |Conformidade|O estado de conformidade do dispositivo.|Windows, iOS, Android|
