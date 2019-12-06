@@ -6,7 +6,7 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 09/17/2019
+ms.date: 11/20/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.subservice: apps
@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 9c6e519f4f5f31a11bd2e762b9e33357825d783d
-ms.sourcegitcommit: a7c35efb31c4efd816bd4aba29240013965aee92
+ms.openlocfilehash: e7242b661668f994208aa36a8f9fc5d350623ccd
+ms.sourcegitcommit: 2fddb293d37453736ffa54692d03eca642f3ab58
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/13/2019
-ms.locfileid: "73984162"
+ms.lasthandoff: 11/22/2019
+ms.locfileid: "74390388"
 ---
 # <a name="ios-app-protection-policy-settings"></a>Configurações de política de proteção de aplicativo iOS
 [!INCLUDE [azure_portal](../includes/azure_portal.md)]
@@ -46,6 +46,7 @@ Há três categorias de configurações de política: *Relocação de dados*, *R
 | **Restringir recortar, copiar e colar com outros aplicativos** | Especifique quando as ações recortar, copiar e colar podem ser usadas com esse aplicativo. Selecione: <ul><li>**Bloqueado**:  Não permite ações de recortar, copiar e colar entre esse e outros aplicativos.</li><li>**Aplicativos gerenciados por política**: Permita ações de recortar, copiar e colar entre esse aplicativo e outros aplicativos gerenciados por política.</li><li>**Gerenciados por política com colar em**: Permita o recorte ou a cópia entre esse aplicativo e outros aplicativos gerenciados por política. Permita que dados de qualquer aplicativo sejam colados nesse aplicativo.</li><li>**Qualquer aplicativo**: Sem restrições para recortar, copiar e colar para e desse aplicativo.</ul> | **Qualquer aplicativo**   |
 | <ul><ui>**Limite de caracteres de recorte e cópia para qualquer aplicativo** | Especifique o número de caracteres que pode ser cortado ou copiado de dados e contas da organização.  Isso possibilita o compartilhamento do número de caracteres especificado para qualquer aplicativo, independentemente da configuração **Restringir recortar, copiar e colar com outros aplicativos**.<p>Valor padrão = 0<p>**Observação**: *é necessário que o aplicativo tenha o SDK do Intune versão 9.0.14 ou superior.*  | **0**   |
 | **Notificações de dados da organização** | Especifique a quantidade de dados da organização compartilhada por meio de notificações do sistema operacional para as contas da organização. Essa configuração de política afetará o dispositivo local e todos os dispositivos conectados, como dispositivos vestíveis e alto-falantes inteligentes. Os aplicativos podem fornecer controles adicionais para personalizar o comportamento de notificação ou podem optar por não respeitar todos os valores. Selecione: <ul><li>**Bloquear**:  Não compartilhe notificações.</li><ul><li>Se não forem compatíveis com o aplicativo, as notificações serão permitidas.</li></ul><li>**Bloquear dados da organização**: não compartilhe dados da organização em notificações, por exemplo.</li><UL><li>"Você tem um novo email"; "Você tem uma reunião"</li><li>Se não forem compatíveis com o aplicativo, as notificações serão bloqueadas.</li></ul><li>**Permitir**: Compartilha dados da organização nas notificações</li><li>**Qualquer aplicativo**: Sem restrições para recortar, copiar e colar para e desse aplicativo.</ul> <p>**Observação**: *Essa configuração requer suporte do aplicativo. Neste momento, o Outlook para iOS versão 4.16.0 ou posterior oferece suporte a essa configuração, que tem previsão de lançamento para a semana de 16 de dezembro de 2019.* | **Permitir**   |
+| **Bloquear teclados de terceiros** | Escolha **Bloquear** para impedir o uso de teclados de terceiros em aplicativos gerenciados.<p>Quando essa configuração está habilitada, o usuário recebe uma mensagem avulsa informando que o uso de teclados de terceiros está bloqueado. Essa mensagem aparece na primeira vez que o usuário interage com os dados organizacionais que exigem o uso de um teclado. Somente o teclado padrão do iOS está disponível para usar aplicativos gerenciados. Todas as outras opções de teclado estão desabilitadas. Essa configuração afetará as contas pessoais e da organização de aplicativos de várias identidades. Essa configuração não afeta o uso de teclados de terceiros em aplicativos não gerenciados.<p>**Observação:** Este recurso exige que o aplicativo use o SDK do Intune versão 12.0.16 ou posterior. Aplicativos com SDK nas versões 8.0.14 até 12.0.15 (inclusive) não terão esse recurso aplicado corretamente aos aplicativos com várias identidades. Para obter mais detalhes, confira [Problema conhecido: os teclados de terceiros não são bloqueados no iOS para contas pessoais](https://techcommunity.microsoft.com/t5/Intune-Customer-Success/Updated-Known-issue-Third-party-keyboards-are-not-blocked-in-iOS/ba-p/339486). | **Permitir**  |
 
 ### <a name="encryption"></a>Criptografia
 | Setting | Como usar | Valor padrão |

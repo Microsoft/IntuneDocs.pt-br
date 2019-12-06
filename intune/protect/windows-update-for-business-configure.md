@@ -5,22 +5,22 @@ keywords: ''
 author: brenduns
 ms.author: brenduns
 manager: dougeby
-ms.date: 11/19/2019
+ms.date: 11/20/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.subservice: protect
 ms.localizationpriority: high
 ms.technology: ''
-ms.reviewer: aiwang
+ms.reviewer: mghadial
 ms.suite: ems
 search.appverid: MET150
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 53ac86ce88481176ab6f2472b1c0fbae8d3453c1
-ms.sourcegitcommit: 01fb3d844958a0e66c7b87623160982868e675b0
+ms.openlocfilehash: 01866bba0ef47ac807b24a66f773e212c76ff7df
+ms.sourcegitcommit: 1cf063c98e1caae00a6e6fab821cc3254562bca9
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/20/2019
-ms.locfileid: "74199322"
+ms.lasthandoff: 11/21/2019
+ms.locfileid: "74291092"
 ---
 # <a name="manage-windows-10-software-updates-in-intune"></a>Gerenciar atualizações de software do Windows 10 no Intune
 
@@ -208,13 +208,18 @@ Quando um dispositivo recebe uma política de atualizações de recursos do Wind
 
 - Ao contrário de usar *Pausar* com um anel de atualização, que expira após 35 dias, a política de atualizações de recursos do Windows 10 permanece em vigor. Os dispositivos não instalarão uma nova versão do Windows até que você modifique ou remova a política de atualizações de recursos do Windows 10. Se você editar a política para especificar uma versão mais recente, os dispositivos poderão instalar os recursos dessa versão do Windows.
 
-> [!IMPORTANT]
-> Ao implantar uma *Atualização de recurso do Windows 10* e uma política de *Anel de atualização do Windows 10* no mesmo dispositivo, examine as seguintes configurações do anel de atualização:
->
-> - O **Período de adiamento de atualização de recurso (dias)** deve ser definido como **0**
-> - As atualizações de recurso do anel de atualização devem estar *Em execução*. Elas não devem estar em pausa.
+### <a name="limitations-for-windows-10-feature-updates"></a>Limitações para atualizações de recursos do Windows 10
 
-Não há suporte para atualizações de recurso do Windows 10 com o Windows Autopilot.
+- Ao implantar uma política de *atualização de recurso do Windows 10* em um dispositivo que também recebe uma política de *Anel de atualização do Windows 10*, examine as seguintes configurações do anel de política:
+  - O **Período de adiamento de atualização de recurso (dias)** deve ser definido como **0**.
+  - As atualizações de recurso do anel de atualização devem estar *Em execução*. Elas não devem estar em pausa.
+
+- Não há suporte para a política de *atualizações de recursos do Windows 10* com o Windows Autopilot. O Intune não implantará a política para:
+  - Dispositivos provisionados pelo Autopilot.
+  - Dispositivos que eram provisionados anteriormente com o Autopilot.
+
+  Essa limitação está sendo examinada para verificar se ela pode receber suporte no futuro.
+
 
 ### <a name="create-and-assign-windows-10-feature-updates"></a>Criar e atribuir atualizações de recursos do Windows 10
 

@@ -6,7 +6,7 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 08/23/2019
+ms.date: 11/21/2019
 ms.topic: quickstart
 ms.service: microsoft-intune
 ms.subservice: protect
@@ -18,16 +18,16 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: f73bc84be46252cb99a47966b480e585545dde12
-ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
+ms.openlocfilehash: 61fdf91d57ce5d187a0c43153f317b0b42c6b46c
+ms.sourcegitcommit: a7b479c84b3af5b85528db676594bdb3a1ff6ec6
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/16/2019
-ms.locfileid: "72504176"
+ms.lasthandoff: 11/22/2019
+ms.locfileid: "74409781"
 ---
 # <a name="quickstart-create-a-password-compliance-policy-for-android-devices"></a>Início Rápido: Criar uma política de conformidade de senha para dispositivos Android
 
-Neste início rápido, você usará o Microsoft Intune para exigir que os usuários do Android da sua equipe de trabalho insiram uma senha de comprimento específico antes de conceder acesso às informações em seus dispositivos Android. 
+Neste início rápido, você usará o Microsoft Intune para exigir que os usuários do Android da sua equipe de trabalho insiram uma senha de comprimento específico antes de conceder acesso às informações em seus dispositivos Android.
 
 Uma política de conformidade de dispositivos do Intune especifica as regras e configurações que dispositivos precisam cumprir para serem considerados em conformidade. Você pode usar as políticas de conformidade com Acesso Condicional para permitir ou bloquear o acesso aos recursos da empresa. Você também pode obter relatórios de dispositivo e realizar ações de não conformidade.
 
@@ -38,25 +38,33 @@ Se você não tiver uma assinatura do Intune, [inscreva-se para uma conta de ava
 
 ## <a name="sign-in-to-intune"></a>Entrar no Intune
 
-Entre no [Intune](https://aka.ms/intuneportal) como um Administrador Global ou um Administrador de Serviços do Intune. 
+Entre no [Centro de Administração do Gerenciador de Ponto de Extremidade da Microsoft](https://go.microsoft.com/fwlink/?linkid=2109431) como [Administrador global](../fundamentals/users-add.md#types-of-administrators) ou [Administrador de serviços](../fundamentals/users-add.md#types-of-administrators) do Intune.
 
 ## <a name="create-a-device-compliance-policy"></a>Criar uma política de conformidade do dispositivo
 
-Para este início rápido, você usará o Intune para exigir que os usuários do Android da sua equipe de trabalho insiram uma senha de comprimento específico antes de conceder acesso às informações em seus dispositivos Android.
+Crie uma política de conformidade do dispositivo para exigir que os usuários do Android da sua força de trabalho insiram uma senha de um tamanho específico antes de conceder acesso às informações nos dispositivos Android.
 
-1. No Intune, selecione **Conformidade do dispositivo** > **Políticas** > **Criar política**.
+1. No Intune, selecione **Dispositivos** > **Políticas de conformidade** > **Criar Política**.
+
 2. Adicione **Conformidade do Android** como o **Nome**. Além disso, adicione uma **Descrição**.
-3. Para **Plataforma**, selecione **Android**. 
-4. Selecione **Configurações** > **Segurança do Sistema** para exibir a folha **Segurança do Sistema** do Android.
-5. Clique em **Exigir** ao lado de **Exigir uma senha para desbloquear dispositivos móveis**.
-6. Selecione **Ao menos numérico** ao lado de **Tipo de senha obrigatório**.
-7. Insira **6** ao lado de **Comprimento mínimo da senha**. 
+
+3. Para **Plataforma**, selecione **Android Enterprise**.
+
+4. Em **Tipo de perfil**, selecione **Perfil de trabalho**.
+
+5. Selecione **Configurações** > **Segurança do Sistema** para exibir a folha **Segurança do Sistema** do Android.
+
+6. Em **Exigir uma senha para desbloquear os dispositivos móveis**, selecione **Exigir**.
+
+7. Em **Tipo de senha necessária**, selecione **Ao menos numérico**.
+
+8. Em **Tamanho mínimo da senha**, insira **6**.
 
     ![Captura de tela da criação de um grupo no Microsoft Intune](./media/quickstart-set-password-length-android/quickstart-set-password-length-android-01.png)
 
-7. Quando terminar, clique em **Ok** > **Ok** > **Criar** para criar a política.
+9. Quando terminar, selecione **OK** > **OK** > **Criar** para criar a política.
 
-Após criar a política com êxito, ela aparecerá na sua lista de políticas de conformidade do dispositivo. 
+Depois de criada, a política aparecerá na sua lista de políticas de conformidade do dispositivo.
 
 ## <a name="clean-up-resources"></a>Limpar os recursos
 

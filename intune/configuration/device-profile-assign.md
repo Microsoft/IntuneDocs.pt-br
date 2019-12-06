@@ -5,7 +5,7 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 11/05/2019
+ms.date: 11/20/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.subservice: configuration
@@ -17,27 +17,25 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: ae8bc7d5797a2ba6404331166e9d955bbb2fadf9
-ms.sourcegitcommit: 78cebd3571fed72a3a99e9d33770ef3d932ae8ca
+ms.openlocfilehash: 275b3961e87f0d0eda8299337fe3fb7ac89ef03b
+ms.sourcegitcommit: 1a22b8b31424847d3c86590f00f56c5bc3de2eb5
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/13/2019
-ms.locfileid: "74059593"
+ms.lasthandoff: 11/21/2019
+ms.locfileid: "74261683"
 ---
 # <a name="assign-user-and-device-profiles-in-microsoft-intune"></a>Atribuir perfis de usuário e dispositivo no Microsoft Intune
-
-[!INCLUDE [azure_portal](../includes/azure_portal.md)]
 
 Você cria um perfil e ele inclui todas as configurações inseridas. A próxima etapa é implantar ou "atribuir" o perfil aos grupos de usuário ou de dispositivos do Azure Active Directory (Azure AD). Quando atribuído, os usuários e os dispositivos recebem seu perfil e as configurações inseridas são aplicadas.
 
 Este artigo mostra como atribuir um perfil e inclui algumas informações sobre como usar marcas de escopo em seus perfis.
 
 > [!NOTE]  
-> Quando uma política é removida ou não está mais atribuída a um dispositivo, a configuração pode manter o valor existente. A configuração não é revertida para um valor padrão. Para alterar a configuração para um valor diferente, crie uma nova política e a atribua.
+> Quando um perfil é removido ou não está mais atribuído a um dispositivo, a configuração pode manter o valor existente. A configuração não é revertida para um valor padrão. Para alterar a configuração para um valor diferente, crie um novo perfil e o atribua.
 
 ## <a name="before-you-begin"></a>Antes de começar
 
-Verifique se você tem a função apropriada para atribuir políticas. Para obter mais informações, confira [RBAC (controle de acesso baseado em função) com o Microsoft Intune](../fundamentals/role-based-access-control.md).
+Verifique se você tem a função apropriada para atribuir perfis. Para obter mais informações, confira [RBAC (controle de acesso baseado em função) com o Microsoft Intune](../fundamentals/role-based-access-control.md).
 
 ## <a name="assign-a-device-profile"></a>Atribuir um perfil de dispositivo
 
@@ -63,17 +61,49 @@ Se o botão **Avaliar** estiver desabilitado, verifique se o perfil foi atribuí
 
 Ao criar ou atualizar um perfil, também é possível adicionar marcas de escopo e regras de aplicabilidade a ele.
 
-As **marcas de escopo** são uma ótima maneira de atribuir e filtrar políticas para grupos específicos, como Recursos humanos ou Todos os funcionários de determinado local geográfico. Saiba mais em [Usar o RBAC e marcas de escopo na TI distribuída](../fundamentals/scope-tags.md).
+As **marcas de escopo** são uma ótima maneira de atribuir e filtrar perfis para grupos específicos, como Recursos humanos ou Todos os funcionários de determinado local geográfico. Saiba mais em [Usar o RBAC e marcas de escopo na TI distribuída](../fundamentals/scope-tags.md).
 
 Em dispositivos com Windows 10, você pode adicionar **regras de aplicabilidade** para que o perfil se aplique apenas a uma versão específica do sistema operacional ou a uma edição específica do Windows. Saiba mais nas [regras de aplicabilidade](device-profile-create.md#applicability-rules).
 
+## <a name="user-groups-vs-device-groups"></a>Grupos de usuários X grupos de dispositivos
+
+Muitos usuários perguntam quando devem usar grupos de usuários e quando devem usar grupos de dispositivos. A resposta depende da sua meta. Confira algumas diretrizes para começar.
+
+### <a name="device-groups"></a>Grupos de dispositivos
+
+Se você quiser aplicar as configurações em um dispositivo, independentemente de quem está conectado, atribua seus perfis a um grupo de dispositivos. As configurações aplicadas aos grupos de dispositivos sempre acompanham o dispositivo, não o usuário.
+
+Por exemplo:
+
+- Os grupos de dispositivos são úteis para gerenciar dispositivos sem um usuário dedicado. Por exemplo, você tem dispositivos que imprimem tíquetes, verificam inventários, são compartilhados por operadores de turno, são atribuídos a um depósito específico e assim por diante. Coloque esses dispositivos em um grupo de dispositivos e atribua seus perfis a esse grupo de dispositivos.
+
+- Crie um [perfil do Intune para a DFCI (Interface de Configuração de Firmware do Dispositivo)](device-firmware-configuration-interface-windows.md) que atualiza as configurações no BIOS. Por exemplo, você configura esse perfil para desabilitar a câmera do dispositivo ou bloquear as opções de inicialização para impedir que os usuários inicializem outro sistema operacional. Esse perfil é um bom cenário para atribuir a um grupo de dispositivos.
+
+- Em alguns dispositivos Windows específicos, você sempre deseja controlar algumas configurações do Microsoft Edge, independentemente de quem usa o dispositivo. Por exemplo, você deseja bloquear todos os downloads, limitar todos os cookies para a sessão de navegação atual e excluir o histórico de navegação. Nesse cenário, coloque esses dispositivos Windows específicos em um grupo de dispositivos. Em seguida, crie um [Modelo administrativo no Intune](administrative-templates-windows.md), adicione essas configurações de dispositivo e atribua esse perfil ao grupo de dispositivos.
+
+Para resumir, use grupos de dispositivos quando você não se importa com quem está conectado no dispositivo ou se alguém está conectado. Você quer que essas configurações sempre estejam no dispositivo.
+
+### <a name="user-groups"></a>Grupos de usuários
+
+As configurações de perfis aplicadas a grupos de usuários sempre acompanham o usuário quando ele entra em seus vários dispositivos. É normal que os usuários tenham muitos dispositivos, como um Surface Pro para trabalhar e um dispositivo iOS pessoal. E é normal que a pessoa acesse email e outros recursos da organização nesses dispositivos.
+
+Por exemplo:
+
+- Você deseja colocar um ícone de Suporte técnico para todos os usuários em todos os dispositivos deles. Nesse cenário, coloque esses usuários em um grupo de usuários e atribua o perfil do ícone de Suporte técnico a esse grupo de usuários.
+- Um usuário recebe um novo dispositivo de propriedade da organização. O usuário entra no dispositivo com a conta de domínio dele. O dispositivo é registrado automaticamente no Azure AD e é gerenciado automaticamente pelo Intune. Esse perfil é um bom cenário para atribuir a um grupo de usuários.
+- Sempre que um usuário entra em um dispositivo, você deseja controlar recursos em aplicativos, como OneDrive ou Office. Nesse cenário, atribua as configurações de perfil do OneDrive ou do Office a um grupo de usuários.
+
+  Por exemplo, você deseja bloquear controles ActiveX não confiáveis em aplicativos do Office. Você pode criar um [Modelo administrativo no Intune](administrative-templates-windows.md), definir essas configurações e atribuir esse perfil ao grupo de dispositivos.
+
+Para resumir, use grupos de usuários quando desejar que suas configurações e regras sempre acompanhem o usuário em qualquer dispositivo que ele usar.
+
 ## <a name="exclude-groups-from-a-profile-assignment"></a>Excluir grupos de uma atribuição de perfil
 
-Os perfis de configuração de dispositivo do Intune permitem que você inclua e exclua grupos da atribuição de política.
+Os perfis de configuração de dispositivo do Intune permitem que você inclua e exclua grupos da atribuição de perfis.
 
-Como prática recomendada, crie e atribua políticas especificamente para seus grupos de usuários. Além disso, crie e atribua políticas diferentes especificamente para seus grupos de dispositivos. Para obter mais informações dos grupos, confira [Adicionar grupos para organizar usuários e dispositivos](../fundamentals/groups-add.md).
+Como prática recomendada, crie e atribua perfis especificamente para os seus grupos de usuários. Além disso, crie e atribua perfis diferentes especificamente para os seus grupos de dispositivos. Para obter mais informações dos grupos, confira [Adicionar grupos para organizar usuários e dispositivos](../fundamentals/groups-add.md).
 
-Ao atribuir suas políticas, use a tabela abaixo para incluir e excluir grupos. Uma marca de seleção significa que há suporte para a atribuição:
+Ao atribuir perfis, use a tabela abaixo para incluir e excluir grupos. Uma marca de seleção significa que há suporte para a atribuição:
 
 ![as opções com suporte incluem ou excluem grupos de uma atribuição de perfil](./media/device-profile-assign/include-exclude-user-device-groups.png)
 
@@ -84,13 +114,13 @@ Ao atribuir suas políticas, use a tabela abaixo para incluir e excluir grupos. 
   - Incluir grupos de usuários e excluir grupos de usuários
   - Incluir grupos de dispositivos e excluir grupo de dispositivos
 
-  Por exemplo, você pode atribuir um perfil de dispositivo ao grupo de usuários **Todos os usuários corporativos**, mas excluir os membros do grupo de usuários **Equipe de gerenciamento sênior**. Como ambos os grupos são grupos de usuários, **Todos os usuários corporativos**, exceto a **Equipe de gerenciamento sênior**, recebe a política.
+  Por exemplo, você pode atribuir um perfil de dispositivo ao grupo de usuários **Todos os usuários corporativos**, mas excluir os membros do grupo de usuários **Equipe de gerenciamento sênior**. Como ambos os grupos são grupos de usuários, **Todos os usuários corporativos**, exceto a **Equipe de gerenciamento sênior**, recebe o perfil.
 
-- O Intune não avalia as relações de grupo de usuário para dispositivo. Se você atribuir políticas a grupos mistos, os resultados poderão não ser o que você deseja ou espera.
+- O Intune não avalia as relações de grupo de usuário para dispositivo. Se você atribuir perfis a grupos mistos, os resultados poderão não ser o que você deseja ou espera.
 
-  Por exemplo, você atribui um perfil de dispositivo ao grupo de usuários **todos os usuários**, mas exclui um grupo de dispositivos **Todos os dispositivos pessoais**. Nessa atribuição de política de grupo mista, **Todos os usuários** recebe a política. A exclusão não é aplicada.
+  Por exemplo, você atribui um perfil de dispositivo ao grupo de usuários **todos os usuários**, mas exclui um grupo de dispositivos **Todos os dispositivos pessoais**. Nessa atribuição de perfil de grupo misto, a opção **Todos os usuários** recebe a política. A exclusão não é aplicada.
 
-  Como resultado, não é recomendável atribuir políticas a grupos mistos.
+  Como resultado, não é recomendável atribuir perfis a grupos mistos.
 
 ## <a name="next-steps"></a>Próximas etapas
 

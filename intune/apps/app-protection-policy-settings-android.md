@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: b346f41f5198a4aabcb05dcdd4b35a8c56977f53
-ms.sourcegitcommit: 78cebd3571fed72a3a99e9d33770ef3d932ae8ca
+ms.openlocfilehash: c420446d9293ae2a2d1905dcff218056e8e6c875
+ms.sourcegitcommit: 16a9109b4028589c17695d41271ca4fee8b1d697
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/13/2019
-ms.locfileid: "74059771"
+ms.lasthandoff: 11/26/2019
+ms.locfileid: "74540709"
 ---
 # <a name="android-app-protection-policy-settings-in-microsoft-intune"></a>Configurações da política de proteção de aplicativo Android no Microsoft Intune
 Este artigo descreve as configurações de política de proteção de aplicativo para dispositivos Android. As configurações de política descritas podem ser [configuradas](app-protection-policies.md) para uma política de proteção de aplicativo na folha **Configurações** no Portal do Azure.
@@ -66,7 +66,7 @@ Há três categorias de configurações de política: configurações de proteç
 
 ## <a name="data-transfer-exemptions"></a>Isenções de transferência de dados
 
-  Há algumas isenções de aplicativos e serviços de plataforma em que a política de proteção de aplicativo do Intune pode permitir a transferência de dados de/para eles. Por exemplo, todos os aplicativos gerenciados pelo Intune no Android devem ser capazes de transferir dados de e para a conversão de texto em fala do Google, para que o texto da tela de seu dispositivo móvel possa ser lido em voz alta. Esta lista está sujeita a alterações e reflete os serviços e os aplicativos considerados úteis para produtividade segura.
+  Há algumas isenções de aplicativos e serviços de plataforma em que as políticas de proteção de aplicativo do Intune podem permitir a transferência de dados de/para eles. Por exemplo, todos os aplicativos gerenciados pelo Intune no Android devem ser capazes de transferir dados de e para a conversão de texto em fala do Google, para que o texto da tela de seu dispositivo móvel possa ser lido em voz alta. Esta lista está sujeita a alterações e reflete os serviços e os aplicativos considerados úteis para produtividade segura.
 
 ### <a name="full-exemptions"></a>Isenções completas
 

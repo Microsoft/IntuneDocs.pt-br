@@ -5,23 +5,23 @@ keywords: ''
 author: brenduns
 ms.author: brenduns
 manager: dougeby
-ms.date: 10/28/2019
+ms.date: 11/21/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.subservice: protect
 ms.localizationpriority: high
 ms.technology: ''
 ms.assetid: ''
-ms.reviewer: joglocke
+ms.reviewer: shpate
 ms.suite: ems
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 53014376a7e220e975878031ffd759da40db7f6b
-ms.sourcegitcommit: 60f0ff6d2efbae0f2ce14b9a9f3f9267309e209b
+ms.openlocfilehash: 1d3a2ce9e5a31e989452141a094b70b5e75cf464
+ms.sourcegitcommit: a7b479c84b3af5b85528db676594bdb3a1ff6ec6
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/01/2019
-ms.locfileid: "73413833"
+ms.lasthandoff: 11/22/2019
+ms.locfileid: "74409980"
 ---
 # <a name="use-security-baselines-to-configure-windows-10-devices-in-intune"></a>Usar linhas de base de segurança para configurar dispositivos com Windows 10 no Intune
 
@@ -75,13 +75,13 @@ As instâncias de linhas de base de segurança a seguir estão disponíveis para
   - [Versão prévia: Linha de base de segurança do MDM para outubro de 2018](security-baseline-settings-mdm-all.md?pivots=mdm-preview)
 
 - **Linha de base da ATP do Microsoft Defender**
-   *(Para usar essa linha de base, seu ambiente precisa atender aos pré-requisitos para o uso da [Proteção Avançada contra Ameaças do Microsoft Defender](advanced-threat-protection.md#prerequisites))*.
+   *(Para usar essa linha de base, seu ambiente precisa atender aos pré-requisitos para o uso da [Proteção Avançada contra Ameaças do Microsoft Defender](advanced-threat-protection.md#prerequisites))* .
   - [Linha de base da ATP do Microsoft Defender](security-baseline-settings-defender-atp.md)
 
   > [!NOTE]
   > A linha de base de segurança do Microsoft Defender ATP foi otimizada para dispositivos físicos e, atualmente, não é recomendada para uso em VMs (máquinas virtuais) ou pontos de extremidade VDI. Algumas configurações de linha de base podem afetar as sessões interativas remotas em ambientes virtualizados.  Para obter mais informações, confira [Aumentar a conformidade com a linha de base de segurança do Microsoft Defender ATP](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/configure-machines-security-baseline) na documentação do Windows.
 
-- **Linha de base do Microsoft Edge** 
+- **Linha de base do Microsoft Edge**
   - [Versão prévia: linha de base do Microsoft Edge](security-baseline-settings-edge.md)
 
 Você pode continuar a usar e editar perfis criados anteriormente com base em um modelo de visualização, mesmo quando esse modelo de visualização não estiver mais disponível para criar novos perfis.
@@ -103,13 +103,15 @@ As tarefas comuns ao trabalhar com linhas de base de segurança incluem:
 
 ### <a name="create-the-profile"></a>Criar o perfil
 
-1. Entre no [Intune](https://go.microsoft.com/fwlink/?linkid=2090973) e selecione **Segurança do dispositivo** > **Linhas de base de segurança** para visualizar a lista de linhas de base disponíveis.
+1. Entre no [Centro de Administração do Gerenciador de Ponto de Extremidade da Microsoft](https://go.microsoft.com/fwlink/?linkid=2109431).
+
+2. Selecione **Segurança de ponto de extremidade** > **Linhas de base de segurança** para ver a lista de linhas de base disponíveis.
 
    ![Selecione uma linha de base de segurança para configurar](./media/security-baselines/available-baselines.png)
 
-2. Selecione a linha de base que você quer usar e selecione **Criar perfil**.
+3. Selecione a linha de base que você quer usar e selecione **Criar perfil**.
 
-3. Na guia **Básico**, especifique as seguintes propriedades:
+4. Na guia **Básico**, especifique as seguintes propriedades:
 
    - **Nome**: Insira um nome para seu perfil de linhas de base de segurança. Por exemplo, digite *Perfil padrão para Defender ATP*.
 
@@ -117,7 +119,7 @@ As tarefas comuns ao trabalhar com linhas de base de segurança incluem:
 
    Selecione **Avançar** para ir até a próxima guia. Depois de avançar para uma nova guia, você pode selecionar o nome da guia a fim de retornar a uma guia visualizada anteriormente.
 
-4. Na guia Configurações, visualize os grupos de **Configurações** disponíveis na linha de base selecionada. É possível expandir um grupo para ver as configurações dele e os valores padrão dessas configurações na linha de base. Para localizar configurações específicas:
+5. Na guia Configurações, visualize os grupos de **Configurações** disponíveis na linha de base selecionada. É possível expandir um grupo para ver as configurações dele e os valores padrão dessas configurações na linha de base. Para localizar configurações específicas:
    - Selecione um grupo para expandir e verificar as configurações disponíveis.
    - Use a barra *Pesquisar* e especifique as palavras-chave que filtram a exibição para exibir apenas os grupos que contêm seus critérios de pesquisa.
 
@@ -125,13 +127,13 @@ As tarefas comuns ao trabalhar com linhas de base de segurança incluem:
 
    ![Expanda um grupo para exibir as configurações dele](./media/security-baselines/sample-list-of-settings.png)
 
-5. Na guia **Marcas de escopo**, selecione **Selecionar marcas de escopo** para abrir o painel *Selecionar marcas* e atribuir marcas de escopo ao perfil.
+6. Na guia **Marcas de escopo**, selecione **Selecionar marcas de escopo** para abrir o painel *Selecionar marcas* e atribuir marcas de escopo ao perfil.
 
-6. Na guia **Atribuições**, selecione **Selecionar grupos para incluir** e atribua a linha de base a um ou mais grupos. Use **Selecionar grupos para excluir** a fim de ajustar a atribuição.
+7. Na guia **Atribuições**, selecione **Selecionar grupos para incluir** e atribua a linha de base a um ou mais grupos. Use **Selecionar grupos para excluir** a fim de ajustar a atribuição.
 
    ![Atribuir um perfil](./media/security-baselines/assignments.png)
 
-7. Quando estiver pronto para implantar a linha de base, avance até a guia **Revisar + criar** para examinar os detalhes da linha de base. Selecione **Criar** para salvar e implantar o perfil.
+8. Quando estiver pronto para implantar a linha de base, avance até a guia **Revisar + criar** para examinar os detalhes da linha de base. Selecione **Criar** para salvar e implantar o perfil.
 
    Assim que você criar o perfil, ele será enviado ao grupo atribuído e poderá ser aplicado imediatamente.
 
@@ -140,7 +142,7 @@ As tarefas comuns ao trabalhar com linhas de base de segurança incluem:
 
    ![Revisar a linha de base](./media/security-baselines/review.png)
 
-8. Depois de criar o perfil, edite-o acessando **Segurança do Dispositivo** > **Linhas de base de segurança**, depois selecione o tipo da linha de base que você configurou e selecione **Perfis**. Selecione o perfil na lista de perfis disponíveis e, em seguida, selecione **Propriedades**. Você pode editar as configurações de todas as guias de configuração disponíveis e selecionar **Revisar + salvar** para confirmar suas alterações.
+9. Depois de criar o perfil, edite-o acessando **Segurança do Dispositivo** > **Linhas de base de segurança**, depois selecione o tipo da linha de base que você configurou e selecione **Perfis**. Selecione o perfil na lista de perfis disponíveis e, em seguida, selecione **Propriedades**. Você pode editar as configurações de todas as guias de configuração disponíveis e selecionar **Revisar + salvar** para confirmar suas alterações.
 
 ### <a name="change-the-baseline-version-for-a-profile"></a>Alterar a versão de linha de base para um perfil
 
@@ -160,25 +162,27 @@ Depois de salvar, após a conclusão da conversão, a linha de base é reimplant
 
 #### <a name="to-change-the-baseline-version-for-a-profile"></a>Para alterar a versão da linha de base de um perfil
 
-1. Entre no [Intune](https://go.microsoft.com/fwlink/?linkid=2090973) e selecione **Segurança do dispositivo** > **Linhas de base de segurança**, depois selecione o bloco para o tipo de linha de base que tem o perfil que você deseja alterar.
+1. Entre no [Centro de Administração do Gerenciador de Ponto de Extremidade da Microsoft](https://go.microsoft.com/fwlink/?linkid=2109431). 
 
-2. Em seguida, selecione **Perfis**, marque a caixa de seleção do perfil que você quer editar e selecione **Alterar Versão**.
+2. Selecione **Segurança de ponto de extremidade** > **Linhas de base de segurança**, e selecione o bloco do tipo de linha de base com o perfil que você deseja alterar.
+
+3. Em seguida, selecione **Perfis**, marque a caixa de seleção do perfil que você quer editar e selecione **Alterar Versão**.
 
    ![selecionar uma linha de base](./media/security-baselines/select-baseline.png)
 
-3. No painel **​​Alterar Versão**, use o menu suspenso **Selecionar uma linha de base de segurança para a qual atualizar** e selecione a instância da versão que você deseja usar.
+4. No painel **​​Alterar Versão**, use o menu suspenso **Selecionar uma linha de base de segurança para a qual atualizar** e selecione a instância da versão que você deseja usar.
 
    ![selecionar uma versão](./media/security-baselines/select-instance.png)
 
-4. Selecione **Revisar atualização** para fazer o download de um arquivo CSV que exiba a diferença entre a versão da instância atual do perfil e a nova versão que você selecionou. Revise esse arquivo para entender quais configurações são novas ou foram removidas e quais são os valores padrão para essas configurações no perfil atualizado.
+5. Selecione **Revisar atualização** para fazer o download de um arquivo CSV que exiba a diferença entre a versão da instância atual do perfil e a nova versão que você selecionou. Revise esse arquivo para entender quais configurações são novas ou foram removidas e quais são os valores padrão para essas configurações no perfil atualizado.
 
    Quando estiver pronto, prossiga para a próxima etapa.
 
-5. Escolha uma das duas opções para **Selecionar um método para atualizar o perfil**:
+6. Escolha uma das duas opções para **Selecionar um método para atualizar o perfil**:
    - **Aceitar alterações de linha de base, mas manter minhas personalizações de configuração existentes** – Essa opção mantém as personalizações feitas no perfil da linha de base e as aplica à nova versão selecionada para uso.
    - **Aceitar alterações de linha de base e descartar personalizações de configurações existentes** – Esta opção substitui completamente o seu perfil original. O perfil atualizado usará os valores padrão para todas as configurações.
 
-6. Selecione **Enviar**. O perfil é atualizado para a versão de linha de base selecionada e, após a conclusão da conversão, a linha de base é imediatamente reimplementada aos grupos atribuídos.
+7. Selecione **Enviar**. O perfil é atualizado para a versão de linha de base selecionada e, após a conclusão da conversão, a linha de base é imediatamente reimplementada aos grupos atribuídos.
 
 ### <a name="remove-a-security-baseline-assignment"></a>Remover uma atribuição de linha de base de segurança
 

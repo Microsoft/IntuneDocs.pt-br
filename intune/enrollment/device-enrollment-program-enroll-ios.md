@@ -18,20 +18,18 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 99d946366724b03ecdf5c47d8ba7b1d820ed3055
-ms.sourcegitcommit: 15e099a9a1e18296580bb345610aee7cc4acd126
+ms.openlocfilehash: 55fc7149d23336519af76c423862bd81f065b88f
+ms.sourcegitcommit: cdb2a484b059bd8d8c3985cde1e883c24a4c1cad
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/18/2019
-ms.locfileid: "74164723"
+ms.lasthandoff: 11/20/2019
+ms.locfileid: "74239226"
 ---
 # <a name="automatically-enroll-ios-devices-with-apples-device-enrollment-program"></a>Registrar automaticamente dispositivos iOS com o Programa de registro de dispositivos da Apple
 
 Configure o Intune para inscrever dispositivos iOS comprados por meio do [DEP (Programa de registro de dispositivos)](https://deploy.apple.com) da Apple. O DEP permite registrar um grande número de dispositivos sem nunca precisar tocá-los. Dispositivos como iPhones e iPads podem ser enviados diretamente aos usuários. Quando o usuário liga o dispositivo, o Assistente de Configuração é executado com as configurações predefinidas e o dispositivo é registrado no gerenciamento.
 
-Para habilitar o registro de DEP, você pode usar ambos os portais do Intune e do Apple DEP. É necessária uma lista de números de série ou um número de ordem de compra para que você possa atribuir os dispositivos ao Intune para gerenciamento. Você cria perfis de registro de DEP que contém configurações aplicadas aos dispositivos durante o registro.
-
-A propósito, o registro de DEP não funciona com o [gerenciador de registros de dispositivo](device-enrollment-manager-enroll.md).
+Para habilitar o registro de DEP, você pode usar ambos os portais do Intune e do Apple DEP. É necessária uma lista de números de série ou um número de ordem de compra para que você possa atribuir os dispositivos ao Intune para gerenciamento. Você cria perfis de registro de DEP que contém configurações aplicadas aos dispositivos durante o registro. Observe que o registro de DEP não pode ser usado com uma conta do [gerenciador de registro de dispositivos](device-enrollment-manager-enroll.md).
 
 > [!NOTE]
 > O DEP define as configurações de dispositivo que não podem ser removidas pelo usuário final. Portanto, antes de [migrar para DEP](../fundamentals/migration-guide-considerations.md), o dispositivo deve ser apagado para retornar a um estado pronto para uso (novo).

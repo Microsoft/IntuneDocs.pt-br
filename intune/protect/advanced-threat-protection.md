@@ -16,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 889b0a7562f1a663556e955271681e0747aeb3c4
-ms.sourcegitcommit: 01fb3d844958a0e66c7b87623160982868e675b0
+ms.openlocfilehash: c8c756ad2df00a97df7289491daf830e584c0045
+ms.sourcegitcommit: a7b479c84b3af5b85528db676594bdb3a1ff6ec6
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/20/2019
-ms.locfileid: "74199179"
+ms.lasthandoff: 11/22/2019
+ms.locfileid: "74410203"
 ---
 # <a name="enforce-compliance-for-microsoft-defender-atp-with-conditional-access-in-intune"></a>Impor a conformidade da ATP do Microsoft Defender com Acesso Condicional no Intune
 
@@ -193,6 +193,12 @@ Em seguida, monitore o estado de dispositivos com a política de conformidade da
 2. Selecione **Dispositivos** > **Monitor** > **Conformidade da política**.
 
 3. Localize sua política da ATP do Microsoft Defender na lista e veja quais dispositivos são compatíveis ou não.
+
+Você também pode usar o relatório *operacional* para dispositivos fora de conformidade do mesmo local:
+
+1. Selecione **Dispositivos** > **Monitorar** > **Dispositivos fora de conformidade**.
+
+Para obter mais informações sobre relatórios, confira [Relatórios do Intune](../fundamentals/reports.md).
 
 ## <a name="view-onboarding-status"></a>Exibir o status da integração
 

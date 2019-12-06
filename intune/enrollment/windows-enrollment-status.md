@@ -6,7 +6,7 @@ keywords: ''
 author: ErikjeMS
 ms.author: erikje
 manager: dougeby
-ms.date: 11/13/2019
+ms.date: 11/26/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.subservice: enrollment
@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 6f9c09105ab7286eb315c6bf0f04f1801706bfa8
-ms.sourcegitcommit: 78cebd3571fed72a3a99e9d33770ef3d932ae8ca
+ms.openlocfilehash: e81b8dc4938ea080018efae97093bb5e70dbcde8
+ms.sourcegitcommit: 23e9c48348a6eba494d072a2665b7481e5b5c84e
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/13/2019
-ms.locfileid: "74059697"
+ms.lasthandoff: 11/26/2019
+ms.locfileid: "74548010"
 ---
 # <a name="set-up-an-enrollment-status-page"></a>Configurar uma Página de status de registro
  
@@ -64,14 +64,14 @@ Também é possível definir a ordem de prioridade de cada perfil, de modo a lev
 
 Para ativar a Página de status de registro, siga as etapas abaixo.
  
-1. No [Centro de Administração do Gerenciador de Ponto de Extremidade da Microsoft](https://go.microsoft.com/fwlink/?linkid=2109431), selecione **Registro de dispositivos** > **Registro do Windows** > **Página de status de registro**.
+1. No [Centro de Administração do Gerenciador de Ponto de Extremidade da Microsoft](https://go.microsoft.com/fwlink/?linkid=2109431), escolha **Dispositivos** > **Windows** > **Registro do Windows** > **Página de Status de Registro**.
 2. Na folha **Página de Status de Registro**, escolha **Padrão** > **Configurações**.
 3. Para **Mostrar o progresso da instalação do aplicativo e do perfil**, escolha **Sim**.
 4. Escolha as outras configurações que você deseja ativar e, em seguida, escolha **Salvar**.
 
 ## <a name="create-enrollment-status-page-profile-and-assign-to-a-group"></a>Criar perfil da Página de status de registro e atribuir a um grupo
 
-1. No [Centro de Administração do Gerenciador de Ponto de Extremidade da Microsoft](https://go.microsoft.com/fwlink/?linkid=2109431), selecione **Registro de dispositivos** > **Registro do Windows** > **Página de status de registro** > **Criar perfil**.
+1. No [Centro de Administração do Gerenciador de Ponto de Extremidade da Microsoft](https://go.microsoft.com/fwlink/?linkid=2109431), escolha **Dispositivos** > **Windows** > **Registro do Windows** > **Página de Status de Registro** > **Criar perfil**.
 2. Forneça um **Nome** e uma **Descrição**.
 3. Escolha **Criar**.
 4. Escolha o novo perfil na lista **Página de status de registro**.
@@ -82,7 +82,7 @@ Para ativar a Página de status de registro, siga as etapas abaixo.
 
 Os usuários podem estar em vários grupos e ter vários perfis da Página de status de registro. Para lidar com esses conflitos, defina as prioridades de cada perfil. Durante o registro, se alguém tiver mais de um perfil da Página de status de registro, apenas o perfil com a prioridade mais alta será aplicado ao dispositivo que está sendo registrado.
 
-1. No [Centro de Administração do Gerenciador de Ponto de Extremidade da Microsoft](https://go.microsoft.com/fwlink/?linkid=2109431), selecione **Registro de dispositivos** > **Registro do Windows** > **Página de status de registro**.
+1. No [Centro de Administração do Gerenciador de Ponto de Extremidade da Microsoft](https://go.microsoft.com/fwlink/?linkid=2109431), escolha **Dispositivos** > **Windows** > **Registro do Windows** > **Página de Status de Registro**.
 2. Focalize o perfil na lista.
 3. Usando os três pontos verticais, arraste o perfil para a posição desejada na lista.
 
@@ -90,7 +90,7 @@ Os usuários podem estar em vários grupos e ter vários perfis da Página de st
 
 Você pode especificar quais aplicativos precisam ser instalados antes de o usuário poder acessar a área de trabalho.
 
-1. No [Centro de Administração do Gerenciador de Ponto de Extremidade da Microsoft](https://go.microsoft.com/fwlink/?linkid=2109431), selecione **Registro de dispositivos** > **Registro do Windows** > **Página de status de registro**.
+1. No [Centro de Administração do Gerenciador de Ponto de Extremidade da Microsoft](https://go.microsoft.com/fwlink/?linkid=2109431), escolha **Dispositivos** > **Windows** > **Registro do Windows** > **Página de Status de Registro**.
 2. Escolha um perfil > **Configurações**.
 3. Escolha **Sim** para **Mostrar o andamento da instalação do perfil e de aplicativos**.
 4. Escolha **Sim** para **Bloquear o uso do dispositivo até que todos os perfis e aplicativos estejam instalados**.

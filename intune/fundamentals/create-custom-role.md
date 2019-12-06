@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure; get-started
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: b60e4d801d09a834e11119260d3054cf43251bbd
-ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
+ms.openlocfilehash: 3ca83287c58f8d2fb7c8eec5f8cc793e2c67b77a
+ms.sourcegitcommit: 2fddb293d37453736ffa54692d03eca642f3ab58
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/16/2019
-ms.locfileid: "72502966"
+ms.lasthandoff: 11/22/2019
+ms.locfileid: "74390695"
 ---
 # <a name="create-a-custom-role-in-intune"></a>Criar uma função personalizada no Intune
 
@@ -49,6 +49,21 @@ Para criar, editar ou atribuir funções, sua conta deve ter uma das seguintes p
 7. Quando terminar, escolha **OK**.
 
 8. Na folha **Adicionar Função Personalizada**, clique em **Criar**. A nova função é exibida na lista na folha **Funções do Intune – Todas as funções**.
+
+
+## <a name="copy-a-role"></a>Copiar uma função
+
+Você também pode copiar uma função existente.
+
+1. Entre no [portal do Azure](https://portal.azure.com) com suas credenciais do Intune e selecione **Intune**.
+
+2. Selecione **Funções** > **Todas as funções** > selecione uma função na lista > **Duplicar**.
+
+3. Em **Duplicar função**, insira um nome. Use um nome exclusivo.
+
+4. Todas as permissões e marcas de escopo da função original já estarão selecionadas. Você pode alterar posteriormente o **Nome**, a **Descrição**, as **Permissões** e o **Escopo (Marcas)** da função duplicada.
+
+5. Selecione **Criar**. 
 
 ## <a name="next-steps"></a>Próximas etapas
 - [Atribuir uma função a um usuário](assign-role.md)

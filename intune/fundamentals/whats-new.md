@@ -6,7 +6,7 @@ keywords: ''
 author: ErikjeMS
 ms.author: erikje
 manager: dougeby
-ms.date: 11/18/2019
+ms.date: 11/22/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.subservice: fundamentals
@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure; get-started
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 71045489ac703860073a3023e6d6170778117d33
-ms.sourcegitcommit: 01fb3d844958a0e66c7b87623160982868e675b0
+ms.openlocfilehash: 7ad5c26770537ce6a285989f8ca3804277616419
+ms.sourcegitcommit: 16a9109b4028589c17695d41271ca4fee8b1d697
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/20/2019
-ms.locfileid: "74199284"
+ms.lasthandoff: 11/26/2019
+ms.locfileid: "74540782"
 ---
 # <a name="whats-new-in-microsoft-intune"></a>Novidades do Microsoft Intune
 
@@ -53,18 +53,93 @@ Conheça as novidades de cada semana do Microsoft Intune. Você também pode enc
 ### Role-based access control
 -->  
 
-## <a name="week-of-november-18-2019"></a>Semana de 18 de novembro de 2019
+<!-- ########################## -->
+## <a name="week-of-november-18-2019-1911-service-release"></a>Semana de 18 de novembro de 2019 (versão do serviço 1911)
 
+<!-- vvvvvvvvvvvvvvvvvvvvvv -->
+### <a name="app-management"></a>Gerenciamento de aplicativos
+
+#### <a name="smime-support-with-microsoft-outlook-for-ios---2669398-idready---"></a>Suporte para S/MIME com o Microsoft Outlook para iOS<!-- 2669398 idready -->
+O Intune dá suporte à entrega de certificados de autenticação e criptografia S/MIME que podem ser usados com o Outlook para iOS em dispositivos iOS. Para saber mais, confira [Configurar o S/MIME para o Outlook para iOS](~/apps/app-configuration-policies-outlook-smime.md).
+
+#### <a name="ui-update-when-selectively-wiping-app-data---4102028---"></a>Atualização da interface do usuário ao limpar seletivamente dados de aplicativos<!-- 4102028 -->
+A interface do usuário para limpar seletivamente os dados do aplicativo no Intune foi atualizada. As alterações da interface do usuário incluem:
+- Uma experiência simplificada usando um formato com estilo de assistente condensado dentro de um único painel.
+- Uma atualização do fluxo de criação a fim de incluir atribuições.
+- Uma página resumida de todas as coisas definidas ao exibir as propriedades, antes de criar uma nova política ou ao editar uma propriedade. Além disso, ao editar propriedades, o resumo mostra apenas a lista de itens da categoria de propriedades em edição.
+
+Para obter mais informações, confira [Como apagar apenas dados corporativos dos aplicativos gerenciados pelo Intune](~/apps/apps-selective-wipe.md).
+
+#### <a name="ios-and-ipados-third-party-keyboard-support---4922950---"></a>Suporte a teclados de terceiros para iOS e iPadOS<!-- 4922950 -->
+Em março de 2019, anunciamos a remoção do suporte para a configuração da política de proteção de aplicativos para iOS "Teclados de terceiros". O recurso está retornando ao Intune com suporte para iOS e iPadOS. Para habilitar essa configuração, acesse a guia **Proteção de dados** de uma política de proteção de aplicativo do iOS/iPadOS nova ou já existente e localize a configuração **Teclados de terceiros** em **Transferência de Dados**.
+
+O comportamento dessa configuração de política difere um pouco da implementação anterior. Em aplicativos com várias identidades que usam o SDK versão 12.0.16 e posterior, direcionados pelas políticas de proteção de aplicativos com essa configuração definida como **Bloquear**, os usuários finais não poderão optar por teclados de terceiros em suas contas pessoais e em contas da organização. Os aplicativos que usam o SDK 12.0.12 e versões anteriores continuarão exibindo o comportamento documentado no título da postagem do blog, [Problema conhecido: os teclados de terceiros não são bloqueados no iOS para contas pessoais](https://aka.ms/3rdparty_iOS_Intune).
+
+<!-- vvvvvvvvvvvvvvvvvvvvvv -->
 ### <a name="device-configuration"></a>Configuração do dispositivo
 
-#### <a name="windows-10-feature-updates-public-preview---2384877---"></a>Atualizações de recursos do Windows 10 (visualização pública)<!-- 2384877 -->
+#### <a name="target-macos-user-groups-to-require-jamf-management---4061739----"></a>Defina grupos de usuários do macOS como destino para exigir o gerenciamento Jamf<!-- 4061739  --> 
+Você pode direcionar grupos específicos de usuários que receberão seus [dispositivos macOS gerenciados pelo Jamf](../protect/conditional-access-integrate-jamf.md). Isso permite aplicar a integração de conformidade do Jamf a um subconjunto de dispositivos macOS enquanto outros dispositivos são gerenciados pelo Intune. Se você já estiver usando a integração do Jamf, todos os usuários serão definidos como destino para a integração por padrão.
 
+#### <a name="new-exchange-activesync-settings-when-creating-an-email-device-configuration-profile-on-ios-devices---4892824-----"></a>Novas configurações do Exchange ActiveSync ao criar um Perfil de configuração de dispositivo de email em dispositivos iOS<!-- 4892824   --> 
+Em dispositivos iOS/iPadOS, você pode configurar a conectividade de emails em um perfil de configuração do dispositivo (**Configuração do dispositivo** > **Perfis** > **Criar perfil** > **iOS/iPadOS** para a plataforma > **Email** para o tipo de perfil). 
+
+Existem novas configurações do Exchange ActiveSync disponíveis, incluindo:
+- **Dados do Exchange para compartilhar**: Escolha os serviços do Exchange para sincronizar (ou bloquear a sincronização) para Calendário, Contatos, Lembretes, Anotações e Email.
+- **Permitir que os usuários alterem as configurações de sincronização**: Permita (ou impeça) que os usuários alterem as configurações de sincronização desses serviços em seus dispositivos.  
+
+Para obter mais informações sobre essas configurações, acesse [Configurações de perfil de email para dispositivos iOS no Intune](../configuration/email-settings-ios.md). 
+
+Aplica-se a:
+- iOS 13.0 e mais recente
+- iPadOS 13.0 e versões mais recentes
+
+#### <a name="prevent-users-from-adding-personal-google-accounts-to-android-enterprise-fully-managed-and-dedicated-devices---5353228-----"></a>Impedir que os usuários adicionem contas do Google pessoais a dispositivos totalmente dedicados e gerenciados do Android Enterprise<!-- 5353228   -->
+Em dispositivos totalmente dedicados e gerenciados do Android Enterprise, há uma nova configuração que impede que os usuários criem contas pessoais do Google (**Configuração de dispositivos** > **Profis** > **Criar perfis** > **Android Enterprise** para a plataforma > **Somente Proprietário do Dispositivo > Restrições de Dispositivos** para o tipo de perfil > **Configurações de usuários e contas** > **Contas pessoais do Google**).
+
+Para ver as configurações que você pode definir, acesse [Configurações do dispositivo Android Enterprise para permitir ou restringir recursos usando o Intune](../configuration/device-restrictions-android-for-work.md).
+
+Aplica-se a:
+- Dispositivos Android Enterprise totalmente gerenciados
+- Dispositivos Android Enterprise dedicados
+
+#### <a name="server-side-logging-for-siri-commands-setting-is-removed-in-iosipados-device-restrictions-profile----5468501-----"></a>A configuração Registro em log no lado do servidor para os comandos da Siri foi removida no perfil de restrições de dispositivos iOS/iPadOS <!-- 5468501   -->
+Em dispositivos iOS e iPadOS, a configuração **Registro em log no lado do servidor para os comandos da Siri** é removida do console de administração do Gerenciador de Ponto de Extremidade da Microsoft (**Configuração do dispositivo** > **Perfis** > **Criar perfil** > **iOS/iPadOS** para a plataforma > **Restrições do dispositivo** para o tipo de perfil > **Aplicativos internos**). 
+
+Essa configuração não afeta dispositivos. Para remover a configuração de perfis existentes, abra o perfil, faça as alterações necessárias e salve o perfil. O perfil é atualizado, e a configuração é excluída dos dispositivos.
+
+Para ver todas as configurações que você pode definir, confira [Configurações de dispositivos iOS e iPadOS para permitir ou restringir recursos usando o Intune](../configuration/device-restrictions-ios.md).
+
+Aplica-se a:
+- iOS/iPadOS
+
+#### <a name="windows-10-feature-updates-public-preview---2384877---"></a>Atualizações de recursos do Windows 10 (visualização pública)<!-- 2384877 -->
 Agora você pode implantar [atualizações de recurso do Windows 10](../protect/windows-update-for-business-configure.md#windows-10-feature-updates) em dispositivos Windows 10. As atualizações de recursos do Windows 10 são uma nova política de atualização de software que define a versão do Windows 10 que você deseja que os dispositivos instalem e utilizem. Você pode usar esse novo tipo de política junto com os anéis de atualização existentes do Windows 10.
 
 Os dispositivos que recebem a política de atualizações de recursos do Windows 10 instalarão a versão especificada do Windows e permanecerão com essa versão até que a política seja editada ou removida. Os dispositivos que executam uma versão mais recente do Windows permanecem com sua versão atual. Os dispositivos que são mantidos em uma versão específica do Windows ainda podem instalar as atualizações de qualidade e de segurança para essa versão dos anéis de atualização do Windows 10.
 
 Esse novo tipo de política começa a ser distribuído para os locatários esta semana. Se essa política ainda não estiver disponível para o seu locatário, ela estará em breve.
 
+#### <a name="add-and-change-key-information-in-plist-files-for-macos-applications---4736278---"></a>Adicionar e alterar informações importantes em arquivos plist para aplicativos macOS<!-- 4736278 -->
+Em dispositivos macOS, agora você pode criar um perfil de configuração de dispositivo que carrega um arquivo de lista de propriedades (.plist) associado a um aplicativo ou ao dispositivo (**Dispositivos** > **Perfis de configuração** > **Criar perfil** > **macOS** para a plataforma > **Arquivo de Preferência** para o tipo de perfil).
+
+Apenas alguns aplicativos dão suporte para preferências gerenciadas, e esses aplicativos podem não permitir o gerenciamento de todas as configurações. Certifique-se de carregar um arquivo da lista de propriedades que defina as configurações do canal do dispositivo, e não as configurações do canal do usuário.
+
+Para saber mais sobre esse recurso, confira [Adicionar um arquivo de lista de propriedades a dispositivos macOS usando o Microsoft Intune](../configuration/preference-file-settings-macos.md).
+
+Aplica-se a:
+- dispositivos macOS executando a versão 10.7 e mais recentes
+
+<!-- vvvvvvvvvvvvvvvvvvvvvv -->
+### <a name="device-management"></a>Gerenciamento de dispositivos
+
+#### <a name="edit-device-name-value-for-autopilot-devices---2640074---"></a>Editar o valor do nome do dispositivo para dispositivos do Autopilot<!-- 2640074 -->
+Você pode editar o valor do nome do dispositivo para dispositivos do Autopilot ingressados no Azure AD.  Para saber mais, confira [Editar atributos do dispositivo do Autopilot](../enrollment/enrollment-autopilot.md#edit-autopilot-device-attributes).
+
+#### <a name="edit-group-tag-value-for-autopilot-devices---4816775-----"></a>Editar o valor de Tag de Grupo para dispositivos do Autopilot<!-- 4816775   -->
+Você pode editar o valor de Tag de Grupo para dispositivos do Autopilot. Para saber mais, confira [Editar atributos do dispositivo do Autopilot](../enrollment/enrollment-autopilot.md#edit-autopilot-device-attributes).
+
+<!-- vvvvvvvvvvvvvvvvvvvvvv -->
 ### <a name="monitor-and-troubleshoot"></a>Monitorar e solucionar problemas
 
 #### <a name="updated-support-experience---5012398---"></a>Experiência de suporte atualizada<!-- 5012398 -->
@@ -73,8 +148,41 @@ A partir de hoje, será distribuída para os locatários uma experiência atuali
 
 Melhoramos a pesquisa no console, os comentários sobre problemas comuns e o fluxo de trabalho que você usa para entrar em contato com o suporte. Ao abrir um problema de suporte, você verá estimativas em tempo real de quando pode esperar um retorno de chamada ou resposta por email, e os clientes de suporte Premier e Unificado podem especificar com facilidade a gravidade do problema, para ajudar a obter suporte de forma mais rápida.
 
+#### <a name="improved-intune-reporting-experience-public-preview----3791418---"></a>Experiência aprimorada de relatórios do Intune (visualização pública) <!-- 3791418 -->
+O Intune agora oferece uma experiência aprimorada de relatórios, incluindo novos tipos de relatórios, melhor organização de relatórios, visualizações mais focadas, funcionalidade aprimorada de relatórios e dados mais consistentes e oportunos. Novos tipos de relatório se concentram no seguinte:
+- **Operacional** - fornece novos registros com foco de integridade negativa. 
+- **Organizacional** - fornece um resumo mais amplo do estado geral.
+- **Histórico** – fornece padrões e tendências ao longo de um período.
+- **Especialista** – permite que você use dados brutos para criar seus próprios relatórios personalizados.
+
+O primeiro conjunto de novos relatórios se concentra na conformidade do dispositivo. Para saber mais, confira [Blog - Estrutura de relatórios do Microsoft Intune](https://techcommunity.microsoft.com/t5/Intune-Customer-Success/New-Reporting-Framework-Coming-to-Intune/ba-p/1009553) e [Relatórios do Intune](~/fundamentals/reports.md).
+
+<!-- vvvvvvvvvvvvvvvvvvvvvv -->
+### <a name="role-based-access-control"></a>Controle de acesso baseado em função
+
+#### <a name="duplicate-custom-or-built-in-roles----1081938-----"></a>Duplicar funções personalizadas ou internas <!-- 1081938   -->
+Agora, você pode copiar funções internas e personalizadas. Para saber mais, confira [Copiar uma função](../fundamentals/create-custom-role.md#copy-a-role).
+
+#### <a name="new-permissions-for-school-administrator-role----5621805----"></a>Novas permissões para a função de administrador da escola <!-- 5621805  -->  
+Duas novas permissões, **Atribuir perfil** e **Sincronizar dispositivo**, foram adicionadas à função de administrador da escola > **Permissões** > **Programas de inscrição**. A permissão de perfil de sincronização permite que administradores de grupo sincronizem os dispositivos do Windows Autopilot. A permissão de atribuição de perfil permite excluir perfis de inscrição da Apple iniciados pelo usuário. Ela também permite que eles gerenciem atribuições de dispositivos do AutoPilot e atribuições de perfil de implantação do AutoPilot. Para obter uma lista de todas as permissões de administrador de escola/administrador de grupo, confira [Atribuir administradores de grupo](https://docs.microsoft.com/intune-education/group-admin-delegate). 
+
+<!-- vvvvvvvvvvvvvvvvvvvvvv -->
+### <a name="security"></a>Segurança
+
+#### <a name="bitlocker-key-rotation---2564951----"></a>Rodízio de chaves do BitLocker<!-- 2564951  -->
+Você pode usar uma ação de dispositivo do Intune para [fazer o rodízio remoto de chaves de recuperação do BitLocker](../protect/encrypt-devices.md#rotate-bitlocker-recovery-keys) para dispositivos gerenciados que executam o Windows versão 1909 ou posterior. Para se qualificarem para o rodízio de chaves de recuperação, os dispositivos devem ser configurados para oferecer suporte ao rodízio de chaves de recuperação.  
+
+#### <a name="updates-to-dedicated-device-enrollment-to-support-scep-device-certificate-deployment----5198878----"></a>Atualizações na inscrição de dispositivos dedicados para oferecer suporte à implantação de certificado de dispositivos SCEP <!-- 5198878  -->
+O Intune agora dá suporte à implantação de certificados de dispositivos SCEP em dispositivos dedicados do Android Enterprise para acesso baseado em certificado a perfis de Wi-Fi. O aplicativo Microsoft Intune deve estar presente no dispositivo para que a implantação funcione. Como resultado, atualizamos a experiência de inscrição em dispositivos dedicados do Android Enterprise. Novas inscrições ainda são iniciadas da mesma forma (com QR, NFC, Zero-touch ou identificador de dispositivo), mas agora têm uma etapa que exige que os usuários instalem o aplicativo Intune. Os dispositivos existentes começarão a instalar o aplicativo automaticamente de forma contínua.
+
+#### <a name="intune-audit-logs-for-business-to-business-collaboration--5670211---"></a>Logs de auditoria do Intune para colaboração entre empresas<!--5670211 -->
+A colaboração entre empresas (B2B) permite compartilhar com segurança os aplicativos e serviços da sua empresa com usuários convidados de qualquer outra organização, mantendo o controle sobre seus próprios dados corporativos. O Intune agora dá suporte a logs de auditoria para usuários convidados B2B. Por exemplo, quando os usuários convidados fizerem alterações, o Intune poderá capturar esses dados através de logs de auditoria. Para saber mais, confira [O que é o acesso de usuário convidado no Azure Active Directory B2B?](https://docs.microsoft.com/azure/active-directory/b2b/what-is-b2b)
+
+
+<!-- ########################## -->
 ## <a name="week-of-november-11-2019"></a>Semana de 11 de novembro de 2019  
 
+<!-- vvvvvvvvvvvvvvvvvvvvvv -->
 ### <a name="app-management"></a>Gerenciamento de aplicativos  
 
 #### <a name="improved-macos-enrollment-experience-in-company-portal----5074349-wnready---"></a>Experiência aprimorada de registro do macOS no Portal da Empresa <!-- 5074349 WNready -->  
@@ -82,27 +190,30 @@ O Portal da Empresa para a experiência de registro do macOS tem um processo de 
 
 * Uma interface do usuário mais elegante.  
 * Uma lista de verificação de registro aprimorada.  
-* Instruções mais claras sobre como registrar seus dispositivos.  
+* Instruções mais claras sobre como registrar os dispositivos.  
 * Opções aprimoradas para solução de problemas.  
 
 #### <a name="web-apps-launched-from-the-windows-company-portal-app---5030972---"></a>Aplicativos Web iniciados no aplicativo do Portal da Empresa para Windows<!-- 5030972 -->
-Os usuários finais agora podem iniciar aplicativos Web diretamente do aplicativo do Portal da Empresa para Windows. Os usuários finais podem selecionar o aplicativo Web e, em seguida, escolher a opção **Abrir no navegador**. A URL da Web publicada é aberta diretamente em um navegador da Web. Essa funcionalidade será distribuída na próxima semana. Para mais informações sobre aplicativos Web, confira [Adicionar aplicativos Web ao Microsoft Intune](~/apps/web-app.md).  
+Os usuários finais agora podem iniciar aplicativos Web diretamente do aplicativo do Portal da Empresa para Windows. Os usuários finais podem selecionar o aplicativo Web e escolher a opção **Abrir no navegador**. A URL da Web publicada é aberta diretamente em um navegador da Web. Essa funcionalidade será distribuída na próxima semana. Para mais informações sobre aplicativos Web, confira [Adicionar aplicativos Web ao Microsoft Intune](~/apps/web-app.md).  
 
 
 #### <a name="new-assignment-type-column-in-company-portal-for-windows-10----5459950-wnready---"></a>Nova coluna de tipo de atribuição no Portal da Empresa para Windows 10 <!-- 5459950 WNready -->
 A coluna Portal da Empresa > **Aplicativos Instalados** > **Tipo de atribuição** foi renomeada para **Exigido pela sua organização**.  Nessa coluna, os usuários verão um valor **Sim** ou **Não** para indicar que um aplicativo é necessário ou se tornou opcional por sua organização. Essas alterações foram feitas porque os usuários do dispositivo estavam confusos sobre o conceito de aplicativos disponíveis. Seus usuários podem encontrar mais informações sobre como instalar aplicativos no Portal da Empresa, confira [Instalar e compartilhar aplicativos em seu dispositivo](/intune-user-help/install-apps-cpapp-windows). Para saber mais sobre como configurar o aplicativo do Portal da Empresa para os seus usuários, confira [Como configurar o aplicativo do Portal da Empresa do Microsoft Intune](~/apps/company-portal-app.md).  
 
-
+<!-- ########################## -->
 ## <a name="week-of-november-4-2019"></a>Semana de 4 de novembro de 2019
 
+<!-- vvvvvvvvvvvvvvvvvvvvvv -->
 ### <a name="device-security"></a>Segurança de dispositivo
 
 #### <a name="security-baselines-are-supported-on-microsoft-azure-government---4062552---"></a>As linhas de base de segurança recebem suporte no Microsoft Azure Governamental<!-- 4062552 -->
 
 Agora as instâncias do Intune hospedadas no *Microsoft Azure Governamental* podem usar as [linhas de base de segurança](../protect/security-baselines.md) para ajudar na segurança e na proteção de seus usuários e dispositivos.
 
+<!-- ########################## -->
 ## <a name="week-of-october-28-2019"></a>Semana de 28 de outubro de 2019
 
+<!-- vvvvvvvvvvvvvvvvvvvvvv -->
 ### <a name="app-management"></a>Gerenciamento de aplicativos
 
 #### <a name="improved-checklist-design-in-company-portal-app-for-android---5550857---"></a>Design aprimorado para listas de verificação no aplicativo Portal da Empresa para Android<!-- 5550857 -->  
@@ -143,12 +254,14 @@ Essas configurações continuarão a ser acessadas de outros nós aplicáveis, c
 
 Para obter mais informações sobre esses aprimoramentos, confira a [postagem no blog Sucesso do cliente do Intune](https://aka.ms/Endpoint_security_node) no site da Microsoft Tech Community.
 
+<!-- vvvvvvvvvvvvvvvvvvvvvv -->
 ### <a name="device-management"></a>Gerenciamento de dispositivos
 
 #### <a name="intune-supports-ios-11-and-later---4665324----"></a>O Intune é compatível com o iOS 11 e posteriores<!-- 4665324  -->
 
 O registro e o Portal da Empresa do Intune agora são compatíveis com o iOS versão 11 e posteriores. Não há compatibilidade com as versões anteriores.
 
+<!-- vvvvvvvvvvvvvvvvvvvvvv -->
 ### <a name="device-security"></a>Segurança de dispositivo
 
 #### <a name="microsoft-edge-baseline-preview----3787164----"></a>Linha de base do Microsoft Edge (versão prévia)<!--  3787164  -->
@@ -156,7 +269,7 @@ O registro e o Portal da Empresa do Intune agora são compatíveis com o iOS ver
 Adicionamos uma versão prévia para a linha de base de segurança das [configurações do Microsoft Edge](../protect/security-baseline-settings-edge.md). 
 
 <!-- ########################## -->
-## <a name="week-of-october-21-2019"></a>Semana de 21 de outubro de 2019
+## <a name="week-of-october-21-2019-1910-service-release"></a>Semana de 21 de outubro de 2019 (versão do serviço 1910)
 
 <!-- vvvvvvvvvvvvvvvvvvvvvv -->
 ### <a name="microsoft-365-device-management"></a>Gerenciamento de dispositivos do Microsoft 365
@@ -299,9 +412,6 @@ Aplica-se a:
 #### <a name="specify-which-android-device-operating-system-versions-enroll-with-work-profile-or-device-administrator-enrollment---4350697-----"></a>Especificar quais versões do sistema operacional do dispositivo Android são registradas no perfil de trabalho ou no registro de administrador do dispositivo<!-- 4350697   -->
 Usando as restrições de tipo de dispositivo do Intune, você pode usar a versão do sistema operacional do dispositivo para especificar quais dispositivos de usuário usarão o registro de perfil de trabalho do Android Enterprise ou o registro de administrador do dispositivo Android.  Para saber mais, confira [Definir restrições de registro](../enrollment/enrollment-restrictions-set.md).
 
-#### <a name="windows-autopilot-deployment-reports---3856172---"></a>Relatórios de implantação do Windows Autopilot<!-- 3856172 -->
-Um novo relatório detalha cada dispositivo implantado usando o Windows Autopilot. Para obter mais informações, confira [Relatório de implantação do Autopilot](../enrollment/enrollment-autopilot.md#autopilot-deployments-report). Estamos no processo de distribuir esse recurso para todos os clientes e esperar que sejam concluídas até o final da próxima semana.
-
 <!-- vvvvvvvvvvvvvvvvvvvvvv -->
 ### <a name="device-management"></a>Gerenciamento de dispositivos
 
@@ -367,7 +477,7 @@ O Intune agora dá suporte ao gerenciamento de dispositivos iPadOS e iOS 13.1. P
 
 <!-- ########################## -->
 
-## <a name="week-of-september-16-2019"></a>Semana de 16 de setembro de 2019
+## <a name="week-of-september-16-2019-1909-service-release"></a>Semana de 16 de setembro de 2019 (versão do serviço 1909)
 
 <!-- vvvvvvvvvvvvvvvvvvvvvv -->
 ### <a name="app-management"></a>Gerenciamento de aplicativos 
@@ -603,7 +713,7 @@ Aplica-se a:
 
 - Windows 10 e mais recente (Windows RS4 e posterior)
 
-## <a name="week-of-august-12-2019"></a>Semana de 12 de agosto de 2019
+## <a name="week-of-august-12-2019-1908-service-release"></a>Semana de 12 de agosto de 2019 (versão do serviço 1908)
 
 ### <a name="app-management"></a>Gerenciamento de aplicativos
 
@@ -775,7 +885,7 @@ Aplica-se a:
 
 <!-- ########################## -->
 
-## <a name="week-of-july-22-2019"></a>Semana de 22 de julho de 2019 
+## <a name="week-of-july-22-2019-1907-service-release"></a>Semana de 22 de julho de 2019 (versão do serviço 1907)
 
 ### <a name="app-management"></a>Gerenciamento de aplicativos
 
@@ -916,7 +1026,7 @@ Ao integrar dispositivos Android Enterprise totalmente gerenciados, os usuários
 
 Além das atualizações do AAD, agora as APP (políticas de proteção de aplicativo) do Intune são compatíveis com dispositivos Android Enterprise totalmente gerenciados. Essa funcionalidade ficará disponível à medida que for distribuída. Para saber mais, confira [Adicionar aplicativos do Google Play gerenciado a dispositivos Android Enterprise com o Intune](../apps/apps-add-android-for-work.md).
 
-## <a name="week-of-june-24-2019"></a>Semana de 24 de junho de 2019
+## <a name="week-of-june-24-2019-1906-service-release"></a>Semana de 24 de junho de 2019 (versão do serviço 1906)
 
 ### <a name="app-management"></a>Gerenciamento de aplicativos
 
@@ -1076,7 +1186,7 @@ O aplicativo do Portal da Empresa do Windows agora terá uma nova página rotula
 
 Para torná-lo mais intuitivo, o nome do atributo **OrderID** em dispositivos do Autopilot foi alterado para **Marcação de Grupo**. Ao usar CSVs para carregar informações do dispositivo do Autopilot, você precisa usar Marcação de Grupo como o cabeçalho de coluna, não OrderID.  
 
-## <a name="week-of-may-13-2019"></a>Semana de 13 de maio de 2019
+## <a name="week-of-may-13-2019-1905-service-release"></a>Semana de 13 de maio de 2019 (versão do serviço 1905)
 
 ### <a name="app-management"></a>Gerenciamento de aplicativos
 

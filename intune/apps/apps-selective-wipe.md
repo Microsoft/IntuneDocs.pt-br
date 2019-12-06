@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 0fafe7c17c698a5eb4e5ad6825bee0ae3fe874c2
-ms.sourcegitcommit: 01fb3d844958a0e66c7b87623160982868e675b0
+ms.openlocfilehash: 4e827075b56d1751e837c25d85c304201bcafa01
+ms.sourcegitcommit: 2fddb293d37453736ffa54692d03eca642f3ab58
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/20/2019
-ms.locfileid: "74199243"
+ms.lasthandoff: 11/22/2019
+ms.locfileid: "74390419"
 ---
 # <a name="how-to-wipe-only-corporate-data-from-intune-managed-apps"></a>Como apagar somente dados corporativos de aplicativos gerenciados pelo Intune
 
@@ -47,17 +47,25 @@ Políticas de WIP (Proteção de Informações do Windows) podem ser implantadas
 1. Conecte-se ao [Intune](https://go.microsoft.com/fwlink/?linkid=2090973).
 2. No painel Intune, selecione **Aplicativos cliente** > **Apagamento seletivo de aplicativo** > **Criar solicitação de apagamento**.<br>
    O painel **Criar solicitação de apagamento** é exibido.
-3. Clique em **Selecione o usuário**, escolha o usuário cujos dados de aplicativo você deseja apagar e clique em **Selecionar** na parte inferior do painel **Usuário**.
+3. Clique em **Selecionar usuário**, escolha o usuário cujos dados de aplicativo você deseja apagar e clique em **Selecionar** na parte inferior do painel **Selecionar usuário**.
+
+    ![Captura de tela do painel "Selecionar usuário"](./media/apps-selective-wipe/apps-selective-wipe-01.png)
+
 4. Clique em **Selecione o dispositivo**, escolha o dispositivo e clique em **Selecionar** na parte inferior do painel **Selecionar dispositivo**.
+
+    ![Captura de tela do painel "Criar solicitação de apagamento" onde o dispositivo está selecionado](./media/apps-selective-wipe/apps-selective-wipe-02.png)
+
 5. Clique em **Criar** para fazer uma solicitação de apagamento.
 
 O serviço cria e controla uma solicitação de apagamento separada para cada aplicativo protegido no dispositivo e o usuário associado à solicitação de apagamento.
+
+   ![Captura de tela do painel "Aplicativos do cliente – apagamento seletivo de aplicativos"](./media/apps-selective-wipe/apps-selective-wipe-03.png)
 
 ## <a name="monitor-your-wipe-requests"></a>Monitorar suas solicitações de apagamento
 
 É possível obter um relatório resumido que mostra o status geral da solicitação de apagamento e inclui o número de falhas e solicitações pendentes. Para obter mais detalhes, siga estas etapas:
 
-1. No painel **Aplicativos Cliente – apagamento seletivo de aplicativo**, você pode ver a lista de suas solicitações agrupadas por usuários. Como o sistema cria uma solicitação de apagamento para cada aplicativo protegido em execução no dispositivo, você poderá ver várias solicitações de um usuário. O status indica se uma solicitação de apagamento está **pendente**, com **falha**ou **bem-sucedida**.
+1. No painel **Aplicativos do Cliente** > **apagamento seletivo de aplicativo**, você pode ver a lista de suas solicitações agrupadas por usuários. Como o sistema cria uma solicitação de apagamento para cada aplicativo protegido em execução no dispositivo, você poderá ver várias solicitações de um usuário. O status indica se uma solicitação de apagamento está **pendente**, com **falha**ou **bem-sucedida**.
 
     ![Captura de tela do status da solicitação de apagamento no painel Limpeza seletiva de aplicativo](./media/apps-selective-wipe/wipe-request-status-1.png)
 

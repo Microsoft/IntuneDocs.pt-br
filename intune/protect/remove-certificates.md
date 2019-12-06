@@ -6,7 +6,7 @@ keywords: ''
 author: brenduns
 ms.author: brenduns
 manager: dougeby
-ms.date: 06/27/2019
+ms.date: 11/21/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.subservice: protect
@@ -17,12 +17,12 @@ search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
 ms.reviewer: lacranda
-ms.openlocfilehash: e00600abb8327623eff4efe8509670779710ab7d
-ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
+ms.openlocfilehash: dbf6d95c8902a95993b972ff7639d4afb4324ac8
+ms.sourcegitcommit: a7b479c84b3af5b85528db676594bdb3a1ff6ec6
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/16/2019
-ms.locfileid: "72509025"
+ms.lasthandoff: 11/22/2019
+ms.locfileid: "74410168"
 ---
 # <a name="remove-scep-and-pkcs-certificates-in-microsoft-intune"></a>Remover certificados SCEP e PKCS no Microsoft Intune
 
@@ -55,14 +55,17 @@ Um certificado SCEP é revogado *e* removido quando:
 - Um perfil de certificado é removido da atribuição de grupo.
 
 Um certificado do SCEP é revogado quando:
+
 - Um administrador altera ou atualiza o perfil SCEP.
 
 Um certificado raiz é removido quando:
+
 - Um usuário cancela o registro.
 - Um administrador executa a ação [apagar](../remote-actions/devices-wipe.md#wipe).
 - Um administrador executa a ação [desativar](../remote-actions/devices-wipe.md#retire).
 
 Os certificados SCEP *permanecem* no dispositivo (não são revogados nem removidos) quando:
+
 - Um usuário perde a licença do Intune.
 - Um administrador retira a licença do Intune.
 - Um administrador remove o usuário ou o grupo do Azure AD.
@@ -76,11 +79,13 @@ Um certificado PKCS é revogado *e* removido quando:
 - Um administrador executa a ação [desativar](../remote-actions/devices-wipe.md#retire).
 
 Um certificado raiz é removido quando:
+
 - Um usuário cancela o registro.
 - Um administrador executa a ação [apagar](../remote-actions/devices-wipe.md#wipe).
 - Um administrador executa a ação [desativar](../remote-actions/devices-wipe.md#retire).
 
 Os certificados PKCS *permanecem* no dispositivo (não são revogados nem removidos) quando:
+
 - Um usuário perde a licença do Intune.
 - Um administrador retira a licença do Intune.
 - Um administrador remove o usuário ou o grupo do Azure AD.
@@ -101,14 +106,17 @@ Um certificado SCEP é revogado *e* removido quando:
 - Um perfil de certificado é removido da atribuição de grupo.
 
 Um certificado do SCEP é revogado quando:
+
 - Um administrador altera ou atualiza o perfil SCEP.
 
 Um certificado raiz é removido quando:
+
 - Um usuário cancela o registro.
 - Um administrador executa a ação [apagar](../remote-actions/devices-wipe.md#wipe).
 - Um administrador executa a ação [desativar](../remote-actions/devices-wipe.md#retire).
 
 Os certificados SCEP *permanecem* no dispositivo (não são revogados nem removidos) quando:
+
 - Um usuário perde a licença do Intune.
 - Um administrador retira a licença do Intune.
 - Um administrador remove o usuário ou o grupo do Azure AD.
@@ -122,14 +130,17 @@ Um certificado PKCS é revogado *e* removido quando:
 - Um administrador executa a ação [desativar](../remote-actions/devices-wipe.md#retire).
 
 Um certificado PKCS é removido quando:
+
 - Um perfil de certificado é removido da atribuição de grupo.
 
 Um certificado raiz é removido quando:
+
 - Um usuário cancela o registro.
 - Um administrador executa a ação [apagar](../remote-actions/devices-wipe.md#wipe).
 - Um administrador executa a ação [desativar](../remote-actions/devices-wipe.md#retire).
 
 Os certificados PKCS *permanecem* no dispositivo (não são revogados nem removidos) quando:
+
 - Um usuário perde a licença do Intune.
 - Um administrador retira a licença do Intune.
 - Um administrador remove o usuário ou o grupo do Azure AD.
@@ -140,10 +151,12 @@ Os certificados PKCS *permanecem* no dispositivo (não são revogados nem removi
 ### <a name="scep-certificates"></a>Certificados SCEP
 
 Um certificado SCEP é revogado *e* removido quando:
+
 - Um usuário cancela o registro.
 - Um administrador executa a ação [apagar](../remote-actions/devices-wipe.md#wipe).
 
 Um certificado do SCEP é revogado quando:
+
 - Um administrador executa a ação [desativar](../remote-actions/devices-wipe.md#retire).
 - O dispositivo é removido de um grupo do Azure AD.
 - Um perfil de certificado é removido da atribuição de grupo.
@@ -151,11 +164,13 @@ Um certificado do SCEP é revogado quando:
 - Um administrador altera ou atualiza o perfil SCEP.
 
 Um certificado raiz é removido quando:
+
 - Um usuário cancela o registro.
 - Um administrador executa a ação [apagar](../remote-actions/devices-wipe.md#wipe).
 - Um administrador executa a ação [desativar](../remote-actions/devices-wipe.md#retire).
 
 Os certificados SCEP *permanecem* no dispositivo (não são revogados nem removidos) quando:
+
 - Um usuário perde a licença do Intune.
 - Um administrador retira a licença do Intune.
 - Um administrador remove o usuário ou o grupo do Azure AD.
@@ -169,12 +184,14 @@ Um certificado PKCS é revogado *e* removido quando:
 - Um administrador executa a ação [desativar](../remote-actions/devices-wipe.md#retire).
 
 Um certificado raiz é removido quando:
+
 - Um usuário cancela o registro.
 - Um administrador executa a ação [apagar](../remote-actions/devices-wipe.md#wipe).
 - Um administrador executa a ação [desativar](../remote-actions/devices-wipe.md#retire).
 
 Os certificados PKCS *permanecem* no dispositivo (não são revogados nem removidos) quando:
 - Um usuário perde a licença do Intune.
+
 - Um administrador retira a licença do Intune.
 - Um administrador remove o usuário ou o grupo do Azure AD.
 - Um administrador altera ou atualiza o perfil PKCS.
@@ -190,15 +207,18 @@ Os certificados PKCS *permanecem* no dispositivo (não são revogados nem removi
 ### <a name="scep-certificates"></a>Certificados SCEP
 
 Um certificado SCEP é revogado *e* removido quando:
+
 - Um usuário cancela o registro.
 - Um administrador executa uma ação [desativar](../remote-actions/devices-wipe.md#retire).
 - O dispositivo é removido de um grupo do Azure AD.
 - Um perfil de certificado é removido da atribuição de grupo.
 
 Um certificado do SCEP é revogado quando:
+
 - Um administrador altera ou atualiza o perfil SCEP.
 
 Os certificados SCEP *permanecem* no dispositivo (não são revogados nem removidos) quando:
+
 - Um usuário perde a licença do Intune.
 - Um administrador retira a licença do Intune.
 - Um administrador remove o usuário ou o grupo do Azure AD.
@@ -210,3 +230,6 @@ Os certificados SCEP *permanecem* no dispositivo (não são revogados nem removi
 
 Não há suporte para certificados PKCS no macOS.
 
+## <a name="next-steps"></a>Próximas etapas
+
+[Usar certificado para autenticação](certificates-configure.md)

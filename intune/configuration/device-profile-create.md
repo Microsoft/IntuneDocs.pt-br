@@ -5,7 +5,7 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 11/13/2019
+ms.date: 11/21/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.subservice: configuration
@@ -17,16 +17,14 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 02603651587837211d9a67d7e4bbeb90cb358dc5
-ms.sourcegitcommit: 78cebd3571fed72a3a99e9d33770ef3d932ae8ca
+ms.openlocfilehash: 0c4c995322234a4a2486d8e6c5e9efd88f78dd63
+ms.sourcegitcommit: 2fddb293d37453736ffa54692d03eca642f3ab58
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/13/2019
-ms.locfileid: "74059569"
+ms.lasthandoff: 11/22/2019
+ms.locfileid: "74390879"
 ---
 # <a name="create-a-device-profile-in-microsoft-intune"></a>Criar um perfil de dispositivo no Microsoft Intune
-
-[!INCLUDE [azure_portal](../includes/azure_portal.md)]
 
 Perfis de dispositivo permitem que você adicione e defina as configurações e, em seguida, envie essas configurações por push para dispositivos em sua organização. [Aplicar recursos e configurações em seus dispositivos usando perfis de dispositivo](device-profiles.md) apresenta mais detalhes, incluindo o que você pode fazer.
 
@@ -78,6 +76,7 @@ Este artigo:
        - [Quiosque](kiosk-settings.md)
        - [Certificado PKCS](../protect/certficates-pfx-configure.md)
        - [Certificado importado PKCS](../protect/certificates-imported-pfx-configure.md)
+       - [Arquivo de preferência](preference-file-settings-macos.md)
        - [Certificado SCEP](../protect/certificates-scep-configure.md)
        - [Certificado confiável](../protect/certificates-configure.md)
        - [Políticas de atualização](../software-updates-ios.md)
@@ -160,6 +159,32 @@ Quando você atribui o perfil aos grupos, as regras de aplicabilidade agem como 
 O Microsoft Intune usa diferentes ciclos de atualização para verificar se há atualizações nos perfis de configuração. Se o registro do dispositivo for recente, a frequência de execução da verificação será maior. Os [ciclos de atualização de política e perfil](device-profile-troubleshoot.md#how-long-does-it-take-for-devices-to-get-a-policy-profile-or-app-after-they-are-assigned) descrevem os tempos de atualização estimados.
 
 A qualquer momento, os usuários podem abrir o aplicativo Portal da Empresa e sincronizar o dispositivo para verificar imediatamente atualizações de perfil.
+
+## <a name="recommendations"></a>Recomendações
+
+Ao criar perfis, considere as seguintes recomendações:
+
+- Nomeie suas políticas para que você saiba do que trata cada uma e o que fazem. Todas as [políticas de conformidade](../protect/create-compliance-policy.md) e [perfis de configuração](../configuration/device-profile-create.md) possuem uma propriedade **Descrição** opcional. Em **Descrição**, seja específico e inclua informações para que outras pessoas saibam o que a política faz.
+
+  Alguns exemplos de perfil de configuração incluem:
+
+  **Nome do perfil**: modelo de administrador: perfil de configuração do OneDrive para todos os usuários do Windows 10  
+  **Descrição do perfil**: perfil de modelo de administração do OneDrive que inclui as configurações básicas e mínimas para todos os usuários do Windows 10. Criado por user@contoso.com para impedir que os usuários compartilhem dados organizacionais em contas pessoais do OneDrive.
+
+  **Nome do perfil**: perfil de VPN para todos os usuários do iOS  
+  **Descrição do perfil**: perfil de VPN que inclui as configurações básicas e mínimas para que todos os usuários do iOS se conectem à VPN da Contoso. Criado por user@contoso.com para que os usuários sejam automaticamente autenticados na VPN, sem solicitar que os usuários insiram nome de usuário e senha.
+
+- Crie seu perfil de acordo com a tarefa, como definir as configurações do Microsoft Edge, habilitar as configurações de antivírus do Microsoft Defender, bloquear dispositivos com jailbreak do iOS, e assim por diante.
+
+- Crie perfis que se apliquem a grupos específicos, como Marketing, Vendas, Administradores de TI, ou por local ou sistema escolar.
+
+- Separe as políticas de usuário das políticas de dispositivo.
+
+  Por exemplo, os [Modelos Administrativos no Intune](administrative-templates-windows.md) têm centenas de configurações de ADMX. Esses modelos mostram se uma configuração se aplica a usuários ou dispositivos. Ao criar modelos de administrador, atribua as configurações de usuários a um grupo de usuários e as de dispositivo a um grupo de dispositivos.
+
+  A imagem a seguir mostra um exemplo de configuração que pode ser aplicada aos usuários e/ou aos dispositivos:
+
+  ![Modelo de administrador do Intune que se aplica a usuário e dispositivos](./media/device-profile-create/setting-applies-to-user-and-device.png)
 
 ## <a name="next-steps"></a>Próximas etapas
 

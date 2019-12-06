@@ -6,7 +6,7 @@ keywords: ''
 author: brenduns
 ms.author: brenduns
 manager: dougeby
-ms.date: 11/18/2019
+ms.date: 11/22/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.subservice: fundamentals
@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 14ff8ad2d41a6f2235c18f155e3a5b865e3a32e4
-ms.sourcegitcommit: 01fb3d844958a0e66c7b87623160982868e675b0
+ms.openlocfilehash: 5aca7dbae7a74af399bcbf21aec1dd9dd2d1e851
+ms.sourcegitcommit: 2fddb293d37453736ffa54692d03eca642f3ab58
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/20/2019
-ms.locfileid: "74199304"
+ms.lasthandoff: 11/22/2019
+ms.locfileid: "74390756"
 ---
 # <a name="how-to-get-support-for-microsoft-intune"></a>Como obter suporte para o Microsoft Intune
 
@@ -39,7 +39,7 @@ Como administrador do Intune, você pode usar a opção **Ajuda e Suporte** para
 
 ## <a name="help-and-support-experience"></a>Experiência de Ajuda e suporte
 
-A experiência de Ajuda e suporte para o Intune está disponível no [Portal de Gerenciamento de dispositivos do Microsoft 365](https://devicemanagement.microsoft.com) e em todas as folhas (ou páginas) do Intune no portal do Azure.
+A experiência de Ajuda e suporte do Intune está disponível no [Centro de Administração do Gerenciador do Ponto de Extremidade da Microsoft](https://go.microsoft.com/fwlink/?linkid=2109431) e em todos os painéis (ou páginas) em Intune no portal do Azure.
 
 A experiência de *Ajuda e suporte* é semelhante à experiência observada no [Centro de administração do Microsoft 365](https://admin.microsoft.com/) e substitui a anterior *Ajuda + suporte*, que permanece em vigor para outros serviços no Azure.
 
@@ -48,16 +48,27 @@ A experiência de *Ajuda e suporte* é semelhante à experiência observada no [
 
 ### <a name="options-to-access-help-and-support"></a>Opções para acessar a Ajuda e suporte
 
-- **No portal do Azure:**
+Quando você usa um locatário recém-criado para o Intune, é possível que a abertura da *Ajuda e Suporte* falhe e exiba a seguinte mensagem:
+
+- *Encontramos um problema desconhecido. Atualize a página, mas se o problema persistir, crie um caso no [Centro de Administração do M365](https://admin.microsoft.com) e indique a ID da sessão fornecida.*
+
+Os detalhes do erro incluem, entre outros, os detalhes de *ID da Sessão* e da *Extensão*. 
+ 
+Esse problema ocorre quando você ainda não autenticou sua nova conta de locatário por meio do **Centro de Administração do M365**, em https://admin.microsoft.com, ou do **portal do Office 365**, em https://portal.office.com. Para resolver esse problema, selecione o link do *Centro de Administração do M365* na mensagem, ou acesse https://portal.office.com e faça login. Após a autenticação em qualquer site, a *Ajuda e Suporte* do Intune se tornará acessível.
+
+
+**Acessar a Ajuda e Suporte**:
+
+- **No portal do Azure**
 
   - Selecione **Ajuda e suporte** em qualquer folha ou página do Intune.
 
   > [!NOTE]  
   > Se a instância do Intune estiver hospedada na nuvem privada para o governo, também conhecidas como uma nuvem soberana, como o Azure Governamental, confira o [Suporte do Intune para a nuvem privada governamental](#intune-support-for-private-cloud-for-government), posteriormente neste artigo. A experiência de *Ajuda e suporte* do Intune não estará disponível na nuvem privada governamental até o próximo ano.
 
-- **No Painel de Gerenciamento de Dispositivo:**
+- **No Centro de Administração do Gerenciador de Ponto de Extremidade da Microsoft**
   - Depois de selecionar uma área de recursos para o Intune, selecione a opção para **Ajuda e suporte**.
-  - Em qualquer nó no portal de gerenciamento de dispositivos, selecione o ícone **?** ícone no canto superior direito do portal e use o menu suspenso para selecionar o serviço para o qual você deseja ajuda. O ícone **?** no portal Gerenciamento de dispositivos dá suporte a vários serviços e você deve selecionar o serviço específico para o qual deseja assistência.  
+  - Em qualquer nó no Centro de Administração do Gerenciador de Ponto de Extremidade da Microsoft, selecione o ícone **?** ícone no canto superior direito do portal e use o menu suspenso para selecionar o serviço para o qual você deseja ajuda. O ícone **?** no Centro de Administração do Gerenciador de Ponto de Extremidade dá suporte a vários serviços. É necessário selecionar o serviço específico para o qual deseja receber assistência.  
 
     ![Selecione o serviço](./media/get-support/select-a-service.png)
 
