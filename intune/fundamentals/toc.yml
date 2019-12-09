@@ -31,6 +31,8 @@
       href: quickstart-create-custom-role.md
 - name: Tutoriais
   items:
+    - name: Passo a passo do Intune no Gerenciador de Ponto de Extremidade da Microsoft
+      href: tutorial-walkthrough-endpoint-manager.md
     - name: Passo a passo do Intune no portal do Azure
       href: tutorial-walkthrough-intune-portal.md
 - name: Conceitos

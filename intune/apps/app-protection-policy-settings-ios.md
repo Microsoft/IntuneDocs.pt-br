@@ -6,7 +6,7 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 11/20/2019
+ms.date: 11/26/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.subservice: apps
@@ -18,17 +18,17 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: e7242b661668f994208aa36a8f9fc5d350623ccd
-ms.sourcegitcommit: 2fddb293d37453736ffa54692d03eca642f3ab58
+ms.openlocfilehash: ba3b145c3a48992b1e8a01ad2cee4be60646df6f
+ms.sourcegitcommit: b752acefec077c719e169e665c955adb944e85c6
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/22/2019
-ms.locfileid: "74390388"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74781236"
 ---
 # <a name="ios-app-protection-policy-settings"></a>Configurações de política de proteção de aplicativo iOS
 [!INCLUDE [azure_portal](../includes/azure_portal.md)]
 
-Este artigo descreve as configurações da política de proteção de aplicativo para dispositivos iOS. As configurações de política descritas podem ser [configuradas](app-protection-policies.md) para uma política de proteção de aplicativo na folha **Configurações** no portal do Azure quando você cria uma nova política.
+Este artigo descreve as configurações da política de proteção de aplicativo para dispositivos iOS. As configurações de política descritas podem ser [configuradas](app-protection-policies.md) para uma política de proteção de aplicativo no painel **Configurações** no portal do Azure quando você cria uma política.
 
 Há três categorias de configurações de política: *Relocação de dados*, *Requisitos de acesso* e *Inicialização condicional*. Neste artigo, o termo ***aplicativos gerenciados por política*** refere-se a aplicativos configurados com políticas de proteção de aplicativo.
 
@@ -88,7 +88,7 @@ Há algumas isenções de aplicativos e serviços de plataforma em que a políti
 | <ul><ui> **Selecionar tamanho mínimo do PIN** | Especifique o número mínimo de dígitos em uma sequência de PIN.  | **4**  |
 | <ul><ui> **Touch ID em vez de PIN para acesso (iOS 8 +)** | Selecione **Permitir** para permitir que o usuário use o [Touch ID](https://support.apple.com/HT201371) em vez de um PIN para acesso ao aplicativo.    | **Permitir**  |
 |<ul><ui><ul><ui>**Substituir o Touch ID com PIN após o tempo limite**|  Para usar essa configuração, selecione **Exigir** e, em seguida, configure o tempo limite de inatividade.  |**Exigir**  |
-| <ul><ui><ul><ui><ul><ui> **Tempo limite (minutos de inatividade)** |  Especifique um tempo em minutos após o qual uma senha ou PIN numérico (conforme configurado) substituirá o uso de uma impressão digital. Esse valor de tempo limite deve ser maior que o valor especificado em "Verificar novamente os requisitos de acesso após (minutos de inatividade)".  |**30**  |
+| <ul><ui><ul><ui><ul><ui> **Tempo limite (minutos de inatividade)** |  Especifique um tempo em minutos após o qual uma senha ou PIN numérico (conforme configurado) substituirá o uso de uma impressão digital ou detecção facial como método de acesso. Esse valor de tempo limite deve ser maior que o valor especificado em "Verificar novamente os requisitos de acesso após (minutos de inatividade)".  |**30**  |
 | <ul><ui><ul><ui>**Face ID em vez de PIN para acesso (iOS 11+)** | Selecione **Permitir** para permitir que o usuário use a tecnologia de reconhecimento facial para autenticar usuários em dispositivos iOS. Se permitido, o Face ID deve ser usado para acessar o aplicativo em um dispositivo compatível com o Face ID.    | **Permitir**  |
 | <ul><ui>**Redefinir PIN após número de dias** | Selecione **Sim** para exigir que os usuários alterem o PIN do seu aplicativo após um período definido de tempo, em dias.  <br><br>Quando definido como *Sim*, você, em seguida, configure o número de dias antes que a redefinição do PIN seja necessária. |**Não**  |  
 | <ul><ui><ul><ui> **Número de dias** | Configure o número de dias antes que a redefinição do PIN seja necessária.  |**90**  |

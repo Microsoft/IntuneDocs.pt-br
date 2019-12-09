@@ -15,12 +15,12 @@ ms.reviewer: mghadial
 ms.suite: ems
 search.appverid: MET150
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 01866bba0ef47ac807b24a66f773e212c76ff7df
-ms.sourcegitcommit: 1cf063c98e1caae00a6e6fab821cc3254562bca9
+ms.openlocfilehash: a7c3398f28d7c396c873dd29f3e3fdd719c1a7c6
+ms.sourcegitcommit: f26039d674eb4d61ab68264dd1a10b2e5e1d842c
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/21/2019
-ms.locfileid: "74291092"
+ms.lasthandoff: 12/02/2019
+ms.locfileid: "74691783"
 ---
 # <a name="manage-windows-10-software-updates-in-intune"></a>Gerenciar atualizações de software do Windows 10 no Intune
 
@@ -214,9 +214,7 @@ Quando um dispositivo recebe uma política de atualizações de recursos do Wind
   - O **Período de adiamento de atualização de recurso (dias)** deve ser definido como **0**.
   - As atualizações de recurso do anel de atualização devem estar *Em execução*. Elas não devem estar em pausa.
 
-- Não há suporte para a política de *atualizações de recursos do Windows 10* com o Windows Autopilot. O Intune não implantará a política para:
-  - Dispositivos provisionados pelo Autopilot.
-  - Dispositivos que eram provisionados anteriormente com o Autopilot.
+- As políticas de atualização de recursos do Windows 10 não podem ser aplicadas durante a OOBE (experiência pronta para o uso) e serão aplicadas somente na primeira verificação do Windows Update depois que um dispositivo tiver concluído o provisionamento (o que normalmente leva um dia). Além disso, os dispositivos que foram provisionados com o AutoPilot não receberão a política.
 
   Essa limitação está sendo examinada para verificar se ela pode receber suporte no futuro.
 

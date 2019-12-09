@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: d4ff9126fec182d1e0d2f3eb75297ede8a632e2e
-ms.sourcegitcommit: 2fddb293d37453736ffa54692d03eca642f3ab58
+ms.openlocfilehash: 83f0d980bc4fa1bfd0b48f87839fd6efa130aa70
+ms.sourcegitcommit: 73b362173929f59e9df57e54e76d19834f155433
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/22/2019
-ms.locfileid: "74390715"
+ms.lasthandoff: 11/27/2019
+ms.locfileid: "74563869"
 ---
 # <a name="set-up-intune-enrollment-of-android-enterprise-dedicated-devices"></a>Configurar o registro do Intune para dispositivos dedicados com Android Enterprise
 
@@ -59,7 +59,7 @@ Para configurar o gerenciamento de um dispositivo dedicado com Android Enterpris
 
 Você precisa criar um perfil de registro para que seja possível registrar os dispositivos dedicados. Quando o perfil é criado, ele fornece um token de registro (uma cadeia de caracteres aleatória) e um código QR. Dependendo do sistema operacional Android e da versão do dispositivo, é possível usar o token ou o código QR para [registrar o dispositivo dedicado](#enroll-the-dedicated-devices).
 
-1. Entre no [Centro de Administração do Gerenciador de Ponto de Extremidade da Microsoft](https://go.microsoft.com/fwlink/?linkid=2109431) e escolha **Registro de dispositivos** > **Registro do Android** > **Dispositivos dedicados de propriedade corporativa**.
+1. Entre no [Centro de Administração do Gerenciador de Ponto de Extremidade da Microsoft](https://go.microsoft.com/fwlink/?linkid=2109431) e escolha **Dispositivos** > **Android** > **Registro do Android** > **Dispositivos dedicados de propriedade corporativa**.
 2. Escolha **Criar** e preencha os campos obrigatórios.
     - **Nome**: digite um nome que você usará ao atribuir o perfil ao grupo de dispositivos dinâmicos.
     - **Data de vencimento do token**: a data em que o token expira. O Google impõe o máximo de 90 dias.
@@ -92,7 +92,7 @@ Você pode direcionar aplicativos e políticas a grupos de dispositivos atribuí
 
 A substituição ou a revogação de um código QR/token não terá nenhum efeito em dispositivos que já estejam registrados.
 
-1. Entre no [Centro de Administração do Gerenciador de Ponto de Extremidade da Microsoft](https://go.microsoft.com/fwlink/?linkid=2109431) e escolha **Registro de dispositivos** > **Registro do Android** > **Dispositivos dedicados de propriedade corporativa**.
+1. Entre no [Centro de Administração do Gerenciador de Ponto de Extremidade da Microsoft](https://go.microsoft.com/fwlink/?linkid=2109431) e escolha **Dispositivos** > **Android** > **Registro do Android** > **Dispositivos dedicados de propriedade corporativa**.
 2. Escolha o perfil com o qual deseja trabalhar.
 3. Escolha **Token**.
 4. Para substituir o token, escolha **Substituir token**.

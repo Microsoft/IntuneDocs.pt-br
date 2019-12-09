@@ -16,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 1b2f483415d050486ae9979899d9308154a9b131
-ms.sourcegitcommit: a7b479c84b3af5b85528db676594bdb3a1ff6ec6
+ms.openlocfilehash: 348d1fe2fd236a2af11f7e58dc11530a5ce397bc
+ms.sourcegitcommit: 73b362173929f59e9df57e54e76d19834f155433
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/22/2019
-ms.locfileid: "74411353"
+ms.lasthandoff: 11/27/2019
+ms.locfileid: "74564197"
 ---
 # <a name="configure-smime-with-outlook-for-ios"></a>Configurar o S/MIME com o Outlook para iOS
 
@@ -62,14 +62,14 @@ O Outlook para iOS dá suporte a duas maneiras de entregar certificados aos disp
 Para configurar o S/MIME do Outlook para iOS no Gerenciador de Ponto de Extremidade, incluindo a entrega automática de certificados S/MIME que o Outlook para iOS pode usar, execute as seguintes etapas:
 
 ### <a name="add-the-microsoft-outlook-app"></a>Adicionar o aplicativo Microsoft Outlook
-1. Entre no [Centro de Administração do Gerenciador de Ponto de Extremidade da Microsoft](https://go.microsoft.com/fwlink/?linkid=2109431).
+1. Conecte-se ao [Intune](https://go.microsoft.com/fwlink/?linkid=2090973).
 2. Adicione o aplicativo Microsoft Outlook para iOS da loja de aplicativos ao Gerenciador de Ponto de Extremidade ou sincronize o Outlook para iOS no Programa de Compras por Volume da Apple. Para saber mais, confira [Adicionar aplicativos da loja do iOS ao Microsoft Intune](~/apps/store-apps-ios.md) ou [Como gerenciar aplicativos iOS e macOS adquiridos no Programa de Compras por Volume da Apple com o Microsoft Intune](~/apps/vpp-apps-ios.md).
 
 ### <a name="create-the-outlook-for-ios-smime-configuration-policy"></a>Criar a política de configuração do S/MIME do Outlook para iOS
 
 As etapas a seguir permitem criar e configurar a política de S/MIME do Outlook para iOS no Gerenciador de Ponto de Extremidade. Essas configurações fornecem a entrega automatizada dos certificados de autenticação e criptografia.
 
-1. No [Centro de Administração do Gerenciador de Ponto de Extremidade da Microsoft](https://go.microsoft.com/fwlink/?linkid=2109431), selecione **Aplicativos** > **Políticas de configuração de aplicativos** > **Adicionar**.<br>
+1. Entre no [Intune](https://go.microsoft.com/fwlink/?linkid=2090973) e selecione **Aplicativos** > **Políticas de configuração de aplicativos** > **Adicionar**.<br>
 O painel **Adicionar política de configuração** será exibido.
 2. Insira o **Nome** e a **Descrição** da política de configuração.
 3. Selecione **Dispositivos gerenciados** como o **Tipo de registro do dispositivo**.
