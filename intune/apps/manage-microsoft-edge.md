@@ -6,7 +6,7 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 08/19/2019
+ms.date: 11/26/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.subservice: apps
@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 890709ccf176f2b0cc6c4a3af986d1bce642572d
-ms.sourcegitcommit: 1a7f04c80548e035be82308d2618492f6542d3c0
+ms.openlocfilehash: e4761e2565402b4c3cdc993ff89cbedea8273609
+ms.sourcegitcommit: 73b362173929f59e9df57e54e76d19834f155433
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/07/2019
-ms.locfileid: "73754415"
+ms.lasthandoff: 11/27/2019
+ms.locfileid: "74563890"
 ---
 # <a name="manage-web-access-by-using-microsoft-edge-with-microsoft-intune"></a>Gerenciar o acesso via Web usando o Microsoft Edge com o Microsoft Intune
 
@@ -58,15 +58,15 @@ Se o Microsoft Edge não for alvo da política do Intune, os usuários não pode
 Você pode usar o Acesso Condicional do Azure AD para redirecionar os usuários para acessar o conteúdo corporativo somente pelo Microsoft Edge. Isso restringe ao Microsoft Edge protegido por política o acesso do navegador móvel a aplicativos Web conectados ao Azure AD. Isso bloqueia o acesso de outros navegadores desprotegidos, como Safari ou Chrome. É possível aplicar o Acesso Condicional a recursos do Azure como o Exchange Online e o SharePoint Online, o centro de administração do Microsoft 365 e até mesmo a sites locais que você tenha exposto a usuários externos por meio do [Proxy de Aplicativo do Azure AD](https://docs.microsoft.com/azure/active-directory/active-directory-application-proxy-get-started).
 
 Para restringir os aplicativos Web conectados ao Azure AD a usar o Microsoft Edge no iOS e Android:
-1. Conecte-se ao [Intune](https://go.microsoft.com/fwlink/?linkid=2090973).
+1. Entre no [Centro de Administração do Gerenciador de Ponto de Extremidade da Microsoft](https://go.microsoft.com/fwlink/?linkid=2109431).
 2. No nó do Intune, selecione **Acesso Condicional** > **Nova Política**.
-3. Selecione **Conceder** na seção **Controles de acesso** da folha.
+3. Selecione **Conceder** na seção **Controles de acesso** do painel.
 4. Selecione **Exigir aplicativo cliente aprovado**.
-5. Escolha **Selecionar** na folha **Conceder**. Esta política deve ser atribuída aos aplicativos de nuvem que você deseja tornar acessíveis apenas ao aplicativo Intune Managed Browser.
+5. Escolha **Selecionar** no painel **Conceder**. Esta política deve ser atribuída aos aplicativos de nuvem que você deseja tornar acessíveis apenas ao aplicativo Intune Managed Browser.
 
     ![Captura de tela da política de Acesso Condicional – Conceder](./media/manage-microsoft-edge/manage-microsoft-edge-01.png)
 
-6. Na seção Atribuições, selecione **Condições** > **Aplicativos cliente**. A folha **Aplicativos cliente** é exibida.
+6. Na seção Atribuições, selecione **Condições** > **Aplicativos**. O painel **Aplicativos** é exibido.
 7. Em **Configurar**, selecione **Sim** para aplicar a política a aplicativos cliente específicos.
 8. Verifique se o **Navegador** está selecionado como um aplicativo cliente.
 
@@ -97,29 +97,29 @@ O SSO requer que seu dispositivo seja registrado pelo aplicativo Microsoft Authe
 
 Para criar a configuração de aplicativo do Microsoft Edge:
 
-1. Conecte-se ao [Intune](https://go.microsoft.com/fwlink/?linkid=2090973).
-2. Selecione **Aplicativos de cliente** > **Políticas de configuração de aplicativo** > **Adicionar**.
-3. Na folha **Adicionar política configuração**, insira um **Nome** e uma **Descrição** opcional para as definições de configuração do aplicativo.
+1. Entre no [Centro de Administração do Gerenciador de Ponto de Extremidade da Microsoft](https://go.microsoft.com/fwlink/?linkid=2109431).
+2. Selecione **Aplicativos** > **Políticas de configuração de aplicativo** > **Adicionar**.
+3. No painel **Adicionar política de configuração**, insira um **Nome** e uma **Descrição** opcional para as definições de configuração do aplicativo.
 4. Para o tipo **Registro de Dispositivo**, escolha **Aplicativos gerenciados**.
-5. Escolha **Selecione o aplicativo necessário**. Em seguida, na folha **Aplicativos direcionados**, escolha o **Managed Browser** ou **Microsoft Edge** para iOS, Android ou ambos.
-6. Selecione **OK** para retornar à folha **Adicionar política de configuração**.
-7. Selecione **Definições de configuração**. Na folha **Configuração**, defina os pares de chave e valor para fornecer as configurações para o Microsoft Edge. Use as próximas seções deste artigo para saber mais sobre os diferentes pares de chave e valor que podem ser definidos.
+5. Escolha **Selecione o aplicativo necessário**. Em seguida, no painel **Aplicativos direcionados**, escolha **Managed Browser** ou **Microsoft Edge** para iOS, Android ou ambos.
+6. Selecione **OK** para retornar ao painel **Adicionar política de configuração**.
+7. Selecione **Definições de configuração**. No painel **Configuração**, defina os pares de chave e valor para fornecer as configurações ao Microsoft Edge. Use as próximas seções deste artigo para saber mais sobre os diferentes pares de chave e valor que podem ser definidos.
 
     > [!NOTE]
     > O Microsoft Edge usa os mesmos pares de chave e valor do Managed Browser. No Android, o Microsoft Edge deve ser direcionado com políticas de proteção de aplicativo para que as políticas de configuração de aplicativo entrem em vigor.
 
 8. Ao terminar, selecione **OK**.
-9. Na folha **Adicionar política de configuração**, escolha **Adicionar**.<br>
-    A nova configuração é criada e exibida na folha **Configuração de aplicativos**.
+9. No painel **Adicionar política de configuração**, escolha **Adicionar**.<br>
+    A nova configuração é criada e exibida no painel **Configuração de aplicativos**.
 
 ## <a name="assign-the-configuration-settings-you-created"></a>Atribuir as definições de configuração criadas 
 
 Atribua as configurações a grupos de usuários do Azure AD. Se esse usuário tiver o aplicativo de navegador protegido direcionado instalado, o aplicativo será gerenciado pelas configurações especificadas.
 
-1. Na folha **Aplicativos cliente** do painel de gerenciamento de aplicativo móvel do Intune, selecione **Políticas de configuração de aplicativo**.
+1. No painel **Aplicativos** do painel de gerenciamento de aplicativo móvel do Intune, selecione **Políticas de configuração de aplicativo**.
 2. Na lista de configurações de aplicativo, selecione aquela que você deseja atribuir.
-3. Na próxima folha, selecione **Atribuições**.
-4. Na folha **Atribuições**, selecione o grupo do Azure AD ao qual você deseja atribuir a configuração de aplicativo e, em seguida, selecione **OK**.
+3. No próximo painel, selecione **Atribuições**.
+4. No painel **Atribuições**, selecione o grupo do Azure AD ao qual você deseja atribuir a configuração de aplicativo e, em seguida, selecione **OK**.
 
 ## <a name="direct-users-to-microsoft-edge-instead-of-the-intune-managed-browser"></a>Direcionar usuários para o Microsoft Edge em vez do Intune Managed Browser 
 

@@ -6,7 +6,7 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 10/23/2019
+ms.date: 11/26/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.subservice: apps
@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: e97e88ad78e1b914543b7fa283f47863dce185fc
-ms.sourcegitcommit: 25acfc88b366d2da71c37d354a0238e4f1168325
+ms.openlocfilehash: e86aeb3191c1cfdf2fc9dfab3a4474327b3fbb06
+ms.sourcegitcommit: 73b362173929f59e9df57e54e76d19834f155433
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/23/2019
-ms.locfileid: "72813490"
+ms.lasthandoff: 11/27/2019
+ms.locfileid: "74564221"
 ---
 # <a name="configure-the-microsoft-managed-home-screen-app-for-android-enterprise"></a>Aplicativo de Tela Inicial Gerenciada da Microsoft para o Android Enterprise
 
@@ -31,12 +31,12 @@ A Tela Inicial Gerenciada é o aplicativo usado para dispositivos corporativos d
 
 ## <a name="when-to-configure-the-microsoft-managed-home-screen-app"></a>Quando configurar o aplicativo de Tela Inicial Gerenciada da Microsoft
 
-Normalmente, se as configurações estiverem disponíveis para você por meio da configuração de dispositivo, defina as configurações lá. Fazer isso lhe poupará tempo, minimizará os erros e dará a você uma melhor experiência de suporte do Intune. No entanto, algumas das configurações da Tela Inicial Gerenciada só estão disponíveis atualmente por meio da folha **Políticas de configuração de aplicativos** no console do Intune. Use este documento para saber como definir as configurações diferentes usando o designer de configuração ou um script JSON. 
+Normalmente, se as configurações estiverem disponíveis para você por meio da configuração de dispositivo, defina as configurações lá. Fazer isso lhe poupará tempo, minimizará os erros e dará a você uma melhor experiência de suporte do Intune. No entanto, algumas das configurações da Tela Inicial Gerenciada só estão disponíveis atualmente por meio do painel **Políticas de configuração de aplicativos** no console do Intune. Use este documento para saber como definir as configurações diferentes usando o designer de configuração ou um script JSON. 
 
 > [!NOTE]
-> No momento, é possível e aconselhável permitir aplicativos e links da Web fixados por meio de **Aplicativos Cliente** e da **Configuração do Dispositivo**. Para obter a lista completa das configurações disponíveis na **Configuração do dispositivo** que afetam a Tela Inicial Gerenciada, confira as [Configurações do dispositivo dedicado](../configuration/device-restrictions-android-for-work.md#dedicated-device-settings).  
+> No momento, é possível e aconselhável permitir aplicativos e links da Web fixados por meio de **Aplicativos** e da **Configuração do dispositivo**. Para obter a lista completa das configurações disponíveis na **Configuração do dispositivo** que afetam a Tela Inicial Gerenciada, confira as [Configurações do dispositivo dedicado](../configuration/device-restrictions-android-for-work.md#dedicated-device-settings).  
 
-Primeiro, navegue até o console do Intune no portal do Azure e acesse **Aplicativos cliente** > **Políticas de configuração de aplicativos**. Adicione uma política de configuração para **Dispositivos gerenciados** em execução no **Android** e escolha **Tela Inicial Gerenciada** como o aplicativo associado. Clique em **Definições de configuração** para definir as diferentes configurações de Tela Inicial Gerenciada disponíveis. 
+Primeiro, navegue até o [Centro de Administração do Gerenciador de Ponto de Extremidade da Microsoft](https://go.microsoft.com/fwlink/?linkid=2109431) e selecione **Aplicativos** > **Políticas de configuração de aplicativo**. Adicione uma política de configuração para **Dispositivos gerenciados** em execução no **Android** e escolha **Tela Inicial Gerenciada** como o aplicativo associado. Clique em **Definições de configuração** para definir as diferentes configurações de Tela Inicial Gerenciada disponíveis. 
 
 ## <a name="choosing-a-configuration-settings-format"></a>Como escolher um formato de definições de configuração
 

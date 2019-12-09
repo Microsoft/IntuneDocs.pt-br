@@ -6,7 +6,7 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 09/09/2019
+ms.date: 11/26/2019
 ms.topic: tutorial
 ms.service: microsoft-intune
 ms.subservice: apps
@@ -18,12 +18,12 @@ ms.reviewer: ''
 ms.suite: ems
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 86e9d100847641064f472f0c3da0c9ec694f72dd
-ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
+ms.openlocfilehash: a3b01c1444b44e3f5c66fc129f78f321c9c9f5aa
+ms.sourcegitcommit: 73b362173929f59e9df57e54e76d19834f155433
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/16/2019
-ms.locfileid: "72496729"
+ms.lasthandoff: 11/27/2019
+ms.locfileid: "74563392"
 ---
 # <a name="tutorial-configure-slack-to-use-intune-for-emm-and-app-configuration"></a>Tutorial: Configurar o Slack para usar o Intune para EMM e configuração de aplicativos
 
@@ -55,7 +55,7 @@ Adicione o aplicativo Slack para EMM do iOS ao seu locatário do Intune e crie u
 
 ### <a name="add-slack-for-emm-to-intune"></a>Adicionar o Slack para EMM ao Intune
 Adicione o Slack para EMM como um aplicativo gerenciado para iOS no Intune e atribua os usuários do Slack. Os aplicativos são específicos da plataforma; portanto, você precisará adicionar um aplicativo do Intune separado para seus usuários Slack em dispositivos Android.
-1. No Intune, selecione **Aplicativos cliente** > **Aplicativos** > **Adicionar**.
+1. No Intune, selecione **Aplicativos** > **Todos os aplicativos** > **Adicionar**.
 2. Em Tipo de Aplicativo, selecione **Aplicativo da Loja - iOS**.
 3. Selecione **Pesquisar na App Store**. Insira o termo de pesquisa "Slack para EMM" e selecione o aplicativo.
 4. Selecione **Informações do aplicativo** e configure todas as alterações necessárias.
@@ -71,7 +71,7 @@ Adicione o Slack para EMM como um aplicativo gerenciado para iOS no Intune e atr
 
 ### <a name="add-an-app-configuration-policy-for-slack-for-emm"></a>Adicionar uma política de configuração do aplicativo para Slack para EMM
 Adicione uma política de configuração do aplicativo para Slack para EMM para iOS. As políticas de configuração de aplicativo para dispositivos gerenciados são específicas da plataforma; portanto, você precisará adicionar uma política separada para seus usuários do Slack em dispositivos Android.
-1. No Intune, selecione **Aplicativos de cliente** > **Políticas de configuração de aplicativo** > **Adicionar**.
+1. No Intune, escolha **Aplicativos** > **Políticas de configuração de aplicativo** > **Adicionar**.
 2. Em Nome, digite teste de política de configuração do aplicativo Slack.
 3. Em Tipo de registro de dispositivos, selecione **Dispositivos gerenciados**.
 4. Em Plataforma, selecione **iOS**.
@@ -107,7 +107,7 @@ Adicione o aplicativo do Google Play gerenciado para Slack ao seu locatário do 
 
 ### <a name="add-slack-to-intune"></a>Adicionar Slack ao Intune
 Adicione o aplicativo Slack como um aplicativo gerenciado do Google Play no Intune e atribua os usuários do Slack. Os aplicativos são específicos da plataforma; portanto, você precisará adicionar um aplicativo do Intune separado para seus usuários Slack em dispositivos iOS.
-1. No Intune, selecione **Aplicativos cliente** > **Aplicativos** > **Adicionar**.
+1. No Intune, selecione **Aplicativos** > **Todos os aplicativos** > **Adicionar**.
 2. Em Tipo de aplicativo, selecione **Loja do aplicativo – Google Play gerenciado**.
 3. Selecione **Google Play gerenciado - Aprovar**. Insira o termo de pesquisa "Slack para EMM" e selecione o aplicativo.
 4. Selecione **Aprovar**.
@@ -122,7 +122,7 @@ Adicione o aplicativo Slack como um aplicativo gerenciado do Google Play no Intu
 
 ### <a name="add-an-app-configuration-policy-for-slack"></a>Adicionar uma política de configuração do aplicativo para Slack
 Adicione uma política de configuração do aplicativo para Slack. As políticas de configuração de aplicativo para dispositivos gerenciados são específicas da plataforma; portanto, você precisará adicionar uma política separada para seus usuários do Slack em dispositivos iOS.
-1. No Intune, selecione **Aplicativos de cliente** > **Políticas de configuração de aplicativo** > **Adicionar**.
+1. No Intune, escolha **Aplicativos** > **Políticas de configuração de aplicativo** > **Adicionar**.
 2. Em Nome, digite teste de política de configuração do aplicativo Slack.
 3. Em Tipo de registro de dispositivos, selecione **Dispositivos gerenciados**.
 4. Em Plataforma, selecione **Android**.

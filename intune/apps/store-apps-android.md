@@ -6,7 +6,7 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 08/27/2019
+ms.date: 11/26/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.subservice: apps
@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 3153a470649e86bbafc9e8295a1c68532fc27c63
-ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
+ms.openlocfilehash: ec800064d109cca42878c79ade6777de9b782015
+ms.sourcegitcommit: 73b362173929f59e9df57e54e76d19834f155433
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/16/2019
-ms.locfileid: "72497685"
+ms.lasthandoff: 11/27/2019
+ms.locfileid: "74563497"
 ---
 # <a name="add-android-store-apps-to-microsoft-intune"></a>Adicionar aplicativos da Android Store ao Microsoft Intune
 
@@ -35,12 +35,10 @@ Antes de atribuir um aplicativo em um dispositivo ou um grupo de usuários, voc�
 
 É possível adicionar um aplicativo da Android Store ao Intune do Portal do Azure ao fazer o seguinte:
 
-1. Conecte-se ao [Intune](https://go.microsoft.com/fwlink/?linkid=2090973).
-3. No painel **Intune**, selecione **Aplicativos clientes**.
-4. No painel da carga de trabalho **Aplicativos clientes**, em **Gerenciar**, selecione **Aplicativos**.
-5. Selecione **Adicionar**.
-6. No painel **Adicionar Aplicativo**, selecione **Android** nos tipos de **Aplicativos da loja** disponíveis.
-7. Para configurar as informações do aplicativo, selecione **Configurar** e, em seguida, forneça as informações a seguir. Para aplicativos Android, navegue até a [Google Play Store](https://play.google.com/store) e procure o aplicativo que deseja implantar. Selecione o aplicativo e anote seus detalhes. Dependendo do aplicativo escolhido, alguns dos valores podem ter sido preenchidos automaticamente.
+1. Entre no [Centro de Administração do Gerenciador de Ponto de Extremidade da Microsoft](https://go.microsoft.com/fwlink/?linkid=2109431).
+2. Selecione **Aplicativos** > **Todos os aplicativos** > **Adicionar**.
+3. No painel **Adicionar Aplicativo**, selecione **Android** nos tipos de **Aplicativos da loja** disponíveis.
+4. Para configurar as informações do aplicativo, selecione **Configurar** e, em seguida, forneça as informações a seguir. Para aplicativos Android, navegue até a [Google Play Store](https://play.google.com/store) e procure o aplicativo que deseja implantar. Selecione o aplicativo e anote seus detalhes. Dependendo do aplicativo escolhido, alguns dos valores podem ter sido preenchidos automaticamente.
     - **Nome**: Insira o nome do aplicativo como ele será exibido no Portal da Empresa. Verifique se todos os nomes de aplicativo usados são exclusivos. Se um nome de aplicativo estiver duplicado, apenas um nome será exibido aos usuários no portal da empresa.
     - **Descrição**: Insira uma descrição para o aplicativo. Essa descrição é exibida para usuários no portal da empresa.
     - **Editor**: Insira o nome do editor do aplicativo.
@@ -54,8 +52,8 @@ Antes de atribuir um aplicativo em um dispositivo ou um grupo de usuários, voc�
     - **Proprietários**: Opcionalmente, insira um nome para o proprietário desse aplicativo, por exemplo, *Departamento de RH*.
     - **Observações**: Opcionalmente, insira as observações que você deseja associar a esse aplicativo.
     - **Logotipo**: Opcionalmente, carregue um ícone que será associado ao aplicativo. Esse ícone é exibido com o aplicativo quando os usuários navegam pelo portal da empresa.
-8. Selecione **OK**.
-9. Selecione **Adicionar**.
+5. Selecione **OK**.
+6. Selecione **Adicionar**.
 
 O aplicativo que você criou é exibido na lista de aplicativos, na qual você poderá atribuí-lo aos grupos que selecionar. 
 

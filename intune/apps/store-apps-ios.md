@@ -6,7 +6,7 @@ keywords: Intune
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 08/27/2019
+ms.date: 11/26/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.subservice: apps
@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: c53166b6e6dc6ab3f780ccdfd4f11eb4c6a9d730
-ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
+ms.openlocfilehash: c5616b27b97d5623958ec872390e2a6de79db3c5
+ms.sourcegitcommit: 73b362173929f59e9df57e54e76d19834f155433
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/16/2019
-ms.locfileid: "72497554"
+ms.lasthandoff: 11/27/2019
+ms.locfileid: "74563444"
 ---
 # <a name="add-ios-store-apps-to-microsoft-intune"></a>Adicionar aplicativos da loja do iOS ao Microsoft Intune
 
@@ -41,18 +41,16 @@ Você poderá atribuir aplicativos usando esse método apenas se eles forem grat
 >[!NOTE]
 >Ao trabalhar com o Microsoft Intune, recomendamos que você use o Microsoft Edge ou o Google Chrome.
 
-1. Conecte-se ao [Intune](https://go.microsoft.com/fwlink/?linkid=2090973).
-3. No painel **Intune**, selecione **Aplicativos clientes**.
-4. No painel da carga de trabalho **Aplicativos clientes**, em **Gerenciar**, selecione **Aplicativos**.
-5. No painel **Aplicativos**, selecione **Adicionar**.
-6. Na lista **Tipo de aplicativo**, em **Loja de aplicativos**, selecione **iOS**.
-7. Selecione **Pesquisar na App Store**.
-8. No painel **Pesquisar na App Store**, escolha a localidade do país/região da App Store.
-9. Na caixa **Pesquisar**, digite o nome (ou parte do nome) do aplicativo.  
+1. Entre no [Centro de Administração do Gerenciador de Ponto de Extremidade da Microsoft](https://go.microsoft.com/fwlink/?linkid=2109431).
+2. Selecione **Aplicativos** > **Todos os aplicativos** > **Adicionar**.
+3. Na lista **Tipo de aplicativo**, em **Loja de aplicativos**, selecione **iOS**.
+4. Selecione **Pesquisar na App Store**.
+5. No painel **Pesquisar na App Store**, escolha a localidade do país/região da App Store.
+6. Na caixa **Pesquisar**, digite o nome (ou parte do nome) do aplicativo.  
     O Intune pesquisará na loja e retornará uma lista com resultados relevantes.
-10. Na lista de resultados, selecione o aplicativo desejado e, em seguida, selecione **Selecionar**.
-11. Na folha **Adicionar aplicativo**, selecione **Informações do aplicativo** para configurar o aplicativo.
-12. No painel **Informações do aplicativo**, adicione as informações do aplicativo. Dependendo do aplicativo escolhido, alguns dos valores neste painel podem ter sido preenchidos automaticamente:
+7. Na lista de resultados, selecione o aplicativo desejado e, em seguida, selecione **Selecionar**.
+8. Na folha **Adicionar aplicativo**, selecione **Informações do aplicativo** para configurar o aplicativo.
+9. No painel **Informações do aplicativo**, adicione as informações do aplicativo. Dependendo do aplicativo escolhido, alguns dos valores neste painel podem ter sido preenchidos automaticamente:
     - **Nome**: Insira o nome do aplicativo como ele será exibido no Portal da Empresa. Verifique se todos os nomes de aplicativo usados são exclusivos. Se um nome de aplicativo estiver duplicado, apenas um nome será exibido aos usuários no portal da empresa.
     - **Descrição**: Insira uma descrição para o aplicativo. Essa descrição é exibida para usuários no portal da empresa.
     - **Editor**: Insira o nome do editor do aplicativo.
@@ -67,8 +65,8 @@ Você poderá atribuir aplicativos usando esse método apenas se eles forem grat
     - **Proprietários**: Opcionalmente, insira um nome para o proprietário desse aplicativo, por exemplo, *Departamento de RH*. Este campo estará visível somente para administradores, e não para os usuários.
     - **Observações**: Opcionalmente, insira as observações que você deseja associar a esse aplicativo. Esse campo só é visível para administradores, e não para usuários finais.
     - **Logotipo**: Opcionalmente, carregue um ícone que será associado ao aplicativo. Esse ícone é exibido com o aplicativo quando os usuários navegam pelo portal da empresa.
-13. Selecione **OK**.
-14. Selecione **Adicionar**.
+10. Selecione **OK**.
+11. Selecione **Adicionar**.
 
 O aplicativo que você criou é exibido na lista de aplicativos, na qual você poderá atribuí-lo aos grupos que selecionar.
 

@@ -15,12 +15,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 78620818bfd13f0292e159c6a3670b5e3af53dab
-ms.sourcegitcommit: 556b7ea2049014c9027f0e44affd3f301fab55fc
+ms.openlocfilehash: e9649a84650a555e964cd9200ed2295fee5efb9a
+ms.sourcegitcommit: 73b362173929f59e9df57e54e76d19834f155433
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/06/2019
-ms.locfileid: "73709495"
+ms.lasthandoff: 11/27/2019
+ms.locfileid: "74562305"
 ---
 # <a name="quickstart-set-up-automatic-enrollment-for-windows-10-devices"></a>Início Rápido: Configurar o registro automático para dispositivos Windows 10
 
@@ -41,7 +41,7 @@ Entre no [Centro de Administração do Gerenciador de Ponto de Extremidade da Mi
 
 Neste exemplo, você usará o registro de MDM para que dispositivos corporativos e traga seu próprio dispositivo podem ser registrados automaticamente. Você se inscreverá para uma assinatura do Azure Active Directory Premium.
 
-1. No Azure, escolha o **Azure Active Directory** > **Mobility (MDM e MAM)** .
+1. No [portal do Azure](https://portal.azure.com), escolha o **Azure Active Directory** > **Mobility (MDM e MAM)** .
 2. Selecione **Receber uma avaliação gratuita Premium para usar este recurso**. Esta opção permitirá o registro automático usando a avaliação Premium gratuita do Azure Active Directory. 
 
     ![Selecione a avaliação Premium gratuita do Azure Active Directory](./media/quickstart-setup-auto-enrollment/quickstart-setup-auto-enrollment-01.png)

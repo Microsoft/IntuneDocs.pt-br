@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: e538204306ce80d6a13739fc981edf2748a622de
-ms.sourcegitcommit: 28622c5455adfbce25a404de4d0437fa2b5370be
+ms.openlocfilehash: d77a275e3a48845f56b22ecc21b75f664ea619c5
+ms.sourcegitcommit: f26039d674eb4d61ab68264dd1a10b2e5e1d842c
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/07/2019
-ms.locfileid: "73713470"
+ms.lasthandoff: 12/02/2019
+ms.locfileid: "74691739"
 ---
 # <a name="set-up-ios-and-ipados-user-enrollment-preview"></a>Configurar o Registro de usuário do iOS e iPadOS (versão prévia)
 
@@ -43,7 +43,7 @@ Para obter mais informações sobre as opções disponíveis com o Registro de u
 
 Um perfil de registro define as configurações aplicadas a um grupo de dispositivos durante o registro. 
 
-1. No [Centro de Administração do Gerenciador de Ponto de Extremidade da Microsoft](https://go.microsoft.com/fwlink/?linkid=2109431), selecione **Registro de dispositivos** > **Registro da Apple** > **Tipos de registro (visualização)**  > **Criar perfil** > **iOS**. Nesse perfil, você indicará qual experiência de registro os usuários finais do iOS e do iPadOS terão em dispositivos não registrados por meio de um método corporativo da Apple. Se você quiser fazer alterações, poderá editar esse perfil depois de criá-lo.
+1. No [Centro de Administração do Gerenciador de Ponto de Extremidade da Microsoft](https://go.microsoft.com/fwlink/?linkid=2109431), selecione **Dispositivos** > **iOS** > **Registro do iOS** > **Tipos de registro (versão prévia)**  > **Criar perfil** > **iOS/iPadOS**. Nesse perfil, você indicará qual experiência de registro os usuários finais do iOS e do iPadOS terão em dispositivos não registrados por meio de um método corporativo da Apple. Se você quiser fazer alterações, poderá editar esse perfil depois de criá-lo.
 
     ![Criar perfil de registro da Apple](./media/ios-user-enrollment/create-profile.png)
 
@@ -88,7 +88,7 @@ Um perfil de registro define as configurações aplicadas a um grupo de disposit
 
 Depois de criar mais de um perfil de tipo de registro, é possível alterar a ordem de prioridade na qual eles são aplicados.
 
-1. No [Centro de Administração do Gerenciador de Ponto de Extremidade da Microsoft](https://go.microsoft.com/fwlink/?linkid=2109431), selecione **Registro de dispositivos** > **Registro da Apple** > **Tipos de registro (visualização)** .
+1. No [Centro de Administração do Gerenciador de Ponto de Extremidade da Microsoft](https://go.microsoft.com/fwlink/?linkid=2109431), selecione **Dispositivos** > **iOS** > **Registro do iOS** > **Tipos de registro (versão prévia)** .
 2. Arraste e solte os perfis da lista na ordem que você deseja aplicá-los.
 
 Em caso de conflitos entre os perfis de qualquer usuário, o perfil de maior prioridade é aplicado ao usuário.

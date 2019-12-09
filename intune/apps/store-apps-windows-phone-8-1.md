@@ -6,7 +6,7 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 08/23/2019
+ms.date: 11/26/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.subservice: apps
@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 12218ec20f8cc00ebcf2294387f711ea39d79256
-ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
+ms.openlocfilehash: 3168d517ebbb59dc9d6fe5a9c262ad8e1c909619
+ms.sourcegitcommit: 73b362173929f59e9df57e54e76d19834f155433
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/16/2019
-ms.locfileid: "72507070"
+ms.lasthandoff: 11/27/2019
+ms.locfileid: "74563817"
 ---
 # <a name="add-windows-phone-81-store-apps-to-microsoft-intune"></a>Adicionar aplicativos da loja do Windows Phone 8.1 ao Microsoft Intune
 
@@ -34,12 +34,10 @@ Antes de atribuir um aplicativo em um dispositivo ou um grupo de usuários, voc�
 ## <a name="add-an-app-to-intune"></a>Adicionar um aplicativo ao Intune
 É possível adicionar um aplicativo da loja do Windows Phone 8.1 ao Intune do Portal do Azure ao fazer o seguinte:
 
-1. Conecte-se ao [Intune](https://go.microsoft.com/fwlink/?linkid=2090973).
-3. No painel **Intune**, selecione **Aplicativos clientes**.
-4. No painel da carga de trabalho **Aplicativos clientes**, em **Gerenciar**, selecione **Aplicativos**.
-5. No painel **Aplicativos**, selecione **Adicionar**.
-6. No painel **Adicionar aplicativo**, selecione um **Tipo de aplicativo** do **Windows Phone 8.1** e selecione **Informações do aplicativo**.
-7. No painel **Informações do aplicativo**, adicione as informações do aplicativo. Dependendo do aplicativo escolhido, alguns dos valores neste painel podem ter sido preenchidos automaticamente:
+1. Entre no [Centro de Administração do Gerenciador de Ponto de Extremidade da Microsoft](https://go.microsoft.com/fwlink/?linkid=2109431).
+2. Selecione **Aplicativos** > **Todos os aplicativos** > **Adicionar**.
+3. No painel **Adicionar aplicativo**, selecione um **Tipo de aplicativo** do **Windows Phone 8.1** e selecione **Informações do aplicativo**.
+4. No painel **Informações do aplicativo**, adicione as informações do aplicativo. Dependendo do aplicativo escolhido, alguns dos valores neste painel podem ter sido preenchidos automaticamente:
     - **Nome**: Insira o nome do aplicativo como ele será exibido no Portal da Empresa. Verifique se todos os nomes de aplicativo usados são exclusivos. Se um nome de aplicativo estiver duplicado, apenas um nome será exibido aos usuários no portal da empresa.
     - **Descrição**: Insira uma descrição para o aplicativo. Essa descrição é exibida para usuários no portal da empresa.
     - **Editor**: Insira o nome do editor do aplicativo.
@@ -52,8 +50,8 @@ Antes de atribuir um aplicativo em um dispositivo ou um grupo de usuários, voc�
     - **Proprietários**: Opcionalmente, insira um nome para o proprietário desse aplicativo, por exemplo, *Departamento de RH*.
     - **Observações**: Opcionalmente, insira as observações que você deseja associar a esse aplicativo.
     - **Logotipo**: Opcionalmente, carregue um ícone que será associado ao aplicativo. Esse ícone é exibido com o aplicativo quando os usuários navegam pelo portal da empresa.
-8. Selecione **OK**.
-9. Selecione **Adicionar**.
+5. Selecione **OK**.
+6. Selecione **Adicionar**.
 
 O aplicativo que você criou é exibido na lista de aplicativos, na qual você poderá atribuí-lo aos grupos que selecionar.
 

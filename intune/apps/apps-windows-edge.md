@@ -6,7 +6,7 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 10/24/2019
+ms.date: 11/26/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.localizationpriority: high
@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: ''
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: af24b5fe33bc1e794529ef5a5ab6975eed4fb9cc
-ms.sourcegitcommit: 556b7ea2049014c9027f0e44affd3f301fab55fc
+ms.openlocfilehash: b4839340ba1f3bad6f28a1120d882d0f600b1d44
+ms.sourcegitcommit: 73b362173929f59e9df57e54e76d19834f155433
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/06/2019
-ms.locfileid: "73709918"
+ms.lasthandoff: 11/27/2019
+ms.locfileid: "74563575"
 ---
 # <a name="add-microsoft-edge-for-windows-10-to-microsoft-intune"></a>Adicionar Microsoft Edge para Windows 10 ao Microsoft Intune
 
@@ -34,7 +34,7 @@ Antes que você possa implantar, configurar, monitorar ou proteger aplicativos, 
 > [!NOTE]
 > O Microsoft Edge *versão 77 e posteriores* está disponível para macOS também.
 > 
-> Você não pode usar a implantação de aplicativos interna do Microsoft Edge para computadores de ingresso no local de trabalho. A implantação de aplicativos internos requer a extensão de gerenciamento do Intune, que só existe para dispositivos ingressados no AAD. Você ainda pode implantar o Microsoft Edge *versão 77 e posteriores* usando um *.msi* carregado para **Aplicativos cliente**, confira [Adicionar um aplicativo de linha de negócios para Windows ao Microsoft Intune](~/apps/lob-apps-windows.md).
+> Você não pode usar a implantação de aplicativos interna do Microsoft Edge para computadores de ingresso no local de trabalho. A implantação de aplicativos internos requer a extensão de gerenciamento do Intune, que só existe para dispositivos ingressados no AAD. Você ainda pode implantar o Microsoft Edge *versão 77 e posteriores* usando um *.msi* carregado em **Aplicativos**, confira [Adicionar um aplicativo de linha de negócios para Windows ao Microsoft Intune](~/apps/lob-apps-windows.md).
 
 ## <a name="prerequisites"></a>Pré-requisitos
 - O Windows 10 RS2 e superiores são necessários.
@@ -43,15 +43,15 @@ Antes que você possa implantar, configurar, monitorar ou proteger aplicativos, 
 ## <a name="configure-the-app-in-intune"></a>Configurar o aplicativo no Intune
 Você pode adicionar um Microsoft Edge versão 77 e posteriores ao Intune usando as seguintes etapas:
 
-1. Conecte-se ao [Intune](https://go.microsoft.com/fwlink/?linkid=2090973).
-2. No painel do **Intune**, selecione **Aplicativos cliente** > **Aplicativos** > **Adicionar**.
+1. Entre no [Centro de Administração do Gerenciador de Ponto de Extremidade da Microsoft](https://go.microsoft.com/fwlink/?linkid=2109431).
+2. Selecione **Aplicativos** > **Todos os aplicativos** > **Adicionar**.
 3. Na lista **Tipo de aplicativo** no **Microsoft Edge, versão 77 e posteriores**, selecione **Windows 10**.
 
 ## <a name="configure-app-information"></a>Configurar informações do aplicativo
 Nesta etapa, forneça informações sobre a implantação deste aplicativo. Essas informações ajudam a identificar o aplicativo no Intune e ajudar os usuários a encontrá-lo no aplicativo no Portal da Empresa.
 
-1. Clique em **Informações do aplicativo** para exibir a folha **Informações do aplicativo**.
-2. Na folha **Informações do aplicativo**, forneça informações sobre a implantação deste aplicativo. Essas informações ajudam a identificar o aplicativo no Intune e ajudar os usuários a encontrá-lo no aplicativo no Portal da Empresa.
+1. Clique em **Informações do aplicativo** para exibir o painel **Informações do aplicativo**.
+2. No painel **Informações do aplicativo**, forneça informações sobre a implantação desse aplicativo. Essas informações ajudam a identificar o aplicativo no Intune e ajudar os usuários a encontrá-lo no aplicativo no Portal da Empresa.
     - **Nome**: Insira o nome do aplicativo como ele será exibido no portal da empresa. Verifique se todos os nomes são exclusivos. Se o mesmo nome de aplicativo for usado duas vezes, apenas um dos aplicativos será exibido para usuários no portal da empresa.
     - **Descrição**: Insira uma descrição para o aplicativo. Por exemplo, você pode listar os usuários direcionados na descrição.
     - **Editor**: a Microsoft aparece como o editor.
@@ -67,8 +67,8 @@ Nesta etapa, forneça informações sobre a implantação deste aplicativo. Essa
 ## <a name="configure-app-settings"></a>Definir configurações do aplicativo
 Nesta etapa, configure as opções de instalação do aplicativo.
 
-1. Na folha **Adicionar Aplicativo**, selecione **Configurações do aplicativo**.
-2. Na folha **Configurações do aplicativo**, selecione **Beta** ou **Dev** na lista **Canal** para determinar qual Canal do Edge do qual você implantará o aplicativo.
+1. No painel **Adicionar Aplicativo**, selecione **Configurações do aplicativo**.
+2. No painel **Configurações do aplicativo**, selecione **Beta** ou **Dev** na lista **Canal** para determinar de qual Canal do Edge você implantará o aplicativo.
     - O Canal **Beta** é a experiência de versão prévia mais estável do Microsoft Edge e a melhor opção para um piloto completo em sua organização. Com as principais atualizações a cada seis semanas, cada versão incorpora os aprendizados e melhorias do Canal de Desenvolvimento.
     - O Canal de **Desenvolvimento** está pronto para comentários empresariais sobre o Windows, Windows Server e macOS. Ele é atualizado a cada semana e contém as melhorias e correções mais recentes.
 
@@ -85,7 +85,7 @@ Você pode usar as marcas de escopo para determinar quem pode ver as informaçõ
 4.  Clique em **Selecionar** > **OK**.
 
 ## <a name="add-the-app"></a>Adicionar o aplicativo
-Quando você terminar de configurar o aplicativo, selecione **Adicionar** na folha **Adicionar aplicativo**. 
+Quando você terminar de configurar o aplicativo, selecione **Adicionar** no painel **Adicionar aplicativo**. 
 
 O aplicativo que você criou é exibido na lista de aplicativos, na qual você poderá atribuí-lo aos grupos que selecionar. 
 

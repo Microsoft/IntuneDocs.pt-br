@@ -6,7 +6,7 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 08/22/2019
+ms.date: 11/26/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.subservice: apps
@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: e0e1ff8fd39d301bd685e9806c319f49e9189d7f
-ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
+ms.openlocfilehash: 41c08d1912bf9c79507c2a6627205979504f340d
+ms.sourcegitcommit: 73b362173929f59e9df57e54e76d19834f155433
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/16/2019
-ms.locfileid: "72507407"
+ms.lasthandoff: 11/27/2019
+ms.locfileid: "74564232"
 ---
 # <a name="get-ready-to-configure-app-protection-policies-for-windows-10"></a>Prepare-se para configurar as políticas de proteção do aplicativo para Windows 10 
 
@@ -33,13 +33,12 @@ Habilite o MAM (gerenciamento de aplicativo móvel) para Windows 10 configurando
 
 ## <a name="to-configure-the-mam-provider"></a>Para configurar o provedor de MAM
 
-1. Entre no Portal do Azure e escolha **Azure Active Directory.**
-
-2. Escolha **Mobilidade (MDM e MAM)** , no grupo **Gerenciar**.
-
-3. Clique em **Microsoft Intune**.
-
-4. Defina as configurações no grupo **Restaurar as URLs padrão do MAM**, na folha **Configurar**.
+1. Entre no [Centro de Administração do Gerenciador de Ponto de Extremidade da Microsoft](https://go.microsoft.com/fwlink/?linkid=2109431).
+2. Selecione **Todos os serviços** e escolha **M365 Azure Active Directory** para alternar os painéis.
+3. Selecione **Azure Active Directory**.
+4. Escolha **Mobilidade (MDM e MAM)** , no grupo **Gerenciar**.
+5. Clique em **Microsoft Intune**.
+6. Defina as configurações no grupo **Restaurar as URLs padrão do MAM** do painel **Configurar**.
 
    **Escopo de usuário do MAM**  
    Use o registro automático do MAM para gerenciar dados empresariais nos dispositivos Windows dos funcionários. O registro automático do MAM será configurado para cenários Traga seu próprio dispositivo.<ul><li>**Nenhum**<br>Selecione se nenhum usuário puder se registrar no MAM.</li><li>**Alguns**<br>Escolha os grupos do Microsoft Azure AD cujos usuários serão registrados no MAM.</li><li>**Todos**<br>Determine se todos os funcionários podem se registrar no MAM.</li></ul>
@@ -53,7 +52,7 @@ Habilite o MAM (gerenciamento de aplicativo móvel) para Windows 10 configurando
    **URL de Conformidade do MAM**  
    A URL de conformidade do MAM não é compatível com o Microsoft Intune. Essa caixa de entrada deve ser deixada em branco para que as políticas de proteção sejam aplicadas. 
 
-5. Clique em **Salvar**.
+7. Clique em **Salvar**.
 
 ## <a name="next-steps"></a>Próximas etapas
 

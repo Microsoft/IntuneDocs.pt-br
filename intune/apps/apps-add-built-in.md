@@ -6,7 +6,7 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 11/06/2019
+ms.date: 11/26/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.subservice: apps
@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 82a2414e7458d1eb0ce48c5afb8ac1bc9bddb636
-ms.sourcegitcommit: 28622c5455adfbce25a404de4d0437fa2b5370be
+ms.openlocfilehash: a92699ccce4f0b2590e526b3442cd45bfda6407c
+ms.sourcegitcommit: 73b362173929f59e9df57e54e76d19834f155433
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/07/2019
-ms.locfileid: "73712932"
+ms.lasthandoff: 11/27/2019
+ms.locfileid: "74563594"
 ---
 # <a name="add-built-in-apps-to-microsoft-intune"></a>Adicionar aplicativos nativos ao Microsoft Intune
 
@@ -37,24 +37,20 @@ As versões anteriores do console do Intune forneciam vários aplicativos padrã
 ## <a name="add-a-built-in-app"></a>Adicionar um aplicativo nativo
 
 Para adicionar um aplicativo nativo a seus aplicativos disponíveis no Microsoft Intune, faça o seguinte:
-1. Entre no Portal do Azure.
-2. Para exibir o painel do Microsoft Intune, selecione **Mais Serviços** > **Monitoramento + Gerenciamento** > **Intune**.
-3. No painel **Intune**, selecione **Aplicativos clientes**.
-4. No painel **Aplicativos clientes**, em **Gerenciar**, selecione **Aplicativos**.
-5. Selecione **Adicionar**.
-6. No painel do aplicativo **Adicionar**, na lista **Tipo de aplicativo**, selecione **Aplicativo interno**.
-7. Escolha **Selecionar aplicativo**.
-8. No painel **Aplicativo interno**, selecione os aplicativos que você deseja incluir.
-9. No painel **Adicionar aplicativo**, selecione **Adicionar**.
+1. Entre no [Centro de Administração do Gerenciador de Ponto de Extremidade da Microsoft](https://go.microsoft.com/fwlink/?linkid=2109431).
+2. Selecione **Aplicativos** > **Todos os aplicativos** > **Adicionar**.
+3. No painel do aplicativo **Adicionar**, na lista **Tipo de aplicativo**, selecione **Aplicativo interno**.
+4. Escolha **Selecionar aplicativo**.
+5. No painel **Aplicativo interno**, selecione os aplicativos que você deseja incluir.
+6. No painel **Adicionar aplicativo**, selecione **Adicionar**.
 
 
 ## <a name="configure-app-information"></a>Configurar informações do aplicativo
 
 Você pode modificar as informações sobre o aplicativo nativo. Essas informações ajudam a identificar o aplicativo no Intune e ajudar os usuários a encontrá-lo no aplicativo Portal da Empresa.
-1. No painel **Aplicativos Cliente – Aplicativos**, selecione o aplicativo nativo que você deseja modificar.  
-    Será exibido um painel para o aplicativo nativo.
-2. Em **Gerenciar**, selecione a opção **Propriedades**.
-3. Para modificar as informações do aplicativo nativo, selecione a opção **Configurar**.
+1. Selecione **Aplicativos** > **Todos os aplicativos** e escolha o aplicativo nativo que você deseja modificar.  
+   Será exibido um painel para o aplicativo nativo.
+2. Selecione **Propriedades** > **Configurar**.
 4. No painel **Informações do aplicativo**, você pode modificar as seguintes informações:
     - **Nome**: insira o nome do aplicativo interno como ele é exibido no portal da empresa. Certifique-se de que todos os nomes usados sejam exclusivos. Se o mesmo nome de aplicativo for usado duas vezes, apenas um dos aplicativos será exibido para usuários no portal da empresa.
     - **Descrição**: Insira uma descrição para o aplicativo. 

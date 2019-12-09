@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: fcc5dea1a3f9e6a1f2bec877688962d7be70cc7c
-ms.sourcegitcommit: d2d18eef64bcf16eec1a48fcb67f1362537c0245
+ms.openlocfilehash: ffabcace189efd60e9d532172ecd1f2a048eec2c
+ms.sourcegitcommit: 73b362173929f59e9df57e54e76d19834f155433
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/02/2019
-ms.locfileid: "73445304"
+ms.lasthandoff: 11/27/2019
+ms.locfileid: "74562420"
 ---
 # <a name="intune-actions-and-options-supported-with-apple-user-enrollment"></a>Ações e opções do Intune compatíveis com o Registro de usuário da Apple
 
@@ -57,13 +57,18 @@ Em dispositivos de Registro de usuário, os usuários finais podem executar esta
 - Bloqueio remoto
 - Verificar status
 
+## <a name="app-deployment-options"></a>Opções de implantação de aplicativo
+Os seguintes tipos de aplicativo podem ser implantados em dispositivos de registros de usuários:
+- Aplicativos do VPP (Volume Purchasing Plan) licenciados pelo usuário, incluindo aplicativos personalizados
+- Aplicativos LOB (Linha de negócios)
+- Aplicativos Web
+
 ## <a name="other-supported-options"></a>Outras opções compatíveis
 
 As opções a seguir são compatíveis no Intune para dispositivos registrados usando o Registro de usuário da Apple:
 - VPN por aplicativo. Esse suporte exclui os domínios do Safari, pois o Registro de usuário não é compatível com a definição das configurações do Safari.
 - Wi-Fi 
 - Remoção do aplicativo corporativo após o cancelamento do registro
-- Implantação de aplicativo por meio do VPP (plano de compra por volume) licenciado pelo usuário
 - Detecção de jailbreak
 
 As seguintes restrições são compatíveis:
@@ -94,9 +99,10 @@ As opções a seguir não são compatíveis em dispositivos registrados com o Re
 - Coletar UDID e outros identificadores de dispositivos persistentes.
 - O Registro de usuário é compatível com a ID de registro exclusiva para cada dispositivo registrado, mas essa ID não persiste após o cancelamento do registro.
 - Os seguintes recursos do Intune não são compatíveis devido a essa limitação:
-- Perfis de usuário SCEP com formato de nome de entidade do número de série.
+- Perfis de usuário SCEP com Formato de nome de entidade do número de série.
 - VPN no nível do dispositivo.
 - Implantação de aplicativo VPP licenciado para dispositivo.
+- Instale aplicativos da App Store como aplicativos gerenciados.
 - Controle de MDM de aplicativos fora do volume APFS gerenciado.
 - As políticas de proteção de aplicativo ainda serão aplicadas a esses aplicativos. No entanto, você não poderá assumir o gerenciamento ou implantar uma versão gerenciada desses aplicativos, a menos que o usuário os exclua do dispositivo.
 - Ações, configurações, definições e comandos que exigem supervisão. 

@@ -6,7 +6,7 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 08/23/2019
+ms.date: 11/26/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.subservice: apps
@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure; get-started
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 56814550cae814bd89d55a6f72df98dd24df4caf
-ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
+ms.openlocfilehash: 09b4cfad0490f35a85e4c72b937b2ba5c0472030
+ms.sourcegitcommit: 73b362173929f59e9df57e54e76d19834f155433
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/16/2019
-ms.locfileid: "72507471"
+ms.lasthandoff: 11/27/2019
+ms.locfileid: "74564354"
 ---
 # <a name="what-is-microsoft-intune-app-management"></a>O que é o gerenciamento de aplicativo do Microsoft Intune?
 
@@ -76,14 +76,14 @@ O Intune oferece uma variedade de recursos para ajudar a obter os aplicativos qu
 
 ## <a name="get-started"></a>Introdução
 
-Encontre a maioria das informações relacionadas a aplicativos na carga de trabalho **Aplicativos Clientes**, que pode ser acessada da seguinte forma:
+Você encontrará a maioria das informações relacionadas ao aplicativo na carga de trabalho **Aplicativos**, que pode ser acessada da seguinte forma:
 
-1. Conecte-se ao [Intune](https://go.microsoft.com/fwlink/?linkid=2090973).
-3. No painel **Microsoft Intune**, selecione **Aplicativos clientes**.
+1. Entre no [Centro de Administração do Gerenciador de Ponto de Extremidade da Microsoft](https://go.microsoft.com/fwlink/?linkid=2109431).
+3. Selecione **Aplicativos**.
 
-    ![O painel de carga de trabalho "Aplicativos cliente"](./media/app-management/apps-workload.png)
+    ![O painel da carga de trabalho Aplicativos](./media/app-management/apps-workload.png)
 
-As quatro seções a seguir descrevem as opções disponíveis no painel **Aplicativos clientes**.
+As quatro seções a seguir descrevem as opções disponíveis no painel **Aplicativos**.
 
 ### <a name="manage"></a>Gerenciar
 - **Aplicativos**: Selecione esta opção para adicionar, exibir, atribuir e monitorar os aplicativos usados por sua força de trabalho. Para obter mais informações, consulte:

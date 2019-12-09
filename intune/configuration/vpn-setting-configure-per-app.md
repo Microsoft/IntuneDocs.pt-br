@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 36039334f7e93b66735e10d0ac2c5d80602e2b83
-ms.sourcegitcommit: 78cebd3571fed72a3a99e9d33770ef3d932ae8ca
+ms.openlocfilehash: f0cd3dd71a5999b69e3f5c34ef4cc73fb3d6a938
+ms.sourcegitcommit: b752acefec077c719e169e665c955adb944e85c6
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/13/2019
-ms.locfileid: "74059864"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74781151"
 ---
 # <a name="set-up-per-app-virtual-private-network-vpn-for-ios-devices-in-intune"></a>Configurar VPN (rede virtual privada) por aplicativo para dispositivos iOS no Intune
 
@@ -37,6 +37,9 @@ Verifique a documentação do seu provedor VPN para ver se a sua VPN dá suporte
 Este artigo mostra como criar um perfil de VPN por aplicativo e atribuir esse perfil a seus aplicativos. Use estas etapas para criar uma experiência VPN por aplicativo contínuo para seus usuários finais. Para a maioria das VPNs que dão suporte a VPN por aplicativo, o usuário abre um aplicativo e conecta-se automaticamente à VPN.
 
 Algumas VPNs permitem autenticação de nome de usuário e senha com a VPN por aplicativo. Ou seja, os usuários precisam inserir um nome de usuário e senha para se conectar à VPN.
+
+> [!IMPORTANT]
+> A VPN por aplicativo não tem suporte em perfis VPN IKEv2 para iOS.
 
 ## <a name="per-app-vpn-with-zscaler"></a>VPN por aplicativo com o Zscaler
 

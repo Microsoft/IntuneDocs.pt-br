@@ -6,7 +6,7 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 11/06/2019
+ms.date: 11/26/2019
 ms.service: microsoft-intune
 ms.subservice: apps
 ms.localizationpriority: high
@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 0b9dda9a1aa1e81b46533c1c15d996807984193d
-ms.sourcegitcommit: 28622c5455adfbce25a404de4d0437fa2b5370be
+ms.openlocfilehash: e9c3e775773ab08721cb3a65858f3d8c8402104f
+ms.sourcegitcommit: 73b362173929f59e9df57e54e76d19834f155433
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/07/2019
-ms.locfileid: "73712945"
+ms.lasthandoff: 11/27/2019
+ms.locfileid: "74563731"
 ---
 # <a name="how-to-validate-your-app-protection-policy-setup-in-microsoft-intune"></a>Como validar sua configuração da política de proteção do aplicativo no Microsoft Intune
 
@@ -43,8 +43,8 @@ Se o teste mostrar que o comportamento da política de proteção do aplicativo 
 - O status de cada um dos aplicativos de proteção de aplicativo dos usuários está como esperado? Os status possíveis para os aplicativos são **Submetido a check-in** e **Não submetido a check-in**.
 
 ### <a name="user-app-protection-status"></a>Status de proteção de aplicativo do usuário
-1. Conecte-se ao [Intune](https://go.microsoft.com/fwlink/?linkid=2090973).
-3. Escolha **Aplicativos do cliente** >  **Status de proteção do aplicativo** e escolha o bloco **Usuários atribuídos**. 
+1. Entre no [Centro de Administração do Gerenciador de Ponto de Extremidade da Microsoft](https://go.microsoft.com/fwlink/?linkid=2109431).
+3. Selecione **Aplicativos** >  **Status de proteção do aplicativo** e escolha o bloco **Usuários atribuídos**. 
 4. Na página **Relatório do aplicativo**, escolha **Selecionar usuário** para exibir uma lista de usuários e grupos. 
 5. Pesquise e selecione um usuário na lista e depois escolha **Selecionar usuário**. Na parte superior do painel **Relatórios de aplicativo**, é possível ver se o usuário tem a licença da proteção de aplicativo. Você também pode ver se o usuário tem a licença do O365 e o status dos aplicativos de todos os dispositivos do usuário.
 

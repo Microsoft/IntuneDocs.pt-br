@@ -6,7 +6,7 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 10/10/2019
+ms.date: 11/26/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.subservice: apps
@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 3137db9d1ab82ebb99686f8f98aa768dae222caf
-ms.sourcegitcommit: 0be25b59c8e386f972a855712fc6ec3deccede86
+ms.openlocfilehash: 0e57aa0546950a12cdb2d4a2e3c8ed721bfc24b8
+ms.sourcegitcommit: 73b362173929f59e9df57e54e76d19834f155433
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/18/2019
-ms.locfileid: "72584955"
+ms.lasthandoff: 11/27/2019
+ms.locfileid: "74564148"
 ---
 # <a name="add-managed-google-play-apps-to-android-enterprise-devices-with-intune"></a>Adicionar aplicativos do Google Play Gerenciado a dispositivos Android Enterprise com o Intune
 
@@ -62,17 +62,16 @@ Há duas maneiras de procurar e aprovar aplicativos da Google Play Store Gerenci
 
 ### <a name="add-a-managed-google-play-store-app-directly-in-the-intune-console"></a>Adicionar um aplicativo da Google Play Store Gerenciada diretamente no console do Intune
 
-1. Conecte-se ao [Intune](https://go.microsoft.com/fwlink/?linkid=2090973).
-3. No painel do **Intune**, selecione **Aplicativos de cliente** > **Aplicativos**.
-5. No painel **Aplicativos**, selecione **Adicionar**.
-6. Na lista suspensa **Tipo de aplicativo**, selecione **Google Play Gerenciado**.
-7. Selecione **Google Play Gerenciado – Abrir** para abrir o catálogo do Google Play Gerenciado.
-7. Selecione **Pesquisar Play Store** no catálogo do Google Play.
-8. Use a caixa de pesquisa para procurar os aplicativos que você quer gerenciar.
-9. Clique em **Aprovar** para aprovar o aplicativo no Google Play gerenciado e clique em **Aprovar** para aceitar as permissões do aplicativo.
-10. Selecione **Manter aprovados quando o aplicativo solicitar novas permissões** na janela Configurações de Aprovação e clique em **Salvar**. Se você não escolher essa opção, precisará aprovar manualmente todas as permissões novas, se o desenvolvedor do aplicativo publicar uma atualização. Isso fará com que as instalações e atualizações do aplicativo sejam interrompidas até que as permissões sejam aprovadas. Por esse motivo, recomendamos a seleção da opção para aprovar automaticamente novas permissões. 
-11. Clique em **OK** para incluir os aplicativos aprovados.
-12. Clique em **Sincronizar** no painel **Aplicativo** para sincronizar com o serviço Google Play Gerenciado.
+1. Entre no [Centro de Administração do Gerenciador de Ponto de Extremidade da Microsoft](https://go.microsoft.com/fwlink/?linkid=2109431).
+2. Selecione **Aplicativos** > **Todos os aplicativos** > **Adicionar**.
+3. Na lista suspensa **Tipo de aplicativo**, selecione **Google Play Gerenciado**.
+4. Selecione **Google Play Gerenciado – Abrir** para abrir o catálogo do Google Play Gerenciado.
+5. Selecione **Pesquisar Play Store** no catálogo do Google Play.
+6. Use a caixa de pesquisa para procurar os aplicativos que você quer gerenciar.
+7. Clique em **Aprovar** para aprovar o aplicativo no Google Play gerenciado e clique em **Aprovar** para aceitar as permissões do aplicativo.
+8. Selecione **Manter aprovados quando o aplicativo solicitar novas permissões** na janela Configurações de Aprovação e clique em **Salvar**. Se você não escolher essa opção, precisará aprovar manualmente todas as permissões novas, se o desenvolvedor do aplicativo publicar uma atualização. Isso fará com que as instalações e atualizações do aplicativo sejam interrompidas até que as permissões sejam aprovadas. Por esse motivo, recomendamos a seleção da opção para aprovar automaticamente novas permissões. 
+9. Clique em **OK** para incluir os aplicativos aprovados.
+10. Clique em **Sincronizar** no painel **Aplicativo** para sincronizar com o serviço Google Play Gerenciado.
 
 ### <a name="add-a-managed-google-play-store-app-in-the-managed-google-play-console-alternative"></a>Adicionar um aplicativo gerenciado da Google Play Store ao console do Google Play Gerenciado (alternativa)
 Se você preferir sincronizar um aplicativo do Google Play Gerenciado com o Intune em vez de adicioná-lo diretamente usando o Intune, use as etapas a seguir.
@@ -108,17 +107,16 @@ Há duas maneiras de adicionar aplicativos de LOB ao Google Play Gerenciado:
 
 ### <a name="managed-google-play-private-lob-app-publishing-directly-in-the-intune-console"></a>Aplicativo particular (LOB) do Google Play Gerenciado publicado diretamente no console do Intune
 
-1. Conecte-se ao [Intune](https://go.microsoft.com/fwlink/?linkid=2090973).
-3. No painel do **Intune**, selecione **Aplicativos de cliente** > **Aplicativos**.
-5. No painel **Aplicativos**, selecione **Adicionar**.
-6. Na lista suspensa **Tipo de aplicativo**, selecione **Google Play Gerenciado**.
-7. Selecione **Google Play Gerenciado – Abrir** para abrir o catálogo do Google Play Gerenciado.
-7. Selecione **Aplicativos Particulares** no catálogo do Google Play.
-7. Clique no botão **"+"** para adicionar um novo aplicativo
-8. Envie um título de aplicativo e um pacote APK para o aplicativo
-9. Clique em **Criar**
+1. Entre no [Centro de Administração do Gerenciador de Ponto de Extremidade da Microsoft](https://go.microsoft.com/fwlink/?linkid=2109431).
+2. Selecione **Aplicativos** > **Todos os aplicativos** > **Adicionar**.
+3. Na lista suspensa **Tipo de aplicativo**, selecione **Google Play Gerenciado**.
+4. Selecione **Google Play Gerenciado – Abrir** para abrir o catálogo do Google Play Gerenciado.
+5. Selecione **Aplicativos Particulares** no catálogo do Google Play.
+6. Clique no botão **"+"** para adicionar um novo aplicativo
+7. Envie um título de aplicativo e um pacote APK para o aplicativo
+8. Clique em **Criar**
 9. Feche o painel do Google Play Gerenciado ao terminar de adicionar aplicativos
-12. Clique em **Sincronizar** no painel **Aplicativo** para sincronizar com o serviço Google Play Gerenciado. Os aplicativos particulares podem demorar vários minutos até ficarem disponíveis para sincronização. Se não aparecer na primeira vez em que você executar uma sincronização, aguarde alguns minutos e inicie uma nova sincronização.
+10. Clique em **Sincronizar** no painel **Aplicativo** para sincronizar com o serviço Google Play Gerenciado. Os aplicativos particulares podem demorar vários minutos até ficarem disponíveis para sincronização. Se não aparecer na primeira vez em que você executar uma sincronização, aguarde alguns minutos e inicie uma nova sincronização.
 
 Para saber mais sobre aplicativos particulares do Google Play Gerenciado, incluindo as perguntas frequentes, confira o artigo de suporte do Google: https://support.google.com/googleplay/work/answer/9146439
 
@@ -151,32 +149,30 @@ Os links abrem no Microsoft Edge ou em qualquer outro aplicativo de navegador qu
 > [!IMPORTANT]
 > Na publicação deste documento, há um bug conhecido do Google que impede que os links abram em dispositivos com navegadores diferentes do Chrome. A Google se comprometeu em corrigir esse bug.  Esse aviso será removido quando a Microsoft confirmar que a Google publicou uma correção.
 
-1. Conecte-se ao [Intune](https://go.microsoft.com/fwlink/?linkid=2090973).
-3. No painel do **Intune**, selecione **Aplicativos de cliente** > **Aplicativos**.
-5. No painel **Aplicativos**, selecione **Adicionar**.
-6. Na lista suspensa **Tipo de aplicativo**, selecione **Google Play Gerenciado**.
-7. Selecione **Google Play Gerenciado – Abrir** para abrir o catálogo do Google Play Gerenciado.
-7. Selecione **Aplicativos Web** no catálogo do Google Play.
-7. Clique no botão **"+"** para adicionar um novo aplicativo
+1. Entre no [Centro de Administração do Gerenciador de Ponto de Extremidade da Microsoft](https://go.microsoft.com/fwlink/?linkid=2109431).
+2. Selecione **Aplicativos** > **Todos os aplicativos** > **Adicionar**.
+3. Na lista suspensa **Tipo de aplicativo**, selecione **Google Play Gerenciado**.
+4. Selecione **Google Play Gerenciado – Abrir** para abrir o catálogo do Google Play Gerenciado.
+5. Selecione **Aplicativos Web** no catálogo do Google Play.
+6. Clique no botão **"+"** para adicionar um novo aplicativo
 7. Insira as informações solicitadas e clique em **Criar**
-7. Feche o painel do Google Play Gerenciado ao terminar de adicionar aplicativos
-12. Clique em **Sincronizar** no painel **Aplicativo** para sincronizar com o serviço Google Play Gerenciado. Os aplicativos particulares podem demorar vários minutos até ficarem disponíveis para sincronização. Se não aparecer na primeira vez em que você executar uma sincronização, aguarde alguns minutos e inicie uma nova sincronização.
+8. Feche o painel do Google Play Gerenciado ao terminar de adicionar aplicativos
+9. Clique em **Sincronizar** no painel **Aplicativo** para sincronizar com o serviço Google Play Gerenciado. Os aplicativos particulares podem demorar vários minutos até ficarem disponíveis para sincronização. Se não aparecer na primeira vez em que você executar uma sincronização, aguarde alguns minutos e inicie uma nova sincronização.
 
 ## <a name="sync-a-managed-google-play-app-with-intune"></a>Sincronizar um aplicativo do Google Play gerenciado com o Intune
 
-Se você aprovou um aplicativo da loja e ainda não o encontra na carga de trabalho **Aplicativos clientes**, force uma sincronização imediata da seguinte maneira:
+Se você aprovou um aplicativo da loja e ainda não o encontra na carga de trabalho **Aplicativos**, force uma sincronização imediata da seguinte maneira:
 
-1. Conecte-se ao [Intune](https://go.microsoft.com/fwlink/?linkid=2090973).
-3. No painel **Intune**, selecione **Aplicativos clientes**.
-4. No painel da carga de trabalho **Aplicativos clientes**, em **Instalação**, selecione **Google Play gerenciado**.
+1. Entre no [Centro de Administração do Gerenciador de Ponto de Extremidade da Microsoft](https://go.microsoft.com/fwlink/?linkid=2109431).
+3. Selecione **Aplicativos** > **Administração de locatários** > **Conectores e tokens** > **Google Play Gerenciado**.
 5. No painel **Google Play gerenciado**, escolha **Atualizar**.  
     A página atualiza a hora e o status da última sincronização.
-6. No painel da carga de trabalho **Aplicativos clientes**, selecione **Aplicativos**.  
+6. No Centro de Administração do Gerenciador de Ponto de Extremidade da Microsoft, selecione **Aplicativos** > **Todos os aplicativos**.  
     O aplicativo que acabou de ficar disponível no Google Play gerenciado é exibido.
 
 ## <a name="assigning-a-managed-google-play-app-to-android-enterprise-work-profile-devices"></a>Atribuir aplicativos do Google Play Gerenciado a dispositivos de perfil corporativo Android Enterprise
 
-Quando o aplicativo é exibido no nó **Licenças de aplicativo** do painel da carga de trabalho **Aplicativos clientes**, é possível [atribuí-lo como atribuiria qualquer outro aplicativo](/intune-azure/manage-apps/deploy-apps) para os grupos de usuários.
+Quando o aplicativo é exibido no nó **Licenças de aplicativo** do painel da carga de trabalho **Aplicativos**, é possível [atribuí-lo como se atribuiria qualquer outro aplicativo](/intune-azure/manage-apps/deploy-apps) para os grupos de usuários.
 
 Depois de atribuir o aplicativo, ele é instalado (ou disponibilizado para instalação) nos dispositivos de destino. A aprovação da instalação do dispositivo não é solicitada ao usuário. Para saber mais sobre dispositivos de perfil corporativo Android Enterprise, confira [Configurar o registro de dispositivos de perfil corporativo Android Enterprise](../enrollment/android-work-profile-enroll.md). 
 
@@ -213,7 +209,7 @@ Como alternativa, você pode configurar o Google Play para aprovar permissões d
 Para aplicativos do Google Play Gerenciado implantados em dispositivos de perfil de trabalho do Android Enterprise, você pode exibir o status e o número de versão do aplicativo instalado em um dispositivo usando o Intune. 
 
 ## <a name="delete-managed-google-play-apps"></a>Excluir aplicativos do Google Play Gerenciados
-Quando for necessário, você poderá excluir aplicativos do Google Play Gerenciado do Microsoft Intune. Para excluir um aplicativo do Google Play Gerenciado, abra o Microsoft Intune no portal do Azure e selecione **Aplicativos do cliente** > **Aplicativos**. Na lista de aplicativos, selecione as reticências (...) à direita do aplicativo do Google Play Gerenciado e, em seguida, selecione **Excluir** na lista exibida. Quando você exclui um aplicativo do Google Play gerenciado na lista de aplicativos, o aplicativo do Google Play gerenciado torna-se para aprovação automaticamente.
+Quando for necessário, você poderá excluir aplicativos do Google Play Gerenciado do Microsoft Intune. Para excluir um aplicativo do Google Play Gerenciado, abra o Microsoft Intune no portal do Azure e selecione **Aplicativos** > **Todos os aplicativos**. Na lista de aplicativos, selecione as reticências (...) à direita do aplicativo do Google Play Gerenciado e, em seguida, selecione **Excluir** na lista exibida. Quando você exclui um aplicativo do Google Play gerenciado na lista de aplicativos, o aplicativo do Google Play gerenciado torna-se para aprovação automaticamente.
 
 ## <a name="android-enterprise-system-apps"></a>Aplicativos do sistema Android Enterprise
 

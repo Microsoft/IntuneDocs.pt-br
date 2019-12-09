@@ -6,7 +6,7 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 10/22/2019
+ms.date: 11/26/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.subservice: apps
@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 0ee3ecd64254c0e212ffc86155d677bf18ba647a
-ms.sourcegitcommit: f6b82c62af81a2643a1aaec774afa42d02eef352
+ms.openlocfilehash: a104b4d41a364c552a8ebac73ff3341af71d6d21
+ms.sourcegitcommit: 73b362173929f59e9df57e54e76d19834f155433
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/04/2019
-ms.locfileid: "73566173"
+ms.lasthandoff: 11/27/2019
+ms.locfileid: "74564158"
 ---
 # <a name="add-app-configuration-policies-for-managed-ios-devices"></a>Adicionar políticas de configuração de aplicativos para dispositivos iOS gerenciados
 
@@ -50,9 +50,8 @@ Depois de selecionar os grupos incluídos para sua política de configuração d
 
 ## <a name="create-an-app-configuration-policy"></a>Criar uma política de configuração do aplicativo
 
-1. Conecte-se ao [Intune](https://go.microsoft.com/fwlink/?linkid=2090973).
-3. Selecione a carga de trabalho **Aplicativos clientes**.
-4. Escolha **Políticas de configuração do aplicativo** no grupo **Gerenciar** e escolha **Adicionar**.
+1. Entre no [Intune](https://go.microsoft.com/fwlink/?linkid=2090973).
+3. Selecione **Aplicativos** > **Políticas de configuração de aplicativo** > **Adicionar**.
 5. Defina os seguintes detalhes:
     - **Nome** – o nome do perfil exibido no portal do Azure.
     - **Descrição** – a descrição do perfil que é exibida no portal do Azure.
@@ -74,7 +73,7 @@ Depois de selecionar os grupos incluídos para sua política de configuração d
 13. Selecione a guia **Excluir**. 
 14. Clique em **Selecionar grupos para excluir** para exibir o painel relacionado.
 
-    ![Captura de tela Atribuições de política – folha Selecionar grupos para excluir](./media/app-configuration-policies-use-ios/app-config-policy03.png)
+    ![Captura de tela Atribuições de política – Painel Selecionar grupos para excluir](./media/app-configuration-policies-use-ios/app-config-policy03.png)
 15. Escolha os grupos que você deseja excluir e, em seguida, clique em **Selecionar**.
 
     >[!NOTE]
@@ -181,10 +180,9 @@ Além disso, o Intune dá suporte aos seguintes tipos de token na lista de propr
 
 Os registros de DEP (Programa de Registro de Dispositivos da Apple) não são compatíveis com a versão da loja de aplicativos do aplicativo Portal da Empresa. No entanto, você pode configurar o aplicativo Portal da Empresa para dar suporte a dispositivos DEP com iOS usando as etapas a seguir.
 
-1. No Intune, no portal do Azure:
-    - Se necessário, adicione o Portal da Empresa do Intune em **Intune** > **Aplicativos cliente** > **Aplicativos** > **Adicionar**.
-    - Acesse **Aplicativos cliente** > **Políticas de configuração de aplicativos** para criar uma política de configuração de aplicativo para o aplicativo Portal da Empresa.
-2. Crie uma política de configuração de aplicativo com o XML abaixo. Para saber mais sobre como criar uma política de configuração de aplicativos e inserir dados XML, confira [Adicionar políticas de configuração de aplicativos para dispositivos iOS gerenciados](app-configuration-policies-use-ios.md) ou, para MDM híbrido, consulte [Aplicar configurações aos aplicativos iOS com políticas de configuração de aplicativos no System Center Configuration Manager](https://docs.microsoft.com/sccm/mdm/deploy-use/configure-ios-apps-with-app-configuration-policies).
+1. No Intune, se necessário, adicione o Portal da Empresa do Intune em **Intune** > **Aplicativos** > **Todos os aplicativos** > **Adicionar**.
+2. Acesse **Aplicativos** > **Políticas de configuração de aplicativos** para criar uma política de configuração para o aplicativo Portal da Empresa.
+3. Crie uma política de configuração de aplicativo com o XML abaixo. Para saber mais sobre como criar uma política de configuração de aplicativos e inserir dados XML, confira [Adicionar políticas de configuração de aplicativos para dispositivos iOS gerenciados](app-configuration-policies-use-ios.md) ou, para MDM híbrido, consulte [Aplicar configurações aos aplicativos iOS com políticas de configuração de aplicativos no System Center Configuration Manager](https://docs.microsoft.com/sccm/mdm/deploy-use/configure-ios-apps-with-app-configuration-policies).
 
     ``` xml
     <dict>
@@ -202,7 +200,7 @@ Os registros de DEP (Programa de Registro de Dispositivos da Apple) não são co
 4. Avise os usuários para entrarem no aplicativo Portal da Empresa quando ele for automaticamente instalado.
 
 ## <a name="monitor-ios--app-configuration-status-per-device"></a>Monitorar o status da configuração do aplicativo iOS por dispositivo 
-Depois que uma política de configuração for atribuída, você poderá monitorar o status de configuração do aplicativo iOS de cada dispositivo gerenciado. No **Microsoft Intune**, no portal do Azure, selecione **Dispositivos** > **Todos os dispositivos**. Na lista de dispositivos gerenciados, selecione um dispositivo específico para exibir uma folha para o dispositivo. Na folha do dispositivo, selecione **Configuração de aplicativo**.  
+Depois que uma política de configuração for atribuída, você poderá monitorar o status de configuração do aplicativo iOS de cada dispositivo gerenciado. No **Microsoft Intune**, no portal do Azure, selecione **Dispositivos** > **Todos os dispositivos**. Na lista de dispositivos gerenciados, selecione um dispositivo específico para exibir o painel dele. No painel do dispositivo, selecione **Configuração de aplicativo**.  
 
 ## <a name="additional-information"></a>Informações adicionais
 

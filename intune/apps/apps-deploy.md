@@ -6,7 +6,7 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 08/21/2019
+ms.date: 11/26/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.subservice: apps
@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: c1e8e37a784ea39fbf1154321933673ed02eee33
-ms.sourcegitcommit: 16a9109b4028589c17695d41271ca4fee8b1d697
+ms.openlocfilehash: e990cd94c0f8622d07e59b4130566a1dc2953a1c
+ms.sourcegitcommit: 73b362173929f59e9df57e54e76d19834f155433
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/26/2019
-ms.locfileid: "74540759"
+ms.lasthandoff: 11/27/2019
+ms.locfileid: "74563990"
 ---
 # <a name="assign-apps-to-groups-with-microsoft-intune"></a>Atribuir aplicativos a grupos com o Microsoft Intune
 
@@ -55,13 +55,12 @@ A tabela a seguir lista as várias opções para atribuir aplicativos para usuá
 
 ## <a name="assign-an-app"></a>Atribuir um aplicativo
 
-1. Conecte-se ao [Intune](https://go.microsoft.com/fwlink/?linkid=2090973).
-3. No painel **Intune**, selecione **Aplicativos clientes**.
-4. Na seção **Gerenciar** do menu, selecione **Aplicativos**.
-5. No painel **Aplicativos**, selecione o aplicativo que você deseja atribuir.
-6. Na seção **Gerenciar** do menu, selecione **Atribuições**.
-7. Selecione **Adicionar Grupo** para abrir o painel **Adicionar grupo** relacionado ao aplicativo.
-8. Para o aplicativo específico, selecione um **tipo de atribuição**:
+1. Entre no [Centro de Administração do Gerenciador de Ponto de Extremidade da Microsoft](https://go.microsoft.com/fwlink/?linkid=2109431).
+2. Selecione **Aplicativos** > **Todos os aplicativos**.
+3. No painel **Aplicativos**, selecione o aplicativo que você deseja atribuir.
+4. Na seção **Gerenciar** do menu, selecione **Atribuições**.
+5. Selecione **Adicionar Grupo** para abrir o painel **Adicionar grupo** relacionado ao aplicativo.
+6. Para o aplicativo específico, selecione um **tipo de atribuição**:
    - **Disponível para dispositivos registrados**: Atribua o aplicativo aos grupos de usuários que podem instalar o aplicativo no site ou do aplicativo Portal da Empresa.
    - **Disponível com ou sem registro**: Atribua este aplicativo a grupos de usuários cujos dispositivos não estão registrados no Intune. É necessário atribuir uma licença do Intune a esses usuários, consulte [Licenças do Intune](../fundamentals/licenses.md).
    - **Obrigatório**: O aplicativo é instalado nos dispositivos dos grupos selecionados. Algumas plataformas podem ter solicitações adicionais para o usuário final confirmar antes do início da instalação do aplicativo.
@@ -76,13 +75,13 @@ A tabela a seguir lista as várias opções para atribuir aplicativos para usuá
      >
      > Sobre **Disponível para dispositivos registrados**: o aplicativo só será exibido como disponível se o usuário conectado ao Portal da Empresa for o usuário primário que registrou o dispositivo e se o aplicativo for aplicável ao dispositivo.
 
-9. Para selecionar os grupos de usuários afetados por esta atribuição de aplicativo, selecione **Grupos Incluídos**.
-10. Depois de selecionar um ou mais grupos a serem incluídos, clique em **Selecionar**.
-11. No painel **Atribuir**, selecione **OK** para concluir a seleção de grupos incluídos.
-12. Se desejar que alguns grupos de usuários não sejam afetados por esta atribuição de aplicativo, selecione **Excluir Grupos**.
-13. Se você tiver escolhido excluir algum grupo, em **Selecionar Grupos**, escolha **Selecionar**.
-14. No painel **Adicionar grupo**, selecione **OK**.
-15. No painel **Atribuições** do aplicativo, selecione **Salvar**.
+7. Para selecionar os grupos de usuários afetados por esta atribuição de aplicativo, selecione **Grupos Incluídos**.
+8. Depois de selecionar um ou mais grupos a serem incluídos, clique em **Selecionar**.
+9. No painel **Atribuir**, selecione **OK** para concluir a seleção de grupos incluídos.
+10. Se desejar que alguns grupos de usuários não sejam afetados por esta atribuição de aplicativo, selecione **Excluir Grupos**.
+11. Se você tiver escolhido excluir algum grupo, em **Selecionar Grupos**, escolha **Selecionar**.
+12. No painel **Adicionar grupo**, selecione **OK**.
+13. No painel **Atribuições** do aplicativo, selecione **Salvar**.
 
 Agora o aplicativo foi atribuído aos grupos selecionados. Para obter mais informações de como incluir e excluir atribuições de aplicativo, confira [Incluir e excluir atribuições de aplicativo](apps-inc-exl-assignments.md).
 

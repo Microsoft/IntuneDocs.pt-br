@@ -6,7 +6,7 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 11/18/2019
+ms.date: 12/03/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.subservice: apps
@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: ecde59d81ebeba7de64f2693eecb576faac6e722
-ms.sourcegitcommit: 15e099a9a1e18296580bb345610aee7cc4acd126
+ms.openlocfilehash: ef9548a77a3a745eda24b927118d1447d5afd1f0
+ms.sourcegitcommit: 78faf608510fbaca09bc410d63df1aa5254dee45
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/18/2019
-ms.locfileid: "74164703"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74784231"
 ---
 # <a name="add-apps-to-microsoft-intune"></a>Adicionar aplicativos ao Microsoft Intune 
 
@@ -56,8 +56,10 @@ A tabela a seguir lista os tipos de aplicativo específicos e como você pode ad
 | Aplicativos da Windows Phone 8.1 Store  | Aplicativo da Store  | Selecione **Windows Phone 8.1** como o **tipo de aplicativo** e insira a URL da Microsoft Store do aplicativo. |
 | Aplicativos da Microsoft Store  | Aplicativo da Store  | Selecione **Windows** como o **tipo de aplicativo** e insira a URL da Microsoft Store do aplicativo. |
 | Aplicativos Google Play gerenciados | Aplicativo da Store  | Selecione **Google Play Gerenciado** como o **tipo de aplicativo**, procure o aplicativo e selecione o aplicativo no Intune. |
-| Aplicativos do Office 365 para Windows 10  | Aplicativo da Store (Office 365) | Selecione **Windows 10** no **Pacote do Office 365** como o **tipo de aplicativo** e, em seguida, selecione o aplicativo do Office 365 que você deseja instalar.  |
-| Aplicativos do Office 365 para macOS | Aplicativo da Store (Office 365) | Selecione **macOS** no **Pacote do Office 365** como o **tipo de aplicativo** e, em seguida, selecione o pacote do aplicativo do Office 365. |
+| Aplicativos do Office 365 para Windows 10  | Aplicativo da Store (Office 365) | Selecione **Windows 10** no **Pacote do Office 365** como o **tipo de aplicativo** e escolha o aplicativo do Office 365 que você deseja instalar.  |
+| Aplicativos do Office 365 para macOS | Aplicativo da Store (Office 365) | Selecione **macOS** no **Pacote do Office 365** como o **tipo de aplicativo** e escolha o pacote de aplicativo do Office 365. |
+| Microsoft Edge versão 77 e posteriores para Windows 10 | Aplicativo da Store | Selecione **Windows 10** no **Microsoft Edge, versão 77 e posteriores**, como o **tipo de aplicativo**. |
+| Microsoft Edge, versão 77 e posteriores para macOS | Aplicativo da Store | Selecione **macOS** no **Microsoft Edge, versão 77 e posteriores** como o **tipo de aplicativo**. |
 | Aplicativos LOB para Android | Aplicativos LOB | Selecione aplicativo de **Linha de negócios** como o **tipo de aplicativo**, selecione o **Arquivo do pacote do aplicativo** e, em seguida, insira um arquivo de instalação do Android com a extensão **.apk**.  |
 | Aplicativos LOB para iOS | Aplicativos LOB | Selecione aplicativo de **Linha de negócios** como o **tipo de aplicativo**, selecione o **Arquivo do pacote do aplicativo** e, em seguida, insira um arquivo de instalação do iOS com a extensão **.ipa**.  |
 | Aplicativos LOB para Windows Phone | Aplicativos LOB | Selecione aplicativo de **Linha de negócios** como o **tipo de aplicativo**, selecione o **Arquivo do pacote do aplicativo** e, em seguida, insira um arquivo de instalação do Windows Phone com a extensão **.xap**.  |
@@ -72,7 +74,7 @@ A tabela a seguir lista os tipos de aplicativo específicos e como você pode ad
 
 <sup>1</sup> Para saber mais sobre perfis corporativos do Android e do Android Enterprise, confira o tópico [Noções básicas sobre aplicativos licenciados](apps-add.md#understanding-licensed-apps) abaixo.
 
-Você pode adicionar um aplicativo no Microsoft Intune, selecionando **Aplicativos clientes** > **Aplicativos** > **Adicionar**. O painel **Adicionar aplicativo** aparece e permite que você selecione o **Tipo de aplicativo**. 
+Você pode adicionar um aplicativo no Microsoft Intune selecionando **Aplicativos** > **Todos os aplicativos** > **Adicionar**. O painel **Adicionar aplicativo** aparece e permite que você selecione o **Tipo de aplicativo**. 
 
 >[!TIP]
 > Um aplicativo LOB é um aplicativo que pode ser adicionado de um arquivo de instalação do aplicativo. Por exemplo, para instalar um aplicativo LOB do iOS, adicione o aplicativo selecionando **Aplicativo de linha de negócios** como o **Tipo de aplicativo** no painel **Adicionar aplicativo**. Em seguida, selecione o arquivo do pacote do aplicativo (extensão .ipa). Normalmente, esses tipos de aplicativos são escritos internamente.
@@ -159,9 +161,8 @@ As categorias de aplicativo podem ser usadas para ajudar a classificar aplicativ
 
 Quando você adiciona um aplicativo ao Intune, terá a opção de selecionar a categoria desejada. Use os tópicos específicos da plataforma para adicionar um aplicativo e atribuir categorias. Para criar e editar suas próprias categorias, use o procedimento a seguir:
 
-1. Conecte-se ao [Intune](https://go.microsoft.com/fwlink/?linkid=2090973).
-3. No painel **Intune**, selecione **Aplicativos clientes**.
-4. No painel de carga de trabalho **Aplicativos clientes**, em **Instalação**, selecione **Categorias de aplicativo**.  
+1. Entre no [Centro de Administração do Gerenciador de Ponto de Extremidade da Microsoft](https://go.microsoft.com/fwlink/?linkid=2109431).
+3. Selecione **Aplicativos** > **Categorias de aplicativos**.  
     O painel **Categorias de aplicativo** exibe uma lista de categorias atuais. 
 5. Siga um destes procedimentos:
     - Para adicionar uma categoria no painel **Criar categoria**, selecione **Adicionar** e digite um nome para a categoria.  
@@ -206,6 +207,8 @@ Para saber como adicionar aplicativos de cada plataforma ao Intune, veja:
 - [Aplicativos LOB para Windows](lob-apps-windows.md)
 - [Aplicativos do Office 365 para Windows 10](apps-add-office365.md)
 - [Aplicativos do Office 365 para macOS](apps-add-office365-macos.md)
+- [Microsoft Edge para Windows 10](apps-windows-edge.md)
+- [Microsoft Edge para macOS](apps-edge-macos.md)
 - [Aplicativos internos](apps-add-built-in.md)
 - [Aplicativo do sistema Android Enterprise](apps-ae-system.md)
 - [Aplicativos Win32](app-management.md)

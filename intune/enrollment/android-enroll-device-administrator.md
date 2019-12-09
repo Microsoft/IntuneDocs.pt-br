@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 08193aa329a1bee4e66638de5c0d7518d15db2a4
-ms.sourcegitcommit: 23e9c48348a6eba494d072a2665b7481e5b5c84e
+ms.openlocfilehash: 678eb92bb6f5f23756092cd5d9cc1a645e1e8db3
+ms.sourcegitcommit: 73b362173929f59e9df57e54e76d19834f155433
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/26/2019
-ms.locfileid: "74547921"
+ms.lasthandoff: 11/27/2019
+ms.locfileid: "74562363"
 ---
 # <a name="android-device-administrator-enrollment"></a>Registro de administrador de dispositivos Android
 
@@ -49,7 +49,7 @@ Para obter mais informações sobre os recursos do Android Enterprise do Google,
 ## <a name="set-up-device-administrator-enrollment"></a>Configurar o registro do administrador de dispositivos
 
 1. Para se preparar para gerenciar dispositivos móveis, é necessário definir a autoridade MDM (gerenciamento de dispositivo móvel) como **Microsoft Intune**. Consulte [Definir a autoridade MDM](../fundamentals/mdm-authority-set.md) para obter instruções. Você define esse item apenas uma vez, na primeira vez que configurar o Intune para gerenciamento de dispositivo móvel.
-2. Acesse **Intune** > **Registro de dispositivo** > **Registro do Android** > **Dispositivos pessoais e corporativos com privilégios de administração de dispositivos** > **Usar o administrador do dispositivo para gerenciar dispositivos**.
+2. Entre no [Centro de Administração de Ponto de Extremidade da Microsoft](https://go.microsoft.com/fwlink/?linkid=2109431) e escolha > **Dispositivos** > **Android** > **Registro do Android** > **Dispositivos pessoais e corporativos com privilégios de administração de dispositivos** > **Usar o administrador do dispositivo para gerenciar dispositivos**.
 3. [Informe aos usuários como registrar seus dispositivos](/intune-user-help/enroll-your-device-in-intune-android).  
 
 Depois que os usuários registrarem os dispositivos, você poderá começar a gerenciar esses dispositivos no Intune, por exemplo, [atribuindo políticas de conformidade](../protect/compliance-policy-create-android.md), [gerenciando aplicativos](../apps/app-management.md) e muito mais.

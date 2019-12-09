@@ -6,7 +6,7 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 10/03/2019
+ms.date: 11/26/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.subservice: apps
@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 796b1709260c7f507e78aa8404129fa996b59088
-ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
+ms.openlocfilehash: 01ca17c9f8e3fd86e12f225621e6dc0e07bb4acb
+ms.sourcegitcommit: 73b362173929f59e9df57e54e76d19834f155433
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/16/2019
-ms.locfileid: "72498819"
+ms.lasthandoff: 11/27/2019
+ms.locfileid: "74564075"
 ---
 # <a name="assign-office-365-to-macos-devices-with-microsoft-intune"></a>Atribuir o Office 365 para dispositivos macOS com o Microsoft Intune
 
@@ -41,14 +41,12 @@ Antes de começar a adicionar o Office 365 a dispositivos macOS, compreenda este
 ## <a name="create-and-configure-the-app-suite"></a>Criar e configurar o pacote de aplicativos
 
 Adicione o Office 365 desde o painel **Aplicativos**.
-1. Conecte-se ao [Intune](https://go.microsoft.com/fwlink/?linkid=2090973).
-3. No painel **Intune**, selecione **Aplicativos clientes**.
-4. No painel da carga de trabalho **Aplicativos clientes**, em **Gerenciar**, selecione **Aplicativos**. 
-5. Selecione **Adicionar**.
-6. Na lista **Tipo de aplicativo**, no grupo **Office 365 Suite**, selecione **macOS**.
-7. Para saber mais sobre o pacote de aplicativos, selecione **Informações do Pacote de Aplicativos**.  
+1. Entre no [Centro de Administração do Gerenciador de Ponto de Extremidade da Microsoft](https://go.microsoft.com/fwlink/?linkid=2109431).
+2. Selecione **Aplicativos** > **Todos os aplicativos** > **Adicionar**.
+3. Na lista **Tipo de aplicativo**, no grupo **Office 365 Suite**, selecione **macOS**.
+4. Para saber mais sobre o pacote de aplicativos, selecione **Informações do Pacote de Aplicativos**.  
     Essas informações ajudam a identificar o pacote de aplicativos no Intune, e ajudam os usuários a encontrar o pacote de aplicativos no portal da empresa.
-8. Insira as seguintes informações:
+5. Insira as seguintes informações:
     - **Nome do Pacote**: Insira o nome do pacote de aplicativos da forma como ele é exibido no portal da empresa. Verifique se todos os nomes de pacotes usados são exclusivos. Se o mesmo nome de pacote de aplicativos for usado duas vezes, apenas um dos aplicativos será exibido aos usuários no Portal da Empresa.
     - **Descrição do Pacote**: Insira uma descrição para o pacote de aplicativos.
     - **Editor**: a Microsoft aparece como o editor.
@@ -60,8 +58,8 @@ Adicione o Office 365 desde o painel **Aplicativos**.
     - **Proprietário**: a Microsoft aparece como o proprietário.
     - **Observações**: Opcionalmente, insira as observações que você deseja associar a esse aplicativo.
     - **Logotipo**: O logotipo do Office 365 é exibido com o aplicativo quando os usuários navegam pelo portal da empresa.
-9. Selecione **OK**.
-10. No painel **Adicionar aplicativo**, selecione **Adicionar**.  
+6. Selecione **OK**.
+7. No painel **Adicionar aplicativo**, selecione **Adicionar**.  
     O pacote é exibido na lista de aplicativos como uma única entrada.
 
 ## <a name="configure-app-assignments"></a>Configurar as atribuições de aplicativo

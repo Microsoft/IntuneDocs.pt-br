@@ -6,7 +6,7 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 10/21/2019
+ms.date: 11/26/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.subservice: apps
@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: b750c09207b1950aa27a5f2cae1267503537b6e7
-ms.sourcegitcommit: 01fb3d844958a0e66c7b87623160982868e675b0
+ms.openlocfilehash: 7a4d6db4f61dea1b073ccce7c4c3f727a91402c1
+ms.sourcegitcommit: 73b362173929f59e9df57e54e76d19834f155433
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/20/2019
-ms.locfileid: "74199206"
+ms.lasthandoff: 11/27/2019
+ms.locfileid: "74563630"
 ---
 # <a name="how-to-configure-the-microsoft-intune-company-portal-app"></a>Como configurar o aplicativo Portal da Empresa do Microsoft Intune
 
@@ -37,7 +37,7 @@ O Portal da Empresa do Microsoft Intune é o local em que os usuários acessam o
 > [!Tip]
 > Quando você personaliza o Portal da Empresa, as configurações se aplicam ao site do Portal da Empresa e aos aplicativos do Portal da Empresa. Observe que os usuários devem ter uma licença do Intune atribuída para acessar o site do Portal da Empresa.
 
-Ao personalizar o Portal da Empresa, você ajudará a fornecer uma experiência familiar e útil para os usuários finais. Para fazer isso, no portal do Intune, selecione **Aplicativos de cliente** > **Identidade visual e personalização** e, em seguida, defina as configurações necessárias.
+Ao personalizar o Portal da Empresa, você ajudará a fornecer uma experiência familiar e útil para os usuários finais. Para isso, no portal do Intune, selecione **Aplicativos** > **Identidade visual e personalização** e defina as configurações necessárias.
 
 Quando um usuário instala um aplicativo iOS a partir do Portal da Empresa, ele recebe um aviso. Isso ocorre quando o aplicativo iOS está vinculado à loja de aplicativos, a um VPP (programa de compra por volume) ou a um aplicativo de linha de negócios. O aviso permite que os usuários aceitem a ação ou permitam o gerenciamento do aplicativo. O aviso exibe o nome da empresa ou, quando o nome da sua empresa está indisponível, o **Portal da Empresa**. 
 
@@ -92,7 +92,7 @@ Escolha um logotipo que tenha a melhor aparência em telas de fundo claras ou br
 
 ### <a name="brand-image-for-company-portal"></a>Imagem de marca para o Portal da Empresa
 
-Exiba uma imagem de marca que reflita a marca da empresa. Depois de salvar suas alterações, você pode escolher **Visualizar as configurações** no Portal da Web do Intune na parte superior da folha para ver a aparência de suas configurações. Observe que você só poderá visualizar a imagem de marca em um dispositivo iOS, e não no Portal da Web do Intune. 
+Exiba uma imagem de marca que reflita a marca da empresa. Depois de salvar suas alterações, você pode escolher **Visualizar as configurações** no Portal da Web do Intune na parte superior do painel para ver a aparência de suas configurações. Observe que você só poderá visualizar a imagem de marca em um dispositivo iOS, e não no Portal da Web do Intune. 
 
 |Nome do campo|Mais informações|
 |---|---|

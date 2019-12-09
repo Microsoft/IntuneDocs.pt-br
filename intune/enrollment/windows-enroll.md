@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 30a1c9b1fddaa59d633c8dc969063b26b25097de
-ms.sourcegitcommit: 76ae5aea5deee7a590e24c3b2bb52f88125943e5
+ms.openlocfilehash: 5f12feca6d43a4194e7c60639a93747c7f389f93
+ms.sourcegitcommit: fc4b38660129d615068f34ad4b96b900d73f7b53
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/15/2019
-ms.locfileid: "74098190"
+ms.lasthandoff: 11/27/2019
+ms.locfileid: "74558205"
 ---
 # <a name="set-up-enrollment-for-windows-devices"></a>Configurar o registro para dispositivos Windows
 
@@ -102,7 +102,7 @@ EnterpriseEnrollment-s.manage.microsoft.com é o FQDN preferencial para o regist
 Não há suporte para usar um método que não seja a configuração CNAME. Por exemplo, não há suporte para usar um servidor proxy para redirecionar enterpriseenrollment.contoso.com/EnrollmentServer/Discovery.svc para qualquer um dos enterpriseenrollment-s.manage.microsoft.com/EnrollmentServer/Discovery.svc ou manage.microsoft.com/EnrollmentServer/Discovery.svc.
 
 **Etapa 2: verifique o CNAME** (opcional)<br>
-1. No [Centro de Administração do Gerenciador de Ponto de Extremidade da Microsoft](https://go.microsoft.com/fwlink/?linkid=2109431), selecione **Registro de dispositivos** > **Registro do Windows** > **Validação do CNAME**.
+1. No [Centro de Administração do Gerenciador de Ponto de Extremidade da Microsoft](https://go.microsoft.com/fwlink/?linkid=2109431), selecione **Dispositivos** > **Windows** > **Registro do Windows** > **Validação do CNAME**.
 2. Na caixa **Domínio**, digite o site da empresa e escolha **Testar**.
 
 ## <a name="tell-users-how-to-enroll-windows-devices"></a>Informe aos usuários como registrar dispositivos Windows

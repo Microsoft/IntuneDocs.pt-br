@@ -6,7 +6,7 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 08/27/2019
+ms.date: 11/26/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.subservice: apps
@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure, seoapril2019
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: a3fab0b14f8ed68d13021a0e141d5997532df2ec
-ms.sourcegitcommit: ae6f2e7812e7fd36f2393b8f4b6cd8de63777b2c
+ms.openlocfilehash: 52f907b8762322684ec9e21910745a197c3dbe4e
+ms.sourcegitcommit: 73b362173929f59e9df57e54e76d19834f155433
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/05/2019
-ms.locfileid: "73592088"
+ms.lasthandoff: 11/27/2019
+ms.locfileid: "74564300"
 ---
 # <a name="manage-web-access-using-a-microsoft-intune-policy-protected-browser"></a>Gerenciar o acesso à Web usando um navegador protegido por políticas do Microsoft Intune
 
@@ -91,29 +91,28 @@ Para restringir os aplicativos Web conectados ao Azure AD para usarem o Intune M
 > [!TIP]  
 > O Acesso Condicional é uma tecnologia do Azure AD (Azure Active Directory). O nó Acesso Condicional acessado no *Intune* é o mesmo nó que o acessado no *Azure AD*.  
 
-
-1. No portal do Intune, escolha **Acesso condicional** > **Nova política**. 
-2. Em seguida, selecione **Conceder** na seção **Controles de acesso** da folha. 
-3. Clique em **Exigir aplicativo cliente aprovado**. 
-4. Clique em **Selecionar** na folha **Conceder**. Esta política deve ser atribuída aos aplicativos de nuvem que você deseja tornar acessíveis apenas ao aplicativo Intune Managed Browser.
-
-    ![Microsoft Azure AD – política de Acesso Condicional do Managed Browser](./media/app-configuration-managed-browser/managed-browser-conditional-access-01.png)
-
-5. Na seção **Atribuições**, selecione **Condições** > **Aplicativos cliente**. A folha **Aplicativos cliente** é exibida.
-6. Clique em **Sim** em **Configurar** para aplicar a política a aplicativos cliente específicos.
-7. Verifique se o **Navegador** está selecionado como um aplicativo cliente.
+1. Entre no [Centro de Administração do Gerenciador de Ponto de Extremidade da Microsoft](https://go.microsoft.com/fwlink/?linkid=2109431).
+2. Selecione **Dispositivos** > **Acesso Condicional** > **Nova política**.
+3. Adicione o **Nome** da política. 
+4. Na seção **Atribuições**, selecione **Condições** > **Aplicativos cliente**. O painel **Aplicativos cliente** é exibido.
+5. Clique em **Sim** em **Configurar** para aplicar a política a aplicativos cliente específicos.
+6. Verifique se o **Navegador** está selecionado como um aplicativo cliente.
 
     ![Azure AD – Managed Browser – Selecionar aplicativos cliente](./media/app-configuration-managed-browser/managed-browser-conditional-access-02.png)
 
     > [!NOTE]
     > Se desejar restringir quais aplicativos nativos (aplicativos que não são navegadores) poderão acessar esses aplicativos de nuvem, também será possível selecionar **Aplicativos móveis e clientes de desktop**.
 
-8. Na seção **Atribuições**, selecione **Usuários e grupos** e, em seguida, escolha os usuários ou grupos aos quais você deseja atribuir essa política. 
+7. Clique em **Concluído** > **Concluído**.
+8. Na seção **Atribuições**, selecione **Usuários e grupos** e escolha os usuários ou grupos aos quais você deseja atribuir essa política. Clique em **Concluído** para fechar o painel.
+9. Na seção **Atribuições**, selecione **Aplicativos de nuvem ou ações** para escolher quais aplicativos proteger com essa política. Clique em **Concluído** para fechar o painel.
+10. Selecione **Conceder** na seção **Controles de acesso** do painel. 
+11. Clique em **Conceder acesso** e em **Exigir aplicativo cliente aprovado**. 
+12. Clique em **Selecionar** no painel **Conceder**. Esta política deve ser atribuída aos aplicativos de nuvem que você deseja tornar acessíveis apenas ao aplicativo Intune Managed Browser.
 
-    > [!NOTE]
-    > Os usuários também devem ser afetados com a política de Proteção de Aplicativo do Intune para receber as políticas de configuração de aplicativo. Para obter mais informações sobre como criar políticas de Proteção de Aplicativo do Intune, consulte [O que são políticas de proteção do aplicativo?](app-protection-policy.md)
+    ![Microsoft Azure AD – política de Acesso Condicional do Managed Browser](./media/app-configuration-managed-browser/managed-browser-conditional-access-01.png)
 
-9. Na seção **Atribuições**, selecione **Aplicativos de nuvem** para escolher quais aplicativos proteger com esta política.
+
 
 Depois que a política acima estiver configurada, os usuários serão forçados a usar o Intune Managed Browser para acessar os aplicativos Web conectados ao Azure AD que você protegeu com esta política. Se os usuários tentarem usar um navegador não gerenciado neste cenário, eles verão um aviso de que o Intune Managed Browser deverá ser usado.
 
@@ -133,27 +132,28 @@ O SSO requer que seu dispositivo seja registrado pelo aplicativo Microsoft Authe
 >[!IMPORTANT]
 >Para configurações de aplicativo a serem aplicadas, o navegador protegido do usuário ou outro aplicativo no dispositivo já deve ser gerenciado pela [política de Proteção de Aplicativo do Intune]( ../app-protection-policy.md)
 
-1. Conecte-se ao [Intune](https://go.microsoft.com/fwlink/?linkid=2090973).
-3. Na folha **Aplicativos clientes** da lista Gerenciar, escolha **Políticas de configuração de aplicativo**.
-4. Na folha **Políticas de configuração de aplicativo**, escolha **Adicionar**.
-5. Na folha **Adicionar política configuração**, insira um **Nome** e uma **Descrição** opcional para as definições de configuração do aplicativo.
-6. Para o tipo **Registro de Dispositivo**, escolha **Aplicativos gerenciados**.
-7. Escolha **Selecionar o aplicativo necessário** e, em seguida, na folha **Aplicativos direcionados**, escolha o **Managed Browser** e/ou **Microsoft Edge** para iOS, Android ou ambos.
-8. Escolha **OK** para retornar à folha **Adicionar política de configuração**.
-9. Escolha **Definições de configuração**. Na folha **Configuração**, defina os pares de chave e valor para fornecer as configurações do Managed Browser. Use as próximas seções deste artigo para saber mais sobre os diferentes pares de chave e valor que podem ser definidos.
-10. Quando terminar, escolha **OK**.
-11. Na folha **Adicionar política de configuração**, escolha **Adicionar**.
-12. A nova configuração é criada e exibida na folha **Configuração de aplicativo**.
+1. Entre no [Centro de Administração do Gerenciador de Ponto de Extremidade da Microsoft](https://go.microsoft.com/fwlink/?linkid=2109431).
+2. Selecione **Aplicativos** > **Políticas de configuração de aplicativo** > **Adicionar** > **Aplicativos gerenciados**.
+3. Na página **Conceitos Básicos** do painel **Criar política de configuração de aplicativo**, insira um **Nome** e uma **Descrição** opcional para as definições de configuração do aplicativo.
+4. Escolha **Selecionar o aplicativo público**, depois escolha o **Managed Browser** e/ou **Microsoft Edge** para iOS, Android ou ambos.
+5. Clique em **Selecionar** para retornar ao painel **Criar política de configuração de aplicativo**.
+6. Clique em **Avançar** para exibir a página **Configurações**.
+7. Na página **Configurações**, defina os pares de chaves e valores para fornecer as configurações ao aplicativo. Use as próximas seções deste artigo para saber mais sobre os diferentes pares de chave e valor que podem ser definidos.
+8. Clique em **Avançar** para exibir a página **Atribuição** e clique em **Selecionar grupos para incluir** e/ou **Selecionar grupos para excluir**.
+9. Clique em **Avançar** para exibir a página **Revisar + criar**.
+10. Clique em **Criar** depois de analisar a política de configuração de aplicativo.
+
+A nova configuração é criada e exibida no painel **Política de configuração de aplicativo**.
 
 
 ## <a name="assign-the-configuration-settings-you-created"></a>Atribuir as definições de configuração criadas
 
 Atribua as configurações a grupos de usuários do Azure AD. Se esse usuário tiver o aplicativo de navegador protegido direcionado instalado, o aplicativo será gerenciado pelas configurações especificadas.
 
-1. Na folha **Aplicativos clientes** do painel de gerenciamento de aplicativo móvel do Intune, escolha **Políticas de configuração de aplicativo**.
+1. No painel **Aplicativos** do painel de gerenciamento de aplicativo móvel do Intune, escolha **Políticas de configuração de aplicativo**.
 2. Na lista de configurações de aplicativo, selecione aquela que você deseja atribuir.
-3. Na próxima folha, escolha **Atribuições**.
-4. Na folha **Atribuições**, selecione o grupo do Azure AD ao qual você deseja atribuir a configuração de aplicativo e, em seguida, escolha **OK**.
+3. No próximo painel, escolha **Atribuições**.
+4. No painel **Atribuições**, selecione o grupo do Azure AD ao qual você deseja atribuir a configuração de aplicativo e, em seguida, escolha **OK**.
 
 ## <a name="how-to-set-microsoft-edge-as-the-protected-browser-for-your-organization"></a>Como definir o Microsoft Edge como navegador protegido para a organização
 
@@ -170,7 +170,7 @@ Se essa configuração for definida como "False":
 - Caso os usuários **já** tenham baixado o Managed Browser **ou** o Microsoft Edge, o aplicativo do navegador será inicializado. 
 - No entanto, se ainda não baixaram nenhum dos navegadores, eles serão solicitados a baixar o Managed Browser.
 
-Use o procedimento descrito acima para criar uma configuração de aplicativo do Microsoft Edge. Forneça o seguinte par de chave e valor quando escolher as **Definições de configuração**, na folha **Configuração** (etapa 9):
+Use o procedimento descrito acima para criar uma configuração de aplicativo do Microsoft Edge. Forneça o seguinte par de chave e valor ao escolher as **Definições de configuração**, no painel **Configuração** (etapa 9):
 
 | Chave                              |  Valor   |
 |----------------------------------|----------|

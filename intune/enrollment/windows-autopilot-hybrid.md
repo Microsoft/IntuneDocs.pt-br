@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 3724072144a78e1f4f5a17914eff941469e27242
-ms.sourcegitcommit: 556b7ea2049014c9027f0e44affd3f301fab55fc
+ms.openlocfilehash: dc618f2502647ba33a16cff4305b9f4671e05996
+ms.sourcegitcommit: fc4b38660129d615068f34ad4b96b900d73f7b53
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/06/2019
-ms.locfileid: "73709603"
+ms.lasthandoff: 11/27/2019
+ms.locfileid: "74558180"
 ---
 # <a name="deploy-hybrid-azure-ad-joined-devices-by-using-intune-and-windows-autopilot"></a>Implante dispositivos ingressados no Azure AD híbrido usando o Intune e o Windows Autopilot
 Você pode usar o Intune e o Windows Autopilot para configurar dispositivos ingressados no Azure Active Directory (Azure AD) híbrido. Para isso, siga as etapas neste artigo.
@@ -42,7 +42,7 @@ Os dispositivos a serem registrados também devem:
 
 ## <a name="set-up-windows-10-automatic-enrollment"></a>Configurar o registro automático do Windows 10
 
-1. Entre no [Centro de Administração do Gerenciador de Ponto de Extremidade da Microsoft](https://go.microsoft.com/fwlink/?linkid=2109431) e, no painel esquerdo, selecione **Azure Active Directory**.
+1. Entre no Azure e, no painel esquerdo, selecione **Azure Active Directory**.
 
    ![O portal do Azure](./media/windows-autopilot-hybrid/auto-enroll-azure-main.png)
 
@@ -107,14 +107,14 @@ A unidade organizacional que recebeu o direito de criar computadores deve corres
 
 O conector do Intune para o Active Directory deve ser instalado em um computador que está executando o Windows Server 2016 ou posterior. O computador também deve ter acesso à internet e ao seu Active Directory. Para aumentar a disponibilidade e a escala ou para dar suporte a vários domínios do Active Directory, você pode instalar vários conectores em seu ambiente. É recomendável instalar o conector em um servidor que não está executando nenhum outro conector do Intune.
 
-1. No [Centro de Administração do Gerenciador de Ponto de Extremidade da Microsoft](https://go.microsoft.com/fwlink/?linkid=2109431), selecione **Registro de dispositivo** > **Registro do Windows** > **Conector do Intune para Active Directory** > **Adicionar**. 
+1. No [Centro de Administração do Gerenciador de Ponto de Extremidade da Microsoft](https://go.microsoft.com/fwlink/?linkid=2109431), selecione **Dispositivos** > **Windows** > **Registro do Windows** > **Conector do Intune para Active Directory** > **Adicionar**. 
 2. Siga as instruções para baixar o Conector.
 3. Abra o arquivo de configuração do Conector baixado, *ODJConnectorBootstrapper.exe*, para instalar o Conector.
 4. No final da instalação, selecione **Configurar**.
 5. Selecione **Entrar.**
 6. Insira as credenciais de função de Administrador do Intune ou Administrador Global do usuário.  
    A conta de usuário deve ter uma licença válida do Intune.
-7. Vá para **Registro de dispositivo** > **Registro do Windows** > **Conector do Intune para Active Directory** e confirme se o status da conexão é **Ativa**.
+7. Vá para **Dispositivos** > **Windows** > **Registro do Windows** > **Conector do Intune para Active Directory** e confirme se o status da conexão é **Ativo**.
 
 > [!NOTE]
 > Depois que você entrar no Conector, pode levar alguns minutos para que ele apareça no [Centro de Administração do Gerenciador de Ponto de Extremidade da Microsoft](https://go.microsoft.com/fwlink/?linkid=2109431). O Conector somente será exibido se puder se comunicar com êxito com o serviço Intune.
@@ -183,7 +183,7 @@ Depois que os dispositivos do Autopilot são registrados, seus nomes de disposit
 ## <a name="create-and-assign-an-autopilot-deployment-profile"></a>Criar e atribuir um perfil de implantação do Autopilot
 Os perfis de implantação do Autopilot são usados para configurar os dispositivos do Autopilot.
 
-1. No [Centro de Administração do Gerenciador de Ponto de Extremidade da Microsoft](https://go.microsoft.com/fwlink/?linkid=2109431), selecione **Registro de dispositivos** > **Registro de Windows** > **Perfis de implantação** > **Criar perfil**.
+1. No [Centro de Administração do Gerenciador de Ponto de Extremidade da Microsoft](https://go.microsoft.com/fwlink/?linkid=2109431), selecione **Dispositivos** > **Windows** > **Registro do Windows** > **Perfis de Implantação** > **Criar Perfil**.
 2. Na página **Básico**, digite um **Nome** e uma **Descrição** opcional.
 3. Se quiser que todos os dispositivos nos grupos atribuídos sejam convertidos automaticamente no Autopilot, defina **Converter todos os dispositivos direcionados em Autopilot** como **Sim**. Todos os dispositivos de propriedade corporativa que não sejam Autopilot em grupos atribuídos serão registrados com o serviço de implantação do Autopilot. Os dispositivos de propriedade pessoal não serão convertidos para o Autopilot. Aguarde 48 horas para que o registro seja processado. Quando o registro do dispositivo é cancelado e redefinido, o Autopilot o registra. Após um dispositivo ser registrado dessa maneira, desabilitar essa opção ou remover a atribuição de perfis não removerá o dispositivo do serviço de implantação do Autopilot. Em vez disso, é necessário [remover o dispositivo diretamente](enrollment-autopilot.md#delete-autopilot-devices).
 4. Selecione **Avançar**.
@@ -200,7 +200,7 @@ Levará cerca de 15 minutos para que o status do perfil de dispositivo mude de *
 
 ## <a name="optional-turn-on-the-enrollment-status-page"></a>(Opcional) Ative a página de status de registro
 
-1. No [Centro de Administração do Gerenciador de Ponto de Extremidade da Microsoft](https://go.microsoft.com/fwlink/?linkid=2109431), selecione **Registro de dispositivos** > **Registro do Windows** > **Página de status de registro**.
+1. No [Centro de Administração do Gerenciador de Ponto de Extremidade da Microsoft](https://go.microsoft.com/fwlink/?linkid=2109431), selecione **Dispositivos** > **Windows** > **Registro do Windows** > **Página de Status de Registro**.
 1. No painel **Página de Status de Registro**, selecione **Padrão** > **Configurações**.
 1. Na caixa **Mostrar o progresso da instalação do aplicativo e do perfil**, selecione **Sim**.
 1. Configure as outras opções conforme necessário.
@@ -208,7 +208,7 @@ Levará cerca de 15 minutos para que o status do perfil de dispositivo mude de *
 
 ## <a name="create-and-assign-a-domain-join-profile"></a>Criar e atribuir um perfil de Ingresso no Domínio
 
-1. No [Centro de Administração do Gerenciador de Ponto de Extremidade da Microsoft](https://go.microsoft.com/fwlink/?linkid=2109431), selecione **Configuração de dispositivos** > **Perfis** > **Criar perfil**.
+1. No [Centro de Administração do Gerenciador de Ponto de Extremidade da Microsoft](https://go.microsoft.com/fwlink/?linkid=2109431), selecione **Dispositivos** > **Perfis de configuração** > **Criar Perfil**.
 1. Insira as seguintes propriedades:
    - **Nome**: insira um nome descritivo para o novo perfil.
    - **Descrição**: Insira uma descrição para o perfil.

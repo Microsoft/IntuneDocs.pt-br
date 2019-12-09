@@ -6,7 +6,7 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 10/02/2019
+ms.date: 11/26/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.subservice: apps
@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: c8ce24081eae1808d3db0c5078026b306fd209d5
-ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
+ms.openlocfilehash: c9d792bd07ae8d7d712748874d64314dd258c5e8
+ms.sourcegitcommit: 73b362173929f59e9df57e54e76d19834f155433
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/16/2019
-ms.locfileid: "72507247"
+ms.lasthandoff: 11/27/2019
+ms.locfileid: "74563938"
 ---
 # <a name="windows-10-app-deployment-by-using-microsoft-intune"></a>Implantação de aplicativo do Windows 10 usando o Microsoft Intune 
 
@@ -51,9 +51,10 @@ Os aplicativos da Microsoft Store para Empresas são aplicativos modernos adquir
 ### <a name="categorize-microsoft-store-for-business-apps"></a>Categorizar aplicativos da Microsoft Store para Empresas 
 Para categorizar aplicativos da Microsoft Store para Empresas: 
 
-1. Conecte-se ao [Intune](https://go.microsoft.com/fwlink/?linkid=2090973).
-2. Selecione **Aplicativos cliente** > **Aplicativos**. Selecione os aplicativos da Microsoft Store para Empresas. Em seguida, selecione **Informações do Aplicativo** > **Categoria**. 
-3. Selecione uma categoria.
+1. Entre no [Centro de Administração do Gerenciador de Ponto de Extremidade da Microsoft](https://go.microsoft.com/fwlink/?linkid=2109431).
+2. Selecione **Aplicativos** > **Todos os aplicativos**. 
+3. Selecione os aplicativos da Microsoft Store para Empresas. Em seguida, selecione **Propriedades** > **Informações do Aplicativo** > **Categoria**. 
+4. Selecione uma categoria.
 
 ## <a name="install-apps-on-windows-10-devices"></a>Instalar aplicativos em dispositivos Windows 10
 Dependendo do tipo de aplicativo, é possível instalá-lo em um dispositivo Windows 10 de uma das maneiras a seguir:

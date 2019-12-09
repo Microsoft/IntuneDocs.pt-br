@@ -6,7 +6,7 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 07/24/2019
+ms.date: 11/26/2019
 ms.topic: quickstart
 ms.service: microsoft-intune
 ms.subservice: apps
@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: bcda312274e78d327a3a515eb6c95454e38c96f1
-ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
+ms.openlocfilehash: 1800fa91ed5650fd57a31d24fdb3767a60dc5816
+ms.sourcegitcommit: 73b362173929f59e9df57e54e76d19834f155433
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/16/2019
-ms.locfileid: "72507131"
+ms.lasthandoff: 11/27/2019
+ms.locfileid: "74563789"
 ---
 # <a name="quickstart-create-and-assign-an-app-protection-policy"></a>Início Rápido: Criar e atribuir uma política de proteção de aplicativo
 
@@ -43,7 +43,7 @@ Entre no [Intune](https://aka.ms/intuneportal) como um [administrador global ou 
 
 Use as seguintes etapas para criar uma política de proteção do aplicativo:
 
-1. No [Intune](https://aka.ms/intuneportal), selecione **Aplicativos clientes** > **Políticas de proteção de aplicativo** > **Criar Política**. 
+1. No [Intune](https://aka.ms/intuneportal), selecione **Aplicativos** > **Políticas de proteção de aplicativo** > **Criar Política**. 
 2. Insira os seguintes detalhes: 
 
     - **Nome**: *proteção de conteúdo do Windows 10*
@@ -67,7 +67,7 @@ Depois de criar uma política de proteção de aplicativo no Intune, você poder
 
 Use as seguintes etapas para atribuir a política de proteção do aplicativo:
 
-1. No [Intune](https://aka.ms/intuneportal), selecione **Intune** > **Aplicativos cliente** > **Políticas de proteção de aplicativo**. 
+1. No [Intune](https://aka.ms/intuneportal), selecione **Intune** > **Aplicativos** > **Políticas de proteção de aplicativo**. 
 2. Selecione a política de proteção de aplicativo criada anteriormente. Neste início rápido, a política é a **proteção de conteúdo do Windows 10**.
 3. Selecione **Atribuições**.
 4. Clique em **Selecionar grupos para incluir** na guia **Incluir**.

@@ -6,7 +6,7 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 10/22/2019
+ms.date: 11/26/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.subservice: apps
@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: ''
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 8519ad00024be43371cd118e3f37ae2fbc57898b
-ms.sourcegitcommit: 25acfc88b366d2da71c37d354a0238e4f1168325
+ms.openlocfilehash: eff4ccdc8b40da4d72394001b88446653ff71bd0
+ms.sourcegitcommit: 73b362173929f59e9df57e54e76d19834f155433
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/23/2019
-ms.locfileid: "72813374"
+ms.lasthandoff: 11/27/2019
+ms.locfileid: "74564254"
 ---
 # <a name="intune-discovered-apps"></a>Aplicativos descobertos pelo Intune
 
@@ -33,18 +33,18 @@ Os **aplicativos descobertos** pelo Intune são uma lista de aplicativos detecta
 
 O Intune fornece uma lista agregada de aplicativos detectados nos dispositivos registrados no Intune em seu locatário.
 
-1. Conecte-se ao [Intune](https://go.microsoft.com/fwlink/?linkid=2090973).
-2. No painel **Intune**, selecione **Aplicativos cliente** > **Aplicativos descobertos**.
+1. Entre no [Centro de Administração do Gerenciador de Ponto de Extremidade da Microsoft](https://go.microsoft.com/fwlink/?linkid=2109431).
+2. Selecione **Aplicativos** > **Monitor** > **Aplicativos descobertos**.
 
 >[!NOTE]
->Você pode exportar a lista de aplicativos descobertos para um arquivo .csv selecionando **Exportar** na folha **Aplicativos descobertos**.
+>Você pode exportar a lista de aplicativos descobertos para um arquivo .csv selecionando **Exportar** no painel **Aplicativos descobertos**.
 >
 >Atualmente, não há contagens de agregação para aplicativos Win32 descobertos. Esse tipo de dados só pode ser exibido por dispositivo.
 
 O Intune também fornece a lista de aplicativos descobertos para o dispositivo individual em seu locatário.
 
-1. Conecte-se ao [Intune](https://go.microsoft.com/fwlink/?linkid=2090973).
-2. No painel Intune, escolha **Dispositivos** > **Todos os Dispositivos**.
+1. Entre no [Centro de Administração do Gerenciador de Ponto de Extremidade da Microsoft](https://go.microsoft.com/fwlink/?linkid=2109431).
+2. Selecione **Dispositivos** > **Todos os dispositivos**.
 3. Selecione um dispositivo.
 4. Para exibir os aplicativos detectados para este dispositivo, escolha **Aplicativos Descobertos** na seção **Monitorar**.
 
@@ -69,7 +69,7 @@ A lista a seguir fornece o tipo de plataforma do aplicativo, os aplicativos moni
 
 O número de aplicativos descobertos pode não corresponder à contagem do status de instalação de aplicativos. Possibilidades de inconsistências incluem:
 
-- Uma alteração de direcionamento de um aplicativo gerenciado instalado pode fazer com que a contagem de instalações na folha de status diminua, mas continue a ser informada nos aplicativos detectados.
+- Uma alteração de direcionamento de um aplicativo gerenciado instalado pode fazer com que a contagem de instalações no painel de status diminua, mas continue a ser informada nos aplicativos detectados.
 - O direcionamento de várias instâncias do mesmo aplicativo em um locatário resultará em contagens diferentes devido à potencial sobreposição de usuários ou dispositivos. Cada instância do aplicativo contará usuários sobrepostos, mas os aplicativos detectados terão contagens duplicadas.
 - Os aplicativos detectados e status de aplicativos são coletados em intervalos de tempo diferentes, o que pode causar uma discrepância na contagem de aplicativos.
 
