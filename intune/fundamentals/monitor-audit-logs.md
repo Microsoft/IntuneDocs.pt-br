@@ -14,12 +14,12 @@ ms.technology: ''
 ms.assetid: 6ee841cc-5694-4ba1-8f66-1d58edec30a4
 search.appverid: MET150
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: fd00a0ae4cb6c3b150fe40cfc6cd7b71cfa973f3
-ms.sourcegitcommit: 0be25b59c8e386f972a855712fc6ec3deccede86
+ms.openlocfilehash: d6af0718f2b926383bb943b6321b4d5839346ce7
+ms.sourcegitcommit: df8e2c052fafb2d5d4e9b4fcd831ae0ecf7f8d16
 ms.translationtype: MTE75
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/18/2019
-ms.locfileid: "72585254"
+ms.lasthandoff: 12/10/2019
+ms.locfileid: "74991982"
 ---
 # <a name="use-audit-logs-to-track-and-monitor-events-in-microsoft-intune"></a>Usar logs de auditoria para acompanhar e monitorar eventos no Microsoft Intune
 
@@ -40,9 +40,14 @@ Os usuários com as seguintes permissões podem examinar os logs de auditoria:
 
 Você pode examinar os logs de auditoria no grupo de monitoramento de cada carga de trabalho do Intune:
 
-1. Conecte-se ao [Intune](https://go.microsoft.com/fwlink/?linkid=2090973).
-2. Escolha a carga de trabalho que você deseja para examinar os logs de auditoria. Por exemplo, selecione **Dispositivos**.
-3. Em **Monitoramento**, escolha **Logs de auditoria**.
+1. Entre no [Centro de Administração do Gerenciador de Ponto de Extremidade da Microsoft](https://go.microsoft.com/fwlink/?linkid=2109431).
+2. Selecione **Administração de locatário** > **logs de auditoria**.
+3. Para filtrar os resultados, selecione **Filtrar** e refine os resultados usando as opções a seguir.
+    - **Categoria**: como **conformidade**, **dispositivo**e **função**.
+    - **Atividade**: as opções listadas aqui são restritas pela opção escolhida em **categoria**.
+    - **Intervalo de datas**: você pode escolher os logs para o mês, a semana ou o dia anterior.
+4. Escolha **Aplicar**.
+4. Selecione um item na lista para ver os detalhes da atividade.
 
 ## <a name="route-logs-to-azure-monitor"></a>Rotear logs ao Azure Monitor
 
@@ -53,32 +58,10 @@ Logs de auditoria e logs operacionais também podem ser roteados para o Azure Mo
 > [!NOTE]
 > Para obter mais informações sobre esse recurso e revisar os pré-requisitos para usá-lo, consulte [enviar dados de log para armazenamento, hubs de eventos ou log Analytics](review-logs-using-azure-monitor.md).
 
-## <a name="review-audit-events"></a>Examinar eventos de auditoria
-
-![Escolher os logs de auditoria no Intune para ver as ações e as datas em que os eventos aconteceram](./media/monitor-audit-logs/monitor-audit-logs.png "Logs de auditoria")
-
-Um log de auditoria tem um modo de exibição de lista padrão que mostra os itens a seguir:
-
-- Data e hora da ocorrência
-- Iniciado por (Ator)
-- Nome do aplicativo
-- Atividade
-- Destino(s)
-- Category
-- Status
-
-Para ver informações mais específicas sobre um evento, selecione um item na lista:
-
-![Obter informações mais específicas sobre quem fez o que em logs de auditoria no Intune](./media/monitor-audit-logs/monitor-audit-log-detail.png "|::ref2::|")
-
 > [!NOTE]
 > **Iniciado por (ator)** inclui informações sobre quem executou a tarefa e em que local ela foi executada. Por exemplo, se você executar a atividade no Intune no Portal do Azure, então **Aplicativo** sempre listará a **extensão do Portal do Microsoft Intune**, e **ID do Aplicativo** sempre usará o mesmo GUID.
 >
 > A seção **Destino(s)** lista vários destinos e as propriedades que foram alteradas.  
-
-## <a name="filter-audit-events"></a>Filtrar eventos de auditoria
-
-Cada carga de trabalho tem um item de menu que filtra previamente a categoria de eventos de auditoria associada a esse painel. Uma opção de filtro separada permite alterar categorias diferentes, e detalhes de ação do evento nessa categoria. Você pode pesquisar pelo UPN, como o usuário que realizou a ação. Um filtro de intervalo de datas permite as opções de 24 horas, sete dias ou 30 dias. Por padrão, os últimos 30 dias dos eventos de auditoria são exibidos.
 
 ## <a name="use-graph-api-to-retrieve-audit-events"></a>Usar a API do Graph para recuperar os eventos de auditoria
 

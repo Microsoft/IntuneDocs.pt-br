@@ -20,10 +20,10 @@ search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
 ms.openlocfilehash: 6a6b5585501851bb52db70ca222f8cfff7ad0597
-ms.sourcegitcommit: 2c8a41ee95a3fde150667a377770e51b621ead65
+ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
 ms.translationtype: MTE75
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/06/2019
+ms.lasthandoff: 12/05/2019
 ms.locfileid: "73635459"
 ---
 # <a name="whats-new-in-the-microsoft-intune---previous-months"></a>Novidades do Microsoft Intune – meses anteriores
@@ -587,7 +587,7 @@ Ao criar um perfil de configuração para dispositivos iOS, é possível adicion
 [Configurações para exibir mensagens na tela de bloqueio](../configuration/ios-device-features-settings.md#lock-screen-message) lista as configurações.
 
 #### <a name="new-app-store-doc-viewing-gaming-device-restriction-settings-added-to-ios-devices---2827760--"></a>Novas configurações de restrição de dispositivo da App Store, Exibição de Documentos, Jogos adicionadas a dispositivos iOS<!-- 2827760-->
-Em **configuração de dispositivo** > **perfis de**  > **criar perfil** > **iOS** para plataforma > **restrições de dispositivo** para o tipo de perfil > **loja de aplicativos, exibição de documento, jogos de**, as seguintes configurações são adicionadas: permitir que aplicativos gerenciados gravem contatos em contas de contatos não gerenciados permitem que aplicativos não gerenciados leiam de contas de contatos , acesse [restrições de dispositivo iOS](../configuration/device-restrictions-ios.md#app-store-doc-viewing-gaming).
+Em **configuração do dispositivo** > **perfis** > **Criar perfil** > **Ios** para plataforma > **restrições de dispositivo** para o tipo de perfil > **App Store, exibição de documento, jogos**, as seguintes configurações são adicionadas: permitir que aplicativos gerenciados gravem contatos em contas de contatos não gerenciados permitem que aplicativos não gerenciados leiam de contas de contatos gerenciados para ver essas configurações, vá para [restrições de dispositivo IOS](../configuration/device-restrictions-ios.md#app-store-doc-viewing-gaming).
 
 #### <a name="new-notification-hints-and-keyguard-settings-to-android-enterprise-device-owner-devices---3201839-3201843---"></a>Novas configurações de notificação, dicas e keyguard para dispositivos de proprietário de dispositivo Android Enterprise<!-- 3201839 3201843 -->
 Esta atualização inclui vários recursos novos em dispositivos com Android Enterprise durante a execução como proprietário do dispositivo. Para usar esses recursos, acesse **Configuração do dispositivo** > **Perfis** > **Criar perfil** > em **Plataforma**, escolha **Android Enterprise** > em **Tipo de perfil**, escolha **Somente proprietário do dispositivo** > **Restrições do Dispositivo**.
@@ -650,7 +650,7 @@ Não há suporte para a configuração **Compartilhamento de Contatos via Blueto
 
 Para ver a lista atual de configurações, acesse [Configurações do dispositivo Android Enterprise para permitir ou restringir recursos](../configuration/device-restrictions-android-for-work.md).
 
-Proprietário do dispositivo Android Enterprise
+Aplica-se a: proprietário do dispositivo Android Enterprise
 
 
 <!-- vvvvvvvvvvvvvvvvvvvvvv -->
@@ -798,9 +798,9 @@ Esta atualização inclui novas configurações para dispositivos iOS e macOS la
 - Senha: bloquear o compartilhamento de senha (somente supervisionado)
 
 **Configurações do macOS**: 
-- Bloquear o preenchimento automático de senha
+- Senha: bloquear AutoPreenchimento de senha
 - Senha: bloquear solicitações de proximidade de senha
-- Bloquear compartilhamento de senha
+- Senha: bloquear compartilhamento de senha
 
 Para saber mais sobre essas configurações, consulte as configurações de restrição de dispositivos [iOS](../configuration/device-restrictions-ios.md) e [macOS](../configuration/device-restrictions-macos.md).
 

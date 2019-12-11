@@ -17,10 +17,10 @@ search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
 ms.openlocfilehash: 518f0b825b71a9773ed66dd480b329e998f919c4
-ms.sourcegitcommit: 25acfc88b366d2da71c37d354a0238e4f1168325
+ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
 ms.translationtype: MTE75
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/23/2019
+ms.lasthandoff: 12/05/2019
 ms.locfileid: "72813508"
 ---
 # <a name="macos-settings-to-mark-devices-as-compliant-or-not-compliant-using-intune"></a>Configurações do macOS para marcar dispositivos como em conformidade ou não em conformidade usando o Intune
@@ -40,7 +40,7 @@ Como um administrador do Intune, use essas configurações de conformidade para 
 ## <a name="device-health"></a>Integridade do Dispositivo
 
 - **Exigir uma proteção de integridade do sistema**:  
-  - **Não configurado** (*padrão*) — Essa configuração não é avaliada em relação à conformidade.
+  - **Não configurado** (*padrão*) — Esta configuração não é avaliada em relação a estar ou não em conformidade.
   - **Exigir** -exigir que dispositivos MacOS tenham [proteção de integridade do sistema](https://support.apple.com/HT204899) (abre o site da Apple) habilitado.  
 
 ## <a name="device-properties"></a>Propriedades do Dispositivo

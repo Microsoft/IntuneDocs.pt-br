@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 96f6dc3d1a8f8589395cf49b3bb934adadf437a4
-ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
+ms.openlocfilehash: 239dd8630eb361da8609e3a34eb2c9346a64dab0
+ms.sourcegitcommit: ec69e7ccc6e6183862a48c1b03ca6a3bf573f354
 ms.translationtype: MTE75
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/16/2019
-ms.locfileid: "72508500"
+ms.lasthandoff: 12/07/2019
+ms.locfileid: "74907178"
 ---
 # <a name="troubleshoot-device-actions-in-intune"></a>Solucionar problemas de ações de dispositivo no Intune
 
@@ -54,7 +54,7 @@ Não. E você não precisa inserir os traços.
 ## <a name="remove-devices-action"></a>Ação remover dispositivos
 
 ### <a name="how-do-i-tell-who-started-a-retirewipe"></a>Como fazer dizer quem iniciou uma desativação/apagamento?
-Vá para **Intune** > **Dispositivos** > **Ações de dispositivo** > marque a coluna **Iniciado Por**.
+No centro de [Administração do Microsoft Endpoint Manager](https://go.microsoft.com/fwlink/?linkid=2109431), acesse **Administração de locatários** > **logs de auditoria** > marque a coluna **iniciado por** .
 Se você não vir uma entrada, a pessoa mais provável de iniciar a ação é o usuário do dispositivo. Eles provavelmente usaram o Portal da Empresa aplicativo ou o portal.manage.microsoft.com.
 
 ### <a name="why-wasnt-my-application-uninstalled-after-using-retire"></a>Por que meu aplicativo não foi desinstalado depois de usar a desativação?
@@ -69,7 +69,7 @@ Esse comportamento é esperado. O Google não permite a redefinição de fábric
 Como desativar um dispositivo não revoga tokens de acesso. Você pode usar políticas de acesso condicional para atenuar essa condição.
 
 ### <a name="how-can-i-monitor-a-retirewipe-action-after-it-was-issued"></a>Como posso monitorar uma ação de desativar/apagar após sua emissão?
-Vá para o **Intune**  > **dispositivos**  > **ações do dispositivo**.
+No centro de [Administração do Microsoft Endpoint Manager](https://go.microsoft.com/fwlink/?linkid=2109431), acesse **Administração de locatários** > **logs de auditoria**.
 
 ### <a name="why-do-wipes-sometimes-show-as-pending-indefinitely"></a>Por que as limpezas às vezes são mostradas como pendentes de forma indefinida?
 Os dispositivos nem sempre relatam seu status de volta para o serviço do Intune antes que a redefinição seja iniciada. Assim, a ação é mostrada como pendente. Se você confirmou que a ação foi bem-sucedida, exclua o dispositivo do serviço.

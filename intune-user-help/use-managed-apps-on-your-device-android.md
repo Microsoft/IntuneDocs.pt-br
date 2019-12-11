@@ -5,7 +5,7 @@ keywords: ''
 author: lenewsad
 ms.author: lanewsad
 manager: dougeby
-ms.date: 04/19/2019
+ms.date: 12/03/2019
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -19,12 +19,12 @@ ms.reviewer: chrisbal
 ms.suite: ems
 ms.custom: intune-enduser
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 24d4193b3e43b7c406a1fb6c9c8d987caa6cbeea
-ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
+ms.openlocfilehash: 28ba1d2d50f366e5e34fae06ae188293dd0fb8b5
+ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
 ms.translationtype: MTE75
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/16/2019
-ms.locfileid: "72501889"
+ms.lasthandoff: 12/05/2019
+ms.locfileid: "74781202"
 ---
 # <a name="use-managed-apps-on-your-android-device"></a>Usar aplicativos gerenciados no seu dispositivo Android
 Aplicativos gerenciados são configurados para atender aos requisitos de segurança da sua organização e proteger os dados corporativos e de estudante. Esses aplicativos são disponibilizados para você em seu dispositivo para instalar ou usar automaticamente. 
@@ -39,9 +39,7 @@ Para maximizar a proteção de dados, sua organização pode configurar vários 
 As organizações podem exigir que você use um aplicativo gerenciado para fazer algo, como abrir um arquivo de trabalho ou acessar um link da Web. Se você não tiver o aplicativo, não poderá continuar sua tarefa. Alguns aplicativos gerenciados são disponibilizados para instalação, mas não são obrigatórios.
 
 ## <a name="how-do-i-know-im-using-a-managed-app"></a>Como eu sei que estou usando um aplicativo gerenciado?
-Quando você acessar dados de estudante ou corporativos em um aplicativo gerenciado pela primeira vez, receberá uma mensagem semelhante ao exemplo a captura de tela abaixo. A mensagem solicita que você reinicie o aplicativo para continuar.
-
-![Captura de tela da mensagem que aparece quando um usuário abre um aplicativo gerenciado no dispositivo. A mensagem diz: "Sua organização não está protegendo seus dados neste aplicativo. Você precisa reiniciar o aplicativo para continuar", seguido por um botão OK.](./media/managed-apps-message.png)
+Ao tentar acessar dados corporativos ou de estudante em um aplicativo gerenciado, você receberá uma mensagem na tela informando que o aplicativo está protegido pela sua organização. 
 
 ## <a name="commonly-managed-apps"></a>Aplicativos comumente gerenciados  
 Exemplos de aplicativos gerenciados normalmente exigidos ou disponíveis em escolas e locais de trabalho são:

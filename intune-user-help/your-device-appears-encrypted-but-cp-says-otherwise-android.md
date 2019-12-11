@@ -20,10 +20,10 @@ ms.suite: ems
 ms.custom: intune-enduser
 ms.collection: M365-identity-device-management
 ms.openlocfilehash: af1c7d1f9d8236fd95413317acefbe8887d90f47
-ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
+ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
 ms.translationtype: MTE75
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/16/2019
+ms.lasthandoff: 12/05/2019
 ms.locfileid: "72507669"
 ---
 # <a name="device-encrypted-but-apps-say-otherwise"></a>Dispositivo criptografado, mas aplicativos dizem de outra forma
@@ -32,7 +32,7 @@ Se Portal da Empresa ou o aplicativo Microsoft Intune dizer que seu dispositivo 
 
 ## <a name="add-a-startup-pin"></a>Adicionar um PIN de inicialização
 
-Alguns dispositivos Android exigirão que você crie um PIN de inicialização para assegurar que o dispositivo esteja seguro. O local dessa configuração estará no aplicativo de **configurações** do seu dispositivo. O nome e o local da configuração podem variar. Por exemplo, no Samsung Galaxy S7, a configuração é conhecida como **inicialização segura**. Para habilitá-lo e criar uma senha, vá para **configurações**  > **tela de bloqueio e segurança**  > **inicialização segura**.  
+Alguns dispositivos Android exigirão que você crie um PIN de inicialização para assegurar que o dispositivo esteja seguro. O local dessa configuração estará no aplicativo de **configurações** do seu dispositivo. O nome e o local da configuração podem variar. Por exemplo, no Samsung Galaxy S7, a configuração é conhecida como **inicialização segura**. Para habilitá-lo e criar uma senha, vá para **configurações** > **tela de bloqueio e segurança** > **inicialização segura**.  
 
 ## <a name="encrypt-the-entire-device"></a>Criptografar todo o dispositivo
 

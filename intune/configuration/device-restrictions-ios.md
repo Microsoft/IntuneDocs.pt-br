@@ -6,7 +6,7 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 11/25/2019
+ms.date: 12/12/2019
 ms.topic: reference
 ms.service: microsoft-intune
 ms.subservice: configuration
@@ -16,16 +16,14 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure; seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 6fde277e16043662420864adcc0458e3dccad308
-ms.sourcegitcommit: ce518a5dfe62c546a77f32ef372f36efbaad473f
+ms.openlocfilehash: 5f9a01adaa6f5ab59819c2924172c30a437ebd8c
+ms.sourcegitcommit: df8e2c052fafb2d5d4e9b4fcd831ae0ecf7f8d16
 ms.translationtype: MTE75
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/25/2019
-ms.locfileid: "74465660"
+ms.lasthandoff: 12/10/2019
+ms.locfileid: "74992943"
 ---
 # <a name="ios-and-ipados-device-settings-to-allow-or-restrict-features-using-intune"></a>Configurações de dispositivo iOS e iPadOS para permitir ou restringir recursos usando o Intune
-
-[!INCLUDE [azure_portal](../includes/azure_portal.md)]
 
 Este artigo lista e descreve as diferentes configurações que você pode controlar em dispositivos iOS e iPadOS. Como parte de sua solução de MDM (gerenciamento de dispositivo móvel), use essas configurações para permitir ou desabilitar recursos, definir regras de senha, permitir ou restringir aplicativos específicos e muito mais.
 
@@ -52,7 +50,7 @@ Essas configurações são adicionadas a um perfil de configuração do disposit
 ### <a name="settings-apply-to-device-enrollment-automated-device-enrollment-supervised"></a>As configurações se aplicam a: registro de dispositivo, registro de dispositivo automatizado (supervisionado)
 
 - **Certificados TLS não confiáveis**: escolha **Bloquear** para impedir certificados TLS (Transport Layer Security) não confiáveis no dispositivo. **Não configurado** (padrão) permite certificados TLS.
-- **Permitir atualizações do PKI aéreo**: **Permitir** deixa os usuários receberem as atualizações de software sem precisar conectar os dispositivos a um computador.
+- **Bloquear atualizações de PKI por satélite**: o **bloco** impede que os usuários recebam atualizações de software sem conectar seus dispositivos a um computador. **Não configurado** (padrão) não atualiza essa configuração no dispositivo.
 - **Limitar acompanhamento de anúncio**: escolha **Limitar** para desabilitar o identificador de publicidade do dispositivo. **Não configurado** (padrão) o mantém habilitado.
 
 ### <a name="settings-apply-to-automated-device-enrollment-supervised"></a>As configurações se aplicam a: registro de dispositivo automatizado (supervisionado)
@@ -95,7 +93,7 @@ Essas configurações são adicionadas a um perfil de configuração do disposit
 - **Alterações do perfil de configuração**: **Bloquear** impede alterações no perfil de configuração no dispositivo. **Não configurado** (padrão) permite que o usuário instale perfis de configuração.
 - **Bloqueio de Ativação**: escolha **Permitir** para habilitar o Bloqueio de Ativação em dispositivos iOS supervisionados. O Bloqueio de Ativação dificulta a reativação de um dispositivo perdido ou roubado.
 - **Bloquear a remoção de aplicativo**: escolha **Bloquear** para impedir que os usuários removam aplicativos. **Não configurado** (padrão) permite que os usuários removam aplicativos do dispositivo.
-- **Bloqueia o modo USB Restrito**: escolha **Bloquear** para desabilitar o modo USB Restrito em dispositivos supervisionados. O modo USB Restrito impede a troca de dados de acessórios USB com um dispositivo que está bloqueado há mais de uma hora. **Não configurado** (padrão) permite o modo USB Restrito.
+- **Permitir acessórios USB enquanto o dispositivo estiver bloqueado**: **permitir** permite que os acessórios USB troquem dados por um dispositivo que tenha sido bloqueado por mais de uma hora. **Não configurado** (padrão) não atualiza o modo de USB restrito no dispositivo.
 - **Forçar data e hora automáticas**: **Exigir** força os dispositivos supervisionados a definir automaticamente a data e a hora. O fuso horário do dispositivo é atualizado quando o dispositivo está conectado à rede celular ou ao Wi-Fi e com os serviços de localização habilitados.
 - **Exigir que os alunos solicitem permissão para deixar o curso do Classroom**: **Exigir** força os alunos inscritos em um curso não gerenciado por meio do aplicativo Classroom a solicitarem permissão do professor para sair do curso. **Não configurado** (padrão) não força o aluno a pedir permissão.
 

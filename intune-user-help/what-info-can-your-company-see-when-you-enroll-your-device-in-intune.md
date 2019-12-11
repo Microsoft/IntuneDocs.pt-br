@@ -19,10 +19,10 @@ ms.reviewer: esmich
 ms.suite: ems
 ms.collection: M365-identity-device-management
 ms.openlocfilehash: fc50f48afbd527f3c6d82cc0c71a166b0356ab9e
-ms.sourcegitcommit: b5e719fb507b1bc4774674e76c856c435e69f68c
+ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
 ms.translationtype: MTE75
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/08/2019
+ms.lasthandoff: 12/05/2019
 ms.locfileid: "73801473"
 ---
 # <a name="what-information-can-my-organization-see-when-i-enroll-my-device"></a>Quais informações minha organização poderá ver quando eu registrar meu dispositivo?
@@ -52,7 +52,7 @@ Sua organização não pode ver suas informações pessoais quando você registr
 
 **O que sua organização pode conseguir ver:**
 
-- Número de telefone: para dispositivos de propriedade corporativa, o número de telefone completo pode ser visto. Para dispositivos de propriedade pessoal, apenas os quatro últimos dígitos de seu número de telefone ficam visíveis para sua organização. Você pode ver o **Tipo de Propriedade** de cada dispositivo individual abrindo a página Detalhes do Dispositivo desse dispositivo.
+- Número de telefone: para dispositivos de propriedade corporativa, o número de telefone completo pode ser visto. Para dispositivos de propriedade pessoal, apenas os quatro últimos dígitos de seu número de telefone ficam visíveis para sua organização. Você pode ver o tipo de propriedade para cada dispositivo individual na página de **detalhes do dispositivo** .
 - Espaço de armazenamento do dispositivo: se você não puder instalar um aplicativo necessário, sua organização poderá observar o espaço de armazenamento do seu dispositivo para descobrir se há pouco espaço.  
 - Localização: a organização nunca poderá ver a localização do seu dispositivo, a menos que você precise recuperar um dispositivo iOS perdido, supervisionado. Visite a [documentação do Apple iOS](https://go.microsoft.com/fwlink/?linkid=853816) para saber mais sobre dispositivos supervisionados.  
 - Detalhes do inventário de aplicativo: se a organização usar a Defesa Contra Ameaças Móveis, ela poderá exibir detalhes sobre os aplicativos que estão em seu dispositivo iOS. Saiba mais sobre [Defesa contra Ameaças Móveis](you-are-prompted-to-install-mtd-ios.md). Se você tem um dispositivo pessoal, sua organização poderá ver apenas o inventário de aplicativos gerenciados. Se você tem um dispositivo corporativo, sua organização poderá ver todo o inventário de aplicativos.

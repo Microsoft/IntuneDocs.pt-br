@@ -19,10 +19,10 @@ search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
 ms.openlocfilehash: 3980720101489d32b27957a2e2d3e0e951e58da6
-ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
+ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
 ms.translationtype: MTE75
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/16/2019
+ms.lasthandoff: 12/05/2019
 ms.locfileid: "72509006"
 ---
 <!-- This article contains the exact baseline details for baseline versions that were previously published in security-baseline-settings-mdm.md.  -->
@@ -51,7 +51,7 @@ Para obter mais informações, veja [CSP de política – AboveLock](https://doc
   
   **Padrão**: Sim  
 
-### <a name="app-runtime"></a>Tempo de execução do aplicativo  
+### <a name="app-runtime"></a>Runtime do aplicativo  
 
 Para obter mais informações, veja [CSP de política – AppRuntime](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-appruntime
 ) na documentação do Windows.  
@@ -1225,7 +1225,7 @@ Para obter mais informações, veja [CSP de política – RemoteManagement](http
 Para obter mais informações, veja [CSP de política RemoteProcedureCall](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-remoteprocedurecall) na documentação do Windows.  
 
 - **Opções de cliente RPC não autenticado**  
-  Essa configuração de política controla como o tempo de execução do servidor RPC lida com clientes RPC não autenticados conectando-se aos servidores RPC. Essa configuração de política afeta todos os aplicativos RPC. Em um ambiente de domínio, use essa configuração de política com cuidado, pois pode afetar uma ampla variedade de funcionalidades, incluindo a política de grupo de processamento em si. Reverter uma alteração a essa configuração de política pode exigir intervenção manual em cada computador afetado. Essa configuração de política nunca deve ser aplicada a um controlador de domínio. Se você desabilitar essa configuração de política, o tempo de execução do servidor RPC usará o valor de "Autenticado" no cliente do Windows e o valor de "Nenhum" em versões do Windows Server que deem suporte a essa configuração de política. Se você não configurar essa política, ela permanecerá desabilitada. O tempo de execução do servidor RPC se comportará como se tivesse sido habilitado com o valor de "Autenticado" usado para o Cliente do Windows e o valor de "Nenhum" será usado para SKUs de Servidor que dão suporte a essa configuração de política. Se você habilitar essa configuração de política, ela instruirá o tempo de execução do servidor RPC a impedir que clientes RPC não autenticados conectem-se aos servidores RPC em execução em um computador. Um cliente será considerado autenticado se ele usar um pipe nomeado para se comunicar com o servidor ou usar a segurança de RPC. As Interfaces RPC que especificamente solicitaram estar acessíveis por clientes não autenticados podem estar isentas dessa restrição, dependendo do valor selecionado para essa configuração de política.  
+  Essa configuração de política controla como o runtime do servidor RPC lida com clientes RPC não autenticados conectando-se aos servidores RPC. Essa configuração de política afeta todos os aplicativos RPC. Em um ambiente de domínio, use essa configuração de política com cuidado, pois pode afetar uma ampla variedade de funcionalidades, incluindo a política de grupo de processamento em si. Reverter uma alteração a essa configuração de política pode exigir intervenção manual em cada computador afetado. Essa configuração de política nunca deve ser aplicada a um controlador de domínio. Se você desabilitar essa configuração de política, o runtime do servidor RPC usará o valor de "Autenticado" no cliente do Windows e o valor de "Nenhum" em versões do Windows Server que deem suporte a essa configuração de política. Se você não configurar essa política, ela permanecerá desabilitada. O runtime do servidor RPC se comportará como se tivesse sido habilitado com o valor de "Autenticado" usado para o Cliente do Windows e o valor de "Nenhum" será usado para SKUs de Servidor que dão suporte a essa configuração de política. Se você habilitar essa configuração de política, ela instruirá o runtime do servidor RPC a impedir que clientes RPC não autenticados conectem-se aos servidores RPC em execução em um computador. Um cliente será considerado autenticado se ele usar um pipe nomeado para se comunicar com o servidor ou usar a segurança de RPC. As Interfaces RPC que especificamente solicitaram estar acessíveis por clientes não autenticados podem estar isentas dessa restrição, dependendo do valor selecionado para essa configuração de política.  
   - *Nenhum* permite que todos os clientes RPC conectem-se aos servidores RPC em execução no computador em que a configuração de política é aplicada. 
   - *Autenticado* permite que somente os Clientes RPC autenticados (conforme a definição acima) conectem-se aos servidores RPC em execução no computador em que a configuração de política é aplicada. Isenções são concedidas a interfaces que os solicitaram. 
   - *Autenticado sem exceções* permite que somente os Clientes RPC autenticados (conforme a definição acima) conectem-se aos servidores RPC em execução no computador em que a configuração de política é aplicada. Não são permitidas exceções. Observação: essa configuração de política não será aplicada até que o sistema seja reinicializado.  

@@ -20,10 +20,10 @@ ms.suite: ems
 ms.custom: intune-enduser
 ms.collection: M365-identity-device-management
 ms.openlocfilehash: d2965d6a017d92bd4535a29a2257c0cac5e6deaf
-ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
+ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
 ms.translationtype: MTE75
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/16/2019
+ms.lasthandoff: 12/05/2019
 ms.locfileid: "72506354"
 ---
 # <a name="encrypting-your-android-device"></a>Criptografar o dispositivo Android
@@ -45,7 +45,7 @@ Se Portal da Empresa ou o aplicativo Microsoft Intune solicitar que você cripto
     c. Siga as instruções na tela para configurar o bloqueio de tela.  
 
 2. Volte para **tela de bloqueio e segurança** e selecione **inicialização segura**.
-3. Escolha **exigir PIN quando o dispositivo ligar**  > **OK**.
+3. Escolha **exigir PIN quando o dispositivo ligar** > **OK**.
 4. Insira seu PIN para confirmar e criptografar seu dispositivo.
 5. Abra o Portal da Empresa ou Microsoft Intune aplicativo.
     * Usuários do Portal da Empresa: selecione seu dispositivo e toque em **Verificar as configurações do dispositivo**. 
@@ -53,9 +53,9 @@ Se Portal da Empresa ou o aplicativo Microsoft Intune solicitar que você cripto
 
 Dispositivos que executam o Android 4,4 e anterior podem não ter a opção de **inicialização segura** . Nesse caso, conclua as etapas a seguir para criptografar seu dispositivo.
 
-1. Vá para **configurações**  > **segurança**  > **criptografar dispositivo**. Os rótulos na tela variam de acordo com os dispositivos Android. Se você não vir a opção **criptografar dispositivo** , faça check-in:
-    * **Armazenamento**  > **criptografia de armazenamento**
-    * **Armazenamento**  > **tela de bloqueio e segurança**  > **outras configurações de segurança** 
+1. Vá para **configurações** > **segurança** > **criptografar dispositivo**. Os rótulos na tela variam de acordo com os dispositivos Android. Se você não vir a opção **criptografar dispositivo** , faça check-in:
+    * **Armazenamento** > **criptografia de armazenamento**
+    * **Armazenamento** > **tela de bloqueio e segurança** > **outras configurações de segurança** 
 
 2. Siga as instruções na tela. Durante a criptografia, seu dispositivo pode reiniciar várias vezes.
 3. Abra o Portal da Empresa ou Microsoft Intune aplicativo.
