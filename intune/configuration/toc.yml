@@ -145,6 +145,8 @@
               href: vpn-settings-macos.md
             - name: Wi-Fi
               href: wi-fi-settings-macos.md
+            - name: Rede com fio
+              href: wired-network-settings-macos.md
             - name: Personalizado
               href: custom-settings-macos.md
         - name: Windows 10 e posterior
