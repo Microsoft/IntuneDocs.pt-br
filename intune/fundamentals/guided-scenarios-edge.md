@@ -17,10 +17,10 @@ search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
 ms.openlocfilehash: e86f3a469169e7a805cb3f56e570ba4d3a90e925
-ms.sourcegitcommit: 0be25b59c8e386f972a855712fc6ec3deccede86
+ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/18/2019
+ms.lasthandoff: 12/05/2019
 ms.locfileid: "72585690"
 ---
 # <a name="guided-scenario---deploy-microsoft-edge-for-mobile"></a>Cenário guiado – Implantar o Microsoft Edge para dispositivos móveis 
@@ -44,7 +44,7 @@ Os seguintes recursos corporativos do Microsoft Edge habilitados pelas política
 - Permissões de Administrador do Intune necessárias:
     - Permissões de leitura, criação, exclusão e atribuição de aplicativos gerenciados
     - Permissões de leitura, criação e atribuição de aplicativos móveis
-    - Permissões de leitura, criação e atribuição de conjuntos de políticas
+    - Permissões de leitura, criação e atribuição de política
     - Permissão de leitura e atualização da organização
 
 ## <a name="step-1---introduction"></a>Etapa 1 – Introdução

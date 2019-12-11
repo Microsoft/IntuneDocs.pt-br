@@ -19,10 +19,10 @@ search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
 ms.openlocfilehash: b4661b151493eb68cc6f71a5a77bd023ac27b826
-ms.sourcegitcommit: 3ace4cba6e2f6fefa9120be3807387a49b200c9b
+ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/23/2019
+ms.lasthandoff: 12/05/2019
 ms.locfileid: "72810228"
 ---
 # <a name="set-up-lookout-mobile-endpoint-security-integration-with-intune"></a>Configurar a integração de segurança de ponto de extremidade móvel do Lookout com o Intune
@@ -142,7 +142,7 @@ A segurança de ponto de extremidade móvel do Lookout classifica ameaças móve
 Para saber mais sobre as classificações de nível de ameaça e como gerenciar os níveis de risco associados a elas, confira [Referência de ameaças do Lookout](https://enterprise.support.lookout.com/hc/articles/360011812974).
 
 >[!IMPORTANT]
-> Os níveis de risco são um aspecto importante da segurança de ponto de extremidade móvel do Lookout, porque a integração com o Intune calcula a conformidade do dispositivo de acordo com esses níveis de risco em tempo de execução.  
+> Os níveis de risco são um aspecto importante da segurança de ponto de extremidade móvel do Lookout, porque a integração com o Intune calcula a conformidade do dispositivo de acordo com esses níveis de risco em runtime.  
 > 
 > O administrador do Intune define uma regra na política para identificar um dispositivo não compatível, se ele tem uma ameaça ativa com um nível mínimo igual a **Alto**, **Médio** ou **Baixo**. A política de classificação de ameaças na segurança de ponto de extremidade móvel do Lookout alimenta diretamente o cálculo de conformidade no Intune.  
 
