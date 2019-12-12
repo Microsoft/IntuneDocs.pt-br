@@ -18,10 +18,10 @@ search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
 ms.openlocfilehash: 3b83b764af415349b287df2a09f9b4c355734c28
-ms.sourcegitcommit: 3ace4cba6e2f6fefa9120be3807387a49b200c9b
+ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
 ms.translationtype: MTE75
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/23/2019
+ms.lasthandoff: 12/05/2019
 ms.locfileid: "72810244"
 ---
 # <a name="ios-settings-to-mark-devices-as-compliant-or-not-compliant-using-intune"></a>Configurações do iOS para marcar dispositivos como em conformidade ou não em conformidade usando o Intune
@@ -42,7 +42,7 @@ Como um administrador do Intune, use essas configurações de conformidade para 
 ## <a name="email"></a>Email
 
 - **Exigir que os dispositivos móveis tenham um perfil de email gerenciado**:  
-  - **Não configurado** (*padrão*) — Essa configuração não é avaliada em relação à conformidade.
+  - **Não configurado** (*padrão*) — Esta configuração não é avaliada em relação a estar ou não em conformidade.
   - **Exigir** – Os dispositivos que não tenham um email de perfil gerenciado pelo Intune são considerados não compatíveis. Um dispositivo pode não ter um perfil de email gerenciado quando não é direcionado corretamente ou se o usuário tiver configurado manualmente a conta de email no dispositivo.
 
   O dispositivo é considerado como não estando em conformidade nas seguintes situações:  
@@ -54,14 +54,14 @@ Para obter detalhes sobre perfis de email, veja [configurar o acesso ao email da
 ## <a name="device-health"></a>Integridade do Dispositivo
 
 - **Dispositivos com jailbreak**:  
-  - **Não configurado** (*padrão*) — Essa configuração não é avaliada em relação à conformidade.
+  - **Não configurado** (*padrão*) — Esta configuração não é avaliada em relação a estar ou não em conformidade.
   - **Bloquear** – Marque dispositivos desbloqueados por rooting (com jailbreak) como fora de conformidade.  
 
 - **Requer que o dispositivo esteja em nível igual ou inferior ao Nível de Ameaças do Dispositivo** *(iOS 8.0 e mais recente)* :  
   Use essa configuração para fazer a avaliação de risco como uma condição de conformidade. Escolha o nível de ameaça permitido:  
-  - **Não configurado** (*padrão*) — Essa configuração não é avaliada em relação à conformidade.
+  - **Não configurado** (*padrão*) — Esta configuração não é avaliada em relação a estar ou não em conformidade.
   - **Protegido** – Esta opção é a mais segura e significa que o dispositivo não pode ter ameaças. Se for detectado que o dispositivo tem qualquer nível de ameaça, será avaliado que ele não está em conformidade.
-  - **Baixa** – O dispositivo será avaliado como em conformidade se apenas ameaças de nível baixo estiverem presentes. Qualquer coisa acima disso coloca o dispositivo no estado de não compatível.
+  - **Baixo** – O dispositivo será avaliado como em conformidade se apenas ameaças de nível baixo estiverem presentes. Qualquer coisa acima disso coloca o dispositivo no estado de não compatível.
   - **Médio** – O dispositivo será avaliado como em conformidade se as ameaças presentes nele forem de nível baixo ou médio. Se for detectado que o dispositivo tem ameaças de nível alto, será determinado que ele não está em conformidade.
   - **Alto** – Esta opção é a menos segura, porque permite todos os níveis de ameaça. Talvez seja útil se você estiver usando esta solução apenas para fins de relatório.
 
@@ -90,7 +90,7 @@ Para obter detalhes sobre perfis de email, veja [configurar o acesso ao email da
 
 - **Exigir uma senha para desbloquear os dispositivos móveis**:  
   - **Não configurado** (*padrão*) — Essa configuração não é avaliada em relação à conformidade.  
-  - **Exigir** – Os usuários precisam inserir uma senha para acessar o dispositivo. Dispositivos iOS que usam uma senha são criptografados.
+  - **Exigir** – Os usuários devem inserir uma senha antes que possam acessar no dispositivo. Dispositivos iOS que usam uma senha são criptografados.
 
 - **Senhas simples**:  
   - **Não configurado** (*padrão*)-os usuários podem criar senhas simples, como **1234** ou **1111**.
@@ -100,7 +100,7 @@ Para obter detalhes sobre perfis de email, veja [configurar o acesso ao email da
   Insira o número mínimo de dígitos ou caracteres que a senha deve ter.  
 
 - **Tipo de senha necessária**:  
-  Escolha se uma senha deve ter apenas caracteres **numéricos** ou se deve haver uma combinação de números e outros caracteres (**alfanuméricos**).
+  Escolha se uma senha deve ter apenas caracteres **numéricos** ou se deve haver uma combinação de números e outros caracteres (alfanuméricos).
 
 - **Número de caracteres não alfanuméricos na senha**:  
   Insira o número mínimo de caracteres especiais, como `&`, `#`, `%`, `!` e assim por diante, que devem ser incluídos na senha. 

@@ -18,10 +18,10 @@ search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
 ms.openlocfilehash: 8efb9dcf9129375252b5d9a7d1e6255dce39625c
-ms.sourcegitcommit: b5e719fb507b1bc4774674e76c856c435e69f68c
+ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
 ms.translationtype: MTE75
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/08/2019
+ms.lasthandoff: 12/05/2019
 ms.locfileid: "73801401"
 ---
 # <a name="android-settings-to-mark-devices-as-compliant-or-not-compliant-using-intune"></a>Configurações do Android para marcar dispositivos como em conformidade ou não em conformidade usando o Intune
@@ -48,10 +48,10 @@ Como um administrador do Intune, use essas configurações de conformidade para 
 - **Requer que o dispositivo esteja em nível igual ou inferior ao Nível de Ameaças do Dispositivo**:
 
   Use essa configuração para fazer a avaliação de risco de um serviço de defesa contra ameaças móveis conectado como uma condição para conformidade.
-  - **Não configurado** (*padrão*) — Essa configuração não é avaliada em relação à conformidade. 
+  - **Não configurado** (*padrão*) — Esta configuração não é avaliada em relação a estar ou não em conformidade. 
   - **Protegido** – Esta opção é a mais segura, porque o dispositivo não pode ter ameaças. Se for detectado que o dispositivo tem qualquer nível de ameaça, será avaliado que ele não está em conformidade.
-  - **Baixa** – O dispositivo será avaliado como em conformidade se apenas ameaças de nível baixo estiverem presentes. Qualquer coisa acima disso coloca o dispositivo no estado de não compatível.
-  - **Média** – O dispositivo será avaliado como em conformidade se as ameaças presentes nele forem de nível baixo ou médio. Se for detectado que o dispositivo tem ameaças de nível alto, será determinado que ele não está em conformidade.
+  - **Baixo** – O dispositivo será avaliado como em conformidade se apenas ameaças de nível baixo estiverem presentes. Qualquer coisa acima disso coloca o dispositivo no estado de não compatível.
+  - **Médio** – O dispositivo será avaliado como em conformidade se as ameaças existentes nele forem de nível baixo ou médio. Se for detectado que o dispositivo tem ameaças de nível alto, será determinado que ele não está em conformidade.
   - **Alta** – Esta opção é a menos segura e permite todos os níveis de ameaça. Talvez seja útil se você estiver usando esta solução apenas para fins de relatório.
 
 ### <a name="google-play-protect"></a>Google Play Protect
@@ -60,17 +60,17 @@ Como um administrador do Intune, use essas configurações de conformidade para 
 
   Os serviços do Google Play permitem atualizações de segurança e são uma dependência em nível de base para muitos recursos de segurança em dispositivos certificados do Google.
 
-  - **Não configurado** (*padrão*) — Essa configuração não é avaliada em relação à conformidade.  
+  - **Não configurado** (*padrão*) — Esta configuração não é avaliada em relação a estar ou não em conformidade.  
   - **Exigir** – Exige que o aplicativo de serviços do Google Play esteja instalado e habilitado.  
 
 - **Provedor de segurança atualizado**:
 
-  - **Não configurado** (*padrão*) — Essa configuração não é avaliada em relação à conformidade.
+  - **Não configurado** (*padrão*) — Esta configuração não é avaliada em relação a estar ou não em conformidade.
   - **Exigir** – Exige que um provedor de segurança atualizado possa proteger um dispositivo contra vulnerabilidades conhecidas.
 
 - **Verificação de ameaças em aplicativos**:
 
-  - **Não configurado** (*padrão*) — Essa configuração não é avaliada em relação à conformidade.
+  - **Não configurado** (*padrão*) — Esta configuração não é avaliada em relação a estar ou não em conformidade.
   - **Exigir** – exige que o recurso **Verificar Aplicativos** do Android esteja ativado.
 
   > [!NOTE]
@@ -80,7 +80,7 @@ Como um administrador do Intune, use essas configurações de conformidade para 
 
   Insira o nível de [atestado de SafetyNet](https://developer.android.com/training/safetynet/attestation.html) que deve ser atendido. Suas opções:
 
-  - **Não configurado** (*padrão*) — Essa configuração não é avaliada em relação à conformidade.
+  - **Não configurado** (*padrão*) — Esta configuração não é avaliada em relação a estar ou não em conformidade.
   - **Verificação básica de integridade**
   - **Verifique a integridade básica e os dispositivos certificados**
 
@@ -122,7 +122,7 @@ Como um administrador do Intune, use essas configurações de conformidade para 
 - **Exigir uma senha para desbloquear os dispositivos móveis**:
 
   - **Não configurado** (*padrão*) — Essa configuração não é avaliada em relação à conformidade.
-  - **Exigir** – Os usuários precisam inserir uma senha para acessar o dispositivo.
+  - **Exigir** – Os usuários devem inserir uma senha antes que possam acessar no dispositivo.
 
 - **Tipo de senha necessária**:
 
@@ -158,7 +158,7 @@ Como um administrador do Intune, use essas configurações de conformidade para 
 
 - **Integridade de runtime do aplicativo Portal da Empresa**:
 
-  - **Não configurado** (*padrão*) — Essa configuração não é avaliada em relação à conformidade.
+  - **Não configurado** (*padrão*) — Esta configuração não é avaliada em relação a estar ou não em conformidade.
   - **Exigir** – Escolha *Exigir* para confirmar que o aplicativo Portal da Empresa atende a todos os requisitos a seguir:
 
     - Tem o ambiente de runtime padrão instalado
@@ -168,7 +168,7 @@ Como um administrador do Intune, use essas configurações de conformidade para 
 
 - **Bloquear a depuração de USB no dispositivo** *(Android 4,2 ou posterior)* :
 
-  - **Não configurado** (*padrão*) — Essa configuração não é avaliada em relação à conformidade.
+  - **Não configurado** (*padrão*) — Esta configuração não é avaliada em relação a estar ou não em conformidade.
   - **Bloquear** – Impede que os dispositivos usem o recurso de depuração de USB.
 
 - **Nível mínimo de patch de segurança** *(Android 6,0 ou posterior)* :

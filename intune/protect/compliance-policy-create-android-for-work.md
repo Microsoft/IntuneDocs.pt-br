@@ -18,10 +18,10 @@ search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
 ms.openlocfilehash: be1fbb72821b61566da84d6f98094c9a2f6ffef2
-ms.sourcegitcommit: 3ace4cba6e2f6fefa9120be3807387a49b200c9b
+ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
 ms.translationtype: MTE75
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/23/2019
+ms.lasthandoff: 12/05/2019
 ms.locfileid: "72810251"
 ---
 # <a name="android-enterprise-settings-to-mark-devices-as-compliant-or-not-compliant-using-intune"></a>Configurações do Android Enterprise para marcar dispositivos como em conformidade ou não em conformidade usando o Intune
@@ -47,7 +47,7 @@ Como um administrador do Intune, use essas configurações de conformidade para 
 
 - **Exigir que o dispositivo esteja no nível de ameaça do dispositivo ou abaixo**dele: selecione o nível máximo permitido de ameaça do dispositivo avaliado pelo seu [serviço de defesa contra ameaças móveis](mobile-threat-defense.md). Os dispositivos que excedem esse nível de ameaça são marcados como não compatíveis. Para usar essa configuração, escolha o nível de ameaça permitido:
 
-  - **Não configurado** (*padrão*) — Essa configuração não é avaliada em relação à conformidade.
+  - **Não configurado** (*padrão*) — Esta configuração não é avaliada em relação a estar ou não em conformidade.
   - **Protegido** – Esta opção é a mais segura e significa que o dispositivo não pode ter ameaças. Se for detectado que o dispositivo tem qualquer nível de ameaça, será avaliado que ele não está em conformidade.
   - **Baixo** – O dispositivo será avaliado como em conformidade se apenas ameaças de nível baixo estiverem presentes. Qualquer coisa acima disso coloca o dispositivo no estado de não compatível.
   - **Médio** – O dispositivo será avaliado como em conformidade se as ameaças presentes nele forem de nível baixo ou médio. Se for detectado que o dispositivo tem ameaças de nível alto, será determinado que ele não está em conformidade.
@@ -90,7 +90,7 @@ Como um administrador do Intune, use essas configurações de conformidade para 
 
 - **Exigir uma senha para desbloquear os dispositivos móveis**: 
   - **Não configurado** (*padrão*) – A conformidade desta configuração não é avaliada.
-  - **Exigir** – Os usuários precisam inserir uma senha para acessar o dispositivo. 
+  - **Exigir** – Os usuários devem inserir uma senha antes que possam acessar no dispositivo. 
 
   Essa configuração se aplica ao nível do dispositivo. Se você precisar exigir senha apenas no nível do perfil de trabalho, use uma política de configuração. Confira [Definições de configuração de dispositivo do Android Enterprise](../configuration/device-restrictions-android-for-work.md).
 
@@ -132,7 +132,7 @@ Como um administrador do Intune, use essas configurações de conformidade para 
 #### <a name="encryption"></a>Criptografia
 
 - **Criptografia de armazenamento de dados no dispositivo**: 
-  - **Não configurado** (*padrão*) — Essa configuração não é avaliada em relação à conformidade.
+  - **Não configurado** (*padrão*) — Esta configuração não é avaliada em relação a estar ou não em conformidade.
   - **Exigir** -criptografar o armazenamento de dados em seus dispositivos.  
 
   Você não precisa definir essa configuração porque os dispositivos Android Enterprise impõem a criptografia.
@@ -142,25 +142,25 @@ Como um administrador do Intune, use essas configurações de conformidade para 
 ### <a name="device-health"></a>Integridade do Dispositivo
 
 - **Dispositivos desbloqueados por rooting**: 
-  - **Não configurado** (*padrão*) — Essa configuração não é avaliada em relação à conformidade.
+  - **Não configurado** (*padrão*) — Esta configuração não é avaliada em relação a estar ou não em conformidade.
   - **Bloquear** – Marque dispositivos desbloqueados por rooting (com jailbreak) como fora de conformidade.  
 
 - **Exigir que o dispositivo esteja no nível de ameaça do dispositivo ou abaixo**dele: selecione o nível máximo permitido de ameaça do dispositivo avaliado pelo seu [serviço de defesa contra ameaças móveis](mobile-threat-defense.md). Os dispositivos que excedem esse nível de ameaça são marcados como não compatíveis. Para usar essa configuração, escolha o nível de ameaça permitido:
 
-  - **Não configurado** (*padrão*) — Essa configuração não é avaliada em relação à conformidade.
+  - **Não configurado** (*padrão*) — Esta configuração não é avaliada em relação a estar ou não em conformidade.
   - **Protegido** – Esta opção é a mais segura e significa que o dispositivo não pode ter ameaças. Se for detectado que o dispositivo tem qualquer nível de ameaça, será avaliado que ele não está em conformidade.
-  - **Baixa** – O dispositivo será avaliado como em conformidade se apenas ameaças de nível baixo estiverem presentes. Qualquer coisa acima disso coloca o dispositivo no estado de não compatível.
+  - **Baixo** – O dispositivo será avaliado como em conformidade se apenas ameaças de nível baixo estiverem presentes. Qualquer coisa acima disso coloca o dispositivo no estado de não compatível.
   - **Médio** – O dispositivo será avaliado como em conformidade se as ameaças presentes nele forem de nível baixo ou médio. Se for detectado que o dispositivo tem ameaças de nível alto, será determinado que ele não está em conformidade.
   - **Alto** – Esta opção é a menos segura, porque permite todos os níveis de ameaça. Talvez seja útil se você estiver usando esta solução apenas para fins de relatório.
 
 #### <a name="google-play-protect"></a>Google Play Protect
 
 - **O Google Play Services está configurado**: 
-  - **Não configurado** (*padrão*) — Essa configuração não é avaliada em relação à conformidade.
+  - **Não configurado** (*padrão*) — Esta configuração não é avaliada em relação a estar ou não em conformidade.
   - **Exigir** – Exige que o aplicativo de serviços do Google Play esteja instalado e habilitado. Os serviços do Google Play permitem atualizações de segurança e são uma dependência em nível de base para muitos recursos de segurança em dispositivos certificados do Google. 
   
 - **Provedor de segurança atualizado**: 
-  - **Não configurado** (*padrão*) — Essa configuração não é avaliada em relação à conformidade.
+  - **Não configurado** (*padrão*) — Esta configuração não é avaliada em relação a estar ou não em conformidade.
   - **Exigir** – Exige que um provedor de segurança atualizado possa proteger um dispositivo contra vulnerabilidades conhecidas. 
   
 - **Atestado de dispositivo SafetyNet**: insira o nível de [atestado de SafetyNet](https://developer.android.com/training/safetynet/attestation.html) que deve ser atendido. Suas opções:
@@ -187,7 +187,7 @@ Como um administrador do Intune, use essas configurações de conformidade para 
 
 - **Exigir uma senha para desbloquear os dispositivos móveis**: 
   - **Não configurado** (*padrão*) — Essa configuração não é avaliada em relação à conformidade. 
-  - **Exigir** – Os usuários precisam inserir uma senha para acessar o dispositivo.  
+  - **Exigir** – Os usuários devem inserir uma senha antes que possam acessar no dispositivo.  
 
   Essa configuração se aplica ao nível do dispositivo. Se você precisar exigir senha apenas no nível do perfil de trabalho, use uma política de configuração. Confira [Definições de configuração de dispositivo do Android Enterprise](../configuration/device-restrictions-android-for-work.md).
 
@@ -212,7 +212,7 @@ Como um administrador do Intune, use essas configurações de conformidade para 
 #### <a name="encryption"></a>Criptografia
 
 - **Criptografia de armazenamento de dados no dispositivo**: 
-  - **Não configurado** (*padrão*) — Essa configuração não é avaliada em relação à conformidade.
+  - **Não configurado** (*padrão*) — Esta configuração não é avaliada em relação a estar ou não em conformidade.
   - **Exigir** -criptografar o armazenamento de dados em seus dispositivos.  
 
   Você não precisa definir essa configuração porque os dispositivos Android Enterprise impõem a criptografia.
@@ -220,7 +220,7 @@ Como um administrador do Intune, use essas configurações de conformidade para 
 #### <a name="device-security"></a>Segurança de dispositivo
 
 - **Bloquear aplicativos de fontes desconhecidas**: 
-  - **Não configurado** (*padrão*) — Essa configuração não é avaliada em relação à conformidade.
+  - **Não configurado** (*padrão*) — Esta configuração não é avaliada em relação a estar ou não em conformidade.
   - **Bloquear** -bloquear dispositivos com **segurança** > fontes habilitadas para **fontes desconhecidas** (*com suporte no Android 4,0 até o Android 7. x. Não suportado pelo Android 8.0 e posterior*).  
 
   Para o sideload de aplicativos, as fontes desconhecidas devem ser permitidas. Se você não tiver aplicativos Android com sideload, defina esse recurso como **Bloquear** para habilitar essa política de conformidade.
@@ -230,8 +230,8 @@ Como um administrador do Intune, use essas configurações de conformidade para 
 
   Você não precisa definir essa configuração, pois os dispositivos Android Enterprise sempre restringem a instalação de fontes desconhecidas.
 
-- **Integridade de tempo de execução do aplicativo Portal da Empresa**: 
-  - **Não configurado** (*padrão*) — Essa configuração não é avaliada em relação à conformidade.
+- **Integridade de runtime do aplicativo Portal da Empresa**: 
+  - **Não configurado** (*padrão*) — Esta configuração não é avaliada em relação a estar ou não em conformidade.
   - *Exigir* – Escolha **Exigir** para confirmar que o aplicativo Portal da Empresa atende a todos os requisitos a seguir:
     - Tem o ambiente de runtime padrão instalado
     - Está assinado corretamente
@@ -239,7 +239,7 @@ Como um administrador do Intune, use essas configurações de conformidade para 
     - É instalado de uma origem conhecida
 
 - **Bloquear a depuração de USB no dispositivo**: 
-  - **Não configurado** (*padrão*) — Essa configuração não é avaliada em relação à conformidade.
+  - **Não configurado** (*padrão*) — Esta configuração não é avaliada em relação a estar ou não em conformidade.
   - **Bloquear** – Impede que os dispositivos usem o recurso de depuração de USB.  
 
   Você não precisa definir essa configuração porque a depuração de USB já está desabilitada em dispositivos Android Enterprise.
