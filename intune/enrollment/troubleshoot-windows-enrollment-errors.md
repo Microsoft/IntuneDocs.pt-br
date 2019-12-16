@@ -17,12 +17,12 @@ ms.reviewer: mghadial
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 348768be4a42667f579df0ccb500434425258db0
-ms.sourcegitcommit: 28622c5455adfbce25a404de4d0437fa2b5370be
+ms.openlocfilehash: 46012b11cdb458243658e858b53c2dfb1a69dc88
+ms.sourcegitcommit: df8e2c052fafb2d5d4e9b4fcd831ae0ecf7f8d16
 ms.translationtype: MTE75
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/07/2019
-ms.locfileid: "73712865"
+ms.lasthandoff: 12/10/2019
+ms.locfileid: "74991807"
 ---
 # <a name="troubleshoot-windows-device-enrollment-problems-in-microsoft-intune"></a>Solucionar problemas de registro de dispositivo Windows no Microsoft Intune
 
@@ -60,8 +60,8 @@ Erro 80180003: “Algo deu errado. Este usuário não está autorizado a se regi
 Há várias soluções possíveis para esse problema:
 
 ##### <a name="remove-devices-that-were-enrolled"></a>Remover dispositivos que foram registrados
-1. Entre no centro de [Administração do Microsoft Endpoint Manager](https://go.microsoft.com/fwlink/?linkid=2109431).    
-2. Vá para **usuários**  > **todos os usuários**.    
+1. Entre no [Centro de Administração do Gerenciador de Ponto de Extremidade da Microsoft](https://go.microsoft.com/fwlink/?linkid=2109431).    
+2. Vá para **usuários** > **todos os usuários**.    
 3. Selecione a conta de usuário afetada e clique em **dispositivos**.    
 4. Selecione qualquer dispositivo não utilizado ou indesejado e clique em **excluir**. 
 
@@ -70,13 +70,13 @@ Há várias soluções possíveis para esse problema:
 > [!NOTE]
 > Esse método aumenta o limite de registro de dispositivo para todos os usuários, não apenas o usuário afetado.
 
-1. Entre no centro de [Administração do Microsoft Endpoint Manager](https://go.microsoft.com/fwlink/?linkid=2109431).
-2. Vá para **registro de dispositivo**  > **restrições de registro**e selecione **restrições de limite de dispositivo**.    
-3. Aumente o valor do **limite do dispositivo**. 
+1. Entre no [Centro de Administração do Gerenciador de Ponto de Extremidade da Microsoft](https://go.microsoft.com/fwlink/?linkid=2109431).
+2. Vá para **dispositivos** > **restrições de registro** > **padrão** (em restrições de **limite de dispositivo**) > **Propriedades** > **Editar** (ao lado do **limite de dispositivo**) > aumentar o limite de **dispositivo** (máximo de 15) > **revisão + salvar**.    
+ 
 
 ##### <a name="check-device-type-restrictions"></a>Verificar as restrições do tipo de dispositivo
 1. Entre no centro de [Administração do Microsoft Endpoint Manager](https://go.microsoft.com/fwlink/?linkid=2109431) com uma conta de administrador global.
-2. Vá para **registro de dispositivo**  > **restrições de registro**e selecione a restrição **padrão** em **restrições de tipo de dispositivo**.    
+2. Vá para **dispositivos** > **restrições de registro**e selecione a restrição **padrão** em **restrições de tipo de dispositivo**.    
 3. Selecione **plataformas**e, em seguida, selecione **permitir** para **Windows (MDM)** .
 
     > [!IMPORTANT]
@@ -97,7 +97,7 @@ Erro 0x801c0003: "este usuário não tem permissão para se registrar. Você pod
 
 #### <a name="resolution"></a>Resolução
 1. Entre no [Portal do Azure](https://portal.azure.com/) como administrador.    
-2. Vá para **Azure Active Directory** **dispositivos**  >   > **configurações do dispositivo**.    
+2. Vá para **Azure Active Directory** **dispositivos** >  > **configurações do dispositivo**.    
 3. Defina **Os usuários podem ingressar no Azure AD com seus dispositivos** como **Todos**.    
 4. Registrar novamente o dispositivo.   
 
@@ -106,8 +106,8 @@ Erro 0x801c0003: "este usuário não tem permissão para se registrar. Você pod
 Erro 8018000a: "algo deu errado. O dispositivo já está registrado.  Você pode entrar em contato com o administrador do sistema com o código de erro 8018000a. "
 
 **Causa:** Uma das seguintes condições é verdadeira:
-- Um usuário diferente já registrou o dispositivo no Intune ou ingressou no dispositivo no Azure AD. Para determinar se esse é o caso, acesse **configurações**  > **contas**  > **acesso de trabalho**. Procure uma mensagem semelhante à seguinte: "outro usuário no sistema já está conectado a um trabalho ou escola. Remova essa conexão corporativa ou de estudante e tente novamente. "    
-- O agente cliente do Configuration Manager está instalado no computador.    
+- Um usuário diferente já registrou o dispositivo no Intune ou ingressou no dispositivo no Azure AD. Para determinar se esse é o caso, acesse **configurações** > **contas** > **acesso de trabalho**. Procure uma mensagem semelhante à seguinte: "outro usuário no sistema já está conectado a um trabalho ou escola. Remova essa conexão corporativa ou de estudante e tente novamente. "    
+- O agente do cliente do Configuration Manager está instalado no computador.    
 
 #### <a name="resolution"></a>Resolução
 
@@ -115,7 +115,7 @@ Use um dos métodos a seguir para solucionar o problema:
 
 ##### <a name="remove-the-other-work-or-school-account"></a>Remover a outra conta corporativa ou de estudante
 1. Saia do Windows e entre usando a outra conta que registrou ou ingressou no dispositivo.    
-2. Acesse **configurações**  > **contas**  > **acesso de trabalho**e, em seguida, remova a conta corporativa ou de estudante.
+2. Acesse **configurações** > **contas** > **acesso de trabalho**e, em seguida, remova a conta corporativa ou de estudante.
 3. Saia do Windows e entre usando sua conta.    
 4. Registre o dispositivo no Intune ou Ingresse o dispositivo no Azure AD. 
 
@@ -167,7 +167,7 @@ Use um dos métodos a seguir para resolver o problema:
 
 ##### <a name="disable-mdm-automatic-enrollment-in-azure"></a>Desabilite o registro automático do MDM no Azure.
 1. Entre no [Portal do Azure](https://portal.azure.com/).    
-2. Vá para **Azure Active Directory**  > **Mobility (MDM e MAM)**  > **Microsoft Intune**.    
+2. Vá para **Azure Active Directory** > **Mobility (MDM e MAM)**  > **Microsoft Intune**.    
 3. Defina o **escopo de usuário do MDM** como **nenhum**e, em seguida, clique em **salvar**.    
      
 ##### <a name="uninstall"></a>Desinstalar
@@ -181,7 +181,7 @@ Erro: "o software não pode ser instalado, 0x80cf4017."
 
 #### <a name="resolution"></a>Resolução
 1. Entre em [https://admin.manage.microsoft.com](https://admin.manage.microsoft.com).    
-2. Vá para **administrador**  > **download do software cliente**e clique em **baixar software cliente**.    
+2. Vá para **administrador** > **download do software cliente**e clique em **baixar software cliente**.    
 3. Salve o pacote de instalação e, em seguida, instale o software cliente. 
 
 
@@ -193,7 +193,7 @@ Erro: "O certificado de conta não é válido e pode ter expirado, 0x80cf4017".
 
 #### <a name="resolution"></a>Resolução
 1. Entre em [https://admin.manage.microsoft.com](https://admin.manage.microsoft.com).    
-2. Vá para **administrador**  > **download do software cliente**e clique em **baixar software cliente**.    
+2. Vá para **administrador** > **download do software cliente**e clique em **baixar software cliente**.    
 3. Salve o pacote de instalação e, em seguida, instale o software cliente.    
 
 ### <a name="your-organization-does-not-support-this-version-of-windows"></a>Sua organização não dá suporte a esta versão do Windows. 
@@ -205,16 +205,15 @@ Erro: "houve um problema. Sua organização não dá suporte a esta versão do W
 #### <a name="resolution"></a>Resolução
 Para corrigir esse problema em um ambiente autônomo do Intune, siga estas etapas: 
  
-1. Entre no [Portal do Azure](https://portal.azure.com/) como administrador.    
-2. Selecione **Intune** à esquerda e vá para **registro de dispositivo**  >  restrições de**registro**.    
-3. Em **restrições de tipo de dispositivo**, clique em **plataformas**e selecione **permitir** para **Windows (MDM)** .    
-4. Clique em **Salvar**.    
+1. No [centro de administração do Microsoft Endpoint Manager](https://go.microsoft.com/fwlink/?linkid=2109431), escolha **dispositivos** > **restrições de registro** > escolha uma restrição de tipo de dispositivo.    
+2. Escolha **propriedades** > **Editar** (ao lado de **configurações de plataforma**) > **permitir** para **Windows (MDM)** .    
+3. Clique em **examinar + salvar**.    
  
 Para corrigir esse problema no MDM híbrido com o Intune e o Configuration Manager, siga estas etapas: 
 1. Abra o console do gerenciador de configurações.    
 2. Selecione **Administração**e, em seguida, selecione **serviços de nuvem**.    
 3. Clique com o botão direito do mouse em **Microsoft Intune assinatura**e selecione **Configurar plataformas > Windows**.    
-4. Marque **habilitar registro do Windows**  > **aplicar**  > **OK**.  
+4. Marque **habilitar registro do Windows** > **aplicar** > **OK**.  
 
 
 ### <a name="a-setup-failure-has-occurred-during-bulk-enrollment"></a>Ocorreu uma falha na instalação durante o registro em massa.
@@ -236,7 +235,7 @@ Para obter mais informações sobre o aplicativo configurar PCs escolares, consu
 ### <a name="auto-mdm-enroll-failed"></a>Registro de MDM automático: falha 
 
 Ao tentar registrar um dispositivo Windows 10 automaticamente usando Política de Grupo, você enfrenta os seguintes problemas: 
-- No Agendador de Tarefas, em **Microsoft**  > **Windows**  > **EnterpriseMgmt**, o resultado da última execução do **agendamento criado pelo cliente de registro para registrar-se automaticamente no MDM da tarefa do AAD** é o seguinte: **evento 76 Registro de MDM automático: falha (código de erro Win32 desconhecido: 0x8018002b)**       
+- No Agendador de Tarefas, em **Microsoft** > **Windows** > **EnterpriseMgmt**, o resultado da última execução do **agendamento criado pelo cliente de registro para registrar-se automaticamente no MDM da** tarefa do AAD é o seguinte: **evento 76 registro de MDM automático: falha (código de erro Win32 desconhecido: 0x8018002b)**       
 - No Visualizador de Eventos, o evento a seguir é registrado em **logs de aplicativos e serviços/Microsoft/Windows/DeviceManagement-Enterprise-Diagnostics-Provider/admin**:   
     ```asciidoc
     Log Name: Microsoft-Windows-DeviceManagement-Enterprise-Diagnostics-Provider/Admin
@@ -336,7 +335,7 @@ Normalmente, esse problema ocorre antes de o dispositivo ser reiniciado em um ce
 
 #### <a name="resolution"></a>Resolução
 
-1. Vá para **Intune**  >  **registro de dispositivo**  > **registro do Windows**  > **dispositivos**.
+1. No [centro de administração do Microsoft Endpoint Manager](https://go.microsoft.com/fwlink/?linkid=2109431), escolha **dispositivos** de **> > dispositivos Windows > ** **Windows**.
 2. Selecione o dispositivo que está enfrentando o problema > clique nas reticências (...) no lado mais à direita.
 3. Selecione **Cancelar atribuição de usuário** e aguarde a conclusão do processo.
 4. Verifique se o perfil de AutoPilot do Azure AD híbrido foi atribuído antes de tentar novamente o OOBE.
@@ -376,18 +375,18 @@ Esse problema é geralmente causado pela delegação incorreta de permissões pa
 3. No assistente **Delegação de Controle**, escolha **Avançar** > **Adicionar** > **Tipos de Objeto**.
 4. No painel **Tipos de Objeto**, marque a caixa de seleção **Computadores** > **OK**.
 5. No painel **Selecionar Usuários**, **Computadores** ou **Grupos**, na caixa **Inserir nomes de objeto para selecionar**, insira o nome do computador em que o conector está instalado.
-6. Selecione **verificar nomes** para validar sua entrada > **OK**  > **Avançar**.
+6. Selecione **verificar nomes** para validar sua entrada > **OK** > **Avançar**.
 7. Selecione **Criar uma tarefa personalizada para delegar** > **Avançar**.
 8. Selecione a caixa de seleção **Somente os seguintes objetos na pasta** e, em seguida, selecione as caixas de seleção **Objetos de computador**, **Criar objetos selecionados nesta pasta** e **Excluir objetos selecionados nesta pasta**.
 9. Selecione **Avançar**.
 10. Sob **Permissões**, selecione a caixa de seleção **Controle total**. Essa ação selecionará todas as outras opções.
-11. Selecione **avançar**  > **concluir**.
+11. Selecione **avançar** > **concluir**.
 
 ## <a name="next-steps"></a>Próximas etapas
 
 - [Solucionar problemas de registro de dispositivo no Intune](../troubleshoot-device-enrollment-in-intune.md)
 - [Faça uma pergunta no fórum do Intune](https://social.technet.microsoft.com/Forums/%7Blang-locale%7D/home?category=microsoftintune&filter=alltypes&sort=lastpostdesc)
-- [Consulte o blog da equipe de suporte do Microsoft Intune](https://techcommunity.microsoft.com/t5/Intune-Customer-Success/bg-p/IntuneCustomerSuccess)
-- [Confira o blog do Microsoft Enterprise Mobility e segurança](https://techcommunity.microsoft.com/t5/Azure-Active-Directory-Identity/Announcing-the-public-preview-of-Azure-AD-group-based-license/ba-p/245210)
+- [Confira o blog da equipe de suporte do Microsoft Intune](https://techcommunity.microsoft.com/t5/Intune-Customer-Success/bg-p/IntuneCustomerSuccess)
+- [Confira o blog de segurança e mobilidade corporativa da Microsoft](https://techcommunity.microsoft.com/t5/Azure-Active-Directory-Identity/Announcing-the-public-preview-of-Azure-AD-group-based-license/ba-p/245210)
 - [Obter suporte para o Microsoft Intune](../fundamentals/get-support.md)
 - [Localizar erros de registro de cogerenciamento](https://docs.microsoft.com/sccm/comanage/how-to-monitor#enrollment-errors)

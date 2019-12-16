@@ -5,7 +5,7 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 11/19/2019
+ms.date: 12/09/2019
 ms.topic: reference
 ms.service: microsoft-intune
 ms.subservice: configuration
@@ -15,12 +15,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure, seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: b38ab611ecf6a33c8cc48fa120751af8548a7f95
-ms.sourcegitcommit: 2fddb293d37453736ffa54692d03eca642f3ab58
+ms.openlocfilehash: 904c3d2267decdfa3929bf29376c05a995c77eb8
+ms.sourcegitcommit: f5108039f0ade52e95ea3ac1da1aa16d02224af3
 ms.translationtype: MTE75
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/22/2019
-ms.locfileid: "74390917"
+ms.lasthandoff: 12/09/2019
+ms.locfileid: "74946641"
 ---
 # <a name="android-enterprise-device-settings-to-allow-or-restrict-features-using-intune"></a>Configurações do dispositivo do Android Enterprise para permitir ou restringir os recursos usando o Intune
 
@@ -31,6 +31,8 @@ Este artigo lista e descreve as diferentes configurações que você pode contro
 [Crie um perfil de configuração do dispositivo](device-restrictions-configure.md).
 
 ## <a name="device-owner-only"></a>Somente proprietário do dispositivo
+
+Essas configurações se aplicam a tipos de registro do Android Enterprise, em que o Intune controla todo o dispositivo, como dispositivos Android Enterprise totalmente gerenciados ou dedicados.
 
 ### <a name="general-settings"></a>Configurações gerais
 
@@ -229,7 +231,7 @@ Use essas configurações para definir uma experiência de estilo de quiosque em
   Escolha **Não configurado** para desabilitar a VPN Always On para todos os clientes VPN.
 
   > [!IMPORTANT]
-  > Certifique-se de implantar apenas uma política de VPN Always On a um único dispositivo. Não há suporte para a implantação de várias políticas de VPN Always On a um único dispositivo.
+  > Implante apenas uma política de VPN Always On em um único dispositivo. Não há suporte para a implantação de várias políticas de VPN Always On em um único dispositivo.
 
 - **Cliente VPN**: escolha um cliente VPN compatível com Always On. Suas opções:
   - Cisco AnyConnect
@@ -242,6 +244,7 @@ Use essas configurações para definir uma experiência de estilo de quiosque em
   > [!IMPORTANT]
   > - O cliente VPN escolhido deve ser instalado no dispositivo e deve dar suporte à VPN por aplicativo em perfis de trabalho. Caso contrário, ocorrerá um erro. 
   > - É necessário aprovar o aplicativo cliente VPN na **Google Play Store Gerenciada**, sincronizar o aplicativo com o Intune e implantá-lo no dispositivo. Após fazer isso, o aplicativo será instalado no perfil de trabalho do usuário.
+  > - Você ainda precisa configurar o cliente VPN com um [perfil VPN](vpn-settings-android-enterprise.md)ou por meio de um [perfil de configuração de aplicativo](../apps/app-configuration-policies-use-android.md).
   > - Talvez ocorram problemas conhecidos ao usar VPN por aplicativo com o Acesso por F5 para Android 3.0.4. Confira [Notas de versão do F5 para Acesso por F5 para Android 3.0.4](https://support.f5.com/kb/en-us/products/big-ip_apm/releasenotes/related/relnote-f5access-android-3-0-4.html#relnotes_known_issues_f5_access_android) para saber mais.
 
 - **Modo de bloqueio**: escolha **Habilitar** para forçar todo o tráfego de rede a usar o túnel VPN. Se uma conexão com a VPN não for estabelecida, então o dispositivo não terá acesso à rede.
@@ -264,6 +267,8 @@ Use essas configurações para definir uma experiência de estilo de quiosque em
     Para obter mais informações sobre arquivos PAC, consulte o [Arquivo PAC (configuração automática de proxy)](https://developer.mozilla.org/docs/Web/HTTP/Proxy_servers_and_tunneling/Proxy_Auto-Configuration_(PAC)_file) (abre um site que não é da Microsoft).
 
 ## <a name="work-profile-only"></a>Somente perfil de trabalho
+
+Essas configurações se aplicam a tipos de registro do Android Enterprise, em que o Intune controla somente o perfil de trabalho, como o registro de perfil de trabalho do Android Enterprise em um dispositivo pessoal ou BYOD (Traga seu próprio serviço).
 
 ### <a name="work-profile-settings"></a>Configurações de perfil de trabalho
 

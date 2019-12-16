@@ -18,10 +18,10 @@ search.appverid: MET150
 ms.custom: intune-azure; seodec18
 ms.collection: M365-identity-device-management
 ms.openlocfilehash: e2909e7ad1ced9483a6cec58f1f3009f56946f5f
-ms.sourcegitcommit: 78cebd3571fed72a3a99e9d33770ef3d932ae8ca
+ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
 ms.translationtype: MTE75
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/13/2019
+ms.lasthandoff: 12/05/2019
 ms.locfileid: "74058422"
 ---
 # <a name="windows-10-and-later-settings-to-protect-devices-using-intune"></a>Configurações do Windows 10 (e posterior) para proteger dispositivos usando o Intune
@@ -36,7 +36,7 @@ Para configurar o Microsoft Defender Antivírus, confira [Restrições de dispos
 
 Para obter mais informações sobre provedores de serviços de configuração (CSPs), consulte [referência do provedor de serviços de configuração](https://docs.microsoft.com/windows/client-management/mdm/configuration-service-provider-reference).  
 
-## <a name="microsoft-defender-application-guard"></a>Proteção de aplicativos do Microsoft defender  
+## <a name="microsoft-defender-application-guard"></a>Microsoft Defender Application Guard  
 
 Ao usar o Microsoft Edge, o Microsoft Defender Application Guard protege seu ambiente contra sites que não são confiáveis para sua organização. Quando os usuários visitam sites que não estão listados no limite de rede isolada, os sites são abertos em uma sessão de navegação virtual do Hyper-V. Os sites confiáveis são definidos por um limite de rede, que são configurados em Configuração do Dispositivo.  
 
@@ -44,7 +44,7 @@ O Application Guard só está disponível para dispositivos Windows 10 (64 bits)
 
 - **Application Guard**  
   **Padrão**: não configurado  
-   CSP do Application Guard: [configurações/AllowWindowsDefenderApplicationGuard](https://docs.microsoft.com/windows/client-management/mdm/windowsdefenderapplicationguard-csp#allowwindowsdefenderapplicationguard)  
+   CSP do Application Guard: [Settings/AllowWindowsDefenderApplicationGuard](https://docs.microsoft.com/windows/client-management/mdm/windowsdefenderapplicationguard-csp#allowwindowsdefenderapplicationguard)  
 
   - **Habilitado para Edge** – ative esse recurso, que abre sites não confiáveis em um contêiner de navegação virtualizado do Hyper-V.  
   - **Não configurado** -qualquer site (confiável e não confiável) pode ser aberto no dispositivo.  
@@ -120,7 +120,7 @@ O Application Guard só está disponível para dispositivos Windows 10 (64 bits)
   - **Habilitar** – permite que os usuários baixem arquivos do navegador virtualizado no sistema operacional do host.  
   - **Não configurado** – mantém os arquivos localmente no dispositivo e não baixa arquivos no sistema de arquivos de host.  
 
-## <a name="microsoft-defender-firewall"></a>Microsoft defender firewall  
+## <a name="microsoft-defender-firewall"></a>Microsoft Defender Firewall  
  
 ### <a name="global-settings"></a>Configurações globais  
 
@@ -194,7 +194,7 @@ As configurações a seguir são listadas neste artigo uma única vez, mas todas
 
 #### <a name="general-settings"></a>Configurações gerais  
 
-- **Microsoft defender firewall**  
+- **Microsoft Defender Firewall**  
   **Padrão**: não configurado  
   CSP do firewall: [EnableFirewall](https://go.microsoft.com/fwlink/?linkid=872558)  
   
@@ -495,28 +495,28 @@ As configurações básicas são as configurações universais do BitLocker para
     **Padrão**: XTS-AES 128-bit  
    
     Escolha o método de criptografia para unidades do sistema operacional. Recomendamos que você use o algoritmo XTS-AES.  
-    - **AES-CBC 128 bits**  
-    - **AES-CBC 256 bits**  
-    - **XTS-AES 128-bit**  
-    - **XTS-AES 256-bit**  
+    - **AES-CBC de 128 bits**  
+    - **AES-CBC de 256 bits**  
+    - **XTS-AES de 128 bits**  
+    - **XTS-AES de 256 bits**  
 
   - **Criptografia para unidades de dados fixas**  
     **Padrão**: AES-CBC 128 bits  
    
     Escolha o método de criptografia para unidades de dados fixas (internas). Recomendamos que você use o algoritmo XTS-AES.  
-    - **AES-CBC 128 bits**  
-    - **AES-CBC 256 bits**  
-    - **XTS-AES 128-bit**  
-    - **XTS-AES 256-bit**  
+    - **AES-CBC de 128 bits**  
+    - **AES-CBC de 256 bits**  
+    - **XTS-AES de 128 bits**  
+    - **XTS-AES de 256 bits**  
 
   - **Criptografia para unidades de dados removíveis**  
     **Padrão**: AES-CBC 128 bits  
 
     Escolha o método de criptografia para unidades de dados removíveis. Se a unidade removível é usada com dispositivos que não executam o Windows 10, recomendamos o uso do algoritmo AES-CBC.  
-    - **AES-CBC 128 bits**  
-    - **AES-CBC 256 bits**  
-    - **XTS-AES 128-bit**  
-    - **XTS-AES 256-bit**  
+    - **AES-CBC de 128 bits**  
+    - **AES-CBC de 256 bits**  
+    - **XTS-AES de 128 bits**  
+    - **XTS-AES de 256 bits**  
 
 ### <a name="bitlocker-os-drive-settings"></a>Configurações de unidade do sistema operacional do BitLocker  
 
@@ -771,7 +771,7 @@ Essas configurações se aplicam especificamente a unidades de dados removíveis
     - **Bloquear** – impede o acesso de gravação a dispositivos configurados em outra organização.  
     - **Não configurado** -negar acesso de gravação.  
  
-## <a name="microsoft-defender-exploit-guard"></a>Microsoft defender Exploit Guard  
+## <a name="microsoft-defender-exploit-guard"></a>Microsoft Defender Exploit Guard  
 
 Use a [proteção contra Exploit](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/exploit-protection) para gerenciar e reduzir a superfície de ataque de aplicativos usados por seus funcionários.  
 

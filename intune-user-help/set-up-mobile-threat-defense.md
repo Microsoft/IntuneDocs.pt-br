@@ -1,6 +1,6 @@
 ---
 title: Instalar a Defesa contra ameaças móveis em seu dispositivo móvel
-description: Saiba como instalar a defesa contra ameaças móveis em seu dispositivo móvel.
+description: Saiba como instalar a Defesa contra ameaças móveis no seu dispositivo móvel.
 keywords: ''
 author: lenewsad
 ms.author: lanewsad
@@ -18,10 +18,10 @@ ROBOTS: ''
 ms.custom: intune-enduser
 ms.collection: M365-identity-device-management
 ms.openlocfilehash: 7f395a9cedc72a8184cfe3e29d6fcd3117a1473d
-ms.sourcegitcommit: 259462591835f3607392aa6b179882dbac830a89
+ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
 ms.translationtype: MTE75
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/28/2019
+ms.lasthandoff: 12/05/2019
 ms.locfileid: "72980352"
 ---
 # <a name="install-mobile-threat-defense"></a>Instalar Defesa contra Ameaças Móveis   

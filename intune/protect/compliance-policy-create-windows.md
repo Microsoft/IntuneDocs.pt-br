@@ -5,7 +5,7 @@ keywords: ''
 author: brenduns
 ms.author: brenduns
 manager: dougeby
-ms.date: 10/22/2019
+ms.date: 12/09/2019
 ms.topic: reference
 ms.service: microsoft-intune
 ms.subservice: protect
@@ -16,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: f3c6c029a5c5864eda46a68832b2f9f655553846
-ms.sourcegitcommit: 0d6f323152ec62f7d383891cce12ea0a4289cd8f
+ms.openlocfilehash: 60a87340c1a275b8fb878ef2f3891cca23fc9c85
+ms.sourcegitcommit: f5108039f0ade52e95ea3ac1da1aa16d02224af3
 ms.translationtype: MTE75
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/24/2019
-ms.locfileid: "72889534"
+ms.lasthandoff: 12/09/2019
+ms.locfileid: "74946642"
 ---
 # <a name="windows-10-and-later-settings-to-mark-devices-as-compliant-or-not-compliant-using-intune"></a>Configurações do Windows 10 e posteriores para marcar dispositivos como em conformidade ou não em conformidade usando o Intune
 
@@ -46,21 +46,21 @@ Como um administrador do Intune, use essas configurações de conformidade para 
 - **Habilitar o BitLocker**:  
    A Criptografia de Unidade de Disco Windows BitLocker criptografa todos os dados armazenados no volume do sistema operacional Windows. O BitLocker usa o Trusted Platform Module (TPM) para ajudar a proteger o sistema operacional Windows e os dados do usuário. Ele ajuda a confirmar que um computador não será adulterado, mesmo se ficar sem supervisão, for perdido ou roubado. Se o computador estiver equipado com um TPM compatível, o BitLocker usará o TPM para bloquear as chaves de criptografia que protegem os dados. Como resultado, as chaves não poderão ser acessadas até que o TPM confirme o estado do computador.  
 
-   - **Não configurado** (*padrão*) — Essa configuração não é avaliada em relação à conformidade.
+   - **Não configurado** (*padrão*) — Esta configuração não é avaliada em relação a estar ou não em conformidade.
    - **Exigir** – O dispositivo pode proteger os dados armazenados na unidade contra acesso não autorizado quando o sistema está desligado ou em hibernação.  
 
 
 - **Exigir que a Inicialização Segura esteja habilitada no dispositivo**:  
-    - **Não configurado** (*padrão*) — Essa configuração não é avaliada em relação à conformidade.
-    - **Exigir** -o sistema é forçado a inicializar para um estado confiável de fábrica. Os principais componentes usados para inicializar o computador precisam ter assinaturas criptográficas corretas que sejam da confiança da organização que fabricou o dispositivo. O firmware UEFI confirma essa assinatura antes de permitir que o computador seja iniciado. Se algum arquivo for violado, interrompendo sua assinatura, o sistema não inicializará.
+    - **Não configurado** (*padrão*) — Esta configuração não é avaliada em relação a estar ou não em conformidade.
+    - **Exigir** -o sistema é forçado a inicializar para um estado confiável de fábrica. Os principais componentes usados para inicializar o computador devem ter assinaturas criptográficas corretas que sejam confiáveis para a organização que fabricou o dispositivo. O firmware UEFI confirma essa assinatura antes de permitir que o computador seja iniciado. Se algum arquivo for violado, interrompendo sua assinatura, o sistema não inicializará.
 
   > [!NOTE]
   > A configuração **Requer que Inicialização Segura esteja habilitada no dispositivo** é compatível com alguns dispositivos TPM 1.2 e 2.0. Para dispositivos que não dão suporte a TPM 2.0 ou posterior, o status da política do Intune aparece como **Não em Conformidade**. Para obter mais informações sobre versões com suporte, veja [Atestado de Integridade do Dispositivo](https://docs.microsoft.com/windows/security/information-protection/tpm/trusted-platform-module-overview#device-health-attestation).
 
 - **Exigir a integridade de código**:  
   A integridade do código é um recurso que valida a integridade de um driver ou arquivo do sistema cada vez que ele é carregado na memória.
-  - **Não configurado** (*padrão*) — Essa configuração não é avaliada em relação à conformidade.
-  -  **Exigir** – Exige integridade de código, que detecta se um arquivo de sistema ou driver não assinado está sendo carregado no kernel. Também detecta se um arquivo de sistema é modificado por um software mal-intencionado ou executado por uma conta de usuário com privilégios de administrador.
+  - **Não configurado** (*padrão*) — Esta configuração não é avaliada em relação a estar ou não em conformidade.
+  -  **Exigir** – Exige a integridade de código quando detecta se um arquivo de sistema ou driver não assinado está sendo carregado no kernel. Também detecta se um arquivo de sistema é modificado por um software mal-intencionado ou executado por uma conta de usuário com privilégios de administrador.
 
 Mais recursos:
 
@@ -146,14 +146,14 @@ Aplica-se apenas a dispositivos que executam o Windows 10 e posteriores. Os disp
   Insira o tempo ocioso antes que o usuário precise inserir novamente sua senha.
 
 - **Expiração da senha (dias)** :  
-  Informe após quantos dias é preciso criar outra senha, de 1 a 730 dias.
+  Insira o número de dias antes que a senha expire e seja preciso criar uma nova, de 1 a 730.
 
 - **Número de senhas anteriores para evitar a reutilização**:  
   Insira o número de senhas usadas anteriormente e que não podem ser usadas.
 
 - **Exigir senha quando o dispositivo retorna do estado ocioso (somente Mobile e Holographic)** :  
   - **Não configurado** (*padrão*)
-  - **Exigir** – Requer que os usuários insiram a senha toda vez que o dispositivo retorna do estado ocioso.
+  - **Exigir** – Requer que os usuários insiram a senha sempre que o dispositivo retornar do estado ocioso.
 
   > [!IMPORTANT]
   > Quando o requisito de senha é alterado em uma área de trabalho do Windows, os usuários são afetados na próxima vez que fizerem logon, como quando o dispositivo passa de ocioso para ativo. Os usuários com senhas que atendam ao requisito ainda serão solicitados a alterar suas senhas.
@@ -161,6 +161,7 @@ Aplica-se apenas a dispositivos que executam o Windows 10 e posteriores. Os disp
 ### <a name="encryption"></a>Criptografia
 
 - **Criptografia de armazenamento de dados em um dispositivo**:  
+  Essa configuração se aplica a todas as unidades em um dispositivo.
   - **Não configurado** (*padrão*)
   - **Exigir** – Use *Exigir* para criptografar o armazenamento de dados em seus dispositivos.
 
@@ -196,9 +197,9 @@ Aplica-se apenas a dispositivos que executam o Windows 10 e posteriores. Os disp
 
 *As configurações de conformidade a seguir têm suporte com o Windows 10 desktop.*
 
-- **Antimalware do Microsoft defender**:  
+- **Microsoft Defender Antimalware**:  
   - **Não configurado** (*padrão*)-o Intune não controla o serviço nem altera as configurações existentes.
-  - **Exigir** -ativar o serviço antimalware do Microsoft defender e impedir que os usuários o desativem. 
+  - **Exigir** -ativar o serviço antimalware do Microsoft defender e impedir que os usuários o desativem.
 
 - **Versão mínima do Microsoft Defender Antimalware**:  
   Insira a versão mínima permitida do serviço antimalware do Microsoft defender. Por exemplo, insira `4.11.0.0`. Quando deixado em branco, qualquer versão do serviço antimalware do Microsoft defender pode ser usada.  
@@ -206,10 +207,12 @@ Aplica-se apenas a dispositivos que executam o Windows 10 e posteriores. Os disp
   *Por padrão, nenhuma versão é configurada*.
 
 - **Inteligência de segurança antimalware do Microsoft defender atualizada**:  
-  Controla as atualizações de proteção contra ameaças e vírus de segurança do Windows nos dispositivos.  
+  Controla as atualizações de proteção contra ameaças e vírus de segurança do Windows nos dispositivos.
   - **Não configurado** (*padrão*)-o Intune não impõe nenhum requisito.
-  - **Exigir** -força a inteligência de segurança do Microsoft defender a ser atualizada. 
+  - **Exigir** -força a inteligência de segurança do Microsoft defender a ser atualizada.
 
+  [CSP do defender/Health/SignatureOutOfDate](https://docs.microsoft.com/windows/client-management/mdm/defender-csp)
+  
   Para obter mais informações, consulte [atualizações de inteligência de segurança para o Microsoft defender antivírus e outros antimalware da Microsoft](https://www.microsoft.com/en-us/wdsi/defenderupdates).
 
 - **Proteção em tempo real**:  
@@ -226,8 +229,8 @@ Aplica-se apenas a dispositivos que executam o Windows 10 e posteriores. Os disp
   Use essa configuração para fazer a avaliação de risco dos serviços de defesa contra ameaças como uma condição para conformidade. Selecione o nível máximo de ameaça permitido:
   - **Não configurado** (*padrão*)  
   - **Limpa** – Esta opção é a mais segura, porque o dispositivo não pode ter nenhuma ameaça. Se for detectado que o dispositivo tem qualquer nível de ameaça, ele será avaliado como não estando em conformidade.
-  - **Baixa** – O dispositivo será avaliado como em conformidade se apenas ameaças de nível baixo estiverem presentes. Qualquer coisa acima disso coloca o dispositivo no estado de não compatível.
-  - **Média** – O dispositivo será avaliado como em conformidade se as ameaças presentes nele forem de nível baixo ou médio. Se for detectado que o dispositivo tem ameaças de nível alto, será determinado que ele não está em conformidade.
+  - **Baixo** – O dispositivo será avaliado como em conformidade se apenas ameaças de nível baixo estiverem presentes. Qualquer coisa acima disso coloca o dispositivo no estado de não compatível.
+  - **Médio** – O dispositivo será avaliado como em conformidade se as ameaças existentes nele forem de nível baixo ou médio. Se for detectado que o dispositivo tem ameaças de nível alto, será determinado que ele não está em conformidade.
   - **Alta** – Esta opção é a menos segura e permite todos os níveis de ameaça. Talvez seja útil se você estiver usando esta solução apenas para fins de relatório.
   
   Para configurar a Microsoft Defender ATP (Proteção Avançada contra Ameaças) como seu serviço de defesa contra ameaças, confira [Habilitar a Microsoft Defender ATP com Acesso Condicional](advanced-threat-protection.md).
@@ -245,7 +248,7 @@ Para verificar a criptografia do dispositivo no Microsoft HoloLens, consulte [Ve
 
 O Surface Hub usa a plataforma **Windows 10 e posterior**. Os Surface Hubs têm suporte para conformidade e Acesso Condicional. Para habilitar esses recursos em Surface Hubs, recomendamos que você [habilite o registro automático do Windows 10](../enrollment/windows-enroll.md) no Intune (exige o Azure AD [Azure Active Directory]) e marque os dispositivos do Surface Hub como grupos de dispositivos. Os Surface Hubs precisam ser adicionados ao Azure AD para fins de conformidade e Acesso Condicional ao trabalho.
 
-Para obter orientação, confira [Configurar registro para dispositivos Windows](../enrollment/windows-enroll.md).
+Para obter orientação, confira [configurar o registro para dispositivos Windows](../enrollment/windows-enroll.md).
 
 ## <a name="next-steps"></a>Próximas etapas
 

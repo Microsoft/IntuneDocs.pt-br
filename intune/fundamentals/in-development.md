@@ -17,10 +17,10 @@ search.appverid: MET150
 ms.custom: seodec18
 ms.collection: M365-identity-device-management
 ms.openlocfilehash: 04b284a62076122cec70b6b455151a0377470521
-ms.sourcegitcommit: 16a9109b4028589c17695d41271ca4fee8b1d697
+ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
 ms.translationtype: MTE75
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/26/2019
+ms.lasthandoff: 12/05/2019
 ms.locfileid: "74540731"
 ---
 # <a name="in-development-for-microsoft-intune---december-2019"></a>Em desenvolvimento para o Microsoft Intune – Dezembro de 2019
@@ -145,12 +145,12 @@ Para obter mais informações sobre perfis Wi-Fi, consulte [Adicionar configura�
 Aplica-se a:
 - Windows 10 e posterior
 
-### <a name="new-exchangeactivesync-settings-when-creating-an-email-device-configuration-profile-on-ios-devices---4892824----"></a>Novas configurações de ExchangeActiveSync ao criar um perfil de configuração de dispositivo de email em dispositivos iOS<!-- 4892824  --> 
-Em dispositivos iOS/iPadOS, você pode configurar a conectividade de email em um perfil de configuração de dispositivo (**configuração de dispositivo** > **perfis** > **Criar perfil** > **Ios/iPadOS** para plataforma > **email** para tipo de perfil). 
+### <a name="new-exchangeactivesync-settings-when-creating-an-email-device-configuration-profile-on-ios-devices---4892824----"></a>Novas configurações do ExchangeActiveSync ao criar um perfil de configuração de dispositivo de email em dispositivos iOS<!-- 4892824  --> 
+Em dispositivos iOS/iPadOS, você pode configurar a conectividade de emails em um perfil de configuração do dispositivo (**Configuração do dispositivo** > **Perfis** > **Criar perfil** > **iOS/iPadOS** para a plataforma > **Email** para o tipo de perfil). 
 
 Haverá novas configurações de ExchangeActiveSync disponíveis, incluindo:
 - Escolha os serviços a serem sincronizados (ou bloqueie a sincronização), como email, calendário e contatos.
-- Permitir que os usuários (ou bloquear) alterem as configurações de sincronização para esses serviços em seus dispositivos. 
+- Permita (ou impeça) que os usuários alterem as configurações de sincronização desses serviços em seus dispositivos. 
 
 Para ver as configurações atuais, vá para [configurações de perfil de email para dispositivos IOS no Intune](../configuration/email-settings-ios.md).
 
@@ -158,8 +158,8 @@ Aplica-se a:
 - iOS 13.0 e mais recente
 - iPadOS 13.0 e versões mais recentes
 
-### <a name="prevent-users-from-adding-personal-google-accounts-to-android-enterprise-device-owner-and-dedicated-devices---5353228----"></a>Impedir que os usuários adicionem contas pessoais do Google ao proprietário do dispositivo Android Enterprise e dispositivos dedicados<!-- 5353228  -->
-Você poderá impedir que os usuários criem contas pessoais do Google no proprietário do dispositivo Android Enterprise e dispositivos dedicados (**configuração do dispositivo** **perfis** de >  > **Criar perfil** > **Android Enterprise** para a plataforma > **proprietário do dispositivo, somente > restrições de dispositivo** para o tipo de perfil > configurações de **contas e usuários**).
+### <a name="prevent-users-from-adding-personal-google-accounts-to-android-enterprise-device-owner-and-dedicated-devices---5353228----"></a>Impedir que os usuários adicionem contas do Google pessoais no proprietário do dispositivo Android Enterprise e em dispositivos dedicados<!-- 5353228  -->
+Você poderá impedir que os usuários criem contas pessoais do Google no proprietário do dispositivo Android Enterprise e em dispositivos dedicados (**Configuração de dispositivos** > **Perfis** > **Criar perfis** > **Android Enterprise** para a plataforma > **Somente Proprietário do Dispositivo > Restrições de Dispositivos** para o tipo de perfil > **Configurações de usuários e contas**).
 
 Para ver as configurações atuais que você pode definir, acesse [Configurações do dispositivo Android Enterprise para permitir ou restringir recursos usando o Intune](../configuration/device-restrictions-android-for-work.md).
 
@@ -167,8 +167,8 @@ Aplica-se a:
 - Proprietário do dispositivo Android Enterprise
 - Dispositivos Android Enterprise dedicados
 
-### <a name="server-side-logging-for-siri-commands-setting-is-removed-in-ios-device-restrictions-profile---5468501----"></a>O log do lado do servidor para a configuração de comandos Siri é removido no perfil de restrições de dispositivo iOS<!-- 5468501  -->
-Em dispositivos iOS, você pode criar um perfil de restrições de dispositivo que configura o log do lado do servidor para comandos Siri (**configuração do dispositivo** **perfis** de >  > **Criar perfil** > **Ios/iPadOS** para plataforma > **Restrições de dispositivo** para o tipo de perfil > **aplicativos internos**). A configuração **log do lado do servidor para comandos Siri** será removida.
+### <a name="server-side-logging-for-siri-commands-setting-is-removed-in-ios-device-restrictions-profile---5468501----"></a>A configuração Registro em log no lado do servidor para os comandos da Siri foi removida no perfil de restrições de dispositivos iOS<!-- 5468501  -->
+Em dispositivos iOS, você pode criar um perfil de restrições de dispositivo que configura o log do lado do servidor para comandos Siri (**configuração do dispositivo** > **perfis** > **Criar perfil** > **Ios/iPadOS** para plataforma > **restrições de dispositivo** para o tipo de perfil > **aplicativos internos**). A configuração **log do lado do servidor para comandos Siri** será removida.
 
 Essa configuração será removida do console de administração do Intune. Essa configuração não tem nenhum efeito no dispositivo, embora as políticas existentes que tenham essa configuração configurada continuem a mostrar a configuração. Se você quiser remover a configuração de políticas existentes, vá para a política, faça uma pequena edição, salve-a e a política será atualizada.
 
