@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic; get-started
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: a5e52d1967ff6f5cf97334c099bc2b5b854ae87c
-ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
+ms.openlocfilehash: d876c0268f38a09ea3729a7e19ee00b321ae897a
+ms.sourcegitcommit: edd06a494a241d198ca9b0d3030c92195976e0d3
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/16/2019
-ms.locfileid: "72502692"
+ms.lasthandoff: 12/11/2019
+ms.locfileid: "75000390"
 ---
 # <a name="us-government-endpoints-for-microsoft-intune"></a>Pontos de extremidade do governo dos EUA para o Microsoft Intune
 
@@ -57,3 +57,25 @@ As tabelas a seguir listam as portas e serviços que o cliente do Intune acessa:
 - AAD Graph: https:\//directory.microsoftazure.us and https:\//graph.microsoftazure.us
 - MS Graph: https:\//graph.microsoft.us
 - ADRS: https:\//enterpriseregistration.microsoftonline.us
+
+## <a name="windows-push-notification-services"></a>Serviço de Notificação por Push do Windows
+Em dispositivos gerenciados pelo Intune e com o MDM (gerenciamento de dispositivo móvel), o WNS (Serviço de Notificação por Push do Windows) é necessário para ações do dispositivo e outras atividades imediatas. Para obter mais informações, confira [Firewall corporativo e configurações de proxy para dar suporte ao tráfego do WNS](https://docs.microsoft.com/windows/uwp/design/shell/tiles-and-notifications/firewall-allowlist-config)
+
+## <a name="apple-device-network-information"></a>Informações de rede de dispositivo Apple
+
+|**Usada para**|**Nome do host (endereço IP/sub-rede)**|**Protocolo**|**Porta**|
+|------------|-----------|------------|-----------|
+|Recuperar e exibir o conteúdo dos servidores da Apple|itunes.apple.com<br>\*.itunes.apple.com<br>\*.mzstatic.com<br>\*.phobos.apple.com<br>\*.phobos.itunes-apple.com.akadns.net|HTTP|80|
+|Comunicação com os servidores do APNs|#-courier.push.apple.com<br>'#' é um número aleatório de 0 a 50.|TCP|5223 e 443|
+|Várias funções, incluindo o acesso à Internet, à iTunes Store, à loja de aplicativos do macOS, ao iCloud, a mensagens etc.|phobos.apple.com<br>ocsp.apple.com<br>ax.itunes.apple.com<br>ax.itunes.apple.com.edgesuite.net|HTTP/HTTPS|80 ou 443|
+
+Para obter mais informações, consulte:
+
+- [Portas TCP e UDP usadas pelos produtos de software da Apple](https://support.apple.com/HT202944)
+- [Sobre as conexões de host do servidor do macOS, do iOS e do iTunes e os processos em segundo plano do iTunes](https://support.apple.com/HT201999)
+- [Se os clientes do macOS e do iOS não estiverem obtendo notificações por push da Apple](https://support.apple.com/HT203609)
+
+## <a name="next-steps"></a>Próximas etapas
+[Pontos de extremidade de rede para o Microsoft Intune](intune-endpoints.md)
+
+[Registro automático e registro de dispositivos do Windows 10](../enrollment/windows-enroll.md#registration-and-enrollment-cnames)

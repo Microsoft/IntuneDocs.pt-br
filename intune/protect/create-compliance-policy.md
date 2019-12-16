@@ -16,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: c8452f9b56032864380ec703bfd444dc85ef129b
-ms.sourcegitcommit: 13fa1a4a478cb0e03c7f751958bc17d9dc70010d
+ms.openlocfilehash: ba6b8fb66d25af3833e55eebc12e8b6df2fb5ba5
+ms.sourcegitcommit: 66e284fe092e19c1da72b4b770e45bf25ac7910c
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/19/2019
-ms.locfileid: "74188255"
+ms.lasthandoff: 12/05/2019
+ms.locfileid: "74860223"
 ---
 # <a name="create-a-compliance-policy-in-microsoft-intune"></a>Criar uma política de conformidade no Microsoft Intune
 
@@ -100,7 +100,7 @@ Para usar as políticas de conformidade do dispositivo, não deixe de:
 
      Por exemplo, você está usando o recurso Locais e adiciona uma localização em uma política de conformidade. A ação padrão para não conformidade se aplica quando você seleciona pelo menos uma localização. Se o dispositivo não estiver conectado a locais selecionados, imediatamente será considerado que ele não está em conformidade. Você pode dar aos usuários um período de cortesia, como um dia.
 
-   - **Escopo (Marcas)** : As marcas de escopo são uma ótima maneira de atribuir e filtrar políticas para grupos específicos, como Vendas, RH, todos os funcionários de determinado local geográfico e assim por diante. Após adicionar as configurações, você também pode adicionar uma marca de escopo às políticas de conformidade. [Usar marcas de escopo para filtrar políticas](../fundamentals/scope-tags.md) é um recurso útil.
+   - **Escopo (Marcas)** : Marcas de escopo são uma ótima maneira de filtrar políticas para grupos específicos, como `US-NC IT Team` ou `JohnGlenn_ITDepartment`. Após adicionar as configurações, você também pode adicionar uma marca de escopo às políticas de conformidade. [Usar marcas de escopo para filtrar políticas](../fundamentals/scope-tags.md) é um recurso útil.
 
 4. Quando terminar, selecione **OK** > **Criar** para salvar as alterações. A política é criada e exibida na lista. Em seguida, atribua a política a grupos.
 

@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure, get-started, seoapril2019
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 31bb0e2ff4379c55829afc65fb99b768c9099a47
-ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
+ms.openlocfilehash: 1b712922824fa9d54f33fb43114e852fbeb52a81
+ms.sourcegitcommit: 7cc45ef52dda08479bc6bdff7d11d2f6c0e7b93b
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/16/2019
-ms.locfileid: "72498942"
+ms.lasthandoff: 12/06/2019
+ms.locfileid: "74899424"
 ---
 # <a name="app-protection-policies-overview"></a>Visão geral das políticas de proteção de aplicativos
 
@@ -177,7 +177,7 @@ Os requisitos adicionais para usar os aplicativos [Word, Excel e PowerPoint](htt
   > No momento, os aplicativos móveis do Office dão suporte apenas ao SharePoint Online e não ao SharePoint local.
 
 ### <a name="managed-location-needed-for-office"></a>Local gerenciado necessário para o Office
-Um local gerenciado (ou seja, o OneDrive) é necessário para o Office. O Microsoft Intune marca todos os dados no aplicativo como "corporativos" ou "pessoais". Os dados são considerados “corporativos” quando tem como origem um local da empresa. Para os aplicativos do Office, o Intune considera o seguinte como locais da empresa: email (Exchange) ou armazenamento em nuvem (aplicativo OneDrive com uma conta do OneDrive para Empresas).
+Uma localização gerenciada (ou seja, o OneDrive) é necessária para o Office. O Microsoft Intune marca todos os dados no aplicativo como "corporativos" ou "pessoais". Os dados são considerados “corporativos” quando tem como origem um local da empresa. Para os aplicativos do Office, o Intune considera o seguinte como locais da empresa: email (Exchange) ou armazenamento em nuvem (aplicativo OneDrive com uma conta do OneDrive para Empresas).
 
 ### <a name="skype-for-business"></a>Skype for Business
 Existem requisitos adicionais para usar o Skype for Business. Consulte os requisitos de licença do [Skype for Business](https://products.office.com/skype-for-business/it-pros). Para configurações híbridas e locais do SfB (Skype for Business), confira [A autenticação moderna híbrida para SfB e Exchange torna-se GA](https://techcommunity.microsoft.com/t5/Skype-for-Business-Blog/Hybrid-Modern-Auth-for-SfB-and-Exchange-goes-GA/ba-p/134756) e [Autenticação moderna para SfB local com o AAD](https://techcommunity.microsoft.com/t5/Skype-for-Business-Blog/Modern-Auth-for-SfB-OnPrem-with-AAD/ba-p/180910), respectivamente.
@@ -215,12 +215,12 @@ O PIN (Número de Identificação Pessoal) é uma senha usada para verificar se 
 **Solicitação de PIN**<br>
 O Intune solicitará o PIN do aplicativo do usuário quando o usuário estiver prestes a acessar dados "corporativos". Em aplicativos de várias identidades, como o Word, Excel ou PowerPoint, o usuário é solicitado a inserir o respectivo PIN ao tentar abrir um arquivo ou documento "corporativo". Em aplicativos de identidade única, como aplicativos de linha de negócios gerenciados com a [Ferramenta de Encapsulamento de Aplicativo do Microsoft Intune](../developer/apps-prepare-mobile-application-management.md), o PIN é solicitado na inicialização, pois o [SDK do Aplicativo do Intune](../developer/app-sdk.md) sabe que a experiência do usuário no aplicativo é sempre "corporativa".
 
-**Frequência de solicitação de PIN**<br>
-O administrador de TI pode definir a política de proteção do aplicativo do Intune com o recurso **Verificar novamente os requisitos de acesso após (minutos)** , no console de administrador do Intune. Essa configuração especifica a quantidade de tempo até os requisitos de acesso serem verificados no dispositivo e a tela PIN do aplicativo ser exibida novamente. No entanto, detalhes importantes sobre o PIN que afetam a frequência com que o usuário será consultado são:
+**Solicitação de PIN, solicitação de credenciais corporativas, frequência**<br>
+O administrador de TI pode definir a política de proteção do aplicativo do Intune com o recurso **Verificar novamente os requisitos de acesso após (minutos)** , no console de administrador do Intune. Essa configuração especifica o tempo necessário para a verificação dos requisitos de acesso no dispositivo e até a tela do PIN do aplicativo ou as solicitação de credenciais corporativas ser exibida novamente. No entanto, detalhes importantes sobre o PIN que afetam a frequência com que o usuário será consultado são:
 
-- **O PIN é compartilhado entre aplicativos do mesmo editor para melhorar a usabilidade:**<br> No iOS, um PIN de aplicativo é compartilhado entre todos os aplicativos **do mesmo editor de aplicativo**. No Android, o PIN de um aplicativo é compartilhado com todos os aplicativos.
-  - **O comportamento do recurso *Verificar novamente os requisitos de acesso após (minutos)* , após uma reinicialização do dispositivo:**<br> Um "temporizador do PIN" rastreia o número de minutos de inatividade que determinam quando mostrar o PIN do aplicativo Intune. No iOS, o temporizador do PIN não é afetado pela reinicialização do dispositivo. Portanto, a reinicialização do dispositivo não tem nenhum efeito sobre o número de minutos que o usuário esteve inativo em um aplicativo iOS com a política de PIN do Intune. No Android, o temporizador do PIN é redefinido na reinicialização do dispositivo. Portanto, os aplicativos Android com a política de PIN do Intune provavelmente solicitarão um PIN do aplicativo, seja qual for o valor da configuração 'Verificar novamente os requisitos de acesso após (minutos)' **após uma reinicialização do dispositivo**.  
-  - **A natureza em constante movimento do temporizador associada ao PIN:**<br> Uma vez que um PIN é inserido para acessar um aplicativo (aplicativo A) e o aplicativo deixa o segundo plano (foco de entrada principal) no dispositivo, o temporizador do PIN é redefinido para esse PIN. Qualquer aplicativo (aplicativo B) que compartilhe esse PIN não solicitará ao usuário para inserir o PIN porque o temporizador foi redefinido. A solicitação será exibida novamente quando o valor "Verificar novamente os requisitos de acesso após (minutos)" for atendido novamente.
+- **O PIN é compartilhado entre aplicativos do mesmo editor para melhorar a usabilidade:**<br> No iOS, um PIN de aplicativo é compartilhado entre todos os aplicativos **do mesmo editor de aplicativo**. Por exemplo, todos os aplicativos da Microsoft compartilham o PIN. No Android, o PIN de um aplicativo é compartilhado com todos os aplicativos.
+- **O comportamento do recurso *Verificar novamente os requisitos de acesso após (minutos)* , após uma reinicialização do dispositivo:**<br> Um temporizador rastreia o número de minutos de inatividade que determinam quando mostrar o PIN do aplicativo do Intune ou a solicitação de credenciais corporativas em seguida. No iOS, o temporizador não é afetado pela reinicialização do dispositivo. Portanto, a reinicialização do dispositivo não tem nenhum efeito sobre o número de minutos que o usuário esteve inativo em um aplicativo iOS com a política de PIN do Intune (ou de credenciais corporativas) de destino. No Android, o temporizador é redefinido na reinicialização do dispositivo. Portanto, os aplicativos Android com a política de PIN do Intune (ou de credenciais corporativas) provavelmente solicitarão um PIN do aplicativo ou as credenciais corporativas, seja qual for o valor da configuração 'Verificar novamente os requisitos de acesso após (minutos)' **depois de uma reinicialização do dispositivo**.  
+- **A natureza em constante movimento do temporizador associada ao PIN:**<br> Depois que um PIN é inserido para acessar um aplicativo (aplicativo A) e o aplicativo deixa o primeiro plano (foco de entrada principal) no dispositivo, o temporizador é redefinido para esse PIN. Qualquer aplicativo (aplicativo B) que compartilhe esse PIN não solicitará ao usuário para inserir o PIN porque o temporizador foi redefinido. A solicitação será exibida novamente quando o valor "Verificar novamente os requisitos de acesso após (minutos)" for atendido novamente.
 
 Para dispositivos iOS, mesmo se o PIN for compartilhado entre aplicativos de diferentes fornecedores, a solicitação será exibida novamente quando o valor **Verificar novamente os requisitos de acesso após (minutos)** for atendido novamente para o aplicativo que não é o foco principal da entrada. Por exemplo, um usuário tem o aplicativo _A_ do fornecedor _X_ e o aplicativo _B_ do fornecedor _Y_, e esses dois aplicativos compartilham o mesmo PIN. O usuário está concentrado no aplicativo _A_ (primeiro plano), e o aplicativo _B_ está minimizado. Depois que o valor **Verificar novamente os requisitos de acesso após (minutos)** for atendido e o usuário alternar para o aplicativo _B_, o PIN será necessário.
 
@@ -262,7 +262,6 @@ Somente os dados marcados como “corporativos” são criptografados, de acordo
 Para aplicativos de linha de negócios gerenciados pela [Ferramenta de Encapsulamento de Aplicativo do Intune](../developer/apps-prepare-mobile-application-management.md), todos os dados do aplicativo são considerados "corporativos".
 
 **Apagar dados remotamente**<br>
-
 O Microsoft Intune pode apagar dados de aplicativos de três maneiras diferentes: 
 - Apagamento completo do dispositivo
 - Apagamento seletivo para MDM 

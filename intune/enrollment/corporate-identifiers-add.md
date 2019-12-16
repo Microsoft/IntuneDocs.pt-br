@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: c3d98a0e3c5bd2a5c11c9aa72d791306dfbe6578
-ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
+ms.openlocfilehash: 4e1ee8ae54d81a050f3c8983269f40e8f61b5e75
+ms.sourcegitcommit: e75718ee6cf93c0e6c915f2776b785fe8db9f7e0
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/16/2019
-ms.locfileid: "72503307"
+ms.lasthandoff: 12/10/2019
+ms.locfileid: "74955466"
 ---
 # <a name="identify-devices-as-corporate-owned"></a>Identificar dispositivos como corporativos
 
@@ -85,9 +85,7 @@ Quando visualizado em um editor de texto, esse arquivo .csv aparece como:
 
 ### <a name="upload-a-csv-list-of-corporate-identifiers"></a>Carregar uma lista .csv de identificadores corporativos
 
-1. Entre no [Intune](https://go.microsoft.com/fwlink/?linkid=2090973), escolha **Registro de dispositivos** > **Identificadores de dispositivo corporativo** > **Adicionar** > **Carregar arquivo CSV**.
-
-   ![Workspace do identificador de dispositivo corporativo com o botão Adicionar realçado](./media/corporate-identifiers-add/add-corp-id.png)
+1. Entre no [Centro de Administração do Gerenciador de Ponto de Extremidade da Microsoft](https://go.microsoft.com/fwlink/?linkid=2109431), escolha **Dispositivos** > **Registrar dispositivos** > **Identificadores de dispositivos corporativos** > **Adicionar** > **Carregar arquivo CSV**.
 
 2. Na folha **Adicionar Identificadores**, especifique o tipo de identificador: **IMEI** ou **Serial**.
 
@@ -97,7 +95,7 @@ Quando visualizado em um editor de texto, esse arquivo .csv aparece como:
 
 ## <a name="manually-enter-corporate-identifiers"></a>Inserir os identificadores corporativos manualmente
 
-1. Entre no [Intune](https://go.microsoft.com/fwlink/?linkid=2090973), escolha **Registro de dispositivos** > **Identificadores de dispositivo corporativo** > **Adicionar** > **Inserir manualmente**.
+1. Entre no [Centro de Administração do Gerenciador de Ponto de Extremidade da Microsoft](https://go.microsoft.com/fwlink/?linkid=2109431), escolha **Dispositivos** > **Registrar dispositivos** > **Identificadores de dispositivos corporativos** > **Adicionar** > **Inserir manualmente**.
 
 2. Na folha **Adicionar Identificadores**, especifique o tipo de identificador: **IMEI** ou **Serial**.
 
@@ -111,7 +109,7 @@ Os dispositivos importados não são necessariamente registrados. Os dispositivo
 
 ## <a name="delete-corporate-identifiers"></a>Excluir identificadores corporativos
 
-1. Entre no [Intune](https://go.microsoft.com/fwlink/?linkid=2090973), escolha **Registro de dispositivos** > **Identificadores de dispositivo corporativo**.
+1. Entre no [Centro de Administração do Gerenciador de Ponto de Extremidade da Microsoft](https://go.microsoft.com/fwlink/?linkid=2109431), escolha **Dispositivos** > **Registrar dispositivos** > **Identificadores de dispositivos corporativos**.
 2. Selecione os identificadores de dispositivo que você deseja excluir e escolha **Excluir**.
 3. Confirme a exclusão.
 
@@ -125,7 +123,7 @@ Para obter especificações detalhadas sobre Identificadores de equipamentos mó
 As propriedades do dispositivo exibem **Propriedade** para o registro de cada dispositivo no Intune. Como administrador, você pode especificar os dispositivos como **Pessoais** ou **Corporativos**. Quando o tipo de propriedade de um dispositivo é alterado de Pessoal para Corporativo, o Intune exclui todas as informações do aplicativo coletadas anteriormente desse dispositivo em 7 dias. Se aplicável, o Intune também excluirá o número de telefone registrado. 
 
 **Para alterar a propriedade do dispositivo:**
-1. Entre no [Intune](https://go.microsoft.com/fwlink/?linkid=2090973), acesse **Dispositivos** e escolha o dispositivo.
+1. Entre no [Centro de Administração do Gerenciador de Ponto de Extremidade da Microsoft](https://go.microsoft.com/fwlink/?linkid=2109431), escolha **Dispositivos** > **Todos os dispositivos** > escolha o dispositivo.
 2. Escolha **Propriedades**.
 3. Especifique a **Propriedade do dispositivo** como **Pessoal** ou **Corporativo**.
 

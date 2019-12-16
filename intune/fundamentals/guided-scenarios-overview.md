@@ -16,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 460cabead711e6fa4559bcec39e556448cdf2237
-ms.sourcegitcommit: 2c8a41ee95a3fde150667a377770e51b621ead65
+ms.openlocfilehash: ebb17324355fff9631ef74a76388ef0ab797d437
+ms.sourcegitcommit: 7cc45ef52dda08479bc6bdff7d11d2f6c0e7b93b
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/06/2019
-ms.locfileid: "73635362"
+ms.lasthandoff: 12/06/2019
+ms.locfileid: "74899140"
 ---
 # <a name="intune-guided-scenarios-overview"></a>Visão geral de cenários guiados do Intune 
 
@@ -33,7 +33,7 @@ Os cenários guiados não são um espaço de gerenciamento diferente dos fluxos 
 
 ## <a name="types-of-guided-scenarios"></a>Tipos de cenários guiados 
 
-Para simplificar, todos os cenários guiados omitem recursos de escopo complexos, como Marcas de Escopo <link>, grupos de exclusão e atribuições de grupo virtual <link>. Todos os recursos criados por um cenário guiado herdarão cada marca de escopo do administrador que conclui o cenário. Determinados cenários oferecem algum nível de personalização da configuração comum para abranger cenários bem relacionados. Esses cenários dão suporte à atribuição de grupos a apenas grupos de inclusão. Para outros cenários guiados, todo o cenário garante uma experiência consistente sem oferecer nenhuma personalização e gera automaticamente um novo grupo para receber todas as atribuições. Depois que o cenário guiado for concluído, você estará livre para usar atribuições mais sofisticadas diretamente por meio de cargas de trabalho de política, aplicativo e perfil existentes.  
+Para simplificar, todos os cenários guiados omitem recursos de escopo complexos, como Marcas de Escopo, grupos de exclusão e atribuições de grupo virtual. Todos os recursos criados por um cenário guiado herdarão cada marca de escopo do administrador que conclui o cenário. Determinados cenários oferecem algum nível de personalização da configuração comum para abranger cenários bem relacionados. Esses cenários dão suporte à atribuição de grupos a apenas grupos de inclusão. Para outros cenários guiados, todo o cenário garante uma experiência consistente sem oferecer nenhuma personalização e gera automaticamente um novo grupo para receber todas as atribuições. Depois que o cenário guiado for concluído, você estará livre para usar atribuições mais sofisticadas diretamente por meio de cargas de trabalho de política, aplicativo e perfil existentes.  
 
 Os cenários a seguir são guiados: 
 - Implantar o Microsoft Edge para dispositivos móveis 

@@ -5,7 +5,7 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 11/20/2019
+ms.date: 12/05/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.subservice: configuration
@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 275b3961e87f0d0eda8299337fe3fb7ac89ef03b
-ms.sourcegitcommit: 1a22b8b31424847d3c86590f00f56c5bc3de2eb5
+ms.openlocfilehash: 651b02dc276ca2aa2003955e6aa7b0dfa6724a40
+ms.sourcegitcommit: 66e284fe092e19c1da72b4b770e45bf25ac7910c
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/21/2019
-ms.locfileid: "74261683"
+ms.lasthandoff: 12/05/2019
+ms.locfileid: "74860308"
 ---
 # <a name="assign-user-and-device-profiles-in-microsoft-intune"></a>Atribuir perfis de usuário e dispositivo no Microsoft Intune
 
@@ -61,7 +61,7 @@ Se o botão **Avaliar** estiver desabilitado, verifique se o perfil foi atribuí
 
 Ao criar ou atualizar um perfil, também é possível adicionar marcas de escopo e regras de aplicabilidade a ele.
 
-As **marcas de escopo** são uma ótima maneira de atribuir e filtrar perfis para grupos específicos, como Recursos humanos ou Todos os funcionários de determinado local geográfico. Saiba mais em [Usar o RBAC e marcas de escopo na TI distribuída](../fundamentals/scope-tags.md).
+As **marcas de escopo** são uma ótima maneira de filtrar perfis para grupos específicos, como `US-NC IT Team` ou `JohnGlenn_ITDepartment`. Saiba mais em [Usar o RBAC e marcas de escopo na TI distribuída](../fundamentals/scope-tags.md).
 
 Em dispositivos com Windows 10, você pode adicionar **regras de aplicabilidade** para que o perfil se aplique apenas a uma versão específica do sistema operacional ou a uma edição específica do Windows. Saiba mais nas [regras de aplicabilidade](device-profile-create.md#applicability-rules).
 

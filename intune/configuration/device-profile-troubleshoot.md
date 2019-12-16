@@ -5,7 +5,7 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 10/15/2019
+ms.date: 12/04/2019
 ms.topic: troubleshooting
 ms.service: microsoft-intune
 ms.subservice: configuration
@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 4a1177a37ddbfa7f760339c4ad0cd7773d670540
-ms.sourcegitcommit: 01fb3d844958a0e66c7b87623160982868e675b0
+ms.openlocfilehash: d445b86359b2c5cde7b56a52a0cc6ee72a34c0ea
+ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/20/2019
-ms.locfileid: "74199185"
+ms.lasthandoff: 12/05/2019
+ms.locfileid: "74832609"
 ---
 # <a name="common-questions-issues-and-resolutions-with-device-policies-and-profiles-in-microsoft-intune"></a>Perguntas, problemas e soluções comuns para perfis e políticas de dispositivo no Microsoft Intune
 
@@ -50,7 +50,9 @@ Algumas recomendações adicionais:
 
 O Intune notifica o dispositivo para fazer check-in no serviço do Intune. Os tempos de notificação variam, podendo ser imediatos ou até algumas horas. Esses tempos de notificação também variam de acordo com as plataformas.
 
-Se um dispositivo não fizer o check-in para obter a política ou o perfil após a primeira notificação, o Intune fará mais três tentativas. Um dispositivo offline, como quando está desligado ou não conectado a uma rede, pode não receber as notificações. Nesse caso, o dispositivo obterá a política ou o perfil em seu próximo check-in agendado no serviço do Intune, que é **estimado** em:
+Se um dispositivo não fizer o check-in para obter a política ou o perfil após a primeira notificação, o Intune fará mais três tentativas. Um dispositivo offline, como quando está desligado ou não conectado a uma rede, pode não receber as notificações. Nesse caso, o dispositivo obtém a política ou o perfil no próximo check-in agendado no serviço do Intune. O mesmo se aplica às verificações de não conformidade, incluindo dispositivos que passam de um estado em conformidade para um estado de não conformidade.
+
+Frequências **estimadas**:
 
 | Plataforma | Ciclo de atualização|
 | --- | --- |
@@ -61,7 +63,7 @@ Se um dispositivo não fizer o check-in para obter a política ou o perfil após
 | Windows Phone | Aproximadamente a cada oito horas |
 | Windows 8.1 | Aproximadamente a cada oito horas |
 
-Se o dispositivo foi registrado recentemente, a frequência das execuções do check-in de conformidade é maior, com estas **estimativas**:
+Se o dispositivo foi registrado recentemente, o check-in da configuração, da conformidade e da não conformidade é executado com mais frequência, com estas **estimativas**:
 
 | Plataforma | Frequência |
 | --- | --- |

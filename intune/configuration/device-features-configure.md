@@ -5,7 +5,7 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 11/04/2019
+ms.date: 12/12/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.subservice: configuration
@@ -16,16 +16,14 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: f02188e6dd6cea6048731d119f8f307224810dd9
-ms.sourcegitcommit: 78cebd3571fed72a3a99e9d33770ef3d932ae8ca
+ms.openlocfilehash: d887c7bc3c7e9ea8b6719993b5ba4909e9c18ea8
+ms.sourcegitcommit: df8e2c052fafb2d5d4e9b4fcd831ae0ecf7f8d16
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/13/2019
-ms.locfileid: "74059960"
+ms.lasthandoff: 12/10/2019
+ms.locfileid: "74992932"
 ---
 # <a name="add-ios-or-macos-device-feature-settings-in-intune"></a>Adicionar configurações de recursos do dispositivo iOS ou macOS no Intune
-
-[!INCLUDE [azure_portal](../includes/azure_portal.md)]
 
 O Intune inclui muitos recursos e configurações que ajudam os administradores a controlarem dispositivos iOS e macOS. Por exemplo, os administradores podem:
 
@@ -113,7 +111,7 @@ Aplica-se a:
 
 ## <a name="login-items"></a>Itens de logon
 
-Use esse recurso para escolher os aplicativos, aplicativos personalizados, arquivos e pastas que abrem quando os usuários entram nos dispositivos. 
+Use esse recurso para escolher os aplicativos, aplicativos personalizados, arquivos e pastas que abrem quando os usuários entram nos dispositivos.
 
 Para obter uma lista das configurações possíveis no Intune, confira [Itens de logon no macOS](macos-device-features-settings.md#login-items).
 
@@ -153,22 +151,29 @@ Aplica-se a:
 
 Essas configurações definem uma extensão de aplicativo que habilita o SSO (logon único) para seus dispositivos iOS, iPadOS e macOS. A maioria dos aplicativos de linha de negócios e sites da organização exige algum nível de autenticação de usuário segura. Em muitos casos, a autenticação exige que os usuários insiram as mesmas credenciais repetidamente. Com o SSO, aos usuários podem acessar aplicativos e sites após inserirem suas credenciais uma vez. Após a entrada, os usuários podem acessar aplicativos e sites automaticamente ou usar o Face ID, o Touch ID ou a senha da Apple para obter acesso.
 
-No Intune, use essas configurações para definir a extensão Kerberos interna da Apple ou para configurar uma extensão de aplicativo de SSO criada por sua organização. A extensão de aplicativo de SSO lida com a autenticação para seus usuários. Essas configurações definem as extensões de aplicativo de SSO do tipo credencial, que são projetadas para fluxos de autenticação de desafio e resposta. Você pode escolher entre uma extensão de credencial específica do Kerberos fornecida pela Apple e uma extensão de credencial genérica.
+No Intune, use essas configurações para definir uma extensão de aplicativo de SSO criada por sua organização, seu provedor de identidade ou pela Apple. A extensão de aplicativo de SSO lida com a autenticação para seus usuários. Essas configurações definem as extensões de aplicativo de SSO do tipo de redirecionamento e do tipo de credencial.
+
+- O tipo de redirecionamento é projetado para protocolos de autenticação modernos, como OAuth e SAML2.
+- O tipo de credencial é projetado para fluxos de autenticação de desafio e resposta. Você pode escolher entre uma extensão de credencial específica do Kerberos fornecida pela Apple e uma extensão de credencial genérica.
 
 Para obter uma lista das configurações possíveis no Intune, confira [Extensão de aplicativo SSO do iOS](ios-device-features-settings.md#single-sign-on-app-extension) e [Extensão de aplicativo SSO do macOS](macos-device-features-settings.md#single-sign-on-app-extension).
 
-Para saber mais sobre como desenvolver uma extensão de aplicativo de SSO, assista a [SSO corporativo extensível](https://developer.apple.com/videos/play/tech-talks/301) no site da Apple.
+Para saber mais sobre como desenvolver uma extensão de aplicativo de SSO, assista a [SSO corporativo extensível](https://developer.apple.com/videos/play/tech-talks/301) no site da Apple. Para ler a descrição da Apple do recurso, visite [Configurações de conteúdo das extensões de logon único](https://support.apple.com/guide/mdm/single-sign-on-extensions-mdmfd9cdf845/web). 
 
 > [!NOTE]
 > O recurso **Extensão de aplicativo de logon único** é diferente do recurso **Logon único**:
 >
-> - As configurações da **Extensão de aplicativo de logon único** aplicam-se ao iPadOS 13.0 (e versões mais recentes) e ao iOS 13.0 (e versões mais recentes). As configurações de **logon único** aplicam-se ao iPadOS 13.0 (e versões mais recentes) e ao iOS 7.0 (e versões mais recentes).
-> - Uma **Extensão de aplicativo de logon único** lida com a autenticação no sistema operacional. No **Logon único**, um aplicativo específico lida com a autenticação.
-> - Ao usar a **Extensão de aplicativo de logon único**, os usuários entram silenciosamente em aplicativos e sites, ou com o Face ID, o Touch ID, a senha ou o PIN da Apple. Ao usar o **Logon único**, os usuários entram em aplicativos e sites por meio de outro aplicativo.
+> - As configurações da **Extensão de aplicativo de logon único** aplicam-se ao iPadOS 13.0 (e mais recente), ao iOS 13.0 (e mais recente) e ao macOS 10.15 (e mais recente). As configurações de **logon único** aplicam-se ao iPadOS 13.0 (e versões mais recentes) e ao iOS 7.0 (e versões mais recentes).
 >
->    A **Extensão de aplicativo de logon único** usa o sistema operacional da Apple para se autenticar. Portanto, pode proporcionar uma experiência do usuário final com melhor qualidade.
+> - As configurações da **Extensão de aplicativo de logon único** definem extensões para uso por provedores de identidade ou organizações para fornecer uma experiência de logon empresarial perfeita. As configurações de **logon único** definem as informações de conta do Kerberos para quando os usuários acessam servidores ou aplicativos.
 >
-> - Do ponto de vista do desenvolvimento, a **Extensão de aplicativo de logon único** pode usar qualquer tipo de autenticação SSO de credencial. Com o **Logon único**, você só pode usar a autenticação SSO do Kerberos.  
+> - A **Extensão de aplicativo de logon único** usa o sistema operacional da Apple para se autenticar. Portanto, ela pode fornecer uma experiência do usuário final melhor do que aquela de **logon único**.
+>
+> - Do ponto de vista do desenvolvimento, com a **Extensão de aplicativo de logon único**, você pode usar qualquer tipo de SSO de credencial ou de redirecionamento. Com o **Logon único**, você só pode usar a autenticação SSO do Kerberos.
+>
+> - A **Extensão de aplicativo de logon único** do Kerberos foi desenvolvida pela Apple e é interna nas plataformas iOS 13.0 e posterior e macOS 10.15 e posterior. A extensão interna do Kerberos pode ser usada para registrar os usuários em log em aplicativos nativos e sites que dão suporte à autenticação Kerberos. O **logon único** não é uma implementação do Kerberos oferecida pela Apple.
+>
+> - A **Extensão de aplicativo de logon único** interna do Kerberos processa os desafios do Kerberos para páginas da Web e aplicativos, assim como o **logon único**. No entanto, a extensão interna do Kerberos dá suporte a alterações de senha e apresenta um comportamento melhor em redes corporativas. Ao decidir entre a **extensão de aplicativo de logon único** do Kerberos e o **logon único**, recomendamos o uso da extensão, devido às funcionalidades e ao desempenho aprimorados.
 
 Aplica-se a:
 

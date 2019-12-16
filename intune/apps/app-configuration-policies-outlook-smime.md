@@ -16,16 +16,19 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 348d1fe2fd236a2af11f7e58dc11530a5ce397bc
-ms.sourcegitcommit: 73b362173929f59e9df57e54e76d19834f155433
+ms.openlocfilehash: c9572f4accb1be232d4667d99b98beff90d81379
+ms.sourcegitcommit: edd06a494a241d198ca9b0d3030c92195976e0d3
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/27/2019
-ms.locfileid: "74564197"
+ms.lasthandoff: 12/11/2019
+ms.locfileid: "75000407"
 ---
 # <a name="configure-smime-with-outlook-for-ios"></a>Configurar o S/MIME com o Outlook para iOS
 
 Extensões S/MIME fornecem uma camada adicional de segurança para emails enviados para e de uma conta do Exchange ActiveSync (EAS). O [Microsoft Outlook](https://aka.ms/omsmime) pode utilizar o S/MIME para permitir que os usuários criptografem mensagens de saída e anexos, garantindo que somente o destinatário pretendido possa ler e acessar o conteúdo da mensagem ao utilizar contas do Office 365. Os usuários também podem assinar digitalmente uma mensagem, o que permite aos destinatários verificar a identidade do remetente e confirmar que a mensagem não foi adulterada. Essa funcionalidade é possível com o uso de certificados. Para saber mais, confira [Compreender o S/MIME](https://docs.microsoft.com/previous-versions/tn-archive/aa995740(v=exchg.65)?redirectedfrom=MSDN).
+
+> [!NOTE]
+> Esse recurso foi atrasado, mas será lançado em breve.
 
 > [!NOTE]
 > Este tópico descreve como implantar certificados raiz confiáveis por meio do [Gerenciador de Ponto de Extremidade da Microsoft](https://go.microsoft.com/fwlink/?linkid=2109431). O Gerenciador de Ponto de Extremidade da Microsoft é uma plataforma única e integrada de gerenciamento de pontos de extremidade para gerenciar todos os seus pontos de extremidade. Esse centro de administração do Gerenciador de Ponto de Extremidade da Microsoft integra o ConfigMgr e o Microsoft Intune.
@@ -78,9 +81,6 @@ O painel **Adicionar política de configuração** será exibido.
 6. Clique em **Definições de configuração** para adicionar definições de configuração. 
     - Selecione **Usar designer de configuração** ao lado de **Formato de definições de configuração** e aceite as configurações padrão. Para obter mais informações, confira [Definições de configuração do Microsoft Outlook](~/apps/app-configuration-policies-outlook.md).
 7. Clique em **S/MIME**  para exibir as **Configurações de S/MIME do Outlook**.
-
-    ![Captura de tela das configurações de S/MIME do Outlook para iOS](./media/app-configuration-policies-outlook-smime/app-configuration-policies-outlook-smime-01.png)
-
 8. Defina **Habilitar S/MIME**  como **Sim**.
 9. Defina **Implantar certificados S/MIME do Intune** como **Sim**.
 10. Em **Certificado de autenticação**, ao lado de **Tipo de perfil de certificado**, escolha uma das seguintes opções:

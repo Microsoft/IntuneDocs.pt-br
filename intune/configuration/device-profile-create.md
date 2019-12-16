@@ -5,7 +5,7 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 11/21/2019
+ms.date: 12/05/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.subservice: configuration
@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 0c4c995322234a4a2486d8e6c5e9efd88f78dd63
-ms.sourcegitcommit: 2fddb293d37453736ffa54692d03eca642f3ab58
+ms.openlocfilehash: 71f2bc855673b6b189ed7581b979527485e86083
+ms.sourcegitcommit: 66e284fe092e19c1da72b4b770e45bf25ac7910c
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/22/2019
-ms.locfileid: "74390879"
+ms.lasthandoff: 12/05/2019
+ms.locfileid: "74860376"
 ---
 # <a name="create-a-device-profile-in-microsoft-intune"></a>Criar um perfil de dispositivo no Microsoft Intune
 
@@ -93,7 +93,7 @@ Este artigo:
 
 ## <a name="scope-tags"></a>Marcas de escopo
 
-Depois de adicionar as configurações, você também poderá adicionar uma marca de escopo ao perfil. As marcas de escopo atribuem e filtram políticas para grupos específicos, como RH ou Todos os funcionários de US-NC.
+Depois de adicionar as configurações, você também poderá adicionar uma marca de escopo ao perfil. As marcas de escopo filtram perfis para grupos de TI específicos, como `US-NC IT Team` ou `JohnGlenn_ITDepartment`.
 
 Saiba mais sobre marcas de escopo e o que você pode fazer em [Usar RBAC e marcas de escopo para TI distribuído](../fundamentals/scope-tags.md).
 
@@ -185,6 +185,8 @@ Ao criar perfis, considere as seguintes recomendações:
   A imagem a seguir mostra um exemplo de configuração que pode ser aplicada aos usuários e/ou aos dispositivos:
 
   ![Modelo de administrador do Intune que se aplica a usuário e dispositivos](./media/device-profile-create/setting-applies-to-user-and-device.png)
+
+- Toda vez que você criar uma política restritiva, comunique essa alteração aos usuários. Por exemplo, se você estiver alterando o requisito de senha de 4 caracteres para 6 caracteres, avise os usuários antes de atribuir a política.
 
 ## <a name="next-steps"></a>Próximas etapas
 

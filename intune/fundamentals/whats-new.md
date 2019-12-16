@@ -6,7 +6,7 @@ keywords: ''
 author: ErikjeMS
 ms.author: erikje
 manager: dougeby
-ms.date: 11/22/2019
+ms.date: 12/09/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.subservice: fundamentals
@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure; get-started
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 7ad5c26770537ce6a285989f8ca3804277616419
-ms.sourcegitcommit: 16a9109b4028589c17695d41271ca4fee8b1d697
+ms.openlocfilehash: 77cf4745262346ec2f8bfb5d4d7e67e1ee5c5e07
+ms.sourcegitcommit: edd06a494a241d198ca9b0d3030c92195976e0d3
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/26/2019
-ms.locfileid: "74540782"
+ms.lasthandoff: 12/11/2019
+ms.locfileid: "75000373"
 ---
 # <a name="whats-new-in-microsoft-intune"></a>Novidades do Microsoft Intune
 
@@ -54,12 +54,42 @@ Conheça as novidades de cada semana do Microsoft Intune. Você também pode enc
 -->  
 
 <!-- ########################## -->
+## <a name="week-of-december-9-2019"></a>Semana de 9 de dezembro de 2019
+
+#### <a name="migrating-to-microsoft-edge-for-managed-browsing-scenarios---5173762---"></a>Como fazer a migração para o Microsoft Edge em cenários de navegação gerenciada<!-- 5173762 -->
+
+À medida que chegamos mais perto da desativação do Intune Managed Browser, fizemos alterações nas políticas de proteção do aplicativo para simplificar as etapas necessárias para migrar os usuários para o Edge. Atualizamos as opções da configuração **Restringir a transferência de conteúdo da Web com outros aplicativos** da política de proteção do aplicativo para que ela seja uma das seguintes:
+
+- Qualquer aplicativo
+- Intune Managed Browser
+- Microsoft Edge
+- Navegador não gerenciado 
+
+Quando você selecionar **Microsoft Edge**, os usuários finais verão mensagens do acesso condicional notificando-os de que o Microsoft Edge é obrigatório para cenários de navegação gerenciada. Eles deverão baixar o Microsoft Edge e entrar nele com suas respectivas contas do AAD, caso ainda não tenham feito isso.  Isso será o equivalente a ter como destino seus aplicativos habilitados para MAM com a configuração do aplicativo `com.microsoft.intune.useEdge` definida como **Verdadeiro**. As políticas de proteção do aplicativo existentes que usavam a configuração **Navegadores gerenciados por política** agora terão o **Intune Managed Browser** selecionado, e você não verá nenhuma alteração no comportamento. Isso significa que os usuários verão mensagens para uso do Microsoft Edge se você definir a configuração do aplicativo **useEdge** como **Verdadeiro**. Incentivamos todos os clientes que utilizam cenários de navegação gerenciada a atualizar as políticas de proteção do aplicativo com a configuração **Restringir a transferência de conteúdo da Web com outros aplicativos** para garantir que os usuários estejam vendo as diretrizes apropriadas para fazer a transição para o Microsoft Edge, seja qual for o aplicativo do qual eles estão iniciando os links. 
+
+<!-- ########################## -->
+## <a name="week-of-december-2-2019"></a>Semana de 2 de dezembro de 2019
+
+#### <a name="new-microsoft-endpoint-configuration-manager-co-management-licensing--5027281--"></a>Novo licenciamento de cogerenciamento do Microsoft Endpoint Configuration Manager<!--5027281-->
+Uma nova licença já está disponível, que permite que os clientes do Configuration Manager com o Software Assurance obtenham o cogerenciamento do Intune para computadores Windows 10 sem precisar comprar uma licença adicional do Intune para o cogerenciamento. Os clientes não precisam mais atribuir licenças individuais do Intune/do EMS aos usuários finais para cogerenciar o Windows 10.
+- Os dispositivos gerenciados pelo Configuration Manager e registrados no cogerenciamento têm quase os mesmos direitos dos computadores gerenciados pelo MDM autônomos do Intune. No entanto, após a redefinição, eles não poderão ser provisionados novamente usando o Autopilot.
+- Os dispositivos Windows 10 registrados no Intune que usam outros meios exigem licenças integrais do Intune.
+- Os dispositivos em outras plataformas ainda exigem licenças integrais do Intune.
+
+Para obter mais informações, confira [Termos de licenciamento](https://www.microsoft.com/en-us/Licensing/product-licensing/products).
+
+
+<!-- ########################## -->
 ## <a name="week-of-november-18-2019-1911-service-release"></a>Semana de 18 de novembro de 2019 (versão do serviço 1911)
 
 <!-- vvvvvvvvvvvvvvvvvvvvvv -->
 ### <a name="app-management"></a>Gerenciamento de aplicativos
 
 #### <a name="smime-support-with-microsoft-outlook-for-ios---2669398-idready---"></a>Suporte para S/MIME com o Microsoft Outlook para iOS<!-- 2669398 idready -->
+
+   > [!NOTE]
+   > Esse recurso foi atrasado, mas será lançado em breve.
+
 O Intune dá suporte à entrega de certificados de autenticação e criptografia S/MIME que podem ser usados com o Outlook para iOS em dispositivos iOS. Para saber mais, confira [Configurar o S/MIME para o Outlook para iOS](~/apps/app-configuration-policies-outlook-smime.md).
 
 #### <a name="ui-update-when-selectively-wiping-app-data---4102028---"></a>Atualização da interface do usuário ao limpar seletivamente dados de aplicativos<!-- 4102028 -->
@@ -167,7 +197,7 @@ Agora, você pode copiar funções internas e personalizadas. Para saber mais, c
 Duas novas permissões, **Atribuir perfil** e **Sincronizar dispositivo**, foram adicionadas à função de administrador da escola > **Permissões** > **Programas de inscrição**. A permissão de perfil de sincronização permite que administradores de grupo sincronizem os dispositivos do Windows Autopilot. A permissão de atribuição de perfil permite excluir perfis de inscrição da Apple iniciados pelo usuário. Ela também permite que eles gerenciem atribuições de dispositivos do AutoPilot e atribuições de perfil de implantação do AutoPilot. Para obter uma lista de todas as permissões de administrador de escola/administrador de grupo, confira [Atribuir administradores de grupo](https://docs.microsoft.com/intune-education/group-admin-delegate). 
 
 <!-- vvvvvvvvvvvvvvvvvvvvvv -->
-### <a name="security"></a>Segurança
+### <a name="security"></a>Segurança 
 
 #### <a name="bitlocker-key-rotation---2564951----"></a>Rodízio de chaves do BitLocker<!-- 2564951  -->
 Você pode usar uma ação de dispositivo do Intune para [fazer o rodízio remoto de chaves de recuperação do BitLocker](../protect/encrypt-devices.md#rotate-bitlocker-recovery-keys) para dispositivos gerenciados que executam o Windows versão 1909 ou posterior. Para se qualificarem para o rodízio de chaves de recuperação, os dispositivos devem ser configurados para oferecer suporte ao rodízio de chaves de recuperação.  
@@ -232,7 +262,7 @@ Você pode exigir que um dispositivo seja reiniciado depois que um aplicativo Wi
 O Modo escuro está disponível para o Portal da Empresa no iOS. Os usuários podem baixar aplicativos da empresa, gerenciar seus dispositivos e obter suporte de TI no esquema de cores de sua escolha, com base nas configurações do dispositivo. O Portal da Empresa para iOS corresponderá automaticamente às configurações do dispositivo do usuário final para o modo escuro ou claro. Para obter mais informações, confira [Introdução ao modo escuro no Portal da Empresa do Microsoft Intune para iOS](https://techcommunity.microsoft.com/t5/Enterprise-Mobility-Security/Introducing-dark-mode-on-Microsoft-Intune-Company-Portal-for-iOS/ba-p/918453). Para obter mais informações sobre o Portal da Empresa do iOS, confira [Como configurar o aplicativo Portal da Empresa do Microsoft Intune](~/apps/company-portal-app.md).
 
 #### <a name="android-company-portal-enforced-minimum-app-version---2378776---"></a>O Portal da Empresa para Android impõem a versão mínima do aplicativo<!-- 2378776 -->
-Com a configuração **Versão mínima do Portal da Empresa** de uma política de proteção de aplicativo, você pode especificar uma versão mínima definida específica do Portal da Empresa que é imposta em um dispositivo de usuário final. Essa configuração de inicialização condicional permite que você use **Bloquear acesso**, **Apagar dados** ou **Avisar** como possíveis ações quando o valor não for atendido. Os formatos possíveis para esse valor seguem o padrão *[Major].[Minor]* , *[Major].[Minor].[Build]* ou *[Major].[Minor].[Build].[Revision]* .
+Com a configuração **Versão mínima do Portal da Empresa** de uma política de proteção de aplicativo, você pode especificar uma versão mínima definida específica do Portal da Empresa que é imposta em um dispositivo de usuário final. Essa configuração de inicialização condicional permite que você use **Bloquear acesso**, **Apagar dados** ou **Avisar** como possíveis ações quando o valor não for atendido. Os formatos possíveis para esse valor seguem o padrão *[Major].[Minor]*, *[Major].[Minor].[Build]* ou *[Major].[Minor].[Build].[Revision]*.
 
 A configuração **Versão mínima do Portal da Empresa**, se configurada, afetará todos os usuários finais que receberem a versão 5.0.4560.0 do Portal da Empresa e todas as versões futuras do Portal da Empresa. Essa configuração não terá nenhum efeito nos usuários que usam uma versão do Portal da Empresa mais antiga do que a versão na qual esse recurso é lançado. Os usuários finais que usam as atualizações automáticas do aplicativo nos dispositivos provavelmente não verão nenhuma caixa de diálogo desse recurso, considerando que eles provavelmente estarão na versão mais recente do Portal da Empresa. Essa configuração é apenas para Android, com proteção de aplicativo para dispositivos registrados e não registrados. Para mais informações, confira [Configurações de política de proteção do aplicativo Android – Inicialização condicional](~/apps/app-protection-policy-settings-android.md#conditional-launch).
 
@@ -306,7 +336,7 @@ Aplica-se a:
 #### <a name="toggle-to-only-show-enrollment-status-page-on-devices-provisioned-by-out-of-box-experience-oobe--3959566--"></a>Alterne para mostrar apenas a Página de Status do Registro em dispositivos provisionados pela OOBE (experiência de configuração inicial pelo usuário)<!--3959566-->
 Agora você pode optar por mostrar apenas a Página de Status do Registro em dispositivos provisionados pelo OOBE do AutoPilot.
 
-Para ver a nova alternância, escolha **Intune** > **Registro de dispositivo** > **Registro do Windows** > **Página de Status de Registro** > **Criar perfil** > **Configurações** > **Exibir somente a página para dispositivos provisionados pela OOBE (experiência de configuração inicial pelo usuário)** .
+Para ver a nova alternância, escolha **Intune** > **Registro de dispositivo** > **Registro do Windows** > **Página de Status de Registro** > **Criar perfil** > **Configurações** > **Exibir somente a página para dispositivos provisionados pela OOBE (experiência de configuração inicial pelo usuário)**.
 
 
 <!-- ########################## -->
@@ -789,10 +819,10 @@ Você pode criar perfis para restringir configurações em dispositivos com iOS 
 
 - Em **iOS** > **Restrições do dispositivo**, há algumas alterações:
 
-  - **Aplicativos internos** > **Buscar iPhone (somente supervisionado)** : nova configuração que bloqueia esse recurso, no recurso do aplicativo Buscar. 
-  - **Aplicativos internos** > **Buscar Amigos (somente supervisionado)** : nova configuração que bloqueia esse recurso, no recurso do aplicativo Buscar. 
-  - **Sem fio** > **Modificação do estado do Wi-Fi (somente supervisionado)** : nova configuração que impede os usuários de ativar ou desativar o Wi-Fi nos dispositivos.
-  - **Teclado e Dicionário** > **QuickPath (somente supervisionado)** : nova configuração que bloqueia o recurso QuickPath.
+  - **Aplicativos internos** > **Buscar iPhone (somente supervisionado)**: nova configuração que bloqueia esse recurso, no recurso do aplicativo Buscar. 
+  - **Aplicativos internos** > **Buscar Amigos (somente supervisionado)**: nova configuração que bloqueia esse recurso, no recurso do aplicativo Buscar. 
+  - **Sem fio** > **Modificação do estado do Wi-Fi (somente supervisionado)**: nova configuração que impede os usuários de ativar ou desativar o Wi-Fi nos dispositivos.
+  - **Teclado e Dicionário** > **QuickPath (somente supervisionado)**: nova configuração que bloqueia o recurso QuickPath.
   - **Nuvem e armazenamento**: a **Continuação da atividade** é renomeada para **Handoff**.
 
   Para ver as configurações atuais, vá para [Configurações do dispositivo iOS para permitir ou restringir recursos usando o Intune](../configuration/device-restrictions-ios.md).
@@ -1082,7 +1112,7 @@ Aplica-se a: iOS
 Quando você cria um perfil de restrições de dispositivo para dispositivos iOS, pode usar uma impressão digital para uma senha. Nessa atualização, as configurações de senha de impressão digital também permitem reconhecimento facial (**Configuração do dispositivo** > **Perfis** > **Criar perfil** > **iOS** para a plataforma > **Restrições de dispositivo** tipo de perfil > **Senha**). Como resultado, as configurações a seguir mudaram:
 
 - **Desbloqueio por impressão digital** agora é **Desbloqueio por Touch ID e Face ID**.
-- **Modificação de impressão digital (somente supervisionada)** agora é **Modificação de Touch ID e Face ID (somente supervisionada)** .
+- **Modificação de impressão digital (somente supervisionada)** agora é **Modificação de Touch ID e Face ID (somente supervisionada)**.
 
 O Face ID está disponível no iOS 11.0 e posteriores. Para ver as configurações, vá para [Configurações do dispositivo iOS para permitir ou restringir recursos usando o Intune](../configuration/device-restrictions-ios.md#password).
 
@@ -1215,7 +1245,7 @@ A execução de scripts do PowerShell pode ser configurada com privilégios de a
 #### <a name="android-enterprise-app-management---4459905---"></a>Gerenciamento de aplicativos do Android Enterprise<!-- 4459905 -->
 Para facilitar a configuração e o uso do gerenciamento de Android Enterprise pelos administradores de TI, o Intune adicionará automaticamente quatro aplicativos comuns relacionados ao Android Enterprise ao console do administrador do Intune. Os quatro aplicativos do Android Enterprise são os seguintes apps:
 
-- **[Microsoft Intune](https://play.google.com/store/apps/details?id=com.microsoft.intune)**  – usado para cenários totalmente gerenciados pelo Android Enterprise.
+- **[Microsoft Intune](https://play.google.com/store/apps/details?id=com.microsoft.intune) ** – usado para cenários totalmente gerenciados pelo Android Enterprise.
 - **[Microsoft Authenticator](https://play.google.com/store/apps/details?id=com.azure.authenticator)** – ajuda a entrar em suas contas se usar a verificação de dois fatores.
 - **[Portal da Empresa do Intune](https://play.google.com/store/apps/details?id=com.microsoft.windowsintune.companyportal)** – usado para cenários de perfil de trabalho das Políticas de Proteção do Aplicativo (APP) e do Android Enterprise.
 - [Tela inicial gerenciada](https://play.google.com/store/apps/details?id=com.microsoft.launcher.enterprise) – usado para cenários dedicados/quiosques do Android Enterprise.

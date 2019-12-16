@@ -17,12 +17,12 @@ ROBOTS: ''
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 50dbbb19cca9b5c46f0ba8b9d4e16c499534b536
-ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
+ms.openlocfilehash: db04b93deffd2476a97b952fd1c6942fa79e1f05
+ms.sourcegitcommit: e75718ee6cf93c0e6c915f2776b785fe8db9f7e0
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/16/2019
-ms.locfileid: "72503116"
+ms.lasthandoff: 12/10/2019
+ms.locfileid: "74955381"
 ---
 # <a name="require-multi-factor-authentication-for-intune-device-enrollments"></a>Exigir autenticação multifator para registros de dispositivo do Intune
 
@@ -50,18 +50,17 @@ Para exigir MFA quando um dispositivo é registrado, siga estas etapas:
 >[!Important]
 >Não configure **Regras de acesso baseadas em dispositivo** para o registro no Microsoft Intune.
 
-1. Entre no [Portal do Microsoft Azure](https://portal.azure.com) com suas credenciais.
-2. No portal, vá até **Intune** e escolha **Acesso Condicional**. O nó Acesso Condicional acessado no *Intune* é o mesmo nó que o acessado no *Azure AD*.
-4. Escolha **Nova política**.
-5. Em **Nova** política, digite um nome descritivo para a política.
-6. Na seção **Atribuições**, escolha **Usuários e grupos**. 
-7. Em **Usuários e grupos**, escolha **Selecionar usuários ou grupos** e marque **Usuários e grupos**. Em seguida, selecione os usuários e/ou grupos que receberão essa política e **Concluir**.
-8. Na seção **Atribuições**, escolha **Aplicativos em nuvem**.
-9. Na guia **Incluir** de **Aplicativos em nuvem**, escolha **Selecionar aplicativos**, escolha **Selecionar** > **Registro no Microsoft Intune** e, em seguida, **Concluído**. Ao escolher o **Registro no Microsoft Intune**, a MFA de acesso condicional é aplicada apenas ao registro do dispositivo (prompt único da MFA).
-10. Na seção **Atribuições**, para **Condições**, você não precisa configurar as definições de MFA.
-11. Na seção **Controles de acesso**, escolha **Conceder**.
-12. Em **Conceder**, escolha **Conceder acesso** e, em seguida, selecione **Exigir autenticação multifator**. Não selecione **Exigir que o dispositivo seja marcado como compatível** porque os dispositivos não podem ser avaliados quanto à conformidade enquanto não são registrados. Em seguida, escolha **Selecionar**.
-13. Em **Nova política**, selecione **Habilitar política** > **Ativado** e, em seguida, escolha **Criar**.
+1. Entre no [Centro de Administração do Gerenciador de Ponto de Extremidade da Microsoft](https://go.microsoft.com/fwlink/?linkid=2109431), escolha **Dispositivos** > **Acesso Condicional**. O nó Acesso Condicional acessado no *Intune* é o mesmo nó que o acessado no *Azure AD*.
+2. Escolha **Nova política**.
+3. Em **Nova** política, digite um nome descritivo para a política.
+4. Na seção **Atribuições**, escolha **Usuários e grupos**. 
+5. Em **Usuários e grupos**, escolha **Selecionar usuários ou grupos** e marque **Usuários e grupos**. Em seguida, selecione os usuários e/ou grupos que receberão essa política e **Concluir**.
+6. Na seção **Atribuições**, escolha **Aplicativos em nuvem**.
+7. Na guia **Incluir** de **Aplicativos em nuvem**, escolha **Selecionar aplicativos**, escolha **Selecionar** > **Registro no Microsoft Intune** e, em seguida, **Concluído**. Ao escolher o **Registro no Microsoft Intune**, a MFA de acesso condicional é aplicada apenas ao registro do dispositivo (prompt único da MFA).
+8. Na seção **Atribuições**, para **Condições**, você não precisa configurar as definições de MFA.
+9. Na seção **Controles de acesso**, escolha **Conceder**.
+10. Em **Conceder**, escolha **Conceder acesso** e, em seguida, selecione **Exigir autenticação multifator**. Não selecione **Exigir que o dispositivo seja marcado como compatível** porque os dispositivos não podem ser avaliados quanto à conformidade enquanto não são registrados. Em seguida, escolha **Selecionar**.
+11. Em **Nova política**, selecione **Habilitar política** > **Ativado** e, em seguida, escolha **Criar**.
 
 
 

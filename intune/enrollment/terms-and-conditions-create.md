@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 0718fae09228b9359b073901f3a344a09a6176e7
-ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
+ms.openlocfilehash: 3fb5818609763753878fec7a84fd8c19eb154f88
+ms.sourcegitcommit: e75718ee6cf93c0e6c915f2776b785fe8db9f7e0
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/16/2019
-ms.locfileid: "72509257"
+ms.lasthandoff: 12/10/2019
+ms.locfileid: "74955432"
 ---
 # <a name="terms-and-conditions-for-user-access"></a>Termos e condições para acesso do usuário
 
@@ -46,31 +46,30 @@ Para saber qual método é melhor para você, confira a [postagem no blog Escolh
 ## <a name="create-terms-and-conditions"></a>Criar termos e condições
 Conclua estas etapas para criar termos e condições. O nome de exibição e a descrição são para uso administrativo enquanto as propriedades dos termos são exibidas para os usuários no Portal da Empresa.
 
-1. Conecte-se ao [Intune](https://go.microsoft.com/fwlink/?linkid=2090973).
-2. No painel **Intune**, escolha **Registro do dispositivo** > **Termos e condições**.
-3. Escolha **Criar**.
-4. Na página **Básico**, especifique as seguintes informações:
+1. Entre no [Centro de Administração do Gerenciador de Ponto de Extremidade da Microsoft](https://go.microsoft.com/fwlink/?linkid=2109431), escolha **Administração de locatário** > **Termos e Condições**.
+2. Escolha **Criar**.
+3. Na página **Básico**, especifique as seguintes informações:
 
    - **Nome**: o nome dos termos no Portal do Azure. Os usuários não veem esse nome.
    - **Descrição**: detalhes opcionais que ajudam a identificar esse conjunto de termos no Portal do Azure.
 
     ![Captura de tela do portal do Azure mostrando a página Básico para termos e condições](./media/terms-and-conditions-create/terms-basics-page.png)
 
-5. Escolha **Avançar** para ir para a página **Termos** e forneça as seguintes informações:
+4. Escolha **Avançar** para ir para a página **Termos** e forneça as seguintes informações:
 
    - **Título**: o nome dos termos que os usuários veem no Portal da Empresa acima de **Resumo**.
    - **Termos e condições**: os termos e condições que os usuários veem e devem aceitar ou rejeitar.
    - **Resumo dos termos**: texto que explica a implicação de os usuários aceitarem os termos. Por exemplo, "Ao registrar seu dispositivo, você concorda com os termos de uso definidos pela Contoso". Leia os termos com atenção antes de continuar".
 
-6. Escolha **Avançar** para ir para a página **Marcas de escopo**.
+5. Escolha **Avançar** para ir para a página **Marcas de escopo**.
 
-7. Escolha **Selecionar marcas de escopo**, selecione as marcas de escopo que você deseja atribuir a esses termos e condições e, em seguida, escolha **Selecionar**. 
+6. Escolha **Selecionar marcas de escopo**, selecione as marcas de escopo que você deseja atribuir a esses termos e condições e, em seguida, escolha **Selecionar**. 
 
-8. Escolha **Avançar** para ir para a página **Atribuições** e escolha uma das seguintes opções para **Atribuir a**:
+7. Escolha **Avançar** para ir para a página **Atribuições** e escolha uma das seguintes opções para **Atribuir a**:
     - **Todos os usuários**: escolha esta opção para atribuir esses termos e condições a todos os usuários.
     - **Selecionar grupos**: escolha esta opção para atribuir esses termos e condições a todos os grupos que você identificar por meio da opção **Selecionar grupos para incluir**.
 
-9. Escolha **Avançar** > **Criar**.
+8. Escolha **Avançar** > **Criar**.
 
 ## <a name="see-how-terms-are-displayed-to-your-users"></a>Ver como os termos são exibidos para os usuários
 O exemplo a seguir mostra o **Título** e o **Resumo de Termos** no console de administrador e no Portal da Empresa.
@@ -84,8 +83,7 @@ O exemplo a seguir mostra os termos e condições no console de administrador e 
 
 ## <a name="monitor-terms-and-conditions"></a>Monitorar os termos e condições
 
-1. Conecte-se ao [Intune](https://go.microsoft.com/fwlink/?linkid=2090973). 
-1. No painel Intune, escolha **Registro do dispositivo** > **Termos e condições**.
+1. Entre no [Centro de Administração do Gerenciador de Ponto de Extremidade da Microsoft](https://go.microsoft.com/fwlink/?linkid=2109431), escolha **Administração de locatário** > **Termos e Condições**.
 2. Na lista de termos e condições, escolha os termos para os quais você deseja exibir a aceitação > **Relatório de Aceitação**.
 
 ## <a name="work-with-multiple-versions-of-terms-and-conditions"></a>Trabalhar com várias versões dos termos e condições
@@ -95,12 +93,10 @@ Você pode editar seus termos e condições e gerenciar suas versões. Cada vez 
 
 Se você estiver corrigindo erros de digitação ou alterando a formatação, por exemplo, mantenha o número de versão atual.
 
-1. Conecte-se ao [Intune](https://go.microsoft.com/fwlink/?linkid=2090973).
+1. Entre no [Centro de Administração do Gerenciador de Ponto de Extremidade da Microsoft](https://go.microsoft.com/fwlink/?linkid=2109431), escolha **Administração de locatário** > **Termos e Condições** > escolha os termos e as condições que deseja modificar > **Propriedades**.
 
-2. No painel do Intune, escolha **Registro de dispositivo** > **Termos e condições** > escolha os termos e condições que você deseja modificar > **Propriedades**.
+2. No painel **Propriedades**, escolha **Termos e Condições** e, em seguida, modifique o **Título**, o **Resumo de Termos** e os **Termos e Condições** conforme necessário. Se as alterações tornarem necessário que os usuários aceitem outra vez os novos termos, escolha **Exigir que os usuários aceitem novamente e aumentar o número de versão para**
 
-4. No painel **Propriedades**, escolha **Termos e Condições** e, em seguida, modifique o **Título**, o **Resumo de Termos** e os **Termos e Condições** conforme necessário. Se as alterações tornarem necessário que os usuários aceitem outra vez os novos termos, escolha **Exigir que os usuários aceitem novamente e aumentar o número de versão para**
-
-4. Escolha **OK** > **Salvar**.
+3. Escolha **OK** > **Salvar**.
 
 Os usuários precisam aceitar os termos e condições atualizados apenas uma vez. Usuários com vários dispositivos não precisam aceitar os termos e condições em todos os dispositivos.

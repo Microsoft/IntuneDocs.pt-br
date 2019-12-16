@@ -19,12 +19,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic, seoapril2019
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 190322392909a14681a4b68a79d9a3537360206b
-ms.sourcegitcommit: 28622c5455adfbce25a404de4d0437fa2b5370be
+ms.openlocfilehash: 79e1ba2441baa6773632c27f204bef01b015b990
+ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/07/2019
-ms.locfileid: "73713499"
+ms.lasthandoff: 12/05/2019
+ms.locfileid: "74832736"
 ---
 # <a name="troubleshoot-device-enrollment-in-microsoft-intune"></a>Solução de problemas de registro de dispositivo no Microsoft Intune
 
@@ -64,7 +64,7 @@ Esses problemas podem ocorrer em todas as plataformas de dispositivo.
 
 Verifique se o usuário não está atribuído a mais dispositivos que o máximo permitido seguindo estas etapas:
 
-1. No [Centro de Administração do Gerenciador de Ponto de Extremidade da Microsoft](https://go.microsoft.com/fwlink/?linkid=2109431), selecione **Registro de dispositivos** > **Restrições de registro** > **Restrições de limite de dispositivo**. Observe o valor da coluna **Limite de dispositivo**.
+1. No [Centro de Administração do Gerenciador de Ponto de Extremidade da Microsoft](https://go.microsoft.com/fwlink/?linkid=2109431), escolha **Dispositivos** > **Restrições de registro** > **Restrições de limite de dispositivo**. Observe o valor da coluna **Limite de dispositivo**.
 
 2. No [Centro de Administração do Gerenciador de Ponto de Extremidade da Microsoft](https://go.microsoft.com/fwlink/?linkid=2109431), escolha **Usuários** > **Todos os usuários** > selecione o usuário > **Dispositivos**. Observe o número total de dispositivos.
 
@@ -374,7 +374,7 @@ Este problema poderá acontecer se:
 4. Instrua o usuário a reiniciar o processo de registro.
 
 #### <a name="determine-if-theres-something-wrong-with-the-vpp-token"></a>Determinar se há algo errado com o token de VPP
-1. Acesse **Intune** > **Registro de dispositivo** > **Registro da Apple** > **Tokens do programa de registro** > nome do token > **Perfis** > nome do perfil > **Gerenciar** > **Propriedades**.
+1. No [Centro de Administração do Gerenciador de Ponto de Extremidade da Microsoft](https://go.microsoft.com/fwlink/?linkid=2109431), escolha **Dispositivos** > **iOS** > **Registro do iOS** > **Tokens do programa de registro** > nome do token > **Perfis** > nome do perfil > **Gerenciar** > **Propriedades**.
 2. Examine as propriedades para verificar se são exibidos erros semelhantes ao seguinte:
     - Este token expirou.
     - Este token está sem licenças do Portal da Empresa.
@@ -384,13 +384,13 @@ Este problema poderá acontecer se:
 3. Corrija os problemas do token.
 
 #### <a name="identify-which-devices-are-blocked-by-the-vpp-token"></a>Identifique quais dispositivos estão bloqueados pelo token de VPP
-1. Acesse **Intune** > **Registro de dispositivo** > **Registro da Apple** > **Tokens do programa de registro** > nome do token > **Dispositivos**.
+1. No [Centro de Administração do Gerenciador de Ponto de Extremidade da Microsoft](https://go.microsoft.com/fwlink/?linkid=2109431), escolha **Dispositivos** > **iOS**k > **Registro do iOS** > **Tokens do programa de registro** > nome do token > **Dispositivos**.
 2. Filtre a coluna **Status do perfil** por **Bloqueado**.
 3. Anote os números de série de todos os dispositivos que estão **Bloqueados**.
 
 #### <a name="remotely-wipe-the-blocked-devices"></a>Apagar remotamente os dispositivos bloqueados
 Depois de corrigir os problemas do token de VPP, será preciso apagar os dispositivos que estão bloqueados.
-1. Acesse **Intune** > **Dispositivos** > **Todos os dispositivos** > **Colunas** > **Número de série** > **Aplicar**. 
+1. No [Centro de Administração do Gerenciador de Ponto de Extremidade da Microsoft](https://go.microsoft.com/fwlink/?linkid=2109431), escolha **Dispositivos** > **Todos os dispositivos** > **Colunas** > **Número de série** > **Aplicar**. 
 2. Para cada dispositivo bloqueado, selecione-o na lista **Todos os dispositivos** e escolha **Apagar** > **Sim**.
 
 #### <a name="tell-the-users-to-restart-the-enrollment-process"></a>Instrua os usuários a reiniciarem o processo de registro
@@ -414,8 +414,8 @@ Depois que você tiver apagado os dispositivos bloqueados, instrua os usuários 
 - Se a organização tiver ativado restrições de registro que bloqueiam dispositivos macOS pessoais, você precisará [adicionar manualmente o número de série do dispositivo](corporate-identifiers-add.md#manually-enter-corporate-identifiers) ao Intune.  
 - Se o dispositivo ainda estiver atribuído a outro usuário no Intune, seu proprietário antigo não usou o aplicativo de Portal da Empresa para removê-lo ou redefini-lo. Para limpar o registro de dispositivo obsoleto do Intune:  
 
-    1. Acesse o [Intune no portal do Azure](https://portal.manage.microsoft.com) e entre com suas credenciais administrativas.
-    2. Acesse Intune > **Dispositivos** > **Todos os dispositivos**.  
+    1. No [Centro de Administração do Gerenciador de Ponto de Extremidade da Microsoft](https://go.microsoft.com/fwlink/?linkid=2109431), entre com as suas credenciais administrativas.
+    2. Escolha **Dispositivos** > **Todos os dispositivos**.  
     3. Localize o dispositivo com o problema de registro. Pesquise por nome do dispositivo ou endereço MAC/de hardware para restringir os resultados.
     4. Selecione o dispositivo > **Excluir**. Exclua todas as outras entradas associadas ao dispositivo.  
 

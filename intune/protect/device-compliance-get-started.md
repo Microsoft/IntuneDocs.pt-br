@@ -1,11 +1,11 @@
 ---
 title: Políticas de conformidade do dispositivo no Microsoft Intune – Azure | Microsoft Docs
-description: Introdução ao uso de políticas de conformidade do dispositivo, visão geral de status e níveis de gravidade, como usar o status "Em período de carência", como trabalhar com Acesso Condicional, como lidar com dispositivos sem uma política atribuída e as diferenças de conformidade entre o portal do Azure e o portal clássico do Microsoft Intune
+description: Introdução ao uso de políticas de conformidade do dispositivo, visão geral do status e dos níveis de gravidade, uso do status InGracePeriod, trabalho com o Acesso Condicional e tratamento de dispositivos sem uma política atribuída.
 keywords: ''
 author: brenduns
 ms.author: brenduns
 manager: dougeby
-ms.date: 10/21/2019
+ms.date: 12/05/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.subservice: protect
@@ -16,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 967bf9937c71ff3ca7277f43fd969291eb5af6de
-ms.sourcegitcommit: c2e62f1ebdf75599c8e544287123c602f0f15f2b
+ms.openlocfilehash: 83b8c48d2bb594ca8b9c527d78922332e582363f
+ms.sourcegitcommit: 66e284fe092e19c1da72b4b770e45bf25ac7910c
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72749180"
+ms.lasthandoff: 12/05/2019
+ms.locfileid: "74860288"
 ---
 # <a name="set-rules-on-devices-to-allow-access-to-resources-in-your-organization-using-intune"></a>Definir regras em dispositivos para permitir o acesso aos recursos em sua organização usando o Intune
 
@@ -130,21 +130,6 @@ A tabela a seguir descreve como as configurações em não conformidade são ger
 
 - Quando uma política de Acesso Condicional se aplica ao usuário, o dispositivo é bloqueado.
 - O aplicativo Portal da Empresa notifica o usuário sobre qualquer problema de conformidade.
-
-## <a name="azure-classic-portal-vs-azure-portal"></a>Portal Clássico do Azure vs. Portal do Azure
-
-A principal diferença ao usar políticas de conformidade do dispositivo no Portal do Azure:
-
-- No Portal do Azure, as políticas de conformidade são criadas separadamente para cada plataforma compatível
-- No Portal Clássico do Azure, uma política de conformidade do dispositivo é comum a todas as plataformas compatíveis
-
-<!--- - In the Azure portal, you have the ability to specify actions and notifications that are initiated when a device is determined to be noncompliant. This ability does not exist in the Intune admin console.
-
-- In the Azure portal, you can set a grace period to allow time for the end-user to get their device back to compliance status before they completely lose the ability to get company data on their device. This is not available in the Intune admin console.--->
-
-Políticas de conformidade do dispositivo criadas no [portal clássico](https://manage.microsoft.com) não aparecem no [Portal do Azure](https://portal.azure.com). No entanto, elas ainda serão destinadas aos usuários e poderão ser gerenciadas usando o portal clássico.
-
-Para usar os recursos relacionados à conformidade do dispositivo no Portal do Azure, você deve criar novas políticas de conformidade de dispositivo no Portal do Azure. Se você atribuir uma política de conformidade do dispositivo no Portal do Azure a um usuário que já tenha uma política de conformidade do dispositivo atribuída pelo portal clássico, as políticas de conformidade do dispositivo do Portal do Azure terão precedência em relação às criadas no portal clássico.
 
 ## <a name="next-steps"></a>Próximas etapas
 

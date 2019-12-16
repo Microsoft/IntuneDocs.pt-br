@@ -16,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 5a3081ece10bb25c6381f4a8f891152433bc9661
-ms.sourcegitcommit: 73b362173929f59e9df57e54e76d19834f155433
+ms.openlocfilehash: 94c38aaf28440511720280a3c5a1ebda5b9f2ab1
+ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/27/2019
-ms.locfileid: "74564391"
+ms.lasthandoff: 12/05/2019
+ms.locfileid: "74819783"
 ---
 # <a name="see-device-details-in-intune"></a>Consultar detalhes do dispositivo no Intune
 
@@ -77,7 +77,7 @@ Dependendo da operadora usada pelos dispositivos, nem todos os detalhes podem se
 |MEID|O identificador de equipamento móvel do dispositivo.|Windows, iOS, Android|
 |Fabricante|O fabricante do dispositivo.|Windows, iOS, Android|
 |Modelo|O modelo do dispositivo.|Windows, iOS, Android|
-|Número do telefone|O número do telefone atribuído ao dispositivo.|Windows, iOS, Android|
+|Número do telefone|O número do telefone atribuído ao dispositivo.|Windows, iOS, Android*|
 |Operadora da assinatura|A operadora sem fio do dispositivo.|Windows, iOS, Android|
 |Tecnologia celular|O sistema de rádio usado pelo dispositivo.|Windows, iOS, Android|
 |MAC Wi-Fi|O endereço MAC (Controle de Acesso à Mídia) do dispositivo.|Windows, iOS, Android|
@@ -93,7 +93,7 @@ Dependendo da operadora usada pelos dispositivos, nem todos os detalhes podem se
 |Supervisionado|Se **Sim**, os administradores têm controle aprimorado sobre o dispositivo.|Windows, iOS, Android|
 |Criptografado|Se **Sim**, os dados armazenados no dispositivo estão criptografados.|Windows, iOS, Android|
 
-
+\* Não disponível no Android com o gerenciador de políticas do Google, como dispositivos totalmente gerenciados e dedicados
 
 ## <a name="next-steps"></a>Próximas etapas
 Veja o que mais você pode fazer para [gerenciar seus dispositivos](device-management.md) com o Intune.

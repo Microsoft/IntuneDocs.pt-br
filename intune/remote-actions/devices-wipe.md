@@ -16,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: ded91d72321257adc30d0321b5d01e74fa1d51a6
-ms.sourcegitcommit: 28622c5455adfbce25a404de4d0437fa2b5370be
+ms.openlocfilehash: 2d9fbbbb80cf25861b2e0afbf3d01cfca3ece5fd
+ms.sourcegitcommit: df8e2c052fafb2d5d4e9b4fcd831ae0ecf7f8d16
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/07/2019
-ms.locfileid: "73712196"
+ms.lasthandoff: 12/10/2019
+ms.locfileid: "74991770"
 ---
 # <a name="remove-devices-by-using-wipe-retire-or-manually-unenrolling-the-device"></a>Remova dispositivos por meio de apagamento, desativação ou cancelando o registro do dispositivo manualmente
 
@@ -47,6 +47,8 @@ A ação **Apagar** restaura um dispositivo para as configurações padrão de f
 
 A opção **Reter estado de registro e conta do usuário** está disponível apenas para o Windows 10 versão 1709 ou posterior.
 
+A opção **Executar apagamento protegido** garante que a ação de apagamento não possa ser contornada com o desligamento do dispositivo. Um apagamento protegido continuará tentando redefinir o dispositivo até que seja bem-sucedido. Em algumas configurações, essa ação poderá deixar o dispositivo sem a capacidade de reinicialização.
+
 As políticas de MDM serão reaplicadas na próxima vez que o dispositivo se conectar ao Intune.
 
 Um apagamento é útil para redefinir um dispositivo antes de fornecê-lo a um novo usuário ou quando o dispositivo é perdido ou roubado. Tenha cuidado ao selecionar o **apagamento**. Os dados no dispositivo não podem ser recuperados.
@@ -57,7 +59,7 @@ Um apagamento é útil para redefinir um dispositivo antes de fornecê-lo a um n
 3. Selecione **Dispositivos** > **Todos os dispositivos**.
 4. Selecione o nome do dispositivo que você deseja apagar.
 5. No painel que mostra o nome do dispositivo, selecione **Apagar**.
-6. Para o Windows 10 versão 1709 ou posterior, você também tem a opção **Reter estado de registro e conta do usuário**. 
+6. Para o Windows 10 versão 1709 ou posterior, você também tem a opção **Apagar dispositivo, mas manter o estado de registro e a conta de usuário associada**. 
     
     |Retido durante um apagamento |Não mantido|
     | -------------|------------|

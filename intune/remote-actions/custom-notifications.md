@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: a8393bbc012861199bd99d97a62ab3e659c15d15
-ms.sourcegitcommit: 28622c5455adfbce25a404de4d0437fa2b5370be
+ms.openlocfilehash: 443e1e2fff2a0c4641d3446bf72e455cc92ce784
+ms.sourcegitcommit: ec69e7ccc6e6183862a48c1b03ca6a3bf573f354
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/07/2019
-ms.locfileid: "73713236"
+ms.lasthandoff: 12/07/2019
+ms.locfileid: "74907280"
 ---
 # <a name="send-custom-notifications-in-intune"></a>Enviar notificações personalizadas no Intune  
 
@@ -69,7 +69,7 @@ As mensagens de notificação personalizadas incluem um título curto e um corpo
 
 ## <a name="send-a-custom-notification-to-groups"></a>Enviar uma notificação personalizada para grupos  
 
-1. Entre no [Centro de administração do Gerenciador de Ponto de Extremidade da Microsoft](https://go.microsoft.com/fwlink/?linkid=2109431) com uma conta que tenha permissões para criar e enviar notificações e acesse **Dispositivos** > **Enviar notificações personalizadas**.  
+1. Entre no [Centro de Administração do Gerenciador de Ponto de Extremidade da Microsoft](https://go.microsoft.com/fwlink/?linkid=2109431) com uma conta que tenha permissões para criar e enviar notificações e acesse **Administração de locatário** > **Notificações personalizadas**.  
 
 2. Na guia Informações Básicas, especifique as informações a seguir e, em seguida, selecione **Avançar** para continuar.  
    - **Título** – especifique um título para essa notificação. Os títulos são limitados a 50 caracteres.  
@@ -93,7 +93,7 @@ O Intune não acompanha as notificações personalizadas que você envia, e os d
 
 2. Selecione o dispositivo para o qual você deseja enviar uma notificação.  
 
-3. Na página **Visão Geral** dos dispositivos, selecione a opção **…Mais** no canto superior esquerdo da página.  
+3. Na página **Visão Geral** dos dispositivos, selecione a opção **…** (reticências) no canto superior direito da página.  
 
 4. Selecione a ação do dispositivo **Enviar uma Notificação Personalizada** para abrir o painel *Enviar uma Notificação Personalizada*, onde você especifica os seguintes detalhes da mensagem:  
 

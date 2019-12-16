@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 8ab720ffee3f468d3700558dfbde460ee8f712ea
-ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
+ms.openlocfilehash: 8ee8bc3cdee9f61a901854e08000e9e2cbbb2864
+ms.sourcegitcommit: e75718ee6cf93c0e6c915f2776b785fe8db9f7e0
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/16/2019
-ms.locfileid: "72505486"
+ms.lasthandoff: 12/10/2019
+ms.locfileid: "74955364"
 ---
 # <a name="categorize-devices-into-groups"></a>Categorizar os dispositivos em grupos
 
@@ -45,11 +45,10 @@ Você pode criar quaisquer categorias de dispositivo que desejar. Por exemplo:
 ## <a name="how-to-configure-device-categories"></a>Como definir categorias de dispositivo
 
 ### <a name="step-1-create-device-categories-on-the-intune-blade-of-the-azure-portal"></a>Etapa 1: criar categorias de dispositivo na folha do Intune no portal do Azure
-1. No [Intune no portal do Azure](https://aka.ms/intuneportal), escolha **Registro de dispositivo**.
-2. Na folha **Registro de dispositivo**, escolha **Categorias de dispositivo**.
-3. Na página **Categorias de dispositivo**, escolha **Criar** para adicionar uma nova categoria.
-4. Na folha **Criar categoria de dispositivo**, insira um **Nome** para a nova categoria e uma **Descrição** opcional.
-5. Quando terminar, selecione **Criar**. Você pode ver a nova categoria na lista de categorias.
+1. Entre no [Centro de Administração do Gerenciador de Ponto de Extremidade da Microsoft](https://go.microsoft.com/fwlink/?linkid=2109431), escolha **Dispositivos** > **Categorias de dispositivos**.
+2. Na página **Categorias de dispositivo**, escolha **Criar** para adicionar uma nova categoria.
+3. Na folha **Criar categoria de dispositivo**, insira um **Nome** para a nova categoria e uma **Descrição** opcional.
+4. Quando terminar, selecione **Criar**. Você pode ver a nova categoria na lista de categorias.
 
 Você usará o nome da categoria do dispositivo ao criar grupos de segurança do Azure AD (Azure Active Directory) na etapa 2.
 
@@ -64,20 +63,16 @@ Após configurar os grupos de dispositivos e quando os usuários registrarem seu
 
 ### <a name="view-the-categories-of-devices-that-you-manage"></a>Exibir as categorias dos dispositivos que você gerencia
 
-1. No [Intune no portal do Azure](https://aka.ms/intuneportal), escolha **Dispositivos**.
+1. Entre no [Centro de Administração do Gerenciador de Ponto de Extremidade da Microsoft](https://go.microsoft.com/fwlink/?linkid=2109431), escolha **Dispositivos** > **Todos os dispositivos**.
 
-2. Em **Gerenciar**, selecione **Todos os dispositivos**.
+2. Na lista de dispositivos, examine a coluna **Categoria de dispositivo**.
 
-3. Na lista de dispositivos, examine a coluna **Categoria de dispositivo**.
-
-Se a coluna **Categoria de dispositivo** não for mostrada, selecione **Colunas**. Escolha **Categoria de dispositivo** na lista e, em seguida, selecione **Aplicar**.
+Se a coluna **Categoria de dispositivo** não for exibida, selecione **Colunas** > **Categoria** > **Aplicar**.
 
 ### <a name="change-the-category-of-a-device"></a>Alterar a categoria de um dispositivo
 
-1. No [Intune no portal do Azure](https://aka.ms/intuneportal), escolha **Dispositivos**.
-2. Na folha **Dispositivos**, na seção **Gerenciar**, escolha **Todos os dispositivos**.
-3. Na lista de dispositivos, escolha o dispositivo que você deseja. Em seguida, na folha de propriedades do dispositivo, em **Gerenciar**, escolha **Propriedades**.
-4. Na próxima folha, você pode alterar a **Categoria de dispositivo** do dispositivo selecionado para qualquer um dos nomes das categorias que você configurou anteriormente.
+1. Entre no [Centro de Administração do Gerenciador de Ponto de Extremidade da Microsoft](https://go.microsoft.com/fwlink/?linkid=2109431), escolha **Dispositivos** > **Todos os dispositivos** > escolha o dispositivo desejado > **Propriedades**.
+2. Na próxima folha, você pode alterar a **Categoria de dispositivo** do dispositivo selecionado para qualquer um dos nomes das categorias que você configurou anteriormente.
 
 ## <a name="after-you-configure-device-groups"></a>Depois de configurar os grupos de dispositivos
 
