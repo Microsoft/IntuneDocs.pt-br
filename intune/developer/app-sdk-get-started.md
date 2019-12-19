@@ -82,11 +82,11 @@ Convém criar uma conta do GitHub que você possa usar para bifurcar e efetuar p
 
 Você precisará de um dos seguintes guias do desenvolvedor para ajudá-lo a integrar o SDK do Aplicativo do Intune em seu aplicativo:
 
-* **[Guia do Desenvolvedor do SDK do Aplicativo do Intune para iOS](app-sdk-ios.md)** : esse documento fornece um passo a passo para a habilitação do aplicativo iOS nativo com o SDK do Aplicativo do Intune.
+* **[Guia do Desenvolvedor do SDK do Aplicativo do Intune para iOS](app-sdk-ios.md)**: esse documento fornece um passo a passo para a habilitação do aplicativo iOS nativo com o SDK do Aplicativo do Intune.
 
-* **[Guia do Desenvolvedor do SDK do Aplicativo do Intune para Android](app-sdk-android.md)** : esse documento fornece um passo a passo para a habilitação do aplicativo Android nativo com o SDK do Aplicativo do Intune.
+* **[Guia do Desenvolvedor do SDK do Aplicativo do Intune para Android](app-sdk-android.md)**: esse documento fornece um passo a passo para a habilitação do aplicativo Android nativo com o SDK do Aplicativo do Intune.
 
-* **[Guia de Associações do Xamarin de SDK do Aplicativo do Intune](app-sdk-xamarin.md)** : esse documento ajudará você a criar aplicativos iOS e Android usando o Xamarin para as políticas de Proteção de Aplicativo do Intune.
+* **[Guia de Associações do Xamarin de SDK do Aplicativo do Intune](app-sdk-xamarin.md)**: esse documento ajudará você a criar aplicativos iOS e Android usando o Xamarin para as políticas de Proteção de Aplicativo do Intune.
 
 
 
@@ -179,7 +179,7 @@ Depois que você registrar seu aplicativo no locatário do Azure e ele estiver a
 3. Clique em **+ Adicionar uma permissão**.
 4. Clique em **APIs que minha organização usa**. 
 5. Na caixa de pesquisa, insira **Gerenciamento de Aplicativo Móvel da Microsoft**.
-6. Em **Permissões Delegadas**, marque a caixa de seleção **DeviceManagementManagedApps.ReadWrite: Ler e Gravar Dados de Gerenciamento de Aplicativo do Usuário***.
+6. Em **Permissões Delegadas**, marque a caixa de seleção **DeviceManagementManagedApps.ReadWrite: Ler e Gravar Dados de Gerenciamento de Aplicativo do Usuário** *.
 7. Clique em **Adicionar permissões**.
 
 > [!NOTE]
