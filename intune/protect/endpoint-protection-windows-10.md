@@ -46,7 +46,7 @@ O Application Guard só está disponível para dispositivos Windows 10 (64 bits)
   **Padrão**: não configurado  
    CSP do Application Guard: [Settings/AllowWindowsDefenderApplicationGuard](https://docs.microsoft.com/windows/client-management/mdm/windowsdefenderapplicationguard-csp#allowwindowsdefenderapplicationguard)  
 
-  - **Habilitado para Edge** – ative esse recurso, que abre sites não confiáveis em um contêiner de navegação virtualizado do Hyper-V.  
+  - **Habilitado para Microsoft Edge** – ative esse recurso, que abre sites não confiáveis em um contêiner de navegação virtualizado do Hyper-V.  
   - **Não configurado** -qualquer site (confiável e não confiável) pode ser aberto no dispositivo.  
 
 - **Comportamento da área de transferência**  
