@@ -15,16 +15,16 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 9fab50e0aefd926b4dc7a2b3559576642d5d6b79
-ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
+ms.openlocfilehash: b11cbd3427b3b8e0a43a6e6e2af5fa80da45e16a
+ms.sourcegitcommit: e166b9746fcf0e710e93ad012d2f52e2d3ed2644
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "74059300"
+ms.lasthandoff: 12/19/2019
+ms.locfileid: "75206271"
 ---
 # <a name="create-vpn-profiles-to-connect-to-vpn-servers-in-intune"></a>Criar perfis de VPN para se conectar a servidores VPN no Microsoft Intune
 
-[!INCLUDE [azure_portal](../includes/azure_portal.md)]
+
 
 As VPNs proporcionam aos usuários acesso remoto seguro à rede da empresa. Os dispositivos usam um perfil de conexão VPN para iniciar uma conexão com o servidor VPN. Os **perfis de VPN** do Microsoft Intune atribuem configurações de VPN a usuários e dispositivos na organização, de modo que eles possam se conectar à rede com facilidade e segurança.
 
@@ -49,7 +49,7 @@ Você pode criar perfis VPN usando os seguintes tipos de conexão:
 |Automática|Windows 10|
 |Check Point Capsule VPN|– Android<br/>– Perfis de trabalho do Android Enterprise<br/>– iOS<br/>– macOS<br/>– Windows 10<br/>– Windows 8.1<br/>– Windows Phone 8.1|
 |Cisco AnyConnect|– Android<br/>– Perfis de trabalho do Android Enterprise<br/>– Proprietário do dispositivo Android Enterprise (totalmente gerenciado)<br/>– iOS<br/>– macOS|
-|Cisco (IPsec)|iOS|
+|Cisco (IPSec)|iOS|
 |SSO da Citrix|– Android<br/>– Perfis de trabalho do Android Enterprise: usam a [política de configuração de aplicativo](../apps/app-configuration-policies-use-android.md)<br/>– Proprietário do dispositivo Android Enterprise (totalmente gerenciado): usam a [política de configuração de aplicativo](../apps/app-configuration-policies-use-android.md)<br/>– iOS<br/>– Windows 10|
 |VPN personalizado|– iOS<br/>– macOS|
 |Acesso por F5|– Android<br/>– Perfis de trabalho do Android Enterprise<br/>– Proprietário do dispositivo Android Enterprise (totalmente gerenciado)<br/>– iOS<br/>– macOS<br/>– Windows 10<br/>– Windows 8.1<br/>– Windows Phone 8.1|

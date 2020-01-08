@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: ffabcace189efd60e9d532172ecd1f2a048eec2c
-ms.sourcegitcommit: 73b362173929f59e9df57e54e76d19834f155433
+ms.openlocfilehash: e23e582a853f0b424296d8fb42f6c7d8fdd2984c
+ms.sourcegitcommit: 0d9e1452fcf5f15a80230838f80a427b9951cdb1
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/27/2019
-ms.locfileid: "74562420"
+ms.lasthandoff: 12/21/2019
+ms.locfileid: "75324858"
 ---
 # <a name="intune-actions-and-options-supported-with-apple-user-enrollment"></a>Ações e opções do Intune compatíveis com o Registro de usuário da Apple
 
@@ -38,7 +38,7 @@ Em dispositivos de Registro de usuário, se você definir qualquer configuraçã
 
 Por exemplo, você define a configuração de **Expiração de senha** e envia por push essa política para os dispositivos registrados pelo usuário. Nos dispositivos, acontece o seguinte:
 - A configuração de **Expiração de senha** é ignorada.
-- Senhas simples, como `1111` ou `1234`, não são permitidas.
+- Senhas simples, como `111111` ou `123456`, não são permitidas.
 - É aplicado um PIN de seis dígitos.
 
 ## <a name="administrator-remote-device-actions-and-options"></a>Ações e opções de dispositivo remoto do administrador
@@ -46,7 +46,7 @@ Os administradores podem executar as seguintes ações e opções em dispositivo
 - Desativar
 - Excluir
 - Bloqueio remoto
-- Sincronização
+- Sincronizar
 
 Não há suporte para nenhuma outra ação.
 

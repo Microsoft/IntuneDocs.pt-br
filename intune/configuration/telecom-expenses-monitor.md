@@ -18,16 +18,16 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 340659adfa3bbd40f98ccec9d8d44e952f7ec9b9
-ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
+ms.openlocfilehash: 9c97a3ad329ce0e431c6dc8ef318306e4e002f36
+ms.sourcegitcommit: e166b9746fcf0e710e93ad012d2f52e2d3ed2644
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "74059936"
+ms.lasthandoff: 12/19/2019
+ms.locfileid: "75207104"
 ---
 # <a name="set-up-a-telecom-expense-management-service-in-intune"></a>Configurar um serviço de gerenciamento de despesas de telecomunicações no Intune
 
-[!INCLUDE [azure_portal](../includes/azure_portal.md)]
+
 
 O Intune permite que você gerencie as despesas de telecomunicações decorrentes da utilização de dados em dispositivos móveis da empresa. O Intune se integra ao [Gerenciamento de despesas de telecomunicações do Datalert](http://datalert.biz/get-started) da Saaswedo. O Datalert é uma solução de gerenciamento de despesas de telecomunicações em tempo real que gerencia o uso de dados de telecomunicações. Ele pode ajudar a evitar preços elevados e inesperados de dados e roaming para seus dispositivos gerenciados pelo Intune.
 
@@ -54,7 +54,7 @@ Para usar o serviço Datalert com o Intune, há algumas definições de configur
 
 ## <a name="prerequisites"></a>Pré-requisitos
 
-- Uma assinatura para Microsoft Intune e acesso ao [Centro de Administração do Gerenciador de Ponto de Extremidade da Microsoft](https://go.microsoft.com/fwlink/?linkid=2109431)
+- Uma assinatura para Microsoft Intune e acesso ao [Centro de administração do Gerenciador de Ponto de Extremidade da Microsoft](https://go.microsoft.com/fwlink/?linkid=2109431)
 - Uma assinatura do [Datalert](http://www.datalert.biz/) (abre o site do Datalert)
 
 ## <a name="telecom-expense-management-providers"></a>Provedores de gerenciamento de despesas de telecomunicações
@@ -183,7 +183,7 @@ Para a experiência de usuários finais, os seguintes artigos podem ajudar:
 
 ## <a name="turn-off-the-datalert-service"></a>Desligar o serviço Datalert
 
-1. No [Centro de Administração do Gerenciador de Ponto de Extremidade da Microsoft](https://go.microsoft.com/fwlink/?linkid=2109431), selecione **Administração de locatário** > **Conectores e tokens** > **Gerenciamento de despesas de telecomunicações**.
+1. Na [Centro de administração do Gerenciador de Ponto de Extremidade da Microsoft](https://go.microsoft.com/fwlink/?linkid=2109431), selecione **Administração de locatário** > **Conectores e tokens** > **Gerenciamento de despesas de telecomunicações**.
 2. Defina **Habilitar o Gerenciamento de Despesas de Telecomunicações e bloquear dados de celular ou roaming em dispositivos que excederem cotas de uso configuradas** como **Desabilitar**.
 3. **Salve** suas alterações.
 

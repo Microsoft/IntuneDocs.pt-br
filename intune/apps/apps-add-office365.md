@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure, seoapril2019
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 73848ee8301362f14fe2866a57329425d5e5cfbe
-ms.sourcegitcommit: 73b362173929f59e9df57e54e76d19834f155433
+ms.openlocfilehash: b566dd58b01a411126ffabb46d526e4480c2ba0a
+ms.sourcegitcommit: e166b9746fcf0e710e93ad012d2f52e2d3ed2644
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/27/2019
-ms.locfileid: "74563674"
+ms.lasthandoff: 12/19/2019
+ms.locfileid: "75205965"
 ---
 # <a name="add-office-365-apps-to-windows-10-devices-with-microsoft-intune"></a>Adicionar aplicativos do Office 365 a dispositivos Windows 10 com o Microsoft Intune
 
@@ -79,7 +79,7 @@ Nesta etapa, você fornece informações sobre o pacote de aplicativos. Essas in
 2. No painel **Informações do Pacote de Aplicativos**, faça o seguinte:
     - **Nome do Pacote**: Insira o nome do pacote de aplicativos da forma como ele é exibido no portal da empresa. Verifique se todos os nomes de pacotes usados são exclusivos. Se o mesmo nome de pacote de aplicativos for usado duas vezes, apenas um dos aplicativos será exibido aos usuários no Portal da Empresa.
     - **Descrição do Pacote**: Insira uma descrição para o pacote de aplicativos. Por exemplo, você pode listar os aplicativos que você selecionou para serem incluídos.
-    - **Editor**: a Microsoft aparece como o editor.
+    - **Publicador**: a Microsoft aparece como o editor.
     - **Categoria**: Opcionalmente, selecione uma ou mais categorias de aplicativo internas ou uma categoria criada por você. Essa configuração facilita para os usuários localizarem o pacote de aplicativos enquanto navegam pelo Portal da Empresa.
     - **Exibir como um aplicativo em destaque no Portal da Empresa**: Selecione essa opção para destacar o pacote de aplicativos na página principal do Portal da Empresa quando os usuários procurarem por aplicativos.
     - **URL de Informações**: Opcionalmente, insira uma URL de um site que contém informações sobre esse aplicativo. A URL é exibida para os usuários no portal da empresa.
@@ -197,7 +197,7 @@ Depois de concluir que a infraestrutura de rede e o Intune funcionam conforme o 
 
 ## <a name="errors-during-installation-of-the-app-suite"></a>Erros durante a instalação do pacote de aplicativos
 
-Confira [Como habilitar o registro em log do Office 365 ProPlus ULS](https://blogs.technet.microsoft.com/odsupport/2018/06/18/how-to-enable-office-365-proplus-uls-logging) para obter informações sobre como exibir os logs de instalação em modo detalhado.
+Confira [Como habilitar o registro em log do Office 365 ProPlus ULS](/office/troubleshoot/diagnostic-logs/how-to-enable-office-365-proplus-uls-logging) para obter informações sobre como exibir os logs de instalação em modo detalhado.
 
 A tabela a seguir lista os códigos de erro comuns que você pode encontrar e os respectivos significados.
 

@@ -6,7 +6,7 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 11/26/2019
+ms.date: 12/16/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.subservice: apps
@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: ''
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 2e7c9824711ecbfb43a7c7dde71cc01b306b7fab
-ms.sourcegitcommit: 7cc45ef52dda08479bc6bdff7d11d2f6c0e7b93b
+ms.openlocfilehash: 1e96f46dc0e79de3fc78739c246abdc0b9e52702
+ms.sourcegitcommit: e166b9746fcf0e710e93ad012d2f52e2d3ed2644
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/06/2019
-ms.locfileid: "74899408"
+ms.lasthandoff: 12/19/2019
+ms.locfileid: "75205523"
 ---
 # <a name="intune-discovered-apps"></a>Aplicativos descobertos pelo Intune
 
@@ -54,11 +54,11 @@ A lista a seguir fornece o tipo de plataforma do aplicativo, os aplicativos moni
 
 | Plataforma | Para dispositivos de propriedade pessoal | Para dispositivos de propriedade da empresa | Ciclo de atualização |
 |------------------------------------------------------------------------|----------------------------------|--------------------------------------------------|---------------------------------------|
-| Windows 10 (aplicativos Win32) OBSERVAÇÃO: [Exige a Extensão de Gerenciamento do Intune](intune-management-extension.md) no dispositivo | Não Aplicável | Todos os aplicativos Win32 encontrados na lista Adicionar/Remover Programas | A cada 24 horas após o registro do dispositivo |
+| Windows 10 (aplicativos Win32) OBSERVAÇÃO: [Exige a Extensão de Gerenciamento do Intune](intune-management-extension.md) no dispositivo | Não Aplicável | Somente aplicativos gerenciados | A cada 24 horas após o registro do dispositivo |
 | Windows 10 (aplicativos modernos) | Somente aplicativos modernos gerenciados | Todos os aplicativos modernos instalados no dispositivo | A cada 7 dias após o registro do dispositivo |
 | Windows 8.1 | Somente aplicativos gerenciados | Somente aplicativos gerenciados | A cada 7 dias após o registro do dispositivo |
 | Windows Phone 8 | Somente aplicativos gerenciados | Somente aplicativos gerenciados | A cada 7 dias após o registro do dispositivo |
-| Windows RT | Somente aplicativos gerenciados | Somente aplicativos gerenciados | A cada 7 dias após o registro do dispositivo |
+| Windows RT | Somente aplicativos gerenciados | Somente aplicativos gerenciados | A cada 7 dias após o registro do dispositivo |
 | iOS | Somente aplicativos gerenciados | Todos os aplicativos instalados no dispositivo | A cada 7 dias após o registro do dispositivo |
 | macOS | Somente aplicativos gerenciados | Todos os aplicativos instalados no dispositivo | A cada 7 dias após o registro do dispositivo |
 | Android | Somente aplicativos gerenciados | Todos os aplicativos instalados no dispositivo | A cada 7 dias após o registro do dispositivo |
