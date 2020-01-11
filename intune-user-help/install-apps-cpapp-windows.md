@@ -18,13 +18,13 @@ ROBOTS: ''
 ms.reviewer: ''
 ms.suite: ems
 ms.custom: intune-enduser
-ms.collection: M365-identity-device-management
-ms.openlocfilehash: 80fd2d54a99bc3f4ab47f48f94eb14aa1a7f630c
-ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
+ms.collection: ''
+ms.openlocfilehash: 11037da11e6400f157aea6aa86c0c293c9818d31
+ms.sourcegitcommit: caee3c3fa77586314aa8040b0caf32a0527b669e
 ms.translationtype: MTE75
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "74126202"
+ms.lasthandoff: 01/10/2020
+ms.locfileid: "75855003"
 ---
 # <a name="install-and-share-apps-on-your-device"></a>Instalar e compartilhar aplicativos no seu dispositivo
 
@@ -37,11 +37,11 @@ Instale aplicativos em seu dispositivo pelo aplicativo Portal da Empresa para Wi
     ![O aplicativo Portal da Empresa para a página inicial do Windows 10.](./media/RS1_AppDetailsPage_Installed_03.png)
 2. Encontre e instale aplicativos de qualquer uma das seguintes seções do aplicativo Portal da Empresa:  
 
-    * **Página Inicial**: selecione de uma lista contendo os aplicativos em destaque da sua organização.  
-    * **Mostrar tudo**: na seção **Página Inicial** > **Aplicativos**, clique em **Mostrar tudo** para ver todos os aplicativos disponíveis.  
-    * **Todos os aplicativos**: selecione esta página no painel de navegação para ver todos os aplicativos disponíveis, incluindo os instalados e em destaque. Exibir, classificar e filtrar os aplicativos. Os resultados da pesquisa são classificados automaticamente por relevância.  
+    * **Página Inicial**: Selecione um aplicativo em uma lista dos aplicativos em destaque de sua organização.  
+    * **Mostrar tudo**: Na seção **Home page** > **Aplicativos**, clique em **Mostrar tudo** para exibir todos os aplicativos disponíveis.  
+    * **Todos os aplicativos**: Selecione essa página no painel de navegação para ver todos os aplicativos disponíveis, incluindo os instalados e em destaque. Exibir, classificar e filtrar os aplicativos. Os resultados da pesquisa são classificados automaticamente por relevância.  
     * **Categorias de aplicativo**: Selecione esta página no painel de navegação para escolher aplicativos com base no tipo ou na função. Os aplicativos são classificados em categorias, como em **destaque**, **educação**e **produtividade**.  
-    * **Pesquisar aplicativos**: uma barra de pesquisa estática encontra-se no painel de navegação do aplicativo. Para localizar seus aplicativos disponíveis, pesquise pelo nome ou distribuidor do aplicativo.  
+    * **Pesquisar aplicativos**: Há uma barra de pesquisa estática no painel de navegação do aplicativo. Para localizar seus aplicativos disponíveis, pesquise pelo nome ou distribuidor do aplicativo.  
 
 3. Selecione um aplicativo.   
 4. Na página de detalhes dos aplicativos, clique em **Instalar**. Após a instalação ser concluída, você verá um status **Instalado**.  
@@ -86,7 +86,7 @@ Caso precise de um aplicativo que não está listado no Portal da Empresa, solic
 ## <a name="view-installed-apps"></a>Exibir aplicativos instalados  
 Exiba uma lista de todos os aplicativos instalados em seu dispositivo. A página **aplicativos instalados** lista os seguintes detalhes sobre cada aplicativo:
 
-* Nome: o nome do aplicativo. Os aplicativos opcionais incluem um link para a página de **detalhes do aplicativo** .
+* Nome: O nome do aplicativo. Os aplicativos opcionais incluem um link para a página de **detalhes do aplicativo** .
 * Tipo de atribuição: como o aplicativo é atribuído e disponibilizado para você. 
 * Editor: o nome do desenvolvedor ou da empresa que distribuiu o aplicativo. Um Publicador é normalmente um fornecedor de software ou sua organização.  
 * Data de publicação: a data em que o aplicativo foi disponibilizado para download. A data de publicação pode mostrar a versão inicial de um aplicativo ou a atualização mais recente de um aplicativo.

@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 0a888e2087b98eeec82aeeb555677dddcb3eff4e
-ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
+ms.openlocfilehash: e9b44e50300c3bd034ca2bb3b0454a5ce953dc18
+ms.sourcegitcommit: e166b9746fcf0e710e93ad012d2f52e2d3ed2644
 ms.translationtype: MTE75
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "74058235"
+ms.lasthandoff: 12/19/2019
+ms.locfileid: "75206968"
 ---
 # <a name="use-apis-to-add-third-party-cas-for-scep-to-intune"></a>Usar APIs para adicionar ACs de terceiros para SCEP ao Intune
 
@@ -115,7 +115,7 @@ IntuneScepServiceClient(
     Properties configProperties)
 ```
 
-Descrição:
+Descrição: o
 
 Cria uma instância e configura um objeto `IntuneScepServiceClient`.
 
@@ -157,7 +157,7 @@ void ValidateRequest(
     String certificateRequest)
 ```
 
-Descrição:
+Descrição: o
 
 Valida uma solicitação de certificado SCEP.
 
@@ -194,7 +194,7 @@ void SendSuccessNotification(
     String certIssuingAuthority)
 ```
 
-Descrição:
+Descrição: o
 
 Notifica o Intune de que um certificado é criado como parte do processamento de uma solicitação do SCEP.
 
@@ -202,7 +202,7 @@ Parâmetros:
 
     - transactionId           A ID de transação do SCEP
     - certificateRequest      Solicitação de certificado PKCS nº 10 codificado por DER e em Base64 como uma cadeia de caracteres
-    - certThumprint           Impressão digital do certificado provisionado
+    - hash SHA1 certThumprint da impressão digital do certificado provisionado
     - certSerialNumber        O número de série do certificado provisionado
     - certExpirationDate      Data de expiração do certificado provisionado. A cadeia de caracteres de data e hora deve ser formatada como a hora UTC da Web (YYYY-MM-DDThh:mm:ss.sssTZD) ISO 8601.
     - certIssuingAuthority    Nome da autoridade que emitiu o certificado
@@ -233,7 +233,7 @@ void SendFailureNotification(
     String errorDescription)
 ```
 
-Descrição:
+Descrição: o
 
 Notifica o Intune de que ocorreu um erro ao processar uma solicitação do SCEP. Esse método não deve ser invocado para exceções geradas pelos métodos dessa classe.
 
@@ -267,7 +267,7 @@ void SetSslSocketFactory(
     SSLSocketFactory factory)
 ```
 
-Descrição:
+Descrição: o
 
 Use esse método para informar ao cliente de que ele precisa usar o alocador de soquete SSL especificado (em vez do padrão) ao se comunicar com o Intune.
 
