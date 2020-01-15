@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 309860fb5ddf6fa9488ecaf395534bf869234176
-ms.sourcegitcommit: a82d25d98fdf0ba766f8f074871d4f13725e23f9
+ms.openlocfilehash: ebeb5830136ad6dae19babbc8ecf45c1d6e5c36c
+ms.sourcegitcommit: 2506cdbfccefd42587a76f14ee50c3849dad1708
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/31/2019
-ms.locfileid: "75547845"
+ms.lasthandoff: 01/11/2020
+ms.locfileid: "75885967"
 ---
 # <a name="android-device-administrator-enrollment"></a>Registro de administrador de dispositivos Android
 
@@ -36,10 +36,6 @@ Pelas mesmas razões, também recomendamos que você migre dispositivos do geren
 Para obter mais informações sobre o suporte do Intune para o administrador de dispositivos Android, confira a [seção Avisos](../fundamentals/whats-new.md#decreasing-support-for-android-device-administrator).
 
 Se você ainda quiser que os usuários registrem os dispositivos Android no gerenciamento de administrador de dispositivos, prossiga para a próxima seção.  
-
-
-> [!Note]  
-> O Android 10 e versões posteriores não terão suporte no MDM híbrido (gerenciamento de dispositivo móvel híbrido; gerenciado pelo Intune com o console do Configuration Manager) porque o MDM híbrido será retirado de serviço em 1º de setembro de 2019. Se você ainda estiver usando o MDM híbrido, deverá migrar para o Intune autônomo o mais breve possível. Entre em contato com o suporte se precisar de ajuda na migração. Para obter mais informações, confira [Migrar do Gerenciamento de Dispositivo Móvel Híbrido para o Intune no Azure](https://aka.ms/hybrid_notification).
 
 Para obter mais informações sobre os recursos do Android Enterprise do Google, confira estes artigos:
 - [Diretrizes do Google para a migração do administrador de dispositivos para o Android Enterprise](http://static.googleusercontent.com/media/android.com/en/enterprise/static/2016/pdfs/enterprise/Android-Enterprise-Migration-Bluebook_2019.pdf)
