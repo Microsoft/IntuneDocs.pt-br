@@ -17,12 +17,12 @@ ms.reviewer: jeffbu, cgerth
 ms.suite: ems
 search.appverid: MET150
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: a23409b03047cac8edb0a50ad5188e006d35049a
-ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
+ms.openlocfilehash: 23b7264f2b7c9be0805ae30afca5c8cb15b83482
+ms.sourcegitcommit: de663ef5f3e82e0d983899082a7f5b62c63f24ef
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "72505154"
+ms.lasthandoff: 01/15/2020
+ms.locfileid: "75956239"
 ---
 # <a name="additional-resources-for-planning-your-intune-deployment"></a>Recursos adicionais para planejar a implantação do Intune
 
@@ -46,11 +46,11 @@ Esta é uma lista de modelos de tabela para cada seção.
 | | Política de conformidade | |
 | | Política de acesso condicional|-|
 
-## <a name="further-reading"></a>Leituras adicionais
+## <a name="further-reading"></a>Leitura adicional
 
 Confira estes recursos para obter mais informações que podem ser úteis durante o processo de planejamento da implantação, design e implementação do Intune.
 
-- [Documentação do Microsoft Intune](http://docs.microsoft.com/intune/) – o conjunto completo da documentação do Intune.
+- [Documentação do Microsoft Intune](https://docs.microsoft.com/intune/) – o conjunto completo da documentação do Intune.
 
 - [Central de Confiabilidade da Microsoft](https://www.microsoft.com/TrustCenter) – saiba mais sobre a abordagem da Microsoft em relação à segurança, privacidade, conformidade e transparência em todos os produtos e serviços de nuvem da Microsoft.
 

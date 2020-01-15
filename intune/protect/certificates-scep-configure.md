@@ -16,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 86640c831e8836a72ad5a0a7d5023ff7d836a43a
-ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
+ms.openlocfilehash: 501bfcbef0dd46f6021fc5db16cf3b9e2f2cd0c0
+ms.sourcegitcommit: 2506cdbfccefd42587a76f14ee50c3849dad1708
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "73801573"
+ms.lasthandoff: 01/11/2020
+ms.locfileid: "75886007"
 ---
 # <a name="configure-infrastructure-to-support-scep-with-intune"></a>Configurar a infraestrutura para dar suporte ao SCEP com o Intune
 
@@ -373,8 +373,7 @@ O Microsoft Intune Certificate Connector é instalado no mesmo servidor que hosp
 
    2. Execute o instalador (**NDESConnectorSetup.exe**). O instalador também instala o módulo de política para o NDES e o serviço Web de CRP (ponto de registro de certificado) do IIS. O serviço Web de CRP, *CertificateRegistrationSvc*, é executado como um aplicativo no IIS.
 
-      - Quando você instala o NDES para o Intune autônomo, o serviço de CRP é instalado automaticamente com o Conector de Certificado.
-      - Ao usar o Intune com o Configuration Manager, você instala o ponto de registro de certificado como uma função do sistema de sites do Configuration Manager.
+      Quando você instala o NDES para o Intune autônomo, o serviço de CRP é instalado automaticamente com o Conector de Certificado.
 
 5. Quando precisar selecionar o certificado do cliente para o Certificate Connector, escolha **Selecionar** e selecione o certificado de **autenticação de cliente** instalado no servidor NDES durante a etapa 3 do procedimento [Instalar e associar certificados no servidor que hospeda o NDES](#install-and-bind-certificates-on-the-server-that-hosts-ndes) anteriormente neste artigo.
 

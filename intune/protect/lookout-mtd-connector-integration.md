@@ -18,18 +18,18 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: b4661b151493eb68cc6f71a5a77bd023ac27b826
-ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
+ms.openlocfilehash: 331d4d312541f587077c70e19634e331f9ddc21e
+ms.sourcegitcommit: de663ef5f3e82e0d983899082a7f5b62c63f24ef
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "72810228"
+ms.lasthandoff: 01/15/2020
+ms.locfileid: "75956345"
 ---
 # <a name="set-up-lookout-mobile-endpoint-security-integration-with-intune"></a>Configurar a integração de segurança de ponto de extremidade móvel do Lookout com o Intune
 Com um ambiente que atende a [pré-requisitos](lookout-mobile-threat-defense-connector.md#prerequisites), você pode integrar a segurança de ponto de extremidade móvel do Lookout com o Intune. As informações neste artigo o orientarão na configuração da integração e de parâmetros importantes no Lookout para usar com o Intune.  
 
 > [!IMPORTANT]
-> Um locatário existente do Lookout Mobile Endpoint Security que não está associado ao seu locatário do Azure AD não pode ser usado para a integração com o Azure AD e o Intune. Contate o suporte do Lookout para criar um novo locatário do Lookout Mobile Endpoint Security. Use o novo locatário para carregar os usuários do Azure AD.
+> Um locatário existente do Lookout Mobile Endpoint Security que ainda não está associado ao seu locatário do Azure AD não pode ser usado para a integração ao Azure AD e ao Intune. Contate o suporte do Lookout para criar um novo locatário do Lookout Mobile Endpoint Security. Use o novo locatário para carregar os usuários do Azure AD.
 
 ## <a name="collect-azure-ad-information"></a>Coletar informações do Azure AD  
 Para integrar o Lookout com o Intune, associe o seu locatário da segurança de ponto de extremidade móvel do Lookout à sua assinatura do Azure AD.
@@ -77,7 +77,7 @@ Depois que o suporte do Lookout criar sua conta Lookout Enterprise, o suporte do
 ### <a name="initial-sign-in"></a>Conexão inicial  
 A primeira conexão ao console do Lookout MES exibe uma página de consentimento (https://aad.lookout.com/les?action=consent). Um administrador global do AD do Azure acabou de se conectar e **Aceitar**. As conexões posteriores não exigem que o usuário tenha esse nível de privilégio do Azure AD. 
 
- Uma página de consentimento será exibida. Escolha **Aceitar** para concluir o registro. 
+ Uma página de consentimento é exibida. Escolha **Aceitar** para concluir o registro. 
    ![captura de tela da página da primeira conexão do console do Lookout](./media/lookout-mtd-connector-integration/lookout_mtp_initial_login.png)
 
 Depois de aceitar e autorizar, você será redirecionado para o console do Lookout.
@@ -108,12 +108,12 @@ O procedimento a seguir pressupõe que você tenha criado anteriormente um grupo
 
 5. Selecione **Gerenciamento de Erros**, especifique o endereço de email que deve receber os relatórios de erros e, em seguida, selecione **Salvar alterações**.
  
-   ![captura de tela da página de gerenciamento de erros do conector do Intune](./media/lookout-mtd-connector-integration/lookout-mtp-connector-error-notifications.png)
+   ![captura de tela da página de gerenciamento de erro do conector do Intune](./media/lookout-mtd-connector-integration/lookout-mtp-connector-error-notifications.png)
 
 6. Selecione **Criar conector** para concluir a configuração do conector. Em seguida, quando estiver satisfeito com os resultados, você pode estender o registro para grupos de usuários adicionais.
 
 ## <a name="configure-intune-to-use-lookout-as-a-mobile-threat-defense-provider"></a>Configurar o Intune para usar o Lookout como um provedor de Defesa contra Ameaças Móveis
-Depois de configurar o Lookout MES, você deverá configurar uma conexão com o [Lookout no Intune](https://docs.microsoft.com/en-us/intune/protect/mtd-connector-enable).  
+Depois de configurar o Lookout MES, você deverá configurar uma conexão com o [Lookout no Intune](~/protect/mtd-connector-enable.md).  
 
 ## <a name="additional-settings-in-the-lookout-mes-console"></a>Configurações adicionais no console do Lookout MES
 A seguir estão as configurações adicionais que você pode definir no console do Lookout MES.  
@@ -144,7 +144,7 @@ Para saber mais sobre as classificações de nível de ameaça e como gerenciar 
 >[!IMPORTANT]
 > Os níveis de risco são um aspecto importante da segurança de ponto de extremidade móvel do Lookout, porque a integração com o Intune calcula a conformidade do dispositivo de acordo com esses níveis de risco em runtime.  
 > 
-> O administrador do Intune define uma regra na política para identificar um dispositivo não compatível, se ele tem uma ameaça ativa com um nível mínimo igual a **Alto**, **Médio** ou **Baixo**. A política de classificação de ameaças na segurança de ponto de extremidade móvel do Lookout alimenta diretamente o cálculo de conformidade no Intune.  
+> O administrador do Intune define uma regra na política para identificar um dispositivo como não compatível, se ele tiver uma ameaça ativa com um nível mínimo igual a **Alto**, **Médio** ou **Baixo**. A política de classificação de ameaças na segurança de ponto de extremidade móvel do Lookout alimenta diretamente o cálculo de conformidade no Intune.  
 
 ## <a name="monitor-enrollment"></a>Monitorar registros
 Quando a instalação estiver concluída, a segurança de ponto de extremidade móvel do Lookout começa a sondar o Azure AD em busca de dispositivos que correspondem aos grupos de registro especificados.  Você pode encontrar informações sobre os dispositivos registrados acessando **Dispositivos** no console do Lookout MES.  

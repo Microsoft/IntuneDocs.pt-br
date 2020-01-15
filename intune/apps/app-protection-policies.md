@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 8657b6fa8110b4ea4bbf8ec0841d69197624dd9f
-ms.sourcegitcommit: 73b362173929f59e9df57e54e76d19834f155433
+ms.openlocfilehash: 9b5f973e5ce169edcf6149b0588c905d8497cca2
+ms.sourcegitcommit: 2506cdbfccefd42587a76f14ee50c3849dad1708
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/27/2019
-ms.locfileid: "74563719"
+ms.lasthandoff: 01/11/2020
+ms.locfileid: "75885752"
 ---
 # <a name="how-to-create-and-assign-app-protection-policies"></a>Como criar e atribuir as políticas de proteção de aplicativo
 
@@ -51,7 +51,7 @@ Quando você cria uma política de proteção de aplicativo para aplicativos iOS
 
     | Valor | Descrição |
     |--------------|------------------------------------------------|
-    | Nome | O nome desta política de proteção de aplicativo. |
+    | Name | O nome desta política de proteção de aplicativo. |
     | Descrição | [Opcional] A descrição desta política de proteção de aplicativo. |
 
 
@@ -93,9 +93,6 @@ Quando você cria uma política de proteção de aplicativo para aplicativos iOS
 
 9. Clique em **Avançar** para exibir a página **Atribuições**.<br>
    A página **Atribuições** permite atribuir a política de proteção de aplicativos a grupos de usuários.
-   
-    >[!IMPORTANT]
-    > Se você estiver usando o Intune com o Configuration Manager para gerenciar seus dispositivos, a política só será aplicada aos usuários diretamente no grupo que você selecionou. Membros de grupos filho aninhados dentro do grupo selecionado não serão afetados.
 
 10. Clique em **Avançar: Examinar + criar** para examinar os valores e configurações inseridos para esta política de proteção de aplicativo.
 

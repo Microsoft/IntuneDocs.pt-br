@@ -2,27 +2,27 @@
 title: Usar certificados PFX importados no Microsoft Intune – Azure | Microsoft Docs
 description: Use certificados PKCS (Public Key Cryptography Standards) importados com o Microsoft Intune, o que inclui a importação de certificados, a configuração do modelo de certificado, a instalação do Conector de Certificado PFX Importado do Intune e a criação de um perfil de Certificado PKCS Importado.
 keywords: ''
-author: ralms
+author: brenduns
 ms.author: brenduns
 manager: dougeby
-ms.date: 11/07/2019
+ms.date: 01/10/2020
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.subservice: protect
 ms.localizationpriority: high
 ms.technology: ''
 ms.assetid: ''
-ms.reviewer: lacranda
+ms.reviewer: lacranda; rimarram
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure; seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: d54c58523fdb44080b6c4210d639f9ad0ce476e2
-ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
+ms.openlocfilehash: 2c33f4429c86160bbf180c8102e2dc7532bbd80e
+ms.sourcegitcommit: 2506cdbfccefd42587a76f14ee50c3849dad1708
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "73801537"
+ms.lasthandoff: 01/11/2020
+ms.locfileid: "75886030"
 ---
 # <a name="configure-and-use-imported-pkcs-certificates-with-intune"></a>Configurar e usar certificados PKCS importados com o Intune
 
@@ -46,16 +46,19 @@ Para usar certificados PKCS importados com o Intune, a seguinte infraestrutura s
 
   Para obter mais informações sobre todos os pontos de extremidade de rede que o conector acessa, confira [Largura de banda e requisitos de configuração de rede do Intune](../fundamentals/network-bandwidth-use.md).
 
-- **Windows Server**:  
+- **Windows Server**:
+
   Use um Windows Server para hospedar o Conector de Certificado PFX do Microsoft Intune.  O conector é usado para processar solicitações de certificados importados para o Intune.
 
   O Intune dá suporte à instalação do *Microsoft Intune Certificate Connector* no mesmo servidor do *Conector de Certificado PFX do Microsoft Intune*.
 
   Para dar suporte ao conector, o servidor deve executar o .NET 4.6 Framework ou posterior. A instalação do conector instalará automaticamente o .NET 4.6 Framework, caso não esteja instalado.
 
-- **Visual Studio 2015 ou posterior** (opcional): Use o Visual Studio para criar o módulo auxiliar do PowerShell com cmdlets para importar certificados PFX ao Microsoft Intune. Para obter os cmdlets auxiliares do PowerShell, confira o [Projeto PFXImport do PowerShell no GitHub](https://github.com/microsoft/Intune-Resource-Access/tree/develop/src/PFXImportPowershell).
+- **Visual Studio 2015 ou posterior** (opcional):
 
-## <a name="how-it-works"></a>Como funciona
+  Use o Visual Studio para criar o módulo auxiliar do PowerShell com cmdlets para importar certificados PFX ao Microsoft Intune. Para obter os cmdlets auxiliares do PowerShell, confira o [Projeto PFXImport do PowerShell no GitHub](https://github.com/microsoft/Intune-Resource-Access/tree/develop/src/PFXImportPowershell).
+
+## <a name="how-it-works"></a>Como isso funciona
 
 Ao usar o Intune para implantar um **certificado PFX importado** em um usuário, há dois componentes em jogo, além do dispositivo:
 
@@ -143,15 +146,14 @@ Você pode usar um HSM (módulo de segurança de hardware) para gerar e armazena
 
 O processo a seguir usa os cmdlets do PowerShell como exemplo de importação dos certificados PFX. Você pode escolher diferentes opções, dependendo de seus requisitos.
 
-As opções incluem:  
-- Finalidade pretendida (agrupa os certificados com base em uma marcação):  
+As opções incluem:
+
+- Finalidade pretendida (agrupa os certificados com base em uma marcação):
   - não atribuído
   - smimeEncryption
   - smimeSigning
 
-- Esquema de Preenchimento:  
-  - pkcs1
-  - oaepSha1
+- Esquema de Preenchimento:
   - oaepSha256
   - oaepSha384
   - oaepSha512
