@@ -5,7 +5,7 @@ keywords: ''
 author: brenduns
 ms.author: brenduns
 manager: dougeby
-ms.date: 12/12/2019
+ms.date: 12/18/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.subservice: protect
@@ -16,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 947472c5e589cb443c9a15d20a732c299cc48b44
-ms.sourcegitcommit: df8e2c052fafb2d5d4e9b4fcd831ae0ecf7f8d16
+ms.openlocfilehash: 89b4516017d7ac8bf1e27134db6a67a0a86b17cb
+ms.sourcegitcommit: e166b9746fcf0e710e93ad012d2f52e2d3ed2644
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/10/2019
-ms.locfileid: "74992993"
+ms.lasthandoff: 12/19/2019
+ms.locfileid: "75206067"
 ---
 # <a name="monitor-intune-device-compliance-policies"></a>Monitorar as políticas de conformidade do Dispositivo do Intune
 
@@ -36,9 +36,9 @@ Os relatórios de conformidade ajudam a examinar a conformidade do dispositivo e
 
 Abra o **painel de conformidade do dispositivo do Intune**:
 
-1. Conecte-se ao [Intune](https://go.microsoft.com/fwlink/?linkid=2090973).
+1. Entre no [Centro de Administração do Gerenciador de Ponto de Extremidade da Microsoft](https://go.microsoft.com/fwlink/?linkid=2109431).
 
-2. Selecione **Conformidade do dispositivo** > **Visão geral**. O **Painel de conformidade do dispositivo** será aberto.
+2. Escolha a guia **Dispositivos** > **Visão geral** > **Status de conformidade**.
 
 > [!IMPORTANT]
 > Os dispositivos devem ser registrados no Intune para receber as políticas de conformidade do dispositivo.
@@ -151,7 +151,7 @@ O gráfico **Conformidade de configuração** mostra para você todas as configu
 
 ## <a name="view-compliance-reports"></a>Exibir relatórios de conformidade
 
-Além de usar os gráficos no *Status de conformidade*, você pode exibir os relatórios de conformidade da página *Monitorar* do Centro de administração.
+Além de usar os gráficos no *Status de conformidade*, você pode acessar **Relatórios** > **Conformidade do dispositivo**.
 
 1. Entre no [Centro de Administração do Gerenciador de Ponto de Extremidade da Microsoft](https://go.microsoft.com/fwlink/?linkid=2109431).
 
@@ -191,3 +191,7 @@ Podem ocorrer conflitos de política quando várias políticas do Intune são ap
 - Se as configurações conflitantes forem de uma política de configuração do Intune e de uma política de conformidade, as configurações na política de conformidade têm precedência sobre as configurações na política de configuração. Isso acontece mesmo que as configurações na política de configuração sejam mais seguras.
 
 - Se você tiver implantado várias políticas de conformidade, o Intune usará a mais segura entre elas.
+
+## <a name="next-steps"></a>Próximas etapas
+
+[Visão geral das políticas de conformidade](device-compliance-get-started.md)

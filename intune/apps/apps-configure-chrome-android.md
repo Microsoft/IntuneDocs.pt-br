@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: ''
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: c344a518890a2309a7805d61a5675e2646029bbb
-ms.sourcegitcommit: 73b362173929f59e9df57e54e76d19834f155433
+ms.openlocfilehash: c02ea34417073091e2f2841b363edfb9966ce558
+ms.sourcegitcommit: e166b9746fcf0e710e93ad012d2f52e2d3ed2644
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/27/2019
-ms.locfileid: "74564036"
+ms.lasthandoff: 12/19/2019
+ms.locfileid: "75205897"
 ---
 # <a name="configure-google-chrome-for-android-devices-using-intune"></a>Configurar o Google Chrome para dispositivos Android usando o Intune 
 
@@ -48,12 +48,16 @@ Para obter detalhes adicionais sobre como adicionar um aplicativo gerenciado do 
 
 ## <a name="add-app-configuration-for-managed-ae-devices"></a>Adicionar configuração de aplicativo em dispositivos AE gerenciados
 
-1. No painel [Intune](https://go.microsoft.com/fwlink/?linkid=2090973), selecione **Políticas de configuração de aplicativos** > **Adicionar**.
-2. Adicione o nome da política, escolha **Dispositivos gerenciados**, em Tipo de registro do dispositivo, e **Android**, em Plataforma.
+1. No [Centro de administração do Gerenciador de Ponto de Extremidade da Microsoft](https://go.microsoft.com/fwlink/?linkid=2109431), escolha **Aplicativos** > **Políticas de configuração de aplicativo** > **Adicionar** > **Dispositivos gerenciados**.
+2. Defina os seguintes detalhes:
+    - **Nome** – o nome do perfil exibido no portal do Azure.
+    - **Descrição** – a descrição do perfil que é exibida no portal do Azure.
+    - **Tipo de registro de dispositivo** – Essa configuração é definida como **Dispositivos gerenciados**.
+    - **Plataforma** – escolha **Android**.
 
     ![Adicionar política de configuração do Google Chrome](~/apps/media/apps-configure-chrome-android/add-policy.png)
 
-3. Clique em **Aplicativo associado** e selecione **Google Chrome**.
+3. Clique em **Aplicativo associado** para exibir o painel **Aplicativo associado**. Localize e escolha **Google Chrome**. Essa lista contém os [Aplicativos do Google Play Gerenciado que foram aprovados e sincronizados com o Intune](~/apps/apps-add-android-for-work.md).
 
     ![Na opção Aplicativo associado, selecione Google Chrome](~/apps/media/apps-configure-chrome-android/associated-app.png)
 

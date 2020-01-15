@@ -16,12 +16,12 @@ ms.reviewer: mghadial
 ms.suite: ems
 search.appverid: MET150
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 0de98a0820e15a09c2b3724b216359580327259e
-ms.sourcegitcommit: ce518a5dfe62c546a77f32ef372f36efbaad473f
+ms.openlocfilehash: f1e493e0d2d562c0f69454d1999e82b528c724a2
+ms.sourcegitcommit: e4602481a25a5e12379f673dfe801c611f51c35b
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/25/2019
-ms.locfileid: "74465713"
+ms.lasthandoff: 01/08/2020
+ms.locfileid: "75731272"
 ---
 # <a name="intune-compliance-reports-for-updates"></a>Relatórios de conformidade do Intune para atualizações
 
@@ -51,7 +51,7 @@ Para examinar um relatório de política no status de implantação para os ané
 
 Quando você usar essa solução, implante uma ID comercial em quaisquer dispositivos Windows 10 gerenciados pelo Intune para os quais você deseja relatar a conformidade de atualizações.  
 
-No Intune, você usa as configurações OMA-URI de uma política personalizada para configurar a ID comercial. Confira [Configurações de política do Intune para dispositivos Windows 10 no Microsoft Intune](https://docs.microsoft.com/intune-classic/deploy-use/windows-10-policy-settings-in-microsoft-intune).  
+No Intune, você usa as configurações OMA-URI de uma política personalizada para configurar a ID comercial. Confira [Usar configurações personalizadas para dispositivos Windows 10 no Intune](../configuration/custom-settings-windows-10.md).
 
 O caminho OMA-URI (diferencia maiúsculas de minúsculas) para configurar a ID comercial é: *./Vendor/MSFT/DMClient/Provider/MS DM Server/CommercialID*  
 

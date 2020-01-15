@@ -19,12 +19,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic, seoapril2019
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 79e1ba2441baa6773632c27f204bef01b015b990
-ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
+ms.openlocfilehash: 48ad9ffe32dc7493195ec161e070734776381427
+ms.sourcegitcommit: a82d25d98fdf0ba766f8f074871d4f13725e23f9
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "74832736"
+ms.lasthandoff: 12/31/2019
+ms.locfileid: "75547807"
 ---
 # <a name="troubleshoot-device-enrollment-in-microsoft-intune"></a>Solução de problemas de registro de dispositivo no Microsoft Intune
 
@@ -113,7 +113,7 @@ Para evitar atingir os limites de dispositivos, não deixe de remover os registr
 
     4. Ative o DirSync novamente e verifique se agora o usuário está sincronizado corretamente.
 
-3. Em um cenário em que você está usando o System Center Configuration Manager com o Intune, confirme se o usuário tem uma ID de usuário de nuvem válida:
+3. Em um cenário em que você está usando o Configuration Manager com o Intune, confirme se o usuário tem uma ID de usuário de nuvem válida:
 
     1. Abra o SQL Management Studio.
 
@@ -332,7 +332,7 @@ Para saber mais, veja as [Práticas recomendadas para proteção dos Serviços d
 
 5. Confirme se o Safari para iOS é o navegador padrão e se os cookies estão habilitados.
 
-### <a name="enrolled-ios-device-doesnt-appear-in-console-when-using-system-center-configuration-manager-with-intune"></a>Os dispositivos iOS registrados não aparecem no console ao usar o System Center Configuration Manager com o Intune
+### <a name="enrolled-ios-device-doesnt-appear-in-console-when-using-configuration-manager-with-intune"></a>Os dispositivos iOS registrados não aparecem no console ao usar o Configuration Manager com o Intune
 **Problema:** o usuário registra um dispositivo iOS, mas ele não aparece no console de administração do Configuration Manager. O dispositivo não indica que ele foi registrado. Possíveis causas:
 
 - O Conector do Microsoft Intune, no site do Gerenciador de Configurações, não está se comunicando com o serviço do Intune.
@@ -419,7 +419,7 @@ Depois que você tiver apagado os dispositivos bloqueados, instrua os usuários 
     3. Localize o dispositivo com o problema de registro. Pesquise por nome do dispositivo ou endereço MAC/de hardware para restringir os resultados.
     4. Selecione o dispositivo > **Excluir**. Exclua todas as outras entradas associadas ao dispositivo.  
 
-## <a name="issues-when-using-system-center-configuration-manager-with-intune"></a>Problemas ao usar o System Center Configuration Manager com o Intune
+## <a name="issues-when-using-configuration-manager-with-intune"></a>Problemas ao usar o Configuration Manager com o Intune
 
 ### <a name="mobile-devices-disappear"></a>Dispositivos móveis desaparecem
 

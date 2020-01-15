@@ -16,12 +16,12 @@ ms.reviewer: shpate
 ms.suite: ems
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 1d3a2ce9e5a31e989452141a094b70b5e75cf464
-ms.sourcegitcommit: a7b479c84b3af5b85528db676594bdb3a1ff6ec6
+ms.openlocfilehash: 04436c38fc6c4100a8232ea1ad23585f350d6aae
+ms.sourcegitcommit: a82d25d98fdf0ba766f8f074871d4f13725e23f9
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/22/2019
-ms.locfileid: "74409980"
+ms.lasthandoff: 12/31/2019
+ms.locfileid: "75548135"
 ---
 # <a name="use-security-baselines-to-configure-windows-10-devices-in-intune"></a>Usar linhas de base de segurança para configurar dispositivos com Windows 10 no Intune
 
@@ -192,9 +192,9 @@ Outros processos que podem alterar posteriormente as configurações no disposit
 
 ## <a name="co-managed-devices"></a>Dispositivos cogerenciado
 
-Linhas de base de segurança em dispositivos gerenciados pelo Intune são semelhantes aos dispositivos cogerenciados com o Configuration Manager. Dispositivos cogerenciados usam o System Center Configuration Manager e o Microsoft Intune para gerenciar dispositivos com Windows 10 simultaneamente. Isso permite que você anexe à nuvem seu investimento existente do Configuration Manager para obter os benefícios do Intune. [Visão geral do cogerenciamento](https://docs.microsoft.com/sccm/comanage/overview) é um excelente recurso se você usa o Configuration Manager e também deseja os benefícios da nuvem.
+Linhas de base de segurança em dispositivos gerenciados pelo Intune são semelhantes aos dispositivos cogerenciados com o Configuration Manager. Os dispositivos cogerenciados usam o Configuration Manager e o Microsoft Intune para gerenciar dispositivos com Windows 10 simultaneamente. Isso permite que você anexe à nuvem seu investimento existente do Configuration Manager para obter os benefícios do Intune. [Visão geral do cogerenciamento](https://docs.microsoft.com/configmgr/comanage/overview) é um excelente recurso se você usa o Configuration Manager e também deseja os benefícios da nuvem.
 
-Ao usar dispositivos cogerenciados, você deve alternar a carga de trabalho **Configuração do dispositivo** (suas configurações) para o Intune. [Cargas de trabalho de configuração de dispositivo](https://docs.microsoft.com/sccm/comanage/workloads#device-configuration) fornece mais informações.
+Ao usar dispositivos cogerenciados, você deve alternar a carga de trabalho **Configuração do dispositivo** (suas configurações) para o Intune. [Cargas de trabalho de configuração de dispositivo](https://docs.microsoft.com/configmgr/comanage/workloads#device-configuration) fornece mais informações.
 
 ## <a name="q--a"></a>Perguntas e Respostas
 

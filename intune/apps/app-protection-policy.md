@@ -6,7 +6,7 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 08/26/2019
+ms.date: 01/06/2020
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.subservice: apps
@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure, get-started, seoapril2019
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 1b712922824fa9d54f33fb43114e852fbeb52a81
-ms.sourcegitcommit: 7cc45ef52dda08479bc6bdff7d11d2f6c0e7b93b
+ms.openlocfilehash: f11ccb51e08e96595dfcb9118c1f479f1b0fc3de
+ms.sourcegitcommit: a66b5916eaab9cb537e483064efc584a6a63a390
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/06/2019
-ms.locfileid: "74899424"
+ms.lasthandoff: 01/07/2020
+ms.locfileid: "75692117"
 ---
 # <a name="app-protection-policies-overview"></a>Visão geral das políticas de proteção de aplicativos
 
@@ -95,7 +95,7 @@ Quando os aplicativos são usados sem restrições, os dados corporativos e pess
 ### <a name="data-protection-with-app-protection-policies-app"></a>Proteção de dados com políticas de proteção do aplicativo
 
 Você pode usar as políticas de proteção do aplicativo para impedir que os dados da empresa sejam salvos no armazenamento local do dispositivo (veja a imagem abaixo). Você também pode restringir a movimentação de dados para outros aplicativos que não estão protegidos pelas políticas de proteção do aplicativo. As configurações de política de proteção de aplicativo incluem:
-- Políticas de realocação de dados, como **Impedir Salvar como** e **Restringir recortar, copiar e colar**.
+- Políticas de realocação de dados, como **Salvar cópias de dados da organização** e **Restringir recortar, copiar e colar**.
 - As configurações de política de acesso como **Exigir PIN simples para acesso** e **Bloquear a execução de aplicativos gerenciados em dispositivos com jailbreak ou raiz**.
 
 ![Imagem conceitual que mostra os dados da empresa sendo protegidos por políticas](./media/app-protection-policy/apps-with-protection-policies.png)
@@ -169,7 +169,7 @@ Os requisitos adicionais para usar os aplicativos [Word, Excel e PowerPoint](htt
 
 - O usuário final deve ter uma licença do [Office 365 Business ou Enterprise](https://products.office.com/business/compare-more-office-365-for-business-plans) vinculada à sua conta do Azure Active Directory. A assinatura deve incluir os aplicativos do Office em dispositivos móveis e pode incluir uma conta de armazenamento em nuvem com o [OneDrive for Business](https://onedrive.live.com/about/business/). As licenças do Office 365 podem ser atribuídas na [centro de administração do Microsoft 365](https://admin.microsoft.com) seguindo estas [instruções](https://support.office.com/article/Assign-or-remove-licenses-for-Office-365-for-business-997596b5-4173-4627-b915-36abac6786dc).
 
-- O usuário final deve configurar um local gerenciado usando o salvamento granular como funcionalidade, na configuração "Impedir Salvar como" da política de proteção do aplicativo. Por exemplo, se o local gerenciado for o OneDrive, será necessário configurar o aplicativo [OneDrive](https://onedrive.live.com/about/) no aplicativo Word, Excel ou PowerPoint do usuário final.
+- O usuário final deve configurar um local gerenciado usando o salvamento granular como funcionalidade na configuração "Salvar cópias de dados da organização" da política de proteção do aplicativo. Por exemplo, se o local gerenciado for o OneDrive, será necessário configurar o aplicativo [OneDrive](https://onedrive.live.com/about/) no aplicativo Word, Excel ou PowerPoint do usuário final.
 
 - Se o local gerenciado for o OneDrive, será necessário direcionar o aplicativo de acordo com a política de proteção do aplicativo implantada para o usuário final.
 

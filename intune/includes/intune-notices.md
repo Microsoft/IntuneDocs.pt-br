@@ -7,14 +7,30 @@ ms.topic: include
 ms.date: 11/19/2019
 ms.author: erikje
 ms.custom: include file
-ms.openlocfilehash: 7373ca24c1ae1f439096d9bedcb8e81979c95586
-ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
+ms.openlocfilehash: 0c64f9a6afc054a3d22518c4305bda62a36d67c7
+ms.sourcegitcommit: 8ab98c2773f112f5cf2d817c170633b15de3dec2
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "74828948"
+ms.lasthandoff: 12/20/2019
+ms.locfileid: "75323077"
 ---
 Esses avisos fornecem informações importantes que podem ajudar você a se preparar para os recursos e as alterações futuras do Intune.
+
+### <a name="updated-feature-new-rbac-role-coming-to-intune--4253397--"></a>Recurso atualizado: nova função RBAC chegando ao Intune<!--4253397-->
+Na atualização de serviço do Intune de janeiro, planejamos lançar uma nova função de segurança no Intune. Você verá essa função listada como "Gerente de segurança do ponto de extremidade" no Intune, e ela é uma expansão da função "Administrador da segurança" do Azure AD.
+ 
+#### <a name="how-does-this-affect-me"></a>Como isso me afeta?
+Hoje, há três funções disponíveis no Azure AD para seus profissionais de segurança:
+- Função de Leitor de segurança no Azure AD, que fornece acesso somente leitura ao Intune.
+- Função de Operador de segurança no Azure AD, que fornece acesso somente leitura ao Intune.
+- Administrador da segurança no Azure AD. Quando o Intune lançar a atualização de janeiro, com permissões somente leitura para o Intune, as novas permissões fornecidas pela função Gerente de segurança do ponto de extremidade serão as seguintes:
+    - Ler, criar, atualizar, excluir e atribuir políticas de conformidade do dispositivo
+    - Ler, excluir e atualizar dispositivos gerenciados
+    - Ler, criar, atualizar, excluir e atribuir linhas de base de segurança
+    - Ler e atualizar tarefas de segurança
+ 
+### <a name="what-do-i-need-to-do-to-prepare-for-this-change"></a>O que preciso fazer para me preparar para essa alteração?
+Revise suas funções RBAC do Intune hoje mesmo. Se você tiver somente funções de Administrador global atualmente, nenhuma alteração será necessária. Se você usar funções e quiser a granularidade que o Gerente de segurança de ponto de extremidade oferece, atribua essa função quando ela estiver disponível. Confira a página [Novidades](../fundamentals/whats-new.md) do Intune para obter informações atualizadas sobre a versão do Intune. 
 
 ### <a name="updated-support-statement-for-adobe-acrobat-reader-for-intune-mobile-app--5746776--"></a>Foi atualizada a instrução de suporte do aplicativo móvel "Adobe Acrobat Reader for Intune"<!--5746776-->
 Compartilhamos no MC188653 no final de agosto, que o aplicativo móvel Adobe Acrobat Reader para Intune estava atingindo o fim da vida útil em 1º de dezembro de 2019 e que a Adobe planejava dar suporte às políticas de proteção de aplicativos do Intune no aplicativo principal Acrobat Reader. Desde então, recebemos comentários dos clientes de que precisávamos dar mais tempo para continuar a permitir que os administradores de TI direcionem e os usuários finais comecem a usar o Adobe Acrobat Reader para Intune. Devido ao alto uso do Adobe Acrobat Reader para Intune em dispositivos de usuário final e sua importância em cenários empresariais, queremos garantir que todas as experiências atendam às necessidades de proteção do aplicativo da sua organização. 
@@ -39,25 +55,6 @@ Após 20 de fevereiro de 2020, esses dispositivos não receberão atualizações
 
 #### <a name="what-do-i-need-to-do-to-prepare-for-this-change"></a>O que preciso fazer para me preparar para essa alteração?
 Confira o relatório do Intune para ver quais dispositivos ou usuários podem ser afetados. Acesse Dispositivos > Todos os dispositivos e filtre por sistema operacional. É possível adicionar colunas extras para ajudar a identificar quem na sua organização tem dispositivos que executam o Windows Phone 8.1. Solicite que os usuários finais atualizem os dispositivos deles para uma versão de sistema operacional com suporte.
-
-### <a name="update-your-intune-outlook-app-protection-policies-app--2576686--"></a>Atualizar suas políticas de proteção de Aplicativo do Outlook do Intune (aplicativo)<!--2576686-->
-Talvez seja necessário executar uma ação se você recebeu o MC195618 em seu Centro de Mensagens. Como compartilhado nas IDs de recurso de roteiro do Microsoft 365: 56325 e 56326, o Intune e o Outlook para iOS e Android estão lançando um suporte para limitar dados confidenciais em notificações por email e lembretes de calendário. Como resultado desses aprimoramentos, o Outlook para iOS e Android removerá o suporte para várias chaves de configuração de aplicativo de proteção de dados que você está aproveitando atualmente para gerenciar notificações.
-
-#### <a name="how-does-this-affect-me"></a>Como isso me afeta?
-Embora os novos recursos não tenham sido enviados, quando isso ocorrer, as seguintes chaves de configuração do aplicativo não funcionarão mais no Outlook para iOS e Android:
-- com.microsoft.outlook.Mail.NotificationsEnabled
-- com.microsoft.outlook.Mail.NotificationsEnabled.UserChangeAllowed
-- com.microsoft.outlook.Calendar.NotificationsEnabled
-- com.microsoft.outlook.Calendar.NotificationsEnabled.UserChangeAllowed
-
-#### <a name="what-do-i-need-to-do-to-prepare-for-this-change"></a>O que preciso fazer para me preparar para essa alteração?
-Recomendamos que você defina a configuração de proteção de dados da Política de Proteção de Aplicativo do Intune de "Notificações de dados da organização" com um valor de "Bloquear dados da organização" em preparação para esse novo recurso. A partir de 16 de dezembro de 2019, o Outlook para iOS e Android honrará a configuração de proteção de dados de "Notificações de dados da organização" e não dará mais suporte às chaves mencionadas anteriormente. Definir essa nova configuração garantirá que os dados confidenciais não sejam vazados quando as chaves de configuração acima não tiverem mais suporte. Além disso, o Outlook fornece granularidade adicional quando a configuração de proteção de dados de "Notificações de dados da organização" é definida como "Bloquear dados da organização" com uma definição de configuração de aplicativo adicional, "Notificações de calendário". A combinação das configurações da Política de Proteção de Aplicativo e essa definição de configuração de aplicativo limita as informações confidenciais nas notificações por email, enquanto expõe informações confidenciais nas notificações de calendário, para que os usuários possam acessar suas reuniões olhando rapidamente a notificação ou o centro de notificações.
-
-#### <a name="additional-information"></a>Informações adicionais
-Confira mais informações sobre configurações do aplicativo e do Outlook em:
-- [Configurações de política de proteção de aplicativo, Android](../apps/app-protection-policy-settings-android.md)
-- [Configurações de política de proteção de aplicativo, iOS](../apps/app-protection-policy-settings-ios.md)
-- [Implantar definições de configuração de aplicativos no Outlook para iOS e Android](https://docs.microsoft.com/exchange/clients-and-mobile-in-exchange-online/outlook-for-ios-and-android/outlook-for-ios-and-android-configuration-with-microsoft-intune)
 
 
 ### <a name="intune-plan-for-change-windows-10-version-1703-company-portal-moving-out-of-support--5026679--"></a>Planejamento do Intune para a mudança: encerramento de suporte da versão 1703 do Portal da Empresa do Windows 10<!--5026679-->
@@ -102,7 +99,7 @@ Se você gerenciar dispositivos Android Enterprise dedicados em seu ambiente, co
 - Para novos registros de dispositivos Android Enterprise dedicados: os usuários finais verão um conjunto diferente de etapas nos dispositivos durante o registro. O registro ainda começará da mesma forma de hoje (com um identificador QR, NFC, Zero-Touch ou de dispositivo), mas, após a versão do serviço de novembro, haverá uma etapa obrigatória de instalação de aplicativo.
 - Para dispositivos Android existentes registrados como dispositivos dedicados: o Intune começará a instalar automaticamente o aplicativo Microsoft Intune nos dispositivos a partir do início de novembro. Você não precisa realizar nenhuma ação. O aplicativo será baixado e instalado automaticamente nos dispositivos. 
 
-#### <a name="what-can-i-do-to-prepare-for-this-change"></a>O que posso fazer para me preparar para essa alteração?
+#### <a name="what-can-i-do-to-prepare-for-this-change"></a>O que fazer para me preparar para essa mudança?
 Você deve planejar a atualização das diretrizes do usuário final e informar a assistência técnica sobre essa alteração. Clique em Informações adicionais para obter mais detalhes e capturas de tela. Atualizaremos nossa página de Novidades quando a alteração começar a ser implantada.
 
 #### <a name="additional-information"></a>Informações adicionais

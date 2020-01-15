@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure; get-started; seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: b9795ca8a585fd926cc269d493760b37aa7666eb
-ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
+ms.openlocfilehash: 92e6aa1a66429c6407556444e903c158aff9dfa0
+ms.sourcegitcommit: 2506cdbfccefd42587a76f14ee50c3849dad1708
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "74051973"
+ms.lasthandoff: 01/11/2020
+ms.locfileid: "75885990"
 ---
 # <a name="what-are-common-ways-to-use-conditional-access-with-intune"></a>Quais são as maneiras comuns de usar o Acesso Condicional com o Intune?
 
@@ -83,17 +83,9 @@ O acesso condicional para computadores fornece recursos semelhantes aos disponí
 
 #### <a name="corporate-owned"></a>De propriedade corporativa
 
-- **Ingressado no domínio do AD local:** Essa tem sido a opção mais comum para organizações que estão razoavelmente confiantes com o fato de que já estão gerenciando seus computadores por meio de políticas de grupo do AD ou com o System Center Configuration Manager.
+- **Ingressado no domínio do AD local:** Essa tem sido a opção mais comum para organizações que estão razoavelmente confiantes com o fato de que já estão gerenciando seus computadores por meio de políticas de grupo do AD ou com o Configuration Manager.
 
 - **Ingressado no domínio do Azure AD e gerenciamento do Intune:** Esse cenário destina-se a organizações que desejam estar na nuvem primeiro (ou seja, usam principalmente serviços de nuvem, com o objetivo de reduzir o uso de uma infraestrutura local) ou somente na nuvem (sem infraestrutura local). O ingresso no Azure AD funciona bem em um ambiente híbrido, permitindo o acesso a aplicativos e recursos locais e na nuvem. O dispositivo se une ao Azure AD e é registrado no Intune, que pode ser usado como critério de acesso condicional ao acessar recursos corporativos.
-
-- **Ingressado no domínio do AD e o System Center Configuration Manager:** No branch atual, o System Center Configuration Manager oferece recursos de acesso condicional que podem avaliar critérios específicos de conformidade, além de ser um computador ingressado no domínio:
-
-  - O computador está criptografado?
-
-  - O antimalware está instalado? Ele está atualizado?
-
-  - O dispositivo está desbloqueado ou com raiz?
 
 #### <a name="bring-your-own-device-byod"></a>BYOD (Traga seu próprio dispositivo)
 

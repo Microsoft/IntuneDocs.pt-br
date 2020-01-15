@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 6e3219e32ef9bea838f0c19258d0b22a99083a12
-ms.sourcegitcommit: 1a22b8b31424847d3c86590f00f56c5bc3de2eb5
+ms.openlocfilehash: fe37ac412d01d3032685a0e66827d20e13b0db64
+ms.sourcegitcommit: 42183c87b137710b8529049f8710d47127e99900
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/21/2019
-ms.locfileid: "74261604"
+ms.lasthandoff: 12/20/2019
+ms.locfileid: "75303069"
 ---
 # <a name="add-groups-to-organize-users-and-devices"></a>Adicionar grupos para organizar usuários e dispositivos
 
@@ -47,7 +47,7 @@ Use as etapas a seguir para criar um novo grupo.
 
 3. Em **Tipo de grupo**, escolha uma das seguintes opções:
 
-    - **Segurança**: Os grupos de segurança definem quem pode acessar recursos e são recomendados para seus grupos no Intune. Por exemplo, você pode criar grupos para usuários, como **Todos os funcionários da Alice** ou **Todas as mulheres na Contoso**. Ou crie grupos para dispositivos, como **Todos os dispositivos iOS** ou **Todos os dispositivos Windows 10 de alunos**.
+    - **Segurança**: Os grupos de segurança definem quem pode acessar recursos e são recomendados para seus grupos no Intune. Por exemplo, você pode criar grupos para usuários, como **Todos os funcionários da Alice** ou **Trabalhadores remotos**. Ou crie grupos para dispositivos, como **Todos os dispositivos iOS** ou **Todos os dispositivos Windows 10 de alunos**.
 
         > [!TIP]
         > Os usuários e grupos criados também podem ser vistos no [Centro de administração do Microsoft 365](https://admin.microsoft.com), no centro de administração do Azure Active Directory e no [Microsoft Intune no portal do Azure](https://go.microsoft.com/fwlink/?linkid=2090973). No locatário de sua organização, você pode criar e gerenciar grupos em todas estas áreas.
@@ -85,7 +85,7 @@ Use as etapas a seguir para criar um novo grupo.
 > - Todos os Dispositivos Android Enterprise
 > - Todos os dispositivos iOS 11 e mais antigos
 > - Marketing
-> - Recursos humanos
+> - Recursos Humanos
 > - Todos os funcionários da Alice
 > - Todos os funcionários do WA
 

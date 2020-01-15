@@ -17,12 +17,12 @@ search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
 ms.reviewer: shpate
-ms.openlocfilehash: 7ce6def40c6c0fff3a28f884c458220283979234
-ms.sourcegitcommit: ce518a5dfe62c546a77f32ef372f36efbaad473f
+ms.openlocfilehash: 001e68fdbab7074abb4e1bbefc697d3e34c47762
+ms.sourcegitcommit: 107fef144013b01ed768ca8973373f9cb3f0f7dc
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/25/2019
-ms.locfileid: "74465780"
+ms.lasthandoff: 01/06/2020
+ms.locfileid: "75683775"
 ---
 # <a name="integrate-windows-hello-for-business-with-microsoft-intune"></a>Integrar o Windows Hello para Empresas com o Microsoft Intune  
 
@@ -53,9 +53,9 @@ Use este artigo para criar uma política padrão do Windows Hello para Empresas 
 
 ## <a name="create-a-windows-hello-for-business-policy"></a>Criar uma política do Windows Hello para Empresas
 
-1. Entre no [Centro de Administração do Gerenciador de Ponto de Extremidade da Microsoft](https://go.microsoft.com/fwlink/?linkid=2109431.
+1. Entre no [Centro de Administração do Gerenciador de Ponto de Extremidade da Microsoft](https://go.microsoft.com/fwlink/?linkid=2109431).
 
-2. Acesse **Dispositivos** > registro** > **Registrar dispositivos** > **Registro do Windows** > **Windows Hello para Empresas**. O painel do Windows Hello para Empresas é exibido.
+2. Acesse **Dispositivos** >  **Registro** > **Registrar dispositivos** > **Registro do Windows** > **Windows Hello para Empresas**. O painel do Windows Hello para Empresas é exibido.
 
 3. Selecione uma das opções a seguir para **Configurar o Windows Hello para Empresas**:
 
@@ -111,7 +111,7 @@ Use este artigo para criar uma política padrão do Windows Hello para Empresas 
 
    - **Permitir entrada por telefone**:
 
-     Se essa opção for definida como **Sim**, os usuários poderão usar um passaporte remoto para servir como um dispositivo portátil complementar para autenticação de computador desktop. O computador desktop deve ter ingressado no Azure Active Directory e o dispositivo complementar deve ser configurado com um PIN do Windows Hello para Empresas.
+     Se essa opção for definida como **Sim**, os usuários poderão usar um passaporte remoto para servir como um dispositivo portátil complementar para autenticação de computador desktop. O computador desktop deve ser associado ao Azure Active Directory e o dispositivo complementar deve ser configurado com um PIN do Windows Hello para Empresas.
 
 ## <a name="windows-holographic-for-business-support"></a>Compatibilidade do Windows Holographic for Business
 

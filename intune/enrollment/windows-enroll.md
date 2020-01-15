@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 0b84cd52dfe2eb6332ddbc89bc00a17ec3361b79
-ms.sourcegitcommit: edd06a494a241d198ca9b0d3030c92195976e0d3
+ms.openlocfilehash: add92c038e33ba1b5873eb0e9588242f8f3d0f57
+ms.sourcegitcommit: e166b9746fcf0e710e93ad012d2f52e2d3ed2644
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/11/2019
-ms.locfileid: "75000424"
+ms.lasthandoff: 12/19/2019
+ms.locfileid: "75207427"
 ---
 # <a name="set-up-enrollment-for-windows-devices"></a>Configurar o registro para dispositivos Windows
 
@@ -37,7 +37,7 @@ Como administrador do Intune, é possível simplificar o registro das seguintes 
 - [Registro de CNAME](#simplify-windows-enrollment-without-azure-ad-premium)
 - [Habilitar o registro em massa](../windows-bulk-enroll.md) (Azure AD Premium e Designer de Configuração do Windows necessários)
 
-Dois fatores determinam como você pode simplificar o registro de dispositivos do Windows:
+Dois fatores determinam como você pode simplificar o registro do dispositivo do Windows:
 
 - **Você usa o Azure Active Directory Premium?** <br>[O Azure AD Premium](https://docs.microsoft.com/azure/active-directory/active-directory-get-started-premium) está incluído no Enterprise Mobility + Security e outros planos de licenciamento.
 - **Quais versões de clientes Windows os usuários registrarão?** <br>Dispositivos Windows 10 podem registrar automaticamente adicionando uma conta corporativa ou escolar. Versões anteriores devem ser registrados usando o aplicativo de Portal da Empresa.
@@ -68,11 +68,11 @@ Quando os usuários padrão entrarem com as credenciais do Microsoft Azure AD, e
 Para simplificar o registro, crie um alias (tipo de registro CNAME) de DNS (servidor de nomes de domínio) que redireciona as solicitações de registro para os servidores do Intune. Caso contrário, os usuários que tentarem se conectar ao Intune precisam inserir o nome do servidor do Intune durante o registro.
 
 **Etapa 1: criar um CNAME** (opcional)<br>
-Criar registros de recurso DNS CNAME para o domínio da sua empresa. Por exemplo, se o site da empresa fosse contoso.com, você criaria um CNAME no DNS que redirecione EnterpriseEnrollment.contoso.com para enterpriseenrollment-s.manage.microsoft.com.
+Crie registros de recursos DNS CNAME para o domínio de sua empresa. Por exemplo, se o site da empresa fosse contoso.com, você criaria um CNAME no DNS que redirecione EnterpriseEnrollment.contoso.com para enterpriseenrollment-s.manage.microsoft.com.
 
-Embora a criação de entradas de DNS CNAME seja opcional, os registros CNAME facilitam o registro para os usuários. Se não for possível encontrar nenhum registro CNAME no registro, os usuários deverão inserir manualmente o nome do servidor MDM: enrollment.manage.microsoft.com.
+Embora a criação de entradas de DNS de CNAME seja opcional, os registros CNAME facilitam o registro para os usuários. Se não for possível encontrar nenhum registro CNAME no registro, os usuários deverão inserir manualmente o nome do servidor MDM enrollment.manage.microsoft.com.
 
-|Tipo|Nome do host|Aponta para|TTL|
+|Digite|Nome do host|Aponta para|TTL|
 |----------|---------------|---------------|---|
 |CNAME|EnterpriseEnrollment.company_domain.com|EnterpriseEnrollment-s.manage.microsoft.com| 1 hora|
 |CNAME|EnterpriseRegistration.company_domain.com|EnterpriseRegistration.windows.net|1 hora|
@@ -85,7 +85,7 @@ Se a empresa usar mais de um sufixo UPN, você precisará criar um CNAME para ca
 
 O administrador de DNS da Contoso precisarão criar os seguintes CNAMEs:
 
-|Tipo|Nome do host|Aponta para|TTL|  
+|Digite|Nome do host|Aponta para|TTL|  
 |----------|---------------|---------------|---|
 |CNAME|EnterpriseEnrollment.contoso.com|EnterpriseEnrollment-s.manage.microsoft.com|1 hora|
 |CNAME|EnterpriseEnrollment.us.contoso.com|EnterpriseEnrollment-s.manage.microsoft.com|1 hora|
@@ -93,7 +93,7 @@ O administrador de DNS da Contoso precisarão criar os seguintes CNAMEs:
 
 `EnterpriseEnrollment-s.manage.microsoft.com` – Dá suporte ao redirecionamento para o serviço Intune com o reconhecimento de domínio a partir do nome de domínio do email
 
-Alterações em registros DNS podem levar até 72 horas para serem propagadas. Não é possível verificar a alteração do DNS no Intune até que o registro de DNS seja propagado.
+As alterações nos registros DNS podem levar até 72 horas para serem propagadas. Não é possível verificar a alteração do DNS no Intune até que o registro de DNS seja propagado.
 
 ## <a name="additional-endpoints-are-supported-but-not-recommended"></a>Pontos de Extremidade Adicionais Têm Suporte, mas Não São Recomendados
 EnterpriseEnrollment-s.manage.microsoft.com é o FQDN preferencial para o registro, mas há dois outros pontos de extremidade que foram usados pelos clientes no passado e que têm suporte. EnterpriseEnrollment.manage.microsoft.com (sem -s) e manage.microsoft.com funcionam conforme o destino para o servidor de descoberta automática, mas o usuário terá que tocar em OK em uma mensagem de confirmação. Se você apontar para EnterpriseEnrollment-s.manage.microsoft.com, o usuário não precisará fazer a etapa de confirmação adicional, portanto, essa é a configuração recomendada
@@ -121,16 +121,19 @@ Para obter mais informações sobre as tarefas do usuário final, consulte [Recu
 ## <a name="registration-and-enrollment-cnames"></a>Registro e CNAMEs de registro
 O Azure Active Directory tem um CNAME diferente que ele usa para registro de dispositivo para dispositivos iOS, Android e Windows. O acesso condicional do Intune requer que os dispositivos sejam registrados, também chamado de "ingressado no espaço de trabalho". Se você planeja usar acesso condicional, também deverá configurar o CNAME EnterpriseRegistration de cada nome de empresa que possui.
 
-| Tipo | Nome do host | Aponta para | TTL |
+| Digite | Nome do host | Aponta para | TTL |
 | --- | --- | --- | --- |
 | NOME | EnterpriseRegistration. company_domain.com | EnterpriseRegistration.windows.net | 1 hora|
 
 Para saber mais sobre registro de dispositivo, confira [Gerenciar identidades de dispositivo usando o portal do Azure](https://docs.microsoft.com/azure/active-directory/devices/device-management-azure-portal)
 
 ## <a name="windows-10-auto-enrollment-and-device-registration"></a>Registro automático e registro de dispositivos do Windows 10
-Embora a criação de entradas de DNS CNAME seja opcional, os registros CNAME facilitam o registro para os usuários. Se nenhum registro CNAME de registro for encontrado, os usuários deverão inserir manualmente o nome do servidor MDM: enrollment.manage.microsoft.us.
 
-| Tipo | Nome do host | Aponta para | TTL |
+Esta seção se aplica aos clientes de nuvem do governo dos EUA.
+
+Embora a criação de entradas de DNS de CNAME seja opcional, os registros CNAME facilitam o registro para os usuários. Se nenhum registro CNAME de registro for encontrado, os usuários deverão inserir manualmente o nome do servidor MDM: enrollment.manage.microsoft.us.
+
+| Digite | Nome do host | Aponta para | TTL |
 | --- | --- | --- | --- |
 | CNAME | EnterpriseEnrollment.company_domain.com | EnterpriseEnrollment-s.manage.microsoft.us | 1 hora|
 |CNAME | EnterpriseRegistration.company_domain.com | EnterpriseRegistration.windows.net | 1 hora |

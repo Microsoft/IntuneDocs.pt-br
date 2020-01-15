@@ -5,7 +5,7 @@ keywords: ''
 author: brenduns
 ms.author: brenduns
 manager: dougeby
-ms.date: 11/20/2019
+ms.date: 12/12/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.subservice: protect
@@ -15,12 +15,12 @@ ms.reviewer: mghadial
 ms.suite: ems
 search.appverid: MET150
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: a7c3398f28d7c396c873dd29f3e3fdd719c1a7c6
-ms.sourcegitcommit: f26039d674eb4d61ab68264dd1a10b2e5e1d842c
+ms.openlocfilehash: ad630eb34b296d7ab77081a1e3063db8dffc64f9
+ms.sourcegitcommit: e166b9746fcf0e710e93ad012d2f52e2d3ed2644
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/02/2019
-ms.locfileid: "74691783"
+ms.lasthandoff: 12/19/2019
+ms.locfileid: "75207444"
 ---
 # <a name="manage-windows-10-software-updates-in-intune"></a>Gerenciar atualizações de software do Windows 10 no Intune
 
@@ -68,9 +68,6 @@ Os pré-requisitos a seguir devem ser atendidos para usar as atualizações do W
   É possível definir manualmente a configuração *Dados de diagnóstico e uso* para dispositivos com Windows 10 ou usar um perfil de restrição de dispositivo do Intune para o Windows 10 e posterior. Se você usar um perfil de restrição de dispositivo, defina a [configuração de restrição de dispositivo](../configuration/device-restrictions-windows-10.md#reporting-and-telemetry) de **Compartilhar dados de uso** como **Básico**, no mínimo. Essa configuração é encontrada na categoria **Relatório e Telemetria** quando você configura uma política de restrição de dispositivo para o Windows 10 ou posterior.
 
   Para obter mais informações sobre os perfis do dispositivo, consulte [definir as configurações de restrição de dispositivo](../configuration/device-restrictions-configure.md).
-
-- Se você usa o portal clássico do Azure, [migre suas configurações no portal do Azure](#migrate-update-settings-to-the-azure-portal).
-
 
 ## <a name="windows-10-update-rings"></a>Anéis de atualização do Windows 10
 
@@ -124,7 +121,7 @@ A exclusão de um anel do Intune não modifica as configurações nos dispositiv
 
 #### <a name="pause"></a>Pausar
 
-Escolha **Pausar** para impedir que os dispositivos atribuídos recebam Atualizações de Recursos ou Atualizações de Qualidade por até 35 dias a partir do momento em que você pausar o anel. Após o máximo de dias transcorrido, a funcionalidade de pausa expirará automaticamente e o dispositivo verificará se há atualizações aplicáveis nas Atualizações do Windows. Após essa verificação, você pode pausar as atualizações novamente.
+Escolha **Pausar** para impedir que os dispositivos atribuídos recebam Atualizações de Recursos ou Atualizações de Qualidade por até 35 dias a partir do momento em que você pausar o anel. Após o máximo de dias transcorrido, a funcionalidade de pausa expirará automaticamente e o dispositivo verificará se há atualizações aplicáveis nas Atualizações do Windows. Após essa verificação, você poderá pausar as atualizações novamente.
 Se você retomar um anel de atualização pausado e pausá-lo novamente, o período de pausa será redefinido para 35 dias.
 
 ##### <a name="to-pause-a-ring"></a>Para pausar um anel
@@ -227,7 +224,7 @@ Quando um dispositivo recebe uma política de atualizações de recursos do Wind
 
 3. Em **Informações básicas**, especifique um nome, uma descrição (opcional) e, em **Atualização de recurso para implantar**, selecione a versão do Windows com o conjunto de recursos desejado e, em seguida, selecione **Próximo**.
 
-4. Em **Atribuições**, escolha **+ Selecionar grupos para incluir** e atribua o anel de atualização a um ou mais grupos. Selecione **Avançar** para continuar.
+4. Em **Atribuições**, escolha **+ Selecionar grupos para incluir** e atribua a implantação de atualização do recurso a um ou mais grupos. Selecione **Avançar** para continuar.
 
 5. Em **Revisar + criar**, examine as configurações e selecione **Criar** quando estiver pronto para salvar a política de atualizações de recursos do Windows 10.  
 
@@ -240,17 +237,6 @@ Nesse painel, você pode:
 - Selecionar **Excluir** para excluir a política do Intune e removê-la dos dispositivos.
 - Selecionar **Propriedades** para modificar a implantação.  No painel *Propriedades*, selecione **Editar** para abrir as *Configurações de implantação ou Atribuições*, nas quais é possível modificar a implantação.
 - Selecionar **Status de atualização do usuário final** para exibir as informações sobre a política.
-
-## <a name="migrate-update-settings-to-the-azure-portal"></a>Migrar as configurações de atualização para o portal do Azure
-
-O Portal Clássico do Azure também tem um número limitado de outras configurações de atualização do Windows 10 no perfil de configuração do dispositivo. Se alguma dessas definições estiver configurada ao migrar para o portal do Azure, recomendamos realizar as seguintes ações:
-
-1. crie anéis de atualização do Windows 10 no portal do Azure com as configurações necessárias. A configuração **Permitir recursos de pré-lançamento** não tem suporte no portal do Azure, pois não é mais aplicável aos builds mais recentes do Windows 10. Você poderá definir as outras três outras configurações e outras configurações de atualização do Windows 10 quando criar anéis de atualização.
-
-   > [!NOTE]
-   > As configurações de atualização do Windows 10 criadas no Portal Clássico não são exibidas no Portal do Azure após a migração. No entanto, essas configurações são aplicadas. Se você migrar qualquer uma dessas configurações e editar a política migrada do Portal do Azure, essas configurações serão removidas da política.
-
-2. Exclua as configurações de atualização no Portal Clássico. Depois de migrar para o Portal do Azure e adicionar as mesmas configurações a um anel de atualização, você deve excluir as configurações no portal clássico para evitar possíveis conflitos de política. Por exemplo, quando a mesma configuração é definida com valores diferentes, há um conflito. Não há uma maneira fácil de descobrir porquê a configuração definida no portal clássico não é exibida no portal do Azure.
 
 ## <a name="next-steps"></a>Próximas etapas
 

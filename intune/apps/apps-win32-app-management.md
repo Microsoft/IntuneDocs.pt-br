@@ -6,7 +6,7 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 11/26/2019
+ms.date: 01/02/2020
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.subservice: apps
@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: e8b3ee799374f4b3777f771d4bd6e186ddaeb55c
-ms.sourcegitcommit: 73b362173929f59e9df57e54e76d19834f155433
+ms.openlocfilehash: 371800b39e04695eadc906465fdb013488836df9
+ms.sourcegitcommit: 3189c3a82cfd1ff3a58153dfec2e12fae7b9bdc7
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/27/2019
-ms.locfileid: "74564033"
+ms.lasthandoff: 01/03/2020
+ms.locfileid: "75622528"
 ---
 # <a name="intune-standalone---win32-app-management"></a>Intune autônomo – gerenciamento de aplicativos Win32
 
@@ -328,6 +328,9 @@ Cada dependência seguirá a lógica de repetição do aplicativo Win32 do Intun
 
 Os clientes do Windows 10 1709 e posterior baixarão o conteúdo do aplicativo Win32 do Intune usando um componente de Otimização de Entrega no cliente do Windows 10. A otimização de entrega tem a funcionalidade de ponto a ponto ativada por padrão. A Otimização de Entrega pode ser definida por política de grupo e por meio da configuração de Dispositivo do Intune. Para saber mais, consulte [Otimização de entrega para Windows 10](https://docs.microsoft.com/windows/deployment/update/waas-delivery-optimization). 
 
+> [!NOTE]
+> Você também pode instalar um servidor do Cache Conectado da Microsoft em seus pontos de distribuição do Configuration Manager para armazenar em cache o conteúdo de aplicativos Win32. Para obter mais informações, confira [Cache Conectado da Microsoft no Configuration Manager – Suporte para aplicativos Win32 do Intune](https://docs.microsoft.com/configmgr/core/plan-design/hierarchy/microsoft-connected-cache#bkmk_intune).
+
 ## <a name="install-required-and-available-apps-on-devices"></a>Instalar aplicativos obrigatórios e disponíveis em dispositivos
 
 O usuário final verá as Notificações do sistema do Windows para as instalações de aplicativo obrigatórias e disponíveis. A imagem a seguir mostra um exemplo de notificação do sistema em que a instalação do aplicativo não é concluída até que o dispositivo seja reiniciado. 
@@ -355,7 +358,7 @@ Configure a disponibilidade do aplicativo com base em uma data e hora para o apl
     > As opções de **Tipo de atribuição** incluem o seguinte:<br>
     > - **Obrigatório**: você pode optar por **tornar este aplicativo obrigatório para todos os usuários** e/ou **tornar este aplicativo obrigatório para todos os dispositivos**.<br>
     > - **Disponível para dispositivos registrados**: você pode optar por **tornar esse aplicativo disponível para todos os usuários com dispositivos registrados**.<br>
-    > - **Desinstalação**: você pode optar por ***desinstalar este aplicativo para todos os usuários** e/ou **desinstalar este aplicativo para todos os dispositivos**.
+    > - **Desinstalar**: você pode optar por ***desinstalar este aplicativo para todos os usuários** e/ou **desinstalar este aplicativo para todos os dispositivos**.
 
 8. Para modificar as opções da **Experiência do usuário final**, selecione **Editar**.
 9. No painel **Editar atribuição**, configure as **Notificações do usuário final** como **Mostrar todas as notificações do sistema**. É possível configurar as **Notificações do usuário final** como **Mostrar todas as notificações do sistema**, **Mostrar notificações do sistema nas reinicializações do computador** ou **Ocultar todas as notificações do sistema**.
@@ -375,7 +378,7 @@ Se for necessário, você poderá suprimir a exibição de notificações do sis
 > Os aplicativos Win32 instalados pela extensão de gerenciamento do Intune não serão desinstalados em dispositivos não registrados. Os administradores podem aproveitar a exclusão de atribuição para não oferecer aplicativos Win32 em dispositivos BYOD.
 
 ## <a name="troubleshoot-win32-app-issues"></a>Solucionar problemas do aplicativo Win32
-Os logons do agente no computador cliente estão comumente no `C:\ProgramData\Microsoft\IntuneManagementExtension\Logs`. É possível usar o `CMTrace.exe` para exibir esses arquivos de log. *CMTrace.exe* pode ser baixado em [Ferramentas de Cliente do Configuration Manager](https://docs.microsoft.com/sccm/core/support/tools). 
+Os logons do agente no computador cliente estão comumente no `C:\ProgramData\Microsoft\IntuneManagementExtension\Logs`. É possível usar o `CMTrace.exe` para exibir esses arquivos de log. Para obter mais informações, confira [CMTrace](https://docs.microsoft.com/configmgr/core/support/cmtrace).
 
 ![Captura de tela de logs do Agente no computador cliente](./media/apps-win32-app-management/apps-win32-app-10.png)    
 

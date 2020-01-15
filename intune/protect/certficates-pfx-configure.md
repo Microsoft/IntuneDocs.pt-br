@@ -1,11 +1,11 @@
 ---
 title: Usar certificados de chave pública e privada no Microsoft Intune – Azure | Microsoft Docs
-description: Usar certificados PKCS (Public Key Cryptography Standards) com o Microsoft Intune. Isso inclui trabalhar com certificados raiz e modelos de certificado, instalar o NDES (Conector de Certificado do Intune) e os perfis de configuração de dispositivo para um Certificado PKCS.
+description: Use certificados PKCS (Public Key Cryptography Standards) com o Microsoft Intune, trabalhe com certificados raiz e modelos de certificados, instale o NDES (Conector de Certificado do Intune) e use os perfis de configuração de dispositivo para um Certificado PKCS.
 keywords: ''
 author: brenduns
 ms.author: brenduns
 manager: dougeby
-ms.date: 11/07/2019
+ms.date: 12/12/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.subservice: protect
@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure; seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 3db085e6e88f8f57eb0276afa77290df8574568f
-ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
+ms.openlocfilehash: 9142ea3f7728fd24883a311bbf967a7a59dbf457
+ms.sourcegitcommit: e166b9746fcf0e710e93ad012d2f52e2d3ed2644
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "73801682"
+ms.lasthandoff: 12/19/2019
+ms.locfileid: "75207240"
 ---
 # <a name="configure-and-use-pkcs-certificates-with-intune"></a>Configurar e usar certificados PKCS com o Intune
 
@@ -116,7 +116,7 @@ Para autenticar um dispositivo com VPN, WiFi ou outros recursos, um dispositivo 
 5. Na guia **Geral**, defina **Nome de exibição do modelo** como algo significativo para você.
 
     > [!WARNING]
-    > **Nome do modelo** é, por padrão, o mesmo que o **Nome de exibição do modelo** *sem espaços*. Observe o nome do modelo, pois ele será necessário mais tarde.
+    > **Nome do modelo** é, por padrão, o mesmo que o **Nome de exibição do modelo***sem espaços*. Observe o nome do modelo, pois ele será necessário mais tarde.
 
 6. Em **Tratamento de Solicitação**, selecione **Permitir que a chave privada seja exportada**.
 7. Em **Criptografia**, confirme se o **Tamanho mínimo da chave** está definido como 2048.
@@ -161,9 +161,7 @@ Para autenticar um dispositivo com VPN, WiFi ou outros recursos, um dispositivo 
 7. **Aplicar** > **Fechar**
 8. Retorne para o portal do Intune (**Intune** > **Configuração do Dispositivo** > **Conectores de Certificação**). Depois de alguns minutos, uma marca de seleção verde é exibida e o **Status da conexão** fica **Ativo**. O servidor do conector agora pode se comunicar com o Intune.
 9. Se você tiver um proxy da Web em seu ambiente de rede, talvez seja necessário configurações adicionais para habilitar o funcionamento do conector. Para obter mais informações, consulte [Trabalhar com servidores de proxy locais existentes](https://docs.microsoft.com/azure/active-directory/manage-apps/application-proxy-configure-connectors-with-proxy-servers) na documentação do Azure Active Directory.
-
-> [!NOTE]  
-> O Microsoft Intune Certificate Connector é compatível com o TLS 1.2. Se o TLS 1.2 estiver instalado no servidor que hospeda o conector, este usará o TLS 1.2. Caso contrário, o TLS 1.1 será usado. Atualmente, o TLS 1.1 é usado para autenticação entre os dispositivos e o servidor.
+<ul><li>Android Enterprise (*Perfil de Trabalho*)</li><li>iOS</li><li>macOS</li><li>Windows 10 e posterior > O Microsoft Intune Certificate Connector dá suporte ao TLS 1.2. Se o TLS 1.2 estiver instalado no servidor que hospeda o conector, este usará o TLS 1.2. Caso contrário, o TLS 1.1 será usado. Atualmente, o TLS 1.1 é usado para autenticação entre os dispositivos e o servidor.
 
 ## <a name="create-a-trusted-certificate-profile"></a>Criar um perfil de certificado confiável
 
@@ -208,17 +206,17 @@ Para autenticar um dispositivo com VPN, WiFi ou outros recursos, um dispositivo 
    
    |Setting     | Plataforma     | Detalhes   |
    |------------|------------|------------|
-   |**Limite de renovação (%)**        |Tudo         |O recomendado é 20%  | 
-   |**Período de validade do certificado**  |Tudo         |Se você não alterou o modelo de certificado, essa opção pode ser definida como um ano. |
-   |**KSP (provedor de armazenamento de chaves)**   |Windows 10  | Para o Windows, selecione o local em que as chaves serão armazenadas no dispositivo. |
-   |**Autoridade de certificação**      |Tudo         |Exibe o FQDN (nome de domínio totalmente qualificado) interno da AC corporativa.  |
-   |**Nome da autoridade de certificação** |Tudo         |Lista o nome da AC corporativa, como "Autoridade de Certificação da Contoso". |
-   |**Tipo de certificado**             |macOS       |Selecione um tipo: <br> **-** Os certificados de **Usuário** podem conter atributos de usuário e de dispositivo na entidade e no SAN do certificado. <br><br>**-** Os certificados de **Dispositivo** podem conter somente os atributos do dispositivo na entidade e no SAN do certificado. Use Dispositivo para cenários como dispositivos sem usuário, como quiosques, ou para dispositivos compartilhados.  <br><br> Essa seleção afeta o formato do nome da entidade. |
-   |**Formato de nome de entidade**          |Tudo         |Para a maioria das plataformas, defina essa opção como **Nome comum**, a menos que seja exigido o contrário.<br><br>Para macOS, o formato de nome da entidade é determinado pelo tipo de certificado. Confira [Formato de nome da entidade para macOS](#subject-name-format-for-macos) mais adiante neste artigo. |
-   |**Nome alternativo da entidade**     |Tudo         |Defina essa opção como **Nome UPN**, a menos que seja exigido o contrário. |
-   |**Uso estendido de chave**           |**-** Administrador do dispositivo Android <br>**-** Android Enterprise (*Proprietário do Dispositivo*, *Perfil de Trabalho*) <br> **-** Windows 10 |Normalmente, os certificados exigirão *Autenticação de cliente* para que o usuário ou dispositivo possa autenticar-se em um servidor. |
-   |**Permitir que todos os aplicativos acessem a chave privada** |macOS  |Configure como **Habilitar** para dar aos aplicativos configurados para o dispositivo Mac associado acesso à chave privada dos certificados PKCS. <br><br> Para obter mais informações sobre essa configuração, confira *AllowAllAppsAccess* na seção de Conteúdo do Certificado da [Referência do Perfil de Configuração](https://developer.apple.com/business/documentation/Configuration-Profile-Reference.pdf) na documentação do desenvolvedor da Apple. |
-   |**Certificado raiz**             |**-** Administrador do dispositivo Android <br> **-** Android Enterprise (*Proprietário do Dispositivo*, *Perfil de Trabalho*) |Selecione um perfil de Certificado de Autoridade de Certificação raiz ‘que foi atribuído anteriormente. |
+   |**Limite de renovação (%)**        |<ul><li>Todos         |O recomendado é 20%  | 
+   |**Período de validade do certificado**  |<ul><li>Todos         |Se você não alterou o modelo de certificado, essa opção pode ser definida como um ano. |
+   |**KSP (provedor de armazenamento de chaves)**   |<ul><li>Windows 10  | Para o Windows, selecione o local em que as chaves serão armazenadas no dispositivo. |
+   |**Autoridade de certificação**      |<ul><li>Todos         |Exibe o FQDN (nome de domínio totalmente qualificado) interno da AC corporativa.  |
+   |**Nome da autoridade de certificação** |<ul><li>Todos         |Lista o nome da AC corporativa, como "Autoridade de Certificação da Contoso". |
+   |**Tipo de certificado**             |<ul><li>Android Enterprise (*Perfil de Trabalho*)</li><li>iOS</li><li>macOS</li><li>Windows 10 e posterior|Selecione um tipo: <ul><li> Os certificados de **usuário** podem conter atributos de usuário e de dispositivo na entidade e no SAN do certificado. </il><li>Certificados de **dispositivo** podem conter somente os atributos do dispositivo na entidade e no SAN do certificado. Use Dispositivo para cenários como dispositivos sem usuário, como quiosques, ou para dispositivos compartilhados.  <br><br> Essa seleção afeta o formato do nome da entidade. |
+   |**Formato de nome de entidade**          |<ul><li>Todos         |Para a maioria das plataformas, defina essa opção como **Nome comum**, a menos que seja exigido o contrário.<br><br>Para as plataformas a seguir, o formato de nome da entidade é determinado pelo tipo de certificado: <ul><li>Android Enterprise (*Perfil de Trabalho*)</li><li>iOS</li><li>macOS</li><li>Windows 10 e posterior</li></ul>  <p> Confira [Formato de nome da entidade](#subject-name-format) mais adiante neste artigo. |
+   |**Nome alternativo da entidade**     |<ul><li>Todos         |Defina essa opção como **Nome UPN**, a menos que seja exigido o contrário. |
+   |**Uso estendido de chave**           |<ul><li> Administrador do dispositivo Android </li><li>Android Enterprise (*Proprietário do Dispositivo*, *Perfil de Trabalho*) </li><li>Windows 10 |Normalmente, os certificados exigirão *Autenticação de cliente* para que o usuário ou dispositivo possa autenticar-se em um servidor. |
+   |**Permitir que todos os aplicativos acessem a chave privada** |<ul><li>macOS  |Configure como **Habilitar** para dar aos aplicativos configurados para o dispositivo Mac associado acesso à chave privada dos certificados PKCS. <br><br> Para obter mais informações sobre essa configuração, confira *AllowAllAppsAccess* na seção de Conteúdo do Certificado da [Referência do Perfil de Configuração](https://developer.apple.com/business/documentation/Configuration-Profile-Reference.pdf) na documentação do desenvolvedor da Apple. |
+   |**Certificado raiz**             |<ul><li>Administrador do dispositivo Android </li><li>Android Enterprise (*Proprietário do Dispositivo*, *Perfil de Trabalho*) |Selecione um perfil de Certificado de Autoridade de Certificação raiz ‘que foi atribuído anteriormente. |
 
 5. Selecione **OK** > **Criar** para salvar seu perfil.
 
@@ -227,11 +225,18 @@ Para autenticar um dispositivo com VPN, WiFi ou outros recursos, um dispositivo 
    > [!NOTE]
    > Em dispositivos com um perfil do Android Enterprise, os certificados instalados por meio de um perfil de certificado PKCS não ficam visíveis no dispositivo. Para confirmar se o certificado foi implantado com êxito, verifique o status do perfil no console do Microsoft Intune.
 
-### <a name="subject-name-format-for-macos"></a>Formato de nome de entidade para macOS
+### <a name="subject-name-format"></a>Formato de nome de entidade
 
-Quando você cria um perfil de certificado PKCS do macOS, as opções para o formato de nome da entidade dependem do Tipo de certificado selecionado, **Usuário** ou **Dispositivo**.  
+Quando você cria um perfil de certificado PKCS para as plataformas a seguir, as opções para o formato de nome da entidade dependem do tipo de certificado escolhido, **Usuário** ou **Dispositivo**.  
 
-> [!NOTE]  
+Plataformas:
+
+- Android Enterprise (*Perfil de Trabalho*)
+- iOS
+- macOS
+- Windows 10 e posterior
+
+> [!NOTE]
 > Há um problema conhecido no uso do PKCS para obter certificados, [que é o mesmo problema observado no uso do SCEP](certificates-profile-scep.md#avoid-certificate-signing-requests-with-escaped-special-characters), quando o nome da entidade na CSR (Solicitação de Assinatura de Certificado) resultante inclui um dos seguintes caracteres como um caractere de escape (seguido por uma barra invertida \\):
 > - \+
 > - ;

@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure; get-started
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: d9e337d47757e3c5507c94433f90d5c2863bc1b0
-ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
+ms.openlocfilehash: c82805bf70259d43d738644e5663b93533bcb56a
+ms.sourcegitcommit: e166b9746fcf0e710e93ad012d2f52e2d3ed2644
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "72503015"
+ms.lasthandoff: 12/19/2019
+ms.locfileid: "75207155"
 ---
 # <a name="assign-a-role-to-an-intune-user"></a>Atribuir uma função a um usuário do Intune
 
@@ -32,27 +32,23 @@ Para criar, editar ou atribuir funções, sua conta deve ter uma das seguintes p
 - **Administrador Global**
 - **Administrador de Serviços do Intune**
 
-1. Entre no [portal do Azure](https://portal.azure.com).
+1. No [Centro de administração do Gerenciador de Ponto de Extremidade da Microsoft](https://go.microsoft.com/fwlink/?linkid=2109431), escolha **Funções** > **Todas as funções**.
 
-2. Escolha **Todos os serviços** > **Intune**. O Intune está localizado na seção **Monitoramento + Gerenciamento**.
+2. Na folha **Funções do Intune – Todas as funções**, escolha a função interna que você deseja atribuir.
 
-3. Na folha **Intune**, escolha **Funções** > **Todas as funções**.
+3. Na folha <*nome da função*> – **Visão Geral**, escolha **Gerenciar** > **Atribuições**.
 
-4. Na folha **Funções do Intune – Todas as funções**, escolha a função interna que você deseja atribuir.
+4. Na folha da função personalizada, escolha **Atribuir**.
 
-5. Na folha <*nome da função*> – **Visão Geral**, escolha **Gerenciar** > **Atribuições**.
+5. Na folha **Atribuições de Função**, insira um **Nome de Atribuição** e uma **Descrição de atribuição** opcional para a atribuição.
 
-6. Na folha da função personalizada, escolha **Atribuir**.
+6. Para **Membros (Grupos)** , escolha um grupo que contém o usuário para o qual você deseja conceder permissões.
 
-7. Na folha **Atribuições de Função**, insira um **Nome de Atribuição** e uma **Descrição de atribuição** opcional para a atribuição.
+7. Para **Escopo (Grupos)** , escolha um grupo que contém os usuários/dispositivos que o membro acima terá permissão para gerenciar.
 
-8. Para **Membros (Grupos)** , escolha um grupo que contém o usuário para o qual você deseja conceder permissões.
+8. Para **Escopo (Marcas)** , escolha as marcas nas quais essa atribuição de função será aplicada.
 
-9. Para **Escopo (Grupos)** , escolha um grupo que contém os usuários/dispositivos que o membro acima terá permissão para gerenciar.
-
-10. Para **Escopo (Marcas)** , escolha as marcas nas quais essa atribuição de função será aplicada.
-
-11. Quando terminar, escolha **OK**. A nova atribuição é exibida na lista de atribuições.
+9. Quando terminar, escolha **OK**. A nova atribuição é exibida na lista de atribuições.
 
 
 ## <a name="next-steps"></a>Próximas etapas

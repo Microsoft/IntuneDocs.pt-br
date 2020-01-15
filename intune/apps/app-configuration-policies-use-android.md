@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 80d6068a17e1d278f9226e26c9efab24d597e52e
-ms.sourcegitcommit: 73b362173929f59e9df57e54e76d19834f155433
+ms.openlocfilehash: ec80922cf2539fdbacb572fd96c5a5e45549b5c3
+ms.sourcegitcommit: e166b9746fcf0e710e93ad012d2f52e2d3ed2644
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/27/2019
-ms.locfileid: "74564262"
+ms.lasthandoff: 12/19/2019
+ms.locfileid: "75204997"
 ---
 # <a name="add-app-configuration-policies-for-managed-android-enterprise-devices"></a>Adicionar políticas de configuração de aplicativo para dispositivos Android Enterprise gerenciados
 
@@ -34,15 +34,15 @@ As políticas de configuração de aplicativo no Microsoft Intune fornecem confi
 > [!NOTE]  
 > Nem todo aplicativo dá suporte à configuração de aplicativo. Verifique com o desenvolvedor do aplicativo se este é compatível com as políticas de configuração de aplicativo.
 
-1. No [Intune](https://go.microsoft.com/fwlink/?linkid=2090973), escolha **Aplicativos** > **Políticas de configuração de aplicativo** >  **Adicionar**.
-2. Insira as seguintes propriedades:
+1. No [Centro de administração do Gerenciador de Ponto de Extremidade da Microsoft](https://go.microsoft.com/fwlink/?linkid=2109431), escolha **Aplicativos** > **Políticas de configuração de aplicativo** >  **Adicionar** > **Dispositivos gerenciados**.
+2. Adicione as seguintes propriedades:
 
     - **Nome**: Insira um nome descritivo para a política. Nomeie suas políticas para que você possa identificá-las facilmente mais tarde. Por exemplo, um bom nome de política é **Política de aplicativo Android Enterprise Nine Work para toda a empresa**.
     - **Descrição**: Insira uma descrição para o perfil. Essa configuração é opcional, mas recomendada.
-    - **Tipo de registro do dispositivo**: Selecione **Dispositivos gerenciados**.
+    - **Tipo de registro do dispositivo**: Essa configuração é definida como **Dispositivos gerenciados**.
     - **Plataforma**: Selecione **Android**.
 
-3. Escolha **Aplicativo Associado**. Escolha o aplicativo para o qual deseja definir uma política de configuração de aplicativo. Escolha na lista de aplicativos do Google Play Gerenciado que foram aprovados e sincronizados com o Intune.
+3. Escolha **Aplicativo Associado**. Escolha o aplicativo Android ao qual essa política de configuração de aplicativos será associada. Escolha na lista de [aplicativos do Google Play Gerenciado que foram aprovados e sincronizados com o Intune](~/apps/apps-add-android-for-work.md).
 4. Selecione **Permissões**. É possível definir configurações usando:
 
     - [Designer de configuração](#use-the-configuration-designer)
@@ -61,7 +61,7 @@ Você pode usar o designer de configuração para aplicativos do Google Play Ger
 2. Para cada chave e valor na configuração, defina:
 
     - **Tipo de valor**: O tipo de dados do valor de configuração. Para tipos de valor de cadeia de caracteres, opcionalmente, você pode escolher um perfil de certificado ou variável como o tipo de valor.
-    - **Valor da configuração**: O valor para a configuração. Se você escolher a variável ou o certificado para o **Tipo de valor**, escolha em uma lista de variáveis ou perfis de certificado. Se você escolher um certificado, o alias do certificado implantado no dispositivo será preenchido no tempo de execução.
+    - **Valor da configuração**: O valor para a configuração. Se você escolher a variável ou o certificado para o **Tipo de valor**, escolha em uma lista de variáveis ou perfis de certificado. Se você escolher um certificado, o alias do certificado implantado no dispositivo será preenchido no runtime.
 
 ### <a name="supported-variables-for-configuration-values"></a>Variáveis compatíveis para valores de configuração
 
@@ -110,12 +110,12 @@ Você também pode pré-configurar as permissões de aplicativo para acessar os 
 
 Por exemplo, um aplicativo usa o microfone do dispositivo. O usuário é solicitado a conceder ao aplicativo permissão para usar o microfone.
 
-1. No [Intune](https://go.microsoft.com/fwlink/?linkid=2090973), escolha **Aplicativos** > **Políticas de configuração de aplicativo** >  **Adicionar**.
-2. Insira as seguintes propriedades:
+1. No [Centro de administração do Gerenciador de Ponto de Extremidade da Microsoft](https://go.microsoft.com/fwlink/?linkid=2109431), escolha **Aplicativos** > **Políticas de configuração de aplicativo** >  **Adicionar** > **Dispositivos gerenciados**.
+2. Adicione as seguintes propriedades:
 
     - **Nome**: Insira um nome descritivo para a política. Nomeie suas políticas para que você possa identificá-las facilmente mais tarde. Por exemplo, um bom nome de política é **Política de aplicativo de permissões de prompt Android Enterprise para toda a empresa**.
     - **Descrição**. Insira uma descrição para o perfil. Essa configuração é opcional, mas recomendada.
-    - **Tipo de registro do dispositivo**: Selecione **Dispositivos gerenciados**.
+    - **Tipo de registro do dispositivo**: Essa configuração é definida como **Dispositivos gerenciados**.
     - **Plataforma**: Selecione **Android**.
 
 3. Escolha **Aplicativo Associado**. Escolha o aplicativo para o qual deseja definir uma política de configuração. Escolha na lista de aplicativos de perfil de trabalho Android que você aprovou e sincronizou com o Intune.

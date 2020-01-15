@@ -5,7 +5,7 @@ keywords: ''
 author: brenduns
 ms.author: brenduns
 manager: dougeby
-ms.date: 10/19/2019
+ms.date: 12/18/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.subservice: protect
@@ -13,12 +13,12 @@ ms.localizationpriority: high
 ms.technology: ''
 search.appverid: MET150
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 0f9750603d19d9b19697c7d2660351c4586432f6
-ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
+ms.openlocfilehash: bb146fdee7a1d7d770575334eeed84f73cda8894
+ms.sourcegitcommit: e166b9746fcf0e710e93ad012d2f52e2d3ed2644
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "73984191"
+ms.lasthandoff: 12/19/2019
+ms.locfileid: "75207478"
 ---
 # <a name="add-ios-software-update-policies-in-intune"></a>Adicionar políticas de atualização de software do iOS no Intune
 
@@ -32,8 +32,8 @@ O dispositivo faz check-in no Intune aproximadamente a cada 8 horas. Se uma atua
 
 ## <a name="configure-the-policy"></a>Configurar a política
 
-1. Conecte-se ao [Intune](https://go.microsoft.com/fwlink/?linkid=2090973).
-2. Selecione **Atualizações de software** > **Atualizar as políticas do iOS** > **Criar**.
+1. Entre no [Centro de Administração do Gerenciador de Ponto de Extremidade da Microsoft](https://go.microsoft.com/fwlink/?linkid=2109431).
+2. Escolha **Dispositivos** > **Atualizar políticas para iOS** > **Criar**.
 3. Na guia **Conceitos Básicos**, especifique um nome para esta política e uma descrição (opcional) e, em seguida, selecione **Avançar**.
 
    ![Guia Conceitos Básicos](./media/software-updates-ios/basics-tab.png) 
@@ -77,7 +77,7 @@ Para obter diretrizes da equipe de suporte do Intune, confira [Atrasar a visibil
 ## <a name="edit-a-policy"></a>Editar uma política
 Você pode editar uma política existente, incluindo a alteração dos horários restritos:
 
-1. Em **Atualizações de software**, selecione **Atualizar políticas para iOS** e selecione a política que você deseja editar.
+1. Escolha **Dispositivos** > **Atualizar políticas para iOS**. Escolha a política que você deseja editar.
 
 2. Ao exibir as **Propriedades** das políticas, selecione **Editar** para a página de política que você deseja modificar.  
    ![Editar uma política](./media/software-updates-ios/edit-policy.png)   

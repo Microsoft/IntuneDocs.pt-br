@@ -16,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 321595a2ce8849b3d150b68f9dcc38dfda6ad940
-ms.sourcegitcommit: 2fddb293d37453736ffa54692d03eca642f3ab58
+ms.openlocfilehash: 88b7411095aee1b1d3a892ce4845812ceb1a9ac9
+ms.sourcegitcommit: a82d25d98fdf0ba766f8f074871d4f13725e23f9
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/22/2019
-ms.locfileid: "74390295"
+ms.lasthandoff: 12/31/2019
+ms.locfileid: "75547064"
 ---
 # <a name="create-and-assign-scep-certificate-profiles-in-intune"></a>Criar e atribuir perfis de Certificado SCEP no Intune
 
@@ -195,7 +195,7 @@ Depois de [configurar a infraestrutura](certificates-scep-configure.md) para dar
      Selecione as opções de uso de chave para o certificado:
 
      - **Assinatura digital**: Permita a troca de chaves apenas quando uma assinatura digital ajuda a proteger a chave.
-     - **Codificação de chave**: Permita a troca de chaves apenas quando a chave estiver criptografada.
+     - **Criptografia de chave**: Permita a troca de chaves apenas quando a chave estiver criptografada.
 
    - **Tamanho da chave (bits)** :
 
@@ -275,7 +275,7 @@ Atribua perfis de Certificado SCEP da mesma maneira que você [implanta perfis d
 
 - Para publicar um certificado em um dispositivo rapidamente depois que o dispositivo for registrado, atribua o perfil de certificado a um grupo de usuários em vez de um grupo de dispositivos. Se você atribuir um grupo de dispositivos, um registro de dispositivo completo será necessário para que o dispositivo receba políticas.
 
-- Se você usar o cogerenciamento para o Intune e o Configuration Manager, no Configuration Manager, [defina o controle deslizante da carga de trabalho](https://docs.microsoft.com/sccm/comanage/how-to-switch-workloads) para a Política de Acesso ao Recurso como **Intune** ou **Piloto do Intune**. Essa configuração permite que os clientes do Windows 10 iniciem o processo de solicitar o certificado.
+- Se você usar o cogerenciamento para o Intune e o Configuration Manager, no Configuration Manager, [defina o controle deslizante da carga de trabalho](https://docs.microsoft.com/configmgr/comanage/how-to-switch-workloads) para as Políticas de Acesso ao Recurso como **Intune** ou **Piloto do Intune**. Essa configuração permite que os clientes do Windows 10 iniciem o processo de solicitar o certificado.
 
 - Embora você crie e atribua o perfil de certificado confiável e o perfil de Certificado SCEP separadamente, ambos precisam ser atribuídos. Sem os dois instalados em um dispositivo, a política de certificação SCEP falhará. Verifique se todos os perfis de certificado raiz confiável também são implantados nos mesmos grupos do perfil SCEP.
 

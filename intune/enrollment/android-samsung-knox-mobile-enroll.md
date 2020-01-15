@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 5f290370dd6ec05677a7073d9ca3edd854c9aa5e
-ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
+ms.openlocfilehash: ecb043300578e5eba0613b6fa5f0fb249b1e515c
+ms.sourcegitcommit: a66b5916eaab9cb537e483064efc584a6a63a390
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "72505577"
+ms.lasthandoff: 01/07/2020
+ms.locfileid: "75692154"
 ---
 # <a name="automatically-enroll-android-devices-by-using-samsungs-knox-mobile-enrollment"></a>Inscrever automaticamente os dispositivos Android usando o Knox Mobile Enrollment da Samsung
 
@@ -75,13 +75,13 @@ Após o registro bem-sucedido da sua empresa, você pode criar seu perfil de MDM
 
 ### <a name="for-android"></a>Para Android
 
-Para obter orientação passo a passo, confira as instruções no [Assistente de instalação de Perfil do Samsung Knox](https://docs.samsungknox.com/KME-Getting-Started/Content/getting-started-wizard.htm).
+Para obter orientação passo a passo, confira as instruções de [Criar Perfil da Samsung](https://docs.samsungknox.com/KME-Getting-Started/Content/create-profiles.htm).
 
 | Campos do perfil de MDM| Necessário? | Valores |
 |-------------------|-----------|-------|
 |URI do servidor MDM     | Não        |Deixe em branco.
 |Nome do perfil       | Sim       |Insira um nome de perfil de sua escolha.
-|descrição        | Não        |Insira um texto que descreva o perfil.
+|description        | Não        |Insira um texto que descreva o perfil.
 |APK do Agente MDM      | Sim       |https://aka.ms/intune_kme
 |Habilitar este aplicativo como um Proprietário do Dispositivo Google | Não | Deixe essa opção desmarcada para Android. Essa opção se aplica somente ao Android Enterprise.
 |Ignorar Assistente de Configuração  | Não        |Escolha essa opção para ignorar os avisos de instalação de dispositivo padrão para o usuário final.

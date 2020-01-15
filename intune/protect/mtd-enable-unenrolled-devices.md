@@ -18,19 +18,19 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: ''
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 84f82cf2fde7d400e5531bac219b6cbb4877032f
-ms.sourcegitcommit: 960ffb2214c35d75ad219fa2571a999529a0abd4
+ms.openlocfilehash: 9571f7d0ae10f33007d5ae50b403580232c2e870
+ms.sourcegitcommit: 06dce5c8111592ad774247e86e539dd3128117e5
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/25/2019
-ms.locfileid: "74478927"
+ms.lasthandoff: 12/30/2019
+ms.locfileid: "75545916"
 ---
 # <a name="enable-the-mobile-threat-defense-connector-in-intune-for-unenrolled-devices"></a>Habilitar o conector de Defesa contra Ameaças Móveis no Intune para dispositivos não registrados
 
 Durante a instalação do MTD (Defesa contra Ameaças Móveis), você configurou uma política para classificar ameaças em seu console do parceiro de Defesa contra Ameaças Móveis e criou a política de proteção de aplicativo no Intune. Se já tiver configurado o conector do Intune no console do parceiro MTD, agora você poderá habilitar a conexão do MTD para aplicativos de parceiro MTD.
 
 > [!NOTE]
-> Este artigo aplica-se a todos os parceiros de Defesa contra Ameaças Móveis que dão suporte a políticas de proteção de aplicativo: Better Mobile (Android), Zimperium (iOS), Lookout for Work (Android/iOS).
+> Este artigo aplica-se a todos os parceiros de Defesa contra Ameaças Móveis que dão suporte a políticas de proteção de aplicativo: Better Mobile (Android), Zimperium (Android/iOS), Lookout for Work (Android/iOS).
 
 ## <a name="classic-conditional-access-policies-for-mtd-apps"></a>As políticas de acesso condicional clássicas para aplicativos MTD
 
@@ -56,17 +56,17 @@ Para exibir as políticas de acesso condicional clássicas, no [Azure](https://p
 
 2. Selecione **Administração de locatários** > **Conectores e tokens** > **Defesa contra Ameaças Móveis**.
 
-3. No painel **Defesa contra Ameaças Móveis**, escolha **Adicionar**.
+3. No painel **Defesa Contra Ameaças Móveis**, escolha **Adicionar**.
 
 4. Escolha sua solução MTD como o **conector de Defesa contra Ameaças Móveis para configuração** na lista suspensa.
 
     <!-- ![MTD setup in Intune](PLACEHOLDER, need a new screenshot of this page) -->
 
-5. Habilite as opções de alternância de acordo com os requisitos de sua organização. A alternância da visibilidade das opções varia dependendo do parceiro de MTD.
+5. Habilite as opções de alternância de acordo com os requisitos da sua organização. A alternância da visibilidade das opções varia dependendo do parceiro de MTD.
 
 ## <a name="mobile-threat-defense-toggle-options"></a>Opções de alternância de Defesa contra Ameaças Móveis
 
-Decida quais opções de alternância do MTD você precisa habilitar de acordo com os requisitos da sua organização. Veja mais detalhes abaixo:
+Você pode decidir quais opções de alternância de MTD você precisa habilitar de acordo com os requisitos da sua organização. Aqui estão mais detalhes:
 
 **Configurações de política de proteção de aplicativo**
 

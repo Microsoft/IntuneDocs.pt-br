@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: a104b4d41a364c552a8ebac73ff3341af71d6d21
-ms.sourcegitcommit: 73b362173929f59e9df57e54e76d19834f155433
+ms.openlocfilehash: 2c447c67e631365e831f033c2811c36d936f2e85
+ms.sourcegitcommit: a82d25d98fdf0ba766f8f074871d4f13725e23f9
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/27/2019
-ms.locfileid: "74564158"
+ms.lasthandoff: 12/31/2019
+ms.locfileid: "75547996"
 ---
 # <a name="add-app-configuration-policies-for-managed-ios-devices"></a>Adicionar políticas de configuração de aplicativos para dispositivos iOS gerenciados
 
@@ -50,35 +50,35 @@ Depois de selecionar os grupos incluídos para sua política de configuração d
 
 ## <a name="create-an-app-configuration-policy"></a>Criar uma política de configuração do aplicativo
 
-1. Entre no [Intune](https://go.microsoft.com/fwlink/?linkid=2090973).
-3. Selecione **Aplicativos** > **Políticas de configuração de aplicativo** > **Adicionar**.
-5. Defina os seguintes detalhes:
+1. Entre no [Centro de Administração do Gerenciador de Ponto de Extremidade da Microsoft](https://go.microsoft.com/fwlink/?linkid=2109431).
+2. Escolha **Aplicativos** > **Políticas de configuração de aplicativo** > **Adicionar** > **Aplicativos gerenciados**.
+3. Defina os seguintes detalhes:
     - **Nome** – o nome do perfil exibido no portal do Azure.
     - **Descrição** – a descrição do perfil que é exibida no portal do Azure.
-    - **Tipo de registro de dispositivo**: escolha **Dispositivos gerenciados** para dispositivos que foram registrados no Intune.
-6. Selecione **iOS** para **Plataforma**.
-7. Escolha **Aplicativo associado**. Em seguida, no painel **Aplicativo associado**, escolha o aplicativo gerenciado para o qual você deseja aplicar a configuração e selecione **OK**.
-8. No painel **Adicionar política de configuração**, escolha **Definições de configuração**.
-9. Selecione **Formato de definições de configuração**. Escolha um dos seguintes métodos para adicionar informações de configuração:
+    - **Tipo de registro de dispositivo** – Essa configuração é definida como **Dispositivos gerenciados**.
+4. Selecione **iOS** para **Plataforma**.
+5. Escolha **Aplicativo associado**. Em seguida, no painel **Aplicativo associado**, escolha o aplicativo gerenciado para o qual você deseja aplicar a configuração e selecione **OK**.
+6. Escolha **Definições de configuração** para exibir o painel **Definições de configuração**.
+7. Selecione **Formato de definições de configuração**. Escolha um dos seguintes métodos para adicionar informações de configuração:
     - **Usar o designer de configuração**
     - **Inserir dados XML**<br><br>
     Para obter detalhes sobre como usar o designer de configuração, confira [Usar o designer de configuração](#use-configuration-designer). Para obter detalhes sobre como inserir dados XML, confira [Inserir dados XML](#enter-xml-data). 
-10. Após adicionar suas informações de configuração, escolha **OK** e, em seguida, escolha **Adicionar** para adicionar a política de configuração. O painel de visão geral da política de configuração é exibido.
-11. Selecione **Atribuições** para exibir as opções de inclusão e exclusão. 
+8. Após adicionar suas informações de configuração, escolha **OK** e, em seguida, escolha **Adicionar** para adicionar a política de configuração. O painel de visão geral da política de configuração é exibido.
+9. Selecione **Atribuições** para exibir as opções de inclusão e exclusão. 
 
     ![Captura de tela da guia Incluir de Atribuições de política](./media/app-configuration-policies-use-ios/app-config-policy01.png)
-12. Selecione **Todos os Usuários** na guia **Inclusão**.
+10. Selecione **Todos os Usuários** na guia **Inclusão**.
 
     ![Captura de tela de Atribuições de política – opção de lista suspensa Todos os usuários](./media/app-configuration-policies-use-ios/app-config-policy02.png)
-13. Selecione a guia **Excluir**. 
-14. Clique em **Selecionar grupos para excluir** para exibir o painel relacionado.
+11. Selecione a guia **Excluir**. 
+12. Clique em **Selecionar grupos para excluir** para exibir o painel relacionado.
 
     ![Captura de tela Atribuições de política – Painel Selecionar grupos para excluir](./media/app-configuration-policies-use-ios/app-config-policy03.png)
-15. Escolha os grupos que você deseja excluir e, em seguida, clique em **Selecionar**.
+13. Escolha os grupos que você deseja excluir e, em seguida, clique em **Selecionar**.
 
     >[!NOTE]
     >Ao adicionar um grupo, se nenhum outro grupo ainda tiver sido incluído para um determinado tipo de atribuição, ele será pré-selecionado e ficará inalterável para outros tipos de atribuição de inclusão. Assim, esse grupo que foi usado, não poderá ser usado como um grupo excluído.
-16. Clique em **Salvar**.
+14. Clique em **Salvar**.
 
 ## <a name="use-configuration-designer"></a>Usar o designer de configuração
 
@@ -153,7 +153,7 @@ Quando você cria um arquivo de configuração de aplicativo, você pode especif
 
 ### <a name="supported-xml-plist-data-types"></a>Tipos de dados XML PList com suporte
 
-O Intune dá suporte para os seguintes tipos de dados em uma lista de propriedades:
+O Intune dá suporte aos seguintes tipos de dados em uma lista de propriedades:
 
 - &lt;inteiro&gt;
 - &lt;real&gt;
@@ -182,7 +182,7 @@ Os registros de DEP (Programa de Registro de Dispositivos da Apple) não são co
 
 1. No Intune, se necessário, adicione o Portal da Empresa do Intune em **Intune** > **Aplicativos** > **Todos os aplicativos** > **Adicionar**.
 2. Acesse **Aplicativos** > **Políticas de configuração de aplicativos** para criar uma política de configuração para o aplicativo Portal da Empresa.
-3. Crie uma política de configuração de aplicativo com o XML abaixo. Para saber mais sobre como criar uma política de configuração de aplicativos e inserir dados XML, confira [Adicionar políticas de configuração de aplicativos para dispositivos iOS gerenciados](app-configuration-policies-use-ios.md) ou, para MDM híbrido, consulte [Aplicar configurações aos aplicativos iOS com políticas de configuração de aplicativos no System Center Configuration Manager](https://docs.microsoft.com/sccm/mdm/deploy-use/configure-ios-apps-with-app-configuration-policies).
+3. Crie uma política de configuração de aplicativo com o XML abaixo. Para saber mais sobre como criar uma política de configuração de aplicativos e inserir dados XML, confira [Adicionar políticas de configuração de aplicativos para dispositivos iOS gerenciados](app-configuration-policies-use-ios.md) ou, para MDM híbrido, confira [Aplicar configurações aos aplicativos iOS com políticas de configuração de aplicativos no Configuration Manager](https://docs.microsoft.com/configmgr/mdm/deploy-use/configure-ios-apps-with-app-configuration-policies).
 
     ``` xml
     <dict>

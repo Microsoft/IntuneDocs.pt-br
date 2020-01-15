@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 24f15cb179dfc2b12b642f5f196d04dce58d4377
-ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
+ms.openlocfilehash: 5c18f3e8fb14d8592789b39856ec420790fad286
+ms.sourcegitcommit: a82d25d98fdf0ba766f8f074871d4f13725e23f9
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "72505205"
+ms.lasthandoff: 12/31/2019
+ms.locfileid: "75547540"
 ---
 # <a name="create-a-design"></a>Criar um design
 
@@ -84,7 +84,7 @@ O ambiente atual pode influenciar as decisões de design e deve ser documentado 
 
   - Como o ambiente de computador e servidor está sendo gerenciado?
 
-  - O System Center Configuration Manager está sendo usado? Você está usando uma plataforma de gerenciamento do sistema de terceiros?
+  - Você está usando o Microsoft Endpoint Configuration Manager? Você está usando uma plataforma de gerenciamento do sistema de terceiros?
 
 - **Solução de VPN**
 
@@ -101,7 +101,7 @@ Lembre-se de observar os projetos ou outros planos em vigor que podem afetar o a
 | **SharePoint** | SharePoint local | Não há planos de migração para o SharePoint Online |  
 | **MDM atual** | Exchange ActiveSync |  |
 | **Solução de certificado** | Microsoft Server 2012 R2, Serviços de Certificados do AD | Usar somente o PKI para Servidores de Site |
-| **Gerenciamento do Sistema** | System Center Configuration Manager CB 1606 | Gostaria de investigar a solução híbrida do Intune? |
+| **Gerenciamento do Sistema** | Configuration Manager CB 1606 | Gostaria de investigar a solução híbrida do Intune? |
 | **Solução de VPN** | Cisco AnyConnect |  |
 
 
@@ -109,7 +109,7 @@ Lembre-se de observar os projetos ou outros planos em vigor que podem afetar o a
 
 ## <a name="choose-an-intune-deployment-option"></a>Escolher uma opção de implantação do Intune
 
-O Intune oferece duas opções de implantação: independente e híbrida. Autônomo refere-se ao serviço do Intune em execução na nuvem, enquanto híbrido refere-se à integração do Intune ao System Center Configuration Manager. O objetivo principal deste guia é o uso da opção autônoma. [Decida qual opção atende aos seus requisitos de negócios](https://docs.microsoft.com/sccm/mdm/understand/choose-between-standalone-intune-and-hybrid-mobile-device-management).
+O Intune oferece duas opções de implantação: independente e híbrida. Autônomo refere-se ao serviço do Intune em execução na nuvem, enquanto híbrido refere-se à integração do Intune ao Configuration Manager. O objetivo principal deste guia é o uso da opção autônoma. [Decida qual opção atende aos seus requisitos de negócios](https://docs.microsoft.com/configmgr/mdm/understand/choose-between-standalone-intune-and-hybrid-mobile-device-management).
 
 > [!Important]
 >A integração de novos clientes MDM híbridos foi preterida. Para obter mais informações, confira a postagem no blog [Migrar do Gerenciamento de dispositivo móvel híbrido para o Intune no Azure](https://techcommunity.microsoft.com/t5/Intune-Customer-Success/Move-from-Hybrid-Mobile-Device-Management-to-Intune-on-Azure/ba-p/280150).

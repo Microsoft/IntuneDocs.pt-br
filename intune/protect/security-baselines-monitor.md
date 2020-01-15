@@ -16,12 +16,12 @@ ms.reviewer: shpate
 ms.suite: ems
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 7b7f14e939e7241cd34c01d73e9af822dea7acdc
-ms.sourcegitcommit: a7b479c84b3af5b85528db676594bdb3a1ff6ec6
+ms.openlocfilehash: cbf82c0bef88e4a6d0e790f4b0ecdf73d2731d5d
+ms.sourcegitcommit: 9bb1bcd9f1bdd53b470073da956bbd8b0935dfbc
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/22/2019
-ms.locfileid: "74410118"
+ms.lasthandoff: 12/31/2019
+ms.locfileid: "75556395"
 ---
 # <a name="monitor-security-baseline-and-profiles-in-microsoft-intune"></a>Monitorar perfis e linha de base de segurança no Microsoft Intune
 
@@ -42,10 +42,14 @@ O painel **Visão geral** fornece dois métodos para monitorar o status:
 - **Exibição do dispositivo** – um resumo de quantos dispositivos estão em cada categoria de status para a linha de base.
 - **Por categoria** – uma exibição que exibe cada categoria na linha de base e inclui o percentual de dispositivos para cada grupo de status para cada categoria de linha de base.
 
-Cada dispositivo é representado por um dos seguintes status, que são usados na exibição do *dispositivo* e nas exibições *por categoria*:
+Cada dispositivo é representado por um dos seguintes status (usados na exibição do *dispositivo* e nas exibições *por categoria*):
 
 - **Corresponde à linha de base** – todas as configurações na linha de base correspondem às configurações recomendadas.
 - **Não corresponde à linha de base** – pelo menos uma configuração na linha de base não corresponde às configurações recomendadas.
+
+  > [!NOTE]
+  > Quando você cria ou edita um perfil de linha de base, qualquer alteração feita em um valor padrão ou em uma configuração resulta no status "Não corresponde à linha de base". Para obter ajuda para determinar as configurações que foram alteradas, entre em contato com Suporte da Microsoft. 
+
 - **Configurado incorretamente** – pelo menos uma configuração não foi configurada corretamente. Esse status significa que a configuração está em um estado de conflito, erro ou pendente.
 - **Não aplicável** – pelo menos uma configuração não é aplicável e não foi aplicada.
 

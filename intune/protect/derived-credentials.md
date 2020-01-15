@@ -5,7 +5,7 @@ keywords: ''
 author: brenduns
 ms.author: brenduns
 manager: dougeby
-ms.date: 10/31/2019
+ms.date: 12/18/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.localizationpriority: high
@@ -16,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: c4d0772f9a0afce0607d0193bfb82ea6bd22709d
-ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
+ms.openlocfilehash: f9e8bc347dc6336f665fcabfb4e716fef4818515
+ms.sourcegitcommit: e166b9746fcf0e710e93ad012d2f52e2d3ed2644
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "73445329"
+ms.lasthandoff: 12/19/2019
+ms.locfileid: "75207189"
 ---
 # <a name="use-derived-credentials-in-microsoft-intune"></a>Usar credenciais derivadas no Microsoft Intune
 
@@ -160,28 +160,30 @@ Evite exigir o uso de uma credencial derivada para acessar um processo que você
 
 Antes de criar políticas que exijam o uso de uma credencial derivada, configure um emissor de credenciais no console do Intune. Um emissor de credenciais derivadas é uma configuração de todo o locatário. Os locatários dão suporte apenas a um único emissor por vez.
 
-1. Entre no [Intune](https://go.microsoft.com/fwlink/?linkid=2090973) e acesse **Configuração do Dispositivo** > **Credenciais Derivadas**.
+1. Entre no [Centro de Administração do Gerenciador de Ponto de Extremidade da Microsoft](https://go.microsoft.com/fwlink/?linkid=2109431).
+2. Escolha **Administração de locatários** > **Conectores e tokens** > **Credenciais Derivadas**.
 
-   ![Configurar credenciais derivadas no console](./media/derived-credentials/configure-provider.png)
+    > [!div class="mx-imgBorder"]
+    > ![Configurar credenciais derivadas no console](./media/derived-credentials/configure-provider.png)
 
-2. Especifique um **Nome de exibição** amigável para a política do emissor de credenciais derivadas.  Esse nome não é mostrado para seus usuários do dispositivo.
+3. Especifique um **Nome de exibição** amigável para a política do emissor de credenciais derivadas.  Esse nome não é mostrado para seus usuários do dispositivo.
 
-3. Para o **Emissor de credenciais derivadas**, selecione o emissor de credenciais derivadas que você escolheu para seu locatário:
+4. Para o **Emissor de credenciais derivadas**, selecione o emissor de credenciais derivadas que você escolheu para seu locatário:
    - DISA Purebred
    - Entrust Datacard
    - Intercede  
 
-4. Especifique uma **URL de ajuda de credencial derivada** para fornecer um link para uma localização que inclui instruções personalizadas para ajudar os usuários a obterem credenciais derivadas para sua organização. As instruções devem ser específicas da sua organização e do fluxo de trabalho necessário para obter uma credencial do seu emissor escolhido. O link é exibido no aplicativo Portal da Empresa e deve ser acessível do dispositivo.
+5. Especifique uma **URL de ajuda de credencial derivada** para fornecer um link para uma localização que inclui instruções personalizadas para ajudar os usuários a obterem credenciais derivadas para sua organização. As instruções devem ser específicas da sua organização e do fluxo de trabalho necessário para obter uma credencial do seu emissor escolhido. O link é exibido no aplicativo Portal da Empresa e deve ser acessível do dispositivo.
 
    Se você não especificar sua própria URL, o Intune fornecerá um link para detalhes genéricos que não podem abranger todos os cenários. Essas diretrizes genéricas podem não ser precisas para seu ambiente.
 
-5. Selecione uma ou mais opções para o **Tipo de notificação**. Os tipos de notificação são os métodos que você usa para informar os usuários sobre os seguintes cenários:
+6. Selecione uma ou mais opções para o **Tipo de notificação**. Os tipos de notificação são os métodos que você usa para informar os usuários sobre os seguintes cenários:
 
    - Registrar um dispositivo com um emissor para obter uma nova credencial derivada.
    - Obter uma nova credencial derivada quando a credencial atual estiver perto da expiração.
    - Usar uma credencial derivada com uma política para Wi-Fi, VPN, email ou autenticação de aplicativo e para assinatura e criptografia S/MIME.
 
-6. Quando estiver pronto, selecione **Salvar** para concluir a configuração do emissor de credenciais derivadas.
+7. Quando estiver pronto, selecione **Salvar** para concluir a configuração do emissor de credenciais derivadas.
 
 Após salvar a configuração, você poderá fazer alterações em todos os campos, exceto pelo *Emissor de credenciais derivadas*.  Para alterar o emissor, confira [Alterar o emissor de credenciais derivadas](#change-the-derived-credential-issuer).
 
@@ -216,19 +218,20 @@ Você pode especificar uma **Credencial derivada** para os seguintes tipos de pe
 
 ### <a name="use-derived-credentials-for-app-authentication"></a>Usar credenciais derivadas para autenticação do aplicativo
 
-Use credenciais derivadas para autenticação baseada em certificado para sites e aplicativos. Para entregar uma credencial derivada para a autenticação do aplicativo, siga estas etapas no console do Intune:  
+Use credenciais derivadas para autenticação baseada em certificado para sites e aplicativos. Para oferecer uma credencial derivada para a autenticação do aplicativo:
 
-1. Entre no [Intune](https://go.microsoft.com/fwlink/?linkid=2090973) e acesse a **Configuração do Dispositivo** > **Perfis** e selecione **Criar Perfil**.
+1. Entre no [Centro de Administração do Gerenciador de Ponto de Extremidade da Microsoft](https://go.microsoft.com/fwlink/?linkid=2109431).
+2. Selecione **Dispositivos** > **Perfis de configuração** > **Criar perfil**.
+3. Insira as seguintes configurações:
 
-2. Insira um nome amigável para o perfil em **Nome**.
+    - **Nome**: Insira um nome descritivo para o perfil. Nomeie seus perfis para que você possa identificá-los facilmente mais tarde. Por exemplo, um bom nome de perfil seria **Credencial derivada para o perfil de dispositivos iOS**.
+    - **Descrição**: insira uma descrição que proporciona uma visão geral da configuração e demais detalhes importantes.
+    - **Plataforma**: Escolha **iOS/iPadOS**.
+    - **Tipo de perfil**: Escolha **Credencial derivada**.
 
-3. Selecione **Plataforma** para **iOS**.
-
-4. Para **Tipo de perfil**, selecione **Credencial derivada**.
-
-5. Selecione **OK** e clique em **Criar**.
-
-6. Selecione **Atribuições** para escolher quais grupos devem receber a política.
+4. Selecione **OK** para salvar suas alterações.
+5. Quando terminar, escolha **OK** > **Criar** para criar o perfil do Intune. Após a conclusão, seu perfil será mostrado na lista **Dispositivos – Perfis de configuração**.
+6. Escolha seu novo perfil > **Atribuições**. Escolha os grupos que devem receber a política.
  
 Os usuários recebem a notificação pelo aplicativo ou por email dependendo das configurações especificadas quando você configurou o emissor de credenciais derivadas. A notificação solicita que o usuário inicie o Portal da Empresa para que as políticas de credenciais derivadas possam ser processadas.
 
@@ -252,11 +255,10 @@ Depois de alterar o emissor, os usuários devem obter uma nova credencial deriva
 > [!IMPORTANT]  
 > Se você excluir um emissor e reconfigurar imediatamente esse mesmo emissor, você ainda deverá atualizar perfis e dispositivos para usar credenciais derivadas desse emissor. As credenciais derivadas que foram obtidas antes de você excluir o emissor não são mais válidas.
 
-1. Entre no [Intune](https://go.microsoft.com/fwlink/?linkid=2090973) e acesse **Configuração do Dispositivo** > **Credenciais Derivadas**.
-
-2. Selecione **Excluir** para remover o emissor de credenciais derivadas atual.
-
-3. Configure um novo emissor.
+1. Entre no [Centro de Administração do Gerenciador de Ponto de Extremidade da Microsoft](https://go.microsoft.com/fwlink/?linkid=2109431).
+2. Escolha **Administração de locatários** > **Conectores e tokens** > **Credenciais Derivadas**.
+3. Selecione **Excluir** para remover o emissor de credenciais derivadas atual.
+4. Configure um novo emissor.
 
 ### <a name="update-profiles-that-use-derived-credentials"></a>Atualizar perfis que usam credenciais derivadas
 
@@ -268,4 +270,4 @@ Depois de excluir um emissor e adicionar um novo, os usuários do dispositivo de
 
 ## <a name="next-steps"></a>Próximas etapas
 
-[Criar perfis de configuração de dispositivo](../configuration/device-profile-create.md)
+[Criar perfis de configuração de dispositivo](../configuration/device-profile-create.md).

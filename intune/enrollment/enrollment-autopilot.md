@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: bce0e96ecdd4cf254273e26564b8cb132a6d2080
-ms.sourcegitcommit: 73b362173929f59e9df57e54e76d19834f155433
+ms.openlocfilehash: 4e5a16a8be6fcce8c6c34d3ddf8979b17eccddd1
+ms.sourcegitcommit: fb72b19986f34907d228c856d2e6949751ec02a1
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/27/2019
-ms.locfileid: "74563850"
+ms.lasthandoff: 01/13/2020
+ms.locfileid: "75920131"
 ---
 # <a name="enroll-windows-devices-in-intune-by-using-the-windows-autopilot"></a>Registrar dispositivos Windows no Intune usando o Windows Autopilot  
 O Windows Autopilot simplifica a inscrição de dispositivos no Intune. Compilar e manter imagens de sistema operacional personalizadas é um processo que consome muito tempo. Além disso, geralmente se gasta muito tempo para aplicar essas imagens personalizadas de sistema operacional aos novos dispositivos para prepará-los para o uso antes de fornecê-los aos usuários finais. Com o Microsoft Intune e o Autopilot, é possível dar novos dispositivos seus usuários finais sem precisar criar, manter e aplicar imagens personalizadas do sistema operacional para os dispositivos. Quando usa o Intune para gerenciar dispositivos do Autopilot, você pode gerenciar políticas, perfis, aplicativos e muito mais, depois de registrá-los. Para obter uma visão geral dos benefícios, cenários e pré-requisitos, confira [Visão geral do Windows Autopilot](https://docs.microsoft.com/windows/deployment/windows-autopilot/windows-10-autopilot).
@@ -49,11 +49,11 @@ Para obter mais informações, confira Entender o cmdlet do PowerShell.
 
 É possível adicionar dispositivos Windows Autopilot importando um arquivo CSV com as respectivas informações.
 
-1. No [Centro de Administração do Gerenciador de Ponto de Extremidade da Microsoft](https://go.microsoft.com/fwlink/?linkid=2109431), escolha **Dispositivos** > **Windows** > **Dispositivos**  (em **Programa de Implantação do Windows Autopilot** > **Importar**.
+1. No [Centro de Administração do Gerenciador de Ponto de Extremidade da Microsoft](https://go.microsoft.com/fwlink/?linkid=2109431), selecione **Dispositivos** > **Windows** > **Registro do Windows** > **Dispositivos** (em **Programa de Implantação do Windows Autopilot** > **Importar**.
 
     ![Captura de tela de dispositivos Windows Autopilot](./media/enrollment-autopilot/autopilot-import-device.png)
 
-2. Em **Adicionar dispositivos do Windows Autopilot**, navegue até um arquivo CSV que inclui a listagem de dispositivos que você pretende adicionar. O arquivo CSV precisa listar números de série, IDs de produto do Windows, hashes de hardware, marcas de grupo opcionais e usuário atribuído opcional. Você pode ter até 500 linhas na lista. Use o cabeçalho e o formato de linha mostrados abaixo:
+2. Em **Adicionar dispositivos do Windows Autopilot**, navegue até um arquivo CSV que inclui a listagem de dispositivos que você pretende adicionar. O arquivo CSV precisa listar números de série, IDs de produto do Windows, hashes de hardware, marcas de grupo opcionais e usuário atribuído opcional. Você pode ter até 500 linhas na lista. Para saber como obter informações sobre o dispositivo, confira [Adicionar dispositivos ao Windows AutoPilot](https://docs.microsoft.com/windows/deployment/windows-autopilot/add-devices#device-identification). Use o cabeçalho e o formato de linha mostrados abaixo:
 
     `Device Serial Number,Windows Product ID,Hardware Hash,Group Tag,Assigned User`</br>
     `<serialNumber>,<ProductID>,<hardwareHash>,<optionalGroupTag>,<optionalAssignedUser>`
@@ -178,11 +178,6 @@ Pré-requisitos: O Portal da Empresa do Azure Active Directory foi configurado e
     ![Captura de tela do nome amigável](./media/enrollment-autopilot/friendly-name.png)
 
 4. Escolha **OK**.
-
-## <a name="autopilot-deployments-report"></a>Relatório de implantações do Autopilot
-É possível ver detalhes sobre cada dispositivo implantado usando o Windows Autopilot.
-Para ver o relatório, vá ao [Centro de Administração do Gerenciador de Ponto de Extremidade da Microsoft](https://go.microsoft.com/fwlink/?linkid=2109431), escolha **Dispositivos** > **Monitor** > **Implantações do Autopilot**.
-Os dados ficam disponíveis por 30 dias após a implantação.
 
 
 ## <a name="delete-autopilot-devices"></a>Excluir dispositivos Autopilot

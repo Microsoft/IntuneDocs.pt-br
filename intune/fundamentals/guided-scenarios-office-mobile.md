@@ -6,7 +6,7 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 10/16/2019
+ms.date: 01/06/2020
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.localizationpriority: high
@@ -16,14 +16,14 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: bd02e2b7f9582308109d1e6986d7e6a8014e5af7
-ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
+ms.openlocfilehash: 3399cf006543c0a3554c4c6ec812554462d74231
+ms.sourcegitcommit: a66b5916eaab9cb537e483064efc584a6a63a390
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "72585703"
+ms.lasthandoff: 01/07/2020
+ms.locfileid: "75691816"
 ---
-# <a name="guided-scenario---secure-microsoft-office-mobile-apps"></a>Cenário guiado – Aplicativos móveis do Microsoft Office seguros 
+# <a name="guided-scenario---secure-microsoft-office-mobile-apps"></a>Cenário guiado – Aplicativos móveis seguros do Microsoft Office 
 
 Seguindo esse cenário guiado no portal de Gerenciamento de Dispositivos, você pode habilitar a proteção básica de aplicativo do Intune em dispositivos iOS e Android.
 
@@ -46,7 +46,7 @@ Os aplicativos móveis do Office, bem como o Microsoft Edge para Dispositivos M�
 As [políticas de proteção de aplicativo do Intune](~/apps/app-protection-policy.md) ajudam a proteger seus arquivos de trabalho nos dispositivos registrados no Intune. Use também as políticas de proteção de aplicativo em dispositivos dos funcionários que não estão registrados no gerenciamento do Intune. Nesse caso, mesmo que sua empresa não gerencie o dispositivo, ainda é necessário verificar se os arquivos de trabalho e recursos estão protegidos.
 
 Você pode usar as Políticas de proteção de aplicativo para impedir que usuários salvem arquivos de trabalho em locais não protegidos. Você também pode restringir a movimentação de dados para outros aplicativos que não estão protegidos pelas políticas de proteção do aplicativo. As configurações de política de proteção de aplicativo incluem:
-- Políticas de realocação de dados, como Impedir Salvar Como e Restringir recortar, copiar e colar.
+- Políticas de realocação de dados, como **Salvar cópias de dados da organização** e **Restringir recortar, copiar e colar**.
 - Configurações de política de acesso para exigir PIN simples para acesso e bloquear a execução de aplicativos gerenciados em dispositivos com jailbreak ou desbloqueados por rooting.
 
 O acesso condicional baseado no aplicativo e o gerenciamento de aplicativo cliente adicionam uma camada de segurança, garantindo que apenas os aplicativos cliente que dão suporte às políticas de Proteção de Aplicativo do Intune podem acessar o Exchange Online e outros serviços do Office 365.
@@ -62,7 +62,7 @@ Neste exemplo, o administrador aplicou políticas de proteção de aplicativo ao
 Você precisará seguir as permissões de administrador do Intune:
 
    - Permissões de leitura, criação, exclusão e atribuição de aplicativos gerenciados
-   - Permissões de leitura, criação e atribuição de política
+   - Permissões de leitura, criação e atribuição de conjuntos de políticas
    - Permissão de leitura da organização
 
 ## <a name="step-1---introduction"></a>Etapa 1 – Introdução

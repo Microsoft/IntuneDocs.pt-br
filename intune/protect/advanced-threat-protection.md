@@ -16,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: c8c756ad2df00a97df7289491daf830e584c0045
-ms.sourcegitcommit: a7b479c84b3af5b85528db676594bdb3a1ff6ec6
+ms.openlocfilehash: 2fa80697f24167e2a9634bd506e9548ca654129f
+ms.sourcegitcommit: a82d25d98fdf0ba766f8f074871d4f13725e23f9
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/22/2019
-ms.locfileid: "74410203"
+ms.lasthandoff: 12/31/2019
+ms.locfileid: "75547080"
 ---
 # <a name="enforce-compliance-for-microsoft-defender-atp-with-conditional-access-in-intune"></a>Impor a conformidade da ATP do Microsoft Defender com Acesso Condicional no Intune
 
@@ -108,9 +108,7 @@ Você só precisa habilitar o Defender ATP uma única vez por locatário.
 
 Após estabelecer a conexão de serviço a serviço entre o Intune e o Microsoft Defender ATP, integre seus dispositivos gerenciados do Intune ao ATP para que os dados sobre o nível de risco possam ser coletados e usados. Para integrar serviços, use um perfil de configuração de dispositivo para o Microsoft Defender ATP.
 
-Quando você estabeleceu a conexão com o Microsoft Defender ATP, o Intune recebeu dele um pacote de configuração da integração com o Microsoft Defender ATP. Esse pacote é implantado em dispositivos com o perfil de configuração do dispositivo. O pacote configura dispositivos para comunicação com os [serviços do Microsoft Defender ATP](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/microsoft-defender-advanced-threat-protection) para examinar arquivos, detectar ameaças e relatar os riscos ao Microsoft Defender ATP.
-
-Após integrar um dispositivo usando o pacote de configuração, você não precisará fazer isso novamente. Você também pode integrar dispositivos usando uma [política de grupo ou System Center Configuration Manager (SCCM)](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/configure-endpoints).
+Quando você estabeleceu a conexão com o Microsoft Defender ATP, o Intune recebeu dele um pacote de configuração da integração com o Microsoft Defender ATP. Esse pacote é implantado em dispositivos com o perfil de configuração do dispositivo. O pacote configura dispositivos para comunicação com os [serviços do Microsoft Defender ATP](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/microsoft-defender-advanced-threat-protection) para examinar arquivos, detectar ameaças e relatar os riscos ao Microsoft Defender ATP. Após integrar um dispositivo usando o pacote de configuração, você não precisará fazer isso novamente. Você também pode integrar dispositivos usando uma [política de grupo ou o Microsoft Endpoint Configuration Manager](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/configure-endpoints).
 
 ### <a name="create-the-device-configuration-profile"></a>Criar o perfil de configuração do dispositivo
 
@@ -129,7 +127,7 @@ Após integrar um dispositivo usando o pacote de configuração, você não prec
    - **Compartilhamento de exemplo para todos os arquivos**: **Habilitar** permite que os exemplos sejam coletados e compartilhados com a ATP do Microsoft Defender. Por exemplo, se você vir um arquivo suspeito, poderá enviá-lo para a ATP do Microsoft Defender para uma análise profunda. **Não configurado** não compartilha nenhum exemplo com o a ATP do Microsoft Defender.
    - **Acelerar a frequência do relatório de telemetria**: Para dispositivos que estão em risco alto, **Habilitar** essa configuração para relatar a telemetria ao serviço da ATP do Microsoft Defender com maior frequência.
 
-     [Integrar computadores do Windows 10 usando o System Center Configuration Manager](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/configure-endpoints-sccm) tem mais detalhes sobre essas configurações da ATP do Microsoft Defender.
+     [Integrar computadores com Windows 10 usando o Microsoft Endpoint Configuration Manager](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/configure-endpoints-sccm) traz mais detalhes sobre essas configurações do Microsoft Defender ATP.
 
 7. Selecione **OK** e **Criar** para salvar suas alterações, o que cria o perfil.
 8. [Atribua o perfil de configuração de dispositivo](../configuration/device-profile-assign.md) aos dispositivos que você deseja avaliar com o Microsoft Defender ATP.
@@ -150,9 +148,9 @@ A política de conformidade determina o nível de risco considerado aceitável e
    As classificações de nível de ameaça são [determinadas pela ATP do Microsoft Defender](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/alerts-queue).
 
    - **Limpar**: este é o nível mais seguro. O dispositivo não pode ter ameaças existentes e ainda acessar os recursos da empresa. Se nenhuma ameaça for encontrada, o dispositivo será avaliado como não compatível. A ATP do Microsoft Defender usa o valor *Seguro*.
-   - **Baixo**: o dispositivo estará em conformidade se apenas ameaças de nível baixo existirem. Dispositivos com níveis de ameaça média ou alta não são compatíveis.
-   - **Médio**: o dispositivo estará em conformidade se as ameaças encontradas no dispositivo forem de nível baixo ou médio. Se ameaças de nível alto forem detectadas, o dispositivo será determinado como não compatível.
-   - **Alto**: este nível é o menos seguro e permite todos os níveis de ameaças. Sendo assim, os dispositivos com níveis de ameaça alta, média ou baixa são considerados compatíveis.
+   - **Baixa**: o dispositivo estará em conformidade se apenas ameaças de nível baixo existirem. Dispositivos com níveis de ameaça média ou alta não são compatíveis.
+   - **Média**: o dispositivo estará em conformidade se as ameaças encontradas no dispositivo forem de nível baixo ou médio. Se ameaças de nível alto forem detectadas, o dispositivo será determinado como não compatível.
+   - **Alta**: este nível é o menos seguro e permite todos os níveis de ameaças. Sendo assim, os dispositivos com níveis de ameaça alta, média ou baixa são considerados compatíveis.
 
 7. Selecione **OK** e **Criar** para salvar suas alterações (e criar a política).
 8. [Atribua a política de conformidade do dispositivo](create-compliance-policy.md#assign-the-policy) aos grupos aplicáveis.
