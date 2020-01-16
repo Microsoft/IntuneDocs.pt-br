@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: ''
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 1e96f46dc0e79de3fc78739c246abdc0b9e52702
-ms.sourcegitcommit: e166b9746fcf0e710e93ad012d2f52e2d3ed2644
+ms.openlocfilehash: f368f5f15f71246a2899f2acb7a791d65df26c99
+ms.sourcegitcommit: caee3c3fa77586314aa8040b0caf32a0527b669e
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/19/2019
-ms.locfileid: "75205523"
+ms.lasthandoff: 01/10/2020
+ms.locfileid: "75857036"
 ---
 # <a name="intune-discovered-apps"></a>Aplicativos descobertos pelo Intune
 
@@ -67,6 +67,7 @@ A lista a seguir fornece o tipo de plataforma do aplicativo, os aplicativos moni
 > [!NOTE]
 > - Os dispositivos ingressados no Azure AD híbrido do Windows 10, conforme mostrado na carga de trabalho de gerenciamento de aplicativos no Configuration Manager, não coletam atualmente o inventário de aplicativos por meio da IME (Extensão de Gerenciamento do Intune) de acordo com o agendamento acima. Para atenuar esse problema, a carga de trabalho de gerenciamento de aplicativos no Configuration Manager deverá ser alternada para o Intune para que o IME seja instalado no dispositivo (o IME é obrigatório para o inventário do Win32 e a implantação do PowerShell). Observe que todas as alterações ou atualizações desse comportamento são anunciadas em [Em desenvolvimento](../fundamentals/in-development.md) e/ou em [Novidades](../fundamentals/whats-new.md).
 > - Os dispositivos macOS de propriedade pessoal registrados antes de novembro de 2019 podem continuar mostrando todos os aplicativos instalados no dispositivo até que os dispositivos sejam registrados novamente.
+> - Os dispositivos Android Enterprise totalmente gerenciados e dedicados não exibem aplicativos descobertos.
 
 O número de aplicativos descobertos pode não corresponder à contagem do status de instalação de aplicativos. Possibilidades de inconsistências incluem:
 

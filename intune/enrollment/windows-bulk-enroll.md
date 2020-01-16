@@ -17,12 +17,12 @@ ms.reviewer: spshumwa
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 8b2ce91cea1fdef211a8e6a9dc1c19086f355385
-ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
+ms.openlocfilehash: 9cbdd99dfb7b42677048b4f214e7de537db0edda
+ms.sourcegitcommit: 5db0769274d788a1218dca3ad90d8649927becb4
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "72585288"
+ms.lasthandoff: 01/14/2020
+ms.locfileid: "75925816"
 ---
 # <a name="bulk-enrollment-for-windows-devices"></a>Registro em massa para dispositivos Windows
 
@@ -95,7 +95,7 @@ Você pode verificar se há êxito/falha das configurações em seu pacote no lo
 
 ### <a name="bulk-enrollment-with-wi-fi"></a>Registro em massa com Wi-Fi 
 
-Dispositivos registrados em massa não podem usar os certificados destinados ao usuário e a implantação de Wi-Fi. É necessário usar [certificados no nível do dispositivo](../protect/certificates-configure.md) para gerenciar essas conexões. 
+Quando não estiver usando uma rede aberta, você deverá usar [certificados no nível do dispositivo](../protect/certificates-configure.md) para iniciar conexões. Dispositivos registrados em massa não podem usar os certificados destinados ao usuário para acesso à rede. 
 
 ### <a name="conditional-access"></a>Acesso condicional
 O acesso condicional não está disponível para dispositivos Windows registrados em massa.

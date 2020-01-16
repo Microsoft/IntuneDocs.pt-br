@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: c5cd8c1a1d17ca38c42b6ed6821d20367b147ad6
-ms.sourcegitcommit: 73b362173929f59e9df57e54e76d19834f155433
+ms.openlocfilehash: d8397dea1dca97122aac6716ee3d51295b913538
+ms.sourcegitcommit: 2506cdbfccefd42587a76f14ee50c3849dad1708
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/27/2019
-ms.locfileid: "74562375"
+ms.lasthandoff: 01/11/2020
+ms.locfileid: "75885931"
 ---
 # <a name="set-up-intune-enrollment-of-android-enterprise-fully-managed-devices"></a>Configurar registro do Intune dos dispositivos Android Enterprise totalmente gerenciados 
 
@@ -36,7 +36,7 @@ O Intune ajuda você a implantar aplicativos e configurações em dispositivos A
 
 ## <a name="technical-requirements"></a>Requisitos técnicos
 
-É necessário ter um locatário autônomo do Intune para gerenciar dispositivos Android Enterprise totalmente gerenciados. O gerenciamento de dispositivo totalmente gerenciado não está disponível no modo híbrido (conectado ao Configuration Manager) nem no console de gerenciamento do Silverlight herdado.
+É necessário ter um locatário autônomo do Intune para gerenciar dispositivos Android Enterprise totalmente gerenciados. O gerenciamento de dispositivos totalmente gerenciados não está disponível no console de gerenciamento do Silverlight herdado.
 
 Os dispositivos devem atender a esses requisitos para serem gerenciados como um dispositivo Android Enterprise totalmente gerenciado:
 

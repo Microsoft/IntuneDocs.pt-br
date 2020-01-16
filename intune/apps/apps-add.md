@@ -6,7 +6,7 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 12/03/2019
+ms.date: 01/10/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.subservice: apps
@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: ef9548a77a3a745eda24b927118d1447d5afd1f0
-ms.sourcegitcommit: 78faf608510fbaca09bc410d63df1aa5254dee45
+ms.openlocfilehash: 7170f723707ef709ef464b35bc3f6d3297341cf1
+ms.sourcegitcommit: de663ef5f3e82e0d983899082a7f5b62c63f24ef
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/03/2019
-ms.locfileid: "74784231"
+ms.lasthandoff: 01/15/2020
+ms.locfileid: "75956194"
 ---
 # <a name="add-apps-to-microsoft-intune"></a>Adicionar aplicativos ao Microsoft Intune 
 
@@ -37,7 +37,7 @@ Os usuários de aplicativos e dispositivos na empresa (a força de trabalho da e
 
 O Intune é compatível com uma ampla variedade de tipos de aplicativos. As opções disponíveis são diferentes para cada tipo de aplicativo. O Intune permite que você adicione e atribua os seguintes tipos de aplicativo:
 
-| Tipos de aplicativo | Instalação | Updates |
+| Tipos de aplicativo | Instalação | Atualizações |
 |---|---|---|
 | Aplicativos da loja (aplicativos da loja) | O Intune instala o aplicativo no dispositivo.  | As atualizações de aplicativo são automáticas. |
 | Aplicativos escritos internamente (linha de negócios) | O Intune instala o aplicativo no dispositivo (você fornece o arquivo de instalação). | É necessário atualizar o aplicativo. |
@@ -189,7 +189,7 @@ O Intune reinstalará, atualizará ou removerá automaticamente um aplicativo ne
 
 ## <a name="app-installation-errors"></a>Erros de instalação do aplicativo
 
-Para obter detalhes sobre erros de instalação do aplicativo Intune, consulte [Erros de instalação de aplicativo](troubleshoot-app-install.md#app-installation-errors).
+Para obter detalhes sobre erros de instalação do aplicativo Intune, consulte [Erros de instalação de aplicativo](troubleshoot-app-install.md).
 
 ## <a name="next-steps"></a>Próximas etapas
 
@@ -211,4 +211,4 @@ Para saber como adicionar aplicativos de cada plataforma ao Intune, veja:
 - [Microsoft Edge para macOS](apps-edge-macos.md)
 - [Aplicativos internos](apps-add-built-in.md)
 - [Aplicativo do sistema Android Enterprise](apps-ae-system.md)
-- [Aplicativos Win32](app-management.md)
+- [Aplicativos Win32](~/apps/apps-win32-app-management.md)

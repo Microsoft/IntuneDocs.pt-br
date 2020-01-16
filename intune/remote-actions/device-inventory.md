@@ -16,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 94c38aaf28440511720280a3c5a1ebda5b9f2ab1
-ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
+ms.openlocfilehash: ce3f73834ffdc2648dae345f8fa2a8233d2bb8c9
+ms.sourcegitcommit: e7052114324b80d0503b107c934bb90b8eb29704
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "74819783"
+ms.lasthandoff: 01/08/2020
+ms.locfileid: "75756025"
 ---
 # <a name="see-device-details-in-intune"></a>Consultar detalhes do dispositivo no Intune
 
@@ -38,7 +38,7 @@ Este artigo mostra como exibir todos os dispositivos e suas propriedades no port
 
    - **Visão geral** mostra o nome do dispositivo e descreve algumas das principais propriedades do dispositivo, por exemplo, se ele é do tipo BYOD (traga seu próprio dispositivo), o horário do check-in e muito mais. Você pode fazer o seguinte no dispositivo:
       - [Desativar](devices-wipe.md#retire)
-      - [Apagamento](devices-wipe.md#wipe)
+      - [Apagar](devices-wipe.md#wipe)
       - [Bloqueio remoto](device-remote-lock.md)
       - [Sincronizar dispositivo](device-sync.md)
       - [Redefinir senha](device-passcode-reset.md)
@@ -59,7 +59,7 @@ Dependendo da operadora usada pelos dispositivos, nem todos os detalhes podem se
 
 |Detalhes|Descrição|Plataforma| 
 |--------------|----------------------|----|  
-|Nome|O nome do dispositivo.|Windows, iOS|
+|Name|O nome do dispositivo.|Windows, iOS|
 |Nome de gerenciamento|O nome do dispositivo usado somente no console. Alterar esse nome não mudará o nome do dispositivo.|Windows, iOS|
 |UDID|A ID de Dispositivo Exclusiva do dispositivo.|Windows, iOS|
 |ID de Dispositivo do Intune|Um GUID (Identificador global exclusivo) que identifica com exclusividade o dispositivo.|Windows, iOS|
@@ -67,7 +67,7 @@ Dependendo da operadora usada pelos dispositivos, nem todos os detalhes podem se
 |Dispositivo compartilhado|Se **Sim**, o dispositivo é compartilhado por mais de um usuário.|Windows, iOS|
 |Registro aprovado pelo usuário|Se **Sim**, então o dispositivo tem um registro de usuário aprovado, que permite aos administradores gerenciar determinadas configurações de segurança no dispositivo.|Windows, iOS|
 |Sistema operacional|O sistema operacional usado no dispositivo.|Windows, iOS|
-|Versão do sistema operacional|Versão do sistema operacional do dispositivo.|Windows, iOS|
+|Versão do sistema operacional|A versão do sistema operacional no dispositivo.|Windows, iOS|
 |Idioma do sistema operacional|O idioma definido para o sistema operacional no dispositivo.|Windows, iOS|
 |Número da versão|O número de build do sistema operacional.|Android|
 |Nível do patch de segurança|O nível do patch de segurança do dispositivo.|Android|
@@ -94,6 +94,9 @@ Dependendo da operadora usada pelos dispositivos, nem todos os detalhes podem se
 |Criptografado|Se **Sim**, os dados armazenados no dispositivo estão criptografados.|Windows, iOS, Android|
 
 \* Não disponível no Android com o gerenciador de políticas do Google, como dispositivos totalmente gerenciados e dedicados
+
+> [!Note]  
+> O número de telefone não é inventariado em dispositivos Android Enterprise dedicados ou totalmente gerenciados.
 
 ## <a name="next-steps"></a>Próximas etapas
 Veja o que mais você pode fazer para [gerenciar seus dispositivos](device-management.md) com o Intune.

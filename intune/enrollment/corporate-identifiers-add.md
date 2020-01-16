@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 4e1ee8ae54d81a050f3c8983269f40e8f61b5e75
-ms.sourcegitcommit: e75718ee6cf93c0e6c915f2776b785fe8db9f7e0
+ms.openlocfilehash: 7cc67ce304dba500095c130e035a0b29322c84ef
+ms.sourcegitcommit: de663ef5f3e82e0d983899082a7f5b62c63f24ef
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/10/2019
-ms.locfileid: "74955466"
+ms.lasthandoff: 01/15/2020
+ms.locfileid: "75956291"
 ---
 # <a name="identify-devices-as-corporate-owned"></a>Identificar dispositivos como corporativos
 
@@ -120,7 +120,7 @@ Para obter especificações detalhadas sobre Identificadores de equipamentos mó
 
 ## <a name="change-device-ownership"></a>Alterar a propriedade do dispositivo
 
-As propriedades do dispositivo exibem **Propriedade** para o registro de cada dispositivo no Intune. Como administrador, você pode especificar os dispositivos como **Pessoais** ou **Corporativos**. Quando o tipo de propriedade de um dispositivo é alterado de Pessoal para Corporativo, o Intune exclui todas as informações do aplicativo coletadas anteriormente desse dispositivo em 7 dias. Se aplicável, o Intune também excluirá o número de telefone registrado. 
+As propriedades do dispositivo exibem **Propriedade** para o registro de cada dispositivo no Intune. Como administrador, você pode especificar os dispositivos como **Pessoais** ou **Corporativos**. Quando o tipo de propriedade de um dispositivo é alterado de Corporativo para Pessoal, o Intune exclui todas as informações do aplicativo coletadas anteriormente desse dispositivo em sete dias. Se aplicável, o Intune também excluirá o número de telefone registrado. 
 
 **Para alterar a propriedade do dispositivo:**
 1. Entre no [Centro de Administração do Gerenciador de Ponto de Extremidade da Microsoft](https://go.microsoft.com/fwlink/?linkid=2109431), escolha **Dispositivos** > **Todos os dispositivos** > escolha o dispositivo.

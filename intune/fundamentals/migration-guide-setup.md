@@ -16,12 +16,12 @@ ms.reviewer: dagerrit
 ms.suite: ems
 search.appverid: MET150
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 7ca0983b7b637b7e85bef97cd77e6c870c4e43eb
-ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
+ms.openlocfilehash: c705e8863ef4e01906a773d528f9ae2f40461c71
+ms.sourcegitcommit: 2506cdbfccefd42587a76f14ee50c3849dad1708
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "72510020"
+ms.lasthandoff: 01/11/2020
+ms.locfileid: "75885847"
 ---
 # <a name="basic-setup"></a>Configuração básica
 
@@ -74,9 +74,9 @@ Antes de migrar para o Intune, primeiro você precisa de uma assinatura do Intun
 
 ### <a name="task-3-set-your-mdm-authority-to-intune"></a>Tarefa 3: Definir sua autoridade de MDM para o Intune
 
-O Intune pode ser gerenciado por meio do portal do Azure ou do console do Branch Atual do Configuration Manager. A menos que você precise integrar o Intune a uma implantação do Branch Atual do Configuration Manager, recomendamos que você gerencie o Intune do [Portal do Azure](https://portal.azure.com).
+Recomendamos que você gerencie o Intune usando o [Centro de administração do Gerenciador de Ponto de Extremidade da Microsoft](https://go.microsoft.com/fwlink/?linkid=2109431).
 
-Defina sua autoridade de MDM como **Intune** para habilitar o Portal do Azure no Intune. O uso de uma autoridade de MDM diferente permite que o Intune transfira o gerenciamento do MDM para consoles de gerenciamento alternativos da Microsoft. Esses casos são incomuns.
+Defina a sua autoridade de MDM para o **Intune**. O uso de uma autoridade de MDM diferente permite que o Intune transfira o gerenciamento do MDM para consoles de gerenciamento alternativos da Microsoft. Esses casos são incomuns.
 
 > [!IMPORTANT]
 > Se você estiver transferindo seu gerenciamento de dispositivos móvel para o Intune pela primeira vez, defina a autoridade de MDM como Intune.
