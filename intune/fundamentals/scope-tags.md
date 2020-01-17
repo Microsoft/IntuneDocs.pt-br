@@ -15,12 +15,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 6b92dca399afeb035bf58d998efdd469318de389
-ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
+ms.openlocfilehash: e1f81d26227bb206aa55ca495f4a4ee5e8ae9907
+ms.sourcegitcommit: a82d25d98fdf0ba766f8f074871d4f13725e23f9
 ms.translationtype: MTE75
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "72504948"
+ms.lasthandoff: 12/31/2019
+ms.locfileid: "75548130"
 ---
 # <a name="use-role-based-access-control-rbac-and-scope-tags-for-distributed-it"></a>Usar RBAC (controle de acesso baseado em função) e marcas de escopo para TI distribuída
 
@@ -39,14 +39,15 @@ Por exemplo, digamos que um administrador de escritório regional de Seattle ten
 ## <a name="default-scope-tag"></a>Marca de escopo padrão
 A marca de escopo padrão é automaticamente adicionada a todos os objetos não marcados que dão suporte a marcas de escopo.
 
-Esse recurso de marca de escopo padrão é semelhante ao recurso escopos de segurança do System Center Configuration Manager. 
+Esse recurso de marca de escopo padrão é semelhante ao recurso escopos de segurança do Microsoft Endpoint Configuration Manager. 
 
 ## <a name="to-create-a-scope-tag"></a>Para criar uma marca de escopo
 
-1. No Intune, escolha **Funções** > **Escopo (Marcas)**  > **Criar**.
+1. No [centro de administração do Microsoft Endpoint Manager](https://go.microsoft.com/fwlink/?linkid=2109431), escolha **administração de locatário** > **funções** > **escopo (marcas)**  > **criar**.
 
     ![Captura de tela de criar uma marca de escopo.](./media/scope-tags/create-scope-tag.png)
 
+2. Forneça um **nome** e uma **descrição** opcional.
 3. Se você quiser todos os dispositivos em grupos específicos, escolha **atribuir marca de escopo a todos os dispositivos nos grupos selecionados**.
     1. Na página **Selecionar grupos a serem incluídos** , escolha os grupos que contêm os dispositivos aos quais você deseja atribuir essa marca de escopo.
     2. Escolha **Selecionar**.
@@ -54,10 +55,7 @@ Esse recurso de marca de escopo padrão é semelhante ao recurso escopos de segu
 
 ## <a name="to-assign-a-scope-tag-to-a-role"></a>Para atribuir uma marca de escopo a uma função
 
-1. No Intune, escolha **Funções** > **Todas as funções** > escolha uma função > **Atribuições** > **Atribuir**.
-
-    ![Captura de tela de atribuir um escopo a uma função.](./media/scope-tags/assign-scope-to-role.png)
-
+1. No [centro de administração do Microsoft Endpoint Manager](https://go.microsoft.com/fwlink/?linkid=2109431), escolha **administração de locatário** > **funções** > **todas as funções** > escolha uma função > **atribuições** > **atribuir**.
 2. Dê um **Nome da atribuição** e uma **Descrição**.
 3. Escolha **Membros (Grupos)**  > **Adicionar** > escolha os grupos que você deseja como parte dessa atribuição > **Selecionar** > **OK**. Os usuários nesse grupo terão permissões para gerenciar usuários/dispositivos no escopo (grupos).
 
@@ -81,9 +79,7 @@ Esse recurso de marca de escopo padrão é semelhante ao recurso escopos de segu
 
 Para objetos que dão suporte a marcas de escopo, marcas de escopo geralmente aparecem em **Propriedades**. Por exemplo, para atribuir uma marca de escopo a um perfil de configuração, siga estas etapas:
 
-1. No Intune, selecione **Configuração do dispositivo** > **Perfis** > escolher um perfil.
-
-    ![Captura de tela de selecionar perfil.](./media/scope-tags/choose-profile.png)
+1. No [centro de administração do Microsoft Endpoint Manager](https://go.microsoft.com/fwlink/?linkid=2109431), escolha **dispositivos** > **perfis de configuração** > escolha um perfil.
 
 2. Escolha **Propriedades** > **Escopo (Marcas)**  > **Adicionar**.
 

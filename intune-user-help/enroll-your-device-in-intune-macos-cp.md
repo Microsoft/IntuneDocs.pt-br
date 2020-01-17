@@ -5,7 +5,7 @@ keywords: Mac OS X, macOS, OS X
 author: lenewsad
 ms.author: lanewsad
 manager: dougeby
-ms.date: 11/14/2019
+ms.date: 12/16/2019
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -18,13 +18,13 @@ ROBOTS: ''
 ms.reviewer: kakyker
 ms.suite: ems
 ms.custom: intune-enduser
-ms.collection: M365-identity-device-management
-ms.openlocfilehash: ba285fc9de58b3fb739a16722e0e05e36e840e87
-ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
+ms.collection: ''
+ms.openlocfilehash: e04950a67938d883b0762c03efa371fcb74d0731
+ms.sourcegitcommit: caee3c3fa77586314aa8040b0caf32a0527b669e
 ms.translationtype: MTE75
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "74098163"
+ms.lasthandoff: 01/10/2020
+ms.locfileid: "75855469"
 ---
 # <a name="enroll-your-macos-device-using-the-company-portal-app"></a>Registrar seu dispositivo macOS usando o aplicativo Portal da Empresa  
 
@@ -56,7 +56,7 @@ Use as etapas a seguir para registrar seu dispositivo macOS com sua organizaçã
 2. O arquivo Portal da Empresa Installer. pkg será baixado. Abra o instalador e continue as etapas. 
 3. Concorde com o contrato de licença do software. 
 4. Insira a senha do dispositivo ou a impressão digital registrada para instalar o software.  
-5. Abra Portal da Empresa. 
+5. Abra o Portal da Empresa. 
 
 > [!IMPORTANT]
 > O Microsoft AutoUpdate pode abrir para atualizar seu software da Microsoft. Depois que todas as atualizações forem instaladas, abra o aplicativo Portal da Empresa. Para obter a melhor experiência de configuração, instale as versões mais recentes do Microsoft AutoUpdate e Portal da Empresa.  
@@ -67,18 +67,17 @@ Use as etapas a seguir para registrar seu dispositivo macOS com sua organizaçã
 
 1. Entre no Portal da Empresa com sua conta corporativa ou de estudante.  
 2. Quando o aplicativo for aberto, selecione **Iniciar**.  
-3. Examine [o que sua organização pode ou não ver](what-info-can-your-company-see-when-you-enroll-your-device-in-intune.md) em seu dispositivo registrado. Em seguida, selecione **Continuar**.  
-4. Na tela **instalar perfil de gerenciamento** , selecione **baixar perfil**.   
+3. Examine o que sua organização pode ou não ver em seu dispositivo registrado. Em seguida, selecione **Continuar**.
+4.  Se solicitado, insira a senha do dispositivo na tela **instalar perfil de gerenciamento** .
 
-    ![Exemplo de captura de tela de Portal da Empresa, instalar perfil de gerenciamento, realçando o botão "baixar perfil".](./media/install-mgmt-profile-mac-1911.PNG)   
-5. As preferências do sistema do seu dispositivo serão abertas. Selecione **instalar** e, em seguida, selecione **instalar** novamente. Se for solicitado, insira a senha do dispositivo.  
+    ![Exemplo de captura de tela de Portal da Empresa, instalar o perfil de gerenciamento, realçando o prompt de senha.](./media/install-management-profile-macos-1912.PNG)   
+5. Na tela **confirmar gerenciamento de dispositivo** , selecione **Abrir preferências do sistema**.  
 
-    ![Captura de tela de exemplo de preferências do sistema macOS, prompt de instalação, realçando o botão "instalar".](./media/system-preference-install-1911.PNG)  
-6. Depois que o perfil for instalado, ele será exibido na lista de perfis em **perfil de gerenciamento.**  
-
-   ![Captura de tela de exemplo de preferências de sistema do macOS, telas de perfis, realçando o perfil de gerenciamento instalado.](./media/system-preference-verify-1911.PNG)   
-7. Retornar para Portal da Empresa.   
-8. Sua organização pode exigir que você atualize as configurações do dispositivo. Quando você terminar de atualizar as configurações, selecione **verificar configurações**.  
+    ![Captura de tela de exemplo de confirmação do gerenciamento de dispositivo, realçando o botão "Abrir preferências do sistema".](./media/confirm-device-management-macos-1912.PNG)  
+6. As preferências do sistema do seu dispositivo serão abertas. Selecione **perfil de gerenciamento** na lista perfis de dispositivo e, em seguida, selecione **aprovar** > **aprovar**.  
+    ![captura de tela de exemplo das preferências do sistema, do perfil de gerenciamento, realçando o botão "aprovar".](./media/management-profile-approve-macos-1912.PNG)   
+1. Retorne para Portal da Empresa e selecione **continuar**.    
+2. Sua organização pode exigir que você atualize as configurações do dispositivo. Quando você terminar de atualizar as configurações, selecione **verificar configurações**.  
 
     ![Exemplo de captura de tela de Portal da Empresa, atualizar configurações do dispositivo, realçando o botão "verificar configurações".](./media/update-settings-mac-1911.PNG)  
 9. Quando a instalação estiver concluída, selecione **concluído**.  
@@ -88,7 +87,7 @@ Use as etapas a seguir para registrar seu dispositivo macOS com sua organizaçã
 
 Se você encontrar problemas durante o registro, acesse **ajuda** > **Enviar relatório de diagnóstico** para relatar o problema aos desenvolvedores de aplicativos da Microsoft. Essas informações são usadas para ajudar a melhorar o aplicativo. Eles também usarão essas informações para ajudar a resolver o problema se o seu pessoal de suporte de ti chegar a ele para obter ajuda.  
 
-Depois de relatar o problema à Microsoft, você pode enviar os detalhes de sua experiência para sua pessoa de suporte de ti. Selecione **detalhes do email**. Digite o que você experimentou no corpo do email. Para localizar o endereço de email da pessoa de suporte, acesse o aplicativo Portal da Empresa > **contato**. Ou verifique o [site Portal da empresa](https://go.microsoft.com/fwlink/?linkid=2010980).  
+Depois de relatar o problema à Microsoft, você pode enviar os detalhes de sua experiência para sua pessoa de suporte de ti. Selecione **detalhes do email**. Digite o que você experimentou no corpo do email. Para localizar o endereço de email da pessoa de suporte, acesse o aplicativo Portal da Empresa > **contato**. Ou verifique o [site do Portal da Empresa](https://go.microsoft.com/fwlink/?linkid=2010980).  
  
 
 Além disso, o Microsoft Intune Portal da Empresa equipe adoraria ouvir seus comentários. Acesse **ajuda** > **enviar comentários** para compartilhar seus pensamentos e ideias.  

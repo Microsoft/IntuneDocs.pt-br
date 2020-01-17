@@ -5,7 +5,7 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 09/17/2019
+ms.date: 01/02/2020
 ms.topic: reference
 ms.service: microsoft-intune
 ms.subservice: developer
@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: ''
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 93b48fd5f6482669da923e4c15dcb09c7d328197
-ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
-ms.translationtype: MTE75
+ms.openlocfilehash: 38f9c9721942b4c9754d4e99e4e91d751ceedcf3
+ms.sourcegitcommit: 8d7406b75ef0d75cc2ed03b1a5e5f74ff10b98c0
+ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "72503462"
+ms.lasthandoff: 01/03/2020
+ms.locfileid: "75653777"
 ---
 # <a name="microsoft-intune-app-sdk-for-ios-developer-guide"></a>Guia do desenvolvedor do SDK de Aplicativos do Microsoft Intune para iOS
 
@@ -45,9 +45,9 @@ O SDK de Aplicativos do Microsoft Intune para iOS permite incorporar políticas 
 
 Os arquivos a seguir são relevantes para aplicativos/extensões que não contêm nenhum código Swift ou são compilados com uma versão do Xcode antes de 10,2:
 
-* **IntuneMAM.framework**: a estrutura do SDK de Aplicativos do Intune. É recomendável que você vincule essa estrutura ao seu aplicativo/extensões para habilitar o gerenciamento de aplicativos cliente do Intune. No entanto, alguns desenvolvedores podem preferir os benefícios de desempenho da biblioteca estática. Confira a seguir.
+* **IntuneMAM.framework**: A estrutura de SDK de Aplicativos do Intune. É recomendável que você vincule essa estrutura ao seu aplicativo/extensões para habilitar o gerenciamento de aplicativos cliente do Intune. No entanto, alguns desenvolvedores podem preferir os benefícios de desempenho da biblioteca estática. Confira a seguir.
 
-* **libIntuneMAM.a**: a biblioteca estática do SDK de Aplicativos do Intune. Os desenvolvedores podem optar por vincular a biblioteca estática em vez da estrutura. Como as bibliotecas estáticas são inseridas diretamente no binário do aplicativo/extensão no momento da compilação, há alguns benefícios de desempenho de tempo de inicialização para usar a biblioteca estática. No entanto, integrá-lo ao seu aplicativo é um processo mais complicado. Se seu aplicativo incluir qualquer extensão, vincular a biblioteca estática ao aplicativo e às extensões resultará em um tamanho de pacote de aplicativo maior, pois a biblioteca estática será inserida em cada aplicativo/binário de extensão. Ao usar a estrutura, os aplicativos e as extensões podem compartilhar o mesmo binário do SDK do Intune, resultando em um tamanho de aplicativo menor.
+* **libIntuneMAM.a**: A biblioteca estática do SDK de Aplicativos do Intune. Os desenvolvedores podem optar por vincular a biblioteca estática em vez da estrutura. Como as bibliotecas estáticas são inseridas diretamente no binário do aplicativo/extensão no momento da compilação, há alguns benefícios de desempenho de tempo de inicialização para usar a biblioteca estática. No entanto, integrá-lo ao seu aplicativo é um processo mais complicado. Se seu aplicativo incluir qualquer extensão, vincular a biblioteca estática ao aplicativo e às extensões resultará em um tamanho de pacote de aplicativo maior, pois a biblioteca estática será inserida em cada aplicativo/binário de extensão. Ao usar a estrutura, os aplicativos e as extensões podem compartilhar o mesmo binário do SDK do Intune, resultando em um tamanho de aplicativo menor.
 
 * **IntuneMAMResources.bundle**: um pacote de recursos que contém recursos usados pelo SDK. O pacote de recursos é necessário apenas para aplicativos que integram a biblioteca estática (libIntuneMAM. a).
 
@@ -243,7 +243,7 @@ No dicionário IntuneMAMSettings, você pode ter as configurações compatíveis
 
 Algumas dessas configurações podem ter sido abordadas nas seções anteriores e outras não se aplicam a todos os aplicativos.
 
-Setting  | Tipo  | Definição | Necessário?
+Setting  | Digite  | Definição | Necessário?
 --       |  --   |   --       |  --
 ADALClientId  | Cadeia de caracteres  | O identificador do cliente do Azure AD do aplicativo. | Necessário para todos os aplicativos que usam MSAL e qualquer aplicativo ADAL que acesse um recurso do AAD não Intune. |
 ADALAuthority | Cadeia de caracteres | A autoridade do Azure AD do aplicativo em uso. Você deve usar seu próprio ambiente em que as contas do AAD foram configuradas. | Necessário se o aplicativo usar ADAL ou MSAL para acessar um recurso do AAD que não seja do Intune. Se esse valor estiver ausente, um padrão do Intune será usado.|
@@ -254,9 +254,9 @@ ADALCacheKeychainGroupOverride | Cadeia de caracteres  | Especifica o grupo de c
 AppGroupIdentifiers | Matriz de cadeia de caracteres  | Matriz de grupos de aplicativo na seção de grupos de com.apple.security.application de direitos do aplicativo. | Necessário se o aplicativo usar grupos de aplicativos. |
 ContainingAppBundleId | Cadeia de caracteres | Especifica a ID do pacote do aplicativo que contém a extensão. | Necessário para extensões do iOS. |
 DebugSettingsEnabled| Booliano | Se definido como SIM, as políticas de teste do pacote de Configurações podem ser aplicadas. Os aplicativos *não* devem ser fornecidos com essa configuração habilitada. | Opcional. Usa Não como padrão. |
-AutoEnrollOnLaunch| Booliano| Especifica se o aplicativo deverá tentar se registrar automaticamente na inicialização se uma identidade gerenciada existente for detectada e ainda não tiver feito o registro. O padrão é NÃO. <br><br> Observações: se nenhuma identidade gerenciada for encontrada ou nenhum token válido para a identidade estiver disponível no cache do ADAL/MSAL, a tentativa de registro silenciosamente falhará sem solicitar credenciais, a menos que o aplicativo também tenha definido MAMPolicyRequired como SIM. | Opcional. Usa Não como padrão. |
-MAMPolicyRequired| Booliano| Especifica se a inicialização do aplicativo será impedida se ele não tiver uma política de proteção de aplicativo do Intune. O padrão é NÃO. <br><br> Observações: os aplicativos não podem ser enviados para a Loja de Aplicativos com MAMPolicyRequired definido como SIM. Ao configurar o MAMPolicyRequired como SIM, o AutoEnrollOnLaunch também deverá ser definido como SIM. | Opcional. Usa Não como padrão. |
-MAMPolicyWarnAbsent | Booliano| Especifica se o aplicativo alertará o usuário durante a inicialização se ele não tiver uma política de proteção do aplicativo do Intune. <br><br> Observação: os usuários ainda poderão usar o aplicativo sem política após ignorarem o aviso. | Opcional. Usa Não como padrão. |
+AutoEnrollOnLaunch| Booliano| Especifica se o aplicativo deverá tentar se registrar automaticamente na inicialização se uma identidade gerenciada existente for detectada e ainda não tiver feito o registro. O padrão é NÃO. <br><br> Observações: se nenhuma identidade gerenciada for encontrada ou nenhum token válido para a identidade estiver disponível no cache da ADAL/MSAL, a tentativa de registro falhará silenciosamente sem solicitar credenciais, a menos que o aplicativo também tenha definido MAMPolicyRequired como SIM. | Opcional. Usa Não como padrão. |
+MAMPolicyRequired| Booliano| Especifica se a inicialização do aplicativo será impedida se ele não tiver uma política de proteção de aplicativo do Intune. O padrão é NÃO. <br><br> Observações: Os aplicativos não podem ser enviados para a Loja de Aplicativos com a opção MAMPolicyRequired definida como SIM. Ao configurar o MAMPolicyRequired como SIM, o AutoEnrollOnLaunch também deverá ser definido como SIM. | Opcional. Usa Não como padrão. |
+MAMPolicyWarnAbsent | Booliano| Especifica se o aplicativo alertará o usuário durante a inicialização se ele não tiver uma política de proteção do aplicativo do Intune. <br><br> Observação: Os usuários ainda poderão usar o aplicativo sem política após ignorarem o aviso. | Opcional. Usa Não como padrão. |
 MultiIdentity | Booliano| Especifica se o aplicativo reconhece várias identidades. | Opcional. Usa Não como padrão. |
 SafariViewControllerBlockedOverride | Booliano| Desabilita os ganchos de SafariViewController do Intune para habilitar a autenticação MSAL via SFSafariViewController, SFAuthSession ou ASWebAuthSession. | Opcional. Usa Não como padrão. Aviso: pode resultar em perda de dados se for usado de forma inadequada. Habilitar somente se absolutamente necessário. Consulte [considerações especiais ao usar o MSAL](#special-considerations-when-using-msal) para obter detalhes.  |
 SplashIconFile <br>SplashIconFile~ipad | Cadeia de caracteres  | Especifica o arquivo de ícone de abertura (inicialização) do Intune. | Opcional. |
@@ -332,10 +332,10 @@ Exemplo:
 
 Caso deseje que o SDK do Intune manipule toda a autenticação usando a ADAL/MSAL e o registro antes de o aplicativo concluir a inicialização e se o aplicativo sempre exigir a política de APP, você não precisará usar a API `loginAndEnrollAccount`. Você pode simplesmente definir as duas configurações abaixo como SIM no dicionário IntuneMAMSettings no Info.plist do aplicativo.
 
-Setting  | Tipo  | Definição |
+Setting  | Digite  | Definição |
 --       |  --   |   --       |  
 AutoEnrollOnLaunch| Booliano| Especifica se o aplicativo deverá tentar se registrar automaticamente na inicialização se uma identidade gerenciada existente for detectada e ainda não tiver feito o registro. O padrão é NÃO. <br><br> Observação: se nenhuma identidade gerenciada for encontrada ou nenhum token válido para a identidade estiver disponível no cache da ADAL/MSAL, a tentativa de registro falhará silenciosamente sem solicitar credenciais, a menos que o aplicativo também tenha definido MAMPolicyRequired como SIM. |
-MAMPolicyRequired| Booliano| Especifica se a inicialização do aplicativo será impedida se ele não tiver uma política de proteção de aplicativo do Intune. O padrão é NÃO. <br><br> Observação: os aplicativos não podem ser enviados para a Loja de Aplicativos com a opção MAMPolicyRequired definida como SIM. Ao configurar o MAMPolicyRequired como SIM, o AutoEnrollOnLaunch também deverá ser definido como SIM. |
+MAMPolicyRequired| Booliano| Especifica se a inicialização do aplicativo será impedida se ele não tiver uma política de proteção de aplicativo do Intune. O padrão é NÃO. <br><br> Observação: Os aplicativos não podem ser enviados para a Loja de Aplicativos com a opção MAMPolicyRequired definida como SIM. Ao configurar o MAMPolicyRequired como SIM, o AutoEnrollOnLaunch também deverá ser definido como SIM. |
 
 Se você escolher essa opção para seu aplicativo, não precisará manipular a reinicialização do aplicativo após o registro.
 
@@ -559,7 +559,7 @@ SUBQUERY (
         ANY $attachment.registeredTypeIdentifiers UTI-CONFORMS-TO "com.microsoft.intune.mam.public.url" ||
         ANY $attachment.registeredTypeIdentifiers UTI-CONFORMS-TO "com.microsoft.intune.mam.public.plain-text" ||
         ANY $attachment.registeredTypeIdentifiers UTI-CONFORMS-TO "com.microsoft.intune.mam.public.image" ||
-        ANY $attachment.registeredTypeIdentifiers UTI-CONFORMS-TO "com.microsoft.intune.mam.public.data
+        ANY $attachment.registeredTypeIdentifiers UTI-CONFORMS-TO "com.microsoft.intune.mam.public.data"
     ).@count > 0
 ).@count > 0
 ```
@@ -599,11 +599,11 @@ Para obter mais informações sobre como criar uma política de configuração d
 
 Por padrão, o SDK do Aplicativo do Intune para iOS coleta telemetria dos seguintes tipos de eventos:
 
-* **Inicialização do aplicativo**: para ajudar o Microsoft Intune a obter informações sobre o uso de aplicativos habilitados para MAM por tipo de gerenciamento (MAM com MDM, MAM sem registro de MDM etc.).
+* **Inicialização de aplicativo**: Para ajudar o Microsoft Intune a obter informações sobre o uso de aplicativos habilitados para MAM por tipo de gerenciamento (MAM com MDM, MAM sem registro de MDM, etc.).
 
-* **Chamadas de registro**: para ajudar o Microsoft Intune a obter informações sobre a taxa de sucesso e outras métricas de desempenho de chamadas de registro iniciadas do lado do cliente.
+* **Chamadas de registro**: Para ajudar o Microsoft Intune a obter informações sobre a taxa de sucesso e outras métricas de desempenho de chamadas de registro iniciadas do lado do cliente.
 
-* **Ações do Intune**: para ajudar a diagnosticar problemas e garantir a funcionalidade do Intune, coletamos informações sobre as ações do SDK do Intune.
+* **Ações do Intune**: Para ajudar a diagnosticar problemas e garantir a funcionalidade do Intune, coletamos informações sobre as ações do SDK do Intune.
 
 > [!NOTE]
 > Se optar por não enviar dados de telemetria do SDK de Aplicativos do Intune para o Microsoft Intune do seu aplicativo móvel, você deverá desabilitar a captura de telemetria pelo SDK de Aplicativos do Intune. Defina a propriedade `MAMTelemetryDisabled` como SIM no dicionário IntuneMAMSettings.
@@ -620,17 +620,17 @@ Observe que uma identidade é definida simplesmente como uma cadeia de caractere
 
 Uma identidade é simplesmente o nome de usuário de uma conta (por exemplo, user@contoso.com). Os desenvolvedores podem definir a identidade do aplicativo nos níveis a seguir:
 
-* **Identidade de processo**: define a identidade de todo o processo e é usada principalmente para aplicativos de identidade única. Essa identidade afeta todas as tarefas, arquivos e a interface do usuário.
+* **Identidade de processo**: Define a identidade de todo o processo e é usada principalmente para aplicativos de identidade única. Essa identidade afeta todas as tarefas, arquivos e a interface do usuário.
 
-* **Identidade de interface do usuário**: determina quais políticas são aplicadas às tarefas de interface do usuário no thread principal, como recortar/copiar/colar, PIN, autenticação e compartilhamento de dados. A identidade de interface do usuário não afeta as tarefas de arquivo como criptografia e backup.
+* **Identidade da interface do usuário**: Determina quais políticas são aplicadas às tarefas de interface do usuário no thread principal, como recortar/copiar/colar, PIN, autenticação e compartilhamento de dados. A identidade de interface do usuário não afeta as tarefas de arquivo como criptografia e backup.
 
-* **Identidade de thread**: afeta quais políticas são aplicadas no thread atual. Essa identidade afeta todas as tarefas, arquivos e a interface do usuário.
+* **Identidade de thread**: Afeta quais políticas são aplicadas no thread atual. Essa identidade afeta todas as tarefas, arquivos e a interface do usuário.
 
 É responsabilidade do aplicativo configurar as identidades adequadamente, quer o usuário seja gerenciado ou não.
 
 A qualquer momento, todo thread tem uma identidade efetiva para tarefas de interface do usuário e tarefas de arquivo. Essa é a identidade usada para verificar quais políticas, se houver, devem ser aplicadas. Se a identidade for "nenhuma identidade" ou o usuário não for gerenciado, nenhuma política será aplicada. Os diagramas a seguir mostram como as identidades efetivas são determinadas.
 
-  ![SDK do Aplicativo do Intune para iOS: processo de determinação de identidade](./media/app-sdk-ios/ios-thread-identities.png)
+  ![SDK de Aplicativo do Intune para iOS: Processo de determinação de identidade](./media/app-sdk-ios/ios-thread-identities.png)
 
 ### <a name="thread-queues"></a>Filas de thread
 

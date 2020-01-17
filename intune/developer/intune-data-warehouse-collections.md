@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 42d07f02e76669c735d09b5d7843a4102dd0f835
-ms.sourcegitcommit: 7cc45ef52dda08479bc6bdff7d11d2f6c0e7b93b
+ms.openlocfilehash: 7ceaf5c62f34cc248813a064de9e8e3710797779
+ms.sourcegitcommit: a82d25d98fdf0ba766f8f074871d4f13725e23f9
 ms.translationtype: MTE75
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/06/2019
-ms.locfileid: "74899236"
+ms.lasthandoff: 12/31/2019
+ms.locfileid: "75547921"
 ---
 # <a name="intune-data-warehouse-collections"></a>Coleções do Intune Data Warehouse
 
@@ -61,7 +61,7 @@ A entidade **appType** lista a origem da instalação de um aplicativo.
 
 ### <a name="example"></a>Exemplo
 
-| AppTypeID |                Nome               |                     Descrição                     |
+| AppTypeID |                Name               |                     Descrição                     |
 |:---------:|:---------------------------------:|:---------------------------------------------------:|
 | 0         | Aplicativo da loja Android               | Um aplicativo da loja Android.                             |
 | 1         | Aplicativo LOB para Android                 | Um aplicativo Android de linha de negócios.                  |
@@ -85,7 +85,7 @@ A tabela a seguir resume o status de atribuição de políticas de conformidade 
 | DateKey       | A chave de data quando o resumo foi criado para a política de conformidade.                                                                                                                   | 20161204 |
 | Unknown       | O número de dispositivos que estão offline ou falharam ao se comunicar com o Intune ou com o Azure AD por outras razões.                                                                           | 5        |
 | NotApplicable | O número de dispositivos em que as políticas de conformidade do dispositivo direcionadas pelo administrador não são aplicáveis.                                                                                     | 201      |
-| Compatível     | O número de dispositivos que aplicaram com êxito uma ou mais políticas de conformidade do dispositivo direcionadas pelo administrador.                                                                        | 4083     |
+| compatível     | O número de dispositivos que aplicaram com êxito uma ou mais políticas de conformidade do dispositivo direcionadas pelo administrador.                                                                        | 4083     |
 | InGracePeriod | O número de dispositivos que não estão em conformidade, mas estão em um período de carência definido pelo administrador.                                                                                  | 57       |
 | NonCompliant  | O número de dispositivos que falharam ao aplicar uma ou mais políticas de conformidade do dispositivo direcionadas pelo administrador ou em que o usuário não está em conformidade com as políticas direcionadas pelo administrador. | 43       |
 |    Erro do      |    O número de dispositivos que falharam ao se comunicar com o Intune ou com o Azure AD e retornaram uma mensagem de erro.                                                                          |    3     |
@@ -100,7 +100,7 @@ A tabela a seguir resume o status de atribuição de políticas de conformidade 
 | PolicyPlatformKey | A chave para o tipo de plataforma da política de conformidade para a qual o resumo foi criado.                                                                                            | 5        |
 | Unknown           | O número de dispositivos que estão offline ou falharam ao se comunicar com o Intune ou com o Azure AD por outras razões.                                                                           | 13       |
 | NotApplicable     | O número de dispositivos em que as políticas de conformidade do dispositivo direcionadas pelo administrador não são aplicáveis.                                                                                     | 3        |
-| Compatível         | O número de dispositivos que aplicaram com êxito uma ou mais políticas de conformidade do dispositivo direcionadas pelo administrador.                                                                        | 45       |
+| compatível         | O número de dispositivos que aplicaram com êxito uma ou mais políticas de conformidade do dispositivo direcionadas pelo administrador.                                                                        | 45       |
 | InGracePeriod     | O número de dispositivos que não estão em conformidade, mas estão em um período de carência definido pelo administrador.                                                                                  | 3        |
 | NonCompliant      | O número de dispositivos que falharam ao aplicar uma ou mais políticas de conformidade do dispositivo direcionadas pelo administrador ou em que o usuário não está em conformidade com as políticas direcionadas pelo administrador. | 7        |
 | Erro do             | O número de dispositivos que falharam ao se comunicar com o Intune ou com o Azure AD e retornaram uma mensagem de erro.                                                                             | 3        |
@@ -117,7 +117,7 @@ A tabela a seguir resume o status de atribuição de políticas de conformidade 
 |  complianceStatus  |                       Descrição                      |
 |:------------------:|:------------------------------------------------------:|
 |    Unknown         |    Desconhecido.                                                                        |
-|    Compatível       |    Compatível.                                                                      |
+|    compatível       |    Compatível.                                                                      |
 |    Fora de Conformidade    |       O dispositivo não está em conformidade e é bloqueado de recursos corporativos.             |
 |    Conflito        |    Está em conflito com outras regras.                                                      |
 |    Erro do           |       Erro.                                                                       |
@@ -163,7 +163,7 @@ A entidade **DeviceConfigurationProfileDeviceActivity** lista o número de dispo
 |:---------:|:---------------------------------------------------------------------------------------------:|:--------:|
 | DateKey   | A chave de data quando o check-in do perfil de Configuração do dispositivo foi registrado no data warehouse. | 20160703 |
 | Pending (Pendente)   | Número de dispositivos exclusivos no estado pendente.                                                    | 123      |
-| Bem-sucedido | Número de dispositivos exclusivos no estado de êxito.                                                    | 12       |
+| Êxito | Número de dispositivos exclusivos no estado de êxito.                                                    | 12       |
 | Erro do     | Número de dispositivos exclusivos no estado de erro.                                                      | 10       |
 | Failed (Falha)    | Número de dispositivos exclusivos no estado de falha.                                                     | 2        |
 
@@ -174,7 +174,7 @@ A entidade **DeviceConfigurationProfileUserActivity** lista o número de usuári
 |------------|----------------------------------------------------------------------------------------------|-----------|
 | DateKey  | Chave de data quando o check-in do perfil de configuração do dispositivo foi registrado no data warehouse.  | 20160703  |
 | Pending (Pendente)  | Número de usuários exclusivos no estado pendente.  | 123  |
-| Bem-sucedido  | Número de usuários exclusivos no estado de êxito.  | 12  |
+| Êxito  | Número de usuários exclusivos no estado de êxito.  | 12  |
 | Erro do  | Número de usuários exclusivos no estado de erro.  | 10  |
 | Failed (Falha)  | Número de usuários exclusivos no estado de falha.  | 2  |
 
@@ -230,7 +230,7 @@ A entidade **dispositivo** lista todos os dispositivos registrados no gerenciame
 | DeviceCategoryKey          | A chave da categoria associada a este dispositivo.                                                                                                                                     |
 | DeviceEnrollmentType       | A chave do tipo de registro associada a este dispositivo, que indica o método de registro.                                                                                             |
 | ComplianceStateKey         | A chave do estado de conformidade associado a este dispositivo.                                                                                                                             |
-| OSVersion                  | Versão do sistema operacional do dispositivo.                                                                                                                                                |
+| OSVersion                  | A versão do sistema operacional do dispositivo.                                                                                                                                                |
 | EasDeviceId                | A ID do Exchange ActiveSync do dispositivo.                                                                                                                                                  |
 | SerialNumber               | SerialNumber                                                                                                                                                                           |
 | UserId                     | O identificador exclusivo do usuário associado ao dispositivo.                                                                                                                           |
@@ -263,7 +263,7 @@ A entidade **deviceType** representa o tipo de dispositivo referenciado por outr
 
 ### <a name="example"></a>Exemplo
 
-| deviceTypeID |        Nome       |                      Descrição                      |
+| deviceTypeID |        Name       |                      Descrição                      |
 |:------------:|:-----------------:|:-----------------------------------------------------:|
 | -1           | Não disponível   | O tipo de dispositivo está indisponível.                     |
 | 0            | Área de Trabalho           | Dispositivo do Windows Desktop                              |
@@ -300,7 +300,7 @@ A entidade **deviceEnrollmentType** indica como um dispositivo foi inscrito. O t
 
 ### <a name="example"></a>Exemplo
 
-| enrollmentTypeID |                Nome                |                                        Descrição                                       |
+| enrollmentTypeID |                Name                |                                        Descrição                                       |
 |:----------------:|:----------------------------------:|:----------------------------------------------------------------------------------------:|
 | 0                | Unknown                            | O tipo de registro não foi coletado                                                      |
 | 1                | UserEnrollment                     | Registro orientado por usuário por meio do canal BYOD.                                           |
@@ -518,14 +518,14 @@ A entidade **managementAgentType** representa os agentes usados para gerenciar u
 
 ### <a name="example"></a>Exemplo
 
-| ManagementAgentTypeID |                Nome               |                                  Descrição                                 |
+| ManagementAgentTypeID |                Name               |                                  Descrição                                 |
 |:---------------------:|:---------------------------------:|:----------------------------------------------------------------------------:|
 | 1                     | EAS                               | O dispositivo é gerenciado por meio do Exchange Active Sync                         |
 | 2                     | MDM                               | O dispositivo é gerenciado usando um agente MDM                                   |
 | 3                     | EasMdm                            | O dispositivo é gerenciado pelo Exchange ActiveSync e por um agente MDM        |
 | 4                     | IntuneClient                      | O dispositivo é gerenciado pelo agente do PC Intune                               |
 | 5                     | EasIntuneClient                   | O dispositivo é gerenciado pelo Exchange ActiveSync e pelo PC Intune |
-| 8                     | ConfigManagerClient               | O dispositivo é gerenciado pelo agente do System Center Configuration Manager     |
+| 8                     | ConfigManagerClient               | O dispositivo é gerenciado pelo agente do Configuration Manager     |
 | 10                    | ConfigurationManagerClientMdm     | O dispositivo é gerenciado pelo Configuration Manager e MDM.                    |
 | 11                    | ConfigurationManagerCLientMdmEas  | O dispositivo é gerenciado pelo Configuration Manager, pelo MDM e pelo Exchange Active Sync.               |
 | 16                    | Unknown                           | O tipo de agente de gerenciamento desconhecido                                              |
@@ -543,7 +543,7 @@ A entidade **ManagementState** fornece detalhes sobre o estado do dispositivo. D
 
 ### <a name="example"></a>Exemplo
 
-| managementStateID |      Nome      |                                                   Descrição                                                   |
+| managementStateID |      Name      |                                                   Descrição                                                   |
 |:-----------------:|:--------------:|:---------------------------------------------------------------------------------------------------------------:|
 | 0                 | Gerenciados        | Gerenciados com nenhuma ação remota pendente.                                                                       |
 | 1                 | RetirePending  | Há um comando de desativação pendente para o dispositivo.                                                             |
@@ -586,7 +586,7 @@ A entidade **ownerType** indica se um dispositivo é corporativo, pessoal ou des
 |:-------------:|:----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------:|:--------------------------:|
 | ownerTypeID   | Identificador exclusivo do tipo de proprietário.                                                                                                                                               |                            |
 | ownerTypeKey  | Identificador exclusivo do tipo de proprietário no data warehouse – chave alternativa.                                                                                                       |                            |
-| ownerTypeName | Representa o tipo de proprietário dos dispositivos: corporativo– o dispositivo é de propriedade da empresa.  Pessoal – o dispositivo de propriedade pessoal (BYOD).   Desconhecido – não há informações sobre este dispositivo. | Corporativo Pessoal Desconhecido |
+| ownerTypeName | Representa o tipo de proprietário dos dispositivos:  Corporativo – o dispositivo é de propriedade da empresa.  Pessoal – o dispositivo de propriedade pessoal (BYOD).   Desconhecido – não há informações sobre este dispositivo. | Corporativo Pessoal Desconhecido |
 
 > [!Note]  
 > Para o filtro `ownerTypeName` no Azure AD durante a criação de Grupos Dinâmicos para dispositivos, você precisará definir o valor de `deviceOwnership` como `Company`. Para obter mais informações, veja [Regras para dispositivos](https://docs.microsoft.com/azure/active-directory/users-groups-roles/groups-dynamic-membership#rules-for-devices). 
@@ -612,7 +612,7 @@ A tabela a seguir lista o número de dispositivos com o estado de êxito, penden
 |:---------:|:-----------------------------------------------------------------------------------------------:|:---------------------:|
 | DateKey   | A chave de data quando o check-in do perfil de Configuração do dispositivo foi registrado no data warehouse. | 20160703              |
 | Pending (Pendente)   | O número de dispositivos exclusivos no estado pendente.                                                    | 123                   |
-| Bem-sucedido | O número de dispositivos exclusivos no estado de êxito.                                                    | 12                    |
+| Êxito | O número de dispositivos exclusivos no estado de êxito.                                                    | 12                    |
 | PolicyKey | A chave de política, pode ser unida com a política para obter o policyName.                                  | A linha de base do Windows 10 |
 | Erro do     | O número de dispositivos exclusivos no estado de erro.                                                      | 10                    |
 | Failed (Falha)    | O número de dispositivos exclusivos no estado de falha.                                                     | 2                     |
@@ -634,7 +634,7 @@ A entidade **PolicyTypeActivity** lista o número acumulativo de dispositivos co
 | PolicyKey     | A chave de política, pode ser unida com a política para obter o policyName.                                | Linha de base do Windows 10         |
 | PolicyTypeKey | O tipo de chave de política, pode ser unido com o tipo de política para obter o nome do tipo de política.             | Política de conformidade do Windows10 |
 | Pending (Pendente)       | Número de dispositivos exclusivos no estado pendente.                                                    | 123                         |
-| Bem-sucedido     | Número de dispositivos exclusivos no estado de êxito.                                                    | 12                          |
+| Êxito     | Número de dispositivos exclusivos no estado de êxito.                                                    | 12                          |
 | Erro do         | Número de dispositivos exclusivos no estado de erro.                                                      | 10                          |
 | Failed (Falha)        | Número de dispositivos exclusivos no estado de falha.                                                     | 2                           |
 
@@ -654,7 +654,7 @@ A tabela a seguir lista o número de usuários com o estado de êxito, pendente,
 |:---------:|:---------------------------------------------------------------------------------------------:|:-------------------:|
 | DateKey   | A chave de data quando o check-in do perfil de Configuração do dispositivo foi registrado no data warehouse. | 20160703            |
 | Pending (Pendente)   | Número de dispositivos exclusivos no estado pendente.                                                    | 123                 |
-| Bem-sucedido | Número de dispositivos exclusivos no estado de êxito.                                                    | 12                  |
+| Êxito | Número de dispositivos exclusivos no estado de êxito.                                                    | 12                  |
 | PolicyKey | A chave de política, pode ser unida com a política para obter o policyName.                                | Linha de base do Windows 10 |
 | Erro do     | Número de dispositivos exclusivos no estado de erro.                                                      | 10                  |
 
@@ -667,7 +667,7 @@ Uma entidade **termsAndConditions** representa os metadados e conteúdos de dete
 |    termsAndCondidionsId    |    A ID para esta entrada termsAndConditions    |    276edcb7-7440-4339-b6c5-8b6fc556fee6    |
 |    termsAndConditionsVersion    |    A versão desta entrada de termos e condições    |    1    |
 |    name    |    O nome desta entrada de termsAndConditions.        |    Termos de uso do Intune     |
-|    descrição    |    A descrição desses termos e condições.     |         |
+|    description    |    A descrição desses termos e condições.     |         |
 |    title    |    O título desses termos e condições.     |    Política corporativa de gerenciamento de dispositivos        |
 |    summaryOfTerms    |    O resumo dos termos fornecidos ao usuário.     |    Eu concordo com os termos e condições.    |
 |    termsAndConditionsBodyText    |    O corpo do texto desses termos e condições.       |    *Criptografia do dispositivo* Imposição de PIN de seis dígitos    |
@@ -678,7 +678,7 @@ Uma entidade **termsAndConditions** representa os metadados e conteúdos de dete
 ## <a name="userdeviceassociations"></a>userDeviceAssociations
 A entidade **UserDeviceAssociation** contém associações de dispositivo de usuário em sua organização.
 
-|        Nome        |                                             Descrição                                            |     Exemplo     |
+|        Name        |                                             Descrição                                            |     Exemplo     |
 |:------------------:|:--------------------------------------------------------------------------------------------------:|:---------------:|
 | UserKey            | Identificador exclusivo do usuário no data warehouse.   (Chave substituta).                            | 123             |
 | DeviceKey          | Identificador exclusivo do dispositivo no data warehouse.                                             | 123             |
@@ -724,7 +724,7 @@ A entidade **vppProgramType** lista os possíveis tipos de programa VPP para um 
 
 ### <a name="example"></a>Exemplo
 
-|             VppProgramID             |         Nome        | Descrição                |
+|             VppProgramID             |         Name        | Descrição                |
 |:------------------------------------:|:-------------------:|----------------------------|
 | 3DDA2474-470B-4503-9830-2665C21C1945 | Microsoft           | O programa VPP da Microsoft. |
 | 00000000-0000-0000-0000-000000000000 | Ainda não disponível | O valor padrão, não VPP.   |

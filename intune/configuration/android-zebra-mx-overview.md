@@ -17,16 +17,16 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 829d8f6b2691f91c14029e4f29e2ef11b070e596
-ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
+ms.openlocfilehash: 83048061cc7b3e1aaeb09ff54dec819720f2571f
+ms.sourcegitcommit: e166b9746fcf0e710e93ad012d2f52e2d3ed2644
 ms.translationtype: MTE75
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "74059617"
+ms.lasthandoff: 12/19/2019
+ms.locfileid: "75206815"
 ---
 # <a name="use-and-manage-zebra-devices-with-zebra-mobility-extensions-in-microsoft-intune"></a>Usar e gerenciar dispositivos Zebra com o Zebra Mobility Extensions no Microsoft Intune
 
-[!INCLUDE [azure_portal](../includes/azure_portal.md)]
+
 
 O Intune conta com um conjunto avançado de recursos, incluindo o gerenciamento de aplicativos e a configuração do dispositivo. Esses recursos internos e configurações gerenciam dispositivos Android fabricados pela Zebra Technologies, também conhecidos como “dispositivos Zebra”.
 
@@ -138,9 +138,9 @@ No Intune, crie um perfil de configuração do dispositivo:
 3. Insira as seguintes propriedades:
 
     - **Nome**: insira um nome descritivo para o novo perfil.
-    - **Descrição:** insira uma descrição para o perfil. Essa configuração é opcional, mas recomendada.
-    - **Plataforma**: selecione **Android**.
-    - **Tipo de perfil**: selecione **Perfil do MX (apenas Zebra)** .
+    - **Descrição**: Insira uma descrição para o perfil. Essa configuração é opcional, mas recomendada.
+    - **Plataforma**: Selecione **Android**.
+    - **Tipo de perfil**: selecione **Perfil MX (somente Zebra)** .
 
 4. No **Perfil do MX no formato .xml**, adicione o arquivo de perfil XML [exportado do StageNow](#step-4-create-a-device-management-profile-in-stagenow) (neste artigo).
 5. Selecione **OK** > **Criar** para salvar suas alterações. A política é criada e mostrada na lista.

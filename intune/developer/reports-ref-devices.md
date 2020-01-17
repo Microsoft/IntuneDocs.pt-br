@@ -6,7 +6,7 @@ keywords: Intune Data Warehouse
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 10/03/2019
+ms.date: 01/03/2020
 ms.topic: reference
 ms.service: microsoft-intune
 ms.subservice: developer
@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 36407bda1f74d0c4601f78cedc2af5426e944fee
-ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
+ms.openlocfilehash: 85b6d49f435ec45a2c6a2b81387ea25a1c15299b
+ms.sourcegitcommit: 8d7406b75ef0d75cc2ed03b1a5e5f74ff10b98c0
 ms.translationtype: MTE75
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "72503425"
+ms.lasthandoff: 01/03/2020
+ms.locfileid: "75654066"
 ---
 # <a name="reference-for-devices-entities"></a>Referência para entidades de dispositivos
 
@@ -50,7 +50,7 @@ A entidade **deviceTypes** representa o tipo de dispositivo referenciado por out
 
 ### <a name="example"></a>Exemplo
 
-| deviceTypeID  | Nome | Descrição |
+| deviceTypeID  | Name | Descrição |
 |---------|------------|--------|
 | 0 |Área de Trabalho |Dispositivo do Windows Desktop |
 | 1 |WindowsRT |Dispositivo WindowsRT |
@@ -184,7 +184,7 @@ A entidade **managementStates** fornece detalhes sobre o estado do dispositivo. 
 
 ### <a name="example"></a>Exemplo
 
-| managementStateID  | Nome | Descrição |
+| managementStateID  | Name | Descrição |
 |---------|------------|--------|
 | 0 |Gerenciados | Gerenciados com nenhuma ação remota pendente. |
 | 1 |RetirePending | Há um comando de desativação pendente para o dispositivo. |
@@ -211,14 +211,14 @@ A entidade **ManagementAgentType** representa os agentes usados para gerenciar u
 
 ### <a name="example"></a>Exemplo
 
-| ManagementAgentTypeID  | Nome | Descrição |
+| ManagementAgentTypeID  | Name | Descrição |
 |---------|------------|--------|
 | 1 |EAS | O dispositivo é gerenciado por meio do Exchange Active Sync |
 | 2 |MDM | O dispositivo é gerenciado usando um agente MDM |
 | 3 |EasMdm | O dispositivo é gerenciado pelo Exchange ActiveSync e por um agente MDM |
 | 4 |IntuneClient | O dispositivo é gerenciado pelo agente do PC Intune |
 | 5 |EasIntuneClient | O dispositivo é gerenciado pelo Exchange ActiveSync e pelo PC Intune |
-| 8 |ConfigManagerClient | O dispositivo é gerenciado pelo agente do System Center Configuration Manager |
+| 8 |ConfigManagerClient | O dispositivo é gerenciado pelo agente do Configuration Manager |
 | 16 |Unknown | Tipo de agente de gerenciamento desconhecido |
 
 ## <a name="devices"></a>dispositivos
@@ -242,7 +242,7 @@ A entidade **devices** lista todos os dispositivos registrados no gerenciamento 
 | deviceCategoryKey          | A chave da categoria associada a este dispositivo.                                                                                                                                     |
 | deviceEnrollmentType       | A chave do tipo de registro associada a este dispositivo, que indica o método de registro.                                                                                             |
 | complianceStateKey         | A chave do estado de conformidade associado a este dispositivo.                                                                                                                             |
-| osVersion                  | Versão do sistema operacional do dispositivo.                                                                                                                                                |
+| osVersion                  | A versão do sistema operacional do dispositivo.                                                                                                                                                |
 | easDeviceId                | A ID do Exchange ActiveSync do dispositivo.                                                                                                                                                  |
 | serialNumber               | SerialNumber                                                                                                                                                                           |
 | userId                     | O identificador exclusivo do usuário associado ao dispositivo.                                                                                                                           |

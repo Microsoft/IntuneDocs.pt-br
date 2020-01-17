@@ -16,12 +16,12 @@ ms.suite: ems
 search.appverid: ''
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 5519bdc405e725556db18d36fa98289c4edb5090
-ms.sourcegitcommit: df8e2c052fafb2d5d4e9b4fcd831ae0ecf7f8d16
+ms.openlocfilehash: 791e2a1313480bdf1ad95988d48664d6620ba0b3
+ms.sourcegitcommit: e166b9746fcf0e710e93ad012d2f52e2d3ed2644
 ms.translationtype: MTE75
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/10/2019
-ms.locfileid: "74992903"
+ms.lasthandoff: 12/19/2019
+ms.locfileid: "75206339"
 ---
 # <a name="macos-device-feature-settings-in-intune"></a>Configurações de recursos do dispositivo macOS no Intune
 
@@ -42,10 +42,10 @@ Este artigo lista essas configurações e descreve o que cada uma faz. Ele tamb�
 
 ### <a name="settings-apply-to-device-enrollment-and-automated-device-enrollment"></a>As configurações se aplicam a: registro de dispositivo e registro de dispositivo automatizado 
 
-- **Endereço IP**: insira o endereço IPv4 ou IPv6 da impressora. Se você usar nomes de host para identificar impressoras, poderá obter o endereço IP executando ping dela no aplicativo Terminal. [Obter o endereço IP e o caminho](#get-the-ip-address-and-path) (neste artigo) fornece mais detalhes.
-- **Caminho**: insira o caminho da impressora. Geralmente, o caminho é `ipp/print` para impressoras na rede. [Obter o endereço IP e o caminho](#get-the-ip-address-and-path) (neste artigo) fornece mais detalhes.
-- **Porta** (iOS 11.0 e posterior): insira a porta de escuta do destino do AirPrint. Se você deixar essa propriedade em branco, o AirPrint usará a porta padrão.
-- **TLS** (iOS 11.0 e posterior): selecione **Habilitar** para proteger conexões do AirPrint com o protocolo TLS.
+- **Endereço IP**: Insira o endereço IPv4 ou IPv6 da impressora. Se você usar nomes de host para identificar impressoras, poderá obter o endereço IP executando ping dela no aplicativo Terminal. [Obter o endereço IP e o caminho](#get-the-ip-address-and-path) (neste artigo) fornece mais detalhes.
+- **Caminho**: Insira o caminho da impressora. Geralmente, o caminho é `ipp/print` para impressoras na rede. [Obter o endereço IP e o caminho](#get-the-ip-address-and-path) (neste artigo) fornece mais detalhes.
+- **Porta** (iOS 11.0 e posterior): Insira a porta de escuta do destino do AirPrint. Se você deixar essa propriedade em branco, o AirPrint usará a porta padrão.
+- **TLS** (iOS 11.0 e posterior): selecione **Habilitar** para proteger as conexões do AirPrint com o protocolo TLS.
 
 - **Adicione** o servidor do AirPrint. Você pode adicionar vários servidores do AirPrint.
 
@@ -72,7 +72,7 @@ Para adicionar servidores AirPrinter, você precisa ter o endereço IP da impres
 
 - **Arquivos, pastas e aplicativos personalizados**: **adicione** o caminho de um arquivo, pasta, aplicativo personalizado ou aplicativo de sistema que você deseja abrir quando um usuário entrar no dispositivo. Aplicativos de sistema ou aplicativos criados ou personalizados para sua organização normalmente estão na pasta `Applications`, com um caminho semelhante a `/Applications/AppName.app`. 
 
-  Você pode adicionar vários arquivos, pastas e aplicativos. Por exemplo, insira:  
+  Você pode adicionar vários arquivos, pastas e aplicativos. Por exemplo, digite:  
   
   - `/Applications/Calculator.app`
   - `/Applications`
@@ -89,35 +89,35 @@ Para adicionar servidores AirPrinter, você precisa ter o endereço IP da impres
 
 - **Mostrar informações adicionais na barra de menus**: quando a área de tempo é selecionada na barra de menus, **Permitir** mostra o nome do host e a versão do macOS. **Não configurado** (padrão) não mostra essas informações na barra de menus.
 - **Faixa**: insira uma mensagem mostrada na tela de entrada no dispositivo. Por exemplo, insira as informações de sua organização, uma mensagem de boas-vindas, informações sobre achados e perdidos e assim por diante.
-- **Escolher formato de logon**: escolha como os usuários entram no dispositivo. Suas opções:
-  - **Solicitar usuário e senha** (padrão): exige que os usuários insiram um nome de usuário e senha.
+- **Escolha o formato de logon**: escolha como os usuários entram no dispositivo. Suas opções:
+  - **Solicitar nome de usuário e senha** (padrão): exige que os usuários insiram um nome de usuário e uma senha.
   - **Listar todos os usuários, solicitar senha**: exige que os usuários selecionem o nome de usuário em uma lista de usuários e, em seguida, insiram sua senha. Configure também:
 
-    - **Usuários locais**: **Ocultar** não mostra as contas de usuário local na lista de usuários, que podem incluir as contas de administrador e padrão. Somente as contas de usuário de rede e do sistema são mostradas. **Não configurado** (padrão) mostra as contas de usuário local na lista de usuários.
-    - **Contas móveis**: **Ocultar** não mostra contas móveis na lista de usuários. **Não configurado** (padrão) mostra as contas móveis na lista de usuários. Algumas contas móveis podem ser mostradas como usuários de rede.
+    - **Usuários Locais**: a opção **Ocultar** não mostra as contas de usuário local na lista de usuários, que podem incluir as contas de administrador e padrão. Somente as contas de usuário de rede e do sistema são mostradas. **Não configurado** (padrão) mostra as contas de usuário local na lista de usuários.
+    - **Contas móveis**: a opção **Ocultar** não mostra contas móveis na lista de usuários. **Não configurado** (padrão) mostra as contas móveis na lista de usuários. Algumas contas móveis podem ser mostradas como usuários de rede.
     - **Usuários de rede**: selecione **Mostrar** para listar os usuários de rede na lista de usuários. **Não configurado** (padrão) não mostra as contas de usuário de rede na lista de usuários.
-    - **Usuários administradores**: **Ocultar** não mostra as contas de usuário administrador na lista de usuários. **Não configurado** (padrão) mostra as contas de usuário administrador na lista de usuários.
+    - **Usuários administradores**: a opção **Ocultar** não mostra as contas de usuário administrador na lista de usuários. **Não configurado** (padrão) mostra as contas de usuário administrador na lista de usuários.
     - **Outros usuários**: selecione **Mostrar** para listar **Outros...** usuários na lista de usuários. **Não configurado** (padrão) não mostra outras contas de usuário na lista de usuários.
 
 #### <a name="login-screen-power-settings"></a>Configurações de energia da tela de logon
 
 - **Botão Desligar**: **Ocultar** não mostra o botão de desligamento na tela de entrada. **Não configurado** (padrão) mostra o botão de desligamento.
-- **Botão Reiniciar**: **Ocultar** não mostra o botão de reinicialização na tela de entrada. **Não configurado** (padrão) mostra o botão de reinicialização.
-- **Botão Suspender**: **Ocultar** não mostra o botão de suspensão na tela de entrada. **Não configurado** (padrão) mostra o botão de suspensão.
+- **Botão Reiniciar**: a opção **Ocultar** não mostra o botão de reinicialização na tela de entrada. **Não configurado** (padrão) mostra o botão de reinicialização.
+- **Botão Suspensão**: a opção **Ocultar** não mostra o botão de suspensão na tela de entrada. **Não configurado** (padrão) mostra o botão de suspensão.
 
 #### <a name="other"></a>Outros
 
-- **Desabilitar logon do usuário do Console**: **Desabilitar** oculta a linha de comando do macOS usada para entrar. Para usuários comuns, **Desabilite** esta configuração. **Não configurado** (padrão) permite que usuários avançados entrem usando a linha de comando do macOS. Para entrar no modo de console, os usuários inserem `>console` no campo Nome de usuário e devem se autenticar na janela do console.
+- **Desabilitar logon do usuário do Console**: a opção **Desabilitar** oculta a linha de comando do macOS usada para entrar. Para usuários comuns, **Desabilite** esta configuração. **Não configurado** (padrão) permite que usuários avançados entrem usando a linha de comando do macOS. Para entrar no modo de console, os usuários inserem `>console` no campo Nome de usuário e devem se autenticar na janela do console.
 
 #### <a name="apple-menu"></a>Menu Apple
 
 Depois que os usuários entram nos dispositivos, as seguintes configurações afetam o que eles podem fazer.
 
-- **Desabilitar Desligar**: **Desabilitar** impede que os usuários selecionem a opção **Desligamento** após a entrada do usuário. **Não configurado** (padrão) permite que os usuários selecionem o item de menu **Desligamento** no dispositivo.
-- **Desabilitar Reiniciar**: **Desabilitar** impede que os usuários selecionem a opção **Reiniciar** após a entrada do usuário. **Não configurado** (padrão) permite que os usuários selecionem o item de menu **Reinicialização** no dispositivo.
-- **Desabilitar Desligamento**: **Desabilitar** impede que os usuários selecionem **Desligamento** após a entrada do usuário. **Não configurado** (padrão) permite que os usuários selecionem o item de menu **Desligar** no dispositivo.
-- **Desabilitar Logoff** (macOS 10.13 e posterior): **Desabilitar** impede que os usuários selecionem a opção **Logoff** após a entrada do usuário. **Não configurado** (padrão) permite que os usuários selecionem o item de menu **Logoff** no dispositivo.
-- **Desabilitar Bloquear Tela** (macOS 10.13 e posterior): **Desabilitar** impede que os usuários selecionem a opção **Bloquear Tela** após a entrada do usuário. **Não configurado** (padrão) permite que os usuários selecionem o item de menu **Bloquear tela** no dispositivo.
+- **Desabilitar Desligamento**: a opção **Desabilitar** impede que os usuários selecionem a opção **Desligar** após a entrada do usuário. **Não configurado** (padrão) permite que os usuários selecionem o item de menu **Desligamento** no dispositivo.
+- **Desabilitar Reinicialização**: a opção **Desabilitar** impede que os usuários selecionem a opção **Reiniciar** após a entrada do usuário. **Não configurado** (padrão) permite que os usuários selecionem o item de menu **Reinicialização** no dispositivo.
+- **Desabilitar Desligamento**: a opção **Desabilitar** impede que os usuários selecionem a opção **Desligar** após a entrada do usuário. **Não configurado** (padrão) permite que os usuários selecionem o item de menu **Desligar** no dispositivo.
+- **Desabilitar Logoff** (macOS 10.13 e posterior): a opção **Desabilitar** impede que os usuários selecionem a opção **Sair** após a entrada do usuário. **Não configurado** (padrão) permite que os usuários selecionem o item de menu **Logoff** no dispositivo.
+- **Desabilitar Tela de Bloqueio** (macOS 10.13 e posterior): a opção **Desabilitar** impede que os usuários selecionem a opção **Bloquear tela** após a entrada do usuário. **Não configurado** (padrão) permite que os usuários selecionem o item de menu **Bloquear tela** no dispositivo.
 
 ## <a name="single-sign-on-app-extension"></a>Extensão do aplicativo de logon único
 
@@ -135,7 +135,7 @@ Esse recurso aplica-se a:
   - **Kerberos**: Use a extensão Kerberos interna da Apple, que está incluída no macOS Catalina 10,15 e mais recente. Essa opção é uma versão específica do Kerberos da extensão do aplicativo de **credencial** .
 
   > [!TIP]
-  > Com os tipos de **redirecionamento** e de **credencial** , você adiciona seus próprios valores de configuração para passar pela extensão. Se você estiver usando uma **credencial**, considere o uso de definições de configuração internas fornecidas pela Apple no tipo **Kerberos** .
+  > Com os tipos de **redirecionamento** e de **credencial** , você adiciona seus próprios valores de configuração para passar pela extensão. Se você estiver usando **credenciais**, considere o uso de definições de configuração internas fornecidas pela Apple no tipo **Kerberos** .
 
 - **ID da extensão** (redirecionamento e credencial): Insira o identificador do pacote que identifica a extensão do aplicativo SSO, como `com.apple.ssoexample`.
 - **ID da equipe** (redirecionamento e credencial): Insira o identificador de equipe da sua extensão de aplicativo SSO. Um identificador de equipe é uma cadeia de caracteres alfanuméricos de 10 caracteres (números e letras) gerada pela Apple, como `ABCDE12345`. 
@@ -183,7 +183,7 @@ Esse recurso aplica-se a:
 - **Limite de reutilização de senha** (somente Kerberos): Insira o número de novas senhas, de 1-24, que devem ser usadas até que uma senha anterior possa ser reutilizada no domínio. **Não configurado** (padrão) não impõe um limite de reutilização de senha.
 - **Duração mínima da senha** (somente Kerberos): Insira o número de dias que uma senha deve ser usada no domínio antes que um usuário possa alterá-la. **Não configurado** (padrão) não impõe uma idade mínima de senhas antes que elas possam ser alteradas.
 - **Notificação de expiração de senha** (somente Kerberos): Insira o número de dias antes que uma senha expire que os usuários são notificados de que sua senha expirará. **Não configurado** (padrão) usa `15` dias.
-- **Expiração da senha** (somente Kerberos): insira o número de dias antes que a senha do dispositivo precise ser alterada. **Não configurado** (padrão) significa que as senhas de usuário nunca expiram.
+- **Expiração de senha** (somente Kerberos): Insira o número de dias antes que a senha do dispositivo precise ser alterada. **Não configurado** (padrão) significa que as senhas de usuário nunca expiram.
 - **URL de alteração de senha** (somente Kerberos): Insira a URL que é iniciada quando o usuário inicia uma alteração de senha Kerberos.
 - **Nome da entidade de segurança** (somente Kerberos): Insira o nome de usuário da entidade de segurança Kerberos. Você não precisa incluir o nome do realm. Por exemplo, em `user@contoso.com`, `user` é o nome principal e `contoso.com` é o nome do realm.
 
@@ -225,7 +225,7 @@ Esse recurso aplica-se a:
 
   O tipo de serviço pode ser:
 
-  - **authsrv**: extensão do aplicativo de logon único
+  - **authsrv**: Extensão do aplicativo de logon único
   - **AppLink**: link universal
   - **webcredentials**: AutoPreenchimento de senha
 

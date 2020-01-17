@@ -6,7 +6,7 @@ keywords: Intune Data Warehouse
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 10/02/2019
+ms.date: 01/03/2020
 ms.topic: reference
 ms.service: microsoft-intune
 ms.subservice: developer
@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 64fc1bab596715be80fd3a91c003cac1176fe787
-ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
+ms.openlocfilehash: 1fe4fabc86e7be647fa161d68fe8a4fe35e9eb6b
+ms.sourcegitcommit: 8d7406b75ef0d75cc2ed03b1a5e5f74ff10b98c0
 ms.translationtype: MTE75
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "72490267"
+ms.lasthandoff: 01/03/2020
+ms.locfileid: "75654117"
 ---
 # <a name="reference-for-policy-entities"></a>Referência para entidades de política
 
@@ -150,7 +150,7 @@ A tabela a seguir lista o número de dispositivos com o estado de êxito, penden
 |---------|---------|---------|
 |dateKey|Chave de data quando o check-in do perfil de configuração do dispositivo foi registrado no data warehouse.|20160703|
 |pending|Número de dispositivos exclusivos no estado pendente.|123|
-|Bem-sucedido|Número de dispositivos exclusivos no estado de êxito.|12|
+|Êxito|Número de dispositivos exclusivos no estado de êxito.|12|
 |policyKey|A policyKey, pode ser unida com a política para obter o policyName.|Linha de base do Windows 10|
 |erro|Número de dispositivos exclusivos no estado de erro.|10|
 |falha|Número de dispositivos exclusivos no estado de falha.|2|

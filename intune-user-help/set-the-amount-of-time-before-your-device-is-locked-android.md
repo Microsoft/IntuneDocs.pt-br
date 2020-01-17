@@ -18,19 +18,19 @@ ROBOTS: ''
 ms.reviewer: arnab
 ms.suite: ems
 ms.custom: intune-enduser
-ms.collection: M365-identity-device-management
-ms.openlocfilehash: ce0736845b1aca2f70b5c8802e726995ca18159b
-ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
+ms.collection: ''
+ms.openlocfilehash: 749bc2e7015bd43a811fae8de55169a3cfcc2999
+ms.sourcegitcommit: caee3c3fa77586314aa8040b0caf32a0527b669e
 ms.translationtype: MTE75
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "72508269"
+ms.lasthandoff: 01/10/2020
+ms.locfileid: "75857923"
 ---
 # <a name="how-to-set-the-amount-of-time-before-your-device-is-locked"></a>Como definir a quantidade de tempo antes que seu dispositivo seja bloqueado
 
 Para manter os dados em seu dispositivo Android mais seguros, o suporte de sua empresa pode definir uma política que exige que você defina o período que o dispositivo pode ficar ocioso antes que seja bloqueado automaticamente. Siga estas etapas para definir o período antes que o dispositivo seja bloqueado.
 
-1. Em **Configurações** no seu dispositivo, clique em **Segurança** &gt; **Bloqueio Automático** (isso é exibido como **Bloquear telefone após** em alguns dispositivos).
+1. Em **Configurações** no seu dispositivo, clique em **Segurança** &gt; **Bloqueio automático** (isso é exibido em alguns dispositivos como **Bloquear telefone após**).
 
 2. Especifique o valor do tempo limite da senha.
 

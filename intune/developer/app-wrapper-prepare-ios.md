@@ -5,7 +5,7 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 11/06/2019
+ms.date: 01/02/2020
 ms.topic: reference
 ms.service: microsoft-intune
 ms.subservice: developer
@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: c0fac5e9d34890272253eaefd82ed13dc1014ba0
-ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
+ms.openlocfilehash: 62ee300b7357132e6f9e18ef4528110dfc988dc3
+ms.sourcegitcommit: 8d7406b75ef0d75cc2ed03b1a5e5f74ff10b98c0
 ms.translationtype: MTE75
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "73713478"
+ms.lasthandoff: 01/03/2020
+ms.locfileid: "75653658"
 ---
 # <a name="prepare-ios-apps-for-app-protection-policies-with-the-intune-app-wrapping-tool"></a>Preparar aplicativos iOS para políticas de proteção de aplicativo com a Ferramenta de Encapsulamento de Aplicativos do Intune
 
@@ -181,7 +181,7 @@ Abra o terminal do macOS e execute o seguinte comando:
 > [!NOTE]
 > Alguns parâmetros são opcionais, conforme mostrado na tabela a seguir.
 
-**Exemplo:** o comando de exemplo a seguir executa a Ferramenta de Disposição de Aplicativo em um aplicativo chamado MyApp.ipa. Um perfil de provisionamento e o hash SHA-1 do certificado de autenticação especificado são usados para assinar o aplicativo encapsulado. O aplicativo de saída (MyApp_Wrapped.ipa) é criado e armazenado na sua pasta da Área de Trabalho.
+**Exemplo:** O comando de exemplo a seguir executa a Ferramenta de Disposição de Aplicativo em um aplicativo chamado MyApp.ipa. Um perfil de provisionamento e o hash SHA-1 do certificado de autenticação especificado são usados para assinar o aplicativo encapsulado. O aplicativo de saída (MyApp_Wrapped.ipa) é criado e armazenado na sua pasta da Área de Trabalho.
 
 ```bash
 ./IntuneMAMPackager/Contents/MacOS/IntuneMAMPackager -i ~/Desktop/MyApp.ipa -o ~/Desktop/MyApp_Wrapped.ipa -p ~/Desktop/My_Provisioning_Profile_.mobileprovision -c "12 A3 BC 45 D6 7E F8 90 1A 2B 3C DE F4 AB C5 D6 E7 89 0F AB"  -v true
@@ -215,7 +215,7 @@ Uma maneira fácil de executar a ferramenta de disposição de aplicativo é col
 
 Na pasta IntuneMAMPackager/Conteúdo/MacOS, abra `Parameters.plist` (um modelo plist em branco) com um editor de texto ou Xcode. Insira seus argumentos para as chaves a seguir:
 
-| Chave plist | Tipo |  Valor padrão | Anotações |
+| Chave plist | Digite |  Valor padrão | Anotações |
 |------------------|-----|--------------|-----|
 | Caminho do pacote de aplicativos de entrada |Cadeia de caracteres|vazio| Mesmo que -i|
 | Caminho do pacote de aplicativos de saída |Cadeia de caracteres|vazio| Mesmo que -o|

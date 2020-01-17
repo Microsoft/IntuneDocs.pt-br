@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 962e66a9fdf6d8abcf6855f645775026ee4db850
-ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
+ms.openlocfilehash: d3d9473b68f0420670130203409abf477355d93f
+ms.sourcegitcommit: 2506cdbfccefd42587a76f14ee50c3849dad1708
 ms.translationtype: MTE75
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "72508846"
+ms.lasthandoff: 01/11/2020
+ms.locfileid: "75885525"
 ---
 # <a name="troubleshoot-the-intune-exchange-connector"></a>Solução de problemas com o Intune Exchange Connector
 
@@ -40,7 +40,7 @@ Antes de começar a solucionar problemas de um problema do Exchange Connector no
   - Você está configurando o conector pela primeira vez? 
   - O conector funcionou corretamente e falhou?
   - Se ele estava funcionando, quais alterações ocorreram no ambiente do Intune, no ambiente do Exchange ou no computador que executa o software do conector?
-- O que é a autoridade de MDM? Se for System Center Configuration Manager, qual versão do Configuration Manager você usa?
+- O que é a autoridade de MDM?
 - Qual versão do Exchange você usa?
 
 ### <a name="use-powershell-to-get-more-data-on-exchange-connector-issues"></a>Usar o PowerShell para obter mais dados sobre problemas do Exchange Connector
@@ -65,10 +65,10 @@ Examine os [requisitos do Exchange Connector local](exchange-connector-install.m
 
 ### <a name="common-issues-for-connector-configurations"></a>Problemas comuns de configurações de conector
 
-- **Permissões de conta**: na caixa de diálogo do Microsoft Intune Exchange Connector, verifique se você especificou uma conta de usuário que tenha as permissões apropriadas para executar os [cmdlets necessários do Windows PowerShell Exchange](exchange-connector-install.md#exchange-cmdlet-requirements).
+- **Permissões da conta**: Na caixa de diálogo do Microsoft Intune Exchange Connector, verifique se você especificou uma conta de usuário que tenha as permissões apropriadas para executar os [cmdlets necessários do Windows PowerShell Exchange](exchange-connector-install.md#exchange-cmdlet-requirements).
 - **Mensagens de email de notificação**: habilite notificações e especifique uma conta de notificação.
 - **Sincronização do servidor de acesso para cliente**: ao configurar o Exchange Connector, ESPECIFIQUE um CAS que tenha a menor latência de rede possível para o servidor que hospeda o Exchange Connector. A latência de comunicação entre o CAS e o Exchange Connector pode atrasar a descoberta de dispositivo, especialmente, ao usar o Exchange Online Dedicado.
-- **Agenda de sincronização**: um usuário com um dispositivo recém-registrado pode ter um atraso na obtenção de acesso até que o Exchange Connector seja sincronizado com o CAS do Exchange. Uma sincronização completa ocorre uma vez por dia e uma sincronização delta (rápida) ocorre várias vezes ao dia. Você pode [forçar uma sincronização rápida ou completa manualmente](exchange-connector-install.md#manually-force-a-quick-sync-or-full-sync) para minimizar os atrasos.
+- **Agenda de sincronização**: Um usuário com um dispositivo recém-registrado pode ter um atraso na obtenção de acesso até que o Exchange Connector seja sincronizado com o CAS do Exchange. Uma sincronização completa ocorre uma vez por dia e uma sincronização delta (rápida) ocorre várias vezes ao dia. Você pode [forçar uma sincronização rápida ou completa manualmente](exchange-connector-install.md#manually-force-a-quick-sync-or-full-sync) para minimizar os atrasos.
 
 ## <a name="next-steps"></a>Próximas etapas
 Os artigos a seguir podem ajudar a resolver problemas comuns e erros específicos:

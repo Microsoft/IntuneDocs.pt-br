@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: f382ce35d1d13a59f1aa5ca6a904c0c9babff8c1
-ms.sourcegitcommit: 7cc45ef52dda08479bc6bdff7d11d2f6c0e7b93b
+ms.openlocfilehash: 58c4db1f4c778050bc91bde79494742e018f5329
+ms.sourcegitcommit: a82d25d98fdf0ba766f8f074871d4f13725e23f9
 ms.translationtype: MTE75
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/06/2019
-ms.locfileid: "74899348"
+ms.lasthandoff: 12/31/2019
+ms.locfileid: "75547897"
 ---
 # <a name="use-the-microsoft-intune-data-warehouse"></a>Usar o Microsoft Intune Data Warehouse
 
@@ -43,7 +43,7 @@ O Data Warehouse fornece acesso a mais informações sobre seu ambiente móvel d
 - Um modelo de dados usando o padrão OData
 
 > [!Note]
-> Se estiver usando o MDM (gerenciamento de dispositivo móvel) cogerenciado com o System Center Configuration Manager e o Microsoft Intune, você precisará recuperar seus dados do Configuration Manager. O Data Warehouse do Intune contém apenas dados do Intune. Você pode usar um dashboard do Configuration Manager Power BI para relatórios personalizados. Para obter mais informações, consulte "[Anunciando o modelo de solução do Power BI para o System Center Configuration Manager]( https://powerbi.microsoft.com/blog/sccm-solution-template) e "[Conteúdo do Power BI para Dynamics 365](https://docs.microsoft.com/dynamics365/unified-operations/dev-itpro/analytics/power-bi-home-page)."
+> Se estiver usando o MDM (gerenciamento de dispositivo móvel) cogerenciado com o Microsoft Endpoint Configuration Manager e o Microsoft Intune, você precisará recuperar seus dados do Configuration Manager. O Data Warehouse do Intune contém apenas dados do Intune. Você pode usar um dashboard do Power BI para o Configuration Manager para relatórios personalizados. Para obter mais informações, consulte "[Anunciando o modelo de solução do Power BI para o Configuration Manager](https://powerbi.microsoft.com/blog/sccm-solution-template) e "[Conteúdo do Power BI para Dynamics 365](https://docs.microsoft.com/dynamics365/unified-operations/dev-itpro/analytics/power-bi-home-page)."
 
 > [!Important]  
 > Agora é possível usar a versão v1.0 do Intune Data Warehouse, definindo o parâmetro de consulta  `api-version=v1.0`. As atualizações em coleções no Data Warehouse são suplementares por natureza e não interrompem cenários existentes.<br><br>

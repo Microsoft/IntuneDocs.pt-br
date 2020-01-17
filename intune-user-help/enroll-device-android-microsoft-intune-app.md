@@ -18,13 +18,13 @@ ROBOTS: ''
 ms.reviewer: esmich
 ms.suite: ems
 ms.custom: intune-enduser
-ms.collection: M365-identity-device-management
-ms.openlocfilehash: 81c842eb27b1b9131c164ced5aeed86a78a37353
-ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
+ms.collection: ''
+ms.openlocfilehash: 02aab98bf74664cbdb8c7d7dccbfadba701b59f6
+ms.sourcegitcommit: caee3c3fa77586314aa8040b0caf32a0527b669e
 ms.translationtype: MTE75
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "72506300"
+ms.lasthandoff: 01/10/2020
+ms.locfileid: "75856778"
 ---
 # <a name="enroll-your-corporate-device-with-the-microsoft-intune-app"></a>Registrar dispositivos corporativos com aplicativos do Microsoft Intune
 
@@ -54,7 +54,7 @@ Conclua estas etapas para configurar e registrar seu dispositivo.
 3. Conecte-se ao Wi-Fi e toque em **AVANÇAR**. Siga a etapa que corresponde ao seu método de registro. 
 
     * Token: quando você acessar a tela de conexão do Google, conclua as etapas em [Registro de Token](#token-enrollment).  
-    * Registro sem toque do Google: depois de se conectar ao Wi-Fi, seu dispositivo será reconhecido pela sua organização. Vá para a etapa 4 e siga os prompts na tela até que a configuração seja concluída.    
+    * Google Zero Touch: depois de se conectar ao Wi-Fi, seu dispositivo será reconhecido pela sua organização. Vá para a etapa 4 e siga os prompts na tela até que a configuração seja concluída.    
  
        ![Imagem de exemplo da tela dos termos do Google que você verá se estiver usando o registro sem toque do Google, realçando o botão Aceitar e Continuar.](./media/google-zero-touch-intune-app-01.png)   
    

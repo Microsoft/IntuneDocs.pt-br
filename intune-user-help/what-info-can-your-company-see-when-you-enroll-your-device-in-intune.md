@@ -17,13 +17,13 @@ searchScope:
 ROBOTS: ''
 ms.reviewer: esmich
 ms.suite: ems
-ms.collection: M365-identity-device-management
-ms.openlocfilehash: fc50f48afbd527f3c6d82cc0c71a166b0356ab9e
-ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
+ms.collection: ''
+ms.openlocfilehash: 24601ef5c7a6451e2abfa64da37b21912d3cbace
+ms.sourcegitcommit: caee3c3fa77586314aa8040b0caf32a0527b669e
 ms.translationtype: MTE75
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "73801473"
+ms.lasthandoff: 01/10/2020
+ms.locfileid: "75858787"
 ---
 # <a name="what-information-can-my-organization-see-when-i-enroll-my-device"></a>Quais informações minha organização poderá ver quando eu registrar meu dispositivo?
 
@@ -53,7 +53,7 @@ Sua organização não pode ver suas informações pessoais quando você registr
 **O que sua organização pode conseguir ver:**
 
 - Número de telefone: para dispositivos de propriedade corporativa, o número de telefone completo pode ser visto. Para dispositivos de propriedade pessoal, apenas os quatro últimos dígitos de seu número de telefone ficam visíveis para sua organização. Você pode ver o tipo de propriedade para cada dispositivo individual na página de **detalhes do dispositivo** .
-- Espaço de armazenamento do dispositivo: se você não puder instalar um aplicativo necessário, sua organização poderá observar o espaço de armazenamento do seu dispositivo para descobrir se há pouco espaço.  
-- Localização: a organização nunca poderá ver a localização do seu dispositivo, a menos que você precise recuperar um dispositivo iOS perdido, supervisionado. Visite a [documentação do Apple iOS](https://go.microsoft.com/fwlink/?linkid=853816) para saber mais sobre dispositivos supervisionados.  
-- Detalhes do inventário de aplicativo: se a organização usar a Defesa Contra Ameaças Móveis, ela poderá exibir detalhes sobre os aplicativos que estão em seu dispositivo iOS. Saiba mais sobre [Defesa contra Ameaças Móveis](you-are-prompted-to-install-mtd-ios.md). Se você tem um dispositivo pessoal, sua organização poderá ver apenas o inventário de aplicativos gerenciados. Se você tem um dispositivo corporativo, sua organização poderá ver todo o inventário de aplicativos.
-- Informações de rede: algumas informações sobre conexões de rede para dispositivos Android podem estar disponíveis ao suporte de sua organização. Por exemplo, se a organização precisar que os dispositivos permaneçam dentro de um determinado edifício, seu dispositivo identificará a rede em que ele está conectado. 
+- Espaço de armazenamento do dispositivo: Se você não puder instalar um aplicativo necessário, sua organização poderá observar o espaço de armazenamento do seu dispositivo para descobrir se há pouco espaço.  
+- Localização: Sua organização nunca poderá ver o local do seu dispositivo, a menos que você precise recuperar um dispositivo iOS perdido, supervisionado. Visite a [documentação do Apple iOS](https://go.microsoft.com/fwlink/?linkid=853816) para saber mais sobre dispositivos supervisionados.  
+- Detalhes do inventário de aplicativos: Se a organização usar a Defesa contra Ameaças Móveis, ela poderá exibir mais detalhes sobre os aplicativos que estão em seu dispositivo iOS. Saiba mais sobre [Defesa contra Ameaças Móveis](you-are-prompted-to-install-mtd-ios.md). Se você tem um dispositivo pessoal, sua organização poderá ver apenas o inventário de aplicativos gerenciados. Se você tem um dispositivo corporativo, sua organização poderá ver todo o inventário de aplicativos.
+- Informações de rede: Algumas informações sobre conexões de rede para dispositivos Android podem estar disponíveis ao suporte de sua organização. Por exemplo, se a organização precisar que os dispositivos permaneçam dentro de um determinado edifício, seu dispositivo identificará a rede em que ele está conectado. 

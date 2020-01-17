@@ -16,13 +16,13 @@ searchScope:
 - User help
 ROBOTS: ''
 ms.custom: intune-enduser
-ms.collection: M365-identity-device-management
-ms.openlocfilehash: 7f395a9cedc72a8184cfe3e29d6fcd3117a1473d
-ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
+ms.collection: ''
+ms.openlocfilehash: 6b75712cf05626999c09e8d74fd28252666313c4
+ms.sourcegitcommit: caee3c3fa77586314aa8040b0caf32a0527b669e
 ms.translationtype: MTE75
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "72980352"
+ms.lasthandoff: 01/10/2020
+ms.locfileid: "75857867"
 ---
 # <a name="install-mobile-threat-defense"></a>Instalar Defesa contra Ameaças Móveis   
 
@@ -39,7 +39,7 @@ Sua organização não pode ver dados, como textos, emails e imagens, em seus ap
 
 * Nome do aplicativo  
 * ID do aplicativo: o nome exclusivo que identifica o aplicativo no Google Play.  
-* Versão do aplicativo e número curto da versão: os números de versão específicos de um aplicativo.  
+* Versão do aplicativo e número de versão curto: os números de versão específicos para um aplicativo.  
 * Lote de aplicativo e tamanho dinâmico: a quantidade de espaço que um aplicativo usa em seu dispositivo. 
 
 

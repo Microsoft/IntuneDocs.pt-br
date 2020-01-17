@@ -16,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 60a87340c1a275b8fb878ef2f3891cca23fc9c85
-ms.sourcegitcommit: f5108039f0ade52e95ea3ac1da1aa16d02224af3
+ms.openlocfilehash: 0ca5d475f92cbe3298689273dcdf0da1644078b2
+ms.sourcegitcommit: a82d25d98fdf0ba766f8f074871d4f13725e23f9
 ms.translationtype: MTE75
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/09/2019
-ms.locfileid: "74946642"
+ms.lasthandoff: 12/31/2019
+ms.locfileid: "75547037"
 ---
 # <a name="windows-10-and-later-settings-to-mark-devices-as-compliant-or-not-compliant-using-intune"></a>Configurações do Windows 10 e posteriores para marcar dispositivos como em conformidade ou não em conformidade usando o Intune
 
@@ -39,19 +39,19 @@ Como um administrador do Intune, use essas configurações de conformidade para 
 
 [Criar uma política de conformidade](create-compliance-policy.md#create-the-policy). Em **Plataforma**, selecione **Windows 10 e posteriores**.
 
-## <a name="device-health"></a>Integridade do Dispositivo
+## <a name="device-health"></a>Integridade do dispositivo
 
 ### <a name="windows-health-attestation-service-evaluation-rules"></a>Regras de avaliação do serviço de atestado de integridade do Windows
 
 - **Habilitar o BitLocker**:  
    A Criptografia de Unidade de Disco Windows BitLocker criptografa todos os dados armazenados no volume do sistema operacional Windows. O BitLocker usa o Trusted Platform Module (TPM) para ajudar a proteger o sistema operacional Windows e os dados do usuário. Ele ajuda a confirmar que um computador não será adulterado, mesmo se ficar sem supervisão, for perdido ou roubado. Se o computador estiver equipado com um TPM compatível, o BitLocker usará o TPM para bloquear as chaves de criptografia que protegem os dados. Como resultado, as chaves não poderão ser acessadas até que o TPM confirme o estado do computador.  
 
-   - **Não configurado** (*padrão*) — Esta configuração não é avaliada em relação a estar ou não em conformidade.
+   - **Não configurado** (*padrão*) — Essa configuração não é avaliada em relação à conformidade.
    - **Exigir** – O dispositivo pode proteger os dados armazenados na unidade contra acesso não autorizado quando o sistema está desligado ou em hibernação.  
 
 
 - **Exigir que a Inicialização Segura esteja habilitada no dispositivo**:  
-    - **Não configurado** (*padrão*) — Esta configuração não é avaliada em relação a estar ou não em conformidade.
+    - **Não configurado** (*padrão*) — Essa configuração não é avaliada em relação à conformidade.
     - **Exigir** -o sistema é forçado a inicializar para um estado confiável de fábrica. Os principais componentes usados para inicializar o computador devem ter assinaturas criptográficas corretas que sejam confiáveis para a organização que fabricou o dispositivo. O firmware UEFI confirma essa assinatura antes de permitir que o computador seja iniciado. Se algum arquivo for violado, interrompendo sua assinatura, o sistema não inicializará.
 
   > [!NOTE]
@@ -59,7 +59,7 @@ Como um administrador do Intune, use essas configurações de conformidade para 
 
 - **Exigir a integridade de código**:  
   A integridade do código é um recurso que valida a integridade de um driver ou arquivo do sistema cada vez que ele é carregado na memória.
-  - **Não configurado** (*padrão*) — Esta configuração não é avaliada em relação a estar ou não em conformidade.
+  - **Não configurado** (*padrão*) — Essa configuração não é avaliada em relação à conformidade.
   -  **Exigir** – Exige a integridade de código quando detecta se um arquivo de sistema ou driver não assinado está sendo carregado no kernel. Também detecta se um arquivo de sistema é modificado por um software mal-intencionado ou executado por uma conta de usuário com privilégios de administrador.
 
 Mais recursos:
@@ -102,9 +102,9 @@ Mais recursos:
 
 Aplica-se apenas a dispositivos que executam o Windows 10 e posteriores. Os dispositivos que usam apenas o Intune retornam um status não disponível.
 
-- **Exigir a conformidade do dispositivo do System Center Configuration Manager**:  
+- **Exigir conformidade do dispositivo de Configuration Manager**:  
   - **Não configurado** (*padrão*) – O Intune não verifica a conformidade das configurações do Configuration Manager.
-  - **Exigir** – Requer que todas as configurações (itens de configuração) no System Center Configuration Manager estejam em conformidade.  
+  - **Exigir** – exigir que todas as configurações (itens de configuração) no Configuration Manager estejam em conformidade.  
 
     Por exemplo, você pode exigir que todas as atualizações de software sejam instaladas nos dispositivos. No Configuration Manager, esse requisito tem o estado "Instalado". Se algum programa no dispositivo estiver em um estado desconhecido, o dispositivo estará como não compatível no Intune.
 
@@ -229,8 +229,8 @@ Aplica-se apenas a dispositivos que executam o Windows 10 e posteriores. Os disp
   Use essa configuração para fazer a avaliação de risco dos serviços de defesa contra ameaças como uma condição para conformidade. Selecione o nível máximo de ameaça permitido:
   - **Não configurado** (*padrão*)  
   - **Limpa** – Esta opção é a mais segura, porque o dispositivo não pode ter nenhuma ameaça. Se for detectado que o dispositivo tem qualquer nível de ameaça, ele será avaliado como não estando em conformidade.
-  - **Baixo** – O dispositivo será avaliado como em conformidade se apenas ameaças de nível baixo estiverem presentes. Qualquer coisa acima disso coloca o dispositivo no estado de não compatível.
-  - **Médio** – O dispositivo será avaliado como em conformidade se as ameaças existentes nele forem de nível baixo ou médio. Se for detectado que o dispositivo tem ameaças de nível alto, será determinado que ele não está em conformidade.
+  - **Baixo** – O dispositivo será avaliado como em conformidade se apenas ameaças de nível baixo estiverem presentes. Qualquer ameaça superior coloca o dispositivo em um status de não compatível.
+  - **Média** – O dispositivo será avaliado como em conformidade se as ameaças presentes nele forem de nível baixo ou médio. Se for detectado que o dispositivo tem ameaças de nível alto, será determinado que ele não está em conformidade.
   - **Alta** – Esta opção é a menos segura e permite todos os níveis de ameaça. Talvez seja útil se você estiver usando esta solução apenas para fins de relatório.
   
   Para configurar a Microsoft Defender ATP (Proteção Avançada contra Ameaças) como seu serviço de defesa contra ameaças, confira [Habilitar a Microsoft Defender ATP com Acesso Condicional](advanced-threat-protection.md).

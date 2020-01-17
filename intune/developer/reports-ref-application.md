@@ -6,7 +6,7 @@ keywords: Intune Data Warehouse
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 11/21/2019
+ms.date: 01/02/2020
 ms.topic: reference
 ms.service: microsoft-intune
 ms.subservice: developer
@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: a4a8fa34673340e4adca7b64707d8c79d4808460
-ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
+ms.openlocfilehash: 2c87d9b423eeb96acbc984040ef49e44c1853a18
+ms.sourcegitcommit: 8d7406b75ef0d75cc2ed03b1a5e5f74ff10b98c0
 ms.translationtype: MTE75
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "74290954"
+ms.lasthandoff: 01/03/2020
+ms.locfileid: "75654236"
 ---
 # <a name="reference-for-application-entities"></a>Referência para entidades de aplicativo
 
@@ -69,7 +69,7 @@ A entidade **appType** lista a origem da instalação de um aplicativo.
 
 ### <a name="example"></a>Exemplo
 
-| AppTypeID  | Nome | Descrição |
+| AppTypeID  | Name | Descrição |
 |---------|------------|--------|
 | 0 |Aplicativos da loja Android | Um aplicativo da loja Android. |
 | 1 |Aplicativos LOB para Android | Um aplicativo Android de linha de negócios. |
@@ -98,7 +98,7 @@ A entidade **vppProgramType** lista os possíveis tipos de programa VPP para um 
 
 ### <a name="example"></a>Exemplo
 
-| VppProgramID  | Nome | Descrição |
+| VppProgramID  | Name | Descrição |
 |---------|------------|--------|
 | 3DDA2474-470B-4503-9830-2665C21C1945 | Microsoft | Programa VPP da Microsoft. |
 | 00000000-0000-0000-0000-000000000000 | Ainda não disponível | Valor padrão, não VPP. |
@@ -114,7 +114,7 @@ A entidade **applicationInventory** lista os aplicativos encontrados no disposit
 |---------|------------|
 | deviceKey | Esta é uma referência à tabela de dispositivo que contém a ID do dispositivo do Intune. |
 | dateKey | Referência à tabela de data que indica o dia do inventário. |
-| applicationName | Nome do aplicativo. |
+| applicationName | O nome do aplicativo. |
 | applicationVersion | Versão do aplicativo. |
 | bundleSize | O tamanho do aplicativo em bytes. |
 

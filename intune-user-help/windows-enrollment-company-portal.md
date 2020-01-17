@@ -18,13 +18,13 @@ ROBOTS: ''
 ms.reviewer: jieyang
 ms.suite: ems
 ms.custom: intune-enduser
-ms.collection: M365-identity-device-management
-ms.openlocfilehash: 86aeb2b54d45f111864d71e65b8c90fce7205868
-ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
+ms.collection: ''
+ms.openlocfilehash: 86c158f73d820fa2e719fe92b884c77f315fcb94
+ms.sourcegitcommit: caee3c3fa77586314aa8040b0caf32a0527b669e
 ms.translationtype: MTE75
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "72508030"
+ms.lasthandoff: 01/10/2020
+ms.locfileid: "75858804"
 ---
 # <a name="windows-device-enrollment-in-intune-company-portal"></a>Registro de dispositivo Windows no Portal da Empresa do Intune  
 
@@ -62,8 +62,8 @@ Etapas de registro variam para diferentes versões de dispositivos Windows 10. A
 
 4. Se a sua versão for  
 
-    * __1607 ou posteriores__: registre seu dispositivo por meio da rota [**Configurações** > **Conta** > **Acessar o trabalho ou a escola**](enroll-windows-10-device.md#enroll-windows-10-version-1607-and-later-device).   
-    * __1511 ou anteriores__: registre seu dispositivo por meio da rota [**Configurações** > **Conta** > **Suas contas**](enroll-windows-10-device.md#enroll-windows-10-version-1511-and-earlier-device).  
+    * __1607 ou posterior__: registre seu dispositivo por meio da [rota **Configurações** > **Conta** > **Acessar o trabalho ou a escola**](enroll-windows-10-device.md#enroll-windows-10-version-1607-and-later-device).   
+    * __1511 ou anterior__: registre seu dispositivo por meio da [rota **Configurações** > **Conta** > **Suas contas**](enroll-windows-10-device.md#enroll-windows-10-version-1511-and-earlier-device).  
 
 ### <a name="windows-10-mobile-devices"></a>Dispositivos com Windows 10 Mobile
 
@@ -72,8 +72,8 @@ Etapas de registro variam para diferentes versões de dispositivos Windows 10. A
 3. Em __Informações do Dispositivo__, localize a __Versão__.  
 4. Se a sua versão for  
 
-    * __1607 ou posteriores__: registre seu dispositivo usando a rota [**Configurações** > **Acessar o trabalho ou a escola**](enroll-windows-10-device.md#enroll-windows-10-version-1607-and-later-device).   
-    * __1511 ou anteriores__: registre seu dispositivo usando a rota [**Configurações** > **Contas**](enroll-windows-10-device.md#enroll-windows-10-version-1511-and-earlier-device).  
+    * __1607 ou posterior__: registre seu dispositivo usando a [rota **Configurações** > **Acessar o trabalho ou a escola**](enroll-windows-10-device.md#enroll-windows-10-version-1607-and-later-device).   
+    * __1511 ou anterior__: registre seu dispositivo usando a [rota **Configurações** > **Contas**](enroll-windows-10-device.md#enroll-windows-10-version-1511-and-earlier-device).  
 
 ## <a name="enroll-non-windows-10-devices"></a>Registrar dispositivos não Windows 10  
 Use os artigos a seguir para registrar outros dispositivos compatíveis com Windows por meio do site do Portal da Empresa:   

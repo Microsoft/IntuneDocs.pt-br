@@ -15,12 +15,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: e45d51feb91e0e188971133185ac0f0f13e5b1f4
-ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
+ms.openlocfilehash: 9eb7ee99d69fd56707bd9dfe5453ffe0bb107bad
+ms.sourcegitcommit: 2506cdbfccefd42587a76f14ee50c3849dad1708
 ms.translationtype: MTE75
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "74781134"
+ms.lasthandoff: 01/11/2020
+ms.locfileid: "75885642"
 ---
 # <a name="add-vpn-settings-on-ios-devices-in-microsoft-intune"></a>Adicionar configurações de VPN em dispositivos iOS no Microsoft Intune
 
@@ -38,13 +38,13 @@ O Microsoft Intune inclui várias configurações de VPN que podem ser implantad
 Selecione o tipo de conexão VPN na lista de fornecedores a seguir:
 
 - **Check Point Capsule VPN**
-- **Cisco AnyConnect Herdado**: aplicável ao aplicativo [Cisco AnyConnect Herdado](https://itunes.apple.com/app/cisco-legacy-anyconnect/id392790924) versão 4.0.5x e a versões anteriores.
-- **Cisco AnyConnect**: aplicável ao aplicativo [Cisco AnyConnect](https://itunes.apple.com/app/cisco-anyconnect/id1135064690) versão 4.0.7x e a versões posteriores.
+- **Cisco Legacy AnyConnect**: aplicável ao aplicativo [Cisco AnyConnect Herdado](https://itunes.apple.com/app/cisco-legacy-anyconnect/id392790924) versão 4.0.5x e a versões anteriores.
+- **Cisco AnyConnect**: aplicável ao aplicativo [Cisco AnyConnect](https://itunes.apple.com/app/cisco-anyconnect/id1135064690) versão 4.0.7x e posteriores.
 - **SonicWall Mobile Connect**
 - **F5 Access Herdado**: aplicável ao aplicativo F5 Access versão 2.1 e a versões anteriores.
-- **F5 Access**: aplicável ao aplicativo F5 Access versão 3.0 e posteriores.
-- **GlobalProtect da Palo Alto Networks (Herdado)** : aplicável ao aplicativo GlobalProtect da Palo Alto Networks versão 4.1 e a versões anteriores.
-- **GlobalProtect da Palo Alto Networks**: aplicável ao aplicativo GlobalProtect da Palo Alto Networks versão 5.0 e posteriores.
+- **F5 Access**: aplicável ao aplicativo F5 Access versão 3.0 e a versões posteriores.
+- **Palo Alto Networks GlobalProtect (Herdado)** : aplicável ao aplicativo GlobalProtect da Palo Alto Networks versão 4.1 e a versões anteriores.
+- **Palo Alto Networks GlobalProtect**: aplicável ao aplicativo GlobalProtect da Palo Alto Networks versão 5.0 e a versões posteriores.
 - **Pulse Secure**
 - **Cisco (IPsec)**
 - **Citrix VPN**
@@ -60,7 +60,7 @@ Selecione o tipo de conexão VPN na lista de fornecedores a seguir:
 
 As configurações mostradas na lista a seguir são determinadas pelo tipo de conexão de VPN escolhido.  
 
-- **Nome da conexão**: os usuários finais verão esse nome ao procurarem no dispositivo uma lista de conexões VPN disponíveis.
+- **Nome da conexão**: Os usuários finais verão esse nome quando navegarem no dispositivo para uma lista de conexões VPN disponíveis.
 - **Nome de domínio personalizado** (somente Zscaler): preencha previamente o campo de entrada do aplicativo Zscaler com o domínio ao qual seus usuários pertencerem. Por exemplo, se for um nome de usuário `Joe@contoso.net`, o domínio `contoso.net` aparecerá estaticamente no campo quando o aplicativo for aberto. Se você não inserir um nome de domínio, a parte do domínio do UPN no Azure AD (Active Directory) será usada.
 - **Endereço IP ou FQDN**: o endereço IP ou o FQDN (nome de domínio totalmente qualificado) do servidor VPN ao qual os dispositivos se conectam. Por exemplo, insira `192.168.1.1` ou `vpn.contoso.com`.
 - **Nome da nuvem da organização** (somente Zscaler): insira o nome da nuvem em que sua organização está provisionada. A URL usada para entrar no Zscaler tem o nome.  
@@ -75,17 +75,17 @@ As configurações mostradas na lista a seguir são determinadas pelo tipo de co
 
 - **URLs excluídas** (somente Zscaler): quando conectadas à VPN do Zscaler, as URLs listadas podem ser acessadas de fora da nuvem do Zscaler. 
 
-- **Túnel dividido**: **Habilite** ou **Desabilite** para permitir que os dispositivos decidam qual conexão usar dependendo do tráfego. Por exemplo, um usuário em um hotel usa a conexão VPN para acessar arquivos de trabalho, mas utiliza a rede padrão do hotel para navegação regular na Web.
+- **Túnel dividido**: escolha **Habilitar** para usar esse recurso ou **Desabilitar** para permitir que os dispositivos decidam qual conexão usar, dependendo do tráfego. Por exemplo, um usuário em um hotel usa a conexão VPN para acessar arquivos de trabalho, mas utiliza a rede padrão do hotel para navegação regular na Web.
 
-- **Identificador de VPN** (VPN personalizada, Zscaler e Citrix): um identificador do aplicativo de VPN que você está usando e é fornecido pelo seu provedor de VPN.
-  - **Inserir pares chave-valor para os atributos de VPN personalizados**: adicione ou importe as **Chaves** e os **Valores** que personalizam sua conexão VPN. Lembre-se de que esses valores geralmente são fornecidos pelo seu provedor de VPN.
+- **Identificador de VPN** (VPN personalizada, Zscaler e Citrix): um identificador para o aplicativo VPN que você está usando, fornecido pelo seu provedor de VPN.
+  - **Insira os pares de chave/valor para os atributos de VPN personalizada da sua organização**: adicione ou importe **chaves** e **valores** que personalizam sua conexão VPN. Lembre-se de que esses valores geralmente são fornecidos pelo seu provedor de VPN.
 
-- **Habilitar o NAC (controle de acesso à rede)** (Citrix SSO, Acesso por F5): quando você escolhe **Concordo**, a ID do dispositivo é incluída no perfil da VPN. Essa ID pode ser usada para autenticação da VPN para permitir ou impedir o acesso à rede.
+- **Habilitar o NAC (controle de acesso à rede)** (Citrix SSO, F5 Access): quando você escolhe **Eu concordo**, essa ID do dispositivo é incluída no perfil de VPN. Essa ID pode ser usada para autenticação da VPN para permitir ou impedir o acesso à rede.
 
   **Ao usar o Acesso por F5**:
 
   - Confirme se você está usando F5 BIG-IP 13.1.1.5. O BIG-IP 14 não é compatível.
-  - Integre o BIG-IP ao Intune para NAC. Confira o guia do F5 [Overview: Configuring APM for device posture checks with endpoint management systems](https://support.f5.com/kb/en-us/products/big-ip_apm/manuals/product/apm-client-configuration-7-1-6/6.html#guid-0bd12e12-8107-40ec-979d-c44779a8cc89) (Visão geral: como configurar o APM para verificações de postura do dispositivo com sistemas de gerenciamento de ponto de extremidade).
+  - Integre o BIG-IP ao Intune para NAC. Consulte o guia do F5 intitulado [Visão geral: como configurar o APM para verificações de situação do dispositivo com sistemas de gerenciamento de ponto de extremidade](https://support.f5.com/kb/en-us/products/big-ip_apm/manuals/product/apm-client-configuration-7-1-6/6.html#guid-0bd12e12-8107-40ec-979d-c44779a8cc89).
   - Habilite o NAC no perfil da VPN.
 
   **Ao usar o Citrix SSO com Gateway**, lembre-se de:
@@ -138,6 +138,10 @@ Essas configurações se aplicam quando você escolhe o **tipo de conexão** > *
 
 - **Intervalo de versão do TLS mínimo**: Insira a versão mínima do TLS a ser usada. Insira `1.0`, `1.1`ou `1.2`. Se for deixado em branco, o valor padrão de `1.0` será usado.
 - **Intervalo de versão do TLS máximo**: Insira a versão máxima do TLS a ser usada. Insira `1.0`, `1.1`ou `1.2`. Se for deixado em branco, o valor padrão de `1.2` será usado.
+
+> [!NOTE]
+> O intervalo de versão do TLS mínimo e máximo devem ser definidos ao usar a autenticação do usuário e os certificados.
+
 - **Sigilo perfeita no encaminhamento**: selecione **habilitar** para ativar o PFS (PFS de encaminhamento). O PFS é um recurso de segurança IP que reduz o impacto se uma chave de sessão for comprometida. **Desabilitar** (padrão) não usa PFS.
 - **Verificação de revogação de certificado**: selecione **habilitar** para garantir que os certificados não sejam revogados antes de permitir que a conexão VPN seja realizada com sucesso. Essa verificação é de melhor esforço. Se o servidor VPN expirar antes de determinar se o certificado foi revogado, o acesso será concedido. **Desabilitar** (padrão) não verifica se há certificados revogados.
 
@@ -180,14 +184,14 @@ Essas configurações se aplicam quando você escolhe o **tipo de conexão** > *
 ## <a name="automatic-vpn-settings"></a>Configurações automáticas de VPN
 
 - **VPN por aplicativo**: habilita a VPN por aplicativo. Permite que a conexão VPN sejam disparadas automaticamente quando determinados aplicativos são abertos. Também associe os aplicativos a esse perfil de VPN. Não há suporte para VPN por aplicativo em IKEv2. Para obter mais informações, confira [instruções para configurar a VPN por aplicativo para iOS](vpn-setting-configure-per-app.md). 
-  - **Tipo de Provedor**: disponível somente para Pulse Secure e VPN Personalizada.
+  - **Tipo de provedor**: disponível somente para Pulse Secure e VPN Personalizada.
   - Ao usar um perfil **VPN para cada aplicativo** iOS com o Pulse Secure ou com uma VPN personalizada, opte por usar o túnel de camada de aplicativo (proxy de aplicativo) ou o túnel no nível do pacote (túnel de pacote). Defina o valor de **ProviderType** como **app-proxy** para o túnel de camada de aplicativo ou como **packet-tunnel** para o túnel de camada de pacote. Se você não tiver certeza de qual valor usar, verifique a documentação do seu provedor VPN.
-  - **URLs do Safari que dispararão esta VPN**: adicione uma ou mais URLs de site. Quando essas URLs forem acessadas usando o navegador Safari no dispositivo, a conexão VPN será estabelecida automaticamente.
+  - **URLs do Safari que disparam essa VPN**: adicione uma ou mais URLs de site. Quando essas URLs forem acessadas usando o navegador Safari no dispositivo, a conexão VPN será estabelecida automaticamente.
 
 - **VPN sob demanda**: configure regras condicionais que controlem quando a conexão VPN é iniciada. Por exemplo, crie uma condição em que a conexão VPN é usada somente quando um dispositivo não está conectado a uma rede Wi-Fi da empresa. Ou crie uma condição. Por exemplo, se um dispositivo não puder acessar um domínio de pesquisa DNS, a conexão VPN não será iniciada.
 
-  - **Domínios de pesquisa de DNS ou SSIDs**: selecione se essa condição usa **SSIDs** de rede sem fio ou **domínios de pesquisa de DNS**. Escolha **Adicionar** para configurar um ou mais SSIDs ou domínios de pesquisa.
-  - **Investigação de cadeia de caracteres de URL**: opcional. Insira uma URL que a regra use como teste. Se o dispositivo acessar essa URL sem redirecionamento, a conexão VPN será iniciada. E o dispositivo se conectará à URL de destino. O usuário não verá o site da investigação de cadeia de caracteres da URL.
+  - **Domínios de pesquisa de SSIDs ou DNS**: selecione se essa condição usa **SSIDs** de rede sem fio ou **domínios de pesquisa de DNS**. Escolha **Adicionar** para configurar um ou mais SSIDs ou domínios de pesquisa.
+  - **Investigação de cadeia de caracteres de URL**: Opcional. Insira uma URL que a regra use como teste. Se o dispositivo acessar essa URL sem redirecionamento, a conexão VPN será iniciada. E o dispositivo se conectará à URL de destino. O usuário não verá o site da investigação de cadeia de caracteres da URL.
 
     Por exemplo, uma investigação de cadeia de caracteres de URL é uma URL de servidor Web de auditoria que verifica a conformidade do dispositivo antes da conexão com a VPN. Ou, a URL testa a capacidade da VPN de se conectar a um site antes de conectar o dispositivo à URL de destino por meio da VPN.
 .
@@ -204,7 +208,7 @@ Essas configurações se aplicam quando você escolhe o **tipo de conexão** > *
 
 Se você estiver usando um proxy, defina as seguintes configurações. As configurações de proxy não estão disponíveis para conexões VPN do Zscaler.  
 
-- **Script de configuração automática**: use um arquivo para configurar o servidor proxy. Digite a **URL do servidor proxy** (por exemplo, `http://proxy.contoso.com`) que inclui o arquivo de configuração.
+- **Script de configuração automática**: Use um arquivo para configurar o servidor proxy. Digite a **URL do servidor proxy** (por exemplo, `http://proxy.contoso.com`) que inclui o arquivo de configuração.
 - **Endereço**: insira o endereço IP do nome do host totalmente qualificado do servidor proxy.
 - **Número da porta**: insira o número da porta associada ao servidor proxy.
 
