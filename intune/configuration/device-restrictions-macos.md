@@ -136,7 +136,7 @@ Essas configurações são adicionadas a um perfil de configuração do disposit
   - **Aplicativos aprovados**: aplicativos que os usuários têm permissão para instalar. Os usuários não devem instalar aplicativos que não estão listados. Aplicativos que são gerenciados pelo Intune são permitidos automaticamente. Os usuários não são impedidos de instalar um aplicativo que não esteja na lista aprovada. Mas, se isso for feito, ele será relatado no Intune.
 - **ID de Lote de Aplicativo**: insira a [ID de lote](bundle-ids-built-in-ios-apps.md) de aplicativos do aplicativo que você deseja. Você pode mostrar ou ocultar aplicativos internos e aplicativos de linha de negócios. O site da Apple tem uma lista de [aplicativos da Apple internos](https://support.apple.com/HT208094).
 - **Nome do aplicativo**: insira o nome do aplicativo que você deseja. Você pode mostrar ou ocultar aplicativos internos e aplicativos de linha de negócios. O site da Apple tem uma lista de [aplicativos da Apple internos](https://support.apple.com/HT208094).
-- **Publicador**: insira o editor do aplicativo que você deseja.
+- **Editor**: insira o editor do aplicativo que você deseja.
 
 Para adicionar aplicativos a essas listas, você pode:
 
