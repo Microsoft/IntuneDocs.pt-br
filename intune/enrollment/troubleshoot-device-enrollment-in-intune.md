@@ -19,12 +19,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic, seoapril2019
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 48ad9ffe32dc7493195ec161e070734776381427
-ms.sourcegitcommit: a82d25d98fdf0ba766f8f074871d4f13725e23f9
+ms.openlocfilehash: 328a578f4d2ada41bed17839f1f85b3b9add80fa
+ms.sourcegitcommit: 2506cdbfccefd42587a76f14ee50c3849dad1708
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/31/2019
-ms.locfileid: "75547807"
+ms.lasthandoff: 01/11/2020
+ms.locfileid: "75885956"
 ---
 # <a name="troubleshoot-device-enrollment-in-microsoft-intune"></a>Solução de problemas de registro de dispositivo no Microsoft Intune
 
@@ -56,7 +56,7 @@ Seus usuários de dispositivo gerenciado podem coletar logs de registro e diagn�
 Esses problemas podem ocorrer em todas as plataformas de dispositivo.
 
 ### <a name="device-cap-reached"></a>Limite do dispositivo associado
-**Problema:** um usuário recebe um erro durante o registro (como **Portal da Empresa temporariamente indisponível**) e o DMPdownloader.log no Configuration Manager contém o erro **DeviceCapReached**.
+**Problema:** Um usuário recebe um erro durante o registro (como **Portal da Empresa Temporariamente Indisponível**).
 
 **Resolução:**
 
@@ -113,23 +113,6 @@ Para evitar atingir os limites de dispositivos, não deixe de remover os registr
 
     4. Ative o DirSync novamente e verifique se agora o usuário está sincronizado corretamente.
 
-3. Em um cenário em que você está usando o Configuration Manager com o Intune, confirme se o usuário tem uma ID de usuário de nuvem válida:
-
-    1. Abra o SQL Management Studio.
-
-    2. Conecte-se ao banco de dados apropriado.
-
-    3. Abra a pasta de bancos de dados e localize e abra a pasta **CM_DBName**, em que DBName é o nome do banco de dados do cliente.
-
-    4. Na parte superior, escolha **Nova Consulta** e execute as seguintes consultas:
-
-        - Para ver todos os usuários:   `select * from [CM_ DBName].[dbo].[User_DISC]`
-
-        - Para ver Usuários Específicos, use a consulta a seguir, em que %testuser1% é um espaço reservado para username@domain.com para o usuário que você deseja pesquisar:   `select * from [CM_ DBName].[dbo].[User_DISC] where User_Principal_Name0 like '%testuser1%'`
-
-        Depois de escrever a consulta, escolha **!Executar**.
-        Após os resultados serem retornados, procure a ID do clouduser.  Se nenhuma ID for encontrada, o usuário não está licenciado para usar o Intune.
-
 ### <a name="unable-to-create-policy-or-enroll-devices-if-the-company-name-contains-special-characters"></a>Não é possível criar a política ou registrar os dispositivos se o nome da empresa contiver caracteres especiais
 **Problema:** não é possível criar a política ou registrar os dispositivos.
 
@@ -144,7 +127,7 @@ Para evitar atingir os limites de dispositivos, não deixe de remover os registr
 - tiverem vários domínios de nível superior para sufixos UPN de usuários na sua organização (por exemplo, @contoso.com ou @fabrikam.com).
 
 
-Um [rollup para o AD FS 2.0](http://support.microsoft.com/kb/2607496) funciona junto com o comutador <strong>SupportMultipleDomain</strong> para habilitar o servidor AD FS para ser compatível com esse cenário sem precisar exigir servidores AD FS 2.0 adicionais. Para obter mais informações, consulte [este blog](https://blogs.technet.microsoft.com/abizerh/2013/02/05/supportmultipledomain-switch-when-managing-sso-to-office-365/).
+Um [rollup para o AD FS 2.0](https://support.microsoft.com/kb/2607496) funciona junto com o comutador <strong>SupportMultipleDomain</strong> para habilitar o servidor AD FS para ser compatível com esse cenário sem precisar exigir servidores AD FS 2.0 adicionais. Para obter mais informações, consulte [este blog](https://blogs.technet.microsoft.com/abizerh/2013/02/05/supportmultipledomain-switch-when-managing-sso-to-office-365/).
 
 
 ## <a name="android-issues"></a>Problemas de Android
@@ -332,23 +315,6 @@ Para saber mais, veja as [Práticas recomendadas para proteção dos Serviços d
 
 5. Confirme se o Safari para iOS é o navegador padrão e se os cookies estão habilitados.
 
-### <a name="enrolled-ios-device-doesnt-appear-in-console-when-using-configuration-manager-with-intune"></a>Os dispositivos iOS registrados não aparecem no console ao usar o Configuration Manager com o Intune
-**Problema:** o usuário registra um dispositivo iOS, mas ele não aparece no console de administração do Configuration Manager. O dispositivo não indica que ele foi registrado. Possíveis causas:
-
-- O Conector do Microsoft Intune, no site do Gerenciador de Configurações, não está se comunicando com o serviço do Intune.
-- O componente do ddm (Data Discovery Manager) ou do statmgr (Gerenciamento de estado) não está processando mensagens no serviço do Intune.
-- Você pode ter baixado o certificado MDM de uma conta e o usado em outra conta.
-
-
-**Resolução:** examine os seguintes arquivos de log para identificar possíveis erros:
-
-- dmpdownloader.log
-- ddm.log
-- statmgr.log
-
-Em breve, adicionaremos exemplos sobre o que procurar nesses arquivos de log.
-
-
 ### <a name="users-ios-device-is-stuck-on-an-enrollment-screen-for-more-than-10-minutes"></a>O dispositivo iOS do usuário está parado em uma tela de registro por mais de 10 minutos
 
 **Problema**: um registro de dispositivo pode ficar parado em uma dessas duas telas:
@@ -418,36 +384,6 @@ Depois que você tiver apagado os dispositivos bloqueados, instrua os usuários 
     2. Escolha **Dispositivos** > **Todos os dispositivos**.  
     3. Localize o dispositivo com o problema de registro. Pesquise por nome do dispositivo ou endereço MAC/de hardware para restringir os resultados.
     4. Selecione o dispositivo > **Excluir**. Exclua todas as outras entradas associadas ao dispositivo.  
-
-## <a name="issues-when-using-configuration-manager-with-intune"></a>Problemas ao usar o Configuration Manager com o Intune
-
-### <a name="mobile-devices-disappear"></a>Dispositivos móveis desaparecem
-
-**Problema:** após registrar com êxito um dispositivo móvel no Configuration Manager, ele desaparece da coleção de dispositivos móveis. No entanto, o dispositivo ainda tem o Perfil de Gerenciamento e está listado no Gateway de CSS.
-
-**Resolução:** esse problema pode ocorrer porque:
-
-- Você tem um processo personalizado para remover dispositivos não ingressados no domínio, ou
-- o usuário desativou o dispositivo da assinatura.
-Para validar e verificar qual conta de usuário ou processo removeu o dispositivo do console do Configuration Manager, execute as seguintes etapas.
-
-#### <a name="check-how-device-was-removed"></a>Verifique como o dispositivo foi removido
-
-1. No console de administração do Configuration Manager, selecione **Monitoramento** &gt; **Status do Sistema** &gt; **Consultas de Mensagem de Status**.
-
-2. Clique com o botão direito do mouse em **Recursos Membros da Coleção Excluídos Manualmente** e selecione **Mostrar Mensagens**.
-
-3. Selecione uma data/hora apropriada ou as últimas 12 horas.
-
-4. Localize o dispositivo em questão e examine como o dispositivo foi removido. O exemplo a seguir mostra que a conta SCCMInstall excluiu o dispositivo por meio de um aplicativo desconhecido.
-
-    ![Captura de tela para diagnóstico de exclusão do dispositivo](./media/troubleshoot-device-enrollment-in-intune/CM_With_Intune_Unknown_App_Deleted_Device.jpg)
-
-5. Verifique se o Configuration Manager não tem uma tarefa agendada, script ou outro processo que poderia estar limpando automaticamente dispositivos móveis, fora do domínio ou relacionados.
-
-### <a name="other-ios-enrollment-errors"></a>Outros erros de registro do iOS
-
-Uma lista de erros de registro do iOS é fornecida em nossa documentação em [Solucionando problemas de registro de dispositivo iOS no Microsoft Intune](https://support.microsoft.com/help/4039809/troubleshooting-ios-device-enrollment-in-intune).
 
 ## <a name="pc-issues"></a>Problemas do computador
 

@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 5c18f3e8fb14d8592789b39856ec420790fad286
-ms.sourcegitcommit: a82d25d98fdf0ba766f8f074871d4f13725e23f9
+ms.openlocfilehash: 8452f840fb269505656bf6594d3e5c196b4d7a06
+ms.sourcegitcommit: 2506cdbfccefd42587a76f14ee50c3849dad1708
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/31/2019
-ms.locfileid: "75547540"
+ms.lasthandoff: 01/11/2020
+ms.locfileid: "75885792"
 ---
 # <a name="create-a-design"></a>Criar um design
 
@@ -101,19 +101,11 @@ Lembre-se de observar os projetos ou outros planos em vigor que podem afetar o a
 | **SharePoint** | SharePoint local | Não há planos de migração para o SharePoint Online |  
 | **MDM atual** | Exchange ActiveSync |  |
 | **Solução de certificado** | Microsoft Server 2012 R2, Serviços de Certificados do AD | Usar somente o PKI para Servidores de Site |
-| **Gerenciamento do Sistema** | Configuration Manager CB 1606 | Gostaria de investigar a solução híbrida do Intune? |
+| **Gerenciamento do Sistema** | Branch atual do Configuration Manager | Deseja investigar a solução de cogerenciamento? |
 | **Solução de VPN** | Cisco AnyConnect |  |
 
 
 [Baixe um modelo da tabela acima](https://gallery.technet.microsoft.com/Intune-deployment-planning-fae156c2?redir=0) para desenvolver um plano de design do Intune.
-
-## <a name="choose-an-intune-deployment-option"></a>Escolher uma opção de implantação do Intune
-
-O Intune oferece duas opções de implantação: independente e híbrida. Autônomo refere-se ao serviço do Intune em execução na nuvem, enquanto híbrido refere-se à integração do Intune ao Configuration Manager. O objetivo principal deste guia é o uso da opção autônoma. [Decida qual opção atende aos seus requisitos de negócios](https://docs.microsoft.com/configmgr/mdm/understand/choose-between-standalone-intune-and-hybrid-mobile-device-management).
-
-> [!Important]
->A integração de novos clientes MDM híbridos foi preterida. Para obter mais informações, confira a postagem no blog [Migrar do Gerenciamento de dispositivo móvel híbrido para o Intune no Azure](https://techcommunity.microsoft.com/t5/Intune-Customer-Success/Move-from-Hybrid-Mobile-Device-Management-to-Intune-on-Azure/ba-p/280150).
-
 
 ## <a name="intune-tenant-location"></a>Local do locatário do Intune
 

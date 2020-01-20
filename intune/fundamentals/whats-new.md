@@ -6,7 +6,7 @@ keywords: ''
 author: ErikjeMS
 ms.author: erikje
 manager: dougeby
-ms.date: 01/06/2020
+ms.date: 01/09/2020
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.subservice: fundamentals
@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure; get-started
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: b2bb9d921f30e343b309be60438f5318d7c66518
-ms.sourcegitcommit: a66b5916eaab9cb537e483064efc584a6a63a390
+ms.openlocfilehash: 311941c3981e5883d392359dc0919bb85156c4be
+ms.sourcegitcommit: fb72b19986f34907d228c856d2e6949751ec02a1
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2020
-ms.locfileid: "75692252"
+ms.lasthandoff: 01/13/2020
+ms.locfileid: "75920086"
 ---
 # <a name="whats-new-in-microsoft-intune"></a>Novidades do Microsoft Intune
 
@@ -62,6 +62,15 @@ Conheça as novidades de cada semana do Microsoft Intune. Você também pode enc
 #### <a name="smime-support-for-microsoft-outlook-for-ios---2669398---"></a>Suporte para S/MIME no Microsoft Outlook para iOS<!-- 2669398 -->
 O Intune dá suporte à entrega de certificados de autenticação e criptografia S/MIME que podem ser usados com o Outlook para iOS em dispositivos iOS. Para obter mais informações, confira [Proteção e rotulagem de confidencialidade no Outlook para iOS e Android](https://aka.ms/omsmime).
 
+#### <a name="cache-win32-app-content-using-microsoft-connected-cache-server---6030314---"></a>Armazenar em cache o conteúdo de aplicativos Win32 usando o servidor do Cache Conectado da Microsoft<!-- 6030314 -->
+Instale um servidor do Cache Conectado da Microsoft nos pontos de distribuição do Configuration Manager para armazenar em cache o conteúdo de aplicativos Win32 do Intune. Para obter mais informações, confira [Cache Conectado da Microsoft no Configuration Manager – Suporte para aplicativos Win32 do Intune](https://docs.microsoft.com/configmgr/core/plan-design/hierarchy/microsoft-connected-cache#bkmk_intune).
+
+<!-- vvvvvvvvvvvvvvvvvvvvvv -->
+### <a name="role-based-access-control"></a>Controle de acesso baseado em funções
+
+#### <a name="windows-10-administrative-templates-admx-profiles-now-support-scope-tags---5137390-wnready--"></a>Os perfis de modelos administrativos (ADMX) do Windows 10 agora dão suporte a marcas de escopo <!--5137390 wnready-->
+Agora você pode atribuir marcas de escopo a perfis de modelos administrativos (ADMX). Para fazer isso, acesse **Intune** > **Dispositivos** > **Perfis de configuração** > escolha um perfil de modelos administrativos na lista > **Propriedades** > **Marcas de escopo**. Para obter mais informações sobre marcas de escopo, confira [Atribuir marcas de escopo a outros objetos](../fundamentals/scope-tags.md#assign-scope-tags-to-other-objects).
+
 <!-- ########################## -->
 ## <a name="week-of-december-30-2019"></a>Semana de 30 de dezembro de 2019
 
@@ -71,8 +80,8 @@ O Intune dá suporte à entrega de certificados de autenticação e criptografia
 #### <a name="retrieve-personal-recovery-key-from-mem-encrypted-macos-devices---4851745---"></a>Recuperar a chave de recuperação pessoal de dispositivos macOS criptografados com MEM<!-- 4851745 -->
 Os usuários finais podem reaver sua chave de recuperação pessoal (Chave do FileVault) usando o aplicativo Portal da Empresa do iOS. O dispositivo com a chave de recuperação pessoal deve ser registrado com o Intune e criptografado com o FileVault pelo Intune. Usando o aplicativo Portal da Empresa do iOS, um usuário final pode reaver sua chave de recuperação pessoal em seu dispositivo macOS criptografado clicando em **Obter chave de recuperação**. Você também pode recuperar a chave de recuperação do Intune escolhendo **Dispositivos** > *o dispositivo macOS criptografado e registrado* > **Obter a chave de recuperação**. Para saber mais sobre o FileVault, confira [Criptografia do FileVault para macOS](~/protect/encrypt-devices.md#filevault-encryption-for-macos).
 
-#### <a name="ios-user-licensed-vpp-apps---5619268---"></a>Aplicativos do VPP licenciados para o usuário do iOS<!-- 5619268 -->
-Para dispositivos iOS registrados pelo usuário, os usuários finais não verão mais como disponíveis os aplicativos do VPP licenciados para dispositivos implantados. No entanto, os usuários finais continuarão a ver todos os aplicativos do VPP licenciados para o usuário dentro do Portal da Empresa. Para saber mais sobre aplicativos VPP, confira [Como gerenciar aplicativos para iOS e macOS adquiridos por meio do Apple Volume Purchase Program com o Microsoft Intune](~/apps/vpp-apps-ios.md).
+#### <a name="ios-and-ipados-user-licensed-vpp-apps---5619268---"></a>Aplicativos VPP licenciados para o usuário do iOS e do iPadOS<!-- 5619268 -->
+Para dispositivos iOS e iPadOS registrados pelo usuário, os usuários finais não verão mais os aplicativos VPP licenciados para dispositivos recém-criados implantados como disponíveis. No entanto, os usuários finais continuarão a ver todos os aplicativos do VPP licenciados para o usuário dentro do Portal da Empresa. Para saber mais sobre aplicativos VPP, confira [Como gerenciar aplicativos para iOS e macOS adquiridos por meio do Apple Volume Purchase Program com o Microsoft Intune](~/apps/vpp-apps-ios.md).
 
 <!-- ########################## -->
 ## <a name="week-of-december-23-2019"></a>Semana de 23 de dezembro de 2019
@@ -181,6 +190,9 @@ Melhoramos a experiência em um dispositivo compartilhado com vários usuários 
 
 #### <a name="use-pkcs-certificate-profiles-to-provision-devices-with-certificates---2317124-2317130-2317139-2340517-2340528-2340529----"></a>Usar perfis de certificado PKCS para provisionar dispositivos com certificados<!-- 2317124, 2317130, 2317139, 2340517, 2340528, 2340529  -->
 Agora, você pode usar perfis de certificado PKCS para emitir certificados para *dispositivos* que executam o Android for Work, o iOS e o Windows, quando associados a perfis como os de Wi-Fi e VPN. Anteriormente, essas três plataformas davam suporte apenas para certificados baseados no usuário, com suporte baseado em dispositivo limitado ao macOS.
+
+> [!NOTE]
+> Não há suporte para perfis de certificado PKCS em perfis de Wi-Fi. Em vez disso, use perfis de certificado SCEP ao usar um [tipo de EAP](../configuration/wi-fi-settings-windows.md#enterprise-profile).
 
 Para usar um certificado baseado em dispositivo, ao [criar um perfil de certificado PKCS](../protect/certficates-pfx-configure.md#create-a-pkcs-certificate-profile) para as plataformas com suporte, selecione **Configurações**. Você verá a configuração para **Tipo de certificado**, que dá suporte às opções de Dispositivo ou Usuário.
 

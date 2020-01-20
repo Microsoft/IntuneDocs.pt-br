@@ -5,7 +5,7 @@ keywords: ''
 author: brenduns
 ms.author: brenduns
 manager: dougeby
-ms.date: 12/12/2019
+ms.date: 01/14/2020
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.subservice: protect
@@ -15,12 +15,12 @@ ms.reviewer: mghadial
 ms.suite: ems
 search.appverid: MET150
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: ad630eb34b296d7ab77081a1e3063db8dffc64f9
-ms.sourcegitcommit: e166b9746fcf0e710e93ad012d2f52e2d3ed2644
+ms.openlocfilehash: dc9dd03714e24dae4b0c7afe9206c6a8d7d36c13
+ms.sourcegitcommit: de663ef5f3e82e0d983899082a7f5b62c63f24ef
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/19/2019
-ms.locfileid: "75207444"
+ms.lasthandoff: 01/15/2020
+ms.locfileid: "75956281"
 ---
 # <a name="manage-windows-10-software-updates-in-intune"></a>Gerenciar atualizações de software do Windows 10 no Intune
 
@@ -63,7 +63,7 @@ Os pré-requisitos a seguir devem ser atendidos para usar as atualizações do W
   > - Windows 10 Mobile  
   > - Windows 10 Enterprise LTSC. O Windows Update para Empresas (WUfB) atualmente não aceita versões do *Canal de Serviço de Longo Prazo*. Planeje usar métodos alternativos de aplicação de patches, como o WSUS ou o Configuration Manager.
 
-- Em dispositivos Windows, **Comentários e Diagnóstico** > **Dados de diagnóstico e uso** devem ser definidos como **Básico**, **Aprimorado** ou **Completo**.  
+- Em dispositivos Windows, **Comentários e Diagnóstico** > **Dados de diagnóstico e uso** devem ser definidos como **Básico**, **Aprimorado** ou **Completo**.
 
   É possível definir manualmente a configuração *Dados de diagnóstico e uso* para dispositivos com Windows 10 ou usar um perfil de restrição de dispositivo do Intune para o Windows 10 e posterior. Se você usar um perfil de restrição de dispositivo, defina a [configuração de restrição de dispositivo](../configuration/device-restrictions-windows-10.md#reporting-and-telemetry) de **Compartilhar dados de uso** como **Básico**, no mínimo. Essa configuração é encontrada na categoria **Relatório e Telemetria** quando você configura uma política de restrição de dispositivo para o Windows 10 ou posterior.
 
@@ -215,6 +215,10 @@ Quando um dispositivo recebe uma política de atualizações de recursos do Wind
 
   Essa limitação está sendo examinada para verificar se ela pode receber suporte no futuro.
 
+> [!IMPORTANT]
+> Para usar a política de Atualizações de Recursos com o Intune, os dispositivos precisam ter a telemetria ativada, com uma configuração mínima igual a [*Básico*](../configuration/device-restrictions-windows-10.md#reporting-and-telemetry). A telemetria é configurada em *Relatórios e Telemetria* como parte de uma [política de Restrição de Dispositivo](../configuration/device-restrictions-configure.md).
+>
+> Os dispositivos que recebem a política de Atualizações de Recursos e que têm a telemetria definida como *Não configurada*, o que significa que ela está desativada, podem instalar uma versão do Windows posterior àquela definida na política de Atualização de Recursos. O pré-requisito de exigência da telemetria está em revisão, pois esse recurso migra para a disponibilidade geral.
 
 ### <a name="create-and-assign-windows-10-feature-updates"></a>Criar e atribuir atualizações de recursos do Windows 10
 
@@ -245,4 +249,3 @@ Nesse painel, você pode:
 [Relatórios de conformidade do Intune para atualizações](../windows-update-compliance-reports.md)
 
 [Solucionar problemas com anéis de atualização do Windows 10](https://techcommunity.microsoft.com/t5/Intune-Customer-Success/Support-Tip-Troubleshooting-Windows-10-Update-Ring-Policies/ba-p/714046)
-

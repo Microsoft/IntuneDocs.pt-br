@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 2c447c67e631365e831f033c2811c36d936f2e85
-ms.sourcegitcommit: a82d25d98fdf0ba766f8f074871d4f13725e23f9
+ms.openlocfilehash: d5a3204721a0d40cfb5bf729ca17ef8e4ded1f0f
+ms.sourcegitcommit: 2506cdbfccefd42587a76f14ee50c3849dad1708
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/31/2019
-ms.locfileid: "75547996"
+ms.lasthandoff: 01/11/2020
+ms.locfileid: "75885762"
 ---
 # <a name="add-app-configuration-policies-for-managed-ios-devices"></a>Adicionar políticas de configuração de aplicativos para dispositivos iOS gerenciados
 
@@ -182,7 +182,7 @@ Os registros de DEP (Programa de Registro de Dispositivos da Apple) não são co
 
 1. No Intune, se necessário, adicione o Portal da Empresa do Intune em **Intune** > **Aplicativos** > **Todos os aplicativos** > **Adicionar**.
 2. Acesse **Aplicativos** > **Políticas de configuração de aplicativos** para criar uma política de configuração para o aplicativo Portal da Empresa.
-3. Crie uma política de configuração de aplicativo com o XML abaixo. Para saber mais sobre como criar uma política de configuração de aplicativos e inserir dados XML, confira [Adicionar políticas de configuração de aplicativos para dispositivos iOS gerenciados](app-configuration-policies-use-ios.md) ou, para MDM híbrido, confira [Aplicar configurações aos aplicativos iOS com políticas de configuração de aplicativos no Configuration Manager](https://docs.microsoft.com/configmgr/mdm/deploy-use/configure-ios-apps-with-app-configuration-policies).
+3. Crie uma política de configuração de aplicativo com o XML abaixo. Encontre mais informações sobre como criar uma política de configuração de aplicativos e inserir dados XML em [Adicionar políticas de configuração de aplicativos para dispositivos iOS gerenciados](app-configuration-policies-use-ios.md).
 
     ``` xml
     <dict>
