@@ -108,7 +108,7 @@ Para dispositivos iOS, use os seguintes pares de chave/valor:
 | **Valores** | <ul><li>**Habilitado**: A única conta permitida é a conta de usuário gerenciado definida pela chave [IntuneMAMUPN](data-transfer-between-apps-manage-ios.md#configure-user-upn-setting-for-microsoft-intune-or-third-party-emm).</li><li>**Desabilitado** (ou qualquer valor que não seja uma correspondência que diferencia maiúsculas e minúsculas para **Habilitado**): Qualquer conta é permitida.</li></ul> |.
 
    > [!NOTE]
-   > Você deve usar o OneDrive para iOS 10.34 ou posterior, Outlook para iOS 2.99.0 ou posterior ou Edge para iOS 44.8.7 ou posterior, e o aplicativo deve ser direcionado com as [políticas de proteção de aplicativo do Intune](app-protection-policy.md) ao permitir apenas contas da organização configuradas com várias identidades.
+   > Você deve usar o OneDrive para iOS 10.34 ou posterior, Outlook para iOS 2.99.0 ou posterior ou Microsoft Edge para iOS 44.8.7 ou posterior, e o aplicativo deve ser direcionado com as [políticas de proteção de aplicativo do Intune](app-protection-policy.md) ao permitir apenas contas da organização configuradas com várias identidades.
 
 ## <a name="enter-xml-data"></a>Inserir dados XML
 

@@ -30,7 +30,7 @@ Seguindo este [cenário guiado](~/fundamentals/guided-scenarios-overview.md), vo
 O Microsoft Edge permite que os usuários acabem com a desordem da Web com recursos internos que os ajudem a consolidar, organizar e gerenciar conteúdo de trabalho. Os usuários de dispositivos iOS e Android que entrarem com suas contas corporativas do Azure AD no aplicativo Microsoft Edge encontrarão seu navegador pré-carregado com os **Favoritos** do local de trabalho e filtros de site que você definir.
 
 > [!NOTE]
-> Se você tiver impedido os usuários de registrarem dispositivos iOS ou Android, esse cenário não permitirá o registro e os usuários precisarão instalar o Edge por conta própria.
+> Se você tiver impedido os usuários de registrarem dispositivos iOS ou Android, esse cenário não permitirá o registro e os usuários precisarão instalar o Microsoft Edge por conta própria.
 Os seguintes recursos corporativos do Microsoft Edge habilitados pelas políticas do Microsoft Intune incluem: 
 
 - **Identidade Dupla**: os usuários podem adicionar uma conta corporativa e uma conta pessoal para navegação. Há uma separação completa entre as duas identidades, o que é semelhante à arquitetura e a experiência no Office 365 e no Outlook. Administradores do Intune poderão definir as políticas desejadas para uma experiência de navegação protegida dentro da conta de trabalho. 
@@ -81,7 +81,7 @@ Nesta etapa, você poderá escolher os grupos de usuários que deseja incluir pa
 A etapa final permite que você examine um resumo das configurações que você definiu. Após examinar suas escolhas, clique em **Criar** para concluir o cenário guiado. 
 
 > [!NOTE]
-> O Edge pode levar até 12 horas para receber a configuração. Para saber mais, confira [Políticas de configuração de aplicativos do Microsoft Intune](~/apps/app-configuration-policies-overview.md).
+> O Microsoft Edge pode levar até 12 horas para receber a configuração. Para saber mais, confira [Políticas de configuração de aplicativos do Microsoft Intune](~/apps/app-configuration-policies-overview.md).
 
 > [!IMPORTANT]
 > Depois que o cenário guiado estiver concluído, ele exibirá um resumo. Você pode modificar os recursos listados no resumo posteriormente. No entanto, a tabela que exibe esses recursos não será salva.

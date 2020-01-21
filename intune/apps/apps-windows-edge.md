@@ -68,7 +68,7 @@ Nesta etapa, forneça informações sobre a implantação deste aplicativo. Essa
 Nesta etapa, configure as opções de instalação do aplicativo.
 
 1. No painel **Adicionar Aplicativo**, selecione **Configurações do aplicativo**.
-2. No painel **Configurações do aplicativo**, selecione **Beta** ou **Dev** na lista **Canal** para determinar de qual Canal do Edge você implantará o aplicativo.
+2. No painel **Configurações do aplicativo**, selecione **Beta** ou **Dev** na lista **Canal** para determinar de qual Canal do Microsoft Edge você implantará o aplicativo.
     - O Canal **Beta** é a experiência de versão prévia mais estável do Microsoft Edge e a melhor opção para um piloto completo em sua organização. Com as principais atualizações a cada seis semanas, cada versão incorpora os aprendizados e melhorias do Canal de Desenvolvimento.
     - O Canal de **Desenvolvimento** está pronto para comentários empresariais sobre o Windows, Windows Server e macOS. Ele é atualizado a cada semana e contém as melhorias e correções mais recentes.
 
