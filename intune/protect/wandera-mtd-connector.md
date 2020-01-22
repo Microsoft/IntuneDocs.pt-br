@@ -15,12 +15,12 @@ ms.technology: ''
 ms.assetid: ''
 search.appverid: MET150
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 7cc63be3c7c536cba67ef92288c12cc4032ae200
-ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
+ms.openlocfilehash: 50973d883a3d31089e16dca5a9021643a821a3fb
+ms.sourcegitcommit: 52475fcd8d05d2f6b858d780ebb3d88eaadb0849
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "72508809"
+ms.lasthandoff: 01/15/2020
+ms.locfileid: "76036630"
 ---
 # <a name="wandera-mobile-threat-defense-connector-with-intune"></a>Conector de Defesa contra Ameaças Móveis Wandera com o Intune  
 
@@ -48,7 +48,7 @@ Há suporte para as seguintes plataformas no Wandera quando registradas no Intun
 - Android 5.0 e posterior  
 - iOS 10.2 e posterior  
 
-Para obter mais informações sobre plataforma e dispositivo, confira o [site do Wandera](https://www.wandera.com/why-wandera/features/device-support/).
+Para obter mais informações sobre plataforma e dispositivo, confira o [site do Wandera](https://www.wandera.com/classic-help-center/).
 
 ## <a name="prerequisites"></a>Pré-requisitos  
 
@@ -58,7 +58,7 @@ Para obter mais informações sobre plataforma e dispositivo, confira o [site do
 
 Para obter mais informações, confira [Segurança Móvel do Wandera](https://www.wandera.com/mobile-security/).
  
-## <a name="sample-scenarios"></a>Cenários de exemplo
+## <a name="sample-scenarios"></a>Exemplo de cenários
 
 Estes são os cenários comuns ao usar a MTD Wandera com o Intune.
 
@@ -88,11 +88,11 @@ Detecte ameaças à sua rede, como ataques man-in-the-middle, e proteja o acesso
 
 **Acesso concedido após a correção**:  
 
-![Acesso concedido após a correção](./media/wandera-mtd-connector/wandera-network-wifi-unblocked.png)  
+![Acesso concedido após correção](./media/wandera-mtd-connector/wandera-network-wifi-unblocked.png)  
 
 ## <a name="control-access-to-sharepoint-online-based-on-threat-to-network"></a>Controlar o acesso ao SharePoint Online com base em ameaças à rede
 
-Detecta ameaças à sua rede, como ataques do tipo man-in-the-middle, e impede a sincronização de arquivos corporativos com base no risco do dispositivo.
+Detecte ameaças à sua rede, como ataques “man-in-the-middle”, e previna a sincronização de arquivos corporativos com base no risco ao dispositivo.
 
 **Bloqueie o SharePoint Online quando ameaças à rede forem detectadas**:  
 

@@ -1,10 +1,10 @@
 ---
-ms.openlocfilehash: 6f5b0c8df86cf5bf1206c1cccb879e37c7944a21
-ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
+ms.openlocfilehash: 748141dc494e28f25a09039a7a500411af76ace7
+ms.sourcegitcommit: 52475fcd8d05d2f6b858d780ebb3d88eaadb0849
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "71912788"
+ms.lasthandoff: 01/15/2020
+ms.locfileid: "76037664"
 ---
 ## <a name="enable-windows-10-automatic-enrollment"></a>Habilitar o registro automático do Windows 10
 
@@ -12,7 +12,7 @@ O registro automático permite que os usuários registrem seus dispositivos Wind
 
 **Pré-requisitos**
 
-- Assinatura do Azure Active Directory Premium ([assinatura de avaliação](http://go.microsoft.com/fwlink/?LinkID=816845))
+- Assinatura do Azure Active Directory Premium ([assinatura de avaliação](https://go.microsoft.com/fwlink/?LinkID=816845))
 - Assinatura do Microsoft Intune
 
 ### <a name="configure-automatic-mdm-enrollment"></a>Configurar o registro automático do MDM
@@ -29,7 +29,7 @@ O registro automático permite que os usuários registrem seus dispositivos Wind
 
    ![Captura de tela do portal do Azure](../enrollment/media/windows-enroll/auto-enroll-intune.png)
 
-4. Configure **Escopo de Usuário MDM**. Especifique quais dispositivos dos usuários devem ser gerenciados pelo Microsoft Intune. Esses dispositivos Windows 10 podem ser registrados automaticamente para gerenciamento com o Microsoft Intune.
+4. Configure o **escopo do Usuário MDM**. Especifique quais dispositivos dos usuários devem ser gerenciados pelo Microsoft Intune. Esses dispositivos Windows 10 podem ser registrados automaticamente para gerenciamento com o Microsoft Intune.
 
    - **Nenhum** - registro automático do MDM desabilitado
    - **Alguns** - selecione os **Grupos** que podem inscrever seus dispositivos com Windows 10 automaticamente
@@ -46,9 +46,9 @@ O registro automático permite que os usuários registrem seus dispositivos Wind
    ![Captura de tela do portal do Azure](../enrollment/media/windows-enroll/auto-enroll-scope.png)
 
 5. Use os valores padrão para as seguintes URLs:
-    - **URL dos Termos de uso do MDM**
+    - **URL dos termos de uso MDM**
     - **URL de Descoberta do MDM**
-    - **URL da Conformidade do MDM**
+    - **URL de Conformidade do MDM**
 
 6. Selecione **Salvar**.
 
