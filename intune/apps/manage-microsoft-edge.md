@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 304a6a60ea8dbfa98e62eb8e52a69e14af795746
-ms.sourcegitcommit: a82d25d98fdf0ba766f8f074871d4f13725e23f9
+ms.openlocfilehash: e64741a92804ec4149b654480166720ff3092e35
+ms.sourcegitcommit: 665be113b593c3bc7d46b99599e720f781037dcf
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/31/2019
-ms.locfileid: "75548005"
+ms.lasthandoff: 01/17/2020
+ms.locfileid: "76258497"
 ---
 # <a name="manage-web-access-by-using-microsoft-edge-with-microsoft-intune"></a>Gerenciar o acesso via Web usando o Microsoft Edge com o Microsoft Intune
 
@@ -205,7 +205,7 @@ Você pode configurar a experiência da página Nova Guia no Microsoft Edge para
 
 |    Chave    |    Valor    |
 |------------------------------------------------------|----------------------------------------------------------------------------------------------------------------|
-|    “com.microsoft.intune.SohwIndustryNews”    |    **True** mostrará as Notícias do Setor na página Nova Guia do Microsoft Edge para dispositivos móveis.<p>**False** (padrão) ocultará as Notícias do Setor da página Nova Guia.    |
+|    com.microsoft.intune.ShowIndustryNews    |    **True** mostrará as Notícias do Setor na página Nova Guia do Microsoft Edge para dispositivos móveis.<p>**False** (padrão) ocultará as Notícias do Setor da página Nova Guia.    |
 
 ## <a name="configure-managed-bookmarks-for-microsoft-edge"></a>Configurar indicadores gerenciados para o Microsoft Edge
 
@@ -217,6 +217,7 @@ Aqui estão alguns detalhes:
 - Esses indicadores não podem ser excluídos ou modificados pelos usuários.
 - Eles são exibidos na parte superior da lista. Todos os indicadores que os usuários criar serão exibidos abaixo desses indicadores.
 - Se você tiver habilitado o redirecionamento do proxy de aplicativo, poderá adicionar aplicativos Web do proxy de aplicativo usando sua URL interna ou externa.
+- Certifique-se de prefixar todas as URLs com **http://** ou **https://** ao inseri-las na lista.
 
 Use o seguinte par chave-valor para configurar indicadores gerenciados:
 
@@ -243,7 +244,7 @@ Use os pares chave-valor abaixo para configurar uma lista de sites permitidos ou
 
 ### <a name="url-formats-for-allowed-and-blocked-site-list"></a>Formatos de URL para a lista de sites permitidos e bloqueados 
 Você pode usar vários formatos de URL para criar suas listas de sites permitidos/bloqueados. Esses padrões permitidos são detalhados na tabela a seguir. Algumas observações antes de começar: 
-- Certifique-se de prefixar todas as URLs com **http** ou **https** ao inseri-las na lista.
+- Certifique-se de prefixar todas as URLs com **http://** ou **https://** ao inseri-las na lista.
 - Você pode usar o símbolo de caractere curinga (\*) de acordo com as regras na lista de padrões permitidos abaixo.
 - Um caractere curinga só pode corresponder a todo um componente do nome do host (separado por pontos) ou partes inteiras do caminho (separadas por barras). Por exemplo, **não** há suporte para `http://*contoso.com`.
 - Você pode especificar os números de porta no endereço. Se você não especificar um número da porta, os valores usados serão:

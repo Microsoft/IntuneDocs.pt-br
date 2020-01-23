@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: dc618f2502647ba33a16cff4305b9f4671e05996
-ms.sourcegitcommit: fc4b38660129d615068f34ad4b96b900d73f7b53
+ms.openlocfilehash: d87a4b5d46a5f0d40cebe3dbcaff211ff508d667
+ms.sourcegitcommit: 822a70c61f5d644216ccc401b8e8949bc39e8d4a
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/27/2019
-ms.locfileid: "74558180"
+ms.lasthandoff: 01/16/2020
+ms.locfileid: "76125303"
 ---
 # <a name="deploy-hybrid-azure-ad-joined-devices-by-using-intune-and-windows-autopilot"></a>Implante dispositivos ingressados no Azure AD híbrido usando o Intune e o Windows Autopilot
 Você pode usar o Intune e o Windows Autopilot para configurar dispositivos ingressados no Azure Active Directory (Azure AD) híbrido. Para isso, siga as etapas neste artigo.
@@ -209,17 +209,30 @@ Levará cerca de 15 minutos para que o status do perfil de dispositivo mude de *
 ## <a name="create-and-assign-a-domain-join-profile"></a>Criar e atribuir um perfil de Ingresso no Domínio
 
 1. No [Centro de Administração do Gerenciador de Ponto de Extremidade da Microsoft](https://go.microsoft.com/fwlink/?linkid=2109431), selecione **Dispositivos** > **Perfis de configuração** > **Criar Perfil**.
-1. Insira as seguintes propriedades:
+2. Insira as seguintes propriedades:
    - **Nome**: insira um nome descritivo para o novo perfil.
    - **Descrição**: Insira uma descrição para o perfil.
    - **Plataforma**: Selecione **Windows 10 e posterior**.
    - **Tipo de perfil**: Selecione **Ingresso no Domínio (Versão Prévia)** .
-1. Selecione **Configurações** e forneça um **Prefixo de nome do computador**, **Nome de domínio** e **Unidade organizacional** (opcional) no [formato DN](https://docs.microsoft.com/windows/desktop/ad/object-names-and-identities#distinguished-name). 
+3. Escolha **Configurações** e forneça um **Prefixo de nome do computador**, **Nome de domínio**.
+4. (Opcional) Forneça uma UO **Unidade organizacional** no [formato](https://docs.microsoft.com/windows/desktop/ad/object-names-and-identities#distinguished-name). As opções são:
+   - Forneça uma UO na qual você tenha delegado o controle para seu dispositivo Windows 2016 que executa o Intune Connector.
+   - Forneça uma UO na qual você tenha delegado o controle para os computadores raiz no Active Directory local.
+   - Se deixar em branco, o objeto do computador será criado no contêiner padrão do Active Directory (CN=Computers se você nunca [o alterou](https://support.microsoft.com/en-us/help/324949/redirecting-the-users-and-computers-containers-in-active-directory-dom)).
+   
+   Estes são alguns exemplos válidos:
+   - OU=Level 1,OU=Level2,DC=contoso,DC=com
+   - OU=Mine,DC=contoso,DC=com
+   
+   Estes são alguns exemplos não válidos:
+   - CN=Computers,DC=contoso,DC=com  (não é possível especificar um contêiner; em vez disso, deixe o valor em branco para usar o padrão do domínio)
+   - OU=Mine (especifique o domínio por meio dos atributos DC=)
+     
    > [!NOTE]
    > Não use aspas em volta do valor na **Unidade organizacional**.
-1. Selecione **OK** > **Criar**.  
+5. Selecione **OK** > **Criar**.  
     O perfil é criado e exibido na lista.
-1. Para atribuir o perfil, siga as etapas descritas em [Atribuir um perfil de dispositivo](../configuration/device-profile-assign.md#assign-a-device-profile) e atribua o perfil para o mesmo grupo usado na etapa [Criar um grupo de dispositivos](windows-autopilot-hybrid.md#create-a-device-group)
+6. Para atribuir o perfil, siga as etapas descritas em [Atribuir um perfil de dispositivo](../configuration/device-profile-assign.md#assign-a-device-profile) e atribua o perfil para o mesmo grupo usado na etapa [Criar um grupo de dispositivos](windows-autopilot-hybrid.md#create-a-device-group)
    - Implantar vários perfis de ingresso no domínio
    
      a. Crie um grupo dinâmico que inclua todos os seus dispositivos do Autopilot com um perfil específico de implantação do Autopilot, digite (device.enrollmentProfileName -eq "Nome do perfil do Autopilot"). 

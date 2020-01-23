@@ -6,7 +6,7 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 11/26/2019
+ms.date: 01/17/2020
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.localizationpriority: high
@@ -17,19 +17,19 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: ''
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: b4839340ba1f3bad6f28a1120d882d0f600b1d44
-ms.sourcegitcommit: 73b362173929f59e9df57e54e76d19834f155433
+ms.openlocfilehash: 42f1c8fae156eaf08203f4a88cad8433749940ac
+ms.sourcegitcommit: b6fe084b0419b3c9d456a8b0439b00f8c784db23
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/27/2019
-ms.locfileid: "74563575"
+ms.lasthandoff: 01/21/2020
+ms.locfileid: "76294788"
 ---
 # <a name="add-microsoft-edge-for-windows-10-to-microsoft-intune"></a>Adicionar Microsoft Edge para Windows 10 ao Microsoft Intune
 
 Antes que você possa implantar, configurar, monitorar ou proteger aplicativos, você deve adicioná-los ao Intune. Um dos [tipos de aplicativo](~/apps/apps-add.md#app-types-in-microsoft-intune) disponíveis é o Microsoft Edge *versão 77 e posteriores*. Selecionando esse tipo de aplicativo no Intune, você pode atribuir e instalar o Microsoft Edge *versão 77 e posteriores* a dispositivos que você gerencia que executam o Windows 10.
 
 > [!IMPORTANT]
-> Esse tipo de aplicativo está em **versão prévia pública** e oferece canais para desenvolvedores e beta para Windows 10. A implantação é apenas em inglês (EN); contudo, os usuários finais podem alterar o idioma de exibição no navegador em **Configurações** > **Idiomas**. O Microsoft Edge é um aplicativo Win32 instalado no contexto do sistema e em arquiteturas semelhantes (aplicativo x86 em sistema operacional x86 e aplicativo x64 em sistema operacional x64). O Intune detectará se há instalações preexistentes do Microsoft Edge. Se estiverem instaladas no contexto do usuário, a instalação do sistema irá substituí-las. Se estiverem instaladas no contexto do sistema, o sucesso da instalação será informado. Além disso, as atualizações automáticas do Microsoft Edge são **Ativadas** por padrão e o Microsoft Edge não pode ser desinstalado.
+> Esse tipo de aplicativo está em **versão prévia pública** e oferece os canais Estável, Beta e de Desenvolvimento para o Windows 10. A implantação é apenas em inglês (EN); contudo, os usuários finais podem alterar o idioma de exibição no navegador em **Configurações** > **Idiomas**. O Microsoft Edge é um aplicativo Win32 instalado no contexto do sistema e em arquiteturas semelhantes (aplicativo x86 em sistema operacional x86 e aplicativo x64 em sistema operacional x64). O Intune detectará se há instalações preexistentes do Microsoft Edge. Se estiverem instaladas no contexto do usuário, a instalação do sistema irá substituí-las. Se estiverem instaladas no contexto do sistema, o sucesso da instalação será informado. Além disso, as atualizações automáticas do Microsoft Edge são **Ativadas** por padrão e o Microsoft Edge não pode ser desinstalado.
 
 > [!NOTE]
 > O Microsoft Edge *versão 77 e posteriores* está disponível para macOS também.
@@ -38,7 +38,7 @@ Antes que você possa implantar, configurar, monitorar ou proteger aplicativos, 
 
 ## <a name="prerequisites"></a>Pré-requisitos
 - O Windows 10 RS2 e superiores são necessários.
-- Versões pré-instaladas do Microsoft Edge *versão 77 e posteriores* para os canais para **desenvolvedores** e **beta** no contexto do usuário serão substituídas pelo Edge instalado no contexto do sistema.
+- Versões pré-instaladas do Microsoft Edge *versão 77 e posteriores* para todos os canais no contexto do usuário serão substituídas pelo Edge instalado no contexto do sistema.
 
 ## <a name="configure-the-app-in-intune"></a>Configurar o aplicativo no Intune
 Você pode adicionar um Microsoft Edge versão 77 e posteriores ao Intune usando as seguintes etapas:
@@ -68,9 +68,10 @@ Nesta etapa, forneça informações sobre a implantação deste aplicativo. Essa
 Nesta etapa, configure as opções de instalação do aplicativo.
 
 1. No painel **Adicionar Aplicativo**, selecione **Configurações do aplicativo**.
-2. No painel **Configurações do aplicativo**, selecione **Beta** ou **Dev** na lista **Canal** para determinar de qual Canal do Microsoft Edge você implantará o aplicativo.
-    - O Canal **Beta** é a experiência de versão prévia mais estável do Microsoft Edge e a melhor opção para um piloto completo em sua organização. Com as principais atualizações a cada seis semanas, cada versão incorpora os aprendizados e melhorias do Canal de Desenvolvimento.
-    - O Canal de **Desenvolvimento** está pronto para comentários empresariais sobre o Windows, Windows Server e macOS. Ele é atualizado a cada semana e contém as melhorias e correções mais recentes.
+2. No painel **Configurações do aplicativo**, escolha **Estável**, **Beta** ou **de Desenvolvimento** na lista **Canal** para determinar de qual Canal do Edge você implantará o aplicativo.
+    - O canal **Estável** é o canal recomendado para a implantação geral em ambientes corporativos. Ele é atualizado a cada seis semanas, cada versão incorpora as melhorias do canal Beta.
+    - O canal **Beta** é a experiência de versão prévia mais estável do Microsoft Edge e a melhor opção para um piloto completo em sua organização. Com grandes atualizações a cada seis semanas, cada versão incorpora os aprendizados e melhorias do Canal de Desenvolvimento.
+    - O canal de **Desenvolvimento** está pronto para comentários empresariais sobre o Windows, Windows Server e macOS. Ele é atualizado a cada semana e contém as melhorias e correções mais recentes.
 
     > [!NOTE]
     > O logotipo do navegador Microsoft Edge é exibido com o aplicativo quando os usuários navegam no Portal da Empresa.
