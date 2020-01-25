@@ -19,12 +19,12 @@ ms.reviewer: japoehlm
 ms.suite: ems
 ms.custom: intune-enduser
 ms.collection: ''
-ms.openlocfilehash: 039ec17b1a56a7339f2159d7af6ad1bd9280bf63
-ms.sourcegitcommit: caee3c3fa77586314aa8040b0caf32a0527b669e
+ms.openlocfilehash: 6c1b6417489d1443596113a18476b9cbc8f3832e
+ms.sourcegitcommit: 8cc3eca2bce847b0c2b40d8531698e21df848878
 ms.translationtype: MTE75
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/10/2020
-ms.locfileid: "75855503"
+ms.lasthandoff: 01/14/2020
+ms.locfileid: "75951468"
 ---
 # <a name="enroll-your-organization-provided-ios-device-in-management"></a>Registrar no gerenciamento o dispositivo iOS fornecido pela organização
 
@@ -44,11 +44,7 @@ Se você estiver usando seu próprio dispositivo iOS e não um fornecido pela em
 
 1. Ligue seu dispositivo iOS.
 2. Depois de selecionar o **Idioma**, conecte o dispositivo ao Wi-Fi.
-3. Na tela **Configurar dispositivo iOS**, escolha se você deseja:
-   - **Configurar como novo dispositivo**
-   - **Restaurar do backup do iCloud**
-   - **Restaurar do backup do iTunes**
-
+3. Na tela **Configurar dispositivo iOS**, escolha **Configurar como novo dispositivo**.  
 4. Depois de você ter se conectado ao Wi-Fi, a tela **Configuração** será exibida. Isso informará que **[Sua empresa] configurará automaticamente seu dispositivo.**
 
    **A configuração permite à [Sua empresa] gerenciar este dispositivo por conexão sem fio. Um administrador pode ajudar você a configurar contas de email e de rede, instalar e configurar aplicativos e gerenciar configurações remotamente. Um administrador pode desabilitar recursos, instalar e remover aplicativos, monitorar e restringir o tráfego de Internet e apagar remotamente este dispositivo.**

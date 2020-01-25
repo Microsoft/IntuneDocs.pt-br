@@ -1,12 +1,12 @@
 ---
-title: Criar perfil de dispositivo de extensões de kernel macOS com o Microsoft Intune-Azure | Microsoft Docs
+title: Criar um perfil de dispositivo de extensões de kernel do macOS com o Microsoft Intune – Azure | Microsoft Docs
 titleSuffix: ''
-description: Adicione ou crie um perfil de dispositivo macOS e, em seguida, configure extensões de kernel para permitir substituição do usuário, adicionar identificador de equipe e um grupo e um identificador de equipe em Microsoft Intune.
+description: Adicione ou crie um perfil de dispositivo macOS e, em seguida, configure extensões de kernel para permitir a substituição de usuário, adicionar um identificador de equipe e um pacote e um identificador de equipe no Microsoft Intune.
 keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 11/04/2019
+ms.date: 01/16/2020
 ms.topic: reference
 ms.service: microsoft-intune
 ms.subservice: configuration
@@ -16,20 +16,20 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: bce6b99723c5eada8f8f29e875a1df1daa02751a
-ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
+ms.openlocfilehash: 1075054f3812e8c40f38e705a440c46ba09fdd0e
+ms.sourcegitcommit: 11cbd2a9d90dea20f6dc1f54f0a6acbeec3a71d6
 ms.translationtype: MTE75
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "74059365"
+ms.lasthandoff: 01/16/2020
+ms.locfileid: "76146762"
 ---
 # <a name="add-macos-kernel-extensions-in-intune"></a>Adicionar extensões de kernel macOS no Intune
 
-Em dispositivos macOS, você pode adicionar recursos no nível do kernel. Esses recursos acessam partes do sistema operacional que programas regulares não podem acessar. Sua organização pode ter necessidades ou requisitos específicos que não estão disponíveis em um aplicativo, um recurso de dispositivo e assim por diante. 
+Em dispositivos macOS, você pode adicionar recursos no nível do kernel. Esses recursos acessam partes do sistema operacional que os programas normais não podem acessar. Sua organização pode ter necessidades ou requisitos específicos que não estejam disponíveis em um aplicativo, um recurso de dispositivo etc. 
 
-Para adicionar extensões de kernel que sempre têm permissão para carregar em seus dispositivos, adicione "extensões de kernel" (KEXT) em Microsoft Intune e, em seguida, implante essas extensões em seus dispositivos.
+Para adicionar extensões de kernel que sempre podem ser carregadas em seus dispositivos, adicione "extensões de kernel" (KEXT) no Microsoft Intune e, em seguida, implante essas extensões nos dispositivos.
 
-Por exemplo, você tem um programa de verificação de vírus que verifica o seu dispositivo em busca de conteúdo mal-intencionado. Você pode adicionar a extensão do kernel do programa de verificação de vírus como uma extensão de kernel permitida no Intune. Em seguida, "atribua" a extensão aos dispositivos macOS.
+Por exemplo, você tem um programa de verificação de vírus que examina o dispositivo em busca de conteúdo mal-intencionado. Você pode adicionar a extensão de kernel do programa de verificação de vírus como uma extensão de kernel permitida no Intune. Em seguida, "atribua" a extensão aos dispositivos macOS.
 
 Com esse recurso, os administradores podem permitir que os usuários substituam as extensões do kernel, adicionem identificadores de equipe e adicionem extensões de kernel específicas no Intune.
 
@@ -37,33 +37,33 @@ Esse recurso aplica-se a:
 
 - macOS 10.13.2 e posterior
 
-Para usar esse recurso, os dispositivos devem ser:
+Para usar esse recurso, os dispositivos precisam ser:
 
-- Registrado no Intune usando a DEP (Programa de registro de dispositivos da Apple). [Registrar dispositivos MacOS automaticamente](../enrollment/device-enrollment-program-enroll-macos.md) tem mais informações.
+- Registrados no Intune usando o DEP (Programa de registro de dispositivos) da Apple. O artigo [Registrar dispositivos macOS automaticamente](../enrollment/device-enrollment-program-enroll-macos.md) traz mais informações.
 
   OU
 
-- Registrado no Intune com "registro aprovado pelo usuário" (termo da Apple). [Preparar para alterações em extensões de kernel no MacOS High Sierra](https://support.apple.com/en-us/HT208019) (abre o site da Apple) tem mais informações.
+- Registrados no Intune com o "registro aprovado pelo usuário" (termo da Apple). O artigo [Preparar-se para as alterações nas extensões de kernel no macOS High Sierra](https://support.apple.com/en-us/HT208019) (abre o site da Apple) traz mais informações.
 
 O Intune usa "perfis de configuração" para criar e personalizar essas configurações de acordo com as necessidades da sua organização. Depois de adicionar esses recursos em um perfil, você pode enviar por push ou implantar o perfil para dispositivos macOS em sua organização.
 
 Este artigo mostra como criar um perfil de configuração de dispositivo usando extensões de kernel no Intune.
 
 > [!TIP]
-> Para obter mais informações sobre extensões de kernel, consulte [visão geral da extensão do kernel](https://developer.apple.com/library/archive/documentation/Darwin/Conceptual/KernelProgramming/Extend/Extend.html) (abre o site da Apple).
+> Para obter mais informações sobre extensões de kernel, confira [Visão geral da extensão de kernel](https://developer.apple.com/library/archive/documentation/Darwin/Conceptual/KernelProgramming/Extend/Extend.html) (abre o site da Apple).
 
 ## <a name="what-you-need-to-know"></a>O que você precisa saber
 
-- Extensões de kernel herdadas não assinadas podem ser adicionadas.
-- Certifique-se de inserir o identificador de equipe correto e a ID do pacote da extensão do kernel. O Intune não valida os valores inseridos. Se você inserir informações erradas, a extensão não funcionará no dispositivo.
+- As extensões de kernel herdadas não assinadas podem ser adicionadas.
+- Lembre-se de inserir o identificador de equipe correto e a ID do pacote da extensão de kernel. O Intune não confirma os valores inseridos. Se você inserir informações incorretas, a extensão não funcionará no dispositivo. Um identificador de equipe tem exatamente 10 caracteres alfanuméricos. 
 
 > [!NOTE]
-> A Apple lançou informações sobre assinatura e notarization para todos os softwares. No macOS 10.14.5 e mais recentes, as extensões de kernel implantadas por meio do Intune não precisam atender à política de notarization da Apple.
+> A Apple lançou informações sobre assinatura e autenticação para todos os programas de software. No macOS 10.14.5 e mais recente, as extensões de kernel implantadas por meio do Intune não precisam atender à política de autenticação da Apple.
 >
-> Para obter informações sobre essa política de notarization e quaisquer atualizações ou alterações, consulte os seguintes recursos:
+> Para obter informações sobre essa política de autenticação e as atualizações ou as alterações, confira os seguintes recursos:
 >
-> - [Notarizing seu aplicativo antes da distribuição](https://developer.apple.com/documentation/security/notarizing_your_app_before_distribution) (abre o site da Apple) 
-> - [Preparar-se para alterações nas extensões de kernel no MacOS High Sierra](https://support.apple.com/en-us/HT208019) (abre o site da Apple)
+> - [Como autenticar seu aplicativo antes da distribuição](https://developer.apple.com/documentation/security/notarizing_your_app_before_distribution) (abre o site da Apple) 
+> - [Preparar-se para as alterações nas extensões de kernel no macOS High Sierra](https://support.apple.com/en-us/HT208019) (abre o site da Apple)
 
 ## <a name="create-the-profile"></a>Criar o perfil
 
@@ -72,10 +72,10 @@ Este artigo mostra como criar um perfil de configuração de dispositivo usando 
 3. Insira as seguintes propriedades:
 
     - **Nome**: insira um nome descritivo para o novo perfil.
-    - **Descrição:** insira uma descrição para o perfil. Essa configuração é opcional, mas recomendada.
-    - **Plataforma**: selecione **macOS**
-    - **Tipo de perfil**: selecione **extensões**.
-    - **Configurações**: insira as configurações que você deseja definir. Para obter uma lista de todas as configurações e o que elas fazem, confira:
+    - **Descrição**: Insira uma descrição para o perfil. Essa configuração é opcional, mas recomendada.
+    - **Plataforma**: Selecione **macOS**
+    - **Tipo de perfil**: selecione **Extensões**.
+    - **Configurações**: Insira as configurações que você deseja definir. Para obter uma lista de todas as configurações e o que elas fazem, confira:
 
         - [macOS](kernel-extensions-settings-macos.md)
 

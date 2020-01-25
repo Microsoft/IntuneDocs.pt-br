@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic-keep
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: ab5e5d3e645410b876a5d3d0be0eafed9c790780
-ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
+ms.openlocfilehash: 831a22dfb6eebfe74b9886a1c83560f68a11c04e
+ms.sourcegitcommit: 52475fcd8d05d2f6b858d780ebb3d88eaadb0849
 ms.translationtype: MTE75
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "72502660"
+ms.lasthandoff: 01/15/2020
+ms.locfileid: "76036598"
 ---
 # <a name="manage-license-agreements-for-windows-pc-software-in-microsoft-intune"></a>Gerenciar contratos de licença para software de PC com Windows no Microsoft Intune
 
@@ -51,7 +51,7 @@ Adicionalmente, você pode gerar relatórios que mostrem contagens de licenças 
 > O workspace de **Licenças** não é exibido no console do administrador até que você esteja gerenciando pelo menos um computador Windows com o cliente do computador Windows Intune.
 
 ## <a name="add-microsoft-volume-licensing-agreements"></a>Adicionar contratos de licenciamento por volume da Microsoft
-Os contratos de Licenciamento por Volume do Intune fornecem informações sobre licença para softwares que foram adquiridos através de contratos de Licenciamento por Volume da Microsoft. É possível adicionar contratos de Licenciamento por Volume da Microsoft ao Intune fornecendo pares combinados de números de contrato. Os números de contrato ou autorização devem ser correspondentes aos números corretos de licença ou inscrição. Pares de números de contrato são obtidos no [Centro de Atendimento de Licenciamento por Volume (VLSC)](http://go.microsoft.com/fwlink/?LinkID=223842)quando você adquire seus contratos de licença.
+Os contratos de Licenciamento por Volume do Intune fornecem informações sobre licença para softwares que foram adquiridos através de contratos de Licenciamento por Volume da Microsoft. É possível adicionar contratos de Licenciamento por Volume da Microsoft ao Intune fornecendo pares combinados de números de contrato. Os números de contrato ou autorização devem ser correspondentes aos números corretos de licença ou inscrição. Pares de números de contrato são obtidos no [Centro de Atendimento de Licenciamento por Volume (VLSC)](https://go.microsoft.com/fwlink/?LinkID=223842)quando você adquire seus contratos de licença.
 
 1. No [Console do administrador do Microsoft Intune](https://admin.manage.microsoft.com/), escolha **Licenças**.
 
@@ -67,7 +67,7 @@ Os contratos de Licenciamento por Volume do Intune fornecem informações sobre 
 
         - Somente caracteres ASCII contam com suporte.
 
-        - Os caracteres a seguir não são permitidos no nome do contrato: **~ ! @ # $ ^ &amp; &#42; ( ) = + [ ] { } \ | ; : ' " &lt; &gt; /** . São permitidos espaços no nome.
+        - Os seguintes caracteres não são permitidos no nome do contrato: **~ ! @ # $ ^ &amp; &#42; ( ) = + [ ] { } \ | ; : ' " &lt; &gt; /** . São permitidos espaços no nome.
 
         - O nome de arquivo do contrato deve ter no máximo 128 caracteres.
 
@@ -77,11 +77,11 @@ Os contratos de Licenciamento por Volume do Intune fornecem informações sobre 
 
         Você pode criar esse arquivo adicionando seus pares de contrato a um documento de texto sem formatação em um dos formatos a seguir, dependendo do tipo de organização que você registrou com o VLSC. Especifique um par de números de contrato por linha.
 
-        - **Clientes do Open Value:** *número do contrato*, *repetir número do contrato*, *nome do contrato*
+        - **Clientes do Open Value:** *Número do contrato*, *número de contrato repetido*, *nome do contrato*
 
-        - **Clientes do Open:** *número da autorização*, *número da licença relacionado*, *nome do contrato*
+        - **Clientes do Open:** *Número de autorização*, *número da licença relacionado*, *nome do contrato*
 
-        - **Clientes do Select e Enterprise:** *número do contrato*, *número de registro relacionado*, *nome do contrato*
+        - **Clientes do Select e do Enterprise:** *Número do contrato*, *número de registro relacionado*, *nome do contrato*
 
         O formulário **Adicionar Contratos** solicitará que você procure esse arquivo quando estiver adicionando um novo contrato.
 
@@ -116,7 +116,7 @@ Os contratos de Licenciamento por Volume do Intune fornecem informações sobre 
 
 A exibição **Todos os Contratos** é mostrada e o Intune se conecta ao VLSC da Microsoft para validar os pares de números de contrato fornecidos.
 
-Para atualizar as informações de licença de volume depois de adicionar os contratos de licença no Intune, na página **Visão Geral de Licenças**, escolha **Atualizar Agora**. Essa ação recupera as informações de licença atuais no [Centro de Serviços de Licenciamento por Volume da Microsoft (VLSC)](http://go.microsoft.com/fwlink/?LinkId=223842).
+Para atualizar as informações de licença de volume depois de adicionar os contratos de licença no Intune, na página **Visão Geral de Licenças**, escolha **Atualizar Agora**. Essa ação recupera as informações de licença atuais no [Centro de Serviços de Licenciamento por Volume da Microsoft (VLSC)](https://go.microsoft.com/fwlink/?LinkId=223842).
 
 > [!IMPORTANT]
 > Até que as informações de licenciamento por volume sejam atualizadas, talvez você veja informações diferentes na lista de contratos e informações de direito na página **Visão geral de contratos** .
@@ -184,6 +184,6 @@ Os contratos de licenciamento de software podem ser adicionados aos grupos de li
 |            Tarefa            |                                                                                                                                                                                 Detalhes                                                                                                                                                                                  |
 |   Criar um grupo de licenças   |                                                            Na página <strong>Visão Geral</strong> do workspace de <strong>Licenças</strong>, escolha <strong>Criar Grupo de Licenças</strong> no menu <strong>Tarefas</strong>. <strong>Observação:</strong> é possível criar um total máximo de 500 grupos de licenças.                                                             |
 |   Renomear um grupo de licenças   |                                                                                                      No workspace de <strong>Licenças</strong>, escolha um grupo de licenças e <strong>Editar Grupo de Licenças</strong> no menu <strong>Tarefas</strong>.                                                                                                       |
-|   Excluir um grupo de licenças   |                                 No workspace de <strong>Licenças</strong>, escolha um grupo de licenças e, após, escolha <strong>Excluir Grupo de Licenças</strong> no menu <strong>Tarefas</strong>. <strong>Dica:</strong> Todas as licenças no grupo excluído são movidas para o grupo <strong>Contratos não atribuídos</strong>.                                 |
+|   Excluir um grupo de licenças   |                                 No workspace de <strong>Licenças</strong>, escolha um grupo de licenças e, após, escolha <strong>Excluir Grupo de Licenças</strong> no menu <strong>Tarefas</strong>. <strong>Dica:</strong> Todas as licenças do grupo excluído são movidas para o grupo de licenças <strong>Contratos não atribuídos</strong>.                                 |
 | Excluir um contrato de licença | No workspace de <strong>Licenças</strong>, escolha um contrato e, após, escolha <strong>Excluir</strong>. <strong>Dica:</strong> depois de excluir contratos de Licenciamento por Volume, para atualizar as informações de licença, escolha <strong>Atualizar Agora</strong> na página <strong>Visão Geral de Licenças</strong> ou na guia <strong>Geral</strong> de um grupo de licenças específico. |
 
