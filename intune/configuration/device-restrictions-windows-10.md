@@ -15,12 +15,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure; seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: d697b2b0bc3fa5ffea4f8e8ff15cd7c62af3ad30
-ms.sourcegitcommit: a82d25d98fdf0ba766f8f074871d4f13725e23f9
-ms.translationtype: MTE75
+ms.openlocfilehash: 81da5ca8e7eaa76f9a6705cc9e3c816234c461db
+ms.sourcegitcommit: af384c46ec8d8def6aa32c3b89947748dc6fd28f
+ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/31/2019
-ms.locfileid: "75547960"
+ms.lasthandoff: 01/22/2020
+ms.locfileid: "76517551"
 ---
 # <a name="windows-10-and-newer-device-settings-to-allow-or-restrict-features-using-intune"></a>Configurações de dispositivo Windows 10 (e mais recente) para permitir ou restringir recursos usando o Intune
 
@@ -58,15 +58,15 @@ Essas configurações usam o [CSP da política ApplicationManagement](https://do
 - **Instalar dados de aplicativo no volume do sistema**: a opção **Bloquear** impede que os aplicativos armazenem dados no volume do sistema do dispositivo. **Não configurado** (padrão) permite que os aplicativos armazenem dados no volume de disco do sistema.
 - **Instalar aplicativos na unidade do sistema**: a opção **Bloquear** impede que os aplicativos sejam instalados na unidade do sistema do dispositivo. **Não configurado** (padrão) permite que os aplicativos sejam instalados no volume de disco do sistema.
 - **DVR de Jogos** (somente área de trabalho): a opção **Bloquear** desabilita a gravação e a difusão de Jogos do Windows. **Não configurado** (padrão) permite a gravação e a difusão de jogos.
-- **Aplicativos somente da loja**: essa configuração determina a experiência do usuário quando os usuários instalam aplicativos de locais diferentes do Microsoft Store. Suas opções:
+- **Apenas aplicativos da loja**: essa configuração determina a experiência do usuário quando os usuários instalam aplicativos de locais que não sejam a Microsoft Store. Suas opções:
 
-  - **Não configurado** (padrão): permite que os usuários finais instalem aplicativos de locais diferentes do Microsoft Store, incluindo aplicativos definidos em outras configurações de política.  
-  - **Em qualquer lugar**: desativa as recomendações do aplicativo e permite que os usuários instalem aplicativos de qualquer local.  
-  - **Somente armazenar**: força os usuários finais a instalar somente aplicativos do Microsoft Store.
-  - **Recomendações**: ao instalar um aplicativo da Web que está disponível no Microsoft Store, os usuários veem uma mensagem recomendando que eles o baixem da loja.  
-  - **Preferir armazenamento**: avisa os usuários quando eles instalam aplicativos de locais diferentes do Microsoft Store.
+  - **Não configurado** (padrão): permite que os usuários finais instalem aplicativos de locais que não sejam a Microsoft Store, incluindo aplicativos definidos em outras configurações de política.  
+  - **Qualquer lugar**: desativa as recomendações do aplicativo e permite que os usuários instalem aplicativos de qualquer local.  
+  - **Somente da loja**: força os usuários finais a instalar somente aplicativos da Microsoft Store.
+  - **Recomendações**: ao instalar um aplicativo da Web que esteja disponível na Microsoft Store, os usuários veem uma mensagem recomendando que eles o baixem na loja.  
+  - **Preferir a loja**: avisa os usuários quando eles instalam aplicativos de locais que não sejam a Microsoft Store.
 
-  [CSP do SmartScreen/EnableAppInstallControl](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-smartscreen#smartscreen-enableappinstallcontrol)
+  [CSP de SmartScreen/EnableAppInstallControl](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-smartscreen#smartscreen-enableappinstallcontrol)
 
 - **Controle de usuário sobre instalações**: quando definido como **Não configurado** (padrão), o Windows Installer impede que usuários alterem as opções de instalação normalmente reservadas para os administradores do sistema, como inserir o diretório para instalar os arquivos. **Bloquear** permite aos usuários alterar essas opções de instalação e alguns dos recursos de segurança do Windows Installer são ignorados.
 
@@ -139,24 +139,24 @@ Essas configurações usam o [CSP da política EnterpriseCloudPrint](https://doc
 ## <a name="control-panel-and-settings"></a>Painel de controle e configurações
 
 - **Aplicativo de configurações**: a opção **Bloquear** impede que os usuários finais acessem o aplicativo de configurações do Windows. **Não configurado** (padrão) permite aos usuários abrir o aplicativo de configurações no dispositivo.
-  - **Sistema**: a opção **Bloquear** impede o acesso à área de sistema do aplicativo de configurações. Quando definido como **não configurado** (padrão), o Intune não altera nem atualiza essa configuração.
+  - **Sistema**: a opção **Bloquear** impede o acesso à área de sistema do aplicativo de configurações. Quando essa opção é definida como **Não configurado** (padrão), o Intune não altera nem atualiza essa configuração.
     - **Modificação das configurações de energia e suspensão** (somente área de trabalho): a opção **Bloquear** impede que os usuários finais alterem as configurações de energia e suspensão no dispositivo. **Não configurado** (padrão) permite que os usuários alterem as configurações de energia e suspensão.
-  - **Dispositivos**: a opção **Bloquear** impede o acesso à área de dispositivos do aplicativo de configurações no dispositivo. Quando definido como **não configurado** (padrão), o Intune não altera nem atualiza essa configuração.
-  - **Rede e Internet**: a opção **Bloquear** impede o acesso à área de Internet e rede do aplicativo de configurações no dispositivo. Quando definido como **não configurado** (padrão), o Intune não altera nem atualiza essa configuração.
-  - **Personalização**: a opção **Bloquear** impede o acesso à área de Personalização do aplicativo de configurações no dispositivo. Quando definido como **não configurado** (padrão), o Intune não altera nem atualiza essa configuração.
-  - **Aplicativos**: a opção **Bloquear** impede o acesso à área de aplicativos do aplicativo de configurações no dispositivo. Quando definido como **não configurado** (padrão), o Intune não altera nem atualiza essa configuração.
-  - **Contas**: a opção **Bloquear** impede o acesso à área de contas do aplicativo de configurações no dispositivo. Quando definido como **não configurado** (padrão), o Intune não altera nem atualiza essa configuração.
-  - **Hora e Idioma**: a opção **Bloquear** impede o acesso à área de fuso horário e idioma do aplicativo de configurações no dispositivo. Quando definido como **não configurado** (padrão), o Intune não altera nem atualiza essa configuração.
-    - **Modificação do horário do sistema**: a opção **Bloquear** impede que usuários finais alterem as configurações de data e hora do dispositivo. Quando definido como **não configurado** (padrão), o Intune não altera nem atualiza essa configuração. Os usuários podem alterar essas configurações.
-    - **Modificação das configurações de região** (somente área de trabalho): a opção **Bloquear** impede que o usuário final altere as configurações de região no dispositivo. Quando definido como **não configurado** (padrão), o Intune não altera nem atualiza essa configuração. Os usuários podem alterar essas configurações.
-    - **Modificação das configurações de idioma (somente área de trabalho)** : a opção **Bloquear** impede que o usuário final altere as configurações de idioma no dispositivo. Quando definido como **não configurado** (padrão), o Intune não altera nem atualiza essa configuração. Os usuários podem alterar essas configurações.
+  - **Dispositivos**: a opção **Bloquear** impede o acesso à área de dispositivos do aplicativo de configurações no dispositivo. Quando essa opção é definida como **Não configurado** (padrão), o Intune não altera nem atualiza essa configuração.
+  - **Rede e Internet**: a opção **Bloquear** impede o acesso à área de Internet e rede do aplicativo de configurações no dispositivo. Quando essa opção é definida como **Não configurado** (padrão), o Intune não altera nem atualiza essa configuração.
+  - **Personalização**: a opção **Bloquear** impede o acesso à área de Personalização do aplicativo de configurações no dispositivo. Quando essa opção é definida como **Não configurado** (padrão), o Intune não altera nem atualiza essa configuração.
+  - **Aplicativos**: a opção **Bloquear** impede o acesso à área de aplicativos do aplicativo de configurações no dispositivo. Quando essa opção é definida como **Não configurado** (padrão), o Intune não altera nem atualiza essa configuração.
+  - **Contas**: a opção **Bloquear** impede o acesso à área de contas do aplicativo de configurações no dispositivo. Quando essa opção é definida como **Não configurado** (padrão), o Intune não altera nem atualiza essa configuração.
+  - **Hora e Idioma**: a opção **Bloquear** impede o acesso à área de fuso horário e idioma do aplicativo de configurações no dispositivo. Quando essa opção é definida como **Não configurado** (padrão), o Intune não altera nem atualiza essa configuração.
+    - **Modificação do horário do sistema**: a opção **Bloquear** impede que usuários finais alterem as configurações de data e hora do dispositivo. Quando essa opção é definida como **Não configurado** (padrão), o Intune não altera nem atualiza essa configuração. Os usuários podem alterar essas configurações.
+    - **Modificação das configurações de região** (somente área de trabalho): a opção **Bloquear** impede que o usuário final altere as configurações de região no dispositivo. Quando essa opção é definida como **Não configurado** (padrão), o Intune não altera nem atualiza essa configuração. Os usuários podem alterar essas configurações.
+    - **Modificação das configurações de idioma (somente área de trabalho)** : a opção **Bloquear** impede que o usuário final altere as configurações de idioma no dispositivo. Quando essa opção é definida como **Não configurado** (padrão), o Intune não altera nem atualiza essa configuração. Os usuários podem alterar essas configurações.
 
       [CSP de política de configurações](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-settings)
 
-  - **Jogos**: a opção **Bloquear** impede o acesso à área de jogos do aplicativo de configurações no dispositivo. Quando definido como **não configurado** (padrão), o Intune não altera nem atualiza essa configuração.
-  - **Facilidade de Acesso**: a opção **Bloquear** impede o acesso à área de facilidade de acesso do aplicativo de configurações no dispositivo. Quando definido como **não configurado** (padrão), o Intune não altera nem atualiza essa configuração.
-  - **Privacidade**: a opção **Bloquear** impede o acesso à área de privacidade do aplicativo de configurações no dispositivo. Quando definido como **não configurado** (padrão), o Intune não altera nem atualiza essa configuração.
-  - **Atualização e Segurança**: a opção **Bloquear** impede o acesso à área de atualização e segurança do aplicativo de configurações no dispositivo. Quando definido como **não configurado** (padrão), o Intune não altera nem atualiza essa configuração.
+  - **Jogos**: a opção **Bloquear** impede o acesso à área de jogos do aplicativo de configurações no dispositivo. Quando essa opção é definida como **Não configurado** (padrão), o Intune não altera nem atualiza essa configuração.
+  - **Facilidade de Acesso**: a opção **Bloquear** impede o acesso à área de facilidade de acesso do aplicativo de configurações no dispositivo. Quando essa opção é definida como **Não configurado** (padrão), o Intune não altera nem atualiza essa configuração.
+  - **Privacidade**: a opção **Bloquear** impede o acesso à área de privacidade do aplicativo de configurações no dispositivo. Quando essa opção é definida como **Não configurado** (padrão), o Intune não altera nem atualiza essa configuração.
+  - **Atualização e Segurança**: a opção **Bloquear** impede o acesso à área de atualização e segurança do aplicativo de configurações no dispositivo. Quando essa opção é definida como **Não configurado** (padrão), o Intune não altera nem atualiza essa configuração.
 
 ## <a name="display"></a>Monitor
 
@@ -178,31 +178,31 @@ Você também pode **importar** um arquivo .csv com a lista de aplicativos.
 
 Essas configurações usam o [CSP da política de experiência](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-experience), que também lista as edições compatíveis do Windows. 
 
-- **Captura de tela** (somente dispositivo móvel): a opção **Bloquear** impede que os usuários finais obtenham capturas de tela no dispositivo. Quando definido como **não configurado** (padrão), o Intune não altera nem atualiza essa configuração.
-- **Copiar e colar (somente dispositivo móvel)** : a opção **Bloquear** impede que os usuários finais usem o recurso de copiar e colar entre aplicativos no dispositivo. Quando definido como **não configurado** (padrão), o Intune não altera nem atualiza essa configuração.
-- **Cancelamento de registro manual**: a opção **Bloquear** impede que os usuários finais excluam a conta da empresa usando o painel de controle do local de trabalho no dispositivo. Quando definido como **não configurado** (padrão), o Intune não altera nem atualiza essa configuração.
+- **Captura de tela** (somente dispositivo móvel): a opção **Bloquear** impede que os usuários finais obtenham capturas de tela no dispositivo. Quando essa opção é definida como **Não configurado** (padrão), o Intune não altera nem atualiza essa configuração.
+- **Copiar e colar (somente dispositivo móvel)** : a opção **Bloquear** impede que os usuários finais usem o recurso de copiar e colar entre aplicativos no dispositivo. Quando essa opção é definida como **Não configurado** (padrão), o Intune não altera nem atualiza essa configuração.
+- **Cancelamento de registro manual**: a opção **Bloquear** impede que os usuários finais excluam a conta da empresa usando o painel de controle do local de trabalho no dispositivo. Quando essa opção é definida como **Não configurado** (padrão), o Intune não altera nem atualiza essa configuração.
 
   Essa configuração de política não será aplicada se o computador estiver ingressado no Microsoft Azure AD e o registro automático estiver habilitado.
 
-- **Instalação manual de certificado raiz** (somente dispositivo móvel): a opção **Bloquear** impede que os usuários finais instalem certificados raiz e certificados CAP intermediários manualmente. Quando definido como **não configurado** (padrão), o Intune não altera nem atualiza essa configuração.
-- **Câmera**: a opção **Bloquear** impede que os usuários finais usem a câmera no dispositivo. Quando definido como **não configurado** (padrão), o Intune não altera nem atualiza essa configuração.
+- **Instalação manual de certificado raiz** (somente dispositivo móvel): a opção **Bloquear** impede que os usuários finais instalem certificados raiz e certificados CAP intermediários manualmente. Quando essa opção é definida como **Não configurado** (padrão), o Intune não altera nem atualiza essa configuração.
+- **Câmera**: a opção **Bloquear** impede que os usuários finais usem a câmera no dispositivo. Quando essa opção é definida como **Não configurado** (padrão), o Intune não altera nem atualiza essa configuração.
 
-  [CSP da câmera](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-camera)
+  [CSP de Câmera](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-camera)
 
-- **Sincronização de arquivos do OneDrive**: a opção **Bloquear** impede que usuários sincronizem arquivos do dispositivo com o OneDrive. Quando definido como **não configurado** (padrão), o Intune não altera nem atualiza essa configuração.
-- **Armazenamento removível**: a opção **Bloquear** impede que os usuários finais usem dispositivos de armazenamento externo, assim como cartões SD, com o dispositivo. Quando definido como **não configurado** (padrão), o Intune não altera nem atualiza essa configuração.
-- **Localização geográfica**: a opção **Bloquear** impede que os usuários finais ativem serviços de localização no dispositivo. Quando definido como **não configurado** (padrão), o Intune não altera nem atualiza essa configuração.
-- **Compartilhamento da Internet**: a opção **Bloquear** impede o compartilhamento da conexão com a Internet no dispositivo. Quando definido como **não configurado** (padrão), o Intune não altera nem atualiza essa configuração.
-- **Redefinição do telefone**: a opção **Bloquear** impede que os usuários finais apaguem a memória do dispositivo ou realizem nele uma redefinição de fábrica. Quando definido como **não configurado** (padrão), o Intune não altera nem atualiza essa configuração.
-- **Conexão USB**: a opção **Bloquear** impede o acesso do dispositivo a dispositivos de armazenamento externo por meio de uma conexão USB. Quando definido como **não configurado** (padrão), o Intune não altera nem atualiza essa configuração. O carregamento via USB não é afetado por essa configuração.
-- **Modo AntiTheft** (somente dispositivo móvel): a opção **Bloquear** impede que os usuários finais selecionem a preferência do modo AntiTheft no dispositivo. Quando definido como **não configurado** (padrão), o Intune não altera nem atualiza essa configuração.
+- **Sincronização de arquivos do OneDrive**: a opção **Bloquear** impede que usuários sincronizem arquivos do dispositivo com o OneDrive. Quando essa opção é definida como **Não configurado** (padrão), o Intune não altera nem atualiza essa configuração.
+- **Armazenamento removível**: a opção **Bloquear** impede que os usuários finais usem dispositivos de armazenamento externo, assim como cartões SD, com o dispositivo. Quando essa opção é definida como **Não configurado** (padrão), o Intune não altera nem atualiza essa configuração.
+- **Localização geográfica**: a opção **Bloquear** impede que os usuários finais ativem serviços de localização no dispositivo. Quando essa opção é definida como **Não configurado** (padrão), o Intune não altera nem atualiza essa configuração.
+- **Compartilhamento da Internet**: a opção **Bloquear** impede o compartilhamento da conexão com a Internet no dispositivo. Quando essa opção é definida como **Não configurado** (padrão), o Intune não altera nem atualiza essa configuração.
+- **Redefinição do telefone**: a opção **Bloquear** impede que os usuários finais apaguem a memória do dispositivo ou realizem nele uma redefinição de fábrica. Quando essa opção é definida como **Não configurado** (padrão), o Intune não altera nem atualiza essa configuração.
+- **Conexão USB**: a opção **Bloquear** impede o acesso do dispositivo a dispositivos de armazenamento externo por meio de uma conexão USB. Quando essa opção é definida como **Não configurado** (padrão), o Intune não altera nem atualiza essa configuração. O carregamento via USB não é afetado por essa configuração.
+- **Modo AntiTheft** (somente dispositivo móvel): a opção **Bloquear** impede que os usuários finais selecionem a preferência do modo AntiTheft no dispositivo. Quando essa opção é definida como **Não configurado** (padrão), o Intune não altera nem atualiza essa configuração.
 - **Cortana**: a opção **Bloquear** desabilita a assistente de voz Cortana no dispositivo. Quando a Cortana estiver desativada, os usuários ainda poderão pesquisar para localizar itens no dispositivo. **Não configurado** (padrão) permite o uso da Cortana.
 - **Gravação de voz** (somente dispositivo móvel): a opção **Bloquear** impede que os usuários finais usem o gravador de voz do dispositivo. **Não configurado** (padrão) permite a gravação de voz para aplicativos.
-- **Modificação do nome do dispositivo** (apenas dispositivo móvel): a opção **Bloquear** impede que os usuários finais alterem o nome do dispositivo. Quando definido como **não configurado** (padrão), o Intune não altera nem atualiza essa configuração.
-- **Adicionar pacotes de provisionamento**: a opção **Bloquear** impede que o agente de configuração de tempo de execução instale os pacotes de provisionamento no dispositivo. Quando definido como **não configurado** (padrão), o Intune não altera nem atualiza essa configuração.
-- **Remover pacotes de provisionamento**: a opção **Bloquear** impede que o agente de configuração de tempo de execução remova os pacotes de provisionamento do dispositivo. Quando definido como **não configurado** (padrão), o Intune não altera nem atualiza essa configuração.
-- **Descoberta de dispositivo**: a opção **Bloquear** impede a descoberta de um dispositivo por outros dispositivos. Quando definido como **não configurado** (padrão), o Intune não altera nem atualiza essa configuração.
-- **Alternador de Tarefas** (somente dispositivo móvel): a opção **Bloquear** impede a alternância de tarefas no dispositivo. Quando definido como **não configurado** (padrão), o Intune não altera nem atualiza essa configuração.
+- **Modificação do nome do dispositivo** (apenas dispositivo móvel): a opção **Bloquear** impede que os usuários finais alterem o nome do dispositivo. Quando essa opção é definida como **Não configurado** (padrão), o Intune não altera nem atualiza essa configuração.
+- **Adicionar pacotes de provisionamento**: a opção **Bloquear** impede que o agente de configuração de tempo de execução instale os pacotes de provisionamento no dispositivo. Quando essa opção é definida como **Não configurado** (padrão), o Intune não altera nem atualiza essa configuração.
+- **Remover pacotes de provisionamento**: a opção **Bloquear** impede que o agente de configuração de tempo de execução remova os pacotes de provisionamento do dispositivo. Quando essa opção é definida como **Não configurado** (padrão), o Intune não altera nem atualiza essa configuração.
+- **Descoberta de dispositivo**: a opção **Bloquear** impede a descoberta de um dispositivo por outros dispositivos. Quando essa opção é definida como **Não configurado** (padrão), o Intune não altera nem atualiza essa configuração.
+- **Alternador de Tarefas** (somente dispositivo móvel): a opção **Bloquear** impede a alternância de tarefas no dispositivo. Quando essa opção é definida como **Não configurado** (padrão), o Intune não altera nem atualiza essa configuração.
 - **Caixa de diálogo de erro do cartão SIM** (somente dispositivo móvel): a opção **Bloquear** impedirá a exibição de mensagens de erro no dispositivo se nenhum cartão SIM for detectado. **Não configurado** (padrão) mostra as mensagens de erro.
 - **Workspace do Ink**: escolha se e como o usuário acessa o Espaço de Trabalho do Ink. Suas opções:
   - **Não configurado** (padrão): Ativa o Espaço de Trabalho do Ink e o usuário tem permissão para usá-lo na tela de bloqueio.
@@ -216,7 +216,7 @@ Essas configurações usam o [CSP da política de experiência](https://docs.mic
 
   A configuração entra em vigor na próxima vez que o dispositivo é apagado ou redefinido. Como qualquer outra configuração do Intune, o dispositivo deve ser registrado e gerenciado pelo Intune para receber as definições de configuração. Porém, depois de estar registrado e recebendo políticas, a redefinição do dispositivo impõe a configuração durante a próxima Instalação do Windows.
 
-  [CSP TenantLockdown](https://docs.microsoft.com/windows/client-management/mdm/tenantlockdown-csp)
+  [CSP de TenantLockdown](https://docs.microsoft.com/windows/client-management/mdm/tenantlockdown-csp)
 
 - **Acesso Direto à Memória**: **Bloquear** impede o DMA (acesso direto à memória) para todas as portas downstream PCI com hot-plug até um usuário entre no Windows. **Habilitado** (padrão) permite o acesso a DMA, mesmo quando um usuário não esteja conectado.
 
@@ -231,6 +231,9 @@ Essas configurações usam o [CSP da política de experiência](https://docs.mic
   [CSP de AboveLock/AllowActionCenterNotifications](https://msdn.microsoft.com/ie/dn904962(v=vs.94)#AboveLock_AllowActionCenterNotifications)
 
 - **URL da imagem de tela bloqueada (somente área de trabalho)** : insira a URL para uma imagem no formato JPG, JPEG ou PNG que será usada como o papel de parede da tela de bloqueio do Windows. Por exemplo, insira `https://contoso.com/image.png`. Essa configuração bloqueia a imagem e não pode ser alterada posteriormente.
+
+  [CSP de Personalization/LockScreenImageUrl](https://docs.microsoft.com/en-us/windows/client-management/mdm/personalization-csp)
+
 - **Tempo limite de tela configurável do usuário (somente dispositivos móveis)** : a opção **Permitir** possibilita que os usuários configurem o tempo limite da tela. **Não configurado** (padrão) não dá aos usuários essa opção.
 
   [CSP de DeviceLock/AllowScreenTimeoutWhileLockedUserConfig](https://msdn.microsoft.com/ie/dn904962(v=vs.94)#DeviceLock_AllowScreenTimeoutWhileLockedUserConfig)
@@ -379,7 +382,7 @@ Quando a opção "bloquear e habilitar a substituição pelo usuário" é seleci
 - **Permitir JavaScript**: **Sim** (padrão) permite que scripts, como JavaScript, sejam executados no navegador Microsoft Edge. **Não** impede a execução de scripts Java no navegador.
 - **O usuário pode instalar extensões**: **Sim** (padrão) permite que os usuários finais instalem extensões do Microsoft Edge no dispositivo. **Não** impede a instalação.
 - **Permitir sideload das extensões do desenvolvedor**: a opção **Sim** (padrão) usa o padrão do sistema operacional, que pode permitir o sideload. O sideload instala e executa extensões não verificadas. **Não** impede que o Microsoft Edge faça sideload usando o recurso **Carregar extensões**. Ele não impede o sideload de extensões por outros meios, tais como o PowerShell.
-- **Extensões obrigatórias**: Escolha quais extensões não podem ser desligadas pelos usuários finais no Microsoft Edge. Insira os nomes das famílias de pacotes e selecione **Adicionar**. [Encontre um nome de família de pacotes (PFN) para VPN por aplicativo](https://docs.microsoft.com/configmgr/protect/deploy-use/find-a-pfn-for-per-app-vpn) fornece algumas diretrizes.
+- **Extensões obrigatórias**: Escolha quais extensões não podem ser desligadas pelos usuários finais no Microsoft Edge. Insira os nomes das famílias de pacotes e selecione **Adicionar**. O artigo [Encontrar um PFN (Nome da Família de Pacotes) para a VPN por aplicativo](https://docs.microsoft.com/configmgr/protect/deploy-use/find-a-pfn-for-per-app-vpn) fornece algumas diretrizes.
 
   Você também pode **Importar** um arquivo CSV que inclui os nomes das famílias de pacotes. Ou então, **exporte** os nomes de família de pacotes que você inserir.
 
@@ -400,7 +403,7 @@ Essas configurações usam o [CSP da política de NetworkProxy](https://docs.mic
 
 Essas configurações usam o [CSP da política de DeviceLock](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-devicelock), que também lista as edições compatíveis do Windows.
 
-- **Senha**: a opção **Exigir** torna necessário que o usuário final insira uma senha para acessar o dispositivo. **Não configurado** (padrão) permite o acesso ao dispositivo sem uma senha. Aplica-se somente a contas locais. As senhas de conta de domínio permanecem configuradas pelo Active Directory (AD) e pelo Azure AD.
+- **Senha**: a opção **Exigir** torna necessário que o usuário final insira uma senha para acessar o dispositivo. **Não configurado** (padrão) permite o acesso ao dispositivo sem uma senha. Aplica-se somente a contas locais. As senhas de conta de domínio permanecem configuradas pelo AD (Active Directory) e pelo Azure AD.
 
   - **Tipo de senha necessária**: escolha o tipo de senha. Suas opções:
     - **Não configurado**: a senha pode incluir letras e números.
@@ -411,7 +414,7 @@ Essas configurações usam o [CSP da política de DeviceLock](https://docs.micro
     > [!IMPORTANT]
     > Quando o requisito de senha é alterado em uma área de trabalho do Windows, os usuários são afetados na próxima vez que fizerem logon, como quando o dispositivo passa de ocioso para ativo. Os usuários com senhas que atendam ao requisito ainda serão solicitados a alterar suas senhas.
     
-  - **Número de falhas de início de sessão antes de limpar o dispositivo**: insira o número de falhas de autenticação permitidas antes que o dispositivo possa ser apagado, até 11. O número válido que você inserir dependerá da edição. O [CSP DeviceLock/MaxDevicePasswordFailedAttempts](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-devicelock#devicelock-maxdevicepasswordfailedattempts) lista os valores com suporte. `0` (zero) pode desabilitar a funcionalidade de apagamento do dispositivo.
+  - **Número de falhas de início de sessão antes de limpar o dispositivo**: insira o número de falhas de autenticação permitidas antes que o dispositivo possa ser apagado, até 11. O número válido inserido dependerá da edição. O [CSP de DeviceLock/MaxDevicePasswordFailedAttempts](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-devicelock#devicelock-maxdevicepasswordfailedattempts) lista os valores compatíveis. `0` (zero) pode desabilitar a funcionalidade de apagamento do dispositivo.
 
     Essa configuração também tem um impacto diferente, dependendo da edição. Para obter detalhes específicos dessa configuração, confira o [CSP de DeviceLock/MaxDevicePasswordFailedAttempts](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-devicelock#devicelock-maxdevicepasswordfailedattempts).
 
@@ -420,15 +423,15 @@ Essas configurações usam o [CSP da política de DeviceLock](https://docs.micro
   - **Evitar a reutilização de senhas anteriores**: insira o número de senhas usadas anteriormente e que não podem ser usadas, de 1 a 24. Por exemplo, insira `5` para que os usuários não possam definir uma nova senha como a senha atual nem como nenhuma das quatro senhas anteriores.
   - **Exigir senha quando o dispositivo retorna do estado ocioso** (Mobile e Holographic): escolha a opção **Exigir** para que os usuários precisem inserir uma senha para desbloquear o dispositivo após ele ficar ocioso. **Não configurado** (padrão) não requer um PIN ou senha quando o dispositivo retoma do estado ocioso.
   - **Senhas simples**: defina como **Bloquear** para que os usuários não possam criar uma senha simples como `1234` ou `1111`. Definido como **Não configurado** para permitir que os usuários criem senhas como `1234` ou `1111`. Essa configuração também permite ou bloqueia o uso de senhas de imagem do Windows.
-- **Criptografia automática durante AADJ**: a opção **Bloquear** impede a criptografia automática de dispositivo de BitLocker quando o dispositivo está preparado para o primeiro uso quando o dispositivo está ingressado no Azure AD. Quando definido como **não configurado** (padrão), o Intune não altera nem atualiza essa configuração. Mais sobre [Criptografia do dispositivo BitLocker](https://docs.microsoft.com/windows/security/information-protection/bitlocker/bitlocker-device-encryption-overview-windows-10#bitlocker-device-encryption).
+- **Criptografia automática durante AADJ**: a opção **Bloquear** impede a criptografia automática de dispositivo de BitLocker quando o dispositivo está preparado para o primeiro uso quando o dispositivo está ingressado no Azure AD. Quando essa opção é definida como **Não configurado** (padrão), o Intune não altera nem atualiza essa configuração. Mais sobre [Criptografia do dispositivo BitLocker](https://docs.microsoft.com/windows/security/information-protection/bitlocker/bitlocker-device-encryption-overview-windows-10#bitlocker-device-encryption).
 
   [Security/PreventAutomaticDeviceEncryptionForAzureADJoinedDevices CSP](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-security#security-preventautomaticdeviceencryptionforazureadjoineddevices)
 
-- **Política do padrão FIPS**: a opção **Permitir** usa a política FIPS (Padrão Federal de Processamento de Informações), que é um padrão do governo dos EUA para criptografia, hash e assinatura. Quando definido como **não configurado** (padrão), o Intune não altera nem atualiza essa configuração. O padrão do sistema operacional não pode usar o FIPS.
+- **Política do padrão FIPS**: a opção **Permitir** usa a política FIPS (Padrão Federal de Processamento de Informações), que é um padrão do governo dos EUA para criptografia, hash e assinatura. Quando essa opção é definida como **Não configurado** (padrão), o Intune não altera nem atualiza essa configuração. O padrão do sistema operacional poderá não usar o FIPS.
 
   [Cryptography/AllowFipsAlgorithmPolicy CSP](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-cryptography#cryptography-allowfipsalgorithmpolicy)
 
-- **Autenticação de dispositivo do Windows Hello**: a opção **Permitir** possibilita aos usuários usar um dispositivo complementar Windows Hello, como um telefone, pulseira fitness ou dispositivo de IoT para entrar em um computador com Windows 10. Quando definido como **não configurado** (padrão), o Intune não altera nem atualiza essa configuração. O padrão do sistema operacional pode impedir que dispositivos do Windows Hello Companion se autentiquem com o Windows.
+- **Autenticação de dispositivo do Windows Hello**: a opção **Permitir** possibilita aos usuários usar um dispositivo complementar Windows Hello, como um telefone, pulseira fitness ou dispositivo de IoT para entrar em um computador com Windows 10. Quando essa opção é definida como **Não configurado** (padrão), o Intune não altera nem atualiza essa configuração. O padrão do sistema operacional poderá impedir que dispositivos complementares do Windows Hello se autentiquem no Windows.
 
   [Authentication/AllowSecondaryAuthenticationDevice CSP](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-authentication#authentication-allowsecondaryauthenticationdevice)
 
@@ -491,7 +494,7 @@ Essas configurações usam o [CSP da política de privacidade](https://docs.micr
 - **Personalização de entrada**: a opção **Bloquear** impede o uso de voz para ditado e para comunicação com a Cortana e outros aplicativos que usam o reconhecimento de fala baseado em nuvem da Microsoft. Ele é desabilitado e os usuários não podem habilitar as configurações de uso de reconhecimento de fala online. **Não configurado** (padrão) permite aos usuários escolher. Se você permitir esses serviços, a Microsoft poderá coletar dados de voz para melhorar o serviço.
 - **Aceitação automática das solicitações de consentimento do usuário de privacidade e emparelhamento**: escolha a opção **Permitir** para que o Windows aceite automaticamente mensagens de consentimento de privacidade e emparelhamento ao executar aplicativos. **Não configurado** (padrão) impede a aceitação automática da janela de consentimento do usuário para privacidade e emparelhamento ao abrir aplicativos.
 - **Publicar atividades do usuário**: a opção **Bloquear** impede o compartilhamento de experiências e a descoberta de recursos usados recentemente no feed de atividades. **Não configurado** (padrão) habilita esse recurso para aplicativos poderem publicar as atividades do usuário final.
-- **Apenas atividades locais**: A opção **Bloquear** impede o compartilhamento de experiências e a descoberta de recursos usados recentemente no alternador de tarefas, com base somente em atividades locais. Quando definido como **não configurado** (padrão), o Intune não altera nem atualiza essa configuração.
+- **Apenas atividades locais**: A opção **Bloquear** impede o compartilhamento de experiências e a descoberta de recursos usados recentemente no alternador de tarefas, com base somente em atividades locais. Quando essa opção é definida como **Não configurado** (padrão), o Intune não altera nem atualiza essa configuração.
 
 Você pode configurar as informações que todos os aplicativos no dispositivo podem acessar. Defina também as exceções de acordo com o aplicativo que usa **Exceções de privacidade por aplicativo**.
 
@@ -536,7 +539,7 @@ Essas configurações usam o [CSP da política WirelessDisplay](https://docs.mic
   [CSP System/AllowTelemetry](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-system#system-allowtelemetry)
 
 - **Enviar dados de navegação do Microsoft Edge para a Análise do Microsoft 365**: Para usar esse recurso, defina as configurações **Compartilhar dados de uso** como **Avançado** ou **Completo**. Esse recurso controla quais dados de dispositivos corporativos com uma ID comercial configurada o Microsoft Edge envia para a Análise do Microsoft 365. Suas opções:
-  - **Não configurado**: o Intune não altera nem atualiza essa configuração. O padrão do sistema operacional pode não enviar nenhum dado de histórico de navegação.
+  - **Não configurado**: o Intune não altera nem atualiza essa configuração. O padrão do sistema operacional poderá não enviar nenhum dado do histórico de navegação.
   - **Enviar somente dados da intranet**: Permite que o administrador envie o histórico de dados da intranet
   - **Enviar somente dados da Internet**: Permite que o administrador envie o histórico de dados da Internet
   - **Enviar dados da intranet e da Internet**: Permite que o administrador envie o histórico de dados da intranet e da Internet
@@ -591,11 +594,11 @@ Essas configurações usam o [CSP da política de início](https://docs.microsof
 - **Bloco do Usuário**: a opção **Bloquear** oculta o bloco de usuário no menu Iniciar. **Não configurado** (padrão) mostra o bloco do usuário e também define as configurações a seguir:
   - **Bloqueio**: a opção **Bloquear** oculta a exibição da opção **Bloqueio** no bloco do usuário no menu Iniciar. **Não configurado** (padrão) mostra a opção **Bloqueio**.
   - **Sair**: a opção **Bloquear** oculta a exibição da opção **Sair** no bloco do usuário no menu Iniciar. **Não configurado** (padrão) mostra a opção **Sair**.
-- **Desligar**: a opção **Bloquear** oculta as opções **Atualizar e desligar** e **Desligar** do botão de energia no menu Iniciar. Quando definido como **não configurado** (padrão), o Intune não altera nem atualiza essa configuração.
-- **Suspender**: a opção **Bloquear** oculta a opção **Suspender** no botão de energia no menu Iniciar. Quando definido como **não configurado** (padrão), o Intune não altera nem atualiza essa configuração.
-- **Hibernar**: a opção **Bloquear** oculta a opção **Hibernar** no botão de energia no menu Iniciar. Quando definido como **não configurado** (padrão), o Intune não altera nem atualiza essa configuração.
-- **Trocar Conta**: a opção **Bloquear** oculta a opção **Alternar conta** no bloco do usuário no menu Iniciar. Quando definido como **não configurado** (padrão), o Intune não altera nem atualiza essa configuração.
-- **Opções de Reinicialização**:  a opção **Bloquear** oculta as opções **Atualizar e desligar** e **Reiniciar** do botão de energia no menu Iniciar. Quando definido como **não configurado** (padrão), o Intune não altera nem atualiza essa configuração.
+- **Desligar**: a opção **Bloquear** oculta as opções **Atualizar e desligar** e **Desligar** do botão de energia no menu Iniciar. Quando essa opção é definida como **Não configurado** (padrão), o Intune não altera nem atualiza essa configuração.
+- **Suspender**: a opção **Bloquear** oculta a opção **Suspender** no botão de energia no menu Iniciar. Quando essa opção é definida como **Não configurado** (padrão), o Intune não altera nem atualiza essa configuração.
+- **Hibernar**: a opção **Bloquear** oculta a opção **Hibernar** no botão de energia no menu Iniciar. Quando essa opção é definida como **Não configurado** (padrão), o Intune não altera nem atualiza essa configuração.
+- **Trocar Conta**: a opção **Bloquear** oculta a opção **Alternar conta** no bloco do usuário no menu Iniciar. Quando essa opção é definida como **Não configurado** (padrão), o Intune não altera nem atualiza essa configuração.
+- **Opções de Reinicialização**:  a opção **Bloquear** oculta as opções **Atualizar e desligar** e **Reiniciar** do botão de energia no menu Iniciar. Quando essa opção é definida como **Não configurado** (padrão), o Intune não altera nem atualiza essa configuração.
 - **Documentos em Iniciar**: Oculte ou mostre a pasta Documentos no menu Iniciar do Windows. Suas opções:
   - **Não configurado** (padrão): nenhuma configuração é forçada. Os usuários optam por mostrar ou ocultar o atalho.
   - **Ocultar**: o atalho é oculto e desabilita a configuração no aplicativo Configurações.
@@ -637,7 +640,7 @@ Essas configurações usam o [CSP da política de início](https://docs.microsof
   - **Ocultar**: o atalho é oculto e desabilita a configuração no aplicativo Configurações.
   - **Mostrar**: o atalho é mostrado e desabilita a configuração no aplicativo de Configurações.
 
-## <a name="microsoft-defender-smart-screen"></a>Tela inteligente do Microsoft defender
+## <a name="microsoft-defender-smart-screen"></a>Microsoft Defender SmartScreen
 
 - **SmartScreen para Microsoft Edge**: a opção **Exigir** desativa o Microsoft Defender SmartScreen e impede os usuários de ativá-lo. A opção **Não configurado** (padrão) ativa o SmartScreen. Ajuda a proteger os usuários contra possíveis ameaças e a impedir que os usuários o desativem.
 
@@ -659,154 +662,154 @@ Essas configurações usam o [CSP da política de experiência](https://docs.mic
 
 - **Destaque do Windows**: a opção **Bloquear** desativa o Destaque do Windows na tela de bloqueio, Dicas do Windows, recursos do consumidor da Microsoft e outros recursos relacionados. Se sua meta for minimizar o tráfego de rede de dispositivos, defina isso como **Bloquear**. **Não configurado** (padrão) permite o uso de recursos de destaque do Windows e seu controle pelos usuários finais. Quando habilitado, você também pode permitir ou bloquear as seguintes configurações:
 
-  - **Destaque do Windows na tela de bloqueio**: a opção **Bloquear** impede a exibição de informações do Destaque do Windows na tela de bloqueio do dispositivo. Quando definido como **não configurado** (padrão), o Intune não altera nem atualiza essa configuração.
+  - **Destaque do Windows na tela de bloqueio**: a opção **Bloquear** impede a exibição de informações do Destaque do Windows na tela de bloqueio do dispositivo. Quando essa opção é definida como **Não configurado** (padrão), o Intune não altera nem atualiza essa configuração.
   - **Sugestões de terceiros no Destaque do Windows**: a opção **Bloquear** impede a sugestão do Destaque do Windows de conteúdo não publicado pela Microsoft. **Não configurado** (padrão) permite sugestões de aplicativos e conteúdo de editores de software parceiros nos recursos de Destaque do Windows como o destaque da tela de bloqueio, aplicativos sugeridos no menu Iniciar e dicas do Windows.
-  - **Recursos de Consumidor**: a opção **Bloquear** desativa experiências que normalmente são apenas para consumidores, como Sugestões de início, Notificações de associação, instalação de aplicativos após a configuração inicial pelo usuário e redirecionamento de blocos. Quando definido como **não configurado** (padrão), o Intune não altera nem atualiza essa configuração.
+  - **Recursos de Consumidor**: a opção **Bloquear** desativa experiências que normalmente são apenas para consumidores, como Sugestões de início, Notificações de associação, instalação de aplicativos após a configuração inicial pelo usuário e redirecionamento de blocos. Quando essa opção é definida como **Não configurado** (padrão), o Intune não altera nem atualiza essa configuração.
   - **Dicas do Windows**: a opção **Bloquear** desabilita pop-ups de Dicas do Windows. **Não configurado** (padrão) permite a exibição de Dicas do Windows.
   - **Destaque do Windows na central de ações**: a opção **Bloquear** impede que as notificações do Destaque do Windows Apareçam na Central de Ações. **Não configurado** (padrão) pode mostrar notificações na Central de Ações que sugiram aplicativos ou recursos para ajudar os usuários a serem mais produtivos no Windows.
   - **Personalização do Destaque do Windows**: a opção **Bloquear** impede que o Windows use dados de diagnóstico para fornecer experiências personalizadas para o usuário. **Não configurado** (padrão) permite que a Microsoft use dados de diagnóstico para fornecer recomendações personalizadas, dicas e ofertas para adaptar o Windows às necessidades do usuário.
   - **Experiência de Boas-vindas do Windows**: a opção **Bloquear** desativa o recurso de experiência de boas-vindas do Windows do Destaque do Windows. A experiência de boas-vindas do Windows não será exibida quando houver atualizações e alterações para o Windows e seus aplicativos. **Não configurado** (padrão) permite a experiência de Boas-vindas do Windows, que mostra ao usuário informações sobre recursos novos ou atualizados.
 
-## <a name="microsoft-defender-antivirus"></a>Microsoft defender antivírus
+## <a name="microsoft-defender-antivirus"></a>Microsoft Defender Antivírus
 
 Essas configurações usam o [CSP da política do Defender](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-defender), que também lista as edições compatíveis do Windows.
 
 - **Monitoramento em tempo real**: a opção **Habilitar** ativa a verificação em tempo real de malware, spyware e outros softwares indesejados. Os usuários finais não podem desativá-lo. 
 
-  Quando definido como **não configurado** (padrão), o Intune não altera nem atualiza essa configuração. Se você habilitar a configuração e, em seguida, alterá-la novamente para **não configurado**, o Intune deixará a configuração no estado configurado anteriormente. Por padrão, o sistema operacional ativa esse recurso e permite que os usuários o alterem.
+  Quando essa opção é definida como **Não configurado** (padrão), o Intune não altera nem atualiza essa configuração. Se você habilitar a configuração e, em seguida, alterá-la novamente para **Não configurado**, o Intune manterá a configuração no estado configurado anteriormente. Por padrão, o sistema operacional ativa esse recurso e permite que os usuários o alterem.
 
   O Intune não desativa esse recurso. Para desabilitá-lo, use um URI personalizado.
 
-  [CSP do defender/AllowRealtimeMonitoring](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-defender#defender-allowrealtimemonitoring)
+  [CSP de Defender/AllowRealtimeMonitoring](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-defender#defender-allowrealtimemonitoring)
 
 - **Monitoramento de comportamento**: a opção **Habilitar** ativa o monitoramento de comportamento e a verificação de certos padrões de atividade suspeita nos dispositivos. Os usuários não podem desativar o monitoramento de comportamento. 
 
-  Quando definido como **não configurado** (padrão), o Intune não altera nem atualiza essa configuração. Se você habilitar a configuração e, em seguida, alterá-la novamente para **não configurado**, o Intune deixará a configuração no estado configurado anteriormente. Por padrão, o sistema operacional ativa o monitoramento de comportamento e permite que os usuários o alterem.
+  Quando essa opção é definida como **Não configurado** (padrão), o Intune não altera nem atualiza essa configuração. Se você habilitar a configuração e, em seguida, alterá-la novamente para **Não configurado**, o Intune manterá a configuração no estado configurado anteriormente. Por padrão, o sistema operacional ativa o monitoramento do comportamento e permite que os usuários o alterem.
 
   O Intune não desativa esse recurso. Para desabilitá-lo, use um URI personalizado.
 
-  [CSP do defender/AllowBehaviorMonitoring](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-defender#defender-allowbehaviormonitoring)
+  [CSP de Defender/AllowBehaviorMonitoring](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-defender#defender-allowbehaviormonitoring)
 
 - **NIS (Sistema de Inspeção de Rede)** : O NIS ajuda a proteger dispositivos contra explorações baseadas em rede. Ele utiliza assinaturas de vulnerabilidades conhecidas do Microsoft Endpoint Protection Center para ajudar a detectar e bloquear o tráfego mal-intencionado.
 
-  **Habilitar** ativa a proteção de rede e o bloqueio de rede. Os usuários finais não podem desativá-lo. Quando habilitado, os usuários são impedidos de se conectar a vulnerabilidades conhecidas.
+  A opção **Habilitar** ativa a proteção e o bloqueio de rede. Os usuários finais não podem desativá-lo. Quando essa opção é habilitada, os usuários são impedidos de se conectar a vulnerabilidades conhecidas.
 
-  Quando definido como **não configurado** (padrão), o Intune não altera nem atualiza essa configuração. Se você habilitar a configuração e, em seguida, alterá-la novamente para **não configurado**, o Intune deixará a configuração no estado configurado anteriormente. Por padrão, o sistema operacional ativa o NIS e permite que os usuários o alterem.
-
-  O Intune não desativa esse recurso. Para desabilitá-lo, use um URI personalizado.
-
-  [CSP do defender/EnableNetworkProtection](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-defender#defender-enablenetworkprotection)
-
-- **Verificar todos os downloads**: **habilitar** ativa essa configuração e o defender examina todos os arquivos baixados da Internet. Os usuários não podem desativar essa configuração. 
-
-  Quando definido como **não configurado** (padrão), o Intune não altera nem atualiza essa configuração. Se você habilitar a configuração e, em seguida, alterá-la novamente para **não configurado**, o Intune deixará a configuração no estado configurado anteriormente. Por padrão, o sistema operacional ativa essa configuração e permite que os usuários a alterem.
+  Quando essa opção é definida como **Não configurado** (padrão), o Intune não altera nem atualiza essa configuração. Se você habilitar a configuração e, em seguida, alterá-la novamente para **Não configurado**, o Intune manterá a configuração no estado configurado anteriormente. Por padrão, o sistema operacional ativa o NIS e permite que os usuários o alterem.
 
   O Intune não desativa esse recurso. Para desabilitá-lo, use um URI personalizado.
 
-  [CSP do defender/AllowIOAVProtection](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-defender#defender-allowioavprotection)
+  [CSP de Defender/EnableNetworkProtection](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-defender#defender-enablenetworkprotection)
+
+- **Examinar todos os downloads**: a opção **Habilitar** ativa essa configuração e o Defender examina todos os arquivos baixados da Internet. Os usuários não podem desativar essa configuração. 
+
+  Quando essa opção é definida como **Não configurado** (padrão), o Intune não altera nem atualiza essa configuração. Se você habilitar a configuração e, em seguida, alterá-la novamente para **Não configurado**, o Intune manterá a configuração no estado configurado anteriormente. Por padrão, o sistema operacional ativa essa configuração e permite que os usuários a alterem.
+
+  O Intune não desativa esse recurso. Para desabilitá-lo, use um URI personalizado.
+
+  [CSP de Defender/AllowIOAVProtection](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-defender#defender-allowioavprotection)
 
 - **Examinar scripts carregados em navegadores da Web da Microsoft**: a opção **Habilitar** permite que o Defender verifique os scripts que são usados no Internet Explorer. Os usuários não podem desativar essa configuração. 
 
-  Quando definido como **não configurado** (padrão), o Intune não altera nem atualiza essa configuração. Se você habilitar a configuração e, em seguida, alterá-la novamente para **não configurado**, o Intune deixará a configuração no estado configurado anteriormente. Por padrão, o sistema operacional ativa essa configuração e permite que os usuários a alterem.
+  Quando essa opção é definida como **Não configurado** (padrão), o Intune não altera nem atualiza essa configuração. Se você habilitar a configuração e, em seguida, alterá-la novamente para **Não configurado**, o Intune manterá a configuração no estado configurado anteriormente. Por padrão, o sistema operacional ativa essa configuração e permite que os usuários a alterem.
 
   O Intune não desativa esse recurso. Para desabilitá-lo, use um URI personalizado.
 
-  [CSP do defender/AllowScriptScanning](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-defender#defender-allowscriptscanning)
+  [CSP de Defender/AllowScriptScanning](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-defender#defender-allowscriptscanning)
 
 - **Acesso do usuário final ao Defender**: a opção **Bloquear** oculta a interface do usuário do Microsoft Defender dos usuários finais. Todas as notificações do Microsoft Defender também são suprimidas.
 
-  Quando definido como **não configurado** (padrão), o Intune não altera nem atualiza essa configuração. Se você bloquear a configuração e, em seguida, alterá-la novamente para **não configurado**, o Intune deixará a configuração no estado configurado anteriormente. Por padrão, o sistema operacional permite que o usuário acesse a IU do Microsoft defender e permite que os usuários o alterem.
+  Quando essa opção é definida como **Não configurado** (padrão), o Intune não altera nem atualiza essa configuração. Se você bloquear a configuração e, em seguida, alterá-la novamente para **Não configurado**, o Intune manterá a configuração no estado configurado anteriormente. Por padrão, o sistema operacional permite que o usuário acesse a interface do usuário do Microsoft Defender e permite que os usuários a alterem.
 
   O Intune não desativa esse recurso. Para desabilitá-lo, use um URI personalizado.
 
   Quando alterada, esta configuração entra em vigor na próxima vez em que o computador do usuário final for reiniciado.
 
-  [CSP do defender/AllowUserUIAccess](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-defender#defender-allowuseruiaccess)
+  [CSP de Defender/AllowUserUIAccess](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-defender#defender-allowuseruiaccess)
 
-- **Intervalo de atualização de inteligência de segurança (em horas)** : Insira o intervalo que o defender verifica para obter uma nova inteligência de segurança, de 0-24. Suas opções:
+- **Intervalo de atualização de inteligência de segurança (em horas)** : insira o intervalo que o Defender verificará em busca de uma nova inteligência de segurança, de 0 a 24. Suas opções:
 
   - **Não configurado** (padrão): o Intune não altera nem atualiza essa configuração. O padrão do sistema operacional pode verificar se há atualizações a cada 8 horas.
-  - Não **verificar**: o defender não verifica se há novas atualizações de inteligência de segurança.
+  - **Não verificar**: o Defender não verifica se há novas atualizações de inteligência de segurança.
   - **1 a 24**: `1` verifica a cada hora, `2` verifica a cada duas horas, `24` verifica a cada dia e assim por diante.
   
-  [CSP do defender/SignatureUpdateInterval](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-defender#defender-signatureupdateinterval)
+  [CSP de Defender/SignatureUpdateInterval](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-defender#defender-signatureupdateinterval)
   
 - **Monitorar a atividade de arquivos e de programas**: Permite que o Defender monitore a atividade de arquivos e programas nos dispositivos. Suas opções:
 
-  - **Não configurado** (padrão): o Intune não altera nem atualiza essa configuração. O padrão do sistema operacional pode monitorar todos os arquivos.
+  - **Não configurado** (padrão): o Intune não altera nem atualiza essa configuração. O padrão do sistema operacional poderá monitorar todos os arquivos.
   - **Monitoramento desabilitado**
   - **Monitorar todos os arquivos**
   - **Monitorar somente os arquivos recebidos**
   - **Monitorar somente os arquivos enviados**
 
-  [CSP do defender/RealTimeScanDirection](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-defender#defender-realtimescandirection)
+  [CSP de Defender/RealTimeScanDirection](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-defender#defender-realtimescandirection)
 
 - **Dias antes da exclusão de malware em quarentena**: continue acompanhando o malware resolvido pelo número de dias inserido para que você possa examinar manualmente os dispositivos afetados anteriormente. Se você definir o número de dias como `0`, o malware permanecerá na pasta de Quarentena e não será removido automaticamente. Quando definido como `90`, itens em quarentena são armazenados por 90 dias no sistema e, em seguida, removidos.
 
-  [CSP do defender/DaysToRetainCleanedMalware](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-defender#defender-daystoretaincleanedmalware)
+  [CSP de Defender/DaysToRetainCleanedMalware](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-defender#defender-daystoretaincleanedmalware)
 
 - **Limite de uso da CPU durante um exame**: limitação da quantidade de CPU que as verificações têm permissão para usar, de `0` a `100`.
-- **Verificar arquivos mortos**: **habilitar** ativa o defender para que ele examine arquivos mortos, como arquivos zip ou cab. Os usuários não podem desativar essa configuração.
+- **Examinar arquivos mortos**: a opção **Habilitar** ativa o Defender, de modo que ele examine arquivos mortos, como arquivos zip ou cab. Os usuários não podem desativar essa configuração.
 
-  Quando definido como **não configurado** (padrão), o Intune não altera nem atualiza essa configuração. Se você habilitar a configuração e, em seguida, alterá-la novamente para **não configurado**, o Intune deixará a configuração no estado configurado anteriormente. Por padrão, o sistema operacional ativa essa verificação e permite que os usuários a alterem.
-
-  O Intune não desativa esse recurso. Para desabilitá-lo, use um URI personalizado.
-
-  [CSP do defender/AllowArchiveScanning](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-defender#defender-allowarchivescanning)
-
-- **Examinar mensagens de email recebidas**: a opção **Habilitar** permite que o Defender verifique mensagens de email assim que elas chegam no dispositivo. Quando habilitado, o mecanismo analisa os arquivos de caixa de correio e de email para analisar o corpo e os anexos dos emails. Você pode verificar os formatos. pst (Outlook),. dbx,. MBX, MIME (Outlook Express) e BinHex (Mac).
-
-  Quando definido como **não configurado** (padrão), o Intune não altera nem atualiza essa configuração. Se você habilitar a configuração e, em seguida, alterá-la novamente para **não configurado**, o Intune deixará a configuração no estado configurado anteriormente. Por padrão, o sistema operacional desativa essa verificação e permite que os usuários a alterem.
+  Quando essa opção é definida como **Não configurado** (padrão), o Intune não altera nem atualiza essa configuração. Se você habilitar a configuração e, em seguida, alterá-la novamente para **Não configurado**, o Intune manterá a configuração no estado configurado anteriormente. Por padrão, o sistema operacional ativa essa verificação e permite que os usuários a alterem.
 
   O Intune não desativa esse recurso. Para desabilitá-lo, use um URI personalizado.
 
-  [CSP do defender/AllowEmailScanning](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-defender#defender-allowemailscanning)
+  [CSP de Defender/AllowArchiveScanning](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-defender#defender-allowarchivescanning)
 
-- **Verificar unidades removíveis durante uma verificação completa**: **habilitar** ativa as verificações da unidade removível do defender durante uma verificação completa. Os usuários não podem desativar essa configuração.
+- **Examinar mensagens de email recebidas**: a opção **Habilitar** permite que o Defender verifique mensagens de email assim que elas chegam no dispositivo. Quando essa opção é habilitada, o mecanismo analisa os arquivos de caixa de correio e de email para analisar o corpo e os anexos dos emails. É possível verificar os formatos .pst (Outlook), .dbx, .mbx, MIME (Outlook Express) e BinHex (Mac).
 
-  Quando definido como **não configurado** (padrão), o Intune não altera nem atualiza essa configuração. Se você habilitar a configuração e, em seguida, alterá-la novamente para **não configurado**, o Intune deixará a configuração no estado configurado anteriormente. Por padrão, o sistema operacional permite que o defender Verifique unidades removíveis, como pentes USB, e permite que os usuários alterem essa configuração.
+  Quando essa opção é definida como **Não configurado** (padrão), o Intune não altera nem atualiza essa configuração. Se você habilitar a configuração e, em seguida, alterá-la novamente para **Não configurado**, o Intune manterá a configuração no estado configurado anteriormente. Por padrão, o sistema operacional desativa essa verificação e permite que os usuários a alterem.
+
+  O Intune não desativa esse recurso. Para desabilitá-lo, use um URI personalizado.
+
+  [CSP de Defender/AllowEmailScanning](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-defender#defender-allowemailscanning)
+
+- **Examinar unidades removíveis durante um exame completo**: a opção **Habilitar** ativa as verificações da unidade removível do Defender durante uma verificação completa. Os usuários não podem desativar essa configuração.
+
+  Quando essa opção é definida como **Não configurado** (padrão), o Intune não altera nem atualiza essa configuração. Se você habilitar a configuração e, em seguida, alterá-la novamente para **Não configurado**, o Intune manterá a configuração no estado configurado anteriormente. Por padrão, o sistema operacional permite que o Defender verifique unidades removíveis, como pen drives, e permite que os usuários alterem essa configuração.
 
   Durante uma verificação rápida, as unidades removíveis ainda podem ser verificadas.
 
   O Intune não desativa esse recurso. Para desabilitá-lo, use um URI personalizado.
 
-  [CSP do defender/AllowFullScanRemovableDriveScanning](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-defender#defender-allowfullscanremovabledrivescanning)
+  [CSP de Defender/AllowFullScanRemovableDriveScanning](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-defender#defender-allowfullscanremovabledrivescanning)
 
 - **Examinar unidades de rede mapeadas durante um exame completo**: a opção **Habilitar** faz com que o Defender verifique os arquivos existentes em unidades de rede mapeadas. Se os arquivos na unidade forem somente leitura, o Defender não consegue remover nenhum malware encontrado ali. Os usuários não podem desativar essa configuração.
 
-  Quando definido como **não configurado** (padrão), o Intune não altera nem atualiza essa configuração. Se você habilitar a configuração e, em seguida, alterá-la novamente para **não configurado**, o Intune deixará a configuração no estado configurado anteriormente. Por padrão, o sistema operacional ativa esse recurso e permite que os usuários o alterem.
+  Quando essa opção é definida como **Não configurado** (padrão), o Intune não altera nem atualiza essa configuração. Se você habilitar a configuração e, em seguida, alterá-la novamente para **Não configurado**, o Intune manterá a configuração no estado configurado anteriormente. Por padrão, o sistema operacional ativa esse recurso e permite que os usuários o alterem.
 
   Durante uma verificação rápida, as unidades de rede mapeadas ainda podem ser verificadas.
 
   O Intune não desativa esse recurso. Para desabilitá-lo, use um URI personalizado.
 
-  [CSP do defender/AllowFullScanOnMappedNetworkDrives](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-defender#defender-allowfullscanonmappednetworkdrives)
+  [CSP de Defender/AllowFullScanOnMappedNetworkDrives](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-defender#defender-allowfullscanonmappednetworkdrives)
 
-- **Verificar arquivos abertos de pastas de rede**: **habilitar** tem o defender verifica arquivos abertos de pastas de rede ou unidades de rede compartilhadas, como arquivos acessados de um caminho UNC. Os usuários não podem desativar essa configuração. Se os arquivos na unidade forem somente leitura, o Defender não consegue remover nenhum malware encontrado ali.
+- **Examinar arquivos abertos em pastas de rede**: a opção **Habilitar** faz com que o Defender examine os arquivos abertos das pastas de rede ou das unidades de rede compartilhadas, como arquivos acessados em um caminho UNC. Os usuários não podem desativar essa configuração. Se os arquivos na unidade forem somente leitura, o Defender não consegue remover nenhum malware encontrado ali.
 
-  Quando definido como **não configurado** (padrão), o Intune não altera nem atualiza essa configuração. Se você habilitar a configuração e, em seguida, alterá-la novamente para **não configurado**, o Intune deixará a configuração no estado configurado anteriormente. Por padrão, o sistema operacional verifica os arquivos abertos das pastas de rede e permite que os usuários o alterem.
+  Quando essa opção é definida como **Não configurado** (padrão), o Intune não altera nem atualiza essa configuração. Se você habilitar a configuração e, em seguida, alterá-la novamente para **Não configurado**, o Intune manterá a configuração no estado configurado anteriormente. Por padrão, o sistema operacional verifica os arquivos abertos das pastas de rede e permite que os usuários alterem essa configuração.
 
   O Intune não desativa esse recurso. Para desabilitá-lo, use um URI personalizado.
 
-  [CSP do defender/AllowScanningNetworkFiles](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-defender#defender-allowscanningnetworkfiles)
+  [CSP de Defender/AllowScanningNetworkFiles](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-defender#defender-allowscanningnetworkfiles)
 
 - **Proteção de nuvem**: a opção **Habilitar** ativa o Microsoft Active Protection Service para receber informações sobre a atividade de malware de dispositivos gerenciados. Os usuários não podem alterar essa configuração. 
 
-  Quando definido como **não configurado** (padrão), o Intune não altera nem atualiza essa configuração. Se você habilitar a configuração e, em seguida, alterá-la novamente para **não configurado**, o Intune deixará a configuração no estado configurado anteriormente. Por padrão, o sistema operacional permite que o Microsoft Active Protection Service receba informações e permite que os usuários alterem essa configuração.
+  Quando essa opção é definida como **Não configurado** (padrão), o Intune não altera nem atualiza essa configuração. Se você habilitar a configuração e, em seguida, alterá-la novamente para **Não configurado**, o Intune manterá a configuração no estado configurado anteriormente. Por padrão, o sistema operacional permite que o Microsoft Active Protection Service receba informações e permite que os usuários alterem essa configuração.
 
   O Intune não desativa esse recurso. Para desabilitá-lo, use um URI personalizado.
 
-  [CSP do defender/AllowCloudProtection](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-defender#defender-allowcloudprotection)
+  [CSP de Defender/AllowCloudProtection](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-defender#defender-allowcloudprotection)
 
 - **Perguntar aos usuários antes do envio de amostras**: Controla se arquivos potencialmente mal-intencionados que possam exigir análise adicional são enviados automaticamente para a Microsoft. Suas opções:
 
-  - **Não configurado** (padrão): o Intune não altera nem atualiza essa configuração. O padrão do sistema operacional pode enviar amostras seguras automaticamente.
+  - **Não configurado** (padrão): o Intune não altera nem atualiza essa configuração. O padrão do sistema operacional poderá enviar amostras seguras automaticamente.
   - **Sempre solicitar**
   - **Avisar antes de enviar dados pessoais**
   - **Nunca enviar dados**
   - **Enviar todos os dados sem solicitar**: os dados são enviados automaticamente.
 
-  [CSP do defender/SubmitSamplesConsent](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-defender#defender-submitsamplesconsent)
+  [CSP de Defender/SubmitSamplesConsent](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-defender#defender-submitsamplesconsent)
 
 - **Hora para realizar um exame rápido diário**: escolha da hora para executar uma verificação rápida diária. **Não configurado** não executa uma verificação diária. Se você quiser mais personalização, defina a configuração **Tipo de verificação do sistema a executar**.
 
@@ -825,11 +828,11 @@ Essas configurações usam o [CSP da política do Defender](https://docs.microso
   > [!TIP]
   > Essa configuração pode entrar em conflito com a configuração de **Hora para executar uma verificação rápida diária**. Algumas recomendações:  
   >
-  > - Se você quiser agendar uma verificação rápida diária e uma verificação completa semanal, então:
-  >   1. Configure o **tempo para executar uma configuração de verificação rápida diária** .
-  >   2. Configure o **tipo de verificação do sistema a ser executado para realizar** uma verificação completa.
+  > - Caso deseje agendar uma verificação rápida diária e uma verificação completa semanal:
+  >   1. Defina a configuração **Hora para executar uma verificação rápida diária**.
+  >   2. Configure o **Tipo de verificação do sistema a ser executado** para fazer uma verificação completa.
   > 
-  > - Se você quiser apenas uma verificação rápida diária (sem verificação completa), use qualquer uma das configurações: **tempo para executar uma verificação rápida diária** ou **tipo de verificação do sistema a ser executada**. Por exemplo, para executar uma verificação rápida nas terças-feiras às 6h, defina a configuração **Tipo de verificação do sistema a executar**.
+  > - Se você quiser apenas uma verificação rápida diária (sem a verificação completa), use uma das configurações: **Hora para executar uma verificação rápida diária** ou **Tipo de verificação do sistema a executar**. Por exemplo, para executar uma verificação rápida nas terças-feiras às 6h, defina a configuração **Tipo de verificação do sistema a executar**.
   > 
   > - Não defina a configuração **Hora para executar uma verificação rápida diária** definindo simultaneamente o **Tipo de verificação do sistema a realizar** como **Verificação rápida**. Essas configurações podem entrar em conflito e uma verificação poderá não ser executada.
 
@@ -844,11 +847,19 @@ Essas configurações usam o [CSP da política do Defender](https://docs.microso
 
   Para obter mais informações sobre aplicativos potencialmente indesejados, consulte [Detectar e bloquear aplicativos potencialmente indesejados](https://docs.microsoft.com/windows/threat-protection/windows-defender-antivirus/detect-block-potentially-unwanted-apps-windows-defender-antivirus).
 
-  [CSP do defender/PUAProtection](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-defender#defender-puaprotection)
+  [CSP de Defender/PUAProtection](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-defender#defender-puaprotection)
 
-- **Enviar exemplos de consentimento**: atualmente, essa configuração não tem impacto. Não use essa configuração. Ele pode ser removido em uma versão futura.
+- **Enviar amostras de consentimento**: atualmente, essa configuração não tem nenhum impacto. Não use essa configuração. Ela poderá ser removida em uma versão futura.
 
-- **Ações sobre ameaças de malware detectadas**: escolha como você deseja tratar os threads de malware. **Não configurado** (padrão) permite que o Microsoft defender escolha a melhor opção. Ao definir como **Habilitado**, escolha as ações que o Defender deve realizar para cada nível de ameaça detectada: baixa, moderada, alta e grave. Suas opções:
+- **Proteção ao acessar**: a opção **Bloquear** impede a verificação de arquivos que foram acessados ou baixados. Os usuários não podem ativá-lo.
+
+  Quando essa opção é definida como **Não configurado** (padrão), o Intune não altera nem atualiza essa configuração. Se você bloquear a configuração e, em seguida, alterá-la novamente para **Não configurado**, o Intune manterá a configuração no estado configurado anteriormente pelo sistema operacional. Por padrão, o sistema operacional habilita esse recurso e permite que os usuários o alterem.
+
+  O Intune não ativa esse recurso. Para habilitá-lo, use um URI personalizado.
+
+  [CSP do Defender/AllowOnAccessProtection](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-defender#defender-allowonaccessprotection)
+
+- **Ações contra ameaças de malware detectadas**: Escolha como você deseja tratar os threads de malware. A opção **Não configurado** (padrão) permite que o Microsoft Defender escolha a melhor opção. Ao definir como **Habilitado**, escolha as ações que o Defender deve realizar para cada nível de ameaça detectada: baixa, moderada, alta e grave. Suas opções:
   
   - **Apagar**
   - **Quarentena**
@@ -857,9 +868,9 @@ Essas configurações usam o [CSP da política do Defender](https://docs.microso
   - **Definido pelo usuário**
   - **Bloquear**
 
-  Se a ação não for possível, o Microsoft defender escolherá a melhor opção para garantir que a ameaça seja corrigida. 
+  Se a ação não for possível, o Microsoft Defender escolherá a melhor opção para garantir que a ameaça seja corrigida. 
 
-  [CSP do defender/ThreatSeverityDefaultAction](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-defender#defender-threatseveritydefaultaction)
+  [CSP de Defender/ThreatSeverityDefaultAction](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-defender#defender-threatseveritydefaultaction)
 
 ### <a name="microsoft-defender-antivirus-exclusions"></a>Exclusões do Microsoft Defender Antivírus
 
@@ -871,83 +882,83 @@ Essas configurações usam o [CSP da política do Defender](https://docs.microso
 
 ### <a name="battery"></a>Bateria
 
-- **Nível da bateria para ativar a economia de energia**: quando o dispositivo estiver usando energia da bateria, insira o nível de carga da bateria para ativar a economia de energia de 0-100. Insira um valor percentual que indica o nível de carga da bateria. O valor padrão é 70%. Quando definido como 70%, a economia de energia é ativada quando a bateria tem 70% de encargo ou menos disponível.
+- **Nível da bateria para ativar a Economia de Energia**: quando o dispositivo estiver usando a energia da bateria, insira o nível de carga da bateria para ativar a Economia de Energia de 0 a 100. Insira um valor percentual que indique o nível de carga da bateria. O valor padrão é 70%. Quando esse valor é definido como 70%, a Economia de Energia é ativada quando a bateria tem 70% de carga ou menos disponível.
 
-  [CSP de energia/EnergySaverBatteryThresholdOnBattery](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-power#power-energysaverbatterythresholdonbattery)
+  [CSP de Power/EnergySaverBatteryThresholdOnBattery](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-power#power-energysaverbatterythresholdonbattery)
 
-- **Fechamento da tampa (somente dispositivos móveis)** : quando o dispositivo estiver usando energia da bateria, escolha o que acontece quando a tampa é fechada. Suas opções:
-
-  - **Não configurado** (padrão): o Intune não altera nem atualiza essa configuração.
-  - **Nenhuma ação**: o dispositivo permanece ligado e continua a usar a energia da bateria.
-  - **Suspensão**: o dispositivo entra no modo de suspensão e usa uma pequena quantidade de carga de bateria. O computador ainda está ativado e os aplicativos e arquivos abertos são armazenados na RAM (memória de acesso aleatório).
-  - **Hibernar**: o dispositivo entra no modo de hibernação. Os aplicativos abertos e os arquivos são armazenados no disco rígido e o dispositivo é desligado.
-  - **Desligar**: o dispositivo é desligado. Os aplicativos e arquivos abertos são fechados sem salvar.
-
-  [CSP de energia/SelectLidCloseActionOnBattery](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-power#power-selectlidcloseactiononbattery)
-
-- **Botão de energia**: quando o dispositivo estiver usando energia da bateria, escolha o que acontece quando o botão de energia é selecionado. Suas opções:
+- **Fechamento da tampa (somente dispositivos móveis)** : quando o dispositivo está usando a energia da bateria, escolha o que acontece quando a tampa é fechada. Suas opções:
 
   - **Não configurado** (padrão): o Intune não altera nem atualiza essa configuração.
-  - **Nenhuma ação**: o dispositivo permanece ligado e continua a usar a energia da bateria.
-  - **Suspensão**: o dispositivo entra no modo de suspensão e usa uma pequena quantidade de carga de bateria. O computador ainda está ativado e os aplicativos e arquivos abertos são armazenados na RAM (memória de acesso aleatório).
-  - **Hibernar**: o dispositivo entra no modo de hibernação. Os aplicativos abertos e os arquivos são armazenados no disco rígido e o dispositivo é desligado.
-  - **Desligar**: o dispositivo é desligado. Os aplicativos e arquivos abertos são fechados sem salvar.
+  - **Nenhuma ação**: o dispositivo permanece ligado e continua usando a energia da bateria.
+  - **Suspender**: o dispositivo entra no modo de suspensão e usa uma pequena quantidade de carga da bateria. O computador ainda está ativado e os aplicativos e os arquivos abertos são armazenados na memória RAM.
+  - **Hibernar**: o dispositivo entra no modo de hibernação. Os aplicativos e os arquivos abertos são armazenados no disco rígido e o dispositivo é desligado.
+  - **Desligar**: o dispositivo é desligado. Os aplicativos e os arquivos abertos são fechados sem salvá-los.
 
-  [CSP de energia/SelectPowerButtonActionOnBattery](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-power#power-selectpowerbuttonactiononbattery)
+  [CSP de Power/SelectLidCloseActionOnBattery](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-power#power-selectlidcloseactiononbattery)
 
-- **Botão de suspensão**: quando o dispositivo estiver usando energia da bateria, escolha o que acontece quando o botão de suspensão é selecionado. Suas opções:
+- **Botão de energia**: quando o dispositivo está usando a energia da bateria, escolha o que acontece quando o botão de energia é selecionado. Suas opções:
 
   - **Não configurado** (padrão): o Intune não altera nem atualiza essa configuração.
-  - **Nenhuma ação**: o dispositivo permanece ligado e continua a usar a energia da bateria.
-  - **Suspensão**: o dispositivo entra no modo de suspensão e usa uma pequena quantidade de carga de bateria. O computador ainda está ativado e os aplicativos e arquivos abertos são armazenados na RAM (memória de acesso aleatório).
-  - **Hibernar**: o dispositivo entra no modo de hibernação. Os aplicativos abertos e os arquivos são armazenados no disco rígido e o dispositivo é desligado.
-  - **Desligar**: o dispositivo é desligado. Os aplicativos e arquivos abertos são fechados sem salvar.
+  - **Nenhuma ação**: o dispositivo permanece ligado e continua usando a energia da bateria.
+  - **Suspender**: o dispositivo entra no modo de suspensão e usa uma pequena quantidade de carga da bateria. O computador ainda está ativado e os aplicativos e os arquivos abertos são armazenados na memória RAM.
+  - **Hibernar**: o dispositivo entra no modo de hibernação. Os aplicativos e os arquivos abertos são armazenados no disco rígido e o dispositivo é desligado.
+  - **Desligar**: o dispositivo é desligado. Os aplicativos e os arquivos abertos são fechados sem salvá-los.
 
-  [CSP de energia/SelectSleepButtonActionOnBattery](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-power#power-selectsleepbuttonactiononbattery)
+  [CSP de Power/SelectPowerButtonActionOnBattery](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-power#power-selectpowerbuttonactiononbattery)
 
-- **Suspensão híbrida**: quando o dispositivo estiver usando energia da bateria, **desabilitar** impedirá que o dispositivo vá para o modo de suspensão híbrida. No modo de suspensão híbrida, os aplicativos e arquivos abertos são armazenados na RAM (memória de acesso aleatório) e no disco rígido. Ele usa uma pequena quantidade de carga de bateria. Quando definido como **não configurado** (padrão), o Intune não altera nem atualiza essa configuração.
+- **Botão Suspensão**: quando o dispositivo está usando a energia da bateria, escolha o que acontece quando o botão Suspender é selecionado. Suas opções:
 
-  [CSP de energia/TurnOffHybridSleepOnBattery](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-power#power-turnoffhybridsleeponbattery)
+  - **Não configurado** (padrão): o Intune não altera nem atualiza essa configuração.
+  - **Nenhuma ação**: o dispositivo permanece ligado e continua usando a energia da bateria.
+  - **Suspender**: o dispositivo entra no modo de suspensão e usa uma pequena quantidade de carga da bateria. O computador ainda está ativado e os aplicativos e os arquivos abertos são armazenados na memória RAM.
+  - **Hibernar**: o dispositivo entra no modo de hibernação. Os aplicativos e os arquivos abertos são armazenados no disco rígido e o dispositivo é desligado.
+  - **Desligar**: o dispositivo é desligado. Os aplicativos e os arquivos abertos são fechados sem salvá-los.
+
+  [CSP de Power/SelectSleepButtonActionOnBattery](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-power#power-selectsleepbuttonactiononbattery)
+
+- **Suspensão híbrida**: quando o dispositivo está usando a energia da bateria, a opção **Desabilitar** impede que o dispositivo entre no modo de suspensão híbrida. No modo de suspensão híbrida, os aplicativos e os arquivos abertos são armazenados na memória RAM e no disco rígido. Ele usa uma pequena quantidade de carga da bateria. Quando essa opção é definida como **Não configurado** (padrão), o Intune não altera nem atualiza essa configuração.
+
+  [CSP de Power/TurnOffHybridSleepOnBattery](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-power#power-turnoffhybridsleeponbattery)
 
 ### <a name="pluggedin"></a>PluggedIn
 
-- **Nível da bateria para ativar a economia de energia**: quando o dispositivo estiver conectado, insira o nível de carga da bateria para ativar a economia de energia de 0-100. Insira um valor percentual que indica o nível de carga da bateria. O valor padrão é 70%. Quando definido como 70%, a economia de energia é ativada quando a bateria tem 70% de encargo ou menos disponível.
+- **Nível da bateria para ativar a Economia de Energia**: quando o dispositivo estiver conectado, insira o nível de carga da bateria para ativar a Economia de Energia de 0 a 100. Insira um valor percentual que indique o nível de carga da bateria. O valor padrão é 70%. Quando esse valor é definido como 70%, a Economia de Energia é ativada quando a bateria tem 70% de carga ou menos disponível.
 
-  [CSP de energia/EnergySaverBatteryThresholdPluggedIn](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-power#power-energysaverbatterythresholdpluggedin)
+  [CSP de Power/EnergySaverBatteryThresholdPluggedIn](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-power#power-energysaverbatterythresholdpluggedin)
 
-- **Fechamento da tampa (somente dispositivos móveis)** : quando o dispositivo estiver conectado, escolha o que acontece quando a tampa é fechada. Suas opções:
+- **Fechamento da tampa (somente dispositivos móveis)** : quando o dispositivo está conectado, escolha o que acontece quando a tampa é fechada. Suas opções:
 
   - **Não configurado** (padrão): o Intune não altera nem atualiza essa configuração.
   - **Nenhuma ação**: o dispositivo permanece ligado.
-  - **Suspensão**: o dispositivo entra no modo de suspensão. O computador ainda está ativado e os aplicativos e arquivos abertos são armazenados na RAM (memória de acesso aleatório).
-  - **Hibernar**: o dispositivo entra no modo de hibernação. Os aplicativos abertos e os arquivos são armazenados no disco rígido e o dispositivo é desligado.
-  - **Desligar**: o dispositivo é desligado. Os aplicativos e arquivos abertos são fechados sem salvar.
+  - **Suspender**: o dispositivo entra no modo de suspensão. O computador ainda está ativado e os aplicativos e os arquivos abertos são armazenados na memória RAM.
+  - **Hibernar**: o dispositivo entra no modo de hibernação. Os aplicativos e os arquivos abertos são armazenados no disco rígido e o dispositivo é desligado.
+  - **Desligar**: o dispositivo é desligado. Os aplicativos e os arquivos abertos são fechados sem salvá-los.
   
-    [CSP de energia/SelectLidCloseActionPluggedIn](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-power#power-selectlidcloseactionpluggedin)
+    [CSP de Power/SelectLidCloseActionPluggedIn](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-power#power-selectlidcloseactionpluggedin)
   
-- **Botão de energia**: quando o dispositivo estiver conectado, escolha o que acontece quando o botão de energia é selecionado. Suas opções:
+- **Botão de energia**: quando o dispositivo está conectado, escolha o que acontece quando o botão de energia é selecionado. Suas opções:
 
   - **Não configurado** (padrão): o Intune não altera nem atualiza essa configuração.
   - **Nenhuma ação**: o dispositivo permanece ligado.
-  - **Suspensão**: o dispositivo entra no modo de suspensão. O computador ainda está ativado e os aplicativos e arquivos abertos são armazenados na RAM (memória de acesso aleatório).
-  - **Hibernar**: o dispositivo entra no modo de hibernação. Os aplicativos abertos e os arquivos são armazenados no disco rígido e o dispositivo é desligado.
-  - **Desligar**: o dispositivo é desligado. Os aplicativos e arquivos abertos são fechados sem salvar.
+  - **Suspender**: o dispositivo entra no modo de suspensão. O computador ainda está ativado e os aplicativos e os arquivos abertos são armazenados na memória RAM.
+  - **Hibernar**: o dispositivo entra no modo de hibernação. Os aplicativos e os arquivos abertos são armazenados no disco rígido e o dispositivo é desligado.
+  - **Desligar**: o dispositivo é desligado. Os aplicativos e os arquivos abertos são fechados sem salvá-los.
 
-  [CSP de energia/SelectPowerButtonActionPluggedIn](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-power#power-selectpowerbuttonactionpluggedin)
+  [CSP de Power/SelectPowerButtonActionPluggedIn](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-power#power-selectpowerbuttonactionpluggedin)
 
-- **Botão de suspensão**: quando o dispositivo estiver conectado, escolha o que acontece quando o botão de suspensão é selecionado. Suas opções:
+- **Botão Suspensão**: quando o dispositivo está conectado, escolha o que acontece quando o botão Suspender é selecionado. Suas opções:
 
   - **Não configurado** (padrão): o Intune não altera nem atualiza essa configuração.
   - **Nenhuma ação**: o dispositivo permanece ligado.
-  - **Suspensão**: o dispositivo entra no modo de suspensão. O computador ainda está ativado e os aplicativos e arquivos abertos são armazenados na RAM (memória de acesso aleatório).
-  - **Hibernar**: o dispositivo entra no modo de hibernação. Os aplicativos abertos e os arquivos são armazenados no disco rígido e o dispositivo é desligado.
-  - **Desligar**: o dispositivo é desligado. Os aplicativos e arquivos abertos são fechados sem salvar.
+  - **Suspender**: o dispositivo entra no modo de suspensão. O computador ainda está ativado e os aplicativos e os arquivos abertos são armazenados na memória RAM.
+  - **Hibernar**: o dispositivo entra no modo de hibernação. Os aplicativos e os arquivos abertos são armazenados no disco rígido e o dispositivo é desligado.
+  - **Desligar**: o dispositivo é desligado. Os aplicativos e os arquivos abertos são fechados sem salvá-los.
 
-  [CSP de energia/SelectSleepButtonActionPluggedIn](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-power#power-selectsleepbuttonactionpluggedin)
+  [CSP de Power/SelectSleepButtonActionPluggedIn](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-power#power-selectsleepbuttonactionpluggedin)
 
-- **Suspensão híbrida**: quando o dispositivo está conectado, **desabilite** impede que o dispositivo vá para o modo de suspensão híbrida. No modo de suspensão híbrida, os aplicativos e arquivos abertos são armazenados na RAM (memória de acesso aleatório) e no disco rígido. Quando definido como **não configurado** (padrão), o Intune não altera nem atualiza essa configuração.
+- **Suspensão híbrida**: quando o dispositivo está conectado, a opção **Desabilitar** impede que o dispositivo entre no modo de suspensão híbrida. No modo de suspensão híbrida, os aplicativos e os arquivos abertos são armazenados na memória RAM e no disco rígido. Quando essa opção é definida como **Não configurado** (padrão), o Intune não altera nem atualiza essa configuração.
 
-  [CSP de energia/TurnOffHybridSleepPluggedIn](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-power#power-turnoffhybridsleeppluggedin)
+  [CSP de Power/TurnOffHybridSleepPluggedIn](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-power#power-turnoffhybridsleeppluggedin)
 
 ## <a name="next-steps"></a>Próximas etapas
 
