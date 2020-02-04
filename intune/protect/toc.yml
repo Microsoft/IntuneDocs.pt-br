@@ -6,7 +6,7 @@
     - name: Visão geral da proteção do dispositivo
       href: device-protect.md
       displayName: compliant; noncompliant; mfa
-- name: Guias de início rápido
+- name: Início rápido
   items:
     - name: Criar uma política de conformidade do dispositivo
       href: quickstart-set-password-length-android.md
@@ -225,6 +225,20 @@
           href: troubleshoot-conditional-access.md
         - name: Solucionar problemas do Certificate Connector
           href: troubleshoot-certificate-connector-events.md
+        - name: Solucionar problemas de perfis de certificado SCEP
+          items:
+            - name: Solucionar problemas de perfis de certificado SCEP
+              href: troubleshoot-scep-certificate-profiles.md
+            - name: Implantação de perfil em dispositivos
+              href: troubleshoot-scep-certificate-profile-deployment.md
+            - name: Comunicação de dispositivo para NDES
+              href: troubleshoot-scep-certificate-device-to-ndes.md
+            - name: Operações de NDES
+              href: troubleshoot-scep-certificate-ndes-policy-module.md
+            - name: Entrega de certificado para dispositivos
+              href: troubleshoot-scep-certificate-delivery.md
+            - name: Relatórios para a implantação de certificado
+              href: troubleshoot-scep-certificate-reporting.md
         - name: Solucionar problemas no Exchange Connector
           items:
             - name: Solucionar problemas no Exchange Connector
@@ -267,7 +281,7 @@
           href: compliance-policy-create-windows-8-1.md
         - name: Configurações da política de conformidade – Windows Phone 8.1
           href: compliance-policy-create-windows-8-1.md
-    - name: Códigos de erros e descrições
+    - name: Códigos de erro e descrições
       items:
         - name: Erros de atualização de software
           href: software-update-agent-error-codes.md
