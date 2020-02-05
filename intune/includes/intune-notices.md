@@ -7,30 +7,14 @@ ms.topic: include
 ms.date: 11/19/2019
 ms.author: erikje
 ms.custom: include file
-ms.openlocfilehash: 9aa82268fb02f5124e48eb303f19cf32be02c284
-ms.sourcegitcommit: c46b0c2d4507be6a2786a4ea06009b2d5aafef85
+ms.openlocfilehash: 6064fb657454106a8a7213e0bbbcecdcef765857
+ms.sourcegitcommit: c7c6be3833d9a63d43f31d598b555b49b33cf5cb
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/01/2020
-ms.locfileid: "76912618"
+ms.lasthandoff: 02/03/2020
+ms.locfileid: "76966344"
 ---
 Esses avisos fornecem informações importantes que podem ajudar você a se preparar para os recursos e as alterações futuras do Intune.
-
-### <a name="updated-feature-new-rbac-role-coming-to-intune--4253397--"></a>Recurso atualizado: nova função RBAC chegando ao Intune<!--4253397-->
-Na atualização de serviço do Intune de janeiro, planejamos lançar uma nova função de segurança no Intune. Você verá essa função listada como "Gerente de segurança do ponto de extremidade" no Intune, e ela é uma expansão da função "Administrador da segurança" do Azure AD.
- 
-#### <a name="how-does-this-affect-me"></a>Como isso me afeta?
-Hoje, há três funções disponíveis no Azure AD para seus profissionais de segurança:
-- Função de Leitor de Segurança no Azure AD, que fornece acesso somente leitura ao Intune.
-- Função de Operador de Segurança no Azure AD, que fornece acesso somente leitura ao Intune.
-- Administrador da segurança no Azure AD. Quando o Intune enviar a atualização de janeiro, juntamente com as permissões somente leitura para o Intune, as novas permissões fornecidas pela função Gerenciador de Segurança de Ponto de Extremidade serão as seguintes:
-    - Ler, criar, atualizar, excluir e atribuir políticas de conformidade do dispositivo
-    - Ler, excluir e atualizar dispositivos gerenciados
-    - Ler, criar, atualizar, excluir e atribuir linhas de base de segurança
-    - Ler e atualizar tarefas de segurança
- 
-### <a name="what-do-i-need-to-do-to-prepare-for-this-change"></a>O que preciso fazer para me preparar para essa alteração?
-Revise suas funções RBAC do Intune hoje mesmo. Se você tiver somente funções de Administrador global atualmente, nenhuma alteração será necessária. Se você usar funções e quiser a granularidade que o Gerente de segurança de ponto de extremidade oferece, atribua essa função quando ela estiver disponível. Confira a página [Novidades](../fundamentals/whats-new.md) do Intune para obter informações atualizadas sobre a versão do Intune. 
 
 ### <a name="updated-support-statement-for-adobe-acrobat-reader-for-intune-mobile-app--5746776--"></a>Foi atualizada a instrução de suporte do aplicativo móvel "Adobe Acrobat Reader for Intune"<!--5746776-->
 Compartilhamos no MC188653 no final de agosto, que o aplicativo móvel Adobe Acrobat Reader para Intune estava atingindo o fim da vida útil em 1º de dezembro de 2019 e que a Adobe planejava dar suporte às políticas de proteção de aplicativos do Intune no aplicativo principal Acrobat Reader. Desde então, recebemos comentários dos clientes de que precisávamos dar mais tempo para continuar a permitir que os administradores de TI direcionem e os usuários finais comecem a usar o Adobe Acrobat Reader para Intune. Devido ao alto uso do Adobe Acrobat Reader para Intune em dispositivos de usuário final e sua importância em cenários empresariais, queremos garantir que todas as experiências atendam às necessidades de proteção do aplicativo da sua organização. 

@@ -6,7 +6,7 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 11/26/2019
+ms.date: 01/21/2020
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.localizationpriority: high
@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: ''
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: c31dd652022ae0d394ab2229a0c25b362ad8574d
-ms.sourcegitcommit: 73b362173929f59e9df57e54e76d19834f155433
+ms.openlocfilehash: 6ebcb81cd0f186a3fd23e0701d12ea871eab129a
+ms.sourcegitcommit: c46b0c2d4507be6a2786a4ea06009b2d5aafef85
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/27/2019
-ms.locfileid: "74563583"
+ms.lasthandoff: 02/01/2020
+ms.locfileid: "76912558"
 ---
 # <a name="add-microsoft-edge-to-macos-devices-using-microsoft-intune"></a>Adicionar o Microsoft Edge a dispositivos macOS usando o Microsoft Intune
 
@@ -65,11 +65,15 @@ Nesta etapa, forneça informações sobre a implantação deste aplicativo. Essa
 Nesta etapa, configure as opções de instalação do aplicativo.
 
 1. No painel **Adicionar Aplicativo**, selecione **Configurações do aplicativo**.
-2. No painel **Configurações do aplicativo**, o Canal **Beta** é selecionado automaticamente e não pode ser alterado.
-    - O Canal **Beta** é a experiência de versão prévia mais estável do Microsoft Edge e a melhor opção para um piloto completo em sua organização. Com atualizações importantes a cada seis semanas.
+2. No painel **Configurações do aplicativo**, escolha **Estável**, **Beta** ou **de Desenvolvimento** na lista **Canal** para determinar de qual Canal do Edge você implantará o aplicativo.
+
+    - O canal **Estável** é o canal recomendado para a implantação geral em ambientes corporativos. Ele é atualizado a cada seis semanas, cada versão incorpora as melhorias do canal Beta.
+    - O canal **Beta** é a experiência de versão prévia mais estável do Microsoft Edge e a melhor opção para um piloto completo em sua organização. Com grandes atualizações a cada seis semanas, cada versão incorpora os aprendizados e melhorias do Canal de Desenvolvimento.
+    - O canal de **Desenvolvimento** está pronto para comentários empresariais sobre o Windows, Windows Server e macOS. Ele é atualizado a cada semana e contém as melhorias e correções mais recentes.
 
     > [!NOTE]
     > O logotipo do navegador Microsoft Edge é exibido com o aplicativo quando os usuários navegam no Portal da Empresa.
+
 3.  Selecione **OK**.
 
 ## <a name="select-scope-tags-optional"></a>Selecione as marcas de escopo (opcional)
