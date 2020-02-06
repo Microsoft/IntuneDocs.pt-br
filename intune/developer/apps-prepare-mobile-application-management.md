@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: a8b5b323c4bb80cd15bf9c6c8f0f7a8be577d6bf
-ms.sourcegitcommit: 8d7406b75ef0d75cc2ed03b1a5e5f74ff10b98c0
+ms.openlocfilehash: 842af9c8fffcb3755c81260739f4949768e75bac
+ms.sourcegitcommit: c46b0c2d4507be6a2786a4ea06009b2d5aafef85
 ms.translationtype: MTE75
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/03/2020
-ms.locfileid: "75653930"
+ms.lasthandoff: 02/01/2020
+ms.locfileid: "76912668"
 ---
 # <a name="prepare-line-of-business-apps-for-app-protection-policies"></a>Preparar aplicativos de linha de negócios para as políticas de proteção de aplicativos
 
@@ -41,7 +41,6 @@ Para obter mais informações sobre a Ferramenta de Encapsulamento de Aplicativo
 ### <a name="reasons-to-use-the-app-wrapping-tool"></a>Motivos para usar a Ferramenta de Encapsulamento de Aplicativos
 
 * Seu aplicativo não tem recursos internos para proteção de dados
-* Seu aplicativo é simples
 * Seu aplicativo é implantado internamente
 * Você não tem acesso ao código-fonte do aplicativo
 * Você não desenvolveu o aplicativo
@@ -63,7 +62,6 @@ Para saber mais sobre o SDK, consulte a [Visão Geral](app-sdk.md). Para começa
 ### <a name="reasons-to-use-the-sdk"></a>Motivos para usar o SDK
 
 * Seu aplicativo não tem recursos internos para proteção de dados
-* Seu aplicativo é complexo e contém muitas experiências
 * Seu aplicativo está implantado em uma loja de aplicativos pública, como Google Play ou App Store da Apple
 * Você é desenvolvedor de aplicativos e tem experiência técnica para usar o SDK
 * Seu aplicativo tem outras integrações de SDK
@@ -76,13 +74,13 @@ Para saber mais sobre o SDK, consulte a [Visão Geral](app-sdk.md). Para começa
 |**iOS**|Sim – use [Associações do Xamarin do SDK de Aplicativo do Intune](app-sdk-xamarin.md).|Não|
 |**Android**| Sim – use [Associações do Xamarin do SDK de Aplicativo do Intune](app-sdk-xamarin.md).|Não|
 
-### <a name="not-using-an-app-development-platform-listed-above"></a>Não está usando uma plataforma de desenvolvimento de aplicativo listada acima?
+## <a name="not-using-an-app-development-platform-listed-above"></a>Não está usando uma plataforma de desenvolvimento de aplicativo listada acima?
 
 A equipe de desenvolvimento do SDK do Intune testa ativamente e mantém o suporte para aplicativos criados com as plataformas nativas do Android, iOS (Obj-C, Swift), Xamarin, Xamarin.Forms e Cordova. Embora alguns clientes tiveram sucesso na integração do SDK do Intune com outras plataformas, como React Native e NativeScript, não fornecemos orientação explícita ou plug-ins para desenvolvedores de aplicativos que usem algo diferente de nossas plataformas que têm suporte. 
 
 ## <a name="feature-comparison"></a>Comparação de recursos
 
-Esta tabela lista as configurações que você pode usar para o SDK do Aplicativo e a Ferramenta de Encapsulamento de Aplicativo.
+Esta tabela lista as configurações que são habilitadas quando um aplicativo usa o SDK do Aplicativo ou a App Wrapping Tool. Alguns recursos exigem que os desenvolvedores de aplicativos apliquem lógica fora da integração básica com o SDK do Intune e, dessa forma, não são habilitadas quando o aplicativo usa a App Wrapping Tool. 
 
 |Recurso|SDK do Aplicativo|Ferramenta de Encapsulamento de Aplicativo|
 |-----------|---------------------|-----------|
@@ -97,7 +95,7 @@ Esta tabela lista as configurações que você pode usar para o SDK do Aplicativ
 |Permitir a impressão digital em vez do PIN|X|X|
 |Permitir reconhecimento facial, em vez de PIN (somente iOS)|X|X|
 |Exigir credenciais corporativas para acesso|X|X|
-|Definir uma expiração de PIN|X|X|
+|Definir uma data de expiração do PIN|X|X|
 |Bloquear a execução de aplicativos gerenciados em dispositivos com jailbreak ou root|X|X|
 |Criptografar dados do aplicativo|X|X|
 |Verificar novamente os requisitos de acesso após uma quantidade especificada de minutos|X|X|
@@ -107,7 +105,7 @@ Esta tabela lista as configurações que você pode usar para o SDK do Aplicativ
 |Apagamento completo de dados de aplicativo|X|X|
 |Apagamento Seletivo de dados corporativos e de estudante em cenários com várias identidades <br><br>**Observação:** para iOS, quando o perfil de gerenciamento é removido, o aplicativo também é removido.|X||
 |Impedir "Salvar como"|X||
-|Configuração de aplicativo de destino (ou configuração de aplicativo por meio do "canal de MAM")|X||
+|Configuração do Aplicativo de Destino (ou configuração do aplicativo por meio do "Canal do MAM")|X|X|
 |Suporte para múltiplas identidades|X||
 |Estilo Personalizável |X|||
 |Conexões de VPN do aplicativo sob demanda com mVPN Citrix|X|X| 
@@ -119,6 +117,11 @@ Esta tabela lista as configurações que você pode usar para o SDK do Aplicativ
 |Exigir SDK mínimo do Intune para iOS (somente iOS)|X|X|
 |Atestado de dispositivo SafetyNet (somente Android)|X|X|
 |Verificação de ameaças em aplicativos (somente Android)|X|X|
+|Exigir nível de risco do dispositivo máximo do fornecedor da Defesa contra Ameaças Móveis|X||
+|Configurar conteúdo de notificação do aplicativo para contas da organização|X|X|
+|Exigir o uso de teclados aprovados ( somente Android)|X|X|
+|Exigir política de proteção do aplicativo (acesso condicional)|X||
+|Exigir aplicativo cliente aprovado (acesso condicional)|X||
 
 ## <a name="next-steps"></a>Próximas etapas
 

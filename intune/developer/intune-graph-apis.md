@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 1a5381d139247424d976b6b510d62681f623203a
-ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
+ms.openlocfilehash: ac63ef1f35e7b4730e275c6c9e566c53463c72ce
+ms.sourcegitcommit: 139853f8d6ea61786da7056cfb9024a6459abd70
 ms.translationtype: MTE75
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "72490511"
+ms.lasthandoff: 01/26/2020
+ms.locfileid: "76754789"
 ---
 # <a name="how-to-use-azure-ad-to-access-the-intune-apis-in-microsoft-graph"></a>Como usar o Azure AD para acessar as APIs do Intune no Microsoft Graph
 
@@ -68,7 +68,7 @@ Para registrar um aplicativo para usar a API do Microsoft Graph:
     - A conta do administrador de locatários.
     - Uma conta de usuário do locatário com a configuração **Os usuários podem registrar aplicativos** habilitada.
 
-2. No menu, escolha **Azure Active Directory** &gt; **Registros do Aplicativo**.
+2. No menu, escolha **Azure Active Directory** &gt; **Registros de Aplicativo**.
 
     <img src="../media/azure-ad-app-reg.png" width="157" height="170" alt="The App registrations menu command" />
 
@@ -90,7 +90,7 @@ Para registrar um aplicativo para usar a API do Microsoft Graph:
 
     1. Anote o valor de **ID do Aplicativo**.
 
-    2. Escolha **Configurações** &gt; **Acesso à API** &gt; **Permissões Necessárias**.
+    2. Escolha **Configurações** &gt; **Acesso à API** &gt; **Permissões necessárias**.
 
     <img src="../media/azure-ad-req-perm.png" width="483" height="186" alt="The Required permissions setting" />
 
@@ -128,7 +128,7 @@ Neste ponto, você também poderá:
 
   2. Altere o valor da configuração `availableToOtherTenants` para `true`.
 
-  3. Salve as alterações.
+  3. Salve suas alterações.
 
 ## <a name="intune-permission-scopes"></a>Escopos de permissões do Intune
 
@@ -140,7 +140,7 @@ Para saber mais:
 - [Autenticação do Azure AD](https://docs.microsoft.com/azure/active-directory/connect/active-directory-aadconnect-pass-through-authentication)
 - [Escopos de permissões de aplicativo](https://docs.microsoft.com/azure/active-directory/develop/active-directory-v2-scopes)
 
-Ao conceder permissão para o Microsoft Graph, você pode especificar os seguintes escopos para controlar o acesso aos recursos do Intune: a tabela a seguir resume os escopos de permissões da API do Intune.  A primeira coluna mostra o nome do recurso, conforme exibido no portal do Azure e a segunda coluna fornece o nome do escopo de permissão.
+Ao conceder permissão para o Microsoft Graph, você pode especificar os seguintes escopos para controlar o acesso aos recursos do Intune: A tabela a seguir resume os escopos de permissão da API do Intune.  A primeira coluna mostra o nome do recurso, conforme exibido no portal do Azure e a segunda coluna fornece o nome do escopo de permissão.
 
 Configuração _Habilitar o Acesso_ | Nome do escopo
 :--|:--
@@ -172,7 +172,7 @@ No momento, todos os escopos de permissões do Intune exigem o acesso de adminis
 
 ### <a name="app-rw"></a>DeviceManagementApps.ReadWrite.All
 
-- Configuração **Habilitar o Acesso**: __Ler e gravar aplicativos do Microsoft Intune__
+- Configuração **Habilitar o Acesso**: __Ler e gravar em aplicativos do Microsoft Intune__
 
 - Permite as mesmas operações de __DeviceManagementApps.Read.All__
 
@@ -240,7 +240,7 @@ No momento, todos os escopos de permissões do Intune exigem o acesso de adminis
 
 - As seguintes ações remotas também são permitidas:
   - Localizar dispositivos
-  - Ignorar bloqueio de ativação
+  - Desabilitar o Bloqueio de Ativação
   - Solicitar assistência remota
 
 ### <a name="rac-ro"></a>DeviceManagementRBAC.Read.All

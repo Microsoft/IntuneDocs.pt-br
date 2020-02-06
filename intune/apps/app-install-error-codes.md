@@ -6,7 +6,7 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 01/21/2020
+ms.date: 01/27/2020
 ms.topic: troubleshooting
 ms.service: microsoft-intune
 ms.subservice: apps
@@ -17,12 +17,12 @@ ms.reviewer: mghadial
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: b8ade7676cb8f6265dd63eb1ba7847c50f526a9a
-ms.sourcegitcommit: 70b40aa4743c8396f8d6a0163893c4a337d67c48
-ms.translationtype: HT
+ms.openlocfilehash: 3502b1c1a73a9e98ed2901fc24dc69ab09136427
+ms.sourcegitcommit: b0d683917af83170f85022b270270d8ced8e301c
+ms.translationtype: MTE75
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/23/2020
-ms.locfileid: "76541855"
+ms.lasthandoff: 01/29/2020
+ms.locfileid: "76812437"
 ---
 # <a name="intune-app-installation-error-reference"></a>Referência de erros de instalação de aplicativos do Intune
 
@@ -57,7 +57,7 @@ As mensagens de erro e as descrições a seguir fornecem detalhes sobre os erros
 
 | Código de erro (Hex) | Código de erro (Dec) | Mensagem/código do erro | Descrição/dicas de solução de problemas |
 |--------------------|------------------|------------------------------------------------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| 0x87D12906 | -2016335610 | Erro do agente de MDM da Apple: falha do comando de instalação do aplicativo sem motivo de erro especificado. Tente instalar o aplicativo novamente. | Agente do Apple MDM retornou que o comando de instalação falhou. |
+| 0x87D12906 | -2016335610 | Erro do Agente de MDM da Apple: falha do comando de instalação do aplicativo sem motivo de erro especificado. Tente instalar o aplicativo novamente. | Agente do Apple MDM retornou que o comando de instalação falhou. |
 | 0x87D1313C | -2016333508 | A conexão de rede no cliente foi perdida ou interrompida. Tentativas posteriores devem ter sucesso em um ambiente de rede melhor. | A conexão de rede foi perdida enquanto a URL do serviço de download atualizada era enviada para o dispositivo. Especificamente, um servidor com o nome do host especificado não pôde ser encontrado. |
 | 0x87D11388 | -2016341112 | O dispositivo iOS está ocupado no momento.  | O dispositivo iOS estava ocupado, o que resultou em erro. O dispositivo foi bloqueado. O usuário precisa desbloquear o dispositivo para instalar o aplicativo. |
 | 0x87D13B64 | -2016330908 | A instalação do aplicativo falhou.  | Ocorreu uma falha na instalação do aplicativo. Os logs do Console do iOS são necessários para solucionar esse erro. |
@@ -90,9 +90,7 @@ As mensagens de erro e as descrições a seguir fornecem detalhes sobre os erros
 | 0x87D13B72 | -2016330894 | Você perdeu a conexão com a Internet.  | Falha na validação do manifesto do aplicativo devido à conectividade de rede (perda de conexão) |
 | 0x87D13B73 | -2016330893 | Você perdeu a conexão com a Internet.  | Falha na validação do manifesto do aplicativo devido à conectividade de rede (não conectado à Internet) |
 | 0x87D13B77 | -2016330889 | Falha da conexão segura.  | Falha na validação do manifesto do aplicativo devido à conectividade de rede (falha na conexão segura) |
-| 0x87D13B6F | -2016330897 |  |   |
 | 0x87D13B80 | -2016330880 | CannotConnectToITunesStoreError | Falha na instalação do aplicativo devido à falha na conexão com a ITunes Store |
-| 0x87D13B6E | -2016330898 |   | Falha na validação do manifesto do aplicativo devido à conectividade de rede (desconhecida) |
 | 0x87D13B9F  | -2016330849 | O aplicativo VPP tem uma atualização disponível | Esse código é retornado quando um aplicativo VPP é instalado, mas há uma versão mais recente disponível. |
 
 ## <a name="other-installation-errors"></a>Outros erros de instalação
