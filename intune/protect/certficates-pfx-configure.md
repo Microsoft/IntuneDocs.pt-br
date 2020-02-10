@@ -116,7 +116,7 @@ Para autenticar um dispositivo com VPN, WiFi ou outros recursos, um dispositivo 
 5. Na guia **Geral**, defina **Nome de exibição do modelo** como algo significativo para você.
 
     > [!WARNING]
-    > **Nome do modelo** é, por padrão, o mesmo que o **Nome de exibição do modelo***sem espaços*. Observe o nome do modelo, pois ele será necessário mais tarde.
+    > **Nome do modelo** é, por padrão, o mesmo que o **Nome de exibição do modelo** *sem espaços*. Observe o nome do modelo, pois ele será necessário mais tarde.
 
 6. Em **Tratamento de Solicitação**, selecione **Permitir que a chave privada seja exportada**.
 7. Em **Criptografia**, confirme se o **Tamanho mínimo da chave** está definido como 2048.
