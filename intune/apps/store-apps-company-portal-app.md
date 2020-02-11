@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 93570bc9dab20801ea6681f6a142de62990a1c57
-ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
+ms.openlocfilehash: 061644a1c83b02902a6bbdaf3cfbd04815d32ea3
+ms.sourcegitcommit: 139853f8d6ea61786da7056cfb9024a6459abd70
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "73712954"
+ms.lasthandoff: 01/26/2020
+ms.locfileid: "76755027"
 ---
 # <a name="manually-add-the-windows-10-company-portal-app-by-using-microsoft-intune"></a>Adicionar manualmente o aplicativo do Portal da Empresa ao Windows 10 usando o Microsoft Intune
 
@@ -56,7 +56,7 @@ Para gerenciar dispositivos e instalar aplicativos, os usuários podem instalar 
     Essa ação deve ser concluída para as arquiteturas de x86, x64 e ARM:<br> 
     *Há nove pacotes de estruturas necessárias ao selecionar a 1507 como a versão mínima do SO, 12 pacotes ao selecionar a versão 1511 e 15 pacotes ao selecionar a versão 1607.*
 
-8. No Microsoft Intune no Portal do Azure, carregue o aplicativo de Portal da Empresa como um novo aplicativo. Para adicionar o aplicativo, escolha o aplicativo de linha de negócios como **Tipo de aplicativo**, no painel **Adicionar aplicativo**. Em seguida, escolha o arquivo do pacote de aplicativos (extensão .AppxBundle).
+8. No Microsoft Intune no Portal do Azure, carregue o aplicativo de Portal da Empresa como um novo aplicativo. Para adicionar o aplicativo, escolha o aplicativo de linha de negócios como **Tipo de aplicativo**, no painel **Selecionar tipo de aplicativo**. Em seguida, escolha o arquivo do pacote de aplicativos (extensão .AppxBundle).
 
 9. Em **Selecionar arquivos do aplicativo de dependência**, selecione todas as dependências que você baixou na etapa 7 usando o comando Shift+clique e verifique se a coluna **Adicionado** exibe **Sim** para as arquiteturas das quais você precisa.
 

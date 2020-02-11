@@ -16,19 +16,19 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: b7b77c4f0127c9ee16b255d0e0e28622b85c323b
-ms.sourcegitcommit: ec69e7ccc6e6183862a48c1b03ca6a3bf573f354
+ms.openlocfilehash: 82ebf35d0eb435f2df4e6cf55274808e6fa690f4
+ms.sourcegitcommit: af384c46ec8d8def6aa32c3b89947748dc6fd28f
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/07/2019
-ms.locfileid: "74907246"
+ms.lasthandoff: 01/22/2020
+ms.locfileid: "76517534"
 ---
 # <a name="remotely-restart-devices-with-intune"></a>Reiniciar dispositivos remotamente com o Intune
 
 
 [!INCLUDE [azure_portal](../includes/azure_portal.md)]
 
-A ação de dispositivo **Reiniciar** faz com que o dispositivo escolhido seja reiniciado. O proprietário do dispositivo não é notificado automaticamente sobre a reinicialização e pode perder trabalho.
+A ação de dispositivo **Reiniciar** faz com que o dispositivo escolhido seja reiniciado (dentro de 5 minutos). O proprietário do dispositivo não é notificado automaticamente sobre a reinicialização e pode perder trabalho.
 
 ## <a name="supported-platforms"></a>Plataformas com Suporte
 

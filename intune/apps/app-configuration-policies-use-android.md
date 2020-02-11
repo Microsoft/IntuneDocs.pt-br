@@ -6,7 +6,7 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 11/26/2019
+ms.date: 01/23/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.subservice: apps
@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: ec80922cf2539fdbacb572fd96c5a5e45549b5c3
-ms.sourcegitcommit: e166b9746fcf0e710e93ad012d2f52e2d3ed2644
+ms.openlocfilehash: b30da567d1a25028c51cf8268eab9613a7c3b8af
+ms.sourcegitcommit: 139853f8d6ea61786da7056cfb9024a6459abd70
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/19/2019
-ms.locfileid: "75204997"
+ms.lasthandoff: 01/26/2020
+ms.locfileid: "76755421"
 ---
 # <a name="add-app-configuration-policies-for-managed-android-enterprise-devices"></a>Adicionar políticas de configuração de aplicativo para dispositivos Android Enterprise gerenciados
 
@@ -34,21 +34,43 @@ As políticas de configuração de aplicativo no Microsoft Intune fornecem confi
 > [!NOTE]  
 > Nem todo aplicativo dá suporte à configuração de aplicativo. Verifique com o desenvolvedor do aplicativo se este é compatível com as políticas de configuração de aplicativo.
 
-1. No [Centro de administração do Gerenciador de Ponto de Extremidade da Microsoft](https://go.microsoft.com/fwlink/?linkid=2109431), escolha **Aplicativos** > **Políticas de configuração de aplicativo** >  **Adicionar** > **Dispositivos gerenciados**.
-2. Adicione as seguintes propriedades:
+1. Entre no [Centro de Administração do Gerenciador de Ponto de Extremidade da Microsoft](https://go.microsoft.com/fwlink/?linkid=2109431).
+2. Escolha **Aplicativos** > **Políticas de configuração de aplicativo** > **Adicionar** > **Aplicativos gerenciados**. Observe que você pode escolher entre **Dispositivos gerenciados** e **Aplicativos gerenciados**. Para saber mais, confira [Aplicativos que dão suporte à configuração de aplicativo](~/apps/app-configuration-policies-overview.md#apps-that-support-app-configuration).
+3. Na página **Conceitos Básicos**, configure os seguintes detalhes:
+    - **Nome** – o nome do perfil exibido no portal do Azure.
+    - **Descrição** – a descrição do perfil que é exibida no portal do Azure.
+    - **Tipo de registro de dispositivo** – Essa configuração é definida como **Dispositivos gerenciados**.
+4. Selecione **Android Enterprise** como **Plataforma**.
+5. Clique em **Selecionar aplicativo** ao lado de **Aplicativo direcionado**. O painel **Aplicativo associado** é exibido. 
+6. No painel **Aplicativo associado**, escolha o aplicativo gerenciado a associar à política de configuração e clique em **OK**.
+7. Clique em **Avançar** para exibir a página **Configurações**.
+8. Clique em **Adicionar** para exibir o painel **Adicionar permissões**.
+9. Clique nas permissões que você deseja substituir. As permissões concedidas substituirão a política de "Permissões de aplicativo padrão" para os aplicativos selecionados.
+10. Defina o **Estado de permissão** para cada permissão. Você pode escolher entre **Prompt**, **Conceder automaticamente** ou **Negar automaticamente**. Para saber mais sobre permissões, confira [Configurações do Android Enterprise para marcar dispositivos como em conformidade ou não em conformidade usando o Intune](~/protect/compliance-policy-create-android-for-work.md).
+11. Na caixa suspensa, selecione o **Formato de definições de configuração**. Escolha um dos seguintes métodos para adicionar informações de configuração:
+    - **Usar o designer de configuração**
+    - **Inserir dados JSON**<br><br>
+    Para obter detalhes sobre como usar o designer de configuração, confira [Usar o designer de configuração](#use-the-configuration-designer). Para obter detalhes sobre como inserir dados XML, confira [Inserir dados JSON](#enter-json-data). 
+12. Clique em **Avançar** para exibir a página **Atribuições**.
+13. Na caixa suspensa ao lado de **Atribuir a**, selecione **Grupos selecionados**, **Todos os usuários**, **Todos os dispositivos** ou **Todos os usuários e todos os dispositivos** aos quais a política de configuração de aplicativo será atribuída.
 
-    - **Nome**: Insira um nome descritivo para a política. Nomeie suas políticas para que você possa identificá-las facilmente mais tarde. Por exemplo, um bom nome de política é **Política de aplicativo Android Enterprise Nine Work para toda a empresa**.
-    - **Descrição**: Insira uma descrição para o perfil. Essa configuração é opcional, mas recomendada.
-    - **Tipo de registro do dispositivo**: Essa configuração é definida como **Dispositivos gerenciados**.
-    - **Plataforma**: Selecione **Android**.
+    ![Captura de tela da guia Incluir de Atribuições de política](./media/app-configuration-policies-use-ios/app-config-policy01.png)
 
-3. Escolha **Aplicativo Associado**. Escolha o aplicativo Android ao qual essa política de configuração de aplicativos será associada. Escolha na lista de [aplicativos do Google Play Gerenciado que foram aprovados e sincronizados com o Intune](~/apps/apps-add-android-for-work.md).
-4. Selecione **Permissões**. É possível definir configurações usando:
+14. Selecione **Todos os usuários** na caixa suspensa.
 
-    - [Designer de configuração](#use-the-configuration-designer)
-    - [Editor de JSON](#enter-the-json-editor)
+    ![Captura de tela de Atribuições de política – opção de lista suspensa Todos os usuários](./media/app-configuration-policies-use-ios/app-config-policy02.png)
 
-5. Selecione **OK** > **Adicionar**.
+15. Clique em **Selecionar grupos para excluir** para exibir o painel relacionado.
+
+    ![Captura de tela Atribuições de política – Painel Selecionar grupos para excluir](./media/app-configuration-policies-use-ios/app-config-policy03.png)
+
+16. Escolha os grupos que você deseja excluir e, em seguida, clique em **Selecionar**.
+
+    >[!NOTE]
+    >Ao adicionar um grupo, se nenhum outro grupo ainda tiver sido incluído para um determinado tipo de atribuição, ele será pré-selecionado e ficará inalterável para outros tipos de atribuição de inclusão. Assim, esse grupo que foi usado, não poderá ser usado como um grupo excluído.
+
+17. Clique em **Avançar** para exibir a página **Revisar + criar**.
+18. Clique em **Criar** para adicionar a política de configuração do aplicativo ao Intune.
 
 ## <a name="use-the-configuration-designer"></a>Usar o designer de configuração
 
@@ -92,7 +114,7 @@ Para dispositivos Android, use os seguintes pares de chave/valor:
    > Você deve usar o Outlook para Android 2.2.222 e posterior, Word, Excel, PowerPoint para Android 16.0.9327.1000 e posterior ou OneDrive para Android 5.28 e posterior ao permitir apenas contas da organização configuradas com várias identidades.<p></p>
    > Como Administrador do Microsoft Intune, é possível controlar quais contas de usuário são adicionadas aos aplicativos do Microsoft Office em dispositivos gerenciados. É possível limitar o acesso apenas a contas permitidas de usuários corporativos e bloquear contas pessoais em dispositivos registrados. Os aplicativos de suporte processam a configuração do aplicativo, removem e bloqueiam contas não aprovadas.<p></p>
 
-## <a name="enter-the-json-editor"></a>Inserir o editor de JSON
+## <a name="enter-json-data"></a>Inserir dados JSON
 
 Algumas definições de configuração em aplicativos (como aplicativos com tipos Pacote) não podem ser configuradas com o designer de configuração. Use o editor de JSON para esses valores. As configurações são fornecidas para os aplicativos automaticamente quando o aplicativo é instalado.
 

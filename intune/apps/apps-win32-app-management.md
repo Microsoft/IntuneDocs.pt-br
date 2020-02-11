@@ -6,7 +6,7 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 01/02/2020
+ms.date: 01/21/2020
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.subservice: apps
@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 371800b39e04695eadc906465fdb013488836df9
-ms.sourcegitcommit: 3189c3a82cfd1ff3a58153dfec2e12fae7b9bdc7
+ms.openlocfilehash: c120fab1da43230888866cba9d818d7b433b711e
+ms.sourcegitcommit: 139853f8d6ea61786da7056cfb9024a6459abd70
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/03/2020
-ms.locfileid: "75622528"
+ms.lasthandoff: 01/26/2020
+ms.locfileid: "76755282"
 ---
 # <a name="intune-standalone---win32-app-management"></a>Intune autônomo – gerenciamento de aplicativos Win32
 
@@ -57,7 +57,7 @@ Baixe a [Ferramenta de Preparação de Conteúdo do Microsoft Win32](https://go.
 
 ### <a name="process-flow-to-create-intunewin-file"></a>Fluxo do processo para criação do arquivo .intunewin
 
-   ![Fluxo do processo para criação de um arquivo .intunewin](./media/apps-win32-app-management/prepare-win32-app.svg)
+   <img alt="Process flow to create a .intunewin file" src="./media/apps-win32-app-management/prepare-win32-app.svg" width="700">
 
 ### <a name="run-the-microsoft-win32-content-prep-tool"></a>Executar a Ferramenta de Preparação de Conteúdo do Microsoft Win32
 
@@ -99,110 +99,116 @@ De maneira muito semelhante a um aplicativo LOB (linha de negócios), é possív
 
 As etapas a seguir fornecem diretrizes para ajudar você a adicionar um aplicativo Windows ao Intune.
 
-### <a name="step-1-specify-the-software-setup-file"></a>Etapa 1: Especificar o arquivo de instalação do software
-
 1. Entre no [Centro de Administração do Gerenciador de Ponto de Extremidade da Microsoft](https://go.microsoft.com/fwlink/?linkid=2109431).
-3. Selecione **Aplicativos** > **Todos os aplicativos** > **Adicionar**.
-4. No painel do aplicativo **Adicionar**, selecione **Aplicativo do Windows (Win32)** na lista suspensa fornecida.
-
-    ![Captura de tela do painel Adicionar aplicativo – Caixa de lista suspensa Adicionar tipo](./media/apps-win32-app-management/apps-win32-app-01.png)
-
-### <a name="step-2-upload-the-app-package-file"></a>Etapa 2: Fazer upload do arquivo do pacote do aplicativo
-
-1. No painel **Adicionar aplicativo**, selecione **Arquivo do pacote do aplicativo** para selecionar um arquivo. O painel Arquivo do pacote do aplicativo será exibido.
-
-    ![Captura de tela do painel Arquivo de pacote do aplicativo](./media/apps-win32-app-management/apps-win32-app-02.png)
-
-2. No painel **Arquivo do pacote do aplicativo**, selecione o botão Procurar. Em seguida, selecione um arquivo de instalação do Windows com a extensão *.intunewin*.
+2. Selecione **Aplicativos** > **Todos os aplicativos** > **Adicionar**.
+3. No painel **Selecionar tipo de aplicativo**, nos tipos de aplicativo **Outros**, selecione **Aplicativo do Windows (Win32)** .
 
     > [!IMPORTANT]
     > Certifique-se de usar a versão mais recente da Ferramenta de Preparação de Conteúdo do Microsoft Win32. Se você não usar a versão mais recente, verá um aviso indicando que o aplicativo foi empacotado usando uma versão mais antiga da Ferramenta de Preparação de Conteúdo do Microsoft Win32. 
 
-3. Quando tiver terminado, selecione **OK**.
+4. Clique em **Selecionar**. As etapas de **Adicionar aplicativo** são exibidas.
 
-### <a name="step-3-configure-app-information"></a>Etapa 3: Configurar informações do aplicativo
+## <a name="step-1---app-information"></a>Etapa 1 – Informações do aplicativo
 
-1. Na folha **Adicionar aplicativo**, selecione **Informações do aplicativo** para configurar o aplicativo.
-2. No painel **Informações do aplicativo**, configure as seguintes informações. Alguns dos valores neste painel podem ser sido preenchidos automaticamente.
-    - **Nome**: Insira o nome do aplicativo como ele é exibido no portal da empresa. Se o mesmo nome de aplicativo existir duas vezes, cada aplicativo será exibido no Portal da Empresa.
-    - **Descrição**: Insira uma descrição para o aplicativo. A descrição será exibida no portal da empresa.
+### <a name="select-the-app-package-file"></a>Selecionar um arquivo de pacote do aplicativo
+
+1. No painel **Adicionar aplicativo**, clique em **Selecionar o arquivo do pacote do aplicativo**. 
+2. No painel **Arquivo do pacote do aplicativo**, selecione o botão Procurar. Em seguida, selecione um arquivo de instalação do Windows com a extensão *.intunewin*.
+   Os detalhes do aplicativo serão exibidos.
+3. Ao terminar, selecione **OK** no painel **Arquivo do pacote do aplicativo**.
+
+### <a name="set-app-information"></a>Configurar as informações do aplicativo
+
+1. Na página **Informações do aplicativo**, adicione os detalhes do seu aplicativo. Dependendo do aplicativo escolhido, alguns dos valores neste painel podem ser preenchidos automaticamente.
+    - **Nome**: Insira o nome do aplicativo como ele é exibido no portal da empresa. Certifique-se de que todos os nomes de aplicativo usados são exclusivos. Se o mesmo nome de aplicativo for usado duas vezes, apenas um dos aplicativos será exibido no portal da empresa.
+    - **Descrição**: Insira uma descrição do aplicativo. A descrição será exibida no portal da empresa.
     - **Editor**: Insira o nome do editor do aplicativo.
     - **Categoria**: Selecione uma ou mais das categorias de aplicativo interno ou uma categoria criada por você. As categorias facilitam para os usuários a localização do aplicativo ao navegar no portal da empresa.
-    - **Exibir como um aplicativo em destaque no Portal da Empresa**: Exiba o aplicativo de maneira proeminente em na página principal do portal da empresa quando os usuários procurarem por aplicativos.
-    - **URL de Informações**: Opcionalmente, Insira a URL de um site que contém informações sobre esse aplicativo. A URL será exibida no portal da empresa.
-    - **URL de Privacidade**: Opcionalmente, Insira a URL de um site que contém informações de privacidade desse aplicativo. A URL será exibida no portal da empresa.
+    - **Mostrar como um aplicativo em destaque no Portal da Empresa**: Exiba o aplicativo de maneira proeminente em na página principal do portal da empresa quando os usuários procurarem por aplicativos.
+    - **URL de Informações**: Opcionalmente, insira uma URL de um site que contém informações sobre esse aplicativo. A URL será exibida no portal da empresa.
+    - **URL de privacidade**: Opcionalmente, insira a URL para um site que contém informações de privacidade desse aplicativo. A URL será exibida no portal da empresa.
     - **Desenvolvedor**: Opcionalmente, Insira o nome do desenvolvedor do aplicativo.
     - **Proprietário**: Opcionalmente, Insira o nome do proprietário desse aplicativo. Um exemplo é **Departamento de RH**.
     - **Observações**: Insira as observações que você deseja associar a esse aplicativo.
-    - **Logotipo**: Carregue um ícone associado ao aplicativo. O ícone é exibido com o aplicativo quando os usuários navegam pelo portal da empresa.
-3. Quando tiver terminado, selecione **OK**.
+    - **Logotipo**: Carregue um ícone associado ao aplicativo. Esse ícone é exibido com o aplicativo quando os usuários navegam pelo portal da empresa.
+2. Clique em **Avançar** para exibir a página **Programa**.
 
-### <a name="step-4-configure-app-installation-details"></a>Etapa 4: Configurar detalhes de instalação do aplicativo
-1. No painel **Adicionar aplicativo**, selecione **Programa** para configurar a instalação do aplicativo e os comandos de remoção para o aplicativo.
-2. Para configurar o **comando Instalar**, adicione a linha de comando de instalação completa para instalar o aplicativo. 
+## <a name="step-2-program"></a>Etapa 2: Programa
 
-    Por exemplo, se o nome de arquivo do aplicativo for **MyApp123**, adicione o seguinte:<br>
-    `msiexec /p “MyApp123.msp”`<p>
-    Se o aplicativo for `ApplicationName.exe`, o comando será o nome do aplicativo seguido dos argumentos de comando (opções) compatíveis com o pacote. <br>Por exemplo:<br>
-    `ApplicationName.exe /quiet`<br>
-    No comando acima, o pacote `ApplicationName.exe` dá suporte ao argumento de comando `/quiet`.<p> 
-    Para obter os argumentos específicos compatíveis com o pacote de aplicativos, contate o fornecedor do aplicativo.
+1. No painel **Programa**, configure a instalação do aplicativo e os comandos de remoção para o aplicativo:
+    - **Comando de instalação**: Adicionar linha de comando de instalação completa para instalar o aplicativo. 
 
-3. Para configurar o **comando Desinstalar**, adicione a linha de comando de desinstalação completa a fim de desinstalar o aplicativo com base na GUID do aplicativo. 
+        Por exemplo, se o nome de arquivo do aplicativo for **MyApp123**, adicione o seguinte:<br>
+        `msiexec /p “MyApp123.msp”`<p>
+        Se o aplicativo for `ApplicationName.exe`, o comando será o nome do aplicativo seguido dos argumentos de comando (opções) compatíveis com o pacote. <br>Por exemplo:<br>
+        `ApplicationName.exe /quiet`<br>
+        No comando acima, o pacote `ApplicationName.exe` dá suporte ao argumento de comando `/quiet`.<p> 
+        Para obter os argumentos específicos compatíveis com o pacote de aplicativos, contate o fornecedor do aplicativo.
 
-    Por exemplo: `msiexec /x “{12345A67-89B0-1234-5678-000001000000}”`
+    - **Comando de Desinstalação**: Adicione a linha de comando de desinstalação completa para desinstalar o aplicativo com base no GUID do aplicativo. 
 
-4. Configure o **Comportamento de instalação** como **Sistema** ou **Usuário**.
+        Por exemplo: `msiexec /x “{12345A67-89B0-1234-5678-000001000000}”`
 
-    > [!NOTE]
-    > Você pode configurar um aplicativo Win32 a ser instalado no contexto de **Usuário** ou **Sistema**. O contexto de **Usuário** refere-se a somente um determinado usuário. O contexto de **Sistema** refere-se a todos os usuários de um dispositivo Windows 10.
-    >
-    > Os usuários finais não precisam fazer logon dispositivo para instalar aplicativos Win32.
-    > 
-    > A instalação e a desinstalação do aplicativo Win32 será executada sob privilégio de administrador (por padrão) quando o aplicativo estiver configurado para instalação no contexto do usuário e o usuário final do dispositivo tiver privilégios de administrador.
+    - **Comportamento da instalação**: configure o comportamento de instalação como **Sistema** ou **Usuário**.
 
-5. Para configurar o **Comportamento de reinicialização do dispositivo**, selecione uma das seguintes opções:
-    - **Determinar o comportamento com base em códigos de retorno**: escolha esta opção para reiniciar o dispositivo com base nas configurações do [códigos de retorno](~/apps/apps-win32-app-management.md#step-7-configure-app-return-codes).
-    - **Nenhuma ação específica**: escolha esta opção para suprimir as reinicializações do dispositivo durante a instalação de aplicativos baseados em MSI.
-    - **A instalação do aplicativo pode forçar a reinicialização do dispositivo**: escolha esta opção para permitir que a instalação do aplicativo seja concluída sem suprimir as reinicializações.
-    - **O Intune força a reinicialização obrigatória do dispositivo**: escolha esta opção para sempre reiniciar o dispositivo após uma instalação de aplicativo bem-sucedida.
+        > [!NOTE]
+        > Você pode configurar um aplicativo Win32 a ser instalado no contexto de **Usuário** ou **Sistema**. O contexto de **Usuário** refere-se a somente um determinado usuário. O contexto de **Sistema** refere-se a todos os usuários de um dispositivo Windows 10.
+        >
+        > Os usuários finais não precisam fazer logon dispositivo para instalar aplicativos Win32.
+        > 
+        > A instalação e a desinstalação do aplicativo Win32 será executada sob privilégio de administrador (por padrão) quando o aplicativo estiver configurado para instalação no contexto do usuário e o usuário final do dispositivo tiver privilégios de administrador.
+    
+    - **Comportamento de reinicialização de dispositivo**: Selecione uma das seguintes opções:
+        - **Determinar o comportamento com base em códigos de retorno**: escolha esta opção para reiniciar o dispositivo com base nas configurações dos códigos de retorno.
+        - **Nenhuma ação específica**: escolha esta opção para suprimir as reinicializações do dispositivo durante a instalação de aplicativos baseados em MSI.
+        - **A instalação do aplicativo pode forçar a reinicialização do dispositivo**: escolha esta opção para permitir que a instalação do aplicativo seja concluída sem suprimir as reinicializações.
+        - **O Intune força a reinicialização obrigatória do dispositivo**: escolha esta opção para sempre reiniciar o dispositivo após uma instalação de aplicativo bem-sucedida.
 
-6. Quando tiver terminado, selecione **OK**.
+    - **Especifique códigos de retorno para indicar o comportamento de pós-instalação**: adicione os códigos de retorno usados para especificar o comportamento de repetição da instalação do aplicativo ou o comportamento após a instalação. As entradas do código de retorno são adicionadas por padrão durante a criação do aplicativo. No entanto, é possível adicionar mais códigos de retorno ou alterar os existentes.
+        1. Na coluna **Tipo de código**, defina o **Tipo de código** como um dos seguintes:
+            - **Com falha**: o valor retornado que indica uma falha na instalação do aplicativo.
+            - **Reinicialização forçada** – o código de retorno de reinicialização forçada não permite que aplicativos Win32 próximos sejam instalados no cliente sem reinicialização. 
+            - **Reinicialização suave** – O código de retorno de reinicialização suave permite que o aplicativo Win32 próximo seja instalado sem a necessidade de uma reinicialização do cliente. A reinicialização é necessária para concluir a instalação do aplicativo atual.
+            - **Repetição** – O agente do código de retorno de repetição tentará instalar o aplicativo três vezes. Ele aguardará 5 minutos entre cada tentativa. 
+            - **Sucesso** – O valor retornado que indica o aplicativo foi instalado com êxito.
+        2. Se necessário, clique em **Adicionar** a fim de adicionar mais códigos de retorno ou modificar os existentes.
+2. Clique em **Avançar** para exibir a página **Requisitos**.        
 
-### <a name="step-5-configure-app-requirements"></a>Etapa 5: Configurar requisitos do aplicativo
+## <a name="step-3-requirements"></a>Etapa 3: Requisitos
 
-1. No painel **Adicionar aplicativo**, selecione **Requisitos** para configurar os requisitos aos quais os dispositivos devem atender antes de o aplicativo ser instalado.
-2. No painel **Adicionar uma regra de Requisitos**, configure as informações a seguir. Alguns dos valores neste painel podem ser sido preenchidos automaticamente.
+1. Na página **Requisitos**, especifique os requisitos que os dispositivos devem atender antes que o aplicativo seja instalado:
     - **Arquitetura do sistema operacional**: Escolha as arquiteturas necessárias para instalar o aplicativo.
     - **Sistema operacional mínimo**: Selecione o sistema operacional mínimo necessário para instalar o aplicativo.
     - **Espaço em disco necessário (MB)** : Opcionalmente, adicione o espaço em disco livre necessário na unidade do sistema para instalar o aplicativo.
     - **Memória física necessária (MB)** : Opcionalmente, adicione a memória física (RAM) necessária para instalar o aplicativo.
     - **Número mínimo necessário de processadores lógicos**: Opcionalmente, adicione o número mínimo de processadores lógicos necessários para instalar o aplicativo.
     - **Velocidade mínima necessária de CPU (MHz)** : Opcionalmente, adicione o número mínimo necessário de processadores lógicos para instalar o aplicativo.
+    - **Configurar regras de requisitos adicionais**: 
+        1. Clique em **Adicionar** para exibir o painel **Adicionar uma regra de Requisito** e configurar regras de requisitos adicionais. Selecione o **Tipo de requisito** para escolher o tipo de regra que você usará para determinar como um requisito é validado. As regras de requisitos podem ser baseadas em informações do sistema de arquivos, valores do Registro ou scripts do PowerShell. 
+            - **Arquivo**: Quando você escolhe **Arquivo** como o **Tipo de requisito**, a regra de requisito precisa detectar um arquivo ou uma pasta, uma data, uma versão ou um tamanho. 
+                - **Caminho** – O caminho completo da pasta que contém o arquivo ou a pasta a ser detectado.
+                - **Arquivo ou pasta** – O arquivo ou pasta a ser detectado.
+                - **Propriedade** – selecione o tipo de regra usado para validar a presença do aplicativo.
+                - **Associado a um aplicativo de 32 bits em clientes de 64 bits** – Selecione **Sim** para expandir as variáveis de ambiente do caminho no contexto de 32 bits em clientes de 64 bits. Selecione **Não** (padrão) para expandir quaisquer variáveis de caminho no contexto de 64 bits em clientes de 64 bits. Clientes de 32 bits sempre usarão o contexto de 32 bits.
+            - **Registro**: Quando você escolhe **Registro** como o **Tipo de requisito**, a regra de requisito precisa detectar uma configuração do Registro com base no valor, na cadeia de caracteres, no inteiro ou na versão.
+                - **Caminho da chave** – O caminho completo da entrada do Registro que contém o valor a ser detectado.
+                - **Nome do valor** – O nome do valor de Registro a ser detectado. Se esse valor estiver vazio, a detecção ocorrerá na chave. O valor (padrão) de uma chave será usado como valor de detecção se o método de detecção for diferente da existência do arquivo ou da pasta.
+                - **Requisito de chave do Registro** – selecione o tipo de comparação de chave do Registro usado para determinar como a regra de requisito é validada.
+                - **Associado a um aplicativo de 32 bits em clientes de 64 bits** – Selecione **Sim** para pesquisar o Registro de 32 bits em clientes de 64 bits. Selecione **Não** (padrão) para pesquisar o Registro de 64 bits em clientes de 64 bits. Clientes de 32 bits sempre pesquisarão o Registro de 32 bits.
+            - **Script**: Escolha **Script** como o **Tipo de requisito** quando você não puder criar uma regra de requisito baseada em arquivo, no Registro ou em qualquer outro método disponível para você no console do Intune.
+                - **Arquivo de script** – para a regra de requisito baseada em script do PowerShell, se o código existente for 0, detectaremos o StdOut com mais detalhes. Por exemplo, podemos detectar StdOut como um inteiro que tem um valor igual a 1.
+                - **Executar script como um processo de 32 bits em clientes de 64 bits**: selecione **Sim** para executar o script como um processo de 32 bits em clientes de 64 bits. Selecione **Não** (padrão) para executar o script como um processo de 64 bits em clientes de 64 bits. Os clientes de 32 bits executam o script em um processo de 32 bits.
+                - **Executar este script usando as credenciais de logon**: Selecione **Sim** para executar o script usando as credenciais de logon do dispositivo**.
+                - **Impor a verificação da assinatura de script** – Selecione **Sim** para verificar se o script é assinado por um fornecedor confiável, que permitirá que o script seja executado sem a exibição de avisos ou prompts. O script será executado desbloqueado. Selecione **Não** (padrão) para executar o script com a confirmação do usuário final sem verificação de assinatura.
+                - **Selecionar o tipo de dados de saída**: Selecione o tipo de dados usado para determinar uma correspondência da regra de requisito.
+        2. Ao terminar de definir as regras de requisitos, selecione **OK**.
+2. Clique em **Avançar** para exibir a página **Regras de detecção**.   
 
-3. Clique em **Adicionar** para exibir o painel **Adicionar uma regra de Requisito** e configurar regras de requisitos adicionais. Selecione o **Tipo de requisito** para escolher o tipo de regra que você usará para determinar como um requisito é validado. As regras de requisitos podem ser baseadas em informações do sistema de arquivos, valores do Registro ou scripts do PowerShell. 
-    - **Arquivo**: Quando você escolhe **Arquivo** como o **Tipo de requisito**, a regra de requisito precisa detectar um arquivo ou uma pasta, uma data, uma versão ou um tamanho. 
-        - **Caminho** – O caminho completo da pasta que contém o arquivo ou a pasta a ser detectado.
-        - **Arquivo ou pasta** – O arquivo ou pasta a ser detectado.
-        - **Propriedade** – selecione o tipo de regra usado para validar a presença do aplicativo.
-        - **Associado a um aplicativo de 32 bits em clientes de 64 bits** – Selecione **Sim** para expandir as variáveis de ambiente do caminho no contexto de 32 bits em clientes de 64 bits. Selecione **Não** (padrão) para expandir quaisquer variáveis de caminho no contexto de 64 bits em clientes de 64 bits. Clientes de 32 bits sempre usarão o contexto de 32 bits.
-    - **Registro**: Quando você escolhe **Registro** como o **Tipo de requisito**, a regra de requisito precisa detectar uma configuração do Registro com base no valor, na cadeia de caracteres, no inteiro ou na versão.
-        - **Caminho da chave** – O caminho completo da entrada do Registro que contém o valor a ser detectado.
-        - **Nome do valor** – O nome do valor de Registro a ser detectado. Se esse valor estiver vazio, a detecção ocorrerá na chave. O valor (padrão) de uma chave será usado como valor de detecção se o método de detecção for diferente da existência do arquivo ou da pasta.
-        - **Requisito de chave do Registro** – selecione o tipo de comparação de chave do Registro usado para determinar como a regra de requisito é validada.
-        - **Associado a um aplicativo de 32 bits em clientes de 64 bits** – Selecione **Sim** para pesquisar o Registro de 32 bits em clientes de 64 bits. Selecione **Não** (padrão) para pesquisar o Registro de 64 bits em clientes de 64 bits. Clientes de 32 bits sempre pesquisarão o Registro de 32 bits.
-    - **Script**: Escolha **Script** como o **Tipo de requisito** quando você não puder criar uma regra de requisito baseada em arquivo, no Registro ou em qualquer outro método disponível para você no console do Intune.
-        - **Arquivo de script** – para a regra de requisito baseada em script do PowerShell, se o código existente for 0, detectaremos o StdOut com mais detalhes. Por exemplo, podemos detectar StdOut como um inteiro que tem um valor igual a 1.
-        - **Executar script como um processo de 32 bits em clientes de 64 bits**: selecione **Sim** para executar o script como um processo de 32 bits em clientes de 64 bits. Selecione **Não** (padrão) para executar o script como um processo de 64 bits em clientes de 64 bits. Os clientes de 32 bits executam o script em um processo de 32 bits.
-        - **Executar este script usando as credenciais de logon**: Selecione **Sim** para executar o script usando as credenciais de logon do dispositivo**.
-        - **Impor a verificação da assinatura de script** – Selecione **Sim** para verificar se o script é assinado por um fornecedor confiável, que permitirá que o script seja executado sem a exibição de avisos ou prompts. O script será executado desbloqueado. Selecione **Não** (padrão) para executar o script com a confirmação do usuário final sem verificação de assinatura.
-        - **Selecionar o tipo de dados de saída**: Selecione o tipo de dados usado para determinar uma correspondência da regra de requisito.
-4. Quando tiver terminado, selecione **OK**.
+### <a name="step-4-detection-rules"></a>Etapa 4: Regras de Detecção
 
-### <a name="step-6-configure-app-detection-rules"></a>Etapa 6: Configurar regras de detecção de aplicativo
-
-1. No painel **Adicionar aplicativo**, selecione **Regras de detecção** para configurar as regras para detectar a presença do aplicativo.
-2. No campo **Formato de regras**, selecione como a presença do aplicativo será detectada. É possível optar por configurar manualmente as regras de detecção ou usar um script personalizado para detectar a presença do aplicativo. É necessário escolher pelo menos uma regra de detecção. 
+1. Na página **Regras de detecção**, configure as regras para detectar a presença do aplicativo:
+    
+    **Formato das regras**: selecione como a presença do aplicativo será detectada. É possível optar por configurar manualmente as regras de detecção ou usar um script personalizado para detectar a presença do aplicativo. É necessário escolher pelo menos uma regra de detecção. 
 
     > [!NOTE]
     > No painel **Regras de detecção**, é possível optar por adicionar várias regras. As condições para **todas** as regras devem ser atendidas para detectar o aplicativo.
@@ -249,53 +255,20 @@ As etapas a seguir fornecem diretrizes para ajudar você a adicionar um aplicati
      
     - **Usar um script de detecção personalizado** – Especifique o script do PowerShell que será usado para detectar este aplicativo. 
     
-        1. **Arquivo de script** – Selecione um script do PowerShell que detectará a presença do aplicativo no cliente. O aplicativo será detectado quando o script retornar um código de saída de valor 0 e escrever um valor de cadeia de caracteres em STDOUT.
+       1. **Arquivo de script** – Selecione um script do PowerShell que detectará a presença do aplicativo no cliente. O aplicativo será detectado quando o script retornar um código de saída de valor 0 e escrever um valor de cadeia de caracteres em STDOUT.
 
-        2. **Executar script como um processo de 32 bits em clientes de 64 bits**: selecione **Sim** para executar o script como um processo de 32 bits em clientes de 64 bits. Selecione **Não** (padrão) para executar o script como um processo de 64 bits em clientes de 64 bits. Os clientes de 32 bits executam o script em um processo de 32 bits.
+       2. **Executar script como um processo de 32 bits em clientes de 64 bits**: selecione **Sim** para executar o script como um processo de 32 bits em clientes de 64 bits. Selecione **Não** (padrão) para executar o script como um processo de 64 bits em clientes de 64 bits. Os clientes de 32 bits executam o script em um processo de 32 bits.
 
-        3. **Impor a verificação da assinatura de script** – Selecione **Sim** para verificar se o script é assinado por um fornecedor confiável, que permitirá que o script seja executado sem a exibição de avisos ou prompts. O script será executado desbloqueado. Selecione **Não** (padrão) para executar o script com a confirmação do usuário final sem verificação de assinatura.
+       3. **Impor a verificação da assinatura de script** – Selecione **Sim** para verificar se o script é assinado por um fornecedor confiável, que permitirá que o script seja executado sem a exibição de avisos ou prompts. O script será executado desbloqueado. Selecione **Não** (padrão) para executar o script com a confirmação do usuário final sem verificação de assinatura.
     
             O agente do Intune verifica os resultados do script. Ele lê os valores gravados pelo script no fluxo de saída padrão (STDOUT), no fluxo de erro padrão (STDERR) e no código de saída. Se o script for encerrado com um valor diferente de zero, o script falhará e o status de detecção do aplicativo não será instalado. Se o código de saída for zero e STDOUT tiver dados, o status de detecção do aplicativo será Instalado. 
 
             > [!NOTE]
             > A Microsoft recomenda a codificação de seu script como UTF-8. Quando o script tiver sido encerrado com um valor de 0, a execução do script terá sido bem-sucedida. O segundo canal de saída indica que o aplicativo foi detectado – os dados STDOUT indicam que o aplicativo foi encontrado no cliente. Não procuramos uma cadeia de caracteres específica do STDOUT.
 
-        4. Após adicionar suas regras, selecione **Adicionar** > **OK**.
+2. Depois de adicionar suas regras, selecione **Avançar** para exibir a página **Dependências**.
 
-### <a name="step-7-configure-app-return-codes"></a>Etapa 7: Configurar códigos de retorno do aplicativo
-
-1. No painel **Adicionar aplicativo**, selecione **Códigos de retorno** para adicionar os códigos de retorno usados para especificar o comportamento de repetição da instalação de aplicativo ou o comportamento pós-instalação. As entradas do código de retorno são adicionadas por padrão durante a criação do aplicativo. No entanto, é possível adicionar mais códigos de retorno ou alterar os existentes. 
-2. No painel **Códigos de retorno**, adicione mais códigos de retorno ou modifique os existentes.
-    - **Com falha**: o valor retornado que indica uma falha na instalação do aplicativo.
-    - **Reinicialização forçada** – o código de retorno de reinicialização forçada não permite que aplicativos Win32 próximos sejam instalados no cliente sem reinicialização. 
-    - **Reinicialização suave** – O código de retorno de reinicialização suave permite que o aplicativo Win32 próximo seja instalado sem a necessidade de uma reinicialização do cliente. A reinicialização é necessária para concluir a instalação do aplicativo atual.
-    - **Repetição** – O agente do código de retorno de repetição tentará instalar o aplicativo três vezes. Ele aguardará 5 minutos entre cada tentativa. 
-    - **Sucesso** – O valor retornado que indica o aplicativo foi instalado com êxito.
-3. Selecione **OK** após adicionar ou modificar sua lista de códigos de retorno.
-
-### <a name="step-8-add-the-app"></a>Etapa 8: Adicionar o aplicativo
-
-1. No painel **Adicionar aplicativo**, verifique se você configurou as informações do aplicativo corretamente.
-2. Selecione **Adicionar** para carregar o aplicativo no Intune.
-
-### <a name="step-9-assign-the-app"></a>Etapa 9: Atribuir o aplicativo
-
-1. No painel de aplicativos, selecione **Atribuições**.
-2. Selecione **Adicionar Grupo** para abrir o painel **Adicionar grupo** relacionado ao aplicativo.
-3. Para o aplicativo específico, selecione um **tipo de atribuição**:
-    - **Disponível para dispositivos registrados**: Os usuários instalam o aplicativo no site ou aplicativo do Portal da Empresa.
-    - **Obrigatório**: O aplicativo é instalado nos dispositivos dos grupos selecionados.
-    - **Desinstalação**: O aplicativo é desinstalado dos dispositivos nos grupos selecionados.
-4. Selecione **Grupos incluídos** e atribua os grupos que usarão esse aplicativo.
-5. No painel **Atribuir**, selecione para atribuir com base em usuários ou dispositivos. Ao escolher as atribuições, você também pode escolher a **Experiência do usuário final**. A **Experiência do usuário final** permite definir **Notificações do usuário final**, **Período de carência para a reinicialização**, **Disponibilidade** e **Prazo de instalação**. Confira mais informações em **Configurar notificações e disponibilidade de aplicativo Win32**.
-6. Escolha **OK** para concluir a seleção de grupos incluídos.
-7. Se desejar que alguns grupos de usuários não sejam afetados por esta atribuição de aplicativo, selecione **Excluir Grupos**.
-8. No painel **Adicionar grupo**, selecione **OK**.
-9. No painel **Atribuições** do aplicativo, selecione **Salvar**.
-
-Nesta altura, você concluiu as etapas necessárias para adicionar um aplicativo Win32 ao Intune. Para obter informações sobre a atribuição e monitoramento de aplicativos, confira [Atribuir aplicativos a grupos no Microsoft Intune](apps-deploy.md) e [Monitor app information and assignments with Microsoft Intune](apps-monitor.md) (Monitorar informações e atribuições de aplicativo com o Microsoft Intune).
-
-## <a name="app-dependencies"></a>Dependências de aplicativo
+### <a name="step-5-dependencies"></a>Etapa 5: Dependências
 
 As dependências de aplicativo são aplicativos que precisam ser instalados antes que o aplicativo Win32 possa ser instalado. Você pode exigir que outros aplicativos sejam instalados como dependências. Especificamente, o dispositivo precisa instalar os aplicativos dependentes antes de instalar o aplicativo Win32. Há um máximo de 100 dependências, que incluem as dependências das dependências incluídas, bem como o próprio aplicativo. Você poderá adicionar dependências de aplicativo Win32 somente depois que o aplicativo Win32 for adicionado ao Intune e carregado nele. Depois que o aplicativo Win32 for adicionado, você verá a opção **Dependências** no painel do aplicativo Win32. 
 
@@ -305,15 +278,15 @@ Ao adicionar uma dependência de aplicativo, você poderá fazer uma pesquisa co
 
 Você pode escolher se deseja ou não instalar cada aplicativo dependente automaticamente. Por padrão, a opção **Instalar automaticamente** é definida como **Sim** para cada dependência. Ao instalar automaticamente um aplicativo dependente, mesmo se o aplicativo dependente não for direcionado ao usuário ou ao dispositivo, o Intune instalará o aplicativo no dispositivo para atender à dependência antes de instalar o aplicativo Win32. É importante observar que uma dependência pode ter subdependências recursivas e cada subdependência será instalada antes da instalação da dependência principal. Além disso, a instalação de dependências não segue uma ordem de instalação em um nível de dependência especificado.
 
-Para adicionar uma dependência de aplicativo ao aplicativo Win32, use as seguintes etapas:
+### <a name="select-the-dependencies"></a>Selecionar as dependências
 
-1. No Intune, selecione **Aplicativos** > **Todos os aplicativos** para exibir a lista de aplicativos cliente adicionados. 
-2. Selecione um **Aplicativo do Windows (Win32)** adicionado. 
-3. Selecione **Dependências** para adicionar os aplicativos dependentes que precisam ser instalados para que o aplicativo Win32 possa ser instalado. 
-4. Clique em **Adicionar** para adicionar uma dependência de aplicativo.
-5. Depois de adicionar os aplicativos dependentes, clique em **Selecionar**.
-6. Escolha se deseja instalar automaticamente o aplicativo dependente selecionando **Sim** ou **Não** em **Instalar automaticamente**.
-7. Clique em **Salvar**.
+Na página **Dependências**, selecione os aplicativos que precisam ser instalados antes que o aplicativo Win32 possa ser instalado:
+1. Clique em **Adicionar** para exibir o painel **Adicionar dependência**.
+3. Depois de adicionar os aplicativos dependentes, clique em **Selecionar**.
+4. Escolha se deseja instalar automaticamente o aplicativo dependente selecionando **Sim** ou **Não** na coluna **Instalar Automaticamente**.
+5. Clique em **Avançar** para exibir a página **Marcas de escopo**.
+
+### <a name="understand-additional-dependency-details"></a>Entender detalhes adicionais de dependências
 
 O usuário final verá notificações do sistema do Windows que indicam se os aplicativos dependentes estão sendo baixados e instalados como parte do processo de instalação do aplicativo Win32. Além disso, quando um aplicativo dependente não for instalado, o usuário final geralmente verá uma das seguintes notificações:
 - Falha na instalação de um ou mais aplicativos dependentes
@@ -323,6 +296,35 @@ O usuário final verá notificações do sistema do Windows que indicam se os ap
 Se você optar por não **Instalar automaticamente** uma dependência, não haverá uma tentativa de instalar o aplicativo Win32. Além disso, o relatório do aplicativo mostrará que a dependência foi sinalizada como `failed` e também fornecerá um motivo da falha. Exiba a falha de instalação de dependência clicando em uma falha (ou um aviso) fornecido nos [detalhes da instalação](troubleshoot-app-install.md#win32-app-installation-troubleshooting) do aplicativo Win32. 
 
 Cada dependência seguirá a lógica de repetição do aplicativo Win32 do Intune (três tentativas de instalação após uma espera de cinco minutos) e ao agendamento de reavaliação global. Além disso, as dependências só são aplicáveis no momento da instalação do aplicativo Win32 no dispositivo. As dependências não são aplicáveis à desinstalação de um aplicativo Win32. Para excluir uma dependência, clique nas reticências (três pontos) à esquerda do aplicativo dependente localizadas no final da linha da lista de dependências. 
+
+## <a name="step-6---select-scope-tags-optional"></a>Etapa 6 – Selecionar as marcas de escopo (opcional)
+Você pode usar as marcas de escopo para determinar quem pode ver as informações do aplicativo cliente no Intune. Para obter todos os detalhes sobre marcas de escopo, confira [Usar controle de acesso baseado em função e marcas de escopo para TI distribuída](../fundamentals/scope-tags.md).
+
+1. Clique em **Selecionar marcas de escopo** para adicionar opcionalmente marcas de escopo no aplicativo. 
+2. Clique em **Avançar** para exibir a página **Atribuições**.
+
+## <a name="step-7---assignments"></a>Etapa 7 – Atribuições
+
+É possível selecionar as atribuições de grupo **Necessário**, **Disponível para dispositivos registrados** ou **Desinstalar** para o aplicativo. Para saber mais, confira [Adicionar grupos para organizar usuários e dispositivos](~/fundamentals/groups-add.md) e [Atribuir aplicativos a grupos com o Microsoft Intune](apps-deploy.md).
+
+1. Para o aplicativo específico, selecione um tipo de atribuição:
+    - **Obrigatório**: O aplicativo é instalado nos dispositivos dos grupos selecionados.
+    - **Disponível para dispositivos registrados**: Os usuários instalam o aplicativo no site ou aplicativo do Portal da Empresa.
+    - **Desinstalar**: O aplicativo é desinstalado dos dispositivos nos grupos selecionados.
+2. Clique em **Adicionar grupos** e atribua os grupos que usarão esse aplicativo.
+3. No painel **Selecionar grupos**, selecione para atribuir com base em usuários ou dispositivos. 
+4. Depois de selecionar os grupos, você também pode definir **Notificações do usuário final**, **Disponibilidade** e **Prazo de instalação**. Confira mais informações em [Configurar notificações e disponibilidade de aplicativo Win32](~/apps/apps-win32-app-management.md#set-win32-app-availability-and-notifications).
+5. Se desejar que alguns grupos de usuários não sejam afetados por esta atribuição de aplicativo, selecione **Incluído** na coluna **MODO**. O painel **Editar atribuição** será exibido. Você pode definir o **modo** como **Incluído** ou **Excluído**. Clique em **OK** para fechar o painel **Editar atribuição**.
+6. Depois de concluir a configuração das atribuições para os aplicativos, clique em **Avançar** para exibir a página **Revisar + criar**.
+
+## <a name="step-8---review--create"></a>Etapa 8 – Revisar + criar
+
+1. Examine os valores e as configurações que você inseriu para o aplicativo. Verifique se você configurou corretamente as informações do aplicativo.
+2. Quando terminar, clique em **Criar** para adicionar o aplicativo ao Intune.
+
+    A folha **Visão geral** do aplicativo de linha de negócios é exibida.
+
+Nesta altura, você concluiu as etapas necessárias para adicionar um aplicativo Win32 ao Intune. Para obter informações sobre a atribuição e monitoramento de aplicativos, confira [Atribuir aplicativos a grupos no Microsoft Intune](apps-deploy.md) e [Monitor app information and assignments with Microsoft Intune](apps-monitor.md) (Monitorar informações e atribuições de aplicativo com o Microsoft Intune).
 
 ## <a name="delivery-optimization"></a>Otimização de Entrega
 
@@ -349,10 +351,9 @@ Configure a disponibilidade do aplicativo com base em uma data e hora para o apl
 1. Entre no [Centro de Administração do Gerenciador de Ponto de Extremidade da Microsoft](https://go.microsoft.com/fwlink/?linkid=2109431).
 2. Selecione **Aplicativos** > **Todos os aplicativos**.
 3. Selecione um **Aplicativo do Windows (Win32)** na lista. 
-4. No painel de aplicativos, selecione **Atribuições** > **Adicionar grupo**. 
-5. Defina o **Tipo de atribuição** como **Obrigatório**. Observe que a disponibilidade do aplicativo pode ser definida com base no tipo de atribuição. O **Tipo de atribuição** pode ser **Obrigatório**, **Disponível para dispositivos registrados** ou **Desinstalar**.
-6. Selecione **Grupos Incluídos** para determinar para qual grupo de usuários o aplicativo será atribuído. O painel **Atribuir** será exibido.
-7. Em **Tornar este aplicativo obrigatório para todos os usuários**, selecione **Sim**.
+4. No painel do aplicativo, selecione **Propriedades** > **Editar** próximo à seção **Atribuições** > **Adicionar grupo** abaixo do tipo de atribuição **Necessário**. 
+   Observe que a disponibilidade do aplicativo pode ser definida com base no tipo de atribuição. O **Tipo de atribuição** pode ser **Obrigatório**, **Disponível para dispositivos registrados** ou **Desinstalar**.
+5. Selecione um grupo no painel **Selecionar grupo** para especificar a qual grupo de usuários o aplicativo será atribuído. 
 
     > [!NOTE]
     > As opções de **Tipo de atribuição** incluem o seguinte:<br>
@@ -360,16 +361,18 @@ Configure a disponibilidade do aplicativo com base em uma data e hora para o apl
     > - **Disponível para dispositivos registrados**: você pode optar por **tornar esse aplicativo disponível para todos os usuários com dispositivos registrados**.<br>
     > - **Desinstalar**: você pode optar por ***desinstalar este aplicativo para todos os usuários** e/ou **desinstalar este aplicativo para todos os dispositivos**.
 
-8. Para modificar as opções da **Experiência do usuário final**, selecione **Editar**.
-9. No painel **Editar atribuição**, configure as **Notificações do usuário final** como **Mostrar todas as notificações do sistema**. É possível configurar as **Notificações do usuário final** como **Mostrar todas as notificações do sistema**, **Mostrar notificações do sistema nas reinicializações do computador** ou **Ocultar todas as notificações do sistema**.
-10. Defina a **Disponibilidade do aplicativo** como **Data e hora específicas** e selecione a data e a hora. Essa data e hora especificam quando o aplicativo é baixado para o dispositivo dos usuários finais. 
-11. Configure o **Prazo de instalação do aplicativo** como **Data e hora específicas** e selecione a data e a hora. Essa data e hora especificam quando o aplicativo é instalado no dispositivo dos usuários finais. Quando mais de uma atribuição for feita para o mesmo usuário ou dispositivo, a hora do prazo de instalação do aplicativo será escolhida em função da hora que for o mais cedo possível.
-12. Clique em **Habilitado** ao lado de **Período de carência para a reinicialização**. O período de carência para a reinicialização começa assim que a instalação do aplicativo é concluída no dispositivo. Quando desabilitado, o dispositivo pode ser reiniciado sem aviso. <br>É possível personalizar as seguintes opções:
+6. Para modificar as opções **Notificação do usuário final**, selecione **Mostrar todas as notificações do sistema**.
+7. No painel **Editar atribuição**, configure as **Notificações do usuário final** como **Mostrar todas as notificações do sistema**. É possível configurar as **Notificações do usuário final** como **Mostrar todas as notificações do sistema**, **Mostrar notificações do sistema nas reinicializações do computador** ou **Ocultar todas as notificações do sistema**.
+8. Defina a **Disponibilidade do aplicativo** como **Data e hora específicas** e selecione a data e a hora. Essa data e hora especificam quando o aplicativo é baixado para o dispositivo dos usuários finais. 
+9. Configure o **Prazo de instalação do aplicativo** como **Data e hora específicas** e selecione a data e a hora. Essa data e hora especificam quando o aplicativo é instalado no dispositivo dos usuários finais. Quando mais de uma atribuição for feita para o mesmo usuário ou dispositivo, a hora do prazo de instalação do aplicativo será escolhida em função da hora que for o mais cedo possível.
+
+10. Clique em **Habilitado** ao lado de **Período de carência para a reinicialização**. O período de carência para a reinicialização começa assim que a instalação do aplicativo é concluída no dispositivo. Quando desabilitado, o dispositivo pode ser reiniciado sem aviso. <br>É possível personalizar as seguintes opções:
     - **Período de carência para a reinicialização do dispositivo (minutos)** : o valor padrão é 1440 minutos (24 horas). Esse valor pode ser, no máximo, de 2 semanas.
     - **Selecione quando a caixa de diálogo para reiniciar a contagem regressiva deve ser exibida antes que a reinicialização ocorra (minutos)** : O valor padrão é 15 minutos.
     - **Permitir que o usuário adie a notificação de reinicialização**: você pode escolher **Sim** ou **Não**.
         - **Selecione a duração do adiamento (minutos)** : o valor padrão é 240 minutos (4 horas). O valor do adiamento não pode ser maior que o período de carência para a reinicialização.
-13. Clique em **OK** > **OK** > **OK** > **Salvar** para adicionar a atribuição.
+
+11. Clique em **Revisar + salvar**.
 
 ## <a name="toast-notifications-for-win32-apps"></a>Notificações do sistema para aplicativos Win32 
 Se for necessário, você poderá suprimir a exibição de notificações do sistema ao usuário final por atribuição de aplicativo. No Intune, selecione **Aplicativos** > **Todos os aplicativos** > selecione o aplicativo > **Atribuições** > **Incluir Grupos**. 

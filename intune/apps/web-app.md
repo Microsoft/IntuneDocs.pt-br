@@ -6,7 +6,7 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 11/26/2019
+ms.date: 01/22/2020
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.subservice: apps
@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 68e2e768067a88b8ae58adeb38c17d90ac995a30
-ms.sourcegitcommit: b752acefec077c719e169e665c955adb944e85c6
+ms.openlocfilehash: 90cdff66d32ac5edb3b1867a545f2c9627ccfe39
+ms.sourcegitcommit: 139853f8d6ea61786da7056cfb9024a6459abd70
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/03/2019
-ms.locfileid: "74781219"
+ms.lasthandoff: 01/26/2020
+ms.locfileid: "76754772"
 ---
 # <a name="add-web-apps-to-microsoft-intune"></a>Adicionar aplicativos Web ao Microsoft Intune
 
@@ -46,9 +46,9 @@ Para adicionar um aplicativo ao Intune como atalho para um aplicativo na Web, fa
 
 1. Entre no [Centro de Administração do Gerenciador de Ponto de Extremidade da Microsoft](https://go.microsoft.com/fwlink/?linkid=2109431).
 2. Selecione **Aplicativos** > **Todos os aplicativos** > **Adicionar**.
-3. No painel **Adicionar aplicativo**, selecione o tipo **Link da Web** na lista suspensa **Tipo de aplicativo**.
-4. Selecione **Configurar**.
-5. No painel **Informações do aplicativo**, adicione as seguintes informações:
+3. No painel **Selecionar tipo de aplicativo**, sob **Outros** tipos disponíveis, selecione **Link da Web**.
+4. Clique em **Selecionar**. As etapas de **Adicionar aplicativo** são exibidas.
+5. Na página **Informações do aplicativo**, adicione as seguintes informações:
     - **Nome**:  Insira o nome do aplicativo como ele será exibido no Portal da Empresa. 
 
         > [!NOTE]
@@ -58,11 +58,17 @@ Para adicionar um aplicativo ao Intune como atalho para um aplicativo na Web, fa
     - **Editor**: Insira o nome do editor desse aplicativo.
     - **URL do Aplicativo**: Insira a URL do site da web que hospeda o aplicativo que você deseja atribuir.
     - **Categoria**: Como opção, selecione uma ou mais categorias de aplicativo internas ou uma categoria criada por você. Isso facilita a localização do aplicativo pelos usuários quando navegam pelo portal da empresa.
-    - **Exibir isso como um aplicativo em destaque no Portal da Empresa**: Selecione essa opção para destacar o pacote de aplicativos na página principal do Portal da Empresa quando os usuários procurarem por aplicativos.
+    - **Mostrar como um aplicativo em destaque no Portal da Empresa**: Selecione essa opção para destacar o pacote de aplicativos na página principal do Portal da Empresa quando os usuários procurarem por aplicativos.
     - **É necessário usar um managed browser para abrir este link**: Selecione essa opção para atribuir a seus usuários um link para um site ou aplicativo Web que eles possam abrir no navegador gerenciado do Intune. Este navegador deve estar instalado em seu dispositivo.
     - **Logotipo**: Carregue um ícone que será associado ao aplicativo. Esse ícone é exibido com o aplicativo quando os usuários navegam pelo portal da empresa.
-6. Selecione **OK**.
-7. No painel **Adicionar aplicativo**, selecione **Adicionar**.
+6. Clique em **Avançar** para exibir a página **Marcas de escopo**.
+7. Clique em **Selecionar marcas de escopo** para adicionar opcionalmente marcas de escopo no aplicativo. Para saber mais, confira [Usar o RBAC (controle de acesso baseado em função) e marcas de escopo para TI distribuída](~/fundamentals/scope-tags.md).
+8. Clique em **Avançar** para exibir a página **Atribuições**.
+9. Selecione as atribuições de grupo para o aplicativo. Para saber mais, confira [Adicionar grupos para organizar usuários e dispositivos](~/fundamentals/groups-add.md). 
+10. Clique em **Avançar** para exibir a página **Revisar + criar**. Examine os valores e as configurações que você inseriu para o aplicativo.
+11. Quando terminar, clique em **Criar** para adicionar o aplicativo ao Intune.
+
+    A folha **Visão geral** do aplicativo criado é exibida.
 
 > [!Note]
 > Atualmente, a implantação de aplicativos Web do Intune para dispositivos iOS está associada ao perfil de gerenciamento e não pode ser removida manualmente. Você pode alterar o tipo de implantação para **Desinstalar** no portal do Intune para que o aplicativo Web possa ser removido automaticamente. No entanto, se você remover a implantação antes de alterar a intenção de atribuição de aplicativo para **Desinstalar**, o aplicativo Web ficará permanentemente em vigor no dispositivo até que o registro do dispositivo seja cancelado no Intune.

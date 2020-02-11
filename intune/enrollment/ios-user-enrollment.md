@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: d77a275e3a48845f56b22ecc21b75f664ea619c5
-ms.sourcegitcommit: f26039d674eb4d61ab68264dd1a10b2e5e1d842c
+ms.openlocfilehash: 0872eef38e3ea5a70ebb64d3ae3c62069045fa97
+ms.sourcegitcommit: 139853f8d6ea61786da7056cfb9024a6459abd70
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/02/2019
-ms.locfileid: "74691739"
+ms.lasthandoff: 01/26/2020
+ms.locfileid: "76754603"
 ---
 # <a name="set-up-ios-and-ipados-user-enrollment-preview"></a>Configurar o Registro de usuário do iOS e iPadOS (versão prévia)
 
@@ -54,23 +54,14 @@ Um perfil de registro define as configurações aplicadas a um grupo de disposit
 
 3. Selecione **Avançar**.
 
-4. Na página **Configurações**, você pode optar por fornecer aos usuários a opção de qual tipo de registro eles usarão. Como alternativa, você pode definir um padrão.
+4. Na página **Configurações**, selecione uma das seguintes opções para **Tipo de registro**:
 
     ![Página de configurações](./media/ios-user-enrollment/settings-page.png)
 
-    - Se você quiser que todos os usuários nesse perfil usem o Registro de usuário, siga estas etapas:
-        1. Para **Exigir que o usuário selecione o tipo de dispositivo**, selecione **Não configurado**.
-        2. Para **Tipo de registro padrão**, selecione **Registro de usuário**.
-    - Se você quiser que todos os usuários nesse perfil usem o Registro de dispositivo, siga estas etapas:
-        1. Para **Exigir que o usuário selecione o tipo de dispositivo**, selecione **Não configurado**.
-        2. Para **Tipo de registro padrão**, selecione **Registro de dispositivo**.
-    - Se você quiser dar a todos os usuários desse grupo a opção de qual tipo de registro usar, selecione **Obrigatório** em **Exigir que o usuário selecione o tipo de dispositivo**. Quando os usuários registram seus dispositivos, eles terão a opção de escolher entre **Sou proprietário deste dispositivo** e **(Empresa) é proprietária deste dispositivo**. Se eles escolherem o primeiro, o dispositivo será registrado usando o Registro de usuário. Se eles escolherem o segundo, o dispositivo será registrado usando o Registro de dispositivo. Se o usuário escolher **Sou proprietário deste dispositivo**, ele verá outra opção para proteger todo o dispositivo ou proteger somente aplicativos e dados relacionados ao trabalho. A seleção do usuário final quanto a ele ser o proprietário do dispositivo determina apenas qual tipo de registro é implementado no dispositivo. Essa escolha do usuário não é refletida no atributo de Propriedade de dispositivo no Intune. Para saber mais sobre a experiência do usuário, confira [Configurar o acesso do dispositivo iOS aos recursos de sua empresa](https://docs.microsoft.com/intune-user-help/enroll-your-device-in-intune-ios).
+    - **Registro de dispositivo**: todos os usuários neste perfil usarão o Registro de dispositivo.
+    - **Registro de usuário**: todos os usuários neste perfil usarão o Registro de usuário.
+    - **Determinar com base na escolha do usuário**: todos os usuários nesse grupo receberão a opção de qual tipo de registro usar. Quando os usuários registram seus dispositivos, eles deverão escolher entre **Sou proprietário deste dispositivo** e a **(Empresa) é proprietária deste dispositivo**. Se eles escolherem o segundo, o dispositivo será registrado usando o Registro de dispositivo. Se o usuário escolher **Sou proprietário deste dispositivo**, ele verá outra opção para proteger todo o dispositivo ou proteger somente aplicativos e dados relacionados ao trabalho. A seleção do usuário final quanto a ele ser o proprietário do dispositivo determina qual tipo de registro é implementado no dispositivo. Essa escolha do usuário também é refletida no atributo de Propriedade de dispositivo no Intune. Para saber mais sobre a experiência do usuário, confira [Configurar o acesso do dispositivo iOS aos recursos de sua empresa](https://docs.microsoft.com/intune-user-help/enroll-your-device-in-intune-ios).
     
-    > [!NOTE]
-    > O aviso a seguir é impreciso e será removido da interface do usuário.
-    > "Para o Acesso Condicional funcionar em dispositivos direcionados ao Registro de Usuário, será necessário enviar por push o aplicativo Azure Authenticator como um aplicativo necessário para esse grupo de usuários habilitar o logon único e o Workplace Join."
-    > Como administrador, você não precisa realizar nenhuma ação para enviar por push o aplicativo autenticador para seus usuários. Os usuários serão instruídos dentro do Portal da Empresa a instalarem o aplicativo Authenticator para concluir o processo de Registro de usuário e garantir que esses cenários funcionem corretamente.
-
 5. Selecione **Avançar**.
 
 6. Na página **Atribuições**, escolha os grupos de usuários que contêm os usuários para os quais você deseja atribuir esse perfil. Você pode optar por atribuir o perfil a todos os usuários ou a grupos específicos. Todos os usuários nos grupos selecionados usarão o tipo de registro escolhido acima. Os grupos de dispositivos não são compatíveis com cenários de Registro de usuário porque o recurso é baseado em identidades de usuário, em vez de dispositivos. Você pode optar por atribuir o perfil a todos os usuários ou a grupos específicos.

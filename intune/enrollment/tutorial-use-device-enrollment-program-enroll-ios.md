@@ -15,12 +15,12 @@ ms.technology: ''
 ms.assetid: ''
 Customer intent: As an Intune admin, I want to set up the Apple's corporate device enrollment features so that corporate devices can automatically enroll in Intune.
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 56b8ab9507acda8fc1145bd65c4438da838dd806
-ms.sourcegitcommit: fc4b38660129d615068f34ad4b96b900d73f7b53
+ms.openlocfilehash: f5599e7ea8c9a26c4624f98133db566fb07c89af
+ms.sourcegitcommit: 5178aec0244e023e73546f3d10f1a76eaf1f4a3e
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/27/2019
-ms.locfileid: "74558160"
+ms.lasthandoff: 02/03/2020
+ms.locfileid: "76971774"
 ---
 # <a name="tutorial-use-apples-corporate-device-enrollment-features-in-apple-business-manager-abm-to-enroll-ios-devices-in-intune"></a>Tutorial: Usar recursos do Registro de dispositivos corporativos da Apple no ABM (Apple Business Manager) para registrar dispositivos iOS no Intune
 Os recursos de registro de dispositivos no Apple Business Manager simplificam o registro de dispositivos. O Intune também dá suporte ao portal DEP (Programa de registro de dispositivos) da Apple, o qual é mais antigo, mas incentivamos você a experimentar um novo começo com o Apple Business Manager. Com o Microsoft Intune e o Registro de dispositivos corporativos da Apple, os dispositivos são registrados automaticamente com segurança na primeira vez em que o usuário liga o dispositivo. Assim, você pode enviar dispositivos para vários usuários sem a necessidade de configurar cada dispositivo individualmente. 
@@ -67,7 +67,7 @@ Você pode usar o portal do DEP ou do ABM para criar um token do registro de dis
 
 8. Para **Escolher Ação**, escolha **Atribuir ao Servidor**, escolha o &lt;ServerName&gt; especificado para o Microsoft Intune e escolha **OK**. O Portal da Apple atribui os dispositivos especificados para o servidor do Intune para gerenciamento e exibe **Atribuição Concluída**.
 
-   No Portal da Apple, acesse **Programas de Implantação** &gt; **Programa de registro de dispositivos** &gt; **Exibir o Histórico de Atribuição** para ver uma lista de dispositivos e sua atribuição de servidor MDM.
+   No portal da Apple, acesse **Programas de implantação** &gt; **Programa de registro de dispositivos** &gt; **Exibir o histórico de atribuição** para ver uma lista de dispositivos e sua atribuição de servidor MDM.
 
 9. Para referência futura, no Intune, no portal do Azure, forneça a ID Apple usada para criar esse token.
 

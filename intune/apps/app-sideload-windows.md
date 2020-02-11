@@ -6,7 +6,7 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 01/06/2020
+ms.date: 01/23/2020
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.subservice: apps
@@ -16,16 +16,16 @@ ms.assetid: e44f1756-52e1-4ed5-bf7d-0e80363a8674
 search.appverid: MET150
 ms.custom: intune-classic
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: a4a4c6d40dc729fb72210c455c7819baaf89de3b
-ms.sourcegitcommit: a66b5916eaab9cb537e483064efc584a6a63a390
+ms.openlocfilehash: 03b8f050dc6232b87d1149aff0a93cd7b06839cd
+ms.sourcegitcommit: 139853f8d6ea61786da7056cfb9024a6459abd70
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2020
-ms.locfileid: "75691840"
+ms.lasthandoff: 01/26/2020
+ms.locfileid: "76755401"
 ---
 # <a name="sign-line-of-business-apps-so-they-can-be-deployed-to-windows-devices-with-intune"></a>Assine aplicativos da linha de negócios para que possam ser implantados em dispositivos Windows com o Intune
 
-Como administrador do Intune, é possível implantar aplicativos da linha de negócios (LOB) Universal em dispositivos Windows 8.1 Desktop ou Windows 10 Desktop e Mobile, incluindo o aplicativo de Portal da Empresa. Para implantar aplicativos .appx em dispositivos Windows 8.1 Desktop ou Windows 10 Desktop e Mobile você pode usar o certificado de assinatura de código de uma autoridade de certificação pública já confiável por seus dispositivos Windows ou pode usar sua própria autoridade de certificação.
+Como administrador do Intune, é possível implantar aplicativos da linha de negócios (LOB) Universal em dispositivos Windows 8.1 Desktop ou Windows 10 Desktop e Mobile, incluindo o aplicativo de Portal da Empresa. Para implantar aplicativos *.appx* em dispositivos Windows 8.1 Desktop ou Windows 10 Desktop e Mobile você pode usar o certificado de assinatura de código de uma autoridade de certificação pública já confiável por seus dispositivos Windows ou pode usar sua própria autoridade de certificação.
 
  > [!NOTE]
  > O Windows 8.1 Desktop requer uma política corporativa para habilitar o carregamento lateral ou o uso de Chaves de Sideload (habilitadas automaticamente para dispositivos ingressados no domínio). Para saber mais, confira [Sideload do Windows 8](https://blogs.technet.microsoft.com/scd-odtsp/2012/09/27/windows-8-sideloading-requirements-from-technet/).
@@ -52,10 +52,11 @@ Se você implantar o aplicativo conforme necessário para usuários ou dispositi
 
 Se o seu dispositivo Windows 10 ainda não confiar na autoridade de certificação, depois de assinar o pacote appx e carregá-lo no serviço Intune, será necessário carregar o certificado de assinatura de código no portal do Intune:
 
-1. Clique em Aplicativos Cliente
-2. Clique em Certificados do Windows Enterprise
-3. Selecione 'Selecionar um arquivo' em certificado de assinatura de código
-4. Selecione seu arquivo .cer e clique em carregar
+1. Entre no [Centro de Administração do Gerenciador de Ponto de Extremidade da Microsoft](https://go.microsoft.com/fwlink/?linkid=2109431).
+2. Clique em **Administração de locatário** > **Conectores e tokens** > **Certificados do Windows Enterprise**.
+3. Selecione um arquivo em **Arquivo de certificado de assinatura de código**.
+4. Selecione seu arquivo *.cer* e clique em **Abrir**.
+5. Clique em **Carregar** para adicionar o arquivo de certificado ao Intune.
 
 Agora, qualquer dispositivo Windows 10 Desktop & Mobile com uma implantação de appx pelo serviço Intune fará o download automático do certificado corporativo correspondente e o aplicativo poderá ser iniciado após a instalação.
 
@@ -94,7 +95,7 @@ Se você não deseja fornecer acesso à Microsoft Store, pode implantar manualme
       ![Imagem da pasta Dependências salva com o arquivo APPXBUN](./media/app-sideload-windows/Win10CP-Dependencies-save.png)
    2. Coloque os nove pacotes de dependências na pasta Dependências.  
       Se as dependências não forem colocadas nesse formato, o Intune não conseguirá reconhecê-las e carregá-las durante o carregamento do pacote, fazendo com que o carregamento falhe com o seguinte erro.  
-      ![Mensagem de erro – a dependência de aplicativo do Windows deve ser fornecida.](./media/app-sideload-windows/Win10CP-error-message.png)
+      <img alt="Error message - The Windows app dependency must be provided." src="./media/app-sideload-windows/Win10CP-error-message.png" width="200">
 6. Retorne ao Intune, em seguida, carregue o aplicativo Portal da Empresa como um novo aplicativo. Implante-o como um aplicativo necessário para o conjunto de usuários de destino desejado.  
 
 Consulte [Implantando um appxbundle com dependências via MDM do Microsoft Intune ](https://blogs.technet.microsoft.com/configmgrdogs/2016/11/30/deploying-an-appxbundle-with-dependencies-via-microsoft-intune-mdm/) para obter mais informações sobre como o Intune lida com as dependências para os aplicativos Universal.  

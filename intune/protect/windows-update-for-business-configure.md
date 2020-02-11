@@ -5,7 +5,7 @@ keywords: ''
 author: brenduns
 ms.author: brenduns
 manager: dougeby
-ms.date: 01/14/2020
+ms.date: 01/29/2020
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.subservice: protect
@@ -15,12 +15,12 @@ ms.reviewer: mghadial
 ms.suite: ems
 search.appverid: MET150
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: dc9dd03714e24dae4b0c7afe9206c6a8d7d36c13
-ms.sourcegitcommit: de663ef5f3e82e0d983899082a7f5b62c63f24ef
+ms.openlocfilehash: e478402f826809bda4f81315d5a1a4ff6e1a8b88
+ms.sourcegitcommit: 5ad0ce27a30ee3ef3beefc46d2ee49db6ec0cbe3
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/15/2020
-ms.locfileid: "75956281"
+ms.lasthandoff: 01/30/2020
+ms.locfileid: "76886807"
 ---
 # <a name="manage-windows-10-software-updates-in-intune"></a>Gerenciar atualizações de software do Windows 10 no Intune
 
@@ -92,7 +92,7 @@ Os anéis de atualização do Windows 10 dão suporte às [marcas de escopo](../
 
 6. Em **Atribuições**, escolha **+ Selecionar grupos para incluir** e atribua o anel de atualização a um ou mais grupos. Use **+ Selecionar grupos para excluir** a fim de ajustar a atribuição. Selecione **Avançar** para continuar.
 
-7. Em **Examinar + criar**, examine as configurações e, em seguida, selecione **Criar** quando estiver pronto para salvar seu anel de atualização do Windows 10. Seu novo anel de atualização é exibido na lista de anéis de atualização.
+7. Em **Examinar + Criar**, examine as configurações e, em seguida, selecione **Criar** quando estiver pronto para salvar seu anel de atualização do Windows 10. Seu novo anel de atualização é exibido na lista de anéis de atualização.
 
 ### <a name="manage-your-windows-10-update-rings"></a>Gerenciar seus anéis de atualização do Windows 10
 
@@ -205,20 +205,22 @@ Quando um dispositivo recebe uma política de atualizações de recursos do Wind
 
 - Ao contrário de usar *Pausar* com um anel de atualização, que expira após 35 dias, a política de atualizações de recursos do Windows 10 permanece em vigor. Os dispositivos não instalarão uma nova versão do Windows até que você modifique ou remova a política de atualizações de recursos do Windows 10. Se você editar a política para especificar uma versão mais recente, os dispositivos poderão instalar os recursos dessa versão do Windows.
 
+### <a name="prerequisites-for-windows-10-feature-updates"></a>Pré-requisitos para atualizações de recursos do Windows 10
+
+Os pré-requisitos a seguir devem ser atendidos para usar as atualizações de recursos do Windows 10 no Intune.
+
+- Os dispositivos devem estar registrados no MDM do Intune e ingressados ou registrados no Azure AD.
+- Para usar a política de Atualizações de Recursos com o Intune, os dispositivos precisam ter a telemetria ativada, com uma configuração mínima igual a [*Básico*](../configuration/device-restrictions-windows-10.md#reporting-and-telemetry). A telemetria é configurada em *Relatórios e Telemetria* como parte de uma [política de Restrição de Dispositivo](../configuration/device-restrictions-configure.md).
+  
+  Os dispositivos que recebem a política de Atualizações de Recursos e que têm a telemetria definida como *Não configurada*, o que significa que ela está desativada, podem instalar uma versão do Windows posterior àquela definida na política de Atualização de Recursos. O pré-requisito de exigência da telemetria está em revisão, pois esse recurso migra para a disponibilidade geral.
+
 ### <a name="limitations-for-windows-10-feature-updates"></a>Limitações para atualizações de recursos do Windows 10
 
 - Ao implantar uma política de *atualização de recurso do Windows 10* em um dispositivo que também recebe uma política de *Anel de atualização do Windows 10*, examine as seguintes configurações do anel de política:
   - O **Período de adiamento de atualização de recurso (dias)** deve ser definido como **0**.
   - As atualizações de recurso do anel de atualização devem estar *Em execução*. Elas não devem estar em pausa.
 
-- As políticas de atualização de recursos do Windows 10 não podem ser aplicadas durante a OOBE (experiência pronta para o uso) e serão aplicadas somente na primeira verificação do Windows Update depois que um dispositivo tiver concluído o provisionamento (o que normalmente leva um dia). Além disso, os dispositivos que foram provisionados com o AutoPilot não receberão a política.
-
-  Essa limitação está sendo examinada para verificar se ela pode receber suporte no futuro.
-
-> [!IMPORTANT]
-> Para usar a política de Atualizações de Recursos com o Intune, os dispositivos precisam ter a telemetria ativada, com uma configuração mínima igual a [*Básico*](../configuration/device-restrictions-windows-10.md#reporting-and-telemetry). A telemetria é configurada em *Relatórios e Telemetria* como parte de uma [política de Restrição de Dispositivo](../configuration/device-restrictions-configure.md).
->
-> Os dispositivos que recebem a política de Atualizações de Recursos e que têm a telemetria definida como *Não configurada*, o que significa que ela está desativada, podem instalar uma versão do Windows posterior àquela definida na política de Atualização de Recursos. O pré-requisito de exigência da telemetria está em revisão, pois esse recurso migra para a disponibilidade geral.
+- As políticas de atualização de recursos do Windows 10 não podem ser aplicadas durante a OOBE (experiência pronta para o uso) do Autopilot e serão aplicadas somente na primeira verificação do Windows Update depois que um dispositivo tiver concluído o provisionamento (o que normalmente leva um dia).
 
 ### <a name="create-and-assign-windows-10-feature-updates"></a>Criar e atribuir atualizações de recursos do Windows 10
 
@@ -232,7 +234,7 @@ Quando um dispositivo recebe uma política de atualizações de recursos do Wind
 
 5. Em **Revisar + criar**, examine as configurações e selecione **Criar** quando estiver pronto para salvar a política de atualizações de recursos do Windows 10.  
 
-### <a name="manage-windows-10-feature-updates"></a>Gerenciar Atualizações de recursos do Windows 10
+### <a name="manage-windows-10-feature-updates"></a>Gerenciar atualizações de recursos do Windows 10
 
 No centro de administração, vá para **Dispositivos** > **Windows** > **Atualizações de recursos do Windows 10** e selecione a política que você deseja gerenciar. A política é aberta no painel **Visão geral**.
 
@@ -242,10 +244,12 @@ Nesse painel, você pode:
 - Selecionar **Propriedades** para modificar a implantação.  No painel *Propriedades*, selecione **Editar** para abrir as *Configurações de implantação ou Atribuições*, nas quais é possível modificar a implantação.
 - Selecionar **Status de atualização do usuário final** para exibir as informações sobre a política.
 
+## <a name="validation-and-reporting-for-windows-10-updates"></a>Validação e relatórios para atualizações do Windows 10
+
+Para os anéis de atualização e as atualizações de recursos do Windows 10, use os [Relatórios de conformidade do Intune para atualizações](../windows-update-compliance-reports.md) para monitorar o status de atualização dos dispositivos. Essa solução usa as [Conformidade de Atualizações](https://docs.microsoft.com/windows/deployment/update/update-compliance-monitor) com sua assinatura do Azure.
+
 ## <a name="next-steps"></a>Próximas etapas
 
 [Configurações de atualização do Windows compatíveis com o Intune](../windows-update-settings.md)
-
-[Relatórios de conformidade do Intune para atualizações](../windows-update-compliance-reports.md)
 
 [Solucionar problemas com anéis de atualização do Windows 10](https://techcommunity.microsoft.com/t5/Intune-Customer-Success/Support-Tip-Troubleshooting-Windows-10-Update-Ring-Policies/ba-p/714046)

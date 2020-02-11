@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: d09857c4e5b63947a6e3b3140f673f0887f7f920
-ms.sourcegitcommit: 73b362173929f59e9df57e54e76d19834f155433
+ms.openlocfilehash: 40337b3c45885dacf486173814044a27b7f3f6cc
+ms.sourcegitcommit: 139853f8d6ea61786da7056cfb9024a6459abd70
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/27/2019
-ms.locfileid: "74563421"
+ms.lasthandoff: 01/26/2020
+ms.locfileid: "76755061"
 ---
 # <a name="quickstart-add-and-assign-a-client-app"></a>Início Rápido: Adicionar e atribuir um aplicativo cliente
 
@@ -45,20 +45,18 @@ Um aplicativo pode ser incluído para que o Intune possa gerenciar os aspectos d
 
 Use as seguintes etapas para adicionar um aplicativo ao Intune:
 1. No [Intune](https://aka.ms/intuneportal), selecione **Aplicativos** > **Todos os aplicativos** > **Adicionar**. 
-2. Selecione **Windows 10** na seção **Pacote do Office 365** da caixa suspensa **Tipo de aplicativo**.
-3. Selecione **Configurar Pacote de Aplicativos** para selecionar os aplicativos do Office a serem atribuídos ao usuário do Intune.
-4. Clique em **OK** para aceitar os aplicativos selecionados padrão.
-5. Selecione **Informações do Pacote de Aplicativo**.
-6. Insira o **pacote de aplicativo do Microsoft Office 365** como **Nome do Pacote**.
-7. Insira o **pacote de aplicativo do Microsoft Office 365** como a **Descrição do Pacote**.
-8. Clique em **Sim** próximo a **Exibir isso como um aplicativo em destaque no Portal da Empresa**.
-9. Clique em **OK**.
-
-    ![Captura de tela da adição de informações do aplicativo](./media/quickstart-add-assign-app/quickstart-add-assign-app-01.png)
-
-10. Selecione **Configurações do Pacote de Aplicativos**.
-11. Na caixa suspensa **Canal de Atualização**, selecione **Mensal**.
-12. Clique em **OK** > **Adicionar**.
+2. Selecione **Windows 10**, na seção **Office 365 Suite** do painel **Selecionar tipo de aplicativo**.
+3. Clique em **Selecionar**. As etapas de **Adicionar aplicativo** são exibidas.
+4. Confirme os detalhes padrão na página de **Informações do pacote de aplicativos**.
+5. Clique em **Avançar** para exibir a página **Configurar o pacote de aplicativos**.
+6. Ao lado de **Atualizar canal** selecione **Mensal** na caixa suspensa.
+7. Confirme os detalhes padrão restantes na página ***Configurar o pacote de aplicativos**.
+8. Clique em **Avançar** para exibir a página **Marcas de escopo**.
+9. Clique em **Selecionar marcas de escopo** para adicionar opcionalmente marcas de escopo no aplicativo. Para saber mais, confira [Usar o RBAC (controle de acesso baseado em função) e marcas de escopo para TI distribuída](~/fundamentals/scope-tags.md).
+10. Clique em **Avançar** para exibir a página **Atribuições**.
+11. Selecione as atribuições de grupo para o aplicativo. Para saber mais, confira [Adicionar grupos para organizar usuários e dispositivos](~/fundamentals/groups-add.md). 
+12. Clique em **Avançar** para exibir a página **Revisar + criar**. Examine os valores e as configurações que você inseriu para o aplicativo.
+13. Quando terminar, clique em **Criar** para adicionar o aplicativo ao Intune.
 
 ## <a name="assign-the-app-to-a-group"></a>Atribuir um aplicativo a um grupo
 

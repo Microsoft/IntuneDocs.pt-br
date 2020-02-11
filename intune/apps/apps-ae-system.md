@@ -6,7 +6,7 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 11/26/2019
+ms.date: 01/23/2020
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.subservice: apps
@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: d45455a97f8016527dce49839b5493f16b173d43
-ms.sourcegitcommit: 73b362173929f59e9df57e54e76d19834f155433
+ms.openlocfilehash: 613369070d847265f371a7b228a2b6d81bf813fe
+ms.sourcegitcommit: 139853f8d6ea61786da7056cfb9024a6459abd70
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/27/2019
-ms.locfileid: "74563652"
+ms.lasthandoff: 01/26/2020
+ms.locfileid: "76755248"
 ---
 # <a name="add-android-enterprise-system-apps-to-microsoft-intune"></a>Adicionar aplicativos do sistema Android Enterprise ao Microsoft Intune
 
@@ -35,13 +35,20 @@ Para adicionar um aplicativo do sistema Android Enterprise ao Intune no portal d
 
 1. Entre no [Centro de Administração do Gerenciador de Ponto de Extremidade da Microsoft](https://go.microsoft.com/fwlink/?linkid=2109431).
 2. Selecione **Aplicativos** > **Todos os aplicativos** > **Adicionar**.
-3. No painel **Adicionar aplicativo**, sob **Outros** tipos disponíveis, selecione **Aplicativo do sistema Android Enterprise**.
-4. Para configurar as informações do aplicativo, selecione **Configurar** e forneça as informações a seguir:
+3. No painel **Selecionar tipo de aplicativo**, sob **Outros** tipos disponíveis, selecione **Aplicativo do sistema Android Enterprise**.
+4. Clique em **Selecionar**. As etapas de **Adicionar aplicativo** são exibidas.
+No painel **Informações do aplicativo**, adicione os detalhes do aplicativo:
     - **Nome do Aplicativo**: Insira o nome do aplicativo.
     - **Editor**: Insira o nome do editor do aplicativo.  
     - **Nome do Pacote**: Insira o nome do pacote. O Intune determinará se o nome do pacote é válido.
-5. Selecione **OK**.
-6. Selecione **Adicionar**.
+5. Clique em **Avançar** para exibir a página **Marcas de escopo**.
+8. Clique em **Selecionar marcas de escopo** para adicionar opcionalmente marcas de escopo no aplicativo. Para saber mais, confira [Usar o RBAC (controle de acesso baseado em função) e marcas de escopo para TI distribuída](~/fundamentals/scope-tags.md).
+9. Clique em **Avançar** para exibir a página **Atribuições**.
+10. Selecione as atribuições de grupo para o aplicativo. Para saber mais, confira [Adicionar grupos para organizar usuários e dispositivos](~/fundamentals/groups-add.md). 
+11. Clique em **Avançar** para exibir a página **Revisar + criar**. Examine os valores e as configurações que você inseriu para o aplicativo.
+12. Quando terminar, clique em **Criar** para adicionar o aplicativo ao Intune.
+
+A folha **Visão geral** do aplicativo criado é exibida.
 
 > [!NOTE]
 > Você precisará trabalhar com o OEM do dispositivo para localizar o nome do pacote do aplicativo que deseja habilitar/desabilitar.

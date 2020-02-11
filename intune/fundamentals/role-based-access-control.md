@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure; get-started
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 4a03366037f9b0eced70f0375b3f4b39401e3141
-ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
+ms.openlocfilehash: 8441a93a34af68a680aec2f48b3a5375fa74558c
+ms.sourcegitcommit: 139853f8d6ea61786da7056cfb9024a6459abd70
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "72509817"
+ms.lasthandoff: 01/26/2020
+ms.locfileid: "76754296"
 ---
 # <a name="role-based-access-control-rbac-with-microsoft-intune"></a>RBAC (controle de acesso baseado em função) com o Microsoft Intune
 
@@ -52,6 +52,7 @@ Você pode atribuir funções internas a grupos sem configuração adicional. N�
 - **Gerenciador de Aplicativos**: gerencia os aplicativos móveis e gerenciados, pode ler as informações do dispositivo e pode exibir os perfis de configuração do dispositivo.
 - **Administrador de Função do Intune**: gerencia funções personalizadas do Intune e adiciona atribuições a funções internas do Intune. É a única função do Intune que pode atribuir permissões a Administradores.
 - **Administrador de Escola**: Gerencia dispositivos Windows 10 no [Intune para Educação](../introduction-intune-education.md).
+- **Gerenciador de Segurança do Ponto de Extremidade**: gerencia os recursos de segurança e conformidade, como linhas de base de segurança, conformidade do dispositivo, acesso condicional e Microsoft Defender ATP.
 
 ### <a name="custom-roles"></a>Funções personalizadas
 É possível criar suas próprias funções com permissões personalizadas. Para saber mais informações sobre funções personalizadas, confira [Criar uma função personalizada](create-custom-role.md).
@@ -62,7 +63,7 @@ Você pode atribuir funções internas a grupos sem configuração adicional. N�
 | Administrador Global | Leitura/gravação | Leitura/gravação |
 | Administrador de Serviços do Intune | Leitura/gravação | Leitura/gravação |
 | Administrador de Acesso Condicional | Nenhum | Nenhum |
-| Administrador de Segurança | Somente leitura | Somente leitura |
+| Administrador de Segurança | Somente leitura (permissões administrativas completas para o nó de Segurança do Ponto de Extremidade) | Somente leitura |
 | Operador de segurança | Somente leitura | Somente leitura |
 | Leitor de segurança | Somente leitura | Somente leitura |
 | Administrador de conformidade | Nenhum | Somente leitura |

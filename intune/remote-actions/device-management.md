@@ -16,13 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure; get-started
 ms.collection: M365-identity-device-management
-redirect_url: https://docs.microsoft.com/intune
-ms.openlocfilehash: ff82b1ed70d3021c33a166c694e3efe5d10905e0
-ms.sourcegitcommit: e4602481a25a5e12379f673dfe801c611f51c35b
+ms.openlocfilehash: dde69fc70522684193f9cf6712a2192f77110dab
+ms.sourcegitcommit: 139853f8d6ea61786da7056cfb9024a6459abd70
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/08/2020
-ms.locfileid: "75731357"
+ms.lasthandoff: 01/26/2020
+ms.locfileid: "76754245"
 ---
 # <a name="what-is-microsoft-intune-device-management"></a>O que é o gerenciamento de dispositivo do Microsoft Intune?
 
@@ -62,7 +61,7 @@ As ações disponíveis dependem da plataforma e da configuração do dispositiv
   - [Apagar](devices-wipe.md#wipe)
   - [Bloqueio remoto](device-remote-lock.md)
   - [Redefinir senha](device-passcode-reset.md)
-  - [Bypass do bloqueio de ativação](device-activation-lock-bypass.md) (somente iOS)
+  - [Desabilitar o bloqueio de ativação](device-activation-lock-bypass.md) (somente iOS)
   - [Novo Início](device-fresh-start.md) (somente Windows)
   - [Modo perdido](device-lost-mode.md) (somente iOS)
   - [Localizar dispositivo](device-locate.md) (somente iOS)

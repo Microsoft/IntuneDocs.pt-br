@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure, get-started, seoapril2019
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 3c340ffaacad303c4ff395c84d92e3907e42a521
-ms.sourcegitcommit: 52475fcd8d05d2f6b858d780ebb3d88eaadb0849
+ms.openlocfilehash: e0f36e648c404858332245c5b1b457c9f6824614
+ms.sourcegitcommit: 5178aec0244e023e73546f3d10f1a76eaf1f4a3e
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/15/2020
-ms.locfileid: "76036635"
+ms.lasthandoff: 02/03/2020
+ms.locfileid: "76971890"
 ---
 # <a name="app-protection-policies-overview"></a>Visão geral das políticas de proteção de aplicativos
 
@@ -82,7 +82,7 @@ O Intune oferece uma variedade de recursos para ajudar a obter os aplicativos qu
 O suporte da plataforma de políticas de proteção de aplicativo do Intune está alinhado ao suporte da plataforma de aplicativo móvel do Office para dispositivos com Android e iOS. Para obter detalhes, confira a seção **Aplicativos móveis** dos [Requisitos de sistema do Office](https://products.office.com/office-system-requirements#coreui-contentrichblock-9r05pwg).
 
 > [!IMPORTANT]
-> O dispositivo exige o Portal da Empresa do Intune para receber Políticas de proteção do aplicativo no Android. Saiba mais em [Requisitos de acesso dos aplicativos para o Portal da Empresa do Intune](../fundamentals/end-user-mam-apps-android.md#access-apps).
+> O dispositivo exige o Portal da Empresa do Intune para receber Políticas de proteção de aplicativos no Android. Saiba mais em [Requisitos de acesso dos aplicativos para o Portal da Empresa do Intune](../fundamentals/end-user-mam-apps-android.md#access-apps).
 
 ## <a name="how-app-protection-policies-protect-app-data"></a>Como as políticas de proteção de aplicativo protegem dados do aplicativo
 

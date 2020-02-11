@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 7170f723707ef709ef464b35bc3f6d3297341cf1
-ms.sourcegitcommit: de663ef5f3e82e0d983899082a7f5b62c63f24ef
+ms.openlocfilehash: 099d68568cd920c9ae3f328b4e9fba95424e46fd
+ms.sourcegitcommit: 139853f8d6ea61786da7056cfb9024a6459abd70
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/15/2020
-ms.locfileid: "75956194"
+ms.lasthandoff: 01/26/2020
+ms.locfileid: "76755265"
 ---
 # <a name="add-apps-to-microsoft-intune"></a>Adicionar aplicativos ao Microsoft Intune 
 
@@ -74,10 +74,10 @@ A tabela a seguir lista os tipos de aplicativo específicos e como você pode ad
 
 <sup>1</sup> Para saber mais sobre perfis corporativos do Android e do Android Enterprise, confira o tópico [Noções básicas sobre aplicativos licenciados](apps-add.md#understanding-licensed-apps) abaixo.
 
-Você pode adicionar um aplicativo no Microsoft Intune selecionando **Aplicativos** > **Todos os aplicativos** > **Adicionar**. O painel **Adicionar aplicativo** aparece e permite que você selecione o **Tipo de aplicativo**. 
+Você pode adicionar um aplicativo no Microsoft Intune selecionando **Aplicativos** > **Todos os aplicativos** > **Adicionar**. O painel **Selecionar tipo de aplicativo** é exibido e permite selecionar o **Tipo de aplicativo**. 
 
 >[!TIP]
-> Um aplicativo LOB é um aplicativo que pode ser adicionado de um arquivo de instalação do aplicativo. Por exemplo, para instalar um aplicativo LOB do iOS, adicione o aplicativo selecionando **Aplicativo de linha de negócios** como o **Tipo de aplicativo** no painel **Adicionar aplicativo**. Em seguida, selecione o arquivo do pacote do aplicativo (extensão .ipa). Normalmente, esses tipos de aplicativos são escritos internamente.
+> Um aplicativo LOB é um aplicativo que pode ser adicionado de um arquivo de instalação do aplicativo. Por exemplo, para instalar um aplicativo LOB do iOS, adicione o aplicativo selecionando **Aplicativo de linha de negócios** como o **Tipo de aplicativo** no painel **Selecionar tipo de aplicativo**. Em seguida, selecione o arquivo do pacote do aplicativo (extensão .ipa). Normalmente, esses tipos de aplicativos são escritos internamente.
 
 ## <a name="assess-app-requirements"></a>Avalie os requisitos do aplicativo
 Como um administrador de TI, você não apenas determina quais aplicativos o seu grupo deve usar, mas também as funcionalidades necessárias para cada grupo e subgrupo. Para cada aplicativo, você determina as plataformas necessárias, os grupos de usuários que precisam do aplicativo, as políticas de configuração a serem aplicadas a esses grupos e as políticas de proteção a serem aplicadas.  

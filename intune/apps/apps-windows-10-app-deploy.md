@@ -6,7 +6,7 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 11/26/2019
+ms.date: 01/30/2020
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.subservice: apps
@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: c9d792bd07ae8d7d712748874d64314dd258c5e8
-ms.sourcegitcommit: 73b362173929f59e9df57e54e76d19834f155433
+ms.openlocfilehash: fa4510b95e1e84d9f94158833dac555daa33c690
+ms.sourcegitcommit: c46b0c2d4507be6a2786a4ea06009b2d5aafef85
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/27/2019
-ms.locfileid: "74563938"
+ms.lasthandoff: 02/01/2020
+ms.locfileid: "76912549"
 ---
 # <a name="windows-10-app-deployment-by-using-microsoft-intune"></a>Implantação de aplicativo do Windows 10 usando o Microsoft Intune 
 
@@ -39,6 +39,26 @@ Os aplicativos LOB (linha de negócios) e os aplicativos da Microsoft Store para
 > Somente o Windows 10 1803 e superior são compatíveis com a instalação de aplicativos quando não há um usuário primário associado.
 >
 > Não há compatibilidade para a implantação de aplicativos de linha de negócios em dispositivos que executam o Windows 10 Home Edition.
+
+## <a name="supported-windows-10-app-types"></a>Tipos de aplicativo do Windows 10 com suporte
+
+Os tipos de aplicativo específicos são compatíveis com base na versão do Windows 10 que os usuários estão executando. A tabela a seguir fornece o tipo de aplicativo e a compatibilidade com o Windows 10.
+
+| Tipo de aplicativo | Início | Pro | Empresas | Enterprise | Educação | Modo S | Hololense | SurfaceHub | WCOS | Celular |
+|----------------|------|-----|----------|------------|-----------|--------|-----------|------------|------|--------|
+|  .MSI | Não | Sim | Sim | Sim | Sim | Não | Não | Não | Não | Não |
+| .IntuneWin | Não | Sim | Sim | Sim | Sim | 19H2+ | Não | Não | Não | Não |
+| Office C2R | Não | Sim | Sim | Sim | Sim | Não | Não | Não | Não | Não |
+| LOB: APPX/MSIX | Sim | Sim | Sim | Sim | Sim | Sim | Sim | Sim | Sim | Sim |
+| MSFB Offline | Sim | Sim | Sim | Sim | Sim | Sim | Sim | Sim | Sim | Sim |
+| MSFB Online | Sim | Sim | Sim | Sim | Sim | Sim | RS4+ | Sim | Sim | Sim |
+| Aplicativos Web | Sim | Sim | Sim | Sim | Sim | Sim | Sim<sup>1 | Sim<sup>1 | Sim | Sim |
+| Link da Store | Sim | Sim | Sim | Sim | Sim | Sim | Sim | Sim | Sim | Sim |
+
+<sup>1</sup> Iniciar somente a partir do Portal da Empresa.
+
+> [!NOTE]
+> Todos os tipos de aplicativos do Windows exigem registro.
 
 ## <a name="windows-10-lob-apps"></a>Aplicativos de linha de negócios do Windows 10
 
@@ -60,22 +80,28 @@ Para categorizar aplicativos da Microsoft Store para Empresas:
 Dependendo do tipo de aplicativo, é possível instalá-lo em um dispositivo Windows 10 de uma das maneiras a seguir:
 
 - **Contexto de usuário**: quando o aplicativo for implantado no contexto do usuário, sua versão gerenciada será instalada no dispositivo do usuário quando este conectar o dispositivo. Observe que a instalação do aplicativo não funcionará enquanto o usuário não conectar o dispositivo. 
-  - Os aplicativos de linha de negócios modernos e os aplicativos da Microsoft Store para Empresas (online e offline) podem ser implantados no contexto do usuário. Os aplicativos dão suporte às intenções Necessário e Disponível.
+  - Os aplicativos LOB modernos e os aplicativos da Microsoft Store para Empresas (online e offline) podem ser implantados no contexto do usuário. Os aplicativos dão suporte às intenções Necessário e Disponível.
   - Os aplicativos Win32 criados como Modo de usuário ou Modo Dual podem ser implantados no contexto do usuário e dão suporte às intenções Necessário e Disponível. 
 - **Contexto de dispositivo**: quando um aplicativo é implantado no contexto do dispositivo, sua versão gerenciada é instalada diretamente no dispositivo pelo Intune.
-  - Somente os aplicativos de linha de negócios modernos e os aplicativos licenciados offline da Microsoft Store para Empresas podem ser implantados no contexto do dispositivo. Esses aplicativos dão suporte apenas à intenção Necessário.
+  - Somente os aplicativos LOB modernos e os aplicativos licenciados offline da Microsoft Store para Empresas podem ser implantados no contexto do dispositivo. Esses aplicativos dão suporte apenas à intenção Necessário.
   - Os aplicativos Win32 criados como Modo de Máquina ou Modo Dual podem ser implantados no contexto do dispositivo e dão suporte apenas à intenção Necessário.
 
 > [!NOTE]
 > Para aplicativos Win32 criados como Modo Dual, o administrador precisará escolher se o aplicativo funcionará como Modo de Usuário ou Modo de Máquina para todas as atribuições associadas a essa instância. O contexto de implantação não pode ser alterado por atribuição.  
 
-Quando um aplicativo for implantado no contexto de dispositivo, a instalação terá êxito apenas quando for direcionada para um dispositivo que dê suporte ao contexto do dispositivo. Além disso, a implantação no contexto de dispositivo dá suporte às seguintes condições:
-- se um aplicativo for implantado no contexto do dispositivo e direcionado para um usuário, a instalação falhará. O status e o erro a seguir aparecem no console administrativo:
+Os aplicativos só podem ser instalados no contexto do dispositivo quando compatíveis com o dispositivo e com o tipo de aplicativo do Intune. Você pode instalar os seguintes tipos de aplicativo no contexto do dispositivo e atribuir esses aplicativos a um grupo de dispositivos:
+
+- Aplicativos Win32
+- Aplicativos offline licenciados da Microsoft Store para Empresas
+- Aplicativos LOB (MSI, APPX e MSIX)
+- Office 365 ProPlus
+
+Os aplicativos LOB do Windows (especificamente APPX e MSIX) e os aplicativos Microsoft Store para Empresas (aplicativos offline) que você selecionou para instalar no contexto do dispositivo devem ser atribuídos a um grupo de dispositivos. A instalação falhará se um desses aplicativos for implantado no contexto do usuário. O status e o erro a seguir aparecem no console administrativo:
   - Status: Falha.
   - Erro: Um usuário não pode ser direcionado com uma instalação de contexto do dispositivo.
-- Se um aplicativo for implantado no contexto do dispositivo, mas direcionado para um dispositivo sem suporte a esse contexto, a instalação falhará. O status e o erro a seguir aparecem no console administrativo:
-  - Status: Falha.
-  - Erro: essa plataforma não dá suporte a instalações de contexto de dispositivo. 
+
+> [!IMPORTANT]
+> Quando usado em combinação com um cenário de provisionamento diferenciado do Autopilot, não há nenhum requisito para aplicativos LOB e aplicativos da Microsoft Store para Empresas implantados no contexto do dispositivo destinado ao grupo de dispositivos. Para saber mais, confira [Implantação diferenciada do Windows Autopilot](https://docs.microsoft.com/windows/deployment/windows-autopilot/white-glove).
 
 > [!Note]
 > Depois de salvar uma atribuição de aplicativo com uma implantação específica, não é possível alterar o contexto dela, exceto em aplicativos modernos. No caso de aplicativos modernos, é possível alterar de contexto do usuário para o contexto do dispositivo. 

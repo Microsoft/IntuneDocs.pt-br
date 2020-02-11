@@ -5,7 +5,7 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 12/04/2019
+ms.date: 01/28/2020
 ms.topic: troubleshooting
 ms.service: microsoft-intune
 ms.subservice: configuration
@@ -17,16 +17,14 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 95186e4d1e54737ffeaa5e4c9728d188c2f867d6
-ms.sourcegitcommit: e166b9746fcf0e710e93ad012d2f52e2d3ed2644
+ms.openlocfilehash: 881d0f095d2144ae42db4825336275980a19f419
+ms.sourcegitcommit: b0d683917af83170f85022b270270d8ced8e301c
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/19/2019
-ms.locfileid: "75206628"
+ms.lasthandoff: 01/29/2020
+ms.locfileid: "76812358"
 ---
 # <a name="common-questions-issues-and-resolutions-with-device-policies-and-profiles-in-microsoft-intune"></a>Perguntas, problemas e soluções comuns para perfis e políticas de dispositivo no Microsoft Intune
-
-
 
 Obtenha respostas para perguntas comuns ao trabalhar com perfis e políticas de dispositivos no Intune. Este artigo também lista os intervalos de tempo de check-in, fornece mais detalhes sobre conflitos e muito mais.
 
@@ -83,6 +81,8 @@ Há diferentes ações que disparam uma notificação, como quando uma política
 Os dispositivos fazem o check-in no Intune quando recebem uma notificação ou durante o check-in agendado. Ao direcionar uma ação a um dispositivo ou usuário, como bloqueio, redefinição de senha, atribuição de aplicativo, atribuição de perfil ou atribuição de política, o Intune notifica imediatamente o dispositivo para fazer check-in a fim de receber essas atualizações.
 
 Outras alterações, como revisar as informações de contato no aplicativo Portal da Empresa, não causam uma notificação imediata para os dispositivos.
+
+As configurações na política ou perfil são aplicadas em cada check-in. A [postagem no blog sobre atualização da política de MDM do Windows 10](https://www.petervanderwoude.nl/post/windows-10-mdm-policy-refresh/) pode ser um bom recurso.
 
 ## <a name="if-multiple-policies-are-assigned-to-the-same-user-or-device-how-do-i-know-which-settings-gets-applied"></a>Se várias políticas forem atribuídas ao mesmo usuário ou dispositivo, como saber quais configurações serão aplicadas?
 

@@ -16,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 501bfcbef0dd46f6021fc5db16cf3b9e2f2cd0c0
-ms.sourcegitcommit: 2506cdbfccefd42587a76f14ee50c3849dad1708
+ms.openlocfilehash: 24d0a8160d852a5a44f5df688b7e0bc230d56704
+ms.sourcegitcommit: c7c6be3833d9a63d43f31d598b555b49b33cf5cb
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/11/2020
-ms.locfileid: "75886007"
+ms.lasthandoff: 02/03/2020
+ms.locfileid: "76966378"
 ---
 # <a name="configure-infrastructure-to-support-scep-with-intune"></a>Configurar a infraestrutura para dar suporte ao SCEP com o Intune
 
@@ -378,6 +378,32 @@ O Microsoft Intune Certificate Connector é instalado no mesmo servidor que hosp
 5. Quando precisar selecionar o certificado do cliente para o Certificate Connector, escolha **Selecionar** e selecione o certificado de **autenticação de cliente** instalado no servidor NDES durante a etapa 3 do procedimento [Instalar e associar certificados no servidor que hospeda o NDES](#install-and-bind-certificates-on-the-server-that-hosts-ndes) anteriormente neste artigo.
 
    Depois de selecionar o certificado de autenticação de cliente, você retornará para a superfície do **Certificado do Cliente do Microsoft Intune Certificate Connector**. Embora o certificado selecionado não seja mostrado, selecione **Avançar** para exibir as propriedades do certificado. Selecione **Avançar** e, em seguida, **Instalar**.
+
+> [!NOTE]
+> É necessário fazer as alterações a seguir para locatários do GCC High antes de iniciar o Intune Certificate Connector.
+> 
+> Edite os dois arquivos de configuração relacionados abaixo, que atualizarão os pontos de extremidade de serviço do ambiente GCC High. Observe que essas atualizações alteram os sufixos dos URIs de **.com** para **.us**. Há um total de três atualizações de URI, duas atualizações no arquivo de configuração NDESConnectorUI.exe.config e uma atualização no arquivo NDESConnector.exe.config.
+> 
+> - Nome do arquivo: <install_Path>\Microsoft Intune\NDESConnectorUI\NDESConnectorUI.exe.config
+> 
+>   Exemplo: (%programfiles%\Microsoft Intune\NDESConnectorUI\NDESConnectorUI.exe.config)
+>   ```
+>    <appSettings>
+>        <add key="SignInURL" value="https://portal.manage.microsoft.us/Home/ClientLogon"/>
+>        <add key="LocationServiceEndpoint" value="RestUserAuthLocationService/RestUserAuthLocationService/ServiceAddresses"/>
+>        <add key="AccountPortalURL" value="https://manage.microsoft.us"/>
+>    </appSettings>
+>   ```
+> 
+> - Nome do arquivo: <install_Path>\Microsoft Intune\NDESConnectorSvc\NDESConnector.exe.config
+>
+>   Exemplo: (%programfiles%\Microsoft Intune\NDESConnectorSvc\NDESConnector.exe.config)
+>    ```
+>    <appSettings>
+>        <add key="BaseServiceAddress" value="https://manage.microsoft.us/" />
+>    ```
+>
+> Se essas edições não forem concluídas, os locatários do GCC High receberão este erro: "Acesso negado" "Você não tem autorização para exibir esta página"
 
 6. Após a conclusão do assistente, mas antes de fechá-lo, escolha **Iniciar a Interface do Usuário do Conector de Certificado**.
 

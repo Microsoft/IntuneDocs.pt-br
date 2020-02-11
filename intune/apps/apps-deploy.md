@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: e990cd94c0f8622d07e59b4130566a1dc2953a1c
-ms.sourcegitcommit: 73b362173929f59e9df57e54e76d19834f155433
+ms.openlocfilehash: 15d6a67cb41455a1e3c0830e9ed242bfa52b0269
+ms.sourcegitcommit: c46b0c2d4507be6a2786a4ea06009b2d5aafef85
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/27/2019
-ms.locfileid: "74563990"
+ms.lasthandoff: 02/01/2020
+ms.locfileid: "76912651"
 ---
 # <a name="assign-apps-to-groups-with-microsoft-intune"></a>Atribuir aplicativos a grupos com o Microsoft Intune
 
@@ -64,7 +64,7 @@ A tabela a seguir lista as várias opções para atribuir aplicativos para usuá
    - **Disponível para dispositivos registrados**: Atribua o aplicativo aos grupos de usuários que podem instalar o aplicativo no site ou do aplicativo Portal da Empresa.
    - **Disponível com ou sem registro**: Atribua este aplicativo a grupos de usuários cujos dispositivos não estão registrados no Intune. É necessário atribuir uma licença do Intune a esses usuários, consulte [Licenças do Intune](../fundamentals/licenses.md).
    - **Obrigatório**: O aplicativo é instalado nos dispositivos dos grupos selecionados. Algumas plataformas podem ter solicitações adicionais para o usuário final confirmar antes do início da instalação do aplicativo.
-   - **Desinstalação**: O aplicativo é desinstalado dos dispositivos nos grupos selecionados se o Intune tiver instalado anteriormente o aplicativo no dispositivo por meio de uma atribuição "Disponível para dispositivos registrados" ou "Obrigatória" usando a mesma implantação. Links da Web não podem ser removidos após a implantação.
+   - **Desinstalar**: O aplicativo é desinstalado dos dispositivos nos grupos selecionados se o Intune tiver instalado anteriormente o aplicativo no dispositivo por meio de uma atribuição "Disponível para dispositivos registrados" ou "Obrigatória" usando a mesma implantação. Links da Web não podem ser removidos após a implantação.
 
      > [!NOTE]
      > **Somente para aplicativos iOS**:
@@ -132,7 +132,7 @@ Etapas para atribuição de um aplicativo do Google Play Gerenciado em dispositi
 Quando um apagamento seletivo do APP é emitido no console do Intune, a conta de trabalho é automaticamente removida do aplicativo do Play Store, e o usuário final não verá mais os aplicativos de trabalho no catálogo de aplicativos da Play Store. Quando a conta de trabalho for removida de um dispositivo, os aplicativos instalados da Play Store permanecerão instalados no dispositivo e não serão desinstalados. 
 
 ## <a name="app-uninstall-setting-for-ios-managed-apps"></a>Configuração de desinstalação para aplicativos iOS gerenciados
-Para dispositivos iOS, você pode escolher o que acontece com os aplicativos gerenciados ao cancelar o registro do dispositivo no Microsoft Intune ou ao remover o perfil de gerenciamento usando a configuração **Desinstalar ao remover o dispositivo**. Essa configuração se aplicará aos aplicativos somente depois que o dispositivo for registrado e os aplicativos forem instalados como gerenciados. Não é possível definir a configuração para links ou aplicativos Web. 
+Para dispositivos iOS, você pode escolher o que acontece com os aplicativos gerenciados ao cancelar o registro do dispositivo no Microsoft Intune ou ao remover o perfil de gerenciamento usando a configuração **Desinstalar ao remover o dispositivo**. Essa configuração se aplicará aos aplicativos somente depois que o dispositivo for registrado e os aplicativos forem instalados como gerenciados. Não é possível definir a configuração para links ou aplicativos Web. Somente os dados protegidos pelo MAM (Gerenciamento de aplicativo móvel) são removidos após a desativação por uma Limpeza Seletiva de Aplicativo.
 
 Os valores padrão dessa configuração são preenchidos previamente para novas atribuições da seguinte maneira:
 

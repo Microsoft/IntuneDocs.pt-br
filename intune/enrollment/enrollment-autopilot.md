@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: cb98ee2974cefeebb90689207388d5fe9229dad2
-ms.sourcegitcommit: 52475fcd8d05d2f6b858d780ebb3d88eaadb0849
+ms.openlocfilehash: e9da7acfc34dbd25902fc6fb9617ba395216a9b3
+ms.sourcegitcommit: 24487f078349795922dc497c952e8358cf767a1a
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/15/2020
-ms.locfileid: "76036668"
+ms.lasthandoff: 02/04/2020
+ms.locfileid: "76977794"
 ---
 # <a name="enroll-windows-devices-in-intune-by-using-the-windows-autopilot"></a>Registrar dispositivos Windows no Intune usando o Windows Autopilot  
 O Windows Autopilot simplifica a inscrição de dispositivos no Intune. Compilar e manter imagens de sistema operacional personalizadas é um processo que consome muito tempo. Além disso, geralmente se gasta muito tempo para aplicar essas imagens personalizadas de sistema operacional aos novos dispositivos para prepará-los para o uso antes de fornecê-los aos usuários finais. Com o Microsoft Intune e o Autopilot, é possível dar novos dispositivos seus usuários finais sem precisar criar, manter e aplicar imagens personalizadas do sistema operacional para os dispositivos. Quando usa o Intune para gerenciar dispositivos do Autopilot, você pode gerenciar políticas, perfis, aplicativos e muito mais, depois de registrá-los. Para obter uma visão geral dos benefícios, cenários e pré-requisitos, confira [Visão geral do Windows Autopilot](https://docs.microsoft.com/windows/deployment/windows-autopilot/windows-10-autopilot).
@@ -158,6 +158,13 @@ Depois de carregar um dispositivo do Autopilot, você poderá editar determinado
 Os alertas mostrarão quantos dispositivos do programa Autopilot não têm os perfis de implantação do Autopilot. Use as informações no alerta para criar perfis e atribuí-los aos dispositivos não atribuídos. Quando você clica no alerta, vê uma lista completa de dispositivos Windows Autopilot e informações detalhadas sobre eles.
 
 Para receber alertas sobre dispositivos não atribuídos, no [Centro de administração do Gerenciador de Ponto de Extremidade da Microsoft](https://go.microsoft.com/fwlink/?linkid=2109431), escolha **Dispositivos** > **Visão geral** > **Alertas de registro** > **Dispositivos não atribuídos**.  
+
+## <a name="autopilot-deployments-report"></a>Relatório de implantações do Autopilot
+É possível ver detalhes sobre cada dispositivo implantado usando o Windows Autopilot.
+Para ver o relatório, vá ao [Centro de Administração do Gerenciador de Ponto de Extremidade da Microsoft](https://go.microsoft.com/fwlink/?linkid=2109431), escolha **Dispositivos** > **Monitor** > **Implantações do Autopilot**.
+Os dados ficam disponíveis por 30 dias após a implantação.
+
+Este relatório está em versão prévia. Atualmente, os registros de implantação de dispositivo são acionados apenas por novos eventos de registro no Intune. Isso significa que qualquer implantação que não acionar um novo registro do Intune não será coletada por esse relatório. Isso inclui qualquer tipo de redefinição que mantém o registro e a parte do usuário da assistência individual do Autopilot.
 
 ## <a name="assign-a-user-to-a-specific-autopilot-device"></a>Atribuir um usuário a um dispositivo específico do Autopilot
 

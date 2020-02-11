@@ -6,7 +6,7 @@ keywords: ''
 author: brenduns
 ms.author: brenduns
 manager: dougeby
-ms.date: 11/18/2019
+ms.date: 01/24/2020
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.subservice: protect
@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 644297777e8a103d6ffdc5f025ebf8f29591fda8
-ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
+ms.openlocfilehash: d04897d38c1b46f27fe86e72ecfa6856aa9eece2
+ms.sourcegitcommit: 139853f8d6ea61786da7056cfb9024a6459abd70
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "74188462"
+ms.lasthandoff: 01/26/2020
+ms.locfileid: "76755622"
 ---
 # <a name="create-a-conditional-access-policy-for-exchange-on-premises-and-legacy-exchange-online-dedicated"></a>Criar uma política de Acesso Condicional para o Exchange local e o Exchange Online Dedicado herdado
 
@@ -37,7 +37,7 @@ Antes de poder configurar o Acesso Condicional, verifique se as seguintes config
 
 - Sua versão do Exchange é **Exchange 2010 SP1 ou posterior**. Há suporte para a matriz de CAS (Servidor de Acesso de Cliente) do servidor Exchange.
 
-- Você precisa instalar e usar o [conector do Exchange local do Exchange Active Sync](exchange-connector-install.md), que conecta o Intune ao Exchange local.
+- Você precisa instalar e usar o [conector do Exchange local do Exchange ActiveSync](exchange-connector-install.md), que conecta o Intune ao Exchange local.
 
     >[!IMPORTANT]  
     >O Intune é compatível com vários conectores do Exchange locais por assinatura.  No entanto, cada conector do Exchange local é específico a um único locatário do Intune e não pode ser usado com nenhum outro locatário.  Se você tiver mais de uma organização do Exchange local, poderá configurar um conector separado para cada organização do Exchange.
@@ -84,40 +84,57 @@ Antes de poder usar o procedimento a seguir para configurar o controle de acesso
 
 3. No painel **Acesso ao Exchange local**, escolha **Sim** para *Habilitar o controle de acesso do Exchange local*.
 
+   > [!div class="mx-imgBorder"]
+   > ![Captura de tela de exemplo da tela de acesso local do Exchange](./media/conditional-access-exchange-create/exchange-on-premises-access.png)
+
 4. Em **Atribuição**, escolha **Selecionar grupos para incluir** e selecione um ou mais grupos para configurar o acesso.
 
    Os membros dos grupos selecionados têm a política de Acesso Condicional para acesso ao Exchange local aplicada a eles. Os usuários que recebem essa política precisam registrar seus dispositivos no Intune e atender aos perfis de conformidade antes de poderem acessar o Exchange local.
 
-5. Para excluir grupos, escolha **Selecionar grupos para excluir** e, em seguida, selecione um ou mais grupos isentos de requisitos para registrar dispositivos e para ficar em conformidade com os perfis de conformidade antes de acessar o Exchange local. 
+   > [!div class="mx-imgBorder"]
+   > ![Selecionar grupos para incluir](./media/conditional-access-exchange-create/select-groups.png)
 
-6. Depois, defina as configurações para o conector do Exchange local do Intune.  Em **Configurar** na janela *Acesso local do Exchange*, selecione **Conector local do Exchange ActiveSync** e selecione o conector para a organização do Exchange que você deseja configurar.
+5. Para excluir grupos, escolha **Selecionar grupos para excluir** e, em seguida, selecione um ou mais grupos isentos de requisitos para registrar dispositivos e para ficar em conformidade com os perfis de conformidade antes de acessar o Exchange local.
 
-7. Em **Configurações**, escolha **Notificações do usuário** para modificar a mensagem de email padrão que será enviada aos usuários se o dispositivo deles não estiver em conformidade e se quiserem acessar o Exchange local. O modelo de mensagem usa a linguagem de marcação.  Também é possível ver a versão prévia de aparência da mensagem conforme você digita.
+   Selecione **Salvar** para salvar a configuração e retornar para o painel **Acesso do Exchange**.
+
+6. Depois, defina as configurações para o conector do Exchange local do Intune. No console, selecione **Administrador do locatário** > **Acesso do Exchange**> **Conector local do Exchange ActiveSync** e selecione o conector para a organização do Exchange que você deseja configurar.
+
+7. Para **Notificações de usuário**, selecione **Editar** para abrir o fluxo de trabalho **Editar organização**, em que é possível modificar a mensagem *Notificação do usuário*.
+
+   > [!div class="mx-imgBorder"]
+   > ![Captura de tela de exemplo do fluxo de trabalho Editar organização para notificações](./media/conditional-access-exchange-create/edit-organization-user-notification.png)
+
+   Modificar a mensagem de email padrão que será enviada aos usuários se o dispositivo deles não estiver em conformidade e se quiserem acessar o Exchange local. O modelo de mensagem usa a linguagem de marcação. Também é possível ver a versão prévia de aparência da mensagem conforme você digita
+
+   Selecione **Revisar + salvar** e **Salvar** para salvar suas edições e concluir a configuração de acesso ao Exchange local.
+
    > [!TIP]
    > Para saber mais sobre a linguagem de marcação, consulte este [artigo](https://en.wikipedia.org/wiki/Markup_language) da Wikipédia.
- 
-   Selecione **OK** para salvar suas edições e concluir a configuração de acesso ao Exchange local.
 
-8. Em seguida, selecione **Configurações avançadas de acesso do Exchange Active Sync** para abrir o painel *Configurações avançadas de acesso do Exchange ActiveSync* no qual você configura as regras de acesso ao dispositivo:  
+8. Em seguida, selecione **Configurações avançadas de acesso do Exchange ActiveSync** para abrir o fluxo de trabalho *Configurações avançadas de acesso do Exchange ActiveSync* no qual você configura as regras de acesso ao dispositivo.
+
+   > [!div class="mx-imgBorder"]
+   > ![Captura de tela de exemplo do fluxo de trabalho Editar Organização para configurações avançadas](./media/conditional-access-exchange-create/edit-organization-advanced-settings.png)
 
    - Para **Acesso de dispositivo não gerenciado**, defina a regra padrão global para acesso de dispositivos que não são afetados pelo Acesso Condicional ou outras regras:
 
      - **Permitir acesso**: todos os dispositivos podem acessar o Exchange local imediatamente. Os dispositivos que pertencem aos usuários nos grupos configurados como incluídos no procedimento anterior serão bloqueados se, posteriormente, forem avaliados como não compatíveis com as políticas ou não registrados no Intune.
 
-     - **Bloquear acesso** e **Quarentena**: todos os dispositivos serão imediatamente impedidos de acessar o Exchange local inicialmente. Os dispositivos que pertencem aos usuários nos grupos configurados como incluídos no procedimento anterior obtêm acesso após o registro do dispositivo no Intune e são avaliados como compatíveis. 
+     - **Bloquear acesso** e **Quarentena**: todos os dispositivos serão imediatamente impedidos de acessar o Exchange local inicialmente. Os dispositivos que pertencem aos usuários nos grupos configurados como incluídos no procedimento anterior obtêm acesso após o registro do dispositivo no Intune e são avaliados como compatíveis.
 
        Dispositivos Android que *não* executam o Samsung Knox Standard não dão suporte a essa configuração e estão sempre bloqueados.
 
-   -  Para **Exceções de plataforma de dispositivo**, selecione **Adicionar** e especifique os detalhes da plataforma conforme necessário para o seu ambiente. 
-   
+   - Para **Exceções de plataforma de dispositivo**, selecione **Adicionar** e especifique os detalhes conforme necessário para o seu ambiente.
+
       Se a configuração **Acesso de dispositivo não gerenciado** estiver definida como **Bloqueado**, os dispositivos que estão registrados e em conformidade serão permitidos mesmo se houver uma exceção de plataforma para bloqueá-los.  
-   
-   Selecione **OK** para salvar suas edições.
 
-9. Selecione **Salvar** para salvar a política de Acesso Condicional do Exchange.
+9. Selecione **OK** para salvar suas edições.
 
-Em seguida, crie uma política de conformidade e a atribua aos usuários do Intune para avaliar os dispositivos móveis deles. Confira [Introdução à conformidade do dispositivo](device-compliance-get-started.md).
+10. Selecione **Revisar + salvar** e **Salvar** para salvar a política de Acesso Condicional do Exchange.
 
 ## <a name="next-steps"></a>Próximas etapas
+
+Em seguida, crie uma política de conformidade e a atribua aos usuários do Intune para avaliar os dispositivos móveis deles. Confira [Introdução à conformidade do dispositivo](device-compliance-get-started.md).
 
 [Solucionar problemas do conector do Exchange local do Intune no Microsoft Intune](https://support.microsoft.com/help/4471887)

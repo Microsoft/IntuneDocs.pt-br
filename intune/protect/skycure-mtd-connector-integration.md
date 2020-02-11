@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: f6c28b222307ee20e3198033ef6aa4af3d756e7e
-ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
+ms.openlocfilehash: 19c1bb959212ebeaea40f7089cba5533b6efeb71
+ms.sourcegitcommit: c46b0c2d4507be6a2786a4ea06009b2d5aafef85
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "72681328"
+ms.lasthandoff: 02/01/2020
+ms.locfileid: "76912600"
 ---
 # <a name="set-up-symantec-endpoint-protection-mobile-integration-with-intune"></a>Configurar a integração do Symantec Endpoint Protection Mobile com o Intune
 
@@ -40,7 +40,7 @@ Conclua as seguintes etapas para integrar a solução SEP Mobile (Symantec Endpo
 - A conta do Azure AD deve ser uma conta de administrador global para realizar a integração.
 ### <a name="network-setup"></a>Configuração da Rede
 
-Você pode garantir que a sua rede esteja configurada corretamente para integração com a configuração do SEP Mobile consultando o artigo da Symantec [Definindo sua configuração de rede](https://portal.skycure.com/articles/Documentation/Setting-up-your-network-configuration-26-8-2016).
+Você pode garantir que a sua rede esteja configurada corretamente para integração com a configuração do SEP Mobile consultando o artigo da Symantec [Configurar o Gerenciador SEP após a instalação](https://support.symantec.com/us/en/article.HOWTO80819.html).
 
 ### <a name="full-integration-vs-read-only"></a>Integração total versus Somente leitura.
 
@@ -101,7 +101,7 @@ O SEP Mobile sincroniza os dispositivos que executam seu serviço de Defesa cont
 
 ### <a name="retrieve-the-directory-id-in-azure-ad"></a>Recuperar a ID de Diretório no Azure AD
 
-1. Entre no [Portal do Azure](https://portal.azure.com).
+1. Entre no [portal do Azure](https://portal.azure.com).
 
 2. Digite "Active Directory" na caixa de pesquisa e, em seguida, selecione **Azure Active Directory**.
 

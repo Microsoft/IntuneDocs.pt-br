@@ -16,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 83b8c48d2bb594ca8b9c527d78922332e582363f
-ms.sourcegitcommit: 66e284fe092e19c1da72b4b770e45bf25ac7910c
+ms.openlocfilehash: a56d8f7aface3628ba5bc8985128ebb49c9cf404
+ms.sourcegitcommit: b0d683917af83170f85022b270270d8ced8e301c
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "74860288"
+ms.lasthandoff: 01/29/2020
+ms.locfileid: "76812165"
 ---
 # <a name="set-rules-on-devices-to-allow-access-to-resources-in-your-organization-using-intune"></a>Definir regras em dispositivos para permitir o acesso aos recursos em sua organização usando o Intune
 
@@ -92,6 +92,10 @@ O Intune também inclui um conjunto de configurações de política de conformid
   - **Em não conformidade**: o recurso de segurança está ativado.
 
   Quando um dispositivo não tem uma política de conformidade atribuída, é considerado como dispositivo compatível por padrão. Se você usa Acesso Condicional com políticas de conformidade, recomendamos alterar a configuração padrão para **Em não conformidade**. Se um usuário final não estiver em conformidade por não ter uma política atribuída, o [Portal da Empresa](../apps/company-portal-app.md) mostrará `No compliance policies have been assigned`.
+
+
+> [!NOTE]
+> A detecção de jailbreak avançada para dispositivos iOS foi desabilitada temporariamente no Intune.
 
 - **Detecção avançada de jailbreak**: Quando habilitada, essa configuração faz com que dispositivos iOS realizem check-in com o Intune com mais frequência. Habilitar essa propriedade usa serviços de localização do dispositivo e afeta o uso da bateria. Os dados de local do usuário não são armazenados pelo Intune.
 

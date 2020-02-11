@@ -16,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: ce3f73834ffdc2648dae345f8fa2a8233d2bb8c9
-ms.sourcegitcommit: e7052114324b80d0503b107c934bb90b8eb29704
+ms.openlocfilehash: 11e3465c583197582a545cdd6f4b71bc8d24e115
+ms.sourcegitcommit: 139853f8d6ea61786da7056cfb9024a6459abd70
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/08/2020
-ms.locfileid: "75756025"
+ms.lasthandoff: 01/26/2020
+ms.locfileid: "76754182"
 ---
 # <a name="see-device-details-in-intune"></a>Consultar detalhes do dispositivo no Intune
 
@@ -84,7 +84,7 @@ Dependendo da operadora usada pelos dispositivos, nem todos os detalhes podem se
 |ICCID|Identificador de Cartão de Circuito Integrado, o número de identificação exclusivo de um cartão SIM.|Windows, iOS, Android|
 |Data registrada|A data e hora em que o dispositivo foi registrado no Intune.|Windows, iOS, Android|
 |Último contato|A data e hora em que o dispositivo se conectou pela última vez no Intune.|Windows, iOS, Android|
-|Código de bypass do bloqueio de ativação|O código que pode ser usado para ignorar o bloqueio de ativação.|iOS|
+|Código de bypass do bloqueio de ativação|O código que pode ser usado para desabilitar o bloqueio de ativação.|iOS|
 |Azure AD registrado|Se **Sim**, o dispositivo está registrado no diretório do Azure.|Windows, iOS, Android|
 |Registrado no Intune|Se **Sim**, o dispositivo está registrado no Microsoft Intune|Windows, iOS, Android|
 |Conformidade|O estado de conformidade do dispositivo.|Windows, iOS, Android|
@@ -92,8 +92,6 @@ Dependendo da operadora usada pelos dispositivos, nem todos os detalhes podem se
 |ID de ativação de EAS|O identificador Exchange ActiveSync do dispositivo.|Windows, iOS, Android|
 |Supervisionado|Se **Sim**, os administradores têm controle aprimorado sobre o dispositivo.|Windows, iOS, Android|
 |Criptografado|Se **Sim**, os dados armazenados no dispositivo estão criptografados.|Windows, iOS, Android|
-
-\* Não disponível no Android com o gerenciador de políticas do Google, como dispositivos totalmente gerenciados e dedicados
 
 > [!Note]  
 > O número de telefone não é inventariado em dispositivos Android Enterprise dedicados ou totalmente gerenciados.

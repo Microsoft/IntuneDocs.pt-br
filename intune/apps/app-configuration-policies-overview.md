@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 800193921e608a0d0c29dad5cf85b8781e715441
-ms.sourcegitcommit: 2506cdbfccefd42587a76f14ee50c3849dad1708
+ms.openlocfilehash: 8c9dc1d95806bcddf423bb4d92dbdf4961c15809
+ms.sourcegitcommit: b0d683917af83170f85022b270270d8ced8e301c
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/11/2020
-ms.locfileid: "75885804"
+ms.lasthandoff: 01/29/2020
+ms.locfileid: "76812472"
 ---
 # <a name="app-configuration-policies-for-microsoft-intune"></a>Políticas de configuração de aplicativo do Microsoft Intune
 
@@ -95,8 +95,8 @@ Valide a política de configuração de aplicativos usando os três seguintes m�
 
 Você pode validar a configuração do iOS com o **Log de diagnóstico do Intune** em dispositivos não gerenciados para configuração de aplicativo gerenciado. Além das etapas a seguir, você pode acessar logs de aplicativos gerenciados usando o Microsoft Edge. Confira mais informações em [Usar o Microsoft Edge no iOS para acessar os logs de aplicativo gerenciado](~/apps/manage-microsoft-edge.md#use-microsoft-edge-on-ios-to-access-managed-app-logs).
 
-1. Se ainda não estiver instalado no dispositivo, baixe e instale o **Intune Managed Browser** da App Store. Para obter mais informações, confira [Aplicativos protegidos do Microsoft Intune](apps-supported-intune-apps.md).
-2. Inicie o **Intune Managed Browser** e selecione **sobre** > **ajudaintune** na barra de navegação.
+1. Se ainda não estiver instalado no dispositivo, baixe e instale o **Microsoft Edge** da App Store. Para obter mais informações, confira [Aplicativos protegidos do Microsoft Intune](apps-supported-intune-apps.md).
+2. Inicie o **Microsoft Edge** e selecione **sobre** > **ajudaintune** na barra de navegação.
 3. Clique em **Introdução**.
 4. Clique em **Compartilhar Logs**.
 5. Use o aplicativo de email de sua escolha para enviar o log a você mesmo para poder visualizá-los em seu computador. 
@@ -139,8 +139,8 @@ Os detalhes de configuração do aplicativo devem corresponder às políticas de
 
 Você pode validar a configuração do iOS com o **Log de diagnóstico do Intune** em dispositivos gerenciados para configuração de aplicativo gerenciado.
 
-1. Se ainda não estiver instalado no dispositivo, baixe e instale o **Intune Managed Browser** da App Store. Para obter mais informações, confira [Aplicativos protegidos do Microsoft Intune](apps-supported-intune-apps.md).
-2. Inicie o **Intune Managed Browser** e selecione **sobre** > **ajudaintune** na barra de navegação.
+1. Se ainda não estiver instalado no dispositivo, baixe e instale o **Microsoft Edge** da App Store. Para obter mais informações, confira [Aplicativos protegidos do Microsoft Intune](apps-supported-intune-apps.md).
+2. Inicie o **Microsoft Edge** e selecione **sobre** > **ajudaintune** na barra de navegação.
 3. Clique em **Introdução**.
 4. Clique em **Compartilhar Logs**.
 5. Use o aplicativo de email de sua escolha para enviar o log a você mesmo para poder visualizá-los em seu computador. 

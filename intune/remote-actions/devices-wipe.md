@@ -16,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 2d9fbbbb80cf25861b2e0afbf3d01cfca3ece5fd
-ms.sourcegitcommit: df8e2c052fafb2d5d4e9b4fcd831ae0ecf7f8d16
+ms.openlocfilehash: 7cda7404d24ccb9bb1c42d6bb66d77f29ac925ac
+ms.sourcegitcommit: b0d683917af83170f85022b270270d8ced8e301c
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/10/2019
-ms.locfileid: "74991770"
+ms.lasthandoff: 01/29/2020
+ms.locfileid: "76812452"
 ---
 # <a name="remove-devices-by-using-wipe-retire-or-manually-unenrolling-the-device"></a>Remova dispositivos por meio de apagamento, desativação ou cancelando o registro do dispositivo manualmente
 
@@ -38,8 +38,8 @@ A ação **Apagar** restaura um dispositivo para as configurações padrão de f
 
 |Ação de apagamento|**Manter o estado do registro e a conta de usuário**|Removido do gerenciamento do Intune|Descrição|
 |:-------------:|:------------:|:------------:|------------|
-|**Apagamento**| Não verificado | Sim | Apaga todas as contas de usuário, dados, políticas de MDM e configurações. Redefine o sistema operacional para seu estado e configurações padrão.|
-|**Apagamento**| Verificado | Não | Apaga todas as políticas de MDM. Mantém as contas de usuário e dados. Redefine as configurações de usuário de volta ao padrão. Redefine o sistema operacional para seu estado e configurações padrão.|
+|**Apagar**| Não verificado | Sim | Apaga todas as contas de usuário, dados, políticas de MDM e configurações. Redefine o sistema operacional para seu estado e configurações padrão.|
+|**Apagar**| Verificado | Não | Apaga todas as políticas de MDM. Mantém as contas de usuário e dados. Redefine as configurações de usuário de volta ao padrão. Redefine o sistema operacional para seu estado e configurações padrão.|
 
 
 > [!NOTE]
@@ -88,7 +88,7 @@ As tabelas a seguir descrevem quais dados são removidos e o efeito da ação **
 
 |Tipo de dados|iOS|
 |-------------|-------|
-|Aplicativos da empresa e dados associados instalados pelo Intune|**Aplicativos instalados usando o Portal da Empresa:** Para aplicativos que são fixados ao perfil de gerenciamento, todos os dados de aplicativo e os aplicativos propriamente ditos são removidos. Esses aplicativos incluem os aplicativos instalados originalmente da App Store e posteriormente gerenciados como aplicativos da empresa. <br /><br /> **Aplicativos da Microsoft que usam o gerenciamento de aplicativos móveis e foram instalados da App Store:** Para aplicativos que não são gerenciados pelo Portal da Empresa, os dados de aplicativo da empresa que são protegidos pela criptografia de MAM (gerenciamento de aplicativo móvel) dentro do armazenamento local do aplicativo são removidos. Dados protegidos pela criptografia de MAM fora do aplicativo permanecem criptografados e não utilizáveis, mas não são removidos. Os dados pessoais de aplicativos e os aplicativos não são removidos.|
+|Aplicativos da empresa e dados associados instalados pelo Intune|**Aplicativos instalados usando o Portal da Empresa:** Para aplicativos que são fixados ao perfil de gerenciamento, todos os dados de aplicativo e os aplicativos propriamente ditos são removidos. Esses aplicativos incluem os aplicativos originalmente instalados da App Store e depois gerenciados como aplicativos da empresa, a menos que o aplicativo esteja configurado para não ser desinstalado na remoção do dispositivo. <br /><br /> **Aplicativos da Microsoft que usam o gerenciamento de aplicativos móveis e foram instalados da App Store:** Para aplicativos que não são gerenciados pelo Portal da Empresa, os dados de aplicativo da empresa que são protegidos pela criptografia de MAM (gerenciamento de aplicativo móvel) dentro do armazenamento local do aplicativo são removidos. Dados protegidos pela criptografia de MAM fora do aplicativo permanecem criptografados e não utilizáveis, mas não são removidos. Os dados pessoais de aplicativos e os aplicativos não são removidos.|
 |Configurações|As configurações definidas pela política do Intune não serão mais impostas. Os usuários podem alterar as configurações.|
 |Configurações dos perfis de Wi-Fi e VPN|Removidos.|
 |Configurações do perfil de certificado|Certificados são removidos e revogados.|
@@ -134,7 +134,7 @@ Você só pode apagar os dispositivos de quiosque. Você não pode desativar dis
 
 ### <a name="windows"></a>Windows
 
-|Tipo de dados|Windows 8.1 (MDM) e Windows RT 8.1|Windows RT|Windows Phone 8.1 e Windows Phone 8|Windows 10|
+|Tipo de dados|Windows 8.1 (MDM) e Windows RT 8.1|Windows RT|Windows Phone 8.1 e Windows Phone 8|Windows 10|
 |-------------|----------------------------------------------------------------|--------------|-----------------------------------------|--------|
 |Aplicativos da empresa e dados associados instalados pelo Intune|As chaves são revogadas para arquivos protegidos pelo EFS. O usuário não pode abrir os arquivos.|Aplicativos da empresa não são removidos.|Os aplicativos instalados originalmente por meio do Portal da empresa são desinstalados. Dados de aplicativo da empresa são removidos.|Aplicativos são desinstalados. Chaves de sideload são removidas.<br>Na versão 1703 do Windows 10 (Atualização para Criadores) e em versões posteriores, os aplicativos do Office 365 ProPlus não são removidos. Os aplicativos Win32 instalados pela extensão de gerenciamento do Intune não serão desinstalados em dispositivos não registrados. Os administradores podem aproveitar a exclusão de atribuição para não oferecer aplicativos Win32 em dispositivos BYOD.|
 |Configurações|As configurações definidas pela política do Intune não serão mais impostas. Os usuários podem alterar as configurações.|As configurações definidas pela política do Intune não serão mais impostas. Os usuários podem alterar as configurações.|As configurações definidas pela política do Intune não serão mais impostas. Os usuários podem alterar as configurações.|As configurações definidas pela política do Intune não serão mais impostas. Os usuários podem alterar as configurações.|

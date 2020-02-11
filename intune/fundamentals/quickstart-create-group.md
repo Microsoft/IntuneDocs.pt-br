@@ -6,7 +6,7 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 10/22/2019
+ms.date: 01/17/2020
 ms.topic: quickstart
 ms.service: microsoft-intune
 ms.subservice: fundamentals
@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: d73cc367e6c3308b34c2d2dd14c9fed94d80ba74
-ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
+ms.openlocfilehash: d9b06043dd10f92b6176d4b2e9f90f1b7c87aac9
+ms.sourcegitcommit: 70b40aa4743c8396f8d6a0163893c4a337d67c48
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "72813395"
+ms.lasthandoff: 01/23/2020
+ms.locfileid: "76540938"
 ---
 # <a name="quickstart-create-a-group-to-manage-users"></a>Início Rápido: Criar um grupo para gerenciar usuários
 
@@ -36,22 +36,23 @@ Se você não tiver uma assinatura do Intune, [inscreva-se para uma conta de ava
 
 ## <a name="prerequisites"></a>Pré-requisitos
 
+- Assinatura do Microsoft Intune – [inscreva-se para uma conta de avaliação gratuita](../fundamentals/free-trial-sign-up.md).
 - Para concluir esse início rápido, é preciso [criar um usuário](quickstart-create-user.md).
 
-## <a name="sign-in-to-intune"></a>Entrar no Intune
+## <a name="sign-in-to-intune-in-the-microsoft-endpoint-manager"></a>Entre no Intune no Gerenciador de Ponto de Extremidade da Microsoft
 
-Entre no [portal do Intune](https://aka.ms/intuneportal) como [Administrador global ou Administrador de serviços do Intune](users-add.md#types-of-administrators). Se você tiver criado uma assinatura de avaliação do Intune, a conta com a qual você criou a assinatura será a de administrador Global.
+Entre no [Centro de Administração do Gerenciador de Ponto de Extremidade da Microsoft](https://go.microsoft.com/fwlink/?linkid=2109431) como [Administrador global ou Administrador de serviços do Intune](users-add.md#types-of-administrators). Se você tiver criado uma assinatura de avaliação do Intune, a conta com a qual você criou a assinatura será a de administrador Global.
 
 ## <a name="create-a-group"></a>Criar um grupo
 
 Você criará um grupo que será usado posteriormente nesta série de início rápido. Para criar um grupo:
 
-1. Depois de abrir o painel do **Microsoft Intune**, selecione **Grupos** > **Novo grupo**.
+1. Após abrir o **Gerenciador de Ponto de Extremidade da Microsoft**, selecione **Grupos** > **Novo grupo**.
 2. Na caixa suspensa **Tipo de grupo**, selecione **Segurança**.
 3. No campo **Nome do grupo**, insira o nome do novo grupo (por exemplo, **Testes da Contoso**).
-4. Adicione uma **Descrição** para o grupo.
+4. Adicione uma **Descrição do grupo** para o grupo.
 5. Defina o **Tipo de associação** como **Atribuído**. 
-6. Clique em **Membros** e selecione um ou mais membros para o grupo na lista.
+6. Em **Membros**, selecione o link e adicione um ou mais membros para o grupo na lista.
 
     ![Captura de tela da criação de um grupo no Microsoft Intune](./media/quickstart-create-group/quickstart-use-groups-01.png)
 

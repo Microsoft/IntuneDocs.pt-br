@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 4246dab0cf22053d76fdd50f99de53e827332a23
-ms.sourcegitcommit: a82d25d98fdf0ba766f8f074871d4f13725e23f9
+ms.openlocfilehash: 0dac0607fcaa92ebe65a7ddacc3cd91c63bf246e
+ms.sourcegitcommit: 5178aec0244e023e73546f3d10f1a76eaf1f4a3e
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/31/2019
-ms.locfileid: "75547818"
+ms.lasthandoff: 02/03/2020
+ms.locfileid: "76971867"
 ---
 # <a name="set-enrollment-restrictions"></a>Definir restrições de registro
 
@@ -82,12 +82,13 @@ As restrições padrão são fornecidas automaticamente para as restrições de 
    > O Windows 10 não fornece o número de rev durante o registro. Portanto, para a instância, se você inserir 10.0.17134.100 e o dispositivo for 10.0.17134.174, ele será bloqueado durante o registro.
 
 6. Em **Propriedade pessoal**, escolha **Permitir** para as plataformas que você deseja permitir como dispositivos de propriedade pessoal.
-7. Escolha **Avançar** para ir até a página **Atribuições**.
-8. Escolha **Selecionar grupos para incluir** e, em seguida, use a caixa de pesquisa para localizar os grupos que você deseja incluir nessa restrição. A restrição aplica-se apenas a grupos aos quais ela foi atribuída. Se você não atribuir uma restrição a pelo menos um grupo, ela não terá nenhum efeito. Em seguida, escolha **Selecionar**. 
+7. Em **Fabricante do dispositivo**, insira uma lista separada por vírgulas dos fabricantes que você deseja bloquear.
+8. Escolha **Avançar** para ir até a página **Atribuições**.
+9. Escolha **Selecionar grupos para incluir** e, em seguida, use a caixa de pesquisa para localizar os grupos que você deseja incluir nessa restrição. A restrição aplica-se apenas a grupos aos quais ela foi atribuída. Se você não atribuir uma restrição a pelo menos um grupo, ela não terá nenhum efeito. Em seguida, escolha **Selecionar**. 
     ![Captura de tela da escolha das configurações de plataforma](./media/enrollment-restrictions-set/select-groups.png)
-9. Selecione **Avançar** para acessar a página **Revisar + criar**.
-10. Selecione **Criar** para criar a restrição.
-11. A nova restrição é criada com uma prioridade acima do padrão. É possível [alterar a prioridade](#change-enrollment-restriction-priority).
+10. Selecione **Avançar** para acessar a página **Revisar + criar**.
+11. Selecione **Criar** para criar a restrição.
+12. A nova restrição é criada com uma prioridade acima do padrão. É possível [alterar a prioridade](#change-enrollment-restriction-priority).
 
 
 ## <a name="create-a-device-limit-restriction"></a>Criar uma restrição de limite de dispositivo

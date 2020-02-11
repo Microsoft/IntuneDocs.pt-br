@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic; get-started
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 02c1508dd3eb9c8a8932c1504c6f4d0a53c5a0d5
-ms.sourcegitcommit: e166b9746fcf0e710e93ad012d2f52e2d3ed2644
+ms.openlocfilehash: dfa93bb758447c872d172ded7706fd7507a42f11
+ms.sourcegitcommit: c7c6be3833d9a63d43f31d598b555b49b33cf5cb
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/19/2019
-ms.locfileid: "75207376"
+ms.lasthandoff: 02/03/2020
+ms.locfileid: "76966276"
 ---
 # <a name="us-government-endpoints-for-microsoft-intune"></a>Pontos de extremidade do governo dos EUA para o Microsoft Intune
 
@@ -61,7 +61,7 @@ As tabelas a seguir listam as portas e serviços que o cliente do Intune acessa:
 - ADRS: https:\//enterpriseregistration.microsoftonline.us
 
 ## <a name="windows-push-notification-services"></a>Serviço de Notificação por Push do Windows
-Em dispositivos gerenciados pelo Intune e com o MDM (gerenciamento de dispositivo móvel), o WNS (Serviço de Notificação por Push do Windows) é necessário para ações do dispositivo e outras atividades imediatas. Para obter mais informações, confira [Firewall corporativo e configurações de proxy para dar suporte ao tráfego do WNS](https://docs.microsoft.com/windows/uwp/design/shell/tiles-and-notifications/firewall-allowlist-config)
+Em dispositivos gerenciados pelo Intune e com o MDM (gerenciamento de dispositivo móvel), o WNS (Serviços de Notificação por Push do Windows) é necessário para ações do dispositivo e outras atividades imediatas. Para obter mais informações, confira [Firewall corporativo e configurações de proxy para dar suporte ao tráfego do WNS](https://docs.microsoft.com/windows/uwp/design/shell/tiles-and-notifications/firewall-allowlist-config)
 
 ## <a name="apple-device-network-information"></a>Informações de rede de dispositivo Apple
 
