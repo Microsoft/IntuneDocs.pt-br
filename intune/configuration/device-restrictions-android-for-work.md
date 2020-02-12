@@ -15,12 +15,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure, seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: b6afd80517df3496e0c1402fc0c76f3fc24969fa
-ms.sourcegitcommit: e166b9746fcf0e710e93ad012d2f52e2d3ed2644
+ms.openlocfilehash: 122f0b0194a96b844e274ab39a73224eb23cc6b3
+ms.sourcegitcommit: 9b29478f815e10c46c8030abe0146d601ce0e28c
 ms.translationtype: MTE75
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/19/2019
-ms.locfileid: "75206594"
+ms.lasthandoff: 02/06/2020
+ms.locfileid: "77051585"
 ---
 # <a name="android-enterprise-device-settings-to-allow-or-restrict-features-using-intune"></a>Configurações do dispositivo do Android Enterprise para permitir ou restringir os recursos usando o Intune
 
@@ -32,7 +32,7 @@ Este artigo lista e descreve as diferentes configurações que você pode contro
 
 ## <a name="device-owner-only"></a>Somente proprietário do dispositivo
 
-Essas configurações se aplicam a tipos de registro do Android Enterprise, em que o Intune controla todo o dispositivo, como dispositivos Android Enterprise totalmente gerenciados ou dedicados.
+Essas configurações aplicam-se a tipos de registro do Android Enterprise, em que o Intune controla todo o dispositivo, como dispositivos Android Enterprise Totalmente Gerenciados ou Dedicados.
 
 ### <a name="general-settings"></a>Configurações gerais
 
@@ -44,7 +44,7 @@ Essas configurações se aplicam a tipos de registro do Android Enterprise, em q
   - **Concessão automática**: As permissões são concedidas automaticamente.
   - **Negação automática**: As permissões são negadas automaticamente.
 - **Alterações de data e hora**: Escolha **Bloquear** para impedir que os usuários definam manualmente a data e a hora. **Não configurado** permite que os usuários definam a data e a hora do dispositivo.
-- **Alterações de volume**: o **bloco** impede que os usuários alterem o volume do dispositivo e também faz mudo do volume mestre. **Não configurado** permite o uso de configurações de volume no dispositivo.
+- **Alterações de volume**: **Bloquear** impede que os usuários alterem o volume do dispositivo e também ativa o mudo do volume mestre. **Não configurado** permite o uso de configurações de volume no dispositivo.
 - **Redefinição de fábrica**: Escolha **Bloquear** para impedir o uso da opção de redefinição de fábrica nas configurações do dispositivo. **Não configurado** permite o uso dessa configuração no dispositivo.
 - **Inicialização segura**: Escolha **Bloquear** para impedir que os usuários reiniciem o dispositivo no modo de segurança. **Não configurado** permite que os usuários reiniciem o dispositivo no modo de segurança.
 - **Barra de status**: Escolha **Bloquear** para impedir o acesso à barra de status, incluindo notificações e configurações rápidas. **Não configurado** permite aos usuários acesso à barra de status.
@@ -59,7 +59,7 @@ Essas configurações se aplicam a tipos de registro do Android Enterprise, em q
 - **Transmissão de dados usando a NFC**: Escolha **Bloquear** para impedir o uso da tecnologia NFC (Near Field Communication) para transmitir dados de aplicativos. **Não configurado** permite o uso de NFC para compartilhar dados entre dispositivos.
 - **Recursos de depuração**: Escolha **Permitir** para permitir o uso dos recursos de depuração no dispositivo. **Não configurado** impede o uso dos recursos de depuração no dispositivo.
 - **Ajuste de microfone**: Escolha **Bloquear** para impedir que os usuários cancelem o mudo do microfone e ajustem o volume. **Não configurado** permite o uso e ajuste do volume do microfone no dispositivo.
-- **Emails de proteção de redefinição de fábrica**: Escolha **Endereços de email da conta do Google**. Insira os endereços de email dos administradores do dispositivo que podem desbloquear o dispositivo após ele ser apagado. Separe os endereços de email com um ponto e vírgula, como `admin1@gmail.com;admin2@gmail.com`. Se um email não for inserido, qualquer pessoa poderá desbloquear o dispositivo após ele ser restaurado para as configurações de fábrica. Esses emails se aplicam somente quando uma redefinição de fábrica que não é de usuário é executada, como executar uma redefinição de fábrica usando o menu de recuperação.
+- **Emails de proteção de redefinição de fábrica**: Escolha **Endereços de email da conta do Google**. Insira os endereços de email dos administradores do dispositivo que podem desbloquear o dispositivo após ele ser apagado. Separe os endereços de email com um ponto e vírgula, como `admin1@gmail.com;admin2@gmail.com`. Se um email não for inserido, qualquer pessoa poderá desbloquear o dispositivo após ele ser restaurado para as configurações de fábrica. Esses emails aplicam-se somente quando uma redefinição de fábrica não do usuário é executada, como executar uma redefinição de fábrica usando o menu de recuperação.
 - **Hachura de escape de rede**: Escolha **Habilitar** para permitir que os usuários ativem o recurso de hachura de escape de rede. Se não houver uma conexão de rede quando o dispositivo for iniciado, a hachura de escape solicitará a conexão temporária a uma rede e atualizará a política do dispositivo. Depois de aplicar a política, a rede temporária será esquecida e o dispositivo continuará com a inicialização. Esse recurso conecta os dispositivos a uma rede se:
   - Não houver uma rede adequada na última política.
   - O dispositivo iniciar em um aplicativo no modo de tarefa de bloqueio.
@@ -74,7 +74,7 @@ Essas configurações se aplicam a tipos de registro do Android Enterprise, em q
   - **Janela de manutenção**: Instala as atualizações automaticamente durante uma janela de manutenção diária definida no Intune. A instalação ocorre diariamente por 30 dias, e pode falhar devido a espaço insuficiente ou aos níveis de bateria. Após 30 dias, o Android solicita ao usuário a instalação. Essa janela também é usada para instalar atualizações de aplicativos do Play. Use essa opção para dispositivos dedicados, como quiosques, pois é possível atualizar aplicativos de primeiro plano em dispositivos dedicados de aplicativo único.
 
 - **Janelas de notificação**: quando essa opção é definida como **Desabilitar**, as notificações de janela, incluindo notificações do sistema, chamadas de entrada, chamadas de saída, alertas do sistema e erros do sistema, não são mostradas no dispositivo. Quando essa opção é definida como **Não configurado**, o padrão do sistema operacional é usado, que poderá ser mostrar as notificações.
-- **Ignorar dicas de primeiro uso**: **habilitar** oculta ou ignora sugestões de aplicativos que percorrem tutoriais ou dicas quando o aplicativo é iniciado. Quando essa opção é definida como **Não configurado**, o padrão do sistema operacional é usado, o que poderá mostrar essas sugestões quando o aplicativo for iniciado.
+- **Ignorar dicas de primeiro uso**: **Habilitar** oculta ou ignora sugestões de aplicativos que apresentam tutoriais ou dicas quando o aplicativo é iniciado. Quando essa opção é definida como **Não configurado**, o padrão do sistema operacional é usado, o que poderá mostrar essas sugestões quando o aplicativo for iniciado.
 
 ### <a name="system-security-settings"></a>Configurações de segurança do sistema
 
@@ -93,7 +93,7 @@ Use essas configurações para definir uma experiência de estilo de quiosque em
     Se não houver aplicativos listados, [adicione alguns aplicativos Android](../apps/apps-add-android-for-work.md) ao dispositivo. Não se esqueça de [atribuir o aplicativo ao grupo de dispositivos criado para seus dispositivos dedicados](../apps/apps-deploy.md).
 
   > [!IMPORTANT]
-  > Ao usar o modo de quiosque de aplicativo único, os aplicativos de discagem/telefone podem não funcionar corretamente. 
+  > Ao usar o modo de quiosque de aplicativo único, os aplicativos discadores/de telefone podem não funcionar corretamente. 
   
 - **Vários aplicativos**: Os usuários podem acessar um conjunto limitado de aplicativos no dispositivo. Quando o dispositivo inicia, somente os aplicativos adicionados são exibidos. Também é possível adicionar alguns links da Web que os usuários podem abrir. Ao aplicar a política, os usuários veem ícones para os aplicativos permitidos na tela inicial.
 
@@ -104,7 +104,7 @@ Use essas configurações para definir uma experiência de estilo de quiosque em
   >
   > O aplicativo **Tela Inicial Gerenciada** não precisa estar no perfil de configuração, mas precisa ser adicionado como um aplicativo cliente. Quando o aplicativo **Tela Inicial Gerenciada** é adicionado como um aplicativo cliente, quaisquer outros aplicativos que você adicionar ao perfil de configuração serão mostrados como ícones no aplicativo **Tela Inicial Gerenciada**.
   >
-  > Ao usar o modo de quiosque de vários aplicativos, os aplicativos de discagem/telefone podem não funcionar corretamente. 
+  > Ao usar o modo de quiosque de vários aplicativos, os aplicativos discadores/de telefone podem não funcionar corretamente. 
 
   - **Adicionar**: selecione seus aplicativos na lista.
 
@@ -112,19 +112,19 @@ Use essas configurações para definir uma experiência de estilo de quiosque em
 
     Também é possível adicionar outros [aplicativos Android](../apps/apps-add-android-for-work.md) e [aplicativos Web](../apps/web-app.md) criados por sua organização ao dispositivo. Não se esqueça de [atribuir o aplicativo ao grupo de dispositivos criado para seus dispositivos dedicados](../apps/apps-deploy.md).
 
-  - **Botão página inicial virtual**: um botão de chave flexível que retorna usuários para a tela inicial gerenciada para que os usuários possam alternar entre aplicativos. Suas opções:
+  - **Botão de Página Inicial virtual**: um botão virtual que retorna usuários para à Tela Inicial Gerenciada para que eles possam alternar entre aplicativos. Suas opções:
 
-    - **Não configurado** (padrão): um botão de página inicial não é mostrado. Os usuários devem usar o botão voltar para alternar entre aplicativos.
-    - **Deslizar para cima**: um botão página inicial mostra quando um usuário passa o dedo para cima no dispositivo.
+    - **Não configurado** (padrão): um botão de página inicial não é mostrado. Os usuários devem usar o botão de voltar para alternar entre aplicativos.
+    - **Deslizar o dedo para cima**: um botão página inicial mostra quando um usuário desliza o dedo para cima no dispositivo.
     - **Flutuante**: mostra um botão de página inicial persistente e flutuante no dispositivo.
 
   - **Sair do modo de quiosque**: Escolha **Habilitar** para permitir que os administradores pausem temporariamente o modo de quiosque para atualizar o dispositivo. Para usar esse recurso, o administrador:
   
     1. Continue a selecionar o botão voltar até que o botão **Sair do quiosque** apareça. 
     2. Selecione o botão **Sair do quiosque** e insira o PIN do **Código para sair do modo de quiosque**.
-    3. Quando terminar, selecione o aplicativo de **tela inicial gerenciado** . Esta etapa bloqueia novamente o dispositivo no modo de quiosque de vários aplicativos.
+    3. Ao terminar, selecione o aplicativo **Tela Inicial Gerenciada**. Esta etapa bloqueia novamente o dispositivo no modo de quiosque de vários aplicativos.
 
-      Quando definido como **não configurado**, os administradores não podem pausar o modo de quiosque. Se o administrador continua selecionando o botão voltar e seleciona o botão **Sair do quiosque**, uma mensagem pede a senha.
+      Quando definido como **Não configurado**, os administradores não podem pausar o modo de quiosque. Se o administrador continua selecionando o botão voltar e seleciona o botão **Sair do quiosque**, uma mensagem pede a senha.
 
     - **Código para sair do modo de quiosque**: Insira um PIN numérico de 4 a 6 dígitos. O administrador usa esse PIN para pausar temporariamente o modo de quiosque.
 
@@ -140,32 +140,32 @@ Use essas configurações para definir uma experiência de estilo de quiosque em
     >
     > Exibições modernas têm densidades de pixel mais altas e podem exibir imagens de definição 2K/4K equivalentes.
 
-  - **Configuração de Wi-Fi**: **habilitar** mostra o controle Wi-Fi na tela inicial gerenciada e permite que os usuários finais conectem o dispositivo a redes wifi diferentes. Habilitar esse recurso também ativa a localização do dispositivo. **Não configurado** (padrão) não mostra o controle Wi-Fi na tela inicial gerenciada. Ele impede que os usuários se conectem a redes Wi-Fi usando a tela inicial gerenciada.
+  - **Configuração de Wi-Fi**: **Habilitar** mostra o controle Wi-Fi na Tela Inicial Gerenciada e permite que os usuários finais conectem o dispositivo a redes WiFi diferentes. Habilitar esse recurso também ativa a localização do dispositivo. **Não configurado** (padrão) não mostra o controle Wi-Fi na Tela Inicial Gerenciada. Impede que os usuários conectem-se a redes Wi-Fi usando a Tela Inicial Gerenciada.
 
-  - **Configuração de Bluetooth**: **habilitar** mostra o controle Bluetooth na tela inicial gerenciada e permite que os usuários finais Emparelhem dispositivos via Bluetooth. Habilitar esse recurso também ativa a localização do dispositivo. **Não configurado** (padrão) não mostra o controle Bluetooth na tela inicial gerenciada. Ele impede que os usuários configurem dispositivos Bluetooth e de emparelhamento ao usar a tela inicial gerenciada.
+  - **Configuração de Bluetooth**: **Habilitar** mostra o controle Bluetooth na Tela Inicial Gerenciada e permite que os usuários finais emparelhem dispositivos por Bluetooth. Habilitar esse recurso também ativa a localização do dispositivo. **Não configurado** (padrão) não mostra o controle Bluetooth na Tela Inicial Gerenciada. Ele impede que os usuários configurem o Bluetooth e emparelhem dispositivos enquanto estão usando a Tela Inicial Gerenciada.
 
-  - **Acesso à lanterna**: **habilitar** mostra o controle lanterna na tela inicial gerenciada e permite que os usuários finais ativem ou desativem a lanterna. **Não configurado** (padrão) não mostra o controle lanterna na tela inicial gerenciada. Ele impede que os usuários usem a lanterna ao usar a tela inicial gerenciada.
+  - **Acesso à lanterna**: **Habilitar** mostra o controle de lanterna na Tela Inicial Gerenciada e permite que os usuários finais liguem ou desliguem a lanterna. **Não configurado** (padrão) não mostra o controle de lanterna na Tela Inicial Gerenciada. Ele impede que os usuários usem a lanterna enquanto estão usando a Tela Inicial Gerenciada.
 
-  - **Controle de volume de mídia**: **habilitar** mostra o controle de volume de mídia na tela inicial gerenciada e permite que os usuários finais ajustem o volume de mídia do dispositivo usando um controle deslizante. **Não configurado** (padrão) não mostra o controle de volume de mídia na tela inicial gerenciada. Ele impede que os usuários ajustem o volume de mídia do dispositivo ao usar a tela inicial gerenciada, a menos que seus botões de hardware ofereçam suporte a ele. 
+  - **Controle de volume de mídia**: **Habilitar** mostra o controle de volume de mídia na Tela Inicial Gerenciada e permite que os usuários finais ajustem o volume de mídia do dispositivo usando um controle deslizante. **Não configurado** (padrão) não mostra o controle de volume de mídia na Tela Inicial Gerenciada. Ele impede que os usuários ajustem o volume de mídia do dispositivo enquanto estão usando a Tela Inicial Gerenciada, a menos que os botões de hardware sejam compatíveis com esse recurso. 
 
-  - **Modo de proteção de tela**: **habilitar** mostra uma barra de proteção na tela inicial gerenciada quando o dispositivo está bloqueado ou expira. **Não configurado** (padrão) não mostra uma barra de proteção na tela inicial gerenciada.
+  - **Modo de proteção de tela**: **Habilitar** mostra uma barra de proteção na Tela Inicial Gerenciada quando o dispositivo está bloqueado ou atinge o tempo limite. **Não configurado** (padrão) não mostra um protetor de tela na Tela Inicial Gerenciada.
 
     Quando habilitado, configure também:
 
-    - **Definir imagem de proteção de tela personalizada**: Insira a URL para um png personalizado, jpg, JPEG, GIF, BMP, WebP ou ICOimage. Por exemplo, digite:
+    - **Definir imagem de proteção de tela personalizada**: insira a URL para um PNG, JPG, JPEG, GIF, BMP, WebP ou ICOimage personalizado. Por exemplo, digite:
 
       - `http://www.contoso.com/image.jpg`
       - `www.contoso.com/image.bmp`
       - `https://www.contoso.com/image.webp`
 
-      Se você não inserir uma URL, a imagem padrão do dispositivo será usada, se houver uma imagem padrão.
+      Se você não inserir uma URL, a imagem padrão do dispositivo será usada, caso haja uma imagem padrão.
       
       > [!TIP]
-      > Qualquer URL de recurso de arquivo que possa ser transformada em um bitmap é suportada.
+      > Há suporte para qualquer a URL do recurso de arquivo que possa ser transformada em um bitmap.
 
-    - **Número de segundos que o dispositivo mostra a proteção de tela antes**de desligar a tela: escolha por quanto tempo o dispositivo mostra a proteção. Digite um valor entre 0 e 9999999 segundos. O padrão é `0` segundos. Quando deixado em branco ou definido como zero (`0`), a proteção de tela estará ativa até que um usuário interaja com o dispositivo.
-    - **Número de segundos em que o dispositivo fica inativo antes de mostrar a proteção de tela**: escolha por quanto tempo o dispositivo estará ocioso antes de mostrar a proteção. Digite um valor entre 1 e 9999999 segundos. O padrão é `30` segundos. Você deve inserir um número maior que zero (`0`).
-    - **Detectar mídia antes de iniciar a proteção de tela**: **habilitar** (padrão) não mostrará a proteção de tela se áudio ou vídeo estiver sendo reproduzido no dispositivo. **Não configurado** mostra a proteção de tela, mesmo se o áudio ou vídeo estiver sendo reproduzido.
+    - **Número de segundos pelo qual o dispositivo mostra a proteção de tela antes de desativar a tela**: escolha por quanto tempo o dispositivo mostra a proteção. Digite um valor entre 0 e 9999999 segundos. O padrão é `0` segundos. Quando deixado em branco ou definido como zero (`0`), a proteção de tela fica ativa até um usuário interagir com o dispositivo.
+    - **Número de segundos pelo qual o dispositivo fica inativo antes de mostrar a proteção de tela**: escolha por quanto tempo o dispositivo fica ocioso antes de mostrar a proteção. Digite um valor entre 1 e 9999999 segundos. O padrão é `30` segundos. Insira um número maior que zero (`0`).
+    - **Detectar mídia antes de iniciar a proteção de tela**: **Habilitar** (padrão) não mostrará a proteção de tela se o áudio ou vídeo estiver sendo reproduzido no dispositivo. **Não configurado** mostrará a proteção de tela mesmo que áudio ou vídeo esteja sendo reproduzido.
 
 ### <a name="device-password-settings"></a>Configurações de senha do dispositivo
 
@@ -198,7 +198,7 @@ Use essas configurações para definir uma experiência de estilo de quiosque em
 
 ### <a name="power-settings"></a>Configurações da energia
 
-- **Tempo para bloquear a tela**: Insira o tempo máximo que um usuário pode definir até que o dispositivo seja bloqueado. Por exemplo, se você definir essa configuração como **10 minutos**, os usuários poderão definir o tempo de 15 segundos até 10 minutos. Quando definido como **não configurado** (padrão), o Intune não altera nem controla essa configuração.
+- **Tempo para bloquear a tela**: insira o tempo máximo que um usuário pode definir até o bloqueio do dispositivo. Por exemplo, se você definir essa configuração como **10 minutos**, os usuários poderão definir o tempo de 15 segundos até 10 minutos. Quando essa opção está definida como **Não configurado** (padrão), o Intune não altera nem controla essa configuração.
 
 - **Tela ligada enquanto o dispositivo está conectado**: Escolha quais fontes de alimentação fazem com que a tela do dispositivo permaneça ligada enquanto o dispositivo está conectado.
 
@@ -206,13 +206,13 @@ Use essas configurações para definir uma experiência de estilo de quiosque em
 
 - **Adicione novos usuários**: Escolha **Bloquear** para impedir que os usuários adicionem novos usuários. Cada usuário tem um espaço pessoal no dispositivo para personalização da tela inicial, contas, aplicativos e configurações. **Não configurado** (padrão) permite que os usuários adicionem outros usuários ao dispositivo.
 - **Remoção de usuários**: Escolha **Bloquear** para impedir que os usuários removam outros usuários. **Não configurado** (padrão) permite que os usuários removam outros usuários do dispositivo.
-- **Alterações de conta** (somente dispositivos dedicados): escolha **Bloquear** para impedir que os usuários modifiquem contas. **Não configurado** (padrão) permite que os usuários atualizem contas de usuário no dispositivo.
+- **Alterações de conta** (somente dispositivos dedicados): escolha **Bloquear** para impedir que os usuários modifiquem as contas. **Não configurado** (padrão) permite que os usuários atualizem contas de usuário no dispositivo.
 
   > [!NOTE]
-  > Essa configuração não é respeitada em dispositivos de proprietário do dispositivo (totalmente gerenciado). Se você definir essa configuração, a configuração será ignorada e não terá nenhum impacto.
+  > Essa configuração não é respeitada em dispositivos de proprietário do dispositivo (totalmente gerenciados). Se você definir essa configuração, ela será ignorada e não terá nenhum impacto.
 
-- O **usuário pode configurar credenciais**: **Bloquear** impede que os usuários configurem certificados atribuídos a dispositivos, até mesmo dispositivos que não estão associados a uma conta de usuário. **Não configurado** pode possibilitar que os usuários configurem ou alterem suas credenciais ao acessá-las no keystore. 
-- **Contas pessoais do Google**: **Bloquear** impede que os usuários adicionem sua conta pessoal do Google ao dispositivo. **Não configurado** (padrão) permite que os usuários adicionem sua conta pessoal do Google.
+- **O usuário pode configurar as credenciais**: **Bloquear** impede que os usuários configurem certificados atribuídos a dispositivos, inclusive a dispositivos não associados a uma conta de usuário. **Não configurado** pode permitir que os usuários configurem ou alterem suas credenciais ao acessá-las no repositório de chaves. 
+- **Contas Pessoais do Google**: **Bloquear** impede que os usuários adicionem sua conta pessoal do Google ao dispositivo. **Não configurado** (padrão) permite que os usuários adicionem sua conta pessoal do Google.
 
 ### <a name="applications"></a>Aplicativos
 
@@ -245,31 +245,31 @@ Use essas configurações para definir uma experiência de estilo de quiosque em
   > [!IMPORTANT]
   > - O cliente VPN escolhido deve ser instalado no dispositivo e deve dar suporte à VPN por aplicativo em perfis de trabalho. Caso contrário, ocorrerá um erro. 
   > - É necessário aprovar o aplicativo cliente VPN na **Google Play Store Gerenciada**, sincronizar o aplicativo com o Intune e implantá-lo no dispositivo. Após fazer isso, o aplicativo será instalado no perfil de trabalho do usuário.
-  > - Você ainda precisa configurar o cliente VPN com um [perfil VPN](vpn-settings-android-enterprise.md)ou por meio de um [perfil de configuração de aplicativo](../apps/app-configuration-policies-use-android.md).
+  > - Você ainda precisa configurar o cliente VPN com um [perfil de VPN](vpn-settings-android-enterprise.md) ou usando um [perfil de configuração de aplicativos](../apps/app-configuration-policies-use-android.md).
   > - Talvez ocorram problemas conhecidos ao usar VPN por aplicativo com o Acesso por F5 para Android 3.0.4. Confira [Notas de versão do F5 para Acesso por F5 para Android 3.0.4](https://support.f5.com/kb/en-us/products/big-ip_apm/releasenotes/related/relnote-f5access-android-3-0-4.html#relnotes_known_issues_f5_access_android) para saber mais.
 
 - **Modo de bloqueio**: Escolha **Habilitar** para forçar todo o tráfego de rede a usar o túnel VPN. Se uma conexão com a VPN não for estabelecida, então o dispositivo não terá acesso à rede.
 
   Escolha **Não configurado** para permitir que o tráfego flua pelo túnel VPN ou por meio da rede móvel.
 
-- **Proxy global recomendado**: escolha **habilitar** para adicionar um proxy global aos dispositivos. Quando habilitado, o tráfego HTTP e HTTPS, incluindo alguns aplicativos no dispositivo, use o proxy que você inserir. Esse proxy é apenas uma recomendação. É possível que alguns aplicativos não usem o proxy. **Não configurado** (padrão) não adiciona um proxy global recomendado.
+- **Proxy global recomendados**: escolha **Habilitar** para adicionar um proxy global aos dispositivos. Quando habilitado, o tráfego HTTP e HTTPS, incluindo alguns aplicativos no dispositivo, usam o proxy que você insere. Esse proxy é apenas uma recomendação. É possível que alguns aplicativos não usem o proxy. **Não configurado** (padrão) não adiciona um proxy global recomendado.
 
-  Para obter mais informações sobre esse recurso, consulte [setRecommendedGlobalProxy](https://developer.android.com/reference/android/app/admin/DevicePolicyManager.html#setRecommendedGlobalProxy(android.content.ComponentName,%20android.net.ProxyInfo)) (abre um site do Android).
+  Para obter mais informações sobre esse recurso, confira [setRecommendedGlobalProxy](https://developer.android.com/reference/android/app/admin/DevicePolicyManager.html#setRecommendedGlobalProxy(android.content.ComponentName,%20android.net.ProxyInfo)) (abre um site do Android).
 
-  Quando habilitado, insira também o **tipo** de proxy. Suas opções:
+  Quando habilitado, insira também o **Tipo** de proxy. Suas opções:
 
-  - **Direto**: escolha esta opção para inserir manualmente os detalhes do servidor proxy, incluindo:
-    - **Host**: Insira o nome de host ou endereço IP do seu servidor proxy. Por exemplo, insira `proxy.contoso.com` ou `127.0.0.1`.
+  - **Direto**: escolha essa opção para inserir manualmente os detalhes do servidor proxy, incluindo:
+    - **Host**: insira o nome do host ou o endereço IP do seu servidor proxy. Por exemplo, insira `proxy.contoso.com` ou `127.0.0.1`.
     - **Número da porta**: insira o número da porta TCP usado pelo servidor proxy. Por exemplo, insira `8080`.
-    - **Hosts excluídos**: Insira uma lista de nomes de host ou endereços IP que não usarão o proxy. Essa lista pode incluir um asterisco (`*`) curinga e vários hosts separados por ponto e vírgula (`;`) sem espaços. Por exemplo, insira `127.0.0.1;web.contoso.com;*.microsoft.com`.
+    - **Hosts excluídos**: insira uma lista de nomes de host ou endereços IP que não usarão o proxy. Essa lista pode incluir um curinga de asterisco (`*`) e vários hosts separados por ponto e vírgula (`;`) sem espaços. Por exemplo, insira `127.0.0.1;web.contoso.com;*.microsoft.com`.
 
-  - **Configuração automática de proxy**: Insira a **URL de PAC** para um script de configuração de proxy automático. Por exemplo, insira `https://proxy.contoso.com/proxy.pac`.
+  - **Configuração automática de proxy**: insira a **URL do PAC** para um script de configuração automática de proxy. Por exemplo, insira `https://proxy.contoso.com/proxy.pac`.
 
-    Para obter mais informações sobre arquivos PAC, consulte o [Arquivo PAC (configuração automática de proxy)](https://developer.mozilla.org/docs/Web/HTTP/Proxy_servers_and_tunneling/Proxy_Auto-Configuration_(PAC)_file) (abre um site que não é da Microsoft).
+    Para obter mais informações sobre os arquivos PAC, confira [Arquivo PAC (configuração automática de proxy)](https://developer.mozilla.org/docs/Web/HTTP/Proxy_servers_and_tunneling/Proxy_Auto-Configuration_(PAC)_file) (abre um site que não é da Microsoft).
 
 ## <a name="work-profile-only"></a>Somente perfil de trabalho
 
-Essas configurações se aplicam a tipos de registro do Android Enterprise, em que o Intune controla somente o perfil de trabalho, como o registro de perfil de trabalho do Android Enterprise em um dispositivo pessoal ou BYOD (Traga seu próprio serviço).
+Essas configurações aplicam-se a tipos de registro do Android Enterprise, em que o Intune controla somente o perfil de trabalho, como o registro de perfil de trabalho do Android Enterprise em um dispositivo pessoal ou BYOD (traga seu próprio dispositivo).
 
 ### <a name="work-profile-settings"></a>Configurações de perfil de trabalho
 
@@ -280,7 +280,7 @@ Essas configurações se aplicam a tipos de registro do Android Enterprise, em q
   - **Padrão do dispositivo**: O comportamento de compartilhamento padrão do dispositivo, que varia dependendo da versão do Android. Por padrão, há permissão para o compartilhamento do perfil pessoal com o perfil de trabalho. Também por padrão, o compartilhamento do perfil de trabalho com o perfil pessoal é bloqueado. Essa configuração impede o compartilhamento de dados do perfil de trabalho com o perfil pessoal. Em dispositivos que executam as versões 6.0 e posteriores, o Google não bloqueia o compartilhamento do perfil pessoal par ao perfil corporativo.
   - **Os aplicativos no perfil de trabalho podem lidar com a solicitação de compartilhamento do perfil pessoal**: Habilita o recurso interno do Android que permite o compartilhamento do perfil pessoal para o perfil de trabalho. Quando habilitada, uma solicitação de compartilhamento de um aplicativo no perfil pessoal pode ser compartilhada com aplicativos no perfil de trabalho. Essa configuração é o comportamento padrão para dispositivos Android executando versões anteriores à 6.0.
   - **Impedir qualquer compartilhamento entre limites**: impede o compartilhamento entre perfis pessoais e de trabalho.
-  - **Sem restrições no compartilhamento**: habilita o compartilhamento entre o limite do perfil de trabalho em ambas as direções. Quando você seleciona essa configuração, os aplicativos no perfil de trabalho podem compartilhar dados com aplicativos sem selo no perfil pessoal. Essa configuração permite que os aplicativos gerenciados no perfil de trabalho sejam compartilhados com aplicativos no lado não gerenciado do dispositivo. Portanto, use essa configuração com cuidado.
+  - **Sem restrições de compartilhamento**: habilita o compartilhamento no limite do perfil de trabalho em ambas as orientações. Quando você seleciona essa configuração, os aplicativos no perfil de trabalho podem compartilhar dados com aplicativos sem selo no perfil pessoal. Essa configuração permite que os aplicativos gerenciados no perfil de trabalho sejam compartilhados com aplicativos no lado não gerenciado do dispositivo. Portanto, use essa configuração com cuidado.
 
 - **Notificações do perfil de trabalho enquanto o dispositivo estiver bloqueado**: Controla se os aplicativos no perfil corporativo podem exibir dados em notificações quando o dispositivo está bloqueado. **Bloquear** não mostra os dados. **Não configurado** mostra os dados.
 - **Permissões do aplicativo padrão**: Define a política de permissão padrão para todos os aplicativos no perfil de trabalho. A partir do Android 6, o usuário deve conceder determinadas permissões necessárias por aplicativos quando o aplicativo é iniciado. Essa configuração de política permite que você decida se os usuários deverão conceder permissões para todos os aplicativos no perfil de trabalho. Por exemplo, você atribui um aplicativo ao perfil de trabalho que exige o acesso à localização. Normalmente, esse aplicativo solicita que o usuário aprove ou negue o acesso à localização para o aplicativo. Use essa política para conceder permissões automaticamente sem um prompt, para negar automaticamente permissões sem um prompt ou permitir que o usuário final decida. Escolha:
@@ -306,9 +306,9 @@ Essas configurações se aplicam a tipos de registro do Android Enterprise, em q
 
 - **Câmera**: Escolha **Bloquear** para impedir o acesso à câmera no dispositivo que usa o perfil corporativo. A câmera no lado pessoal não é afetada pela configuração. **Não obrigatório** permite o acesso à câmera no perfil corporativo.
 
-- **Permitir widgets de aplicativos de perfil de trabalho**: **habilitar** permite que os usuários finais coloquem widgets expostos por aplicativos na tela inicial. **Não configurado** (padrão) desabilita esse recurso.
+- **Permitir widgets de aplicativos de perfil de trabalho**: **Habilitar** permite que os usuários finais coloquem widgets expostos por aplicativos na tela inicial. **Não configurado** (padrão) desabilita esse recurso.
 
-  Por exemplo, o Outlook é instalado nos perfis de trabalho de seus usuários. Quando definido como **habilitar**, os usuários podem colocar o widget pauta na tela inicial do dispositivo.
+  Por exemplo, o Outlook é instalado nos perfis de trabalho de seus usuários. Quando definido como **Habilitar**, os usuários podem colocar o widget de agenda na tela inicial do dispositivo.
 
 #### <a name="work-profile-password"></a>Senha do perfil corporativo
 
@@ -336,7 +336,7 @@ Essas configurações de senha aplicam-se a perfis pessoais em dispositivos que 
 
 - **Comprimento mínimo da senha**: Insira o número mínimo de caracteres que a senha do usuário deve ter, de **4**-**14**.
 - **Máximo de minutos de inatividade até a tela ser bloqueada**: Selecione quanto tempo até que um dispositivo inativo seja bloqueado automaticamente
-- **Número de falhas de início de sessão antes de limpar o dispositivo**: Especifica o número de vezes que uma senha incorreta pode ser inserida antes que todos os dados sejam eliminados do dispositivo
+- **Número de falhas de início de sessão antes de limpar o dispositivo**: Insira o número de vezes que uma senha incorreta pode ser inserida antes que o perfil de trabalho seja apagado do dispositivo.
 - **Expiração da senha (dias)** : Insira o número de dias até que a senha de um usuário final precise ser alterada (de **1**-**255**)
 - **Tipo de senha necessária**: Selecione o tipo de senha que deve ser definido no dispositivo. Escolha:
   - **Padrão do dispositivo**
@@ -358,12 +358,12 @@ Essas configurações de senha aplicam-se a perfis pessoais em dispositivos que 
    > [!Note]
    > Essa configuração só funciona para dispositivos Android 8 (Oreo) e superior.
 
-- **Impedir instalações de aplicativos de fontes desconhecidas no perfil pessoal**: por design, os dispositivos Android Enterprise Work Profile não podem instalar aplicativos de fontes diferentes da Play Store. Por natureza, os dispositivos de perfil de trabalho devem ser de perfil duplo:
+- **Impedir instalações de aplicativos de fontes desconhecidas no perfil pessoal**: por padrão, os dispositivos de perfil de trabalho do Android Enterprise não podem instalar aplicativos de fontes diferentes da Play Store. Por natureza, os dispositivos de perfil de trabalho devem ser de perfil duplo:
 
   - Um perfil de trabalho gerenciado usando o MDM.
-  - Um perfil pessoal isolado do gerenciamento de MDM.
+  - Um perfil pessoal isolado do gerenciamento do MDM.
 
-  Essa configuração permite que os administradores tenham mais controle das instalações de aplicativos de fontes desconhecidas. **Não configurado** (padrão) permite instalações de aplicativos de fontes desconhecidas no perfil pessoal. **Bloquear** impede instalações de aplicativos de fontes diferentes da Play Store no perfil pessoal.
+  Essa configuração permite que os administradores tenham mais controle sobre as instalações de aplicativos de fontes desconhecidas. **Não configurado** (padrão) permite instalações de aplicativos de fontes desconhecidas no perfil pessoal. **Bloquear** impede instalações de aplicativos de fontes diferentes da Play Store no perfil pessoal.
 
 ### <a name="connectivity"></a>Conectividade
 

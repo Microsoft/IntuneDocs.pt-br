@@ -6,7 +6,7 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 01/13/2020
+ms.date: 02/04/2020
 ms.topic: reference
 ms.service: microsoft-intune
 ms.subservice: configuration
@@ -16,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure; seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: f99479200e66b080e107475f0a031c5756da6051
-ms.sourcegitcommit: 139853f8d6ea61786da7056cfb9024a6459abd70
+ms.openlocfilehash: dc252068d963d75bf6ade79852d6ba01bda8800b
+ms.sourcegitcommit: 9b29478f815e10c46c8030abe0146d601ce0e28c
 ms.translationtype: MTE75
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/26/2020
-ms.locfileid: "76754568"
+ms.lasthandoff: 02/06/2020
+ms.locfileid: "77051602"
 ---
 # <a name="ios-and-ipados-device-settings-to-allow-or-restrict-features-using-intune"></a>Configurações de dispositivo iOS e iPadOS para permitir ou restringir recursos usando o Intune
 
@@ -420,8 +420,6 @@ Aplica-se aos dispositivos que executam o iOS 9.3 ou mais recente.
   Para localizar a URL de um aplicativo, abra a iTunes App Store e procure o aplicativo. Por exemplo, pesquise por `Microsoft Remote Desktop` ou `Microsoft Word`. Selecione o aplicativo e copie a URL.
 
   Você também pode usar o iTunes para encontrar o aplicativo e, depois, usar a tarefa **Copiar Link** para obter a URL do aplicativo.
-  
-  Para obter mais informações sobre como localizar uma ID do pacote, confira [Como localizar a ID do pacote de um aplicativo iOS](https://support.microsoft.com/help/4294074/how-to-find-the-bundle-id-for-an-ios-app).
 
 - **ID de Lote de Aplicativo**: insira a [ID de lote](bundle-ids-built-in-ios-apps.md) de aplicativos do aplicativo que você deseja. Você pode mostrar ou ocultar aplicativos internos e aplicativos de linha de negócios. O site da Apple apresenta uma lista de [aplicativos internos da Apple](https://support.apple.com/HT208094).
 - **Nome do aplicativo**: insira o nome do aplicativo que você deseja. Você pode mostrar ou ocultar aplicativos internos e aplicativos de linha de negócios. O site da Apple apresenta uma lista de [aplicativos internos da Apple](https://support.apple.com/HT208094).
@@ -559,7 +557,9 @@ Observação necessária para Roaming de Dados (dica ou observação importante 
 
 ## <a name="autonomous-single-app-mode"></a>Modo autônomo de aplicativo único
 
-Use essas opções para configurar dispositivos iOS para executar aplicativos específicos no modo autônomo de aplicativo único. Quando esse modo está configurado e o aplicativo é executado, o dispositivo é bloqueado. Ele só pode executar esse aplicativo. Por exemplo, adicione um aplicativo que permite aos usuários fazer um teste no dispositivo. Quando as ações do aplicativo forem concluídas ou quando você remover essa política, o dispositivo retornará ao seu estado normal.
+Use essas definições para configurar dispositivos iOS/iPadOS para executar aplicativos específicos no modo autônomo de aplicativo único. Quando esse modo é configurado e o usuário inicia um dos aplicativos configurados, o dispositivo é bloqueado para tal aplicativo. A alternância de aplicativo/tarefa está desabilitada até o usuário sair do aplicativo permitido.
+
+Por exemplo, em um ambiente de escola ou universidade, adicione um aplicativo que permita aos usuários fazer um teste no dispositivo. Ou bloqueie o dispositivo no aplicativo Portal da Empresa até a autenticação do usuário final. Quando as ações do aplicativo forem concluídas pelo usuário ou quando você remover essa política, o dispositivo retornará ao seu estado normal.
 
 ### <a name="settings-apply-to-automated-device-enrollment-supervised"></a>As configurações se aplicam a(o): Registro de dispositivo automatizado (supervisionado)
 

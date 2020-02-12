@@ -14,16 +14,16 @@ ms.service: ''
 ms.technology: ''
 ms.assetid:
 - GET ONE FROM guidgenerator.com
-ms.openlocfilehash: 0a5e90c6bc6b352f4d7a0fc0ae22c65110563461
-ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
+ms.openlocfilehash: ed2d00541c2d89efd0f8cd6aa60f29c527656fc0
+ms.sourcegitcommit: 5178aec0244e023e73546f3d10f1a76eaf1f4a3e
 ms.translationtype: MTE75
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "68354396"
+ms.lasthandoff: 02/03/2020
+ms.locfileid: "76971816"
 ---
 # <a name="metadata-and-markdown-template"></a>Modelo de markdown e de metadados
 
-Esse modelo docs.ms contém exemplos de sintaxe de redução e orientações sobre como definir os metadados. Ele está disponível no diretório raiz de cada repositório EM piloto (por exemplo, ~/Azure-RMSDocs-pr /template.md) e deve ser lido como um arquivo de redução, embora você possa consultar [a versão publicada](https://stage.docs.microsoft.com/en-us/rights-management/template) para ver como os exemplos de redução foram processados.
+Esse modelo do docs.ms contém exemplos de sintaxe de markdown, bem como uma orientação sobre como configurar os metadados. Ele está disponível no diretório raiz de cada repositório EM piloto (por exemplo, ~/Azure-RMSDocs-pr /template.md) e deve ser lido como um arquivo de redução, embora você possa consultar [a versão publicada](https://stage.docs.microsoft.com/en-us/rights-management/template) para ver como os exemplos de redução foram processados.
 
 Ao criar uma um arquivo de markdown, copie o modelo em um novo arquivo, preencha metadados conforme especificado abaixo, defina o cabeçalho H1 acima como o título do artigo e exclua o conteúdo. 
 
@@ -34,31 +34,31 @@ O bloco de metadados completo está acima, dividido nos campos necessários e op
 
 - Você **precisa** ter um espaço entre os dois-pontos (:) e o valor de um elemento de metadados.
 - Se um elemento de metadados opcional não tiver um valor, remova o comentário do elemento com um # (não deixe em branco ou use "na"). Se você estiver adicionando um valor a um elemento que teve o comentário removido, não deixe de remover o #.
-- Dois-pontos em um valor (por exemplo, um título) interrompem o analisador de metadados. Em seu lugar, use a codificação HTML &#58; (por exemplo, "title: Azure Rights Management& #58; noções básicas | Azure RMS").
-- **title**: esse título aparecerá nos resultados da pesquisa. O título deve terminar com uma barra vertical (|) seguida do nome do serviço (por exemplo, veja acima). O título não precisa (e provavelmente não deve) ser idêntico ao título do seu cabeçalho H1. Ele deve ter aproximadamente 65 caracteres (incluindo | NOME DO SERVIÇO)
-- **author**, **manager**, **reviewer**: o campo author deve conter o **nome de usuário Github** do autor, não seu alias.  Por outro lado, os campos "manager" e "reviewer" devem conter aliases. ms.reviewer especifica o nome do PM associado ao artigo ou serviço.
-- **ms.assetid**: esse é o GUID do artigo do CAPS. Ao criar um novo arquivo markdown, obtenha um GUID em [https://www.guidgenerator.com](https://www.guidgenerator.com). 
+- Dois pontos em um valor (por exemplo, um título) quebram o analisador de metadados. Em seu lugar, use a codificação HTML de &#58; (por exemplo, "title: Azure Rights Management&#58; as noções básicas | Azure RMS").
+- **title**: esse título aparecerá nos resultados do mecanismo de pesquisa. O título deve terminar com uma barra vertical (|) seguida pelo nome do serviço (por exemplo, veja acima). O título não precisa (e provavelmente não deve) ser idêntico ao título em seu título H1. Ele deve ter aproximadamente 65 caracteres (incluindo | NOME DO SERVIÇO)
+- **author**, **manager**, **reviewer**: o campo author deve conter o **Nome de usuário do GitHub** do autor, não seu alias.  Por outro lado, os campos "manager" e "reviewer", devem conter aliases. ms.reviewer especifica o nome do PM associado ao artigo ou serviço.
+- **ms.assetid**: esse é o GUID do artigo de CAPS. Ao criar um novo arquivo markdown, obtenha um GUID em [https://www.guidgenerator.com](https://www.guidgenerator.com). 
 - **ms.prod**, **ms.service**, **ms.technology**, **ms.devlang**, **ms.topic**, **ms.tgt_pltfrm**: os valores possíveis para esses elementos podem ser encontrados [aqui](https://microsoft.sharepoint.com/teams/STBCSI/Insights/_layouts/15/WopiFrame.aspx?sourcedoc=%7b7A321BF1-0611-4184-84DA-A0E964C435FA%7d&file=WEDCS_MasterList_CSIValues.xlsx&action=default).
 
-## <a name="basic-markdown-and-gfm"></a>GFM e markdown básico
+## <a name="basic-markdown-and-gfm"></a>Markdown Básico e GFM
 
-Todos os markdowns básicos e GFM têm suporte. Para saber mais sobre estas configurações, confira:
+Todo markdown básico e do tipo Github têm suporte. Para saber mais sobre eles, confira:
 
 - [Sintaxe de markdown de linha de base](https://daringfireball.net/projects/markdown/syntax)
-- [Documentação GFM (Github-flavored markdown)](https://guides.github.com/features/mastering-markdown)
+- [Documentação de GFM (markdown do tipo Github)](https://guides.github.com/features/mastering-markdown)
 
 ## <a name="headings"></a>Títulos
 
-Acima, temos exemplos de cabeçalhos de primeiro e segundo nível. 
+Veja acima os exemplos de títulos de primeiro e segundo nível. 
 
-Somente um cabeçalho de primeiro nível **pode** existir no seu tópico, que será exibido como o título na página.  
+**Deve** haver apenas um título de primeiro nível em seu tópico, que será exibido como o título da página.  
 
-Títulos de segundo nível irão gerar o Sumário na página que aparece na seção "Neste artigo" embaixo do título da página.
+Títulos de segundo nível gerarão o Sumário na página que aparece na seção "Neste artigo" embaixo do título da página.
 
-### <a name="third-level-heading"></a>Cabeçalho de terceiro nível
-#### <a name="fourth-level-heading"></a>Cabeçalho de quarto nível
-##### <a name="fifth-level-heading"></a>Cabeçalho de quinto nível
-###### <a name="sixth-level-heading"></a>Cabeçalho de sexto nível
+### <a name="third-level-heading"></a>Título de terceiro nível
+#### <a name="fourth-level-heading"></a>Título de quarto nível
+##### <a name="fifth-level-heading"></a>Título de quinto nível
+###### <a name="sixth-level-heading"></a>Título de sexto nível
 
 ## <a name="text-styling"></a>Estilo do texto
 
@@ -72,23 +72,23 @@ Títulos de segundo nível irão gerar o Sumário na página que aparece na seç
 
 ## <a name="links"></a>Links
 
-Para vincular a um arquivo de markdown no mesmo repositório, use [links relativos](https://www.w3.org/TR/WD-html40-970917/htmlweb.html#h-5.1.2). 
+Para vincular a um arquivo markdown no mesmo repositório, use [links relativos](https://www.w3.org/TR/WD-html40-970917/htmlweb.html#h-5.1.2). 
 
-- Exemplo: [o que é o Azure Rights Management?](./understand-explore/what-is-azure-rights-management.md)
+- Exemplo: [O que é o Azure Rights Management](./understand-explore/what-is-azure-rights-management.md)
 
-Para vincular a um cabeçalho no mesmo arquivo de markdown, exiba o código-fonte do artigo publicado, localize a ID de cabeçalho (por exemplo, `id="blockquote"`) e vincule usando # + ID (por exemplo, `#blockquote`).
+Para vincular a um título no mesmo arquivo markdown, exiba a origem do artigo publicado, localize a id do cabeçalho (por exemplo, `id="blockquote"`, e vincule usando #+id (por exemplo, `#blockquote`).
 
 - Exemplo: [Blockquotes](#blockquote)
 
-Para vincular a um cabeçalho em um arquivo de markdown no mesmo repositório, use link relativo + link de hashtag.
+Para vincular a um título em um arquivo markdown no mesmo repositório, use link relativo+vinculação por hashtag.
 
-- Exemplo: [visão técnica do processo de inscrição](./understand-explore/rms-for-individuals-user-signup.md#technical-overview-of-the-sign-up-process)
+- Exemplo: [visão geral técnica do processo de inscrição](./understand-explore/rms-for-individuals-user-signup.md#technical-overview-of-the-sign-up-process)
 
 Para vincular a um arquivo externo, use a URL completa como o link.
 
 - Exemplo: [Github](http://www.github.com)
 
-Se aparecer uma URL em um arquivo de markdown, ela será transformada em um link clicável.
+Se aparecer uma URL em um arquivo markdown, ela será transformada em um link clicável.
 
 - Exemplo: http://www.github.com
 
@@ -96,20 +96,20 @@ Se aparecer uma URL em um arquivo de markdown, ela será transformada em um link
 
 ### <a name="ordered-lists"></a>Listas ordenadas
 
-1. Isso 
-1. É
-1. Um
+1. Esta 
+1. é
+1. uma
 1. Ordenado
 1. Lista  
 
 
 #### <a name="ordered-list-with-an-embedded-list"></a>Lista ordenada com uma lista incorporada
 
-1. Aqui
-1. vem
-1. um
-1. inserido
-    1. Srta. Rosa
+1. Esta
+1. é
+1. uma
+1. lista
+    1. inserida
     1. Professor Black
 1. ordenado
 1. lista
@@ -117,16 +117,16 @@ Se aparecer uma URL em um arquivo de markdown, ela será transformada em um link
 
 ### <a name="unordered-lists"></a>Listas não ordenadas
 
-- Isso
+- Esta
 - é
 - a
-- com marcadores
+- lista
 - lista
 
 
 #### <a name="unordered-list-with-an-embedded-lists"></a>Lista não ordenada com uma lista incorporada
 
-- Isso 
+- Esta 
 - com marcadores 
 - lista
   - Dona Violeta
@@ -146,9 +146,9 @@ Se aparecer uma URL em um arquivo de markdown, ela será transformada em um link
 
 | Tabelas        | São           | Legais  |
 | ------------- |:-------------:| -----:|
-| a col. 3 está      | alinhada à direita | R$ 1600 |
-| a col. 2 está      | centralizada      |   R$ 12 |
-| a coluna 1 é, por padrão, | alinhada à esquerda     |    R$ 1 |
+| a col. 3 está      | alinhada à direita | $1600 |
+| a col. 2 está      | centralizada      |   $12 |
+| a coluna 1 assume o padrão de | alinhada à esquerda     |    R$ 1 |
 
 
 ## <a name="code"></a>Código
@@ -161,23 +161,23 @@ Se aparecer uma URL em um arquivo de markdown, ela será transformada em um link
       }
     }
 
-### <a name="in-line-code"></a>Código em linha
+### <a name="in-line-code"></a>In-line code (código embutido)
 
 Este é um exemplo de `in-line code`.
 
-## <a name="blockquotes"></a>Blockquotes
+## <a name="blockquotes"></a>Blockquotes (citações em bloco)
 
-> A seca já durava dez milhões de anos, e o reino dos terríveis lagartos havia terminado há tempos. Aqui no Equador, no continente que um dia seria conhecido como África, a batalha pela sobrevivência atingiu um novo clímax de ferocidade, e o vencedor ainda não era conhecido. Nesta terra estéril e desértica, apenas os pequenos, os velozes ou os selvagens poderiam prosperar, ou mesmo ter esperança de sobreviver.
+> A seca já durava dez milhões de anos, e o reino dos terríveis lagartos havia terminado muito antes disso. Aqui no Equador, no continente que um dia seria conhecido como África, a batalha pela existência atingiu um novo clímax de ferocidade, e o vencedor ainda não era conhecido. Nesta terra estéril e desértica, apenas os pequenos, os velozes ou os selvagens poderiam prosperar, ou mesmo ter esperança de sobreviver.
 
 ## <a name="images"></a>Imagens
 
 ### <a name="static-image"></a>Imagem Estática
 
-![este é o texto alternativo](./media/AzRMS_elements.png)
+![este é o texto alt](./media/AzRMS_elements.png)
 
-### <a name="linked-image"></a>Imagem Vinculada
+### <a name="linked-image"></a>Imagem vinculada
 
-[![texto alternativo para imagem vinculada](./media/AzRMS_elements.png)](https://azure.microsoft.com) 
+[![texto alt para imagem vinculada](./media/AzRMS_elements.png)](https://azure.microsoft.com) 
 
 ### <a name="animated-gif"></a>Gif animado
 
@@ -193,7 +193,7 @@ Este é um exemplo de `in-line code`.
 ### <a name="warning"></a>Aviso
 
 > [!WARNING]
-> Isso é um AVISO
+> Isto é um AVISO
 
 ### <a name="tip"></a>Dica
 
@@ -216,7 +216,7 @@ Este é um exemplo de `in-line code`.
 
 <iframe width="420" height="315" src="https://www.youtube.com/embed/R6_eWWfNB54" frameborder="0" allowfullscreen></iframe>
 
-## <a name="docsms-extentions"></a>docs.ms extentions
+## <a name="docsms-extensions"></a>Extensões docs.ms
 
 ### <a name="button"></a>Botão
 
@@ -227,10 +227,10 @@ Este é um exemplo de `in-line code`.
 
 > [!div class="op_single_selector"]
 - [foo](/rights-management/template.md)
-- [barra](/rights-management/scratch.md)
+- [bar](/rights-management/scratch.md)
 
 ### <a name="step-by-step"></a>Passo a passo
 
 >[!div class="step-by-step"]
-[Pré](https://www.example.com)
-[Avançar](https://www.example.com)
+[Anterior](https://www.example.com)
+[Próximo](https://www.example.com)

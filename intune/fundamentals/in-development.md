@@ -6,7 +6,7 @@ keywords: ''
 author: ErikjeMS
 ms.author: erikje
 manager: dougeby
-ms.date: 01/07/2020
+ms.date: 02/03/2020
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.subservice: fundamentals
@@ -16,14 +16,14 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: d71ae3c15dddedd5d9ebfaf06fcae25af89f6b82
-ms.sourcegitcommit: c46b0c2d4507be6a2786a4ea06009b2d5aafef85
-ms.translationtype: HT
+ms.openlocfilehash: cafe9d3036a727d79de88eda050399138da55675
+ms.sourcegitcommit: 24487f078349795922dc497c952e8358cf767a1a
+ms.translationtype: MTE75
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/01/2020
-ms.locfileid: "76912617"
+ms.lasthandoff: 02/04/2020
+ms.locfileid: "76977743"
 ---
-# <a name="in-development-for-microsoft-intune---january-2020"></a>Em desenvolvimento para o Microsoft Intune – janeiro de 2020
+# <a name="in-development-for-microsoft-intune---february-2020"></a>Em desenvolvimento para o Microsoft Intune – fevereiro de 2020
 
 Para ajudá-lo em sua preparação e planejamento, esta página relaciona atualizações e recursos da interface do usuário do Intune que estão em desenvolvimento, mas ainda não foram liberados. Além das informações nesta página: 
 
@@ -66,8 +66,22 @@ O aplicativo Portal da Empresa mostrará mensagens de status de instalação de 
 - Falha ao instalar o aplicativo. As dependências definidas pelo administrador não foram atendidas.
 
 ### <a name="retarget-web-clips-to-microsoft-edge-on-ios-devices---5455276---"></a>Redirecionar clipes da Web para o Microsoft Edge em dispositivos iOS<!-- 5455276 -->
-Os clipes da Web, que atuam como aplicativos Web fixados em dispositivos iOS, precisarão ser atualizados. Clipes da Web implantados recentemente serão abertos no Microsoft Edge em vez do Intune Managed Browser se for necessário abrir em um navegador protegido. Você precisa redirecionar os clipes da Web preexistentes para garantir que eles sejam abertos no Microsoft Edge em vez do Managed Browser. 
+Os clipes da Web, que atuam como aplicativos Web fixados em dispositivos iOS, precisarão ser atualizados. Clipes da Web implantados recentemente serão abertos no Microsoft Edge em vez do Intune Managed Browser se for necessário abrir em um navegador protegido. Você precisa redirecionar os clipes da Web preexistentes para garantir que eles sejam abertos no Microsoft Edge em vez do Managed Browser.
 
+### <a name="macos-company-portal-user-experience-improvements---5568987---"></a>Aprimoramentos na experiência do usuário do Portal da Empresa do macOS<!-- 5568987 -->
+Estamos fazendo aprimoramentos na experiência de registro do dispositivo macOS e no aplicativo Portal da Empresa para Mac. Você pode esperar o seguinte:
+- Uma melhor experiência do **Microsoft AutoUpdate** durante o registro, que garantirá que os usuários tenham a versão mais recente do Portal da Empresa.
+- Uma etapa de verificação de conformidade aprimorada durante o registro.
+- Suporte para IDs de Incidente copiadas, para que os usuários possam enviar erros de seus dispositivos para a equipe de suporte da empresa mais rapidamente.
+
+Para obter mais informações sobre o registro e o aplicativo Portal da Empresa para Mac, confira Registrar seu dispositivo macOS usando o aplicativo Portal da Empresa (https://docs.microsoft.com/intune-user-help/enroll-your-device-in-intune-macos-cp). 
+
+
+### <a name="screen-removed-from-company-portal-android-work-profile-enrollment--6103987---"></a>Tela removida do Portal da Empresa, registro de perfil de trabalho do Android<!--6103987 -->
+A tela **O que vem a seguir?** será removida do fluxo de registro do perfil de trabalho do Android no Portal da Empresa, para simplificar a experiência do usuário. Acesse [Registrar com o perfil de trabalho do Android]( https://docs.microsoft.com/intune-user-help/enroll-device-android-work-profile) para ver o fluxo de registro do perfil de trabalho do Android atual.
+
+### <a name="microsoft-defender-advanced-threat-protection-atp-app-for-macos---5424518-idready---"></a>Aplicativo ATP (Proteção Avançada contra Ameaças) do Microsoft Defender para macOS<!-- 5424518 idready -->
+O Intune fornecerá uma maneira fácil de implantar o aplicativo ATP (Proteção Avançada contra Ameaças) do Microsoft defender para macOS em dispositivos Mac gerenciados. Para saber mais, confira [Proteção Avançada contra Ameaças do Microsoft Defender para Mac](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/microsoft-defender-atp-mac). 
 
 <!-- ***********************************************-->
 ## <a name="device-configuration"></a>Configuração do dispositivo
@@ -104,14 +118,32 @@ Quando você criar ou editar um perfil OEMConfig para dispositivos Android Enter
 Esse recurso aplica-se a:
 - Android Enterprise 
 
+
 <!-- ***********************************************-->
 <!--## Device enrollment-->
 
 
-
 <!-- ***********************************************-->
-<!--## Device management-->
+## <a name="device-management"></a>Gerenciamento de dispositivo
 
+### <a name="change-primary-user-for-windows-devices----3794742---"></a>Alterar o Usuário Primário para dispositivos Windows <!-- 3794742 -->
+Você poderá alterar o Usuário Primário para dispositivos Ingressados no Azure AD e Windows híbridos. Para fazer isso, acesse **Intune** > **Dispositivos** > **Todos os dispositivos** > escolher um dispositivo > **Propriedades** > **Usuário Primário**. 
+
+### <a name="serial-number-on-the-apple-mdm-push-certificate-page--5947765---"></a>Número de série na página Apple MDM Push Certificate<!--5947765 -->
+A página Apple MDM Push Certificate mostrará o número de série. O número de série é necessário para recuperar acesso ao Apple MDM Push Certificate em caso de perda do acesso à ID da Apple que criou o certificado. Para ver o número de série, acesse **Dispositivos** > **iOS** > **Registro do iOS** > **Apple MDM Push Certificate**.
+
+### <a name="choose-which-iosipados-updates-to-push-to-enrolled-devices--5879689---"></a>Escolher quais atualizações do iOS/iPadOS enviar por push a dispositivos registrados<!--5879689 -->
+Você poderá escolher uma atualização específica do iOS/iPadOS para enviar por push para os dispositivos registrados usando o Apple Business Manager ou o Apple School Manager. Esses dispositivos devem ter uma política de configuração de dispositivo definida para atrasar a visibilidade da atualização de software por algum número de dias. Para ver esse recurso, acesse MEM > **Dispositivos** > **iOS** > **Atualizar políticas para iOS/iPadOS** > **Criar perfil**.
+
+### <a name="new-update-schedule-options-for-pushing-os-updates-to-enrolled-iosipados-devices--5879689--"></a>Novas opções de agendamento de atualização para enviar por push atualizações do sistema operacional para dispositivos iOS/iPadOS registrados<!--5879689-->
+Você poderá usar as opções a seguir ao agendar atualizações do sistema operacional para dispositivos iOS/iPadOS. Isso se aplica a dispositivos que usavam os tipos de registro Apple Business Manager ou Apple School Manager.
+- Atualizar no próximo check-in
+- Atualizar durante o horário agendado
+- Atualizar fora do horário agendado
+
+Para as duas últimas opções, você pode criar várias janelas de tempo.
+
+Para ver as novas opções, acesse MEM > **Dispositivos** > **iOS** > **Atualizar políticas para iOS/iPadOS** > **Criar perfil**.
 
 
 <!-- ***********************************************-->
@@ -119,10 +151,19 @@ Esse recurso aplica-se a:
  
 
 <!-- ***********************************************-->
+## <a name="monitoring-and-troubleshooting"></a>Monitoramento e solução de problemas
 
-<!--
-## Monitoring and troubleshooting
--->
+### <a name="improved-intune-reporting-experience---3791418-idready---"></a>Experiência aprimorada de relatórios do Intune<!-- 3791418 idready -->
+O Intune agora oferece uma experiência aprimorada de relatórios, incluindo novos tipos de relatórios, melhor organização de relatórios, visualizações mais focadas, funcionalidade aprimorada de relatórios e dados mais consistentes e oportunos. A experiência de relatório passará da versão prévia pública para a GA (disponibilidade geral). Além disso, a versão GA terá suporte à localização, correções de bug, aprimoramentos de design e dados de conformidade de dispositivo agregados em blocos no [centro de administração do Gerenciador de Ponto de Extremidade da Microsoft](https://go.microsoft.com/fwlink/?linkid=2109431).
+
+Novos tipos de relatório se concentram no seguinte:
+- **Operacional** - fornece novos registros com foco de integridade negativa. 
+- **Organizacional** - fornece um resumo mais amplo do estado geral.
+- **Histórico** – fornece padrões e tendências ao longo de um período.
+- **Especialista** – permite que você use dados brutos para criar seus próprios relatórios personalizados.
+
+O primeiro conjunto de novos relatórios se concentra na conformidade do dispositivo. Para saber mais, confira [Blog - Estrutura de relatórios do Microsoft Intune](https://techcommunity.microsoft.com/t5/Intune-Customer-Success/New-Reporting-Framework-Coming-to-Intune/ba-p/1009553) e [Relatórios do Intune](~/fundamentals/reports.md).
+
 
 
 <!-- ***********************************************-->
@@ -136,7 +177,13 @@ A interface do usuário do [Centro de Administração do Gerenciador de Ponto de
 ## <a name="security"></a>Segurança
 
 ### <a name="derived-credentials-support-on-android-cobo-devices--4839592--"></a>Suporte para credenciais derivadas em dispositivos Android COBO<!--4839592-->
-Você poderá usar credenciais derivadas em dispositivos Android Enterprise totalmente gerenciados. Será incluído suporte para recuperar uma credencial derivada para o Entrust Datacard, o Intercede e o DISA Purebred. Você poderá usar a credencial derivada para autenticação do aplicativo, Wi-Fi, VPN ou assinatura S/MIME e/ou criptografia com aplicativos que têm suporte. 
+Você poderá usar credenciais derivadas em dispositivos Android Enterprise totalmente gerenciados. Será incluído suporte para recuperar uma credencial derivada para o Entrust Datacard, o Intercede e o DISA Purebred. Você poderá usar a credencial derivada para autenticação do aplicativo, Wi-Fi, VPN ou assinatura S/MIME e/ou criptografia com aplicativos que têm suporte.
+
+### <a name="use-antivirus-policy-to-manage-settings-for-microsoft-defender-antivirus-and-the-windows-security-experience--6131401---"></a>Usar a política de antivírus para gerenciar as configurações do Antivírus Microsoft Defender e da experiência de Segurança do Windows<!--6131401 -->
+No nó *Segurança do ponto de extremidade*, você poderá definir as configurações para **Antivírus**. Ao configurar a política para antivírus, você definirá configurações para seus dispositivos Windows 10 por meio de dois tipos de perfil:
+
+- Antivírus Microsoft Defender: gerencie configurações para proteção de nuvem, exclusões do Antivírus, correção, opções de verificação e muito mais.
+- Experiência de Segurança do Windows: gerencie como os usuários veem as configurações de Segurança do Windows em seus dispositivos. Você poderá configurar o que os usuários finais podem ver na central de Segurança do Microsoft Defender e as notificações recebidas. 
 
 <!-- ***********************************************-->
 ## <a name="notices"></a>Avisos
