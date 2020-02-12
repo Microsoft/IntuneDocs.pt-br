@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: b2c6463ddce7d04168e1929414faf441ae415837
-ms.sourcegitcommit: 73b362173929f59e9df57e54e76d19834f155433
+ms.openlocfilehash: 581d88e49391bc874625e9c84318c039706b0c1b
+ms.sourcegitcommit: e1ff157f692983b49bdd6e20cc9d0f93c3b3733c
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/27/2019
-ms.locfileid: "74563836"
+ms.lasthandoff: 02/11/2020
+ms.locfileid: "77124819"
 ---
 # <a name="connect-your-intune-account-to-your-managed-google-play-account"></a>Conectar sua conta do Intune à sua conta do Google Play Gerenciado
 
@@ -33,7 +33,7 @@ Para dar suporte a [perfil de trabalho do Android Enterprise](android-work-profi
 
 Para facilitar a configuração e o uso do gerenciamento do Android Enterprise, ao se conectar ao Google Play, o Intune adicionará automaticamente quatro aplicativos comuns relacionados ao Android Enterprise ao console do administrador do Intune. Os quatro aplicativos do Android Enterprise são os seguintes:
 
-- **[Microsoft Intune](https://play.google.com/store/apps/details?id=com.microsoft.intune)**  – usado para cenários totalmente gerenciados pelo Android Enterprise.
+- **[Microsoft Intune](https://play.google.com/store/apps/details?id=com.microsoft.intune)** – usado para cenários totalmente gerenciados pelo Android Enterprise.
 - **[Microsoft Authenticator](https://play.google.com/store/apps/details?id=com.azure.authenticator)** : ajudará você a entrar em suas contas se usar a verificação de dois fatores.
 - **[Portal da Empresa do Intune](https://play.google.com/store/apps/details?id=com.microsoft.windowsintune.companyportal)** – usado para cenários de perfil de trabalho das Políticas de Proteção do Aplicativo (APP) e do Android Enterprise.
 - [Tela inicial gerenciada](https://play.google.com/store/apps/details?id=com.microsoft.launcher.enterprise) – usado para cenários dedicados/quiosques do Android Enterprise.
@@ -48,14 +48,14 @@ Para facilitar a configuração e o uso do gerenciamento do Android Enterprise, 
 
 3. Escolher **Concordo** para conceder permissão à Microsoft para [enviar informações de usuário e dispositivo ao Google](../protect/data-intune-sends-to-google.md). 
    
-4. Escolha **Iniciar Google para conectar agora** para abrir o site do Google Play gerenciado. O site é aberto em uma nova guia em seu navegador.
+4. Escolha **Iniciar Google para conectar agora** para abrir o site do Google Play gerenciado. O site é aberto em uma nova guia no seu navegador.
   
 5. Na página de entrada do Google, insira a conta do Google que será associada a todas as tarefas de gerenciamento do Android Enterprise para esse locatário. Essa é a conta do Google que os administradores de TI da sua empresa compartilham para gerenciar e publicar aplicativos no console do Google Play. Você pode usar uma conta do Google existente ou criar uma nova. A conta escolhida não deve estar associada a um domínio G Suite.
     
     > [!Note]
     > Se você estiver usando o navegador Microsoft Edge, clique em **Entrar** no canto superior direito para entrar em sua conta do Google.
 
-6. Forneça o nome da sua empresa para **Nome da organização**. O **Microsoft Intune** deverá ser exibido para o **Provedor EMM (Enterprise Mobility Management)** .
+6. Forneça o nome da sua empresa em **Nome da organização**. O **Microsoft Intune** deverá ser exibido para o **Provedor EMM (Enterprise Mobility Management)** .
 
 7. Aceite o contrato do Android e, em seguida, escolha **Confirmar**. Sua solicitação será processada.
 
@@ -69,4 +69,4 @@ Para facilitar a configuração e o uso do gerenciamento do Android Enterprise, 
 
 ## <a name="next-steps"></a>Próximas etapas
 
-Depois de conectar-se à conta do Google Play Gerenciado, você poderá [configurar dispositivos de perfil de trabalho Android Enterprise](android-work-profile-enroll.md), [configurar dispositivos dedicados com Android Enterprise](android-kiosk-enroll.md) e [configurar dispositivos totalmente gerenciados do Android Enterprise](android-kiosk-enroll.md)
+Depois de conectar-se à conta do Google Play Gerenciado, você poderá [configurar dispositivos de perfil de trabalho Android Enterprise](android-work-profile-enroll.md), [configurar dispositivos dedicados com Android Enterprise](android-kiosk-enroll.md) e [configurar dispositivos totalmente gerenciados do Android Enterprise](android-fully-managed-enroll.md)
