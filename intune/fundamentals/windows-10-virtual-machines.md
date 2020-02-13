@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 9afaf2c8a63bfaed1fdb593baf42c8fa258d7893
-ms.sourcegitcommit: 1a22b8b31424847d3c86590f00f56c5bc3de2eb5
+ms.openlocfilehash: 486ca7eae1b1e8b016f44c735ec04a23145421a8
+ms.sourcegitcommit: e1ff157f692983b49bdd6e20cc9d0f93c3b3733c
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/21/2019
-ms.locfileid: "74263111"
+ms.lasthandoff: 02/11/2020
+ms.locfileid: "77124972"
 ---
 # <a name="using-windows-10-virtual-machines-with-intune"></a>Usar máquinas virtuais do Windows 10 com o Intune
 
@@ -33,7 +33,7 @@ Ao gerenciar VMs do Windows 10 com o Intune, lembre-se sempre do seguinte:
 
 ## <a name="enrollment"></a>Registro
 - Não é recomendável o gerenciamento de máquinas virtuais de host de sessão sob demanda com o Intune. Cada VM deve ser registrada quando é criada. Além disso, a exclusão regular de VMs deixará os registros de dispositivos órfãos no Intune até que sejam [limpos](../remote-actions/devices-wipe.md#automatically-delete-devices-with-cleanup-rules). 
-- O modo de autoimplantação do Windows Autopilot não recebe suporte porque requer um TPM (Trusted Platform Module). 
+- Os tipos de implantação de assistência individual e autoimplantação do Windows Autopilot não são compatíveis porque exigem um TPM (Trusted Platform Module). 
 - Não há suporte para o registro de OOBE (Experiência imediata) em VMs que só podem ser acessadas usando o RDP (como as VMs hospedadas no Azure). Essa restrição significa que:
     - Não há suporte para o Azure Autopilot e o OOBE comercial.
     - Não há suporte para as opções de Página de status de registro para políticas de contexto de dispositivo.

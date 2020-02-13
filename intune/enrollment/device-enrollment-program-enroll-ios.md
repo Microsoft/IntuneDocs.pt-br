@@ -6,7 +6,7 @@ keywords: ''
 author: ErikjeMS
 ms.author: erikje
 manager: dougeby
-ms.date: 05/07/2019
+ms.date: 02/04/2020
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.subservice: enrollment
@@ -18,31 +18,33 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 39775f3acf1a1c3da7c836afe1699958560d509a
-ms.sourcegitcommit: f26039d674eb4d61ab68264dd1a10b2e5e1d842c
+ms.openlocfilehash: b3fe6d1e2a0dcdeafad56d3facccb96f5d0721e4
+ms.sourcegitcommit: 2b905913840d4133a7964fe4f54a58ea6e421e12
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/02/2019
-ms.locfileid: "74691846"
+ms.lasthandoff: 02/07/2020
+ms.locfileid: "77074658"
 ---
 # <a name="automatically-enroll-ios-devices-with-apples-device-enrollment-program"></a>Registrar automaticamente dispositivos iOS com o Programa de registro de dispositivos da Apple
 
-Configure o Intune para inscrever dispositivos iOS comprados por meio do [DEP (Programa de registro de dispositivos)](https://deploy.apple.com) da Apple. O DEP permite registrar um grande número de dispositivos sem nunca precisar tocá-los. Dispositivos como iPhones e iPads podem ser enviados diretamente aos usuários. Quando o usuário liga o dispositivo, o Assistente de Configuração é executado com as configurações predefinidas e o dispositivo é registrado no gerenciamento.
+Configure o Intune para inscrever dispositivos iOS comprados por meio do [DEP (Programa de registro de dispositivos)](https://deploy.apple.com) da Apple. O DEP permite registrar um grande número de dispositivos sem nunca precisar tocá-los. Dispositivos como iPhones, iPads e MacBooks podem ser enviados diretamente aos usuários. Quando o usuário liga o dispositivo, o Assistente de Configuração, que inclui a experiência pronta para uso típica de produtos da Apple, é executado com configurações predefinidas e o dispositivo é registrado no gerenciamento.
 
-Para habilitar o registro de DEP, você pode usar ambos os portais do Intune e do Apple DEP. É necessária uma lista de números de série ou um número de ordem de compra para que você possa atribuir os dispositivos ao Intune para gerenciamento. Você cria perfis de registro de DEP que contém configurações aplicadas aos dispositivos durante o registro. Observe que o registro de DEP não pode ser usado com uma conta do [gerenciador de registro de dispositivos](device-enrollment-manager-enroll.md).
+Para habilitar o registro de DEP, é necessário usar o Intune e um dos seguintes portais: ASM (Apple School Manager) e ABM (Apple Business Manager). É necessária uma lista de números de série ou um número de ordem de compra para que você possa atribuir os dispositivos ao Intune para gerenciamento no ABM/ASM. Você cria perfis de registro de DEP no Intune que contêm configurações que são aplicadas aos dispositivos durante o registro. Observe que o registro de DEP não pode ser usado com uma conta do [gerenciador de registro de dispositivos](device-enrollment-manager-enroll.md).
 
 > [!NOTE]
 > O DEP define as configurações de dispositivo que não podem ser removidas pelo usuário final. Portanto, antes de [migrar para DEP](../fundamentals/migration-guide-considerations.md), o dispositivo deve ser apagado para retornar a um estado pronto para uso (novo).
 
 ## <a name="dep-and-the-company-portal"></a>DEP e o Portal da Empresa
 
-Os registros de DEP não são compatíveis com a versão da loja de aplicativos do aplicativo Portal da Empresa. Você pode conceder aos usuários acesso ao aplicativo Portal da Empresa em um dispositivo de DEP. Para conceder esse acesso, envie por push o aplicativo para o dispositivo usando **Instalar o Portal da Empresa com o VPP** (Volume Purchase Program) no perfil do DEP. Para saber mais, veja [Registrar automaticamente dispositivos iOS com o Programa de registro de dispositivos da Apple](device-enrollment-program-enroll-ios.md#create-an-apple-enrollment-profile).
+Os registros de DEP não são compatíveis com a versão da loja de aplicativos do aplicativo Portal da Empresa. Você pode conceder aos usuários acesso ao aplicativo Portal da Empresa em um dispositivo de DEP. Talvez você queira fornecer esse acesso para permitir que os usuários escolham quais aplicativos corporativos desejam usar nos próprios dispositivos ou usem a autenticação moderna para concluir o processo de registro. 
 
- Você pode instalar o aplicativo Portal da Empresa em dispositivos já registrados no DEP. Para fazer isso, implante esse aplicativo por meio do Intune com uma [política de Configuração de Aplicativo](../apps/app-configuration-policies-use-ios.md) aplicada.
+Para habilitar a autenticação moderna durante o registro, envie por push o aplicativo para o dispositivo usando **Instalar o Portal da Empresa com o VPP** (Volume Purchase Program) no perfil do DEP. Para saber mais, veja [Registrar automaticamente dispositivos iOS com o Programa de registro de dispositivos da Apple](device-enrollment-program-enroll-ios.md#create-an-apple-enrollment-profile).
+
+Para habilitar o Portal da Empresa para atualizar automaticamente e fornecer o aplicativo Portal da Empresa em dispositivos já registrados com o DEP, implante o aplicativo Portal da Empresa por meio do Intune como um aplicativo VPP (Volume Purchase Program) necessário com uma [política de configuração de aplicativo](../apps/app-configuration-policies-use-ios.md) aplicada.
 
 ## <a name="what-is-supervised-mode"></a>O que é o modo supervisionado?
 
-A Apple apresentou o modo supervisionado no iOS 5. Um dispositivo iOS no modo supervisionado pode ser gerenciado com mais controles. Assim, é especialmente útil para dispositivos corporativos. O Intune dá suporte ao configurar dispositivos para o modo supervisionado como parte do Programa de registro de dispositivos (DEP) da Apple.
+A Apple apresentou o modo supervisionado no iOS 5. Um dispositivo iOS no modo supervisionado pode ser gerenciado com mais controles, como bloquear captura de tela e bloquear a instalação de aplicativos da App Store. Assim, é especialmente útil para dispositivos corporativos. O Intune dá suporte ao configurar dispositivos para o modo supervisionado como parte do Programa de registro de dispositivos (DEP) da Apple.
 
 A compatibilidade com dispositivos DEP não supervisionados foi preterida no iOS 11. No iOS 11 e posterior, os dispositivos configurados com o DEP devem sempre ser supervisionados. O sinalizador is_supervised do DEP será ignorado em um lançamento futuro do iOS.
 
@@ -63,7 +65,7 @@ A compatibilidade com dispositivos DEP não supervisionados foi preterida no iOS
 
 Antes que possa registrar dispositivos iOS o DEP, você precisa de um arquivo de token (.p7m) do DEP da Apple. Esse token permite que o Intune sincronize informações sobre os dispositivos do DEP de sua empresa. Ele também permite que o Intune carregue perfis de registro para a Apple e atribua novos dispositivos a esses perfis.
 
-Você pode usar o portal de DEP da Apple para criar um token de DEP. Você também pode usar o portal de DEP para atribuir dispositivos ao Intune para gerenciamento.
+Você usa o portal do Apple Business Manager ou do Apple School Manager para criar um token. Também pode usar o portal do ABM/ASM para atribuir dispositivos ao Intune para gerenciamento.
 
 > [!NOTE]
 > Caso exclua o token do Portal Clássico do Intune antes de migrar para o Azure, o Intune poderá restaurar um token de DEP da Apple. Você pode excluir o token de DEP novamente no portal do Azure.
@@ -91,7 +93,7 @@ Você pode usar o portal de DEP da Apple para criar um token de DEP. Você tamb�
 
 5. A caixa de diálogo **Adicionar &lt;ServerName&gt;** é aberta, indicando abre a caixa de diálogo, indicando **Carregar sua chave pública**. Selecione **Escolher Arquivo…** para carregar o arquivo .pem e clique em **Avançar**.
 
-6. Acesse **Programas de Implantação** &gt; **Programa de Registro de Dispositivos** &gt; **Gerenciar Dispositivos**.
+6. Vá para **Programas de Implantação** &gt; **Programa de Registro de Dispositivos** &gt; **Gerenciar Dispositivos**.
 7. Em **Escolher dispositivos por**, especifique como os dispositivos são identificados:
     - **Número de série**
     - **Número do pedido**
@@ -101,7 +103,7 @@ Você pode usar o portal de DEP da Apple para criar um token de DEP. Você tamb�
 
 8. Para **Escolher Ação**, escolha **Atribuir ao Servidor**, escolha o &lt;ServerName&gt; especificado para o Microsoft Intune e escolha **OK**. O Portal da Apple atribui os dispositivos especificados para o servidor do Intune para gerenciamento e exibe **Atribuição Concluída**.
 
-   No Portal da Apple, acesse **Programas de Implantação** &gt; **Programa de registro de dispositivos** &gt; **Exibir o Histórico de Atribuição** para ver uma lista de dispositivos e sua atribuição de servidor MDM.
+   No portal da Apple, acesse **Programas de implantação** &gt; **Programa de registro de dispositivos** &gt; **Exibir o histórico de atribuição** para ver uma lista de dispositivos e sua atribuição de servidor MDM.
 
 ### <a name="step-3-save-the-apple-id-used-to-create-this-token"></a>Etapa 3. Salve a ID da Apple usada para criar esse token.
 

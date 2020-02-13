@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 1dc2e2ce7e19933accdb1063ccacf99fa3f54b09
-ms.sourcegitcommit: 73b362173929f59e9df57e54e76d19834f155433
+ms.openlocfilehash: b0145a17434d8b309806f468bf066d54ae117144
+ms.sourcegitcommit: 1aaff35fddb3d06458d739968d28971fed0bb2ba
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/27/2019
-ms.locfileid: "74563962"
+ms.lasthandoff: 02/12/2020
+ms.locfileid: "77155353"
 ---
 # <a name="configure-microsoft-launcher"></a>Configurar o Microsoft Launcher
 
@@ -31,13 +31,13 @@ O Microsoft Launcher é um aplicativo Android que permite que os usuários perso
 
 Nos dispositivos totalmente gerenciados do Android Enterprise, o Launcher permite que os administradores de TI da empresa personalizem as telas iniciais dos dispositivos gerenciados selecionando o papel de parede, os aplicativos e as posições dos ícones. Isso padroniza a aparência de todos os dispositivos Android gerenciados em diferentes dispositivos OEM e versões do sistema. 
 
-## <a name="how-to-configure-the-microsoft-managed-home-screen-app"></a>Como configurar o aplicativo de Tela Inicial Gerenciada da Microsoft 
+## <a name="how-to-configure-the-microsoft-launcher-app"></a>Como configurar o aplicativo Microsoft Launcher 
 
-Navegue até o [Centro de Administração do Gerenciador de Ponto de Extremidade da Microsoft](https://go.microsoft.com/fwlink/?linkid=2109431) e selecione **Aplicativos** > **Políticas de configuração de aplicativo**. Adicione uma política de configuração para **Dispositivos gerenciados** em execução no **Android** e escolha **Microsoft Launcher** como o aplicativo associado. Clique em **Definições de configuração** para definir as diferentes configurações de Tela Inicial Gerenciada disponíveis. 
+Navegue até o [Centro de Administração do Gerenciador de Ponto de Extremidade da Microsoft](https://go.microsoft.com/fwlink/?linkid=2109431) e selecione **Aplicativos** > **Políticas de configuração de aplicativo**. Adicione uma política de configuração para **Dispositivos gerenciados** em execução no **Android** e escolha **Microsoft Launcher** como o aplicativo associado. Clique em **Definições de configuração** para definir as diferentes configurações do Microsoft Launcher disponíveis. 
 
 ## <a name="choosing-a-configuration-settings-format"></a>Como escolher um formato de definições de configuração 
 
-Há dois métodos que você pode usar para definir as configurações da Tela Inicial Gerenciada: 
+Há dois métodos que você pode usar para definir as configurações do Microsoft Launcher: 
 
 - O **Designer de configuração** permite que você defina as configurações com uma interface do usuário fácil de usar, que permite ativar e desativar recursos e definir valores. Nesse método, há algumas chaves de configuração desabilitadas com o tipo de valor BundleArray. Essas chaves de configuração só podem ser configuradas inserindo dados JSON. 
 
@@ -59,7 +59,7 @@ A tabela a seguir lista as chaves de configuração, tipos de valor, valores pad
 |---------------------------------------------------|------------------|---------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 |    Tipo de registro    |    Cadeia de caracteres     |    Padrão    |    Permite que você defina o tipo de registro ao qual essa política deve se aplicar. Atualmente, o valor **Padrão** refere-se a **CorporateOwnedBuisnessOnly**. Atualmente, não há outros tipos de registro com suporte.        Nome de chave JSON: management_mode_key        |
 |    Alteração do usuário da Ordem do aplicativo da tela inicial   Permitida    |    Booliano    |    verdadeiro    |    Permite especificar se a configuração **Ordem do aplicativo na tela inicial** pode ser alterada pelo usuário final.<ul><li>Se definida como **Verdadeira**, a ordem do aplicativo definida na política será aplicada apenas para a implantação inicial. Posteriormente, a política não será aplicada para respeitar as alterações que o usuário possa ter feito.</li><li>Se definida como **Falsa**, a ordem do aplicativo será imposta a cada sincronização.</li></ul><br>**Observação:** A ordem do Aplicativo na Tela Inicial pode ser configurada apenas por meio do editor JSON.<br><br>Nome da chave JSON:<br>`com.microsoft.launcher.HomeScreen.AppOrder.UserChangeAllowed`    |
-|    Definir tamanho da grade    |    Cadeia de caracteres    |    Automático    |    Permite que você defina o tamanho da grade para que aplicativos sejam posicionados na tela inicial. Você pode definir o número de linhas e colunas de aplicativo para definir o tamanho da grade no seguinte formato: `columns;rows`. Se você definir o tamanho da grade, o número máximo de aplicativos que serão mostrados em uma linha na tela inicial será o número de linhas definidas e o número máximo de aplicativos que serão mostrados em uma coluna na tela inicial o número de colunas que você definiu.<br><br>        Nome da chave JSON:<br>`com.microsoft.launcher.HomeScreen.GridSize`    |
+|    Definir tamanho da grade    |    Cadeia de caracteres    |    Auto    |    Permite que você defina o tamanho da grade para que aplicativos sejam posicionados na tela inicial. Você pode definir o número de linhas e colunas de aplicativo para definir o tamanho da grade no seguinte formato: `columns;rows`. Se você definir o tamanho da grade, o número máximo de aplicativos que serão mostrados em uma linha na tela inicial será o número de linhas definidas e o número máximo de aplicativos que serão mostrados em uma coluna na tela inicial o número de colunas que você definiu.<br><br>        Nome da chave JSON:<br>`com.microsoft.launcher.HomeScreen.GridSize`    |
 |    Definir papel de parede do dispositivo    |    Cadeia de caracteres    |    Null    |    Permite que você defina um papel de parede de sua preferência, inserindo a URL da imagem que você deseja definir como um papel de parede.<br><br>Nome da chave JSON:<br>`com.microsoft.launcher.Wallpaper.URL`    |
 |    Alteração do usuário Definir papel de parede do dispositivo   Permitida    |    Bool    |    verdadeiro    |    Permite especificar se a configuração Definir papel de parede do dispositivo pode ser alterada pelo usuário final.<ul><li>Se definida como **Verdadeira**, o papel de parede na política será aplicado apenas para a implantação inicial. Posteriormente, a política não será aplicada para respeitar as alterações que o usuário possa ter feito.</li><li>Se definida como **Falsa**, o papel de parede será aplicado a cada sincronização.</li></ul><br>Nome da chave JSON:<br>`com.microsoft.launcher.Wallpaper.URL.UserChangeAllowed`        |
 |    Habilitar feed    |    Booliano    |    verdadeiro    |    Permite ativar o feed do iniciador no dispositivo quando o usuário desliza para a direita na tela inicial.<ul><li>Se definida como **Verdadeira**, o feed será habilitado.</li><li>Se definida como **Falsa**, o feed será desabilitado.</li></ul><br>Nome da chave JSON:<br>`com.microsoft.launcher.Feed.Enabled`    |

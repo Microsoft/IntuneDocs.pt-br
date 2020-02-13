@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: ''
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 7cc873079d9a139edfa2217d97806afe0c5bbf28
-ms.sourcegitcommit: 06dce5c8111592ad774247e86e539dd3128117e5
+ms.openlocfilehash: 7279921719677fce0845517aefc5958f57ce13cb
+ms.sourcegitcommit: 32391f74241ee3289a76ccd5319fe700b800d427
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/30/2019
-ms.locfileid: "75545949"
+ms.lasthandoff: 02/07/2020
+ms.locfileid: "77075698"
 ---
 # <a name="create-mobile-threat-defense-app-protection-policy-with-intune"></a>Criar uma política de proteção de aplicativo com a Defesa contra Ameaças Móveis com o Intune
 
@@ -49,7 +49,7 @@ Pré-requisitos para a política de proteção de aplicativo com MTD:
 
 Use o procedimento para [criar uma Política de proteção de aplicativo para o iOS/iPadOS ou Android](../apps/app-protection-policies.md#app-protection-policies-for-iosipados-and-android-apps) e use as seguintes informações das páginas *Aplicativos*, *Inicialização condicional* e *Atribuições*:
 
-- **Aplicativos**: selecione o aplicativo do parceiro de Defesa contra Ameaças Móveis que você usa.
+- **Aplicativos**: Selecione os aplicativos que você deseja que sejam direcionados pelas políticas de proteção de aplicativo. Para esse conjunto de recursos, esses aplicativos serão bloqueados ou apagados seletivamente com base na avaliação de risco do dispositivo de seu fornecedor de Defesa Contra Ameaças Móveis escolhido. 
 - **Inicialização condicional**:  abaixo de *Condições do dispositivo*, use a caixa suspensa para selecionar **Nível máximo permitido de ameaça ao dispositivo**.
 
   Opções para o **valor** do nível de ameaça:

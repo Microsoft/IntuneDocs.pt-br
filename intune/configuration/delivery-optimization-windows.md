@@ -5,7 +5,7 @@ keywords: ''
 author: brenduns
 ms.author: brenduns
 manager: dougeby
-ms.date: 11/04/2019
+ms.date: 02/10/2020
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.subservice: configuration
@@ -15,25 +15,22 @@ ms.suite: ems
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
 ms.reviewer: kerimh
-ms.openlocfilehash: 44078f61e4f1939b1f0b15b3dde5ac54938ffbc3
-ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
+ms.openlocfilehash: 9fb4aab6b02c6ad6a5d2f18ca9d15beafc12d58a
+ms.sourcegitcommit: e1ff157f692983b49bdd6e20cc9d0f93c3b3733c
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "74059971"
+ms.lasthandoff: 02/11/2020
+ms.locfileid: "77124802"
 ---
 # <a name="delivery-optimization-settings-in-microsoft-intune"></a>Configurações de otimização de entrega no Microsoft Intune
 
-Com o Intune, é possível usar Configurações de otimização de entrega para seus dispositivos Windows 10 reduzirem o consumo de largura de banda quando baixarem aplicativos e atualizações. A otimização de entrega é configurada como parte dos perfis de configuração do dispositivo.  
+Com o Intune, use configurações de otimização de entrega para seus dispositivos Windows 10 reduzirem o consumo de largura de banda quando baixarem aplicativos e atualizações. Configure a otimização de entrega como parte dos perfis de configuração do dispositivo.  
 
 Este artigo descreve como configurar a otimização de entrega como parte de um perfil de configuração do dispositivo. Após criar um perfil, você atribuirá ou o implantará em seus dispositivos Windows 10. 
 
-Para obter uma lista das configurações de otimização de entrega com suporte pelo Intune, confira [Configurações de otimização de entrega para o Intune](../delivery-optimization-settings.md).  
+Para ver uma lista das configurações de otimização de entrega compatíveis com o Intune, confira [Configurações de otimização de entrega para o Intune](../delivery-optimization-settings.md).  
 
 Para conhecer a Otimização de entrega no Windows 10, confira [Atualizações de otimização de entrega](https://docs.microsoft.com/windows/deployment/update/waas-delivery-optimization) na documentação do Windows.  
-
-> [!NOTE]
-> **Atualizações de software > Anéis de Atualização do Windows 10** é substituído pelas configurações de **Otimização de entrega**. Seus anéis de atualização existentes podem ser alterados para usar as configurações de **Otimização de entrega**. [Mover os anéis de atualização existentes para otimização da entrega](#move-existing-update-rings-to-delivery-optimization) (neste artigo)
 
 ## <a name="create-the-profile"></a>Criar o perfil
 
@@ -54,13 +51,18 @@ Para conhecer a Otimização de entrega no Windows 10, confira [Atualizações d
 
 O perfil é criado e aparece na lista. Em seguida, [atribua o perfil](device-profile-assign.md) e, em seguida, [monitore seu status](device-profile-monitor.md).
 
-## <a name="move-existing-update-rings-to-delivery-optimization"></a>Mover os anéis de atualização existentes para otimização da entrega
+<!-- ## Move existing update rings to delivery optimization
 
-As configurações de **Otimização de entrega** substituem as **Atualizações do software – Anéis de Atualização do Windows 10**. Seus anéis de atualização existentes podem ser facilmente alterados para usar as configurações de **Otimização de entrega**. Para manter as mesmas configurações quando você criar um perfil de otimização de entrega, use o mesmo *Modo de download de otimização de entrega* e defina as mesmas configurações que você já usa. No entanto, é possível optar por definir novamente as configurações de otimização de entrega para aproveitar a gama completa de configurações adicionais que podem ser gerenciadas pelo perfil de Otimização de entrega.
+**Delivery optimization** settings replace **Software updates – Windows 10 Update Rings**. Your existing update rings can be easily changed to use the **Delivery optimization** settings. To maintain the same settings when you create a delivery optimization profile, use the same *Delivery optimization download mode* and then set the same settings as you already use. However, you can choose to reconfigure delivery optimization settings to take advantage of the full range of addition settings that the Delivery Optimization profile can manage. 
+-->
 
-1. Crie um perfil de configuração de otimização de entrega:
+## <a name="remove-delivery-optimization-from-windows-10-update-rings"></a>Remover a otimização de entrega dos anéis de atualização do Windows 10
 
-    1. No Centro de Administração do Gerenciador de Ponto de Extremidade da Microsoft, selecione **Dispositivos** > **Perfis de configuração** > **Criar perfil**.
+A otimização de entrega foi configurada anteriormente como parte dos anéis de atualização de software. A partir de fevereiro de 2019, as configurações de otimização de entrega serão configuradas como parte de um perfil de configuração de dispositivo de otimização de entrega, que inclui configurações adicionais que afetam mais do que a entrega de atualização de software para dispositivos. Se você ainda não fez isso, remova a configuração de otimização de entrega de seus anéis de atualização definindo-a como *Não configurada* e, em seguida, use um perfil de otimização de entrega para gerenciar a maior variedade de opções disponíveis.
+
+1. Crie um perfil de configuração de dispositivo de otimização de entrega:
+
+    1. No centro de administração do Gerenciador de Ponto de Extremidade da Microsoft, selecione **Dispositivos** > **Perfis de configuração** > **Criar perfil**.
     2. Insira as seguintes propriedades:
 
         - **Nome**: insira um nome descritivo para o novo perfil.
@@ -80,7 +82,7 @@ As configurações de **Otimização de entrega** substituem as **Atualizações
 2. Atribua esse perfil novo aos mesmos dispositivos e usuários que o anel de atualização de software existente. [Atribuir o perfil](device-profile-assign.md) lista as etapas.
 
 3. Desconfigure o anel de software existente:
-    1. No Centro de Administração do Gerenciador de Ponto de Extremidade da Microsoft, acesse **Atualizações de software** > Anéis de Atualização do Windows 10.
+    1. No centro de administração do Gerenciador de Ponto de Extremidade da Microsoft, acesse **Atualizações de software** > Anéis de atualização do Windows 10.
     2. Na lista, selecione o anel de atualização.
     3. Nas configurações, defina o **Modo de download de otimização da entrega** como **Não configurado**.
     4. **OK** > **Salve** suas alterações.

@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: e9da7acfc34dbd25902fc6fb9617ba395216a9b3
-ms.sourcegitcommit: 24487f078349795922dc497c952e8358cf767a1a
+ms.openlocfilehash: 4f97c4c56073044e79b5251dc83c54decb5c9c55
+ms.sourcegitcommit: e1ff157f692983b49bdd6e20cc9d0f93c3b3733c
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/04/2020
-ms.locfileid: "76977794"
+ms.lasthandoff: 02/11/2020
+ms.locfileid: "77124836"
 ---
 # <a name="enroll-windows-devices-in-intune-by-using-the-windows-autopilot"></a>Registrar dispositivos Windows no Intune usando o Windows Autopilot  
 O Windows Autopilot simplifica a inscrição de dispositivos no Intune. Compilar e manter imagens de sistema operacional personalizadas é um processo que consome muito tempo. Além disso, geralmente se gasta muito tempo para aplicar essas imagens personalizadas de sistema operacional aos novos dispositivos para prepará-los para o uso antes de fornecê-los aos usuários finais. Com o Microsoft Intune e o Autopilot, é possível dar novos dispositivos seus usuários finais sem precisar criar, manter e aplicar imagens personalizadas do sistema operacional para os dispositivos. Quando usa o Intune para gerenciar dispositivos do Autopilot, você pode gerenciar políticas, perfis, aplicativos e muito mais, depois de registrá-los. Para obter uma visão geral dos benefícios, cenários e pré-requisitos, confira [Visão geral do Windows Autopilot](https://docs.microsoft.com/windows/deployment/windows-autopilot/windows-10-autopilot).
@@ -100,6 +100,9 @@ Os perfis de implantação do Autopilot são usados para configurar os dispositi
     - **Autoimplantação (versão prévia)** : (exige o Windows 10, versão 1809 ou posterior) Os dispositivos com esse perfil não são associados ao usuário que registrou o dispositivo. As credenciais do usuário não são necessárias para registrar o dispositivo. Quando um dispositivo não tem nenhum usuário associado, as políticas de conformidade baseadas no usuário não são aplicadas a ele. Ao usar o modo de autoimplantação, somente as políticas de conformidade direcionadas ao dispositivo serão aplicadas.
 
     ![Captura de tela da página OOBE](./media/enrollment-autopilot/create-profile-outofbox.png)
+
+   > [!NOTE]
+   > As opções que aparecem esmaecidas ou sombreadas não são compatíveis com o modo de implantação selecionado.
 
 6. Na caixa **Ingressar no Azure AD como**, escolha **Ingressado no Azure AD**.
 7. Configure as seguintes opções:

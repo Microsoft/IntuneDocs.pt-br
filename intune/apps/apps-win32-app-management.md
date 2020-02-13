@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: c120fab1da43230888866cba9d818d7b433b711e
-ms.sourcegitcommit: 139853f8d6ea61786da7056cfb9024a6459abd70
+ms.openlocfilehash: dbefd797fead7113045ee7e7655b715a0b4961fd
+ms.sourcegitcommit: 32391f74241ee3289a76ccd5319fe700b800d427
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/26/2020
-ms.locfileid: "76755282"
+ms.lasthandoff: 02/07/2020
+ms.locfileid: "77075817"
 ---
 # <a name="intune-standalone---win32-app-management"></a>Intune autônomo – gerenciamento de aplicativos Win32
 
@@ -204,7 +204,7 @@ As etapas a seguir fornecem diretrizes para ajudar você a adicionar um aplicati
         2. Ao terminar de definir as regras de requisitos, selecione **OK**.
 2. Clique em **Avançar** para exibir a página **Regras de detecção**.   
 
-### <a name="step-4-detection-rules"></a>Etapa 4: Regras de Detecção
+## <a name="step-4-detection-rules"></a>Etapa 4: Regras de Detecção
 
 1. Na página **Regras de detecção**, configure as regras para detectar a presença do aplicativo:
     
@@ -268,7 +268,7 @@ As etapas a seguir fornecem diretrizes para ajudar você a adicionar um aplicati
 
 2. Depois de adicionar suas regras, selecione **Avançar** para exibir a página **Dependências**.
 
-### <a name="step-5-dependencies"></a>Etapa 5: Dependências
+## <a name="step-5-dependencies"></a>Etapa 5: Dependências
 
 As dependências de aplicativo são aplicativos que precisam ser instalados antes que o aplicativo Win32 possa ser instalado. Você pode exigir que outros aplicativos sejam instalados como dependências. Especificamente, o dispositivo precisa instalar os aplicativos dependentes antes de instalar o aplicativo Win32. Há um máximo de 100 dependências, que incluem as dependências das dependências incluídas, bem como o próprio aplicativo. Você poderá adicionar dependências de aplicativo Win32 somente depois que o aplicativo Win32 for adicionado ao Intune e carregado nele. Depois que o aplicativo Win32 for adicionado, você verá a opção **Dependências** no painel do aplicativo Win32. 
 
