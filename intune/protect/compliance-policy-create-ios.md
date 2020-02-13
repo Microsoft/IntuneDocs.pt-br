@@ -5,7 +5,7 @@ keywords: ''
 author: brenduns
 ms.author: brenduns
 manager: dougeby
-ms.date: 10/22/2019
+ms.date: 02/07/2020
 ms.topic: reference
 ms.service: microsoft-intune
 ms.subservice: protect
@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 3b83b764af415349b287df2a09f9b4c355734c28
-ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
+ms.openlocfilehash: e9bcfed67eda96bb4d79317bcc69d21a5f8197bc
+ms.sourcegitcommit: 2b905913840d4133a7964fe4f54a58ea6e421e12
 ms.translationtype: MTE75
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "72810244"
+ms.lasthandoff: 02/07/2020
+ms.locfileid: "77074624"
 ---
 # <a name="ios-settings-to-mark-devices-as-compliant-or-not-compliant-using-intune"></a>Configurações do iOS para marcar dispositivos como em conformidade ou não em conformidade usando o Intune
 
@@ -42,7 +42,7 @@ Como um administrador do Intune, use essas configurações de conformidade para 
 ## <a name="email"></a>Email
 
 - **Exigir que os dispositivos móveis tenham um perfil de email gerenciado**:  
-  - **Não configurado** (*padrão*) — Esta configuração não é avaliada em relação a estar ou não em conformidade.
+  - **Não configurado** (*padrão*) — Essa configuração não é avaliada em relação à conformidade.
   - **Exigir** – Os dispositivos que não tenham um email de perfil gerenciado pelo Intune são considerados não compatíveis. Um dispositivo pode não ter um perfil de email gerenciado quando não é direcionado corretamente ou se o usuário tiver configurado manualmente a conta de email no dispositivo.
 
   O dispositivo é considerado como não estando em conformidade nas seguintes situações:  
@@ -51,17 +51,17 @@ Como um administrador do Intune, use essas configurações de conformidade para 
 
 Para obter detalhes sobre perfis de email, veja [configurar o acesso ao email da organização usando perfis de email com o Intune](../configuration/email-settings-configure.md).
 
-## <a name="device-health"></a>Integridade do Dispositivo
+## <a name="device-health"></a>Integridade do dispositivo
 
 - **Dispositivos com jailbreak**:  
-  - **Não configurado** (*padrão*) — Esta configuração não é avaliada em relação a estar ou não em conformidade.
+  - **Não configurado** (*padrão*) — Essa configuração não é avaliada em relação à conformidade.
   - **Bloquear** – Marque dispositivos desbloqueados por rooting (com jailbreak) como fora de conformidade.  
 
 - **Requer que o dispositivo esteja em nível igual ou inferior ao Nível de Ameaças do Dispositivo** *(iOS 8.0 e mais recente)* :  
   Use essa configuração para fazer a avaliação de risco como uma condição de conformidade. Escolha o nível de ameaça permitido:  
-  - **Não configurado** (*padrão*) — Esta configuração não é avaliada em relação a estar ou não em conformidade.
+  - **Não configurado** (*padrão*) — Essa configuração não é avaliada em relação à conformidade.
   - **Protegido** – Esta opção é a mais segura e significa que o dispositivo não pode ter ameaças. Se for detectado que o dispositivo tem qualquer nível de ameaça, será avaliado que ele não está em conformidade.
-  - **Baixo** – O dispositivo será avaliado como em conformidade se apenas ameaças de nível baixo estiverem presentes. Qualquer coisa acima disso coloca o dispositivo no estado de não compatível.
+  - **Baixa** – O dispositivo será avaliado como em conformidade se apenas ameaças de nível baixo estiverem presentes. Qualquer ameaça superior coloca o dispositivo em um status de não compatível.
   - **Médio** – O dispositivo será avaliado como em conformidade se as ameaças presentes nele forem de nível baixo ou médio. Se for detectado que o dispositivo tem ameaças de nível alto, será determinado que ele não está em conformidade.
   - **Alto** – Esta opção é a menos segura, porque permite todos os níveis de ameaça. Talvez seja útil se você estiver usando esta solução apenas para fins de relatório.
 
@@ -69,16 +69,16 @@ Para obter detalhes sobre perfis de email, veja [configurar o acesso ao email da
 
 ### <a name="operating-system-version"></a>Versão do Sistema Operacional  
 
-- **Sistema operacional mínimo necessário** *(Ios 8,0 e mais recente)* :  
+- **Versão mínima do SO** *(iOS 8.0 e mais recentes)* :  
   Quando um dispositivo não atende ao requisito mínimo de versão do sistema operacional, ele será relatado como não estando em conformidade. É exibido um link com informações sobre como atualizar. O usuário final pode optar por atualizar o dispositivo. Depois disso, eles podem acessar recursos da organização.
 
-- **Versão máxima do sistema operacional permitida** *(Ios 8,0 e mais recente)* :  
+- **Versão máxima do SO** *(iOS 8.0 e mais recentes)* :  
   Quando um dispositivo usa uma versão de SO posterior à versão inserida na regra, o acesso aos recursos da organização é bloqueado. O usuário final é solicitado a contatar seu administrador de TI. O dispositivo não pode acessar os recursos da organização até uma regra mudar para permitir a versão do SO.
 
-- **Versão mínima de Build do so** *(Ios 8,0 e mais recente)* :  
+- **Versão mínima do build do SO** *(iOS 8.0 e mais recentes)* :  
   Quando a Apple publica atualizações de segurança, geralmente é atualizado o número de compilação, não a versão do sistema operacional. Use esse recurso para inserir um número de compilação mínima permitido no dispositivo.
 
-- **Versão máxima de Build do so** *(Ios 8,0 e mais recente)* :  
+- **Versão máxima do build do SO** *(iOS 8.0 e mais recentes)* :  
   Quando a Apple publica atualizações de segurança, geralmente é atualizado o número de compilação, não a versão do sistema operacional. Use esse recurso para inserir um número de compilação máxima permitido no dispositivo.
 
 ## <a name="system-security"></a>Segurança do Sistema
@@ -90,17 +90,17 @@ Para obter detalhes sobre perfis de email, veja [configurar o acesso ao email da
 
 - **Exigir uma senha para desbloquear os dispositivos móveis**:  
   - **Não configurado** (*padrão*) — Essa configuração não é avaliada em relação à conformidade.  
-  - **Exigir** – Os usuários devem inserir uma senha antes que possam acessar no dispositivo. Dispositivos iOS que usam uma senha são criptografados.
+  - **Exigir** – Os usuários precisam inserir uma senha para acessar o dispositivo. Dispositivos iOS que usam uma senha são criptografados.
 
 - **Senhas simples**:  
-  - **Não configurado** (*padrão*)-os usuários podem criar senhas simples, como **1234** ou **1111**.
+  - **Não configurado** (*padrão*) – os usuários podem criar senhas simples, como **1234** ou **1111**.
   - **Bloquear** — Os usuários não podem criar senhas simples, como **1234** ou **1111**. 
 
 - **Comprimento mínimo da senha**:  
   Insira o número mínimo de dígitos ou caracteres que a senha deve ter.  
 
 - **Tipo de senha necessária**:  
-  Escolha se uma senha deve ter apenas caracteres **numéricos** ou se deve haver uma combinação de números e outros caracteres (alfanuméricos).
+  Escolha se uma senha deve ter apenas caracteres **numéricos** ou se deve haver uma combinação de números e outros caracteres (**alfanuméricos**).
 
 - **Número de caracteres não alfanuméricos na senha**:  
   Insira o número mínimo de caracteres especiais, como `&`, `#`, `%`, `!` e assim por diante, que devem ser incluídos na senha. 
@@ -108,10 +108,10 @@ Para obter detalhes sobre perfis de email, veja [configurar o acesso ao email da
   Definir um número mais alto exige que o usuário crie uma senha mais complexa.
 
 - **Máximo de minutos após o bloqueio de tela antes que a senha seja exigida** *(iOS 8.0 e mais recente)* :  
-  Especifique o quanto logo após a tela ser bloqueada antes que um usuário precise digitar uma senha para acessar o dispositivo. As opções incluem o padrão de *não configurado*, *imediatamente*e de *1 minuto* a *4 horas*.
+  Especifique quanto tempo após o bloqueio da tela o usuário precisará digitar uma senha para acessar o dispositivo. As opções incluem o padrão de *Não configurado*, *Imediatamente* e de *1 minuto* a *4 oras*.
 
 - **Máximo de minutos de inatividade até a tela ser bloqueada**:  
-  Insira o tempo ocioso antes que o dispositivo bloqueie sua tela. As opções incluem o padrão de *não configurado*, *imediatamente*e de *1 minuto* a *15 minutos*.
+  Insira o tempo ocioso antes que o dispositivo bloqueie a tela. As opções incluem o padrão de *Não configurado*, *Imediatamente* e de *1 minuto* a *15 minutos*.
 
 - **Expiração da senha (dias)** :  
   Selecione o número de dias antes que a senha expire e seja preciso criar uma nova. 
