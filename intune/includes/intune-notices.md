@@ -7,14 +7,29 @@ ms.topic: include
 ms.date: 11/19/2019
 ms.author: erikje
 ms.custom: include file
-ms.openlocfilehash: 6064fb657454106a8a7213e0bbbcecdcef765857
-ms.sourcegitcommit: c7c6be3833d9a63d43f31d598b555b49b33cf5cb
+ms.openlocfilehash: 4e93cb7f2d503704251b16d1af03924358020d4e
+ms.sourcegitcommit: 1aaff35fddb3d06458d739968d28971fed0bb2ba
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/03/2020
-ms.locfileid: "76966344"
+ms.lasthandoff: 02/12/2020
+ms.locfileid: "77156257"
 ---
 Esses avisos fornecem informações importantes que podem ajudar você a se preparar para os recursos e as alterações futuras do Intune.
+
+### <a name="plan-for-change-change-in-experience-when-enrolling-android-enterprise-dedicated-devices-in-intune--6114580--"></a>Planejar mudanças: experiência alterada ao registrar dispositivos dedicados do Android Enterprise no Intune.<!--6114580-->
+Informamos na versão de novembro que adicionamos o suporte para a implantação de certificados SCEP em dispositivos Android Enterprise dedicados para habilitar o acesso baseado em certificado a perfis de Wi-Fi. Essa mudança envolveu algumas alterações secundárias do fluxo de registro para dispositivos Android Enterprise dedicados. Com a próxima atualização do serviço de março ou 2003, há algumas alterações adicionais das quais gostaríamos que você soubesse.
+
+#### <a name="how-does-this-affect-me"></a>Como isso me afeta?
+Se você gerenciar dispositivos Android Enterprise dedicados em seu ambiente, começará a ver algumas alterações distribuídas em março.
+- Para dispositivos Android dedicados existentes registrados antes da atualização de serviço de 22 de novembro de 2019 ou 1911: esses dispositivos têm o aplicativo Microsoft Intune instalado neles. Após a distribuição das alterações de back-end no serviço do Intune em março, os certificados SCEP implantados em dispositivos e associados aos perfis Wi-Fi começarão a ser aplicados.
+- Para dispositivos que foram registrados após 22 de novembro de 2019 e antes que essa alteração seja distribuída em março: esses dispositivos têm o aplicativo Microsoft Intune instalado neles. Os certificados SCEP implantados em dispositivos e associados aos perfis Wi-Fi continuarão a ser aplicados.
+- Para novos registros de dispositivos Android Enterprise dedicados depois que a alteração for distribuída em março: os usuários finais verão um conjunto diferente de etapas nos dispositivos durante o registro. O registro ainda começará da mesma forma de hoje (com um identificador de dispositivo, QR, NFC ou Zero-Touch), mas não haverá uma etapa obrigatória de instalação de aplicativo. Em vez disso, o aplicativo Microsoft Intune será instalado automaticamente nos dispositivos. Além disso, os usuários finais não precisarão tocar em "Habilitar agente do Intune" durante o fluxo. Os certificados SCEP associados aos perfis de Wi-Fi podem ser implantados nesses dispositivos.
+
+#### <a name="what-can-i-do-to-prepare-for-this-change"></a>O que fazer para me preparar para essa mudança?
+Você pode atualizar as diretrizes do usuário final e informar a assistência técnica sobre essa alteração. Atualizaremos nossa página de Novidades e o notificaremos no Centro de mensagens quando essa alteração começar a ser distribuída.
+
+#### <a name="additional-information"></a>Informações adicionais
+[Suporte para certificados SCEP em dispositivos Android Enterprise dedicados](https://aka.ms/Dedicated_devices_enrollment)
 
 ### <a name="updated-support-statement-for-adobe-acrobat-reader-for-intune-mobile-app--5746776--"></a>Foi atualizada a instrução de suporte do aplicativo móvel "Adobe Acrobat Reader for Intune"<!--5746776-->
 Compartilhamos no MC188653 no final de agosto, que o aplicativo móvel Adobe Acrobat Reader para Intune estava atingindo o fim da vida útil em 1º de dezembro de 2019 e que a Adobe planejava dar suporte às políticas de proteção de aplicativos do Intune no aplicativo principal Acrobat Reader. Desde então, recebemos comentários dos clientes de que precisávamos dar mais tempo para continuar a permitir que os administradores de TI direcionem e os usuários finais comecem a usar o Adobe Acrobat Reader para Intune. Devido ao alto uso do Adobe Acrobat Reader para Intune em dispositivos de usuário final e sua importância em cenários empresariais, queremos garantir que todas as experiências atendam às necessidades de proteção do aplicativo da sua organização. 
