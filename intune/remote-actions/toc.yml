@@ -25,11 +25,11 @@
           href: device-restart.md
     - name: Ações do dispositivo da Apple
       items:
-        - name: Localizar um dispositivo iOS perdido
+        - name: Localizar um dispositivo iOS/iPadOS perdido
           href: device-locate.md
-        - name: Habilitar o modo perdido do iOS
+        - name: Habilitar o modo de perda do iOS/iPadOS
           href: device-lost-mode.md
-        - name: Ativar o modo supervisionado do iOS
+        - name: Ativar o modo supervisionado do iOS/iPadOS
           href: device-supervised-mode.md
         - name: Apagar o dispositivo macOS
           href: device-erase.md
