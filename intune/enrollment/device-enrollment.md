@@ -1,7 +1,7 @@
 ---
 title: O que é o registro do dispositivo do Microsoft Intune
 titleSuffix: Microsoft Intune
-description: Saiba mais sobre o registro de dispositivos iOS, Android e Windows.
+description: Saiba mais sobre o registro de dispositivos iOS/iPadOS, Android e Windows.
 keywords: ''
 author: ErikjeMS
 ms.author: erikje
@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure; get-started
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: feee58d926a25e9132204798ba93d10a7c90f41e
-ms.sourcegitcommit: a82d25d98fdf0ba766f8f074871d4f13725e23f9
+ms.openlocfilehash: 7955c91a33edef37b86f5bd8f29dfb681d28030e
+ms.sourcegitcommit: 51591b862d97904291af7aa53a6eb341b11a761e
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/31/2019
-ms.locfileid: "75547840"
+ms.lasthandoff: 02/17/2020
+ms.locfileid: "77415341"
 ---
 # <a name="what-is-device-enrollment"></a>O que é o registro de dispositivo?
 [!INCLUDE [azure_portal](../includes/azure_portal.md)]
@@ -33,7 +33,7 @@ Como é possível ver nas tabelas a seguir, há vários métodos de registrar os
 
 Por padrão, dispositivos para todas as plataformas têm permissão para se registrarem no Intune. No entanto, você pode [restringir os dispositivos pela plataforma](enrollment-restrictions-set.md#create-a-device-type-restriction).
 
-## <a name="ios-enrollment-methods"></a>Métodos de registro do iOS
+## <a name="iosipados-enrollment-methods"></a>Métodos de registro do iOS/iPadOS
 
 | **Método** | **Redefinição Necessária** | [**Afinidade do Usuário**](device-enrollment-program-enroll-ios.md#create-an-apple-enrollment-profile) | **Locked** | **Detalhes** |
 |:---:|:---:|:---:|:---:|:---:|
@@ -84,36 +84,36 @@ Por padrão, dispositivos para todas as plataformas têm permissão para se regi
 A abordagem BYOD (Traga seu próprio dispositivo) inclui telefones, tablets e computadores de propriedade pessoal. Os usuários instalam e executam o aplicativo do Portal da Empresa para registrar BYODs. Esse programa permite que os usuários acessem os recursos da empresa como email.
 
 ## <a name="corporate-owned-device"></a>Dispositivo corporativo
-[Os COD (dispositivos corporativos)](corporate-identifiers-add.md) incluem telefones, tablets e computadores que pertencem à organização e são distribuídos para a força de trabalho. O registro de COD é compatível com cenários de gerenciamento como registro automático, dispositivos compartilhados ou requisitos de registro pré-autorizados. Uma maneira comum de registrar CODs é um administrador ou gerente usar o gerenciador de registros de dispositivo (DEM). Os dispositivos iOS podem ser registrados diretamente por meio das ferramentas do Programa de Registro de Dispositivos (DEP) fornecidas pela Apple. Os dispositivos com um número IMEI também podem ser identificados e marcados como propriedade da empresa.
+[Os COD (dispositivos corporativos)](corporate-identifiers-add.md) incluem telefones, tablets e computadores que pertencem à organização e são distribuídos para a força de trabalho. O registro de COD é compatível com cenários de gerenciamento como registro automático, dispositivos compartilhados ou requisitos de registro pré-autorizados. Uma maneira comum de registrar CODs é um administrador ou gerente usar o gerenciador de registros de dispositivo (DEM). Os dispositivos iOS/iPadOS podem ser registrados diretamente por meio das ferramentas do DEP (Programa de registro de dispositivos) fornecidas pela Apple. Os dispositivos com um número IMEI também podem ser identificados e marcados como propriedade da empresa.
 
 ### <a name="device-enrollment-manager"></a>Gerenciador de registro de dispositivos
 O DEM (gerenciador de registro de dispositivos) é uma conta de usuário especial usada para registrar e gerenciar vários dispositivos corporativos. Os gerentes podem instalar o Portal da Empresa e registrar vários dispositivos sem usuário. Esses tipos de dispositivos são bons, por exemplo, para aplicativos de ponto de venda ou utilitários, mas não para usuários que precisam acessar os recursos ou o email da empresa. Saiba mais sobre o [DEM](device-enrollment-manager-enroll.md).
 
 ### <a name="apple-device-enrollment-program"></a>Programa de Registro do Dispositivo da Apple
-O DEP (Programa de registro de dispositivos) da Apple permite criar e implantar políticas "por ondas de rádio" em dispositivos iOS e macOS adquiridos e gerenciados com o DEP. O dispositivo é registrado quando os usuários liga o dispositivo pela primeira vez e executa o Assistente de Configuração. Esse método dá suporte ao modo supervisionado do iOS, que permite que um dispositivo seja configurado com uma funcionalidade específica.
+O DEP da Apple permite criar e implantar políticas "over-the-air" em dispositivos iOS/iPadOS e macOS adquiridos e gerenciados com o DEP. O dispositivo é registrado quando os usuários liga o dispositivo pela primeira vez e executa o Assistente de Configuração. Esse método dá suporte ao modo supervisionado do iOS/iPadOS, que permite a configuração de dispositivo com uma funcionalidade específica.
 
-Saiba mais sobre o registro DEP do iOS:
+Saiba mais sobre o registro DEP do iOS/iPadOS:
 
-- [Escolha como registrar dispositivos iOS](ios-enroll.md)
-- [Registrar dispositivos iOS usando o Programa de registro de dispositivos](device-enrollment-program-enroll-ios.md)
+- [Escolha como registrar dispositivos iOS/iPadOS](ios-enroll.md)
+- [Registrar dispositivos iOS/iPadOS usando o Programa de registro de dispositivos](device-enrollment-program-enroll-ios.md)
 
 ### <a name="usb-sa"></a>USB-SA
 Os administradores de TI usam o Apple Configurator, por USB, para preparar manualmente todos os dispositivos de propriedade corporativa para o registro usando o Assistente de Configuração. O administrador de TI cria um perfil de registro e exporta-o para o Apple Configurator. Quando os usuários recebem seus dispositivos, devem executar o Assistente de Instalação para registrá-los. Esse método dá suporte ao modo **Supervisionado do iOS**, que, por sua vez, habilita os seguintes recursos:
 - Registro bloqueado
 - Modo de quiosque e outras restrições e configurações avançadas
 
-Saiba mais sobre o registro do Apple Configurator no iOS com o Assistente de Configuração:
+Saiba mais sobre o registro do Apple Configurator no iOS/iPadOS com o Assistente de Configuração:
 
-- [Decidir como registrar dispositivos iOS](ios-enroll.md)
-- [Registrar dispositivos iOS com o Configurator e o Assistente de Configuração](apple-configurator-enroll-ios.md)
+- [Decidir como registrar dispositivos iOS/iPadOS](ios-enroll.md)
+- [Registrar dispositivos iOS/iPadOS com o Configurator e o Assistente de Configuração](apple-configurator-enroll-ios.md)
 
 ### <a name="usb-direct"></a>USB-Direct
 Para o registro direto, o administrador deve registrar todos os dispositivos manualmente criando uma política de registro e exportando-a para o Apple Configurator. Os dispositivos de propriedade da empresa conectados por USB são registrados diretamente, sem precisar de apagamento. Os dispositivos são gerenciados como dispositivos sem usuário. Eles não são bloqueados nem supervisionados e não dão suporte ao Acesso Condicional, detecção de jailbreak ou gerenciamento de aplicativo móvel.
 
-Para saber mais sobre o registro de iOS, consulte:
+Para saber mais sobre o registro de iOS/iPadOS, confira:
 
-- [Decidir como registrar dispositivos iOS](ios-enroll.md)
-- [Registrar dispositivos iOS com o Configurator e registro direto](apple-configurator-enroll-ios.md)
+- [Decidir como registrar dispositivos iOS/iPadOS](ios-enroll.md)
+- [Registrar dispositivos iOS/iPadOS com o Configurator e registro direto](apple-configurator-enroll-ios.md)
 
 ## <a name="mobile-device-cleanup-after-mdm-certificate-expiration"></a>Limpeza de dispositivo móvel após a expiração do certificado MDM
 

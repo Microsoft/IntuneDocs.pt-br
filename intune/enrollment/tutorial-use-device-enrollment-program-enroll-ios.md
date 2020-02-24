@@ -1,7 +1,7 @@
 ---
-title: Tutorial – usar o Programa de registro de dispositivos ou Apple Business Manager para registrar dispositivos iOS no Intune
+title: Tutorial – usar o Programa de registro de dispositivos ou Apple Business Manager para registrar dispositivos iOS/iPadOS no Intune
 titleSuffix: Microsoft Intune
-description: Neste tutorial, você configurará recursos de registro de dispositivos corporativos da Apple do Apple Business Manager para registrar dispositivos iOS no Intune.
+description: Neste tutorial, você configurará recursos de registro de dispositivos corporativos da Apple do Apple Business Manager para registrar dispositivos iOS/iPadOS no Intune.
 keywords: ''
 author: ErikjeMS
 ms.author: erikje
@@ -15,14 +15,14 @@ ms.technology: ''
 ms.assetid: ''
 Customer intent: As an Intune admin, I want to set up the Apple's corporate device enrollment features so that corporate devices can automatically enroll in Intune.
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: f5599e7ea8c9a26c4624f98133db566fb07c89af
-ms.sourcegitcommit: 5178aec0244e023e73546f3d10f1a76eaf1f4a3e
+ms.openlocfilehash: 9aab0233c05416fc50413a7889435cb221179730
+ms.sourcegitcommit: 51591b862d97904291af7aa53a6eb341b11a761e
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/03/2020
-ms.locfileid: "76971774"
+ms.lasthandoff: 02/17/2020
+ms.locfileid: "77415137"
 ---
-# <a name="tutorial-use-apples-corporate-device-enrollment-features-in-apple-business-manager-abm-to-enroll-ios-devices-in-intune"></a>Tutorial: Usar recursos do Registro de dispositivos corporativos da Apple no ABM (Apple Business Manager) para registrar dispositivos iOS no Intune
+# <a name="tutorial-use-apples-corporate-device-enrollment-features-in-apple-business-manager-abm-to-enroll-iosipados-devices-in-intune"></a>Tutorial: Usar recursos do Registro de dispositivos corporativos da Apple no ABM (Apple Business Manager) para registrar dispositivos iOS/iPadOS no Intune
 Os recursos de registro de dispositivos no Apple Business Manager simplificam o registro de dispositivos. O Intune também dá suporte ao portal DEP (Programa de registro de dispositivos) da Apple, o qual é mais antigo, mas incentivamos você a experimentar um novo começo com o Apple Business Manager. Com o Microsoft Intune e o Registro de dispositivos corporativos da Apple, os dispositivos são registrados automaticamente com segurança na primeira vez em que o usuário liga o dispositivo. Assim, você pode enviar dispositivos para vários usuários sem a necessidade de configurar cada dispositivo individualmente. 
 
 Neste tutorial, você aprenderá a:
@@ -40,7 +40,7 @@ Se você não tiver uma assinatura do Intune, [inscreva-se para uma conta de ava
 - Obtenha um [certificado push de MDM da Apple](apple-mdm-push-certificate-get.md)
 
 ## <a name="get-an-apple-device-enrollment-token"></a>Obter um token do registro de dispositivos da Apple
-Antes de registrar dispositivos iOS com recursos de registro corporativo da Apple, você precisará de um arquivo de token (.PEM) do registro de dispositivos da Apple. Esse token permite que o Intune sincronize informações sobre os dispositivos Apple de sua empresa. Ele também permite que o Intune carregue perfis de registro para a Apple e atribua novos dispositivos a esses perfis.
+Antes de registrar dispositivos iOS/iPadOS com recursos de registro corporativo da Apple, você precisará de um arquivo de token (.PEM) do registro de dispositivos da Apple. Esse token permite que o Intune sincronize informações sobre os dispositivos Apple de sua empresa. Ele também permite que o Intune carregue perfis de registro para a Apple e atribua novos dispositivos a esses perfis.
 
 Você pode usar o portal do DEP ou do ABM para criar um token do registro de dispositivos. Você também pode usar os portais do DEP para atribuir dispositivos ao Intune para gerenciamento.
 
@@ -78,13 +78,13 @@ Você pode usar o portal do DEP ou do ABM para criar um token do registro de dis
 11. Se você quiser aplicar marcas de escopo para limitar quais administradores têm acesso a esse token, selecione os escopos.
 
 ## <a name="create-an-apple-enrollment-profile"></a>Criar um perfil de registro da Apple
-Agora que você instalou o token, pode criar um perfil de registro para dispositivos iOS de propriedade corporativa. Um perfil de registro de dispositivo define as configurações aplicadas a um grupo de dispositivos durante o registro.
+Agora que você instalou o token, pode criar um perfil de registro para dispositivos iOS/iPadOS de propriedade corporativa. Um perfil de registro de dispositivo define as configurações aplicadas a um grupo de dispositivos durante o registro.
 
 1. No [Centro de Administração do Gerenciador de Ponto de Extremidade da Microsoft](https://go.microsoft.com/fwlink/?linkid=2109431), selecione **Dispositivos** > **iOS** > **Registro do iOS** > **Tokens do Programa de Registro**.
 
 2. Selecione o token que você acabou de instalar, escolha **Perfis** > **Criar perfil**.
 
-3. Em **Criar perfil**, insira *TestDEPProfile* para **Nome** e *Teste DEP para dispositivos iOS* para **Descrição**. Os usuários não veem esses detalhes.
+3. Em **Criar Perfil**, insira *TestDEPProfile* para **Nome** e *Teste DEP para dispositivos iOS/iPadOS* para **Descrição**. Os usuários não veem esses detalhes.
 
 4. Escolha **iOS** em **Plataforma**.
 
@@ -96,11 +96,11 @@ Agora que você instalou o token, pode criar um perfil de registro para disposit
 
 8. Se você optar por registrar com afinidade de usuário, autenticar com o Portal da Empresa e instalar o Portal da Empresa com o VPP, decida se deseja executar o Portal da empresa no modo de aplicativo único até a autenticação. Essa configuração permite que você assegure que o usuário não terá acesso a outros aplicativos até que tenha concluído o registro corporativo. Se você desejar impedir que o usuário acesse esse fluxo até o registro ser concluído, escolha **Sim** em **Executar o Portal da Empresa no modo de aplicativo único até a autenticação**. 
 
-9. Escolha **Configurações de Gerenciamento de Dispositivos** e escolha **Sim** em **Supervisionado**. Dispositivos supervisionados lhe oferecem a maioria das opções de gerenciamento para dispositivos iOS corporativos.
+9. Escolha **Configurações de Gerenciamento de Dispositivos** e escolha **Sim** em **Supervisionado**. Os dispositivos supervisionados oferecem a você a maioria das opções de gerenciamento para dispositivos iOS/iPadOS corporativos.
 
 10. Escolha **Sim** em **Registro bloqueado** para garantir que os usuários não possam remover o gerenciamento do dispositivo corporativo. 
 
-11. Escolha uma opção em **Sincronizar com Computadores** para determinar se os dispositivos iOS poderão sincronizar com computadores.
+11. Escolha uma opção em **Sincronizar com Computadores** para determinar se os dispositivos iOS/iPadOS poderão sincronizar com computadores.
 
 12. Por padrão, a Apple nomeia o dispositivo com o tipo de dispositivo (ou seja, iPad). Se você quiser fornecer um modelo de nome diferente, escolha **Sim** em **Aplicar modelo de nome de dispositivo**. Insira o nome que você deseja aplicar aos dispositivos, em que as cadeias de caracteres *{{SERIAL}}* e *{{DEVICETYPE}}* substituirão o número de série de cada dispositivo e o tipo do dispositivo. Caso contrário, escolha **Não** em **Aplicar modelo de nome de dispositivo**.
 
@@ -118,9 +118,9 @@ Agora que você instalou o token, pode criar um perfil de registro para disposit
 
 Depois de configurar um token do programa de registro com o portal DEP, ABM ou ASM e atribuir os dispositivos ali existentes ao servidor de MDM, você pode esperar aguardar a sincronização desses dispositivos com o serviço do Intune ou efetuar push de uma sincronização manualmente. Sem uma sincronização manual, dispositivos podem levar até 24 horas para aparecer no portal do Azure.
 
-1. No [Centro de Administração do Gerenciador de Ponto de Extremidade da Microsoft](https://go.microsoft.com/fwlink/?linkid=2109431), escolha **Dispositivos** > **iOS** > **Registro do iOS** > **Tokens do Programa de Registro** > escolha um token na lista > **Dispositivos** > **Sincronizar**.
+1. No [Centro de Administração do Gerenciador de Ponto de Extremidade da Microsoft](https://go.microsoft.com/fwlink/?linkid=2109431), escolha **Dispositivos** > **iOS** > **Registro do iOS** > **Tokens do programa de registro** > escolha um token na lista > **Dispositivos** > **Sincronizar**.
 
-## <a name="assign-an-enrollment-profile-to-ios-devices"></a>Atribuir um perfil de registro aos dispositivos iOS
+## <a name="assign-an-enrollment-profile-to-iosipados-devices"></a>Atribuir um perfil de registro aos dispositivos iOS/iPadOS
 
 Atribua um perfil do Programa de Registro aos dispositivos antes de registrá-los. Esses dispositivos estão sincronizados com o Intune da Apple e precisam ser atribuídos ao token adequado do servidor no portal DEP, ABM ou ASM.
 
@@ -134,12 +134,12 @@ Você configurou o gerenciamento e a sincronização entre o Apple e o Intune e 
 
 ## <a name="next-steps"></a>Próximas etapas
 
-Você pode encontrar mais informações sobre outras opções disponíveis para registrar dispositivos iOS.
+Você pode encontrar mais informações sobre outras opções disponíveis para registrar dispositivos iOS/iPadOS.
 
 > [!div class="nextstepaction"]
-> [Artigo detalhado sobre o registro no DEP do iOS](device-enrollment-program-enroll-ios.md)
+> [Artigo detalhado sobre o registro no DEP do iOS/iPadOS](device-enrollment-program-enroll-ios.md)
 
 <!--commenting out because inaccurate>
 ## Clean up resources
-<!--If you don't want to use iOS corporate enrolled devices anymore, you can delete them.>
+<!--If you don't want to use iOS/iPadOS corporate enrolled devices anymore, you can delete them.>
 <!--- If the devices are enrolled in Intune, you must first [delete them from the Azure Active Directory portal](../remote-actions/devices-wipe.md#delete-devices-from-the-azure-active-directory-portal).>

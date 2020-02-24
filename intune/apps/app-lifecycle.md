@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: apps; get-started
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 6ce23d77d9b9d89ce51738a9c4e244dfca9a1c59
-ms.sourcegitcommit: b0d683917af83170f85022b270270d8ced8e301c
+ms.openlocfilehash: 569906cea8467d568d302f4e44b26c3394213b62
+ms.sourcegitcommit: 51591b862d97904291af7aa53a6eb341b11a761e
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "76812414"
+ms.lasthandoff: 02/17/2020
+ms.locfileid: "77414976"
 ---
 # <a name="overview-of-the-app-lifecycle-in-microsoft-intune"></a>Visão geral do ciclo de vida do aplicativo no Microsoft Intune
 
@@ -42,7 +42,7 @@ Depois de adicionar o aplicativo ao Intune, será possível [atribuí-lo aos usu
 
 Como parte do ciclo de vida do aplicativo, são lançadas novas versões de aplicativos regularmente. O Intune fornece ferramentas para [atualizar aplicativos](apps-add.md) implantados para uma versão mais recente com facilidade. Além disso, é possível configurar funcionalidade extra em alguns aplicativos, por exemplo:
 
-- As [políticas de configuração de aplicativo iOS](app-configuration-policies-use-ios.md) fornecem configurações para aplicativos iOS compatíveis que são usadas quando o aplicativo é executado. Por exemplo, um aplicativo pode exigir configurações de identidade visual específicas ou o nome de um servidor com o qual ele precisa se conectar.
+- As [políticas de configuração de aplicativo iOS](app-configuration-policies-use-ios.md) fornecem configurações para aplicativos iOS/iPadOS compatíveis que são usadas quando o aplicativo é executado. Por exemplo, um aplicativo pode exigir configurações de identidade visual específicas ou o nome de um servidor com o qual ele precisa se conectar.
 - As [políticas de navegador gerenciado](app-configuration-managed-browser.md) ajudam a definir as configurações para o [Microsoft Edge](~/apps/apps-supported-intune-apps.md#microsoft-apps), que substitui o navegador padrão do dispositivo e permite restringir os sites que os usuários podem visitar.
 
 ## <a name="protect"></a>Proteger

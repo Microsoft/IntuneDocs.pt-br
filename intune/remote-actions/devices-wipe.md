@@ -1,6 +1,6 @@
 ---
 title: Desativar ou apagar dispositivos usando o Microsoft Intune – Azure | Microsoft Docs
-description: Desative ou apague um dispositivo Android, de perfil de trabalho Android, iOS, macOS ou Windows usando o Microsoft Intune. Além disso, exclua um dispositivo do Azure Active Directory.
+description: Desative ou apague um dispositivo Android, de perfil de trabalho Android, iOS/iPadOS, macOS ou Windows usando o Microsoft Intune. Além disso, exclua um dispositivo do Azure Active Directory.
 keywords: ''
 author: ErikjeMS
 ms.author: erikje
@@ -16,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 7cda7404d24ccb9bb1c42d6bb66d77f29ac925ac
-ms.sourcegitcommit: b0d683917af83170f85022b270270d8ced8e301c
+ms.openlocfilehash: 62ba66469dfff004c3cd6a60284ec7466e8b9f00
+ms.sourcegitcommit: 51591b862d97904291af7aa53a6eb341b11a761e
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "76812452"
+ms.lasthandoff: 02/17/2020
+ms.locfileid: "77415509"
 ---
 # <a name="remove-devices-by-using-wipe-retire-or-manually-unenrolling-the-device"></a>Remova dispositivos por meio de apagamento, desativação ou cancelando o registro do dispositivo manualmente
 
@@ -43,7 +43,7 @@ A ação **Apagar** restaura um dispositivo para as configurações padrão de f
 
 
 > [!NOTE]
-> A ação Limpar não está disponível para dispositivos iOS registrados por meio do Registro de Usuário.
+> A ação Limpar não está disponível para dispositivos iOS/iPadOS registrados por meio do Registro de Usuário.
 
 A opção **Reter estado de registro e conta do usuário** está disponível apenas para o Windows 10 versão 1709 ou posterior.
 

@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 1ff4fcd7d1b2115c4fbe0bc00759ef3d60482904
-ms.sourcegitcommit: a66b5916eaab9cb537e483064efc584a6a63a390
+ms.openlocfilehash: e568bb5520b4f8cc242cb58a1ee48e8729f4e387
+ms.sourcegitcommit: 51591b862d97904291af7aa53a6eb341b11a761e
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2020
-ms.locfileid: "75692112"
+ms.lasthandoff: 02/17/2020
+ms.locfileid: "77414602"
 ---
 # <a name="protecting-application-extensions"></a>Como proteger as extensões de aplicativo
 
@@ -31,7 +31,7 @@ Este artigo descreve as políticas de proteção do aplicativo para extensões n
 
 ## <a name="add-ins-for-outlook-app"></a>Suplementos do aplicativo do Outlook
 
-Os suplementos do Outlook permitem integrar aplicativos populares ao cliente de email. Os suplementos para Outlook estão disponíveis na Web, Windows, Mac e Outlook para Android e iOS. O SDK de APP e as políticas de proteção de aplicativo do Intune não incluem suporte para gerenciamento de suplementos do Outlook, mas há outras maneiras de limitar o uso. Como os suplementos são gerenciados pelo Microsoft Exchange, os usuários poderão compartilhar dados e mensagens entre o Outlook e aplicativos de suplementos não gerenciados, a menos que os suplementos sejam desativados para o usuário pelo Exchange.
+Os suplementos do Outlook permitem integrar aplicativos populares ao cliente de email. Os suplementos para Outlook estão disponíveis na Web, Windows, Mac e Outlook para Android e iOS/iPadOS. O SDK de APP e as políticas de proteção de aplicativo do Intune não incluem suporte para gerenciamento de suplementos do Outlook, mas há outras maneiras de limitar o uso. Como os suplementos são gerenciados pelo Microsoft Exchange, os usuários poderão compartilhar dados e mensagens entre o Outlook e aplicativos de suplementos não gerenciados, a menos que os suplementos sejam desativados para o usuário pelo Exchange.
 
 Se você quiser impedir que os usuários finais acessem e instalem suplementos do Outlook (isso afeta todos os clientes do Outlook), verifique se você tem as seguintes alterações em funções no Centro de administração do Exchange:
 

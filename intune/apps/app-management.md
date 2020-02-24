@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure; get-started
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 09b4cfad0490f35a85e4c72b937b2ba5c0472030
-ms.sourcegitcommit: 73b362173929f59e9df57e54e76d19834f155433
+ms.openlocfilehash: 84d33e0ff6bbe407d9838f97214f37d042a2e261
+ms.sourcegitcommit: 51591b862d97904291af7aa53a6eb341b11a761e
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/27/2019
-ms.locfileid: "74564354"
+ms.lasthandoff: 02/17/2020
+ms.locfileid: "77414696"
 ---
 # <a name="what-is-microsoft-intune-app-management"></a>O que é o gerenciamento de aplicativo do Microsoft Intune?
 
@@ -51,7 +51,7 @@ O Intune MAM dá suporte a duas configurações:
 
 O Intune oferece uma variedade de recursos para ajudar a obter os aplicativos que você precisa, nos dispositivos em que você deseja executá-los. A tabela a seguir fornece um resumo dos recursos de gerenciamento de aplicativo.
 
-|  | Android/Android Enterprise | iOS | macOS | Windows 10 | Windows Phone 8.1 |
+|  | Android/Android Enterprise | iOS/iPadOS | macOS | Windows 10 | Windows Phone 8.1 |
 |-------------------------------------------------------------------------------------|---------|-----|-------|------------|-------------------|
 | Adicionar e atribuir aplicativos a dispositivos e usuários | Sim | Sim | Sim | Sim | Sim |
 | Atribuir aplicativos a dispositivos não registrados com o Intune | Sim | Sim | Não | Não | Não |
@@ -98,7 +98,7 @@ As quatro seções a seguir descrevem as opções disponíveis no painel **Aplic
   - [Políticas de Proteção de Aplicativo](app-protection-policies.md).
 - **Apagamento seletivo de aplicativos**: Selecione esta opção para remover apenas os dados corporativos do dispositivo de um usuário selecionado. Para obter mais informações, consulte:
   - [Apagamento seletivo de aplicativos](apps-selective-wipe.md).
-- **Perfis de provisionamento de aplicativo do iOS**: os aplicativos iOS incluem um perfil de provisionamento e um código assinado por um certificado. Quando o certificado expira, o aplicativo não pode mais ser executado. O Intune fornece as ferramentas para atribuir proativamente uma nova política de perfil de provisionamento em dispositivos que têm aplicativos que estão se aproximando da expiração. Para obter mais informações, consulte:
+- **Perfis de provisionamento de aplicativo do iOS**: os aplicativos iOS/iPadOS incluem um perfil de provisionamento e um código assinado por um certificado. Quando o certificado expira, o aplicativo não pode mais ser executado. O Intune fornece as ferramentas para atribuir proativamente uma nova política de perfil de provisionamento em dispositivos que têm aplicativos que estão se aproximando da expiração. Para obter mais informações, consulte:
   - [Perfis de provisionamento de aplicativo iOS](app-provisioning-profile-ios.md).
 
 Para saber mais sobre essa seção, veja [Gerenciar aplicativos](app-management.md).
@@ -115,7 +115,7 @@ Para saber mais sobre essa seção, veja [Gerenciar aplicativos](app-management.
 Para saber mais sobre essa seção, veja [Monitorar aplicativos](apps-monitor.md).
 
 ### <a name="set-up"></a>Configuração
-- **Tokens do VPP de iOS**: Aplique e Exiba sua licenças VPP (Programa de compra em volume) do iOS. Para obter mais informações, consulte:
+- **Tokens do VPP de iOS**: Aplique e exiba suas licenças VPP (Volume Purchase Program) do iOS/iPadOS. Para obter mais informações, consulte:
   - [Aplicativos iOS comprados por volume](vpp-apps-ios.md)
 - **Certificado corporativo do Windows**: Aplique ou Exiba o status de um certificado de assinatura de código usado para distribuir aplicativos de linha de negócios para dispositivos com Windows gerenciados.
 - **Certificado da Symantec do Windows**: Aplique ou Exiba o status de um certificado de assinatura de código da Symantec, o qual é necessário para distribuir arquivos appx XAP e WP8.x para dispositivos com Windows 10 Mobile.

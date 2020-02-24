@@ -16,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: d2a5629e6a318836e23c6a2f7fceb59363a0ed72
-ms.sourcegitcommit: b0d683917af83170f85022b270270d8ced8e301c
+ms.openlocfilehash: cd6e58efa096c006780c17d991a9ea5da26099d4
+ms.sourcegitcommit: 51591b862d97904291af7aa53a6eb341b11a761e
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "76812491"
+ms.lasthandoff: 02/17/2020
+ms.locfileid: "77415555"
 ---
 # <a name="reset-or-remove-a-device-passcode-in-intune"></a>Redefinir ou remover uma senha de dispositivo no Intune
 
@@ -35,8 +35,8 @@ Este documento aborda a redefinição de senha no nível do dispositivo e do per
 | ---- | ---- |
 | Dispositivos Android na versão 6.x ou anterior | Sim |
 | Dispositivos Android Enterprise registrados como Proprietário do Dispositivo | Sim |
-| Dispositivos iOS | Sim |
-| Dispositivos iOS registrados com o Registro de Usuário | Não |
+| Dispositivos iOS/iPadOS | Sim |
+| Dispositivos iOS/iPadOS registrados com o Registro de Usuário | Não |
 | Dispositivos Android registrados com um perfil corporativo | Não |
 | Dispositivos Android na versão 7.0 ou posterior | Não |
 | macOS | Não |
@@ -68,9 +68,9 @@ Os dispositivos Android Enterprise compatíveis registrados com um perfil de tra
 Para dispositivos Android Enterprise que executam versões 8.x ou posteriores e registrados com um perfil de trabalho, os usuários finais serão notificados para ativar sua redefinição de senha logo após o registro ser concluído. A notificação será exibida se uma senha de perfil de trabalho for obrigatória e estiver definida. Depois que a senha for inserida, a notificação será descartada.
 
 
-## <a name="remove-ios-passcodes"></a>Remover senhas do iOS
+## <a name="remove-iosipados-passcodes"></a>Remover senhas do iOS/iPadOS
 
-Em vez de redefinidas, as senhas são removidas dos dispositivos iOS. Se houver um conjunto de políticas de conformidade de senha, o dispositivo solicitará que o usuário defina uma nova senha em Configurações.
+Em vez de redefinidas, as senhas são removidas dos dispositivos iOS/iPadOS. Se houver um conjunto de políticas de conformidade de senha, o dispositivo solicitará que o usuário defina uma nova senha em Configurações.
 
 ## <a name="next-steps"></a>Próximas etapas
 

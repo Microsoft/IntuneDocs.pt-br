@@ -1,7 +1,7 @@
 ---
 title: Obter um Apple MDM Push Certificate para o Intune
 titleSuffix: ''
-description: Obtenha um Apple MDM Push Certificate para gerenciar dispositivos iOS com o Intune.
+description: Obtenha um Apple MDM Push Certificate para gerenciar dispositivos iOS/iPadOS com o Intune.
 keywords: ''
 author: ErikjeMS
 ms.author: erikje
@@ -18,24 +18,24 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 178e1a3d0f58eb925c4d48be10bfa46e68c6b2c6
-ms.sourcegitcommit: e75718ee6cf93c0e6c915f2776b785fe8db9f7e0
+ms.openlocfilehash: 673f63194b46ca7e4dbf1206d363cbe70c6e6098
+ms.sourcegitcommit: 51591b862d97904291af7aa53a6eb341b11a761e
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/10/2019
-ms.locfileid: "74955449"
+ms.lasthandoff: 02/17/2020
+ms.locfileid: "77414421"
 ---
 # <a name="get-an-apple-mdm-push-certificate"></a>Obtenha um certificado push de MDM da Apple
 
 [!INCLUDE [azure_portal](../includes/azure_portal.md)]
 
-Um Apple MDM Push Certificate é necessário para o Intune gerenciar dispositivos iOS e macOS. Depois de você adicionar o certificado ao Intune, seus usuários poderão registrar os próprios dispositivos usando:
+Um Apple MDM Push Certificate é necessário para o Intune gerenciar dispositivos iOS/iPadOS e macOS. Depois de você adicionar o certificado ao Intune, seus usuários poderão registrar os próprios dispositivos usando:
 
 - O aplicativo do Portal da Empresa.
 
 - Métodos de registro em massa da Apple, como o Programa de registro de dispositivos, o Apple School Manager ou o Apple Configurator.
 
-Para obter mais informações sobre opções de registro, confira [Escolher como registrar dispositivos iOS](ios-enroll.md).
+Para obter mais informações sobre opções de registro, confira [Escolher como registrar dispositivos iOS/iPadOS](ios-enroll.md).
 
 Quando um certificado de push expira, você precisa renová-lo. Durante a renovação, use a mesma ID Apple usada ao criar o certificado de push inicialmente.
 
@@ -64,7 +64,7 @@ Registre essa ID como um lembrete para quando for necessário renovar esse certi
 Vá até o arquivo de certificado (.pem), escolha **Abrir** e selecione **Carregar**. Com o certificado push, o Intune pode registrar e gerenciar dispositivos Apple.
 
 ## <a name="renew-apple-mdm-push-certificate"></a>Renovar um certificado push de MDM da Apple
-O certificado push de MDM da Apple é válido por um ano e deve ser renovado anualmente para manter o gerenciamento de dispositivos iOS e macOS. Se o certificado expirar, os dispositivos Apple registrados não poderão ser contatados.
+O Apple MDM Push Certificate é válido por um ano e deve ser renovado anualmente para manter o gerenciamento de dispositivos iOS/iPadOS e macOS. Se o certificado expirar, os dispositivos Apple registrados não poderão ser contatados.
 
 O certificado está associado à ID da Apple usada para criá-lo. Renove o certificado push de MDM da Apple com a mesma ID da Apple usada para criá-lo.
 
@@ -73,7 +73,7 @@ O certificado está associado à ID da Apple usada para criá-lo. Renove o certi
 3. Selecione **Criar o MDM Push Certificate** para ir para o Portal de Certificados Push da Apple. Localize o certificado que você deseja renovar e selecione **Renovar**.
 4. Na tela **Renovar Push Certificate**, forneça anotações para ajudá-lo a identificar o certificado no futuro, selecione **Escolher Arquivo** para navegar até o novo arquivo de solicitação baixado e escolha **Carregar**.
    > [!TIP]
-   > Um certificado pode ser identificado por seu UID. Examine a **ID do Assunto** nos detalhes do certificado para localizar a parte do GUID do UID. Ou, em um dispositivo iOS registrado, vá até **Configurações** > **Geral** > **Dispositivo** **Gerenciamento**  >  **Perfil de Gerenciamento** > **Mais Detalhes** > **Perfil de Gerenciamento**. O segundo item de linha, **Tópico**, contém o GUID exclusivo que você pode comparar com o certificado no portal dos Apple Push Certificates.
+   > Um certificado pode ser identificado por seu UID. Examine a **ID do Assunto** nos detalhes do certificado para localizar a parte do GUID do UID. Ou, em um dispositivo iOS/iPadOS registrado, vá até **Configurações** > **Geral** > **Dispositivo** **Gerenciamento** > **Perfil de Gerenciamento** > **Mais Detalhes** > **Perfil de Gerenciamento**. O segundo item de linha, **Tópico**, contém o GUID exclusivo que você pode comparar com o certificado no portal dos Apple Push Certificates.
  
 6. Na tela **Confirmação**, selecione **Baixar** e salve o arquivo .pem localmente.
 7. No [Intune](https://go.microsoft.com/fwlink/?linkid=2090973), escolha o ícone de navegação do **Apple MDM Push Certificate**, escolha o arquivo .pem baixado da Apple e escolha **Carregar**.

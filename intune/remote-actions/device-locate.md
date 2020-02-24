@@ -1,6 +1,6 @@
 ---
-title: Localizar dispositivos iOS perdidos com Microsoft Intune – Azure | Microsoft Docs
-description: Localize dispositivos iOS perdidos ou roubados usando o recurso de localizar dispositivo no Microsoft Intune. Obtenha detalhes sobre as informações de privacidade e de segurança ao usar a ação do dispositivo localizar.
+title: Localizar dispositivos iOS/iPadOS perdidos com Microsoft Intune – Azure | Microsoft Docs
+description: Localize dispositivos iOS/iPadOS perdidos ou roubados usando o recurso de localizar dispositivo no Microsoft Intune. Obtenha detalhes sobre as informações de privacidade e de segurança ao usar a ação do dispositivo localizar.
 keywords: ''
 author: ErikjeMS
 ms.author: erikje
@@ -16,22 +16,22 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 817f46558932c074abc37b45d2885496419a0db0
-ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
+ms.openlocfilehash: dc276a6235fb4951c83b62e3c488145062814728
+ms.sourcegitcommit: 51591b862d97904291af7aa53a6eb341b11a761e
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "73712418"
+ms.lasthandoff: 02/17/2020
+ms.locfileid: "77415591"
 ---
-# <a name="locate-lost-or-stolen-ios-devices-with-intune"></a>Localizar dispositivos iOS perdidos ou roubados com o Intune
+# <a name="locate-lost-or-stolen-iosipados-devices-with-intune"></a>Localizar dispositivos iOS/iPadOS perdidos ou roubados com o Intune
 
 [!INCLUDE [azure_portal](../includes/azure_portal.md)]
 
-Para obter a localização de um dispositivo iOS perdido ou roubado em um mapa, use a ação **Localizar dispositivo**. O dispositivo deve estar no modo supervisionado. Antes de usar essa ação, verifique se o dispositivo está no [modo perdido](device-lost-mode.md).
+Para obter a localização de um dispositivo iOS/iPadOS perdido ou roubado em um mapa, use a ação **Localizar dispositivo**. O dispositivo deve estar no modo supervisionado. Antes de usar essa ação, verifique se o dispositivo está no [modo perdido](device-lost-mode.md).
 
 ## <a name="supported-platforms"></a>Plataformas com Suporte
 
-- iOS 9.3 e posterior
+- iOS/iPadOS 9.3 e posterior
 
 Esse recurso não é compatível com os seguintes sistemas: 
 - Windows
@@ -43,16 +43,16 @@ Esse recurso não é compatível com os seguintes sistemas:
 
 1. Entre no [Centro de Administração do Gerenciador de Ponto de Extremidade da Microsoft](https://go.microsoft.com/fwlink/?linkid=2109431).
 3. Selecione **Dispositivos** e, em seguida, **Todos os dispositivos**.
-4. Na lista de dispositivos gerenciados, escolha um dispositivo iOS e **...Mais**. Em seguida, escolha a ação remota **Localizar dispositivo**.
+4. Na lista de dispositivos gerenciados, escolha um dispositivo iOS/iPadOS e **...Mais**. Em seguida, escolha a ação remota **Localizar dispositivo**.
 5. Depois que o dispositivo for localizado, a localização será mostrada em **Localizar dispositivo**.
     ![Captura de tela de Localizar dispositivo usando o Intune no Azure](./media/device-locate/locate-device.png)
 
 
 ## <a name="activate-lost-mode-sound-alert-on-an-ios-device"></a>Ativar alerta sonoro de modo perdido em um dispositivo iOS
 
-Se alguém tiver perdido um dispositivo iOS 9.3 ou posterior, você poderá disparar remotamente o dispositivo para tocar um som de alerta para que o usuário possa localizá-lo. O dispositivo deve estar no [modo perdido](device-lost-mode.md).
+Se alguém tiver perdido um dispositivo iOS/iPadOS 9.3 ou posterior, você poderá acionar remotamente o dispositivo para tocar um som de alerta para que o usuário possa localizá-lo. O dispositivo deve estar no [modo perdido](device-lost-mode.md).
 
-No [Intune no portal do Azure](https://aka.ms/intuneportal), escolha **Dispositivos** > **Todos os dispositivos** > selecione um dispositivo iOS > **Visão Geral**  >  **Mais** > **Tocar som do modo Perdido (somente supervisionar)** .
+No [Intune no portal do Azure](https://aka.ms/intuneportal), escolha **Dispositivos** > **Todos os dispositivos** > selecione um dispositivo iOS/iPadOS > **Visão Geral** > **Mais** > **Tocar som do modo Perdido (somente supervisionar)** .
 
 O som continuará a ser executado até que o usuário o desabilite no dispositivo ou o dispositivo seja removido do modo perdido.
 

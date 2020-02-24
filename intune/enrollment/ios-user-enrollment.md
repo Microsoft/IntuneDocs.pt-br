@@ -1,7 +1,7 @@
 ---
-title: Registrar dispositivos iOS – Registro de usuário
+title: Registrar dispositivos iOS/iPadOS – Registro de Usuário
 titleSuffix: Microsoft Intune
-description: Saiba como configurar o Registro de usuário do iOS e iPadOS.
+description: Saiba como configurar o Registro de Usuário do iOS/iPadOS e iPadOS.
 keywords: ''
 author: ErikjeMS
 ms.author: erikje
@@ -18,16 +18,16 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 0872eef38e3ea5a70ebb64d3ae3c62069045fa97
-ms.sourcegitcommit: 139853f8d6ea61786da7056cfb9024a6459abd70
+ms.openlocfilehash: d22d8d4772754fddbd366610402d64acc28ffc65
+ms.sourcegitcommit: 51591b862d97904291af7aa53a6eb341b11a761e
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/26/2020
-ms.locfileid: "76754603"
+ms.lasthandoff: 02/17/2020
+ms.locfileid: "77415261"
 ---
-# <a name="set-up-ios-and-ipados-user-enrollment-preview"></a>Configurar o Registro de usuário do iOS e iPadOS (versão prévia)
+# <a name="set-up-iosipados-and-ipados-user-enrollment-preview"></a>Configurar o Registro de Usuário do iOS/iPadOS e iPadOS (versão prévia)
 
-Você pode configurar o Intune para registrar dispositivos iOS e iPadOS usando o processo de Registro de usuário da Apple. O Registro de usuário fornece aos administradores um subconjunto simplificado de opções de gerenciamento em comparação com os outros métodos de registro.
+Você pode configurar o Intune para registrar dispositivos iOS/iPadOS e iPadOS usando o processo de Registro de Usuário da Apple. O Registro de usuário fornece aos administradores um subconjunto simplificado de opções de gerenciamento em comparação com os outros métodos de registro.
 
 Para obter mais informações sobre as opções disponíveis com o Registro de usuário, confira [Ações compatíveis com Registro de usuário, senhas e outras opções](ios-user-enrollment-supported-actions.md).
 
@@ -43,7 +43,7 @@ Para obter mais informações sobre as opções disponíveis com o Registro de u
 
 Um perfil de registro define as configurações aplicadas a um grupo de dispositivos durante o registro. 
 
-1. No [Centro de Administração do Gerenciador de Ponto de Extremidade da Microsoft](https://go.microsoft.com/fwlink/?linkid=2109431), selecione **Dispositivos** > **iOS** > **Registro do iOS** > **Tipos de registro (versão prévia)**  > **Criar perfil** > **iOS/iPadOS**. Nesse perfil, você indicará qual experiência de registro os usuários finais do iOS e do iPadOS terão em dispositivos não registrados por meio de um método corporativo da Apple. Se você quiser fazer alterações, poderá editar esse perfil depois de criá-lo.
+1. No [Centro de Administração do Gerenciador de Ponto de Extremidade da Microsoft](https://go.microsoft.com/fwlink/?linkid=2109431), selecione **Dispositivos** > **iOS** > **Registro do iOS** > **Tipos de registro (versão prévia)**  > **Criar perfil** > **iOS/iPadOS**. Nesse perfil, você indicará qual experiência de registro os usuários finais do iOS/iPadOS e do iPadOS terão em dispositivos não registrados por meio de um método corporativo da Apple. Se você quiser fazer alterações, poderá editar esse perfil depois de criá-lo.
 
     ![Criar perfil de registro da Apple](./media/ios-user-enrollment/create-profile.png)
 
@@ -60,7 +60,7 @@ Um perfil de registro define as configurações aplicadas a um grupo de disposit
 
     - **Registro de dispositivo**: todos os usuários neste perfil usarão o Registro de dispositivo.
     - **Registro de usuário**: todos os usuários neste perfil usarão o Registro de usuário.
-    - **Determinar com base na escolha do usuário**: todos os usuários nesse grupo receberão a opção de qual tipo de registro usar. Quando os usuários registram seus dispositivos, eles deverão escolher entre **Sou proprietário deste dispositivo** e a **(Empresa) é proprietária deste dispositivo**. Se eles escolherem o segundo, o dispositivo será registrado usando o Registro de dispositivo. Se o usuário escolher **Sou proprietário deste dispositivo**, ele verá outra opção para proteger todo o dispositivo ou proteger somente aplicativos e dados relacionados ao trabalho. A seleção do usuário final quanto a ele ser o proprietário do dispositivo determina qual tipo de registro é implementado no dispositivo. Essa escolha do usuário também é refletida no atributo de Propriedade de dispositivo no Intune. Para saber mais sobre a experiência do usuário, confira [Configurar o acesso do dispositivo iOS aos recursos de sua empresa](https://docs.microsoft.com/intune-user-help/enroll-your-device-in-intune-ios).
+    - **Determinar com base na escolha do usuário**: todos os usuários nesse grupo receberão a opção de qual tipo de registro usar. Quando os usuários registram seus dispositivos, eles deverão escolher entre **Sou proprietário deste dispositivo** e a **(Empresa) é proprietária deste dispositivo**. Se eles escolherem o segundo, o dispositivo será registrado usando o Registro de dispositivo. Se o usuário escolher **Sou proprietário deste dispositivo**, ele verá outra opção para proteger todo o dispositivo ou proteger somente aplicativos e dados relacionados ao trabalho. A seleção do usuário final quanto a ele ser o proprietário do dispositivo determina qual tipo de registro é implementado no dispositivo. Essa escolha do usuário também é refletida no atributo de Propriedade de dispositivo no Intune. Para saber mais sobre a experiência do usuário, confira [Configurar o acesso do dispositivo iOS/iPadOS aos recursos de sua empresa](https://docs.microsoft.com/intune-user-help/enroll-your-device-in-intune-ios).
     
 5. Selecione **Avançar**.
 

@@ -18,12 +18,12 @@ ms.reviewer: ''
 ms.suite: ems
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: dce6d71a4bc056146b581458d5c39325adad1584
-ms.sourcegitcommit: e166b9746fcf0e710e93ad012d2f52e2d3ed2644
+ms.openlocfilehash: cd0a4b0c5e0b4cbaa7ef43ec40cddb3ab30d3070
+ms.sourcegitcommit: 51591b862d97904291af7aa53a6eb341b11a761e
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/19/2019
-ms.locfileid: "75206900"
+ms.lasthandoff: 02/17/2020
+ms.locfileid: "77415476"
 ---
 # <a name="tutorial-configure-slack-to-use-intune-for-emm-and-app-configuration"></a>Tutorial: Configurar o Slack para usar o Intune para EMM e configuração de aplicativos
 
@@ -69,7 +69,7 @@ Adicione o Slack para EMM como um aplicativo gerenciado para iOS no Intune e atr
 10. Clique em **Salvar**.
 
 ### <a name="add-an-app-configuration-policy-for-slack-for-emm"></a>Adicionar uma política de configuração do aplicativo para Slack para EMM
-Adicione uma política de configuração do aplicativo para Slack para EMM para iOS. As políticas de configuração de aplicativo para dispositivos gerenciados são específicas da plataforma; portanto, você precisará adicionar uma política separada para seus usuários do Slack em dispositivos Android.
+Adicione uma política de configuração do aplicativo para Slack para EMM para iOS/iPadOS. As políticas de configuração de aplicativo para dispositivos gerenciados são específicas da plataforma; portanto, você precisará adicionar uma política separada para seus usuários do Slack em dispositivos Android.
 1. No centro de administração, escolha **Aplicativos** > **Políticas de configuração de aplicativo** > **Adicionar** > **Dispositivos gerenciados**.
 2. Em Nome, digite “Teste de política de configuração do aplicativo Slack”.
 3. Em Tipo de registro de dispositivos, confirme se **Dispositivos gerenciados** está definido.

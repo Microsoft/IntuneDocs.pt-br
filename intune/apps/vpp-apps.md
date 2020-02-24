@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 3c4218dc02f11b9ada07126ce24d6dc4080b23ec
-ms.sourcegitcommit: a66b5916eaab9cb537e483064efc584a6a63a390
+ms.openlocfilehash: 0b16ab43a2b2c3b2a38aeee14614f2c8361c3d83
+ms.sourcegitcommit: 51591b862d97904291af7aa53a6eb341b11a761e
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2020
-ms.locfileid: "75692133"
+ms.lasthandoff: 02/17/2020
+ms.locfileid: "77415432"
 ---
 # <a name="manage-volume-purchased-apps-and-books-with-microsoft-intune"></a>Gerenciar aplicativos e livros comprados por volume com o Microsoft Intune
 
@@ -39,6 +39,6 @@ O Microsoft Intune ajuda você a gerenciar aplicativos e livros comprados por me
 
 Com o Intune, é possível gerenciar aplicativos e livros adquiridos por volume na loja do iOS e gerenciar aplicativos comprados na Microsoft Store para Empresas. Para descobrir como gerenciar aplicativos licenciados de cada loja, escolha um dos seguintes tópicos:
 
-- [Gerenciar aplicativos adquiridos por volume do iOS](vpp-apps-ios.md)
+- [Gerenciar aplicativos adquiridos por volume do iOS/iPadOS](vpp-apps-ios.md)
 - [Gerenciar aplicativos adquiridos por volume da Microsoft Store para Empresas](windows-store-for-business.md)
-- [Como gerenciar livros eletrônicos do iOS](vpp-ebooks-ios.md)
+- [Como gerenciar livros eletrônicos do iOS/iPadOS](vpp-ebooks-ios.md)

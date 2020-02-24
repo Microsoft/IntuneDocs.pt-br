@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 36a84296aabd2d78cbc3cdc14ffb8f696afa5c22
-ms.sourcegitcommit: e166b9746fcf0e710e93ad012d2f52e2d3ed2644
+ms.openlocfilehash: 899e2d2dc8458d0909f01e9dfcc1056874ef0fa7
+ms.sourcegitcommit: ecaff388038fb800f2e646f8efcf8f3b1e2fd1b1
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/19/2019
-ms.locfileid: "75205251"
+ms.lasthandoff: 02/18/2020
+ms.locfileid: "77437963"
 ---
 # <a name="how-to-monitor-app-protection-policies"></a>Como monitorar as políticas de proteção de aplicativo
 [!INCLUDE [azure_portal](../includes/azure_portal.md)]
@@ -51,8 +51,8 @@ O período de retenção dos dados de proteção do aplicativo é de 90 dias. To
 - **Usuários sinalizados**: Número de usuários que estão enfrentando problemas com seus dispositivos. Dispositivos em que foi feito jailbreak (iOS) e root (Android) são relatados em **Usuários sinalizados**. Usuários que têm dispositivos sinalizados pela verificação de atestado de dispositivos do Google SafetyNet (se ativado pelo administrador de TI) também serão indicados aqui. 
 - **Usuários com aplicativos potencialmente nocivos**: O número de usuários que podem ter um aplicativo nocivo em seu dispositivo Android detectado pelo Google Play Protect. 
 - **Status do usuário para iOS** e **Status do usuário para Android**: O número de usuários que usaram um aplicativo que tem uma política atribuída a eles em um contexto de trabalho para a plataforma relacionada. Essas informações mostram o número de usuários gerenciados pela política, bem como o número de usuários que estão usando um aplicativo que não é direcionado por nenhuma política em um contexto de trabalho. Você pode considerar adicionar esses usuários à política.
-- **Principais Aplicativos iOS Protegidos** e **Principais Aplicativos Android Protegidos**: Tendo como base os aplicativos iOS e Android mais usados, essas informações mostram o número de aplicativos protegidos e desprotegidos por plataforma.
-- **Principais Aplicativos iOS Configurados sem Registro** e **Principais Aplicativos Android Configurados sem Registro**: Tendo como base os aplicativos iOS e Android mais usados para dispositivos não registrados, essas informações mostram o número de aplicativos configurados por plataforma (como no uso de uma política de configuração de aplicativo).
+- **Principais Aplicativos iOS/iPadOS Protegidos** e **Principais Aplicativos Android Protegidos**: tendo como base os aplicativos iOS/iPadOS e Android mais usados, essas informações mostram o número de aplicativos protegidos e desprotegidos por plataforma.
+- **Principais Aplicativos iOS/iPadOS Configurados sem Registro** e **Principais Aplicativos Android Configurados sem Registro**: tendo como base os aplicativos iOS/iPadOS e Android mais usados para dispositivos não registrados, essas informações mostram o número de aplicativos configurados por plataforma (como no uso de uma política de configuração de aplicativo).
 
     > [!NOTE]
     > Se você tem várias políticas por plataforma, um usuário é considerado gerenciado por política quando tem pelo menos uma política atribuída a ele.
@@ -170,9 +170,9 @@ Siga estas etapas para gerar o arquivo .csv da Proteção de Aplicativos ou o ar
     ![Captura de tela da caixa de confirmação Salvar relatório](./media/app-protection-policies-monitor/app-protection-report-csv-1.png)
    
 > [!NOTE]
-> O Intune fornece campos adicionais de relatório do dispositivo, incluindo ID de Registro do Aplicativo, fabricante do Android, modelo e versão do patch de segurança, bem como modelo do iOS. No Intune, esses campos podem ser acessados selecionando **Aplicativos** > **Status de proteção do aplicativo** > **Relatório de Proteção do Aplicativo: iOS, Android**. Além disso, esses parâmetros ajudam a configurar a lista de **Permissão** do fabricante do dispositivo (Android), a lista de **Permissão** do modelo do dispositivo (Android e iOS) e a configuração de **versão mínima do patch de segurança do Android**.   
+> O Intune fornece campos adicionais de relatório do dispositivo, incluindo ID de Registro do Aplicativo, fabricante do Android, modelo e versão do patch de segurança, bem como modelo do iOS/iPadOS. No Intune, esses campos podem ser acessados selecionando **Aplicativos** > **Status de proteção do aplicativo** > **Relatório de Proteção do Aplicativo: iOS/iPadOS, Android**. Além disso, esses parâmetros ajudam a configurar a lista de **Permissão** do fabricante do dispositivo (Android), a lista de **Permissão** do modelo do dispositivo (Android e iOS) e a configuração de **versão mínima do patch de segurança do Android**.   
  
 ## <a name="see-also"></a>Consulte também
-- [Gerenciar a transferência de dados entre aplicativos iOS](data-transfer-between-apps-manage-ios.md)
+- [Gerenciar a transferência de dados entre aplicativos iOS/iPadOS](data-transfer-between-apps-manage-ios.md)
 - [O que esperar quando seu aplicativo Android é gerenciado por políticas de proteção de aplicativo](../fundamentals/end-user-mam-apps-android.md)
-- [O que esperar quando seu aplicativo iOS é gerenciado por políticas de proteção de aplicativo](../fundamentals/end-user-mam-apps-ios.md)
+- [O que esperar quando seu aplicativo iOS/iPadOS é gerenciado por políticas de proteção de aplicativo](../fundamentals/end-user-mam-apps-ios.md)

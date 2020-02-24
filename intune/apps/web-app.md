@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 90cdff66d32ac5edb3b1867a545f2c9627ccfe39
-ms.sourcegitcommit: 139853f8d6ea61786da7056cfb9024a6459abd70
+ms.openlocfilehash: e018fb9888db19995556a6671d93a1db5fa78c2a
+ms.sourcegitcommit: 51591b862d97904291af7aa53a6eb341b11a761e
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/26/2020
-ms.locfileid: "76754772"
+ms.lasthandoff: 02/17/2020
+ms.locfileid: "77415439"
 ---
 # <a name="add-web-apps-to-microsoft-intune"></a>Adicionar aplicativos Web ao Microsoft Intune
 
@@ -33,7 +33,7 @@ O Intune é compatível com vários tipos de aplicativos, incluindo aplicativos 
 
 Antes de gerenciar e atribuir um aplicativo para seus usuários, adicione-o ao Intune. 
 
-O Intune cria um atalho para o aplicativo Web no dispositivo do usuário. Em dispositivos iOS, um atalho para o aplicativo Web é adicionado à tela inicial. Em dispositivos do administrador de dispositivos Android, um atalho para o aplicativo Web é adicionado ao widget do portal da empresa do Intune, e o widget precisa ser fixado manualmente pelo usuário. Em dispositivos Windows, um atalho para o aplicativo Web é adicionado ao Menu Iniciar.
+O Intune cria um atalho para o aplicativo Web no dispositivo do usuário. Em dispositivos iOS/iPadOS, um atalho para o aplicativo Web é adicionado à tela inicial. Em dispositivos do administrador de dispositivos Android, um atalho para o aplicativo Web é adicionado ao widget do portal da empresa do Intune, e o widget precisa ser fixado manualmente pelo usuário. Em dispositivos Windows, um atalho para o aplicativo Web é adicionado ao Menu Iniciar.
 
 > [!Note]
 > O dispositivo do usuário deve ter um navegador instalado para inicialização de aplicativos Web. 
@@ -62,16 +62,16 @@ Para adicionar um aplicativo ao Intune como atalho para um aplicativo na Web, fa
     - **É necessário usar um managed browser para abrir este link**: Selecione essa opção para atribuir a seus usuários um link para um site ou aplicativo Web que eles possam abrir no navegador gerenciado do Intune. Este navegador deve estar instalado em seu dispositivo.
     - **Logotipo**: Carregue um ícone que será associado ao aplicativo. Esse ícone é exibido com o aplicativo quando os usuários navegam pelo portal da empresa.
 6. Clique em **Avançar** para exibir a página **Marcas de escopo**.
-7. Clique em **Selecionar marcas de escopo** para adicionar opcionalmente marcas de escopo no aplicativo. Para saber mais, confira [Usar o RBAC (controle de acesso baseado em função) e marcas de escopo para TI distribuída](~/fundamentals/scope-tags.md).
+7. Clique em **Selecionar marcas de escopo** para adicionar opcionalmente marcas de escopo no aplicativo. Confira mais informações em [Usar o RBAC (controle de acesso baseado em função) e marcas de escopo para TI distribuída](~/fundamentals/scope-tags.md).
 8. Clique em **Avançar** para exibir a página **Atribuições**.
 9. Selecione as atribuições de grupo para o aplicativo. Para saber mais, confira [Adicionar grupos para organizar usuários e dispositivos](~/fundamentals/groups-add.md). 
 10. Clique em **Avançar** para exibir a página **Revisar + criar**. Examine os valores e as configurações que você inseriu para o aplicativo.
-11. Quando terminar, clique em **Criar** para adicionar o aplicativo ao Intune.
+11. Ao terminar, clique em **Criar** para adicionar o aplicativo ao Intune.
 
     A folha **Visão geral** do aplicativo criado é exibida.
 
 > [!Note]
-> Atualmente, a implantação de aplicativos Web do Intune para dispositivos iOS está associada ao perfil de gerenciamento e não pode ser removida manualmente. Você pode alterar o tipo de implantação para **Desinstalar** no portal do Intune para que o aplicativo Web possa ser removido automaticamente. No entanto, se você remover a implantação antes de alterar a intenção de atribuição de aplicativo para **Desinstalar**, o aplicativo Web ficará permanentemente em vigor no dispositivo até que o registro do dispositivo seja cancelado no Intune.
+> Atualmente, a implantação de aplicativos Web do Intune para dispositivos iOS/iPadOS está associada ao perfil de gerenciamento e não pode ser removida manualmente. Você pode alterar o tipo de implantação para **Desinstalar** no portal do Intune para que o aplicativo Web possa ser removido automaticamente. No entanto, se você remover a implantação antes de alterar a intenção de atribuição de aplicativo para **Desinstalar**, o aplicativo Web ficará permanentemente em vigor no dispositivo até que o registro do dispositivo seja cancelado no Intune.
 
 Os usuários finais podem iniciar aplicativos Web diretamente do aplicativo do Portal da Empresa para Windows selecionando o aplicativo Web e escolhendo a opção **Abrir no navegador**. A URL da Web publicada é aberta diretamente no navegador da Web. 
 

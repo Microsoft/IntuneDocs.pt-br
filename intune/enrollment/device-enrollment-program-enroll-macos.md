@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 697e950c881a0c4233358d8363aa6cc7ec0006b2
-ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
+ms.openlocfilehash: d55139a106599664f801a6bf73b0e0e8db24b57a
+ms.sourcegitcommit: 51591b862d97904291af7aa53a6eb341b11a761e
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "74832694"
+ms.lasthandoff: 02/17/2020
+ms.locfileid: "77414502"
 ---
 # <a name="automatically-enroll-macos-devices-with-the-device-enrollment-program-or-apple-school-manager"></a>Registre automaticamente dispositivos macOS no Programa de registro de dispositivos ou no Apple School Manager
 
@@ -80,7 +80,7 @@ Você pode usar o portal da Apple para criar um token. Também pode usar o porta
 
 5. A caixa de diálogo **Adicionar &lt;ServerName&gt;** é aberta, indicando abre a caixa de diálogo, indicando **Carregar sua chave pública**. Escolha **Escolher Arquivo…** para carregar o arquivo .pem e clique em **Avançar**.
 
-6. Acesse **Programas de Implantação** &gt; **Programa de Registro de Dispositivos** &gt; **Gerenciar Dispositivos**.
+6. Vá para **Programas de Implantação** &gt; **Programa de Registro de Dispositivos** &gt; **Gerenciar Dispositivos**.
 7. Em **Escolher dispositivos por**, especifique como os dispositivos são identificados:
     - **Número de série**
     - **Número do pedido**
@@ -181,7 +181,7 @@ Atribua um perfil do Programa de Registro aos dispositivos antes de registrá-lo
 
 ### <a name="assign-a-default-profile"></a>Atribuir um perfil padrão
 
-Você pode escolher um perfil padrão do macOS e do iOS a ser aplicado a todos os dispositivos que se registrem com um token específico. 
+Você pode escolher um perfil padrão do macOS e do iOS/iPadOS para ser aplicado a todos os dispositivos que se registrem com um token específico. 
 
 1. No [Centro de Administração do Gerenciador de Ponto de Extremidade da Microsoft](https://go.microsoft.com/fwlink/?linkid=2109431), escolha **Dispositivos** > **macOS** > **Registro do macOS** > **Tokens do programa de registro** > escolha um token na lista.
 2. Escolha **Definir como Perfil Padrão**, selecione um perfil na lista suspensa e escolha **Salvar**. Este perfil será aplicado a todos os dispositivos registrados com o token.

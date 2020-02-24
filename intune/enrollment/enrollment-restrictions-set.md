@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 0dac0607fcaa92ebe65a7ddacc3cd91c63bf246e
-ms.sourcegitcommit: 5178aec0244e023e73546f3d10f1a76eaf1f4a3e
+ms.openlocfilehash: 1263df126b371780b3c5c14ae619f0cb7c83d475
+ms.sourcegitcommit: 51591b862d97904291af7aa53a6eb341b11a761e
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/03/2020
-ms.locfileid: "76971867"
+ms.lasthandoff: 02/17/2020
+ms.locfileid: "77415319"
 ---
 # <a name="set-enrollment-restrictions"></a>Definir restrições de registro
 
@@ -44,11 +44,11 @@ As restrições de registro específicas que você pode criar incluem:
 - Plataformas de dispositivo que podem ser registradas:
   - Administrador do dispositivo Android
   - Perfil de trabalho do Android Enterprise
-  - iOS
+  - iOS/iPadOS
   - macOS
   - Windows
   - Windows Mobile
-- Versão do sistema operacional da plataforma para iOS, administrador do dispositivo Android, perfil corporativo do Android Enterprise, Windows e Windows Mobile. (Somente versões do Windows 10 podem ser usadas. Deixe em branco se Windows 8.1 for permitido.)
+- Versão do sistema operacional da plataforma para iOS/iPadOS, administrador do dispositivo Android, perfil corporativo do Android Enterprise, Windows e Windows Mobile. (Somente versões do Windows 10 podem ser usadas. Deixe em branco se Windows 8.1 for permitido.)
   - Versão mínima.
   - Versão máxima.
 - Restringir [dispositivos de propriedade pessoal](device-enrollment.md#bring-your-own-device) (somente iOS, administrador do dispositivo Android, perfil corporativo do Android Enterprise, macOS, Windows e Windows Mobile).
@@ -67,7 +67,7 @@ As restrições padrão são fornecidas automaticamente para as restrições de 
 5. Em **Versões**, escolha as versões mínimas e máximas para as quais você deseja que as plataformas permitidas ofereçam suporte. As restrições de versão aplicam-se somente a dispositivos registrados no Portal da Empresa.
      Os formatos de versão com suporte incluem:
     - O administrador do dispositivo Android e o perfil de trabalho do Android Enterprise dão suporte a major.minor.rev.build.
-    - O iOS é compatível com o major.minor.rev. As versões do sistema operacional não se aplicam a dispositivos Apple registrados por meio do Programa de Registro de Dispositivos, do Apple School Manager ou do aplicativo do Apple Configurator.
+    - O iOS/iPadOS é compatível com o major.minor.rev. As versões do sistema operacional não se aplicam a dispositivos Apple registrados por meio do Programa de Registro de Dispositivos, do Apple School Manager ou do aplicativo do Apple Configurator.
     - O Windows é compatível com major.minor.build.rev somente para Windows 10.
     
     > [!IMPORTANT]
@@ -158,8 +158,8 @@ Os seguintes métodos de registro pessoais também serão bloqueados:
 \* Eles não serão bloqueados se registrados com o Autopilot.
 
 
-## <a name="blocking-personal-ios-devices"></a>Bloqueio de dispositivos iOS pessoais
-Por padrão, o Intune classifica os dispositivos iOS como de propriedade pessoal. Para ser classificado como de propriedade corporativa, um dispositivo iOS deve atender a uma das seguintes condições:
+## <a name="blocking-personal-iosipados-devices"></a>Bloquear dispositivos iOS/iPadOS pessoais
+Por padrão, o Intune classifica os dispositivos iOS/iPadOS como de propriedade pessoal. Para ser classificado como de propriedade corporativa, um dispositivo iOS/iPadOS deve atender a uma das seguintes condições:
 - Registrado com um número de série ou IMEI.
 - Registrado usando o Registro de Dispositivo Automatizado (anteriormente conhecido como Programa de registro de dispositivos)
 

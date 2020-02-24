@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure; seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 9142ea3f7728fd24883a311bbf967a7a59dbf457
-ms.sourcegitcommit: e166b9746fcf0e710e93ad012d2f52e2d3ed2644
+ms.openlocfilehash: 6d35d7470508b610f850ca7f9f394e0d26bec677
+ms.sourcegitcommit: 576b9528629981e87e775fac146932e502f07a74
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/19/2019
-ms.locfileid: "75207240"
+ms.lasthandoff: 02/14/2020
+ms.locfileid: "77258089"
 ---
 # <a name="configure-and-use-pkcs-certificates-with-intune"></a>Configurar e usar certificados PKCS com o Intune
 
@@ -76,7 +76,7 @@ Para usar certificados PKCS com o Intune, será necessária a seguinte infraestr
   - Instalar o Conector de Certificado PFX do Microsoft Intune em seu servidor.  
   - Para receber automaticamente atualizações importantes, verifique se os firewalls estão abertos que permitem que o conector contate **autoupdate.msappproxy.net** na porta **443**.   
 
-  Para obter mais informações sobre todos os pontos de extremidade de rede que o Intune e o conector acessam, confira [Pontos de extremidade de rede do Microsoft Intune](../fundamentals/intune-endpoints.md).
+  Para obter mais informações, confira [Pontos de extremidade de rede do Microsoft Intune](../fundamentals/intune-endpoints.md) e [Requisitos e largura de banda da configuração da rede do Intune](../fundamentals/network-bandwidth-use.md).
 
 - **Windows Server**:  
   use um Windows Server para hospedar:
@@ -290,17 +290,17 @@ Plataformas:
 
 São lançadas periodicamente atualizações para os dois conectores de certificado. Quando atualizamos um conector, é possível ler sobre as mudanças aqui.
 
-O *Conector de Certificados PFX do Microsoft Intune* [dá suporte a atualizações automáticas](#requirements), enquanto o *Intune Certificate Connector* é atualizado manualmente.
+O *Conector de Certificado PFX do Microsoft Intune* [dá suporte a atualizações automáticas](#requirements), enquanto o *Intune Certificate Connector* é atualizado manualmente.
 
 ### <a name="may-17-2019"></a>17 de maio de 2019
 
-- **Conector do Certificado PFX do Microsoft Intune – versão 6.1905.0.404**  
+- **Conector de Certificado PFX do Microsoft Intune – versão 6.1905.0.404**  
   Alterações nessa versão:  
   - Correção de um problema em que os certificados PFX existentes continuam a ser reprocessados, o que faz com que o conector pare de processar novas solicitações. 
 
 ### <a name="may-6-2019"></a>6 de maio de 2019
 
-- **Conector do Certificado PFX do Microsoft Intune – versão 6.1905.0.402**  
+- **Conector de Certificado PFX do Microsoft Intune – versão 6.1905.0.402**  
   Alterações nessa versão:  
   - O intervalo de sondagem para o conector é reduzido de 5 minutos para 30 segundos.
  
@@ -312,7 +312,7 @@ O *Conector de Certificados PFX do Microsoft Intune* [dá suporte a atualizaçõ
   - Inclui correções de confiabilidade para revogação de certificado.  
   - Inclui correções de desempenho para aumentar a rapidez com que as solicitações de certificados PKCS são processadas.  
 
-- **Conector do Certificado PFX do Microsoft Intune – versão 6.1904.0.401**
+- **Conector de Certificado PFX do Microsoft Intune – versão 6.1904.0.401**
   > [!NOTE]  
   > A atualização automática para essa versão do conector PFX não estará disponível até 11 de abril de 2019.  
 

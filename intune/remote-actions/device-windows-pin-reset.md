@@ -16,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: b643ed41d01b70376dac32c26a66dcf9f9735ceb
-ms.sourcegitcommit: ec69e7ccc6e6183862a48c1b03ca6a3bf573f354
+ms.openlocfilehash: c4b3313d5ec7fe81944431276a63bfafb7a1b3dc
+ms.sourcegitcommit: 51591b862d97904291af7aa53a6eb341b11a761e
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/07/2019
-ms.locfileid: "74907212"
+ms.lasthandoff: 02/17/2020
+ms.locfileid: "77413624"
 ---
 # <a name="reset-the-passcode-on-windows-devices-using-intune"></a>Redefinir senha em dispositivos Windows usando o Intune
 
@@ -60,7 +60,7 @@ Substitua *ID do locatário* pela sua ID de diretório do Microsoft Azure AD, qu
 Defina o valor dessa CSP como **True**.
 
 > [!TIP]
-> Depois de criar a política, atribua-a (ou implante-a) em um grupo. A política pode ser atribuída aos grupos de usuário ou de dispositivos. Se ela for atribuída a um grupo de usuários, este poderá incluir os usuários que têm outros dispositivos, como IOS. Tecnicamente, a política não se aplica, mas esses dispositivos ainda são incluídos nos detalhes do status.
+> Depois de criar a política, atribua-a (ou implante-a) em um grupo. A política pode ser atribuída aos grupos de usuário ou de dispositivos. Se ela for atribuída a um grupo de usuários, este poderá incluir os usuários que têm outros dispositivos, como iOS/iPadOS. Tecnicamente, a política não se aplica, mas esses dispositivos ainda são incluídos nos detalhes do status.
 
 ## <a name="reset-the-passcode"></a>Redefinir a senha
 

@@ -1,7 +1,7 @@
 ---
-title: Registro do Programa do Apple School Manager em dispositivos iOS
+title: Registro do Programa do Apple School Manager em dispositivos iOS/iPadOS
 titleSuffix: Microsoft Intune
-description: Saiba como configurar o registro do programa do Apple School Manager em dispositivos iOS de propriedade corporativa com o Intune.
+description: Saiba como configurar o registro do programa do Apple School Manager em dispositivos iOS/iPadOS de propriedade corporativa com o Intune.
 keywords: ''
 author: ErikjeMS
 ms.author: erikje
@@ -18,18 +18,18 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 1c574714b4bd4f748c2dbe898555de35b0e03190
-ms.sourcegitcommit: f26039d674eb4d61ab68264dd1a10b2e5e1d842c
+ms.openlocfilehash: 3336ed09c414538e2879a7c50d1e3a0111f58b11
+ms.sourcegitcommit: 51591b862d97904291af7aa53a6eb341b11a761e
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/02/2019
-ms.locfileid: "74691832"
+ms.lasthandoff: 02/17/2020
+ms.locfileid: "77415373"
 ---
-# <a name="set-up-ios-device-enrollment-with-apple-school-manager"></a>Configurar o registro de dispositivo iOS com o Apple School Manager
+# <a name="set-up-iosipados-device-enrollment-with-apple-school-manager"></a>Configurar o registro de dispositivo iOS/iPadOS com o Apple School Manager
 
 [!INCLUDE [azure_portal](../includes/azure_portal.md)]
 
-Você pode configurar o Intune para registrar dispositivos iOS comprados por meio do programa [Apple School Manager](https://school.apple.com/). Ao usar o Intune com o Apple School Manager, é possível registrar grandes quantidades de dispositivos iOS sem a necessidade de tocá-los. Quando um estudante ou professor liga o dispositivo, o Assistente de Configuração é executado com as configurações predefinidas e o dispositivo é registrado no gerenciamento.
+Você pode configurar o Intune para registrar dispositivos iOS/iPadOS comprados por meio do programa [Apple School Manager](https://school.apple.com/). Ao usar o Intune com o Apple School Manager, é possível registrar grandes quantidades de dispositivos iOS/iPadOS sem a necessidade de tocá-los. Quando um estudante ou professor liga o dispositivo, o Assistente de Configuração é executado com as configurações predefinidas e o dispositivo é registrado no gerenciamento.
 
 Para habilitar o registro do Apple School Manager, é necessário usar os portais do Intune e do Apple School Manager. É necessária uma lista de números de série ou um número de ordem de compra para que você possa atribuir os dispositivos ao Intune para gerenciamento. Você cria perfis de registro de DEP que contém configurações aplicadas aos dispositivos durante o registro.
 
@@ -44,11 +44,11 @@ O registro do Apple School Manager não pode ser usado com o [Programa de regist
 
 ## <a name="get-an-apple-token-and-assign-devices"></a>Obter um token Apple e atribuir dispositivos
 
-Antes de poder registrar dispositivos iOS de propriedade corporativa com o Apple School Manager, você precisa de um arquivo de token (.p7m) da Apple. Esse token permite que o Intune sincronize informações sobre os dispositivos que participam do Apple School Manager. Ele também permite que o Intune realize carregamentos de perfis de registro para a Apple e atribua dispositivos a esses perfis. No portal da Apple, você também pode atribuir números de série do dispositivo a serem gerenciados.
+Antes de poder registrar dispositivos iOS/iPadOS de propriedade corporativa com o Apple School Manager, você precisa de um arquivo de token (.p7m) da Apple. Esse token permite que o Intune sincronize informações sobre os dispositivos que participam do Apple School Manager. Ele também permite que o Intune realize carregamentos de perfis de registro para a Apple e atribua dispositivos a esses perfis. No portal da Apple, você também pode atribuir números de série do dispositivo a serem gerenciados.
 
 ### <a name="step-1-download-the-intune-public-key-certificate-required-to-create-an-apple-token"></a>Etapa 1. Baixar o certificado de chave pública do Intune necessário para criar um token da Apple
 
-1. No [Centro de Administração do Gerenciador de Ponto de Extremidade da Microsoft](https://go.microsoft.com/fwlink/?linkid=2109431), selecione **Dispositivos** > **iOS** > **Registro do iOS** > **Tokens do Programa de Registro** > **Adicionar**.
+1. No [Centro de Administração do Gerenciador de Ponto de Extremidade da Microsoft](https://go.microsoft.com/fwlink/?linkid=2109431), selecione **Dispositivos** > **iOS** > **Registro do iOS** > **Tokens do programa de registro** > **Adicionar**.
 
    ![Obtenha um token do programa de registro.](./media/device-enrollment-program-enroll-ios/image01.png)
 
@@ -76,7 +76,7 @@ No [Centro de Administração do Gerenciador de Ponto de Extremidade da Microsof
 ![Captura de tela mostrando a especificação do ID Apple usado para criar o Token do Programa de Registro e a navegação para este recurso.](./media/apple-school-manager-set-up-ios/image03.png)
 
 ### <a name="step-4-upload-your-token"></a>Etapa 4. Carregar o seu token
-Na caixa **Token da Apple**, navegue até o arquivo de certificado (.pem), escolha **Abrir** e, em seguida, escolha **Criar**. Com o certificado push, o Intune pode registrar e gerenciar dispositivos iOS enviando por push políticas para os dispositivos móveis registrados. O Intune sincroniza automaticamente os dispositivos Apple School Manager da Apple.
+Na caixa **Token da Apple**, navegue até o arquivo de certificado (.pem), escolha **Abrir** e, em seguida, escolha **Criar**. Com o certificado push, o Intune pode registrar e gerenciar dispositivos iOS/iPadOS enviando por push políticas para os dispositivos móveis registrados. O Intune sincroniza automaticamente os dispositivos Apple School Manager da Apple.
 
 ## <a name="create-an-apple-enrollment-profile"></a>Criar um perfil de registro da Apple
 Agora que você instalou o token, pode criar um perfil de registro para dispositivos do Apple School. Um perfil de registro de dispositivo define as configurações aplicadas a um grupo de dispositivos durante o registro.
@@ -106,7 +106,7 @@ Agora que você instalou o token, pode criar um perfil de registro para disposit
     > Essas opções não têm suporte na autenticação com o Assistente de Configuração da Apple.
 
 6. Escolha **Configurações de gerenciamento de dispositivo** e indique se deseja que os dispositivos que utilizam esse perfil sejam supervisionados.
-    Os dispositivos **supervisionados** permitem mais opções de gerenciamento e desabilitam o Bloqueio de Ativação por padrão. A Microsoft recomenda usar o DEP como o mecanismo para habilitar o modo supervisionado, especialmente para as empresas que implantam grandes números de dispositivos iOS.
+    Os dispositivos **supervisionados** permitem mais opções de gerenciamento e desabilitam o Bloqueio de Ativação por padrão. A Microsoft recomenda usar o DEP como o mecanismo para habilitar o modo supervisionado, especialmente para as empresas que implantam grandes números de dispositivos iOS/iPadOS.
 
     Os usuários são notificados de que seus dispositivos são supervisionados de duas maneiras:
 
@@ -114,9 +114,9 @@ Agora que você instalou o token, pode criar um perfil de registro para disposit
    - A tela **Configurações** > **Geral** > **Sobre** diz: "Este iPhone é supervisionado. A Contoso pode monitorar o tráfego de Internet e localizar este dispositivo."
 
      > [!NOTE]
-     > Um dispositivo registrado sem supervisão só pode ser redefinido para supervisionado usando o Apple Configurator. A redefinição do dispositivo dessa maneira requer conectar um dispositivo iOS a um Mac com um cabo USB. Saiba mais sobre isso nos [documentos do Apple Configurator](http://help.apple.com/configurator/mac/2.3).
+     > Um dispositivo registrado sem supervisão só pode ser redefinido para supervisionado usando o Apple Configurator. A redefinição do dispositivo dessa maneira requer conectar um dispositivo iOS/iPadOS a um Mac com um cabo USB. Saiba mais sobre isso nos [documentos do Apple Configurator](http://help.apple.com/configurator/mac/2.3).
 
-7. Escolha se deseja registro bloqueado para dispositivos que usam esse perfil. O **registro bloqueado** desabilita as configurações de iOS que permitem que o perfil de gerenciamento seja removido do menu **Configurações**. Depois que o dispositivo é registrado, não é possível alterar essa configuração sem apagar o dispositivo. Esses dispositivos devem ter o Modo de Gerenciamento **Supervisionado** configurado como *Sim*. 
+7. Escolha se deseja registro bloqueado para dispositivos que usam esse perfil. O **Registro bloqueado** desabilita as configurações de iOS/iPadOS que permitem a remoção do perfil de gerenciamento do menu **Configurações**. Depois que o dispositivo é registrado, não é possível alterar essa configuração sem apagar o dispositivo. Esses dispositivos devem ter o Modo de Gerenciamento **Supervisionado** configurado como *Sim*. 
 
 8. É possível permitir que vários usuários façam logon em iPads registrados por meio de uma ID Apple gerenciada. Para fazer isso, escolha **Sim** em **iPad compartilhado** (a opção exige que os modos **Registrar sem afinidade do usuário** e **Supervisionado** estejam definidos como **Sim**). As IDs da Apple gerenciadas são criadas no portal do Apple School Manager. Saiba mais sobre [iPad compartilhado](../fundamentals/education-settings-configure-ios-shared.md) e [os requisitos de iPad compartilhado da Apple](https://help.apple.com/classroom/ipad/2.0/#/cad7e2e0cf56).
 
@@ -135,7 +135,7 @@ Agora que você instalou o token, pode criar um perfil de registro para disposit
     |------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
     |     <strong>Nome do Departamento</strong>     |                                                             Aparece quando os usuários tocam em <strong>Sobre a Configuração</strong> durante a ativação.                                                              |
     |    <strong>Telefone do Departamento</strong>     |                                                          Aparece quando o usuário clica no botão <strong>Precisa de Ajuda</strong> durante a ativação.                                                          |
-    | <strong>Opções do Assistente de Instalação</strong> |                                                     As configurações opcionais a seguir podem ser configuradas posteriormente no menu <strong>Configurações</strong> do iOS.                                                      |
+    | <strong>Opções do Assistente de Instalação</strong> |                                                     As configurações opcionais a seguir podem ser configuradas posteriormente no menu <strong>Configurações</strong> do iOS/iPadOS.                                                      |
     |        <strong>Senha</strong>         | Solicitar senha durante a ativação. Sempre exija uma senha para dispositivos não protegidos, a menos que o acesso seja controlado de alguma outra maneira (por exemplo, o modo de quiosque que restringe o dispositivo a um aplicativo). |
     |    <strong>Serviços de Localização</strong>    |                                                                 Se habilitado, o Assistente de Instalação solicitará o serviço durante a ativação.                                                                  |
     |         <strong>Restaurar</strong>         |                                                                Se habilitado, o Assistente de Instalação solicitará o backup do iCloud durante a ativação.                                                                 |
@@ -184,4 +184,4 @@ Dispositivos Apple School Manager gerenciados pelo Intune devem receber um perfi
 
 ## <a name="distribute-devices-to-users"></a>Distribuir dispositivos para usuários
 
-Você habilitou o gerenciamento e a sincronização entre o Apple e o Intune e atribuiu um perfil para permitir o registro dos dispositivos Apple School. Agora você pode distribuir dispositivos para os usuários. Ao ativar um dispositivo Apple School Manager do iOS, ele é registrado no gerenciamento pelo Intune. Os perfis não podem ser aplicados aos dispositivos ativados atualmente em uso enquanto o dispositivo não for apagado.
+Você habilitou o gerenciamento e a sincronização entre o Apple e o Intune e atribuiu um perfil para permitir o registro dos dispositivos Apple School. Agora você pode distribuir dispositivos para os usuários. Ao ativar um dispositivo Apple School Manager do iOS/iPadOS, ele é registrado no gerenciamento pelo Intune. Os perfis não podem ser aplicados aos dispositivos ativados atualmente em uso enquanto o dispositivo não for apagado.

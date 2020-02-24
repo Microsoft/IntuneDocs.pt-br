@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 0ea66458060417fc828b2b7735b384e8cd3e25a9
-ms.sourcegitcommit: 637375a390b6e34f9c4415c77b99fe2980bbf554
+ms.openlocfilehash: 09c8a8819c288663936174e9317267c39eac63bc
+ms.sourcegitcommit: ecaff388038fb800f2e646f8efcf8f3b1e2fd1b1
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/10/2020
-ms.locfileid: "75839385"
+ms.lasthandoff: 02/18/2020
+ms.locfileid: "77437844"
 ---
 # <a name="how-to-create-exceptions-to-the-intune-app-protection-policy-app-data-transfer-policy"></a>Como criar exceções para a política de transferência de dados da APP (Política de Proteção de Aplicativo) do Intune
 
@@ -38,7 +38,7 @@ Em uma Política de Proteção de Aplicativo do Intune, a definição de **Permi
 > Modificar ou adicionar às exceções da política de transferência de dados não afeta outras Políticas de Proteção do Aplicativo, como restrições a cortar, copiar e colar. 
 
 ## <a name="ios-data-transfer-exceptions"></a>Exceções de transferência de dados do iOS
-Para uma política destinada ao iOS, você pode configurar as exceções de transferência de dados por protocolo de URL. Para adicionar uma exceção, consulte a documentação fornecida pelo desenvolvedor do aplicativo para encontrar informações sobre os protocolos de URL compatíveis. Para obter mais informações sobre exceções de transferência de dados do iOS, confira [Configurações da política de proteção de aplicativo do iOS – Isenções de transferência de dados](app-protection-policy-settings-ios.md#data-transfer-exemptions).
+Para uma política destinada ao iOS/iPadOS, você pode configurar as exceções de transferência de dados por protocolo de URL. Para adicionar uma exceção, consulte a documentação fornecida pelo desenvolvedor do aplicativo para encontrar informações sobre os protocolos de URL compatíveis. Obtenha mais informações sobre exceções de transferência de dados do iOS/iPadOS em [Configurações da política de proteção de aplicativo do iOS – Isenções de transferência de dados](app-protection-policy-settings-ios.md#data-transfer-exemptions).
 
 > [!NOTE]
 > A Microsoft não tem um método para localizar manualmente o protocolo de URL para a criação de exceções de aplicativo para aplicativos de terceiros. 
@@ -53,9 +53,9 @@ Para uma política destinada ao Android, você pode configurar as exceções de 
 ### <a name="example"></a>Exemplo
 Ao adicionar o pacote **Webex** como uma exceção à política de transferência de dados de MAM, os links do Webex, em uma mensagem de email do Outlook gerenciada, terão permissão para abrir diretamente no aplicativo Webex. A transferência de dados permanecerá restrita em outros aplicativos não gerenciados.
 
-- Exemplo do **Webex** do iOS:   Para isentar o aplicativo **Webex**, de modo que ele possa ser invocado por aplicativos gerenciados do Intune, adicione uma exceção de transferência de dados à seguinte cadeia de caracteres: <code>wbx</code>
+- Exemplo do **Webex** do iOS/iPadOS:   Para isentar o aplicativo **Webex**, de modo que ele possa ser invocado por aplicativos gerenciados do Intune, adicione uma exceção de transferência de dados à seguinte cadeia de caracteres: <code>wbx</code>
     
-- Exemplo do **Mapas** do iOS:   Para isentar o aplicativo nativo **Mapas**, de modo que ele possa ser invocado por aplicativos gerenciados do Intune, adicione uma exceção de transferência de dados à seguinte cadeia de caracteres: <code>maps</code>
+- Exemplo do **Mapas** do iOS/iPadOS:   Para isentar o aplicativo nativo **Mapas**, de modo que ele possa ser invocado por aplicativos gerenciados do Intune, adicione uma exceção de transferência de dados à seguinte cadeia de caracteres: <code>maps</code>
 
 - Exemplo do **Webex** do Android:   Para isentar o aplicativo **Webex**, de modo que ele possa ser invocado por aplicativos gerenciados do Intune, adicione uma exceção de transferência de dados à seguinte cadeia de caracteres: <code>com.cisco.webex.meetings</code>
     
@@ -66,7 +66,7 @@ Ao adicionar o pacote **Webex** como uma exceção à política de transferênci
     
     <code>com.samsung.android.messaging</code>
 
-- Exemplo do **Instalador de certificado** do Android: Para isentar aplicativo nativo do **Instalador de certificado** para que o Outlook para Android possa instalar um certificado S/MIME (entregue como um anexo de email) no Repositório de chaves do Android, você deve adicionar a exceção de transferência de dados na seguinte cadeia de caracteres: <code>com.android.certinstaller</code>. Para obter mais informações, confira [Proteção e rotulagem de confidencialidade no Outlook para iOS e Android](https://docs.microsoft.com/exchange/clients-and-mobile-in-exchange-online/outlook-for-ios-and-android/sensitive-labeling-and-protection-outlook-for-ios-android).
+- Exemplo do **Instalador de certificado** do Android: Para isentar aplicativo nativo do **Instalador de certificado** para que o Outlook para Android possa instalar um certificado S/MIME (entregue como um anexo de email) no Repositório de chaves do Android, você deve adicionar a exceção de transferência de dados na seguinte cadeia de caracteres: <code>com.android.certinstaller</code>. Para obter mais informações, confira [Proteção e rotulagem de confidencialidade no Outlook para iOS/iPadOS e Android](https://docs.microsoft.com/exchange/clients-and-mobile-in-exchange-online/outlook-for-ios-and-android/sensitive-labeling-and-protection-outlook-for-ios-android).
 
 ## <a name="next-steps"></a>Próximas etapas
 

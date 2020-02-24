@@ -18,16 +18,16 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: e299601f69a7052ea52f9da2537306cb8556982b
-ms.sourcegitcommit: 139853f8d6ea61786da7056cfb9024a6459abd70
+ms.openlocfilehash: 96cd4997029c15396db91e9866bbb387c20f1044
+ms.sourcegitcommit: 51591b862d97904291af7aa53a6eb341b11a761e
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/26/2020
-ms.locfileid: "76755367"
+ms.lasthandoff: 02/17/2020
+ms.locfileid: "77414439"
 ---
 # <a name="add-built-in-apps-to-microsoft-intune"></a>Adicionar aplicativos nativos ao Microsoft Intune
 
-O tipo de aplicativo *nativo* facilita a atribuição de aplicativos gerenciados organizados, como aplicativos do Office 365, para dispositivos iOS e Android. Você pode atribuir aplicativos específicos para esse tipo de aplicativo, como Excel, OneDrive, Outlook, Skype e outros. Depois de adicionar um aplicativo e o tipo de aplicativo for exibido como *Aplicativo iOS interno* ou *Aplicativo Android interno*. Ao usar o tipo de aplicativo nativo, você pode escolher qual desses aplicativos publicar para os usuários do dispositivo.
+O tipo de aplicativo *nativo* facilita a atribuição de aplicativos gerenciados organizados, como os do Office 365, para dispositivos iOS/iPadOS e Android. Você pode atribuir aplicativos específicos para esse tipo de aplicativo, como Excel, OneDrive, Outlook, Skype e outros. Depois de adicionar um aplicativo e o tipo de aplicativo for exibido como *Aplicativo iOS interno* ou *Aplicativo Android interno*. Ao usar o tipo de aplicativo nativo, você pode escolher qual desses aplicativos publicar para os usuários do dispositivo.
 
 As versões anteriores do console do Intune forneciam vários aplicativos padrão gerenciados do Office 365, como Outlook e OneDrive. Os tipos de aplicativo desses aplicativos gerenciados era marcado como *Aplicativo da iOS Store Gerenciado* ou *Aplicativo Android Gerenciado*. Em vez de usar esses tipos de aplicativo, recomendamos usar o tipo de aplicativo interno. Ao usar tipo de aplicativo interno, você terá a flexibilidade adicional para editar e excluir aplicativos do Office 365.
 
@@ -45,11 +45,11 @@ Para adicionar um aplicativo nativo a seus aplicativos disponíveis no Microsoft
 6. Selecione os aplicativos internos que você deseja incluir. 
 7. Depois de selecionar os aplicativos, clique em **Selecionar** no painel **Selecionar aplicativos internos**.
 8. Clique em **Avançar** para exibir a página **Marcas de escopo**.
-9. Clique em **Selecionar marcas de escopo** para adicionar opcionalmente marcas de escopo no aplicativo. Para saber mais, confira [Usar o RBAC (controle de acesso baseado em função) e marcas de escopo para TI distribuída](~/fundamentals/scope-tags.md).
+9. Clique em **Selecionar marcas de escopo** para adicionar opcionalmente marcas de escopo no aplicativo. Confira mais informações em [Usar o RBAC (controle de acesso baseado em função) e marcas de escopo para TI distribuída](~/fundamentals/scope-tags.md).
 10. Clique em **Avançar** para exibir a página **Atribuições**.
 11. Selecione as atribuições de grupo para o aplicativo. Para saber mais, confira [Adicionar grupos para organizar usuários e dispositivos](~/fundamentals/groups-add.md). 
 12. Clique em **Avançar** para exibir a página **Revisar + criar**. Examine os valores e as configurações que você inseriu para o aplicativo.
-13. Quando terminar, clique em **Criar** para adicionar o aplicativo ao Intune.
+13. Ao terminar, clique em **Criar** para adicionar o aplicativo ao Intune.
 
     A folha **Visão geral** do aplicativo criado é exibida.
 

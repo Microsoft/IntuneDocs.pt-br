@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 9b5f973e5ce169edcf6149b0588c905d8497cca2
-ms.sourcegitcommit: 2506cdbfccefd42587a76f14ee50c3849dad1708
+ms.openlocfilehash: c7a6914e8174023704cfc593ec08a525ec5889f3
+ms.sourcegitcommit: ecaff388038fb800f2e646f8efcf8f3b1e2fd1b1
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/11/2020
-ms.locfileid: "75885752"
+ms.lasthandoff: 02/18/2020
+ms.locfileid: "77437895"
 ---
 # <a name="how-to-create-and-assign-app-protection-policies"></a>Como criar e atribuir as políticas de proteção de aplicativo
 
@@ -65,7 +65,7 @@ Quando você cria uma política de proteção de aplicativo para aplicativos iOS
     | Valor/opção | Descrição |
     |-------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
     | Direcionar para aplicativos em todos os tipos de dispositivos | Use esta opção para direcionar sua política a aplicativos em dispositivos de qualquer estado de gerenciamento. Escolha **Não** para direcionar aplicativos em tipos de dispositivos específicos. Para obter mais informações, confira [Políticas de proteção do aplicativo de destino com base no estado de gerenciamento de dispositivo](#target-app-protection-policies-based-on-device-management-state) |
-    |     Tipos de dispositivos | Use esta opção para especificar se esta política se aplica a dispositivos MDM gerenciados ou não gerenciados. Para as políticas de aplicativos iOS, selecione dentre dispositivos **Não gerenciados** e **Gerenciados**. Para as políticas de aplicativos Android, selecione dentre **Não gerenciado**, **Administrador de dispositivo Android** e **Android Enterprise**.  |
+    |     Tipos de dispositivos | Use esta opção para especificar se esta política se aplica a dispositivos MDM gerenciados ou não gerenciados. Para as políticas de aplicativos iOS/iPadOS, selecione entre dispositivos **Não gerenciados** e **Gerenciados**. Para as políticas de aplicativos Android, selecione dentre **Não gerenciado**, **Administrador de dispositivo Android** e **Android Enterprise**.  |
     | Aplicativos públicos | Clique em **Selecionar aplicativos públicos** para escolher os aplicativos a serem direcionados. |
     | Aplicativos personalizados | Clique em **Selecionar aplicativos personalizados** para selecionar aplicativos personalizados a serem direcionados com base em uma ID de Pacote. |
     
@@ -103,7 +103,7 @@ Quando você cria uma política de proteção de aplicativo para aplicativos iOS
 
 Os usuários finais podem baixar os aplicativos da loja de aplicativos ou do Google Play. Para obter mais informações, consulte:
 * [O que esperar quando seu aplicativo Android é gerenciado por políticas de proteção de aplicativo](../fundamentals/end-user-mam-apps-android.md)
-* [O que esperar quando seu aplicativo iOS é gerenciado por políticas de proteção de aplicativo](../fundamentals/end-user-mam-apps-ios.md)
+* [O que esperar quando seu aplicativo iOS/iPadOS é gerenciado por políticas de proteção de aplicativo](../fundamentals/end-user-mam-apps-ios.md)
 
 ## <a name="change-existing-policies"></a>Alterar políticas existentes
 Você pode editar uma política existente e aplicá-la aos usuários de destino. No entanto, quando você altera as políticas existentes, os usuários já conectados aos aplicativos só verão as alterações após um período de oito horas.
@@ -123,7 +123,7 @@ Para ver o efeito das alterações imediatamente, o usuário final deve sair do 
     | Valor/opção | Descrição |
     |-------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
     | Direcionar para aplicativos em todos os tipos de dispositivos | Use esta opção para direcionar sua política a aplicativos em dispositivos de qualquer estado de gerenciamento. Escolha **Não** para direcionar aplicativos em tipos de dispositivos específicos. Para obter mais informações, confira [Políticas de proteção do aplicativo de destino com base no estado de gerenciamento de dispositivo](#target-app-protection-policies-based-on-device-management-state) |
-    |     Tipos de dispositivos | Use esta opção para especificar se esta política se aplica a dispositivos MDM gerenciados ou não gerenciados. Para as políticas de aplicativos iOS, selecione dentre dispositivos **Não gerenciados** e **Gerenciados**. Para as políticas de aplicativos Android, selecione dentre **Não gerenciado**, **Administrador de dispositivo Android** e **Android Enterprise**.  |
+    |     Tipos de dispositivos | Use esta opção para especificar se esta política se aplica a dispositivos MDM gerenciados ou não gerenciados. Para as políticas de aplicativos iOS/iPadOS, selecione entre dispositivos **Não gerenciados** e **Gerenciados**. Para as políticas de aplicativos Android, selecione dentre **Não gerenciado**, **Administrador de dispositivo Android** e **Android Enterprise**.  |
     | Aplicativos públicos | Clique em **Selecionar aplicativos públicos** para escolher os aplicativos a serem direcionados. |
     | Aplicativos personalizados | Clique em **Selecionar aplicativos personalizados** para selecionar aplicativos personalizados a serem direcionados com base em uma ID de Pacote. |
 
@@ -166,7 +166,7 @@ Para ver o efeito das alterações imediatamente, o usuário final deve sair do 
 ## <a name="target-app-protection-policies-based-on-device-management-state"></a>Políticas de proteção do aplicativo de destino com base no estado de gerenciamento de dispositivo
 Em muitas organizações é comum permitir que os usuários finais usem dispositivos gerenciados MDM (gerenciamento de dispositivo móvel) do Intune, como dispositivos corporativos, bem como dispositivos não gerenciados protegidos apenas com políticas de Proteção de Aplicativo do Intune. Dispositivos não gerenciados são geralmente conhecidos como BYOD (traga seu próprio dispositivos).
 
-Uma vez que as políticas de Proteção de Aplicativo do Intune são direcionadas para a identidade de um usuário, as configurações de proteção para um usuário podem se aplicar tanto a dispositivos registrados (gerenciados por MDM) quanto não registrados (sem MDM). Portanto, você pode ter como destino uma política de Proteção de Aplicativo do Intune para dispositivos Android e iOS registrados ou não registrados no Intune. Você pode ter uma política de proteção para dispositivos não gerenciados, na qual controles de DLP (prevenção contra perda de dados) estritos estejam em vigor, e uma política de proteção separada para dispositivos gerenciados MDM, em que os controles de DLP podem ser um pouco mais flexíveis. Para saber mais sobre como isso funciona em dispositivos Android Enterprise pessoais, confira o tópico [Políticas de proteção de aplicativo e perfis de trabalho](android-deployment-scenarios-app-protection-work-profiles.md).
+Uma vez que as políticas de Proteção de Aplicativo do Intune são direcionadas para a identidade de um usuário, as configurações de proteção para um usuário podem se aplicar tanto a dispositivos registrados (gerenciados por MDM) quanto não registrados (sem MDM). Portanto, você pode ter como destino uma política de Proteção de Aplicativo do Intune para dispositivos Android e iOS/iPadOS registrados ou não registrados no Intune. Você pode ter uma política de proteção para dispositivos não gerenciados, na qual controles de DLP (prevenção contra perda de dados) estritos estejam em vigor, e uma política de proteção separada para dispositivos gerenciados MDM, em que os controles de DLP podem ser um pouco mais flexíveis. Para saber mais sobre como isso funciona em dispositivos Android Enterprise pessoais, confira o tópico [Políticas de proteção de aplicativo e perfis de trabalho](android-deployment-scenarios-app-protection-work-profiles.md).
 
 Para criar essas políticas, navegue até **Aplicativos** > **Políticas de proteção de aplicativo** no console do Intune e selecione **Criar política**. Você também pode editar uma política de proteção do aplicativo existente. Para que a política de proteção de aplicativo seja aplicada a dispositivos gerenciados e não gerenciados, navegue até a página **Aplicativos** e confirme se **Direcionar para aplicativos em todos os tipos de dispositivo** está definido como **Sim**, o valor padrão. Se você desejar atribuir de maneira granular com base no estado de gerenciamento, defina **Direcionar para aplicativos em todos os tipos de dispositivo** como **Não**. 
 
@@ -182,15 +182,15 @@ Para criar essas políticas, navegue até **Aplicativos** > **Políticas de prot
 
 Para iOS, são necessárias mais definições de configuração de aplicativo a fim de direcionar as configurações da política de proteção do aplicativo para aplicativos, em dispositivos registrados no Microsoft Intune:
 
-- **IntuneMAMUPN** deve ser configurado para todos os aplicativos gerenciados por MDM. Para obter mais informações, confira [Como gerenciar a transferência de dados entre aplicativos iOS no Microsoft Intune](data-transfer-between-apps-manage-ios.md#configure-user-upn-setting-for-microsoft-intune-or-third-party-emm).
-- **IntuneMAMDeviceID** deve ser configurado para todos os aplicativos de terceiros e gerenciados por MDM de linha de negócios. O **IntuneMAMDeviceID** deve ser configurado para o token de ID do dispositivo. Por exemplo, `key=IntuneMAMDeviceID, value={{deviceID}}`. Para obter mais informações, confira [Adicionar políticas de configuração de aplicativo para dispositivos iOS gerenciados](app-configuration-policies-use-ios.md).
+- **IntuneMAMUPN** deve ser configurado para todos os aplicativos gerenciados por MDM. Para obter mais informações, confira [Como gerenciar a transferência de dados entre aplicativos iOS/iPadOS no Microsoft Intune](data-transfer-between-apps-manage-ios.md#configure-user-upn-setting-for-microsoft-intune-or-third-party-emm).
+- **IntuneMAMDeviceID** deve ser configurado para todos os aplicativos de terceiros e gerenciados por MDM de linha de negócios. O **IntuneMAMDeviceID** deve ser configurado para o token de ID do dispositivo. Por exemplo, `key=IntuneMAMDeviceID, value={{deviceID}}`. Para obter mais informações, confira [Adicionar políticas de configuração de aplicativo para dispositivos iOS/iPadOS gerenciados](app-configuration-policies-use-ios.md).
 - Se apenas **IntuneMAMDeviceID** estiver configurado, o aplicativo do Intune considerará que o dispositivo como não gerenciado.
 
 > [!NOTE]
-> Para obter informações de suporte do iOS específicas sobre políticas de proteção do aplicativo com base no estado de gerenciamento de dispositivo, consulte [Políticas de proteção MAM direcionadas com base no estado de gerenciamento](../fundamentals/whats-new-archive.md#mam-protection-policies-targeted-based-on-management-state).
+> Para obter informações de suporte do iOS/iPadOS específicas sobre políticas de proteção do aplicativo com base no estado de gerenciamento de dispositivo, confira [Políticas de proteção MAM direcionadas com base no estado de gerenciamento](../fundamentals/whats-new-archive.md#mam-protection-policies-targeted-based-on-management-state).
 
 ## <a name="policy-settings"></a>Configurações de política
-Para ver uma lista completa das configurações de política para iOS e Android, selecione um dos seguintes links:
+Para ver uma lista completa das configurações de política para iOS/iPadOS e Android, selecione um dos seguintes links:
 
 - [Políticas do iOS](app-protection-policy-settings-ios.md)
 - [Políticas do Android](app-protection-policy-settings-android.md)
@@ -200,4 +200,4 @@ Para ver uma lista completa das configurações de política para iOS e Android,
 
 ## <a name="see-also"></a>Consulte também
 * [O que esperar quando seu aplicativo Android é gerenciado por políticas de proteção de aplicativo](../fundamentals/end-user-mam-apps-android.md)
-* [O que esperar quando seu aplicativo iOS é gerenciado por políticas de proteção de aplicativo](../fundamentals/end-user-mam-apps-ios.md)
+* [O que esperar quando seu aplicativo iOS/iPadOS é gerenciado por políticas de proteção de aplicativo](../fundamentals/end-user-mam-apps-ios.md)

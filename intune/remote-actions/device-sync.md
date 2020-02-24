@@ -16,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 1001a7a3fde9c203fdad3d146ace57736ae7128d
-ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
+ms.openlocfilehash: 21167b226556100e7e9920f31f859d6d6ce2a7bb
+ms.sourcegitcommit: 51591b862d97904291af7aa53a6eb341b11a761e
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "73713453"
+ms.lasthandoff: 02/17/2020
+ms.locfileid: "77415540"
 ---
 # <a name="sync-devices-to-get-the-latest-policies-and-actions-with-intune"></a>Sincronizar dispositivos com o Intune para obter as políticas e ações mais recentes
 
@@ -49,7 +49,7 @@ Você pode encontrar frequências padrão de check-in de política do Intune em 
 
 ## <a name="retryable-error-codes"></a>Códigos de erro que permitem tentar novamente
 
-Quando um administrador executa a ação do dispositivo **Sincronizar**, os aplicativos iOS e Android que tiverem falhado e gerado um código de erro que permite tentar novamente ainda estarão disponíveis para o dispositivo. No entanto, os aplicativos que tiverem gerado um código de erro que não permite tentar novamente deverão esperar sete dias para ficar novamente disponíveis para o dispositivo.
+Quando um administrador executar a ação do dispositivo **Sincronizar**, os aplicativos iOS/iPadOS e Android, que falharam e geraram um código de erro que permite tentar novamente, ainda estarão disponíveis para o dispositivo. No entanto, os aplicativos que tiverem gerado um código de erro que não permite tentar novamente deverão esperar sete dias para ficar novamente disponíveis para o dispositivo.
 
 
 | Código do erro  | Descrição sugerida | Permite tentar novamente |

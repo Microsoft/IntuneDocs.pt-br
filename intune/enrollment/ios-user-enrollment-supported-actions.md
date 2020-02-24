@@ -6,7 +6,7 @@ keywords: ''
 author: ErikjeMS
 ms.author: erikje
 manager: dougeby
-ms.date: 10/2/2019
+ms.date: 2/14/2020
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.subservice: enrollment
@@ -18,19 +18,19 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: e23e582a853f0b424296d8fb42f6c7d8fdd2984c
-ms.sourcegitcommit: 0d9e1452fcf5f15a80230838f80a427b9951cdb1
+ms.openlocfilehash: 9c6fb7da3a791d369fc3005367ee7670af8bc63e
+ms.sourcegitcommit: 51591b862d97904291af7aa53a6eb341b11a761e
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/21/2019
-ms.locfileid: "75324858"
+ms.lasthandoff: 02/17/2020
+ms.locfileid: "77414143"
 ---
 # <a name="intune-actions-and-options-supported-with-apple-user-enrollment"></a>Ações e opções do Intune compatíveis com o Registro de usuário da Apple
 
 O Registro de usuário é compatível com um subconjunto de opções de gerenciamento de dispositivo. Se um perfil de configuração pré-existente for aplicado a um dispositivo de Registro de usuário, somente as configurações compatíveis com o Registro de usuário serão aplicadas a esse dispositivo.
 
 > [!NOTE]
-> O suporte do Registro de usuário da Apple no Intune está em versão prévia atualmente.
+> O suporte ao Registro de Usuário da Apple no Intune está em versão prévia atualmente para o iOS e iPadOS.
 
 ## <a name="password-settings"></a>Configurações de senha
 
@@ -107,19 +107,15 @@ As opções a seguir não são compatíveis em dispositivos registrados com o Re
 - As políticas de proteção de aplicativo ainda serão aplicadas a esses aplicativos. No entanto, você não poderá assumir o gerenciamento ou implantar uma versão gerenciada desses aplicativos, a menos que o usuário os exclua do dispositivo.
 - Ações, configurações, definições e comandos que exigem supervisão. 
 
-## <a name="options-not-supported-in-preview"></a>Opções sem suporte na versão prévia
-- Restrições de registro de tipo de dispositivo para permitir/bloquear dispositivos de propriedade pessoal 
 
 ## <a name="known-issues-in-preview"></a>Problemas conhecidos na versão prévia
 - Revogação da licença de VPP: não aparece uma notificação informando que a licença foi revogada. O comportamento atual é que a revogação foi bem-sucedida, mas o usuário final não é notificado. 
 - Relatório de aplicativos de VPP: no relatório localizado em Aplicativos Cliente > Aplicativos > [Nome do aplicativo] > Status de Instalação do Dispositivo, os aplicativos de VPP implantados nos dispositivos Registrados pelo usuário estão informando "falha", mesmo quando o aplicativo é implantado com êxito no dispositivo. 
 - Relatório de aplicativos: para os tipos de aplicativo sem suporte no Registro de usuário, os relatórios podem fornecer mensagens de erro irrelevantes. 
 - Experiência do aplicativo Portal da Empresa: os usuários veem todos os aplicativos direcionados a eles, não importa se esses tipos de aplicativos têm suporte para dispositivos Registrados pelo usuário. 
-- Experiência do aplicativo Portal da Empresa: os usuários veem o mesmo texto indicando o que as organizações podem ou não ver para o Registro de usuário e dispositivo.
-- Se um usuário selecionar "Minha organização possui este dispositivo" durante o registro, o dispositivo ainda será identificado como Pessoal no Intune, a menos que seja modificado de outra forma no console de administração ou por meio do grafo. 
-- Direcionamento de registro: o iPadOS não está listado no seletor de plataforma. O iPadOS tem suporte na versão prévia, mas não é indicado explicitamente no console de administração. 
+- Experiência do aplicativo Portal da Empresa: os usuários veem o mesmo texto indicando o que as organizações podem ver no Registro de Usuário e Dispositivo, caso o administrador tenha personalizado o texto indicando o que as organizações não podem ver.
 
 
 ## <a name="next-steps"></a>Próximas etapas
 
-[Configurar o Registro de usuário do iOS e iPadOS](ios-user-enrollment.md)
+[Configurar o Registro de Usuário do iOS/iPadOS e iPadOS](ios-user-enrollment.md)

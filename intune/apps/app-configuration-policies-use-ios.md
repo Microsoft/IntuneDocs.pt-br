@@ -1,7 +1,7 @@
 ---
-title: Adicionar políticas de configuração de aplicativos para dispositivos iOS gerenciados
+title: Adicionar políticas de configuração de aplicativos para dispositivos iOS/iPadOS gerenciados
 titleSuffix: Microsoft Intune
-description: Saiba como usar políticas de configuração de aplicativo para fornecer dados de configuração para um aplicativo iOS quando ele é executado.
+description: Saiba como usar políticas de configuração de aplicativo para fornecer dados de configuração para um aplicativo iOS/iPadOS quando ele é executado.
 keywords: ''
 author: Erikre
 ms.author: erikre
@@ -18,18 +18,18 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 0d4bbd0a5b57391edad726c7e936d0072a791673
-ms.sourcegitcommit: 139853f8d6ea61786da7056cfb9024a6459abd70
+ms.openlocfilehash: 6044ff5f8d169e36a11f9289f1772c809723b7fc
+ms.sourcegitcommit: ecaff388038fb800f2e646f8efcf8f3b1e2fd1b1
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/26/2020
-ms.locfileid: "76755758"
+ms.lasthandoff: 02/18/2020
+ms.locfileid: "77437997"
 ---
-# <a name="add-app-configuration-policies-for-managed-ios-devices"></a>Adicionar políticas de configuração de aplicativos para dispositivos iOS gerenciados
+# <a name="add-app-configuration-policies-for-managed-iosipados-devices"></a>Adicionar políticas de configuração de aplicativos para dispositivos iOS/iPadOS gerenciados
 
 [!INCLUDE [azure_portal](../includes/azure_portal.md)]
 
-Use políticas de configuração de aplicativo no Microsoft Intune para fornecer definições de configuração personalizadas para um aplicativo iOS. Essas definições de configuração permitem que um aplicativo seja personalizado com base na orientação dos fornecedores do aplicativo. É necessário obter essas definições de configuração (chaves e valores) do fornecedor do aplicativo. Para configurar o aplicativo, especifique as configurações como chaves e valores ou como um XML que contém as chaves e os valores.
+Use políticas de configuração de aplicativo no Microsoft Intune para fornecer definições de configuração personalizadas para um aplicativo iOS/iPadOS. Essas definições de configuração permitem que um aplicativo seja personalizado com base na orientação dos fornecedores do aplicativo. É necessário obter essas definições de configuração (chaves e valores) do fornecedor do aplicativo. Para configurar o aplicativo, especifique as configurações como chaves e valores ou como um XML que contém as chaves e os valores.
 
 Como administrador do Microsoft Intune, é possível controlar quais contas de usuário são adicionadas aos aplicativos do Microsoft Office em dispositivos gerenciados. É possível limitar o acesso apenas a contas permitidas de usuários corporativos e bloquear contas pessoais em dispositivos registrados. Os aplicativos de suporte processam a configuração do aplicativo, removem e bloqueiam contas não aprovadas. As definições da política de configuração são usadas quando o aplicativo verifica se elas existem, normalmente, na primeira vez em que ele é executado.
 
@@ -41,7 +41,7 @@ Depois de adicionar uma política de configuração de aplicativo, você pode de
 Depois de selecionar os grupos incluídos para sua política de configuração de aplicativo, você também pode escolher os grupos específicos a serem excluídos. Para obter mais informações, consulte [Incluir e excluir atribuições de aplicativo no Microsoft Intune](apps-inc-exl-assignments.md).
 
 > [!TIP]
-> No momento, este tipo de política está disponível somente para dispositivos que executam o iOS 8.0 e posterior. Ela dá suporte aos seguintes tipos de instalação de aplicativo:
+> No momento, esse tipo de política está disponível somente para dispositivos que executam o iOS/iPadOS 8.0 e posterior. Ela dá suporte aos seguintes tipos de instalação de aplicativo:
 >
 > - **Aplicativo iOS gerenciado da loja de aplicativos**
 > - **Pacote do aplicativo do iOS**
@@ -51,7 +51,7 @@ Depois de selecionar os grupos incluídos para sua política de configuração d
 ## <a name="create-an-app-configuration-policy"></a>Criar uma política de configuração do aplicativo
 
 1. Entre no [Centro de Administração do Gerenciador de Ponto de Extremidade da Microsoft](https://go.microsoft.com/fwlink/?linkid=2109431).
-2. Escolha **Aplicativos** > **Políticas de configuração de aplicativo** > **Adicionar** > **Aplicativos gerenciados**. Observe que você pode escolher entre **Dispositivos gerenciados** e **Aplicativos gerenciados**. Para obter mais informações, confira [Aplicativos que dão suporte à configuração de aplicativo](~/apps/app-configuration-policies-overview.md#apps-that-support-app-configuration).
+2. Escolha **Aplicativos** > **Políticas de configuração de aplicativo** > **Adicionar** > **Aplicativos gerenciados**. Observe que você pode escolher entre **Dispositivos gerenciados** e **Aplicativos gerenciados**. Para saber mais, confira [Aplicativos que dão suporte à configuração de aplicativo](~/apps/app-configuration-policies-overview.md#apps-that-support-app-configuration).
 3. Na página **Conceitos Básicos**, configure os seguintes detalhes:
     - **Nome** – o nome do perfil exibido no portal do Azure.
     - **Descrição** – a descrição do perfil que é exibida no portal do Azure.
@@ -106,7 +106,7 @@ Os caracteres \{\{ e \}\} são usados apenas por tipos de token e não devem ser
 
 ### <a name="allow-only-configured-organization-accounts-in-multi-identity-apps"></a>Permitir somente contas da organização configuradas em aplicativos de várias identidades 
 
-Para dispositivos iOS, use os seguintes pares de chave/valor:
+Para dispositivos iOS/iPadOS, use os seguintes pares de chave/valor:
 
 | **Key** | IntuneMAMAllowedAccountsOnly |
 |--------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
@@ -177,17 +177,17 @@ Além disso, o Intune dá suporte aos seguintes tipos de token na lista de propr
 - \{\{deviceid\}\}—por exemplo, **b9841cd9-9843-405f-be28-b2265c59ef97**
 - \{\{userid\}\}—por exemplo, **3ec2c00f-b125-4519-acf0-302ac3761822**
 - \{\{username\}\}—por exemplo, **João Silva**
-- \{\{serialnumber\}\}—por exemplo, **F4KN99ZUG5V2** (para dispositivos iOS)
-- \{\{serialnumberlast4digits\}\}— por exemplo, **G5V2** (para dispositivos iOS)
+- \{\{serialnumber\}\} – por exemplo, **F4KN99ZUG5V2** (para dispositivos iOS/iPadOS)
+- \{\{serialnumberlast4digits\}\} – por exemplo, **G5V2** (para dispositivos iOS/iPadOS)
 - \{\{aaddeviceid\}\} – por exemplo, **ab0dc123-45d6-7e89-aabb-cde0a1234b56**
 
 ## <a name="configure-the-company-portal-app-to-support-ios-dep-devices"></a>Configurar o aplicativo Portal da Empresa para dar suporte a dispositivos DEP com iOS
 
-Os registros de DEP (Programa de Registro de Dispositivos da Apple) não são compatíveis com a versão da loja de aplicativos do aplicativo Portal da Empresa. No entanto, você pode configurar o aplicativo Portal da Empresa para dar suporte a dispositivos DEP com iOS usando as etapas a seguir.
+Os registros de DEP (Programa de Registro de Dispositivos da Apple) não são compatíveis com a versão da loja de aplicativos do aplicativo Portal da Empresa. No entanto, você pode configurar o aplicativo Portal da Empresa para dar suporte a dispositivos DEP com iOS/iPadOS usando as etapas a seguir.
 
 1. No Intune, se necessário, adicione o Portal da Empresa do Intune em **Intune** > **Aplicativos** > **Todos os aplicativos** > **Adicionar**.
 2. Acesse **Aplicativos** > **Políticas de configuração de aplicativos** para criar uma política de configuração para o aplicativo Portal da Empresa.
-3. Crie uma política de configuração de aplicativo com o XML abaixo. Encontre mais informações sobre como criar uma política de configuração de aplicativos e inserir dados XML em [Adicionar políticas de configuração de aplicativos para dispositivos iOS gerenciados](app-configuration-policies-use-ios.md).
+3. Crie uma política de configuração de aplicativo com o XML abaixo. Encontre mais informações sobre como criar uma política de configuração de aplicativos e inserir dados XML em [Adicionar políticas de configuração de aplicativos para dispositivos iOS/iPadOS gerenciados](app-configuration-policies-use-ios.md).
 
     ``` xml
     <dict>
@@ -205,11 +205,11 @@ Os registros de DEP (Programa de Registro de Dispositivos da Apple) não são co
 4. Avise os usuários para entrarem no aplicativo Portal da Empresa quando ele for automaticamente instalado.
 
 ## <a name="monitor-ios--app-configuration-status-per-device"></a>Monitorar o status da configuração do aplicativo iOS por dispositivo 
-Depois que uma política de configuração for atribuída, você poderá monitorar o status de configuração do aplicativo iOS de cada dispositivo gerenciado. No **Microsoft Intune**, no portal do Azure, selecione **Dispositivos** > **Todos os dispositivos**. Na lista de dispositivos gerenciados, selecione um dispositivo específico para exibir o painel dele. No painel do dispositivo, selecione **Configuração de aplicativo**.  
+Depois que uma política de configuração for atribuída, você poderá monitorar o status de configuração do aplicativo iOS/iPadOS de cada dispositivo gerenciado. No **Microsoft Intune**, no portal do Azure, selecione **Dispositivos** > **Todos os dispositivos**. Na lista de dispositivos gerenciados, selecione um dispositivo específico para exibir o painel dele. No painel do dispositivo, selecione **Configuração de aplicativo**.  
 
 ## <a name="additional-information"></a>Informações adicionais
 
-- [Implantar definições de configuração de aplicativos no Outlook para iOS e Android](https://docs.microsoft.com/exchange/clients-and-mobile-in-exchange-online/outlook-for-ios-and-android/outlook-for-ios-and-android-configuration-with-microsoft-intune)
+- [Implantar definições de configuração de aplicativos no Outlook para iOS/iPadOS e Android](https://docs.microsoft.com/exchange/clients-and-mobile-in-exchange-online/outlook-for-ios-and-android/outlook-for-ios-and-android-configuration-with-microsoft-intune)
 
 ## <a name="next-steps"></a>Próximas etapas
 

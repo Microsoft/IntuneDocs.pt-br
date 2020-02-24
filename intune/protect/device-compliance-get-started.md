@@ -5,7 +5,7 @@ keywords: ''
 author: brenduns
 ms.author: brenduns
 manager: dougeby
-ms.date: 12/05/2019
+ms.date: 02/13/2020
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.subservice: protect
@@ -16,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: a56d8f7aface3628ba5bc8985128ebb49c9cf404
-ms.sourcegitcommit: b0d683917af83170f85022b270270d8ced8e301c
+ms.openlocfilehash: 867873c78b34d5573084a3a6e44d7d4d67846423
+ms.sourcegitcommit: 51591b862d97904291af7aa53a6eb341b11a761e
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "76812165"
+ms.lasthandoff: 02/17/2020
+ms.locfileid: "77413642"
 ---
 # <a name="set-rules-on-devices-to-allow-access-to-resources-in-your-organization-using-intune"></a>Definir regras em dispositivos para permitir o acesso aos recursos em sua organização usando o Intune
 
@@ -104,7 +104,9 @@ O Intune também inclui um conjunto de configurações de política de conformid
   - Permitam que o Portal da Empresa use serviços de localização.
   - Avaliem e relatem o status de jailbreak ao Intune pelo menos uma vez a cada 72 horas. Caso contrário, o dispositivo será marcado como não estando em conformidade. A avaliação é disparada com a abertura do aplicativo do Portal da Empresa ou a movimentação física do dispositivo para 500 metros de distância ou mais. Se o dispositivo não se mover 500 metros em 72 horas, o usuário precisará abrir o aplicativo Portal da Empresa para executar uma avaliação avançada de desbloqueio.
 
-- **Período de validade do status de conformidade (dias)** : Insira o período que os dispositivos relatam o status de todas as políticas de conformidade recebidas. Dispositivos que não retornam o status dentro desse período são tratados como não estando em conformidade. O valor padrão é de 30 dias.
+- **Período de validade do status de conformidade (dias)** : Insira o período que os dispositivos relatam o status de todas as políticas de conformidade recebidas. Dispositivos que não retornam o status dentro desse período são tratados como não estando em conformidade. O valor padrão é de 30 dias. O valor mínimo é 1 dia.
+
+  Essa configuração é exibida como a política de conformidade padrão **Está ativa** (**Dispositivos** > **Monitor** > **Definição da conformidade**). A tarefa em segundo plano para essa política é executada uma vez por dia.
 
 Você pode usar essas políticas internas para monitorar essas configurações. O Intune também [atualiza ou verifica se há atualizações](create-compliance-policy.md#refresh-cycle-times) em intervalos diferentes, dependendo da plataforma do dispositivo. [Perguntas, problemas e resoluções comuns com perfis e políticas de dispositivo no Microsoft Intune](../configuration/device-profile-troubleshoot.md) é um bom recurso.
 

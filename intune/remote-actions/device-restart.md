@@ -1,6 +1,6 @@
 ---
 title: Reiniciar dispositivos com o Microsoft Intune – Azure | Microsoft Docs
-description: Reinicie os dispositivos Windows e iOS usando o Microsoft Intune no Portal do Azure usando a ação remota Reiniciar.
+description: Reinicie os dispositivos Windows e iOS/iPadOS por meio do Microsoft Intune no Portal do Azure usando a ação remota Reiniciar.
 keywords: ''
 author: ErikjeMS
 ms.author: erikje
@@ -16,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 82ebf35d0eb435f2df4e6cf55274808e6fa690f4
-ms.sourcegitcommit: af384c46ec8d8def6aa32c3b89947748dc6fd28f
+ms.openlocfilehash: 54fa0f796e96a2487793197cbbbe548fd8490856
+ms.sourcegitcommit: 51591b862d97904291af7aa53a6eb341b11a761e
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/22/2020
-ms.locfileid: "76517534"
+ms.lasthandoff: 02/17/2020
+ms.locfileid: "77415610"
 ---
 # <a name="remotely-restart-devices-with-intune"></a>Reiniciar dispositivos remotamente com o Intune
 
@@ -35,10 +35,10 @@ A ação de dispositivo **Reiniciar** faz com que o dispositivo escolhido seja r
 - Windows – Com suporte no Windows 8.1 e versões posteriores
 - Windows Phone – Com suporte no Windows 8.1 e versões posteriores
 - Dispositivos de quiosque Android – com suporte no Android 7.0 e posterior
-- iOS – Com suporte
+- iOS/iPadOS – Com suporte
 
     > [!Note]  
-    > Este comando requer um dispositivo supervisionado e o direito de acesso do **Bloqueio de dispositivo**. O dispositivo é reiniciado imediatamente. Os dispositivos iOS bloqueados por senha não ingressam novamente em uma rede Wi-Fi após a reinicialização. Após a reinicialização, talvez o dispositivo não seja capaz de se comunicar com o servidor.
+    > Este comando requer um dispositivo supervisionado e o direito de acesso do **Bloqueio de dispositivo**. O dispositivo é reiniciado imediatamente. Os dispositivos iOS/iPadOS bloqueados por senha não ingressam novamente em uma rede Wi-Fi após a reinicialização. Após a reinicialização, talvez o dispositivo não seja capaz de se comunicar com o servidor.
 - macOS – Sem suporte
 - Dispositivos Android e de perfil de trabalho Android – não há suporte
 

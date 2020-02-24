@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 80ae9b3b1ab274e236ad43c52569574718d3eec4
-ms.sourcegitcommit: 637375a390b6e34f9c4415c77b99fe2980bbf554
+ms.openlocfilehash: ef9810f9414af4d1f57fa71189a6960b491800c0
+ms.sourcegitcommit: 51591b862d97904291af7aa53a6eb341b11a761e
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/10/2020
-ms.locfileid: "75839298"
+ms.lasthandoff: 02/17/2020
+ms.locfileid: "77414878"
 ---
 # <a name="how-to-manage-data-transfer-between-ios-apps-in-microsoft-intune"></a>Como gerenciar a transferência de dados entre aplicativos iOS no Microsoft Intune
 
@@ -45,7 +45,7 @@ Use as políticas de proteção de aplicativo com o recurso **Abrir no gerenciam
 ## <a name="configure-user-upn-setting-for-microsoft-intune-or-third-party-emm"></a>Definir configuração de UPN do usuário para Microsoft Intune ou EMM de terceiros
 Essa configuração de UPN do usuário é **necessária** para dispositivos gerenciados pelo Intune ou por uma solução EMM de terceiros para identificar a conta de usuário registrada. A configuração de UPN funciona com as políticas de proteção de aplicativo implantadas do Intune. O procedimento a seguir é um fluxo geral de como definir a configuração de UPN e a experiência do usuário resultante:
 
-1. No [portal do Azure](https://portal.azure.com), [crie e atribua uma política de proteção de aplicativo](app-protection-policies.md) para iOS. Defina as configurações da política conforme os requisitos da sua empresa e selecione os aplicativos de iOS que devem ter essa política.
+1. No [portal do Azure](https://portal.azure.com), [crie e atribua uma política de proteção de aplicativo](app-protection-policies.md) para iOS/iPadOS. Defina as configurações da política conforme os requisitos da sua empresa e selecione os aplicativos de iOS que devem ter essa política.
 
 2. Implante os aplicativos e o perfil de email que você deseja gerenciar por meio do Intune ou da solução MDM de terceiros usando as seguintes etapas gerais. Essa experiência também é abordada no *Exemplo 1*.
 
@@ -90,7 +90,7 @@ Essa configuração de UPN do usuário é **necessária** para dispositivos gere
 
 1. Um usuário abre o aplicativo Microsoft OneDrive em um dispositivo iOS registrado e entra na conta corporativa.  A conta em que o usuário entra deve corresponder à conta UPN especificada nas definições de configuração do aplicativo Microsoft OneDrive.
 
-2. Depois de entrar, suas configurações de aplicativo configuradas pelo administrador se aplicam à conta de usuário no Microsoft OneDrive.  Isso inclui definir a configuração **Enviar dados da organização para outros aplicativos** com o valor **Aplicativos gerenciados por política com compartilhamento de SO**.
+2. Depois que você entrar, suas definições de aplicativo configuradas pelo administrador se aplicarão à conta de usuário no Microsoft OneDrive.  Isso inclui definir a configuração **Enviar dados da organização para outros aplicativos** com o valor **Aplicativos gerenciados por política com compartilhamento de SO**.
 
 3. O usuário visualiza um arquivo de trabalho e tenta compartilhar via Abrir em para o aplicativo gerenciado do iOS.  
 
@@ -105,7 +105,7 @@ Essa configuração de UPN do usuário é **necessária** para dispositivos gere
 1. Quando o aplicativo Word é iniciado, uma das duas experiências ocorre:
    1. Os dados são protegidos pelo aplicativo do Intune quando:
       - O usuário é conectado à sua conta corporativa que corresponde ao UPN da conta que você especificou nas definições de configuração do aplicativo Microsoft Word. 
-      - As configurações do aplicativo configurado pelo administrador se aplicam à conta de usuário no Microsoft Word.  Isso inclui definir a configuração **Receber dados de outros aplicativos** com o valor **Todos os aplicativos com dados da organização recebidos**.
+      - As definições do aplicativo configurado pelo administrador se aplicam à conta de usuário no Microsoft Word.  Isso inclui definir a configuração **Receber dados de outros aplicativos** com o valor **Todos os aplicativos com dados da organização recebidos**.
       - A transferência de dados é bem-sucedida e o documento é marcado como identidade corporativa no aplicativo.  O aplicativo do Intune protege as ações do usuário para o documento.
    1. Os dados **não** são protegidos pelo aplicativo do Intune quando:
       - O usuário **não** está conectado à sua conta corporativa.

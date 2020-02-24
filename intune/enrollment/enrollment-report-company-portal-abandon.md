@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure; get-started
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: ae3c2380aa27096be2490d2404858179ea9d222e
-ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
+ms.openlocfilehash: b7861d26650aaf74ea9c58608c33e72495244575
+ms.sourcegitcommit: 51591b862d97904291af7aa53a6eb341b11a761e
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "72503185"
+ms.lasthandoff: 02/17/2020
+ms.locfileid: "77414217"
 ---
 # <a name="incomplete-user-enrollments-report"></a>Relatório de registros de usuário incompletos
 
@@ -44,7 +44,7 @@ Se um usuário optar por interromper o registro e reiniciar várias vezes, ele s
 
 ## <a name="what-does-the-report-show"></a>O que o relatório mostra?
 
-Os relatórios incluem dados para dispositivos iOS e Android.
+Os relatórios incluem dados para dispositivos iOS/iPadOS e Android.
 
 Os relatórios mostram dados das últimas duas semanas, mas você pode filtrar o relatório para mostrar qualquer período de 30 dias no passado.
 
@@ -86,10 +86,10 @@ As tabelas a seguir mostram a lista de ações de usuário que se qualificam com
 
 | Nome da ação | Tela ou fluxo | Plataforma | Ação |
 | ---- |---- |---- |---- |
-| iOSProfileLaunch | Prompt para mostrar um perfil de configuração | iOS | **Ignorar** |
-| iOSProfileLaunch | Tela de instalação do perfil | iOS | **Cancelar** |
-| iOSProfileLaunch | Prompt para confiar na origem do perfil para registrar o dispositivo | iOS | **Cancelar** |
-| iOSProfileLaunch | Tela de instalar o perfil até o perfil ser instalado | iOS | Levou >30 minutos |
+| iOSProfileLaunch | Prompt para mostrar um perfil de configuração | iOS/iPadOS | **Ignorar** |
+| iOSProfileLaunch | Tela de instalação do perfil | iOS/iPadOS | **Cancelar** |
+| iOSProfileLaunch | Prompt para confiar na origem do perfil para registrar o dispositivo | iOS/iPadOS | **Cancelar** |
+| iOSProfileLaunch | Tela de instalar o perfil até o perfil ser instalado | iOS/iPadOS | Levou >30 minutos |
 | AndroidPermissions | Tela de ativação de administrador do dispositivo | Android | **Cancelar** |
 | AndroidPermissions | Do prompt para aprovação para fazer e gerenciar chamadas telefônicas até o administrador do dispositivo **Ativar** | Android | Levou >30 minutos |
 | KnoxActivation | Ativação de agente KLMS (somente Samsung) | Android| **Cancelar** |
