@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 7c72cf963822284702f6b924ca506f8ec1157e91
-ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
+ms.openlocfilehash: a03a92f715496b3c647a12bb99457d151ead54a3
+ms.sourcegitcommit: c780e9988341a20f94fdeb8672bd13e0b302da93
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "72505130"
+ms.lasthandoff: 02/20/2020
+ms.locfileid: "77514924"
 ---
 # <a name="determine-use-case-scenario-requirements"></a>Determinar os requisitos de cenários de caso de uso
 
@@ -35,13 +35,13 @@ Você também pode ter grupos organizacionais para o cenário de caso de uso cor
 
 Estes são alguns exemplos de requisitos de casos de uso de uma organização, mostrando diferentes conjuntos de requisitos para cada cenário de caso de uso e subcaso de uso, grupo organizacional e plataforma de dispositivo móvel. Também é possível usar a seguinte tabela para inserir os requisitos de caso de uso de sua organização:
 
-| **Casos de uso** | **Subcasos de uso** | **Grupos** | **Plataformas de dispositivos** | **Requisitos** |
+| **Casos de uso** | **Subcasos de uso** | **Grupos** | **Plataformas de dispositivos** | **Requirements** |
 |:---:|:---:|:---:|:---:|:---:|
-| Corporativo | Operador de informações | RH, Finanças | iOS | Email seguro, configurações de dispositivo, perfis, aplicativos |                                                          
-| Corporativo | Executivos | RH, Finanças | iOS | Email seguro, configurações de dispositivo, perfis, aplicativos |                                                         
+| Corporativo | Operador de informações | RH, Finanças | iOS/iPadOS | Email seguro, configurações de dispositivo, perfis, aplicativos |                                                          
+| Corporativo | Executivos | RH, Finanças | iOS/iPadOS | Email seguro, configurações de dispositivo, perfis, aplicativos |                                                         
 | Corporativo | Quiosque | Varejo | Android | Configurações de dispositivo, perfis, aplicativos |
-| BYOD | Operador de informações | Marketing, Vendas | iOS | Email seguro, configurações de dispositivo, perfis, aplicativos |                                                         
-| BYOD | Executivos | Marketing, Vendas | iOS | Email seguro, configurações de dispositivo, perfis, aplicativos |
+| BYOD | Operador de informações | Marketing, Vendas | iOS/iPadOS | Email seguro, configurações de dispositivo, perfis, aplicativos |                                                         
+| BYOD | Executivos | Marketing, Vendas | iOS/iPadOS | Email seguro, configurações de dispositivo, perfis, aplicativos |
 
 [Baixe um modelo da tabela acima](https://gallery.technet.microsoft.com/Intune-deployment-planning-fae156c2?redir=0) para inserir os requisitos de casos de uso e subcasos de uso de sua organização.
 

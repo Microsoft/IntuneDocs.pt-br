@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 946ce31c613ddb3c7dd2bf4dfde7561dd56e4ca0
-ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
+ms.openlocfilehash: a7aa439fcf60173cac71f0fc71ebac481660c785
+ms.sourcegitcommit: c780e9988341a20f94fdeb8672bd13e0b302da93
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "73414055"
+ms.lasthandoff: 02/20/2020
+ms.locfileid: "77514686"
 ---
 # <a name="what-to-expect-when-your-android-app-is-managed-by-app-protection-policies"></a>O que esperar quando seu aplicativo Android é gerenciado por políticas de proteção de aplicativo
 
@@ -81,4 +81,4 @@ Há suporte para os tipos de arquivo a seguir:
 |Pfile é um formato genérico “wrapper” para arquivos protegidos que encapsula o conteúdo criptografado e as licenças da Proteção de Informações do Azure. Ele pode ser usado para proteger qualquer tipo de arquivo.|
 
 ## <a name="next-steps"></a>Próximas etapas
-[O que esperar quando seu aplicativo iOS é gerenciado por políticas de proteção de aplicativo](end-user-mam-apps-ios.md)
+[O que esperar quando seu aplicativo iOS/iPadOS é gerenciado por políticas de proteção de aplicativo](end-user-mam-apps-ios.md)

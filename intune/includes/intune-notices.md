@@ -7,12 +7,12 @@ ms.topic: include
 ms.date: 11/19/2019
 ms.author: erikje
 ms.custom: include file
-ms.openlocfilehash: f23d81ddb07fcafb198cd725781747b61a3b73ea
-ms.sourcegitcommit: 67f926ba83f8a955e16b741a610ad84d6044f8f9
+ms.openlocfilehash: 373aeea9ab4fcbd075ac2ab18f205f3ddd191a39
+ms.sourcegitcommit: 29f3ba071c9348686d3ad6f3b8864d8557e05b97
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/21/2020
-ms.locfileid: "77529321"
+ms.lasthandoff: 02/26/2020
+ms.locfileid: "77609273"
 ---
 Esses avisos fornecem informações importantes que podem ajudar você a se preparar para os recursos e as alterações futuras do Intune.
 
@@ -84,7 +84,7 @@ O suporte ao gerenciamento de computador herdado será encerrado em 15 de outubr
 
 [Saiba mais](https://go.microsoft.com/fwlink/?linkid=2107122)
 
-### <a name="decreasing-support-for-android-device-administrator"></a>Redução do suporte para o administrador de dispositivos Android 
+### <a name="decreasing-support-for-android-device-administrator--5857738--"></a>Redução do suporte para o administrador de dispositivos Android<!--5857738-->
 O administrador de dispositivos Android (às vezes chamado de gerenciamento Android "herdado" e lançado com o Android 2.2) é uma maneira de gerenciar dispositivos Android. No entanto, a funcionalidade de gerenciamento aprimorada já está disponível com o [Android Enterprise](../enrollment/connect-intune-android-enterprise.md) (lançado com o Android 5.0). Em um esforço para migrar para um gerenciamento de dispositivo moderno, mais avançado e mais seguro, o Google tem reduzido o suporte do administrador de dispositivos em novos lançamentos do Android.
 
 #### <a name="how-does-this-affect-me"></a>Como isso me afeta?
@@ -108,24 +108,5 @@ Para evitar a redução da funcionalidade no terceiro trimestre de 2020, recomen
 - [Diretrizes do Google para a migração do administrador de dispositivos para o Android Enterprise](http://static.googleusercontent.com/media/android.com/en/enterprise/static/2016/pdfs/enterprise/Android-Enterprise-Migration-Bluebook_2019.pdf)
 - [Documentação do Google sobre o plano para substituir a API do administrador de dispositivos](https://developers.google.com/android/work/device-admin-deprecation)
 
-### <a name="plan-for-change-intune-app-sdk-and-app-protection-policies-for-android-moving-to-support-android-50-and-higher-in-an-upcoming-release---4911065---"></a>Planejar mudanças: O SDK de Aplicativo do Intune e as políticas de proteção de aplicativo para Android estão sendo migrados para oferecer suporte ao Android 5.0 e posteriores em uma versão futura <!--4911065 -->
-O Intune será migrado para oferecer suporte ao Android 5.x (Lollipop) e posteriores em uma versão futura. Atualize todos os aplicativos encapsulados com o SDK de Aplicativo do Intune mais recente e atualize seus dispositivos.
-
-#### <a name="how-does-this-affect-me"></a>Como isso me afeta?
-Caso você não esteja usando nem planeje usar o SDK ou Aplicativo para Android, essa alteração não afetará você. Se você estiver usando o SDK de Aplicativo do Intune, atualize para a versão mais recente e atualize também seus dispositivos para o Android 5.x e posterior. Se você não fizer a atualização, os aplicativos não receberão atualizações, e a qualidade da experiência diminuirá ao longo do tempo.
-
-Veja abaixo uma lista de dispositivos comuns registrados no Intune que executam o Android versão 4. x. Se você tiver um destes dispositivos, siga as etapas apropriadas para garantir que ele ofereça suporte à versão 5.0 ou posterior do Android ou que seja substituído por um dispositivo com suporte à versão 5.0 ou posterior do Android. Esta lista não está completa com todos os dispositivos que precisam ser avaliados:
-
-- Samsung SM-T561  
-- Samsung SM-T365
-- Samsung GT-I9195
-- Samsung SM-G800F
-- Samsung SM-G357FZ
-- Motorola XT1080
-- Samsung GT-I9305
-- Samsung SM-T231
-
-#### <a name="what-do-i-need-to-do-to-prepare-for-this-change"></a>O que preciso fazer para me preparar para essa alteração?
-Encapsule seus aplicativos com o SDK de Aplicativo do Intune mais recente. Você também pode definir a configuração de inicialização condicional "Exigir versão mínima do sistema operacional (somente aviso)" para notificar os usuários finais sobre dispositivos pessoais que serão atualizados.
 
 
