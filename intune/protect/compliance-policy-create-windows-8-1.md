@@ -77,7 +77,7 @@ Computadores com Windows 8.1 retornam a versão **3**. Se a regra de versão do 
   - Número mínimo de conjuntos de caracteres é maior que dois
 
 - **Tipo de senha**:  
-  Escolha se uma senha deve ter apenas caracteres **numéricos** ou se deve haver uma combinação de números e outros caracteres (alfanuméricos).
+  Escolha se uma senha deve ter apenas caracteres **numéricos** ou se deve haver uma combinação de números e outros caracteres (**alfanuméricos**).
 
   Quando definido como *alfanumérico*, a configuração a seguir está disponível.  
 
