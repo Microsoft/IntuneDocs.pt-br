@@ -39,6 +39,8 @@
   items:
     - name: O que é o Intune para Educação?
       href: introduction-intune-education.md
+    - name: O que é o Intune for US Government?
+      href: introduction-intune-government.md
     - name: Arquitetura de alto nível
       href: high-level-architecture.md
     - name: Ciclo de vida do dispositivo
