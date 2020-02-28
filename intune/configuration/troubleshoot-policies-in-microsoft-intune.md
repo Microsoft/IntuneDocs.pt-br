@@ -5,7 +5,7 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 11/05/2019
+ms.date: 02/18/2020
 ms.topic: troubleshooting
 ms.service: microsoft-intune
 ms.subservice: configuration
@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: a8768022872d32116add0ed4ea4caf1f8fcb800f
-ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
-ms.translationtype: MTE75
+ms.openlocfilehash: 9acb934cdf67aae9c18091a0340f27de635b5399
+ms.sourcegitcommit: c780e9988341a20f94fdeb8672bd13e0b302da93
+ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "74059280"
+ms.lasthandoff: 02/20/2020
+ms.locfileid: "77511010"
 ---
 # <a name="troubleshoot-policies-and-profiles-and-in-intune"></a>Solucionar problemas de políticas e de perfis e no Intune
 
@@ -31,13 +31,13 @@ O Microsoft Intune inclui alguns recursos internos de solução de problemas. Us
 
 Este artigo lista algumas técnicas de solução de problemas comuns e descreve alguns problemas que podem ocorrer.
 
-## <a name="check-tenant-status"></a>Verificar status do locatário
+## <a name="check-tenant-status"></a>Verificar o status do locatário
 
-Verifique o [status do locatário](../fundamentals/tenant-status.md) e confirme se a assinatura está ativa. Você também pode exibir detalhes de incidentes e avisos ativos que podem afetar sua política ou implantação de perfil.
+Verifique o [Status do Locatário](../fundamentals/tenant-status.md) e confirme se a assinatura está Ativa. Você também pode ver detalhes de consultorias e incidentes ativos que podem afetar sua implantação de política ou de perfil.
 
 ## <a name="use-built-in-troubleshooting"></a>Usar a solução de problemas interna
 
-1. No [centro de administração do Microsoft Endpoint Manager](https://go.microsoft.com/fwlink/?linkid=2109431), selecione **solução de problemas + suporte**:
+1. No [centro de administração do Microsoft Endpoint Manager](https://go.microsoft.com/fwlink/?linkid=2109431), selecione **Solução de problemas + suporte**:
 
     ![No Intune, vá para Ajuda e Suporte e selecione Solucionar problemas](./media/troubleshoot-policies-in-microsoft-intune/help-and-support-troubleshoot.png)
 
@@ -53,31 +53,31 @@ Verifique o [status do locatário](../fundamentals/tenant-status.md) e confirme 
 
 4. Sob **Dispositivos**, localize o dispositivo com um problema. Examine as colunas diferentes:
 
-    - **Gerenciado**: para um dispositivo receber políticas de conformidade ou de configuração, essa propriedade deve mostrar **MDM** ou **EAS/MDM**.
+    - **Gerenciados**: Para um dispositivo receber políticas de conformidade ou de configuração, essa propriedade deve mostrar **MDM** ou **EAS/MDM**.
 
         - Se **Gerenciados** não está definido como **MDM** ou **EAS/MDM**, o dispositivo não está registrado. Ele não recebe as políticas de conformidade ou de configuração até que seja registrado.
 
         - Políticas de proteção de aplicativo (gerenciamento de aplicativos móveis) não exigem que os dispositivos sejam registrados. Para obter mais informações, veja [criar e atribuir políticas de proteção de aplicativo](../apps/app-protection-policies.md).
 
-    - **Tipo de Junção do Azure AD**: deve ser definido como **Workplace** ou **AzureAD**.
+    - **Tipo de Ingresso no Azure AD**: Deve ser definido como **Local de trabalho** ou **AzureAD**.
  
         - Se essa coluna é **Não Registrado**, pode haver um problema com o registro. Normalmente, cancelar o registro do dispositivo e registrá-lo novamente resolve esse estado.
 
-    - **Em conformidade com o Intune**: deve ser **Sim**. Se **Não** é mostrado, pode haver um problema com as políticas de conformidade, ou o dispositivo não está se conectando ao serviço do Intune. Por exemplo, o dispositivo pode estar desativado ou pode não ter uma conexão de rede. Eventualmente, o dispositivo se torna não compatível possivelmente após 30 dias.
+    - **Conformidade com o Intune**: Deve ser **Sim**. Se **Não** é mostrado, pode haver um problema com as políticas de conformidade, ou o dispositivo não está se conectando ao serviço do Intune. Por exemplo, o dispositivo pode estar desativado ou pode não ter uma conexão de rede. Eventualmente, o dispositivo se torna não compatível possivelmente após 30 dias.
 
         Para mais informações, consulte [introdução às políticas de conformidade do dispositivo](../protect/device-compliance-get-started.md).
 
-    - **Em conformidade com Azure AD**: deve ser **Sim**. Se **Não** é mostrado, pode haver um problema com as políticas de conformidade, ou o dispositivo não está se conectando ao serviço do Intune. Por exemplo, o dispositivo pode estar desativado ou pode não ter uma conexão de rede. Eventualmente, o dispositivo se torna não compatível possivelmente após 30 dias.
+    - **Em conformidade com o Azure AD**: Deve ser **Sim**. Se **Não** é mostrado, pode haver um problema com as políticas de conformidade, ou o dispositivo não está se conectando ao serviço do Intune. Por exemplo, o dispositivo pode estar desativado ou pode não ter uma conexão de rede. Eventualmente, o dispositivo se torna não compatível possivelmente após 30 dias.
 
         Para mais informações, consulte [introdução às políticas de conformidade do dispositivo](../protect/device-compliance-get-started.md).
 
-    - **Último check-in**: deve ser uma data e hora recentes. Por padrão, os dispositivos do Intune fazem check-in a cada 8 horas.
+    - **Último Check-in**: Deve ser em uma hora e data recentes. Por padrão, os dispositivos do Intune fazem check-in a cada 8 horas.
 
         - Se o **Último check-in** for há mais de 24 horas, pode haver um problema com o dispositivo. Um dispositivo que não faz check-in não pode receber as políticas do Intune.
 
         - Para forçar o check-in:
             - Em dispositivos Android, abra o aplicativo Portal da Empresa > **Dispositivos** > Escolha o dispositivo na lista > **Verificar configurações de dispositivo**.
-            - Em dispositivos iOS, abra o aplicativo Portal da Empresa > **Dispositivos** > Escolha o dispositivo na lista > **Verificar configurações**.
+            - Em dispositivos iOS/iPadOS, abra o aplicativo Portal da Empresa > **Dispositivos** > Escolha o dispositivo na lista > **Verificar Configurações**.
 
         - Em um dispositivo Windows, abra as **Configurações** > **Contas** > **Acesso corporativo ou de estudante** > Selecione a conta ou registro MDM > **Info** > **sincronização**.
 
@@ -91,10 +91,10 @@ Verifique o [status do locatário](../fundamentals/tenant-status.md) e confirme 
 
         **Estados de Política**:
 
-        - **Não se Aplica**: não há suporte para essa política nesta plataforma. Por exemplo, políticas de iOS não funcionam no Android. As políticas do Samsung KNOX não funcionam em dispositivos do Windows.
-        - **Conflito**: há uma configuração existente no dispositivo que o Intune não pode substituir. Ou você implantou duas políticas com a mesma configuração usando valores diferentes.
-        - **Pendente**: o dispositivo ainda não fez a verificação no Intune para obter a política. Ou o dispositivo recebeu a política, mas não relatou o status para o Intune.
-        - **Erros**: pesquisar erros e possíveis resoluções em [Solucionar problemas de acesso de recursos da empresa](../fundamentals/troubleshoot-company-resource-access-problems.md).
+        - **Não Aplicável**: Essa política não tem suporte nesta plataforma. Por exemplo, políticas de iOS/iPadOS não funcionam no Android. As políticas do Samsung KNOX não funcionam em dispositivos do Windows.
+        - **Conflito**: Há uma configuração existente no dispositivo que o Intune não pode substituir. Ou você implantou duas políticas com a mesma configuração usando valores diferentes.
+        - **Pendente**: O dispositivo ainda não fez a verificação no Intune para obter a política. Ou o dispositivo recebeu a política, mas não relatou o status para o Intune.
+        - **Erros**: Pesquisar erros e possíveis resoluções em [Solucionar problemas de acesso de recursos da empresa](../fundamentals/troubleshoot-company-resource-access-problems.md).
 
         **Links Úteis**: 
 
@@ -108,27 +108,27 @@ Verifique o [status do locatário](../fundamentals/tenant-status.md) e confirme 
 
     Todos os dispositivos listam seus perfis. Cada perfil tem um **Status**. O status se aplica quando todos os perfis atribuídos, incluindo requisitos de hardware e restrições do sistema operacional, são considerados em conjunto. Os status possíveis incluem:
 
-    - **Em conformidade**: o dispositivo recebeu o perfil e relata ao Intune que ele está em conformidade com a configuração.
+    - **Em conformidade**: O dispositivo recebeu o perfil e relata ao Intune que ele está em conformidade com a configuração.
 
-    - **Não aplicável**: a configuração do perfil não é aplicável. Por exemplo, configurações de email para dispositivos iOS não se aplicam a um dispositivo Android.
+    - **Não aplicável**: A configuração do perfil não é aplicável. Por exemplo, configurações de email para dispositivos iOS/iPadOS não se aplicam a um dispositivo Android.
 
-    - **Pendente**: o perfil é enviado para o dispositivo, mas não relatou o status para o Intune. Por exemplo, a criptografia no Android exige que o usuário habilite a criptografia e, portanto, pode ser mostrada como pendente.
+    - **Pendente**: O perfil é enviado para o dispositivo, mas não relatou o status para o Intune. Por exemplo, a criptografia no Android exige que o usuário habilite a criptografia e, portanto, pode ser mostrada como pendente.
 
-**Link útil**: [Monitorar perfis de configuração de dispositivo](../configuration/device-profile-monitor.md)
+**Links Úteis**: [Monitorar perfis de configuração de dispositivo](../configuration/device-profile-monitor.md)
 
 > [!NOTE]
 > Quando duas políticas com diferentes níveis de restrição aplicam-se ao mesmo dispositivo ou usuário, a política mais restritiva é aplicada.
 
 ## <a name="policy-troubleshooting-resources"></a>Recursos de solução de problemas de políticas
 
-- [Solução de problemas de políticas do Ios ou Android que não se aplicam a dispositivos](https://techcommunity.microsoft.com/t5/Intune-Customer-Success/Support-tip-Troubleshooting-iOS-or-Android-policies-not-applying/ba-p/280154) (abre outro site da Microsoft)
-- [Solucionando problemas de falhas de política do Windows 10 Intune](https://blogs.technet.microsoft.com/configmgrdogs/2018/08/09/troubleshooting-windows-10-intune-policy-failures/) (abre um blog)
+- [Solução de problemas de políticas do iOS/iPadOS ou Android que não se aplicam a dispositivos](https://techcommunity.microsoft.com/t5/Intune-Customer-Success/Support-tip-Troubleshooting-iOS-or-Android-policies-not-applying/ba-p/280154) (abre outro site da Microsoft)
+- [Solucionar problemas de falhas de política do Intune do Windows 10](https://blogs.technet.microsoft.com/configmgrdogs/2018/08/09/troubleshooting-windows-10-intune-policy-failures/) (abre um blog)
 - [Solucionar problemas de configurações personalizadas do CSP para Windows 10](https://support.microsoft.com/en-us/help/4055338/troubleshoot-csp-setting-windows-10-computer-intune) (abre outro site da Microsoft)
-- [Política de MDM do Windows 10 política de grupo vs Intune](https://blogs.technet.microsoft.com/cbernier/2018/04/02/windows-10-group-policy-vs-intune-mdm-policy-who-wins/) (abre outro site da Microsoft)
+- [Política de Grupo do Windows 10 versus política de MDM do Intune](https://blogs.technet.microsoft.com/cbernier/2018/04/02/windows-10-group-policy-vs-intune-mdm-policy-who-wins/) (abre outro site da Microsoft)
 
 ## <a name="alert-saving-of-access-rules-to-exchange-has-failed"></a>Alerta: falha ao salvar regras de acesso ao Exchange
 
-**Problema**: você recebe o alerta **Falha ao salvar as regras de acesso ao Exchange** no console do administrador.
+**Problema**: Você recebe o alerta **Falha ao salvar as Regras de Acesso ao Exchange** no console do administrador.
 
 Se você criar políticas no workspace de Políticas do Exchange Local (Console de Administração), mas estiver usando o O365, as configurações definidas para a política não serão impostas pelo Intune. No alerta, observe a origem da política. No workspace de Políticas do Exchange Local, exclua as regras herdadas. Elas são regras globais do Exchange no Intune para o Exchange local e não são relevantes para o O365. Em seguida, crie uma nova política para o O365.
 
@@ -138,13 +138,13 @@ Se você criar políticas no workspace de Políticas do Exchange Local (Console 
 
 Os dispositivos Windows Phone não permitem que as políticas de segurança definidas com uso de MDM ou EAS sejam reduzidas em termos de segurança após terem sido configuradas. Por exemplo, você define uma **Senha com um número mínimo de caracteres** igual a 8 e, em seguida, tenta reduzi-la a 4. A política mais restritiva já foi aplicada ao dispositivo.
 
-Dispositivos Windows 10 não podem remover políticas de segurança quando você não atribui a política (parar a implantação). Talvez seja necessário deixar a política atribuída e, em seguida, alterar as configurações de segurança de volta para os valores padrão.
+Dispositivos Windows 10 não podem remover políticas de segurança quando você cancela a atribuição da política (parar a implantação). Talvez seja necessário deixar a política atribuída e, em seguida, alterar as configurações de segurança de volta para os valores padrão.
 
 Dependendo da plataforma do dispositivo, se você quer alterar a política para um valor menos seguro, pode ser necessário redefinir as políticas de segurança.
 
 Por exemplo, no Windows 8.1, na área de trabalho, passe o dedo da direita para a esquerda para abrir a barra **Botões**. Escolha **Configurações** > **Painel de Controle** > **Contas de Usuário**. À esquerda, selecione o link **Redefinir Políticas de Segurança** e, em seguida, escolha **Redefinir Políticas**.
 
-Para aplicar uma política menos restritiva a outras plataformas, como Android, iOS e Windows Phone 8.1, pode ser necessário desativá-los e registrá-los novamente.
+Para aplicar uma política menos restritiva a outras plataformas, como Android, iOS/iPadOS e Windows Phone 8.1, pode ser necessário desativá-las e registrá-las novamente.
 
 [Solucionar problemas de registro de dispositivo](../enrollment/troubleshoot-device-enrollment-in-intune.md) pode ser um bom recurso.
 

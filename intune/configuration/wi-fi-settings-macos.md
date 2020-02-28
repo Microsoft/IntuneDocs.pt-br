@@ -6,7 +6,7 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 09/09/2019
+ms.date: 02/18/2020
 ms.topic: reference
 ms.service: microsoft-intune
 ms.subservice: configuration
@@ -16,16 +16,14 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: a479bfa7b6a572ab2191fb651ce04145d8508c4b
-ms.sourcegitcommit: e166b9746fcf0e710e93ad012d2f52e2d3ed2644
-ms.translationtype: MTE75
+ms.openlocfilehash: 8aa9fa9462b6278da566a3ff54264540144a38de
+ms.sourcegitcommit: c780e9988341a20f94fdeb8672bd13e0b302da93
+ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/19/2019
-ms.locfileid: "75206985"
+ms.lasthandoff: 02/20/2020
+ms.locfileid: "77512255"
 ---
 # <a name="add-wi-fi-settings-for-macos-devices-in-microsoft-intune"></a>Adicionar configurações de Wi-Fi para dispositivos macOS no Microsoft Intune
-
-
 
 Você pode criar um perfil com configurações de Wi-Fi específicas e implantar esse perfil em seus dispositivos macOS. O Microsoft Intune oferece muitos recursos, incluindo autenticação em sua rede, adição de um certificado PKS ou SCEP e muito mais.
 
@@ -38,7 +36,7 @@ Este artigo descreve essas configurações.
 [Criar um perfil de dispositivo](device-profile-create.md).
 
 > [!NOTE]
-> Essas configurações estão disponíveis para todos os tipos de registro. Para obter mais informações sobre os tipos de registro, consulte [registro do MacOS](../enrollment/macos-enroll.md).
+> Essas configurações estão disponíveis para todos os tipos de registro. Para obter mais informações sobre os tipos de registro, confira [Registro do macOS](../enrollment/macos-enroll.md).
 
 ## <a name="basic-profiles"></a>Perfis básicos
 
@@ -122,4 +120,4 @@ Este artigo descreve essas configurações.
 
 O perfil foi criado, mas não está fazendo nada. Em seguida, [atribua este perfil](device-profile-assign.md) e [monitore seu status](device-profile-monitor.md).
 
-Defina as configurações de Wi-Fi em dispositivos [Android](wi-fi-settings-android.md), [Android Enterprise](wi-fi-settings-android-enterprise.md), [Ios](wi-fi-settings-ios.md)e [Windows 10](wi-fi-settings-windows.md) .
+Defina as configurações de Wi-Fi em dispositivos [Android](wi-fi-settings-android.md), [Android Enterprise](wi-fi-settings-android-enterprise.md), [iOS/iPadOS](wi-fi-settings-ios.md) e [Windows 10](wi-fi-settings-windows.md).

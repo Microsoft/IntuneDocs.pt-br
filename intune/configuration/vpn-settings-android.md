@@ -5,7 +5,7 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 08/06/2019
+ms.date: 02/18/2020
 ms.topic: reference
 ms.service: microsoft-intune
 ms.subservice: configuration
@@ -15,22 +15,20 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 458c38e4cce7022d7a56e86cc171365f1496741e
-ms.sourcegitcommit: e166b9746fcf0e710e93ad012d2f52e2d3ed2644
-ms.translationtype: MTE75
+ms.openlocfilehash: 3f82cc74aa2e351ee63ffba2629e9ddddb57fc76
+ms.sourcegitcommit: c780e9988341a20f94fdeb8672bd13e0b302da93
+ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/19/2019
-ms.locfileid: "75206288"
+ms.lasthandoff: 02/20/2020
+ms.locfileid: "77512510"
 ---
 # <a name="android-device-settings-to-configure-vpn-in-intune"></a>Configurações do dispositivo Android para configurar a VPN no Intune
-
-
 
 Este artigo lista e descreve as diferentes configurações de conexão VPN que você pode controlar em dispositivos Android. Como parte da sua solução de MDM (gerenciamento de dispositivo móvel), use essas configurações para criar uma conexão VPN, escolha como a VPN é autenticada, selecione um tipo de servidor VPN e muito mais.
 
 Como administrador do Intune, você pode criar e atribuir configurações de VPN a dispositivos Android. 
 
-Para saber mais sobre perfis de VPN no Intune, confira [perfis de VPN](vpn-settings-configure.md).
+Para saber mais sobre perfis de VPN no Intune, confira [Perfis de VPN](vpn-settings-configure.md).
 
 ## <a name="before-you-begin"></a>Antes de começar
 
@@ -55,15 +53,15 @@ Para saber mais sobre perfis de VPN no Intune, confira [perfis de VPN](vpn-setti
   - **Pulse Secure**
   - **SSO da Citrix**
 
-- **Impressão digital** (somente VPN do Check Point Capsule): insira uma cadeia de caracteres, como **Código de impressões digitais da Contoso**, para verificar se o servidor VPN é confiável. Uma impressão digital é enviada ao cliente para que o cliente saiba confiar em qualquer servidor que tenha a mesma impressão digital. Se o dispositivo não tiver a impressão digital, ele solicitará ao usuário para que ele confie no servidor VPN enquanto mostra a impressão digital. O usuário verifica manualmente a impressão digital e escolhe confiar para se conectar.
+- **Impressão digital** (somente VPN do Check Point Capsule): insira uma cadeia de caracteres, como **Código de impressões digitais da Contoso**, para verificar se o servidor VPN é confiável. Uma impressão digital é enviada ao cliente para que ele saiba que pode confiar em qualquer servidor que tiver a mesma impressão digital. Se o dispositivo não tiver a impressão digital, ele solicitará ao usuário para que ele confie no servidor VPN enquanto mostra a impressão digital. O usuário verifica manualmente a impressão digital e escolhe confiar para se conectar.
 - **Inserir pares de chave e valor para os atributos de VPN da Citrix** (somente Citrix): insira pares de chave e valor fornecidos pela Citrix. Esses valores configuram as propriedades da conexão de VPN. 
 
-  Você também pode **importar** um arquivo de valores separados por vírgula (. csv) com chaves e pares de valores. Certifique-se de examinar os **meus dados tem cabeçalhos** e propriedades de **chave** .
+  Você também pode **importar** um arquivo .csv (valores separados por vírgula) com chaves e pares de valores. Lembre-se de examinar as propriedades **Meus dados contêm cabeçalhos** e **Chave**.
 
-  Depois de adicionar os pares de chave e valores, use **Exportar** para fazer backup dos dados em um arquivo. csv.
+  Depois de adicionar os pares de chave e valores, use **Exportar** para fazer backup dos dados em um arquivo .csv.
 
 ## <a name="next-steps"></a>Próximas etapas
 
 [Atribuir o perfil](device-profile-assign.md) e [monitorar seu status](device-profile-monitor.md).
 
-Você também pode criar perfis de VPN para dispositivos [Android Enterprise](vpn-settings-android-enterprise.md), [Ios](vpn-settings-ios.md), [MacOS](vpn-settings-macos.md), [Windows 10 e posterior](vpn-settings-windows-10.md), [Windows 8.1](vpn-settings-windows-8-1.md)e [Windows Phone 8,1](vpn-settings-windows-phone-8-1.md) .
+Você também pode criar perfis de VPN para dispositivos [Android Enterprise](vpn-settings-android-enterprise.md), [iOS/iPadOS](vpn-settings-ios.md), [macOS](vpn-settings-macos.md), [Windows 10 e posterior](vpn-settings-windows-10.md), [Windows 8.1](vpn-settings-windows-8-1.md) e [Windows Phone 8.1](vpn-settings-windows-phone-8-1.md).

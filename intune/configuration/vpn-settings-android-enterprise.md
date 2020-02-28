@@ -5,7 +5,7 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 08/06/2019
+ms.date: 02/18/2020
 ms.topic: reference
 ms.service: microsoft-intune
 ms.subservice: configuration
@@ -15,25 +15,23 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: a0c11be374e36ec32feb9540f6cfd4f1bc794e9c
-ms.sourcegitcommit: e166b9746fcf0e710e93ad012d2f52e2d3ed2644
-ms.translationtype: MTE75
+ms.openlocfilehash: 81300651355e52f438ea2a314eeb1d0d48e3fcbc
+ms.sourcegitcommit: c780e9988341a20f94fdeb8672bd13e0b302da93
+ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/19/2019
-ms.locfileid: "75206305"
+ms.lasthandoff: 02/20/2020
+ms.locfileid: "77510857"
 ---
 # <a name="android-enterprise-device-settings-to-configure-vpn-in-intune"></a>Configurações de dispositivo do Android Enterprise para configurar a VPN no Intune
-
-
 
 Este artigo lista e descreve as diferentes configurações de conexão VPN que você pode controlar em dispositivos Android Enterprise. Como parte da sua solução de MDM (gerenciamento de dispositivo móvel), use essas configurações para criar uma conexão VPN, escolha como a VPN é autenticada, selecione um tipo de servidor VPN e muito mais.
 
 Como administrador do Intune, você pode criar e atribuir configurações de VPN a dispositivos Android Enterprise. 
 
-Para saber mais sobre perfis de VPN no Intune, confira [perfis de VPN](vpn-settings-configure.md).
+Para saber mais sobre perfis de VPN no Intune, confira [Perfis de VPN](vpn-settings-configure.md).
 
 > [!NOTE]
-> Para configurar a VPN Always on, você precisa criar um perfil de VPN e também criar um perfil de [restrições de dispositivo](device-restrictions-android-for-work.md#connectivity) com a configuração de VPN AlwaysOn configurada.
+> Para configurar a VPN sempre ativada, você precisa criar um perfil de VPN e também criar um perfil de [restrições de dispositivo](device-restrictions-android-for-work.md#connectivity) com a configuração de VPN sempre ativada configurada.
 
 ## <a name="before-you-begin"></a>Antes de começar
 
@@ -77,4 +75,4 @@ Para saber mais sobre perfis de VPN no Intune, confira [perfis de VPN](vpn-setti
 
 [Atribuir o perfil](device-profile-assign.md) e [monitorar seu status](device-profile-monitor.md).
 
-Você também pode criar perfis de VPN para dispositivos [Android](vpn-settings-android.md), [Ios](vpn-settings-ios.md), [MacOS](vpn-settings-macos.md), [Windows 10 e posterior](vpn-settings-windows-10.md), [Windows 8.1](vpn-settings-windows-8-1.md)e [Windows Phone 8,1](vpn-settings-windows-phone-8-1.md) .
+Você também pode criar perfis de VPN para dispositivos [Android](vpn-settings-android.md), [iOS/iPadOS](vpn-settings-ios.md), [macOS](vpn-settings-macos.md), [Windows 10 e posterior](vpn-settings-windows-10.md), [Windows 8.1](vpn-settings-windows-8-1.md) e [Windows Phone 8.1](vpn-settings-windows-phone-8-1.md).

@@ -6,7 +6,7 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 06/26/2019
+ms.date: 02/18/2020
 ms.topic: reference
 ms.service: microsoft-intune
 ms.subservice: configuration
@@ -16,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 5c24c120b033a4db0162e985ef185932dd931eda
-ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
-ms.translationtype: MTE75
+ms.openlocfilehash: 492c90bc1d032b32ebc3a4b8465163085674f245
+ms.sourcegitcommit: c780e9988341a20f94fdeb8672bd13e0b302da93
+ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "72506928"
+ms.lasthandoff: 02/20/2020
+ms.locfileid: "77511439"
 ---
 # <a name="use-custom-settings-for-macos-devices-in-microsoft-intune"></a>Usar configurações personalizadas para dispositivos macOS no Microsoft Intune
 
@@ -32,9 +32,9 @@ Ao usar dispositivos macOS, há duas maneiras de obter as configurações person
 - [Apple Configurator](https://itunes.apple.com/app/apple-configurator-2/id1037126344?mt=12)
 - [Gerenciador de Perfis da Apple](https://support.apple.com/profile-manager)
 
-Você pode usar essas ferramentas para exportar as configurações para um perfil de configuração. No Intune, você deve importar esse arquivo e, em seguida, atribuir o perfil aos seus usuários e dispositivos macOS. Depois de atribuídas, as configurações são distribuídas. Eles também criam uma linha de base ou padrão para macOS em sua organização.
+Você pode usar essas ferramentas para exportar as configurações para um perfil de configuração. No Intune, você deve importar esse arquivo e, em seguida, atribuir o perfil aos seus usuários e dispositivos macOS. Depois de atribuídas, as configurações são distribuídas. Elas também criam uma linha de base ou padrão para macOS em sua organização.
 
-Este artigo fornece algumas diretrizes sobre como usar o Apple Configurator e o Apple Profile Manager e descreve as propriedades que você pode configurar.
+Este artigo fornece algumas diretrizes sobre como usar o Apple Configurator e o Gerenciador de Perfis da Apple e descreve as propriedades que você pode configurar.
 
 ## <a name="before-you-begin"></a>Antes de começar
 
@@ -56,13 +56,13 @@ Este artigo fornece algumas diretrizes sobre como usar o Apple Configurator e o 
 
 ## <a name="custom-configuration-profile-settings"></a>Definições do perfil de configuração personalizada
 
-- **Nome do perfil de configuração personalizada**: insira um nome para a política. Esse nome é mostrado no dispositivo e no status do Intune.
+- **Nome do perfil de configuração personalizado**: Insira um nome para a política. Esse nome é mostrado no dispositivo e no status do Intune.
 - **Arquivo do perfil de configuração**: navegue até o perfil de configuração que você criou usando o Apple Configurator ou o Gerenciador de Perfis da Apple. O arquivo importado é mostrado na área **Conteúdos do arquivo**.
 
-  Você também pode adicionar tokens de dispositivo aos seus arquivos de `.mobileconfig`. Os tokens de dispositivo são usados para adicionar informações específicas do dispositivo. Por exemplo, para mostrar o número de série, insira `{{serialnumber}}`. No dispositivo, o texto é exibido de forma semelhante a `123456789ABC`, que é exclusivo para cada dispositivo. Ao inserir variáveis, lembre-se de usar chaves `{{ }}`. [Tokens de configuração de aplicativo](../apps/app-configuration-policies-use-ios.md#tokens-used-in-the-property-list) inclui uma lista das variáveis que podem ser usadas. Use também `deviceid` ou qualquer outro valor específico do dispositivo.
+  Você também pode adicionar tokens de dispositivo aos seus arquivos `.mobileconfig`. Os tokens de dispositivo são usados para adicionar informações específicas do dispositivo. Por exemplo, para mostrar o número de série, insira `{{serialnumber}}`. No dispositivo, o texto é exibido de maneira semelhante a `123456789ABC`, que é exclusivo para cada dispositivo. Ao inserir variáveis, lembre-se de usar chaves `{{ }}`. [Tokens de configuração de aplicativo](../apps/app-configuration-policies-use-ios.md#tokens-used-in-the-property-list) inclui uma lista das variáveis que podem ser usadas. Use também `deviceid` ou qualquer outro valor específico do dispositivo.
 
   > [!NOTE]
-  > As variáveis não são validadas na interface do usuário e diferenciam maiúsculas de minúsculas. Como resultado, você pode ver perfis salvos com uma entrada incorreta. Por exemplo, se você digitar `{{DeviceID}}` em vez de `{{deviceid}}`, a cadeia de caracteres literal será mostrada no lugar do ID exclusivo do dispositivo. Certifique-se de inserir as informações corretas.
+  > As variáveis não são validadas na interface do usuário e diferenciam maiúsculas de minúsculas. Como resultado, você pode ver perfis salvos com uma entrada incorreta. Por exemplo, se você digitar `{{DeviceID}}` em vez de `{{deviceid}}`, a cadeia de caracteres literal será mostrada no lugar do ID exclusivo do dispositivo. Insira as informações corretas.
 
 Selecione **OK** > **Criar** para salvar suas alterações. O perfil é criado e exibido na lista de perfis.
 
@@ -70,4 +70,4 @@ Selecione **OK** > **Criar** para salvar suas alterações. O perfil é criado e
 
 O perfil foi criado, mas não está fazendo nada ainda. Em seguida, [atribua o perfil](device-profile-assign.md).
 
-Veja como [criar o perfil em dispositivos iOS](../custom-settings-ios.md).
+Veja como [criar o perfil em dispositivos iOS/iPadOS](../custom-settings-ios.md).

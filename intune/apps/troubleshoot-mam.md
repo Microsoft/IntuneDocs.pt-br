@@ -17,16 +17,16 @@ ms.reviewer: mghadial
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 49bf59805476ebbcce3148738e40bfd11e4744eb
-ms.sourcegitcommit: 637375a390b6e34f9c4415c77b99fe2980bbf554
-ms.translationtype: MTE75
+ms.openlocfilehash: f5d5d62e1e05c8e29de1b5dba91647f2bfc3b186
+ms.sourcegitcommit: c780e9988341a20f94fdeb8672bd13e0b302da93
+ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/10/2020
-ms.locfileid: "75839324"
+ms.lasthandoff: 02/20/2020
+ms.locfileid: "77513326"
 ---
 # <a name="troubleshoot-mobile-application-management"></a>Solucionar problemas do gerenciamento de aplicativos móveis
 
-Este tópico fornece soluções para problemas comuns que ocorreram ao usar Proteção de Aplicativo do Intune (também conhecido como gerenciamento de aplicativo móvel ou MAM).
+Este tópico fornece soluções para problemas comuns que ocorreram ao usar a Proteção de Aplicativo do Intune (também chamada de MAM ou gerenciamento de aplicativo móvel).
 
 Se essas informações não resolverem seu problema, confira [How to get support for Microsoft Intune](../fundamentals/get-support.md) (Como obter suporte para o Microsoft Intune) para encontrar outras formas de obter ajuda.
 
@@ -36,13 +36,13 @@ Esses são problemas comuns que um administrador de TI pode enfrentar ao usar a 
 
 | Problema | Descrição | Resolução |
 | -- | -- | -- |
-| A política não é aplicada ao Skype for Business | A política de proteção do aplicativo sem registro de dispositivo, feita no Portal do Azure, não está sendo aplicada ao aplicativo Skype for Business em dispositivos iOS e Android. | O Skype for Business deve ser configurado para a autenticação moderna.  Siga as instruções em [Habilitar o locatário para autenticação moderna](https://social.technet.microsoft.com/wiki/contents/articles/34339.skype-for-business-online-enable-your-tenant-for-modern-authentication.aspx) para configurar a autenticação moderna para o Skype. |
+| A política não é aplicada ao Skype for Business | A política de proteção do aplicativo sem registro de dispositivo, feita no Portal do Azure, não está sendo aplicada ao aplicativo Skype for Business em dispositivos iOS/iPadOS e Android. | O Skype for Business deve ser configurado para a autenticação moderna.  Siga as instruções em [Habilitar o locatário para autenticação moderna](https://social.technet.microsoft.com/wiki/contents/articles/34339.skype-for-business-online-enable-your-tenant-for-modern-authentication.aspx) para configurar a autenticação moderna para o Skype. |
 | Política de aplicativos do Office não aplicada | As políticas de proteção do aplicativo não estão sendo aplicadas aos [aplicativos do Office com suporte](https://www.microsoft.com/cloud-platform/microsoft-intune-partners) de nenhum usuário. | Confirme se o usuário está licenciado para o Intune e se os aplicativos do Office são afetados por uma política de proteção do aplicativo implantada. A aplicação de uma política de proteção de aplicativo implantada recentemente pode levar até 8 horas. |
 | O administrador não pode configurar a política de proteção do aplicativo no Portal do Azure | O usuário administrador de TI não consegue configurar políticas de proteção do aplicativo no portal do Azure. | As funções de usuário a seguir têm acesso ao portal do Azure: <ul><li>Administrador global, que pode ser configurada no [Centro de administração do Microsoft 365](https://admin.microsoft.com/)</li><li>Proprietário, que pode ser configurada no [portal do Azure](https://portal.azure.com/).</li><li>Colaborador, que pode ser configurada no [portal do Azure](https://portal.azure.com/).</li></ul> Para obter ajuda sobre como configurar essas funções, confira [RBAC (controle de administração baseado em funções) com o Microsoft Intune](../fundamentals/role-based-access-control.md).|
 |Contas de usuário ausentes dos relatórios da política de proteção do aplicativo | Os relatórios do console do administração não mostram as contas de usuário nas quais a política de proteção do aplicativo foi implantada recentemente. | Se uma política de proteção do aplicativo for destinada a um usuário recentemente, poderá levar até 24 horas para que esse usuário seja mostrado nos relatórios como um usuário de destino. |
 | As alterações da política não funcionam | As alterações e atualizações da política de proteção do aplicativo podem levar até 8 horas para serem aplicadas. | Se aplicável, o usuário final poderá fazer logoff do aplicativo e fazer logon novamente para forçar a sincronização com o serviço. |
-| A política de proteção do aplicativo não funciona com o DEP | A política de proteção do aplicativo não está sendo aplicada a dispositivos Apple DEP. | Garanta que você está usando a Afinidade de Usuário com o Apple DEP (Programa de Registro de Dispositivos). A afinidade de usuário é necessária para qualquer aplicativo que exigir a autenticação do usuário no DEP. <br><br>Para saber mais sobre o registro de DEP do iOS, confira [Registrar automaticamente dispositivos iOS com o Programa de registro de dispositivos da Apple](../enrollment/device-enrollment-program-enroll-ios.md).|
-| A política de transferência de dados não funciona com o iOS | As políticas **Permitir que o aplicativo transfira dados para outros aplicativos** e **Permitir que o aplicativo receba dados de outros aplicativos** não gerenciam a transferência de dados no iOS com êxito. | Confira [Como gerenciar a transferência de dados entre aplicativos iOS no Microsoft Intune](data-transfer-between-apps-manage-ios.md). |
+| A política de proteção do aplicativo não funciona com o DEP | A política de proteção do aplicativo não está sendo aplicada a dispositivos Apple DEP. | Garanta que você está usando a Afinidade de Usuário com o Apple DEP (Programa de Registro de Dispositivos). A afinidade de usuário é necessária para qualquer aplicativo que exigir a autenticação do usuário no DEP. <br><br>Para saber mais sobre o registro de DEP do iOS/iPadOS, confira [Registrar automaticamente dispositivos iOS/iPadOS com o Programa de registro de dispositivos da Apple](../enrollment/device-enrollment-program-enroll-ios.md).|
+| A política de transferência de dados não funciona com o iOS/iPadOS | As políticas **Permitir que o aplicativo transfira dados para outros aplicativos** e **Permitir que o aplicativo receba dados de outros aplicativos** não gerenciam a transferência de dados no iOS/iPadOS com êxito. | Confira [Como gerenciar a transferência de dados entre aplicativos iOS/iPadOS no Microsoft Intune](data-transfer-between-apps-manage-ios.md). |
 
 ## <a name="common-end-user-issues"></a>Problemas comuns do usuário final
 
@@ -58,15 +58,15 @@ Os problemas comuns do usuário final são divididos nas seguintes categorias:
 
 Plataforma | Cenário | Explicação |
 ---| --- | --- |
-iOS | O usuário final pode usar a extensão de compartilhamento do iOS para abrir dados corporativos ou de estudante em aplicativos não gerenciados, mesmo com a política de transferência de dados definida como **Apenas aplicativos gerenciados** ou **Nenhum aplicativo.** Isso não causa a perda de dados? | A política de proteção do aplicativo do Intune não pode controlar a extensão de compartilhamento do iOS sem gerenciar o dispositivo. Portanto, o **Intune criptografa os dados “corporativos” antes de compartilhá-los fora do aplicativo**. É possível validar isso ao tentar abrir o arquivo “corporativo” fora do aplicativo gerenciado. O arquivo deve ser criptografado e não pode ser aberto fora do aplicativo gerenciado.
-iOS | Por que o usuário final é **solicitado a instalar o aplicativo Microsoft Authenticator** | Isso é necessário quando o acesso condicional baseado no aplicativo é aplicado, consulte [exigir aplicativo cliente aprovado](https://docs.microsoft.com/azure/active-directory/conditional-access/app-based-conditional-access).
+iOS | O usuário final pode usar a extensão de compartilhamento do iOS/iPadOS para abrir dados corporativos ou de estudante em aplicativos não gerenciados, mesmo com a política de transferência de dados definida como **Apenas aplicativos gerenciados** ou **Nenhum aplicativo.** Isso não causa a perda de dados? | A política de proteção de aplicativo do Intune não pode controlar a extensão de compartilhamento do iOS/iPadOS sem gerenciar o dispositivo. Portanto, o **Intune criptografa os dados “corporativos” antes de compartilhá-los fora do aplicativo**. É possível validar isso ao tentar abrir o arquivo “corporativo” fora do aplicativo gerenciado. O arquivo deve ser criptografado e não pode ser aberto fora do aplicativo gerenciado.
+iOS | Por que é solicitado que o usuário final **instale o aplicativo Microsoft Authenticator**? | Isso é necessário quando o Acesso Condicional Baseado no Aplicativo é aplicado, confira [Exigir o aplicativo cliente aprovado](https://docs.microsoft.com/azure/active-directory/conditional-access/app-based-conditional-access).
 Android | Por que o usuário final **precisa instalar o aplicativo Portal da Empresa** mesmo ao usar a proteção do aplicativo de MAM sem registro de dispositivo?  | No Android, grande parte da funcionalidade de proteção do aplicativo é criada no aplicativo Portal da Empresa. **O registro de dispositivo não é necessário, embora o aplicativo Portal da Empresa seja sempre obrigatório**. Para a proteção do aplicativo sem registro, o usuário final precisa apenas ter o aplicativo Portal da Empresa instalado no dispositivo.
-iOS/Android | Política de proteção de aplicativo não aplicada em email de rascunho no aplicativo Outlook | Como o Outlook dá suporte ao contexto corporativo e pessoal, ele não impõe o MAM no email de rascunho.
-iOS/Android | Política de proteção de aplicativo não aplicada em novos documentos no WXP (Word, Excel, PowerPoint) | Como o WXP dá suporte ao contexto corporativo e pessoal, ele não impõe o MAM em novos documentos até que eles sejam salvos em um local corporativo identificado, como o OneDrive.
-iOS/Android | Aplicativos que não permitem salvar como no armazenamento local quando a política está habilitada | O comportamento do aplicativo para essa configuração é controlado pelo desenvolvedor do aplicativo.
-Android | O Android tem mais restrições do que iOS em quais aplicativos "nativos" podem acessar conteúdo protegido por MAM | O Android é uma plataforma aberta e a associação de aplicativo "nativa" pode ser alterada pelo usuário final para aplicativos potencialmente não seguros. Aplicar [exceções de política de transferência de dados](app-protection-policies-exception.md) para isentar aplicativos específicos.
-Android | A AIP (proteção de informações do Azure) pode salvar como PDF quando salvar como é impedido | AIP honra a política de MAM para ' desabilitar impressão ' quando salvar como PDF for usado.
-iOS | A abertura de anexos em PDF no aplicativo Outlook falha com "ação não permitida | Isso pode ocorrer se o usuário não tiver sido autenticado no Acrobat Reader para Intune ou tiver usado impressão digital para se autenticar em sua organização. Abra o Acrobat Reader com antecedência e autentique usando credenciais UPN.
+iOS/Android | Política de proteção de aplicativo não aplicada em emails de rascunho no aplicativo Outlook | Como o Outlook dá suporte aos contextos corporativo e pessoal, ele não impõe o MAM em emails de rascunho.
+iOS/Android | Política de proteção de aplicativo não aplicada em novos documentos no WXP (Word, Excel, PowerPoint) | Como o WXP dá suporte aos contextos corporativo e pessoal, ele não impõe o MAM em novos documentos até que eles sejam salvos em um local corporativo identificado, como o OneDrive.
+iOS/Android | Aplicativos que não permitem Salvar como no Armazenamento Local quando a política está habilitada | O comportamento do aplicativo para essa configuração é controlado pelo seu desenvolvedor.
+Android | O Android tem mais restrições do que o iOS/iPadOS com relação a quais aplicativos "nativos" podem acessar o conteúdo protegido por MAM | O Android é uma plataforma aberta e a associação de aplicativos "nativos" pode ser alterada pelo usuário final para aplicativos potencialmente não seguros. Aplique [Exceções de política de transferência de dados](app-protection-policies-exception.md) para isentar aplicativos específicos.
+Android | A AIP (Proteção de Informações do Azure) pode Salvar como PDF quando Salvar como está bloqueado | A AIP honra a política de MAM para "Desabilitar a impressão" quando Salvar como PDF é usado.
+iOS | A abertura de anexos em PDF no aplicativo Outlook falha, exibindo a mensagem "Ação não permitida" | Isso pode ocorrer se o usuário não tiver sido autenticado no Acrobat Reader para Intune ou se tiver usado a impressão digital para se autenticar em sua organização. Abra o Acrobat Reader antes e autentique usando credenciais de UPN.
 
 
 ### <a name="normal-usage-dialogs"></a>Caixas de diálogo de uso normal
@@ -112,7 +112,7 @@ Mensagem de erro/caixa de diálogo | Causa | Remediação |
 ## <a name="next-steps"></a>Próximas etapas
 
 - [Validar a configuração do gerenciamento de aplicativo móvel](app-protection-policies-validate.md)
-- Saiba como usar arquivos de log para solucionar problemas de Proteção de Aplicativo do Intune política, consulte [https://techcommunity.microsoft.com/t5/Intune-Customer-Success/Support-Tip-Troubleshooting-Intune-app-protection-policy-using/ba-p/330372](https://techcommunity.microsoft.com/t5/Intune-Customer-Success/Support-Tip-Troubleshooting-Intune-app-protection-policy-using/ba-p/330372)
+- Para saber como usar os arquivos de log para solucionar problemas com a política de Proteção de Aplicativo do Intune, confira [https://techcommunity.microsoft.com/t5/Intune-Customer-Success/Support-Tip-Troubleshooting-Intune-app-protection-policy-using/ba-p/330372](https://techcommunity.microsoft.com/t5/Intune-Customer-Success/Support-Tip-Troubleshooting-Intune-app-protection-policy-using/ba-p/330372)
 - Para saber mais sobre a solução de problemas do Intune, confira [Usar o portal de solução de problemas para ajudar os usuários na empresa](../fundamentals/help-desk-operators.md). 
 - Saiba mais sobre os problemas conhecidos do Microsoft Intune. Para obter mais informações, consulte [Problemas conhecidos no Microsoft Intune](../known-issues.md).
 - Precisa de mais ajuda? Veja [Como obter suporte para o Microsoft Intune](../fundamentals/get-support.md).

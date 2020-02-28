@@ -16,12 +16,12 @@ ms.reviewer: dougeby
 ms.suite: ems
 search.appverid: MET150
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 7ab41026cd9b2ceeaaa478fc27c984d0d89db4c5
-ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
-ms.translationtype: MTE75
+ms.openlocfilehash: 3a15bf0bd8ed0a46f330b159e45d0a5d5a4c7059
+ms.sourcegitcommit: c780e9988341a20f94fdeb8672bd13e0b302da93
+ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "74058523"
+ms.lasthandoff: 02/20/2020
+ms.locfileid: "77510377"
 ---
 # <a name="device-management-overview"></a>Visão geral do gerenciamento de dispositivo
 
@@ -33,7 +33,7 @@ Usando um provedor de gerenciamento de dispositivo, as organizações podem gara
 
 A resposta é o [Microsoft Intune](what-is-intune.md). O Intune oferece MDM (gerenciamento de dispositivo móvel) e MAM (gerenciamento de aplicativo móvel). Algumas das tarefas principais de qualquer solução de MDM ou MAM são:
 
-- Dar suporte a um ambiente móvel diversificado e gerenciar dispositivos iOS, Android, Windows e macOS com segurança.
+- Dar suporte a um ambiente móvel diversificado e gerenciar dispositivos iOS/iPadOS, Android, Windows e macOS com segurança.
 - Garantir que dispositivos e aplicativos estejam em conformidade com os requisitos de segurança da sua organização.
 - Criar políticas que ajudam a proteger os dados da organização em dispositivos pessoais e de propriedade da empresa.
 - Usar uma solução móvel unificada para impor essas políticas e ajudar a gerenciar dispositivos, aplicativos, usuários e grupos.
@@ -47,7 +47,7 @@ Muitas organizações, como a Microsoft, usam o Intune para proteger os dados pr
 
 É comum que as pessoas tenham vários dispositivos que usam plataformas diferentes. Por exemplo, um funcionário pode usar o Surface Pro para o trabalho e um dispositivo móvel Android em sua vida pessoal. E é comum acessar recursos organizacionais, como o Microsoft Outlook e o SharePoint, desses vários dispositivos.
 
-Com o Intune, é possível gerenciar vários dispositivos por pessoa e as diferentes plataformas que são executadas em cada um deles, incluindo iOS, macOS, Android e Windows. O Intune separa as políticas e configurações por plataforma de dispositivo. Portanto, é fácil de gerenciar e exibir os dispositivos de uma plataforma específica.
+Com o Intune, é possível gerenciar vários dispositivos por pessoa e as diferentes plataformas que são executadas em cada um deles, incluindo iOS/iPadOS, macOS, Android e Windows. O Intune separa as políticas e configurações por plataforma de dispositivo. Portanto, é fácil de gerenciar e exibir os dispositivos de uma plataforma específica.
 
 **[Cenários comuns](common-scenarios.md)** é um excelente recurso para ver como o Intune responde a perguntas comuns ao trabalhar com dispositivos móveis. Você encontrará cenários sobre:  
 
@@ -55,7 +55,7 @@ Com o Intune, é possível gerenciar vários dispositivos por pessoa e as difere
 - Acessar o Office 365 de forma segura
 - Usar dispositivos pessoais para acessar recursos organizacionais
 
-Para obter mais informações sobre o Intune, consulte [o que é o Intune](what-is-intune.md).
+Para obter mais informações sobre o Intune, confira [O que é Intune](what-is-intune.md).
 
 ## <a name="integration-with-secure-and-protect-services"></a>Integração com serviços de segurança e proteção
 
@@ -63,7 +63,7 @@ Uma tarefa essencial de qualquer solução de gerenciamento de dispositivo é fo
 
 - O **Microsoft 365** é um componente fundamental para simplificar tarefas comuns de TI. No centro de administração do Microsoft 365, você deve criar usuários e gerenciar grupos. Você também obtém acesso a outros serviços, como Intune, Azure AD e muito mais.
 
-  Por exemplo, crie um grupo de dispositivos iOS no Microsoft 365. Em seguida, pode usar o Intune para efetuar push das políticas para o grupo de dispositivos iOS com foco nos recursos iOS, como o acesso à App Store, o uso do AirDrop, o backup para o iCloud, o uso do filtro de Web da Apple e muito mais.
+  Por exemplo, crie um grupo de dispositivos iOS/iPadOS no Microsoft 365. Em seguida, pode usar o Intune para efetuar push das políticas para o grupo de dispositivos iOS/iPadOS com foco nos recursos iOS/iPadOS, como o acesso à App Store, o uso do AirDrop, o backup para o iCloud, o uso do filtro de Web da Apple e muito mais.
 
 - O **Windows Defender** inclui muitos recursos de segurança para ajudar a proteger dispositivos Windows 10. Por exemplo, usando o Intune e o Windows Defender juntos, você pode:
 
@@ -84,9 +84,9 @@ Ao configurar o Intune, você também pode optar por trabalhar exclusivamente no
 
 ## <a name="simplify-it-tasks-using-the-device-management-admin-center"></a>Simplificar as tarefas de TI usando o centro de administração do Gerenciamento de Dispositivo
 
-O [Centro de Administração do Gerenciador de Ponto de Extremidade da Microsoft](https://go.microsoft.com/fwlink/?linkid=2109431) é um ponto único centralizado para gerenciar e concluir as tarefas em seus dispositivos móveis. Este espaço de trabalho inclui os serviços usados para gerenciamento de dispositivos, incluindo o Intune e o Azure Active Directory, e também para gerenciar aplicativos de cliente.
+O [Centro de Administração do Gerenciador de Ponto de Extremidade da Microsoft](https://go.microsoft.com/fwlink/?linkid=2109431) é um ponto único centralizado para gerenciar e concluir as tarefas em seus dispositivos móveis. Este workspace inclui os serviços usados para gerenciamento de dispositivos, incluindo o Intune e o Azure Active Directory, e também para gerenciar aplicativos de cliente.
 
-No centro de administração do gerenciamento de dispositivos, você pode:
+No centro de administração do Gerenciamento de Dispositivos, você pode:
 
 - [Registrar dispositivos](../enrollment/device-enrollment.md)
 - [Configurar a conformidade do dispositivo](../protect/device-compliance-get-started.md)
@@ -97,7 +97,7 @@ No centro de administração do gerenciamento de dispositivos, você pode:
 - [Gerenciar funções](role-based-access-control.md)  
 - Gerenciar atualizações de software
   - [Gerenciar as atualizações do Windows 10](../protect/windows-update-for-business-configure.md)  
-  - [Gerenciar as atualizações do iOS](../protect/software-updates-ios.md)  
+  - [Gerenciar atualizações do iOS/iPadOS](../protect/software-updates-ios.md)  
 - [Azure Active Directory](https://docs.microsoft.com/azure/active-directory)  
 - [Gerenciar usuários](https://docs.microsoft.com/azure/active-directory/fundamentals/add-users-azure-active-directory)
 - [Gerenciar grupos e membros](https://docs.microsoft.com/azure/active-directory/fundamentals/active-directory-manage-groups)

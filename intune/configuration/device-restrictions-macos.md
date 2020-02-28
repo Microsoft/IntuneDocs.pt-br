@@ -6,7 +6,7 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 10/22/2019
+ms.date: 02/18/2020
 ms.topic: reference
 ms.service: microsoft-intune
 ms.subservice: configuration
@@ -16,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 6513c09f252d5a914ace4e57e5a593877a387172
-ms.sourcegitcommit: e166b9746fcf0e710e93ad012d2f52e2d3ed2644
-ms.translationtype: MTE75
+ms.openlocfilehash: 3d26c4c6cd05a411555f7824ad21b72431eb569c
+ms.sourcegitcommit: c780e9988341a20f94fdeb8672bd13e0b302da93
+ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/19/2019
-ms.locfileid: "75206543"
+ms.lasthandoff: 02/20/2020
+ms.locfileid: "77511165"
 ---
 # <a name="macos-device-settings-to-allow-or-restrict-features-using-intune"></a>Configurações de dispositivo macOS para permitir ou restringir recursos usando o Intune
 
@@ -36,11 +36,11 @@ Essas configurações são adicionadas a um perfil de configuração do disposit
 [Criar um perfil de configuração de restrições de dispositivo](../device-restrictions-configure.md).
 
 > [!NOTE]
-> Essas configurações se aplicam a diferentes tipos de registro. Para obter mais informações sobre os diferentes tipos de registro, consulte [registro do MacOS](../macos-enroll.md).
+> Essas configurações se aplicam a diferentes tipos de registro. Para obter mais informações sobre os diferentes tipos de registro, confira [Registro do macOS](../macos-enroll.md).
 
 ## <a name="general"></a>Geral
 
-### <a name="settings-apply-to-device-enrollment-and-automated-device-enrollment"></a>As configurações se aplicam a: registro de dispositivo e registro de dispositivo automatizado
+### <a name="settings-apply-to-device-enrollment-and-automated-device-enrollment"></a>As configurações se aplicam a(o): Registro de dispositivos e registro automatizado de dispositivos
 
 - **Pesquisa de Definição**: A opção **Bloquear** impede o usuário de realçar uma palavra e, em seguida, pesquisar sua definição no dispositivo. **Não configurado** (padrão): permite o acesso ao recurso de pesquisa de definição.
 - **Ditado**: A opção **Bloquear** impede o usuário de usar a entrada de voz para inserir um texto. **Não configurado** (padrão) permite que o usuário use a entrada por ditado.
@@ -62,29 +62,29 @@ Essas configurações são adicionadas a um perfil de configuração do disposit
     Esse recurso aplica-se a:  
     - macOS 10.13.4 e mais recente
 
-- **Capturas de tela**: o dispositivo deve ser registrado no Dep (registro de dispositivo automatizado) da Apple. Quando definido como **Bloquear**, os usuários não podem salvar uma captura de tela da exibição. Ele também impede que o aplicativo sala de aula Observe telas remotas. **Não configurado** (padrão) permite que os usuários capturem capturas de tela e permite que o aplicativo sala de aula exiba telas remotas.
+- **Capturas de tela**: o dispositivo deve ser registrado no DEP (Registro de Dispositivo Automatizado) da Apple. Quando definido como **Bloquear**, os usuários não podem salvar uma captura de tela da exibição. Isso também impede que o aplicativo Classroom observe telas remotas. **Não configurado** (padrão) permite que os usuários capturem capturas de tela e que o aplicativo Classroom exiba telas remotas.
 
-### <a name="settings-apply-to-automated-device-enrollment"></a>As configurações se aplicam a: registro de dispositivo automatizado
+### <a name="settings-apply-to-automated-device-enrollment"></a>As configurações se aplicam a(o): Registro de dispositivo automatizado
 
-- **Observação de tela remota por meio do aplicativo sala de aula**: **desabilitar** impede que os professores usem o aplicativo sala de aula para ver as telas dos alunos. **Não configurado** (padrão) permite que os professores vejam as telas dos alunos.
+- **Observação de tela remota por meio do aplicativo Classroom**: **Desabilitar** impede que os professores usem o aplicativo Classroom para ver as telas dos alunos. **Não configurado** (padrão) permite que os professores vejam as telas dos alunos.
 
-  Para usar essa configuração, defina a configuração **capturas de tela** como **não configurado** (capturas de tela são permitidas).
+  Para usar essa configuração, defina a configuração **Capturas de tela** como **Não configurada** (capturas de tela são permitidas).
 
-- **Observação de tela não solicitada pelo aplicativo sala de aula**: **permitir** permite que os professores vejam as telas dos alunos sem exigir que o aluno concorde. **Não configurado** (padrão) exige que o aluno concorde antes que o professor possa ver as telas.
+- **Observação de tela não solicitada pelo aplicativo Classroom**: **Permitir** permite que os professores vejam as telas dos alunos sem exigir que o aluno concorde. **Não configurado** (padrão) exige que o aluno concorde antes que o professor possa ver as telas.
 
-  Para usar essa configuração, defina a configuração **capturas de tela** como **não configurado** (capturas de tela são permitidas).
+  Para usar essa configuração, defina a configuração **Capturas de tela** como **Não configurada** (capturas de tela são permitidas).
 
-- **Os alunos devem solicitar permissão para sair da classe sala de aula**: **exigir** força alunos inscritos em um curso de sala de aula não gerenciado para obter aprovação do professor para deixar o curso. **Não configurado** (padrão) permite que o aluno deixe o curso sempre que o aluno escolher.
+- **Os alunos devem solicitar permissão para sair da classe do Classroom**: **Exigir** força alunos matriculados em um curso do Classroom não gerenciado a obter aprovação do professor para sair do curso. **Não configurado** (padrão) permite que o aluno saia do curso sempre que escolher.
 
-- **Os professores podem bloquear automaticamente dispositivos ou aplicativos no aplicativo sala de aula**: **permitir** permite que os professores bloqueiem o dispositivo ou aplicativo de um aluno sem a aprovação do aluno. **Não configurado** (padrão) exige que o aluno concorde antes que o professor possa bloquear o dispositivo ou o aplicativo.
+- **Os professores podem bloquear automaticamente dispositivos ou aplicativos no aplicativo Classroom**: **Permitir** permite que os professores bloqueiem o dispositivo ou aplicativo de um aluno sem a aprovação dele. **Não configurado** (padrão) exige que o aluno concorde antes que o professor possa bloquear o dispositivo ou o aplicativo.
 
-- **Os alunos podem unir a classe sala de aula automaticamente**: **permitir** que os alunos ingressem em uma classe sem avisar o professor. **Não configurado** (padrão) requer aprovação de professor para ingressar em uma classe.
+- **Os alunos podem entrar na classe do Classroom**: **Permitir** que os alunos entrem em uma classe sem avisar o professor. **Não configurado** (padrão) exige a aprovação do professor para entrar em uma classe.
 
 ## <a name="password"></a>Senha
 
-### <a name="settings-apply-to-device-enrollment-and-automated-device-enrollment"></a>As configurações se aplicam a: registro de dispositivo e registro de dispositivo automatizado
+### <a name="settings-apply-to-device-enrollment-and-automated-device-enrollment"></a>As configurações se aplicam a(o): Registro de dispositivos e registro automatizado de dispositivos
 
-- **Senha**: a opção **Exigir** torna necessário que o usuário final insira uma senha para acessar o dispositivo. **Não configurado** (padrão) não requer uma senha. Ele também não força nenhuma restrição, como o bloqueio de senhas simples ou a definição de um comprimento mínimo.
+- **Senha**: a opção **Exigir** torna necessário que o usuário final insira uma senha para acessar o dispositivo. **Não configurado** (padrão) não requer uma senha. Também não força nenhuma restrição, como o bloqueio de senhas simples ou a definição de um comprimento mínimo.
   - **Tipo de senha necessária**: especifique se a senha usada pode ser apenas Numérica ou se deve ser Alfanumérica (conter letras e números).
 
     Esse recurso aplica-se a:  
@@ -114,7 +114,7 @@ Essas configurações são adicionadas a um perfil de configuração do disposit
 
 ## <a name="built-in-apps"></a>Aplicativos internos
 
-### <a name="settings-apply-to-device-enrollment-and-automated-device-enrollment"></a>As configurações se aplicam a: registro de dispositivo e registro de dispositivo automatizado
+### <a name="settings-apply-to-device-enrollment-and-automated-device-enrollment"></a>As configurações se aplicam a(o): Registro de dispositivos e registro automatizado de dispositivos
 
 - **Bloquear o Preenchimento Automático do Safari**: A opção **Bloquear** desabilita o recurso de preenchimento automático do Safari no dispositivo. **Não configurado** (padrão) permite que os usuários alterem as configurações de preenchimento automático no navegador da Web.
 - **Bloquear câmera**: Escolha **Bloquear** para impedir o acesso à câmera no dispositivo. **Não configurado** (padrão) permite o acesso à câmera do dispositivo.
@@ -127,32 +127,32 @@ Essas configurações são adicionadas a um perfil de configuração do disposit
 
 ## <a name="restricted-apps"></a>Aplicativos restritos
 
-### <a name="settings-apply-to-device-enrollment-and-automated-device-enrollment"></a>As configurações se aplicam a: registro de dispositivo e registro de dispositivo automatizado
+### <a name="settings-apply-to-device-enrollment-and-automated-device-enrollment"></a>As configurações se aplicam a(o): Registro de dispositivos e registro automatizado de dispositivos
 
-- **Tipo de lista de aplicativos restritos**: Crie uma lista de aplicativos que os usuários não têm permissão para instalar ou usar. Suas opções:
+- **Lista de tipos de aplicativos restritos**: crie uma lista de aplicativos que os usuários não têm permissão para instalar nem usar. Suas opções:
 
   - **Não configurado** (padrão): não há restrições do Intune. Os usuários têm acesso aos aplicativos que você atribui e aos aplicativos internos.
-  - **Aplicativos proibidos**: aplicativos não gerenciados pelo Intune que você não deseja que sejam instalados no dispositivo. Os usuários não são impedidos de instalar um aplicativo proibido. Mas se um usuário instalar um aplicativo dessa lista, ele será relatado no Intune.
-  - **Aplicativos aprovados**: aplicativos que os usuários têm permissão para instalar. Os usuários não devem instalar aplicativos que não estão listados. Aplicativos que são gerenciados pelo Intune são permitidos automaticamente. Os usuários não são impedidos de instalar um aplicativo que não esteja na lista aprovada. Mas, se isso for feito, ele será relatado no Intune.
-- **ID de Lote de Aplicativo**: insira a [ID de lote](bundle-ids-built-in-ios-apps.md) de aplicativos do aplicativo que você deseja. Você pode mostrar ou ocultar aplicativos internos e aplicativos de linha de negócios. O site da Apple tem uma lista de [aplicativos da Apple internos](https://support.apple.com/HT208094).
-- **Nome do aplicativo**: insira o nome do aplicativo que você deseja. Você pode mostrar ou ocultar aplicativos internos e aplicativos de linha de negócios. O site da Apple tem uma lista de [aplicativos da Apple internos](https://support.apple.com/HT208094).
+  - **Aplicativos proibidos**: aplicativos não gerenciados pelo Intune que você não deseja que sejam instalados no dispositivo. Os usuários não são impedidos de instalar um aplicativo proibido. Porém, se um usuário instalar um aplicativo dessa lista, ele será relatado no Intune.
+  - **Aplicativos aprovados**: aplicativos que os usuários têm permissão para instalar. Os usuários não devem instalar aplicativos que não estão listados. Aplicativos que são gerenciados pelo Intune são permitidos automaticamente. Os usuários não são impedidos de instalar um aplicativo que não esteja na lista aprovada. Porém, se eles fizerem isso, isso será relatado no Intune.
+- **ID de Lote de Aplicativo**: insira a [ID de lote](bundle-ids-built-in-ios-apps.md) de aplicativos do aplicativo que você deseja. Você pode mostrar ou ocultar aplicativos internos e aplicativos de linha de negócios. O site da Apple apresenta uma lista de [aplicativos internos da Apple](https://support.apple.com/HT208094).
+- **Nome do aplicativo**: insira o nome do aplicativo que você deseja. Você pode mostrar ou ocultar aplicativos internos e aplicativos de linha de negócios. O site da Apple apresenta uma lista de [aplicativos internos da Apple](https://support.apple.com/HT208094).
 - **Editor**: insira o editor do aplicativo que você deseja.
 
 Para adicionar aplicativos a essas listas, você pode:
 
-- **Adicionar**: Selecione para criar sua lista de aplicativos.
-- **Importar** um arquivo CSV com detalhes sobre o aplicativo, incluindo a URL. Use o formato `<app bundle ID>, <app name>, <app publisher>`. Ou, **Exportar** para criar uma lista de aplicativos que você adicionou, no mesmo formato.
+- **Adicionar**: selecione essa opção para criar sua lista de aplicativos.
+- **Importar** um arquivo CSV com detalhes sobre o aplicativo, incluindo a URL. Use o formato `<app bundle ID>, <app name>, <app publisher>`. Ou **Exportar** para criar uma lista de aplicativos que você adicionou, no mesmo formato.
 
 ## <a name="connected-devices"></a>Dispositivos conectados
 
-### <a name="settings-apply-to-device-enrollment-and-automated-device-enrollment"></a>As configurações se aplicam a: registro de dispositivo e registro de dispositivo automatizado
+### <a name="settings-apply-to-device-enrollment-and-automated-device-enrollment"></a>As configurações se aplicam a(o): Registro de dispositivos e registro automatizado de dispositivos
 
 - **Bloquear AirDrop**: A opção **Bloquear** impede o uso do AirDrop no dispositivo. **Não configurado** (padrão) permite o uso do recurso AirDrop para trocar conteúdo com dispositivos próximos.
 - **Bloquear o desbloqueio automático do Apple Watch**: a opção **Bloquear** impede que os usuários desbloqueiem seu dispositivo macOS com o Apple Watch. **Não configurado** (padrão) permite aos usuários desbloquear o dispositivo macOS com o seu Apple Watch.
 
 ## <a name="cloud-and-storage"></a>Nuvem e armazenamento
 
-### <a name="settings-apply-to-device-enrollment-and-automated-device-enrollment"></a>As configurações se aplicam a: registro de dispositivo e registro de dispositivo automatizado
+### <a name="settings-apply-to-device-enrollment-and-automated-device-enrollment"></a>As configurações se aplicam a(o): Registro de dispositivos e registro automatizado de dispositivos
 
 - **Bloquear a sincronização do Conjunto de Chaves do iCloud**: Escolha **Bloquear** para desabilitar a sincronização das credenciais armazenadas no Conjunto de Chaves com o iCloud. **Não configurado** (padrão) permite que os usuários sincronizem essas credenciais.
 - **Bloquear a sincronização de documentos do iCloud**: **Bloquear** impede o iCloud de sincronizar documentos e dados. A opção **Não configurado** (padrão) permite a sincronização de documento e chave-valor com o espaço de armazenamento do iCloud.
@@ -162,15 +162,15 @@ Para adicionar aplicativos a essas listas, você pode:
 - **Bloquear o backup de lembrete do iCloud**: a opção **Bloquear** impede que o iCloud se sincronize com o aplicativo de Lembretes do macOS. **Não configurado** (padrão) permite a sincronização de Lembretes com o iCloud.
 - **Bloquear o backup de indicadores do iCloud**: a opção **Bloquear** impede que o iCloud sincronize os indicadores de dispositivos. **Não configurado** (padrão) permite a sincronização de Indicador com o iCloud.
 - **Bloquear o backup de observações do iCloud**: a opção **Bloquear** impede que o iCloud sincronize as observações de dispositivos. **Não configurado** (padrão) permite a sincronização de Notas com o iCloud.
-- **Bloquear biblioteca de fotos do icloud**: o **bloco** desabilita a biblioteca de fotos do icloud e impede que o iCloud sincronize as fotos dos dispositivos. As fotos que não forem totalmente baixadas da Biblioteca de Fotos do iCloud serão removidas do armazenamento local do dispositivo. **Não configurado** (padrão) permite a sincronização de fotos entre o dispositivo e a biblioteca de fotos do icloud.
-- **Entrega**: **não configurado** (padrão) permite que os usuários iniciem o trabalho em um dispositivo MacOS e continuem o trabalho iniciado em outro dispositivo IOS ou MacOS. **Bloquear** impede o recurso de entrega no dispositivo. 
+- **Bloquear Biblioteca de Fotos do iCloud**: **Bloquear** desabilita a Biblioteca de Fotos do iCloud e impede que o iCloud sincronize as fotos dos dispositivos. As fotos que não forem totalmente baixadas da Biblioteca de Fotos do iCloud serão removidas do armazenamento local do dispositivo. **Não configurado** (padrão) permite a sincronização de fotos entre o dispositivo e a Biblioteca de Fotos do iCloud.
+- **Entrega**: **Não configurado** (padrão) permite que os usuários iniciem o trabalho em um dispositivo iOS e, em seguida, continuem o trabalho iniciado em outro dispositivo iOS/iPadOS ou macOS. **Bloquear** impede o recurso Entrega no dispositivo. 
 
   Esse recurso aplica-se a:  
   - macOS 10.15 e mais recente
 
 ## <a name="domains"></a>Domínios
 
-### <a name="settings-apply-to-device-enrollment-and-automated-device-enrollment"></a>As configurações se aplicam a: registro de dispositivo e registro de dispositivo automatizado
+### <a name="settings-apply-to-device-enrollment-and-automated-device-enrollment"></a>As configurações se aplicam a(o): Registro de dispositivos e registro automatizado de dispositivos
 
 - **URL de domínio de email**: **adicione** uma ou mais URLs à lista. Quando os usuários recebem um email de um domínio diferente daquele configurado por você, o email é marcado como não confiável no aplicativo Email do macOS.
 
@@ -178,4 +178,4 @@ Para adicionar aplicativos a essas listas, você pode:
 
 [Atribuir o perfil](../device-profile-assign.md) e [monitorar seu status](../device-profile-monitor.md).
 
-Você também pode restringir recursos e configurações de dispositivo em dispositivos [iOS](../device-restrictions-ios.md).
+Você também pode restringir recursos e configurações de dispositivo em dispositivos [iOS/iPadOS](../device-restrictions-ios.md).

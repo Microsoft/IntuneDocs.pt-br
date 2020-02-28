@@ -17,12 +17,12 @@ ms.reviewer: mghadial
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 3502b1c1a73a9e98ed2901fc24dc69ab09136427
-ms.sourcegitcommit: b0d683917af83170f85022b270270d8ced8e301c
-ms.translationtype: MTE75
+ms.openlocfilehash: ef20d378740eae73c41521d8dfc7f8fdd853fdb9
+ms.sourcegitcommit: c780e9988341a20f94fdeb8672bd13e0b302da93
+ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "76812437"
+ms.lasthandoff: 02/20/2020
+ms.locfileid: "77513887"
 ---
 # <a name="intune-app-installation-error-reference"></a>Referência de erros de instalação de aplicativos do Intune
 
@@ -51,17 +51,17 @@ Esta seção menciona o registro do DA (Administrador de dispositivo) e do Samsu
 | 0xC7D14FB1  | -942583887 | O usuário final cancelou a instalação do aplicativo. | O usuário desinstalou o aplicativo explicitamente. Esse erro é retornado quando a atividade de instalação do sistema operacional Android é cancelada pelo usuário. O usuário pressionou o botão Cancelar quando o prompt de instalação do sistema operacional foi apresentado ou clicou para sair do prompt. Esse erro é retornado apenas para cenários de DA. Em cenários do KNOX, não é solicitado que o usuário instale o aplicativo, a instalação pode ocorrer silenciosamente. O Intune apresenta uma notificação de que os usuários podem clicar para tentar novamente. Se o aplicativo estiver disponível, a notificação poderá ser ignorada. No entanto, se o aplicativo for obrigatório, ela não poderá ser ignorada. Peça ao usuário para não cancelar a instalação. |
 | 0xC7D14FB9 | -942583879 | O usuário final cancelou a instalação do aplicativo. (No prompt para aceitar) | Instrua o usuário a aceitar o aplicativo implantado do Intune e instalar o aplicativo quando solicitado. |
 
-## <a name="ios-app-installation-errors"></a>Erros de instalação do aplicativo iOS
+## <a name="ios-and-ipados-app-installation-errors"></a>Erros de instalação do aplicativo iOS e iPadOS
 
-As mensagens de erro e as descrições a seguir fornecem detalhes sobre os erros de instalação no iOS. 
+As mensagens de erro e as descrições a seguir fornecem detalhes sobre os erros de instalação no iOS/iPadOS. 
 
 | Código de erro (Hex) | Código de erro (Dec) | Mensagem/código do erro | Descrição/dicas de solução de problemas |
 |--------------------|------------------|------------------------------------------------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | 0x87D12906 | -2016335610 | Erro do Agente de MDM da Apple: falha do comando de instalação do aplicativo sem motivo de erro especificado. Tente instalar o aplicativo novamente. | Agente do Apple MDM retornou que o comando de instalação falhou. |
 | 0x87D1313C | -2016333508 | A conexão de rede no cliente foi perdida ou interrompida. Tentativas posteriores devem ter sucesso em um ambiente de rede melhor. | A conexão de rede foi perdida enquanto a URL do serviço de download atualizada era enviada para o dispositivo. Especificamente, um servidor com o nome do host especificado não pôde ser encontrado. |
-| 0x87D11388 | -2016341112 | O dispositivo iOS está ocupado no momento.  | O dispositivo iOS estava ocupado, o que resultou em erro. O dispositivo foi bloqueado. O usuário precisa desbloquear o dispositivo para instalar o aplicativo. |
-| 0x87D13B64 | -2016330908 | A instalação do aplicativo falhou.  | Ocorreu uma falha na instalação do aplicativo. Os logs do Console do iOS são necessários para solucionar esse erro. |
-| 0x87D13B66 | -2016330906 | O aplicativo é gerenciado, mas expirou ou foi removido pelo usuário.  | O usuário desinstalou explicitamente o aplicativo, o aplicativo expirou, mas não pôde ser baixado ou a detecção do aplicativo não corresponde à resposta do dispositivo.   Além disso, esse erro pode ocorrer com base em um bug da plataforma iOS 9.2.2. |
+| 0x87D11388 | -2016341112 | O dispositivo iOS/iPadOS está ocupado no momento.  | O dispositivo iOS/iPadOS estava ocupado, o que resultou em erro. O dispositivo foi bloqueado. O usuário precisa desbloquear o dispositivo para instalar o aplicativo. |
+| 0x87D13B64 | -2016330908 | A instalação do aplicativo falhou.  | Ocorreu uma falha na instalação do aplicativo. Os logs do Console do iOS/iPadOS são necessários para solucionar esse erro. |
+| 0x87D13B66 | -2016330906 | O aplicativo é gerenciado, mas expirou ou foi removido pelo usuário.  | O usuário desinstalou explicitamente o aplicativo, o aplicativo expirou, mas não pôde ser baixado ou a detecção do aplicativo não corresponde à resposta do dispositivo.   Além disso, esse erro pode ocorrer com base em um bug da plataforma iOS/iPadOS 9.2.2. |
 | 0x87D13B60 | -2016330912 | O aplicativo está agendado para instalação, mas precisa de um código de resgate para que a transação seja concluída.  | Esse erro normalmente ocorre com os aplicativos da iOS Store que são pagos. |
 | 0x87D1041C | -2016345060 | O aplicativo ainda não foi detectado depois que a desinstalação foi concluída com sucesso.  | O processo de detecção do aplicativo não correspondeu à resposta do dispositivo. |
 | 0x87D13B62 | -2016330910 | O usuário rejeitou a oferta para instalar o aplicativo.  | Durante a instalação inicial do aplicativo, o usuário clicou em Cancelar. Peça ao usuário para aceitar a solicitação de instalação na próxima vez. |
@@ -70,7 +70,7 @@ As mensagens de erro e as descrições a seguir fornecem detalhes sobre os erros
 | 0x87D13B93 | -2016330861 | Só é possível instalar aplicativos VPP no iPad Compartilhado. | Os aplicativos devem ser obtidos usando o Apple Volume Purchase Program para instalação em um iPad compartilhado. |
 | 0x87D13B94 | -2016330860 | Não é possível instalar aplicativos quando a App Store está desabilitada. | A App Store deve estar habilitada para o usuário instalar o aplicativo. |
 | 0x87D13B95 | -2016330859 | Não é possível localizar a licença VPP para o aplicativo. | Tente revogar e reatribuir a licença do aplicativo. |
-| 0x87D13B96 | -2016330858 | Não é possível instalar aplicativos do sistema com seu provedor de MDM. | Instalar aplicativos instalados previamente pelo sistema operacional iOS não é um cenário compatível. |
+| 0x87D13B96 | -2016330858 | Não é possível instalar aplicativos do sistema com seu provedor de MDM. | Instalar aplicativos instalados previamente pelo sistema operacional iOS/iPadOS não é um cenário compatível. |
 | 0x87D13B97 | -2016330857 | Não é possível instalar aplicativos quando o dispositivo está no Modo Perdido. | Todo o uso do dispositivo está bloqueado no Modo Perdido. Desabilite o Modo Perdido para instalar aplicativos. |
 | 0x87D13B98 | -2016330856 | Não é possível instalar aplicativos quando o dispositivo está no modo de quiosque. | Para instalar aplicativos, tente adicionar este dispositivo a um grupo de exclusão para política de configuração do modo de quiosque. |
 | 0x87D13B9C | -2016330852 | Não é possível instalar aplicativos de 32 bits neste dispositivo. | O dispositivo não é compatível com a instalação de aplicativos de 32 bits. Tente implantar a versão de 64 bits do aplicativo. |
@@ -80,7 +80,7 @@ As mensagens de erro e as descrições a seguir fornecem detalhes sobre os erros
 | 0x87d13b7e | -2016330882 | Falha na Atribuição de Licença com o Erro da Apple “Sem licenças VPP restantes”  | Esse comportamento é intencional. Para resolver isso, compre licenças adicionais do VPP ou recupere licenças de usuários que não são mais direcionados. |
 | 0x87d13b6e | -2016330898 | Falha na instalação do aplicativo 12024: Causa desconhecida.  | A Apple não nos forneceu informações suficientes para determinar o motivo de falha na instalação.   Nada a ser relatado. |
 | 0x87d13b7f | -2016330881 | A política de configuração de aplicativos necessária não está presente. verifique se a política é direcionada aos mesmos grupos.  | O aplicativo exige a configuração de aplicativos, mas nenhuma configuração de aplicativos é direcionada. O administrador deve garantir que os grupos aos quais o aplicativo é direcionado também tenham a configuração de aplicativos necessária direcionada para os grupos. |
-| 0x87d13b69 | -2016330903 | O licenciamento do VPP do dispositivo só é aplicável a dispositivos iOS 9.0 e posteriores.  | Atualize os dispositivos iOS afetados para o iOS 9.0 e posteriores. |
+| 0x87d13b69 | -2016330903 | O licenciamento do VPP do dispositivo só é aplicável a dispositivos iOS/iPadOS 9.0+.  | Atualize os dispositivos iOS/iPadOS afetados para o iOS/iPadOS 9.0+. |
 | 0x87d13b8f | -2016330865 | O aplicativo está instalado no dispositivo, mas não é gerenciado.  | Esse erro ocorre apenas em aplicativos LOB. O aplicativo foi instalado fora do Intune. Para resolver esse erro, desinstale o aplicativo do dispositivo. Na próxima vez que a sincronização do dispositivo ocorrer, o dispositivo deverá instalar o aplicativo por meio do Intune. |
 | 0x87d13b68 | -2016330904 | O usuário recusou o gerenciamento de aplicativo  | Peça ao usuário para aceitar o gerenciamento de aplicativos. |
 | 0x87d1279d | -2016335971 | Erro desconhecido.  | Esse erro ocorre em aplicativos da iOS Store, mas o cenário de erro é desconhecido. |

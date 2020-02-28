@@ -17,12 +17,12 @@ ms.reviewer: sumitp
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 0094cdd12b2594cb60260d768daec8c5bed04c9c
-ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
-ms.translationtype: MTE75
+ms.openlocfilehash: 3812d19122cf4dd85edf00a6fa12d9f2b89529aa
+ms.sourcegitcommit: c780e9988341a20f94fdeb8672bd13e0b302da93
+ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "72510259"
+ms.lasthandoff: 02/20/2020
+ms.locfileid: "77514584"
 ---
 # <a name="use-the-troubleshooting-portal-to-help-users-at-your-company"></a>Usar o portal de solução de problemas para ajudar os usuários na sua empresa
 
@@ -61,13 +61,13 @@ Você pode usar o painel **Solucionar problemas** para examinar as informações
 
 ![Painel de solução de problemas, com áreas numeradas descritas na tabela a seguir](./media/help-desk-operators/troubleshooting-dash.png)
 
-| Área | Nome | Descrição |
+| Área | Name | Descrição |
 | ---  | ---  | ---         |
 | 1.   | Status da conta  | Mostra o status do locatário do Intune atual como **Ativo** ou **Inativo**.       |
 | 2.   | Seleção de usuários  | O nome do usuário selecionado no momento. Clique em **Alterar usuário** para escolher um novo usuário.       |
 | 3.   | Status do usuário  | Exibe o status da licença do Intune do usuário, o número de dispositivos, a conformidade de cada dispositivo, o número de aplicativos e a conformidade dos aplicativos.       |
 | 4.   | Informações do usuário  | Use a lista para selecionar os detalhes a serem examinados no painel. <br>Você pode selecionar: <ul><li>Aplicativos cliente<li>Políticas de conformidade<li> Políticas de configuração<li>Políticas de proteção do aplicativo <li>Restrições de registro</ul>      |
-| 5.   | Associação de grupo  | Mostra os grupos atuais dos quais o usuário selecionado é membro.       |
+| 5.   | Associação a um grupo  | Mostra os grupos atuais dos quais o usuário selecionado é membro.       |
 
 <!-- this section needs to be updated
 
@@ -269,7 +269,7 @@ Quando você escolhe uma linha de falha, mais detalhes são fornecidos.
 
 | Erro do | Detalhes |
 |-------------|----------|
-| Tempo limite excedido ou falha de iOS | O tempo limite foi excedido entre o dispositivo e o Intune porque o usuário demorou muito para concluir o registro. |
+| Tempo limite ou Falha do iOS/iPadOS | O tempo limite foi excedido entre o dispositivo e o Intune porque o usuário demorou muito para concluir o registro. |
 | O usuário não foi encontrado nem licenciado | O usuário não tem uma licença ou foi removido do serviço. |
 | Dispositivo já registrado | Alguém tentou registrar um dispositivo usando o Portal da empresa em um dispositivo que ainda está registrado por outro usuário. |
 | Não integrado ao Intune | Ocorreu uma tentativa de registro quando a autoridade de MDM (gerenciamento de dispositivo móvel) do Intune não estava configurada. |
@@ -286,14 +286,14 @@ Quando você escolhe uma linha de falha, mais detalhes são fornecidos.
 | Método de registro inesperado do Autopilot | O dispositivo tentou se registrar usando um método não permitido. |
 | Dispositivo Autopilot removido | O dispositivo que está tentando se registrar foi removido do Autopilot para esta conta. |
 | Limite do dispositivo associado | Esse registro foi bloqueado devido a uma restrição de limite de registro configurada pelo administrador. |
-| Integração de Apple | Todos os dispositivos iOS foram impedidos de se registrar no momento devido à ausência ou expiração de um Apple MDM Push Certificate no Intune. |
+| Integração de Apple | Todos os dispositivos iOS/iPadOS foram impedidos de se registrar no momento devido à ausência ou expiração de um Apple MDM Push Certificate no Intune. |
 | Dispositivo não pré-registrado | O dispositivo não foi previamente registrado como corporativo e todos os registros pessoais foram bloqueados por um administrador. |
 | Recurso incompatível | O usuário provavelmente tentou fazer o registro por um método incompatível com a configuração do Intune. |
 
 ## <a name="collect-available-data-from-mobile-device"></a>Coletar dados disponíveis do dispositivo móvel
 
 Use os seguintes recursos para ajudar a coletar dados de dispositivo ao solucionar problemas de dispositivo do usuário:
-- [Enviar erros de registro do iOS para o administrador de TI](/intune-user-help/send-errors-to-your-it-admin-ios)
+- [Enviar erros de registro do iOS/iPadOS para o administrador de TI](/intune-user-help/send-errors-to-your-it-admin-ios)
 - [Ajudar o suporte de sua empresa a corrigir problemas do dispositivo com o log detalhado](/intune-user-help/use-verbose-logging-to-help-your-it-administrator-fix-device-issues-android)
 - [Enviar logs do Android para o suporte de sua empresa usando um cabo USB](/intune-user-help/send-diagnostic-data-logs-to-your-it-administrator-using-a-usb-cable-android)
 - [Enviar logs de dados de diagnóstico do Android para o administrador de TI usando o email](/intune-user-help/send-logs-to-your-it-admin-by-email-android)

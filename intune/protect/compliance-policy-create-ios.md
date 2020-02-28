@@ -1,6 +1,6 @@
 ---
-title: Configurações de conformidade para dispositivo iOS no Microsoft Intune – Azure | Microsoft Docs
-description: Veja uma lista de todas as configurações que você pode usar ao definir a conformidade para seus dispositivos iOS no Microsoft Intune. Exigir um email, verificar dispositivos com jailbreak ou desbloqueados por rooting, definir o sistema de operacional mínimo e máximo permitido, definir quaisquer restrições de senha, incluindo extensão de senha e inatividade de dispositivo, restringir aplicativos e muito mais.
+title: Configurações de conformidade para dispositivos iOS/iPadOS no Microsoft Intune – Azure | Microsoft Docs
+description: Veja uma lista de todas as configurações que você pode usar ao definir a conformidade para seus dispositivos iOS/iPadOS no Microsoft Intune. Exigir um email, verificar dispositivos com jailbreak ou desbloqueados por rooting, definir o sistema de operacional mínimo e máximo permitido, definir quaisquer restrições de senha, incluindo extensão de senha e inatividade de dispositivo, restringir aplicativos e muito mais.
 keywords: ''
 author: brenduns
 ms.author: brenduns
@@ -17,16 +17,16 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: e9bcfed67eda96bb4d79317bcc69d21a5f8197bc
-ms.sourcegitcommit: 2b905913840d4133a7964fe4f54a58ea6e421e12
-ms.translationtype: MTE75
+ms.openlocfilehash: 437673878335b04b76c53b13f18acac32213720a
+ms.sourcegitcommit: c780e9988341a20f94fdeb8672bd13e0b302da93
+ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/07/2020
-ms.locfileid: "77074624"
+ms.lasthandoff: 02/20/2020
+ms.locfileid: "77514023"
 ---
-# <a name="ios-settings-to-mark-devices-as-compliant-or-not-compliant-using-intune"></a>Configurações do iOS para marcar dispositivos como em conformidade ou não em conformidade usando o Intune
+# <a name="iosipados-settings-to-mark-devices-as-compliant-or-not-compliant-using-intune"></a>Configurações do iOS/iPadOS para marcar dispositivos como em conformidade ou não em conformidade usando o Intune
 
-Este artigo lista e descreve as diferentes configurações de conformidade que você pode definir em dispositivos iOS no Intune. Como parte de sua solução de MDM (gerenciamento de dispositivo móvel), use estas configurações para exigir um email, marcar dispositivos com raiz (desbloqueados) como não estando em conformidade, definir um nível de ameaça permitido, definir a expiração de senhas e muito mais.
+Este artigo lista e descreve as diferentes configurações de conformidade que você pode definir em dispositivos iOS/iPadOS no Intune. Como parte de sua solução de MDM (gerenciamento de dispositivo móvel), use estas configurações para exigir um email, marcar dispositivos com raiz (desbloqueados) como não estando em conformidade, definir um nível de ameaça permitido, definir a expiração de senhas e muito mais.
 
 Esse recurso aplica-se a:
 
@@ -86,11 +86,11 @@ Para obter detalhes sobre perfis de email, veja [configurar o acesso ao email da
 ### <a name="password"></a>Senha
 
 > [!NOTE]
-> Depois que uma política de conformidade ou de configuração for aplicada a um dispositivo iOS, os usuários deverão definir uma senha a cada 15 minutos. Os usuários serão notificados continuamente até que uma senha seja definida. Quando uma senha é definida para o dispositivo iOS, o processo de criptografia é iniciado automaticamente. O dispositivo permanece criptografado até que a senha seja desabilitada.
+> Depois que uma política de conformidade ou de configuração for aplicada a um dispositivo iOS/iPadOS, os usuários deverão definir uma senha a cada 15 minutos. Os usuários serão notificados continuamente até que uma senha seja definida. Quando uma senha é definida para o dispositivo iOS/iPadOS, o processo de criptografia é iniciado automaticamente. O dispositivo permanece criptografado até que a senha seja desabilitada.
 
 - **Exigir uma senha para desbloquear os dispositivos móveis**:  
   - **Não configurado** (*padrão*) — Essa configuração não é avaliada em relação à conformidade.  
-  - **Exigir** – Os usuários precisam inserir uma senha para acessar o dispositivo. Dispositivos iOS que usam uma senha são criptografados.
+  - **Exigir** – Os usuários precisam inserir uma senha para acessar o dispositivo. Dispositivos iOS/iPadOS que usam uma senha são criptografados.
 
 - **Senhas simples**:  
   - **Não configurado** (*padrão*) – os usuários podem criar senhas simples, como **1234** ou **1111**.
@@ -125,7 +125,7 @@ Para obter detalhes sobre perfis de email, veja [configurar o acesso ao email da
   Você pode restringir os aplicativos adicionando suas IDs do lote à política. Se um dispositivo tiver o aplicativo instalado, o dispositivo será marcado como não estando em conformidade.
 
   - **Nome do aplicativo** – Insira um nome amigável para ajudar a identificar a ID do lote.
-  - **ID do lote de aplicativo** – Insira o identificador do lote exclusivo atribuído pelo provedor do aplicativo. Para localizar a ID do pacote, veja [Como localizar a ID do pacote para um aplicativo iOS](https://support.microsoft.com/help/4294074/how-to-find-the-bundle-id-for-an-ios-app) (abre outro site da Microsoft).  
+  - **ID do lote de aplicativo** – Insira o identificador do lote exclusivo atribuído pelo provedor do aplicativo. Para localizar a ID do pacote, confira [Como localizar a ID do pacote para um aplicativo iOS/iPadOS](https://support.microsoft.com/help/4294074/how-to-find-the-bundle-id-for-an-ios-app) (abre outro site da Microsoft).  
 
 ## <a name="next-steps"></a>Próximas etapas
 

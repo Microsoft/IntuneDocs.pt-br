@@ -16,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: cafe9d3036a727d79de88eda050399138da55675
-ms.sourcegitcommit: 24487f078349795922dc497c952e8358cf767a1a
-ms.translationtype: MTE75
+ms.openlocfilehash: 7113552e09a7c7fa145a452e56575bfaf5297c3e
+ms.sourcegitcommit: c780e9988341a20f94fdeb8672bd13e0b302da93
+ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/04/2020
-ms.locfileid: "76977743"
+ms.lasthandoff: 02/20/2020
+ms.locfileid: "77514550"
 ---
 # <a name="in-development-for-microsoft-intune---february-2020"></a>Em desenvolvimento para o Microsoft Intune – fevereiro de 2020
 
@@ -65,8 +65,8 @@ Atualizaremos o aplicativo Portal da Empresa em dispositivos Windows para exibir
 O aplicativo Portal da Empresa mostrará mensagens de status de instalação de aplicativos adicionais aos usuários finais. As seguintes condições se aplicarão a novos recursos de dependência do Win32:
 - Falha ao instalar o aplicativo. As dependências definidas pelo administrador não foram atendidas.
 
-### <a name="retarget-web-clips-to-microsoft-edge-on-ios-devices---5455276---"></a>Redirecionar clipes da Web para o Microsoft Edge em dispositivos iOS<!-- 5455276 -->
-Os clipes da Web, que atuam como aplicativos Web fixados em dispositivos iOS, precisarão ser atualizados. Clipes da Web implantados recentemente serão abertos no Microsoft Edge em vez do Intune Managed Browser se for necessário abrir em um navegador protegido. Você precisa redirecionar os clipes da Web preexistentes para garantir que eles sejam abertos no Microsoft Edge em vez do Managed Browser.
+### <a name="retarget-web-clips-to-microsoft-edge-on-iosipados-devices---5455276---"></a>Redirecionar clipes da Web para o Microsoft Edge em dispositivos iOS/iPadOS<!-- 5455276 -->
+Os clipes da Web, que atuam como aplicativos Web fixados em dispositivos iOS/iPadOS, precisarão ser atualizados. Clipes da Web implantados recentemente serão abertos no Microsoft Edge em vez do Intune Managed Browser se for necessário abrir em um navegador protegido. Você precisa redirecionar os clipes da Web preexistentes para garantir que eles sejam abertos no Microsoft Edge em vez do Managed Browser.
 
 ### <a name="macos-company-portal-user-experience-improvements---5568987---"></a>Aprimoramentos na experiência do usuário do Portal da Empresa do macOS<!-- 5568987 -->
 Estamos fazendo aprimoramentos na experiência de registro do dispositivo macOS e no aplicativo Portal da Empresa para Mac. Você pode esperar o seguinte:
@@ -92,22 +92,22 @@ Um novo perfil de configuração de dispositivo macOS estará disponível, com a
 Aplica-se a:
 - macOS
 
-### <a name="vpn-profiles-with-ikev2-vpn-connections-can-use-always-on-with-ios-devices----1947932-idready---"></a>Perfis VPN com conexões VPN IKEv2 podem usar o Always On com dispositivos iOS <!-- 1947932 idready -->
-Em dispositivos iOS, você pode criar um perfil de VPN que usa uma conexão IKEv2 (**Configuração do dispositivo** > **Perfis** > **Criar perfil** > **iOS/iPadOS** para a plataforma > **VPN** para o tipo de perfil). Em uma atualização futura, você poderá configurar o AlwaysOn com IKEv2. Quando configurados, os perfis de VPN IKEv2 se conectam automaticamente e permanecem conectados (ou reconectam-se rapidamente) à VPN. Ele permanece conectado mesmo ao se movimentar entre redes ou reiniciar dispositivos.
+### <a name="vpn-profiles-with-ikev2-vpn-connections-can-use-always-on-with-iosipados-devices----1947932-idready---"></a>Perfis VPN com conexões VPN IKEv2 podem usar o Always On com dispositivos iOS/iPadOS <!-- 1947932 idready -->
+Em dispositivos iOS/iPadOS, você pode criar um perfil de VPN que usa uma conexão IKEv2 (**Configuração do dispositivo** > **Perfis** > **Criar perfil** > **iOS/iPadOS** para a plataforma > **VPN** para o tipo de perfil). Em uma atualização futura, você poderá configurar o AlwaysOn com IKEv2. Quando configurados, os perfis de VPN IKEv2 se conectam automaticamente e permanecem conectados (ou reconectam-se rapidamente) à VPN. Ele permanece conectado mesmo ao se movimentar entre redes ou reiniciar dispositivos.
 
-No iOS, a VPN AlwaysOn é limitada a perfis IKEv2.
+No iOS/iPadOS, a VPN AlwaysOn é limitada a perfis IKEv2.
 
-Para ver as configurações de IKEv2 atuais que você pode configurar, vá para [Adicionar configurações de VPN em dispositivos iOS no Microsoft Intune](../configuration/vpn-settings-ios.md#ikev2-settings).
+Para ver as configurações de IKEv2 atuais que você pode configurar, vá para [Adicionar configurações de VPN em dispositivos iOS/iPadOS no Microsoft Intune](../configuration/vpn-settings-ios.md#ikev2-settings).
 
 Aplica-se a:
 - iOS
 
-### <a name="improved-user-interface-experience-when-creating-configuration-profiles-on-ios-and-macos-devices---5569008-5569039-5569057-5569110-5569116-5569131-5569139-5569153-5859984-idready---"></a>Experiência aprimorada da interface do usuário ao criar perfis de configuração em dispositivos iOS e macOS<!-- 5569008-5569039-5569057-5569110-5569116-5569131-5569139-5569153-5859984 idready -->
-Quando você criar um perfil para dispositivos iOS ou macOS, a experiência no Centro de Administração do Gerenciamento de Ponto de Extremidade será atualizada. Essa alteração afeta os seguintes perfis de configuração de dispositivo (**Dispositivos** > **Perfis de Configuração** > **Criar perfil** > **iOS** ou **macOS** para plataforma):
+### <a name="improved-user-interface-experience-when-creating-configuration-profiles-on-iosipados-and-macos-devices---5569008-5569039-5569057-5569110-5569116-5569131-5569139-5569153-5859984-idready---"></a>Experiência aprimorada da interface do usuário ao criar perfis de configuração em dispositivos iOS/iPadOS e macOS<!-- 5569008-5569039-5569057-5569110-5569116-5569131-5569139-5569153-5859984 idready -->
+Quando você criar um perfil para dispositivos iOS/iPadOS ou macOS, a experiência no Centro de Administração do Gerenciamento de Ponto de Extremidade será atualizada. Essa alteração afeta os seguintes perfis de configuração de dispositivo (**Dispositivos** > **Perfis de Configuração** > **Criar perfil** > **iOS** ou **macOS** para plataforma):
 
-- Personalizado: iOS, macOS
-- Recursos do dispositivo: iOS, macOS
-- Restrições de dispositivo: iOS, macOS
+- Personalizado: iOS/iPadOS, macOS
+- Recursos do dispositivo: iOS/iPadOS, macOS
+- Restrições de dispositivo: iOS/iPadOS, macOS
 - Endpoint Protection: macOS
 - Extensões: macOS
 - Arquivo de preferência: macOS
@@ -182,7 +182,7 @@ Você poderá usar credenciais derivadas em dispositivos Android Enterprise tota
 ### <a name="use-antivirus-policy-to-manage-settings-for-microsoft-defender-antivirus-and-the-windows-security-experience--6131401---"></a>Usar a política de antivírus para gerenciar as configurações do Antivírus Microsoft Defender e da experiência de Segurança do Windows<!--6131401 -->
 No nó *Segurança do ponto de extremidade*, você poderá definir as configurações para **Antivírus**. Ao configurar a política para antivírus, você definirá configurações para seus dispositivos Windows 10 por meio de dois tipos de perfil:
 
-- Antivírus Microsoft Defender: gerencie configurações para proteção de nuvem, exclusões do Antivírus, correção, opções de verificação e muito mais.
+- Microsoft Defender Antivírus: gerencie configurações para proteção de nuvem, exclusões do Antivírus, correção, opções de verificação e muito mais.
 - Experiência de Segurança do Windows: gerencie como os usuários veem as configurações de Segurança do Windows em seus dispositivos. Você poderá configurar o que os usuários finais podem ver na central de Segurança do Microsoft Defender e as notificações recebidas. 
 
 <!-- ***********************************************-->

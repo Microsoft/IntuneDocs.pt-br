@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: e88741609dc1a351d1971c907cd2e442cfd4b905
-ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
-ms.translationtype: MTE75
+ms.openlocfilehash: 94ff28cf36457d2d8b20e173508b7c9894a7d5bc
+ms.sourcegitcommit: c780e9988341a20f94fdeb8672bd13e0b302da93
+ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "72999514"
+ms.lasthandoff: 02/20/2020
+ms.locfileid: "77510530"
 ---
 # <a name="whats-new-in-the-intune-classic-portal---previous-months"></a>Novidades do Portal Clássico do Intune – meses anteriores
 
@@ -42,11 +42,11 @@ Microsoft MyApps agora tem um suporte melhor dentro do navegador gerenciado. Os 
 
 O navegador gerenciado está recebendo ícones atualizados para versões de Android e iOS do aplicativo. O novo ícone conterá o emblema Intune atualizado para torná-lo mais consistente com outros aplicativos no Enterprise Mobility + Security (EM+S). Você pode ver o ícone novo para o Navegador Gerenciado nas [novidades na página de IU do aplicativo Intune](whats-new-app-ui.md).
 
-O Portal da Empresa também está recebendo ícones atualizados para as versões do Android, iOS e Windows do aplicativo para aprimorar a consistência com outros aplicativos EM+S. Esses ícones serão liberados gradualmente em plataformas a partir de abril até o fim de maio.
+O Portal da Empresa também está recebendo ícones atualizados para as versões do Android, iOS e Windows do aplicativo para aprimorar a consistência com outros aplicativos EM+S. Esses ícones serão lançados gradualmente nas plataformas de abril até o final de maio.
 
 #### <a name="sign-in-progress-indicator-in-android-company-portal---953374--"></a>Indicador de progresso de entrada no Portal da Empresa Android <!--953374-->
 
-Uma atualização para o aplicativo de Portal da empresa Android mostra um indicador de progresso de conexão quando o usuário inicia ou reinicia o aplicativo. O indicador avança em novos status, começando com "Conectando …", então, "Entrando..." e "Verificando os requisitos de segurança..." antes de permitir que o usuário acesse o aplicativo. Você pode ver as novas telas do aplicativo do Portal da Empresa para Android na [página Novidades de interface do usuário do aplicativo Intune](whats-new-app-ui.md).
+Uma atualização para o aplicativo de Portal da empresa Android mostra um indicador de progresso de conexão quando o usuário inicia ou reinicia o aplicativo. O indicador avança em novos status, começando com "Conectando …", então, "Entrando..." e "Verificando os requisitos de segurança..." antes de permitir que o usuário acesse o aplicativo. Você pode ver as novas telas do aplicativo de Portal da Empresa para Android nas [novidades na página de IU do aplicativo Intune](whats-new-app-ui.md).
 
 #### <a name="block-apps-from-accessing-sharepoint-online----679339---"></a>Bloquear o acesso dos aplicativos ao SharePoint Online <!-- 679339 -->
 
@@ -151,7 +151,7 @@ O aplicativo Portal da Empresa para Android atualizará sua interface do usuári
 
 - Cores: os cabeçalhos da guia Portal da Empresa estão coloridos na identidade visual definida pela TI.
 - Aplicativos: na guia **Aplicativos**, os botões **Aplicativos em destaque** e **Todos os aplicativos** foram atualizados.
-- Pesquisa: na guia **Aplicativos**, o botão **Pesquisa** é um botão de ação flutuante.
+- Pesquisar: na guia **Aplicativos**, o botão **Pesquisa** é um botão de ação flutuante.
 - Aplicativos de navegação: a exibição **Todos os aplicativos** mostra uma exibição com as guias **Em destaque**, **Todos** e **Categorias** para facilitar a navegação.
 - Suporte: as guias **Meus dispositivos** e **Entrar em contato com a TI** foram atualizadas para melhorar a legibilidade.
 
@@ -230,7 +230,7 @@ A partir de março, o aplicativo de Portal da empresa para Android seguirá [as 
 
 * __Cores__: cabeçalhos de guia podem ser coloridos de acordo com sua paleta de cores personalizada.
 * __Interface__: os botões Aplicativos em Destaque e Todos os Aplicativos foram atualizados na guia Aplicativos. O botão Pesquisa agora é um botão de ação flutuante.
-* __Navegação__: Todos os Aplicativos mostra uma exibição com guias de Em Destaque, Todos e Categorias para facilitar a navegação.
+* __Navegação__: todos os Aplicativos mostra uma exibição com guias de Em Destaque, Todos e Categorias para facilitar a navegação.
 * __Serviço__: as guias Meus Dispositivos e Contatar TI têm legibilidade aprimorada.
 
 Você pode localizar imagens de antes e depois na [página de atualizações da interface do usuário](whats-new-app-ui.md).
@@ -256,7 +256,7 @@ Você pode encontrar as novidades na visualização do Intune no Azure [aqui](wh
 Novos relatórios de proteção do aplicativo foram adicionados para dispositivos registrados e não registrados. Saiba mais sobre como é possível [monitorar as políticas de gerenciamento de aplicativo móvel com o Intune](../apps/app-protection-policies-monitor.md).
 
 #### <a name="android-711-support---694397--"></a>Suporte do Android 7.1.1 <!--694397-->
-O Intune agora dá suporte completo e gerencia o Android 7.1.1.
+O Intune agora dá suporte total e gerencia o Android 7.1.1.
 
 #### <a name="resolve-issue-where-ios-devices-are-inactive-or-the-admin-console-cannot-communicate-with-them---unknown--"></a>Resolva o problema em que os dispositivos iOS estão inativos ou o console de administração não pode se comunicar com eles <!--unknown-->
 Quando os dispositivos dos usuários perdem contato com o Intune, você pode fornecer novas etapas de solução de problemas para ajudá-los a recuperar o acesso aos recursos da empresa. Consulte [Os dispositivos estão inativos ou o console de administração não pode se comunicar com eles](../enrollment/troubleshoot-device-enrollment-in-intune.md#devices-are-inactive-or-the-admin-console-cant-communicate-with-them).
@@ -323,7 +323,7 @@ __A Autenticação Multifator no Registro movida para o portal do Azure__ <!--VS
 Anteriormente, os administradores iriam para o console do Intune ou para o console do Configuration Manager (anterior à versão de outubro de 2016) a fim de definir o MFA para os registros do Intune. Com esse recurso atualizado, você fará o logon no [portal do Microsoft Azure](https://manage.windowsazure.com) usando suas credenciais do Intune e configurará o MFA por meio do Azure AD. Saiba mais sobre isso [aqui](https://aka.ms/mfa_ad).
 
 __O aplicativo do Portal da Empresa para Android já disponível na China__ <!--VSO 658093-->
-Estamos publicando o aplicativo do Portal da Empresa para Android para download na China. Devido à ausência da Google Play Store na China, os dispositivos Android devem obter aplicativos dos mercados de aplicativo chineses. O aplicativo do Portal da Empresa para Android estará disponível para download nas seguintes lojas:
+Estamos publicando o aplicativo do Portal da Empresa para Android para download na China. Devido à ausência do Google Play Store na China, os dispositivos Android devem obter aplicativos de marketplaces de aplicativos chinês. O aplicativo do Portal da Empresa para Android estará disponível para download nas seguintes lojas:
 * [Baidu](https://go.microsoft.com/fwlink/?linkid=836946)
 * [Huawei](https://go.microsoft.com/fwlink/?linkid=836948)
 * [Tencent](https://go.microsoft.com/fwlink/?linkid=836949)
@@ -334,7 +334,7 @@ O aplicativo de Portal da Empresa para Android usa o Google Play Services para s
 |Console de Administração do Intune| Aplicativo do Portal da Empresa do Intune para Android |Site do Portal da Empresa do Intune|
 |---|---|---|
 |Apagamento completo| Remover um dispositivo remoto| Remover dispositivo (local e remoto)|
-|Apagamento seletivo| Redefinir dispositivo| Redefinir o dispositivo|
+|Limpeza seletiva| Redefinir dispositivo| Redefinir o dispositivo|
 |Implantações de aplicativo novo ou atualizado| Instalar aplicativos de linha de negócios disponíveis| Redefinição de senha de dispositivo|
 |Bloqueio remoto|||
 |Redefinição de senha|||
@@ -361,9 +361,9 @@ O novo aplicativo também permitirá que os usuários aproveitem os recursos de 
 > [!IMPORTANT]
 > __Uma atualização no Intune e Android for Work__ Embora possa implantar aplicativos do Android for Work com uma ação __Necessária__, você só pode implantar aplicativos como __Disponível__ se os grupos do Intune tiverem sido migrados para a nova experiência de grupos do Azure AD.
 
-__Agora, o SDK de Aplicativo do Intune para o plug-in do Cordova dá suporte ao MAM sem registro__ Desenvolvedores de aplicativos podem usar o SDK de Aplicativo do Intune para o plug-in do Cordova a fim de habilitar a funcionalidade de MAM sem registro do dispositivo em seus aplicativos baseados no Cordova para Android e iOS. Encontre o Plug-in Cordova do SDK de Aplicativo do Intune [aqui](https://github.com/msintuneappsdk/cordova-plugin-ms-intune-mam).
+__Agora o plug-in do Intune App SDK para Cordova dá suporte ao MAM sem registro__ Desenvolvedores de aplicativos podem usar o plug-in do Intune App SDK para Cordova a fim de habilitar a funcionalidade de MAM sem registro do dispositivo nos aplicativos baseados no Cordova para Android e iOS/iPadOS. Encontre o Plug-in Cordova do SDK de Aplicativo do Intune [aqui](https://github.com/msintuneappsdk/cordova-plugin-ms-intune-mam).
 
-__Agora, o componente Xamarin do SDK de Aplicativo dá suporte ao MAM sem registro__ Desenvolvedores de aplicativos podem usar o componente Xamarin do SDK de Aplicativo do Intune para habilitar a funcionalidade de MAM sem registro do dispositivo em seus aplicativos baseados no Xamarin para Android e iOS. Encontre o Componente Xamarin do SDK de Aplicativo do Intune [aqui](https://github.com/msintuneappsdk/intune-app-sdk-xamarin).
+__Agora, o componente Xamarin do Intune App SDK dá suporte ao MAM sem registro__ Desenvolvedores de aplicativos podem usar o componente Xamarin do Intune App SDK para habilitar a funcionalidade de MAM sem registro do dispositivo em seus aplicativos baseados no Xamarin para Android e iOS/iPadOS. Encontre o Componente Xamarin do SDK de Aplicativo do Intune [aqui](https://github.com/msintuneappsdk/intune-app-sdk-xamarin).
 
 ### <a name="notices"></a>Avisos
 

@@ -1,6 +1,6 @@
 ---
 title: Códigos de erro e de status no Microsoft Intune – Azure | Microsoft Docs
-description: Veja uma lista dos erros, código de status, descrições e resoluções ao usar dispositivos gerenciados MDM, obter acesso a recursos da empresa, erros em dispositivos iOS e erros de resposta do OMA no Microsoft Intune.
+description: Veja uma lista dos erros, código de status, descrições e resoluções ao usar dispositivos gerenciados MDM, obter acesso a recursos da empresa, erros em dispositivos iOS/iPadOS e erros de resposta do OMA no Microsoft Intune.
 keywords: ''
 author: MandiOhlinger
 ms.author: mandia
@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: ''
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 17a8ebfcad2bcf485771f26184377aeb2c4bf4e1
-ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
-ms.translationtype: MTE75
+ms.openlocfilehash: bf31ce5f812603534f30b3b3aa3836ede0be6f6d
+ms.sourcegitcommit: c780e9988341a20f94fdeb8672bd13e0b302da93
+ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "72509794"
+ms.lasthandoff: 02/20/2020
+ms.locfileid: "77510572"
 ---
 # <a name="common-error-codes-and-descriptions-in-microsoft-intune"></a>Códigos de erro comuns e descrições no Microsoft Intune
 
@@ -78,7 +78,7 @@ Se você precisar de ajuda do suporte, veja [obter suporte para o Microsoft Intu
 |-2016341111|0x87D11389|O dispositivo iOS retornou um status ocioso inesperado|
 |-2016341112|0x87D11388|O dispositivo iOS está ocupado no momento|
 
-## <a name="errors-returned-by-ios-devices"></a>Erros retornados por dispositivos iOS
+## <a name="errors-returned-by-iosipados-devices"></a>Erros retornados por dispositivos iOS/iPadOS
 
 ### <a name="company-portal-errors"></a>Erros do Portal da Empresa
 
@@ -87,7 +87,7 @@ Se você precisar de ajuda do suporte, veja [obter suporte para o Microsoft Intu
 |__Problema de servidor interno__ <br>Parece que você não conseguiu fazer contato conosco devido a um erro interno no nosso servidor. Tente novamente e, em seguida, entre em contato com seu administrador de TI se o problema persistir.|Erro 500|Esse erro provavelmente é causado por um problema no serviço Intune. O problema deve ser resolvido no lado do serviço Intune e provavelmente não devido a problemas no lado do cliente.|
 |__Temporariamente indisponível__ <br>Parece que não foi possível falar conosco porque nosso serviço estava temporariamente indisponível. Tente novamente e, em seguida, entre em contato com seu administrador de TI se o problema persistir.|Erro 503|Isso ocorreu provavelmente devido a um problema temporário do serviço Intune, como a manutenção do serviço. O problema deve ser resolvido no lado do serviço Intune e provavelmente não devido a problemas no lado do cliente.|
 |__Não foi possível se conectar ao servidor__ <br>Parece que não foi possível falar conosco. Tente novamente e, em seguida, entre em contato com seu administrador de TI se o problema persistir.|Não associado a um código de status HTTP|Uma conexão segura com o servidor não pôde ser feita, provavelmente devido a um problema de SSL com os certificados que estão sendo usados. Esse problema pode ser devido a configurações de cliente não estarem em conformidade com os requisitos da Apple para Segurança de Transporte de Aplicativo (ATS).|
-|__Algo deu errado__ <br>Não foi possível carregar o cliente do Portal da Empresa. Tente novamente e, em seguida, entre em contato com seu administrador de TI se o problema persistir.|Erro 400|Qualquer erro com um código de status HTTP começando com 400 que não tem uma mensagem de erro mais específica verá esse. Esse é um erro do lado do cliente que acontece no aplicativo do Portal da Empresa para iOS.|
+|__Algo deu errado__ <br>Não foi possível carregar o cliente do Portal da Empresa. Tente novamente e, em seguida, entre em contato com seu administrador de TI se o problema persistir.|Erro 400|Qualquer erro com um código de status HTTP começando com 400 que não tem uma mensagem de erro mais específica verá esse. Esse é um erro do lado do cliente que acontece no aplicativo do Portal da Empresa para iOS/iPadOS.|
 |__Não é possível acessar o servidor__ <br>Parece que não foi possível falar conosco. Tente novamente e, em seguida, entre em contato com seu administrador de TI se o problema persistir.|Erro 500|Qualquer erro com um código de status HTTP começando com 500 que não tem uma mensagem de erro mais específica verá esse. Esse é um erro de lado do serviço que acontece no serviço Intune.|
 
 ### <a name="service-errors"></a>Erros do serviço
@@ -276,7 +276,7 @@ Se você precisar de ajuda do suporte, veja [obter suporte para o Microsoft Intu
 |-2016332105|0x87D136B7|4007: formato de arquivo não reconhecido|
 |-2016332106|0x87D136B6|4006: a data de remoção do perfil está no passado|
 |-2016332107|0x87D136B5|4005: a senha não está em conformidade|
-|-2016332108|0x87D136B4|4004: o usuário cancelou a instalação|
+|-2016332108|0x87D136B4|4004: instalação cancelada pelo usuário|
 |-2016332109|0x87D136B3|4003: perfil não enfileirado para instalação|
 |-2016332110|0x87D136B2|4002: UUID duplicado|
 |-2016332111|0x87D136B1|4001: falha na instalação|
@@ -309,67 +309,67 @@ Se você precisar de ajuda do suporte, veja [obter suporte para o Microsoft Intu
 |-2016344010|0x87D10836|DCMO(1402): falha na operação|
 |-2016344011|0x87D10835|DCMO(1401): o usuário optou por não aceitar a operação quando solicitado|
 |-2016344012|0x87D10834|DCMO(1400): erro do cliente|
-|-2016344108|0x87D107D4|DCMO(1204): a Capacidade de Dispositivo está desabilitada e o Usuário está autorizado a reabilitá-la|
-|-2016344109|0x87D107D3|DCMO(1203): a Capacidade de Dispositivo está desabilitada e o Usuário não está autorizado a reabilitá-la|
-|-2016344110|0x87D107D2|DCMO(1202): a operação de habilitação é executada com êxito, mas a Capacidade de Dispositivo está atualmente desanexada|
-|-2016344111|0xF3FB4D95|DCMO(1201): a operação de habilitação é executada com êxito e a Capacidade de Dispositivo está atualmente anexada|
-|-2016344112|0x87D107D0|DCMO (1200): a operação é executada com sucesso|
-|-2016345595|0x87D10205|Syncml(517): a resposta a um comando atômico era demasiado extensa para caber numa única mensagem.|
-|-2016345596|0x87D10204|Syncml(516): o comando estava dentro de um elemento Atômico e o Atômico falhou. Este comando não foi revertido com êxito.|
-|-2016345598|0x87D10202|Syncml(514): o comando SyncML não foi concluído com êxito porque a operação já tinha sido cancelada antes do processamento do comando.|
-|-2016345599|0x87D10201|Syncml(513): o destinatário não dá suporte ou recusa-se a dar suporte à versão especificada do Protocolo de Sincronização de SyncML utilizado na Mensagem de SyncML de solicitação.|
-|-2016345600|0x87D10200|Syncml(512): ocorreu um erro no aplicativo durante a sessão de sincronização.|
-|-2016345601|0x87D101FF|Syncml(511): ocorreu um erro grave no servidor durante o processamento do pedido.|
+|-2016344108|0x87D107D4|DCMO(1204): a Funcionalidade do Dispositivo está desabilitada e o Usuário tem permissão para habilitá-la novamente|
+|-2016344109|0x87D107D3|DCMO(1203): a Funcionalidade do Dispositivo está desabilitada e o Usuário não tem permissão para habilitá-la novamente|
+|-2016344110|0x87D107D2|DCMO(1202): a operação de habilitação foi executada com êxito, mas a Funcionalidade do Dispositivo está desanexada no momento|
+|-2016344111|0xF3FB4D95|DCMO(1201): a operação de habilitação foi executada com êxito e a Funcionalidade do Dispositivo está desanexada no momento|
+|-2016344112|0x87D107D0|DCMO(1200): a operação foi executada com êxito|
+|-2016345595|0x87D10205|Syncml(517): a resposta a um comando atômico era muito grande para caber em uma única mensagem.|
+|-2016345596|0x87D10204|Syncml(516): o comando estava dentro de um elemento do Atomic e o Atomic falhou. Este comando não foi revertido com êxito.|
+|-2016345598|0x87D10202|Syncml(514): o comando SyncML não foi concluído com êxito, uma vez que a operação já foi cancelada antes de processar o comando.|
+|-2016345599|0x87D10201|Syncml(513): o destinatário não dá suporte ou se recusa a dar suporte à versão especificada do Protocolo de Sincronização SyncML usado na Mensagem do SyncML da solicitação.|
+|-2016345600|0x87D10200|Syncml(512): ocorreu um erro de aplicativo durante a sessão de sincronização.|
+|-2016345601|0x87D101FF|Syncml(511): ocorreu um erro grave no servidor ao processar a solicitação.|
 |-2016345602|0x87D101FE|Syncml(510): ocorreu um erro ao processar a solicitação. O erro está relacionado a uma falha no armazenamento de dados do destinatário.|
-|-2016345603|0x87D101FD|Syncml(509): reservado para utilização futura.|
+|-2016345603|0x87D101FD|Syncml(509): Reservado para uso futuro.|
 |-2016345604|0x87D101FC|Syncml(508): ocorreu um erro que exige uma atualização do estado de sincronização atual do cliente com o servidor.|
-|-2016345605|0x87D101FB|Syncml(507): o erro causou a falha de todos os comandos SyncML num tipo de elemento Atômico.|
-|-2016345606|0x87D101FA|Syncml(506): ocorreu um erro no aplicativo durante o processamento do pedido.|
-|-2016345607|0x87D101F9|Syncml(505): o destinatário não dá suporte ou recusa-se a dar suporte à versão especificada do DTD de SyncML utilizada na Mensagem de SyncML de solicitação.|
-|-2016345608|=0x87D101F8|Syncml(504): o destinatário, ao atuar como gateway ou proxy, não recebeu uma resposta em tempo hábil do destinatário a montante especificado pelo URI (por exemplo, HTTP, FTP, LDAP) ou de qualquer outro destinatário auxiliar (por exemplo, DNS) ao qual necessitava acessar para tentar concluir o pedido.|
-|-2016345609|0x87D101F7|Syncml(503): o destinatário não consegue processar a solicitação neste momento devido a uma sobrecarga temporária ou a manutenção do destinatário.|
-|-2016345610|0x87D101F6|Syncml(502): o destinatário, ao atuar como gateway ou proxy, recebeu uma resposta inválida do destinatário a montante ao qual acessou uma tentativa de satisfazer a solicitação.|
-|-2016345611|0x87D101F5|Syncml(501): o destinatário não dá suporte ao comando necessário para satisfazer o pedido.|
-|-2016345612|0x87D101F4|Syncml(500): o destinatário encontrou uma condição inesperada que o impediu de satisfazer a solicitação|
+|-2016345605|0x87D101FB|Syncml(507): o erro fez com que todos os comandos de SyncML dentro de um tipo de elemento do Atomic falhassem.|
+|-2016345606|0x87D101FA|Syncml(506): ocorreu um erro de aplicativo ao processar a solicitação.|
+|-2016345607|0x87D101F9|Syncml(505): o destinatário não dá suporte ou se recusa a dar suporte à versão especificada do DTD do SyncML usado na Mensagem do SyncML da solicitação.|
+|-2016345608|=0x87D101F8|Syncml(504): o destinatário, ao atuar como gateway ou proxy, não recebeu uma resposta oportuna do destinatário upstream especificado pelo URI (por exemplo, HTTP, FTP, LDAP) ou outro destinatário auxiliar (por exemplo, DNS) que precisava acessar ao tentar concluir a solicitação.|
+|-2016345609|0x87D101F7|Syncml(503): o servidor atualmente não pode manipular a solicitação devido a uma sobrecarga temporária ou manutenção do servidor.|
+|-2016345610|0x87D101F6|Syncml(502): o destinatário, ao atuar como gateway ou proxy, recebeu uma resposta inválida do destinatário upstream que ele acessou ao tentar atender à solicitação.|
+|-2016345611|0x87D101F5|Syncml(501): o destinatário não dá suporte ao comando necessário para atender à solicitação.|
+|-2016345612|0x87D101F4|Syncml(500): o destinatário encontrou uma condição inesperada que o impediu de atender à solicitação|
 |-2016345684|0x87D101AC|Syncml(428): falha ao mover|
-|-2016345685|0x87D101AB|Syncml(427): não é possível excluir o elemento pai porque contém elementos filhos.|
+|-2016345685|0x87D101AB|Syncml(427): o pai não pode ser excluído, pois contém filhos.|
 |-2016345686|0x87D101AA|Syncml(426): item parcial não aceito.|
-|-2016345687|0x87D101A9|Syncml(425): falha ao executar o comando solicitado porque o remetente não tem ACL (permissões de controle de acesso) adequadas em relação ao destinatário.|
-|-2016345688|0x87D101A8|Syncml(424): o objeto em segmentos foi recebido, mas o tamanho do objeto recebido não correspondeu ao tamanho declarado no primeiro segmento.|
-|-2016345689|0x87D101A7|Syncml(423): falha ao executar o comando solicitado porque o item "Eliminado de Forma Recuperável" foi "Eliminado de Forma Definitiva" no servidor anteriormente.|
-|-2016345690|0x87D101A6|Syncml(422): falha ao executar o comando solicitado no servidor porque o script CGI no LocURI estava formado incorretamente.|
-|-2016345691|0x87D101A5|Syncml(421): falha ao executar o comando solicitado no servidor porque a gramática de pesquisa especificada era desconhecida.|
-|-2016345692|0x87D101A4|Syncml(420): o destinatário não dispõe de mais espaço de armazenamento para os dados de sincronização restantes.|
-|-2016345693|0x87D101A3|Syncml(419): a solicitação do cliente criou um conflito que foi resolvido pelo comando prevalecente do servidor.|
-|-2016345694|0x87D101A2|Syncml(418): falha ao executar o comando Put ou Add solicitado porque o destino já existe.|
-|-2016345695|0x87D101A1|Syncml(417): falha momentânea ao executar a solicitação. O originador deverá repetir a solicitação mais tarde.|
-|-2016345696|0x87D101A0|Syncml(416): falha ao executar a solicitação porque o tamanho especificado em bytes era demasiado grande.|
-|-2016345697|0x87D1019F|Syncml(415): tipo de suporte de mídia ou formato sem suporte.|
-|-2016345698|0x87D1019E|Syncml(414): falha ao executar o comando solicitado porque o URI de destino é demasiado extenso para a capacidade ou disponibilidade de processamento do destinatário.|
-|-2016345699|0x87D1019D|Syncml(413): o destinatário está se recusando a executar o comando solicitado porque o item solicitado é maior do que o destinatário é capaz ou está disposto a processar.|
-|-2016345700|0x87D1019C|Syncml(412): falha ao executar o comando solicitado no destinatário porque estava incompleto ou formado incorretamente.|
-|-2016345701|0x87D1019B|Syncml(411): o comando solicitado deve estar acompanhado do tamanho em bytes ou da informação de comprimento no tipo de elemento Meta.|
-|-2016345702|0x87D1019A|Syncml(410): o destino solicitado já não se encontra no destinatário e nenhum URI de reencaminhamento é conhecido.|
-|-2016345703|0x87D10199|Syncml(409): falha ao executar o pedido devido a um conflito de atualização entre as versões dos dados no cliente e no servidor.|
-|-2016345704|0x87D10198|Syncml(408): não foi recebida uma mensagem esperada dentro do prazo atribuído.|
-|-2016345705|0x87D10197|Syncml(407): falha ao executar o comando solicitado porque o originador deve disponibilizar a autenticação correta.|
-|-2016345706|0x87D10196|Syncml(406): falha ao executar o comando solicitado porque não tinha suporte um recurso opcional na solicitação.|
+|-2016345687|0x87D101A9|Syncml(425): o comando solicitado falhou porque o remetente não tem ACLs (permissões de controle de acesso) adequadas no destinatário.|
+|-2016345688|0x87D101A8|Syncml(424): o objeto em partes foi recebido, mas o tamanho do objeto recebido não corresponde ao tamanho declarado dentro da primeira parte.|
+|-2016345689|0x87D101A7|Syncml(423): p comando solicitado falhou porque o item com "Exclusão reversível" sofreu uma "Exclusão irreversível" previamente no servidor.|
+|-2016345690|0x87D101A6|Syncml(422): o comando solicitado falhou no servidor porque o script de CGI no LocURI foi formado incorretamente.|
+|-2016345691|0x87D101A5|Syncml(421): o comando solicitado falhou no servidor porque a gramática de pesquisa especificada não era conhecida.|
+|-2016345692|0x87D101A4|Syncml(420): o destinatário não tem mais espaço de armazenamento para os dados de sincronização restantes.|
+|-2016345693|0x87D101A3|Syncml(419): a solicitação do cliente criou um conflito que foi resolvido pela vitória do comando do servidor.|
+|-2016345694|0x87D101A2|Syncml(418): o comando Put ou Add solicitado falhou porque o destino já existe.|
+|-2016345695|0x87D101A1|Syncml(417): a solicitação falhou neste momento e o remetente deverá repetir a solicitação mais tarde.|
+|-2016345696|0x87D101A0|Syncml(416): a solicitação falhou porque o tamanho em bytes especificado na solicitação era muito grande.|
+|-2016345697|0x87D1019F|Syncml(415): formato ou tipo de mídia sem suporte.|
+|-2016345698|0x87D1019E|Syncml(414): o comando solicitado falhou porque o URI de destino é muito longo para o que o destinatário está apto ou disposto a processar.|
+|-2016345699|0x87D1019D|Syncml(413): o destinatário está se recusando a executar o comando solicitado porque o item solicitado é maior do que o destinatário está apto ou disposto a processar.|
+|-2016345700|0x87D1019C|Syncml(412): o comando solicitado falhou no destinatário porque estava incompleto ou formado incorretamente.|
+|-2016345701|0x87D1019B|Syncml(411): o comando solicitado deve ser acompanhado por informações sobre o tamanho em bytes ou o comprimento do tipo de elemento Meta.|
+|-2016345702|0x87D1019A|Syncml(410): o destino solicitado não está mais no destinatário e o URI de encaminhamento não é conhecido.|
+|-2016345703|0x87D10199|Syncml(409): a operação solicitada falhou devido a um conflito de atualização entre as versões dos dados do cliente e do servidor.|
+|-2016345704|0x87D10198|Syncml(408): uma mensagem esperada não foi recebida dentro do período necessário.|
+|-2016345705|0x87D10197|Syncml(407): o comando solicitado falhou porque o remetente deve fornecer a autenticação adequada.|
+|-2016345706|0x87D10196|Syncml(406): o comando solicitado falhou porque não havia suporte para um recurso opcional na solicitação.|
 |-2016345707|0x87D10195|Syncml(405): o comando solicitado não é permitido no destino.|
-|-2016345708|0x87D10194|Syncml(404): o destino solicitado não foi localizado.|
-|-2016345709|0x87D10193|Syncml(403): falha ao executar o comando solicitado, mas o destinatário compreendeu o comando pretendido.|
-|-2016345710|0x87D10192|Syncml(402): falha ao executar o comando solicitado porque é necessário o pagamento adequado.|
-|-2016345711|0x87D10191|Syncml(401): falha ao executar o comando solicitado porque o solicitante deve disponibilizar a autenticação adequada.|
-|-2016345712|0x87D10190|Syncml(400): não foi possível executar o comando solicitado devido à sintaxe formada incorretamente no comando.|
-|-2016345807|0x87D10131|Syncml(305): o destino solicitado deve ser acessado pelo URI de proxy especificado.|
+|-2016345708|0x87D10194|Syncml(404): o destino solicitado não foi encontrado.|
+|-2016345709|0x87D10193|Syncml(403): o comando solicitado falhou, mas o destinatário compreendeu o comando solicitado.|
+|-2016345710|0x87D10192|Syncml(402): o comando solicitado falhou porque o pagamento adequado é necessário.|
+|-2016345711|0x87D10191|Syncml(401): o comando solicitado falhou porque o remetente deve fornecer uma autenticação adequada.|
+|-2016345712|0x87D10190|Syncml(400): o comando solicitado não pôde ser executado devido à sintaxe malformada no comando.|
+|-2016345807|0x87D10131|Syncml(305): o destino solicitado deve ser acessado por meio do URI de proxy especificado.|
 |-2016345808|0x87D10130|Syncml (304): O comando de SyncML solicitado não foi executado no destino.|
-|-2016345809|0x87D1012F|Syncml(303): é possível localizar o destino solicitado em outro URI.|
-|-2016345810|0x87D1012E|Syncml(302): o destino solicitado foi movido temporariamente para outro URI.|
+|-2016345809|0x87D1012F|Syncml(303): o destino solicitado pode ser encontrado em outro URI.|
+|-2016345810|0x87D1012E|Syncml(302): o destino solicitado foi transferido temporariamente para um URI diferente.|
 |-2016345811|0x87D1012D|Syncml(301): o destino solicitado tem um novo URI.|
-|-2016345812|0x87D1012C|Syncml(300): o destino solicitado é uma das várias alternativas de destino solicitadas.|
-|-2016345896|0x87D100D8|Syncml(216): um comando estava dentro de um elemento do Atômico e o Atômico falhou. Este comando foi revertido com êxito.|
-|-2016345897|0x87D100D7|Syncml(215): não foi executado um comando, como resultado da interação do usuário, o qual optou por não aceitar a escolha.|
+|-2016345812|0x87D1012C|Syncml(300): o destino solicitado é um de inúmeros destinos solicitados com várias alternativas.|
+|-2016345896|0x87D100D8|Syncml(216): um comando estava dentro de um elemento do Atomic e o Atomic falhou. Este comando foi revertido com êxito.|
+|-2016345897|0x87D100D7|Syncml(215): um comando não foi executado como resultado da interação do usuário, e o usuário optou por não aceitar a opção.|
 |-2016345898|0x87D100D6|Syncml(214): operação cancelada. O comando SyncML foi concluído com êxito, mas não serão processados mais comandos na sessão.|
-|-2016345899|0x87D100D5|Syncml(213): o item em segmento foi aceito e colocado em buffer|
+|-2016345899|0x87D100D5|Syncml(213): item em partes aceito e armazenado em buffer|
 |-2016345900|0x87D100D4|Syncml(212): autenticação aceita. Nenhuma autenticação adicional é necessária para o restante da sessão de sincronização. Este código de resposta pode ser usado apenas em resposta a uma solicitação em que credenciais foram fornecidas.|
 |-2016345901|0x87D100D3|Syncml(211): item não excluído. O item solicitado não foi encontrado. Ele pode ter sido excluído previamente.|
 |-2016345902|0x87D100D2|Syncml(210): excluir sem arquivamento. A resposta indica que os dados solicitados foram excluídos com êxito, mas não foram arquivados antes da exclusão porque esse recurso OPCIONAL não era compatível com a implementação.|

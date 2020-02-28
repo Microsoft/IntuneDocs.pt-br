@@ -1,11 +1,11 @@
 ---
 title: Definir configurações de VPN em dispositivos macOS no Microsoft Intune – Azure | Microsoft Docs
-description: Adicione ou crie um perfil de configuração de VPN (rede virtual privada), incluindo os detalhes da conexão, túnel dividido, configurações de VPN personalizadas com os pares identificador, chave e valor, configurações de proxy com um script de configuração, endereço IP ou FQDN e porta TCP em Microsoft Intune em dispositivos que executam o macOS.
+description: Adicione ou crie um perfil de configuração de VPN (rede virtual privada), incluindo os detalhes da conexão, o túnel dividido, as configurações de VPN personalizadas com o identificador, os pares chave e valor, as configurações de proxy com um script de configuração, endereço IP ou FQDN e porta TCP no Microsoft Intune em dispositivos que executam o macOS.
 keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 09/09/2019
+ms.date: 02/18/2020
 ms.topic: reference
 ms.service: microsoft-intune
 ms.subservice: configuration
@@ -15,12 +15,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: e0bb2cb757e944369642807f117683dad3a9805a
-ms.sourcegitcommit: e166b9746fcf0e710e93ad012d2f52e2d3ed2644
-ms.translationtype: MTE75
+ms.openlocfilehash: b20a7eca6f71d46380f9fcdb1674226cc54a104f
+ms.sourcegitcommit: c780e9988341a20f94fdeb8672bd13e0b302da93
+ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/19/2019
-ms.locfileid: "75206254"
+ms.lasthandoff: 02/20/2020
+ms.locfileid: "77510772"
 ---
 # <a name="add-vpn-settings-on-macos-devices-in-microsoft-intune"></a>Adicionar configurações de VPN em dispositivos macOS no Microsoft Intune
 
@@ -35,7 +35,7 @@ Dependendo das configurações que você escolher, nem todos os valores na lista
 [Crie um perfil de configuração do dispositivo](vpn-settings-configure.md).
 
 > [!NOTE]
-> Essas configurações estão disponíveis para todos os tipos de registro. Para obter mais informações sobre os tipos de registro, consulte [registro do MacOS](../enrollment/macos-enroll.md).
+> Essas configurações estão disponíveis para todos os tipos de registro. Para obter mais informações sobre os tipos de registro, confira [Registro do macOS](../enrollment/macos-enroll.md).
 
 ## <a name="base-vpn-settings"></a>Configurações de VPN de base
 
@@ -53,13 +53,13 @@ Dependendo das configurações que você escolher, nem todos os valores na lista
   - **VPN personalizado**
 - **Túnel dividido**: **habilite** ou **desabilite** essa opção, que permite que os dispositivos decidam qual conexão usar dependendo do tráfego. Por exemplo, um usuário em um hotel usará a conexão VPN para acessar arquivos de trabalho, mas usará a rede padrão do hotel para navegação regular na Web.
 
-<!--- **Per-app VPN** - Select this option if you want to associate this VPN connection with an iOS or macOS app so that the connection will be opened when the app is run. You can associate the VPN profile with an app when you assign the software. For more information, see [How to assign and monitor apps](../apps/apps-deploy.md). --->
+<!--- **Per-app VPN** - Select this option if you want to associate this VPN connection with an iOS/iPadOS or macOS app so that the connection will be opened when the app is run. You can associate the VPN profile with an app when you assign the software. For more information, see [How to assign and monitor apps](../apps/apps-deploy.md). --->
 
 ## <a name="custom-vpn-settings"></a>Configurações de VPN personalizado
 
 Se você selecionou **VPN Personalizada**, defina essas configurações adicionais:
 
-- **Identificador de VPN**: Insira um identificador para o aplicativo VPN que você está usando. Esse identificador é fornecido pelo seu provedor de VPN.
+- **Identificador de VPN**: insira um identificador para o aplicativo de VPN que você está usando. Esse identificador é fornecido pelo seu provedor de VPN.
 - **Insira pares de chave e valor para os atributos da VPN personalizada**: adicione ou importe **chaves** e **valores** que personalizam sua conexão VPN. Esses valores geralmente são fornecidos pelo seu provedor de VPN.
 
 ## <a name="proxy-settings"></a>Configurações de proxy
@@ -72,4 +72,4 @@ Se você selecionou **VPN Personalizada**, defina essas configurações adiciona
 
 O perfil foi criado, mas não está fazendo nada ainda. Em seguida, [atribua o perfil](device-profile-assign.md) e [monitore seu status](device-profile-monitor.md).
 
-Defina as configurações de VPN em dispositivos [Android](vpn-settings-android.md), [Android Enterprise](vpn-settings-android-enterprise.md), [Ios](vpn-settings-ios.md)e [Windows 10](vpn-settings-windows-10.md) .
+Defina as configurações de VPN em dispositivos [Android](vpn-settings-android.md), [Android Enterprise](vpn-settings-android-enterprise.md), [iOS/iPadOS](vpn-settings-ios.md) e [Windows 10](vpn-settings-windows-10.md).

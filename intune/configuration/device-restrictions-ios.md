@@ -1,12 +1,12 @@
 ---
-title: Configurações de dispositivo iOS no Microsoft Intune – Azure | Microsoft Docs
+title: Configurações de dispositivos iOS/iPadOS no Microsoft Intune – Azure | Microsoft Docs
 titleSuffix: ''
-description: Adicione, defina ou crie configurações em dispositivos iOS para restringir recursos, o que inclui definir os requisitos de senha, controlar a tela bloqueada, usar aplicativos internos, adicionar aplicativos aprovados ou restritos, lidar com dispositivos Bluetooth, conectar-se à nuvem para backup e armazenamento, habilitar o modo de quiosque, adicionar domínios e controlar como os usuários interagem com o navegador da Web Safari no Microsoft Intune.
+description: Adicione, defina ou crie configurações em dispositivos iOS/iPadOS para restringir recursos, o que inclui definir os requisitos de senha, controlar a tela bloqueada, usar aplicativos internos, adicionar aplicativos aprovados ou restritos, lidar com dispositivos Bluetooth, conectar-se à nuvem para backup e armazenamento, habilitar o modo de quiosque, adicionar domínios e controlar como os usuários interagem com o navegador da Web Safari no Microsoft Intune.
 keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 02/04/2020
+ms.date: 02/18/2020
 ms.topic: reference
 ms.service: microsoft-intune
 ms.subservice: configuration
@@ -16,18 +16,18 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure; seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: dc252068d963d75bf6ade79852d6ba01bda8800b
-ms.sourcegitcommit: 9b29478f815e10c46c8030abe0146d601ce0e28c
-ms.translationtype: MTE75
+ms.openlocfilehash: 1e352ca0c0100ebe1756d621feb725e040521901
+ms.sourcegitcommit: c780e9988341a20f94fdeb8672bd13e0b302da93
+ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/06/2020
-ms.locfileid: "77051602"
+ms.lasthandoff: 02/20/2020
+ms.locfileid: "77513054"
 ---
 # <a name="ios-and-ipados-device-settings-to-allow-or-restrict-features-using-intune"></a>Configurações de dispositivo iOS e iPadOS para permitir ou restringir recursos usando o Intune
 
 Este artigo lista e descreve as diferentes configurações que você pode controlar em dispositivos iOS e iPadOS. Como parte de sua solução de MDM (gerenciamento de dispositivo móvel), use essas configurações para permitir ou desabilitar recursos, definir regras de senha, permitir ou restringir aplicativos específicos e muito mais.
 
-Essas configurações são adicionadas a um perfil de configuração do dispositivo no Intune e, em seguida, atribuídas ou implantadas em dispositivos iOS.
+Essas configurações são adicionadas a um perfil de configuração do dispositivo no Intune e, em seguida, atribuídas ou implantadas em dispositivos iOS/iPadOS.
 
 > [!TIP]
 > Essas configurações usam as configurações de MDM da Apple. Para obter mais informações sobre essas configurações, confira [Configurações de gerenciamento de dispositivo móvel da Apple](https://support.apple.com/guide/mdm/welcome/web) (abre o site da Apple).
@@ -37,7 +37,7 @@ Essas configurações são adicionadas a um perfil de configuração do disposit
 [Criar um perfil de configuração de restrições de dispositivo](../device-restrictions-configure.md).
 
 > [!NOTE]
-> Essas configurações se aplicam a diferentes tipos de registro, com algumas configurações sendo aplicadas a todas as opções de registro. Para obter mais informações sobre os diferentes tipos de registro, confira [Registro do iOS](../ios-enroll.md).
+> Essas configurações se aplicam a diferentes tipos de registro, com algumas configurações sendo aplicadas a todas as opções de registro. Para obter mais informações sobre os diferentes tipos de registro, confira [Registro do iOS/iPadOS](../ios-enroll.md).
 
 ## <a name="general"></a>Geral
 
@@ -45,7 +45,7 @@ Essas configurações são adicionadas a um perfil de configuração do disposit
 
 - **Compartilhar dados de uso**: Escolha **Bloquear** para impedir o dispositivo de enviar dados de diagnóstico e uso para a Apple. **Não configurado** (padrão) permite que esses dados sejam enviados.
 
-- **Captura de tela**: Escolha **Bloquear** para impedir capturas de tela ou outras capturas no dispositivo. No iOS 9.0 e mais recente, essa opção também bloqueia gravações de tela. **Não configurado** (padrão) permite que o usuário capture o conteúdo da tela como uma imagem ou um vídeo.
+- **Captura de tela**: Escolha **Bloquear** para impedir capturas de tela ou outras capturas no dispositivo. No iOS/iPadOS 9.0 e em versões mais recentes, essa opção também bloqueia gravações de tela. **Não configurado** (padrão) permite que o usuário capture o conteúdo da tela como uma imagem ou um vídeo.
 
 ### <a name="settings-apply-to-device-enrollment-automated-device-enrollment-supervised"></a>As configurações se aplicam a(o): registro de dispositivo, registro de dispositivo automatizado (supervisionado)
 
@@ -61,6 +61,7 @@ Essas configurações são adicionadas a um perfil de configuração do disposit
 
   Esse recurso aplica-se a:  
   - iOS 9.3.2 e mais recente
+  - iPadOS 13.0 e versões mais recentes
 
 - **Observação de tela remota pelo aplicativo Classroom**: Escolha **Bloquear** para impedir o aplicativo Classroom de exibir remotamente a tela no dispositivo. **Não configurado** (padrão) permite que o aplicativo Classroom da Apple exiba a tela.
 
@@ -68,21 +69,22 @@ Essas configurações são adicionadas a um perfil de configuração do disposit
 
   Esse recurso aplica-se a:  
   - iOS 9.3 e versões mais recentes
+  - iPadOS 13.0 e versões mais recentes
 
-- **Observação da tela não solicitada pelo aplicativo Classroom**: Se essa opção é definida como **Permitir**, os professores podem observar silenciosamente a tela dos dispositivos iOS dos alunos usando o aplicativo Classroom sem o conhecimento deles. Os dispositivos de alunos registrados em uma aula por meio do aplicativo Classroom concedem automaticamente a permissão ao professor do curso. **Não configurado** (padrão) impede esse recurso.
+- **Observação da tela não solicitada pelo aplicativo Classroom**: Se essa opção é definida como **Permitir**, os professores podem observar silenciosamente a tela dos dispositivos iOS/iPadOS dos alunos usando o aplicativo Classroom sem o conhecimento deles. Os dispositivos de alunos registrados em uma aula por meio do aplicativo Classroom concedem automaticamente a permissão ao professor do curso. **Não configurado** (padrão) impede esse recurso.
 
   Para usar essa configuração, defina a configuração **Captura de tela** como **Bloquear**.
 
 - **Confiança em aplicativos empresariais**: Escolha **Bloquear** para remover o botão **Confiar em Desenvolvedor Empresarial** em Configurações > Geral > Perfis e Gerenciamento de Dispositivos no dispositivo. **Não configurado** (padrão) permite que o usuário opte por confiar em aplicativos que não foram baixados da loja de aplicativos.
-- **Modificação de conta**: Quando essa opção é definida como **Bloquear**, o usuário não pode atualizar as configurações específicas do dispositivo no aplicativo de configurações do iOS. Por exemplo, o usuário não pode criar novas contas de dispositivo ou alterar o nome de usuário ou a senha. **Não configurado** (padrão) permite que os usuários alterem as configurações.
+- **Modificação de conta**: Quando essa opção é definida como **Bloquear**, o usuário não pode atualizar as configurações específicas do dispositivo no aplicativo de configurações do iOS/iPadOS. Por exemplo, o usuário não pode criar novas contas de dispositivo ou alterar o nome de usuário ou a senha. **Não configurado** (padrão) permite que os usuários alterem as configurações.
 
-  Esse recurso também se aplica às configurações acessíveis pelo aplicativo Ajustes do iOS, como Mail, Contatos, Calendário, Twitter e mais. Esse recurso não se aplica a aplicativos com configurações de conta que não podem ser definidas no aplicativo Ajustes do iOS, por exemplo, o aplicativo Microsoft Outlook.
+  Esse recurso também se aplica às configurações acessíveis pelo aplicativo Ajustes do iOS/iPadOS, como Mail, Contatos, Calendário, Twitter e mais. Esse recurso não se aplica a aplicativos com configurações de conta que não podem ser definidas no aplicativo Ajustes do iOS/iPadOS, por exemplo, o aplicativo Microsoft Outlook.
 
 - **Tempo de tela**: escolha a opção **Bloquear** para impedir que os usuários definam suas próprias restrições em Tempo de Tela (configurações do dispositivo). **Não configurado** permite que o usuário configure restrições de dispositivo (como controles parentais ou restrições de privacidade e conteúdo) no dispositivo.
 
   Essa configuração foi renomeada de **Habilitando restrições nas configurações do dispositivo**. Impacto dessa alteração:  
   
-  - iOS 11.4.1 e versões anteriores: **Bloquear** impede que os usuários finais definam suas próprias restrições nas configurações do dispositivo. O comportamento é o mesmo; não há nenhuma alteração para os usuários finais.
+  - iOS 11.4.1 e posteriores: **Bloquear** impede que os usuários finais definam suas próprias restrições nas configurações do dispositivo. O comportamento é o mesmo; não há nenhuma alteração para os usuários finais.
   - iOS 12.0 e versões mais recentes: a opção **Bloquear** impede que os usuários finais configurem o próprio **Tempo de Tela** nas configurações do dispositivo (Configurações > Geral > Tempo de Tela), incluindo restrições de conteúdo e privacidade. Dispositivos atualizados para o iOS 12.0 não verão mais a guia Restrições nas configurações do dispositivo (Configurações > Geral > Gerenciamento de Dispositivo > Perfil de Gerenciamento > Restrições). Essas configurações estão no **Tempo de Tela**.
   
 - **Uso da opção Apagar todo o conteúdo e as configurações do dispositivo**: escolha a opção **Bloquear** para que os usuários não possam usar a opção Apagar todo o conteúdo e as configurações no dispositivo. **Não configurado** (padrão) fornece aos usuários acesso a essas configurações.
@@ -91,7 +93,7 @@ Essas configurações são adicionadas a um perfil de configuração do disposit
 - **Modificação de papel de parede**: A opção **Bloquear** impede que o papel de parede seja alterado. **Não configurado** (padrão) permite que o usuário altere o papel de parede do dispositivo.
 - **Modificação das configurações de confiança de aplicativo empresarial**: A opção **Bloquear** impede o usuário de alterar as configurações de confiança em aplicativos empresariais nos dispositivos supervisionados. **Não configurado** (padrão) permite que o usuário confie em aplicativos que não foram baixados da loja de aplicativos.
 - **Alterações no perfil de configuração**: A opção **Bloquear** impede alterações do perfil de configuração no dispositivo. **Não configurado** (padrão) permite que o usuário instale perfis de configuração.
-- **Bloqueio de Ativação**: Escolha **Permitir** para habilitar o Bloqueio de Ativação em dispositivos iOS supervisionados. O Bloqueio de Ativação dificulta a reativação de um dispositivo perdido ou roubado.
+- **Bloqueio de Ativação**: Escolha **Permitir** para habilitar o Bloqueio de Ativação em dispositivos iOS/iPadOS supervisionados. O Bloqueio de Ativação dificulta a reativação de um dispositivo perdido ou roubado.
 - **Bloquear a remoção de aplicativo**: Escolha **Bloquear** para impedir os usuários de remover aplicativos. **Não configurado** (padrão) permite que os usuários removam aplicativos do dispositivo.
 - **Permitir acessórios USB enquanto o dispositivo estiver bloqueado**: **Permitir** deixa que os acessórios USB troquem dados com um dispositivo que tenha sido bloqueado por mais de uma hora. **Não configurado** (padrão) não atualiza o Modo restrito de USB no dispositivo, e os acessórios USB serão impedidos de transferir dados do dispositivo se estiverem bloqueados por mais de uma hora.
 - **Forçar a data e hora automáticas**: A opção **Exigir** força os dispositivos supervisionados a definir a Data e a Hora automaticamente. O fuso horário do dispositivo é atualizado quando o dispositivo está conectado à rede celular ou ao Wi-Fi e com os serviços de localização habilitados.
@@ -99,24 +101,28 @@ Essas configurações são adicionadas a um perfil de configuração do disposit
 
   Esse recurso aplica-se a:  
   - iOS 11.3 e mais recente
+  - iPadOS 13.0 e versões mais recentes
 
 - **Permitir que o Classroom seja bloqueado para um aplicativo e bloqueie o dispositivo sem avisar**: a opção **Habilitar** permite que o professor bloqueie aplicativos ou bloqueie o dispositivo usando o aplicativo Classroom sem avisar o aluno. Bloquear aplicativos significa que o dispositivo pode acessar apenas aplicativos especificados pelo professor. **Não configurado** (padrão) impede que professores bloqueiem aplicativos ou dispositivos usando o aplicativo de Sala de Aula sem avisar o aluno.
 
   Esse recurso aplica-se a:  
   - iOS 11.0 e mais recente
+  - iPadOS 13.0 e versões mais recentes
 
 - **Ingressar automaticamente nas aulas do Classroom sem avisar**: a opção **Habilitar** permite automaticamente que os alunos ingressem em uma aula que está no aplicativo Classroom sem avisar o professor. **Não configurado** (padrão) avisa o professor de que alunos desejam ingressar em uma aula que está no aplicativo de Sala de Aula.
 
   Esse recurso aplica-se a:  
   - iOS 11.0 e mais recente
+  - iPadOS 13.0 e versões mais recentes
 
 - **Bloquear a criação de VPN**: A opção **Bloquear** impede os usuários de criar definições de configuração de VPN. **Não configurado** (padrão) permite aos usuários criar VPNs no dispositivo.
 - **Modificação das configurações do eSIM**: **Bloquear** impede que os usuários removam ou adicionem um plano de celular ao eSIM no dispositivo. **Não configurado** (padrão) permite que os usuários alterem as configurações.
 
   Esse recurso aplica-se a:  
   - iOS 12.1 e mais recente
+  - iPadOS 13.0 e versões mais recentes
 
-- **Adiar atualizações de software**: quando definido como **Não configurado** (padrão), as atualizações de software são exibidas no dispositivo conforme a Apple as libera. Por exemplo, se uma atualização do iOS é lançada pela Apple em uma data específica, essa atualização naturalmente aparece no dispositivo perto da data de lançamento.
+- **Adiar atualizações de software**: quando definido como **Não configurado** (padrão), as atualizações de software são exibidas no dispositivo conforme a Apple as libera. Por exemplo, se uma atualização do iOS/iPadOS é lançada pela Apple em uma data específica, essa atualização naturalmente aparece no dispositivo perto da data de lançamento.
 
   **Habilitar** permite que você atrase quando as atualizações de software são mostradas em dispositivos, de 0 a 90 dias. Essa configuração não controla quando as atualizações são ou não instaladas. 
 
@@ -126,6 +132,7 @@ Essas configurações são adicionadas a um perfil de configuração do disposit
 
     Essa configuração aplica-se a:  
     - iOS 11.3 e mais recente
+    - iPadOS 13.0 e versões mais recentes
 
 ## <a name="password"></a>Senha
 
@@ -159,13 +166,13 @@ Essas configurações são adicionadas a um perfil de configuração do disposit
 
 - **Número de falhas de início de sessão antes de limpar o dispositivo**: insira o número de falhas de entrada permitido antes do dispositivo ser apagado (entre 4 e 11).
   
-  O iOS tem uma segurança interna que pode afetar essa configuração. Por exemplo, o iOS pode atrasar o gatilho da política, dependendo do número de falhas de entrada. Ele também pode considerar a inserção repetida da mesma senha como uma única tentativa. O [guia de segurança do iOS](https://www.apple.com/business/site/docs/iOS_Security_Guide.pdf) da Apple (abre o site da Apple) é um bom recurso e fornece detalhes mais específicos sobre senhas.
+  O iOS/iPadOS tem uma segurança interna que pode afetar essa configuração. Por exemplo, o iOS/iPadOS pode atrasar o acionamento da política, dependendo do número de falhas de entrada. Ele também pode considerar a inserção repetida da mesma senha como uma única tentativa. O [Guia de segurança do iOS/iPadOS](https://www.apple.com/business/site/docs/iOS_Security_Guide.pdf) da Apple (abre o site da Apple) é um bom recurso e fornece detalhes mais específicos sobre senhas.
   
-- **Máximo de minutos após o bloqueio de tela antes que a senha seja exigida**<sup>1</sup>: Insira por quanto tempo o dispositivo permanecerá ocioso antes que o usuário precise inserir novamente sua senha. Se o tempo inserido for maior do que o valor definido no dispositivo, o dispositivo ignorará o tempo inserido por você. Compatível com dispositivos iOS 8.0 e mais recentes.
+- **Máximo de minutos após o bloqueio de tela antes que a senha seja exigida**<sup>1</sup>: Insira por quanto tempo o dispositivo permanecerá ocioso antes que o usuário precise inserir novamente sua senha. Se o tempo inserido for maior do que o valor definido no dispositivo, o dispositivo ignorará o tempo inserido por você. Com suporte em dispositivos que executam o iOS 8.0+ e o iPadOS 13.0+.
 
 - **Máximo de minutos de inatividade até a tela ser bloqueada**<sup>1</sup>: Insira o número máximo de minutos de inatividade permitido no dispositivo até a tela ser bloqueada.
 
-  **Opções do iOS**:  
+  **Opções do iOS/iPadOS**:  
 
   - **Não configurado** (padrão): o Intune não afeta nessa configuração.
   - **Imediatamente**: a tela é bloqueada após 30 segundos de inatividade.
@@ -174,7 +181,7 @@ Essas configurações são adicionadas a um perfil de configuração do disposit
   - **3**: a tela é bloqueada após 3 minutos de inatividade.
   - **4**: a tela é bloqueada após 4 minutos de inatividade.
   - **5**: a tela é bloqueada após 5 minutos de inatividade.
-    
+
   **Opções do iPadOS**:  
 
   - **Não configurado** (padrão): o Intune não afeta nessa configuração.
@@ -184,7 +191,7 @@ Essas configurações são adicionadas a um perfil de configuração do disposit
   - **10**: a tela é bloqueada após 10 minutos de inatividade.
   - **15**: a tela é bloqueada após 15 minutos de inatividade.
 
-  Se um valor não se aplicar ao iOS ou ao iPadOS, a Apple usará o *menor* valor mais próximo. Por exemplo, se você inserir `4` minutos, os dispositivos iPadOS usarão `2` minutos. Se você inserir `10` minutos, os dispositivos iOS usarão `5` minutos. Essa é uma limitação da Apple.
+  Se um valor não se aplicar ao iOS e ao iPadOS, a Apple usará o *menor* valor mais próximo. Por exemplo, se você inserir `4` minutos, os dispositivos iPadOS usarão `2` minutos. Se você inserir `10` minutos, os dispositivos iOS usarão `5` minutos. Essa é uma limitação da Apple.
   
   > [!NOTE]
   > A interface do usuário do Intune dessa configuração não separa os valores compatíveis com o iOS e o iPadOS. A interface do usuário poderá ser atualizada em uma versão futura.
@@ -197,6 +204,7 @@ Essas configurações são adicionadas a um perfil de configuração do disposit
 
   O Face ID se aplica ao:  
   - iOS 11.0 e mais recente
+  - iPadOS 13.0 e versões mais recentes
 
 ### <a name="settings-apply-to-automated-device-enrollment-supervised"></a>As configurações se aplicam a(o): Registro de dispositivo automatizado (supervisionado)
 
@@ -208,8 +216,9 @@ Essas configurações são adicionadas a um perfil de configuração do disposit
 
     O Face ID se aplica ao:  
     - iOS 11.0 e mais recente
+    - iPadOS 13.0 e versões mais recentes
 
-- **Bloquear o Preenchimento Automático de senha**: Escolha **Bloquear** para impedir o uso do recurso AutoPreenchimento de Senhas no iOS. Escolher **Bloquear** também tem o seguinte impacto:
+- **Bloquear o Preenchimento Automático de senha**: Escolha **Bloquear** para impedir o uso do recurso AutoPreenchimento de Senhas no iOS/iPadOS. Escolher **Bloquear** também tem o seguinte impacto:
 
   - Os usuários não receberão uma solicitação para usar uma senha salva no Safari ou em qualquer outro aplicativo.
   - As senhas fortes automáticas ficam desabilitadas, e o usuário não recebe sugestões de senhas fortes.
@@ -222,6 +231,7 @@ Essas configurações são adicionadas a um perfil de configuração do disposit
 
   Esse recurso aplica-se a:  
   - iOS 11.0 e mais recente
+  - iPadOS 13.0 e versões mais recentes
   
 <sup>1</sup> Se você definir as configurações **Máximo de minutos de inatividade até o bloqueio da tela** e **Máximo de minutos após o bloqueio de tela antes que a senha seja exigida**, elas serão aplicadas em sequência. Por exemplo, se você definir o valor das duas configurações como **5** minutos, a tela desligará automaticamente após cinco minutos e o dispositivo será bloqueado após outros cinco minutos. No entanto, se o usuário desliga a tela manualmente, a segunda configuração é aplicada imediatamente. No mesmo exemplo, o dispositivo será bloqueado cinco minutos depois que o usuário desligar a tela.
 
@@ -247,25 +257,25 @@ Essas configurações são adicionadas a um perfil de configuração do disposit
   > [!NOTE]
   > Quando essa configuração é bloqueada, os teclados de terceiros instalados por meio da App Store também são bloqueados.
 
-  - **Permitir que aplicativos não gerenciados leiam contas de contatos gerenciadas**: Quando essa opção é definida como **Permitir**, aplicativos não gerenciados, como o aplicativo Contatos interno do iOS, podem ler e acessar informações de contato em aplicativos gerenciados, incluindo o aplicativo móvel do Outlook. **Não configurado** (padrão) impede a leitura, incluindo a remoção de duplicatas, do aplicativo Contatos interno do dispositivo.  
+  - **Permitir que aplicativos não gerenciados leiam contas de contatos gerenciadas**: Quando essa opção é definida como **Permitir**, aplicativos não gerenciados, como o aplicativo Contatos interno do iOS/iPadOS, podem ler e acessar informações de contato em aplicativos gerenciados, incluindo o aplicativo móvel do Outlook. **Não configurado** (padrão) impede a leitura, incluindo a remoção de duplicatas, do aplicativo Contatos interno do dispositivo.  
   
     Essa configuração permite ou impede a leitura de informações de contato. Ela não controla a sincronização de contatos entre os aplicativos.
   
     Para usar essa configuração, defina a configuração **Exibindo documentos corporativos em aplicativos não gerenciados** como **Bloquear**.
 
-  Para obter mais informações sobre essas duas configurações e o impacto delas na sincronização de exportação de contatos do Outlook para o iOS, confira [Dica de suporte: usar as configurações de perfil personalizado do Intune com o aplicativo nativo Contatos do iOS](https://techcommunity.microsoft.com/t5/Intune-Customer-Success/Support-Tip-Use-Intune-custom-profile-settings-with-the-iOS/ba-p/298453).
+  Para obter mais informações sobre essas duas configurações e o impacto delas na sincronização de exportação de contatos do Outlook para o iOS/iPadOS, confira [Dica de suporte: usar as configurações de perfil personalizado do Intune com o aplicativo nativo Contatos do iOS/iPadOS](https://techcommunity.microsoft.com/t5/Intune-Customer-Success/Support-Tip-Use-Intune-custom-profile-settings-with-the-iOS/ba-p/298453).
 
 - **Tratar o AirDrop como um destino não gerenciado**: A opção **Exigir** força o AirDrop a ser considerado uma reprodução automática não gerenciada. Isso impede que os aplicativos gerenciados enviem dados usando o Airdrop. 
 - **Exibindo documentos não corporativos em aplicativos corporativos**: A opção **Bloquear** impede a exibição de documentos não corporativos em aplicativos corporativos. **Não configurado** (padrão) permite que qualquer documento seja exibido em aplicativos gerenciados corporativos.
 
-  A configuração **Bloquear** também impede a sincronização da exportação de contatos no Outlook para o iOS. Para obter mais informações, confira [Dica de suporte: como habilitar a sincronização de contatos do Outlook para o iOS com controles de MDM do iOS 12](https://techcommunity.microsoft.com/t5/Intune-Customer-Success/Support-Tip-Enabling-Outlook-iOS-Contact-Sync-with-iOS12-MDM/ba-p/298453).
+  A configuração **Bloquear** também impede a sincronização da exportação de contatos no Outlook para o iOS/iPadOS. Para obter mais informações, confira [Dica de suporte: como habilitar a sincronização de contatos do Outlook para o iOS/iPadOS com controles de MDM do iOS 12](https://techcommunity.microsoft.com/t5/Intune-Customer-Success/Support-Tip-Enabling-Outlook-iOS-Contact-Sync-with-iOS12-MDM/ba-p/298453).
 
 ### <a name="settings-apply-to-device-enrollment-automated-device-enrollment-supervised"></a>As configurações se aplicam a(o): registro de dispositivo, registro de dispositivo automatizado (supervisionado)
 
 - **Exigir a senha da iTunes Store para todas as compras**: a opção **Exigir** exige que o usuário insira a senha da ID da Apple para cada compra no aplicativo ou no iTunes. A opção **Não configurado** (padrão) permite compras sem solicitar uma senha a cada vez.
 - **Compras no aplicativo**: Escolha **Bloquear** para impedir compras no aplicativo por meio da loja. **Não configurado** (padrão) permite compras na loja em um aplicativo em execução.
 - **Baixar conteúdo da iBook Store sinalizado como 'Erotismo'** : Escolha **Bloquear** para impedir os usuários de baixar uma mídia da iBook Store que esteja marcada como Erotismo. **Não configurado** (padrão) permite que o usuário baixe livros da categoria "Erotismo".
-- **Permitir que aplicativos gerenciados gravem contatos em contas de contatos não gerenciadas**: quando essa opção é definida como **Permitir**, os aplicativos gerenciados, como o aplicativo móvel do Outlook, podem salvar ou sincronizar informações de contato, incluindo contatos comerciais e corporativos, no aplicativo Contatos interno do iOS. Quando essa opção é definida como **Não configurado** (padrão), os aplicativos gerenciados não podem salvar informações de contato no aplicativo Contatos interno do iOS no dispositivo nem sincronizar essas informações com ele.
+- **Permitir que aplicativos gerenciados gravem contatos em contas de contatos não gerenciadas**: quando essa opção é definida como **Permitir**, os aplicativos gerenciados, como o aplicativo móvel do Outlook, podem salvar ou sincronizar informações de contato, incluindo contatos comerciais e corporativos, no aplicativo Contatos interno do iOS/iPadOS. Quando essa opção é definida como **Não configurado** (padrão), os aplicativos gerenciados não podem salvar informações de contato no aplicativo Contatos interno do iOS/iPadOS no dispositivo nem sincronizar essas informações com ele.
   
   Para usar essa configuração, defina a configuração **Exibindo documentos corporativos em aplicativos não gerenciados** como **Bloquear**.
 
@@ -275,28 +285,29 @@ Essas configurações são adicionadas a um perfil de configuração do disposit
 
 - **App Store**: A opção **Bloquear** impede o acesso à App Store nos dispositivos supervisionados. **Não configurado** (padrão) permite o acesso.
 
-  No iOS 13.0 em diante, essa configuração exige dispositivos supervisionados.
+  No iOS/iPadOS 13.0 em diante, essa configuração exige dispositivos supervisionados.
 
   - **Instalação de aplicativos da App Store**: Escolha **Bloquear** para bloquear a App Store na tela inicial do dispositivo. Os usuários finais podem continuar a usar o iTunes ou o Apple Configurator para instalar aplicativos. **Não configurado** (padrão) permite a App Store na tela inicial.
-  - **Downloads de aplicativo automáticos**: Escolha **Bloquear** para impedir o download automático de aplicativos comprados em outros dispositivos. Isso não afeta as atualizações dos aplicativos existentes. **Não configurado** (padrão) permite o download dos aplicativos comprados em outros dispositivos iOS para o dispositivo.
+  - **Downloads de aplicativo automáticos**: Escolha **Bloquear** para impedir o download automático de aplicativos comprados em outros dispositivos. Isso não afeta as atualizações dos aplicativos existentes. **Não configurado** (padrão) permite o download dos aplicativos comprados em outros dispositivos iOS/iPadOS para o dispositivo.
 
-- **Conteúdo adulto de música, podcast ou notícias do iTunes**: Escolha **Bloquear** para impedir o conteúdo adulto de música, podcast ou notícias do iTunes. **Não configurado** (padrão) permite ao dispositivo acessar conteúdo classificado como adulto na loja. O iOS 13 e mais recente pode exigir apenas dispositivos supervisionados. 
+- **Conteúdo adulto de música, podcast ou notícias do iTunes**: Escolha **Bloquear** para impedir o conteúdo adulto de música, podcast ou notícias do iTunes. **Não configurado** (padrão) permite ao dispositivo acessar conteúdo classificado como adulto na loja.
 
-  No iOS 13.0 em diante, essa configuração exige dispositivos supervisionados.
+  No iOS/iPadOS 13.0 em diante, essa configuração exige dispositivos supervisionados.
 
 - **Adição de amigos no Game Center**: A opção **Bloquear** impede os usuários de adicionar amigos do Game Center. **Não configurado** (padrão) permite que o usuário adicione amigos ao Game Center.
 
-  No iOS 13.0 em diante, essa configuração exige dispositivos supervisionados.
+  No iOS/iPadOS 13.0 em diante, essa configuração exige dispositivos supervisionados.
 
 - **Game Center**: **Bloqueie** o uso do aplicativo Game Center. **Não configurado** (padrão) permite o uso do aplicativo Game Center no dispositivo.
 - **Jogo para vários participantes**: Escolha **Bloquear** para impedir jogos para múltiplos jogadores. **Não configurado** (padrão) permite que o usuário execute jogos para vários participantes no dispositivo.
 
-  No iOS 13.0 em diante, essa configuração exige dispositivos supervisionados.
+  No iOS/iPadOS 13.0 em diante, essa configuração exige dispositivos supervisionados.
 
 - **Acesso à unidade de rede no aplicativo Arquivos**: usando o protocolo SMB, os dispositivos podem acessar arquivos ou outros recursos em um servidor de rede. A opção **Desabilitar** impede o acesso a arquivos em uma unidade SMB de rede. **Não configurado** (padrão) permite o acesso.
 
   Esse recurso aplica-se a:  
-  - iOS e iPadOS 13.0 e mais recente
+  - iOS 13.0 e mais recente
+  - iPadOS 13.0 e versões mais recentes
 
 ## <a name="built-in-apps"></a>Aplicativos internos
 
@@ -325,11 +336,11 @@ Essas configurações são adicionadas a um perfil de configuração do disposit
 
 - **Câmera**: Escolha **Bloquear** para impedir o acesso à câmera no dispositivo. **Não configurado** (padrão) permite o acesso à câmera do dispositivo.
 
-  No iOS 13.0 em diante, essa configuração exige dispositivos supervisionados.
+  No iOS/iPadOS 13.0 em diante, essa configuração exige dispositivos supervisionados.
 
   - **FaceTime**: Escolha **Bloquear** para impedir o acesso ao aplicativo FaceTime. **Não configurado** (padrão) permite o acesso ao aplicativo FaceTime no dispositivo.
 
-    No iOS 13.0 em diante, essa configuração exige dispositivos supervisionados.
+    No iOS/iPadOS 13.0 em diante, essa configuração exige dispositivos supervisionados.
 
 - **Filtro de profanidade da Siri**: A opção **Exigir** impede que a Siri dite ou use linguagem imprópria.
 
@@ -349,16 +360,19 @@ Essas configurações são adicionadas a um perfil de configuração do disposit
 
   Esse recurso aplica-se a:  
   - iOS 4.0 e mais recente
+  - iPadOS 13.0 e versões mais recentes
 
 - **Buscar meu iPhone**: a opção **Não configurado** (padrão) permite o uso do recurso do aplicativo Buscar para obter a localização aproximada do dispositivo. A opção **Bloquear** impede esse recurso no aplicativo Buscar. 
 
   Esse recurso aplica-se a:  
-  - iOS 13.0 e iPadOS 13.0 e mais recente
+  - iOS 13.0 e mais recente
+  - iPadOS 13.0 e versões mais recentes
 
 - **Buscar meus Amigos**: a opção **Não configurado** (padrão) permite usar o recurso do aplicativo Buscar para encontrar a família e os amigos em um dispositivo Apple ou no iCloud.com. A opção **Bloquear** impede esse recurso no aplicativo Buscar.
 
   Esse recurso aplica-se a:  
-  - iOS 13.0 e iPadOS 13.0 e mais recente
+  - iOS 13.0 e mais recente
+  - iPadOS 13.0 e versões mais recentes
 
 - **Alterações nas configurações do aplicativo Buscar meus amigos**: A opção **Bloquear** impede alterações nas configurações do aplicativo Buscar Amigos. **Não configurado** (padrão) permite que o usuário altere as configurações do aplicativo Buscar meus amigos.
 
@@ -368,11 +382,11 @@ Essas configurações são adicionadas a um perfil de configuração do disposit
 
 - **Safari**: **Bloqueie** o uso do navegador Safari no dispositivo. **Não configurado** (padrão) permite que os usuários utilizem o navegador Safari.
 
-  No iOS 13.0 em diante, essa configuração exige dispositivos supervisionados.
+  No iOS/iPadOS 13.0 em diante, essa configuração exige dispositivos supervisionados.
 
 - **Preenchimento Automático do Safari**: A opção **Bloquear** desabilita o recurso de preenchimento automático do Safari no dispositivo. **Não configurado** (padrão) permite que os usuários alterem as configurações de preenchimento automático no navegador da Web.
 
-  No iOS 13.0 em diante, essa configuração exige dispositivos supervisionados.
+  No iOS/iPadOS 13.0 em diante, essa configuração exige dispositivos supervisionados.
 
 ## <a name="restricted-apps"></a>Aplicativos restritos
 
@@ -399,7 +413,7 @@ Para adicionar aplicativos a essas listas, você pode:
 
 ## <a name="show-or-hide-apps"></a>Mostrar ou ocultar aplicativos
 
-Aplica-se aos dispositivos que executam o iOS 9.3 ou mais recente.
+Aplica-se a dispositivos que executam o iOS 9.3+ e o iPadOS 13.0+.
 
 ### <a name="settings-apply-to-automated-device-enrollment-supervised"></a>As configurações se aplicam a(o): Registro de dispositivo automatizado (supervisionado)
 
@@ -459,6 +473,7 @@ Observação necessária para Roaming de Dados (dica ou observação importante 
 
   Esse recurso aplica-se a:  
   - iOS 11.0 e mais recente
+  - iPadOS 13.0 e versões mais recentes
 
 - **Modificação do Hotspot Pessoal pelo usuário**: quando essa opção é definida como **Bloquear**, o usuário não pode alterar a configuração de hotspot pessoal. A opção **Não configurado** (padrão) permite que os usuários finais habilitem ou desabilitem os hotspots pessoais.
 
@@ -466,6 +481,7 @@ Observação necessária para Roaming de Dados (dica ou observação importante 
 
   Esse recurso aplica-se a:  
   - iOS 12.2 e mais recente
+  - iPadOS 13.0 e versões mais recentes
 
 - **Ingressar nas redes Wi-Fi usando somente perfis de configuração**: A opção **Exigir** força o dispositivo a usar somente as redes Wi-Fi configuradas por meio de perfis de configuração do Intune. **Não configurado** (padrão) permite que o dispositivo use outras redes Wi-Fi.
 
@@ -478,7 +494,8 @@ Observação necessária para Roaming de Dados (dica ou observação importante 
   A definição dessa configuração não impede que os usuários selecionem uma rede Wi-Fi.
 
   Esse recurso aplica-se a:  
-  - iOS e iPadOS 13.0 e mais recente
+  - iOS 13.0 e mais recente
+  - iPadOS 13.0 e versões mais recentes
 
 ## <a name="connected-devices"></a>Dispositivos conectados
 
@@ -495,7 +512,7 @@ Observação necessária para Roaming de Dados (dica ou observação importante 
 - **AirDrop**: A opção **Bloquear** impede o uso do AirDrop no dispositivo. **Não configurado** (padrão) permite o uso do recurso AirDrop para trocar conteúdo com dispositivos próximos.
 - **Emparelhamento do Apple Watch**: A opção **Bloquear** impede o emparelhamento com um Apple Watch. **Não configurado** (padrão) permite que o dispositivo emparelhe com um Apple Watch.
 - **Modificação do Bluetooth**: A opção **Bloquear** impede o usuário final de alterar as configurações do Bluetooth no dispositivo. **Não configurado** (padrão) permite que o usuário altere as configurações.
-- **Emparelhamento de host para controlar os dispositivos que podem ser emparelhados com um dispositivo iOS**: a opção **Não configurado** (padrão) permite o emparelhamento de host para que administrador possa controlar quais dispositivos podem ser emparelhados com um dispositivo iOS. **Bloquear** impede o emparelhamento do host.
+- **Emparelhamento de host para controlar os dispositivos que podem ser emparelhados com um dispositivo iOS/iPadOS**: a opção **Não configurado** (padrão) permite o emparelhamento de host para que administrador possa controlar quais dispositivos podem ser emparelhados com um dispositivo iOS/iPadOS. **Bloquear** impede o emparelhamento do host.
 - **Bloquear o AirPrint**: Escolha **Bloquear** para impedir o uso do recurso AirPrint no dispositivo. **Não configurado** (padrão) permite que o usuário use o AirPrint.
   - **Bloquear o armazenamento de credenciais do AirPrint em um Conjunto de chaves**: A opção **Bloquear** impede o uso do armazenamento do Conjunto de Chaves para o nome de usuário e a senha no dispositivo. **Não configurado** (padrão) permite o armazenamento do nome de usuário e senha do AirPrint no aplicativo Keychain.
   - **Exigir um certificado TLS confiável para AirPrint**: A opção **Exigir** força o dispositivo a usar certificados confiáveis para comunicação de impressão do TLS.
@@ -504,11 +521,13 @@ Observação necessária para Roaming de Dados (dica ou observação importante 
 
   Esse recurso aplica-se a:  
   - iOS 11.0 e mais recente
+  - iPadOS 13.0 e versões mais recentes
 
 - **Acesso a arquivos na unidade USB**: os dispositivos podem se conectar e abrir arquivos em uma unidade USB. A opção **Desabilitar** impede o acesso do dispositivo à unidade USB no aplicativo Arquivos quando um USB está conectado ao dispositivo. A desabilitação desse recurso também impede que os usuários finais transfiram arquivos para uma unidade USB conectada a um iPad. A opção **Não configurado** (padrão) permite o acesso a uma unidade USB no aplicativo Arquivos.
 
   Esse recurso aplica-se a:  
-  - iOS e iPadOS 13.0 e mais recente
+  - iOS 13.0 e mais recente
+  - iPadOS 13.0 e versões mais recentes
 
 ## <a name="keyboard-and-dictionary"></a>Teclado e dicionário
 
@@ -523,7 +542,8 @@ Observação necessária para Roaming de Dados (dica ou observação importante 
 - **QuickPath**: a opção **Não configurado** (padrão) permite que os usuários usem o QuickPath, o que permite uma entrada contínua no teclado do dispositivo. Os usuários podem digitar algo passando o dedo pelas chaves para criar palavras. A opção **Bloquear** impede que os usuários usem o QuickPath. 
 
   Esse recurso aplica-se a:  
-  - iOS 13.0 e iPadOS 13.0 e mais recente
+  - iOS 13.0 e mais recente
+  - iPadOS 13.0 e versões mais recentes
 
 ## <a name="cloud-and-storage"></a>Nuvem e Armazenamento
 
@@ -539,21 +559,21 @@ Observação necessária para Roaming de Dados (dica ou observação importante 
 - **Sincronização do fluxo de fotos com o iCloud**: A opção **Não configurado** (padrão) permite que os usuários habilitem **Meu Fluxo de Fotos** em seus dispositivos para sincronização com o iCloud e disponibilizem as fotos em todos os dispositivos do usuário. **Bloquear** impede a sincronização de fluxo de fotos com o iCloud. O bloqueio desse recurso pode causar perda de dados. 
 - **Biblioteca de Fotos do iCloud**: Defina essa opção como **Bloquear** para desabilitar o uso da Biblioteca de Fotos do iCloud para armazenar fotos e vídeos na nuvem. As fotos que não forem totalmente baixadas da Biblioteca de Fotos do iCloud para o dispositivo serão removidas do dispositivo. **Não configurado** (padrão) permite o uso da Biblioteca de Fotos do iCloud.
 - **Fluxo de fotos compartilhado**: Escolha **Bloquear** para desabilitar o **Compartilhamento de Fotos do iCloud** no dispositivo. **Não configurado** (padrão) permite a transmissão de fotos compartilhadas.
-- **Entrega**: a opção **Não configurado** (padrão) permite que os usuários iniciem o trabalho em um dispositivo iOS e, em seguida, continuem o trabalho iniciado em outro dispositivo iOS ou macOS. **Bloquear** impede o Handoff.
+- **Entrega**: **Não configurado** (padrão) permite que os usuários iniciem o trabalho em um dispositivo iOS/iPadOS e, em seguida, continuem o trabalho iniciado em outro dispositivo iOS/iPadOS ou macOS. **Bloquear** impede o Handoff.
 
 ### <a name="settings-apply-to-automated-device-enrollment-supervised"></a>As configurações se aplicam a(o): Registro de dispositivo automatizado (supervisionado)
 
 - **Backup no iCloud**: A opção **Não configurado** (padrão) permite que o usuário faça backup do dispositivo no iCloud. **Bloquear** impede que o usuário faça backup do dispositivo no iCloud.
 
-  No iOS 13.0 em diante, essa configuração exige dispositivos supervisionados.
+  No iOS/iPadOS 13.0 em diante, essa configuração exige dispositivos supervisionados.
 
 - **Bloquear a sincronização de documentos do iCloud**: A opção **Não configurado** (padrão) permite a sincronização de documento e chave-valor com o espaço de armazenamento do iCloud. **Bloquear** impede o iCloud de sincronizar documentos e dados.
 
-  No iOS 13.0 em diante, essa configuração exige dispositivos supervisionados.
+  No iOS/iPadOS 13.0 em diante, essa configuração exige dispositivos supervisionados.
 
 - **Bloquear a sincronização do Conjunto de Chaves do iCloud**: Escolha **Bloquear** para desabilitar a sincronização das credenciais armazenadas no Conjunto de Chaves com o iCloud. **Não configurado** (padrão) permite que os usuários sincronizem essas credenciais.
 
-  No iOS 13.0 em diante, essa configuração exige dispositivos supervisionados.
+  No iOS/iPadOS 13.0 em diante, essa configuração exige dispositivos supervisionados.
 
 ## <a name="autonomous-single-app-mode"></a>Modo autônomo de aplicativo único
 
@@ -612,14 +632,14 @@ Também é possível **Importar** um arquivo CSV com a lista de nomes de aplicat
 - **Controle de zoom**: **Permita** alterações de zoom pelo usuário. **Não configurado** impede alterações de zoom.
 
 > [!NOTE]
-> Antes de configurar um dispositivo iOS para o modo de quiosque, você deve usar a ferramenta Apple Configurator ou o Programa de registro de dispositivos da Apple para colocar o dispositivo no modo supervisionado. Consulte o guia da Apple sobre como usar a ferramenta Apple Configurator.
-> Se o aplicativo iOS que você especificar for instalado após a atribuição do perfil, o dispositivo não entrará no modo de quiosque após ser reiniciado.
+> Antes de configurar um dispositivo iOS/iPadOS para o modo de quiosque, você deve usar a ferramenta Apple Configurator ou o Programa de registro de dispositivos da Apple para colocar o dispositivo no modo supervisionado. Consulte o guia da Apple sobre como usar a ferramenta Apple Configurator.
+> Se o aplicativo iOS/iPadOS que você especificar for instalado após a atribuição do perfil, o dispositivo não entrará no modo de quiosque até que seja reiniciado.
 
 ## <a name="domains"></a>Domínios
 
 ### <a name="settings-apply-to-device-enrollment-automated-device-enrollment-supervised"></a>As configurações se aplicam a(o): registro de dispositivo, registro de dispositivo automatizado (supervisionado)
 
-- **Domínios de email desmarcados** > **URL de domínio de email**: adicione uma ou mais URLs à lista. Quando os usuários finais receberem um email de um domínio diferente dos domínios inseridos por você, o email será marcado como não confiável no aplicativo Mail do iOS.
+- **Domínios de email desmarcados** > **URL de domínio de email**: adicione uma ou mais URLs à lista. Quando os usuários finais receberem um email de um domínio diferente dos domínios inseridos por você, ele será marcado como não confiável no aplicativo Mail do iOS/iPadOS.
 
 - **Domínios Web gerenciados** > **URL do Domínio Web**; adicione uma ou mais URLs à lista. Quando os documentos são baixados dos domínios inseridos, eles são considerados gerenciados. Essa configuração só se aplica a documentos baixados usando o navegador Safari.
 
@@ -628,11 +648,12 @@ Também é possível **Importar** um arquivo CSV com a lista de nomes de aplicat
 - **Domínios de preenchimento automático de senha do Safari** > **URL de domínio**: adicione uma ou mais URLs à lista. Os usuários só podem salvar senhas da Web das URLs nesta lista. Essa configuração se aplica somente ao navegador Safari e aos dispositivos no modo supervisionado. Se você não inserir URLs, será possível salvar senhas de todos os sites.
 
   Essa configuração aplica-se a:  
-  - iOS 9.3 e mais recente
+  - iOS 9.3 e versões mais recentes
+  - iPadOS 13.0 e versões mais recentes
 
 ## <a name="settings-that-require-supervised-mode"></a>Configurações que exigem o modo supervisionado
 
-O modo supervisionado do iOS só pode ser habilitado durante a instalação inicial do dispositivo por meio do Programa de Registro de Dispositivos da Apple ou usando o Apple Configurator. Após habilitar o modo supervisionado, o Intune pode configurar um dispositivo com a seguinte funcionalidade:
+O modo supervisionado do iOS/iPadOS só pode ser habilitado durante a instalação inicial do dispositivo por meio do Programa de Registro de Dispositivos da Apple ou usando o Apple Configurator. Após habilitar o modo supervisionado, o Intune pode configurar um dispositivo com a seguinte funcionalidade:
 
 - Bloqueio de aplicativo (modo de aplicativo único) 
 - Proxy HTTP global 

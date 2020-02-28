@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 7d4517d89e3b7365834e904c815b30a362540906
-ms.sourcegitcommit: 139853f8d6ea61786da7056cfb9024a6459abd70
-ms.translationtype: MTE75
+ms.openlocfilehash: 545f287e8b7ee82e2008f239171b22e01714b8c7
+ms.sourcegitcommit: c780e9988341a20f94fdeb8672bd13e0b302da93
+ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/26/2020
-ms.locfileid: "76755588"
+ms.lasthandoff: 02/20/2020
+ms.locfileid: "77514737"
 ---
 # <a name="troubleshoot-device-actions-in-intune"></a>Solucionar problemas com ações do dispositivo no Intune
 
@@ -34,7 +34,7 @@ O Microsoft Intune tem muitas ações que ajudam você a gerenciar dispositivos.
 ### <a name="i-clicked-the-disable-activation-lock-action-in-the-portal-but-nothing-happened-on-the-device"></a>Cliquei na ação "Desabilitar Bloqueio de Ativação" no portal, mas nada aconteceu no dispositivo.
 Isso é esperado. Quando a ação Desabilitar Bloqueio de Ativação é iniciada, a Apple solicita um código atualizado do Intune. Você inserirá manualmente o código no campo de senha quando o dispositivo estiver na tela do Bloqueio de Ativação. Esse código é válido por 15 dias, sendo assim, certifique-se de clicar na ação e copiar o código antes de emitir o Apagamento.
 
-### <a name="why-dont-i-see-the-disable-activation-lock-code-in-the-hardware-overview-blade-of-my-ios-device"></a>Por que não vejo o código da ação Desabilitar Bloqueio de Ativação na folha de visão geral do hardware de meu dispositivo iOS?
+### <a name="why-dont-i-see-the-disable-activation-lock-code-in-the-hardware-overview-blade-of-my-iosipados-device"></a>Por que não vejo o código da ação Desabilitar Bloqueio de Ativação na folha de visão geral do hardware de meu dispositivo iOS/iPadOS?
 Os motivos mais prováveis incluem:
 - O código expirou e foi limpo do serviço.
 - O dispositivo não é supervisionado com a Política de Restrição de Dispositivo para permitir o Bloqueio de Ativação.
@@ -43,7 +43,7 @@ Você pode verificar o código no Explorador do Graph com a seguinte consulta:
 
 ```GET - https://graph.microsoft.com/beta/deviceManagement/manageddevices('deviceId')?$select=activationLockBypassCode.```
 
-### <a name="why-is-the-disable-activation-lock-action-greyed-out-for-my-ios-device"></a>Por que a ação Desabilitar Bloqueio de Ativação está esmaecida para meu dispositivo iOS?
+### <a name="why-is-the-disable-activation-lock-action-greyed-out-for-my-iosipados-device"></a>Por que a ação Desabilitar Bloqueio de Ativação está esmaecida para meu dispositivo iOS/iPadOS?
 Os motivos mais prováveis incluem: 
 - O código expirou e foi limpo do serviço.
 - O dispositivo não é supervisionado com a Política de Restrição de Dispositivo para permitir o Bloqueio de Ativação.
@@ -90,8 +90,22 @@ Porque o Token de Redefinição não foi ativado no dispositivo. Para ativar o T
 3. O usuário final precisa aceitar o prompt secundário para permitir a redefinição de senha.
 Após essas etapas serem concluídas, você não deverá mais receber essa resposta.
 
-### <a name="why-am-i-prompted-to-set-a-new-passcode-on-my-ios-device-when-i-issue-the-remove-passcode-action"></a>Por é solicitado que eu defina uma nova senha em meu dispositivo iOS quando eu emito a ação Remover Senha?
+### <a name="why-am-i-prompted-to-set-a-new-passcode-on-my-iosipados-device-when-i-issue-the-remove-passcode-action"></a>Por é solicitado que eu defina uma nova senha em meu dispositivo iOS/iPadOS quando eu emito a ação Remover Senha?
 Porque uma de suas políticas de conformidade requer uma senha.
+
+
+## <a name="wipe-action"></a>Ação de apagamento
+
+### <a name="i-cant-restart-a-windows-10-device-after-using-the-wipe-action"></a>Não consigo reiniciar um dispositivo Windows 10 depois de usar a ação de apagamento
+Isso pode ocorrer quando você escolhe a opção **Apagar o dispositivo e continuar a apagar, mesmo se o dispositivo ficar sem energia. Se você selecionar essa opção, saiba que ela poderá impedir que alguns dispositivos Windows 10 sejam iniciados novamente.** em um dispositivo Windows 10.
+
+Isso pode ocorrer quando a instalação do Windows tem uma grande corrupção que está impedindo o sistema operacional de ser reinstalado. Nesse caso, o processo falha e deixa o sistema no [Ambiente de Recuperação do Windows]( https://docs.microsoft.com/windows-hardware/manufacture/desktop/windows-recovery-environment--windows-re--technical-reference).
+
+### <a name="i-cant-restart-a-bitlocker-encrypted-device-after-using-the-wipe-action"></a>Não consigo reiniciar um dispositivo criptografado com BitLocker depois de usar a ação de apagamento
+Isso pode ocorrer quando você escolhe a opção **Apagar o dispositivo e continuar a apagar, mesmo se o dispositivo ficar sem energia. Se você selecionar essa opção, saiba que ela poderá impedir que alguns dispositivos Windows 10 sejam iniciados novamente.** em um dispositivo criptografado com BitLocker.
+
+Para resolver esse problema, use a mídia inicializável para reinstalar o Windows 10 no dispositivo.
+
 
 ## <a name="next-steps"></a>Próximas etapas
 

@@ -1,11 +1,11 @@
 ---
-title: Definir configurações de VPN a dispositivos iOS no Microsoft Intune – Azure | Microsoft Docs
-description: Adicione ou crie um perfil de configuração de VPN usando definições de configuração de VPN (rede virtual privada), incluindo detalhes de conexão, métodos de autenticação e túnel dividido nas configurações de base; as configurações personalizadas de VPN com o identificador e os pares chave-valor; as configurações de VPN por aplicativo que incluem URLs Safari e VPNs sob demanda com domínios de pesquisa SSIDs ou DNS; e as configurações de proxy para incluir um script de configuração, endereço IP ou FQDN e porta TCP no Microsoft Intune em dispositivos que executam o iOS.
+title: Definir configurações de VPN a dispositivos iOS/iPadOS no Microsoft Intune – Azure | Microsoft Docs
+description: Adicione ou crie um perfil de configuração de VPN usando definições de configuração de VPN (rede virtual privada), incluindo detalhes de conexão, métodos de autenticação e túnel dividido nas configurações de base; as configurações personalizadas de VPN com o identificador e os pares chave-valor; as configurações de VPN por aplicativo que incluem URLs Safari e VPNs sob demanda com domínios de pesquisa SSIDs ou DNS; e as configurações de proxy para incluir um script de configuração, endereço IP ou FQDN e porta TCP no Microsoft Intune em dispositivos que executam o iOS/iPadOS.
 keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 11/13/2019
+ms.date: 02/18/2020
 ms.topic: reference
 ms.service: microsoft-intune
 ms.subservice: configuration
@@ -15,23 +15,23 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 9eb7ee99d69fd56707bd9dfe5453ffe0bb107bad
-ms.sourcegitcommit: 2506cdbfccefd42587a76f14ee50c3849dad1708
-ms.translationtype: MTE75
+ms.openlocfilehash: 01c6ae06459590fa9bb9842e90ad53e6c522d6a6
+ms.sourcegitcommit: c780e9988341a20f94fdeb8672bd13e0b302da93
+ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/11/2020
-ms.locfileid: "75885642"
+ms.lasthandoff: 02/20/2020
+ms.locfileid: "77512476"
 ---
-# <a name="add-vpn-settings-on-ios-devices-in-microsoft-intune"></a>Adicionar configurações de VPN em dispositivos iOS no Microsoft Intune
+# <a name="add-vpn-settings-on-ios-and-ipados-devices-in-microsoft-intune"></a>Adicionar configurações de VPN em dispositivos iOS e iPadOS no Microsoft Intune
 
-O Microsoft Intune inclui várias configurações de VPN que podem ser implantadas em dispositivos iOS. Essas configurações são usadas para criar e configurar conexões VPN à rede da sua organização. Este artigo descreve essas configurações. Algumas configurações só estão disponíveis para alguns clientes VPN, como Citrix, Zscaler e outros.
+O Microsoft Intune inclui várias configurações de VPN que podem ser implantadas em dispositivos iOS/iPadOS. Essas configurações são usadas para criar e configurar conexões VPN à rede da sua organização. Este artigo descreve essas configurações. Algumas configurações só estão disponíveis para alguns clientes VPN, como Citrix, Zscaler e outros.
 
 ## <a name="before-you-begin"></a>Antes de começar
 
 [Crie um perfil de configuração do dispositivo](vpn-settings-configure.md).
 
 > [!NOTE]
-> Essas configurações estão disponíveis para todos os tipos de registro. Para obter mais informações sobre os tipos de registro, consulte [registro do IOS](../enrollment/ios-enroll.md).
+> Essas configurações estão disponíveis para todos os tipos de registro. Para obter mais informações sobre os tipos de registro, confira [Registro do iOS/iPadOS](../enrollment/ios-enroll.md).
 
 ## <a name="connection-type"></a>Tipo de conexão
 
@@ -71,7 +71,7 @@ As configurações mostradas na lista a seguir são determinadas pelo tipo de co
     > [!NOTE]
     > Se o nome de usuário e senha forem usados como o método de autenticação para a VPN IPsec Cisco, eles deverão fornecer o SharedSecret por meio de um perfil personalizado do Apple Configurator.
 
-  - **Credencial derivada**: Use um certificado derivado do cartão inteligente de um usuário. Se nenhum emissor de credencial derivado estiver configurado, o Intune solicitará que você adicione um. Para obter mais informações, consulte [usar credenciais derivadas no Microsoft Intune](../protect/derived-credentials.md).
+  - **Credencial derivada**: use um certificado derivado do cartão inteligente de um usuário. Se nenhum emissor de credencial derivado estiver configurado, o Intune solicitará que você adicione um. Para obter mais informações, confira [Usar credenciais derivadas no Microsoft Intune](../protect/derived-credentials.md).
 
 - **URLs excluídas** (somente Zscaler): quando conectadas à VPN do Zscaler, as URLs listadas podem ser acessadas de fora da nuvem do Zscaler. 
 
@@ -100,21 +100,21 @@ As configurações mostradas na lista a seguir são determinadas pelo tipo de co
   - Quando o NAC estiver habilitado, a VPN será desconectada a cada 24 horas. A VPN pode ser reconectada imediatamente.
   - A ID do dispositivo faz parte do perfil, mas não é mostrada no Intune. Essa ID não é armazenada em nenhum lugar pela Microsoft e não é compartilhada pela Microsoft.
 
-  Para parceiros VPN que dão suporte à ID do dispositivo, o cliente VPN, como o Citrix SSO, pode obter a ID. Em seguida, ela poderá consultar o Intune para confirmar se o dispositivo está registrado e se o perfil de VPN está em conformidade ou não.
+  Para os parceiros de VPN que dão suporte à ID do dispositivo, o cliente VPN, como o Citrix SSO, pode obter a ID. Em seguida, ela poderá consultar o Intune para confirmar se o dispositivo está registrado e se o perfil de VPN está em conformidade ou não.
 
   - Para remover essa configuração, recrie o perfil e não selecione **Eu concordo**. Em seguida, reatribua o perfil.
 
 ## <a name="ikev2-settings"></a>Configurações IKEv2
 
-Essas configurações se aplicam quando você escolhe o **tipo de conexão** > **IKEv2**.
+Essas configurações se aplicam quando você escolhe o **Tipo de conexão** > **IKEv2**.
 
-- **Identificador remoto**: Insira o endereço IP da rede, o FQDN, o userfqdn ou o ASN1DN do servidor IKEv2. Por exemplo, insira `10.0.0.3` ou `vpn.contoso.com`. Normalmente, você insere o mesmo valor que o [**nome da conexão**](#base-vpn-settings) (neste artigo). Mas, isso depende de suas configurações de servidor IKEv2.
+- **Identificador remoto**: insira o endereço IP da rede, o FQDN, o UserFQDN ou o ASN1DN do servidor IKEv2. Por exemplo, insira `10.0.0.3` ou `vpn.contoso.com`. Normalmente, você insere o mesmo valor que o [**Nome da conexão**](#base-vpn-settings) (neste artigo). Mas isso depende de suas configurações do servidor IKEv2.
 
-- **Tipo de autenticação de cliente**: escolha como o cliente VPN é autenticado para a VPN. Suas opções:
-  - **Autenticação de usuário** (padrão): as credenciais de usuário são autenticadas para a VPN.
-  - **Autenticação de computador**: as credenciais de dispositivo são autenticadas para a VPN.
+- **Tipo de autenticação do cliente**: escolha como o cliente VPN é autenticado para a VPN. Suas opções:
+  - **Autenticação de usuário** (padrão): as credenciais do usuário são autenticadas para a VPN.
+  - **Autenticação de computador**: as credenciais do dispositivo são autenticadas para a VPN.
 
-- **Método de autenticação**: escolha o tipo de credenciais de cliente para enviar ao servidor. Suas opções:
+- **Método de autenticação**: escolha o tipo de credenciais do cliente para enviar ao servidor. Suas opções:
   - **Certificados**: usa um perfil de certificado existente para autenticar para a VPN. Verifique se esse perfil de certificado já está atribuído ao usuário ou dispositivo. Caso contrário, a conexão VPN falhará.
     - **Tipo de certificado**: selecione o tipo de criptografia usado pelo certificado. Verifique se o servidor VPN está configurado para aceitar esse tipo de certificado. Suas opções:
       - **RSA** (padrão)
@@ -122,30 +122,30 @@ Essas configurações se aplicam quando você escolhe o **tipo de conexão** > *
       - **ECDSA384**
       - **ECDSA521**
 
-  - **Nome de usuário e senha** (somente autenticação de usuários): quando os usuários se conectam à VPN, eles recebem seu nome de usuário e senha.
+  - **Nome de usuário e senha** (somente autenticação de usuário): quando os usuários se conectam à VPN, devem informar seu nome de usuário e senha.
   - **Segredo compartilhado** (somente autenticação do computador): permite que você insira um segredo compartilhado para enviar ao servidor VPN.
-    - **Segredo compartilhado**: Insira o segredo compartilhado, também conhecido como chave pré-compartilhada (PSK). Verifique se o valor corresponde ao segredo compartilhado configurado no servidor VPN.
+    - **Segredo compartilhado**: insira o segredo compartilhado, também conhecido como PSK (chave pré-compartilhada). Verifique se o valor corresponde ao segredo compartilhado configurado no servidor VPN.
 
-- **Nome comum do emissor do certificado do servidor**: permite que o servidor VPN se autentique no cliente VPN. Insira o nome comum do emissor do certificado (CN) do certificado do servidor VPN que é enviado para o cliente VPN no dispositivo. Verifique se o valor CN corresponde à configuração no servidor VPN. Caso contrário, a conexão VPN falhará.
-- **Nome comum do certificado do servidor**: Insira o CN para o próprio certificado. Se for deixado em branco, o valor do identificador remoto será usado.
+- **Nome comum do emissor do certificado do servidor**: permite que o servidor VPN se autentique no cliente VPN. Insira o CN (nome comum) do emissor do certificado referente ao certificado do servidor VPN que é enviado para o cliente VPN no dispositivo. Verifique se o valor CN corresponde à configuração no servidor VPN. Caso contrário, a conexão VPN falhará.
+- **Nome comum do certificado do servidor**: insira o CN para o próprio certificado. Se for deixado em branco, o valor do identificador remoto será usado.
 
 - **Taxa de detecção de pares inativos**: escolha a frequência com que o cliente VPN verifica se o túnel VPN está ativo. Suas opções:
-  - **Não configurado**: usa o padrão do sistema Ios, que pode ser o mesmo que escolher **médio**.
+  - **Não configurado**: usa o padrão do sistema iOS/iPadOS, que pode ser o mesmo que escolher **Médio**.
   - **Nenhum**: desabilita a detecção de pares inativos.
   - **Baixo**: envia uma mensagem de KeepAlive a cada 30 minutos.
   - **Médio** (padrão): envia uma mensagem de KeepAlive a cada 10 minutos.
-  - **Alta**: envia uma mensagem de KeepAlive a cada 60 segundos.
+  - **Alto**: envia uma mensagem de KeepAlive a cada 60 segundos.
 
-- **Intervalo de versão do TLS mínimo**: Insira a versão mínima do TLS a ser usada. Insira `1.0`, `1.1`ou `1.2`. Se for deixado em branco, o valor padrão de `1.0` será usado.
-- **Intervalo de versão do TLS máximo**: Insira a versão máxima do TLS a ser usada. Insira `1.0`, `1.1`ou `1.2`. Se for deixado em branco, o valor padrão de `1.2` será usado.
+- **Intervalo de versão mínima do TLS**: insira a versão mínima do TLS a ser usada. Insira `1.0`, `1.1` ou `1.2`. Se for deixado em branco, o valor padrão de `1.0` será usado.
+- **Intervalo de versão máxima do TLS**: insira a versão máxima do TLS a ser usada. Insira `1.0`, `1.1` ou `1.2`. Se for deixado em branco, o valor padrão de `1.2` será usado.
 
 > [!NOTE]
-> O intervalo de versão do TLS mínimo e máximo devem ser definidos ao usar a autenticação do usuário e os certificados.
+> O intervalo de versão mínima e máxima do TLS deve ser definido ao usar a autenticação do usuário e os certificados.
 
-- **Sigilo perfeita no encaminhamento**: selecione **habilitar** para ativar o PFS (PFS de encaminhamento). O PFS é um recurso de segurança IP que reduz o impacto se uma chave de sessão for comprometida. **Desabilitar** (padrão) não usa PFS.
-- **Verificação de revogação de certificado**: selecione **habilitar** para garantir que os certificados não sejam revogados antes de permitir que a conexão VPN seja realizada com sucesso. Essa verificação é de melhor esforço. Se o servidor VPN expirar antes de determinar se o certificado foi revogado, o acesso será concedido. **Desabilitar** (padrão) não verifica se há certificados revogados.
+- **Sigilo perfeito no encaminhamento**: selecione **Habilitar** para ativar o PFS (sigilo perfeito no encaminhamento). O PFS é um recurso de segurança de IP que reduz o impacto se uma chave da sessão é comprometida. **Desabilitar** (padrão) não usa PFS.
+- **Verificação de revogação de certificado**: selecione **Habilitar** para garantir que os certificados não sejam revogados antes de permitir que a conexão VPN seja realizada com êxito. Essa verificação é de melhor esforço. Se o servidor VPN expirar antes de determinar se o certificado foi revogado, o acesso será concedido. **Desabilitar** (padrão) não verifica se há certificados revogados.
 
-- **Configurar parâmetros de associação de segurança**: **não configurado** (padrão) usa o padrão do sistema Ios. Selecione **habilitar** para inserir os parâmetros usados ao criar associações de segurança com o servidor VPN:
+- **Configurar parâmetros de associação de segurança**: **Não configurado** (padrão) usa o padrão do sistema iOS/iPadOS. Selecione **Habilitar** para inserir os parâmetros usados ao criar associações de segurança com o servidor VPN:
   - **Algoritmo de criptografia**: selecione o algoritmo desejado:
     - DES
     - 3DES
@@ -159,12 +159,12 @@ Essas configurações se aplicam quando você escolhe o **tipo de conexão** > *
     - SHA2-256 (padrão)
     - SHA2-384
     - SHA2-512
-  - **Grupo Diffie-Hellman**: selecione o grupo desejado. O padrão é `2`de grupo.
+  - **Grupo Diffie-Hellman**: selecione o grupo desejado. O padrão é o grupo `2`.
   - **Tempo de vida** (minutos): escolha por quanto tempo a associação de segurança permanecerá ativa até que as chaves sejam giradas. Insira um valor inteiro entre `10` e `1440` (1440 minutos é 24 horas). O padrão é `1440`.
 
-- **Configurar um conjunto separado de parâmetros para associações de segurança filho**: o Ios permite que você configure parâmetros separados para a conexão Ike e quaisquer conexões filho. 
+- **Configurar um conjunto separado de parâmetros para associações de segurança filho**: o iOS/iPadOS permite que você configure parâmetros separados para a conexão IKE e quaisquer conexões filho. 
 
-  **Não configurado** (padrão) usa os valores inseridos na configuração anterior **definir parâmetros de associação de segurança** . Selecione **habilitar** para inserir os parâmetros usados ao criar associações de segurança *filho* com o servidor VPN:
+  **Não configurado** (padrão) usa os valores inseridos na configuração anterior **Configure os parâmetros de associação de segurança**. Selecione **Habilitar** para inserir os parâmetros usados ao criar associações de segurança *filho* com o servidor VPN:
   - **Algoritmo de criptografia**: selecione o algoritmo desejado:
     - DES
     - 3DES
@@ -178,14 +178,14 @@ Essas configurações se aplicam quando você escolhe o **tipo de conexão** > *
     - SHA2-256 (padrão)
     - SHA2-384
     - SHA2-512
-  - **Grupo Diffie-Hellman**: selecione o grupo desejado. O padrão é `2`de grupo.
+  - **Grupo Diffie-Hellman**: selecione o grupo desejado. O padrão é o grupo `2`.
   - **Tempo de vida** (minutos): escolha por quanto tempo a associação de segurança permanecerá ativa até que as chaves sejam giradas. Insira um valor inteiro entre `10` e `1440` (1440 minutos é 24 horas). O padrão é `1440`.
 
 ## <a name="automatic-vpn-settings"></a>Configurações automáticas de VPN
 
-- **VPN por aplicativo**: habilita a VPN por aplicativo. Permite que a conexão VPN sejam disparadas automaticamente quando determinados aplicativos são abertos. Também associe os aplicativos a esse perfil de VPN. Não há suporte para VPN por aplicativo em IKEv2. Para obter mais informações, confira [instruções para configurar a VPN por aplicativo para iOS](vpn-setting-configure-per-app.md). 
+- **VPN por aplicativo**: habilita a VPN por aplicativo. Permite que a conexão VPN sejam disparadas automaticamente quando determinados aplicativos são abertos. Também associe os aplicativos a esse perfil de VPN. Não há suporte para VPN por aplicativo no IKEv2. Para obter mais informações, confira as [instruções para configurar a VPN por aplicativo para iOS/iPadOS](vpn-setting-configure-per-app.md). 
   - **Tipo de provedor**: disponível somente para Pulse Secure e VPN Personalizada.
-  - Ao usar um perfil **VPN para cada aplicativo** iOS com o Pulse Secure ou com uma VPN personalizada, opte por usar o túnel de camada de aplicativo (proxy de aplicativo) ou o túnel no nível do pacote (túnel de pacote). Defina o valor de **ProviderType** como **app-proxy** para o túnel de camada de aplicativo ou como **packet-tunnel** para o túnel de camada de pacote. Se você não tiver certeza de qual valor usar, verifique a documentação do seu provedor VPN.
+  - Ao usar um perfil **VPN por aplicativo** iOS/iPadOS com o Pulse Secure ou com uma VPN personalizada, opte por usar o túnel de camada de aplicativo (proxy de aplicativo) ou o túnel no nível do pacote (túnel de pacote). Defina o valor de **ProviderType** como **app-proxy** para o túnel de camada de aplicativo ou como **packet-tunnel** para o túnel de camada de pacote. Se você não tiver certeza de qual valor usar, verifique a documentação do seu provedor VPN.
   - **URLs do Safari que disparam essa VPN**: adicione uma ou mais URLs de site. Quando essas URLs forem acessadas usando o navegador Safari no dispositivo, a conexão VPN será estabelecida automaticamente.
 
 - **VPN sob demanda**: configure regras condicionais que controlem quando a conexão VPN é iniciada. Por exemplo, crie uma condição em que a conexão VPN é usada somente quando um dispositivo não está conectado a uma rede Wi-Fi da empresa. Ou crie uma condição. Por exemplo, se um dispositivo não puder acessar um domínio de pesquisa DNS, a conexão VPN não será iniciada.
@@ -193,7 +193,7 @@ Essas configurações se aplicam quando você escolhe o **tipo de conexão** > *
   - **Domínios de pesquisa de SSIDs ou DNS**: selecione se essa condição usa **SSIDs** de rede sem fio ou **domínios de pesquisa de DNS**. Escolha **Adicionar** para configurar um ou mais SSIDs ou domínios de pesquisa.
   - **Investigação de cadeia de caracteres de URL**: Opcional. Insira uma URL que a regra use como teste. Se o dispositivo acessar essa URL sem redirecionamento, a conexão VPN será iniciada. E o dispositivo se conectará à URL de destino. O usuário não verá o site da investigação de cadeia de caracteres da URL.
 
-    Por exemplo, uma investigação de cadeia de caracteres de URL é uma URL de servidor Web de auditoria que verifica a conformidade do dispositivo antes da conexão com a VPN. Ou, a URL testa a capacidade da VPN de se conectar a um site antes de conectar o dispositivo à URL de destino por meio da VPN.
+    Por exemplo, uma investigação de cadeia de caracteres de URL é uma URL de servidor Web de auditoria que verifica a conformidade do dispositivo antes da conexão com a VPN. Ou a URL testa a capacidade da VPN de se conectar a um site antes de conectar o dispositivo à URL de destino por meio da VPN.
 .
   - **Ação de domínio**: escolha um dos seguintes itens:
     - Conectar se necessário
@@ -216,4 +216,4 @@ Se você estiver usando um proxy, defina as seguintes configurações. As config
 
 O perfil foi criado, mas não está fazendo nada ainda. Em seguida, [atribua o perfil](device-profile-assign.md) e [monitore seu status](device-profile-monitor.md).
 
-Defina as configurações de VPN em dispositivos [Android](vpn-settings-android.md), [Android Enterprise](vpn-settings-android-enterprise.md), [MacOS](vpn-settings-macos.md)e [Windows 10](vpn-settings-windows-10.md) .
+Defina as configurações de VPN em dispositivos [Android](vpn-settings-android.md), [Android Enterprise](vpn-settings-android-enterprise.md), [macOS](vpn-settings-macos.md) e [Windows 10](vpn-settings-windows-10.md).

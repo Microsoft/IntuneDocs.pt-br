@@ -16,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic-keep
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: fb67cf2cb17b78c4034c3b73e229e160723d975e
-ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
-ms.translationtype: MTE75
+ms.openlocfilehash: a4fdbf7ca252af9eb8513d437e3275692a1f8d13
+ms.sourcegitcommit: 51591b862d97904291af7aa53a6eb341b11a761e
+ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "73414403"
+ms.lasthandoff: 02/17/2020
+ms.locfileid: "77415250"
 ---
 # <a name="manage-windows-pcs-as-computers-via-intune-software-client"></a>Gerenciar computadores Windows como computadores por meio do cliente de software do Intune
 
@@ -30,7 +30,7 @@ ms.locfileid: "73414403"
 > [!WARNING]
 > A Microsoft anunciou que o [suporte ao Windows 7 termina no dia 14 de janeiro de 2020](https://support.microsoft.com/help/4057281/windows-7-support-will-end-on-january-14-2020). Nessa data, o Intune também desativa o suporte para dispositivos que executam o Windows 7. A Microsoft recomenda enfaticamente que você passe para o Windows 10 para impedir interrupções de serviço ou de suporte.
 > 
-> Saiba mais em [Plano de alteração do Intune: proximidade do fim do suporte para o Windows 7](../fundamentals/whats-new.md#intune-plan-for-change-nearing-end-of-support-for-windows-7).
+> Para obter mais informações, confira a [postagem no blog Planejar mudanças](https://aka.ms/Windows7_Intune).
 
 > [!NOTE]
 > Use o Microsoft Intune para gerenciar computadores Windows como [dispositivos móveis com o MDM (gerenciamento de dispositivo móvel)](../enrollment/windows-enroll.md) ou como computadores com o cliente de software do Intune, conforme descrito abaixo. No entanto, a Microsoft recomenda que os clientes usem a [solução de gerenciamento MDM](../enrollment/windows-enroll.md) sempre que possível. Para obter mais informações, consulte [Comparar o gerenciamento de computadores Windows como computadores ou dispositivos móveis](pc-management-comparison.md) 
