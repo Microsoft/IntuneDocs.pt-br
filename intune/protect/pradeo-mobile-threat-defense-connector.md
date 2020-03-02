@@ -15,12 +15,12 @@ ms.technology: ''
 ms.assetid: cde4d389-1770-4226-85a3-a2f3b3fb92a3
 search.appverid: MET150
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 563b117583f8b8c1f4da08d5d4e3399d5939bf97
-ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
+ms.openlocfilehash: fd2f03edeb1e402401911ab2c80fa0d699e2628c
+ms.sourcegitcommit: c780e9988341a20f94fdeb8672bd13e0b302da93
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "72504378"
+ms.lasthandoff: 02/20/2020
+ms.locfileid: "77514873"
 ---
 # <a name="pradeo-mobile-threat-defense-connector-with-intune"></a>Conector de Defesa Contra Ameaças Móveis do Pradeo com o Intune
 
@@ -30,11 +30,11 @@ Você pode configurar políticas de Acesso Condicional com base na avaliação d
 
 ## <a name="how-do-intune-and-pradeo-help-protect-your-company-resources"></a>Como o Intune e o Pradeo ajudam a proteger os recursos de sua empresa?
 
-O aplicativo Pradeo para Android e iOS captura o sistema de arquivos, a pilha de rede e, quando disponível, a telemetria dos dispositivos e dos aplicativos, e envia os dados telemétricos ao serviço de nuvem do Pradeo para avaliar o risco do dispositivo de ameaças móveis.
+O aplicativo Pradeo para Android e iOS/iPadOS captura o sistema de arquivos, a pilha de rede e, quando disponível, a telemetria dos dispositivos e dos aplicativos, e envia os dados telemétricos ao serviço de nuvem do Pradeo para avaliar o risco do dispositivo de ameaças móveis.
 
 A política de conformidade do dispositivo do Intune inclui uma regra para a Defesa contra Ameaças Móveis do Pradeo, que se baseia na avaliação de risco do Pradeo. Quando essa regra é habilitada, o Intune avalia a conformidade do dispositivo com a política habilitada. Se o dispositivo for considerado não compatível, o acesso dos usuários aos recursos corporativos como o Exchange Online e o SharePoint Online será bloqueado. Os usuários também recebem diretrizes do aplicativo Pradeo instalado nos dispositivos para resolver o problema e recuperar o acesso aos recursos corporativos.
 
-## <a name="sample-scenarios"></a>Cenários de exemplo
+## <a name="sample-scenarios"></a>Exemplo de cenários
 
 Confira alguns cenários comuns.
 

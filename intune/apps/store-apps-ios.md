@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 2daa7428cf8677f9e1a2b11db2b3ce65e2df8bc4
-ms.sourcegitcommit: 139853f8d6ea61786da7056cfb9024a6459abd70
+ms.openlocfilehash: f2baf60fed2c6010e5ae0784cda166ac4fabfd57
+ms.sourcegitcommit: c780e9988341a20f94fdeb8672bd13e0b302da93
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/26/2020
-ms.locfileid: "76754993"
+ms.lasthandoff: 02/20/2020
+ms.locfileid: "77511728"
 ---
 # <a name="add-ios-store-apps-to-microsoft-intune"></a>Adicionar aplicativos da loja do iOS ao Microsoft Intune
 
@@ -32,11 +32,11 @@ ms.locfileid: "76754993"
 Use as informações deste artigo para ajudá-lo a adicionar aplicativos da iOS Store ao Microsoft Intune. Aplicativos da loja do iOS são aplicativos instalados pelo Intune no dispositivo de um usuário. Um usuário faz parte da força de trabalho da sua empresa. Os aplicativos da iOS Store são atualizados automaticamente.
 
 >[!NOTE]
->Embora os usuários de dispositivos iOS possam remover alguns aplicativos iOS internos, por exemplo, Ações e Mapas, você não pode usar o Intune para reimplantar esses aplicativos. Se os usuários excluírem esses aplicativos, eles deverão acessar a App Store e reinstalá-los manualmente.
+>Embora os usuários de dispositivos iOS/iPadOS possam remover alguns aplicativos iOS/iPadOS internos, por exemplo, Ações e Mapas, você não pode usar o Intune para reimplantar esses aplicativos. Se os usuários excluírem esses aplicativos, eles deverão acessar a App Store e reinstalá-los manualmente.
 
 ## <a name="before-you-start"></a>Antes de começar
 
-Você poderá atribuir aplicativos usando esse método apenas se eles forem gratuitos na App Store. Se você quiser atribuir aplicativos pagos usando o Intune, considere o uso do [programa de compra por volume do iOS](vpp-apps-ios.md).
+Você poderá atribuir aplicativos usando esse método apenas se eles forem gratuitos na App Store. Se você quiser atribuir aplicativos pagos usando o Intune, considere o uso do [programa de compra por volume do iOS/iPadOS](vpp-apps-ios.md).
 
 >[!NOTE]
 >Ao trabalhar com o Microsoft Intune, recomendamos que você use o Microsoft Edge ou o Google Chrome.

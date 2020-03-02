@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure, seoapril2019
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 3c1627ba89ad50b2053187a20fee6cbc7a9064e8
-ms.sourcegitcommit: 73b362173929f59e9df57e54e76d19834f155433
+ms.openlocfilehash: 6faaa800d8dedc53ab20f1dae2c3049132642b7d
+ms.sourcegitcommit: 29f3ba071c9348686d3ad6f3b8864d8557e05b97
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/27/2019
-ms.locfileid: "74562489"
+ms.lasthandoff: 02/26/2020
+ms.locfileid: "77609152"
 ---
 # <a name="how-to-manage-volume-purchased-apps-from-the-microsoft-store-for-business-with-microsoft-intune"></a>Como gerenciar aplicativos adquiridos por volume na Microsoft Store para Empresas com o Microsoft Intune
 
@@ -48,7 +48,7 @@ Examine as seguintes informações antes de iniciar a sincronização e a atribi
 - Os aplicativos licenciados online e offline adquiridos na Microsoft Store para Empresas são sincronizados no portal do Intune. Você poderá implantar esses aplicativos em grupos de dispositivos ou de usuários. 
 - As instalações de aplicativos online são gerenciadas pela loja.
 - Os aplicativos offline gratuitos também podem ser sincronizados com o Intune. Esses aplicativos são instalados pelo Intune e não pela loja.
-- Para usar essa funcionalidade, os dispositivos devem estar ingressados no Active Directory Domain Services ou em um local de trabalho.
+- Para usar essa funcionalidade, os dispositivos devem estar ingressados no Active Directory Domain Services, ingressados no Azure AD ou em um local de trabalho.
 - Dispositivos registrados devem estar usando a versão 1511 do Windows 10 ou posterior.
 
 Além disso, os conjuntos relacionados e aplicativos licenciados offline sincronizados por meio da Microsoft Store para Empresas agora serão ser consolidados em um única entrada de aplicativo na interface do usuário. Todos os detalhes de implantação dos pacotes individuais serão migrados para a única entrada. Para exibir conjuntos relacionados no portal do Azure, selecione **Licenças de aplicativo** no painel **Aplicativos**.

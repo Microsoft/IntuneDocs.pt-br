@@ -17,12 +17,12 @@ ms.reviewer: aanavath
 ms.suite: ems
 search.appverid: MET150
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 57467d3d073666c1c22ac0a412f68a258d5b3d75
-ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
+ms.openlocfilehash: cbc4e1cc8cf7bd578690bf3e34353a60ec67cdab
+ms.sourcegitcommit: c780e9988341a20f94fdeb8672bd13e0b302da93
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "73414065"
+ms.lasthandoff: 02/20/2020
+ms.locfileid: "77514720"
 ---
 # <a name="help-end-users-understand-company-portal-app-messages"></a>Ajudar usuários finais a compreender as mensagens do aplicativo do Portal da Empresa
 
@@ -126,7 +126,7 @@ Se você não tiver adicionado o aplicativo Portal da Empresa à lista de **Apli
 
 Adicione o Portal da Empresa à lista de **Aplicativos permitidos** ou de **Aplicativos isentos** na política de proteção do aplicativo WIP (Proteção de Informações do Windows). Para obter mais informações, consulte [Criar e implantar a política de proteção de aplicativo WIP (Proteção de Informações do Windows) com o Intune](../apps/windows-information-protection-policy-create.md).
 
-## <a name="approve-a-ios-company-app-line-of-business-app-on-your-ios-device"></a>Aprovar um aplicativo iOS da empresa (aplicativo de linha de negócios) em seu dispositivo iOS 
+## <a name="approve-a-iosipados-company-app-line-of-business-app-on-your-iosipados-device"></a>Aprovar um aplicativo iOS/iPadOS da empresa (aplicativo de linha de negócios) em seu dispositivo iOS/iPadOS 
 
 ### <a name="where-it-appears"></a>Onde ele aparece
 
@@ -136,7 +136,7 @@ Os aplicativos iOS desenvolvidos pela sua organização que não estão disponí
 
 ### <a name="what-it-means"></a>O que significa
 
-Esta mensagem indica que você precisa alterar as configurações do dispositivo iOS para aprovar e instalar um aplicativo desenvolvido pela sua empresa em seu dispositivo iOS.
+Esta mensagem indica que você precisa alterar as configurações do dispositivo iOS/iPadOS para aprovar e instalar um aplicativo desenvolvido pela sua empresa em seu dispositivo iOS/iPadOS.
 
 Após instalar esses aplicativos usando o Portal da Empresa e iniciar o aplicativo, siga estas etapas para aprovar o aplicativo após o download:
 

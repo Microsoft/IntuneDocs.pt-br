@@ -1,12 +1,12 @@
 ---
 title: Configurar um serviço de gerenciamento de despesas de telecomunicações no Microsoft Intune – Azure| Microsoft Docs
 titleSuffix: ''
-description: Integre o Microsoft Intune ao serviço de gerenciamento de despesas de telecomunicações do Saaswedo para monitorar o uso de dados e definir limites em dispositivos Android e iOS.
+description: Integre o Microsoft Intune ao serviço de gerenciamento de despesas de telecomunicações do Saaswedo para monitorar o uso de dados e definir limites em dispositivos Android, iOS e iPadOS.
 keywords: Saaswedo
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 11/05/2019
+ms.date: 02/18/2020
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.subservice: configuration
@@ -18,16 +18,14 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 9c97a3ad329ce0e431c6dc8ef318306e4e002f36
-ms.sourcegitcommit: e166b9746fcf0e710e93ad012d2f52e2d3ed2644
+ms.openlocfilehash: e6c4d08d1010654a16e13981a0d3353b2418524a
+ms.sourcegitcommit: c780e9988341a20f94fdeb8672bd13e0b302da93
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/19/2019
-ms.locfileid: "75207104"
+ms.lasthandoff: 02/20/2020
+ms.locfileid: "77512867"
 ---
 # <a name="set-up-a-telecom-expense-management-service-in-intune"></a>Configurar um serviço de gerenciamento de despesas de telecomunicações no Intune
-
-
 
 O Intune permite que você gerencie as despesas de telecomunicações decorrentes da utilização de dados em dispositivos móveis da empresa. O Intune se integra ao [Gerenciamento de despesas de telecomunicações do Datalert](http://datalert.biz/get-started) da Saaswedo. O Datalert é uma solução de gerenciamento de despesas de telecomunicações em tempo real que gerencia o uso de dados de telecomunicações. Ele pode ajudar a evitar preços elevados e inesperados de dados e roaming para seus dispositivos gerenciados pelo Intune.
 
@@ -50,7 +48,8 @@ Para usar o serviço Datalert com o Intune, há algumas definições de configur
 
   [Versões do Android que dão suporte a Knox](https://seap.samsung.com/faq/what-versions-android-support-knox-standard-and-knox-premium-sdks-0) (abre o site da Samsung) lista as versões com suporte a Knox.
 
-- iOS 8.0 e posterior
+- iOS 8.0 e mais recente
+- iPadOS 13.0 e versões mais recentes
 
 ## <a name="prerequisites"></a>Pré-requisitos
 
@@ -136,11 +135,11 @@ Essas categorias são mostradas aos usuários durante o registro ([registrar dis
 
 #### <a name="add-the-datalert-app-to-intune"></a>Adicionar o aplicativo Datalert ao Intune
 
-As etapas a seguir adicionam o aplicativo Datalert. O iOS é usado como exemplo. [Adicionar aplicativos](../apps/apps-add.md) e [Usar marcas de escopo](../fundamentals/scope-tags.md) oferecem informações mais específicas sobre essas etapas.
+As etapas a seguir adicionam o aplicativo Datalert. O iOS/iPadOS é usado como exemplo. [Adicionar aplicativos](../apps/apps-add.md) e [Usar marcas de escopo](../fundamentals/scope-tags.md) oferecem informações mais específicas sobre essas etapas.
 
 1. No [Centro de Administração do Gerenciador de Ponto de Extremidade da Microsoft](https://go.microsoft.com/fwlink/?linkid=2109431), selecione **Aplicativos** > **Todos os aplicativos** > **Adicionar**.
 
-2. Escolha seu **Tipo de aplicativo**. Por exemplo, para o iOS, escolha **iOS – App Store**.
+2. Escolha seu **Tipo de aplicativo**. Por exemplo, para o iOS/iPadOS, escolha **App Store – iOS/iPadOS**.
 
 3. Em **Pesquisar na App Store**, digite **Datalert** para localizar o aplicativo Datalert.
 
@@ -178,7 +177,7 @@ O serviço Datalert já está ativo. Ele começará a monitorar o uso de dados e
 
 Para a experiência de usuários finais, os seguintes artigos podem ajudar:
 
-- [Registrar seu dispositivo iOS no gerenciamento de despesas de telecomunicações](https://docs.microsoft.com/intune-user-help/enroll-your-device-with-telecom-expense-management-ios)
+- [Registrar seu dispositivo iOS/iPadOS no gerenciamento de despesas de telecomunicações](https://docs.microsoft.com/intune-user-help/enroll-your-device-with-telecom-expense-management-ios)
 - [Registrar seu dispositivo Android no gerenciamento de despesas de telecomunicações](https://docs.microsoft.com/intune-user-help/enroll-your-device-with-telecom-expense-management-android)
 
 ## <a name="turn-off-the-datalert-service"></a>Desligar o serviço Datalert

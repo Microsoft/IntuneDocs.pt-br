@@ -6,7 +6,7 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 01/30/2020
+ms.date: 02/25/2020
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.subservice: apps
@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: fa4510b95e1e84d9f94158833dac555daa33c690
-ms.sourcegitcommit: c46b0c2d4507be6a2786a4ea06009b2d5aafef85
+ms.openlocfilehash: 7251a2db0c36db9d01e51ca8fc62bd4e072d80e6
+ms.sourcegitcommit: 29f3ba071c9348686d3ad6f3b8864d8557e05b97
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/01/2020
-ms.locfileid: "76912549"
+ms.lasthandoff: 02/26/2020
+ms.locfileid: "77609231"
 ---
 # <a name="windows-10-app-deployment-by-using-microsoft-intune"></a>Implantação de aplicativo do Windows 10 usando o Microsoft Intune 
 
@@ -44,18 +44,19 @@ Os aplicativos LOB (linha de negócios) e os aplicativos da Microsoft Store para
 
 Os tipos de aplicativo específicos são compatíveis com base na versão do Windows 10 que os usuários estão executando. A tabela a seguir fornece o tipo de aplicativo e a compatibilidade com o Windows 10.
 
-| Tipo de aplicativo | Início | Pro | Empresas | Enterprise | Educação | Modo S | Hololense | SurfaceHub | WCOS | Celular |
+| Tipo de aplicativo | Início | Pro | Empresas | Enterprise | Educação | Modo S | HoloLens<sup>1 | Surface Hub | WCOS | Celular |
 |----------------|------|-----|----------|------------|-----------|--------|-----------|------------|------|--------|
 |  .MSI | Não | Sim | Sim | Sim | Sim | Não | Não | Não | Não | Não |
 | .IntuneWin | Não | Sim | Sim | Sim | Sim | 19H2+ | Não | Não | Não | Não |
-| Office C2R | Não | Sim | Sim | Sim | Sim | Não | Não | Não | Não | Não |
+| Office C2R | Não | Sim | Sim | Sim | Sim | RS4+ | Não | Não | Não | Não |
 | LOB: APPX/MSIX | Sim | Sim | Sim | Sim | Sim | Sim | Sim | Sim | Sim | Sim |
 | MSFB Offline | Sim | Sim | Sim | Sim | Sim | Sim | Sim | Sim | Sim | Sim |
-| MSFB Online | Sim | Sim | Sim | Sim | Sim | Sim | RS4+ | Sim | Sim | Sim |
-| Aplicativos Web | Sim | Sim | Sim | Sim | Sim | Sim | Sim<sup>1 | Sim<sup>1 | Sim | Sim |
+| MSFB Online | Sim | Sim | Sim | Sim | Sim | Sim | RS4+ | Não | Sim | Sim |
+| Aplicativos Web | Sim | Sim | Sim | Sim | Sim | Sim | Sim<sup>2 | Sim<sup>2 | Sim | Sim<sup>2 |
 | Link da Store | Sim | Sim | Sim | Sim | Sim | Sim | Sim | Sim | Sim | Sim |
 
-<sup>1</sup> Iniciar somente a partir do Portal da Empresa.
+<sup>1</sup> Para desbloquear o gerenciamento de aplicativos, atualize seu dispositivo HoloLens para [Holographic for Business](../fundamentals/windows-holographic-for-business.md).<br />
+<sup>2</sup> Inicialize somente por meio do Portal da Empresa.
 
 > [!NOTE]
 > Todos os tipos de aplicativos do Windows exigem registro.

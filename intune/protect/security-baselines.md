@@ -5,7 +5,7 @@ keywords: ''
 author: brenduns
 ms.author: brenduns
 manager: dougeby
-ms.date: 11/21/2019
+ms.date: 02/24/2020
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.subservice: protect
@@ -16,12 +16,12 @@ ms.reviewer: shpate
 ms.suite: ems
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 04436c38fc6c4100a8232ea1ad23585f350d6aae
-ms.sourcegitcommit: a82d25d98fdf0ba766f8f074871d4f13725e23f9
+ms.openlocfilehash: 43e104d9f32f6b6204ffc3bd461bb06764543e3c
+ms.sourcegitcommit: 5881979c45fc973cba382413eaa193d369b8dcf6
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/31/2019
-ms.locfileid: "75548135"
+ms.lasthandoff: 02/24/2020
+ms.locfileid: "77569261"
 ---
 # <a name="use-security-baselines-to-configure-windows-10-devices-in-intune"></a>Usar linhas de base de segurança para configurar dispositivos com Windows 10 no Intune
 
@@ -142,7 +142,7 @@ As tarefas comuns ao trabalhar com linhas de base de segurança incluem:
 
    ![Revisar a linha de base](./media/security-baselines/review.png)
 
-9. Depois de criar o perfil, edite-o acessando **Segurança do Dispositivo** > **Linhas de base de segurança**, depois selecione o tipo da linha de base que você configurou e selecione **Perfis**. Selecione o perfil na lista de perfis disponíveis e, em seguida, selecione **Propriedades**. Você pode editar as configurações de todas as guias de configuração disponíveis e selecionar **Revisar + salvar** para confirmar suas alterações.
+9. Depois de criar o perfil, edite-o acessando **Segurança do ponto de extremidade** > **Linhas de base de segurança**, depois selecione o tipo da linha de base que você configurou e selecione **Perfis**. Selecione o perfil na lista de perfis disponíveis e, em seguida, selecione **Propriedades**. Você pode editar as configurações de todas as guias de configuração disponíveis e selecionar **Revisar + salvar** para confirmar suas alterações.
 
 ### <a name="change-the-baseline-version-for-a-profile"></a>Alterar a versão de linha de base para um perfil
 
@@ -214,7 +214,7 @@ Estritamente falando, não. A equipe de segurança da Microsoft consulta organiz
 
 - A Microsoft continua a publicar linhas de base de segurança para políticas de grupo (GPOs) e o [Kit de Ferramentas de Conformidade de Segurança](https://docs.microsoft.com/windows/security/threat-protection/security-compliance-toolkit-10), como faz há muitos anos. Essas linhas de base são usadas por muitas organizações. As recomendações nessas linhas de base são provenientes do envolvimento da equipe de segurança da Microsoft com clientes corporativos e órgãos externos, incluindo o Departamento de Defesa (DoD), Instituto Nacional de Padrões e Tecnologia (NIST) e muito mais. Compartilhamos nossas recomendações e linhas de base com essas organizações. Essas organizações também têm suas próprias recomendações que refletem com maior exatidão as recomendações da Microsoft. À medida que o MDM (gerenciamento de dispositivo móvel) continua a evoluir para a nuvem, a Microsoft criou recomendações de MDM equivalentes dessas linhas de base de política de grupo. Essas linhas de base adicionais são incorporadas ao Microsoft Intune e incluem relatórios de conformidade sobre usuários, grupos e dispositivos que seguem (ou não) a linha de base.
 
-- Muitos clientes estão usando as recomendações de linha de base do Intune como um ponto de partida e, em seguida, personalizando-as para atender às demandas de TI e de segurança. A **Linha de Base de Segurança de MDM** do Windows 10 RS5 da Microsoft é a primeira linha de base lançada. Esta linha de base é compilada como uma infraestrutura genérica que permite aos clientes importar eventualmente outras linhas de base de segurança com base no CIS, NIST e outros padrões. Atualmente, ela está disponível para Windows e, eventualmente, incluirá o iOS e Android.
+- Muitos clientes estão usando as recomendações de linha de base do Intune como um ponto de partida e, em seguida, personalizando-as para atender às demandas de TI e de segurança. A **Linha de Base de Segurança de MDM** do Windows 10 RS5 da Microsoft é a primeira linha de base lançada. Esta linha de base é compilada como uma infraestrutura genérica que permite aos clientes importar eventualmente outras linhas de base de segurança com base no CIS, NIST e outros padrões. Atualmente, ela está disponível para Windows e, eventualmente, incluirá o iOS/iPadOS e Android.
 
 - A migração de políticas locais de grupo do Active Directory para uma solução de nuvem pura usando o Azure Active Directory (AD) com o Microsoft Intune é uma jornada. Para ajudar, há modelos de políticas de grupo incluídos no [Kit de Ferramentas de Conformidade de Segurança](https://docs.microsoft.com/windows/security/threat-protection/security-compliance-toolkit-10) que podem ajudar a gerenciar dispositivos híbridos do AD e do Azure AD. Esses dispositivos podem obter as configurações de MDM da nuvem (Intune) e configurações de política de grupo de controladores de domínio locais conforme necessário.
 

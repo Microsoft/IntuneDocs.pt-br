@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: a2cf53b26c1617ca7fc493c837e57823c23781bc
-ms.sourcegitcommit: 51591b862d97904291af7aa53a6eb341b11a761e
+ms.openlocfilehash: 334cadfb7e668febad95a512eb34f62a73667ec6
+ms.sourcegitcommit: c780e9988341a20f94fdeb8672bd13e0b302da93
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/17/2020
-ms.locfileid: "77414852"
+ms.lasthandoff: 02/20/2020
+ms.locfileid: "77513989"
 ---
 # <a name="app-configuration-policies-for-microsoft-intune"></a>Políticas de configuração de aplicativo do Microsoft Intune
 
@@ -91,7 +91,7 @@ Valide a política de configuração de aplicativos usando os três seguintes m�
 
 ## <a name="diagnostic-logs"></a>Logs de diagnóstico
 
-### <a name="ios-configuration-on-unmanaged-devices"></a>Configuração do iOS em dispositivos não gerenciados
+### <a name="iosipados-configuration-on-unmanaged-devices"></a>Configuração do iOS/iPadOS em dispositivos não gerenciados
 
 Você pode validar a configuração do iOS/iPadOS com o **Log de diagnóstico do Intune** em dispositivos não gerenciados para configuração de aplicativo gerenciado. Além das etapas a seguir, você pode acessar logs de aplicativos gerenciados usando o Microsoft Edge. Confira mais informações em [Usar o Microsoft Edge no iOS/iPadOS para acessar os logs de aplicativo gerenciado](~/apps/manage-microsoft-edge.md#use-microsoft-edge-on-ios-to-access-managed-app-logs).
 
@@ -135,7 +135,7 @@ Os detalhes de configuração do aplicativo devem corresponder às políticas de
 
 ![Configuração do aplicativo de destino](./media/app-configuration-policies-overview/targeted-app-configuration-3.png)
 
-### <a name="ios-configuration-on-managed-devices"></a>Configuração do iOS em dispositivos gerenciados
+### <a name="iosipados-configuration-on-managed-devices"></a>Configuração do iOS/iPadOS em dispositivos gerenciados
 
 Você pode validar a configuração do iOS/iPadOS com o **Log de diagnóstico do Intune** em dispositivos gerenciados para configuração de aplicativo gerenciado.
 

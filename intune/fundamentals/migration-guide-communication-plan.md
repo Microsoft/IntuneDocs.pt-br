@@ -17,12 +17,12 @@ ms.reviewer: dagerrit
 ms.suite: ems
 search.appverid: MET150
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: f617e85e78ac5436567790d416c988742a2abe4c
-ms.sourcegitcommit: de663ef5f3e82e0d983899082a7f5b62c63f24ef
+ms.openlocfilehash: c880251d59810dc02446020ed02fd6049878262c
+ms.sourcegitcommit: c780e9988341a20f94fdeb8672bd13e0b302da93
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/15/2020
-ms.locfileid: "75956234"
+ms.lasthandoff: 02/20/2020
+ms.locfileid: "77515009"
 ---
 # <a name="plan-communications"></a>Planejar a comunicação
 
@@ -52,7 +52,7 @@ Criamos vídeos curtos de passo a passo para ajudar os usuários a registrar fac
 
 - [Inscrever seu dispositivo Android](https://www.youtube.com/watch?v=k0Q_sGLSx6o&t=1s)
 - [Registrar seu dispositivo de perfil de trabalho Android](https://www.youtube.com/watch?v=9Dl8HsGk4tI&t=3s)
-- [Registrar seu dispositivo iOS](https://www.youtube.com/watch?v=mJyv6YcHi7c)
+- [Registrar seu dispositivo iOS/iPadOS](https://www.youtube.com/watch?v=mJyv6YcHi7c)
 - [Registrar seu dispositivo macOS](https://www.youtube.com/watch?v=Pa2pfhwq_yk)
 - [Registrar seu Windows](https://www.youtube.com/watch?v=TKQxEckBHiE)
 
@@ -61,5 +61,5 @@ Criamos vídeos curtos de passo a passo para ajudar os usuários a registrar fac
 O Intune tem recursos adicionais para promover o registro do dispositivo com os usuários:
 
 - [Como instruir os usuários finais sobre o Microsoft Intune](end-user-educate.md) explica as etapas de registro por plataforma de SO móvel.
-- O [Registro de dispositivo do Intune para administradores de TI](../enrollment/device-enrollment.md) explica como registrar dispositivos Mac, iOS e Android no Intune.
-- Compartilhe o aplicativo do Portal da Empresa com os usuários do Windows, iOS e Android.
+- O [Registro de dispositivo do Intune para administradores de TI](../enrollment/device-enrollment.md) explica como registrar dispositivos Mac, iOS/iPadOS e Android no Intune.
+- Compartilhe o aplicativo do Portal da Empresa com os usuários do Windows, iOS/iPadOS e Android.

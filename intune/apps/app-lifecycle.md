@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: apps; get-started
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 569906cea8467d568d302f4e44b26c3394213b62
-ms.sourcegitcommit: 51591b862d97904291af7aa53a6eb341b11a761e
+ms.openlocfilehash: 670e5033ddf2a04cd5bd87040d85eef764dca519
+ms.sourcegitcommit: c780e9988341a20f94fdeb8672bd13e0b302da93
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/17/2020
-ms.locfileid: "77414976"
+ms.lasthandoff: 02/20/2020
+ms.locfileid: "77512289"
 ---
 # <a name="overview-of-the-app-lifecycle-in-microsoft-intune"></a>Visão geral do ciclo de vida do aplicativo no Microsoft Intune
 
@@ -42,7 +42,7 @@ Depois de adicionar o aplicativo ao Intune, será possível [atribuí-lo aos usu
 
 Como parte do ciclo de vida do aplicativo, são lançadas novas versões de aplicativos regularmente. O Intune fornece ferramentas para [atualizar aplicativos](apps-add.md) implantados para uma versão mais recente com facilidade. Além disso, é possível configurar funcionalidade extra em alguns aplicativos, por exemplo:
 
-- As [políticas de configuração de aplicativo iOS](app-configuration-policies-use-ios.md) fornecem configurações para aplicativos iOS/iPadOS compatíveis que são usadas quando o aplicativo é executado. Por exemplo, um aplicativo pode exigir configurações de identidade visual específicas ou o nome de um servidor com o qual ele precisa se conectar.
+- As [políticas de configuração do aplicativo iOS/iPadOS](app-configuration-policies-use-ios.md) fornecem configurações para aplicativos iOS/iPadOS compatíveis que são usadas quando o aplicativo é executado. Por exemplo, um aplicativo pode exigir configurações de identidade visual específicas ou o nome de um servidor com o qual ele precisa se conectar.
 - As [políticas de navegador gerenciado](app-configuration-managed-browser.md) ajudam a definir as configurações para o [Microsoft Edge](~/apps/apps-supported-intune-apps.md#microsoft-apps), que substitui o navegador padrão do dispositivo e permite restringir os sites que os usuários podem visitar.
 
 ## <a name="protect"></a>Proteger

@@ -14,15 +14,15 @@ ms.localizationpriority: high
 ms.assetid: 361ef17b-1ee0-4879-b7b1-d678b0787f5a
 search.appverid: MET150
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 681b4f690d03cd21c5a430e02cb0f3584d2e680e
-ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
+ms.openlocfilehash: ec7d4b8d83935b961d05e2e6fd22dd2d3f7e4086
+ms.sourcegitcommit: c780e9988341a20f94fdeb8672bd13e0b302da93
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "72510113"
+ms.lasthandoff: 02/20/2020
+ms.locfileid: "77514516"
 ---
 # <a name="manage-operating-system-versions-with-intune"></a>Gerenciar versões do sistema operacional com o Intune
-Em plataformas móveis e de área de trabalho modernas, atualizações, patches e novas versões principais são liberadas em um ritmo acelerado. Você tem controles para gerenciar totalmente as atualizações e patches no Windows, mas outras plataformas como iOS e Android exigem que os usuários finais participem do processo.  O Microsoft Intune tem os recursos para ajudá-lo a estruturar o gerenciamento de versão do sistema operacional em diferentes plataformas.
+Em plataformas móveis e de área de trabalho modernas, atualizações, patches e novas versões principais são liberadas em um ritmo acelerado. Você tem controles para gerenciar totalmente as atualizações e patches no Windows, mas outras plataformas como iOS/iPadOS e Android exigem que os usuários finais participem do processo.  O Microsoft Intune tem os recursos para ajudá-lo a estruturar o gerenciamento de versão do sistema operacional em diferentes plataformas.
 
 O Intune pode ajudá-lo a solucionar estes cenários comuns: 
 - Determinar quais versões do sistema operacional estão instaladas em seus dispositivos de usuário final

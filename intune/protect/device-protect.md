@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: c18b6bcc8ec6e8d78862c0368c920fd3d79ce2b5
-ms.sourcegitcommit: 139853f8d6ea61786da7056cfb9024a6459abd70
+ms.openlocfilehash: 49c629039c08c892c7d6b19422d79c9eb1a8d760
+ms.sourcegitcommit: c780e9988341a20f94fdeb8672bd13e0b302da93
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/26/2020
-ms.locfileid: "76755571"
+ms.lasthandoff: 02/20/2020
+ms.locfileid: "77510462"
 ---
 # <a name="protect-devices-with-microsoft-intune"></a>Proteger dispositivos com o Microsoft Intune
 
@@ -43,7 +43,7 @@ Quando um dispositivo precisar ser [removido do gerenciamento do Intune](../remo
 
 ## <a name="require-devices-to-be-compliant"></a>Exigir que is dispositivos sejam compatíveis
 O Intune tem [políticas de conformidade do dispositivo](device-compliance-get-started.md) que permitem avaliar (e, em alguns casos, corrigir) dispositivos que não estejam em conformidade com as regras que você especifica. Por exemplo, você pode obter relatórios sobre:
-- dispositivos iOS com jailbreak
+- dispositivos iOS/iPadOS com jailbreak
 - dispositivos criptografados ou não criptografados
 - a integridade dos dispositivos com Windows 10 (conforme determinado pelo Serviço de Atestado de Integridade).
 
@@ -60,7 +60,7 @@ O [MFA (autenticação multifator)](../enrollment/multi-factor-authentication.md
 O Intune permite integrar-se ao [Windows Hello for Business](windows-hello.md), que é um método de entrada alternativo para o Windows 10 e posterior que usa o Active Directory ou uma conta do Azure Active Directory para substituir uma senha, um cartão inteligente ou um cartão inteligente virtual.
 
 ## <a name="disable-activation-lock-on-ios-devices"></a>Desabilitar o Bloqueio de Ativação em dispositivos iOS
-O Bloqueio de Ativação é um recurso que ajuda a proteger os dispositivos dos usuários. O recurso exige que os usuários insiram seu ID e senha da Apple antes que qualquer pessoa possa apagar ou reativar o dispositivo. No entanto, este recurso pode causar problemas, por exemplo, se o usuário deixar a empresa sem remover o bloqueio. [Desabilitar o Bloqueio de Ativação do iOS](../remote-actions/device-activation-lock-disable.md) pode ajudar, removendo o bloqueio de dispositivos iOS supervisionados e permitindo que ele seja realocado ou apagado.
+O Bloqueio de Ativação é um recurso que ajuda a proteger os dispositivos dos usuários. O recurso exige que os usuários insiram seu ID e senha da Apple antes que qualquer pessoa possa apagar ou reativar o dispositivo. No entanto, este recurso pode causar problemas, por exemplo, se o usuário deixar a empresa sem remover o bloqueio. [Desabilitar o Bloqueio de Ativação do iOS/iPadOS](../remote-actions/device-activation-lock-disable.md) pode ajudar, removendo o bloqueio de dispositivos iOS/iPadOS supervisionados e permitindo que ele seja realocado ou apagado.
 
 ## <a name="next-steps"></a>Próximas etapas
 

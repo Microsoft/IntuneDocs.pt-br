@@ -17,18 +17,18 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: fbafca746c43dada6281ffbfe1e34f01afa8ab91
-ms.sourcegitcommit: 51591b862d97904291af7aa53a6eb341b11a761e
+ms.openlocfilehash: 7ff03682ab406b92e3ea7f1e416188119913cc87
+ms.sourcegitcommit: 5881979c45fc973cba382413eaa193d369b8dcf6
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/17/2020
-ms.locfileid: "77413673"
+ms.lasthandoff: 02/24/2020
+ms.locfileid: "77569448"
 ---
 # <a name="find-the-primary-user-of-an-intune-device"></a>Localizar o usuário principal de um dispositivo do Intune
 
-Usuário principal, também conhecido como Afinidade de Dispositivo de Usuário, é uma propriedade de cada dispositivo do Intune. Um dispositivo do Intune pode ter zero ou um usuário principal atribuído a ele. Quando não há nenhum usuário primário atribuído, o dispositivo é referenciado como "Dispositivo Compartilhado".
+O usuário principal, também conhecido como Afinidade de Dispositivo de Usuário, é uma propriedade de cada dispositivo do Intune. Um dispositivo do Intune pode ter zero ou um usuário principal atribuído a ele. Quando não há nenhum usuário primário atribuído, o dispositivo é referenciado como "Dispositivo Compartilhado".
 
-## <a name="how-to-find-a-devices-primary-user"></a>Como localizar o usuário principal de um dispositivo
+## <a name="find-a-devices-primary-user"></a>Localizar o usuário principal de um dispositivo
 
 1. Entre no [Centro de Administração do Gerenciador de Ponto de Extremidade da Microsoft](https://go.microsoft.com/fwlink/?linkid=2109431).
 2. Escolha **Dispositivos** > escolha um dispositivo.
@@ -38,7 +38,7 @@ Usuário principal, também conhecido como Afinidade de Dispositivo de Usuário,
 A propriedade de usuário principal é usada para mapear um usuário licenciado do Intune para seus dispositivos nos seguintes casos:
 - O aplicativo do Portal da Empresa
 - Site do usuário final
-- Experiência de profissionais de TI, como a solução de problemas de páginas no portal do Azure. Essas páginas mapeiam contas de usuário em busca de dispositivos usando o usuário principal.    
+- Experiência de profissionais de TI, como a solução de problemas de páginas no portal do Azure. Essas páginas mapeiam contas de usuário em busca de dispositivos usando o usuário principal. 
 
 ### <a name="company-portal-app"></a>Aplicativo do Portal da Empresa
 O aplicativo de Portal da Empresa espera que a conta do usuário que está conectada ao Portal da Empresa seja o usuário principal deste dispositivo. Se outro usuário tiver sido atribuído como o usuário principal, o Portal da Empresa mostra um aviso:

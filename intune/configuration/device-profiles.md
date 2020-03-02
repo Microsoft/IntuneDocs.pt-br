@@ -5,7 +5,7 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 11/13/2019
+ms.date: 02/18/2020
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.subservice: configuration
@@ -17,23 +17,23 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure; get-started
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 800bbd5199bd4389ee1ae8aa98a68e21456e7000
-ms.sourcegitcommit: e166b9746fcf0e710e93ad012d2f52e2d3ed2644
+ms.openlocfilehash: 951d3df8b842f1a0e76f875ea9fc7921c413494f
+ms.sourcegitcommit: c780e9988341a20f94fdeb8672bd13e0b302da93
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/19/2019
-ms.locfileid: "75206611"
+ms.lasthandoff: 02/20/2020
+ms.locfileid: "77513055"
 ---
 # <a name="apply-features-and-settings-on-your-devices-using-device-profiles-in-microsoft-intune"></a>Aplicar recursos e configurações aos seus dispositivos usando perfis de dispositivo no Microsoft Intune
 
 
 
-O Microsoft Intune inclui configurações e recursos que você pode habilitar ou desabilitar em diferentes dispositivos em sua organização. Essas configurações e recursos são adicionados a "perfis de configuração". Você pode criar perfis para diferentes dispositivos e plataformas, incluindo iOS, Android e Windows. Em seguida, use o Intune para aplicar ou "atribuir" o perfil aos dispositivos.
+O Microsoft Intune inclui configurações e recursos que você pode habilitar ou desabilitar em diferentes dispositivos em sua organização. Essas configurações e recursos são adicionados a "perfis de configuração". Você pode criar perfis para diferentes dispositivos e plataformas, incluindo iOS/iPadOS, Android e Windows. Em seguida, use o Intune para aplicar ou "atribuir" o perfil aos dispositivos.
 
 Como parte da sua solução MDM (gerenciamento de dispositivo móvel), use esses perfis de configuração para concluir tarefas diferentes. Alguns exemplos de perfil incluem:
 
 - Em dispositivos Windows 10, use um modelo de perfil que bloqueie controles ActiveX no Internet Explorer.
-- Em dispositivos iOS e macOS, permita que os usuários usem impressoras AirPrint em sua organização.
+- Em dispositivos iOS/iPadOS e macOS, permita que os usuários usem impressoras AirPrint em sua organização.
 - Permita ou impeça o acesso ao Bluetooth no dispositivo.
 - Crie um perfil de WiFi ou VPN que permita a diferentes dispositivos o acesso à sua rede corporativa.
 - Gerencie as atualizações de software, incluindo a hora em que são instaladas.
@@ -67,7 +67,7 @@ Esse recurso é compatível com:
 
 ## <a name="custom-profile"></a>Perfil personalizado
 
-As [Configurações personalizadas](custom-settings-configure.md) permitem que os administradores atribuam configurações de dispositivo que não são nativas do Intune. Em dispositivos Android, você pode inserir valores de OMA-URI. Para dispositivos iOS, você pode importar um arquivo de configuração criado com o Apple Configurator.
+As [Configurações personalizadas](custom-settings-configure.md) permitem que os administradores atribuam configurações de dispositivo que não são nativas do Intune. Em dispositivos Android, você pode inserir valores de OMA-URI. Para dispositivos iOS/iPadOS, você pode importar um arquivo de configuração criado com o Apple Configurator.
 
 Esse recurso é compatível com:
 
@@ -89,7 +89,7 @@ Esse recurso é compatível com:
 
 ## <a name="device-features"></a>Recursos de dispositivo
 
-Os [recursos de dispositivo](device-features-configure.md) controlam recursos em dispositivos iOS e macOS, como o AirPrint, notificações e mensagens da tela de bloqueio.
+Os [recursos de dispositivo](device-features-configure.md) controlam recursos em dispositivos iOS/iPadOS e macOS, como o AirPrint, notificações e mensagens da tela de bloqueio.
 
 Esse recurso é compatível com:
 
@@ -106,7 +106,7 @@ Esse recurso é compatível com:
 
 ## <a name="device-restrictions"></a>Restrições de dispositivo
 
-As [restrições de dispositivo](device-restrictions-configure.md) controlam a segurança, o hardware, o compartilhamento de dados e outras configurações nos dispositivos. Por exemplo, crie um perfil de restrição de dispositivo que impeça que os usuários de dispositivos iOS usem a câmera do dispositivo. 
+As [restrições de dispositivo](device-restrictions-configure.md) controlam a segurança, o hardware, o compartilhamento de dados e outras configurações nos dispositivos. Por exemplo, crie um perfil de restrição de dispositivo que impeça que os usuários de dispositivos iOS/iPadOS usem a câmera do dispositivo. 
 
 Esse recurso é compatível com:
 
@@ -129,7 +129,7 @@ Esse recurso é compatível com:
 
 As [Configurações de educação – Windows 10](education-settings-configure.md) definem as opções para o [aplicativo Windows Take a Test](https://education.microsoft.com/gettrained/win10takeatest). Quando você configura essas opções, nenhum outro aplicativo pode ser executado no dispositivo até que o teste seja concluído.
 
-As [Configurações de educação – iOS](../fundamentals/education-settings-configure-ios-shared.md) usam o aplicativo iOS Classroom para conduzir a aprendizagem e controlar os dispositivos dos alunos na sala de aula. É possível configurar iPads de modo que vários alunos possam compartilhar um único dispositivo.
+As [Configurações de educação – iOS/iPadOS](../fundamentals/education-settings-configure-ios-shared.md) usam o aplicativo iOS/iPadOS Classroom para conduzir a aprendizagem e controlar os dispositivos dos alunos na sala de aula. É possível configurar iPads de modo que vários alunos possam compartilhar um único dispositivo.
 
 ## <a name="email"></a>Email
 
@@ -186,7 +186,7 @@ Esse recurso é compatível com:
 
 - Windows 10 e posterior
 
-Configurações de quiosque também estão disponíveis como restrições de dispositivos para [Android](device-restrictions-android.md#kiosk), [Android Enterprise](device-restrictions-android-for-work.md#dedicated-device-settings) e [iOS](device-restrictions-ios.md#kiosk).
+Configurações de quiosque também estão disponíveis como restrições de dispositivos para [Android](device-restrictions-android.md#kiosk), [Android Enterprise](device-restrictions-android-for-work.md#dedicated-device-settings) e [iOS/iPadOS](device-restrictions-ios.md#kiosk).
 
 ## <a name="oemconfig"></a>OEMConfig
 
@@ -219,7 +219,7 @@ Esse recurso é compatível com:
 
 ## <a name="update-policies"></a>Políticas de atualização
 
-As [Políticas de atualização do iOS](../protect/software-updates-ios.md) mostram como criar e atribuir políticas do iOS para instalar atualizações de software em seus dispositivos iOS. Você também pode examinar o status da instalação.
+As [Políticas de atualização do iOS/iPadOS](../protect/software-updates-ios.md) mostram como criar e atribuir políticas do iOS/iPadOS para instalar atualizações de software em seus dispositivos iOS/iPadOS. Você também pode examinar o status da instalação.
 
 Para ver as políticas de atualização em dispositivos Windows, confira [Otimização de Entrega](delivery-optimization-windows.md). 
 

@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure; seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: c4cffafd4145ab536157ea55c732ac27bec29538
-ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
+ms.openlocfilehash: 1b740ed1e16f60b15991f1aa450e623cd20b62ea
+ms.sourcegitcommit: c780e9988341a20f94fdeb8672bd13e0b302da93
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "73801619"
+ms.lasthandoff: 02/20/2020
+ms.locfileid: "77515128"
 ---
 # <a name="check-point-sandblast-mobile-threat-defense-connector-with-intune"></a>Conector da Defesa contra Ameaças Móveis do Check Point SandBlast com o Intune
 
@@ -33,7 +33,7 @@ Você pode configurar políticas de Acesso Condicional com base na avaliação d
 
 ## <a name="how-do-intune-and-check-point-sandblast-mobile-help-protect-your-company-resources"></a>Como o Intune e o Check Point SandBlast Mobile ajudam a proteger os recursos da empresa?
 
-O aplicativo móvel do Check Point SandBlast Mobile para Android e iOS captura o sistema de arquivos, a pilha de rede e a telemetria do dispositivo e dos aplicativos, quando disponível e envia os dados de telemetria ao serviço de nuvem do Check Point SandBlast para avaliar o risco causado por ameaças móveis ao dispositivo.
+O aplicativo móvel do Check Point SandBlast Mobile para Android e iOS/iPadOS captura o sistema de arquivos, a pilha de rede e a telemetria do dispositivo e dos aplicativos, quando disponível e envia os dados de telemetria ao serviço de nuvem do Check Point SandBlast para avaliar o risco causado por ameaças móveis ao dispositivo.
 
 A política de conformidade do dispositivo do Intune inclui uma regra para Defesa contra Ameaças Móveis do Check Point SandBlast, que tem base na avaliação de risco do Check Point SandBlast. Quando essa regra é habilitada, o Intune avalia a conformidade do dispositivo com a política habilitada. Se o dispositivo for considerado não compatível, o acesso dos usuários aos recursos corporativos como o Exchange Online e o SharePoint Online será bloqueado. Os usuários também recebem diretrizes do aplicativo móvel do Check Point SandBlast para resolver o problema e recuperar o acesso aos recursos corporativos.
 

@@ -16,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: ad363785888a92d1e8be4f2d28690278a2efaae9
-ms.sourcegitcommit: c7c6be3833d9a63d43f31d598b555b49b33cf5cb
+ms.openlocfilehash: 3cd153a4c602ba49a5b5135d1d6cb32a61f2668d
+ms.sourcegitcommit: 47c9af81c385c7e893fe5a85eb79cf08e69e6831
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/03/2020
-ms.locfileid: "76966293"
+ms.lasthandoff: 02/25/2020
+ms.locfileid: "77576503"
 ---
 # <a name="create-and-assign-scep-certificate-profiles-in-intune"></a>Criar e atribuir perfis de Certificado SCEP no Intune
 
@@ -60,7 +60,7 @@ Depois de [configurar a infraestrutura](certificates-scep-configure.md) para dar
 
    - **Tipo de certificado**:
 
-     *(Aplica-se ao:  Android, Android Enterprise, iOS, macOS, Windows 8.1 e posterior e Windows 10 e posterior.)*
+     *(Aplica-se ao:  Android, Android Enterprise, iOS/iPadOS, macOS, Windows 8.1 e posterior e Windows 10 e posterior.)*
 
      Selecione um tipo, dependendo de como você usará o perfil de certificado:
 
@@ -280,7 +280,7 @@ Atribua perfis de Certificado SCEP da mesma maneira que você [implanta perfis d
 - Embora você crie e atribua o perfil de certificado confiável e o perfil de Certificado SCEP separadamente, ambos precisam ser atribuídos. Sem os dois instalados em um dispositivo, a política de certificação SCEP falhará. Verifique se todos os perfis de certificado raiz confiável também são implantados nos mesmos grupos do perfil SCEP.
 
 > [!NOTE]
-> Em dispositivos iOS, quando um perfil de certificado SCEP é associado a um perfil adicional, como um perfil Wi-Fi ou VPN, o dispositivo recebe um certificado para cada um dos perfis adicionais. Isso resulta em um dispositivo iOS ter vários certificados entregues pela solicitação de certificado SCEP.  Se desejar obter um único certificado, use Certificados PKCS em vez de Certificados SCEP.  Isso se deve às diferenças em como os Certificados SCEP e os Certificados PKCS são entregues aos dispositivos.
+> Em dispositivos iOS/iPadOS, quando um perfil de certificado SCEP é associado a um perfil adicional, como um perfil Wi-Fi ou VPN, o dispositivo recebe um certificado para cada um dos perfis adicionais. Isso resulta em um dispositivo iOS/iPadOS tendo vários certificados entregues pela solicitação de certificado SCEP.  Se desejar obter um único certificado, use Certificados PKCS em vez de Certificados SCEP.  Isso se deve às diferenças em como os Certificados SCEP e os Certificados PKCS são entregues aos dispositivos.
 
 ## <a name="next-steps"></a>Próximas etapas
 

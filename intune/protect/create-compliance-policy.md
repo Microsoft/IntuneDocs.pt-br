@@ -16,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: ba6b8fb66d25af3833e55eebc12e8b6df2fb5ba5
-ms.sourcegitcommit: 66e284fe092e19c1da72b4b770e45bf25ac7910c
+ms.openlocfilehash: 68fcdb66591ec0e566aa702b3ca4d6c5c5448859
+ms.sourcegitcommit: c780e9988341a20f94fdeb8672bd13e0b302da93
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "74860223"
+ms.lasthandoff: 02/20/2020
+ms.locfileid: "77514006"
 ---
 # <a name="create-a-compliance-policy-in-microsoft-intune"></a>Criar uma política de conformidade no Microsoft Intune
 
@@ -67,7 +67,7 @@ Para usar as políticas de conformidade do dispositivo, não deixe de:
 
 3. Especifique as seguintes propriedades:
 
-   - **Nome**: Insira um nome descritivo para a política. Nomeie suas políticas para que você possa identificá-las facilmente mais tarde. Por exemplo, um bom nome de política seria **Marcar dispositivos do iOS com jailbreak como fora de conformidade**.
+   - **Nome**: Insira um nome descritivo para a política. Nomeie suas políticas para que você possa identificá-las facilmente mais tarde. Por exemplo, um bom nome de política seria **Marcar dispositivos do iOS/iPadOS com jailbreak como fora de conformidade**.
 
    - **Descrição**: Insira uma descrição para a política. Essa configuração é opcional, mas recomendada.
 
@@ -92,7 +92,7 @@ Para usar as políticas de conformidade do dispositivo, não deixe de:
      - [Windows Phone 8.1, Windows 8.1 e posteriores](compliance-policy-create-windows-8-1.md)
      - [Windows 10 e posterior](compliance-policy-create-windows.md)  
 
-   - **Locais** *(Administrador do dispositivo Android)* : Em sua política, você pode forçar conformidade pela localização do dispositivo. Escolha entre os locais existentes. Ainda não tem um local? [Usar locais (limite de rede)](use-network-locations.md) no Intune fornece alguma orientação.  
+   - **Locais** *(administrador do dispositivo Android)* : Em sua política, você pode forçar conformidade pela localização do dispositivo. Escolha entre os locais existentes. Ainda não tem um local? [Usar locais (limite de rede)](use-network-locations.md) no Intune fornece alguma orientação.  
 
    - **Ações para não compatibilidade**: Para dispositivos que não atendem às suas políticas de conformidade, é possível adicionar uma sequência de ações a serem aplicadas automaticamente. Você pode alterar a agenda quando o dispositivo está marcado como não em conformidade, como após um dia. Você também pode configurar uma segunda ação que envia um email para o usuário quando o dispositivo não está em conformidade.
 
@@ -141,7 +141,7 @@ Scope tags are a great way to assign and filter policies to specific groups, suc
 
 ## <a name="refresh-cycle-times"></a>Tempos de ciclo de atualização
 
-O Intune usa ciclos de atualização diferentes para verificar se há atualizações de políticas de conformidade. Se o dispositivo for recém-registrado, a frequência de execução do check-in será maior. Os [ciclos de atualização de política e perfil](../configuration/device-profile-troubleshoot.md#how-long-does-it-take-for-devices-to-get-a-policy-profile-or-app-after-they-are-assigned) listam os tempos de atualização estimados.
+O Intune usa ciclos de atualização diferentes para verificar se há atualizações de políticas de conformidade. Se o dispositivo for recém-registrado, a frequência de execução do check-in será maior. Os [ciclos de atualização de política e perfil](../configuration/device-profile-troubleshoot.md#how-long-does-it-take-for-devices-to-get-a-policy-profile-or-app-after-they-are-assigned) descrevem os tempos de atualização estimados.
 
 A qualquer momento, os usuários podem abrir o aplicativo Portal da Empresa e sincronizar o dispositivo para verificar imediatamente as atualizações de políticas.
 
@@ -173,7 +173,7 @@ Se um dispositivo tiver várias políticas de conformidade e diferentes status d
 |---------|---------|
 |Unknown     |1|
 |NotApplicable     |2|
-|Compatível|3|
+|compatível|3|
 |InGracePeriod|4|
 |NonCompliant|5|
 |Erro do|6|

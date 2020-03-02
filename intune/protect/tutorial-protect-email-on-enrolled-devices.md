@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 9deee0dca675d7fd95445131ed98ea195972c6ac
-ms.sourcegitcommit: a7b479c84b3af5b85528db676594bdb3a1ff6ec6
+ms.openlocfilehash: c134eb1fc413a32f2a27034d8c3a993f18f8a9c9
+ms.sourcegitcommit: 47c9af81c385c7e893fe5a85eb79cf08e69e6831
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/22/2019
-ms.locfileid: "74409914"
+ms.lasthandoff: 02/25/2020
+ms.locfileid: "77576280"
 ---
 # <a name="tutorial-protect-exchange-online-email-on-managed-devices"></a>Tutorial: Proteger o email do Exchange Online em dispositivos gerenciados
 
@@ -45,7 +45,7 @@ Você precisará de um locatário de teste com as seguintes assinaturas para est
 
 - Assinatura do Office 365 Business que inclui o Exchange ([avaliação gratuita](https://go.microsoft.com/fwlink/p/?LinkID=510938))
 
-Antes de começar, crie um perfil de dispositivo de teste para dispositivos iOS seguindo as etapas no [Início Rápido: Criar um perfil de dispositivo de email para iOS](../configuration/quickstart-email-profile.md).
+Antes de começar, crie um perfil de dispositivo de teste para dispositivos iOS seguindo as etapas no [Início Rápido: Criar um perfil de dispositivo de email para o iOS/iPadOS](../configuration/quickstart-email-profile.md).
 
 ## <a name="sign-in-to-intune"></a>Entrar no Intune
 
@@ -162,7 +162,7 @@ Agora, criaremos uma política de Acesso Condicional que exige que todas as plat
 
 ## <a name="try-it-out"></a>Experimente
 
-Com as políticas que você criou, qualquer dispositivo iOS que tente entrar no email do Office 365 precisará se inscrever no Intune e usar o aplicativo móvel do Outlook para iOS. Para testar esse cenário em um dispositivo iOS, tente entrar no Exchange Online usando credenciais para um usuário em seu locatário de teste. Você será solicitado a inscrever o dispositivo e instalar o aplicativo móvel do Outlook.
+Com as políticas que você criou, qualquer dispositivo iOS que tente entrar no email do Office 365 precisará se inscrever no Intune e usar o aplicativo móvel do Outlook para iOS/iPadOS. Para testar esse cenário em um dispositivo iOS, tente entrar no Exchange Online usando credenciais para um usuário em seu locatário de teste. Você será solicitado a inscrever o dispositivo e instalar o aplicativo móvel do Outlook.
 
 1. Para testar em um iPhone, acesse **Ajustes** > **Senhas e Contas** > **Adicionar Conta** > **Exchange**.
 

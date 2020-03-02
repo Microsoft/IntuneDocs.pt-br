@@ -5,7 +5,7 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 01/28/2020
+ms.date: 02/18/2020
 ms.topic: troubleshooting
 ms.service: microsoft-intune
 ms.subservice: configuration
@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 881d0f095d2144ae42db4825336275980a19f419
-ms.sourcegitcommit: b0d683917af83170f85022b270270d8ced8e301c
+ms.openlocfilehash: 21497716f17ced83bdcc1952cb952151f993bb7b
+ms.sourcegitcommit: c780e9988341a20f94fdeb8672bd13e0b302da93
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "76812358"
+ms.lasthandoff: 02/20/2020
+ms.locfileid: "77511320"
 ---
 # <a name="common-questions-issues-and-resolutions-with-device-policies-and-profiles-in-microsoft-intune"></a>Perguntas, problemas e soluções comuns para perfis e políticas de dispositivo no Microsoft Intune
 
@@ -36,11 +36,11 @@ Para atenuar esse problema, configure um Wi-Fi de convidado. Se o Wi-Fi corporat
 
 Algumas recomendações adicionais:  
 
-- Se a rede Wi-Fi à qual você está se conectando usa uma senha ou frase secreta, certifique-se de poder se conectar ao roteador Wi-Fi diretamente. É possível testar com um dispositivo iOS.
+- Se a rede Wi-Fi à qual você está se conectando usa uma senha ou frase secreta, certifique-se de poder se conectar ao roteador Wi-Fi diretamente. É possível testar com um dispositivo iOS/iPadOS.
 - Depois de se conectar com êxito ao ponto de extremidade Wi-Fi (roteador Wi-Fi), observe o SSID e a credencial usada (esse valor é a senha ou a frase secreta).
 - Insira o SSID e a credencial (senha ou frase secreta) no campo Chave pré-compartilhada. 
 - Implante em um grupo de teste que tenha um número de usuários limitado, preferencialmente apenas a equipe de TI. 
-- Sincronize seu dispositivo iOS com o Intune. Registre-se caso você ainda não tenha se registrado. 
+- Sincronize seu dispositivo iOS/iPadOS com o Intune. Registre-se caso você ainda não tenha se registrado. 
 - Teste a conexão com o mesmo ponto de extremidade Wi-Fi (conforme mencionado na primeira etapa) novamente.
 - Expanda para grupos maiores e, eventualmente, para todos os usuários esperados em sua organização. 
 
@@ -54,7 +54,7 @@ Frequências **estimadas**:
 
 | Plataforma | Ciclo de atualização|
 | --- | --- |
-| iOS | Aproximadamente a cada oito horas |
+| iOS/iPadOS | Aproximadamente a cada oito horas |
 | macOS | Aproximadamente a cada oito horas |
 | Android | Aproximadamente a cada oito horas |
 | Computadores Windows 10 registrados como dispositivos | Aproximadamente a cada oito horas |
@@ -65,7 +65,7 @@ Se o dispositivo foi registrado recentemente, o check-in da configuração, da c
 
 | Plataforma | Frequência |
 | --- | --- |
-| iOS | A cada 15 minutos por uma hora e, depois, a cada oito horas |  
+| iOS/iPadOS | A cada 15 minutos por uma hora e, depois, a cada oito horas |  
 | macOS | A cada 15 minutos por uma hora e, depois, a cada oito horas | 
 | Android | A cada três minutos por 15 minutos e, depois, a cada 15 minutos por duas horas e, depois, a cada oito horas | 
 | Computadores Windows 10 registrados como dispositivos | A cada três minutos por 15 minutos e, depois, a cada 15 minutos por duas horas e, depois, a cada oito horas | 
@@ -102,7 +102,7 @@ Ocorrem conflitos quando duas configurações de perfil são iguais. Por exemplo
 
 Uma política é implantada para o aplicativo e entra em vigor. Uma segunda política é implantada. Nesse cenário, a primeira política tem precedência e continua sendo aplicada. A segunda política mostra um conflito. Se as duas são aplicadas ao mesmo tempo, o que significa que não há uma política anterior, as duas ficam em conflito. As configurações conflitantes são definidas para os valores mais restritivos.
 
-## <a name="what-happens-when-ios-custom-policies-conflict"></a>O que acontece quando há conflito de políticas personalizadas de iOS?
+## <a name="what-happens-when-iosipados-custom-policies-conflict"></a>O que acontece quando há conflito de políticas personalizadas de iOS/iPadOS?
 
 O Intune não avalia o conteúdo dos arquivos de Configuração da Apple nem uma política personalizada de OMA-URI (Uniform Resource Identifier da Open Mobile Alliance). Ele simplesmente serve como o mecanismo de entrega.
 
@@ -144,7 +144,7 @@ Ao excluir um perfil ou remover um dispositivo de um grupo que tenha o perfil, o
     - Permitir NFC
     - Permitir Wi-Fi
 
-  - **iOS**: Todas as configurações são removidas, exceto:
+  - **iOS/iPadOS**: Todas as configurações são removidas, exceto:
   
     - Permitir roaming de Voz
     - Permitir roaming de Dados
@@ -156,7 +156,7 @@ Os dispositivos Windows Phone não permitem que as políticas de segurança defi
 
 Para alterar o perfil para um valor menos seguro, redefina as políticas de segurança. Por exemplo, no Windows 8.1, na área de trabalho, passe o dedo da direita para a esquerda > escolha **Configurações** > **Painel de Controle**. Selecione o miniaplicativo **Contas de Usuário**. No menu de navegação à esquerda, há um link **Redefinir Políticas de Segurança** (perto da parte inferior). Selecione-o e, em seguida, escolha **Redefinir Políticas**.
 
-Outros dispositivos de MDM, como Android, Windows Phone 8.1 e posteriores, iOS e Windows 10, talvez tenham que ser desativados e registrados novamente no Intune para aplicar um perfil menos restritivo.
+Outros dispositivos de MDM, como Android, Windows Phone 8.1 e posterior, iOS/iPadOS e Windows 10, talvez tenham que ser desativados e registrados novamente no Intune para que um perfil menos restritivo seja aplicado.
 
 ## <a name="some-settings-in-a-windows-10-profile-return-not-applicable"></a>Algumas configurações em um perfil do Windows 10 retornam "Não Aplicável"
 

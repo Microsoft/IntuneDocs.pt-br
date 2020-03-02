@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: b4ff350bd8c1c16eedd30a6b7af4f3927bce3c3e
-ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
+ms.openlocfilehash: 9d0fe5634e5af6ef4c6f19e067131f151733c0b5
+ms.sourcegitcommit: c780e9988341a20f94fdeb8672bd13e0b302da93
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "72508760"
+ms.lasthandoff: 02/20/2020
+ms.locfileid: "77515230"
 ---
 # <a name="zimperium-mobile-threat-defense-connector-with-intune"></a>Conector do Zimperium Mobile Threat Defense ao Intune
 
@@ -33,11 +33,11 @@ Configure políticas de Acesso Condicional com base na avaliação de risco do Z
 
 ## <a name="how-do-intune-and-zimperium-help-protect-your-company-resources"></a>Como o Intune e o Zimperium ajudam a proteger os recursos da empresa?
 
-O aplicativo Zimperium para Android e iOS captura o sistema de arquivos, a pilha de rede e, quando disponível, a telemetria dos dispositivos e dos aplicativos, e envia os dados telemétricos ao serviço de nuvem do Zimperium para avaliar o risco ao dispositivo causado por ameaças móveis.
+O aplicativo Zimperium para Android e iOS/iPadOS captura o sistema de arquivos, a pilha de rede e, quando disponível, a telemetria dos dispositivos e dos aplicativos, e envia os dados telemétricos ao serviço de nuvem do Zimperium para avaliar o risco ao dispositivo causado por ameaças móveis.
 
 A política de conformidade do dispositivo do Intune inclui uma regra para o Zimperium Mobile Threat Defense, que se baseia na avaliação de risco do Zimperium. Quando essa regra é habilitada, o Intune avalia a conformidade do dispositivo com a política habilitada. Se o dispositivo for considerado não compatível, o acesso dos usuários aos recursos corporativos como o Exchange Online e o SharePoint Online será bloqueado. Os usuários também recebem diretrizes do aplicativo Zimperium instalado nos dispositivos para resolver o problema e recuperar o acesso aos recursos corporativos.
 
-## <a name="sample-scenarios"></a>Cenários de exemplo
+## <a name="sample-scenarios"></a>Exemplo de cenários
 
 Veja abaixo alguns cenários de integração do Zimperium ao Intune:
 

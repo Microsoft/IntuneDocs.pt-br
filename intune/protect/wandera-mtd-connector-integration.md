@@ -15,12 +15,12 @@ ms.technology: ''
 ms.assetid: ''
 search.appverid: MET150
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: e565f40aac2a2b97f547a5b68a70a887d9e820ae
-ms.sourcegitcommit: e166b9746fcf0e710e93ad012d2f52e2d3ed2644
+ms.openlocfilehash: d90e3757ced90bea21e4033b6baa93bfa201b1f2
+ms.sourcegitcommit: c780e9988341a20f94fdeb8672bd13e0b302da93
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/19/2019
-ms.locfileid: "75207461"
+ms.lasthandoff: 02/20/2020
+ms.locfileid: "77514210"
 ---
 # <a name="integrate-wandera-mobile-threat-protection-with-intune"></a>Integrar a Proteção contra Ameaças Móveis Wandera com o Intune  
 
@@ -91,7 +91,7 @@ As seções e procedimentos a seguir guiarão você nesse processo.
 Para obter mais informações sobre esse processo do Wandera, entre no portal [RADAR](https://radar.wandera.com/login) do Wandera. Acesse **Configurações** > **Integração EMM**, selecione a guia **Push de Aplicativo** e, em seguida, selecione **Microsoft Intune**. A guia Push de Aplicativo é atualizada com instruções específicas do Intune.  
 
 ### <a name="add-the-wandera-apps"></a>Adicionar aplicativos Wandera  
-Crie aplicativos clientes no Intune para implantar o aplicativo Wandera em dispositivos Android e iOS. Confira [Adicionar aplicativos MTD](mtd-apps-ios-app-configuration-policy-add-assign.md) para conhecer os procedimentos e detalhes personalizados específicos dos aplicativos Wandera.  
+Crie aplicativos clientes no Intune para implantar o aplicativo Wandera em dispositivos Android e iOS/iPadOS. Confira [Adicionar aplicativos MTD](mtd-apps-ios-app-configuration-policy-add-assign.md) para conhecer os procedimentos e detalhes personalizados específicos dos aplicativos Wandera.  
 
 Depois de criar os aplicativos, retorne aqui para criar o grupo de sincronização e atribuir os aplicativos.
 
@@ -105,14 +105,14 @@ Depois de criar os aplicativos, retorne aqui para criar o grupo de sincronizaç�
 
    ![Configurar o grupo de sincronização](./media/wandera-mtd-connector-integration/configure-sync-group.png)
 
-3. Selecione **Membros** e atribua grupos que incluam os dispositivos Android e iOS que você deseja usar com o Wandera.
+3. Selecione **Membros** e atribua grupos que incluam os dispositivos Android e iOS/iPadOS que você deseja usar com o Wandera.
 
 4. Selecione **Criar** para salvar o grupo.
 
 Para obter mais informações, confira [Implantar aplicativos](../apps/apps-deploy.md)
 
 ### <a name="assign-the-wandera-apps-to-the-synchronization-group"></a>Atribuir os aplicativos Wandera ao grupo de sincronização  
-Repita o procedimento a seguir para o aplicativo Wandera que você criou para iOS e Android.
+Repita o procedimento a seguir para o aplicativo Wandera que você criou para iOS/iPadOS e Android.
 
 1. Entre no [Centro de Administração do Gerenciador de Ponto de Extremidade da Microsoft](https://go.microsoft.com/fwlink/?linkid=2109431).
 2. Escolha **Aplicativos** > **Todos os aplicativos** e escolha o aplicativo do Wandera.

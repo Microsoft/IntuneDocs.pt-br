@@ -5,7 +5,7 @@ keywords: ''
 author: brenduns
 ms.author: brenduns
 manager: dougeby
-ms.date: 11/21/2019
+ms.date: 02/24/2020
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.subservice: protect
@@ -16,12 +16,12 @@ ms.reviewer: shpate
 ms.suite: ems
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: cbf82c0bef88e4a6d0e790f4b0ecdf73d2731d5d
-ms.sourcegitcommit: 9bb1bcd9f1bdd53b470073da956bbd8b0935dfbc
+ms.openlocfilehash: 3d8ee4ec6a5bcb29a51b68cff7b840823b678636
+ms.sourcegitcommit: 5881979c45fc973cba382413eaa193d369b8dcf6
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/31/2019
-ms.locfileid: "75556395"
+ms.lasthandoff: 02/24/2020
+ms.locfileid: "77569278"
 ---
 # <a name="monitor-security-baseline-and-profiles-in-microsoft-intune"></a>Monitorar perfis e linha de base de segurança no Microsoft Intune
 
@@ -106,6 +106,18 @@ O monitoramento do perfil fornece informações sobre o estado de implantação 
 
    ![Ver as opções de monitoramento diferentes para um perfil de linhas de base de segurança](./media/security-baselines-monitor/monitor-status-options.png)
 
+## <a name="view-endpoint-security-configurations-per-device"></a>Exibir a configuração de segurança do ponto de extremidade por dispositivo
+
+Veja detalhes sobre as configurações de segurança que se aplicam a um dispositivo individual, o que pode ajudar você a isolar as configurações que estão configuradas incorretamente.
+
+1. Entre no [Centro de administração do Microsoft Endpoint Manager](https://go.microsoft.com/fwlink/?linkid=2109431).
+
+2. Acesse **Dispositivos** > **Todos os dispositivos** e selecione o dispositivo cujo registro você deseja ver.
+
+3. Na categoria *Monitor*, selecione **Configuração de segurança do ponto de extremidade** para exibir a lista de configurações de segurança que se aplicam a esse dispositivo.
+
+4. Você pode selecionar uma configuração de segurança de ponto de extremidade para ver e analisar detalhes adicionais sobre a avaliação da configuração de segurança no dispositivo.
+
 ## <a name="troubleshoot-using-per-setting-status"></a>Solucionar problemas usando o status por configuração
 
 Você implantou uma linha de base de segurança, mas o status da implantação mostra um erro. As etapas a seguir fornecem orientações sobre como solucionar o erro.
@@ -135,6 +147,7 @@ Em dispositivos com Windows 10, há um relatório de informações de diagnósti
 [Diagnosticar falhas de MDM no Windows 10](https://docs.microsoft.com/windows/client-management/mdm/diagnose-mdm-failures-in-windows-10) fornece mais informações sobre esse relatório interno.
 
 > [!TIP]
+>
 > - Algumas configurações também listam o GUID. Você pode procurar esse GUID no registro local (regedit) para quaisquer e valores definidos.
 > - Os logs do Visualizador de Eventos também podem incluir algumas informações de erro sobre a configuração problemática (**Visualizador de eventos** > **Logs de Aplicativos e Serviços** > **Microsoft** > **Windows** > **DeviceManagement-Enterprise-Diagnostics-Provider** > **Administrador**).
 

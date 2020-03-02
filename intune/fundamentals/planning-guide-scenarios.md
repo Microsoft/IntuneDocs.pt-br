@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 96ebae46fd4935c3070319f16d35d5b53888e94c
-ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
+ms.openlocfilehash: 3f432ab20170dc702d2014bbac68ced06e51082e
+ms.sourcegitcommit: c780e9988341a20f94fdeb8672bd13e0b302da93
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "72505163"
+ms.lasthandoff: 02/20/2020
+ms.locfileid: "77514890"
 ---
 # <a name="identify-mobile-device-management-use-case-scenarios"></a>Identificar cenários de casos de uso do gerenciamento de dispositivo móvel
 
@@ -79,15 +79,15 @@ Agora você precisa identificar os grupos organizacionais associados a cada cen�
 
 A próxima etapa é identificar as plataformas de dispositivos móveis associadas a cada cenário de caso de uso. Pode haver mais de uma.
 
-Por exemplo, seu cenário de caso de uso corporativo pode dar suporte a plataformas de dispositivos iOS e Android Samsung Knox. Sua política BYOD pode incluir suporte para plataformas de dispositivos móveis adicionais como Android (não Samsung Knox) e Windows 10 Mobile. Aproveitando os exemplos anteriores, associamos as plataformas de dispositivos móveis a cada cenário de caso de uso.
+Por exemplo, seu cenário de caso de uso corporativo pode dar suporte a plataformas de dispositivos iOS/iPadOS e Android Samsung Knox. Sua política BYOD pode incluir suporte para plataformas de dispositivos móveis adicionais como Android (não Samsung Knox) e Windows 10 Mobile. Aproveitando os exemplos anteriores, associamos as plataformas de dispositivos móveis a cada cenário de caso de uso.
 
 | **Casos de uso** | **Subcasos de uso** | **Grupos** | **Plataformas de dispositivos** |   
 |:---:|:---:|:---:|:---:|
-| Corporativo | Operador de informações | RH, Finanças | iOS |                                                           
-| Corporativo | Executivos | RH, Finanças | iOS |                                                           
+| Corporativo | Operador de informações | RH, Finanças | iOS/iPadOS |                                                           
+| Corporativo | Executivos | RH, Finanças | iOS/iPadOS |                                                           
 | Corporativo | Quiosque | Varejo | Android |
-| BYOD | Operador de informações | Marketing, Vendas | iOS |                                                           
-| BYOD | Executivos | Marketing, Vendas | iOS |
+| BYOD | Operador de informações | Marketing, Vendas | iOS/iPadOS |                                                           
+| BYOD | Executivos | Marketing, Vendas | iOS/iPadOS |
 
 ## <a name="next-steps"></a>Próximas etapas
 

@@ -1,7 +1,7 @@
 ---
-title: 'Registro de dispositivos macOS: Programa de registro de dispositivos ou Apple School Manager'
+title: Registrar dispositivos macOS – Apple Business Manager ou Apple School Manager
 titleSuffix: ''
-description: Saiba como registrar dispositivos macOS de propriedade corporativa usando o Programa de registro de dispositivos.
+description: Saiba como registrar dispositivos macOS corporativos.
 keywords: ''
 author: ErikjeMS
 ms.author: erikje
@@ -18,22 +18,22 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: d55139a106599664f801a6bf73b0e0e8db24b57a
-ms.sourcegitcommit: 51591b862d97904291af7aa53a6eb341b11a761e
+ms.openlocfilehash: 6ef08ea65a4976bcf77154108e415634dbae8e05
+ms.sourcegitcommit: c780e9988341a20f94fdeb8672bd13e0b302da93
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/17/2020
-ms.locfileid: "77414502"
+ms.lasthandoff: 02/20/2020
+ms.locfileid: "77514329"
 ---
-# <a name="automatically-enroll-macos-devices-with-the-device-enrollment-program-or-apple-school-manager"></a>Registre automaticamente dispositivos macOS no Programa de registro de dispositivos ou no Apple School Manager
+# <a name="automatically-enroll-macos-devices-with-the-apple-business-manager-or-apple-school-manager"></a>Registre automaticamente dispositivos macOS no Apple Business Manager ou no Apple School Manager
 
 [!INCLUDE [azure_portal](../includes/azure_portal.md)]
 
-Configure o registro do Intune para dispositivos macOS comprados por meio do [DEP (Programa de registro de dispositivos)](https://deploy.apple.com) ou do [Apple School Manager](https://school.apple.com/) da Apple. Você pode usar esses dois registros para um grande número de dispositivos sem nunca precisar tocá-los. É possível enviar dispositivos macOS diretamente aos usuários. Quando o usuário liga o dispositivo, o Assistente de Configuração é executado com as configurações predefinidas e o dispositivo é registrado no gerenciamento do Intune.
+Configure o registro do Intune para dispositivos macOS comprados por meio do [Apple Business Manager](https://business.apple.com/) ou do [Apple School Manager](https://school.apple.com/). Você pode usar esses dois registros para um grande número de dispositivos sem nunca precisar tocá-los. É possível enviar dispositivos macOS diretamente aos usuários. Quando o usuário liga o dispositivo, o Assistente de Configuração é executado com as configurações predefinidas e o dispositivo é registrado no gerenciamento do Intune.
 
-Para configurar o registro, use os portais do Intune e Apple DEP. Crie perfis de registro que contêm configurações que são aplicadas aos dispositivos durante o registro.
+Para configurar o registro, use os portais do Intune e Apple. Crie perfis de registro que contêm configurações que são aplicadas aos dispositivos durante o registro.
 
-Nenhum dos dois tipos de registro, DEP ou Apple School Manager, funciona com o [gerenciador de registros de dispositivo](device-enrollment-manager-enroll.md).
+Nenhum dos dois tipos de registro, Apple Business Manager ou Apple School Manager, funciona com o [gerenciador de registros de dispositivos](device-enrollment-manager-enroll.md).
 
 <!--
 **Steps to enable enrollment programs from Apple**

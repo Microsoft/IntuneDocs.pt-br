@@ -16,18 +16,18 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 3399cf006543c0a3554c4c6ec812554462d74231
-ms.sourcegitcommit: a66b5916eaab9cb537e483064efc584a6a63a390
+ms.openlocfilehash: 0232855773626693d848f77e561c51d281739215
+ms.sourcegitcommit: c780e9988341a20f94fdeb8672bd13e0b302da93
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2020
-ms.locfileid: "75691816"
+ms.lasthandoff: 02/20/2020
+ms.locfileid: "77514601"
 ---
 # <a name="guided-scenario---secure-microsoft-office-mobile-apps"></a>Cenário guiado – Aplicativos móveis seguros do Microsoft Office 
 
-Seguindo esse cenário guiado no portal de Gerenciamento de Dispositivos, você pode habilitar a proteção básica de aplicativo do Intune em dispositivos iOS e Android.
+Seguindo este cenário guiado no portal de Gerenciamento de Dispositivos, você pode habilitar a proteção básica de aplicativo do Intune em dispositivos iOS/iPadOS e Android.
 
-A proteção de aplicativo que você habilitar imporá as seguintes ações: 
+A proteção de aplicativo que você habilita impõe as seguintes ações: 
 - Criptografar arquivos de trabalho.
 - Exigir um PIN para acessar os arquivos de trabalho.
 - Exigir que o PIN seja redefinido após cinco tentativas com falha.
@@ -51,7 +51,7 @@ Você pode usar as Políticas de proteção de aplicativo para impedir que usuá
 
 O acesso condicional baseado no aplicativo e o gerenciamento de aplicativo cliente adicionam uma camada de segurança, garantindo que apenas os aplicativos cliente que dão suporte às políticas de Proteção de Aplicativo do Intune podem acessar o Exchange Online e outros serviços do Office 365.
 
-Será possível bloquear os aplicativos de email internos no iOS e no Android quando você permitir que apenas o aplicativo Microsoft Outlook acesse o Exchange Online. Além disso, bloqueie o acesso ao SharePoint Online por aplicativos que não têm as políticas de Proteção de Aplicativo do Intune aplicadas.
+Você poderá bloquear os aplicativos de email internos no iOS/iPadOS e no Android quando permitir que apenas o aplicativo Microsoft Outlook acesse o Exchange Online. Além disso, bloqueie o acesso ao SharePoint Online por aplicativos que não têm as políticas de Proteção de Aplicativo do Intune aplicadas.
 
 Neste exemplo, o administrador aplicou políticas de proteção de aplicativo ao aplicativo Outlook seguidas por uma regra de acesso condicional que adiciona o aplicativo Outlook a uma lista aprovada de aplicativos que podem ser usados ao acessar o email corporativo.
 
@@ -67,9 +67,9 @@ Você precisará seguir as permissões de administrador do Intune:
 
 ## <a name="step-1---introduction"></a>Etapa 1 – Introdução
 
-Seguindo o cenário guiado da **Proteção de Aplicativo do Intune**, você impedirá o compartilhamento ou o vazamento de dados fora da sua organização. 
+Seguindo o cenário guiado de **Proteção de Aplicativo do Intune**, você consegue impedir que dados da sua organização sejam vazados ou compartilhados externamente. 
 
-Os usuários do iOS e Android atribuídos deverão inserir um PIN sempre que abrirem um aplicativo do Office. Depois de 5 tentativas de PIN com falha, os usuários devem redefinir seu PIN. Se você já precisar de um PIN de dispositivo, os usuários não serão afetados.
+Os usuários de iOS/iPadOS e Android atribuídos precisarão inserir um PIN ao abrir aplicativos do Office. Depois de 5 tentativas de PIN com falha, os usuários precisam redefinir o PIN. Se você já precisar de um PIN de dispositivo, os usuários não serão afetados.
 
 ### <a name="what-you-will-need-to-continue"></a>Do que você precisará para continuar
 
@@ -86,7 +86,7 @@ Nesta etapa, você deverá inserir um **Prefixo** e uma **Descrição** para sua
 
 ## <a name="step-3---apps"></a>Etapa 3 – Aplicativos
 
-Para ajudar você a começar, este cenário guiado seleciona previamente os aplicativos móveis a seguir para proteger em dispositivos iOS e Android:
+Para ajudar você a começar, este cenário guiado seleciona previamente os seguintes aplicativos móveis para proteção em dispositivos iOS/iPadOS e Android:
 - Microsoft Excel 
 - Microsoft Word 
 - Microsoft Teams 

@@ -15,24 +15,24 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure; seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: adea17c0e013d922c0bc3ccf06ed590828bd79dd
-ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
+ms.openlocfilehash: 15147a1d9ffd82e2f900d15c4a9d2b4d23ad23e3
+ms.sourcegitcommit: c780e9988341a20f94fdeb8672bd13e0b302da93
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "73801486"
+ms.lasthandoff: 02/20/2020
+ms.locfileid: "77515145"
 ---
 # <a name="smime-overview-to-sign-and-encrypt-email-in-intune"></a>Visão geral do S/MIME para assinar e criptografar emails no Intune
 
 Certificados de email, também conhecidos como certificado S/MIME, fornecem segurança extra para as comunicações de email usando criptografia e descriptografia. O Microsoft Intune pode usar certificados S/MIME para assinar e criptografar emails em dispositivos móveis que executam as seguintes plataformas:
 
 - Android
-- iOS
+- iOS/iPadOS
 - macOS
 - Windows 10 e posterior
 - Windows Phone
 
-Em dispositivos iOS, você pode criar um perfil de email gerenciado pelo Intune que usa o S/MIME e certificados para autenticar e criptografar emails de entrada e de saída. Para outras plataformas, o S/MIME pode ou não ter suporte. Se ele tiver suporte, instale certificados que usam a assinatura e a criptografia S/MIME. Em seguida, um usuário final habilitará o S/MIME em seus aplicativos de email.
+Em dispositivos iOS/iPadOS, você pode criar um perfil de email gerenciado pelo Intune que usa o S/MIME e certificados para autenticar e criptografar emails de entrada e de saída. Para outras plataformas, o S/MIME pode ou não ter suporte. Se ele tiver suporte, instale certificados que usam a assinatura e a criptografia S/MIME. Em seguida, um usuário final habilitará o S/MIME em seus aplicativos de email.
 
 Para obter mais informações sobre a assinatura e a criptografia de email S/MIME, confira [S/MIME para assinatura e criptografia de mensagens](https://docs.microsoft.com/Exchange/policy-and-compliance/smime).
 
@@ -77,7 +77,7 @@ Para implantar um certificado PKCS importado no Intune usado para criptografia d
 
 ## <a name="smime-email-profiles"></a>Perfis de email do S/MIME
 
-Depois de criar perfis de certificado de autenticação e criptografia S/MIME, você pode [habilitar o S/MIME para email nativo do iOS](../configuration/email-settings-ios.md).
+Depois de criar perfis de certificado de autenticação e criptografia S/MIME, você pode [habilitar o S/MIME para email nativo do iOS/iPadOS](../configuration/email-settings-ios.md).
 
 ## <a name="next-steps"></a>Próximas etapas
 

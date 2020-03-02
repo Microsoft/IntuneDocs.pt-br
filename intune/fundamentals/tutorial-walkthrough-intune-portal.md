@@ -18,12 +18,12 @@ ms.reviewer: ''
 ms.suite: ems
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 9197d4f96eae1041b00b07110ef421a12a4fe338
-ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
+ms.openlocfilehash: 203d243df3e8ae496e7ff78f20222fd361417c3d
+ms.sourcegitcommit: c780e9988341a20f94fdeb8672bd13e0b302da93
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "73713000"
+ms.lasthandoff: 02/20/2020
+ms.locfileid: "77514040"
 ---
 # <a name="tutorial-walkthrough-of-microsoft-intune-in-the-azure-portal"></a>Tutorial: Instruções passo a passo do Microsoft Intune no portal do Azure
 
@@ -67,7 +67,7 @@ Siga as etapas abaixo para entender melhor o Intune no portal do Azure. Depois d
     
     O Intune permite gerenciar os dispositivos e os aplicativos da sua força de trabalho, incluindo o modo como ela acessa os dados da empresa. Para usar esse MDM (gerenciamento de dispositivo móvel), os dispositivos devem primeiro ser registrados no serviço do Intune. Quando um dispositivo é registrado, ele recebe um certificado de MDM. Esse certificado é usado para se comunicar com o serviço do Intune. 
 
-    Há vários métodos de registrar os dispositivos da sua força de trabalho no Intune. Cada método depende da propriedade do dispositivo (pessoal ou corporativo), tipo de dispositivo (iOS, Windows, Android) e requisitos de gerenciamento (redefinições, afinidade, bloqueio). No entanto, antes de habilitar o registro de dispositivo, você precisa configurar sua infraestrutura do Intune. Em especial, o registro de dispositivo exige que você [defina a autoridade MDM](mdm-authority-set.md). Para obter mais informações sobre como preparar seu ambiente do Intune (locatário), veja [Configurar o Intune](setup-steps.md). Depois que seu locatário do Intune estiver pronto, você poderá registrar dispositivos. Para obter mais informações sobre o registro de dispositivo, confira [O que é o registro de dispositivo?](../enrollment/device-enrollment.md)
+    Há vários métodos de registrar os dispositivos da sua força de trabalho no Intune. Cada método depende da propriedade do dispositivo (pessoal ou corporativo), tipo de dispositivo (iOS/iPadOS, Windows, Android) e requisitos de gerenciamento (redefinições, afinidade, bloqueio). No entanto, antes de habilitar o registro de dispositivo, você precisa configurar sua infraestrutura do Intune. Em especial, o registro de dispositivo exige que você [defina a autoridade MDM](mdm-authority-set.md). Para obter mais informações sobre como preparar seu ambiente do Intune (locatário), veja [Configurar o Intune](setup-steps.md). Depois que seu locatário do Intune estiver pronto, você poderá registrar dispositivos. Para obter mais informações sobre o registro de dispositivo, confira [O que é o registro de dispositivo?](../enrollment/device-enrollment.md)
 
 3. De [Intune](https://aka.ms/intuneportal), selecione **Conformidade do dispositivo** para exibir detalhes sobre a conformidade para dispositivos gerenciados pelo Intune. Você verá detalhes semelhantes aos da imagem a seguir.
 
@@ -85,7 +85,7 @@ Siga as etapas abaixo para entender melhor o Intune no portal do Azure. Depois d
 
     ![Captura de tela do painel de configuração do dispositivo](./media/tutorial-walkthrough-intune-portal/tutorial-walkthrough-intune-portal-04.png)
     
-    O Intune inclui configurações e recursos que você pode habilitar ou desabilitar em diferentes dispositivos na sua organização. Essas configurações e recursos são adicionados a "perfis de configuração". Você pode criar perfis para diferentes dispositivos e plataformas, incluindo iOS, Android e Windows. Em seguida, você pode usar o Intune para aplicar o perfil aos dispositivos em sua organização.   
+    O Intune inclui configurações e recursos que você pode habilitar ou desabilitar em diferentes dispositivos na sua organização. Essas configurações e recursos são adicionados a "perfis de configuração". Você pode criar perfis para diferentes dispositivos e plataformas, incluindo iOS/iPadOS, Android e Windows. Em seguida, você pode usar o Intune para aplicar o perfil aos dispositivos em sua organização.   
 
     Para obter mais informações sobre a configuração de dispositivo, veja [Aplicar configurações de recursos aos seus dispositivos usando perfis de dispositivo no Microsoft Intune](../configuration/device-profiles.md).
 

@@ -16,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 867873c78b34d5573084a3a6e44d7d4d67846423
-ms.sourcegitcommit: 51591b862d97904291af7aa53a6eb341b11a761e
+ms.openlocfilehash: b593cab8a9a89f895c668b2b49583b73cbfccffa
+ms.sourcegitcommit: c780e9988341a20f94fdeb8672bd13e0b302da93
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/17/2020
-ms.locfileid: "77413642"
+ms.lasthandoff: 02/20/2020
+ms.locfileid: "77515162"
 ---
 # <a name="set-rules-on-devices-to-allow-access-to-resources-in-your-organization-using-intune"></a>Definir regras em dispositivos para permitir o acesso aos recursos em sua organização usando o Intune
 
@@ -95,9 +95,9 @@ O Intune também inclui um conjunto de configurações de política de conformid
 
 
 > [!NOTE]
-> A detecção de jailbreak avançada para dispositivos iOS foi desabilitada temporariamente no Intune.
+> A detecção de jailbreak avançada para dispositivos iOS/iPadOS foi desabilitada temporariamente no Intune.
 
-- **Detecção avançada de jailbreak**: Quando habilitada, essa configuração faz com que dispositivos iOS realizem check-in com o Intune com mais frequência. Habilitar essa propriedade usa serviços de localização do dispositivo e afeta o uso da bateria. Os dados de local do usuário não são armazenados pelo Intune.
+- **Detecção avançada de jailbreak**: Quando habilitada, essa configuração faz com que dispositivos iOS/iPadOS realizem check-in com o Intune com mais frequência. Habilitar essa propriedade usa serviços de localização do dispositivo e afeta o uso da bateria. Os dados de local do usuário não são armazenados pelo Intune.
 
   Habilitar essa configuração exige que os dispositivos:
   - Habilite os serviços de localização no nível do sistema operacional.

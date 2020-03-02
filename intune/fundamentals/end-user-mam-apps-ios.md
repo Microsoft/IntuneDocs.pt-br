@@ -1,6 +1,6 @@
 ---
-title: Aplicativos iOS com políticas de proteção de aplicativo
-description: Este tópico descreve o que esperar quando seu aplicativo iOS é gerenciado por políticas de proteção de aplicativo.
+title: Aplicativos iOS/iPadOS com políticas de proteção de aplicativo
+description: Este tópico descreve o que esperar quando seu aplicativo iOS/iPadOS é gerenciado por políticas de proteção de aplicativo.
 keywords: ''
 author: lenewsad
 ms.author: lanewsad
@@ -17,14 +17,14 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 165ce160339647e396b9cfc3a8374f21c77665f8
-ms.sourcegitcommit: f9dc50642efa8656054ef67f9335b9b46b655f93
+ms.openlocfilehash: c854811a9deb938613af872f3cf86244ab9121b3
+ms.sourcegitcommit: c780e9988341a20f94fdeb8672bd13e0b302da93
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/02/2020
-ms.locfileid: "75606614"
+ms.lasthandoff: 02/20/2020
+ms.locfileid: "77514652"
 ---
-# <a name="what-to-expect-when-your-ios-app-is-managed-by-app-protection-policies"></a>O que esperar quando seu aplicativo iOS é gerenciado por políticas de proteção de aplicativo
+# <a name="what-to-expect-when-your-iosipados-app-is-managed-by-app-protection-policies"></a>O que esperar quando seu aplicativo iOS/iPadOS é gerenciado por políticas de proteção de aplicativo
 
 As políticas de proteção de aplicativo do Intune aplicam-se a aplicativos usados para trabalho ou escola. Isso significa que, quando seus funcionários e alunos usam os aplicativos deles em um contexto pessoal, podem não notar diferenças na experiência. No entanto, no contexto corporativo ou de estudante, eles podem receber prompts para tomar decisões sobre a conta, atualizar as configurações ou contatar você para obter ajuda. Use este artigo para saber o que os usuários enfrentam ao tentar acessar e usar aplicativos protegidos pelo Intune.  
 
@@ -34,7 +34,7 @@ Se o dispositivo **não estiver registrado no Intune**, o usuário será solicit
 
 <!--- The following screenshot from the Skype app illustrates this restart request: --->
 
-<!---  ![Screenshot of the iOS device showing PIN prompt](./media/end-user-mam-apps-ios/iOS_AppPINPrompt.png) --->
+<!---  ![Screenshot of the iOS/iPadOS device showing PIN prompt](./media/end-user-mam-apps-ios/iOS_AppPINPrompt.png) --->
 
 Em dispositivos **registrados para gerenciamento no Intune**, o usuário verá uma mensagem informando que seu aplicativo agora é gerenciado.
 

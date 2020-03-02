@@ -16,21 +16,21 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 88beb8f4791c127b0a225878f5bc43b6dd9b4025
-ms.sourcegitcommit: 637375a390b6e34f9c4415c77b99fe2980bbf554
+ms.openlocfilehash: 9afb8f431ae301fe74f420c11205a7ed2637434b
+ms.sourcegitcommit: c780e9988341a20f94fdeb8672bd13e0b302da93
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/10/2020
-ms.locfileid: "75839369"
+ms.lasthandoff: 02/20/2020
+ms.locfileid: "77514618"
 ---
 # <a name="guided-scenario---deploy-microsoft-edge-for-mobile"></a>Cenário guiado – Implantar o Microsoft Edge para dispositivos móveis 
 
-Seguindo este [cenário guiado](~/fundamentals/guided-scenarios-overview.md), você pode atribuir o aplicativo Microsoft Edge aos seus usuários em dispositivos iOS ou Android em sua organização. A atribuição desse aplicativo permitirá que os usuários procurem conteúdo diretamente usando seus dispositivos corporativos. 
+Seguindo este [cenário guiado](~/fundamentals/guided-scenarios-overview.md), você pode atribuir o aplicativo Microsoft Edge aos seus usuários em dispositivos iOS/iPadOS ou Android em sua organização. A atribuição desse aplicativo permitirá que os usuários procurem conteúdo diretamente usando seus dispositivos corporativos. 
 
-O Microsoft Edge permite que os usuários acabem com a desordem da Web com recursos internos que os ajudem a consolidar, organizar e gerenciar conteúdo de trabalho. Os usuários de dispositivos iOS e Android que entrarem com suas contas corporativas do Azure AD no aplicativo Microsoft Edge encontrarão seu navegador pré-carregado com os **Favoritos** do local de trabalho e filtros de site que você definir.
+O Microsoft Edge permite que os usuários acabem com a desordem da Web com recursos internos que os ajudem a consolidar, organizar e gerenciar conteúdo de trabalho. Os usuários de dispositivos iOS/iPadOS e Android que entrarem com suas contas corporativas do Azure AD no aplicativo Microsoft Edge encontrarão seu navegador pré-carregado com os **Favoritos** do local de trabalho e filtros de site que você definir.
 
 > [!NOTE]
-> Se você tiver impedido os usuários de registrarem dispositivos iOS ou Android, esse cenário não permitirá o registro e os usuários precisarão instalar o Microsoft Edge por conta própria.
+> Se você tiver impedido os usuários de registrarem dispositivos iOS/iPadOS ou Android, esse cenário não permitirá o registro e os usuários precisarão instalar o Microsoft Edge por conta própria.
 Os seguintes recursos corporativos do Microsoft Edge habilitados pelas políticas do Microsoft Intune incluem: 
 
 - **Identidade Dupla**: os usuários podem adicionar uma conta corporativa e uma conta pessoal para navegação. Há uma separação completa entre as duas identidades, o que é semelhante à arquitetura e a experiência no Office 365 e no Outlook. Administradores do Intune poderão definir as políticas desejadas para uma experiência de navegação protegida dentro da conta de trabalho. 
@@ -49,9 +49,9 @@ Os seguintes recursos corporativos do Microsoft Edge habilitados pelas política
 
 ## <a name="step-1---introduction"></a>Etapa 1 – Introdução
 
-Seguindo o cenário guiado **Implantar Microsoft Edge para Dispositivos Móveis**, você configurará uma implantação básica do Microsoft Edge para um grupo selecionado de usuários do iOS e Android. Essa implantação implementará **Identidade Dupla** e os **atalhos Favoritos Gerenciados e Página Inicial**. Além disso, os dispositivos registrados pelos usuários selecionados terão automaticamente o aplicativo Microsoft Edge instalado pelo Intune. Essa instalação automática ocorrerá em todos os tipos de registro controlados pelo usuário, que incluem: 
-- Registro de iOS por meio do aplicativo do Portal da Empresa 
-- Registro de afinidade de usuário do iOS por meio do Apple Business Manager 
+Seguindo o cenário guiado **Implantar Microsoft Edge para Dispositivos Móveis**, você vai configurar uma implantação básica do Microsoft Edge para um grupo selecionado de usuários do iOS/iPadOS e Android. Essa implantação implementará **Identidade Dupla** e os **atalhos Favoritos Gerenciados e Página Inicial**. Além disso, os dispositivos registrados pelos usuários selecionados terão automaticamente o aplicativo Microsoft Edge instalado pelo Intune. Essa instalação automática ocorrerá em todos os tipos de registro controlados pelo usuário, que incluem: 
+- Registro de iOS/iPadOS por meio do aplicativo do Portal da Empresa 
+- Registro de afinidade de usuário do iOS/iPadOS por meio do Apple Business Manager 
 - Registro de Android herdado por meio do Aplicativo do Portal da Empresa 
 
 Este cenário guiado permitirá automaticamente que **MyApps** seja exibido nos favoritos do Microsoft Edge e configurará o navegador com a mesma identidade visual que você definiu para o aplicativo Portal da Empresa do Intune. 
@@ -60,13 +60,13 @@ Este cenário guiado permitirá automaticamente que **MyApps** seja exibido nos 
 Perguntaremos a você sobre os favoritos do local de trabalho de que seus usuários precisam e os filtros necessários para a navegação na Web. Conclua as seguintes tarefas antes de continuar:
 
 - Adicionar usuários a grupos do Azure AD. Para obter mais informações, confira [Criar um grupo básico e adicionar membros usando Azure Active Directory](https://go.microsoft.com/fwlink/?linkid=2102458).
-- Registrar dispositivos iOS ou Android no Intune. Para obter mais informações, confira [Registro de dispositivos](https://go.microsoft.com/fwlink/?linkid=2102547).
+- Registrar dispositivos iOS/iPadOS ou Android no Intune. Para obter mais informações, confira [Registro de dispositivos](https://go.microsoft.com/fwlink/?linkid=2102547).
 - Reunir uma lista de favoritos de local de trabalho a serem adicionados no Microsoft Edge.
 - Reunir uma lista de filtros de site a ser imposta no Microsoft Edge.
 
 ## <a name="step-2---basics"></a>Etapa 2 – Conceitos básicos
 
-Nesta etapa, você deverá inserir um nome e uma descrição para suas novas políticas do Microsoft Edge. Essas políticas poderão ser consultadas posteriormente se você precisar alterar as atribuições e configurações. O cenário guiado adicionará e atribuirá um aplicativo iOS do Microsoft Edge para seus dispositivos iOS e um aplicativo Android do Microsoft Edge para seus dispositivos Android. Além disso, esta etapa criará políticas de configuração para esses aplicativos.
+Nesta etapa, você deverá inserir um nome e uma descrição para suas novas políticas do Microsoft Edge. Essas políticas poderão ser consultadas posteriormente se você precisar alterar as atribuições e configurações. O cenário guiado adicionará e atribuirá um aplicativo iOS/iPadOS do Microsoft Edge para seus dispositivos iOS/iPadOS e um aplicativo Android do Microsoft Edge para seus dispositivos Android. Além disso, esta etapa criará políticas de configuração para esses aplicativos.
 
 ## <a name="step-3---configuration"></a>Etapa 3 – Configuração
 
@@ -74,7 +74,7 @@ Nesta etapa, o cenário guiada configurará o Microsoft Edge para mostrar todos 
 
 ## <a name="step-4---assignments"></a>Etapa 4 – Atribuições
 
-Nesta etapa, você poderá escolher os grupos de usuários que deseja incluir para que o Microsoft Edge móvel esteja configurado para trabalho. O Microsoft Edge também será instalado em todos os dispositivos iOS e Android registrados por esses usuários.
+Nesta etapa, você poderá escolher os grupos de usuários que deseja incluir para que o Microsoft Edge móvel esteja configurado para trabalho. O Microsoft Edge também será instalado em todos os dispositivos iOS/iPadOS e Android registrados por esses usuários.
 
 ## <a name="step-5---review--create"></a>Etapa 5 – Examinar + criar
 

@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 9fa02a61148a03a64b88b38dcdc1799b30bc45db
-ms.sourcegitcommit: 5ad0ce27a30ee3ef3beefc46d2ee49db6ec0cbe3
+ms.openlocfilehash: f676a0e39bb5dae32d3032d1703dbb44f6b2e54a
+ms.sourcegitcommit: c780e9988341a20f94fdeb8672bd13e0b302da93
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/30/2020
-ms.locfileid: "76886735"
+ms.lasthandoff: 02/20/2020
+ms.locfileid: "77514958"
 ---
 # <a name="create-a-design"></a>Criar um design
 
@@ -188,7 +188,7 @@ Vamos examinar essas áreas mais detalhadamente.
 
 ### <a name="determine-supported-device-platforms"></a>Determinar as plataformas de dispositivo com suporte
 
-Você precisa saber quais dispositivos estarão no ambiente e verificar se eles têm suporte ou não no Intune ao criar o projeto. O Intune dá suporte às plataformas iOS, Android e Windows.
+Você precisa saber quais dispositivos estarão no ambiente e verificar se eles têm suporte ou não no Intune ao criar o projeto. O Intune dá suporte às plataformas iOS/iPadOS, Android e Windows.
 
 [Lista completa dos dispositivos com suporte do Intune](supported-devices-browsers.md).
 
@@ -296,8 +296,8 @@ Este é um exemplo de como é possível documentar os certificados durante o des
 
 | **Tipo** | **Nome do perfil** | **Plataforma de dispositivo** | **Casos de uso** |   
 |:---:|:---:|:---:|:---:|
-| AC Raiz | AC Raiz Corporativa | Android, iOS, Windows Mobile | Corporativo, BYOD  |                                                           
-| SCEP | Certificado de Usuário | Android, iOS, Windows Mobile | Corporativo, BYOD |                                                           
+| AC Raiz | AC Raiz Corporativa | Android, iOS/iPadOS, Windows Mobile | Corporativo, BYOD  |                                                           
+| SCEP | Certificado de Usuário | Android, iOS/iPadOS, Windows Mobile | Corporativo, BYOD |                                                           
 
 
 [Baixe um modelo da tabela acima](https://gallery.technet.microsoft.com/Intune-deployment-planning-fae156c2?redir=0) para identificar suas necessidades de perfil de certificado.
@@ -311,7 +311,7 @@ Veja abaixo um exemplo de um design para um perfil de Wi-Fi:
 | **Tipo** | **Nome do perfil** | **Plataforma de dispositivo** | **Casos de uso** |
 |:---:|:---:|:---:|:---:|
 | Wi-Fi | Perfil de Wi-Fi da Ásia | Android | Corporativo, BYOD na região da Ásia|
-| Wi-Fi | Perfil de Wi-Fi na América do Norte | Android, iOS, Windows 10 Mobile | Corporativo, BYOD na região da América do Norte |
+| Wi-Fi | Perfil de Wi-Fi na América do Norte | Android, iOS/iPadOS, Windows 10 Mobile | Corporativo, BYOD na região da América do Norte |
 
 [Baixe um modelo da tabela acima](https://gallery.technet.microsoft.com/Intune-deployment-planning-fae156c2?redir=0) para identificar suas necessidades de perfil de Wi-Fi.
 
@@ -323,7 +323,7 @@ Veja abaixo um exemplo de como documentar o design de um perfil VPN.
 
 | **Tipo** | **Nome do perfil** | **Plataforma de dispositivo** | **Casos de uso** |
 |:---:|:---:|:---:|:---:|
-| VPN | Qualquer perfil de conexão VPN Cisco | Android, iOS, Windows 10 Mobile | Corporativo, BYOD na América do Norte e Alemanha|
+| VPN | Qualquer perfil de conexão VPN Cisco | Android, iOS/iPadOS, Windows 10 Mobile | Corporativo, BYOD na América do Norte e Alemanha|
 | VPN | Pulse Secure | Android | Corporativo, BYOD na região da Ásia |
 
 [Baixe um modelo da tabela acima](https://gallery.technet.microsoft.com/Intune-deployment-planning-fae156c2?redir=0) para identificar suas necessidades de perfil de VPN.
@@ -374,7 +374,7 @@ As políticas de proteção do aplicativo minimizam a perda de dados, definindo 
 | **Aplicativo** | **Finalidade** | **Plataformas** | **Caso de uso** | **Política de proteção do aplicativo** |
 |:---:|:---:|:---:|:---:|:---:|
 | Outlook Mobile  | Disponível | iOS | Corporativo – Executivos | Sem risco de jailbreak, arquivos criptografados |                                                         
-| Word | Disponível | iOS, Android – Samsung Knox, não Knox, Windows 10 Mobile | Corporativo, BYOD | Sem risco de jailbreak, arquivos criptografados |                                                         
+| Word | Disponível | iOS/iPadOS, Android – Samsung Knox, não Knox, Windows 10 Mobile | Corporativo, BYOD | Sem risco de jailbreak, arquivos criptografados |                                                         
 
 
 [Baixe um modelo da tabela acima](https://gallery.technet.microsoft.com/Intune-deployment-planning-fae156c2?redir=0) para identificar suas necessidades de política de proteção do aplicativo.
@@ -388,7 +388,7 @@ Veja abaixo um exemplo de como criar uma política de conformidade:
 
 | **Nome da política** | **Plataforma de dispositivo** | **Configurações** | **Grupo de destino** |
 |:---:|:---:|:---:|:---:|
-| Política de conformidade | iOS, Android – Samsung Knox, não Knox, Windows 10 Mobile | PIN – obrigatório, sem risco de jailbreak | Corporativo, BYOD |
+| Política de conformidade | iOS/iPadOS, Android – Samsung Knox, não Knox, Windows 10 Mobile | PIN – obrigatório, sem risco de jailbreak | Corporativo, BYOD |
 
 
 [Baixe um modelo da tabela acima](https://gallery.technet.microsoft.com/Intune-deployment-planning-fae156c2?redir=0) para identificar suas necessidades de política de conformidade.
@@ -404,8 +404,8 @@ Este é um exemplo de como documentar as políticas de acesso condicional:
 
 | **Serviço** | **Plataformas para Autenticação Moderna** | **Autenticação básica** | **Casos de uso** |
 |:---:|:---:|:---:|:---:|
-| Exchange Online | iOS, Android | Bloquear dispositivos não compatíveis em plataformas compatíveis com o Intune | Corporativo, BYOD |
-| SharePoint Online | iOS, Android |  | Corporativo, BYOD |
+| Exchange Online | iOS/iPadOS, Android | Bloquear dispositivos não compatíveis em plataformas compatíveis com o Intune | Corporativo, BYOD |
+| SharePoint Online | iOS/iPadOS, Android |  | Corporativo, BYOD |
 
 [Baixe um modelo da tabela acima](https://gallery.technet.microsoft.com/Intune-deployment-planning-fae156c2?redir=0) para identificar suas necessidades de política de acesso condicional.
 

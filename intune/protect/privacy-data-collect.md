@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: e93e69b5cce2c54ae07410309b33870dd828f563
-ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
+ms.openlocfilehash: bd204271b9ae3e57e15a101647444913749f4109
+ms.sourcegitcommit: c780e9988341a20f94fdeb8672bd13e0b302da93
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "72509075"
+ms.lasthandoff: 02/20/2020
+ms.locfileid: "77514227"
 ---
 # <a name="data-collection-in-intune"></a>Coleta de dados no Intune
 
@@ -112,7 +112,7 @@ Os dados pseudoanonimizados coletados pelo Intune podem incluir, entre outros:
   - ID da Conta
   - ID do dispositivo EAS
   - IDs específicas à plataforma
-  - AppleID para dispositivos iOS
+  - AppleID para dispositivos iOS/iPadOS
   - Endereço Mac para dispositivos Mac
   - ID do Windows para dispositivos Windows
 - Informações de aplicativo gerenciado
@@ -136,7 +136,7 @@ Os dados agregados coletados pelo Intune podem incluir, entre outros:
   - installedDeviceCount: o número de dispositivos nos quais o aplicativo está instalado.
   - notApplicableDeviceCount: o número de dispositivos aos quais o aplicativo não é aplicável.
   - notInstalledDeviceCount: o número de dispositivos aos quais o aplicativo é aplicável, mas não está instalado.
-  - pendingInstallDeviceCount: o número de dispositivos aos quais o aplicativo é aplicável e a instalação está pendente.
+  - pendingInstallDeviceCount: O número de dispositivos aos quais o aplicativo é aplicável e a instalação está pendente.
 
 ## <a name="next-steps"></a>Próximas etapas
 

@@ -1,11 +1,11 @@
 ---
-title: Criar perfil de dispositivo iOS ou macOS com o Microsoft Intune – Azure | Microsoft Docs
-description: Adicione ou crie um perfil de dispositivo iOS ou macOS e, em seguida, defina as configurações de AirPrint, de layout da tela inicial, de notificações do aplicativo, de dispositivo compartilhado, de logon único e de filtro de conteúdo da Web no Microsoft Intune.
+title: Criar perfil de dispositivo iOS/iPadOS ou macOS com o Microsoft Intune – Azure | Microsoft Docs
+description: Adicione ou crie um perfil de dispositivo iOS, iPadOS ou macOS e, em seguida, defina as configurações de AirPrint, de layout da tela inicial, de notificações do aplicativo, de dispositivo compartilhado, de logon único e de filtro de conteúdo da Web no Microsoft Intune.
 keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 12/12/2019
+ms.date: 02/18/2020
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.subservice: configuration
@@ -16,16 +16,16 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 1fb628d68f50ce1862b3cce51f9fd08804d042a6
-ms.sourcegitcommit: e166b9746fcf0e710e93ad012d2f52e2d3ed2644
+ms.openlocfilehash: 52c31cc7d3949b42251d3e45075864762cda6930
+ms.sourcegitcommit: c780e9988341a20f94fdeb8672bd13e0b302da93
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/19/2019
-ms.locfileid: "75206713"
+ms.lasthandoff: 02/20/2020
+ms.locfileid: "77513139"
 ---
-# <a name="add-ios-or-macos-device-feature-settings-in-intune"></a>Adicionar configurações de recursos do dispositivo iOS ou macOS no Intune
+# <a name="add-ios-ipados-or-macos-device-feature-settings-in-intune"></a>Adicionar configurações de recursos do dispositivo iOS, iPadOS ou macOS no Intune
 
-O Intune inclui muitos recursos e configurações que ajudam os administradores a controlarem dispositivos iOS e macOS. Por exemplo, os administradores podem:
+O Intune inclui muitos recursos e configurações que ajudam os administradores a controlarem dispositivos iOS, iPadOS e macOS. Por exemplo, os administradores podem:
 
 - Permitir aos usuários acesso a impressoras AirPrint em sua rede
 - Adicionar aplicativos e pastas à tela inicial, incluindo a adição de novas páginas
@@ -34,15 +34,15 @@ O Intune inclui muitos recursos e configurações que ajudam os administradores 
 - Conceder aos usuários uma experiência de logon único segura para compartilhar credenciais entre aplicativos
 - Filtrar sites que usem linguagem adulta e permitir ou bloquear sites específicos
 
-O Intune usa "perfis de configuração" para criar e personalizar essas configurações de acordo com as necessidades da sua organização. Após adicionar esses recursos em um perfil, efetue o push ou implante o perfil em dispositivos iOS e macOS em sua organização.
+O Intune usa "perfis de configuração" para criar e personalizar essas configurações de acordo com as necessidades da sua organização. Após adicionar esses recursos em um perfil, efetue o push ou implante o perfil em dispositivos iOS/iPadOS e macOS em sua organização.
 
-Este artigo descreve os diferentes recursos que você pode configurar e mostra como criar um perfil de configuração de dispositivo. Você também pode ver todas as configurações disponíveis para dispositivos [iOS](ios-device-features-settings.md) e [macOS](macos-device-features-settings.md).
+Este artigo descreve os diferentes recursos que você pode configurar e mostra como criar um perfil de configuração de dispositivo. Você também pode ver todas as configurações disponíveis para dispositivos [iOS/iPadOS](ios-device-features-settings.md) e [macOS](macos-device-features-settings.md).
 
 ## <a name="airprint"></a>AirPrint
 
 O AirPrint é um recurso da Apple que possibilita que os dispositivos imprimam para arquivos usando uma rede sem fio. No Intune, é possível adicionar informações do AirPrint aos dispositivos.
 
-Para obter uma lista das configurações possíveis no Intune, confira [AirPrint no iOS](ios-device-features-settings.md#airprint) e [AirPrint no macOS](macos-device-features-settings.md#airprint).
+Para obter uma lista das configurações possíveis no Intune, confira [AirPrint no iOS/iPadOS](ios-device-features-settings.md#airprint) e [AirPrint no macOS](macos-device-features-settings.md#airprint).
 
 Para saber mais sobre o AirPrint, confira [Sobre o AirPrint](https://support.apple.com/HT201311) no site da Apple.
 
@@ -54,9 +54,9 @@ Aplica-se a:
 
 ## <a name="app-notifications"></a>Notificações de aplicativos
 
-Escolha como os aplicativos em seus dispositivos iOS e iPad recebem notificações. Por exemplo, no Intune, envie notificações de aplicativo para que elas apareçam na Central de Notificações, sejam exibidas na tela de bloqueio ou reproduzam um som.
+Escolha como os aplicativos em seus dispositivos iOS e iPadOS recebem notificações. Por exemplo, no Intune, envie notificações de aplicativo para que elas apareçam na Central de Notificações, sejam exibidas na tela de bloqueio ou reproduzam um som.
 
-Para obter uma lista das configurações possíveis no Intune, confira [Notificações de aplicativo no iOS](ios-device-features-settings.md#app-notifications).
+Para obter uma lista das configurações possíveis no Intune, confira [Notificações de aplicativo no iOS/iPadOS](ios-device-features-settings.md#app-notifications).
 
 Para saber mais sobre esse recurso, confira [Notifications](https://developer.apple.com/notifications/) (Notificações) no site da Apple.
 
@@ -89,7 +89,7 @@ Essas configurações definem o layout do aplicativo e as pastas no dock e nas t
 - Use as configurações de **Dock** para adicionar aplicativos ou pastas à tela. Por exemplo, mostre o Safari e o aplicativo Mail no dock do dispositivo.
 - Adicione as **Páginas** que você deseja exibir na tela inicial, e os aplicativos que aparecerão em cada página. Por exemplo, adicione uma página **Contoso** e adicione o aplicativo Ajustes a essa página.
 
-Para obter uma lista das configurações possíveis no Intune, confira [Layout da tela inicial no iOS](ios-device-features-settings.md#home-screen-layout).
+Para obter uma lista das configurações possíveis no Intune, confira [Layout da tela inicial no iOS/iPadOS](ios-device-features-settings.md#home-screen-layout).
 
 Aplica-se a:
 
@@ -100,7 +100,7 @@ Aplica-se a:
 
 Use essas configurações para mostrar uma mensagem ou um texto personalizado na janela de entrada e na tela de bloqueio. Por exemplo, insira uma mensagem "Em caso de perda, devolver a..." e mostre informações da tag do ativo.
 
-Para obter uma lista das configurações possíveis no Intune, confira [Configurações de mensagem da tela de bloqueio no iOS](ios-device-features-settings.md#lock-screen-message).
+Para obter uma lista das configurações possíveis no Intune, confira [Configurações de mensagem da tela de bloqueio no iOS/iPadOS](ios-device-features-settings.md#lock-screen-message).
 
 Para saber mais sobre a mensagem da tela de bloqueio, confira [LockScreenMessage](https://developer.apple.com/documentation/devicemanagement/lockscreenmessage) no site da Apple.
 
@@ -136,11 +136,11 @@ A maioria dos aplicativos LOB (Linha de Negócios) exigem algum nível de autent
 Para usar o logon único, verifique se você tem:
 
 - um aplicativo codificado para procurar o repositório de credenciais do usuário no logon único no dispositivo.
-- Intune configurado para logon único de dispositivo iOS.
+- Intune configurado para logon único de dispositivo iOS/iPadOS.
 
 ![Painel de logon único](./media/device-features-configure/sso-blade.png)
 
-Para obter uma lista das configurações possíveis no Intune, confira [Logon único no iOS](ios-device-features-settings.md#single-sign-on).
+Para obter uma lista das configurações possíveis no Intune, confira [Logon único no iOS/iPadOS](ios-device-features-settings.md#single-sign-on).
 
 Aplica-se a:
 
@@ -156,7 +156,7 @@ No Intune, use essas configurações para definir uma extensão de aplicativo de
 - O tipo de redirecionamento é projetado para protocolos de autenticação modernos, como OAuth e SAML2.
 - O tipo de credencial é projetado para fluxos de autenticação de desafio e resposta. Você pode escolher entre uma extensão de credencial específica do Kerberos fornecida pela Apple e uma extensão de credencial genérica.
 
-Para obter uma lista das configurações possíveis no Intune, confira [Extensão de aplicativo SSO do iOS](ios-device-features-settings.md#single-sign-on-app-extension) e [Extensão de aplicativo SSO do macOS](macos-device-features-settings.md#single-sign-on-app-extension).
+Para obter uma lista das configurações possíveis no Intune, confira [Extensão de aplicativo SSO do iOS/iPadOS](ios-device-features-settings.md#single-sign-on-app-extension) e [Extensão de aplicativo SSO do macOS](macos-device-features-settings.md#single-sign-on-app-extension).
 
 Para saber mais sobre como desenvolver uma extensão de aplicativo de SSO, assista a [SSO corporativo extensível](https://developer.apple.com/videos/play/tech-talks/301) no site da Apple. Para ler a descrição da Apple do recurso, visite [Configurações de conteúdo das extensões de logon único](https://support.apple.com/guide/mdm/single-sign-on-extensions-mdmfd9cdf845/web). 
 
@@ -171,7 +171,7 @@ Para saber mais sobre como desenvolver uma extensão de aplicativo de SSO, assis
 >
 > - Do ponto de vista do desenvolvimento, com a **Extensão de aplicativo de logon único**, você pode usar qualquer tipo de SSO de credencial ou de redirecionamento. Com o **Logon único**, você só pode usar a autenticação SSO do Kerberos.
 >
-> - A **Extensão de aplicativo de logon único** do Kerberos foi desenvolvida pela Apple e é interna nas plataformas iOS 13.0 e posterior e macOS 10.15 e posterior. A extensão interna do Kerberos pode ser usada para registrar os usuários em log em aplicativos nativos e sites que dão suporte à autenticação Kerberos. O **logon único** não é uma implementação do Kerberos oferecida pela Apple.
+> - A **Extensão de aplicativo de logon único** do Kerberos foi desenvolvida pela Apple e é interna nas plataformas iOS/iPadOS 13.0 e posterior e macOS 10.15 e posterior. A extensão interna do Kerberos pode ser usada para registrar os usuários em log em aplicativos nativos e sites que dão suporte à autenticação Kerberos. O **logon único** não é uma implementação do Kerberos oferecida pela Apple.
 >
 > - A **Extensão de aplicativo de logon único** interna do Kerberos processa os desafios do Kerberos para páginas da Web e aplicativos, assim como o **logon único**. No entanto, a extensão interna do Kerberos dá suporte a alterações de senha e apresenta um comportamento melhor em redes corporativas. Ao decidir entre a **extensão de aplicativo de logon único** do Kerberos e o **logon único**, recomendamos o uso da extensão, devido às funcionalidades e ao desempenho aprimorados.
 
@@ -183,9 +183,9 @@ Aplica-se a:
 
 ## <a name="wallpaper"></a>Papel de parede
 
-Adicione uma imagem .png, .jpg ou .jpeg personalizada aos seus dispositivos iOS supervisionados. Por exemplo, use o Intune para adicionar um logotipo da empresa à tela de bloqueio em seus dispositivos.
+Adicione uma imagem .png, .jpg ou .jpeg personalizada aos seus dispositivos iOS/iPadOS supervisionados. Por exemplo, use o Intune para adicionar um logotipo da empresa à tela de bloqueio em seus dispositivos.
 
-Para obter uma lista das configurações possíveis no Intune, confira [Papel de parede no iOS](ios-device-features-settings.md#wallpaper).
+Para obter uma lista das configurações possíveis no Intune, confira [Papel de parede no iOS/iPadOS](ios-device-features-settings.md#wallpaper).
 
 Aplica-se a:
 
@@ -196,7 +196,7 @@ Aplica-se a:
 
 Essas configurações podem usar o algoritmo de Filtro Automático interno da Apple para avaliar páginas da Web e bloquear conteúdo e linguagem adultos. Também é possível criar uma lista de links da Web permitidos e restritos. Por exemplo, você pode permitir apenas a abertura de sites da `contoso`.
 
-Para obter uma lista das configurações possíveis no Intune, confira [Filtro de conteúdo Web no iOS](ios-device-features-settings.md#web-content-filter).
+Para obter uma lista das configurações possíveis no Intune, confira [Filtro de conteúdo Web no iOS/iPadOS](ios-device-features-settings.md#web-content-filter).
 
 Aplica-se a:
 
@@ -229,4 +229,4 @@ O perfil é criado e exibido na lista de perfis. [Atribua o perfil](device-profi
 
 Depois que o perfil é criado, ele está pronto para ser atribuído. Em seguida, [atribua o perfil](device-profile-assign.md) e [monitore seu status](device-profile-monitor.md).
 
-Exiba todas as configurações de recurso de dispositivo para dispositivos [iOS](ios-device-features-settings.md) e [macOS](macos-device-features-settings.md).
+Exiba todas as configurações de recurso de dispositivo para dispositivos [iOS/iPadOS](ios-device-features-settings.md) e [macOS](macos-device-features-settings.md).

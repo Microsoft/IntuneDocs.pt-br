@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic; get-started
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: dfa93bb758447c872d172ded7706fd7507a42f11
-ms.sourcegitcommit: c7c6be3833d9a63d43f31d598b555b49b33cf5cb
+ms.openlocfilehash: d7edf84ada3c84b7ad31748909ef81a877237fd5
+ms.sourcegitcommit: c780e9988341a20f94fdeb8672bd13e0b302da93
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/03/2020
-ms.locfileid: "76966276"
+ms.lasthandoff: 02/20/2020
+ms.locfileid: "77514465"
 ---
 # <a name="us-government-endpoints-for-microsoft-intune"></a>Pontos de extremidade do governo dos EUA para o Microsoft Intune
 
@@ -74,8 +74,8 @@ Em dispositivos gerenciados pelo Intune e com o MDM (gerenciamento de dispositiv
 Para obter mais informações, consulte:
 
 - [Portas TCP e UDP usadas pelos produtos de software da Apple](https://support.apple.com/HT202944)
-- [Sobre as conexões de host do servidor do macOS, do iOS e do iTunes e os processos em segundo plano do iTunes](https://support.apple.com/HT201999)
-- [Se os clientes do macOS e do iOS não estiverem obtendo notificações por push da Apple](https://support.apple.com/HT203609)
+- [Sobre as conexões de host do servidor do macOS, do iOS/iPadOS e do iTunes e os processos em segundo plano do iTunes](https://support.apple.com/HT201999)
+- [Se os clientes do macOS e do iOS/iPadOS não estiverem obtendo notificações por push da Apple](https://support.apple.com/HT203609)
 
 ## <a name="next-steps"></a>Próximas etapas
 [Pontos de extremidade de rede para o Microsoft Intune](intune-endpoints.md)

@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: d302db46510b664aec5b0a71fd8b19985e29be37
-ms.sourcegitcommit: e166b9746fcf0e710e93ad012d2f52e2d3ed2644
+ms.openlocfilehash: 48bfe727615f5165fc70ed2e08f98f01203dc895
+ms.sourcegitcommit: c780e9988341a20f94fdeb8672bd13e0b302da93
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/19/2019
-ms.locfileid: "75206118"
+ms.lasthandoff: 02/20/2020
+ms.locfileid: "77514822"
 ---
 # <a name="use-policy-sets-to-group-collections-of-management-objects"></a>Use conjuntos de políticas para agrupar coleções de objetos de gerenciamento
 
@@ -52,7 +52,7 @@ Você pode incluir os seguintes objetos de gerenciamento em um conjunto de polí
 Quando você cria um conjunto de políticas, você cria uma única unidade de atribuição e gerencia associações entre diferentes objetos. Um conjunto de políticas será uma referência a objetos externos a ele. Todas as alterações nos objetos incluídos afetarão o conjunto de políticas também. Depois de criar um conjunto de políticas, você pode exibir e editar seus objetos e atribuições repetidamente. 
 
 > [!NOTE]
-> Os conjuntos de políticas dão suporte às configurações do Windows, Android, macOS e iOS e podem receber multiplataforma.
+> Os conjuntos de políticas dão suporte às configurações do Windows, Android, macOS e iOS/iPadOS e podem receber multiplataforma.
 
 ## <a name="how-to-create-a-policy-set"></a>Como criar um conjunto de políticas
 
@@ -82,15 +82,15 @@ Os conjuntos de políticas, novos na versão 1910, têm os seguintes problemas c
 - Ao criar um conjunto de políticas, se um administrador com escopo tentar criar um conjunto de políticas sem nenhuma marca de escopo selecionada, ao acessar a página **Examinar + Criar**, a validação falhará e um erro será exibido na barra de status. O administrador deve mudar para uma página diferente no processo e retornar para a página **Examinar + Criar**. Isso habilitará a opção **Criar**.  
  
 - No momento, há suporte para os seguintes tipos de aplicativo em conjuntos de políticas:
-    - Aplicativo da loja iOS
-    - Aplicativo de linha de negócios iOS
-    - Aplicativo de linha de negócios iOS gerenciado
+    - Aplicativo da loja iOS/iPadOS
+    - Aplicativo de linha de negócios iOS/iPadOS
+    - Aplicativo gerenciado de linha de negócios iOS/iPadOS
     - Aplicativos da loja Android
     - Aplicativo de linha de negócios Android
     - Aplicativo de linha de negócios Android gerenciado
     - Office 365 ProPlus Suite (Windows 10)
     - Link da Web
-    - Aplicativo iOS interno
+    - Aplicativo iOS/iPadOS interno
     - Aplicativo interno Android
 
 - Não há suporte para a definição de uma atribuição de conjunto de políticas de **Todos os Usuários** como **Perfil do Autopilot**.
@@ -103,18 +103,18 @@ Os conjuntos de políticas, novos na versão 1910, têm os seguintes problemas c
 
 - Os tipos de política de MAM que dão suporte a conjuntos de políticas incluem o seguinte: 
     - Proteção de aplicativo gerenciado direcionado a MDM para WIP (Windows) de MAM 
-    - Proteção de aplicativo gerenciado direcionado para iOS de MAM
+    - Proteção de aplicativo gerenciado direcionado para iOS/iPadOS de MAM
     - Proteção de aplicativo gerenciado direcionado para Android de MAM
-    - Configuração de aplicativos gerenciados direcionados para iOS de MAM
+    - Configuração de aplicativos gerenciados direcionados para iOS/iPadOS de MAM
     - Configuração de aplicativos gerenciados direcionados para Android de MAM
 
 - Os tipos de política de MAM que não dão suporte a conjuntos de políticas incluem o seguinte: 
     - Proteção de aplicativo gerenciado direcionado para WIP (Windows) de MAM
 
 - A política de processos de MAM definem as atribuições como atribuições diretas para os seguintes tipos de política:
-    - Proteção de aplicativo gerenciado direcionado para iOS de MAM
+    - Proteção de aplicativo gerenciado direcionado para iOS/iPadOS de MAM
     - Proteção de aplicativo gerenciado direcionado para Android de MAM
-    - Configuração de aplicativos gerenciados direcionados para iOS de MAM
+    - Configuração de aplicativos gerenciados direcionados para iOS/iPadOS de MAM
     - Configuração de aplicativos gerenciados direcionados para Android de MAM
 
     Se uma política fosse adicionada a um conjunto de políticas implantado em um grupo, o grupo seria exibido como atribuído diretamente na carga de trabalho, não "atribuído por meio do conjunto de políticas". Como um resultado disso, o MAM não processa exclusões de atribuição de grupo de conjuntos de políticas.

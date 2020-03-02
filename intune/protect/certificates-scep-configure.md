@@ -16,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 24d0a8160d852a5a44f5df688b7e0bc230d56704
-ms.sourcegitcommit: c7c6be3833d9a63d43f31d598b555b49b33cf5cb
+ms.openlocfilehash: c454ae6184f4d2a7c3c31f3c61d2cf4331ac187c
+ms.sourcegitcommit: c780e9988341a20f94fdeb8672bd13e0b302da93
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/03/2020
-ms.locfileid: "76966378"
+ms.lasthandoff: 02/20/2020
+ms.locfileid: "77514091"
 ---
 # <a name="configure-infrastructure-to-support-scep-with-intune"></a>Configurar a infraestrutura para dar suporte ao SCEP com o Intune
 
@@ -148,7 +148,7 @@ As seções a seguir exigem conhecimento do Windows Server 2012 R2 ou posterior 
        > [!IMPORTANT]
        > Adicione apenas as políticas de aplicativo necessárias. Confirme suas escolhas com seus administradores de segurança.
 
-     - Para modelos de certificado do iOS e do macOS, edite também **Uso da Chave** e verifique se a opção **A assinatura é uma prova de origem** não está selecionada.
+     - Para modelos de certificado do iOS/iPadOS e do macOS, edite também **Uso da Chave** e verifique se a opção **A assinatura é uma prova de origem** não está selecionada.
 
      ![Modelo, guia de extensões](./media/certificates-scep-configure/scep-ndes-extensions.jpg)  
 
@@ -217,7 +217,7 @@ Depois de [criar o modelo de Certificado SCEP](#create-the-scep-certificate-temp
 Por padrão, o Intune usa o valor configurado no modelo. No entanto, você pode configurar a AC para permitir que o solicitante insira outro valor, que pode ser definido no console do Intune.
 
 > [!IMPORTANT]
-> Para o iOS e o macOS, use sempre um valor definido no modelo.
+> Para o iOS/iPadOS e o macOS, use sempre um valor definido no modelo.
 
 #### <a name="to-configure-a-value-that-can-be-set-from-within-the-intune-console"></a>Para configurar um valor que pode ser definido no console do Intune
 

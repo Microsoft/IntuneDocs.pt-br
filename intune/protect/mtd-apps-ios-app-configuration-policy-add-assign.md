@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 04a18befe73ce63f5619c3efc6def4189db9c8df
-ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
+ms.openlocfilehash: efdb1912fdbb2f28c6859fae4407116173daa99d
+ms.sourcegitcommit: 47c9af81c385c7e893fe5a85eb79cf08e69e6831
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "74188475"
+ms.lasthandoff: 02/25/2020
+ms.locfileid: "77576298"
 ---
 # <a name="add-and-assign-mobile-threat-defense-mtd-apps-with-intune"></a>Adicionar e atribuir aplicativos MTD (Defesa contra Ameaças Móveis) com o Intune
 
@@ -203,7 +203,7 @@ Consulte as instruções sobre como [usar as políticas de configuração de apl
 
 ### <a name="pradeo-app-configuration-policy"></a>Política de configuração de aplicativos do Pradeo
 
-O Pradeo não dá suporte à política de configuração de aplicativo no iOS.  Em vez disso, para obter um aplicativo configurado, trabalhe com o Pradeo para implementar arquivos personalizados de IPA ou APK que são pré-configurados com as configurações desejadas.
+O Pradeo não dá suporte à política de configuração do aplicativo no iOS/iPadOS.  Em vez disso, para obter um aplicativo configurado, trabalhe com o Pradeo para implementar arquivos personalizados de IPA ou APK que são pré-configurados com as configurações desejadas.
 
 ### <a name="better-mobile-app-configuration-policy"></a>Política de configuração de aplicativo do Better Mobile
 

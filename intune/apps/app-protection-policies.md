@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: c7a6914e8174023704cfc593ec08a525ec5889f3
-ms.sourcegitcommit: ecaff388038fb800f2e646f8efcf8f3b1e2fd1b1
+ms.openlocfilehash: 7d1a55f758be50c342a5c8851106f0c37e6aec50
+ms.sourcegitcommit: c780e9988341a20f94fdeb8672bd13e0b302da93
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/18/2020
-ms.locfileid: "77437895"
+ms.lasthandoff: 02/20/2020
+ms.locfileid: "77513717"
 ---
 # <a name="how-to-create-and-assign-app-protection-policies"></a>Como criar e atribuir as políticas de proteção de aplicativo
 
@@ -74,21 +74,21 @@ Quando você cria uma política de proteção de aplicativo para aplicativos iOS
     Esta página fornece configurações para controles de DLP (prevenção contra perda de dados), incluindo restrições de cortar, copiar, colar e salvar como. Essas configurações determinar como os usuários interagem com os dados nos aplicativos que essa política de proteção de aplicativo aplica.
 
     **Configurações de proteção de dados**:<br>
-    - **Proteção de dados do iOS/iPadOS** – Para obter informações, confira [Configurações da política de proteção de aplicativo iOS – Proteção de dados](~/apps/app-protection-policy-settings-ios.md#data-protection).
+    - **Proteção de dados do iOS/iPadOS** – Para obter informações, confira [Configurações da política de proteção de aplicativo iOS/iPadOS – Proteção de dados](~/apps/app-protection-policy-settings-ios.md#data-protection).
     - **Proteção de dados do Android** – Para obter informações, confira [Configurações da política de proteção de aplicativo Android – Proteção de dados](~/apps/app-protection-policy-settings-android.md#data-protection).
 
 7. Clique em **Avançar** para exibir a página **Requisitos de acesso**.<br>
     Esta página fornece definições para permitir que você configure os requisitos de PIN e de credenciais aos quais os usuários devem atender para acessar aplicativos em um contexto de trabalho. 
  
     **Configurações de requisitos de acesso**:<br>
-    - **Requisitos de acesso do iOS/iPadOS** – Para obter informações, confira [Configurações da política de proteção de aplicativo iOS – Requisitos de acesso](~/apps/app-protection-policy-settings-ios.md#access-requirements).
+    - **Requisitos de acesso do iOS/iPadOS** – Para obter informações, confira [Configurações da política de proteção de aplicativo iOS/iPadOS – Requisitos de acesso](~/apps/app-protection-policy-settings-ios.md#access-requirements).
     - **Requisitos de acesso do Android** – Para obter informações, confira [Configurações da política de proteção de aplicativo Android – Requisitos de acesso](~/apps/app-protection-policy-settings-android.md#access-requirements).
 
 8. Clique em **Avançar** para exibir a página **Inicialização condicional**.<br>
     Esta página fornece configurações para definir os requisitos de segurança de entrada de sua política de proteção de aplicativo. Selecione uma **Configuração** e insira o **Valor** que os usuários precisam cumprir para entrar no aplicativo da empresa. Selecione a **Ação** que você deseja executar se os usuários não atendem aos seus requisitos. Em alguns casos, várias ações podem ser definidas para uma única configuração.
 
     **Configurações de inicialização condicional**:<br>
-    - **Inicialização condicional do iOS/iPadOS** – Para obter informações, confira [Configurações da política de proteção de aplicativo iOS – Inicialização condicional](~/apps/app-protection-policy-settings-ios.md#conditional-launch).
+    - **Inicialização condicional do iOS/iPadOS** – Para obter informações, confira [Configurações da política de proteção de aplicativo iOS/iPadOS – Inicialização condicional](~/apps/app-protection-policy-settings-ios.md#conditional-launch).
     - **Inicialização condicional do Android** – Para obter informações, confira [Configurações da política de proteção de aplicativo Android – Inicialização condicional](~/apps/app-protection-policy-settings-android.md#conditional-launch).
 
 9. Clique em **Avançar** para exibir a página **Atribuições**.<br>
@@ -180,7 +180,7 @@ Para criar essas políticas, navegue até **Aplicativos** > **Políticas de prot
 > [!NOTE]
 > Os dispositivos Android solicitarão a instalação do aplicativo Portal da Empresa do Intune, independentemente do tipo de dispositivo escolhido. Por exemplo, se você escolher "Android Enterprise", os usuários com dispositivos Android não gerenciados ainda serão solicitados.
 
-Para iOS, são necessárias mais definições de configuração de aplicativo a fim de direcionar as configurações da política de proteção do aplicativo para aplicativos, em dispositivos registrados no Microsoft Intune:
+Para iOS/iPadOS, são necessárias mais definições de configuração do aplicativo a fim de direcionar as configurações da política de proteção do aplicativo para aplicativos, em dispositivos registrados no Microsoft Intune:
 
 - **IntuneMAMUPN** deve ser configurado para todos os aplicativos gerenciados por MDM. Para obter mais informações, confira [Como gerenciar a transferência de dados entre aplicativos iOS/iPadOS no Microsoft Intune](data-transfer-between-apps-manage-ios.md#configure-user-upn-setting-for-microsoft-intune-or-third-party-emm).
 - **IntuneMAMDeviceID** deve ser configurado para todos os aplicativos de terceiros e gerenciados por MDM de linha de negócios. O **IntuneMAMDeviceID** deve ser configurado para o token de ID do dispositivo. Por exemplo, `key=IntuneMAMDeviceID, value={{deviceID}}`. Para obter mais informações, confira [Adicionar políticas de configuração de aplicativo para dispositivos iOS/iPadOS gerenciados](app-configuration-policies-use-ios.md).
@@ -192,7 +192,7 @@ Para iOS, são necessárias mais definições de configuração de aplicativo a 
 ## <a name="policy-settings"></a>Configurações de política
 Para ver uma lista completa das configurações de política para iOS/iPadOS e Android, selecione um dos seguintes links:
 
-- [Políticas do iOS](app-protection-policy-settings-ios.md)
+- [Políticas de iOS/iPadOS](app-protection-policy-settings-ios.md)
 - [Políticas do Android](app-protection-policy-settings-android.md)
 
 ## <a name="next-steps"></a>Próximas etapas

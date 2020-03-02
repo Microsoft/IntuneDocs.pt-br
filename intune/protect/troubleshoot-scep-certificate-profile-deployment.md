@@ -16,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 3dae74321b6825a1b94551addfd7621450fd8ae4
-ms.sourcegitcommit: c46b0c2d4507be6a2786a4ea06009b2d5aafef85
+ms.openlocfilehash: 26eb6a5cb8e7aba01ce32ab8bec8ad917604a55c
+ms.sourcegitcommit: c780e9988341a20f94fdeb8672bd13e0b302da93
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/01/2020
-ms.locfileid: "76916039"
+ms.lasthandoff: 02/20/2020
+ms.locfileid: "77514771"
 ---
 # <a name="troubleshoot-deployment-of-a-scep-certificate-profile-to-devices-in-microsoft-intune"></a>Solucionar problemas de implantação de um perfil de certificado SCEP em dispositivos no Microsoft Intune
 
@@ -59,9 +59,9 @@ Exemplos de entradas de chaves:
 - `ModelName=AC_51bad41f-3854-4eb5-a2f2-0f7a94034ee8%2FLogicalName_39907e78_e61b_4730_b9fa_d44a53e4111c%3BHash=-1518303401`
 - `NDESUrls&amp;gt;&amp;lt;NDESUrl&amp;gt;https://<server>-contoso.msappproxy.net/certsrv/mscep/mscep.dll&amp;lt;/NDESUrl&amp;gt;&amp;lt;/NDESUrls`
 
-## <a name="ios-and-ipados"></a>iOS e iPadOS
+## <a name="iosipados"></a>iOS/iPadOS
 
-### <a name="validate-that-the-ios-or-ipados-device-was-sent-the-policy"></a>Validar se a política foi enviada ao dispositivo iOS ou iPadOS
+### <a name="validate-that-the-iosipados-device-was-sent-the-policy"></a>Validar se a política foi enviada ao dispositivo iOS/iPadOS
 
 Para validar se um perfil foi enviado ao dispositivo esperado, no [Centro de Administração do Gerenciador de Ponto de Extremidade da Microsoft](https://go.microsoft.com/fwlink/?linkid=2109431) acesse **Solução de problemas + Suporte** > **Solucionar problemas**.  Na janela *Solucionar problemas*, defina as **Atribuições** para os **Perfis de configuração** e, em seguida, valide as seguintes configurações:
 

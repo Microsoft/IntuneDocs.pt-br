@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 138bf192f5244eb6e44a6be96af3cc15c47bdc76
-ms.sourcegitcommit: 139853f8d6ea61786da7056cfb9024a6459abd70
+ms.openlocfilehash: a4b3bd06bad6c31c2d0fb4c31a7ad605af96be86
+ms.sourcegitcommit: 29f3ba071c9348686d3ad6f3b8864d8557e05b97
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/26/2020
-ms.locfileid: "76755384"
+ms.lasthandoff: 02/26/2020
+ms.locfileid: "77609193"
 ---
 # <a name="add-managed-google-play-apps-to-android-enterprise-devices-with-intune"></a>Adicionar aplicativos do Google Play Gerenciado a dispositivos Android Enterprise com o Intune
 
@@ -80,20 +80,6 @@ Há duas maneiras de procurar e aprovar aplicativos da Google Play Store Gerenci
 9. Clique em **Selecionar** para selecionar o aplicativo.
 10. Clique em **Sincronizar** no canto superior da folha para sincronizar com o serviço Google Play gerenciado.
 11. Clique em **Atualizar** para atualizar a lista de aplicativos e exibir o aplicativo recém-adicionado.
-
-### <a name="add-additional-app-settings-to-a-managed-google-play-store-app"></a>Acrescentar configurações de aplicativo adicionais a um aplicativo na store Google Play gerenciado
-1. Se você precisar acrescentar detalhes adicionais do aplicativo, selecione o aplicativo na lista de aplicativos.
-2. Clique em **Propriedades** > **Editar** ao lado de **Informações do aplicativo**. A página **Informações do aplicativo** é exibida.
-3. No painel **Informações do aplicativo**, adicione os detalhes do aplicativo:
-    - **Categoria**: Como opção, selecione uma ou mais categorias de aplicativo internas ou uma categoria criada por você. Isso facilita a localização do aplicativo pelos usuários quando navegam pelo portal da empresa.
-    - **Mostrar como um aplicativo em destaque no Portal da Empresa**: Selecione essa opção para destacar o pacote de aplicativos na página principal do Portal da Empresa quando os usuários procurarem por aplicativos.
-    - **URL de Informações**: Opcionalmente, insira uma URL de um site que contém informações sobre esse aplicativo. A URL é exibida para os usuários no portal da empresa.
-    - **URL de privacidade**: Opcionalmente, insira a URL para um site que contém informações de privacidade desse aplicativo. A URL é exibida para os usuários no portal da empresa.
-    - **Desenvolvedor**: Opcionalmente, Insira o nome do desenvolvedor do aplicativo.
-    - **Proprietário**: Opcionalmente, insira um nome para o proprietário desse aplicativo, por exemplo, *Departamento de RH*.
-    - **Observações**: Opcionalmente, insira as observações que você deseja associar a esse aplicativo.
-4. Clique em **Revisar + salvar** para exibir a página **Revisar + salvar**. 
-5. Quando terminar, clique em **Salvar** para atualizar o aplicativo no Intune.
 
 ### <a name="add-a-managed-google-play-store-app-in-the-managed-google-play-console-alternative"></a>Adicionar um aplicativo gerenciado da Google Play Store ao console do Google Play Gerenciado (alternativa)
 Se você preferir sincronizar um aplicativo do Google Play Gerenciado com o Intune em vez de adicioná-lo diretamente usando o Intune, use as etapas a seguir.
@@ -238,6 +224,9 @@ Para aplicativos do Google Play Gerenciado implantados em dispositivos de perfil
 
 ## <a name="delete-managed-google-play-apps"></a>Excluir aplicativos do Google Play Gerenciados
 Quando for necessário, você poderá excluir aplicativos do Google Play Gerenciado do Microsoft Intune. Para excluir um aplicativo do Google Play Gerenciado, abra o Microsoft Intune no portal do Azure e selecione **Aplicativos** > **Todos os aplicativos**. Na lista de aplicativos, selecione as reticências (...) à direita do aplicativo do Google Play Gerenciado e, em seguida, selecione **Excluir** na lista exibida. Quando você exclui um aplicativo do Google Play gerenciado na lista de aplicativos, o aplicativo do Google Play gerenciado torna-se para aprovação automaticamente.
+
+> [!NOTE]
+> Se um aplicativo não for aprovado ou foi excluído da Google Play Store gerenciada, ele não será removido da lista de aplicativos cliente do Intune. Isso permite que você ainda direcione uma política de desinstalação para os usuários mesmo que o aplicativo não seja aprovado.
 
 ## <a name="android-enterprise-system-apps"></a>Aplicativos do sistema Android Enterprise
 

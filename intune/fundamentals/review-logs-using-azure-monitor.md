@@ -5,7 +5,7 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 08/28/2019
+ms.date: 02/18/2020
 ms.topic: troubleshooting
 ms.service: microsoft-intune
 ms.subservice: fundamentals
@@ -17,18 +17,18 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 66acf4d8b88097c3262f44493ab72b3900781eed
-ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
+ms.openlocfilehash: 8a9c74281df61fbf81914461286353d49b89a4f9
+ms.sourcegitcommit: c780e9988341a20f94fdeb8672bd13e0b302da93
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "72504972"
+ms.lasthandoff: 02/20/2020
+ms.locfileid: "77510738"
 ---
 # <a name="send-log-data-to-storage-event-hubs-or-log-analytics-in-intune-preview"></a>Enviar dados de log para o armazenamento, hubs de eventos ou análises de log no Intune (versão prévia)
 
 O Microsoft Intune inclui logs internos que fornecem informações sobre o ambiente:
 
-- Os **Logs de Auditoria** mostram detalhes sobre eventos diferentes ou tarefas que ocorrem no Intune.
+- **Logs de Auditoria** mostra um registro de atividades que geram uma alteração no Intune, incluindo ações de criar, atualizar (editar), excluir, atribuir e remotas.
 - Os **Logs Operacionais (versão prévia)** mostram detalhes sobre usuários e dispositivos que têm êxito (ou falham) no registro, assim como detalhes sobre os dispositivos fora de conformidade.
 - Os **Logs Organizacionais de Conformidade do Dispositivo (versão prévia)** mostram um relatório organizacional de conformidade do dispositivo no Intune, bem como detalhes sobre os dispositivos fora de conformidade.
 
@@ -59,10 +59,11 @@ Dependendo de onde você deseja rotear os dados de log de auditoria, serão nece
 
 ## <a name="send-logs-to-azure-monitor"></a>Enviar logs ao Azure Monitor
 
-1. Conecte-se ao [Intune](https://go.microsoft.com/fwlink/?linkid=2090973).
-2. Em **Monitoramento**, escolha **Configurações de diagnóstico**. Na primeira vez que você abri-lo, ative-o. Caso contrário, adicione uma configuração.
+1. Entre no [Centro de Administração do Gerenciador de Ponto de Extremidade da Microsoft](https://go.microsoft.com/fwlink/?linkid=2109431).
+2. Selecione **Relatórios** > **Configurações de diagnóstico**. Na primeira vez que você abri-lo, ative-o. Caso contrário, adicione uma configuração.
 
-    ![Ativar as configurações de diagnóstico no Intune para enviar logs ao Azure Monitor](./media/review-logs-using-azure-monitor/diagnostics-settings-turn-on.png)
+    > [!div class="mx-imgBorder"]
+    > ![Ativar as configurações de diagnóstico no Intune para enviar logs ao Azure Monitor](./media/review-logs-using-azure-monitor/diagnostics-settings-turn-on.png)
 
 3. Insira as seguintes propriedades:
 
@@ -104,7 +105,8 @@ Dependendo de onde você deseja rotear os dados de log de auditoria, serão nece
 
     Quando terminar, suas configurações serão semelhantes às seguintes configurações: 
 
-    ![A imagem de exemplo que envia logs de auditoria do Intune para uma conta de armazenamento do Azure](./media/review-logs-using-azure-monitor/diagnostics-settings-example.png)
+    > [!div class="mx-imgBorder"]
+    > ![A imagem de exemplo que envia logs de auditoria do Intune para uma conta de armazenamento do Azure](./media/review-logs-using-azure-monitor/diagnostics-settings-example.png)
 
 4. **Salve** suas alterações. A configuração é mostrada na lista. Depois de criadas, é possível alterá-las escolhendo **Editar configuração** > **salvar**.
 
@@ -112,14 +114,7 @@ Dependendo de onde você deseja rotear os dados de log de auditoria, serão nece
 
 Também é possível exportar os logs de auditoria em outras partes do Intune, incluindo o registro, a conformidade, a conformidade, os dispositivos, os aplicativos cliente e mais.
 
-Por exemplo, para exportar os logs de auditoria ao usar a conformidade do dispositivo:
-
-1. Conecte-se ao [Intune](https://go.microsoft.com/fwlink/?linkid=2090973).
-2. Selecione **Conformidade do dispositivo** > **Monitor** > **Logs de auditoria**:
-
-    ![escolha logs de auditoria para rotear dados do Intune para o armazenamento, os hubs de eventos ou a análise do Azure Monitor](./media/review-logs-using-azure-monitor/audit-logs-under-monitor-in-compliance.png)
-
-3. Selecione **Configurações de Exportação de Dados**. Se não estiver habilitada, será possível ativar as **Configurações de diagnóstico**. Também é possível escolher para onde enviar os logs, conforme descrito em [enviar logs para o Azure Monitor](#send-logs-to-azure-monitor) (neste artigo).
+Para saber mais, confira [Usar logs de auditoria para acompanhar e monitorar eventos](monitor-audit-logs.md). É possível escolher para onde enviar os logs de auditoria, conforme descrito em [enviar logs para o Azure Monitor](#send-logs-to-azure-monitor) (neste artigo).
 
 ## <a name="cost-considerations"></a>Considerações de custo
 

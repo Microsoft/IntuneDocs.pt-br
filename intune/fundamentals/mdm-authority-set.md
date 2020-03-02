@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 43c5d0731736df193bf615391ad486a60dff6cdd
-ms.sourcegitcommit: 2506cdbfccefd42587a76f14ee50c3849dad1708
+ms.openlocfilehash: b611b2307b7b4f7e789e7db9d070e4b6b3f1350c
+ms.sourcegitcommit: c780e9988341a20f94fdeb8672bd13e0b302da93
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/11/2020
-ms.locfileid: "75885910"
+ms.lasthandoff: 02/20/2020
+ms.locfileid: "77514482"
 ---
 # <a name="set-the-mobile-device-management-authority"></a>Defina a autoridade de gerenciamento de dispositivo móvel
 
@@ -69,7 +69,7 @@ Em cada caso, o consentimento está estritamente relacionado à execução de um
 Depois de alternar para a nova autoridade de MDM, provavelmente haverá tempo de transição (até oito horas) antes de o dispositivo fazer o check-in e sincronizar com o serviço. É necessário definir as configurações na nova autoridade de MDM para garantir que os dispositivos registrados continuarão sendo gerenciados e protegidos após a alteração. 
 - Os dispositivos devem se conectar ao serviço após a alteração para que as configurações da nova autoridade de MDM (Intune autônomo) substituam as configurações existentes no dispositivo.
 - Depois que você alterar a autoridade de MDM, algumas das configurações básicas (como perfis) da autoridade de MDM anterior permanecerão no dispositivo por até sete dias ou até que o dispositivo se conecte ao serviço pela primeira vez. É recomendado que você defina aplicativos e configurações (políticas, perfis, aplicativos etc.) na nova autoridade de MDM assim que possível e implante as configurações nos grupos de usuários que contêm usuários com dispositivos registrados existentes. Assim que um dispositivo se conectar ao serviço após a alteração na autoridade de MDM, ele receberá as novas configurações da nova autoridade de MDM e evitará falhas na proteção e no gerenciamento.
-- Os dispositivos que não têm usuários associados (normalmente quando você tem o Programa de registro de dispositivos iOS ou cenários de registro em massa) não são migrados para a nova autoridade de MDM. Para esses dispositivos, você precisa chamar o suporte para obter assistência para movê-los para a nova autoridade de MDM.
+- Os dispositivos que não têm usuários associados (normalmente quando você tem o Programa de registro de dispositivos iOS/iPadOS ou cenários de registro em massa) não são migrados para a nova autoridade de MDM. Para esses dispositivos, você precisa chamar o suporte para obter assistência para movê-los para a nova autoridade de MDM.
 
 ## <a name="change-mdm-authority-to-office-365"></a>Alterar a autoridade de MDM para o Office 365
 
@@ -93,7 +93,7 @@ A autoridade de MDM não pode ser alterada novamente para Desconhecida. A autori
 - Mesmo para os dispositivos ligados e online durante (ou logo após) a alteração na autoridade de MDM, haverá um atraso de até oito horas (dependendo do horário do próximo check-in regular agendado) antes de os dispositivos serem registrados no serviço sob a nova autoridade de MDM.    
 
   > [!IMPORTANT]    
-  > Entre o momento em que você altera a autoridade de MDM e em que o certificado APNs renovado é carregado para a nova autoridade, novos registros de dispositivo e check-in de dispositivo para dispositivos iOS falharão. Portanto, é importante que você analise e carregue o certificado de APNs para a nova autoridade assim que possível após a alteração na autoridade de MDM.
+  > Entre o momento em que você altera a autoridade de MDM e em que o certificado APNs renovado é carregado para a nova autoridade, novos registros de dispositivo e check-in de dispositivo para dispositivos iOS/iPadOS falham. Portanto, é importante que você analise e carregue o certificado de APNs para a nova autoridade assim que possível após a alteração na autoridade de MDM.
 
 - Os usuários podem alterar rapidamente para a nova autoridade de MDM iniciando manualmente um check-in do dispositivo para o serviço. Os usuários podem fazer essa alteração facilmente usando o aplicativo Portal da Empresa e iniciando uma verificação de conformidade do dispositivo.
 - Para verificar se tudo está funcionando corretamente depois que os dispositivos fizerem check-in e forem sincronizados com o serviço após a alteração da autoridade de MDM, procure os dispositivos na nova autoridade de MDM.

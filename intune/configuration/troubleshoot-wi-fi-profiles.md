@@ -1,11 +1,11 @@
 ---
 title: Solucionar problemas e examinar logs de perfil de dispositivos Wi-Fi no Microsoft Intune – Azure | Microsoft Docs
-description: Compreenda e solucione problemas de perfil de configuração de dispositivos Wi-Fi nos dispositivos Android, iOS e Windows no Microsoft Intune. Examine os logs e veja alguns problemas comuns e suas possíveis resoluções.
+description: Compreenda e solucione problemas de perfil de configuração de dispositivos Wi-Fi nos dispositivos Android, iOS/iPadOS e Windows no Microsoft Intune. Examine os logs e veja alguns problemas comuns e suas possíveis resoluções.
 keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 11/26/2019
+ms.date: 02/18/2020
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.subservice: configuration
@@ -16,16 +16,16 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 70f471e7f4db7ddce89d8956474822375c684944
-ms.sourcegitcommit: a82d25d98fdf0ba766f8f074871d4f13725e23f9
+ms.openlocfilehash: db663f96f1e4fe84c506395b98c52956069e5426
+ms.sourcegitcommit: c780e9988341a20f94fdeb8672bd13e0b302da93
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/31/2019
-ms.locfileid: "75547966"
+ms.lasthandoff: 02/20/2020
+ms.locfileid: "77512816"
 ---
 # <a name="troubleshoot-wi-fi-device-configuration-profiles-in-microsoft-intune"></a>Solucionar problemas de perfis de configuração de dispositivos Wi-Fi no Microsoft Intune
 
-No Intune, é possível criar perfis de configuração de dispositivo que incluem configurações de conexão para sua rede WiFi. Use essas configurações para conectar os dispositivos Android, iOS e Windows dos usuários à rede da organização.
+No Intune, é possível criar perfis de configuração de dispositivo que incluem configurações de conexão para sua rede WiFi. Use essas configurações para conectar os dispositivos Android, iOS/iPadOS e Windows dos usuários à rede da organização.
 
 Este artigo mostra como o perfil Wi-Fi será exibido quando aplicado aos dispositivos. Ele também inclui informações de log, problemas comuns e muito mais. Confira este artigo para saber como solucionar problemas com seus perfis Wi-Fi.
 
@@ -100,25 +100,25 @@ O registro a seguir mostra os resultados da pesquisa e o perfil Wi-Fi aplicado c
 
 ```
 
-## <a name="ios"></a>iOS
+## <a name="iosipados"></a>iOS/iPadOS
 
 Depois que o perfil Wi-Fi é instalado no dispositivo, ele é mostrado no **Perfil de Gerenciamento**:
 
 > [!div class="mx-imgBorder"]
-> ![Perfil de gerenciamento no dispositivo iOS](./media/troubleshoot-wi-fi-profiles/ios-management-profile.png)
+> ![Perfil de gerenciamento no dispositivo iOS/iPadOS no Intune](./media/troubleshoot-wi-fi-profiles/ios-management-profile.png)
 
 > [!div class="mx-imgBorder"]
-> ![A conexão Wi-Fi é exibida como uma rede Wi-Fi no dispositivo iOS](./media/troubleshoot-wi-fi-profiles/ios-wifi-connection-in-management-profile.png)
+> ![A conexão Wi-Fi é exibida como uma rede Wi-Fi no dispositivo iOS/iPadOS no Intune](./media/troubleshoot-wi-fi-profiles/ios-wifi-connection-in-management-profile.png)
 
-### <a name="review-the-ios-console-and-device-logs"></a>Revise os logs do console e do dispositivo iOS
+### <a name="review-the-iosipados-console-and-device-logs"></a>Examinar os logs do console e do dispositivo iOS/iPadOS
 
-Em dispositivos iOS, o log do aplicativo do Portal da Empresa não inclui informações sobre perfis Wi-Fi. Para ver os detalhes da instalação dos seus perfis Wi-Fi, use os registros do console/dispositivo:
+Em dispositivos iOS/iPadOS, o log do aplicativo do Portal da Empresa não inclui informações sobre perfis Wi-Fi. Para ver os detalhes da instalação dos seus perfis Wi-Fi, use os registros do console/dispositivo:
 
-1. Conecte o dispositivo iOS ao Mac. Vá para **Aplicativos** > **Utilitários** e abra o aplicativo do Console.
+1. Conecte o dispositivo iOS/iPadOS ao Mac. Vá para **Aplicativos** > **Utilitários** e abra o aplicativo do Console.
 2. Em **Ação**, selecione **Incluir Mensagens Informativas** e **Incluir Mensagens de Depuração**:
 
     > [!div class="mx-imgBorder"]
-    > ![Incluir Mensagens Informativas e Incluir Mensagens de Depuração no aplicativo de console do iOS](./media/troubleshoot-wi-fi-profiles/ios-console-app-include-info-messages-debug-messages.png)
+    > ![Incluir Mensagens Informativas e Incluir Mensagens de Depuração no aplicativo de console do iOS/iPadOS](./media/troubleshoot-wi-fi-profiles/ios-console-app-include-info-messages-debug-messages.png)
 
 3. Reproduza o cenário e salve os logs em um arquivo de texto:
 
@@ -263,7 +263,7 @@ Normalmente, esse problema é causado por algo fora do Intune. As tarefas a segu
 
 - Para obter mais informações sobre perfis Wi-Fi no Microsoft Intune, confira os seguintes artigos:
 
-  - Adicione configurações Wi-Fi a dispositivos com [Android](wi-fi-settings-android.md), [iOS](wi-fi-settings-ios.md) e [Windows 10 e posterior](wi-fi-settings-windows.md).
+  - Adicione configurações Wi-Fi a dispositivos com [Android](wi-fi-settings-android.md), [iOS/iPadOS](wi-fi-settings-ios.md) e [Windows 10 e posterior](wi-fi-settings-windows.md).
   - [Dica de suporte: como configurar implantações de certificado NDES para SCEP no Intune](https://techcommunity.microsoft.com/t5/Intune-Customer-Success/Support-Tip-How-to-configure-NDES-for-SCEP-certificate/ba-p/455125)
   - Solucione problemas com a [Implantação do perfil de certificado SCEP](https://support.microsoft.com/help/4526725/troubleshooting-scep-profile-deployment-to-android-devices-in-intune) e a [Configuração do NDES](https://support.microsoft.com/help/4459540/troubleshoot-ndes-configuration-for-use-with-intune).
 

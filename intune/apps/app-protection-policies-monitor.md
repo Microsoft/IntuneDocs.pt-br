@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 899e2d2dc8458d0909f01e9dfcc1056874ef0fa7
-ms.sourcegitcommit: ecaff388038fb800f2e646f8efcf8f3b1e2fd1b1
+ms.openlocfilehash: 317f39b28909196d03ef5e7c68c7980f5fdfea3f
+ms.sourcegitcommit: c780e9988341a20f94fdeb8672bd13e0b302da93
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/18/2020
-ms.locfileid: "77437963"
+ms.lasthandoff: 02/20/2020
+ms.locfileid: "77512204"
 ---
 # <a name="how-to-monitor-app-protection-policies"></a>Como monitorar as políticas de proteção de aplicativo
 [!INCLUDE [azure_portal](../includes/azure_portal.md)]
@@ -48,7 +48,7 @@ O período de retenção dos dados de proteção do aplicativo é de 90 dias. To
    ![Captura de tela do bloco de resumo no painel de gerenciamento de aplicativos móveis do Intune](./media/app-protection-policies-monitor/app-protection-user-status-summary.png)
 
 - **Usuários atribuídos**: O número total de usuários atribuídos em sua empresa que estão usando um aplicativo associado a uma política em um contexto de trabalho e que estão protegidos e licenciados, bem como os usuários atribuídos que não estão protegidos nem licenciados.
-- **Usuários sinalizados**: Número de usuários que estão enfrentando problemas com seus dispositivos. Dispositivos em que foi feito jailbreak (iOS) e root (Android) são relatados em **Usuários sinalizados**. Usuários que têm dispositivos sinalizados pela verificação de atestado de dispositivos do Google SafetyNet (se ativado pelo administrador de TI) também serão indicados aqui. 
+- **Usuários sinalizados**: Número de usuários que estão enfrentando problemas com seus dispositivos. Dispositivos em que foi feito jailbreak (iOS/iPadOS) e root (Android) são relatados em **Usuários sinalizados**. Usuários que têm dispositivos sinalizados pela verificação de atestado de dispositivos do Google SafetyNet (se ativado pelo administrador de TI) também serão indicados aqui. 
 - **Usuários com aplicativos potencialmente nocivos**: O número de usuários que podem ter um aplicativo nocivo em seu dispositivo Android detectado pelo Google Play Protect. 
 - **Status do usuário para iOS** e **Status do usuário para Android**: O número de usuários que usaram um aplicativo que tem uma política atribuída a eles em um contexto de trabalho para a plataforma relacionada. Essas informações mostram o número de usuários gerenciados pela política, bem como o número de usuários que estão usando um aplicativo que não é direcionado por nenhuma política em um contexto de trabalho. Você pode considerar adicionar esses usuários à política.
 - **Principais Aplicativos iOS/iPadOS Protegidos** e **Principais Aplicativos Android Protegidos**: tendo como base os aplicativos iOS/iPadOS e Android mais usados, essas informações mostram o número de aplicativos protegidos e desprotegidos por plataforma.
@@ -61,7 +61,7 @@ O período de retenção dos dados de proteção do aplicativo é de 90 dias. To
 Você pode obter a exibição detalhada do resumo escolhendo o bloco **Usuários sinalizados** e o bloco **Usuários com aplicativos potencialmente prejudiciais**.
 
 ### <a name="flagged-users"></a>Usuários sinalizados
-A exibição detalhada mostra a mensagem de erro, o aplicativo que foi acessado quando o erro ocorreu, a plataforma do sistema operacional dispositivo afetada e o carimbo de data/hora. O erro geralmente corresponde a dispositivos com jailbreak (iOS) ou raiz (Android). Além disso, usuários com dispositivos sinalizados pela verificação de inicialização condicional do “atestado de dispositivo do SafetyNet” também serão indicados aqui com seus respectivos motivos, conforme relatado pelo Google. Para que um usuário seja removido do relatório, o status do dispositivo em si precisa ser alterado, o que acontece após a próxima verificação de detecção de raiz (ou verificação de jailbreak/verificação SafetyNet) que precisa relatar um resultado positivo. Se o dispositivo for realmente corrigido, a atualização no relatório Usuários sinalizados ocorrerá quando o painel for recarregado.
+A exibição detalhada mostra a mensagem de erro, o aplicativo que foi acessado quando o erro ocorreu, a plataforma do sistema operacional dispositivo afetada e o carimbo de data/hora. O erro geralmente corresponde a dispositivos com jailbreak (iOS/iPadOS) ou raiz (Android). Além disso, usuários com dispositivos sinalizados pela verificação de inicialização condicional do “atestado de dispositivo do SafetyNet” também serão indicados aqui com seus respectivos motivos, conforme relatado pelo Google. Para que um usuário seja removido do relatório, o status do dispositivo em si precisa ser alterado, o que acontece após a próxima verificação de detecção de raiz (ou verificação de jailbreak/verificação SafetyNet) que precisa relatar um resultado positivo. Se o dispositivo for realmente corrigido, a atualização no relatório Usuários sinalizados ocorrerá quando o painel for recarregado.
 
 ### <a name="users-with-potentially-harmful-apps"></a>Usuários com aplicativos potencialmente nocivos
 Usuários com dispositivos sinalizados com **Exigir verificação de ameaças em aplicativos** pela verificação de inicialização condicional são indicados aqui com a categoria de ameaça, conforme relatado pelo Google. Se houver aplicativos descritos neste relatório que estejam sendo implantados pelo Microsoft Intune, contate o desenvolvedor do aplicativo e/ou remova a atribuição do aplicativo para os usuários finais. A exibição detalhada mostra:
@@ -170,7 +170,7 @@ Siga estas etapas para gerar o arquivo .csv da Proteção de Aplicativos ou o ar
     ![Captura de tela da caixa de confirmação Salvar relatório](./media/app-protection-policies-monitor/app-protection-report-csv-1.png)
    
 > [!NOTE]
-> O Intune fornece campos adicionais de relatório do dispositivo, incluindo ID de Registro do Aplicativo, fabricante do Android, modelo e versão do patch de segurança, bem como modelo do iOS/iPadOS. No Intune, esses campos podem ser acessados selecionando **Aplicativos** > **Status de proteção do aplicativo** > **Relatório de Proteção do Aplicativo: iOS/iPadOS, Android**. Além disso, esses parâmetros ajudam a configurar a lista de **Permissão** do fabricante do dispositivo (Android), a lista de **Permissão** do modelo do dispositivo (Android e iOS) e a configuração de **versão mínima do patch de segurança do Android**.   
+> O Intune fornece campos adicionais de relatório do dispositivo, incluindo ID de Registro do Aplicativo, fabricante do Android, modelo e versão do patch de segurança, bem como modelo do iOS/iPadOS. No Intune, esses campos podem ser acessados selecionando **Aplicativos** > **Status de proteção do aplicativo** > **Relatório de Proteção do Aplicativo: iOS/iPadOS, Android**. Além disso, esses parâmetros ajudam a configurar a lista de **Permissões** do fabricante do dispositivo (Android), a lista de **Permissões** do modelo do dispositivo (Android e iOS/iPadOS) e a configuração de **versão mínima do patch de segurança do Android**.   
  
 ## <a name="see-also"></a>Consulte também
 - [Gerenciar a transferência de dados entre aplicativos iOS/iPadOS](data-transfer-between-apps-manage-ios.md)

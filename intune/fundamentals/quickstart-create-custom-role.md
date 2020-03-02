@@ -15,12 +15,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 2c61449e17b96151d2717365e5193fd6c4bdaae3
-ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
+ms.openlocfilehash: 5b38df90e47e709e02f12a6ccdab68714d04ca93
+ms.sourcegitcommit: 47c9af81c385c7e893fe5a85eb79cf08e69e6831
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "72509903"
+ms.lasthandoff: 02/25/2020
+ms.locfileid: "77575869"
 ---
 # <a name="quickstart-create-and-assign-a-custom-role"></a>Início Rápido: Criar e atribuir uma função personalizada
 
@@ -77,4 +77,4 @@ Neste início rápido, você criou uma função de operações de segurança per
 Para seguir esta série de guias de início rápido do Intune, vá para o próximo início rápido.
 
 > [!div class="nextstepaction"]
-> [Início rápido: Criar um perfil de dispositivo de email para o iOS](../configuration/quickstart-email-profile.md)
+> [Início rápido: Criar um perfil de dispositivo de email para o iOS/iPadOS](../configuration/quickstart-email-profile.md)

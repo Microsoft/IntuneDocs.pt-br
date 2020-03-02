@@ -1,7 +1,7 @@
 ---
 title: Relatório de criptografia para dispositivos criptografados no Microsoft Intune
 titleSuffix: Microsoft Intune
-description: Veja um relatório no status de criptografia de seu dispositivo iOS ou Windows e acesse as chaves de recuperação do FileVault e do BitLocker no portal do Microsoft Intune.
+description: Veja um relatório no status de criptografia de seu dispositivo iOS/iPadOS ou Windows e acesse as chaves de recuperação do FileVault e do BitLocker no portal do Microsoft Intune.
 keywords: ''
 author: brenduns
 ms.author: brenduns
@@ -17,12 +17,12 @@ ms.reviewer: shpate
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: 5d9508c5d69b0790efa37ee633f8216bfd2bb30c
-ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
+ms.openlocfilehash: daa302813c7ea3ad35ecfa7dd8d70436bfe5e1a4
+ms.sourcegitcommit: c780e9988341a20f94fdeb8672bd13e0b302da93
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "74164667"
+ms.lasthandoff: 02/20/2020
+ms.locfileid: "77510496"
 ---
 # <a name="monitor-device-encryption-with-intune"></a>Monitorar a criptografia do dispositivo com o Intune
 

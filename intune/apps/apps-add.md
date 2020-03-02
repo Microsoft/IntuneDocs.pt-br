@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 099d68568cd920c9ae3f328b4e9fba95424e46fd
-ms.sourcegitcommit: 139853f8d6ea61786da7056cfb9024a6459abd70
+ms.openlocfilehash: dc262dc67c967ffd2c6525c4370df8e9fa0e4dff
+ms.sourcegitcommit: c780e9988341a20f94fdeb8672bd13e0b302da93
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/26/2020
-ms.locfileid: "76755265"
+ms.lasthandoff: 02/20/2020
+ms.locfileid: "77511830"
 ---
 # <a name="add-apps-to-microsoft-intune"></a>Adicionar aplicativos ao Microsoft Intune 
 
@@ -52,7 +52,7 @@ A tabela a seguir lista os tipos de aplicativo específicos e como você pode ad
 | --- | --- | --- |
 | Aplicativos da Android Store  | Aplicativo da Store  | Selecione **Android** como o **tipo de aplicativo** e digite a URL do Google Play do aplicativo. |
 | Aplicativos Android Enterprise  | Aplicativo da Store  | Selecione **Android** como o **tipo de aplicativo** e digite a URL da Google Play Store Gerenciada do aplicativo. <sup>1</sup> |
-| Aplicativos da iOS Store  | Aplicativo da Store  | Selecione **iOS** como o **tipo de aplicativo**, procure o aplicativo e selecione o aplicativo no Intune. |
+| Aplicativos da loja iOS/iPadOS  | Aplicativo da Store  | Selecione **iOS** como o **tipo de aplicativo**, procure o aplicativo e selecione o aplicativo no Intune. |
 | Aplicativos da Windows Phone 8.1 Store  | Aplicativo da Store  | Selecione **Windows Phone 8.1** como o **tipo de aplicativo** e insira a URL da Microsoft Store do aplicativo. |
 | Aplicativos da Microsoft Store  | Aplicativo da Store  | Selecione **Windows** como o **tipo de aplicativo** e insira a URL da Microsoft Store do aplicativo. |
 | Aplicativos Google Play gerenciados | Aplicativo da Store  | Selecione **Google Play Gerenciado** como o **tipo de aplicativo**, procure o aplicativo e selecione o aplicativo no Intune. |
@@ -61,10 +61,10 @@ A tabela a seguir lista os tipos de aplicativo específicos e como você pode ad
 | Microsoft Edge versão 77 e posteriores para Windows 10 | Aplicativo da Store | Selecione **Windows 10** no **Microsoft Edge, versão 77 e posteriores**, como o **tipo de aplicativo**. |
 | Microsoft Edge, versão 77 e posteriores para macOS | Aplicativo da Store | Selecione **macOS** no **Microsoft Edge, versão 77 e posteriores** como o **tipo de aplicativo**. |
 | Aplicativos LOB para Android | Aplicativos LOB | Selecione aplicativo de **Linha de negócios** como o **tipo de aplicativo**, selecione o **Arquivo do pacote do aplicativo** e, em seguida, insira um arquivo de instalação do Android com a extensão **.apk**.  |
-| Aplicativos LOB para iOS | Aplicativos LOB | Selecione aplicativo de **Linha de negócios** como o **tipo de aplicativo**, selecione o **Arquivo do pacote do aplicativo** e, em seguida, insira um arquivo de instalação do iOS com a extensão **.ipa**.  |
+| Aplicativos de linha de negócios iOS/iPadOS | Aplicativos LOB | Selecione aplicativo de **Linha de negócios** como o **tipo de aplicativo**, selecione o **Arquivo do pacote do aplicativo** e, em seguida, insira um arquivo de instalação do iOS/iPadOS com a extensão **.ipa**.  |
 | Aplicativos LOB para Windows Phone | Aplicativos LOB | Selecione aplicativo de **Linha de negócios** como o **tipo de aplicativo**, selecione o **Arquivo do pacote do aplicativo** e, em seguida, insira um arquivo de instalação do Windows Phone com a extensão **.xap**.  |
 | Aplicativos LOB para Windows | Aplicativos LOB | Selecione aplicativo de **Linha de negócios** como o tipo de aplicativo, selecione o **Arquivo do pacote do aplicativo** e, em seguida, insira um arquivo de instalação do Windows com a extensão **.msi**, **.appx**, **.appxbundle**, **.msix** e **.msixbundle**. |
-| Aplicativo iOS interno  | Aplicativo interno | Selecione **Aplicativo interno** como o **tipo de aplicativo** e selecione o aplicativo interno na lista de aplicativos fornecidos.  |
+| Aplicativo iOS/iPadOS interno  | Aplicativo interno | Selecione **Aplicativo interno** como o **tipo de aplicativo** e selecione o aplicativo interno na lista de aplicativos fornecidos.  |
 | Aplicativo interno Android  | Aplicativo interno | Selecione **Aplicativo interno** como o **tipo de aplicativo** e selecione o aplicativo interno na lista de aplicativos fornecidos.  |
 | Aplicativos Web  | Aplicativo Web  | Selecione **Link da Web** como o **tipo de aplicativo** e insira uma URL válida apontando para o aplicativo Web.  |
 | Aplicativos do sistema Android Enterprise  | Aplicativo da Store  | Selecione **Aplicativo do sistema Android Enterprise** como o **tipo de aplicativo** e insira o nome, o editor e o arquivo do pacote do aplicativo.  |
@@ -77,7 +77,7 @@ A tabela a seguir lista os tipos de aplicativo específicos e como você pode ad
 Você pode adicionar um aplicativo no Microsoft Intune selecionando **Aplicativos** > **Todos os aplicativos** > **Adicionar**. O painel **Selecionar tipo de aplicativo** é exibido e permite selecionar o **Tipo de aplicativo**. 
 
 >[!TIP]
-> Um aplicativo LOB é um aplicativo que pode ser adicionado de um arquivo de instalação do aplicativo. Por exemplo, para instalar um aplicativo LOB do iOS, adicione o aplicativo selecionando **Aplicativo de linha de negócios** como o **Tipo de aplicativo** no painel **Selecionar tipo de aplicativo**. Em seguida, selecione o arquivo do pacote do aplicativo (extensão .ipa). Normalmente, esses tipos de aplicativos são escritos internamente.
+> Um aplicativo LOB é um aplicativo que pode ser adicionado de um arquivo de instalação do aplicativo. Por exemplo, para instalar um aplicativo de linha de negócios do iOS/iPadOS, adicione o aplicativo selecionando **Aplicativo de linha de negócios** como o **Tipo de aplicativo** no painel **Selecionar tipo de aplicativo**. Em seguida, selecione o arquivo do pacote do aplicativo (extensão .ipa). Normalmente, esses tipos de aplicativos são escritos internamente.
 
 ## <a name="assess-app-requirements"></a>Avalie os requisitos do aplicativo
 Como um administrador de TI, você não apenas determina quais aplicativos o seu grupo deve usar, mas também as funcionalidades necessárias para cada grupo e subgrupo. Para cada aplicativo, você determina as plataformas necessárias, os grupos de usuários que precisam do aplicativo, as políticas de configuração a serem aplicadas a esses grupos e as políticas de proteção a serem aplicadas.  
@@ -109,8 +109,8 @@ Use o [Guia de planejamento de implantação, design e implementação do Intune
 ### <a name="determine-the-type-of-app-for-your-solution"></a>Determinar o tipo de aplicativo para sua solução
 
 Você pode escolher entre os seguintes tipos de aplicativo:
-- **Aplicativos da loja**: Aplicativos que foram carregados na Microsoft Store, na Store do iOS ou na Store do Android são aplicativos da Store. O provedor de um aplicativo da Store mantém e fornece atualizações do aplicativo. Selecione o aplicativo na lista da Store e adicione-o usando o Intune como um aplicativo disponível para seus usuários.
-- **Aplicativos escritos internamente (linha de negócios)** : Aplicativos criados internamente são aplicativos LOB (linha de negócios). A funcionalidade desse tipo de aplicativo foi criada para uma das plataformas compatíveis com o Intune, como Windows, iOS, macOS ou Android. Sua organização cria e lhe fornece atualizações como um arquivo separado. Você fornece atualizações do aplicativo aos usuários adicionando e implantando as atualizações usando o Intune.
+- **Aplicativos da loja**: Aplicativos que foram carregados na Microsoft Store, na Store do iOS/iPadOS ou na Store do Android são aplicativos da Store. O provedor de um aplicativo da Store mantém e fornece atualizações do aplicativo. Selecione o aplicativo na lista da Store e adicione-o usando o Intune como um aplicativo disponível para seus usuários.
+- **Aplicativos escritos internamente (linha de negócios)** : Aplicativos criados internamente são aplicativos LOB (linha de negócios). A funcionalidade desse tipo de aplicativo foi criada para uma das plataformas compatíveis com o Intune, como Windows, iOS/iPadOS, macOS ou Android. Sua organização cria e lhe fornece atualizações como um arquivo separado. Você fornece atualizações do aplicativo aos usuários adicionando e implantando as atualizações usando o Intune.
 - **Aplicativos na Web**: aplicativos Web são aplicativos de cliente-servidor. O servidor fornece o aplicativo Web, que inclui a interface do usuário, o conteúdo e a funcionalidade. Além disso, plataformas modernas de hospedagem na Web geralmente oferecem segurança, balanceamento de carga e outros benefícios. Este tipo de aplicativo é mantido separadamente na Web. Você usa o Intune para apontar para esse tipo de aplicativo. Além disso, você especifica quais grupos de usuários podem acessar o aplicativo. Observe que Android não dá suporte a aplicativos Web.
 
 Ao determinar os aplicativos necessários para a sua organização, considere como os aplicativos são integrados a serviços de nuvem, quais dados os aplicativos acessam, se os aplicativos estão disponíveis para os usuários de BYOD e se os aplicativos precisam de acesso à Internet.
@@ -128,7 +128,7 @@ Os aplicativos gerenciados pelo Intune também podem habilitar a proteção do a
 
 ### <a name="understanding-licensed-apps"></a>Noções básicas sobre aplicativos licenciados
 Além de entender os aplicativos Web, os aplicativos da Store e os aplicativos LOB, você também deve saber qual é o destino dos aplicativos do programa de compra por volume e dos aplicativos licenciados, como: 
-- **Programa de compra em volume para empresas da Apple (iOS)** : A App Store da iOS permite que você compre várias licenças de um aplicativo que você deseja executar na empresa. Comprar várias cópias ajuda você a gerenciar com eficiência os aplicativos em sua empresa. Para obter mais informações, consulte [Gerenciar aplicativos iOS adquiridos por volume](vpp-apps-ios.md).
+- **Programa de compra em volume para empresas da Apple (iOS)** : A App Store do iOS/iPadOS permite que você compre várias licenças de um aplicativo que você deseja executar na empresa. Comprar várias cópias ajuda você a gerenciar com eficiência os aplicativos em sua empresa. Para obter mais informações, consulte [Gerenciar aplicativos iOS/iPadOS comprados por volume](vpp-apps-ios.md).
 - **Perfil de trabalho do Android**: A maneira de atribuir aplicativos a dispositivos de perfil de trabalho Android é diferente da maneira de atribuí-los a dispositivos Android padrão. Todos os aplicativos instalados nos perfis de trabalho Android vêm da Google Play Store gerenciada. Use o Intune para procurar os aplicativos que você deseja e aprová-los. O aplicativo aparece no nó **Aplicativos licenciados** do Portal do Azure e você pode gerenciar a atribuição do aplicativo como faria com qualquer outro aplicativo.
 - **Microsoft Store para Empresas (Windows 10)** : Microsoft Store para Empresas é um local para encontrar e comprar aplicativos para organizações, uso individual ou com base em volume. Conectando a Store ao Microsoft Intune, você pode gerenciar os aplicativos comprados por volume no Portal do Azure. Para saber mais, veja [Gerenciar aplicativos da Microsoft Store para Empresas](windows-store-for-business.md).
 
@@ -139,7 +139,7 @@ Além de entender os aplicativos Web, os aplicativos da Store e os aplicativos L
 Considere os pontos a seguir antes de começar a adicionar e atribuir aplicativos:
 
 - Quando você adiciona e atribui um aplicativo de uma Store, os usuários devem ter uma conta nessa Store para poderem instalar o aplicativo.
-- Alguns aplicativos ou itens que você atribui podem depender de aplicativos internos do iOS. Por exemplo, quando você atribui um livro na iOS Store, o aplicativo iBooks deve estar presente no dispositivo. Se você tiver removido o aplicativo interno iBooks, não será possível usar o Intune para reabilitá-lo.
+- Alguns aplicativos ou itens que você atribui podem depender de aplicativos internos do iOS/iPadOS. Por exemplo, quando você atribui um livro na iOS/iPadOS Store, o aplicativo iBooks deve estar presente no dispositivo. Se você tiver removido o aplicativo interno iBooks, não será possível usar o Intune para reabilitá-lo.
 
 > [!IMPORTANT]
 > Se você alterar o nome do aplicativo por meio do portal do Azure do Intune depois de ter implantado e instalado o aplicativo, o aplicativo não poderá mais ser direcionado usando comandos.
@@ -153,7 +153,7 @@ Os requisitos de espaço de armazenamento em nuvem são os seguintes:
 - O tamanho máximo do arquivo para qualquer arquivo que você faz upload é de 8 GB.
 
   > [!NOTE]
-  > Os aplicativos de LOB (linha de negócios) do Windows, incluindo Win32, Windows Universal AppX, pacote do Windows Universal AppX, Windows Universal MSI X e pacote do Windows Universal MSI X, têm um limite de tamanho máximo de 8 GB por aplicativo. Todos os outros aplicativos LOB, incluindo aplicativos LOB do iOS, têm um limite de tamanho máximo de 2 GB por aplicativo.
+  > Os aplicativos de LOB (linha de negócios) do Windows, incluindo Win32, Windows Universal AppX, pacote do Windows Universal AppX, Windows Universal MSI X e pacote do Windows Universal MSI X, têm um limite de tamanho máximo de 8 GB por aplicativo. Todos os outros aplicativos de linha de negócios, incluindo aplicativos de linha de negócios do iOS/iPadOS, têm um limite de tamanho máximo de 2 GB por aplicativo.
 
 ## <a name="create-and-edit-categories-for-apps"></a>Criar e editar categorias para aplicativos
 

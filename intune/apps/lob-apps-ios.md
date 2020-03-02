@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 0b7c0a7dfa4337983c12ada2d0f415c771bd0548
-ms.sourcegitcommit: 139853f8d6ea61786da7056cfb9024a6459abd70
+ms.openlocfilehash: 507c7ecff9715ebf9f24567c735592f3f255ccc9
+ms.sourcegitcommit: 29f3ba071c9348686d3ad6f3b8864d8557e05b97
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/26/2020
-ms.locfileid: "76755180"
+ms.lasthandoff: 02/26/2020
+ms.locfileid: "77609167"
 ---
 # <a name="add-an-ios-line-of-business-app-to-microsoft-intune"></a>Adicionar um aplicativo de linha de negócios do iOS ao Microsoft Intune
 
@@ -31,10 +31,13 @@ ms.locfileid: "76755180"
 
 Use as informações deste artigo para ajudar a adicionar aplicativos de uma linha de negócios (LOB) iOS ao Microsoft Intune. Um aplicativo de linha de negócios é um aplicativo que pode ser adicionado ao Intune de um arquivo de instalação de aplicativo IPA. Esse tipo de aplicativo normalmente é escrito internamente. Primeiro, ingresse no iOS Developer Enterprise Program (programa para desenvolvedores corporativos para iOS). Para saber mais sobre como fazer isso, confira o [site da Apple](https://developer.apple.com/programs/ios/enterprise/).
 
->[!NOTE]
->Os usuários de dispositivos iOS possam remover alguns dos aplicativos iOS internos, por exemplo, Ações e Mapas. Você não pode usar o Intune para reimplantar esses aplicativos. Se os usuários excluírem esses aplicativos, eles deverão acessar a loja de aplicativos e reinstalá-los manualmente.
+> [!NOTE]
+> Os usuários de dispositivos iOS possam remover alguns dos aplicativos iOS internos, por exemplo, Ações e Mapas. Você não pode usar o Intune para reimplantar esses aplicativos. Se os usuários excluírem esses aplicativos, eles deverão acessar a loja de aplicativos e reinstalá-los manualmente.
 >
->Aplicativos LOB para iOS têm um limite de tamanho máximo de 4 GB por aplicativo.
+> Aplicativos LOB para iOS têm um limite de tamanho máximo de 4 GB por aplicativo.
+
+> [!NOTE]
+> Os identificadores de pacote (por exemplo, *com.contoso.app*) devem ser identificadores exclusivos de um aplicativo. Por exemplo, para instalar uma versão beta de um aplicativo de linha de negócios ao lado da versão de produção para fins de teste, a versão beta deve ter um identificador exclusivo diferente (por exemplo, *com.contoso.app-beta*). Caso contrário, a versão beta se sobreporá à de produção e será tratada como uma atualização. Renomear o arquivo .ipa não tem nenhum efeito sobre esse comportamento.
 
 ## <a name="select-the-app-type"></a>Selecione o tipo de aplicativo
 
@@ -77,7 +80,7 @@ Você pode usar as marcas de escopo para determinar quem pode ver as informaçõ
 
 ## <a name="step-3---assignments"></a>Etapa 3 – Atribuições
 
-1. Selecione as atribuições de grupo **Necessário**, **Disponível para dispositivos registrados** ou **Desinstalar** para o aplicativo. Confira mais informações em [Adicionar grupos para organizar usuários e dispositivos](~/fundamentals/groups-add.md) e [Atribuir aplicativos a grupos com o Microsoft Intune](apps-deploy.md).
+1. Selecione as atribuições de grupo **Necessário**, **Disponível para dispositivos registrados** ou **Desinstalar** para o aplicativo. Para saber mais, confira [Adicionar grupos para organizar usuários e dispositivos](~/fundamentals/groups-add.md) e [Atribuir aplicativos a grupos com o Microsoft Intune](apps-deploy.md).
 2. Clique em **Avançar** para exibir a página **Revisar + criar**. 
 
 ## <a name="step-4---review--create"></a>Etapa 4 – Examinar + criar

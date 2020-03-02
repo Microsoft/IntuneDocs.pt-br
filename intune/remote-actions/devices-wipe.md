@@ -16,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 62ba66469dfff004c3cd6a60284ec7466e8b9f00
-ms.sourcegitcommit: 51591b862d97904291af7aa53a6eb341b11a761e
+ms.openlocfilehash: 41a46bd400c5901f0352709f6057bddac262ff9e
+ms.sourcegitcommit: 29f3ba071c9348686d3ad6f3b8864d8557e05b97
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/17/2020
-ms.locfileid: "77415509"
+ms.lasthandoff: 02/26/2020
+ms.locfileid: "77609386"
 ---
 # <a name="remove-devices-by-using-wipe-retire-or-manually-unenrolling-the-device"></a>Remova dispositivos por meio de apagamento, desativação ou cancelando o registro do dispositivo manualmente
 
@@ -47,7 +47,7 @@ A ação **Apagar** restaura um dispositivo para as configurações padrão de f
 
 A opção **Reter estado de registro e conta do usuário** está disponível apenas para o Windows 10 versão 1709 ou posterior.
 
-A opção **Executar apagamento protegido** garante que a ação de apagamento não possa ser contornada com o desligamento do dispositivo. Um apagamento protegido continuará tentando redefinir o dispositivo até que seja bem-sucedido. Em algumas configurações, essa ação poderá deixar o dispositivo sem a capacidade de reinicialização.
+A opção **Executar apagamento protegido** garante que a ação de apagamento não possa ser contornada com o desligamento do dispositivo. Um apagamento protegido continuará tentando redefinir o dispositivo até que seja bem-sucedido. Em algumas configurações, essa ação poderá deixar o dispositivo [sem a capacidade de reinicialização](troubleshoot-device-actions.md#wipe-action).
 
 As políticas de MDM serão reaplicadas na próxima vez que o dispositivo se conectar ao Intune.
 
@@ -197,7 +197,10 @@ Se você quiser remover completamente um dispositivo DEP da Apple do gerenciamen
 
     ![Captura de tela para reatribuição da Apple](./media/devices-wipe/apple-reassign.png)
 
-## <a name="fresh-start"></a>Novo Início
+## <a name="device-states"></a>Estados do dispositivo
+Para obter uma descrição dos estados do dispositivo, confira a coleção [managementStates](https://docs.microsoft.com/intune/developer/intune-data-warehouse-collections.md#managementstates).
+
+## <a name="fresh-start"></a>Novo início
 
 Aplicável a dispositivos Windows 10. Leia mais sobre o [Novo Início](device-fresh-start.md).
 

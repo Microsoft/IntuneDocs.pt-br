@@ -16,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 89b4516017d7ac8bf1e27134db6a67a0a86b17cb
-ms.sourcegitcommit: e166b9746fcf0e710e93ad012d2f52e2d3ed2644
+ms.openlocfilehash: 128f615a9551c31e6b0e0de4f1d269083874bf48
+ms.sourcegitcommit: c780e9988341a20f94fdeb8672bd13e0b302da93
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/19/2019
-ms.locfileid: "75206067"
+ms.lasthandoff: 02/20/2020
+ms.locfileid: "77515111"
 ---
 # <a name="monitor-intune-device-compliance-policies"></a>Monitorar as políticas de conformidade do Dispositivo do Intune
 
@@ -77,7 +77,7 @@ Descrições dos diferentes estados da política de conformidade dos dispositivo
   - Dispositivos que não estão atribuídos a uma política de conformidade e não têm um gatilho para verificar a conformidade
   - Dispositivos que ainda não fizeram check-in desde que a política de conformidade foi atualizada pela última vez
   - Dispositivos não associados a um usuário específico, como:
-    - Dispositivos iOS comprados por meio do DEP (Programa de registro de dispositivos) da Apple que não têm afinidade de usuário
+    - Dispositivos iOS/iPadOS comprados por meio do DEP (Programa de registro de dispositivos) da Apple que não têm afinidade de usuário
     - Dispositivos dedicados com Android Enterprise ou quiosque do Android
   - Dispositivos registrados com uma conta de gerenciador de registro do dispositivo (DEM)
 

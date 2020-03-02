@@ -15,12 +15,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 46a23ca18e385fa085afb59a654290702465a0ce
-ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
+ms.openlocfilehash: 57a1e1c9c8a03fae67f2a4a25b6b4f16a20a8ec7
+ms.sourcegitcommit: c780e9988341a20f94fdeb8672bd13e0b302da93
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "73414044"
+ms.lasthandoff: 02/20/2020
+ms.locfileid: "77514448"
 ---
 # <a name="overview-of-the-microsoft-intune-mobile-device-management-mdm-lifecycle"></a>Visão geral sobre o ciclo de vida de MDM (gerenciamento de dispositivo móvel) do Microsoft Intune
 
@@ -30,7 +30,7 @@ Todos os dispositivos que você gerencia têm um *ciclo de vida*. O Intune pode 
 
 ## <a name="enroll"></a>Registrar
 
-As estratégias atuais de MDM (gerenciamento de dispositivo móvel) lidam com uma variedades de telefones, tablets e computadores (iOS, Android, Windows e Mac OS X). Se você precisa conseguir gerenciar o dispositivo, o que geralmente é o caso para dispositivos corporativos, a primeira etapa é [configurar o registro do dispositivo](../enrollment/device-enrollment.md). Você também pode gerenciar computadores Windows registrando-os no Intune (MDM) ou [instalando o software cliente do Intune](../manage-windows-pcs-with-microsoft-intune.md).
+As estratégias atuais de MDM (gerenciamento de dispositivo móvel) lidam com uma variedades de telefones, tablets e computadores (iOS/iPadOS, Android, Windows e Mac OS X). Se você precisa conseguir gerenciar o dispositivo, o que geralmente é o caso para dispositivos corporativos, a primeira etapa é [configurar o registro do dispositivo](../enrollment/device-enrollment.md). Você também pode gerenciar computadores Windows registrando-os no Intune (MDM) ou [instalando o software cliente do Intune](../manage-windows-pcs-with-microsoft-intune.md).
 
 ## <a name="configure"></a>Configurar
 

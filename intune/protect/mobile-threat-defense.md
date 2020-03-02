@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: b67e3b14fd94376fb6dacad88fa58ddc460a6bc5
-ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
+ms.openlocfilehash: f056f665ebee0d1e2315129a4fe739b2c490ca98
+ms.sourcegitcommit: c780e9988341a20f94fdeb8672bd13e0b302da93
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "73057577"
+ms.lasthandoff: 02/20/2020
+ms.locfileid: "77514839"
 ---
 # <a name="mobile-threat-defense-integration-with-intune"></a>Integração da Defesa contra Ameaças Móveis com o Intune
 
@@ -50,7 +50,7 @@ Se estiver habilitado, o Intune coletará informações de inventário de aplica
 Esse serviço é uma aceitação; nenhuma informação de inventário de aplicativo é compartilhada por padrão. Um administrador do Intune precisa habilitar a **Sincronização de Aplicativos para dispositivos iOS** nas configurações do conector de Defesa contra Ameaças Móveis antes de as informações de inventário do aplicativo serem compartilhadas.
 
 **Inventário de aplicativos**  
-Se você habilitar a Sincronização do Aplicativo para dispositivos iOS, os inventários de dispositivos iOS pessoais e corporativos serão enviados para o provedor de serviços MTD. Os dados de inventário de aplicativos incluem:
+Se você habilitar a Sincronização do Aplicativo para dispositivos iOS/iPadOS, os inventários de dispositivos iOS/iPadOS pessoais e corporativos serão enviados para o provedor de serviços MTD. Os dados de inventário de aplicativos incluem:
 
 - ID do aplicativo
 - Versão de Aplicativo
@@ -63,7 +63,7 @@ Se você habilitar a Sincronização do Aplicativo para dispositivos iOS, os inv
 
 ## <a name="sample-scenarios-for-enrolled-devices-using-device-compliance-policies"></a>Cenários de exemplo para dispositivos registrados usando políticas de conformidade do dispositivo
 
-Quando um dispositivo é considerado infectado pela solução de Defesa Contra Ameaças Móveis:
+Quando um dispositivo é considerado infectado pela solução de Defesa contra Ameaças Móveis:
 
 ![Imagem mostrando um dispositivo infectado da Defesa contra Ameaças Móveis](./media/mobile-threat-defense/MTD-image-1.png)
 
@@ -73,7 +73,7 @@ O acesso é concedido quando o dispositivo é corrigido:
 
 ## <a name="sample-scenarios-for-unenrolled-devices-using-intune-app-protection-policies"></a>Cenários de exemplo para dispositivos não registrados usando políticas de proteção de aplicativo do Intune
 
-Quando um dispositivo é considerado infectado pela solução de Defesa Contra Ameaças Móveis:<br>
+Quando um dispositivo é considerado infectado pela solução de Defesa contra Ameaças Móveis:<br>
 ![Imagem mostrando um dispositivo infectado da Defesa contra Ameaças Móveis](./media/mobile-threat-defense/MTD-image-3.png)
 
 O acesso é concedido quando o dispositivo é corrigido:<br>
@@ -82,9 +82,9 @@ O acesso é concedido quando o dispositivo é corrigido:<br>
 > [!NOTE]
 > Você pode usar vários fornecedores de Defesa Móvel com um único locatário do Intune. No entanto, quando dois ou mais fornecedores são configurados para uso na mesma plataforma, todos os dispositivos que executam essa plataforma devem instalar cada aplicativo de MTD e verificar se há ameaças. Falha ao enviar uma verificação de qualquer aplicativo configurado resulta no dispositivo marcado como fora de conformidade. 
 
-## <a name="mobile-threat-defense-partners"></a>Parceiros de Defesa Contra Ameaças Móveis
+## <a name="mobile-threat-defense-partners"></a>Parceiros de Defesa contra Ameaças Móveis
 
-Saiba como proteger o acesso a recursos da empresa com base em riscos de dispositivo, rede e aplicativo com:
+Saiba como proteger o acesso aso recursos da empresa com base nos riscos ao dispositivo, rede e aplicativo com:
 
 - [Lookout for Work](lookout-mobile-threat-defense-connector.md)
 - [Symantec Endpoint Protection Mobile](skycure-mobile-threat-defense-connector.md)

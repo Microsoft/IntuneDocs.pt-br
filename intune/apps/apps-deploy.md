@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 15d6a67cb41455a1e3c0830e9ed242bfa52b0269
-ms.sourcegitcommit: c46b0c2d4507be6a2786a4ea06009b2d5aafef85
+ms.openlocfilehash: cee415174d68f3e6c9e72f0f0e06aa0d5d80ad91
+ms.sourcegitcommit: c780e9988341a20f94fdeb8672bd13e0b302da93
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/01/2020
-ms.locfileid: "76912651"
+ms.lasthandoff: 02/20/2020
+ms.locfileid: "77511847"
 ---
 # <a name="assign-apps-to-groups-with-microsoft-intune"></a>Atribuir aplicativos a grupos com o Microsoft Intune
 
@@ -49,7 +49,7 @@ A tabela a seguir lista as várias opções para atribuir aplicativos para usuá
 | Os usuários finais instalam aplicativos disponíveis do Portal da Empresa baseado na Web | Sim | Sim |
 
 > [!NOTE]
-> No momento, é possível atribuir aplicativos iOS e Android (tanto aplicativos de linha de negócios quanto comprados na loja) a dispositivos que não estão inscritos no Intune.
+> No momento, é possível atribuir aplicativos iOS/iPadOS e Android (tanto aplicativos de linha de negócios quanto comprados na loja) a dispositivos que não estão inscritos no Intune.
 >
 > Para receber atualizações de aplicativo em dispositivos que não estão inscritos no Intune, os usuários de dispositivos devem navegar até o Portal da Empresa da organização e instalar manualmente as atualizações de aplicativo.
 
@@ -67,9 +67,9 @@ A tabela a seguir lista as várias opções para atribuir aplicativos para usuá
    - **Desinstalar**: O aplicativo é desinstalado dos dispositivos nos grupos selecionados se o Intune tiver instalado anteriormente o aplicativo no dispositivo por meio de uma atribuição "Disponível para dispositivos registrados" ou "Obrigatória" usando a mesma implantação. Links da Web não podem ser removidos após a implantação.
 
      > [!NOTE]
-     > **Somente para aplicativos iOS**:
-     > - Para configurar o que acorre com os aplicativos gerenciados quando os dispositivos deixam de ser gerenciados, você pode selecionar a configuração pretendida em **Desinstalar ao remover o dispositivo**. Para saber mais, confira o tópico [Configuração de desinstalação para aplicativos iOS gerenciados](apps-deploy.md#app-uninstall-setting-for-ios-managed-apps).
-     > - Se você tiver criado um perfil VPN do iOS contendo configurações de VPN por aplicativo, poderá selecioná-lo em **VPN**. Quando o aplicativo é executado, a conexão VPN é aberta. Para obter mais informações, consulte [Configurações de VPN para dispositivos iOS](../vpn-settings-ios.md).
+     > **Somente para aplicativos iOS/iPadOS**:
+     > - Para configurar o que acorre com os aplicativos gerenciados quando os dispositivos deixam de ser gerenciados, você pode selecionar a configuração pretendida em **Desinstalar ao remover o dispositivo**. Para saber mais, confira o tópico [Configuração de desinstalação para aplicativos iOS/iPadOS gerenciados](apps-deploy.md#app-uninstall-setting-for-ios-managed-apps).
+     > - Se você tiver criado um perfil VPN do iOS/iPadOS contendo configurações de VPN por aplicativo, poderá selecioná-lo em **VPN**. Quando o aplicativo é executado, a conexão VPN é aberta. Para obter mais informações, confira [Configurações de VPN para dispositivos iOS/iPadOS](../vpn-settings-ios.md).
      >
      > **Somente para aplicativos Android**: Se você implantar um aplicativo Android como **Disponível com ou sem registro**, o status de relatório ficará disponível apenas em dispositivos registrados.
      >
@@ -114,7 +114,7 @@ As informações na tabela a seguir podem ajudar você a entender a intenção r
 
 > [!NOTE]
 > Apenas para aplicativos gerenciados da loja do iOS, quando você os adiciona ao Microsoft Intune e os atribui como **Obrigatório**, eles são criados automaticamente com as intenções **Obrigatório** e **Disponível**.<br><br>
-> Aplicativos da iOS Store (não aplicativos VPP do iOS) que são almejados com intenção obrigatória serão impostos no dispositivo no momento do check-in do dispositivo e também serão exibidos no aplicativo do Portal da Empresa.<br><br>
+> Aplicativos da iOS Store (não aplicativos VPP do iOS/iPadOS) que forem direcionados com intenção obrigatória serão impostos no dispositivo no momento do check-in do dispositivo e também serão exibidos no aplicativo do Portal da Empresa.<br><br>
 > Quando ocorrem conflitos na configuração **Desinstalar ao remover o dispositivo**, o aplicativo não é removido do dispositivo quando o dispositivo deixa de ser gerenciado.
 
 ## <a name="managed-google-play-app-deployment-to-unmanaged-devices"></a>Implantação de aplicativo do Google Play Gerenciado em dispositivos não gerenciados
@@ -132,7 +132,7 @@ Etapas para atribuição de um aplicativo do Google Play Gerenciado em dispositi
 Quando um apagamento seletivo do APP é emitido no console do Intune, a conta de trabalho é automaticamente removida do aplicativo do Play Store, e o usuário final não verá mais os aplicativos de trabalho no catálogo de aplicativos da Play Store. Quando a conta de trabalho for removida de um dispositivo, os aplicativos instalados da Play Store permanecerão instalados no dispositivo e não serão desinstalados. 
 
 ## <a name="app-uninstall-setting-for-ios-managed-apps"></a>Configuração de desinstalação para aplicativos iOS gerenciados
-Para dispositivos iOS, você pode escolher o que acontece com os aplicativos gerenciados ao cancelar o registro do dispositivo no Microsoft Intune ou ao remover o perfil de gerenciamento usando a configuração **Desinstalar ao remover o dispositivo**. Essa configuração se aplicará aos aplicativos somente depois que o dispositivo for registrado e os aplicativos forem instalados como gerenciados. Não é possível definir a configuração para links ou aplicativos Web. Somente os dados protegidos pelo MAM (Gerenciamento de aplicativo móvel) são removidos após a desativação por uma Limpeza Seletiva de Aplicativo.
+Para dispositivos iOS/iPadOS, você pode escolher o que acontece com os aplicativos gerenciados ao cancelar o registro do dispositivo no Microsoft Intune ou ao remover o perfil de gerenciamento usando a configuração **Desinstalar ao remover o dispositivo**. Essa configuração se aplicará aos aplicativos somente depois que o dispositivo for registrado e os aplicativos forem instalados como gerenciados. Não é possível definir a configuração para links ou aplicativos Web. Somente os dados protegidos pelo MAM (Gerenciamento de aplicativo móvel) são removidos após a desativação por uma Limpeza Seletiva de Aplicativo.
 
 Os valores padrão dessa configuração são preenchidos previamente para novas atribuições da seguinte maneira:
 

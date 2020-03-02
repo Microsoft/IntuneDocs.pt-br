@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 5092fa37f0bf6bd1320fa06fa58ac5e36f55aa3c
-ms.sourcegitcommit: a7b479c84b3af5b85528db676594bdb3a1ff6ec6
+ms.openlocfilehash: 63fa9f461fc9884d8c21e40cb4b5e3831f3b4b03
+ms.sourcegitcommit: 47c9af81c385c7e893fe5a85eb79cf08e69e6831
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/22/2019
-ms.locfileid: "74410196"
+ms.lasthandoff: 02/25/2020
+ms.locfileid: "77576533"
 ---
 # <a name="use-certificates-for-authentication-in-microsoft-intune"></a>Usar certificados para autenticação no Microsoft Intune
 
@@ -30,7 +30,7 @@ Use certificados com o Intune para autenticar os usuários em aplicativos e recu
 
 ## <a name="intune-supported-certificates-and-usage"></a>Certificados e uso compatíveis com o Intune
 
-| Tipo              | Autenticação | Autenticação S/MIME | Criptografia S/MIME  |
+| Digite              | Autenticação | Autenticação S/MIME | Criptografia S/MIME  |
 |--|--|--|--|
 | Certificado PKCS (Public Key Cryptography Standards) importado |  | ![Com suporte](./media/certificates-configure/green-check.png) | ![Com suporte](./media/certificates-configure/green-check.png)|
 | PKCS#12 (ou PFX)    | ![Com suporte](./media/certificates-configure/green-check.png) | ![Com suporte](./media/certificates-configure/green-check.png) |  |
@@ -38,7 +38,7 @@ Use certificados com o Intune para autenticar os usuários em aplicativos e recu
 
 Para implantar esses certificados, você criará e atribuirá perfis de certificado a dispositivos.
 
-Cada perfil de certificado individual criado dá suporte a uma única plataforma. Por exemplo, se você usar certificados PKCS, criará o perfil de certificado PKCS para o Android e um perfil de certificado PKCS separado para o iOS. Se você também usar certificados SCEP para essas duas plataformas, criará um perfil de Certificado SCEP para o Android e outro para o iOS.
+Cada perfil de certificado individual criado dá suporte a uma única plataforma. Por exemplo, se você usar certificados PKCS, criará o perfil de certificado PKCS para o Android e um perfil de certificado PKCS separado para o iOS/iPadOS. Se você também usar certificados SCEP para essas duas plataformas, criará um perfil de Certificado SCEP para o Android e outro para o iOS/iPadOS.
 
 ### <a name="general-considerations-when-you-use-a-microsoft-certification-authority"></a>Considerações gerais ao usar uma Autoridade de Certificação Microsoft
 
@@ -83,7 +83,7 @@ Quando usar uma autoridade de certificação (CA) de terceiros (não Microsoft):
 | Android Enterprise <br> – Totalmente gerenciado (proprietário do dispositivo)   | ![Com suporte](./media/certificates-configure/green-check.png) |   | ![Com suporte](./media/certificates-configure/green-check.png) |   |
 | Android Enterprise <br> – Dedicado (proprietário do dispositivo)   | ![Com suporte](./media/certificates-configure/green-check.png)  |   | ![Com suporte](./media/certificates-configure/green-check.png)  |   |
 | Android Enterprise <br> – Perfil de Trabalho    | ![Com suporte](./media/certificates-configure/green-check.png) | ![Com suporte](./media/certificates-configure/green-check.png) | ![Com suporte](./media/certificates-configure/green-check.png) | ![Com suporte](./media/certificates-configure/green-check.png) |
-| iOS                   | ![Com suporte](./media/certificates-configure/green-check.png) | ![Com suporte](./media/certificates-configure/green-check.png) | ![Com suporte](./media/certificates-configure/green-check.png) | ![Com suporte](./media/certificates-configure/green-check.png) |
+| iOS/iPadOS                   | ![Com suporte](./media/certificates-configure/green-check.png) | ![Com suporte](./media/certificates-configure/green-check.png) | ![Com suporte](./media/certificates-configure/green-check.png) | ![Com suporte](./media/certificates-configure/green-check.png) |
 | macOS                 | ![Com suporte](./media/certificates-configure/green-check.png) |  ![Com suporte](./media/certificates-configure/green-check.png) |![Com suporte](./media/certificates-configure/green-check.png)|![Com suporte](./media/certificates-configure/green-check.png)|
 | Windows Phone 8.1     |![Com suporte](./media/certificates-configure/green-check.png)  |  | ![Com suporte](./media/certificates-configure/green-check.png)| ![Com suporte](./media/certificates-configure/green-check.png) |
 | Windows 8.1 e posterior |![Com suporte](./media/certificates-configure/green-check.png)  |  |![Com suporte](./media/certificates-configure/green-check.png) |   |

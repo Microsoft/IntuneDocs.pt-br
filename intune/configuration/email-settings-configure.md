@@ -1,12 +1,12 @@
 ---
 title: Definir as configurações de email no Microsoft Intune – Azure | Microsoft Docs
 titleSuffix: ''
-description: Crie um perfil de email no Microsoft Intune e implante esse perfil para dispositivos Windows, iOS e Android Enterprise. Use um perfil de email para definir configurações de email comuns, incluindo um método de autenticação e um servidor de email para conexão ao email corporativo em dispositivos gerenciados.
+description: Crie um perfil de email no Microsoft Intune e implante esse perfil para dispositivos Windows, iOS, iPadOS e Android Enterprise. Use um perfil de email para definir configurações de email comuns, incluindo um método de autenticação e um servidor de email para conexão ao email corporativo em dispositivos gerenciados.
 keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 11/07/2019
+ms.date: 02/18/2020
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.subservice: configuration
@@ -16,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 110db564dce5ad68d3c2a26b85e60ecbe99e7335
-ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
+ms.openlocfilehash: 908a20098917540e6f823d94c6643d15f13ecf68
+ms.sourcegitcommit: c780e9988341a20f94fdeb8672bd13e0b302da93
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "74059423"
+ms.lasthandoff: 02/20/2020
+ms.locfileid: "77511078"
 ---
 # <a name="add-email-settings-to-devices-using-intune"></a>Adicionar configurações de email a dispositivos usando o Intune
 
@@ -29,10 +29,11 @@ O Microsoft Intune inclui diferentes configurações de email que você pode imp
 
 Você pode usar perfis de email para definir as configurações de email internas para os seguintes dispositivos:
 
-- Android Samsung Knox Standard 4.0 e posterior
+- Android Samsung Knox Standard 4.0 e mais recente
 - Android Enterprise
-- iOS 8.0 e posterior
-- Windows Phone 8.1 e posterior
+- iOS 8.0 e mais recente
+- iPadOS 13.0 e versões mais recentes
+- Windows Phone 8.1 e mais recente
 - Windows 10 (desktop) e Windows 10 Mobile
 
 Este artigo mostra como criar um perfil de email no Microsoft Intune. Também inclui links para as diferentes plataformas para configurações mais específicas.
@@ -89,7 +90,7 @@ Você pode ajudar a proteger perfis de email usando as seguintes opções:
 
 Se o usuário já tiver configurado uma conta de email, o perfil de email será atribuído de maneira diferente, dependendo da plataforma.
 
-- **iOS**: Um perfil de email existente e duplicado é detectado com base no nome do host e no endereço de email. O perfil de email duplicado bloqueia a atribuição de um perfil do Intune. Neste caso, o aplicativo Portal da Empresa notificará o usuário de que ele não está em conformidade e solicitará a remoção manual do perfil configurado. Para ajudar a evitar esse cenário, diga para os usuários finais se inscreverem *antes* da instalação de um perfil de email, permitindo que o Intune configure o perfil.
+- **iOS/iPadOS**: Um perfil de email existente e duplicado é detectado com base no nome do host e no endereço de email. O perfil de email duplicado bloqueia a atribuição de um perfil do Intune. Neste caso, o aplicativo Portal da Empresa notificará o usuário de que ele não está em conformidade e solicitará a remoção manual do perfil configurado. Para ajudar a evitar esse cenário, diga para os usuários finais se inscreverem *antes* da instalação de um perfil de email, permitindo que o Intune configure o perfil.
 
 - **Windows:** Um perfil de email existente e duplicado é detectado com base no nome do host e no endereço de email. O Intune substitui o perfil de email existente criado pelo usuário final.
 

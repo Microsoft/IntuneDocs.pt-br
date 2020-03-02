@@ -1,6 +1,6 @@
 ---
-title: Como os usuários iOS podem obter aplicativos
-description: Métodos para disponibilizar aplicativos do iOS para usuários finais
+title: Como os usuários do iOS/iPadOS obtêm os próprios aplicativos
+description: Métodos para disponibilizar aplicativos do iOS/iPadOS para usuários finais
 keywords: ''
 author: lenewsad
 ms.author: lanewsad
@@ -17,14 +17,14 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 06cc977ce8b0b892e1020436f89ada4a40bac3f2
-ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
+ms.openlocfilehash: 344c2e3f3ed53852aa6b749c9ebf6d451dd313ff
+ms.sourcegitcommit: c780e9988341a20f94fdeb8672bd13e0b302da93
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "73413988"
+ms.lasthandoff: 02/20/2020
+ms.locfileid: "77514380"
 ---
-# <a name="how-your-ios-users-get-their-apps"></a>Como os usuários iOS podem obter aplicativos
+# <a name="how-your-iosipados-users-get-their-apps"></a>Como os usuários do iOS/iPadOS obtêm os próprios aplicativos
 
 Use estas informações para entender como e onde os usuários finais obtêm os aplicativos que você distribui por meio do Microsoft Intune.
 
@@ -34,9 +34,9 @@ Use estas informações para entender como e onde os usuários finais obtêm os 
 
 **Aplicativos gerenciados** – aplicativos que podem ser gerenciados por meio de políticas e que foram "encapsulados" pelo Intune ou foram criados com o SDK (Software Development Kit) de Aplicativo do Intune. Esses aplicativos podem ser gerenciados pelo Intune e políticas de proteção de aplicativo podem ser aplicadas a eles.
 
-**Aplicativos não gerenciados** – aplicativos que os usuários podem baixar da Loja de aplicativos do iOS que não estão integrados com o SDK de aplicativos do Intune. O Intune não tem qualquer controle sobre a distribuição, gerenciamento ou apagamento seletivo desses aplicativos.  
+**Aplicativos não gerenciados** – aplicativos que os usuários podem baixar da Loja de aplicativos do iOS/iPadOS que não estão integrados com o Intune App SDK. O Intune não tem qualquer controle sobre a distribuição, gerenciamento ou apagamento seletivo desses aplicativos.  
 
-As restrições da Apple proíbem que aplicativos gerenciados e de linha de negócios da loja de aplicativos sejam listados no aplicativo do Portal da Empresa. Para solucionar esse problema, os blocos no aplicativo do Portal da Empresa para iOS encaminham os usuários a diferentes modos de exibição em um único local (o site do Portal da Empresa) para todos os seus aplicativos.
+As restrições da Apple proíbem que aplicativos gerenciados e de linha de negócios da loja de aplicativos sejam listados no aplicativo do Portal da Empresa. Para solucionar esse problema, os blocos no aplicativo do Portal da Empresa para iOS/iPadOS encaminham os usuários a diferentes modos de exibição em um único local (o site do Portal da Empresa) para todos os seus aplicativos.
 
 Os usuários registrados obtêm seus aplicativos tocando nos blocos a seguir na tela Aplicativos do aplicativo de Portal da Empresa:
 

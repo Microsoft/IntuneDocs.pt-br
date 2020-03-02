@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 777267f10edac5bbdbe23ceb3068d4366a8df7b7
-ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
+ms.openlocfilehash: 0d5a51d82551795ed8ad5c740d5fb852ff292e1b
+ms.sourcegitcommit: c780e9988341a20f94fdeb8672bd13e0b302da93
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "72509956"
+ms.lasthandoff: 02/20/2020
+ms.locfileid: "77514907"
 ---
 # <a name="develop-a-rollout-plan"></a>Desenvolver um plano de distribuição
 
@@ -58,7 +58,7 @@ Após um piloto bem-sucedido, você está pronto para iniciar uma distribuição
 
 - **Geografia** <br/>Nessa abordagem, você implanta em todos os usuários em uma geografia específica, seja o mesmo continente, país/região ou o edifício da mesma empresa. Esse tipo de implantação em fases permite focalizar a localização específica de usuários. Isso poderá permitir que você forneça mais de uma abordagem [diferenciada](#user-assisted-enrollment) devido ao número de localizações de implantação do Intune ser simultaneamente reduzido. Como há a probabilidade de diferentes departamentos ou casos de uso estarem no mesmo local, outros casos de uso podem ser implantados simultaneamente.
 
-- **Plataforma** <br/>Esse tipo de implantação consiste na implantação de plataformas semelhantes ao mesmo tempo. Um exemplo pode ser todos os dispositivos iOS no primeiro mês, seguido pelo Android e, depois, pelo Windows. Esse tipo de implantação em fases ajuda a simplificar o suporte da assistência técnica, porque a assistência técnica precisaria apenas dar suporte a uma única plataforma por vez.
+- **Plataforma** <br/>Esse tipo de implantação consiste na implantação de plataformas semelhantes ao mesmo tempo. Um exemplo pode ser todos os dispositivos iOS/iPadOS no primeiro mês, seguido pelo Android e, depois, pelo Windows. Esse tipo de implantação em fases ajuda a simplificar o suporte da assistência técnica, porque a assistência técnica precisaria apenas dar suporte a uma única plataforma por vez.
 
 Este é um exemplo de um plano de distribuição do Intune que inclui grupos de destino e linhas do tempo:
 

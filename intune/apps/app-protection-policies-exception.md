@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 09c8a8819c288663936174e9317267c39eac63bc
-ms.sourcegitcommit: ecaff388038fb800f2e646f8efcf8f3b1e2fd1b1
+ms.openlocfilehash: 77a4f0ea0ee076907d2a6cd14000c5cf319231e6
+ms.sourcegitcommit: c780e9988341a20f94fdeb8672bd13e0b302da93
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/18/2020
-ms.locfileid: "77437844"
+ms.lasthandoff: 02/20/2020
+ms.locfileid: "77513768"
 ---
 # <a name="how-to-create-exceptions-to-the-intune-app-protection-policy-app-data-transfer-policy"></a>Como criar exceções para a política de transferência de dados da APP (Política de Proteção de Aplicativo) do Intune
 
@@ -32,13 +32,13 @@ Como administrador, você pode criar exceções para a política de transferênc
 >[!WARNING] 
 > Você é responsável por fazer alterações na política de exceção de transferência de dados. As adições a essa política permitem que aplicativos não gerenciados (aplicativos que não são gerenciados pelo Intune) acessem dados protegidos por aplicativos gerenciados. Esse acesso aos dados protegidos pode resultar em vazamentos de segurança de dados. Adicione exceções de transferência de dados somente a aplicativos que sua organização deve usar, mas que não sejam compatíveis com as APPs (políticas de proteção do aplicativo) do Intune. Além disso, adicione exceções somente para aplicativos que não representam riscos de vazamento de dados.
 
-Em uma Política de Proteção de Aplicativo do Intune, a definição de **Permitir que o aplicativo transfira dados para outros aplicativos** como **Aplicativos gerenciados por política** significa que o aplicativo pode transferir dados somente para aplicativos gerenciados pelo Intune. Caso precise permitir a transferência de dados para aplicativos específicos que não dão suporte ao Aplicativo do Intune, crie exceções a essa política usando **Selecionar aplicativos para isenção**. As isenções permitem que os aplicativos gerenciados pelo Intune invoquem aplicativos não gerenciados com base no protocolo de URL (iOS) ou o nome do pacote (Android). Por padrão, o Intune adiciona aplicativos vitais nativos à lista de exceções. 
+Em uma Política de Proteção de Aplicativo do Intune, a definição de **Permitir que o aplicativo transfira dados para outros aplicativos** como **Aplicativos gerenciados por política** significa que o aplicativo pode transferir dados somente para aplicativos gerenciados pelo Intune. Caso precise permitir a transferência de dados para aplicativos específicos que não dão suporte ao Aplicativo do Intune, crie exceções a essa política usando **Selecionar aplicativos para isenção**. As isenções permitem que os aplicativos gerenciados pelo Intune invoquem aplicativos não gerenciados com base no protocolo de URL (iOS/iPadOS) ou o nome do pacote (Android). Por padrão, o Intune adiciona aplicativos vitais nativos à lista de exceções. 
 
 > [!NOTE]
 > Modificar ou adicionar às exceções da política de transferência de dados não afeta outras Políticas de Proteção do Aplicativo, como restrições a cortar, copiar e colar. 
 
 ## <a name="ios-data-transfer-exceptions"></a>Exceções de transferência de dados do iOS
-Para uma política destinada ao iOS/iPadOS, você pode configurar as exceções de transferência de dados por protocolo de URL. Para adicionar uma exceção, consulte a documentação fornecida pelo desenvolvedor do aplicativo para encontrar informações sobre os protocolos de URL compatíveis. Obtenha mais informações sobre exceções de transferência de dados do iOS/iPadOS em [Configurações da política de proteção de aplicativo do iOS – Isenções de transferência de dados](app-protection-policy-settings-ios.md#data-transfer-exemptions).
+Para uma política destinada ao iOS/iPadOS, você pode configurar as exceções de transferência de dados por protocolo de URL. Para adicionar uma exceção, consulte a documentação fornecida pelo desenvolvedor do aplicativo para encontrar informações sobre os protocolos de URL compatíveis. Obtenha mais informações sobre exceções de transferência de dados do iOS/iPadOS em [Configurações da política de proteção de aplicativo do iOS/iPadOS – Isenções de transferência de dados](app-protection-policy-settings-ios.md#data-transfer-exemptions).
 
 > [!NOTE]
 > A Microsoft não tem um método para localizar manualmente o protocolo de URL para a criação de exceções de aplicativo para aplicativos de terceiros. 
@@ -71,5 +71,5 @@ Ao adicionar o pacote **Webex** como uma exceção à política de transferênci
 ## <a name="next-steps"></a>Próximas etapas
 
 - [Criar e implantar as políticas de proteção do aplicativo](app-protection-policies.md)
-- [Configurações de política de proteção de aplicativo iOS – Isenções de transferência de dados](app-protection-policy-settings-ios.md#data-transfer-exemptions)
+- [Configurações de política de proteção de aplicativo iOS/iPadOS – Isenções de transferência de dados](app-protection-policy-settings-ios.md#data-transfer-exemptions)
 - [Configurações de política de proteção de aplicativo Android – Isenções de transferência de dados](app-protection-policy-settings-android.md#data-transfer-exemptions)

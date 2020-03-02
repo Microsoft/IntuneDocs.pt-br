@@ -5,7 +5,7 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 11/04/2019
+ms.date: 02/18/2020
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.subservice: configuration
@@ -15,18 +15,18 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 8c86252030a4baf957077cd889386bb8016554f1
-ms.sourcegitcommit: e166b9746fcf0e710e93ad012d2f52e2d3ed2644
+ms.openlocfilehash: 53985a9af523ecf60efda5c5c651161c132e326c
+ms.sourcegitcommit: c780e9988341a20f94fdeb8672bd13e0b302da93
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/19/2019
-ms.locfileid: "75206560"
+ms.lasthandoff: 02/20/2020
+ms.locfileid: "77511214"
 ---
 # <a name="configure-device-restriction-settings-in-microsoft-intune"></a>Definir configurações de restrição de dispositivo no Microsoft Intune
 
 
 
-O Microsoft Intune inclui políticas de restrição de dispositivo que ajudam os administradores a controlar dispositivos Android, iOS, macOS e Windows. Com essas restrições, você pode controlar várias funcionalidades e configurações para proteger os recursos da organização. Por exemplo, os administradores podem:
+O Microsoft Intune inclui políticas de restrição de dispositivo que ajudam os administradores a controlar dispositivos Android, iOS/iPadOS, macOS e Windows. Com essas restrições, você pode controlar várias funcionalidades e configurações para proteger os recursos da organização. Por exemplo, os administradores podem:
 
 - Permitir ou bloquear a câmera do dispositivo
 - Controlar o acesso ao Google Play, lojas de aplicativos, exibição de documentos e jogos.
@@ -44,7 +44,7 @@ Este artigo mostra como criar um perfil de restrições de dispositivos. Além d
 2. Selecione **Dispositivos** > **Perfis de configuração** > **Criar perfil**.
 3. Insira as seguintes propriedades:
 
-    - **Nome**: Insira um nome descritivo para a política. Nomeie suas políticas para que você possa identificá-las facilmente mais tarde. Por exemplo, um bom nome de política é **iOS: bloquear câmera em dispositivos**.
+    - **Nome**: Insira um nome descritivo para a política. Nomeie suas políticas para que você possa identificá-las facilmente mais tarde. Por exemplo, um bom nome de política é **iOS/iPadOS: bloquear câmera em dispositivos**.
     - **Descrição**: Insira uma descrição para a política. Essa configuração é opcional, mas recomendada.
     - **Plataforma**: Escolha a plataforma dos dispositivos. Suas opções:  
 

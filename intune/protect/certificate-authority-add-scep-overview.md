@@ -16,16 +16,16 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 4d05e33dbc28707bc6f929be72ba4a77c2e0641c
-ms.sourcegitcommit: e166b9746fcf0e710e93ad012d2f52e2d3ed2644
+ms.openlocfilehash: 85aac54a81d81dc138dd12612db183aae839b72b
+ms.sourcegitcommit: 47c9af81c385c7e893fe5a85eb79cf08e69e6831
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/19/2019
-ms.locfileid: "75206050"
+ms.lasthandoff: 02/25/2020
+ms.locfileid: "77575988"
 ---
 # <a name="add-partner-certification-authority-in-intune-using-scep"></a>Adicionar autoridade de certificação de parceiro no Intune usando o SCEP
 
-Use ACs (autoridades de certificação) de terceiros com o Intune. As ACs de terceiros podem provisionar dispositivos móveis com certificados novos ou renovados usando o protocolo SCEP e podem dar suporte a dispositivos Windows, iOS, Android e macOS.
+Use ACs (autoridades de certificação) de terceiros com o Intune. As ACs de terceiros podem provisionar dispositivos móveis com certificados novos ou renovados usando o protocolo SCEP e podem dar suporte a dispositivos Windows, iOS/iPadOS, Android e macOS.
 
 Há duas partes para o uso desse recurso: API de software livre e as tarefas de administrador do Intune.
 
