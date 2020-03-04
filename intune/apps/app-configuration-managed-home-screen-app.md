@@ -6,7 +6,7 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 11/26/2019
+ms.date: 02/27/2020
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.subservice: apps
@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: e86aeb3191c1cfdf2fc9dfab3a4474327b3fbb06
-ms.sourcegitcommit: 73b362173929f59e9df57e54e76d19834f155433
+ms.openlocfilehash: 4a9372a67dc0f45e256c3eba9b816db866e23998
+ms.sourcegitcommit: 045ca42cad6f86024af9a38a380535f42a6b4bef
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/27/2019
-ms.locfileid: "74564221"
+ms.lasthandoff: 02/28/2020
+ms.locfileid: "77781797"
 ---
 # <a name="configure-the-microsoft-managed-home-screen-app-for-android-enterprise"></a>Aplicativo de Tela Inicial Gerenciada da Microsoft para o Android Enterprise
 
@@ -36,7 +36,7 @@ Normalmente, se as configurações estiverem disponíveis para você por meio da
 > [!NOTE]
 > No momento, é possível e aconselhável permitir aplicativos e links da Web fixados por meio de **Aplicativos** e da **Configuração do dispositivo**. Para obter a lista completa das configurações disponíveis na **Configuração do dispositivo** que afetam a Tela Inicial Gerenciada, confira as [Configurações do dispositivo dedicado](../configuration/device-restrictions-android-for-work.md#dedicated-device-settings).  
 
-Primeiro, navegue até o [Centro de Administração do Gerenciador de Ponto de Extremidade da Microsoft](https://go.microsoft.com/fwlink/?linkid=2109431) e selecione **Aplicativos** > **Políticas de configuração de aplicativo**. Adicione uma política de configuração para **Dispositivos gerenciados** em execução no **Android** e escolha **Tela Inicial Gerenciada** como o aplicativo associado. Clique em **Definições de configuração** para definir as diferentes configurações de Tela Inicial Gerenciada disponíveis. 
+Primeiro, navegue até o [Centro de Administração do Microsoft Endpoint Manager](https://go.microsoft.com/fwlink/?linkid=2109431) e selecione **Aplicativos** > **Políticas de configuração de aplicativo**. Adicione uma política de configuração para **Dispositivos gerenciados** em execução no **Android** e escolha **Tela Inicial Gerenciada** como o aplicativo associado. Clique em **Definições de configuração** para definir as diferentes configurações de Tela Inicial Gerenciada disponíveis. 
 
 ## <a name="choosing-a-configuration-settings-format"></a>Como escolher um formato de definições de configuração
 
@@ -59,7 +59,7 @@ A tabela a seguir lista as chaves de configuração, tipos de valor, valores pad
 
 | Chave de configuração | Tipo de valor | Valor padrão | Descrição |
 |---------------------------------------------------------------------------------------------------------------------------|-------------|------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Definir tamanho da grade | cadeia de caracteres | Automático | Permite que você defina o tamanho da grade para que aplicativos sejam posicionados na Tela Inicial Gerenciada. Você pode definir o número de linhas e colunas de aplicativo para definir o tamanho da grade no seguinte formato: `columns;rows`. Se você definir o tamanho da grade, o número máximo de aplicativos que serão mostrados em uma linha na tela inicial será o número de linhas definido por você e o número máximo de aplicativos que serão mostrados em uma coluna na tela inicial será o número de colunas que você definir. |
+| Definir tamanho da grade | cadeia de caracteres | Auto | Permite que você defina o tamanho da grade para que aplicativos sejam posicionados na Tela Inicial Gerenciada. Você pode definir o número de linhas e colunas de aplicativo para definir o tamanho da grade no seguinte formato: `columns;rows`. Se você definir o tamanho da grade, o número máximo de aplicativos que serão mostrados em uma linha na tela inicial será o número de linhas definido por você e o número máximo de aplicativos que serão mostrados em uma coluna na tela inicial será o número de colunas que você definir. |
 | Enable notifications badge | bool | FALSE | Habilita o selo de notificação para ícones de aplicativo que mostra o número de novas notificações no aplicativo. Se você habilitar essa configuração, os usuários finais verão selos de notificação em aplicativos que têm notificações não lidas. Se você mantiver essa chave de configuração desabilitada, o usuário final não verá nenhuma notificação com selo para aplicativos que possam ter notificações não lidas. |
 | Lock Home Screen | bool | TRUE | Remove a capacidade de mover os ícones do aplicativo na tela inicial do usuário final. Se você habilitar essa chave de configuração, os ícones de aplicativo na tela inicial serão bloqueados e o usuário final não será capaz de arrastar e soltar para posições de grade diferentes da tela inicial. Se transformado em `false`, os usuários finais poderão mover ícones de weblink e de aplicativo da Tela Inicial Gerenciada.  |
 | Set device wall paper | cadeia de caracteres | Padrão | Permite que você defina um papel de parede de sua preferência, inserindo a URL da imagem que você deseja definir como um papel de parede. |

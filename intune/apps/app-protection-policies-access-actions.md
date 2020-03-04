@@ -6,7 +6,7 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 11/26/2019
+ms.date: 02/27/2020
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.subservice: apps
@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 0425b6a3f2c82f6ad2119286c8697f0eb0fc2f82
-ms.sourcegitcommit: c780e9988341a20f94fdeb8672bd13e0b302da93
+ms.openlocfilehash: 270bd5adb1e3cc07afadefa5d485da64ad2e5426
+ms.sourcegitcommit: 045ca42cad6f86024af9a38a380535f42a6b4bef
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/20/2020
-ms.locfileid: "77513888"
+ms.lasthandoff: 02/28/2020
+ms.locfileid: "77781131"
 ---
 # <a name="selectively-wipe-data-using-app-protection-policy-conditional-launch-actions-in-intune"></a>Apagar dados seletivamente usando ações de inicialização condicional da política de proteção de aplicativos no Intune
 
@@ -33,7 +33,7 @@ Você pode escolher explicitamente apagar os dados corporativos da empresa do di
 
 ## <a name="create-an-app-protection-policy-using-conditional-launch-actions"></a>Criar política de proteção de aplicativos usando ações de inicialização condicional
 
-1. Entre no [Centro de Administração do Gerenciador de Ponto de Extremidade da Microsoft](https://go.microsoft.com/fwlink/?linkid=2109431).
+1. Entre no [Centro de Administração do Microsoft Endpoint Manager](https://go.microsoft.com/fwlink/?linkid=2109431).
 2. Selecione **Aplicativos** > **Políticas de proteção de aplicativo**.
 3. Clique em **Criar política** e selecione a plataforma do dispositivo para a política. 
 4. Clique em **Definir as configurações necessárias** para ver a lista de configurações disponíveis a serem configuradas para a política. 

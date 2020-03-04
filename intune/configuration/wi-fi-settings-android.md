@@ -6,7 +6,7 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 01/24/2020
+ms.date: 02/26/2020
 ms.topic: reference
 ms.service: microsoft-intune
 ms.subservice: configuration
@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 2ea0a60537bb488d3280990747d3e337e73fddc0
-ms.sourcegitcommit: 139853f8d6ea61786da7056cfb9024a6459abd70
-ms.translationtype: MTE75
+ms.openlocfilehash: 955d9931779752e8736435555db7f7aba777b430
+ms.sourcegitcommit: 8b716db3c0fdbb7dff62497ec283902a5069a343
+ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/26/2020
-ms.locfileid: "76754551"
+ms.lasthandoff: 02/27/2020
+ms.locfileid: "77652395"
 ---
 # <a name="add-wi-fi-settings-for-devices-running-android-in-microsoft-intune"></a>Adicionar configurações de Wi-Fi para dispositivos que executam o Android no Microsoft Intune
 
@@ -39,13 +39,13 @@ Este artigo descreve essas configurações.
 ## <a name="basic"></a>Básico
 
 - **Tipo de Wi-Fi**: Escolha **básica**.
-- **SSID**: insira o **identificador do conjunto de serviços**, que é o nome real da rede sem fio à qual os dispositivos se conectam. No entanto, os usuários veem apenas o **nome de rede** configurado ao escolherem a conexão.
+- **SSID**: insira o **identificador SSID**, que é o nome real da rede sem fio à qual os dispositivos se conectam. No entanto, os usuários veem apenas o **nome de rede** configurado ao escolherem a conexão.
 - **Rede oculta**: escolha **Habilitar** para ocultar esta rede da lista de redes disponíveis no dispositivo. O SSID não é transmitido. Escolha **Desabilitar** para exibir esta rede na lista de redes disponíveis no dispositivo.
 
 ## <a name="enterprise"></a>Enterprise
 
 - **Tipo de Wi-Fi**: escolha **Corporativo**.
-- **SSID**: insira o **identificador do conjunto de serviços**, que é o nome real da rede sem fio à qual os dispositivos se conectam. No entanto, os usuários veem apenas o **nome de rede** configurado ao escolherem a conexão.
+- **SSID**: insira o **identificador SSID**, que é o nome real da rede sem fio à qual os dispositivos se conectam. No entanto, os usuários veem apenas o **nome de rede** configurado ao escolherem a conexão.
 - **Rede oculta**: escolha **Habilitar** para ocultar esta rede da lista de redes disponíveis no dispositivo. O SSID não é transmitido. Escolha **Desabilitar** para exibir esta rede na lista de redes disponíveis no dispositivo.
 - **Tipo de EAP**: escolha o tipo de protocolo EAP (Extensible Authentication) usado para autenticar conexões sem fio seguras. Suas opções:
 
@@ -56,19 +56,6 @@ Este artigo descreve essas configurações.
     - **Autenticação de cliente** - **certificado do cliente para autenticação de cliente (Certificado de identidade)** : escolha o perfil de certificado do cliente SCEP ou PKCS que também é implantado no dispositivo. Esse certificado é a identidade apresentada pelo dispositivo ao servidor para autenticar a conexão.
 
     - **Privacidade de identidade (identidade externa)** : insira o texto enviado na resposta a uma solicitação de identidade de EAP. Esse texto pode ser qualquer valor, como `anonymous`. Durante a autenticação, essa identidade anônima é enviada inicialmente e seguida pela identificação real enviada em um túnel seguro.
-
-    - **Configurações de proxy**: especifique a configuração de proxy usada pela sua organização. Suas opções:
-
-      - **Nenhum** – você não usa um servidor proxy.
-      - **Automático** – selecione esta opção para disponibilizar a configuração de *URL do Servidor Proxy*, que você usa para especificar o servidor proxy ou um arquivo PAC (configuração automática de proxy) que contém uma lista de seus servidores proxy.
-
-    - **URL do servidor proxy**: essa configuração fica disponível quando você define as *Configurações de proxy* como *Automáticas*. Especifique uma das opções a seguir para direcionar os dispositivos para seu servidor proxy:
-
-      - Endereço IP. Por exemplo, `10.0.0.11`
-      - Uma URL. Por exemplo, `http://proxyserver.contoso.com`.
-      - A URL de um arquivo PAC (configuração automática de proxy). Por exemplo: `http://proxy.contoso.com/proxy.pac`.
-
-      Para obter mais informações sobre os arquivos PAC, confira [Arquivo PAC (configuração automática de proxy)](https://developer.mozilla.org/docs/Web/HTTP/Proxy_servers_and_tunneling/Proxy_Auto-Configuration_(PAC)_file) (abre um site que não é da Microsoft).
 
   - **EAP-TTLS**: Insira também:
 
@@ -88,19 +75,6 @@ Este artigo descreve essas configurações.
 
       - **Privacidade de identidade (identidade externa)** : insira o texto enviado na resposta a uma solicitação de identidade de EAP. Esse texto pode ser qualquer valor, como `anonymous`. Durante a autenticação, essa identidade anônima é enviada inicialmente e seguida pela identificação real enviada em um túnel seguro.
 
-    - **Configurações de proxy**: especifique a configuração de proxy usada pela sua organização. Suas opções:
-
-      - **Nenhum** – você não usa um servidor proxy.
-      - **Automático** – selecione esta opção para disponibilizar a configuração de *URL do Servidor Proxy*, que você usa para especificar o servidor proxy ou um arquivo PAC (configuração automática de proxy) que contém uma lista de seus servidores proxy.
-
-    - **URL do servidor proxy**: essa configuração fica disponível quando você define as *Configurações de proxy* como *Automáticas*. Especifique uma das opções a seguir para direcionar os dispositivos para seu servidor proxy:
-
-      - Endereço IP. Por exemplo, `10.0.0.11`
-      - Uma URL. Por exemplo, `http://proxyserver.contoso.com`.
-      - A URL de um arquivo PAC (configuração automática de proxy). Por exemplo: `http://proxy.contoso.com/proxy.pac`.
-
-      Para obter mais informações sobre os arquivos PAC, confira [Arquivo PAC (configuração automática de proxy)](https://developer.mozilla.org/docs/Web/HTTP/Proxy_servers_and_tunneling/Proxy_Auto-Configuration_(PAC)_file) (abre um site que não é da Microsoft).
-
   - **PEAP**: Insira também:
 
     - **Confiança do servidor** - **certificado raiz para validação do servidor**: escolha um perfil de certificado raiz confiável existente. Esse certificado é apresentado ao servidor quando o cliente se conecta à rede. Ele autentica a conexão.
@@ -116,19 +90,6 @@ Este artigo descreve essas configurações.
       - **Certificados**: escolha o perfil de certificado do cliente SCEP ou PKCS que também é implantado no dispositivo. Esse certificado é a identidade apresentada pelo dispositivo ao servidor para autenticar a conexão.
 
       - **Privacidade de identidade (identidade externa)** : insira o texto enviado na resposta a uma solicitação de identidade de EAP. Esse texto pode ser qualquer valor, como `anonymous`. Durante a autenticação, essa identidade anônima é enviada inicialmente e seguida pela identificação real enviada em um túnel seguro.
-
-      - **Configurações de proxy**: especifique a configuração de proxy usada pela sua organização. Suas opções:
-
-        - **Nenhum** – você não usa um servidor proxy.
-        - **Automático** – selecione esta opção para disponibilizar a configuração de *URL do Servidor Proxy*, que você usa para especificar o servidor proxy ou um arquivo PAC (configuração automática de proxy) que contém uma lista de seus servidores proxy.
-
-      - **URL do servidor proxy**: essa configuração fica disponível quando você define as *Configurações de proxy* como *Automáticas*. Especifique uma das opções a seguir para direcionar os dispositivos para seu servidor proxy:
-
-        - Endereço IP. Por exemplo, `10.0.0.11`
-        - Uma URL. Por exemplo, `http://proxyserver.contoso.com`.
-        - A URL de um arquivo PAC (configuração automática de proxy). Por exemplo: `http://proxy.contoso.com/proxy.pac`.
-
-        Para obter mais informações sobre os arquivos PAC, confira [Arquivo PAC (configuração automática de proxy)](https://developer.mozilla.org/docs/Web/HTTP/Proxy_servers_and_tunneling/Proxy_Auto-Configuration_(PAC)_file) (abre um site que não é da Microsoft).
 
 ## <a name="next-steps"></a>Próximas etapas
 

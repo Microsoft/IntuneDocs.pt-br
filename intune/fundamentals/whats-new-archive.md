@@ -19,12 +19,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 313d9f470e9467cc80bae9c2400d4cc64aacc7ea
-ms.sourcegitcommit: 5ad0ce27a30ee3ef3beefc46d2ee49db6ec0cbe3
-ms.translationtype: MTE75
+ms.openlocfilehash: c0cfe99f022a5e5448bdee453fb0210f6b7195fc
+ms.sourcegitcommit: 9ee2401a2f01373a962749b0728c22385dbcba6d
+ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/30/2020
-ms.locfileid: "76886770"
+ms.lasthandoff: 02/29/2020
+ms.locfileid: "78181799"
 ---
 # <a name="whats-new-in-the-microsoft-intune---previous-months"></a>Novidades do Microsoft Intune – meses anteriores
 
@@ -187,7 +187,7 @@ O registro e o Portal da Empresa do Intune agora são compatíveis com o iOS ver
 Ao renomear um dispositivo Windows, você precisa seguir as novas regras:
 - 15 caracteres ou menos (deve ser menor ou igual a 63 bytes, não incluindo NULL à direita)
 - Não nulo ou uma cadeia de caracteres vazia
-- ASCII permitido: letras (a-z, A-Z), números (0-9) e hifens
+- ASCII permitidos: Letras (a-z, A-Z), números (0-9) e hifens
 - Unicode permitidos: caracteres >= 0x80, deve ser UTF8 válido, deve ser mapeável para IDN (ou seja, RtlIdnToNameprepUnicode é bem-sucedido; confira RFC 3492)
 - Os nomes não devem conter apenas números
 - Sem espaços no nome
@@ -341,7 +341,7 @@ No Intune, você pode criar políticas para executar dispositivos iOS supervisio
 
 Nessa atualização, há novas configurações que você pode controlar:
 - **Controle de voz**: Habilita o controle de voz no dispositivo no modo de quiosque.
-- **Modificação do controle de voz**: permite que os usuários alterem a configuração do Controle de Voz no dispositivo enquanto estão no modo de quiosque.
+- **Modificação do controle de voz**: Permite que os usuários alterem a configuração do Controle de Voz no dispositivo enquanto estão no modo de quiosque.
 
 Para ver as configurações atuais, acesse [Configurações do quiosque do iOS](../configuration/device-restrictions-ios.md#kiosk).
 
@@ -407,7 +407,7 @@ Aplica-se a:
 ### <a name="device-enrollment"></a>Registro de dispositivo
 
 #### <a name="new-tenants-will-default-away-from-android-device-administrator-management---4869790-----"></a>Os novos locatários terão como padrão o gerenciamento de administradores de dispositivos Android<!-- 4869790   -->
-Os recursos de administrador de dispositivos do Android foram substituídos pelo Android Enterprise. Portanto, recomendamos o uso do Android Enterprise para novos registros. Em uma atualização futura, novos locatários precisarão concluir as seguintes etapas de pré-requisito no registro do Android para usar o gerenciamento do administrador de dispositivo: ir para **Intune** > **Registro de dispositivo** > **Registro de Android** > **Dispositivos pessoais e corporativos com privilégios de administração de dispositivo** > **Usar o administrador de dispositivo para gerenciar dispositivos**.
+Os recursos de administrador de dispositivos do Android foram substituídos pelo Android Enterprise. Portanto, recomendamos o uso do Android Enterprise para novos registros. Em uma atualização futura, novos locatários precisarão concluir as seguintes etapas de pré-requisito na inscrição do Android para usar o gerenciamento de administrador de dispositivos: Acesse **Intune** > **Registro de dispositivo** > **Registro do Android** > **Dispositivos pessoais e corporativos com privilégios de administração de dispositivos** > **Usar o administrador do dispositivo para gerenciar dispositivos**.
 
 Os locatários existentes não sofrerão alteração em seus ambientes.
 
@@ -526,7 +526,7 @@ No Microsoft Intune, você pode controlar recursos e configurações em uma expe
 Os seguintes recursos foram adicionados nesta atualização:
 
 - **Dispositivos dedicados** > **Vários aplicativos**: o **botão Página Inicial virtual** pode ser exibido passando o dedo para cima no dispositivo ou pode estar flutuante na tela para que os usuários possam movê-lo.
-- **Dispositivos dedicados** > **Vários aplicativos**: **Acesso à lanterna** permite que os usuários usem a lanterna. 
+- **Dispositivos dedicados** > **Vários aplicativos**: **Acesso à lanterna** permite aos usuários utilizar a lanterna. 
 - **Dispositivos dedicados** > **Vários aplicativos**: **Controle de volume de mídia** permite aos usuários controlar o volume de mídia do dispositivo por meio de um controle deslizante. 
 - **Dispositivos dedicados** > **Vários aplicativos**:  **Habilitar um protetor de tela**, carregar uma imagem personalizada e controlar quando o protetor de tela é exibido.
 
@@ -580,11 +580,11 @@ Você pode criar perfis para restringir configurações em dispositivos com iOS 
 
 - Em **iOS** > **Restrições do dispositivo**, há algumas alterações:
 
-  - **Aplicativos internos** > **Buscar meu iPhone (somente supervisionado)** : nova configuração que bloqueia esse recurso no recurso do aplicativo Buscar. 
-  - **Aplicativos internos** > **Buscar meus Amigos (somente supervisionado)** : nova configuração que bloqueia esse recurso no recurso do aplicativo Buscar. 
-  - **Sem fio** > **Modificação do estado de Wi-Fi (somente supervisionado)** : nova configuração que impede que os usuários ativem ou desativem conexões Wi-Fi no dispositivo.
+  - **Aplicativos internos** > **Buscar iPhone (somente supervisionado)** : nova configuração que bloqueia esse recurso, no recurso do aplicativo Buscar. 
+  - **Aplicativos internos** > **Buscar Amigos (somente supervisionado)** : nova configuração que bloqueia esse recurso, no recurso do aplicativo Buscar. 
+  - **Sem fio** > **Modificação do estado do Wi-Fi (somente supervisionado)** : nova configuração que impede os usuários de ativar ou desativar o Wi-Fi nos dispositivos.
   - **Teclado e Dicionário** > **QuickPath (somente supervisionado)** : nova configuração que bloqueia o recurso QuickPath.
-  - **Nuvem e armazenamento**: a **Continuação da atividade** foi renomeada para **Entrega**.
+  - **Nuvem e armazenamento**: a **Continuação da atividade** é renomeada para **Handoff**.
 
   Para ver as configurações atuais, vá para [Configurações do dispositivo iOS para permitir ou restringir recursos usando o Intune](../configuration/device-restrictions-ios.md).
 
@@ -1002,7 +1002,7 @@ Aplica-se a: Windows 10 e posterior
 #### <a name="prevent-end-users-from-modifying-their-personal-hotspot-and-disable-siri-server-logging-on-ios-devices---4097904-----"></a>Impedir que usuários finais alterem o ponto de acesso pessoal e desabilitem o registro em log do servidor Siri em dispositivos iOS<!-- 4097904   -->  
 Crie um perfil de restrições de dispositivo no dispositivo iOS (**Configuração do Dispositivo** > **Perfis** > **Criar perfil** > **iOS** para a plataforma > **Restrições de dispositivo** para o tipo de perfil). Esta atualização inclui novas configurações que você poderá configurar:
 
-- **Aplicativos internos**: log do lado do servidor para comandos da Siri
+- **Aplicativos internos**: registro em log no lado do servidor para os comandos da Siri
 - **Sem fio**: modificação do usuário do Ponto de acesso pessoal (somente supervisionado)
 
 Para ver essas configurações, vá para [Configurações de aplicativo interno para iOS](../configuration/device-restrictions-ios.md#built-in-apps) e [Configurações sem fio para iOS](../configuration/device-restrictions-ios.md#wireless).
@@ -1444,7 +1444,7 @@ Para obter uma lista dessas configurações, confira:
 
 - [Configurações de dispositivos com Windows 10 (e posterior) para execução como um quiosque](../configuration/kiosk-settings-windows.md)
 - [Restrições de dispositivo do navegador Microsoft Edge](../configuration/device-restrictions-windows-10.md#microsoft-edge-browser)
-- [Favoritos e restrições de dispositivo de pesquisa](../configuration/device-restrictions-windows-10.md##favorites-and-search)
+- [Favoritos e restrições de dispositivo de pesquisa](../configuration/device-restrictions-windows-10.md#favorites-and-search)
 
 Aplica-se a: Windows 10 e posterior
 
@@ -1639,7 +1639,7 @@ Ao criar um perfil de configuração para dispositivos iOS, é possível adicion
 [Configurações para exibir mensagens na tela de bloqueio](../configuration/ios-device-features-settings.md#lock-screen-message) lista as configurações.
 
 #### <a name="new-app-store-doc-viewing-gaming-device-restriction-settings-added-to-ios-devices---2827760--"></a>Novas configurações de restrição de dispositivo da App Store, Exibição de Documentos, Jogos adicionadas a dispositivos iOS<!-- 2827760-->
-Em **Configuração do Dispositivo** > **Perfis** > **Criar perfil** > **iOS** para a plataforma > **Restrições de dispositivo** para o tipo de perfil > **App Store, Exibição de Documento, Jogos**, as seguintes configurações foram adicionadas: permitir que aplicativos gerenciados gravem contatos em contas de contatos não gerenciados; Permitir que aplicativos não gerenciados leiam de contas de contatos gerenciados. Para ver essas configurações, vá para [Restrições de dispositivos iOS](../configuration/device-restrictions-ios.md#app-store-doc-viewing-gaming).
+Em **Configuração do Dispositivo** > **Perfis** > **Criar perfil** > **iOS** para a plataforma > **Restrições de dispositivo** para o tipo de perfil > **App Store, Exibição de Documentos, Jogos**, as seguintes configurações são adicionadas: Permitir que aplicativos gerenciados gravem contatos em contas de contatos não gerenciadas Permitir que aplicativos não gerenciados leiam contas de contatos gerenciadas Para ver essas configurações, acesse [Restrições de dispositivo do iOS](../configuration/device-restrictions-ios.md#app-store-doc-viewing-gaming).
 
 #### <a name="new-notification-hints-and-keyguard-settings-to-android-enterprise-device-owner-devices---3201839-3201843---"></a>Novas configurações de notificação, dicas e keyguard para dispositivos de proprietário de dispositivo Android Enterprise<!-- 3201839 3201843 -->
 Esta atualização inclui vários recursos novos em dispositivos com Android Enterprise durante a execução como proprietário do dispositivo. Para usar esses recursos, acesse **Configuração do dispositivo** > **Perfis** > **Criar perfil** > em **Plataforma**, escolha **Android Enterprise** > em **Tipo de perfil**, escolha **Somente proprietário do dispositivo** > **Restrições do Dispositivo**.
@@ -1702,7 +1702,7 @@ Não há suporte para a configuração **Compartilhamento de Contatos via Blueto
 
 Para ver a lista atual de configurações, acesse [Configurações do dispositivo Android Enterprise para permitir ou restringir recursos](../configuration/device-restrictions-android-for-work.md).
 
-Aplica-se a: proprietário do dispositivo Android Enterprise
+Aplica-se a: Proprietário do Dispositivo Android Enterprise
 
 
 <!-- vvvvvvvvvvvvvvvvvvvvvv -->
@@ -1850,9 +1850,9 @@ Esta atualização inclui novas configurações para dispositivos iOS e macOS la
 - Contrasenha: Bloquear compartilhamento de senha (somente supervisionada)
 
 **Configurações do macOS**: 
-- Senha: bloquear o preenchimento automático de senha
+- Contrasenha: Bloquear o preenchimento automático de senha
 - Contrasenha: Bloquear solicitações de proximidade de senha
-- Senha: bloquear compartilhamento de senha
+- Contrasenha: Bloquear compartilhamento de senha
 
 Para saber mais sobre essas configurações, consulte as configurações de restrição de dispositivos [iOS](../configuration/device-restrictions-ios.md) e [macOS](../configuration/device-restrictions-macos.md).
 

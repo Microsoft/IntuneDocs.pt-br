@@ -6,7 +6,7 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 11/26/2019
+ms.date: 02/26/2020
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.subservice: apps
@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: b0145a17434d8b309806f468bf066d54ae117144
-ms.sourcegitcommit: 1aaff35fddb3d06458d739968d28971fed0bb2ba
+ms.openlocfilehash: 55f76b0c5c71f7828fed17233c2b81d6b066cc3b
+ms.sourcegitcommit: fab685b22a010fe231b27a0c5eda34a6f22f4c8d
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/12/2020
-ms.locfileid: "77155353"
+ms.lasthandoff: 03/02/2020
+ms.locfileid: "78216117"
 ---
 # <a name="configure-microsoft-launcher"></a>Configurar o Microsoft Launcher
 
@@ -33,7 +33,7 @@ Nos dispositivos totalmente gerenciados do Android Enterprise, o Launcher permit
 
 ## <a name="how-to-configure-the-microsoft-launcher-app"></a>Como configurar o aplicativo Microsoft Launcher 
 
-Navegue até o [Centro de Administração do Gerenciador de Ponto de Extremidade da Microsoft](https://go.microsoft.com/fwlink/?linkid=2109431) e selecione **Aplicativos** > **Políticas de configuração de aplicativo**. Adicione uma política de configuração para **Dispositivos gerenciados** em execução no **Android** e escolha **Microsoft Launcher** como o aplicativo associado. Clique em **Definições de configuração** para definir as diferentes configurações do Microsoft Launcher disponíveis. 
+Navegue até o [Centro de Administração do Microsoft Endpoint Manager](https://go.microsoft.com/fwlink/?linkid=2109431) e selecione **Aplicativos** > **Políticas de configuração de aplicativo**. Adicione uma política de configuração para **Dispositivos gerenciados** em execução no **Android** e escolha **Microsoft Launcher** como o aplicativo associado. Clique em **Definições de configuração** para definir as diferentes configurações do Microsoft Launcher disponíveis. 
 
 ## <a name="choosing-a-configuration-settings-format"></a>Como escolher um formato de definições de configuração 
 

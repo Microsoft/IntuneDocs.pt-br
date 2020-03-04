@@ -6,7 +6,7 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 11/26/2019
+ms.date: 02/28/2020
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.subservice: apps
@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: ''
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: c02ea34417073091e2f2841b363edfb9966ce558
-ms.sourcegitcommit: e166b9746fcf0e710e93ad012d2f52e2d3ed2644
+ms.openlocfilehash: 78e0e8560c64a1d6be4fa5e01aa9ce32b8a4c613
+ms.sourcegitcommit: 9ee2401a2f01373a962749b0728c22385dbcba6d
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/19/2019
-ms.locfileid: "75205897"
+ms.lasthandoff: 02/29/2020
+ms.locfileid: "78181765"
 ---
 # <a name="configure-google-chrome-for-android-devices-using-intune"></a>Configurar o Google Chrome para dispositivos Android usando o Intune 
 
@@ -36,7 +36,7 @@ Você pode usar uma política de configuração de aplicativos do Intune para co
 
 ## <a name="add-the-google-chrome-app-to-intune"></a>Adicionar o aplicativo Google Chrome ao Intune
 
-1. Entre no [Centro de Administração do Gerenciador de Ponto de Extremidade da Microsoft](https://go.microsoft.com/fwlink/?linkid=2109431).
+1. Entre no [Centro de Administração do Microsoft Endpoint Manager](https://go.microsoft.com/fwlink/?linkid=2109431).
 2. Selecione **Aplicativos** > **Todos os aplicativos** > **Adicionar** e adicione o aplicativo **Google Play Gerenciado**.
 3. Acesse o Google Play gerenciado, pesquise por **Google Chrome** e aprove.
 
@@ -48,7 +48,7 @@ Para obter detalhes adicionais sobre como adicionar um aplicativo gerenciado do 
 
 ## <a name="add-app-configuration-for-managed-ae-devices"></a>Adicionar configuração de aplicativo em dispositivos AE gerenciados
 
-1. No [Centro de administração do Gerenciador de Ponto de Extremidade da Microsoft](https://go.microsoft.com/fwlink/?linkid=2109431), escolha **Aplicativos** > **Políticas de configuração de aplicativo** > **Adicionar** > **Dispositivos gerenciados**.
+1. No [Centro de administração do Microsoft Endpoint Manager](https://go.microsoft.com/fwlink/?linkid=2109431), escolha **Aplicativos** > **Políticas de configuração de aplicativo** > **Adicionar** > **Dispositivos gerenciados**.
 2. Defina os seguintes detalhes:
     - **Nome** – o nome do perfil exibido no portal do Azure.
     - **Descrição** – a descrição do perfil que é exibida no portal do Azure.

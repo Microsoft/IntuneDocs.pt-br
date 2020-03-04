@@ -6,7 +6,7 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 12/16/2019
+ms.date: 02/28/2020
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.subservice: apps
@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: ''
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: a727cf03f53ee003c27708a04ad475f0b370c487
-ms.sourcegitcommit: 51591b862d97904291af7aa53a6eb341b11a761e
+ms.openlocfilehash: a9adacbc0946c45db75c2d1d91c0954e323b7d33
+ms.sourcegitcommit: 9ee2401a2f01373a962749b0728c22385dbcba6d
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/17/2020
-ms.locfileid: "77415011"
+ms.lasthandoff: 02/29/2020
+ms.locfileid: "78181918"
 ---
 # <a name="intune-discovered-apps"></a>Aplicativos descobertos pelo Intune
 
@@ -33,7 +33,7 @@ Os **aplicativos descobertos** pelo Intune são uma lista de aplicativos detecta
 
 O Intune fornece uma lista agregada de aplicativos detectados nos dispositivos registrados no Intune em seu locatário.
 
-1. Entre no [Centro de Administração do Gerenciador de Ponto de Extremidade da Microsoft](https://go.microsoft.com/fwlink/?linkid=2109431).
+1. Entre no [Centro de Administração do Microsoft Endpoint Manager](https://go.microsoft.com/fwlink/?linkid=2109431).
 2. Selecione **Aplicativos** > **Monitor** > **Aplicativos descobertos**.
 
 >[!NOTE]
@@ -43,7 +43,7 @@ O Intune fornece uma lista agregada de aplicativos detectados nos dispositivos r
 
 O Intune também fornece a lista de aplicativos descobertos para o dispositivo individual em seu locatário.
 
-1. Entre no [Centro de Administração do Gerenciador de Ponto de Extremidade da Microsoft](https://go.microsoft.com/fwlink/?linkid=2109431).
+1. Entre no [Centro de Administração do Microsoft Endpoint Manager](https://go.microsoft.com/fwlink/?linkid=2109431).
 2. Selecione **Dispositivos** > **Todos os dispositivos**.
 3. Selecione um dispositivo.
 4. Para exibir os aplicativos detectados para este dispositivo, escolha **Aplicativos Descobertos** na seção **Monitorar**.

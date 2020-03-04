@@ -5,7 +5,7 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 11/26/2019
+ms.date: 02/26/2020
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.subservice: apps
@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 3da8e89679f974c7d91cf19ae37365f75217d153
-ms.sourcegitcommit: a82d25d98fdf0ba766f8f074871d4f13725e23f9
+ms.openlocfilehash: f8af7a756d95051be52a5380467cb4f9be2533b3
+ms.sourcegitcommit: fab685b22a010fe231b27a0c5eda34a6f22f4c8d
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/31/2019
-ms.locfileid: "75548015"
+ms.lasthandoff: 03/02/2020
+ms.locfileid: "78216193"
 ---
 # <a name="use-powershell-scripts-on-windows-10-devices-in-intune"></a>Use scripts do PowerShell em dispositivos Windows 10 no Intune
 
@@ -73,7 +73,7 @@ A extensão de gerenciamento do Intune tem os pré-requisitos a seguir. Depois q
 
 ## <a name="create-a-script-policy-and-assign-it"></a>Criar uma política de script e atribuí-la
 
-1. Entre no [Centro de Administração do Gerenciador de Ponto de Extremidade da Microsoft](https://go.microsoft.com/fwlink/?linkid=2109431).
+1. Entre no [Centro de Administração do Microsoft Endpoint Manager](https://go.microsoft.com/fwlink/?linkid=2109431).
 2. Selecione **Dispositivos** > **Scripts do PowerShell** > **Adicionar**.
 
     ![Adicionar e usar scripts do PowerShell no Microsoft Intune](./media/intune-management-extension/mgmt-extension-add-script.png)

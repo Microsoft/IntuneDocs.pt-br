@@ -6,7 +6,7 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 01/27/2019
+ms.date: 02/28/2020
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.subservice: apps
@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure, seoapril2019
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: c7c47a829f8f609528f45b30d0dd9bf56d9d8eb9
-ms.sourcegitcommit: 51591b862d97904291af7aa53a6eb341b11a761e
+ms.openlocfilehash: 03b89225ee5691aea2653fb3ca19f99139a015aa
+ms.sourcegitcommit: 9ee2401a2f01373a962749b0728c22385dbcba6d
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/17/2020
-ms.locfileid: "77414898"
+ms.lasthandoff: 02/29/2020
+ms.locfileid: "78181801"
 ---
 # <a name="manage-web-access-using-a-microsoft-intune-policy-protected-browser"></a>Gerenciar o acesso à Web usando um navegador protegido por políticas do Microsoft Intune
 
@@ -94,7 +94,7 @@ Para restringir os aplicativos Web conectados ao Azure AD para usarem o Intune M
 > [!TIP]  
 > O Acesso Condicional é uma tecnologia do Azure AD (Azure Active Directory). O nó Acesso Condicional acessado no *Intune* é o mesmo nó que o acessado no *Azure AD*.  
 
-1. Entre no [Centro de Administração do Gerenciador de Ponto de Extremidade da Microsoft](https://go.microsoft.com/fwlink/?linkid=2109431).
+1. Entre no [Centro de Administração do Microsoft Endpoint Manager](https://go.microsoft.com/fwlink/?linkid=2109431).
 2. Selecione **Dispositivos** > **Acesso Condicional** > **Nova política**.
 3. Adicione o **Nome** da política. 
 4. Na seção **Atribuições**, selecione **Condições** > **Aplicativos cliente**. O painel **Aplicativos cliente** é exibido.
@@ -135,7 +135,7 @@ O SSO requer que seu dispositivo seja registrado pelo aplicativo Microsoft Authe
 >[!IMPORTANT]
 >Para configurações de aplicativo a serem aplicadas, o navegador protegido do usuário ou outro aplicativo no dispositivo já deve ser gerenciado pela [política de Proteção de Aplicativo do Intune]( ../app-protection-policy.md)
 
-1. Entre no [Centro de Administração do Gerenciador de Ponto de Extremidade da Microsoft](https://go.microsoft.com/fwlink/?linkid=2109431).
+1. Entre no [Centro de Administração do Microsoft Endpoint Manager](https://go.microsoft.com/fwlink/?linkid=2109431).
 2. Selecione **Aplicativos** > **Políticas de configuração de aplicativo** > **Adicionar** > **Aplicativos gerenciados**.
 3. Na página **Conceitos Básicos** do painel **Criar política de configuração de aplicativo**, insira um **Nome** e uma **Descrição** opcional para as definições de configuração do aplicativo.
 4. Escolha **Selecionar o aplicativo público**, depois escolha o **Managed Browser** e/ou **Microsoft Edge** para iOS/iPadOS, Android ou ambos.

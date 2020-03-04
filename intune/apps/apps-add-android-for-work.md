@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: a4b3bd06bad6c31c2d0fb4c31a7ad605af96be86
-ms.sourcegitcommit: 29f3ba071c9348686d3ad6f3b8864d8557e05b97
+ms.openlocfilehash: 126ea5a1798252f29e988553edfea462eff2fd7e
+ms.sourcegitcommit: a25f556aa9df4fcd9fdacccd12c9029bc6c5fe20
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/26/2020
-ms.locfileid: "77609193"
+ms.lasthandoff: 03/03/2020
+ms.locfileid: "78256451"
 ---
 # <a name="add-managed-google-play-apps-to-android-enterprise-devices-with-intune"></a>Adicionar aplicativos do Google Play Gerenciado a dispositivos Android Enterprise com o Intune
 
@@ -61,7 +61,7 @@ Há duas maneiras de procurar e aprovar aplicativos da Google Play Store Gerenci
 
 ### <a name="add-a-managed-google-play-store-app-directly-in-the-intune-console"></a>Adicionar um aplicativo da Google Play Store Gerenciada diretamente no console do Intune
 
-1. Entre no [Centro de Administração do Gerenciador de Ponto de Extremidade da Microsoft](https://go.microsoft.com/fwlink/?linkid=2109431).
+1. Entre no [Centro de Administração do Microsoft Endpoint Manager](https://go.microsoft.com/fwlink/?linkid=2109431).
 2. Selecione **Aplicativos** > **Todos os aplicativos** > **Adicionar**.
 3. No painel **Selecionar tipo de aplicativo**, nos tipos de **Aplicativos da loja** disponíveis, selecione **Aplicativo do Google Play gerenciado**.
 4. Clique em **Selecionar**. A loja de aplicativos do **Google Play gerenciado** é exibida.
@@ -115,7 +115,7 @@ Há duas maneiras de adicionar aplicativos de LOB ao Google Play Gerenciado:
 
 ### <a name="managed-google-play-private-lob-app-publishing-directly-in-the-intune-console"></a>Aplicativo particular (LOB) do Google Play Gerenciado publicado diretamente no console do Intune
 
-1. Entre no [Centro de Administração do Gerenciador de Ponto de Extremidade da Microsoft](https://go.microsoft.com/fwlink/?linkid=2109431).
+1. Entre no [Centro de Administração do Microsoft Endpoint Manager](https://go.microsoft.com/fwlink/?linkid=2109431).
 2. Selecione **Aplicativos** > **Todos os aplicativos** > **Adicionar**.
 3. No painel **Selecionar tipo de aplicativo**, nos tipos de **Aplicativos da loja** disponíveis, selecione **Aplicativo do Google Play gerenciado**.
 4. Clique em **Selecionar**. A loja de aplicativos do **Google Play gerenciado** é exibida dentro do Intune.
@@ -156,10 +156,7 @@ Os links do Google Play Gerenciado podem ser instalados e gerenciados da mesma f
 
 Os links abrem no Microsoft Edge ou em qualquer outro aplicativo de navegador que você escolher implantar. Implante pelo menos um aplicativo de navegador nos dispositivos para conseguir abrir corretamente os links. No entanto, todas as opções de **Exibição** disponíveis para links (tela inteira, autônoma e interface do usuário mínima) só funcionam com o navegador Chrome. 
 
-> [!IMPORTANT]
-> Na publicação deste documento, há um bug conhecido do Google que impede que os links abram em dispositivos com navegadores diferentes do Chrome. A Google se comprometeu em corrigir esse bug.  Esse aviso será removido quando a Microsoft confirmar que a Google publicou uma correção.
-
-1. Entre no [Centro de Administração do Gerenciador de Ponto de Extremidade da Microsoft](https://go.microsoft.com/fwlink/?linkid=2109431).
+1. Entre no [Centro de Administração do Microsoft Endpoint Manager](https://go.microsoft.com/fwlink/?linkid=2109431).
 2. Selecione **Aplicativos** > **Todos os aplicativos** > **Adicionar**.
 3. No painel **Selecionar tipo de aplicativo**, nos tipos de **Aplicativos da loja** disponíveis, selecione **Aplicativo do Google Play gerenciado**.
 4. Clique em **Selecionar**. A loja de aplicativos do **Google Play gerenciado** é exibida dentro do Intune.
@@ -177,11 +174,11 @@ Os links abrem no Microsoft Edge ou em qualquer outro aplicativo de navegador qu
 
 Se você aprovou um aplicativo da loja e ainda não o encontra na carga de trabalho **Aplicativos**, force uma sincronização imediata da seguinte maneira:
 
-1. Entre no [Centro de Administração do Gerenciador de Ponto de Extremidade da Microsoft](https://go.microsoft.com/fwlink/?linkid=2109431).
+1. Entre no [Centro de Administração do Microsoft Endpoint Manager](https://go.microsoft.com/fwlink/?linkid=2109431).
 3. Selecione **Aplicativos** > **Administração de locatários** > **Conectores e tokens** > **Google Play Gerenciado**.
 5. No painel **Google Play gerenciado**, escolha **Atualizar**.  
     A página atualiza a hora e o status da última sincronização.
-6. No Centro de Administração do Gerenciador de Ponto de Extremidade da Microsoft, selecione **Aplicativos** > **Todos os aplicativos**.  
+6. No Centro de Administração do Microsoft Endpoint Manager, selecione **Aplicativos** > **Todos os aplicativos**.  
     O aplicativo que acabou de ficar disponível no Google Play gerenciado é exibido.
 
 ## <a name="assigning-a-managed-google-play-app-to-android-enterprise-work-profile-devices"></a>Atribuir aplicativos do Google Play Gerenciado a dispositivos de perfil corporativo Android Enterprise

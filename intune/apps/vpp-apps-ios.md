@@ -6,7 +6,7 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 12/17/2019
+ms.date: 02/26/2020
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.subservice: apps
@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 9127ee06bc2125f476c18e9b8e46a127e48d0245
-ms.sourcegitcommit: c780e9988341a20f94fdeb8672bd13e0b302da93
+ms.openlocfilehash: e3efa4a354a71846a5add46794ed853696d04560
+ms.sourcegitcommit: fab685b22a010fe231b27a0c5eda34a6f22f4c8d
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/20/2020
-ms.locfileid: "77513394"
+ms.lasthandoff: 03/02/2020
+ms.locfileid: "78216088"
 ---
 # <a name="how-to-manage-ios-and-macos-apps-purchased-through-apple-volume-purchase-program-with-microsoft-intune"></a>Como gerenciar aplicativos iOS e macOS adquiridos por meio do Apple Volume Purchase Program com o Microsoft Intune
 
@@ -88,11 +88,11 @@ Migre o conteúdo e os tokens VPP comprados existentes para Aplicativos e Livros
 2. Verifique se todos os compradores do VPP na sua organização concluíram a etapa 1 antes de continuar.
 3. Verifique se todas as licenças e todos os aplicativos comprados foram migrados para Aplicativos e Livros no Apple Business Manager ou no Apple School Manager.
 4. Baixe o novo token de localização acessando o **Apple Business (ou o School) Manager** > **Configurações** > **Aplicativos e Livros** > **Meus Tokens de Servidor**.
-5. Atualize o token de localização no Centro de Administração do Gerenciador de Ponto de Extremidade da Microsoft acessando **Administração de locatários** > **Conectores e tokens** > **Tokens VPP da Apple** e sincronize o token.
+5. Atualize o token de localização no Centro de Administração do Microsoft Endpoint Manager acessando **Administração de locatários** > **Conectores e tokens** > **Tokens VPP da Apple** e sincronize o token.
 
 ## <a name="upload-an-apple-vpp-or-location-token"></a>Carregar um token de localização ou VPP da Apple
 
-1. Entre no [Centro de Administração do Gerenciador de Ponto de Extremidade da Microsoft](https://go.microsoft.com/fwlink/?linkid=2109431).
+1. Entre no [Centro de Administração do Microsoft Endpoint Manager](https://go.microsoft.com/fwlink/?linkid=2109431).
 3. Selecione **Administração de locatários** > **Conectores e tokens** > **Tokens VPP da Apple**.
 4. Na lista do painel de tokens do VPP, selecione **Criar**.
 5. No painel **Criar token do VPP**, especifique as seguintes informações:

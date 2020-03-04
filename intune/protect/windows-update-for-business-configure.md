@@ -15,12 +15,12 @@ ms.reviewer: mghadial
 ms.suite: ems
 search.appverid: MET150
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: e478402f826809bda4f81315d5a1a4ff6e1a8b88
-ms.sourcegitcommit: 5ad0ce27a30ee3ef3beefc46d2ee49db6ec0cbe3
+ms.openlocfilehash: c9245ca028bdb5589df8c76b10560d9130a1108c
+ms.sourcegitcommit: 9ee2401a2f01373a962749b0728c22385dbcba6d
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/30/2020
-ms.locfileid: "76886807"
+ms.lasthandoff: 02/29/2020
+ms.locfileid: "78181714"
 ---
 # <a name="manage-windows-10-software-updates-in-intune"></a>Gerenciar atualizações de software do Windows 10 no Intune
 
@@ -77,14 +77,14 @@ Os anéis de atualização do Windows 10 dão suporte às [marcas de escopo](../
 
 ### <a name="create-and-assign-update-rings"></a>Criar e atribuir anéis de atualização
 
-1. Entre no [Centro de Administração do Gerenciador de Ponto de Extremidade da Microsoft]( https://go.microsoft.com/fwlink/?linkid=2109431).
+1. Entre no [Centro de Administração do Microsoft Endpoint Manager](https://go.microsoft.com/fwlink/?linkid=2109431).
 
 2. Selecione **Dispositivos** > **Windows** > **Anéis de atualização do Windows 10** > **Criar**.
 
 3. Na guia *Informações básicas*, especifique um nome, uma descrição (opcional) e selecione **Avançar**.
-  ![Criar um anel de atualizações]( ./media/windows-update-for-business-configure/basics-tab.png)
-  
-4. Em **Configurações do anel de atualização**, defina as configurações para suas necessidades empresariais. Saiba mais sobre as configurações disponíveis, confira Configurações de atualização do Windows. Após definir as configurações de *Atualização e Experiência do usuário*, selecione **Avançar**.
+  ![Criar um anel de atualizações](./media/windows-update-for-business-configure/basics-tab.png)
+
+4. Em **Configurações do anel de atualização**, defina as configurações para suas necessidades empresariais. Saiba mais sobre as configurações disponíveis em [Configurações de atualização do Windows](../protect/windows-update-settings.md). Após definir as configurações de *Atualização e Experiência do usuário*, selecione **Avançar**.
 
 5. Em **Marcas de escopo**, selecione **+ Selecionar marcas de escopo** para abrir o painel *Selecionar marcas* se você desejar aplicá-las ao anel de atualização. Escolha uma ou mais marcas e, em seguida, clique em **Selecionar** para adicioná-las ao anel de atualização e retorne ao painel *Marcas de escopo*.
 
@@ -224,7 +224,7 @@ Os pré-requisitos a seguir devem ser atendidos para usar as atualizações de r
 
 ### <a name="create-and-assign-windows-10-feature-updates"></a>Criar e atribuir atualizações de recursos do Windows 10
 
-1. Entre no [Centro de Administração do Gerenciador de Ponto de Extremidade da Microsoft](https://go.microsoft.com/fwlink/?linkid=2109431).
+1. Entre no [Centro de Administração do Microsoft Endpoint Manager](https://go.microsoft.com/fwlink/?linkid=2109431).
 
 2. Selecione **Dispositivos** > **Windows** > **Atualizações de recursos do Windows 10** > **Criar**.
 

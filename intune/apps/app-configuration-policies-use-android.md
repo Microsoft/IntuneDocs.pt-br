@@ -6,7 +6,7 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 01/23/2019
+ms.date: 02/28/2020
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.subservice: apps
@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 52c8d10f0b8d06d68d75450c3d708f910bc5ddd4
-ms.sourcegitcommit: 51591b862d97904291af7aa53a6eb341b11a761e
+ms.openlocfilehash: 7650230e419a639adfe02cd6c01f6170a4eb878b
+ms.sourcegitcommit: 9ee2401a2f01373a962749b0728c22385dbcba6d
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/17/2020
-ms.locfileid: "77415035"
+ms.lasthandoff: 02/29/2020
+ms.locfileid: "78181833"
 ---
 # <a name="add-app-configuration-policies-for-managed-android-enterprise-devices"></a>Adicionar políticas de configuração de aplicativo para dispositivos Android Enterprise gerenciados
 
@@ -34,7 +34,7 @@ As políticas de configuração de aplicativo no Microsoft Intune fornecem confi
 > [!NOTE]  
 > Nem todo aplicativo dá suporte à configuração de aplicativo. Verifique com o desenvolvedor do aplicativo se este é compatível com as políticas de configuração de aplicativo.
 
-1. Entre no [Centro de Administração do Gerenciador de Ponto de Extremidade da Microsoft](https://go.microsoft.com/fwlink/?linkid=2109431).
+1. Entre no [Centro de Administração do Microsoft Endpoint Manager](https://go.microsoft.com/fwlink/?linkid=2109431).
 2. Escolha **Aplicativos** > **Políticas de configuração de aplicativo** > **Adicionar** > **Aplicativos gerenciados**. Observe que você pode escolher entre **Dispositivos gerenciados** e **Aplicativos gerenciados**. Para saber mais, confira [Aplicativos que dão suporte à configuração de aplicativo](~/apps/app-configuration-policies-overview.md#apps-that-support-app-configuration).
 3. Na página **Conceitos Básicos**, configure os seguintes detalhes:
     - **Nome** – o nome do perfil exibido no portal do Azure.
@@ -132,7 +132,7 @@ Você também pode pré-configurar as permissões de aplicativo para acessar os 
 
 Por exemplo, um aplicativo usa o microfone do dispositivo. O usuário é solicitado a conceder ao aplicativo permissão para usar o microfone.
 
-1. No [Centro de administração do Gerenciador de Ponto de Extremidade da Microsoft](https://go.microsoft.com/fwlink/?linkid=2109431), escolha **Aplicativos** > **Políticas de configuração de aplicativo** >  **Adicionar** > **Dispositivos gerenciados**.
+1. No [Centro de administração do Microsoft Endpoint Manager](https://go.microsoft.com/fwlink/?linkid=2109431), escolha **Aplicativos** > **Políticas de configuração de aplicativo** >  **Adicionar** > **Dispositivos gerenciados**.
 2. Adicione as seguintes propriedades:
 
     - **Nome**: Insira um nome descritivo para a política. Nomeie suas políticas para que você possa identificá-las facilmente mais tarde. Por exemplo, um bom nome de política é **Política de aplicativo de permissões de prompt Android Enterprise para toda a empresa**.
