@@ -161,6 +161,8 @@
             - name: Visão geral das políticas de proteção de aplicativos
               href: app-protection-policy.md
               displayName: app; protection; policy
+            - name: Estrutura de proteção de dados usando políticas de proteção de aplicativos
+              href: app-protection-framework.md
             - name: Criar políticas de proteção do aplicativo
               items:
                 - name: Configurações gerais
