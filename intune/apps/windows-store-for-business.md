@@ -6,7 +6,7 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 11/26/2019
+ms.date: 02/26/2020
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.subservice: apps
@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure, seoapril2019
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 6faaa800d8dedc53ab20f1dae2c3049132642b7d
-ms.sourcegitcommit: 29f3ba071c9348686d3ad6f3b8864d8557e05b97
+ms.openlocfilehash: 07463f3bcac7d657659ece7fed2c40db53ee2122
+ms.sourcegitcommit: a25f556aa9df4fcd9fdacccd12c9029bc6c5fe20
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/26/2020
-ms.locfileid: "77609152"
+ms.lasthandoff: 03/03/2020
+ms.locfileid: "78256366"
 ---
 # <a name="how-to-manage-volume-purchased-apps-from-the-microsoft-store-for-business-with-microsoft-intune"></a>Como gerenciar aplicativos adquiridos por volume na Microsoft Store para Empresas com o Microsoft Intune
 
@@ -51,7 +51,8 @@ Examine as seguintes informações antes de iniciar a sincronização e a atribi
 - Para usar essa funcionalidade, os dispositivos devem estar ingressados no Active Directory Domain Services, ingressados no Azure AD ou em um local de trabalho.
 - Dispositivos registrados devem estar usando a versão 1511 do Windows 10 ou posterior.
 
-Além disso, os conjuntos relacionados e aplicativos licenciados offline sincronizados por meio da Microsoft Store para Empresas agora serão ser consolidados em um única entrada de aplicativo na interface do usuário. Todos os detalhes de implantação dos pacotes individuais serão migrados para a única entrada. Para exibir conjuntos relacionados no portal do Azure, selecione **Licenças de aplicativo** no painel **Aplicativos**.
+> [!NOTE]
+Se você desabilitar a Store em dispositivos gerenciados (manualmente, via política ou Política de Grupo), os aplicativos licenciados online não serão instalados.
 
 ## <a name="associate-your-microsoft-store-for-business-account-with-intune"></a>Associe sua conta da Microsoft Store para Empresas ao Intune
 Antes de habilitar a sincronização no console do Intune, você deve configurar sua conta de repositório para usar o Intune como uma ferramenta de gerenciamento:
@@ -66,7 +67,7 @@ Agora você pode continuar e configurar a sincronização no console do Intune.
 
 ## <a name="configure-synchronization"></a>Configurar sincronização
 
-1. Entre no [Centro de Administração do Gerenciador de Ponto de Extremidade da Microsoft](https://go.microsoft.com/fwlink/?linkid=2109431).
+1. Entre no [Centro de Administração do Microsoft Endpoint Manager](https://go.microsoft.com/fwlink/?linkid=2109431).
 2. Selecione **Administração de locatários** > **Conectores e tokens** > **Microsoft Store for Business**.
 3. Clique em **Habilitar**.
 4. Se você ainda não tiver feito isso, clique no link para inscrever-se na Microsoft Store para Empresas e associe sua conta como indicado anteriormente.

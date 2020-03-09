@@ -16,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure; get-started
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: b780f22fd6823499128a3975f1812a1d1f7c032b
-ms.sourcegitcommit: 51591b862d97904291af7aa53a6eb341b11a761e
+ms.openlocfilehash: 6f5d11cade1e22ca5d306dd1896e8136f9e7c1ed
+ms.sourcegitcommit: a25f556aa9df4fcd9fdacccd12c9029bc6c5fe20
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/17/2020
-ms.locfileid: "77413782"
+ms.lasthandoff: 03/03/2020
+ms.locfileid: "78256383"
 ---
 # <a name="what-is-microsoft-intune-device-management"></a>O que é o gerenciamento de dispositivo do Microsoft Intune?
 
@@ -33,13 +33,13 @@ A carga de trabalho **Dispositivos** fornece ideias sobre os dispositivos gerenc
 
 ## <a name="get-to-your-devices"></a>Obter seus dispositivos
 
-1. Entre no [Centro de Administração do Gerenciador de Ponto de Extremidade da Microsoft](https://go.microsoft.com/fwlink/?linkid=2109431).
+1. Entre no [Centro de Administração do Microsoft Endpoint Manager](https://go.microsoft.com/fwlink/?linkid=2109431).
 3. Selecione **Dispositivos**. Essa exibição mostra informações detalhadas sobre os dispositivos individuais, e o que você pode fazer com eles, incluindo:
 
    - **Visão geral** mostra um instantâneo visual dos dispositivos registrados e também quantos dispositivos estão usando diferentes plataformas, incluindo Android, iOS/iPadOS e muito mais.
    - **Todos os dispositivos** mostra uma lista dos dispositivos registrados que você gerencia.
 
-     Use o recurso **Exportar** para criar uma lista .csv de todos os dispositivos, em incrementos de 10.000 (Internet Explorer) ou 30.000 (Microsoft Edge, Chrome).
+     Use o recurso **Exportar** para criar uma lista .zip de todos os dispositivos, em incrementos de 10.000 (Internet Explorer) ou 30.000 (Microsoft Edge, Chrome).
 
      Escolha algum dispositivo para [exibir detalhes adicionais sobre ele](device-inventory.md), incluindo detalhes de hardware, aplicativos instalados, status da política de conformidade e muito mais.
 
@@ -61,7 +61,7 @@ As ações disponíveis dependem da plataforma e da configuração do dispositiv
   - [Apagar](devices-wipe.md#wipe)
   - [Bloqueio remoto](device-remote-lock.md)
   - [Redefinir senha](device-passcode-reset.md)
-  - [Desabilitar o bloqueio de ativação](device-activation-lock-bypass.md) (somente iOS)
+  - [Desabilitar o bloqueio de ativação](device-activation-lock-disable.md) (somente iOS)
   - [Novo Início](device-fresh-start.md) (somente Windows)
   - [Modo perdido](device-lost-mode.md) (somente iOS)
   - [Localizar dispositivo](device-locate.md) (somente iOS)
