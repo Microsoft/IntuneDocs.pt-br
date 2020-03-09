@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: fcb3a9f817b0e765fee79342bcd212f33509209a
-ms.sourcegitcommit: 8d7406b75ef0d75cc2ed03b1a5e5f74ff10b98c0
-ms.translationtype: MTE75
+ms.openlocfilehash: 8d47d91388fffd0e5716d20be640c4afbad2862e
+ms.sourcegitcommit: 47c9af81c385c7e893fe5a85eb79cf08e69e6831
+ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/03/2020
-ms.locfileid: "75653539"
+ms.lasthandoff: 02/25/2020
+ms.locfileid: "77576323"
 ---
 # <a name="microsoft-intune-app-sdk-overview"></a>Visão geral do SDK de Aplicativos do Microsoft Intune
 O SDK do Aplicativo do Intune, disponível para iOS e Android, habilita o aplicativo para dar suporte às [políticas de Proteção de Aplicativo](../apps/app-protection-policy.md) do Intune. Quando seu aplicativo tem políticas de proteção de aplicativo aplicadas, ele pode ser gerenciado pelo Intune e é reconhecido pelo Intune como um aplicativo gerenciado. O SDK se esforça para minimizar a quantidade de alterações de código necessárias do desenvolvedor do aplicativo. Você descobrirá que é possível habilitar a maioria dos recursos do SDK sem alterar o comportamento do seu aplicativo. Para o usuário final avançado e a experiência do administrador de TI, você pode usar as APIs do SDK para personalizar o comportamento do aplicativo para dar suporte a recursos que exigem a participação do seu aplicativo.
@@ -56,7 +56,7 @@ Os administradores de TI podem exigir que o usuário final insira um PIN antes d
 Os administradores de TI podem exigir que os usuários se conectem com sua conta corporativa ou de estudante para acessar o aplicativo. O SDK do Aplicativo do Intune usa o Azure Active Directory para fornecer uma experiência de logon único, em que as credenciais, uma vez inseridas, são reutilizadas para os próximos logons. Também damos suporte à autenticação de soluções de gerenciamento de identidade federadas com o Azure Active Directory.
 
 ### <a name="check-device-health-and-compliance"></a>Verificar a integridade e conformidade do dispositivo
-Os administradores de TI podem verificar a integridade do dispositivo e sua conformidade com as políticas do Intune antes que os usuários finais acessem o aplicativo. No iOS, essa política verifica se o dispositivo foi desbloqueado com jailbreak. No Android, essa política verifica se o dispositivo foi desbloqueado com root.
+Os administradores de TI podem verificar a integridade do dispositivo e sua conformidade com as políticas do Intune antes que os usuários finais acessem o aplicativo. No iOS/iPadOS, essa política verifica se o dispositivo foi desbloqueado com jailbreak. No Android, essa política verifica se o dispositivo foi desbloqueado com root.
 
 ### <a name="support-multi-identity"></a>Dar suporte a várias identidades
 O suporte a várias identidades é um recurso do SDK que habilita a coexistência de contas gerenciadas por política (corporativas) e não gerenciadas (pessoais) em um único aplicativo.

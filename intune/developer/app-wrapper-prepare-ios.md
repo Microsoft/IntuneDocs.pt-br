@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 62ee300b7357132e6f9e18ef4528110dfc988dc3
-ms.sourcegitcommit: 8d7406b75ef0d75cc2ed03b1a5e5f74ff10b98c0
-ms.translationtype: MTE75
+ms.openlocfilehash: 11e757d22274a0e1cc327d9037a74e4ffac024dd
+ms.sourcegitcommit: 47c9af81c385c7e893fe5a85eb79cf08e69e6831
+ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/03/2020
-ms.locfileid: "75653658"
+ms.lasthandoff: 02/25/2020
+ms.locfileid: "77576335"
 ---
 # <a name="prepare-ios-apps-for-app-protection-policies-with-the-intune-app-wrapping-tool"></a>Preparar aplicativos iOS para políticas de proteção de aplicativo com a Ferramenta de Encapsulamento de Aplicativos do Intune
 
@@ -198,15 +198,15 @@ Você pode usar os seguintes parâmetros de linha de comando com a Ferramenta de
 |**-p**|`<Path of your provisioning profile for iOS apps>`|
 |**-c**|`<SHA1 hash of the signing certificate>`|
 |**-h**| Exibe informações de uso detalhadas das propriedades de linha de comando disponíveis para a Ferramenta de Disposição do Aplicativo. |
-|**-aa**|(Opcional) `<Authority URI of the input app if the app uses the Azure Active Directory Authentication Library>` ou seja `login.windows.net/common` |
-|**-ac**|(Opcional) `<Client ID of the input app if the app uses the Azure Active Directory Authentication Library>` é o GUID no campo ID do cliente é da listagem do seu aplicativo na folha de registro do aplicativo. |
-|**-ar**|(Opcional) `<Redirect/Reply URI of the input app if the app uses the Azure Active Directory Authentication Library>` é o URI de redirecionamento configurado no registro do aplicativo. Normalmente, seria o protocolo de URL do aplicativo que o aplicativo Microsoft Authenticator retornaria após a autenticação orientada. |
+|**-aa**|(Opcional) `<Authority URI of the input app if the app uses the Azure Active Directory Authentication Library>`, ou seja `login.windows.net/common` |
+|**-ac**|(Opcional) `<Client ID of the input app if the app uses the Azure Active Directory Authentication Library>` É o GUID no campo ID do Cliente é da listagem do seu aplicativo na folha Registro do Aplicativo. |
+|**-ar**|(Opcional) `<Redirect/Reply URI of the input app if the app uses the Azure Active Directory Authentication Library>` É o URI de Redirecionamento configurado no Registro do Aplicativo. Normalmente, seria o protocolo de URL do aplicativo que o aplicativo Microsoft Authenticator retornaria após a autenticação orientada. |
 |**-v**| (Opcional) Produz mensagens detalhadas no console. Recomendamos o uso desse sinalizador para depurar quaisquer erros. |
 |**-e**| (Opcional) Use esse sinalizador para que a Ferramenta de Disposição do Aplicativo remova direitos ausentes conforme processa o aplicativo. Consulte [Definindo direitos de aplicativo](#setting-app-entitlements) para obter mais detalhes.|
 |**-xe**| (Opcional) Imprime informações sobre as extensões do iOS no aplicativo e quais direitos são necessários para usá-las. Consulte [Definindo direitos de aplicativo](#setting-app-entitlements) para obter mais detalhes. |
 |**-x**| (Opcional) `<An array of paths to extension provisioning profiles>`. Use esta opção se seu aplicativo precisar de perfis de provisionamento de extensão.|
 |**-b**|(Opcional) Use -b sem um argumento se você quiser que o aplicativo de saída encapsulado tenha a mesma versão do pacote que o aplicativo de entrada (não recomendado). <br/><br/> Use `-b <custom bundle version>` se você quiser que o aplicativo encapsulado tenha um CFBundleVersion personalizado. Se você optar por especificar um CFBundleVersion personalizado, recomendamos incrementar o CFBundleVersion do aplicativo nativo pelo componente menos significativo, como 1.0.0 -> 1.0.1. |
-|**-citrix**|Adicional Inclua o SDK do Citrix XenMobile app (variante somente de rede). Você deve ter o [Citrix MDX Toolkit](https://docs.citrix.com/en-us/mdx-toolkit/about-mdx-toolkit.html) instalado para usar essa opção. |
+|**-citrix**|(Opcional) Inclua o SDK do aplicativo Citrix XenMobile (somente variante de rede). Você deve ter o [Kit de Ferramentas Citrix MDX](https://docs.citrix.com/en-us/mdx-toolkit/about-mdx-toolkit.html) instalado para usar essa opção. |
 |**-f**|(Opcional) `<Path to a plist file specifying arguments.>` Use este sinalizador na frente do arquivo [plist](https://developer.apple.com/library/mac/documentation/Cocoa/Conceptual/PropertyLists/Introduction/Introduction.html) se você optar por usar o modelo plist para especificar o restante das propriedades IntuneMAMPackager, como -i, -o e -p. Consulte Usar um plist para argumentos de entrada. |
 
 ### <a name="use-a-plist-to-input-arguments"></a>Use um plist para argumentos de entrada
@@ -221,14 +221,14 @@ Na pasta IntuneMAMPackager/Conteúdo/MacOS, abra `Parameters.plist` (um modelo p
 | Caminho do pacote de aplicativos de saída |Cadeia de caracteres|vazio| Mesmo que -o|
 | Caminho do perfil de provisionamento |Cadeia de caracteres|vazio| Mesmo que -p|
 | Hash de certificado SHA-1 |Cadeia de caracteres|vazio| Mesmo que -c|
-| Autoridade ADAL |Cadeia de caracteres|vazio| Mesmo que -aa|
-| ID do cliente ADAL |Cadeia de caracteres|vazio| Mesmo que -ac|
-| URI de resposta da ADAL |Cadeia de caracteres|vazio| Mesmo que -ar|
+| Autoridade da ADAL |Cadeia de caracteres|vazio| Mesmo que -aa|
+| ID do Cliente da ADAL |Cadeia de caracteres|vazio| Mesmo que -ac|
+| URI de Resposta da ADAL |Cadeia de caracteres|vazio| Mesmo que -ar|
 | Modo detalhado habilitado |Booliano|false| Mesmo que -v|
 | Remover direitos ausentes |Booliano|false| Mesmo que -c|
-| Impedir a atualização do build padrão |Bool|false| Equivalente a usar -b sem argumentos|
+| Impedir a atualização do build padrão |Booliano|false| Equivalente a usar -b sem argumentos|
 | Compilar substituição da cadeia de caracteres |Cadeia de caracteres|vazio| O CFBundleVersion personalizado do aplicativo de saída encapsulado|
-| Incluir o SDK do Citrix XenMobile app (variante somente de rede)|Booliano|false| Mesmo que-Citrix|
+| Inclua o SDK do aplicativo Citrix XenMobile (somente variante de rede)|Booliano|false| Mesmo que -citrix|
 | Caminhos do perfil de provisionamento de extensão |Matriz de cadeia de caracteres|vazio| Uma matriz de perfis de provisionamento de extensão para o aplicativo.
 
 Execute o IntuneMAMPackager com plist como o único argumento:
@@ -255,7 +255,7 @@ Os cenários principais em que você precisa reencapsular os aplicativos são da
 * O próprio aplicativo lançou uma nova versão. A versão anterior do aplicativo foi encapsulada e carregada no console do Intune.
 * A ferramenta de encapsulamento de aplicativo do Intune para iOS lançou uma nova versão que permite a correção dos principais bugs, além de recursos novos e específicos da política de proteção de aplicativo do Intune. Isso ocorre após seis a oito semanas por meio do repositório GitHub da [Ferramenta de encapsulamento de aplicativo do Microsoft Intune para iOS](https://github.com/msintuneappsdk/intune-app-wrapping-tool-ios).
 
-Para iOS, embora seja possível encapsular com um perfil de cert/provisionamento diferente do original usado para assinar o aplicativo, se os direitos especificados no aplicativo não forem incluídos no novo perfil de provisionamento, o encapsulamento falhará. Usar a opção de linha de comando "-e", que remove todos os direitos ausentes do aplicativo, para forçar o encapsulamento a não falhar nesse cenário pode causar a quebra da funcionalidade no aplicativo.
+Para iOS/iPadOS, embora seja possível encapsular com um perfil de cert/provisionamento diferente do original usado para assinar o aplicativo, se os direitos especificados no aplicativo não forem incluídos no novo perfil de provisionamento, o encapsulamento falhará. Usar a opção de linha de comando "-e", que remove todos os direitos ausentes do aplicativo, para forçar o encapsulamento a não falhar nesse cenário pode causar a quebra da funcionalidade no aplicativo.
 
 Algumas práticas recomendadas para reencapsulamento incluem:
 
@@ -289,7 +289,7 @@ Se a ferramenta de disposição do aplicativo não for concluída com êxito, um
 |O aplicativo de entrada especificado já foi encapsulado e está na versão mais recente de modelo de política.|A Ferramenta de Disposição do Aplicativo não encapsula novamente um aplicativo encapsulado existente com a versão mais recente do modelo de política.|
 |AVISO: você não especificou um hash de certificado SHA1. Certifique-se de que seu aplicativo encapsulado esteja assinado antes da implantação.|Especifique um hash SHA1 válido seguindo o sinalizador de linha de comando –c. |
 
-### <a name="collecting-logs-for-your-wrapped-applications-from-the-device"></a>Coletando logs para seus aplicativos encapsulados do dispositivo
+### <a name="collecting-logs-for-your-wrapped-applications-from-the-device"></a>Como coletar logs para seus aplicativos encapsulados do dispositivo
 Use as etapas a seguir para obter logs para seus aplicativos encapsulados durante a solução de problemas.
 
 1. Vá até o aplicativo de Ajustes do iOS em seu dispositivo e selecione seu aplicativo LOB.
@@ -301,9 +301,9 @@ Use as etapas a seguir para obter logs para seus aplicativos encapsulados durant
 > [!NOTE]
 > A funcionalidade de registro em log está habilitada para aplicativos encapsulados com a Ferramenta de Encapsulamento de Aplicativo do Intune versão 7.1.13 ou superior.
 
-### <a name="collecting-crash-logs-from-the-system"></a>Coletando logs de falhas do sistema
+### <a name="collecting-crash-logs-from-the-system"></a>Como coletar logs de falhas do sistema
 
-Seu aplicativo pode estar registrando informações úteis no console do dispositivo cliente iOS. Essas informações são úteis quando você tem problemas com o aplicativo e precisa determinar se o problema está relacionado à Ferramenta de Disposição do Aplicativo ou o próprio aplicativo. Para recuperar as informações, execute as seguintes etapas:
+Seu aplicativo pode estar registrando em log informações úteis no console do dispositivo cliente iOS. Essas informações são úteis quando você tem problemas com o aplicativo e precisa determinar se o problema está relacionado à Ferramenta de Disposição do Aplicativo ou o próprio aplicativo. Para recuperar as informações, execute as seguintes etapas:
 
 1. Reproduza o problema executando o aplicativo.
 
@@ -419,7 +419,7 @@ Use as seguintes melhores práticas de segurança e privacidade ao usar a Ferram
 
 ## <a name="intune-app-wrapping-tool-for-ios-with-citrix-mdx-mvpn"></a>Ferramenta de Disposição do Aplicativo do Intune para iOS com Citrix MDX mVPN
 
-Esse recurso é uma integração com o wrapper do aplicativo Citrix MDX para iOS. A integração é simplesmente um sinalizador de linha de comando adicional, opcional, `-citrix`para as Ferramentas de Disposição do Aplicativo do Intune.
+Esse recurso é uma integração com o wrapper do aplicativo Citrix MDX para iOS/iPadOS. A integração é simplesmente um sinalizador de linha de comando adicional, opcional, `-citrix`para as Ferramentas de Disposição do Aplicativo do Intune.
 
 ### <a name="requirements"></a>Requisitos
 

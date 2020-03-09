@@ -5,7 +5,7 @@ keywords: ''
 author: ErikjeMS
 ms.author: erikje
 manager: dougeby
-ms.date: 07/26/2019
+ms.date: 02/27/2020
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.subservice: remote-actions
@@ -16,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: af4270587ab5894d52a7d12b1c2082b7b3298e51
-ms.sourcegitcommit: 51591b862d97904291af7aa53a6eb341b11a761e
+ms.openlocfilehash: df814abf9cdff3eb4d9fbac8183618461b590adb
+ms.sourcegitcommit: 045ca42cad6f86024af9a38a380535f42a6b4bef
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/17/2020
-ms.locfileid: "77413754"
+ms.lasthandoff: 02/28/2020
+ms.locfileid: "77781926"
 ---
 # <a name="see-device-details-in-intune"></a>Consultar detalhes do dispositivo no Intune
 
@@ -33,17 +33,22 @@ Este artigo mostra como exibir todos os dispositivos e suas propriedades no port
 
 ## <a name="view-the-device-details"></a>Exibir os detalhes do dispositivo
 
-1. Entre no [Centro de Administração do Gerenciador de Ponto de Extremidade da Microsoft](https://go.microsoft.com/fwlink/?linkid=2109431).
+1. Entre no [Centro de Administração do Microsoft Endpoint Manager](https://go.microsoft.com/fwlink/?linkid=2109431).
 3. Selecione **Dispositivos** > **Todos os dispositivos** > selecione um de seus dispositivos listados para abrir os detalhes:
 
    - **Visão geral** mostra o nome do dispositivo e descreve algumas das principais propriedades do dispositivo, por exemplo, se ele é do tipo BYOD (traga seu próprio dispositivo), o horário do check-in e muito mais. Você pode fazer o seguinte no dispositivo:
       - [Desativar](devices-wipe.md#retire)
       - [Apagar](devices-wipe.md#wipe)
+      - [Excluir](devices-wipe.md#delete-devices-from-the-intune-portal)
       - [Bloqueio remoto](device-remote-lock.md)
-      - [Sincronizar dispositivo](device-sync.md)
+      - [Sincronização](device-sync.md)
       - [Redefinir senha](device-passcode-reset.md)
       - [Reiniciar](device-restart.md) (somente Windows)
       - [Novo Início](device-fresh-start.md) (somente Windows)
+      - [Redefinição do Autopilot]() (somente Windows)
+      - [Verificação rápida](../configuration/device-restrictions-windows-10.md) (somente Windows 10)
+      - [Verificação completa](../configuration/device-restrictions-windows-10.md) (somente Windows 10)
+       - [Renomear dispositivo](device-rename.md)
       - Iniciar uma sessão de assistência remota
    - Use **Propriedades** para atribuir uma [categoria de dispositivo que você criar](../enrollment/device-group-mapping.md) e altere a propriedade do dispositivo para um dispositivo pessoal ou um dispositivo corporativo.
    - **Hardware** inclui vários detalhes sobre o dispositivo, como a ID, o sistema operacional e a versão, o espaço de armazenamento e outros detalhes.

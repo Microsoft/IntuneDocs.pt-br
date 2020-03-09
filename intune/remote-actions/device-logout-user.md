@@ -6,7 +6,7 @@ keywords: ''
 author: ErikjeMS
 ms.author: erikje
 manager: dougeby
-ms.date: 08/27/2018
+ms.date: 02/27/2020
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.subservice: remote-actions
@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 6e23f95d169a95244abc8669eb9a19150cff8138
-ms.sourcegitcommit: 51591b862d97904291af7aa53a6eb341b11a761e
+ms.openlocfilehash: 279b35f2dd7cd515784e86687b7917914ea9cf8c
+ms.sourcegitcommit: 045ca42cad6f86024af9a38a380535f42a6b4bef
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/17/2020
-ms.locfileid: "77413701"
+ms.lasthandoff: 02/28/2020
+ms.locfileid: "77781904"
 ---
 # <a name="logout-the-current-user-on-intune-managed-iosipados-devices"></a>Fazer logoff do usuário atual em dispositivos iOS/iPadOS gerenciados pelo Intune
 
@@ -41,9 +41,8 @@ A ação **Fazer logoff do usuário atual** faz logoff do usuário atual em um d
 
 ## <a name="how-to-log-out-the-current-user"></a>Como fazer logoff do usuário atual
 
-1. Entre no [Centro de Administração do Gerenciador de Ponto de Extremidade da Microsoft](https://go.microsoft.com/fwlink/?linkid=2109431) e selecione **Dispositivos**.
-4. Na folha **Dispositivos e grupos**, escolha **Todos os dispositivos**.
-5. Na lista de dispositivos gerenciados, escolha um dispositivo iOS/iPadOS e, em seguida, selecione a ação remota do dispositivo **Fazer logoff do usuário atual**.
+1. Entre no [Centro de Administração do Microsoft Endpoint Manager](https://go.microsoft.com/fwlink/?linkid=2109431) e selecione **Dispositivos** > **Todos os dispositivos**.
+2. Escolha um dispositivo iOS/iPadOS > **…**  > **fazer logoff do usuário atual**.
 
 ## <a name="next-steps"></a>Próximas etapas
 

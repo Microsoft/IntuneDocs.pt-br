@@ -17,19 +17,19 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: ''
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 8d473d29536b4ffdcc221c8cf61c63725bae0fa2
-ms.sourcegitcommit: 8d7406b75ef0d75cc2ed03b1a5e5f74ff10b98c0
-ms.translationtype: MTE75
+ms.openlocfilehash: 699665f93d04801223f2fc6e6536d9b675e75242
+ms.sourcegitcommit: 9ee2401a2f01373a962749b0728c22385dbcba6d
+ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/03/2020
-ms.locfileid: "75653896"
+ms.lasthandoff: 02/29/2020
+ms.locfileid: "78181935"
 ---
 # <a name="microsoft-intune-app-sdk-for-android-testing-guide"></a>Guia de teste do SDK do Aplicativo do Microsoft Intune para Android
 
-Este guia ajuda os desenvolvedores a testar seus aplicativos Android gerenciados pelo Intune.  
+Este guia ajuda os desenvolvedores a testar aplicativos Android gerenciados pelo Intune.  
 
 ## <a name="prerequisite-test-accounts"></a>Contas de teste de pré-requisito
-Você pode criar novas contas com ou sem dados gerados previamente. Para criar uma nova conta:
+Você pode criar contas com ou sem dados gerados previamente. Para criar uma nova conta:
 1. Vá ao site de [Demos da Microsoft](https://demos.microsoft.com/environments/create/tenant). 
 2. [Configure o Intune](../fundamentals/setup-steps.md) para habilitar o MDM (gerenciamento de dispositivo móvel).
 3. [Criar usuários](../fundamentals/users-add.md).
@@ -38,7 +38,7 @@ Você pode criar novas contas com ou sem dados gerados previamente. Para criar u
 
 
 ## <a name="azure-portal-policy-configuration"></a>Configuração de política do portal do Azure
-[Crie e atribua políticas de proteção de aplicativo](../apps/app-protection-policies.md) na [folha do Intune do portal do Azure](https://portal.azure.com/?feature.customportal=false#blade/Microsoft_Intune_Apps/MainMenu/14/selectedMenuItem/Overview). Você também pode criar e atribuir sua [política de configuração de aplicativo](../apps/app-configuration-policies-overview.md) na folha do Intune.
+[Crie e atribua políticas de proteção de aplicativo](../apps/app-protection-policies.md) na [folha do Intune do portal do Azure](https://portal.azure.com/?feature.customportal=false#blade/Microsoft_Intune_Apps/MainMenu/14/selectedMenuItem/Overview). Você também pode criar e atribuir sua [política de configuração de aplicativos](../apps/app-configuration-policies-overview.md) na folha do Intune.
 
 > [!NOTE]
 > Se seu aplicativo não estiver listado no portal do Azure, você poderá defini-lo como destino com uma política selecionando a opção **mais aplicativos** e dando um nome ao pacote na caixa de texto.
@@ -54,11 +54,11 @@ Você pode solicitar um PIN para acessar recursos corporativos. Além disso, voc
 1. Configure **Solicitar PIN para acesso** e **Solicitar credenciais corporativas para acesso** como **Sim**. Para mais informações, confira [Configurações de política de proteção do aplicativo Android no Microsoft Intune](../apps/app-protection-policy-settings-android.md#access-requirements).
 2. Confirme as seguintes condições:
     - A inicialização do aplicativo deve apresentar um prompt para entrada de PIN ou do usuário de produção usado durante o registro no Portal da Empresa.
-    - A falha em apresentar uma solicitação de entrada válida pode ser devido a um manifesto do Android configurado incorretamente, especificamente os valores para a integração da ADAL (O skipbroker Authentication Library) (Azure Active Directory a autenticação, a ClientID e a autoridade).
+    - Falha na apresentação de uma solicitação de conexão válida pode ser devido a um manifesto do Android configurado incorretamente, especificamente os valores para a integração da ADAL (Biblioteca de Autenticação do Azure Active Directory) (SkipBroker, ClientID e Autoridade).
     - A falha em apresentar qualquer prompt pode ocorrer devido a um valor `MAMActivity` integrado incorretamente. Para obter mais informações sobre `MAMActivity`, veja [Guia do desenvolvedor do SDK de Aplicativo do Microsoft Intune para Android](app-sdk-android.md).
 
 > [!NOTE] 
-> Se o teste anterior não estiver funcionando, os testes a seguir provavelmente também falharão. Examine a integração de [SDK](app-sdk-android.md##sdk-integration) e [ADAL](app-sdk-android.md#configure-azure-active-directory-authentication-library-adal).
+> Se o teste anterior não estiver funcionando, os testes a seguir provavelmente também falharão. Examine a integração de [SDK](app-sdk-android.md#sdk-integration) e [ADAL](app-sdk-android.md#configure-azure-active-directory-authentication-library-adal).
 
 ### <a name="restrict-transferring-and-receiving-data-with-other-apps"></a>Restringir a transferência e receber dados com outros aplicativos
 É possível controlar a transferência de dados entre aplicativos gerenciados corporativos da seguinte maneira:
@@ -108,7 +108,7 @@ Você pode apagar remotamente aplicativos gerenciados que contêm email e docume
     - O conteúdo gerenciado é removido do aplicativo. Para obter mais informações, veja o [Guia do desenvolvedor do SDK do Aplicativo do Intune para Android – Apagamento seletivo](app-sdk-android.md#selective-wipe).
 
 ### <a name="multi-identity-support"></a>Suporte a várias identidades
-Integrar [suporte a várias identidades](app-sdk-android.md#multi-identity-optional) é uma alteração de alto risco que precisa ser totalmente testada. Os problemas mais comuns ocorrem devido à configuração inadequada da identidade (contexto versus nível de ameaça) e aos arquivos de rastreamento (`MAMFileProtectionManager`).
+Integrar [suporte a várias identidades](app-sdk-android.md#multi-identity-optional) é uma alteração de alto risco que precisa ser totalmente testada. Os problemas mais comuns ocorrem devido à configuração inadequada da identidade (contexto versus nível de ameaça) e aos arquivos de acompanhamento (`MAMFileProtectionManager`).
 
 No mínimo, confirme que:
 
@@ -119,7 +119,7 @@ No mínimo, confirme que:
 - O usuário é solicitado a realizar uma inicialização condicional ao mudar de conta não gerenciada para gerenciada (apenas na primeira vez).
 
 ### <a name="app-configuration-optional"></a>Configuração de aplicativos (opcional)
-Você pode configurar o comportamento de aplicativos gerenciados. Se seu aplicativo consumir as definições de configuração de aplicativos, você deverá testar para ver se seu aplicativo lida corretamente com todos os valores que você, como administrador, pode definir. Você pode criar e atribuir [políticas de configuração de aplicativo](../apps/app-configuration-policies-overview.md) no Intune.
+Você pode configurar o comportamento de aplicativos gerenciados. Se seu aplicativo consumir as definições de configuração de aplicativos, você deverá testar para ver se seu aplicativo lida corretamente com todos os valores que você, como administrador, pode definir. Você pode criar e atribuir [políticas de configuração de aplicativos](../apps/app-configuration-policies-overview.md) no Intune.
 
 ## <a name="next-steps"></a>Próximas etapas
 

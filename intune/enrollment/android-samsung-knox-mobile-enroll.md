@@ -6,7 +6,7 @@ keywords: ''
 author: ErikjeMS
 ms.author: erikje
 manager: ''
-ms.date: 12/06/2018
+ms.date: 03/03/2020
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.subservice: enrollment
@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: ecb043300578e5eba0613b6fa5f0fb249b1e515c
-ms.sourcegitcommit: a66b5916eaab9cb537e483064efc584a6a63a390
+ms.openlocfilehash: ae445597cfd1afc4650c7a900ee335c939adedce
+ms.sourcegitcommit: 6608dc70d01376e0cd90aa620a2fe01337f6a2f1
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2020
-ms.locfileid: "75692154"
+ms.lasthandoff: 03/04/2020
+ms.locfileid: "78260173"
 ---
 # <a name="automatically-enroll-android-devices-by-using-samsungs-knox-mobile-enrollment"></a>Inscrever automaticamente os dispositivos Android usando o Knox Mobile Enrollment da Samsung
 
@@ -57,38 +57,44 @@ Para inscrever no Intune usando KME, primeiro você precisa registrar a sua empr
 
 ## <a name="create-mdm-profile"></a>Criar um perfil de MDM
 
-Após o registro bem-sucedido da sua empresa, você pode criar seu perfil de MDM para o Microsoft Intune no portal do Knox usando as informações a seguir. Você pode criar perfis MDM para Android e Android Enterprise no portal do Knox. 
+Após o registro bem-sucedido da sua empresa, você pode criar seu perfil de MDM para o Microsoft Intune no portal do Knox usando as informações a seguir. Você pode criar perfis MDM para Android e Android Enterprise no portal do Knox.
+- Para criar um perfil MDM do Android, selecione **Administrador do Dispositivo** como o tipo de perfil no portal do Knox. 
+- Para criar um perfil MDM do Android Enterprise, selecione **Proprietário do Dispositivo** como o tipo de perfil no portal do Knox.  
 
-### <a name="for-android-enterprise"></a>Para Android Enterprise
+### <a name="for-android"></a>Para Android
 
 | Campos do perfil de MDM| Necessário? | Valores | 
 |-------------------|-----------|-------| 
-|URI do servidor MDM     | Não        |Deixe em branco. 
-|Nome do perfil       | Sim       |Insira um nome de perfil de sua escolha. 
-|Descrição        | Não        |Insira um texto que descreva o perfil. 
-|APK do Agente MDM      | Sim       |https://aka.ms/intune_kme_deviceowner 
-|Habilitar este aplicativo como um Proprietário do Dispositivo Google | Sim | Escolha esta opção para registrar no Android Enterprise. 
-|MDM com suporte      | Sim       |Microsoft Intune 
-|Deixe todos os aplicativos do sistema habilitados | Não | Escolha esta opção para garantir que todos os aplicativos estejam habilitados e disponíveis para o perfil. Se essa opção não estiver selecionada, somente um conjunto limitado de aplicativos do sistema será exibido na bandeja de aplicativos do dispositivo. Aplicativos como de Email permanecem ocultos. 
-|JSON Personalizado        | Não        |{"com.google.android.apps.work.clouddpc.EXTRA_ENROLLMENT_TOKEN": "Inserir cadeia de token de registro do Intune"}. Aprenda [como criar um perfil de registro](android-kiosk-enroll.md). 
-| Adicionar contratos legais | Não | Deixe em branco. 
+|Nome do perfil       | Sim       |Insira um nome de perfil de sua escolha. |
+|Descrição        | Não        |Insira um texto que descreva o perfil. |
+|Informações do MDM     | Sim        |Escolha **URI do servidor não necessário para meu MDM**.| 
+|APK do Agente MDM      | Sim       |https://aka.ms/intune_kme_deviceowner| 
+|JSON Personalizado        | Sim*        |{"com.google.android.apps.work.clouddpc.EXTRA_ENROLLMENT_TOKEN": "Inserir cadeia de token de registro do Intune"}. Saiba como criar um token de registro para [dispositivos dedicados](android-kiosk-enroll.md) e [dispositivos totalmente gerenciados](android-fully-managed-enroll.md). |
+|Ignorar Assistente de Configuração  | Não        |Escolha essa opção para ignorar os avisos de instalação de dispositivo padrão para o usuário final.|
+|Permitir que o usuário final cancele o registro | Não | Escolha essa opção para permitir que os usuários cancelem o KME.|
+| Política de privacidade, EULAs e termos de serviço | Não | Deixe em branco. |
+| Detalhes de contato de suporte | Sim | Escolha Editar para atualizar seus detalhes de contato |
+|Associar uma licença do Knox a este perfil | Não | Deixe essa opção desmarcada. Não é necessário ter uma licença Knox para se registrar no Intune usando o KME.|
 
-### <a name="for-android"></a>Para Android
+\* Este campo não é necessário para concluir a criação do perfil no portal do Knox. No entanto, o Intune exige que esse campo seja preenchido para que o perfil possa registrar o dispositivo com êxito no Intune.
+
+### <a name="for-android-enterprise"></a>Para Android Enterprise
 
 Para obter orientação passo a passo, confira as instruções de [Criar Perfil da Samsung](https://docs.samsungknox.com/KME-Getting-Started/Content/create-profiles.htm).
 
 | Campos do perfil de MDM| Necessário? | Valores |
 |-------------------|-----------|-------|
-|URI do servidor MDM     | Não        |Deixe em branco.
-|Nome do perfil       | Sim       |Insira um nome de perfil de sua escolha.
-|description        | Não        |Insira um texto que descreva o perfil.
-|APK do Agente MDM      | Sim       |https://aka.ms/intune_kme
-|Habilitar este aplicativo como um Proprietário do Dispositivo Google | Não | Deixe essa opção desmarcada para Android. Essa opção se aplica somente ao Android Enterprise.
-|Ignorar Assistente de Configuração  | Não        |Escolha essa opção para ignorar os avisos de instalação de dispositivo padrão para o usuário final.
-|Permitir que o usuário final cancele o registro | Não | Escolha essa opção para permitir que os usuários cancelem o KME.
-|JSON Personalizado        | Não        |Deixe em branco.
-| Adicionar contratos legais | Não | Deixe em branco.
-Associar uma licença do Knox a este perfil | Não | Deixe essa opção desmarcada. Não é necessário ter uma licença Knox para se registrar no Intune usando o KME.
+|Nome do perfil       | Sim       |Insira um nome de perfil de sua escolha.|
+|Descrição        | Não        |Insira um texto que descreva o perfil.|
+|Escolha seu MDM | Sim | Escolha Microsoft Intune. |
+|APK do Agente MDM      | Sim       |https://aka.ms/intune_kme|
+|URI do servidor MDM     | Não        |Deixe em branco.|
+|Dados do JSON personalizados        | Não        |Deixe em branco.|
+|DAR duplo | Não | Deixe em branco.|
+|Código QR para registro | Não | Você pode adicionar um código QR para acelerar o registro.|
+|Aplicativos do sistema | Sim | Escolha a opção **Deixar todos os aplicativos do sistema habilitados** para garantir que todos os aplicativos estejam habilitados e disponíveis para o perfil. Se essa opção não estiver selecionada, somente um conjunto limitado de aplicativos do sistema será exibido na bandeja de aplicativos do dispositivo. Aplicativos como de Email permanecem ocultos. |
+|Política de privacidade, EULAs e termos de serviço | Não | Deixe em branco.|
+|Nome da Empresa | Sim | Esse nome será exibido durante o registro do dispositivo. |
 
 ## <a name="add-devices"></a>Adicionar Dispositivos
 

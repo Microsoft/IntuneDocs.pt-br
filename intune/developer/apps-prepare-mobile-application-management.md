@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 842af9c8fffcb3755c81260739f4949768e75bac
-ms.sourcegitcommit: c46b0c2d4507be6a2786a4ea06009b2d5aafef85
-ms.translationtype: MTE75
+ms.openlocfilehash: e2075ed8328e6a33732e03fbf521d32b2edd6a35
+ms.sourcegitcommit: 47c9af81c385c7e893fe5a85eb79cf08e69e6831
+ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/01/2020
-ms.locfileid: "76912668"
+ms.lasthandoff: 02/25/2020
+ms.locfileid: "77575828"
 ---
 # <a name="prepare-line-of-business-apps-for-app-protection-policies"></a>Preparar aplicativos de linha de negócios para as políticas de proteção de aplicativos
 
@@ -103,7 +103,7 @@ Esta tabela lista as configurações que são habilitadas quando um aplicativo u
 |Bloquear captura de tela (somente para Android)|X|X|
 |Suporte para MAM sem registro de dispositivo|X|X|
 |Apagamento completo de dados de aplicativo|X|X|
-|Apagamento Seletivo de dados corporativos e de estudante em cenários com várias identidades <br><br>**Observação:** para iOS, quando o perfil de gerenciamento é removido, o aplicativo também é removido.|X||
+|Apagamento Seletivo de dados corporativos e de estudante em cenários com várias identidades <br><br>**Observação:** para iOS/iPadOS, quando o perfil de gerenciamento é removido, o aplicativo também é removido.|X||
 |Impedir "Salvar como"|X||
 |Configuração do Aplicativo de Destino (ou configuração do aplicativo por meio do "Canal do MAM")|X|X|
 |Suporte para múltiplas identidades|X||

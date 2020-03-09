@@ -6,7 +6,7 @@ keywords: ''
 author: brenduns
 ms.author: brenduns
 manager: dougeby
-ms.date: 01/24/2020
+ms.date: 02/26/2020
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.subservice: protect
@@ -18,14 +18,14 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 4962b4c75460b129f9df7729b5a34485d8ee0760
-ms.sourcegitcommit: 47c9af81c385c7e893fe5a85eb79cf08e69e6831
+ms.openlocfilehash: 6650c091917ea265783044efd78b19a7e032e6a7
+ms.sourcegitcommit: 5511b4f2b8a3383176a7afe2a22ad5a8d42caf7b
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/25/2020
-ms.locfileid: "77576064"
+ms.lasthandoff: 02/28/2020
+ms.locfileid: "78169290"
 ---
-# <a name="create-a-conditional-access-policy-for-exchange-on-premises-and-legacy-exchange-online-dedicated"></a>Criar uma política de Acesso Condicional para o Exchange local e o Exchange Online Dedicado herdado
+# <a name="configure-exchange-on-premises-access-for-intune"></a>Configurar o acesso local ao Exchange para o Intune
 
 Este artigo mostra como configurar o Acesso Condicional para o Exchange local com base na conformidade do dispositivo.
 
@@ -62,10 +62,29 @@ Antes de poder configurar o Acesso Condicional, verifique se as seguintes config
 
 ### <a name="support-for-mobile-devices"></a>Suporte para dispositivos móveis
 
-- Windows Phone 8.1 e posterior
-- O aplicativo de email nativo no iOS/iPadOS.
-- Clientes de email EAS, como Gmail no Android 4 ou versões posteriores.
-- **Dispositivos de perfil de trabalho do Android** de clientes de email EAS: Há suporte apenas para os aplicativos **Gmail** e **Nine Work for Android Enterprise** no **perfil de trabalho** em dispositivos de perfil de trabalho do Android. Para obter Acesso Condicional para trabalhar com perfis de trabalho do Android, implante um perfil de email para os aplicativos Gmail ou Nine Work for Android Enterprise e implante esses aplicativos como uma instalação obrigatória.
+- **Windows Phone 8.1 e posteriores** – para criar a política de acesso condicional, confira [Criar políticas de acesso condicional](../protect/create-conditional-access-intune.md)
+- **Aplicativo de email nativos no iOS/iPadOS** – para criar a política de acesso condicional, confira [Criar políticas de acesso condicional](../protect/create-conditional-access-intune.md)
+- **Clientes de email EAS, como Gmail no Android 4 ou posteriores** – para criar a política de acesso condicional, confira [Criar políticas de Acesso Condicional](../protect/create-conditional-access-intune.md)
+
+- **Clientes de email do EAS em dispositivos de perfil de trabalho do Android** – dispositivos com perfil de trabalho do Android são compatíveis apenas com *Gmail* e *Nine Work for Android Enterprise*. Para obter Acesso Condicional para trabalhar com perfis de trabalho do Android, implante um perfil de email para os aplicativos *Gmail* ou *Nine Work for Android Enterprise* e implante esses aplicativos como uma instalação obrigatória. Depois de implantar o aplicativo, você pode configurar o acesso condicional com base no dispositivo.
+
+#### <a name="to-set-up-conditional-access-for-android-work-profile-devices"></a>Para configurar o acesso condicional para dispositivos de perfil de trabalho do Android
+
+  1. Entre no [Centro de Administração do Microsoft Endpoint Manager](https://go.microsoft.com/fwlink/?linkid=2109431).
+  
+  2. Implante o aplicativo Gmail ou Nine Work conforme **Necessário**.
+
+  3. Selecione **Dispositivos** > **Perfis de configuração** > **Criar perfil**, insira **Nome** e **Descrição** para o perfil.
+
+  4. Selecione **Android Enterprise** em **Plataforma**; selecione **Email** em **Tipo de perfil**.
+
+  5. Defina as [configurações de perfil de email](https://docs.microsoft.com/intune/configuration/email-settings-android-enterprise#android-enterprise).
+
+  6. Quando terminar, selecione **OK** > **Criar** para salvar suas alterações.
+
+  7. Depois de criar o perfil de email, [atribua-o a grupos](https://docs.microsoft.com/intune/device-profile-assign).
+
+  8. Configurar [acesso condicional baseado em dispositivo](https://docs.microsoft.com/intune/protect/conditional-access-intune-common-ways-use#device-based-conditional-access).
 
 > [!NOTE]
 > O uso do Microsoft Outlook para Android e iOS/iPadOS por meio do conector local do Exchange não é compatível. Se você quiser aproveitar as políticas de Acesso Condicional do Azure Active Directory e as Políticas de Proteção de Aplicativo do Intune com o Outlook para iOS/iPadOS e Android em suas caixas de correio locais, confira [Usando a Autenticação Moderna híbrida com o Outlook para iOS/iPadOS e Android](https://docs.microsoft.com/Exchange/clients/outlook-for-ios-and-android/use-hybrid-modern-auth).
@@ -78,7 +97,7 @@ O aplicativo nativo de **Email** do Windows 8.1 e versões posteriores (quando r
 
 Antes de poder usar o procedimento a seguir para configurar o controle de acesso local do Exchange, você deve instalar e configurar pelo menos um [conector do Exchange local do Intune](exchange-connector-install.md) para o Exchange local.
 
-1. Entre no [Centro de Administração do Gerenciador de Ponto de Extremidade da Microsoft](https://go.microsoft.com/fwlink/?linkid=2109431).
+1. Entre no [Centro de Administração do Microsoft Endpoint Manager](https://go.microsoft.com/fwlink/?linkid=2109431).
 
 2. Vá para **Administração de locatário** > **Acesso ao Exchange** e, em seguida, selecione **Acesso local do Exchange**.
 

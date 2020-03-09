@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: abf23bff0d8889b57ab05c55b7e1464d0a9d2436
-ms.sourcegitcommit: 32391f74241ee3289a76ccd5319fe700b800d427
-ms.translationtype: MTE75
+ms.openlocfilehash: a46532467f8de7caf8cc88fe60e7a5cbc10ba147
+ms.sourcegitcommit: a25f556aa9df4fcd9fdacccd12c9029bc6c5fe20
+ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/07/2020
-ms.locfileid: "77075783"
+ms.lasthandoff: 03/03/2020
+ms.locfileid: "78256519"
 ---
 # <a name="windows-mdm-security-baseline-settings-for-intune"></a>Configurações de linha de base de segurança do Windows MDM para o Intune
 
@@ -231,7 +231,7 @@ Para obter mais informações, veja [CSP de Política – Conectividade](https:/
   Essa configuração de política define o acesso seguro aos caminhos UNC. Se você habilitar essa política, o Windows só permitirá o acesso aos caminhos UNC especificados depois do cumprimento de requisitos de segurança adicionais.  
   [Saiba mais](https://go.microsoft.com/fwlink/?linkid=2067243)
 
-  **Padrão**: configurar o Windows para permitir acesso aos caminhos UNC especificados somente depois de cumprir os requisitos de segurança adicionais.
+  **Padrão**: Configurar o Windows para permitir acesso aos caminhos UNC especificados somente depois de cumprir os requisitos de segurança adicionais.
 
   Quando *Configurar o Windows para permitir somente o acesso aos caminhos UNC especificados depois de atender aos requisitos de segurança adicionais* estiver selecionado, você poderá configurar a *Lista de caminhos UNC protegidos*.
 
@@ -291,7 +291,7 @@ Para obter mais informações, veja [CSP de política – DeviceGuard](https://d
 ::: zone pivot="mdm-may-2019"
 
 - **Segurança baseada em virtualização**:  
-  **Padrão**: habilitar VBS com inicialização segura
+  **Padrão**: Habilitar VBS com inicialização segura
 
 ::: zone-end
 ::: zone pivot="mdm-preview,mdm-may-2019"
@@ -364,7 +364,7 @@ Para obter mais informações, veja [CSP de política – DeviceLock](https://do
   Quando *Exigir senha* estiver definido como *Sim*, as configurações a seguir estarão disponíveis.
 
   - **Contagem do conjunto de caracteres mínimo da senha**:  
-    O número de tipos de elementos complexos (letras maiúsculas e minúsculas, números e pontuação) necessário para um PIN ou uma senha forte. O PIN impõe o seguinte comportamento para desktops e dispositivos móveis: 1: apenas dígitos, 2: dígitos e letras minúsculas são necessários, 3: dígitos, letras minúsculas e letras maiúsculas são necessários. Não é compatível com contas da Microsoft de área de trabalho e contas de domínio. 4: dígitos, letras minúsculas, letras maiúsculas e caracteres especiais são necessários. Não é compatível com a área de trabalho. O valor padrão é 1.  
+    O número de tipos de elementos complexos (letras maiúsculas e minúsculas, números e pontuação) necessário para um PIN ou uma senha forte. O PIN impõe o seguinte comportamento para desktops e dispositivos móveis: 1: apenas dígitos, 2: dígitos e letras minúsculas são necessários, 3: dígitos, letras minúsculas e letras maiúsculas são necessários. Não é compatível com contas da Microsoft de área de trabalho e contas de domínio. 4: dígitos, letras minúsculas, letras maiúsculas e caracteres especiais são necessários. Não é compatível com a área de trabalho.  
     [Saiba mais](https://go.microsoft.com/fwlink/?linkid=2067055)
 
     **Padrão**: 3
@@ -722,7 +722,7 @@ Para obter mais informações, veja [CSP de política – InternetExplorer](http
   Essa configuração de política permite que você desligue o suporte para protocolo TLS (Transport Layer Security) 1.0, TLS 1.1, TLS 1.2, protocolo SSL (Secure Sockets Layer) 2.0 ou SSL 3.0 no navegador. TLS e SSL são protocolos que ajudam a proteger a comunicação entre o navegador e o servidor alvo. Quando o navegador tenta configurar uma comunicação protegida com o servidor alvo, o navegador e o servidor negociam qual protocolo e versão usar. O navegador e o servidor tentam combinar com a lista de protocolos e versões compatíveis um do outro e selecionam a melhor combinação. Se você habilitar essa configuração de política, o navegador negociará ou não negociará um túnel de criptografia usando os métodos de criptografia que você selecionar na lista suspensa. Se você desabilitar ou não definir essa configuração de política, o usuário poderá selecionar o método de criptografia compatível com o navegador.  
   [Saiba mais](https://go.microsoft.com/fwlink/?linkid=2067057)
 
-  **Padrão**: 2 itens: TLS v1.1 e TLS v 1.2  
+  **Padrão**: Dois itens:  TLS v1.1 e TLS v1.2  
   *Selecione a seta para baixo para exibir as opções que você pode selecionar para essa configuração.*
 
 ::: zone-end
@@ -1368,7 +1368,7 @@ Para obter mais informações, veja [CSP de política – LocalPoliciesSecurityO
 
   - *Enviar somente resposta NTLMv2. Recusar LM* – os clientes usam somente a autenticação NTLMv2 e usam a segurança de sessão NTLMv2 se o servidor é compatível com ela. Os controladores de domínio recusam LM (aceitam somente autenticação NTLM e NTLMv2).
 
-  - *Enviar somente resposta NTLMv2. Recusar LM e NTLM* – os clientes usam somente a autenticação NTLMv2 e usam a segurança de sessão NTLMv2 se o servidor for compatível com ela. Os controladores de domínio recusam LM e NTLM (aceitam somente a autenticação NTLMv2).
+  - *Enviar somente resposta NTLMv2. Recusar LM e NTLM* – os clientes usam somente a autenticação NTLMv2 e usam a segurança de sessão NTLMv2 se o servidor é compatível com ela. Os controladores de domínio recusam LM e NTLM (aceitam somente a autenticação NTLMv2).
 
   [Saiba mais](https://go.microsoft.com/fwlink/?linkid=2067189)
 
@@ -1779,10 +1779,10 @@ Para saber mais, veja [CSP de política – RemoteAssistance](https://docs.micro
 
   - *Se você não definir essa configuração de política*, os usuários poderão ligar ou desligar a Assistência Remota Solicitada (Solicitar) em Propriedades do Sistema no Painel de Controle. Os usuários também podem definir as Configurações de Assistência Remota.
 
-  Se você habilitar essa configuração de política, terá duas maneiras de permitir que os auxiliares forneçam Assistência Remota: "Permitir que os auxiliares apenas vejam o computador" ou "Permitir que os auxiliares controlem o computador remotamente". A configuração de política "Tempo máximo de tíquete" define um limite ao tempo pelo qual um convite de assistência remota criado usando email ou transferência de arquivos pode permanecer aberto. A configuração "Selecionar o método para enviar convites por email" especifica qual padrão de email usar para enviar convites de Assistência Remota. Dependendo do seu programa de email, você pode usar o padrão *Mailto* (o destinatário do convite conecta-se por meio de um link da Internet) ou o padrão SMAPI (Simple MAPI) (o convite é anexado à mensagem de email). Essa configuração de política não está disponível no Windows Vista, pois SMAPI é o único método compatível. Se você habilitar essa configuração de política, também deverá habilitar as exceções de firewall apropriadas para permitir comunicações de Assistência Remota.  
+  Se você habilitar essa configuração de política, terá duas maneiras de permitir que os auxiliares forneçam Assistência Remota: "Permitir que os auxiliares vejam apenas o computador" ou "Permitir que os auxiliares controlem o computador remotamente". A configuração de política "Tempo máximo de tíquete" define um limite ao tempo pelo qual um convite de assistência remota criado usando email ou transferência de arquivos pode permanecer aberto. A configuração "Selecionar o método para enviar convites por email" especifica qual padrão de email usar para enviar convites de Assistência Remota. Dependendo do seu programa de email, você pode usar o padrão *Mailto* (o destinatário do convite conecta-se por meio de um link da Internet) ou o padrão SMAPI (Simple MAPI) (o convite é anexado à mensagem de email). Essa configuração de política não está disponível no Windows Vista, pois SMAPI é o único método compatível. Se você habilitar essa configuração de política, também deverá habilitar as exceções de firewall apropriadas para permitir comunicações de Assistência Remota.  
   [Saiba mais](https://go.microsoft.com/fwlink/?linkid=2067198)
 
-  **Padrão**: desabilitar a Assistência Remota
+  **Padrão**: Desabilitar a Assistência Remota
 
   Quando definido como *Habilitar Assistência Remota*, defina as seguintes configurações adicionais:
 
@@ -1793,10 +1793,10 @@ Para saber mais, veja [CSP de política – RemoteAssistance](https://docs.micro
     **Padrão**: *Não configurado*
 
   - **Período máximo do tíquete**:  
-    **Padrão**: minutos
+    **Padrão**: Minutos
 
   - **Método de convite por email**:  
-    **Padrão**: MAPI simples
+    **Padrão**: MAPI Simples
 
 ::: zone-end
 ::: zone pivot="mdm-preview,mdm-may-2019"

@@ -5,7 +5,7 @@ keywords: ''
 author: ErikjeMS
 ms.author: erikje
 manager: dougeby
-ms.date: 09/18/2018
+ms.date: 02/27/2020
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.subservice: remote-actions
@@ -16,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: cd6e58efa096c006780c17d991a9ea5da26099d4
-ms.sourcegitcommit: 51591b862d97904291af7aa53a6eb341b11a761e
+ms.openlocfilehash: 9481e25a3d9aa48e21c4e01194dfa7ee1ad1bd38
+ms.sourcegitcommit: 045ca42cad6f86024af9a38a380535f42a6b4bef
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/17/2020
-ms.locfileid: "77415555"
+ms.lasthandoff: 02/28/2020
+ms.locfileid: "77782158"
 ---
 # <a name="reset-or-remove-a-device-passcode-in-intune"></a>Redefinir ou remover uma senha de dispositivo no Intune
 
@@ -57,9 +57,9 @@ Para criar uma nova senha de perfil de trabalho, use a ação de Redefinir senha
 ## <a name="reset-a-passcode"></a>Redefinir uma senha
 
 
-1. Entre no [Centro de Administração do Gerenciador de Ponto de Extremidade da Microsoft](https://go.microsoft.com/fwlink/?linkid=2109431) com qualquer uma das seguintes funções: Administrador Global do Azure Active Directory, Administrador de Serviço do Intune do Azure Active Directory, Operador de Helpdesk ou Administrador de Função.
+1. Entre no [Centro de Administração do Microsoft Endpoint Manager](https://go.microsoft.com/fwlink/?linkid=2109431) com qualquer uma das seguintes funções: Administrador Global do Azure Active Directory, Administrador de Serviço do Intune do Azure Active Directory, Operador de Helpdesk ou Administrador de Função.
 2. Selecione **Dispositivos** e, em seguida, **Todos os dispositivos**.
-3. Na lista de dispositivos que você gerencia, selecione um dispositivo e escolha **...Mais**. Em seguida, escolha a ação remota de dispositivo **Remover senha**.
+3. Na lista de dispositivos que você gerencia, selecione um dispositivo e escolha **Remover senha**.
 
 ## <a name="reset-android-work-profile-passcodes"></a>Redefinir senhas de perfil de trabalho do Android
 

@@ -16,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: b593cab8a9a89f895c668b2b49583b73cbfccffa
-ms.sourcegitcommit: c780e9988341a20f94fdeb8672bd13e0b302da93
+ms.openlocfilehash: 45bcabf8c7dc932c9415fbd309bf09f53499fbcc
+ms.sourcegitcommit: 045ca42cad6f86024af9a38a380535f42a6b4bef
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/20/2020
-ms.locfileid: "77515162"
+ms.lasthandoff: 02/28/2020
+ms.locfileid: "77781946"
 ---
 # <a name="set-rules-on-devices-to-allow-access-to-resources-in-your-organization-using-intune"></a>Definir regras em dispositivos para permitir o acesso aos recursos em sua organização usando o Intune
 
@@ -93,16 +93,13 @@ O Intune também inclui um conjunto de configurações de política de conformid
 
   Quando um dispositivo não tem uma política de conformidade atribuída, é considerado como dispositivo compatível por padrão. Se você usa Acesso Condicional com políticas de conformidade, recomendamos alterar a configuração padrão para **Em não conformidade**. Se um usuário final não estiver em conformidade por não ter uma política atribuída, o [Portal da Empresa](../apps/company-portal-app.md) mostrará `No compliance policies have been assigned`.
 
-
-> [!NOTE]
-> A detecção de jailbreak avançada para dispositivos iOS/iPadOS foi desabilitada temporariamente no Intune.
-
-- **Detecção avançada de jailbreak**: Quando habilitada, essa configuração faz com que dispositivos iOS/iPadOS realizem check-in com o Intune com mais frequência. Habilitar essa propriedade usa serviços de localização do dispositivo e afeta o uso da bateria. Os dados de local do usuário não são armazenados pelo Intune.
+- **Detecção avançada de jailbreak**: Quando habilitada, essa configuração faz com que o status do dispositivo desbloqueado aconteça com mais frequência em dispositivos iOS/iPadOS. Essa configuração afeta apenas os dispositivos almejados com uma política de conformidade que bloqueia dispositivos com jailbreak. Habilitar essa propriedade usa serviços de localização do dispositivo e pode afetar o uso da bateria. Os dados de localização do usuário não são armazenados pelo Intune e são usados apenas para disparar a detecção de jailbreak com mais frequência no segundo plano. 
 
   Habilitar essa configuração exige que os dispositivos:
   - Habilite os serviços de localização no nível do sistema operacional.
-  - Permitam que o Portal da Empresa use serviços de localização.
-  - Avaliem e relatem o status de jailbreak ao Intune pelo menos uma vez a cada 72 horas. Caso contrário, o dispositivo será marcado como não estando em conformidade. A avaliação é disparada com a abertura do aplicativo do Portal da Empresa ou a movimentação física do dispositivo para 500 metros de distância ou mais. Se o dispositivo não se mover 500 metros em 72 horas, o usuário precisará abrir o aplicativo Portal da Empresa para executar uma avaliação avançada de desbloqueio.
+  - Sempre permita que o Portal da Empresa use serviços de localização.
+
+  A avaliação é disparada abrindo o aplicativo Portal da Empresa ou movendo fisicamente o dispositivo uma distância significativa de aproximadamente 500 metros ou mais. No iOS 13 e superiores, esse recurso exigirá que os usuários selecionem Sempre permitir toda vez que o dispositivo solicitar que eles continuem permitindo que Portal da Empresa use a localização no segundo plano. Se os usuários nem sempre permitirem o acesso à localização e tiverem uma política com essa configuração definida, o dispositivo será marcado como não compatível. Observe que o Intune não pode garantir que cada alteração significativa à localização assegure uma verificação de detecção de jailbreak, pois isso depende da conexão de rede de um dispositivo no momento.
 
 - **Período de validade do status de conformidade (dias)** : Insira o período que os dispositivos relatam o status de todas as políticas de conformidade recebidas. Dispositivos que não retornam o status dentro desse período são tratados como não estando em conformidade. O valor padrão é de 30 dias. O valor mínimo é 1 dia.
 

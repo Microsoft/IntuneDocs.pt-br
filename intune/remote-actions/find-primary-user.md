@@ -6,7 +6,7 @@ keywords: ''
 author: ErikjeMS
 ms.author: erikje
 manager: dougeby
-ms.date: 06/21/2019
+ms.date: 02/27/2020
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.subservice: remote-actions
@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 7ff03682ab406b92e3ea7f1e416188119913cc87
-ms.sourcegitcommit: 5881979c45fc973cba382413eaa193d369b8dcf6
+ms.openlocfilehash: b804eccfa6f860c77ab4a1a7f1fe5ae0f5baf101
+ms.sourcegitcommit: 045ca42cad6f86024af9a38a380535f42a6b4bef
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/24/2020
-ms.locfileid: "77569448"
+ms.lasthandoff: 02/28/2020
+ms.locfileid: "77781811"
 ---
 # <a name="find-the-primary-user-of-an-intune-device"></a>Localizar o usuário principal de um dispositivo do Intune
 
@@ -30,9 +30,9 @@ O usuário principal, também conhecido como Afinidade de Dispositivo de Usuári
 
 ## <a name="find-a-devices-primary-user"></a>Localizar o usuário principal de um dispositivo
 
-1. Entre no [Centro de Administração do Gerenciador de Ponto de Extremidade da Microsoft](https://go.microsoft.com/fwlink/?linkid=2109431).
+1. Entre no [Centro de Administração do Microsoft Endpoint Manager](https://go.microsoft.com/fwlink/?linkid=2109431).
 2. Escolha **Dispositivos** > escolha um dispositivo.
-3. Na página **Visão geral**, escolha **Ver mais** e você verá que o usuário principal listado.
+3. Na página **Visão Geral**, você pode ver o usuário primário listado.
 
 ## <a name="what-is-the-primary-user"></a>O que é o usuário principal?
 A propriedade de usuário principal é usada para mapear um usuário licenciado do Intune para seus dispositivos nos seguintes casos:

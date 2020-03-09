@@ -6,7 +6,7 @@ keywords: ''
 author: brenduns
 ms.author: brenduns
 manager: dougeby
-ms.date: 12/29/2017
+ms.date: 02/21/2020
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.subservice: protect
@@ -18,18 +18,18 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 9d0fe5634e5af6ef4c6f19e067131f151733c0b5
-ms.sourcegitcommit: c780e9988341a20f94fdeb8672bd13e0b302da93
+ms.openlocfilehash: 32ace832e44f1cb6d334f69a0c1f03cb41515b2f
+ms.sourcegitcommit: 045ca42cad6f86024af9a38a380535f42a6b4bef
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/20/2020
-ms.locfileid: "77515230"
+ms.lasthandoff: 02/28/2020
+ms.locfileid: "77782039"
 ---
 # <a name="zimperium-mobile-threat-defense-connector-with-intune"></a>Conector do Zimperium Mobile Threat Defense ao Intune
 
 Você pode controlar o Acesso de dispositivos móveis aos recursos corporativos usando o Acesso Condicional com base na avaliação de risco realizada pelo Zimperium, uma solução de MTD (Defesa contra Ameaças Móveis) integrada ao Microsoft Intune. O risco é avaliado com base na telemetria coletada dos dispositivos que executam o aplicativo Zimperium.
 
-Configure políticas de Acesso Condicional com base na avaliação de risco do Zimperium habilitada por meio das políticas de conformidade de dispositivo do Intune. A política de avaliação de risco pode permitir ou bloquear o acesso de dispositivos fora de conformidade aos recursos corporativos com base nas ameaças detectadas.
+Você pode configurar políticas de Acesso Condicional com base na avaliação de risco do Zimperium, habilitadas por meio de políticas de conformidade do dispositivo do Intune para dispositivos registrados, que podem ser usadas para permitir ou bloquear o acesso de dispositivos não compatíveis a recursos corporativos, com base nas ameaças detectadas. Para dispositivos não registrados, você pode usar políticas de proteção de aplicativo para impor um bloqueio ou apagamento seletivo com base em ameaças detectadas.
 
 ## <a name="how-do-intune-and-zimperium-help-protect-your-company-resources"></a>Como o Intune e o Zimperium ajudam a proteger os recursos da empresa?
 
@@ -108,3 +108,5 @@ Detectar ameaças como **Man-in-the-middle** na rede e impede a sincronização 
 - [Criar política de conformidade do dispositivo Zimperium](mtd-device-compliance-policy-create.md)
 
 - [Habilitar o conector do Zimperium MTD](mtd-connector-enable.md)
+
+- [Criar uma política de proteção de aplicativo MTD](../protect/mtd-app-protection-policy.md)
